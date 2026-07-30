@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on paper without clinical supervision. We provide interdisciplinary evidence from art therapy, sexology, affective neuroscience, and aesthetics to support PPPiP as a useful strategy for relationship deve...
+> Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on paper without clinical supervision. We provide interdisciplinary evidence from art therapy, sexology, affective neuroscience, and aesthetics to support PPPiP as a useful strategy for relationship...
 
 ## Keywords
 

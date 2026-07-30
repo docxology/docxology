@@ -49,7 +49,7 @@ Verification points for this work:
 
 - Familiarity with California, Cascadia, Crescent City
 - Background in Cognitive Security fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/crescent_city
 
 ## Instructions
 

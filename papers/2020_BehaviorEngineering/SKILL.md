@@ -4,6 +4,7 @@ description: "Behavior engineering applies structured approaches from systems en
 tags: ["behavior-engineering", "systems-engineering", "organizational-behavior", "complex-adaptive-systems", "team-formation", "behavioral-design"]
 domain: "Active Inference"
 citation: "Daniel A. Friedman (2020). *BehaviorEngineering*. Active Inference."
+doi: "10.5281/zenodo.4021162"
 ---
 
 # BehaviorEngineering
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.4021162
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:41Z
@@ -54,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.4021162`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

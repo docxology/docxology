@@ -1,0 +1,68 @@
+{
+  "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.21695160",
+  "doi_url": "https://doi.org/10.5281/zenodo.21695160",
+  "zenodo_record": "https://zenodo.org/records/21695160",
+  "record_id": "21695161",
+  "publication_date": "2026-07-29",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Statistical power is an investigator-facing operating characteristic of an adaptive-study design. Before simulation, the investigator fixes an agent-side model, evaluator-side process, testing setting, policy, and replication plan. Each embedded agent acts only on visible history; simulated hidden truth is retained for scoring. active_inference_power makes that conditional estimand inspectable. The suite combines fixed-horizon procedures, analytic references, dependence/calibration experiments, and a discrete-state active-inference agent checked against a binary oracle. It extends this to action loops with sensing reliability, latent context, target choice, cost, and stopping. The study distinguishes model-relative posterior belief from calibrated p-value and likelihood-ratio e-process evidence. It compares Benjamini–Hochberg (BH) false discovery rate (FDR) procedures with family-wise error rate (FWER) alternatives, and separates either evidence object from online FDR procedure-specific accounting. Results are scenario-indexed finite-simulation estimates with Monte Carlo standard error (MCSE) and declared error, dependence, filtration, and optional-stopping boundaries; they do not assign a universal power value to an agent, task environment, or active inference. Instead, they support auditable comparisons among explicitly declared adaptive-study designs. Contracts, seed schedules, certificates, figures, claim ledger, and rendered manuscript form a linked evidence chain, allowing readers to trace each claim to its design and artifact. Source and release materials are available at the verified GitHub repository ActiveInferenceInstitute/active_inference_power. Active Inference Power Suite v1.0.0 is a source-bound release of an adaptive-study design suite. It reports scenario- and policy-indexed finite-simulation operating characteristics; it does not claim a universal \"power of active inference.\" Source repository and exact release: https://github.com/ActiveInferenceInstitute/active_inference_power/releases/tag/v1.0.0 Concept DOI (release family): 10.5281/zenodo.21695160 Version DOI (this immutable archive): 10.5281/zenodo.21695161 Zenodo record: https://zenodo.org/records/21695161 PDF SHA-256: 24fa25a4f29affcfd92c8c001ff6487a0c36960c6b4f38ed4419984fc8743cbf The uploaded PDF, exact tag-derived source archive, release manifest, renderer provenance, and final review receipt make the release auditable. The evidence boundary remains finite, scenario-specific simulation rather than a universal theorem or deployment claim.",
+  "keywords": [
+    "multiple testing",
+    "false discovery rate",
+    "Benjamini-Hochberg",
+    "statistical power",
+    "active inference",
+    "pymdp",
+    "sequential hypothesis testing",
+    "reproducible research"
+  ],
+  "files": [
+    {
+      "name": "active_inference_power_v1.0.0.pdf",
+      "size_bytes": 11205677,
+      "checksum": "md5:97414bfd22ec8f945d922298579e15f8",
+      "download_url": "https://zenodo.org/api/records/21695161/files/active_inference_power_v1.0.0.pdf/content"
+    },
+    {
+      "name": "active_inference_power-v1.0.0-source.tar.gz",
+      "size_bytes": 3027441,
+      "checksum": "md5:e2ad412375fd6e1fc4ff54a60e253ebb",
+      "download_url": "https://zenodo.org/api/records/21695161/files/active_inference_power-v1.0.0-source.tar.gz/content"
+    },
+    {
+      "name": "release_review_final.json",
+      "size_bytes": 4936,
+      "checksum": "md5:8159059b07a0df6dfc8b56093c69fcb5",
+      "download_url": "https://zenodo.org/api/records/21695161/files/release_review_final.json/content"
+    },
+    {
+      "name": "release_manifest.json",
+      "size_bytes": 25429,
+      "checksum": "md5:8503f7e4df47061a9ba772888268ffe0",
+      "download_url": "https://zenodo.org/api/records/21695161/files/release_manifest.json/content"
+    },
+    {
+      "name": "renderer_provenance.json",
+      "size_bytes": 17160,
+      "checksum": "md5:5740e10befb7089468c9c5e46ab297f3",
+      "download_url": "https://zenodo.org/api/records/21695161/files/renderer_provenance.json/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-07-30T17:45:27Z"
+}

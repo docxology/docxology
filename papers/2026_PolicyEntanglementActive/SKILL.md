@@ -42,13 +42,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.20418904
 - PDF SHA-256: ae7cdd62929324101ead3eba8177199141b0089a9baf35558107149331666fde
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:08Z
+- Last checked: 2026-07-10T19:08:24Z
 
 ## Prerequisites
 
 - Familiarity with active inference, free energy principle, policy inference
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: ActiveInferenceInstitute/policy_entanglement
 
 ## Instructions
 

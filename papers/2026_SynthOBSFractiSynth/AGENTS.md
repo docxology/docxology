@@ -1,21 +1,39 @@
-# AGENTS.md - SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer
+# AGENTS.md — SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer
 
 **Paper**: SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer (2026)
-**DOI**: [10.5281/zenodo.21418687](https://doi.org/10.5281/zenodo.21418687)
-**Zenodo record**: https://zenodo.org/records/21418687
+**Domain**: Computational
+**Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo DOI as the canonical citation.
-- Preserve full authorship: Daniel Ari Friedman.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for SynthOBSFractiSynth
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, paper_metadata.json, and BIBLIOGRAPHY.md synchronized.
+### 🔬 RESEARCHER
+- Extracts methods: Literature review, Theoretical analysis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Computational literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Computational concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/21418687
-- **Source**: Zenodo-only record (no paired GitHub release)
+| Date | Agent | Action | Status |
+|------|-------|--------|--------|
+| 2026-07-30 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-30 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-30 | EDUCATOR | Generated documentation | ✅ |

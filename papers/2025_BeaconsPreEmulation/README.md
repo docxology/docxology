@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of category and response, which might include a sim of their own sensitive to cues such as mood or transferable cues of when the object type is called; then "emulated" in the mind a pulse-to-response only version of the associated objects fo...
+> primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of category and response, which might include a sim of their own sensitive to cues such as mood or transferable cues of when the object type is called; then "emulated" in the mind a pulse-to-response only version of the associated objects for this...
 
 ## Keywords
 

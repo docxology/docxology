@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 197 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 198 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -6982,8 +6982,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "CogSecSkills: Multiharness Cognitive Security Skill Library",
-            "headline": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+            "name": "CogSecSkills: Multiharness Agentic Skills for Cognitive Security",
+            "headline": "CogSecSkills: Multiharness Agentic Skills for Cognitive Security",
             "datePublished": "2026",
             "author": [
                 {
@@ -6995,17 +6995,17 @@
                 "@type": "Organization",
                 "name": "Zenodo"
             },
-            "keywords": "💻",
-            "@id": "https://danielarifriedman.com/works/Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174.html#work",
-            "url": "https://danielarifriedman.com/works/Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174.html",
-            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174.html",
+            "keywords": "🛡️",
+            "@id": "https://danielarifriedman.com/works/Friedman2026CogSecSkillsMultiharnessAgenticSkills174.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026CogSecSkillsMultiharnessAgenticSkills174.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026CogSecSkillsMultiharnessAgenticSkills174.html",
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.20804585",
-                "url": "https://doi.org/10.5281/zenodo.20804585"
+                "value": "10.5281/zenodo.21513316",
+                "url": "https://doi.org/10.5281/zenodo.21513316"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20804585"
+            "sameAs": "https://doi.org/10.5281/zenodo.21513316"
         },
         {
             "@type": "ScholarlyArticle",
@@ -7674,10 +7674,42 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.21418687",
-                "url": "https://doi.org/10.5281/zenodo.21418687"
+                "value": "10.5281/zenodo.21418782",
+                "url": "https://doi.org/10.5281/zenodo.21418782"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21418687"
+            "sameAs": "https://doi.org/10.5281/zenodo.21418782"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+            "headline": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🧠",
+            "@id": "https://danielarifriedman.com/works/Friedman2026ActiveInferencePowerSuite199.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026ActiveInferencePowerSuite199.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026ActiveInferencePowerSuite199.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21695160",
+                "url": "https://doi.org/10.5281/zenodo.21695160"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21695160"
         }
     ]
 }

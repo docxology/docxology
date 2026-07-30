@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**197 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**198 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**176** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**177** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **197** works in the table below **·** **180** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **198** works in the table below **·** **181** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -210,7 +210,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 171 | 2026 | 🧠 | Paper | On-Policy Distillation as Active Inference in Finite Variational Models | *Zenodo* | [10.5281/zenodo.20747834](https://doi.org/10.5281/zenodo.20747834) | [📁](../papers/2026_PolicyDistillationAs/) | Daniel Ari Friedman |
 | 172 | 2026 | 💻 | Paper | Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts | *Zenodo* | [10.5281/zenodo.20786638](https://doi.org/10.5281/zenodo.20786638) | [📁](../papers/2026_TemplateMadlib/) | Daniel Ari Friedman |
 | 173 | 2026 | 🛡️ | Paper | California Public Records: A Technical and Legal Reference for the Post-AB 473 Era | *Zenodo* | [10.5281/zenodo.20789899](https://doi.org/10.5281/zenodo.20789899) | [📁](../papers/2026_CaliforniaPublicRecords/) | Daniel Ari Friedman |
-| 174 | 2026 | 💻 | Paper | CogSecSkills: Multiharness Cognitive Security Skill Library | *Zenodo* | [10.5281/zenodo.20804585](https://doi.org/10.5281/zenodo.20804585) | [📁](../papers/2026_CogSecSkills/) | Daniel Ari Friedman |
+| 174 | 2026 | 🛡️ | Paper | CogSecSkills: Multiharness Agentic Skills for Cognitive Security | *Zenodo* | [10.5281/zenodo.21513316](https://doi.org/10.5281/zenodo.21513316) | [📁](../papers/2026_CogSecSkills/) | Daniel Ari Friedman |
 | 175 | 2026 | 💻 | Paper | Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction | *Zenodo* | [10.5281/zenodo.20834846](https://doi.org/10.5281/zenodo.20834846) | [📁](../papers/2026_RealizingEmptiness/) | Friedman, Daniel Ari |
 | 176 | 2026 | 💻 | Paper | A Living Meta-Analysis of the Modafinil Literature | *Zenodo* | [10.5281/zenodo.20931964](https://doi.org/10.5281/zenodo.20931964) | [📁](../papers/2026_LivingMetaAnalysis/) | Daniel Ari Friedman |
 | 177 | 2026 | 💻 | Paper | Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition | *Zenodo* | [10.5281/zenodo.20931955](https://doi.org/10.5281/zenodo.20931955) | [📁](../papers/2026_RefinementGold/) | Daniel Ari Friedman |
@@ -234,7 +234,8 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 195 | 2026 | 🛡️ | Paper | Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations | *Zenodo* | [10.5281/zenodo.21330636](https://doi.org/10.5281/zenodo.21330636) | [📁](../papers/2026_ActiveFractalRabbit/) | Daniel Ari Friedman |
 | 196 | 2026 | 🎨 | Paper | Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing | *Zenodo* | [10.5281/zenodo.21388456](https://doi.org/10.5281/zenodo.21388456) | [📁](../papers/2026_FourfoldVision/) | Daniel Ari Friedman |
 | 197 | 2026 | 💻 | Paper | DuckRabbit: Typed Multimodal Illusion Generator | *Zenodo* | [10.5281/zenodo.21419693](https://doi.org/10.5281/zenodo.21419693) | [📁](../papers/2026_DuckRabbit/) | Daniel Ari Friedman |
-| 198 | 2026 | 💻 | Paper | SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer | *Zenodo* | [10.5281/zenodo.21418687](https://doi.org/10.5281/zenodo.21418687) | [📁](../papers/2026_SynthOBSFractiSynth/) | Friedman, Daniel Ari |
+| 198 | 2026 | 💻 | Paper | SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer | *Zenodo* | [10.5281/zenodo.21418782](https://doi.org/10.5281/zenodo.21418782) | [📁](../papers/2026_SynthOBSFractiSynth/) | Friedman, Daniel Ari |
+| 199 | 2026 | 🧠 | Paper | Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings | *Zenodo* | [10.5281/zenodo.21695160](https://doi.org/10.5281/zenodo.21695160) | [📁](../papers/2026_ActiveInferencePower/) |
 ---
 
 ## Domain Index

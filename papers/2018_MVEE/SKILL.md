@@ -4,6 +4,7 @@ description: "How can we formalize the evolution of heredity, environment, and p
 tags: ["mvee", "evolutionary-theory", "multilevel-evolution", "phenotypic-plasticity", "eco-evo-devo", "variational-methods", "multilevel-selection", "open-ended-evolution"]
 domain: "Presentations & Media"
 citation: "Daniel Ari Friedman (2018). *MVEE*. Presentations & Media."
+doi: "10.5281/zenodo.13999298"
 ---
 
 # MVEE
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.13999298
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:39Z
@@ -53,6 +54,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.13999298`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

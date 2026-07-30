@@ -27,7 +27,7 @@
 
 - DOI: [10.5281/zenodo.13711301](https://doi.org/10.5281/zenodo.13711301)
 - Zenodo record: [https://zenodo.org/records/13711301](https://zenodo.org/records/13711301)
-- PDF download: [WilliamBlake_MathArt-Stream_DAF_9_6_2024.pdf](https://zenodo.org/api/records/13711302/files/WilliamBlake_MathArt-Stream_DAF_9_6_2024.pdf/content)
+- PDF: [WilliamBlake_MathArt-Stream_DAF_9_6_2024.pdf](WilliamBlake_MathArt-Stream_DAF_9_6_2024.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/13711301)
 
 ## Citation

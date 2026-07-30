@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> This commentary critiques Nogueiro et al. (2015), who used Y chromosome and mitochondrial DNA haplotype data from contemporary Iberian and non-Iberian populations to explore a diagnostic genetic signature of Portuguese "crypto-Jews." The authors identify two main weaknesses: (1) the matrilineal and patrilineal markers reviewed are methodologically inadequate as "reliable Jewish ancestry predictors...
+> This commentary critiques Nogueiro et al. (2015), who used Y chromosome and mitochondrial DNA haplotype data from contemporary Iberian and non-Iberian populations to explore a diagnostic genetic signature of Portuguese "crypto-Jews." The authors identify two main weaknesses: (1) the matrilineal and patrilineal markers reviewed are methodologically inadequate as "reliable Jewish ancestry...
 
 ## Keywords
 

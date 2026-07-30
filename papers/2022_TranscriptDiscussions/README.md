@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Discussion with an author of the 2021 paper “Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior” by Remi Tison & Pierre Poirier. https://www.tandfonline.com/doi/abs/10.1080/10407413.2021.1965480 Session #048.0, September 2, 2022 https://www.youtube.com/watch?v=zqiZjjY9H7M Session 048.1, September 7, 2022 ht...
+> Discussion with an author of the 2021 paper “Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior” by Remi Tison & Pierre Poirier. https://www.tandfonline.com/doi/abs/10.1080/10407413.2021.1965480 Session #048.0, September 2, 2022 https://www.youtube.com/watch?v=zqiZjjY9H7M Session 048.1, September 7, 2022...
 
 ## Keywords
 

@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-07-21T20:34:49+00:00`
+Generated: `2026-07-30T18:01:08+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -25,23 +25,23 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
 - public_source_snapshot: `reports/public_source_snapshot_2026-07-21.json`
-- paired_publications: `reports/paired_publications_2026-07-18.json`
+- paired_publications: `reports/paired_publications_2026-07-30.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
 
-- Bibliography works: `197`
-- Paper-folder docs: `180`
+- Bibliography works: `198`
+- Paper-folder docs: `181`
 - Full-text extractions: `173`
 - Papers with image galleries: `141`
 - Total extracted images: `9004`
-- Bibliography docs links: `180`
+- Bibliography docs links: `181`
 
 ### Types
 
 - Books: `5`
 - Courses: `3`
-- Papers: `176`
+- Papers: `177`
 - Playbooks: `2`
 - Presentations: `9`
 - Series: `2`
@@ -49,10 +49,10 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 ### Domains
 
 - Entomology: `23`
-- Active Inference: `42`
-- Cognitive Security: `32`
+- Active Inference: `43`
+- Cognitive Security: `33`
 - Art & Synergetics: `16`
-- Computational: `48`
+- Computational: `47`
 - AII Ecosystem: `6`
 - Presentations & Media: `15`
 - Genetics & Biomedical: `15`
@@ -65,9 +65,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Generated Exports
 
-- data_works_json: `197`
+- data_works_json: `198`
 - data_software_json: `131`
-- data_publications_ld_main_entity: `197`
+- data_publications_ld_main_entity: `198`
 - data_software_ld_main_entity: `131`
 
 ### GitHub Inventory
@@ -101,14 +101,14 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Paired Publications
 
-- github_releases: `2`
-- zenodo_records: `133`
-- pairs: `1`
-- strong_pairs: `1`
+- github_releases: `1`
+- zenodo_records: `135`
+- pairs: `0`
+- strong_pairs: `0`
 - already_reviewed: `0`
 - needs_review: `0`
 - create_new: `0`
-- update_existing: `1`
+- update_existing: `0`
 
 ### Paired Publication Decisions
 

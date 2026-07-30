@@ -8,9 +8,7 @@
 
 ## Abstract
 
-> This exemplar documents template_sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in . The default pipeline replays fixture-backed generations for the mini_classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps.
-
-Run snapshot. Task mini_classify, run 1, 3 generation(s), live=false. Final accu...
+> This exemplar documents template_sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in the Self-Improvement Agents specification (Hexo AI, 2026, arXiv:2605.27276). The default pipeline replays fixture-backed generations for the mini_classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps. Run...
 
 ## Keywords
 

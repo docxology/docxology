@@ -4,6 +4,7 @@ description: "In this interview, Robert Sapolsky outlines his view on Free Will,
 tags: ["free-will", "determinism", "robert-sapolsky", "neuroscience", "behavioral-genetics", "philosophy", "consciousness", "moral-philosophy"]
 domain: "Genetics & Biomedical"
 citation: "Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman (2022). *FreeWillSapolsky*. Genetics & Biomedical."
+doi: "10.5281/zenodo.7394900"
 ---
 
 # FreeWillSapolsky
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.7394900
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:55Z
@@ -54,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.7394900`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

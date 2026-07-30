@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked approach to assessing such and related formal claims has remained absent. Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may l...
+> The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked approach to assessing such and related formal claims has remained absent. Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may...
 
 ## Keywords
 

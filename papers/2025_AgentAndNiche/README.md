@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Fuller's Synergetics. The text juxtaposes Blake's prophetic verses with speculative ecological-cognitive commentary, exploring themes of contraries as generative principles, threshold dynamics, chemotacti...
+> Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Fuller's Synergetics. The text juxtaposes Blake's prophetic verses with speculative ecological-cognitive commentary, exploring themes of contraries as generative principles, threshold dynamics...
 
 ## Keywords
 

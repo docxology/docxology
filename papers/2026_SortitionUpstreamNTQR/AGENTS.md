@@ -1,6 +1,6 @@
-# AGENTS.md — Sortition Upstream of NTQR
+# AGENTS.md — Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation
 
-**Paper**: Sortition Upstream of NTQR (2026)
+**Paper**: Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation (2026)
 **Domain**: Computational
 **Authors**: Daniel Ari Friedman
 
@@ -27,7 +27,7 @@ judgments can be evaluated blind: given the a
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Sortition Upstream of NTQR to related works in the bibliography
+- Connects Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,9 +37,9 @@ judgments can be evaluated blind: given the a
 
 | Date | Agent | Action | Status |
 |------|-------|--------|--------|
-| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
-| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
-| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+| 2026-07-30 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-30 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-30 | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References
 

@@ -4,6 +4,7 @@ description: "The Generative Research Team (GRT) is a synthesis of human, comput
 tags: ["generative-research-team", "active-inference", "generative-model", "cognitive-modeling", "llms", "autonomous-agents", "open-science", "decentralized-science", "active-blockference", "meta-prompting"]
 domain: "Active Inference"
 citation: "Daniel Friedman, Jakub Smékal (2023). *GenerativeResearchTeams*. Active Inference."
+doi: "10.5281/zenodo.8164666"
 ---
 
 # GenerativeResearchTeams
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.8164666
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:16Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.8164666`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

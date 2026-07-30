@@ -4,6 +4,7 @@ description: "This work explores the intersection of mathematics, art, and Willi
 tags: ["william-blake", "mathematics", "art", "prophetic-vision", "geometric-structures", "active-inference"]
 domain: "Presentations & Media"
 citation: "Daniel Ari Friedman (2024). *MathArtBlake*. Presentations & Media."
+doi: "10.5281/zenodo.13711301"
 ---
 
 # MathArtBlake
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.13711301
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:30Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.13711301`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

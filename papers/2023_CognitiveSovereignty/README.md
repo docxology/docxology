@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epistemic agency is grounded in the enacted policy selection of the cognitive sovereign. A paradigmatic framework establishes what counts as valid knowledge and action; such normative establishments period...
+> This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epistemic agency is grounded in the enacted policy selection of the cognitive sovereign. A paradigmatic framework establishes what counts as valid knowledge and action; such normative establishments...
 
 ## Keywords
 

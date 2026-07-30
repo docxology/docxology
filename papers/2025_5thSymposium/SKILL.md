@@ -4,6 +4,7 @@ description: "Proceedings and materials from the 5th International Symposium on 
 tags: ["active-inference-symposium", "conference-proceedings", "international-symposium", "research-presentations"]
 domain: "Presentations & Media"
 citation: "Active Inference Institute (2025). *5thSymposium*. Presentations & Media."
+doi: "10.5281/zenodo.17555266"
 ---
 
 # 5thSymposium
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.17555266
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:37Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.17555266`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

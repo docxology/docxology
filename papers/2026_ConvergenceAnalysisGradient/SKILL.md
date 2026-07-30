@@ -42,13 +42,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.20417136
 - PDF SHA-256: cd54b95893501467503fab2c4b432573306bc94f7040085550beb87d094b4e50
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:10Z
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
 - Familiarity with optimization algorithms, gradient descent, convergence analysis
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/template_code_project
 
 ## Instructions
 

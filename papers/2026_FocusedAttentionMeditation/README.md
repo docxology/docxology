@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> We develop a three-level hierarchical framework to model the attentional dynamics of focused attention (FA) meditation, laying a foundation for advanced active inference (AIF) implementations. Grounded in the Free Energy Principle and Neuronal Packet Hypothesis, we conceptualize meditation as a predictive processing system where “thoughtseeds”—transient, agent-like entities forming Markov blankets...
+> We develop a three-level hierarchical framework to model the attentional dynamics of focused attention (FA) meditation, laying a foundation for advanced active inference (AIF) implementations. Grounded in the Free Energy Principle and Neuronal Packet Hypothesis, we conceptualize meditation as a predictive processing system where “thoughtseeds”—transient, agent-like entities forming Markov...
 
 ## Keywords
 

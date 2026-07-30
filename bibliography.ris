@@ -2469,11 +2469,11 @@ ER  -
 TY  - JOUR
 AU  - Daniel Ari Friedman
 PY  - 2026
-TI  - CogSecSkills: Multiharness Cognitive Security Skill Library
+TI  - CogSecSkills: Multiharness Agentic Skills for Cognitive Security
 T2  - Zenodo
-DO  - 10.5281/zenodo.20804585
-UR  - https://doi.org/10.5281/zenodo.20804585
-KW  - Computational
+DO  - 10.5281/zenodo.21513316
+UR  - https://doi.org/10.5281/zenodo.21513316
+KW  - Cognitive Security
 KW  - Paper
 N1  - Catalog row 174; docs: papers/2026_CogSecSkills/
 ER  -
@@ -2760,9 +2760,21 @@ AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer
 T2  - Zenodo
-DO  - 10.5281/zenodo.21418687
-UR  - https://doi.org/10.5281/zenodo.21418687
+DO  - 10.5281/zenodo.21418782
+UR  - https://doi.org/10.5281/zenodo.21418782
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 198; docs: papers/2026_SynthOBSFractiSynth/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings
+T2  - Zenodo
+DO  - 10.5281/zenodo.21695160
+UR  - https://doi.org/10.5281/zenodo.21695160
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 199; docs: papers/2026_ActiveInferencePower/
 ER  -

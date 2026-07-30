@@ -4,6 +4,7 @@ description: "MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value fo
 tags: ["mdkv", "markdown", "key-value-format", "structured-data", "document-specification", "yaml-free", "round-trip-transformation"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2025). *MDKV*. Computational."
+doi: "10.5281/zenodo.16790554"
 ---
 
 # MDKV
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.16790554
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:50Z
@@ -54,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.16790554`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

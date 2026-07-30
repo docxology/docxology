@@ -4,6 +4,7 @@ description: "Four-fold Fields of Quantum Dreams explores the intersections of q
 tags: ["quantum-mechanics", "art", "phenomenology", "active-inference", "visual-analysis", "symbolism", "morse-code"]
 domain: "Art & Synergetics"
 citation: "Daniel Ari Friedman, Dean Tickles (2024). *QuantumDreams*. Art & Synergetics."
+doi: "10.5281/zenodo.10798144"
 ---
 
 # QuantumDreams
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.10798144
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:33Z
@@ -53,6 +54,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.10798144`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argues that the proposed typology—based on particle dynamics and generative model structure—provides a principled, non-anthropocentric contribution to the cartography of possible minds. Active Inference pr...
+> This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argues that the proposed typology—based on particle dynamics and generative model structure—provides a principled, non-anthropocentric contribution to the cartography of possible minds. Active Inference...
 
 ## Keywords
 

@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Transcripts of discussions of the 2022 preprint "A Worked Example of the Bayesian Mechanics of Classical Objects" by Dalton A R Sakthivadivel. https://arxiv.org/abs/2206.12996 Session 049.0, September 30, 2022 https://www.youtube.com/watch?v=OtX2Fpzn7KA Session 049.1, October 5, 2022 https://www.youtube.com/watch?v=dAtC-Enmc8M Session 049.2, October 12, 2022 https...
+> Transcripts of discussions of the 2022 preprint "A Worked Example of the Bayesian Mechanics of Classical Objects" by Dalton A R Sakthivadivel. https://arxiv.org/abs/2206.12996 Session 049.0, September 30, 2022 https://www.youtube.com/watch?v=OtX2Fpzn7KA Session 049.1, October 5, 2022 https://www.youtube.com/watch?v=dAtC-Enmc8M Session 049.2, October 12, 2022...
 
 ## Keywords
 

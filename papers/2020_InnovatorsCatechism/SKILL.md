@@ -4,6 +4,7 @@ description: "Innovation teams formed in incubators, research accelerators, hack
 tags: ["operations-orders", "innovation-teams", "innovator's-catechism", "team-alignment", "military-transfer", "organizational-design", "hackathons"]
 domain: "Cognitive Security"
 citation: "Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight (2020). *InnovatorsCatechism*. Cognitive Security."
+doi: "10.5281/zenodo.4383229"
 ---
 
 # InnovatorsCatechism
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.4383229
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:46Z
@@ -53,6 +54,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.4383229`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

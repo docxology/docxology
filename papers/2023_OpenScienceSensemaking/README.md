@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensemaking data is essential. We propose Open Science Sensemaking (OSSm)—an interoperable decentralized annotation network enabling researchers to share sensemaking data including annotations, tags, rating...
+> While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensemaking data is essential. We propose Open Science Sensemaking (OSSm)—an interoperable decentralized annotation network enabling researchers to share sensemaking data including annotations, tags...
 
 ## Keywords
 

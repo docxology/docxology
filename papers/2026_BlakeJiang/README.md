@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> This rapid-publication essay synthesizes three intellectual frameworks examining cognitive closure. The author analyzes Professor Jiang Xueqin's commentary on artificial intelligence through William Blake's late-18th-century perceptual analysis and Active Inference terminology. The core convergence identified is closure of the perceiving system around its own top-down expectations, which Blake ter...
+> This rapid-publication essay synthesizes three intellectual frameworks examining cognitive closure. The author analyzes Professor Jiang Xueqin's commentary on artificial intelligence through William Blake's late-18th-century perceptual analysis and Active Inference terminology. The core convergence identified is closure of the perceiving system around its own top-down expectations, which Blake...
 
 ## Keywords
 

@@ -8,8 +8,7 @@
 
 ## Abstract
 
-> 
-This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the north- ernmost developed strip of the California coast — where published accounts remain fragmentary or era-bound (Huntsinger et al., 2014; Norton, 1979b). The narrative reads the town as an emergent nested system: Tolowa Dee-ni’ villages on the Smith Riv...
+> This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the north- ernmost developed strip of the California coast — where published accounts remain fragmentary or era-bound (Huntsinger et al., 2014; Norton, 1979b). The narrative reads the town as an emergent nested system: Tolowa Dee-ni’ villages on the Smith River estuary; European contact...
 
 ## Keywords
 
@@ -22,8 +21,7 @@ This manuscript offers a synthetic scholarly history of Crescent City, Californi
 
 ## Key Findings
 
-- 
-This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the north- ernmost developed strip of the California coast — wher
+- This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the north- ernmost developed strip of the California coast — wher
 - The narrative reads the town as an emergent nested system: Tolowa Dee-ni’ villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s;
 
 ## Artifacts

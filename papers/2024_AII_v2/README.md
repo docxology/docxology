@@ -27,7 +27,7 @@
 
 - DOI: [10.5281/zenodo.14108992](https://doi.org/10.5281/zenodo.14108992)
 - Zenodo record: [https://zenodo.org/records/14108992](https://zenodo.org/records/14108992)
-- PDF download: [Active_Inference_Institute-Ecosystem_11-12-2024_v2.pdf](https://zenodo.org/api/records/14108992/files/Active_Inference_Institute-Ecosystem_11-12-2024_v2.pdf/content)
+- PDF: [Active_Inference_Institute-Ecosystem_11-12-2024_v2.pdf](Active_Inference_Institute-Ecosystem_11-12-2024_v2.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/14108992)
 
 ## Citation

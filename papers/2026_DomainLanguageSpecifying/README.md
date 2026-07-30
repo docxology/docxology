@@ -8,12 +8,7 @@
 
 ## Abstract
 
-> This paper describes a small, tested domain language for specifying
-controlled methods — the methods-paper exemplar of the
-Research Project Template (https://github.com/docxology/template). Unlike a
-results paper, this manuscript's subject is the methodology itself: a
-controlled vocabulary, a unit system with dimensional safety, four staged
-validation gates, and a deterministic compiler, implement...
+> This paper describes a small, tested domain language for specifying controlled methods — the methods-paper exemplar of the Research Project Template (https://github.com/docxology/template). Unlike a results paper, this manuscript's subject is the methodology itself: a controlled vocabulary, a unit system with dimensional safety, four staged validation gates, and a deterministic compiler...
 
 ## Keywords
 
@@ -26,13 +21,8 @@ validation gates, and a deterministic compiler, implement...
 
 ## Key Findings
 
-- This paper describes a small, tested domain language for specifying
-controlled methods — the methods-paper exemplar of the
-Research Project Template (https://github.com/docxology/template).
-- Unlike a
-results paper, this manuscript's subject is the methodology itself: a
-controlled vocabulary, a unit system with dimensional safety, four staged
-validation gates, and a deterministic compiler,
+- This paper describes a small, tested domain language for specifying controlled methods — the methods-paper exemplar of the Research Project Template (https://github.com/docxology/template).
+- Unlike a results paper, this manuscript's subject is the methodology itself: a controlled vocabulary, a unit system with dimensional safety, four staged validation gates, and a deterministic compiler,
 
 ## Artifacts
 

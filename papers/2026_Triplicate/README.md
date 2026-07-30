@@ -8,12 +8,7 @@
 
 ## Abstract
 
-> We present template_newspaper, a pure-Python engine that renders a complete
-twelve-page, large-format newspaper to a print-ready PDF from structured YAML
-content. The exemplar edition is The Triplicate, a homage to the historic
-newspaper of Crescent City, California (founded 1879). The engine demonstrates
-designed multi-column page layout — nameplate and ears, spanning headlines,
-flowing column fr...
+> We present template_newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content. The exemplar edition is The Triplicate, a homage to the historic newspaper of Crescent City, California (founded 1879). The engine demonstrates designed multi-column page layout — nameplate and ears, spanning headlines, flowing column...
 
 ## Keywords
 
@@ -26,11 +21,8 @@ flowing column fr...
 
 ## Key Findings
 
-- We present template_newspaper, a pure-Python engine that renders a complete
-twelve-page, large-format newspaper to a print-ready PDF from structured YAML
-content.
-- The exemplar edition is The Triplicate, a homage to the historic
-newspaper of Crescent City, California (founded 1879).
+- We present template_newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content.
+- The exemplar edition is The Triplicate, a homage to the historic newspaper of Crescent City, California (founded 1879).
 
 ## Artifacts
 

@@ -42,13 +42,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.20482025
 - PDF SHA-256: 296b3b5c5e9f3d628e15ae5d467dd5cc418bd018f0166194c9494b33b3367dda
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:10Z
+- Last checked: 2026-07-10T19:08:24Z
 
 ## Prerequisites
 
 - Familiarity with grateful dead, setlist data, category theory
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/grateful_data
 
 ## Instructions
 

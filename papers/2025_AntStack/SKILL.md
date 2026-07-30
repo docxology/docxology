@@ -4,6 +4,7 @@ description: "AntStack presents a multilevel framework for modeling ant colony o
 tags: ["antstack", "multilevel-modeling", "ant-colonies", "social-insects", "multiscale-biology", "colony-organization"]
 domain: "Entomology"
 citation: "Daniel A. Friedman (2025). *AntStack*. Entomology."
+doi: "10.5281/zenodo.16782756"
 ---
 
 # AntStack
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.16782756
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.16782756`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -42,13 +42,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.20834846
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:10Z
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
 - Familiarity with active inference, Bayesian model reduction, quantum reference frames
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/realizing_emptiness
 
 ## Instructions
 

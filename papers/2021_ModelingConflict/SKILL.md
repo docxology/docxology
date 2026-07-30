@@ -4,6 +4,7 @@ description: "We integrate conflict studies with Active Inference to create the 
 tags: ["active-inference", "conflict-modeling", "aic-model", "ooda-loops", "cognitive-security", "information-warfare", "bolts-framework", "trust-management"]
 domain: "Active Inference"
 citation: "Scott David, R.J. Cordes, Daniel A. Friedman (2021). *ModelingConflict*. Active Inference."
+doi: "10.5281/zenodo.5750934"
 ---
 
 # ModelingConflict
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.5750934
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:49Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.5750934`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

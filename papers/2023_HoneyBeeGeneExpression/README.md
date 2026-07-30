@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novelty in honey bees (Apis mellifera). Using RNA-Seq, we show that novel honey bee tissues are enriched for rapidly evolving genes and taxonomically restricted genes (TRGs), supporting the hypothesis that...
+> The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novelty in honey bees (Apis mellifera). Using RNA-Seq, we show that novel honey bee tissues are enriched for rapidly evolving genes and taxonomically restricted genes (TRGs), supporting the hypothesis...
 
 ## Keywords
 

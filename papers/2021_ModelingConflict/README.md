@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management enacted by interacting entities. The AIC model captures and extends OODA loops, the generations of warfare model, and the Rumsfeld Matrix. It aids analysis of modern conflict including cyber, psychol...
+> We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management enacted by interacting entities. The AIC model captures and extends OODA loops, the generations of warfare model, and the Rumsfeld Matrix. It aids analysis of modern conflict including cyber...
 
 ## Keywords
 

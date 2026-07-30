@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T01:03:47Z",
+  "generated_at": "2026-07-30T18:53:42Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -5076,6 +5076,13 @@
       ],
       "related_works": [
         {
+          "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible120",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026BoundedAutoResearchTinyReproducible120.html"
+        },
+        {
           "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
           "citation_key": "Friedman2026SelfImprovementAgentHarness127",
           "year": 2026,
@@ -5095,13 +5102,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020EmergentTeamsComplexThreats085.html"
-        },
-        {
-          "title": "Reimagining Maps",
-          "citation_key": "Friedman2020ReimaginingMaps148",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020ReimaginingMaps148.html"
         }
       ]
     },
@@ -6321,6 +6321,13 @@
       ],
       "related_works": [
         {
+          "title": "A Living Meta-Analysis of the Modafinil Literature",
+          "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026LivingMetaAnalysisModafinil176.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
@@ -6340,13 +6347,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020ReimaginingMaps148.html"
-        },
-        {
-          "title": "The Innovator's Catechism",
-          "citation_key": "Friedman2020InnovatorSCatechism090",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020InnovatorSCatechism090.html"
         }
       ]
     },
@@ -9918,6 +9918,13 @@
       ],
       "related_works": [
         {
+          "title": "A Domain Language for Specifying Controlled Methods",
+          "citation_key": "Friedman2026DomainLanguageSpecifyingControlled182",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026DomainLanguageSpecifyingControlled182.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
@@ -9937,13 +9944,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020ReimaginingMaps148.html"
-        },
-        {
-          "title": "The Innovator's Catechism",
-          "citation_key": "Friedman2020InnovatorSCatechism090",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020InnovatorSCatechism090.html"
         }
       ]
     },
@@ -9998,6 +9998,13 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
+          "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+          "citation_key": "Friedman2026ExploratoryDataAnalysisReproducible181",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026ExploratoryDataAnalysisReproducible181.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
@@ -10010,13 +10017,6 @@
           "year": 2020,
           "domain": "Entomology",
           "url": "/works/Friedman2020DistributedPhysiologyMolecularBasis084.html"
-        },
-        {
-          "title": "Emergent Teams for Complex Threats",
-          "citation_key": "Friedman2020EmergentTeamsComplexThreats085",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020EmergentTeamsComplexThreats085.html"
         }
       ]
     },
@@ -10659,6 +10659,13 @@
           "url": "/works/Friedman2025ConCatEnatePilot133.html"
         },
         {
+          "title": "A Living Meta-Analysis of the Modafinil Literature",
+          "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026LivingMetaAnalysisModafinil176.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
@@ -10671,13 +10678,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020EmergentTeamsComplexThreats085.html"
-        },
-        {
-          "title": "Reimagining Maps",
-          "citation_key": "Friedman2020ReimaginingMaps148",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020ReimaginingMaps148.html"
         }
       ]
     },
@@ -11309,6 +11309,13 @@
       ],
       "related_works": [
         {
+          "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+          "citation_key": "Friedman2026ExploratoryDataAnalysisReproducible181",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026ExploratoryDataAnalysisReproducible181.html"
+        },
+        {
           "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
           "citation_key": "Friedman2026MusicNeverStoppedGrateful150",
           "year": 2026,
@@ -11328,13 +11335,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020EmergentTeamsComplexThreats085.html"
-        },
-        {
-          "title": "Reimagining Maps",
-          "citation_key": "Friedman2020ReimaginingMaps148",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020ReimaginingMaps148.html"
         }
       ]
     },
@@ -12448,6 +12448,13 @@
           "url": "/works/Friedman2025SynthesisAgentNiche021.html"
         },
         {
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
+        },
+        {
           "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
           "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
           "year": 2022,
@@ -12460,13 +12467,6 @@
           "year": 2026,
           "domain": "Active Inference",
           "url": "/works/Friedman2026DynamicAttentionalAgentsFocused111.html"
-        },
-        {
-          "title": "Prior Cognitive Art",
-          "citation_key": "Friedman2026PriorCognitiveArt194",
-          "year": 2026,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2026PriorCognitiveArt194.html"
         }
       ]
     },
@@ -13973,6 +13973,13 @@
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         },
         {
+          "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+          "citation_key": "Friedman2026ExploratoryDataAnalysisReproducible181",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026ExploratoryDataAnalysisReproducible181.html"
+        },
+        {
           "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
           "citation_key": "Friedman2026MusicNeverStoppedGrateful150",
           "year": 2026,
@@ -13985,13 +13992,6 @@
           "year": 2018,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2018PartnerPenPlayParallel099.html"
-        },
-        {
-          "title": "Emergent Teams for Complex Threats",
-          "citation_key": "Friedman2020EmergentTeamsComplexThreats085",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020EmergentTeamsComplexThreats085.html"
         }
       ]
     },
@@ -17576,18 +17576,18 @@
           "url": "/works/Friedman2023ActiveInferenceInstituteActive061.html"
         },
         {
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
+        },
+        {
           "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
           "citation_key": "Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html"
-        },
-        {
-          "title": "MVEE: A Framework for Evolutionary Studies",
-          "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
-          "year": 2018,
-          "domain": "Media & Teaching",
-          "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
         }
       ]
     },
@@ -36932,18 +36932,18 @@
           "url": "/works/Friedman2025TemporalDepthCoherentSelf023.html"
         },
         {
-          "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
-          "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
-          "year": 2018,
+          "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+          "citation_key": "Friedman2026DataDescriptorTemplateSchema192",
+          "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
+          "url": "/works/Friedman2026DataDescriptorTemplateSchema192.html"
         },
         {
-          "title": "Predictive Processing Interpretation of the Mirror Test",
-          "citation_key": "Friedman2022PredictiveProcessingInterpretationMirror070",
-          "year": 2022,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2022PredictiveProcessingInterpretationMirror070.html"
+          "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
+          "citation_key": "Friedman2026PoolsRulesToolsTemplate190",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PoolsRulesToolsTemplate190.html"
         }
       ]
     },
@@ -38045,18 +38045,18 @@
           "url": "/works/Friedman2025TemporalDepthCoherentSelf023.html"
         },
         {
-          "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
-          "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
-          "year": 2018,
+          "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+          "citation_key": "Friedman2026DataDescriptorTemplateSchema192",
+          "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
+          "url": "/works/Friedman2026DataDescriptorTemplateSchema192.html"
         },
         {
-          "title": "Predictive Processing Interpretation of the Mirror Test",
-          "citation_key": "Friedman2022PredictiveProcessingInterpretationMirror070",
-          "year": 2022,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2022PredictiveProcessingInterpretationMirror070.html"
+          "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
+          "citation_key": "Friedman2026PoolsRulesToolsTemplate190",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PoolsRulesToolsTemplate190.html"
         }
       ]
     },
@@ -38687,18 +38687,18 @@
           "url": "/works/Friedman2025TemporalDepthCoherentSelf023.html"
         },
         {
-          "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
-          "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
-          "year": 2018,
+          "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
+          "citation_key": "Friedman2026DataDescriptorTemplateSchema192",
+          "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
+          "url": "/works/Friedman2026DataDescriptorTemplateSchema192.html"
         },
         {
-          "title": "Predictive Processing Interpretation of the Mirror Test",
-          "citation_key": "Friedman2022PredictiveProcessingInterpretationMirror070",
-          "year": 2022,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2022PredictiveProcessingInterpretationMirror070.html"
+          "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
+          "citation_key": "Friedman2026PoolsRulesToolsTemplate190",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PoolsRulesToolsTemplate190.html"
         }
       ]
     },
@@ -40405,6 +40405,13 @@
           "url": "/works/Friedman2026ActiveInferenceMultiTrack124.html"
         },
         {
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
+        },
+        {
           "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
           "citation_key": "Friedman2026PolicyDistillationAsActive171",
           "year": 2026,
@@ -40417,13 +40424,6 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
-        },
-        {
-          "title": "MVEE: A Framework for Evolutionary Studies",
-          "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
-          "year": 2018,
-          "domain": "Media & Teaching",
-          "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
         }
       ]
     },
@@ -40702,6 +40702,13 @@
       ],
       "related_works": [
         {
+          "title": "A Domain Language for Specifying Controlled Methods",
+          "citation_key": "Friedman2026DomainLanguageSpecifyingControlled182",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026DomainLanguageSpecifyingControlled182.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
@@ -40721,13 +40728,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020ReimaginingMaps148.html"
-        },
-        {
-          "title": "The Innovator's Catechism",
-          "citation_key": "Friedman2020InnovatorSCatechism090",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020InnovatorSCatechism090.html"
         }
       ]
     },
@@ -40786,6 +40786,13 @@
           "url": "/works/Friedman2026ActiveInferenceMultiTrack124.html"
         },
         {
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
+        },
+        {
           "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
           "citation_key": "Friedman2026PolicyDistillationAsActive171",
           "year": 2026,
@@ -40798,13 +40805,6 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
-        },
-        {
-          "title": "MVEE: A Framework for Evolutionary Studies",
-          "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
-          "year": 2018,
-          "domain": "Media & Teaching",
-          "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
         }
       ]
     },
@@ -55645,25 +55645,25 @@
           "url": "/works/Friedman2023PostdocReview20202023060.html"
         },
         {
+          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
+        },
+        {
+          "title": "Autopoietic Project Generation",
+          "citation_key": "Friedman2026AutopoieticProjectGeneration185",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026AutopoieticProjectGeneration185.html"
+        },
+        {
           "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
           "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible120",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026BoundedAutoResearchTinyReproducible120.html"
-        },
-        {
-          "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
-          "citation_key": "Friedman2026EditorialQualityAtScale122",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026EditorialQualityAtScale122.html"
-        },
-        {
-          "title": "When do bugs see (infra)red?",
-          "citation_key": "Friedman2026WhenDoBugsSee126",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026WhenDoBugsSee126.html"
         }
       ]
     },
@@ -60648,11 +60648,11 @@
           "url": "/works/Friedman2026PolicyDistillationAsActive171.html"
         },
         {
-          "title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
-          "citation_key": "Friedman2026ArchitectureFalseGodsWilliam115",
+          "title": "Prior Cognitive Art",
+          "citation_key": "Friedman2026PriorCognitiveArt194",
           "year": 2026,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2026ArchitectureFalseGodsWilliam115.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026PriorCognitiveArt194.html"
         }
       ]
     },
@@ -66598,11 +66598,11 @@
           "url": "/works/Friedman2023CommentsAIAccountabilityPolicy052.html"
         },
         {
-          "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
-          "citation_key": "Friedman2026BeeStackEvidenceTypedScaffold125",
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026BeeStackEvidenceTypedScaffold125.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
         }
       ]
     },
@@ -70040,18 +70040,18 @@
           "url": "/works/Friedman2024BioFirmDevelopmentAtApplied030.html"
         },
         {
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
+        },
+        {
           "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
           "citation_key": "Friedman2026TowardsLean4Formalization113",
           "year": 2026,
           "domain": "Active Inference",
           "url": "/works/Friedman2026TowardsLean4Formalization113.html"
-        },
-        {
-          "title": "MVEE: A Framework for Evolutionary Studies",
-          "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
-          "year": 2018,
-          "domain": "Media & Teaching",
-          "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
         }
       ]
     },
@@ -72473,18 +72473,18 @@
           "url": "/works/Friedman2026MusicNeverStoppedGrateful150.html"
         },
         {
+          "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+          "citation_key": "Friedman2026TriplicateDataDrivenLarge153",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026TriplicateDataDrivenLarge153.html"
+        },
+        {
           "title": "Full speed ahead to the City on the Hill",
           "citation_key": "Friedman2016FullSpeedAheadCity156",
           "year": 2016,
           "domain": "AII Ecosystem",
           "url": "/works/Friedman2016FullSpeedAheadCity156.html"
-        },
-        {
-          "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
-          "citation_key": "Friedman2018PartnerPenPlayParallel099",
-          "year": 2018,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2018PartnerPenPlayParallel099.html"
         }
       ]
     },
@@ -76736,18 +76736,18 @@
           "url": "/works/Friedman2024ActiveInferenceInstituteActive041.html"
         },
         {
-          "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
-          "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible120",
+          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
+          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026BoundedAutoResearchTinyReproducible120.html"
+          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
         },
         {
-          "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
-          "citation_key": "Friedman2026EditorialQualityAtScale122",
+          "title": "Autopoietic Project Generation",
+          "citation_key": "Friedman2026AutopoieticProjectGeneration185",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026EditorialQualityAtScale122.html"
+          "url": "/works/Friedman2026AutopoieticProjectGeneration185.html"
         }
       ]
     },
@@ -84542,6 +84542,13 @@
           "url": "/works/Friedman2026CrescentCityLivingWaves116.html"
         },
         {
+          "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+          "citation_key": "Friedman2026TriplicateDataDrivenLarge153",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026TriplicateDataDrivenLarge153.html"
+        },
+        {
           "title": "Full speed ahead to the City on the Hill",
           "citation_key": "Friedman2016FullSpeedAheadCity156",
           "year": 2016,
@@ -84554,13 +84561,6 @@
           "year": 2018,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2018PartnerPenPlayParallel099.html"
-        },
-        {
-          "title": "Emergent Teams for Complex Threats",
-          "citation_key": "Friedman2020EmergentTeamsComplexThreats085",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020EmergentTeamsComplexThreats085.html"
         }
       ]
     },
@@ -87222,11 +87222,11 @@
           "url": "/works/Friedman2026TemplateApproachReproducibleGenerative123.html"
         },
         {
-          "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
-          "citation_key": "Friedman2018PartnerPenPlayParallel099",
-          "year": 2018,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2018PartnerPenPlayParallel099.html"
+          "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible120",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026BoundedAutoResearchTinyReproducible120.html"
         }
       ]
     },
@@ -87939,18 +87939,18 @@
           "url": "/works/Friedman2026ActiveInferenceMultiTrack124.html"
         },
         {
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
+        },
+        {
           "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
           "citation_key": "Friedman2026PolicyDistillationAsActive171",
           "year": 2026,
           "domain": "Active Inference",
           "url": "/works/Friedman2026PolicyDistillationAsActive171.html"
-        },
-        {
-          "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
-          "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
         }
       ]
     },
@@ -89740,18 +89740,18 @@
           "url": "/works/Friedman2025ResNeiSolutionDesignDocument019.html"
         },
         {
+          "title": "A Domain Language for Specifying Controlled Methods",
+          "citation_key": "Friedman2026DomainLanguageSpecifyingControlled182",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026DomainLanguageSpecifyingControlled182.html"
+        },
+        {
           "title": "DuckRabbit: Typed Multimodal Illusion Generator",
           "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html"
-        },
-        {
-          "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
-          "citation_key": "Friedman2026ENTOENcryptedTypedOmnitrack167",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026ENTOENcryptedTypedOmnitrack167.html"
         }
       ]
     },

@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Updated added a number of pages at the start (from page 2) that describes the entire system and whats missing apologies for not giving this overview of what would happen given those missing parts and the purpose of demo0.01 which substitute those parts to see whether the break down of the 10 miliscond to (longer period) with each handwritten sim, does stack chems as mentioned; a...
+> Updated added a number of pages at the start (from page 2) that describes the entire system and whats missing apologies for not giving this overview of what would happen given those missing parts and the purpose of demo0.01 which substitute those parts to see whether the break down of the 10 miliscond to (longer period) with each handwritten sim, does stack chems as mentioned; and thus imply...
 
 ## Keywords
 

@@ -4,6 +4,7 @@ description: "Computational living meta-analysis of the Active Inference and Fre
 tags: ["active-inference", "meta-analysis", "nanopublications", "assertion-extraction", "citation-weighted-scoring", "literature-review", "free-energy-principle", "computational-bibliography", "open-science"]
 domain: "Active Inference"
 citation: "Daniel Ari Friedman & J. Dietz (2026). *A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring*. Active Inference."
+doi: "10.5281/zenodo.19461933"
 ---
 
 # A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.19461933
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:26:01Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.19461933`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

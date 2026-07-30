@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents. Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations between human-readable Markdown documents and structured data (JSON, TOML). The specification is open source under Apache-2.0 and situates MDKV with respect to Matroska (MKV) for extensible container de...
+> MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents. Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations between human-readable Markdown documents and structured data (JSON, TOML). The specification is open source under Apache-2.0 and situates MDKV with respect to Matroska (MKV) for extensible container...
 
 ## Keywords
 

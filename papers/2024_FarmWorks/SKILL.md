@@ -4,6 +4,7 @@ description: "FarmWorks is a proposal for a decentralized AI-powered agricultura
 tags: ["farmworks", "decentralized-ai", "precision-agriculture", "active-inference", "sensor-networks", "edge-computing", "farmer-autonomy", "sustainable-agriculture", "iot", "community-driven-innovation"]
 domain: "Cognitive Security"
 citation: "Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin (2024). *FarmWorks*. Cognitive Security."
+doi: "10.5281/zenodo.13754585"
 ---
 
 # FarmWorks
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.13754585
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:27Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.13754585`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

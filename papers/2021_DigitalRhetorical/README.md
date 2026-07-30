@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data. We develop a Digital Rhetorical Ecosystem three-tiered model (DRE3) that explains how memes impact public narratives and beliefs through parsimony, polysemy, and identity construction. The DRE3 model provides a framework for designing systems for computational ...
+> This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data. We develop a Digital Rhetorical Ecosystem three-tiered model (DRE3) that explains how memes impact public narratives and beliefs through parsimony, polysemy, and identity construction. The DRE3 model provides a framework for designing systems for computational...
 
 ## Keywords
 

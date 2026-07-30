@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Here we address the scientific study of consciousness by proposing the ant colony as a model system. We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that social insect colonies fulfill many prerequisites for conscious awareness met by humans and honey bee workers. A long lineage of philosophically-neutral neurobehavioral, evolutionary, and ecological st...
+> Here we address the scientific study of consciousness by proposing the ant colony as a model system. We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that social insect colonies fulfill many prerequisites for conscious awareness met by humans and honey bee workers. A long lineage of philosophically-neutral neurobehavioral, evolutionary, and ecological...
 
 ## Keywords
 

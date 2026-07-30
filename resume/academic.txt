@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-07-29T18:30:44Z
+Generated: 2026-07-30T18:02:29Z
 
-Current public metrics: 197 curated works; 131 catalogued software repositories (93 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 347 docxology + 40 AII public repositories (142 primary, 245 forks).
+Current public metrics: 198 curated works; 131 catalogued software repositories (93 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 347 docxology + 40 AII public repositories (142 primary, 245 forks).
 
 SUMMARY
 -------
@@ -134,7 +134,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (197)
+WORKS AND PUBLICATIONS (198)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -308,7 +308,7 @@ WORKS AND PUBLICATIONS (197)
 [171] 2026 | Paper | On-Policy Distillation as Active Inference in Finite Variational Models | Zenodo | 10.5281/zenodo.20747834
 [172] 2026 | Paper | Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts | Zenodo | 10.5281/zenodo.20786638
 [173] 2026 | Paper | California Public Records: A Technical and Legal Reference for the Post-AB 473 Era | Zenodo | 10.5281/zenodo.20789899
-[174] 2026 | Paper | CogSecSkills: Multiharness Cognitive Security Skill Library | Zenodo | 10.5281/zenodo.20804585
+[174] 2026 | Paper | CogSecSkills: Multiharness Agentic Skills for Cognitive Security | Zenodo | 10.5281/zenodo.21513316
 [175] 2026 | Paper | Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction | Zenodo | 10.5281/zenodo.20834846
 [176] 2026 | Paper | A Living Meta-Analysis of the Modafinil Literature | Zenodo | 10.5281/zenodo.20931964
 [177] 2026 | Paper | Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition | Zenodo | 10.5281/zenodo.20931955
@@ -332,7 +332,8 @@ WORKS AND PUBLICATIONS (197)
 [195] 2026 | Paper | Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations | Zenodo | 10.5281/zenodo.21330636
 [196] 2026 | Paper | Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing | Zenodo | 10.5281/zenodo.21388456
 [197] 2026 | Paper | DuckRabbit: Typed Multimodal Illusion Generator | Zenodo | 10.5281/zenodo.21419693
-[198] 2026 | Paper | SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer | Zenodo | 10.5281/zenodo.21418687
+[198] 2026 | Paper | SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer | Zenodo | 10.5281/zenodo.21418782
+[199] 2026 | Paper | Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings | Zenodo | 10.5281/zenodo.21695160
 
 SOFTWARE (31)
 -------------

@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control through a decentralized ecosystem for creating, storing, and querying stigmergic markers: the digital traces of human attention. We frame social annotation as a collective sensemaking tool that can resto...
+> We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control through a decentralized ecosystem for creating, storing, and querying stigmergic markers: the digital traces of human attention. We frame social annotation as a collective sensemaking tool that can...
 
 ## Keywords
 

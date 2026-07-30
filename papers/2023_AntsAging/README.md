@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social insects, where queens can live decades while workers live weeks to months. It connects ant aging biology to broader questions about the evolution of senescence and the role of social structure in shapi...
+> A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social insects, where queens can live decades while workers live weeks to months. It connects ant aging biology to broader questions about the evolution of senescence and the role of social structure in...
 
 ## Keywords
 

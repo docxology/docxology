@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales. This paper proposes frameworks for connecting behavioral science insights with engineering principles, enabling the design of systems that account for the complexities of human and non-human behavior. The approach is applicable to organiza...
+> Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales. This paper proposes frameworks for connecting behavioral science insights with engineering principles, enabling the design of systems that account for the complexities of human and non-human behavior. The approach is applicable to...
 
 ## Keywords
 

@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the ecological success of Argentine ants and the behavioral, genetic, and chemical mechanisms underlying their colony organization. Unlike most ant species, Argentine ants show reduced intraspecific aggr...
+> Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the ecological success of Argentine ants and the behavioral, genetic, and chemical mechanisms underlying their colony organization. Unlike most ant species, Argentine ants show reduced intraspecific...
 
 ## Keywords
 

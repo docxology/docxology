@@ -52,7 +52,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 Free Energy Principle, generative models, belief sharing, formalization, and educational infrastructure.
 
-- Works: 42
+- Works: 43
 - Selected repositories: 11
 - Collaborator context: Karl Friston, Thomas Parr, Maxwell J. D. Ramstead, Conor Heins, Tim Verbelen
 
@@ -86,7 +86,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 
 Narrative ecosystems, information commons, digital rhetoric, and multiagent security.
 
-- Works: 32
+- Works: 33
 - Selected repositories: 4
 - Collaborator context: RJ Cordes, Carlos Gershenson, Micah Musser
 
@@ -101,9 +101,9 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 - 2026 — [Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)](https://doi.org/10.5281/zenodo.18364118)
 - 2026 — [Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast](https://doi.org/10.5281/zenodo.20286170)
 - 2026 — [California Public Records: A Technical and Legal Reference for the Post-AB 473 Era](https://doi.org/10.5281/zenodo.20789899)
+- 2026 — [CogSecSkills: Multiharness Agentic Skills for Cognitive Security](https://doi.org/10.5281/zenodo.21513316)
 - 2026 — [Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations](https://doi.org/10.5281/zenodo.21330636)
 - 2024 — [Bridging gaps in image meme research: A multidisciplinary paradigm](https://doi.org/10.1002/asi.24900)
-- 2024 — [Comments on National Digital Twins R&D Strategic Plan](https://doi.org/10.5281/zenodo.13273681)
 
 **Selected repositories**
 
@@ -148,7 +148,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 48
+- Works: 47
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 

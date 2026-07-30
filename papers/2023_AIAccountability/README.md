@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No. NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC). The submission addresses AI accountability thro...
+> Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No. NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC). The submission addresses AI accountability...
 
 ## Keywords
 

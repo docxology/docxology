@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to lack of alignment. This paper summarizes military operations orders, discusses their business counterparts, and presents The Innovator's Catechism—a catechism-styled operations order for early-stage ...
+> Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to lack of alignment. This paper summarizes military operations orders, discusses their business counterparts, and presents The Innovator's Catechism—a catechism-styled operations order for early-stage...
 
 ## Keywords
 

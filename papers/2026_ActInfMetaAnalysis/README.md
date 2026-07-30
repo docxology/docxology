@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv, Semantic Scholar, and OpenAlex, deduplicated through a canonical identifier hierarchy, classified into a three-tier taxonomy, and evaluated with LLM-powered nanopublications over eight hypotheses. Citation-weighted evidence scoring supports relativ...
+> This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv, Semantic Scholar, and OpenAlex, deduplicated through a canonical identifier hierarchy, classified into a three-tier taxonomy, and evaluated with LLM-powered nanopublications over eight hypotheses. Citation-weighted evidence scoring supports...
 
 ## Keywords
 

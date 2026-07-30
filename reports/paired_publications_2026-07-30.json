@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-07-30T17:47:07Z",
+  "source": "GitHub Releases API + Zenodo Records API",
+  "owners": [
+    "docxology"
+  ],
+  "counts": {
+    "github_releases": 1,
+    "zenodo_records": 135,
+    "pairs": 0,
+    "strong_pairs": 0,
+    "already_reviewed": 0,
+    "needs_review": 0,
+    "create_new": 0,
+    "update_existing": 0
+  },
+  "warnings": [],
+  "actions": [],
+  "pairs": [],
+  "applied": []
+}

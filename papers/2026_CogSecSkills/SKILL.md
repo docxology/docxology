@@ -4,7 +4,7 @@ description: "CogSecSkills is a defensive, harness-neutral agent-interface libra
 tags: ["cognitive-security", "agent-skills", "analytic-tradecraft", "structured-analytic-techniques", "multiharness"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *CogSecSkills: Multiharness Cognitive Security Skill Library*. Computational."
-doi: "10.5281/zenodo.20804585"
+doi: "10.5281/zenodo.21513316"
 ---
 
 # CogSecSkills: Multiharness Cognitive Security Skill Library
@@ -39,21 +39,21 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20804585
+- DOI: 10.5281/zenodo.21513316
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:08Z
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
 - Familiarity with cognitive security, agent skills, analytic tradecraft
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/CogSecSkills
 
 ## Instructions
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.20804585`
+1. Reference the DOI for citation: `10.5281/zenodo.21513316`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -2,13 +2,13 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20804585-blue)](https://doi.org/10.5281/zenodo.20804585)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21513316-blue)](https://doi.org/10.5281/zenodo.21513316)
 
 ---
 
 ## Abstract
 
-> CogSecSkills is a defensive, harness-neutral agent-interface library that turns the human doctrine of cognitive security and analytic tradecraft into dependable, inspectable, agent-usable skills, distributed as an open repository from github.com/docxology/CogSecSkills; the motivation is an information environment in which mis-, dis-, and malinformation are analytically distinct but operationally e...
+> CogSecSkills is a defensive, harness-neutral agent-interface library that turns the human doctrine of cognitive security and analytic tradecraft into dependable, inspectable, agent-usable skills, distributed as an open repository from github.com/docxology/CogSecSkills; the motivation is an information environment in which mis-, dis-, and malinformation are analytically distinct but operationally...
 
 ## Keywords
 
@@ -28,14 +28,14 @@
 
 - GitHub repository: [docxology/CogSecSkills](https://github.com/docxology/CogSecSkills)
 - GitHub release: [v1.0.0](https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0)
-- DOI: [10.5281/zenodo.20804585](https://doi.org/10.5281/zenodo.20804585)
-- Zenodo record: [https://zenodo.org/records/20804585](https://zenodo.org/records/20804585)
+- DOI: [10.5281/zenodo.21513316](https://doi.org/10.5281/zenodo.21513316)
+- Zenodo record: [https://zenodo.org/records/21513316](https://zenodo.org/records/21513316)
 - PDF: [Friedman_2026_Cogsecskills_1a99a2e4.pdf](Friedman_2026_Cogsecskills_1a99a2e4.pdf)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20804585)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/21513316)
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *CogSecSkills: Multiharness Cognitive Security Skill Library*. Zenodo. DOI: 10.5281/zenodo.20804585. URL: https://doi.org/10.5281/zenodo.20804585.
+> Daniel Ari Friedman (2026). *CogSecSkills: Multiharness Cognitive Security Skill Library*. Zenodo. DOI: 10.5281/zenodo.21513316. URL: https://doi.org/10.5281/zenodo.21513316.
 
 ## Related
 

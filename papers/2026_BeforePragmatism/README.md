@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences between Blake's prophetic vision and pragmatist philosophy, arguing that Blake's visionary epistemology prefigures key concepts in American pragmatism (Peirce, Dewey, James) before the formal emergence of the pragmatist tradi...
+> Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences between Blake's prophetic vision and pragmatist philosophy, arguing that Blake's visionary epistemology prefigures key concepts in American pragmatism (Peirce, Dewey, James) before the formal emergence of the pragmatist...
 
 ## Keywords
 

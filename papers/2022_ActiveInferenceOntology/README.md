@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provides structured navigation of the field's key components and supports interoperability with existing knowledge bases. This represents a collaborative open-science effort through the Active Inference Inst...
+> We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provides structured navigation of the field's key components and supports interoperability with existing knowledge bases. This represents a collaborative open-science effort through the Active Inference...
 
 ## Keywords
 

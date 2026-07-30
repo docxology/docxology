@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operations order for rapidly formed research teams. Drawing from military operations orders and business process frameworks, we develop structured protocols for emergent team formation that address the unique ...
+> Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operations order for rapidly formed research teams. Drawing from military operations orders and business process frameworks, we develop structured protocols for emergent team formation that address the unique...
 
 ## Keywords
 

@@ -8,12 +8,7 @@
 
 ## Abstract
 
-> Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc
-reviews bind no evidence to a reproducible pipeline. We present a configurable,
-reproducible meta-analysis framework that takes a single search term and produces a
-complete quantitative portrait of its literature. For this instance the term is
-Modafinil. The pipeline dispatches across 7 literature
-engines (arXiv,...
+> Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc reviews bind no evidence to a reproducible pipeline. We present a configurable, reproducible meta-analysis framework that takes a single search term and produces a complete quantitative portrait of its literature. For this instance the term is Modafinil. The pipeline dispatches across 7 literature engines...
 
 ## Keywords
 
@@ -26,11 +21,8 @@ engines (arXiv,...
 
 ## Key Findings
 
-- Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc
-reviews bind no evidence to a reproducible pipeline.
-- We present a configurable,
-reproducible meta-analysis framework that takes a single search term and produces a
-complete quantitative portrait of its literature.
+- Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc reviews bind no evidence to a reproducible pipeline.
+- We present a configurable, reproducible meta-analysis framework that takes a single search term and produces a complete quantitative portrait of its literature.
 
 ## Artifacts
 

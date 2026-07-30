@@ -4,6 +4,7 @@ description: "Synthesis of Agent and Niche is a visionary art-philosophy dialogu
 tags: ["william-blake", "marriage-of-heaven-and-hell", "ecological-psychology", "active-inference", "synergetics", "contraries", "predictive-processing", "markov-blankets", "visionary-epistemology", "art-science-synthesis"]
 domain: "Art & Synergetics"
 citation: "Daniel Ari Friedman (2025). *AgentAndNiche*. Art & Synergetics."
+doi: "10.5281/zenodo.17235137"
 ---
 
 # AgentAndNiche
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.17235137
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:41Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.17235137`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

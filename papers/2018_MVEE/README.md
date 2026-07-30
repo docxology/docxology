@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? This presentation introduces the Multilevel Variational Ecology and Evolution (MVEE) framework, which accounts for plasticity, meta-plasticity, interactions within and among scales, scientific knowledge constraints, ecological variability over behavioral, developmental, and evoluti...
+> How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? This presentation introduces the Multilevel Variational Ecology and Evolution (MVEE) framework, which accounts for plasticity, meta-plasticity, interactions within and among scales, scientific knowledge constraints, ecological variability over behavioral, developmental, and...
 
 ## Keywords
 

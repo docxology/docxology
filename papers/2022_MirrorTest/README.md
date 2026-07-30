@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition. We hypothesize that a 'reflection prediction' may explain mirror self-recognition, self-directed behavior, and how humans locate themselves relative to mirrors. Atypical reflection predictions may explain instances where self-recognition traits are atypical in certain in...
+> We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition. We hypothesize that a 'reflection prediction' may explain mirror self-recognition, self-directed behavior, and how humans locate themselves relative to mirrors. Atypical reflection predictions may explain instances where self-recognition traits are atypical in certain...
 
 ## Keywords
 

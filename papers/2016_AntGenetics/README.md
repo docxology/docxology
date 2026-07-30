@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states. Genetic approaches are beginning to reveal the molecular mechanisms underlying colony-level phenomena such as division of labor, collective decision-making, and social immunity. Here we review ant genomics and genetics through the l...
+> The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states. Genetic approaches are beginning to reveal the molecular mechanisms underlying colony-level phenomena such as division of labor, collective decision-making, and social immunity. Here we review ant genomics and genetics through the...
 
 ## Keywords
 

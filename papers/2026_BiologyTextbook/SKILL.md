@@ -48,7 +48,7 @@ Verification points for this work:
 
 - Familiarity with Biology
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/biology_textbook
 
 ## Instructions
 

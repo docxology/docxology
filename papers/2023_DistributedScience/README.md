@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics. We formalize the scientific process as multi-scale Active Inference, where individual researchers, laboratories, institutions, and the global scientific community each minimize free energy at their respective scales. This framework accounts for hypothesis generation, experimental design, p...
+> The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics. We formalize the scientific process as multi-scale Active Inference, where individual researchers, laboratories, institutions, and the global scientific community each minimize free energy at their respective scales. This framework accounts for hypothesis generation, experimental design...
 
 ## Keywords
 

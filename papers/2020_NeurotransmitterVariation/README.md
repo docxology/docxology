@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions. Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, and tyramine) in single forager brains from 9 red harvester ant colonies collected in the field. Capillary electrophoresis coupled with fast-scan cyclic voltammetry (CE-FSCV) was used to separate and d...
+> Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions. Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, and tyramine) in single forager brains from 9 red harvester ant colonies collected in the field. Capillary electrophoresis coupled with fast-scan cyclic voltammetry (CE-FSCV) was used to separate and...
 
 ## Keywords
 

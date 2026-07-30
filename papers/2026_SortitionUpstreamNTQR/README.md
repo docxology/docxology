@@ -1,4 +1,4 @@
-# 💻 Sortition Upstream of NTQR
+# 💻 Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
@@ -8,11 +8,7 @@
 
 ## Abstract
 
-> How should you choose the judges, jurors, or reviewers who form a panel — and does
-that upstream choice change how well you can evaluate them without an answer key?
-A panel can be selected many ways — by competence, by a representative lottery
-(sortition), by ideological bloc, or at random — and, separately, its noisy
-judgments can be evaluated blind: given the agreement/disagreement pattern among...
+> How should you choose the judges, jurors, or reviewers who form a panel — and does that upstream choice change how well you can evaluate them without an answer key? A panel can be selected many ways — by competence, by a representative lottery (sortition), by ideological bloc, or at random — and, separately, its noisy judgments can be evaluated blind: given the agreement/disagreement pattern...
 
 ## Keywords
 
@@ -25,11 +21,8 @@ judgments can be evaluated blind: given the agreement/disagreement pattern among
 
 ## Key Findings
 
-- How should you choose the judges, jurors, or reviewers who form a panel — and does
-that upstream choice change how well you can evaluate them without an answer key?
-- A panel can be selected many ways — by competence, by a representative lottery
-(sortition), by ideological bloc, or at random — and, separately, its noisy
-judgments can be evaluated blind: given the a
+- How should you choose the judges, jurors, or reviewers who form a panel — and does that upstream choice change how well you can evaluate them without an answer key?
+- A panel can be selected many ways — by competence, by a representative lottery (sortition), by ideological bloc, or at random — and, separately, its noisy judgments can be evaluated blind: given the a
 
 ## Artifacts
 
@@ -42,7 +35,7 @@ judgments can be evaluated blind: given the a
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Sortition Upstream of NTQR*. Zenodo. DOI: 10.5281/zenodo.21083779. URL: https://doi.org/10.5281/zenodo.21083779.
+> Daniel Ari Friedman (2026). *Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation*. Zenodo. DOI: 10.5281/zenodo.21083779. URL: https://doi.org/10.5281/zenodo.21083779.
 
 ## Related
 

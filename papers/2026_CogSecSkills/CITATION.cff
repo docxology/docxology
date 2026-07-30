@@ -1,11 +1,11 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "CogSecSkills: Multiharness Cognitive Security Skill Library"
+title: "CogSecSkills: Multiharness Agentic Skills for Cognitive Security"
 version: "1.0.0"
 date-released: 2026
-doi: 10.5281/zenodo.20804585
-url: "https://doi.org/10.5281/zenodo.20804585"
+doi: 10.5281/zenodo.21513316
+url: "https://doi.org/10.5281/zenodo.21513316"
 repository-code: "https://github.com/docxology/CogSecSkills"
 authors:
   - family-names: Friedman
@@ -13,10 +13,10 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.20804585
+    value: 10.5281/zenodo.21513316
     description: "Zenodo DOI"
   - type: url
-    value: "https://zenodo.org/records/20804585"
+    value: "https://zenodo.org/records/21513316"
     description: "Zenodo landing page"
   - type: url
     value: "https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0"

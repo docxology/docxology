@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-07-29T18:30:44Z
+Generated: 2026-07-30T18:02:29Z
 
-Current public metrics: 197 curated works; 131 catalogued software repositories (93 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 347 docxology + 40 AII public repositories (142 primary, 245 forks).
+Current public metrics: 198 curated works; 131 catalogued software repositories (93 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 347 docxology + 40 AII public repositories (142 primary, 245 forks).
 
 SUMMARY
 -------
@@ -100,7 +100,7 @@ AWARDS AND FELLOWSHIPS
   - Campus Community Service Silver Award and Stanley and Jacqueline Schilling Award for Service.
   - Sources: UC Davis: https://www.ucdavis.edu/
 
-WORKS AND PUBLICATIONS (80)
+WORKS AND PUBLICATIONS (81)
 ---------------------------
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
 [006] 2026 | Series | Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions | YouTube | https://www.youtube.com/@danielarifriedman/playlists
@@ -182,6 +182,7 @@ WORKS AND PUBLICATIONS (80)
 [191] 2026 | Paper | Illegal States, Mostly Unrepresentable | Zenodo | 10.5281/zenodo.21298885
 [192] 2026 | Paper | Data Descriptor Template: Schema, Provenance, and Release Readiness | Zenodo | 10.5281/zenodo.21298883
 [194] 2026 | Paper | Prior Cognitive Art | Zenodo | 10.5281/zenodo.21316510
+[199] 2026 | Paper | Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings | Zenodo | 10.5281/zenodo.21695160
 
 SOFTWARE (14)
 -------------

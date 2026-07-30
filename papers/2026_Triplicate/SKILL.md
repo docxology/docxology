@@ -45,13 +45,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.20533675
 - PDF SHA-256: 6c693dbd80a4234d30d99f6a890191ff47faf197a0636753fa9785588c550a77
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:10Z
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
 - Familiarity with newspaper layout, typography, reportlab
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/template_newspaper
 
 ## Instructions
 

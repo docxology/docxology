@@ -6,27 +6,34 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jul 2026 12:52:35 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 17:57:29 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
       <guid isPermaLink="false">site-update-2026-05-15-repositories</guid>
-      <pubDate>Tue, 21 Jul 2026 12:52:35 +0000</pubDate>
+      <pubDate>Thu, 30 Jul 2026 17:57:29 +0000</pubDate>
       <description>Full generated GitHub repository inventory, refreshed evidence ledger, and stable freshness fact comparison added.</description>
     </item>
     <item>
       <title>Discovery, citation, evidence, and domain pages expanded</title>
       <link>https://danielarifriedman.com/discovery.html</link>
       <guid isPermaLink="false">site-update-2026-05-13-discovery</guid>
-      <pubDate>Tue, 21 Jul 2026 12:52:35 +0000</pubDate>
+      <pubDate>Thu, 30 Jul 2026 17:57:29 +0000</pubDate>
       <description>New machine-readable exports, evidence ledger, domain pages, and agentic discovery metadata.</description>
     </item>
     <item>
       <title>Per-work landing pages and search index generated</title>
       <link>https://danielarifriedman.com/works/</link>
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
-      <pubDate>Tue, 21 Jul 2026 12:52:35 +0000</pubDate>
+      <pubDate>Thu, 30 Jul 2026 17:57:29 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings</title>
+      <link>https://danielarifriedman.com/works/Friedman2026ActiveInferencePowerSuite199.html</link>
+      <guid isPermaLink="false">work-Friedman2026ActiveInferencePowerSuite199</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Active Inference · 2026</description>
     </item>
     <item>
       <title>SynthOBS &amp; FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer</title>
@@ -193,13 +200,6 @@
       <title>Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction</title>
       <link>https://danielarifriedman.com/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html</link>
       <guid isPermaLink="false">work-Friedman2026RealizingEmptinessOperationalSurrogates175</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>CogSecSkills: Multiharness Cognitive Security Skill Library</title>
-      <link>https://danielarifriedman.com/works/Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174.html</link>
-      <guid isPermaLink="false">work-Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>

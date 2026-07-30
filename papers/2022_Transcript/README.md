@@ -28,6 +28,7 @@
 
 - DOI: [10.5281/zenodo.7267947](https://doi.org/10.5281/zenodo.7267947)
 - Zenodo record: [https://zenodo.org/records/7267947](https://zenodo.org/records/7267947)
+- PDF: [ActInfLab_GuestStream.pdf](ActInfLab_GuestStream.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7267947)
 
 ## Citation

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T18:30:50Z",
+  "generated_at": "2026-07-30T18:53:44Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,18 +61,18 @@
     }
   ],
   "max_score": 6,
-  "work_count": 197,
+  "work_count": 198,
   "signal_totals": {
-    "persistent_id": 182,
-    "public_archive": 140,
+    "persistent_id": 183,
+    "public_archive": 141,
     "open_full_text": 173,
-    "source_documents": 180,
+    "source_documents": 181,
     "executable_code": 27,
-    "agent_readable": 180
+    "agent_readable": 181
   },
   "band_counts": {
     "independently reproducible": 133,
-    "independently checkable": 47,
+    "independently checkable": 48,
     "citable only": 8,
     "unverified": 9
   },
@@ -81,11 +81,11 @@
     "1": 4,
     "2": 4,
     "3": 8,
-    "4": 39,
+    "4": 40,
     "5": 108,
     "6": 25
   },
-  "mean_score": 4.477,
+  "mean_score": 4.475,
   "works": [
     {
       "num": 10,
@@ -572,10 +572,10 @@
     },
     {
       "num": 174,
-      "citation_key": "Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174",
-      "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+      "citation_key": "Friedman2026CogSecSkillsMultiharnessAgenticSkills174",
+      "title": "CogSecSkills: Multiharness Agentic Skills for Cognitive Security",
       "year": 2026,
-      "domain_name": "Computational",
+      "domain_name": "Cognitive Security",
       "type": "Paper",
       "score": 6,
       "band": "independently reproducible",
@@ -3397,6 +3397,25 @@
       "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
       "year": 2026,
       "domain_name": "Computational",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 199,
+      "citation_key": "Friedman2026ActiveInferencePowerSuite199",
+      "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+      "year": 2026,
+      "domain_name": "Active Inference",
       "type": "Paper",
       "score": 4,
       "band": "independently checkable",

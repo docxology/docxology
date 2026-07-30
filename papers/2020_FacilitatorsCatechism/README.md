@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> This paper discusses the origins and evolution of Operations Orders from antiquity to modern times and the impact of Operations Orders on organizational sensemaking. Perspectives from Complexity Science, Organizational Psychology, High Reliability Organizations, Memetics, Logistics, Knowledge Management Systems, and Active Inference frame historical, contemporary, and future requirements and const...
+> This paper discusses the origins and evolution of Operations Orders from antiquity to modern times and the impact of Operations Orders on organizational sensemaking. Perspectives from Complexity Science, Organizational Psychology, High Reliability Organizations, Memetics, Logistics, Knowledge Management Systems, and Active Inference frame historical, contemporary, and future requirements and...
 
 ## Keywords
 

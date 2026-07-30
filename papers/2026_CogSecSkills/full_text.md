@@ -1,4 +1,4 @@
-# Full Text: CogSecSkills: Multiharness Cognitive Security Skill Library
+# Full Text: CogSecSkills: Multiharness Agentic Skills for Cognitive Security
 
 > Extracted from `Friedman_2026_Cogsecskills_1a99a2e4.pdf`
 
@@ -15,7 +15,7 @@ Daniel Ari Friedman
 Active Inference Institute
 daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
-DOI: 10.5281/zenodo.20804585
+DOI: 10.5281/zenodo.21513316
 June 22, 2026
 
 ![page1_img1.png](images/page1_img1.png)

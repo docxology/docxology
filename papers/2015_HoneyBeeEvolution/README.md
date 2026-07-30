@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly, beeswax, and venom. Here we use RNA-Seq to characterize transcriptomic profiles of these novel tissues and test the hypothesis that novel traits are enriched for taxonomically restricted genes (TRGs),...
+> A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly, beeswax, and venom. Here we use RNA-Seq to characterize transcriptomic profiles of these novel tissues and test the hypothesis that novel traits are enriched for taxonomically restricted genes...
 
 ## Keywords
 

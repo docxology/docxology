@@ -4,6 +4,7 @@ description: "Updated overview of the Active Inference Institute (AII), document
 tags: ["active-inference-institute", "organizational-update", "open-science", "community"]
 domain: "AII Ecosystem"
 citation: "Active Inference Institute (2024). *AII_v2*. AII Ecosystem."
+doi: "10.5281/zenodo.14108992"
 ---
 
 # AII_v2
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.14108992
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:23Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.14108992`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

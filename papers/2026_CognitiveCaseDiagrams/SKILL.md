@@ -4,6 +4,7 @@ description: "Linguistic case as categorical structure: alignment typology as fu
 tags: ["active-inference", "category-theory", "linguistic-case", "compositional-semantics", "discocat", "discocirc", "distributional-semantics", "cognitive-modeling", "cognitive-security", "prompt-injection"]
 domain: "Active Inference"
 citation: "Daniel Ari Friedman (2026). *Compositional Approaches to Linguistic Case for Cognitive Modeling*. Active Inference."
+doi: "10.5281/zenodo.19695259"
 ---
 
 # Compositional Approaches to Linguistic Case for Cognitive Modeling
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.19695259
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:26:06Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.19695259`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

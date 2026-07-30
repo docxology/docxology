@@ -42,13 +42,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.20419007
 - PDF SHA-256: 535bd80943d0ae9fd504a926efb41c6b39c3a812a94ea4d51bc974029bca563c
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:10Z
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
 - Familiarity with reproducible research, infrastructure-as-code, steganography
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/template_template
 
 ## Instructions
 

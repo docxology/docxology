@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-07-30T18:03:33Z",
+  "zenodo_records_fetched": 135,
+  "bibliography_dois": 184,
+  "uncatalogued_count": 2,
+  "non_canonical_doi_count": 1,
+  "warnings": [],
+  "uncatalogued": [
+    {
+      "record_id": "21418901",
+      "doi": "10.5281/zenodo.21418687",
+      "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+      "publication_date": "2026-07-17",
+      "html_url": "https://zenodo.org/records/21418901"
+    },
+    {
+      "record_id": "20804586",
+      "doi": "10.5281/zenodo.20804585",
+      "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+      "publication_date": "2026",
+      "html_url": "https://zenodo.org/records/20804586"
+    }
+  ],
+  "non_canonical_doi": [
+    {
+      "record_id": "17982447",
+      "concept_doi": "10.5281/zenodo.14108991",
+      "version_doi_in_bibliography": "10.5281/zenodo.17982447",
+      "title": "The Active Inference Institute & Active Inference Ecosystem"
+    }
+  ]
+}

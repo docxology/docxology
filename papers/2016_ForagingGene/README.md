@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulation of task allocation are rare. Here, we investigate the expression of the foraging gene in harvester ant workers from five age- and task-related groups in a natural population, and we experimentally ...
+> Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulation of task allocation are rare. Here, we investigate the expression of the foraging gene in harvester ant workers from five age- and task-related groups in a natural population, and we experimentally...
 
 ## Keywords
 

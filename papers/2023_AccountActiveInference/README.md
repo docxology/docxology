@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more like doing accounting than calculation or inference itself—the generative model does the inference for us. Using the metaphor of 'Active AccountAnts,' it explores how financial accounting principles (st...
+> In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more like doing accounting than calculation or inference itself—the generative model does the inference for us. Using the metaphor of 'Active AccountAnts,' it explores how financial accounting principles...
 
 ## Keywords
 

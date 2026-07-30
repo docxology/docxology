@@ -48,7 +48,7 @@ Verification points for this work:
 
 - Familiarity with gold refining, manuscript composition, mega-madlib
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/template_gold_refinement
 
 ## Instructions
 

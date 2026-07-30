@@ -47,13 +47,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.21086292
 - PDF SHA-256: 0b10852bda89361cd71063867b55d9aed942881476867813facd549a961b0c1d
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:08Z
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
 - Familiarity with exploratory data analysis, computational notebook, reproducible research
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/template_eda_notebook
 
 ## Instructions
 

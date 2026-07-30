@@ -1,36 +1,56 @@
 ---
-name: "DuckRabbit"
-description: "Use for DuckRabbit: Typed Multimodal Illusion Generator, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.21419693."
+name: "DuckRabbit: Typed Multimodal Illusion Generator"
+description: "DuckRabbit is typed, deterministic research software by Daniel Ari Friedman (Active Inference Institute) for constructing reproducible visual, auditory, temporal, and audiovisual stimulus families. The intended public release will be available at the..."
 tags: ["perceptual-illusions", "cognitive-taxonomy", "audio-visual-stimuli", "deterministic-generation", "typed-parameters", "research-software", "reproducible-research", "psychophysics"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *DuckRabbit: Typed Multimodal Illusion Generator*. Computational."
+doi: "10.5281/zenodo.21419693"
 ---
 
 # DuckRabbit: Typed Multimodal Illusion Generator
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Computational
 
-Use this skill when working with the publication **DuckRabbit: Typed Multimodal Illusion Generator** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.21419693`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v0.5.0` and repository `docxology/DuckRabbit` linked when updating catalog surfaces.
+This work addresses topics in **Computational**: perceptual illusions, cognitive taxonomy, audio-visual stimuli, deterministic generation.
 
-## Key Concepts
+## Methods
 
-- **perceptual illusions**
-- **cognitive taxonomy**
-- **audio-visual stimuli**
-- **deterministic generation**
-- **typed parameters**
-- **research software**
-- **reproducible research**
-- **psychophysics**
+Primary methods and techniques applied in this work:
+
+- Literature review
+- Theoretical analysis
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.21419693
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: strong
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with perceptual illusions, cognitive taxonomy, audio-visual stimuli
+- Background in Computational fundamentals
+- Access to source repository: docxology/DuckRabbit
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.21419693`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

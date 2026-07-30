@@ -4,6 +4,7 @@ description: "Six-domain Ento-Linguistic framework, open-source corpus pipeline 
 tags: ["entomology", "scientific-communication", "terminology-networks", "corpus-linguistics", "active-inference", "cace", "semantic-entropy", "myrmecology"]
 domain: "Entomology"
 citation: "Daniel Ari Friedman & Tucker Cahill Chambers (2026). *Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology*. Entomology."
+doi: "10.5281/zenodo.19574117"
 ---
 
 # Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.19574117
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:26:10Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.19574117`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

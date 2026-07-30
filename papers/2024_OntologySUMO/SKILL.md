@@ -4,6 +4,7 @@ description: "We present a tentative alignment of Active Inference terms with SU
 tags: ["ontology-alignment", "sumo", "active-inference-ontology", "knowledge-representation", "formal-ontology", "semantic-mapping"]
 domain: "AII Ecosystem"
 citation: "David S. Douglass, Adam Pease, Daniel Friedman, et al. (2024). *OntologySUMO*. AII Ecosystem."
+doi: "10.5281/zenodo.11459322"
 ---
 
 # OntologySUMO
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.11459322
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:32Z
@@ -53,6 +54,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.11459322`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

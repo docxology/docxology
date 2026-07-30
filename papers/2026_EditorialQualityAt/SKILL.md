@@ -42,13 +42,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.20417104
 - PDF SHA-256: 290d21b10bd588b978d6a3200cdf0e3c2441ca86fcdc777ab41975fa910a260e
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:10Z
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
 - Familiarity with prose analysis, readability, editorial review
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/template_prose_project
 
 ## Instructions
 

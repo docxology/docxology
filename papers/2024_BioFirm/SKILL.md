@@ -4,6 +4,7 @@ description: "BioFirm applies Active Inference and the Free Energy Principle to 
 tags: ["biofirm", "bioregional-stewardship", "active-inference", "organizational-modeling", "sustainability", "adaptive-management"]
 domain: "Presentations & Media"
 citation: "Daniel A. Friedman (2024). *BioFirm*. Presentations & Media."
+doi: "10.5281/zenodo.14861595"
 ---
 
 # BioFirm
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.14861595
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:24Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.14861595`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -4,6 +4,7 @@ description: "Transcript from the event 'Sensemaking Federation: Exploring the F
 tags: ["sensemaking-federation", "digital-innovation", "knowledge-federation", "collaborative-sensemaking", "decentralized-infrastructure"]
 domain: "Presentations & Media"
 citation: "Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman (2024). *SensemakingFederation*. Presentations & Media."
+doi: "10.5281/zenodo.14574046"
 ---
 
 # SensemakingFederation
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.14574046
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:35Z
@@ -54,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.14574046`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -1,37 +1,57 @@
 ---
-name: "EntomologicalLaw"
-description: "Use for Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.21137276."
-tags: ["entomological-law", "legal-entomology", "forensic-entomology", "endangered-species", "invasive-species", "insect-welfare", "gene-drive", "biological-weapons-convention"]
+name: "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon"
+description: "<p>There is no statute, treatise, or law-school casebook titled "Entomological Law." The phrase names a synthetic field &mdash; the convergence zone where the six-legged world repeatedly forces the legal system to answer questions it was not designed..."
+tags: ["entomological-law", "legal-entomology", "forensic-entomology", "endangered-species", "invasive-species", "insect-welfare", "gene-drive", "biological-weapons-convention", "reproducible-legal-scholarship"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon*. Computational."
+doi: "10.5281/zenodo.21137276"
 ---
 
 # Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Computational
 
-Use this skill when working with the publication **Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.21137276`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v1.0.0` and repository `docxology/EntoLaw` linked when updating catalog surfaces.
+This work addresses topics in **Computational**: entomological law, legal entomology, forensic entomology, endangered species.
 
-## Key Concepts
+## Methods
 
-- **entomological law**
-- **legal entomology**
-- **forensic entomology**
-- **endangered species**
-- **invasive species**
-- **insect welfare**
-- **gene drive**
-- **biological weapons convention**
-- **reproducible legal scholarship**
+Primary methods and techniques applied in this work:
+
+- Field observation
+- Population genetics analysis
+- Behavioral assays
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.21137276
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: strong
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with entomological law, legal entomology, forensic entomology
+- Background in Computational fundamentals
+- Access to source repository: docxology/EntoLaw
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.21137276`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

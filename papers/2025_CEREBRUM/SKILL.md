@@ -48,7 +48,7 @@ Verification points for this work:
 
 - Familiarity with CEREBRUM
 - Background in Active Inference fundamentals
-- Access to source repository: N/A
+- Access to source repository: ActiveInferenceInstitute/CEREBRUM
 
 ## Instructions
 

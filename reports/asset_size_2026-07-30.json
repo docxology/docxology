@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-07-30T18:53:44Z",
+  "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
+  "asset_count": 91,
+  "warnings": 0,
+  "total_bytes": 14368634,
+  "largest": [
+    {
+      "path": "data/videos.json",
+      "kind": "json-data",
+      "bytes": 3427010,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/artworks.json",
+      "kind": "json-data",
+      "bytes": 3254859,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/artworks-index.json",
+      "kind": "json-data",
+      "bytes": 729213,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "publications.html",
+      "kind": "html",
+      "bytes": 350148,
+      "budget_bytes": 500000,
+      "ok": true
+    },
+    {
+      "path": "data/publications-ld.json",
+      "kind": "json-data",
+      "bytes": 332533,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/github-repositories.json",
+      "kind": "json-data",
+      "bytes": 331158,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "resume/resume.pdf",
+      "kind": "resume-export",
+      "bytes": 325803,
+      "budget_bytes": 5000000,
+      "ok": true
+    },
+    {
+      "path": "data/resume.json",
+      "kind": "json-data",
+      "bytes": 297317,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/videos-index.json",
+      "kind": "json-data",
+      "bytes": 290229,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/publishing-status.json",
+      "kind": "json-data",
+      "bytes": 288040,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/work-enrichment.json",
+      "kind": "json-data",
+      "bytes": 221354,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "repositories-forks.html",
+      "kind": "html",
+      "bytes": 200080,
+      "budget_bytes": 500000,
+      "ok": true
+    },
+    {
+      "path": "assets/hero-art/army-ants.webp",
+      "kind": "hero-art",
+      "bytes": 168864,
+      "budget_bytes": 320000,
+      "ok": true
+    },
+    {
+      "path": "data/repository-classification.json",
+      "kind": "json-data",
+      "bytes": 162718,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "software.html",
+      "kind": "html",
+      "bytes": 161073,
+      "budget_bytes": 500000,
+      "ok": true
+    },
+    {
+      "path": "data/works.json",
+      "kind": "json-data",
+      "bytes": 160412,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "bibliography.csl.json",
+      "kind": "citation-export",
+      "bytes": 157932,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "data/work-authors.json",
+      "kind": "json-data",
+      "bytes": 147071,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "assets/hero-art/decentral-antelligence-agency.webp",
+      "kind": "hero-art",
+      "bytes": 130118,
+      "budget_bytes": 320000,
+      "ok": true
+    },
+    {
+      "path": "repositories.html",
+      "kind": "html",
+      "bytes": 127280,
+      "budget_bytes": 500000,
+      "ok": true
+    }
+  ],
+  "over_budget": []
+}

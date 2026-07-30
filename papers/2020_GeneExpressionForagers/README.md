@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compared to nest workers in harvester ants, identifying genes differentially expressed between behavioral castes. We find distinct transcriptomic signatures associated with foraging behavior and identify pa...
+> Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compared to nest workers in harvester ants, identifying genes differentially expressed between behavioral castes. We find distinct transcriptomic signatures associated with foraging behavior and identify...
 
 ## Keywords
 

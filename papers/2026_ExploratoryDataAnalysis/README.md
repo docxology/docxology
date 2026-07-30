@@ -8,12 +8,7 @@
 
 ## Abstract
 
-> Exploratory data analysis (EDA) is the most common entry point in applied
-research, yet it is also where reproducibility most often breaks down: logic
-accumulates in notebook cells that are never tested and quietly drift from the
-prose describing them. This paper presents the computational-notebook
-exemplar of the Research Project Template (https://github.com/docxology/template):
-an interactive wa...
+> Exploratory data analysis (EDA) is the most common entry point in applied research, yet it is also where reproducibility most often breaks down: logic accumulates in notebook cells that are never tested and quietly drift from the prose describing them. This paper presents the computational-notebook exemplar of the Research Project Template (https://github.com/docxology/template): an interactive...
 
 ## Keywords
 
@@ -26,13 +21,8 @@ an interactive wa...
 
 ## Key Findings
 
-- Exploratory data analysis (EDA) is the most common entry point in applied
-research, yet it is also where reproducibility most often breaks down: logic
-accumulates in notebook cells that are never test
-- This paper presents the computational-notebook
-exemplar of the Research Project Template (https://github.com/docxology/template):
-an interactive walkthrough notebook
-(projects/templates/template_eda_n
+- Exploratory data analysis (EDA) is the most common entry point in applied research, yet it is also where reproducibility most often breaks down: logic accumulates in notebook cells that are never test
+- This paper presents the computational-notebook exemplar of the Research Project Template (https://github.com/docxology/template): an interactive walkthrough notebook (projects/templates/template_eda_n
 
 ## Artifacts
 

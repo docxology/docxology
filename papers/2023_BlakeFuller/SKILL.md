@@ -4,6 +4,7 @@ description: "A presentation for '52 Living Ideas' comparing the lives and works
 tags: ["william-blake", "buckminster-fuller", "comprehensivity", "design-science", "prophetic-vision", "art-science-synthesis", "52-living-ideas", "juxtaposition"]
 domain: "Art & Synergetics"
 citation: "Daniel A. Friedman (2023). *BlakeFuller*. Art & Synergetics."
+doi: "10.5281/zenodo.7514367"
 ---
 
 # BlakeFuller
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.7514367
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:11Z
@@ -53,6 +54,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.7514367`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

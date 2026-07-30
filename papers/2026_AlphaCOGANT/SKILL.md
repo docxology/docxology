@@ -46,13 +46,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.20976824
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:08Z
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
 - Familiarity with active inference, expected free energy, recursive self-improvement
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/alphacogant
 
 ## Instructions
 

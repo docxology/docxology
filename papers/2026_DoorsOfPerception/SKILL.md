@@ -4,6 +4,7 @@ description: "The Doors of Perception are the Threshold of Prediction explores e
 tags: ["william-blake", "active-inference", "perception", "prediction", "thematic-atlas", "prophetic-vision", "generative-models", "markov-blankets"]
 domain: "Art & Synergetics"
 citation: "Daniel Ari Friedman (2026). *DoorsOfPerception*. Art & Synergetics."
+doi: "10.5281/zenodo.18600040"
 ---
 
 # DoorsOfPerception
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.18600040
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:26:09Z
@@ -53,6 +54,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.18600040`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

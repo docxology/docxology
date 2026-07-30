@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T18:30:44Z",
+  "generated_at": "2026-07-30T18:02:29Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 197,
+    "works": 198,
     "software_catalogued": 131,
     "owned_software_catalogued": 93,
     "aii_software_catalogued": 38,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "0f43ee279d6f90f8a7517fe787252dc83a066f1f10a778c59dca383178032f0e",
+      "sha256": "6f7a815c3494bd4215e754b6d2964fd6b51e0e8c84b7dd11a8a38c76b28e10e6",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 159687,
-          "sha256": "fe3a3fb1473216145c29371d78d15488e075f6cf852272f3737af4da25bd6a41"
+          "bytes": 160412,
+          "sha256": "ebb8677b7a42cfee4f0529002a35f88905d4b4c03ad9d9784c4142fe28a62a7a"
         },
         {
           "path": "data/software.json",
           "bytes": 62685,
-          "sha256": "c97cb0f2778726fa391b1ec54fd2962ed4867d6161870caebb356a3f490148d9"
+          "sha256": "841d256c6d4ed463a0cdd1fd7132121d54f94dd0c3b9dc3e1e8e074be6fea7d8"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 11914,
-          "sha256": "cc1e6c3f2254119b7ab4ecb2c6c552fcd31af8ed3aa3a899785bd210090a48f2"
+          "sha256": "65415a514bd605e124f7a08a31022a42309b2498fad14772066a1666fb25b276"
         },
         {
           "path": "data/github-repositories.json",
@@ -6655,15 +6655,15 @@
     },
     {
       "num": 174,
-      "citation_key": "Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174",
+      "citation_key": "Friedman2026CogSecSkillsMultiharnessAgenticSkills174",
       "year": 2026,
-      "domain": "💻",
-      "domain_name": "Computational",
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
       "type": "Paper",
-      "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+      "title": "CogSecSkills: Multiharness Agentic Skills for Cognitive Security",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.20804585",
-      "doi": "10.5281/zenodo.20804585",
+      "url": "https://doi.org/10.5281/zenodo.21513316",
+      "doi": "10.5281/zenodo.21513316",
       "docs_path": "papers/2026_CogSecSkills/",
       "has_paper_folder": true,
       "has_full_text": true,
@@ -7215,8 +7215,8 @@
       "type": "Paper",
       "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.21418687",
-      "doi": "10.5281/zenodo.21418687",
+      "url": "https://doi.org/10.5281/zenodo.21418782",
+      "doi": "10.5281/zenodo.21418782",
       "docs_path": "papers/2026_SynthOBSFractiSynth/",
       "has_paper_folder": true,
       "has_full_text": false,
@@ -7228,6 +7228,27 @@
       "authors": [
         "Friedman, Daniel Ari"
       ]
+    },
+    {
+      "num": 199,
+      "citation_key": "Friedman2026ActiveInferencePowerSuite199",
+      "year": 2026,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21695160",
+      "doi": "10.5281/zenodo.21695160",
+      "docs_path": "papers/2026_ActiveInferencePower/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": []
     }
   ],
   "software": [
@@ -8807,14 +8828,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 197 works.",
+      "claim": "The curated bibliography contains 198 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-07-21T20:34:49+00:00",
+      "checked_at": "2026-07-30T18:01:08+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -8822,14 +8843,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 180 per-paper documentation folders.",
+      "claim": "The repository contains 181 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-07-21T20:34:49+00:00",
+      "checked_at": "2026-07-30T18:01:08+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

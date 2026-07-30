@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Science, and (f) Philosophy & Arts. The presentation covers research contributions, collaborations, publications, and future directions across these domains, demonstrating the interdisciplinary breadth o...
+> A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Science, and (f) Philosophy & Arts. The presentation covers research contributions, collaborations, publications, and future directions across these domains, demonstrating the interdisciplinary breadth...
 
 ## Keywords
 

@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems. The platform integrates real-time sensor data collection, edge computing, and Active Inference models to empower individual farmers with cutting-edge technology while preserving their autonomy. Key c...
+> FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems. The platform integrates real-time sensor data collection, edge computing, and Active Inference models to empower individual farmers with cutting-edge technology while preserving their autonomy. Key...
 
 ## Keywords
 

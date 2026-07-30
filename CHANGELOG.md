@@ -2,6 +2,13 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-07-30
+
+- **One new Zenodo publication catalogued** via `add_zenodo_only.py`: **#199** Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings (🧠, `zenodo.21695160`), with full paper folder documentation and regenerated downstream surfaces.
+- **Two existing works updated** to newer Zenodo records (same work, re-deposited): **#174** CogSecSkills (`20804585` → `21513316`, domain corrected to 🛡️) and **#198** SynthOBS & FractiSynth (`21418687` → `21418782`). Duplicate rows #200–#201 retired.
+- **Comprehensive repo audit**: Zenodo uncatalogued queue cleared (0 remaining), paired-publication scan (0 new pairs), all local `validate_repo.py` checks pass (39/40 — live-site mismatch at 197 vs 199 is expected pre-push), 216 pytest green, 1540/1540 static accessibility passes, 0 asset-size warnings, all count-consistency surfaces aligned.
+- Bibliography **197→199**; paper folders **180→181**.
+
 ## 2026-07-24
 
 - **Repo-wide functional and signposting audit implemented**: Pages growth reports are date-stable control metadata across UTC rollovers; release-integrity now records explicit deployment-pending reasons and supports a strict `--require-deployed` gate; accessibility commands use the supported `--check` flag; public-page SEO guidance distinguishes indexable pages from intentional paper/redirect exceptions; cache-buster documentation matches the generated layer; and the historical maintenance table moved out of always-loaded `AGENTS.md`.

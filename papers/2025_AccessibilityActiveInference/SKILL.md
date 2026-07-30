@@ -4,6 +4,7 @@ description: "A Letter of Intent submitted to Dana Frontiers proposing to increa
 tags: ["accessibility", "active-inference", "pedagogy", "summer-school-curriculum", "generative-playbooks", "open-source-education", "neurotechnology", "neurodiversity", "cognitive-security"]
 domain: "Active Inference"
 citation: "Daniel A. Friedman, Active Inference Institute (2025). *AccessibilityActiveInference*. Active Inference."
+doi: "10.5281/zenodo.15061666"
 ---
 
 # AccessibilityActiveInference
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.15061666
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:40Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.15061666`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

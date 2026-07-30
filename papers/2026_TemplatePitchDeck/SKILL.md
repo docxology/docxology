@@ -1,36 +1,57 @@
 ---
-name: "TemplatePitchDeck"
-description: "Use for template_pitch_deck: Reproducible, Validated Pitch-Deck Generation, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.21281509."
+name: "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation"
+description: "Research groups routinely need to pitch their work — to funders, partners, or collaborators — yet pitch decks are almost never treated as reproducible research artifacts: they are hand-assembled in proprietary slide tools, contain unverifiable claims..."
 tags: ["pitch-deck", "slide-generation", "reproducible-research-communication", "meta-science-infrastructure", "science-integrity", "token-validation", "pptx", "pdf-rendering"]
+domain: "Computational"
+citation: "Daniel Ari Friedman (2026). *template_pitch_deck: Reproducible, Validated Pitch-Deck Generation*. Computational."
+doi: "10.5281/zenodo.21281509"
 ---
 
 # template_pitch_deck: Reproducible, Validated Pitch-Deck Generation
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Computational
 
-Use this skill when working with the publication **template_pitch_deck: Reproducible, Validated Pitch-Deck Generation** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.21281509`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v1.0.2` and repository `docxology/template-pitch-deck` linked when updating catalog surfaces.
+This work addresses topics in **Computational**: pitch deck, slide generation, reproducible research communication, meta-science infrastructure.
 
-## Key Concepts
+## Methods
 
-- **pitch deck**
-- **slide generation**
-- **reproducible research communication**
-- **meta-science infrastructure**
-- **science integrity**
-- **token validation**
-- **PPTX**
-- **PDF rendering**
+Primary methods and techniques applied in this work:
+
+- Narrative analysis
+- Misinformation detection
+- Trust frameworks
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.21281509
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: strong
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with pitch deck, slide generation, reproducible research communication
+- Background in Computational fundamentals
+- Access to source repository: docxology/template-pitch-deck
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.21281509`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

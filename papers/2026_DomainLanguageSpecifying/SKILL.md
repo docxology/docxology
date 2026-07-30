@@ -47,13 +47,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.21086548
 - PDF SHA-256: ecd8519fc2a9a674bd8a4cf89f96122af76529c913e32bf880a7c842da08771a
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:09Z
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
 - Familiarity with methods paper, domain-specific language, controlled methods
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/template_methods_paper
 
 ## Instructions
 

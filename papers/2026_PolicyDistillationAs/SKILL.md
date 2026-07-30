@@ -42,13 +42,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.20747834
 - PDF SHA-256: db0f2e4f193efa4dd65058d8d8094659a7c9200454acb2da14e88c304f29819e
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:10Z
+- Last checked: 2026-07-10T19:08:24Z
 
 ## Prerequisites
 
 - Familiarity with on-policy distillation, active inference, self-distillation
 - Background in Active Inference fundamentals
-- Access to source repository: N/A
+- Access to source repository: ActiveInferenceInstitute/on_policy_distillation
 
 ## Instructions
 

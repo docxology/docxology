@@ -1,31 +1,34 @@
-# Pools, Rules, and Tools: A Template-Integrated Resource Architecture
+# 🧠 Pools, Rules, and Tools: A Template-Integrated Resource Architecture
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21298888.svg)](https://doi.org/10.5281/zenodo.21298888)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21298888-blue)](https://doi.org/10.5281/zenodo.21298888)
 
 ---
 
 ## Abstract
 
-Publication metadata synchronized from Zenodo.
+> 
 
 ## Keywords
 
-Zenodo publication
+`PoolsRulesTools`
+
+## Methods
+
+- Literature review
+- Theoretical analysis
+
+## Key Findings
+
+- See full paper for detailed findings and analysis
 
 ## Artifacts
 
-| Field | Value |
-|------|-------|
-| **DOI** | [10.5281/zenodo.21298888](https://doi.org/10.5281/zenodo.21298888) |
-| **Published** | 2026-07-05 |
-| **Version** | 1.0.0 |
-| **Zenodo record** | https://zenodo.org/records/21298888 |
-
-## Files
-
-- `Friedman_2026_Pools_6908c1a0.pdf` - Zenodo PDF
+- DOI: [10.5281/zenodo.21298888](https://doi.org/10.5281/zenodo.21298888)
+- Zenodo record: [https://zenodo.org/records/21298888](https://zenodo.org/records/21298888)
+- PDF: [Friedman_2026_Pools_6908c1a0.pdf](Friedman_2026_Pools_6908c1a0.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/21298888)
 
 ## Citation
 
@@ -33,5 +36,5 @@ Zenodo publication
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/21298888
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

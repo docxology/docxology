@@ -4,6 +4,7 @@ description: "A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral
 tags: ["postdoctoral-review", "research-portfolio", "active-inference", "entomology", "cognitive-security", "meta-science", "philosophy", "biology", "interdisciplinary-research"]
 domain: "Presentations & Media"
 citation: "Daniel Ari Friedman (2023). *PostdocReview*. Presentations & Media."
+doi: "10.5281/zenodo.8377987"
 ---
 
 # PostdocReview
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.8377987
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:22Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.8377987`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

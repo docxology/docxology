@@ -40,15 +40,15 @@ Core contributions and results:
 Verification points for this work:
 
 - DOI: 10.5281/zenodo.20786638
-- PDF SHA-256: a593c1fedd4b4762c59b3e4f0b678efb84af0b1fa09f1ddff2995a9a805b7bc5
+- PDF SHA-256: d9248f4f372fc3baf21cbf5cc5cdb7daffe0e22e62ac6fa2e3a697a26f3308b6
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:10Z
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
 - Familiarity with madlib generation, token injection, conditional manuscripts
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/template_madlib
 
 ## Instructions
 

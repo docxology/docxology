@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected. Here we present field experiments showing that hydrated Pogonomyrmex barbatus foragers made more foraging trips than unhydrated nestmates. Desiccation tests showed that foragers of colonies that reduce foraging in dry conditions are more sensi...
+> Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected. Here we present field experiments showing that hydrated Pogonomyrmex barbatus foragers made more foraging trips than unhydrated nestmates. Desiccation tests showed that foragers of colonies that reduce foraging in dry conditions are more...
 
 ## Keywords
 

@@ -4,6 +4,7 @@ description: "The ATLAS (A Question Oriented Approach to Pattern Languages) syst
 tags: ["atlas", "pattern-languages", "knowledge-management", "question-oriented-approach", "information-architecture", "decision-support", "cognitive-tools"]
 domain: "Cognitive Security"
 citation: "R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, Colten Zacharias (2023). *ATLAS*. Cognitive Security."
+doi: "10.5281/zenodo.10296601"
 ---
 
 # ATLAS
@@ -37,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.10296601
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:06Z
@@ -52,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.10296601`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

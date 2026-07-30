@@ -4,6 +4,7 @@ description: "The Markdown Decision Process (MDP) framework treats Markdown docu
 tags: ["markdown-decision-process", "document-analysis", "markov-chains", "reinforcement-learning", "pomdp", "probabilistic-modeling", "document-generation"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2025). *MarkdownDecisionProcess*. Computational."
+doi: "10.5281/zenodo.17244386"
 ---
 
 # MarkdownDecisionProcess
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.17244386
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:52Z
@@ -53,6 +54,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.17244386`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -42,13 +42,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.20420556
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:10Z
+- Last checked: 2026-07-10T19:08:24Z
 
 ## Prerequisites
 
 - Familiarity with honeybee, Apis mellifera, active inference
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/BeeStack
 
 ## Instructions
 

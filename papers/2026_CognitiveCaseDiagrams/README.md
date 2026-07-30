@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> Commutative diagrams encode relational structure, distributional semantics, and belief updating—with linguistic case as the hinge. Case systems as categories; alignment patterns as functors; DisCoCat/DisCoCirc string diagrams; enriched hooks to quantitative similarity; links to Distributional Active Inference and ERP-oriented hypotheses; POVM scaling for multi-agent discourse; prompt injection as ...
+> Commutative diagrams encode relational structure, distributional semantics, and belief updating—with linguistic case as the hinge. Case systems as categories; alignment patterns as functors; DisCoCat/DisCoCirc string diagrams; enriched hooks to quantitative similarity; links to Distributional Active Inference and ERP-oriented hypotheses; POVM scaling for multi-agent discourse; prompt injection as...
 
 ## Keywords
 

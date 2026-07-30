@@ -5936,9 +5936,9 @@
     "URL": "https://doi.org/10.5281/zenodo.20789899"
   },
   {
-    "id": "Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174",
+    "id": "Friedman2026CogSecSkillsMultiharnessAgenticSkills174",
     "type": "article-journal",
-    "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+    "title": "CogSecSkills: Multiharness Agentic Skills for Cognitive Security",
     "author": [
       {
         "literal": "Daniel Ari Friedman"
@@ -5952,12 +5952,12 @@
       ]
     },
     "genre": "Paper",
-    "keyword": "Computational; Paper",
+    "keyword": "Cognitive Security; Paper",
     "note": "Catalog row 174; docs: papers/2026_CogSecSkills/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.20804585",
-    "URL": "https://doi.org/10.5281/zenodo.20804585"
+    "DOI": "10.5281/zenodo.21513316",
+    "URL": "https://doi.org/10.5281/zenodo.21513316"
   },
   {
     "id": "Friedman2026RealizingEmptinessOperationalSurrogates175",
@@ -6539,7 +6539,32 @@
     "note": "Catalog row 198; docs: papers/2026_SynthOBSFractiSynth/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.21418687",
-    "URL": "https://doi.org/10.5281/zenodo.21418687"
+    "DOI": "10.5281/zenodo.21418782",
+    "URL": "https://doi.org/10.5281/zenodo.21418782"
+  },
+  {
+    "id": "Friedman2026ActiveInferencePowerSuite199",
+    "type": "article-journal",
+    "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 199; docs: papers/2026_ActiveInferencePower/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21695160",
+    "URL": "https://doi.org/10.5281/zenodo.21695160"
   }
 ]

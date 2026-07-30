@@ -4,6 +4,7 @@ description: "The genetic basis of phenotypic novelty is a major unresolved ques
 tags: ["honey-bees", "apis-mellifera", "gene-expression", "rna-seq", "novel-traits", "taxonomically-restricted-genes", "coding-sequence-evolution"]
 domain: "Entomology"
 citation: "William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson (2023). *HoneyBeeGeneExpression*. Entomology."
+doi: "10.5281/zenodo.10400744"
 ---
 
 # HoneyBeeGeneExpression
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- DOI: 10.5281/zenodo.10400744
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:17Z
@@ -54,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.10400744`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

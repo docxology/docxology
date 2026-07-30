@@ -1,35 +1,57 @@
 ---
-name: "PriorCognitiveArt"
-description: "Use for Prior Cognitive Art, a paired GitHub and Zenodo publication with DOI 10.5281/zenodo.21316510."
+name: "Prior Cognitive Art"
+description: "A prior is not explained by stacking more priors; it is located by mechanism, function, history, and fixed-point organization. The paper's precise thesis is procedural: before asking why a prior exists, identify which explanatory kind is being reques..."
 tags: ["priors", "tinbergen's-four-questions", "hierarchical-bayes", "free-energy-principle", "markov-blankets", "cognitive-science", "conceptual-visualization"]
+domain: "Active Inference"
+citation: "Daniel Ari Friedman (2026). *Prior Cognitive Art*. Active Inference."
+doi: "10.5281/zenodo.21316510"
 ---
 
 # Prior Cognitive Art
 
-## Instructions
+**Daniel Ari Friedman** (2026) · Active Inference
 
-Use this skill when working with the publication **Prior Cognitive Art** or its paired release artifacts.
+## Context
 
-1. Ground citations in DOI `10.5281/zenodo.21316510`.
-2. Treat the Zenodo record as the archival source and the GitHub release as the executable/source release.
-3. Keep release tag `v0.1.0` and repository `docxology/prior_cognitive_art` linked when updating catalog surfaces.
+This work addresses topics in **Active Inference**: priors, Tinbergen's four questions, hierarchical Bayes, free energy principle.
 
-## Key Concepts
+## Methods
 
-- **priors**
-- **Tinbergen's four questions**
-- **hierarchical Bayes**
-- **free energy principle**
-- **Markov blankets**
-- **cognitive science**
-- **conceptual visualization**
+Primary methods and techniques applied in this work:
+
+- Free energy minimization
+- Generative modeling
+- Bayesian inference
+
+## Key Findings
+
+Core contributions and results:
+
+- See full paper for detailed findings and analysis
+
+## Related Works
+
+See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
+
+## Validation
+
+Verification points for this work:
+
+- DOI: 10.5281/zenodo.21316510
+- PDF SHA-256: See zenodo_record
+- Pairing confidence: strong
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
-- Familiarity with the source repository and Zenodo record.
-- Awareness that new versions may update both GitHub and Zenodo surfaces.
+- Familiarity with priors, Tinbergen's four questions, hierarchical Bayes
+- Background in Active Inference fundamentals
+- Access to source repository: docxology/prior_cognitive_art
 
-## Related
+## Instructions
 
-- [README.md](README.md)
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+When working with this paper:
+
+1. Reference the DOI for citation: `10.5281/zenodo.21316510`
+2. Apply methods listed in the Methods section for related analysis.
+3. Validate findings against the original PDF and metadata.

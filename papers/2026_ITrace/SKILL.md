@@ -48,7 +48,7 @@ Verification points for this work:
 
 - Familiarity with eye-tracking, webcam, gaze
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/itrace
 
 ## Instructions
 

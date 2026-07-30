@@ -42,13 +42,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.20693216
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:10Z
+- Last checked: 2026-07-10T19:08:24Z
 
 ## Prerequisites
 
 - Familiarity with demo-generation, screencast, text-to-speech
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/democreate
 
 ## Instructions
 

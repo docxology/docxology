@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-oriented pattern languages to address the complexities of modern information environments. Evolving since the late 1990s, ATLAS provides structured methods for organizing knowledge through patterns of questions that guide analysis and decision-making acro...
+> The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-oriented pattern languages to address the complexities of modern information environments. Evolving since the late 1990s, ATLAS provides structured methods for organizing knowledge through patterns of questions that guide analysis and decision-making...
 
 ## Keywords
 

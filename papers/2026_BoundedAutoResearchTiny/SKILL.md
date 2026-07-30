@@ -45,13 +45,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.20417016
 - PDF SHA-256: e07b62850a1995935283d37a45c21d71fa7c4e69cdcc451c5a1ea8aee6d0c94a
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:08Z
+- Last checked: 2026-07-17T23:23:31Z
 
 ## Prerequisites
 
 - Familiarity with autoresearch, reproducible research, machine learning benchmark
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/template_autoresearch_project
 
 ## Instructions
 

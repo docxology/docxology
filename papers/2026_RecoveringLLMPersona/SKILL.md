@@ -42,13 +42,13 @@ Verification points for this work:
 - DOI: 10.5281/zenodo.20498699
 - PDF SHA-256: e1196698427f9fe04d1f3071705adb6e5459983649c78d7f5d074756e989148b
 - Pairing confidence: strong
-- Last checked: 2026-07-01T00:30:10Z
+- Last checked: 2026-07-10T19:08:24Z
 
 ## Prerequisites
 
 - Familiarity with algebraic evaluation, NTQR, unsupervised evaluation
 - Background in Computational fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/ntqr_llm
 
 ## Instructions
 

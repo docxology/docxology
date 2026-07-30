@@ -8,12 +8,7 @@
 
 ## Abstract
 
-> The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio
-optimization problem:  a corporation recursively improves when realized economic
-gains finance the next cycle of better prediction and deployment, and the firm's
-standing is summarized by t-RSI, a standardized gap between alpha-creation and
-alpha-decay rates. AlphaCOGANT observes that this construction is, term for
-t...
+> The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio optimization problem: a corporation recursively improves when realized economic gains finance the next cycle of better prediction and deployment, and the firm's standing is summarized by t-RSI, a standardized gap between alpha-creation and alpha-decay rates. AlphaCOGANT observes that this construction is, term for...
 
 ## Keywords
 
@@ -36,7 +31,7 @@ t...
 ## Artifacts
 
 - GitHub repository: [docxology/alphacogant](https://github.com/docxology/alphacogant)
-- GitHub release: [v1.0.0](https://github.com/docxology/alphacogant/releases/tag/v1.0.0)
+- GitHub release: [v1.0.1](https://github.com/docxology/alphacogant/releases/tag/v1.0.1)
 - DOI: [10.5281/zenodo.20976824](https://doi.org/10.5281/zenodo.20976824)
 - Zenodo record: [https://zenodo.org/records/20976824](https://zenodo.org/records/20976824)
 - PDF: [Friedman_2026_Alphacogant_41efa7a8.pdf](Friedman_2026_Alphacogant_41efa7a8.pdf)
@@ -47,8 +42,6 @@ t...
 > Daniel Ari Friedman (2026). *AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference*. Zenodo. DOI: 10.5281/zenodo.20976824. URL: https://doi.org/10.5281/zenodo.20976824.
 
 ## Related
-
-- GitHub release: https://github.com/docxology/alphacogant/releases/tag/v1.0.1
 
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
 - [All Papers](../README.md)

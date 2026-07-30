@@ -1,6 +1,6 @@
-# AGENTS.md — CaliforniaPublicRecords
+# AGENTS.md — California Public Records: A Technical and Legal Reference for the Post-AB 473 Era
 
-**Paper**: CaliforniaPublicRecords (2026)
+**Paper**: California Public Records: A Technical and Legal Reference for the Post-AB 473 Era (2026)
 **Domain**: Cognitive Security
 **Authors**: Daniel Ari Friedman
 
@@ -24,7 +24,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects CaliforniaPublicRecords to related works in the bibliography
+- Connects California Public Records: A Technical and Legal Reference for the Post-AB 473 Era to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -34,9 +34,9 @@
 
 | Date | Agent | Action | Status |
 |------|-------|--------|--------|
-| 2026-07-01 | ARCHIVIST | Cataloged metadata | ✅ |
-| 2026-07-01 | RESEARCHER | Extracted methods/findings | ✅ |
-| 2026-07-01 | EDUCATOR | Generated documentation | ✅ |
+| 2026-07-30 | ARCHIVIST | Cataloged metadata | ✅ |
+| 2026-07-30 | RESEARCHER | Extracted methods/findings | ✅ |
+| 2026-07-30 | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References
 

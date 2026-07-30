@@ -8,7 +8,7 @@
 
 ## Abstract
 
-> This manuscript overlays the history of British and American bimetallism with the mythopoetic architecture of William Blake’s prophetic corpus, reading the disintegration of the gold–silver standard as a material enactment of the catastrophic cosmological fracture Blake dramatized. We trace this trajectory from the Newtonian golden compass of rigid, atomistic metrology, identifying the 1717 Mint r...
+> This manuscript overlays the history of British and American bimetallism with the mythopoetic architecture of William Blake’s prophetic corpus, reading the disintegration of the gold–silver standard as a material enactment of the catastrophic cosmological fracture Blake dramatized. We trace this trajectory from the Newtonian golden compass of rigid, atomistic metrology, identifying the 1717 Mint...
 
 ## Keywords
 
