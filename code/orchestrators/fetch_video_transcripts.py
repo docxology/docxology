@@ -107,7 +107,7 @@ def fetch_one(video: dict, *, force: bool, languages: str, timeout: int) -> str:
             if result.returncode not in (0, 1):
                 return f"failed:{result.returncode}"
             return "unavailable"
-        transcript = transcript_from_vtt(vtt.read_text(encoding="utf-8", errors="ignore"))
+        transcript = transcript_from_vtt(vtt.read_text(encoding="utf-8", errors="replace"))
         if not transcript:
             return "empty"
         TRANSCRIPT_DIR.mkdir(parents=True, exist_ok=True)

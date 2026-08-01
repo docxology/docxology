@@ -17,6 +17,11 @@ PAPERS_DIR = REPO_ROOT / "papers"
 ORCID = "https://orcid.org/0000-0001-6232-9096"
 
 
+def _yaml_quoted(value: str) -> str:
+    """Escape a string for safe embedding in a YAML double-quoted scalar."""
+    return value.replace("\\", "\\\\").replace('"', '\\"')
+
+
 def parse_author(name: str) -> dict:
     """Parse a name string into CFF author format."""
     name = name.strip()
@@ -83,8 +88,9 @@ def generate_cff(meta: dict, paper_dir: Path) -> Optional[str]:
         if not name:
             continue
         author = parse_author(name)
-        # Add ORCID for DAF
-        if "friedman" in name.lower():
+        # Add ORCID for Daniel Ari Friedman specifically, not any co-author
+        # whose surname merely contains "friedman".
+        if "daniel" in name.lower() and "friedman" in name.lower():
             author["orcid"] = ORCID
         authors.append(author)
 
@@ -104,10 +110,10 @@ def generate_cff(meta: dict, paper_dir: Path) -> Optional[str]:
         "cff-version: 1.2.0",
         'message: "If you use this work, please cite it as below."',
         f"type: {cff_type}",
-        f'title: "{title}"',
+        f'title: "{_yaml_quoted(title)}"',
     ]
     if version:
-        lines.append(f'version: "{version}"')
+        lines.append(f'version: "{_yaml_quoted(version)}"')
     lines.append(f"date-released: {pub_date}")
     if doi:
         lines.append(f"doi: {doi}")
@@ -116,8 +122,8 @@ def generate_cff(meta: dict, paper_dir: Path) -> Optional[str]:
         lines.append(f'repository-code: "{repo_url}"')
     lines.append("authors:")
     for author in authors:
-        lines.append(f"  - family-names: {author.get('family-names', '')}")
-        lines.append(f"    given-names: {author.get('given-names', '')}")
+        lines.append(f'  - family-names: "{_yaml_quoted(author.get("family-names", ""))}"')
+        lines.append(f'    given-names: "{_yaml_quoted(author.get("given-names", ""))}"')
         if "orcid" in author:
             lines.append(f'    orcid: "{author["orcid"]}"')
     if doi:

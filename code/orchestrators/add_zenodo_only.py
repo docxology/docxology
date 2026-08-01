@@ -308,15 +308,30 @@ def metadata_payload(rec: dict, meta: dict) -> dict:
     }
 
 
+def _pdf_target(folder: Path, key: str) -> Path | None:
+    """Return the safe on-disk target for a Zenodo file ``key``, or ``None``.
+
+    Only the basename of the key is used (a hostile or compromised record could
+    otherwise use ``../../`` or an absolute path to write outside the paper
+    folder), and the resolved target is required to sit directly inside the
+    folder. Only ``.pdf`` keys are returned.
+    """
+    name = Path(str(key or "")).name
+    if not name.lower().endswith(".pdf"):
+        return None
+    base = folder.resolve()
+    target = (base / name).resolve()
+    return target if target.parent == base else None
+
+
 def download_pdf(rec: dict, folder: Path) -> None:
     for f in rec.get("files", []):
-        name = str(f.get("key", ""))
-        if not name.lower().endswith(".pdf"):
+        target = _pdf_target(folder, str(f.get("key", "")))
+        if target is None:
             continue
         url = (f.get("links") or {}).get("self")
         if not url:
             continue
-        target = folder / name
         if target.exists():
             return
         req = urllib.request.Request(url, headers={"User-Agent": UA})

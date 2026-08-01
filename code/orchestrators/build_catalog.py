@@ -38,11 +38,16 @@ except ImportError:  # pragma: no cover - package import path
     from .report_paths import latest_report, latest_subdir_file, rel, report_date_string
 
 
-def _latest_rel(pattern: str, fallback: str) -> str:
+def _latest_rel(pattern: str, _fallback: str) -> str:
+    """Resolve the newest matching report, or fail rather than emit a stale
+    hardcoded path. A silently-fabricated 2026-05 fallback masked real relief.
+    """
     try:
         return rel(latest_report(pattern))
     except FileNotFoundError:
-        return fallback
+        raise FileNotFoundError(
+            f"build_catalog: no report matches {pattern!r}; refusing a stale fallback link"
+        ) from None
 
 
 def _latest_subdir_rel(prefix: str, filename: str, fallback: str) -> str:
@@ -53,13 +58,25 @@ def _latest_subdir_rel(prefix: str, filename: str, fallback: str) -> str:
     return rel(latest)
 
 
-def _json_count(path: str, fallback: int) -> int:
+def _json_count(path: str, fallback: int, *, required: bool = False) -> int:
+    """Read an integer ``count`` from a generated JSON payload.
+
+    When ``required`` is True, a missing/corrupt file or a missing integer
+    count is a hard error rather than a silently-fabricated number: the
+    catalog must never publish a hardcoded guess at a volatile total.
+    """
     try:
         payload = json.loads((REPO_ROOT / path).read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
+        if required:
+            raise SystemExit(f"cannot build catalog: missing/invalid {path}")
         return fallback
     value = payload.get("count")
-    return value if isinstance(value, int) else fallback
+    if isinstance(value, int):
+        return value
+    if required:
+        raise SystemExit(f"cannot build catalog: {path} has no integer count")
+    return fallback
 
 
 def _extraction_counts() -> tuple[int, int, int]:
@@ -86,8 +103,8 @@ def _extraction_counts() -> tuple[int, int, int]:
 
 
 def datasets() -> list[tuple[str, str, str, str]]:
-    works_count = _json_count("data/works.json", 154)
-    software_count = _json_count("data/software.json", 88)
+    works_count = _json_count("data/works.json", 0, required=True)
+    software_count = _json_count("data/software.json", 0, required=True)
     video_count = _json_count("data/videos.json", 0)
     ft_count, pw_img_count, total_img = _extraction_counts()
     return [

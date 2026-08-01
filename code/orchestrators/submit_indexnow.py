@@ -40,7 +40,13 @@ def key_location(key: str) -> str:
     return f"{SITE_ORIGIN}{key}.txt" if len(key) == 32 else f"{SITE_ORIGIN}a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt"
 
 
-def submit_bulk(urls: list[str], key: str, dry_run: bool) -> int:
+def submit_bulk(urls: list[str], key: str, dry_run: bool, *, opener=urllib.request.urlopen) -> int:
+    """POST ``urls`` to IndexNow.
+
+    ``opener`` is injectable for testability (defaults to
+    ``urllib.request.urlopen``); it must accept ``(request, timeout=...)`` and
+    return a context-managed response exposing ``.status``.
+    """
     if not urls:
         return 0
     body = json.dumps(
@@ -61,12 +67,17 @@ def submit_bulk(urls: list[str], key: str, dry_run: bool) -> int:
         headers={"Content-Type": "application/json; charset=utf-8"},
     )
     try:
-        with urllib.request.urlopen(req, timeout=60) as response:
+        with opener(req, timeout=60) as response:
             print(f"bulk {response.status} ({len(urls)} urls)")
             return 0 if response.status in (200, 202) else 1
     except urllib.error.HTTPError as exc:
         detail = exc.read().decode("utf-8", errors="replace")[:300]
         print(f"bulk error {exc.code}: {detail}", file=sys.stderr)
+        return 1
+    except urllib.error.URLError as exc:
+        # Timeout, DNS, connection-refused, etc. Report and fail cleanly
+        # instead of letting the exception escape main() as a traceback.
+        print(f"bulk error: {exc.reason}", file=sys.stderr)
         return 1
 
 

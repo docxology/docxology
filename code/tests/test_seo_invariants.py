@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 import subprocess
 import sys
@@ -18,6 +19,7 @@ from seo_invariants import (  # noqa: E402
     check_work_descriptions,
     check_public_html_security,
     collect_seo_errors,
+    sitemap_locs,
 )
 from site_nav import CSP_META_TAG, META_INVALID_CSP_DIRECTIVES  # noqa: E402
 
@@ -89,3 +91,59 @@ def test_no_tracked_html_ships_a_header_only_csp_directive():
                 if directive in policy:
                     offenders.append(f"{relative}: {directive}")
     assert offenders == []
+
+
+# --- Negative-fixture coverage ------------------------------------------------
+# These construct violated fixtures in tmp_path to prove each detector actually
+# flags a problem, rather than only asserting the already-clean repo returns [].
+# A detector that regressed to vacuously returning [] must fail these.
+
+def test_social_meta_flaggs_missing_twitter_card(tmp_path):
+    (tmp_path / "index.html").write_text(
+        '<html><head><meta property="og:image" content="x"></head></html>',
+        encoding="utf-8",
+    )
+    errors = check_social_meta(tmp_path)
+    assert any("twitter:card" in e for e in errors)
+
+
+def test_work_descriptions_flag_gt160_chars(tmp_path):
+    (tmp_path / "works").mkdir()
+    (tmp_path / "works" / "a.html").write_text(
+        '<meta name="description" content="' + "x" * 200 + '">',
+        encoding="utf-8",
+    )
+    errors = check_work_descriptions(tmp_path)
+    assert errors and ">160" in errors[0]
+
+
+def test_sitemap_policy_flags_papers_url(tmp_path):
+    locs = sitemap_locs()
+    xml = (
+        "<urlset>"
+        + "".join(f"<loc>{loc}</loc>" for loc in locs)
+        + "<loc>https://danielarifriedman.com/papers/2026_X/</loc>"
+        + "</urlset>"
+    )
+    (tmp_path / "sitemap.xml").write_text(xml, encoding="utf-8")
+    errors = check_sitemap_policy(tmp_path)
+    assert any("/papers/" in e for e in errors)
+
+
+def test_paper_pages_flags_json_ld(tmp_path):
+    (tmp_path / "data").mkdir()
+    (tmp_path / "data" / "works.json").write_text(
+        json.dumps({"works": [{"docs_path": "papers/2026_X", "citation_key": "Friedman2026X001"}]}),
+        encoding="utf-8",
+    )
+    (tmp_path / "papers" / "2026_X").mkdir(parents=True)
+    (tmp_path / "papers" / "2026_X" / "index.html").write_text(
+        '<html><head>'
+        '<meta name="robots" content="noindex, follow">'
+        '<link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026X001.html">'
+        '<script type="application/ld+json">{}</script>'
+        "</head></html>",
+        encoding="utf-8",
+    )
+    errors = check_paper_pages(tmp_path)
+    assert any("JSON-LD" in e for e in errors)

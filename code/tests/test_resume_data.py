@@ -64,7 +64,7 @@ def test_resume_payload_merges_canonical_works_and_software_counts():
     assert payload["metrics"]["software_catalogued"] == software["total"]
     assert len(payload["works"]) == biblio["works"]
     assert len(payload["software"]) == software["total"]
-    assert payload["metrics"]["google_scholar"]["citations"] == 777
+    assert payload["metrics"]["google_scholar"]["citations"] == inputs["data/scholar-snapshot.json"]["citations"]
     assert payload["metrics"]["github_inventory"]["docxology"] == github_counts["docxology"]
     assert payload["metrics"]["github_inventory"]["ActiveInferenceInstitute"] == github_counts["ActiveInferenceInstitute"]
     assert payload["integrity"]["source_manifest"]["sha256"]

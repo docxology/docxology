@@ -4,7 +4,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
-from unittest.mock import MagicMock, call, patch
+from unittest.mock import MagicMock, patch
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 import youtube_fetcher as yf
@@ -101,6 +101,16 @@ class TestNormalizeVideo(unittest.TestCase):
         raw = {k: v for k, v in self.FULL_RAW.items() if k != "id"}
         self.assertIsNone(yf.normalize_video(raw, "personal"))
 
+    def test_impossible_calendar_date_returns_none(self):
+        # Month 13 / day 40 is not a real date even though it is 8 digits.
+        raw = {**self.FULL_RAW, "upload_date": "20231340"}
+        self.assertIsNone(yf.normalize_video(raw, "personal"))
+
+    def test_nonexistent_feb_29_returns_none(self):
+        # 2023 is not a leap year, so 2023-02-29 does not exist.
+        raw = {**self.FULL_RAW, "upload_date": "20230229"}
+        self.assertIsNone(yf.normalize_video(raw, "personal"))
+
 
 class TestRunYtDlp(unittest.TestCase):
     @patch("youtube_fetcher.subprocess.run")
@@ -140,63 +150,66 @@ class TestRunYtDlp(unittest.TestCase):
         self.assertEqual(len(lines), 1)
 
 
-class TestFetchChannel(unittest.TestCase):
-    def _make_jsonl(self, records):
-        return [json.dumps(r) for r in records]
+class _JsonlRunner:
+    """Real (non-mock) runner: serves pre-built JSONL per call, may raise.
 
-    @patch("youtube_fetcher.run_yt_dlp")
-    def test_deduplicates_across_tabs(self, mock_run):
+    Replacement for ``@patch('youtube_fetcher.run_yt_dlp')`` so fetch_channel /
+    fetch_tab exercise real parsing, dedup, sorting, and tab-failure logic
+    through the injected ``runner`` dependency instead of substitution.
+    """
+
+    def __init__(self, *groups):
+        self.groups = groups
+        self.calls: list[tuple[str, str]] = []
+
+    def __call__(self, url: str, mode: str = "full") -> list[str]:
+        self.calls.append((url, mode))
+        idx = len(self.calls) - 1
+        if idx < len(self.groups):
+            group = self.groups[idx]
+            if isinstance(group, BaseException):
+                raise group
+            return [json.dumps(r) for r in group]
+        return []
+
+
+class TestFetchChannel(unittest.TestCase):
+    def test_deduplicates_across_tabs(self):
         vid_a = {"id": "aaa", "title": "A", "upload_date": "20230101", "duration": 60, "view_count": 1}
         vid_b = {"id": "bbb", "title": "B", "upload_date": "20230601", "duration": 60, "view_count": 1}
         # /videos returns A, /streams returns A+B (A is a duplicate), /shorts empty
-        mock_run.side_effect = [
-            self._make_jsonl([vid_a]),         # videos
-            self._make_jsonl([vid_a, vid_b]),   # streams (a is dupe)
-            [],                                 # shorts
-        ]
-        videos = yf.fetch_channel("https://example.com/@ch", "personal")
+        runner = _JsonlRunner([vid_a], [vid_a, vid_b], [])
+        videos = yf.fetch_channel("https://example.com/@ch", "personal", runner=runner)
         self.assertEqual(len(videos), 2)
         ids = [v["id"] for v in videos]
         self.assertIn("aaa", ids)
         self.assertIn("bbb", ids)
 
-    @patch("youtube_fetcher.run_yt_dlp")
-    def test_sorted_by_date(self, mock_run):
+    def test_sorted_by_date(self):
         v1 = {"id": "a1", "title": "Old", "upload_date": "20200101", "duration": 60, "view_count": 0}
         v2 = {"id": "a2", "title": "New", "upload_date": "20240101", "duration": 60, "view_count": 0}
-        mock_run.side_effect = [
-            self._make_jsonl([v2]),  # videos
-            self._make_jsonl([v1]),  # streams
-            [],                      # shorts
-        ]
-        videos = yf.fetch_channel("https://example.com/@ch", "personal")
+        runner = _JsonlRunner([v2], [v1], [])
+        videos = yf.fetch_channel("https://example.com/@ch", "personal", runner=runner)
         self.assertEqual(videos[0]["id"], "a1")
         self.assertEqual(videos[1]["id"], "a2")
 
-    @patch("youtube_fetcher.run_yt_dlp")
-    def test_tab_failure_continues(self, mock_run):
+    def test_tab_failure_continues(self):
         v = {"id": "ok", "title": "OK", "upload_date": "20230101", "duration": 60, "view_count": 0}
-        mock_run.side_effect = [
-            self._make_jsonl([v]),   # videos ok
-            RuntimeError("streams failed"),  # streams fails
-            [],                              # shorts ok
-        ]
-        videos = yf.fetch_channel("https://example.com/@ch", "personal")
+        runner = _JsonlRunner([v], RuntimeError("streams failed"), [])
+        videos = yf.fetch_channel("https://example.com/@ch", "personal", runner=runner)
         self.assertEqual(len(videos), 1)
 
-    @patch("youtube_fetcher.run_yt_dlp")
-    def test_channel_id_set_on_all_videos(self, mock_run):
+    def test_channel_id_set_on_all_videos(self):
         v = {"id": "x", "title": "T", "upload_date": "20230101", "duration": 60, "view_count": 0}
-        mock_run.side_effect = [self._make_jsonl([v]), [], []]
-        videos = yf.fetch_channel("https://example.com/@ch", "institute")
+        runner = _JsonlRunner([v], [], [])
+        videos = yf.fetch_channel("https://example.com/@ch", "institute", runner=runner)
         self.assertEqual(videos[0]["channel"], "institute")
 
-    @patch("youtube_fetcher.run_yt_dlp")
-    def test_all_tabs_called(self, mock_run):
-        mock_run.return_value = []
-        yf.fetch_channel("https://www.youtube.com/@test", "personal")
-        self.assertEqual(mock_run.call_count, 3)
-        urls_called = [mock_run.call_args_list[i][0][0] for i in range(3)]
+    def test_all_tabs_called(self):
+        runner = _JsonlRunner([], [], [])
+        yf.fetch_channel("https://www.youtube.com/@test", "personal", runner=runner)
+        self.assertEqual(len(runner.calls), 3)
+        urls_called = [url for url, _ in runner.calls]
         self.assertTrue(any("videos" in u for u in urls_called))
         self.assertTrue(any("streams" in u for u in urls_called))
         self.assertTrue(any("shorts" in u for u in urls_called))

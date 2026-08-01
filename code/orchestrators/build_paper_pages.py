@@ -220,12 +220,17 @@ def render_page(work: dict) -> str:
 
 def render_outputs() -> dict[Path, str]:
     outputs: dict[Path, str] = {}
+    failures: list[str] = []
     for work in unique_doc_works(load_works()):
         try:
             path = REPO_ROOT / work["docs_path"] / "index.html"
             outputs[path] = render_page(work)
-        except Exception as exc:
-            print(f"  WARNING: {work.get('docs_path', '?')}: {exc}", file=sys.stderr)
+        except Exception as exc:  # noqa: BLE001 - surface every render failure
+            failures.append(f"{work.get('docs_path', '?')}: {exc}")
+    if failures:
+        # Fail loudly instead of silently dropping a paper page: a skipped
+        # render would otherwise produce a partial site and sail past --check.
+        raise SystemExit("Failed to render paper pages:\n" + "\n".join(failures[:40]))
     return outputs
 
 

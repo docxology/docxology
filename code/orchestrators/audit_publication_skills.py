@@ -87,7 +87,7 @@ def collect_skill_errors(repo_root: Path = REPO_ROOT) -> list[str]:
 
     for folder in sorted(docs & skills):
         path = repo_root / folder / "SKILL.md"
-        text = path.read_text(encoding="utf-8", errors="ignore")
+        text = path.read_text(encoding="utf-8", errors="replace")
         rel = str(path.relative_to(repo_root))
         if LEGACY_HOST in text:
             errors.append(f"{rel}: legacy GitHub Pages host found; use https://danielarifriedman.com/")

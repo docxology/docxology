@@ -15,6 +15,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import html as _html
 import re
 import sys
 from pathlib import Path
@@ -68,7 +69,12 @@ def transform(html: str) -> str:
     if not (title_m and desc_m and image_m and height_m):
         return html  # leave pages we cannot safely derive from untouched
     indent = height_m.group(1)
-    title, desc, image = title_m.group(1), desc_m.group(1), image_m.group(1)
+    # Escape before interpolation: these values are spliced raw into
+    # content="..." attributes, so a `"` in a page's own og:* value would
+    # otherwise break the tag or inject markup into the <head>.
+    title = _html.escape(title_m.group(1), quote=True)
+    desc = _html.escape(desc_m.group(1), quote=True)
+    image = _html.escape(image_m.group(1), quote=True)
 
     # og:image:alt — directly after og:image:height.
     if not _HAS_ALT.search(html):

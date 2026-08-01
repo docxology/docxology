@@ -99,8 +99,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-07-30.json",
-        "reports/source_coverage_2026-07-30.md"
+        "reports/source_coverage_2026-08-01.json",
+        "reports/source_coverage_2026-08-01.md"
       ],
       "sources": [
         "data/works.json",
@@ -192,7 +192,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-07-30.json"
+        "reports/pages_artifact_growth_2026-08-01.json"
       ],
       "sources": [
         "tracked repository files",
@@ -335,6 +335,18 @@
       "command": "python3 code/orchestrators/build_work_pages.py"
     },
     {
+      "name": "Work authors",
+      "outputs": [
+        "data/work-authors.json"
+      ],
+      "sources": [
+        "pages/BIBLIOGRAPHY.md",
+        "DOI registration agencies (Crossref/DataCite)",
+        "code/orchestrators/fetch_work_authors.py"
+      ],
+      "command": "python3 code/orchestrators/fetch_work_authors.py --apply"
+    },
+    {
       "name": "Video pages",
       "outputs": [
         "videos/*.html",
@@ -385,6 +397,20 @@
         "code/orchestrators/build_evidence_page.py"
       ],
       "command": "python3 code/orchestrators/build_evidence_page.py"
+    },
+    {
+      "name": "Reproducibility ledger",
+      "outputs": [
+        "reproducibility.html",
+        "pages/REPRODUCIBILITY.md",
+        "data/reproducibility.json"
+      ],
+      "sources": [
+        "data/works.json",
+        "papers/paper_metadata.json",
+        "code/orchestrators/build_reproducibility_ledger.py"
+      ],
+      "command": "python3 code/orchestrators/build_reproducibility_ledger.py"
     },
     {
       "name": "Search index",
@@ -475,7 +501,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-07-30.json"
+        "reports/asset_size_2026-08-01.json"
       ],
       "sources": [
         "root HTML pages",
@@ -489,7 +515,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-07-30.json"
+        "reports/accessibility_static_2026-08-01.json"
       ],
       "sources": [
         "root HTML pages",

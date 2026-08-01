@@ -17,30 +17,39 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Evidence", "evidence.html")]
-_WEBPAGE_LD = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": "https://danielarifriedman.com/evidence.html#page",
-    "name": "Evidence Ledger — Daniel Ari Friedman",
-    "url": "https://danielarifriedman.com/evidence.html",
-    "dateModified": "2026-07-05",
-    "isPartOf": {
-        "@id": "https://danielarifriedman.com/#website"
+
+
+def _webpage_ld() -> dict:
+    """WebPage JSON-LD with a data-derived (not hardcoded) dateModified."""
+    try:
+        counts = json.loads((REPO_ROOT / "data" / "current-counts.json").read_text(encoding="utf-8"))
+        modified = str(counts.get("generated_at", ""))[:10] or report_date_string()
+    except (OSError, json.JSONDecodeError):
+        modified = report_date_string()
+    return {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://danielarifriedman.com/evidence.html#page",
+        "name": "Evidence Ledger — Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/evidence.html",
+        "dateModified": modified,
+        "isPartOf": {
+            "@id": "https://danielarifriedman.com/#website"
+        },
     }
-}
 
 
 def _head_extra() -> str:
     return (
         f"    <style>{BREADCRUMB_CSS}</style>\n"
-        f'    <script type="application/ld+json">\n{json.dumps(_WEBPAGE_LD, indent=4, ensure_ascii=False)}\n    </script>\n'
+        f'    <script type="application/ld+json">\n{json.dumps(_webpage_ld(), indent=4, ensure_ascii=False)}\n    </script>\n'
         f"{breadcrumb_jsonld_script(_BREADCRUMB)}\n"
     )
 
 try:
-    from report_paths import latest_report, rel
+    from report_paths import latest_report, rel, report_date_string
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import latest_report, rel
+    from .report_paths import latest_report, rel, report_date_string
 
 
 def h(value: object) -> str:
@@ -58,11 +67,15 @@ def source_link(source: str, prefix: str = "") -> str:
     return prefix + source
 
 
-def latest_report_link(pattern: str, fallback: str, prefix: str = "") -> str:
+def latest_report_link(pattern: str, _fallback: str, prefix: str = "") -> str:
+    """Resolve the newest matching report, or fail rather than emitting a stale
+    hardcoded path that would mask a missing report."""
     try:
         path = rel(latest_report(pattern))
     except FileNotFoundError:
-        path = fallback
+        raise FileNotFoundError(
+            f"build_evidence_page: no report matches {pattern!r}; refusing a stale fallback link"
+        ) from None
     return prefix + path
 
 
@@ -71,7 +84,13 @@ def render_html(claims: list[dict]) -> str:
     inventory = latest_report_link("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json")
     cards = []
     for claim in claims:
-        first_source = claim["sources"][0]
+        sources = claim.get("sources") or []
+        first_source = sources[0] if sources else ""
+        source_html = (
+            f'<p class="claim-source"><a href="{h(source_link(first_source))}">{h(first_source)}</a></p>'
+            if first_source
+            else ""
+        )
         cards.append(
             f"""                <article class="claim-card">
                     <h3>{h(claim['claim'])}</h3>
@@ -82,7 +101,7 @@ def render_html(claims: list[dict]) -> str:
                         <div><dt>Checked</dt><dd>{h(claim['checked_at'])}</dd></div>
                         <div><dt>Owner</dt><dd>{h(claim['maintenance_owner'])}</dd></div>
                     </dl>
-                    <p class="claim-source"><a href="{h(source_link(first_source))}">{h(first_source)}</a></p>
+                    {source_html}
                 </article>"""
         )
     return f"""<!DOCTYPE html>

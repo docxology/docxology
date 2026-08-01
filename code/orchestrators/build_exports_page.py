@@ -16,22 +16,33 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Exports", "exports.html")]
-_WEBPAGE_LD = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": "https://danielarifriedman.com/exports.html#page",
-    "name": "Public Exports — Daniel Ari Friedman",
-    "description": "Machine-readable citation exports, JSON datasets, and syndication files for Daniel Ari Friedman's public research index.",
-    "url": "https://danielarifriedman.com/exports.html",
-    "dateModified": "2026-07-05",
-    "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
-}
+
+
+def _webpage_ld() -> dict:
+    """WebPage JSON-LD with a data-derived (not hardcoded) dateModified."""
+    from report_paths import report_date_string  # noqa: PLC0415
+
+    try:
+        counts = json.loads((REPO_ROOT / "data" / "current-counts.json").read_text(encoding="utf-8"))
+        modified = str(counts.get("generated_at", ""))[:10] or report_date_string()
+    except (OSError, json.JSONDecodeError):
+        modified = report_date_string()
+    return {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://danielarifriedman.com/exports.html#page",
+        "name": "Public Exports — Daniel Ari Friedman",
+        "description": "Machine-readable citation exports, JSON datasets, and syndication files for Daniel Ari Friedman's public research index.",
+        "url": "https://danielarifriedman.com/exports.html",
+        "dateModified": modified,
+        "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
+    }
 
 
 def _head_extra() -> str:
     return (
         f"    <style>{BREADCRUMB_CSS}</style>\n"
-        f'    <script type="application/ld+json">\n{json.dumps(_WEBPAGE_LD, indent=4, ensure_ascii=False)}\n    </script>\n'
+        f'    <script type="application/ld+json">\n{json.dumps(_webpage_ld(), indent=4, ensure_ascii=False)}\n    </script>\n'
         f"{breadcrumb_jsonld_script(_BREADCRUMB)}\n"
     )
 

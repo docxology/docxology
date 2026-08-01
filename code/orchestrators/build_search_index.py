@@ -18,18 +18,22 @@ except ImportError:  # pragma: no cover - package import path
     from .report_paths import generated_timestamp, latest_report, latest_subdir_file, rel, stable_generated_at
 
 
-def _latest_url(pattern: str, fallback: str) -> str:
+def _latest_url(pattern: str, _fallback: str) -> str:
     try:
         return "/" + rel(latest_report(pattern))
     except FileNotFoundError:
-        return fallback
+        raise FileNotFoundError(
+            f"build_search_index: no report matches {pattern!r}; refusing a stale fallback link"
+        ) from None
 
 
-def _latest_subdir_url(prefix: str, filename: str, fallback: str) -> str:
+def _latest_subdir_url(prefix: str, filename: str, _fallback: str) -> str:
     try:
         latest = latest_subdir_file(prefix, filename)
     except FileNotFoundError:
-        return fallback
+        raise FileNotFoundError(
+            f"build_search_index: no {prefix} report dir {filename!r}; refusing a stale fallback link"
+        ) from None
     return "/" + rel(latest)
 
 

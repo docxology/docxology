@@ -54,9 +54,13 @@ def load_json(relative: str, default: dict | list | None = None):
         return {} if default is None else default
 
 
-def latest_report(pattern: str, fallback: str) -> str:
+def latest_report(pattern: str, _fallback: str) -> str:
     matches = sorted((REPO_ROOT / "reports").glob(pattern))
-    return "/" + str((matches[-1] if matches else REPO_ROOT / fallback).relative_to(REPO_ROOT))
+    if not matches:
+        raise FileNotFoundError(
+            f"build_agent_index: no report matches {pattern!r}; refusing a stale fallback link"
+        )
+    return "/" + str(matches[-1].relative_to(REPO_ROOT))
 
 
 SCHEMAS = {

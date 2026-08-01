@@ -7,6 +7,64 @@ repeated here.
 Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
+- Status: active backlog
+- Last reviewed: 2026-08-01 (hostile red-team review of `code/` plus a
+  comprehensive follow-up pass; fixes are in the working tree, uncommitted)
+
+## Completed / Closed (2026-08-01)
+
+Implemented and verified (validated against source; the 231-test suite and the
+affected orchestrators' `--check` gates pass):
+
+Review-pass fixes:
+- `code/orchestrators/submit_indexnow.py` — catch `URLError` (exit 1, no traceback).
+- `code/orchestrators/ensure_social_meta.py` — HTML-escape injected og/twitter values.
+- `code/orchestrators/build_evidence_page.py` — guard empty `claim["sources"]`.
+- `code/orchestrators/build_catalog.py` — remove fabricated stale fallback counts
+  (works/software are required inputs).
+- `code/orchestrators/generate_feed.py` — guard non-numeric `year` in the sort key.
+- `code/orchestrators/build_paper_pages.py` — fail loudly on per-work render errors.
+- `code/orchestrators/migrate_inline_handlers.py` — correct the `data-nav-toggle` docstring.
+- `code/orchestrators/generate_citation_cff.py` — YAML-escape title/version/names;
+  grant the DAF ORCID only to Daniel Friedman.
+- `code/src/youtube_fetcher.py` — reject impossible `upload_date` values.
+- `GENERATED.md` — matrix rows for `build_reproducibility_ledger.py` and
+  `fetch_work_authors.py`; relabel `deploy_seo_security.py`.
+- `code/AGENTS.md` — stale "~20 orchestrators" → "~26".
+
+Comprehensive follow-up pass:
+- **SEC-001 (path traversal):** `add_zenodo_only.py` and
+  `sync_paired_publications.py` now sanitize the Zenodo file `key` to its
+  basename and verify the resolved target stays inside the paper folder
+  (`_pdf_target` helper). + `code/tests/test_zenodo_pdf_safety.py` (4 tests).
+- **Test-mock removal:** `youtube_fetcher.fetch_tab`/`fetch_channel` accept an
+  injectable `runner`; `submit_bulk` accepts an injectable `opener`. Rewrote
+  `test_youtube_fetcher.py` and `test_submit_indexnow.py` to use real injected
+  fakes and to assert the constructed request — no `unittest.mock` left in the
+  fetch/indexnow tests.
+- **Tautological test:** `test_search_utils.py` now executes the real `esc()`
+  through Node on concrete inputs (skips if node absent).
+- **Negative-fixture coverage:** `test_seo_invariants.py` now proves
+  `check_social_meta`, `check_work_descriptions`, `check_sitemap_policy`, and
+  `check_paper_pages` each flag a constructed violation (tmp_path).
+- **`errors="ignore"` → `errors="replace"`:** `fetch_video_transcripts.py`,
+  `audit_publication_skills.py` (refresh_public_source_inventory already used
+  replace/strict).
+- **Stale dated-report fallbacks removed:** `build_catalog.py`,
+  `build_evidence_page.py`, `build_generated_manifest.py`, `build_agent_index.py`,
+  `build_search_index.py`, `export_agent_data.py` now fail cleanly when a report
+  is missing instead of emitting a hardcoded 2026-05/06 path.
+- **`export_agent_data.py`:** claim `sources` now cite the computed latest
+  snapshot path (`_SNAPSHOT_SOURCE`) instead of a hardcoded 2026-06-09 file.
+- **Hardcoded `dateModified`:** `build_evidence_page.py` and
+  `build_exports_page.py` derive it from `data/current-counts.json` generated_at.
+- **Misc robustness:** `build_video_pages.py` skips id-less records and makes
+  `iso_date` safe; `verify_live_site.py` guards malformed `.get("datasets")` /
+  `.get("items")` shapes; `build_image_sitemap.py` warns when the 1000-image cap
+  truncates; `build_domain_pages.py` guards non-numeric `year` in the sort key.
+- **Test brittleness:** `test_resume_data.py` asserts Scholar citations against
+  `data/scholar-snapshot.json` instead of the hardcoded `777`.
+
 ## P0 — Release and integrity
 
 ### DOC-002 — Release integrity and public artifact gate
@@ -124,3 +182,25 @@ criteria, and dependencies. Re-review this file before each public release.
 - Deliverable: maintain runbooks for intake, repository classification, CV release, Pages release, live verification, retention, claims, accessibility, and visual QA
 - Acceptance: `AGENT_START.md`, `AGENTS.md`, `CLAUDE.md`, `docs/README.md`, `GENERATED.md`, and the release checklist point to the same ordered commands
 - Dependencies: generated manifest and CI workflows
+
+## Deferred (2026-08-01 review — explicitly not implemented; larger/or lower-value)
+
+These remain open. Each is a concrete, actionable scope item from the review.
+
+- **Domain-inference centralization (Medium/arch):** `infer_domain` is duplicated
+  (with drift) across `add_zenodo_only`, `batch_enrich_metadata`,
+  `regenerate_docs`, `improve_metadata_quality`. Centralize into `code/src`
+  (e.g. a shared `domain_inference.py`) and have all four delegate, preserving
+  current emoji output. Deferred: a cross-cutting refactor that risks subtle
+  metadata drift; best done as deliberate scoped work with the generated
+  metadata regenerated and diffed.
+- **Test brittleness (Minor):** `test_paper_pages.py` (single pinned paper) and
+  `test_software_table.py` / `test_sync_*` (exact-record pins) still couple the
+  suite to current catalog contents. Prefer invariant/structure assertions.
+- **Misc minor sweep (Minor):** `check_external_links.py` (`checked_urls - ok`
+  miscalc, tab-in-URL parsing) and `prune_old_reports.py` (git grep misses
+  untracked references); `generate_feed.py` retains three hardcoded
+  2026-05 "site-update" feed items (presentational).
+- **`export_agent_data.py` import-time IO (Medium):** module-level reads of
+  `current-counts.json` / the latest snapshot remain at import. Acceptable for a
+  CLI exporter; a fully-lazy refactor was not applied.

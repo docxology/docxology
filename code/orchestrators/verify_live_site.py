@@ -210,12 +210,19 @@ def parse_json_contract(path: str, text: str, fingerprint: dict) -> tuple[dict[s
         checks["routes_present"] = isinstance(payload.get("routes"), list) and bool(payload.get("routes"))
         checks["datasets_present"] = isinstance(payload.get("datasets"), dict) and bool(payload.get("datasets"))
         checks["dataset_hashes_present"] = isinstance(payload.get("dataset_hashes"), dict) and bool(payload.get("dataset_hashes"))
-        agent_works = payload.get("datasets", {}).get("works", {}).get("count")
+        raw_datasets = payload.get("datasets")
+        datasets = raw_datasets if isinstance(raw_datasets, dict) else {}
+        raw_works = datasets.get("works")
+        works = raw_works if isinstance(raw_works, dict) else {}
+        agent_works = works.get("count")
         observed["agent_works"] = agent_works if isinstance(agent_works, int) else -1
         checks["agent_works_match"] = agent_works == fingerprint.get("works")
     elif path == "search-index.json":
-        checks["items_present"] = isinstance(payload.get("items"), list)
-        checks["count_matches_items"] = payload.get("count") == len(payload.get("items", []))
+        items = payload.get("items")
+        checks["items_present"] = isinstance(items, list)
+        checks["count_matches_items"] = (
+            isinstance(items, list) and payload.get("count") == len(items)
+        )
     elif path == "data/catalog.json":
         # Schema.org DataCatalog uses the singular `dataset` property.
         checks["catalog_datasets_present"] = bool(payload.get("dataset") or payload.get("datasets"))

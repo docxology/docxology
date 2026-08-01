@@ -233,6 +233,9 @@ def thumbnail_url(video_id: str) -> str:
 
 
 def iso_date(upload_date: str) -> str:
+    """Convert a YYYYMMDD upload_date to YYYY-MM-DD, or '' if malformed."""
+    if not isinstance(upload_date, str) or len(upload_date) != 8 or not upload_date.isdigit():
+        return ""
     return f"{upload_date[:4]}-{upload_date[4:6]}-{upload_date[6:8]}"
 
 
@@ -376,26 +379,32 @@ def build_records(generated_at: str | None = None) -> dict:
     enrichments = load_work_enrichments()
     records = []
     for raw in raw_videos:
+        video_id = raw.get("id")
+        if not video_id:
+            # A payload record without an id cannot be addressed on the site;
+            # skip it instead of crashing the whole build on a KeyError.
+            print("WARNING: skipping video record with no id", file=sys.stderr)
+            continue
         channel_key = raw.get("channel", "")
         channel_meta = CHANNEL_META.get(channel_key, {})
-        transcript, transcript_path = read_transcript(raw["id"])
+        transcript, transcript_path = read_transcript(video_id)
         transcript_excerpt = clip_description(transcript, 600) if transcript else ""
         video = {
-            "id": raw["id"],
+            "id": video_id,
             "title": raw.get("title", ""),
             "channel": channel_key,
             "channel_name": channel_meta.get("name", channel_key),
             "channel_label": channel_meta.get("label", channel_key),
             "channel_url": channel_meta.get("url", ""),
             "upload_date": raw.get("upload_date", ""),
-            "date": iso_date(raw.get("upload_date", "00000000")),
+            "date": iso_date(raw.get("upload_date") or ""),
             "year": raw.get("year"),
             "duration": raw.get("duration"),
             "duration_text": display_duration(raw.get("duration")),
             "view_count": raw.get("view_count", 0),
-            "youtube_url": youtube_url(raw["id"]),
-            "embed_url": f"https://www.youtube-nocookie.com/embed/{raw['id']}",
-            "thumbnail_url": thumbnail_url(raw["id"]),
+            "youtube_url": youtube_url(video_id),
+            "embed_url": f"https://www.youtube-nocookie.com/embed/{video_id}",
+            "thumbnail_url": thumbnail_url(video_id),
             "page_path": f"videos/{page_filename(raw)}",
             "page_url": f"/videos/{page_filename(raw)}",
             "transcript_available": bool(transcript),

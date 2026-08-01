@@ -20,11 +20,13 @@ JSON_OUT = REPO_ROOT / "data" / "generated-manifest.json"
 MD_OUT = REPO_ROOT / "GENERATED.md"
 
 
-def _latest_report(pattern: str, fallback: str) -> str:
+def _latest_report(pattern: str, _fallback: str) -> str:
     try:
         return rel(latest_report(pattern))
     except FileNotFoundError:
-        return fallback
+        raise FileNotFoundError(
+            f"build_generated_manifest: no report matches {pattern!r}; refusing a stale fallback link"
+        ) from None
 
 
 def _latest_subdir_manifest(prefix: str, fallback: str) -> str:
@@ -256,6 +258,12 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/build_work_pages.py",
     },
     {
+        "name": "Work authors",
+        "outputs": ["data/work-authors.json"],
+        "sources": ["pages/BIBLIOGRAPHY.md", "DOI registration agencies (Crossref/DataCite)", "code/orchestrators/fetch_work_authors.py"],
+        "command": "python3 code/orchestrators/fetch_work_authors.py --apply",
+    },
+    {
         "name": "Video pages",
         "outputs": ["videos/*.html", "data/videos.json", "data/videos-index.json"],
         "sources": [
@@ -284,6 +292,12 @@ ARTIFACTS = [
         "outputs": ["evidence.html", "pages/EVIDENCE.md"],
         "sources": ["data/claims.json", "code/orchestrators/build_evidence_page.py"],
         "command": "python3 code/orchestrators/build_evidence_page.py",
+    },
+    {
+        "name": "Reproducibility ledger",
+        "outputs": ["reproducibility.html", "pages/REPRODUCIBILITY.md", "data/reproducibility.json"],
+        "sources": ["data/works.json", "papers/paper_metadata.json", "code/orchestrators/build_reproducibility_ledger.py"],
+        "command": "python3 code/orchestrators/build_reproducibility_ledger.py",
     },
     {
         "name": "Search index",
@@ -424,7 +438,7 @@ UTILITIES = [
     ("extract_paper_texts.py", "Extracts full text and images from paper PDFs into the papers/ tree", "maintenance"),
     ("fetch_youtube_data.py", "Fetches YouTube channel metadata for both channels into code/data/youtube_*.json (network)", "fetch"),
     ("generate_citation_cff.py", "Generates per-paper CITATION.cff files from papers/*/metadata.json", "maintenance"),
-    ("deploy_seo_security.py", "One-shot migration: SEO + security head rollout across indexable pages (completed; kept for provenance)", "one-shot"),
+    ("deploy_seo_security.py", "Deploys/refreshes the CSP, rel=\"me\", and hreflang head tags across indexable pages; idempotent and re-run on every rebuild (not a one-shot)", "maintenance"),
     ("migrate_inline_handlers.py", "One-shot migration: inline event handlers to data-* + addEventListener for CSP (completed; kept for provenance)", "one-shot"),
     ("optimize_font_loading.py", "One-shot migration: legacy Google Fonts links to self-hosted loading (completed; kept for provenance)", "one-shot"),
 ]

@@ -300,7 +300,15 @@ def select_repositories(repos: list[dict], names: tuple[str, ...]) -> list[dict]
 
 def render_domain_page(config: DomainConfig, works: list[dict], repos: list[dict]) -> str:
     domain_works = [w for w in works if w["domain"] in config.domains]
-    selected = sorted(domain_works, key=lambda w: (int(w["year"]), -int(w["num"])), reverse=True)[:12]
+
+    def _year_key(w: dict) -> int:
+        # reverse sort: unknown/non-numeric years (e.g. "n.d.") sort last (9999).
+        try:
+            return int(w["year"]) if str(w["year"]).isdigit() else 9999
+        except (TypeError, ValueError, KeyError):
+            return 9999
+
+    selected = sorted(domain_works, key=lambda w: (_year_key(w), -int(w.get("num", 0) or 0)), reverse=True)[:12]
     domain_repos = select_repositories(repos, config.repo_names)
 
     # Count extraction stats for this domain

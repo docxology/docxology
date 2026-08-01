@@ -480,16 +480,30 @@ def update_metadata_json(path: Path, pair: PublicationPair, updated: list[str], 
     _write_if_changed(path, json.dumps(merged, indent=2, ensure_ascii=False) + "\n", updated, repo_root)
 
 
+def _pdf_target(folder: Path, key: str) -> Path | None:
+    """Return the safe on-disk target for a Zenodo file key, or ``None``.
+
+    Only the basename is used so a hostile/compromised record cannot escape the
+    paper folder via ``../`` or absolute paths; only ``.pdf`` keys resolve.
+    """
+    name = Path(str(key or "")).name
+    if not name.lower().endswith(".pdf"):
+        return None
+    base = folder.resolve()
+    target = (base / name).resolve()
+    return target if target.parent == base else None
+
+
 def download_zenodo_pdf(pair: PublicationPair, folder_path: Path, updated: list[str], repo_root: Path) -> None:
     for item in pair.record.files:
         name = str(item.get("key") or item.get("filename") or "")
-        if not name.lower().endswith(".pdf"):
+        target = _pdf_target(folder_path, name)
+        if target is None:
             continue
         links = item.get("links") if isinstance(item.get("links"), dict) else {}
         url = links.get("self") or links.get("download")
         if not url:
             continue
-        target = folder_path / name
         if target.exists():
             return
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})

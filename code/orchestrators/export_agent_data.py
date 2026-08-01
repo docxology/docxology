@@ -199,6 +199,13 @@ if _AII_PUBLIC_REPOS is None:
 _WORK_COUNT = int(_CURRENT_COUNTS.get("bibliography_works", _current_work_count()))
 _FOLDER_COUNT = int(_CURRENT_COUNTS.get("paper_folder_docs", _current_paper_folder_count()))
 
+# Resolve the canonical public-source snapshot once, so claim ``sources`` cite
+# the actual latest report instead of a hardcoded 2026-06-09 path that drifts.
+try:
+    _SNAPSHOT_SOURCE = rel(latest_report("public_source_snapshot_*.json"))
+except FileNotFoundError:
+    _SNAPSHOT_SOURCE = ""
+
 
 PEOPLE = [
     {
@@ -292,7 +299,7 @@ CLAIMS = [
         "id": "docxology-github-public-repos",
         "claim": f"The docxology GitHub profile has {_DOCX_PUBLIC_REPOS} public repositories.",
         "status": "public-api",
-        "sources": ["https://api.github.com/users/docxology", "reports/public_source_snapshot_2026-06-09.json"],
+        "sources": ["https://api.github.com/users/docxology", _SNAPSHOT_SOURCE],
         "checked_at": _PUBLIC_SOURCE_SNAPSHOT_TS or _CURRENT_COUNTS_TS or "2026-06-09T03:41:15.072709+00:00",
         "confidence": "high",
         "verification_method": "GitHub REST API user profile response.",
@@ -308,7 +315,7 @@ CLAIMS = [
         "status": "public-api",
         "sources": [
             "https://api.github.com/users/ActiveInferenceInstitute",
-            "reports/public_source_snapshot_2026-06-09.json"
+            _SNAPSHOT_SOURCE
         ],
         "checked_at": _PUBLIC_SOURCE_SNAPSHOT_TS or _CURRENT_COUNTS_TS or "2026-06-09T03:41:15.072709+00:00",
         "confidence": "high",
@@ -461,11 +468,13 @@ CLAIMS = [
 ]
 
 
-def _latest_source(pattern: str, fallback: str) -> str:
+def _latest_source(pattern: str, _fallback: str) -> str:
     try:
         latest = latest_report(pattern)
     except FileNotFoundError:
-        return fallback
+        raise FileNotFoundError(
+            f"export_agent_data: no report matches {pattern!r}; refusing a stale fallback link"
+        ) from None
     return rel(latest)
 
 

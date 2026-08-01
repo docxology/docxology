@@ -102,11 +102,15 @@ def image_loc(art: dict, local: dict[str, str]) -> str | None:
 def render(artworks: list[dict], local: dict[str, str]) -> str:
     seen: set[str] = set()
     blocks: list[str] = []
+    truncated = False
     for art in artworks:
         loc = image_loc(art, local)
         if not loc or loc in seen:
             continue
         seen.add(loc)
+        if len(blocks) >= MAX_IMAGES_PER_URL:
+            truncated = True
+            break
         title = html.escape(str(art.get("title") or "Untitled artwork"), quote=True)
         blocks.append(
             "    <image:image>\n"
@@ -114,9 +118,13 @@ def render(artworks: list[dict], local: dict[str, str]) -> str:
             f"      <image:title>{title}</image:title>\n"
             "    </image:image>"
         )
-        if len(blocks) >= MAX_IMAGES_PER_URL:
-            break
     images = "\n".join(blocks)
+    if truncated:
+        print(
+            f"WARNING: gallery sitemap capped at {MAX_IMAGES_PER_URL} images; "
+            "some artworks are omitted from sitemap-images.xml",
+            file=sys.stderr,
+        )
 
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'

@@ -211,7 +211,7 @@
     },
     "generated_manifest": {
       "path": "/data/generated-manifest.json",
-      "count": 46,
+      "count": 48,
       "schema": "GeneratedManifest"
     }
   },
@@ -246,14 +246,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-07-30.json",
+      "path": "/reports/accessibility_static_2026-08-01.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-07-30.json",
+      "path": "/reports/asset_size_2026-08-01.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1054,11 +1054,11 @@
         "hard_limit_bytes": 1073741824,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 761096597,
+        "source_bytes": 773438661,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4354,
-        "artifact_bytes": 761863217
+        "artifact_file_count": 4370,
+        "artifact_bytes": 774208111
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1078,7 +1078,7 @@
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "61b3267a9796fb7142b55dad65af7b5b54d3ee4cee24a0e75435ab675f1aebee",
     "videos_index": "e55c41d851fb30b0d21b357abc51773db2f1cabc60395a6bbae1984084f94a90",
-    "search": "eebdf81a551f1b6497add772071d49ac94ed299c18a675f19a54a3bfadb3f93f",
+    "search": "b2162ce8a79ce47161f4cbd20080e86075e5b3e587f06c0c45a4ad27def3138b",
     "claims": "65415a514bd605e124f7a08a31022a42309b2498fad14772066a1666fb25b276",
     "coverage_exceptions": "b9323992735ed8e41f6ac2e14997700a2bf2e15a2930c5cce5314222a4ff4ac7",
     "repository_classification": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
@@ -1086,9 +1086,9 @@
     "organizations": "3bd2c1b41fe2f765594521a0824bfccca2a93a07172f5ec31f11308db4c43252",
     "resume": "31383a34a97624bfaa3781f3f42e9bde8d22555eddee33ab9d991b55c903000d",
     "work_enrichment": "4fb1de0556cf6deb9a077c9cba07eed4c9e53cbd7a38dd437c3f75c307345eb3",
-    "catalog": "26844057b8a7d4888099a155be6b28b152e1d123ddbe47903f73ee8b51bdca0e",
+    "catalog": "c1e50528b6a324f6a23b5099ea3e8d815b00529dd88d5f22eea16a8ea1e83584",
     "reconciliation": "76015f27d4af4c1b259bfc82a283e8b96e201fe2651d787a53f7975dbfaadfa3",
-    "generated_manifest": "a615d1c88c129cb118c9c8c905206bfbd18490e7b926fc61e95e10c500baac1b",
+    "generated_manifest": "7ec1faccfb82d89dcf03776b4365036fa7cd36ec55023d36c1a4bbe67d20407d",
     "current_counts": "8134f6e11a6560b9cc640c1fe10a37cca84e76ba7fb3144a5c380254de15b3ff"
   },
   "source_provenance": {

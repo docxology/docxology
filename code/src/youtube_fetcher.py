@@ -9,6 +9,7 @@ import logging
 import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Callable
 
 logger = logging.getLogger(__name__)
 
@@ -86,6 +87,9 @@ def normalize_video(raw: dict, channel_id: str) -> dict | None:
         year  = int(upload_date[:4])
         month = int(upload_date[4:6])
         day   = int(upload_date[6:8])
+        # Reject impossible dates (month 13, day 40, 2023-02-29) rather than
+        # emitting a year/month/day that is not a real calendar date.
+        datetime.strptime(upload_date, "%Y%m%d")
     except ValueError:
         return None
 
@@ -106,10 +110,20 @@ def normalize_video(raw: dict, channel_id: str) -> dict | None:
     }
 
 
-def fetch_tab(channel_url: str, tab: str, channel_id: str, mode: str) -> list[dict]:
-    """Fetch one tab (/videos, /streams, or /shorts) for a channel."""
+def fetch_tab(
+    channel_url: str,
+    tab: str,
+    channel_id: str,
+    mode: str,
+    runner: Callable[[str, str], list[str]] = run_yt_dlp,
+) -> list[dict]:
+    """Fetch one tab (/videos, /streams, or /shorts) for a channel.
+
+    ``runner`` is injectable for testability (defaults to :func:`run_yt_dlp`);
+    it maps ``(url, mode)`` -> raw JSONL lines.
+    """
     url = f"{channel_url}/{tab}"
-    lines = run_yt_dlp(url, mode=mode)
+    lines = runner(url, mode)
     raw_records = parse_jsonl(lines)
     videos, skipped = [], 0
     for raw in raw_records:
@@ -124,14 +138,19 @@ def fetch_tab(channel_url: str, tab: str, channel_id: str, mode: str) -> list[di
     return videos
 
 
-def fetch_channel(channel_url: str, channel_id: str, tabs: list[tuple[str, str]] | None = None) -> list[dict]:
+def fetch_channel(
+    channel_url: str,
+    channel_id: str,
+    tabs: list[tuple[str, str]] | None = None,
+    runner: Callable[[str, str], list[str]] = run_yt_dlp,
+) -> list[dict]:
     """Fetch all tabs for a channel, deduplicate, return date-sorted VideoRecords."""
     seen_ids: set[str] = set()
     all_videos: list[dict] = []
 
     for tab, mode in tabs or TABS:
         try:
-            videos = fetch_tab(channel_url, tab, channel_id, mode)
+            videos = fetch_tab(channel_url, tab, channel_id, mode, runner=runner)
         except Exception as e:
             logger.warning("Failed to fetch %s/%s: %s", channel_url, tab, e)
             continue

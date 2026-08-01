@@ -46,9 +46,23 @@ def item(title: str, link: str, guid: str, description: str, pub_date: datetime)
     </item>"""
 
 
+def _year_key(value: object) -> int:
+    """Coerce a work ``year`` to an int for sorting, tolerating non-numeric
+    (e.g. ``"n.d."`` or ``""``) values that sorter should rank last."""
+    try:
+        text = str(value)
+        return int(text) if text.isdigit() else 0
+    except (TypeError, ValueError):
+        return 0
+
+
 def render(build_date: datetime | None = None) -> str:
     build_date = build_date or datetime.now(timezone.utc).replace(microsecond=0)
-    works = sorted(load_works(), key=lambda w: (int(w["year"]), int(w["num"])), reverse=True)
+    works = sorted(
+        load_works(),
+        key=lambda w: (_year_key(w.get("year")), int(w.get("num", 0) or 0)),
+        reverse=True,
+    )
     entries = [
         item(
             "Repository inventory and evidence layer refreshed",

@@ -4,7 +4,8 @@ Migrate inline event handlers (onclick, onchange, onsubmit) to data-*
 attributes so interactive.js can wire them via addEventListener.
 
 Transformations:
-  - onclick="var o=...toggle('open')..."  → data-nav-toggle (on .menu-btn)
+  - onclick="var o=...toggle('open')..."  → removed (wiring is bound by class
+    on `.menu-btn` in js/interactive.js, so no data attribute is needed)
   - onclick="showTab(event,'video')"      → data-tab="video"
   - onclick="setTypeFilter('Paper',this)" → data-type-filter="Paper"
   - onchange="setYearFilter(this.value)"  → data-year-filter
