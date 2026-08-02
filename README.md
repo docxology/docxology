@@ -11,8 +11,6 @@
 
 Active Inference · Bayesian Modeling · Computational Biology · Cognitive Security*
 
-*Available for consulting, tutoring, and research collaboration*
-
 [![Active Inference Institute](https://img.shields.io/badge/Active_Inference_Institute-President-6C3483?style=for-the-badge)](https://activeinference.org/)
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-current_snapshot-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -330,18 +328,23 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 
 ## 🗺️ Research Themes & Expertise Areas
 
-```
-Active Inference ──── Entomology ──── Cognitive Security
-       │                   │                  │
-   Bayesian            Ant Colonies       Information
-   Modeling            Social Insects     Ecosystems
-       │                   │                  │
-   Computational ──── Biology ──────── Digital Rhetoric
-       │                   │                  │
-   CEREBRUM, GNN      Genetics          COGSEC, P3IF
-       │                   │                  │
-   Synergetics ────── Ecology ─────── Decentralized
-   (Fuller, Blake)    (Consciousness)    Science (DeSci)
+```mermaid
+flowchart TD
+    AI[Active Inference] --- ENT[Entomology] --- CS[Cognitive Security]
+    AI --> BM[Bayesian Modeling]
+    ENT --> ANT[Ant Colonies / Social Insects]
+    CS --> IE[Information Ecosystems]
+    BM --> COMP[Computational]
+    ANT --> BIO[Biology]
+    IE --> DR[Digital Rhetoric]
+    COMP --- BIO --- DR
+    COMP --> CEREB[CEREBRUM, GNN]
+    BIO --> GEN[Genetics]
+    DR --> CP[COGSEC, P3IF]
+    CEREB --> SYN[Synergetics<br/>Fuller, Blake]
+    GEN --> ECO[Ecology<br/>Consciousness]
+    CP --> DESC[Decentralized Science<br/>DeSci]
+    SYN --- ECO --- DESC
 ```
 
 **Keywords**: Active Inference, free energy principle, Bayesian brain, computational neuroscience, ant colony optimization, collective intelligence, myrmecology, cognitive security, information warfare, narrative ecosystems, Buckminster Fuller, synergetics, William Blake, AI consulting, machine learning tutoring, research collaboration, Python, Rust, multi-agent systems, variational inference

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-02T23:11:38Z",
-  "source_commit_at_generation": "52e7d15660abcaea8c884a54c6cde572bab585e2",
+  "generated_at": "2026-08-02T23:22:49Z",
+  "source_commit_at_generation": "f135f3f386f61cf898e85c451804fa031321895a",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 827804354,
+    "source_bytes": 827804200,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4429,
-    "artifact_bytes": 828583814
+    "artifact_bytes": 828583660
   },
   "included_files": [
     {
@@ -76,8 +76,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 36896,
-      "sha256": "82e291e7daaff820bbc4716ff153580347eac70e42f500d1a173c950bd04ba27"
+      "bytes": 36742,
+      "sha256": "856c61e3a6b4f02dc29f176b1b7af1e4a23701d394b8f4c73167979a6d3b0c1b"
     },
     {
       "path": "SKILL.md",
@@ -5977,7 +5977,7 @@
     {
       "path": "data/reproducibility.json",
       "bytes": 120236,
-      "sha256": "1a7182d825e9c4b234e95f6aafd04e596f2f2a178a6c7d9ae7c7e1c4495e15cb"
+      "sha256": "1415dcd8f41cc7298c87672986a1d560bc9e58394d9f79040408b945beabda24"
     },
     {
       "path": "data/resume.json",
