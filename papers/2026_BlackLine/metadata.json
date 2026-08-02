@@ -1,0 +1,43 @@
+{
+  "title": "Black Line: Strong Work in Public",
+  "version": "0.4.0",
+  "doi": "10.5281/zenodo.21754235",
+  "doi_url": "https://doi.org/10.5281/zenodo.21754235",
+  "zenodo_record": "https://zenodo.org/records/21754235",
+  "record_id": "21754236",
+  "publication_date": "2026-08-02",
+  "resource_type": {
+    "title": "Working paper",
+    "type": "publication",
+    "subtype": "workingpaper"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. It measures whether the evidence a practice asks for was declared — never whether the work is true, good, or permitted; an ALIGNED reading authorizes nothing. Subtitle: A Positive Operating Discipline for Concise, Rigorous Research and Engineering Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+  "keywords": [
+    "research practice",
+    "declaration coverage",
+    "evidence discipline",
+    "scientific integrity",
+    "reproducibility",
+    "open science",
+    "engineering practice"
+  ],
+  "files": [
+    {
+      "name": "black_line_combined.pdf",
+      "size_bytes": 3582188,
+      "checksum": "md5:d9cb49305bef8ba9885bd3fc4311bab2",
+      "download_url": "https://zenodo.org/api/records/21754236/files/black_line_combined.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-08-02T15:12:58Z"
+}

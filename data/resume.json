@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T18:02:29Z",
+  "generated_at": "2026-08-02T15:19:30Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 198,
+    "works": 205,
     "software_catalogued": 131,
     "owned_software_catalogued": 93,
     "aii_software_catalogued": 38,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "6f7a815c3494bd4215e754b6d2964fd6b51e0e8c84b7dd11a8a38c76b28e10e6",
+      "sha256": "8d313b11ae61b86e5796174e08a89a6cf886c266ac6c3f7550d37681c425c79d",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 160412,
-          "sha256": "ebb8677b7a42cfee4f0529002a35f88905d4b4c03ad9d9784c4142fe28a62a7a"
+          "bytes": 165261,
+          "sha256": "d3766faf1a3d47ed60bdb0c2b97d626f47cc8d16499bfb2d6167107714fc5c22"
         },
         {
           "path": "data/software.json",
           "bytes": 62685,
-          "sha256": "841d256c6d4ed463a0cdd1fd7132121d54f94dd0c3b9dc3e1e8e074be6fea7d8"
+          "sha256": "67cfce95127f5d279bb720bcf8dd0a7907acadd942a6a1c78f3fb4dd6c6949b8"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 11914,
-          "sha256": "65415a514bd605e124f7a08a31022a42309b2498fad14772066a1666fb25b276"
+          "sha256": "0e604d66b005f86933215e0e2b38f0715e9f809fc1adc8d92af1c2590e0ff978"
         },
         {
           "path": "data/github-repositories.json",
@@ -7249,6 +7249,167 @@
       "has_readme": true,
       "full_text_url": "",
       "authors": []
+    },
+    {
+      "num": 200,
+      "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "The Witness Register: Co-Registration Without Aggregation",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21754245",
+      "doi": "10.5281/zenodo.21754245",
+      "docs_path": "papers/2026_WitnessRegister/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 201,
+      "citation_key": "Friedman2026LineSetHoldingInstruments201",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "The Line Set: Holding Instruments Apart",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21754243",
+      "doi": "10.5281/zenodo.21754243",
+      "docs_path": "papers/2026_LineSet/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 202,
+      "citation_key": "Friedman2026WhiteLineTypedLedger202",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21754241",
+      "doi": "10.5281/zenodo.21754241",
+      "docs_path": "papers/2026_WhiteLine/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 203,
+      "citation_key": "Friedman2026PersonalRedLinesDevelopment203",
+      "year": 2026,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Personal Red Lines for Development",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21754239",
+      "doi": "10.5281/zenodo.21754239",
+      "docs_path": "papers/2026_PersonalRedLines/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 204,
+      "citation_key": "Friedman2026GoldenLineTowardWhat204",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Golden Line: Toward What Matters",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21754237",
+      "doi": "10.5281/zenodo.21754237",
+      "docs_path": "papers/2026_GoldenLine/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 205,
+      "citation_key": "Friedman2026BlackLineStrongWork205",
+      "year": 2026,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Black Line: Strong Work in Public",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21754235",
+      "doi": "10.5281/zenodo.21754235",
+      "docs_path": "papers/2026_BlackLine/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 206,
+      "citation_key": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21750800",
+      "doi": "10.5281/zenodo.21750800",
+      "docs_path": "papers/2026_Codomyrmex/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     }
   ],
   "software": [
@@ -8828,14 +8989,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 198 works.",
+      "claim": "The curated bibliography contains 205 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-07-30T18:01:08+00:00",
+      "checked_at": "2026-08-02T15:19:30+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -8843,14 +9004,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 181 per-paper documentation folders.",
+      "claim": "The repository contains 188 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-07-30T18:01:08+00:00",
+      "checked_at": "2026-08-02T15:19:30+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

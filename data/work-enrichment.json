@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-30T18:53:39Z",
+  "generated_at": "2026-08-02T15:19:31Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 198,
+  "count": 205,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -4005,6 +4005,171 @@
         "Bayesian inference"
       ],
       "source": "papers/2026_ActiveInferencePower/README.md"
+    },
+    "Friedman2026WitnessRegisterCoRegistration200": {
+      "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
+      "abstract": "A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores each report's envelope verbatim, records cross-instrument relations as separate describing records, keeps history append-only and sealed, and — only when asked, for one declared next use — emits a bounded posture that always points back at the state that earned it. It never parses, compares, ranks, averages, or merges any instrument's native status. Subtitle: A shared register for line report envelopes that never ranks, merges, or overrides the instruments it holds Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "keywords": [
+        "co-registration",
+        "append-only log",
+        "provenance",
+        "non-compensatory decision rules",
+        "boundary objects",
+        "research infrastructure",
+        "open science"
+      ],
+      "findings": [
+        "co-registration",
+        "append-only log",
+        "provenance",
+        "non-compensatory decision rules",
+        "boundary objects"
+      ],
+      "methods": [],
+      "source": "papers/2026_WitnessRegister/README.md"
+    },
+    "Friedman2026LineSetHoldingInstruments201": {
+      "citation_key": "Friedman2026LineSetHoldingInstruments201",
+      "abstract": "A thin reader that declares what a set of small evaluative instruments is, reads whichever sibling packages are installed, and checks one narrow property: that no two of them have given the same spelling to different things. It adds no instrument of its own and computes no aggregate; a legible reading says only that the declared vocabularies did not overlap. Subtitle: A Declaration, a Reader, and a Non-Overlap Contract for a Growing Set of Small Instruments Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "keywords": [
+        "modularity",
+        "information hiding",
+        "separation of concerns",
+        "boundary objects",
+        "namespace collision",
+        "declarative registry",
+        "reproducible review",
+        "open science"
+      ],
+      "findings": [
+        "modularity",
+        "information hiding",
+        "separation of concerns",
+        "boundary objects",
+        "namespace collision"
+      ],
+      "methods": [],
+      "source": "papers/2026_LineSet/README.md"
+    },
+    "Friedman2026WhiteLineTypedLedger202": {
+      "citation_key": "Friedman2026WhiteLineTypedLedger202",
+      "abstract": "A typed ledger for absence: epistemic gaps, ethical restraint, and contemplative negative space. It records what is missing, withheld, or unresolved under a total caution order, decays stale namings past their review horizons, and refuses to infer why anything is absent. Withholding is recorded as a boundary, never mined as missing evidence. Subtitle: Keeping missing evidence, ethical boundaries, and open questions from becoming unsupported claims Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "keywords": [
+        "absence",
+        "epistemic gaps",
+        "missing evidence",
+        "withheld material",
+        "uncertainty",
+        "negative results",
+        "research ethics",
+        "open science"
+      ],
+      "findings": [
+        "absence",
+        "epistemic gaps",
+        "missing evidence",
+        "withheld material",
+        "uncertainty"
+      ],
+      "methods": [],
+      "source": "papers/2026_WhiteLine/README.md"
+    },
+    "Friedman2026PersonalRedLinesDevelopment203": {
+      "citation_key": "Friedman2026PersonalRedLinesDevelopment203",
+      "abstract": "A versioned, evidence-gated personal security boundary and explicit No document for dual-use development work. It requires a complete, reviewable action intake before returning compliance, distinguishes outside-scope work from compliance, and records uncertainty as a blocking result rather than a permission. It is a personal auditability aid, not enforcement, legal compliance, semantic safety classification, or external certification. Subtitle: An Evidence-Gated Personal Security Boundary and Explicit No Document for Dual-Use Development Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "keywords": [
+        "red lines",
+        "AI governance",
+        "dual-use",
+        "cognitive security",
+        "hash-based canary",
+        "precommitment",
+        "open science",
+        "personal governance",
+        "global political thought",
+        "research ethics",
+        "sociotechnical systems"
+      ],
+      "findings": [
+        "red lines",
+        "AI governance",
+        "dual-use",
+        "cognitive security",
+        "hash-based canary"
+      ],
+      "methods": [],
+      "source": "papers/2026_PersonalRedLines/README.md"
+    },
+    "Friedman2026GoldenLineTowardWhat204": {
+      "citation_key": "Friedman2026GoldenLineTowardWhat204",
+      "abstract": "A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue score, and NOT OBSERVED means no valid entry was admitted rather than that nobody looked. Subtitle: An Aspirational Thread for Long-Horizon Work Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "keywords": [
+        "aspiration",
+        "long-horizon work",
+        "directional assessment",
+        "values in practice",
+        "research ethics",
+        "open science",
+        "non-compensatory reading"
+      ],
+      "findings": [
+        "aspiration",
+        "long-horizon work",
+        "directional assessment",
+        "values in practice",
+        "research ethics"
+      ],
+      "methods": [],
+      "source": "papers/2026_GoldenLine/README.md"
+    },
+    "Friedman2026BlackLineStrongWork205": {
+      "citation_key": "Friedman2026BlackLineStrongWork205",
+      "abstract": "A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. It measures whether the evidence a practice asks for was declared — never whether the work is true, good, or permitted; an ALIGNED reading authorizes nothing. Subtitle: A Positive Operating Discipline for Concise, Rigorous Research and Engineering Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "keywords": [
+        "research practice",
+        "declaration coverage",
+        "evidence discipline",
+        "scientific integrity",
+        "reproducibility",
+        "open science",
+        "engineering practice"
+      ],
+      "findings": [
+        "research practice",
+        "declaration coverage",
+        "evidence discipline",
+        "scientific integrity",
+        "reproducibility"
+      ],
+      "methods": [],
+      "source": "papers/2026_BlackLine/README.md"
+    },
+    "Friedman2026CodomyrmexArtificialEcologyAgentic206": {
+      "citation_key": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
+      "abstract": "Agentic software can preserve task state while still forgetting the consequences of prior actions. Codomyrmex studies a narrow control-plane question: after a caller reports a failed action at one software location, can the system deterministically increase friction for a materially similar proposal at that location without changing an unrelated target? Its Colony Control Plane records consequence reports and couples them to target-indexed signal pressure, agent trust, role labels, resource accounting, adversarial checks, and an explicit EXECUTE/HOLD/REFUSE gate. The implementation comprises 8 cooperating subsystems. The ordinary Model Context Protocol path remains caller-reported and unattested. Optional and required ColonyKernel attestation modes instead bind proposal, verdict, authorization, execution receipt, and outcome in a signed, hash-linked local ledger. That ledger protects lif",
+      "keywords": [
+        "ai-agents",
+        "model-context-protocol",
+        "mcp",
+        "multi-agent",
+        "orchestration",
+        "colony-control-plane",
+        "stigmergy",
+        "artificial-ecology",
+        "agentic-software-engineering",
+        "falsification-worker",
+        "actuation-gate",
+        "trust-scoring"
+      ],
+      "findings": [
+        "ai-agents",
+        "model-context-protocol",
+        "mcp",
+        "multi-agent",
+        "orchestration"
+      ],
+      "methods": [],
+      "source": "papers/2026_Codomyrmex/README.md"
     }
   }
 }

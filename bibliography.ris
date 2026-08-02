@@ -2778,3 +2778,87 @@ KW  - Active Inference
 KW  - Paper
 N1  - Catalog row 199; docs: papers/2026_ActiveInferencePower/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - The Witness Register: Co-Registration Without Aggregation
+T2  - Zenodo
+DO  - 10.5281/zenodo.21754245
+UR  - https://doi.org/10.5281/zenodo.21754245
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 200; docs: papers/2026_WitnessRegister/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - The Line Set: Holding Instruments Apart
+T2  - Zenodo
+DO  - 10.5281/zenodo.21754243
+UR  - https://doi.org/10.5281/zenodo.21754243
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 201; docs: papers/2026_LineSet/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - White Line: A Typed Ledger for the Edge of the Claim
+T2  - Zenodo
+DO  - 10.5281/zenodo.21754241
+UR  - https://doi.org/10.5281/zenodo.21754241
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 202; docs: papers/2026_WhiteLine/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Personal Red Lines for Development
+T2  - Zenodo
+DO  - 10.5281/zenodo.21754239
+UR  - https://doi.org/10.5281/zenodo.21754239
+KW  - Cognitive Security
+KW  - Paper
+N1  - Catalog row 203; docs: papers/2026_PersonalRedLines/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Golden Line: Toward What Matters
+T2  - Zenodo
+DO  - 10.5281/zenodo.21754237
+UR  - https://doi.org/10.5281/zenodo.21754237
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 204; docs: papers/2026_GoldenLine/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Black Line: Strong Work in Public
+T2  - Zenodo
+DO  - 10.5281/zenodo.21754235
+UR  - https://doi.org/10.5281/zenodo.21754235
+KW  - Cognitive Security
+KW  - Paper
+N1  - Catalog row 205; docs: papers/2026_BlackLine/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Codomyrmex: An Artificial Ecology for Agentic Software Development
+T2  - Zenodo
+DO  - 10.5281/zenodo.21750800
+UR  - https://doi.org/10.5281/zenodo.21750800
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 206; docs: papers/2026_Codomyrmex/
+ER  -

@@ -1,0 +1,102 @@
+{
+  "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+  "version": "1.3.0",
+  "doi": "10.5281/zenodo.21750800",
+  "doi_url": "https://doi.org/10.5281/zenodo.21750800",
+  "zenodo_record": "https://zenodo.org/records/21750800",
+  "record_id": "21750801",
+  "publication_date": "2026-08-01",
+  "resource_type": {
+    "title": "Report",
+    "type": "publication",
+    "subtype": "report"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Agentic software can preserve task state while still forgetting the consequences of prior actions. Codomyrmex studies a narrow control-plane question: after a caller reports a failed action at one software location, can the system deterministically increase friction for a materially similar proposal at that location without changing an unrelated target? Its Colony Control Plane records consequence reports and couples them to target-indexed signal pressure, agent trust, role labels, resource accounting, adversarial checks, and an explicit EXECUTE/HOLD/REFUSE gate. The implementation comprises 8 cooperating subsystems. The ordinary Model Context Protocol path remains caller-reported and unattested. Optional and required `ColonyKernel` attestation modes instead bind proposal, verdict, authorization, execution receipt, and outcome in a signed, hash-linked local ledger. That ledger protects lifecycle linkage but does not independently observe external actuation or establish deployment safety. Consequence records can use file-backed SQLite; the default MCP kernel and signal field remain process-local. Evaluation is limited to implementation properties and controlled fixtures. At composition time, the scoped Colony Kernel surface contains 819 passing tests with 76.6% branch coverage, 0 Ruff errors, and 0 ty diagnostics. A paired deterministic replay moves the same-target proposal from 0.875/EXECUTE to 0.725/HOLD after a reported failure while leaving an unrelated target unchanged. Separate fixtures exercise trust promotion, bounded arithmetic, linear signal decay, local attestation integrity, and interface behavior. These results support reproducible software contracts, not ecological optimality, calibrated risk, production harm reduction, or generalization to external workloads. The report contributes the typed control plane, transparent gate, coupled local feedback, authenticated local lifecycle option, and source-bound publication workflow. Generated variables, figures, citations, claim boundaries, and release receipts tie the rendered report to the evaluated checkout. End-to-end external-actuation attestation, restart-persistent field storage, representative benchmarks, and independent deployment validation remain open.",
+  "keywords": [
+    "ai-agents",
+    "model-context-protocol",
+    "mcp",
+    "multi-agent",
+    "orchestration",
+    "colony-control-plane",
+    "stigmergy",
+    "artificial-ecology",
+    "agentic-software-engineering",
+    "falsification-worker",
+    "actuation-gate",
+    "trust-scoring"
+  ],
+  "files": [
+    {
+      "name": "codomyrmex-1.3.0-release-bundle.zip",
+      "size_bytes": 20749927,
+      "checksum": "md5:53b3bb8ba4caa490b7fa79f4b8c39966",
+      "download_url": "https://zenodo.org/api/records/21750801/files/codomyrmex-1.3.0-release-bundle.zip/content"
+    },
+    {
+      "name": "CITATION.cff",
+      "size_bytes": 334,
+      "checksum": "md5:974f60388f420b30d879b742bc2e8b49",
+      "download_url": "https://zenodo.org/api/records/21750801/files/CITATION.cff/content"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size_bytes": 2594,
+      "checksum": "md5:28c76702ae2a7b293b3a5bc478ec6e52",
+      "download_url": "https://zenodo.org/api/records/21750801/files/SHA256SUMS/content"
+    },
+    {
+      "name": "SHA512SUMS",
+      "size_bytes": 4322,
+      "checksum": "md5:3a26b6439fa8107d43d3d5d685037b38",
+      "download_url": "https://zenodo.org/api/records/21750801/files/SHA512SUMS/content"
+    },
+    {
+      "name": "publication_metadata.json",
+      "size_bytes": 2977,
+      "checksum": "md5:f1e9de5d80cceeaf72acf50da4ffcefa",
+      "download_url": "https://zenodo.org/api/records/21750801/files/publication_metadata.json/content"
+    },
+    {
+      "name": "codomyrmex-1.3.0.pdf",
+      "size_bytes": 6883385,
+      "checksum": "md5:ab757cdec752bfc33f23c225af82d903",
+      "download_url": "https://zenodo.org/api/records/21750801/files/codomyrmex-1.3.0.pdf/content"
+    },
+    {
+      "name": "codomyrmex-1.3.0.html",
+      "size_bytes": 9755311,
+      "checksum": "md5:754e9727d1a38226fbfdf5a343490b2d",
+      "download_url": "https://zenodo.org/api/records/21750801/files/codomyrmex-1.3.0.html/content"
+    },
+    {
+      "name": "codomyrmex-1.3.0-content.pdf",
+      "size_bytes": 6876519,
+      "checksum": "md5:0f8394ea6608318d5cb897a318bab4fe",
+      "download_url": "https://zenodo.org/api/records/21750801/files/codomyrmex-1.3.0-content.pdf/content"
+    },
+    {
+      "name": ".zenodo.json",
+      "size_bytes": 3131,
+      "checksum": "md5:6bf2035e852dd041fa0f7210592dbdfe",
+      "download_url": "https://zenodo.org/api/records/21750801/files/.zenodo.json/content"
+    },
+    {
+      "name": "publication_manifest.json",
+      "size_bytes": 16360,
+      "checksum": "md5:cc4a4bcf2dde09a0a60441469973782e",
+      "download_url": "https://zenodo.org/api/records/21750801/files/publication_manifest.json/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-08-02T15:13:07Z"
+}

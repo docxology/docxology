@@ -1,0 +1,47 @@
+{
+  "title": "Personal Red Lines for Development",
+  "version": "0.3.0",
+  "doi": "10.5281/zenodo.21754239",
+  "doi_url": "https://doi.org/10.5281/zenodo.21754239",
+  "zenodo_record": "https://zenodo.org/records/21754239",
+  "record_id": "21754240",
+  "publication_date": "2026-08-02",
+  "resource_type": {
+    "title": "Working paper",
+    "type": "publication",
+    "subtype": "workingpaper"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A versioned, evidence-gated personal security boundary and explicit No document for dual-use development work. It requires a complete, reviewable action intake before returning compliance, distinguishes outside-scope work from compliance, and records uncertainty as a blocking result rather than a permission. It is a personal auditability aid, not enforcement, legal compliance, semantic safety classification, or external certification. Subtitle: An Evidence-Gated Personal Security Boundary and Explicit No Document for Dual-Use Development Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+  "keywords": [
+    "red lines",
+    "AI governance",
+    "dual-use",
+    "cognitive security",
+    "hash-based canary",
+    "precommitment",
+    "open science",
+    "personal governance",
+    "global political thought",
+    "research ethics",
+    "sociotechnical systems"
+  ],
+  "files": [
+    {
+      "name": "red_line_combined.pdf",
+      "size_bytes": 6211544,
+      "checksum": "md5:492c20eb7b415f2e08fd39fa1b400fe4",
+      "download_url": "https://zenodo.org/api/records/21754240/files/red_line_combined.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-08-02T15:12:41Z"
+}

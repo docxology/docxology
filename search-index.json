@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T20:26:51Z",
+  "generated_at": "2026-08-02T15:19:41Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1659,
+  "count": 1666,
   "items": [
     {
       "id": "page:home",
@@ -321,7 +321,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-08-01.json",
+      "url": "/reports/accessibility_static_2026-08-02.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -370,7 +370,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-08-01.json",
+      "url": "/reports/asset_size_2026-08-02.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -396,7 +396,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-07-24.json",
+      "url": "/reports/live_site_verification_2026-08-01.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -5068,6 +5068,178 @@
         "reproducible research"
       ],
       "content": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings Zenodo 10.5281/zenodo.21695160 Friedman2026ActiveInferencePowerSuite199 Active Inference Paper Statistical power is an investigator-facing operating characteristic of an adaptive-study design. Before simulation, the investigator fixes an agent-side model, evaluator-side process, testing setting, policy, and replication plan. Each embedded agent acts only on visible history; simulated hidden truth is retained for scoring. active inference power makes that conditional estimand inspectable... multiple testing false discovery rate Benjamini-Hochberg statistical power active inference pymdp sequential hypothesis testing reproducible research See full paper for detailed findings and analysis Free energy minimization Generative modeling Bayesian inference"
+    },
+    {
+      "id": "work:Friedman2026WitnessRegisterCoRegistration200",
+      "type": "work",
+      "title": "The Witness Register: Co-Registration Without Aggregation",
+      "url": "/works/Friedman2026WitnessRegisterCoRegistration200.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21754245",
+      "full_text_url": "",
+      "summary": "A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores each report's envelope verbatim, records cross-instrument relations as separate describing records, keeps ",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "co-registration",
+        "append-only log",
+        "provenance",
+        "non-compensatory decision rules",
+        "boundary objects",
+        "research infrastructure",
+        "open science"
+      ],
+      "content": "The Witness Register: Co-Registration Without Aggregation Friedman, Daniel Ari Daniel Ari Friedman Zenodo 10.5281/zenodo.21754245 Friedman2026WitnessRegisterCoRegistration200 Computational Paper A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores each report's envelope verbatim, records cross-instrument relations as separate describing records, keeps history append-only and sealed, and — only when asked, for one declared next use — emits a bounded posture that always points back at the state that earned it. It never parses, compares, ranks, averages, or merges any instrument's native status. Subtitle: A shared register for line report envelopes that never ranks, merges, or overrides the instruments it holds Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository. co-registration append-only log provenance non-compensatory decision rules boundary objects research infrastructure open science co-registration append-only log provenance non-compensatory decision rules boundary objects"
+    },
+    {
+      "id": "work:Friedman2026LineSetHoldingInstruments201",
+      "type": "work",
+      "title": "The Line Set: Holding Instruments Apart",
+      "url": "/works/Friedman2026LineSetHoldingInstruments201.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21754243",
+      "full_text_url": "",
+      "summary": "A thin reader that declares what a set of small evaluative instruments is, reads whichever sibling packages are installed, and checks one narrow property: that no two of them have given the same spelling to different thi",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "modularity",
+        "information hiding",
+        "separation of concerns",
+        "boundary objects",
+        "namespace collision",
+        "declarative registry",
+        "reproducible review",
+        "open science"
+      ],
+      "content": "The Line Set: Holding Instruments Apart Friedman, Daniel Ari Daniel Ari Friedman Zenodo 10.5281/zenodo.21754243 Friedman2026LineSetHoldingInstruments201 Computational Paper A thin reader that declares what a set of small evaluative instruments is, reads whichever sibling packages are installed, and checks one narrow property: that no two of them have given the same spelling to different things. It adds no instrument of its own and computes no aggregate; a legible reading says only that the declared vocabularies did not overlap. Subtitle: A Declaration, a Reader, and a Non-Overlap Contract for a Growing Set of Small Instruments Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository. modularity information hiding separation of concerns boundary objects namespace collision declarative registry reproducible review open science modularity information hiding separation of concerns boundary objects namespace collision"
+    },
+    {
+      "id": "work:Friedman2026WhiteLineTypedLedger202",
+      "type": "work",
+      "title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "url": "/works/Friedman2026WhiteLineTypedLedger202.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21754241",
+      "full_text_url": "",
+      "summary": "A typed ledger for absence: epistemic gaps, ethical restraint, and contemplative negative space. It records what is missing, withheld, or unresolved under a total caution order, decays stale namings past their review hor",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "absence",
+        "epistemic gaps",
+        "missing evidence",
+        "withheld material",
+        "uncertainty",
+        "negative results",
+        "research ethics",
+        "open science"
+      ],
+      "content": "White Line: A Typed Ledger for the Edge of the Claim Friedman, Daniel Ari Daniel Ari Friedman Zenodo 10.5281/zenodo.21754241 Friedman2026WhiteLineTypedLedger202 Computational Paper A typed ledger for absence: epistemic gaps, ethical restraint, and contemplative negative space. It records what is missing, withheld, or unresolved under a total caution order, decays stale namings past their review horizons, and refuses to infer why anything is absent. Withholding is recorded as a boundary, never mined as missing evidence. Subtitle: Keeping missing evidence, ethical boundaries, and open questions from becoming unsupported claims Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository. absence epistemic gaps missing evidence withheld material uncertainty negative results research ethics open science absence epistemic gaps missing evidence withheld material uncertainty"
+    },
+    {
+      "id": "work:Friedman2026PersonalRedLinesDevelopment203",
+      "type": "work",
+      "title": "Personal Red Lines for Development",
+      "url": "/works/Friedman2026PersonalRedLinesDevelopment203.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21754239",
+      "full_text_url": "",
+      "summary": "A versioned, evidence-gated personal security boundary and explicit No document for dual-use development work. It requires a complete, reviewable action intake before returning compliance, distinguishes outside-scope wor",
+      "year": 2026,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography",
+        "red lines",
+        "AI governance",
+        "dual-use",
+        "cognitive security",
+        "hash-based canary",
+        "precommitment",
+        "open science",
+        "personal governance"
+      ],
+      "content": "Personal Red Lines for Development Friedman, Daniel Ari Daniel Ari Friedman Zenodo 10.5281/zenodo.21754239 Friedman2026PersonalRedLinesDevelopment203 Cognitive Security Paper A versioned, evidence-gated personal security boundary and explicit No document for dual-use development work. It requires a complete, reviewable action intake before returning compliance, distinguishes outside-scope work from compliance, and records uncertainty as a blocking result rather than a permission. It is a personal auditability aid, not enforcement, legal compliance, semantic safety classification, or external certification. Subtitle: An Evidence-Gated Personal Security Boundary and Explicit No Document for Dual-Use Development Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository. red lines AI governance dual-use cognitive security hash-based canary precommitment open science personal governance global political thought research ethics sociotechnical systems red lines AI governance dual-use cognitive security hash-based canary"
+    },
+    {
+      "id": "work:Friedman2026GoldenLineTowardWhat204",
+      "type": "work",
+      "title": "Golden Line: Toward What Matters",
+      "url": "/works/Friedman2026GoldenLineTowardWhat204.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21754237",
+      "full_text_url": "",
+      "summary": "A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no ag",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "aspiration",
+        "long-horizon work",
+        "directional assessment",
+        "values in practice",
+        "research ethics",
+        "open science",
+        "non-compensatory reading"
+      ],
+      "content": "Golden Line: Toward What Matters Friedman, Daniel Ari Daniel Ari Friedman Zenodo 10.5281/zenodo.21754237 Friedman2026GoldenLineTowardWhat204 Computational Paper A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue score, and NOT OBSERVED means no valid entry was admitted rather than that nobody looked. Subtitle: An Aspirational Thread for Long-Horizon Work Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository. aspiration long-horizon work directional assessment values in practice research ethics open science non-compensatory reading aspiration long-horizon work directional assessment values in practice research ethics"
+    },
+    {
+      "id": "work:Friedman2026BlackLineStrongWork205",
+      "type": "work",
+      "title": "Black Line: Strong Work in Public",
+      "url": "/works/Friedman2026BlackLineStrongWork205.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21754235",
+      "full_text_url": "",
+      "summary": "A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. I",
+      "year": 2026,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography",
+        "research practice",
+        "declaration coverage",
+        "evidence discipline",
+        "scientific integrity",
+        "reproducibility",
+        "open science",
+        "engineering practice"
+      ],
+      "content": "Black Line: Strong Work in Public Friedman, Daniel Ari Daniel Ari Friedman Zenodo 10.5281/zenodo.21754235 Friedman2026BlackLineStrongWork205 Cognitive Security Paper A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. It measures whether the evidence a practice asks for was declared — never whether the work is true, good, or permitted; an ALIGNED reading authorizes nothing. Subtitle: A Positive Operating Discipline for Concise, Rigorous Research and Engineering Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository. research practice declaration coverage evidence discipline scientific integrity reproducibility open science engineering practice research practice declaration coverage evidence discipline scientific integrity reproducibility"
+    },
+    {
+      "id": "work:Friedman2026CodomyrmexArtificialEcologyAgentic206",
+      "type": "work",
+      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "url": "/works/Friedman2026CodomyrmexArtificialEcologyAgentic206.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21750800",
+      "full_text_url": "",
+      "summary": "Agentic software can preserve task state while still forgetting the consequences of prior actions. Codomyrmex studies a narrow control-plane question: after a caller reports a failed action at one software location, can ",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "ai-agents",
+        "model-context-protocol",
+        "mcp",
+        "multi-agent",
+        "orchestration",
+        "colony-control-plane",
+        "stigmergy",
+        "artificial-ecology"
+      ],
+      "content": "Codomyrmex: An Artificial Ecology for Agentic Software Development Friedman, Daniel Ari Daniel Ari Friedman Zenodo 10.5281/zenodo.21750800 Friedman2026CodomyrmexArtificialEcologyAgentic206 Computational Paper Agentic software can preserve task state while still forgetting the consequences of prior actions. Codomyrmex studies a narrow control-plane question: after a caller reports a failed action at one software location, can the system deterministically increase friction for a materially similar proposal at that location without changing an unrelated target? Its Colony Control Plane records consequence reports and couples them to target-indexed signal pressure, agent trust, role labels, resource accounting, adversarial checks, and an explicit EXECUTE/HOLD/REFUSE gate. The implementation comprises 8 cooperating subsystems. The ordinary Model Context Protocol path remains caller-reported and unattested. Optional and required ColonyKernel attestation modes instead bind proposal, verdict, authorization, execution receipt, and outcome in a signed, hash-linked local ledger. That ledger protects lif ai-agents model-context-protocol mcp multi-agent orchestration colony-control-plane stigmergy artificial-ecology agentic-software-engineering falsification-worker actuation-gate trust-scoring ai-agents model-context-protocol mcp multi-agent orchestration"
     },
     {
       "id": "software:docxology:template",
@@ -9854,7 +10026,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#128 ~ A Sign Of What We Shall Do Hereafter Personal Channel 2020-04-21 Research Video Archive Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps The Great Preset: Remote Teams and Operational Art"
+      "content": "#128 ~ A Sign Of What We Shall Do Hereafter Personal Channel 2020-04-21 Research Video Archive Golden Line: Toward What Matters Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
     },
     {
       "id": "video:personal:0cjkd8oJBj8",
@@ -10075,7 +10247,7 @@
         "personal",
         "Research Practice"
       ],
-      "content": "#143 ~ Doing Research Inside the Labyrinth Personal Channel 2020-04-21 Research Practice Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
+      "content": "#143 ~ Doing Research Inside the Labyrinth Personal Channel 2020-04-21 Research Practice Black Line: Strong Work in Public Golden Line: Toward What Matters Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement"
     },
     {
       "id": "video:personal:7khc6FFd8HE",
@@ -10381,7 +10553,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#155 ~ Following the Golden Thread... Personal Channel 2020-04-21 Research Video Archive Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Active Inference & Behavior Engineering for Teams Emergent Teams for Complex Threats Reimagining Maps"
+      "content": "#155 ~ Following the Golden Thread... Personal Channel 2020-04-21 Research Video Archive Golden Line: Toward What Matters Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Active Inference & Behavior Engineering for Teams Emergent Teams for Complex Threats"
     },
     {
       "id": "video:personal:K8AEZIwGGuE",
@@ -10585,7 +10757,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#088 ~ Whose Lines Are They Anyway? Personal Channel 2020-04-21 Research Video Archive Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps The Innovator's Catechism"
+      "content": "#088 ~ Whose Lines Are They Anyway? Personal Channel 2020-04-21 Research Video Archive Personal Red Lines for Development Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
     },
     {
       "id": "video:personal:ShHaqxFX-Ww",
@@ -11197,7 +11369,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#036 ~ Sunshine, Practice, Tempo Personal Channel 2020-04-21 Research Video Archive Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps The Innovator's Catechism"
+      "content": "#036 ~ Sunshine, Practice, Tempo Personal Channel 2020-04-21 Research Video Archive Black Line: Strong Work in Public Golden Line: Toward What Matters Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats"
     },
     {
       "id": "video:personal:i6hfw2s1mNc",
@@ -11503,7 +11675,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#067 ~ No Sleep without Work, No Work without Sleep Personal Channel 2020-04-21 Research Video Archive Bridging gaps in image meme research: A multidisciplinary paradigm A Deterministic Testbed for Self-Organizing Agent-Team Coordination The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation Context-dependent expression of the foraging gene in field colonies of ants"
+      "content": "#067 ~ No Sleep without Work, No Work without Sleep Personal Channel 2020-04-21 Research Video Archive Bridging gaps in image meme research: A multidisciplinary paradigm A Deterministic Testbed for Self-Organizing Agent-Team Coordination Black Line: Strong Work in Public Golden Line: Toward What Matters"
     },
     {
       "id": "video:personal:r_uw4pDjDBU",
@@ -11571,7 +11743,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#064 ~ What is the Sixth Degree? Personal Channel 2020-04-21 Research Video Archive Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps The Great Preset: Remote Teams and Operational Art"
+      "content": "#064 ~ What is the Sixth Degree? Personal Channel 2020-04-21 Research Video Archive Golden Line: Toward What Matters Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
     },
     {
       "id": "video:personal:tkCXx4nIv-Y",
@@ -11673,7 +11845,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#151 ~ What if they threw an economy and no one showed up? Personal Channel 2020-04-21 Research Video Archive Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
+      "content": "#151 ~ What if they threw an economy and no one showed up? Personal Channel 2020-04-21 Research Video Archive Golden Line: Toward What Matters Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats"
     },
     {
       "id": "video:personal:vvdcVwzNATQ",
@@ -12286,7 +12458,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#184 ~ Edge of the Wyrd Personal Channel 2021-04-21 Research Video Archive Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps The Innovator's Catechism"
+      "content": "#184 ~ Edge of the Wyrd Personal Channel 2021-04-21 Research Video Archive White Line: A Typed Ledger for the Edge of the Claim Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
     },
     {
       "id": "video:institute:5DB77oxbABo",
@@ -13756,7 +13928,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#181 ~Bringing a Plane to the Fight of Lines Personal Channel 2021-04-21 Research Video Archive Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps The Innovator's Catechism"
+      "content": "#181 ~Bringing a Plane to the Fight of Lines Personal Channel 2021-04-21 Research Video Archive Personal Red Lines for Development Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
     },
     {
       "id": "video:institute:vacR2gYgOxk",
@@ -13825,7 +13997,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#190 ~ Following the Golden Road Personal Channel 2021-04-21 Research Video Archive Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Active Inference & Behavior Engineering for Teams Emergent Teams for Complex Threats Reimagining Maps"
+      "content": "#190 ~ Following the Golden Road Personal Channel 2021-04-21 Research Video Archive Golden Line: Toward What Matters Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Active Inference & Behavior Engineering for Teams Emergent Teams for Complex Threats"
     },
     {
       "id": "video:institute:xCqavxpiw44",
@@ -14117,7 +14289,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#218 ~ Point and Line to Plane Personal Channel 2022-04-21 Research Video Archive Exploratory Data Analysis: A Reproducible Notebook Template Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
+      "content": "#218 ~ Point and Line to Plane Personal Channel 2022-04-21 Research Video Archive Black Line: Strong Work in Public Exploratory Data Analysis: A Reproducible Notebook Template Golden Line: Toward What Matters White Line: A Typed Ledger for the Edge of the Claim"
     },
     {
       "id": "video:institute:3SjbReGPZME",
@@ -16023,7 +16195,7 @@
         "personal",
         "Research Practice"
       ],
-      "content": "PaperStream #001.0 ~ \"The Relation between Kin and Multilevel Selection\" (Okasha 2016) Personal Channel 2022-08-10 Research Practice MVEE: A Framework for Evolutionary Studies Narrative Information Management Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement"
+      "content": "PaperStream #001.0 ~ \"The Relation between Kin and Multilevel Selection\" (Okasha 2016) Personal Channel 2022-08-10 Research Practice MVEE: A Framework for Evolutionary Studies Narrative Information Management Black Line: Strong Work in Public Golden Line: Toward What Matters"
     },
     {
       "id": "video:personal:tSQHdZ3yXZk",
@@ -17326,7 +17498,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#227 ~ What Cannot Be Hidden Personal Channel 2023-04-21 Research Video Archive A Living Meta-Analysis of the Modafinil Literature Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
+      "content": "#227 ~ What Cannot Be Hidden Personal Channel 2023-04-21 Research Video Archive A Living Meta-Analysis of the Modafinil Literature Golden Line: Toward What Matters Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats"
     },
     {
       "id": "video:institute:J7cu4slfIBA",
@@ -17516,7 +17688,7 @@
         "personal",
         "Research Practice"
       ],
-      "content": "PaperStream #002.0 ~ \"Modularity: genes, development and evolution\" (Melo et al. 2016) Personal Channel 2023-04-21 Research Practice A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees The MutAnts are here Two lineages that need each other"
+      "content": "PaperStream #002.0 ~ \"Modularity: genes, development and evolution\" (Melo et al. 2016) Personal Channel 2023-04-21 Research Practice A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees Black Line: Strong Work in Public Golden Line: Toward What Matters"
     },
     {
       "id": "video:institute:QUBmgn7K_4E",
@@ -17929,7 +18101,7 @@
         "Biology and Medicine",
         "Research Practice"
       ],
-      "content": "PaperStream #003.0 ~ \"Genetic determinism, essentialism and reductionism\" ~ K. Paige Harden (2022) Personal Channel 2023-04-21 Biology and Medicine Research Practice Postdoc review (2020–2023) Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior"
+      "content": "PaperStream #003.0 ~ \"Genetic determinism, essentialism and reductionism\" ~ K. Paige Harden (2022) Personal Channel 2023-04-21 Biology and Medicine Research Practice Postdoc review (2020–2023) Black Line: Strong Work in Public Golden Line: Toward What Matters Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history"
     },
     {
       "id": "video:personal:gMWPHF_fesQ",
@@ -23964,7 +24136,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes Personal Channel 2024-09-26 Research Video Archive Way Finding in the Infinite Imaginarium AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats"
+      "content": "Way Finding in the Infinite Imaginarium: Juxtaposing Epistemic Tempos and Modes Personal Channel 2024-09-26 Research Video Archive Way Finding in the Infinite Imaginarium AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference White Line: A Typed Ledger for the Edge of the Claim Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement"
     },
     {
       "id": "video:personal:TgotKC9XTBw",
@@ -24667,7 +24839,7 @@
         "institute",
         "Research Practice"
       ],
-      "content": "Bradly Alicea: “An Overview of Open Source and Open Science“ Active Inference Institute 2024-11-22 Research Practice The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot) Generative Research Teams: Active Inference Compositions for Research and Meta-Science The Active Inference Institute and Active Inference Ecosystem (v1) An Active Inference Ontology for Decentralized Science"
+      "content": "Bradly Alicea: “An Overview of Open Source and Open Science“ Active Inference Institute 2024-11-22 Research Practice The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot) Generative Research Teams: Active Inference Compositions for Research and Meta-Science The Active Inference Institute and Active Inference Ecosystem (v1) Black Line: Strong Work in Public"
     },
     {
       "id": "video:institute:G_Jksni5o8I",
@@ -25320,7 +25492,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "Reading of: \"America, A Prophecy\" Personal Channel 2025-04-21 Research Video Archive Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
+      "content": "Reading of: \"America, A Prophecy\" Personal Channel 2025-04-21 Research Video Archive Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology Golden Line: Toward What Matters Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats"
     },
     {
       "id": "video:institute:6E4CpJvzddg",
@@ -25755,7 +25927,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "Reading of: \"The Marriage of Heaven and Hell\" Personal Channel 2025-04-21 Research Video Archive Synthesis of Agent and Niche Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
+      "content": "Reading of: \"The Marriage of Heaven and Hell\" Personal Channel 2025-04-21 Research Video Archive Synthesis of Agent and Niche Golden Line: Toward What Matters Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats"
     },
     {
       "id": "video:institute:UB-TIIlmwlU",
@@ -26246,7 +26418,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "Noel Coughlin: Examining and Rectifying the Error in Heisenberg's Uncertainty Principle Personal Channel 2025-04-21 Research Video Archive The Active Inference Institute and Active Inference Ecosystem (v1) MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement"
+      "content": "Noel Coughlin: Examining and Rectifying the Error in Heisenberg's Uncertainty Principle Personal Channel 2025-04-21 Research Video Archive The Active Inference Institute and Active Inference Ecosystem (v1) White Line: A Typed Ledger for the Edge of the Claim MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)"
     },
     {
       "id": "video:institute:kCmC4i-drEY",
@@ -27547,7 +27719,7 @@
         "Art and Synergetics",
         "Research Practice"
       ],
-      "content": "PaperStream #011.0 ~ On Cognitive Art & Science: Toward Wholeness From Both Sides Personal Channel 2025-08-21 Art and Synergetics Research Practice On Cognitive Art & Science: Toward Wholeness From Both Sides The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Narrative Information Management"
+      "content": "PaperStream #011.0 ~ On Cognitive Art & Science: Toward Wholeness From Both Sides Personal Channel 2025-08-21 Art and Synergetics Research Practice On Cognitive Art & Science: Toward Wholeness From Both Sides Black Line: Strong Work in Public Golden Line: Toward What Matters The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision"
     },
     {
       "id": "video:institute:rj3iBEnZvGU",
@@ -28953,7 +29125,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 198 works.",
+      "title": "The curated bibliography contains 205 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -28961,12 +29133,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 198 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 205 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 181 per-paper documentation folders.",
+      "title": "The repository contains 188 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -28974,7 +29146,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 181 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 188 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -29150,7 +29322,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.html",
-      "summary": "Structured CV export: 198 works, 131 software rows, 387 public GitHub repositories, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 205 works, 131 software rows, 387 public GitHub repositories, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

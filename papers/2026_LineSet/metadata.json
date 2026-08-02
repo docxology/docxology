@@ -1,0 +1,44 @@
+{
+  "title": "The Line Set: Holding Instruments Apart",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.21754243",
+  "doi_url": "https://doi.org/10.5281/zenodo.21754243",
+  "zenodo_record": "https://zenodo.org/records/21754243",
+  "record_id": "21754244",
+  "publication_date": "2026-08-02",
+  "resource_type": {
+    "title": "Working paper",
+    "type": "publication",
+    "subtype": "workingpaper"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A thin reader that declares what a set of small evaluative instruments is, reads whichever sibling packages are installed, and checks one narrow property: that no two of them have given the same spelling to different things. It adds no instrument of its own and computes no aggregate; a legible reading says only that the declared vocabularies did not overlap. Subtitle: A Declaration, a Reader, and a Non-Overlap Contract for a Growing Set of Small Instruments Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+  "keywords": [
+    "modularity",
+    "information hiding",
+    "separation of concerns",
+    "boundary objects",
+    "namespace collision",
+    "declarative registry",
+    "reproducible review",
+    "open science"
+  ],
+  "files": [
+    {
+      "name": "line_set_combined.pdf",
+      "size_bytes": 22672214,
+      "checksum": "md5:2368ccd965706d43be340c5e03d6f3f2",
+      "download_url": "https://zenodo.org/api/records/21754244/files/line_set_combined.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-08-02T15:11:27Z"
+}

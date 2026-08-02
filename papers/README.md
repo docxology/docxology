@@ -9,7 +9,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software triage, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (181)
+## Papers (188)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -194,6 +194,13 @@ For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software 
 | 179 | [2026_DuckRabbit](2026_DuckRabbit/) | ✅ | 2026 | DuckRabbit |
 | 180 | [2026_SynthOBSFractiSynth](2026_SynthOBSFractiSynth/) | ✅ | 2026 | SynthOBSFractiSynth |
 | 181 | [2026_ActiveInferencePower](2026_ActiveInferencePower/) | ✅ | 2026 | ActiveInferencePower |
+| 182 | [2026_WitnessRegister](2026_WitnessRegister/) | ✅ | 2026 | WitnessRegister |
+| 183 | [2026_LineSet](2026_LineSet/) | ✅ | 2026 | LineSet |
+| 184 | [2026_WhiteLine](2026_WhiteLine/) | ✅ | 2026 | WhiteLine |
+| 185 | [2026_PersonalRedLines](2026_PersonalRedLines/) | ✅ | 2026 | PersonalRedLines |
+| 186 | [2026_GoldenLine](2026_GoldenLine/) | ✅ | 2026 | GoldenLine |
+| 187 | [2026_BlackLine](2026_BlackLine/) | ✅ | 2026 | BlackLine |
+| 188 | [2026_Codomyrmex](2026_Codomyrmex/) | ✅ | 2026 | Codomyrmex |
 ## Scripts
 
 All repository code lives under [`code/`](../code/); the per-folder docs in this directory are generated from `paper_metadata.json` by:

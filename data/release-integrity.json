@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-07-17T21:37:09+00:00",
-  "source_commit_at_generation": "580c0829ce704454fea99c2c56493741ebcd8f33",
+  "source_commit_at_generation": "fc48e551dd68af13574b1f504f477b623c14f1e0",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -20,30 +20,30 @@
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "a786c00e7929661d59ac4d169d136d5023941cab9b28e0bd8f694296b79def11",
+    "pages/BIBLIOGRAPHY.md": "7777a947f695d4be0509a9580124b74b7496f7141953ea5a005e155666552f9c",
     "pages/SOFTWARE.md": "06853c054fbd66e04eadfdd1031fa940ac75b5a49de98238f8ad89e24d07a46c",
     "resume/source.json": "9e2dd487986d64d10ab3b96fa20d8d8fb86b9196b75cb92149672d25f058c0a2",
-    "data/current-counts.json": "8134f6e11a6560b9cc640c1fe10a37cca84e76ba7fb3144a5c380254de15b3ff",
-    "data/coverage-exceptions.json": "b9323992735ed8e41f6ac2e14997700a2bf2e15a2930c5cce5314222a4ff4ac7",
+    "data/current-counts.json": "6f0c36b77e8a64faa5cb5d9cdc522b413f2d99c914b26218920c060be62006af",
+    "data/coverage-exceptions.json": "5d4a7bb7d6941d946305d0698f60dc12c8e7cde3202da17ba7fc07d2f8ccbb56",
     "data/repository-classification.json": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
-    "data/agent-index.json": "258c1f19d484891411c1a8f72c0060ac31c048b04f2e4d079214b2f1b05ba454",
-    "data/generated-manifest.json": "7ec1faccfb82d89dcf03776b4365036fa7cd36ec55023d36c1a4bbe67d20407d",
-    "data/pages-artifact-manifest.json": "5438c78a7d0554eea06e0ec4866e07c12ec3ff6940383eaa7e94345a2f2ebeb9"
+    "data/agent-index.json": "d6fce9b42c304076d5fc41a812aae9239d009d372281bc1ebbe82fcffbb89045",
+    "data/generated-manifest.json": "6a47830542e6bfeabeafb81ded08d00aaf0543be305495e4b54753ea019c167a",
+    "data/pages-artifact-manifest.json": "6544d0b467fed0aa5d9a5692f635ca7bf58ff0e3d5782e5829bd501ae554ea16"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "580c0829ce704454fea99c2c56493741ebcd8f33",
-    "artifact_file_count": 4370,
-    "artifact_bytes": 774208111,
+    "source_commit_at_generation": "fc48e551dd68af13574b1f504f477b623c14f1e0",
+    "artifact_file_count": 4377,
+    "artifact_bytes": 775369817,
     "omitted_paper_image_count": 9004
   },
   "deployment": {
-    "commit": "c67850e4afa44fbe68717a18ba52999026ee03ab",
-    "workflow_run_id": 30112225244,
-    "workflow_url": "https://github.com/docxology/docxology/actions/runs/30112225244",
+    "commit": "c6a52c9bd948f96d16db0f648dad5c7585f90003",
+    "workflow_run_id": 30721674449,
+    "workflow_url": "https://github.com/docxology/docxology/actions/runs/30721674449",
     "pages_status": "built",
-    "verification_report": "reports/live_site_verification_2026-07-24.json",
-    "verification_generated_at": "2026-07-24T17:16:29Z",
+    "verification_report": "reports/live_site_verification_2026-08-01.json",
+    "verification_generated_at": "2026-08-01T22:43:03Z",
     "verification_overall_ok": true,
     "verified_routes": "17/17",
     "deployment_pending": true,
@@ -56,14 +56,14 @@
     "policy": "No local filesystem paths, secret-like tokens, or unsafe URL schemes in public CV/source manifests."
   },
   "counts": {
-    "bibliography_docs_links": 181,
-    "bibliography_works": 198,
+    "bibliography_docs_links": 188,
+    "bibliography_works": 205,
     "domains": {
       "AII Ecosystem": 6,
       "Active Inference": 43,
       "Art & Synergetics": 16,
-      "Cognitive Security": 33,
-      "Computational": 47,
+      "Cognitive Security": 35,
+      "Computational": 52,
       "Entomology": 23,
       "Genetics & Biomedical": 15,
       "Presentations & Media": 15
@@ -71,10 +71,10 @@
     "extracted_images": 9004,
     "full_text_papers": 173,
     "generated_exports": {
-      "data_publications_ld_main_entity": 198,
+      "data_publications_ld_main_entity": 205,
       "data_software_json": 131,
       "data_software_ld_main_entity": 131,
-      "data_works_json": 198
+      "data_works_json": 205
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 40,
@@ -109,7 +109,7 @@
       "update_existing": 0,
       "zenodo_records": 135
     },
-    "paper_folder_docs": 181,
+    "paper_folder_docs": 188,
     "papers_with_images": 141,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
@@ -129,7 +129,7 @@
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 177,
+      "Papers": 184,
       "Playbooks": 2,
       "Presentations": 9,
       "Series": 2

@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**198 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**205 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**177** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**184** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **198** works in the table below **·** **181** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **205** works in the table below **·** **188** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -236,6 +236,13 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 197 | 2026 | 💻 | Paper | DuckRabbit: Typed Multimodal Illusion Generator | *Zenodo* | [10.5281/zenodo.21419693](https://doi.org/10.5281/zenodo.21419693) | [📁](../papers/2026_DuckRabbit/) | Daniel Ari Friedman |
 | 198 | 2026 | 💻 | Paper | SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer | *Zenodo* | [10.5281/zenodo.21418782](https://doi.org/10.5281/zenodo.21418782) | [📁](../papers/2026_SynthOBSFractiSynth/) | Friedman, Daniel Ari |
 | 199 | 2026 | 🧠 | Paper | Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings | *Zenodo* | [10.5281/zenodo.21695160](https://doi.org/10.5281/zenodo.21695160) | [📁](../papers/2026_ActiveInferencePower/) |
+| 200 | 2026 | 💻 | Paper | The Witness Register: Co-Registration Without Aggregation | *Zenodo* | [10.5281/zenodo.21754245](https://doi.org/10.5281/zenodo.21754245) | [📁](../papers/2026_WitnessRegister/) | Friedman, Daniel Ari |
+| 201 | 2026 | 💻 | Paper | The Line Set: Holding Instruments Apart | *Zenodo* | [10.5281/zenodo.21754243](https://doi.org/10.5281/zenodo.21754243) | [📁](../papers/2026_LineSet/) | Friedman, Daniel Ari |
+| 202 | 2026 | 💻 | Paper | White Line: A Typed Ledger for the Edge of the Claim | *Zenodo* | [10.5281/zenodo.21754241](https://doi.org/10.5281/zenodo.21754241) | [📁](../papers/2026_WhiteLine/) | Friedman, Daniel Ari |
+| 203 | 2026 | 🛡️ | Paper | Personal Red Lines for Development | *Zenodo* | [10.5281/zenodo.21754239](https://doi.org/10.5281/zenodo.21754239) | [📁](../papers/2026_PersonalRedLines/) | Friedman, Daniel Ari |
+| 204 | 2026 | 💻 | Paper | Golden Line: Toward What Matters | *Zenodo* | [10.5281/zenodo.21754237](https://doi.org/10.5281/zenodo.21754237) | [📁](../papers/2026_GoldenLine/) | Friedman, Daniel Ari |
+| 205 | 2026 | 🛡️ | Paper | Black Line: Strong Work in Public | *Zenodo* | [10.5281/zenodo.21754235](https://doi.org/10.5281/zenodo.21754235) | [📁](../papers/2026_BlackLine/) | Friedman, Daniel Ari |
+| 206 | 2026 | 💻 | Paper | Codomyrmex: An Artificial Ecology for Agentic Software Development | *Zenodo* | [10.5281/zenodo.21750800](https://doi.org/10.5281/zenodo.21750800) | [📁](../papers/2026_Codomyrmex/) | Friedman, Daniel Ari |
 ---
 
 ## Domain Index

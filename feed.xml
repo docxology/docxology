@@ -6,27 +6,76 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2026 17:57:29 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2026 15:19:41 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
       <guid isPermaLink="false">site-update-2026-05-15-repositories</guid>
-      <pubDate>Thu, 30 Jul 2026 17:57:29 +0000</pubDate>
+      <pubDate>Sun, 02 Aug 2026 15:19:41 +0000</pubDate>
       <description>Full generated GitHub repository inventory, refreshed evidence ledger, and stable freshness fact comparison added.</description>
     </item>
     <item>
       <title>Discovery, citation, evidence, and domain pages expanded</title>
       <link>https://danielarifriedman.com/discovery.html</link>
       <guid isPermaLink="false">site-update-2026-05-13-discovery</guid>
-      <pubDate>Thu, 30 Jul 2026 17:57:29 +0000</pubDate>
+      <pubDate>Sun, 02 Aug 2026 15:19:41 +0000</pubDate>
       <description>New machine-readable exports, evidence ledger, domain pages, and agentic discovery metadata.</description>
     </item>
     <item>
       <title>Per-work landing pages and search index generated</title>
       <link>https://danielarifriedman.com/works/</link>
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
-      <pubDate>Thu, 30 Jul 2026 17:57:29 +0000</pubDate>
+      <pubDate>Sun, 02 Aug 2026 15:19:41 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>Codomyrmex: An Artificial Ecology for Agentic Software Development</title>
+      <link>https://danielarifriedman.com/works/Friedman2026CodomyrmexArtificialEcologyAgentic206.html</link>
+      <guid isPermaLink="false">work-Friedman2026CodomyrmexArtificialEcologyAgentic206</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
+    </item>
+    <item>
+      <title>Black Line: Strong Work in Public</title>
+      <link>https://danielarifriedman.com/works/Friedman2026BlackLineStrongWork205.html</link>
+      <guid isPermaLink="false">work-Friedman2026BlackLineStrongWork205</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Cognitive Security · 2026</description>
+    </item>
+    <item>
+      <title>Golden Line: Toward What Matters</title>
+      <link>https://danielarifriedman.com/works/Friedman2026GoldenLineTowardWhat204.html</link>
+      <guid isPermaLink="false">work-Friedman2026GoldenLineTowardWhat204</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
+    </item>
+    <item>
+      <title>Personal Red Lines for Development</title>
+      <link>https://danielarifriedman.com/works/Friedman2026PersonalRedLinesDevelopment203.html</link>
+      <guid isPermaLink="false">work-Friedman2026PersonalRedLinesDevelopment203</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Cognitive Security · 2026</description>
+    </item>
+    <item>
+      <title>White Line: A Typed Ledger for the Edge of the Claim</title>
+      <link>https://danielarifriedman.com/works/Friedman2026WhiteLineTypedLedger202.html</link>
+      <guid isPermaLink="false">work-Friedman2026WhiteLineTypedLedger202</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
+    </item>
+    <item>
+      <title>The Line Set: Holding Instruments Apart</title>
+      <link>https://danielarifriedman.com/works/Friedman2026LineSetHoldingInstruments201.html</link>
+      <guid isPermaLink="false">work-Friedman2026LineSetHoldingInstruments201</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
+    </item>
+    <item>
+      <title>The Witness Register: Co-Registration Without Aggregation</title>
+      <link>https://danielarifriedman.com/works/Friedman2026WitnessRegisterCoRegistration200.html</link>
+      <guid isPermaLink="false">work-Friedman2026WitnessRegisterCoRegistration200</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings</title>
@@ -151,55 +200,6 @@
       <title>A Domain Language for Specifying Controlled Methods</title>
       <link>https://danielarifriedman.com/works/Friedman2026DomainLanguageSpecifyingControlled182.html</link>
       <guid isPermaLink="false">work-Friedman2026DomainLanguageSpecifyingControlled182</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Exploratory Data Analysis: A Reproducible Notebook Template</title>
-      <link>https://danielarifriedman.com/works/Friedman2026ExploratoryDataAnalysisReproducible181.html</link>
-      <guid isPermaLink="false">work-Friedman2026ExploratoryDataAnalysisReproducible181</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Sortition Upstream of NTQR</title>
-      <link>https://danielarifriedman.com/works/Friedman2026SortitionUpstreamNTQR180.html</link>
-      <guid isPermaLink="false">work-Friedman2026SortitionUpstreamNTQR180</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Mapping William Blake&#x27;s Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls</title>
-      <link>https://danielarifriedman.com/works/Friedman2026MappingWilliamBlakeS179.html</link>
-      <guid isPermaLink="false">work-Friedman2026MappingWilliamBlakeS179</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference</title>
-      <link>https://danielarifriedman.com/works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html</link>
-      <guid isPermaLink="false">work-Friedman2026AlphaCOGANTRecursiveCorporateSelf178</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition</title>
-      <link>https://danielarifriedman.com/works/Friedman2026RefinementGoldMetallurgicalAnalogy177.html</link>
-      <guid isPermaLink="false">work-Friedman2026RefinementGoldMetallurgicalAnalogy177</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>A Living Meta-Analysis of the Modafinil Literature</title>
-      <link>https://danielarifriedman.com/works/Friedman2026LivingMetaAnalysisModafinil176.html</link>
-      <guid isPermaLink="false">work-Friedman2026LivingMetaAnalysisModafinil176</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction</title>
-      <link>https://danielarifriedman.com/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html</link>
-      <guid isPermaLink="false">work-Friedman2026RealizingEmptinessOperationalSurrogates175</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>

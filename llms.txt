@@ -8,7 +8,7 @@ Wikidata: https://www.wikidata.org/wiki/Q138781444
 
 This repository is the public research and software index for Daniel Ari Friedman. It collects a curated bibliography, paper folders with README/AGENTS/SKILL documentation, software catalogs, collaborator maps, media references, public identifiers, and website metadata.
 
-Each paper folder under `papers/` may contain `full_text.md` (full page-level text extraction from the PDF or ODT/DOCX/PPTX source) and an `images/` subdirectory (extracted figures and images). Current totals are generated in `data/current-counts.json`; the latest snapshot records 181 paper folders, 173 full-text extractions, 141 image galleries, and 9,004 extracted images. Use `full_text.md` for full-text search, reading, and citation within agent workflows.
+Each paper folder under `papers/` may contain `full_text.md` (full page-level text extraction from the PDF or ODT/DOCX/PPTX source) and an `images/` subdirectory (extracted figures and images). Current totals are generated in `data/current-counts.json`; the latest snapshot records 188 paper folders, 173 full-text extractions, 141 image galleries, and 9,004 extracted images. Use `full_text.md` for full-text search, reading, and citation within agent workflows.
 
 ## Use These Pages First
 
@@ -82,10 +82,10 @@ Each paper folder under `papers/` may contain `full_text.md` (full page-level te
 - Reconciliation report: https://github.com/docxology/docxology/blob/main/reports/reconciliation_2026-07-21.md
 - External-link report: https://github.com/docxology/docxology/blob/main/reports/external_links_2026-05-15.json
 - External-link triage: https://github.com/docxology/docxology/blob/main/reports/external_links_triage_2026-05-15.md
-- Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-08-01.json
+- Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-08-02.json
 - Browser-smoke manifest: https://github.com/docxology/docxology/blob/main/reports/browser-smoke/2026-07-29/manifest.json
 - Live-site verification: https://github.com/docxology/docxology/blob/main/reports/live_site_verification_2026-07-24.json
-- Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-08-01.json
+- Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-08-02.json
 - Visual QA manifest: https://github.com/docxology/docxology/blob/main/reports/visual-qa/2026-07-18/manifest.json
 
 ## Public Crawl Policy

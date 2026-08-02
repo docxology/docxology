@@ -2,6 +2,22 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-08-02
+
+- **Seven new Zenodo publications catalogued** via `add_zenodo_only.py` as the DAF "line set" research-practice instruments plus a software release, each with full paper-folder documentation (README/AGENTS/SKILL/CITATION.cff/metadata.json + PDF) and regenerated downstream surfaces:
+  - **#200** The Witness Register: Co-Registration Without Aggregation (💻, `zenodo.21754245`)
+  - **#201** The Line Set: Holding Instruments Apart (💻, `zenodo.21754243`)
+  - **#202** White Line: A Typed Ledger for the Edge of the Claim (💻, `zenodo.21754241`)
+  - **#203** Personal Red Lines for Development (🛡️, `zenodo.21754239`)
+  - **#204** Golden Line: Toward What Matters (💻, `zenodo.21754237`)
+  - **#205** Black Line: Strong Work in Public (🛡️, `zenodo.21754235`)
+  - **#206** Codomyrmex: An Artificial Ecology for Agentic Software Development (💻, `zenodo.21750800`)
+- **Authors populated** on all seven new rows (Friedman, Daniel Ari).
+- **Zenodo uncatalogued queue cleared** (0 new remaining; the SynthOBS `21418901` and CogSecSkills `20804586` flags are stale-version duplicate detections of already-catalogued works and were intentionally not added; the AII-Ecosystem `17982447` non-canonical-DOI note remains the documented exception).
+- **GitHub paired-publication sync deferred**: `sync_paired_publications.py` could not complete due a GitHub API rate limit (HTTP 403). `codomyrmex`'s GitHub repo is already catalogued in `SOFTWARE.md` (Developer Tools); new line-set GitHub repos remain an open DOC-005 triage item pending a manual review pass.
+- Bibliography **199→206**; paper folders **181→188**.
+- CITATION.cff version/date-released bumped to `2026.08.02`.
+
 ## 2026-07-30
 
 - **One new Zenodo publication catalogued** via `add_zenodo_only.py`: **#199** Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings (🧠, `zenodo.21695160`), with full paper folder documentation and regenerated downstream surfaces.

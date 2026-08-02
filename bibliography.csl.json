@@ -6566,5 +6566,180 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21695160",
     "URL": "https://doi.org/10.5281/zenodo.21695160"
+  },
+  {
+    "id": "Friedman2026WitnessRegisterCoRegistration200",
+    "type": "article-journal",
+    "title": "The Witness Register: Co-Registration Without Aggregation",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 200; docs: papers/2026_WitnessRegister/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21754245",
+    "URL": "https://doi.org/10.5281/zenodo.21754245"
+  },
+  {
+    "id": "Friedman2026LineSetHoldingInstruments201",
+    "type": "article-journal",
+    "title": "The Line Set: Holding Instruments Apart",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 201; docs: papers/2026_LineSet/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21754243",
+    "URL": "https://doi.org/10.5281/zenodo.21754243"
+  },
+  {
+    "id": "Friedman2026WhiteLineTypedLedger202",
+    "type": "article-journal",
+    "title": "White Line: A Typed Ledger for the Edge of the Claim",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 202; docs: papers/2026_WhiteLine/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21754241",
+    "URL": "https://doi.org/10.5281/zenodo.21754241"
+  },
+  {
+    "id": "Friedman2026PersonalRedLinesDevelopment203",
+    "type": "article-journal",
+    "title": "Personal Red Lines for Development",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 203; docs: papers/2026_PersonalRedLines/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21754239",
+    "URL": "https://doi.org/10.5281/zenodo.21754239"
+  },
+  {
+    "id": "Friedman2026GoldenLineTowardWhat204",
+    "type": "article-journal",
+    "title": "Golden Line: Toward What Matters",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 204; docs: papers/2026_GoldenLine/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21754237",
+    "URL": "https://doi.org/10.5281/zenodo.21754237"
+  },
+  {
+    "id": "Friedman2026BlackLineStrongWork205",
+    "type": "article-journal",
+    "title": "Black Line: Strong Work in Public",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 205; docs: papers/2026_BlackLine/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21754235",
+    "URL": "https://doi.org/10.5281/zenodo.21754235"
+  },
+  {
+    "id": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
+    "type": "article-journal",
+    "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 206; docs: papers/2026_Codomyrmex/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21750800",
+    "URL": "https://doi.org/10.5281/zenodo.21750800"
   }
 ]

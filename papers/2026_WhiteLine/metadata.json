@@ -1,0 +1,44 @@
+{
+  "title": "White Line: A Typed Ledger for the Edge of the Claim",
+  "version": "0.7.0",
+  "doi": "10.5281/zenodo.21754241",
+  "doi_url": "https://doi.org/10.5281/zenodo.21754241",
+  "zenodo_record": "https://zenodo.org/records/21754241",
+  "record_id": "21754242",
+  "publication_date": "2026-08-02",
+  "resource_type": {
+    "title": "Working paper",
+    "type": "publication",
+    "subtype": "workingpaper"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A typed ledger for absence: epistemic gaps, ethical restraint, and contemplative negative space. It records what is missing, withheld, or unresolved under a total caution order, decays stale namings past their review horizons, and refuses to infer why anything is absent. Withholding is recorded as a boundary, never mined as missing evidence. Subtitle: Keeping missing evidence, ethical boundaries, and open questions from becoming unsupported claims Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+  "keywords": [
+    "absence",
+    "epistemic gaps",
+    "missing evidence",
+    "withheld material",
+    "uncertainty",
+    "negative results",
+    "research ethics",
+    "open science"
+  ],
+  "files": [
+    {
+      "name": "white_line_combined.pdf",
+      "size_bytes": 4173908,
+      "checksum": "md5:f55663e6dcb34cf6793741fd66682a67",
+      "download_url": "https://zenodo.org/api/records/21754242/files/white_line_combined.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-08-02T15:12:11Z"
+}

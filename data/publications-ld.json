@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 198 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 205 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -7710,6 +7710,230 @@
                 "url": "https://doi.org/10.5281/zenodo.21695160"
             },
             "sameAs": "https://doi.org/10.5281/zenodo.21695160"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "The Witness Register: Co-Registration Without Aggregation",
+            "headline": "The Witness Register: Co-Registration Without Aggregation",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026WitnessRegisterCoRegistration200.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026WitnessRegisterCoRegistration200.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026WitnessRegisterCoRegistration200.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21754245",
+                "url": "https://doi.org/10.5281/zenodo.21754245"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21754245"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "The Line Set: Holding Instruments Apart",
+            "headline": "The Line Set: Holding Instruments Apart",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026LineSetHoldingInstruments201.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026LineSetHoldingInstruments201.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026LineSetHoldingInstruments201.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21754243",
+                "url": "https://doi.org/10.5281/zenodo.21754243"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21754243"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "White Line: A Typed Ledger for the Edge of the Claim",
+            "headline": "White Line: A Typed Ledger for the Edge of the Claim",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026WhiteLineTypedLedger202.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026WhiteLineTypedLedger202.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026WhiteLineTypedLedger202.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21754241",
+                "url": "https://doi.org/10.5281/zenodo.21754241"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21754241"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Personal Red Lines for Development",
+            "headline": "Personal Red Lines for Development",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🛡️",
+            "@id": "https://danielarifriedman.com/works/Friedman2026PersonalRedLinesDevelopment203.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026PersonalRedLinesDevelopment203.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026PersonalRedLinesDevelopment203.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21754239",
+                "url": "https://doi.org/10.5281/zenodo.21754239"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21754239"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Golden Line: Toward What Matters",
+            "headline": "Golden Line: Toward What Matters",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026GoldenLineTowardWhat204.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026GoldenLineTowardWhat204.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026GoldenLineTowardWhat204.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21754237",
+                "url": "https://doi.org/10.5281/zenodo.21754237"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21754237"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Black Line: Strong Work in Public",
+            "headline": "Black Line: Strong Work in Public",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🛡️",
+            "@id": "https://danielarifriedman.com/works/Friedman2026BlackLineStrongWork205.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026BlackLineStrongWork205.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026BlackLineStrongWork205.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21754235",
+                "url": "https://doi.org/10.5281/zenodo.21754235"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21754235"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+            "headline": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026CodomyrmexArtificialEcologyAgentic206.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026CodomyrmexArtificialEcologyAgentic206.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026CodomyrmexArtificialEcologyAgentic206.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21750800",
+                "url": "https://doi.org/10.5281/zenodo.21750800"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21750800"
         }
     ]
 }

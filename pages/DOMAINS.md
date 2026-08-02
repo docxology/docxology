@@ -86,7 +86,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 
 Narrative ecosystems, information commons, digital rhetoric, and multiagent security.
 
-- Works: 33
+- Works: 35
 - Selected repositories: 4
 - Collaborator context: RJ Cordes, Carlos Gershenson, Micah Musser
 
@@ -103,7 +103,7 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 - 2026 — [California Public Records: A Technical and Legal Reference for the Post-AB 473 Era](https://doi.org/10.5281/zenodo.20789899)
 - 2026 — [CogSecSkills: Multiharness Agentic Skills for Cognitive Security](https://doi.org/10.5281/zenodo.21513316)
 - 2026 — [Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations](https://doi.org/10.5281/zenodo.21330636)
-- 2024 — [Bridging gaps in image meme research: A multidisciplinary paradigm](https://doi.org/10.1002/asi.24900)
+- 2026 — [Personal Red Lines for Development](https://doi.org/10.5281/zenodo.21754239)
 
 **Selected repositories**
 
@@ -148,7 +148,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 47
+- Works: 52
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 

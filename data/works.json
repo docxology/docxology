@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-30T17:57:17Z",
+  "generated_at": "2026-08-02T15:19:30Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
-  "count": 198,
+  "count": 205,
   "works": [
     {
       "num": 1,
@@ -4943,6 +4943,167 @@
       "has_readme": true,
       "full_text_url": "",
       "authors": []
+    },
+    {
+      "num": 200,
+      "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "The Witness Register: Co-Registration Without Aggregation",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21754245",
+      "doi": "10.5281/zenodo.21754245",
+      "docs_path": "papers/2026_WitnessRegister/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 201,
+      "citation_key": "Friedman2026LineSetHoldingInstruments201",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "The Line Set: Holding Instruments Apart",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21754243",
+      "doi": "10.5281/zenodo.21754243",
+      "docs_path": "papers/2026_LineSet/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 202,
+      "citation_key": "Friedman2026WhiteLineTypedLedger202",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21754241",
+      "doi": "10.5281/zenodo.21754241",
+      "docs_path": "papers/2026_WhiteLine/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 203,
+      "citation_key": "Friedman2026PersonalRedLinesDevelopment203",
+      "year": 2026,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Personal Red Lines for Development",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21754239",
+      "doi": "10.5281/zenodo.21754239",
+      "docs_path": "papers/2026_PersonalRedLines/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 204,
+      "citation_key": "Friedman2026GoldenLineTowardWhat204",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Golden Line: Toward What Matters",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21754237",
+      "doi": "10.5281/zenodo.21754237",
+      "docs_path": "papers/2026_GoldenLine/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 205,
+      "citation_key": "Friedman2026BlackLineStrongWork205",
+      "year": 2026,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "Black Line: Strong Work in Public",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21754235",
+      "doi": "10.5281/zenodo.21754235",
+      "docs_path": "papers/2026_BlackLine/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 206,
+      "citation_key": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21750800",
+      "doi": "10.5281/zenodo.21750800",
+      "docs_path": "papers/2026_Codomyrmex/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     }
   ]
 }

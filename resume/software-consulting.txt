@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-07-30T18:02:29Z
+Generated: 2026-08-02T15:19:30Z
 
-Current public metrics: 198 curated works; 131 catalogued software repositories (93 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 347 docxology + 40 AII public repositories (142 primary, 245 forks).
+Current public metrics: 205 curated works; 131 catalogued software repositories (93 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 347 docxology + 40 AII public repositories (142 primary, 245 forks).
 
 SUMMARY
 -------
@@ -54,7 +54,7 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (191)
+WORKS AND PUBLICATIONS (198)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
@@ -247,6 +247,13 @@ WORKS AND PUBLICATIONS (191)
 [197] 2026 | Paper | DuckRabbit: Typed Multimodal Illusion Generator | Zenodo | 10.5281/zenodo.21419693
 [198] 2026 | Paper | SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer | Zenodo | 10.5281/zenodo.21418782
 [199] 2026 | Paper | Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings | Zenodo | 10.5281/zenodo.21695160
+[200] 2026 | Paper | The Witness Register: Co-Registration Without Aggregation | Zenodo | 10.5281/zenodo.21754245
+[201] 2026 | Paper | The Line Set: Holding Instruments Apart | Zenodo | 10.5281/zenodo.21754243
+[202] 2026 | Paper | White Line: A Typed Ledger for the Edge of the Claim | Zenodo | 10.5281/zenodo.21754241
+[203] 2026 | Paper | Personal Red Lines for Development | Zenodo | 10.5281/zenodo.21754239
+[204] 2026 | Paper | Golden Line: Toward What Matters | Zenodo | 10.5281/zenodo.21754237
+[205] 2026 | Paper | Black Line: Strong Work in Public | Zenodo | 10.5281/zenodo.21754235
+[206] 2026 | Paper | Codomyrmex: An Artificial Ecology for Agentic Software Development | Zenodo | 10.5281/zenodo.21750800
 
 SOFTWARE (131)
 --------------
