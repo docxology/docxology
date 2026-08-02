@@ -18,7 +18,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#works",
       "name": "Curated Works Bibliography",
-      "description": "206 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
+      "description": "204 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
       "url": "https://danielarifriedman.com/data/works.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -409,7 +409,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#full-text-corpus",
       "name": "Full-Text Extraction Corpus",
-      "description": "173 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 141 images/ subdirectories with 9,004 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
+      "description": "171 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 139 images/ subdirectories with 8,886 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
       "url": "https://danielarifriedman.com/papers/",
       "encodingFormat": "application/json",
       "creator": {

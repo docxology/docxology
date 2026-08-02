@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T21:08:27Z",
+  "generated_at": "2026-08-02T22:56:41Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,17 +61,17 @@
     }
   ],
   "max_score": 6,
-  "work_count": 206,
+  "work_count": 204,
   "signal_totals": {
-    "persistent_id": 191,
-    "public_archive": 149,
-    "open_full_text": 173,
-    "source_documents": 189,
+    "persistent_id": 189,
+    "public_archive": 147,
+    "open_full_text": 171,
+    "source_documents": 187,
     "executable_code": 28,
-    "agent_readable": 189
+    "agent_readable": 187
   },
   "band_counts": {
-    "independently reproducible": 134,
+    "independently reproducible": 132,
     "independently checkable": 55,
     "citable only": 8,
     "unverified": 9
@@ -82,10 +82,10 @@
     "2": 4,
     "3": 8,
     "4": 47,
-    "5": 109,
+    "5": 107,
     "6": 25
   },
-  "mean_score": 4.461,
+  "mean_score": 4.456,
   "works": [
     {
       "num": 10,
@@ -1133,25 +1133,6 @@
       "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees",
       "year": 2023,
       "domain_name": "Entomology",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 49,
-      "citation_key": "Friedman2023ATLASQuestionOrientedApproach049",
-      "title": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",
-      "year": 2023,
-      "domain_name": "Cognitive Security",
       "type": "Paper",
       "score": 5,
       "band": "independently reproducible",
@@ -2618,25 +2599,6 @@
       "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
       "year": 2026,
       "domain_name": "Active Inference",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 193,
-      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
-      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-      "year": 2026,
-      "domain_name": "Computational",
       "type": "Paper",
       "score": 5,
       "band": "independently reproducible",

@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**206 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**204 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**185** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**183** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **206** works in the table below **·** **189** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **204** works in the table below **·** **187** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -86,7 +86,6 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 46 | 2023 | 🐜 | Paper | A single-pheromone model accounts for empirical patterns of ant colony foraging | *Cognitive Systems Research* | [10.1016/j.cogsys.2023.02.005](https://doi.org/10.1016/j.cogsys.2023.02.005) | [📁](../papers/2023_SinglePheromone/) | Saund, Eric; Ari Friedman, Daniel |
 | 47 | 2023 | 🐜 | Paper | A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees | *Zenodo* | [10.5281/zenodo.10400744](https://doi.org/10.5281/zenodo.10400744) | [📁](../papers/2023_HoneyBeeGeneExpression/) | Friedman, Daniel Ari; Tong, Chao; Linksvayer, Timothy A.; Freund, Matthias; Keough, Nicole Weronika; Johnson, Brian |
 | 48 | 2023 | 🧠 | Paper | A variational synthesis of evolutionary and developmental dynamics | *Entropy* | [10.3390/e25070964](https://doi.org/10.3390/e25070964) | [📁](../papers/2023_VariationalSynthesis/) | Friston, Karl; Friedman, Daniel A.; Constant, Axel; Knight, V. Bleu; Fields, Chris; Parr, Thomas; Campbell, John O. |
-| 49 | 2023 | 🛡️ | Paper | ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management | *Zenodo* | [10.5281/zenodo.10296601](https://doi.org/10.5281/zenodo.10296601) | [📁](../papers/2023_ATLAS/) | Cordes, R.J.; David, Scott; Friedman, Daniel; Mikhailova, Alexandra; Penland, Andrew; Young, Sam; Zacharias, Colten |
 | 50 | 2023 | 🧠 | Paper | An Account of Active Inference Modeling | *Zenodo* | [10.5281/zenodo.8415312](https://doi.org/10.5281/zenodo.8415312) | [📁](../papers/2023_AccountActiveInference/) | Friedman, Daniel Ari |
 | 51 | 2023 | 🛡️ | Paper | Cognitive Sovereignty & Active Inference in the State of Exception | *Zenodo* | [10.5281/zenodo.10038231](https://doi.org/10.5281/zenodo.10038231) | [📁](../papers/2023_CognitiveSovereignty/) | Friedman, Daniel Ari |
 | 52 | 2023 | 🛡️ | Paper | Comments on AI Accountability Policy to NTIA | *NTIA* | [10.5281/zenodo.8025956](https://doi.org/10.5281/zenodo.8025956) | [📁](../papers/2023_AIAccountability/) | David, Scott; Abu-Ghazaleh, Jumana; Friedman, Daniel; Cordes, RJ |
@@ -229,7 +228,6 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 190 | 2026 | 🧠 | Paper | Pools, Rules, and Tools: A Template-Integrated Resource Architecture | *Zenodo* | [10.5281/zenodo.21298888](https://doi.org/10.5281/zenodo.21298888) | [📁](../papers/2026_PoolsRulesTools/) | Daniel Ari Friedman |
 | 191 | 2026 | 🐜 | Paper | Illegal States, Mostly Unrepresentable | *Zenodo* | [10.5281/zenodo.21298885](https://doi.org/10.5281/zenodo.21298885) | [📁](../papers/2026_IllegalStatesMostly/) | Daniel Ari Friedman |
 | 192 | 2026 | 🧠 | Paper | Data Descriptor Template: Schema, Provenance, and Release Readiness | *Zenodo* | [10.5281/zenodo.21298883](https://doi.org/10.5281/zenodo.21298883) | [📁](../papers/2026_DataDescriptorTemplate/) | Daniel Ari Friedman |
-| 193 | 2026 | 💻 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | *Zenodo* | [10.5281/zenodo.19139089](https://doi.org/10.5281/zenodo.19139089) | [📁](../papers/2026_TemplateApproachReproducible2/) | Friedman, Daniel Ari |
 | 194 | 2026 | 🧠 | Paper | Prior Cognitive Art | *Zenodo* | [10.5281/zenodo.21316510](https://doi.org/10.5281/zenodo.21316510) | [📁](../papers/2026_PriorCognitiveArt/) | Daniel Ari Friedman |
 | 195 | 2026 | 🛡️ | Paper | Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations | *Zenodo* | [10.5281/zenodo.21330636](https://doi.org/10.5281/zenodo.21330636) | [📁](../papers/2026_ActiveFractalRabbit/) | Daniel Ari Friedman |
 | 196 | 2026 | 🎨 | Paper | Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing | *Zenodo* | [10.5281/zenodo.21388456](https://doi.org/10.5281/zenodo.21388456) | [📁](../papers/2026_FourfoldVision/) | Daniel Ari Friedman |

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T15:19:35Z",
+  "generated_at": "2026-08-02T22:55:26Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -3779,11 +3779,11 @@
           "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html"
         },
         {
-          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
+          "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+          "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
+          "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
         }
       ]
     },
@@ -3852,11 +3852,11 @@
           "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html"
         },
         {
-          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
+          "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+          "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
+          "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
         }
       ]
     },
@@ -7007,11 +7007,11 @@
           "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html"
         },
         {
-          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
+          "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+          "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
+          "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
         }
       ]
     },
@@ -14998,11 +14998,11 @@
           "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html"
         },
         {
-          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
+          "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+          "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
+          "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
         }
       ]
     },
@@ -55645,13 +55645,6 @@
           "url": "/works/Friedman2023PostdocReview20202023060.html"
         },
         {
-          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
-        },
-        {
           "title": "Autopoietic Project Generation",
           "citation_key": "Friedman2026AutopoieticProjectGeneration185",
           "year": 2026,
@@ -55664,6 +55657,13 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026BoundedAutoResearchTinyReproducible120.html"
+        },
+        {
+          "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+          "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html"
         }
       ]
     },
@@ -56764,13 +56764,6 @@
           "url": "/works/Friedman2023ATLASQuestionOrientedApproach136.html"
         },
         {
-          "title": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",
-          "citation_key": "Friedman2023ATLASQuestionOrientedApproach049",
-          "year": 2023,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2023ATLASQuestionOrientedApproach049.html"
-        },
-        {
           "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees",
           "citation_key": "Friedman2023SnapshotPipelineTissueSpecific047",
           "year": 2023,
@@ -56783,6 +56776,13 @@
           "year": 2023,
           "domain": "Computational",
           "url": "/works/Friedman2023EnhancedNSFPostdoctoralReporting054.html"
+        },
+        {
+          "title": "Generalized Notation Notation for Active Inference Models",
+          "citation_key": "Friedman2023GeneralizedNotationNotationActive056",
+          "year": 2023,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2023GeneralizedNotationNotationActive056.html"
         }
       ]
     },
@@ -76736,18 +76736,18 @@
           "url": "/works/Friedman2024ActiveInferenceInstituteActive041.html"
         },
         {
-          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
-        },
-        {
           "title": "Autopoietic Project Generation",
           "citation_key": "Friedman2026AutopoieticProjectGeneration185",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026AutopoieticProjectGeneration185.html"
+        },
+        {
+          "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+          "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible120",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026BoundedAutoResearchTinyReproducible120.html"
         }
       ]
     },
@@ -87616,11 +87616,11 @@
           "url": "/works/Friedman2026TemplateApproachReproducibleGenerative001.html"
         },
         {
-          "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-          "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T21:01:46Z",
+  "generated_at": "2026-08-02T22:55:22Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 206,
+    "works": 204,
     "software_catalogued": 132,
     "owned_software_catalogued": 94,
     "aii_software_catalogued": 38,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "0676cca4d05fdb421ab75b1067f31b69e36b119e2071c0900ce476f8acaa8844",
+      "sha256": "665b30ba1c71d2a13ca586ec128c79872291df9e424685ac3dbf28b6be7533a5",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 165974,
-          "sha256": "de3a16d46919fccccd39d2fc0d3eb4be83d2b42861521aec98617a88457a9174"
+          "bytes": 164205,
+          "sha256": "ed30c91d98fd27ecc8f0bc33cd1834b4e0b9f2c7443af34a88c04247dd1a84aa"
         },
         {
           "path": "data/software.json",
           "bytes": 63212,
-          "sha256": "9cabde80d8d0398738b226559d86328e8301c57693359b94696fa72948461454"
+          "sha256": "50fec8d4274f553a58cfd13254cd52ca2b624af7886dbb3ee75f3374658c6fc2"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 11914,
-          "sha256": "288c186ae9840a6a4a81fa0365cd5937a135c23e5895f6ca40497f5172365a0d"
+          "sha256": "5116775ca1c2e45ba3579c47395b7a65dd0caa898d3854c5f3efcaa230e26271"
         },
         {
           "path": "data/github-repositories.json",
@@ -3585,35 +3585,6 @@
         "Fields, Chris",
         "Parr, Thomas",
         "Campbell, John O."
-      ]
-    },
-    {
-      "num": 49,
-      "citation_key": "Friedman2023ATLASQuestionOrientedApproach049",
-      "year": 2023,
-      "domain": "🛡️",
-      "domain_name": "Cognitive Security",
-      "type": "Paper",
-      "title": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",
-      "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.10296601",
-      "doi": "10.5281/zenodo.10296601",
-      "docs_path": "papers/2023_ATLAS/",
-      "has_paper_folder": true,
-      "has_full_text": true,
-      "has_images": true,
-      "has_skill_md": true,
-      "has_agents_md": true,
-      "has_readme": true,
-      "full_text_url": "/papers/2023_ATLAS/full_text.md",
-      "authors": [
-        "Cordes, R.J.",
-        "David, Scott",
-        "Friedman, Daniel",
-        "Mikhailova, Alexandra",
-        "Penland, Andrew",
-        "Young, Sam",
-        "Zacharias, Colten"
       ]
     },
     {
@@ -7092,29 +7063,6 @@
       ]
     },
     {
-      "num": 193,
-      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative193",
-      "year": 2026,
-      "domain": "💻",
-      "domain_name": "Computational",
-      "type": "Paper",
-      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-      "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.19139089",
-      "doi": "10.5281/zenodo.19139089",
-      "docs_path": "papers/2026_TemplateApproachReproducible2/",
-      "has_paper_folder": true,
-      "has_full_text": true,
-      "has_images": true,
-      "has_skill_md": true,
-      "has_agents_md": true,
-      "has_readme": true,
-      "full_text_url": "/papers/2026_TemplateApproachReproducible2/full_text.md",
-      "authors": [
-        "Friedman, Daniel Ari"
-      ]
-    },
-    {
       "num": 194,
       "citation_key": "Friedman2026PriorCognitiveArt194",
       "year": 2026,
@@ -9024,14 +8972,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 206 works.",
+      "claim": "The curated bibliography contains 204 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-02T21:01:34+00:00",
+      "checked_at": "2026-08-02T22:55:22+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9039,14 +8987,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 189 per-paper documentation folders.",
+      "claim": "The repository contains 187 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-02T21:01:34+00:00",
+      "checked_at": "2026-08-02T22:55:22+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

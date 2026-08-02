@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-08-02T21:01:46Z
+Generated: 2026-08-02T22:55:22Z
 
-Current public metrics: 206 curated works; 132 catalogued software repositories (94 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 347 docxology + 40 AII public repositories (142 primary, 245 forks).
+Current public metrics: 204 curated works; 132 catalogued software repositories (94 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 347 docxology + 40 AII public repositories (142 primary, 245 forks).
 
 SUMMARY
 -------
@@ -162,7 +162,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (206)
+WORKS AND PUBLICATIONS (204)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -212,7 +212,6 @@ WORKS AND PUBLICATIONS (206)
 [046] 2023 | Paper | A single-pheromone model accounts for empirical patterns of ant colony foraging | Cognitive Systems Research | 10.1016/j.cogsys.2023.02.005
 [047] 2023 | Paper | A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees | Zenodo | 10.5281/zenodo.10400744
 [048] 2023 | Paper | A variational synthesis of evolutionary and developmental dynamics | Entropy | 10.3390/e25070964
-[049] 2023 | Paper | ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management | Zenodo | 10.5281/zenodo.10296601
 [050] 2023 | Paper | An Account of Active Inference Modeling | Zenodo | 10.5281/zenodo.8415312
 [051] 2023 | Paper | Cognitive Sovereignty & Active Inference in the State of Exception | Zenodo | 10.5281/zenodo.10038231
 [052] 2023 | Paper | Comments on AI Accountability Policy to NTIA | NTIA | 10.5281/zenodo.8025956
@@ -355,7 +354,6 @@ WORKS AND PUBLICATIONS (206)
 [190] 2026 | Paper | Pools, Rules, and Tools: A Template-Integrated Resource Architecture | Zenodo | 10.5281/zenodo.21298888
 [191] 2026 | Paper | Illegal States, Mostly Unrepresentable | Zenodo | 10.5281/zenodo.21298885
 [192] 2026 | Paper | Data Descriptor Template: Schema, Provenance, and Release Readiness | Zenodo | 10.5281/zenodo.21298883
-[193] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.19139089
 [194] 2026 | Paper | Prior Cognitive Art | Zenodo | 10.5281/zenodo.21316510
 [195] 2026 | Paper | Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations | Zenodo | 10.5281/zenodo.21330636
 [196] 2026 | Paper | Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing | Zenodo | 10.5281/zenodo.21388456

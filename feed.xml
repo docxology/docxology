@@ -6,26 +6,26 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Aug 2026 21:00:29 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2026 22:55:31 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
       <guid isPermaLink="false">site-update-2026-05-15-repositories</guid>
-      <pubDate>Sun, 02 Aug 2026 21:00:29 +0000</pubDate>
+      <pubDate>Sun, 02 Aug 2026 22:55:31 +0000</pubDate>
       <description>Full generated GitHub repository inventory, refreshed evidence ledger, and stable freshness fact comparison added.</description>
     </item>
     <item>
       <title>Discovery, citation, evidence, and domain pages expanded</title>
       <link>https://danielarifriedman.com/discovery.html</link>
       <guid isPermaLink="false">site-update-2026-05-13-discovery</guid>
-      <pubDate>Sun, 02 Aug 2026 21:00:29 +0000</pubDate>
+      <pubDate>Sun, 02 Aug 2026 22:55:31 +0000</pubDate>
       <description>New machine-readable exports, evidence ledger, domain pages, and agentic discovery metadata.</description>
     </item>
     <item>
       <title>Per-work landing pages and search index generated</title>
       <link>https://danielarifriedman.com/works/</link>
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
-      <pubDate>Sun, 02 Aug 2026 21:00:29 +0000</pubDate>
+      <pubDate>Sun, 02 Aug 2026 22:55:31 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
     </item>
     <item>
@@ -127,13 +127,6 @@
       <description>Paper · Zenodo · Active Inference · 2026</description>
     </item>
     <item>
-      <title>A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication</title>
-      <link>https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative193.html</link>
-      <guid isPermaLink="false">work-Friedman2026TemplateApproachReproducibleGenerative193</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
       <title>Data Descriptor Template: Schema, Provenance, and Release Readiness</title>
       <link>https://danielarifriedman.com/works/Friedman2026DataDescriptorTemplateSchema192.html</link>
       <guid isPermaLink="false">work-Friedman2026DataDescriptorTemplateSchema192</guid>
@@ -200,6 +193,13 @@
       <title>Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon</title>
       <link>https://danielarifriedman.com/works/Friedman2026EntomologicalLawFieldMap183.html</link>
       <guid isPermaLink="false">work-Friedman2026EntomologicalLawFieldMap183</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
+    </item>
+    <item>
+      <title>A Domain Language for Specifying Controlled Methods</title>
+      <link>https://danielarifriedman.com/works/Friedman2026DomainLanguageSpecifyingControlled182.html</link>
+      <guid isPermaLink="false">work-Friedman2026DomainLanguageSpecifyingControlled182</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>

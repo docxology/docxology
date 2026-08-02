@@ -1911,55 +1911,6 @@
     "URL": "https://doi.org/10.3390/e25070964"
   },
   {
-    "id": "Friedman2023ATLASQuestionOrientedApproach049",
-    "type": "article-journal",
-    "title": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",
-    "author": [
-      {
-        "family": "Cordes",
-        "given": "R.J."
-      },
-      {
-        "family": "David",
-        "given": "Scott"
-      },
-      {
-        "family": "Friedman",
-        "given": "Daniel"
-      },
-      {
-        "family": "Mikhailova",
-        "given": "Alexandra"
-      },
-      {
-        "family": "Penland",
-        "given": "Andrew"
-      },
-      {
-        "family": "Young",
-        "given": "Sam"
-      },
-      {
-        "family": "Zacharias",
-        "given": "Colten"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2023
-        ]
-      ]
-    },
-    "genre": "Paper",
-    "keyword": "Cognitive Security; Paper",
-    "note": "Catalog row 49; docs: papers/2023_ATLAS/",
-    "container-title": "Zenodo",
-    "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.10296601",
-    "URL": "https://doi.org/10.5281/zenodo.10296601"
-  },
-  {
     "id": "Friedman2023AccountActiveInferenceModeling050",
     "type": "article-journal",
     "title": "An Account of Active Inference Modeling",
@@ -6395,31 +6346,6 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21298883",
     "URL": "https://doi.org/10.5281/zenodo.21298883"
-  },
-  {
-    "id": "Friedman2026TemplateApproachReproducibleGenerative193",
-    "type": "article-journal",
-    "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-    "author": [
-      {
-        "family": "Friedman",
-        "given": "Daniel Ari"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2026
-        ]
-      ]
-    },
-    "genre": "Paper",
-    "keyword": "Computational; Paper",
-    "note": "Catalog row 193; docs: papers/2026_TemplateApproachReproducible2/",
-    "container-title": "Zenodo",
-    "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.19139089",
-    "URL": "https://doi.org/10.5281/zenodo.19139089"
   },
   {
     "id": "Friedman2026PriorCognitiveArt194",

@@ -752,24 +752,6 @@ N1  - Catalog row 48; docs: papers/2023_VariationalSynthesis/
 ER  -
 
 TY  - JOUR
-AU  - Cordes, R.J.
-AU  - David, Scott
-AU  - Friedman, Daniel
-AU  - Mikhailova, Alexandra
-AU  - Penland, Andrew
-AU  - Young, Sam
-AU  - Zacharias, Colten
-PY  - 2023
-TI  - ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management
-T2  - Zenodo
-DO  - 10.5281/zenodo.10296601
-UR  - https://doi.org/10.5281/zenodo.10296601
-KW  - Cognitive Security
-KW  - Paper
-N1  - Catalog row 49; docs: papers/2023_ATLAS/
-ER  -
-
-TY  - JOUR
 AU  - Friedman, Daniel Ari
 PY  - 2023
 TI  - An Account of Active Inference Modeling
@@ -2693,18 +2675,6 @@ UR  - https://doi.org/10.5281/zenodo.21298883
 KW  - Active Inference
 KW  - Paper
 N1  - Catalog row 192; docs: papers/2026_DataDescriptorTemplate/
-ER  -
-
-TY  - JOUR
-AU  - Friedman, Daniel Ari
-PY  - 2026
-TI  - A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication
-T2  - Zenodo
-DO  - 10.5281/zenodo.19139089
-UR  - https://doi.org/10.5281/zenodo.19139089
-KW  - Computational
-KW  - Paper
-N1  - Catalog row 193; docs: papers/2026_TemplateApproachReproducible2/
 ER  -
 
 TY  - JOUR

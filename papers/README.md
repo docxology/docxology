@@ -9,7 +9,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software triage, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (189)
+## Papers (187)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|
@@ -54,7 +54,6 @@ For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software 
 | 39 | [2022_TrustFinder](2022_TrustFinder/) | ✅ | 2022 | TrustFinder |
 | 40 | [2023_AIAccountability](2023_AIAccountability/) | ✅ | 2023 | AIAccountability |
 | 41 | [2023_AII_v1](2023_AII_v1/) | ✅ | 2023 | AII_v1 |
-| 42 | [2023_ATLAS](2023_ATLAS/) | ✅ | 2023 | ATLAS |
 | 43 | [2023_AccountActiveInference](2023_AccountActiveInference/) | ✅ | 2023 | AccountActiveInference |
 | 44 | [2023_AntsAging](2023_AntsAging/) | ✅ | 2023 | AntsAging |
 | 45 | [2023_BlakeFuller](2023_BlakeFuller/) | ✅ | 2023 | BlakeFuller |
@@ -187,7 +186,6 @@ For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software 
 | 172 | [2026_PoolsRulesTools](2026_PoolsRulesTools/) | ✅ | 2026 | PoolsRulesTools |
 | 173 | [2026_IllegalStatesMostly](2026_IllegalStatesMostly/) | ✅ | 2026 | IllegalStatesMostly |
 | 174 | [2026_DataDescriptorTemplate](2026_DataDescriptorTemplate/) | ✅ | 2026 | DataDescriptorTemplate |
-| 175 | [2026_TemplateApproachReproducible2](2026_TemplateApproachReproducible2/) | ✅ | 2026 | TemplateApproachReproducible2 |
 | 176 | [2026_PriorCognitiveArt](2026_PriorCognitiveArt/) | ✅ | 2026 | PriorCognitiveArt |
 | 177 | [2026_ActiveFractalRabbit](2026_ActiveFractalRabbit/) | ✅ | 2026 | ActiveFractalRabbit |
 | 178 | [2026_FourfoldVision](2026_FourfoldVision/) | ✅ | 2026 | FourfoldVision |

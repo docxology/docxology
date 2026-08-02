@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T21:00:29Z",
+  "generated_at": "2026-08-02T22:55:31Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1668,
+  "count": 1666,
   "items": [
     {
       "id": "page:home",
@@ -1599,31 +1599,6 @@
       ],
       "content": "A variational synthesis of evolutionary and developmental dynamics Friston, Karl Friedman, Daniel A. Constant, Axel Knight, V. Bleu Fields, Chris Parr, Thomas Campbell, John O. Karl Friston Daniel A. Friedman Axel Constant V. Bleu Knight Chris Fields Thomas Parr John O. Campbell Entropy 10.3390/e25070964 Friedman2023VariationalSynthesisEvolutionaryDevelopmental048 Active Inference Paper This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic processes. The main result is a formulation of adaptive fitness as a path integral of phenotypic fitness, unifying evolutionary and developmental dynamics through the Free Energy Principle. variational synthesis natural selection Free Energy Principle Bayesian mechanics path integral evo-devo adaptive fitness particular partition This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc Free energy minimization Bayesian modeling and inference",
       "image_count": 7
-    },
-    {
-      "id": "work:Friedman2023ATLASQuestionOrientedApproach049",
-      "type": "work",
-      "title": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",
-      "url": "/works/Friedman2023ATLASQuestionOrientedApproach049.html",
-      "external_url": "https://doi.org/10.5281/zenodo.10296601",
-      "full_text_url": "/papers/2023_ATLAS/full_text.md",
-      "summary": "The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-oriented pattern languages to address the complexities of modern informatio",
-      "year": 2023,
-      "domain": "Cognitive Security",
-      "tags": [
-        "Paper",
-        "Cognitive Security",
-        "bibliography",
-        "ATLAS",
-        "pattern languages",
-        "knowledge management",
-        "question-oriented approach",
-        "information architecture",
-        "decision support",
-        "cognitive tools"
-      ],
-      "content": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management Cordes, R.J. David, Scott Friedman, Daniel Mikhailova, Alexandra Penland, Andrew Young, Sam Zacharias, Colten R.J. Cordes Scott David Daniel Friedman Alexandra Mikhailova Andrew Penland Sam Young Colten Zacharias Zenodo 10.5281/zenodo.10296601 Friedman2023ATLASQuestionOrientedApproach049 Cognitive Security Paper The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-oriented pattern languages to address the complexities of modern information environments. Evolving since the late 1990s, ATLAS provides structured methods for organizing knowledge through patterns of questions that guide analysis and decision-making... ATLAS pattern languages knowledge management question-oriented approach information architecture decision support cognitive tools The ATLAS (A Question Oriented Approach to Pattern Languages) system is a dynamic and comprehensive knowledge management tool that uses question-oriented pattern languages to address the complexities. Narrative analysis Trust and integrity modeling",
-      "image_count": 16
     },
     {
       "id": "work:Friedman2023AccountActiveInferenceModeling050",
@@ -4914,25 +4889,6 @@
       ],
       "content": "Data Descriptor Template: Schema, Provenance, and Release Readiness Daniel Ari Friedman Zenodo 10.5281/zenodo.21298883 Friedman2026DataDescriptorTemplateSchema192 Active Inference Paper This exemplar demonstrates a data descriptor workflow in which the schema, file inventory, provenance chain, license boundary, and validation gate are treated as first-class research artifacts rather than afterthoughts. It ships a small, public, synthetic demonstration dataset (two CSV files under data/fixtures/) and a machine-readable descriptor (data/example descriptor.json) that declares each... data descriptor FAIR data provenance schema validation See full paper for detailed findings and analysis Literature review Theoretical analysis",
       "image_count": 5
-    },
-    {
-      "id": "work:Friedman2026TemplateApproachReproducibleGenerative193",
-      "type": "work",
-      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-      "url": "/works/Friedman2026TemplateApproachReproducibleGenerative193.html",
-      "external_url": "https://doi.org/10.5281/zenodo.19139089",
-      "full_text_url": "/papers/2026_TemplateApproachReproducible2/full_text.md",
-      "summary": "The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechani",
-      "year": 2026,
-      "domain": "Computational",
-      "tags": [
-        "Paper",
-        "Computational",
-        "bibliography",
-        "TemplateApproachReproducible2"
-      ],
-      "content": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication Friedman, Daniel Ari Daniel Ari Friedman Zenodo 10.5281/zenodo.19139089 Friedman2026TemplateApproachReproducibleGenerative193 Computational Paper The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and manuscript synchronized. Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only... TemplateApproachReproducible2 See full paper for detailed findings and analysis Literature review Theoretical analysis",
-      "image_count": 102
     },
     {
       "id": "work:Friedman2026PriorCognitiveArt194",
@@ -10316,7 +10272,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#141 ~ An Airship Runs Through It Personal Channel 2020-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
+      "content": "#141 ~ An Airship Runs Through It Personal Channel 2020-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication COGANT: Deterministic Codebase-to-GNN Translation"
     },
     {
       "id": "video:personal:BS6IZVs5TrA",
@@ -10333,7 +10289,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#091 ~ Looking Through the Overton Window Personal Channel 2020-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
+      "content": "#091 ~ Looking Through the Overton Window Personal Channel 2020-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication COGANT: Deterministic Codebase-to-GNN Translation"
     },
     {
       "id": "video:personal:BTRAiTJoM5A",
@@ -11064,7 +11020,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#113 ~ Through a Glitch in the Looking Glass Personal Channel 2020-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
+      "content": "#113 ~ Through a Glitch in the Looking Glass Personal Channel 2020-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication COGANT: Deterministic Codebase-to-GNN Translation"
     },
     {
       "id": "video:personal:Z04j10CbBRc",
@@ -12887,7 +12843,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#215 ~ Emergence Through Emergency Personal Channel 2021-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
+      "content": "#215 ~ Emergence Through Emergency Personal Channel 2021-04-21 Research Video Archive ResNei: Solution Design Document A Deterministic Testbed for Self-Organizing Agent-Team Coordination A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication COGANT: Deterministic Codebase-to-GNN Translation"
     },
     {
       "id": "video:institute:IGKUS1W25rY",
@@ -21604,7 +21560,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "Postdoc in Review (2020-2023) Personal Channel 2024-04-21 Research Video Archive Postdoc review (2020–2023) A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication Autopoietic Project Generation Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task"
+      "content": "Postdoc in Review (2020-2023) Personal Channel 2024-04-21 Research Video Archive Postdoc review (2020–2023) Autopoietic Project Generation Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task DuckRabbit: Typed Multimodal Illusion Generator"
     },
     {
       "id": "video:institute:RpOrRw4EhTo",
@@ -21847,7 +21803,7 @@
         "personal",
         "Research Practice"
       ],
-      "content": "PaperStream #009.0 ~ ATLAS: A Question Oriented Approach to the Use of Pattern Languages... Personal Channel 2024-04-21 Research Practice ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing"
+      "content": "PaperStream #009.0 ~ ATLAS: A Question Oriented Approach to the Use of Pattern Languages... Personal Channel 2024-04-21 Research Practice ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing Generalized Notation Notation for Active Inference Models"
     },
     {
       "id": "video:institute:_GHJO_bnyrY",
@@ -26228,7 +26184,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "2024 Review Preview Personal Channel 2025-04-21 Research Video Archive Postdoc review (2020–2023) The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot) A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication Autopoietic Project Generation"
+      "content": "2024 Review Preview Personal Channel 2025-04-21 Research Video Archive Postdoc review (2020–2023) The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot) Autopoietic Project Generation Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task"
     },
     {
       "id": "video:institute:cmPPvfElkCE",
@@ -28553,7 +28509,7 @@
         "Entomology and Ants",
         "Research Practice"
       ],
-      "content": "Active InferAnt Stream 018.1 ~ A template/ approach to Reproducible Generative Research Active Inference Institute 2026-03-24 Entomology and Ants Research Practice Generalized Notation Notation for Active Inference Models A template/ approach to Reproducible Generative Research A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication"
+      "content": "Active InferAnt Stream 018.1 ~ A template/ approach to Reproducible Generative Research Active Inference Institute 2026-03-24 Entomology and Ants Research Practice Generalized Notation Notation for Active Inference Models A template/ approach to Reproducible Generative Research A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings"
     },
     {
       "id": "video:personal:2TriTtiwqGA",
@@ -29160,7 +29116,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 206 works.",
+      "title": "The curated bibliography contains 204 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -29168,12 +29124,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 206 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 204 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 189 per-paper documentation folders.",
+      "title": "The repository contains 187 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -29181,7 +29137,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 189 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 187 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -29357,7 +29313,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.html",
-      "summary": "Structured CV export: 206 works, 132 software rows, 387 public GitHub repositories, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 204 works, 132 software rows, 387 public GitHub repositories, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

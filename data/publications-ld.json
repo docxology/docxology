@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 206 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 204 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -2224,62 +2224,6 @@
                 "url": "https://doi.org/10.3390/e25070964"
             },
             "sameAs": "https://doi.org/10.3390/e25070964"
-        },
-        {
-            "@type": "ScholarlyArticle",
-            "name": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",
-            "headline": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",
-            "datePublished": "2023",
-            "author": [
-                {
-                    "@type": "Person",
-                    "name": "R.J. Cordes"
-                },
-                {
-                    "@type": "Person",
-                    "name": "Scott David"
-                },
-                {
-                    "@type": "Person",
-                    "@id": "https://danielarifriedman.com/#person",
-                    "name": "Daniel Ari Friedman",
-                    "sameAs": [
-                        "https://orcid.org/0000-0001-6232-9096",
-                        "https://www.wikidata.org/wiki/Q138781444"
-                    ]
-                },
-                {
-                    "@type": "Person",
-                    "name": "Alexandra Mikhailova"
-                },
-                {
-                    "@type": "Person",
-                    "name": "Andrew Penland"
-                },
-                {
-                    "@type": "Person",
-                    "name": "Sam Young"
-                },
-                {
-                    "@type": "Person",
-                    "name": "Colten Zacharias"
-                }
-            ],
-            "publisher": {
-                "@type": "Organization",
-                "name": "Zenodo"
-            },
-            "keywords": "🛡️",
-            "@id": "https://danielarifriedman.com/works/Friedman2023ATLASQuestionOrientedApproach049.html#work",
-            "url": "https://danielarifriedman.com/works/Friedman2023ATLASQuestionOrientedApproach049.html",
-            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2023ATLASQuestionOrientedApproach049.html",
-            "identifier": {
-                "@type": "PropertyValue",
-                "propertyID": "DOI",
-                "value": "10.5281/zenodo.10296601",
-                "url": "https://doi.org/10.5281/zenodo.10296601"
-            },
-            "sameAs": "https://doi.org/10.5281/zenodo.10296601"
         },
         {
             "@type": "ScholarlyArticle",
@@ -7506,38 +7450,6 @@
                 "url": "https://doi.org/10.5281/zenodo.21298883"
             },
             "sameAs": "https://doi.org/10.5281/zenodo.21298883"
-        },
-        {
-            "@type": "ScholarlyArticle",
-            "name": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-            "headline": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-            "datePublished": "2026",
-            "author": [
-                {
-                    "@type": "Person",
-                    "@id": "https://danielarifriedman.com/#person",
-                    "name": "Daniel Ari Friedman",
-                    "sameAs": [
-                        "https://orcid.org/0000-0001-6232-9096",
-                        "https://www.wikidata.org/wiki/Q138781444"
-                    ]
-                }
-            ],
-            "publisher": {
-                "@type": "Organization",
-                "name": "Zenodo"
-            },
-            "keywords": "💻",
-            "@id": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative193.html#work",
-            "url": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative193.html",
-            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026TemplateApproachReproducibleGenerative193.html",
-            "identifier": {
-                "@type": "PropertyValue",
-                "propertyID": "DOI",
-                "value": "10.5281/zenodo.19139089",
-                "url": "https://doi.org/10.5281/zenodo.19139089"
-            },
-            "sameAs": "https://doi.org/10.5281/zenodo.19139089"
         },
         {
             "@type": "ScholarlyArticle",
