@@ -283,7 +283,6 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 - **2024** — Bridging gaps in image meme research: A multidisciplinary paradigm · [📁](../papers/2024_ImageMemeResearch/)
 - **2024** — Comments on National Digital Twins R&D Strategic Plan · [📁](../papers/2024_DigitalTwins/)
 - **2024** — FarmWorks: Decentralized AI Agents for Personalized Solutions · [📁](../papers/2024_FarmWorks/)
-- **2023** — ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management · [📁](../papers/2023_ATLAS/)
 - *More entries appear in the table above.*
 
 ### 🎨 Art & Synergetics
