@@ -6741,5 +6741,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21750800",
     "URL": "https://doi.org/10.5281/zenodo.21750800"
+  },
+  {
+    "id": "Friedman2026THALIATypedHarnessAnalytical207",
+    "type": "article-journal",
+    "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 207; docs: papers/2026_THALIA/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21763244",
+    "URL": "https://doi.org/10.5281/zenodo.21763244"
   }
 ]

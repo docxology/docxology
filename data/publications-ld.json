@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 205 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 206 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -7934,6 +7934,38 @@
                 "url": "https://doi.org/10.5281/zenodo.21750800"
             },
             "sameAs": "https://doi.org/10.5281/zenodo.21750800"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
+            "headline": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026THALIATypedHarnessAnalytical207.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026THALIATypedHarnessAnalytical207.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026THALIATypedHarnessAnalytical207.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21763244",
+                "url": "https://doi.org/10.5281/zenodo.21763244"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21763244"
         }
     ]
 }

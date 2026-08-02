@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
-*93 original repositories · 38 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+*94 original repositories · 38 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
 
 *Available for [research consulting & collaboration](../README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -131,6 +131,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [template_storybook](https://github.com/docxology/template_storybook) | Standalone full-page illustrated storybook template from docxology/template | TeX | 0 | 2026-07 |
 | [template_template](https://github.com/docxology/template_template) | Template meta-research exemplar: self-documenting reproducible research repo | TeX | 0 | 2026-07 |
 | [template_bioinformatics_project](https://github.com/docxology/template_bioinformatics_project) | template_bioinformatics_project — Active Inference / research exemplar repository | Python | 0 | 2026-03 |
+| [thalia](https://github.com/docxology/thalia) | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · [📄](../papers/2026_THALIA/) · [Zenodo](https://doi.org/10.5281/zenodo.21763244) | Python | 0 | 2026-08 |
 
 ---
 
@@ -191,13 +192,13 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Entomology & Biology | 9 | `ento_linguistics`, `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `cohereants`, `FORMINDEX`, `biol-1`, `biol-8`, `biology_textbook` |
 | Synergetics & Geometry | 6 | `QuadCraft`, `QuadMath`, `ivm-xyz`, `godel_ivm`, `symergetics`, `blake_jiang` |
 | Cognitive Security | 3 | `p3if`, `opentir`, `CogSecSkills` |
-| Developer Tools | 17 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `SynthOBS`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake` |
+| Developer Tools | 18 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `SynthOBS`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake`, `thalia` |
 | Data & Policy | 3 | `hhs-opendata`, `crescent-city`, `grateful_data` |
 | Education | 6 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT` |
 | Other | 4 | `cascadia`, `fuller-obsidian`, `service`, `flick` |
-| **docxology subtotal** | **93** | |
+| **docxology subtotal** | **94** | |
 | AII Contributions (non-fork) | 38 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **131** | |
+| **Grand Total** | **132** | |
 
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; the AII GitHub account is a **User** account, not an Organization. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 

@@ -3291,5 +3291,20 @@
       "trust-scoring"
     ],
     "doi": "10.5281/zenodo.21750800"
+  },
+  "2026_THALIA": {
+    "year": "2026",
+    "topic": "THALIA",
+    "name": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
+    "description": "THALIA is an executable research harness for long-context memory systems. It combines typed stage contracts, inspectable context selection, evidence-preserving episodic state, lexical-first retrieval, and bounded compiler search with source-bound evaluation and reproducible artifact checks. The deterministic results are finite diagnostic evidence; model-quality, integrity-advantage, and production-readiness claims remain separately gated.",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "THALIA is an executable research harness for long-context memory systems. It combines typed stage contracts, inspectable context selection, evidence-preserving episodic state, lexical-first retrieval, and bounded compiler search with source-bound evaluation and reproducible artifact checks. The deterministic results are finite diagnostic evidence; model-quality, integrity-advantage, and production-readiness claims remain separately gated.",
+    "keywords": [
+      "agentic systems",
+      "long-context memory",
+      "retrieval-augmented generation",
+      "reproducible research"
+    ],
+    "doi": "10.5281/zenodo.21763244"
   }
 }

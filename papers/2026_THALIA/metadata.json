@@ -1,0 +1,50 @@
+{
+  "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.21763244",
+  "doi_url": "https://doi.org/10.5281/zenodo.21763244",
+  "zenodo_record": "https://zenodo.org/records/21763244",
+  "record_id": "21763245",
+  "publication_date": "2026-08-02",
+  "resource_type": {
+    "title": "Software",
+    "type": "software"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": null
+    }
+  ],
+  "description": "THALIA is an executable research harness for long-context memory systems. It combines typed stage contracts, inspectable context selection, evidence-preserving episodic state, lexical-first retrieval, and bounded compiler search with source-bound evaluation and reproducible artifact checks. The deterministic results are finite diagnostic evidence; model-quality, integrity-advantage, and production-readiness claims remain separately gated.",
+  "keywords": [
+    "agentic systems",
+    "long-context memory",
+    "retrieval-augmented generation",
+    "reproducible research"
+  ],
+  "files": [
+    {
+      "name": "thalia-0.1.0-source.tar.gz",
+      "size_bytes": 842137,
+      "checksum": "md5:b335e03ff5982c5222ad5505186c7312",
+      "download_url": "https://zenodo.org/api/records/21763245/files/thalia-0.1.0-source.tar.gz/content"
+    },
+    {
+      "name": "thalia-0.1.0.pdf",
+      "size_bytes": 5005902,
+      "checksum": "md5:8f40b5428ed4300bbc15d5df98ced972",
+      "download_url": "https://zenodo.org/api/records/21763245/files/thalia-0.1.0.pdf/content"
+    },
+    {
+      "name": "thalia-0.1.0-artifacts.tar.gz",
+      "size_bytes": 16736189,
+      "checksum": "md5:2dcceb8e38a895b98af24f82923ee68b",
+      "download_url": "https://zenodo.org/api/records/21763245/files/thalia-0.1.0-artifacts.tar.gz/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-08-02T20:55:01Z"
+}

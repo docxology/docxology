@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-02T15:20:48Z",
-  "zenodo_records_fetched": 142,
+  "generated_at": "2026-08-02T20:54:15Z",
+  "zenodo_records_fetched": 143,
   "bibliography_dois": 191,
-  "uncatalogued_count": 2,
+  "uncatalogued_count": 3,
   "non_canonical_doi_count": 1,
   "warnings": [],
   "uncatalogued": [
@@ -19,6 +19,13 @@
       "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
       "publication_date": "2026",
       "html_url": "https://zenodo.org/records/20804586"
+    },
+    {
+      "record_id": "21763245",
+      "doi": "10.5281/zenodo.21763244",
+      "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
+      "publication_date": "2026-08-02",
+      "html_url": "https://zenodo.org/records/21763245"
     }
   ],
   "non_canonical_doi": [

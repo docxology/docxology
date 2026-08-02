@@ -1,13 +1,13 @@
 # Current Source Coverage
 
-Generated: `2026-08-02T15:19:30Z`
+Generated: `2026-08-02T21:00:19Z`
 
 This report records legitimate bibliography coverage gaps explicitly. A gap is not evidence that a work is invalid; it identifies what is or is not available in the repository projection.
 
 ## Summary
 
 - no_paper_folder: `17`
-- no_full_text: `32`
+- no_full_text: `33`
 - no_doi: `15`
 - no_canonical_url: `2`
 - non_paper_record: `21`
@@ -65,3 +65,4 @@ This report records legitimate bibliography coverage gaps explicitly. A gap is n
 | Friedman2026GoldenLineTowardWhat204 | Paper | no_full_text | needs_review |
 | Friedman2026BlackLineStrongWork205 | Paper | no_full_text | needs_review |
 | Friedman2026CodomyrmexArtificialEcologyAgentic206 | Paper | no_full_text | needs_review |
+| Friedman2026THALIATypedHarnessAnalytical207 | Paper | no_full_text | needs_review |

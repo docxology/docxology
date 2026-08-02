@@ -96,7 +96,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 🧠 Active Inference | [works](pages/BIBLIOGRAPHY.md#active-inference) | [FEPLean](papers/2026_FEPLean/) · [CognitiveCaseDiagrams](papers/2026_CognitiveCaseDiagrams/) · [CEREBRUM](papers/2025_CEREBRUM/) | [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) · [cognitive_case_diagrams](https://github.com/docxology/cognitive_case_diagrams) · [goference](https://github.com/docxology/goference) |
 | 🛡️ Cognitive Security | [works](pages/BIBLIOGRAPHY.md#cognitive-security) | [CognitiveIntegrity](papers/2026_CognitiveIntegrity/) · [InformationCommons](papers/2022_InformationCommons/) · [P3IF](papers/2023_P3IF/) | [p3if](https://github.com/docxology/p3if) · [opentir](https://github.com/docxology/opentir) |
 | 🎨 Art & Synergetics | [works](pages/BIBLIOGRAPHY.md#art-synergetics) | [BlakeJiang](papers/2026_BlakeJiang/) · [DoorsOfPerception](papers/2026_DoorsOfPerception/) · [BlakeFuller](papers/2023_BlakeFuller/) · [QuadMath](papers/2025_QuadMath/) | [QuadCraft](https://github.com/docxology/QuadCraft) · [symergetics](https://github.com/docxology/symergetics) · [ivm-xyz](https://github.com/docxology/ivm-xyz) |
-| 💻 Computational | [works](pages/BIBLIOGRAPHY.md#computational) | [DeterministicTestbedSelf](papers/2026_DeterministicTestbedSelf/) · [RecoveringLLMPersona](papers/2026_RecoveringLLMPersona/) · [Triplicate](papers/2026_Triplicate/) · [TemplateTextbook](papers/2026_TemplateTextbook/) · [BiologyTextbook](papers/2026_BiologyTextbook/) | [template](https://github.com/docxology/template) · [template_autoscientists](https://github.com/docxology/template_autoscientists) · [ntqr_llm](https://github.com/docxology/ntqr_llm) |
+| 💻 Computational | [works](pages/BIBLIOGRAPHY.md#computational) | [DeterministicTestbedSelf](papers/2026_DeterministicTestbedSelf/) · [RecoveringLLMPersona](papers/2026_RecoveringLLMPersona/) · [THALIA](papers/2026_THALIA/) · [WitnessRegister](papers/2026_WitnessRegister/) · [Triplicate](papers/2026_Triplicate/) · [TemplateTextbook](papers/2026_TemplateTextbook/) · [BiologyTextbook](papers/2026_BiologyTextbook/) | [template](https://github.com/docxology/template) · [template_autoscientists](https://github.com/docxology/template_autoscientists) · [ntqr_llm](https://github.com/docxology/ntqr_llm) · [thalia](https://github.com/docxology/thalia) |
 | 🧬 Genetics & Biomedical | [works](pages/BIBLIOGRAPHY.md#genetics-biomedical) | [HoneyBeeEvolution](papers/2015_HoneyBeeEvolution/) · [NuclearStructure](papers/2016_NuclearStructure/) · [DennettExplained](papers/2019_DennettExplained/) | [FORMINDEX](https://github.com/docxology/FORMINDEX) |
 
 ---
@@ -136,6 +136,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | Year | Title | Venue | DOI |
 |------|-------|-------|-----|
 | 2025 | CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling | *Zenodo* | [10.5281/zenodo.15170907](https://doi.org/10.5281/zenodo.15170907) |
+| 2026 | Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings | *Zenodo* | [10.5281/zenodo.21695160](https://doi.org/10.5281/zenodo.21695160) |
 | 2025 | Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics | *Entropy* | [10.3390/e27050459](https://doi.org/10.3390/e27050459) |
 | 2024 | Federated inference and belief sharing | *Neuroscience & Biobehavioral Reviews* | [10.1016/j.neubiorev.2023.105500](https://doi.org/10.1016/j.neubiorev.2023.105500) |
 | 2023 | A variational synthesis of evolutionary and developmental dynamics | *Entropy* | [10.3390/e25070964](https://doi.org/10.3390/e25070964) |
@@ -168,6 +169,8 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | Year | Title | Venue | DOI |
 |------|-------|-------|-----|
 | 2026 | Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) | *Zenodo* | [10.5281/zenodo.18364118](https://doi.org/10.5281/zenodo.18364118) |
+| 2026 | Personal Red Lines for Development | *Zenodo* | [10.5281/zenodo.21754239](https://doi.org/10.5281/zenodo.21754239) |
+| 2026 | Black Line: Strong Work in Public | *Zenodo* | [10.5281/zenodo.21754235](https://doi.org/10.5281/zenodo.21754235) |
 | 2024 | Bridging gaps in image meme research: A multidisciplinary paradigm | *JASIST* | [10.1002/asi.24900](https://doi.org/10.1002/asi.24900) |
 | 2024 | FarmWorks: Decentralized AI Agents for Personalized Solutions | *Zenodo* | [10.5281/zenodo.13754585](https://doi.org/10.5281/zenodo.13754585) |
 | 2023 | Cognitive Sovereignty & Active Inference in the State of Exception | *Zenodo* | [10.5281/zenodo.10038231](https://doi.org/10.5281/zenodo.10038231) |
@@ -220,6 +223,19 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 2026 | The Template Textbook | *Zenodo* | [10.5281/zenodo.20533125](https://doi.org/10.5281/zenodo.20533125) |
 | 2026 | COGANT: Deterministic Codebase-to-GNN Translation | *Zenodo* | [10.5281/zenodo.20705350](https://doi.org/10.5281/zenodo.20705350) |
 | 2026 | AGEINT: Agentic Intelligence | *Zenodo* | [10.5281/zenodo.20732275](https://doi.org/10.5281/zenodo.20732275) |
+| 2026 | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture | *Zenodo* | [10.5281/zenodo.21763244](https://doi.org/10.5281/zenodo.21763244) |
+| 2026 | Codomyrmex: An Artificial Ecology for Agentic Software Development | *Zenodo* | [10.5281/zenodo.21750800](https://doi.org/10.5281/zenodo.21750800) |
+
+#### 🔬 Research-Practice Line Set
+
+> The DAF "line set" — six small evaluative instruments for research practice and evidence discipline (2026). A typed ledger for absence ([White Line](papers/2026_WhiteLine/)), a directional long-horizon record ([Golden Line](papers/2026_GoldenLine/)), an evidence-gated personal `No` ([Personal Red Lines](papers/2026_PersonalRedLines/)), a concise-inspectable practice instrument ([Black Line](papers/2026_BlackLine/)), a co-registration register ([Witness Register](papers/2026_WitnessRegister/)), and a thin reader over the set ([Line Set](papers/2026_LineSet/)).
+
+| Year | Title | Venue | DOI |
+|------|-------|-------|-----|
+| 2026 | The Witness Register: Co-Registration Without Aggregation | *Zenodo* | [10.5281/zenodo.21754245](https://doi.org/10.5281/zenodo.21754245) |
+| 2026 | The Line Set: Holding Instruments Apart | *Zenodo* | [10.5281/zenodo.21754243](https://doi.org/10.5281/zenodo.21754243) |
+| 2026 | White Line: A Typed Ledger for the Edge of the Claim | *Zenodo* | [10.5281/zenodo.21754241](https://doi.org/10.5281/zenodo.21754241) |
+| 2026 | Golden Line: Toward What Matters | *Zenodo* | [10.5281/zenodo.21754237](https://doi.org/10.5281/zenodo.21754237) |
 
 #### 🔧 Highlighted Repositories
 
@@ -233,6 +249,7 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | [steganographer](https://github.com/docxology/steganographer) | High-performance Rust cryptographic watermarking |
 | [QuadCraft](https://github.com/docxology/QuadCraft) | MineCraft with Tetrahedra (Quadray coordinates) |
 | [MetaInformAnt](https://github.com/docxology/MetaInformAnt) | Integration for Ants and Beyond |
+| [thalia](https://github.com/docxology/thalia) | Typed agentic harness for reproducible long-context memory experiments |
 | [p3if](https://github.com/docxology/p3if) | Properties, Processes, and Perspectives Inter-Framework |
 
 > **Full curated software list**: [pages/SOFTWARE.md →](pages/SOFTWARE.md). For public GitHub coverage, use the [primary repository inventory →](repositories.html); forks are separated into the [fork archive →](repositories-forks.html). Current totals live in [`reports/current_counts.md`](reports/current_counts.md).

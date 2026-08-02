@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-02T16:15:18Z",
+  "generated_at": "2026-08-02T21:01:51Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 91,
   "warnings": 0,
-  "total_bytes": 14434932,
+  "total_bytes": 14449052,
   "largest": [
     {
       "path": "data/videos.json",
@@ -29,14 +29,14 @@
     {
       "path": "publications.html",
       "kind": "html",
-      "bytes": 360458,
+      "bytes": 361956,
       "budget_bytes": 500000,
       "ok": true
     },
     {
       "path": "data/publications-ld.json",
       "kind": "json-data",
-      "bytes": 342619,
+      "bytes": 344117,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -50,14 +50,14 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 327961,
+      "bytes": 328885,
       "budget_bytes": 5000000,
       "ok": true
     },
     {
       "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 302166,
+      "bytes": 303405,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -78,7 +78,7 @@
     {
       "path": "data/work-enrichment.json",
       "kind": "json-data",
-      "bytes": 230217,
+      "bytes": 231200,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -99,7 +99,14 @@
     {
       "path": "data/works.json",
       "kind": "json-data",
-      "bytes": 165261,
+      "bytes": 165974,
+      "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "bibliography.csl.json",
+      "kind": "citation-export",
+      "bytes": 162904,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -111,16 +118,9 @@
       "ok": true
     },
     {
-      "path": "bibliography.csl.json",
-      "kind": "citation-export",
-      "bytes": 162264,
-      "budget_bytes": 4000000,
-      "ok": true
-    },
-    {
       "path": "software.html",
       "kind": "html",
-      "bytes": 161293,
+      "bytes": 162487,
       "budget_bytes": 500000,
       "ok": true
     },

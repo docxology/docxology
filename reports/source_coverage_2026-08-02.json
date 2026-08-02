@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-02T15:19:30Z",
+  "generated_at": "2026-08-02T21:00:19Z",
   "source": "data/works.json",
   "summary": {
     "no_paper_folder": 17,
-    "no_full_text": 32,
+    "no_full_text": 33,
     "no_doi": 15,
     "no_canonical_url": 2,
     "non_paper_record": 21
@@ -580,6 +580,17 @@
       "num": 206,
       "citation_key": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
       "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "type": "Paper",
+      "reasons": [
+        "no_full_text"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 207,
+      "citation_key": "Friedman2026THALIATypedHarnessAnalytical207",
+      "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
       "type": "Paper",
       "reasons": [
         "no_full_text"

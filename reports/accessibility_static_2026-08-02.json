@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-02T15:19:38Z",
+  "generated_at": "2026-08-02T21:00:26Z",
   "scope": "All public HTML page families; complements, but does not replace, browser-based accessibility testing.",
-  "page_count": 1550,
-  "passing": 1550,
+  "page_count": 1552,
+  "passing": 1552,
   "results": [
     {
       "path": "art.html",
@@ -4906,6 +4906,31 @@
     },
     {
       "path": "papers/2026_SynthOBSFractiSynth/index.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "papers/2026_THALIA/index.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -38431,6 +38456,31 @@
     },
     {
       "path": "works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "works/Friedman2026THALIATypedHarnessAnalytical207.html",
       "ok": true,
       "checks": {
         "lang": true,

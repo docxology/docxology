@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-02T15:19:30Z",
+  "generated_at": "2026-08-02T21:00:19Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
-  "count": 205,
+  "count": 206,
   "works": [
     {
       "num": 1,
@@ -5094,6 +5094,29 @@
       "url": "https://doi.org/10.5281/zenodo.21750800",
       "doi": "10.5281/zenodo.21750800",
       "docs_path": "papers/2026_Codomyrmex/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 207,
+      "citation_key": "Friedman2026THALIATypedHarnessAnalytical207",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21763244",
+      "doi": "10.5281/zenodo.21763244",
+      "docs_path": "papers/2026_THALIA/",
       "has_paper_folder": true,
       "has_full_text": false,
       "has_images": false,

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-02T15:19:31Z",
+  "generated_at": "2026-08-02T21:00:21Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 205,
+  "count": 206,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -4170,6 +4170,24 @@
       ],
       "methods": [],
       "source": "papers/2026_Codomyrmex/README.md"
+    },
+    "Friedman2026THALIATypedHarnessAnalytical207": {
+      "citation_key": "Friedman2026THALIATypedHarnessAnalytical207",
+      "abstract": "THALIA is an executable research harness for long-context memory systems. It combines typed stage contracts, inspectable context selection, evidence-preserving episodic state, lexical-first retrieval, and bounded compiler search with source-bound evaluation and reproducible artifact checks. The deterministic results are finite diagnostic evidence; model-quality, integrity-advantage, and production-readiness claims remain separately gated.",
+      "keywords": [
+        "agentic systems",
+        "long-context memory",
+        "retrieval-augmented generation",
+        "reproducible research"
+      ],
+      "findings": [
+        "agentic systems",
+        "long-context memory",
+        "retrieval-augmented generation",
+        "reproducible research"
+      ],
+      "methods": [],
+      "source": "papers/2026_THALIA/README.md"
     }
   }
 }

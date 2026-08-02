@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-02T15:19:30Z",
+  "generated_at": "2026-08-02T21:01:46Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 131,
+  "count": 132,
   "repositories": [
     {
       "name": "template",
@@ -1119,6 +1119,18 @@
       "updated_or_year": "2026-03",
       "paper_path": "",
       "zenodo_url": ""
+    },
+    {
+      "name": "thalia",
+      "url": "https://github.com/docxology/thalia",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "papers/2026_THALIA/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21763244"
     },
     {
       "name": "ActiveInferenceJournal",

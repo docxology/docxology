@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T15:19:30Z",
+  "generated_at": "2026-08-02T21:01:46Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,9 +34,9 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 205,
-    "software_catalogued": 131,
-    "owned_software_catalogued": 93,
+    "works": 206,
+    "software_catalogued": 132,
+    "owned_software_catalogued": 94,
     "aii_software_catalogued": 38,
     "google_scholar": {
       "citations": 777,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "8d313b11ae61b86e5796174e08a89a6cf886c266ac6c3f7550d37681c425c79d",
+      "sha256": "0676cca4d05fdb421ab75b1067f31b69e36b119e2071c0900ce476f8acaa8844",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 165261,
-          "sha256": "d3766faf1a3d47ed60bdb0c2b97d626f47cc8d16499bfb2d6167107714fc5c22"
+          "bytes": 165974,
+          "sha256": "de3a16d46919fccccd39d2fc0d3eb4be83d2b42861521aec98617a88457a9174"
         },
         {
           "path": "data/software.json",
-          "bytes": 62685,
-          "sha256": "67cfce95127f5d279bb720bcf8dd0a7907acadd942a6a1c78f3fb4dd6c6949b8"
+          "bytes": 63212,
+          "sha256": "9cabde80d8d0398738b226559d86328e8301c57693359b94696fa72948461454"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 11914,
-          "sha256": "0e604d66b005f86933215e0e2b38f0715e9f809fc1adc8d92af1c2590e0ff978"
+          "sha256": "288c186ae9840a6a4a81fa0365cd5937a135c23e5895f6ca40497f5172365a0d"
         },
         {
           "path": "data/github-repositories.json",
@@ -7410,6 +7410,29 @@
       "authors": [
         "Friedman, Daniel Ari"
       ]
+    },
+    {
+      "num": 207,
+      "citation_key": "Friedman2026THALIATypedHarnessAnalytical207",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21763244",
+      "doi": "10.5281/zenodo.21763244",
+      "docs_path": "papers/2026_THALIA/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     }
   ],
   "software": [
@@ -8530,6 +8553,18 @@
       "zenodo_url": ""
     },
     {
+      "name": "thalia",
+      "url": "https://github.com/docxology/thalia",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "papers/2026_THALIA/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21763244"
+    },
+    {
       "name": "ActiveInferenceJournal",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
       "owner": "ActiveInferenceInstitute",
@@ -8989,14 +9024,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 205 works.",
+      "claim": "The curated bibliography contains 206 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-02T15:19:30+00:00",
+      "checked_at": "2026-08-02T21:01:34+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9004,14 +9039,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 188 per-paper documentation folders.",
+      "claim": "The repository contains 189 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-02T15:19:30+00:00",
+      "checked_at": "2026-08-02T21:01:34+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
