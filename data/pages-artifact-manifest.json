@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-02T15:22:16Z",
-  "source_commit_at_generation": "fc48e551dd68af13574b1f504f477b623c14f1e0",
+  "generated_at": "2026-08-02T15:27:47Z",
+  "source_commit_at_generation": "f66c9069483bfea3f7a36bab9ae740e6ef269946",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 774599200,
+    "source_bytes": 826727034,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4377,
-    "artifact_bytes": 775369817
+    "artifact_file_count": 4438,
+    "artifact_bytes": 827508208
   },
   "included_files": [
     {
@@ -11720,6 +11720,41 @@
       "sha256": "9e99ba0522206e2b9f4a4fbea4b6ff7ef6c6fa77480ee40ef23cf90124637a60"
     },
     {
+      "path": "papers/2026_BlackLine/AGENTS.md",
+      "bytes": 629,
+      "sha256": "1ad8a630dff68f0ec349311f099d90babd35478ed69b6b737877c3ddaa6c9de2"
+    },
+    {
+      "path": "papers/2026_BlackLine/CITATION.cff",
+      "bytes": 570,
+      "sha256": "f3c302e532b9eeaaded00cffca185a9c5de767630585e569b7776a8c7855b570"
+    },
+    {
+      "path": "papers/2026_BlackLine/README.md",
+      "bytes": 1535,
+      "sha256": "b3c886016edf2c1f71534b0ffff5c614b19e1e31cfb5deab5a5c3f72e6a344e0"
+    },
+    {
+      "path": "papers/2026_BlackLine/SKILL.md",
+      "bytes": 848,
+      "sha256": "fd829f00f008bdbb7190bed19de752403ec4ee11192e810ee12fd4f74ce20e7f"
+    },
+    {
+      "path": "papers/2026_BlackLine/black_line_combined.pdf",
+      "bytes": 3582188,
+      "sha256": "56c7c49bb1d52a7b76725288b50b315765ecbb8c5faac0eba01505acbc25497c"
+    },
+    {
+      "path": "papers/2026_BlackLine/index.html",
+      "bytes": 8535,
+      "sha256": "2612347d86597c6852e0703e75e185b735b9361cf332c199eaf804872e00c0b8"
+    },
+    {
+      "path": "papers/2026_BlackLine/metadata.json",
+      "bytes": 1707,
+      "sha256": "e686239675d10db068934ab8e9d6d4934963bfc68042264ca53a710faafa95ab"
+    },
+    {
       "path": "papers/2026_BlakeJiang/AGENTS.md",
       "bytes": 1767,
       "sha256": "b2e8655069623b51d2219c0bff24e1c04dd767599105c9b54103dc9dba342a10"
@@ -11888,6 +11923,41 @@
       "path": "papers/2026_CaliforniaPublicRecords/metadata.json",
       "bytes": 2748,
       "sha256": "4bae6210e25da039893dbd3f80089bef4baf5ab5678fc00447bbe493108657a4"
+    },
+    {
+      "path": "papers/2026_Codomyrmex/AGENTS.md",
+      "bytes": 695,
+      "sha256": "7906d55ae907d5b64d2645f24b7b7e010f622a2c0b07394d037d523cbb61235d"
+    },
+    {
+      "path": "papers/2026_Codomyrmex/CITATION.cff",
+      "bytes": 603,
+      "sha256": "838d1c14ccca870eec760f4fbd8ba44285458c504033f4c125f207c0832f4c75"
+    },
+    {
+      "path": "papers/2026_Codomyrmex/README.md",
+      "bytes": 3423,
+      "sha256": "eebe9cde4789eb42c27ae4bc8564456478049b2279a5401ad6e9eaa635628776"
+    },
+    {
+      "path": "papers/2026_Codomyrmex/SKILL.md",
+      "bytes": 1026,
+      "sha256": "ec827491b20ec22feac88811ee673391e58e9d94b04fd10181c3729a1f34fd70"
+    },
+    {
+      "path": "papers/2026_Codomyrmex/codomyrmex-1.3.0.pdf",
+      "bytes": 6883385,
+      "sha256": "eda76ad12a50bce01b113894c785e0915b6ba367f5bf67d17c8f586416102b93"
+    },
+    {
+      "path": "papers/2026_Codomyrmex/index.html",
+      "bytes": 9106,
+      "sha256": "79bd38dba2c175603c9b5e3051ceb1bc078cbb5f3bd49b88d04dcfdb2f782792"
+    },
+    {
+      "path": "papers/2026_Codomyrmex/metadata.json",
+      "bytes": 5631,
+      "sha256": "31ccf43ddccc7a7590b4c7ab229fb51a2b866dac4dddc3e0e9c73347520f9460"
     },
     {
       "path": "papers/2026_CogSecSkills/AGENTS.md",
@@ -12690,6 +12760,41 @@
       "sha256": "12f39368066eb2e9054563882c10ea034cf386ec5d53f9fc5de7eeb29bd82041"
     },
     {
+      "path": "papers/2026_GoldenLine/AGENTS.md",
+      "bytes": 627,
+      "sha256": "6797c79e48771f7823e3a8e03e9e57dce0bb20ff2f55265444a02fd7ccb5ac4d"
+    },
+    {
+      "path": "papers/2026_GoldenLine/CITATION.cff",
+      "bytes": 569,
+      "sha256": "7f126924de2ce6b5bc1ff238a87564a1c07f1d1e795a81ac1ecd55b90e09e239"
+    },
+    {
+      "path": "papers/2026_GoldenLine/README.md",
+      "bytes": 1453,
+      "sha256": "8f32d8aef2833eb2ee14125fef23c80b3df8f6d95eb5374c492e15c51c914444"
+    },
+    {
+      "path": "papers/2026_GoldenLine/SKILL.md",
+      "bytes": 836,
+      "sha256": "6f4d0a612f2d681af8d7e394ed0a462a6b8d6926030936773fd866795dc4e64f"
+    },
+    {
+      "path": "papers/2026_GoldenLine/golden_line_combined.pdf",
+      "bytes": 6628468,
+      "sha256": "c1ea0f098c597d32e24facd66fc90dad1e89077d8712c7536904669da142a2b9"
+    },
+    {
+      "path": "papers/2026_GoldenLine/index.html",
+      "bytes": 8449,
+      "sha256": "9cb419e448e3a3cdcf414fe2a0250b0ca28d1016a34c0752550fffcd7f86095f"
+    },
+    {
+      "path": "papers/2026_GoldenLine/metadata.json",
+      "bytes": 1627,
+      "sha256": "09388d8c9ee0a94be0216777f0652e7245dae6f91567b6ea83bee4de7cd1b35b"
+    },
+    {
       "path": "papers/2026_ITrace/AGENTS.md",
       "bytes": 1753,
       "sha256": "d242bcb35c9be75787d1a74bb445679a2d2ae2cad869f3beecb7f04b99013a70"
@@ -12768,6 +12873,41 @@
       "path": "papers/2026_IllegalStatesMostly/metadata.json",
       "bytes": 5048,
       "sha256": "a514eea792269cd505d7e44d30babd9a7cb012d8472e0c6d116b32b507b4dce9"
+    },
+    {
+      "path": "papers/2026_LineSet/AGENTS.md",
+      "bytes": 641,
+      "sha256": "f0dae3a63bfc4b7cacdf2ab1f60fdee87b165564a01cdb5c500e9ec5f753a09e"
+    },
+    {
+      "path": "papers/2026_LineSet/CITATION.cff",
+      "bytes": 576,
+      "sha256": "a3ec0f09ca35e34b52670697c5504146dba2f3c5cd733a5d7713d1e877599c4f"
+    },
+    {
+      "path": "papers/2026_LineSet/README.md",
+      "bytes": 1555,
+      "sha256": "1899b803a470c540d27fb4f0b84895fe44ea5636471582a0491edcd7ba5d74fc"
+    },
+    {
+      "path": "papers/2026_LineSet/SKILL.md",
+      "bytes": 901,
+      "sha256": "f158d502471e976b7112370a90f0c5d1a8a9e3c05b7e6df6bf93d18fdb9632a2"
+    },
+    {
+      "path": "papers/2026_LineSet/index.html",
+      "bytes": 8558,
+      "sha256": "590847d7afc798ae118189c68631f54a233a6f9cd2f0391ac706d6e7513dc179"
+    },
+    {
+      "path": "papers/2026_LineSet/line_set_combined.pdf",
+      "bytes": 22672214,
+      "sha256": "00fe16032bb4965b226a7770718177c6843ef0d08c413d7b82f4261b929b6838"
+    },
+    {
+      "path": "papers/2026_LineSet/metadata.json",
+      "bytes": 1724,
+      "sha256": "5c5c009b4d8b343feedc1f25d9b2b77787515445e9a7945f53769a7079611488"
     },
     {
       "path": "papers/2026_LivingMetaAnalysis/AGENTS.md",
@@ -12888,6 +13028,41 @@
       "path": "papers/2026_MusicNeverStopped/metadata.json",
       "bytes": 6094,
       "sha256": "1f57e652c8e81ebbf10fea526569b07a64167fc085a73d600e10bc780a3dc1e3"
+    },
+    {
+      "path": "papers/2026_PersonalRedLines/AGENTS.md",
+      "bytes": 631,
+      "sha256": "f26e075f2d9279dc7330613e13ee73c56733babeaa9e930763b41d1b40af857e"
+    },
+    {
+      "path": "papers/2026_PersonalRedLines/CITATION.cff",
+      "bytes": 571,
+      "sha256": "1962b28b512a971808370a09cdf1a37d5edda5f67c7a0af8135c746be4023f00"
+    },
+    {
+      "path": "papers/2026_PersonalRedLines/README.md",
+      "bytes": 1673,
+      "sha256": "646582146501ad38b3bdf9b478de098cafc2667b8ccd4adf2f6887158c37bab2"
+    },
+    {
+      "path": "papers/2026_PersonalRedLines/SKILL.md",
+      "bytes": 923,
+      "sha256": "c3738d8aef1322ebab3951d1101e6d9ffc839e3e92c47ad35742da1bb81de72f"
+    },
+    {
+      "path": "papers/2026_PersonalRedLines/index.html",
+      "bytes": 8667,
+      "sha256": "209c69db8695b1d874c8f35d672529428d8e2b4a2e8989dd2867d95ae889fbe1"
+    },
+    {
+      "path": "papers/2026_PersonalRedLines/metadata.json",
+      "bytes": 1858,
+      "sha256": "c02af6e7ccf578610565750b89214a10f23d395818f09e2722bf8340916c78d5"
+    },
+    {
+      "path": "papers/2026_PersonalRedLines/red_line_combined.pdf",
+      "bytes": 6211544,
+      "sha256": "72feaed3113e0a015c457b10603ebf931f701d1713da92384dac3198c8e1a511"
     },
     {
       "path": "papers/2026_PolicyDistillationAs/AGENTS.md",
@@ -13815,6 +13990,76 @@
       "sha256": "4aa68aa22191a538e579d6aa899df80ee397e96d38957055cafc8803e585b027"
     },
     {
+      "path": "papers/2026_WhiteLine/AGENTS.md",
+      "bytes": 667,
+      "sha256": "29bef77020f07cd51008fbafe0856433659f602718c95f23e7dabbd1909db3b7"
+    },
+    {
+      "path": "papers/2026_WhiteLine/CITATION.cff",
+      "bytes": 589,
+      "sha256": "58fa2d050bc81929777cc3a754978af6507582197e8f2fb344ae25e66fde87d0"
+    },
+    {
+      "path": "papers/2026_WhiteLine/README.md",
+      "bytes": 1545,
+      "sha256": "0add07822ea0eb18fc19e709e14537f144b72aa78d779a3edf54be2284d4bfe9"
+    },
+    {
+      "path": "papers/2026_WhiteLine/SKILL.md",
+      "bytes": 886,
+      "sha256": "217b859e5d25ab89bf94b885efda61ca4f85cbccc155b5b3a36d0453f37d5498"
+    },
+    {
+      "path": "papers/2026_WhiteLine/index.html",
+      "bytes": 8605,
+      "sha256": "657bf9fb24e290c3580c349853b3ca94e67be18a6470bed0c31bb52a163d2708"
+    },
+    {
+      "path": "papers/2026_WhiteLine/metadata.json",
+      "bytes": 1702,
+      "sha256": "9334bdf167843723c57f7df409291ff17ee03fa64bacb09066e6fd70be991f4e"
+    },
+    {
+      "path": "papers/2026_WhiteLine/white_line_combined.pdf",
+      "bytes": 4173908,
+      "sha256": "88218f425b1a06288ac0a74bd53b9ae02a2c7561431938bc44845d1382e090b8"
+    },
+    {
+      "path": "papers/2026_WitnessRegister/AGENTS.md",
+      "bytes": 677,
+      "sha256": "ac26e853eea1a82d378a907f9babdd143bdaae3b5f5a0600898a91d2cacddf48"
+    },
+    {
+      "path": "papers/2026_WitnessRegister/CITATION.cff",
+      "bytes": 594,
+      "sha256": "079c5ed96a6416fc29758271bce4339d630064b5f09f46969c7dbf606046d52b"
+    },
+    {
+      "path": "papers/2026_WitnessRegister/README.md",
+      "bytes": 1707,
+      "sha256": "23f4b71020c1232de3317e1da786cb231495c6ef4a2fba62838de9eea8da60c6"
+    },
+    {
+      "path": "papers/2026_WitnessRegister/SKILL.md",
+      "bytes": 924,
+      "sha256": "55b0580a66c8804be9cc01102c8b840f59bbfce6f4ff3232dd768476ec29ecd0"
+    },
+    {
+      "path": "papers/2026_WitnessRegister/index.html",
+      "bytes": 8863,
+      "sha256": "a37de97072c7bcf0cad413858bdfaf1f395846d76ae3c42005fd5f5bd6b6fb5c"
+    },
+    {
+      "path": "papers/2026_WitnessRegister/metadata.json",
+      "bytes": 1860,
+      "sha256": "9f3c072e73517a99f0ac6a3813affb39c00c7e44c82ac69a35e3d632d09ec00e"
+    },
+    {
+      "path": "papers/2026_WitnessRegister/witness_register_combined.pdf",
+      "bytes": 674133,
+      "sha256": "b50b8d1106003ce027caabb79fccadce650167795287ea75539c029cad958088"
+    },
+    {
       "path": "papers/AGENTS.md",
       "bytes": 9123,
       "sha256": "f6dcd94915a73fecc53aa8c45a3877af4bc76103d40425d6e12852c5b5d90f14"
@@ -14028,6 +14273,11 @@
       "path": "reports/accessibility_static_2026-08-01.json",
       "bytes": 1033758,
       "sha256": "c57059a5ad9e172c2d2f796975a6894cd7dcdeb8d719640be878e390ac544a1a"
+    },
+    {
+      "path": "reports/accessibility_static_2026-08-02.json",
+      "bytes": 1043269,
+      "sha256": "6728a8eeb5c6fe66652b6e241819f90a8d36323ff66e2e33e1b0c334926c03a6"
     },
     {
       "path": "reports/ambiguous_pairs_triage_2026-06-26.md",
@@ -14248,6 +14498,11 @@
       "path": "reports/asset_size_2026-08-01.json",
       "bytes": 3320,
       "sha256": "fc154b7b186f6319b3c8d198ab3f020dba943d42625a71131fa5a14210b148c8"
+    },
+    {
+      "path": "reports/asset_size_2026-08-02.json",
+      "bytes": 3320,
+      "sha256": "c2bf84cf76f99154f1ca887eb9ca4954216c40af35eebfdb106ce74ac24a7504"
     },
     {
       "path": "reports/browser-qa/2026-07-18/manifest.json",
@@ -14910,6 +15165,16 @@
       "sha256": "549dbc36e8db97768a65cca62059ad2c0d818c408610b9941b437ba04aab554d"
     },
     {
+      "path": "reports/source_coverage_2026-08-02.json",
+      "bytes": 20919,
+      "sha256": "5d4a7bb7d6941d946305d0698f60dc12c8e7cde3202da17ba7fc07d2f8ccbb56"
+    },
+    {
+      "path": "reports/source_coverage_2026-08-02.md",
+      "bytes": 5321,
+      "sha256": "897d819ee4eff06ca4ae299b6c711780c518cdb90fbdf2754b4c010c0d8fe49c"
+    },
+    {
       "path": "reports/visual-qa/2026-07-18/art-desktop.png",
       "bytes": 4046421,
       "sha256": "0eb50cd000df9bea681bde60f9ddffcfbf7975f4acd3ca56e582fcb8970279d2"
@@ -15073,6 +15338,11 @@
       "path": "reports/zenodo_uncatalogued_2026-07-30.json",
       "bytes": 1002,
       "sha256": "1dcd338783e27dc472c2758d296fb6c9d85b35b7d490293ef9abb338ce82ba1b"
+    },
+    {
+      "path": "reports/zenodo_uncatalogued_2026-08-02.json",
+      "bytes": 1002,
+      "sha256": "76550496d09265a8c3d18f0059ba7500f542f121a8bbc230e070b2dc9e675a57"
     },
     {
       "path": "repositories-forks.html",
@@ -21560,6 +21830,11 @@
       "sha256": "387a2679304cc175142dc3e36e9fe085311b1cc0c4c382a5f0bbfe6a9a4619cc"
     },
     {
+      "path": "works/Friedman2026BlackLineStrongWork205.html",
+      "bytes": 17377,
+      "sha256": "48d58b0e64c870c5305bf74319664fe2f49d6515e2102e7f59df12cbc90b0376"
+    },
+    {
       "path": "works/Friedman2026BoundedAutoResearchTinyReproducible120.html",
       "bytes": 19035,
       "sha256": "57a1d9ed2edb0dc573dfc6db36816e2a1527e6499569186a548c0540c9331eec"
@@ -21573,6 +21848,11 @@
       "path": "works/Friedman2026CaliforniaPublicRecordsTechnical173.html",
       "bytes": 18583,
       "sha256": "bc07e7a5ae452c14a0da84bc15a8da511530927363117a12837a95f565910ba6"
+    },
+    {
+      "path": "works/Friedman2026CodomyrmexArtificialEcologyAgentic206.html",
+      "bytes": 18578,
+      "sha256": "d34bf2e2e47202fa2fa66e581a9e08463fc0620054c2840658d5af85339df6cc"
     },
     {
       "path": "works/Friedman2026CogSecSkillsMultiharnessAgenticSkills174.html",
@@ -21675,6 +21955,11 @@
       "sha256": "c77192892b47ca4445b1c3e0baf13df41d387ca9944931c7452cd07b6375409e"
     },
     {
+      "path": "works/Friedman2026GoldenLineTowardWhat204.html",
+      "bytes": 17025,
+      "sha256": "fbda43432244cd07a49da38ba335b94132dc25829cdbda4454e14318f4e27de8"
+    },
+    {
       "path": "works/Friedman2026ITraceVerificationFirstWebcam165.html",
       "bytes": 18735,
       "sha256": "6535fc69adf14bff875cc735a94737eb04154b924a9fb692594faadd300714aa"
@@ -21688,6 +21973,11 @@
       "path": "works/Friedman2026IntroductionBiologyGenerativeApproach117.html",
       "bytes": 18055,
       "sha256": "8761c3fb1227d1c62526c1f7d9a23f5267470d03c90e2caddc13b4eb59e34aec"
+    },
+    {
+      "path": "works/Friedman2026LineSetHoldingInstruments201.html",
+      "bytes": 17415,
+      "sha256": "bebae2a85575900bd54a8ab46ea0e0b2fa2a4b1c94f376a999d65bd2010a499b"
     },
     {
       "path": "works/Friedman2026LivingMetaAnalysisArchitecture110.html",
@@ -21708,6 +21998,11 @@
       "path": "works/Friedman2026MusicNeverStoppedGrateful150.html",
       "bytes": 18995,
       "sha256": "04914d63d68b9f10cf9eba5785bfadbac4d51b66a5bc06e33943a8d806a91380"
+    },
+    {
+      "path": "works/Friedman2026PersonalRedLinesDevelopment203.html",
+      "bytes": 17824,
+      "sha256": "165439a5f22d1f763226093cf4f7e8c574f62b6a9857e86dcb0ca6ad39c5d2d8"
     },
     {
       "path": "works/Friedman2026PersonalYouTube200Livestreams006.html",
@@ -21828,6 +22123,16 @@
       "path": "works/Friedman2026WhenDoBugsSee126.html",
       "bytes": 18764,
       "sha256": "9613fff2f1d2f84b426769dc2c572893431858e77b5823f63398bccb272af453"
+    },
+    {
+      "path": "works/Friedman2026WhiteLineTypedLedger202.html",
+      "bytes": 17382,
+      "sha256": "c9f6eb33ef2701a1b8134d22fcd35d7509572e6ec466611715f67d866deba071"
+    },
+    {
+      "path": "works/Friedman2026WitnessRegisterCoRegistration200.html",
+      "bytes": 17796,
+      "sha256": "aa8bd5ec5911bd171ca5f0390612487ba1a84beef39b306dbb64d67504e1bc67"
     },
     {
       "path": "works/index.html",
