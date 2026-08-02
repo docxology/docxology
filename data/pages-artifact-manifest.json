@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-02T23:01:17Z",
-  "source_commit_at_generation": "ea4c3c5eb0064dc5c37c78b89d715347d55d7f23",
+  "generated_at": "2026-08-02T23:11:38Z",
+  "source_commit_at_generation": "52e7d15660abcaea8c884a54c6cde572bab585e2",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 827801293,
+    "source_bytes": 827804354,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4429,
-    "artifact_bytes": 828580753
+    "artifact_bytes": 828583814
   },
   "included_files": [
     {
@@ -56,8 +56,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 44483,
-      "sha256": "987692733beb96c73e69874a4de54823d2f754979fd49813c486106628b3dc63"
+      "bytes": 45141,
+      "sha256": "3fc636b210f90d54150c6464d50eac6e2571b8a31858e74691266c1cfb5c309b"
     },
     {
       "path": "CITATION.cff",
@@ -76,8 +76,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 35370,
-      "sha256": "4390fa3c8f1db5c7d3274ab8f23d07d622b0359031b7de293d8e6251eedf27b6"
+      "bytes": 36896,
+      "sha256": "82e291e7daaff820bbc4716ff153580347eac70e42f500d1a173c950bd04ba27"
     },
     {
       "path": "SKILL.md",
@@ -5977,7 +5977,7 @@
     {
       "path": "data/reproducibility.json",
       "bytes": 120236,
-      "sha256": "5d2ef42ab5b027e5e1481688ef2608addb2fc4c0326335df9fdcf105be36f347"
+      "sha256": "1a7182d825e9c4b234e95f6aafd04e596f2f2a178a6c7d9ae7c7e1c4495e15cb"
     },
     {
       "path": "data/resume.json",
@@ -14457,7 +14457,7 @@
     {
       "path": "reports/asset_size_2026-08-02.json",
       "bytes": 3320,
-      "sha256": "8c3b97e2e7473c6fe0fd5c29f72416048ac9d9c9c52e44bcf40edad3e0d70338"
+      "sha256": "c59fed9c2fe62dcc1acad49213362f227e1b6f181d11944d21f40318bef89a87"
     },
     {
       "path": "reports/browser-qa/2026-07-18/manifest.json",
@@ -15416,8 +15416,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 76338,
-      "sha256": "27c19384c09462094414cddc093f68b5391f6cdbd2dd181c9ec22debd19195ee"
+      "bytes": 77215,
+      "sha256": "3c481b4e2b8b83853be5ac0e46254e424ab3a20d31bc6492ef25b71a530b20e9"
     },
     {
       "path": "uv.lock",
