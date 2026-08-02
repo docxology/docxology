@@ -28,7 +28,7 @@ Active Inference · Bayesian Modeling · Computational Biology · Cognitive Secu
 
 </div>
 
-**Quick links:** [📚 Publications](publications.html) · [📄 Works](works/) · [📄 Resume/CV](resume/resume.pdf) · [🔎 Search](search.html) · [🧭 Domains](domains.html) · [💻 Software](software.html) · [📁 Papers](papers/) · [🔗 All Links](pages/LINKS.md) · [🧾 Cite & Verify](cite-verify.html) · [🧭 Discovery](discovery.html) · [🗃️ Data Catalog](catalog.html) · [📝 Updates](updates.html) · [👤 Full Profile](pages/PROFILE.md) · [🤝 Collaborators](collaborators.html) · [🎥 Media & Talks](media.html) · [🎯 Consulting](#available-for-consulting-tutoring) · [🔊 Read Aloud](#) (press `T`)
+**Quick links:** [📚 Publications](publications.html) · [📄 Works](works/) · [🔬 Research](research.html) · [🧭 Domains](domains.html) · [💻 Software](software.html) · [📁 Papers](papers/) · [📊 Reports & Counts](reports.html) · [✅ Reproducibility](reproducibility.html) · [🔎 Search](search.html) · [🧾 Cite & Verify](cite-verify.html) · [🧭 Discovery](discovery.html) · [🗃️ Catalog](catalog.html) · [📝 Updates](updates.html) · [🖼️ Art](art.html) · [🪙 NFT](nft.html) · [🧘 Meditations](meditations.html) · [🎥 Media](media.html) · [📺 Videos](videos.html) · [👤 Profile](pages/PROFILE.md) · [🤝 Collaborators](collaborators.html) · [ℹ️ About](about.html) · [🔗 All Links](pages/LINKS.md) · [📄 Resume/CV](resume/resume.pdf) · [🎯 Consulting](#available-for-consulting-tutoring) · [🔊 Read Aloud](#) (press `T`)
 
 ---
 
@@ -68,23 +68,28 @@ I study **ants**, **Active Inference**, and **cognitive security** — and build
 | 📄 [**works/**](works/) | **Generated per-work landing pages** — one canonical HTML page per bibliography row with citation, DOI, primary source, and documentation link |
 | 🔎 [**search.html**](search.html) / [**opensearch.xml**](opensearch.xml) | **Human and browser search** — searchable index over works, software, people, organizations, claims, and key pages |
 | 📝 [**updates.html**](updates.html) / [**CHANGELOG.md**](CHANGELOG.md) | **Human-readable update history** — recent public-index and generated-site changes |
-| 🧭 [**domains.html**](domains.html) / [**pages/DOMAINS.md**](pages/DOMAINS.md) | Domain landing pages for Entomology, Active Inference, Cognitive Security, Art & Synergetics, and Computational work |
+| 🧭 [**domains.html**](domains.html) / [**pages/DOMAINS.md**](pages/DOMAINS.md) | Domain landing-page hub — Entomology, Active Inference, Cognitive Security, Art & Synergetics, Computational, Presentations & Media, AII Ecosystem, Biomedicine ([each cluster has its own `domain-*.html`](domain-active-inference.html)) |
 | 💻 [**pages/SOFTWARE.md**](pages/SOFTWARE.md) | Curated owned repos + Active Inference Institute contributions — AI frameworks, geometry engines, entomology tools, and developer infrastructure; see the [primary repository inventory](repositories.html) and [fork archive](repositories-forks.html) for public GitHub coverage |
 | 📁 [**papers/**](papers/) | Per-paper folders — each with README.md, AGENTS.md, and Claude Code-compatible SKILL.md where a bibliography row has in-tree documentation |
-| 📄 [**pages/**](pages/) | **Documentation Hub** — Centralized directories for videos, courses, pathways, and repository integrations |
+| 📄 [**pages/**](pages/README.md) | **Documentation Hub** — Centralized directories for videos, courses, pathways, and repository integrations |
 | 🔗 [**pages/LINKS.md**](pages/LINKS.md) | **Comprehensive directory** of all web presences — academic profiles, social media, art, NFTs, podcasts, courses, organizations |
+| 📖 [**pages/WIKIPEDIA.md**](pages/WIKIPEDIA.md) | **Wikipedia presence** — Wikidata/Wikipedia entries and identity-graph links |
 | 🧭 [**pages/DISCOVERY.md**](pages/DISCOVERY.md) | **Agentic discovery map** — canonical IDs, public APIs, source queries, and verification notes |
-| 🧾 [**cite-verify.html**](cite-verify.html) / [**evidence.html**](evidence.html) | **Citation and evidence layer** — preferred citation, public identifiers, source-of-truth rules, and claim ledger ([Markdown](pages/CITE_VERIFY.md)) |
+| 🧾 [**cite-verify.html**](cite-verify.html) / [**evidence.html**](evidence.html) | **Citation and evidence layer** — preferred citation, public identifiers, source-of-truth rules, and claim ledger ([CITE_VERIFY](pages/CITE_VERIFY.md) · [EVIDENCE](pages/EVIDENCE.md)) |
 | 📄 [**resume/**](resume/) / [**data/resume.json**](data/resume.json) | **Structured resume/CV exports** — source-backed JSON, plaintext variants, and generated PDF built from canonical works, software, metrics, and resume-specific records |
 | ✅ [**pages/VERIFICATION_LOG.md**](pages/VERIFICATION_LOG.md) | **Independent verification log** — dated primary-source corroboration of load-bearing claims (Scholar metrics, EIN, NSF award, DOIs, identity graph) against sources not controlled by the subject ([JSON](data/verification-log.json)) |
 | 👤 [**pages/PROFILE.md**](pages/PROFILE.md) | **Detailed biography** — education, research areas, organizations, teaching, awards, art, and key metrics |
 | 🤝 [**pages/COLLABORATORS.md**](pages/COLLABORATORS.md) | **Research network** — key collaborators (Friston, Gordon, Albarracin, Fields, etc.) with joint publications and institutional map |
 | 🎥 [**pages/MEDIA.md**](pages/MEDIA.md) | **Talks, podcasts & press** — conference presentations, podcast appearances, video series, courses, interviews, and press coverage |
+| 📚 [**pages/RESOURCES.md**](pages/RESOURCES.md) / [**pages/VIDEOS.md**](pages/VIDEOS.md) | **Resources & video index source** — curated resource compendium and the videos/courses catalogue |
+| 🖼️ [**art.html**](art.html) / [**nft.html**](nft.html) / [**meditations.html**](meditations.html) | **Art & creative portfolio** — gallery, NFT collectibles (Curio Cards), and meditations pages ([art/](art/README.md) holds local gallery assets) |
 | 🤖 [**llms.txt**](llms.txt) / [**CITATION.cff**](CITATION.cff) / [**codemeta.json**](codemeta.json) / [**search-index.json**](search-index.json) / [**feed.xml**](feed.xml) | **Machine-readable discovery metadata** — agent map, citation metadata, CodeMeta, search index, and RSS feed |
 | 🗃️ [**catalog.html**](catalog.html) / [**data/catalog.json**](data/catalog.json) / [**GENERATED.md**](GENERATED.md) | **Structured data and rebuild map** — Schema.org DataCatalog plus generated-artifact manifest and commands |
-| 📦 [**bibliography.bib**](bibliography.bib) / [**bibliography.csl.json**](bibliography.csl.json) / [**bibliography.ris**](bibliography.ris) / [**data/**](data/) | **Exports for citation managers and agents** — BibTeX, CSL JSON, RIS, works/artworks/software/people/organization/claims/reconciliation JSON |
+| 📦 [**exports.html**](exports.html) / [**bibliography.bib**](bibliography.bib) / [**bibliography.csl.json**](bibliography.csl.json) / [**bibliography.ris**](bibliography.ris) / [**data/**](data/) | **Exports for citation managers and agents** — HTML export hub, BibTeX, CSL JSON, RIS, works/artworks/software/people/organization/claims/reconciliation JSON |
 | ✅ [**reports/**](reports/) / [**CHANGELOG.md**](CHANGELOG.md) / [**docs/**](docs/README.md) | **Maintenance evidence & documentation** — source snapshots, reconciliation/accessibility/visual-QA reports, changelog, and the documentation index (architecture, operations, [canonical URL policy](docs/seo/canonical-policy.md), design, security, releases) |
+| 📊 [**reports.html**](reports.html) / [**research.html**](research.html) / [**reproducibility.html**](reproducibility.html) | **Reports, research & reproducibility hub** — generated report index, research overview, and the reproducibility ledger ([Markdown](pages/REPRODUCIBILITY.md)) |
 | 🧑‍🚀 [**AGENT_START.md**](AGENT_START.md) / [**humans.txt**](humans.txt) / [**.well-known/security.txt**](.well-known/security.txt) | **Operational entrypoints** — agent task recipes, human credits/contact, and responsible disclosure metadata |
+| ✅ [**agent-verify.html**](agent-verify.html) / [**about.html**](about.html) | **Agent verification & about** — agent-ready verification recipes and a short bio page |
 | 🛠️ [**code/**](code/) | **Repository Source Code** — `orchestrators/`, `src/`, and `tests/` directories containing executable pipelines and core functions |
 | 📖 [**docs/**](docs/) | **Central Documentation** — Repository-wide operational documentation |
 
