@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-07-17T21:37:09+00:00",
-  "source_commit_at_generation": "07566bea99b33f7a2e178990afcf9556e7e79984",
+  "source_commit_at_generation": "b65b226a15bbf569618febc773a6f9b3362dc7a8",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -26,24 +26,24 @@
     "data/current-counts.json": "dc638fa14888da618a1b20f94bb175bf7443008194245694527f53b263f11fab",
     "data/coverage-exceptions.json": "0d801ced762aac6e7a1416687a6ad5c9dbbeeb27ed61d6a81b9f3b096260661f",
     "data/repository-classification.json": "111324bdb34d585b0c17e23e3c4c1c449a1f89edef14ecf857fc7271bfe1ea1d",
-    "data/agent-index.json": "3310dff8c5526eb5b15820eb5bb03a691c955fc77a8d440f0a7fe92682619aee",
+    "data/agent-index.json": "cabf03dcf15488ac7edee49c1c28d4fab0d7c8565f24f47711fe4aed1effe0ef",
     "data/generated-manifest.json": "024b67e3876fd3cb01411052cb6083eea8ab3bd256886d5e125ec6d08240f4e6",
-    "data/pages-artifact-manifest.json": "76c46834c687691e7c5adb0ba4f286497ee92ef25ac773cb6861bddea9c7d3ac"
+    "data/pages-artifact-manifest.json": "ef79fd55f5ce1a134120c23fe3d279e9fb62670ffc97158b8387843c9e6fd7b8"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "07566bea99b33f7a2e178990afcf9556e7e79984",
-    "artifact_file_count": 4439,
-    "artifact_bytes": 827848138,
+    "source_commit_at_generation": "b65b226a15bbf569618febc773a6f9b3362dc7a8",
+    "artifact_file_count": 4447,
+    "artifact_bytes": 832886629,
     "omitted_paper_image_count": 9004
   },
   "deployment": {
-    "commit": "43a8453dd2f286edfc318bc74a05f451830a4159",
-    "workflow_run_id": 30754415622,
-    "workflow_url": "https://github.com/docxology/docxology/actions/runs/30754415622",
+    "commit": "b65b226a15bbf569618febc773a6f9b3362dc7a8",
+    "workflow_run_id": 30767117707,
+    "workflow_url": "https://github.com/docxology/docxology/actions/runs/30767117707",
     "pages_status": "built",
     "verification_report": "reports/live_site_verification_2026-08-02.json",
-    "verification_generated_at": "2026-08-02T15:30:05Z",
+    "verification_generated_at": "2026-08-02T21:07:56Z",
     "verification_overall_ok": true,
     "verified_routes": "17/17",
     "deployment_pending": true,
