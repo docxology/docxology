@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-02T16:10:20Z",
-  "source_commit_at_generation": "94a4f99ee404f1503d080f030fcca0cc47e6784a",
+  "generated_at": "2026-08-02T16:15:27Z",
+  "source_commit_at_generation": "a70afb2d7fa30821837bdf50e0831b8b07164886",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 826996765,
+    "source_bytes": 826996846,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4439,
-    "artifact_bytes": 827778122
+    "artifact_bytes": 827778203
   },
   "included_files": [
     {
@@ -5977,7 +5977,7 @@
     {
       "path": "data/reproducibility.json",
       "bytes": 120871,
-      "sha256": "b48e25604cbc2f506c8fd7544338c42ada582052d594b45eef6a9d00d9cce79d"
+      "sha256": "6bb5fd66003e96c6b057c792cc51dd151ac7d7f44adfa0021bdd66773b506d49"
     },
     {
       "path": "data/resume.json",
@@ -14502,7 +14502,7 @@
     {
       "path": "reports/asset_size_2026-08-02.json",
       "bytes": 3320,
-      "sha256": "b7e89c2916f64b16e8ce5145d0e5bb5c229c95e7a6d2d5f0ad7def49656a04ca"
+      "sha256": "239add34d136c21520398397fc25fdc4367df5e440e9a793f3732acf075b0682"
     },
     {
       "path": "reports/browser-qa/2026-07-18/manifest.json",
@@ -15442,7 +15442,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 240244,
-      "sha256": "423c64199dfd2f282e4da71856a8c6fec3f268906a3f92dfb808a180d6e31563"
+      "sha256": "f899cbe5c98cb9bef19f08730da4c92e6899f73a5d29688f4c439276dda3b6c4"
     },
     {
       "path": "software.html",
@@ -15461,8 +15461,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 74266,
-      "sha256": "19654194fb0a09519b3f3a3913a4654b114b1c22347ea0b71dd92f8f09cf82bc"
+      "bytes": 74347,
+      "sha256": "e8cd49651ccd445d851243063cda94c5c535cf0c81c3fac35ec8eeb31d03ff46"
     },
     {
       "path": "uv.lock",
