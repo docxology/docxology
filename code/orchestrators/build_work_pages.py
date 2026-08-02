@@ -536,7 +536,7 @@ def page_head(work: dict) -> str:
         .platform-list a{{color:var(--silver-bright);text-decoration:none}}
         .platform-list a:hover{{text-decoration:underline}}
         .platform-list .muted{{color:var(--text-muted)}}
-        .breadcrumb{{max-width:960px;margin:1.4rem auto 0;padding:0 2rem}}
+        .breadcrumb{{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:960px;margin:0 auto}}
         .breadcrumb ol{{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}}
         .breadcrumb li+li::before{{content:'\\203A';margin-right:.4rem;color:var(--text-muted)}}
         .breadcrumb a{{color:var(--silver-bright);text-decoration:none}}

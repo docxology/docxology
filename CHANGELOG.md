@@ -23,11 +23,13 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   mobile hamburger were hidden/unclickable behind the breadcrumb bar. Fixed by
   pinning the breadcrumb as a slim bar directly below the nav
   (`position:fixed;top:74px;z-index:150`) at a z-index below the nav (200), in
-  `code/src/site_nav.py` `BREADCRUMB_CSS` for generated pages and the inline
-  breadcrumb `<style>` on the 11 hand-authored pages. Verified via Playwright:
-  mobile hamburger receives taps and opens the menu, desktop nav links are no
-  longer covered (0/11 covered), breadcrumb sits below the nav and non-hero
-  pages stay clear. `pytest` 231 green, `validate_repo` green.
+  `code/src/site_nav.py` `BREADCRUMB_CSS` (generated pages), the inline
+  breadcrumb `<style>` on the 11 hand-authored pages, and the work-page
+  template in `code/orchestrators/build_work_pages.py` (230 breadcrumb pages
+  total). Verified via Playwright: mobile hamburger receives taps and opens the
+  menu, desktop nav links are no longer covered (0/11 covered), breadcrumb sits
+  below the nav and non-hero pages stay clear. `pytest` 231 green,
+  `validate_repo` green.
 - Bibliography **199→206**; paper folders **181→188**.
 - CITATION.cff version/date-released bumped to `2026.08.02`.
 
