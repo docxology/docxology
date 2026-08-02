@@ -15,6 +15,19 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 - **Authors populated** on all seven new rows (Friedman, Daniel Ari).
 - **Zenodo uncatalogued queue cleared** (0 new remaining; the SynthOBS `21418901` and CogSecSkills `20804586` flags are stale-version duplicate detections of already-catalogued works and were intentionally not added; the AII-Ecosystem `17982447` non-canonical-DOI note remains the documented exception).
 - **GitHub paired-publication sync deferred**: `sync_paired_publications.py` could not complete due a GitHub API rate limit (HTTP 403). `codomyrmex`'s GitHub repo is already catalogued in `SOFTWARE.md` (Developer Tools); new line-set GitHub repos remain an open DOC-005 triage item pending a manual review pass.
+- **Accessibility/usability fix — site header was unusable**: the global
+  `nav{position:fixed;top:0;z-index:200;background;...}` rule in `style.css`
+  applies to every `<nav>` element, so the breadcrumb `<nav>` rendered as a
+  second full-width fixed dark bar painted directly over the primary
+  navigation. On every page and viewport the logo, middle nav links, and the
+  mobile hamburger were hidden/unclickable behind the breadcrumb bar. Fixed by
+  pinning the breadcrumb as a slim bar directly below the nav
+  (`position:fixed;top:74px;z-index:150`) at a z-index below the nav (200), in
+  `code/src/site_nav.py` `BREADCRUMB_CSS` for generated pages and the inline
+  breadcrumb `<style>` on the 11 hand-authored pages. Verified via Playwright:
+  mobile hamburger receives taps and opens the menu, desktop nav links are no
+  longer covered (0/11 covered), breadcrumb sits below the nav and non-hero
+  pages stay clear. `pytest` 231 green, `validate_repo` green.
 - Bibliography **199→206**; paper folders **181→188**.
 - CITATION.cff version/date-released bumped to `2026.08.02`.
 

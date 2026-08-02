@@ -227,7 +227,13 @@ def ensure_agent_map_link(markup: str, *, href: str = "data/agent-index.json") -
 # Inline CSS for the breadcrumb component. Kept inline (rather than in style.css)
 # so pages render correctly without depending on a bumped style.css cache version.
 BREADCRUMB_CSS = (
-    ".breadcrumb{max-width:1100px;margin:1.4rem auto 0;padding:0 2rem}"
+    # This element is a <nav>, so it inherits the global "nav{position:fixed;
+    # top:0;z-index:200;...}" toolbar rule in style.css. That previously made the
+    # breadcrumb a second full-width fixed bar that PAINTED OVER the primary nav
+    # (logo + links + mobile hamburger), leaving the site header unusable on every
+    # page. Fix: pin it as a slim bar directly BELOW the fixed nav, with a z-index
+    # below the nav (200) so the nav always stays on top and clickable.
+    ".breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}"
     ".breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}"
     ".breadcrumb li+li::before{content:'\\203A';margin-right:.4rem;color:var(--text-muted)}"
     ".breadcrumb a{color:var(--silver-bright);text-decoration:none}"

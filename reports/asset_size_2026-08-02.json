@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-02T15:19:36Z",
+  "generated_at": "2026-08-02T16:08:45Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 91,
   "warnings": 0,
-  "total_bytes": 14429351,
+  "total_bytes": 14434851,
   "largest": [
     {
       "path": "data/videos.json",
@@ -29,7 +29,7 @@
     {
       "path": "publications.html",
       "kind": "html",
-      "bytes": 360238,
+      "bytes": 360458,
       "budget_bytes": 500000,
       "ok": true
     },
@@ -85,7 +85,7 @@
     {
       "path": "repositories-forks.html",
       "kind": "html",
-      "bytes": 200080,
+      "bytes": 200300,
       "budget_bytes": 500000,
       "ok": true
     },
@@ -120,7 +120,7 @@
     {
       "path": "software.html",
       "kind": "html",
-      "bytes": 161073,
+      "bytes": 161293,
       "budget_bytes": 500000,
       "ok": true
     },
@@ -141,7 +141,7 @@
     {
       "path": "repositories.html",
       "kind": "html",
-      "bytes": 127280,
+      "bytes": 127500,
       "budget_bytes": 500000,
       "ok": true
     }
