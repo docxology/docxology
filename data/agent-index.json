@@ -1,6 +1,6 @@
 {
   "schema_version": "1.4",
-  "generated_at": "2026-08-07T21:17:36+00:00",
+  "generated_at": "2026-08-07T21:31:24+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -121,7 +121,7 @@
     },
     "software": {
       "path": "/data/software.json",
-      "count": 133,
+      "count": 143,
       "schema": "SoftwareRepository"
     },
     "repositories": {
@@ -166,7 +166,7 @@
     },
     "repository_classification": {
       "path": "/data/repository-classification.json",
-      "count": 112,
+      "count": 101,
       "schema": "RepositoryClassification"
     },
     "pages_artifact": {
@@ -891,7 +891,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-08-07T21:17:36+00:00",
+        "checked_at": "2026-08-07T21:31:24+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -968,14 +968,14 @@
         "full_text_papers": 171,
         "generated_exports": {
           "data_publications_ld_main_entity": 206,
-          "data_software_json": 133,
-          "data_software_ld_main_entity": 133,
+          "data_software_json": 143,
+          "data_software_ld_main_entity": 143,
           "data_works_json": 206
         },
         "github_inventory": {
           "ActiveInferenceInstitute": 41,
           "archived": 0,
-          "curated": 129,
+          "curated": 140,
           "docxology": 200,
           "fork_ActiveInferenceInstitute": 2,
           "fork_docxology": 85,
@@ -987,11 +987,11 @@
           "public": 241,
           "recently_updated": 144,
           "total": 241,
-          "uncataloged": 112
+          "uncataloged": 101
         },
         "paired_publication_decisions": {
           "decision": "accept",
-          "groups": 24,
+          "groups": 25,
           "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.",
           "raw_candidates": 86
         },
@@ -1019,8 +1019,8 @@
         },
         "software": {
           "active_inference_institute": 38,
-          "curated_total": 133,
-          "docxology_owned": 95
+          "curated_total": 143,
+          "docxology_owned": 105
         },
         "types": {
           "Books": 5,
@@ -1031,7 +1031,7 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-08-07T21:17:36+00:00",
+      "generated_at": "2026-08-07T21:31:24+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1054,11 +1054,11 @@
         "hard_limit_bytes": 1073741824,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 827538468,
+        "source_bytes": 853280885,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4430,
-        "artifact_bytes": 828318042
+        "artifact_file_count": 4452,
+        "artifact_bytes": 854064342
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1072,24 +1072,24 @@
   },
   "dataset_hashes": {
     "works": "d15e50848fc484d60dbba50d9e577e078a60369e7bbe6d838976e00f442cd950",
-    "software": "6b61c68bca9e53552562da88dcbae3297de3262c4adf5da629147b3cb0c9c6e8",
-    "repositories": "1bff26ba53640176919c594180e085b61542581166636935ab231040fa6cb2f5",
+    "software": "875ddf9ff451f331ea0bbbd768ce6450c20c218d1bf6748f0febb946de07bd9f",
+    "repositories": "7be239e69a8198cd44ba3b8cac725af3a2800fb4c08384d9e8586030e87be173",
     "artworks_index": "25adc127f1d2a46abd676ac37735a0bf6d2fbabea25992b609f203f24f78977c",
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "2d3b1fa0a8d21d4d81f3d082815718a4b3b9a3a4983785cfd85ae68af4200be3",
     "videos_index": "ffc9ec7c4de9f14367f80bd2257aef411feee0c1ed3b3cab6c494753c0875dab",
-    "search": "ec582faf421373bba4405a43870e620e9891df5259fdd46ac0ed7adca87e3cd3",
-    "claims": "ab1b5a463aed449d27604e5fb56ff7a0c69f9336be81bdd347d23454963e6975",
+    "search": "e7f76cbcc2bb0be56bc97943ed09699ea9bebf8057d70c1c2b04aaa2eb8842d8",
+    "claims": "31afee568bb4a534eaac78fdd041986931761accd1363a258a94e26f6cc4702d",
     "coverage_exceptions": "eee1cc91c204fb60b2e636253a0ff91dd7853bcf44bc863ec3fa3a139836b0af",
-    "repository_classification": "6795fbcfe5ea8ef1b2abb07d1491a916ab2da526e28a0486d054e73d3152151a",
-    "people": "fa34eef33329cb4a49c35b6d45728b0ba0728675192f0a5eda7b70a4bc99457d",
-    "organizations": "362e8b47c2288691ad6553c3ffe718b6f7b38a8e08166858a81bc5454eb2767e",
-    "resume": "02b4428c6fb2e4ab62f911a0839d77a7702787bf79bedad03c5b1b39b04ed0a3",
+    "repository_classification": "327b57820d01dcb852bc3845f12c818528952f8f841807f0fca93c31d4cfd61e",
+    "people": "5598ce4702ea456206ca9742421546bd8a8d534a0e04d6aebc9354fec0db1d9a",
+    "organizations": "e225e12c7d28f5a610509a22d3154572dad2e12d7edaeb938fa7e5e8c0746b83",
+    "resume": "6d1d2de9aa8150a9eb0402990d0b9243d18572798eabaac072b3ac057e92cc1a",
     "work_enrichment": "abc907886af74d88b4e76df4fb14c7cb05c6a11bf405c71b274094c20cc11fb9",
-    "catalog": "9023f34f936d7fb6ab8aeac4b154c774e4679cd8ae392dbbabcbcc254bea077a",
-    "reconciliation": "d288fcf6ca79eba1a9410c9d5d5422cb7c83bd40947a74014527c521b2f02553",
+    "catalog": "b3b4a2488124ed0022cc6400bb51fd2200157d01d01b82d5350ec1cc7da23c10",
+    "reconciliation": "ae023330fa00e65c5dcad77b6eccdc197251177123d275089a4d84701eae105b",
     "generated_manifest": "ae6937bef3433dc58e5ce0c891ee88513a8f257649089b9325c10ba19263538a",
-    "current_counts": "2d6a3221de3423f03b7b5da348d35fce7ea786af351c5113e4cb0aa499d03dd4"
+    "current_counts": "6e8282edf75fc225d400484ce65834e92fa6edfee5b4078ea34607ef0bf4f6cd"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -1131,14 +1131,14 @@
     "full_text_papers": 171,
     "generated_exports": {
       "data_publications_ld_main_entity": 206,
-      "data_software_json": 133,
-      "data_software_ld_main_entity": 133,
+      "data_software_json": 143,
+      "data_software_ld_main_entity": 143,
       "data_works_json": 206
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 41,
       "archived": 0,
-      "curated": 129,
+      "curated": 140,
       "docxology": 200,
       "fork_ActiveInferenceInstitute": 2,
       "fork_docxology": 85,
@@ -1150,11 +1150,11 @@
       "public": 241,
       "recently_updated": 144,
       "total": 241,
-      "uncataloged": 112
+      "uncataloged": 101
     },
     "paired_publication_decisions": {
       "decision": "accept",
-      "groups": 24,
+      "groups": 25,
       "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.",
       "raw_candidates": 86
     },
@@ -1182,8 +1182,8 @@
     },
     "software": {
       "active_inference_institute": 38,
-      "curated_total": 133,
-      "docxology_owned": 95
+      "curated_total": 143,
+      "docxology_owned": 105
     },
     "types": {
       "Books": 5,

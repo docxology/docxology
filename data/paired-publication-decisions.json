@@ -4,7 +4,7 @@
   "source_review_queue": "reports/paired_publications_review_queue_2026-06-04.md",
   "decision_summary": {
     "decision": "accept",
-    "groups": 24,
+    "groups": 25,
     "raw_candidates": 86,
     "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows."
   },
@@ -84,7 +84,7 @@
           "github_repo": "ActiveInferenceInstitute/GeneralizedNotationNotation",
           "github_release_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v1.2.0",
           "release_tag": "v1.2.0",
-          "release_name": "v1.2.0 — Data Accuracy & Documentation Sync",
+          "release_name": "v1.2.0 \u2014 Data Accuracy & Documentation Sync",
           "resource_type": {
             "title": "Software",
             "type": "software"
@@ -105,7 +105,7 @@
           "github_repo": "ActiveInferenceInstitute/GeneralizedNotationNotation",
           "github_release_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v1.3.0",
           "release_tag": "v1.3.0",
-          "release_name": "v1.3.0 — The Pipeline Coherence & Agentic Integration Release",
+          "release_name": "v1.3.0 \u2014 The Pipeline Coherence & Agentic Integration Release",
           "resource_type": {
             "title": "Software",
             "type": "software"
@@ -2238,6 +2238,21 @@
           "review_source": "manual review: v1.0.0 is superseded by v1.0.2, canonical DOI 10.5281/zenodo.20749817, no duplicate bibliography row",
           "source_report": "reports/paired_publications_2026-06-18.json"
         }
+      ]
+    },
+    {
+      "id": "R25",
+      "decision": "rejected",
+      "decided_at": "2026-08-07",
+      "decided_by": "maintainer",
+      "doi": "10.5281/zenodo.20804585",
+      "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+      "candidate_github_repo": "docxology/CogSecSkills",
+      "folder": null,
+      "representation": "superseded-version false positive: bibliography row #174 already cites the newer concept 10.5281/zenodo.21513316; the v1.0.0 GitHub release pairs with the old concept 20804585 and must not create a duplicate row",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        "https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0"
       ]
     }
   ]

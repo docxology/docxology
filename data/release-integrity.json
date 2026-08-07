@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-07-17T21:37:09+00:00",
-  "source_commit_at_generation": "d76ad3009bd2428845a99b355bc73c7295c394a8",
+  "source_commit_at_generation": "a8bf3b72912551b13d631dc4a31ec143c0c7ccdd",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -21,20 +21,20 @@
   },
   "source_sha256": {
     "pages/BIBLIOGRAPHY.md": "9c002bcc9d61d3578d4d1aaf10bcaea36f5eb20c9f79af4c315212c7b5655ad5",
-    "pages/SOFTWARE.md": "597de3461e167ddd0300df9ae5c7b991d8fa44fef5a2c814d301b6c411d48fb6",
+    "pages/SOFTWARE.md": "5aa667f6dc2fa332d081bc26dd2df567e4f17cf4aaa4db348699b59ebb995fdf",
     "resume/source.json": "9e2dd487986d64d10ab3b96fa20d8d8fb86b9196b75cb92149672d25f058c0a2",
-    "data/current-counts.json": "2d6a3221de3423f03b7b5da348d35fce7ea786af351c5113e4cb0aa499d03dd4",
+    "data/current-counts.json": "6e8282edf75fc225d400484ce65834e92fa6edfee5b4078ea34607ef0bf4f6cd",
     "data/coverage-exceptions.json": "eee1cc91c204fb60b2e636253a0ff91dd7853bcf44bc863ec3fa3a139836b0af",
-    "data/repository-classification.json": "6795fbcfe5ea8ef1b2abb07d1491a916ab2da526e28a0486d054e73d3152151a",
-    "data/agent-index.json": "454a592bb369cb9052974ed152f7f7816677fbb30c63f0aba6a061621b075635",
+    "data/repository-classification.json": "327b57820d01dcb852bc3845f12c818528952f8f841807f0fca93c31d4cfd61e",
+    "data/agent-index.json": "34b07e6724f29c793aa01d238f3202e3120f03a1398cee771ae08edd3aa14234",
     "data/generated-manifest.json": "ae6937bef3433dc58e5ce0c891ee88513a8f257649089b9325c10ba19263538a",
-    "data/pages-artifact-manifest.json": "326ae12ecc134be7451ec1f1ad9ec4bb475ea18ffdac48794395646c4458ea01"
+    "data/pages-artifact-manifest.json": "43ac1c3a733447c1ae69a380c174e420120adcb125703e371485c5386ce6c3de"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "d76ad3009bd2428845a99b355bc73c7295c394a8",
-    "artifact_file_count": 4430,
-    "artifact_bytes": 828318042,
+    "source_commit_at_generation": "a8bf3b72912551b13d631dc4a31ec143c0c7ccdd",
+    "artifact_file_count": 4452,
+    "artifact_bytes": 854064342,
     "omitted_paper_image_count": 8886
   },
   "deployment": {
@@ -72,14 +72,14 @@
     "full_text_papers": 171,
     "generated_exports": {
       "data_publications_ld_main_entity": 206,
-      "data_software_json": 133,
-      "data_software_ld_main_entity": 133,
+      "data_software_json": 143,
+      "data_software_ld_main_entity": 143,
       "data_works_json": 206
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 41,
       "archived": 0,
-      "curated": 129,
+      "curated": 140,
       "docxology": 200,
       "fork_ActiveInferenceInstitute": 2,
       "fork_docxology": 85,
@@ -91,11 +91,11 @@
       "public": 241,
       "recently_updated": 144,
       "total": 241,
-      "uncataloged": 112
+      "uncataloged": 101
     },
     "paired_publication_decisions": {
       "decision": "accept",
-      "groups": 24,
+      "groups": 25,
       "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.",
       "raw_candidates": 86
     },
@@ -123,8 +123,8 @@
     },
     "software": {
       "active_inference_institute": 38,
-      "curated_total": 133,
-      "docxology_owned": 95
+      "curated_total": 143,
+      "docxology_owned": 105
     },
     "types": {
       "Books": 5,

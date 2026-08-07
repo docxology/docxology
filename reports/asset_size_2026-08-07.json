@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-07T21:17:43Z",
+  "generated_at": "2026-08-07T21:34:32Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 91,
   "warnings": 0,
-  "total_bytes": 14140055,
+  "total_bytes": 14181145,
   "largest": [
     {
       "path": "data/videos.json",
@@ -43,14 +43,14 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 329548,
+      "bytes": 339019,
       "budget_bytes": 5000000,
       "ok": true
     },
     {
       "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 303728,
+      "bytes": 308564,
       "budget_bytes": 4000000,
       "ok": true
     },
@@ -78,8 +78,15 @@
     {
       "path": "data/github-repositories.json",
       "kind": "json-data",
-      "bytes": 208705,
+      "bytes": 208694,
       "budget_bytes": 4000000,
+      "ok": true
+    },
+    {
+      "path": "software.html",
+      "kind": "html",
+      "bytes": 176732,
+      "budget_bytes": 500000,
       "ok": true
     },
     {
@@ -94,13 +101,6 @@
       "kind": "json-data",
       "bytes": 165704,
       "budget_bytes": 4000000,
-      "ok": true
-    },
-    {
-      "path": "software.html",
-      "kind": "html",
-      "bytes": 164908,
-      "budget_bytes": 500000,
       "ok": true
     },
     {
@@ -120,7 +120,7 @@
     {
       "path": "repositories.html",
       "kind": "html",
-      "bytes": 137151,
+      "bytes": 137338,
       "budget_bytes": 500000,
       "ok": true
     },
@@ -141,7 +141,7 @@
     {
       "path": "data/reproducibility.json",
       "kind": "json-data",
-      "bytes": 121375,
+      "bytes": 121613,
       "budget_bytes": 4000000,
       "ok": true
     }

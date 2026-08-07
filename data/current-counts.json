@@ -18,14 +18,14 @@
     "full_text_papers": 171,
     "generated_exports": {
       "data_publications_ld_main_entity": 206,
-      "data_software_json": 133,
-      "data_software_ld_main_entity": 133,
+      "data_software_json": 143,
+      "data_software_ld_main_entity": 143,
       "data_works_json": 206
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 41,
       "archived": 0,
-      "curated": 129,
+      "curated": 140,
       "docxology": 200,
       "fork_ActiveInferenceInstitute": 2,
       "fork_docxology": 85,
@@ -37,11 +37,11 @@
       "public": 241,
       "recently_updated": 144,
       "total": 241,
-      "uncataloged": 112
+      "uncataloged": 101
     },
     "paired_publication_decisions": {
       "decision": "accept",
-      "groups": 24,
+      "groups": 25,
       "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.",
       "raw_candidates": 86
     },
@@ -69,8 +69,8 @@
     },
     "software": {
       "active_inference_institute": 38,
-      "curated_total": 133,
-      "docxology_owned": 95
+      "curated_total": 143,
+      "docxology_owned": 105
     },
     "types": {
       "Books": 5,
@@ -81,7 +81,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-08-07T21:17:36+00:00",
+  "generated_at": "2026-08-07T21:31:24+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T21:12:23Z",
+  "generated_at": "2026-08-07T21:33:36Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1681,
+  "count": 1691,
   "items": [
     {
       "id": "page:home",
@@ -6583,6 +6583,146 @@
       "content": "bond Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts ·  · Zenodo Markdown/Python docxology"
     },
     {
+      "id": "software:docxology:line_set",
+      "type": "software",
+      "title": "line_set",
+      "url": "https://github.com/docxology/line_set",
+      "summary": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "line_set A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice ·  · Zenodo Python docxology"
+    },
+    {
+      "id": "software:docxology:black_line",
+      "type": "software",
+      "title": "black_line",
+      "url": "https://github.com/docxology/black_line",
+      "summary": "A positive operating discipline for concise, inspectable, revisable work ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "black_line A positive operating discipline for concise, inspectable, revisable work ·  · Zenodo Python docxology"
+    },
+    {
+      "id": "software:docxology:white_line",
+      "type": "software",
+      "title": "white_line",
+      "url": "https://github.com/docxology/white_line",
+      "summary": "A typed ledger for the edge of a claim: absence, restraint, and the unknowable ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "white_line A typed ledger for the edge of a claim: absence, restraint, and the unknowable ·  · Zenodo Python docxology"
+    },
+    {
+      "id": "software:docxology:golden_line",
+      "type": "software",
+      "title": "golden_line",
+      "url": "https://github.com/docxology/golden_line",
+      "summary": "An aspirational thread and long-horizon direction for personal work ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "golden_line An aspirational thread and long-horizon direction for personal work ·  · Zenodo Python docxology"
+    },
+    {
+      "id": "software:docxology:red_line",
+      "type": "software",
+      "title": "red_line",
+      "url": "https://github.com/docxology/red_line",
+      "summary": "A personal security boundary and explicit No document for dual-use development ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "red_line A personal security boundary and explicit No document for dual-use development ·  · Zenodo Python docxology"
+    },
+    {
+      "id": "software:docxology:witness_register",
+      "type": "software",
+      "title": "witness_register",
+      "url": "https://github.com/docxology/witness_register",
+      "summary": "Co-registration without aggregation — the Witness Register holding instrument ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "witness_register Co-registration without aggregation — the Witness Register holding instrument ·  · Zenodo Python docxology"
+    },
+    {
+      "id": "software:docxology:Digi-PPPiP",
+      "type": "software",
+      "title": "Digi-PPPiP",
+      "url": "https://github.com/docxology/Digi-PPPiP",
+      "summary": "DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion for remote, semisynchronous, and asynchronous dyadic drawing ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "TeX",
+        "docxology"
+      ],
+      "content": "Digi-PPPiP DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion for remote, semisynchronous, and asynchronous dyadic drawing ·  · Zenodo TeX docxology"
+    },
+    {
+      "id": "software:docxology:BeeStack",
+      "type": "software",
+      "title": "BeeStack",
+      "url": "https://github.com/docxology/BeeStack",
+      "summary": "Evidence-typed scaffold for whole-colony honeybee simulation ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "BeeStack Evidence-typed scaffold for whole-colony honeybee simulation ·  · Zenodo Python docxology"
+    },
+    {
+      "id": "software:docxology:template_advanced_literature_review",
+      "type": "software",
+      "title": "template_advanced_literature_review",
+      "url": "https://github.com/docxology/template_advanced_literature_review",
+      "summary": "Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, and deterministic synthesis",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "template_advanced_literature_review Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, and deterministic synthesis Python docxology"
+    },
+    {
+      "id": "software:docxology:crescent-city-intel",
+      "type": "software",
+      "title": "crescent-city-intel",
+      "url": "https://github.com/docxology/crescent-city-intel",
+      "summary": "Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, and analytics",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "TypeScript",
+        "docxology"
+      ],
+      "content": "crescent-city-intel Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, and analytics TypeScript docxology"
+    },
+    {
       "id": "software:docxology:thalia",
       "type": "software",
       "title": "thalia",
@@ -7961,9 +8101,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/BeeStack  Python docxology  recent"
+      "content": "docxology/BeeStack  Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/biol-1",
@@ -8028,9 +8169,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/black_line A positive operating discipline for concise, inspectable, revisable work Python docxology  recent"
+      "content": "docxology/black_line A positive operating discipline for concise, inspectable, revisable work Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/blake",
@@ -8078,9 +8220,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/bond PROJECT BOND — The Special-Agent Operations Compendium Python docxology  recent"
+      "content": "docxology/bond PROJECT BOND — The Special-Agent Operations Compendium Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/cascadia",
@@ -8260,9 +8403,10 @@
         "repository",
         "TypeScript",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/crescent-city-intel Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, analytics, and civic intelligence domains TypeScript docxology  recent"
+      "content": "docxology/crescent-city-intel Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, analytics, and civic intelligence domains TypeScript docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/crescent_city",
@@ -8325,9 +8469,10 @@
         "repository",
         "TeX",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/Digi-PPPiP DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion (renders via the docxology/template sidecar). Deterministic conceptual models; draft metadata. TeX docxology  recent"
+      "content": "docxology/Digi-PPPiP DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion (renders via the docxology/template sidecar). Deterministic conceptual models; draft metadata. TeX docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/docxology",
@@ -8537,9 +8682,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/golden_line An aspirational thread and long-horizon direction for personal work Python docxology  recent"
+      "content": "docxology/golden_line An aspirational thread and long-horizon direction for personal work Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/grateful_data",
@@ -8698,9 +8844,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/line_set A thin reader that declares the line set and checks that no two lines share a spelling Python docxology  recent"
+      "content": "docxology/line_set A thin reader that declares the line set and checks that no two lines share a spelling Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/links",
@@ -9008,9 +9155,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/red_line A personal security boundary and explicit No document for dual-use development Python docxology  recent"
+      "content": "docxology/red_line A personal security boundary and explicit No document for dual-use development Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/service",
@@ -9191,9 +9339,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/template_advanced_literature_review Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, deterministic plus optional LLM-based filtering, and cross-method validation. Python docxology  recent"
+      "content": "docxology/template_advanced_literature_review Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, deterministic plus optional LLM-based filtering, and cross-method validation. Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_autopoiesis",
@@ -9661,9 +9810,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/white_line A typed ledger for the edge of a claim: absence, restraint, and the unknowable Python docxology  recent"
+      "content": "docxology/white_line A typed ledger for the edge of a claim: absence, restraint, and the unknowable Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/witness_register",
@@ -9677,9 +9827,10 @@
         "repository",
         "Python",
         "docxology",
+        "curated",
         "recent"
       ],
-      "content": "docxology/witness_register  Python docxology  recent"
+      "content": "docxology/witness_register  Python docxology  curated recent"
     },
     {
       "id": "video:personal:kxKgdvFHOLM",
@@ -29570,7 +29721,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.html",
-      "summary": "Structured CV export: 206 works, 133 software rows, 241 public GitHub repositories, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 206 works, 143 software rows, 241 public GitHub repositories, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

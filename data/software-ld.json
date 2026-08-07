@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "95 original repositories and 38 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "105 original repositories and 38 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -1398,6 +1398,154 @@
             "dateCreated": "2026-08-07T20:39:23Z",
             "dateModified": "2026-08-07T20:53:21Z",
             "sameAs": "https://doi.org/10.5281/zenodo.21843592"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/line_set#software",
+            "name": "line_set",
+            "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/line_set",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "dateCreated": "2026-07-28T11:45:46Z",
+            "dateModified": "2026-08-02T04:27:31Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21754243"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/black_line#software",
+            "name": "black_line",
+            "description": "A positive operating discipline for concise, inspectable, revisable work ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/black_line",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "dateCreated": "2026-07-28T11:45:37Z",
+            "dateModified": "2026-08-02T04:27:18Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21754235"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/white_line#software",
+            "name": "white_line",
+            "description": "A typed ledger for the edge of a claim: absence, restraint, and the unknowable ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/white_line",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "dateCreated": "2026-07-28T11:45:42Z",
+            "dateModified": "2026-08-02T04:27:30Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21754241"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/golden_line#software",
+            "name": "golden_line",
+            "description": "An aspirational thread and long-horizon direction for personal work ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/golden_line",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "dateCreated": "2026-07-28T11:45:40Z",
+            "dateModified": "2026-08-02T04:27:22Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21754237"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/red_line#software",
+            "name": "red_line",
+            "description": "A personal security boundary and explicit No document for dual-use development ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/red_line",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "dateCreated": "2026-07-28T11:45:34Z",
+            "dateModified": "2026-08-02T04:27:28Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21754239"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/witness_register#software",
+            "name": "witness_register",
+            "description": "Co-registration without aggregation — the Witness Register holding instrument ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/witness_register",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "dateCreated": "2026-08-02T04:26:38Z",
+            "dateModified": "2026-08-02T04:26:41Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21754245"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/Digi-PPPiP#software",
+            "name": "Digi-PPPiP",
+            "description": "DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion for remote, semisynchronous, and asynchronous dyadic drawing ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/Digi-PPPiP",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX",
+            "dateCreated": "2026-05-23T20:21:28Z",
+            "dateModified": "2026-08-06T03:37:37Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21815704"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/BeeStack#software",
+            "name": "BeeStack",
+            "description": "Evidence-typed scaffold for whole-colony honeybee simulation ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/BeeStack",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "dateCreated": "2026-05-13T15:40:32Z",
+            "dateModified": "2026-05-28T00:34:00Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.20420556"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/template_advanced_literature_review#software",
+            "name": "template_advanced_literature_review",
+            "description": "Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, and deterministic synthesis",
+            "codeRepository": "https://github.com/docxology/template_advanced_literature_review",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "dateCreated": "2026-07-23T16:24:06Z",
+            "dateModified": "2026-08-03T05:46:06Z"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/crescent-city-intel#software",
+            "name": "crescent-city-intel",
+            "description": "Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, and analytics",
+            "codeRepository": "https://github.com/docxology/crescent-city-intel",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TypeScript",
+            "dateCreated": "2026-07-23T00:29:46Z",
+            "dateModified": "2026-08-05T21:57:17Z"
         },
         {
             "@type": "SoftwareSourceCode",

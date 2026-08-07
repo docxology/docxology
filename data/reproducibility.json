@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T21:17:43Z",
+  "generated_at": "2026-08-07T21:34:32Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -67,12 +67,12 @@
     "public_archive": 149,
     "open_full_text": 171,
     "source_documents": 189,
-    "executable_code": 29,
+    "executable_code": 37,
     "agent_readable": 189
   },
   "band_counts": {
-    "independently reproducible": 133,
-    "independently checkable": 56,
+    "independently reproducible": 140,
+    "independently checkable": 49,
     "citable only": 8,
     "unverified": 9
   },
@@ -81,11 +81,11 @@
     "1": 4,
     "2": 4,
     "3": 8,
-    "4": 48,
-    "5": 108,
-    "6": 25
+    "4": 41,
+    "5": 114,
+    "6": 26
   },
-  "mean_score": 4.456,
+  "mean_score": 4.495,
   "works": [
     {
       "num": 10,
@@ -337,6 +337,27 @@
       },
       "repositories": [
         "biology_textbook"
+      ]
+    },
+    {
+      "num": 125,
+      "citation_key": "Friedman2026BeeStackEvidenceTypedScaffold125",
+      "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "BeeStack"
       ]
     },
     {
@@ -1777,25 +1798,6 @@
       "repositories": []
     },
     {
-      "num": 125,
-      "citation_key": "Friedman2026BeeStackEvidenceTypedScaffold125",
-      "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
       "num": 127,
       "citation_key": "Friedman2026SelfImprovementAgentHarness127",
       "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
@@ -2632,6 +2634,132 @@
       "repositories": []
     },
     {
+      "num": 200,
+      "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
+      "title": "The Witness Register: Co-Registration Without Aggregation",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "witness_register"
+      ]
+    },
+    {
+      "num": 201,
+      "citation_key": "Friedman2026LineSetHoldingInstruments201",
+      "title": "The Line Set: Holding Instruments Apart",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "line_set"
+      ]
+    },
+    {
+      "num": 202,
+      "citation_key": "Friedman2026WhiteLineTypedLedger202",
+      "title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "white_line"
+      ]
+    },
+    {
+      "num": 203,
+      "citation_key": "Friedman2026PersonalRedLinesDevelopment203",
+      "title": "Personal Red Lines for Development",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "red_line"
+      ]
+    },
+    {
+      "num": 204,
+      "citation_key": "Friedman2026GoldenLineTowardWhat204",
+      "title": "Golden Line: Toward What Matters",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "golden_line"
+      ]
+    },
+    {
+      "num": 205,
+      "citation_key": "Friedman2026BlackLineStrongWork205",
+      "title": "Black Line: Strong Work in Public",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "black_line"
+      ]
+    },
+    {
       "num": 207,
       "citation_key": "Friedman2026THALIATypedHarnessAnalytical207",
       "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
@@ -2671,6 +2799,27 @@
       },
       "repositories": [
         "bond"
+      ]
+    },
+    {
+      "num": 209,
+      "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
+      "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "Digi-PPPiP"
       ]
     },
     {
@@ -3434,144 +3583,11 @@
       "repositories": []
     },
     {
-      "num": 200,
-      "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
-      "title": "The Witness Register: Co-Registration Without Aggregation",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 201,
-      "citation_key": "Friedman2026LineSetHoldingInstruments201",
-      "title": "The Line Set: Holding Instruments Apart",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 202,
-      "citation_key": "Friedman2026WhiteLineTypedLedger202",
-      "title": "White Line: A Typed Ledger for the Edge of the Claim",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 203,
-      "citation_key": "Friedman2026PersonalRedLinesDevelopment203",
-      "title": "Personal Red Lines for Development",
-      "year": 2026,
-      "domain_name": "Cognitive Security",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 204,
-      "citation_key": "Friedman2026GoldenLineTowardWhat204",
-      "title": "Golden Line: Toward What Matters",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 205,
-      "citation_key": "Friedman2026BlackLineStrongWork205",
-      "title": "Black Line: Strong Work in Public",
-      "year": 2026,
-      "domain_name": "Cognitive Security",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
       "num": 206,
       "citation_key": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
       "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
       "year": 2026,
       "domain_name": "Computational",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 209,
-      "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
-      "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
-      "year": 2026,
-      "domain_name": "Cognitive Security",
       "type": "Paper",
       "score": 4,
       "band": "independently checkable",

@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-08-07T21:17:36+00:00`
+Generated: `2026-08-07T21:31:24+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -59,24 +59,24 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Software
 
-- docxology_owned: `95`
+- docxology_owned: `105`
 - active_inference_institute: `38`
-- curated_total: `133`
+- curated_total: `143`
 
 ### Generated Exports
 
 - data_works_json: `206`
-- data_software_json: `133`
+- data_software_json: `143`
 - data_publications_ld_main_entity: `206`
-- data_software_ld_main_entity: `133`
+- data_software_ld_main_entity: `143`
 
 ### GitHub Inventory
 
 - total: `241`
 - docxology: `200`
 - ActiveInferenceInstitute: `41`
-- curated: `129`
-- uncataloged: `112`
+- curated: `140`
+- uncataloged: `101`
 - forks: `87`
 - archived: `0`
 - public: `241`
@@ -113,7 +113,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 ### Paired Publication Decisions
 
 - decision: `accept`
-- groups: `24`
+- groups: `25`
 - raw_candidates: `86`
 - note: `Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.`
 

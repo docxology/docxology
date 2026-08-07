@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-08-07T21:17:37Z
+Generated: 2026-08-07T21:33:24Z
 
-Current public metrics: 206 curated works; 133 catalogued software repositories (95 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 200 docxology + 41 AII public repositories (154 primary, 87 forks).
+Current public metrics: 206 curated works; 143 catalogued software repositories (105 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 200 docxology + 41 AII public repositories (154 primary, 87 forks).
 
 SUMMARY
 -------
@@ -371,7 +371,7 @@ WORKS AND PUBLICATIONS (206)
 [208] 2026 | Paper | PROJECT BOND — The Special-Agent Operations Compendium | Zenodo | 10.5281/zenodo.21843592
 [209] 2026 | Paper | DigiPPPiP: Digital Partner Pen Play in Parallel | Zenodo | 10.5281/zenodo.21815704
 
-SOFTWARE (133)
+SOFTWARE (143)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -467,6 +467,16 @@ docxology/template_storybook | TeX | https://github.com/docxology/template_story
 docxology/template_template | TeX | https://github.com/docxology/template_template | Template meta-research exemplar: self-documenting reproducible research repo
 docxology/template_bioinformatics_project | Python | https://github.com/docxology/template_bioinformatics_project | template_bioinformatics_project — Active Inference / research exemplar repository
 docxology/bond | Markdown/Python | https://github.com/docxology/bond | Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts · · Zenodo | paper: papers/2026_PROJECTBONDSpecial/ | zenodo: https://doi.org/10.5281/zenodo.21843592
+docxology/line_set | Python | https://github.com/docxology/line_set | A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice · · Zenodo | paper: papers/2026_LineSet/ | zenodo: https://doi.org/10.5281/zenodo.21754243
+docxology/black_line | Python | https://github.com/docxology/black_line | A positive operating discipline for concise, inspectable, revisable work · · Zenodo | paper: papers/2026_BlackLine/ | zenodo: https://doi.org/10.5281/zenodo.21754235
+docxology/white_line | Python | https://github.com/docxology/white_line | A typed ledger for the edge of a claim: absence, restraint, and the unknowable · · Zenodo | paper: papers/2026_WhiteLine/ | zenodo: https://doi.org/10.5281/zenodo.21754241
+docxology/golden_line | Python | https://github.com/docxology/golden_line | An aspirational thread and long-horizon direction for personal work · · Zenodo | paper: papers/2026_GoldenLine/ | zenodo: https://doi.org/10.5281/zenodo.21754237
+docxology/red_line | Python | https://github.com/docxology/red_line | A personal security boundary and explicit No document for dual-use development · · Zenodo | paper: papers/2026_PersonalRedLines/ | zenodo: https://doi.org/10.5281/zenodo.21754239
+docxology/witness_register | Python | https://github.com/docxology/witness_register | Co-registration without aggregation — the Witness Register holding instrument · · Zenodo | paper: papers/2026_WitnessRegister/ | zenodo: https://doi.org/10.5281/zenodo.21754245
+docxology/Digi-PPPiP | TeX | https://github.com/docxology/Digi-PPPiP | DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion for remote, semisynchronous, and asynchronous dyadic drawing · · Zenodo | paper: papers/2026_DigiPPPiP/ | zenodo: https://doi.org/10.5281/zenodo.21815704
+docxology/BeeStack | Python | https://github.com/docxology/BeeStack | Evidence-typed scaffold for whole-colony honeybee simulation · · Zenodo | paper: papers/2026_BeeStack/ | zenodo: https://doi.org/10.5281/zenodo.20420556
+docxology/template_advanced_literature_review | Python | https://github.com/docxology/template_advanced_literature_review | Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, and deterministic synthesis
+docxology/crescent-city-intel | TypeScript | https://github.com/docxology/crescent-city-intel | Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, and analytics
 docxology/thalia | Python | https://github.com/docxology/thalia | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · · Zenodo | paper: papers/2026_THALIA/ | zenodo: https://doi.org/10.5281/zenodo.21763244
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
 ActiveInferenceInstitute/ActiveBlockference | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveBlockference | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework

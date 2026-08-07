@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
-*95 original repositories · 38 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+*105 original repositories · 38 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
 
 *Available for [research consulting & collaboration](../README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -132,6 +132,16 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [template_template](https://github.com/docxology/template_template) | Template meta-research exemplar: self-documenting reproducible research repo | TeX | 0 | 2026-07 |
 | [template_bioinformatics_project](https://github.com/docxology/template_bioinformatics_project) | template_bioinformatics_project — Active Inference / research exemplar repository | Python | 0 | 2026-03 |
 | [bond](https://github.com/docxology/bond) | Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts · [📄](../papers/2026_PROJECTBONDSpecial/) · [Zenodo](https://doi.org/10.5281/zenodo.21843592) | Markdown/Python | 0 | 2026-08 |
+| [line_set](https://github.com/docxology/line_set) | A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice · [📄](../papers/2026_LineSet/) · [Zenodo](https://doi.org/10.5281/zenodo.21754243) | Python | 0 | 2026-07 |
+| [black_line](https://github.com/docxology/black_line) | A positive operating discipline for concise, inspectable, revisable work · [📄](../papers/2026_BlackLine/) · [Zenodo](https://doi.org/10.5281/zenodo.21754235) | Python | 0 | 2026-07 |
+| [white_line](https://github.com/docxology/white_line) | A typed ledger for the edge of a claim: absence, restraint, and the unknowable · [📄](../papers/2026_WhiteLine/) · [Zenodo](https://doi.org/10.5281/zenodo.21754241) | Python | 0 | 2026-07 |
+| [golden_line](https://github.com/docxology/golden_line) | An aspirational thread and long-horizon direction for personal work · [📄](../papers/2026_GoldenLine/) · [Zenodo](https://doi.org/10.5281/zenodo.21754237) | Python | 0 | 2026-07 |
+| [red_line](https://github.com/docxology/red_line) | A personal security boundary and explicit No document for dual-use development · [📄](../papers/2026_PersonalRedLines/) · [Zenodo](https://doi.org/10.5281/zenodo.21754239) | Python | 0 | 2026-07 |
+| [witness_register](https://github.com/docxology/witness_register) | Co-registration without aggregation — the Witness Register holding instrument · [📄](../papers/2026_WitnessRegister/) · [Zenodo](https://doi.org/10.5281/zenodo.21754245) | Python | 0 | 2026-08 |
+| [Digi-PPPiP](https://github.com/docxology/Digi-PPPiP) | DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion for remote, semisynchronous, and asynchronous dyadic drawing · [📄](../papers/2026_DigiPPPiP/) · [Zenodo](https://doi.org/10.5281/zenodo.21815704) | TeX | 0 | 2026-08 |
+| [BeeStack](https://github.com/docxology/BeeStack) | Evidence-typed scaffold for whole-colony honeybee simulation · [📄](../papers/2026_BeeStack/) · [Zenodo](https://doi.org/10.5281/zenodo.20420556) | Python | 0 | 2026-05 |
+| [template_advanced_literature_review](https://github.com/docxology/template_advanced_literature_review) | Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, and deterministic synthesis | Python | 0 | 2026-07 |
+| [crescent-city-intel](https://github.com/docxology/crescent-city-intel) | Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, and analytics | TypeScript | 0 | 2026-07 |
 | [thalia](https://github.com/docxology/thalia) | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · [📄](../papers/2026_THALIA/) · [Zenodo](https://doi.org/10.5281/zenodo.21763244) | Python | 0 | 2026-08 |
 
 ---
@@ -193,13 +203,14 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Entomology & Biology | 9 | `ento_linguistics`, `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `cohereants`, `FORMINDEX`, `biol-1`, `biol-8`, `biology_textbook` |
 | Synergetics & Geometry | 6 | `QuadCraft`, `QuadMath`, `ivm-xyz`, `godel_ivm`, `symergetics`, `blake_jiang` |
 | Cognitive Security | 3 | `p3if`, `opentir`, `CogSecSkills` |
-| Developer Tools | 19 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `SynthOBS`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake`, `thalia`, `bond` |
-| Data & Policy | 3 | `hhs-opendata`, `crescent-city`, `grateful_data` |
+| Developer Tools | 21 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `SynthOBS`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake`, `thalia`, `bond`, `template_advanced_literature_review`, `BeeStack` |
+| Data & Policy | 4 | `hhs-opendata`, `crescent-city`, `grateful_data`, `crescent-city-intel` |
 | Education | 6 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT` |
-| Other | 4 | `cascadia`, `fuller-obsidian`, `service`, `flick` |
-| **docxology subtotal** | **95** | |
+| Other | 5 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP` |
+| Research Practice | 6 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register` |
+| **docxology subtotal** | **105** | |
 | AII Contributions (non-fork) | 38 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **133** | |
+| **Grand Total** | **143** | |
 
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; the AII GitHub account is a **User** account, not an Organization. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 

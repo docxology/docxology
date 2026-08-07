@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-08-07T21:17:37Z
+Generated: 2026-08-07T21:33:24Z
 
-Current public metrics: 206 curated works; 133 catalogued software repositories (95 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 200 docxology + 41 AII public repositories (154 primary, 87 forks).
+Current public metrics: 206 curated works; 143 catalogued software repositories (105 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 200 docxology + 41 AII public repositories (154 primary, 87 forks).
 
 SUMMARY
 -------
@@ -343,7 +343,7 @@ WORKS AND PUBLICATIONS (206)
 [208] 2026 | Paper | PROJECT BOND — The Special-Agent Operations Compendium | Zenodo | 10.5281/zenodo.21843592
 [209] 2026 | Paper | DigiPPPiP: Digital Partner Pen Play in Parallel | Zenodo | 10.5281/zenodo.21815704
 
-SOFTWARE (33)
+SOFTWARE (41)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/
@@ -371,6 +371,14 @@ docxology/template_textbook | HTML | https://github.com/docxology/template_textb
 docxology/blake_jiang | Python | https://github.com/docxology/blake_jiang | William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing | paper: papers/2026_BlakeJiang/
 docxology/template_autopoiesis | TeX | https://github.com/docxology/template_autopoiesis | Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) | zenodo: https://doi.org/10.5281/zenodo.21227869
 docxology/bond | Markdown/Python | https://github.com/docxology/bond | Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts · · Zenodo | paper: papers/2026_PROJECTBONDSpecial/ | zenodo: https://doi.org/10.5281/zenodo.21843592
+docxology/line_set | Python | https://github.com/docxology/line_set | A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice · · Zenodo | paper: papers/2026_LineSet/ | zenodo: https://doi.org/10.5281/zenodo.21754243
+docxology/black_line | Python | https://github.com/docxology/black_line | A positive operating discipline for concise, inspectable, revisable work · · Zenodo | paper: papers/2026_BlackLine/ | zenodo: https://doi.org/10.5281/zenodo.21754235
+docxology/white_line | Python | https://github.com/docxology/white_line | A typed ledger for the edge of a claim: absence, restraint, and the unknowable · · Zenodo | paper: papers/2026_WhiteLine/ | zenodo: https://doi.org/10.5281/zenodo.21754241
+docxology/golden_line | Python | https://github.com/docxology/golden_line | An aspirational thread and long-horizon direction for personal work · · Zenodo | paper: papers/2026_GoldenLine/ | zenodo: https://doi.org/10.5281/zenodo.21754237
+docxology/red_line | Python | https://github.com/docxology/red_line | A personal security boundary and explicit No document for dual-use development · · Zenodo | paper: papers/2026_PersonalRedLines/ | zenodo: https://doi.org/10.5281/zenodo.21754239
+docxology/witness_register | Python | https://github.com/docxology/witness_register | Co-registration without aggregation — the Witness Register holding instrument · · Zenodo | paper: papers/2026_WitnessRegister/ | zenodo: https://doi.org/10.5281/zenodo.21754245
+docxology/Digi-PPPiP | TeX | https://github.com/docxology/Digi-PPPiP | DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion for remote, semisynchronous, and asynchronous dyadic drawing · · Zenodo | paper: papers/2026_DigiPPPiP/ | zenodo: https://doi.org/10.5281/zenodo.21815704
+docxology/BeeStack | Python | https://github.com/docxology/BeeStack | Evidence-typed scaffold for whole-colony honeybee simulation · · Zenodo | paper: papers/2026_BeeStack/ | zenodo: https://doi.org/10.5281/zenodo.20420556
 docxology/thalia | Python | https://github.com/docxology/thalia | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · · Zenodo | paper: papers/2026_THALIA/ | zenodo: https://doi.org/10.5281/zenodo.21763244
 ActiveInferenceInstitute/GeneralizedNotationNotation | Python | https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.19600217
 ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo | paper: papers/2025_CEREBRUM/ | zenodo: https://doi.org/10.5281/zenodo.15170907

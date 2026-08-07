@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T21:17:37Z",
+  "generated_at": "2026-08-07T21:33:24Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -35,8 +35,8 @@
   },
   "metrics": {
     "works": 206,
-    "software_catalogued": 133,
-    "owned_software_catalogued": 95,
+    "software_catalogued": 143,
+    "owned_software_catalogued": 105,
     "aii_software_catalogued": 38,
     "google_scholar": {
       "citations": 777,
@@ -74,7 +74,7 @@
       "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 38 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-08-07T21:11:55Z",
+      "generated_at": "2026-08-07T21:31:20Z",
       "source": "GitHub REST API /users/{owner}/repos",
       "total": 241,
       "public": 241,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "f7867c544d8bafce6cedd53417e803c94906f1638dcb185e8efff732f4c33c68",
+      "sha256": "7947b1787055b51fcc40a492ed8bb5be5b94352d796317b7c0af56d0dc87d01b",
       "files": [
         {
           "path": "resume/source.json",
@@ -102,8 +102,8 @@
         },
         {
           "path": "data/software.json",
-          "bytes": 63807,
-          "sha256": "6b61c68bca9e53552562da88dcbae3297de3262c4adf5da629147b3cb0c9c6e8"
+          "bytes": 68650,
+          "sha256": "875ddf9ff451f331ea0bbbd768ce6450c20c218d1bf6748f0febb946de07bd9f"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 11914,
-          "sha256": "ab1b5a463aed449d27604e5fb56ff7a0c69f9336be81bdd347d23454963e6975"
+          "sha256": "31afee568bb4a534eaac78fdd041986931761accd1363a258a94e26f6cc4702d"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 208705,
-          "sha256": "1bff26ba53640176919c594180e085b61542581166636935ab231040fa6cb2f5"
+          "bytes": 208694,
+          "sha256": "7be239e69a8198cd44ba3b8cac725af3a2800fb4c08384d9e8586030e87be173"
         }
       ]
     },
@@ -8562,6 +8562,126 @@
       "zenodo_url": "https://doi.org/10.5281/zenodo.21843592"
     },
     {
+      "name": "line_set",
+      "url": "https://github.com/docxology/line_set",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "papers/2026_LineSet/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21754243"
+    },
+    {
+      "name": "black_line",
+      "url": "https://github.com/docxology/black_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A positive operating discipline for concise, inspectable, revisable work · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "papers/2026_BlackLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21754235"
+    },
+    {
+      "name": "white_line",
+      "url": "https://github.com/docxology/white_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A typed ledger for the edge of a claim: absence, restraint, and the unknowable · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "papers/2026_WhiteLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21754241"
+    },
+    {
+      "name": "golden_line",
+      "url": "https://github.com/docxology/golden_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "An aspirational thread and long-horizon direction for personal work · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "papers/2026_GoldenLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21754237"
+    },
+    {
+      "name": "red_line",
+      "url": "https://github.com/docxology/red_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A personal security boundary and explicit No document for dual-use development · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "papers/2026_PersonalRedLines/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21754239"
+    },
+    {
+      "name": "witness_register",
+      "url": "https://github.com/docxology/witness_register",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Co-registration without aggregation — the Witness Register holding instrument · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "papers/2026_WitnessRegister/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21754245"
+    },
+    {
+      "name": "Digi-PPPiP",
+      "url": "https://github.com/docxology/Digi-PPPiP",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion for remote, semisynchronous, and asynchronous dyadic drawing · · Zenodo",
+      "language": "TeX",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "papers/2026_DigiPPPiP/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21815704"
+    },
+    {
+      "name": "BeeStack",
+      "url": "https://github.com/docxology/BeeStack",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Evidence-typed scaffold for whole-colony honeybee simulation · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-05",
+      "paper_path": "papers/2026_BeeStack/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20420556"
+    },
+    {
+      "name": "template_advanced_literature_review",
+      "url": "https://github.com/docxology/template_advanced_literature_review",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, and deterministic synthesis",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "crescent-city-intel",
+      "url": "https://github.com/docxology/crescent-city-intel",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, and analytics",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_or_year": "2026-07",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
       "name": "thalia",
       "url": "https://github.com/docxology/thalia",
       "owner": "docxology",
@@ -9040,7 +9160,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-07T21:17:36+00:00",
+      "checked_at": "2026-08-07T21:31:24+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9055,7 +9175,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-07T21:17:36+00:00",
+      "checked_at": "2026-08-07T21:31:24+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

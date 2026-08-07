@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T21:11:55Z",
+  "generated_at": "2026-08-07T21:31:20Z",
   "source": "GitHub REST API /users/{owner}/repos",
   "owners": [
     "docxology",
@@ -23,8 +23,8 @@
     "total": 241,
     "docxology": 200,
     "ActiveInferenceInstitute": 41,
-    "curated": 129,
-    "uncataloged": 112,
+    "curated": 140,
+    "uncataloged": 101,
     "forks": 87,
     "archived": 0,
     "public": 241,
@@ -1856,7 +1856,7 @@
       "created_at": "2026-05-13T15:40:32Z",
       "updated_at": "2026-05-28T00:34:03Z",
       "pushed_at": "2026-05-28T00:34:00Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -1964,7 +1964,7 @@
       "created_at": "2026-07-28T11:45:37Z",
       "updated_at": "2026-08-02T04:27:37Z",
       "pushed_at": "2026-08-02T04:27:18Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -2058,7 +2058,7 @@
       "created_at": "2026-08-07T20:39:23Z",
       "updated_at": "2026-08-07T20:53:25Z",
       "pushed_at": "2026-08-07T20:53:21Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -2479,7 +2479,7 @@
       "created_at": "2026-07-23T00:29:46Z",
       "updated_at": "2026-08-05T21:57:22Z",
       "pushed_at": "2026-08-05T21:57:17Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -2623,7 +2623,7 @@
       "created_at": "2026-05-23T20:21:28Z",
       "updated_at": "2026-08-06T03:37:47Z",
       "pushed_at": "2026-08-06T03:37:37Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -3484,7 +3484,7 @@
       "created_at": "2026-07-28T11:45:40Z",
       "updated_at": "2026-08-02T04:27:38Z",
       "pushed_at": "2026-08-02T04:27:22Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -4061,7 +4061,7 @@
       "created_at": "2026-07-28T11:45:46Z",
       "updated_at": "2026-08-02T04:27:50Z",
       "pushed_at": "2026-08-02T04:27:31Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -5186,7 +5186,7 @@
       "created_at": "2026-07-28T11:45:34Z",
       "updated_at": "2026-08-02T04:27:45Z",
       "pushed_at": "2026-08-02T04:27:28Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -5888,7 +5888,7 @@
       "created_at": "2026-07-23T16:24:06Z",
       "updated_at": "2026-08-03T05:47:11Z",
       "pushed_at": "2026-08-03T05:46:06Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -6734,7 +6734,7 @@
       "created_at": "2026-07-28T11:45:42Z",
       "updated_at": "2026-08-02T04:27:58Z",
       "pushed_at": "2026-08-02T04:27:30Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -6761,7 +6761,7 @@
       "created_at": "2026-08-02T04:26:38Z",
       "updated_at": "2026-08-02T04:26:57Z",
       "pushed_at": "2026-08-02T04:26:41Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
