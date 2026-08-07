@@ -553,7 +553,7 @@
     {
       "name": "Live site verification",
       "outputs": [
-        "reports/live_site_verification_2026-08-02.json"
+        "reports/live_site_verification_2026-08-07.json"
       ],
       "sources": [
         "https://danielarifriedman.com/",

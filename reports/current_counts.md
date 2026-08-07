@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-08-07T21:31:24+00:00`
+Generated: `2026-08-07T22:26:33+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -113,9 +113,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 ### Paired Publication Decisions
 
 - decision: `accept`
-- groups: `25`
-- raw_candidates: `86`
-- note: `Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.`
+- groups: `27`
+- raw_candidates: `114`
+- note: `Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills (9 release pairs) and Codomyrmex (18 release pairs) supersession/version-history decisions under already-cited DOIs so versioned GitHub releases do not create duplicate bibliography rows.`
 
 ## Validation
 

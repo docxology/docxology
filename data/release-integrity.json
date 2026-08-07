@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-07-17T21:37:09+00:00",
-  "source_commit_at_generation": "a8bf3b72912551b13d631dc4a31ec143c0c7ccdd",
+  "source_commit_at_generation": "d6e567021ce60c917cc46f3acd588514c7a3976a",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -23,27 +23,27 @@
     "pages/BIBLIOGRAPHY.md": "9c002bcc9d61d3578d4d1aaf10bcaea36f5eb20c9f79af4c315212c7b5655ad5",
     "pages/SOFTWARE.md": "5aa667f6dc2fa332d081bc26dd2df567e4f17cf4aaa4db348699b59ebb995fdf",
     "resume/source.json": "9e2dd487986d64d10ab3b96fa20d8d8fb86b9196b75cb92149672d25f058c0a2",
-    "data/current-counts.json": "6e8282edf75fc225d400484ce65834e92fa6edfee5b4078ea34607ef0bf4f6cd",
+    "data/current-counts.json": "a58c7fb024388217d708f2b5b63bf4ce307ed3257033dbd9c7899a000b74db5d",
     "data/coverage-exceptions.json": "eee1cc91c204fb60b2e636253a0ff91dd7853bcf44bc863ec3fa3a139836b0af",
     "data/repository-classification.json": "327b57820d01dcb852bc3845f12c818528952f8f841807f0fca93c31d4cfd61e",
-    "data/agent-index.json": "34b07e6724f29c793aa01d238f3202e3120f03a1398cee771ae08edd3aa14234",
-    "data/generated-manifest.json": "ae6937bef3433dc58e5ce0c891ee88513a8f257649089b9325c10ba19263538a",
-    "data/pages-artifact-manifest.json": "43ac1c3a733447c1ae69a380c174e420120adcb125703e371485c5386ce6c3de"
+    "data/agent-index.json": "fc2a220107a8ce7777edaa314f2a0a0b7e1dbb99d5cd2a934e83f58d8bcdc944",
+    "data/generated-manifest.json": "ada801bf78f12e2f2f425b91f52862042a19be3f044580b442f61265749641d9",
+    "data/pages-artifact-manifest.json": "1357324a5a2c2de66fa2595cf5e0dd310ea612d6e486cda95d3f6655a3e5a65e"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "a8bf3b72912551b13d631dc4a31ec143c0c7ccdd",
-    "artifact_file_count": 4452,
-    "artifact_bytes": 854064342,
+    "source_commit_at_generation": "d6e567021ce60c917cc46f3acd588514c7a3976a",
+    "artifact_file_count": 4453,
+    "artifact_bytes": 854083611,
     "omitted_paper_image_count": 8886
   },
   "deployment": {
-    "commit": "ea4c3c5eb0064dc5c37c78b89d715347d55d7f23",
-    "workflow_run_id": 30771230303,
-    "workflow_url": "https://github.com/docxology/docxology/actions/runs/30771230303",
+    "commit": "d6e567021ce60c917cc46f3acd588514c7a3976a",
+    "workflow_run_id": 31221689727,
+    "workflow_url": "https://github.com/docxology/docxology/actions/runs/31221689727",
     "pages_status": "built",
-    "verification_report": "reports/live_site_verification_2026-08-02.json",
-    "verification_generated_at": "2026-08-02T22:59:38Z",
+    "verification_report": "reports/live_site_verification_2026-08-07.json",
+    "verification_generated_at": "2026-08-07T22:35:27Z",
     "verification_overall_ok": true,
     "verified_routes": "17/17",
     "deployment_pending": true,
@@ -95,9 +95,9 @@
     },
     "paired_publication_decisions": {
       "decision": "accept",
-      "groups": 25,
-      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.",
-      "raw_candidates": 86
+      "groups": 27,
+      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills (9 release pairs) and Codomyrmex (18 release pairs) supersession/version-history decisions under already-cited DOIs so versioned GitHub releases do not create duplicate bibliography rows.",
+      "raw_candidates": 114
     },
     "paired_publications": {
       "already_reviewed": 0,

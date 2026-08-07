@@ -1,6 +1,6 @@
 {
   "schema_version": "1.4",
-  "generated_at": "2026-08-07T21:31:24+00:00",
+  "generated_at": "2026-08-07T22:26:33+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -260,7 +260,7 @@
     },
     {
       "id": "live-site",
-      "path": "/reports/live_site_verification_2026-08-02.json",
+      "path": "/reports/live_site_verification_2026-08-07.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -891,7 +891,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-08-07T21:31:24+00:00",
+        "checked_at": "2026-08-07T22:26:33+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -991,9 +991,9 @@
         },
         "paired_publication_decisions": {
           "decision": "accept",
-          "groups": 25,
-          "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.",
-          "raw_candidates": 86
+          "groups": 27,
+          "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills (9 release pairs) and Codomyrmex (18 release pairs) supersession/version-history decisions under already-cited DOIs so versioned GitHub releases do not create duplicate bibliography rows.",
+          "raw_candidates": 114
         },
         "paired_publications": {
           "already_reviewed": 0,
@@ -1031,7 +1031,7 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-08-07T21:31:24+00:00",
+      "generated_at": "2026-08-07T22:26:33+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1054,11 +1054,11 @@
         "hard_limit_bytes": 1073741824,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 853280885,
+        "source_bytes": 853299972,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4452,
-        "artifact_bytes": 854064342
+        "artifact_file_count": 4453,
+        "artifact_bytes": 854083611
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1072,24 +1072,24 @@
   },
   "dataset_hashes": {
     "works": "d15e50848fc484d60dbba50d9e577e078a60369e7bbe6d838976e00f442cd950",
-    "software": "875ddf9ff451f331ea0bbbd768ce6450c20c218d1bf6748f0febb946de07bd9f",
+    "software": "b6b0a64f4bf9364f6f5c5fdf60c411e8ddd8960835f2612b631efe41c01fdfdb",
     "repositories": "7be239e69a8198cd44ba3b8cac725af3a2800fb4c08384d9e8586030e87be173",
     "artworks_index": "25adc127f1d2a46abd676ac37735a0bf6d2fbabea25992b609f203f24f78977c",
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "2d3b1fa0a8d21d4d81f3d082815718a4b3b9a3a4983785cfd85ae68af4200be3",
     "videos_index": "ffc9ec7c4de9f14367f80bd2257aef411feee0c1ed3b3cab6c494753c0875dab",
-    "search": "e7f76cbcc2bb0be56bc97943ed09699ea9bebf8057d70c1c2b04aaa2eb8842d8",
-    "claims": "31afee568bb4a534eaac78fdd041986931761accd1363a258a94e26f6cc4702d",
+    "search": "18745e9eb9a1500f6d92ad64247d7825ff1386750d1448b1d2e8ac03635acb17",
+    "claims": "d68b95d525d8bd7163fd47ba6a7f758ee7e4b78e2fd800cab947c176cc5c21da",
     "coverage_exceptions": "eee1cc91c204fb60b2e636253a0ff91dd7853bcf44bc863ec3fa3a139836b0af",
     "repository_classification": "327b57820d01dcb852bc3845f12c818528952f8f841807f0fca93c31d4cfd61e",
-    "people": "5598ce4702ea456206ca9742421546bd8a8d534a0e04d6aebc9354fec0db1d9a",
-    "organizations": "e225e12c7d28f5a610509a22d3154572dad2e12d7edaeb938fa7e5e8c0746b83",
-    "resume": "6d1d2de9aa8150a9eb0402990d0b9243d18572798eabaac072b3ac057e92cc1a",
+    "people": "6800a8617ee73d60e3bef0c064010247253dc8acbdd3e5428874cdb7f5755535",
+    "organizations": "603d6770a7ba888df6f2043469cca286ddbad522c77e4703b6e69578efa0a4a6",
+    "resume": "39f767f28420b595f61b5e12073ca1f5fab6b95463196911eb879ecc671ccd75",
     "work_enrichment": "abc907886af74d88b4e76df4fb14c7cb05c6a11bf405c71b274094c20cc11fb9",
-    "catalog": "b3b4a2488124ed0022cc6400bb51fd2200157d01d01b82d5350ec1cc7da23c10",
+    "catalog": "0c4cefb489c5f4244c14b295661bad0987de5c8c1769585efe28c817454f6434",
     "reconciliation": "ae023330fa00e65c5dcad77b6eccdc197251177123d275089a4d84701eae105b",
-    "generated_manifest": "ae6937bef3433dc58e5ce0c891ee88513a8f257649089b9325c10ba19263538a",
-    "current_counts": "6e8282edf75fc225d400484ce65834e92fa6edfee5b4078ea34607ef0bf4f6cd"
+    "generated_manifest": "ada801bf78f12e2f2f425b91f52862042a19be3f044580b442f61265749641d9",
+    "current_counts": "a58c7fb024388217d708f2b5b63bf4ce307ed3257033dbd9c7899a000b74db5d"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -1107,8 +1107,8 @@
     "paper_image_fallback": "Use the Pages artifact manifest GitHub tree/raw templates for omitted extracted paper images."
   },
   "verification_status": {
-    "live_report": "/reports/live_site_verification_2026-08-02.json",
-    "generated_at": "2026-08-02T22:59:38Z",
+    "live_report": "/reports/live_site_verification_2026-08-07.json",
+    "generated_at": "2026-08-07T22:35:27Z",
     "overall_ok": true,
     "passing": 17,
     "checked_urls": 17,
@@ -1154,9 +1154,9 @@
     },
     "paired_publication_decisions": {
       "decision": "accept",
-      "groups": 25,
-      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows.",
-      "raw_candidates": 86
+      "groups": 27,
+      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills (9 release pairs) and Codomyrmex (18 release pairs) supersession/version-history decisions under already-cited DOIs so versioned GitHub releases do not create duplicate bibliography rows.",
+      "raw_candidates": 114
     },
     "paired_publications": {
       "already_reviewed": 0,

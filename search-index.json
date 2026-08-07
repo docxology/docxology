@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T21:33:36Z",
+  "generated_at": "2026-08-07T22:35:44Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -396,7 +396,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-08-02.json",
+      "url": "/reports/live_site_verification_2026-08-07.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",

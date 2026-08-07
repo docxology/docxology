@@ -4,9 +4,9 @@
   "source_review_queue": "reports/paired_publications_review_queue_2026-06-04.md",
   "decision_summary": {
     "decision": "accept",
-    "groups": 25,
-    "raw_candidates": 86,
-    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows."
+    "groups": 27,
+    "raw_candidates": 114,
+    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills (9 release pairs) and Codomyrmex (18 release pairs) supersession/version-history decisions under already-cited DOIs so versioned GitHub releases do not create duplicate bibliography rows."
   },
   "groups": [
     {
@@ -2253,6 +2253,61 @@
       "raw_candidate_count": 1,
       "raw_candidates": [
         "https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0"
+      ]
+    },
+    {
+      "id": "R26",
+      "decision": "superseded",
+      "decided_at": "2026-08-07",
+      "decided_by": "maintainer",
+      "doi": "10.5281/zenodo.21513316",
+      "title": "CogSecSkills: Multiharness Agentic Skills for Cognitive Security",
+      "candidate_github_repo": "docxology/CogSecSkills",
+      "folder": "2026_CogSecSkills",
+      "representation": "version-history: 9 GitHub release pairs (v0.1.0-v1.7.0) under concept 10.5281/zenodo.21513316; bibliography row #174 already cites the concept DOI, so these versioned releases must not create a duplicate row",
+      "raw_candidate_count": 9,
+      "raw_candidates": [
+        "https://github.com/docxology/CogSecSkills/releases/tag/v0.1.0",
+        "https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0",
+        "https://github.com/docxology/CogSecSkills/releases/tag/v1.1.0",
+        "https://github.com/docxology/CogSecSkills/releases/tag/v1.2.0",
+        "https://github.com/docxology/CogSecSkills/releases/tag/v1.3.0",
+        "https://github.com/docxology/CogSecSkills/releases/tag/v1.4.0",
+        "https://github.com/docxology/CogSecSkills/releases/tag/v1.5.0",
+        "https://github.com/docxology/CogSecSkills/releases/tag/v1.6.0",
+        "https://github.com/docxology/CogSecSkills/releases/tag/v1.7.0"
+      ]
+    },
+    {
+      "id": "R27",
+      "decision": "superseded",
+      "decided_at": "2026-08-07",
+      "decided_by": "maintainer",
+      "doi": "10.5281/zenodo.21750800",
+      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "candidate_github_repo": "docxology/codomyrmex",
+      "folder": "2026_Codomyrmex",
+      "representation": "version-history: 18 GitHub release pairs under 10.5281/zenodo.21750800; bibliography row #206 already cites the DOI, so these versioned releases must not create a duplicate row",
+      "raw_candidate_count": 18,
+      "raw_candidates": [
+        "https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
+        "https://github.com/docxology/codomyrmex/releases/tag/untagged-b16ad7f201db1dace50c",
+        "https://github.com/docxology/codomyrmex/releases/tag/v0.1.0",
+        "https://github.com/docxology/codomyrmex/releases/tag/v0.1.1",
+        "https://github.com/docxology/codomyrmex/releases/tag/v0.1.6",
+        "https://github.com/docxology/codomyrmex/releases/tag/v0.1.7",
+        "https://github.com/docxology/codomyrmex/releases/tag/v1.0.1",
+        "https://github.com/docxology/codomyrmex/releases/tag/v1.0.6",
+        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.1",
+        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.10",
+        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.12",
+        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.2",
+        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.3",
+        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.4",
+        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.5",
+        "https://github.com/docxology/codomyrmex/releases/tag/v1.2.0",
+        "https://github.com/docxology/codomyrmex/releases/tag/v1.2.1",
+        "https://github.com/docxology/codomyrmex/releases/tag/v1.2.2"
       ]
     }
   ]
