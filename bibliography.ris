@@ -1961,8 +1961,8 @@ AU  - Zacharias, Colten
 PY  - 2023
 TI  - ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management
 T2  - Zenodo
-DO  - 10.5281/zenodo.10362561
-UR  - https://doi.org/10.5281/zenodo.10362561
+DO  - 10.5281/zenodo.10296601
+UR  - https://doi.org/10.5281/zenodo.10296601
 KW  - Cognitive Security
 KW  - Paper
 N1  - Catalog row 136; docs: papers/2023_ATLAS2/
@@ -2843,4 +2843,31 @@ UR  - https://doi.org/10.5281/zenodo.21763244
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 207; docs: papers/2026_THALIA/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - PROJECT BOND — The Special-Agent Operations Compendium
+T2  - Zenodo
+DO  - 10.5281/zenodo.21843592
+UR  - https://doi.org/10.5281/zenodo.21843592
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 208; docs: papers/2026_PROJECTBONDSpecial/
+ER  -
+
+TY  - JOUR
+AU  - Shrivastava, Siddhant
+AU  - Goh, Evelyn C.
+AU  - Mikhailova, Alexandra
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - DigiPPPiP: Digital Partner Pen Play in Parallel
+T2  - Zenodo
+DO  - 10.5281/zenodo.21815704
+UR  - https://doi.org/10.5281/zenodo.21815704
+KW  - Cognitive Security
+KW  - Paper
+N1  - Catalog row 209; docs: papers/2026_DigiPPPiP/
 ER  -

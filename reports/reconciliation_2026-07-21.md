@@ -8,11 +8,11 @@ This report compares curated local counts against public authority/source indexe
 
 | Comparison | Local | Public | Relationship | Interpretation |
 | --- | ---: | ---: | --- | --- |
-| Curated bibliography vs ORCID work groups | 204 | 20 | not expected to match | The local bibliography intentionally includes presentations, courses, books, software-linked works, and local documentation. ORCID groups external works by identifier/version. |
-| Curated bibliography vs PubMed exact author records | 204 | 8 | subset | PubMed only covers biomedical/indexed literature and is a strict subset of the curated bibliography. |
-| Curated bibliography vs Crossref ORCID DOI records | 204 | 15 | subset | Crossref captures DOI records attached to the ORCID; Zenodo, books, courses, and non-DOI works may be absent or represented elsewhere. |
-| Curated bibliography vs Zenodo ORCID-linked records | 204 | 131 | overlapping sets | Zenodo includes versioned records and software archives; the local bibliography normalizes selected works into one curated table. |
-| Catalogued docxology software vs GitHub public repository count | 94 | 347 | curated subset | SOFTWARE.md intentionally catalogs selected owned repositories; GitHub counts all public repositories including forks and uncatalogued experiments. |
+| Curated bibliography vs ORCID work groups | 206 | 20 | not expected to match | The local bibliography intentionally includes presentations, courses, books, software-linked works, and local documentation. ORCID groups external works by identifier/version. |
+| Curated bibliography vs PubMed exact author records | 206 | 8 | subset | PubMed only covers biomedical/indexed literature and is a strict subset of the curated bibliography. |
+| Curated bibliography vs Crossref ORCID DOI records | 206 | 15 | subset | Crossref captures DOI records attached to the ORCID; Zenodo, books, courses, and non-DOI works may be absent or represented elsewhere. |
+| Curated bibliography vs Zenodo ORCID-linked records | 206 | 131 | overlapping sets | Zenodo includes versioned records and software archives; the local bibliography normalizes selected works into one curated table. |
+| Catalogued docxology software vs GitHub public repository count | 95 | 347 | curated subset | SOFTWARE.md intentionally catalogs selected owned repositories; GitHub counts all public repositories including forks and uncatalogued experiments. |
 | Catalogued AII contributions vs AII GitHub public repository count | 38 | 40 | curated subset | SOFTWARE.md lists AII repositories with docxology contributions, not every public AII repository. |
 
 ## Maintenance Use

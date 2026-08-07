@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 204 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 206 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -5643,10 +5643,10 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.10362561",
-                "url": "https://doi.org/10.5281/zenodo.10362561"
+                "value": "10.5281/zenodo.10296601",
+                "url": "https://doi.org/10.5281/zenodo.10296601"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.10362561"
+            "sameAs": "https://doi.org/10.5281/zenodo.10296601"
         },
         {
             "@type": "ScholarlyArticle",
@@ -7878,6 +7878,82 @@
                 "url": "https://doi.org/10.5281/zenodo.21763244"
             },
             "sameAs": "https://doi.org/10.5281/zenodo.21763244"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "PROJECT BOND — The Special-Agent Operations Compendium",
+            "headline": "PROJECT BOND — The Special-Agent Operations Compendium",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026PROJECTBONDSpecialAgent208.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026PROJECTBONDSpecialAgent208.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026PROJECTBONDSpecialAgent208.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21843592",
+                "url": "https://doi.org/10.5281/zenodo.21843592"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21843592"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+            "headline": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Siddhant Shrivastava"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Evelyn C. Goh"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Alexandra Mikhailova"
+                },
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🛡️",
+            "@id": "https://danielarifriedman.com/works/Friedman2026DigiPPPiPDigitalPartnerPen209.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026DigiPPPiPDigitalPartnerPen209.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026DigiPPPiPDigitalPartnerPen209.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21815704",
+                "url": "https://doi.org/10.5281/zenodo.21815704"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21815704"
         }
     ]
 }

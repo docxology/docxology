@@ -1,0 +1,42 @@
+{
+  "title": "PROJECT BOND — The Special-Agent Operations Compendium",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.21843592",
+  "doi_url": "https://doi.org/10.5281/zenodo.21843592",
+  "zenodo_record": "https://zenodo.org/records/21843592",
+  "record_id": "21843802",
+  "publication_date": "2026-08-07",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "PROJECT BOND is a fleet of 33 independent software packages — 27 film packages, one per James Bond motion picture, plus 6 mission-infrastructure packages (a Q-branch utilities layer, a frozen mission protocol, mission control, an orchestrator, a front-door CLI, and fleet operations). Each film package implements, as real tested algorithms, the concepts of its film: radiation forensics for Dr. No, gold-market cornering for Goldfinger, orbital-EMP modeling for GoldenEye, DNA-targeted bioweapon countermeasure modeling for No Time to Die. The public source repository for the suite and this manuscript is https://github.com/docxology/bond. The repository will carry the source history, reproducibility instructions, generated release artifacts, and the cross-linked Zenodo record for this publication. This compendium is the wrapper manuscript for the whole suite. It does not re-derive the packages' content by hand; it imports each of the 33 package manuscripts in full — every package's abstract, every authored section (introduction, methodology, results, conclusion, experimental setup, reproducibility, and scope), and its figures — framing them with this abstract, a generated suite-architecture chapter, and a closing synthesis. A unified bibliography merges every package's references into a single references.bib, and the combined PDF carries all 27 film chapters and 6 infrastructure chapters in their entirety. The suite is \"special-agent material\" by construction: deterministic, no-mock, ≥90%-coverage-tested packages; provenance on every mission outcome; a frozen protocol every film implements; and cross-film missions (OPERATION OMNIBUS) executed over the real packages.",
+  "keywords": [
+    "software suite",
+    "special agent operations",
+    "James Bond",
+    "reproducible research",
+    "mission protocol",
+    "compendium"
+  ],
+  "files": [
+    {
+      "name": "bond-manuscript_combined.pdf",
+      "size_bytes": 10252200,
+      "checksum": "md5:c59e6e44615e4d0154c1f2b8e6227053",
+      "download_url": "https://zenodo.org/api/records/21843802/files/bond-manuscript_combined.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-08-07T21:06:31Z"
+}

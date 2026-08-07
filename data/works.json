@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-02T22:55:21Z",
+  "generated_at": "2026-08-07T21:12:11Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
-  "count": 204,
+  "count": 206,
   "works": [
     {
       "num": 1,
@@ -3417,8 +3417,8 @@
       "type": "Paper",
       "title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.10362561",
-      "doi": "10.5281/zenodo.10362561",
+      "url": "https://doi.org/10.5281/zenodo.10296601",
+      "doi": "10.5281/zenodo.10296601",
       "docs_path": "papers/2023_ATLAS2/",
       "has_paper_folder": true,
       "has_full_text": true,
@@ -5073,6 +5073,55 @@
       "has_readme": true,
       "full_text_url": "",
       "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 208,
+      "citation_key": "Friedman2026PROJECTBONDSpecialAgent208",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "PROJECT BOND — The Special-Agent Operations Compendium",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21843592",
+      "doi": "10.5281/zenodo.21843592",
+      "docs_path": "papers/2026_PROJECTBONDSpecial/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 209,
+      "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
+      "year": 2026,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21815704",
+      "doi": "10.5281/zenodo.21815704",
+      "docs_path": "papers/2026_DigiPPPiP/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Shrivastava, Siddhant",
+        "Goh, Evelyn C.",
+        "Mikhailova, Alexandra",
         "Friedman, Daniel Ari"
       ]
     }

@@ -46,6 +46,16 @@ from sync_paired_publications import fetch_zenodo_records, parse_bibliography_ro
 
 OUT = dated_report_path("zenodo_uncatalogued", "json")
 
+# Superseded Zenodo versions retained by the source registry but deliberately
+# not catalogued as new works. The current bibliography cites the replacement
+# concept/version for each. Keep this explicit so the freshness gate measures
+# actionable drift rather than known release-history records.
+KNOWN_STALE_RECORD_IDS = {
+    "21418901",  # SynthOBS v1.618.0; current row cites concept 21418782
+    "20804586",  # CogSecSkills v1; current row cites concept 21513316
+    "19139090",  # Template/Reproducible duplicate of kept row #1
+}
+
 
 def version_doi(record: ZenodoRecord) -> str:
     """The record's own per-version DOI, independent of ZenodoRecord.doi's concept-DOI preference."""
@@ -62,7 +72,9 @@ def uncatalogued_records(records: list[ZenodoRecord], catalogued_dois: set[str])
     return [
         record
         for record in records
-        if record.doi not in catalogued_dois and version_doi(record) not in catalogued_dois
+        if record.record_id not in KNOWN_STALE_RECORD_IDS
+        and record.doi not in catalogued_dois
+        and version_doi(record) not in catalogued_dois
     ]
 
 

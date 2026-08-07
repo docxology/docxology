@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-02T22:55:22Z",
+  "generated_at": "2026-08-07T21:17:37Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 132,
+  "count": 133,
   "repositories": [
     {
       "name": "template",
@@ -1119,6 +1119,18 @@
       "updated_or_year": "2026-03",
       "paper_path": "",
       "zenodo_url": ""
+    },
+    {
+      "name": "bond",
+      "url": "https://github.com/docxology/bond",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts ·  · Zenodo",
+      "language": "Markdown/Python",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "papers/2026_PROJECTBONDSpecial/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21843592"
     },
     {
       "name": "thalia",

@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "94 original repositories and 38 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "95 original repositories and 38 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -22,7 +22,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-18T16:48:46Z",
-            "dateModified": "2026-07-21T12:07:39Z",
+            "dateModified": "2026-08-03T23:11:14Z",
             "keywords": "agents-md, ai-agents, claude-code, computational-research, cursor, latex, multi-project, ollama, pandoc, provenance, pytest, python, reproducible-research, research-template, scientific-computing, steganography, uv, zenodo",
             "sameAs": "https://doi.org/10.5281/zenodo.20584820"
         },
@@ -39,7 +39,7 @@
             "programmingLanguage": "JavaScript",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-03-19T15:05:45Z",
-            "dateModified": "2026-07-16T18:37:20Z",
+            "dateModified": "2026-07-27T20:37:40Z",
             "keywords": "3d, game, geometry, javascript, minecraft, open-source, quadray-coordinates, tetrahedra, voxel"
         },
         {
@@ -55,7 +55,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2022-01-08T18:33:36Z",
-            "dateModified": "2026-06-29T20:00:59Z",
+            "dateModified": "2026-08-03T02:10:11Z",
             "keywords": "active-inference, ant-behavior, ants, computational-biology, ecology, entomology, hymenoptera, multi-agent-systems, python"
         },
         {
@@ -71,7 +71,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-05-16T17:45:28Z",
-            "dateModified": "2026-07-21T12:13:08Z",
+            "dateModified": "2026-08-07T01:45:39Z",
             "keywords": "agents, ai, ai-agents, claude, developer-tools, llm, mcp, model-context-protocol, modular, multi-agent, orchestration, personal-ai, python, security, testing, zero-mock"
         },
         {
@@ -160,7 +160,7 @@
             },
             "programmingLanguage": "TypeScript",
             "dateCreated": "2026-02-09T00:53:52Z",
-            "dateModified": "2026-03-19T21:15:31Z",
+            "dateModified": "2026-07-23T00:51:50Z",
             "keywords": "california, civic-tech, community, crescent-city, government, municipal-code, open-source"
         },
         {
@@ -176,7 +176,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-03-13T16:31:42Z",
-            "dateModified": "2026-04-23T15:56:42Z"
+            "dateModified": "2026-07-22T12:13:55Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -308,7 +308,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2025-06-16T18:24:06Z",
-            "dateModified": "2026-07-10T00:24:04Z"
+            "dateModified": "2026-08-04T00:49:37Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -322,7 +322,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2026-05-24T23:28:57Z",
-            "dateModified": "2026-07-18T12:02:42Z",
+            "dateModified": "2026-08-03T19:16:24Z",
             "sameAs": "https://doi.org/10.5281/zenodo.20732274"
         },
         {
@@ -336,8 +336,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-03T22:21:44Z",
-            "dateModified": "2026-07-10T20:33:31Z",
+            "dateModified": "2026-08-03T05:46:13Z",
             "sameAs": "https://doi.org/10.5281/zenodo.20533669"
         },
         {
@@ -365,8 +366,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Rust",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-03-06T17:51:21Z",
-            "dateModified": "2026-07-10T20:14:57Z",
+            "dateModified": "2026-08-04T00:09:53Z",
             "keywords": "cryptography, media-verification, open-source, python, security, steganography, watermarking"
         },
         {
@@ -380,8 +382,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-03T22:21:57Z",
-            "dateModified": "2026-07-10T20:34:10Z",
+            "dateModified": "2026-08-03T00:33:40Z",
             "sameAs": "https://doi.org/10.5281/zenodo.20533675"
         },
         {
@@ -442,7 +445,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2026-06-18T23:40:37Z",
-            "dateModified": "2026-06-22T22:54:15Z",
+            "dateModified": "2026-08-04T01:18:51Z",
             "keywords": "agentic-ai, claude, cognitive-security, counterintelligence, defensive-security, intelligence-analysis, multiharness, osint, structured-analytic-techniques",
             "sameAs": "https://doi.org/10.5281/zenodo.20804585"
         },
@@ -457,8 +460,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-21T16:45:37Z",
-            "dateModified": "2026-07-10T19:24:30Z",
+            "dateModified": "2026-08-03T05:47:23Z",
             "sameAs": "https://doi.org/10.5281/zenodo.20786638"
         },
         {
@@ -788,7 +792,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-09T23:15:48Z",
-            "dateModified": "2025-08-10T22:58:52Z"
+            "dateModified": "2026-08-04T00:05:00Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -802,7 +806,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2025-03-17T22:37:41Z",
-            "dateModified": "2026-01-23T20:30:42Z"
+            "dateModified": "2026-08-04T03:24:18Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -860,7 +864,7 @@
             "programmingLanguage": "HTML",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2026-06-03T18:30:48Z",
-            "dateModified": "2026-07-10T20:34:41Z",
+            "dateModified": "2026-08-03T00:26:37Z",
             "sameAs": "https://doi.org/10.5281/zenodo.20533125"
         },
         {
@@ -965,7 +969,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-11T15:44:33Z",
-            "dateModified": "2026-07-15T22:47:01Z"
+            "dateModified": "2026-08-04T00:14:46Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1023,7 +1027,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-05T21:21:23Z",
-            "dateModified": "2026-07-10T15:22:01Z"
+            "dateModified": "2026-08-04T00:34:22Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1095,8 +1099,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T18:34:18Z",
-            "dateModified": "2026-07-12T01:57:12Z"
+            "dateModified": "2026-08-03T05:45:42Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1109,8 +1114,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-09T14:30:57Z",
-            "dateModified": "2026-07-10T20:34:15Z"
+            "dateModified": "2026-08-02T23:36:44Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1123,8 +1129,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "TeX",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-06T23:04:03Z",
-            "dateModified": "2026-07-10T20:33:24Z",
+            "dateModified": "2026-08-03T00:20:23Z",
             "sameAs": "https://doi.org/10.5281/zenodo.21227869"
         },
         {
@@ -1138,8 +1145,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T18:34:15Z",
-            "dateModified": "2026-07-10T20:33:28Z"
+            "dateModified": "2026-08-03T05:24:12Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1152,8 +1160,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T17:31:44Z",
-            "dateModified": "2026-07-10T20:33:36Z"
+            "dateModified": "2026-08-03T00:22:26Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1167,7 +1176,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2026-07-10T19:14:21Z",
-            "dateModified": "2026-07-10T20:33:39Z"
+            "dateModified": "2026-08-03T01:05:57Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1180,8 +1189,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "TeX",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-30T22:46:30Z",
-            "dateModified": "2026-07-10T20:33:43Z"
+            "dateModified": "2026-08-03T05:46:30Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1194,8 +1204,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-10T19:14:23Z",
-            "dateModified": "2026-07-10T20:33:47Z"
+            "dateModified": "2026-08-03T02:49:19Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1208,8 +1219,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-26T13:50:56Z",
-            "dateModified": "2026-07-14T00:49:11Z"
+            "dateModified": "2026-08-03T00:33:40Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1223,7 +1235,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-06-26T13:51:02Z",
-            "dateModified": "2026-07-11T01:50:09Z"
+            "dateModified": "2026-08-03T01:08:01Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1236,8 +1248,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "TeX",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-30T23:00:16Z",
-            "dateModified": "2026-07-10T20:34:07Z"
+            "dateModified": "2026-08-03T05:47:26Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1251,7 +1264,7 @@
             },
             "programmingLanguage": "TeX",
             "dateCreated": "2026-07-10T19:14:26Z",
-            "dateModified": "2026-07-10T20:34:18Z"
+            "dateModified": "2026-08-03T05:47:34Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1264,8 +1277,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "TeX",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T18:34:13Z",
-            "dateModified": "2026-07-10T20:34:21Z"
+            "dateModified": "2026-08-03T00:47:08Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1279,7 +1293,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-10T19:14:29Z",
-            "dateModified": "2026-07-10T20:34:25Z"
+            "dateModified": "2026-08-03T05:47:39Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1293,7 +1307,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2026-07-10T19:14:31Z",
-            "dateModified": "2026-07-10T20:34:28Z"
+            "dateModified": "2026-08-03T00:30:29Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1306,8 +1320,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "TeX",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-12T13:52:34Z",
-            "dateModified": "2026-07-10T20:34:57Z"
+            "dateModified": "2026-08-03T00:41:00Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1320,8 +1335,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-14T19:54:36Z",
-            "dateModified": "2026-07-11T02:14:27Z"
+            "dateModified": "2026-08-03T05:47:46Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1334,8 +1350,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "TeX",
+            "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-03T18:13:35Z",
-            "dateModified": "2026-07-10T19:25:03Z"
+            "dateModified": "2026-08-03T00:14:26Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1348,8 +1365,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "TeX",
+            "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2026-05-27T21:32:50Z",
-            "dateModified": "2026-07-10T20:34:37Z"
+            "dateModified": "2026-08-03T05:47:57Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1367,6 +1385,22 @@
         },
         {
             "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/bond#software",
+            "name": "bond",
+            "description": "Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/bond",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Markdown/Python",
+            "license": "https://spdx.org/licenses/MIT.html",
+            "dateCreated": "2026-08-07T20:39:23Z",
+            "dateModified": "2026-08-07T20:53:21Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21843592"
+        },
+        {
+            "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/thalia#software",
             "name": "thalia",
             "description": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments ·  · Zenodo",
@@ -1376,6 +1410,9 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
+            "dateCreated": "2026-07-01T21:39:18Z",
+            "dateModified": "2026-08-02T20:43:34Z",
             "sameAs": "https://doi.org/10.5281/zenodo.21763244"
         },
         {
@@ -1390,7 +1427,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2022-11-07T14:26:39Z",
-            "dateModified": "2026-07-18T19:51:52Z"
+            "dateModified": "2026-08-03T01:05:04Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1405,7 +1442,7 @@
             "programmingLanguage": "Jupyter",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2022-02-18T17:54:38Z",
-            "dateModified": "2026-07-18T00:57:34Z",
+            "dateModified": "2026-08-03T00:10:42Z",
             "keywords": "active, active-inference, cadcad, inference, simulation"
         },
         {
@@ -1420,7 +1457,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2024-04-04T19:21:29Z",
-            "dateModified": "2026-06-30T20:43:46Z"
+            "dateModified": "2026-08-03T00:34:06Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1435,7 +1472,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-03-19T17:35:28Z",
-            "dateModified": "2026-07-07T17:58:33Z"
+            "dateModified": "2026-08-03T00:38:22Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1449,7 +1486,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2023-04-02T19:45:34Z",
-            "dateModified": "2026-07-20T06:34:51Z",
+            "dateModified": "2026-08-04T02:47:50Z",
             "keywords": "active, active-inference, active-inference-notation, inference",
             "sameAs": "https://doi.org/10.5281/zenodo.19600217"
         },
@@ -1466,7 +1503,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-02-17T17:46:31Z",
-            "dateModified": "2026-07-17T19:54:36Z"
+            "dateModified": "2026-08-03T06:01:07Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1479,7 +1516,7 @@
                 "name": "Daniel Ari Friedman"
             },
             "dateCreated": "2021-03-01T16:12:21Z",
-            "dateModified": "2026-07-17T19:57:13Z",
+            "dateModified": "2026-08-02T23:56:59Z",
             "keywords": "active, active-inference, inference, ontology"
         },
         {
@@ -1494,7 +1531,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2025-04-07T22:46:41Z",
-            "dateModified": "2026-06-30T20:43:50Z",
+            "dateModified": "2026-08-03T00:29:03Z",
             "sameAs": "https://doi.org/10.5281/zenodo.15170907"
         },
         {
@@ -1510,7 +1547,7 @@
             "programmingLanguage": "HTML",
             "license": "https://spdx.org/licenses/CC0-1.0.html",
             "dateCreated": "2022-11-07T14:21:08Z",
-            "dateModified": "2026-07-18T19:48:15Z",
+            "dateModified": "2026-08-03T00:18:48Z",
             "sameAs": "https://doi.org/10.5281/zenodo.18686966"
         },
         {
@@ -1526,7 +1563,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-11-05T19:42:21Z",
-            "dateModified": "2026-06-30T20:44:03Z"
+            "dateModified": "2026-08-03T00:09:13Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1540,7 +1577,7 @@
             },
             "license": "https://spdx.org/licenses/CC0-1.0.html",
             "dateCreated": "2023-05-12T16:23:23Z",
-            "dateModified": "2026-06-30T21:46:30Z",
+            "dateModified": "2026-08-02T23:55:50Z",
             "keywords": "active, active-inference, category, category-theory, inference"
         },
         {
@@ -1555,7 +1592,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2025-05-13T14:17:56Z",
-            "dateModified": "2026-07-20T14:34:21Z"
+            "dateModified": "2026-08-03T22:06:20Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1569,7 +1606,7 @@
             },
             "license": "https://spdx.org/licenses/CC-BY-4.0.html",
             "dateCreated": "2022-03-01T00:25:54Z",
-            "dateModified": "2026-07-17T19:38:33Z"
+            "dateModified": "2026-08-02T23:56:28Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1583,7 +1620,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2026-02-08T19:49:40Z",
-            "dateModified": "2026-07-20T02:16:49Z"
+            "dateModified": "2026-08-03T00:20:52Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1597,7 +1634,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2025-03-14T16:00:58Z",
-            "dateModified": "2026-07-20T02:16:44Z"
+            "dateModified": "2026-08-03T00:23:05Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1611,7 +1648,7 @@
             },
             "programmingLanguage": "Julia",
             "dateCreated": "2022-04-29T13:45:33Z",
-            "dateModified": "2026-06-30T21:46:37Z"
+            "dateModified": "2026-08-02T23:40:44Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1626,7 +1663,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-10-31T14:24:22Z",
-            "dateModified": "2026-07-18T00:58:11Z"
+            "dateModified": "2026-08-03T00:23:01Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1640,7 +1677,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2024-12-15T22:23:59Z",
-            "dateModified": "2026-07-20T02:16:47Z"
+            "dateModified": "2026-08-03T00:04:07Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1654,7 +1691,7 @@
             },
             "programmingLanguage": "TeX",
             "dateCreated": "2026-04-07T20:10:34Z",
-            "dateModified": "2026-07-13T04:19:57Z"
+            "dateModified": "2026-08-03T00:33:48Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1668,7 +1705,7 @@
             },
             "programmingLanguage": "Jupyter",
             "dateCreated": "2022-02-09T13:07:24Z",
-            "dateModified": "2026-06-30T21:46:36Z"
+            "dateModified": "2026-08-03T00:12:40Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1682,7 +1719,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-04-14T13:33:35Z",
-            "dateModified": "2026-07-20T02:20:19Z",
+            "dateModified": "2026-08-01T00:13:40Z",
             "sameAs": "https://doi.org/10.5281/zenodo.19699234"
         },
         {
@@ -1697,7 +1734,7 @@
             },
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-02-15T14:09:56Z",
-            "dateModified": "2026-06-30T21:46:28Z"
+            "dateModified": "2026-08-03T00:10:32Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1712,7 +1749,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-05-12T14:40:06Z",
-            "dateModified": "2026-07-13T04:19:58Z"
+            "dateModified": "2026-08-02T23:53:14Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1727,7 +1764,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T21:43:07Z",
-            "dateModified": "2026-07-20T02:17:01Z"
+            "dateModified": "2026-08-02T23:51:32Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1742,7 +1779,7 @@
             "programmingLanguage": "Jupyter",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-08-19T19:09:18Z",
-            "dateModified": "2026-06-30T20:43:53Z"
+            "dateModified": "2026-08-02T23:59:29Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1756,7 +1793,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2025-04-22T12:27:15Z",
-            "dateModified": "2026-07-18T03:41:01Z"
+            "dateModified": "2026-08-02T23:47:32Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1781,7 +1818,7 @@
             },
             "programmingLanguage": "Jupyter",
             "dateCreated": "2022-11-09T13:10:36Z",
-            "dateModified": "2026-06-30T21:46:31Z"
+            "dateModified": "2026-08-03T00:05:23Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1795,7 +1832,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2024-08-21T20:33:41Z",
-            "dateModified": "2026-06-30T21:46:27Z"
+            "dateModified": "2026-08-03T00:52:01Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1810,7 +1847,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-15T15:28:56Z",
-            "dateModified": "2026-07-18T03:47:58Z",
+            "dateModified": "2026-08-03T00:40:08Z",
             "sameAs": "https://doi.org/10.5281/zenodo.20705351"
         },
         {
@@ -1826,7 +1863,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-18T12:10:13Z",
-            "dateModified": "2026-06-30T20:44:16Z",
+            "dateModified": "2026-08-03T00:18:48Z",
             "sameAs": "https://doi.org/10.5281/zenodo.20749817"
         },
         {
@@ -1854,7 +1891,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2023-04-15T17:32:25Z",
-            "dateModified": "2026-06-30T21:46:33Z"
+            "dateModified": "2026-08-03T00:44:40Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1868,7 +1905,7 @@
             },
             "license": "https://spdx.org/licenses/CC0-1.0.html",
             "dateCreated": "2025-03-14T16:00:39Z",
-            "dateModified": "2026-06-30T21:46:40Z"
+            "dateModified": "2026-08-02T23:45:57Z"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1894,7 +1931,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-03-22T16:46:52Z",
-            "dateModified": "2026-06-30T21:46:34Z"
+            "dateModified": "2026-08-02T23:45:05Z"
         },
         {
             "@type": "SoftwareSourceCode",

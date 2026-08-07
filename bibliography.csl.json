@@ -4806,8 +4806,8 @@
     "note": "Catalog row 136; docs: papers/2023_ATLAS2/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.10362561",
-    "URL": "https://doi.org/10.5281/zenodo.10362561"
+    "DOI": "10.5281/zenodo.10296601",
+    "URL": "https://doi.org/10.5281/zenodo.10296601"
   },
   {
     "id": "Friedman2023TranscriptActiveInferenceGuestStream137",
@@ -6692,5 +6692,67 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21763244",
     "URL": "https://doi.org/10.5281/zenodo.21763244"
+  },
+  {
+    "id": "Friedman2026PROJECTBONDSpecialAgent208",
+    "type": "article-journal",
+    "title": "PROJECT BOND — The Special-Agent Operations Compendium",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 208; docs: papers/2026_PROJECTBONDSpecial/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21843592",
+    "URL": "https://doi.org/10.5281/zenodo.21843592"
+  },
+  {
+    "id": "Friedman2026DigiPPPiPDigitalPartnerPen209",
+    "type": "article-journal",
+    "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+    "author": [
+      {
+        "family": "Shrivastava",
+        "given": "Siddhant"
+      },
+      {
+        "family": "Goh",
+        "given": "Evelyn C."
+      },
+      {
+        "family": "Mikhailova",
+        "given": "Alexandra"
+      },
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Cognitive Security; Paper",
+    "note": "Catalog row 209; docs: papers/2026_DigiPPPiP/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21815704",
+    "URL": "https://doi.org/10.5281/zenodo.21815704"
   }
 ]

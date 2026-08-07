@@ -99,8 +99,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-08-02.json",
-        "reports/source_coverage_2026-08-02.md"
+        "reports/source_coverage_2026-08-07.json",
+        "reports/source_coverage_2026-08-07.md"
       ],
       "sources": [
         "data/works.json",
@@ -192,7 +192,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-08-02.json"
+        "reports/pages_artifact_growth_2026-08-07.json"
       ],
       "sources": [
         "tracked repository files",
@@ -269,7 +269,7 @@
     {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-07-30.json"
+        "reports/paired_publications_2026-08-07.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -287,7 +287,7 @@
         "reports/paired_publications_review_queue_2026-06-04.md"
       ],
       "sources": [
-        "reports/paired_publications_2026-07-30.json",
+        "reports/paired_publications_2026-08-07.json",
         "manual review decision"
       ],
       "command": "manual review; update data/paired-publication-decisions.json"
@@ -501,7 +501,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-08-02.json"
+        "reports/asset_size_2026-08-07.json"
       ],
       "sources": [
         "root HTML pages",
@@ -515,7 +515,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-08-02.json"
+        "reports/accessibility_static_2026-08-07.json"
       ],
       "sources": [
         "root HTML pages",

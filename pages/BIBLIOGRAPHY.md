@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**204 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**206 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-777_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical
 
-**183** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
+**185** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series
 
-> **204** works in the table below **·** **187** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **206** works in the table below **·** **189** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -171,7 +171,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 133 | 2025 | 🧬 | Paper | Con-cat-enate: pilot overview | *Zenodo* | [10.5281/zenodo.14737042](https://doi.org/10.5281/zenodo.14737042) | [📁](../papers/2025_ConCatEnate2/) | djuwidja, andrew; Friedman, Daniel |
 | 134 | 2024 | 🧠 | Paper | Push and Pull: A priming sequence | *Zenodo* | [10.5281/zenodo.10659374](https://doi.org/10.5281/zenodo.10659374) | [📁](../papers/2024_PushPull/) | Friedman, Daniel Ari |
 | 135 | 2023 | 💻 | Paper | A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance | *Zenodo* | [10.5281/zenodo.10360056](https://doi.org/10.5281/zenodo.10360056) | [📁](../papers/2023_NaturalAIBased/) | Clippinger, John; de Vries, Bert; Noveck, Beth; Fields, Chris; Slater, Cory; Friedman, Daniel Ari; Silbersweig, David A.; Lapenta, Francesco; Grimm, Holly; Emmett, Jeff; Shane, Joshua; Friston, Karl; Nkemnkia, Martin Nkafu; Brown, Matthew; Pirkowski, Matthew; Levin, Michael; Zargham, Michael; Tuan, Nguyen Anh; Achuthan, Krishnashree; Patterson, Thomas; David, Scott L.; Kehler, Thomas; Knight, Virginia Bleu; Nakayama, Yasuhide |
-| 136 | 2023 | 🛡️ | Paper | ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management | *Zenodo* | [10.5281/zenodo.10362561](https://doi.org/10.5281/zenodo.10362561) | [📁](../papers/2023_ATLAS2/) | Cordes, R.J.; David, Scott; Friedman, Daniel; Mikhailova, Alexandra; Penland, Andrew; Young, Sam; Zacharias, Colten |
+| 136 | 2023 | 🛡️ | Paper | ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management | *Zenodo* | [10.5281/zenodo.10296601](https://doi.org/10.5281/zenodo.10296601) | [📁](../papers/2023_ATLAS2/) | Cordes, R.J.; David, Scott; Friedman, Daniel; Mikhailova, Alexandra; Penland, Andrew; Young, Sam; Zacharias, Colten |
 | 137 | 2023 | 🧠 | Paper | Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism" | *Zenodo* | [10.5281/zenodo.8228934](https://doi.org/10.5281/zenodo.8228934) | [📁](../papers/2023_TranscriptActiveInference/) | Peters, Megan A. K.; Bradford, Nora; Friedman, Daniel |
 | 138 | 2023 | 🧠 | Paper | Modern Nostr Index Card-based Knowledge Engineering | *Zenodo* | [10.5281/zenodo.8118155](https://doi.org/10.5281/zenodo.8118155) | [📁](../papers/2023_ModernNostrIndex/) | Claros, Andrew; Friedman, Daniel |
 | 139 | 2023 | 🧠 | Paper | Slides for Iris | *Zenodo* | [10.5281/zenodo.7838652](https://doi.org/10.5281/zenodo.7838652) | [📁](../papers/2023_SlidesIris/) | Friedman, Daniel Ari |
@@ -242,6 +242,8 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 205 | 2026 | 🛡️ | Paper | Black Line: Strong Work in Public | *Zenodo* | [10.5281/zenodo.21754235](https://doi.org/10.5281/zenodo.21754235) | [📁](../papers/2026_BlackLine/) | Friedman, Daniel Ari |
 | 206 | 2026 | 💻 | Paper | Codomyrmex: An Artificial Ecology for Agentic Software Development | *Zenodo* | [10.5281/zenodo.21750800](https://doi.org/10.5281/zenodo.21750800) | [📁](../papers/2026_Codomyrmex/) | Friedman, Daniel Ari |
 | 207 | 2026 | 💻 | Paper | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture | *Zenodo* | [10.5281/zenodo.21763244](https://doi.org/10.5281/zenodo.21763244) | [📁](../papers/2026_THALIA/) | Friedman, Daniel Ari |
+| 208 | 2026 | 💻 | Paper | PROJECT BOND — The Special-Agent Operations Compendium | *Zenodo* | [10.5281/zenodo.21843592](https://doi.org/10.5281/zenodo.21843592) | [📁](../papers/2026_PROJECTBONDSpecial/) | Friedman, Daniel Ari |
+| 209 | 2026 | 🛡️ | Paper | DigiPPPiP: Digital Partner Pen Play in Parallel | *Zenodo* | [10.5281/zenodo.21815704](https://doi.org/10.5281/zenodo.21815704) | [📁](../papers/2026_DigiPPPiP/) | Shrivastava, Siddhant; Goh, Evelyn C.; Mikhailova, Alexandra; Friedman, Daniel Ari |
 ---
 
 ## Domain Index

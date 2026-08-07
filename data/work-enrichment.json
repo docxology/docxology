@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-02T22:55:23Z",
+  "generated_at": "2026-08-07T21:06:55Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 204,
+  "count": 206,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -4152,6 +4152,51 @@
       ],
       "methods": [],
       "source": "papers/2026_THALIA/README.md"
+    },
+    "Friedman2026PROJECTBONDSpecialAgent208": {
+      "citation_key": "Friedman2026PROJECTBONDSpecialAgent208",
+      "abstract": "PROJECT BOND is a fleet of 33 independent software packages — 27 film packages, one per James Bond motion picture, plus 6 mission-infrastructure packages (a Q-branch utilities layer, a frozen mission protocol, mission control, an orchestrator, a front-door CLI, and fleet operations). Each film package implements, as real tested algorithms, the concepts of its film: radiation forensics for Dr. No, gold-market cornering for Goldfinger, orbital-EMP modeling for GoldenEye, DNA-targeted bioweapon countermeasure modeling for No Time to Die. The public source repository for the suite and this manuscript is https://github.com/docxology/bond. The repository will carry the source history, reproducibility instructions, generated release artifacts, and the cross-linked Zenodo record for this publication. This compendium is the wrapper manuscript for the whole suite. It does not re-derive the package",
+      "keywords": [
+        "software suite",
+        "special agent operations",
+        "James Bond",
+        "reproducible research",
+        "mission protocol",
+        "compendium"
+      ],
+      "findings": [
+        "software suite",
+        "special agent operations",
+        "James Bond",
+        "reproducible research",
+        "mission protocol"
+      ],
+      "methods": [],
+      "source": "papers/2026_PROJECTBONDSpecial/README.md"
+    },
+    "Friedman2026DigiPPPiPDigitalPartnerPen209": {
+      "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
+      "abstract": "DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous, accessible, and place-responsive dyadic drawing . The framework is positioned within collaborative-work studies of shared drawing surfaces , cyber-physical-social systems , mediated embodiment and presence , digital intimacy technologies , and cautious hyperscanning methodology . The manuscript translates the project brief into a modular research artifact: 9 temporal-spatial modalities, 13 evidence dimensions, 6 planned outcome measures, and 39 conceptual figures are generated or registered by the project code rather than hand-maintained prose. The computational layer is explicitly illustrative, not empirical: the active-inference, inter-brain-synchrony, Forman-Ricci, narrative-information, source-quality, accessib",
+      "keywords": [
+        "partner pen play in parallel",
+        "active inference",
+        "inter-brain synchrony",
+        "geometric hyperscanning",
+        "narrative information theory",
+        "neuroergonomics",
+        "digital placemaking",
+        "relational technology",
+        "reproducible research"
+      ],
+      "findings": [
+        "partner pen play in parallel",
+        "active inference",
+        "inter-brain synchrony",
+        "geometric hyperscanning",
+        "narrative information theory"
+      ],
+      "methods": [],
+      "source": "papers/2026_DigiPPPiP/README.md"
     }
   }
 }

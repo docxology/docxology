@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T22:55:22Z",
+  "generated_at": "2026-08-07T21:17:37Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,9 +34,9 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 204,
-    "software_catalogued": 132,
-    "owned_software_catalogued": 94,
+    "works": 206,
+    "software_catalogued": 133,
+    "owned_software_catalogued": 95,
     "aii_software_catalogued": 38,
     "google_scholar": {
       "citations": 777,
@@ -74,21 +74,21 @@
       "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 38 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-07-21T20:36:03Z",
+      "generated_at": "2026-08-07T21:11:55Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 387,
-      "public": 387,
-      "primary_total": 142,
-      "forks": 245,
-      "docxology": 347,
-      "ActiveInferenceInstitute": 40
+      "total": 241,
+      "public": 241,
+      "primary_total": 154,
+      "forks": 87,
+      "docxology": 200,
+      "ActiveInferenceInstitute": 41
     }
   },
   "integrity": {
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "665b30ba1c71d2a13ca586ec128c79872291df9e424685ac3dbf28b6be7533a5",
+      "sha256": "f7867c544d8bafce6cedd53417e803c94906f1638dcb185e8efff732f4c33c68",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 164205,
-          "sha256": "ed30c91d98fd27ecc8f0bc33cd1834b4e0b9f2c7443af34a88c04247dd1a84aa"
+          "bytes": 165704,
+          "sha256": "d15e50848fc484d60dbba50d9e577e078a60369e7bbe6d838976e00f442cd950"
         },
         {
           "path": "data/software.json",
-          "bytes": 63212,
-          "sha256": "50fec8d4274f553a58cfd13254cd52ca2b624af7886dbb3ee75f3374658c6fc2"
+          "bytes": 63807,
+          "sha256": "6b61c68bca9e53552562da88dcbae3297de3262c4adf5da629147b3cb0c9c6e8"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 11914,
-          "sha256": "5116775ca1c2e45ba3579c47395b7a65dd0caa898d3854c5f3efcaa230e26271"
+          "sha256": "ab1b5a463aed449d27604e5fb56ff7a0c69f9336be81bdd347d23454963e6975"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 331158,
-          "sha256": "63309b3a3d28402d899afe5f5dab8edfaf2f8e0a3e9f8ebf0b1758790c0406b6"
+          "bytes": 208705,
+          "sha256": "1bff26ba53640176919c594180e085b61542581166636935ab231040fa6cb2f5"
         }
       ]
     },
@@ -5723,8 +5723,8 @@
       "type": "Paper",
       "title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.10362561",
-      "doi": "10.5281/zenodo.10362561",
+      "url": "https://doi.org/10.5281/zenodo.10296601",
+      "doi": "10.5281/zenodo.10296601",
       "docs_path": "papers/2023_ATLAS2/",
       "has_paper_folder": true,
       "has_full_text": true,
@@ -7381,6 +7381,55 @@
       "authors": [
         "Friedman, Daniel Ari"
       ]
+    },
+    {
+      "num": 208,
+      "citation_key": "Friedman2026PROJECTBONDSpecialAgent208",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "PROJECT BOND — The Special-Agent Operations Compendium",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21843592",
+      "doi": "10.5281/zenodo.21843592",
+      "docs_path": "papers/2026_PROJECTBONDSpecial/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 209,
+      "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
+      "year": 2026,
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21815704",
+      "doi": "10.5281/zenodo.21815704",
+      "docs_path": "papers/2026_DigiPPPiP/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Shrivastava, Siddhant",
+        "Goh, Evelyn C.",
+        "Mikhailova, Alexandra",
+        "Friedman, Daniel Ari"
+      ]
     }
   ],
   "software": [
@@ -8501,6 +8550,18 @@
       "zenodo_url": ""
     },
     {
+      "name": "bond",
+      "url": "https://github.com/docxology/bond",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts · · Zenodo",
+      "language": "Markdown/Python",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "papers/2026_PROJECTBONDSpecial/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21843592"
+    },
+    {
       "name": "thalia",
       "url": "https://github.com/docxology/thalia",
       "owner": "docxology",
@@ -8972,14 +9033,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 204 works.",
+      "claim": "The curated bibliography contains 206 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-02T22:55:22+00:00",
+      "checked_at": "2026-08-07T21:17:36+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -8987,14 +9048,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 187 per-paper documentation folders.",
+      "claim": "The repository contains 189 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-02T22:55:22+00:00",
+      "checked_at": "2026-08-07T21:17:36+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

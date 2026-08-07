@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-08-02T22:55:22Z
+Generated: 2026-08-07T21:17:37Z
 
-Current public metrics: 204 curated works; 132 catalogued software repositories (94 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 347 docxology + 40 AII public repositories (142 primary, 245 forks).
+Current public metrics: 206 curated works; 133 catalogued software repositories (95 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 200 docxology + 41 AII public repositories (154 primary, 87 forks).
 
 SUMMARY
 -------
@@ -134,7 +134,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (204)
+WORKS AND PUBLICATIONS (206)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -269,7 +269,7 @@ WORKS AND PUBLICATIONS (204)
 [133] 2025 | Paper | Con-cat-enate: pilot overview | Zenodo | 10.5281/zenodo.14737042
 [134] 2024 | Paper | Push and Pull: A priming sequence | Zenodo | 10.5281/zenodo.10659374
 [135] 2023 | Paper | A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance | Zenodo | 10.5281/zenodo.10360056
-[136] 2023 | Paper | ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management | Zenodo | 10.5281/zenodo.10362561
+[136] 2023 | Paper | ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management | Zenodo | 10.5281/zenodo.10296601
 [137] 2023 | Paper | Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism" | Zenodo | 10.5281/zenodo.8228934
 [138] 2023 | Paper | Modern Nostr Index Card-based Knowledge Engineering | Zenodo | 10.5281/zenodo.8118155
 [139] 2023 | Paper | Slides for Iris | Zenodo | 10.5281/zenodo.7838652
@@ -340,8 +340,10 @@ WORKS AND PUBLICATIONS (204)
 [205] 2026 | Paper | Black Line: Strong Work in Public | Zenodo | 10.5281/zenodo.21754235
 [206] 2026 | Paper | Codomyrmex: An Artificial Ecology for Agentic Software Development | Zenodo | 10.5281/zenodo.21750800
 [207] 2026 | Paper | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture | Zenodo | 10.5281/zenodo.21763244
+[208] 2026 | Paper | PROJECT BOND — The Special-Agent Operations Compendium | Zenodo | 10.5281/zenodo.21843592
+[209] 2026 | Paper | DigiPPPiP: Digital Partner Pen Play in Parallel | Zenodo | 10.5281/zenodo.21815704
 
-SOFTWARE (32)
+SOFTWARE (33)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/
@@ -368,6 +370,7 @@ docxology/p3if | Python | https://github.com/docxology/p3if | Properties, Proces
 docxology/template_textbook | HTML | https://github.com/docxology/template_textbook | Modular fillable scaffold for book-length technical works · · Zenodo | paper: papers/2026_TemplateTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20533125
 docxology/blake_jiang | Python | https://github.com/docxology/blake_jiang | William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing | paper: papers/2026_BlakeJiang/
 docxology/template_autopoiesis | TeX | https://github.com/docxology/template_autopoiesis | Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) | zenodo: https://doi.org/10.5281/zenodo.21227869
+docxology/bond | Markdown/Python | https://github.com/docxology/bond | Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts · · Zenodo | paper: papers/2026_PROJECTBONDSpecial/ | zenodo: https://doi.org/10.5281/zenodo.21843592
 docxology/thalia | Python | https://github.com/docxology/thalia | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · · Zenodo | paper: papers/2026_THALIA/ | zenodo: https://doi.org/10.5281/zenodo.21763244
 ActiveInferenceInstitute/GeneralizedNotationNotation | Python | https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.19600217
 ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo | paper: papers/2025_CEREBRUM/ | zenodo: https://doi.org/10.5281/zenodo.15170907

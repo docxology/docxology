@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T22:55:31Z",
+  "generated_at": "2026-08-07T21:12:23Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1666,
+  "count": 1681,
   "items": [
     {
       "id": "page:home",
@@ -321,7 +321,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-08-02.json",
+      "url": "/reports/accessibility_static_2026-08-07.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -370,7 +370,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-08-02.json",
+      "url": "/reports/asset_size_2026-08-07.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -3642,7 +3642,7 @@
       "type": "work",
       "title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
       "url": "/works/Friedman2023ATLASQuestionOrientedApproach136.html",
-      "external_url": "https://doi.org/10.5281/zenodo.10362561",
+      "external_url": "https://doi.org/10.5281/zenodo.10296601",
       "full_text_url": "/papers/2023_ATLAS2/full_text.md",
       "summary": "The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was t",
       "year": 2023,
@@ -3653,7 +3653,7 @@
         "bibliography",
         "ATLAS2"
       ],
-      "content": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management Cordes, R.J. David, Scott Friedman, Daniel Mikhailova, Alexandra Penland, Andrew Young, Sam Zacharias, Colten R.J. Cordes Scott David Daniel Friedman Alexandra Mikhailova Andrew Penland Sam Young Colten Zacharias Zenodo 10.5281/zenodo.10362561 Friedman2023ATLASQuestionOrientedApproach136 Cognitive Security Paper The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions. Here we provide an initial specification for digital prototypes and... ATLAS2 The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions. Narrative analysis Trust and integrity modeling",
+      "content": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management Cordes, R.J. David, Scott Friedman, Daniel Mikhailova, Alexandra Penland, Andrew Young, Sam Zacharias, Colten R.J. Cordes Scott David Daniel Friedman Alexandra Mikhailova Andrew Penland Sam Young Colten Zacharias Zenodo 10.5281/zenodo.10296601 Friedman2023ATLASQuestionOrientedApproach136 Cognitive Security Paper The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions. Here we provide an initial specification for digital prototypes and... ATLAS2 The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions. Narrative analysis Trust and integrity modeling",
       "image_count": 16
     },
     {
@@ -5219,6 +5219,54 @@
       "content": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture Friedman, Daniel Ari Daniel Ari Friedman Zenodo 10.5281/zenodo.21763244 Friedman2026THALIATypedHarnessAnalytical207 Computational Paper THALIA is an executable research harness for long-context memory systems. It combines typed stage contracts, inspectable context selection, evidence-preserving episodic state, lexical-first retrieval, and bounded compiler search with source-bound evaluation and reproducible artifact checks. The deterministic results are finite diagnostic evidence; model-quality, integrity-advantage, and production-readiness claims remain separately gated. agentic systems long-context memory retrieval-augmented generation reproducible research agentic systems long-context memory retrieval-augmented generation reproducible research"
     },
     {
+      "id": "work:Friedman2026PROJECTBONDSpecialAgent208",
+      "type": "work",
+      "title": "PROJECT BOND — The Special-Agent Operations Compendium",
+      "url": "/works/Friedman2026PROJECTBONDSpecialAgent208.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21843592",
+      "full_text_url": "",
+      "summary": "PROJECT BOND is a fleet of 33 independent software packages — 27 film packages, one per James Bond motion picture, plus 6 mission-infrastructure packages (a Q-branch utilities layer, a frozen mission protocol, mission co",
+      "year": 2026,
+      "domain": "Computational",
+      "tags": [
+        "Paper",
+        "Computational",
+        "bibliography",
+        "software suite",
+        "special agent operations",
+        "James Bond",
+        "reproducible research",
+        "mission protocol",
+        "compendium"
+      ],
+      "content": "PROJECT BOND — The Special-Agent Operations Compendium Friedman, Daniel Ari Daniel Ari Friedman Zenodo 10.5281/zenodo.21843592 Friedman2026PROJECTBONDSpecialAgent208 Computational Paper PROJECT BOND is a fleet of 33 independent software packages — 27 film packages, one per James Bond motion picture, plus 6 mission-infrastructure packages (a Q-branch utilities layer, a frozen mission protocol, mission control, an orchestrator, a front-door CLI, and fleet operations). Each film package implements, as real tested algorithms, the concepts of its film: radiation forensics for Dr. No, gold-market cornering for Goldfinger, orbital-EMP modeling for GoldenEye, DNA-targeted bioweapon countermeasure modeling for No Time to Die. The public source repository for the suite and this manuscript is https://github.com/docxology/bond. The repository will carry the source history, reproducibility instructions, generated release artifacts, and the cross-linked Zenodo record for this publication. This compendium is the wrapper manuscript for the whole suite. It does not re-derive the package software suite special agent operations James Bond reproducible research mission protocol compendium software suite special agent operations James Bond reproducible research mission protocol"
+    },
+    {
+      "id": "work:Friedman2026DigiPPPiPDigitalPartnerPen209",
+      "type": "work",
+      "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+      "url": "/works/Friedman2026DigiPPPiPDigitalPartnerPen209.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21815704",
+      "full_text_url": "",
+      "summary": "DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous, accessible, and place-responsive dyadic draw",
+      "year": 2026,
+      "domain": "Cognitive Security",
+      "tags": [
+        "Paper",
+        "Cognitive Security",
+        "bibliography",
+        "partner pen play in parallel",
+        "active inference",
+        "inter-brain synchrony",
+        "geometric hyperscanning",
+        "narrative information theory",
+        "neuroergonomics",
+        "digital placemaking",
+        "relational technology"
+      ],
+      "content": "DigiPPPiP: Digital Partner Pen Play in Parallel Shrivastava, Siddhant Goh, Evelyn C. Mikhailova, Alexandra Friedman, Daniel Ari Siddhant Shrivastava Evelyn C. Goh Alexandra Mikhailova Daniel Ari Friedman Zenodo 10.5281/zenodo.21815704 Friedman2026DigiPPPiPDigitalPartnerPen209 Cognitive Security Paper DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous, accessible, and place-responsive dyadic drawing . The framework is positioned within collaborative-work studies of shared drawing surfaces , cyber-physical-social systems , mediated embodiment and presence , digital intimacy technologies , and cautious hyperscanning methodology . The manuscript translates the project brief into a modular research artifact: 9 temporal-spatial modalities, 13 evidence dimensions, 6 planned outcome measures, and 39 conceptual figures are generated or registered by the project code rather than hand-maintained prose. The computational layer is explicitly illustrative, not empirical: the active-inference, inter-brain-synchrony, Forman-Ricci, narrative-information, source-quality, accessib partner pen play in parallel active inference inter-brain synchrony geometric hyperscanning narrative information theory neuroergonomics digital placemaking relational technology reproducible research partner pen play in parallel active inference inter-brain synchrony geometric hyperscanning narrative information theory"
+    },
+    {
       "id": "software:docxology:template",
       "type": "software",
       "title": "template",
@@ -6521,6 +6569,20 @@
       "content": "template_bioinformatics_project template_bioinformatics_project — Active Inference / research exemplar repository Python docxology"
     },
     {
+      "id": "software:docxology:bond",
+      "type": "software",
+      "title": "bond",
+      "url": "https://github.com/docxology/bond",
+      "summary": "Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Markdown/Python",
+        "docxology"
+      ],
+      "content": "bond Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts ·  · Zenodo Markdown/Python docxology"
+    },
+    {
       "id": "software:docxology:thalia",
       "type": "software",
       "title": "thalia",
@@ -7076,12 +7138,12 @@
       "tags": [
         "github",
         "repository",
-        "TeX",
+        "HTML",
         "ActiveInferenceInstitute",
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/act_inf_metaanalysis A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus. TeX ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/act_inf_metaanalysis A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus. HTML ActiveInferenceInstitute  curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/ActInf_RxInfer",
@@ -7093,12 +7155,12 @@
       "tags": [
         "github",
         "repository",
-        "",
+        "Julia",
         "ActiveInferenceInstitute",
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/ActInf_RxInfer Active Inference and RxInfer.jl  ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/ActInf_RxInfer Active Inference and RxInfer.jl Julia ActiveInferenceInstitute  curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/active_fractal_rabbit",
@@ -7133,6 +7195,22 @@
         "recent"
       ],
       "content": "ActiveInferenceInstitute/Active_Inference_Ontology  HTML ActiveInferenceInstitute active active-inference inference ontology curated recent"
+    },
+    {
+      "id": "github-repo:ActiveInferenceInstitute/active_inference_power",
+      "type": "github_repository",
+      "title": "ActiveInferenceInstitute/active_inference_power",
+      "url": "https://github.com/ActiveInferenceInstitute/active_inference_power",
+      "summary": "ActiveInferenceInstitute repository",
+      "domain": "ActiveInferenceInstitute",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "ActiveInferenceInstitute",
+        "recent"
+      ],
+      "content": "ActiveInferenceInstitute/active_inference_power  Python ActiveInferenceInstitute  recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/Active_Inference_Un0",
@@ -7278,12 +7356,12 @@
       "tags": [
         "github",
         "repository",
-        "",
+        "Python",
         "ActiveInferenceInstitute",
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/ATLAS ATLAS   ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/ATLAS ATLAS  Python ActiveInferenceInstitute  curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/Biofirm",
@@ -7939,6 +8017,22 @@
       "content": "docxology/biology_textbook  Python docxology  curated recent"
     },
     {
+      "id": "github-repo:docxology/black_line",
+      "type": "github_repository",
+      "title": "docxology/black_line",
+      "url": "https://github.com/docxology/black_line",
+      "summary": "A positive operating discipline for concise, inspectable, revisable work",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/black_line A positive operating discipline for concise, inspectable, revisable work Python docxology  recent"
+    },
+    {
       "id": "github-repo:docxology/blake",
       "type": "github_repository",
       "title": "docxology/blake",
@@ -7971,6 +8065,22 @@
         "recent"
       ],
       "content": "docxology/blake_jiang William Blake, Professor Jiang, and the Architecture of Intelligence — rapid AI-augmented scholarly response to Game Theory #24: The AI Apocalypse (12 May 2026). Triangulates Jiang's diagnosis with Blake's perceptual diagnostics and Friston's Active Inference. Python docxology active-inference ai-alignment cognitive-science cognitive-security four-zoas free-energy-principle jiang-xueqin markov-blanket newtons-sleep rapid-publication scholarly-communication william-blake curated recent"
+    },
+    {
+      "id": "github-repo:docxology/bond",
+      "type": "github_repository",
+      "title": "docxology/bond",
+      "url": "https://github.com/docxology/bond",
+      "summary": "PROJECT BOND — The Special-Agent Operations Compendium",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/bond PROJECT BOND — The Special-Agent Operations Compendium Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/cascadia",
@@ -8034,10 +8144,9 @@
         "repository",
         "Python",
         "docxology",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "docxology/cognitive Cognitive science research workspace — Active Inference, Bayesian modeling, ant behavior, and computational neuroscience Python docxology active-inference ant-behavior bayesian-modeling cognitive-science computational-biology neuroscience research curated recent"
+      "content": "docxology/cognitive Cognitive science research workspace — Active Inference, Bayesian modeling, ant behavior, and computational neuroscience Python docxology active-inference ant-behavior bayesian-modeling cognitive-science computational-biology neuroscience research curated"
     },
     {
       "id": "github-repo:docxology/cognitive-engine",
@@ -8134,9 +8243,26 @@
         "repository",
         "TypeScript",
         "docxology",
-        "curated"
+        "curated",
+        "recent"
       ],
-      "content": "docxology/crescent-city Complete pipeline for the Crescent City, CA municipal code. TypeScript docxology california civic-tech community crescent-city government municipal-code open-source curated"
+      "content": "docxology/crescent-city Complete pipeline for the Crescent City, CA municipal code. TypeScript docxology california civic-tech community crescent-city government municipal-code open-source curated recent"
+    },
+    {
+      "id": "github-repo:docxology/crescent-city-intel",
+      "type": "github_repository",
+      "title": "docxology/crescent-city-intel",
+      "url": "https://github.com/docxology/crescent-city-intel",
+      "summary": "Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, analytics, and civic intelligence domains",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "TypeScript",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/crescent-city-intel Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, analytics, and civic intelligence domains TypeScript docxology  recent"
     },
     {
       "id": "github-repo:docxology/crescent_city",
@@ -8186,6 +8312,22 @@
         "recent"
       ],
       "content": "docxology/democreate DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers. Python docxology  curated recent"
+    },
+    {
+      "id": "github-repo:docxology/Digi-PPPiP",
+      "type": "github_repository",
+      "title": "docxology/Digi-PPPiP",
+      "url": "https://github.com/docxology/Digi-PPPiP",
+      "summary": "DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion (renders via the docxology/template sidecar). Deterministic conceptual models; draft metadata.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "TeX",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/Digi-PPPiP DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion (renders via the docxology/template sidecar). Deterministic conceptual models; draft metadata. TeX docxology  recent"
     },
     {
       "id": "github-repo:docxology/docxology",
@@ -8330,9 +8472,10 @@
         "repository",
         "Rich Text Format",
         "docxology",
-        "curated"
+        "curated",
+        "recent"
       ],
-      "content": "docxology/FORMINDEX FORMIS analysis Rich Text Format docxology  curated"
+      "content": "docxology/FORMINDEX FORMIS analysis Rich Text Format docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/fuller-obsidian",
@@ -8381,6 +8524,22 @@
         "curated"
       ],
       "content": "docxology/goference  Go docxology  curated"
+    },
+    {
+      "id": "github-repo:docxology/golden_line",
+      "type": "github_repository",
+      "title": "docxology/golden_line",
+      "url": "https://github.com/docxology/golden_line",
+      "summary": "An aspirational thread and long-horizon direction for personal work",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/golden_line An aspirational thread and long-horizon direction for personal work Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/grateful_data",
@@ -8528,6 +8687,22 @@
       "content": "docxology/lean_niche  Python docxology  curated"
     },
     {
+      "id": "github-repo:docxology/line_set",
+      "type": "github_repository",
+      "title": "docxology/line_set",
+      "url": "https://github.com/docxology/line_set",
+      "summary": "A thin reader that declares the line set and checks that no two lines share a spelling",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/line_set A thin reader that declares the line set and checks that no two lines share a spelling Python docxology  recent"
+    },
+    {
       "id": "github-repo:docxology/links",
       "type": "github_repository",
       "title": "docxology/links",
@@ -8554,10 +8729,9 @@
         "repository",
         "Python",
         "docxology",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "docxology/literature Curated research literature collection — papers, references, and reading lists in Active Inference, ecology, and computational biology Python docxology academic active-inference bibliography ecology literature-review papers reading-list research curated recent"
+      "content": "docxology/literature Curated research literature collection — papers, references, and reading lists in Active Inference, ecology, and computational biology Python docxology academic active-inference bibliography ecology literature-review papers reading-list research curated"
     },
     {
       "id": "github-repo:docxology/markdown_decision_process",
@@ -8604,9 +8778,10 @@
         "repository",
         "Python",
         "docxology",
-        "curated"
+        "curated",
+        "recent"
       ],
-      "content": "docxology/mdkv MKV-like format and methods for Markdown Python docxology  curated"
+      "content": "docxology/mdkv MKV-like format and methods for Markdown Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/MetaInformAnt",
@@ -8718,9 +8893,10 @@
         "repository",
         "Python",
         "docxology",
-        "curated"
+        "curated",
+        "recent"
       ],
-      "content": "docxology/p3if The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security Python docxology  curated"
+      "content": "docxology/p3if The Properties, Processes, and Perspectives Inter-Framework (P3IF): Multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/prior_cognitive_art",
@@ -8819,6 +8995,22 @@
         "recent"
       ],
       "content": "docxology/realizing_emptiness Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026). Python docxology  curated recent"
+    },
+    {
+      "id": "github-repo:docxology/red_line",
+      "type": "github_repository",
+      "title": "docxology/red_line",
+      "url": "https://github.com/docxology/red_line",
+      "summary": "A personal security boundary and explicit No document for dual-use development",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/red_line A personal security boundary and explicit No document for dual-use development Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/service",
@@ -8988,6 +9180,22 @@
       "content": "docxology/template_active_inference Active inference multi-track exemplar releases Python docxology  curated recent"
     },
     {
+      "id": "github-repo:docxology/template_advanced_literature_review",
+      "type": "github_repository",
+      "title": "docxology/template_advanced_literature_review",
+      "url": "https://github.com/docxology/template_advanced_literature_review",
+      "summary": "Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, deterministic plus optional LLM-based filtering, and cross-method validation.",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/template_advanced_literature_review Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, deterministic plus optional LLM-based filtering, and cross-method validation. Python docxology  recent"
+    },
+    {
       "id": "github-repo:docxology/template_autopoiesis",
       "type": "github_repository",
       "title": "docxology/template_autopoiesis",
@@ -8997,12 +9205,12 @@
       "tags": [
         "github",
         "repository",
-        "TeX",
+        "Python",
         "docxology",
         "curated",
         "recent"
       ],
-      "content": "docxology/template_autopoiesis Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) TeX docxology  curated recent"
+      "content": "docxology/template_autopoiesis Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_autoresearch_project",
@@ -9098,12 +9306,12 @@
       "tags": [
         "github",
         "repository",
-        "TeX",
+        "HTML",
         "docxology",
         "curated",
         "recent"
       ],
-      "content": "docxology/template_eda_notebook Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template TeX docxology  curated recent"
+      "content": "docxology/template_eda_notebook Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template HTML docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_formal",
@@ -9132,12 +9340,12 @@
       "tags": [
         "github",
         "repository",
-        "Python",
+        "HTML",
         "docxology",
         "curated",
         "recent"
       ],
-      "content": "docxology/template_gold_refinement Public standalone template exemplar: template_gold_refinement Python docxology  curated recent"
+      "content": "docxology/template_gold_refinement Public standalone template exemplar: template_gold_refinement HTML docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_literature_meta_analysis",
@@ -9149,12 +9357,12 @@
       "tags": [
         "github",
         "repository",
-        "Python",
+        "TeX",
         "docxology",
         "curated",
         "recent"
       ],
-      "content": "docxology/template_literature_meta_analysis Public standalone template exemplar: template_literature_meta_analysis Python docxology  curated recent"
+      "content": "docxology/template_literature_meta_analysis Public standalone template exemplar: template_literature_meta_analysis TeX docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_madlib",
@@ -9183,12 +9391,12 @@
       "tags": [
         "github",
         "repository",
-        "TeX",
+        "HTML",
         "docxology",
         "curated",
         "recent"
       ],
-      "content": "docxology/template_methods_paper A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template TeX docxology  curated recent"
+      "content": "docxology/template_methods_paper A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template HTML docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_newspaper",
@@ -9217,12 +9425,12 @@
       "tags": [
         "github",
         "repository",
-        "TeX",
+        "HTML",
         "docxology",
         "curated",
         "recent"
       ],
-      "content": "docxology/template_pools_rules_tools Pools, Rules, and Tools: a template-integrated resource architecture exemplar (fonds/rules/tools resource pools). From the docxology/template research monorepo. TeX docxology  curated recent"
+      "content": "docxology/template_pools_rules_tools Pools, Rules, and Tools: a template-integrated resource architecture exemplar (fonds/rules/tools resource pools). From the docxology/template research monorepo. HTML docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_prose_project",
@@ -9234,12 +9442,12 @@
       "tags": [
         "github",
         "repository",
-        "TeX",
+        "Python",
         "docxology",
         "curated",
         "recent"
       ],
-      "content": "docxology/template_prose_project Template prose project exemplar releases TeX docxology  curated recent"
+      "content": "docxology/template_prose_project Template prose project exemplar releases Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_redacted_report",
@@ -9285,12 +9493,12 @@
       "tags": [
         "github",
         "repository",
-        "TeX",
+        "HTML",
         "docxology",
         "curated",
         "recent"
       ],
-      "content": "docxology/template_search_project Private project mirror for archive/template_search_project in docxology/projects. TeX docxology  curated recent"
+      "content": "docxology/template_search_project Private project mirror for archive/template_search_project in docxology/projects. HTML docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_sia",
@@ -9319,12 +9527,12 @@
       "tags": [
         "github",
         "repository",
-        "TeX",
+        "Python",
         "docxology",
         "curated",
         "recent"
       ],
-      "content": "docxology/template_storybook Standalone full-page illustrated storybook template from docxology/template TeX docxology  curated recent"
+      "content": "docxology/template_storybook Standalone full-page illustrated storybook template from docxology/template Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_template",
@@ -9336,12 +9544,12 @@
       "tags": [
         "github",
         "repository",
-        "TeX",
+        "HTML",
         "docxology",
         "curated",
         "recent"
       ],
-      "content": "docxology/template_template Template meta-research exemplar: self-documenting reproducible research repo TeX docxology  curated recent"
+      "content": "docxology/template_template Template meta-research exemplar: self-documenting reproducible research repo HTML docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/template_textbook",
@@ -9374,6 +9582,23 @@
         "docxology"
       ],
       "content": "docxology/test_public   docxology"
+    },
+    {
+      "id": "github-repo:docxology/thalia",
+      "type": "github_repository",
+      "title": "docxology/thalia",
+      "url": "https://github.com/docxology/thalia",
+      "summary": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "curated",
+        "recent"
+      ],
+      "content": "docxology/thalia THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments Python docxology  curated recent"
     },
     {
       "id": "github-repo:docxology/timeline_generator",
@@ -9423,6 +9648,38 @@
         "curated"
       ],
       "content": "docxology/ultralink-docx  HTML docxology  curated"
+    },
+    {
+      "id": "github-repo:docxology/white_line",
+      "type": "github_repository",
+      "title": "docxology/white_line",
+      "url": "https://github.com/docxology/white_line",
+      "summary": "A typed ledger for the edge of a claim: absence, restraint, and the unknowable",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/white_line A typed ledger for the edge of a claim: absence, restraint, and the unknowable Python docxology  recent"
+    },
+    {
+      "id": "github-repo:docxology/witness_register",
+      "type": "github_repository",
+      "title": "docxology/witness_register",
+      "url": "https://github.com/docxology/witness_register",
+      "summary": "docxology repository",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/witness_register  Python docxology  recent"
     },
     {
       "id": "video:personal:kxKgdvFHOLM",
@@ -10357,7 +10614,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#078 ~ Game Theory Personal Channel 2020-04-21 Research Video Archive The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation When do bugs see (infra)red? MVEE: A Framework for Evolutionary Studies Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement"
+      "content": "#078 ~ Game Theory Personal Channel 2020-04-21 Research Video Archive DigiPPPiP: Digital Partner Pen Play in Parallel The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation When do bugs see (infra)red? MVEE: A Framework for Evolutionary Studies"
     },
     {
       "id": "video:personal:DHdWPENwahQ",
@@ -10714,7 +10971,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#031 ~ Triangles & Information Theory Personal Channel 2020-04-21 Research Video Archive The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation The Great Preset: Remote Teams and Operational Art Narrative Information Management Comments on AI Accountability Policy to NTIA"
+      "content": "#031 ~ Triangles & Information Theory Personal Channel 2020-04-21 Research Video Archive DigiPPPiP: Digital Partner Pen Play in Parallel The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation The Great Preset: Remote Teams and Operational Art Narrative Information Management"
     },
     {
       "id": "video:personal:R_qTs2D5jkY",
@@ -11496,7 +11753,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#132 ~ Day Dreams of Geometric Unity Personal Channel 2020-04-21 Research Video Archive Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps The Innovator's Catechism"
+      "content": "#132 ~ Day Dreams of Geometric Unity Personal Channel 2020-04-21 Research Video Archive DigiPPPiP: Digital Partner Pen Play in Parallel Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement Emergent Teams for Complex Threats Reimagining Maps"
     },
     {
       "id": "video:personal:nLQXW91wd38",
@@ -25174,7 +25431,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "Bert Berkers: \"Towards Autonomous Urban Digital Twins\" Active Inference Institute 2024-11-26 Active Inference Comments on National Digital Twins R&D Strategic Plan Catechism for Towards Active Diffusion Generative Research Teams: Active Inference Compositions for Research and Meta-Science Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics"
+      "content": "Bert Berkers: \"Towards Autonomous Urban Digital Twins\" Active Inference Institute 2024-11-26 Active Inference Comments on National Digital Twins R&D Strategic Plan Catechism for Towards Active Diffusion Generative Research Teams: Active Inference Compositions for Research and Meta-Science DigiPPPiP: Digital Partner Pen Play in Parallel"
     },
     {
       "id": "video:personal:lVWlMTcC3x8",
@@ -29116,7 +29373,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 204 works.",
+      "title": "The curated bibliography contains 206 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -29124,12 +29381,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 204 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 206 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 187 per-paper documentation folders.",
+      "title": "The repository contains 189 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -29137,7 +29394,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 187 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 189 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -29313,7 +29570,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.html",
-      "summary": "Structured CV export: 204 works, 132 software rows, 387 public GitHub repositories, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 206 works, 133 software rows, 241 public GitHub repositories, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

@@ -6,27 +6,41 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Aug 2026 22:55:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 21:07:04 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
       <guid isPermaLink="false">site-update-2026-05-15-repositories</guid>
-      <pubDate>Sun, 02 Aug 2026 22:55:31 +0000</pubDate>
+      <pubDate>Fri, 07 Aug 2026 21:07:04 +0000</pubDate>
       <description>Full generated GitHub repository inventory, refreshed evidence ledger, and stable freshness fact comparison added.</description>
     </item>
     <item>
       <title>Discovery, citation, evidence, and domain pages expanded</title>
       <link>https://danielarifriedman.com/discovery.html</link>
       <guid isPermaLink="false">site-update-2026-05-13-discovery</guid>
-      <pubDate>Sun, 02 Aug 2026 22:55:31 +0000</pubDate>
+      <pubDate>Fri, 07 Aug 2026 21:07:04 +0000</pubDate>
       <description>New machine-readable exports, evidence ledger, domain pages, and agentic discovery metadata.</description>
     </item>
     <item>
       <title>Per-work landing pages and search index generated</title>
       <link>https://danielarifriedman.com/works/</link>
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
-      <pubDate>Sun, 02 Aug 2026 22:55:31 +0000</pubDate>
+      <pubDate>Fri, 07 Aug 2026 21:07:04 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>DigiPPPiP: Digital Partner Pen Play in Parallel</title>
+      <link>https://danielarifriedman.com/works/Friedman2026DigiPPPiPDigitalPartnerPen209.html</link>
+      <guid isPermaLink="false">work-Friedman2026DigiPPPiPDigitalPartnerPen209</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Cognitive Security · 2026</description>
+    </item>
+    <item>
+      <title>PROJECT BOND — The Special-Agent Operations Compendium</title>
+      <link>https://danielarifriedman.com/works/Friedman2026PROJECTBONDSpecialAgent208.html</link>
+      <guid isPermaLink="false">work-Friedman2026PROJECTBONDSpecialAgent208</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>THALIA: Typed Harness with Analytical Lexical-Integrated Architecture</title>
@@ -186,20 +200,6 @@
       <title>The Shape Between: A Full-Page Illustrated Storybook Template</title>
       <link>https://danielarifriedman.com/works/Friedman2026ShapeBetweenFullPage184.html</link>
       <guid isPermaLink="false">work-Friedman2026ShapeBetweenFullPage184</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon</title>
-      <link>https://danielarifriedman.com/works/Friedman2026EntomologicalLawFieldMap183.html</link>
-      <guid isPermaLink="false">work-Friedman2026EntomologicalLawFieldMap183</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>A Domain Language for Specifying Controlled Methods</title>
-      <link>https://danielarifriedman.com/works/Friedman2026DomainLanguageSpecifyingControlled182.html</link>
-      <guid isPermaLink="false">work-Friedman2026DomainLanguageSpecifyingControlled182</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>

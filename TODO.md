@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-08-01 (hostile red-team review of `code/` plus a
+- Last reviewed: 2026-08-07 (hostile red-team review of `code/` plus a
   comprehensive follow-up pass; fixes are in the working tree, uncommitted)
 
 ## Completed / Closed (2026-08-01)

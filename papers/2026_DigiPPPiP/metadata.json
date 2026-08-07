@@ -1,0 +1,59 @@
+{
+  "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+  "version": "1.0",
+  "doi": "10.5281/zenodo.21815704",
+  "doi_url": "https://doi.org/10.5281/zenodo.21815704",
+  "zenodo_record": "https://zenodo.org/records/21815704",
+  "record_id": "21815705",
+  "publication_date": "2026",
+  "resource_type": {
+    "title": "Journal article",
+    "type": "publication",
+    "subtype": "article"
+  },
+  "creators": [
+    {
+      "name": "Siddhant Shrivastava",
+      "affiliation": "Singapore University of Technology and Design, Singapore",
+      "orcid": "0000-0002-9688-4730"
+    },
+    {
+      "name": "Evelyn C. Goh",
+      "affiliation": "National University of Singapore College of Design and Engineering; National University of Singapore Saw Swee Hock School of Public Health",
+      "orcid": "0000-0001-7182-3950"
+    },
+    {
+      "name": "Alexandra Mikhailova",
+      "affiliation": "Active Inference Institute"
+    },
+    {
+      "name": "Daniel Ari Friedman",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous, accessible, and place-responsive dyadic drawing . The framework is positioned within collaborative-work studies of shared drawing surfaces , cyber-physical-social systems , mediated embodiment and presence , digital intimacy technologies , and cautious hyperscanning methodology . The manuscript translates the project brief into a modular research artifact: 9 temporal-spatial modalities, 13 evidence dimensions, 6 planned outcome measures, and 39 conceptual figures are generated or registered by the project code rather than hand-maintained prose. The computational layer is explicitly illustrative, not empirical: the active-inference, inter-brain-synchrony, Forman-Ricci, narrative-information, source-quality, accessibility, and neuroergonomic outputs are deterministic conceptual models designed to make theoretical commitments inspectable. Formal equations are consolidated in so the main line can state evidence boundaries before presenting mathematical detail. The argument is that DigiPPPiP should be treated as human-human relational technology. Its irreducible design kernel is modest: two partners, a shared mark field, perceptible traces of agency, a temporal relation among contributions, and consentful control over persistence. Digital infrastructure expands the substrate of shared mark-making without replacing the second-person, embodied, narrative, and affective conditions that make the practice relationally meaningful . The manuscript explicitly avoids claims that DigiPPPiP is clinically therapeutic, universally accessible, or causally validated by neural synchrony; those remain empirical questions for controlled studies. Cross-references use Pandoc labels, so sections, equations, figures, and tables remain automatically numbered across PDF and web render targets.",
+  "keywords": [
+    "partner pen play in parallel",
+    "active inference",
+    "inter-brain synchrony",
+    "geometric hyperscanning",
+    "narrative information theory",
+    "neuroergonomics",
+    "digital placemaking",
+    "relational technology",
+    "reproducible research"
+  ],
+  "files": [
+    {
+      "name": "Shrivastava_2026_Digipppip_f5ca95ce.pdf",
+      "size_bytes": 11418704,
+      "checksum": "md5:4ad3db698ac7828b57f3733a1a94e5ea",
+      "download_url": "https://zenodo.org/api/records/21815705/files/Shrivastava_2026_Digipppip_f5ca95ce.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-08-07T21:06:51Z"
+}

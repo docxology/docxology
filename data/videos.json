@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T22:55:26Z",
+  "generated_at": "2026-08-07T21:06:59Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -4123,6 +4123,13 @@
       ],
       "related_works": [
         {
+          "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+          "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
+          "year": 2026,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2026DigiPPPiPDigitalPartnerPen209.html"
+        },
+        {
           "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
           "citation_key": "Friedman2026MusicNeverStoppedGrateful150",
           "year": 2026,
@@ -4142,13 +4149,6 @@
           "year": 2018,
           "domain": "Media & Teaching",
           "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
-        },
-        {
-          "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
-          "citation_key": "Friedman2018PartnerPenPlayParallel099",
-          "year": 2018,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2018PartnerPenPlayParallel099.html"
         }
       ]
     },
@@ -5664,6 +5664,13 @@
       ],
       "related_works": [
         {
+          "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+          "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
+          "year": 2026,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2026DigiPPPiPDigitalPartnerPen209.html"
+        },
+        {
           "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
           "citation_key": "Friedman2026MusicNeverStoppedGrateful150",
           "year": 2026,
@@ -5683,13 +5690,6 @@
           "year": 2021,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2021NarrativeInformationManagement080.html"
-        },
-        {
-          "title": "Comments on AI Accountability Policy to NTIA",
-          "citation_key": "Friedman2023CommentsAIAccountabilityPolicy052",
-          "year": 2023,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2023CommentsAIAccountabilityPolicy052.html"
         }
       ]
     },
@@ -9042,6 +9042,13 @@
       ],
       "related_works": [
         {
+          "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+          "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
+          "year": 2026,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2026DigiPPPiPDigitalPartnerPen209.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
@@ -9061,13 +9068,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020ReimaginingMaps148.html"
-        },
-        {
-          "title": "The Innovator's Catechism",
-          "citation_key": "Friedman2020InnovatorSCatechism090",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020InnovatorSCatechism090.html"
         }
       ]
     },
@@ -72025,11 +72025,11 @@
           "url": "/works/Friedman2023GenerativeResearchTeamsActive057.html"
         },
         {
-          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
-          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+          "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
           "year": 2026,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2026DigiPPPiPDigitalPartnerPen209.html"
         }
       ]
     },

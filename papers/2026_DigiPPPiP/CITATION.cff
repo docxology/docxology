@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "DigiPPPiP: Digital Partner Pen Play in Parallel"
+version: "1.0"
+date-released: 2026
+doi: 10.5281/zenodo.21815704
+url: "https://doi.org/10.5281/zenodo.21815704"
+authors:
+  - family-names: Shrivastava
+    given-names: Siddhant
+    orcid: "https://orcid.org/0000-0002-9688-4730"
+  - family-names: Goh
+    given-names: Evelyn C.
+    orcid: "https://orcid.org/0000-0001-7182-3950"
+  - family-names: Mikhailova
+    given-names: Alexandra
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21815704
+    description: "Zenodo concept DOI"
+  - type: url
+    value: "https://zenodo.org/records/21815704"
+    description: "Zenodo landing page"

@@ -2,6 +2,17 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-08-07
+
+- **Two new Zenodo publications catalogued** with paper-folder documentation and regenerated bibliography, exports, work pages, feeds, sitemap, resume, accessibility, and Pages-manifest surfaces:
+  - **#208** PROJECT BOND — The Special-Agent Operations Compendium (💻, concept DOI `zenodo.21843592`; source repository [`docxology/bond`](https://github.com/docxology/bond)).
+  - **#209** DigiPPPiP: Digital Partner Pen Play in Parallel (🛡️, concept DOI `zenodo.21815704`; authors Siddhant Shrivastava, Evelyn C. Goh, Alexandra Mikhailova, and Daniel Ari Friedman).
+- **Repository catalog updated**: added `docxology/bond` to the owned Developer Tools list; owned-repository count 94→95 and total curated software count 132→133.
+- **Canonical DOI corrected** for kept ATLAS row #136 from version DOI `zenodo.10362561` to concept DOI `zenodo.10296601`; the retired #49 duplicate remains a permanent gap.
+- **Zenodo stale-version exceptions documented**: records `21418901` (SynthOBS), `20804586` (CogSecSkills), and `19139090` (retired Template/Reproducible duplicate) are not new publications and are not added.
+- **Release metadata**: CITATION.cff bumped to `2026.08.07`.
+- **Authenticated paired-publication refresh** wrote `reports/paired_publications_2026-08-07.json`: 402 pairs, 1 new candidate, 38 updates, and 363 items still requiring manual review under DOC-004; no candidates were auto-promoted.
+
 ## 2026-08-02
 
 - **Seven new Zenodo publications catalogued** via `add_zenodo_only.py` as the DAF "line set" research-practice instruments plus a software release, each with full paper-folder documentation (README/AGENTS/SKILL/CITATION.cff/metadata.json + PDF) and regenerated downstream surfaces:
