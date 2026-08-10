@@ -2871,3 +2871,27 @@ KW  - Cognitive Security
 KW  - Paper
 N1  - Catalog row 209; docs: papers/2026_DigiPPPiP/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus
+T2  - Zenodo
+DO  - 10.5281/zenodo.21864003
+UR  - https://doi.org/10.5281/zenodo.21864003
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 210; docs: papers/2026_RobustBeliefSharing/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract
+T2  - Zenodo
+DO  - 10.5281/zenodo.21865643
+UR  - https://doi.org/10.5281/zenodo.21865643
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 211; docs: papers/2026_ActiveSkillference/
+ER  -

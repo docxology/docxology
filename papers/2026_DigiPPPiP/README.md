@@ -33,5 +33,7 @@ partner pen play in parallel · active inference · inter-brain synchrony · geo
 
 ## Related
 
+- GitHub release: https://github.com/docxology/Digi-PPPiP/releases/tag/v1.0.0
+
 - Zenodo record: https://zenodo.org/records/21815704
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

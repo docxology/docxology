@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-08-07T22:26:33+00:00`
+Generated: `2026-08-10T17:24:54+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -25,23 +25,23 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
 - public_source_snapshot: `reports/public_source_snapshot_2026-07-21.json`
-- paired_publications: `reports/paired_publications_2026-08-07.json`
+- paired_publications: `reports/paired_publications_2026-08-10.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
 
-- Bibliography works: `206`
-- Paper-folder docs: `189`
+- Bibliography works: `208`
+- Paper-folder docs: `191`
 - Full-text extractions: `171`
 - Papers with image galleries: `139`
 - Total extracted images: `8886`
-- Bibliography docs links: `189`
+- Bibliography docs links: `191`
 
 ### Types
 
 - Books: `5`
 - Courses: `3`
-- Papers: `185`
+- Papers: `187`
 - Playbooks: `2`
 - Presentations: `9`
 - Series: `2`
@@ -49,7 +49,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 ### Domains
 
 - Entomology: `23`
-- Active Inference: `43`
+- Active Inference: `45`
 - Cognitive Security: `35`
 - Art & Synergetics: `16`
 - Computational: `53`
@@ -65,26 +65,26 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Generated Exports
 
-- data_works_json: `206`
+- data_works_json: `208`
 - data_software_json: `143`
-- data_publications_ld_main_entity: `206`
+- data_publications_ld_main_entity: `208`
 - data_software_ld_main_entity: `143`
 
 ### GitHub Inventory
 
-- total: `241`
-- docxology: `200`
-- ActiveInferenceInstitute: `41`
+- total: `244`
+- docxology: `201`
+- ActiveInferenceInstitute: `43`
 - curated: `140`
-- uncataloged: `101`
+- uncataloged: `104`
 - forks: `87`
 - archived: `0`
-- public: `241`
+- public: `244`
 - private: `0`
-- recently_updated: `144`
-- primary_total: `154`
-- primary_docxology: `115`
-- primary_ActiveInferenceInstitute: `39`
+- recently_updated: `147`
+- primary_total: `157`
+- primary_docxology: `116`
+- primary_ActiveInferenceInstitute: `41`
 - fork_docxology: `85`
 - fork_ActiveInferenceInstitute: `2`
 
@@ -101,14 +101,14 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Paired Publications
 
-- github_releases: `170`
-- zenodo_records: `145`
-- pairs: `402`
-- strong_pairs: `39`
-- already_reviewed: `0`
-- needs_review: `363`
-- create_new: `1`
-- update_existing: `38`
+- github_releases: `221`
+- zenodo_records: `147`
+- pairs: `418`
+- strong_pairs: `46`
+- already_reviewed: `28`
+- needs_review: `345`
+- create_new: `0`
+- update_existing: `45`
 
 ### Paired Publication Decisions
 

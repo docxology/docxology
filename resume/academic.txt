@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-08-07T22:26:33Z
+Generated: 2026-08-10T17:24:54Z
 
-Current public metrics: 206 curated works; 143 catalogued software repositories (105 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 200 docxology + 41 AII public repositories (154 primary, 87 forks).
+Current public metrics: 208 curated works; 143 catalogued software repositories (105 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 201 docxology + 43 AII public repositories (157 primary, 87 forks).
 
 SUMMARY
 -------
@@ -134,7 +134,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (206)
+WORKS AND PUBLICATIONS (208)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -342,11 +342,14 @@ WORKS AND PUBLICATIONS (206)
 [207] 2026 | Paper | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture | Zenodo | 10.5281/zenodo.21763244
 [208] 2026 | Paper | PROJECT BOND — The Special-Agent Operations Compendium | Zenodo | 10.5281/zenodo.21843592
 [209] 2026 | Paper | DigiPPPiP: Digital Partner Pen Play in Parallel | Zenodo | 10.5281/zenodo.21815704
+[210] 2026 | Paper | Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus | Zenodo | 10.5281/zenodo.21864003
+[211] 2026 | Paper | Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract | Zenodo | 10.5281/zenodo.21865643
 
-SOFTWARE (41)
+SOFTWARE (63)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/
+docxology/codomyrmex | Python | https://github.com/docxology/codomyrmex | AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · Zenodo | paper: papers/2026_Codomyrmex/ | zenodo: https://doi.org/10.5281/zenodo.21750800
 docxology/ActiveInferAnts | Python | https://github.com/docxology/ActiveInferAnts | Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy | paper: papers/2021_ActiveInferants/
 docxology/active_inference | Python | https://github.com/docxology/active_inference | Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling | paper: papers/2020_BehaviorEngineering/
 docxology/AGEINT | HTML | https://github.com/docxology/AGEINT | Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · · Zenodo | paper: papers/2026_AGEINT/ | zenodo: https://doi.org/10.5281/zenodo.20732274
@@ -369,7 +372,26 @@ docxology/mdkv | Python | https://github.com/docxology/mdkv | MKV-like key-value
 docxology/p3if | Python | https://github.com/docxology/p3if | Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security | paper: papers/2023_P3IF/
 docxology/template_textbook | HTML | https://github.com/docxology/template_textbook | Modular fillable scaffold for book-length technical works · · Zenodo | paper: papers/2026_TemplateTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20533125
 docxology/blake_jiang | Python | https://github.com/docxology/blake_jiang | William Blake, Professor Jiang, and the Architecture of Intelligence — AI-augmented scholarly response to Game Theory #24 with Blake, Jiang, and Active Inference framing | paper: papers/2026_BlakeJiang/
-docxology/template_autopoiesis | TeX | https://github.com/docxology/template_autopoiesis | Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) | zenodo: https://doi.org/10.5281/zenodo.21227869
+docxology/EntoLaw | TeX | https://github.com/docxology/EntoLaw | A source-anchored, reproducible field map of entomological law · Zenodo | paper: papers/2026_EntomologicalLaw/ | zenodo: https://doi.org/10.5281/zenodo.21137276
+docxology/DuckRabbit | Python | https://github.com/docxology/DuckRabbit | Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs · Zenodo | paper: papers/2026_DuckRabbit/ | zenodo: https://doi.org/10.5281/zenodo.21419693
+docxology/entofile | Python | https://github.com/docxology/entofile | ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation. · Zenodo | paper: papers/2026_ENTO/ | zenodo: https://doi.org/10.5281/zenodo.20396328
+docxology/realizing_emptiness | Python | https://github.com/docxology/realizing_emptiness | Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026). · Zenodo | paper: papers/2026_RealizingEmptiness/ | zenodo: https://doi.org/10.5281/zenodo.20834846
+docxology/ntqr_allotment | Python | https://github.com/docxology/ntqr_allotment | Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion) · Zenodo | paper: papers/2026_SortitionUpstreamNTQR/ | zenodo: https://doi.org/10.5281/zenodo.21083779
+docxology/alphacogant | Python | https://github.com/docxology/alphacogant | AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model · Zenodo | paper: papers/2026_AlphaCOGANT/ | zenodo: https://doi.org/10.5281/zenodo.20976824
+docxology/democreate | Python | https://github.com/docxology/democreate | DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers. · Zenodo | paper: papers/2026_DemoCreate/ | zenodo: https://doi.org/10.5281/zenodo.20693216
+docxology/blake | Python | https://github.com/docxology/blake | William Blake · Zenodo | paper: papers/2026_MappingWilliamBlake/ | zenodo: https://doi.org/10.5281/zenodo.21047573
+docxology/template_active_inference | Python | https://github.com/docxology/template_active_inference | Active inference multi-track exemplar releases · Zenodo | paper: papers/2026_ActiveInferenceMulti/ | zenodo: https://doi.org/10.5281/zenodo.20417021
+docxology/template-pitch-deck | Python | https://github.com/docxology/template-pitch-deck | Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template · Zenodo | paper: papers/2026_TemplatePitchDeck/ | zenodo: https://doi.org/10.5281/zenodo.21281509
+docxology/template_autopoiesis | TeX | https://github.com/docxology/template_autopoiesis | Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.21227869
+docxology/template_autoresearch_project | Python | https://github.com/docxology/template_autoresearch_project | Template autoresearch project exemplar releases · Zenodo | paper: papers/2026_BoundedAutoResearchTiny/ | zenodo: https://doi.org/10.5281/zenodo.20417016
+docxology/template_code_project | Python | https://github.com/docxology/template_code_project | Template code project exemplar releases · Zenodo | paper: papers/2026_ConvergenceAnalysisGradient/ | zenodo: https://doi.org/10.5281/zenodo.20417136
+docxology/template_eda_notebook | TeX | https://github.com/docxology/template_eda_notebook | Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template · Zenodo | paper: papers/2026_ExploratoryDataAnalysis/ | zenodo: https://doi.org/10.5281/zenodo.21086292
+docxology/template_literature_meta_analysis | Python | https://github.com/docxology/template_literature_meta_analysis | Public standalone template exemplar: template_literature_meta_analysis · Zenodo | paper: papers/2026_LivingMetaAnalysis/ | zenodo: https://doi.org/10.5281/zenodo.20931964
+docxology/template_methods_paper | TeX | https://github.com/docxology/template_methods_paper | A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template · Zenodo | paper: papers/2026_DomainLanguageSpecifying/ | zenodo: https://doi.org/10.5281/zenodo.21086548
+docxology/template_prose_project | TeX | https://github.com/docxology/template_prose_project | Template prose project exemplar releases · Zenodo | paper: papers/2026_EditorialQualityAt/ | zenodo: https://doi.org/10.5281/zenodo.20417104
+docxology/template_sia | Python | https://github.com/docxology/template_sia | SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia) · Zenodo | paper: papers/2026_SelfImprovementAgent/ | zenodo: https://doi.org/10.5281/zenodo.20453879
+docxology/template_storybook | TeX | https://github.com/docxology/template_storybook | Standalone full-page illustrated storybook template from docxology/template · Zenodo | paper: papers/2026_ShapeBetween/ | zenodo: https://doi.org/10.5281/zenodo.21176000
+docxology/template_template | TeX | https://github.com/docxology/template_template | Template meta-research exemplar: self-documenting reproducible research repo · Zenodo | paper: papers/2026_TemplateApproachReproducible/ | zenodo: https://doi.org/10.5281/zenodo.20419007
 docxology/bond | Markdown/Python | https://github.com/docxology/bond | Top-level wrapper manuscript and reproducible 33-package special-agent operations compendium, with generated chapters, unified bibliography, deterministic regeneration, and tested release artifacts · · Zenodo | paper: papers/2026_PROJECTBONDSpecial/ | zenodo: https://doi.org/10.5281/zenodo.21843592
 docxology/line_set | Python | https://github.com/docxology/line_set | A thin reader that declares the line set and checks that no two lines share a spelling — holding-instruments research practice · · Zenodo | paper: papers/2026_LineSet/ | zenodo: https://doi.org/10.5281/zenodo.21754243
 docxology/black_line | Python | https://github.com/docxology/black_line | A positive operating discipline for concise, inspectable, revisable work · · Zenodo | paper: papers/2026_BlackLine/ | zenodo: https://doi.org/10.5281/zenodo.21754235
@@ -384,8 +406,10 @@ ActiveInferenceInstitute/GeneralizedNotationNotation | Python | https://github.c
 ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo | paper: papers/2025_CEREBRUM/ | zenodo: https://doi.org/10.5281/zenodo.15170907
 ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal-Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
 ActiveInferenceInstitute/fep_lean | Python | https://github.com/ActiveInferenceInstitute/fep_lean | Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline · · Zenodo | paper: papers/2026_FEPLean/ | zenodo: https://doi.org/10.5281/zenodo.19699234
+ActiveInferenceInstitute/policy_entanglement | Python | https://github.com/ActiveInferenceInstitute/policy_entanglement | Policy Entanglement in Active Inference v1.0.0 · Zenodo | paper: papers/2026_PolicyEntanglementActive/ | zenodo: https://doi.org/10.5281/zenodo.20418904
 ActiveInferenceInstitute/COGANT | Python | https://github.com/ActiveInferenceInstitute/COGANT | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · · Zenodo · Zenodo | paper: papers/2026_COGANT/ | zenodo: https://doi.org/10.5281/zenodo.20705351
 ActiveInferenceInstitute/on_policy_distillation | Python | https://github.com/ActiveInferenceInstitute/on_policy_distillation | On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · · Zenodo · Zenodo | paper: papers/2026_PolicyDistillationAs/ | zenodo: https://doi.org/10.5281/zenodo.20749817
+ActiveInferenceInstitute/active_fractal_rabbit | Python | https://github.com/ActiveInferenceInstitute/active_fractal_rabbit | Active Inference for FractalRabbit · Zenodo | paper: papers/2026_ActiveFractalRabbit/ | zenodo: https://doi.org/10.5281/zenodo.21330636
 
 CONFERENCES, POSTERS, SEMINARS, WORKSHOPS
 -----------------------------------------

@@ -17,3 +17,6 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/20418904"
     description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0"
+    description: "GitHub release"

@@ -20,3 +20,6 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/20420556"
     description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/docxology/BeeStack/releases/tag/v1.0.0"
+    description: "GitHub release"

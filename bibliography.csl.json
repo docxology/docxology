@@ -6754,5 +6754,55 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21815704",
     "URL": "https://doi.org/10.5281/zenodo.21815704"
+  },
+  {
+    "id": "Friedman2026RobustBeliefSharingFederated210",
+    "type": "article-journal",
+    "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 210; docs: papers/2026_RobustBeliefSharing/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21864003",
+    "URL": "https://doi.org/10.5281/zenodo.21864003"
+  },
+  {
+    "id": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+    "type": "article-journal",
+    "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 211; docs: papers/2026_ActiveSkillference/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21865643",
+    "URL": "https://doi.org/10.5281/zenodo.21865643"
   }
 ]

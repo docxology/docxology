@@ -34,5 +34,7 @@ ai-agents · model-context-protocol · mcp · multi-agent · orchestration · co
 
 ## Related
 
+- GitHub release: https://github.com/docxology/codomyrmex/releases/tag/v1.3.0-paper
+
 - Zenodo record: https://zenodo.org/records/21750800
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

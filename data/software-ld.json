@@ -22,7 +22,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-18T16:48:46Z",
-            "dateModified": "2026-08-03T23:11:14Z",
+            "dateModified": "2026-08-10T14:09:39Z",
             "keywords": "agents-md, ai-agents, claude-code, computational-research, cursor, latex, multi-project, ollama, pandoc, provenance, pytest, python, reproducible-research, research-template, scientific-computing, steganography, uv, zenodo",
             "sameAs": "https://doi.org/10.5281/zenodo.20584820"
         },
@@ -55,14 +55,14 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2022-01-08T18:33:36Z",
-            "dateModified": "2026-08-03T02:10:11Z",
+            "dateModified": "2026-08-10T12:54:15Z",
             "keywords": "active-inference, ant-behavior, ants, computational-biology, ecology, entomology, hymenoptera, multi-agent-systems, python"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/codomyrmex#software",
             "name": "codomyrmex",
-            "description": "AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
+            "description": "AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · Zenodo",
             "codeRepository": "https://github.com/docxology/codomyrmex",
             "author": {
                 "@type": "Person",
@@ -71,8 +71,9 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-05-16T17:45:28Z",
-            "dateModified": "2026-08-07T01:45:39Z",
-            "keywords": "agents, ai, ai-agents, claude, developer-tools, llm, mcp, model-context-protocol, modular, multi-agent, orchestration, personal-ai, python, security, testing, zero-mock"
+            "dateModified": "2026-08-10T03:33:07Z",
+            "keywords": "agents, ai, ai-agents, claude, developer-tools, llm, mcp, model-context-protocol, modular, multi-agent, orchestration, personal-ai, python, security, testing, zero-mock",
+            "sameAs": "https://doi.org/10.5281/zenodo.21750800"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -931,7 +932,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/EntoLaw#software",
             "name": "EntoLaw",
-            "description": "A source-anchored, reproducible field map of entomological law",
+            "description": "A source-anchored, reproducible field map of entomological law · Zenodo",
             "codeRepository": "https://github.com/docxology/EntoLaw",
             "author": {
                 "@type": "Person",
@@ -939,13 +940,14 @@
             },
             "programmingLanguage": "TeX",
             "dateCreated": "2026-07-02T16:48:35Z",
-            "dateModified": "2026-07-02T19:29:00Z"
+            "dateModified": "2026-07-02T19:29:00Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21137276"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/DuckRabbit#software",
             "name": "DuckRabbit",
-            "description": "Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs",
+            "description": "Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs · Zenodo",
             "codeRepository": "https://github.com/docxology/DuckRabbit",
             "author": {
                 "@type": "Person",
@@ -954,13 +956,14 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-17T20:22:15Z",
-            "dateModified": "2026-07-17T20:58:11Z"
+            "dateModified": "2026-07-17T20:58:11Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21419693"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/entofile#software",
             "name": "entofile",
-            "description": "ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation.",
+            "description": "ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation. · Zenodo",
             "codeRepository": "https://github.com/docxology/entofile",
             "author": {
                 "@type": "Person",
@@ -969,13 +972,14 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-11T15:44:33Z",
-            "dateModified": "2026-08-04T00:14:46Z"
+            "dateModified": "2026-08-04T00:14:46Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.20396328"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/realizing_emptiness#software",
             "name": "realizing_emptiness",
-            "description": "Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026).",
+            "description": "Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026). · Zenodo",
             "codeRepository": "https://github.com/docxology/realizing_emptiness",
             "author": {
                 "@type": "Person",
@@ -983,13 +987,14 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-06-13T15:57:37Z",
-            "dateModified": "2026-06-24T19:07:05Z"
+            "dateModified": "2026-06-24T19:07:05Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.20834846"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/ntqr_allotment#software",
             "name": "ntqr_allotment",
-            "description": "Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion)",
+            "description": "Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion) · Zenodo",
             "codeRepository": "https://github.com/docxology/ntqr_allotment",
             "author": {
                 "@type": "Person",
@@ -997,13 +1002,14 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-06-30T22:05:14Z",
-            "dateModified": "2026-06-30T22:14:30Z"
+            "dateModified": "2026-06-30T22:14:30Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21083779"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/alphacogant#software",
             "name": "alphacogant",
-            "description": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model",
+            "description": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model · Zenodo",
             "codeRepository": "https://github.com/docxology/alphacogant",
             "author": {
                 "@type": "Person",
@@ -1012,13 +1018,14 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-26T01:37:45Z",
-            "dateModified": "2026-06-27T22:07:43Z"
+            "dateModified": "2026-06-27T22:07:43Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.20976824"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/democreate#software",
             "name": "democreate",
-            "description": "DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers.",
+            "description": "DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers. · Zenodo",
             "codeRepository": "https://github.com/docxology/democreate",
             "author": {
                 "@type": "Person",
@@ -1027,13 +1034,14 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-05T21:21:23Z",
-            "dateModified": "2026-08-04T00:34:22Z"
+            "dateModified": "2026-08-04T00:34:22Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.20693216"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/blake#software",
             "name": "blake",
-            "description": "William Blake",
+            "description": "William Blake · Zenodo",
             "codeRepository": "https://github.com/docxology/blake",
             "author": {
                 "@type": "Person",
@@ -1042,7 +1050,8 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-09-15T17:49:35Z",
-            "dateModified": "2026-06-29T23:40:50Z"
+            "dateModified": "2026-06-29T23:40:50Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21047573"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1092,7 +1101,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/template_active_inference#software",
             "name": "template_active_inference",
-            "description": "Active inference multi-track exemplar releases",
+            "description": "Active inference multi-track exemplar releases · Zenodo",
             "codeRepository": "https://github.com/docxology/template_active_inference",
             "author": {
                 "@type": "Person",
@@ -1101,13 +1110,14 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T18:34:18Z",
-            "dateModified": "2026-08-03T05:45:42Z"
+            "dateModified": "2026-08-03T05:45:42Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.20417021"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/template-pitch-deck#software",
             "name": "template-pitch-deck",
-            "description": "Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template",
+            "description": "Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template · Zenodo",
             "codeRepository": "https://github.com/docxology/template-pitch-deck",
             "author": {
                 "@type": "Person",
@@ -1116,13 +1126,14 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-09T14:30:57Z",
-            "dateModified": "2026-08-02T23:36:44Z"
+            "dateModified": "2026-08-02T23:36:44Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21281509"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/template_autopoiesis#software",
             "name": "template_autopoiesis",
-            "description": "Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869)",
+            "description": "Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) · Zenodo",
             "codeRepository": "https://github.com/docxology/template_autopoiesis",
             "author": {
                 "@type": "Person",
@@ -1138,7 +1149,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/template_autoresearch_project#software",
             "name": "template_autoresearch_project",
-            "description": "Template autoresearch project exemplar releases",
+            "description": "Template autoresearch project exemplar releases · Zenodo",
             "codeRepository": "https://github.com/docxology/template_autoresearch_project",
             "author": {
                 "@type": "Person",
@@ -1147,13 +1158,14 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T18:34:15Z",
-            "dateModified": "2026-08-03T05:24:12Z"
+            "dateModified": "2026-08-03T05:24:12Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.20417016"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/template_code_project#software",
             "name": "template_code_project",
-            "description": "Template code project exemplar releases",
+            "description": "Template code project exemplar releases · Zenodo",
             "codeRepository": "https://github.com/docxology/template_code_project",
             "author": {
                 "@type": "Person",
@@ -1162,7 +1174,8 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T17:31:44Z",
-            "dateModified": "2026-08-03T00:22:26Z"
+            "dateModified": "2026-08-03T00:22:26Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.20417136"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1182,7 +1195,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/template_eda_notebook#software",
             "name": "template_eda_notebook",
-            "description": "Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template",
+            "description": "Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template · Zenodo",
             "codeRepository": "https://github.com/docxology/template_eda_notebook",
             "author": {
                 "@type": "Person",
@@ -1191,7 +1204,8 @@
             "programmingLanguage": "TeX",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-30T22:46:30Z",
-            "dateModified": "2026-08-03T05:46:30Z"
+            "dateModified": "2026-08-03T05:46:30Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21086292"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1227,7 +1241,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/template_literature_meta_analysis#software",
             "name": "template_literature_meta_analysis",
-            "description": "Public standalone template exemplar: template_literature_meta_analysis",
+            "description": "Public standalone template exemplar: template_literature_meta_analysis · Zenodo",
             "codeRepository": "https://github.com/docxology/template_literature_meta_analysis",
             "author": {
                 "@type": "Person",
@@ -1235,13 +1249,14 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-06-26T13:51:02Z",
-            "dateModified": "2026-08-03T01:08:01Z"
+            "dateModified": "2026-08-03T01:08:01Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.20931964"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/template_methods_paper#software",
             "name": "template_methods_paper",
-            "description": "A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template",
+            "description": "A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template · Zenodo",
             "codeRepository": "https://github.com/docxology/template_methods_paper",
             "author": {
                 "@type": "Person",
@@ -1250,7 +1265,8 @@
             "programmingLanguage": "TeX",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-30T23:00:16Z",
-            "dateModified": "2026-08-03T05:47:26Z"
+            "dateModified": "2026-08-03T05:47:26Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21086548"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1270,7 +1286,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/template_prose_project#software",
             "name": "template_prose_project",
-            "description": "Template prose project exemplar releases",
+            "description": "Template prose project exemplar releases · Zenodo",
             "codeRepository": "https://github.com/docxology/template_prose_project",
             "author": {
                 "@type": "Person",
@@ -1279,7 +1295,8 @@
             "programmingLanguage": "TeX",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T18:34:13Z",
-            "dateModified": "2026-08-03T00:47:08Z"
+            "dateModified": "2026-08-03T00:47:08Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.20417104"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1328,7 +1345,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/template_sia#software",
             "name": "template_sia",
-            "description": "SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia)",
+            "description": "SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia) · Zenodo",
             "codeRepository": "https://github.com/docxology/template_sia",
             "author": {
                 "@type": "Person",
@@ -1337,13 +1354,14 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-14T19:54:36Z",
-            "dateModified": "2026-08-03T05:47:46Z"
+            "dateModified": "2026-08-03T05:47:46Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.20453879"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/template_storybook#software",
             "name": "template_storybook",
-            "description": "Standalone full-page illustrated storybook template from docxology/template",
+            "description": "Standalone full-page illustrated storybook template from docxology/template · Zenodo",
             "codeRepository": "https://github.com/docxology/template_storybook",
             "author": {
                 "@type": "Person",
@@ -1352,13 +1370,14 @@
             "programmingLanguage": "TeX",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-03T18:13:35Z",
-            "dateModified": "2026-08-03T00:14:26Z"
+            "dateModified": "2026-08-03T00:14:26Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21176000"
         },
         {
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/template_template#software",
             "name": "template_template",
-            "description": "Template meta-research exemplar: self-documenting reproducible research repo",
+            "description": "Template meta-research exemplar: self-documenting reproducible research repo · Zenodo",
             "codeRepository": "https://github.com/docxology/template_template",
             "author": {
                 "@type": "Person",
@@ -1367,7 +1386,8 @@
             "programmingLanguage": "TeX",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2026-05-27T21:32:50Z",
-            "dateModified": "2026-08-03T05:47:57Z"
+            "dateModified": "2026-08-03T05:47:57Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.20419007"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1590,7 +1610,7 @@
             "programmingLanguage": "Jupyter",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2022-02-18T17:54:38Z",
-            "dateModified": "2026-08-03T00:10:42Z",
+            "dateModified": "2026-08-09T20:40:28Z",
             "keywords": "active, active-inference, cadcad, inference, simulation"
         },
         {
@@ -1634,7 +1654,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2023-04-02T19:45:34Z",
-            "dateModified": "2026-08-04T02:47:50Z",
+            "dateModified": "2026-08-10T06:16:28Z",
             "keywords": "active, active-inference, active-inference-notation, inference",
             "sameAs": "https://doi.org/10.5281/zenodo.19600217"
         },
@@ -1903,7 +1923,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/policy_entanglement#software",
             "name": "policy_entanglement",
-            "description": "Policy Entanglement in Active Inference v1.0.0",
+            "description": "Policy Entanglement in Active Inference v1.0.0 · Zenodo",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/policy_entanglement",
             "author": {
                 "@type": "Person",
@@ -1912,7 +1932,8 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T21:43:07Z",
-            "dateModified": "2026-08-02T23:51:32Z"
+            "dateModified": "2026-08-02T23:51:32Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.20418904"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2097,7 +2118,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit#software",
             "name": "active_fractal_rabbit",
-            "description": "Active Inference for FractalRabbit",
+            "description": "Active Inference for FractalRabbit · Zenodo",
             "codeRepository": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit",
             "author": {
                 "@type": "Person",
@@ -2106,7 +2127,8 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-07-13T01:15:55Z",
-            "dateModified": "2026-07-13T03:59:12Z"
+            "dateModified": "2026-07-13T03:59:12Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21330636"
         }
     ]
 }

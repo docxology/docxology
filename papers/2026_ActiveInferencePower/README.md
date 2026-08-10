@@ -37,5 +37,7 @@
 
 ## Related
 
+- GitHub release: https://github.com/ActiveInferenceInstitute/active_inference_power/releases/tag/v1.0.0
+
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
 - [All Papers](../README.md)

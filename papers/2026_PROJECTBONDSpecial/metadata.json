@@ -18,7 +18,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "PROJECT BOND is a fleet of 33 independent software packages — 27 film packages, one per James Bond motion picture, plus 6 mission-infrastructure packages (a Q-branch utilities layer, a frozen mission protocol, mission control, an orchestrator, a front-door CLI, and fleet operations). Each film package implements, as real tested algorithms, the concepts of its film: radiation forensics for Dr. No, gold-market cornering for Goldfinger, orbital-EMP modeling for GoldenEye, DNA-targeted bioweapon countermeasure modeling for No Time to Die. The public source repository for the suite and this manuscript is https://github.com/docxology/bond. The repository will carry the source history, reproducibility instructions, generated release artifacts, and the cross-linked Zenodo record for this publication. This compendium is the wrapper manuscript for the whole suite. It does not re-derive the packages' content by hand; it imports each of the 33 package manuscripts in full — every package's abstract, every authored section (introduction, methodology, results, conclusion, experimental setup, reproducibility, and scope), and its figures — framing them with this abstract, a generated suite-architecture chapter, and a closing synthesis. A unified bibliography merges every package's references into a single references.bib, and the combined PDF carries all 27 film chapters and 6 infrastructure chapters in their entirety. The suite is \"special-agent material\" by construction: deterministic, no-mock, ≥90%-coverage-tested packages; provenance on every mission outcome; a frozen protocol every film implements; and cross-film missions (OPERATION OMNIBUS) executed over the real packages.",
+  "description": "PROJECT BOND is a fleet of 33 independent software packages — 27 film packages, one per James Bond motion picture, plus 6 mission-infrastructure packages (a Q-branch utilities layer, a frozen mission protocol, mission control, an orchestrator, a front-door CLI, and fleet operations). Each film package implements, as real tested algorithms, the concepts of its film: radiation forensics for Dr. No, gold-market cornering for Goldfinger, orbital-EMP modeling for GoldenEye, DNA-targeted bioweapon countermeasure modeling for No Time to Die.\n\nThe public source repository for the suite and this manuscript is\nhttps://github.com/docxology/bond. The repository will carry the source\nhistory, reproducibility instructions, generated release artifacts, and the\ncross-linked Zenodo record for this publication.\n\nThis compendium is the wrapper manuscript for the whole suite. It does not re-derive the packages' content by hand; it imports each of the 33 package manuscripts in full — every package's abstract, every authored section (introduction, methodology, results, conclusion, experimental setup, reproducibility, and scope), and its figures — framing them with this abstract, a generated suite-architecture chapter, and a closing synthesis. A unified bibliography merges every package's references into a single references.bib, and the combined PDF carries all 27 film chapters and 6 infrastructure chapters in their entirety.\n\nThe suite is \"special-agent material\" by construction: deterministic, no-mock, ≥90%-coverage-tested packages; provenance on every mission outcome; a frozen protocol every film implements; and cross-film missions (OPERATION OMNIBUS) executed over the real packages.\n\n---\nAssociated artifacts\nGitHub release: PROJECT BOND v1.0.0 (https://github.com/docxology/bond/releases/tag/v1.0.0)\nDOI: https://doi.org/10.5281/zenodo.21843802\nZenodo: https://zenodo.org/records/21843802\nPDF SHA-256: 72634276f9a90f1318be80ff0ece561ace2ead85559d2c05a11b86915e61fa0e",
   "keywords": [
     "software suite",
     "special agent operations",
@@ -35,8 +35,22 @@
       "download_url": "https://zenodo.org/api/records/21843802/files/bond-manuscript_combined.pdf/content"
     }
   ],
-  "related_resources": [],
-  "github_repo": "",
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/bond"
+    }
+  ],
+  "github_repo": "docxology/bond",
   "source": "zenodo-only",
-  "checked_at": "2026-08-07T21:06:31Z"
+  "checked_at": "2026-08-10T17:14:59Z",
+  "github_release_url": "https://github.com/docxology/bond/releases/tag/v1.0.0",
+  "release_tag": "v1.0.0",
+  "release_name": "PROJECT BOND v1.0.0",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "github_repo_self_linked"
+  ]
 }

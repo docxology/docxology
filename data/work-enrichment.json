@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-07T21:06:55Z",
+  "generated_at": "2026-08-10T17:11:53Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 206,
+  "count": 208,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -4197,6 +4197,53 @@
       ],
       "methods": [],
       "source": "papers/2026_DigiPPPiP/README.md"
+    },
+    "Friedman2026RobustBeliefSharingFederated210": {
+      "citation_key": "Friedman2026RobustBeliefSharingFederated210",
+      "abstract": "Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those beliefs, and pool them into a colony-level consensus. The same mechanism is fragile when a member is miscalibrated, corrupted, or strategically wrong. Because the standard pool multiplies the reports together, a single confident-but-wrong broadcast that puts near-zero mass on the true state can pull the whole consensus off it, outweighing many honest members. The colony therefore needs a way to preserve the useful structure of belief sharing while limiting the influence of contaminated beliefs. This paper presents Active Fedference, a discrete-categorical framework that connects robust federated generalized variational inference with active inference belief sharing. The main bridge is structural: standard belief sharing appears as the non-robu",
+      "keywords": [
+        "active inference",
+        "federated learning",
+        "generalised variational inference",
+        "belief sharing",
+        "robustness",
+        "FedGVI"
+      ],
+      "findings": [
+        "active inference",
+        "federated learning",
+        "generalised variational inference",
+        "belief sharing",
+        "robustness"
+      ],
+      "methods": [],
+      "source": "papers/2026_RobustBeliefSharing/README.md"
+    },
+    "Friedman2026ActiveSkillferenceValidatedPrerequisite211": {
+      "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+      "abstract": "Active Inference and the Free Energy Principle (FEP) provide model-based accounts of belief updating, learning, and action under uncertainty. We present Active Skillference, a provenance-bound curriculum-generation and SkillTree-export system for teaching those formal ideas. The paper evaluates structural validity, quantitative provenance, citation-role coverage, and artifact reproducibility; it does not evaluate learner outcomes, establish a new theory of Active Inference, or present an intelligent tutoring system. The curriculum is expressed as code: a typed, validated directed acyclic graph of 630 skills across 111 subjects spanning all 8 strata (mathematics - probability - information theory - variational methods - the FEP - active inference - computation - applications), connected by 1199 prerequisite edges with a maximum dependency depth of 75 (of which the substantive concept chai",
+      "keywords": [
+        "active inference",
+        "free energy principle",
+        "variational inference",
+        "Bayesian inference",
+        "information theory",
+        "curriculum",
+        "prerequisite graph",
+        "SkillTree",
+        "computational provenance",
+        "micro-learning",
+        "reproducible research"
+      ],
+      "findings": [
+        "active inference",
+        "free energy principle",
+        "variational inference",
+        "Bayesian inference",
+        "information theory"
+      ],
+      "methods": [],
+      "source": "papers/2026_ActiveSkillference/README.md"
     }
   }
 }

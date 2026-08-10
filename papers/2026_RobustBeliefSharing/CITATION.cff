@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus"
+version: "0.1.0"
+date-released: 2026-08-10
+doi: 10.5281/zenodo.21864003
+url: "https://doi.org/10.5281/zenodo.21864003"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21864003
+    description: "Zenodo concept DOI"
+  - type: url
+    value: "https://zenodo.org/records/21864003"
+    description: "Zenodo landing page"

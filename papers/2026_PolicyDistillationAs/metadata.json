@@ -46,18 +46,18 @@
     }
   ],
   "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
-  "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.0",
-  "release_tag": "v1.0.0",
-  "release_name": "On-Policy Distillation as Active Inference in Finite Variational Models (v1.0.0)",
-  "pdf_sha256": "db0f2e4f193efa4dd65058d8d8094659a7c9200454acb2da14e88c304f29819e",
+  "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2",
+  "release_tag": "v1.0.2",
+  "release_name": "On-Policy Distillation as Active Inference in Finite Variational Models (v1.0.2)",
+  "pdf_sha256": "c6b5ec494915e6e046f24cf723f8dbbf93a5b168544daed3cca14c089d4087aa",
   "pairing_confidence": "strong",
   "pairing_evidence": [
     "github_release_mentions_doi",
-    "github_release_mentions_zenodo_record",
+    "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked",
     "title_overlap"
   ],
-  "checked_at": "2026-07-10T19:08:24Z",
+  "checked_at": "2026-08-10T17:14:58Z",
   "domain": "Active Inference",
   "type": "Paper",
   "methods": [

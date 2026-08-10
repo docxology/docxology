@@ -299,10 +299,18 @@ def reviewed_pair_decisions(repo_root: Path = REPO_ROOT) -> dict[tuple[str, str]
         representation = str(group.get("representation") or "").strip()
         folder = str(group.get("folder") or "").strip()
         for candidate in group.get("raw_candidates", []):
-            if not isinstance(candidate, dict):
+            # Accept a dict candidate or a bare release-URL string. Historically some
+            # decisions stored raw_candidates as plain URL strings; skipping them (as we
+            # once did) silently un-suppresses create_new actions for already-decided
+            # pairs, so both forms must be registered.
+            if isinstance(candidate, dict):
+                doi = str(candidate.get("doi") or group.get("doi") or "").strip()
+                release_url = str(candidate.get("github_release_url") or "").strip()
+            elif isinstance(candidate, str):
+                doi = str(group.get("doi") or "").strip()
+                release_url = candidate.strip()
+            else:
                 continue
-            doi = str(candidate.get("doi") or group.get("doi") or "").strip()
-            release_url = str(candidate.get("github_release_url") or "").strip()
             if not doi or not release_url:
                 continue
             decisions[_reviewed_pair_key(doi, release_url)] = {

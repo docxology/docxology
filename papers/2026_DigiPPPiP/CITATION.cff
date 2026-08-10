@@ -25,3 +25,6 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/21815704"
     description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/docxology/Digi-PPPiP/releases/tag/v1.0.0"
+    description: "GitHub release"

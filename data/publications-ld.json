@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 206 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 208 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -7954,6 +7954,70 @@
                 "url": "https://doi.org/10.5281/zenodo.21815704"
             },
             "sameAs": "https://doi.org/10.5281/zenodo.21815704"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+            "headline": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🧠",
+            "@id": "https://danielarifriedman.com/works/Friedman2026RobustBeliefSharingFederated210.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026RobustBeliefSharingFederated210.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026RobustBeliefSharingFederated210.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21864003",
+                "url": "https://doi.org/10.5281/zenodo.21864003"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21864003"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+            "headline": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🧠",
+            "@id": "https://danielarifriedman.com/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21865643",
+                "url": "https://doi.org/10.5281/zenodo.21865643"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21865643"
         }
     ]
 }

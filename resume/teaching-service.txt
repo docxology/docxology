@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-08-07T22:26:33Z
+Generated: 2026-08-10T17:24:54Z
 
-Current public metrics: 206 curated works; 143 catalogued software repositories (105 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 200 docxology + 41 AII public repositories (154 primary, 87 forks).
+Current public metrics: 208 curated works; 143 catalogued software repositories (105 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 201 docxology + 43 AII public repositories (157 primary, 87 forks).
 
 SUMMARY
 -------
@@ -100,7 +100,7 @@ AWARDS AND FELLOWSHIPS
   - Campus Community Service Silver Award and Stanley and Jacqueline Schilling Award for Service.
   - Sources: UC Davis: https://www.ucdavis.edu/
 
-WORKS AND PUBLICATIONS (81)
+WORKS AND PUBLICATIONS (83)
 ---------------------------
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
 [006] 2026 | Series | Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions | YouTube | https://www.youtube.com/@danielarifriedman/playlists
@@ -183,6 +183,8 @@ WORKS AND PUBLICATIONS (81)
 [192] 2026 | Paper | Data Descriptor Template: Schema, Provenance, and Release Readiness | Zenodo | 10.5281/zenodo.21298883
 [194] 2026 | Paper | Prior Cognitive Art | Zenodo | 10.5281/zenodo.21316510
 [199] 2026 | Paper | Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings | Zenodo | 10.5281/zenodo.21695160
+[210] 2026 | Paper | Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus | Zenodo | 10.5281/zenodo.21864003
+[211] 2026 | Paper | Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract | Zenodo | 10.5281/zenodo.21865643
 
 SOFTWARE (14)
 -------------

@@ -43,5 +43,7 @@
 
 ## Related
 
+- GitHub release: https://github.com/docxology/alphacogant/releases/tag/v1.0.0
+
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
 - [All Papers](../README.md)

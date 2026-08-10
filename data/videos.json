@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T21:06:59Z",
+  "generated_at": "2026-08-10T17:11:59Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -4123,6 +4123,13 @@
       ],
       "related_works": [
         {
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
+        },
+        {
           "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
           "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
           "year": 2026,
@@ -4142,13 +4149,6 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026WhenDoBugsSee126.html"
-        },
-        {
-          "title": "MVEE: A Framework for Evolutionary Studies",
-          "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
-          "year": 2018,
-          "domain": "Media & Teaching",
-          "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
         }
       ]
     },
@@ -5664,6 +5664,13 @@
       ],
       "related_works": [
         {
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
+        },
+        {
           "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
           "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
           "year": 2026,
@@ -5683,13 +5690,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020GreatPresetRemoteTeams089.html"
-        },
-        {
-          "title": "Narrative Information Management",
-          "citation_key": "Friedman2021NarrativeInformationManagement080",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationManagement080.html"
         }
       ]
     },
@@ -14141,11 +14141,11 @@
           "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
         },
         {
-          "title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
-          "citation_key": "Friedman2026ArchitectureFalseGodsWilliam115",
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
           "year": 2026,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2026ArchitectureFalseGodsWilliam115.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
         }
       ]
     },
@@ -15761,11 +15761,11 @@
           "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
         },
         {
-          "title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
-          "citation_key": "Friedman2026ArchitectureFalseGodsWilliam115",
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
           "year": 2026,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2026ArchitectureFalseGodsWilliam115.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
         }
       ]
     },
@@ -15838,11 +15838,11 @@
           "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
         },
         {
-          "title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
-          "citation_key": "Friedman2026ArchitectureFalseGodsWilliam115",
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
           "year": 2026,
-          "domain": "Art & Synergetics",
-          "url": "/works/Friedman2026ArchitectureFalseGodsWilliam115.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
         }
       ]
     },
@@ -17583,11 +17583,11 @@
           "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
         },
         {
-          "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
-          "citation_key": "Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
         }
       ]
     },
@@ -29426,11 +29426,11 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
-          "title": "COGANT: Deterministic Codebase-to-GNN Translation",
-          "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
         }
       ]
     },
@@ -66584,6 +66584,13 @@
           "url": "/works/Friedman2024FederatedInferenceBeliefSharing036.html"
         },
         {
+          "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+          "citation_key": "Friedman2026RobustBeliefSharingFederated210",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026RobustBeliefSharingFederated210.html"
+        },
+        {
           "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
           "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
           "year": 2021,
@@ -66596,13 +66603,6 @@
           "year": 2023,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2023CommentsAIAccountabilityPolicy052.html"
-        },
-        {
-          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
-          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
-          "year": 2026,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
         }
       ]
     },
@@ -70583,6 +70583,13 @@
       ],
       "related_works": [
         {
+          "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+          "citation_key": "Friedman2026RobustBeliefSharingFederated210",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026RobustBeliefSharingFederated210.html"
+        },
+        {
           "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
           "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
@@ -70602,13 +70609,6 @@
           "year": 2023,
           "domain": "Active Inference",
           "url": "/works/Friedman2023GeneralizedNotationNotationActive056.html"
-        },
-        {
-          "title": "The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)",
-          "citation_key": "Friedman2024ActiveInferenceInstituteActive041",
-          "year": 2024,
-          "domain": "AII Ecosystem",
-          "url": "/works/Friedman2024ActiveInferenceInstituteActive041.html"
         }
       ]
     },
@@ -76072,18 +76072,18 @@
           "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
         },
         {
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
+        },
+        {
           "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
           "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
-        },
-        {
-          "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
-          "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
-          "year": 2018,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         }
       ]
     },
@@ -77778,6 +77778,13 @@
           "url": "/works/Friedman2023ActiveInferenceInstituteActive061.html"
         },
         {
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
+        },
+        {
           "title": "White Line: A Typed Ledger for the Edge of the Claim",
           "citation_key": "Friedman2026WhiteLineTypedLedger202",
           "year": 2026,
@@ -77790,13 +77797,6 @@
           "year": 2018,
           "domain": "Media & Teaching",
           "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
-        },
-        {
-          "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
-          "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
-          "year": 2018,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         }
       ]
     },

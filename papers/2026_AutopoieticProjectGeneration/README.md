@@ -38,5 +38,7 @@
 
 ## Related
 
+- GitHub release: https://github.com/docxology/template/releases/tag/v1.0.1
+
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
 - [All Papers](../README.md)

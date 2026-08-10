@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T22:35:44Z",
+  "generated_at": "2026-08-10T17:25:13Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1691,
+  "count": 1696,
   "items": [
     {
       "id": "page:home",
@@ -308,7 +308,7 @@
       "id": "page:public-source-inventory",
       "type": "report",
       "title": "Public Source Inventory",
-      "url": "/reports/public_source_inventory_2026-07-18.json",
+      "url": "/reports/public_source_inventory_2026-08-10.json",
       "summary": "Paginated public-source inventory for source discovery and claim auditing.",
       "tags": [
         "evidence",
@@ -321,7 +321,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-08-07.json",
+      "url": "/reports/accessibility_static_2026-08-10.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -370,7 +370,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-08-07.json",
+      "url": "/reports/asset_size_2026-08-10.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -396,7 +396,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-08-07.json",
+      "url": "/reports/live_site_verification_2026-08-10.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -5267,6 +5267,54 @@
       "content": "DigiPPPiP: Digital Partner Pen Play in Parallel Shrivastava, Siddhant Goh, Evelyn C. Mikhailova, Alexandra Friedman, Daniel Ari Siddhant Shrivastava Evelyn C. Goh Alexandra Mikhailova Daniel Ari Friedman Zenodo 10.5281/zenodo.21815704 Friedman2026DigiPPPiPDigitalPartnerPen209 Cognitive Security Paper DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous, accessible, and place-responsive dyadic drawing . The framework is positioned within collaborative-work studies of shared drawing surfaces , cyber-physical-social systems , mediated embodiment and presence , digital intimacy technologies , and cautious hyperscanning methodology . The manuscript translates the project brief into a modular research artifact: 9 temporal-spatial modalities, 13 evidence dimensions, 6 planned outcome measures, and 39 conceptual figures are generated or registered by the project code rather than hand-maintained prose. The computational layer is explicitly illustrative, not empirical: the active-inference, inter-brain-synchrony, Forman-Ricci, narrative-information, source-quality, accessib partner pen play in parallel active inference inter-brain synchrony geometric hyperscanning narrative information theory neuroergonomics digital placemaking relational technology reproducible research partner pen play in parallel active inference inter-brain synchrony geometric hyperscanning narrative information theory"
     },
     {
+      "id": "work:Friedman2026RobustBeliefSharingFederated210",
+      "type": "work",
+      "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+      "url": "/works/Friedman2026RobustBeliefSharingFederated210.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21864003",
+      "full_text_url": "",
+      "summary": "Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those beliefs, and pool them into a colony-level consensus. The same mechanism ",
+      "year": 2026,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "active inference",
+        "federated learning",
+        "generalised variational inference",
+        "belief sharing",
+        "robustness",
+        "FedGVI"
+      ],
+      "content": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus Zenodo 10.5281/zenodo.21864003 Friedman2026RobustBeliefSharingFederated210 Active Inference Paper Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those beliefs, and pool them into a colony-level consensus. The same mechanism is fragile when a member is miscalibrated, corrupted, or strategically wrong. Because the standard pool multiplies the reports together, a single confident-but-wrong broadcast that puts near-zero mass on the true state can pull the whole consensus off it, outweighing many honest members. The colony therefore needs a way to preserve the useful structure of belief sharing while limiting the influence of contaminated beliefs. This paper presents Active Fedference, a discrete-categorical framework that connects robust federated generalized variational inference with active inference belief sharing. The main bridge is structural: standard belief sharing appears as the non-robu active inference federated learning generalised variational inference belief sharing robustness FedGVI active inference federated learning generalised variational inference belief sharing robustness"
+    },
+    {
+      "id": "work:Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+      "type": "work",
+      "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+      "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html",
+      "external_url": "https://doi.org/10.5281/zenodo.21865643",
+      "full_text_url": "",
+      "summary": "Active Inference and the Free Energy Principle (FEP) provide model-based accounts of belief updating, learning, and action under uncertainty. We present Active Skillference, a provenance-bound curriculum-generation and S",
+      "year": 2026,
+      "domain": "Active Inference",
+      "tags": [
+        "Paper",
+        "Active Inference",
+        "bibliography",
+        "active inference",
+        "free energy principle",
+        "variational inference",
+        "Bayesian inference",
+        "information theory",
+        "curriculum",
+        "prerequisite graph",
+        "SkillTree"
+      ],
+      "content": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract Zenodo 10.5281/zenodo.21865643 Friedman2026ActiveSkillferenceValidatedPrerequisite211 Active Inference Paper Active Inference and the Free Energy Principle (FEP) provide model-based accounts of belief updating, learning, and action under uncertainty. We present Active Skillference, a provenance-bound curriculum-generation and SkillTree-export system for teaching those formal ideas. The paper evaluates structural validity, quantitative provenance, citation-role coverage, and artifact reproducibility; it does not evaluate learner outcomes, establish a new theory of Active Inference, or present an intelligent tutoring system. The curriculum is expressed as code: a typed, validated directed acyclic graph of 630 skills across 111 subjects spanning all 8 strata (mathematics - probability - information theory - variational methods - the FEP - active inference - computation - applications), connected by 1199 prerequisite edges with a maximum dependency depth of 75 (of which the substantive concept chai active inference free energy principle variational inference Bayesian inference information theory curriculum prerequisite graph SkillTree computational provenance micro-learning reproducible research active inference free energy principle variational inference Bayesian inference information theory"
+    },
+    {
       "id": "software:docxology:template",
       "type": "software",
       "title": "template",
@@ -5313,14 +5361,14 @@
       "type": "software",
       "title": "codomyrmex",
       "url": "https://github.com/docxology/codomyrmex",
-      "summary": "AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
+      "summary": "AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "codomyrmex AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration Python docxology"
+      "content": "codomyrmex AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:timeline_generator",
@@ -6139,112 +6187,112 @@
       "type": "software",
       "title": "EntoLaw",
       "url": "https://github.com/docxology/EntoLaw",
-      "summary": "A source-anchored, reproducible field map of entomological law",
+      "summary": "A source-anchored, reproducible field map of entomological law · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "TeX",
         "docxology"
       ],
-      "content": "EntoLaw A source-anchored, reproducible field map of entomological law TeX docxology"
+      "content": "EntoLaw A source-anchored, reproducible field map of entomological law · Zenodo TeX docxology"
     },
     {
       "id": "software:docxology:DuckRabbit",
       "type": "software",
       "title": "DuckRabbit",
       "url": "https://github.com/docxology/DuckRabbit",
-      "summary": "Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs",
+      "summary": "Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "DuckRabbit Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs Python docxology"
+      "content": "DuckRabbit Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:entofile",
       "type": "software",
       "title": "entofile",
       "url": "https://github.com/docxology/entofile",
-      "summary": "ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation.",
+      "summary": "ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation. · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "entofile ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation. Python docxology"
+      "content": "entofile ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation. · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:realizing_emptiness",
       "type": "software",
       "title": "realizing_emptiness",
       "url": "https://github.com/docxology/realizing_emptiness",
-      "summary": "Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026).",
+      "summary": "Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026). · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "realizing_emptiness Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026). Python docxology"
+      "content": "realizing_emptiness Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026). · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:ntqr_allotment",
       "type": "software",
       "title": "ntqr_allotment",
       "url": "https://github.com/docxology/ntqr_allotment",
-      "summary": "Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion)",
+      "summary": "Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion) · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "ntqr_allotment Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion) Python docxology"
+      "content": "ntqr_allotment Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion) · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:alphacogant",
       "type": "software",
       "title": "alphacogant",
       "url": "https://github.com/docxology/alphacogant",
-      "summary": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model",
+      "summary": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "alphacogant AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model Python docxology"
+      "content": "alphacogant AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:democreate",
       "type": "software",
       "title": "democreate",
       "url": "https://github.com/docxology/democreate",
-      "summary": "DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers.",
+      "summary": "DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers. · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "democreate DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers. Python docxology"
+      "content": "democreate DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers. · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:blake",
       "type": "software",
       "title": "blake",
       "url": "https://github.com/docxology/blake",
-      "summary": "William Blake",
+      "summary": "William Blake · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "blake William Blake Python docxology"
+      "content": "blake William Blake · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:dotscope",
@@ -6293,70 +6341,70 @@
       "type": "software",
       "title": "template_active_inference",
       "url": "https://github.com/docxology/template_active_inference",
-      "summary": "Active inference multi-track exemplar releases",
+      "summary": "Active inference multi-track exemplar releases · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "template_active_inference Active inference multi-track exemplar releases Python docxology"
+      "content": "template_active_inference Active inference multi-track exemplar releases · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:template-pitch-deck",
       "type": "software",
       "title": "template-pitch-deck",
       "url": "https://github.com/docxology/template-pitch-deck",
-      "summary": "Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template",
+      "summary": "Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "template-pitch-deck Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template Python docxology"
+      "content": "template-pitch-deck Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:template_autopoiesis",
       "type": "software",
       "title": "template_autopoiesis",
       "url": "https://github.com/docxology/template_autopoiesis",
-      "summary": "Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869)",
+      "summary": "Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "TeX",
         "docxology"
       ],
-      "content": "template_autopoiesis Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) TeX docxology"
+      "content": "template_autopoiesis Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) · Zenodo TeX docxology"
     },
     {
       "id": "software:docxology:template_autoresearch_project",
       "type": "software",
       "title": "template_autoresearch_project",
       "url": "https://github.com/docxology/template_autoresearch_project",
-      "summary": "Template autoresearch project exemplar releases",
+      "summary": "Template autoresearch project exemplar releases · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "template_autoresearch_project Template autoresearch project exemplar releases Python docxology"
+      "content": "template_autoresearch_project Template autoresearch project exemplar releases · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:template_code_project",
       "type": "software",
       "title": "template_code_project",
       "url": "https://github.com/docxology/template_code_project",
-      "summary": "Template code project exemplar releases",
+      "summary": "Template code project exemplar releases · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "template_code_project Template code project exemplar releases Python docxology"
+      "content": "template_code_project Template code project exemplar releases · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:template_data_descriptor",
@@ -6377,14 +6425,14 @@
       "type": "software",
       "title": "template_eda_notebook",
       "url": "https://github.com/docxology/template_eda_notebook",
-      "summary": "Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template",
+      "summary": "Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "TeX",
         "docxology"
       ],
-      "content": "template_eda_notebook Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template TeX docxology"
+      "content": "template_eda_notebook Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template · Zenodo TeX docxology"
     },
     {
       "id": "software:docxology:template_formal",
@@ -6419,28 +6467,28 @@
       "type": "software",
       "title": "template_literature_meta_analysis",
       "url": "https://github.com/docxology/template_literature_meta_analysis",
-      "summary": "Public standalone template exemplar: template_literature_meta_analysis",
+      "summary": "Public standalone template exemplar: template_literature_meta_analysis · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "template_literature_meta_analysis Public standalone template exemplar: template_literature_meta_analysis Python docxology"
+      "content": "template_literature_meta_analysis Public standalone template exemplar: template_literature_meta_analysis · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:template_methods_paper",
       "type": "software",
       "title": "template_methods_paper",
       "url": "https://github.com/docxology/template_methods_paper",
-      "summary": "A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template",
+      "summary": "A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "TeX",
         "docxology"
       ],
-      "content": "template_methods_paper A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template TeX docxology"
+      "content": "template_methods_paper A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template · Zenodo TeX docxology"
     },
     {
       "id": "software:docxology:template_pools_rules_tools",
@@ -6461,14 +6509,14 @@
       "type": "software",
       "title": "template_prose_project",
       "url": "https://github.com/docxology/template_prose_project",
-      "summary": "Template prose project exemplar releases",
+      "summary": "Template prose project exemplar releases · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "TeX",
         "docxology"
       ],
-      "content": "template_prose_project Template prose project exemplar releases TeX docxology"
+      "content": "template_prose_project Template prose project exemplar releases · Zenodo TeX docxology"
     },
     {
       "id": "software:docxology:template_redacted_report",
@@ -6517,42 +6565,42 @@
       "type": "software",
       "title": "template_sia",
       "url": "https://github.com/docxology/template_sia",
-      "summary": "SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia)",
+      "summary": "SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia) · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "Python",
         "docxology"
       ],
-      "content": "template_sia SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia) Python docxology"
+      "content": "template_sia SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia) · Zenodo Python docxology"
     },
     {
       "id": "software:docxology:template_storybook",
       "type": "software",
       "title": "template_storybook",
       "url": "https://github.com/docxology/template_storybook",
-      "summary": "Standalone full-page illustrated storybook template from docxology/template",
+      "summary": "Standalone full-page illustrated storybook template from docxology/template · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "TeX",
         "docxology"
       ],
-      "content": "template_storybook Standalone full-page illustrated storybook template from docxology/template TeX docxology"
+      "content": "template_storybook Standalone full-page illustrated storybook template from docxology/template · Zenodo TeX docxology"
     },
     {
       "id": "software:docxology:template_template",
       "type": "software",
       "title": "template_template",
       "url": "https://github.com/docxology/template_template",
-      "summary": "Template meta-research exemplar: self-documenting reproducible research repo",
+      "summary": "Template meta-research exemplar: self-documenting reproducible research repo · Zenodo",
       "domain": "docxology",
       "tags": [
         "software",
         "TeX",
         "docxology"
       ],
-      "content": "template_template Template meta-research exemplar: self-documenting reproducible research repo TeX docxology"
+      "content": "template_template Template meta-research exemplar: self-documenting reproducible research repo · Zenodo TeX docxology"
     },
     {
       "id": "software:docxology:template_bioinformatics_project",
@@ -7063,14 +7111,14 @@
       "type": "software",
       "title": "policy_entanglement",
       "url": "https://github.com/ActiveInferenceInstitute/policy_entanglement",
-      "summary": "Policy Entanglement in Active Inference v1.0.0",
+      "summary": "Policy Entanglement in Active Inference v1.0.0 · Zenodo",
       "domain": "active-inference-institute",
       "tags": [
         "software",
         "Python",
         "ActiveInferenceInstitute"
       ],
-      "content": "policy_entanglement Policy Entanglement in Active Inference v1.0.0 Python ActiveInferenceInstitute"
+      "content": "policy_entanglement Policy Entanglement in Active Inference v1.0.0 · Zenodo Python ActiveInferenceInstitute"
     },
     {
       "id": "software:ActiveInferenceInstitute:GEN24",
@@ -7259,14 +7307,14 @@
       "type": "software",
       "title": "active_fractal_rabbit",
       "url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit",
-      "summary": "Active Inference for FractalRabbit",
+      "summary": "Active Inference for FractalRabbit · Zenodo",
       "domain": "active-inference-institute",
       "tags": [
         "software",
         "Python",
         "ActiveInferenceInstitute"
       ],
-      "content": "active_fractal_rabbit Active Inference for FractalRabbit Python ActiveInferenceInstitute"
+      "content": "active_fractal_rabbit Active Inference for FractalRabbit · Zenodo Python ActiveInferenceInstitute"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/act_inf_metaanalysis",
@@ -7301,6 +7349,22 @@
         "recent"
       ],
       "content": "ActiveInferenceInstitute/ActInf_RxInfer Active Inference and RxInfer.jl Julia ActiveInferenceInstitute  curated recent"
+    },
+    {
+      "id": "github-repo:ActiveInferenceInstitute/Active_Fedference",
+      "type": "github_repository",
+      "title": "ActiveInferenceInstitute/Active_Fedference",
+      "url": "https://github.com/ActiveInferenceInstitute/Active_Fedference",
+      "summary": "ActiveInferenceInstitute repository",
+      "domain": "ActiveInferenceInstitute",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "ActiveInferenceInstitute",
+        "recent"
+      ],
+      "content": "ActiveInferenceInstitute/Active_Fedference  Python ActiveInferenceInstitute  recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/active_fractal_rabbit",
@@ -7367,6 +7431,22 @@
         "recent"
       ],
       "content": "ActiveInferenceInstitute/Active_Inference_Un0   ActiveInferenceInstitute  recent"
+    },
+    {
+      "id": "github-repo:ActiveInferenceInstitute/Active_Skillference",
+      "type": "github_repository",
+      "title": "ActiveInferenceInstitute/Active_Skillference",
+      "url": "https://github.com/ActiveInferenceInstitute/Active_Skillference",
+      "summary": "A high-integrity micro-learning platform for Active Inference and the Free Energy Principle: a validated prerequisite graph whose every quantitative claim is produced by a tested kernel, exported to SkillTree. DOI: 10.5281/zenodo.21865644",
+      "domain": "ActiveInferenceInstitute",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "ActiveInferenceInstitute",
+        "recent"
+      ],
+      "content": "ActiveInferenceInstitute/Active_Skillference A high-integrity micro-learning platform for Active Inference and the Free Energy Principle: a validated prerequisite graph whose every quantitative claim is produced by a tested kernel, exported to SkillTree. DOI: 10.5281/zenodo.21865644 Python ActiveInferenceInstitute active-inference bayesian-inference computational-provenance curriculum free-energy-principle reproducible-research skilltree variational-inference recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/ActiveBlockference",
@@ -8912,6 +8992,22 @@
         "recent"
       ],
       "content": "docxology/Markov_Blanket_Detection  Python docxology  curated recent"
+    },
+    {
+      "id": "github-repo:docxology/math4wisdom-superhuman-docs-archive",
+      "type": "github_repository",
+      "title": "docxology/math4wisdom-superhuman-docs-archive",
+      "url": "https://github.com/docxology/math4wisdom-superhuman-docs-archive",
+      "summary": "Structured, read-only Math4Wisdom Superhuman Docs archive",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "TypeScript",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/math4wisdom-superhuman-docs-archive Structured, read-only Math4Wisdom Superhuman Docs archive TypeScript docxology  recent"
     },
     {
       "id": "github-repo:docxology/mdkv",
@@ -10765,7 +10861,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#078 ~ Game Theory Personal Channel 2020-04-21 Research Video Archive DigiPPPiP: Digital Partner Pen Play in Parallel The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation When do bugs see (infra)red? MVEE: A Framework for Evolutionary Studies"
+      "content": "#078 ~ Game Theory Personal Channel 2020-04-21 Research Video Archive Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract DigiPPPiP: Digital Partner Pen Play in Parallel The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation When do bugs see (infra)red?"
     },
     {
       "id": "video:personal:DHdWPENwahQ",
@@ -11122,7 +11218,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#031 ~ Triangles & Information Theory Personal Channel 2020-04-21 Research Video Archive DigiPPPiP: Digital Partner Pen Play in Parallel The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation The Great Preset: Remote Teams and Operational Art Narrative Information Management"
+      "content": "#031 ~ Triangles & Information Theory Personal Channel 2020-04-21 Research Video Archive Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract DigiPPPiP: Digital Partner Pen Play in Parallel The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation The Great Preset: Remote Teams and Operational Art"
     },
     {
       "id": "video:personal:R_qTs2D5jkY",
@@ -13062,7 +13158,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #013.0: \"Cybernetic Big Five Theory with the Free Energy Principle\" Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology MVEE: A Framework for Evolutionary Studies The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision"
+      "content": "ActInf Livestream #013.0: \"Cybernetic Big Five Theory with the Free Energy Principle\" Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology MVEE: A Framework for Evolutionary Studies Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract"
     },
     {
       "id": "video:institute:93lAa-xEmHY",
@@ -13422,7 +13518,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #013.2: \"Cybernetic Big Five Theory with the Free Energy Principle\" Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology MVEE: A Framework for Evolutionary Studies The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision"
+      "content": "ActInf Livestream #013.2: \"Cybernetic Big Five Theory with the Free Energy Principle\" Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology MVEE: A Framework for Evolutionary Studies Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract"
     },
     {
       "id": "video:institute:QG2gOoX4XdA",
@@ -13439,7 +13535,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #013.1: \"Cybernetic Big Five Theory with the Free Energy Principle...\" Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology MVEE: A Framework for Evolutionary Studies The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision"
+      "content": "ActInf Livestream #013.1: \"Cybernetic Big Five Theory with the Free Energy Principle...\" Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology MVEE: A Framework for Evolutionary Studies Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract"
     },
     {
       "id": "video:institute:QRGaGmT-VFM",
@@ -13832,7 +13928,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "#158 ~ Hurrah for the flag of the free! Personal Channel 2021-04-21 Research Video Archive Generative Research Teams: Active Inference Compositions for Research and Meta-Science The Active Inference Institute and Active Inference Ecosystem (v1) Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference"
+      "content": "#158 ~ Hurrah for the flag of the free! Personal Channel 2021-04-21 Research Video Archive Generative Research Teams: Active Inference Compositions for Research and Meta-Science The Active Inference Institute and Active Inference Ecosystem (v1) Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract"
     },
     {
       "id": "video:institute:g2n47dPUyNY",
@@ -16423,7 +16519,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf ModelStream #004.1 ~ \"Implementing Active Inference by Message Passing in a Factor Graph\" Active Inference Institute 2022-04-21 Active Inference Federated inference and belief sharing An Active Inference Ontology for Decentralized Science Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 COGANT: Deterministic Codebase-to-GNN Translation"
+      "content": "ActInf ModelStream #004.1 ~ \"Implementing Active Inference by Message Passing in a Factor Graph\" Active Inference Institute 2022-04-21 Active Inference Federated inference and belief sharing An Active Inference Ontology for Decentralized Science Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract"
     },
     {
       "id": "video:institute:v0oJvbVuAF0",
@@ -24431,7 +24527,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "The Power of Communication in Intelligence \"Federated inference and belief sharing\" Personal Channel 2024-09-25 Research Video Archive Federated inference and belief sharing Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Comments on AI Accountability Policy to NTIA Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings"
+      "content": "The Power of Communication in Intelligence \"Federated inference and belief sharing\" Personal Channel 2024-09-25 Research Video Archive Federated inference and belief sharing Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Comments on AI Accountability Policy to NTIA"
     },
     {
       "id": "video:personal:MKCb2JrIIQw",
@@ -25273,7 +25369,7 @@
         "Active Inference",
         "Education and Tutorials"
       ],
-      "content": "Viet Dung Nguyen \"Dynamic Prior Preference Learning for Scalable, Robust Deep Active Inference\" Active Inference Institute 2024-11-22 Active Inference Education and Tutorials Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 Comments on AI Accountability Policy to NTIA Generalized Notation Notation for Active Inference Models The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)"
+      "content": "Viet Dung Nguyen \"Dynamic Prior Preference Learning for Scalable, Robust Deep Active Inference\" Active Inference Institute 2024-11-22 Active Inference Education and Tutorials Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 Comments on AI Accountability Policy to NTIA Generalized Notation Notation for Active Inference Models"
     },
     {
       "id": "video:institute:LI_ZIXys1xU",
@@ -26452,7 +26548,7 @@
         "Active Inference",
         "Computational Methods"
       ],
-      "content": "ActInf ModelStream 011.1 ~ Hadi Vafaii: \"Poisson Variational Autoencoder\" Active Inference Institute 2025-04-21 Active Inference Computational Methods MVEE: A Framework for Evolutionary Studies AGEINT: Agentic Intelligence Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)"
+      "content": "ActInf ModelStream 011.1 ~ Hadi Vafaii: \"Poisson Variational Autoencoder\" Active Inference Institute 2025-04-21 Active Inference Computational Methods MVEE: A Framework for Evolutionary Studies AGEINT: Agentic Intelligence Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction"
     },
     {
       "id": "video:personal:ZVvaSpzg-Wg",
@@ -26817,7 +26913,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "Noel Coughlin: Examining and Rectifying the Error in Heisenberg's Uncertainty Principle Personal Channel 2025-04-21 Research Video Archive The Active Inference Institute and Active Inference Ecosystem (v1) White Line: A Typed Ledger for the Edge of the Claim MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)"
+      "content": "Noel Coughlin: Examining and Rectifying the Error in Heisenberg's Uncertainty Principle Personal Channel 2025-04-21 Research Video Archive The Active Inference Institute and Active Inference Ecosystem (v1) Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract White Line: A Typed Ledger for the Edge of the Claim MVEE: A Framework for Evolutionary Studies"
     },
     {
       "id": "video:institute:kCmC4i-drEY",
@@ -29524,7 +29620,7 @@
     {
       "id": "claim:curated-work-count",
       "type": "claim",
-      "title": "The curated bibliography contains 206 works.",
+      "title": "The curated bibliography contains 208 works.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -29532,12 +29628,12 @@
         "curated-local",
         "high"
       ],
-      "content": "The curated bibliography contains 206 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
+      "content": "The curated bibliography contains 208 works. Curated count includes papers, books, presentations, courses, playbooks, and series. Generated from the 8-column bibliography table and cross-checked against publications.html."
     },
     {
       "id": "claim:paper-folder-count",
       "type": "claim",
-      "title": "The repository contains 189 per-paper documentation folders.",
+      "title": "The repository contains 191 per-paper documentation folders.",
       "url": "/evidence.html",
       "summary": "curated-local · confidence: high",
       "tags": [
@@ -29545,7 +29641,7 @@
         "curated-local",
         "high"
       ],
-      "content": "The repository contains 189 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
+      "content": "The repository contains 191 per-paper documentation folders. Not every bibliography row has a paper folder; media/course rows may not. Folder inventory and paper metadata count."
     },
     {
       "id": "claim:docxology-github-public-repos",
@@ -29721,7 +29817,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.html",
-      "summary": "Structured CV export: 206 works, 143 software rows, 241 public GitHub repositories, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 208 works, 143 software rows, 244 public GitHub repositories, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

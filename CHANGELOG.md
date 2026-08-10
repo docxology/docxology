@@ -2,6 +2,14 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-08-10
+
+- **Two new Zenodo software publications catalogued** with full paper-folder documentation (README/AGENTS/SKILL/CITATION.cff/metadata.json + PDF) and regenerated bibliography, exports, work pages, domain pages, catalog, feed, sitemap, resume, accessibility, and Pages-manifest surfaces (works 206→**208**):
+  - **#210** Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus (🧠, concept DOI `zenodo.21864003`; source repository [`ActiveInferenceInstitute/active_fedference`](https://github.com/ActiveInferenceInstitute/active_fedference)).
+  - **#211** Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract (🧠, concept DOI `zenodo.21865643`; source repository [`ActiveInferenceInstitute/active_skillference`](https://github.com/ActiveInferenceInstitute/active_skillference)).
+- **45 paired-publication `update_existing` refreshes applied**: version/PDF/metadata + software-link updates across already-catalogued works (template exemplars, DigiPPPiP, PROJECT BOND, Codomyrmex v1.3.0-paper, AlphaCOGANT, Active Inference Power Suite, prior_cognitive_art, BeeStack, COGANT, and more).
+- **Fix: string-form paired-publication decisions are now honored** (`code/orchestrators/sync_paired_publications.py`). Decisions R25-R27 stored `raw_candidates` as bare release-URL strings, which `reviewed_pair_decisions()` silently dropped — re-surfacing a `create_new` duplicate for an already-decided pair. The parser now accepts both dict and URL-string candidates, the three decisions were normalized to dict form, and a regression test was added. The CogSecSkills v1.0.0/`zenodo.20804585` false positive is again correctly reported `already_reviewed` instead of `create_new` (report: **0 new**, 28 already reviewed).
+
 ## 2026-08-07
 
 - **Two new Zenodo publications catalogued** with paper-folder documentation and regenerated bibliography, exports, work pages, feeds, sitemap, resume, accessibility, and Pages-manifest surfaces:

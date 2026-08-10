@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T22:26:33Z",
+  "generated_at": "2026-08-10T17:24:54Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 206,
+    "works": 208,
     "software_catalogued": 143,
     "owned_software_catalogued": 105,
     "aii_software_catalogued": 38,
@@ -74,21 +74,21 @@
       "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 38 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-08-07T21:31:20Z",
+      "generated_at": "2026-08-10T17:24:40Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 241,
-      "public": 241,
-      "primary_total": 154,
+      "total": 244,
+      "public": 244,
+      "primary_total": 157,
       "forks": 87,
-      "docxology": 200,
-      "ActiveInferenceInstitute": 41
+      "docxology": 201,
+      "ActiveInferenceInstitute": 43
     }
   },
   "integrity": {
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "cdb637912007c99a26568b5f106ffcb1019be66709d1807a6a812fec9bfba64f",
+      "sha256": "9dd393dd81f5642b5b788796afbdf1d701a71175eb3a8c2327730ff6531b77d4",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 165704,
-          "sha256": "d15e50848fc484d60dbba50d9e577e078a60369e7bbe6d838976e00f442cd950"
+          "bytes": 167194,
+          "sha256": "b12d094b0a9abef6166ed5e30e8090ea867720e6bb1b81e95a388633cc79861e"
         },
         {
           "path": "data/software.json",
-          "bytes": 68650,
-          "sha256": "b6b0a64f4bf9364f6f5c5fdf60c411e8ddd8960835f2612b631efe41c01fdfdb"
+          "bytes": 70457,
+          "sha256": "323edf1bd11869908005a3d2d3e141c29cece63ae5e5e84a682051d8f20b7b4d"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 11914,
-          "sha256": "d68b95d525d8bd7163fd47ba6a7f758ee7e4b78e2fd800cab947c176cc5c21da"
+          "sha256": "46e9af085564a20dc8bb0dae49b73c98d059420b8dc536b0b90c01ea828eacce"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 208694,
-          "sha256": "7be239e69a8198cd44ba3b8cac725af3a2800fb4c08384d9e8586030e87be173"
+          "bytes": 211713,
+          "sha256": "02bf2933a7231d342d0586384f8c56f76d7ab87c33a682e33b8862d1d5f6453e"
         }
       ]
     },
@@ -2414,7 +2414,7 @@
       "docs_path": "papers/2026_CognitiveIntegrity/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -2637,7 +2637,7 @@
       "docs_path": "papers/2025_AccessibilityActiveInference/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -2661,7 +2661,7 @@
       "docs_path": "papers/2025_MDKV/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -2684,7 +2684,7 @@
       "docs_path": "papers/2025_MarkdownDecisionProcess/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -2730,7 +2730,7 @@
       "docs_path": "papers/2025_OnTime/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -2826,7 +2826,7 @@
       "docs_path": "papers/2025_AgentAndNiche/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3053,7 +3053,7 @@
       "docs_path": "papers/2024_OntologySUMO/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3324,7 +3324,7 @@
       "docs_path": "papers/2024_SensemakingFederation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3428,7 +3428,7 @@
       "docs_path": "papers/2024_InfiniteImaginarium/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3601,7 +3601,7 @@
       "docs_path": "papers/2023_AccountActiveInference/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3624,7 +3624,7 @@
       "docs_path": "papers/2023_CognitiveSovereignty/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3701,7 +3701,7 @@
       "docs_path": "papers/2023_NSFReporting/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3724,7 +3724,7 @@
       "docs_path": "papers/2023_VideoEntomology/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4057,7 +4057,7 @@
       "docs_path": "papers/2022_ActiveDiffusion/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4081,7 +4081,7 @@
       "docs_path": "papers/2022_StigmergicAnnotation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4108,7 +4108,7 @@
       "docs_path": "papers/2022_FreeWillSapolsky/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4133,7 +4133,7 @@
       "docs_path": "papers/2022_MirrorTest/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4178,7 +4178,7 @@
       "docs_path": "papers/2022_HypercertEcosystems/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4371,7 +4371,7 @@
       "docs_path": "papers/2021_NarrativeInformationMgmt/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4495,7 +4495,7 @@
       "docs_path": "papers/2020_EmergentTeams/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4663,7 +4663,7 @@
       "docs_path": "papers/2019_DennettExplained/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4688,7 +4688,7 @@
       "docs_path": "papers/2019_PhDDissertation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -5015,7 +5015,7 @@
       "docs_path": "papers/2015_CryptoJews/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -5682,7 +5682,7 @@
       "docs_path": "papers/2023_NaturalAIBased/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -5757,7 +5757,7 @@
       "docs_path": "papers/2023_TranscriptActiveInference/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -5782,7 +5782,7 @@
       "docs_path": "papers/2023_ModernNostrIndex/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -6159,7 +6159,7 @@
       "docs_path": "papers/2026_Triplicate/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -6984,7 +6984,7 @@
       "docs_path": "papers/2026_RedactedReportTemplate/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": false,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -7430,6 +7430,48 @@
         "Mikhailova, Alexandra",
         "Friedman, Daniel Ari"
       ]
+    },
+    {
+      "num": 210,
+      "citation_key": "Friedman2026RobustBeliefSharingFederated210",
+      "year": 2026,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21864003",
+      "doi": "10.5281/zenodo.21864003",
+      "docs_path": "papers/2026_RobustBeliefSharing/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": []
+    },
+    {
+      "num": 211,
+      "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+      "year": 2026,
+      "domain": "🧠",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21865643",
+      "doi": "10.5281/zenodo.21865643",
+      "docs_path": "papers/2026_ActiveSkillference/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": []
     }
   ],
   "software": [
@@ -7474,12 +7516,12 @@
       "url": "https://github.com/docxology/codomyrmex",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration",
+      "description": "AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · Zenodo",
       "language": "Python",
       "stars": 6,
       "updated_or_year": "2026-05",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_Codomyrmex/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21750800"
     },
     {
       "name": "timeline_generator",
@@ -8182,96 +8224,96 @@
       "url": "https://github.com/docxology/EntoLaw",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "A source-anchored, reproducible field map of entomological law",
+      "description": "A source-anchored, reproducible field map of entomological law · Zenodo",
       "language": "TeX",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_EntomologicalLaw/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21137276"
     },
     {
       "name": "DuckRabbit",
       "url": "https://github.com/docxology/DuckRabbit",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs",
+      "description": "Typed, deterministic multimodal illusion generator — visual, auditory, temporal, and audio-visual stimuli with scholarly evidence and publication outputs · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_DuckRabbit/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21419693"
     },
     {
       "name": "entofile",
       "url": "https://github.com/docxology/entofile",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation.",
+      "description": "ENTO (ENcrypted, Typed, Omnitrack): a flat-ZIP authenticated container format for multimodal research data, with per-track AES-256-GCM, graded observability, and hash-chained proofs. Reference implementation. · Zenodo",
       "language": "Python",
       "stars": 1,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_ENTO/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20396328"
     },
     {
       "name": "realizing_emptiness",
       "url": "https://github.com/docxology/realizing_emptiness",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026).",
+      "description": "Source-faithful, fully reproducible software operationalizing the formalisms of There is no self-evidence: A physics of emptiness realisation (Sandved-Smith, Fields, Doctor, Laukkonen & Hohwy, 2026). · Zenodo",
       "language": "Python",
       "stars": 1,
       "updated_or_year": "2026-06",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_RealizingEmptiness/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20834846"
     },
     {
       "name": "ntqr_allotment",
       "url": "https://github.com/docxology/ntqr_allotment",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion)",
+      "description": "Sortition Upstream of NTQR: how panel formation and size shape ground-truth-free evaluation (deterministic synthetic instrument + single-model Gemma postdoctoral-review companion) · Zenodo",
       "language": "Python",
       "stars": 1,
       "updated_or_year": "2026-06",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_SortitionUpstreamNTQR/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21083779"
     },
     {
       "name": "alphacogant",
       "url": "https://github.com/docxology/alphacogant",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model",
+      "description": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference — GNN-via-COGANT model of the AlphaFund Economic World Model · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-06",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_AlphaCOGANT/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20976824"
     },
     {
       "name": "democreate",
       "url": "https://github.com/docxology/democreate",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers.",
+      "description": "DemoCreate: declarative, deterministic audio-visual demo generation for software packages and research papers. · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_DemoCreate/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20693216"
     },
     {
       "name": "blake",
       "url": "https://github.com/docxology/blake",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "William Blake",
+      "description": "William Blake · Zenodo",
       "language": "Python",
       "stars": 1,
       "updated_or_year": "2026-06",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_MappingWilliamBlake/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21047573"
     },
     {
       "name": "dotscope",
@@ -8314,35 +8356,35 @@
       "url": "https://github.com/docxology/template_active_inference",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Active inference multi-track exemplar releases",
+      "description": "Active inference multi-track exemplar releases · Zenodo",
       "language": "Python",
       "stars": 1,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_ActiveInferenceMulti/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20417021"
     },
     {
       "name": "template-pitch-deck",
       "url": "https://github.com/docxology/template-pitch-deck",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template",
+      "description": "Reproducible, validated short/medium/long PDF+PPTX pitch-deck generation — a public exemplar extracted from docxology/template · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_TemplatePitchDeck/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21281509"
     },
     {
       "name": "template_autopoiesis",
       "url": "https://github.com/docxology/template_autopoiesis",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869)",
+      "description": "Autopoietic Project Generation: a combinatoric grammar for deterministic runnable project synthesis (DOI: 10.5281/zenodo.21227869) · Zenodo",
       "language": "TeX",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
+      "paper_path": "papers/2026_AutopoieticProjectGeneration/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21227869"
     },
     {
@@ -8350,24 +8392,24 @@
       "url": "https://github.com/docxology/template_autoresearch_project",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Template autoresearch project exemplar releases",
+      "description": "Template autoresearch project exemplar releases · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_BoundedAutoResearchTiny/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20417016"
     },
     {
       "name": "template_code_project",
       "url": "https://github.com/docxology/template_code_project",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Template code project exemplar releases",
+      "description": "Template code project exemplar releases · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_ConvergenceAnalysisGradient/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20417136"
     },
     {
       "name": "template_data_descriptor",
@@ -8386,12 +8428,12 @@
       "url": "https://github.com/docxology/template_eda_notebook",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template",
+      "description": "Exploratory Data Analysis: A Reproducible Notebook Template — public exemplar from docxology/template · Zenodo",
       "language": "TeX",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_ExploratoryDataAnalysis/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21086292"
     },
     {
       "name": "template_formal",
@@ -8422,24 +8464,24 @@
       "url": "https://github.com/docxology/template_literature_meta_analysis",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Public standalone template exemplar: template_literature_meta_analysis",
+      "description": "Public standalone template exemplar: template_literature_meta_analysis · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_LivingMetaAnalysis/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20931964"
     },
     {
       "name": "template_methods_paper",
       "url": "https://github.com/docxology/template_methods_paper",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template",
+      "description": "A Domain Language for Specifying Controlled Methods — public exemplar from docxology/template · Zenodo",
       "language": "TeX",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_DomainLanguageSpecifying/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21086548"
     },
     {
       "name": "template_pools_rules_tools",
@@ -8458,12 +8500,12 @@
       "url": "https://github.com/docxology/template_prose_project",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Template prose project exemplar releases",
+      "description": "Template prose project exemplar releases · Zenodo",
       "language": "TeX",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_EditorialQualityAt/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20417104"
     },
     {
       "name": "template_redacted_report",
@@ -8506,36 +8548,36 @@
       "url": "https://github.com/docxology/template_sia",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia)",
+      "description": "SIA self-improvement harness — deterministic Meta→Target→Feedback exemplar (template_sia) · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_SelfImprovementAgent/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20453879"
     },
     {
       "name": "template_storybook",
       "url": "https://github.com/docxology/template_storybook",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Standalone full-page illustrated storybook template from docxology/template",
+      "description": "Standalone full-page illustrated storybook template from docxology/template · Zenodo",
       "language": "TeX",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_ShapeBetween/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21176000"
     },
     {
       "name": "template_template",
       "url": "https://github.com/docxology/template_template",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Template meta-research exemplar: self-documenting reproducible research repo",
+      "description": "Template meta-research exemplar: self-documenting reproducible research repo · Zenodo",
       "language": "TeX",
       "stars": 0,
       "updated_or_year": "2026-07",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_TemplateApproachReproducible/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20419007"
     },
     {
       "name": "template_bioinformatics_project",
@@ -8974,12 +9016,12 @@
       "url": "https://github.com/ActiveInferenceInstitute/policy_entanglement",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Policy Entanglement in Active Inference v1.0.0",
+      "description": "Policy Entanglement in Active Inference v1.0.0 · Zenodo",
       "language": "Python",
       "stars": 2,
       "updated_or_year": "2026",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_PolicyEntanglementActive/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20418904"
     },
     {
       "name": "GEN24",
@@ -9142,25 +9184,25 @@
       "url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Active Inference for FractalRabbit",
+      "description": "Active Inference for FractalRabbit · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026",
-      "paper_path": "",
-      "zenodo_url": ""
+      "paper_path": "papers/2026_ActiveFractalRabbit/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21330636"
     }
   ],
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 206 works.",
+      "claim": "The curated bibliography contains 208 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-07T22:26:33+00:00",
+      "checked_at": "2026-08-10T17:24:54+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9168,14 +9210,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 189 per-paper documentation folders.",
+      "claim": "The repository contains 191 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-07T22:26:33+00:00",
+      "checked_at": "2026-08-10T17:24:54+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

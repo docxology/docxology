@@ -235,6 +235,42 @@ def test_reviewed_decision_takes_precedence_over_existing_doi(tmp_path: Path):
     assert actions[0].action_type == "already_reviewed"
 
 
+def test_reviewed_decision_accepts_string_raw_candidates(tmp_path: Path):
+    """String-form raw_candidates (release-URL strings) must still register.
+
+    Regression: decisions that stored raw_candidates as bare URL strings were
+    silently dropped, re-surfacing create_new actions for already-decided pairs
+    (e.g. CogSecSkills 10.5281/zenodo.20804585)."""
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    payload = {
+        "generated_at": "2026-08-10T00:00:00Z",
+        "decision_summary": {"decision": "rejected", "groups": 1, "raw_candidates": 1, "note": "test"},
+        "groups": [
+            {
+                "id": "R25",
+                "decision": "rejected",
+                "decided_at": "2026-08-10T00:00:00Z",
+                "decided_by": "maintainer",
+                "doi": pair.doi,
+                "title": pair.record.title,
+                "representation": "superseded-version false positive",
+                "folder": None,
+                "raw_candidate_count": 1,
+                "raw_candidates": [pair.github_release_url],
+            }
+        ],
+    }
+    (tmp_path / "data" / "paired-publication-decisions.json").write_text(
+        json.dumps(payload, indent=2) + "\n", encoding="utf-8"
+    )
+
+    actions = build_sync_actions([pair], repo_root=tmp_path)
+
+    assert actions[0].action_type == "already_reviewed"
+    assert "do not create a duplicate bibliography row" in actions[0].reason
+
+
 def test_display_report_path_handles_external_reports(tmp_path: Path):
     repo_root = tmp_path / "repo"
     repo_root.mkdir()

@@ -17,3 +17,6 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/20705350"
     description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0"
+    description: "GitHub release"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T22:35:38Z",
+  "generated_at": "2026-08-10T17:26:17Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,18 +61,18 @@
     }
   ],
   "max_score": 6,
-  "work_count": 206,
+  "work_count": 208,
   "signal_totals": {
-    "persistent_id": 191,
-    "public_archive": 149,
+    "persistent_id": 193,
+    "public_archive": 151,
     "open_full_text": 171,
-    "source_documents": 189,
-    "executable_code": 37,
-    "agent_readable": 189
+    "source_documents": 191,
+    "executable_code": 59,
+    "agent_readable": 191
   },
   "band_counts": {
-    "independently reproducible": 140,
-    "independently checkable": 49,
+    "independently reproducible": 143,
+    "independently checkable": 48,
     "citable only": 8,
     "unverified": 9
   },
@@ -81,11 +81,11 @@
     "1": 4,
     "2": 4,
     "3": 8,
-    "4": 41,
-    "5": 114,
-    "6": 26
+    "4": 40,
+    "5": 98,
+    "6": 45
   },
-  "mean_score": 4.495,
+  "mean_score": 4.596,
   "works": [
     {
       "num": 10,
@@ -340,6 +340,132 @@
       ]
     },
     {
+      "num": 119,
+      "citation_key": "Friedman2026PolicyEntanglementActiveInference119",
+      "title": "Policy Entanglement in Active Inference",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "policy_entanglement"
+      ]
+    },
+    {
+      "num": 120,
+      "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible120",
+      "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_autoresearch_project"
+      ]
+    },
+    {
+      "num": 121,
+      "citation_key": "Friedman2026ConvergenceAnalysisGradientDescent121",
+      "title": "Convergence Analysis of Gradient Descent Optimization",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_code_project"
+      ]
+    },
+    {
+      "num": 122,
+      "citation_key": "Friedman2026EditorialQualityAtScale122",
+      "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_prose_project"
+      ]
+    },
+    {
+      "num": 123,
+      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative123",
+      "title": "A template/ approach to Reproducible Generative Research",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_template"
+      ]
+    },
+    {
+      "num": 124,
+      "citation_key": "Friedman2026ActiveInferenceMultiTrack124",
+      "title": "Active Inference Multi-Track Exemplar",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_active_inference"
+      ]
+    },
+    {
       "num": 125,
       "citation_key": "Friedman2026BeeStackEvidenceTypedScaffold125",
       "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
@@ -379,6 +505,27 @@
       },
       "repositories": [
         "cohereants"
+      ]
+    },
+    {
+      "num": 127,
+      "citation_key": "Friedman2026SelfImprovementAgentHarness127",
+      "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_sia"
       ]
     },
     {
@@ -508,6 +655,48 @@
       ]
     },
     {
+      "num": 166,
+      "citation_key": "Friedman2026DemoCreateDeclarativeAudioVisual166",
+      "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "democreate"
+      ]
+    },
+    {
+      "num": 167,
+      "citation_key": "Friedman2026ENTOENcryptedTypedOmnitrack167",
+      "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "entofile"
+      ]
+    },
+    {
       "num": 169,
       "citation_key": "Friedman2026COGANTDeterministicCodebaseGNN169",
       "title": "COGANT: Deterministic Codebase-to-GNN Translation",
@@ -613,6 +802,195 @@
       ]
     },
     {
+      "num": 175,
+      "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+      "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "realizing_emptiness"
+      ]
+    },
+    {
+      "num": 176,
+      "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
+      "title": "A Living Meta-Analysis of the Modafinil Literature",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_literature_meta_analysis"
+      ]
+    },
+    {
+      "num": 178,
+      "citation_key": "Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
+      "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "alphacogant"
+      ]
+    },
+    {
+      "num": 179,
+      "citation_key": "Friedman2026MappingWilliamBlakeS179",
+      "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "blake"
+      ]
+    },
+    {
+      "num": 180,
+      "citation_key": "Friedman2026SortitionUpstreamNTQR180",
+      "title": "Sortition Upstream of NTQR",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "ntqr_allotment"
+      ]
+    },
+    {
+      "num": 181,
+      "citation_key": "Friedman2026ExploratoryDataAnalysisReproducible181",
+      "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_eda_notebook"
+      ]
+    },
+    {
+      "num": 182,
+      "citation_key": "Friedman2026DomainLanguageSpecifyingControlled182",
+      "title": "A Domain Language for Specifying Controlled Methods",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_methods_paper"
+      ]
+    },
+    {
+      "num": 183,
+      "citation_key": "Friedman2026EntomologicalLawFieldMap183",
+      "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "EntoLaw"
+      ]
+    },
+    {
+      "num": 184,
+      "citation_key": "Friedman2026ShapeBetweenFullPage184",
+      "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template_storybook"
+      ]
+    },
+    {
       "num": 185,
       "citation_key": "Friedman2026AutopoieticProjectGeneration185",
       "title": "Autopoietic Project Generation",
@@ -630,7 +1008,29 @@
         "agent_readable": true
       },
       "repositories": [
-        "template"
+        "template",
+        "template_autopoiesis"
+      ]
+    },
+    {
+      "num": 186,
+      "citation_key": "Friedman2026TemplatePitchDeckReproducible186",
+      "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "template-pitch-deck"
       ]
     },
     {
@@ -1684,139 +2084,6 @@
       "repositories": []
     },
     {
-      "num": 119,
-      "citation_key": "Friedman2026PolicyEntanglementActiveInference119",
-      "title": "Policy Entanglement in Active Inference",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 120,
-      "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible120",
-      "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 121,
-      "citation_key": "Friedman2026ConvergenceAnalysisGradientDescent121",
-      "title": "Convergence Analysis of Gradient Descent Optimization",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 122,
-      "citation_key": "Friedman2026EditorialQualityAtScale122",
-      "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 123,
-      "citation_key": "Friedman2026TemplateApproachReproducibleGenerative123",
-      "title": "A template/ approach to Reproducible Generative Research",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 124,
-      "citation_key": "Friedman2026ActiveInferenceMultiTrack124",
-      "title": "Active Inference Multi-Track Exemplar",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 127,
-      "citation_key": "Friedman2026SelfImprovementAgentHarness127",
-      "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
       "num": 128,
       "citation_key": "Friedman2025BiofirmDevelopmentFirstPrinciples128",
       "title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
@@ -2235,44 +2502,6 @@
       "repositories": []
     },
     {
-      "num": 166,
-      "citation_key": "Friedman2026DemoCreateDeclarativeAudioVisual166",
-      "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 167,
-      "citation_key": "Friedman2026ENTOENcryptedTypedOmnitrack167",
-      "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
       "num": 173,
       "citation_key": "Friedman2026CaliforniaPublicRecordsTechnical173",
       "title": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
@@ -2292,199 +2521,9 @@
       "repositories": []
     },
     {
-      "num": 175,
-      "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
-      "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 176,
-      "citation_key": "Friedman2026LivingMetaAnalysisModafinil176",
-      "title": "A Living Meta-Analysis of the Modafinil Literature",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
       "num": 177,
       "citation_key": "Friedman2026RefinementGoldMetallurgicalAnalogy177",
       "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 178,
-      "citation_key": "Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
-      "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 179,
-      "citation_key": "Friedman2026MappingWilliamBlakeS179",
-      "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 180,
-      "citation_key": "Friedman2026SortitionUpstreamNTQR180",
-      "title": "Sortition Upstream of NTQR",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 181,
-      "citation_key": "Friedman2026ExploratoryDataAnalysisReproducible181",
-      "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 182,
-      "citation_key": "Friedman2026DomainLanguageSpecifyingControlled182",
-      "title": "A Domain Language for Specifying Controlled Methods",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 183,
-      "citation_key": "Friedman2026EntomologicalLawFieldMap183",
-      "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 184,
-      "citation_key": "Friedman2026ShapeBetweenFullPage184",
-      "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 186,
-      "citation_key": "Friedman2026TemplatePitchDeckReproducible186",
-      "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
       "year": 2026,
       "domain_name": "Computational",
       "type": "Paper",
@@ -2634,6 +2673,48 @@
       "repositories": []
     },
     {
+      "num": 195,
+      "citation_key": "Friedman2026ActiveFractalRabbitSyntheticBenchmark195",
+      "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "active_fractal_rabbit"
+      ]
+    },
+    {
+      "num": 197,
+      "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
+      "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "DuckRabbit"
+      ]
+    },
+    {
       "num": 200,
       "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
       "title": "The Witness Register: Co-Registration Without Aggregation",
@@ -2757,6 +2838,27 @@
       },
       "repositories": [
         "black_line"
+      ]
+    },
+    {
+      "num": 206,
+      "citation_key": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
+      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "codomyrmex"
       ]
     },
     {
@@ -3488,49 +3590,11 @@
       "repositories": []
     },
     {
-      "num": 195,
-      "citation_key": "Friedman2026ActiveFractalRabbitSyntheticBenchmark195",
-      "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
-      "year": 2026,
-      "domain_name": "Cognitive Security",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
       "num": 196,
       "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
       "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
       "year": 2026,
       "domain_name": "Art & Synergetics",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 197,
-      "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
-      "title": "DuckRabbit: Typed Multimodal Illusion Generator",
-      "year": 2026,
-      "domain_name": "Computational",
       "type": "Paper",
       "score": 4,
       "band": "independently checkable",
@@ -3583,11 +3647,30 @@
       "repositories": []
     },
     {
-      "num": 206,
-      "citation_key": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
-      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "num": 210,
+      "citation_key": "Friedman2026RobustBeliefSharingFederated210",
+      "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
       "year": 2026,
-      "domain_name": "Computational",
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 211,
+      "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+      "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+      "year": 2026,
+      "domain_name": "Active Inference",
       "type": "Paper",
       "score": 4,
       "band": "independently checkable",

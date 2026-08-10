@@ -33,5 +33,7 @@ software suite · special agent operations · James Bond · reproducible researc
 
 ## Related
 
+- GitHub release: https://github.com/docxology/bond/releases/tag/v1.0.0
+
 - Zenodo record: https://zenodo.org/records/21843592
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

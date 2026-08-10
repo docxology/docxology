@@ -32,7 +32,7 @@
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous, accessible, and place-responsive dyadic drawing . The framework is positioned within collaborative-work studies of shared drawing surfaces , cyber-physical-social systems , mediated embodiment and presence , digital intimacy technologies , and cautious hyperscanning methodology . The manuscript translates the project brief into a modular research artifact: 9 temporal-spatial modalities, 13 evidence dimensions, 6 planned outcome measures, and 39 conceptual figures are generated or registered by the project code rather than hand-maintained prose. The computational layer is explicitly illustrative, not empirical: the active-inference, inter-brain-synchrony, Forman-Ricci, narrative-information, source-quality, accessibility, and neuroergonomic outputs are deterministic conceptual models designed to make theoretical commitments inspectable. Formal equations are consolidated in so the main line can state evidence boundaries before presenting mathematical detail. The argument is that DigiPPPiP should be treated as human-human relational technology. Its irreducible design kernel is modest: two partners, a shared mark field, perceptible traces of agency, a temporal relation among contributions, and consentful control over persistence. Digital infrastructure expands the substrate of shared mark-making without replacing the second-person, embodied, narrative, and affective conditions that make the practice relationally meaningful . The manuscript explicitly avoids claims that DigiPPPiP is clinically therapeutic, universally accessible, or causally validated by neural synchrony; those remain empirical questions for controlled studies. Cross-references use Pandoc labels, so sections, equations, figures, and tables remain automatically numbered across PDF and web render targets.",
+  "description": "DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous, accessible, and place-responsive dyadic drawing . The framework is positioned within collaborative-work studies of shared drawing surfaces , cyber-physical-social systems , mediated embodiment and presence , digital intimacy technologies , and cautious hyperscanning methodology .\n\nThe manuscript translates the project brief into a modular research artifact: 9 temporal-spatial modalities, 13 evidence dimensions, 6 planned outcome measures, and 39 conceptual figures are generated or registered by the project code rather than hand-maintained prose. The computational layer is explicitly illustrative, not empirical: the active-inference, inter-brain-synchrony, Forman-Ricci, narrative-information, source-quality, accessibility, and neuroergonomic outputs are deterministic conceptual models designed to make theoretical commitments inspectable. Formal equations are consolidated in  so the main line can state evidence boundaries before presenting mathematical detail.\n\nThe argument is that DigiPPPiP should be treated as human-human relational technology. Its irreducible design kernel is modest: two partners, a shared mark field, perceptible traces of agency, a temporal relation among contributions, and consentful control over persistence. Digital infrastructure expands the substrate of shared mark-making without replacing the second-person, embodied, narrative, and affective conditions that make the practice relationally meaningful . The manuscript explicitly avoids claims that DigiPPPiP is clinically therapeutic, universally accessible, or causally validated by neural synchrony; those remain empirical questions for controlled studies. Cross-references use Pandoc labels, so sections, equations, figures, and tables remain automatically numbered across PDF and web render targets.\n\n---\nAssociated artifacts\nGitHub release: v1.0.0 (https://github.com/docxology/Digi-PPPiP/releases/tag/v1.0.0)\nDOI: https://doi.org/10.5281/zenodo.21815704\nZenodo: https://zenodo.org/records/21815704\nPDF SHA-256: f5ca95ce77c7c5367c0a0e68d5b4a640f0865b4c2b0827fa78ff1babbcbd986d",
   "keywords": [
     "partner pen play in parallel",
     "active inference",
@@ -52,8 +52,23 @@
       "download_url": "https://zenodo.org/api/records/21815705/files/Shrivastava_2026_Digipppip_f5ca95ce.pdf/content"
     }
   ],
-  "related_resources": [],
-  "github_repo": "",
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/Digi-PPPiP"
+    }
+  ],
+  "github_repo": "docxology/Digi-PPPiP",
   "source": "zenodo-only",
-  "checked_at": "2026-08-07T21:06:51Z"
+  "checked_at": "2026-08-10T17:14:59Z",
+  "github_release_url": "https://github.com/docxology/Digi-PPPiP/releases/tag/v1.0.0",
+  "release_tag": "v1.0.0",
+  "release_name": "Digi-PPPiP v1.0.0",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ]
 }

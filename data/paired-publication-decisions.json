@@ -2252,7 +2252,14 @@
       "representation": "superseded-version false positive: bibliography row #174 already cites the newer concept 10.5281/zenodo.21513316; the v1.0.0 GitHub release pairs with the old concept 20804585 and must not create a duplicate row",
       "raw_candidate_count": 1,
       "raw_candidates": [
-        "https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0"
+        {
+          "doi": "10.5281/zenodo.20804585",
+          "github_release_url": "https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0",
+          "raw_confidence": "rejected",
+          "evidence": [
+            "manual_decision"
+          ]
+        }
       ]
     },
     {
@@ -2267,15 +2274,78 @@
       "representation": "version-history: 9 GitHub release pairs (v0.1.0-v1.7.0) under concept 10.5281/zenodo.21513316; bibliography row #174 already cites the concept DOI, so these versioned releases must not create a duplicate row",
       "raw_candidate_count": 9,
       "raw_candidates": [
-        "https://github.com/docxology/CogSecSkills/releases/tag/v0.1.0",
-        "https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0",
-        "https://github.com/docxology/CogSecSkills/releases/tag/v1.1.0",
-        "https://github.com/docxology/CogSecSkills/releases/tag/v1.2.0",
-        "https://github.com/docxology/CogSecSkills/releases/tag/v1.3.0",
-        "https://github.com/docxology/CogSecSkills/releases/tag/v1.4.0",
-        "https://github.com/docxology/CogSecSkills/releases/tag/v1.5.0",
-        "https://github.com/docxology/CogSecSkills/releases/tag/v1.6.0",
-        "https://github.com/docxology/CogSecSkills/releases/tag/v1.7.0"
+        {
+          "doi": "10.5281/zenodo.21513316",
+          "github_release_url": "https://github.com/docxology/CogSecSkills/releases/tag/v0.1.0",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21513316",
+          "github_release_url": "https://github.com/docxology/CogSecSkills/releases/tag/v1.0.0",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21513316",
+          "github_release_url": "https://github.com/docxology/CogSecSkills/releases/tag/v1.1.0",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21513316",
+          "github_release_url": "https://github.com/docxology/CogSecSkills/releases/tag/v1.2.0",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21513316",
+          "github_release_url": "https://github.com/docxology/CogSecSkills/releases/tag/v1.3.0",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21513316",
+          "github_release_url": "https://github.com/docxology/CogSecSkills/releases/tag/v1.4.0",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21513316",
+          "github_release_url": "https://github.com/docxology/CogSecSkills/releases/tag/v1.5.0",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21513316",
+          "github_release_url": "https://github.com/docxology/CogSecSkills/releases/tag/v1.6.0",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21513316",
+          "github_release_url": "https://github.com/docxology/CogSecSkills/releases/tag/v1.7.0",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        }
       ]
     },
     {
@@ -2290,24 +2360,150 @@
       "representation": "version-history: 18 GitHub release pairs under 10.5281/zenodo.21750800; bibliography row #206 already cites the DOI, so these versioned releases must not create a duplicate row",
       "raw_candidate_count": 18,
       "raw_candidates": [
-        "https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
-        "https://github.com/docxology/codomyrmex/releases/tag/untagged-b16ad7f201db1dace50c",
-        "https://github.com/docxology/codomyrmex/releases/tag/v0.1.0",
-        "https://github.com/docxology/codomyrmex/releases/tag/v0.1.1",
-        "https://github.com/docxology/codomyrmex/releases/tag/v0.1.6",
-        "https://github.com/docxology/codomyrmex/releases/tag/v0.1.7",
-        "https://github.com/docxology/codomyrmex/releases/tag/v1.0.1",
-        "https://github.com/docxology/codomyrmex/releases/tag/v1.0.6",
-        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.1",
-        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.10",
-        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.12",
-        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.2",
-        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.3",
-        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.4",
-        "https://github.com/docxology/codomyrmex/releases/tag/v1.1.5",
-        "https://github.com/docxology/codomyrmex/releases/tag/v1.2.0",
-        "https://github.com/docxology/codomyrmex/releases/tag/v1.2.1",
-        "https://github.com/docxology/codomyrmex/releases/tag/v1.2.2"
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-b16ad7f201db1dace50c",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v0.1.0",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v0.1.1",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v0.1.6",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v0.1.7",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.0.1",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.0.6",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.1.1",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.1.10",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.1.12",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.1.2",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.1.3",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.1.4",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.1.5",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.2.0",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.2.1",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.2.2",
+          "raw_confidence": "superseded",
+          "evidence": [
+            "manual_decision"
+          ]
+        }
       ]
     }
   ]

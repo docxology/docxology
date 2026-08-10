@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-08-10T16:56:38Z",
+  "zenodo_records_fetched": 147,
+  "bibliography_dois": 192,
+  "uncatalogued_count": 2,
+  "non_canonical_doi_count": 1,
+  "warnings": [],
+  "uncatalogued": [
+    {
+      "record_id": "21864004",
+      "doi": "10.5281/zenodo.21864003",
+      "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+      "publication_date": "2026-08-10",
+      "html_url": "https://zenodo.org/records/21864004"
+    },
+    {
+      "record_id": "21865644",
+      "doi": "10.5281/zenodo.21865643",
+      "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+      "publication_date": "2026-08-10",
+      "html_url": "https://zenodo.org/records/21865644"
+    }
+  ],
+  "non_canonical_doi": [
+    {
+      "record_id": "17982447",
+      "concept_doi": "10.5281/zenodo.14108991",
+      "version_doi_in_bibliography": "10.5281/zenodo.17982447",
+      "title": "The Active Inference Institute & Active Inference Ecosystem"
+    }
+  ]
+}
