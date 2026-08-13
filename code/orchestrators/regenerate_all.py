@@ -86,6 +86,10 @@ CHAIN: list[tuple[str, list[str]]] = [
     # the checked-in reports one dependency step behind.
     ("audit_assets.py", []),
     ("accessibility_audit.py", []),
+    # Discovery/llms cite the latest asset_size and accessibility_static reports.
+    # Re-run after the second audit pass so validate_repo's sync_site_facts --check
+    # does not see a one-step-behind pointer when those reports are newly dated.
+    ("sync_site_facts.py", []),
     ("build_search_index.py", []),               # links latest reports + indexes pages
     ("generate_feed.py", []),
     ("build_sitemap.py", []),                    # see caveat: regenerate again post-commit

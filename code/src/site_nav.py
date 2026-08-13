@@ -70,10 +70,14 @@ HEAD_EXTRAS = (
 # Shared mobile-menu Escape-to-close handler — moved to external JS file
 # (js/menu-esc.js) so it complies with the CSP (script-src 'self').
 # Previously this was an inline <script> block, which CSP blocks.
-MENU_ESC_SCRIPT = '<script src="/js/menu-esc.js?v=20260712" defer></script>'
+MENU_ESC_SCRIPT = '<script src="/js/menu-esc.js?v=20260813" defer></script>'
 
-# Interactive layer script tags (TTS + interactive features) — appended before MENU_ESC_SCRIPT on generated pages.
-INTERACTIVE_SCRIPTS = '<script src="/js/tts-controls.js?v=20260712" defer></script>\n<script src="/js/interactive.js?v=20260712" defer></script>'
+# search-utils.js defines global esc() and must load before interactive.js.
+INTERACTIVE_SCRIPTS = (
+    '<script src="/js/search-utils.js?v=20260813"></script>\n'
+    '<script src="/js/tts-controls.js?v=20260813" defer></script>\n'
+    '<script src="/js/interactive.js?v=20260813" defer></script>'
+)
 
 # Work pages that are duplicates of another catalogued work (same paper, different
 # Zenodo deposit/version) point their rel=canonical at the primary entry so search

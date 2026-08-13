@@ -80,10 +80,6 @@
     }, { rootMargin: '400px' })
     : null;
 
-  function esc(s) {
-    return (s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-  }
-
   function plain(s) {
     const parsed = new DOMParser().parseFromString(String(s || ''), 'text/html');
     return (parsed.body.textContent || '').replace(/\s+/g, ' ').trim();

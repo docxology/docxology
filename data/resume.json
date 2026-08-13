@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T17:24:54Z",
+  "generated_at": "2026-08-13T17:52:48Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -35,9 +35,9 @@
   },
   "metrics": {
     "works": 208,
-    "software_catalogued": 143,
+    "software_catalogued": 146,
     "owned_software_catalogued": 105,
-    "aii_software_catalogued": 38,
+    "aii_software_catalogued": 41,
     "google_scholar": {
       "citations": 777,
       "h_index": 15,
@@ -71,7 +71,7 @@
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 38 AII repositories with docxology contributions."
+      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 41 AII repositories with docxology contributions."
     },
     "github_inventory": {
       "generated_at": "2026-08-10T17:24:40Z",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "9dd393dd81f5642b5b788796afbdf1d701a71175eb3a8c2327730ff6531b77d4",
+      "sha256": "31ca30c8048e687d6b84f8fc059f59c2be6744525f2d408355aeaccc6bfebb67",
       "files": [
         {
           "path": "resume/source.json",
@@ -102,8 +102,8 @@
         },
         {
           "path": "data/software.json",
-          "bytes": 70457,
-          "sha256": "323edf1bd11869908005a3d2d3e141c29cece63ae5e5e84a682051d8f20b7b4d"
+          "bytes": 72155,
+          "sha256": "d7b1736cd1265f58603a6801452fce0a1b6101c36abc152034b000eca97da787"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 11914,
-          "sha256": "46e9af085564a20dc8bb0dae49b73c98d059420b8dc536b0b90c01ea828eacce"
+          "sha256": "3cfc0ddf3cd4b8baa0754328ed1564c59c8fd3f2af79b9909f37df3e4634b926"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 211713,
-          "sha256": "02bf2933a7231d342d0586384f8c56f76d7ab87c33a682e33b8862d1d5f6453e"
+          "bytes": 211710,
+          "sha256": "b71d39d61261910ce426e24de80324d9302affa76c2819a0ff9325e6f728b14c"
         }
       ]
     },
@@ -9190,6 +9190,42 @@
       "updated_or_year": "2026",
       "paper_path": "papers/2026_ActiveFractalRabbit/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21330636"
+    },
+    {
+      "name": "Active_Fedference",
+      "url": "https://github.com/ActiveInferenceInstitute/Active_Fedference",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026",
+      "paper_path": "papers/2026_RobustBeliefSharing/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21864003"
+    },
+    {
+      "name": "Active_Skillference",
+      "url": "https://github.com/ActiveInferenceInstitute/Active_Skillference",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Validated prerequisite graph, computational claim registry, and SkillTree delivery contract for Active Inference · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026",
+      "paper_path": "papers/2026_ActiveSkillference/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21865643"
+    },
+    {
+      "name": "active_inference_power",
+      "url": "https://github.com/ActiveInferenceInstitute/active_inference_power",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Conditional statistical power under controlled generative settings for Active Inference · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026",
+      "paper_path": "papers/2026_ActiveInferencePower/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21695160"
     }
   ],
   "claims": [
@@ -9202,7 +9238,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-10T17:24:54+00:00",
+      "checked_at": "2026-08-13T17:52:47+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9217,7 +9253,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-10T17:24:54+00:00",
+      "checked_at": "2026-08-13T17:52:47+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9249,7 +9285,7 @@
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 38 AII repositories with docxology contributions."
+      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 41 AII repositories with docxology contributions."
     },
     {
       "id": "orcid-canonical-identifier",

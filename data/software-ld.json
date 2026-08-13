@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "105 original repositories and 38 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "105 original repositories and 41 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -2129,6 +2129,54 @@
             "dateCreated": "2026-07-13T01:15:55Z",
             "dateModified": "2026-07-13T03:59:12Z",
             "sameAs": "https://doi.org/10.5281/zenodo.21330636"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/ActiveInferenceInstitute/Active_Fedference#software",
+            "name": "Active_Fedference",
+            "description": "Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus ·  · Zenodo",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Active_Fedference",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "dateCreated": "2026-08-09T19:00:08Z",
+            "dateModified": "2026-08-10T08:45:36Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21864003"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/ActiveInferenceInstitute/Active_Skillference#software",
+            "name": "Active_Skillference",
+            "description": "Validated prerequisite graph, computational claim registry, and SkillTree delivery contract for Active Inference ·  · Zenodo",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/Active_Skillference",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
+            "dateCreated": "2026-08-09T19:27:58Z",
+            "dateModified": "2026-08-10T15:51:16Z",
+            "keywords": "active-inference, bayesian-inference, computational-provenance, curriculum, free-energy-principle, reproducible-research, skilltree, variational-inference",
+            "sameAs": "https://doi.org/10.5281/zenodo.21865643"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/ActiveInferenceInstitute/active_inference_power#software",
+            "name": "active_inference_power",
+            "description": "Conditional statistical power under controlled generative settings for Active Inference ·  · Zenodo",
+            "codeRepository": "https://github.com/ActiveInferenceInstitute/active_inference_power",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
+            "dateCreated": "2026-07-30T01:13:17Z",
+            "dateModified": "2026-07-30T05:12:17Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.21695160"
         }
     ]
 }

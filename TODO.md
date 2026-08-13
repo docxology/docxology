@@ -8,8 +8,8 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-08-07 (hostile red-team review of `code/` plus a
-  comprehensive follow-up pass; fixes are in the working tree, uncommitted)
+- Last reviewed: 2026-08-13 (thermo-nuclear review of recent intake/security/CI
+  code; deferred 2026-08-01 robustness items shipped — see CHANGELOG)
 
 ## Completed / Closed (2026-08-01)
 
@@ -104,6 +104,7 @@ Comprehensive follow-up pass:
 - Deliverable: update `data/repository-classification.json` and promote only manually reviewed repositories into `pages/SOFTWARE.md`
 - Acceptance: all uncatalogued repositories have ownership, fork/archive state, catalog role, exclusion reason, and review status
 - Dependencies: `data/github-repositories.json`
+- Remaining primary-review items (do not auto-promote): `ActiveInferenceInstitute/Active_Inference_Un0`, `docxology/GrowthModel`, `docxology/multi-time` (all `description_quality: missing`), and `docxology/math4wisdom-superhuman-docs-archive` (`substantive`, still needs a cited human decision). Forks stay `fork_not_curated`.
 
 ### DOC-006 — Refresh external evidence and coverage exceptions
 
@@ -183,24 +184,14 @@ Comprehensive follow-up pass:
 - Acceptance: `AGENT_START.md`, `AGENTS.md`, `CLAUDE.md`, `docs/README.md`, `GENERATED.md`, and the release checklist point to the same ordered commands
 - Dependencies: generated manifest and CI workflows
 
-## Deferred (2026-08-01 review — explicitly not implemented; larger/or lower-value)
+## Deferred leftovers
 
-These remain open. Each is a concrete, actionable scope item from the review.
+The 2026-08-01 review deferrals (domain-inference centralization, catalog test
+pins, link-check/prune/feed, `export_agent_data` import-time IO) shipped on
+2026-08-13. Stored paper domains were **not** rewritten: text-only re-inference
+would reclassify 110 of 191 `metadata.json` files; bibliography remains the
+catalog authority.
 
-- **Domain-inference centralization (Medium/arch):** `infer_domain` is duplicated
-  (with drift) across `add_zenodo_only`, `batch_enrich_metadata`,
-  `regenerate_docs`, `improve_metadata_quality`. Centralize into `code/src`
-  (e.g. a shared `domain_inference.py`) and have all four delegate, preserving
-  current emoji output. Deferred: a cross-cutting refactor that risks subtle
-  metadata drift; best done as deliberate scoped work with the generated
-  metadata regenerated and diffed.
-- **Test brittleness (Minor):** `test_paper_pages.py` (single pinned paper) and
-  `test_software_table.py` / `test_sync_*` (exact-record pins) still couple the
-  suite to current catalog contents. Prefer invariant/structure assertions.
-- **Misc minor sweep (Minor):** `check_external_links.py` (`checked_urls - ok`
-  miscalc, tab-in-URL parsing) and `prune_old_reports.py` (git grep misses
-  untracked references); `generate_feed.py` retains three hardcoded
-  2026-05 "site-update" feed items (presentational).
-- **`export_agent_data.py` import-time IO (Medium):** module-level reads of
-  `current-counts.json` / the latest snapshot remain at import. Acceptable for a
-  CLI exporter; a fully-lazy refactor was not applied.
+No further deferred code items from that review remain open. Intake still
+blocked on DOC-004 (paired-publication `needs_review`) and the four DOC-005
+primary deferrals above.

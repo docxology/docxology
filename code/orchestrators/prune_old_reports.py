@@ -51,6 +51,44 @@ def _dated_subdirs(parent: Path) -> list[Path]:
                   key=lambda p: p.name)
 
 
+_WORKING_TREE_SUFFIXES = {".html", ".json", ".md", ".xml"}
+_WORKING_TREE_SKIP_DIRS = {"reports", "code", ".git", "__pycache__"}
+_WORKING_TREE_SKIP_FILES = {
+    "data/pages-artifact-manifest.json",
+    "data/generated-manifest.json",
+}
+
+
+def _working_tree_references(repo_root: Path, rel_prefix: str) -> bool:
+    """True if a working-tree content file mentions ``rel_prefix``.
+
+    Catches untracked files that ``git grep`` would miss. Skips reports/, code/,
+    and the generated inventory manifests — those enumerate paths without
+    serving them as live links.
+    """
+    root = repo_root.resolve()
+    for path in root.rglob("*"):
+        if not path.is_file():
+            continue
+        try:
+            rel = path.relative_to(root)
+        except ValueError:
+            continue
+        if any(part in _WORKING_TREE_SKIP_DIRS for part in rel.parts):
+            continue
+        if rel.as_posix() in _WORKING_TREE_SKIP_FILES:
+            continue
+        if path.suffix.lower() not in _WORKING_TREE_SUFFIXES:
+            continue
+        try:
+            text = path.read_text(encoding="utf-8", errors="ignore")
+        except OSError:
+            continue
+        if rel_prefix in text:
+            return True
+    return False
+
+
 def _referenced_externally(rel_prefix: str) -> bool:
     """True if a published content/data file references this dated subdir.
 
@@ -62,6 +100,9 @@ def _referenced_externally(rel_prefix: str) -> bool:
     every tracked file by path but do not *link* to them — treating that inventory as a
     reference would pin every dated set forever and neuter this tool. We only care about
     orphaning genuine links in served content (HTML pages, llms.txt, feeds, sitemaps).
+
+    After git grep, also scan the working tree so untracked files that mention the
+    dated subdir still block prune.
     """
     try:
         out = subprocess.run(
@@ -71,9 +112,11 @@ def _referenced_externally(rel_prefix: str) -> bool:
              ":(exclude)data/generated-manifest.json"],
             cwd=REPO_ROOT, capture_output=True, text=True,
         )
+        if out.stdout.strip():
+            return True
     except FileNotFoundError:
-        return False  # git unavailable: fall back to the self-contained guarantee
-    return bool(out.stdout.strip())
+        pass  # git unavailable: still honor working-tree references
+    return _working_tree_references(REPO_ROOT, rel_prefix)
 
 
 def main() -> int:

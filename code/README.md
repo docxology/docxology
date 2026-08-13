@@ -17,6 +17,7 @@ helpers, and write the generated artifacts checked into the repo root.
 | --- | --- |
 | `biblio_table.py` | Shared iteration over the 8-column unified bibliography table in `pages/BIBLIOGRAPHY.md` |
 | `count_consistency.py` | Cross-checks volatile counts across agent-facing surfaces |
+| `domain_inference.py` | Canonical whole-word domain inference shared by pairing, Zenodo-only add, metadata enrich, and doc regen |
 | `paper_metadata_schema.py` | Dataclass schema for paper `metadata.json` validation |
 | `public_integrity.py` | Privacy and URL-safety checks for public source and generated manifests |
 | `publication_pairing.py` | Pairs public GitHub releases with Zenodo records |

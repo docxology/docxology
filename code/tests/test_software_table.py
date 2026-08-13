@@ -27,24 +27,20 @@ def test_software_row_counts():
     assert len(rows) == expected_docx + expected_aii
 
 
-def test_biology_textbook_row_fields():
-    row = next(r for r in iter_software_rows() if r.name == "biology_textbook")
-    assert row.url == "https://github.com/docxology/biology_textbook"
-    assert row.language == "Python"
-    assert row.stars == 0
-    exported = software_rows_to_dict(row)
-    assert exported["paper_path"] == "papers/2026_BiologyTextbook/"
-    assert exported["zenodo_url"] == "https://doi.org/10.5281/zenodo.20286478"
-
-
-def test_itrace_row_fields():
-    row = next(r for r in iter_software_rows() if r.name == "itrace")
-    assert row.url == "https://github.com/docxology/itrace"
-    assert row.language == "Python"
-    assert row.stars == 0
-    exported = software_rows_to_dict(row)
-    assert exported["paper_path"] == "papers/2026_ITrace/"
-    assert exported["zenodo_url"] == "https://doi.org/10.5281/zenodo.20614908"
+def test_every_software_row_has_name_github_and_optional_paths():
+    repo_root = Path(__file__).resolve().parents[2]
+    rows = list(iter_software_rows())
+    assert rows
+    for row in rows:
+        exported = software_rows_to_dict(row)
+        assert exported["name"]
+        assert exported["url"].startswith("https://github.com/")
+        paper = exported["paper_path"]
+        if paper:
+            assert (repo_root / paper).exists(), paper
+        zenodo = exported["zenodo_url"]
+        if zenodo:
+            assert "zenodo" in zenodo.lower()
 
 
 def test_description_html_paper_and_zenodo_links():

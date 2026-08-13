@@ -24,6 +24,45 @@ def load_works() -> list[dict]:
         return json.load(f)["works"]
 
 
+def load_site_updates() -> list[dict]:
+    """Load stable site-update items from data/site-updates.json.
+
+    Missing or unreadable JSON is a no-op so the works feed still generates.
+    """
+    path = REPO_ROOT / "data" / "site-updates.json"
+    if not path.exists():
+        return []
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+    if not isinstance(payload, list):
+        return []
+    return [row for row in payload if isinstance(row, dict)]
+
+
+def _parse_pub_date(value: object, fallback: datetime) -> datetime:
+    text = str(value or "").strip()
+    if not text:
+        return fallback
+    try:
+        parsed = parsedate_to_datetime(text)
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        return parsed
+    except (TypeError, ValueError, IndexError):
+        pass
+    try:
+        if len(text) == 10 and text[4] == "-" and text[7] == "-":
+            return datetime(int(text[:4]), int(text[5:7]), int(text[8:10]), tzinfo=timezone.utc)
+        dt = datetime.fromisoformat(text.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt
+    except (TypeError, ValueError):
+        return fallback
+
+
 def existing_build_date() -> datetime | None:
     if not OUT.exists():
         return None
@@ -63,29 +102,23 @@ def render(build_date: datetime | None = None) -> str:
         key=lambda w: (_year_key(w.get("year")), int(w.get("num", 0) or 0)),
         reverse=True,
     )
-    entries = [
-        item(
-            "Repository inventory and evidence layer refreshed",
-            "https://danielarifriedman.com/repositories.html",
-            "site-update-2026-05-15-repositories",
-            "Full generated GitHub repository inventory, refreshed evidence ledger, and stable freshness fact comparison added.",
-            build_date,
-        ),
-        item(
-            "Discovery, citation, evidence, and domain pages expanded",
-            "https://danielarifriedman.com/discovery.html",
-            "site-update-2026-05-13-discovery",
-            "New machine-readable exports, evidence ledger, domain pages, and agentic discovery metadata.",
-            build_date,
-        ),
-        item(
-            "Per-work landing pages and search index generated",
-            "https://danielarifriedman.com/works/",
-            "site-update-2026-05-13-works",
-            "Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.",
-            build_date,
-        ),
-    ]
+    entries = []
+    for update in load_site_updates():
+        title = update.get("title")
+        link = update.get("link")
+        guid = update.get("guid")
+        description = update.get("description")
+        if not title or not link or not guid or description is None:
+            continue
+        entries.append(
+            item(
+                title,
+                link,
+                guid,
+                description,
+                _parse_pub_date(update.get("pub_date"), build_date),
+            )
+        )
     for work in works[:25]:
         # Use actual publication year as the pubDate (Jan 1 of that year)
         try:

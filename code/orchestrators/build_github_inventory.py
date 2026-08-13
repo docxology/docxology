@@ -23,6 +23,8 @@ FORKS_HTML_OUT = REPO_ROOT / "repositories-forks.html"
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from site_nav import BREADCRUMB_CSS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
+REPO_INVENTORY_SCRIPT = '<script src="/js/repo-inventory.js?v=20260813" defer></script>'
+
 _PRIMARY_BREADCRUMB = [("Home", ""), ("Repositories", "repositories.html")]
 _FORKS_BREADCRUMB = [("Home", ""), ("Repositories", "repositories.html"), ("Forks", "repositories-forks.html")]
 
@@ -450,46 +452,7 @@ def render_html(payload: dict[str, Any], *, forks: bool = False) -> str:
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="data/github-repositories.json">github-repositories.json</a></p>
     </footer>
-    <script>
-        const rows = Array.from(document.querySelectorAll('#inventoryRows tr'));
-        const input = document.getElementById('inventorySearch');
-        const languageFilter = document.getElementById('inventoryLanguage');
-        const count = document.getElementById('inventoryResultCount');
-        let filter = 'all';
-        function matchesFilter(row) {{
-            if (filter === 'docxology') return row.dataset.owner === 'docxology';
-            if (filter === 'aii') return row.dataset.owner === 'ActiveInferenceInstitute';
-            if (filter === 'curated') return row.dataset.curated === 'true';
-            if (filter === 'uncataloged') return row.dataset.curated === 'false';
-            if (filter === 'archived') return row.dataset.archived === 'true';
-            if (filter === 'public' || filter === 'private') return row.dataset.visibility === filter;
-            if (filter === 'recent') return row.dataset.recent === 'true';
-            return true;
-        }}
-        function applyFilters() {{
-            const q = input.value.trim().toLowerCase();
-            const lang = languageFilter.value.toLowerCase();
-            let visible = 0;
-            rows.forEach(row => {{
-                const matchesLanguage = !lang || row.dataset.language === lang;
-                const ok = matchesFilter(row) && matchesLanguage && (!q || row.dataset.search.includes(q));
-                row.style.display = ok ? '' : 'none';
-                if (ok) visible += 1;
-            }});
-            count.textContent = `${{visible}} repositories shown`;
-        }}
-        document.querySelectorAll('.filter-chip').forEach(button => {{
-            button.addEventListener('click', () => {{
-                document.querySelectorAll('.filter-chip').forEach(item => item.classList.remove('active'));
-                button.classList.add('active');
-                filter = button.dataset.filter;
-                applyFilters();
-            }});
-        }});
-        input.addEventListener('input', applyFilters);
-        languageFilter.addEventListener('change', applyFilters);
-        applyFilters();
-    </script>
+{REPO_INVENTORY_SCRIPT}
 {INTERACTIVE_SCRIPTS}
 {MENU_ESC_SCRIPT}</body>
 </html>
@@ -543,6 +506,10 @@ def check_outputs() -> None:
         raise SystemExit("repositories.html missing fork archive count")
     if f"<strong>{all_counts.get('primary_total')}</strong>" not in forks_html:
         raise SystemExit("repositories-forks.html missing primary inventory count")
+    if "js/repo-inventory.js" not in html_text or "js/repo-inventory.js" not in forks_html:
+        raise SystemExit("inventory HTML missing external repo-inventory.js (CSP)")
+    if "<script>\n        const rows = Array.from" in html_text or "<script>\n        const rows = Array.from" in forks_html:
+        raise SystemExit("inventory HTML still embeds inline filter script (blocked by CSP)")
     print("checked GitHub repository inventory")
 
 

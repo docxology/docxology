@@ -28,6 +28,7 @@ PAPERS_DIR = REPO_ROOT / "papers"
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 from biblio_table import iter_bibliography_rows  # noqa: E402
+from domain_inference import DOMAIN_TO_EMOJI, canonical_domain_name, infer_domain_name  # noqa: E402
 
 logging.basicConfig(
     level=logging.INFO,
@@ -145,49 +146,12 @@ def markdown_link(label: str, url: str) -> str:
 
 def resolve_domain(folder: str, meta: dict, bib_entry: dict | None = None) -> str:
     """Resolve the domain name from metadata, bibliography, or inference."""
-    emoji_to_name = {
-        '💻': 'Computational',
-        '🧠': 'Active Inference',
-        '🛡️': 'Cognitive Security',
-        '🐜': 'Entomology',
-        '🎨': 'Art & Synergetics',
-        '🧬': 'Genetics & Biomedical',
-        '🌍': 'AII Ecosystem',
-        '🎥': 'Presentations & Media',
-    }
-    # Priority 1: explicit domain in metadata.json (may be emoji or name)
-    if meta.get('domain'):
-        d = meta['domain']
-        if d in emoji_to_name:
-            return emoji_to_name[d]
-        return d
-    # Priority 2: bib_entry domain (emoji form)
-    if bib_entry and bib_entry.get('domain'):
-        domain_cell = bib_entry['domain']
-        if domain_cell in emoji_to_name:
-            return emoji_to_name[domain_cell]
-    # Priority 3: infer from content
-    return infer_domain(folder, meta)
+    return infer_domain_name(folder=folder, meta=meta, bib_entry=bib_entry)
 
 
 def infer_domain(folder: str, meta: dict) -> str:
     """Infer research domain from folder name, tags, and keywords."""
-    _, topic = parse_folder_id(folder)
-    tags = meta.get('tags', [])
-    keywords = meta.get('keywords', [])
-    all_text = ' '.join([topic.lower()] + [t.lower() for t in tags] + [k.lower() for k in keywords])
-
-    if any(x in all_text for x in ['ant', 'insect', 'bee', 'entomol', 'myrmec', 'colony', 'foraging']):
-        return 'Entomology'
-    if any(x in all_text for x in ['active inference', 'free energy', 'bayesian', 'variational', 'markov blanket']):
-        return 'Active Inference'
-    if any(x in all_text for x in ['cognitive security', 'cogsec', 'narrative', 'integrity']):
-        return 'Cognitive Security'
-    if any(x in all_text for x in ['art', 'blake', 'synergetics', 'music', 'imaginarium']):
-        return 'Art'
-    if any(x in all_text for x in ['genetic', 'genom', 'transcriptom', 'dna', 'pcr']):
-        return 'Genetics & Biomedical'
-    return 'Research'
+    return infer_domain_name(folder=folder, meta=meta)
 
 
 def extract_methods_from_metadata(meta: dict) -> list[str]:
@@ -203,7 +167,7 @@ def extract_methods_from_metadata(meta: dict) -> list[str]:
         'Entomology': ['Field observation', 'Population genetics analysis', 'Behavioral assays'],
         'Active Inference': ['Free energy minimization', 'Generative modeling', 'Bayesian inference'],
         'Cognitive Security': ['Narrative analysis', 'Misinformation detection', 'Trust frameworks'],
-        'Art': ['Visual analysis', 'Historical interpretation', 'Conceptual synthesis'],
+        'Art & Synergetics': ['Visual analysis', 'Historical interpretation', 'Conceptual synthesis'],
         'Genetics & Biomedical': ['Genomic sequencing', 'Phylogenetic analysis', 'Statistical genetics'],
     }
     return base_methods.get(domain, ['Literature review', 'Theoretical analysis'])
@@ -247,12 +211,7 @@ def generate_readme(folder: str, meta: dict, bib_entry: dict | None = None) -> s
     methods = extract_methods_from_metadata(meta)
     findings = extract_findings_from_metadata(meta)
 
-    # Domain emoji
-    emoji_map = {'Entomology': '🐜', 'Active Inference': '🧠', 'Cognitive Security': '🛡️',
-                 'Art': '🎨', 'Genetics & Biomedical': '🧬', 'Research': '📄', 'Computational': '💻'}
-    # Normalize domain name for emoji lookup
-    domain_key = domain if domain in emoji_map else 'Research'
-    emoji = emoji_map.get(domain_key, '📄')
+    emoji = DOMAIN_TO_EMOJI.get(domain, '📄')
 
     kw_str = ' · '.join(f'`{k}`' for k in keywords[:12]) if keywords else f'`{topic}`'
 
@@ -445,17 +404,7 @@ def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None
             if key in folder_meta:
                 meta[key] = folder_meta[key]
         if 'domain' in folder_meta:
-            # Convert emoji to name if needed
-            emoji_to_name = {
-                '💻': 'Computational',
-                '🧠': 'Active Inference',
-                '🛡️': 'Cognitive Security',
-                '🐜': 'Entomology',
-                '🎨': 'Art & Synergetics',
-                '🧬': 'Genetics & Biomedical',
-            }
-            d = folder_meta['domain']
-            domain = emoji_to_name.get(d, d)
+            domain = canonical_domain_name(str(folder_meta['domain']))
 
     methods = extract_methods_from_metadata(meta)
     findings = extract_findings_from_metadata(meta)

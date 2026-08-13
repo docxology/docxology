@@ -22,3 +22,7 @@ def test_integrity_tail_resolves_generated_manifest_before_agent_index():
     assert names.index("build_pages_artifact.py") < generated_manifest_indices[0] < names.index("build_agent_index.py")
     assert names.index("build_agent_index.py") < names.index("build_release_integrity.py") < generated_manifest_indices[1]
     assert names[-1] == "build_generated_manifest.py"
+    site_facts_indices = [i for i, name in enumerate(names) if name == "sync_site_facts.py"]
+    accessibility_indices = [i for i, name in enumerate(names) if name == "accessibility_audit.py"]
+    assert len(site_facts_indices) >= 2
+    assert site_facts_indices[-1] > accessibility_indices[-1]

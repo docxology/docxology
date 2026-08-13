@@ -95,14 +95,6 @@ function buildSearchIndex(pub, enrichment) {
         .toLowerCase();
 }
 
-function esc(value) {
-    return String(value == null ? '' : value)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-}
-
 function typeClass(t) {
     const m = {
         Paper: 'type-paper',

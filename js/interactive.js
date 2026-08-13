@@ -156,7 +156,7 @@
     document.addEventListener('keydown', (e) => {
       // Don't fire when typing in input
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
-      if (e.key === '?' && !e.shiftKey) {
+      if (e.key === '?' || (e.key === '/' && e.shiftKey)) {
         e.preventDefault();
         if (overlay.getAttribute('aria-hidden') === 'true') {
           show();
@@ -794,17 +794,16 @@
     });
   }
 
-  // ═══════════════════════════════════════════════
-  // UTILITY
-  // ═══════════════════════════════════════════════
-
-  function esc(value) {
-    return String(value ?? '')
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
-  }
+  const esc = (typeof window.esc === 'function')
+    ? window.esc
+    : function (value) {
+        return String(value ?? '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      };
 
   // ═══════════════════════════════════════════════
   // INIT

@@ -23,8 +23,8 @@
     "total": 244,
     "docxology": 201,
     "ActiveInferenceInstitute": 43,
-    "curated": 140,
-    "uncataloged": 104,
+    "curated": 143,
+    "uncataloged": 101,
     "forks": 87,
     "archived": 0,
     "public": 244,
@@ -116,7 +116,7 @@
       "created_at": "2026-08-09T19:00:08Z",
       "updated_at": "2026-08-10T08:46:40Z",
       "pushed_at": "2026-08-10T08:45:36Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -202,7 +202,7 @@
       "created_at": "2026-07-30T01:13:17Z",
       "updated_at": "2026-07-30T05:12:36Z",
       "pushed_at": "2026-07-30T05:12:17Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {
@@ -265,7 +265,7 @@
       "created_at": "2026-08-09T19:27:58Z",
       "updated_at": "2026-08-10T15:53:49Z",
       "pushed_at": "2026-08-10T15:51:16Z",
-      "curated": false,
+      "curated": true,
       "recently_updated": true
     },
     {

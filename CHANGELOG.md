@@ -2,6 +2,14 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-08-13
+
+- **DOC-005:** promoted three paper-paired Active Inference Institute repositories into `pages/SOFTWARE.md` after they gained descriptions: `Active_Fedference` (paper `2026_RobustBeliefSharing`), `Active_Skillference` (paper `2026_ActiveSkillference`), and `active_inference_power` (paper `2026_ActiveInferencePower`). AII catalogued 38→**41**; curated software total 143→**146**. Left as explicit deferrals (description-less or not auto-promoted): `Active_Inference_Un0`, `docxology/GrowthModel`, `docxology/multi-time`, and `docxology/math4wisdom-superhuman-docs-archive`. Forks were not auto-promoted.
+- **Domain inference centralized** into `code/src/domain_inference.py` (whole-word matching; computational before entomology). `add_zenodo_only.py`, `batch_enrich_metadata.py`, `regenerate_docs.py`, and `publication_pairing.py` now delegate. A metadata/bibliography diff showed text-only re-inference would reclassify 110 stored domains; **no `papers/*/metadata.json` or `pages/BIBLIOGRAPHY.md` rewrites were accepted**.
+- **Review/CI/CSP:** repository inventory pages load `/js/repo-inventory.js` instead of inline filter JS (CSP `script-src 'self'`); `--check-manifest` no longer requires an unwritten today's growth report; Pages deploy no longer cancels in-progress jobs; `live-verify.yml` and `indexnow-on-push.yml` run after a successful Pages deploy; Action bumps `checkout@v7`, `setup-python@v7`, `configure-pages@v6`, `deploy-pages@v5`.
+- **Robustness backlog:** shared `esc()` from `js/search-utils.js`; TTS panel `aria-hidden` tracks open state; `?` keyboard shortcut works; `check_external_links.py` URL accounting and tab stripping; `prune_old_reports.py` scans the working tree; feed site-updates moved to `data/site-updates.json`; `export_agent_data.py` import is IO-free; brittle catalog pins replaced with structure/count assertions; `add_zenodo_only.render_citation` YAML-quotes version and names; `regenerate_all.py` re-runs `sync_site_facts.py` after the second accessibility audit.
+- Live-site snapshot refreshed: 12/17 markers passing with deployment pending until this commit is on Pages.
+
 ## 2026-08-10
 
 - **Two new Zenodo software publications catalogued** with full paper-folder documentation (README/AGENTS/SKILL/CITATION.cff/metadata.json + PDF) and regenerated bibliography, exports, work pages, domain pages, catalog, feed, sitemap, resume, accessibility, and Pages-manifest surfaces (works 206→**208**):

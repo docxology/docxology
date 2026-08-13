@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T17:24:54Z",
+  "generated_at": "2026-08-13T17:52:48Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
@@ -11,7 +11,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-10T17:24:54+00:00",
+      "checked_at": "2026-08-13T17:52:47+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -26,7 +26,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-10T17:24:54+00:00",
+      "checked_at": "2026-08-13T17:52:47+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -58,7 +58,7 @@
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 38 AII repositories with docxology contributions."
+      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 41 AII repositories with docxology contributions."
     },
     {
       "id": "orcid-canonical-identifier",

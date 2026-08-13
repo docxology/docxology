@@ -75,7 +75,7 @@ IGNORE_PREFIXES = (
 
 
 def clean_url(url: str) -> str:
-    return url.rstrip(".,;`\\")
+    return url.rstrip(".,;`\\\t\n\r")
 
 
 def collect_urls() -> dict[str, list[str]]:
@@ -192,6 +192,7 @@ def build_report(timeout: int, workers: int, limit: int | None) -> dict:
         "note": "Network freshness report. HTTP 403/429 may indicate bot protection or rate limiting, not necessarily broken content.",
         "total_unique_urls": len(sources),
         "checked_urls": len(results),
+        "unchecked_urls": len(sources) - len(results),
         "ok": sum(1 for row in results if row["ok"]),
         "warnings": sum(1 for row in results if not row["ok"]),
         "results": results,

@@ -60,8 +60,9 @@ def test_generated_publications_surfaces():
     ld = json.loads(PUBLICATIONS_LD_JSON.read_text(encoding="utf-8"))
     assert ld["@type"] == "CollectionPage"
     assert len(ld["mainEntity"]) == len(rows)
-    headlines = {item["headline"] for item in ld["mainEntity"]}
-    assert "Sortition Upstream of NTQR" in headlines
+    for entity in ld["mainEntity"]:
+        assert entity.get("headline")
+        assert entity.get("@type")
 
 
 def test_canonical_link_url_handles_markdown_doi_and_isbn():

@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-08-10T17:24:54Z
+Generated: 2026-08-13T17:52:48Z
 
-Current public metrics: 208 curated works; 143 catalogued software repositories (105 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 201 docxology + 43 AII public repositories (157 primary, 87 forks).
+Current public metrics: 208 curated works; 146 catalogued software repositories (105 owned + 41 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 201 docxology + 43 AII public repositories (157 primary, 87 forks).
 
 SUMMARY
 -------
@@ -345,7 +345,7 @@ WORKS AND PUBLICATIONS (208)
 [210] 2026 | Paper | Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus | Zenodo | 10.5281/zenodo.21864003
 [211] 2026 | Paper | Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract | Zenodo | 10.5281/zenodo.21865643
 
-SOFTWARE (63)
+SOFTWARE (66)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/
@@ -410,6 +410,9 @@ ActiveInferenceInstitute/policy_entanglement | Python | https://github.com/Activ
 ActiveInferenceInstitute/COGANT | Python | https://github.com/ActiveInferenceInstitute/COGANT | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · · Zenodo · Zenodo | paper: papers/2026_COGANT/ | zenodo: https://doi.org/10.5281/zenodo.20705351
 ActiveInferenceInstitute/on_policy_distillation | Python | https://github.com/ActiveInferenceInstitute/on_policy_distillation | On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · · Zenodo · Zenodo | paper: papers/2026_PolicyDistillationAs/ | zenodo: https://doi.org/10.5281/zenodo.20749817
 ActiveInferenceInstitute/active_fractal_rabbit | Python | https://github.com/ActiveInferenceInstitute/active_fractal_rabbit | Active Inference for FractalRabbit · Zenodo | paper: papers/2026_ActiveFractalRabbit/ | zenodo: https://doi.org/10.5281/zenodo.21330636
+ActiveInferenceInstitute/Active_Fedference | Python | https://github.com/ActiveInferenceInstitute/Active_Fedference | Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus · · Zenodo | paper: papers/2026_RobustBeliefSharing/ | zenodo: https://doi.org/10.5281/zenodo.21864003
+ActiveInferenceInstitute/Active_Skillference | Python | https://github.com/ActiveInferenceInstitute/Active_Skillference | Validated prerequisite graph, computational claim registry, and SkillTree delivery contract for Active Inference · · Zenodo | paper: papers/2026_ActiveSkillference/ | zenodo: https://doi.org/10.5281/zenodo.21865643
+ActiveInferenceInstitute/active_inference_power | Python | https://github.com/ActiveInferenceInstitute/active_inference_power | Conditional statistical power under controlled generative settings for Active Inference · · Zenodo | paper: papers/2026_ActiveInferencePower/ | zenodo: https://doi.org/10.5281/zenodo.21695160
 
 CONFERENCES, POSTERS, SEMINARS, WORKSHOPS
 -----------------------------------------

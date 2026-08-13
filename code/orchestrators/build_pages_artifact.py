@@ -118,16 +118,19 @@ def _source_commit() -> str:
     return result.stdout.strip() if result.returncode == 0 else "unknown"
 
 
-def _manifest_payload(existing: dict | None = None) -> dict:
+def _manifest_payload(existing: dict | None = None, *, include_pending_growth: bool = True) -> dict:
     manifest_rel = ARTIFACT_MANIFEST.relative_to(REPO_ROOT)
     relative_paths = _relative_paths()
     included = [path for path in relative_paths if path != manifest_rel and not is_control_path(path)]
-    # The current report is written immediately after this payload is built.
-    # Include its expected path even on the first run, when it is not tracked
-    # or present yet, so a UTC date rollover cannot make the manifest stale.
+    # Write path: include today's growth report even before it exists so the
+    # first UTC-day run cannot make the manifest stale of itself.
+    # Check path: only require that path when the file is actually on disk,
+    # otherwise later-day CI `--check-manifest` would fail against a committed
+    # manifest that still lists the previous day's report.
     growth_rel = GROWTH_REPORT.relative_to(REPO_ROOT)
     expected_control_paths = set(relative_paths)
-    expected_control_paths.add(growth_rel)
+    if include_pending_growth:
+        expected_control_paths.add(growth_rel)
     controls = sorted(
         (path for path in expected_control_paths if path != manifest_rel and is_control_path(path)),
         key=lambda path: path.as_posix(),
@@ -239,7 +242,7 @@ def check_manifest() -> None:
     if not ARTIFACT_MANIFEST.exists():
         raise SystemExit(f"Missing Pages artifact manifest: {ARTIFACT_MANIFEST.relative_to(REPO_ROOT)}")
     existing = json.loads(ARTIFACT_MANIFEST.read_text(encoding="utf-8"))
-    expected = _manifest_payload(existing)
+    expected = _manifest_payload(existing, include_pending_growth=GROWTH_REPORT.exists())
     for key in ("schema_version", "canonical_origin", "github_fallback", "policy", "budget", "included_files", "control_files", "omitted_paper_images"):
         if existing.get(key) != expected.get(key):
             raise SystemExit(f"stale Pages artifact manifest: {ARTIFACT_MANIFEST.relative_to(REPO_ROOT)} ({key})")

@@ -53,7 +53,19 @@ def test_manifest_lists_todays_growth_report_before_it_exists(monkeypatch):
     assert not unwritten.exists()
     monkeypatch.setattr(bpa, "GROWTH_REPORT", unwritten)
 
-    payload = bpa._manifest_payload()
+    payload = bpa._manifest_payload(include_pending_growth=True)
 
     listed = {entry["path"] for entry in payload["control_files"]}
     assert "reports/pages_artifact_growth_1970-01-01.json" in listed
+
+
+def test_check_manifest_payload_omits_unwritten_today_report(monkeypatch):
+    """`--check-manifest` on a later UTC day must not require today's missing report."""
+    unwritten = bpa.REPO_ROOT / "reports" / "pages_artifact_growth_1970-01-02.json"
+    assert not unwritten.exists()
+    monkeypatch.setattr(bpa, "GROWTH_REPORT", unwritten)
+
+    payload = bpa._manifest_payload(include_pending_growth=False)
+
+    listed = {entry["path"] for entry in payload["control_files"]}
+    assert "reports/pages_artifact_growth_1970-01-02.json" not in listed

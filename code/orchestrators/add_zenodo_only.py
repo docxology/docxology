@@ -30,6 +30,7 @@ SRC = REPO_ROOT / "code" / "src"
 sys.path.insert(0, str(SRC))
 sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
+from domain_inference import infer_domain_emoji_zenodo as infer_domain  # noqa: E402
 from publication_pairing import slug_topic, yaml_double_quoted, zenodo_record_url_from_doi  # noqa: E402
 from sync_paired_publications import refresh_bibliography_counts  # noqa: E402
 
@@ -76,30 +77,6 @@ def infer_type(rtype: str, subtype: str, title: str) -> str:
     if "lesson" in blob or "course" in blob:
         return "Course"
     return "Paper"
-
-
-def _contains_term(text: str, term: str) -> bool:
-    """Whole-word/whole-phrase match so e.g. "ant" does not hit "dominant" and "art" does not hit "smart"."""
-    return re.search(rf"\b{re.escape(term)}\b", text) is not None
-
-
-def infer_domain(text: str) -> str:
-    t = text.lower()
-    if any(_contains_term(t, w) for w in ["ant", "bee", "insect", "ento", "foraging", "olfact", "semiochem"]):
-        return "🐜"
-    if any(_contains_term(t, w) for w in ["cognitive security", "cogsec", "narrative", "sensemaking", "rhetoric", "trust", "integrity", "memetic"]):
-        return "🛡️"
-    if any(_contains_term(t, w) for w in ["blake", "synergetics", "fuller", "quadray", "art"]):
-        return "🎨"
-    if any(_contains_term(t, w) for w in ["genetic", "genomic", "transcriptomic", "biomedical", "hippocampus", "cortex", "neuro"]):
-        return "🧬"
-    if any(_contains_term(t, w) for w in ["active inference", "free energy", "bayesian", "markov", "friston", "allostasis", "interoception"]):
-        return "🧠"
-    if any(_contains_term(t, w) for w in ["software", "code", "pipeline", "reproducible", "computational", "benchmark", "harness", "agent"]):
-        return "💻"
-    if "active inference institute" in t or _contains_term(t, "ecosystem"):
-        return "🌍"
-    return "🧠"
 
 
 def unique_folder(base: str) -> str:
@@ -250,16 +227,26 @@ def render_citation(rec: dict, meta: dict) -> str:
     title = meta.get("title", "")
     year = (meta.get("publication_date") or "")[:4] or "n.d."
     doi = canonical_doi(rec, meta)
-    version = f'\nversion: "{meta.get("version")}"' if meta.get("version") else ""
+    ver = meta.get("version")
+    version = f'\nversion: "{yaml_double_quoted(str(ver))}"' if ver else ""
     authors = []
     for c in meta.get("creators", []):
         nm = c.get("name", "")
         fam, _, given = nm.partition(",")
         if given.strip():
-            line = f"  - family-names: {fam.strip()}\n    given-names: {given.strip()}"
+            line = (
+                f'  - family-names: "{yaml_double_quoted(fam.strip())}"\n'
+                f'    given-names: "{yaml_double_quoted(given.strip())}"'
+            )
         else:
             parts = nm.split()
-            line = f"  - family-names: {parts[-1]}\n    given-names: {' '.join(parts[:-1])}" if len(parts) > 1 else f"  - name: {nm}"
+            if len(parts) > 1:
+                line = (
+                    f'  - family-names: "{yaml_double_quoted(parts[-1])}"\n'
+                    f'    given-names: "{yaml_double_quoted(" ".join(parts[:-1]))}"'
+                )
+            else:
+                line = f'  - name: "{yaml_double_quoted(nm)}"'
         if c.get("orcid"):
             line += f'\n    orcid: "https://orcid.org/{c["orcid"]}"'
         authors.append(line)

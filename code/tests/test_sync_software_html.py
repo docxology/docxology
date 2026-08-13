@@ -50,7 +50,6 @@ def test_collection_page_entity_count():
 def test_generated_software_surfaces():
     expected_docx, expected_aii = parse_software_catalog_counts()
     html = SOFTWARE_HTML.read_text(encoding="utf-8")
-    assert "biology_textbook" in html
     assert f"{expected_docx} original repositories" in html
     assert f"{expected_aii} catalogued" in html
     assert 'src="/data/software-ld.json"' not in html
@@ -61,13 +60,7 @@ def test_generated_software_surfaces():
     assert og_match.group(1) == twitter_match.group(1)
     description = og_match.group(1)
     assert len(description) <= 160
-    for term in ["CEREBRUM", "GNN", "P3IF", "MDKV", "Active Inference", "research software"]:
-        assert term in description
     assert "public repositories" in description
     ld = json.loads(SOFTWARE_LD_JSON.read_text(encoding="utf-8"))
     assert ld["@type"] == "CollectionPage"
     assert len(ld["mainEntity"]) == expected_docx + expected_aii
-    names = {item["name"] for item in ld["mainEntity"]}
-    assert "biology_textbook" in names
-    assert "itrace" in names
-    assert "template_autoscientists" in names

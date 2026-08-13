@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
 
-*105 original repositories · 38 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+*105 original repositories · 41 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
 
 *Available for [research consulting & collaboration](../README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -192,6 +192,9 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [ISSS](https://github.com/ActiveInferenceInstitute/ISSS) | International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science | Python | 0 | 2024 |
 | [topp](https://github.com/ActiveInferenceInstitute/topp) | The Open Problems Project — curated registry of open scientific problems in Active Inference and the free energy principle | TeX | 0 | 2024 |
 | [active_fractal_rabbit](https://github.com/ActiveInferenceInstitute/active_fractal_rabbit) | Active Inference for FractalRabbit · [Zenodo](https://doi.org/10.5281/zenodo.21330636) · [📄](../papers/2026_ActiveFractalRabbit/) | Python | 0 | 2026 |
+| [Active_Fedference](https://github.com/ActiveInferenceInstitute/Active_Fedference) | Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus · [📄](../papers/2026_RobustBeliefSharing/) · [Zenodo](https://doi.org/10.5281/zenodo.21864003) | Python | 0 | 2026 |
+| [Active_Skillference](https://github.com/ActiveInferenceInstitute/Active_Skillference) | Validated prerequisite graph, computational claim registry, and SkillTree delivery contract for Active Inference · [📄](../papers/2026_ActiveSkillference/) · [Zenodo](https://doi.org/10.5281/zenodo.21865643) | Python | 0 | 2026 |
+| [active_inference_power](https://github.com/ActiveInferenceInstitute/active_inference_power) | Conditional statistical power under controlled generative settings for Active Inference · [📄](../papers/2026_ActiveInferencePower/) · [Zenodo](https://doi.org/10.5281/zenodo.21695160) | Python | 0 | 2026 |
 
 ---
 
@@ -209,8 +212,8 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Other | 5 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP` |
 | Research Practice | 6 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register` |
 | **docxology subtotal** | **105** | |
-| AII Contributions (non-fork) | 38 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **143** | |
+| AII Contributions (non-fork) | 41 | Catalogued repositories with docxology contributions |
+| **Grand Total** | **146** | |
 
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; the AII GitHub account is a **User** account, not an Organization. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 

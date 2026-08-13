@@ -11,7 +11,7 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-08-10",
+  "dateModified": "2026-08-13",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -87,7 +87,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
-      "description": "143 catalogued software repositories across docxology and AII contributions.",
+      "description": "146 catalogued software repositories across docxology and AII contributions.",
       "url": "https://danielarifriedman.com/data/software.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -594,7 +594,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-08-10.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-08-13.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -608,7 +608,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-08-10.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-08-13.json",
         "encodingFormat": "application/json"
       }
     },
@@ -663,7 +663,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#live-site",
       "name": "Live Site Verification",
       "description": "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
-      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-08-10.json",
+      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-08-13.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -677,7 +677,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-08-10.json",
+        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-08-13.json",
         "encodingFormat": "application/json"
       }
     }

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-10T17:24:54Z",
+  "generated_at": "2026-08-13T17:52:48Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 143,
+  "count": 146,
   "repositories": [
     {
       "name": "template",
@@ -1719,6 +1719,42 @@
       "updated_or_year": "2026",
       "paper_path": "papers/2026_ActiveFractalRabbit/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21330636"
+    },
+    {
+      "name": "Active_Fedference",
+      "url": "https://github.com/ActiveInferenceInstitute/Active_Fedference",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026",
+      "paper_path": "papers/2026_RobustBeliefSharing/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21864003"
+    },
+    {
+      "name": "Active_Skillference",
+      "url": "https://github.com/ActiveInferenceInstitute/Active_Skillference",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Validated prerequisite graph, computational claim registry, and SkillTree delivery contract for Active Inference ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026",
+      "paper_path": "papers/2026_ActiveSkillference/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21865643"
+    },
+    {
+      "name": "active_inference_power",
+      "url": "https://github.com/ActiveInferenceInstitute/active_inference_power",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Conditional statistical power under controlled generative settings for Active Inference ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026",
+      "paper_path": "papers/2026_ActiveInferencePower/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21695160"
     }
   ]
 }

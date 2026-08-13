@@ -281,6 +281,7 @@
   function togglePanel() {
     state.panelOpen = !state.panelOpen;
     panel.classList.toggle('tts-open', state.panelOpen);
+    panel.setAttribute('aria-hidden', String(!state.panelOpen));
     if (toggleBtn) {
       toggleBtn.setAttribute('aria-expanded', String(state.panelOpen));
     }

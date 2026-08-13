@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-07-17T21:37:09+00:00",
-  "source_commit_at_generation": "fa3071f8c0ee875d3acb183aae993ac6aa1148b8",
+  "source_commit_at_generation": "18e5bf8e1c3f866d2e3894dfe763b89dc555211e",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -9,8 +9,8 @@
     "python": ">=3.12 (pyproject.toml)",
     "project_version": "0.1.0",
     "orchestrator_sha256": {
-      "code/orchestrators/regenerate_all.py": "305f208dd7c504f9f0c8fee45f4ceb1312ea3ed0037cf7b42e5bbb8ecd04def9",
-      "code/orchestrators/build_pages_artifact.py": "5f2b2dca48d30f3f83138425571c4211d72380fdf603a9ee45a4bca644c88c18",
+      "code/orchestrators/regenerate_all.py": "c2bbf083e6a188425c28d0ba4b1430baed8b358fb0d54391ed1273d4e454df20",
+      "code/orchestrators/build_pages_artifact.py": "72ad8f7dc172d398d3170ef1048b5612fdf456faf6426dc01096279c8b17fc01",
       "code/orchestrators/build_agent_index.py": "8221e90b87fc69f4898933b0667a6b8c1630151a79dd689f370d277b652f2cdc",
       "code/orchestrators/build_coverage_exceptions.py": "5e4e3a88d6d13aad804ccc4f9d45ba32c1dbb87ae0970c819042d3b1a221b6ad",
       "code/orchestrators/classify_repositories.py": "16372829f868a684b5fe0d8de07aad4544ce27e194d52e1e559ed4f070636edc",
@@ -21,20 +21,20 @@
   },
   "source_sha256": {
     "pages/BIBLIOGRAPHY.md": "94d9085abcd96fa0215257f97bfe00b0aaf3a9b22ab5cec4ebba61ac8d9fcffa",
-    "pages/SOFTWARE.md": "14d436585560f808999f6ecfe2cdd06b1ce25b6c9a2487e8059b63dd0a802ecf",
+    "pages/SOFTWARE.md": "93782033e18f7c19dd5ac466fe1bc96906a7a9c286d1e37f9f3b2c548c5d4291",
     "resume/source.json": "9e2dd487986d64d10ab3b96fa20d8d8fb86b9196b75cb92149672d25f058c0a2",
-    "data/current-counts.json": "9f15f824a354b5118132f15a84a8a2a4b889695836a6b51e6e8fbf1a69bc3f6d",
+    "data/current-counts.json": "38de3f4142a046f0c49e5cf21c3b298f7274adc080b367f1391c3fcc5f727e0f",
     "data/coverage-exceptions.json": "09739872183fc88f71b5790a67505b2088a2616f3e0aedcc73ba1679eb761a9a",
-    "data/repository-classification.json": "f9ab943977bb4902e4d62b1a092ead979494178bd3a9a9e479bfac77948a54a2",
-    "data/agent-index.json": "c76f38b00f5032b2c32cd8efdf4c29ed2389d242f97c073d9a9e32aac0d7ffe5",
-    "data/generated-manifest.json": "8b378f601910357fea6f3fae64efd0ec356f41e83679277c8dee477eeb05a6e3",
-    "data/pages-artifact-manifest.json": "dd242fa8ccbbf53276e3aad3a9e8b83705b03a26df93c726bc2513da1cd34f57"
+    "data/repository-classification.json": "4e086ed3e3985693cd8b14588a4d3451a355869dd60f1a9b7aeeb38297d3f6ac",
+    "data/agent-index.json": "1ec1b22945669633ab988fe41fc3777ab7c359da6b28b6d0e231c4be3305b429",
+    "data/generated-manifest.json": "6df9986f2f77ad1e1e4e15953c7a16d065ce0295857556ef71ecf2d1a4afffe3",
+    "data/pages-artifact-manifest.json": "df3d315e3dcd66c0d1dcfd66c202189bd501288e17755e8f864739c212eaeaf4"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "fa3071f8c0ee875d3acb183aae993ac6aa1148b8",
-    "artifact_file_count": 4454,
-    "artifact_bytes": 854200619,
+    "source_commit_at_generation": "18e5bf8e1c3f866d2e3894dfe763b89dc555211e",
+    "artifact_file_count": 4479,
+    "artifact_bytes": 873722805,
     "omitted_paper_image_count": 8886
   },
   "deployment": {
@@ -42,10 +42,10 @@
     "workflow_run_id": 31224443165,
     "workflow_url": "https://github.com/docxology/docxology/actions/runs/31224443165",
     "pages_status": "built",
-    "verification_report": "reports/live_site_verification_2026-08-10.json",
-    "verification_generated_at": "2026-08-10T17:26:07Z",
+    "verification_report": "reports/live_site_verification_2026-08-13.json",
+    "verification_generated_at": "2026-08-13T17:55:19Z",
     "verification_overall_ok": false,
-    "verified_routes": "13/17",
+    "verified_routes": "12/17",
     "deployment_pending": true,
     "deployment_pending_reasons": [
       "tracked release content differs from the deployed commit",
@@ -73,14 +73,14 @@
     "full_text_papers": 171,
     "generated_exports": {
       "data_publications_ld_main_entity": 208,
-      "data_software_json": 143,
-      "data_software_ld_main_entity": 143,
+      "data_software_json": 146,
+      "data_software_ld_main_entity": 146,
       "data_works_json": 208
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 43,
       "archived": 0,
-      "curated": 140,
+      "curated": 143,
       "docxology": 201,
       "fork_ActiveInferenceInstitute": 2,
       "fork_docxology": 85,
@@ -92,7 +92,7 @@
       "public": 244,
       "recently_updated": 147,
       "total": 244,
-      "uncataloged": 104
+      "uncataloged": 101
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -123,8 +123,8 @@
       "Zenodo exact-name creator records": 47
     },
     "software": {
-      "active_inference_institute": 38,
-      "curated_total": 143,
+      "active_inference_institute": 41,
+      "curated_total": 146,
       "docxology_owned": 105
     },
     "types": {

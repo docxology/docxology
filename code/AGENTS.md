@@ -8,6 +8,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | --- | --- |
 | `src/youtube_fetcher.py` | `yt-dlp` wrapper: fetch tabs, normalize records, save JSON |
 | `src/count_consistency.py` | Parse BIBLIOGRAPHY / papers index counts; detect drift in llms.txt, README, publications title, `data/works.json`, `data/publications-ld.json` |
+| `src/domain_inference.py` | Canonical whole-word domain inference (emoji ↔ name maps, `infer_domain_emoji` / `infer_domain_name`) |
 | `src/publication_pairing.py` | Normalize GitHub release and Zenodo record metadata; classify paired publication evidence, type, and domain; render README/AGENTS/SKILL/CITATION.cff templates |
 | `src/resume_data.py` | Load, clean, validate, merge, and render structured resume/CV data, including deterministic source manifests and GitHub inventory metrics |
 | `src/site_nav.py` | `render_nav()` for work pages; `render_nav_domain()` for domain landing pages |

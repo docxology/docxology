@@ -65,3 +65,7 @@ def test_repository_pages_split_primary_and_forks():
     assert "docxology/upstream-copy" in forks
     assert "docxology/primary" not in forks
     assert 'data-fork="true"' in forks
+    assert "/js/repo-inventory.js" in primary
+    assert "/js/repo-inventory.js" in forks
+    assert "const rows = Array.from(document.querySelectorAll('#inventoryRows tr'))" not in primary
+    assert "const rows = Array.from(document.querySelectorAll('#inventoryRows tr'))" not in forks

@@ -23,21 +23,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from biblio_table import iter_bibliography_rows  # noqa: E402
+from domain_inference import DOMAIN_TO_EMOJI, EMOJI_TO_DOMAIN, infer_domain_name  # noqa: E402
 
 # ─── Domain helpers ───────────────────────────────────────────────────────────
-
-EMOJI_TO_DOMAIN = {
-    '💻': 'Computational',
-    '🧠': 'Active Inference',
-    '🛡️': 'Cognitive Security',
-    '🐜': 'Entomology',
-    '🎨': 'Art & Synergetics',
-    '🧬': 'Genetics & Biomedical',
-    '🌍': 'AII Ecosystem',
-    '🎥': 'Presentations & Media',
-}
-
-DOMAIN_TO_EMOJI = {v: k for k, v in EMOJI_TO_DOMAIN.items()}
 
 # Domain-specific methods and findings templates
 DOMAIN_METHODS: dict[str, list[str]] = {
@@ -136,28 +124,8 @@ def load_aggregate_metadata() -> dict[str, dict[str, Any]]:
 
 
 def infer_domain(paper_meta: dict, bib_entry: dict[str, Any] | None) -> str:
-    """Infer domain from BIBLIOGRAPHY, paper_metadata, or foldername."""
-    if bib_entry and bib_entry.get("domain"):
-        return bib_entry["domain"]
-    description = (paper_meta.get("description") or paper_meta.get("abstract") or "").lower()
-    keywords = paper_meta.get("keywords", paper_meta.get("tags", []))
-    kw_text = " ".join(k if isinstance(k, str) else "" for k in keywords).lower()
-    all_text = f"{description} {kw_text}"
-    checks = {
-        'Entomology': ['ant', 'insect', 'bee', 'entomol', 'myrmec', 'colony', 'foraging', 'harvester', 'pheromone'],
-        'Active Inference': ['active inference', 'free energy', 'bayesian', 'variational', 'markov blanket', 'efe', 'belief'],
-        'Cognitive Security': ['cognitive security', 'cogsec', 'narrative', 'integrity', 'misinformation', 'sensemaking'],
-        'Art & Synergetics': ['art', 'blake', 'synergetics', 'music', 'imaginarium', 'metaphor', 'visual'],
-        'Genetics & Biomedical': ['genetic', 'genom', 'transcriptom', 'dna', 'pcr', 'mutation', 'chromosome'],
-        'Computational': ['software', 'code', 'repository', 'pipeline', 'deterministic', 'reproducible', 'automated', 'infrastructure'],
-        'Presentations & Media': ['presentation', 'talk', 'video', 'podcast', 'interview', 'slide', 'transcript'],
-    }
-    for domain, keywords_list in checks.items():
-        if any(k in all_text for k in keywords_list):
-            return domain
-    if bib_entry and bib_entry.get("type") in ("Presentation", "Course", "Series", "Playbook"):
-        return "Presentations & Media"
-    return "Research"
+    """Infer domain from BIBLIOGRAPHY, paper_metadata, or keyword rules."""
+    return infer_domain_name(meta=paper_meta, bib_entry=bib_entry)
 
 
 def infer_type(paper_meta: dict, bib_entry: dict[str, Any] | None) -> str:

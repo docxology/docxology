@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Repository inventory and evidence layer refreshed",
+    "link": "https://danielarifriedman.com/repositories.html",
+    "guid": "site-update-2026-05-15-repositories",
+    "description": "Full generated GitHub repository inventory, refreshed evidence ledger, and stable freshness fact comparison added.",
+    "pub_date": "2026-05-15"
+  },
+  {
+    "title": "Discovery, citation, evidence, and domain pages expanded",
+    "link": "https://danielarifriedman.com/discovery.html",
+    "guid": "site-update-2026-05-13-discovery",
+    "description": "New machine-readable exports, evidence ledger, domain pages, and agentic discovery metadata.",
+    "pub_date": "2026-05-13"
+  },
+  {
+    "title": "Per-work landing pages and search index generated",
+    "link": "https://danielarifriedman.com/works/",
+    "guid": "site-update-2026-05-13-works",
+    "description": "Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.",
+    "pub_date": "2026-05-13"
+  }
+]

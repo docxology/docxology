@@ -16,6 +16,7 @@ from pathlib import Path
 from typing import Any, Iterable
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from domain_inference import contains_term, infer_domain_emoji_for_pair as infer_domain  # noqa: E402, F401
 from report_paths import generated_timestamp  # noqa: E402
 
 ORCID = "0000-0001-6232-9096"
@@ -438,38 +439,6 @@ def infer_type(record: ZenodoRecord) -> str | None:
         return "Course"
     if "publication" in values or "article" in values or record.doi:
         return "Paper"
-    return None
-
-
-def _contains_term(text: str, term: str) -> bool:
-    """Whole-word/whole-phrase match so e.g. "ant" does not hit "dominant" and "art" does not hit "smart"."""
-    return re.search(rf"\b{re.escape(term)}\b", text) is not None
-
-
-def infer_domain(pair: PublicationPair) -> str | None:
-    text = " ".join(
-        [
-            pair.record.title,
-            pair.record.description,
-            " ".join(pair.record.keywords),
-            pair.github_repo,
-            pair.release.name,
-        ]
-    ).lower()
-    if any(_contains_term(text, term) for term in ["textbook", "reproducible", "computational", "software", "code", "pipeline"]):
-        return "💻"
-    if any(_contains_term(text, term) for term in ["active inference", "free energy", "bayesian", "markov blanket"]):
-        return "🧠"
-    if any(_contains_term(text, term) for term in ["cognitive security", "cogsec", "narrative", "trust", "integrity"]):
-        return "🛡️"
-    if any(_contains_term(text, term) for term in ["ant", "bee", "insect", "ento", "foraging"]):
-        return "🐜"
-    if any(_contains_term(text, term) for term in ["blake", "synergetics", "art", "fuller", "quadray"]):
-        return "🎨"
-    if any(_contains_term(text, term) for term in ["genetic", "genomic", "transcriptomic", "biomedical"]):
-        return "🧬"
-    if "activeinferenceinstitute" in text or "active inference institute" in text:
-        return "🌍"
     return None
 
 

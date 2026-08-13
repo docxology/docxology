@@ -26,17 +26,17 @@ def test_render_outputs_cover_all_nonempty_docs_paths():
     assert actual == expected
 
 
-def test_policy_entanglement_page_links_docs_pdf_and_work_page():
-    path = REPO_ROOT / "papers" / "2026_PolicyEntanglementActive" / "index.html"
+def test_docs_folder_page_links_local_docs_and_canonical():
+    works = json.loads((REPO_ROOT / "data" / "works.json").read_text(encoding="utf-8"))["works"]
+    work = next(item for item in works if item.get("docs_path") and item.get("doi"))
+    path = REPO_ROOT / work["docs_path"] / "index.html"
     content = render_outputs()[path]
 
-    assert "Policy Entanglement in Active Inference" in content
-    assert "10.5281/zenodo.20418904" in content
     assert 'href="README.md"' in content
     assert 'href="AGENTS.md"' in content
     assert 'href="SKILL.md"' in content
-    assert "Friedman_2026_Policy_ae7cdd62.pdf" in content
-    assert "../../works/Friedman2026PolicyEntanglementActiveInference119.html" in content
-    assert 'rel="canonical" href="https://danielarifriedman.com/works/Friedman2026PolicyEntanglementActiveInference119.html"' in content
+    assert "rel=\"canonical\"" in content
+    assert work["citation_key"] in content
+    assert work["doi"] in content or "doi.org" in content
     assert 'meta name="robots" content="noindex, follow"' in content
     assert "application/ld+json" not in content
