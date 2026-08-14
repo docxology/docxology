@@ -51,6 +51,14 @@
         .work-row{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:start;padding:.9rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
         .work-row .year{color:var(--gold);font-weight:700}
         .work-row .venue{color:var(--text-muted);font-size:.8rem}
+        .work-desc{font-size:.84rem;color:var(--text-secondary);margin-top:.35rem;line-height:1.5}
+        .work-meta-links{margin-top:.4rem;display:flex;gap:.75rem;font-size:.78rem;flex-wrap:wrap}
+        .work-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .work-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .repo-meta-links{margin-top:.5rem;display:flex;gap:.75rem;font-size:.8rem;flex-wrap:wrap}
+        .repo-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .repo-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .api-card{display:flex;flex-direction:column;justify-content:space-between}
         @media(max-width:760px){.work-row{grid-template-columns:1fr}}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
     </style>
@@ -145,69 +153,129 @@
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Selected Works</h2>
-                <p>Newest and most relevant entries for this domain.</p>
+                <p>Newest and most relevant entries for this domain with abstracts and full-text links.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="work-list">
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025ConCatEnateEmulation129.html">Con-cat-enate: emulation of Cat Hippocampus</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.13626536" aria-label="Primary link for Con-cat-enate: emulation of Cat Hippocampus">Link</a>
+                    <div>
+                        <a href="works/Friedman2025ConCatEnateEmulation129.html"><strong>Con-cat-enate: emulation of Cat Hippocampus</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Updated added a number of pages at the start (from page 2) that describes the entire system and whats missing apologies for not giving this overview of what would happen given…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.13626536">DOI: 10.5281/zenodo.13626536</a> · <a href="papers/2025_ConCatEnate/">Paper Folder</a> · <a href="works/Friedman2025ConCatEnateEmulation129.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.13626536" aria-label="Primary link for Con-cat-enate: emulation of Cat Hippocampus" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025BevCycPositPrimitiveDrivers131.html">BevCyc - posit on primitive drivers of creatures</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.14737075" aria-label="Primary link for BevCyc - posit on primitive drivers of creatures">Link</a>
+                    <div>
+                        <a href="works/Friedman2025BevCycPositPrimitiveDrivers131.html"><strong>BevCyc - posit on primitive drivers of creatures</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.14737075">DOI: 10.5281/zenodo.14737075</a> · <a href="papers/2025_BevCycPositPrimitive/">Paper Folder</a> · <a href="works/Friedman2025BevCycPositPrimitiveDrivers131.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.14737075" aria-label="Primary link for BevCyc - posit on primitive drivers of creatures" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025BeaconsPreEmulationSocial132.html">Beacons - pre emulation of social cortex</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.14737059" aria-label="Primary link for Beacons - pre emulation of social cortex">Link</a>
+                    <div>
+                        <a href="works/Friedman2025BeaconsPreEmulationSocial132.html"><strong>Beacons - pre emulation of social cortex</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of category and response, which…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.14737059">DOI: 10.5281/zenodo.14737059</a> · <a href="papers/2025_BeaconsPreEmulation/">Paper Folder</a> · <a href="works/Friedman2025BeaconsPreEmulationSocial132.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.14737059" aria-label="Primary link for Beacons - pre emulation of social cortex" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025ConCatEnatePilot133.html">Con-cat-enate: pilot overview</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.14737042" aria-label="Primary link for Con-cat-enate: pilot overview">Link</a>
+                    <div>
+                        <a href="works/Friedman2025ConCatEnatePilot133.html"><strong>Con-cat-enate: pilot overview</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Short overview of the concatenate amateur cat Combined with Beacons Bevcyc and demo 0.01 plan</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.14737042">DOI: 10.5281/zenodo.14737042</a> · <a href="papers/2025_ConCatEnate2/">Paper Folder</a> · <a href="works/Friedman2025ConCatEnatePilot133.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.14737042" aria-label="Primary link for Con-cat-enate: pilot overview" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2024</div>
-                    <div><a href="works/Friedman2024WhyPaleolithicRockstarsWere043.html">Why Paleolithic Rockstars were both enigmatic and sporadic</a><div class="venue">Physics of Life Reviews · Paper</div></div>
-                    <a href="https://doi.org/10.1016/j.plrev.2024.04.010" aria-label="Primary link for Why Paleolithic Rockstars were both enigmatic and sporadic">Link</a>
+                    <div>
+                        <a href="works/Friedman2024WhyPaleolithicRockstarsWere043.html"><strong>Why Paleolithic Rockstars were both enigmatic and sporadic</strong></a>
+                        <div class="venue">Physics of Life Reviews · Paper</div>
+                        <div class="work-desc">An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.1016/j.plrev.2024.04.010">DOI: 10.1016/j.plrev.2024.04.010</a> · <a href="papers/2024_PaleolithicRockstars/">Paper Folder</a> · <a href="works/Friedman2024WhyPaleolithicRockstarsWere043.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.1016/j.plrev.2024.04.010" aria-label="Primary link for Why Paleolithic Rockstars were both enigmatic and sporadic" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2023</div>
-                    <div><a href="works/Friedman2023CommentOrNotComment063.html">To comment or not to comment</a><div class="venue">Physics of Life Reviews · Paper</div></div>
-                    <a href="https://doi.org/10.1016/j.plrev.2023.06.002" aria-label="Primary link for To comment or not to comment">Link</a>
+                    <div>
+                        <a href="works/Friedman2023CommentOrNotComment063.html"><strong>To comment or not to comment</strong></a>
+                        <div class="venue">Physics of Life Reviews · Paper</div>
+                        <div class="work-desc">This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.1016/j.plrev.2023.06.002">DOI: 10.1016/j.plrev.2023.06.002</a> · <a href="papers/2023_ToComment/">Paper Folder</a> · <a href="works/Friedman2023CommentOrNotComment063.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.1016/j.plrev.2023.06.002" aria-label="Primary link for To comment or not to comment" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2022</div>
-                    <div><a href="works/Friedman2022FreeWillOrLack069.html">On free will or the lack thereof (interview with Robert Sapolsky)</a><div class="venue">ALIUS Bulletin · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.7394900" aria-label="Primary link for On free will or the lack thereof (interview with Robert Sapolsky)">Link</a>
+                    <div>
+                        <a href="works/Friedman2022FreeWillOrLack069.html"><strong>On free will or the lack thereof (interview with Robert Sapolsky)</strong></a>
+                        <div class="venue">ALIUS Bulletin · Paper</div>
+                        <div class="work-desc">In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will. Topics covered include neuroscience…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.7394900">DOI: 10.5281/zenodo.7394900</a> · <a href="papers/2022_FreeWillSapolsky/">Paper Folder</a> · <a href="works/Friedman2022FreeWillOrLack069.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.7394900" aria-label="Primary link for On free will or the lack thereof (interview with Robert Sapolsky)" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2020</div>
-                    <div><a href="works/Friedman2020NeuroscienceDecisionMakingInterview091.html">The neuroscience of decision making (interview with Timothy Hanks)</a><div class="venue">ALIUS Bulletin · Paper</div></div>
-                    <a href="https://doi.org/10.34700/8pg4-0h12" aria-label="Primary link for The neuroscience of decision making (interview with Timothy Hanks)">Link</a>
+                    <div>
+                        <a href="works/Friedman2020NeuroscienceDecisionMakingInterview091.html"><strong>The neuroscience of decision making (interview with Timothy Hanks)</strong></a>
+                        <div class="venue">ALIUS Bulletin · Paper</div>
+                        <div class="work-desc">In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.34700/8pg4-0h12">DOI: 10.34700/8pg4-0h12</a> · <a href="papers/2020_NeuroscienceDecision/">Paper Folder</a> · <a href="works/Friedman2020NeuroscienceDecisionMakingInterview091.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.34700/8pg4-0h12" aria-label="Primary link for The neuroscience of decision making (interview with Timothy Hanks)" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2019</div>
-                    <div><a href="works/Friedman2019DennettExplainedInterviewDaniel092.html">Dennett Explained (interview with Daniel Dennett)</a><div class="venue">ALIUS Bulletin · Paper</div></div>
-                    <a href="https://doi.org/10.34700/7gkw-zh08" aria-label="Primary link for Dennett Explained (interview with Daniel Dennett)">Link</a>
+                    <div>
+                        <a href="works/Friedman2019DennettExplainedInterviewDaniel092.html"><strong>Dennett Explained (interview with Daniel Dennett)</strong></a>
+                        <div class="venue">ALIUS Bulletin · Paper</div>
+                        <div class="work-desc">In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.34700/7gkw-zh08">DOI: 10.34700/7gkw-zh08</a> · <a href="papers/2019_DennettExplained/">Paper Folder</a> · <a href="works/Friedman2019DennettExplainedInterviewDaniel092.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.34700/7gkw-zh08" aria-label="Primary link for Dennett Explained (interview with Daniel Dennett)" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2017</div>
-                    <div><a href="works/Friedman2017OsteopathyVariableVariabilityHealth163.html">Osteopathy and the Variable Variability of Health</a><div class="venue">The Cranial Letter 70(4) · Paper</div></div>
-                    <a href="" aria-label="Primary link for Osteopathy and the Variable Variability of Health">Link</a>
+                    <div>
+                        <a href="works/Friedman2017OsteopathyVariableVariabilityHealth163.html"><strong>Osteopathy and the Variable Variability of Health</strong></a>
+                        <div class="venue">The Cranial Letter 70(4) · Paper</div>
+                        
+                        <div class="work-meta-links"><a href="works/Friedman2017OsteopathyVariableVariabilityHealth163.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="" aria-label="Primary link for Osteopathy and the Variable Variability of Health" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2016</div>
-                    <div><a href="works/Friedman2016InfluenceNuclearStructureFormation105.html">Influence of Nuclear Structure on formation of radiation-induced lethal lesions</a><div class="venue">Int. J. Radiation Biology · Paper</div></div>
-                    <a href="https://doi.org/10.3109/09553002.2016.1144941" aria-label="Primary link for Influence of Nuclear Structure on formation of radiation-induced lethal lesions">Link</a>
+                    <div>
+                        <a href="works/Friedman2016InfluenceNuclearStructureFormation105.html"><strong>Influence of Nuclear Structure on formation of radiation-induced lethal lesions</strong></a>
+                        <div class="venue">Int. J. Radiation Biology · Paper</div>
+                        <div class="work-desc">Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.3109/09553002.2016.1144941">DOI: 10.3109/09553002.2016.1144941</a> · <a href="papers/2016_NuclearStructure/">Paper Folder</a> · <a href="works/Friedman2016InfluenceNuclearStructureFormation105.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.3109/09553002.2016.1144941" aria-label="Primary link for Influence of Nuclear Structure on formation of radiation-induced lethal lesions" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2016</div>
-                    <div><a href="works/Friedman2016CellsMechanobiologyOsteopathy164.html">Cells, Mechanobiology, and Osteopathy</a><div class="venue">The Cranial Letter 69(1) · Paper</div></div>
-                    <a href="" aria-label="Primary link for Cells, Mechanobiology, and Osteopathy">Link</a>
+                    <div>
+                        <a href="works/Friedman2016CellsMechanobiologyOsteopathy164.html"><strong>Cells, Mechanobiology, and Osteopathy</strong></a>
+                        <div class="venue">The Cranial Letter 69(1) · Paper</div>
+                        
+                        <div class="work-meta-links"><a href="works/Friedman2016CellsMechanobiologyOsteopathy164.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="" aria-label="Primary link for Cells, Mechanobiology, and Osteopathy" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
             </div>
             <p class="text-center mt-2"><a href="publications.html" class="btn btn-gold">Open full bibliography</a></p>
@@ -215,47 +283,87 @@
         <section class="section">
             <div class="section-header">
                 <h2>Related Software</h2>
-                <p>Repository entry points for implementation, data, and teaching work.</p>
+                <p>Repository entry points for implementation, companion papers, data, and teaching work.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="mini-grid">
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/MetaInformAnt">MetaInformAnt</a></h3>
                     <p>Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond</p>
-                    <p class="text-muted">Python · ⭐ 6</p>
+                    <p class="text-muted">Python · ⭐ 6 · Updated 2026-05</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/MetaInformAnt">GitHub Repo</a> · <a href="papers/2021_ActiveInferants/">Companion Paper</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/EvoJump">EvoJump</a></h3>
                     <p>Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2025-10</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/EvoJump">GitHub Repo</a> · <a href="papers/2025_EvoJump/">Companion Paper</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/biology_textbook">biology_textbook</a></h3>
                     <p>Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2026-05</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/biology_textbook">GitHub Repo</a> · <a href="papers/2026_BiologyTextbook/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.20286478">Zenodo Release</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/biol-8">biol-8</a></h3>
                     <p>BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content</p>
-                    <p class="text-muted">HTML · ⭐ 0</p>
+                    <p class="text-muted">HTML · ⭐ 0 · Updated 2026-03</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/biol-8">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/biol-1">biol-1</a></h3>
                     <p>BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content</p>
-                    <p class="text-muted">HTML · ⭐ 0</p>
+                    <p class="text-muted">HTML · ⭐ 0 · Updated 2026-03</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/biol-1">GitHub Repo</a></div>
                 </article>
             </div>
         </section>
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Learning Path</h2>
-                <p>A compact route through the material.</p>
+                <p>A structured, cross-linked route through tutorials, pillar guides, foundational papers, and software repositories.</p>
                 <div class="section-divider"></div>
             </div>
-            <div class="mini-card"><ul><li>Start with the harvester ant brain gene-expression and behavioral-genetics papers for the core empirical thread.</li>
-<li>Read the honey bee evolution and population-genetics commentaries for comparative context.</li>
-<li>Use the open biology textbook and course materials for foundational background.</li></ul></div>
-            <p class="text-center mt-2"><a href="pages/DOMAINS.md" class="btn btn-outline">Markdown domain map</a></p>
+            <div class="mini-card"><ul><li>Explore empirical behavioral genomics in <a href='works/Friedman2020GeneExpressionVariationBrains086.html'>Gene Expression Variation in Harvester Ant Forager Brains</a>.</li>
+<li>Study tissue-specific transcriptomic pipelines in <a href='works/Friedman2023SnapshotPipelineTissueSpecific047.html'>Pipeline for Tissue-Specific Gene Expression Meta-Analysis in Honey Bees</a>.</li>
+<li>Read evolutionary and developmental synthesis in <a href='works/Friedman2023VariationalSynthesisEvolutionaryDevelopmental048.html'>A Variational Synthesis of Evolutionary and Developmental Dynamics</a>.</li>
+<li>Investigate cellular biophysics and mechanobiology in <a href='works/Friedman2016CellsMechanobiologyOsteopathy164.html'>Cells, Mechanobiology, and Osteopathy</a>.</li>
+<li>Review undergraduate open curriculum materials in <a href='https://github.com/docxology/biology_textbook'>biology_textbook</a>, <a href='https://github.com/docxology/biol-1'>biol-1</a>, and <a href='https://github.com/docxology/biol-8'>biol-8</a>.</li>
+<li>Query public biomedical indexing records directly via the <a href='https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D'>PubMed Author Query</a> and <a href='https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22'>Europe PMC</a>.</li></ul></div>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h2>Public APIs &amp; Discovery Endpoints</h2>
+                <p>Machine-readable endpoints for querying research metadata and persistent identifiers.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="mini-grid">
+                <article class="mini-card api-card">
+                    <h3><a href="https://orcid.org/0000-0001-6232-9096">ORCID API</a></h3>
+                    <p>Persistent researcher identity record (0000-0001-6232-9096) linking published works and verified peer reviews.</p>
+                    <p class="text-muted"><a href="https://pub.orcid.org/v3.0/0000-0001-6232-9096">pub.orcid.org/v3.0/0000-0001-6232-9096</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22">Zenodo REST API</a></h3>
+                    <p>Open-access deposits, software releases, preprints, and dataset versions indexed by ORCID.</p>
+                    <p class="text-muted"><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22">Zenodo Creator Query</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">Crossref Works API</a></h3>
+                    <p>Publisher DOI metadata records, license information, and formal citation relations.</p>
+                    <p class="text-muted"><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">api.crossref.org/works</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.github.com/users/docxology">GitHub REST API</a></h3>
+                    <p>Repository metadata, release artifacts, and open-source software inventory.</p>
+                    <p class="text-muted"><a href="https://api.github.com/users/docxology/repos">api.github.com/users/docxology/repos</a></p>
+                </article>
+            </div>
+            <p class="text-center mt-2">
+                <a href="discovery.html" class="btn btn-outline">Full Discovery Map</a>
+                <a href="pages/DOMAINS.md" class="btn btn-outline">Markdown Domain Map</a>
+            </p>
         </section>
     </main>
     <footer role="contentinfo">
@@ -266,10 +374,10 @@
             <a href="software.html">Software</a>
             <a href="search.html">Search</a>
             <a href="discovery.html">Discovery</a>
-            <a href="cite-verify.html">Cite & Verify</a>
+            <a href="cite-verify.html">Cite &amp; Verify</a>
             <a href="https://github.com/docxology/docxology">Source Repo</a>
         </div>
-        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed {generated_month_year()}</p>
+        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed August 2026</p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

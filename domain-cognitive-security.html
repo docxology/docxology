@@ -51,6 +51,14 @@
         .work-row{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:start;padding:.9rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
         .work-row .year{color:var(--gold);font-weight:700}
         .work-row .venue{color:var(--text-muted);font-size:.8rem}
+        .work-desc{font-size:.84rem;color:var(--text-secondary);margin-top:.35rem;line-height:1.5}
+        .work-meta-links{margin-top:.4rem;display:flex;gap:.75rem;font-size:.78rem;flex-wrap:wrap}
+        .work-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .work-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .repo-meta-links{margin-top:.5rem;display:flex;gap:.75rem;font-size:.8rem;flex-wrap:wrap}
+        .repo-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .repo-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .api-card{display:flex;flex-direction:column;justify-content:space-between}
         @media(max-width:760px){.work-row{grid-template-columns:1fr}}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
     </style>
@@ -145,69 +153,129 @@
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Selected Works</h2>
-                <p>Newest and most relevant entries for this domain.</p>
+                <p>Newest and most relevant entries for this domain with abstracts and full-text links.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="work-list">
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026CognitiveIntegrityFrameworkFormal005.html">Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.18364118" aria-label="Primary link for Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)">Link</a>
+                    <div>
+                        <a href="works/Friedman2026CognitiveIntegrityFrameworkFormal005.html"><strong>Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.18364118">DOI: 10.5281/zenodo.18364118</a> · <a href="papers/2026_CognitiveIntegrity/">Paper Folder</a> · <a href="works/Friedman2026CognitiveIntegrityFrameworkFormal005.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.18364118" aria-label="Primary link for Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026CrescentCityLivingWaves116.html">Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20286170" aria-label="Primary link for Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast">Link</a>
+                    <div>
+                        <a href="works/Friedman2026CrescentCityLivingWaves116.html"><strong>Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the north- ernmost developed strip of the California coast — where…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20286170">DOI: 10.5281/zenodo.20286170</a> · <a href="papers/2026_CrescentCity/">Paper Folder</a> · <a href="works/Friedman2026CrescentCityLivingWaves116.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20286170" aria-label="Primary link for Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026CaliforniaPublicRecordsTechnical173.html">California Public Records: A Technical and Legal Reference for the Post-AB 473 Era</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20789899" aria-label="Primary link for California Public Records: A Technical and Legal Reference for the Post-AB 473 Era">Link</a>
+                    <div>
+                        <a href="works/Friedman2026CaliforniaPublicRecordsTechnical173.html"><strong>California Public Records: A Technical and Legal Reference for the Post-AB 473 Era</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">A technical and legal reference to California public-records ecosystem, anchored by the CPRA recodified by AB 473.</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20789899">DOI: 10.5281/zenodo.20789899</a> · <a href="papers/2026_CaliforniaPublicRecords/">Paper Folder</a> · <a href="works/Friedman2026CaliforniaPublicRecordsTechnical173.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20789899" aria-label="Primary link for California Public Records: A Technical and Legal Reference for the Post-AB 473 Era" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026CogSecSkillsMultiharnessAgenticSkills174.html">CogSecSkills: Multiharness Agentic Skills for Cognitive Security</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.21513316" aria-label="Primary link for CogSecSkills: Multiharness Agentic Skills for Cognitive Security">Link</a>
+                    <div>
+                        <a href="works/Friedman2026CogSecSkillsMultiharnessAgenticSkills174.html"><strong>CogSecSkills: Multiharness Agentic Skills for Cognitive Security</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">CogSecSkills is a defensive, harness-neutral agent-interface library that turns the human doctrine of cognitive security and analytic tradecraft into dependable, inspectable…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.21513316">DOI: 10.5281/zenodo.21513316</a> · <a href="papers/2026_CogSecSkills/">Paper Folder</a> · <a href="works/Friedman2026CogSecSkillsMultiharnessAgenticSkills174.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.21513316" aria-label="Primary link for CogSecSkills: Multiharness Agentic Skills for Cognitive Security" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026ActiveFractalRabbitSyntheticBenchmark195.html">Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.21330636" aria-label="Primary link for Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations">Link</a>
+                    <div>
+                        <a href="works/Friedman2026ActiveFractalRabbitSyntheticBenchmark195.html"><strong>Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Sparse waypoint analysis is privacy-sensitive: it must separate movement from irregular reporting, missingness, spatial coarsening, and corruption while preserving uncertainty…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.21330636">DOI: 10.5281/zenodo.21330636</a> · <a href="papers/2026_ActiveFractalRabbit/">Paper Folder</a> · <a href="works/Friedman2026ActiveFractalRabbitSyntheticBenchmark195.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.21330636" aria-label="Primary link for Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026PersonalRedLinesDevelopment203.html">Personal Red Lines for Development</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.21754239" aria-label="Primary link for Personal Red Lines for Development">Link</a>
+                    <div>
+                        <a href="works/Friedman2026PersonalRedLinesDevelopment203.html"><strong>Personal Red Lines for Development</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">A versioned, evidence-gated personal security boundary and explicit No document for dual-use development work. It requires a complete, reviewable action intake before returning…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.21754239">DOI: 10.5281/zenodo.21754239</a> · <a href="papers/2026_PersonalRedLines/">Paper Folder</a> · <a href="works/Friedman2026PersonalRedLinesDevelopment203.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.21754239" aria-label="Primary link for Personal Red Lines for Development" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026BlackLineStrongWork205.html">Black Line: Strong Work in Public</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.21754235" aria-label="Primary link for Black Line: Strong Work in Public">Link</a>
+                    <div>
+                        <a href="works/Friedman2026BlackLineStrongWork205.html"><strong>Black Line: Strong Work in Public</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.21754235">DOI: 10.5281/zenodo.21754235</a> · <a href="papers/2026_BlackLine/">Paper Folder</a> · <a href="works/Friedman2026BlackLineStrongWork205.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.21754235" aria-label="Primary link for Black Line: Strong Work in Public" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026DigiPPPiPDigitalPartnerPen209.html">DigiPPPiP: Digital Partner Pen Play in Parallel</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.21815704" aria-label="Primary link for DigiPPPiP: Digital Partner Pen Play in Parallel">Link</a>
+                    <div>
+                        <a href="works/Friedman2026DigiPPPiPDigitalPartnerPen209.html"><strong>DigiPPPiP: Digital Partner Pen Play in Parallel</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.21815704">DOI: 10.5281/zenodo.21815704</a> · <a href="papers/2026_DigiPPPiP/">Paper Folder</a> · <a href="works/Friedman2026DigiPPPiPDigitalPartnerPen209.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.21815704" aria-label="Primary link for DigiPPPiP: Digital Partner Pen Play in Parallel" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2024</div>
-                    <div><a href="works/Friedman2024BridgingGapsImageMeme031.html">Bridging gaps in image meme research: A multidisciplinary paradigm</a><div class="venue">JASIST · Paper</div></div>
-                    <a href="https://doi.org/10.1002/asi.24900" aria-label="Primary link for Bridging gaps in image meme research: A multidisciplinary paradigm">Link</a>
+                    <div>
+                        <a href="works/Friedman2024BridgingGapsImageMeme031.html"><strong>Bridging gaps in image meme research: A multidisciplinary paradigm</strong></a>
+                        <div class="venue">JASIST · Paper</div>
+                        <div class="work-desc">This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.1002/asi.24900">DOI: 10.1002/asi.24900</a> · <a href="papers/2024_ImageMemeResearch/">Paper Folder</a> · <a href="works/Friedman2024BridgingGapsImageMeme031.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.1002/asi.24900" aria-label="Primary link for Bridging gaps in image meme research: A multidisciplinary paradigm" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2024</div>
-                    <div><a href="works/Friedman2024CommentsNationalDigitalTwins033.html">Comments on National Digital Twins R&amp;D Strategic Plan</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.13273681" aria-label="Primary link for Comments on National Digital Twins R&amp;D Strategic Plan">Link</a>
+                    <div>
+                        <a href="works/Friedman2024CommentsNationalDigitalTwins033.html"><strong>Comments on National Digital Twins R&amp;D Strategic Plan</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.13273681">DOI: 10.5281/zenodo.13273681</a> · <a href="papers/2024_DigitalTwins/">Paper Folder</a> · <a href="works/Friedman2024CommentsNationalDigitalTwins033.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.13273681" aria-label="Primary link for Comments on National Digital Twins R&amp;D Strategic Plan" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2024</div>
-                    <div><a href="works/Friedman2024FarmWorksDecentralizedAIAgents035.html">FarmWorks: Decentralized AI Agents for Personalized Solutions</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.13754585" aria-label="Primary link for FarmWorks: Decentralized AI Agents for Personalized Solutions">Link</a>
+                    <div>
+                        <a href="works/Friedman2024FarmWorksDecentralizedAIAgents035.html"><strong>FarmWorks: Decentralized AI Agents for Personalized Solutions</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.13754585">DOI: 10.5281/zenodo.13754585</a> · <a href="papers/2024_FarmWorks/">Paper Folder</a> · <a href="works/Friedman2024FarmWorksDecentralizedAIAgents035.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.13754585" aria-label="Primary link for FarmWorks: Decentralized AI Agents for Personalized Solutions" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2024</div>
-                    <div><a href="works/Friedman2024CommentsSubmittedByBlockScience162.html">Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.13273682" aria-label="Primary link for Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum">Link</a>
+                    <div>
+                        <a href="works/Friedman2024CommentsSubmittedByBlockScience162.html"><strong>Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.13273682">DOI: 10.5281/zenodo.13273682</a> · <a href="works/Friedman2024CommentsSubmittedByBlockScience162.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.13273682" aria-label="Primary link for Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
             </div>
             <p class="text-center mt-2"><a href="publications.html" class="btn btn-gold">Open full bibliography</a></p>
@@ -215,43 +283,82 @@
         <section class="section">
             <div class="section-header">
                 <h2>Related Software</h2>
-                <p>Repository entry points for implementation, data, and teaching work.</p>
+                <p>Repository entry points for implementation, companion papers, data, and teaching work.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="mini-grid">
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/p3if">p3if</a></h3>
                     <p>Properties, Processes, and Perspectives Inter-Framework (P3IF) — multiplexing interdisciplinary requirements frameworks to manage information risk and foster cognitive security</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2026-01</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/p3if">GitHub Repo</a> · <a href="papers/2023_P3IF/">Companion Paper</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/opentir">opentir</a></h3>
                     <p>Comprehensive toolkit analyzing 250+ Palantir open-source repositories (6.2M+ lines of code) — automated discovery, multi-language analysis, dependency mapping, statistical profiling, and professional visualizations</p>
-                    <p class="text-muted">Python · ⭐ 3</p>
+                    <p class="text-muted">Python · ⭐ 3 · Updated 2025-11</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/opentir">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/cognitive-engine">cognitive-engine</a></h3>
                     <p>Hybrid neuro-symbolic AI combining fractal symbolic representations with probabilistic neural models for enhanced reasoning; includes Unipixel fractal building blocks and PEFF ethical reasoning</p>
-                    <p class="text-muted">Python · ⭐ 3</p>
+                    <p class="text-muted">Python · ⭐ 3 · Updated 2026-03</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/cognitive-engine">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/ActiveInferenceInstitute/ATLAS">ATLAS</a></h3>
                     <p>Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2025</p>
+                    <div class="repo-meta-links"><a href="https://github.com/ActiveInferenceInstitute/ATLAS">GitHub Repo</a></div>
                 </article>
             </div>
         </section>
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Learning Path</h2>
-                <p>A compact route through the material.</p>
+                <p>A structured, cross-linked route through tutorials, pillar guides, foundational papers, and software repositories.</p>
                 <div class="section-divider"></div>
             </div>
-            <div class="mini-card"><ul><li>Read the comprehensive guide on &lt;a href=&#x27;../cognitive-security.html&#x27;&gt;What Is Cognitive Security?&lt;/a&gt;.</li>
-<li>Start with the three COGSEC books (IRT-20, NIM-21, CAT-22) for the program arc.</li>
-<li>Read P3IF, Narrative Information Management, and Cognitive Integrity for the formal thread.</li>
-<li>Use opentir and p3if as software companions.</li></ul></div>
-            <p class="text-center mt-2"><a href="pages/DOMAINS.md" class="btn btn-outline">Markdown domain map</a></p>
+            <div class="mini-card"><ul><li>Read the comprehensive explainer guide <a href='cognitive-security.html'>What Is Cognitive Security? Theory, Threat Models, and Defense</a>.</li>
+<li>Survey the foundational COGSEC publications: Information Resonance &amp; Narrative Information Ecosystems, Narrative Information Management (NIM-21), and Emergent Teams for Complex Threats.</li>
+<li>Examine multiagent epistemic defense in <a href='works/Friedman2026CognitiveIntegrityFrameworkFormal005.html'>Cognitive Integrity Framework: Formal Foundations (Part 1: Theory)</a>.</li>
+<li>Analyze information commons and open standards in <a href='works/Friedman2022StructuringInformationCommonsOpen071.html'>Structuring the Information Commons: Open Standards and Cognitive Security</a>.</li>
+<li>Study multi-perspective property framing in <a href='works/Friedman2023P3IFPropertiesProcessesPerspectives062.html'>The P3IF: Properties, Processes, and Perspectives Inter-Framework</a>.</li>
+<li>Implement multi-agent cognitive security tools using <a href='https://github.com/docxology/p3if'>p3if</a> and the <a href='https://github.com/docxology/ATLAS'>ATLAS</a> framework.</li>
+<li>Examine ecosystem dependency profiles and intelligence mapping via <a href='https://github.com/docxology/opentir'>opentir</a>.</li></ul></div>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h2>Public APIs &amp; Discovery Endpoints</h2>
+                <p>Machine-readable endpoints for querying research metadata and persistent identifiers.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="mini-grid">
+                <article class="mini-card api-card">
+                    <h3><a href="https://orcid.org/0000-0001-6232-9096">ORCID API</a></h3>
+                    <p>Persistent researcher identity record (0000-0001-6232-9096) linking published works and verified peer reviews.</p>
+                    <p class="text-muted"><a href="https://pub.orcid.org/v3.0/0000-0001-6232-9096">pub.orcid.org/v3.0/0000-0001-6232-9096</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22">Zenodo REST API</a></h3>
+                    <p>Open-access deposits, software releases, preprints, and dataset versions indexed by ORCID.</p>
+                    <p class="text-muted"><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22">Zenodo Creator Query</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">Crossref Works API</a></h3>
+                    <p>Publisher DOI metadata records, license information, and formal citation relations.</p>
+                    <p class="text-muted"><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">api.crossref.org/works</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.github.com/users/docxology">GitHub REST API</a></h3>
+                    <p>Repository metadata, release artifacts, and open-source software inventory.</p>
+                    <p class="text-muted"><a href="https://api.github.com/users/docxology/repos">api.github.com/users/docxology/repos</a></p>
+                </article>
+            </div>
+            <p class="text-center mt-2">
+                <a href="discovery.html" class="btn btn-outline">Full Discovery Map</a>
+                <a href="pages/DOMAINS.md" class="btn btn-outline">Markdown Domain Map</a>
+            </p>
         </section>
     </main>
     <footer role="contentinfo">
@@ -262,10 +369,10 @@
             <a href="software.html">Software</a>
             <a href="search.html">Search</a>
             <a href="discovery.html">Discovery</a>
-            <a href="cite-verify.html">Cite & Verify</a>
+            <a href="cite-verify.html">Cite &amp; Verify</a>
             <a href="https://github.com/docxology/docxology">Source Repo</a>
         </div>
-        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed {generated_month_year()}</p>
+        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed August 2026</p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

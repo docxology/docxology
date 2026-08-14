@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T19:20:56Z",
+  "generated_at": "2026-08-14T21:30:43Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",

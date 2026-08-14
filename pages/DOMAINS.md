@@ -25,10 +25,13 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 **Learning path**
 
-- Read the comprehensive pillar guide on <a href='../computational-entomology.html'>Computational Entomology</a>.
-- Explore <a href='../insect-cognition.html'>Insect Cognition & Collective Intelligence</a> for distributed cognition models.
-- Start with the Stanford dissertation and Active Inferants for the biological foundations.
-- Use Ant Stack and Ento-Linguistics for recent computational extensions.
+- Read the foundational pillar guide on Computational Entomology for simulation models and neurogenomic algorithms.
+- Explore Insect Cognition &amp; Collective Intelligence for distributed cognition and stigmergic coordination.
+- Investigate behavioral neurochemistry in Measurement of Natural Variation in Neurotransmitter Content.
+- Study molecular and transcriptomic foundations in Gene Expression Variation in Harvester Ant Foragers.
+- Examine distributed active inference modeling in Active Inferants: An Active Inference Framework for Ant Colony Behavior.
+- Explore modern software implementations via MetaInformAnt and ActiveInferAnts.
+- Inspect global bibliometric archives via the FORMINDEX interface to FORMIS.
 
 **Selected works**
 
@@ -59,10 +62,13 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 
 **Learning path**
 
-- Read the long-form <a href='../active-inference.html'>Active Inference & Free Energy Principle Tutorial</a>.
-- Explore the <a href='../neurosymbolic-ai.html'>Neurosymbolic AI & Active Inference Guide</a> for hybrid AI agents.
-- Start with the literature review and ontology papers for foundational scope.
-- Move to GNN, CEREBRUM, and fep_lean for formalization and modeling.
+- Read the comprehensive Active Inference &amp; Free Energy Principle Tutorial.
+- Explore neurosymbolic integrations in Neurosymbolic AI &amp; Active Inference.
+- Trace multi-agent coordination theory in Shared Protentions in Multi-Agent Active Inference.
+- Examine distributed belief updates in Federated Inference and Belief Sharing.
+- Study formal mathematical notation systems in Generalized Notation Notation (GNN).
+- Explore theorem proving in Lean 4 via Towards Lean 4 Formalization of Active Inference and the fep_lean repository.
+- Engage with multi-agent orchestration and case-based reasoning in CEREBRUM and active_torchference.
 
 **Selected works**
 
@@ -94,10 +100,13 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 
 **Learning path**
 
-- Read the comprehensive guide on <a href='../cognitive-security.html'>What Is Cognitive Security?</a>.
-- Start with the three COGSEC books (IRT-20, NIM-21, CAT-22) for the program arc.
-- Read P3IF, Narrative Information Management, and Cognitive Integrity for the formal thread.
-- Use opentir and p3if as software companions.
+- Read the comprehensive explainer guide What Is Cognitive Security? Theory, Threat Models, and Defense.
+- Survey the foundational COGSEC publications: Information Resonance &amp; Narrative Information Ecosystems, Narrative Information Management (NIM-21), and Emergent Teams for Complex Threats.
+- Examine multiagent epistemic defense in Cognitive Integrity Framework: Formal Foundations (Part 1: Theory).
+- Analyze information commons and open standards in Structuring the Information Commons: Open Standards and Cognitive Security.
+- Study multi-perspective property framing in The P3IF: Properties, Processes, and Perspectives Inter-Framework.
+- Implement multi-agent cognitive security tools using p3if and the ATLAS framework.
+- Examine ecosystem dependency profiles and intelligence mapping via opentir.
 
 **Selected works**
 
@@ -125,9 +134,13 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 **Learning path**
 
-- Start with Blake & Fuller for the historical bridge.
-- Read QuadMath and Symergetics for the formal geometry thread.
-- Use the art gallery and Curio Cards materials for visual context.
+- Browse the curated visual archive on the Visual Art Gallery (940+ catalogued pen-and-ink drawings).
+- Explore early blockchain history with Curio Cards (Cards 24, 25, 26 — Complexity, Passion, Education; 2017).
+- Study prophetic economics and metaphysics in The Golden Compass and the Lunar Flux: William Blake and the Architecture of Value.
+- Examine anticipatory epistemology in Before Pragmatism Had a Name: Blake's America A Prophecy.
+- Investigate tetrahedral geometry and coordinate systems in QuadMath: An Analytical Review of 4D and Quadray Coordinates.
+- Interact with 3D synergetics environments through QuadCraft and ivm-xyz.
+- Explore digital knowledge graphs of synergetics with fuller-obsidian.
 
 **Selected works**
 
@@ -157,9 +170,12 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 
 **Learning path**
 
-- Start with the reproducible generative research template.
-- Use MDKV and Markdown Decision Process for structured document work.
-- Use the Discovery Engine and software catalog for agentic research navigation.
+- Explore the principles of verifiable open research in AI Provenance &amp; Verification Architecture.
+- Review the infrastructure-as-code research methodology in A template/ approach to Reproducible Generative Research.
+- Study structured document semantics in Markdown Decision Process Framework.
+- Inspect verified software execution records in the Reproducibility Ledger.
+- Explore modular AI-agent development environments with codomyrmex and template.
+- Query canonical knowledge graph endpoints via the Discovery Map and Data Catalog.
 
 **Selected works**
 
@@ -191,9 +207,12 @@ Honey bee evolution, gene expression variation, nuclear structure, population ge
 
 **Learning path**
 
-- Start with the harvester ant brain gene-expression and behavioral-genetics papers for the core empirical thread.
-- Read the honey bee evolution and population-genetics commentaries for comparative context.
-- Use the open biology textbook and course materials for foundational background.
+- Explore empirical behavioral genomics in Gene Expression Variation in Harvester Ant Forager Brains.
+- Study tissue-specific transcriptomic pipelines in Pipeline for Tissue-Specific Gene Expression Meta-Analysis in Honey Bees.
+- Read evolutionary and developmental synthesis in A Variational Synthesis of Evolutionary and Developmental Dynamics.
+- Investigate cellular biophysics and mechanobiology in Cells, Mechanobiology, and Osteopathy.
+- Review undergraduate open curriculum materials in biology_textbook, biol-1, and biol-8.
+- Query public biomedical indexing records directly via the PubMed Author Query and Europe PMC.
 
 **Selected works**
 
@@ -218,13 +237,16 @@ Active Inference Institute programs, infrastructure, textbook cohorts, and organ
 
 - Works: 6
 - Selected repositories: 5
-- Collaborator context: Active Inference Institute contributors, Institute program participants
+- Collaborator context: Active Inference Institute educators and contributors, Institute program participants
 
 **Learning path**
 
-- Start with the Active Inference Institute ecosystem and textbook materials.
-- Follow the institute software and formalization repositories for implementation context.
-- Use the Discovery and Data Catalog pages for machine-readable routes.
+- Discover the organizational mission, governance, and programs on the Active Inference Institute Official Portal.
+- Survey ecosystem development and open research milestones in The Active Inference Institute &amp; Active Inference Ecosystem (v3, 2025 snapshot).
+- Explore ontology standardization efforts in Aligning Active Inference Ontology to SUMO.
+- Participate in community education through the Textbook Group Cohorts and Institute Video Archives.
+- Engage with formal mathematical specifications on the fep_lean repository.
+- Review verified non-profit records via the ProPublica Nonprofit Explorer (EIN 88-2985125).
 
 **Selected works**
 
@@ -253,9 +275,12 @@ Talks, courses, presentations, and media artifacts connected to the research and
 
 **Learning path**
 
-- Use the video index for talks and transcript-linked media.
-- Use the course and presentation rows in the bibliography for structured teaching routes.
-- Cross-reference related works through the canonical work pages.
+- Browse 500+ indexed lectures, symposia, and live streams on the Video Index &amp; Interactive Timeline.
+- Explore media appearances, podcasts, and interview features on the Media Appearances Hub.
+- Study active-inference live streams in Active Inference Journal — 500+ Videos with Transcripts.
+- Access generative biology curriculum and lecture materials in Introduction to Biology: A Generative Approach.
+- Review transcript processing software pipelines in the Journal-Utilities Software Release (Zenodo 18686966).
+- Explore public video channels on Active Inference YouTube and Personal YouTube Channel.
 
 **Selected works**
 

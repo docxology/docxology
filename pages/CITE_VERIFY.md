@@ -57,12 +57,14 @@ python3 code/orchestrators/export_bibliography.py
 
 ## Verification Rules
 
-1. Treat [`BIBLIOGRAPHY.md`](BIBLIOGRAPHY.md) as the curated publication source of truth.
-2. Treat [`publications.html`](../publications.html) as the canonical HTML rendering of that bibliography.
-3. Treat [`SOFTWARE.md`](SOFTWARE.md) as the curated software catalog.
-4. Treat [`DISCOVERY.md`](DISCOVERY.md) as the public-source query map.
-5. Treat [`EVIDENCE.md`](EVIDENCE.md) and [`data/claims.json`](../data/claims.json) as the current claim ledger.
-6. Treat public API counts as freshness checks, not automatic replacements for curated site copy.
+1. Treat [`BIBLIOGRAPHY.md`](BIBLIOGRAPHY.md) as the curated publication source of truth (rendered at [`publications.html`](../publications.html) with individual [`works/`](../works/) pages).
+2. Treat [`SOFTWARE.md`](SOFTWARE.md) as the curated software catalog (rendered at [`software.html`](../software.html) and backed by [`data/github-repositories.json`](../data/github-repositories.json)).
+3. Treat [`DISCOVERY.md`](DISCOVERY.md) and [`discovery.html`](../discovery.html) as the canonical public-source query map.
+4. Treat [`EVIDENCE.md`](EVIDENCE.md) and [`data/claims.json`](../data/claims.json) as the current claim ledger.
+5. Treat [`COLLABORATORS.md`](COLLABORATORS.md) and [`collaborators.html`](../collaborators.html) as the verified institutional network and co-author mapping.
+6. Treat [`MEDIA.md`](MEDIA.md), [`VIDEOS.md`](VIDEOS.md), and [`media.html`](../media.html) as the records of lectures, podcasts, and video series.
+7. Treat [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) and [`reproducibility.html`](../reproducibility.html) as the executable reproducibility ledger.
+8. Treat public API counts as freshness checks, not automatic replacements for curated site copy.
 
 ## Humility Rules for Reuse
 

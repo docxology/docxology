@@ -51,6 +51,14 @@
         .work-row{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:start;padding:.9rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
         .work-row .year{color:var(--gold);font-weight:700}
         .work-row .venue{color:var(--text-muted);font-size:.8rem}
+        .work-desc{font-size:.84rem;color:var(--text-secondary);margin-top:.35rem;line-height:1.5}
+        .work-meta-links{margin-top:.4rem;display:flex;gap:.75rem;font-size:.78rem;flex-wrap:wrap}
+        .work-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .work-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .repo-meta-links{margin-top:.5rem;display:flex;gap:.75rem;font-size:.8rem;flex-wrap:wrap}
+        .repo-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .repo-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .api-card{display:flex;flex-direction:column;justify-content:space-between}
         @media(max-width:760px){.work-row{grid-template-columns:1fr}}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
     </style>
@@ -145,69 +153,129 @@
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Selected Works</h2>
-                <p>Newest and most relevant entries for this domain.</p>
+                <p>Newest and most relevant entries for this domain with abstracts and full-text links.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="work-list">
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026TemplateApproachReproducibleGenerative001.html">A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.16903351" aria-label="Primary link for A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication">Link</a>
+                    <div>
+                        <a href="works/Friedman2026TemplateApproachReproducibleGenerative001.html"><strong>A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools. template/ applies Infrastructure as…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.16903351">DOI: 10.5281/zenodo.16903351</a> · <a href="papers/2026_ReproducibleResearch/">Paper Folder</a> · <a href="works/Friedman2026TemplateApproachReproducibleGenerative001.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.16903351" aria-label="Primary link for A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026IntroductionBiologyGenerativeApproach117.html">Introduction to Biology: A Generative Approach</a><div class="venue">Zenodo · Book</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20286477" aria-label="Primary link for Introduction to Biology: A Generative Approach">Link</a>
+                    <div>
+                        <a href="works/Friedman2026IntroductionBiologyGenerativeApproach117.html"><strong>Introduction to Biology: A Generative Approach</strong></a>
+                        <div class="venue">Zenodo · Book</div>
+                        <div class="work-desc">Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20286477">DOI: 10.5281/zenodo.20286477</a> · <a href="papers/2026_BiologyTextbook/">Paper Folder</a> · <a href="works/Friedman2026IntroductionBiologyGenerativeApproach117.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20286477" aria-label="Primary link for Introduction to Biology: A Generative Approach" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026PolicyEntanglementActiveInference119.html">Policy Entanglement in Active Inference</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20418904" aria-label="Primary link for Policy Entanglement in Active Inference">Link</a>
+                    <div>
+                        <a href="works/Friedman2026PolicyEntanglementActiveInference119.html"><strong>Policy Entanglement in Active Inference</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20418904">DOI: 10.5281/zenodo.20418904</a> · <a href="papers/2026_PolicyEntanglementActive/">Paper Folder</a> · <a href="works/Friedman2026PolicyEntanglementActiveInference119.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20418904" aria-label="Primary link for Policy Entanglement in Active Inference" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026BoundedAutoResearchTinyReproducible120.html">Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20417016" aria-label="Primary link for Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task">Link</a>
+                    <div>
+                        <a href="works/Friedman2026BoundedAutoResearchTinyReproducible120.html"><strong>Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that turns an AutoResearch loop into ordinary…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20417016">DOI: 10.5281/zenodo.20417016</a> · <a href="papers/2026_BoundedAutoResearchTiny/">Paper Folder</a> · <a href="works/Friedman2026BoundedAutoResearchTinyReproducible120.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20417016" aria-label="Primary link for Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026ConvergenceAnalysisGradientDescent121.html">Convergence Analysis of Gradient Descent Optimization</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20417136" aria-label="Primary link for Convergence Analysis of Gradient Descent Optimization">Link</a>
+                    <div>
+                        <a href="works/Friedman2026ConvergenceAnalysisGradientDescent121.html"><strong>Convergence Analysis of Gradient Descent Optimization</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20417136">DOI: 10.5281/zenodo.20417136</a> · <a href="papers/2026_ConvergenceAnalysisGradient/">Paper Folder</a> · <a href="works/Friedman2026ConvergenceAnalysisGradientDescent121.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20417136" aria-label="Primary link for Convergence Analysis of Gradient Descent Optimization" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026EditorialQualityAtScale122.html">Editorial Quality at Scale: A Reproducible Prose-Review Pipeline</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20417104" aria-label="Primary link for Editorial Quality at Scale: A Reproducible Prose-Review Pipeline">Link</a>
+                    <div>
+                        <a href="works/Friedman2026EditorialQualityAtScale122.html"><strong>Editorial Quality at Scale: A Reproducible Prose-Review Pipeline</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template&#x27;s…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20417104">DOI: 10.5281/zenodo.20417104</a> · <a href="papers/2026_EditorialQualityAt/">Paper Folder</a> · <a href="works/Friedman2026EditorialQualityAtScale122.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20417104" aria-label="Primary link for Editorial Quality at Scale: A Reproducible Prose-Review Pipeline" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026TemplateApproachReproducibleGenerative123.html">A template/ approach to Reproducible Generative Research</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20419007" aria-label="Primary link for A template/ approach to Reproducible Generative Research">Link</a>
+                    <div>
+                        <a href="works/Friedman2026TemplateApproachReproducibleGenerative123.html"><strong>A template/ approach to Reproducible Generative Research</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20419007">DOI: 10.5281/zenodo.20419007</a> · <a href="papers/2026_TemplateApproachReproducible/">Paper Folder</a> · <a href="works/Friedman2026TemplateApproachReproducibleGenerative123.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20419007" aria-label="Primary link for A template/ approach to Reproducible Generative Research" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026ActiveInferenceMultiTrack124.html">Active Inference Multi-Track Exemplar</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20417021" aria-label="Primary link for Active Inference Multi-Track Exemplar">Link</a>
+                    <div>
+                        <a href="works/Friedman2026ActiveInferenceMultiTrack124.html"><strong>Active Inference Multi-Track Exemplar</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">We study a minimal Active Inference stack on toy models: a Bernoulli–Ising analytical oracle, a pymdp T-maze rollout, and a sheaf-indexed compose contract that binds 34 fragment…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20417021">DOI: 10.5281/zenodo.20417021</a> · <a href="papers/2026_ActiveInferenceMulti/">Paper Folder</a> · <a href="works/Friedman2026ActiveInferenceMultiTrack124.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20417021" aria-label="Primary link for Active Inference Multi-Track Exemplar" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026BeeStackEvidenceTypedScaffold125.html">BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20420556" aria-label="Primary link for BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation">Link</a>
+                    <div>
+                        <a href="works/Friedman2026BeeStackEvidenceTypedScaffold125.html"><strong>BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20420556">DOI: 10.5281/zenodo.20420556</a> · <a href="papers/2026_BeeStack/">Paper Folder</a> · <a href="works/Friedman2026BeeStackEvidenceTypedScaffold125.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20420556" aria-label="Primary link for BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026WhenDoBugsSee126.html">When do bugs see (infra)red?</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20450880" aria-label="Primary link for When do bugs see (infra)red?">Link</a>
+                    <div>
+                        <a href="works/Friedman2026WhenDoBugsSee126.html"><strong>When do bugs see (infra)red?</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20450880">DOI: 10.5281/zenodo.20450880</a> · <a href="papers/2026_WhenDoBugs/">Paper Folder</a> · <a href="works/Friedman2026WhenDoBugsSee126.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20450880" aria-label="Primary link for When do bugs see (infra)red?" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026SelfImprovementAgentHarness127.html">Self-Improvement Agent Harness: A Deterministic SIA Exemplar</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20453879" aria-label="Primary link for Self-Improvement Agent Harness: A Deterministic SIA Exemplar">Link</a>
+                    <div>
+                        <a href="works/Friedman2026SelfImprovementAgentHarness127.html"><strong>Self-Improvement Agent Harness: A Deterministic SIA Exemplar</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">This exemplar documents template sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in the Self-Improvement Agents specification…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20453879">DOI: 10.5281/zenodo.20453879</a> · <a href="papers/2026_SelfImprovementAgent/">Paper Folder</a> · <a href="works/Friedman2026SelfImprovementAgentHarness127.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20453879" aria-label="Primary link for Self-Improvement Agent Harness: A Deterministic SIA Exemplar" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026MusicNeverStoppedGrateful150.html">The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20482025" aria-label="Primary link for The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation">Link</a>
+                    <div>
+                        <a href="works/Friedman2026MusicNeverStoppedGrateful150.html"><strong>The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20482025">DOI: 10.5281/zenodo.20482025</a> · <a href="papers/2026_MusicNeverStopped/">Paper Folder</a> · <a href="works/Friedman2026MusicNeverStoppedGrateful150.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20482025" aria-label="Primary link for The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
             </div>
             <p class="text-center mt-2"><a href="publications.html" class="btn btn-gold">Open full bibliography</a></p>
@@ -215,67 +283,111 @@
         <section class="section">
             <div class="section-header">
                 <h2>Related Software</h2>
-                <p>Repository entry points for implementation, data, and teaching work.</p>
+                <p>Repository entry points for implementation, companion papers, data, and teaching work.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="mini-grid">
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/template">template</a></h3>
                     <p>Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo</p>
-                    <p class="text-muted">Python · ⭐ 17</p>
+                    <p class="text-muted">Python · ⭐ 17 · Updated 2026-06</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/template">GitHub Repo</a> · <a href="papers/2026_AutopoieticProjectGeneration/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.20584820">Zenodo Release</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/mdkv">mdkv</a></h3>
                     <p>MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2025-08</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/mdkv">GitHub Repo</a> · <a href="papers/2025_MDKV/">Companion Paper</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/markdown_decision_process">markdown_decision_process</a></h3>
                     <p>Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2025-10</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/markdown_decision_process">GitHub Repo</a> · <a href="papers/2025_MarkdownDecisionProcess/">Companion Paper</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/steganographer">steganographer</a></h3>
                     <p>High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration</p>
-                    <p class="text-muted">Rust · ⭐ 1</p>
+                    <p class="text-muted">Rust · ⭐ 1 · Updated 2026-04</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/steganographer">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/timeline_generator">timeline_generator</a></h3>
                     <p>Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller&#x27;s network</p>
-                    <p class="text-muted">TypeScript · ⭐ 4</p>
+                    <p class="text-muted">TypeScript · ⭐ 4 · Updated 2026-04</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/timeline_generator">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/codomyrmex">codomyrmex</a></h3>
                     <p>AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · Zenodo</p>
-                    <p class="text-muted">Python · ⭐ 6</p>
+                    <p class="text-muted">Python · ⭐ 6 · Updated 2026-05</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/codomyrmex">GitHub Repo</a> · <a href="papers/2026_Codomyrmex/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.21750800">Zenodo Release</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/biology_textbook">biology_textbook</a></h3>
                     <p>Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2026-05</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/biology_textbook">GitHub Repo</a> · <a href="papers/2026_BiologyTextbook/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.20286478">Zenodo Release</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/biol-1">biol-1</a></h3>
                     <p>BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content</p>
-                    <p class="text-muted">HTML · ⭐ 0</p>
+                    <p class="text-muted">HTML · ⭐ 0 · Updated 2026-03</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/biol-1">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/biol-8">biol-8</a></h3>
                     <p>BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content</p>
-                    <p class="text-muted">HTML · ⭐ 0</p>
+                    <p class="text-muted">HTML · ⭐ 0 · Updated 2026-03</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/biol-8">GitHub Repo</a></div>
                 </article>
             </div>
         </section>
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Learning Path</h2>
-                <p>A compact route through the material.</p>
+                <p>A structured, cross-linked route through tutorials, pillar guides, foundational papers, and software repositories.</p>
                 <div class="section-divider"></div>
             </div>
-            <div class="mini-card"><ul><li>Start with the reproducible generative research template.</li>
-<li>Use MDKV and Markdown Decision Process for structured document work.</li>
-<li>Use the Discovery Engine and software catalog for agentic research navigation.</li></ul></div>
-            <p class="text-center mt-2"><a href="pages/DOMAINS.md" class="btn btn-outline">Markdown domain map</a></p>
+            <div class="mini-card"><ul><li>Explore the principles of verifiable open research in <a href='cite-verify.html'>AI Provenance &amp; Verification Architecture</a>.</li>
+<li>Review the infrastructure-as-code research methodology in <a href='works/Friedman2026TemplateApproachReproducibleGenerative001.html'>A template/ approach to Reproducible Generative Research</a>.</li>
+<li>Study structured document semantics in <a href='works/Friedman2025MarkdownDecisionProcessFramework015.html'>Markdown Decision Process Framework</a>.</li>
+<li>Inspect verified software execution records in the <a href='reproducibility.html'>Reproducibility Ledger</a>.</li>
+<li>Explore modular AI-agent development environments with <a href='https://github.com/docxology/codomyrmex'>codomyrmex</a> and <a href='https://github.com/docxology/template'>template</a>.</li>
+<li>Query canonical knowledge graph endpoints via the <a href='discovery.html'>Discovery Map</a> and <a href='catalog.html'>Data Catalog</a>.</li></ul></div>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h2>Public APIs &amp; Discovery Endpoints</h2>
+                <p>Machine-readable endpoints for querying research metadata and persistent identifiers.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="mini-grid">
+                <article class="mini-card api-card">
+                    <h3><a href="https://orcid.org/0000-0001-6232-9096">ORCID API</a></h3>
+                    <p>Persistent researcher identity record (0000-0001-6232-9096) linking published works and verified peer reviews.</p>
+                    <p class="text-muted"><a href="https://pub.orcid.org/v3.0/0000-0001-6232-9096">pub.orcid.org/v3.0/0000-0001-6232-9096</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22">Zenodo REST API</a></h3>
+                    <p>Open-access deposits, software releases, preprints, and dataset versions indexed by ORCID.</p>
+                    <p class="text-muted"><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22">Zenodo Creator Query</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">Crossref Works API</a></h3>
+                    <p>Publisher DOI metadata records, license information, and formal citation relations.</p>
+                    <p class="text-muted"><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">api.crossref.org/works</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.github.com/users/docxology">GitHub REST API</a></h3>
+                    <p>Repository metadata, release artifacts, and open-source software inventory.</p>
+                    <p class="text-muted"><a href="https://api.github.com/users/docxology/repos">api.github.com/users/docxology/repos</a></p>
+                </article>
+            </div>
+            <p class="text-center mt-2">
+                <a href="discovery.html" class="btn btn-outline">Full Discovery Map</a>
+                <a href="pages/DOMAINS.md" class="btn btn-outline">Markdown Domain Map</a>
+            </p>
         </section>
     </main>
     <footer role="contentinfo">
@@ -286,10 +398,10 @@
             <a href="software.html">Software</a>
             <a href="search.html">Search</a>
             <a href="discovery.html">Discovery</a>
-            <a href="cite-verify.html">Cite & Verify</a>
+            <a href="cite-verify.html">Cite &amp; Verify</a>
             <a href="https://github.com/docxology/docxology">Source Repo</a>
         </div>
-        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed {generated_month_year()}</p>
+        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed August 2026</p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

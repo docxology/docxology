@@ -51,6 +51,14 @@
         .work-row{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:start;padding:.9rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
         .work-row .year{color:var(--gold);font-weight:700}
         .work-row .venue{color:var(--text-muted);font-size:.8rem}
+        .work-desc{font-size:.84rem;color:var(--text-secondary);margin-top:.35rem;line-height:1.5}
+        .work-meta-links{margin-top:.4rem;display:flex;gap:.75rem;font-size:.78rem;flex-wrap:wrap}
+        .work-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .work-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .repo-meta-links{margin-top:.5rem;display:flex;gap:.75rem;font-size:.8rem;flex-wrap:wrap}
+        .repo-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .repo-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .api-card{display:flex;flex-direction:column;justify-content:space-between}
         @media(max-width:760px){.work-row{grid-template-columns:1fr}}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
     </style>
@@ -145,69 +153,129 @@
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Selected Works</h2>
-                <p>Newest and most relevant entries for this domain.</p>
+                <p>Newest and most relevant entries for this domain with abstracts and full-text links.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="work-list">
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026EntoLinguisticsLanguageAmbiguity109.html">Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.19574117" aria-label="Primary link for Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology">Link</a>
+                    <div>
+                        <a href="works/Friedman2026EntoLinguisticsLanguageAmbiguity109.html"><strong>Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Scientific language does not merely describe biological phenomena; it actively constitutes the generative models through which researchers parse complex systems. This paper makes…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.19574117">DOI: 10.5281/zenodo.19574117</a> · <a href="papers/2026_EntoLinguistics/">Paper Folder</a> · <a href="works/Friedman2026EntoLinguisticsLanguageAmbiguity109.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.19574117" aria-label="Primary link for Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026IllegalStatesMostlyUnrepresentable191.html">Illegal States, Mostly Unrepresentable</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.21298885" aria-label="Primary link for Illegal States, Mostly Unrepresentable">Link</a>
+                    <div>
+                        <a href="works/Friedman2026IllegalStatesMostlyUnrepresentable191.html"><strong>Illegal States, Mostly Unrepresentable</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">This paper presents a strongly-typed, decentralized multiagent simulation — an ant-robot colony — as the computational exemplar of the Research Project Template…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.21298885">DOI: 10.5281/zenodo.21298885</a> · <a href="papers/2026_IllegalStatesMostly/">Paper Folder</a> · <a href="works/Friedman2026IllegalStatesMostlyUnrepresentable191.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.21298885" aria-label="Primary link for Illegal States, Mostly Unrepresentable" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025ComputationalComplexityEnergeticsAnt011.html">Computational Complexity and Energetics of the Ant Stack</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.17238736" aria-label="Primary link for Computational Complexity and Energetics of the Ant Stack">Link</a>
+                    <div>
+                        <a href="works/Friedman2025ComputationalComplexityEnergeticsAnt011.html"><strong>Computational Complexity and Energetics of the Ant Stack</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization. We connect concepts from information theory, complex…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.17238736">DOI: 10.5281/zenodo.17238736</a> · <a href="papers/2025_AntStackComplexity/">Paper Folder</a> · <a href="works/Friedman2025ComputationalComplexityEnergeticsAnt011.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.17238736" aria-label="Primary link for Computational Complexity and Energetics of the Ant Stack" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025AntStack025.html">The Ant Stack</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.16782756" aria-label="Primary link for The Ant Stack">Link</a>
+                    <div>
+                        <a href="works/Friedman2025AntStack025.html"><strong>The Ant Stack</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.16782756">DOI: 10.5281/zenodo.16782756</a> · <a href="papers/2025_AntStack/">Paper Folder</a> · <a href="works/Friedman2025AntStack025.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.16782756" aria-label="Primary link for The Ant Stack" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025TowardsScienceConsciousnessSocial028.html">Towards a Science of Consciousness and Social Complexity... For Ants</a><div class="venue">Book Chapter · Paper</div></div>
-                    <a href="https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes" aria-label="Primary link for Towards a Science of Consciousness and Social Complexity... For Ants">Link</a>
+                    <div>
+                        <a href="works/Friedman2025TowardsScienceConsciousnessSocial028.html"><strong>Towards a Science of Consciousness and Social Complexity... For Ants</strong></a>
+                        <div class="venue">Book Chapter · Paper</div>
+                        <div class="work-desc">Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research. We examine how…</div>
+                        <div class="work-meta-links"><a href="papers/2025_ConsciousnessAnts/">Paper Folder</a> · <a href="works/Friedman2025TowardsScienceConsciousnessSocial028.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes" aria-label="Primary link for Towards a Science of Consciousness and Social Complexity... For Ants" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2024</div>
-                    <div><a href="works/Friedman2024ChemicalTranscriptomicDiversityDo032.html">Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea</a><div class="venue">Ecology &amp; Evolution · Paper</div></div>
-                    <a href="https://doi.org/10.1002/ece3.70063" aria-label="Primary link for Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea">Link</a>
+                    <div>
+                        <a href="works/Friedman2024ChemicalTranscriptomicDiversityDo032.html"><strong>Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea</strong></a>
+                        <div class="venue">Ecology &amp; Evolution · Paper</div>
+                        <div class="work-desc">This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology. Blattodea encompass cockroaches and termites, representing a major insect order with…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.1002/ece3.70063">DOI: 10.1002/ece3.70063</a> · <a href="papers/2024_BlattodeaDiversity/">Paper Folder</a> · <a href="works/Friedman2024ChemicalTranscriptomicDiversityDo032.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.1002/ece3.70063" aria-label="Primary link for Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2023</div>
-                    <div><a href="works/Friedman2023SinglePheromoneModelAccounts046.html">A single-pheromone model accounts for empirical patterns of ant colony foraging</a><div class="venue">Cognitive Systems Research · Paper</div></div>
-                    <a href="https://doi.org/10.1016/j.cogsys.2023.02.005" aria-label="Primary link for A single-pheromone model accounts for empirical patterns of ant colony foraging">Link</a>
+                    <div>
+                        <a href="works/Friedman2023SinglePheromoneModelAccounts046.html"><strong>A single-pheromone model accounts for empirical patterns of ant colony foraging</strong></a>
+                        <div class="venue">Cognitive Systems Research · Paper</div>
+                        <div class="work-desc">We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones. Our model…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.1016/j.cogsys.2023.02.005">DOI: 10.1016/j.cogsys.2023.02.005</a> · <a href="papers/2023_SinglePheromone/">Paper Folder</a> · <a href="works/Friedman2023SinglePheromoneModelAccounts046.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.1016/j.cogsys.2023.02.005" aria-label="Primary link for A single-pheromone model accounts for empirical patterns of ant colony foraging" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2023</div>
-                    <div><a href="works/Friedman2023SnapshotPipelineTissueSpecific047.html">A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.10400744" aria-label="Primary link for A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees">Link</a>
+                    <div>
+                        <a href="works/Friedman2023SnapshotPipelineTissueSpecific047.html"><strong>A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.10400744">DOI: 10.5281/zenodo.10400744</a> · <a href="papers/2023_HoneyBeeGeneExpression/">Paper Folder</a> · <a href="works/Friedman2023SnapshotPipelineTissueSpecific047.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.10400744" aria-label="Primary link for A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2023</div>
-                    <div><a href="works/Friedman2023ExperimentalEntomologyAgeVideo055.html">Experimental Entomology in the Age of Video</a><div class="venue">JoVE · Paper</div></div>
-                    <a href="https://doi.org/10.3791/65002" aria-label="Primary link for Experimental Entomology in the Age of Video">Link</a>
+                    <div>
+                        <a href="works/Friedman2023ExperimentalEntomologyAgeVideo055.html"><strong>Experimental Entomology in the Age of Video</strong></a>
+                        <div class="venue">JoVE · Paper</div>
+                        <div class="work-desc">We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.3791/65002">DOI: 10.3791/65002</a> · <a href="papers/2023_VideoEntomology/">Paper Folder</a> · <a href="works/Friedman2023ExperimentalEntomologyAgeVideo055.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.3791/65002" aria-label="Primary link for Experimental Entomology in the Age of Video" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2021</div>
-                    <div><a href="works/Friedman2021ActiveInferantsActiveInference075.html">Active Inferants: An Active Inference Framework for Ant Colony Behavior</a><div class="venue">Frontiers in Behavioral Neuroscience · Paper</div></div>
-                    <a href="https://doi.org/10.3389/fnbeh.2021.647732" aria-label="Primary link for Active Inferants: An Active Inference Framework for Ant Colony Behavior">Link</a>
+                    <div>
+                        <a href="works/Friedman2021ActiveInferantsActiveInference075.html"><strong>Active Inferants: An Active Inference Framework for Ant Colony Behavior</strong></a>
+                        <div class="venue">Frontiers in Behavioral Neuroscience · Paper</div>
+                        <div class="work-desc">In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.3389/fnbeh.2021.647732">DOI: 10.3389/fnbeh.2021.647732</a> · <a href="papers/2021_ActiveInferants/">Paper Folder</a> · <a href="works/Friedman2021ActiveInferantsActiveInference075.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.3389/fnbeh.2021.647732" aria-label="Primary link for Active Inferants: An Active Inference Framework for Ant Colony Behavior" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2020</div>
-                    <div><a href="works/Friedman2020DistributedPhysiologyMolecularBasis084.html">Distributed physiology and the molecular basis of social life in eusocial insects</a><div class="venue">Hormones &amp; Behavior · Paper</div></div>
-                    <a href="https://doi.org/10.1016/j.yhbeh.2020.104757" aria-label="Primary link for Distributed physiology and the molecular basis of social life in eusocial insects">Link</a>
+                    <div>
+                        <a href="works/Friedman2020DistributedPhysiologyMolecularBasis084.html"><strong>Distributed physiology and the molecular basis of social life in eusocial insects</strong></a>
+                        <div class="venue">Hormones &amp; Behavior · Paper</div>
+                        <div class="work-desc">Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.1016/j.yhbeh.2020.104757">DOI: 10.1016/j.yhbeh.2020.104757</a> · <a href="papers/2020_DistributedPhysiology/">Paper Folder</a> · <a href="works/Friedman2020DistributedPhysiologyMolecularBasis084.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.1016/j.yhbeh.2020.104757" aria-label="Primary link for Distributed physiology and the molecular basis of social life in eusocial insects" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2020</div>
-                    <div><a href="works/Friedman2020GeneExpressionVariationBrains086.html">Gene expression variation in the brains of harvester ant foragers is associated with collective behavior</a><div class="venue">Communications Biology · Paper</div></div>
-                    <a href="https://doi.org/10.1038/s42003-020-0813-8" aria-label="Primary link for Gene expression variation in the brains of harvester ant foragers is associated with collective behavior">Link</a>
+                    <div>
+                        <a href="works/Friedman2020GeneExpressionVariationBrains086.html"><strong>Gene expression variation in the brains of harvester ant foragers is associated with collective behavior</strong></a>
+                        <div class="venue">Communications Biology · Paper</div>
+                        <div class="work-desc">Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.1038/s42003-020-0813-8">DOI: 10.1038/s42003-020-0813-8</a> · <a href="papers/2020_GeneExpressionForagers/">Paper Folder</a> · <a href="works/Friedman2020GeneExpressionVariationBrains086.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.1038/s42003-020-0813-8" aria-label="Primary link for Gene expression variation in the brains of harvester ant foragers is associated with collective behavior" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
             </div>
             <p class="text-center mt-2"><a href="publications.html" class="btn btn-gold">Open full bibliography</a></p>
@@ -215,58 +283,100 @@
         <section class="section">
             <div class="section-header">
                 <h2>Related Software</h2>
-                <p>Repository entry points for implementation, data, and teaching work.</p>
+                <p>Repository entry points for implementation, companion papers, data, and teaching work.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="mini-grid">
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/MetaInformAnt">MetaInformAnt</a></h3>
                     <p>Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond</p>
-                    <p class="text-muted">Python · ⭐ 6</p>
+                    <p class="text-muted">Python · ⭐ 6 · Updated 2026-05</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/MetaInformAnt">GitHub Repo</a> · <a href="papers/2021_ActiveInferants/">Companion Paper</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/ActiveInferenceInstitute/ActiveInferAnts">ActiveInferAnts</a></h3>
                     <p>Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference</p>
-                    <p class="text-muted">Python · ⭐ 28</p>
+                    <p class="text-muted">Python · ⭐ 28 · Updated 2024</p>
+                    <div class="repo-meta-links"><a href="https://github.com/ActiveInferenceInstitute/ActiveInferAnts">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/ActiveInferAnts">ActiveInferAnts</a></h3>
                     <p>Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy</p>
-                    <p class="text-muted">Python · ⭐ 3</p>
+                    <p class="text-muted">Python · ⭐ 3 · Updated 2026-04</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/ActiveInferAnts">GitHub Repo</a> · <a href="papers/2021_ActiveInferants/">Companion Paper</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/ant_stack">ant_stack</a></h3>
                     <p>The Ant Stack — layered computational model of collective ant-colony intelligence</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2025-09</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/ant_stack">GitHub Repo</a> · <a href="papers/2025_AntStack/">Companion Paper</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/ant-pheromone">ant-pheromone</a></h3>
                     <p>Computational simulation of ant pheromone trail dynamics and stigmergic communication</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2022-09</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/ant-pheromone">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/ento_linguistics">ento_linguistics</a></h3>
                     <p>Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2026-04</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/ento_linguistics">GitHub Repo</a> · <a href="papers/2026_EntoLinguistics/">Companion Paper</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/FORMINDEX">FORMINDEX</a></h3>
                     <p>Analysis and tooling around FORMIS, the world&#x27;s largest ant-literature database; bibliometric mining and structured index generation</p>
-                    <p class="text-muted">Rich Text Format · ⭐ 3</p>
+                    <p class="text-muted">Rich Text Format · ⭐ 3 · Updated 2024-10</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/FORMINDEX">GitHub Repo</a></div>
                 </article>
             </div>
         </section>
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Learning Path</h2>
-                <p>A compact route through the material.</p>
+                <p>A structured, cross-linked route through tutorials, pillar guides, foundational papers, and software repositories.</p>
                 <div class="section-divider"></div>
             </div>
-            <div class="mini-card"><ul><li>Read the comprehensive pillar guide on &lt;a href=&#x27;../computational-entomology.html&#x27;&gt;Computational Entomology&lt;/a&gt;.</li>
-<li>Explore &lt;a href=&#x27;../insect-cognition.html&#x27;&gt;Insect Cognition &amp; Collective Intelligence&lt;/a&gt; for distributed cognition models.</li>
-<li>Start with the Stanford dissertation and Active Inferants for the biological foundations.</li>
-<li>Use Ant Stack and Ento-Linguistics for recent computational extensions.</li></ul></div>
-            <p class="text-center mt-2"><a href="pages/DOMAINS.md" class="btn btn-outline">Markdown domain map</a></p>
+            <div class="mini-card"><ul><li>Read the foundational pillar guide on <a href='computational-entomology.html'>Computational Entomology</a> for simulation models and neurogenomic algorithms.</li>
+<li>Explore <a href='insect-cognition.html'>Insect Cognition &amp; Collective Intelligence</a> for distributed cognition and stigmergic coordination.</li>
+<li>Investigate behavioral neurochemistry in <a href='works/Friedman2020MeasurementNaturalVariationNeurotransmitter088.html'>Measurement of Natural Variation in Neurotransmitter Content</a>.</li>
+<li>Study molecular and transcriptomic foundations in <a href='works/Friedman2020GeneExpressionVariationBrains086.html'>Gene Expression Variation in Harvester Ant Foragers</a>.</li>
+<li>Examine distributed active inference modeling in <a href='works/Friedman2021ActiveInferantsActiveInference075.html'>Active Inferants: An Active Inference Framework for Ant Colony Behavior</a>.</li>
+<li>Explore modern software implementations via <a href='https://github.com/docxology/MetaInformAnt'>MetaInformAnt</a> and <a href='https://github.com/ActiveInferenceInstitute/ActiveInferAnts'>ActiveInferAnts</a>.</li>
+<li>Inspect global bibliometric archives via the <a href='https://github.com/docxology/FORMINDEX'>FORMINDEX</a> interface to FORMIS.</li></ul></div>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h2>Public APIs &amp; Discovery Endpoints</h2>
+                <p>Machine-readable endpoints for querying research metadata and persistent identifiers.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="mini-grid">
+                <article class="mini-card api-card">
+                    <h3><a href="https://orcid.org/0000-0001-6232-9096">ORCID API</a></h3>
+                    <p>Persistent researcher identity record (0000-0001-6232-9096) linking published works and verified peer reviews.</p>
+                    <p class="text-muted"><a href="https://pub.orcid.org/v3.0/0000-0001-6232-9096">pub.orcid.org/v3.0/0000-0001-6232-9096</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22">Zenodo REST API</a></h3>
+                    <p>Open-access deposits, software releases, preprints, and dataset versions indexed by ORCID.</p>
+                    <p class="text-muted"><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22">Zenodo Creator Query</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">Crossref Works API</a></h3>
+                    <p>Publisher DOI metadata records, license information, and formal citation relations.</p>
+                    <p class="text-muted"><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">api.crossref.org/works</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.github.com/users/docxology">GitHub REST API</a></h3>
+                    <p>Repository metadata, release artifacts, and open-source software inventory.</p>
+                    <p class="text-muted"><a href="https://api.github.com/users/docxology/repos">api.github.com/users/docxology/repos</a></p>
+                </article>
+            </div>
+            <p class="text-center mt-2">
+                <a href="discovery.html" class="btn btn-outline">Full Discovery Map</a>
+                <a href="pages/DOMAINS.md" class="btn btn-outline">Markdown Domain Map</a>
+            </p>
         </section>
     </main>
     <footer role="contentinfo">
@@ -277,10 +387,10 @@
             <a href="software.html">Software</a>
             <a href="search.html">Search</a>
             <a href="discovery.html">Discovery</a>
-            <a href="cite-verify.html">Cite & Verify</a>
+            <a href="cite-verify.html">Cite &amp; Verify</a>
             <a href="https://github.com/docxology/docxology">Source Repo</a>
         </div>
-        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed {generated_month_year()}</p>
+        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed August 2026</p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

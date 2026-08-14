@@ -51,6 +51,14 @@
         .work-row{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:start;padding:.9rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
         .work-row .year{color:var(--gold);font-weight:700}
         .work-row .venue{color:var(--text-muted);font-size:.8rem}
+        .work-desc{font-size:.84rem;color:var(--text-secondary);margin-top:.35rem;line-height:1.5}
+        .work-meta-links{margin-top:.4rem;display:flex;gap:.75rem;font-size:.78rem;flex-wrap:wrap}
+        .work-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .work-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .repo-meta-links{margin-top:.5rem;display:flex;gap:.75rem;font-size:.8rem;flex-wrap:wrap}
+        .repo-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .repo-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .api-card{display:flex;flex-direction:column;justify-content:space-between}
         @media(max-width:760px){.work-row{grid-template-columns:1fr}}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
     </style>
@@ -145,69 +153,129 @@
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Selected Works</h2>
-                <p>Newest and most relevant entries for this domain.</p>
+                <p>Newest and most relevant entries for this domain with abstracts and full-text links.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="work-list">
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026LivingMetaAnalysisArchitecture110.html">A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring</a><div class="venue">Active Inference Journal · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.19461933" aria-label="Primary link for A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring">Link</a>
+                    <div>
+                        <a href="works/Friedman2026LivingMetaAnalysisArchitecture110.html"><strong>A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring</strong></a>
+                        <div class="venue">Active Inference Journal · Paper</div>
+                        <div class="work-desc">This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv, Semantic Scholar, and…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.19461933">DOI: 10.5281/zenodo.19461933</a> · <a href="papers/2026_ActInfMetaAnalysis/">Paper Folder</a> · <a href="works/Friedman2026LivingMetaAnalysisArchitecture110.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.19461933" aria-label="Primary link for A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026DynamicAttentionalAgentsFocused111.html">Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences</a><div class="venue">CSCIS vol 2857, Springer · Paper</div></div>
-                    <a href="https://doi.org/10.1007/978-3-032-16955-6_11" aria-label="Primary link for Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences">Link</a>
+                    <div>
+                        <a href="works/Friedman2026DynamicAttentionalAgentsFocused111.html"><strong>Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences</strong></a>
+                        <div class="venue">CSCIS vol 2857, Springer · Paper</div>
+                        <div class="work-desc">We develop a three-level hierarchical framework to model the attentional dynamics of focused attention (FA) meditation, laying a foundation for advanced active inference (AIF)…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.1007/978-3-032-16955-6_11">DOI: 10.1007/978-3-032-16955-6_11</a> · <a href="papers/2026_FocusedAttentionMeditation/">Paper Folder</a> · <a href="works/Friedman2026DynamicAttentionalAgentsFocused111.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.1007/978-3-032-16955-6_11" aria-label="Primary link for Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026CompositionalApproachesLinguisticCase112.html">Compositional Approaches to Linguistic Case for Cognitive Modeling</a><div class="venue">Active Inference Journal · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.19695259" aria-label="Primary link for Compositional Approaches to Linguistic Case for Cognitive Modeling">Link</a>
+                    <div>
+                        <a href="works/Friedman2026CompositionalApproachesLinguisticCase112.html"><strong>Compositional Approaches to Linguistic Case for Cognitive Modeling</strong></a>
+                        <div class="venue">Active Inference Journal · Paper</div>
+                        <div class="work-desc">Commutative diagrams encode relational structure, distributional semantics, and belief updating—with linguistic case as the hinge. Case systems as categories; alignment patterns…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.19695259">DOI: 10.5281/zenodo.19695259</a> · <a href="papers/2026_CognitiveCaseDiagrams/">Paper Folder</a> · <a href="works/Friedman2026CompositionalApproachesLinguisticCase112.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.19695259" aria-label="Primary link for Compositional Approaches to Linguistic Case for Cognitive Modeling" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026TowardsLean4Formalization113.html">Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics</a><div class="venue">Active Inference Journal · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.19699233" aria-label="Primary link for Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics">Link</a>
+                    <div>
+                        <a href="works/Friedman2026TowardsLean4Formalization113.html"><strong>Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics</strong></a>
+                        <div class="venue">Active Inference Journal · Paper</div>
+                        <div class="work-desc">The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for)…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.19699233">DOI: 10.5281/zenodo.19699233</a> · <a href="papers/2026_FEPLean/">Paper Folder</a> · <a href="works/Friedman2026TowardsLean4Formalization113.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.19699233" aria-label="Primary link for Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026GeneralizedNotationNotationGNN168.html">GeneralizedNotationNotation (GNN)</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.7803313" aria-label="Primary link for GeneralizedNotationNotation (GNN)">Link</a>
+                    <div>
+                        <a href="works/Friedman2026GeneralizedNotationNotationGNN168.html"><strong>GeneralizedNotationNotation (GNN)</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.7803313">DOI: 10.5281/zenodo.7803313</a> · <a href="papers/2026_GeneralizedNotationNotationGNN/">Paper Folder</a> · <a href="works/Friedman2026GeneralizedNotationNotationGNN168.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.7803313" aria-label="Primary link for GeneralizedNotationNotation (GNN)" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026PolicyDistillationAsActive171.html">On-Policy Distillation as Active Inference in Finite Variational Models</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20747834" aria-label="Primary link for On-Policy Distillation as Active Inference in Finite Variational Models">Link</a>
+                    <div>
+                        <a href="works/Friedman2026PolicyDistillationAsActive171.html"><strong>On-Policy Distillation as Active Inference in Finite Variational Models</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20747834">DOI: 10.5281/zenodo.20747834</a> · <a href="papers/2026_PolicyDistillationAs/">Paper Folder</a> · <a href="works/Friedman2026PolicyDistillationAsActive171.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20747834" aria-label="Primary link for On-Policy Distillation as Active Inference in Finite Variational Models" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026PoolsRulesToolsTemplate190.html">Pools, Rules, and Tools: A Template-Integrated Resource Architecture</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.21298888" aria-label="Primary link for Pools, Rules, and Tools: A Template-Integrated Resource Architecture">Link</a>
+                    <div>
+                        <a href="works/Friedman2026PoolsRulesToolsTemplate190.html"><strong>Pools, Rules, and Tools: A Template-Integrated Resource Architecture</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">See full paper for detailed findings and analysis</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.21298888">DOI: 10.5281/zenodo.21298888</a> · <a href="papers/2026_PoolsRulesTools/">Paper Folder</a> · <a href="works/Friedman2026PoolsRulesToolsTemplate190.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.21298888" aria-label="Primary link for Pools, Rules, and Tools: A Template-Integrated Resource Architecture" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026DataDescriptorTemplateSchema192.html">Data Descriptor Template: Schema, Provenance, and Release Readiness</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.21298883" aria-label="Primary link for Data Descriptor Template: Schema, Provenance, and Release Readiness">Link</a>
+                    <div>
+                        <a href="works/Friedman2026DataDescriptorTemplateSchema192.html"><strong>Data Descriptor Template: Schema, Provenance, and Release Readiness</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">This exemplar demonstrates a data descriptor workflow in which the schema, file inventory, provenance chain, license boundary, and validation gate are treated as first-class…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.21298883">DOI: 10.5281/zenodo.21298883</a> · <a href="papers/2026_DataDescriptorTemplate/">Paper Folder</a> · <a href="works/Friedman2026DataDescriptorTemplateSchema192.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.21298883" aria-label="Primary link for Data Descriptor Template: Schema, Provenance, and Release Readiness" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026PriorCognitiveArt194.html">Prior Cognitive Art</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.21316510" aria-label="Primary link for Prior Cognitive Art">Link</a>
+                    <div>
+                        <a href="works/Friedman2026PriorCognitiveArt194.html"><strong>Prior Cognitive Art</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">A prior is not explained by stacking more priors; it is located by mechanism, function, history, and fixed-point organization. The paper&#x27;s precise thesis is procedural: before…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.21316510">DOI: 10.5281/zenodo.21316510</a> · <a href="papers/2026_PriorCognitiveArt/">Paper Folder</a> · <a href="works/Friedman2026PriorCognitiveArt194.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.21316510" aria-label="Primary link for Prior Cognitive Art" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026ActiveInferencePowerSuite199.html">Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.21695160" aria-label="Primary link for Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings">Link</a>
+                    <div>
+                        <a href="works/Friedman2026ActiveInferencePowerSuite199.html"><strong>Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Statistical power is an investigator-facing operating characteristic of an adaptive-study design. Before simulation, the investigator fixes an agent-side model, evaluator-side…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.21695160">DOI: 10.5281/zenodo.21695160</a> · <a href="papers/2026_ActiveInferencePower/">Paper Folder</a> · <a href="works/Friedman2026ActiveInferencePowerSuite199.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.21695160" aria-label="Primary link for Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026RobustBeliefSharingFederated210.html">Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.21864003" aria-label="Primary link for Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus">Link</a>
+                    <div>
+                        <a href="works/Friedman2026RobustBeliefSharingFederated210.html"><strong>Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those beliefs, and pool them into a…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.21864003">DOI: 10.5281/zenodo.21864003</a> · <a href="papers/2026_RobustBeliefSharing/">Paper Folder</a> · <a href="works/Friedman2026RobustBeliefSharingFederated210.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.21864003" aria-label="Primary link for Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html">Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.21865643" aria-label="Primary link for Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract">Link</a>
+                    <div>
+                        <a href="works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"><strong>Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Active Inference and the Free Energy Principle (FEP) provide model-based accounts of belief updating, learning, and action under uncertainty. We present Active Skillference, a…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.21865643">DOI: 10.5281/zenodo.21865643</a> · <a href="papers/2026_ActiveSkillference/">Paper Folder</a> · <a href="works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.21865643" aria-label="Primary link for Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
             </div>
             <p class="text-center mt-2"><a href="publications.html" class="btn btn-gold">Open full bibliography</a></p>
@@ -215,78 +283,124 @@
         <section class="section">
             <div class="section-header">
                 <h2>Related Software</h2>
-                <p>Repository entry points for implementation, data, and teaching work.</p>
+                <p>Repository entry points for implementation, companion papers, data, and teaching work.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="mini-grid">
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/active_inference">active_inference</a></h3>
                     <p>Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling</p>
-                    <p class="text-muted">Python · ⭐ 1</p>
+                    <p class="text-muted">Python · ⭐ 1 · Updated 2025-11</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/active_inference">GitHub Repo</a> · <a href="papers/2020_BehaviorEngineering/">Companion Paper</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/active_torchference">active_torchference</a></h3>
                     <p>PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2025-10</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/active_torchference">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/goference">goference</a></h3>
                     <p>Active Goference — production-ready Go framework for Active Inference autonomous agents; genuine variational inference, free energy minimization, POMDP policy planning via gonum</p>
-                    <p class="text-muted">Go · ⭐ 0</p>
+                    <p class="text-muted">Go · ⭐ 0 · Updated 2025-09</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/goference">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/AgenticMesh">AgenticMesh</a></h3>
                     <p>Active Inference &amp; Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles</p>
-                    <p class="text-muted">Python · ⭐ 1</p>
+                    <p class="text-muted">Python · ⭐ 1 · Updated 2025-02</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/AgenticMesh">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/ActiveInferenceInstitute/ActiveInferAnts">ActiveInferAnts</a></h3>
                     <p>Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference</p>
-                    <p class="text-muted">Python · ⭐ 28</p>
+                    <p class="text-muted">Python · ⭐ 28 · Updated 2024</p>
+                    <div class="repo-meta-links"><a href="https://github.com/ActiveInferenceInstitute/ActiveInferAnts">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/ActiveInferAnts">ActiveInferAnts</a></h3>
                     <p>Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy</p>
-                    <p class="text-muted">Python · ⭐ 3</p>
+                    <p class="text-muted">Python · ⭐ 3 · Updated 2026-04</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/ActiveInferAnts">GitHub Repo</a> · <a href="papers/2021_ActiveInferants/">Companion Paper</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation">GeneralizedNotationNotation</a></h3>
                     <p>GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software</p>
-                    <p class="text-muted">Python · ⭐ 24</p>
+                    <p class="text-muted">Python · ⭐ 24 · Updated 2024</p>
+                    <div class="repo-meta-links"><a href="https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation">GitHub Repo</a> · <a href="https://doi.org/10.5281/zenodo.19600217">Zenodo Release</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/ActiveInferenceInstitute/fep_lean">fep_lean</a></h3>
                     <p>Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo</p>
-                    <p class="text-muted">Python · ⭐ 3</p>
+                    <p class="text-muted">Python · ⭐ 3 · Updated 2026</p>
+                    <div class="repo-meta-links"><a href="https://github.com/ActiveInferenceInstitute/fep_lean">GitHub Repo</a> · <a href="papers/2026_FEPLean/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.19699234">Zenodo Release</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/ActiveInferenceInstitute/CEREBRUM">CEREBRUM</a></h3>
                     <p>Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo</p>
-                    <p class="text-muted">Python · ⭐ 12</p>
+                    <p class="text-muted">Python · ⭐ 12 · Updated 2025</p>
+                    <div class="repo-meta-links"><a href="https://github.com/ActiveInferenceInstitute/CEREBRUM">GitHub Repo</a> · <a href="papers/2025_CEREBRUM/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.15170907">Zenodo Release</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/ActiveInferenceInstitute/cognitive">cognitive</a></h3>
                     <p>Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization</p>
-                    <p class="text-muted">Python · ⭐ 18</p>
+                    <p class="text-muted">Python · ⭐ 18 · Updated 2025</p>
+                    <div class="repo-meta-links"><a href="https://github.com/ActiveInferenceInstitute/cognitive">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/cognitive">cognitive</a></h3>
                     <p>Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization</p>
-                    <p class="text-muted">Python · ⭐ 14</p>
+                    <p class="text-muted">Python · ⭐ 14 · Updated 2026-05</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/cognitive">GitHub Repo</a></div>
                 </article>
             </div>
         </section>
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Learning Path</h2>
-                <p>A compact route through the material.</p>
+                <p>A structured, cross-linked route through tutorials, pillar guides, foundational papers, and software repositories.</p>
                 <div class="section-divider"></div>
             </div>
-            <div class="mini-card"><ul><li>Read the long-form &lt;a href=&#x27;../active-inference.html&#x27;&gt;Active Inference &amp; Free Energy Principle Tutorial&lt;/a&gt;.</li>
-<li>Explore the &lt;a href=&#x27;../neurosymbolic-ai.html&#x27;&gt;Neurosymbolic AI &amp; Active Inference Guide&lt;/a&gt; for hybrid AI agents.</li>
-<li>Start with the literature review and ontology papers for foundational scope.</li>
-<li>Move to GNN, CEREBRUM, and fep_lean for formalization and modeling.</li></ul></div>
-            <p class="text-center mt-2"><a href="pages/DOMAINS.md" class="btn btn-outline">Markdown domain map</a></p>
+            <div class="mini-card"><ul><li>Read the comprehensive <a href='active-inference.html'>Active Inference &amp; Free Energy Principle Tutorial</a>.</li>
+<li>Explore neurosymbolic integrations in <a href='neurosymbolic-ai.html'>Neurosymbolic AI &amp; Active Inference</a>.</li>
+<li>Trace multi-agent coordination theory in <a href='works/Friedman2024SharedProtentionsMultiAgent040.html'>Shared Protentions in Multi-Agent Active Inference</a>.</li>
+<li>Examine distributed belief updates in <a href='works/Friedman2024FederatedInferenceBeliefSharing036.html'>Federated Inference and Belief Sharing</a>.</li>
+<li>Study formal mathematical notation systems in <a href='works/Friedman2023GeneralizedNotationNotationActive056.html'>Generalized Notation Notation (GNN)</a>.</li>
+<li>Explore theorem proving in Lean 4 via <a href='works/Friedman2026TowardsLean4Formalization113.html'>Towards Lean 4 Formalization of Active Inference</a> and the <a href='https://github.com/ActiveInferenceInstitute/fep_lean'>fep_lean</a> repository.</li>
+<li>Engage with multi-agent orchestration and case-based reasoning in <a href='https://github.com/docxology/CEREBRUM'>CEREBRUM</a> and <a href='https://github.com/docxology/active_torchference'>active_torchference</a>.</li></ul></div>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h2>Public APIs &amp; Discovery Endpoints</h2>
+                <p>Machine-readable endpoints for querying research metadata and persistent identifiers.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="mini-grid">
+                <article class="mini-card api-card">
+                    <h3><a href="https://orcid.org/0000-0001-6232-9096">ORCID API</a></h3>
+                    <p>Persistent researcher identity record (0000-0001-6232-9096) linking published works and verified peer reviews.</p>
+                    <p class="text-muted"><a href="https://pub.orcid.org/v3.0/0000-0001-6232-9096">pub.orcid.org/v3.0/0000-0001-6232-9096</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22">Zenodo REST API</a></h3>
+                    <p>Open-access deposits, software releases, preprints, and dataset versions indexed by ORCID.</p>
+                    <p class="text-muted"><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22">Zenodo Creator Query</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">Crossref Works API</a></h3>
+                    <p>Publisher DOI metadata records, license information, and formal citation relations.</p>
+                    <p class="text-muted"><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">api.crossref.org/works</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.github.com/users/docxology">GitHub REST API</a></h3>
+                    <p>Repository metadata, release artifacts, and open-source software inventory.</p>
+                    <p class="text-muted"><a href="https://api.github.com/users/docxology/repos">api.github.com/users/docxology/repos</a></p>
+                </article>
+            </div>
+            <p class="text-center mt-2">
+                <a href="discovery.html" class="btn btn-outline">Full Discovery Map</a>
+                <a href="pages/DOMAINS.md" class="btn btn-outline">Markdown Domain Map</a>
+            </p>
         </section>
     </main>
     <footer role="contentinfo">
@@ -297,10 +411,10 @@
             <a href="software.html">Software</a>
             <a href="search.html">Search</a>
             <a href="discovery.html">Discovery</a>
-            <a href="cite-verify.html">Cite & Verify</a>
+            <a href="cite-verify.html">Cite &amp; Verify</a>
             <a href="https://github.com/docxology/docxology">Source Repo</a>
         </div>
-        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed {generated_month_year()}</p>
+        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed August 2026</p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

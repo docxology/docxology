@@ -51,6 +51,14 @@
         .work-row{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:start;padding:.9rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
         .work-row .year{color:var(--gold);font-weight:700}
         .work-row .venue{color:var(--text-muted);font-size:.8rem}
+        .work-desc{font-size:.84rem;color:var(--text-secondary);margin-top:.35rem;line-height:1.5}
+        .work-meta-links{margin-top:.4rem;display:flex;gap:.75rem;font-size:.78rem;flex-wrap:wrap}
+        .work-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .work-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .repo-meta-links{margin-top:.5rem;display:flex;gap:.75rem;font-size:.8rem;flex-wrap:wrap}
+        .repo-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .repo-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .api-card{display:flex;flex-direction:column;justify-content:space-between}
         @media(max-width:760px){.work-row{grid-template-columns:1fr}}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
     </style>
@@ -139,45 +147,75 @@
                 <div class="mini-card"><h2>6 Works</h2><p>Curated works in this domain from the unified bibliography.</p></div>
                 <div class="mini-card"><h2>5 Related Repositories</h2><p>Selected software entries connected to this domain.</p></div>
                 <div class="mini-card"><h2>Full Text &amp; Images</h2><p>5 of 6 works have extracted full text, 3 have image galleries.</p></div>
-                <div class="mini-card"><h2>Collaborator Context</h2><p>Active Inference Institute contributors, Institute program participants</p></div>
+                <div class="mini-card"><h2>Collaborator Context</h2><p>Active Inference Institute educators and contributors, Institute program participants</p></div>
             </div>
         </section>
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Selected Works</h2>
-                <p>Newest and most relevant entries for this domain.</p>
+                <p>Newest and most relevant entries for this domain with abstracts and full-text links.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="work-list">
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025ActiveInferenceInstituteActive024.html">The Active Inference Institute &amp; Active Inference Ecosystem (v3, 2025 snapshot)</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.17982447" aria-label="Primary link for The Active Inference Institute &amp; Active Inference Ecosystem (v3, 2025 snapshot)">Link</a>
+                    <div>
+                        <a href="works/Friedman2025ActiveInferenceInstituteActive024.html"><strong>The Active Inference Institute &amp; Active Inference Ecosystem (v3, 2025 snapshot)</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.17982447">DOI: 10.5281/zenodo.17982447</a> · <a href="papers/2025_AII_v3/">Paper Folder</a> · <a href="works/Friedman2025ActiveInferenceInstituteActive024.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.17982447" aria-label="Primary link for The Active Inference Institute &amp; Active Inference Ecosystem (v3, 2025 snapshot)" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2024</div>
-                    <div><a href="works/Friedman2024AligningActiveInferenceOntology029.html">Aligning Active Inference Ontology to SUMO</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.11459322" aria-label="Primary link for Aligning Active Inference Ontology to SUMO">Link</a>
+                    <div>
+                        <a href="works/Friedman2024AligningActiveInferenceOntology029.html"><strong>Aligning Active Inference Ontology to SUMO</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities. For a subset of Active Inference terms, we identify published…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.11459322">DOI: 10.5281/zenodo.11459322</a> · <a href="papers/2024_OntologySUMO/">Paper Folder</a> · <a href="works/Friedman2024AligningActiveInferenceOntology029.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.11459322" aria-label="Primary link for Aligning Active Inference Ontology to SUMO" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2024</div>
-                    <div><a href="works/Friedman2024ActiveInferenceInstituteActive041.html">The Active Inference Institute &amp; Active Inference Ecosystem (v2, 2024 snapshot)</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.14108992" aria-label="Primary link for The Active Inference Institute &amp; Active Inference Ecosystem (v2, 2024 snapshot)">Link</a>
+                    <div>
+                        <a href="works/Friedman2024ActiveInferenceInstituteActive041.html"><strong>The Active Inference Institute &amp; Active Inference Ecosystem (v2, 2024 snapshot)</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.14108992">DOI: 10.5281/zenodo.14108992</a> · <a href="papers/2024_AII_v2/">Paper Folder</a> · <a href="works/Friedman2024ActiveInferenceInstituteActive041.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.14108992" aria-label="Primary link for The Active Inference Institute &amp; Active Inference Ecosystem (v2, 2024 snapshot)" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2023</div>
-                    <div><a href="works/Friedman2023ActiveInferenceInstituteActive061.html">The Active Inference Institute and Active Inference Ecosystem (v1)</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.8266280" aria-label="Primary link for The Active Inference Institute and Active Inference Ecosystem (v1)">Link</a>
+                    <div>
+                        <a href="works/Friedman2023ActiveInferenceInstituteActive061.html"><strong>The Active Inference Institute and Active Inference Ecosystem (v1)</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community. The institute serves as a hub for Active Inference…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.8266280">DOI: 10.5281/zenodo.8266280</a> · <a href="papers/2023_AII_v1/">Paper Folder</a> · <a href="works/Friedman2023ActiveInferenceInstituteActive061.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.8266280" aria-label="Primary link for The Active Inference Institute and Active Inference Ecosystem (v1)" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2022</div>
-                    <div><a href="works/Friedman2022CatechismTowardsActiveDiffusion067.html">Catechism for Towards Active Diffusion</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.7443847" aria-label="Primary link for Catechism for Towards Active Diffusion">Link</a>
+                    <div>
+                        <a href="works/Friedman2022CatechismTowardsActiveDiffusion067.html"><strong>Catechism for Towards Active Diffusion</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">The Active Diffusion Catechism (2023-AD) provides an initiative overview for the &#x27;Towards Active Diffusion&#x27; project, exploring the intersection of Active Inference and diffusion…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.7443847">DOI: 10.5281/zenodo.7443847</a> · <a href="papers/2022_ActiveDiffusion/">Paper Folder</a> · <a href="works/Friedman2022CatechismTowardsActiveDiffusion067.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.7443847" aria-label="Primary link for Catechism for Towards Active Diffusion" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2016</div>
-                    <div><a href="works/Friedman2016FullSpeedAheadCity156.html">Full speed ahead to the City on the Hill</a><div class="venue">Science · Paper</div></div>
-                    <a href="https://doi.org/10.1126/science.aag1520" aria-label="Primary link for Full speed ahead to the City on the Hill">Link</a>
+                    <div>
+                        <a href="works/Friedman2016FullSpeedAheadCity156.html"><strong>Full speed ahead to the City on the Hill</strong></a>
+                        <div class="venue">Science · Paper</div>
+                        
+                        <div class="work-meta-links"><a href="https://doi.org/10.1126/science.aag1520">DOI: 10.1126/science.aag1520</a> · <a href="works/Friedman2016FullSpeedAheadCity156.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.1126/science.aag1520" aria-label="Primary link for Full speed ahead to the City on the Hill" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
             </div>
             <p class="text-center mt-2"><a href="publications.html" class="btn btn-gold">Open full bibliography</a></p>
@@ -185,47 +223,87 @@
         <section class="section">
             <div class="section-header">
                 <h2>Related Software</h2>
-                <p>Repository entry points for implementation, data, and teaching work.</p>
+                <p>Repository entry points for implementation, companion papers, data, and teaching work.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="mini-grid">
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/active_inference">active_inference</a></h3>
                     <p>Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling</p>
-                    <p class="text-muted">Python · ⭐ 1</p>
+                    <p class="text-muted">Python · ⭐ 1 · Updated 2025-11</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/active_inference">GitHub Repo</a> · <a href="papers/2020_BehaviorEngineering/">Companion Paper</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/ActiveInferenceInstitute/fep_lean">fep_lean</a></h3>
                     <p>Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo</p>
-                    <p class="text-muted">Python · ⭐ 3</p>
+                    <p class="text-muted">Python · ⭐ 3 · Updated 2026</p>
+                    <div class="repo-meta-links"><a href="https://github.com/ActiveInferenceInstitute/fep_lean">GitHub Repo</a> · <a href="papers/2026_FEPLean/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.19699234">Zenodo Release</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/ActiveInferenceInstitute/cognitive">cognitive</a></h3>
                     <p>Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization</p>
-                    <p class="text-muted">Python · ⭐ 18</p>
+                    <p class="text-muted">Python · ⭐ 18 · Updated 2025</p>
+                    <div class="repo-meta-links"><a href="https://github.com/ActiveInferenceInstitute/cognitive">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/cognitive">cognitive</a></h3>
                     <p>Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization</p>
-                    <p class="text-muted">Python · ⭐ 14</p>
+                    <p class="text-muted">Python · ⭐ 14 · Updated 2026-05</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/cognitive">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/AgenticMesh">AgenticMesh</a></h3>
                     <p>Active Inference &amp; Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles</p>
-                    <p class="text-muted">Python · ⭐ 1</p>
+                    <p class="text-muted">Python · ⭐ 1 · Updated 2025-02</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/AgenticMesh">GitHub Repo</a></div>
                 </article>
             </div>
         </section>
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Learning Path</h2>
-                <p>A compact route through the material.</p>
+                <p>A structured, cross-linked route through tutorials, pillar guides, foundational papers, and software repositories.</p>
                 <div class="section-divider"></div>
             </div>
-            <div class="mini-card"><ul><li>Start with the Active Inference Institute ecosystem and textbook materials.</li>
-<li>Follow the institute software and formalization repositories for implementation context.</li>
-<li>Use the Discovery and Data Catalog pages for machine-readable routes.</li></ul></div>
-            <p class="text-center mt-2"><a href="pages/DOMAINS.md" class="btn btn-outline">Markdown domain map</a></p>
+            <div class="mini-card"><ul><li>Discover the organizational mission, governance, and programs on the <a href='https://activeinference.institute/'>Active Inference Institute Official Portal</a>.</li>
+<li>Survey ecosystem development and open research milestones in <a href='works/Friedman2025ActiveInferenceInstituteActive024.html'>The Active Inference Institute &amp; Active Inference Ecosystem (v3, 2025 snapshot)</a>.</li>
+<li>Explore ontology standardization efforts in <a href='works/Friedman2024AligningActiveInferenceOntology029.html'>Aligning Active Inference Ontology to SUMO</a>.</li>
+<li>Participate in community education through the <a href='https://activeinference.institute/education'>Textbook Group Cohorts</a> and <a href='videos.html'>Institute Video Archives</a>.</li>
+<li>Engage with formal mathematical specifications on the <a href='https://github.com/ActiveInferenceInstitute/fep_lean'>fep_lean repository</a>.</li>
+<li>Review verified non-profit records via the <a href='https://projects.propublica.org/nonprofits/organizations/882985125'>ProPublica Nonprofit Explorer (EIN 88-2985125)</a>.</li></ul></div>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h2>Public APIs &amp; Discovery Endpoints</h2>
+                <p>Machine-readable endpoints for querying research metadata and persistent identifiers.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="mini-grid">
+                <article class="mini-card api-card">
+                    <h3><a href="https://orcid.org/0000-0001-6232-9096">ORCID API</a></h3>
+                    <p>Persistent researcher identity record (0000-0001-6232-9096) linking published works and verified peer reviews.</p>
+                    <p class="text-muted"><a href="https://pub.orcid.org/v3.0/0000-0001-6232-9096">pub.orcid.org/v3.0/0000-0001-6232-9096</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22">Zenodo REST API</a></h3>
+                    <p>Open-access deposits, software releases, preprints, and dataset versions indexed by ORCID.</p>
+                    <p class="text-muted"><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22">Zenodo Creator Query</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">Crossref Works API</a></h3>
+                    <p>Publisher DOI metadata records, license information, and formal citation relations.</p>
+                    <p class="text-muted"><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">api.crossref.org/works</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.github.com/users/docxology">GitHub REST API</a></h3>
+                    <p>Repository metadata, release artifacts, and open-source software inventory.</p>
+                    <p class="text-muted"><a href="https://api.github.com/users/docxology/repos">api.github.com/users/docxology/repos</a></p>
+                </article>
+            </div>
+            <p class="text-center mt-2">
+                <a href="discovery.html" class="btn btn-outline">Full Discovery Map</a>
+                <a href="pages/DOMAINS.md" class="btn btn-outline">Markdown Domain Map</a>
+            </p>
         </section>
     </main>
     <footer role="contentinfo">
@@ -236,10 +314,10 @@
             <a href="software.html">Software</a>
             <a href="search.html">Search</a>
             <a href="discovery.html">Discovery</a>
-            <a href="cite-verify.html">Cite & Verify</a>
+            <a href="cite-verify.html">Cite &amp; Verify</a>
             <a href="https://github.com/docxology/docxology">Source Repo</a>
         </div>
-        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed {generated_month_year()}</p>
+        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed August 2026</p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

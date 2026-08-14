@@ -51,6 +51,14 @@
         .work-row{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:start;padding:.9rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
         .work-row .year{color:var(--gold);font-weight:700}
         .work-row .venue{color:var(--text-muted);font-size:.8rem}
+        .work-desc{font-size:.84rem;color:var(--text-secondary);margin-top:.35rem;line-height:1.5}
+        .work-meta-links{margin-top:.4rem;display:flex;gap:.75rem;font-size:.78rem;flex-wrap:wrap}
+        .work-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .work-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .repo-meta-links{margin-top:.5rem;display:flex;gap:.75rem;font-size:.8rem;flex-wrap:wrap}
+        .repo-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .repo-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .api-card{display:flex;flex-direction:column;justify-content:space-between}
         @media(max-width:760px){.work-row{grid-template-columns:1fr}}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
     </style>
@@ -145,69 +153,129 @@
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Selected Works</h2>
-                <p>Newest and most relevant entries for this domain.</p>
+                <p>Newest and most relevant entries for this domain with abstracts and full-text links.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="work-list">
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026ActiveInferenceJournal500002.html">Active Inference Journal — 500+ videos on Active Inference with transcripts</a><div class="venue">YouTube · Series</div></div>
-                    <a href="https://video.activeinference.institute/" aria-label="Primary link for Active Inference Journal — 500+ videos on Active Inference with transcripts">Link</a>
+                    <div>
+                        <a href="works/Friedman2026ActiveInferenceJournal500002.html"><strong>Active Inference Journal — 500+ videos on Active Inference with transcripts</strong></a>
+                        <div class="venue">YouTube · Series</div>
+                        
+                        <div class="work-meta-links"><a href="works/Friedman2026ActiveInferenceJournal500002.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://video.activeinference.institute/" aria-label="Primary link for Active Inference Journal — 500+ videos on Active Inference with transcripts" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026PersonalYouTube200Livestreams006.html">Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions</a><div class="venue">YouTube · Series</div></div>
-                    <a href="https://www.youtube.com/@danielarifriedman/playlists" aria-label="Primary link for Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions">Link</a>
+                    <div>
+                        <a href="works/Friedman2026PersonalYouTube200Livestreams006.html"><strong>Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions</strong></a>
+                        <div class="venue">YouTube · Series</div>
+                        
+                        <div class="work-meta-links"><a href="works/Friedman2026PersonalYouTube200Livestreams006.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://www.youtube.com/@danielarifriedman/playlists" aria-label="Primary link for Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman20255thAppliedActiveInference008.html">5th Applied Active Inference Symposium — Abstract Book</a><div class="venue">Presentation · Presentation</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.17555266" aria-label="Primary link for 5th Applied Active Inference Symposium — Abstract Book">Link</a>
+                    <div>
+                        <a href="works/Friedman20255thAppliedActiveInference008.html"><strong>5th Applied Active Inference Symposium — Abstract Book</strong></a>
+                        <div class="venue">Presentation · Presentation</div>
+                        <div class="work-desc">Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.17555266">DOI: 10.5281/zenodo.17555266</a> · <a href="papers/2025_5thSymposium/">Paper Folder</a> · <a href="works/Friedman20255thAppliedActiveInference008.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.17555266" aria-label="Primary link for 5th Applied Active Inference Symposium — Abstract Book" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025SystemsProcessesActiveInference022.html">Systems Processes, Active Inference, and Beyond</a><div class="venue">Presentation · Presentation</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.17138223" aria-label="Primary link for Systems Processes, Active Inference, and Beyond">Link</a>
+                    <div>
+                        <a href="works/Friedman2025SystemsProcessesActiveInference022.html"><strong>Systems Processes, Active Inference, and Beyond</strong></a>
+                        <div class="venue">Presentation · Presentation</div>
+                        <div class="work-desc">This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks. The work discusses how systems science…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.17138223">DOI: 10.5281/zenodo.17138223</a> · <a href="papers/2025_SystemsProcesses/">Paper Folder</a> · <a href="works/Friedman2025SystemsProcessesActiveInference022.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.17138223" aria-label="Primary link for Systems Processes, Active Inference, and Beyond" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2024</div>
-                    <div><a href="works/Friedman2024BioFirmDevelopmentAtApplied030.html">BioFirm Development at Applied Active Inference Symposium 2024</a><div class="venue">Presentation · Presentation</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.14861595" aria-label="Primary link for BioFirm Development at Applied Active Inference Symposium 2024">Link</a>
+                    <div>
+                        <a href="works/Friedman2024BioFirmDevelopmentAtApplied030.html"><strong>BioFirm Development at Applied Active Inference Symposium 2024</strong></a>
+                        <div class="venue">Presentation · Presentation</div>
+                        <div class="work-desc">BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as biological-inspired adaptive…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.14861595">DOI: 10.5281/zenodo.14861595</a> · <a href="papers/2024_BioFirm/">Paper Folder</a> · <a href="works/Friedman2024BioFirmDevelopmentAtApplied030.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.14861595" aria-label="Primary link for BioFirm Development at Applied Active Inference Symposium 2024" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2024</div>
-                    <div><a href="works/Friedman2024MathArtStream8William038.html">MathArt Stream #8: William Blake and Active Inference</a><div class="venue">Presentation · Presentation</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.13711301" aria-label="Primary link for MathArt Stream #8: William Blake and Active Inference">Link</a>
+                    <div>
+                        <a href="works/Friedman2024MathArtStream8William038.html"><strong>MathArt Stream #8: William Blake and Active Inference</strong></a>
+                        <div class="venue">Presentation · Presentation</div>
+                        <div class="work-desc">This work explores the intersection of mathematics, art, and William Blake&#x27;s prophetic vision. Through formal analysis of Blake&#x27;s visual and poetic works, we identify…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.13711301">DOI: 10.5281/zenodo.13711301</a> · <a href="papers/2024_MathArtBlake/">Paper Folder</a> · <a href="works/Friedman2024MathArtStream8William038.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.13711301" aria-label="Primary link for MathArt Stream #8: William Blake and Active Inference" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2024</div>
-                    <div><a href="works/Friedman2024SensemakingFederationExploringFrontiers039.html">Sensemaking Federation: Exploring the Frontiers of Digital Innovation</a><div class="venue">Presentation · Presentation</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.14574046" aria-label="Primary link for Sensemaking Federation: Exploring the Frontiers of Digital Innovation">Link</a>
+                    <div>
+                        <a href="works/Friedman2024SensemakingFederationExploringFrontiers039.html"><strong>Sensemaking Federation: Exploring the Frontiers of Digital Innovation</strong></a>
+                        <div class="venue">Presentation · Presentation</div>
+                        <div class="work-desc">Transcript from the event &#x27;Sensemaking Federation: Exploring the Frontiers of Digital Innovation&#x27; hosted by the Sensemaking Scenius. The panel discusses decentralized sensemaking…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.14574046">DOI: 10.5281/zenodo.14574046</a> · <a href="papers/2024_SensemakingFederation/">Paper Folder</a> · <a href="works/Friedman2024SensemakingFederationExploringFrontiers039.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.14574046" aria-label="Primary link for Sensemaking Federation: Exploring the Frontiers of Digital Innovation" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2023</div>
-                    <div><a href="works/Friedman2023AntsAging058.html">Of Ants &amp; Aging</a><div class="venue">Presentation · Presentation</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.7855581" aria-label="Primary link for Of Ants &amp; Aging">Link</a>
+                    <div>
+                        <a href="works/Friedman2023AntsAging058.html"><strong>Of Ants &amp; Aging</strong></a>
+                        <div class="venue">Presentation · Presentation</div>
+                        <div class="work-desc">A presentation exploring the relationship between social organization and aging in ant colonies, titled &#x27;Of Ants &amp; Aging.&#x27; The work examines the paradox of lifespan variation…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.7855581">DOI: 10.5281/zenodo.7855581</a> · <a href="papers/2023_AntsAging/">Paper Folder</a> · <a href="works/Friedman2023AntsAging058.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.7855581" aria-label="Primary link for Of Ants &amp; Aging" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2023</div>
-                    <div><a href="works/Friedman2023PostdocReview20202023060.html">Postdoc review (2020–2023)</a><div class="venue">Presentation · Presentation</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.8377987" aria-label="Primary link for Postdoc review (2020–2023)">Link</a>
+                    <div>
+                        <a href="works/Friedman2023PostdocReview20202023060.html"><strong>Postdoc review (2020–2023)</strong></a>
+                        <div class="venue">Presentation · Presentation</div>
+                        <div class="work-desc">A comprehensive review of Daniel Friedman&#x27;s 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.8377987">DOI: 10.5281/zenodo.8377987</a> · <a href="papers/2023_PostdocReview/">Paper Folder</a> · <a href="works/Friedman2023PostdocReview20202023060.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.8377987" aria-label="Primary link for Postdoc review (2020–2023)" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2023</div>
-                    <div><a href="works/Friedman2023TranscriptChrisFieldsPhysics064.html">Transcript of Chris Fields, &quot;Physics as Information Processing&quot; course</a><div class="venue">Zenodo · Course</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.10447642" aria-label="Primary link for Transcript of Chris Fields, &quot;Physics as Information Processing&quot; course">Link</a>
+                    <div>
+                        <a href="works/Friedman2023TranscriptChrisFieldsPhysics064.html"><strong>Transcript of Chris Fields, &quot;Physics as Information Processing&quot; course</strong></a>
+                        <div class="venue">Zenodo · Course</div>
+                        
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.10447642">DOI: 10.5281/zenodo.10447642</a> · <a href="works/Friedman2023TranscriptChrisFieldsPhysics064.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.10447642" aria-label="Primary link for Transcript of Chris Fields, &quot;Physics as Information Processing&quot; course" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2021</div>
-                    <div><a href="works/Friedman2021InnovatorSDigitalPlaybook078.html">Innovator&#x27;s Digital Playbook</a><div class="venue">Web · Playbook</div></div>
-                    <a href="https://innovatorsdigitalplaybook.com/" aria-label="Primary link for Innovator&#x27;s Digital Playbook">Link</a>
+                    <div>
+                        <a href="works/Friedman2021InnovatorSDigitalPlaybook078.html"><strong>Innovator&#x27;s Digital Playbook</strong></a>
+                        <div class="venue">Web · Playbook</div>
+                        
+                        <div class="work-meta-links"><a href="works/Friedman2021InnovatorSDigitalPlaybook078.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://innovatorsdigitalplaybook.com/" aria-label="Primary link for Innovator&#x27;s Digital Playbook" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2021</div>
-                    <div><a href="works/Friedman2021FacilitatorSCatechismPlaybook081.html">The Facilitator&#x27;s Catechism Playbook</a><div class="venue">Zenodo · Playbook</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.4579413" aria-label="Primary link for The Facilitator&#x27;s Catechism Playbook">Link</a>
+                    <div>
+                        <a href="works/Friedman2021FacilitatorSCatechismPlaybook081.html"><strong>The Facilitator&#x27;s Catechism Playbook</strong></a>
+                        <div class="venue">Zenodo · Playbook</div>
+                        
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.4579413">DOI: 10.5281/zenodo.4579413</a> · <a href="works/Friedman2021FacilitatorSCatechismPlaybook081.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.4579413" aria-label="Primary link for The Facilitator&#x27;s Catechism Playbook" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
             </div>
             <p class="text-center mt-2"><a href="publications.html" class="btn btn-gold">Open full bibliography</a></p>
@@ -215,37 +283,75 @@
         <section class="section">
             <div class="section-header">
                 <h2>Related Software</h2>
-                <p>Repository entry points for implementation, data, and teaching work.</p>
+                <p>Repository entry points for implementation, companion papers, data, and teaching work.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="mini-grid">
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/biology_textbook">biology_textbook</a></h3>
                     <p>Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2026-05</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/biology_textbook">GitHub Repo</a> · <a href="papers/2026_BiologyTextbook/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.20286478">Zenodo Release</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/biol-1">biol-1</a></h3>
                     <p>BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content</p>
-                    <p class="text-muted">HTML · ⭐ 0</p>
+                    <p class="text-muted">HTML · ⭐ 0 · Updated 2026-03</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/biol-1">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/biol-8">biol-8</a></h3>
                     <p>BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content</p>
-                    <p class="text-muted">HTML · ⭐ 0</p>
+                    <p class="text-muted">HTML · ⭐ 0 · Updated 2026-03</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/biol-8">GitHub Repo</a></div>
                 </article>
             </div>
         </section>
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Learning Path</h2>
-                <p>A compact route through the material.</p>
+                <p>A structured, cross-linked route through tutorials, pillar guides, foundational papers, and software repositories.</p>
                 <div class="section-divider"></div>
             </div>
-            <div class="mini-card"><ul><li>Use the video index for talks and transcript-linked media.</li>
-<li>Use the course and presentation rows in the bibliography for structured teaching routes.</li>
-<li>Cross-reference related works through the canonical work pages.</li></ul></div>
-            <p class="text-center mt-2"><a href="pages/DOMAINS.md" class="btn btn-outline">Markdown domain map</a></p>
+            <div class="mini-card"><ul><li>Browse 500+ indexed lectures, symposia, and live streams on the <a href='videos.html'>Video Index &amp; Interactive Timeline</a>.</li>
+<li>Explore media appearances, podcasts, and interview features on the <a href='media.html'>Media Appearances Hub</a>.</li>
+<li>Study active-inference live streams in <a href='works/Friedman2026ActiveInferenceJournal500002.html'>Active Inference Journal — 500+ Videos with Transcripts</a>.</li>
+<li>Access generative biology curriculum and lecture materials in <a href='works/Friedman2026IntroductionBiologyGenerativeApproach117.html'>Introduction to Biology: A Generative Approach</a>.</li>
+<li>Review transcript processing software pipelines in the <a href='https://doi.org/10.5281/zenodo.18686966'>Journal-Utilities Software Release (Zenodo 18686966)</a>.</li>
+<li>Explore public video channels on <a href='https://youtube.com/@activeinference'>Active Inference YouTube</a> and <a href='https://youtube.com/@danielarifriedman'>Personal YouTube Channel</a>.</li></ul></div>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h2>Public APIs &amp; Discovery Endpoints</h2>
+                <p>Machine-readable endpoints for querying research metadata and persistent identifiers.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="mini-grid">
+                <article class="mini-card api-card">
+                    <h3><a href="https://orcid.org/0000-0001-6232-9096">ORCID API</a></h3>
+                    <p>Persistent researcher identity record (0000-0001-6232-9096) linking published works and verified peer reviews.</p>
+                    <p class="text-muted"><a href="https://pub.orcid.org/v3.0/0000-0001-6232-9096">pub.orcid.org/v3.0/0000-0001-6232-9096</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22">Zenodo REST API</a></h3>
+                    <p>Open-access deposits, software releases, preprints, and dataset versions indexed by ORCID.</p>
+                    <p class="text-muted"><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22">Zenodo Creator Query</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">Crossref Works API</a></h3>
+                    <p>Publisher DOI metadata records, license information, and formal citation relations.</p>
+                    <p class="text-muted"><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">api.crossref.org/works</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.github.com/users/docxology">GitHub REST API</a></h3>
+                    <p>Repository metadata, release artifacts, and open-source software inventory.</p>
+                    <p class="text-muted"><a href="https://api.github.com/users/docxology/repos">api.github.com/users/docxology/repos</a></p>
+                </article>
+            </div>
+            <p class="text-center mt-2">
+                <a href="discovery.html" class="btn btn-outline">Full Discovery Map</a>
+                <a href="pages/DOMAINS.md" class="btn btn-outline">Markdown Domain Map</a>
+            </p>
         </section>
     </main>
     <footer role="contentinfo">
@@ -256,10 +362,10 @@
             <a href="software.html">Software</a>
             <a href="search.html">Search</a>
             <a href="discovery.html">Discovery</a>
-            <a href="cite-verify.html">Cite & Verify</a>
+            <a href="cite-verify.html">Cite &amp; Verify</a>
             <a href="https://github.com/docxology/docxology">Source Repo</a>
         </div>
-        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed {generated_month_year()}</p>
+        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed August 2026</p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>

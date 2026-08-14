@@ -51,6 +51,14 @@
         .work-row{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:start;padding:.9rem 1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
         .work-row .year{color:var(--gold);font-weight:700}
         .work-row .venue{color:var(--text-muted);font-size:.8rem}
+        .work-desc{font-size:.84rem;color:var(--text-secondary);margin-top:.35rem;line-height:1.5}
+        .work-meta-links{margin-top:.4rem;display:flex;gap:.75rem;font-size:.78rem;flex-wrap:wrap}
+        .work-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .work-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .repo-meta-links{margin-top:.5rem;display:flex;gap:.75rem;font-size:.8rem;flex-wrap:wrap}
+        .repo-meta-links a{color:var(--silver-bright);text-decoration:none}
+        .repo-meta-links a:hover{text-decoration:underline;color:var(--gold)}
+        .api-card{display:flex;flex-direction:column;justify-content:space-between}
         @media(max-width:760px){.work-row{grid-template-columns:1fr}}
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
     </style>
@@ -145,69 +153,129 @@
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Selected Works</h2>
-                <p>Newest and most relevant entries for this domain.</p>
+                <p>Newest and most relevant entries for this domain with abstracts and full-text links.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="work-list">
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026BeforePragmatismHadName003.html">Before Pragmatism Had a Name: Blake&#x27;s &quot;America A Prophecy&quot; Anticipates American Anticipatory Epistemology</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.18807970" aria-label="Primary link for Before Pragmatism Had a Name: Blake&#x27;s &quot;America A Prophecy&quot; Anticipates American Anticipatory Epistemology">Link</a>
+                    <div>
+                        <a href="works/Friedman2026BeforePragmatismHadName003.html"><strong>Before Pragmatism Had a Name: Blake&#x27;s &quot;America A Prophecy&quot; Anticipates American Anticipatory Epistemology</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Before Pragmatism Had a Name examines how William Blake&#x27;s America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.18807970">DOI: 10.5281/zenodo.18807970</a> · <a href="papers/2026_BeforePragmatism/">Paper Folder</a> · <a href="works/Friedman2026BeforePragmatismHadName003.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.18807970" aria-label="Primary link for Before Pragmatism Had a Name: Blake&#x27;s &quot;America A Prophecy&quot; Anticipates American Anticipatory Epistemology" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026GoldenCompassLunarFlux004.html">The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.19335195" aria-label="Primary link for The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value">Link</a>
+                    <div>
+                        <a href="works/Friedman2026GoldenCompassLunarFlux004.html"><strong>The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">This manuscript overlays the history of British and American bimetallism with the mythopoetic architecture of William Blake’s prophetic corpus, reading the disintegration of the…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.19335195">DOI: 10.5281/zenodo.19335195</a> · <a href="papers/2026_Bimetalism/">Paper Folder</a> · <a href="works/Friedman2026GoldenCompassLunarFlux004.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.19335195" aria-label="Primary link for The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026DoorsPerceptionAreThreshold007.html">The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake&#x27;s Theory of Seeing</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.18600040" aria-label="Primary link for The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake&#x27;s Theory of Seeing">Link</a>
+                    <div>
+                        <a href="works/Friedman2026DoorsPerceptionAreThreshold007.html"><strong>The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake&#x27;s Theory of Seeing</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake&#x27;s prophetic vision and the mathematics of Active Inference. The paper…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.18600040">DOI: 10.5281/zenodo.18600040</a> · <a href="papers/2026_DoorsOfPerception/">Paper Folder</a> · <a href="works/Friedman2026DoorsPerceptionAreThreshold007.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.18600040" aria-label="Primary link for The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake&#x27;s Theory of Seeing" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026ArchitectureFalseGodsWilliam115.html">The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.20144983" aria-label="Primary link for The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision">Link</a>
+                    <div>
+                        <a href="works/Friedman2026ArchitectureFalseGodsWilliam115.html"><strong>The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">This rapid-publication essay synthesizes three intellectual frameworks examining cognitive closure. The author analyzes Professor Jiang Xueqin&#x27;s commentary on artificial…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.20144983">DOI: 10.5281/zenodo.20144983</a> · <a href="papers/2026_BlakeJiang/">Paper Folder</a> · <a href="works/Friedman2026ArchitectureFalseGodsWilliam115.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.20144983" aria-label="Primary link for The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2026</div>
-                    <div><a href="works/Friedman2026FourfoldVisionWilliamBlake196.html">Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.21388456" aria-label="Primary link for Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing">Link</a>
+                    <div>
+                        <a href="works/Friedman2026FourfoldVisionWilliamBlake196.html"><strong>Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Published by Synergetics University on 14 July 2026, The Fuller Conjecture asks whether &quot;there exists a line of reasoning that presents Fuller&#x27;s synergetic vision as a…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.21388456">DOI: 10.5281/zenodo.21388456</a> · <a href="papers/2026_FourfoldVision/">Paper Folder</a> · <a href="works/Friedman2026FourfoldVisionWilliamBlake196.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.21388456" aria-label="Primary link for Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025CognitiveArtScienceToward016.html">On Cognitive Art &amp; Science: Toward Wholeness From Both Sides</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.16740438" aria-label="Primary link for On Cognitive Art &amp; Science: Toward Wholeness From Both Sides">Link</a>
+                    <div>
+                        <a href="works/Friedman2025CognitiveArtScienceToward016.html"><strong>On Cognitive Art &amp; Science: Toward Wholeness From Both Sides</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.16740438">DOI: 10.5281/zenodo.16740438</a> · <a href="papers/2025_CognitiveArtScience/">Paper Folder</a> · <a href="works/Friedman2025CognitiveArtScienceToward016.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.16740438" aria-label="Primary link for On Cognitive Art &amp; Science: Toward Wholeness From Both Sides" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025Time017.html">On Time</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.15168381" aria-label="Primary link for On Time">Link</a>
+                    <div>
+                        <a href="works/Friedman2025Time017.html"><strong>On Time</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.15168381">DOI: 10.5281/zenodo.15168381</a> · <a href="papers/2025_OnTime/">Paper Folder</a> · <a href="works/Friedman2025Time017.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.15168381" aria-label="Primary link for On Time" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025QuadMathAnalyticalReview4D018.html">QuadMath: An Analytical Review of 4D and Quadray Coordinates</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.16887799" aria-label="Primary link for QuadMath: An Analytical Review of 4D and Quadray Coordinates">Link</a>
+                    <div>
+                        <a href="works/Friedman2025QuadMathAnalyticalReview4D018.html"><strong>QuadMath: An Analytical Review of 4D and Quadray Coordinates</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller&#x27;s Synergetics geometry in a computational framework. The paper…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.16887799">DOI: 10.5281/zenodo.16887799</a> · <a href="papers/2025_QuadMath/">Paper Folder</a> · <a href="works/Friedman2025QuadMathAnalyticalReview4D018.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.16887799" aria-label="Primary link for QuadMath: An Analytical Review of 4D and Quadray Coordinates" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html">Symergetics: Symbolic Synergetics for Rational Arithmetic</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.17114389" aria-label="Primary link for Symergetics: Symbolic Synergetics for Rational Arithmetic">Link</a>
+                    <div>
+                        <a href="works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html"><strong>Symergetics: Symbolic Synergetics for Rational Arithmetic</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller&#x27;s…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.17114389">DOI: 10.5281/zenodo.17114389</a> · <a href="papers/2025_Symergetics/">Paper Folder</a> · <a href="works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.17114389" aria-label="Primary link for Symergetics: Symbolic Synergetics for Rational Arithmetic" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2025</div>
-                    <div><a href="works/Friedman2025SynthesisAgentNiche021.html">Synthesis of Agent and Niche</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.17235137" aria-label="Primary link for Synthesis of Agent and Niche">Link</a>
+                    <div>
+                        <a href="works/Friedman2025SynthesisAgentNiche021.html"><strong>Synthesis of Agent and Niche</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake&#x27;s The Marriage of Heaven and Hell and ecological psychology, mediated by Active…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.17235137">DOI: 10.5281/zenodo.17235137</a> · <a href="papers/2025_AgentAndNiche/">Paper Folder</a> · <a href="works/Friedman2025SynthesisAgentNiche021.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.17235137" aria-label="Primary link for Synthesis of Agent and Niche" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2024</div>
-                    <div><a href="works/Friedman2024FourFoldFieldsQuantum037.html">Four-fold Fields of Quantum Dreams</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.10798144" aria-label="Primary link for Four-fold Fields of Quantum Dreams">Link</a>
+                    <div>
+                        <a href="works/Friedman2024FourFoldFieldsQuantum037.html"><strong>Four-fold Fields of Quantum Dreams</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured visual-phenomenological…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.10798144">DOI: 10.5281/zenodo.10798144</a> · <a href="papers/2024_QuantumDreams/">Paper Folder</a> · <a href="works/Friedman2024FourFoldFieldsQuantum037.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.10798144" aria-label="Primary link for Four-fold Fields of Quantum Dreams" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
                 <article class="work-row">
                     <div class="year">2024</div>
-                    <div><a href="works/Friedman2024WayFindingInfiniteImaginarium042.html">Way Finding in the Infinite Imaginarium</a><div class="venue">Zenodo · Paper</div></div>
-                    <a href="https://doi.org/10.5281/zenodo.10601081" aria-label="Primary link for Way Finding in the Infinite Imaginarium">Link</a>
+                    <div>
+                        <a href="works/Friedman2024WayFindingInfiniteImaginarium042.html"><strong>Way Finding in the Infinite Imaginarium</strong></a>
+                        <div class="venue">Zenodo · Paper</div>
+                        <div class="work-desc">Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual…</div>
+                        <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.10601081">DOI: 10.5281/zenodo.10601081</a> · <a href="papers/2024_InfiniteImaginarium/">Paper Folder</a> · <a href="works/Friedman2024WayFindingInfiniteImaginarium042.html">Full Work Page &amp; Citation</a></div>
+                    </div>
+                    <a href="https://doi.org/10.5281/zenodo.10601081" aria-label="Primary link for Way Finding in the Infinite Imaginarium" class="btn btn-sm btn-outline">Primary Link</a>
                 </article>
             </div>
             <p class="text-center mt-2"><a href="publications.html" class="btn btn-gold">Open full bibliography</a></p>
@@ -215,52 +283,94 @@
         <section class="section">
             <div class="section-header">
                 <h2>Related Software</h2>
-                <p>Repository entry points for implementation, data, and teaching work.</p>
+                <p>Repository entry points for implementation, companion papers, data, and teaching work.</p>
                 <div class="section-divider"></div>
             </div>
             <div class="mini-grid">
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/QuadCraft">QuadCraft</a></h3>
                     <p>Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller&#x27;s synergetics in an interactive 3D world</p>
-                    <p class="text-muted">JavaScript · ⭐ 9</p>
+                    <p class="text-muted">JavaScript · ⭐ 9 · Updated 2026-05</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/QuadCraft">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/QuadMath">QuadMath</a></h3>
                     <p>Mathematical exposition of Quadray coordinate systems (4-vector tetrahedral coordinates); LaTeX documentation and computation library</p>
-                    <p class="text-muted">TeX · ⭐ 2</p>
+                    <p class="text-muted">TeX · ⭐ 2 · Updated 2026-02</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/QuadMath">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/ivm-xyz">ivm-xyz</a></h3>
                     <p>Python library for 3D and 4D Quadray/IVM (Isotropic Vector Matrix) geometry — coordinate conversion, volume calculations, and polyhedral operations</p>
-                    <p class="text-muted">Python · ⭐ 2</p>
+                    <p class="text-muted">Python · ⭐ 2 · Updated 2025-11</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/ivm-xyz">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/godel_ivm">godel_ivm</a></h3>
                     <p>Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2025-10</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/godel_ivm">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/symergetics">symergetics</a></h3>
                     <p>Symbolic Synergetics — computer algebra and formal symbolic systems for Buckminster Fuller&#x27;s synergetics mathematics</p>
-                    <p class="text-muted">Python · ⭐ 0</p>
+                    <p class="text-muted">Python · ⭐ 0 · Updated 2025-09</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/symergetics">GitHub Repo</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/fuller-obsidian">fuller-obsidian</a></h3>
                     <p>Obsidian vault dedicated to R. Buckminster Fuller&#x27;s ideas — synergetics, geodesics, and design science</p>
-                    <p class="text-muted">Unspecified · ⭐ 0</p>
+                    <p class="text-muted">Unspecified · ⭐ 0 · Updated 2025-02</p>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/fuller-obsidian">GitHub Repo</a></div>
                 </article>
             </div>
         </section>
         <section class="section section-alt">
             <div class="section-header">
                 <h2>Learning Path</h2>
-                <p>A compact route through the material.</p>
+                <p>A structured, cross-linked route through tutorials, pillar guides, foundational papers, and software repositories.</p>
                 <div class="section-divider"></div>
             </div>
-            <div class="mini-card"><ul><li>Start with Blake &amp; Fuller for the historical bridge.</li>
-<li>Read QuadMath and Symergetics for the formal geometry thread.</li>
-<li>Use the art gallery and Curio Cards materials for visual context.</li></ul></div>
-            <p class="text-center mt-2"><a href="pages/DOMAINS.md" class="btn btn-outline">Markdown domain map</a></p>
+            <div class="mini-card"><ul><li>Browse the curated visual archive on the <a href='art.html'>Visual Art Gallery</a> (940+ catalogued pen-and-ink drawings).</li>
+<li>Explore early blockchain history with <a href='art.html#curio-cards'>Curio Cards (Cards 24, 25, 26 — Complexity, Passion, Education; 2017)</a>.</li>
+<li>Study prophetic economics and metaphysics in <a href='works/Friedman2026GoldenCompassLunarFlux004.html'>The Golden Compass and the Lunar Flux: William Blake and the Architecture of Value</a>.</li>
+<li>Examine anticipatory epistemology in <a href='works/Friedman2026BeforePragmatismHadName003.html'>Before Pragmatism Had a Name: Blake's America A Prophecy</a>.</li>
+<li>Investigate tetrahedral geometry and coordinate systems in <a href='works/Friedman2025QuadMathAnalyticalReview4D018.html'>QuadMath: An Analytical Review of 4D and Quadray Coordinates</a>.</li>
+<li>Interact with 3D synergetics environments through <a href='https://github.com/docxology/QuadCraft'>QuadCraft</a> and <a href='https://github.com/docxology/ivm-xyz'>ivm-xyz</a>.</li>
+<li>Explore digital knowledge graphs of synergetics with <a href='https://github.com/docxology/fuller-obsidian'>fuller-obsidian</a>.</li></ul></div>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h2>Public APIs &amp; Discovery Endpoints</h2>
+                <p>Machine-readable endpoints for querying research metadata and persistent identifiers.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="mini-grid">
+                <article class="mini-card api-card">
+                    <h3><a href="https://orcid.org/0000-0001-6232-9096">ORCID API</a></h3>
+                    <p>Persistent researcher identity record (0000-0001-6232-9096) linking published works and verified peer reviews.</p>
+                    <p class="text-muted"><a href="https://pub.orcid.org/v3.0/0000-0001-6232-9096">pub.orcid.org/v3.0/0000-0001-6232-9096</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22">Zenodo REST API</a></h3>
+                    <p>Open-access deposits, software releases, preprints, and dataset versions indexed by ORCID.</p>
+                    <p class="text-muted"><a href="https://zenodo.org/api/records?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22">Zenodo Creator Query</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">Crossref Works API</a></h3>
+                    <p>Publisher DOI metadata records, license information, and formal citation relations.</p>
+                    <p class="text-muted"><a href="https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096">api.crossref.org/works</a></p>
+                </article>
+                <article class="mini-card api-card">
+                    <h3><a href="https://api.github.com/users/docxology">GitHub REST API</a></h3>
+                    <p>Repository metadata, release artifacts, and open-source software inventory.</p>
+                    <p class="text-muted"><a href="https://api.github.com/users/docxology/repos">api.github.com/users/docxology/repos</a></p>
+                </article>
+            </div>
+            <p class="text-center mt-2">
+                <a href="discovery.html" class="btn btn-outline">Full Discovery Map</a>
+                <a href="pages/DOMAINS.md" class="btn btn-outline">Markdown Domain Map</a>
+            </p>
         </section>
     </main>
     <footer role="contentinfo">
@@ -271,10 +381,10 @@
             <a href="software.html">Software</a>
             <a href="search.html">Search</a>
             <a href="discovery.html">Discovery</a>
-            <a href="cite-verify.html">Cite & Verify</a>
+            <a href="cite-verify.html">Cite &amp; Verify</a>
             <a href="https://github.com/docxology/docxology">Source Repo</a>
         </div>
-        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed {generated_month_year()}</p>
+        <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed August 2026</p>
     </footer>
 <script src="/js/search-utils.js?v=20260813"></script>
 <script src="/js/tts-controls.js?v=20260813" defer></script>
