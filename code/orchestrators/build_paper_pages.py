@@ -151,7 +151,6 @@ def render_page(work: dict) -> str:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{h(work['title'])} Documentation — Daniel Ari Friedman</title>
     <meta name="description" content="{h(clip_description(summary))}">
-    <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="{h(canonical)}">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">

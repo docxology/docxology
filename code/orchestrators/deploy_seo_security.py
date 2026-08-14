@@ -4,7 +4,6 @@ Deploy SEO + security improvements across all indexable HTML pages:
 
 1. Content-Security-Policy meta tag (if missing)
 2. rel="me" social verification links (if missing)
-3. hreflang alternate links (if missing)
 
 Skips redirect stubs (noindex pages) and the Google verification page.
 Idempotent — only adds tags that are missing.
@@ -46,9 +45,7 @@ REL_ME_LINKS = """    <link rel="me" href="https://scholar.google.com/citations?
     <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">"""
 
-# hreflang alternate links
-HREFLANG_LINKS = """    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
-    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />"""
+
 EXTERNAL_FONT_LINK = re.compile(
     r"\s*<link\b[^>]*(?:fonts\.googleapis\.com|fonts\.gstatic\.com)[^>]*>\s*",
     re.I,
@@ -127,14 +124,12 @@ def add_rel_me_if_missing(html: str) -> str:
     return html[:insert_pos] + REL_ME_LINKS + "\n" + html[insert_pos:]
 
 
-def add_hreflang_if_missing(html: str) -> str:
-    """Add hreflang alternate links if not present."""
-    if "hreflang" in html:
-        return html
-    insert_pos = find_insertion_point(html)
-    if insert_pos is None:
-        return html
-    return html[:insert_pos] + HREFLANG_LINKS + "\n" + html[insert_pos:]
+HREFLANG_TAG_RE = re.compile(r"\s*<link\b[^>]*\bhreflang=[^>]*>\s*", re.I)
+
+
+def strip_hreflang_tags(html: str) -> str:
+    """Remove hreflang alternate links from public HTML."""
+    return HREFLANG_TAG_RE.sub("\n", html)
 
 
 def process_file(path: Path) -> dict:
@@ -166,9 +161,9 @@ def process_file(path: Path) -> dict:
         changes.append("rel-me")
         original = html
 
-    html = add_hreflang_if_missing(html)
+    html = strip_hreflang_tags(html)
     if html != original:
-        changes.append("hreflang")
+        changes.append("hreflang-stripped")
         original = html
 
     if changes:

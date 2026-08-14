@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T21:37:19Z",
+  "generated_at": "2026-08-14T19:20:14Z",
   "artifacts": [
     {
       "name": "Paper folder doc regeneration",
@@ -99,8 +99,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-08-13.json",
-        "reports/source_coverage_2026-08-13.md"
+        "reports/source_coverage_2026-08-14.json",
+        "reports/source_coverage_2026-08-14.md"
       ],
       "sources": [
         "data/works.json",
@@ -148,6 +148,21 @@
       "command": "python3 code/orchestrators/generate_og_images.py"
     },
     {
+      "name": "Pillar research explainers",
+      "outputs": [
+        "cognitive-security.html",
+        "computational-entomology.html",
+        "insect-cognition.html",
+        "active-inference.html",
+        "neurosymbolic-ai.html"
+      ],
+      "sources": [
+        "data/works.json",
+        "code/orchestrators/generate_pillar_pages.py"
+      ],
+      "command": "python3 code/orchestrators/generate_pillar_pages.py"
+    },
+    {
       "name": "Agent data exports",
       "outputs": [
         "data/software.json",
@@ -192,7 +207,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-08-13.json"
+        "reports/pages_artifact_growth_2026-08-14.json"
       ],
       "sources": [
         "tracked repository files",
@@ -501,7 +516,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-08-13.json"
+        "reports/asset_size_2026-08-14.json"
       ],
       "sources": [
         "root HTML pages",
@@ -515,7 +530,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-08-13.json"
+        "reports/accessibility_static_2026-08-14.json"
       ],
       "sources": [
         "root HTML pages",

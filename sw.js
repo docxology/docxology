@@ -39,7 +39,6 @@ const STATIC_ASSETS = [
   '/llms.txt',
   '/humans.txt',
   '/AGENT_START.md',
-  '/search-index.json',
   '/codemeta.json',
   '/CITATION.cff',
   '/bibliography.bib',

@@ -50,20 +50,13 @@ REL_ME_LINKS = (
     '    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">'
 )
 
-# hreflang alternate links.
-HREFLANG_LINKS = (
-    '    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />\n'
-    '    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />'
-)
-
-# Combined head extras block — CSP + rel-me + hreflang + resource hints.
+# Combined head extras block — CSP + rel-me + resource hints.
 # Inject this before the closing </head> or before the first <meta property="og:">
 # in generated HTML templates.
 HEAD_EXTRAS = (
     f"    {CSP_META_TAG}\n"
     f"    {REFERRER_POLICY_META}\n"
     f"{REL_ME_LINKS}\n"
-    f"{HREFLANG_LINKS}\n"
     '    <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">'
 )
 

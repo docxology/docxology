@@ -78,8 +78,9 @@
     <link rel="me" href="https://linkedin.com/in/danielarifriedman">
     <link rel="me" href="https://youtube.com/@danielarifriedman">
     <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
-    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
-    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
+
+<meta name="referrer" content="strict-origin-when-cross-origin">
 
 
 
@@ -141,6 +142,29 @@
                     <li><a href="evidence.html">evidence.html</a> tracks key claims, sources, confidence, and caveats.</li>
                 </ul>
             </div>
+        <section class="section section-alt">
+            <div class="section-header"><h2>Verifiable AI Agent Provenance &amp; Citation Architecture</h2><p>How artificial intelligence and autonomous retrieval agents establish cryptographic and empirical provenance.</p><div class="section-divider"></div></div>
+            <div class="card" style="line-height:1.8;">
+                <p>As LLM-driven research agents, generative answer engines, and autonomous search systems synthesize scholarly literature, verifying claim provenance is the primary defense against hallucination and epistemic drift. The <code>docxology</code> public research index implements a rigorous <strong>Generative Engine Optimization (GEO) and Agentic Provenance Architecture</strong> grounded in four machine-checkable invariants:</p>
+                <ol style="margin:1rem 0 1.5rem 1.5rem;">
+                    <li><strong>Immutable Citation Keys &amp; Canonical URI Targets:</strong> Every work is anchored by a frozen citation key (e.g., <code>works/Friedman2021ActiveInferantsActiveInference075.html</code>). Canonical target identifiers resolve deterministically without redirect chains or volatile query parameters.</li>
+                    <li><strong>Dual Machine-Readable Layer (Schema.org &amp; CSL JSON):</strong> Every public landing page pairs inline JSON-LD (<code>ScholarlyArticle</code>, <code>DefinedTerm</code>, <code>Article</code>) with repository-level standard exports (<a href="bibliography.csl.json">CSL JSON</a>, <a href="bibliography.bib">BibTeX</a>, <a href="codemeta.json">CodeMeta</a>), enabling both semantic web graph traversal and citation-manager integration.</li>
+                    <li><strong>Strict Source Hierarchy &amp; Absence Ledgers:</strong> Claims regarding publication metrics, GitHub release anchors, and active research findings are verified against local sources of truth (e.g. <a href="pages/BIBLIOGRAPHY.md">BIBLIOGRAPHY.md</a>, <a href="evidence.html">Evidence Ledger</a>, <a href="pages/SOFTWARE.md">SOFTWARE.md</a>) and cross-checked against public APIs with recorded provenance timestamps.</li>
+                    <li><strong>Agent Discovery Protocol (llms.txt &amp; Agent Map):</strong> Autonomous crawlers discover all structured datasets, OpenAPI-equivalent route manifests, and schema registries via <a href="llms.txt">llms.txt</a> and <a href="data/agent-index.json">Agent Route Manifest (agent-index.json)</a>.</li>
+                </ol>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-header"><h2>Generative Engine Optimization (GEO) Case Study</h2><p>Empirical principles for structuring web research indices for AI answer engine retrieval.</p><div class="section-divider"></div></div>
+            <div class="card" style="line-height:1.8;">
+                <p>Generative search engines (such as Perplexity, ChatGPT Search, and Google AI Overviews) reward information architectures that emphasize direct answer extraction, dense semantic linkages, and verifiable external citations. Key practices modeled across this repository include:</p>
+                <ul>
+                    <li><strong>Answer-First Sectional Geometry:</strong> Answering core conceptual queries within the initial 40–60 words of each section before introducing secondary navigational options.</li>
+                    <li><strong>Question-Form Passages:</strong> Utilizing standalone, self-contained H2 questions that allow retrieval models to index direct passage-level answers.</li>
+                    <li><strong>Static Build-Time Rendering:</strong> Eliminating client-side JavaScript rendering barriers so non-executing AI scrapers directly index full bibliographic tables and video transcripts.</li>
+                </ul>
+            </div>
+        </section>
         </section>
     </main>
     <footer role="contentinfo">

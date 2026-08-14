@@ -39,7 +39,8 @@
                 "value": "10.5281/zenodo.16903351",
                 "url": "https://doi.org/10.5281/zenodo.16903351"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.16903351"
+            "sameAs": "https://doi.org/10.5281/zenodo.16903351",
+            "citation": "Friedman, Daniel Ari. 2026. A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication. Zenodo. DOI: 10.5281/zenodo.16903351. URL: https://doi.org/10.5281/zenodo.16903351."
         },
         {
             "@type": "CreativeWorkSeries",
@@ -65,7 +66,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2026ActiveInferenceJournal500002.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2026ActiveInferenceJournal500002.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026ActiveInferenceJournal500002.html",
-            "sameAs": "https://video.activeinference.institute/"
+            "sameAs": "https://video.activeinference.institute/",
+            "citation": "Friedman, Daniel Ari. 2026. Active Inference Journal — 500+ videos on Active Inference with transcripts. YouTube. URL: https://video.activeinference.institute/."
         },
         {
             "@type": "ScholarlyArticle",
@@ -97,7 +99,8 @@
                 "value": "10.5281/zenodo.18807970",
                 "url": "https://doi.org/10.5281/zenodo.18807970"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.18807970"
+            "sameAs": "https://doi.org/10.5281/zenodo.18807970",
+            "citation": "Friedman, Daniel Ari. 2026. Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology. Zenodo. DOI: 10.5281/zenodo.18807970. URL: https://doi.org/10.5281/zenodo.18807970."
         },
         {
             "@type": "ScholarlyArticle",
@@ -129,7 +132,8 @@
                 "value": "10.5281/zenodo.19335195",
                 "url": "https://doi.org/10.5281/zenodo.19335195"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.19335195"
+            "sameAs": "https://doi.org/10.5281/zenodo.19335195",
+            "citation": "Friedman, Daniel Ari. 2026. The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value. Zenodo. DOI: 10.5281/zenodo.19335195. URL: https://doi.org/10.5281/zenodo.19335195."
         },
         {
             "@type": "ScholarlyArticle",
@@ -161,7 +165,8 @@
                 "value": "10.5281/zenodo.18364118",
                 "url": "https://doi.org/10.5281/zenodo.18364118"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.18364118"
+            "sameAs": "https://doi.org/10.5281/zenodo.18364118",
+            "citation": "Friedman, Daniel Ari. 2026. Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory). Zenodo. DOI: 10.5281/zenodo.18364118. URL: https://doi.org/10.5281/zenodo.18364118."
         },
         {
             "@type": "CreativeWorkSeries",
@@ -187,7 +192,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2026PersonalYouTube200Livestreams006.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2026PersonalYouTube200Livestreams006.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026PersonalYouTube200Livestreams006.html",
-            "sameAs": "https://www.youtube.com/@danielarifriedman/playlists"
+            "sameAs": "https://www.youtube.com/@danielarifriedman/playlists",
+            "citation": "Friedman, Daniel Ari. 2026. Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions. YouTube. URL: https://www.youtube.com/@danielarifriedman/playlists."
         },
         {
             "@type": "ScholarlyArticle",
@@ -219,7 +225,8 @@
                 "value": "10.5281/zenodo.18600040",
                 "url": "https://doi.org/10.5281/zenodo.18600040"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.18600040"
+            "sameAs": "https://doi.org/10.5281/zenodo.18600040",
+            "citation": "Friedman, Daniel Ari. 2026. The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing. Zenodo. DOI: 10.5281/zenodo.18600040. URL: https://doi.org/10.5281/zenodo.18600040."
         },
         {
             "@type": "PresentationDigitalDocument",
@@ -402,7 +409,8 @@
                 "value": "10.5281/zenodo.17555266",
                 "url": "https://doi.org/10.5281/zenodo.17555266"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.17555266"
+            "sameAs": "https://doi.org/10.5281/zenodo.17555266",
+            "citation": "Friedman, Daniel Ari. 2025. 5th Applied Active Inference Symposium — Abstract Book. Presentation. DOI: 10.5281/zenodo.17555266. URL: https://doi.org/10.5281/zenodo.17555266."
         },
         {
             "@type": "ScholarlyArticle",
@@ -442,7 +450,8 @@
                 "value": "10.5281/zenodo.17228945",
                 "url": "https://doi.org/10.5281/zenodo.17228945"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.17228945"
+            "sameAs": "https://doi.org/10.5281/zenodo.17228945",
+            "citation": "Friedman, Daniel Ari. 2025. Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference. Zenodo. DOI: 10.5281/zenodo.17228945. URL: https://doi.org/10.5281/zenodo.17228945."
         },
         {
             "@type": "ScholarlyArticle",
@@ -474,7 +483,8 @@
                 "value": "10.5281/zenodo.15170907",
                 "url": "https://doi.org/10.5281/zenodo.15170907"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.15170907"
+            "sameAs": "https://doi.org/10.5281/zenodo.15170907",
+            "citation": "Friedman, Daniel Ari. 2025. CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling. Zenodo. DOI: 10.5281/zenodo.15170907. URL: https://doi.org/10.5281/zenodo.15170907."
         },
         {
             "@type": "ScholarlyArticle",
@@ -506,7 +516,8 @@
                 "value": "10.5281/zenodo.17238736",
                 "url": "https://doi.org/10.5281/zenodo.17238736"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.17238736"
+            "sameAs": "https://doi.org/10.5281/zenodo.17238736",
+            "citation": "Friedman, Daniel Ari. 2025. Computational Complexity and Energetics of the Ant Stack. Zenodo. DOI: 10.5281/zenodo.17238736. URL: https://doi.org/10.5281/zenodo.17238736."
         },
         {
             "@type": "ScholarlyArticle",
@@ -538,7 +549,8 @@
                 "value": "10.5281/zenodo.17229924",
                 "url": "https://doi.org/10.5281/zenodo.17229924"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.17229924"
+            "sameAs": "https://doi.org/10.5281/zenodo.17229924",
+            "citation": "Friedman, Daniel Ari. 2025. EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories. Zenodo. DOI: 10.5281/zenodo.17229924. URL: https://doi.org/10.5281/zenodo.17229924."
         },
         {
             "@type": "ScholarlyArticle",
@@ -574,7 +586,8 @@
                 "value": "10.5281/zenodo.15061666",
                 "url": "https://doi.org/10.5281/zenodo.15061666"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.15061666"
+            "sameAs": "https://doi.org/10.5281/zenodo.15061666",
+            "citation": "Friedman, Daniel Ari. 2025. Increasing the Accessibility and Applicability of Active Inference. Zenodo. DOI: 10.5281/zenodo.15061666. URL: https://doi.org/10.5281/zenodo.15061666."
         },
         {
             "@type": "ScholarlyArticle",
@@ -606,7 +619,8 @@
                 "value": "10.5281/zenodo.16790554",
                 "url": "https://doi.org/10.5281/zenodo.16790554"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.16790554"
+            "sameAs": "https://doi.org/10.5281/zenodo.16790554",
+            "citation": "Friedman, Daniel Ari. 2025. MDKV: A Multitrack Markdown Container for Structured, Portable Documents. Zenodo. DOI: 10.5281/zenodo.16790554. URL: https://doi.org/10.5281/zenodo.16790554."
         },
         {
             "@type": "ScholarlyArticle",
@@ -638,7 +652,8 @@
                 "value": "10.5281/zenodo.17244386",
                 "url": "https://doi.org/10.5281/zenodo.17244386"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.17244386"
+            "sameAs": "https://doi.org/10.5281/zenodo.17244386",
+            "citation": "Friedman, Daniel Ari. 2025. Markdown Decision Process: A Framework for Probabilistic Document Analysis. Zenodo. DOI: 10.5281/zenodo.17244386. URL: https://doi.org/10.5281/zenodo.17244386."
         },
         {
             "@type": "ScholarlyArticle",
@@ -670,7 +685,8 @@
                 "value": "10.5281/zenodo.16740438",
                 "url": "https://doi.org/10.5281/zenodo.16740438"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.16740438"
+            "sameAs": "https://doi.org/10.5281/zenodo.16740438",
+            "citation": "Friedman, Daniel Ari. 2025. On Cognitive Art & Science: Toward Wholeness From Both Sides. Zenodo. DOI: 10.5281/zenodo.16740438. URL: https://doi.org/10.5281/zenodo.16740438."
         },
         {
             "@type": "ScholarlyArticle",
@@ -702,7 +718,8 @@
                 "value": "10.5281/zenodo.15168381",
                 "url": "https://doi.org/10.5281/zenodo.15168381"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.15168381"
+            "sameAs": "https://doi.org/10.5281/zenodo.15168381",
+            "citation": "Friedman, Daniel Ari. 2025. On Time. Zenodo. DOI: 10.5281/zenodo.15168381. URL: https://doi.org/10.5281/zenodo.15168381."
         },
         {
             "@type": "ScholarlyArticle",
@@ -734,7 +751,8 @@
                 "value": "10.5281/zenodo.16887799",
                 "url": "https://doi.org/10.5281/zenodo.16887799"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.16887799"
+            "sameAs": "https://doi.org/10.5281/zenodo.16887799",
+            "citation": "Friedman, Daniel Ari. 2025. QuadMath: An Analytical Review of 4D and Quadray Coordinates. Zenodo. DOI: 10.5281/zenodo.16887799. URL: https://doi.org/10.5281/zenodo.16887799."
         },
         {
             "@type": "ScholarlyArticle",
@@ -782,7 +800,8 @@
                 "value": "10.5281/zenodo.15389682",
                 "url": "https://doi.org/10.5281/zenodo.15389682"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.15389682"
+            "sameAs": "https://doi.org/10.5281/zenodo.15389682",
+            "citation": "Friedman, Daniel Ari. 2025. ResNei: Solution Design Document. Zenodo. DOI: 10.5281/zenodo.15389682. URL: https://doi.org/10.5281/zenodo.15389682."
         },
         {
             "@type": "ScholarlyArticle",
@@ -814,7 +833,8 @@
                 "value": "10.5281/zenodo.17114389",
                 "url": "https://doi.org/10.5281/zenodo.17114389"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.17114389"
+            "sameAs": "https://doi.org/10.5281/zenodo.17114389",
+            "citation": "Friedman, Daniel Ari. 2025. Symergetics: Symbolic Synergetics for Rational Arithmetic. Zenodo. DOI: 10.5281/zenodo.17114389. URL: https://doi.org/10.5281/zenodo.17114389."
         },
         {
             "@type": "ScholarlyArticle",
@@ -846,7 +866,8 @@
                 "value": "10.5281/zenodo.17235137",
                 "url": "https://doi.org/10.5281/zenodo.17235137"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.17235137"
+            "sameAs": "https://doi.org/10.5281/zenodo.17235137",
+            "citation": "Friedman, Daniel Ari. 2025. Synthesis of Agent and Niche. Zenodo. DOI: 10.5281/zenodo.17235137. URL: https://doi.org/10.5281/zenodo.17235137."
         },
         {
             "@type": "PresentationDigitalDocument",
@@ -878,7 +899,8 @@
                 "value": "10.5281/zenodo.17138223",
                 "url": "https://doi.org/10.5281/zenodo.17138223"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.17138223"
+            "sameAs": "https://doi.org/10.5281/zenodo.17138223",
+            "citation": "Friedman, Daniel Ari. 2025. Systems Processes, Active Inference, and Beyond. Presentation. DOI: 10.5281/zenodo.17138223. URL: https://doi.org/10.5281/zenodo.17138223."
         },
         {
             "@type": "ScholarlyArticle",
@@ -934,7 +956,8 @@
                 "value": "10.3389/fpsyg.2025.1585315",
                 "url": "https://doi.org/10.3389/fpsyg.2025.1585315"
             },
-            "sameAs": "https://doi.org/10.3389/fpsyg.2025.1585315"
+            "sameAs": "https://doi.org/10.3389/fpsyg.2025.1585315",
+            "citation": "Friedman, Daniel Ari. 2025. Temporal Depth in a Coherent Self and in Depersonalization. Frontiers in Psychology. DOI: 10.3389/fpsyg.2025.1585315. URL: https://doi.org/10.3389/fpsyg.2025.1585315."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1086,7 +1109,8 @@
                 "value": "10.5281/zenodo.17982447",
                 "url": "https://doi.org/10.5281/zenodo.17982447"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.17982447"
+            "sameAs": "https://doi.org/10.5281/zenodo.17982447",
+            "citation": "Friedman, Daniel Ari. 2025. The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot). Zenodo. DOI: 10.5281/zenodo.17982447. URL: https://doi.org/10.5281/zenodo.17982447."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1118,7 +1142,8 @@
                 "value": "10.5281/zenodo.16782756",
                 "url": "https://doi.org/10.5281/zenodo.16782756"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.16782756"
+            "sameAs": "https://doi.org/10.5281/zenodo.16782756",
+            "citation": "Friedman, Daniel Ari. 2025. The Ant Stack. Zenodo. DOI: 10.5281/zenodo.16782756. URL: https://doi.org/10.5281/zenodo.16782756."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1174,7 +1199,8 @@
                 "value": "10.48550/arXiv.2505.17500",
                 "url": "https://doi.org/10.48550/arXiv.2505.17500"
             },
-            "sameAs": "https://doi.org/10.48550/arXiv.2505.17500"
+            "sameAs": "https://doi.org/10.48550/arXiv.2505.17500",
+            "citation": "Friedman, Daniel Ari. 2025. The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes. ArXiv. DOI: 10.48550/arXiv.2505.17500. URL: https://doi.org/10.48550/arXiv.2505.17500."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1218,7 +1244,8 @@
                 "value": "10.3390/e27050459",
                 "url": "https://doi.org/10.3390/e27050459"
             },
-            "sameAs": "https://doi.org/10.3390/e27050459"
+            "sameAs": "https://doi.org/10.3390/e27050459",
+            "citation": "Friedman, Daniel Ari. 2025. Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States. Entropy. DOI: 10.3390/e27050459. URL: https://doi.org/10.3390/e27050459."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1244,7 +1271,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2025TowardsScienceConsciousnessSocial028.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2025TowardsScienceConsciousnessSocial028.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2025TowardsScienceConsciousnessSocial028.html",
-            "sameAs": "https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes"
+            "sameAs": "https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes",
+            "citation": "Friedman, Daniel Ari. 2025. Towards a Science of Consciousness and Social Complexity... For Ants. Book Chapter. URL: https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1328,7 +1356,8 @@
                 "value": "10.5281/zenodo.11459322",
                 "url": "https://doi.org/10.5281/zenodo.11459322"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.11459322"
+            "sameAs": "https://doi.org/10.5281/zenodo.11459322",
+            "citation": "Friedman, Daniel Ari. 2024. Aligning Active Inference Ontology to SUMO. Zenodo. DOI: 10.5281/zenodo.11459322. URL: https://doi.org/10.5281/zenodo.11459322."
         },
         {
             "@type": "PresentationDigitalDocument",
@@ -1368,7 +1397,8 @@
                 "value": "10.5281/zenodo.14861595",
                 "url": "https://doi.org/10.5281/zenodo.14861595"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.14861595"
+            "sameAs": "https://doi.org/10.5281/zenodo.14861595",
+            "citation": "Friedman, Daniel Ari. 2024. BioFirm Development at Applied Active Inference Symposium 2024. Presentation. DOI: 10.5281/zenodo.14861595. URL: https://doi.org/10.5281/zenodo.14861595."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1408,7 +1438,8 @@
                 "value": "10.1002/asi.24900",
                 "url": "https://doi.org/10.1002/asi.24900"
             },
-            "sameAs": "https://doi.org/10.1002/asi.24900"
+            "sameAs": "https://doi.org/10.1002/asi.24900",
+            "citation": "Friedman, Daniel Ari. 2024. Bridging gaps in image meme research: A multidisciplinary paradigm. JASIST. DOI: 10.1002/asi.24900. URL: https://doi.org/10.1002/asi.24900."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1456,7 +1487,8 @@
                 "value": "10.1002/ece3.70063",
                 "url": "https://doi.org/10.1002/ece3.70063"
             },
-            "sameAs": "https://doi.org/10.1002/ece3.70063"
+            "sameAs": "https://doi.org/10.1002/ece3.70063",
+            "citation": "Friedman, Daniel Ari. 2024. Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea. Ecology & Evolution. DOI: 10.1002/ece3.70063. URL: https://doi.org/10.1002/ece3.70063."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1483,7 +1515,8 @@
                 "value": "10.5281/zenodo.13273681",
                 "url": "https://doi.org/10.5281/zenodo.13273681"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.13273681"
+            "sameAs": "https://doi.org/10.5281/zenodo.13273681",
+            "citation": "Friedman, Daniel Ari. 2024. Comments on National Digital Twins R&D Strategic Plan. Zenodo. DOI: 10.5281/zenodo.13273681. URL: https://doi.org/10.5281/zenodo.13273681."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1519,7 +1552,8 @@
                 "value": "10.48550/arXiv.2408.09548",
                 "url": "https://doi.org/10.48550/arXiv.2408.09548"
             },
-            "sameAs": "https://doi.org/10.48550/arXiv.2408.09548"
+            "sameAs": "https://doi.org/10.48550/arXiv.2408.09548",
+            "citation": "Friedman, Daniel Ari. 2024. Enhancing Population-based Search with Active Inference. ArXiv. DOI: 10.48550/arXiv.2408.09548. URL: https://doi.org/10.48550/arXiv.2408.09548."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1583,7 +1617,8 @@
                 "value": "10.5281/zenodo.13754585",
                 "url": "https://doi.org/10.5281/zenodo.13754585"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.13754585"
+            "sameAs": "https://doi.org/10.5281/zenodo.13754585",
+            "citation": "Friedman, Daniel Ari. 2024. FarmWorks: Decentralized AI Agents for Personalized Solutions. Zenodo. DOI: 10.5281/zenodo.13754585. URL: https://doi.org/10.5281/zenodo.13754585."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1655,7 +1690,8 @@
                 "value": "10.1016/j.neubiorev.2023.105500",
                 "url": "https://doi.org/10.1016/j.neubiorev.2023.105500"
             },
-            "sameAs": "https://doi.org/10.1016/j.neubiorev.2023.105500"
+            "sameAs": "https://doi.org/10.1016/j.neubiorev.2023.105500",
+            "citation": "Friedman, Daniel Ari. 2024. Federated inference and belief sharing. Neuroscience & Biobehavioral Reviews. DOI: 10.1016/j.neubiorev.2023.105500. URL: https://doi.org/10.1016/j.neubiorev.2023.105500."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1691,7 +1727,8 @@
                 "value": "10.5281/zenodo.10798144",
                 "url": "https://doi.org/10.5281/zenodo.10798144"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.10798144"
+            "sameAs": "https://doi.org/10.5281/zenodo.10798144",
+            "citation": "Friedman, Daniel Ari. 2024. Four-fold Fields of Quantum Dreams. Zenodo. DOI: 10.5281/zenodo.10798144. URL: https://doi.org/10.5281/zenodo.10798144."
         },
         {
             "@type": "PresentationDigitalDocument",
@@ -1723,7 +1760,8 @@
                 "value": "10.5281/zenodo.13711301",
                 "url": "https://doi.org/10.5281/zenodo.13711301"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.13711301"
+            "sameAs": "https://doi.org/10.5281/zenodo.13711301",
+            "citation": "Friedman, Daniel Ari. 2024. MathArt Stream #8: William Blake and Active Inference. Presentation. DOI: 10.5281/zenodo.13711301. URL: https://doi.org/10.5281/zenodo.13711301."
         },
         {
             "@type": "PresentationDigitalDocument",
@@ -1750,7 +1788,8 @@
                 "value": "10.5281/zenodo.14574046",
                 "url": "https://doi.org/10.5281/zenodo.14574046"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.14574046"
+            "sameAs": "https://doi.org/10.5281/zenodo.14574046",
+            "citation": "Friedman, Daniel Ari. 2024. Sensemaking Federation: Exploring the Frontiers of Digital Innovation. Presentation. DOI: 10.5281/zenodo.14574046. URL: https://doi.org/10.5281/zenodo.14574046."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1802,7 +1841,8 @@
                 "value": "10.3390/e26040303",
                 "url": "https://doi.org/10.3390/e26040303"
             },
-            "sameAs": "https://doi.org/10.3390/e26040303"
+            "sameAs": "https://doi.org/10.3390/e26040303",
+            "citation": "Friedman, Daniel Ari. 2024. Shared Protentions in Multi-Agent Active Inference. Entropy. DOI: 10.3390/e26040303. URL: https://doi.org/10.3390/e26040303."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1954,7 +1994,8 @@
                 "value": "10.5281/zenodo.14108992",
                 "url": "https://doi.org/10.5281/zenodo.14108992"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.14108992"
+            "sameAs": "https://doi.org/10.5281/zenodo.14108992",
+            "citation": "Friedman, Daniel Ari. 2024. The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot). Zenodo. DOI: 10.5281/zenodo.14108992. URL: https://doi.org/10.5281/zenodo.14108992."
         },
         {
             "@type": "ScholarlyArticle",
@@ -1986,7 +2027,8 @@
                 "value": "10.5281/zenodo.10601081",
                 "url": "https://doi.org/10.5281/zenodo.10601081"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.10601081"
+            "sameAs": "https://doi.org/10.5281/zenodo.10601081",
+            "citation": "Friedman, Daniel Ari. 2024. Way Finding in the Infinite Imaginarium. Zenodo. DOI: 10.5281/zenodo.10601081. URL: https://doi.org/10.5281/zenodo.10601081."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2022,7 +2064,8 @@
                 "value": "10.1016/j.plrev.2024.04.010",
                 "url": "https://doi.org/10.1016/j.plrev.2024.04.010"
             },
-            "sameAs": "https://doi.org/10.1016/j.plrev.2024.04.010"
+            "sameAs": "https://doi.org/10.1016/j.plrev.2024.04.010",
+            "citation": "Friedman, Daniel Ari. 2024. Why Paleolithic Rockstars were both enigmatic and sporadic. Physics of Life Reviews. DOI: 10.1016/j.plrev.2024.04.010. URL: https://doi.org/10.1016/j.plrev.2024.04.010."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2048,7 +2091,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2024WritingCurioCardsNFT044.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2024WritingCurioCardsNFT044.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2024WritingCurioCardsNFT044.html",
-            "sameAs": "https://www.worldcat.org/isbn/978-3-8365-9970-2"
+            "sameAs": "https://www.worldcat.org/isbn/978-3-8365-9970-2",
+            "citation": "Friedman, Daniel Ari. 2024. Writing on Curio Cards for the \"On NFT\" book. Taschen. URL: https://www.worldcat.org/isbn/978-3-8365-9970-2."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2084,7 +2128,8 @@
                 "value": "10.1016/j.plrev.2023.11.001",
                 "url": "https://doi.org/10.1016/j.plrev.2023.11.001"
             },
-            "sameAs": "https://doi.org/10.1016/j.plrev.2023.11.001"
+            "sameAs": "https://doi.org/10.1016/j.plrev.2023.11.001",
+            "citation": "Friedman, Daniel Ari. 2023. A guided tour through the spaces of particular \"minds\". Physics of Life Reviews. DOI: 10.1016/j.plrev.2023.11.001. URL: https://doi.org/10.1016/j.plrev.2023.11.001."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2115,7 +2160,8 @@
                 "value": "10.1016/j.cogsys.2023.02.005",
                 "url": "https://doi.org/10.1016/j.cogsys.2023.02.005"
             },
-            "sameAs": "https://doi.org/10.1016/j.cogsys.2023.02.005"
+            "sameAs": "https://doi.org/10.1016/j.cogsys.2023.02.005",
+            "citation": "Friedman, Daniel Ari. 2023. A single-pheromone model accounts for empirical patterns of ant colony foraging. Cognitive Systems Research. DOI: 10.1016/j.cogsys.2023.02.005. URL: https://doi.org/10.1016/j.cogsys.2023.02.005."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2167,7 +2213,8 @@
                 "value": "10.5281/zenodo.10400744",
                 "url": "https://doi.org/10.5281/zenodo.10400744"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.10400744"
+            "sameAs": "https://doi.org/10.5281/zenodo.10400744",
+            "citation": "Friedman, Daniel Ari. 2023. A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees. Zenodo. DOI: 10.5281/zenodo.10400744. URL: https://doi.org/10.5281/zenodo.10400744."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2223,7 +2270,8 @@
                 "value": "10.3390/e25070964",
                 "url": "https://doi.org/10.3390/e25070964"
             },
-            "sameAs": "https://doi.org/10.3390/e25070964"
+            "sameAs": "https://doi.org/10.3390/e25070964",
+            "citation": "Friedman, Daniel Ari. 2023. A variational synthesis of evolutionary and developmental dynamics. Entropy. DOI: 10.3390/e25070964. URL: https://doi.org/10.3390/e25070964."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2255,7 +2303,8 @@
                 "value": "10.5281/zenodo.8415312",
                 "url": "https://doi.org/10.5281/zenodo.8415312"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.8415312"
+            "sameAs": "https://doi.org/10.5281/zenodo.8415312",
+            "citation": "Friedman, Daniel Ari. 2023. An Account of Active Inference Modeling. Zenodo. DOI: 10.5281/zenodo.8415312. URL: https://doi.org/10.5281/zenodo.8415312."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2287,7 +2336,8 @@
                 "value": "10.5281/zenodo.10038231",
                 "url": "https://doi.org/10.5281/zenodo.10038231"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.10038231"
+            "sameAs": "https://doi.org/10.5281/zenodo.10038231",
+            "citation": "Friedman, Daniel Ari. 2023. Cognitive Sovereignty & Active Inference in the State of Exception. Zenodo. DOI: 10.5281/zenodo.10038231. URL: https://doi.org/10.5281/zenodo.10038231."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2331,7 +2381,8 @@
                 "value": "10.5281/zenodo.8025956",
                 "url": "https://doi.org/10.5281/zenodo.8025956"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.8025956"
+            "sameAs": "https://doi.org/10.5281/zenodo.8025956",
+            "citation": "Friedman, Daniel Ari. 2023. Comments on AI Accountability Policy to NTIA. NTIA. DOI: 10.5281/zenodo.8025956. URL: https://doi.org/10.5281/zenodo.8025956."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2383,7 +2434,8 @@
                 "value": "10.31219/osf.io/dnw5k",
                 "url": "https://doi.org/10.31219/osf.io/dnw5k"
             },
-            "sameAs": "https://doi.org/10.31219/osf.io/dnw5k"
+            "sameAs": "https://doi.org/10.31219/osf.io/dnw5k",
+            "citation": "Friedman, Daniel Ari. 2023. Distributed Science — The Scientific Process as Multi-Scale Active Inference. OSF. DOI: 10.31219/osf.io/dnw5k. URL: https://doi.org/10.31219/osf.io/dnw5k."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2415,7 +2467,8 @@
                 "value": "10.5281/zenodo.10160656",
                 "url": "https://doi.org/10.5281/zenodo.10160656"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.10160656"
+            "sameAs": "https://doi.org/10.5281/zenodo.10160656",
+            "citation": "Friedman, Daniel Ari. 2023. Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing. Zenodo. DOI: 10.5281/zenodo.10160656. URL: https://doi.org/10.5281/zenodo.10160656."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2455,7 +2508,8 @@
                 "value": "10.3791/65002",
                 "url": "https://doi.org/10.3791/65002"
             },
-            "sameAs": "https://doi.org/10.3791/65002"
+            "sameAs": "https://doi.org/10.3791/65002",
+            "citation": "Friedman, Daniel Ari. 2023. Experimental Entomology in the Age of Video. JoVE. DOI: 10.3791/65002. URL: https://doi.org/10.3791/65002."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2491,7 +2545,8 @@
                 "value": "10.5281/zenodo.7803327",
                 "url": "https://doi.org/10.5281/zenodo.7803327"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7803327"
+            "sameAs": "https://doi.org/10.5281/zenodo.7803327",
+            "citation": "Friedman, Daniel Ari. 2023. Generalized Notation Notation for Active Inference Models. Zenodo. DOI: 10.5281/zenodo.7803327. URL: https://doi.org/10.5281/zenodo.7803327."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2527,7 +2582,8 @@
                 "value": "10.5281/zenodo.8164666",
                 "url": "https://doi.org/10.5281/zenodo.8164666"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.8164666"
+            "sameAs": "https://doi.org/10.5281/zenodo.8164666",
+            "citation": "Friedman, Daniel Ari. 2023. Generative Research Teams: Active Inference Compositions for Research and Meta-Science. Zenodo. DOI: 10.5281/zenodo.8164666. URL: https://doi.org/10.5281/zenodo.8164666."
         },
         {
             "@type": "PresentationDigitalDocument",
@@ -2559,7 +2615,8 @@
                 "value": "10.5281/zenodo.7855581",
                 "url": "https://doi.org/10.5281/zenodo.7855581"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7855581"
+            "sameAs": "https://doi.org/10.5281/zenodo.7855581",
+            "citation": "Friedman, Daniel Ari. 2023. Of Ants & Aging. Presentation. DOI: 10.5281/zenodo.7855581. URL: https://doi.org/10.5281/zenodo.7855581."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2595,7 +2652,8 @@
                 "value": "10.31222/osf.io/9nb3u",
                 "url": "https://doi.org/10.31222/osf.io/9nb3u"
             },
-            "sameAs": "https://doi.org/10.31222/osf.io/9nb3u"
+            "sameAs": "https://doi.org/10.31222/osf.io/9nb3u",
+            "citation": "Friedman, Daniel Ari. 2023. Open Access science needs Open Science Sensemaking (OSSm). MetaArXiv. DOI: 10.31222/osf.io/9nb3u. URL: https://doi.org/10.31222/osf.io/9nb3u."
         },
         {
             "@type": "PresentationDigitalDocument",
@@ -2627,7 +2685,8 @@
                 "value": "10.5281/zenodo.8377987",
                 "url": "https://doi.org/10.5281/zenodo.8377987"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.8377987"
+            "sameAs": "https://doi.org/10.5281/zenodo.8377987",
+            "citation": "Friedman, Daniel Ari. 2023. Postdoc review (2020–2023). Presentation. DOI: 10.5281/zenodo.8377987. URL: https://doi.org/10.5281/zenodo.8377987."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2739,7 +2798,8 @@
                 "value": "10.5281/zenodo.8266280",
                 "url": "https://doi.org/10.5281/zenodo.8266280"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.8266280"
+            "sameAs": "https://doi.org/10.5281/zenodo.8266280",
+            "citation": "Friedman, Daniel Ari. 2023. The Active Inference Institute and Active Inference Ecosystem (v1). Zenodo. DOI: 10.5281/zenodo.8266280. URL: https://doi.org/10.5281/zenodo.8266280."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2783,7 +2843,8 @@
                 "value": "10.5281/zenodo.10034511",
                 "url": "https://doi.org/10.5281/zenodo.10034511"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.10034511"
+            "sameAs": "https://doi.org/10.5281/zenodo.10034511",
+            "citation": "Friedman, Daniel Ari. 2023. The P3IF: Properties, Processes, and Perspectives Inter-Framework. Zenodo. DOI: 10.5281/zenodo.10034511. URL: https://doi.org/10.5281/zenodo.10034511."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2819,7 +2880,8 @@
                 "value": "10.1016/j.plrev.2023.06.002",
                 "url": "https://doi.org/10.1016/j.plrev.2023.06.002"
             },
-            "sameAs": "https://doi.org/10.1016/j.plrev.2023.06.002"
+            "sameAs": "https://doi.org/10.1016/j.plrev.2023.06.002",
+            "citation": "Friedman, Daniel Ari. 2023. To comment or not to comment. Physics of Life Reviews. DOI: 10.1016/j.plrev.2023.06.002. URL: https://doi.org/10.1016/j.plrev.2023.06.002."
         },
         {
             "@type": "Course",
@@ -2911,7 +2973,8 @@
                 "value": "10.5281/zenodo.10447642",
                 "url": "https://doi.org/10.5281/zenodo.10447642"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.10447642"
+            "sameAs": "https://doi.org/10.5281/zenodo.10447642",
+            "citation": "Friedman, Daniel Ari. 2023. Transcript of Chris Fields, \"Physics as Information Processing\" course. Zenodo. DOI: 10.5281/zenodo.10447642. URL: https://doi.org/10.5281/zenodo.10447642."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2943,7 +3006,8 @@
                 "value": "10.5281/zenodo.7514367",
                 "url": "https://doi.org/10.5281/zenodo.7514367"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7514367"
+            "sameAs": "https://doi.org/10.5281/zenodo.7514367",
+            "citation": "Friedman, Daniel Ari. 2023. William Blake & Buckminster Fuller: Lives in Juxtaposition. Zenodo. DOI: 10.5281/zenodo.7514367. URL: https://doi.org/10.5281/zenodo.7514367."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3027,7 +3091,8 @@
                 "value": "10.5281/zenodo.6320574",
                 "url": "https://doi.org/10.5281/zenodo.6320574"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.6320574"
+            "sameAs": "https://doi.org/10.5281/zenodo.6320574",
+            "citation": "Friedman, Daniel Ari. 2022. An Active Inference Ontology for Decentralized Science. Zenodo. DOI: 10.5281/zenodo.6320574. URL: https://doi.org/10.5281/zenodo.6320574."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3063,7 +3128,8 @@
                 "value": "10.5281/zenodo.7443847",
                 "url": "https://doi.org/10.5281/zenodo.7443847"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7443847"
+            "sameAs": "https://doi.org/10.5281/zenodo.7443847",
+            "citation": "Friedman, Daniel Ari. 2022. Catechism for Towards Active Diffusion. Zenodo. DOI: 10.5281/zenodo.7443847. URL: https://doi.org/10.5281/zenodo.7443847."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3111,7 +3177,8 @@
                 "value": "10.48550/arXiv.2205.06345",
                 "url": "https://doi.org/10.48550/arXiv.2205.06345"
             },
-            "sameAs": "https://doi.org/10.48550/arXiv.2205.06345"
+            "sameAs": "https://doi.org/10.48550/arXiv.2205.06345",
+            "citation": "Friedman, Daniel Ari. 2022. From Users to (Sense)Makers: Stigmergic Social Annotation. Hypertext '22. DOI: 10.48550/arXiv.2205.06345. URL: https://doi.org/10.48550/arXiv.2205.06345."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3151,7 +3218,8 @@
                 "value": "10.5281/zenodo.7394900",
                 "url": "https://doi.org/10.5281/zenodo.7394900"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7394900"
+            "sameAs": "https://doi.org/10.5281/zenodo.7394900",
+            "citation": "Friedman, Daniel Ari. 2022. On free will or the lack thereof (interview with Robert Sapolsky). ALIUS Bulletin. DOI: 10.5281/zenodo.7394900. URL: https://doi.org/10.5281/zenodo.7394900."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3187,7 +3255,8 @@
                 "value": "10.5281/zenodo.7377255",
                 "url": "https://doi.org/10.5281/zenodo.7377255"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7377255"
+            "sameAs": "https://doi.org/10.5281/zenodo.7377255",
+            "citation": "Friedman, Daniel Ari. 2022. Predictive Processing Interpretation of the Mirror Test. Zenodo. DOI: 10.5281/zenodo.7377255. URL: https://doi.org/10.5281/zenodo.7377255."
         },
         {
             "@type": "Book",
@@ -3213,7 +3282,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2022StructuringInformationCommonsOpen071.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2022StructuringInformationCommonsOpen071.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2022StructuringInformationCommonsOpen071.html",
-            "sameAs": "https://cogsec.org"
+            "sameAs": "https://cogsec.org",
+            "citation": "Friedman, Daniel Ari. 2022. Structuring the Information Commons: Open Standards and Cognitive Security. COGSEC.org. URL: https://cogsec.org."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3249,7 +3319,8 @@
                 "value": "10.5281/zenodo.7626768",
                 "url": "https://doi.org/10.5281/zenodo.7626768"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7626768"
+            "sameAs": "https://doi.org/10.5281/zenodo.7626768",
+            "citation": "Friedman, Daniel Ari. 2022. Systems Modeling and Cognitive Audits for Hypercert Ecosystems. Zenodo. DOI: 10.5281/zenodo.7626768. URL: https://doi.org/10.5281/zenodo.7626768."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3289,7 +3360,8 @@
                 "value": "10.5281/zenodo.7449367",
                 "url": "https://doi.org/10.5281/zenodo.7449367"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7449367"
+            "sameAs": "https://doi.org/10.5281/zenodo.7449367",
+            "citation": "Friedman, Daniel Ari. 2022. The Free Energy Principle & Active Inference: a Systematic Literature Analysis. Zenodo. DOI: 10.5281/zenodo.7449367. URL: https://doi.org/10.5281/zenodo.7449367."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3329,7 +3401,8 @@
                 "value": "10.5281/zenodo.7093836",
                 "url": "https://doi.org/10.5281/zenodo.7093836"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7093836"
+            "sameAs": "https://doi.org/10.5281/zenodo.7093836",
+            "citation": "Friedman, Daniel Ari. 2022. TrustFinder: Recommendations for Community-Based Trust Systems. Zenodo. DOI: 10.5281/zenodo.7093836. URL: https://doi.org/10.5281/zenodo.7093836."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3377,7 +3450,8 @@
                 "value": "10.3389/fnbeh.2021.647732",
                 "url": "https://doi.org/10.3389/fnbeh.2021.647732"
             },
-            "sameAs": "https://doi.org/10.3389/fnbeh.2021.647732"
+            "sameAs": "https://doi.org/10.3389/fnbeh.2021.647732",
+            "citation": "Friedman, Daniel Ari. 2021. Active Inferants: An Active Inference Framework for Ant Colony Behavior. Frontiers in Behavioral Neuroscience. DOI: 10.3389/fnbeh.2021.647732. URL: https://doi.org/10.3389/fnbeh.2021.647732."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3417,7 +3491,8 @@
                 "value": "10.5281/zenodo.5750934",
                 "url": "https://doi.org/10.5281/zenodo.5750934"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.5750934"
+            "sameAs": "https://doi.org/10.5281/zenodo.5750934",
+            "citation": "Friedman, Daniel Ari. 2021. Active Inference in Modeling Conflict. Zenodo. DOI: 10.5281/zenodo.5750934. URL: https://doi.org/10.5281/zenodo.5750934."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3457,7 +3532,8 @@
                 "value": "10.5281/zenodo.5573946",
                 "url": "https://doi.org/10.5281/zenodo.5573946"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.5573946"
+            "sameAs": "https://doi.org/10.5281/zenodo.5573946",
+            "citation": "Friedman, Daniel Ari. 2021. Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse. Zenodo. DOI: 10.5281/zenodo.5573946. URL: https://doi.org/10.5281/zenodo.5573946."
         },
         {
             "@type": "CreativeWork",
@@ -3483,7 +3559,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2021InnovatorSDigitalPlaybook078.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2021InnovatorSDigitalPlaybook078.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2021InnovatorSDigitalPlaybook078.html",
-            "sameAs": "https://innovatorsdigitalplaybook.com/"
+            "sameAs": "https://innovatorsdigitalplaybook.com/",
+            "citation": "Friedman, Daniel Ari. 2021. Innovator's Digital Playbook. Web. URL: https://innovatorsdigitalplaybook.com/."
         },
         {
             "@type": "Book",
@@ -3509,7 +3586,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2021NarrativeInformationEcosystemsConflict079.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2021NarrativeInformationEcosystemsConflict079.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2021NarrativeInformationEcosystemsConflict079.html",
-            "sameAs": "https://cogsec.org"
+            "sameAs": "https://cogsec.org",
+            "citation": "Friedman, Daniel Ari. 2021. Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier. COGSEC.org. URL: https://cogsec.org."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3557,7 +3635,8 @@
                 "value": "10.5281/zenodo.5565577",
                 "url": "https://doi.org/10.5281/zenodo.5565577"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.5565577"
+            "sameAs": "https://doi.org/10.5281/zenodo.5565577",
+            "citation": "Friedman, Daniel Ari. 2021. Narrative Information Management. Zenodo. DOI: 10.5281/zenodo.5565577. URL: https://doi.org/10.5281/zenodo.5565577."
         },
         {
             "@type": "CreativeWork",
@@ -3593,7 +3672,8 @@
                 "value": "10.5281/zenodo.4579413",
                 "url": "https://doi.org/10.5281/zenodo.4579413"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.4579413"
+            "sameAs": "https://doi.org/10.5281/zenodo.4579413",
+            "citation": "Friedman, Daniel Ari. 2021. The Facilitator's Catechism Playbook. Zenodo. DOI: 10.5281/zenodo.4579413. URL: https://doi.org/10.5281/zenodo.4579413."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3641,7 +3721,8 @@
                 "value": "10.5281/zenodo.4021162",
                 "url": "https://doi.org/10.5281/zenodo.4021162"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.4021162"
+            "sameAs": "https://doi.org/10.5281/zenodo.4021162",
+            "citation": "Friedman, Daniel Ari. 2020. Active Inference & Behavior Engineering for Teams. Zenodo. DOI: 10.5281/zenodo.4021162. URL: https://doi.org/10.5281/zenodo.4021162."
         },
         {
             "@type": "Course",
@@ -3667,7 +3748,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2020CommunicationRemoteTeams083.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2020CommunicationRemoteTeams083.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2020CommunicationRemoteTeams083.html",
-            "sameAs": "https://www.udemy.com/course/communication-for-remote-teams/"
+            "sameAs": "https://www.udemy.com/course/communication-for-remote-teams/",
+            "citation": "Friedman, Daniel Ari. 2020. Communication for Remote Teams. Udemy. URL: https://www.udemy.com/course/communication-for-remote-teams/."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3702,7 +3784,8 @@
                 "value": "10.1016/j.yhbeh.2020.104757",
                 "url": "https://doi.org/10.1016/j.yhbeh.2020.104757"
             },
-            "sameAs": "https://doi.org/10.1016/j.yhbeh.2020.104757"
+            "sameAs": "https://doi.org/10.1016/j.yhbeh.2020.104757",
+            "citation": "Friedman, Daniel Ari. 2020. Distributed physiology and the molecular basis of social life in eusocial insects. Hormones & Behavior. DOI: 10.1016/j.yhbeh.2020.104757. URL: https://doi.org/10.1016/j.yhbeh.2020.104757."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3738,7 +3821,8 @@
                 "value": "10.5281/zenodo.3986084",
                 "url": "https://doi.org/10.5281/zenodo.3986084"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.3986084"
+            "sameAs": "https://doi.org/10.5281/zenodo.3986084",
+            "citation": "Friedman, Daniel Ari. 2020. Emergent Teams for Complex Threats. Zenodo. DOI: 10.5281/zenodo.3986084. URL: https://doi.org/10.5281/zenodo.3986084."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3782,7 +3866,8 @@
                 "value": "10.1038/s42003-020-0813-8",
                 "url": "https://doi.org/10.1038/s42003-020-0813-8"
             },
-            "sameAs": "https://doi.org/10.1038/s42003-020-0813-8"
+            "sameAs": "https://doi.org/10.1038/s42003-020-0813-8",
+            "citation": "Friedman, Daniel Ari. 2020. Gene expression variation in the brains of harvester ant foragers is associated with collective behavior. Communications Biology. DOI: 10.1038/s42003-020-0813-8. URL: https://doi.org/10.1038/s42003-020-0813-8."
         },
         {
             "@type": "Course",
@@ -3808,7 +3893,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2020HowUseKeybaseRemote087.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2020HowUseKeybaseRemote087.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2020HowUseKeybaseRemote087.html",
-            "sameAs": "https://www.udemy.com/course/keybase-for-remote-teams/"
+            "sameAs": "https://www.udemy.com/course/keybase-for-remote-teams/",
+            "citation": "Friedman, Daniel Ari. 2020. How to use Keybase for remote teams. Udemy. URL: https://www.udemy.com/course/keybase-for-remote-teams/."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3852,7 +3938,8 @@
                 "value": "10.1007/s00216-019-02355-3",
                 "url": "https://doi.org/10.1007/s00216-019-02355-3"
             },
-            "sameAs": "https://doi.org/10.1007/s00216-019-02355-3"
+            "sameAs": "https://doi.org/10.1007/s00216-019-02355-3",
+            "citation": "Friedman, Daniel Ari. 2020. Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains. Analytical & Bioanalytical Chemistry. DOI: 10.1007/s00216-019-02355-3. URL: https://doi.org/10.1007/s00216-019-02355-3."
         },
         {
             "@type": "Book",
@@ -3878,7 +3965,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2020GreatPresetRemoteTeams089.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2020GreatPresetRemoteTeams089.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2020GreatPresetRemoteTeams089.html",
-            "sameAs": "https://cogsec.org"
+            "sameAs": "https://cogsec.org",
+            "citation": "Friedman, Daniel Ari. 2020. The Great Preset: Remote Teams and Operational Art. COGSEC.org. URL: https://cogsec.org."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3918,7 +4006,8 @@
                 "value": "10.5281/zenodo.4383229",
                 "url": "https://doi.org/10.5281/zenodo.4383229"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.4383229"
+            "sameAs": "https://doi.org/10.5281/zenodo.4383229",
+            "citation": "Friedman, Daniel Ari. 2020. The Innovator's Catechism. Zenodo. DOI: 10.5281/zenodo.4383229. URL: https://doi.org/10.5281/zenodo.4383229."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3958,7 +4047,8 @@
                 "value": "10.34700/8pg4-0h12",
                 "url": "https://doi.org/10.34700/8pg4-0h12"
             },
-            "sameAs": "https://doi.org/10.34700/8pg4-0h12"
+            "sameAs": "https://doi.org/10.34700/8pg4-0h12",
+            "citation": "Friedman, Daniel Ari. 2020. The neuroscience of decision making (interview with Timothy Hanks). ALIUS Bulletin. DOI: 10.34700/8pg4-0h12. URL: https://doi.org/10.34700/8pg4-0h12."
         },
         {
             "@type": "ScholarlyArticle",
@@ -3998,7 +4088,8 @@
                 "value": "10.34700/7gkw-zh08",
                 "url": "https://doi.org/10.34700/7gkw-zh08"
             },
-            "sameAs": "https://doi.org/10.34700/7gkw-zh08"
+            "sameAs": "https://doi.org/10.34700/7gkw-zh08",
+            "citation": "Friedman, Daniel Ari. 2019. Dennett Explained (interview with Daniel Dennett). ALIUS Bulletin. DOI: 10.34700/7gkw-zh08. URL: https://doi.org/10.34700/7gkw-zh08."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4024,7 +4115,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2019PhDBehavioralPhysiologicalTranscriptomic093.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2019PhDBehavioralPhysiologicalTranscriptomic093.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2019PhDBehavioralPhysiologicalTranscriptomic093.html",
-            "sameAs": "http://purl.stanford.edu/pb813wm1484"
+            "sameAs": "http://purl.stanford.edu/pb813wm1484",
+            "citation": "Friedman, Daniel Ari. 2019. PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus. Stanford University. URL: http://purl.stanford.edu/pb813wm1484."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4060,7 +4152,8 @@
                 "value": "10.1007/s11229-019-02130-y",
                 "url": "https://doi.org/10.1007/s11229-019-02130-y"
             },
-            "sameAs": "https://doi.org/10.1007/s11229-019-02130-y"
+            "sameAs": "https://doi.org/10.1007/s11229-019-02130-y",
+            "citation": "Friedman, Daniel Ari. 2019. The ant colony as a test for scientific theories of consciousness. Synthese. DOI: 10.1007/s11229-019-02130-y. URL: https://doi.org/10.1007/s11229-019-02130-y."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4100,7 +4193,8 @@
                 "value": "10.1038/s41598-019-41586-3",
                 "url": "https://doi.org/10.1038/s41598-019-41586-3"
             },
-            "sameAs": "https://doi.org/10.1038/s41598-019-41586-3"
+            "sameAs": "https://doi.org/10.1038/s41598-019-41586-3",
+            "citation": "Friedman, Daniel Ari. 2019. The physiology of forager hydration and variation among harvester ant colonies. Scientific Reports. DOI: 10.1038/s41598-019-41586-3. URL: https://doi.org/10.1038/s41598-019-41586-3."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4160,7 +4254,8 @@
                 "value": "10.1371/journal.pone.0202117",
                 "url": "https://doi.org/10.1371/journal.pone.0202117"
             },
-            "sameAs": "https://doi.org/10.1371/journal.pone.0202117"
+            "sameAs": "https://doi.org/10.1371/journal.pone.0202117",
+            "citation": "Friedman, Daniel Ari. 2018. Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations. PLoS One. DOI: 10.1371/journal.pone.0202117. URL: https://doi.org/10.1371/journal.pone.0202117."
         },
         {
             "@type": "PresentationDigitalDocument",
@@ -4192,7 +4287,8 @@
                 "value": "10.5281/zenodo.13999298",
                 "url": "https://doi.org/10.5281/zenodo.13999298"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.13999298"
+            "sameAs": "https://doi.org/10.5281/zenodo.13999298",
+            "citation": "Friedman, Daniel Ari. 2018. MVEE: A Framework for Evolutionary Studies. Presentation. DOI: 10.5281/zenodo.13999298. URL: https://doi.org/10.5281/zenodo.13999298."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4232,7 +4328,8 @@
                 "value": "10.34700/h460-nz89",
                 "url": "https://doi.org/10.34700/h460-nz89"
             },
-            "sameAs": "https://doi.org/10.34700/h460-nz89"
+            "sameAs": "https://doi.org/10.34700/h460-nz89",
+            "citation": "Friedman, Daniel Ari. 2018. Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston). ALIUS Bulletin. DOI: 10.34700/h460-nz89. URL: https://doi.org/10.34700/h460-nz89."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4268,7 +4365,8 @@
                 "value": "10.3390/arts7030039",
                 "url": "https://doi.org/10.3390/arts7030039"
             },
-            "sameAs": "https://doi.org/10.3390/arts7030039"
+            "sameAs": "https://doi.org/10.3390/arts7030039",
+            "citation": "Friedman, Daniel Ari. 2018. Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement. Arts. DOI: 10.3390/arts7030039. URL: https://doi.org/10.3390/arts7030039."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4324,7 +4422,8 @@
                 "value": "10.1016/j.isci.2018.09.001",
                 "url": "https://doi.org/10.1016/j.isci.2018.09.001"
             },
-            "sameAs": "https://doi.org/10.1016/j.isci.2018.09.001"
+            "sameAs": "https://doi.org/10.1016/j.isci.2018.09.001",
+            "citation": "Friedman, Daniel Ari. 2018. The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants. iScience. DOI: 10.1016/j.isci.2018.09.001. URL: https://doi.org/10.1016/j.isci.2018.09.001."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4364,7 +4463,8 @@
                 "value": "10.1016/j.cell.2017.07.046",
                 "url": "https://doi.org/10.1016/j.cell.2017.07.046"
             },
-            "sameAs": "https://doi.org/10.1016/j.cell.2017.07.046"
+            "sameAs": "https://doi.org/10.1016/j.cell.2017.07.046",
+            "citation": "Friedman, Daniel Ari. 2017. The MutAnts are here. Cell. DOI: 10.1016/j.cell.2017.07.046. URL: https://doi.org/10.1016/j.cell.2017.07.046."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4395,7 +4495,8 @@
                 "value": "10.1111/mec.13964",
                 "url": "https://doi.org/10.1111/mec.13964"
             },
-            "sameAs": "https://doi.org/10.1111/mec.13964"
+            "sameAs": "https://doi.org/10.1111/mec.13964",
+            "citation": "Friedman, Daniel Ari. 2017. Two lineages that need each other. Molecular Ecology. DOI: 10.1111/mec.13964. URL: https://doi.org/10.1111/mec.13964."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4426,7 +4527,8 @@
                 "value": "10.1146/annurev-neuro-070815-013927",
                 "url": "https://doi.org/10.1146/annurev-neuro-070815-013927"
             },
-            "sameAs": "https://doi.org/10.1146/annurev-neuro-070815-013927"
+            "sameAs": "https://doi.org/10.1146/annurev-neuro-070815-013927",
+            "citation": "Friedman, Daniel Ari. 2016. Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior. Annual Review of Neuroscience. DOI: 10.1146/annurev-neuro-070815-013927. URL: https://doi.org/10.1146/annurev-neuro-070815-013927."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4478,7 +4580,8 @@
                 "value": "10.1098/rspb.2016.0841",
                 "url": "https://doi.org/10.1098/rspb.2016.0841"
             },
-            "sameAs": "https://doi.org/10.1098/rspb.2016.0841"
+            "sameAs": "https://doi.org/10.1098/rspb.2016.0841",
+            "citation": "Friedman, Daniel Ari. 2016. Context-dependent expression of the foraging gene in field colonies of ants. Proceedings of the Royal Society B. DOI: 10.1098/rspb.2016.0841. URL: https://doi.org/10.1098/rspb.2016.0841."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4518,7 +4621,8 @@
                 "value": "10.3109/09553002.2016.1144941",
                 "url": "https://doi.org/10.3109/09553002.2016.1144941"
             },
-            "sameAs": "https://doi.org/10.3109/09553002.2016.1144941"
+            "sameAs": "https://doi.org/10.3109/09553002.2016.1144941",
+            "citation": "Friedman, Daniel Ari. 2016. Influence of Nuclear Structure on formation of radiation-induced lethal lesions. Int. J. Radiation Biology. DOI: 10.3109/09553002.2016.1144941. URL: https://doi.org/10.3109/09553002.2016.1144941."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4558,7 +4662,8 @@
                 "value": "10.3389/fgene.2015.00261",
                 "url": "https://doi.org/10.3389/fgene.2015.00261"
             },
-            "sameAs": "https://doi.org/10.3389/fgene.2015.00261"
+            "sameAs": "https://doi.org/10.3389/fgene.2015.00261",
+            "citation": "Friedman, Daniel Ari. 2015. Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history. Frontiers in Genetics. DOI: 10.3389/fgene.2015.00261. URL: https://doi.org/10.3389/fgene.2015.00261."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4598,7 +4703,8 @@
                 "value": "10.1016/j.mehy.2015.09.015",
                 "url": "https://doi.org/10.1016/j.mehy.2015.09.015"
             },
-            "sameAs": "https://doi.org/10.1016/j.mehy.2015.09.015"
+            "sameAs": "https://doi.org/10.1016/j.mehy.2015.09.015",
+            "citation": "Friedman, Daniel Ari. 2015. Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?. Medical Hypotheses. DOI: 10.1016/j.mehy.2015.09.015. URL: https://doi.org/10.1016/j.mehy.2015.09.015."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4650,7 +4756,8 @@
                 "value": "10.1093/molbev/msu292",
                 "url": "https://doi.org/10.1093/molbev/msu292"
             },
-            "sameAs": "https://doi.org/10.1093/molbev/msu292"
+            "sameAs": "https://doi.org/10.1093/molbev/msu292",
+            "citation": "Friedman, Daniel Ari. 2015. Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees. Molecular Biology & Evolution. DOI: 10.1093/molbev/msu292. URL: https://doi.org/10.1093/molbev/msu292."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4686,7 +4793,8 @@
                 "value": "10.5281/zenodo.19574117",
                 "url": "https://doi.org/10.5281/zenodo.19574117"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.19574117"
+            "sameAs": "https://doi.org/10.5281/zenodo.19574117",
+            "citation": "Friedman, Daniel Ari. 2026. Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology. Zenodo. DOI: 10.5281/zenodo.19574117. URL: https://doi.org/10.5281/zenodo.19574117."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4722,7 +4830,8 @@
                 "value": "10.5281/zenodo.19461933",
                 "url": "https://doi.org/10.5281/zenodo.19461933"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.19461933"
+            "sameAs": "https://doi.org/10.5281/zenodo.19461933",
+            "citation": "Friedman, Daniel Ari. 2026. A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring. Active Inference Journal. DOI: 10.5281/zenodo.19461933. URL: https://doi.org/10.5281/zenodo.19461933."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4762,7 +4871,8 @@
                 "value": "10.1007/978-3-032-16955-6_11",
                 "url": "https://doi.org/10.1007/978-3-032-16955-6_11"
             },
-            "sameAs": "https://doi.org/10.1007/978-3-032-16955-6_11"
+            "sameAs": "https://doi.org/10.1007/978-3-032-16955-6_11",
+            "citation": "Friedman, Daniel Ari. 2026. Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences. CSCIS vol 2857, Springer. DOI: 10.1007/978-3-032-16955-6_11. URL: https://doi.org/10.1007/978-3-032-16955-6_11."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4794,7 +4904,8 @@
                 "value": "10.5281/zenodo.19695259",
                 "url": "https://doi.org/10.5281/zenodo.19695259"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.19695259"
+            "sameAs": "https://doi.org/10.5281/zenodo.19695259",
+            "citation": "Friedman, Daniel Ari. 2026. Compositional Approaches to Linguistic Case for Cognitive Modeling. Active Inference Journal. DOI: 10.5281/zenodo.19695259. URL: https://doi.org/10.5281/zenodo.19695259."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4826,7 +4937,8 @@
                 "value": "10.5281/zenodo.19699233",
                 "url": "https://doi.org/10.5281/zenodo.19699233"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.19699233"
+            "sameAs": "https://doi.org/10.5281/zenodo.19699233",
+            "citation": "Friedman, Daniel Ari. 2026. Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics. Active Inference Journal. DOI: 10.5281/zenodo.19699233. URL: https://doi.org/10.5281/zenodo.19699233."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4862,7 +4974,8 @@
                 "value": "10.5281/zenodo.4062540",
                 "url": "https://doi.org/10.5281/zenodo.4062540"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.4062540"
+            "sameAs": "https://doi.org/10.5281/zenodo.4062540",
+            "citation": "Friedman, Daniel Ari. 2020. The Facilitator's Catechism. Zenodo. DOI: 10.5281/zenodo.4062540. URL: https://doi.org/10.5281/zenodo.4062540."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4894,7 +5007,8 @@
                 "value": "10.5281/zenodo.20144983",
                 "url": "https://doi.org/10.5281/zenodo.20144983"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20144983"
+            "sameAs": "https://doi.org/10.5281/zenodo.20144983",
+            "citation": "Friedman, Daniel Ari. 2026. The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision. Zenodo. DOI: 10.5281/zenodo.20144983. URL: https://doi.org/10.5281/zenodo.20144983."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4926,7 +5040,8 @@
                 "value": "10.5281/zenodo.20286170",
                 "url": "https://doi.org/10.5281/zenodo.20286170"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20286170"
+            "sameAs": "https://doi.org/10.5281/zenodo.20286170",
+            "citation": "Friedman, Daniel Ari. 2026. Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast. Zenodo. DOI: 10.5281/zenodo.20286170. URL: https://doi.org/10.5281/zenodo.20286170."
         },
         {
             "@type": "Book",
@@ -4958,7 +5073,8 @@
                 "value": "10.5281/zenodo.20286477",
                 "url": "https://doi.org/10.5281/zenodo.20286477"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20286477"
+            "sameAs": "https://doi.org/10.5281/zenodo.20286477",
+            "citation": "Friedman, Daniel Ari. 2026. Introduction to Biology: A Generative Approach. Zenodo. DOI: 10.5281/zenodo.20286477. URL: https://doi.org/10.5281/zenodo.20286477."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4985,7 +5101,8 @@
                 "value": "10.5281/zenodo.20418904",
                 "url": "https://doi.org/10.5281/zenodo.20418904"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20418904"
+            "sameAs": "https://doi.org/10.5281/zenodo.20418904",
+            "citation": "Friedman, Daniel Ari. 2026. Policy Entanglement in Active Inference. Zenodo. DOI: 10.5281/zenodo.20418904. URL: https://doi.org/10.5281/zenodo.20418904."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5012,7 +5129,8 @@
                 "value": "10.5281/zenodo.20417016",
                 "url": "https://doi.org/10.5281/zenodo.20417016"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20417016"
+            "sameAs": "https://doi.org/10.5281/zenodo.20417016",
+            "citation": "Friedman, Daniel Ari. 2026. Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task. Zenodo. DOI: 10.5281/zenodo.20417016. URL: https://doi.org/10.5281/zenodo.20417016."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5039,7 +5157,8 @@
                 "value": "10.5281/zenodo.20417136",
                 "url": "https://doi.org/10.5281/zenodo.20417136"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20417136"
+            "sameAs": "https://doi.org/10.5281/zenodo.20417136",
+            "citation": "Friedman, Daniel Ari. 2026. Convergence Analysis of Gradient Descent Optimization. Zenodo. DOI: 10.5281/zenodo.20417136. URL: https://doi.org/10.5281/zenodo.20417136."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5066,7 +5185,8 @@
                 "value": "10.5281/zenodo.20417104",
                 "url": "https://doi.org/10.5281/zenodo.20417104"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20417104"
+            "sameAs": "https://doi.org/10.5281/zenodo.20417104",
+            "citation": "Friedman, Daniel Ari. 2026. Editorial Quality at Scale: A Reproducible Prose-Review Pipeline. Zenodo. DOI: 10.5281/zenodo.20417104. URL: https://doi.org/10.5281/zenodo.20417104."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5093,7 +5213,8 @@
                 "value": "10.5281/zenodo.20419007",
                 "url": "https://doi.org/10.5281/zenodo.20419007"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20419007"
+            "sameAs": "https://doi.org/10.5281/zenodo.20419007",
+            "citation": "Friedman, Daniel Ari. 2026. A template/ approach to Reproducible Generative Research. Zenodo. DOI: 10.5281/zenodo.20419007. URL: https://doi.org/10.5281/zenodo.20419007."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5120,7 +5241,8 @@
                 "value": "10.5281/zenodo.20417021",
                 "url": "https://doi.org/10.5281/zenodo.20417021"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20417021"
+            "sameAs": "https://doi.org/10.5281/zenodo.20417021",
+            "citation": "Friedman, Daniel Ari. 2026. Active Inference Multi-Track Exemplar. Zenodo. DOI: 10.5281/zenodo.20417021. URL: https://doi.org/10.5281/zenodo.20417021."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5156,7 +5278,8 @@
                 "value": "10.5281/zenodo.20420556",
                 "url": "https://doi.org/10.5281/zenodo.20420556"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20420556"
+            "sameAs": "https://doi.org/10.5281/zenodo.20420556",
+            "citation": "Friedman, Daniel Ari. 2026. BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation. Zenodo. DOI: 10.5281/zenodo.20420556. URL: https://doi.org/10.5281/zenodo.20420556."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5187,7 +5310,8 @@
                 "value": "10.5281/zenodo.20450880",
                 "url": "https://doi.org/10.5281/zenodo.20450880"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20450880"
+            "sameAs": "https://doi.org/10.5281/zenodo.20450880",
+            "citation": "Friedman, Daniel Ari. 2026. When do bugs see (infra)red?. Zenodo. DOI: 10.5281/zenodo.20450880. URL: https://doi.org/10.5281/zenodo.20450880."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5214,7 +5338,8 @@
                 "value": "10.5281/zenodo.20453879",
                 "url": "https://doi.org/10.5281/zenodo.20453879"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20453879"
+            "sameAs": "https://doi.org/10.5281/zenodo.20453879",
+            "citation": "Friedman, Daniel Ari. 2026. Self-Improvement Agent Harness: A Deterministic SIA Exemplar. Zenodo. DOI: 10.5281/zenodo.20453879. URL: https://doi.org/10.5281/zenodo.20453879."
         },
         {
             "@type": "PresentationDigitalDocument",
@@ -5254,7 +5379,8 @@
                 "value": "10.5281/zenodo.14861596",
                 "url": "https://doi.org/10.5281/zenodo.14861596"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.14861596"
+            "sameAs": "https://doi.org/10.5281/zenodo.14861596",
+            "citation": "Friedman, Daniel Ari. 2025. Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024. Zenodo. DOI: 10.5281/zenodo.14861596. URL: https://doi.org/10.5281/zenodo.14861596."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5290,7 +5416,8 @@
                 "value": "10.5281/zenodo.13626536",
                 "url": "https://doi.org/10.5281/zenodo.13626536"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.13626536"
+            "sameAs": "https://doi.org/10.5281/zenodo.13626536",
+            "citation": "Friedman, Daniel Ari. 2025. Con-cat-enate: emulation of Cat Hippocampus. Zenodo. DOI: 10.5281/zenodo.13626536. URL: https://doi.org/10.5281/zenodo.13626536."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5326,7 +5453,8 @@
                 "value": "10.5281/zenodo.14737156",
                 "url": "https://doi.org/10.5281/zenodo.14737156"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.14737156"
+            "sameAs": "https://doi.org/10.5281/zenodo.14737156",
+            "citation": "Friedman, Daniel Ari. 2025. Graphspeak: of language and handshake. Zenodo. DOI: 10.5281/zenodo.14737156. URL: https://doi.org/10.5281/zenodo.14737156."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5362,7 +5490,8 @@
                 "value": "10.5281/zenodo.14737075",
                 "url": "https://doi.org/10.5281/zenodo.14737075"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.14737075"
+            "sameAs": "https://doi.org/10.5281/zenodo.14737075",
+            "citation": "Friedman, Daniel Ari. 2025. BevCyc - posit on primitive drivers of creatures. Zenodo. DOI: 10.5281/zenodo.14737075. URL: https://doi.org/10.5281/zenodo.14737075."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5398,7 +5527,8 @@
                 "value": "10.5281/zenodo.14737059",
                 "url": "https://doi.org/10.5281/zenodo.14737059"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.14737059"
+            "sameAs": "https://doi.org/10.5281/zenodo.14737059",
+            "citation": "Friedman, Daniel Ari. 2025. Beacons - pre emulation of social cortex. Zenodo. DOI: 10.5281/zenodo.14737059. URL: https://doi.org/10.5281/zenodo.14737059."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5434,7 +5564,8 @@
                 "value": "10.5281/zenodo.14737042",
                 "url": "https://doi.org/10.5281/zenodo.14737042"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.14737042"
+            "sameAs": "https://doi.org/10.5281/zenodo.14737042",
+            "citation": "Friedman, Daniel Ari. 2025. Con-cat-enate: pilot overview. Zenodo. DOI: 10.5281/zenodo.14737042. URL: https://doi.org/10.5281/zenodo.14737042."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5466,7 +5597,8 @@
                 "value": "10.5281/zenodo.10659374",
                 "url": "https://doi.org/10.5281/zenodo.10659374"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.10659374"
+            "sameAs": "https://doi.org/10.5281/zenodo.10659374",
+            "citation": "Friedman, Daniel Ari. 2024. Push and Pull: A priming sequence. Zenodo. DOI: 10.5281/zenodo.10659374. URL: https://doi.org/10.5281/zenodo.10659374."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5590,7 +5722,8 @@
                 "value": "10.5281/zenodo.10360056",
                 "url": "https://doi.org/10.5281/zenodo.10360056"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.10360056"
+            "sameAs": "https://doi.org/10.5281/zenodo.10360056",
+            "citation": "Friedman, Daniel Ari. 2023. A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance. Zenodo. DOI: 10.5281/zenodo.10360056. URL: https://doi.org/10.5281/zenodo.10360056."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5646,7 +5779,8 @@
                 "value": "10.5281/zenodo.10296601",
                 "url": "https://doi.org/10.5281/zenodo.10296601"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.10296601"
+            "sameAs": "https://doi.org/10.5281/zenodo.10296601",
+            "citation": "Friedman, Daniel Ari. 2023. ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management. Zenodo. DOI: 10.5281/zenodo.10296601. URL: https://doi.org/10.5281/zenodo.10296601."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5686,7 +5820,8 @@
                 "value": "10.5281/zenodo.8228934",
                 "url": "https://doi.org/10.5281/zenodo.8228934"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.8228934"
+            "sameAs": "https://doi.org/10.5281/zenodo.8228934",
+            "citation": "Friedman, Daniel Ari. 2023. Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\". Zenodo. DOI: 10.5281/zenodo.8228934. URL: https://doi.org/10.5281/zenodo.8228934."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5722,7 +5857,8 @@
                 "value": "10.5281/zenodo.8118155",
                 "url": "https://doi.org/10.5281/zenodo.8118155"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.8118155"
+            "sameAs": "https://doi.org/10.5281/zenodo.8118155",
+            "citation": "Friedman, Daniel Ari. 2023. Modern Nostr Index Card-based Knowledge Engineering. Zenodo. DOI: 10.5281/zenodo.8118155. URL: https://doi.org/10.5281/zenodo.8118155."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5754,7 +5890,8 @@
                 "value": "10.5281/zenodo.7838652",
                 "url": "https://doi.org/10.5281/zenodo.7838652"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7838652"
+            "sameAs": "https://doi.org/10.5281/zenodo.7838652",
+            "citation": "Friedman, Daniel Ari. 2023. Slides for Iris. Zenodo. DOI: 10.5281/zenodo.7838652. URL: https://doi.org/10.5281/zenodo.7838652."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5790,7 +5927,8 @@
                 "value": "10.5281/zenodo.7400525",
                 "url": "https://doi.org/10.5281/zenodo.7400525"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7400525"
+            "sameAs": "https://doi.org/10.5281/zenodo.7400525",
+            "citation": "Friedman, Daniel Ari. 2022. Canonical neural networks perform active inference. Zenodo. DOI: 10.5281/zenodo.7400525. URL: https://doi.org/10.5281/zenodo.7400525."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5842,7 +5980,8 @@
                 "value": "10.5281/zenodo.7400708",
                 "url": "https://doi.org/10.5281/zenodo.7400708"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7400708"
+            "sameAs": "https://doi.org/10.5281/zenodo.7400708",
+            "citation": "Friedman, Daniel Ari. 2022. Interoception as modeling, allostasis as control. Zenodo. DOI: 10.5281/zenodo.7400708. URL: https://doi.org/10.5281/zenodo.7400708."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5886,7 +6025,8 @@
                 "value": "10.5281/zenodo.7259006",
                 "url": "https://doi.org/10.5281/zenodo.7259006"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7259006"
+            "sameAs": "https://doi.org/10.5281/zenodo.7259006",
+            "citation": "Friedman, Daniel Ari. 2022. Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016. Zenodo. DOI: 10.5281/zenodo.7259006. URL: https://doi.org/10.5281/zenodo.7259006."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5930,7 +6070,8 @@
                 "value": "10.5281/zenodo.7400785",
                 "url": "https://doi.org/10.5281/zenodo.7400785"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7400785"
+            "sameAs": "https://doi.org/10.5281/zenodo.7400785",
+            "citation": "Friedman, Daniel Ari. 2022. A Worked Example of the Bayesian Mechanics of Classical Objects. Zenodo. DOI: 10.5281/zenodo.7400785. URL: https://doi.org/10.5281/zenodo.7400785."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5974,7 +6115,8 @@
                 "value": "10.5281/zenodo.7401874",
                 "url": "https://doi.org/10.5281/zenodo.7401874"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7401874"
+            "sameAs": "https://doi.org/10.5281/zenodo.7401874",
+            "citation": "Friedman, Daniel Ari. 2022. Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\". Zenodo. DOI: 10.5281/zenodo.7401874. URL: https://doi.org/10.5281/zenodo.7401874."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6022,7 +6164,8 @@
                 "value": "10.5281/zenodo.6904426",
                 "url": "https://doi.org/10.5281/zenodo.6904426"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.6904426"
+            "sameAs": "https://doi.org/10.5281/zenodo.6904426",
+            "citation": "Friedman, Daniel Ari. 2022. Tracking Public Sensemaking through Rhetorical Annotation of Image Memes. Zenodo. DOI: 10.5281/zenodo.6904426. URL: https://doi.org/10.5281/zenodo.6904426."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6086,7 +6229,8 @@
                 "value": "10.5281/zenodo.5797040",
                 "url": "https://doi.org/10.5281/zenodo.5797040"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.5797040"
+            "sameAs": "https://doi.org/10.5281/zenodo.5797040",
+            "citation": "Friedman, Daniel Ari. 2021. Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021. Zenodo. DOI: 10.5281/zenodo.5797040. URL: https://doi.org/10.5281/zenodo.5797040."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6122,7 +6266,8 @@
                 "value": "10.5281/zenodo.4624298",
                 "url": "https://doi.org/10.5281/zenodo.4624298"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.4624298"
+            "sameAs": "https://doi.org/10.5281/zenodo.4624298",
+            "citation": "Friedman, Daniel Ari. 2021. Collaborative Writing for Catechism-Based Teams. Zenodo. DOI: 10.5281/zenodo.4624298. URL: https://doi.org/10.5281/zenodo.4624298."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6162,7 +6307,8 @@
                 "value": "10.5281/zenodo.4170025",
                 "url": "https://doi.org/10.5281/zenodo.4170025"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.4170025"
+            "sameAs": "https://doi.org/10.5281/zenodo.4170025",
+            "citation": "Friedman, Daniel Ari. 2020. Reimagining Maps. Zenodo. DOI: 10.5281/zenodo.4170025. URL: https://doi.org/10.5281/zenodo.4170025."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6198,7 +6344,8 @@
                 "value": "10.5281/zenodo.12601674",
                 "url": "https://doi.org/10.5281/zenodo.12601674"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.12601674"
+            "sameAs": "https://doi.org/10.5281/zenodo.12601674",
+            "citation": "Friedman, Daniel Ari. 2020. Infinite Games for Infinite Teams. Zenodo. DOI: 10.5281/zenodo.12601674. URL: https://doi.org/10.5281/zenodo.12601674."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6225,7 +6372,8 @@
                 "value": "10.5281/zenodo.20482025",
                 "url": "https://doi.org/10.5281/zenodo.20482025"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20482025"
+            "sameAs": "https://doi.org/10.5281/zenodo.20482025",
+            "citation": "Friedman, Daniel Ari. 2026. The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation. Zenodo. DOI: 10.5281/zenodo.20482025. URL: https://doi.org/10.5281/zenodo.20482025."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6252,7 +6400,8 @@
                 "value": "10.5281/zenodo.20533669",
                 "url": "https://doi.org/10.5281/zenodo.20533669"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20533669"
+            "sameAs": "https://doi.org/10.5281/zenodo.20533669",
+            "citation": "Friedman, Daniel Ari. 2026. A Deterministic Testbed for Self-Organizing Agent-Team Coordination. Zenodo. DOI: 10.5281/zenodo.20533669. URL: https://doi.org/10.5281/zenodo.20533669."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6279,7 +6428,8 @@
                 "value": "10.5281/zenodo.20498699",
                 "url": "https://doi.org/10.5281/zenodo.20498699"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20498699"
+            "sameAs": "https://doi.org/10.5281/zenodo.20498699",
+            "citation": "Friedman, Daniel Ari. 2026. Recovering LLM-Persona Accuracies from Unlabeled Votes. Zenodo. DOI: 10.5281/zenodo.20498699. URL: https://doi.org/10.5281/zenodo.20498699."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6306,7 +6456,8 @@
                 "value": "10.5281/zenodo.20533675",
                 "url": "https://doi.org/10.5281/zenodo.20533675"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20533675"
+            "sameAs": "https://doi.org/10.5281/zenodo.20533675",
+            "citation": "Friedman, Daniel Ari. 2026. The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine. Zenodo. DOI: 10.5281/zenodo.20533675. URL: https://doi.org/10.5281/zenodo.20533675."
         },
         {
             "@type": "Book",
@@ -6333,7 +6484,8 @@
                 "value": "10.5281/zenodo.20533125",
                 "url": "https://doi.org/10.5281/zenodo.20533125"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20533125"
+            "sameAs": "https://doi.org/10.5281/zenodo.20533125",
+            "citation": "Friedman, Daniel Ari. 2026. The Template Textbook. Zenodo. DOI: 10.5281/zenodo.20533125. URL: https://doi.org/10.5281/zenodo.20533125."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6359,7 +6511,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2016LessonsFromColony155.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2016LessonsFromColony155.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2016LessonsFromColony155.html",
-            "sameAs": "https://www.science.org/doi/10.1126/science.352.6288.886"
+            "sameAs": "https://www.science.org/doi/10.1126/science.352.6288.886",
+            "citation": "Friedman, Daniel Ari. 2016. Lessons from the colony. Science. URL: https://www.science.org/doi/10.1126/science.352.6288.886."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6391,7 +6544,8 @@
                 "value": "10.1126/science.aag1520",
                 "url": "https://doi.org/10.1126/science.aag1520"
             },
-            "sameAs": "https://doi.org/10.1126/science.aag1520"
+            "sameAs": "https://doi.org/10.1126/science.aag1520",
+            "citation": "Friedman, Daniel Ari. 2016. Full speed ahead to the City on the Hill. Science. DOI: 10.1126/science.aag1520. URL: https://doi.org/10.1126/science.aag1520."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6417,7 +6571,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2021Disinforge157.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2021Disinforge157.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2021Disinforge157.html",
-            "sameAs": "https://www.science.org/doi/10.1126/science.371.6524.22"
+            "sameAs": "https://www.science.org/doi/10.1126/science.371.6524.22",
+            "citation": "Friedman, Daniel Ari. 2021. Disinforge. Science. URL: https://www.science.org/doi/10.1126/science.371.6524.22."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6449,7 +6604,8 @@
                 "value": "10.1126/science.371.6524.22",
                 "url": "https://doi.org/10.1126/science.371.6524.22"
             },
-            "sameAs": "https://doi.org/10.1126/science.371.6524.22"
+            "sameAs": "https://doi.org/10.1126/science.371.6524.22",
+            "citation": "Friedman, Daniel Ari. 2021. Defining events: 2020 in hindsight. Science. DOI: 10.1126/science.371.6524.22. URL: https://doi.org/10.1126/science.371.6524.22."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6497,7 +6653,8 @@
                 "value": "10.1007/978-3-031-28719-0_10",
                 "url": "https://doi.org/10.1007/978-3-031-28719-0_10"
             },
-            "sameAs": "https://doi.org/10.1007/978-3-031-28719-0_10"
+            "sameAs": "https://doi.org/10.1007/978-3-031-28719-0_10",
+            "citation": "Friedman, Daniel Ari. 2022. Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling. International Workshop on Active Inference. DOI: 10.1007/978-3-031-28719-0_10. URL: https://doi.org/10.1007/978-3-031-28719-0_10."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6537,7 +6694,8 @@
                 "value": "10.48550/arXiv.2408.15982",
                 "url": "https://doi.org/10.48550/arXiv.2408.15982"
             },
-            "sameAs": "https://doi.org/10.48550/arXiv.2408.15982"
+            "sameAs": "https://doi.org/10.48550/arXiv.2408.15982",
+            "citation": "Friedman, Daniel Ari. 2024. From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace. arXiv. DOI: 10.48550/arXiv.2408.15982. URL: https://doi.org/10.48550/arXiv.2408.15982."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6573,7 +6731,8 @@
                 "value": "10.5281/zenodo.5034808",
                 "url": "https://doi.org/10.5281/zenodo.5034808"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.5034808"
+            "sameAs": "https://doi.org/10.5281/zenodo.5034808",
+            "citation": "Friedman, Daniel Ari. 2021. Knowledge Management Archipelago. Zenodo. DOI: 10.5281/zenodo.5034808. URL: https://doi.org/10.5281/zenodo.5034808."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6600,7 +6759,8 @@
                 "value": "10.5281/zenodo.13273682",
                 "url": "https://doi.org/10.5281/zenodo.13273682"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.13273682"
+            "sameAs": "https://doi.org/10.5281/zenodo.13273682",
+            "citation": "Friedman, Daniel Ari. 2024. Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum. Zenodo. DOI: 10.5281/zenodo.13273682. URL: https://doi.org/10.5281/zenodo.13273682."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6625,7 +6785,8 @@
             "keywords": "🧬",
             "@id": "https://danielarifriedman.com/works/Friedman2017OsteopathyVariableVariabilityHealth163.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2017OsteopathyVariableVariabilityHealth163.html",
-            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2017OsteopathyVariableVariabilityHealth163.html"
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2017OsteopathyVariableVariabilityHealth163.html",
+            "citation": "Friedman, Daniel Ari. 2017. Osteopathy and the Variable Variability of Health. The Cranial Letter 70(4). URL: https://danielarifriedman.com/works/Friedman2017OsteopathyVariableVariabilityHealth163.html."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6650,7 +6811,8 @@
             "keywords": "🧬",
             "@id": "https://danielarifriedman.com/works/Friedman2016CellsMechanobiologyOsteopathy164.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2016CellsMechanobiologyOsteopathy164.html",
-            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2016CellsMechanobiologyOsteopathy164.html"
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2016CellsMechanobiologyOsteopathy164.html",
+            "citation": "Friedman, Daniel Ari. 2016. Cells, Mechanobiology, and Osteopathy. The Cranial Letter 69(1). URL: https://danielarifriedman.com/works/Friedman2016CellsMechanobiologyOsteopathy164.html."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6682,7 +6844,8 @@
                 "value": "10.5281/zenodo.20614908",
                 "url": "https://doi.org/10.5281/zenodo.20614908"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20614908"
+            "sameAs": "https://doi.org/10.5281/zenodo.20614908",
+            "citation": "Friedman, Daniel Ari. 2026. iTrace: verification-first webcam eye-movement analysis. Zenodo. DOI: 10.5281/zenodo.20614908. URL: https://doi.org/10.5281/zenodo.20614908."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6714,7 +6877,8 @@
                 "value": "10.5281/zenodo.20693216",
                 "url": "https://doi.org/10.5281/zenodo.20693216"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20693216"
+            "sameAs": "https://doi.org/10.5281/zenodo.20693216",
+            "citation": "Friedman, Daniel Ari. 2026. DemoCreate: Declarative Audio-Visual Demo Generation for Software. Zenodo. DOI: 10.5281/zenodo.20693216. URL: https://doi.org/10.5281/zenodo.20693216."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6746,7 +6910,8 @@
                 "value": "10.5281/zenodo.20396328",
                 "url": "https://doi.org/10.5281/zenodo.20396328"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20396328"
+            "sameAs": "https://doi.org/10.5281/zenodo.20396328",
+            "citation": "Friedman, Daniel Ari. 2026. ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data. Zenodo. DOI: 10.5281/zenodo.20396328. URL: https://doi.org/10.5281/zenodo.20396328."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6782,7 +6947,8 @@
                 "value": "10.5281/zenodo.7803313",
                 "url": "https://doi.org/10.5281/zenodo.7803313"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.7803313"
+            "sameAs": "https://doi.org/10.5281/zenodo.7803313",
+            "citation": "Friedman, Daniel Ari. 2026. GeneralizedNotationNotation (GNN). Zenodo. DOI: 10.5281/zenodo.7803313. URL: https://doi.org/10.5281/zenodo.7803313."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6814,7 +6980,8 @@
                 "value": "10.5281/zenodo.20705350",
                 "url": "https://doi.org/10.5281/zenodo.20705350"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20705350"
+            "sameAs": "https://doi.org/10.5281/zenodo.20705350",
+            "citation": "Friedman, Daniel Ari. 2026. COGANT: Deterministic Codebase-to-GNN Translation. Zenodo. DOI: 10.5281/zenodo.20705350. URL: https://doi.org/10.5281/zenodo.20705350."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6841,7 +7008,8 @@
                 "value": "10.5281/zenodo.20732274",
                 "url": "https://doi.org/10.5281/zenodo.20732274"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20732274"
+            "sameAs": "https://doi.org/10.5281/zenodo.20732274",
+            "citation": "Friedman, Daniel Ari. 2026. AGEINT: Agentic Intelligence. Zenodo. DOI: 10.5281/zenodo.20732274. URL: https://doi.org/10.5281/zenodo.20732274."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6868,7 +7036,8 @@
                 "value": "10.5281/zenodo.20747834",
                 "url": "https://doi.org/10.5281/zenodo.20747834"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20747834"
+            "sameAs": "https://doi.org/10.5281/zenodo.20747834",
+            "citation": "Friedman, Daniel Ari. 2026. On-Policy Distillation as Active Inference in Finite Variational Models. Zenodo. DOI: 10.5281/zenodo.20747834. URL: https://doi.org/10.5281/zenodo.20747834."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6895,7 +7064,8 @@
                 "value": "10.5281/zenodo.20786638",
                 "url": "https://doi.org/10.5281/zenodo.20786638"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20786638"
+            "sameAs": "https://doi.org/10.5281/zenodo.20786638",
+            "citation": "Friedman, Daniel Ari. 2026. Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts. Zenodo. DOI: 10.5281/zenodo.20786638. URL: https://doi.org/10.5281/zenodo.20786638."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6922,7 +7092,8 @@
                 "value": "10.5281/zenodo.20789899",
                 "url": "https://doi.org/10.5281/zenodo.20789899"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20789899"
+            "sameAs": "https://doi.org/10.5281/zenodo.20789899",
+            "citation": "Friedman, Daniel Ari. 2026. California Public Records: A Technical and Legal Reference for the Post-AB 473 Era. Zenodo. DOI: 10.5281/zenodo.20789899. URL: https://doi.org/10.5281/zenodo.20789899."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6949,7 +7120,8 @@
                 "value": "10.5281/zenodo.21513316",
                 "url": "https://doi.org/10.5281/zenodo.21513316"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21513316"
+            "sameAs": "https://doi.org/10.5281/zenodo.21513316",
+            "citation": "Friedman, Daniel Ari. 2026. CogSecSkills: Multiharness Agentic Skills for Cognitive Security. Zenodo. DOI: 10.5281/zenodo.21513316. URL: https://doi.org/10.5281/zenodo.21513316."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6981,7 +7153,8 @@
                 "value": "10.5281/zenodo.20834846",
                 "url": "https://doi.org/10.5281/zenodo.20834846"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20834846"
+            "sameAs": "https://doi.org/10.5281/zenodo.20834846",
+            "citation": "Friedman, Daniel Ari. 2026. Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction. Zenodo. DOI: 10.5281/zenodo.20834846. URL: https://doi.org/10.5281/zenodo.20834846."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7008,7 +7181,8 @@
                 "value": "10.5281/zenodo.20931964",
                 "url": "https://doi.org/10.5281/zenodo.20931964"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20931964"
+            "sameAs": "https://doi.org/10.5281/zenodo.20931964",
+            "citation": "Friedman, Daniel Ari. 2026. A Living Meta-Analysis of the Modafinil Literature. Zenodo. DOI: 10.5281/zenodo.20931964. URL: https://doi.org/10.5281/zenodo.20931964."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7035,7 +7209,8 @@
                 "value": "10.5281/zenodo.20931955",
                 "url": "https://doi.org/10.5281/zenodo.20931955"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20931955"
+            "sameAs": "https://doi.org/10.5281/zenodo.20931955",
+            "citation": "Friedman, Daniel Ari. 2026. Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition. Zenodo. DOI: 10.5281/zenodo.20931955. URL: https://doi.org/10.5281/zenodo.20931955."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7066,7 +7241,8 @@
                 "value": "10.5281/zenodo.20976824",
                 "url": "https://doi.org/10.5281/zenodo.20976824"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.20976824"
+            "sameAs": "https://doi.org/10.5281/zenodo.20976824",
+            "citation": "Friedman, Daniel Ari. 2026. AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference. Zenodo. DOI: 10.5281/zenodo.20976824. URL: https://doi.org/10.5281/zenodo.20976824."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7098,7 +7274,8 @@
                 "value": "10.5281/zenodo.21047573",
                 "url": "https://doi.org/10.5281/zenodo.21047573"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21047573"
+            "sameAs": "https://doi.org/10.5281/zenodo.21047573",
+            "citation": "Friedman, Daniel Ari. 2026. Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls. Zenodo. DOI: 10.5281/zenodo.21047573. URL: https://doi.org/10.5281/zenodo.21047573."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7125,7 +7302,8 @@
                 "value": "10.5281/zenodo.21083779",
                 "url": "https://doi.org/10.5281/zenodo.21083779"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21083779"
+            "sameAs": "https://doi.org/10.5281/zenodo.21083779",
+            "citation": "Friedman, Daniel Ari. 2026. Sortition Upstream of NTQR. Zenodo. DOI: 10.5281/zenodo.21083779. URL: https://doi.org/10.5281/zenodo.21083779."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7152,7 +7330,8 @@
                 "value": "10.5281/zenodo.21086292",
                 "url": "https://doi.org/10.5281/zenodo.21086292"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21086292"
+            "sameAs": "https://doi.org/10.5281/zenodo.21086292",
+            "citation": "Friedman, Daniel Ari. 2026. Exploratory Data Analysis: A Reproducible Notebook Template. Zenodo. DOI: 10.5281/zenodo.21086292. URL: https://doi.org/10.5281/zenodo.21086292."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7179,7 +7358,8 @@
                 "value": "10.5281/zenodo.21086548",
                 "url": "https://doi.org/10.5281/zenodo.21086548"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21086548"
+            "sameAs": "https://doi.org/10.5281/zenodo.21086548",
+            "citation": "Friedman, Daniel Ari. 2026. A Domain Language for Specifying Controlled Methods. Zenodo. DOI: 10.5281/zenodo.21086548. URL: https://doi.org/10.5281/zenodo.21086548."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7206,7 +7386,8 @@
                 "value": "10.5281/zenodo.21137276",
                 "url": "https://doi.org/10.5281/zenodo.21137276"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21137276"
+            "sameAs": "https://doi.org/10.5281/zenodo.21137276",
+            "citation": "Friedman, Daniel Ari. 2026. Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon. Zenodo. DOI: 10.5281/zenodo.21137276. URL: https://doi.org/10.5281/zenodo.21137276."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7233,7 +7414,8 @@
                 "value": "10.5281/zenodo.21176000",
                 "url": "https://doi.org/10.5281/zenodo.21176000"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21176000"
+            "sameAs": "https://doi.org/10.5281/zenodo.21176000",
+            "citation": "Friedman, Daniel Ari. 2026. The Shape Between: A Full-Page Illustrated Storybook Template. Zenodo. DOI: 10.5281/zenodo.21176000. URL: https://doi.org/10.5281/zenodo.21176000."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7260,7 +7442,8 @@
                 "value": "10.5281/zenodo.21227869",
                 "url": "https://doi.org/10.5281/zenodo.21227869"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21227869"
+            "sameAs": "https://doi.org/10.5281/zenodo.21227869",
+            "citation": "Friedman, Daniel Ari. 2026. Autopoietic Project Generation. Zenodo. DOI: 10.5281/zenodo.21227869. URL: https://doi.org/10.5281/zenodo.21227869."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7287,7 +7470,8 @@
                 "value": "10.5281/zenodo.21281509",
                 "url": "https://doi.org/10.5281/zenodo.21281509"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21281509"
+            "sameAs": "https://doi.org/10.5281/zenodo.21281509",
+            "citation": "Friedman, Daniel Ari. 2026. template_pitch_deck: Reproducible, Validated Pitch-Deck Generation. Zenodo. DOI: 10.5281/zenodo.21281509. URL: https://doi.org/10.5281/zenodo.21281509."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7314,7 +7498,8 @@
                 "value": "10.5281/zenodo.21298894",
                 "url": "https://doi.org/10.5281/zenodo.21298894"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21298894"
+            "sameAs": "https://doi.org/10.5281/zenodo.21298894",
+            "citation": "Friedman, Daniel Ari. 2026. Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference. Zenodo. DOI: 10.5281/zenodo.21298894. URL: https://doi.org/10.5281/zenodo.21298894."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7341,7 +7526,8 @@
                 "value": "10.5281/zenodo.21298892",
                 "url": "https://doi.org/10.5281/zenodo.21298892"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21298892"
+            "sameAs": "https://doi.org/10.5281/zenodo.21298892",
+            "citation": "Friedman, Daniel Ari. 2026. Registered Report Template: Preregistration, Deviations, and Claim Boundaries. Zenodo. DOI: 10.5281/zenodo.21298892. URL: https://doi.org/10.5281/zenodo.21298892."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7368,7 +7554,8 @@
                 "value": "10.5281/zenodo.21298890",
                 "url": "https://doi.org/10.5281/zenodo.21298890"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21298890"
+            "sameAs": "https://doi.org/10.5281/zenodo.21298890",
+            "citation": "Friedman, Daniel Ari. 2026. Redacted Report Template: Disclosure Control and Release Audit. Zenodo. DOI: 10.5281/zenodo.21298890. URL: https://doi.org/10.5281/zenodo.21298890."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7395,7 +7582,8 @@
                 "value": "10.5281/zenodo.21298888",
                 "url": "https://doi.org/10.5281/zenodo.21298888"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21298888"
+            "sameAs": "https://doi.org/10.5281/zenodo.21298888",
+            "citation": "Friedman, Daniel Ari. 2026. Pools, Rules, and Tools: A Template-Integrated Resource Architecture. Zenodo. DOI: 10.5281/zenodo.21298888. URL: https://doi.org/10.5281/zenodo.21298888."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7422,7 +7610,8 @@
                 "value": "10.5281/zenodo.21298885",
                 "url": "https://doi.org/10.5281/zenodo.21298885"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21298885"
+            "sameAs": "https://doi.org/10.5281/zenodo.21298885",
+            "citation": "Friedman, Daniel Ari. 2026. Illegal States, Mostly Unrepresentable. Zenodo. DOI: 10.5281/zenodo.21298885. URL: https://doi.org/10.5281/zenodo.21298885."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7449,7 +7638,8 @@
                 "value": "10.5281/zenodo.21298883",
                 "url": "https://doi.org/10.5281/zenodo.21298883"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21298883"
+            "sameAs": "https://doi.org/10.5281/zenodo.21298883",
+            "citation": "Friedman, Daniel Ari. 2026. Data Descriptor Template: Schema, Provenance, and Release Readiness. Zenodo. DOI: 10.5281/zenodo.21298883. URL: https://doi.org/10.5281/zenodo.21298883."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7476,7 +7666,8 @@
                 "value": "10.5281/zenodo.21316510",
                 "url": "https://doi.org/10.5281/zenodo.21316510"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21316510"
+            "sameAs": "https://doi.org/10.5281/zenodo.21316510",
+            "citation": "Friedman, Daniel Ari. 2026. Prior Cognitive Art. Zenodo. DOI: 10.5281/zenodo.21316510. URL: https://doi.org/10.5281/zenodo.21316510."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7503,7 +7694,8 @@
                 "value": "10.5281/zenodo.21330636",
                 "url": "https://doi.org/10.5281/zenodo.21330636"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21330636"
+            "sameAs": "https://doi.org/10.5281/zenodo.21330636",
+            "citation": "Friedman, Daniel Ari. 2026. Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations. Zenodo. DOI: 10.5281/zenodo.21330636. URL: https://doi.org/10.5281/zenodo.21330636."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7530,7 +7722,8 @@
                 "value": "10.5281/zenodo.21388456",
                 "url": "https://doi.org/10.5281/zenodo.21388456"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21388456"
+            "sameAs": "https://doi.org/10.5281/zenodo.21388456",
+            "citation": "Friedman, Daniel Ari. 2026. Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing. Zenodo. DOI: 10.5281/zenodo.21388456. URL: https://doi.org/10.5281/zenodo.21388456."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7557,7 +7750,8 @@
                 "value": "10.5281/zenodo.21419693",
                 "url": "https://doi.org/10.5281/zenodo.21419693"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21419693"
+            "sameAs": "https://doi.org/10.5281/zenodo.21419693",
+            "citation": "Friedman, Daniel Ari. 2026. DuckRabbit: Typed Multimodal Illusion Generator. Zenodo. DOI: 10.5281/zenodo.21419693. URL: https://doi.org/10.5281/zenodo.21419693."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7589,7 +7783,8 @@
                 "value": "10.5281/zenodo.21418782",
                 "url": "https://doi.org/10.5281/zenodo.21418782"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21418782"
+            "sameAs": "https://doi.org/10.5281/zenodo.21418782",
+            "citation": "Friedman, Daniel Ari. 2026. SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer. Zenodo. DOI: 10.5281/zenodo.21418782. URL: https://doi.org/10.5281/zenodo.21418782."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7621,7 +7816,8 @@
                 "value": "10.5281/zenodo.21695160",
                 "url": "https://doi.org/10.5281/zenodo.21695160"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21695160"
+            "sameAs": "https://doi.org/10.5281/zenodo.21695160",
+            "citation": "Friedman, Daniel Ari. 2026. Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings. Zenodo. DOI: 10.5281/zenodo.21695160. URL: https://doi.org/10.5281/zenodo.21695160."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7653,7 +7849,8 @@
                 "value": "10.5281/zenodo.21754245",
                 "url": "https://doi.org/10.5281/zenodo.21754245"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21754245"
+            "sameAs": "https://doi.org/10.5281/zenodo.21754245",
+            "citation": "Friedman, Daniel Ari. 2026. The Witness Register: Co-Registration Without Aggregation. Zenodo. DOI: 10.5281/zenodo.21754245. URL: https://doi.org/10.5281/zenodo.21754245."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7685,7 +7882,8 @@
                 "value": "10.5281/zenodo.21754243",
                 "url": "https://doi.org/10.5281/zenodo.21754243"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21754243"
+            "sameAs": "https://doi.org/10.5281/zenodo.21754243",
+            "citation": "Friedman, Daniel Ari. 2026. The Line Set: Holding Instruments Apart. Zenodo. DOI: 10.5281/zenodo.21754243. URL: https://doi.org/10.5281/zenodo.21754243."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7717,7 +7915,8 @@
                 "value": "10.5281/zenodo.21754241",
                 "url": "https://doi.org/10.5281/zenodo.21754241"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21754241"
+            "sameAs": "https://doi.org/10.5281/zenodo.21754241",
+            "citation": "Friedman, Daniel Ari. 2026. White Line: A Typed Ledger for the Edge of the Claim. Zenodo. DOI: 10.5281/zenodo.21754241. URL: https://doi.org/10.5281/zenodo.21754241."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7749,7 +7948,8 @@
                 "value": "10.5281/zenodo.21754239",
                 "url": "https://doi.org/10.5281/zenodo.21754239"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21754239"
+            "sameAs": "https://doi.org/10.5281/zenodo.21754239",
+            "citation": "Friedman, Daniel Ari. 2026. Personal Red Lines for Development. Zenodo. DOI: 10.5281/zenodo.21754239. URL: https://doi.org/10.5281/zenodo.21754239."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7781,7 +7981,8 @@
                 "value": "10.5281/zenodo.21754237",
                 "url": "https://doi.org/10.5281/zenodo.21754237"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21754237"
+            "sameAs": "https://doi.org/10.5281/zenodo.21754237",
+            "citation": "Friedman, Daniel Ari. 2026. Golden Line: Toward What Matters. Zenodo. DOI: 10.5281/zenodo.21754237. URL: https://doi.org/10.5281/zenodo.21754237."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7813,7 +8014,8 @@
                 "value": "10.5281/zenodo.21754235",
                 "url": "https://doi.org/10.5281/zenodo.21754235"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21754235"
+            "sameAs": "https://doi.org/10.5281/zenodo.21754235",
+            "citation": "Friedman, Daniel Ari. 2026. Black Line: Strong Work in Public. Zenodo. DOI: 10.5281/zenodo.21754235. URL: https://doi.org/10.5281/zenodo.21754235."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7845,7 +8047,8 @@
                 "value": "10.5281/zenodo.21750800",
                 "url": "https://doi.org/10.5281/zenodo.21750800"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21750800"
+            "sameAs": "https://doi.org/10.5281/zenodo.21750800",
+            "citation": "Friedman, Daniel Ari. 2026. Codomyrmex: An Artificial Ecology for Agentic Software Development. Zenodo. DOI: 10.5281/zenodo.21750800. URL: https://doi.org/10.5281/zenodo.21750800."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7877,7 +8080,8 @@
                 "value": "10.5281/zenodo.21763244",
                 "url": "https://doi.org/10.5281/zenodo.21763244"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21763244"
+            "sameAs": "https://doi.org/10.5281/zenodo.21763244",
+            "citation": "Friedman, Daniel Ari. 2026. THALIA: Typed Harness with Analytical Lexical-Integrated Architecture. Zenodo. DOI: 10.5281/zenodo.21763244. URL: https://doi.org/10.5281/zenodo.21763244."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7909,7 +8113,8 @@
                 "value": "10.5281/zenodo.21843592",
                 "url": "https://doi.org/10.5281/zenodo.21843592"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21843592"
+            "sameAs": "https://doi.org/10.5281/zenodo.21843592",
+            "citation": "Friedman, Daniel Ari. 2026. PROJECT BOND — The Special-Agent Operations Compendium. Zenodo. DOI: 10.5281/zenodo.21843592. URL: https://doi.org/10.5281/zenodo.21843592."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7953,7 +8158,8 @@
                 "value": "10.5281/zenodo.21815704",
                 "url": "https://doi.org/10.5281/zenodo.21815704"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21815704"
+            "sameAs": "https://doi.org/10.5281/zenodo.21815704",
+            "citation": "Friedman, Daniel Ari. 2026. DigiPPPiP: Digital Partner Pen Play in Parallel. Zenodo. DOI: 10.5281/zenodo.21815704. URL: https://doi.org/10.5281/zenodo.21815704."
         },
         {
             "@type": "ScholarlyArticle",
@@ -7985,7 +8191,8 @@
                 "value": "10.5281/zenodo.21864003",
                 "url": "https://doi.org/10.5281/zenodo.21864003"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21864003"
+            "sameAs": "https://doi.org/10.5281/zenodo.21864003",
+            "citation": "Friedman, Daniel Ari. 2026. Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus. Zenodo. DOI: 10.5281/zenodo.21864003. URL: https://doi.org/10.5281/zenodo.21864003."
         },
         {
             "@type": "ScholarlyArticle",
@@ -8017,7 +8224,8 @@
                 "value": "10.5281/zenodo.21865643",
                 "url": "https://doi.org/10.5281/zenodo.21865643"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.21865643"
+            "sameAs": "https://doi.org/10.5281/zenodo.21865643",
+            "citation": "Friedman, Daniel Ari. 2026. Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract. Zenodo. DOI: 10.5281/zenodo.21865643. URL: https://doi.org/10.5281/zenodo.21865643."
         }
     ]
 }

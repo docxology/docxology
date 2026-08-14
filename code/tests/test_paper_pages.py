@@ -35,8 +35,7 @@ def test_docs_folder_page_links_local_docs_and_canonical():
     assert 'href="README.md"' in content
     assert 'href="AGENTS.md"' in content
     assert 'href="SKILL.md"' in content
-    assert "rel=\"canonical\"" in content
     assert work["citation_key"] in content
     assert work["doi"] in content or "doi.org" in content
-    assert 'meta name="robots" content="noindex, follow"' in content
+    assert 'name="robots"' not in content
     assert "application/ld+json" not in content

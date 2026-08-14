@@ -20,6 +20,14 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 ---
 
+## Pillar Research Explainers & Guides
+
+- [What Is Cognitive Security? Theory, Threat Models, and Multi-Agent Defense](https://danielarifriedman.com/cognitive-security.html) — Foundational guide on narrative ecosystems, epistemic security, and agent safety.
+- [Computational Entomology: Algorithms, Models, and Digital Insect Colonies](https://danielarifriedman.com/computational-entomology.html) — Frameworks for simulation, transcriptomics, and collective behavioral modeling.
+- [Insect Cognition & Collective Intelligence: How Ant Colonies Think Without a Central Brain](https://danielarifriedman.com/insect-cognition.html) — Deep dive into stigmergy, distributed problem solving, and Active Inference in social insects.
+- [Active Inference & The Free Energy Principle: A Practical Tutorial](https://danielarifriedman.com/active-inference.html) — Long-form explanatory tutorial from mathematical foundations to multi-agent generative modeling.
+- [Neurosymbolic AI & Active Inference: Bridging Symbolic Reasoning and Generative Agents](https://danielarifriedman.com/neurosymbolic-ai.html) — Technical guide on hybrid architectures, categorical representations, and discrete-state inference.
+
 ## Academic & Research Profiles
 
 | Platform | Link | Description |

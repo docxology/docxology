@@ -478,8 +478,80 @@ def related_pages(video: dict) -> list[dict]:
     return pages[:6]
 
 
-def title_for_page(video: dict) -> str:
-    return clip_description(f"{video['title']} | {video['channel_label']}", 62)
+def title_for_page(video: dict, max_len: int = 70) -> str:
+    title = " ".join(video["title"].split())
+    if len(title) <= max_len:
+        if title == "We Three Pogo":
+            return f"We Three Pogo ({video['date']})"
+        return title
+
+    parts = [p.strip() for p in title.split("~")]
+    if len(parts) >= 3:
+        short_parts = [re.sub(r"Active Inference", "ActInf", p) for p in parts]
+        cand = " ~ ".join(short_parts)
+        if len(cand) <= max_len:
+            return cand
+
+        p0 = short_parts[0]
+        p_last = short_parts[-1]
+        p_mids = short_parts[1:-1]
+        p0_short = re.sub(r"Textbook Group", "TBG", p0)
+        
+        cand4 = f"{p0_short} ~ " + " ~ ".join(p_mids) + f" ~ {p_last}"
+        if len(cand4) <= max_len:
+            return cand4
+
+        key_mid = ""
+        for m in reversed(p_mids):
+            if re.search(r"\b(session|chapter|lecture|part|pt)\b", m, re.I):
+                key_mid = m
+                break
+        
+        if key_mid:
+            other_mids = [m for m in p_mids if m != key_mid]
+            other_mid_str = f" ~ {other_mids[0]}" if other_mids else ""
+            cand_key = f"{p0_short}{other_mid_str} ~ {key_mid}"
+            if len(cand_key) <= max_len:
+                return cand_key
+            avail = max_len - len(f"{p0_short}{other_mid_str} ~ ")
+            if avail >= 8:
+                cut_k = key_mid[:avail - 1].rsplit(" ", 1)[0].rstrip(" ,;:.–—-~\"'")
+                return f"{p0_short}{other_mid_str} ~ {cut_k}…"
+
+        p_mid_all = " ~ ".join(p_mids)
+        avail_mid = max_len - len(p0) - len(p_last) - 6
+        if avail_mid >= 8:
+            cut_mid = p_mid_all[:avail_mid - 1].rsplit(" ", 1)[0].rstrip(" ,;:.–—-~\"'")
+            return f"{p0} ~ {cut_mid}… ~ {p_last}"
+        elif len(p0) + len(p_last) + 3 <= max_len:
+            return f"{p0} ~ {p_last}"
+
+    elif len(parts) == 2:
+        p0 = re.sub(r"Active Inference", "ActInf", parts[0])
+        p_rest = parts[1]
+        avail_rest = max_len - len(p0) - 3
+        if avail_rest >= 15:
+            cut = p_rest[:avail_rest - 1].rsplit(" ", 1)[0].rstrip(" ,;:.–—-~\"'")
+            if not cut:
+                cut = p_rest[:avail_rest - 1]
+            cand = f"{p0} ~ {cut}…"
+            if len(cand) <= max_len:
+                return cand
+        elif avail_rest >= 5:
+            cut = p_rest[:avail_rest - 1].rstrip(" ,;:.–—-~\"'")
+            cand = f"{p0} ~ {cut}…"
+            if len(cand) <= max_len:
+                return cand
+
+    budget = max_len - 1
+    head_len = int(budget * 0.55)
+    tail_len = budget - head_len
+    head = title[:head_len].rsplit(" ", 1)[0].rstrip(" ,;:.–—-~")
+    tail = title[-tail_len:].split(" ", 1)[-1].lstrip(" ,;:.–—-~")
+    cand = f"{head}…{tail}"
+    if len(cand) > max_len:
+        cand = cand[:max_len-1] + "…"
+    return cand
 
 
 def description_for_video(video: dict) -> str:

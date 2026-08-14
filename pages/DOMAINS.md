@@ -25,8 +25,9 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 **Learning path**
 
-- Start with the Stanford dissertation for biological context.
-- Read Active Inferants for the Active Inference bridge.
+- Read the comprehensive pillar guide on <a href='../computational-entomology.html'>Computational Entomology</a>.
+- Explore <a href='../insect-cognition.html'>Insect Cognition & Collective Intelligence</a> for distributed cognition models.
+- Start with the Stanford dissertation and Active Inferants for the biological foundations.
 - Use Ant Stack and Ento-Linguistics for recent computational extensions.
 
 **Selected works**
@@ -58,9 +59,10 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 
 **Learning path**
 
-- Start with the literature review and ontology papers.
-- Move to GNN, CEREBRUM, and Cognitive Case Diagrams for notation and modeling.
-- Use fep_lean for formalization-oriented work.
+- Read the long-form <a href='../active-inference.html'>Active Inference & Free Energy Principle Tutorial</a>.
+- Explore the <a href='../neurosymbolic-ai.html'>Neurosymbolic AI & Active Inference Guide</a> for hybrid AI agents.
+- Start with the literature review and ontology papers for foundational scope.
+- Move to GNN, CEREBRUM, and fep_lean for formalization and modeling.
 
 **Selected works**
 
@@ -92,7 +94,8 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 
 **Learning path**
 
-- Start with the three COGSEC books for the program arc.
+- Read the comprehensive guide on <a href='../cognitive-security.html'>What Is Cognitive Security?</a>.
+- Start with the three COGSEC books (IRT-20, NIM-21, CAT-22) for the program arc.
 - Read P3IF, Narrative Information Management, and Cognitive Integrity for the formal thread.
 - Use opentir and p3if as software companions.
 

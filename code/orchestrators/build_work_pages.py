@@ -415,7 +415,7 @@ def related_works_html(work: dict) -> str:
 
 
 def json_ld(work: dict) -> str:
-    typ = "ScholarlyArticle" if work["type"] in {"Paper", "Book Chapter"} else "CreativeWork"
+    typ = "ScholarlyArticle" if work["type"] in {"Paper", "Book Chapter", "Poster", "Thesis", "Report", "Preprint", "Review"} else "CreativeWork"
     enrich = work.get("enrichment", {})
     same_as = [work["url"]] if work.get("url") else []
     if work.get("doi"):
@@ -460,6 +460,13 @@ def json_ld(work: dict) -> str:
         data["about"].extend({"@type": "DefinedTerm", "name": keyword} for keyword in enrich["keywords"][:8])
     if enrich.get("findings") or enrich.get("methods"):
         data["description"] = " ".join([*(enrich.get("findings") or []), *(enrich.get("methods") or [])])[:700]
+    cite_str = citation_text(work)
+    if cite_str:
+        data["citation"] = cite_str
+
+    if work.get("license"):
+        data["license"] = work["license"]
+
     if work.get("docs_path"):
         data["hasPart"] = {
             "@type": "CreativeWork",
@@ -477,6 +484,23 @@ def json_ld(work: dict) -> str:
     return json.dumps(data, indent=4, ensure_ascii=False)
 
 
+def work_page_title(work: dict, max_len: int = 70) -> str:
+    title = " ".join(work["title"].split())
+    suffix = " — Daniel Ari Friedman"
+    if len(h(title)) + len(h(suffix)) <= max_len:
+        return f"{title}{suffix}"
+    if len(h(title)) <= max_len:
+        return title
+    # Account for html escaping length
+    budget = max_len - 1
+    cut = title
+    while len(h(cut + "…")) > max_len and len(cut) > 0:
+        cut = cut.rsplit(" ", 1)[0].rstrip(" ,;:.–—-")
+        if " " not in cut and len(h(cut + "…")) > max_len:
+            cut = cut[:-1]
+    return cut + "…"
+
+
 def page_head(work: dict) -> str:
     # Prefer the enriched abstract; otherwise build a per-work fallback that
     # includes the title so each page has a unique, descriptive meta description
@@ -488,12 +512,13 @@ def page_head(work: dict) -> str:
     description = work.get("enrichment", {}).get("abstract") or fallback
     description = clip_description(description)
     canon_url = f"https://danielarifriedman.com/works/{canonical_work_key(work['citation_key'])}.html"
+    page_title = work_page_title(work)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{h(work['title'])} — Daniel Ari Friedman</title>
+    <title>{h(page_title)}</title>
     <meta name="description" content="{h(description)}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{h(canon_url)}">

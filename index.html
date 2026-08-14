@@ -11,6 +11,7 @@
     <meta name="google-site-verification" content="googlef0f1a1a4a7ba4be8">
     <meta name="theme-color" content="#0c0c0e">
     <meta name="color-scheme" content="dark">
+    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <link rel="canonical" href="https://danielarifriedman.com/">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
@@ -41,9 +42,7 @@
     <link rel="me" href="https://youtube.com/@danielarifriedman">
     <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
-    <!-- hreflang for multilingual support -->
-    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="en" />
-    <link rel="alternate" href="https://danielarifriedman.com/" hreflang="x-default" />    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">    <meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">    <meta name="referrer" content="strict-origin-when-cross-origin">
 
 
     <meta name="revised" content="2026-08-13">
@@ -82,12 +81,14 @@
     "url": "https://danielarifriedman.com/",
     "sameAs": [
         "https://www.wikidata.org/wiki/Q138781444",
-        "https://danielarifriedman.com/",
         "https://docxology.github.io/docxology/",
         "https://github.com/docxology",
         "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
         "https://orcid.org/0000-0001-6232-9096",
-        "https://www.researchgate.net/profile/Daniel-Friedman-2"
+        "https://www.researchgate.net/profile/Daniel-Friedman-2",
+        "https://linkedin.com/in/danielarifriedman",
+        "https://youtube.com/@danielarifriedman",
+        "https://bsky.app/profile/danielarifriedman.com"
     ],
     "knowsAbout": [
         "Active Inference",
@@ -103,7 +104,7 @@
     },
     "memberOf": {
         "@type": "Organization",
-        "name": "Active Inference Institute"
+        "@id": "https://activeinference.org/#organization"
     },
     "worksFor": {
         "@type": "Organization",
@@ -211,7 +212,7 @@
         "@type": "SearchAction",
         "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://danielarifriedman.com/publications.html?q={search_term_string}"
+            "urlTemplate": "https://danielarifriedman.com/search.html?q={search_term_string}"
         },
         "query-input": "required name=search_term_string"
     }
@@ -258,7 +259,6 @@
     <link rel="preload" as="image" href="assets/hero-art/mesh-network.webp">
     <link rel="preload" as="image" href="assets/hero-art/an-ant-is-a-colony.webp">
     <link rel="preload" as="image" href="assets/hero-art/army-ants.webp">
-<link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
 <body class="home-page">
@@ -374,6 +374,53 @@
                 <p class="text-center mt-2"><a href="domains.html" class="btn btn-gold">Explore domain pages</a></p>
             </div>
         </div>
+
+        <!-- ── RESEARCH GUIDES & PILLARS ── -->
+        <section class="section section-alt" id="guides">
+            <div class="section-header">
+                <h2>Research Guides &amp; Pillar Explainers</h2>
+                <p>Comprehensive long-form tutorials, threat models, and architectural guides</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="cards cards-3">
+                <a class="card" href="cognitive-security.html">
+                    <div class="icon">🛡️</div>
+                    <h3>What Is Cognitive Security?</h3>
+                    <p>Theory, threat models, information commons, narrative topography, and multi-agent AI defense.</p>
+                    <span class="tag">Pillar Guide</span>
+                </a>
+                <a class="card" href="computational-entomology.html">
+                    <div class="icon">🐜</div>
+                    <h3>Computational Entomology</h3>
+                    <p>Algorithms, collective behavior, social insect neurogenomics, and digital ant colony simulation.</p>
+                    <span class="tag">Pillar Guide</span>
+                </a>
+                <a class="card" href="insect-cognition.html">
+                    <div class="icon">🧠</div>
+                    <h3>Insect Cognition &amp; Intelligence</h3>
+                    <p>Distributed problem-solving, stigmergic coordination, and Active Inference without a central brain.</p>
+                    <span class="tag">Pillar Guide</span>
+                </a>
+                <a class="card" href="active-inference.html">
+                    <div class="icon">⚡</div>
+                    <h3>Active Inference Tutorial</h3>
+                    <p>Practical guide to the Free Energy Principle, generative models, expected free energy, and action selection.</p>
+                    <span class="tag">Tutorial</span>
+                </a>
+                <a class="card" href="neurosymbolic-ai.html">
+                    <div class="icon">💻</div>
+                    <h3>Neurosymbolic AI &amp; Inference</h3>
+                    <p>Bridging deep learning with formal knowledge graphs, category theory, and discrete active inference agents.</p>
+                    <span class="tag">Pillar Guide</span>
+                </a>
+                <a class="card" href="cite-verify.html">
+                    <div class="icon">📑</div>
+                    <h3>AI Provenance &amp; GEO Architecture</h3>
+                    <p>Verifiable citation structures, machine-readable exports, and Generative Engine Optimization principles.</p>
+                    <span class="tag">Case Study</span>
+                </a>
+            </div>
+        </section>
 
         <!-- ── PUBLICATIONS ── -->
         <section class="section" id="publications">

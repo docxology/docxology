@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Inference & The Free Energy Principle: A Practical Tutorial</title>
+    <meta name="description" content="Comprehensive explanatory tutorial on Active Inference and the Free Energy Principle, covering generative models, Bayesian mechanics, and AI agent implementation.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://danielarifriedman.com/active-inference.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">    <meta name="referrer" content="strict-origin-when-cross-origin">    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
+    <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
+    <link rel="me" href="https://github.com/docxology">
+    <link rel="me" href="https://linkedin.com/in/danielarifriedman">
+    <link rel="me" href="https://youtube.com/@danielarifriedman">
+    <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
+    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
+
+
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Active Inference & The Free Energy Principle: A Practical Tutorial">
+    <meta property="og:description" content="Comprehensive explanatory tutorial on Active Inference and the Free Energy Principle, covering generative models, Bayesian mechanics, and AI agent implementation.">
+    <meta property="og:url" content="https://danielarifriedman.com/active-inference.html">
+    <meta property="og:image" content="https://danielarifriedman.com/og-active-inference-tutorial.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Active Inference & The Free Energy Principle: A Practical Tutorial">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Active Inference & The Free Energy Principle: A Practical Tutorial">
+    <meta name="twitter:description" content="Comprehensive explanatory tutorial on Active Inference and the Free Energy Principle, covering generative models, Bayesian mechanics, and AI agent implementation.">
+    <meta name="twitter:image" content="https://danielarifriedman.com/og-active-inference-tutorial.jpg">
+    <meta name="twitter:image:alt" content="Active Inference & The Free Energy Principle: A Practical Tutorial">
+    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
+    <meta name="theme-color" content="#0c0c0e">
+    <style>
+        .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}
+        .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}
+        .breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}
+        .breadcrumb a{color:var(--silver-bright);text-decoration:none}
+        .breadcrumb a:hover{text-decoration:underline}
+        .breadcrumb [aria-current=page]{color:var(--text-secondary)}
+        .pillar-content{max-width:880px;margin:0 auto;padding:7.5rem 1.5rem 4rem;line-height:1.8;color:var(--text-primary)}
+        .pillar-header{margin-bottom:2.5rem;text-align:left;border-bottom:1px solid var(--border);padding-bottom:1.5rem}
+        .pillar-header h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.2rem,4.5vw,3.4rem);line-height:1.15;margin-bottom:1rem;color:#fff}
+        .pillar-meta{font-size:.9rem;color:var(--text-secondary);display:flex;flex-wrap:wrap;gap:1.5rem;margin-top:1rem}
+        .pillar-meta span strong{color:var(--silver-bright)}
+        .pillar-content h2{font-family:Georgia,'Times New Roman',serif;font-size:1.75rem;margin:2.5rem 0 1rem;color:#fff;border-bottom:1px solid var(--border);padding-bottom:.5rem}
+        .pillar-content h3{font-size:1.25rem;margin:1.8rem 0 .75rem;color:var(--gold)}
+        .pillar-content p{margin-bottom:1.4rem;font-size:1.02rem;color:var(--text-secondary)}
+        .pillar-content ul,.pillar-content ol{margin:1rem 0 1.5rem 1.5rem;color:var(--text-secondary)}
+        .pillar-content li{margin-bottom:.5rem;font-size:1rem}
+        .answer-box{background:var(--bg-card);border-left:4px solid var(--gold);padding:1.4rem;margin-bottom:2rem;border-radius:0 8px 8px 0}
+        .answer-box p{margin-bottom:0;font-size:1.1rem;color:var(--text-primary);font-weight:500;line-height:1.7}
+        .callout-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.4rem;margin:1.5rem 0}
+        .callout-card h4{color:var(--gold);margin-bottom:.5rem;font-size:1rem;text-transform:uppercase;letter-spacing:.05em}
+        .faq-block{margin-top:3rem;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:2rem}
+        .faq-item{margin-bottom:1.75rem;border-bottom:1px solid var(--border);padding-bottom:1.25rem}
+        .faq-item:last-child{margin-bottom:0;border-bottom:none;padding-bottom:0}
+        .faq-item h3{font-size:1.15rem;color:#fff;margin-bottom:.5rem}
+    </style>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "@id": "https://danielarifriedman.com/active-inference.html#article",
+            "isPartOf": {
+                "@id": "https://danielarifriedman.com/#website"
+            },
+            "headline": "Active Inference & The Free Energy Principle: A Practical Tutorial",
+            "description": "Comprehensive explanatory tutorial on Active Inference and the Free Energy Principle, covering generative models, Bayesian mechanics, and AI agent implementation.",
+            "url": "https://danielarifriedman.com/active-inference.html",
+            "author": {
+                "@id": "https://danielarifriedman.com/#person"
+            },
+            "publisher": {
+                "@id": "https://danielarifriedman.com/#person"
+            },
+            "datePublished": "2026-08-14",
+            "dateModified": "2026-08-14",
+            "inLanguage": "en-US",
+            "mainEntityOfPage": "https://danielarifriedman.com/active-inference.html",
+            "about": [
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Active Inference"
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Free Energy Principle"
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Expected Free Energy"
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Markov Blanket"
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Bayesian Mechanics"
+                }
+            ]
+        },
+        {
+            "@type": "FAQPage",
+            "@id": "https://danielarifriedman.com/active-inference.html#faq",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is Active Inference in simple terms?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Active Inference is a theory of mind and intelligent action stating that brains and adaptive agents maintain internal models of their environment and continuously take actions to minimize surprise, confirm predictions, and resolve uncertainty."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is the mathematical equation for Variational Free Energy?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Variational Free Energy represents Complexity minus Accuracy. Minimizing it makes internal beliefs match the true Bayesian posterior given incoming sensory observations."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does Active Inference relate to AI agents?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Active Inference provides AI agents with intrinsic motivation for exploration, robust decision-making under uncertainty, sample-efficient planning via generative models, and transparent belief-updating dynamics without massive trial-and-error reward hacking."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Where can I find open-source software for Active Inference?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Check out fep_lean on GitHub for formal mathematical proofs, RxInfer.jl for reactive probabilistic programming, PyMDP for discrete agents, and COGANT for graph-based inference compilation."
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://danielarifriedman.com/active-inference.html#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://danielarifriedman.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Domains",
+                    "item": "https://danielarifriedman.com/domains.html"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Active Inference",
+                    "item": "https://danielarifriedman.com/active-inference.html"
+                }
+            ]
+        }
+    ]
+}
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <nav role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <div class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="publications.html">Publications</a>
+            <a href="domains.html">Domains</a>
+            <a href="software.html">Software</a>
+            <a href="videos.html">Videos</a>
+            <a href="art.html">Art</a>
+            <a href="media.html">Media</a>
+            <a href="collaborators.html">Collaborators</a>
+            <a href="search.html">Search</a>
+            <a href="catalog.html">Data Catalog</a>
+            <a href="evidence.html">Evidence</a>
+            <a href="cite-verify.html">Cite</a>
+            <a href="discovery.html">Discovery</a>
+            <a href="data/agent-index.json">Agent Map</a>
+        </div>
+    </nav>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol><li><a href="index.html">Home</a></li><li><a href="domains.html">Domains</a></li><li aria-current="page">Active Inference</li></ol>
+    </nav>
+    <main id="main" class="pillar-content">
+        <header class="pillar-header">
+            <p class="eyebrow" style="color:var(--gold);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;font-size:0.85rem;margin-bottom:0.5rem;">Foundational Tutorial & Technical Guide</p>
+            <h1>Active Inference & The Free Energy Principle: A Practical Tutorial</h1>
+            <div class="pillar-meta">
+                <span>Author: <strong>Daniel Ari Friedman, PhD</strong></span>
+                <span>Affiliation: <strong>Active Inference Institute</strong></span>
+                <span>Last updated: <strong>2026-08-14</strong></span>
+                <span>Domain: <a href="domain-active-inference.html" style="color:var(--gold);">Active Inference</a></span>
+            </div>
+        </header>
+
+        <div class="answer-box">
+            <p><strong>Active Inference</strong> is a unified mathematical framework developed in theoretical neuroscience, cognitive science, and machine learning that describes how sentient agents survive and adapt by minimizing variational and expected free energy. Rather than treating perception, learning, and action selection as separate modules, Active Inference unifies them as Bayesian inference over a single objective function: minimizing surprise relative to a generative model of the world.</p>
+        </div>
+
+        <h2>What Is the Free Energy Principle and How Does Active Inference Work?</h2>
+        <p>Originating in the physics of self-organizing non-equilibrium systems and pioneered by neuroscientist Karl Friston, the <strong>Free Energy Principle (FEP)</strong> states that any self-organizing system that resists dissipation and maintains its structural integrity over time must minimize an upper bound on sensory surprise (negative log evidence). <strong>Active Inference</strong> is the process theory that implements this principle for embodied, cognitive agents.</p>
+<p>Under Active Inference, an agent maintains a <em>generative model</em> of its environment consisting of:</p>
+<ul>
+<li><strong>Hidden States ($s$):</strong> Unobserved latent causes in the world (e.g., whether a predator is present, or the underlying state of a financial market).</li>
+<li><strong>Observations ($o$):</strong> Sensory inputs received by the agent (e.g., visual photons, auditory frequencies, telemetry readings).</li>
+<li><strong>Actions / Policies ($\pi$):</strong> Sequences of control states that alter the transition probabilities of future hidden states.</li>
+<li><strong>Generative Likelihood ($A$-matrix):</strong> The mapping from hidden states to sensory observations, $P(o | s)$.</li>
+<li><strong>State Transition Dynamics ($B$-matrix):</strong> How hidden states evolve conditioned on selected actions, $P(s_{t+1} | s_t, a_t)$.</li>
+<li><strong>Prior Preferences ($C$-vector):</strong> The agent's internal homeostatic baseline—the sensory states it expects to inhabit to remain viable.</li>
+<li><strong>Initial State Priors ($D$-vector):</strong> Baseline prior beliefs over hidden states at initialization, $P(s_0)$.</li>
+</ul>
+
+        <h2>What Is the Difference Between Variational Free Energy and Expected Free Energy?</h2>
+        <p>A crucial mathematical distinction in Active Inference is the difference between <strong>Variational Free Energy ($F$)</strong> and <strong>Expected Free Energy ($G$)</strong>:</p>
+<div class='callout-card'><h3>Variational vs. Expected Free Energy</h3><ul>
+<li><strong>Variational Free Energy ($F$) [The Present & Past]:</strong> Evaluated on <em>realized observations</em>. Minimizing $F$ optimizes the agent's current internal beliefs ($q(s)$) to match the true posterior distribution over hidden causes, balancing accuracy against complexity (KL divergence between beliefs and priors).</li>
+<li><strong>Expected Free Energy ($G$) [The Future & Action Selection]:</strong> Evaluated over <em>counterfactual future observations</em> that have not yet occurred. An agent evaluates candidate policies $\pi$ by computing the expected free energy $G(\pi)$ for future time steps.</li>
+</ul></div>
+<p>Mathematically, minimizing Expected Free Energy $G(\pi)$ naturally decomposes into two complementary imperatives:</p>
+<ol>
+<li><strong>Pragmatic Value (Goal Seeking):</strong> Maximizing the expected utility or log likelihood of future observations under prior preferences.</li>
+<li><strong>Epistemic Value (Information Seeking / Curiosity):</strong> Maximizing information gain or mutual information between future observations and hidden states, actively resolving ambiguity in unobserved domains.</li>
+</ol>
+
+        <h2>How Does Active Inference Compare to Reinforcement Learning (RL)?</h2>
+        <p>While both Active Inference and Reinforcement Learning model decision-making under uncertainty, their fundamental axioms differ substantially:</p>
+<ul>
+<li><strong>Exploration vs. Exploitation:</strong> In standard RL (Q-learning, policy gradients), exploration is an ad-hoc heuristic bolted onto reward maximization. In Active Inference, epistemic exploration (uncertainty reduction) and pragmatic exploitation (preference satisfaction) arise organically from the exact same mathematical objective ($G$).</li>
+<li><strong>Sample Efficiency:</strong> Active Inference agents maintain explicit probabilistic generative models, allowing them to perform counterfactual rollouts and plan effectively with vastly fewer environment interactions than model-free RL algorithms.</li>
+<li><strong>Reward Definition:</strong> RL maximizes an arbitrary external scalar reward. Active Inference satisfies self-consistent prior expectations (homeostasis), preventing reward hacking and out-of-distribution value drift.</li>
+</ul>
+
+        <h2>What Is the Markov Blanket and Bayesian Mechanics?</h2>
+        <p>In the formal physics of Active Inference—known as <strong>Bayesian Mechanics</strong> (<a href='works/Friedman2022WorkedExampleBayesianMechanics143.html'>Worked Example of Bayesian Mechanics</a>, 2022)—the concept of a <strong>Markov Blanket</strong> formalizes the boundary of any cognitive agent. The states of the universe partition into four sets:</p>
+<ul>
+<li><strong>Internal States ($\mu$):</strong> The agent's internal cognitive and computational states.</li>
+<li><strong>External States ($\eta$):</strong> The unobserved physical environment outside the agent.</li>
+<li><strong>Sensory States ($s$):</strong> States that mediate how external states affect internal states.</li>
+<li><strong>Active States ($a$):</strong> States that mediate how internal states affect external states.</li>
+</ul>
+<p>Sensory and active states together constitute the Markov Blanket. Internal and external states are conditionally independent given the blanket, providing a rigorous mathematical definition of agency, individuality, and selfhood across biological and computational scales.</p>
+
+        <h2>What Tools and Frameworks Exist for Implementing Active Inference?</h2>
+        <p>Researchers and software engineers can implement discrete and continuous Active Inference using standard open-source toolkits:</p>
+<div class='callout-card'><h3>Active Inference Software Ecosystem</h3><ul>
+<li><strong><a href='https://github.com/ActiveInferenceInstitute/fep_lean'>fep_lean</a>:</strong> Formalization of Free Energy Principle theorems, discrete-state space models, and Bayesian mechanics in the Lean 4 interactive theorem prover (<a href='works/Friedman2026TowardsLean4Formalization113.html'>Friedman, 2026</a>).</li>
+<li><strong><a href='https://github.com/ActiveInferenceInstitute/COGANT'>COGANT</a> &amp; GNN:</strong> Generalized Notation Notation and automated compiler tools for declarative Active Inference system specification (<a href='works/Friedman2023GeneralizedNotationNotationActive056.html'>GNN Paper, 2023</a>).</li>
+<li><strong><a href='https://github.com/infer-stat/RxInfer.jl'>RxInfer.jl</a>:</strong> Reactive message-passing probabilistic programming engine in Julia for real-time variational inference.</li>
+<li><strong>PyMDP:</strong> Python library for discrete-state Markov Decision Process Active Inference models.</li>
+<li><strong><a href='https://github.com/docxology/CEREBRUM'>CEREBRUM</a>:</strong> Case-Enabled Reasoning Engine with Bayesian Representations for structured multi-agent inference (<a href='works/Friedman2025CEREBRUMCaseEnabledReasoning010.html'>Friedman, 2025</a>).</li>
+</ul></div>
+
+        <h2>How Can Beginners and Advanced Researchers Learn Active Inference?</h2>
+        <p>The <a href='https://activeinference.institute'>Active Inference Institute (AII)</a>—founded in 2021—provides open scientific education, livestreams, study cohorts, and public research infrastructure:</p>
+<ol>
+<li><strong>Textbook Cohorts:</strong> Join structured cohort discussions studying foundational texts (Thomas Parr, Giovanni Pezzulo, & Karl Friston, <em>Active Inference: The Free Energy Principle in Mind, Brain, and Behavior</em>, MIT Press; and Noor Sajid et al.). Over 10 cohorts have completed through 2026.</li>
+<li><strong>Active Inference Video Archive:</strong> Watch over 1,100 curated livestreams, guest lectures, and model demonstrations indexed in the <a href='videos.html'>Interactive Video Archive</a> and <a href='videos/'>Video Index</a>.</li>
+<li><strong>Curated Research Index:</strong> Browse the unified <a href='domain-active-inference.html'>Active Inference Domain Hub</a> on this site, indexing over 45 peer-reviewed publications and formal preprints.</li>
+</ol>
+
+        <section class="faq-block">
+            <h2 style="font-size:1.6rem;margin-top:0;border-bottom:none;">Frequently Asked Questions</h2>
+            <div class="faq-item"><h3>What is Active Inference in simple terms?</h3><p>Active Inference is a theory of mind and intelligent action stating that brains and adaptive agents maintain internal models of their environment and continuously take actions to minimize surprise, confirm predictions, and resolve uncertainty.</p></div>
+            <div class="faq-item"><h3>What is the mathematical equation for Variational Free Energy?</h3><p>Variational Free Energy represents Complexity minus Accuracy. Minimizing it makes internal beliefs match the true Bayesian posterior given incoming sensory observations.</p></div>
+            <div class="faq-item"><h3>How does Active Inference relate to AI agents?</h3><p>Active Inference provides AI agents with intrinsic motivation for exploration, robust decision-making under uncertainty, sample-efficient planning via generative models, and transparent belief-updating dynamics without massive trial-and-error reward hacking.</p></div>
+            <div class="faq-item"><h3>Where can I find open-source software for Active Inference?</h3><p>Check out fep_lean on GitHub for formal mathematical proofs, RxInfer.jl for reactive probabilistic programming, PyMDP for discrete agents, and COGANT for graph-based inference compilation.</p></div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-rule" aria-hidden="true"></div>
+        <p>Daniel Ari Friedman, PhD · <a href="https://activeinference.institute/">Active Inference Institute</a> · <a href="index.html">danielarifriedman.com</a></p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications</a>
+            <a href="domains.html">Domains</a>
+            <a href="software.html">Software</a>
+            <a href="discovery.html">Discovery</a>
+            <a href="cite-verify.html">Cite &amp; Verify</a>
+        </div>
+    </footer>
+    <script src="/js/tts-controls.js?v=20260712" defer></script>
+    <script src="/js/interactive.js?v=20260712" defer></script>
+    <script src="/js/menu-esc.js?v=20260712" defer></script>
+</body>
+</html>

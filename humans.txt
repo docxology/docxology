@@ -13,4 +13,4 @@ Active Inference Institute, COGSEC.org, research collaborators, open-source cont
 /* SITE */
 Standards: HTML, CSS, JSON-LD, OpenSearch, RSS, CodeMeta, Citation File Format, Schema.org DataCatalog, RFC 9116 security.txt
 Language: English
-Last updated: 2026-07-01
+Last updated: 2026-08-14

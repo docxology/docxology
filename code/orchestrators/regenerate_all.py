@@ -60,6 +60,7 @@ CHAIN: list[tuple[str, list[str]]] = [
     ("export_agent_data.py", []),                # claims/people/orgs        <- counts
     ("build_resume.py", ["--all"]),              # resume.{json,txt,pdf}     <- claims + counts
     ("build_domain_pages.py", []),
+    ("generate_pillar_pages.py", []),
     ("build_work_pages.py", []),
     ("build_video_pages.py", []),
     ("sync_site_facts.py", []),                  # finalize volatile facts after video/art data generation

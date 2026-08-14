@@ -81,8 +81,8 @@ def check_paper_pages(repo_root: Path) -> list[str]:
             continue
         html = _read(path)
         robots = _meta_robots(html)
-        if robots != "noindex, follow":
-            errors.append(f"{rel}: expected robots noindex, follow; got {robots!r}")
+        if robots and "noindex" in robots:
+            errors.append(f"{rel}: paper pages must not carry noindex; canonical alone achieves consolidation")
         expected = f"{SITE_ORIGIN}works/{work['citation_key']}.html"
         canonical = _canonical(html)
         if canonical != expected:

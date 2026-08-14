@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import html
 import re
 import sys
 from pathlib import Path
@@ -151,6 +152,13 @@ def main_entity_object(row: BiblioRow, same_as: str, work: dict | None = None) -
             }
     if same_as:
         obj["sameAs"] = same_as
+    if work:
+        from build_work_pages import citation_text
+        cite = citation_text(work)
+        if cite:
+            obj["citation"] = cite
+        if work.get("license"):
+            obj["license"] = work["license"]
     return obj
 
 
@@ -310,6 +318,89 @@ def validate_rows(rows: list[BiblioRow]) -> None:
         prev = r.num
 
 
+
+DOMAIN_LABELS = {
+    "🐜": "Entomology",
+    "🧠": "Active Inference",
+    "🛡": "Cognitive Security",
+    "🛡️": "Cognitive Security",
+    "🎨": "Art & Synergetics",
+    "💻": "Computational",
+    "🧬": "Genetics",
+    "🌍": "AII Ecosystem",
+    "🎥": "Media",
+}
+
+
+def type_badge_class(t: str) -> str:
+    t_clean = re.sub(r"[^a-zA-Z0-9]+", "-", (t or "").strip().lower()).strip("-")
+    return f"type-{t_clean}" if t_clean else "type-other"
+
+
+def render_static_tbody(works: list[dict]) -> str:
+    rows_html = []
+    for p in works:
+        title = html.escape(p.get("title", ""))
+        citation_key = p.get("citation_key", "")
+        work_page = f"works/{citation_key}.html" if citation_key else ""
+        url = p.get("url", "")
+        doi_url = f"https://doi.org/{p['doi']}" if p.get("doi") else url
+
+        if work_page:
+            title_cell = f'<a href="{html.escape(work_page)}">{title}</a>'
+        elif doi_url:
+            title_cell = f'<a href="{html.escape(doi_url)}" target="_blank" rel="noopener">{title}</a>'
+        else:
+            title_cell = title
+
+        if p.get("doi") or (url and url.startswith("https://doi.org/")):
+            primary = f'<a href="{html.escape(doi_url)}" target="_blank" rel="noopener">→ Link</a>'
+        else:
+            primary = '<span aria-label="No primary link">—</span>'
+
+        docs_path = p.get("docs_path", "")
+        if docs_path and p.get("has_paper_folder"):
+            docs = f' <a href="https://github.com/docxology/docxology/tree/main/{html.escape(docs_path.rstrip("/" ))}" target="_blank" rel="noopener">Docs</a>'
+        else:
+            docs = ""
+
+        if docs_path and p.get("has_full_text"):
+            ft = f' <a href="{html.escape(docs_path.rstrip("/" ))}/full_text.md" title="Full text extraction">FT</a>'
+        else:
+            ft = ""
+
+        if p.get("has_images"):
+            img = ' <span class="badge-img" title="Has extracted images">🖼</span>'
+        else:
+            img = ""
+
+        domain = p.get("domain", "")
+        domain_label = DOMAIN_LABELS.get(domain, domain)
+
+        row_str = (
+            "<tr>"
+            f'<td class="td-num">{p.get("num", "")}</td>'
+            f'<td class="td-year">{p.get("year", "")}</td>'
+            f'<td class="td-domain">{html.escape(domain_label)}</td>'
+            f'<td class="td-type"><span class="type-badge {type_badge_class(p.get("type", ""))}">{html.escape(p.get("type", ""))}</span></td>'
+            f'<td class="td-title">{title_cell}</td>'
+            f'<td class="td-venue">{html.escape(p.get("venue", ""))}</td>'
+            f'<td class="td-doi">{primary}{docs}{ft}{img}</td>'
+            "</tr>"
+        )
+        rows_html.append(row_str)
+    return chr(10).join(rows_html)
+
+
+def replace_tbody(html_content: str, works: list[dict]) -> str:
+    tbody_inner = chr(10) + render_static_tbody(works) + chr(10) + "                "
+    return re.sub(
+        r'<tbody id="pub-tbody">[\s\S]*?</tbody>',
+        f'<tbody id="pub-tbody">{tbody_inner}</tbody>',
+        html_content,
+        count=1,
+    )
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--apply", action="store_true", help="Write publications.html and publications-ld.json")
@@ -325,6 +416,8 @@ def main() -> None:
     html = PUBLICATIONS_HTML.read_text(encoding="utf-8")
     html_out = replace_inline_collection_ld(html, collection)
     html_out = replace_head_meta(html_out, len(rows))
+    works_list = list(load_works_by_num().values())
+    html_out = replace_tbody(html_out, works_list)
 
     if len(collection["mainEntity"]) != len(rows):
         raise SystemExit("mainEntity length mismatch after build")

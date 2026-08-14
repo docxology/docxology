@@ -51,6 +51,11 @@ def _assets() -> list[tuple[str, str, str]]:
         ("og-art.jpg", "Art Gallery", "Pen-and-ink drawings, Curio Cards, and visual research"),
         ("og-media.jpg", "Media & Talks", "Talks, podcasts, livestreams, courses, and interviews"),
         ("og-cite-verify.jpg", "Cite & Verify", "Citation exports, source-of-truth rules, and evidence ledger"),
+        ("og-cognitive-security-pillar.jpg", "Cognitive Security", "Theory, threat models, and multi-agent defense"),
+        ("og-computational-entomology.jpg", "Computational Entomology", "Algorithms, collective behavior, and digital ant colonies"),
+        ("og-insect-cognition.jpg", "Insect Cognition", "Distributed cognition, stigmergy, and social insect minds"),
+        ("og-active-inference-tutorial.jpg", "Active Inference Guide", "Free energy principle, generative models, and action selection"),
+        ("og-neurosymbolic-ai.jpg", "Neurosymbolic AI", "Active inference, knowledge graphs, and hybrid agent architectures"),
     ]
 
 

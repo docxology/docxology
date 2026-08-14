@@ -139,6 +139,18 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/generate_og_images.py",
     },
     {
+        "name": "Pillar research explainers",
+        "outputs": [
+            "cognitive-security.html",
+            "computational-entomology.html",
+            "insect-cognition.html",
+            "active-inference.html",
+            "neurosymbolic-ai.html",
+        ],
+        "sources": ["data/works.json", "code/orchestrators/generate_pillar_pages.py"],
+        "command": "python3 code/orchestrators/generate_pillar_pages.py",
+    },
+    {
         "name": "Agent data exports",
         "outputs": ["data/software.json", "data/people.json", "data/organizations.json", "data/claims.json"],
         "sources": ["pages/SOFTWARE.md", "code/src/software_table.py", "data/scholar-snapshot.json", "code/orchestrators/export_agent_data.py"],
@@ -438,7 +450,7 @@ UTILITIES = [
     ("extract_paper_texts.py", "Extracts full text and images from paper PDFs into the papers/ tree", "maintenance"),
     ("fetch_youtube_data.py", "Fetches YouTube channel metadata for both channels into code/data/youtube_*.json (network)", "fetch"),
     ("generate_citation_cff.py", "Generates per-paper CITATION.cff files from papers/*/metadata.json", "maintenance"),
-    ("deploy_seo_security.py", "Deploys/refreshes the CSP, rel=\"me\", and hreflang head tags across indexable pages; idempotent and re-run on every rebuild (not a one-shot)", "maintenance"),
+    ("deploy_seo_security.py", "Deploys/refreshes the CSP and rel=\"me\" head tags across indexable pages; idempotent and re-run on every rebuild (not a one-shot)", "maintenance"),
     ("migrate_inline_handlers.py", "One-shot migration: inline event handlers to data-* + addEventListener for CSP (completed; kept for provenance)", "one-shot"),
     ("optimize_font_loading.py", "One-shot migration: legacy Google Fonts links to self-hosted loading (completed; kept for provenance)", "one-shot"),
 ]

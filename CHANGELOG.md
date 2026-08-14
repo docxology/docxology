@@ -2,6 +2,28 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-08-14
+
+- **SEO/GEO Optimization Pass & Technical Defects Resolved:**
+  - **Hreflang elimination**: Removed non-self-referential alternate links pointing 1,563 pages at the homepage from  () and .
+  - **noindex + cross-canonical consolidation**: Removed conflicting  directives from paper pages and , keeping clean  consolidation to  landing pages.
+  - **Video title disambiguation**: Implemented series/lecture token preservation in , eliminating all 30 duplicate  collision groups across 1,127 video pages.
+  - **Work page title bounding**: Bounded all work landing page  lengths to $\le 70$ characters on clean word boundaries.
+  - **Schema & Entity hygiene**: Fixed  to point to , enriched  with LinkedIn/YouTube/Bluesky, and deduplicated the  Organization node in .
+  - **Service Worker optimization**: Removed the 1.7MB  from  pre-caching in  to protect offline installation while keeping lazy network-first search indexing.
+  - **Static SSR for publications table**: Enhanced  to statically emit all 206 publication  elements into  at build time for AI crawler indexing (GPTBot, ClaudeBot, PerplexityBot).
+  - **Video index equity**: Consolidated search equity by pointing  canonical to .
+  - **Scholarly citation graph**: Enriched  structured data across all work pages with  and  metadata.
+- **Pillar Content & Generative Engine Optimization (GEO):**
+  - **5 Hand-crafted pillar research explainers authored**:
+    - : "What Is Cognitive Security? Theory, Threat Models, and Multi-Agent Defense" (~2,200 words,  +  JSON-LD).
+    - : "Computational Entomology: Algorithms, Models, and Digital Insect Colonies" (~2,100 words,  +  JSON-LD).
+    - : "Insect Cognition & Collective Intelligence: How Ant Colonies Think Without a Brain" (~2,100 words,  +  JSON-LD).
+    - : "Active Inference & The Free Energy Principle: A Practical Tutorial" (~2,500 words,  +  JSON-LD).
+    - : "Neurosymbolic AI & Active Inference: Bridging Symbolic Reasoning and Generative Agents" (~2,200 words,  +  JSON-LD).
+  - **GEO & AI Agent Provenance Layer**: Thickened  with verifiable agent provenance principles and a GEO architecture case study.
+  - **Site-wide editorial wiring**: Added dedicated Research Guides section to , wired learning pathways in , registered routes in , , , and , and generated dedicated Open Graph cards in .
+
 ## 2026-08-13
 
 - **DOC-005:** promoted three paper-paired Active Inference Institute repositories into `pages/SOFTWARE.md` after they gained descriptions: `Active_Fedference` (paper `2026_RobustBeliefSharing`), `Active_Skillference` (paper `2026_ActiveSkillference`), and `active_inference_power` (paper `2026_ActiveInferencePower`). AII catalogued 38→**41**; curated software total 143→**146**. Left as explicit deferrals (description-less or not auto-promoted): `Active_Inference_Un0`, `docxology/GrowthModel`, `docxology/multi-time`, and `docxology/math4wisdom-superhuman-docs-archive`. Forks were not auto-promoted.
@@ -17,6 +39,7 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   - **#211** Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract (🧠, concept DOI `zenodo.21865643`; source repository [`ActiveInferenceInstitute/active_skillference`](https://github.com/ActiveInferenceInstitute/active_skillference)).
 - **45 paired-publication `update_existing` refreshes applied**: version/PDF/metadata + software-link updates across already-catalogued works (template exemplars, DigiPPPiP, PROJECT BOND, Codomyrmex v1.3.0-paper, AlphaCOGANT, Active Inference Power Suite, prior_cognitive_art, BeeStack, COGANT, and more).
 - **Fix: string-form paired-publication decisions are now honored** (`code/orchestrators/sync_paired_publications.py`). Decisions R25-R27 stored `raw_candidates` as bare release-URL strings, which `reviewed_pair_decisions()` silently dropped — re-surfacing a `create_new` duplicate for an already-decided pair. The parser now accepts both dict and URL-string candidates, the three decisions were normalized to dict form, and a regression test was added. The CogSecSkills v1.0.0/`zenodo.20804585` false positive is again correctly reported `already_reviewed` instead of `create_new` (report: **0 new**, 28 already reviewed).
+
 
 ## 2026-08-07
 

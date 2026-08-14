@@ -1,12 +1,11 @@
 # Daniel Ari Friedman / docxology
 
-Canonical site: https://danielarifriedman.com/
-Source repository: https://github.com/docxology/docxology
-Primary public identity: Daniel Ari Friedman, PhD
-ORCID: https://orcid.org/0000-0001-6232-9096
-Wikidata: https://www.wikidata.org/wiki/Q138781444
-
-This repository is the public research and software index for Daniel Ari Friedman. It collects a curated bibliography, paper folders with README/AGENTS/SKILL documentation, software catalogs, collaborator maps, media references, public identifiers, and website metadata.
+> Canonical site: https://danielarifriedman.com/
+> Source repository: https://github.com/docxology/docxology
+> Primary public identity: Daniel Ari Friedman, PhD
+> ORCID: https://orcid.org/0000-0001-6232-9096
+> Wikidata: https://www.wikidata.org/wiki/Q138781444
+> This repository is the public research and software index for Daniel Ari Friedman. It collects a curated bibliography, paper folders with README/AGENTS/SKILL documentation, software catalogs, collaborator maps, media references, public identifiers, and website metadata.
 
 Each paper folder under `papers/` may contain `full_text.md` (full page-level text extraction from the PDF or ODT/DOCX/PPTX source) and an `images/` subdirectory (extracted figures and images). Current totals are generated in `data/current-counts.json`; the latest snapshot records 191 paper folders, 171 full-text extractions, 139 image galleries, and 8,886 extracted images. Use `full_text.md` for full-text search, reading, and citation within agent workflows.
 
@@ -28,6 +27,11 @@ Each paper folder under `papers/` may contain `full_text.md` (full page-level te
 - Research domains: https://danielarifriedman.com/domains.html
 - Domain source map: https://github.com/docxology/docxology/blob/main/pages/DOMAINS.md
 - Curated bibliography: https://danielarifriedman.com/publications.html
+- Pillar Explainer — Cognitive Security: https://danielarifriedman.com/cognitive-security.html
+- Pillar Explainer — Computational Entomology: https://danielarifriedman.com/computational-entomology.html
+- Pillar Explainer — Insect Cognition & Collective Intelligence: https://danielarifriedman.com/insect-cognition.html
+- Pillar Tutorial — Active Inference & Free Energy Principle: https://danielarifriedman.com/active-inference.html
+- Pillar Explainer — Neurosymbolic AI & Active Inference: https://danielarifriedman.com/neurosymbolic-ai.html
 - Per-work pages index: https://danielarifriedman.com/works/
 - Bibliography source table: https://github.com/docxology/docxology/blob/main/pages/BIBLIOGRAPHY.md
 - Software catalog: https://danielarifriedman.com/software.html
@@ -82,10 +86,8 @@ Each paper folder under `papers/` may contain `full_text.md` (full page-level te
 - Reconciliation report: https://github.com/docxology/docxology/blob/main/reports/reconciliation_2026-07-21.md
 - External-link report: https://github.com/docxology/docxology/blob/main/reports/external_links_2026-05-15.json
 - External-link triage: https://github.com/docxology/docxology/blob/main/reports/external_links_triage_2026-05-15.md
-- Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-08-13.json
-- Browser-smoke manifest: https://github.com/docxology/docxology/blob/main/reports/browser-smoke/2026-07-29/manifest.json
-- Live-site verification: https://github.com/docxology/docxology/blob/main/reports/live_site_verification_2026-07-24.json
-- Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-08-13.json
+- Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-08-14.json
+- Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-08-14.json
 - Visual QA manifest: https://github.com/docxology/docxology/blob/main/reports/visual-qa/2026-07-18/manifest.json
 
 ## Public Crawl Policy
@@ -112,6 +114,6 @@ Each paper folder under `papers/` may contain `full_text.md` (full page-level te
 
 Current volatile totals are generated in reports/current_counts.md and data/current-counts.json, with source paths, generation metadata, and rebuild commands. Scholar metrics are sourced from data/scholar-snapshot.json and should not be copied into this file as current prose.
 
-## Citation
+## Optional
 
 Use CITATION.cff for machine-readable citation metadata. Preferred title: "docxology: Daniel Ari Friedman public research and software index".

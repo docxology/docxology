@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T17:55:40Z",
+  "generated_at": "2026-08-14T19:20:09Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1699,
+  "count": 1704,
   "items": [
     {
       "id": "page:home",
@@ -175,6 +175,76 @@
       "content": "Discovery Map Canonical identifiers and public source queries. agents"
     },
     {
+      "id": "page:cognitive-security-pillar",
+      "type": "page",
+      "title": "What Is Cognitive Security?",
+      "url": "/cognitive-security.html",
+      "summary": "Foundational guide to cognitive security, threat modeling, narrative ecosystems, and multi-agent defense.",
+      "tags": [
+        "cognitive security",
+        "epistemic security",
+        "misinformation",
+        "active inference"
+      ],
+      "content": "What Is Cognitive Security? Foundational guide to cognitive security, threat modeling, narrative ecosystems, and multi-agent defense. cognitive security epistemic security misinformation active inference"
+    },
+    {
+      "id": "page:computational-entomology-pillar",
+      "type": "page",
+      "title": "Computational Entomology",
+      "url": "/computational-entomology.html",
+      "summary": "Computational models of social insects, algorithmic entomology, ant colony simulation, and transcriptomics.",
+      "tags": [
+        "computational entomology",
+        "ants",
+        "collective behavior",
+        "simulation"
+      ],
+      "content": "Computational Entomology Computational models of social insects, algorithmic entomology, ant colony simulation, and transcriptomics. computational entomology ants collective behavior simulation"
+    },
+    {
+      "id": "page:insect-cognition-pillar",
+      "type": "page",
+      "title": "Insect Cognition & Collective Intelligence",
+      "url": "/insect-cognition.html",
+      "summary": "Explainer on insect cognition, ant colony intelligence without a central brain, stigmergy, and active inference.",
+      "tags": [
+        "insect cognition",
+        "ant intelligence",
+        "stigmergy",
+        "superorganism"
+      ],
+      "content": "Insect Cognition & Collective Intelligence Explainer on insect cognition, ant colony intelligence without a central brain, stigmergy, and active inference. insect cognition ant intelligence stigmergy superorganism"
+    },
+    {
+      "id": "page:active-inference-pillar",
+      "type": "page",
+      "title": "Active Inference & Free Energy Principle Guide",
+      "url": "/active-inference.html",
+      "summary": "Comprehensive tutorial and guide to Active Inference, generative models, expected free energy, and belief updating.",
+      "tags": [
+        "active inference",
+        "free energy principle",
+        "bayesian mechanics",
+        "generative models"
+      ],
+      "content": "Active Inference & Free Energy Principle Guide Comprehensive tutorial and guide to Active Inference, generative models, expected free energy, and belief updating. active inference free energy principle bayesian mechanics generative models"
+    },
+    {
+      "id": "page:neurosymbolic-ai-pillar",
+      "type": "page",
+      "title": "Neurosymbolic AI & Active Inference",
+      "url": "/neurosymbolic-ai.html",
+      "summary": "Guide to neurosymbolic artificial intelligence, formal knowledge representations, and discrete active inference agents.",
+      "tags": [
+        "neurosymbolic ai",
+        "symbolic reasoning",
+        "generative ai",
+        "knowledge graphs"
+      ],
+      "content": "Neurosymbolic AI & Active Inference Guide to neurosymbolic artificial intelligence, formal knowledge representations, and discrete active inference agents. neurosymbolic ai symbolic reasoning generative ai knowledge graphs"
+    },
+    {
       "id": "page:cite-verify",
       "type": "page",
       "title": "Cite & Verify",
@@ -321,7 +391,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-08-13.json",
+      "url": "/reports/accessibility_static_2026-08-14.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -370,7 +440,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-08-13.json",
+      "url": "/reports/asset_size_2026-08-14.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
