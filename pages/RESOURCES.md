@@ -12,10 +12,6 @@ This section indexes auxiliary pathways, software guides, and public tooling bui
 
 ## Course Material & Syllabi
 
-### College of the Redwoods (cr-bio)
-- Ecosystem of automated multi-format modules for College-level Biology instruction.
-- **Reference**: Access the `cr-bio` architecture for [implementation details](SOFTWARE.md).
-
 ### Complexity Weekend
 - Tooling, guidelines, and archives related to the applied complexity science workshops and incubators co-organized since 2019.
 
