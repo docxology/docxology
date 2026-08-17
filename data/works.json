@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-14T19:19:57Z",
+  "generated_at": "2026-08-17T21:30:33Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
-  "count": 208,
+  "count": 209,
   "works": [
     {
       "num": 1,
@@ -5166,6 +5166,29 @@
       "has_readme": true,
       "full_text_url": "",
       "authors": []
+    },
+    {
+      "num": 212,
+      "citation_key": "Friedman2026DocxplusIntelligentDocumentContainer212",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "docxplus — the Intelligent Document Container",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21983948",
+      "doi": "10.5281/zenodo.21983948",
+      "docs_path": "papers/2026_DocxplusIntelligentDocument/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     }
   ]
 }

@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 208 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 209 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -8226,6 +8226,39 @@
             },
             "sameAs": "https://doi.org/10.5281/zenodo.21865643",
             "citation": "Friedman, Daniel Ari. 2026. Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract. Zenodo. DOI: 10.5281/zenodo.21865643. URL: https://doi.org/10.5281/zenodo.21865643."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "docxplus — the Intelligent Document Container",
+            "headline": "docxplus — the Intelligent Document Container",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026DocxplusIntelligentDocumentContainer212.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026DocxplusIntelligentDocumentContainer212.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026DocxplusIntelligentDocumentContainer212.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.21983948",
+                "url": "https://doi.org/10.5281/zenodo.21983948"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.21983948",
+            "citation": "Friedman, Daniel Ari. 2026. docxplus — the Intelligent Document Container. Zenodo. DOI: 10.5281/zenodo.21983948. URL: https://doi.org/10.5281/zenodo.21983948."
         }
     ]
 }

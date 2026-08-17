@@ -2895,3 +2895,15 @@ KW  - Active Inference
 KW  - Paper
 N1  - Catalog row 211; docs: papers/2026_ActiveSkillference/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - docxplus — the Intelligent Document Container
+T2  - Zenodo
+DO  - 10.5281/zenodo.21983948
+UR  - https://doi.org/10.5281/zenodo.21983948
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 212; docs: papers/2026_DocxplusIntelligentDocument/
+ER  -

@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-08-14T19:19:58Z
+Generated: 2026-08-17T21:30:34Z
 
-Current public metrics: 208 curated works; 146 catalogued software repositories (105 owned + 41 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 201 docxology + 43 AII public repositories (157 primary, 87 forks).
+Current public metrics: 209 curated works; 146 catalogued software repositories (105 owned + 41 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 201 docxology + 43 AII public repositories (157 primary, 87 forks).
 
 SUMMARY
 -------
@@ -134,7 +134,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (208)
+WORKS AND PUBLICATIONS (209)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -344,6 +344,7 @@ WORKS AND PUBLICATIONS (208)
 [209] 2026 | Paper | DigiPPPiP: Digital Partner Pen Play in Parallel | Zenodo | 10.5281/zenodo.21815704
 [210] 2026 | Paper | Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus | Zenodo | 10.5281/zenodo.21864003
 [211] 2026 | Paper | Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract | Zenodo | 10.5281/zenodo.21865643
+[212] 2026 | Paper | docxplus — the Intelligent Document Container | Zenodo | 10.5281/zenodo.21983948
 
 SOFTWARE (66)
 -------------

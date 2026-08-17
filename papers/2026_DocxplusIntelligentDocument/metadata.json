@@ -1,0 +1,53 @@
+{
+  "title": "docxplus — the Intelligent Document Container",
+  "version": "1.0.1",
+  "doi": "10.5281/zenodo.21983948",
+  "doi_url": "https://doi.org/10.5281/zenodo.21983948",
+  "zenodo_record": "https://zenodo.org/records/21983948",
+  "record_id": "21985580",
+  "publication_date": "2026-08-17",
+  "resource_type": {
+    "title": "Software",
+    "type": "software"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A standards-first reference implementation of a byte-valid OOXML .docx that also carries a modular, Ed25519-signed, AES-256-GCM-encrypted intelligence layer through spec-sanctioned side-channels, with an optional bridge to the docxology/steganographer signed-packet backend.",
+  "keywords": [
+    "OOXML",
+    "DOCX",
+    "Open Packaging Conventions",
+    "steganography",
+    "document security",
+    "reproducible research"
+  ],
+  "files": [
+    {
+      "name": "docxplus-1.0.1.tar.gz",
+      "size_bytes": 7731552,
+      "checksum": "md5:d4b86e249abcfb4afae9fffe9ab68b41",
+      "download_url": "https://zenodo.org/api/records/21985580/files/docxplus-1.0.1.tar.gz/content"
+    },
+    {
+      "name": "docxplus-1.0.0.tar.gz",
+      "size_bytes": 7711694,
+      "checksum": "md5:c1f9b372e1611697fa64be068d5da45c",
+      "download_url": "https://zenodo.org/api/records/21985580/files/docxplus-1.0.0.tar.gz/content"
+    },
+    {
+      "name": "manuscript.pdf",
+      "size_bytes": 3024717,
+      "checksum": "md5:fbf21388af381ca737031f2750d9ed83",
+      "download_url": "https://zenodo.org/api/records/21985580/files/manuscript.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-08-17T21:29:17Z"
+}

@@ -6804,5 +6804,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21865643",
     "URL": "https://doi.org/10.5281/zenodo.21865643"
+  },
+  {
+    "id": "Friedman2026DocxplusIntelligentDocumentContainer212",
+    "type": "article-journal",
+    "title": "docxplus — the Intelligent Document Container",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 212; docs: papers/2026_DocxplusIntelligentDocument/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.21983948",
+    "URL": "https://doi.org/10.5281/zenodo.21983948"
   }
 ]

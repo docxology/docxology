@@ -2,6 +2,14 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-08-17
+
+- **Publication Intake — docxplus (#212):**
+  - Cataloged new Zenodo publication record `21985580` (concept DOI `10.5281/zenodo.21983948`, version DOI `10.5281/zenodo.21985580`): *docxplus — the Intelligent Document Container*.
+  - Added paper documentation folder `papers/2026_DocxplusIntelligentDocument/` with full metadata, skill, and extracted text representations.
+  - Updated active cataloged bibliography works count to **209** (212 work rows across 192 indexed paper folders).
+  - Regenerated all 40 local surfaces, search indices, sitemaps, JSON-LD structured data, and release integrity manifests.
+
 ## 2026-08-14
 
 - **SEO/GEO Optimization Pass & Technical Defects Resolved:**

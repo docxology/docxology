@@ -3359,5 +3359,22 @@
       "reproducible research"
     ],
     "doi": "10.5281/zenodo.21865643"
+  },
+  "2026_DocxplusIntelligentDocument": {
+    "year": "2026",
+    "topic": "DocxplusIntelligentDocument",
+    "name": "docxplus — the Intelligent Document Container",
+    "description": "A standards-first reference implementation of a byte-valid OOXML .docx that also carries a modular, Ed25519-signed, AES-256-GCM-encrypted intelligence layer through spec-sanctioned side-channels, with an optional bridge to the docxology/steganographer signed-packet backend.",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "A standards-first reference implementation of a byte-valid OOXML .docx that also carries a modular, Ed25519-signed, AES-256-GCM-encrypted intelligence layer through spec-sanctioned side-channels, with an optional bridge to the docxology/steganographer signed-packet backend.",
+    "keywords": [
+      "OOXML",
+      "DOCX",
+      "Open Packaging Conventions",
+      "steganography",
+      "document security",
+      "reproducible research"
+    ],
+    "doi": "10.5281/zenodo.21983948"
   }
 }

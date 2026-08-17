@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-10T17:11:53Z",
+  "generated_at": "2026-08-17T21:29:22Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 208,
+  "count": 209,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -4244,6 +4244,27 @@
       ],
       "methods": [],
       "source": "papers/2026_ActiveSkillference/README.md"
+    },
+    "Friedman2026DocxplusIntelligentDocumentContainer212": {
+      "citation_key": "Friedman2026DocxplusIntelligentDocumentContainer212",
+      "abstract": "A standards-first reference implementation of a byte-valid OOXML .docx that also carries a modular, Ed25519-signed, AES-256-GCM-encrypted intelligence layer through spec-sanctioned side-channels, with an optional bridge to the docxology/steganographer signed-packet backend.",
+      "keywords": [
+        "OOXML",
+        "DOCX",
+        "Open Packaging Conventions",
+        "steganography",
+        "document security",
+        "reproducible research"
+      ],
+      "findings": [
+        "OOXML",
+        "DOCX",
+        "Open Packaging Conventions",
+        "steganography",
+        "document security"
+      ],
+      "methods": [],
+      "source": "papers/2026_DocxplusIntelligentDocument/README.md"
     }
   }
 }

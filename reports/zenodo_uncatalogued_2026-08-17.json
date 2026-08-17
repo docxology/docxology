@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-08-17T21:27:36Z",
+  "zenodo_records_fetched": 148,
+  "bibliography_dois": 194,
+  "uncatalogued_count": 1,
+  "non_canonical_doi_count": 1,
+  "warnings": [],
+  "uncatalogued": [
+    {
+      "record_id": "21985580",
+      "doi": "10.5281/zenodo.21983948",
+      "title": "docxplus \u2014 the Intelligent Document Container",
+      "publication_date": "2026-08-17",
+      "html_url": "https://zenodo.org/records/21985580"
+    }
+  ],
+  "non_canonical_doi": [
+    {
+      "record_id": "17982447",
+      "concept_doi": "10.5281/zenodo.14108991",
+      "version_doi_in_bibliography": "10.5281/zenodo.17982447",
+      "title": "The Active Inference Institute & Active Inference Ecosystem"
+    }
+  ]
+}

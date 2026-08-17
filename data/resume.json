@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T19:19:58Z",
+  "generated_at": "2026-08-17T21:30:34Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 208,
+    "works": 209,
     "software_catalogued": 146,
     "owned_software_catalogued": 105,
     "aii_software_catalogued": 41,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "0b3abb885fc0e9a78972eaa5e806d6de8e74d84d5a8ce1996671d4d1a391d8f3",
+      "sha256": "0c58c08a6b846e4da361522b3aa8cfe26ad8f1d92e22bd66e1ed3aa2c3aa2e28",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 167222,
-          "sha256": "ad766faac7c459c6cde07ef486155025cd1e62bd04b6c2d6733ae1f98369fb59"
+          "bytes": 167942,
+          "sha256": "ce879ab60c5ae795f9287bc998db1404368794ca00b50988c2a62dfd988a9f9d"
         },
         {
           "path": "data/software.json",
           "bytes": 72155,
-          "sha256": "d7b1736cd1265f58603a6801452fce0a1b6101c36abc152034b000eca97da787"
+          "sha256": "54336915990ed58f8f4a586e63f4ca445f1479755ebafe5f3c26afc0e8e7f83c"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 11914,
-          "sha256": "3cfc0ddf3cd4b8baa0754328ed1564c59c8fd3f2af79b9909f37df3e4634b926"
+          "sha256": "7462c8bf9e43d85136cc194908a265776e9a032e1cb998fe32e77fb10015093a"
         },
         {
           "path": "data/github-repositories.json",
@@ -7472,6 +7472,29 @@
       "has_readme": true,
       "full_text_url": "",
       "authors": []
+    },
+    {
+      "num": 212,
+      "citation_key": "Friedman2026DocxplusIntelligentDocumentContainer212",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "docxplus — the Intelligent Document Container",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.21983948",
+      "doi": "10.5281/zenodo.21983948",
+      "docs_path": "papers/2026_DocxplusIntelligentDocument/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     }
   ],
   "software": [
@@ -9231,14 +9254,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 208 works.",
+      "claim": "The curated bibliography contains 209 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-13T17:52:47+00:00",
+      "checked_at": "2026-08-17T21:29:19+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9246,14 +9269,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 191 per-paper documentation folders.",
+      "claim": "The repository contains 192 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-13T17:52:47+00:00",
+      "checked_at": "2026-08-17T21:29:19+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

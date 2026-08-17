@@ -6,7 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2026 17:12:08 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 21:29:42 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
@@ -27,6 +27,13 @@
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
       <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>docxplus — the Intelligent Document Container</title>
+      <link>https://danielarifriedman.com/works/Friedman2026DocxplusIntelligentDocumentContainer212.html</link>
+      <guid isPermaLink="false">work-Friedman2026DocxplusIntelligentDocumentContainer212</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract</title>
@@ -193,13 +200,6 @@
       <title>Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference</title>
       <link>https://danielarifriedman.com/works/Friedman2026ReproducibleLiteratureSynthesisInfrastructure187.html</link>
       <guid isPermaLink="false">work-Friedman2026ReproducibleLiteratureSynthesisInfrastructure187</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>template_pitch_deck: Reproducible, Validated Pitch-Deck Generation</title>
-      <link>https://danielarifriedman.com/works/Friedman2026TemplatePitchDeckReproducible186.html</link>
-      <guid isPermaLink="false">work-Friedman2026TemplatePitchDeckReproducible186</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>
