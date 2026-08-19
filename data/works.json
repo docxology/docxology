@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T21:30:33Z",
+  "generated_at": "2026-08-19T22:15:30Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
   "count": 209,
@@ -4792,12 +4792,12 @@
       "doi": "10.5281/zenodo.21330636",
       "docs_path": "papers/2026_ActiveFractalRabbit/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_ActiveFractalRabbit/full_text.md",
       "authors": [
         "Daniel Ari Friedman"
       ]
@@ -4815,12 +4815,12 @@
       "doi": "10.5281/zenodo.21388456",
       "docs_path": "papers/2026_FourfoldVision/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_FourfoldVision/full_text.md",
       "authors": [
         "Daniel Ari Friedman"
       ]
@@ -4838,12 +4838,12 @@
       "doi": "10.5281/zenodo.21419693",
       "docs_path": "papers/2026_DuckRabbit/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_DuckRabbit/full_text.md",
       "authors": [
         "Daniel Ari Friedman"
       ]
@@ -4861,12 +4861,12 @@
       "doi": "10.5281/zenodo.21418782",
       "docs_path": "papers/2026_SynthOBSFractiSynth/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_SynthOBSFractiSynth/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -4884,12 +4884,12 @@
       "doi": "10.5281/zenodo.21695160",
       "docs_path": "papers/2026_ActiveInferencePower/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_ActiveInferencePower/full_text.md",
       "authors": []
     },
     {
@@ -4905,12 +4905,12 @@
       "doi": "10.5281/zenodo.21754245",
       "docs_path": "papers/2026_WitnessRegister/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_WitnessRegister/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -4928,12 +4928,12 @@
       "doi": "10.5281/zenodo.21754243",
       "docs_path": "papers/2026_LineSet/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_LineSet/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -4951,12 +4951,12 @@
       "doi": "10.5281/zenodo.21754241",
       "docs_path": "papers/2026_WhiteLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_WhiteLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -4974,12 +4974,12 @@
       "doi": "10.5281/zenodo.21754239",
       "docs_path": "papers/2026_PersonalRedLines/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_PersonalRedLines/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -4997,12 +4997,12 @@
       "doi": "10.5281/zenodo.21754237",
       "docs_path": "papers/2026_GoldenLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_GoldenLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5020,12 +5020,12 @@
       "doi": "10.5281/zenodo.21754235",
       "docs_path": "papers/2026_BlackLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_BlackLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5043,12 +5043,12 @@
       "doi": "10.5281/zenodo.21750800",
       "docs_path": "papers/2026_Codomyrmex/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_Codomyrmex/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5066,12 +5066,12 @@
       "doi": "10.5281/zenodo.21763244",
       "docs_path": "papers/2026_THALIA/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_THALIA/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5089,12 +5089,12 @@
       "doi": "10.5281/zenodo.21843592",
       "docs_path": "papers/2026_PROJECTBONDSpecial/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_PROJECTBONDSpecial/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -5112,12 +5112,12 @@
       "doi": "10.5281/zenodo.21815704",
       "docs_path": "papers/2026_DigiPPPiP/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_DigiPPPiP/full_text.md",
       "authors": [
         "Shrivastava, Siddhant",
         "Goh, Evelyn C.",
@@ -5138,12 +5138,12 @@
       "doi": "10.5281/zenodo.21864003",
       "docs_path": "papers/2026_RobustBeliefSharing/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_RobustBeliefSharing/full_text.md",
       "authors": []
     },
     {
@@ -5159,12 +5159,12 @@
       "doi": "10.5281/zenodo.21865643",
       "docs_path": "papers/2026_ActiveSkillference/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_ActiveSkillference/full_text.md",
       "authors": []
     },
     {
@@ -5180,12 +5180,12 @@
       "doi": "10.5281/zenodo.21983948",
       "docs_path": "papers/2026_DocxplusIntelligentDocument/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_DocxplusIntelligentDocument/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]

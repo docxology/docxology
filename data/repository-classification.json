@@ -1,19 +1,19 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-08-13T17:50:58Z",
+  "generated_at": "2026-08-19T23:00:01Z",
   "source": "data/github-repositories.json",
   "acknowledged_exclusions_source": "data/repository-exclusions.json",
   "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate, human-reviewed not-catalog decisions (profile/website/test/mirror/duplicate) and are marked acknowledged rather than requiring review.",
   "summary": {
-    "total_inventory": 244,
-    "uncatalogued": 101,
+    "total_inventory": 245,
+    "uncatalogued": 102,
     "forks": 86,
     "primary_requires_review": 4,
-    "acknowledged_excluded": 11,
+    "acknowledged_excluded": 12,
     "archived": 0,
     "missing_description": 18,
     "short_description": 16,
-    "substantive_description": 67
+    "substantive_description": 68
   },
   "repositories": [
     {
@@ -273,7 +273,7 @@
       "description_quality": "missing",
       "language": "Shell",
       "topics": [],
-      "recently_updated": true,
+      "recently_updated": false,
       "relevance": "unknown",
       "catalog_role": "not_curated",
       "exclusion_reason": "fork_not_curated",
@@ -435,7 +435,7 @@
       "description_quality": "substantive",
       "language": "Python",
       "topics": [],
-      "recently_updated": true,
+      "recently_updated": false,
       "relevance": "unknown",
       "catalog_role": "acknowledged_not_curated",
       "exclusion_reason": "acknowledged_not_catalogued",
@@ -493,6 +493,24 @@
       "exclusion_reason": "acknowledged_not_catalogued",
       "review_status": "acknowledged",
       "acknowledged_reason": "profile_repo"
+    },
+    {
+      "full_name": "docxology/docxplus",
+      "name": "docxplus",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/docxplus",
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "description": "docxplus — a byte-valid OOXML .docx (and ODF .odt) that also carries a signed, modular, selectively sealed intelligence layer through spec-sanctioned side-channels",
+      "description_quality": "substantive",
+      "language": "Python",
+      "topics": [],
+      "recently_updated": true,
+      "relevance": "unknown",
+      "catalog_role": "not_curated",
+      "exclusion_reason": "primary_repo_requires_manual_review",
+      "review_status": "defer"
     },
     {
       "full_name": "docxology/EFEasVFE",
@@ -841,9 +859,10 @@
       "topics": [],
       "recently_updated": false,
       "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
+      "catalog_role": "acknowledged_not_curated",
+      "exclusion_reason": "acknowledged_not_catalogued",
+      "review_status": "acknowledged",
+      "acknowledged_reason": "empty_repo"
     },
     {
       "full_name": "docxology/GuildNet",

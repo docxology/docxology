@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-08-17T21:30:34Z
+Generated: 2026-08-19T23:02:21Z
 
-Current public metrics: 209 curated works; 146 catalogued software repositories (105 owned + 41 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 201 docxology + 43 AII public repositories (157 primary, 87 forks).
+Current public metrics: 209 curated works; 148 catalogued software repositories (107 owned + 41 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 202 docxology + 43 AII public repositories (158 primary, 87 forks).
 
 SUMMARY
 -------
@@ -259,7 +259,7 @@ WORKS AND PUBLICATIONS (202)
 [211] 2026 | Paper | Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract | Zenodo | 10.5281/zenodo.21865643
 [212] 2026 | Paper | docxplus — the Intelligent Document Container | Zenodo | 10.5281/zenodo.21983948
 
-SOFTWARE (146)
+SOFTWARE (148)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -366,6 +366,8 @@ docxology/BeeStack | Python | https://github.com/docxology/BeeStack | Evidence-t
 docxology/template_advanced_literature_review | Python | https://github.com/docxology/template_advanced_literature_review | Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, and deterministic synthesis
 docxology/crescent-city-intel | TypeScript | https://github.com/docxology/crescent-city-intel | Comprehensive local intelligence platform for Crescent City, CA — municipal code, real-time alerts, RAG chat, and analytics
 docxology/thalia | Python | https://github.com/docxology/thalia | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · · Zenodo | paper: papers/2026_THALIA/ | zenodo: https://doi.org/10.5281/zenodo.21763244
+docxology/math4wisdom-superhuman-docs-archive | TypeScript | https://github.com/docxology/math4wisdom-superhuman-docs-archive | Structured, read-only Math4Wisdom Superhuman Docs archive
+docxology/docxplus | Python | https://github.com/docxology/docxplus | docxplus — the Intelligent Document Container: format, tools, and formal specification · · Zenodo | paper: papers/2026_DocxplusIntelligentDocument/ | zenodo: https://doi.org/10.5281/zenodo.21983948
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
 ActiveInferenceInstitute/ActiveBlockference | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveBlockference | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework
 ActiveInferenceInstitute/ActiveInferAnts | Python | https://github.com/ActiveInferenceInstitute/ActiveInferAnts | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference

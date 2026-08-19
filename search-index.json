@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T21:32:21Z",
+  "generated_at": "2026-08-19T23:00:28Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -11,7 +11,7 @@
     "data/claims.json",
     "data/resume.json"
   ],
-  "count": 1705,
+  "count": 1708,
   "items": [
     {
       "id": "page:home",
@@ -366,7 +366,7 @@
       "id": "page:reconciliation",
       "type": "report",
       "title": "Public-Source Reconciliation Report",
-      "url": "/reports/reconciliation_2026-07-21.md",
+      "url": "/reports/reconciliation_2026-08-19.md",
       "summary": "Curated local counts compared with public source indexes.",
       "tags": [
         "evidence",
@@ -378,7 +378,7 @@
       "id": "page:public-source-inventory",
       "type": "report",
       "title": "Public Source Inventory",
-      "url": "/reports/public_source_inventory_2026-08-10.json",
+      "url": "/reports/public_source_inventory_2026-08-19.json",
       "summary": "Paginated public-source inventory for source discovery and claim auditing.",
       "tags": [
         "evidence",
@@ -391,7 +391,7 @@
       "id": "page:accessibility",
       "type": "report",
       "title": "Static Accessibility Report",
-      "url": "/reports/accessibility_static_2026-08-17.json",
+      "url": "/reports/accessibility_static_2026-08-19.json",
       "summary": "Static accessibility and metadata audit output.",
       "tags": [
         "accessibility",
@@ -440,7 +440,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-08-17.json",
+      "url": "/reports/asset_size_2026-08-19.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -466,7 +466,7 @@
       "id": "page:live-site",
       "type": "report",
       "title": "Live Site Verification",
-      "url": "/reports/live_site_verification_2026-08-17.json",
+      "url": "/reports/live_site_verification_2026-08-19.json",
       "summary": "Deployed-site status, expected markers, and GitHub Pages build state.",
       "tags": [
         "deploy",
@@ -4991,7 +4991,7 @@
       "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
       "url": "/works/Friedman2026ActiveFractalRabbitSyntheticBenchmark195.html",
       "external_url": "https://doi.org/10.5281/zenodo.21330636",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_ActiveFractalRabbit/full_text.md",
       "summary": "Sparse waypoint analysis is privacy-sensitive: it must separate movement from irregular reporting, missingness, spatial coarsening, and corruption while preserving uncertainty about hidden location. Active FractalRabbit ",
       "year": 2026,
       "domain": "Cognitive Security",
@@ -5009,7 +5009,7 @@
       "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
       "url": "/works/Friedman2026FourfoldVisionWilliamBlake196.html",
       "external_url": "https://doi.org/10.5281/zenodo.21388456",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_FourfoldVision/full_text.md",
       "summary": "Published by Synergetics University on 14 July 2026, The Fuller Conjecture asks whether \"there exists a line of reasoning that presents Fuller's synergetic vision as a philosophical system.\" This paper tests one qualifie",
       "year": 2026,
       "domain": "Art & Synergetics",
@@ -5027,7 +5027,7 @@
       "title": "DuckRabbit: Typed Multimodal Illusion Generator",
       "url": "/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html",
       "external_url": "https://doi.org/10.5281/zenodo.21419693",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_DuckRabbit/full_text.md",
       "summary": "DuckRabbit is typed, deterministic research software by Daniel Ari Friedman (Active Inference Institute) for constructing reproducible visual, auditory, temporal, and audiovisual stimulus families. The intended public re",
       "year": 2026,
       "domain": "Computational",
@@ -5052,7 +5052,7 @@
       "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
       "url": "/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html",
       "external_url": "https://doi.org/10.5281/zenodo.21418782",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_SynthOBSFractiSynth/full_text.md",
       "summary": "A tested Python reference engine, native libobs plugin, and obspython bridge for a telemetry-driven broadcast console. Includes deterministic figures, a versioned live OBS evidence bundle, fail-closed telemetry contracts",
       "year": 2026,
       "domain": "Computational",
@@ -5076,7 +5076,7 @@
       "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
       "url": "/works/Friedman2026ActiveInferencePowerSuite199.html",
       "external_url": "https://doi.org/10.5281/zenodo.21695160",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_ActiveInferencePower/full_text.md",
       "summary": "Statistical power is an investigator-facing operating characteristic of an adaptive-study design. Before simulation, the investigator fixes an agent-side model, evaluator-side process, testing setting, policy, and replic",
       "year": 2026,
       "domain": "Active Inference",
@@ -5101,7 +5101,7 @@
       "title": "The Witness Register: Co-Registration Without Aggregation",
       "url": "/works/Friedman2026WitnessRegisterCoRegistration200.html",
       "external_url": "https://doi.org/10.5281/zenodo.21754245",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_WitnessRegister/full_text.md",
       "summary": "A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores each report's envelope verbatim, records cross-instrument relations as separate describing records, keeps ",
       "year": 2026,
       "domain": "Computational",
@@ -5125,7 +5125,7 @@
       "title": "The Line Set: Holding Instruments Apart",
       "url": "/works/Friedman2026LineSetHoldingInstruments201.html",
       "external_url": "https://doi.org/10.5281/zenodo.21754243",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_LineSet/full_text.md",
       "summary": "A thin reader that declares what a set of small evaluative instruments is, reads whichever sibling packages are installed, and checks one narrow property: that no two of them have given the same spelling to different thi",
       "year": 2026,
       "domain": "Computational",
@@ -5150,7 +5150,7 @@
       "title": "White Line: A Typed Ledger for the Edge of the Claim",
       "url": "/works/Friedman2026WhiteLineTypedLedger202.html",
       "external_url": "https://doi.org/10.5281/zenodo.21754241",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_WhiteLine/full_text.md",
       "summary": "A typed ledger for absence: epistemic gaps, ethical restraint, and contemplative negative space. It records what is missing, withheld, or unresolved under a total caution order, decays stale namings past their review hor",
       "year": 2026,
       "domain": "Computational",
@@ -5175,7 +5175,7 @@
       "title": "Personal Red Lines for Development",
       "url": "/works/Friedman2026PersonalRedLinesDevelopment203.html",
       "external_url": "https://doi.org/10.5281/zenodo.21754239",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_PersonalRedLines/full_text.md",
       "summary": "A versioned, evidence-gated personal security boundary and explicit No document for dual-use development work. It requires a complete, reviewable action intake before returning compliance, distinguishes outside-scope wor",
       "year": 2026,
       "domain": "Cognitive Security",
@@ -5200,7 +5200,7 @@
       "title": "Golden Line: Toward What Matters",
       "url": "/works/Friedman2026GoldenLineTowardWhat204.html",
       "external_url": "https://doi.org/10.5281/zenodo.21754237",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_GoldenLine/full_text.md",
       "summary": "A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no ag",
       "year": 2026,
       "domain": "Computational",
@@ -5224,7 +5224,7 @@
       "title": "Black Line: Strong Work in Public",
       "url": "/works/Friedman2026BlackLineStrongWork205.html",
       "external_url": "https://doi.org/10.5281/zenodo.21754235",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_BlackLine/full_text.md",
       "summary": "A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. I",
       "year": 2026,
       "domain": "Cognitive Security",
@@ -5248,7 +5248,7 @@
       "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
       "url": "/works/Friedman2026CodomyrmexArtificialEcologyAgentic206.html",
       "external_url": "https://doi.org/10.5281/zenodo.21750800",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_Codomyrmex/full_text.md",
       "summary": "Agentic software can preserve task state while still forgetting the consequences of prior actions. Codomyrmex studies a narrow control-plane question: after a caller reports a failed action at one software location, can ",
       "year": 2026,
       "domain": "Computational",
@@ -5273,7 +5273,7 @@
       "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
       "url": "/works/Friedman2026THALIATypedHarnessAnalytical207.html",
       "external_url": "https://doi.org/10.5281/zenodo.21763244",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_THALIA/full_text.md",
       "summary": "THALIA is an executable research harness for long-context memory systems. It combines typed stage contracts, inspectable context selection, evidence-preserving episodic state, lexical-first retrieval, and bounded compile",
       "year": 2026,
       "domain": "Computational",
@@ -5294,7 +5294,7 @@
       "title": "PROJECT BOND — The Special-Agent Operations Compendium",
       "url": "/works/Friedman2026PROJECTBONDSpecialAgent208.html",
       "external_url": "https://doi.org/10.5281/zenodo.21843592",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_PROJECTBONDSpecial/full_text.md",
       "summary": "PROJECT BOND is a fleet of 33 independent software packages — 27 film packages, one per James Bond motion picture, plus 6 mission-infrastructure packages (a Q-branch utilities layer, a frozen mission protocol, mission co",
       "year": 2026,
       "domain": "Computational",
@@ -5317,7 +5317,7 @@
       "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
       "url": "/works/Friedman2026DigiPPPiPDigitalPartnerPen209.html",
       "external_url": "https://doi.org/10.5281/zenodo.21815704",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_DigiPPPiP/full_text.md",
       "summary": "DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous, accessible, and place-responsive dyadic draw",
       "year": 2026,
       "domain": "Cognitive Security",
@@ -5342,7 +5342,7 @@
       "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
       "url": "/works/Friedman2026RobustBeliefSharingFederated210.html",
       "external_url": "https://doi.org/10.5281/zenodo.21864003",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_RobustBeliefSharing/full_text.md",
       "summary": "Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those beliefs, and pool them into a colony-level consensus. The same mechanism ",
       "year": 2026,
       "domain": "Active Inference",
@@ -5365,7 +5365,7 @@
       "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
       "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html",
       "external_url": "https://doi.org/10.5281/zenodo.21865643",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_ActiveSkillference/full_text.md",
       "summary": "Active Inference and the Free Energy Principle (FEP) provide model-based accounts of belief updating, learning, and action under uncertainty. We present Active Skillference, a provenance-bound curriculum-generation and S",
       "year": 2026,
       "domain": "Active Inference",
@@ -5390,7 +5390,7 @@
       "title": "docxplus — the Intelligent Document Container",
       "url": "/works/Friedman2026DocxplusIntelligentDocumentContainer212.html",
       "external_url": "https://doi.org/10.5281/zenodo.21983948",
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_DocxplusIntelligentDocument/full_text.md",
       "summary": "A standards-first reference implementation of a byte-valid OOXML .docx that also carries a modular, Ed25519-signed, AES-256-GCM-encrypted intelligence layer through spec-sanctioned side-channels, with an optional bridge ",
       "year": 2026,
       "domain": "Computational",
@@ -6878,6 +6878,34 @@
       "content": "thalia THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments ·  · Zenodo Python docxology"
     },
     {
+      "id": "software:docxology:math4wisdom-superhuman-docs-archive",
+      "type": "software",
+      "title": "math4wisdom-superhuman-docs-archive",
+      "url": "https://github.com/docxology/math4wisdom-superhuman-docs-archive",
+      "summary": "Structured, read-only Math4Wisdom Superhuman Docs archive",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "TypeScript",
+        "docxology"
+      ],
+      "content": "math4wisdom-superhuman-docs-archive Structured, read-only Math4Wisdom Superhuman Docs archive TypeScript docxology"
+    },
+    {
+      "id": "software:docxology:docxplus",
+      "type": "software",
+      "title": "docxplus",
+      "url": "https://github.com/docxology/docxplus",
+      "summary": "docxplus — the Intelligent Document Container: format, tools, and formal specification ·  · Zenodo",
+      "domain": "docxology",
+      "tags": [
+        "software",
+        "Python",
+        "docxology"
+      ],
+      "content": "docxplus docxplus — the Intelligent Document Container: format, tools, and formal specification ·  · Zenodo Python docxology"
+    },
+    {
       "id": "software:ActiveInferenceInstitute:ActiveInferenceJournal",
       "type": "software",
       "title": "ActiveInferenceJournal",
@@ -7466,14 +7494,14 @@
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/act_inf_metaanalysis A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus. HTML ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/act_inf_metaanalysis A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus. HTML ActiveInferenceInstitute active-inference bibliometrics free-energy-principle knowledge-graph llm meta-analysis nanopublications reproducible-research curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/ActInf_RxInfer",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/ActInf_RxInfer",
       "url": "https://github.com/ActiveInferenceInstitute/ActInf_RxInfer",
-      "summary": "Active Inference and RxInfer.jl",
+      "summary": "Julia project connecting Active Inference with RxInfer.jl: a package entry point plus a verified Beta-Bernoulli message-passing example, from the Active Inference Institute.",
       "domain": "ActiveInferenceInstitute",
       "tags": [
         "github",
@@ -7483,14 +7511,14 @@
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/ActInf_RxInfer Active Inference and RxInfer.jl Julia ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/ActInf_RxInfer Julia project connecting Active Inference with RxInfer.jl: a package entry point plus a verified Beta-Bernoulli message-passing example, from the Active Inference Institute. Julia ActiveInferenceInstitute active-inference bayesian-inference julia message-passing probabilistic-programming rxinfer variational-inference curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/Active_Fedference",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/Active_Fedference",
       "url": "https://github.com/ActiveInferenceInstitute/Active_Fedference",
-      "summary": "ActiveInferenceInstitute repository",
+      "summary": "Robust federated Active Inference research project connecting FedGVI-style generalized variational inference (discrete-categorical) to Friston et al's federated belief-sharing framework, with a reproducible manuscript and evidence pipeline.",
       "domain": "ActiveInferenceInstitute",
       "tags": [
         "github",
@@ -7500,14 +7528,14 @@
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/Active_Fedference  Python ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/Active_Fedference Robust federated Active Inference research project connecting FedGVI-style generalized variational inference (discrete-categorical) to Friston et al's federated belief-sharing framework, with a reproducible manuscript and evidence pipeline. Python ActiveInferenceInstitute active-inference bayesian-inference federated-learning free-energy-principle python reproducible-research variational-inference curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/active_fractal_rabbit",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/active_fractal_rabbit",
       "url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit",
-      "summary": "Active Inference for FractalRabbit",
+      "summary": "Closed-loop active-inference research scaffold analyzing synthetic sporadic waypoint data with a pinned FractalRabbit simulator and a real pymdp JAX agent, plus a reproducible manuscript and audit pipeline.",
       "domain": "ActiveInferenceInstitute",
       "tags": [
         "github",
@@ -7517,14 +7545,14 @@
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/active_fractal_rabbit Active Inference for FractalRabbit Python ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/active_fractal_rabbit Closed-loop active-inference research scaffold analyzing synthetic sporadic waypoint data with a pinned FractalRabbit simulator and a real pymdp JAX agent, plus a reproducible manuscript and audit pipeline. Python ActiveInferenceInstitute active-inference bayesian-inference free-energy-principle pymdp python reproducible-research synthetic-data curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/Active_Inference_Ontology",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/Active_Inference_Ontology",
       "url": "https://github.com/ActiveInferenceInstitute/Active_Inference_Ontology",
-      "summary": "ActiveInferenceInstitute repository",
+      "summary": "A controlled vocabulary of 429 Active Inference and Free Energy Principle terms, published as a structured, versioned source with deterministic JSON/CSV exports and a browsable site.",
       "domain": "ActiveInferenceInstitute",
       "tags": [
         "github",
@@ -7534,14 +7562,14 @@
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/Active_Inference_Ontology  HTML ActiveInferenceInstitute active active-inference inference ontology curated recent"
+      "content": "ActiveInferenceInstitute/Active_Inference_Ontology A controlled vocabulary of 429 Active Inference and Free Energy Principle terms, published as a structured, versioned source with deterministic JSON/CSV exports and a browsable site. HTML ActiveInferenceInstitute active active-inference controlled-vocabulary dataset free-energy-principle inference knowledge-graph ontology taxonomy curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/active_inference_power",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/active_inference_power",
       "url": "https://github.com/ActiveInferenceInstitute/active_inference_power",
-      "summary": "ActiveInferenceInstitute repository",
+      "summary": "Reproducible statistical-power simulation suite for adaptive studies with an embedded active-inference agent: multiple-testing corrections, sequential e-processes, and action-loop operating characteristics, using real pymdp inference.",
       "domain": "ActiveInferenceInstitute",
       "tags": [
         "github",
@@ -7551,7 +7579,7 @@
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/active_inference_power  Python ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/active_inference_power Reproducible statistical-power simulation suite for adaptive studies with an embedded active-inference agent: multiple-testing corrections, sequential e-processes, and action-loop operating characteristics, using real pymdp inference. Python ActiveInferenceInstitute active-inference multiple-testing pymdp python reproducible-research simulation statistical-power statistics curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/Active_Inference_Un0",
@@ -7591,7 +7619,7 @@
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/ActiveBlockference",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveBlockference",
-      "summary": "ActiveInferenceInstitute repository",
+      "summary": "CPU-oriented Python library for discrete Active Inference experiments in radCAD and cadCAD: deterministic grid worlds, multi-agent transitions, generative-model helpers, and fail-closed validation.",
       "domain": "ActiveInferenceInstitute",
       "tags": [
         "github",
@@ -7601,14 +7629,14 @@
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/ActiveBlockference  Python ActiveInferenceInstitute active active-inference cadcad inference simulation curated recent"
+      "content": "ActiveInferenceInstitute/ActiveBlockference CPU-oriented Python library for discrete Active Inference experiments in radCAD and cadCAD: deterministic grid worlds, multi-agent transitions, generative-model helpers, and fail-closed validation. Python ActiveInferenceInstitute active active-inference agent-based-modeling cadcad expected-free-energy generative-model grid-world inference python radcad reproducible-research simulation curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/ActiveInferAnts",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/ActiveInferAnts",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts",
-      "summary": "Active Inference models of/for Ants",
+      "summary": "Multi-language Active Inference framework combining ant-colony-optimization-inspired multi-agent simulation with variational message passing, implemented across 50 programming languages for research and benchmarking.",
       "domain": "ActiveInferenceInstitute",
       "tags": [
         "github",
@@ -7618,14 +7646,14 @@
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/ActiveInferAnts Active Inference models of/for Ants Python ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/ActiveInferAnts Multi-language Active Inference framework combining ant-colony-optimization-inspired multi-agent simulation with variational message passing, implemented across 50 programming languages for research and benchmarking. Python ActiveInferenceInstitute active-inference ant-colony-optimization free-energy-principle multi-agent-systems python swarm-intelligence variational-inference curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/ActiveInferenceCategoryTheory",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/ActiveInferenceCategoryTheory",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceCategoryTheory",
-      "summary": "Active Inference & Category Theory",
+      "summary": "Self-paced \"adventure mode\" curriculum connecting Active Inference and Category Theory, for exploring category-theoretic tools used in active-inference research.",
       "domain": "ActiveInferenceInstitute",
       "tags": [
         "github",
@@ -7635,14 +7663,14 @@
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/ActiveInferenceCategoryTheory Active Inference & Category Theory  ActiveInferenceInstitute active active-inference category category-theory inference curated recent"
+      "content": "ActiveInferenceInstitute/ActiveInferenceCategoryTheory Self-paced \"adventure mode\" curriculum connecting Active Inference and Category Theory, for exploring category-theoretic tools used in active-inference research.  ActiveInferenceInstitute active active-inference applied-category-theory category category-theory curriculum free-energy-principle inference mathematics curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/ActiveInferenceImplementations",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/ActiveInferenceImplementations",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations",
-      "summary": "For learning and exploring Probabilistic Inference",
+      "summary": "Educational Jupyter notebooks exploring probabilistic and active inference with RxInfer.jl: Beta-Bernoulli coin-bias inference and variational message passing, from the Active Inference Institute.",
       "domain": "ActiveInferenceInstitute",
       "tags": [
         "github",
@@ -7652,14 +7680,14 @@
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/ActiveInferenceImplementations For learning and exploring Probabilistic Inference Jupyter Notebook ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/ActiveInferenceImplementations Educational Jupyter notebooks exploring probabilistic and active inference with RxInfer.jl: Beta-Bernoulli coin-bias inference and variational message passing, from the Active Inference Institute. Jupyter Notebook ActiveInferenceInstitute active-inference bayesian-inference julia jupyter-notebook message-passing rxinfer tutorial curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/ActiveInferenceJournal",
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/ActiveInferenceJournal",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
-      "summary": "Content of the Active Inference Journal",
+      "summary": "Transcripts, metadata, captions, and translations from the Active Inference Institute's video library — a structured, source-namespaced dataset generated by Journal-Utilities.",
       "domain": "ActiveInferenceInstitute",
       "tags": [
         "github",
@@ -7669,7 +7697,7 @@
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/ActiveInferenceJournal Content of the Active Inference Journal HTML ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/ActiveInferenceJournal Transcripts, metadata, captions, and translations from the Active Inference Institute's video library — a structured, source-namespaced dataset generated by Journal-Utilities. HTML ActiveInferenceInstitute active-inference archive dataset open-data speaker-diarization video-transcripts youtube curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/AEOS",
@@ -7929,7 +7957,7 @@
       "type": "github_repository",
       "title": "ActiveInferenceInstitute/GEO-INFER",
       "url": "https://github.com/ActiveInferenceInstitute/GEO-INFER",
-      "summary": "ActiveInferenceInstitute repository",
+      "summary": "GEO-INFER — a 44-module geospatial inference monorepo from the Active Inference Institute. Spatial analysis, active inference, domain modeling, agent workflows, and reproducible repository validation in one uv/Python workspace (H3, Bayesian models, place & risk).",
       "domain": "ActiveInferenceInstitute",
       "tags": [
         "github",
@@ -7939,7 +7967,7 @@
         "curated",
         "recent"
       ],
-      "content": "ActiveInferenceInstitute/GEO-INFER  HTML ActiveInferenceInstitute  curated recent"
+      "content": "ActiveInferenceInstitute/GEO-INFER GEO-INFER — a 44-module geospatial inference monorepo from the Active Inference Institute. Spatial analysis, active inference, domain modeling, agent workflows, and reproducible repository validation in one uv/Python workspace (H3, Bayesian models, place & risk). HTML ActiveInferenceInstitute active-inference agent-workflows bayesian-inference domain-modeling geospatial h3 monorepo python reproducible-research spatial-analysis uv curated recent"
     },
     {
       "id": "github-repo:ActiveInferenceInstitute/institute_website",
@@ -8286,10 +8314,9 @@
         "repository",
         "Python",
         "docxology",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "docxology/ant_stack  Python docxology  curated recent"
+      "content": "docxology/ant_stack  Python docxology  curated"
     },
     {
       "id": "github-repo:docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference",
@@ -8353,10 +8380,9 @@
         "repository",
         "HTML",
         "docxology",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "docxology/biol-8 BIOL-8: Human Anatomy & Physiology Course Materials - College of the Redwoods HTML docxology  curated recent"
+      "content": "docxology/biol-8 BIOL-8: Human Anatomy & Physiology Course Materials - College of the Redwoods HTML docxology  curated"
     },
     {
       "id": "github-repo:docxology/biology_textbook",
@@ -8421,10 +8447,9 @@
         "repository",
         "Python",
         "docxology",
-        "curated",
-        "recent"
+        "curated"
       ],
-      "content": "docxology/blake_jiang William Blake, Professor Jiang, and the Architecture of Intelligence — rapid AI-augmented scholarly response to Game Theory #24: The AI Apocalypse (12 May 2026). Triangulates Jiang's diagnosis with Blake's perceptual diagnostics and Friston's Active Inference. Python docxology active-inference ai-alignment cognitive-science cognitive-security four-zoas free-energy-principle jiang-xueqin markov-blanket newtons-sleep rapid-publication scholarly-communication william-blake curated recent"
+      "content": "docxology/blake_jiang William Blake, Professor Jiang, and the Architecture of Intelligence — rapid AI-augmented scholarly response to Game Theory #24: The AI Apocalypse (12 May 2026). Triangulates Jiang's diagnosis with Blake's perceptual diagnostics and Friston's Active Inference. Python docxology active-inference ai-alignment cognitive-science cognitive-security four-zoas free-energy-principle jiang-xueqin markov-blanket newtons-sleep rapid-publication scholarly-communication william-blake curated"
     },
     {
       "id": "github-repo:docxology/bond",
@@ -8637,10 +8662,9 @@
         "github",
         "repository",
         "Python",
-        "docxology",
-        "recent"
+        "docxology"
       ],
-      "content": "docxology/crescent_city A comprehensive, reproducible scholarly history of Crescent City, California — Tolowa Dee-ni' habitation through the Cascadia-margin present. 46 chapters, 24 reproducible figures, Pandoc+XeLaTeX pipeline. DOI 10.5281/zenodo.20286171 Python docxology  recent"
+      "content": "docxology/crescent_city A comprehensive, reproducible scholarly history of Crescent City, California — Tolowa Dee-ni' habitation through the Cascadia-margin present. 46 chapters, 24 reproducible figures, Pandoc+XeLaTeX pipeline. DOI 10.5281/zenodo.20286171 Python docxology"
     },
     {
       "id": "github-repo:docxology/curriculum",
@@ -8707,6 +8731,22 @@
         "recent"
       ],
       "content": "docxology/docxology Daniel Ari Friedman, PhD public research and software index: updated with works, papers, art, media, and software repositories. HTML docxology active-inference ai-consulting ai-researcher ai-tutoring bayesian-modeling cognitive-security computational-biology entomology free-energy-principle machine-learning python research-portfolio rust stanford recent"
+    },
+    {
+      "id": "github-repo:docxology/docxplus",
+      "type": "github_repository",
+      "title": "docxology/docxplus",
+      "url": "https://github.com/docxology/docxplus",
+      "summary": "docxplus — a byte-valid OOXML .docx (and ODF .odt) that also carries a signed, modular, selectively sealed intelligence layer through spec-sanctioned side-channels",
+      "domain": "docxology",
+      "tags": [
+        "github",
+        "repository",
+        "Python",
+        "docxology",
+        "recent"
+      ],
+      "content": "docxology/docxplus docxplus — a byte-valid OOXML .docx (and ODF .odt) that also carries a signed, modular, selectively sealed intelligence layer through spec-sanctioned side-channels Python docxology  recent"
     },
     {
       "id": "github-repo:docxology/dotscope",
@@ -29784,7 +29824,7 @@
     {
       "id": "claim:docxology-github-public-repos",
       "type": "claim",
-      "title": "The docxology GitHub profile has 347 public repositories.",
+      "title": "The docxology GitHub profile has 202 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -29792,12 +29832,12 @@
         "public-api",
         "high"
       ],
-      "content": "The docxology GitHub profile has 347 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
+      "content": "The docxology GitHub profile has 202 public repositories. GitHub profile count includes forks and repositories not catalogued in SOFTWARE.md. GitHub REST API user profile response."
     },
     {
       "id": "claim:aii-github-public-repos",
       "type": "claim",
-      "title": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories.",
+      "title": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 43 public repositories.",
       "url": "/evidence.html",
       "summary": "public-api · confidence: high",
       "tags": [
@@ -29805,7 +29845,7 @@
         "public-api",
         "high"
       ],
-      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 41 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
+      "content": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 43 public repositories. Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 41 AII repositories with docxology contributions. GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization."
     },
     {
       "id": "claim:orcid-canonical-identifier",
@@ -29955,7 +29995,7 @@
       "type": "resume",
       "title": "Daniel Ari Friedman Resume / CV",
       "url": "/resume/resume.html",
-      "summary": "Structured CV export: 209 works, 146 software rows, 244 public GitHub repositories, education, experience, service, media, and art-use records.",
+      "summary": "Structured CV export: 209 works, 148 software rows, 245 public GitHub repositories, education, experience, service, media, and art-use records.",
       "tags": [
         "resume",
         "cv",

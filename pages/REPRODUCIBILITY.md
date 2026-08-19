@@ -30,19 +30,19 @@ from that computation.
 | --- | --- | --- | --- |
 | Persistent identifier | 194 / 209 | 93% | Resolve a DOI instead of trusting a live URL. |
 | Public archive | 152 / 209 | 73% | Fetch a deposited copy from a third-party archive. |
-| Open full text | 171 / 209 | 82% | Read the full text without a paywall or request. |
+| Open full text | 189 / 209 | 90% | Read the full text without a paywall or request. |
 | Source documents | 192 / 209 | 92% | Inspect the working folder behind the entry. |
-| Executable code | 62 / 209 | 30% | Run the software that produced or accompanies it. |
+| Executable code | 63 / 209 | 30% | Run the software that produced or accompanies it. |
 | Agent-readable guidance | 192 / 209 | 92% | Parse structured guidance without scraping prose. |
 
-Mean score 4.608 of 6.
+Mean score 4.699 of 6.
 
 ## Bands
 
 | Band | Works | Share | Meaning |
 | --- | --- | --- | --- |
-| independently reproducible | 146 | 70% | Code, archive, and text are all reachable without contacting the author. |
-| independently checkable | 46 | 22% | Enough is public to confirm the record and read the argument. |
+| independently reproducible | 149 | 71% | Code, archive, and text are all reachable without contacting the author. |
+| independently checkable | 43 | 21% | Enough is public to confirm the record and read the argument. |
 | citable only | 8 | 4% | The record resolves, but little beyond it is machine-checkable. |
 | unverified | 9 | 4% | Nothing here is independently checkable from this site alone. |
 

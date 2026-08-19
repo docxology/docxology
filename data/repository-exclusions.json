@@ -20,6 +20,7 @@
     {"full_name": "ActiveInferenceInstitute/institute_website", "reason": "website", "note": "Active Inference Institute information website."},
     {"full_name": "ActiveInferenceInstitute/aii-org", "reason": "website", "note": "Active Inference Institute organizational website."},
     {"full_name": "docxology/crescent_city", "reason": "rename_duplicate", "note": "Underscore variant of the catalogued docxology/crescent-city."},
-    {"full_name": "docxology/prior_cognitive_art", "reason": "private_mirror", "note": "Public mirror of working/prior_cognitive_art in docxology/projects."}
+    {"full_name": "docxology/prior_cognitive_art", "reason": "private_mirror", "note": "Public mirror of working/prior_cognitive_art in docxology/projects."},
+    {"full_name": "docxology/GrowthModel", "reason": "empty_repo", "note": "Empty / unused repository removed per principal direction."}
   ]
 }

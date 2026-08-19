@@ -22,24 +22,44 @@ from pathlib import Path
 
 try:
     import fitz  # PyMuPDF
+    HAVE_PYMUPDF = True
 except ImportError:
-    print("ERROR: PyMuPDF not installed. Run: pip3 install pymupdf")
-    sys.exit(1)
+    fitz = None
+    HAVE_PYMUPDF = False
+
+try:
+    import pypdf
+    HAVE_PYPDF = True
+except ImportError:
+    pypdf = None
+    HAVE_PYPDF = False
 
 REPO_ROOT = Path(__file__).resolve().parents[2]  # docxology/
 PAPERS_DIR = REPO_ROOT / "papers"
 TESSERACT = shutil.which("tesseract")
 PDFTOTEXT = shutil.which("pdftotext")
 
-def is_scanned_pdf(doc):
+def is_scanned_pdf(pdf_path):
     """Check if a PDF is likely scanned (image-only) by checking text coverage on first few pages."""
-    text_chars = 0
-    for i in range(min(5, len(doc))):
-        text_chars += len(doc[i].get_text().strip())
-    return text_chars < 100
+    if HAVE_PYMUPDF:
+        doc = fitz.open(str(pdf_path))
+        text_chars = 0
+        for i in range(min(5, len(doc))):
+            text_chars += len(doc[i].get_text().strip())
+        doc.close()
+        return text_chars < 100
+    if HAVE_PYPDF:
+        reader = pypdf.PdfReader(str(pdf_path))
+        text_chars = 0
+        for i in range(min(5, len(reader.pages))):
+            text_chars += len((reader.pages[i].extract_text() or "").strip())
+        return text_chars < 100
+    return False
 
 def extract_text_pymupdf(pdf_path):
     """Extract text using PyMuPDF."""
+    if not HAVE_PYMUPDF:
+        return []
     doc = fitz.open(str(pdf_path))
     pages = []
     for i, page in enumerate(doc):
@@ -48,8 +68,21 @@ def extract_text_pymupdf(pdf_path):
     doc.close()
     return pages
 
+def extract_text_pypdf(pdf_path):
+    """Extract text using pypdf."""
+    if not HAVE_PYPDF:
+        return []
+    reader = pypdf.PdfReader(str(pdf_path))
+    pages = []
+    for i, page in enumerate(reader.pages):
+        text = page.extract_text() or ""
+        pages.append((i + 1, text))
+    return pages
+
 def extract_text_pdftotext(pdf_path):
     """Extract text using pdftotext as fallback."""
+    if not PDFTOTEXT:
+        return []
     result = subprocess.run(
         [PDFTOTEXT, "-layout", str(pdf_path), "-"],
         capture_output=True, text=True, timeout=60
@@ -102,6 +135,8 @@ def extract_images(pdf_path, output_dir):
     Returns a list of (page_num, filename) tuples so the caller can
     embed image references in the markdown at the correct page position.
     """
+    if not HAVE_PYMUPDF:
+        return []
     doc = fitz.open(str(pdf_path))
     extracted = []
 
@@ -212,21 +247,26 @@ def process_paper(paper_dir, force=False):
     
     # Extract text
     pages = []
-    method = "pymupdf"
+    method = "pymupdf" if HAVE_PYMUPDF else "pypdf"
     try:
-        doc = fitz.open(str(main_pdf))
-        scanned = is_scanned_pdf(doc)
-        doc.close()
+        scanned = is_scanned_pdf(main_pdf)
         
         if scanned and TESSERACT:
             # OCR for scanned PDFs
             method = "ocr"
             pages = ocr_pdf(main_pdf)
             if not pages:
-                method = "pymupdf_fallback"
-                pages = extract_text_pymupdf(main_pdf)
+                if HAVE_PYMUPDF:
+                    method = "pymupdf_fallback"
+                    pages = extract_text_pymupdf(main_pdf)
+                else:
+                    method = "pypdf_fallback"
+                    pages = extract_text_pypdf(main_pdf)
         else:
-            pages = extract_text_pymupdf(main_pdf)
+            if HAVE_PYMUPDF:
+                pages = extract_text_pymupdf(main_pdf)
+            else:
+                pages = extract_text_pypdf(main_pdf)
             if not pages and PDFTOTEXT:
                 method = "pdftotext"
                 pages = extract_text_pdftotext(main_pdf)
@@ -251,6 +291,9 @@ def process_paper(paper_dir, force=False):
     return f"ok ({len(pages)} pages, {len(images)} images, {method})"
 
 def main():
+    if not HAVE_PYMUPDF and not HAVE_PYPDF and not PDFTOTEXT:
+        print("ERROR: Neither PyMuPDF, pypdf, nor pdftotext is available. Install pypdf with: pip3 install pypdf")
+        sys.exit(1)
     force = "--force" in sys.argv
     
     papers = sorted(d for d in PAPERS_DIR.iterdir() if d.is_dir())

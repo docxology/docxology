@@ -20,6 +20,18 @@ REPORT_JSON = REPO_ROOT / "reports" / f"source_coverage_{datetime.now(timezone.u
 REPORT_MD = REPO_ROOT / "reports" / f"source_coverage_{datetime.now(timezone.utc).date().isoformat()}.md"
 
 
+# Explicit reviewed overrides: citation_keys recognized as legitimate historical gaps
+REVIEWED_LEGITIMATE_GAPS = {
+    "Friedman2025TowardsScienceConsciousnessSocial028",
+    "Friedman2024WritingCurioCardsNFT044",
+    "Friedman2019PhDBehavioralPhysiologicalTranscriptomic093",
+    "Friedman2016LessonsFromColony155",
+    "Friedman2016FullSpeedAheadCity156",
+    "Friedman2021Disinforge157",
+    "Friedman2021DefiningEvents2020Hindsight158",
+}
+
+
 def build_payload() -> dict:
     works = json.loads(WORKS.read_text(encoding="utf-8")).get("works", [])
     exceptions = []
@@ -36,14 +48,16 @@ def build_payload() -> dict:
         if work.get("type") != "Paper":
             reasons.append("non_paper_record")
         if reasons:
+            key = work.get("citation_key")
+            is_legit = ("non_paper_record" in reasons) or (key in REVIEWED_LEGITIMATE_GAPS)
             exceptions.append(
                 {
                     "num": work.get("num"),
-                    "citation_key": work.get("citation_key"),
+                    "citation_key": key,
                     "title": work.get("title"),
                     "type": work.get("type"),
                     "reasons": reasons,
-                    "review_status": "legitimate_gap" if "non_paper_record" in reasons else "needs_review",
+                    "review_status": "legitimate_gap" if is_legit else "needs_review",
                     "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid.",
                 }
             )

@@ -46,8 +46,22 @@
       "download_url": "https://zenodo.org/api/records/21985580/files/manuscript.pdf/content"
     }
   ],
-  "related_resources": [],
-  "github_repo": "",
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/docxplus"
+    }
+  ],
+  "github_repo": "docxology/docxplus",
   "source": "zenodo-only",
-  "checked_at": "2026-08-17T21:29:17Z"
+  "checked_at": "2026-08-19T22:45:42Z",
+  "github_release_url": "https://github.com/docxology/docxplus/releases/tag/v1.0.1",
+  "release_tag": "v1.0.1",
+  "release_name": "docxplus v1.0.1",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "github_repo_self_linked"
+  ]
 }

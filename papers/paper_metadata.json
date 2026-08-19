@@ -3375,6 +3375,7 @@
       "document security",
       "reproducible research"
     ],
-    "doi": "10.5281/zenodo.21983948"
+    "doi": "10.5281/zenodo.21983948",
+    "github_release_url": "https://github.com/docxology/docxplus/releases/tag/v1.0.1"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T21:30:34Z",
+  "generated_at": "2026-08-19T23:02:21Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -35,8 +35,8 @@
   },
   "metrics": {
     "works": 209,
-    "software_catalogued": 146,
-    "owned_software_catalogued": 105,
+    "software_catalogued": 148,
+    "owned_software_catalogued": 107,
     "aii_software_catalogued": 41,
     "google_scholar": {
       "citations": 777,
@@ -47,13 +47,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 347 public repositories.",
+      "claim": "The docxology GitHub profile has 202 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-07-21.json"
+        "reports/public_source_snapshot_2026-08-19.json"
       ],
-      "checked_at": "2026-07-21T20:21:13.983218+00:00",
+      "checked_at": "2026-08-19T21:57:41.878669+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -61,26 +61,26 @@
     },
     "aii_public_repositories_claim": {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 43 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-07-21.json"
+        "reports/public_source_snapshot_2026-08-19.json"
       ],
-      "checked_at": "2026-07-21T20:21:13.983218+00:00",
+      "checked_at": "2026-08-19T21:57:41.878669+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 41 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-08-10T17:24:40Z",
+      "generated_at": "2026-08-19T21:58:17Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 244,
-      "public": 244,
-      "primary_total": 157,
+      "total": 245,
+      "public": 245,
+      "primary_total": 158,
       "forks": 87,
-      "docxology": 201,
+      "docxology": 202,
       "ActiveInferenceInstitute": 43
     }
   },
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "0c58c08a6b846e4da361522b3aa8cfe26ad8f1d92e22bd66e1ed3aa2c3aa2e28",
+      "sha256": "52d53437f6753f515771165c70cda52c434693cb195951dde5949bf15d017f57",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 167942,
-          "sha256": "ce879ab60c5ae795f9287bc998db1404368794ca00b50988c2a62dfd988a9f9d"
+          "bytes": 168629,
+          "sha256": "c07707bd046eb62111f16a1afe0890e35651b161ec041d060ca61276768356d1"
         },
         {
           "path": "data/software.json",
-          "bytes": 72155,
-          "sha256": "54336915990ed58f8f4a586e63f4ca445f1479755ebafe5f3c26afc0e8e7f83c"
+          "bytes": 73077,
+          "sha256": "e90c23ab577f9996aa74ba943a01cefa45c31d9572824b36cfef82f2ccf707cd"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 11914,
-          "sha256": "7462c8bf9e43d85136cc194908a265776e9a032e1cb998fe32e77fb10015093a"
+          "sha256": "2db84b65b2f7a325144b9641089ff9fe459fd66921a68b297ccd8bdfe0436161"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 211710,
-          "sha256": "b71d39d61261910ce426e24de80324d9302affa76c2819a0ff9325e6f728b14c"
+          "bytes": 216936,
+          "sha256": "12e92e4607fec8d8fc9dfad78a2ed13fb9491dc7a9284a5e86287ab123aadc81"
         }
       ]
     },
@@ -7098,12 +7098,12 @@
       "doi": "10.5281/zenodo.21330636",
       "docs_path": "papers/2026_ActiveFractalRabbit/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_ActiveFractalRabbit/full_text.md",
       "authors": [
         "Daniel Ari Friedman"
       ]
@@ -7121,12 +7121,12 @@
       "doi": "10.5281/zenodo.21388456",
       "docs_path": "papers/2026_FourfoldVision/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_FourfoldVision/full_text.md",
       "authors": [
         "Daniel Ari Friedman"
       ]
@@ -7144,12 +7144,12 @@
       "doi": "10.5281/zenodo.21419693",
       "docs_path": "papers/2026_DuckRabbit/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_DuckRabbit/full_text.md",
       "authors": [
         "Daniel Ari Friedman"
       ]
@@ -7167,12 +7167,12 @@
       "doi": "10.5281/zenodo.21418782",
       "docs_path": "papers/2026_SynthOBSFractiSynth/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_SynthOBSFractiSynth/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7190,12 +7190,12 @@
       "doi": "10.5281/zenodo.21695160",
       "docs_path": "papers/2026_ActiveInferencePower/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_ActiveInferencePower/full_text.md",
       "authors": []
     },
     {
@@ -7211,12 +7211,12 @@
       "doi": "10.5281/zenodo.21754245",
       "docs_path": "papers/2026_WitnessRegister/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_WitnessRegister/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7234,12 +7234,12 @@
       "doi": "10.5281/zenodo.21754243",
       "docs_path": "papers/2026_LineSet/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_LineSet/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7257,12 +7257,12 @@
       "doi": "10.5281/zenodo.21754241",
       "docs_path": "papers/2026_WhiteLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_WhiteLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7280,12 +7280,12 @@
       "doi": "10.5281/zenodo.21754239",
       "docs_path": "papers/2026_PersonalRedLines/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_PersonalRedLines/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7303,12 +7303,12 @@
       "doi": "10.5281/zenodo.21754237",
       "docs_path": "papers/2026_GoldenLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_GoldenLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7326,12 +7326,12 @@
       "doi": "10.5281/zenodo.21754235",
       "docs_path": "papers/2026_BlackLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_BlackLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7349,12 +7349,12 @@
       "doi": "10.5281/zenodo.21750800",
       "docs_path": "papers/2026_Codomyrmex/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_Codomyrmex/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7372,12 +7372,12 @@
       "doi": "10.5281/zenodo.21763244",
       "docs_path": "papers/2026_THALIA/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_THALIA/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7395,12 +7395,12 @@
       "doi": "10.5281/zenodo.21843592",
       "docs_path": "papers/2026_PROJECTBONDSpecial/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_PROJECTBONDSpecial/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7418,12 +7418,12 @@
       "doi": "10.5281/zenodo.21815704",
       "docs_path": "papers/2026_DigiPPPiP/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_DigiPPPiP/full_text.md",
       "authors": [
         "Shrivastava, Siddhant",
         "Goh, Evelyn C.",
@@ -7444,12 +7444,12 @@
       "doi": "10.5281/zenodo.21864003",
       "docs_path": "papers/2026_RobustBeliefSharing/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_RobustBeliefSharing/full_text.md",
       "authors": []
     },
     {
@@ -7465,12 +7465,12 @@
       "doi": "10.5281/zenodo.21865643",
       "docs_path": "papers/2026_ActiveSkillference/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_ActiveSkillference/full_text.md",
       "authors": []
     },
     {
@@ -7486,12 +7486,12 @@
       "doi": "10.5281/zenodo.21983948",
       "docs_path": "papers/2026_DocxplusIntelligentDocument/",
       "has_paper_folder": true,
-      "has_full_text": false,
-      "has_images": false,
+      "has_full_text": true,
+      "has_images": true,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_DocxplusIntelligentDocument/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -8759,6 +8759,30 @@
       "zenodo_url": "https://doi.org/10.5281/zenodo.21763244"
     },
     {
+      "name": "math4wisdom-superhuman-docs-archive",
+      "url": "https://github.com/docxology/math4wisdom-superhuman-docs-archive",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Structured, read-only Math4Wisdom Superhuman Docs archive",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "docxplus",
+      "url": "https://github.com/docxology/docxplus",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "docxplus — the Intelligent Document Container: format, tools, and formal specification · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "papers/2026_DocxplusIntelligentDocument/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21983948"
+    },
+    {
       "name": "ActiveInferenceJournal",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
       "owner": "ActiveInferenceInstitute",
@@ -9261,7 +9285,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-17T21:29:19+00:00",
+      "checked_at": "2026-08-19T23:02:20+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9276,7 +9300,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-17T21:29:19+00:00",
+      "checked_at": "2026-08-19T23:02:20+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9284,13 +9308,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 347 public repositories.",
+      "claim": "The docxology GitHub profile has 202 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-07-21.json"
+        "reports/public_source_snapshot_2026-08-19.json"
       ],
-      "checked_at": "2026-07-21T20:21:13.983218+00:00",
+      "checked_at": "2026-08-19T21:57:41.878669+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -9298,13 +9322,13 @@
     },
     {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 43 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-07-21.json"
+        "reports/public_source_snapshot_2026-08-19.json"
       ],
-      "checked_at": "2026-07-21T20:21:13.983218+00:00",
+      "checked_at": "2026-08-19T21:57:41.878669+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",

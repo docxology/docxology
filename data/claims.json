@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T21:29:20Z",
+  "generated_at": "2026-08-19T23:02:21Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
@@ -11,7 +11,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-17T21:29:19+00:00",
+      "checked_at": "2026-08-19T23:02:20+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -26,7 +26,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-17T21:29:19+00:00",
+      "checked_at": "2026-08-19T23:02:20+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -34,13 +34,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 347 public repositories.",
+      "claim": "The docxology GitHub profile has 202 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-07-21.json"
+        "reports/public_source_snapshot_2026-08-19.json"
       ],
-      "checked_at": "2026-07-21T20:21:13.983218+00:00",
+      "checked_at": "2026-08-19T21:57:41.878669+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -48,13 +48,13 @@
     },
     {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 43 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-07-21.json"
+        "reports/public_source_snapshot_2026-08-19.json"
       ],
-      "checked_at": "2026-07-21T20:21:13.983218+00:00",
+      "checked_at": "2026-08-19T21:57:41.878669+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",

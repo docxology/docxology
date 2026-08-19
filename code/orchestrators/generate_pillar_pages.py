@@ -3,8 +3,13 @@
 
 import json
 from pathlib import Path
+import sys
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+SRC_DIR = REPO_ROOT / "code" / "src"
+sys.path.insert(0, str(SRC_DIR))
+
+from site_nav import CSP_META_TAG, REFERRER_POLICY_META, REL_ME_LINKS  # noqa: E402
 
 STYLE_BLOCK = """
         .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}
@@ -108,6 +113,9 @@ def render_page(
     <title>{title}</title>
     <meta name="description" content="{description}">
     <meta name="robots" content="index, follow">
+    {CSP_META_TAG}
+    {REFERRER_POLICY_META}
+{REL_ME_LINKS}
     <link rel="canonical" href="{canonical_url}">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
@@ -389,21 +397,21 @@ def main():
              "<p>Originating in the physics of self-organizing non-equilibrium systems and pioneered by neuroscientist Karl Friston, the <strong>Free Energy Principle (FEP)</strong> states that any self-organizing system that resists dissipation and maintains its structural integrity over time must minimize an upper bound on sensory surprise (negative log evidence). <strong>Active Inference</strong> is the process theory that implements this principle for embodied, cognitive agents.</p>\n"
              "<p>Under Active Inference, an agent maintains a <em>generative model</em> of its environment consisting of:</p>\n"
              "<ul>\n"
-             "<li><strong>Hidden States ($s$):</strong> Unobserved latent causes in the world (e.g., whether a predator is present, or the underlying state of a financial market).</li>\n"
-             "<li><strong>Observations ($o$):</strong> Sensory inputs received by the agent (e.g., visual photons, auditory frequencies, telemetry readings).</li>\n"
-             "<li><strong>Actions / Policies ($\pi$):</strong> Sequences of control states that alter the transition probabilities of future hidden states.</li>\n"
-             "<li><strong>Generative Likelihood ($A$-matrix):</strong> The mapping from hidden states to sensory observations, $P(o | s)$.</li>\n"
-             "<li><strong>State Transition Dynamics ($B$-matrix):</strong> How hidden states evolve conditioned on selected actions, $P(s_{t+1} | s_t, a_t)$.</li>\n"
-             "<li><strong>Prior Preferences ($C$-vector):</strong> The agent's internal homeostatic baseline—the sensory states it expects to inhabit to remain viable.</li>\n"
-             "<li><strong>Initial State Priors ($D$-vector):</strong> Baseline prior beliefs over hidden states at initialization, $P(s_0)$.</li>\n"
+             r"<li><strong>Hidden States ($s$):</strong> Unobserved latent causes in the world (e.g., whether a predator is present, or the underlying state of a financial market).</li>" + "\n"
+             r"<li><strong>Observations ($o$):</strong> Sensory inputs received by the agent (e.g., visual photons, auditory frequencies, telemetry readings).</li>" + "\n"
+             r"<li><strong>Actions / Policies ($\pi$):</strong> Sequences of control states that alter the transition probabilities of future hidden states.</li>" + "\n"
+             r"<li><strong>Generative Likelihood ($A$-matrix):</strong> The mapping from hidden states to sensory observations, $P(o | s)$.</li>" + "\n"
+             r"<li><strong>State Transition Dynamics ($B$-matrix):</strong> How hidden states evolve conditioned on selected actions, $P(s_{t+1} | s_t, a_t)$.</li>" + "\n"
+             r"<li><strong>Prior Preferences ($C$-vector):</strong> The agent's internal homeostatic baseline—the sensory states it expects to inhabit to remain viable.</li>" + "\n"
+             r"<li><strong>Initial State Priors ($D$-vector):</strong> Baseline prior beliefs over hidden states at initialization, $P(s_0)$.</li>" + "\n"
              "</ul>"),
             ("What Is the Difference Between Variational Free Energy and Expected Free Energy?",
              "<p>A crucial mathematical distinction in Active Inference is the difference between <strong>Variational Free Energy ($F$)</strong> and <strong>Expected Free Energy ($G$)</strong>:</p>\n"
              "<div class='callout-card'><h3>Variational vs. Expected Free Energy</h3><ul>\n"
-             "<li><strong>Variational Free Energy ($F$) [The Present & Past]:</strong> Evaluated on <em>realized observations</em>. Minimizing $F$ optimizes the agent's current internal beliefs ($q(s)$) to match the true posterior distribution over hidden causes, balancing accuracy against complexity (KL divergence between beliefs and priors).</li>\n"
-             "<li><strong>Expected Free Energy ($G$) [The Future & Action Selection]:</strong> Evaluated over <em>counterfactual future observations</em> that have not yet occurred. An agent evaluates candidate policies $\pi$ by computing the expected free energy $G(\pi)$ for future time steps.</li>\n"
+             r"<li><strong>Variational Free Energy ($F$) [The Present & Past]:</strong> Evaluated on <em>realized observations</em>. Minimizing $F$ optimizes the agent's current internal beliefs ($q(s)$) to match the true posterior distribution over hidden causes, balancing accuracy against complexity (KL divergence between beliefs and priors).</li>" + "\n"
+             r"<li><strong>Expected Free Energy ($G$) [The Future & Action Selection]:</strong> Evaluated over <em>counterfactual future observations</em> that have not yet occurred. An agent evaluates candidate policies $\pi$ by computing the expected free energy $G(\pi)$ for future time steps.</li>" + "\n"
              "</ul></div>\n"
-             "<p>Mathematically, minimizing Expected Free Energy $G(\pi)$ naturally decomposes into two complementary imperatives:</p>\n"
+             r"<p>Mathematically, minimizing Expected Free Energy $G(\pi)$ naturally decomposes into two complementary imperatives:</p>" + "\n"
              "<ol>\n"
              "<li><strong>Pragmatic Value (Goal Seeking):</strong> Maximizing the expected utility or log likelihood of future observations under prior preferences.</li>\n"
              "<li><strong>Epistemic Value (Information Seeking / Curiosity):</strong> Maximizing information gain or mutual information between future observations and hidden states, actively resolving ambiguity in unobserved domains.</li>\n"
@@ -418,8 +426,8 @@ def main():
             ("What Is the Markov Blanket and Bayesian Mechanics?",
              "<p>In the formal physics of Active Inference—known as <strong>Bayesian Mechanics</strong> (<a href='works/Friedman2022WorkedExampleBayesianMechanics143.html'>Worked Example of Bayesian Mechanics</a>, 2022)—the concept of a <strong>Markov Blanket</strong> formalizes the boundary of any cognitive agent. The states of the universe partition into four sets:</p>\n"
              "<ul>\n"
-             "<li><strong>Internal States ($\mu$):</strong> The agent's internal cognitive and computational states.</li>\n"
-             "<li><strong>External States ($\eta$):</strong> The unobserved physical environment outside the agent.</li>\n"
+             r"<li><strong>Internal States ($\mu$):</strong> The agent's internal cognitive and computational states.</li>" + "\n"
+             r"<li><strong>External States ($\eta$):</strong> The unobserved physical environment outside the agent.</li>" + "\n"
              "<li><strong>Sensory States ($s$):</strong> States that mediate how external states affect internal states.</li>\n"
              "<li><strong>Active States ($a$):</strong> States that mediate how internal states affect external states.</li>\n"
              "</ul>\n"

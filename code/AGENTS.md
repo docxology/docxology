@@ -24,6 +24,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/add_zenodo_only.py` | Backfill real Zenodo publication records that have no paired GitHub release |
 | `orchestrators/audit_publication_skills.py` | Validate publication `SKILL.md` coverage, frontmatter, instructions, and canonical-link hygiene |
 | `orchestrators/build_domain_pages.py` | Generate `domains.html`, `domain-*.html`, and `pages/DOMAINS.md` |
+| `orchestrators/generate_pillar_pages.py` | Generate the 5 high-authority pillar content explainers with FAQ and defined-term schemas |
 | `orchestrators/build_work_pages.py` | Generate `works/index.html` and one HTML landing page per bibliography row |
 | `orchestrators/build_video_pages.py` | Generate `videos/index.html`, one HTML landing page per YouTube video, and `data/videos.json` |
 | `orchestrators/fetch_video_transcripts.py` | Optional caption-cache fetcher: YouTube captions → `data/video-transcripts/*.txt` |

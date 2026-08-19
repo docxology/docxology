@@ -33,5 +33,7 @@ OOXML · DOCX · Open Packaging Conventions · steganography · document securit
 
 ## Related
 
+- GitHub release: https://github.com/docxology/docxplus/releases/tag/v1.0.1
+
 - Zenodo record: https://zenodo.org/records/21983948
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-17T21:29:20Z",
+  "generated_at": "2026-08-19T23:02:21Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 146,
+  "count": 148,
   "repositories": [
     {
       "name": "template",
@@ -1263,6 +1263,30 @@
       "updated_or_year": "2026-08",
       "paper_path": "papers/2026_THALIA/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21763244"
+    },
+    {
+      "name": "math4wisdom-superhuman-docs-archive",
+      "url": "https://github.com/docxology/math4wisdom-superhuman-docs-archive",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Structured, read-only Math4Wisdom Superhuman Docs archive",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "docxplus",
+      "url": "https://github.com/docxology/docxplus",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "docxplus — the Intelligent Document Container: format, tools, and formal specification ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "papers/2026_DocxplusIntelligentDocument/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21983948"
     },
     {
       "name": "ActiveInferenceJournal",
