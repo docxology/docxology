@@ -192,7 +192,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 | File | Description |
 |------|-------------|
-| [README.md](../README.md) | Profile overview with domain matrix and consulting info |
+| [README.md](../README.md) | Profile overview with domain matrix and deep-links |
 | [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Unified sortable bibliography table ([current totals](../reports/current_counts.md); Google Scholar totals may lag new deposits) |
 | [works/](../works/) | Generated per-work landing pages for every bibliography row |
 | [search.html](../search.html) / [opensearch.xml](../opensearch.xml) | Human and browser search over works, software, people, organizations, claims, and key pages |

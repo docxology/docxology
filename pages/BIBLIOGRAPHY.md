@@ -20,7 +20,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/danielarifriedman)
 [![GitHub Profile](https://img.shields.io/badge/GitHub-docxology-181717?logo=github)](https://github.com/docxology)
 
-*Stanford PhD · Active Inference Institute President · Available for [research consulting & tutoring](README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
+*Stanford PhD · Active Inference Institute President · [All links](LINKS.md) · [Full profile](PROFILE.md)*
 
 </div>
 

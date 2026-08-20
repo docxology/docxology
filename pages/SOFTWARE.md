@@ -12,11 +12,11 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 **Open-Source Repositories by Daniel Ari Friedman, PhD ([@docxology](https://github.com/docxology))**
 
-*Python · Rust · Go · TypeScript · Julia — Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
-
-*107 original repositories · 41 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
-
-*Available for [research consulting & collaboration](../README.md#-available-for-consulting--tutoring) · [All links](LINKS.md) · [Full profile](PROFILE.md)*
+*Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
+ 
+ *107 original repositories · 41 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ 
+ *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
 </div>
 

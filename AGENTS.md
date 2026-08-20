@@ -71,7 +71,7 @@
 
 ```text
 docxology/
-├── README.md          ← Profile page with domain matrix, consulting info, and deep-links
+├── README.md          ← Profile page with domain matrix and deep-links
 ├── pages/BIBLIOGRAPHY.md    ← Unified sortable bibliography source table with DOI links and paper-folder deep-links
 ├── pages/SOFTWARE.md        ← Curated owned-repo and AII-contribution software catalog
 ├── pages/               ← Documentation hub for videos, resources, pathways, and repos
