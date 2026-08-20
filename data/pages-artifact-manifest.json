@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T00:10:15Z",
-  "source_commit_at_generation": "dca6899de1b43cd27be18d9a7443265997e558d4",
+  "generated_at": "2026-08-20T00:11:54Z",
+  "source_commit_at_generation": "bb68fda911b71b2c1d6abe11157eddae02020cda",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -17,11 +17,11 @@
     "hard_limit_bytes": 1073741824,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 888789624,
+    "source_bytes": 889865539,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4555,
-    "artifact_bytes": 889590868
+    "artifact_file_count": 4559,
+    "artifact_bytes": 890667481
   },
   "included_files": [
     {
@@ -6042,7 +6042,7 @@
     {
       "path": "data/reproducibility.json",
       "bytes": 124391,
-      "sha256": "553513bf061da9786614ab68a82a3ab90ee299547b8e4d1c161ee77f83e1f157"
+      "sha256": "b8f542780c8f0d37ac94e12edbe1c6a2e37c618398ff867293a730b2f94619ed"
     },
     {
       "path": "data/resume.json",
@@ -14635,6 +14635,11 @@
       "sha256": "33be1ef78842b4e4df51a1dce26504227b0a66ac8f3c129a76173675cec5c1ef"
     },
     {
+      "path": "reports/accessibility_static_2026-08-20.json",
+      "bytes": 1052037,
+      "sha256": "38a1e51d4d1946c478aeacc2c32a071d08998323551cdab80b86b0d1f5306f5f"
+    },
+    {
       "path": "reports/ambiguous_pairs_triage_2026-06-26.md",
       "bytes": 2120,
       "sha256": "7a6e4fb01a8870e64ec2358bfc1fab4749adf2cf38c44262ed12c7a022a6a761"
@@ -14888,6 +14893,11 @@
       "path": "reports/asset_size_2026-08-19.json",
       "bytes": 3476,
       "sha256": "7854edb9d17acadad82f95b7289d668a06ed9f0ceb660db24abdac078402bb39"
+    },
+    {
+      "path": "reports/asset_size_2026-08-20.json",
+      "bytes": 3476,
+      "sha256": "fbee9bbd0d82cd618befecaa80f257066312008a160affd1f21e171971b989f4"
     },
     {
       "path": "reports/browser-qa/2026-07-18/manifest.json",
@@ -15681,6 +15691,16 @@
     },
     {
       "path": "reports/source_coverage_2026-08-19.md",
+      "bytes": 4314,
+      "sha256": "2da77c4848cfb13dd32b0c8b6da7f6e2001e1e19c22c4ac971f02943df985ded"
+    },
+    {
+      "path": "reports/source_coverage_2026-08-20.json",
+      "bytes": 16088,
+      "sha256": "d2f33b35f73488fe1e794dc684cb6a7574c5294d2a8fe750f3bd4b8fb6f18499"
+    },
+    {
+      "path": "reports/source_coverage_2026-08-20.md",
       "bytes": 4314,
       "sha256": "2da77c4848cfb13dd32b0c8b6da7f6e2001e1e19c22c4ac971f02943df985ded"
     },
