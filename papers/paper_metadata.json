@@ -553,18 +553,18 @@
     "year": "2021",
     "topic": "NarrativeEcosystems",
     "name": "NarrativeEcosystems",
-    "description": "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-...",
-    "authors": "Daniel A. Friedman, R.J. Cordes, Virginia Bleu Knight",
-    "abstract": "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-online Remote Teams, proposing the ONFT (Ontologies, Narratives, Formal documents, and Tools) framework for Remote Team formation and lifecycle management. We connect epistemic foraging and niche construction concepts to team development.",
+    "description": "Edited 2021 COGSEC volume from the Narrative Information Management (NIM-21) initiative: Narrative Information Management; Digital Rhetorical Ecosystem Analysis; Knowledge Management Archipelago; and Active Inference in Modeling Conflict. Edited by Richard J. Cordes & Daniel A. Friedman.",
+    "authors": "Richard J. Cordes, Daniel A. Friedman (editors); Shaun Applegate-Swanson, V. Bleu Knight, Alexandra Mikhailova (chapter authors)",
+    "abstract": "COGSEC's 2021 edited volume collects research outputs of the Narrative Information Management initiative, spanning information management across disciplines, digital rhetorical ecosystem analysis of image memes, knowledge management field synthesis, and an Active Inference Conflict model applied to conflict settings.",
     "keywords": [
-      "narrative ecosystems",
+      "narrative information ecosystems",
+      "cognitive security",
+      "sensemaking",
+      "Narrative Information Management",
+      "digital rhetoric",
+      "knowledge management",
       "Active Inference",
-      "Remote Teams",
-      "ONFT framework",
-      "epistemic foraging",
-      "niche construction",
-      "collective intelligence",
-      "systems engineering"
+      "conflict modeling"
     ]
   },
   "2021_NarrativeInformationMgmt": {
@@ -1025,8 +1025,8 @@
   "2023_ToComment": {
     "year": "2023",
     "topic": "ToComment",
-    "name": "ToComment",
-    "description": "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze h...",
+    "name": "DigitalRhetoricalEcosystemAnalysis",
+    "description": "Integrates frameworks from rhetorical studies and ecological studies to catalog, monitor, and study digital image meme data; introduces the Digital Rhetorical Ecosystem three-tiered model (DRE3).",
     "authors": "Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman",
     "abstract": "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze how memes function as rhetorical artifacts that shape public discourse through parsimony, polysemy, and identity construction in digital public spheres.",
     "keywords": [
@@ -1035,7 +1035,7 @@
       "digital discourse",
       "narrative ecosystems",
       "DRE3 model",
-      "public sphere"
+      "sensemaking"
     ]
   },
   "2023_VariationalSynthesis": {

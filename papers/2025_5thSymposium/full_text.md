@@ -2,7 +2,7 @@
 
 > Extracted from `2025_5thSymposium.pdf`
 
-> 260 figures extracted to `images/`
+> 265 figures extracted to `images/`
 
 ---
 
@@ -47,7 +47,7 @@ https://www.activeinference.institute/
 Symposium
 Book Editors: 
 Maria Luiza Iennaco & Daniel Friedman
-DOI: 10.5281/zenodo.17555267
+DOI: 10.5281/zenodo.17575211
 Part 1
 November 12-14, 2025
 Part 2
@@ -336,22 +336,22 @@ PRE-RECORDED PRESENTATION
 ## Page 12
 
 08
-This type of  representation also leads us to structures consistent with
+This type of representation also leads us to structures consistent with
 cybernetic regulatory relations and partially observed Markov models. In a
-neural context, these types of  structures allow for the same type of  information
-processing on a wide variety of  anatomical substrates.
+neural context, these types of structures allow for the same type of information
+processing on a wide variety of anatomical substrates.
 References:
 [1] O'Keefe, John (1978). The Hippocampus as a Cognitive Map. Clarendon
 Press.
 [2] Moser, E.I., Roudi, Y., Witter, M.P., Kentros, C., Bonhoffer, T., and Moser, M-
 B. (2014). Grid cells and cortical representation. Nature Reviews Neuroscience,
 15, 466–481.
-[3] Biegler, R. (2000). Possible uses of  path integration in animal navigation.
+[3] Biegler, R. (2000). Possible uses of path integration in animal navigation.
 Animal Learning and Behavior, 28, 257–277.
-[4] Heinze, S., Narendra, A., and Cheung, A. (2019). Principles of  insect path
+[4] Heinze, S., Narendra, A., and Cheung, A. (2019). Principles of insect path
 integration. Current Biology, 28(17), R1043–R1058.
 [5] Al-Tawil, B., Hempel, T., Abdelrahman, A., and Al-Hamadi, A. (2024). A
-review of  visual SLAM for robotics: evolution, properties, and future
+review of visual SLAM for robotics: evolution, properties, and future
 applications. Frontiers in Robotics and AI, 11, 1347985.
 [6] Safron, A., Çatal, Q., and Verbelen, T. (2022). Generalized Simultaneous
 Localization and Mapping (G-SLAM) as a unification framework for natural and
@@ -444,6 +444,11 @@ decision-making by filtering infeasible actions and balancing
 exploration and exploitation through Expected Free Energy
 minimization. It will also include details on implementation, such as
 code snippets and visualizations.
+Finally, the presentation will cover the strong preliminary results in
+our core environment and analyze the strengths and weaknesses
+of our architecture. It will conclude by discussing ongoing work
+towards more challenging environments, hardware deployment,
+and more advanced directions for the architecture.
 Mission San Jose High School, Active Inference
 Institute
 5TH APPLIED ACTIVE INFERENCE
@@ -463,20 +468,25 @@ PRE-RECORDED PRESENTATION
 ## Page 15
 
 12
-Finally, the presentation will cover the strong preliminary results in
-our core environment and analyze the strengths and weaknesses
-of our architecture. It will conclude by discussing ongoing work
-towards more challenging environments, hardware deployment,
-and more advanced directions for the architecture.
-The website, Over the last few years, many educational and
-software resources have been developed for Active Inference. In
-this interactive session, open source educational and development
-resources will be reviewed and utilized. The focus will be on
-presenting (more than) enough entry points, for manual and AI-
-augmented learning + coding. Questions, frictions, memes,
-dreams, and other input will be curated for continued ongoing
-improvement.  has the most up-to-date details on the project and
-will continuously be updated.
+This presentation introduces a hierarchical active autonomous
+drone navigation project developed within the Microsoft AirSim
+simulation environment. The project applies hierarchical active
+inference and affordance theory to enable adaptive, efficient, and
+interpretable navigation in complex 3D spaces.
+It will outline the motivation for building a framework that can
+operate under uncertainty, covering key challenges such as
+defining action spaces, representing abstract environmental
+information, and maintaining computational efficiency for edge
+computing.
+Then, there will be a comprehensive breakdown of our architecture.
+The presentation will describe how the system fuses LiDAR,
+camera, and IMU data to infer a latent suitability state that guides
+decision-making by filtering infeasible actions and balancing
+exploration and exploitation through Expected Free Energy
+minimization. It will also include details on implementation, such as
+code snippets and visualizations.
+This website has the most up-to-date details on the project and will
+continuously be updated.
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 PRE-RECORDED PRESENTATION
@@ -1155,10 +1165,10 @@ LIVE-STREAMED PANEL
 
 30
  Our work aims to further interdisciplinary work and perspectives
-for aiding clinical practice and understandings of  PTSD. As this
+for aiding clinical practice and understandings of PTSD. As this
 project is still in preliminary stages, with its beginning at the Active
 Inference Institute, the primary presenter will include reflections on
-the progression of  the project design from a few perspectives,
+the progression of the project design from a few perspectives,
 general modeling flow from a programming perspective, to foster
 further conversation and interdisciplinary collaborations.
 5TH APPLIED ACTIVE INFERENCE
@@ -1670,24 +1680,14 @@ up computation.
 
 ## Page 48
 
-Using Active Inference for the
-Management of Distributed
-Energy Resources in CityLearn
-Kobus Esterhuysen
-LearnableLoopAI.com
-45
-Active inference offers a powerful framework for managing
-distributed energy resources (DERs) because it integrates
-perception, learning, and action in uncertain environments, using
-probabilistic models to make adaptive decisions about resource
-allocation and control. This approach enables energy systems to
-self-optimize and dynamically respond to changing demand,
-generation fluctuations, and grid conditions, improving energy
-efficiency, reliability, and long-term resilience. By leveraging the
-capabilities of active inference, operators can better coordinate
-diverse DER assets without full system knowledge, efficiently
-balancing supply and demand while supporting the integration of
-renewables and distributed generation.
+Interactive Math Tools for Active
+Inference Education
+Octopus
+Eight Arms Nine Brains 
+46
+To help students reach their goals, the Teacher must be open to
+and welcome feedback. This session will discuss tools and
+strategies for eliciting feedback in various forms. 
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 INTERACTIVE WORKSHOP
@@ -1703,30 +1703,6 @@ INTERACTIVE WORKSHOP
 ![page48_img5.jpeg](images/page48_img5.jpeg)
 
 ## Page 49
-
-Interactive Math Tools for Active
-Inference Education
-Octopus
-Eight Arms Nine Brains 
-46
-To help students reach their goals, the Teacher must be open to
-and welcome feedback. This session will discuss tools and
-strategies for eliciting feedback in various forms. 
-5TH APPLIED ACTIVE INFERENCE
-SYMPOSIUM 2025
-INTERACTIVE WORKSHOP
-
-![page49_img1.jpeg](images/page49_img1.jpeg)
-
-![page49_img2.jpeg](images/page49_img2.jpeg)
-
-![page49_img3.jpeg](images/page49_img3.jpeg)
-
-![page49_img4.jpeg](images/page49_img4.jpeg)
-
-![page49_img5.jpeg](images/page49_img5.jpeg)
-
-## Page 50
 
 47
 In this session, we will take a guided walk through the emerging
@@ -1762,17 +1738,17 @@ Role Playing Games
 SYMPOSIUM 2025
 INTERACTIVE WORKSHOP
 
-![page50_img1.jpeg](images/page50_img1.jpeg)
+![page49_img1.jpeg](images/page49_img1.jpeg)
 
-![page50_img2.jpeg](images/page50_img2.jpeg)
+![page49_img2.jpeg](images/page49_img2.jpeg)
 
-![page50_img3.jpeg](images/page50_img3.jpeg)
+![page49_img3.jpeg](images/page49_img3.jpeg)
 
-![page50_img4.jpeg](images/page50_img4.jpeg)
+![page49_img4.jpeg](images/page49_img4.jpeg)
 
-![page50_img5.jpeg](images/page50_img5.jpeg)
+![page49_img5.jpeg](images/page49_img5.jpeg)
 
-## Page 51
+## Page 50
 
 Workshop on ActiveInference.jl.
 Peter Thestrup Waade
@@ -1802,17 +1778,17 @@ such as human participants in psychiatric experiments.
 SYMPOSIUM 2025
 INTERACTIVE WORKSHOP
 
-![page51_img1.jpeg](images/page51_img1.jpeg)
+![page50_img1.jpeg](images/page50_img1.jpeg)
 
-![page51_img2.jpeg](images/page51_img2.jpeg)
+![page50_img2.jpeg](images/page50_img2.jpeg)
 
-![page51_img3.jpeg](images/page51_img3.jpeg)
+![page50_img3.jpeg](images/page50_img3.jpeg)
 
-![page51_img4.jpeg](images/page51_img4.jpeg)
+![page50_img4.jpeg](images/page50_img4.jpeg)
 
-![page51_img5.jpeg](images/page51_img5.jpeg)
+![page50_img5.jpeg](images/page50_img5.jpeg)
 
-## Page 52
+## Page 51
 
 Consciousness and Active
 Inference
@@ -1833,6 +1809,44 @@ investigate them.
 SYMPOSIUM 2025
 INTERACTIVE WORKSHOP
 
+![page51_img1.jpeg](images/page51_img1.jpeg)
+
+![page51_img2.jpeg](images/page51_img2.jpeg)
+
+![page51_img3.jpeg](images/page51_img3.jpeg)
+
+![page51_img4.jpeg](images/page51_img4.jpeg)
+
+![page51_img5.jpeg](images/page51_img5.jpeg)
+
+## Page 52
+
+49
+5TH APPLIED ACTIVE INFERENCE
+SYMPOSIUM 2025
+INTERACTIVE WORKSHOP
+Thermodynamic Brains: Building
+Physical AI through Active Inference
+Patrick Huembeli & Maxwell Ramstead
+In this session, Noumenal Labs’ Maxwell Ramstead and Patrick
+Huembeli join Daniel Friedman to explore how thermodynamic
+computing may redefine the foundations of artificial intelligence.
+The discussion connects the physics of learning to the principles of
+active inference and illustrates how systems that equilibrate with
+their environments are thinking via physics. Today’s AI, running on
+energy-hungry GPUs, ignores the very stochasticity that makes
+natural intelligence efficient. Maxwell and Patrick unpack how
+thermodynamic hardware embraces noise as a computational
+resource, performing inference physically rather than simulating it
+numerically. Further, they outline how this paradigm shift enables
+uncertainty-aware, energy-efficient edge intelligence for robotics—
+robots that perceive, learn, and adapt in real time on minimal
+power. The talk discusses how Noumenal’s work bridges physics,
+computation, and embodiment in industrial applications to realize
+the radical vision of “brains that reason, adapt, and act through
+thermodynamics itself.”
+Noumenal Labs
+
 ![page52_img1.jpeg](images/page52_img1.jpeg)
 
 ![page52_img2.jpeg](images/page52_img2.jpeg)
@@ -1845,9 +1859,43 @@ INTERACTIVE WORKSHOP
 
 ## Page 53
 
-Thermodynamics
-Patrick Huembeli & Maxwell Ramstead
 49
+Making Active Inference
+Clinically Actionable
+Dave Newell et al. 
+Manual therapy professions, including chiropractic, physiotherapy,
+osteopathy and massage, could potentially be at the forefront of bridging
+embodied, contextual practice and emerging theoretical models of cognition
+and action as the nature of the therapeutic encounters of such professions
+lend themselves to the unified approach that the active inference framework
+offers. This panel brings together clinician-researchers to explore how the
+framework of Active Inference can be applied, operationalised and
+translated into everyday therapeutic encounters.
+The session features clinical researchers/academics associated with the
+manual professions including, Physiotherapy, Chiropractic, Osteopathy and
+Massage who have either published or have a central interest in active
+inference as an application in their clinical practice. Together, they will
+reflect on how Active Inference offers a unifying language for understanding
+manual interventions, viewing hands-on contact, contextual affordances,
+interoception, motor responses and therapeutic alliance as processes of
+prediction, error-minimisation and generative model updating.
+Key discussion pillars include: (1) Reducing uncertainty and promoting
+safety, how manual and contextual techniques create reliable sensory
+feedback and shape the patient’s model of self and movement; (2)
+Integrating explanatory frameworks, how an Active Inference lens supports
+epistemic humility and cross-professional dialogue between the manual
+professions; (3) Practical translation into clinical care and education, i.e.
+what actionable strategies, tools and considerations allow practitioners to
+embed concepts like precision weighting, affordance selection and adaptive
+generative modelling in assessment, treatment planning, patient
+communication and hands-on interactions.
+Participants will have the opportunity to engage through live Q&A, with the
+objective of moving beyond theory into usable insights. The panel does not
+aim to prescribe a fixed manual therapy protocol, but rather to catalyse a
+shared language and mindset for embodied practice underpinned by Active
+Inference.
+Centre for Pain and Active Inference Research, Health
+Sciences University, Bournemouth, UK
 5TH APPLIED ACTIVE INFERENCE
 SYMPOSIUM 2025
 INTERACTIVE WORKSHOP
@@ -1864,24 +1912,75 @@ INTERACTIVE WORKSHOP
 
 ## Page 54
 
-*[Page 54 appears to be blank or image-only]*
+49
+"Net Zero Job losses from AI" and other surprises
+emerging from citizens dreaming about the
+"Solidarity AI Stack" (socio-tech infrastructure and
+aspirations for public-impacting AI).
+Michael Lennon
+​In 2024, a group of digital creators, activists, and civic technologists in
+Barcelona, Spain, launched a project called the "Cartography of Generative AI."
+This project visually represents different viewpoints on how generative AI
+affects urban life, the environment, and jobs. Its goal is to help people engage
+with and understand both the benefits and risks of generative AI.
+The visualization gained popularity and expanded beyond Barcelona. It has
+been translated into many languages and improved by tech groups, EU
+institutions, Chinese social innovators, and other communities ​w​orldwide.
+Encouraged by this success, the presenter wanted to see how Active Inference
+could fit into this work. He talked with various participants in North America to
+explore this idea. However, he found unexpected barriers to using AI for
+personal and community engagement.
+This presentation shares some early findings from these discussions. It
+highlights attitudes, misconceptions, and challenges that limit public
+conversations about how to make AI evolve for the greater good. One challenge
+is explaining AI and Active Inference clearly to ​n​on-experts.
+By comparing the successful civic AI mapping project in Barcelona with the
+difficulties faced by North American participants, the presentation ​(and
+subsequent discussion) aim to o​ffer insights for those working in ​technology,
+policy, research, ​o​r community engagement, aiming to improve discussions
+about AI.
+The presenter suggests ways to ​make talks about Active Inference, generative
+AI, and platforms for public good more ​a​ccessible. This includes ​more citizen-
+intuitive categories for a "Solidarity AI Stack", as welll as, new opportunities to
+boost public involvement in civic aspects of AI, especially related to Active
+Inference.​ The presenter will propose ways to encourage more accessible and
+meaningful conversations about AI and Active Inference's effects on society, ​
+ideally leading ​t​o ​a​n engaging Q&A with the audience​ afterwards.
+caipp.org, GWU, me2we2all.ai
+5TH APPLIED ACTIVE INFERENCE
+SYMPOSIUM 2025
+INTERACTIVE WORKSHOP
+
+![page54_img1.jpeg](images/page54_img1.jpeg)
+
+![page54_img2.jpeg](images/page54_img2.jpeg)
+
+![page54_img3.jpeg](images/page54_img3.jpeg)
+
+![page54_img4.jpeg](images/page54_img4.jpeg)
+
+![page54_img5.jpeg](images/page54_img5.jpeg)
 
 ## Page 55
+
+*[Page 55 appears to be blank or image-only]*
+
+## Page 56
 
 5TH APPLIED
 ACTIVE INFERENCE
 SYMPOSIUM
 ABSTRACT BOOK
 
-![page55_img1.jpeg](images/page55_img1.jpeg)
+![page56_img1.jpeg](images/page56_img1.jpeg)
 
-![page55_img2.jpeg](images/page55_img2.jpeg)
+![page56_img2.jpeg](images/page56_img2.jpeg)
 
-![page55_img3.jpeg](images/page55_img3.jpeg)
+![page56_img3.jpeg](images/page56_img3.jpeg)
 
-![page55_img4.jpeg](images/page55_img4.jpeg)
+![page56_img4.jpeg](images/page56_img4.jpeg)
 
-![page55_img5.jpeg](images/page55_img5.jpeg)
+![page56_img5.jpeg](images/page56_img5.jpeg)
 
 
 ---

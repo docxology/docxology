@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T21:29:22Z",
+  "generated_at": "2026-08-22T21:02:52Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
   "count": 209,
   "works": {
@@ -1299,23 +1299,12 @@
     },
     "Friedman2023CommentOrNotComment063": {
       "citation_key": "Friedman2023CommentOrNotComment063",
-      "abstract": "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze how memes function as rhetorical artifacts that shape public discourse through parsimony, polysemy, and identity construction in digital public spheres.",
+      "abstract": "This paper makes a case for integrating frameworks from two different knowledge domains, rhetorical studies and ecological studies, to catalog, monitor, and study digital image meme data. It introduces the Digital Rhetorical Ecosystem three-tiered model (DRE3): parsimony and polysemy give image memes narrative power; image memes engage audiences through identity construction; Rhetorical Ecosystem mapping supports toolkit transfer and system design.",
       "keywords": [
-        "rhetorical analysis",
-        "image memes",
-        "digital discourse",
-        "narrative ecosystems",
-        "DRE3 model",
-        "public sphere"
+        "rhetorical analysis image memes digital discourse narrative ecosystems DRE3 model sensemaking"
       ],
-      "findings": [
-        "develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives..",
-        "Building on the DRE3 model, we analyze h...."
-      ],
-      "methods": [
-        "Genomic and bioinformatic analysis",
-        "Statistical genetics"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_ToComment/README.md"
     },
     "Friedman2023TranscriptChrisFieldsPhysics064": {
@@ -1630,7 +1619,7 @@
     },
     "Friedman2021NarrativeInformationEcosystemsConflict079": {
       "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-      "abstract": "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-online Remote Teams, proposing the ONFT (Ontologies, Narratives, Formal documents, and Tools) framework for Remote Team formation and lifecycle management. We connect epistemic foraging and niche...",
+      "abstract": "Edited 2021 COGSEC volume collecting research outputs of the Narrative Information Management (NIM-21) initiative: Narrative Information Management; Digital Rhetorical Ecosystem Analysis; Knowledge Management Archipelago; and Active Inference in Modeling Conflict.",
       "keywords": [
         "narrative ecosystems",
         "Active Inference",
@@ -1641,13 +1630,11 @@
         "collective intelligence",
         "systems engineering"
       ],
-      "findings": [
-        "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems..",
-        "We explore communication in located teams and all-...."
-      ],
+      "findings": [],
       "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
+        "Cross-disciplinary information management synthesis",
+        "Digital rhetorical ecosystem analysis of image memes",
+        "Active Inference Conflict (AIC) modeling"
       ],
       "source": "papers/2021_NarrativeEcosystems/README.md"
     },

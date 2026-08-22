@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T17:11:59Z",
+  "generated_at": "2026-08-22T20:21:54Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -4506,18 +4506,18 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
           "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
           "domain": "Active Inference",
           "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
+        },
+        {
+          "title": "An Active Inference Ontology for Decentralized Science",
+          "citation_key": "Friedman2022ActiveInferenceOntologyDecentralized066",
+          "year": 2022,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2022ActiveInferenceOntologyDecentralized066.html"
         }
       ]
     },
@@ -12158,11 +12158,11 @@
           "url": "/works/Friedman2021ActiveInferenceModelingConflict076.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -13143,11 +13143,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -14372,11 +14372,11 @@
           "url": "/works/Friedman2021ActiveInferenceModelingConflict076.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+          "citation_key": "Friedman2023TranscriptActiveInferenceGuestStream137",
+          "year": 2023,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2023TranscriptActiveInferenceGuestStream137.html"
         }
       ]
     },
@@ -16524,11 +16524,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -16601,11 +16601,11 @@
           "url": "/works/Friedman2021ActiveInferenceModelingConflict076.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+          "citation_key": "Friedman2023TranscriptActiveInferenceGuestStream137",
+          "year": 2023,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2023TranscriptActiveInferenceGuestStream137.html"
         }
       ]
     },
@@ -17737,11 +17737,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -18752,11 +18752,11 @@
           "url": "/works/Friedman2021ActiveInferenceModelingConflict076.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -21140,18 +21140,18 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
           "citation_key": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
           "year": 2025,
           "domain": "Active Inference",
           "url": "/works/Friedman2025EvoJumpStochasticModelingEvolutionary012.html"
+        },
+        {
+          "title": "Illegal States, Mostly Unrepresentable",
+          "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
+          "year": 2026,
+          "domain": "Entomology",
+          "url": "/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html"
         }
       ]
     },
@@ -21695,11 +21695,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -21848,13 +21848,6 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "A guided tour through the spaces of particular \"minds\"",
           "citation_key": "Friedman2023GuidedTourThroughSpaces045",
           "year": 2023,
@@ -21867,6 +21860,13 @@
           "year": 2023,
           "domain": "Active Inference",
           "url": "/works/Friedman2023VariationalSynthesisEvolutionaryDevelopmental048.html"
+        },
+        {
+          "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+          "citation_key": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
+          "year": 2025,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2025EvoJumpStochasticModelingEvolutionary012.html"
         }
       ]
     },
@@ -22410,11 +22410,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -22806,18 +22806,18 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
           "citation_key": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
           "year": 2025,
           "domain": "Active Inference",
           "url": "/works/Friedman2025EvoJumpStochasticModelingEvolutionary012.html"
+        },
+        {
+          "title": "Illegal States, Mostly Unrepresentable",
+          "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
+          "year": 2026,
+          "domain": "Entomology",
+          "url": "/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html"
         }
       ]
     },
@@ -23438,11 +23438,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -23515,11 +23515,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -23578,13 +23578,6 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
           "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
           "year": 2022,
@@ -23597,6 +23590,13 @@
           "year": 2022,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2022PredictiveProcessingInterpretationMirror070.html"
+        },
+        {
+          "title": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
+          "citation_key": "Friedman2022TranscriptDiscussionsCommunicationAs144",
+          "year": 2022,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2022TranscriptDiscussionsCommunicationAs144.html"
         }
       ]
     },
@@ -23819,11 +23819,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -24050,11 +24050,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -24190,13 +24190,6 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "A guided tour through the spaces of particular \"minds\"",
           "citation_key": "Friedman2023GuidedTourThroughSpaces045",
           "year": 2023,
@@ -24209,6 +24202,13 @@
           "year": 2023,
           "domain": "Active Inference",
           "url": "/works/Friedman2023VariationalSynthesisEvolutionaryDevelopmental048.html"
+        },
+        {
+          "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+          "citation_key": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
+          "year": 2025,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2025EvoJumpStochasticModelingEvolutionary012.html"
         }
       ]
     },
@@ -24364,18 +24364,18 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
           "citation_key": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
           "year": 2025,
           "domain": "Active Inference",
           "url": "/works/Friedman2025EvoJumpStochasticModelingEvolutionary012.html"
+        },
+        {
+          "title": "Illegal States, Mostly Unrepresentable",
+          "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
+          "year": 2026,
+          "domain": "Entomology",
+          "url": "/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html"
         }
       ]
     },
@@ -24896,13 +24896,6 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
           "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
           "year": 2022,
@@ -24915,6 +24908,13 @@
           "year": 2022,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2022PredictiveProcessingInterpretationMirror070.html"
+        },
+        {
+          "title": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
+          "citation_key": "Friedman2022TranscriptDiscussionsCommunicationAs144",
+          "year": 2022,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2022TranscriptDiscussionsCommunicationAs144.html"
         }
       ]
     },
@@ -25534,13 +25534,6 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "A guided tour through the spaces of particular \"minds\"",
           "citation_key": "Friedman2023GuidedTourThroughSpaces045",
           "year": 2023,
@@ -25553,6 +25546,13 @@
           "year": 2023,
           "domain": "Active Inference",
           "url": "/works/Friedman2023VariationalSynthesisEvolutionaryDevelopmental048.html"
+        },
+        {
+          "title": "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories",
+          "citation_key": "Friedman2025EvoJumpStochasticModelingEvolutionary012",
+          "year": 2025,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2025EvoJumpStochasticModelingEvolutionary012.html"
         }
       ]
     },
@@ -25611,13 +25611,6 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
           "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
           "year": 2022,
@@ -25630,6 +25623,13 @@
           "year": 2022,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2022PredictiveProcessingInterpretationMirror070.html"
+        },
+        {
+          "title": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
+          "citation_key": "Friedman2022TranscriptDiscussionsCommunicationAs144",
+          "year": 2022,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2022TranscriptDiscussionsCommunicationAs144.html"
         }
       ]
     },
@@ -25792,11 +25792,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -26503,18 +26503,18 @@
       ],
       "related_works": [
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
           "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
           "year": 2022,
           "domain": "Active Inference",
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
+        },
+        {
+          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
+          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "year": 2021,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
         },
         {
           "title": "An Account of Active Inference Modeling",
@@ -28026,11 +28026,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -29657,11 +29657,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -34893,11 +34893,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "title": "Distributed Science — The Scientific Process as Multi-Scale Active Inference",
+          "citation_key": "Friedman2023DistributedScienceScientificProcess053",
+          "year": 2023,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2023DistributedScienceScientificProcess053.html"
         }
       ]
     },
@@ -35762,11 +35762,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -36695,11 +36695,11 @@
           "url": "/works/Friedman2021ActiveInferenceModelingConflict076.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "title": "Distributed Science — The Scientific Process as Multi-Scale Active Inference",
+          "citation_key": "Friedman2023DistributedScienceScientificProcess053",
+          "year": 2023,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2023DistributedScienceScientificProcess053.html"
         }
       ]
     },
@@ -37577,11 +37577,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -37821,11 +37821,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -37898,11 +37898,11 @@
           "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
         },
         {
-          "title": "Generative Research Teams: Active Inference Compositions for Research and Meta-Science",
-          "citation_key": "Friedman2023GenerativeResearchTeamsActive057",
-          "year": 2023,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2023GenerativeResearchTeamsActive057.html"
+          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
+          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "year": 2021,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
         }
       ]
     },
@@ -37975,11 +37975,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "title": "Distributed Science — The Scientific Process as Multi-Scale Active Inference",
+          "citation_key": "Friedman2023DistributedScienceScientificProcess053",
+          "year": 2023,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2023DistributedScienceScientificProcess053.html"
         }
       ]
     },
@@ -39391,13 +39391,6 @@
           "url": "/works/Friedman2022TranscriptDiscussionsCommunicationAs144.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
           "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
           "year": 2022,
@@ -39410,6 +39403,13 @@
           "year": 2023,
           "domain": "Active Inference",
           "url": "/works/Friedman2023TranscriptActiveInferenceGuestStream137.html"
+        },
+        {
+          "title": "Active Inference in Modeling Conflict",
+          "citation_key": "Friedman2021ActiveInferenceModelingConflict076",
+          "year": 2021,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021ActiveInferenceModelingConflict076.html"
         }
       ]
     },
@@ -40097,13 +40097,6 @@
           "url": "/works/Friedman2022TranscriptDiscussionsCommunicationAs144.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
           "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
           "year": 2022,
@@ -40116,6 +40109,13 @@
           "year": 2023,
           "domain": "Active Inference",
           "url": "/works/Friedman2023TranscriptActiveInferenceGuestStream137.html"
+        },
+        {
+          "title": "Active Inference in Modeling Conflict",
+          "citation_key": "Friedman2021ActiveInferenceModelingConflict076",
+          "year": 2021,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021ActiveInferenceModelingConflict076.html"
         }
       ]
     },
@@ -40265,11 +40265,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "title": "Distributed Science — The Scientific Process as Multi-Scale Active Inference",
+          "citation_key": "Friedman2023DistributedScienceScientificProcess053",
+          "year": 2023,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2023DistributedScienceScientificProcess053.html"
         }
       ]
     },
@@ -41024,18 +41024,18 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
           "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
           "domain": "Active Inference",
           "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
+        },
+        {
+          "title": "An Active Inference Ontology for Decentralized Science",
+          "citation_key": "Friedman2022ActiveInferenceOntologyDecentralized066",
+          "year": 2022,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2022ActiveInferenceOntologyDecentralized066.html"
         }
       ]
     },
@@ -41556,13 +41556,6 @@
           "url": "/works/Friedman2022TranscriptDiscussionsCommunicationAs144.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
           "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
           "year": 2022,
@@ -41575,6 +41568,13 @@
           "year": 2023,
           "domain": "Active Inference",
           "url": "/works/Friedman2023TranscriptActiveInferenceGuestStream137.html"
+        },
+        {
+          "title": "Active Inference in Modeling Conflict",
+          "citation_key": "Friedman2021ActiveInferenceModelingConflict076",
+          "year": 2021,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021ActiveInferenceModelingConflict076.html"
         }
       ]
     },
@@ -49050,13 +49050,6 @@
       ],
       "related_works": [
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
           "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
           "year": 2022,
@@ -49076,6 +49069,13 @@
           "year": 2025,
           "domain": "Active Inference",
           "url": "/works/Friedman2025BiofirmDevelopmentFirstPrinciples128.html"
+        },
+        {
+          "title": "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling",
+          "citation_key": "Friedman2025CEREBRUMCaseEnabledReasoning010",
+          "year": 2025,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2025CEREBRUMCaseEnabledReasoning010.html"
         }
       ]
     },
@@ -54261,11 +54261,11 @@
           "url": "/works/Friedman2020GreatPresetRemoteTeams089.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "title": "Predictive Processing Interpretation of the Mirror Test",
+          "citation_key": "Friedman2022PredictiveProcessingInterpretationMirror070",
+          "year": 2022,
+          "domain": "Art & Synergetics",
+          "url": "/works/Friedman2022PredictiveProcessingInterpretationMirror070.html"
         }
       ]
     },
@@ -55493,18 +55493,18 @@
           "url": "/works/Friedman2020GreatPresetRemoteTeams089.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
           "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
           "domain": "Active Inference",
           "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
+        },
+        {
+          "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
+          "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
+          "year": 2022,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         }
       ]
     },
@@ -55899,11 +55899,11 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
+          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
         }
       ]
     },
@@ -66591,18 +66591,18 @@
           "url": "/works/Friedman2026RobustBeliefSharingFederated210.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Comments on AI Accountability Policy to NTIA",
           "citation_key": "Friedman2023CommentsAIAccountabilityPolicy052",
           "year": 2023,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2023CommentsAIAccountabilityPolicy052.html"
+        },
+        {
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
         }
       ]
     },
@@ -70026,13 +70026,6 @@
       ],
       "related_works": [
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "BioFirm Development at Applied Active Inference Symposium 2024",
           "citation_key": "Friedman2024BioFirmDevelopmentAtApplied030",
           "year": 2024,
@@ -70052,6 +70045,13 @@
           "year": 2026,
           "domain": "Active Inference",
           "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+        },
+        {
+          "title": "MVEE: A Framework for Evolutionary Studies",
+          "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
+          "year": 2018,
+          "domain": "Media & Teaching",
+          "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
         }
       ]
     },
@@ -72011,6 +72011,13 @@
           "url": "/works/Friedman2024CommentsNationalDigitalTwins033.html"
         },
         {
+          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
+          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "year": 2021,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+        },
+        {
           "title": "Catechism for Towards Active Diffusion",
           "citation_key": "Friedman2022CatechismTowardsActiveDiffusion067",
           "year": 2022,
@@ -72023,13 +72030,6 @@
           "year": 2023,
           "domain": "Active Inference",
           "url": "/works/Friedman2023GenerativeResearchTeamsActive057.html"
-        },
-        {
-          "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
-          "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
-          "year": 2026,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2026DigiPPPiPDigitalPartnerPen209.html"
         }
       ]
     },
@@ -73273,18 +73273,18 @@
           "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
         },
         {
+          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
+          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "year": 2021,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+        },
+        {
           "title": "An Active Inference Ontology for Decentralized Science",
           "citation_key": "Friedman2022ActiveInferenceOntologyDecentralized066",
           "year": 2022,
           "domain": "Active Inference",
           "url": "/works/Friedman2022ActiveInferenceOntologyDecentralized066.html"
-        },
-        {
-          "title": "Catechism for Towards Active Diffusion",
-          "citation_key": "Friedman2022CatechismTowardsActiveDiffusion067",
-          "year": 2022,
-          "domain": "AII Ecosystem",
-          "url": "/works/Friedman2022CatechismTowardsActiveDiffusion067.html"
         }
       ]
     },
@@ -77301,18 +77301,18 @@
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Distributed Science — The Scientific Process as Multi-Scale Active Inference",
           "citation_key": "Friedman2023DistributedScienceScientificProcess053",
           "year": 2023,
           "domain": "Active Inference",
           "url": "/works/Friedman2023DistributedScienceScientificProcess053.html"
+        },
+        {
+          "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+          "citation_key": "Friedman2023TranscriptActiveInferenceGuestStream137",
+          "year": 2023,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2023TranscriptActiveInferenceGuestStream137.html"
         }
       ]
     },
@@ -78447,13 +78447,6 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
           "citation_key": "Friedman2021TranscriptKarlFriston1st146",
           "year": 2021,
@@ -78466,6 +78459,13 @@
           "year": 2023,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2023CommentsAIAccountabilityPolicy052.html"
+        },
+        {
+          "title": "Generalized Notation Notation for Active Inference Models",
+          "citation_key": "Friedman2023GeneralizedNotationNotationActive056",
+          "year": 2023,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2023GeneralizedNotationNotationActive056.html"
         }
       ]
     },
@@ -82633,11 +82633,11 @@
           "url": "/works/Friedman2021ActiveInferenceModelingConflict076.html"
         },
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
+          "title": "An Account of Active Inference Modeling",
+          "citation_key": "Friedman2023AccountActiveInferenceModeling050",
+          "year": 2023,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2023AccountActiveInferenceModeling050.html"
         }
       ]
     },
@@ -82689,13 +82689,6 @@
       ],
       "related_works": [
         {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
-        },
-        {
           "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
           "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
           "year": 2022,
@@ -82715,6 +82708,13 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020FacilitatorSCatechism114.html"
+        },
+        {
+          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
+          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+          "year": 2021,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
         }
       ]
     },

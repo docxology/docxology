@@ -1,9 +1,9 @@
 {
   "title": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (Apis mellifera)",
   "version": "v1.0",
-  "doi": "10.5281/zenodo.10400744",
-  "doi_url": "https://doi.org/10.5281/zenodo.10400744",
-  "zenodo_record": "https://zenodo.org/records/10400744",
+  "doi": "10.5281/zenodo.10400745",
+  "doi_url": "https://doi.org/10.5281/zenodo.10400745",
+  "zenodo_record": "https://zenodo.org/records/10400745",
   "record_id": "10400745",
   "publication_date": "2023-12-18",
   "resource_type": {
@@ -73,7 +73,7 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-06-30T23:25:17Z",
+  "checked_at": "2026-08-22T20:30:00Z",
   "domain": "Entomology",
   "type": "Paper",
   "methods": [

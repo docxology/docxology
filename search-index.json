@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T21:32:21Z",
+  "generated_at": "2026-08-22T21:03:46Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -440,7 +440,7 @@
       "id": "page:asset-size",
       "type": "report",
       "title": "Asset Size Audit",
-      "url": "/reports/asset_size_2026-08-17.json",
+      "url": "/reports/asset_size_2026-08-22.json",
       "summary": "Size report for public HTML, Open Graph images, data exports, and runtime assets.",
       "tags": [
         "assets",
@@ -702,7 +702,7 @@
         "research presentations"
       ],
       "content": "5th Applied Active Inference Symposium — Abstract Book Active Inference Institute Safron, Adam Kiefer, Alex Sabine, Alexander Hiott, Andrea Pashea, Andrew Alicea, Bradly Fields, Chris Holt, Denise Shah, Harshil Maitra, Satyaki Pae, Hongju Tennant, Ian Cloutier, Jean-François Freda, Jim Dietz, Joel Boik, John Friston, Karl Iennaco, Maria Luiza Brown, Matthew Garfield, Michael Hinrichs, Nicolás Octopus PabloFM Waade, Peter Thestrup Worden, Robert Senchal, Sam A Montañez, Samuel Namjoshi, Sanjeev Shrivastava, Siddhant de Jager, Sonia Macurdy, Steph Weiniger, Steven Hasty, Susan Nguyen, Viet Dung Gebhardt, William Lennon, Michael Newell, Dave Huembeli, Patrick Ramstead, Maxwell Adam Safron Alex Kiefer Alexander Sabine Andrea Hiott Andrew Pashea Bradly Alicea Chris Fields Denise Holt Harshil Shah Satyaki Maitra Hongju Pae Ian Tennant Jean-François Cloutier Jim Freda Joel Dietz John Boik Karl Friston Maria Luiza Iennaco Matthew Brown Michael Garfield Nicolás Hinrichs Peter Thestrup Waade Robert Worden Sam A Senchal Samuel Montañez Sanjeev Namjoshi Siddhant Shrivastava Sonia de Jager Steph Macurdy Steven Weiniger Susan Hasty Viet Dung Nguyen William Gebhardt Michael Lennon Dave Newell Patrick Huembeli Maxwell Ramstead Presentation 10.5281/zenodo.17555266 Friedman20255thAppliedActiveInference008 Media & Teaching Presentation Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inference research, application, and education. Active Inference symposium conference proceedings international symposium research presentations Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inferenc Content production Pedagogical design",
-      "image_count": 260
+      "image_count": 265
     },
     {
       "id": "work:Friedman2025AdaptiveBasicIncomeAuBI009",
@@ -896,7 +896,7 @@
       "type": "work",
       "title": "On Time",
       "url": "/works/Friedman2025Time017.html",
-      "external_url": "https://doi.org/10.5281/zenodo.15168381",
+      "external_url": "https://doi.org/10.5281/zenodo.15168382",
       "full_text_url": "/papers/2025_OnTime/full_text.md",
       "summary": "On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and social systems.",
       "year": 2025,
@@ -911,7 +911,7 @@
         "collective behavior",
         "temporal coordination"
       ],
-      "content": "On Time Friedman, Daniel Ari Daniel Ari Friedman Zenodo 10.5281/zenodo.15168381 Friedman2025Time017 Art & Synergetics Paper On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and social systems. temporal dynamics Active Inference synchronization collective behavior temporal coordination On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and Visual and symbolic analysis Cross-domain pattern mapping"
+      "content": "On Time Friedman, Daniel Ari Daniel Ari Friedman Zenodo 10.5281/zenodo.15168382 Friedman2025Time017 Art & Synergetics Paper On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and social systems. temporal dynamics Active Inference synchronization collective behavior temporal coordination On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and Visual and symbolic analysis Cross-domain pattern mapping"
     },
     {
       "id": "work:Friedman2025QuadMathAnalyticalReview4D018",
@@ -1642,7 +1642,7 @@
         "coding sequence evolution"
       ],
       "content": "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees Friedman, Daniel Ari Tong, Chao Linksvayer, Timothy A. Freund, Matthias Keough, Nicole Weronika Johnson, Brian Daniel Ari Friedman Chao Tong Timothy A. Linksvayer Matthias Freund Nicole Weronika Keough Brian Johnson Zenodo 10.5281/zenodo.10400744 Friedman2023SnapshotPipelineTissueSpecific047 Entomology Paper The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novelty in honey bees (Apis mellifera). Using RNA-Seq, we show that novel honey bee tissues are enriched for rapidly evolving genes and taxonomically restricted genes (TRGs), supporting the hypothesis... honey bees Apis mellifera gene expression RNA-Seq novel traits taxonomically restricted genes coding sequence evolution The honey bee ( Apis mellifera ) is a pivotal species in both ecological and research contexts, serving as a model organism for studying complex social behavior and physiological processes.. A critical aspect of understanding these complexities is the analysis of tissue-specific gene expression (TSGE), a challenging task due to the need to handle large bioinformatics data and manual tissue processing.. In this study, we present a meta-analytic approach to investigate TSGE in A. mellifera , harnessing various open-source bioinformatics packages.. Field observation and behavioral assays Population genetics analysis",
-      "image_count": 1
+      "image_count": 5
     },
     {
       "id": "work:Friedman2023VariationalSynthesisEvolutionaryDevelopmental048",
@@ -1966,7 +1966,7 @@
         "community building"
       ],
       "content": "The Active Inference Institute and Active Inference Ecosystem (v1) Institute, Active Inference Aguirre, Ander Boik, John Burian, Libor Brown, Matthew Cordes, RJ David, Scott Douglass, David S Fernandez-Maquieira, Pablo Friedman, Daniel A Grimm, Holly Guénin–Carlut, Avel Iennaco, Maria Luiza Knight, V Bleu Mikhailova, Alexandra Rahmjoo, Ali Razi, Adeel Smékal, Jakub Tamari, Ronen Tickles, Dean Vyatkin, Alex Active Inference Institute Ander Aguirre John Boik Libor Burian Matthew Brown RJ Cordes Scott David David S Douglass Pablo Fernandez-Maquieira Daniel A Friedman Holly Grimm Avel Guénin–Carlut Maria Luiza Iennaco V Bleu Knight Alexandra Mikhailova Ali Rahmjoo Adeel Razi Jakub Smékal Ronen Tamari Dean Tickles Alex Vyatkin Zenodo 10.5281/zenodo.8266280 Friedman2023ActiveInferenceInstituteActive061 AII Ecosystem Paper An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community. The institute serves as a hub for Active Inference research, education, and application, leveraging open-science methodologies to advance understanding of the Free Energy Principle and its applications across domains. Active Inference Institute open science research organization Free Energy Principle community building This document briefly surveys the current state of the Active Inference Institute and Active Inference Ecosystem, and outlines our future directions.. It will be versioned as a living representation (both cyclic and updating) of ecosystems both general and local, describing the past, present, and future actions of the Active Inference Institute.. Program coordination Community governance design",
-      "image_count": 20
+      "image_count": 48
     },
     {
       "id": "work:Friedman2023P3IFPropertiesProcessesPerspectives062",
@@ -2000,21 +2000,16 @@
       "url": "/works/Friedman2023CommentOrNotComment063.html",
       "external_url": "https://doi.org/10.1016/j.plrev.2023.06.002",
       "full_text_url": "/papers/2023_ToComment/full_text.md",
-      "summary": "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze how memes function as",
+      "summary": "This paper makes a case for integrating frameworks from two different knowledge domains, rhetorical studies and ecological studies, to catalog, monitor, and study digital image meme data. It introduces the Digital Rhetor",
       "year": 2023,
       "domain": "Genetics & Biomedical",
       "tags": [
         "Paper",
         "Genetics & Biomedical",
         "bibliography",
-        "rhetorical analysis",
-        "image memes",
-        "digital discourse",
-        "narrative ecosystems",
-        "DRE3 model",
-        "public sphere"
+        "rhetorical analysis image memes digital discourse narrative ecosystems DRE3 model sensemaking"
       ],
-      "content": "To comment or not to comment Tickles, Dean Friedman, Daniel Dean Tickles Daniel Friedman Physics of Life Reviews 10.1016/j.plrev.2023.06.002 Friedman2023CommentOrNotComment063 Genetics & Biomedical Paper This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze how memes function as rhetorical artifacts that shape public discourse through parsimony, polysemy, and identity construction in digital public spheres. rhetorical analysis image memes digital discourse narrative ecosystems DRE3 model public sphere develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives.. Building on the DRE3 model, we analyze h.... Genomic and bioinformatic analysis Statistical genetics",
+      "content": "To comment or not to comment Tickles, Dean Friedman, Daniel Dean Tickles Daniel Friedman Physics of Life Reviews 10.1016/j.plrev.2023.06.002 Friedman2023CommentOrNotComment063 Genetics & Biomedical Paper This paper makes a case for integrating frameworks from two different knowledge domains, rhetorical studies and ecological studies, to catalog, monitor, and study digital image meme data. It introduces the Digital Rhetorical Ecosystem three-tiered model (DRE3): parsimony and polysemy give image memes narrative power; image memes engage audiences through identity construction; Rhetorical Ecosystem mapping supports toolkit transfer and system design. rhetorical analysis image memes digital discourse narrative ecosystems DRE3 model sensemaking",
       "image_count": 12
     },
     {
@@ -2083,7 +2078,7 @@
         "open science"
       ],
       "content": "An Active Inference Ontology for Decentralized Science Friedman, Daniel Applegate-Swanson, Shaun Balbuena, Jessica Angeli Choudhury, Arhan Cordes, RJ El Damaty, Shady Guénin—Carlut, Avel Knight, V. Bleu Metelkin, Ivan Shrivastava, Siddhant Singh, Amit Kumar Smékal, Jakub Caleb, Tuttle. Vyatkin, Alexander Daniel Friedman Shaun Applegate-Swanson Jessica Angeli Balbuena Arhan Choudhury RJ Cordes Shady El Damaty Avel Guénin—Carlut V. Bleu Knight Ivan Metelkin Siddhant Shrivastava Amit Kumar Singh Jakub Smékal Tuttle. Caleb Alexander Vyatkin Zenodo 10.5281/zenodo.6320574 Friedman2022ActiveInferenceOntologyDecentralized066 Active Inference Paper We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provides structured navigation of the field's key components and supports interoperability with existing knowledge bases. This represents a collaborative open-science effort through the Active Inference... Active Inference Ontology knowledge graph Free Energy Principle ontology development SUMO knowledge representation open science We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. Analysis of The ontology provide... Active Inference Free energy minimization",
-      "image_count": 27
+      "image_count": 8
     },
     {
       "id": "work:Friedman2022CatechismTowardsActiveDiffusion067",
@@ -2383,7 +2378,7 @@
       "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html",
       "external_url": "https://cogsec.org",
       "full_text_url": "/papers/2021_NarrativeEcosystems/full_text.md",
-      "summary": "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-online Remote Teams,",
+      "summary": "Edited 2021 COGSEC volume collecting research outputs of the Narrative Information Management (NIM-21) initiative: Narrative Information Management; Digital Rhetorical Ecosystem Analysis; Knowledge Management Archipelago",
       "year": 2021,
       "domain": "Cognitive Security",
       "tags": [
@@ -2399,8 +2394,8 @@
         "collective intelligence",
         "systems engineering"
       ],
-      "content": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier COGSEC.org Friedman2021NarrativeInformationEcosystemsConflict079 Cognitive Security Book Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-online Remote Teams, proposing the ONFT (Ontologies, Narratives, Formal documents, and Tools) framework for Remote Team formation and lifecycle management. We connect epistemic foraging and niche... narrative ecosystems Active Inference Remote Teams ONFT framework epistemic foraging niche construction collective intelligence systems engineering Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems.. We explore communication in located teams and all-.... Narrative analysis Trust and integrity modeling",
-      "image_count": 6
+      "content": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier COGSEC.org Friedman2021NarrativeInformationEcosystemsConflict079 Cognitive Security Book Edited 2021 COGSEC volume collecting research outputs of the Narrative Information Management (NIM-21) initiative: Narrative Information Management; Digital Rhetorical Ecosystem Analysis; Knowledge Management Archipelago; and Active Inference in Modeling Conflict. narrative ecosystems Active Inference Remote Teams ONFT framework epistemic foraging niche construction collective intelligence systems engineering Cross-disciplinary information management synthesis Digital rhetorical ecosystem analysis of image memes Active Inference Conflict (AIC) modeling",
+      "image_count": 46
     },
     {
       "id": "work:Friedman2021NarrativeInformationManagement080",
@@ -11084,7 +11079,7 @@
         "personal",
         "Active Inference"
       ],
-      "content": "#136 ~ Free Energy as a Principle Personal Channel 2020-04-21 Active Inference MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
+      "content": "#136 ~ Free Energy as a Principle Personal Channel 2020-04-21 Active Inference MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 An Active Inference Ontology for Decentralized Science"
     },
     {
       "id": "video:personal:Fybi_WrLuUM",
@@ -12853,7 +12848,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #003.2  \"A World Unto Itself: Human Communication as Active Inference\" Active Inference Institute 2020-09-02 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Active Inference in Modeling Conflict Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #003.2  \"A World Unto Itself: Human Communication as Active Inference\" Active Inference Institute 2020-09-02 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Active Inference in Modeling Conflict Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:personal:T2obZYSens8",
@@ -13074,7 +13069,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #014.2 ~ The Math is not the Territory: Navigating the Free Energy Principle Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #014.2 ~ The Math is not the Territory: Navigating the Free Energy Principle Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:personal:55kbFkgLhUg",
@@ -13347,7 +13342,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #005.1: \"Multiscale integration: beyond internalism and externalism\" (2019) Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Active Inferants: An Active Inference Framework for Ant Colony Behavior Active Inference in Modeling Conflict Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #005.1: \"Multiscale integration: beyond internalism and externalism\" (2019) Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Active Inferants: An Active Inference Framework for Ant Colony Behavior Active Inference in Modeling Conflict Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\""
     },
     {
       "id": "video:institute:C94WDXAe4EE",
@@ -13827,7 +13822,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #014.0 ~ The Math is not the Territory: Navigating the Free Energy Principle Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #014.0 ~ The Math is not the Territory: Navigating the Free Energy Principle Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:V7yNq_KpHo8",
@@ -13844,7 +13839,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #005.2 ~ \"Multiscale integration: beyond internalism and externalism\" (2019) Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Active Inferants: An Active Inference Framework for Ant Colony Behavior Active Inference in Modeling Conflict Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #005.2 ~ \"Multiscale integration: beyond internalism and externalism\" (2019) Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Active Inferants: An Active Inference Framework for Ant Colony Behavior Active Inference in Modeling Conflict Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\""
     },
     {
       "id": "video:personal:Wk88AdsQK7o",
@@ -14100,7 +14095,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #014.1 ~ The Math is not the Territory: Navigating the Free Energy Principle Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #014.1 ~ The Math is not the Territory: Navigating the Free Energy Principle Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:gv8RuRiZTQA",
@@ -14323,7 +14318,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #003.1 \"A World Unto Itself: Human Communication as Active Inference\" Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Active Inference in Modeling Conflict Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #003.1 \"A World Unto Itself: Human Communication as Active Inference\" Active Inference Institute 2021-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Active Inference in Modeling Conflict Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:personal:n9Qi6BUDVN8",
@@ -14854,7 +14849,7 @@
         "Active Inference",
         "Entomology and Ants"
       ],
-      "content": "ActInf Livestream #040.0 ~ \"A free energy principle for generic quantum systems\" Active Inference Institute 2022-04-21 Active Inference Entomology and Ants Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories"
+      "content": "ActInf Livestream #040.0 ~ \"A free energy principle for generic quantum systems\" Active Inference Institute 2022-04-21 Active Inference Entomology and Ants Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories Illegal States, Mostly Unrepresentable"
     },
     {
       "id": "video:institute:0OQx04x8-zA",
@@ -14974,7 +14969,7 @@
         "Active Inference",
         "Biology and Medicine"
       ],
-      "content": "ActInf Livestream #031.1 ~ \"Non-equilibrium Thermodynamics and the Free Energy Principle in Biology\" Active Inference Institute 2022-04-21 Active Inference Biology and Medicine Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #031.1 ~ \"Non-equilibrium Thermodynamics and the Free Energy Principle in Biology\" Active Inference Institute 2022-04-21 Active Inference Biology and Medicine Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:4hTT6fUTMM8",
@@ -15009,7 +15004,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #030.1 ~ “How to count biological minds: symbiosis, the free energy principle...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier A guided tour through the spaces of particular \"minds\" A variational synthesis of evolutionary and developmental dynamics"
+      "content": "ActInf Livestream #030.1 ~ “How to count biological minds: symbiosis, the free energy principle...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 A guided tour through the spaces of particular \"minds\" A variational synthesis of evolutionary and developmental dynamics EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories"
     },
     {
       "id": "video:personal:5n3QkZ4fZjI",
@@ -15129,7 +15124,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #036.0 ~ \"Modelling ourselves: what the free energy principle reveals......\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #036.0 ~ \"Modelling ourselves: what the free energy principle reveals......\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:personal:9QZpwfsUibA",
@@ -15216,7 +15211,7 @@
         "Active Inference",
         "Entomology and Ants"
       ],
-      "content": "ActInf Livestream #040.2 ~ \"A free energy principle for generic quantum systems\" Active Inference Institute 2022-04-21 Active Inference Entomology and Ants Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories"
+      "content": "ActInf Livestream #040.2 ~ \"A free energy principle for generic quantum systems\" Active Inference Institute 2022-04-21 Active Inference Entomology and Ants Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories Illegal States, Mostly Unrepresentable"
     },
     {
       "id": "video:institute:Dl6v-3COgCo",
@@ -15353,7 +15348,7 @@
         "Active Inference",
         "Biology and Medicine"
       ],
-      "content": "ActInf Livestream #031.2 ~ \"Non-equilibrium Thermodynamics and the Free Energy Principle in Biology\" Active Inference Institute 2022-04-21 Active Inference Biology and Medicine Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #031.2 ~ \"Non-equilibrium Thermodynamics and the Free Energy Principle in Biology\" Active Inference Institute 2022-04-21 Active Inference Biology and Medicine Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:Ga8EZMGO460",
@@ -15370,7 +15365,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #034.0 ~ \"The free energy principle: it’s not about what it takes....\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #034.0 ~ \"The free energy principle: it’s not about what it takes....\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:H6rjjPZE5hs",
@@ -15387,7 +15382,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #041.1, Extended active inference: Constructing predictive cognition beyond skulls Active Inference Institute 2022-04-21 Active Inference Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Predictive Processing Interpretation of the Mirror Test"
+      "content": "ActInf Livestream #041.1, Extended active inference: Constructing predictive cognition beyond skulls Active Inference Institute 2022-04-21 Active Inference Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Predictive Processing Interpretation of the Mirror Test Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\""
     },
     {
       "id": "video:institute:Hvr-RgWZ7p4",
@@ -15438,7 +15433,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #034.1 ~ \"The free energy principle: it’s not about what it takes...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #034.1 ~ \"The free energy principle: it’s not about what it takes...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:KbyPFR7xUDo",
@@ -15489,7 +15484,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #036.2 ~ \"Modelling ourselves: what the free energy principle reveals......\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #036.2 ~ \"Modelling ourselves: what the free energy principle reveals......\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:MWWV3U-Llk4",
@@ -15523,7 +15518,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #030.0 ~ “How to count biological minds: symbiosis, the free energy principle...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier A guided tour through the spaces of particular \"minds\" A variational synthesis of evolutionary and developmental dynamics"
+      "content": "ActInf Livestream #030.0 ~ “How to count biological minds: symbiosis, the free energy principle...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 A guided tour through the spaces of particular \"minds\" A variational synthesis of evolutionary and developmental dynamics EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories"
     },
     {
       "id": "video:institute:NHfGuwoCXI8",
@@ -15558,7 +15553,7 @@
         "Active Inference",
         "Entomology and Ants"
       ],
-      "content": "ActInf Livestream #040.1 ~ \"A free energy principle for generic quantum systems\" Active Inference Institute 2022-04-21 Active Inference Entomology and Ants Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories"
+      "content": "ActInf Livestream #040.1 ~ \"A free energy principle for generic quantum systems\" Active Inference Institute 2022-04-21 Active Inference Entomology and Ants Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories Illegal States, Mostly Unrepresentable"
     },
     {
       "id": "video:personal:NrDjyg_RVzc",
@@ -15677,7 +15672,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #041.2, Extended active inference: Constructing predictive cognition beyond skulls Active Inference Institute 2022-04-21 Active Inference Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Predictive Processing Interpretation of the Mirror Test"
+      "content": "ActInf Livestream #041.2, Extended active inference: Constructing predictive cognition beyond skulls Active Inference Institute 2022-04-21 Active Inference Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Predictive Processing Interpretation of the Mirror Test Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\""
     },
     {
       "id": "video:institute:RoMCBXy-7E0",
@@ -15815,7 +15810,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #030.2 ~ “How to count biological minds: symbiosis, the free energy principle...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier A guided tour through the spaces of particular \"minds\" A variational synthesis of evolutionary and developmental dynamics"
+      "content": "ActInf Livestream #030.2 ~ “How to count biological minds: symbiosis, the free energy principle...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 A guided tour through the spaces of particular \"minds\" A variational synthesis of evolutionary and developmental dynamics EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories"
     },
     {
       "id": "video:institute:VsOqIxNYpPQ",
@@ -15832,7 +15827,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #041.0, Extended active inference: Constructing predictive cognition beyond skulls Active Inference Institute 2022-04-21 Active Inference Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Predictive Processing Interpretation of the Mirror Test"
+      "content": "ActInf Livestream #041.0, Extended active inference: Constructing predictive cognition beyond skulls Active Inference Institute 2022-04-21 Active Inference Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Predictive Processing Interpretation of the Mirror Test Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\""
     },
     {
       "id": "video:personal:WqFpFu-1EhQ",
@@ -15867,7 +15862,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #036.1 ~ \"Modelling ourselves: what the free energy principle reveals......\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #036.1 ~ \"Modelling ourselves: what the free energy principle reveals......\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:YjTD_Ifw_qA",
@@ -16023,7 +16018,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf GuestStream #017.1 ~ Mahault Albarracin \"Epistemic Communities under Active Inference\" Active Inference Institute 2022-04-21 Active Inference Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 An Account of Active Inference Modeling Cognitive Sovereignty & Active Inference in the State of Exception"
+      "content": "ActInf GuestStream #017.1 ~ Mahault Albarracin \"Epistemic Communities under Active Inference\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier An Account of Active Inference Modeling Cognitive Sovereignty & Active Inference in the State of Exception"
     },
     {
       "id": "video:institute:azwqMjgfY8Y",
@@ -16349,7 +16344,7 @@
         "Active Inference",
         "Biology and Medicine"
       ],
-      "content": "ActInf Livestream #031.0 ~ \"Non-equilibrium Thermodynamics and the Free Energy Principle in Biology\" Active Inference Institute 2022-04-21 Active Inference Biology and Medicine Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #031.0 ~ \"Non-equilibrium Thermodynamics and the Free Energy Principle in Biology\" Active Inference Institute 2022-04-21 Active Inference Biology and Medicine Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:j4dt5a1f30g",
@@ -16708,7 +16703,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #034.2 ~ \"The free energy principle: it’s not about what it takes...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #034.2 ~ \"The free energy principle: it’s not about what it takes...\" Active Inference Institute 2022-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:wiUDw6vk644",
@@ -17788,7 +17783,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #047.1 ~ “Enactive-Dynamic Social Cognition\" & “Active Inference and Abduction” Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #047.1 ~ “Enactive-Dynamic Social Cognition\" & “Active Inference and Abduction” Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Distributed Science — The Scientific Process as Multi-Scale Active Inference"
     },
     {
       "id": "video:institute:2SuBJBEg9LI",
@@ -17977,7 +17972,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #045.0 ~ \"The free energy principle made simpler but not too simple\" Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #045.0 ~ \"The free energy principle made simpler but not too simple\" Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:BPzwSTalH5E",
@@ -18182,7 +18177,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf GuestStream #028.1 ~ Reconceiving rationality: situating rationality into enactive cognition Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Active Inference in Modeling Conflict Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf GuestStream #028.1 ~ Reconceiving rationality: situating rationality into enactive cognition Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Active Inference in Modeling Conflict Distributed Science — The Scientific Process as Multi-Scale Active Inference"
     },
     {
       "id": "video:institute:L6dhr5hUu8o",
@@ -18372,7 +18367,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #045.2 ~ \"The free energy principle made simpler but not too simple\" Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #045.2 ~ \"The free energy principle made simpler but not too simple\" Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:Sb8A0jNzWPE",
@@ -18424,7 +18419,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #045.1 ~ \"The free energy principle made simpler but not too simple\" Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #045.1 ~ \"The free energy principle made simpler but not too simple\" Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:WEfc9X437yY",
@@ -18441,7 +18436,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf GuestStream #015.2 ~ Bobby Azarian \"The Integrated Evolutionary Synthesis\" Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 A variational synthesis of evolutionary and developmental dynamics MVEE: A Framework for Evolutionary Studies Generative Research Teams: Active Inference Compositions for Research and Meta-Science"
+      "content": "ActInf GuestStream #015.2 ~ Bobby Azarian \"The Integrated Evolutionary Synthesis\" Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 A variational synthesis of evolutionary and developmental dynamics MVEE: A Framework for Evolutionary Studies Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
     },
     {
       "id": "video:institute:WKjqw3My_xM",
@@ -18458,7 +18453,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #047.0 ~ “Enactive-Dynamic Social Cognition\" & “Active Inference and Abduction” Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #047.0 ~ “Enactive-Dynamic Social Cognition\" & “Active Inference and Abduction” Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Distributed Science — The Scientific Process as Multi-Scale Active Inference"
     },
     {
       "id": "video:institute:X0Q6JLDYWJo",
@@ -18768,7 +18763,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #048.2 ~ \"Communication as Socially Extended Active Inference\" Active Inference Institute 2023-04-21 Active Inference Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\" Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\""
+      "content": "ActInf Livestream #048.2 ~ \"Communication as Socially Extended Active Inference\" Active Inference Institute 2023-04-21 Active Inference Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\" Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Active Inference in Modeling Conflict"
     },
     {
       "id": "video:institute:hY_CajLpt9Q",
@@ -18922,7 +18917,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #048.1 ~ \"Communication as Socially Extended Active Inference\" Active Inference Institute 2023-04-21 Active Inference Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\" Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\""
+      "content": "ActInf Livestream #048.1 ~ \"Communication as Socially Extended Active Inference\" Active Inference Institute 2023-04-21 Active Inference Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\" Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Active Inference in Modeling Conflict"
     },
     {
       "id": "video:institute:rCmq0TVGpW0",
@@ -18956,7 +18951,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #047.2 ~ “Enactive-Dynamic Social Cognition\" & “Active Inference and Abduction” Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf Livestream #047.2 ~ “Enactive-Dynamic Social Cognition\" & “Active Inference and Abduction” Active Inference Institute 2023-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Distributed Science — The Scientific Process as Multi-Scale Active Inference"
     },
     {
       "id": "video:institute:skcKoCcAQJI",
@@ -19126,7 +19121,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "Active Inference BookStream #002.1 ~ Thomas Parr ~ Active Inference and Free Energy Principle... Active Inference Institute 2023-04-21 Active Inference MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
+      "content": "Active Inference BookStream #002.1 ~ Thomas Parr ~ Active Inference and Free Energy Principle... Active Inference Institute 2023-04-21 Active Inference MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 An Active Inference Ontology for Decentralized Science"
     },
     {
       "id": "video:institute:xwybWzLFXGY",
@@ -19245,7 +19240,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf Livestream #048.0 ~ \"Communication as Socially Extended Active Inference\" Active Inference Institute 2023-04-21 Active Inference Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\" Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\""
+      "content": "ActInf Livestream #048.0 ~ \"Communication as Socially Extended Active Inference\" Active Inference Institute 2023-04-21 Active Inference Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\" Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\" Active Inference in Modeling Conflict"
     },
     {
       "id": "video:institute:SV0glS6stuA",
@@ -20814,7 +20809,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf MorphStream 003.1 ~ Anand Subramoney \"Principles of scalability and biological inspirations\" Active Inference Institute 2024-03-01 Active Inference Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024"
+      "content": "ActInf MorphStream 003.1 ~ Anand Subramoney \"Principles of scalability and biological inspirations\" Active Inference Institute 2024-03-01 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024 CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling"
     },
     {
       "id": "video:institute:HIvGyLlZx4I",
@@ -21904,7 +21899,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf MathStream 009.1 ~ Jonathan Gorard: A computational perspective on observation and cognition Active Inference Institute 2024-04-21 Active Inference Computational Complexity and Energetics of the Ant Stack Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) The Great Preset: Remote Teams and Operational Art Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf MathStream 009.1 ~ Jonathan Gorard: A computational perspective on observation and cognition Active Inference Institute 2024-04-21 Active Inference Computational Complexity and Energetics of the Ant Stack Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) The Great Preset: Remote Teams and Operational Art Predictive Processing Interpretation of the Mirror Test"
     },
     {
       "id": "video:institute:Il9sBNAia7g",
@@ -22167,7 +22162,7 @@
         "Active Inference",
         "Education and Tutorials"
       ],
-      "content": "Norms, Scripts, Narratives, Languages (Lecture) ~ Mahault Albarracin ~ ActInf Social Sciences 2023 Active Inference Institute 2024-04-21 Active Inference Education and Tutorials Active Inference & Behavior Engineering for Teams The Great Preset: Remote Teams and Operational Art Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
+      "content": "Norms, Scripts, Narratives, Languages (Lecture) ~ Mahault Albarracin ~ ActInf Social Sciences 2023 Active Inference Institute 2024-04-21 Active Inference Education and Tutorials Active Inference & Behavior Engineering for Teams The Great Preset: Remote Teams and Operational Art Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016"
     },
     {
       "id": "video:institute:QqEp4jtaQ2E",
@@ -22254,7 +22249,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf GuestStream #015.3 ~ Bobby Azarian: \"The Teleological Stance: The Free Energy Principle...\" Active Inference Institute 2024-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf GuestStream #015.3 ~ Bobby Azarian: \"The Teleological Stance: The Free Energy Principle...\" Active Inference Institute 2024-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 MVEE: A Framework for Evolutionary Studies Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
     },
     {
       "id": "video:institute:SerC9wYOMHs",
@@ -24665,7 +24660,7 @@
         "personal",
         "Research Video Archive"
       ],
-      "content": "The Power of Communication in Intelligence \"Federated inference and belief sharing\" Personal Channel 2024-09-25 Research Video Archive Federated inference and belief sharing Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Comments on AI Accountability Policy to NTIA"
+      "content": "The Power of Communication in Intelligence \"Federated inference and belief sharing\" Personal Channel 2024-09-25 Research Video Archive Federated inference and belief sharing Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus Comments on AI Accountability Policy to NTIA Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings"
     },
     {
       "id": "video:personal:MKCb2JrIIQw",
@@ -25386,7 +25381,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "Mahault Albarracin: “Sustainability Under Active Inference“ Active Inference Institute 2024-11-22 Active Inference Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier BioFirm Development at Applied Active Inference Symposium 2024 Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics"
+      "content": "Mahault Albarracin: “Sustainability Under Active Inference“ Active Inference Institute 2024-11-22 Active Inference BioFirm Development at Applied Active Inference Symposium 2024 Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics MVEE: A Framework for Evolutionary Studies"
     },
     {
       "id": "video:institute:9v22c92LWHQ",
@@ -25816,7 +25811,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "Bert Berkers: \"Towards Autonomous Urban Digital Twins\" Active Inference Institute 2024-11-26 Active Inference Comments on National Digital Twins R&D Strategic Plan Catechism for Towards Active Diffusion Generative Research Teams: Active Inference Compositions for Research and Meta-Science DigiPPPiP: Digital Partner Pen Play in Parallel"
+      "content": "Bert Berkers: \"Towards Autonomous Urban Digital Twins\" Active Inference Institute 2024-11-26 Active Inference Comments on National Digital Twins R&D Strategic Plan Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Catechism for Towards Active Diffusion Generative Research Teams: Active Inference Compositions for Research and Meta-Science"
     },
     {
       "id": "video:personal:lVWlMTcC3x8",
@@ -26091,7 +26086,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf GuestStream 087.2 ~ John Boik \"CogNarr Ecosystem: Preliminary Thoughts on a Story Graph...\" Active Inference Institute 2025-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 COGANT: Deterministic Codebase-to-GNN Translation An Active Inference Ontology for Decentralized Science Catechism for Towards Active Diffusion"
+      "content": "ActInf GuestStream 087.2 ~ John Boik \"CogNarr Ecosystem: Preliminary Thoughts on a Story Graph...\" Active Inference Institute 2025-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 COGANT: Deterministic Codebase-to-GNN Translation Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier An Active Inference Ontology for Decentralized Science"
     },
     {
       "id": "video:personal:5AOU6Np1yzk",
@@ -26947,7 +26942,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf GuestStream 082.2 ~ Robert Worden \"Three-dimensional Spatial Cognition: Bees and Bats\" Active Inference Institute 2025-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Distributed Science — The Scientific Process as Multi-Scale Active Inference"
+      "content": "ActInf GuestStream 082.2 ~ Robert Worden \"Three-dimensional Spatial Cognition: Bees and Bats\" Active Inference Institute 2025-04-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) Distributed Science — The Scientific Process as Multi-Scale Active Inference Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\""
     },
     {
       "id": "video:institute:gSL8PWN4soc",
@@ -27192,7 +27187,7 @@
         "Active Inference",
         "Education and Tutorials"
       ],
-      "content": "ActInf GuestStream 086.1 ~ Biological Neurons Compete with Deep Reinforcement Learning Active Inference Institute 2025-04-21 Active Inference Education and Tutorials Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 Comments on AI Accountability Policy to NTIA"
+      "content": "ActInf GuestStream 086.1 ~ Biological Neurons Compete with Deep Reinforcement Learning Active Inference Institute 2025-04-21 Active Inference Education and Tutorials Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 Comments on AI Accountability Policy to NTIA Generalized Notation Notation for Active Inference Models"
     },
     {
       "id": "video:institute:pwfJQRN6iIc",
@@ -28076,7 +28071,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf GuestStream 109.1 ~ Hemming: \"Free Energy, Attentional Narrowing, and Cognitive Rigidity\" Active Inference Institute 2025-06-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Push and Pull: A priming sequence Active Inference in Modeling Conflict Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+      "content": "ActInf GuestStream 109.1 ~ Hemming: \"Free Energy, Attentional Narrowing, and Cognitive Rigidity\" Active Inference Institute 2025-06-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Push and Pull: A priming sequence Active Inference in Modeling Conflict An Account of Active Inference Modeling"
     },
     {
       "id": "video:institute:gS_WocoCJvI",
@@ -28093,7 +28088,7 @@
         "institute",
         "Active Inference"
       ],
-      "content": "ActInf GuestStream 110.1 ~ Triple equivalence for the emergence of biological intelligence (Isomura) Active Inference Institute 2025-06-21 Active Inference Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference The Facilitator's Catechism"
+      "content": "ActInf GuestStream 110.1 ~ Triple equivalence for the emergence of biological intelligence (Isomura) Active Inference Institute 2025-06-21 Active Inference Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016 Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference The Facilitator's Catechism Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
     },
     {
       "id": "video:institute:kDLBmwMikfk",

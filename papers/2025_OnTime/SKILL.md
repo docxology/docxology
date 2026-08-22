@@ -4,7 +4,7 @@ description: "On Time examines temporal dynamics in collective systems through A
 tags: ["temporal-dynamics", "active-inference", "synchronization", "collective-behavior", "temporal-coordination"]
 domain: "Art & Synergetics"
 citation: "Daniel A. Friedman (2025). *OnTime*. Art & Synergetics."
-doi: "10.5281/zenodo.15168381"
+doi: "10.5281/zenodo.15168382"
 ---
 
 # OnTime
@@ -38,7 +38,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.15168381
+- DOI: 10.5281/zenodo.15168382
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:53Z
@@ -53,6 +53,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.15168381`
+1. Reference the DOI for citation: `10.5281/zenodo.15168382`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

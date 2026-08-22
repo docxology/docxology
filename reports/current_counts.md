@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-08-17T21:29:19+00:00`
+Generated: `2026-08-22T20:39:33+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -34,7 +34,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - Paper-folder docs: `192`
 - Full-text extractions: `171`
 - Papers with image galleries: `139`
-- Total extracted images: `8886`
+- Total extracted images: `8944`
 - Bibliography docs links: `192`
 
 ### Types

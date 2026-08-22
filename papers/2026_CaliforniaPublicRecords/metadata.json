@@ -34,7 +34,8 @@
   "files": [
     {
       "name": "Friedman_2026_California_8f09eac2.pdf",
-      "download_url": "https://zenodo.org/api/records/20789916/files/Friedman_2026_California_8f09eac2.pdf/content"
+      "download_url": "https://zenodo.org/api/records/20789916/files/Friedman_2026_California_8f09eac2.pdf/content",
+      "checksum": "md5:49ed8b4a6c1bcddcb5ddc9f227547619"
     }
   ],
   "related_resources": [],

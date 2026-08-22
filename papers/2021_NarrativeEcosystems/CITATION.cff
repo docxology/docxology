@@ -1,13 +1,18 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: book
-title: "NarrativeEcosystems"
-date-released: 2021
+title: "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
+date-released: "2021"
+publisher:
+  name: "COGSEC"
 authors:
-  - family-names: Friedman
-    given-names: Daniel A.
-    orcid: "https://orcid.org/0000-0001-6232-9096"
   - family-names: Cordes
-    given-names: R.J.
-  - family-names: Knight
-    given-names: Virginia Bleu
+    given-names: Richard J.
+    role: ["editor"]
+    affiliation: "COGSEC"
+  - family-names: Friedman
+    given-names: Daniel Ari
+    role: ["editor"]
+    affiliation: "COGSEC"
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+url: "https://www.cogsec.org/nim-21-8"

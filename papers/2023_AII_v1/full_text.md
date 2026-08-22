@@ -2,2439 +2,2189 @@
 
 > Extracted from `2023_AII_v1.pdf`
 
-> 20 figures extracted to `images/`
+> 48 figures extracted to `images/`
 
 ---
 
 ## Page 1
 
-TrustFinder 
-Recommendations for a Community-Based System for 
-Finding Trusted Sources and Evaluating Claims 
-Lead Designer: R.J. Cordes 
-Contributors: 
-Scott David J.D., L.L.M. 
-Daniel Friedman, PhD 
-Consultants: 
-Mridula Mascarenhas, PhD 
-August 25, 2022 
-v. 1.0 
- 
-Executive Summary 
-There is a broadly recognized need for better situational awareness within the 
-information environment. Each year, millions of articles, books, documents, and 
-datasets are published. Amidst this flood of information, even those with significant 
-experience and expertise in the knowledge economy are struggling to evaluate and 
-vet claims. This document builds on the feedback of dozens of experts across myriad 
-fields submitted to the University of Washington Applied Physics Lab’s Verified 
-Information Exchange Environments Program, to present recommendations for a 
-sociotechnical system, “TrustFinder”, for collaborative management of the 
-information supply chain. TrustFinder implements controls and standards, web and 
-document annotation affordances, argument representation frameworks, and 
-crowdsourcing design principles in order to harness the work of global research 
-communities. The ultimate goal of TrustFinder is to structure the information 
-environment to such an extent that it enables users to find trusted sources of 
-information and rapidly assess concepts and claims.
+The Active Inference Institute
+and Active Inference Ecosystem
+August 19th, 2023 ~ Version #001.1
+Active Inference Institute
+1*, Ander Aguirre 1,2, John Boik 1, Libor Burian 1, Matthew
+Brown 1,3, RJ Cordes 1, Scott David 1,4, David S. Douglass 1, Pablo Fernandez-Maquieira
+1,5, Daniel Ari Friedman 1,6, Holly Grimm 1, Avel Guénin–Carlut 1,7,8,9, Maria Luiza Iennaco
+1,10, V. Bleu Knight 1, Alexandra Mikhailova 1,6, Ali Rahmjoo 1, Adeel Razi 1,11,12,13, Jakub
+Smékal 1, Ronen Tamari 1,14,15, Dean Tickles 1, Alex Vyatkin 1
+* All authors contributed in different ways to the work, and are listed here alphabetically by last name. Contact: Blanket@ActiveInference.Institute
+ORCID: AII: 0009-0008-7721-7407, AA: 0000-0002-6337-8292, JB: 0000-0003-1289-7997, LB: 0009-0007-6181-340X , MB:
+0000-0002-7552-0989, RJC: 0000-0002-9913-7159, SD: 0000-0003-0679-3286 , DSD: 0000-0001-7894-8019, PF-M, DAF:
+0000-0001-6232-9096,
+HG:
+0009-0001-6181-2569,
+AGC:
+0000-0001-8239-7264,
+MLV:
+0000-0002-5407-4852,
+VBK:0000-0002-9894-1989, AM: 0000-0002-8699-7125, ARahmjoo: 0000-0002-3244-7419, ARazi: 0000-0002-0779-9439, JS:
+0000-0003-4989-4968, RT: 0000-0002-6049-591X, DT 0000-0003-2213-0773, AV: 0000-0003-1306-4620
+Affiliations
+1.
+Active Inference Institute
+2.
+Ohio State University
+3.
+ThoughtForge Inc.
+4.
+Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), University of Washington - Applied Physics
+Laboratory.
+5.
+NFT-Crap
+6.
+University of California, Davis
+7.
+Verses Lab
+8.
+University of Sussex
+9.
+Kairos Research
+10.
+University of São Paulo
+11.
+Turner Institute for Brain and Mental Health, Monash University, Australia
+12.
+Wellcome Centre for Human NeuroImaging, University College London
+13.
+CIFAR Azrieli Global Scholars program, CIFAR, Toronto, Canada
+14.
+Hebrew University of Jerusalem
+15.
+Common SenseMakers
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+1
+
+![page1_img1.png](images/page1_img1.png)
 
 ## Page 2
 
-TrustFinder 2022 
-1 
- 
-System Overview 
- 
-TrustFinder Environment Primary Components 
-TrustFinder has one primary category of actors, “Users”. Users scope the global 
-information environment (i.e. the internet) by creating, sharing, and adding other 
-users to “Workspaces”, which represent “information commons” intended to 
-facilitate projects related to sensemaking (e.g., a research paper, studying, 
-exploration of a topic). Users within Workspaces use web and document annotation 
-affordances (i.e., the ability to “mark-up”, “highlight”, take notes at the edge of a 
-document or webpage, or to otherwise enrich content) in order to structure the 
-information environment. Users and Workspaces can further assign “trust scores” 
-representing expectations of the quality and intents of specific authors and 
-publishers, as well as of the assertions and annotation contributions by other Users 
-and Workspaces. With such enrichment tools, Users structure the claims and 
-concepts they encounter in order to make the information environment more 
-navigable and searchable, reducing future redundant work for themselves and 
-others related to evaluation and vetting of claims and allowing for evaluation and 
-mapping of the information supply chain (i.e., where claims originate and where they 
-have spread). 
-In the TrustFinder environment, a Workspace can be populated with different 
-classes of interconnected informational structures, each contributing to enrichment 
-of the rhetorical landscape. Below are the 10 primary classes of informational 
-elements.
+Table of Contents
+Table of Contents...........................................................................................................................2
+Abstract..........................................................................................................................................3
+Preamble....................................................................................................................................... 4
+The Active Inference Institute........................................................................................................ 5
+Our Vision.......................................................................................................................... 7
+Our Values and Principles..................................................................................................7
+Priorities and Challenge Areas.......................................................................................... 8
+The Way Ahead................................................................................................................. 9
+History of The Institute.................................................................................................................10
+Possibilities...................................................................................................................... 12
+Challenges.......................................................................................................................13
+Next Steps....................................................................................................................... 14
+Institute Organization Model........................................................................................................15
+Institute Governance and Leadership....................................................................................15
+Members..........................................................................................................................15
+Board of Directors............................................................................................................15
+Scientific Advisory Board................................................................................................. 15
+Officers.............................................................................................................................15
+Institute Units (Support, Projects, and Programs)................................................................. 16
+Administrative Unit...........................................................................................................16
+EduActive Unit................................................................................................................. 16
+ReInference unit...............................................................................................................17
+Volunteer Program...........................................................................................................19
+Internship Program.......................................................................................................... 19
+Community Growth and Development.........................................................................................20
+Ecosystem Structure..............................................................................................................20
+Community Structure............................................................................................................. 21
+Participants (Members and Learners)........................................................................21
+Users (Adopters and Beneficiaries)........................................................................... 21
+Research Partners (External Research Organizations and Working Groups)...........22
+Educational Partners (Universities and Educators)................................................... 22
+Funders (Donors, Supporters, and Funding Agencies)............................................. 22
+Information Management and Tech Stack............................................................................. 22
+Coda (Modeling, Project, and Knowledge Management Platform)............................23
+YouTube (Live Streaming and Video Hosting)........................................................... 23
+Discord (Forum and Instant Messaging)....................................................................23
+Google Workspace (Document Management, Document Production, and Email).... 24
+Twitter (now “X”) (Public Announcements and Releases)......................................... 24
+Communications Plan............................................................................................................24
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+2
 
 ![page2_img1.png](images/page2_img1.png)
 
 ## Page 3
 
-TrustFinder 2022 
-2 
-Content. Information sources such as a book, paper, article, or 
-video. Content provides a container for References, user-
-added metadata, Claim Instances, and Question Instances. 
-References. Relationships between Content, such as direct 
-citations, are stored as references. These reference objects can 
-be used to map the connections between Content and b 
-between Claim Instances.  
-Claim. A statement about the world can be represented as a 
-Claim. Claims exist outside the context of any specific Content, 
-can be represented using various phrasings, and can be 
-connected to other objects. A Workspace can be prompted or 
-initiated using a Claim, as a basis to help scope related work 
-(i.e., this work is related to the investigation of this Claim). The 
-Claim’s most important feature is its ability to be connected to 
-other Claims through Claim Combinators and Claim Clusters. 
-Question. Explicit or implicit Questions are represented by an 
-informational structure which can be connected to both Claims 
-and other Questions. Similar to Claims, they can exist outside 
-the context of any specific Content, can be represented using 
-various phrasings, can prompt or initiate a Workspace, and be 
-connected to other objects. Questions have an important 
-relationship with Claims as Claims can both be responses to, 
-or prompt, Questions.  
-Claim Instance. As opposed to Claims, which exist outside the 
-context of any specific Content, Claim Instance objects 
-represent the instantiation, or appearance, of a particular 
-Claim within a specific area of a piece of Content (i.e., within a 
-particular sentence). Claim Instances can be connected to the 
-appearances of its Claim within other pieces of Content 
-through References (i.e., where there is a direct citation related 
-to the appearance of the Claim Instance within the Content).  
-Question Instance. Similar to the Claim Instance, Question 
-Instances are simply instantiations, or appearances, of a 
-particular Question within a specific area of Content.  
-Claim Cluster. Claim Clusters are a simple container for Claims 
-that are related in terms of their relationship to some other
+Internal Communications Plan.........................................................................................24
+External Communications Plan........................................................................................25
+Target Audiences....................................................................................................... 25
+Approach....................................................................................................................25
+Organizational Communication........................................................................................26
+Target Audiences....................................................................................................... 26
+Approach....................................................................................................................26
+Ecosystem Support, Infrastructure, and Administration.........................................................27
+Informational Commons...................................................................................................27
+Infrastructure and Administration.....................................................................................27
+Quality, Performance, and Growth Evaluation.......................................................................28
+Participant scale.........................................................................................................28
+Institute scale............................................................................................................. 28
+Ecosystem scale........................................................................................................ 29
+Discussion and Future Directions................................................................................................30
+Appendix......................................................................................................................................32
+Open source services of The Institute for the Ecosystem..................................................... 32
+Educational services........................................................................................................32
+Research services........................................................................................................... 32
+Standards activities..........................................................................................................33
+Facilitation activities.........................................................................................................33
+Governance activities.......................................................................................................34
+Works Cited................................................................................................................................. 35
+Abstract
+This document briefly surveys the current state of the Active Inference Institute and
+Active Inference Ecosystem, and outlines our future directions. It will be versioned as a
+living representation (both cyclic and updating) of ecosystems both general and local,
+describing the past, present, and future actions of the Active Inference Institute.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+3
+
+![page3_img1.png](images/page3_img1.png)
 
 ## Page 4
 
-TrustFinder 2022 
-3 
-object (i.e., this set of Claims, if all true, support this other 
-Claim).  
-Claim Combinator. Claim Combinators are containers for 
-describing the relationship between a Claim or a Claim Cluster, 
-and a Claim, Claim Cluster, or another Claim Combinator. 
-Claim Combinators are categorized as (i) supports, (ii) refutes, 
-(iii) generalizes, (iv) modifies, and (v) relates to. 
-User Assertion. In addition to collecting Claims and marking 
-Claim Instances, Users can also make their own assertions 
-about Claims and Claim Instances. User Assertions are 
-essentially a special form of Claim Combinator, on which they 
-are attaching their name. User Assertions attached to Claims 
-will appear within the workspace when Users access the Claim, 
-as well as when they access instances of that claim (Claim 
-Instance), allowing for contextualization of particular claims. 
-User Assertions attached to Claim Instances will only appear 
-on that particular Claim Instance, allowing for nuanced 
-warnings or endorsements (e.g., if you wanted to find support 
-for this Claim, this particular piece of content may not be the 
-place to cite it from, as it is not a strong argument or works 
-from faulty data). 
-Stigmergic Tag. Stigmergic Tags are a combination of 
-predefined and User-defined tags used to further assist in 
-querying and navigating Workspaces. Stigmergic Tags provide 
-users with highly structured methods for communicating 
-requests, directing attention, providing feedback, and marking 
-the presence of key concepts or entities. Stigmergic Tags can be 
-connected to nearly all other informational structures within 
-the TrustFinder environment, including other Stigmergic Tags. 
-System Purpose 
-The primary purpose of the sociotechnical system, “TrustFinder”, is to facilitate 
-collaborative structuring of the information environment, enabling users to find 
-trusted sources of information, which in turn enables them to rapidly assess 
-concepts and claims. The secondary purposes include: 
-• providing infrastructure and data for the future of reference management 
-systems,
+Preamble
+Active Inference is an integrated physics-based approach to modeling cognition and
+behavior as the active minimization of prediction error [1–3]. More exactly, it describes in
+mathematical terms the tendency of complex adaptive systems to self-organize as to
+maintain low-surprise states (formally, through minimization of the statistical quantity of
+Variational Free Energy). Active Inference treats this tendency as the basic process,
+enabling the modeling of perception and behavior in various kinds of cognitive agents,
+including humans [4–6]. The generality and action orientation of Active Inference makes
+it a natural bridge between descriptive approaches to cognition (e.g., biology) and
+prescriptive approaches to implementation of artificial intelligence (e.g., machine
+learning) and design (e.g., user experience, communication). Active Inference therefore
+enables a principled account of composition and decomposition, construction and
+de-construction, in complex adaptive systems. This generality provides a unified
+conceptual and pragmatic approach towards establishing a foundation for modeling,
+designing, and implementing various systems across scales, disciplines, and settings.
+While Active Inference was developed as a theoretical and descriptive analytical
+framework for application in biological systems, it is showing early promise in guiding
+the integration and management of heterogeneous information systems (viewed as
+intelligent agents) across a variety of domains. The transdisciplinary nature and
+flexibility of Active Inference makes the framework ideal for practical, theoretical, and
+interoperable work across myriad use-cases, including (i) cognitive neuroscience and
+philosophy [1,2,7–27] (ii) artificial intelligence (AI) and AI explainability [2,4,9,28–34] (iii)
+robotics [35,36] (iv) human health and clinical psychiatry [37–49], (v) developmental
+psychology [5,35,46,50–54] (vi) social sciences and economics [6,52,55–61], (vii)
+mathematical physics [59,62–70], (viii) physics of life [15,69–75] (ix) consciousness
+studies and phenomenology [41,48,76–81] (x) evolution, ecology, and development
+[3,42,69,82,83] (xi) cyber and cognitive security [84], (xii) mapping and modeling of
+information ecosystems [6,85–87], (xiii) ontology modeling and maintenance [85,88],
+(xiv) rhetorical analysis [89], (xv) logistics and business intelligence [90,91], (xvi)
+theoretical and applied biology and ecology [3,69,92,93], (xvii) project management and
+team science [94–96], (xvii) collective behavior [42,97,98], (xix) trust, aesthetics, and
+wellbeing [99,100], (xx) military science [101,102], and (xxi) climate science [103,104].
+Further development and formalization of Active Inference research has the potential to
+facilitate various socially valuable outcomes and directly address many domain-specific
+“research to practice” gaps [96,105,106]. As such, Active Inference already exists both
+as a physics-based scientific methodology, and as an nascent Open Source Ecosystem
+that is forming an interoperability layer for an emerging network of people, tools,
+methodologies, and practices.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+4
+
+![page4_img1.png](images/page4_img1.png)
 
 ## Page 5
 
-TrustFinder 2022 
-4 
-• mapping and understanding the “supply-chain” of claims, and 
-• “capturing” the value of discourse and disagreement. 
-Scope 
-This document intends to provide recommendations for the key components of 
-the TrustFinder environment and for their structure and relationships from the 
-perspective of knowledge management and behavioral modification in the context 
-of crowdsourcing solutions, as well as to offer (i) relevant background information 
-regarding the basis of these recommendations and (ii) a discussion of the 
-potential implications of their implementation. It does not provide (i) exhaustive 
-recommendations for user experience or presentation, or (ii) detailed 
-recommendations or technical requirements for data structure or security 
-assurances. Names for components within these recommendations should be 
-adapted to optimize user experience and onboarding. A developed TrustFinder 
-system may differ substantially from recommendations given technical 
-constraints or opportunities. 
-Structure of this Document 
-This document consists of (i) a Systems Definition section concerned with the 
-components of the TrustFinder system, separated into 5 segments: (a) Agents 
-and Workspaces, (b) Media, (c) Claims, (d) Questions, and (e) Reputation; (ii) an 
-Implications section, which discusses the potential implications of explicit and 
-implicit mechanisms within the recommended system; and (iii) a Background 
-section, which provides a synthesis of theory and frameworks used to inform 
-design. Within the Systems Definition section, explicit mentions of system 
-components are bolded outside of their respective sections for reference 
-purposes. Component attributes, related interfaces, and other objects are bolded 
-and/or italicized for clarity where necessary.  
-Definitions and Word Usage 
-“Combinator” is used within this document to describe an empty interface that 
-allows a set of objects which do not necessarily share common methods or attributes 
-to be used in fields which establish complex relationships between said objects. 
-Borrowed and adapted from library organization design patterns within the Haskell 
-programming community, wherein "combinators" are used to combine values of a 
-given type in various ways to create more complex, and context-rich instances of 
-that type.  
-“Decorator” is used within this document to describe an empty interface used in 
-order to allow a set of objects which do not necessarily share common methods or
+The Active Inference Institute
+As of August 2023, The Active Inference Institute is a registered non-profit organization,
+tasked with identifying, establishing, and managing the sustainable implementation of:
+(i) administrative and governance functions to give components of the Active
+Inference Ecosystem coherent forms and reliable channels of communications,
+(ii) publishing, and licensing protocols that establish open and fair use and
+effective dissemination of community products within and beyond the Ecosystem,
+(iii) services at the scale of individual humans and the community at large so that
+stability is protected while risk and uncertainty are minimized within the Ecosystem, and
+(iv) organization and operation of cyber and cognitive security systems that
+ensure productivity, inclusivity, accessibility, and safety in discourse and collaboration,
+Figure 1 shows the structure of the Institute and engagements with the Ecosystem.
+Figure 1. Active Inference Institute & the Active Inference Ecosystem.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+5
+
+![page5_img1.png](images/page5_img1.png)
+
+![page5_img2.png](images/page5_img2.png)
 
 ## Page 6
 
-TrustFinder 2022 
-5 
-attributes to be used in a field without modifying the behavior or structure of that 
-object. 
-“Genuine Presence Testing” describes the set of security assurances which use 
-biometrics, computer vision, and geographic data related approaches to 
-authenticate the presence of a particular person using a device.  
-“Interface” is used within this document to refer to general “programming 
-interfaces” unspecific to any language, i.e., (i) an object which enables 
-polymorphism, (ii) an object which represents a contract fulfilled by the ability to 
-perform some function or deliver some attribute, or (iii) a vehicle for the inclusion 
-of multiple classes of object within a field which requires type assertion (i.e., a 
-Decorator). 
-“TrustFinder Environment” is used to describe the space of engagement with the 
-common TrustFinder infrastructure generally, through workspaces or otherwise.
+To date, The Institute has hosted or facilitated the development of hundreds of
+open-source licensed products which serve various functions in the Ecosystem
+including Awareness, Education, Commons, Support, and Governance (Figure 2, see
+Appendix for details on livestreams, courses, research papers, games, tools, etc.).
+Despite its minimal budget with volunteer-only staff, The Institute’s level of community
+engagement and productive outputs compare favorably with some well-resourced
+research think tanks and centers of excellence. At the same time, the rapid growth of
+the
+Active Inference community, brings attention towards building pathways to
+sustainability for both The Institute as an organization and the open source Ecosystem
+as a whole.
+Figure 2. Open Source Products of The Institute (left side) support various Functions in
+the Active Inference Ecosystem (right side).
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+6
+
+![page6_img1.png](images/page6_img1.png)
+
+![page6_img2.png](images/page6_img2.png)
 
 ## Page 7
 
-TrustFinder 2022 
-6 
-System Definition 
-Agents and Workspaces 
- 
-User 
-User refers to users of TrustFinder, individuals who are seeking to enrich web and 
-document content and collect and evaluate claims. Users must engage with security 
-assurances (e.g., genuine presence testing) in order to register and engage with 
-certain aspects of the system (e.g., User Assertions). 
-Invitation Tree 
-Users can invite others to TrustFinder. Each User invited, and each invited 
-by those invitees, up to 6 degrees of separation, are included within the 
-inviter’s Invitation Tree with their respective degree of separation (see 
-Figure 1, degrees of separation). Invitation trees are not visible to other 
-Users, and are used primarily to provide foundation for network-related 
-impact scoring. It is recommended that in the future, there are methods 
-devised to allow users to share the credit of invitation of new members 
-and that invitation trees related to specific workspaces (i.e., tracking 
-invitations to workspaces, as opposed to the platform as a whole), are 
-implemented. 
-Real World Credentials 
-Users can attach real world credentials, such as higher education degrees 
-and professional certifications to their account. 
-Pseudonyms 
-Users can create multiple Pseudonyms (i.e., usernames) for use within the 
-TrustFinder 
-environment. 
-Users 
-may 
-selectively 
-disclose 
-which 
-credentials, if any, and what aspects of those credentials to attach to 
-Pseudonyms (e.g., “a Master’s degree in computer science” as opposed to 
-“a Master’s degree from this university”). Pseudonyms may be used to 
-engage with any activity within the TrustFinder environment with the 
-exception of User Assertions, which must be tied directly to the User’s 
-account.
+Our Vision
+The Active Inference Institute (“The Institute” from here on) serves as a scaffold for
+stabilizing and connecting myriad fields around a central tradition and approach called
+“Active Inference.” The Institute aims to make the Active Inference framework and the
+Ecosystem we serve more accessible, applicable, rigorous, and integrated. We facilitate
+theoretical and applied engagement with Active Inference, promoting awareness of the
+field within the lay, academic, public-sector, and professional communities. We envision
+a future in which the term “Active Inference” is used as widely as “Machine Learning”,
+as a result of its demonstrated utility and impact in a variety of domains.
+Our Values and Principles
+We are committed to fostering a culture of excellence, collaboration, and innovation.
+Our values and principles serve as the guiding principles that shape our work and
+define our organization's character.
+Active Inference and Exploration. At The Institute, we embrace the principle of Active Inference
+and exploration as a fundamental driving force. We actively cultivate a culture of curiosity and
+continuous learning. Through engaging in diverse research endeavors and actively exploring our
+environment, we enrich our understanding and drive impactful collaborative research.
+Integrity & Inclusivity. We strive to uphold and promote honesty, accountability, professionalism,
+as well as responsible conduct in research, education, and facilitation among members of The
+Institute, Ecosystem, and communities we serve. We foster diversity, respect, and inclusion
+through community engagement. We treat differences in perspective and understanding as a
+wellspring of valuable creative and productive potential, driving breakthroughs and strengthening
+collaborative research outcomes.
+Dynamic Internal Modeling: At The Institute, we utilize a cutting-edge modeling-based approach
+to support shared informational niches for different scales, spanning the Ecosystem, Institute,
+Organizational Units, and Projects. We continuously develop and refine hierarchical models,
+drawing
+on
+sensory
+information,
+exploiting
+data,
+and
+gathering feedback. Our dynamic
+self-modeling enables efficient resource allocation.
+Anticipatory Behavior: The Institute's commitment to anticipatory behavior equips us to excel in
+uncertain environments. Leveraging our internal models, we generate predictions at various
+scales and time horizons, empowering us to take initiative and adapt our policies accordingly.
+This forward-thinking approach enables us to plan strategically and make informed decisions,
+thus remaining at the forefront of our fields.
+Continuous Development: Embodying the ideas of open-endedness and techno-evolution, we
+wholeheartedly embrace the principle of continuous development at The Institute. Recognizing
+the dynamic nature of our environment and the constant advancements in science and
+technology, we continually evolve our internal models and approaches. This perpetual learning
+and evolution enable us to remain adaptive and at the cutting edge of our fields, driving impactful
+research that contributes significantly to the scientific community.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+7
+
+![page7_img1.png](images/page7_img1.png)
 
 ## Page 8
 
-TrustFinder 2022 
-7 
- 
-Figure 1. User Invitation Tree 
-Workspace 
-Workspaces are the basis for engagement within the TrustFinder environment. 
-User’s may create and be invited to multiple Workspaces. Workspaces represent 
-projects related to sensemaking (e.g., a research paper, studying, exploration of a 
-topic), and are used as containers for objects relevant to that work.  
-• Workspaces may be instantiated using a Claim or Question (e.g., where 
-research on a particular question is the driving motive behind intended 
-work) and can be populated with Workspace Objects based on the 
-presence of certain Stigmergic Tags within those objects, as well as other 
-conditions (e.g., time period, object type).  
-• Workspaces make use of Clearinghouses in order to manage the dynamic 
-import and export of digital goods (i.e., Workspace Objects). 
-• Workspaces may be given their own sets of Entity Tag Types, Custom Tag 
-Types, Contribution Trust Scores, and Assertion Trust Scores.
+Priorities and Challenge Areas
+We address the following challenge areas at the Active Inference Institute, enabling the
+Ecosystem to make even broader impacts:
+Education: Scientific Literacy and Workforce Development. Active Inference relies on
+mathematical formalisms and is loaded with abstract conceptual challenges that transcend
+disciplinary boundaries. By modeling educational processes such as pedagogy, competency
+evaluation, and professionalization in the Active Inference framework, The Institute catalyzes
+workforce development, seeks to stabilize the “research to practice” gap, and contributes to the
+broader project of participation in scientific ecosystems.
+Research: Grounding the Cognitive Sciences in Physics. Research across the natural
+sciences suffers from a lack of theoretical integration and practical collaborations. The Active
+Inference framework provides a unifying first-principles account of vital features of biological
+systems, transcending disciplinary boundaries. At The Institute we promote this theoretical
+integration through various educational programs, supporting learners of all backgrounds.
+Information Science and Diverse Intelligences. Modern information environments are faster
+and more complex than ever. At The Institute we apply Active Inference to understanding,
+monitoring, evaluating, refining, and developing artificial and synthetic (e.g., human-machine
+interface, organizational, crowd) intelligence systems. This work is enacted by projects currently
+related to information science, ontology, data quality control, artificial intelligence explainability,
+and knowledge engineering.
+User Experience, Accessibility, and Sociotechnical Design. It remains an open challenge
+how to enable sustainable engagement in digital systems. At The Institute we map cognitive
+frameworks to design, user experience, ergonomics, and requirements engineering, to offer new
+methods and tools to a wider community of professionals and scholars.
+Cyber and Cognitive Security. Individuals and organizations today are confronted with a
+rapidly-evolving landscape of threats to digital and cognitive security. At The Institute we work to
+unify cognitive frameworks with existing cyber security and emerging cognitive security concepts
+and frameworks, to understand, measure, and address local and global information technology
+risks and impacts more effectively at multiple scales.
+Scaling the Active Inference Ecosystem. The nascency of the Active Inference Ecosystem
+enables us to take a proactive approach towards various areas of consideration. At The Institute
+we create synergy among the efforts applied to the above challenge areas, and emerging needs
+of the Active Inference Ecosystem. This approach creates an opportunity to learn by doing and to
+embrace convergence research, where implementations are developed in parallel with theory,
+supported by regular information sharing and collaboration among practitioners and researchers.
+Applying Active Inference. Bringing the insights from empirical and theoretical Active Inference
+research into practice by designing new projects or communicating with existing projects that
+design and implement social system infrastructure, such as health infrastructure and cultural
+technologies that support human wellbeing [49]. Supporting projects in the Ecosystem that design
+and implement solutions to various problems we face, such as climate change or overall
+polycrisis [85,107–110].
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+8
 
 ![page8_img1.png](images/page8_img1.png)
 
 ## Page 9
 
-TrustFinder 2022 
-8 
-• Workspaces have two classes of User within, Administrators and Members. 
-Administrators have permission to manage high level aspects of the 
-Workspace, including setting Clearinghouse import and export conditions, 
-Entity Tag Types, Custom Tag Types, and the Workspace’s Contribution 
-Trust Scores and Assertion Trust Scores. It is recommended that, at the 
-outset, role and permissions related governance are kept as simple as 
-practicable, while allowing for opportunities to adapt and related features 
-in response to need and interest. 
-Workspace Object 
-Workspace Object is a decorator for the following objects: Authors, 
-Publishers, Artifacts, URLs, Content, References, Claims, Claim Instances, 
-Claim Combinators, Claim Clusters, Questions, Question Instances, 
-Question Combinators, User Assertions, and Stigmergic Tags.  
-Clearinghouse 
-The Clearinghouse represents the import or export channel for Workspace 
-Objects between the Workspace and another Workspace or set of 
-Workspaces. It contains conditional statements for managing the 
-dynamic (i.e., active or ongoing) import and export of Workspace Objects, 
-and a Buffer. The Buffer is used where Workspace administrators opt to 
-approve items individually before they are added to the local Workspace 
-environment or before they are available for export to external 
-Workspace. 
-Clearinghouses 
-are 
-directional, 
-with 
-export-oriented 
-Clearinghouses making digital goods “available” based on conditional 
-statements to the Workspaces specified, allowing those Workspaces to 
-create respective import Clearinghouses in response; and with import-
-oriented Clearinghouses acting as “listening posts” waiting for exports to 
-be made available. 
- 
-Figure 2. Workspace relationships
+The Way Ahead
+To deliver on these challenge areas and to ensure the continued facilitation of the Active
+Inference Ecosystem in coming years, The Institute will pursue the following initiatives:
+Administrative and Financial Support. Finding and allocating the necessary seed resources to
+establish dedicated administrative support for The Institute and the necessary infrastructure (e.g.,
+accounting, legal, digital affordances, materials), to request and receive donor and sponsor
+support, and to offer and dispense micro-grants and financial support to researchers and
+collaborators.
+Publishing
+and
+Licensing
+Support.
+Developing
+publishing
+affordances
+and
+publishing
+facilitation systems to assist contributors in identifying and applying correct licensing, reducing
+time-to-impact for research and educational artifacts, and enhancing access to knowledge of
+other Ecosystem participants.
+Facilitation, Research, and Project Support. Providing both direct and tool-based support and
+coordination to emergent professional and research teams to extend their impact and reduce
+uncertainty in interorganizational collaboration; for example, by providing access to common
+digital storage and workspace, research and modeling tools, common information sharing and
+licensing models, and grant and project management systems.
+Human Resources Development. Instantiating the necessary human resources and learning
+management systems to support The Institute’s volunteers and staff in fostering productivity,
+inclusivity, connectivity, and safety in discourse and collaboration.
+Community Engagement. Creating and, where applicable, automating feedback mechanisms
+for ensuring that the community remains productively engaged. Delivering quality content
+updates, moderating community discourse to ensure compliance with our culture and values, and
+responding to community feedback.
+Community
+User
+Experience,
+Ergonomics,
+and
+Design
+Systems.
+Connecting
+Active
+Inference to the user experience, ergonomics, and design communities to both better identify and
+understand relevant best practices and to apply these within the Ecosystem and The Institute.
+Establishing
+design
+patterns
+for
+consistent
+communications,
+feedback
+mechanisms,
+and
+semiotics, and improving the onboarding and working experience for new and existing users of
+Active Inference and derivative tools, methodologies, and materials.
+Communications
+and
+Public
+Relations
+Planning.
+Collaborating
+with
+communications
+professionals and establishing a communications plan and necessary supporting tools to allow for
+the regular, professional, and tailored communications necessary for a community of this size and
+diversity, with an eye toward supporting rapid growth of new partners and users, and responding
+to and integrating community feedback.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+9
 
 ![page9_img1.png](images/page9_img1.png)
 
 ## Page 10
 
-TrustFinder 2022 
-9 
-Media 
- 
-Author 
-An Author object is used to represent authors responsible for Content. Authors can 
-be assigned to Content (for attribution). Users and Workspaces may assign Authors 
-an Assertion Trust Score. Authors may be given additional attributes over time, 
-such as funding sources, affiliations, and academic credentials and professional 
-certifications. 
-Publisher 
-A Publisher object is used to represent the publisher responsible for Content. 
-Publishers can be created and assigned to Content (for attribution). Users and 
-Workspaces may assign Publishers an Assertion Trust Score. Publishers may be 
-given additional attributes over time, such as funding sources and parent 
-organizations. 
-Artifact 
-Artifacts are an object used to represent a stable container for Content, such as a 
-PDF or JPG. Artifacts can be linked together as “near duplicates”, where the contents 
-and identifiers are identical, but the resulting hash of the contents are not as a result 
-of file type, resolution, or other adaptations. It is recommended that a combination 
-of Artifact data and data from linked Content objects be used as a basis for defining 
-annotation presentation when viewing the Artifact. 
-URL 
-The URL object is used to represent unstable, potentially dynamic, web-hosted 
-containers for Content. The URL object is recommended to be paired with the use 
-of link-rot and content change detection approaches in order to alert Workspace 
-members to potential Content changes. It is recommended that a combination of 
-URL data and data from linked Content objects be used as a basis for defining 
-annotation presentation when viewing the URL. 
-Content 
-The Content object is used to represent units of referenceable information. As such, 
-it might represent an entire book, a book chapter, an area under a subheading, a 
-segment of an image, an entry in a glossary, etc. The Content object can point to 
-other Content objects contained within (e.g., a chapter in a book, or a subheading in 
-a chapter, a figure in a subheading), can point to other variants (e.g., a translated 
-version, a republishing), and be found across multiple Artifacts. Content is expected 
-to be assigned an Author, Publisher, and Date of Release, and can contain Claim 
-Instances, Question Instances, and References.
+History of The Institute
+The Active Inference Institute’s origin lies in a co-founder team meeting around a
+common
+interest:
+the
+Active
+Inference
+framework.
+This
+resulted
+in productive
+collaboration and the publication “Active Inference & Behavior Engineering for Teams” in
+September 2020 [94]. Following the publication, discussions turned towards exploring
+approaches that could catalyze the accessibility, rigor, and applicability of Active
+Inference, and how to merge the developing framework with Systems Engineering and
+Open Science. Out of these discussions an “Active Inference Lab” (or ActInfLab) was
+formed and began operations in 2021. Over the coming months, dozens of individuals
+from around the world would come to engage with ActInfLab through various projects
+such as educational livestreams, open source publishing, collaborative research
+projects, focused learning groups, and early-stage development of the Active Inference
+Ontology. From the first quarter of operations, the ActInfLab hosted Quarterly
+Roundtable livestreams for communicating quarterly expectations and results to the
+community [111], a tradition that The Institute continues to this day.
+Beginning in 2022, a cohort-based Scientific Advisory Board (SAB) was established to
+connect
+the
+ActInfLab
+to
+cutting-edge
+theoretical
+work
+as
+well
+as
+various
+domain-specific applications. As interest in both the ActInfLab’s activities and Active
+Inference itself began to grow, ActInfLab soon emerged as a key facilitating organization
+in what was then a primarily academic community working on the underlying theory and
+potential implications for Active Inference. In 2022, ActInfLab made the developmental
+leap to become the Active Inference Institute, a non-profit formed in Delaware, USA (as
+of writing, we are seeking recognition as a 501c3 tax-exempt organization by the US
+Internal Revenue Service), with the intention of making its facilitatory role in the
+community sustainable, and scalable.
+Active Inference, over this time, has been attracting increased attention as a
+quantitative and cognitive framework capable of acting as a common bridge, or Rosetta
+Stone, among various domains, and is rapidly gathering support across fields (Figure
+3), which is reflected in The Institute’s increasingly diverse membership (Figure 4) and a
+literature review we conducted at the end of 2022 [112]. The transdisciplinary nature
+and flexibility of Active Inference make it an ideal candidate for practical, theoretical,
+and interoperable integration across myriad disciplines, sectors, and use-cases. The
+application of Active Inference framings across these various domains promises to
+foster
+new
+research
+frontiers
+and
+socially-impactful
+solutions
+in
+a
+variety
+of
+interdisciplinary settings.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+10
+
+![page10_img1.png](images/page10_img1.png)
 
 ## Page 11
 
-TrustFinder 2022 
-10 
-Reference 
-The Reference object is a decorator for the following objects: Direct References and 
-Implied References. 
-Direct Reference 
-The Direct Reference object is used to mark labeled, explicit references 
-within Content to external Content. A Direct Reference must be labeled 
-with a “Type”, such as “in-text reference”, “footnote”, “endnote”, or “in-text 
-citation”, indicating the style through which it presents the reference. 
-Implied Reference 
-The Implied Reference object is used to mark what the User believes to 
-be an implied reference within Content to external Content. An Implied 
-Reference must be labeled with the contributing User’s measure of 
-Certainty [0-1] about the implication (i.e., “how likely is it that the Author 
-was referencing the external Content?”).  
- 
-Figure 3. Reference relationships
+Figure 3. Proportion of citations per 100,000 on NCBI PubMed for “Active Inference”
+(blue line) from 2006 till July 31, 2023. In the last complete year (2022), there were 103
+citations for “Active Inference” of 1,772,674 publications total.
+Figure 4. Keyword scrape from affiliations within The Institute’s roster of people who
+have appeared or been invited to join for a livestream. Only 29.15% of the list had
+affiliations to scrape, and this list does not cover most participants in textbook groups
+and courses, thus it represents a preliminary and partial sample that underestimates the
+diversity of interests and backgrounds.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+11
 
 ![page11_img1.png](images/page11_img1.png)
 
+![page11_img2.png](images/page11_img2.png)
+
+![page11_img3.png](images/page11_img3.png)
+
 ## Page 12
 
-TrustFinder 2022 
-11 
- 
-Figure 4. Content relationships 
- 
- 
-Figure 5. Graphical representation of subcontent and annotation within content
+Possibilities
+Along with other modern technical fields, Active Inference faces and addresses
+challenges of broad relevance such as (i) remote education, workforce development,
+and competency evaluation, (ii) user experience, ergonomics, and accessibility in a
+modern global context, (iii) open source ecosystem, utility, reliability, and safety, (iv)
+participation
+in
+research
+and
+practice-oriented
+activities
+(v)
+cyber-
+and
+cognitive-security,
+(vi)
+theoretical
+and
+practical
+aspects
+of
+artificial
+intelligence
+explainability and safety, (vii) social and economic policy integration and management.
+Integrations featuring Active Inference are increasingly being found across public and
+private sectors. In such settings, usage of the framework supports information and
+technique
+sharing,
+contributes
+to
+common
+tools
+and
+artifacts,
+and
+enables
+documentation of best practices, protocols, and procedures. These applications are
+enabled through common education around Active Inference themes, concepts, skills,
+practices, and tools.
+As such, there is potential for The Institute to facilitate both the study (theory and
+research) and professionalization (practice and implementation) of Active Inference
+within and across myriad sectors and disciplines, and to grow the incipient Active
+Inference Ecosystem and awareness of Active Inference by facing such challenges
+proactively and in a fashion aligned with our vision, values, and principles..
+The core reason why Active Inference is being adopted so rapidly is that it provides a
+neutral, action-oriented ontology which describes a great array of complex adaptive
+systems, up to and including human social cognition [85,88]. The Active Inference
+framework can be used to describe systems at different nested scales. The applicability
+of Active Inference to multi-scale complex adaptive systems is a source of great
+explanatory power, and it is also a challenge for the framework’s coherence. Scholars
+from different disciplines or fields may read Active Inference concepts or constructs
+differently, and unknowingly build an error into their research ecology which is then
+propagated forward, thereby hampering progress in the field at large. To our knowledge,
+the Active Inference Institute is the first scaled attempt at directly tackling that risk by
+offering Active Inference education to learners of all backgrounds, and by working to
+specify an ontology that is both particular to Active Inference and broadly accessible.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+12
 
 ![page12_img1.png](images/page12_img1.png)
 
-![page12_img2.png](images/page12_img2.png)
-
 ## Page 13
 
-TrustFinder 2022 
-12 
-Claims 
- 
-Claim 
-A Claim is an object which contains a phrase and variants on that phrase which 
-express a “claim” or assertion. Claims also contain a field for Counterclaims, or Claims 
-which assert the exact opposite of the subject Claim (e.g., “x is an integer” and “x is 
-not an integer”). 
- 
-Figure 6. Claim and Claim Combinator relationships 
-Claim Combinator 
-The Claim Combinator object is the basis for forming directional relationships, or 
-edges, between Claims, Claim Clusters, and other Claim Combinators. Claim 
-Combinators are composed of a Claim Combinator Source, Claim Combinator 
-Target, and Claim Relationship. 
-Claim Relationship 
-A Claim Relationship adds context to a Claim Combinator. It is composed 
-of a Relationship Type, which describes the relationship between the Claim
+Challenges
+Rapid growth comes with new challenges and greater requirements for sustainability.
+The following challenges were identified as among the most important to address for the
+Active Inference Institute in order to support further flourishing of the Active Inference
+Ecosystem:
+Onboarding and Adoption. Learning and applying Active Inference, and onboarding into the
+Ecosystem, can be challenging for a variety of reasons. Active Inference involves abstract
+concepts,
+mathematical formalisms, and specific terminology, making it challenging for
+newcomers to actively engage with the framework. Given Active Inference’s transdisciplinary
+nature, learning resources must be tailored to sit at the edges of Active Inference and a variety
+of other fields (such as community-produced immersive learning experiences [113]).
+Usability of Community Tools and Resources. In addition to conceptual challenges faced
+when onboarding into Active Inference, there is a learning process to become familiar with
+community tools and ways of working (such as knowledge or project management software
+[94,96]), potentially causing user experience frictions in practical aspects of community
+onboarding. The Institute offers resources and support features to facilitate usability of
+community tools and resources (see Appendix), and plans to improve on such services in the
+future. The Institute will establish user-experience auditing and common design patterns to
+ensure a satisfactory, calm, and reliable user experience, as well as the smooth delivery of bug
+reports and feedback.
+Sustainability and Scalability of Support Functions. Support functions that would add value
+to The Institute and the Ecosystem at large include publishing and licensing support, grant and
+project management tools, and learning management systems. Making support functions
+available and scalable is a priority.
+Communications. The Institute currently manages communications across multiple platforms
+and channels with a variety of audiences and potential stakeholders in a semi-automated
+fashion according to our internal and external communication plans (see below). Scaling and
+fully automating our communication efforts will require financial and human support.
+Administrative and Financial Support. In order to address many of the challenges described
+here, The Institute will need dedicated administrative support and standardization of protocols
+and procedures related to record keeping, management of partnerships, human resources,
+financial compliance, and other operational aspects.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+13
 
 ![page13_img1.png](images/page13_img1.png)
 
 ## Page 14
 
-TrustFinder 2022 
-13 
-Combinator Source and the Claim Combinator Target contained within 
-the Claim Combinator; and a 2 dimensional vector containing the 
-contributing User’s (i) Intensity [0-1] rating (e.g., how much does the Claim 
-Combinator Source support the Claim Combinator Target) and (ii) their 
-Certainty [0-1] rating (i.e., how certain the User is of this relationship 
-between the Claim Combinator Source and the Claim Combinator 
-Target). There are 5 available Relationship Types, and while each is 
-directional - there is an implied bidirectionality (e.g., where Object A 
-supports Object B, Object B is supported by Object A). 
-• Supports | Is Supported By. Where the Claim 
-Combinator Source supports the Claim Combinator 
-Target (e.g., “x is an integer less than 2” -> supports -> “x 
-is equal to 1”). 
-• Refutes | Is Refuted By. Where the Claim Combinator 
-Source refutes the Claim Combinator Target (e.g., “x is 
-an integer less than 2”-> refutes -> “x is equal to 3”). 
-• Generalizes | Specifies. Where the Claim Combinator 
-Source generalizes the Claim Combinator Target, in that 
-it is a generalized version of the same claim (e.g., “x is a 
-symbol” -> generalizes -> “x is a mathematical variable”). 
-• Modifies 
-| 
-Is 
-Modified 
-By. 
-Where 
-the 
-Claim 
-Combinator Source modifies the Claim Combinator 
-Target, in that it is a modified version of a similar claim, 
-in that it has added conditions, refinement, or mutations 
-(e.g., “x is a mathematical variable in the context of this 
-equation” -> modifies -> “x is variable”). 
-• Relates To | Relates To. Where the Claim Combinator 
-Source relates to the Claim Combinator Target, in that 
-it is similar, communicates something about the other, or 
-shares a context (e.g., “x is an integer” -> relates to -> “y is 
-an integer”). 
-Claim Combinator Source 
-A Claim Combinator Source is a decorator for the following 
-objects: Claims and Claim Clusters. 
-Claim Combinator Target 
-A Claim Combinator Target is a decorator for the following 
-objects: Claims, Claim Clusters, and Claim Combinators.
+Next Steps
+With these challenges in mind, The Institute seeks financial and operational support to
+scale our impact in the coming years and pursue sustainability. In this document, we (i)
+formalize our organizational model (see Section titled “Institute Organization Model”), (ii)
+provide a community development and communications plan with consideration for
+measurement and evaluation (see Section titled “Community Growth and Development
+Model”), and, (iii) put forth the following initiatives to address the challenge areas here,
+with an eye toward receiving support to sustain ongoing activities (Appendix) and
+deploy new programs in the coming years.
+Administrative and Financial Support. We will develop a sustainable funding strategy that
+involves a combination of grants, donations, sponsorships, and partnerships to support The
+Institute. We will look to various grant programs to acquire the necessary resources to jumpstart
+systemization of many administrative and support functions. We will establish the infrastructure
+(e.g., accounting, legal, compliance, security) to request, receive, and provide financial support.
+Publishing and Licensing Support. Decisions regarding licensing, publishing venue can be
+complex, and can greatly delay time-to-impact of some work products, and prevent others from
+ever coming to fruition. We will continue to develop publishing affordances and publishing
+facilitation systems to assist contributors in applying open-source licensing, thus leveraging the
+visibility of their work and reducing time-to-impact for research and educational artifacts.
+Facilitation,
+Research,
+and
+Project
+Support.
+Interorganizational
+and
+interdisciplinary
+collaboration is rewarding but potentially hazardous due to differences in ontology and working
+norms. We will systemize facilitation tools (e.g., project management tools, grant facilitation
+tools), to reduce conflict and uncertainty in emergent professional and research teams. Further,
+we intend to streamline other support functions, such as accessibility to common digital storage
+and workspaces, and research modeling tools.
+Human Resources and Community Development. In a community of this size, there is a need
+for dedicated human resources and community management roles, as well as systemization of
+educational offerings for ease of access. We will prioritize instantiating the necessary human
+resources, community, and learning management systems to support The Institute’s volunteers
+and staff in fostering productivity, inclusivity, integrity, and safety in discourse and collaboration.
+Community User Experience, Ergonomics, and Design Systems. We will leverage the
+expertise of user experience and ergonomics experts to audit and improve the user experience
+within the Active Inference community. Design patterns for consistent user experience and
+feedback will be prioritized, with an emphasis on improving the onboarding and working
+experience for users of Active Inference and foundational tools, methodologies, and materials.
+Communications and Public Relations Planning. In order to sustain the community, The
+Institute needs to interface with a variety of communities and stakeholders. In addition to
+establishing administrative functions for the maintenance and development of partnerships and
+funding support, we also plan to work with communications professionals to refine and streamline
+our existing communications plan (see Communications Plan below). This will allow us to scale
+our regular, professional, and tailored communications as the size and diversity of the Active
+Inference Ecosystem increase.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+14
+
+![page14_img1.png](images/page14_img1.png)
 
 ## Page 15
 
-TrustFinder 2022 
-14 
- 
-Figure 7. Claim Combinator relationships 
-Claim Instance 
-A Claim Instance is an object representing the annotation of the presence of a Claim 
-within a particular piece of Content. A Claim Instance must be labeled with the 
-contributing User’s measure of Certainty [0-1] about the Claim Instance (i.e., “how 
-likely is it that this Claim is what the Author is discussing or asserting?”).  
-• A User may mark a Claim Instance as Asserted True, Asserted False, or 
-Discussed, in order to indicate whether the Author of the Content is 
-asserting the relevant Claim is True or False, or simply discussing it, 
-respectively. 
-• A User may mark a Claim Instance as Explicit or Implicit, in order to indicate 
-that the Author of the Content is discussing the underlying Claim directly, 
-or if the Claim is latent or implied in the Content. 
-• 
- 
-Figure 8. Claim Instance relationships 
-Claim Cluster 
-A Claim Cluster is a container for a set of Claims which are grouped together for the 
-purpose of conjecture, context, or collation (e.g., [“x is an integer”, “x is a positive 
-number”, “x is a number less than 2”, “x is a number greater than 0”] -> supports -> 
-“x is equal to 1”).
+Institute Organization Model
+Institute Governance and Leadership
+Members
+The legal founding members of The Institute are Alexander Vyatkin, Virginia Knight,
+Ivan Metelkin, Daniel Friedman, and Karl Friston.
+Board of Directors
+The inaugural cohort of the Board of Directors has been in operation since the end of
+2022 [114]. The Board of Directors is composed of individuals with expertise in Active
+Inference, governance, fundraising, and various other domains. They meet quarterly
+and are responsible for setting the organization's strategic goals, providing oversight,
+and ensuring compliance. The current Board of Directors in 2023 is: Rafael Kaufmann,
+John Clippinger, Daniel Friedman, Dean Tickles, Bleu Knight, and Mike Smith.
+Scientific Advisory Board
+The Scientific Advisory Board comprises external experts in Active Inference and
+related research areas who provide guidance, review grant proposals, and offer advice
+on scientific integrity [115]. The first Scientific Advisory Board was active during 2022,
+and currently we are engaged with the second cohort in 2023: Bradly Alicea, John Boik,
+Matt Brown, Scott David, Shady El Damaty, Jeff Emmett, Chris Fields, Karl Friston,
+Holly Grimm, Sarah Hamburg, Victor Kariuki, Anatoly Levenchuk, Maxwell J. D.
+Ramstead, Adeel Razi, and Michael Zargham.
+Officers
+The first set of Officers was installed at the end of 2022 with the following positions:
+Daniel Friedman (President and Treasurer)
+As President, responsible for overall leadership, direction, and activities of the
+organization. As Treasurer, responsible for managing the financial activities of The
+Institute.
+Alexander Vyatkin (Vice President)
+Supports the objective of the President and assumes these responsibilities when
+necessary. Focused on defining and implementing effective ways of working for The
+Institute/Units/Project scales, integrating state of the art methods, practices, and
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+15
 
 ![page15_img1.png](images/page15_img1.png)
 
-![page15_img2.png](images/page15_img2.png)
-
 ## Page 16
 
-TrustFinder 2022 
-15 
-Questions 
- 
-Question 
-A Question is an object which contains a phrase and variants on that phrase which 
-express a “question”, Prompts (Question Combinators which might inspire or beg the 
-question), and Responses (Question Combinators which might be answers or 
-responses to the question).  
-Question Combinator 
-A Question Combinator is a decorator for the following objects: 
-Claims, Claim Clusters, and Questions. 
- 
-Figure 9. Question relationships 
-Question Instance 
-A Question Instance is an object representing the annotation of the presence of a 
-Question within a particular piece of Content. A Question Instance must be labeled 
-with the contributing User’s measure of Certainty [0-1] about the Question Instance 
-(i.e., “how likely is it that this Question is what the Author is discussing or asking?”).  
-• A User may mark a Question Instance as Explicit or Implicit, in order to 
-indicate whether the Author of the Content is discussing the underlying 
-Question directly, or if the Question is latent or implied in the Content.
+technologies into operations. In charge of organizational design, ensuring continuous
+evolvement of services and organizational functions.
+Bleu Knight (Secretary)
+Oversees logistical and operational projects. Supervises organizational processes such
+as official meetings and votes. Oversees efforts geared toward financial and HR
+compliance.
+Institute Units (Support, Projects, and Programs)
+Administrative Unit
+The Institute Administrative Unit will be established upon receiving the necessary
+funding to support operations. Members of the Administrative Unit will be paid
+subcontractors and employed staff, assisting with and performing administrative and
+support tasks within The Institute and the wider Ecosystem, such as recordkeeping,
+graphic
+design,
+data
+input,
+formatting,
+copywriting,
+grant
+proposal submission,
+preparation and compliance, and other various administrative and support activities.
+They will also contribute to the development of core infrastructure to provide such
+support and automate or systematize and standardize tasks, and become the
+organizational umbrella for financial, human resources, internship, volunteer, security,
+community moderation and management, and related activities and organizational
+components. These tasks are currently assumed by The Institute’s officers, who will
+continue to provide oversight as the unit develops formally.
+EduActive Unit
+The Institute’s Education Unit facilitates (i) textbook groups, (ii) course development, (iii)
+production, editing, and review of educational materials, and (iv) review, feedback, and
+integration of external educational materials.
+See Table A1 for a description of projects in the Education Unit.
+Example Outputs:
+●
+Video Live Streams
+●
+Active Inference Journal
+●
+Courses and Educational Groups
+●
+Events
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+16
 
 ![page16_img1.png](images/page16_img1.png)
 
 ## Page 17
 
-TrustFinder 2022 
-16 
-User Communications 
- 
-User Assertion 
-A User Assertion is an interface representing a User’s personal assertion about the 
-truth or falsity of a particular Claim or Claim Instance in the form of an 
-Endorsement or Warning object. Unlike other annotation affordances, which may be 
-contributed to Workspaces by a User’s chosen pseudonym, it must be attached to 
-the User’s account. A User Assertion may be attached to either a Claim or a Claim 
-Instance, creating an option to offer either a Global or Local assertion - as a User 
-Assertion attached to a Claim Instance will only be available when interacting with 
-that particular instance of the claim in some Content, whereas a User Assertion 
-attached to a Claim would be available both during interactions with that Claim 
-object, but also during interactions with any of its instantiations (i.e., Claim 
-Instances). A User Assertion must be accompanied by a plain text explanation, and 
-a 2-dimensional vector containing the contributing User’s (i) Intensity [0-1] rating 
-(e.g., “How untrue or true is this claim?”, and (ii) Certainty [0-1] rating (e.g., i.e., how 
-certain the User is of this evaluation). It may also be accompanied by User Assertion 
-Support objects, such as additional Claims. It is recommended that Users be 
-required to engage with identity assurance tests (e.g., Genuine Presence Testing) in 
-order to post User Assertions.  
-User Assertion Target 
-A User Assertion Target is a decorator for the following objects: Claims 
-and Claim Instances.  
-User Assertion Support 
-A User Assertion Support is a decorator for the following objects: Claims, 
-Claim Clusters, and References.  
-Warning 
-User Assertions which are intended to warn others of the contents of a 
-Claim or Claim Instance (e.g., “this claim may be false”, “this claim is 
-certainly false and is likely made in bad faith”) 
-Endorsement 
-User Assertions which are intended to endorse the contents of a Claim 
-or Claim Instance (e.g., “this claim may be true”, “this claim is certainly 
-true, and could only be refuted in bad faith”).
+●
+Standards and Qualifications
+●
+Educational Games
+Ongoing Initiatives:
+●
+Educational Materials and Documentation. Developing and disseminating
+educational
+materials, methodology and tool documentation and tutorials,
+contributing
+to
+competency,
+capability, and common language within the
+community.
+●
+Courses. Developing educational courses and course management software to
+streamline hosting, development, and requests for content from the community.
+●
+Livestreams and Events. Releasing Livestreams regularly. Planning and
+coordinating
+symposia
+and
+other
+events
+for
+education
+and
+continuing
+professional development.
+●
+Active Inference Ontology. Integrating Active Inference with formal ontologies
+(such as the axiom-driven Suggested Upper Merged Ontology [60]). Among the
+affordances to be expected from deeply axiomatizing Active Inference within a
+global formal ontology are detecting and correcting gaps, identifying development
+opportunities for domain-specific engagements, and facilitating use in translation
+and educational work across human and computer languages
+●
+Qualification system. Developing an Active Inference qualification system that
+centers and standardizes referenceable levels of skills and knowledge in order to
+help individuals adapt and thrive in various professional and personal contexts. A
+scientific foundation will ensure that the system is based on the latest research
+and insights, enabling it to maintain effectiveness and relevance. Such systems
+might also be integrated (and normatively cross referenced) with existing
+professional and credentialing systems (e.g. in psychology, academia, law,
+medicine, engineering).
+ReInference unit
+The
+Institute’s
+ReInference
+unit
+facilitates
+(i)
+the
+forming
+of
+fit-for-function
+interdisciplinary research teams, (ii) the development and execution of research
+proposals and projects aligned with the mission of The Institute and challenges faced by
+The Institute and Ecosystem at large. The ReInference unit is committed to hosting and
+sharing all relevant data, findings, publications, tools, and derivative artifacts under
+open-source or similarly accessible licensing agreements wherever practicable and
+appropriate.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+17
+
+![page17_img1.png](images/page17_img1.png)
 
 ## Page 18
 
-TrustFinder 2022 
-17 
-Stigmergic Tag 
-A Stigmergic Tag is a decorator for the following objects and interfaces: Requests, 
-Rallies, Remarks, Entity Tag Instances, and Custom Tag Instances, each of which 
-is intended to structure User communications at scale and can be attached to nearly 
-any other TrustFinder object (exception being Users and Workspaces) including 
-other Stigmergic Tags.  
-Request 
-A Request is an interface for Stigmergic Tags which ask or “ping” other 
-Users within a Workspace to engage in a specific action. Requests can be 
-suggested to be resolved by those who respond, and may be resolved by 
-Workspace administrators or the original contributor of the Request. A 
-Request must be accompanied by the contributing User’s Intensity [0-1] 
-rating (i.e., “how urgent or important is it that this request be responded 
-to?”). 
-• Skeptical. A request for clarification about an object or topic from a 
-position of skepticism (i.e., uncertainty with an interest in evaluation). 
-• Curious. A request for clarification about an object or topic from a 
-position of curiosity (i.e., uncertainty with an interest in exploration).  
-• Search. A request for more information about an object or topic which 
-may be already known or more easily searchable by other members of 
-the Workspace (e.g., “are there other papers on this specific 
-phenomena mentioned here?”). 
-• Catalog. A request specifically intended to prompt the annotation or 
-cataloging of information found by someone more capable (e.g., “please 
-annotate this potential Claim Instance”).  
-• Custom Request. Workspaces can implement local, specific Request 
-tags to meet their own needs.  
-Rally 
-A Rally is a special Stigmergic Tag which adds to the Intensity rating of 
-other Stigmergic Tags in order to help direct attention within a 
-Workspace and reduce the likelihood of duplicates or simply directs 
-attention to a particular object. A Rally must be accompanied by the 
-contributing User’s Intensity [0-1] rating (i.e., “how urgent or important is 
-it that others see this?”). 
-Remark 
-A Remark is a Stigmergic Tag which is used to add plain text for 
-miscellaneous comments. A Remark must be accompanied by the
+See Table A2 for a description of projects in the ReInference unit.
+Example Outputs:
+●
+Research Papers
+●
+Literature Review and Meta-Analysis
+●
+Software and Tools
+●
+Distributed Facilitation
+●
+Standards Development and Contribution
+Ongoing Initiatives:
+●
+Computational and Storage Resources. Streamlining access to computational
+resources and tools for research and educational purposes.
+●
+Project Facilitation Tools & Support. Pending funding, providing both direct
+and
+tool-based project management and facilitation support to emergent
+professional and research teams to extend their impact.
+●
+Volunteers
+and
+Internship
+programs.
+Providing
+multiple
+and
+diverse
+opportunities to individuals willing to commit to role-based contribution, tailored to
+their circumstances where possible, to offer opportunities for hands-on learning
+and experience.
+●
+Publishing & Licensing Support. Continuing to develop publishing affordances
+(such as the Active Inference Journal) and publishing facilitation systems to
+assist
+contributors
+in
+identifying
+and applying correct licensing, reducing
+time-to-impact on research and educational artifacts, and getting access to more
+knowledgeable others.
+●
+Scaffold
+domain-
+and
+system-specific
+connections
+through
+liaisons.
+Facilitating interdomain liaison relationships. For example at the intersection of
+Active Inference with Robotics, the ongoing work by JF Cloutier [116] at The
+Institute applies the principles of Active Inference to implement unsupervised,
+symbolic machine learning in autonomous robots.
+●
+Explore new forms of peer review. Providing tools and protocols for distributed
+collective sensemaking that can be applied towards situated scientific practices,
+by incorporating them in novel publishing, evaluation and curation workflows
+[85,117]. The Active Inference Journal can serve as a test-bench for initial
+prototyping efforts, improving its function of archiving, indexing, translating,
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+18
+
+![page18_img1.png](images/page18_img1.png)
 
 ## Page 19
 
-TrustFinder 2022 
-18 
-contributing User’s Intensity [0-1] rating (i.e., “how urgent or important is 
-it that others see this?”).  
-Entity Tag 
-An Entity Tag is a tag which indicates the presence of a reference (not to 
-be confused with References) in Content to a specific entity, such as a 
-concept, idea, person, place, or thing.  
-• Entity Tag Type. An Entity Tag Type is a container for the schema and 
-details of a Custom Tag (e.g., attributes and respective values of the 
-particular Entity Tag, related entities, parent and child Entity Tags, and 
-aliases). 
-Custom Tag 
-A Custom Tag is an interface for Stigmergic Tags named and implemented 
-by Workspaces for local use. It acts as a compensating control for where 
-no other tag structure is adequate for what the Workspace needs to 
-represent or mark.  
-• Custom Tag Type. Custom Tag Type is a container for the schema and 
-details of a Custom Tag. 
- 
- 
-Figure 11. User Communications relationships
+curating, and disseminating, and implementing a peer review system for certain
+kinds of publications.
+●
+Applications
+to
+sensemaking.
+Expanding
+and
+extending
+ontology
+and
+sensemaking frameworks. The Active Entity Ontology for Science (AEOS) [85]
+can be extended to cover sensemaking more broadly, by specifying active and
+informational entities and the relevant interactions between them. The Suggested
+Upper Merged Ontology (SUMO) [118] [62] seems to offer the best combination
+of broad coverage and theoretical rigor as an open-source upper-level ontology
+framework.
+●
+Cognitive modeling of organizations. Supporting organizational modeling. The
+Active Inference ontology can then serve as a scaffold for building multi-agent
+simulations of collective sensemaking in cadCAD and Active Blockference [119],
+as well as the basis for specification of protocols to guide the development of
+digital sensemaking tools and networks [120]. Hybrid societal organizations,
+whether academic, corporate, or other, can leverage these simulations to
+anticipate potential disruptions or challenges in their communication networks.
+Volunteer Program
+As a community-driven open science organization, there are multiple opportunities for
+contribution. All backgrounds, time zones, time availability, and levels of familiarity with
+Active Inference are welcome and encouraged. Volunteers are active learners who want
+to contribute to ongoing projects at The Institute. Volunteers have the opportunity to
+engage in and lead a wide array of projects without any constraints on their type or
+quantity. These projects encompass a range of activities such as study groups,
+livestreams, marketing initiatives, publications, symposiums, and applied research.
+Internship Program
+The Active Inference Institute Internship Program is a 1-6 month program (tailored to
+individual circumstances), in which accepted applicants participate in Learning Groups,
+Projects, and other functions within The Institute, developing team and project skills and
+familiarity with Active Inference. Interns receive a 1:1 mentor who catalyzes their work
+through a shared document and periodic check-ins. Upon successful completion,
+Interns receive acknowledgement and certification and, where appropriate, letters of
+recommendation for their next endeavors.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+19
 
 ![page19_img1.png](images/page19_img1.png)
 
 ## Page 20
 
-TrustFinder 2022 
-19 
-Reputation 
-There are five separate base types of Reputation in the TrustFinder system: CQ 
-Annotation Score, Mapping Impact Score, Network Impact Score, Contribution 
-Trust Score, and Assertion Trust Score. Each is a relatively simple metric 
-representing a signal of trust based on past interactions which can be used within 
-the TrustFinder environment or by third parties in order to generate other, optional 
-forms of reputation calculation metrics to Users. Nearly all are defined exclusively 
-through set construction and calculation of cardinality, with the only exception being 
-Network Impact Score, which uses set construction in combination with a standard 
-decay function. 
-CQ Annotation Score 
-The Contribution Quality (CQ) Annotation Score is a simple metric intended to 
-represent the volume of a particular User’s direct contributions to identifying claims 
-and questions found in Content (i.e., Claim Instances, Question instances), within 
-the context of a Workspace or a collection of Workspaces. Relevant objects include 
-(i) Claim Instances and Question Instances where the User was the initial 
-contributor (e.g., the discoverer of a given claim), and (ii) the Claim Instances and 
-Question Instances which were contributed within or imported to a given 
-Workspace or collection of Workspaces. The CQ Annotation Score (CQAS) is 
-defined as the cardinality of the set of Claim Instances and Question Instances 
-formed from the intersection of the set of Claim Instances and Question Instances 
-by a given User (C), with the union of the sets of Claim Instances and Question 
-Instances associated with a given collection of Workspaces (W). 
- 
-• Every Workspace has a dynamically calculated CQ Annotation 
-Score for each User which has contributed relevant objects 
-within, either as members or as a result of imports from other 
-Workspaces. This collection of scores includes scores for Users 
-who are not members of that Workspace but have contributions 
-present as a result of imports. 
-• Users can manually define a collection of Workspaces in order 
-to calculate a respective CQ Annotation Score.  
-• Users can export the underlying data used to calculate the CQ 
-Annotation Score (i.e., the set of all relevant Claim Instances 
-and Question Instances) for use in third-party curation or 
-scoring services.
+Community Growth and Development
+Here, we present the community growth and development model (Figure 2), built on the
+following 5 core components:
+i.
+Awareness. Promoting and fostering awareness and use of Active Inference,
+and developing partnerships with well-aligned organizations and communities.
+ii.
+Education. Developing and disseminating educational materials, contributing to
+competency, capability, and common language within the community.
+iii.
+Common Forum. Offering and maintaining an inclusive and accessible common
+forum for discussing, sharing, and hosting relevant work and opportunities,
+finding collaborators, and networking (i.e., an informational commons).
+iv.
+Support. Providing support for emergent teams and projects which align with
+The Institute’s mission, in the interest of innovation and impact
+v.
+Governance. Maintaining stable governance for cultivating and sustaining
+partnerships, technical infrastructure, and sponsors.
+Ecosystem Structure
+The Institute cultivates an active and engaged ecosystem around the scientific modeling
+framework of Active Inference. This vibrant Ecosystem and community drives innovation
+on the research front and makes significant strides in providing accessible education.
+The Institute ensures that efforts are well-aligned, impact-focused, relevant, and
+meaningful in advancing research and education for the betterment of society by
+forming
+partnerships
+and
+by
+engaging
+with and growing the Active Inference
+community.
+Our
+community
+development
+model
+emphasizes
+facilitation
+over
+management, and distributed as opposed to command-and-control strategies. More
+importantly, our model moves beyond the provision of networking and discussion space
+to support emergent, collaborative work.
+As opposed to a linear “funnel” growth model, The Institute will implement a cyclical
+model of organic growth pursued through the incubation among participants of (i)
+self-efficacy, or a sense of personal capability, (ii) a sense of support and safety, and (iii)
+a sense of investment and impact in participants, as a basis for forming a sense of
+community and providing the foundation for development of relationships within the
+community through positive, repeated contact [121]. The support of these senses leads
+to productive, emergent collaboration, which in turn leads to emergent community
+narrative, norms, roles, and “scripts” [94,122]. Participants are reinforced in their
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+20
 
 ![page20_img1.png](images/page20_img1.png)
 
 ## Page 21
 
-TrustFinder 2022 
-20 
-• While 
-intended 
-for 
-representing 
-an 
-individual 
-User’s 
-contributions, it can also be calculated using a collection of Users 
-(where score would be a sum of the individual scores of the listed 
-Users), or using a given Workspace (where score would be the 
-count of claims which Users contributed as a member of the 
-given Workspace). 
- 
-Mapping Impact Score 
-The Mapping Impact Score is a metric intended to reflect the extent of a particular 
-User’s impacts on the network beyond their own contributions to identifying Claim 
-Instances and Question Instances, such as their contributions to linking objects 
-within 
-the 
-TrustFinder 
-environment 
-(e.g., 
-adding 
-References 
-or 
-Claim 
-Combinators) within the context of a Workspace or a collection of Workspaces. 
-Relevant objects include (i) Claim Combinators, Question Combinators, and 
-References contributed by the User where they were the initial contributor, and (ii) 
-the Claim Combinators, Question Combinators, and References which were 
-contributed within or imported to a given Workspace or collection of Workspaces. 
-The Mapping Impact Score (MIS) is defined as the cardinality of the set of Claim 
-Combinators, Question Combinators, and References (referred to here as edge 
-objects) formed from the intersection of the set of edge objects contributed by a given 
-User (C), with the union of the sets of edge objects associated with a given collection 
-of Workspaces (W). 
- 
-• Every Workspace has a dynamically calculated Mapping Impact 
-Score for each User which has contributed relevant objects 
-within, either as members or as a result of imports from other 
-Workspaces. This collection of scores includes scores for Users 
-who are not members of that Workspace. 
-• Users can manually define a collection of Workspaces in order 
-to calculate a respective Mapping Impact Score.  
-• Users can export the underlying data used to calculate the 
-Mapping Impact Score (i.e., the set of all relevant Claim 
-Combinators, Question Combinators, and References) for use 
-in third-party curation or scoring services. 
-• While 
-intended 
-for 
-representing 
-an 
-individual 
-User’s 
-contributions, it can also be calculated using a collection of Users
+feelings of capability as a part of a team, assured that they will be provided with support
+in a reasonably safe environment, and that results will have a lasting, positive impact on
+their community. Resulting research and educational artifacts and documentation
+constitute shareable content which can then be used to bring awareness about Active
+Inference and The Institute to non-community members.
+Where a “funnel growth” model focuses on awareness alone as a basis for developing a
+user-base, our model’s focus on education, knowledge sharing and presentation of
+work, and support for teams allows for non-community members of all backgrounds and
+interests to engage with and contribute to the community, thus affirming membership
+through a sense of shared investment, impact, and competency. Further, where online
+learning communities anticipate members terminating participation following completion
+of coursework (or after achieving feelings of self-efficacy in the material), our model’s
+provision of support and opportunities for sharing of work with professionals and
+academics provides incentives for continued engagement and participation to those
+who feel they have already become reasonably familiar with all available educational
+material.
+Below, background is provided on the (i) structure of the community (i.e., user
+segmentation), (ii) our information storage and dissemination technology (“tech”) stack,
+(iii) our communications plan, (iv) the education, support, and infrastructure and
+governance functions we provide and/or intend to provide as a part of this model, and
+(v) our intended approach toward evaluating quality control and growth.
+Community Structure
+Participants (Members and Learners)
+Participants include members of the Active Inference Ecosystem, or those who engage
+with
+and contribute to The Institute and its facilitated artifacts, activities, and
+communications. Potential participants include students, educators, researchers, and
+professionals who may benefit either from awareness of Active Inference and its
+implications, developing related competencies and having opportunities to network and
+collaborate with individuals who do, or from opportunities to collaborate and share work
+and insights which would be valuable to the Active Inference Ecosystem.
+Users (Adopters and Beneficiaries)
+The Institute’s productive outputs include software, tools, and methodologies, including
+the facilitation of Active Inference itself as an open source product. As such, the
+community
+using
+Active
+Inference
+and
+related
+open
+source products requires
+documentation, clear messaging regarding updates, and guidelines on fair and best
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+21
 
 ![page21_img1.png](images/page21_img1.png)
 
 ## Page 22
 
-TrustFinder 2022 
-21 
-(where score would be a sum of the individual scores of the listed 
-Users), or using a given Workspace (where score would be the 
-count of claims which Users contributed as a member of the 
-given Workspace). 
- 
-Network Impact Score 
-The Network Impact Score is a metric intended to reflect the impact of a particular 
-User’s impact via the invitation of other contributors into the TrustFinder 
-environment within the context of a Workspace or a collection of Workspaces. 
-Relevant objects include (i) 
-Claim Combinators, Question Combinators, 
-References, Claim Instances, and Question Instances contributed by Users, where 
-they were the first contributor, and where they are members of the subject User’s 
-(i.e., the subject of the score) invitation tree (e.g., where the User was invited by an 
-invitee of an invitee of the subject User), up to a distance of 6 degrees; and (ii) Claim 
-Combinators, 
-Question 
-Combinators, 
-References, 
-Claim 
-Instances, 
-and 
-Question Instances which were contributed within or imported to a given 
-Workspace or collection of Workspaces. The Network Impact Score (NIS) takes as 
-inputs a set of Workspaces (W) of length M, with each element representing a set of 
-Claim Combinators, Question Combinators, References, Claim Instances, and 
-Question Instances (referred to here as contributions) and a set of 2-dimensional 
-vectors (u) of n length with each element representing a User within the subject 
-User’s invitation tree, each vector contains (i) a set of Claim Combinators, 
-Question Combinators, References, Claim Instances, and Question Instances 
-that the element’s respective User contributed (ui_c) and (ii) the degree of separation 
-of the element’s respective User in the subject User’s invitation tree (ui_d). The 
-Network Impact Score (NIS) is defined by (i) finding the cardinality of the intersection 
-of the set of contributions by each given User in the subject User’s invitation tree 
-(ui_c), with the union of contributions within the given collection of Workspaces (W); 
-(ii) weighting the resulting cardinality by a parameterized decay function which takes 
-the given User’s degree of separation (ui_d) as an input; and (iii) summing the results 
-for each User.
+practices. By considering such beneficiaries of Active Inference as “users,” The Institute
+may leverage existing best practices from other domains, such as user experience,
+requirements
+engineering,
+and
+software
+engineering.
+Potential
+users
+include
+professionals, researchers, educators, and engineers.
+Research Partners (External Research Organizations and Working Groups)
+The
+Institute’s
+ReInference
+unit
+collaborates
+with
+external
+research
+partners,
+universities, institutions, and subject matter experts. These partnerships involve joint
+research projects, data sharing, and knowledge exchange to enhance the depth and
+breadth of research efforts. Collaborations with research partners create an opportunity
+to enrich The Institute's research capabilities and resource access, thereby accelerating
+the generation of new knowledge and helping us to address complex research
+questions, validate findings, and extend the reach of our research impact. Potential
+research partners include organizations working on or faced with problems that may be
+solved by Active Inference, and organizations which are working on or have solutions to
+problems which The Institute and the community are facing.
+Educational Partners (Universities and Educators)
+The Institute’s EduActive Unit collaborates with educational partners to influence,
+instantiate, share, and get access to educational programs, teacher training, and
+learning resources. By partnering with educational institutions, The Institute extends its
+educational reach and impact and fosters effective delivery and dissemination of its
+educational
+content.
+Potential
+educational
+partners
+include
+universities,
+tutors,
+educational institutions, and educators.
+Funders (Donors, Supporters, and Funding Agencies)
+The Institute requires financial support in order to keep pace with community needs,
+maintain information infrastructure, and assist researchers in finding their own financial
+support for relevant research initiatives. Potential donors and funders include generous
+community
+members
+and
+beneficiaries,
+government
+funding
+agencies,
+private
+philanthropic donors, and sponsors of events, programs, and initiatives.
+Information Management and Tech Stack
+The Institute hosts and disseminates information using Coda, YouTube, Discord, and
+Google Suites. This stack of platforms streamlines specific levels of access to shared
+resources, and enhances overall productivity within the organization. We aim to ensure
+that participants are aware of the platforms being used and understand their purposes
+and functionalities. We regularly evaluate, communicate, and reinforce best practices
+for information storage, access, and organization. We implement security measures,
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+22
 
 ![page22_img1.png](images/page22_img1.png)
 
 ## Page 23
 
-TrustFinder 2022 
-22 
- 
-Figure 12. Degree of Separation impact on weight in Network Impact Score 
-Contribution Trust Score 
-The Contribution Trust Score is a metric intended, generally, to represent a 
-particular User’s or a Workspace’s relative level of trust in another given User’s 
-annotation 
-contributions 
-(e.g., 
-Claim 
-Instances, 
-References) 
-or 
-another 
-Workspace’s imported contributions. It reflects a User’s or Workspace’s 
-expectations about the quality of annotation contributions by another User or 
-Workspace (e.g., will this annotation contain errors?, will this individual use 
-affordances as expected?). A Contribution Trust Score is set manually by a User for 
-themselves or for their Workspace, and can be adjusted manually at any time. It is 
-set on a scale between -1 and 1; where a rating of -1 is intended to represent a User’s 
-belief that the target of the rating would, without exception, purposefully or 
-negligently contribute flawed annotations; and where a rating of 1 is intended to 
-represent a User’s belief that the target of the rating would, without exception, 
-contribute properly formatted annotations, free of errors. This rating can be used to 
-create filters on imports of annotation contributions within a Workspace, and will 
-create visible indicators on presentation of annotations. Users and Workspaces 
-must set a default rating to apply to unrated Users and Workspaces, upon 
-registering or instantiation, respectively.  
-Given the subjective nature of the contents of annotations and the nature of 
-expertise, Users can set conditional Contribution Trust Scores, which use a logical 
-statements containing “and/or” combinations of Entity Tags and annotation types 
-(e.g., IF (TAGX AND TAGY) OR Type Reference) combined with a replacement rating. Where 
-the logical statement holds true given the set of Entity Tags associated with a given 
-annotation contributed by the target of the rating, the standard rating will be 
-replaced by the defined replacement rating. This allows the marking of contextual 
-trust, where, for example, a physicist’s attempts to annotate Claim Instances within
+such as strong passwords, 2-factor authentication, and appropriate access permission
+in order to protect sensitive information. We back up important data regularly to prevent
+loss due to technical issues or accidental deletion. We conduct periodic reviews and
+audits of the information storage systems to identify areas for improvement and
+optimization. The specific use of each platform is described below.
+Coda (Modeling, Project, and Knowledge Management Platform)
+Coda is the primary platform for knowledge and project management at The Institute,
+Ecosystem, community, and individual scale. It organizes all information and content
+related
+to
+each
+project
+(or
+sub-project).
+Coda
+is
+version-controlled
+and
+access-restricted, ensuring that all of our data is protected against accidental deletion
+and inappropriate user access. We use Coda for storing and organizing important
+documents, such as policies, procedures, project plans, and meeting notes. We follow
+best practices for Coda, including: (1) creating dedicated Coda “documents”, or work
+areas, for different departments or projects to ensure easy access and organization of
+relevant information, (2) implementing a clear folder and file structure within Coda to
+maintain document organization and version control, (3) archiving unnecessary and
+irrelevant pages, files, and folders, and (4) granting appropriate access permissions to
+users, allowing them to view, edit, or comment on documents as required. If The
+Institute receives the necessary resources, Coda will be upgraded to an Enterprise
+License and consultants will assist in development of templates and low-code
+applications for streamlining support, records and knowledge management, and project
+management functions. Further, an Enterprise License will allow for a variety of new
+mechanisms for user-access control and permissioning, and for tracking of work activity
+and community engagement with hosted content.
+YouTube (Live Streaming and Video Hosting)
+YouTube is the primary platform for storing audiovisual content created for and by The
+Institute. Our designated YouTube Channel holds distinct playlists for courses, live
+streams, symposia, and other content that we host. We share and embed links within
+internal and external communication channels to provide easy access to relevant
+content. The content on YouTube is also backed up in a personal cloud storage service
+as well as in offline hard drives.
+Discord (Forum and Instant Messaging)
+Discord is our primary platform for engaging with the Active Inference Ecosystem and
+broader community. We use Discord for real-time communication, informal discussions,
+and team collaboration. Dedicated channels are used within Discord to categorize
+discussions based on topics or projects. Participants are encouraged to share relevant
+files, documents, or links within Discord channels, fostering easy access to shared
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+23
 
 ![page23_img1.png](images/page23_img1.png)
 
 ## Page 24
 
-TrustFinder 2022 
-23 
-the domain of physics may be trusted at a higher level than their annotations related 
-to psychology.  
-• Where there is more than one rating associated with the object, 
-such as when there is both a personal rating and workspace 
-rating, or where multiple conditional ratings triggered, the 
-respective indicator related to the rating should be combined 
-with others into new visualizations.  
-• Users should be encouraged to make conditional trust the norm 
-via user experience mechanisms (e.g., by making conditional 
-trust easy to assign via presented annotations with suggestions 
-related to Entity Tags which are already present in the 
-annotation).  
-• Users can export their Contribution Trust Scores for use in third-
-party curation or scoring services. 
- 
-Assertion Trust Score 
-The Assertion Trust Score is intended to represent a particular User’s or 
-Workspace’s relative level of trust in a User’s, Author’s, or Publisher’s assertions. 
-It reflects a User’s expectations about the quality of User Assertions by a particular 
-User or the quality of the contents of Claim Instances which are marked as asserted 
-by the Author or Publisher of the Content in which they are found (e.g., does this 
-person have a good grasp of the subject matter they are making assertions about? 
-Is this person acting in good faith or are they being opportunistic?). An Assertion 
-Trust Score is set manually by a User for themselves, or by a User for a Workspace 
-and can be adjusted manually at any time. It is set on a scale between -1 and 1; 
-where a rating of -1 is intended to represent a User’s belief that the target of the 
-rating would, without exception, purposefully or negligently assert false statements; 
-and where a rating of 1 is intended to represent a User’s belief that the target of the 
-rating would, without exception, contribute objective and truthful statements. This 
-rating can be used to create filters on imports of annotation contributions within a 
-Workspace, and will create visible indicators on presentation of User Assertions 
-and Claim Instances. Users and Workspaces must set a default rating to apply to 
-unrated Users, Authors, and Publishers, upon registering or instantiation, 
-respectively.  
-Given the subjective nature of assertions and the nature of expertise, Users can set 
-conditional Assertion Trust Scores, which use logical statements containing “and/or” 
-combinations of Entity Tags and annotation types (e.g., IF (TAGX AND TAGY) OR Type 
-Reference) combined with a replacement rating. Where the logical statement holds true 
-given the set of Entity Tags and annotation types associated with a given assertion,
+resources.
+We
+regularly
+monitor
+and
+moderate
+Discord
+channels
+to
+maintain
+professionalism, and eagerly look to improve our protocols and guidelines here and
+elsewhere.
+Google Workspace (Document Management, Document Production, and Email)
+Google Workspace is composed of email, cloud storage, calendar, and collaborative
+artifact editing tools for presentation slide-decks, documents, spreadsheets, and
+diagrams, among other related web-based applications. These tools are tightly
+integrated, allowing for seamless collaboration, file sharing, and real-time editing among
+participants, making them ideal for distributed teams and organizations with remote
+workers. Google Workspace automatically saves document versions, making it easy to
+track changes and revert to previous versions if needed. This version control feature
+ensures that all participants have access to the latest document updates and can track
+changes
+over
+time.
+Google's
+robust
+security
+infrastructure
+includes
+two-factor
+authentication, data loss prevention, and enterprise-grade security features.
+Twitter (now “X”) (Public Announcements and Releases)
+Twitter (recently rebranded as “X”), serves as the primary tool for public announcements
+and releases, and for directing attention of the wider public to events within the
+Ecosystem and community.
+Communications Plan
+Our communications plan is broken into three segments, (i) Internal Communications,
+(ii) External Communications, and (iii) Organizational Communications.
+Internal Communications Plan
+Institute staff, volunteers, interns, officers, and board members communicate with one
+another and with members of the community as follows:
+●
+Email
+serves
+as
+the
+primary
+means
+of
+communication
+for
+internal
+announcements,
+updates,
+sharing
+important
+documents,
+and
+any
+other
+professional communications where record keeping is of interest.
+●
+Regular Synchronous Officer Meetings are held to keep communication lines
+open, address questions, and discuss progress on projects. The Scientific
+Advisory Board meets optionally, twice a month, in an open discussion format.
+The Board of Directors meets quarterly to respond to the quarterly roundtable
+update and address any other issues or concerns.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+24
+
+![page24_img1.png](images/page24_img1.png)
 
 ## Page 25
 
-TrustFinder 2022 
-24 
-the standard rating will be replaced by the defined replacement rating. This allows 
-the marking of contextual trust, where, for example, a physicist’s assertions within 
-the domain of physics may be trusted at a higher level than their assertions related 
-to psychology.  
-• Where there is more than one rating associated with the object, 
-such as when there is both a personal rating and workspace 
-rating, or where multiple conditional ratings triggered, the 
-respective indicator related to the rating should be combined 
-with others into new visualizations and indicators.  
-• Users should be encouraged to make conditional trust the norm 
-via user experience mechanisms (e.g., by making conditional 
-trust easy to assign via presented annotations with suggestions 
-related to Entity Tags which are already present in the 
-annotation).  
-• Users can export their Assertion Trust Scores for use in third-
-party curation or scoring services.
+●
+Shared Calendars are used to schedule meetings, appointments, and events,
+ensuring everyone is aware of each other's availability.
+●
+The Institute-operated Discord Server is the primary location for asynchronous
+discussion and synchronous project meetings. Currently there are around 900
+people in the server, and we strive to keep it an accessible entry point for
+learning and applying Active Inference.
+External Communications Plan
+The Institute communicates with Active Inference Ecosystem and public as follows:
+Target Audiences
+●
+Professionals and Academics: Individuals with an interest in cognitive science,
+machine learning, philosophy, physics, linguistics, computer science, and related
+areas.
+●
+Potential Partners: Government agencies, funding organizations, academic
+institutions, and other research-focused organizations.
+●
+Active Inference Community: Researchers, academics and professionals who
+use and reference Active Inference and related approaches in their daily work.
+●
+Broader Scientific Community: Researchers, academics, and professionals in
+compatible fields.
+Approach
+●
+Livestreams (between one and several public streams per week).
+●
+Content Announcements
+Twitter, Discord, and Email
+○
+Completed projects and recent publications.
+○
+Collaboration and other project opportunities.
+○
+New releases of educational materials and tools.
+●
+Scheduled Updates and Announcements
+Twitter, Discord, and Email
+○
+Weekly Announcements of Livestreams, educational activities, and overall
+projects and participation information.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+25
+
+![page25_img1.png](images/page25_img1.png)
 
 ## Page 26
 
-TrustFinder 2022 
-25 
-Implications 
-The potential implications of affordances, social systems engineering mechanisms, 
-and other aspects of the system are discussed below. 
-Local Governance 
-The solution space for managing governance, role and process, and mediation of 
-conflict in human interactions online are extremely diverse, and best practices are 
-highly dependent on local conditions. Any platform-level requirements and decisions 
-reflected in complex or complicated definitions and rules for how users mediate 
-conflicts, offer recourse, and manage roles and processes also create platform-wide 
-threat surfaces with the potential for goal-blocking, inefficiency, and intrusions on 
-community and user sovereignty. The recommended TrustFinder environment 
-embraces this paradox as being reflective of reality, and makes the causative 
-relationships explicit, opening up access to benefits from a more distributed and 
-scalable approach wherein inter-community conflicts are managed via the formal 
-structure of annotations that reveal the directional, and conditional, relationships 
-between and among workspaces while intra-community conflicts remain in the 
-purview of community self-governance. In this way, inter-community conflicts are 
-effectively converted into community-oriented information differentials, the 
-collective management of which yields value for all potential users. Specific 
-platform-level governance affordances are recommended to be added only upon 
-request by affected communities, and not required for use by all users across all 
-communities. Given that workspaces can be arranged in complex import and export 
-relationships by applying simple rules, many different, locally-adapted governance 
-affordances may be facilitated without the need for specific standardized features 
-(e.g., role-based access).  
-Empowering Communities and Users to Define and Assign Trust 
-Similar to the domain of governance, the solution space for managing reputation is 
-extremely diverse, and user experience and quality control outcomes are subjective 
-and highly dependent on local conditions. Any platform-level choice in complex or 
-complicated definitions and rules for how user reputation is scored and impacted 
-from behaviors of a user (or by the choices of other users) creates threat surfaces 
-for misuse and counterproductive intrusions on individual and community level 
-processes for deciding reputation. Further, it is not possible to create a curation or 
-filter decision function that is free of bias, as curation and filtering is, by definition 
-a discriminatory function. As such, any platform-level rules choice in defining 
-curation and decision function for users will run a high likelihood of impacting users’ 
-trust in the system itself. As before, the discernment of this paradox reveals a system 
-performance reality that is amenable to productive and value-creating management
+○
+Monthly Communications providing updates on results of the last month’s
+with information for different scales of AII.
+○
+Quarterly
+Summaries
+of
+roundtable
+discussions
+regarding quarterly
+results, and expectations and preferences for next quarter.
+Organizational Communication
+The
+Institute
+communicates
+with
+potential
+partners,
+sponsors,
+and
+relevant
+constituencies as follows:
+Target Audiences
+●
+General Public: Individuals who may have a personal interest in cognitive
+science, machine learning, philosophy, physics, linguistics, computer science,
+and related areas.
+●
+Research and Educational: Universities and academic institutions.
+●
+Trade Associations and Think Tanks. Organizations which perform research
+about future industry trends, in addition to other communities of practice.
+●
+Corporate: Companies with employees who would benefit from knowing Active
+Inference related approaches to business organization and operations.
+●
+Government: Government agencies and funding vehicles.
+●
+Private Donors: Individuals who understand the value and potential impact of this
+community of practice and its subject matter, and would be willing to help support
+it.
+Approach
+The goal of our organizational communications plan is to provide the foundation for
+sustainable and accessible funding, and to work toward making Active Inference a
+household term, used as widely as “Machine Learning”, reflecting its demonstrable
+utility and impact in implementation.
+Pending
+support,
+The
+Institute
+plans
+to
+engage
+with
+public
+relations
+and
+communications experts to work toward these goals. The path toward both objectives
+begins with making "Active Inference" a commonly known and used term within
+Government, Corporate, Research, and Educational organizations. As such, an ideal
+next
+step
+toward this goal is the professionalization of Active Inference core
+competencies and techniques and related competency and qualification standards.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+26
+
+![page26_img1.png](images/page26_img1.png)
 
 ## Page 27
 
-TrustFinder 2022 
-26 
-through community-based governance affordances, but in this latter case, directed 
-toward individual reputation variables rather than the resource-focused attention of 
-governance. 
-As discussed elsewhere, the goal of TrustFinder is to structure the information 
-environment in order to enable users to find “trusted” sources of information. 
-“Trust” is an emergent subjective internal state of a system (including “users” as a 
-system), that is ultimately informed by elements that are external to the system. 
-People and organizations that are empowered to discern (and measure) the degree 
-to which performance of elements of a given system (or system component) are 
-reliable and predictable may more confidently rely on the future performance of said 
-system and come to “trust” said system in a mechanistic way. Users that have the 
-capacity to identify and cultivate system elements that are relevant to their specific 
-circumstances and upon which they can base such mechanistic “trust” have an 
-advantage (in terms of cost and resource efficiencies) in leveraging and de-risking 
-future interactions that is not available to others without such capacity. To this end, 
-the users of TrustFinder specifically are empowered to define for themselves when 
-and how to assign easily understood measures of trust (e.g., assertion trust scores, 
-contribution trust scores), associated with other users, workspaces, and the authors 
-and publishers of content, and to further specify in what contexts they apply and 
-adjust those measures. It is recommended that TrustFinder take a facilitatory role in 
-how researchers across disciplines adjust and access the values of these signals, as 
-opposed to an authoritative role - and that it should be anticipated that its users will 
-exercise agency to pursue their self-interest by self-binding to rules that offer 
-reliability and integrity across a well-structured, navigable information system. 
-Rate Limiting Mechanisms on Spread of Trust 
-In complex information environments, trust may be counterproductively assigned 
-using extrinsic signals such as affiliation and identity (or other surrogates for or 
-abstractions of reliability and affinity) as opposed to intrinsic signals of quality and 
-reasoning. While such assignment is understandable from the standpoint of 
-interaction efficiency, when such a trust assignment is signaled publicly, the 
-assignment will inevitably be affected by tribal dynamics and personal relationships 
-and other agenda and contexts relevant to the users involved in later 
-communications referencing such earlier trust assignments. In other words, the 
-contextual foundations of the original abstraction of trust (e.g., to identity) is lost 
-from the original communication, subjecting the naked communicated signal (data) 
-to being interpreted by a later party in a different context (meaning) either through 
-ignorance or malice, yielding so-called “mis” information and “dis” information 
-respectively. 
-TrustFinder 
-makes 
-it 
-possible 
-for 
-researchers 
-to 
-manage 
-communications to eliminate such “context stripping” of communications, by 
-allowing them to manage trust signals privately.
+Ecosystem Support, Infrastructure, and Administration
+The Institute contributes to participants' (i) self-efficacy, (ii) safety, and (iii) impact,
+through the aims of our broader vision and strategy. Beyond the Education and
+Research work described above, the Institute plays Ecosystem support roles such as:
+Informational Commons
+Common
+Forum.
+Hosting
+online
+forums,
+discussion
+groups,
+and
+social
+communications channels where learners, researchers, and practitioners can connect,
+ask questions, and share insights. Fostering a community that helps individuals
+overcome challenges, exchange ideas, and receive support from peers and experts.
+Opportunities to Share and Present Work. Provide myriad opportunities to share and
+present
+relevant
+interdisciplinary
+work
+on
+Active
+Inference,
+offering
+enhanced
+opportunities for unique collaborations and new knowledge discovery catalyzed by
+Active Inference and the consequent amplified leveraging of expertise and practices
+across disciplines, domains, and paradigms.
+Infrastructure and Administration
+Partnerships. Managing and growing relationships with potential educational and
+research partners.
+Sponsor and Donor Funding. Managing relationships with potential donors and
+sponsors,
+and,
+pending
+funding,
+developing
+the
+necessary
+infrastructure (e.g.,
+accounting, legal, digital affordances, materials) to request and receive donor and
+sponsor support, and to offer and dispense micro-grants and financial support to
+researchers.
+Funding
+Discovery
+&
+Acquisition
+Support.
+Providing
+a
+variety
+of
+support
+mechanisms for participants to search for and submit to grant and funding opportunities,
+as well as assist them in forming partnerships (e.g., with other researchers, companies,
+and universities).
+Infrastructure. Maintaining and developing information systems to support The
+Institute’s activities, iteratively improving usability and efficacy. Pending funding, working
+with requirements engineering and user experience professionals to overhaul existing
+systems.
+Professionalization. Developing a curriculum of training programs for Officers and
+Directors of commercial entities and officials of governmental and civil society
+organizations to enhance their understanding of sentient behavior (as described by
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+27
+
+![page27_img1.png](images/page27_img1.png)
 
 ## Page 28
 
-TrustFinder 2022 
-27 
-The recommended TrustFinder environment benefits from an approach which 
-stresses production of actor- and community-centric metrics (i.e., proximal, dynamic 
-calculation from the perspective of a given user or workspace) which can be 
-incorporated into more complex derivative down-stream curation and reputation 
-analysis features by third-parties. The provision of services offering such down-
-stream insights have the potential to power new inter-disciplinary and trans-
-disciplinary insights in the academic sphere and new innovations in products, 
-services, and markets in commercial contexts. The use of proximal calculation and 
-presentation is applied as an alternative to a universal (i.e., platform-wide) or static 
-reputation metric. This approach intends to limit the negative effects of context-
-stripped trust signals “going viral,” and to protect user and community ratings from 
-being unduly affected by external pressures.  
-Scoping through Collaborative Work 
-Scoping the information environment through the use of mission-focused 
-workspaces intended to facilitate collaborative work may affect the environment in 
-a number of ways: 
-Subjectivity of Evaluation 
-Human knowledge is incredibly complex. In many cases (and 
-contrary to what is often assumed) claims may only be “true” 
-within certain contexts. For example, “home is where people 
-will miss you when you are gone”, in some contexts, is a “true” 
-statement, or a statement which “rings” true, or, at the very 
-least, a statement which may be not helpfully marked as 
-definitively false. It may not be the technical definition of a 
-“home” from a given personal or cultural perspective, however 
-it may be “literally” true in some cultural contexts, or 
-“metaphorically” true within the context of a narrative analysis. 
-This simple statement reveals the context dependency of the 
-concept of “truth”. 
-By scoping the environment around collaborative work within a 
-defined workspace, users can collaboratively refine their 
-community’s information environment with the necessary 
-context for user assertions, claims, and their relationships. 
-Within 
-the 
-community 
-workspace 
-environment 
-as 
-contemplated here, members of the community do not need to 
-ask for the permission or forgiveness of any outside party to 
-apply a given set of context. They might be said to have 
-“context/meaning 
-sovereignty” 
-within 
-that 
-information 
-environment. Further, they can annotate and make assertions 
-about claims applying their context-consistent elements
+Active Inference) and its implications for organizational interactions in the areas of
+Business, Operations, Legal, Technical, and Social [102].
+Quality, Performance, and Growth Evaluation
+The Institute intends to evaluate quality, performance, and growth within community
+development at three scales, listed below, based on best practices within the open
+source community [123,124] and adapted for our low-code and no-code use-cases. See
+the section titled “Next Steps” for more information on expectations of future expansion
+and refinement of evaluation methodology.
+Participant scale
+Evaluation at the level of individuals, with consideration for a plurality of individual priors
+(i.e., diversity in perspective, experience, culture, language, preferences, discipline, and
+level of expertise) and a focus on accessibility and onboarding. Objectives include
+quality of participant and user experience, plurality of educational mediums and formats
+(i.e.,
+accessibility),
+networking
+and
+collaboration
+opportunities,
+and professional
+development. Pending grant or donor funding, The Institute will work with user
+experience, communications, and requirements engineering professionals to improve
+current and establish new feedback mechanisms and implement best practices for
+aforementioned evaluations. The following tools serve as a basis for evaluation:
+●
+Individual feedback forms and surveys
+●
+Participation (e.g., number of projects completed and contributed to)
+●
+Continuing Professional Development (e.g., courses completed, certifications)
+Institute scale
+Evaluation at the level of The Institute will consider various areas such as sustainability
+of personal and collective efforts, support reliability, and user experience quality, and
+Institute quality control and improvement. Objectives include increasing collaboration
+opportunities,
+ensuring
+consistency
+and
+rapid
+handling
+of
+inconsistency
+in
+documentation, and supporting and facilitating projects. Specific metrics of quality,
+performance, and growth at The Institute scale may include:
+●
+Number of participants and commits in open source projects
+●
+Number of responses to our Volunteer and Internship forms
+●
+Number of newsletter signups
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+28
+
+![page28_img1.png](images/page28_img1.png)
 
 ## Page 29
 
-TrustFinder 2022 
-28 
-without the need to fight for platform-wide consensus in order 
-to enjoy the information environments that support them and 
-enable them to perform work. While some may feel there is risk 
-involved in allowing communities to define “their own truth”, a 
-well designed system will be structured to make explicit the 
-distinction of a contextual, community-bound “truth,” from a 
-broader form of “truth” that is recognized across multiple 
-contexts and multiple communities, which allows for the 
-cultivation 
-and 
-management 
-of 
-dissenting 
-views 
-and 
-innovation. In any event, fact-checking, censoring, or overriding 
-the expressions of a given community that embraces a context 
-bound, 
-minority-position 
-on 
-a 
-given 
-“truth,” 
-may 
-be 
-counterproductive. Generally, these kinds of interventions are 
-only effective in terms of limiting effects of network exposure 
-to undesired information or interpretation - but in the case of 
-TrustFinder, said effects are already curtailed by the structure 
-of workspaces. 
-Reduction of Information Overload 
-Any given text has the potential to include an overwhelming 
-number of entities, claims, questions, and other annotations 
-associated with it. The use of questions, claims, clusters of 
-claims, and relationships between claims as a basis to scope 
-workspaces improves the likelihood that the user will find 
-annotations relevant to the task at hand.  
-Power Dynamics 
-Unbounded information collection activity results in cumulative 
-build up of influence by committed contributors, and 
-opportunities for “tyranny of the minority” phenomena, 
-wherein small cliques get outsized control over what 
-information in an environment is considered worthy of 
-attention. With crowd-consensus mechanisms in place, the 
-potential for tyranny of the minority is replaced by the potential 
-for tyranny of the majority, where the interests of the majority 
-truncate the interests of minority groups. The use of provisional 
-and 
-reconfigurable 
-workspaces that 
-can 
-be 
-selectively 
-combined, abandoned, published, and republished by small 
-teams allows for a freedom and flexibility that keeps both 
-powerful cliques and homogenous crowds in check.
+●
+Statistics on projects facilitated by The Institute (e.g., total completed, ongoing,
+and dissolved)
+●
+Offered and completed Internships
+●
+Frequency
+of
+discovery
+and
+resolution
+of
+inconsistencies
+in
+research,
+documentation, tools.
+●
+Frequency of discovery and resolution of gaps in implementation (i.e., frequently
+questioned answers and frequently asked questions)
+●
+Number of facilitators, stewards, and volunteers and related turnover and activity
+●
+Aggregation of individual feedback forms and surveys
+Ecosystem scale
+Evaluation at the level of the Ecosystem and community scale with consideration for
+impact and relationship management, and a focus on impact. Objectives include
+minimizing turnover rate in educational courses, increasing the number of participants,
+and maintaining and adding partnerships. Metrics of quality, performance, and growth at
+the community scale may include:
+●
+Frequency and number of edits and engagements with Coda pages (pending
+funding, see sections titled “Information Management and Tech Stack” and “Next
+Steps”)
+●
+Number of participants in Discord General Channel
+●
+Number of participants contributing to facilitated projects
+●
+Turnover
+rate
+in
+engagement
+and
+participation
+(e.g.,
+direct
+participant
+engagement with Institute releases and material, and annual involvement in
+collaborative activities)
+●
+Number of individuals enrolled in educational courses
+●
+Turnover and completion rate in educational courses
+●
+Turnover rate in partnerships (e.g., research and education partnership decisions
+to renew, maintain, or dissolve)
+●
+Social media analytics (e.g., views, watch time, audience diversity)
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+29
+
+![page29_img1.png](images/page29_img1.png)
 
 ## Page 30
 
-TrustFinder 2022 
-29 
-Neutral Discovery of Claims and Questions 
-Separating affordances for the discovery of claims from those that convey the 
-opinions of users reduces the likelihood of tribal and affiliation-related dynamics 
-and creates opportunities for common ground between groups with disparate 
-interests and perspectives on the world. For example, two communities which 
-vehemently disagree on the truth of a claim, can find common ground in the notion 
-that “this article has an instance of this claim”; and even in cases of extreme 
-disagreement, can at least agree on the title and citation metadata. This separation 
-of concerns between different levels of analysis and complexity allows communities 
-to benefit from each other's work despite their disagreements. 
-Modular and Flexible Construction of Claims Ecosystem 
-Traditionally, claims annotation is done on a document-by-document basis with a 
-specific focus on the contribution of individual claims toward the argument a 
-document is intended to advance. Allowing researchers to annotate the claims that 
-are of value to their particular work simultaneously preserves quality of user-
-experience (i.e., not creating additional work for them unrelated to their current 
-goals) and, as an incidental benefit of their self-interested annotation activities, also 
-provides a modular, granular contribution to larger crowdsourcing solutions. As 
-claims and references are linked to one another and are aggregated with the claims 
-and references from other workspaces, small, individual contributions are brought 
-together to create a rich, linked network of claims that no individual could have 
-created alone. This is an example of familiar “network effects” of generating value, 
-but here applied to meaning making across communities. Such emergent “meta-
-information” layers bear a relationship to baseline information similar to the 
-relationship that meta-data has to baseline data, but in the case of such emergent, 
-intercommunity context and meaning, situational awareness is extended to include 
-formerly external components of context and meaning. Further, these relationships 
-between claims can be represented as the key components of nearly any model of 
-representation of argument and can be applied to any form of content (e.g., video, 
-image, gif, text), which allows for advanced multimodal rhetorical analysis and 
-reusability of claims information as training data in argument mining and artificial 
-intelligence systems. 
-Claims as Networked Real-Estate: Gold Rush 
-Being the first to mark a claim provides both a first mover advantage on setting the 
-tone and character for description and documents participation in its discovery. The 
-reputational gains of being first, or more importantly, being first to provide a 
-helpfully objective interpretation of a found claim, creates the opportunity for a 
-“gold-rush” mechanism to drive adoption and participation. Further, given that 
-reputation metrics are impacted by both the discovery and the annotation of claims, 
-users are incentivized to perform high-quality claims discovery and annotation
+Discussion and Future Directions
+The Active Inference Institute attracts and amplifies the self-organizing abilities of
+people, thereby potentiating a unique opportunity and a powerful and scalable platform
+from which to accomplish research and development goals. As members of the
+Ecosystem, we continue to evolve an understanding and “voice” clarifying who we are,
+and who we might become, as a collective. In the process of building both an
+organizational reputation and individual expectations, we are constantly reminded of
+and inspired by the fact that the object of our research and development work, Active
+Inference, itself anticipates analysis and integration well beyond systems that are
+“closed” in time or space (i.e. those constrained to evolve linearly with a beginning,
+middle, and end as structure). We are interested in modeling, designing, and working
+with “open” systems, and have sought to cultivate an Ecosystem and larger community
+that reflects the intrinsic openness and systemic “curiosity” of Active Inference. With
+additional resources to support the work described in this application, the benefits of
+these open systems and guidance on future interaction practices consistent with Active
+Inference can be readily made available across myriad domains.
+The Institute’s work and community building efforts have always exemplified the benefits
+of “open” systems, consistent with the insights gleaned from Active Inference research
+itself.
+For
+example,
+when
+tracking open system behavior associated with the
+development and evolution of Active Inference, The Institute might have chosen to
+place an emphasis on “closing” (i.e. erecting constraints, applying limits, setting
+conditions, etc.) to simplify the challenge of modeling the space. However, rather than
+take a closed system (laboratory-centric) approach alone, which might have relegated
+Active Inference to an isolated academic disciplinary silo, we recognized the benefits
+that accrue from an “open” approach that invites self-organizers in the broader Active
+Inference Ecosystem to migrate (the “active” in Active Inference) into programs and
+participation that best suits their needs and prior experiences. Members of the
+Ecosystem will continue to encourage and support the opportunities to embrace
+variation-retained field studies for Active Inference…everywhere.
+In the Ecosystem, we recognize that people and entities are explorers, capable of
+self-organization, motivated and eager to discover, and change agents of Active
+Inference approaches in the truest sense. By applying and leveraging the collective
+expertise of our community in preparation, scouting, and wayfinding practices, The
+Institute aims to continue helping Ecosystem participants to move ideas off-the-bench
+and into complex real world situations where the interaction environment acts as the
+ultimate scrutinizer. The resilience, sustainability and responsiveness of biological
+systems described through Active Inference research suggests that the human and
+social systems benefits of applied Active Inference framings will enhance the positive
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+30
+
+![page30_img1.png](images/page30_img1.png)
 
 ## Page 31
 
-TrustFinder 2022 
-30 
-where it is most critical and valuable in both past and recent literature (e.g., finding 
-and being associated with the discovery of claims which are at the root of a field are 
-equally valuable to finding those which might be at the root of new fields or 
-paradigm shifts). While such a mechanism can represent a risk to the intrinsic quality 
-of annotation and encourage counterproductive rivalrous dynamics, there are 
-several aspects of TrustFinder which are expected to keep these phenomena in 
-check: 
-Consumers of Found Claims are Incentivized to Merge 
-The choice to merge two duplicate claims or to choose one 
-annotated claim over another is now within the hands of those 
-managing that workspace, and users are highly incentivized to 
-detect and merge duplicate claims in the interest of reference 
-stability. The incentive for rivalrous dynamics may increase with 
-the value of the claim, but so do the incentives for maintenance 
-of reference integrity. 
-Competition 
-Even where a user may intend to bury a rival’s discovery in the 
-interest of preserving their own status as the initial discoverer 
-of a claim, and where they have control over a commonly 
-referenced workspace, they do not have the affordances to 
-maintain a control over the many other workspaces which may 
-independently pull their rival’s claims back in and merge them. 
-Game Theory of Return on Work 
-Given that reputation return for contributions is tied to the 
-breadth of use and reference of the claim, in most cases, it will 
-likely be a more reliable strategy to simply merge claims in 
-order to increase likelihood of spread, even if it means a slight 
-decrease in the perceived share of the reputation impact on use 
-of a claim. The system rewards synthesis as much as it rewards 
-discovery. 
-Use of Security Assurances 
-The affordances for annotation of personal opinions regarding claims found within 
-content present threat surfaces for interpersonal aggression and intergroup tribal 
-dynamics, and an opportunity for threat actors to use these vectors for purposes 
-unrelated and contrary to the goals of the relevant community of users. As such, the 
-TrustFinder environment requires users to engage with cyberphysical security 
-measures in order to register an account in the system and to commit their 
-assertions to the environment. This has several implications:
+impact on the organization and operation of humans, including but not limited to The
+Institute itself.
+To the people already involved in the Active Inference community, the “Ecosystem” isn’t
+just a hypothetical and aspirational future state. Instead, it is the actual current world of
+interactions among members of the Active Inference community that we inhabit at all
+times. Active Inference, The Institute and members of the Ecosystem are all focused on
+dynamically adapting the efficiencies of change management practices as we prepare,
+scout, and “way find” our way into the future with measurable degrees of understanding
+around confidences, probabilities and the underlying mechanics involved, rather than
+depending on static plans that are quickly rendered obsolete in times of rapid change.
+As The Institute and Ecosystem help build competence and confidence in more agents
+in forms of organization and operation that reflect and apply Active Inference concepts,
+we will grow the pool of potential first finds (discoveries and inventions) and
+high-reliability knowledge systems in our world. Cultivating those skills as part of who
+we are as individuals and in organizations, and sharing those skills with others who are
+eager to see the future, and to be the future, is more than just an attractor state to guide
+our actions. It is the core mission of The Institute, Ecosystem, and its participants.
+Act. Infer. Serve.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+31
+
+![page31_img1.png](images/page31_img1.png)
+
+![page31_img2.png](images/page31_img2.png)
 
 ## Page 32
 
-TrustFinder 2022 
-31 
-Cost of Engagement 
-The requirement to engage with security assurances in order to 
-annotate assertions creates task-disrupting barriers that offer 
-“shocks to consciousness” to the user to ensure they are 
-unambiguously aware of the gravity of their interaction. This 
-awareness is achieved via mechanism as opposed to being 
-provided with disclaimers - users “experience” the weight of 
-their decisions as opposed to simply being told about them and 
-are prompted to consider the risk of their decision given the 
-cost of engagement. 
-Cost of Entry 
-The use of security assurances creates a cost of entry to the 
-environment that acts as hostile architecture to threat actors 
-intending to make multiple accounts.  
-Separating Extrinsic from Intrinsic Rewards 
-Extrinsic rewards are those that have visibility from the outside (e.g., titles and 
-status), and fungibility across people (e.g., material or currency), whereas intrinsic 
-rewards are those that are inferred or experienced by a cognitive agent, such as 
-personal fulfillment or a sense of purpose within a community. The potential for 
-extrinsic and intrinsic rewards has significantly different impacts on behavior. 
-Tendency to optimize toward extrinsic rewards is natural where they are offered, 
-but this optimization axiomatically comes at the expense of the potential intrinsic 
-value in the solution space. This being the case, creating simplistic extrinsic rewards 
-for writing novels might generate more novels, though not necessarily better ones - 
-and attaching “eyeball” or “dwell-time” related metrics, such as how many people saw 
-and liked my warning/endorsement, will create perverse incentives for users to 
-contribute what they believe the crowd will vote for, which may be in conflict with 
-what they believe to be true. 
-The TrustFinder environment supplements its ability to support relatively modular, 
-granular, narrow solution-space tasks (e.g., claims annotation) with extrinsic 
-reputational rewards (i.e., CQ annotation score and mapping impact score, which 
-reflect definable network impacts and use of contributions). Given the reliance on 
-small-team focused workspaces, user assertions and responses to requests can be 
-left to intrinsic reputational rewards - through the impacts users feel that they make 
-on their local community.  
-Structure of Claims and User Assertions 
-The structure of claims paired with the attachment of user contributions to simple, 
-self-reported levels of certainty and intensity enables the identification and
+Appendix
+Open source services of The Institute for the Ecosystem
+This section reviews the work that The Institute has hosted or carried out between the
+beginning of 2021 and August 2023.
+Educational services
+Table A1 gives a summary of the educational work carried out from 2021 through the
+present.
+Educational
+Service
+Information
+Video
+Livestreams
+More than 370 livestreams from 2020 through 2023 (presentations,
+discussions, workshops, textbook groups) on a wide variety of
+topics related to Active Inference.
+Active Inference
+Journal
+We publish curated transcriptions for livestreams, and make video
+captions/translations.
+Textbook groups
+Two completed cohorts of Active Inference Textbook groups, and
+two ongoing cohorts.
+Courses
+Chris Fields "Physics as Information Processing"
+“Active Inference in the Social Sciences”
+Textbook
+alpha
+testing
+Working
+with
+Sanjeev
+Namjoshi
+during
+2023
+to
+support
+development of a textbook (expected public release in 2024).
+Ontology
+for
+Education
+Collect and define key terms in Active Inference in a formal
+ontology, with translations in more than 10 languages
+Table A1. Educational offerings at The Institute.
+Research services
+Table A2 gives a summary of the research work carried out from 2021 through the
+present.
+Research Service
+Information
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+32
+
+![page32_img1.png](images/page32_img1.png)
 
 ## Page 33
 
-TrustFinder 2022 
-32 
-application of new metrics about information integrity, opportunities for myriad 
-forms of cognitive modeling regarding human engagement with clusters of claims 
-and concepts, and opportunities to create related visualizations and accessible 
-metrics for communicating status about integrity or informational conflict at the 
-level of claim, document, or field (e.g., through the application of system status 
-signals based on such things as color theory and simple summary statistics). Further, 
-the highly structured relationships between claims and the structure of user 
-assertions means that, where conflict arises, users are incentivized to engage in such 
-conflict in a highly structured manner - resulting in hybrid information structures 
-(i.e., composed of competing user assertions) which can be mined for insight 
-regarding the volatility of certain claims. When using neutral claim annotations, as 
-opposed to user assertions, users’ interest in engaging in conflict (i.e., ensuring that 
-claims they don’t agree with are undermined, and that claims they agree with are 
-supported) is harnessed as a driving force in mapping and connecting the rhetorical 
-landscape as they search for supporting or refuting claims. 
-In addition, the flexibility of entity and custom tagging affordances in conjunction 
-with open standards for interoperability with third party tools allows for 
-communities to layer more advanced standards onto TrustFinder structures. For 
-example, communities interested in more advanced rhetorical analysis of discourse 
-are empowered to layer classification information onto objects, such as categories 
-of claims (i.e., factual, definitional, causal, value, and policy) and other related data 
-or categories of questions (e.g., interrogative, exploratory).
+Active
+Inference
+Ontology
+Development
+Core,
+Supplemental,
+and
+Entailed
+terms,
+examples/counterexamples, connections, translations.
+Software
+Active Blockference consists of Active Inference generative
+models
+implemented
+in
+the
+complex
+systems
+modeling
+framework cadCAD.
+Notation
+interoperability
+systems
+Generalized Notation Notation works to provide a notational
+system that generalizes across settings of Active Inference
+modeling.
+Research papers
+Some relevant supported publications are listed here.
+Literature
+meta-analysis and
+presentation
+Knight et al. 2022 performed ontology-guided automatic and
+manual literature analysis on several hundred Active Inference
+paper, presenting the results as interactive public frontend
+Table A2. Research offerings at The Institute.
+Standards activities
+In 2023 The Institute proposed the first-ever qualification standard for Active Inference
+expertise. We continue to develop these standards for use in educational, research, and
+professional settings.
+Facilitation activities
+Table A3 gives a summary of the mentorship, facilitation, and service activities carried
+out from 2021 until now.
+Service Activity
+Information
+Volunteer program
+Volunteers contribute to Institute projects and engage in
+learning groups.
+Internship program
+The Internship program supports motivated individuals who
+are looking to make large contributions and make rapid gains
+in understanding.
+Distributed facilitation
+We engage the Ecosystem and support individuals to
+contribute their facilitation skills in the context of projects,
+courses, and learning groups.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+33
+
+![page33_img1.png](images/page33_img1.png)
 
 ## Page 34
 
-TrustFinder 2022 
-33 
- 
-Figure 13. Graphical representation of relationships between claims as a basis for representation of 
-complex arguments, with example intensity ratings (“i”) for claim combinators.
+Applied
+Active
+Inference Symposia
+1st in 2021 with Karl Friston, 2nd in 2022 on Robotics, 3rd in
+2023 on “Enacting Ecosystems of Shared Intelligence.”
+Table A3. Facilitation activities at The Institute.
+Governance activities
+Table A4 gives a summary of the governance activities carried out from 2021 through
+the present. Future Institute and Ecosystem-scale governance programs are planned.
+Governance Activity
+Information
+Scientific Advisory Board
+The Scientific Advisory Board is an informal body that
+provides The Institute with guidance.
+Board of Directors
+Board of Directors is the formal governance body of The
+Institute, currently in its first annual cohort of 6 people.
+Table A4. Governance activities at The Institute.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+34
 
 ![page34_img1.png](images/page34_img1.png)
 
 ## Page 35
 
-TrustFinder 2022 
-34 
-Compatibility with Other Systems 
-The structure of claims and references allows for import from (and the potential for 
-export to) other systems which deal with claims discovery and reference 
-management, such as Polyplexus, Swarmcheck, Paperpile, Mendeley, or Zotero. 
-Polyplexus 
-Polyplexus is a platform for crowdsourced collection of claims 
-from documents and for hosting of claims-based exploratory 
-research incubators. TrustFinder’s claim instance and content 
-objects would be highly compatible with Polyplexus’ schemas, 
-offering the potential for users to: 
-• import Polyplexus claims and driving questions in order 
-to instantiate a workspace, 
-• export TrustFinder claim instances and reference data 
-for upload to Polyplexus, 
-• export a TrustFinder workspace’s claim instances, 
-reference data, or claim clusters in order to submit claims 
-to a Polyplexus incubator, or 
-• import claims associated with a Polyplexus incubator in 
-order to instantiate a workspace. 
-Swarmcheck 
-Swarmcheck is a company which provides argument and 
-discourse analysis and engagement tools for public and 
-corporate use. TrustFinder’s claim combinators and claim 
-objects would be highly compatible with Swarmcheck’s 
-schemas, offering the potential for users to: 
-• import a Swarmcheck discourse map in order to 
-instantiate a TrustFinder workspace, or 
-• export a TrustFinder workspace’s claims and claim 
-combinators in order to view and map discourse. 
-Reference Managers 
-Paperpile, Mendeley, and Zotero are platforms which provide reference 
-management functions for researchers. TrustFinder’s references and 
-content objects would be highly compatible with most reference 
-management schemas, offering the potential for users to: 
-• import and export reference objects. 
-Complex Knowledge Projects
+Works Cited
+1.
+Friston K, FitzGerald T, Rigoli F, Schwartenbeck P, Pezzulo G. Active Inference: A Process
+Theory. Neural Comput. 2017;29: 1–49. doi:10.1162/NECO_a_00912
+2.
+Parr T, Pezzulo G, Friston KJ. Active Inference: The Free Energy Principle in Mind, Brain,
+and Behavior. MIT Press; 2022. Available: https://mitpress.mit.edu/books/active-inference
+3.
+Friston K, Friedman DA, Constant A, Knight VB, Fields C, Parr T, et al. A Variational
+Synthesis of Evolutionary and Developmental Dynamics. Entropy. 2023;25: 964.
+doi:10.3390/e25070964
+4.
+Sajid N, Ball PJ, Parr T, Friston KJ. Active Inference: Demystified and Compared. Neural
+Comput. 2019. pp. 674–712. doi:10.1162/neco_a_01357
+5.
+Constant A, Ramstead MJD, Veissière SPL, Friston K. Regimes of Expectations: An Active
+Inference Model of Social Conformity and Human Decision Making. Front Psychol. 2019;10:
+679. doi:10.3389/fpsyg.2019.00679
+6.
+Albarracin M, Demekas D, Ramstead MJD, Heins C. Epistemic Communities under Active
+Inference. Entropy. 2022;24. doi:10.3390/e24040476
+7.
+Hipólito I, Ramstead MJD, Convertino L, Bhat A, Friston K, Parr T. Markov blankets in the
+brain. Neurosci Biobehav Rev. 2021;125: 88–97. doi:10.1016/j.neubiorev.2021.02.003
+8.
+de Vries B, Friston KJ. A Factor Graph Description of Deep Temporal Active Inference.
+Front Comput Neurosci. 2017;11: 95. doi:10.3389/fncom.2017.00095
+9.
+Friston KJ, Daunizeau J, Kiebel SJ. Reinforcement learning or active inference? PLoS One.
+2009;4: e6421. doi:10.1371/journal.pone.0006421
+10. Friston KJ, Fagerholm ED, Zarghami TS, Parr T, Hipólito I, Magrou L, et al. Parcels and
+particles: Markov blankets in the brain. Netw Neurosci. 2021;5: 211–251.
+doi:10.1162/netn_a_00175
+11. Clark A. Whatever next? Predictive brains, situated agents, and the future of cognitive
+science. Behav Brain Sci. 2013;36: 181–204. doi:10.1017/S0140525X12000477
+12. Badcock PB, Friston KJ, Ramstead MJD. The hierarchically mechanistic mind: A
+free-energy formulation of the human psyche. Phys Life Rev. 2019;31: 104–121.
+doi:10.1016/j.plrev.2018.10.002
+13. Bruineberg J, Rietveld E. Self-organization, free energy minimization, and optimal grip on a
+field of affordances. Front Hum Neurosci. 2014;8: 599. doi:10.3389/fnhum.2014.00599
+14. Bruineberg J, Froese T. Surfing uncertainty: prediction, action and the embodied mind.
+International Journal of Performance Arts and Digital Media. 2016;12: 215–217.
+doi:10.1080/14794713.2016.1257478
+15. Yufik YM, Friston K. Life and Understanding: The Origins of “Understanding” in
+Self-Organizing Nervous Systems. Front Syst Neurosci. 2016;10.
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+35
+
+![page35_img1.png](images/page35_img1.png)
 
 ## Page 36
 
-TrustFinder 2022 
-35 
-The flexibility in creation of connections between and among workspaces allows 
-for complex projects, constructed by multiple teams with separations of concern 
-in workflow based on relevance of information. It also allows for individual 
-researchers to find value even if they are isolated from all other users in the wider 
-TrustFinder environment. Workspaces can be generated or populated with claims 
-using queries of other workspaces to which they have access, and can have 
-import and export integrations with other compatible systems, allowing for rapid 
-synthesis in interdisciplinary, interorganizational work. Finally, TrustFinder 
-workspaces can be used to help improve collection, accessibility, and 
-dissemination of information resources for digital communities of practice at scale. 
-Gradients of Common Ground 
-Crowdsourcing solutions for information collection and interpretation can be 
-difficult to implement when contributors don’t share ontology or common narrative. 
-The recommended TrustFinder environment assumes a wide diversity of 
-viewpoints and implements a separation of concerns among objects to allow for 
-communities which might disagree at one level of analysis to nonetheless 
-cooperate on collection and analysis activities at another level where agreement 
-is present (see Figure, “Gradients of Common Ground”). For example, two 
-communities may have fundamental disagreements regarding the truth of a 
-particular statement (i.e., at the level of user assertions), but can still agree on 
-independent notions and issues such as the ideas and concepts involved and how 
-they support or refute the statement (claim combinators), on where the statement 
-is made (claim instances), and the relevant entities associated with the statement 
-(stigmergic tags). In an extreme example, where two communities cannot even 
-agree on the relevant entities associated with a given statement, they may, at the 
-least, be able to agree on the name of a document or author (i.e., reference 
-information). The use of workspaces with conditional import and export allows 
-communities that would otherwise never interact to manage information sharing 
-agreements that circumvent unnecessary conflict.  
-Mapping the Information Supply Chain 
-As of 2022, mapping the origin of a particular claim is a challenging, time-consuming 
-task, even in literature with well-structured ontology and citation standards. While 
-some reference mapping solutions exist, they are not necessarily accessible or 
-sufficient for most use-cases, often contain errors, miss large swathes of relevant 
-documents, and cannot keep up with the millions of new documents and datasets 
-being generated each year. Further, even the best enterprise tools available rarely 
-move beyond document-to-document links and references; it is only use-case 
-specific tools, such as those found in legal study and practice, that offer affordances 
-for semantic or conceptual provenance (e.g., precedent search). The recommended 
-TrustFinder environment’s reference and content objects, in conjunction with entity 
-tags, claim instances, and question instances, allow for a collaborative mapping of 
-implicit and explicit provenance of ideas across deep-time at the level of document 
-and claims. Further, its flexible content object structure allows for claims of
+doi:10.3389/fnsys.2016.00098
+16. Sengupta B, Friston K. Approximate Bayesian inference as a gauge theory. arXiv
+[q-bio.NC]. 2017. Available: http://arxiv.org/abs/1705.06614
+17. Sengupta B, Tozzi A, Cooray GK, Douglas PK, Friston KJ. Towards a neuronal gauge
+theory. PLoS Biol. 2016;14: e1002400. doi:10.1371/journal.pbio.1002400
+18. Ramstead MJ, Kirchhoff MD, Friston KJ. A tale of two densities: active inference is enactive
+inference. Adapt Behav. 2020;28: 225–239. doi:10.1007/s11229-016-1239-1
+19. Ramstead MJD, Friston KJ, Hipólito I. Is the Free-Energy Principle a Formal Theory of
+Semantics? From Variational Density Dynamics to Neural and Phenotypic Representations.
+Entropy. 2020;22. doi:10.3390/e22080889
+20. Safron A, Klimaj V, Hipólito I. On the Importance of Being Flexible: Dynamic Brain Networks
+and Their Potential Functional Significances. Front Syst Neurosci. 2021;15: 688424.
+doi:10.3389/fnsys.2021.688424
+21. Hipólito I, Baltieri M, Friston K, Ramstead MJD. Embodied skillful performance: where the
+action is. Synthese. 2021;199: 4457–4481. doi:10.1007/s11229-020-02986-5
+22. Hipólito I. Cognition Without Neural Representation: Dynamics of a Complex System. Front
+Psychol. 2021;12: 643276. doi:10.3389/fpsyg.2021.643276
+23. Nave K, Deane G, Miller M, Clark A. Wilding the predictive brain. Wiley Interdiscip Rev
+Cogn Sci. 2020;11: e1542. doi:10.1002/wcs.1542
+24. Seth AK, Critchley HD. Extending predictive processing to the body: emotion as
+interoceptive inference. The Behavioral and brain sciences. 2013. pp. 227–228.
+doi:10.1017/S0140525X12002270
+25. Seth AK. Interoceptive inference, emotion, and the embodied self. Trends Cogn Sci.
+2013;17: 565–573. doi:10.1016/j.tics.2013.09.007
+26. Ramstead MJD, Kirchhoff MD, Constant A, Friston KJ. Multiscale integration: beyond
+internalism and externalism. Synthese. 2021;198: 41–70. doi:10.1007/s11229-019-02115-x
+27. Constant A, Clark A, Friston KJ. Representation Wars: Enacting an Armistice Through
+Active Inference. Front Psychol. 2020;11: 598733. doi:10.3389/fpsyg.2020.598733
+28. Friston KJ, Lin M, Frith CD, Pezzulo G, Hobson JA, Ondobaka S. Active Inference,
+Curiosity and Insight. Neural Comput. 2017;29: 2633–2683. doi:10.1162/neco_a_00999
+29. Smith R, Schwartenbeck P, Parr T, Friston KJ. An Active Inference Approach to Modeling
+Structure Learning: Concept Learning as an Example Case. Front. Comput. Neurosci.
+2020. p. 633677. doi:10.3389/fncom.2020.00041
+30. Da Costa L, Parr T, Sajid N, Veselic S, Neacsu V, Friston K. Active inference on discrete
+state-spaces: A synthesis. J Math Psychol. 2020;99: 102447.
+doi:10.1016/j.jmp.2020.102447
+31. Kinghorn P, Collis P, Buckley C. Understanding Tool Discovery and Tool Innovation Using
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+36
+
+![page36_img1.png](images/page36_img1.png)
 
 ## Page 37
 
-TrustFinder 2022 
-36 
-provenance to extend from the higher level of books all the way down to the more 
-granular level of paragraphs, with attribution and reference annotation affordances 
-that enrich and clarify context of citations and references appropriate for all such 
-levels. 
- 
-Figure 14. Gradient of Common Ground 
-EOS - Entity Oriented Search
+Active Inference. 4th International Workshop on Active Inference. 2023. Available:
+https://openreview.net/forum?id=BKzmTzoQIr
+32. Pezzulo G, Parr T, Cisek P, Clark A, Friston K. Generating meaning: Active inference and
+the scope and limits of passive AI. [cited 29 Jul 2023]. Available:
+https://psyarxiv.com/8xgzv/download?format=pdf
+33. Albarracin M, Hipólito I, Tremblay SE, Fox JG, René G, Friston K, et al. Designing
+explainable artificial intelligence with active inference: A framework for transparent
+introspection and decision-making. arXiv [cs.AI]. 2023. Available:
+http://arxiv.org/abs/2306.04025
+34. Paul A, Sajid N, Da Costa L, Razi A. On efficient computation in active inference. arXiv
+[cs.LG]. 2023. Available: http://arxiv.org/abs/2307.00504
+35. Hipólito I, Winkle K, Lie M. Enactive artificial intelligence: subverting gender norms in
+human-robot interaction. Front Neurorobot. 2023;17: 1149303.
+doi:10.3389/fnbot.2023.1149303
+36. Da Costa L, Lanillos P, Sajid N, Friston K, Khan S. How active inference could help
+revolutionise robotics. Entropy. 2022;24: 361. doi:10.3390/e24030361
+37. Adams RA, Stephan KE, Brown HR, Frith CD, Friston KJ. The computational anatomy of
+psychosis. Front Psychiatry. 2013;4: 47. doi:10.3389/fpsyt.2013.00047
+38. Schwartenbeck P, Friston K. Computational Phenotyping in Psychiatry: A Worked Example.
+eNeuro. 2016;3. doi:10.1523/ENEURO.0049-16.2016
+39. Cullen M, Davey B, Friston KJ, Moran RJ. Active Inference in OpenAI Gym: A Paradigm for
+Computational Investigations Into Psychiatric Illness. Biol Psychiatry Cogn Neurosci
+Neuroimaging. 2018;3: 809–818. doi:10.1016/j.bpsc.2018.06.010
+40. Smith R, Badcock P, Friston KJ. Recent advances in the application of predictive coding
+and active inference models within clinical neuroscience. Psychiatry Clin Neurosci. 2020.
+doi:10.1111/pcn.13138
+41. Friston K. Computational psychiatry: from synapses to sentience. Mol Psychiatry. 2022.
+doi:10.1038/s41380-022-01743-z
+42. Pio-Lopez L, Kuchling F, Tung A, Pezzulo G, Levin M. Active inference, morphogenesis,
+and computational psychiatry. Front Comput Neurosci. 2022;16: 988977.
+doi:10.3389/fncom.2022.988977
+43. Badcock PB, Davey CG, Whittle S, Allen NB, Friston KJ. The Depressed Brain: An
+Evolutionary Systems Theory. Trends Cogn Sci. 2017;21: 182–194.
+doi:10.1016/j.tics.2017.01.005
+44. McParlin Z, Cerritelli F, Rossettini G, Friston KJ, Esteves JE. Therapeutic Alliance as Active
+Inference: The Role of Therapeutic Touch and Biobehavioural Synchrony in
+Musculoskeletal Care. Front Behav Neurosci. 2022;16: 897247.
+doi:10.3389/fnbeh.2022.897247
+45. Ciaunica A, Seth A, Limanowski J, Hesp C, Friston KJ. I overthink—Therefore I am not: An
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+37
 
 ![page37_img1.png](images/page37_img1.png)
 
 ## Page 38
 
-TrustFinder 2022 
-37 
-The structure of the core TrustFinder objects, such as claims, claim instances, and 
-content, allow for numerous queries that are driven by defined entities as opposed 
-to syntax (i.e., language based search) which can illuminate implicit and latent 
-relationships among claims and agents. For example: 
-By Content 
-A particular piece of defined content can be used as the object 
-of search to yield: 
-• Claims within and their underlying claims. 
-• The content’s implicit and explicit references. 
-• Other content which has a similar set of claims or 
-references. 
-• Content which references the content used in search. 
- 
-By Author 
-A particular author can be used as the object of search to yield: 
-• Common claims within their work. 
-• Common references they use. 
-• The claims they’ve made that aren’t accompanied by their 
-common refutations (e.g., what areas within their work 
-might be biased or assumed). 
-• Publishers that have published their work. 
- 
-By Publisher 
-A particular publisher can be used as the object of search to 
-yield: 
-• Common claims within the work they publish. 
-• Authors they’ve published. 
-• How often they publish opposing points of view. 
- 
-By Claim 
-A particular claim can be used as the object of search to yield:
+active inference account of altered sense of self and agency in depersonalisation disorder.
+Conscious Cogn. 2022;101: 103320. doi:10.1016/j.concog.2022.103320
+46. Ciaunica A, Roepstorff A, Fotopoulou AK, Petreca B. Whatever Next and Close to My
+Self—The Transparent Senses and the “Second Skin”: Implications for the Case of
+Depersonalization. Front Psychol. 2021;12. doi:10.3389/fpsyg.2021.613587
+47. Dumas G, Gozé T, Micoulaud-Franchi J-A. “Social physiology” for psychiatric semiology:
+How TTOM can initiate an interactive turn for computational psychiatry? The Behavioral
+and brain sciences. Cambridge University Press (CUP); 2020. p. e102.
+doi:10.1017/S0140525X19002735
+48. Ramstead MJD, Wiese W, Miller M, Friston KJ. Deep neurophenomenology: An active
+inference account of some features of conscious experience and of their disturbance in
+major depressive disorder. 2020. Available: http://philsci-archive.pitt.edu/18377
+49. Miller M, Kiverstein J, Rietveld E. The Predictive Dynamics of Happiness and Well-Being.
+Emot Rev. 2022;14: 15–30. doi:10.1177/17540739211063851
+50. Hipólito I, van Es T. Enactive-Dynamic Social Cognition and Active Inference. Front
+Psychol. 2022;13. doi:10.3389/fpsyg.2022.855074
+51. Gallagher S, Allen M. Active inference, enactivism and the hermeneutics of social cognition.
+Synthese. 2018;195: 2627–2648. doi:10.1007/s11229-016-1269-8
+52. Veissière SPL, Constant A, Ramstead MJD, Friston KJ, Kirmayer LJ. Thinking through
+other minds: A variational approach to cognition and culture. Behav Brain Sci. 2019;43:
+e90. doi:10.1017/S0140525X19001213
+53. Ramstead MJD, Veissière SPL, Kirmayer LJ. Cultural Affordances: Scaffolding Local
+Worlds Through Shared Intentionality and Regimes of Attention. Front Psychol. 2016;7:
+1090. doi:10.3389/fpsyg.2016.01090
+54. Ciaunica A, Constant A, Preissl H, Fotopoulou K. The first prior: From co-embodiment to
+co-homeostasis in early life. Conscious Cogn. 2021;91: 103117.
+doi:10.1016/j.concog.2021.103117
+55. Manrique HM, Walker MJ. To copy or not to copy? That is the question! From chimpanzees
+to the foundation of human technological culture. Phys Life Rev. 2023;45: 6–24.
+doi:10.1016/j.plrev.2023.02.005
+56. Guénin--Carlut A. Cognitive agency in sociocultural evolution. 2022.
+doi:10.31219/osf.io/x7yr4
+57. Guénin--Carlut A. Thinking like a State - Embodied intelligence in the deep history of our
+collective minds. 2021. doi:10.31219/osf.io/dxnzt
+58. Albarracin M, Poirier P. Enacting Gender: An Enactive-Ecological Account of Gender and
+Its Fluidity. Front Psychol. 2022;13: 772287. doi:10.3389/fpsyg.2022.772287
+59. Albarracin M, Constant A, Friston KJ, Ramstead MJD. A Variational Approach to Scripts.
+Front Psychol. 2021;12: 585493. doi:10.3389/fpsyg.2021.585493
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+38
+
+![page38_img1.png](images/page38_img1.png)
 
 ## Page 39
 
-TrustFinder 2022 
-38 
-• Content which presents or contains instantiations of that 
-claim. 
-• Content which has instantiations of that claim primarily 
-accompanied by refutations of that claim (e.g., to find 
-critique articles). 
-• Content which has instantiations of that claim primarily 
-accompanied by support of that claim (e.g., to find review 
-articles). 
-• Claims which have certain relationships with the claim 
-used in the search (e.g., supporting, refuting). 
- 
-By Combinator Relationships 
-Combinator Relationships can be used as the object of search 
-to yield: 
-• Search for claims within workspace that have very few 
-combinator 
-relationships 
-to 
-find 
-potentially 
-underexplored areas of research. 
-• Search for claims within workspace that have very high 
-consistency in combinator relationships (e.g., claims with 
-equal support and refutation) to find areas that may have 
-been well researched but contentious. 
-• Exploration of the refinement of claims, by search and 
-review of modification trees (wherein claims are refined 
-through modification over time). 
-• Exploration of the generalization of claims, by search and 
-review of generalization trees (wherein claims are 
-generalized and specified across fields). 
- 
-Infrastructure for Other Systems 
-The compatibility with external systems and the ability to create information 
-“pipelines” between and among workspaces, in addition to enabling complex work, 
-allows users to create ad hoc systems on top of TrustFinder.  
-Traditional and New Forms of Peer-Review 
-Journals and other research-publishing organizations could use 
-workspaces to manage aspects of peer review that are 
-concerned with claims and research questions, such as finding 
-peer reviewers, evaluating the state of claims, and representing
+60. Hipólito I, Hesp C. On religious practices as multi-scale active inference. Wittgenstein and
+the Cognitive Science of Religion: Interpreting Human Nature and the Mind. 2023; 179.
+Available:
+https://www.torrossa.com/gs/resourceProxy?an=5494029&publisher=FZ0661#page=192
+61. Vasil J, Badcock PB, Constant A, Friston K, Ramstead MJD. A World Unto Itself: Human
+Communication as Active Inference. Front Psychol. 2020;11: 417.
+doi:10.3389/fpsyg.2020.00417
+62. Ramstead MJD, Sakthivadivel DAR, Heins C, Koudahl M, Millidge B, Da Costa L, et al. On
+Bayesian mechanics: a physics of and by beliefs. Interface Focus. 2023;13: 20220029.
+doi:10.1098/rsfs.2022.0029
+63. Sakthivadivel DAR. A Worked Example of the Bayesian Mechanics of Classical Objects.
+arXiv [physics.class-ph]. 2022. Available: http://arxiv.org/abs/2206.12996
+64. Fields C, Friston K, Glazebrook JF, Levin M. A free energy principle for generic quantum
+systems. arXiv [quant-ph]. 2021. Available: http://arxiv.org/abs/2112.15242
+65. Ramstead MJD, Sakthivadivel DAR, Friston KJ. On the Map-Territory Fallacy Fallacy. arXiv
+[physics.hist-ph]. 2022. Available: http://arxiv.org/abs/2208.06924
+66. Da Costa L, Friston K, Heins C, Pavliotis GA. Bayesian mechanics for stationary processes.
+Proc Math Phys Eng Sci. 2021;477: 20210518. doi:10.1098/rspa.2021.0518
+67. Parr T, Da Costa L, Friston K. Markov blankets, information geometry and stochastic
+thermodynamics. Philos Trans A Math Phys Eng Sci. 2020;378: 20190159.
+doi:10.1098/rsta.2019.0159
+68. Friston K. A free energy principle for a particular physics. arXiv [q-bio.NC]. 2019. Available:
+http://arxiv.org/abs/1906.10184
+69. Ramstead MJD, Constant A, Badcock PB, Friston KJ. Variational ecology and the physics
+of sentient systems. Phys Life Rev. 2019. doi:10.1016/j.plrev.2018.12.002
+70. Ramstead MJD, Badcock PB, Friston KJ. Answering Schrödinger’s question: A free-energy
+formulation. Phys Life Rev. 2018;24: 1–16. doi:10.1016/j.plrev.2017.09.001
+71. Kirchhoff M, Parr T, Palacios E, Friston K, Kiverstein J. The Markov blankets of life:
+autonomy, active inference and the free energy principle. J R Soc Interface. 2018;15:
+20170792. doi:10.1098/rsif.2017.0792
+72. Palacios ER, Razi A, Parr T, Kirchhoff M, Friston K. Biological Self-organisation and Markov
+blankets. bioRxiv. 2017. p. 227181. doi:10.1101/227181
+73. Kirchhoff MD, Froese T. Where There is Life There is Mind: In Support of a Strong Life-Mind
+Continuity Thesis. Entropy. 2017;19: 169. doi:10.3390/e19040169
+74. Palacios ER, Razi A, Parr T, Kirchhoff M, Friston K. On Markov blankets and hierarchical
+self-organisation. J Theor Biol. 2020;486: 110089. doi:10.1016/j.jtbi.2019.110089
+75. Friston K. Life as we know it. J R Soc Interface. 2013;10: 20130475.
+doi:10.1098/rsif.2013.0475
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+39
+
+![page39_img1.png](images/page39_img1.png)
 
 ## Page 40
 
-TrustFinder 2022 
-39 
-the rhetorical structure of the subject document. The ability to 
-create multiple workspaces with conditional imports and 
-exports means the potential for new forms of peer-review 
-processes that are highly auditable and transparent, and allow 
-for a larger number of participants. 
-OSINT SCADA 
-Organizations with high information collection and analysis 
-requirements could use layers of interconnected workspaces to 
-generate role-based information management and intelligence 
-pipelines that can be contributed to at-scale and monitored in 
-real-time. Given export and web annotation affordances, a 
-collection of interconnected workspaces could be the basis for 
-a supervisory control and data acquisition system (SCADA) for 
-open source intelligence (OSINT) related purposes. 
-Technical Intelligence, Narrative Wargaming, and 
-Exploratory Exercises 
-Users could build collections of interconnected, structured 
-workspaces in order to engage in myriad narrative and 
-technical intelligence related wargaming, collection, and 
-exploratory exercises. For example, using separated blue 
-(support), 
-red 
-(opposition), 
-and 
-green 
-(communication) 
-workspaces connected through intermediary workspaces with 
-umpire-controlled selective disclosure. As another example, 
-workspaces could be connected in order to allow for an 
-adaptation of the “World Game” developed by Buckminster 
-Fuller and others, wherein global resource availability and 
-summary statistics are interactively and iteratively addressed 
-by a collaborative team.
+76. Ramstead MJD, Seth AK, Hesp C, Sandved-Smith L, Mago J, Lifshitz M, et al. From
+Generative Models to Generative Passages: A Computational Approach to (Neuro)
+Phenomenology. Rev Philos Psychol. 2022;13: 829–857. doi:10.1007/s13164-021-00604-y
+77. Ramstead MJD, Albarracin M, Kiefer A, Williford K, Safron A, Fields C, et al. Steps towards
+a minimal unifying model of consciousness: An integration of models of consciousness
+based on the free energy principle. [cited 29 Jul 2023]. Available:
+https://files.osf.io/v1/resources/6eqxh/providers/osfstorage/64a7222ccdab33002ede4bbb?a
+ction=download&direct&version=1
+78. Ramstead MJD, Albarracin M, Kiefer A, Klein B, Fields C, Friston K, et al. The inner screen
+model of consciousness: applying the free energy principle directly to the study of
+conscious experience. arXiv [q-bio.NC]. 2023. Available: http://arxiv.org/abs/2305.02205
+79. Friston KJ, Wiese W, Hobson JA. Sentience and the Origins of Consciousness: From
+Cartesian Duality to Markovian Monism. Entropy. 2020;22. doi:10.3390/e22050516
+80. Friston K, Lutz A, Ramstead MJD. Towards a computational phenomenology of mental
+action: modelling meta-awareness and attentional control with deep parametric active
+inference. of consciousness. 2021. Available:
+https://academic.oup.com/nc/article-abstract/2021/1/niab018/6358635
+81. Safron A. An integrated World Modeling Theory (IWMT) of consciousness: Combining
+integrated information and global neuronal workspace theories with the Free Energy
+Principle and Active Inference Framework; Toward solving the hard problem and
+characterizing agentic causation. Front Artif Intell. 2020;3: 30. doi:10.3389/frai.2020.00030
+82. Constant A, Ramstead MJD, Veissière SPL, Campbell JO, Friston KJ. A variational
+approach to niche construction. J R Soc Interface. 2018;15. doi:10.1098/rsif.2017.0685
+83. Ramstead MJD, Hesp C, Tschantz A, Smith R, Constant A, Friston K. Neural and
+phenotypic representation under the free-energy principle. Neurosci Biobehav Rev.
+2021;120: 109–122. doi:10.1016/j.neubiorev.2020.11.024
+84. David S, Cordes RJ, Friedman DA, editors. Structuring the Information Commons: Open
+Standards and Cognitive Security. Cognitive Security Education & Research Forum
+(COGSEC); 2022. Available: https://www.cogsec.org/cat-22
+85. Friedman D, Applegate-Swanson S, Choudhury A, Cordes RJ, El Damaty S,
+Guénin—Carlut A, et al. An Active Inference Ontology for Decentralized Science: from
+Situated Sensemaking to the Epistemic Commons. 2022. doi:10.5281/zenodo.6320575
+86. Groz R, Oriat C, Vega G, Simao A, Foster M, Walkinshaw N. Active Inference of Extended
+Finite State Models of Software Systems. In: Coste F, Ouardi F, Rabusseau G, editors.
+Proceedings of 16th edition of the International Conference on Grammatical Inference.
+PMLR; 10--13 Jul 2023. pp. 265–269. Available:
+https://proceedings.mlr.press/v217/groz23a.html
+87. Murray-Smith R, Stein S, Williamson JH. Active Inference in Human--Computer Interaction.
+4th International Workshop on Active Inference. 2023. Available:
+https://openreview.net/forum?id=BuhUs1yGu1
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+40
+
+![page40_img1.png](images/page40_img1.png)
 
 ## Page 41
 
-TrustFinder 2022 
-40 
-Background 
-Here, key frameworks and concepts are provided from works consulted and the 
-works within this volume which guided the recommendations for the TrustFinder 
-environment.  
- 
-Argument Mining and Representation 
- 
-Toulmin’s Framework 
-The rhetorical framework of Stephen Toulmin has been used to make sense of and 
-formalize argumentation and reasoning within myriad fields, including “science, law, 
-management, art criticism, and ethics”. The Toulmin rhetorical framework formalizes 
-the structure of an argument through the relationships among 6 individual 
-components: 
-Claim 
-The claim is the central assertion by an individual proposing an 
-argument.  
-Grounds 
-Sometimes referred to as data, relevant facts, or evidence, the 
-“grounds” of an argument is information that supports the 
-claim.  
-Warrant 
-The warrant explains why the grounds support the claim. 
-Warrants are claims themselves (often unstated assumptions) 
-that must be accepted so that the original claim follows logically 
-from the grounds. “Warrants confer different degrees of force 
-on the conclusions they justify”, which is communicated 
-through a qualifier. A single argument (claim-grounds pairing) 
-could be supported by multiple warrants. 
-Qualifier 
-The qualifier expresses the relative strength of the claim. It is 
-often expressed rhetorically, through the phrases such as 
-“might be”, “probably”, “certainly”, or “axiomatically”.
+88. Active Inference Institute. Active Inference Ontology. 2022 [cited 12 Dec 2022].
+doi:10.5281/zenodo.7972289
+89. Mascarenhas M, Cordes RJ, Knight B, Murphy S, Friedman DA. Tracking Public
+Sensemaking through Rhetorical Annotation of Image Memes. 2022.
+doi:10.5281/zenodo.6904427
+90. Fox S. Active Inference: Applicability to Different Types of Social Organization Explained
+through Reference to Industrial Engineering and Quality Management. Entropy. 2021;23:
+198. doi:10.3390/e23020198
+91. Khezri B. Governing Continuous Transformation: Re-framing the Strategy-Governance
+Conversation. Springer International Publishing; 2022. doi:10.1007/978-3-030-95473-4
+92. Fields C, Levin M. Scale-Free Biology: Integrating Evolutionary and Developmental
+Thinking. Bioessays. 2020;42: e1900228. doi:10.1002/bies.201900228
+93. Friedman D, Tschantz A, Ramstead MJD, Friston K, Constant A. Active inferants: The basis
+for an active inference framework for ant colony behavior. Front Behav Neurosci. 2021;15:
+126. doi:10.3389/fnbeh.2021.647732
+94. Vyatkin A, Metelkin I, Mikhailova A, Cordes RJ, Friedman DA. Active Inference & Behavior
+Engineering for Teams. 2020. doi:10.5281/zenodo.4021163
+95. Tison R, Poirier P. Communication as Socially Extended Active Inference: An Ecological
+Approach to Communicative Behavior. Ecol Psychol. 2021;33: 197–235.
+doi:10.1080/10407413.2021.1965480
+96. Fox S. Accessing Active Inference Theory through Its Implicit and Deliberative Practice in
+Human Organizations. Entropy. 2021;23: 1521. doi:10.3390/e23111521
+97. Kaufmann R, Gupta P, Taylor J. An Active Inference Model of Collective Intelligence.
+Entropy. 2021;23. doi:10.3390/e23070830
+98. Heins C, Klein B, Demekas D, Aguilera M, Buckley CL. Spin Glass Systems as Collective
+Active Inference. Active Inference. Springer Nature Switzerland; 2023. pp. 75–98.
+doi:10.1007/978-3-031-28719-0_6
+99. Mikhailova A, Friedman DA. Partner Pen Play in Parallel (PPPiP): A New PPPiParadigm for
+Relationship Improvement. Arts Health. 2018;7: 39. doi:10.3390/arts7030039
+100.
+Miller M, Albarracin M, Pitliya RJ, Kiefer A, Mago J, Gorman C, et al. Resilience and
+active inference. Front Psychol. 2022;13: 1059117. doi:10.3389/fpsyg.2022.1059117
+101.
+Cordes RJ, Friedman DA. The Facilitator’s Catechism. 2020.
+doi:10.5281/zenodo.4062541
+102.
+David S, Cordes RJ, Friedman DA. Active Inference in Modeling Conflict. 2021.
+doi:10.5281/zenodo.5750935
+103.
+Rubin S, Parr T, Da Costa L, Friston K. Future climates: Markov blankets and active
+inference in the biosphere. J R Soc Interface. 2020;17: 20200503.
+doi:10.1098/rsif.2020.0503
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+41
+
+![page41_img1.png](images/page41_img1.png)
 
 ## Page 42
 
-TrustFinder 2022 
-41 
-Backing 
-The “backing” component of an argument explains why the 
-warrant has authority. The backing supports the warrant in the 
-same way that the grounds support the claim.  
-Rebuttal 
-The “rebuttal” or counter-claim is a claim which refutes the 
-claim or warrant. 
- 
-Figure 15. (A) Toulmin’s Model of Argumentation and (B) an example implementation
+104.
+Rubin S, Da Costa L, Friston K. Earth system resilience through planetary active
+inference. 2021. pp. EGU21–15347. doi:10.5194/egusphere-egu21-15347
+105.
+Mallonee S, Fowler C, Istre GR. Bridging the gap between research and practice: a
+continuing challenge. Inj Prev. 2006;12: 357–359. doi:10.1136/ip.2006.014159
+106.
+Munro CL, Savel RH. Narrowing the 17-Year Research to Practice Gap. Am J Crit Care.
+2016;25: 194–196. doi:10.4037/ajcc2016449
+107.
+Boik JC. Science-Driven Societal Transformation, Part I: Worldview. Sustain Sci Pract
+Policy. 2020;12: 6881. doi:10.3390/su12176881
+108.
+Boik JC. Science-Driven Societal Transformation, Part II: Motivation and Strategy.
+Sustain Sci Pract Policy. 2020;12: 8047. doi:10.3390/su12198047
+109.
+Friston KJ, Ramstead MJD, Kiefer AB, Tschantz A, Buckley CL, Albarracin M, et al.
+Designing Ecosystems of Intelligence from First Principles. arXiv [cs.AI]. 2022. Available:
+http://arxiv.org/abs/2212.01354
+110.
+Kaufmann R. The Gaia Attractor. A planetary AI copilot network to overcome the
+Metacrisis. In: Medium [Internet]. 17 Apr 2023 [cited 11 Aug 2023]. Available:
+https://rkauf.medium.com/the-gaia-attractor-41e5af33f3b7
+111.
+Active Inference Institute. Active Inference Institute ~ Livestreams. 30 Nov 2021 [cited 24
+Jul 2023]. Available: https://coda.io/@active-inference-institute/livestreams
+112.
+Knight VB, Cordes RJ, Friedman D. The Free Energy Principle & Active Inference: a
+Systematic Literature Analysis. 2022. doi:10.5281/zenodo.7449368
+113.
+The Adventure of Curiosity. [cited 6 Aug 2023]. Available:
+https://oncyber.io/the_adventure_of_curiosity
+114.
+Active Inference Institute. Board of Directors. [cited 24 Jul 2023]. Available:
+https://www.activeinference.org/about/board-of-directors
+115.
+Active Inference Institute. Scientific Advisory Board. [cited 24 Jul 2023]. Available:
+https://www.activeinference.org/about/scientific-advisory-board
+116.
+Cloutier J-F. Towards a symbolic implementation of Active Inference for Lego robots.
+2022. doi:10.5281/zenodo.6862626
+117.
+Tamari R, Friedman D. Open Access science needs Open Science Sensemaking
+(OSSm): open infrastructure for sharing scientific sensemaking data. https://osf.io ›
+preprints › metaarxivhttps://osf.io › preprints › metaarxivhttps://osf.io › preprints › metaarxiv ›
+downloadhttps://osf.io › preprints › metaarxiv › download. 2023. doi:10.31222/osf.io/9nb3u
+118.
+Niles I, Pease A. Towards a standard upper ontology. Proceedings of the international
+conference on Formal Ontology in Information Systems - Volume 2001. New York, NY,
+USA: Association for Computing Machinery; 2001. pp. 2–9. doi:10.1145/505168.505170
+119.
+Smékal J, Choudhury A, Singh AK, Damaty SE, Friedman DA. Active Blockference:
+cadCAD with Active Inference for Cognitive Systems Modeling. Active Inference. Springer
+Nature Switzerland; 2023. pp. 143–150. doi:10.1007/978-3-031-28719-0_10
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+42
 
 ![page42_img1.png](images/page42_img1.png)
 
 ## Page 43
 
-TrustFinder 2022 
-42 
-Toulmin himself asserted that this framework was not a “final” model for 
-argumentation. Instead, it was the product of an exploration of the layout of 
-argument driven by the intent to see logic developed into a formal science built on 
-jurisprudence (legal philosophy). As such, it carries limitations, and has served as a 
-foundation for myriad analyses and models which seek to address or overcome 
-these limitations. It could be argued that chief among these limitations is addressing 
-the interconnectedness of claims and their components - as the grounds, backing, 
-and rebuttal attached to a claim can each be claims in their own right, and as such, 
-have their own connected structures. 
-Stab and Gurevych Model for Argument Annotation 
-The Stab and Gurevych model for the annotation of argument is designed for 
-extraction of granular and modular components of argumentation in persuasive 
-essays. It is designed specifically for managing the relationships among claims and 
-their support, refutations (attacks), and their own support or refutation for other 
-claims. Of value here, is that this model uses a very simple set of rules and 
-components in order to represent complicated arguments.  
-Statement 
-A statement is a piece of text which might contain components 
-of argument and can be used as the basis for annotation.  
-Major Claim 
-The major claim is at the “center” of discourse, usually 
-expressed rhetorically in the introduction of a piece of writing - 
-indicating the author's stance on a particular topic. 
-Claim (Support or Attack) 
-This object expresses itself as grounds or rebuttal to the major 
-claim by merit of the assigned “support” or “attack” relationship 
-referred to as its “stance attribute”. A claim, like the major 
-claim, is considered to be a “controversial statement” which will 
-be supported or attacked within a text.  
-Premise 
-The premise supports (or attacks) the validity of a claim or 
-major claim, or another premise by giving a reason.
+120.
+Tamari R, Friedman D, Fischer W, Hebert L, Shahaf D. From Users to (Sense)Makers:
+On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective
+Sensemaking. Proceedings of the 33rd ACM Conference on Hypertext and Social Media.
+New York, NY, USA: Association for Computing Machinery; 2022. pp. 236–239.
+doi:10.1145/3511095.3536361
+121.
+McMillan DW, Chavis DM. Sense of community: A definition and theory. J Community
+Psychol. 1986;14: 6–23.
+doi:10.1002/1520-6629(198601)14:1<6::aid-jcop2290140103>3.0.co;2-i
+122.
+Albarracin M, Constant A, Friston K, Ramstead M. A variational approach to scripts.
+2020. Available: https://psyarxiv.com/67zy4/download
+123.
+Open Source Security Foundation. Concise Guide for Evaluating Open Source Software.
+2023. Available:
+https://github.com/ossf/wg-best-practices-os-developers/blob/main/docs/Concise-Guide-for-
+Evaluating-Open-Source-Software.md
+124.
+Aniszczyk C, Abernathy C, Beda J, Yehuda G, Novotny S. Measuring Your Open Source
+Program’s Success. Linux Foundation; Available:
+https://www.linuxfoundation.org/resources/open-source-guides/measuring-your-open-sourc
+e-program-success
+Act to connect with The Institute by web, email, YouTube, Discord, or LinkedIn.
+43
 
-## Page 44
-
-TrustFinder 2022 
-43 
- 
-Figure 16. (A) Stab-Guryvych Model for argument annotation and (B) an example implementation.
-
-![page44_img1.png](images/page44_img1.png)
-
-## Page 45
-
-TrustFinder 2022 
-44 
-While this more general framework allows for complex interconnections between 
-claims and helps analyze structured discourse, it, like the Toulmin model, comes with 
-limitations. Some of these limitations could be interpreted to be a product of an 
-intentionally constrained scope, as the work was intended only to advance the 
-annotation of argument structures in a particular medium. For example, it provides 
-no equivalent component to Toulmin’s qualifier, and components cannot form 
-relationships with the relationships between components (such as the warrant in 
-Toulmin’s model, which addresses the relationship between the grounds and the 
-claim). Further, by merit of its focus on a major claim, it is best suited for annotating 
-documents which are built via constrained writing tasks where all other claims sit in 
-some hierarchy beneath the central claim. 
-Digital Rhetorical Ecosystem 3-Layer Model (DRE3) 
-The Digital Rhetorical Ecosystem 3-Layer Model or DRE3 model was designed to 
-integrate rhetorical analysis with ecological theory in such a way as to make it 
-compatible with a crowdsourced and computational analytics pipeline intended to 
-produce a wide range of information products, such as publications and briefs, 
-estimative and predictive metrics, and training data for automated analysis systems. 
-It moves beyond rhetorical structure to consider object references and other 
-content, and most importantly, is intended for analysis of argumentation 
-communicated through multimodal content, with a specific emphasis on image 
-memes. The DRE3 model does not structure argumentation so much as it structures 
-the process of extraction of components and references within arguments 
-embedded in content The purpose of this focus is to enable analysis of 
-argumentation at the level of public discourse, or of argumentation within the 
-context of a rhetorical ecosystem. The process of integrating an artifact (i.e., an 
-image-meme) is expressed in 3 stages: 
-Entity Identification 
-The first phase of DRE3 analysis is entity identification. In this 
-phase, an analyst tags visible or implied entities, such as 
-persons, organizations, locations, or concepts - enabling rapid 
-collation of content with similar subjects. Further, it informs 
-analysis in succeeding stages. 
-Rhetorical Analysis 
-The second phase of DRE3 analysis is rhetorical analysis. In this 
-phase, an analyst decodes the relationships between the 
-entities and their placement within the content. The objective is 
-synthesis of these relationships into a central claim (or set of 
-claims) made within the content.
-
-## Page 46
-
-TrustFinder 2022 
-45 
-Hidden State Identification 
-The final stage of DRE3 analysis is hidden state identification. 
-In this phase, the analyst attempts to identify underlying broad 
-claims which are implied by the claims within the content and 
-by similar claims across other content. 
-Figure 17. Example implementation of DRE3 model 
-The DRE3 model, like other argumentation and argumentation analysis models, 
-comes with its own limitations. For example, the extraction of hidden states and 
-arguments is heavily influenced by the analyst, given the often esoteric and 
-ambiguous nature of multimodal content. Its largest limitation may be that its value 
-depends on the successful implementation of crowdsourcing solutions to annotate 
-content, tag entities. and provide feedback on analyses.
-
-![page46_img1.jpeg](images/page46_img1.jpeg)
-
-## Page 47
-
-TrustFinder 2022 
-46 
-Systems Design 
- 
-Key Design Elements of Crowdsourcing Solutions 
-Attempts to solve problems, raise funds, collect evidence, or analyze data using large 
-numbers of individuals is referred to as “crowdsourcing”. Crowdsourcing solutions 
-are deployed where automated approaches may not be effective or possible, and 
-have been successfully deployed in a myriad of use-cases even where the crowd 
-would not necessarily be perceived as competent in addressing the relevant solution 
-space, such as using gamers to assist in the analysis of genetic and astronomical 
-data. In this vein, crowdsourcing solutions have to be tailored to their use case, 
-solution space, and crowd, resulting in a number of use-case specific categories of 
-patterns of crowdsourcing solutions, such as prediction markets, where crowds are 
-being used to predict events; or serious games, where games or game-like 
-mechanisms are used in order to incentivize engagement or allow for a crowd to 
-contribute to solution spaces for which they do not have the relevant competencies. 
-Crowdsourcing solutions have to be carefully tailored to the conditions of their 
-implementation for functional reasons, but also because of their dependence on 
-engagement, it is difficult to make any single approach reliable - often, attaining 
-reliability remains difficult even within a particular domain or use-case. Analyses of 
-crowdsourcing solutions across the spectrum of use-cases suggest there are at least 
-a dozen interconnected elements in common which contribute to likelihood of 
-success, below these elements are compressed into three principles relevant to our 
-purposes: 
-Task Communication 
-The system and users should have affordances to delineate, 
-transmit, or broadcast task-related requests to others that are 
-appropriate given the size of the crowd, diversity of the 
-competencies of the crowd, complexity of the solution space, 
-and number of requests that may be active at any given time. 
-Difficulties in communications cost effort, time, and resources, 
-and most importantly, impact both the likelihood of users 
-attempting to solve tasks or their ability to broadcast tasks they 
-cannot solve to others who can.  
-Task Solution Space 
-The solution space of tasks should have a complexity which is 
-appropriate given both the competence and size of the crowd. 
-The more agents involved in a solution space, the more 
-modular, granular, specific, and well-defined the tasks and the 
-measurement of their success must be in order for them to
-
-## Page 48
-
-TrustFinder 2022 
-47 
-coordinate coherently. As an illustrative example, 100 people 
-can come together to build a brick wall, but they cannot write a 
-coherent novel. The more subjective the solution space is, and 
-the less modular completed tasks are from one another (e.g., 
-where each task impacts the solution space of the next), then 
-the more individuals that are added, the more disagreement 
-that will form within the crowd - contributing to incoherent 
-results or lack of engagement. Where subjectivity in solution 
-space is impossible to avoid, contributions must be well 
-structured and as granular as is practicable. 
-Task Motivation and Feedback 
-The crowd should be given clear, relevant feedback about their 
-interactions, and should have incentives which are appropriate 
-given their competencies, the costs of performing tasks, and the 
-potential impacts of incentives on outcomes. What constitutes 
-relevant feedback or an appropriate incentive may, arguably, be 
-more an art than a science - as some crowds may be effectively 
-motivated 
-and 
-stimulated 
-by 
-feedback 
-regarding 
-their 
-contributions to a community, whereas others may need more 
-explicit incentives. However, incentives have to be tailored not 
-only to the community but to the solution space itself, as 
-extrinsic motivations such as currency or “points” can come at 
-the expense of intrinsic motivation and therefore at the 
-expense of the intrinsic value of the solution space. As an 
-illustrative example, offering currency as a reward for 
-producing 1000 words on a topic may be effective for 
-generating words, but ineffective at generating value within 
-them. Continuing with this example in order to illustrate the 
-lack of standardized approaches across implementations: if 
-individuals might have already been producing these 1000 
-words, and the currency was just a motivation for them to bring 
-what they were already producing to the system, there is less 
-risk 
-of 
-meaningless 
-submissions, 
-though 
-moderation, 
-reputation, and identity verification systems would still have to 
-be put in place in order to reduce impacts on submission 
-quality.  
-Coonradt’s Principles of Engagement 
-Coonradt, the “grandfather of gamification” asserted that activities which require 
-extensive effort have 6 elements that must be present in order to be persistently 
-engaging:
-
-## Page 49
-
-TrustFinder 2022 
-48 
-Clear Goals 
-The objectives of the work are clear and well scoped, making 
-navigation toward those goals manageable. 
-Scorekeeping 
-The 
-measurement 
-of 
-performance 
-outcomes 
-is 
-clear, 
-comparable, and unambiguous. 
-Feedback 
-Given the clarity of objectives and performance outcomes, 
-individuals participating in a game or gamified system have 
-reasonable basis to consider the impact of certain behaviors on 
-results. 
-Choice 
-Games and game mechanisms provide players with choices, 
-some clearer than others - the clearer the choices, the more 
-valuable feedback becomes, and the more opportunities are 
-provided for players to invest in understanding the impacts of 
-their choices on outcomes and in innovating or adapting those 
-choices. 
-Field of Play 
-The time and space in which the game is played are well scoped, 
-so players have clear expectations entering this scope: they 
-know what to expect, what is expected of them, and that the 
-game will eventually end, and therefore that they will have time 
-to rest if they exert themselves. 
-Skin in the Game 
-This concept from game theory was communicated to a much 
-wider audience in the book of the same name by Nassim 
-Taleb—that players need to acknowledge some value on the 
-table, some potential cost or gain at stake that is tied to their 
-performance in order to play effectively and fairly. 
-Key Principles for Social Systems Engineering 
-Social Systems Engineering (SSE) is concerned with the design of systems which 
-involve or are driven by interactions between social agents. In traditional 
-engineering, final system states can often be defined completely and provide highly 
-reliable behavior through the use of (i) separations of concern among components, 
-(ii) clear causal relationships and formal interfaces resulting in mathematically or 
-algorithmically predictable phenomena, (iii) high reliability controls on interfaces,
-
-## Page 50
-
-TrustFinder 2022 
-49 
-and 
-(iv) 
-predictably 
-adaptive 
-components 
-with 
-highly accurate 
-feedback 
-mechanisms. Humans have hidden states, hidden interests, and highly adaptive 
-policy. As such, any system which includes human inputs will have a reliability which 
-holds a nonlinear relationship with the degrees of freedom of said inputs and their 
-impact on the system. Any system which has outputs that depend on the interactions 
-between flexible human inputs is thus, by default, a complex system. The company 
-AIE Nexus offers the following principles to help SSE clients define requirements and 
-set expectations: 
-Simple Rules Create Complex Structures 
-Rules for interfaces and mechanisms should be as simple as 
-possible, be moderated only by local conditions, result in 
-modular and granular products, and rarely, if ever, contain 
-exceptions. The relationships between the resulting granular 
-products should be equally simple, and allow for flexible 
-modularity in order to seed opportunities for the emergence of 
-complex subsystems and structures. 
-You Cannot Design the Social System’s Mature State 
-For the majority of cases, you cannot predict from the starting 
-state or from mechanisms or infrastructure what the resulting 
-mature system will look like or if it will ever reach a mature 
-state, even if a prior system had identical mechanisms and 
-infrastructure and arguably equal starting state. While it is 
-tempting to attempt rigorous definition and design of the 
-mature state, the focus should instead be placed on 
-requirements, controls, and standards which reduce likelihood 
-of system failure and withdrawal of users, provide the users 
-with value, control the structure of the systems outputs, and 
-allow for iterative adaptation over time.  
-Retreatism and Withdrawal are the Default 
-Social systems implemented from scratch should have their 
-mechanisms and rules designed with the assumption that new 
-users are looking for a reason to leave until they have enough 
-stake in the system to look for reasons to stay. Thus, the 
-mechanisms and rules for interaction should be designed in 
-such a way that individuals, by merit of use, are always 
-accumulating stake in the system. 
-Harness Rebellion, Error, and Conflict 
-Assume that circumvention of the rules and use of the system’s 
-human interfaces will be misused, abused, and rebelled against
-
-## Page 51
-
-TrustFinder 2022 
-50 
-and that users will come into conflict. Do not assume that any 
-component of the system is foolproof against any error or 
-misuse. Instead, consider what adaptations or supplementary 
-mechanisms can allow users or moderators to address or 
-quarantine misuse and enable engineers to understand misuse 
-in order to iteratively adapt the system over time. 
-Humans are Components in the System, Not Just 
-Consumers 
-Social systems should be designed with the assumption that 
-humans are “components” within that system, in addition to 
-their roles as “users.” With this expanded perspective, 
-considering the “engineering” of human behavior (both as 
-individuals and in their capacity as organizational actors) to 
-increase reliability of outcomes becomes a default. 
-Meet the User Where They Are 
-Engineering user behavior or creating incentives from scratch 
-is a perilous and generally unreliable process. Humans are not 
-blank slates, and controlled environments with captured 
-audiences can create misunderstandings about how game-
-theoretically-sound incentives may work in the wild. Wherever 
-possible, mechanisms should be designed to harness, facilitate, 
-and accommodate existing incentives, motivations, interests, 
-processes, norms and expectations, and activities. 
-Trade-Offs are Inevitable, Prioritize Wisely 
-Every social system will be accompanied by trade-offs. For 
-example, efficiency comes at the expense of reliability and 
-quality and vice versa, and quality controls will negatively 
-impact user experience in the short term in exchange for 
-positive impacts in the long term. Trade-offs must be made 
-explicit for participant evaluation, considered and prioritized 
-carefully, and recognized as both unavoidable and amenable to 
-co-management for enhanced system sustainability and 
-resilience.  
-If Value to the User Depends on other Users, the System 
-must be Seeded 
-If the value to the user depends on other users, then organic 
-adoption in early stages is unlikely, as a lone user will likely not 
-stay long enough to await the arrival of other users. A system 
-must provide notable value to users in isolation or be seeded
-
-## Page 52
-
-TrustFinder 2022 
-51 
-with inorganic users (e.g., paid users, stakeholders) in advance 
-of achieving scale and maturity that is prerequisite to organic 
-growth. 
-Clear, Meaningful Feedback is Good, 
-Embodiment is Better 
-Clear, objective, and consistent feedback is standard practice 
-for behavioral modification. However, wherever possible, 
-behavior should be modified via affordances and structure to 
-enhance reliability of system performance. For example, where 
-users should exercise caution, it is more effective to implement 
-affordances which require them to act out a process or ritual 
-that requires caution or careful thought than it is to inform 
-them to be cautious or to provide feedback where they failed to 
-exercise caution. 
-MMOS Recipe for Serious Games 
-While there are numerous serious games designed for both research and education 
-purposes, those implemented by the company Massively Multiplayer Online Science 
-(MMOS) have been among the most impactful in the history of the field. To some 
-extent, this success is due to their focus on finding ways to harness effort that is 
-already being expended through existing activities, as opposed to building new 
-activities entirely from scratch. The founders of MMOS have discussed a “recipe” for 
-converting those individuals already engaged with digital activities into “virtually 
-limitless computation engines for citizen science” 
-3. An outline of this recipe, 
-originally developed for use in the game EVE Online, is adapted for general use here: 
-Task Discovery 
-Find large-volume, modular tasks which require human 
-annotation, analysis, or evaluation and cannot be effectively or 
-reliably automated. 
-User Discovery 
-Find activities with which users with relevant competencies and 
-capabilities are already highly engaged. 
-Task Mapping 
-Map the modular tasks to adaptations within the existing 
-activities that harness or add to existing incentives while 
-facilitating the performance of said tasks. 
- 
-Theme Mapping
-
-## Page 53
-
-TrustFinder 2022 
-52 
-Make adaptations to the activity “aesthetically fitting and 
-thematically adoptable” by the users. 
-Feedback 
-Make it clear to the users that by participating, they are making 
-impacts beyond their own community. 
-Integration with Automation 
-Use the resulting data as training data for automated systems. 
-Active Inference Principles of Trust 
-The paper “Active Inference in Modeling Conflict: A Framework for Modeling Conflict 
-in Business, Operations, Legal, Technical, and Social Contexts” presents 5 insights 
-regarding trust and its impact on operations, informed by the Active Inference 
-cognitive modeling framework. In conjunction with the ability to use ontology and 
-formalization as a basis for behavioral engineering, these 5 insights can be argued 
-to be principles for the design of collaborative systems: 
-Trust is Synonymous with Reliability 
-Trust can be characterized as a high level of certainty regarding 
-the expectations of the policies and actions of another object, 
-actor, or system. For example, we can trust a machine to 
-function or not function, just as we could trust another person 
-to act or not act. 
-Trust can be Externalized to Interfaces 
-Actors do not need to build trust with other actors if a higher 
-level of trust can be assigned to an intermediary or interface 
-through which they can instead engage. For example, we can 
-externalize our trust to receive payment from a stranger to a 
-payment system, as opposed to requiring trust in the stranger. 
-Trust can be Externalized to Symbols and Signals 
-Actors do not need to build trust with other actors if a higher 
-level of trust can be assigned to symbols which reliably predict 
-expectations about the environment. For example, “traffic 
-signals allow drivers to externalize their trust to signals which 
-inform the projection of other drivers’ behavior, as opposed to 
-being left to develop trust with other drivers in order to share 
-the road”. 
- 
-Trust is a Prerequisite for Efficient Information Sharing
-
-## Page 54
-
-TrustFinder 2022 
-53 
-There are high costs associated with vetting information or 
-sources of 
-information, 
-making 
-communication 
-without 
-symbols, signals, interfaces, protocols, or pre-established 
-personal trust cognitively expensive. Communication without 
-externalization of trust or personal trust is axiomatically 
-inefficient, either by merit of the costs of vetting, or the 
-probabilistic risk of accepting low quality information or 
-disinformation in lieu of vetting.  
-Trust is a Prerequisite for Collaborative Enterprise 
-In order to engage in collaborative enterprise, actors must have 
-trust in relevant actors or externalize trust to a degree that is 
-commensurate with associated risks.  
-Principles Related to Sustainability of a Commons 
-The study of “commons management” is rooted in the analysis and design of shared-
-resource systems, such as fisheries and grazing lands. While originally focused on 
-natural resource management, commons management principles and research has 
-found use in approaching other systems, with both real and abstract, or tangible and 
-intangible resources, that encounter similar problems of common-resource use, 
-such as conflicts over use, overuse, pollution, congestion, free-riding, unequal 
-distribution, and availability of recourse. Hess and Ostrom, in their book, 
-Understanding Knowledge as a Commons, provided eight principles for “robust, long-
-enduring, common-pool resource institutions”: 
-Clear Boundaries 
-Where boundaries over what constitutes the common-pool 
-being 
-managed 
-are 
-blurred; 
-responsibilities, 
-needs, 
-requirements, protocols, rules, and jurisdictional authority are 
-blurred as well. 
-Rules are Well Matched to Local Needs 
-Empirical studies on common-pool resource governance have 
-consistently indicated that “no single set of specific rules… had 
-a clear association with success”. Instead, rules needed to be 
-adapted and adjusted to local requirements in order to sustain 
-a resource commons. 
-Those Affected by Rules can Participate in 
-Modifying Them 
-A commons “is often most efficient and durable when 
-individuals affected by a resource regime” can participate in 
-modifying its rules. This is in part because those who are
-
-## Page 55
-
-TrustFinder 2022 
-54 
-affected are in the best position to understand how rules need 
-to be adapted to map well to local needs, and more importantly 
-are in the best position to understand what rules will be 
-maladaptive 
-or 
-dysfunctional. 
-Adaptive, 
-sustainable 
-governance systems tend to have the following characteristics: 
-• Information availability 
-• Recourse capabilities 
-• Rule compliance capability 
-• Rule-related infrastructure 
-• Preparation for and expectation of change 
- 
-All of these characteristics require that rules be functional and 
-well-mapped to the local environment and that those who are 
-within the system participate in modifying them over time. 
-Right to Establish Local Rules 
-In order to enable rules which are mapped to local needs and 
-avoid 
-rules 
-which 
-generate 
-dysfunction 
-or 
-encourage 
-subversion, those affected by rules must be able to participate 
-in modifying them. Those affected by rules cannot participate 
-in modifying them if external authorities do not recognize their 
-right to engage in establishing and modifying local rules. 
-Community is Empowered to Self-Monitor 
-Sustainability requires ongoing monitoring and evaluation. 
-Those that are engaging in the interactions within the commons 
-are in the best position to spot wrong-doing, negligence, or 
-failure to meet standards.  
-Graduated System of Sanctions of Bad Behavior 
-Effective governance requires that there are “reasonable 
-standards for small variations that [will] always occur due to 
-errors, forgetfulness, and urgent problems”, and a graduated 
-system of sanctions which become more severe to those “who 
-do not learn’ from initial, more lenient encounters. The system 
-itself also needs to graduate over time, increasing its severity 
-and specificity. A governance system will often need to begin 
-somewhat 
-informally, 
-as 
-too 
-many 
-requirements 
-for 
-compliance too early can create disincentives for participation,
-
-## Page 56
-
-TrustFinder 2022 
-55 
-and then develop over time into having more strict and clear 
-sanctions for undesired behavior. 
-Simple and Low-Cost Mechanisms for Conflict Resolution 
-Conflict can provide opportunities for information discovery 
-and refinement if facilitated and tempered in a controlled 
-environment, in much the same way an engine produces work 
-from heat. The goal of the governance system is not necessarily 
-to end all potential for conflict, but to harness it to help the 
-system as a whole reduce externalities and the potential for 
-conflict to be destructive. Conflict resolution affordances need 
-to be available, accessible, and affordable in order to avoid 
-uncontrolled conflict. 
-Nested Enterprise 
-Sustainable commons tend to be those which have “nested 
-enterprises” 
-or 
-those 
-which 
-have 
-conflict 
-resolution, 
-monitoring, sanctioning, and other governance activities nested 
-within a larger structure with “multiple layers” of activity and 
-organizational components. 
-Infinite Games for Infinite Teams 
-The white paper “Infinite Games for Infinite Teams” introduced a role-based “case 
-management [system] for knowledge mapping”. This system is expressed as a game 
-which acts as a crowdsourcing solution for mapping narrative, arguments, and 
-concepts together. The game begins with a “workspace” which is initialized with a 
-“seed-meme”, such as “the central argument of a paper” or a hypothesis being 
-investigated. The game has two modes, explore and exploit. In explore mode, “all 
-team members can see all information”. In exploit mode, players then take on a role 
-as either a Red, Blue, or Green contributor, each attaching concepts, documents, and 
-arguments to the seed-meme. 
-Blue Contributor 
-Blue 
-contributors 
-take 
-a 
-defensive 
-stance 
-in 
-making 
-connections to the seed-meme, considering questions such as: 
-• What have previous thinkers/movements/stories done to 
-counter this meme? 
-• How might the meme or narrative be instantly and 
-transparently debunked?
-
-## Page 57
-
-TrustFinder 2022 
-56 
-Red Contributor 
-Red contributors take a more aggressive approach to 
-contribution, considering questions such as: 
-• What would be an effective approach to changing 
-people’s mind, not just informing them or “raising 
-awareness”? 
-• What is the most direct and devastating attack on the 
-ignorance surrounding this topic? \ 
- 
-Green Contributor 
-Blue and Red contributors focus on evidence and logic, whereas 
-Green contributors focus on “evocation of emotion, anecdotes, 
-and narrative.” Green introduces “kairos in the system, that is 
-an understanding, sense, and sequence to the memes in a 
-space”, considering questions such as: 
-• How can ideas be communicated to multiple audiences?  
-• How might the same messaging be effective across 
-audiences & media formats?  
- 
-The contributions, when taken together, map an emergent, stigmergic memetic 
-landscape. Disparate concepts from multimodal digital media are linked, providing 
-a unique form of situational awareness around a topic.  
-Narrative Information Management 
-The paper, Narrative Information Management asserts that fields and specializations 
-which intend to design and implement systems, protocols, and procedures to 
-manage, synthesize, curate, and search digital information generally need to account 
-for the provision of the following features: 
-Managing Information Gaps 
-The ability to recognize gaps in the knowledge base in order to 
-direct attention, or to recognize gaps in personal knowledge 
-and address them using an existing knowledge base. 
-Facilitating Situational Awareness 
-The ability to stay apprised or be notified of changes and 
-updates in the relevant environment despite pressures of 
-information volume, complexity, and rate of change.
-
-## Page 58
-
-TrustFinder 2022 
-57 
-Providing Descriptive and Explanatory Information 
-The ability to “dig” into particular components and objects for 
-summaries and background information. 
-Compression 
-The ability to compress complex information structures using 
-visualization, structure, collation, curation, ontological, and 
-interactive mechanisms. 
-Case Management and Providing Prescriptive Information. 
-The ability to follow particular chained events or objects and be 
-provided with actionable procedure-related information, such 
-as best practices or next steps. 
-Synthesizing Intelligence 
-The ability to synthesize information in the knowledge base in 
-order to generate new information products. 
-Facilitating Communication 
-The ability for users of the knowledge base to coordinate in a 
-structured and coherent manner even where roles or expertise 
-are heterogeneous. 
-Handling of Errors and Inconsistencies. 
-The ability for users to be directed toward and remediate errors 
-and inconsistencies. 
-Management of Trust Signals 
-The ability for users to send, receive, assign, parse, and isolate 
-signals of trust related to evaluation of information and of the 
-intents and competencies of actors. 
-Social Systems Engineering 
-The ability for the system to adjust and modify behavior of the 
-users in a way which promotes the health and sustainability of 
-the system.  
-Framework for Synthetic Intelligence Guilds 
-The paper “The Synthetic Intelligence Guid: A Social Technology for a Digital Bazaar”, 
-in proposing the foundations for a sensemaking-oriented community of practices, 
-offers the basis for a number of generalizable prerequisites for decentralized 
-knowledge management systems:
-
-## Page 59
-
-TrustFinder 2022 
-58 
-Prevent Race-to-the-Bottom and Rivalrous Mechanics 
-Mechanism design should prevent, address, or offset the 
-impacts of Hobbesian, multipolar, and Thucydidean traps, 
-coordination failures, negative-sum game theoretic dynamics, 
-free rider, principal-agent problems, and other related 
-dynamics. 
-Prevent Centralized Capture 
-Mechanism and underlying structure design should prevent, 
-circumvent, or deincentivize the centralized capture or clique-
-control of any particular aspect of the system. 
-Shared Situational Awareness, Decision-Making, and 
-Dissemination 
-Mechanism and underlying structure design should allow for 
-and facilitate shared situational awareness of the information 
-environment, support decision making activity, and allow for 
-directed dissemination.  
-Clearinghouses 
-The system should provide simple clearinghouses for setting of 
-information-related contracts and exchange of information 
-products and services in order to break up silos and allow the 
-flow of critical information between specialized groups. 
-Direction of Attention toward Opportunities and Gaps in the 
-Knowledge Base 
-Mechanism and underlying structure design should incentivize 
-search for and direct attention to opportunities and gaps in the 
-knowledge base (e.g., “low hanging fruit”). 
-Domain-Specific Agents and Teams as opposed to Large Central 
-Bureaucracy 
-As opposed to central bureaucratic structure, autonomous 
-agents and teams should be incentivized and empowered to 
-address challenges within the information environment. 
-Standards for Crowdsourcing and Crowdsourced Standards 
-The system should have structure and standards allowing for 
-contributions at scale, and allow for the implementation, 
-development, and spread of locally developed standards.
-
-## Page 60
-
-TrustFinder 2022 
-59 
-Group Transferable, Network Maintained Reputation Systems 
-Communities should be empowered to develop and manage 
-local reputation systems with opportunities for information 
-sharing between groups. 
-Right to Bundle, Buy, and Broker  
-Communities should have affordances to bundle, buy, and 
-broker information products.
-
-## Page 61
-
-TrustFinder 2022 
-60 
-Funding and Acknowledgements 
-R.J. Cordes is funded through the NSF Convergence Accelerator Trust and 
-Authenticity in Communication Systems Program (NSF 21-572), under award ID 
-#49100421C0036 and is supported in research efforts through a Nonresident 
-Fellowship with the Atlantic Council on appointment to the GeoTech Center. 
-Scott David is funded by the NSF Convergence Accelerator Trust and Authenticity in 
-Communication Systems Program (NSF 21-572), under award ID #49100421C0036. 
-Daniel A. Friedman is funded by the NSF program Postdoctoral Research Fellowships 
-in Biology (NSF 20-077), under award ID #2010290.
-
-## Page 62
-
-TrustFinder 2022 
-61 
-Works Consulted 
-In additon to the works included in the 2022 Volume “Structuring the Information Commons: Open Standards and Cognitive 
-Security” 
- 
-1. 
-Xia H, Østerlund C, McKernan B. TRACE: A stigmergic crowdsourcing platform for 
-intelligence analysis. of the 52nd …. 2019. Available: 
-https://scholarspace.manoa.hawaii.edu/handle/10125/59484 
-2. 
-Suhartono D, Gema AP, Winton S, David T, Fanany MI, Arymurthy AM. Argument 
-annotation and analysis using deep learning with attention mechanism in Bahasa 
-Indonesia. Journal of Big Data. 2020;7: 1–18. 
-3. 
-Karachiwalla R, Pinkow F. Understanding crowdsourcing projects: A review on the 
-key design elements of a crowdsourcing initiative. Creat Innov Manag. 2021;30: 
-563–584. 
-4. 
-Goodnight GT. Complex Cases and Legitimation Inference: Extending the Toulmin 
-Model to Deliberative Argument in Controversy. In: Hitchcock D, Verheij B, 
-editors. Arguing on the Toulmin Model: New Essays in Argument Analysis and 
-Evaluation. Dordrecht: Springer Netherlands; 2006. pp. 39–48. 
-5. 
-Hitchcock D, Verheij B, editors. Arguing on the Toulmin Model: New Essays in 
-Argument Analysis and Evaluation. Springer, Dordrecht; 2006. 
-6. 
-Weinstein M. A Metamathematical Extension of the Toulmin Agenda. In: 
-Hitchcock D, Verheij B, editors. Arguing on the Toulmin Model: New Essays in 
-Argument Analysis and Evaluation. Dordrecht: Springer Netherlands; 2006. pp. 
-49–69. 
-7. 
-Bianchini M, Gori M, Scarselli F. Inside PageRank. ACM Trans Internet Technol. 
-2005;5: 92–128. 
-8. 
-Stab C, Gurevych I. Annotating Argument Components and Relations in 
-Persuasive Essays. Proceedings of COLING 2014, the 25th International 
-Conference on Computational Linguistics: Technical Papers. Dublin, Ireland: 
-Dublin City University and Association for Computational Linguistics; 2014. pp. 
-1501–1510. 
-9. 
-Coonradt CA. The Game of Work. Gibbs Smith; 2007. 
-10. 
-Friedman D, Applegate-Swanson S, Choudhury A, Cordes RJ, El Damaty S, Guénin-
-Carlut A, et al. An Active Inference Ontology for Decentralized Science: from
-
-## Page 63
-
-TrustFinder 2022 
-62 
-Situated Sensemaking to the Epistemic Commons. 2022. 
-doi:10.5281/zenodo.6320575 
-11. 
-Vyatkin A, Metelkin I, Mikhailova A, Cordes RJ, Friedman DA. Active Inference & 
-Behavior Engineering for Teams. Active Inference Lab; 2020 Sep. 
-doi:10.5281/zenodo.4021163 
-12. 
-Afuah A, Tucci CL. Crowdsourcing As a Solution to Distant Search. AMRO. 2012;37: 
-355–375. 
-13. 
-Ayaburi EW, Lee J, Maasberg M. Understanding Crowdsourcing Contest Fitness 
-Strategic Decision Factors and Performance: An Expectation-Confirmation Theory 
-Perspective. Inf Syst Front. 2020;22: 1227–1240. 
-14. 
-Tamari R, Friedman D, Fischer W, Hebert L, Shahaf D. From Users to 
-(Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest 
-for Collective Sensemaking. arXiv [cs.SI]. 2022. Available: 
-https://dl.acm.org/doi/abs/10.1145/3511095.3536361 
-15. 
-He J, van Ossenbruggen J, de Vries AP. Fish4label: accomplishing an expert task 
-without expert knowledge. Proceedings of the 10th Conference on Open 
-Research Areas in Information Retrieval. groups.inf.ed.ac.uk; 2013. pp. 211–212. 
-16. 
-Cordes RJ, Friedman DA. Narrative Information Ecosystems: Conflict and Trust on 
-the Endless Frontier. COGSEC; 2021. 
-17. 
-Friedman DA, Cordes RJ, editors. The Great Preset: Remote Teams and 
-Operational Art. COGSEC; 2020. 
-18. 
-Baxter G, Sommerville I. Socio-technical systems: From design methods to 
-systems engineering. Interact Comput. 2011;23: 4–17. 
-19. 
-Zadeh LA. Fuzzy sets. Information and Control. 1965;8: 338–353. 
-20. 
-Maiers J, Sherif YS. Applications of fuzzy set theory. IEEE Trans Syst Man Cybern. 
-1985;SMC-15: 175–189. 
-21. 
-McMillan J. Reinventing the Bazaar: A Natural History of Markets. W. W. Norton & 
-Company; 2003. 
-22. 
-Milgrom PR, Roberts J. Economics, Organization, and Management. Prentice-Hall; 
-1992. 
-23. 
-Milgrom PR, North DC, Weingast* BR. The role of institutions in the revival of 
-trade: The law merchant, private judges, and the champagne fairs. Econ Polit. 
-1990;2: 1–23.
-
-## Page 64
-
-TrustFinder 2022 
-63 
-24. 
-Milgrom P. Auctions and Bidding: A Primer. J Econ Perspect. 1989;3: 3–22. 
-25. 
-Glowacki A. From narratives of violence to narratives of peace: The renunciation 
-of violence as a discursive phenomenon. 2013. Available: 
-https://search.proquest.com/openview/12b2e7d7d9476024a27c66140ecfff86/1?
-pq-origsite=gscholar&cbl=18750 
-26. 
-Cordes RJ, David S, Maan A, Ruiz A, Sapp E, Scannell P, et al. The Narrative 
-Campaign Field Guide - First Edition. 1st ed. Cordes RJ, editor. Narrative Strategies 
-Ink; 2021. 
-27. 
-Sharma V, You I, Jayakody DNK, Atiquzzaman M. Cooperative trust relaying and 
-privacy preservation via edge-crowdsourcing in social Internet of Things. Future 
-Gener Comput Syst. 2019;92: 758–776. 
-28. 
-citizensciencegames.com. List of Citizen Science Games. In: Citizen Science 
-Games [Internet]. 2018 [cited 17 Jun 2022]. Available: 
-https://citizensciencegames.com/games/ 
-29. 
-Dikopoulou A, Mihiotis A. The contribution of records management to good 
-governance. The TQM Journal. 2012;24: 123–141. 
-30. 
-Waldispühl J, Szantner A, Knight R, Caisse S, Pitchford R. Leveling up citizen 
-science. Nat Biotechnol. 2020;38: 1124–1126. 
-31. 
-Friedman DA, Cordes RJ. Infinite Games for Infinite Teams. The Great Preset: 
-Remote Teams and Operational Art. COGSEC; 2020. 
-32. 
-Cordes RJ. Games with serious impacts: The next generation of serious games - 
-Atlantic Council. In: atlanticcouncil.org [Internet]. 21 May 2021 [cited 3 Jun 2021]. 
-Available: https://www.atlanticcouncil.org/blogs/geotech-cues/games-with-
-serious-impacts-the-next-generation/ 
-33. 
-Friedman JA, Zeckhauser R. Assessing Uncertainty in Intelligence. Intell Natl Sec. 
-2012;27: 824–847. 
-34. 
-Cordes RJ, Friedman DA. Emergent Teams for Complex Threats. The Great Preset: 
-Remote Teams and Operational Art. COGSEC; 2020. pp. 1–15. 
-35. 
-Waltz E. Quantitative Intelligence Analysis: Applied Analytic Models, Simulations, 
-and Games. Illustrated edition. Rowman & Littlefield Publishers; 2014. 
-36. 
-Waltz E. Knowledge Management in the Intelligence Enterprise. Artech House; 
-2003.
+![page43_img1.png](images/page43_img1.png)
 
 
 ---

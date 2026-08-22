@@ -1,9 +1,9 @@
 {
   "title": "Aligning Active Inference Ontology to SUMO",
   "version": null,
-  "doi": "10.5281/zenodo.11459322",
-  "doi_url": "https://doi.org/10.5281/zenodo.11459322",
-  "zenodo_record": "https://zenodo.org/records/11459322",
+  "doi": "10.5281/zenodo.11463326",
+  "doi_url": "https://doi.org/10.5281/zenodo.11463326",
+  "zenodo_record": "https://zenodo.org/records/11463326",
   "record_id": "11463326",
   "publication_date": "2024-06-03",
   "resource_type": {
@@ -105,7 +105,7 @@
   "related_resources": [],
   "github_repo": "",
   "source": "zenodo-only",
-  "checked_at": "2026-06-30T23:25:32Z",
+  "checked_at": "2026-08-22T21:00:00Z",
   "domain": "AII Ecosystem",
   "type": "Paper",
   "methods": [

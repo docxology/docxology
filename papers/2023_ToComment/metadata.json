@@ -1,19 +1,23 @@
 {
-  "title": "ToComment",
+  "title": "Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse",
   "domain": "Genetics & Biomedical",
   "type": "Paper",
   "creators": [
     {
-      "name": "Mridula Mascarenhas"
+      "name": "Mascarenhas, Mridula",
+      "affiliation": "California State University Monterey Bay"
     },
     {
-      "name": "Richard J. Cordes"
+      "name": "Cordes, Richard J.",
+      "affiliation": "COGSEC; Atlantic Council GeoTech Center"
     },
     {
-      "name": "Daniel A. Friedman"
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "COGSEC; University of California, Davis",
+      "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze h...",
+  "description": "Integrates frameworks from rhetorical studies and ecological studies to catalog, monitor, and study digital image meme data, introducing the Digital Rhetorical Ecosystem three-tiered model (DRE3) for tracing multimedia rhetorical artifacts across platforms, media types, and languages.",
   "abstract": "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze how memes function as rhetorical artifacts that shape public discourse through parsimony, polysemy, and identity construction in digital public spheres.",
   "keywords": [
     "rhetorical analysis",
@@ -21,26 +25,47 @@
     "digital discourse",
     "narrative ecosystems",
     "DRE3 model",
-    "public sphere"
+    "public sphere",
+    "sensemaking"
   ],
   "methods": [
     {
-      "name": "Genomic and bioinformatic analysis",
-      "description": "Applied genomic and bioinformatic analysis approach"
+      "name": "Rhetorical ecosystem mapping",
+      "description": "Applied rhetorical ecosystem approach"
     },
     {
-      "name": "Statistical genetics",
-      "description": "Applied statistical genetics approach"
+      "name": "Cross-domain pattern mapping",
+      "description": "Applied cross-domain pattern mapping"
     }
   ],
   "key_findings": [
-    "develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives..",
-    "Building on the DRE3 model, we analyze h...."
+    "Parsimony and polysemy give image memes narrative power",
+    "Image memes engage audiences through identity construction",
+    "DRE3 model supports formal tracing of memes across platforms"
   ],
   "related_papers": [
     "2015_CryptoJews",
     "2015_EhrlichialInfection",
     "2015_HoneyBeeEvolution"
   ],
-  "checked_at": "2026-07-01T20:50:01Z"
+  "checked_at": "2026-08-22T20:40:00Z",
+  "version": "v1.1 (ECOMEME)",
+  "doi": "10.5281/zenodo.5573946",
+  "doi_url": "https://doi.org/10.5281/zenodo.5573946",
+  "zenodo_record": "https://zenodo.org/records/5573947",
+  "record_id": "5573947",
+  "publication_date": "2022-06-16",
+  "resource_type": {
+    "title": "Paper",
+    "type": "article"
+  },
+  "files": [
+    {
+      "name": "2023_ToComment.pdf",
+      "size_bytes": 2259667,
+      "checksum": "md5:eb16ffcd28e2f9ed173392af7ab59944",
+      "download_url": "https://zenodo.org/api/records/5573947/files/ECOMEME%20v1.1.pdf/content"
+    }
+  ],
+  "source": "zenodo"
 }

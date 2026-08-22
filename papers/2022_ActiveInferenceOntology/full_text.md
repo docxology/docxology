@@ -2,4658 +2,2181 @@
 
 > Extracted from `2022_ActiveInferenceOntology.pdf`
 
-> 27 figures extracted to `images/`
+> 8 figures extracted to `images/`
 
 ---
 
 ## Page 1
 
-Active Inference Institute & Active Inference
-Ecosystem (2024, v2)
-This is the home page for the 
-.  
-Active Inference Institute & Active Inference Ecosystem (2024, v2)
-We publish the work as a linear concatenated document. It will also be available as living document at 
- in tree form. 
-https://ecosystem.activeinference.institute/
-The version 2 snapshot is published with DOI: 10.5281/zenodo.14108992 .
-You can also have LLM-aided live chatting with the document via 
-.
-this Perplexity link
-This document is structured according to the sections: 
-Opening sections with information such as:
-, 
-⁠
+An Active Inference Ontology for Decentralized Science:
+from Situated Sensemaking to the Epistemic Commons
+Authors (ORCID):
+Daniel Friedman 1,2 (0000-0001-6232-9096)
+Shaun Applegate-Swanson 1,2 (0000-0001-9474-6038)
+Jessica Angeli Balbuena1,2 (0000-0003-2741-4476)
+Arhan Choudhury 1 (0000-0001-6897-2947)
+RJ Cordes 1,2 (0000-0002-9913-7159)
+Shady El Damaty 3 (0000-0002-2318-4477)
+Avel Guénin—Carlut 1,4 (0000-0001-8239-7264)
+V. Bleu Knight 1,2 (0000-0002-9894-1989)
+Ivan Metelkin 1 (0000-0003-2899-6690)
+Siddhant Shrivastava 1,2,5 (0000-0002-9688-4730)
+Amit Kumar Singh 1 (0000-0002-8870-9676)
+Jakub Smékal 1,3 (0000-0003-4989-4968)
+Caleb Tuttle 3 (0000-0002-8469-2221)
+Alexander Vyatkin 1 (0000-0003-1306-4620)
+Author Affiliations:
+1. Active Inference Institute (activeinference.org/)
+2. Complexity Weekend (complexityweekend.com/)
+3. OpSci (opsci.io/)
+4. Kairos Research (kairos-research.org/)
+5. Kernel (kernel.community/)
+Email address for correspondence & collaboration: ActiveInference@gmail.com
 Abstract
-Authors
- for an overview on Active Inference.  
-Active Inference
- 
-The Active Inference Institute
-Pages related to the history, projects, productions, goals, organizational anatomy, values, and people of the Institute.  
- 
-The Active Inference Ecosystem
-Pages related to activities and areas of attention in the broader Active Inference Ecosystem. 
- 
-Discussion and Future Directions
-This structure initially came from the sections and contents of the 
- “The Active Inference Institute and Active 
-Inference Ecosystem”. From that starting point, during September-November 2024, the 
- made various contributions 
-and additions to this living document. 
-2023 paper
-Authors
-
-This is a work in progress, and we will continue to update.
-Get in touch with any comments, questions, or inclination to assist, for example with curating 
- or 
-contributions to information about 
-. 
-Email: 
- 
-Domains of Application
-The Active Inference Institute
-blanket@activeinference.institute
- •
- ◦
- ◦
- •
- ◦
- •
- ◦
- •
-
-![page1_img1.png](images/page1_img1.png)
+In this work, we examine science from the vantage points of blockchain technology
+and its connection to decentralized science (DeSci). We consider science as a collective
+process using Active Inference, an integrative framework that models the cognitive
+processes of perception, planning, and action selection in terms of Bayesian probabilities
+and updating. We present the Active Entity Ontology for Science (AEOS, available at
+coda.io/@active-inference-institute/active-entity-ontology-for-science-aeos) as a
+composable and versionable system for modeling various science systems, using the
+Active Inference entity partitioning. Such DeSci systems are considered from the
+perspective of BOLTS (Business, Operations, Legal, Technical, Social). Further steps for
+developing and utilizing AEOS in the context of scientific ecosystems are provided.
+1
 
 ## Page 2
 
+Table of Contents
 Abstract
-This document surveys the current state of 
- and 
-, in the 
-context of our current and future directions. As embodied agents, we aim to update our decisions, goals and predictions as an 
-institute by actively gathering (sampling) insights (observations) from our members. As Heraclitus once said “No one ever steps 
-in the same river twice. For it’s never the same river and it’s never the same person”. In the same way, the Institute evolves with 
-each new member, accumulating a variety of perspectives to drive improvement. 
-The Active Inference Institute
-The Active Inference Ecosystem
-A Unifying Framework Across Disciplines
- is a framework that emerges from studying how the interaction of living systems and their environment can 
-be understood through the lens of information theory, drawing on important principles of thermodynamics — the science of 
-energy and it’s transformations. With solid theoretical grounding, this allows Active Inference to be applied to many areas of 
-human behavior and social interactions.
-Active Inference
-As a framework, Active Inference is a powerful tool for thinking about systems that ecologically evolve over time. By bridging 
-connections across multiple disciplines, ranging from computational neuroscience to ecological psychology, there has been a 
-growing list of 
- relating to its implications that continues to grow and expand. These applications 
-range across a multitude of fields such as artificial intelligence, economics, law, governance, resource management, risk 
-management, finance, decision theory and physics, highlighting the versatility as well as the value of a unifying framework to 
-understand human behavior and it’s adaptability across dynamic environments.
-Domains of Application
-The Institute and You
-The Active Inference Institute is an educational organization committed to promoting a better understanding of Active Inference 
-and its potential benefits. Our goal is to build and provide a network of support to a wide audience of individuals interested in 
-learning the foundational knowledge or practical applications of framework principles within civic, commercial, industrial and 
-other domains. With a mixture of community initiatives, resources and collaborative learning, the Active Inference Institute aims 
-to empower individuals and integrate framework principles into real-world problem solving. Due to its unifying nature, Active 
-Inference has spawned a disparate and broad-reaching Ecosystem of researchers. 
-  aims to 
-provide  
- through stewarding the information commons and infrastructure scaffolding.
-The Active Inference Institute
-Ecosystem Support
-Since its inception, the 
- has been one of an evolving community driven by learners of all stages of 
-experience, and from myriad backgrounds, who have worked individually and in various combinations to expand Active 
-Inference across disciplines. We’ve understood from the outset that change is inevitable, that sustainability and growth are 
-dependent on a willingness to take chances, and that building trust needs time. The community continues to grow and new 
-members can get involved through participation in one of the many learning opportunities (e.g. courses, 
-, 
-), can advance Active Inference through research and development programs and collaborative research 
-initiatives ( e.g. Internship & Fellowship programs), and can engage with the community by contributing to the discourse. 
-History of The Institute
-Textbook Group
-Videos & Podcasts
-Be part of a globally connected community of Active Inference practitioners and join us as we create this community and 
-expand what is possible for the institute and the many parties, organizations and organisms that can potentially benefit from 
-this work. 
-As you find your pace and balance, we hope you’ll find the Institute isn’t just a place of convergence so much as a portal 
-through which new worlds of connections await. We hope to create a space together where we can pursue those opportunities 
-from numerous directions, and where each person feels welcome to enter differently according to the paths which have led 
-them here.
-
-![page2_img1.png](images/page2_img1.png)
+1
+Table of Contents
+2
+Driving Questions
+3
+Introduction
+4
+Science and the Epistemic Commons
+4
+Centralized Science (CeSci) and Decentralized Science (DeSci)
+7
+CeSci: centralizing institutions against situated sensemaking
+8
+DeSci: governing epistemic commons
+10
+Implementing Decentralized Science in the Web3 era
+13
+Web3 for DeSci
+13
+Web3
+13
+Blockchain
+14
+Smart Contract
+14
+Token (fungible and non-fungible)
+15
+DeSci Organization: DAOs, Blockchain, and Markets
+15
+DeSci Vision and Open Questions
+17
+DeSci Token Engineering
+18
+DeSci Research
+19
+DeSci Publishing and Review
+20
+DeSci Funding and Finances
+21
+DeSci Data and Knowledge Markets
+24
+Teamwork Modeling with Systems Engineering
+26
+BOLTS of the CeSci to DeSci Integration
+28
+Business
+29
+Operations
+29
+Legal
+30
+Technical
+30
+Social
+30
+BOLTS and Reliability for Science Systems
+31
+Active Inference, Systems Engineering, and Science
+33
+What is Active Inference?
+33
+Active Inference and Science
+34
+Active Entity Ontology for Science (AEOS)
+36
+AEOS Entity partitioning
+38
+AEOS Entity Classes and Types
+38
+AEOS Policy Selection, Areas of Concern, and Roles
+40
+Discussion
+44
+Works cited
+46
+2
 
 ## Page 3
 
-Authors
- made various contributions to the 
- (backend 
- with full trace of edits).
-Authors
-Active Inference Institute & Active Inference Ecosystem (2024, v2)
-writing document
-Alex Vyatkin
-Active Inference Institute
-0000-0003-1306-4620
-Alexandra Mikhailova
-Active Inference Institute
-0000-0002-8699-7125
-Andrea Hiott
-Universität Heidelberg
-0000-0003-0748-2295
-Andrew Pashea
-Active Inference Institute
-0009-0004-4061-6296
-Ben Elers
-The Brain Innovation Project
-0009-0009-2761-9229
-Bert Berkers
-Active Inference Institute
-0009-0006-6583-6687
-Bleu Knight
-Active Inference Institute
-0000-0002-9894-1989
-Chris Fields
-Allen Discovery Center, Tufts University
-0000-0002-4812-0744
-Dan Whittet
-AHA Sustainability
-0009-0009-5089-0551
-Daniel Friedman
-Active Inference Institute, COGSEC
-0000-0001-6232-9096
-Déan Ticklẽs
-Active Inference Institute
-0000-0003-2213-0773
-Fraser Paterson
-Active Inference Institute
-​
-Gareth Stubbs
-Rabdan Academy
-0000-0002-7631-2823
-Holly Grimm
-Active Inference Institute
-0009-0001-6181-2569
-Jakub Smekal
-Stanford University
-0000-0003-4989-4968
-Jeremy Cooper
-Regent University, School of Psychology & 
-Counseling
-0000-0002-2243-1966
-John Boik
-Active Inference Institute
-0000-0003-1289-7997
-Libor Burian
-Independent, previously CTU FIT
-0009-0007-6181-340X
-Mahault Albarracin
-Universite du Quebec a Montreal
-0000-0003-0916-4645
-Maria Luiza Iennaco
-University of São Paulo, Active Inference Institute
-0000-0002-5407-4852
-Matthew Brown
-ThoughtForge Inc
-0000-0002-7552-0989
-Mick Thacker
-Royal College of Surgeons in Ireland
-0000-0002-9034-1137
-Peter Gilli
-Active Inference Institute
-0009-0006-2755-5921
-Rafael Kaufmann
-Gaia Lab; Primordia Co; Active Inference Institute
-0009-0003-8678-4896
-RJ Cordes
-BlockScience, COGSEC
-0000-0002-9913-7159
-Ryan Henry
-Yale University
-0000-0002-0706-6841
-Sandeep Ramesh
-Panopticon Ventures; Primordia Co.
-0009-0006-4976-3326
-Name
-Affiliation
-ORCID ID
-Authors
+Driving Questions
+Centralized Science (CeSci): Historical science operations, community, and practices
+●
+What are successful, effective, and productive scientific practices for communities and individuals?
+●
+What frameworks and tools can help form and support communities of practicing researchers to
+promote long-term collaboration and impact?
+●
+How are preferences and expectations aligned and communicated in ecosystems of scientific
+collaboration?
+●
+How do we avoid perverse incentives in systems of scientific inquiry?
+●
+How do we ensure effective and transparent resource allocation and funding as research becomes
+more interdisciplinary, interorganizational, and international?
+●
+How can scientific careers be started and nurtured, increasing the accessibility and vitality of
+science as a community and body of knowledge?
+●
+What are fair and effective means of elevating voices to scientific thought leadership roles?
+●
+What are good ways to identify strategic priorities for scientific funding, intellectual capital
+allocation, and focused development?
+●
+How to deal with new opportunities and challenges related to increases in remote work?
+●
+How to enable efficient data and code access?
+Decentralized Science (DeSci): The future of coordination and Knowledge Engineering
+●
+How can decentralized teams and organizations coordinate research using effective distributed
+mechanisms?
+●
+What scientific outputs are to be expected of Decentralized Science (DeSci)?
+●
+How will DeSci produce traditional research products such as papers, as well as other outcomes,
+such as products, services, platforms, tools, and protocols?
+●
+What artifacts and design patterns will stimulate the development of integrated DeSci systems?
+●
+How can Distributed Autonomous Organizations (DAOs) scaffold and catalyze research, grants,
+education, and community development?
+●
+What methods for value capture and financialization improve the process of scientific discovery,
+and which methods result in poor outcomes that are at odds with open science community values?
+●
+What improves the reliability of outcomes and accountability of funds in emergent collaborations?
+●
+What are the relations between the trajectories of scientific governance, and
+social/ecological/political change and collapse?
+●
+How can scientific careers become more accessible to researchers who are non-PhD holders, and
+those with other commitments such as family, participation in industry, etc?
+●
+How can we use blockchain and related technologies to cultivate cultures of fair work attribution,
+through records of contribution to knowledge artifacts and proof-based protocols?
+●
+How can we maintain a favorable signal-to-noise ratio for DeSci work output?
+●
+Can the Active Inference framework and ontology be used to understand complex sociotechnical
+systems such as epistemic communities?
+●
+How are epistemic commons created and maintained in an era of Human-Computer collaboration?
+3
 
 ## Page 4
 
-Scott David
-University of Washington: Applied Physics 
-Laboratory
-0000-0003-0679-3286
-Sebastian Alvarado
-Queens College + City University of New York, 
-Biology Department
-0000-0001-5866-4043
-Zach Baker
-University of Colorado
-0009-0006-7283-9392
+Introduction
+Science is a cumulative, collective endeavor that augments a single human's
+sensemaking ability with tools, practices, and processes we use together to observe,
+measure, and understand the world around us and to agree on a shared reality. Even
+before the invention of modern scientific instruments such as microscopes and particle
+accelerators, humans relied on their senses to observe the environment and on their
+brains to make inferences about these observations. This is still true today. Any study of
+how knowledge is accumulated must consider how the brain works when making
+predictions based on observations and incomplete data. Additionally, as the information
+required for scientific research extends far beyond the cognitive capacity of a single
+unaided human, tools for scientific organization, knowledge management, and
+communication become increasingly necessary to consider as well.
+Science and the Epistemic Commons
+A recent shift in science is the move towards greater recognition of the complex
+nature of systems such as brains or societies [1,2]. For example, cognitive science has
+largely moved away from the ambition to discover universal laws of behavior to focus more
+on the causal structure of the brain and its patterns of activity in different scenarios [3].
+Utilitarian scientific models today strive to explain natural phenomena by piecewise
+integration of generative models expected to match the causal structure of the target
+system at the relevant scale of behavior [4,5]. The development and validation of
+mechanistic models is based on multiple cognitive strategies, for example involving
+computational modeling, empirical observation, statistical inference, and domain-specific
+theoretical considerations. Despite this modeling shift, the social structure of science has
+not yet adapted to embrace integrative practices. While the scientific community has
+long-standing practices which they optimize for, many of these practices have lost their
+validity, efficacy, or legitimacy [6,7]. This results in suboptimal integration of complex
+transdisciplinary knowledge by favoring the partitioning of research along the lines of
+traditional domain-specific methodologies, organizational processes, thematics, and
+vocabulary.
+Indeed, the modern era has seen the emergence of an unprecedented hegemony
+of administrative institutions over all other forms of human social organization. Political
+anthropologist James C. Scott explains the emergence of top-down structures for complex
+problem solving as a default reflex to compress complexity. Scott claims that the capacity
+of bureaucratic states and administrators to understand and manipulate the world relies on
+a systematic reduction of the world onto standardized, legible tokens (teachable facts),
+4
 
 ## Page 5
 
-Active Inference
-What is Active Inference?
- is an integrated physics-based approach to modeling cognition and behavior as the active minimization of 
-prediction error. Arising from the empirical study of cognitive systems (those involved in perception and action), Active 
-Inference now is being explored across many 
-.
-Active Inference
-Domains of Application
-The formal aspects of the framework describe in mathematical terms the tendency of complex adaptive systems to self-
-organize as to maintain low-surprise states (formally, through minimization of Variational Free Energy). Active Inference treats 
-this tendency as the basic process, enabling the modeling of perception and behavior in various kinds of cognitive agents, 
-including but not limited to humans.
-For those encountering this term for the first time, this can sound technical and obscure, but Active Inference can also be first 
-understood more conceptually and practically as a framing for analysis that is broadly useful towards addressing or gaining 
-perspective in a wide variety fields that formerly seemed unconnected. 
-At its most basic level, Active Inference can be compared to the guessing game called “20 Questions,” a game in which one 
-person is challenged to guess the identity of an object imagined by another person. In the game, each addition question asked 
-is the “active” part of active inference, and the responses serially constrain the next question as the person guessing. Through 
-this process surprise (bounded by “Variational Free Energy”) due to the differences of an observers “internal model” and the 
-outside reality is reduced offering advantages to the cognitive/behavioral system, whether that system is a cell, an organism, a 
-human organism, or an organization. 
-For example, Active Inference finds application as diverse as 
- and 
- (see 
-). It is 
-not surprising that Active Inference framing is broadly useful in structuring a deeper understanding of the information flows 
-associated with human cognition and bio-social behaviors in a variety of interaction settings and contexts, since Active 
-Inference first emerged from the study of information flows in nature, where the organizing effects of its thermodynamic 
-underpinnings are expressed most freely. 
-mental health
-ecology
-
-Domains of Application
-When Active Inference analysis is directed toward human social and organizational structures and behaviors, it reveals how 
-relevant these bio-physical imperatives are when reflected and expressed in our everyday world. Greater awareness of this 
-foundation, both in individual and organizational contexts, could enhance the overall effectiveness of a variety of information 
-and communication systems and structures, many of which have never enjoyed a “spring cleaning” since their respective 
-historical inceptions. 
-We could, for example, define Active Inference in everyday language as an approach to understanding our interaction with the 
-world and with those around us, how can we create some sort of model to understand how or why we behave as we behave 
-and then apply this understanding to improve how we self-manage our shared models in a quickly changing reality. More 
-formally, one could rather approach it through mathematics, and explore the foundational aspects of the operation of Active 
-Inference. 
-The advice to new members of the community who are looking for the best way to begin interacting with the broad range of 
-materials and use cases impacted by active inference analyses is to seek the papers, discussions, materials that present the 
-most familiar vocabulary, narratives and metrics as the starting point, and then to explore from there. To look for terms and 
-keywords across the Active Inference resources that appeal to you most readily and start your journey by following those 
-threads. .
-For background readings related to the theoretical basis of 
-, see: The 2022 Textbook: “
-” by Thomas Parr, Giovanni Pezzulo, Karl J. Friston 
-(focus of the 
-), “
-” by Maxwell Ramstead (October 2023), 
-" by Jared Tumiel (October 2020), and “
-” 2018 conversation-style interview with Karl 
-Friston.
-Active Inference
-Active Inference: The Free Energy Principle in Mind, Brain, and Behavior
-Textbook Group
-The free energy principle—a precis
-Spinning Up in Active Inference and the Free Energy Principle
-Of woodlice and men: A Bayesian account of cognition, life and consciousness
+such as accounting, and measurement units or legal identities based on a permanent
+patronym [8]. The need for this "view from above" has placed pressure on research
+institutions to adapt both their objectives and operating activities to meet the needs of
+administrators. This "technoscientific" logic has left a complex and pervasive legacy in the
+organization of contemporary research, including in the way we currently understand and
+practice scientific research. In worst-case settings (which are unfortunately common),
+research quality is evaluated on superficial measures with no principled consideration of
+deeper relevance, leading to a raging competition between researchers on the number of
+words written, sheer number of publications of any kind, or the ability to use technical
+language [9–12], without considering the positive epistemic impact of the work. Entire
+research programs can be funded because of insider networks, or correlation to a hype
+cycle, while more thoughtful and critical (and ultimately constructive) research may easily
+go unnoticed. In other words, the key metrics for tracking global scientific progress have
+become increasingly divorced from their ability to be replicated or have meaningful impact
+[13,14], and more correlated with social and cultural signaling within the unrepresentative
+and often biased scientific community. When the professional scientific community is only
+a small unrepresentative fraction of society, there is the possibility of detachment or
+isolation from broader goals. Modern scientific careers can be exclusive and select for
+certain types of people, leading to less representative population practicing science
+professionally with key perspectives and backgrounds missing from the table
+Given the incentive misalignment and power imbalances between administrators
+and practitioners, the scarcity of resources, competition over resources both between
+researchers and research institutions, and the inflexible nature of the bureaucracies which
+connect and govern extant research institutions, there are few mechanisms available for
+improving traditional research institutions aside from increasing funding. Luckily, human
+prosociality has taken many forms throughout our evolutionary history from which we can
+draw inspiration. We could develop tools and protocols which treat the outcomes of
+research as contributions to an epistemic commons, a web of informational or
+knowledge-oriented systems which would allow individuals with disparate motivations, skill
+sets, and beliefs to collaborate at the intersection of their interests and tackle specific
+questions or systems with the most contextually relevant tools, in the best interest of
+cumulative, collective scientific knowledge. In other words, we argue that relaxing the
+constraints of legibility associated with bureaucracy and its “view from above” could help
+develop the "view from the ground" (i.e., pragmatic understanding by practitioners) as well
+as the "view from within" (i.e., scientific knowledge, in the classical sense of an objective
+description of system organization and activity).
+Human prosociality has contributed to the persistence of our species. The emergent
+structure of social organization is variable but can develop towards hierarchical, top-down
+5
 
 ## Page 6
 
-For seeing specific applications of Active Inference, see 
-, as well as 
- & 
-. In short — read on! 
-Domains of Application
-Institute Projects
-Ecosystem Projects
-What are key claims and aspects of Active Inference?
-Active Inference is scale-free as both a theoretical framework and a modeling approach. It characterizes all [information 
-processing?] systems [of interacting components?] as behaving in a way that satisfies a single, fundamental goal: every 
-systems acts so as to maintain the distinction between it and its environment. It characterizes all systems as employing the 
-same strategy to achieve this goal: maximizing their ability to predict how their environment will next impact them. 
-Active Inference thus characterizes all systems - from elementary particles to planetary ecosystems - as agents that both 
-observe (accept input from) and act on (transfer output to) their environments. This information transfer is defined at the 
-agent-environment boundary. For any agent, preserving its distinction from its environment is preserving its boundary, which 
-preserves its identity. The Active-Inference process is, therefore, sometimes referred to as “self-evidencing”: any Active 
-Inference agent continually provides its environment with evidence of its existence.
-By treating all systems at all scales as agents, Active Inference embraces a minimal, physical definition of “freedom”: an Active 
-Inference agent is “free” in the sense that its next action is not causally determined by its environment. One can also put this as: 
-the current state of an Active Inference agent is not causally determined by any, or all, of its environment’s past actions on its 
-boundary. Freedom in this sense - freedom from local, causal determinism - is guaranteed to all physical systems by the 
-Conway-Kochen theorems (
-, 
-), which show that local, causal determinism in inconsistent with special relativity, which 
-requires that causal processes take time, and quantum theory, which forbids the state of any system to be fully characterized 
-by a single measurement. Hence Active Inference agents have internal states, and internal processes, that are “protected” from 
-their environments by their boundaries. “Self-evidencing” is, therefore, also “maintaining one’s freedom of action”.
-2006 2009
-The generality and action orientation of Active Inference makes it a natural bridge between descriptive approaches to systems, 
-and prescriptive approaches to implementation of artificial intelligence (e.g., machine learning) and design (e.g., user 
-experience, communication, policies, 
-, 
-, etc.). Active Inference therefore enables a principled account of 
-composition and decomposition, construction and de-construction, in complex adaptive systems. This generality provides a 
-unified conceptual and pragmatic approach towards establishing a foundation for modeling, designing, and implementing 
-various information processing systems across scales, disciplines, and settings. Active Inference is, therefore, intrinsically a 
-trans-disciplinary framework both for theory and for modeling. As such, it provides a powerful common language into which 
-discipline-specific languages can be translated.
-BOLTS requirements
-Active Inference leverages Bayesian principles, couching how systems perceive, learn, and act in their environments. It thus 
-treats “knowledge” or “belief” as expectation or prior probability. It treats all agents as Bayesian satisficers, “doing the best they 
-can do” in their environments given how they expect their environments to behave towards them.
-Over the last several decades, 
- has been attracting increased attention as a quantitative and cognitive 
-framework capable of acting as a common bridge, or Rosetta Stone, among various domains, and is gathering support across 
-. Some citation search measures of this growth in popularity for “Active Inference” and “Free Energy 
-Principle” are shown. Deeper 
- is needed to make stronger inferences about the growth and change 
-of the ideas and their applications, in the research literature and beyond. 
-Active Inference
-Domains of Application
-Knowledge Engineering
-“Active Inference” on 
- & 
-⁠
-PubMed
-arXiv
-“Free Energy Principle” on 
- & 
-⁠
-PubMed
-arXiv
-“
-” on 
-PubMed & 
-⁠
-Artificial Intelligence
-arXiv
-What is this excitement and 
-growth about?! 
-Read on to learn about the 
-, the 
-, and explore the depth and 
-The Active Inference 
-Institute
-The Active Inference 
-Ecosystem
-​
- 
-​
- 
-​
- 
-​
- 
-​
- 
-​
-
-![page6_img1.png](images/page6_img1.png)
-
-![page6_img2.png](images/page6_img2.png)
-
-![page6_img3.png](images/page6_img3.png)
-
-![page6_img4.png](images/page6_img4.png)
+control which are transactional and mutually beneficial [15,16]. However, hierarchical
+control can lead to the sequestration of wealth and power over time, and a centralized
+motivation that does not always act in broader society's best interest or satisfy all relevant
+perspectives. Hierarchical structures develop cognitive biases over time that limit the
+ability to parse multiple, conflicting streams of information that do not fit into the standard
+decision making templates of those on top. Decentralized structures may be more capable
+of acting on divergent information streams, however decentralization alone is not a
+mechanism that provides intelligent coordination for effective collective action [17,18].
+Decentralized Autonomous Organizations (DAOs) are an emerging form of coordination
+between humans that enables new kinds of cyber-physical communities mediated by
+immutable, cryptography-protected code [19,20] and other artifacts. DAOs allow for
+programmable digital social structures, embedded mechanisms for consensus,
+intermediation of trust-requiring actions, and independent operation of workstreams with
+multiple leaders instead of a top-down hierarchy. Coordinating such decentralized
+communities of practice, or more generally governing "complex commons", is novel,
+difficult, and high-stakes work, often without the scaffolds and norms that traditional offline
+governance benefits from [21]. For example, systems that are decentralized in principle
+may still be functionally centralized in terms of power or asset distribution [22].
+We propose that epistemic drives and norms can grow organically from
+communities of practice, defined by open questions, shared value, interoperable
+processes, methodological synergies, personal affinities, diverse contributions,
+serendipitous encounters, and Ontologies, Narratives, Formal documents, and Tools
+(ONFT, [23]). In this paper, we model the similarities and differences between
+Decentralized Science (DeSci) and Centralized Science (CeSci) through the Active
+Inference framework, understood here as a framework addressing how living systems
+create an understanding of their environment [24] and act based on this understanding.
+The Active Inference formalism affords an integrated account of the multiscale dynamics
+shaping research, from the constitution of epistemic affordances shaping scientific
+practices [25] to the coevolution of epistemic beliefs and communities [26], as a process of
+uncertainty reduction (technically described by the descent of a gradient of variational free
+energy [27,28]). This model implies that cognitive understanding derives from adaptive
+control in agentive engagement rather than explicit representation [29–31], and that the
+activity of epistemic communities is shaped by the sociocultural constraints defining their
+structure rather than individual states of mind [32]. Based on these considerations, we will
+articulate a conceptual framing and Active Entity Ontology for Science (AEOS).
+Before we dive deep into head-on contrastive definitions of CeSci and DeSci, a
+primer on decentralized systems is crucial. We would like the first definition not to be
+simply an anti-definition of its counterpart, as we aim to incentivize effective research and
+6
 
 ## Page 7
 
-breadth of the work 
-ongoing. 
-​
- 
-​
- 
-​
-
-![page7_img1.png](images/page7_img1.png)
-
-![page7_img2.png](images/page7_img2.png)
-
-![page7_img3.png](images/page7_img3.png)
+set up collaborative relations between emergent DeSci and incumbent CeSci, not simply
+to ignite controversy. Both CeSci and DeSci will exist in collaboration in the future, in the
+sense that scientific systems will vary in their extent of centralization. Therefore, even
+though here we will use the terminology of decentralization, a host of related terms may
+also be relevant [22,33–35]. One interesting perspective to apply here is that of “Self
+Certifying Systems” [36]. These self-certifying systems are those in which an entity
+validates its own existence in the system, and the incentive mechanism of the system is
+intrinsic to it. For instance, a dataset in a database system such as InterPlanetary File
+System (IPFS) [37,38] validates its own legitimacy by hashing the contents using a
+cryptographic hash function. In these dynamics, the root of trust lies within the network
+entity itself, and not necessarily through legitimation by sources outside of the system.
+Centralized Science (CeSci) and Decentralized Science (DeSci)
+Decentralized Science (DeSci) is a relatively new term, introduced by Web3
+collectives to describe the use of recent digital tools for funding, training, planning,
+coordination, execution, dissemination and archival of scientific activities and assets by
+digitally connected communities. DeSci is an emerging area with multiple, potentially even
+incompatible, forming senses, so all explorations here should be considered preliminary
+and partial. The term DeSci suggests, by contrast, the existence of Centralized Science
+(CeSci), which would stand for the continued status quo organization of science as a
+highly bureaucratic activity managed by select academic and private institutions. Some
+motifs or patterns that are found in CeSci and DeSci can be found in Table 1 and Figures
+6-8.
+DeSci can be defined as the use of Web3 technologies to introduce epistemic
+markets through the deployment of open source and financial tools. In this view, DeSci
+represents the introduction of commodity markets for scientific assets and services where
+such markets were previously impossible (e.g. financialization through tokenization of
+intellectual property, scientific platform governance, peer review or curation services, or
+access privileges to data or infrastructure). In another perspective, DeSci is seen as a set
+of mechanisms for bottom-up individual sensemaking. From this perspective, DeSci is the
+capability of individual agents or communities of practice to make sense of the world
+autonomously, by defining their own questions, language and methodology. These
+disparate views represent the distinction (without preference or judgment) between DeSci
+as a set of emerging Web3 tools and DeSci as a research ecology, respectively.
+Tool use, including markets and organizational technologies like DAOs, are
+fundamental to the ecological view of science [39]. However, proponents of DeSci do not
+conceive of this distinction as a purely technological one, for example simply describing
+7
 
 ## Page 8
 
-The Active Inference Institute
-The Active Inference Institute is a registered non-profit organization (Delaware, USA) which identifies, establishes, scaffolds, 
-and supports the sustainable implementation of: 
-Education and Research services.
-We learn and teach 
- 
-Active Inference
-We host 
- and 
-⁠
-Institute Programs
-Institute Projects
-We provide visibility and opportunities for 
-  
-Ecosystem Projects
-Participation, communication, advisory, governance, and meta-governance affordances within the Institute and 
- 
-The Active Inference Ecosystem
-Publishing, and licensing protocols that establish 
-, fair use, and effective dissemination of community 
-products within and beyond the Ecosystem.
-Open Source
- services such as 
-, 
-, and operation of 
-cyber and cognitive security systems aligned with our 
- 
-Ecosystem Support
-Communications
-Applied Active Inference Symposium
-Mission, Vision, Values, and Principles
-The rest of this section covers: 
- since founding in 2021
-History of The Institute
- 
-Mission, Vision, Values, and Principles
- in terms of ongoing challenges (”where you find the challenge is where the learning/solution 
-is done!”)
-Focus Areas for the Institute
- we are taking in light of the focus areas. 
-Directions for the Institute
-, or morphology, in terms of roles and positions. 
-Institute Organization
- and avenues for participation, such as 
-, 
-, 
-, 
-, 
-, 
-s
-Institute Programs
-Volunteer
-Internship
-Fellows
-Philanthropy
-Grants
-Partnership
- hosted by the 
-⁠
-Institute Projects
-Organizational Units
- 1.
- a.
- b.
- c.
- 2.
- 3.
- 4.
- •
- •
- •
- •
- •
- •
- •
+the fact that DeSci organizes with the Internet while CeSci utilizes paper as well as digital
+media is an insufficient distinction. For example DAOs don't replace off-chain or offline
+human organization, they augment it with on-chain guarantees and some automatic
+processes for human organization (i.e. voting is still a human process, but once the
+parameters are set the voting itself may be automated and free of human corruption). The
+broader perspective on DeSci is that it aims to reform the organization of scientific activity
+itself, which is expected and preferred to translate into an increased ability for Science to
+fulfill its mandate and align with social values [40]. We fully agree that this expectation is
+warranted, at least in principle, as the socio-epistemic dynamics we call Science clearly
+derive, at some level, from the concrete organization producing it. We will therefore
+attempt to characterize the distinction between CeSci and DeSci in terms of their
+respective organizational and structural aspects.
+Both CeSci and DeSci aim at knowledge discovery, cultivation, and curation, but
+they differ in their means to this end in terms of their incentives, structure, and norms, or
+more generally, in terms of their research ecology. In CeSci, the language, methods for
+discovery, and strategic priorities are imposed from the top down by a core group of
+decision makers acting out the mandate of government policy positions. Core groups of
+decision makers also receive external input and constraints, for example in the case of
+peer review. In DeSci, methods and norms emerge from the bottom-up interactions of a
+web of loosely connected communities of practices with diverse coordination and
+prioritization mechanisms. Therefore, CeSci and DeSci diverge significantly in terms of
+their sensemaking; one imposes specific meaning, understanding, and other cognitive
+constraints to scientific activity so as to keep it legible to the "view from above", the other
+cultivates the "view from the ground" by allowing those same cognitive objects to unfold
+spontaneously throughout the course of the scientific activity.
+Though there is fundamental overlap, and perhaps more similarity than not between
+CeSci and DeSci at this incipient stage, those terms stand for a fundamental divergence in
+the social and epistemic dynamics shaping the organization of research. Here we explore
+some of those dynamics by considering key differences between DeSci and CeSci.
+CeSci: Reducing Sense-Making Complexity Through Centralizing Institutions
+CeSci is characterized by the presence of centralizing agents (such as government
+institutions, philanthropic foundations, private businesses, or universities) having the
+power and willingness to establish and enforce rules, goals, ontologies, and other informal
+constraints within the wider scientific ecosystem. Its purpose can be understood as
+pragmatic rather than purely epistemic, in that CeSci institutions are funded and
+motivated, internally and externally, to build epistemic value (i.e. knowledge) that can
+8
 
 ## Page 9
 
-History of The Institute
-2020
-The 
- begins in the co-founder team meeting in 2020 around a common interest in 
-. 
-This resulted in productive collaboration and the publication “Active Inference & Behavior Engineering for Teams” in September 
-2020 (
-). The group was then known as “Team Comm”. Check out 
-, on July 28, 2020.
-History of The Institute
-Active Inference
-Vyatkin et al. 2020
-our first livestream, ActInf Livestream #001.1 ~ “Narrative as active inference"
-Following the 2020 publication, discussions turned towards exploring approaches that could catalyze the accessibility, rigor, 
-and applicability of Active Inference, and how to merge the developing framework with the 
- and 
-. Out of these discussions an “Active Inference Lab” (or ActInfLab) was formed and began operations in 2021. 
-Systems Approach
-Open Source
-2021
-Over the first year of our operations, dozens of individuals from around the world engaged with ActInfLab through various 
-projects such as educational 
- , 
- publishing, collaborative research projects, focused 
-learning groups, 
-, and initial developments of the 
-. 
-Videos & Podcasts
-Open Source
-Active Inference Journal
-Active Inference Ontology
-Since the first quarter of operations in 2021, the ActInfLab hosted 
- for communicating 
-quarterly expectations and results to the community, a tradition that we continue to this day.
-Quarterly Roundtable livestreams
-2022
-Beginning in 2022, a cohort-based 
- (SAB) was established to connect the ActInfLab to cutting-
-edge theoretical work as well as various domain-specific applications. As interest in both the ActInfLab’s activities and Active 
-Inference itself began to grow, ActInfLab soon emerged as a key facilitating organization in what was then a primarily academic 
-community working on the underlying theory and potential implications for Active Inference. 
-Scientific Advisory Board
-The first Active Inference textbook comes out in 2022 (
-), and the Institute begins hosting a 
- (ongoing through 7 cohorts in 2024). The Textbook Group is an important ecosystem service, as there are 
-few academic/institutional locations where learners can be supported through the curriculum of the textbook and beyond. 
-Additionally, the Institute has curated and categorized learning materials that learners create while participating in the group, 
-including questions and discourse.
-Parr, Pezzulo, Friston 2022
-Textbook Group
-The Institute begins the 
- program to scaffold and support the learning journey of learners. Interns come from 
-different backgrounds — including high school, college, and graduate students on academic tracks, as well as professionals 
-and others outside of academia. Interns, with their mentors, develop a personalized education and research curriculum which 
-lasts months-years. 
-Internship
-In mid-2022, ActInfLab made the developmental leap to become 
-, a non-profit organization 
-registered in Delaware, USA with the intention of making its facilitatory role in the community impactful and sustainable. As part 
-of the requirements for a non-profit, we also laid out the 
-, comprised of the 
-: 
-, 
-, and 
-.
-The Active Inference Institute
-Institute Organization
-Organizational Units
-Administrative
-EduActive (Education)
-ReInference (Research)
-At the end of 2022, the 
- has its first meeting. The Board continues to meet on a quarterly basis. 
-Board of Directors
-2023
- and 
- continue, including the first two full course offerings: 
- and 
-. These courses span months, and include office hours with the lecturer and teaching assistants. 
-Institute Projects
-Institute Programs
-Physics course
-Social Science course
-In addition to continuing livestream 
- on YouTube (GuestStream, ModelStream, PaperStream, etc), the 
-Institute hosts the popular 
-.
-Videos & Podcasts
-Active Inference Insights podcast
-
-![page9_img1.png](images/page9_img1.png)
+assist other institutional actors and stakeholders understand and manipulate reality in
+terms of their objectives, for better or worse. An example of this is the 19th Century
+development of statistics, which was explicitly intended to help the developing modern
+States to perceive and control their population through the collection and analysis of
+demographic data, and effectively shaped what it meant to "think like a State" [32]. Due to
+extrinsic mandates, CeSci orients the sensemaking activity of its participant researchers
+toward specifical technical and pragmatic purposes.
+Although the goal of scientific research has largely extended beyond war and
+administration, the modern logic of centralization and technical management is largely
+continued in contemporary research. The managerial role over the epistemic commons
+was granted to modern academic institutions, and complemented their role of supporting
+technological development through research on the property of chemicals, mechanical
+systems, and the like. These institutions have a core mandate of assisting outside
+institutions in their pragmatic endeavors. Their overarching goals are to accumulate
+epistemic value in that direction. Influence over research institutions by external
+organizations can be direct or indirect. In the first case, it may mean cadres of
+administrators exercising direct control over what research objectives should be, what
+funding agencies can be or should be approached, and recruiting based on compliance
+with external mandates. Indirect influence can be exerted, for example, by external
+organizations offering funding based on use of specific language or alignment with
+pragmatic research outcomes.
+Accordingly, the production of knowledge artifacts, such as journal articles, is
+currently enacted according to a hierarchical structure of funding agencies, scientists,
+institutions, and publishers. There are in-groups and out-groups, as well as unspoken
+rules to obtain funding for and publish results of scientific literature. Moreover, there are
+agendas driving all agencies that fund scientific research, which are not necessarily
+transparent. Many basic research questions are framed in a way that adheres to these
+agendas. For example, researchers trying to characterize a mechanism by which a brain
+protein folds will need to emphasize its supposed role in curing Alzheimer's disease, when
+in fact any actionable outcome may be unclear or distant from the research [41]. This
+situation provides a strong incentive for researchers to leverage the information advantage
+they have over administrators to grab their attention by making incredibly grandiose,
+possibly dishonest claims on the meaning of their research. Administrators simply lack
+time or incentive to check on such claims, and active researchers lack the power to modify
+the incentive structure and would risk their job if they refused to follow them.
+One aspect of the difficulty in communicating between administrators and active
+researchers is related to a discrepancy between the relevant time scales and perspectives
+9
 
 ## Page 10
 
-During the year, we begin researching and applying for private and government 
-.
-Grants
-2024
-Organizationally, the Institute receives official recognition as a 501(c)(3) non-profit organization, supporting our 
- 
-efforts. We were able to achieve this milestone with the pro bono support of the 
- law firm. 
-Philanthropy
-Fried Frank
-The largest cohort to date of the 
- makes many diverse contributions across projects. 
-Scientific Advisory Board
-The 
- program begins to highlight and scaffold the work of Ecosystem member. As of November 2024, there are 5 
-Research Fellows have joined. Fellows represent members of the Ecosystem who have contributed substantially to the 
-ecosystem through publications and presentations.
-Fellows
-To meet the needs of trainees and Interns for one-on-one guidance with projects, we introduced the 
- program. 
-Members of the 
- and select other individuals, volunteer to mentor and connect with individual 
-trainees. 
-Mentorship
-Scientific Advisory Board
-Following the 
- from 2023 and first-principles approaches to 
-, we implemented a “
-” system for 
- and 
-. Prepare and Measure allows people to set 
-goals and report back when they have reached them. This is a low stakes and always-open reporting system to gauge the 
-ongoing projects and work done by community members, and provide visibility to these updates in the 
-.
-Physics course
-Broken link
-
-Prepare and Measure
-Institute Projects
-Ecosystem Projects
-newsletter
-Work during this year remains all-volunteer. 
- support begins to come in, supporting some operational software 
-costs. We applied for several 
- (such as 
- and related to 
- with the 
-). 
-Philanthropy
-Grants
-FarmWorks
-AI safety
-RxInfer.jl Learning Group
-The 
- collaborate on this 
- leading up to the 4th 
- on November 13th, 2024. 
-Authors
-Active Inference Institute & Active Inference Ecosystem (2024, v2)
-Applied Active Inference Symposium
+for their respective activities. Bureaucratic funding agencies (private or governmental)
+have specific, long-standing research directives that cannot be modified easily, both
+because of long-term commitments and because of the limited time officials have to
+understand, evaluate, and integrate feedback. For example, an academic administrator
+will tend to lack domain expertise in the details of protein folding, and to lack motivation to
+discuss how category theory or information geometry could lead to major scientific
+breakthroughs. Administrators are motivated to discuss how the research they manage
+contributes to the competitiveness and prestige of the institution they answer to, and why it
+is therefore worthy of more funding. They may encourage their employees working on
+protein folding to claim in bad faith that their research will solve cancer, to publish a lot of
+papers into highly competitive (although not necessarily domain-relevant) journals, or to
+collaborate with companies for patents. If, for example, experts on protein folding want to
+express the benefits of future conceptual advancements, the importance may not be
+conveyed among fellow researchers and administrators due to a lack of common
+language, and therefore an inability to make decisions in a framework of mutual
+understanding.
+Because of this fundamental asymmetry in power, information, and incentives, the
+centralizing hierarchical structure of science interferes with the rapid adaptation and
+evolution of scientific ideas and the exploration required for this. The need for researchers
+to make their ideas and objectives legible from the detached perspective of administrators
+conflicts with their ability to develop a context-relevant ontology on the ground and to focus
+on actually understanding the target system in front of them, or aiming to understand
+phenomena beyond the scope of expected research narratives or outcomes. Centralizing
+institutions need to build largely artificial semantic and incentive silos, both as a way to
+compete against rival institutions and to measure and control the activity of researchers.
+Centralizing institutions organize science around outcomes which are legible and
+manageable, generating a specific type of situated and transdisciplinary sensemaking with
+certain strengths and weakness.
+DeSci: Governing and Utilizing Epistemic Commons
+In contrast to the centralizing institutional view presented above, research can be
+organized as a decentralized federation of individuals and communities of practice, each
+striving to address specific issues in a contextually-relevant way. Such communities, by
+definition, lack a direct dependence on any centralizing institutions, or at the very least
+such institutions lack the ability to step in and manage their activity. That these
+communities do not need to adapt their language or objectives to the expectations of
+administrators, does not make their activity intrinsically scientific in nature. However,
+decentralization offers specific opportunities to scientific communities by allowing them to
+10
 
 ## Page 11
 
-Mission, Vision, Values, and Principles
-Our Mission
-To support the accessibility, rigor, and applicability of Active Inference. 
-Act. Infer. Serve. 
-The formal mission 
-The formal “mission statement” of the Institute only scratches the surface of the goals and aspirations of its members and the 
-many parties in its broad ecosystem.
-This is 
-screenshot/text 
-from our Form 
-1023 (this is from 
-the IRS 501(c)(3) 
-status 
-application), 
-submitted in 
-2023. 
-The formal mission of the Institute, seen in the screenshot to the left, is:
-Active Inference Institute, Inc. (the Institute) is dedicated to developing, supporting, and promoting 
-open science and integrative frameworks such as active inference. In furtherance of its mission, the 
-Institute will conduct the following activities: (1) education, (2) research, (3) grantmaking, and (4) 
-administration. 
- 
-EduActive (Education)
- 
-ReInference (Research)
- 
-Grants
- & 
-⁠
-Administrative
-Institute Organization
-Our Vision 
-The Active Inference Institute serves as a scaffold for stabilizing and connecting myriad fields around a central tradition and 
-approach of 
-.
-Active Inference
-The Institute aims to make the Active Inference framework and the Ecosystem we serve more accessible, applicable, rigorous, 
-and integrated.
-We facilitate educational, theoretical, and applied engagement with Active Inference, promoting awareness of the field within 
-the lay, academic, public-sector, and professional communities.
-We envision a future in which the term “Active Inference” is used as widely as “Machine Learning”, as a result of its 
-demonstrated utility and impact in a variety of domains.
-Our Values and Principles 
-We are committed to fostering a culture of excellence, collaboration, and innovation. Our values and principles serve as the 
-guiding principles that shape our work and define our organization's character. 
- and Exploration. At The Institute, we embrace the principle of Active Inference, 
-, 
-and open-ended exploration as a fundamental driving force. We cultivate a culture of curiosity and continuous learning. 
-Through engaging in endeavors across multiple scales (person, project, Institute, Ecosystem), we enrich our understanding 
-and make relevant contributions to our niche. 
-Active Inference
-Systems Approach
-​
- 
- 
-​
- 
-​
- 
-​
- 
-​
- 
- •
-
-![page11_img1.png](images/page11_img1.png)
+focus on developing pragmatic solutions to concrete problems and/or purely advancing the
+epistemic understanding of the natural world they are focused on, free of centralizing
+institutional bias. As decentralized communities of practice lack the coercive power which
+defines centralizing institutions, their continued existence relies entirely on the voluntary
+participation of their members, and therefore necessitates an institutional structure
+facilitating and incentivizing participation. Consequently, and also due to the lack of
+semantic silos (see below), decentralized scientific communities will have a strong
+incentive to cooperate with each other, to make relevant issues discoverable to wider
+sections of the population, to allow participation purely out of voluntary interest, and to
+develop unifying languages easing their integration.
+The opportunity for knowledge appropriation (via legal enclosure [42] through
+intellectual property institutions, as well as siloing via disciplinary boundaries) relates the
+development of scientific knowledge to a broader, well-studied category of collective action
+problems: the governance of common goods [43]. Common goods (commons) are defined
+as resources that are non-excludable (one cannot be forbidden from accessing them). The
+potential for misuse or pollution of the commons consequently necessitates governance at
+the scale of communities of stakeholders, and regulation needs to follow certain conditions
+that were initially formalized in economic sociology [11,12] and recently generalized in
+evolutionary theory [44–46].
+Roughly, the implementation of governance systems for commons entails:
+1. the unambiguous definition of a problem to solve;
+2. the construction of a community of stakeholders willing to help solve this problem;
+3. the institution of a decision system allowing participation on an equal footing by all
+members of the community;
+4. agreement on a set of rules (which are interactive and mutable with validity checks
+over time), which fairly reward active cooperation within the community;
+5. the iteration of (1)-(4) at higher scales where the community as a whole is
+confronted with a situation requiring governance.
+Thus far, the distinction we have made between Centralized and Decentralized
+Science is largely organizational. For example, early European academia emerged from
+the clerical legitimation of scholarly "guilds," professional associations similar to
+contemporary trade unions or cartels, which effectively restricted who could practice a
+certain craft or access a specific kind of knowledge within a certain area (generally a city).
+Thus, patterns of sensemaking were immune from any outside oversight, and were
+imposed by the community on each and every one of its individual members. Centralizing
+institutions can constrain community members with respect to important aspects of their
+11
 
 ## Page 12
 
-Integrity. We strive to uphold and promote honesty, accountability, professionalism, as well as responsible conduct in 
-research, education, and facilitation among members of The Institute, Ecosystem, and communities we serve. We foster 
-diversity, respect, and global inclusion through community engagement. We treat differences in perspective and 
-understanding as a wellspring of valuable creative and productive potential, driving breakthroughs and strengthening 
-collaborative research outcomes. 
-Towards Institute- and Ecosystem-Scale Generative Modeling: At The Institute, we aim to use model-based approaches 
-towards organizational design and operation. Informally we use the 
- where possible, and 
-looking towards more sophisticated computational modeling in the future. We look support shared informational niches for 
-different scales, spanning the Ecosystem, Institute, Organizational Units, and Projects. We continuously develop and refine 
-hierarchical models, drawing on sensory information, exploiting data, and gathering feedback. Our dynamic self-modeling 
-enables efficient resource allocation. 
-Active Inference Ontology
-Anticipatory Behavior: The Institute's commitment to anticipatory behavior equips us to excel in uncertain environments. 
-Leveraging our internal models, we generate predictions at various scales and time horizons, empowering us to take 
-initiative and adapt our policies accordingly. This forward-thinking approach enables us to plan strategically and make 
-informed decisions, thus remaining at the forefront of our fields. 
-Continuous Development: Embodying the ideas of open-endedness and techno-evolution, we wholeheartedly embrace 
-the principle of continuous development at The Institute. Recognizing the dynamic nature of our environment and the 
-constant advancements in science and technology, we continually evolve our internal models and approaches. This 
-perpetual learning and evolution enable us to remain adaptive and at the cutting edge of our fields, driving impactful 
-research that contributes significantly to the scientific community. In the spirit of action and perception, we encourage 
-learners to produce and share artifacts, then receive feedback: informally and formally (through 
-).
-Prepare and Measure
-Participatory Engagement: At the Institute, we encourage collaborative active learning through artifacts. Digital, stigmergic 
-modifications of our online environment are the central method for engagement. Projects are enacted through preparation 
-and periodic measurements that trace development through time. We support the accessibility, applicability, and inclusivity 
-of Active Inference by seeking 
- (and related: Open Science, 
-) approaches where possible.
-Open Source
-DeSci
- •
- •
- •
- •
- •
+intellectual autonomy, and enacted autonomous agency (see Thinking like a State [32] for
+a discussion of institutional autonomy). In contrast, decentralization facilitates broad
+access to the epistemic commons, for example as in the case of the printing press. When
+we highlight the differences between CeSci and DeSci, we aim to frame a discussion on
+how specific kinds of organization can facilitate differences in the integration of information
+about the world over multiple dynamical scales, and what it means for the broader
+scientific community.
+Today, digital technologies provide clear opportunities for proponents of DeSci.
+They facilitate the widespread diffusion of information with a relatively low entry bar, and
+therefore facilitate the voluntary cooperation of multiple communities of practice engaged
+in situated sensemaking. This encourages the decentralized adoption of standardized
+methodologies and languages, transparency over code and data management, and
+willingness to produce information of clear value to outsiders. We see the success of such
+a decentralized yet unifying project in Wikipedia, which is beyond any doubt the most
+important example of a largely standardized, accessible, and transparent knowledge
+system, and is based entirely on voluntary and decentralized cooperation. At the moment,
+there is however no appropriate, analogous system to use in the organization of scientific
+activity, as an alternative (or complement) to the currently dominant role of centralizing
+institutions.
+12
 
 ## Page 13
 
-Focus Areas for the Institute
-Below are some 
-, and how those 
- are addressed by 
-. 
-Focus Areas for the Institute
-Focus Areas
-
-Directions for the Institute
-The Focus Areas were developed from feedback from participants, and presented here as a part of the overall 
-milestones/snapshot.
-Research Advancement and Cross-
-disciplinary Expansion
-Bridging diverse disciplines and translating Active Inference 
-concepts across fields is complex. Without this, we risk siloed 
-knowledge, missed opportunities for innovation, and limited 
-real-world impact of Active Inference principles.
-Research Advancement
-Cross-disciplinary Expansion
-Educational Outreach and Resource 
-Development
-Active Inference involves abstract concepts and 
-mathematical formalisms, making it difficult for newcomers to 
-engage. Failure to address this could result in a limited pool 
-of practitioners and researchers, slowing the field's growth 
-and application.
-Educational Outreach
-Software Development and Practical 
-Applications
-Developing user-friendly, robust software tools for Active 
-Inference is technically challenging. Without accessible tools, 
-we risk limiting practical implementations and real-world 
-testing of Active Inference models.
-Software Development
-Practical Application
-Community Growth and Engagement
-Maintaining a cohesive, productive community across diverse 
-backgrounds and interests is complex. Failing to do so could 
-lead to fragmentation, reduced collaboration, and slower 
-progress in advancing Active Inference.
-Community Growth
-Public Engagement
-Public Engagement and Ethical 
-Considerations
-Translating complex Active Inference concepts for broader 
-public understanding while addressing ethical implications is 
-challenging. Without this, we risk public misunderstanding, 
-potential misuse of the framework, and missed opportunities 
-for societal impact.
-Public Engagement
-Focus Area
-Area Description (why is it challenging, what are the risks?
-Related Directions & Steps
-Focus Areas
+Implementing Decentralized Science in the Web3 Era
+Contemporary digital tools have the potential to establish a distributed and
+transparent scientific community with open participation, where every participant has root
+level access to all knowledge and the rules for its production. Online communities have
+seized the opportunity to develop and utilize such digital tools for funding, training,
+planning, coordinating, executing, disseminating, and archiving scientific assets and
+activities, therefore establishing the blueprint of a Web3 DeSci. There is no defining
+characteristic of the whole set of Web3 DeSci tools. Nonetheless, some features
+characterize a larger subset of these tools and are worth highlighting.
+First, Web3 tools allow for more interactions (including economic transactions)
+between economically- and geographically-diverse groups. Second, Web3 tools can
+increase the transparency of products, activities, and interactions that are themselves
+digital, or that can be represented digitally. Third, Web3 tools allow for the introduction of
+novel markets that, in some pockets, might increase decentralization but in others, might
+increase centralization. Instead of using general terms to elaborate on each of these
+aspects, we hope to demonstrate their reality and significance as we overview more
+specific features of and developments toward a Web3 DeSci implementation.
+Web3 Terminology
+Before heading into some details about the implementation of DeSci (which may
+just be one iteration or genre of the infinite game of Science), the reader should be
+equipped with familiarity around some basic Web3 terms. Note: the following terms are
+just current technological means to building a desired framework, and are presented here
+as introductory, not as comprehensive reviews or final answers.
+●
+Web3
+●
+Blockchain
+●
+Smart contract
+●
+Token (fungible and nonfungible)
+Web3
+First, "Web3" is an imprecise term referring to an ethos that values digital
+self-sovereignty and, more important for our purposes, recent developments in
+peer-to-peer protocols that service this ethos. Part of the Web3 ethos is to value open
+source software and the personal control of one's data and assets [47]. These values have
+13
 
 ## Page 14
 
-Directions for the Institute
- describe ongoing areas of activity and development at the Institute scale. 
-Directions for the Institute
-The following table lists current developmental 
- and connections with 
-. 
-Directions & Steps
-
-Focus Areas
-
-Below, we revisit the 
- and outline some 
- for 2025 and beyond
-Focus Areas for the Institute
-Directions for the Institute
-Research Advancement and Cross-disciplinary Expansion
-Seek 
-  for cross-disciplinary research
-Grants
-Support core Active Inference research (
-) and educational (
-) 
-development
-ReInference (Research)
-EduActive (Education)
-Explore implications in philosophy, social sciences, and other 
-⁠
-Domains of Application
-Facilitate collaboration with other cognitive models and research communities
-Research 
-Advancement
-Support core Active Inference research; 
-Explore theoretical implications in 
- ; Examine group cognition 
-functionality
-Philosophy
-Research papers; Theoretical 
-frameworks; Computational 
-models
-Deepened understanding of Active 
-Inference; New insights at the 
-intersection of multiple fields; 
-Improved models of collective 
-cognition
-Software 
-Development
-Improve 
-  visualization 
-capabilities; Enhance 
-  usability; 
-Develop and curate examples of
- 
-RxInfer.jl
-PyMDP
-Domains of Application
-Updated 
- software 
-tools; User-friendly interfaces; 
-Application case studies
-Open Source
-More accessible and powerful Active 
-Inference modeling; Increased 
-adoption by researchers and 
-practitioners; Practical demonstrations 
-of Active Inference in action
-Educational 
-Outreach
-Develop curricula for different languages 
-and contexts; Provide courses and 
-workshops; Increase 
- 
-efforts
-Communications
-Comprehensive curriculum; 
-Industry-focused courses; 
-Educational materials for various 
-skill levels
-Wider accessibility of Active Inference 
-concepts; Increased industry 
-engagement; Growth of skilled Active 
-Inference practitioners
-Cross-disciplinary 
-Expansion
-Seek grants for cross-disciplinary AI 
-research; Pursue features in popular 
-science media; Focus outreach to social 
-sciences
-⁠
- and proposals; Media 
-articles; Collaborative research 
-projects
-Grants
-Broader adoption of Active Inference 
-across disciplines; Increased public 
-awareness; New applications in social 
-sciences
-Community Growth
-Facilitate intern-mentor connections; 
-Encourage SAB member interactions; 
-Foster edge interactions within community
-Mentorship program; Enhanced 
-community engagement; 
-Collaborative projects
-Stronger, more connected Active 
-Inference community; Knowledge 
-transfer between experts and 
-newcomers; Innovative cross-
-pollination of ideas
-Public Engagement
-Translate concepts for broader public; 
-Address societal challenges through Active 
-Inference; Provide foundations for trust and 
-ethics in AI
-Accessible content; Applied 
-solutions to real-world problems; 
-Ethical guidelines for AI 
-development
-Increased public understanding of 
-Active Inference; Real-world impact on 
-societal issues; Responsible AI 
-development informed by Active 
-Inference principles
-Practical Application
-Develop policy appraisal methodologies; 
-Consider ethical and cognitive security 
-aspects; Research capabilities in various 
-domains
-Policy frameworks; Ethical 
-guidelines; Domain-specific 
-applications
-Informed decision-making in policy; 
-Enhanced cognitive security measures;
-Demonstration of Active Inference's 
-versatility across fields
-Direction
-Method
-Deliverables
-Impact / Implication
-Directions & Steps
- 1.
- a.
- b.
- c.
- d.
+influenced and continue to influence the design and adoption of these protocols. Indeed,
+the term "Web 3.0" was introduced by Gavin Wood [48], a key figure in the development of
+the Ethereum and Polkadot protocols, who proposed Web3 as a "post-Snowden" Web, a
+decentralized Web similar to the Web1 of the early internet and in contrast to Web2 where
+a small number of centralized agents control people's data, access to websites, and the
+web applications that many use every day [49]. Web3 protocols are diverse, but the ones
+at the heart of most functional systems are so-called "blockchain" or distributed ledger
+technology (DLT) protocols that support complex smart contracts.
+Blockchain
+Recent developments in peer-to-peer (i.e. decentralized, distributed) protocols,
+particularly blockchain protocols such as ones that facilitate Distributed Autonomous
+Organizations (DAOs [20,21,50]), are the biggest enablers of a Web3 DeSci
+implementation. Without going into detail, a blockchain protocol enables a network of
+self-interested, competing computer nodes to agree on the state and immutable history of
+a shared ledger. Anyone with an internet connection and enough funds can append the
+ledger or verify its integrity, though it is still possible to implement access control with
+smart contracts. Blockchains are a natural fit for building currencies, which historically
+emerged as an extension to bookkeeping by institutional actors [51], and currency building
+in fact constitutes their most widely known application today. However, the principles of
+data integrity and access apply just as well to running any record or application that must
+be tamperproof. Blockchains can be used to establish ownership of digital assets (e.g.
+tokens, datasets, or intellectual property [52]), mediate between pseudonymous actors
+(e.g. during peer review), establish decentralized identities used for reputation (e.g. when
+applying for grants), prove an actor has done something (e.g. contributed work, stored a
+dataset, or run a compute service), and more. For DeSci, blockchains enable actors to
+keep track of scientific activity in permissionless systems, and to build systems of
+exchange and accounting around any kind of digital information – which includes much of
+the products and tools of modern science.
+Smart Contract
+Blockchains can establish digital records via programs called smart contracts. A
+smart contract (in the context of blockchains) is a computer program whose code is
+publicly available yet cannot be changed by anyone, is executed on computers across the
+blockchain network, and can be invoked (i.e., started) by anyone [53,54]. When the
+blockchain's record is updated by a smart contract, the update is verified by the distributed
+nodes on the blockchain network. Despite the presence of "contract" in the term, a smart
+contract does not refer to a legal contract, though it is still possible to implement certain
+14
 
 ## Page 15
 
-Develop new policy appraisal methodologies with focus on ethical and cognitive security considerations
-Educational Outreach and Resource Development
-Develop a full academic curriculum for interdisciplinary audiences
-Create educational resources (
- and Beyond) 
-Fundamentals of Active Inference
-Provide courses on 
- for industry professionals
-Implementations of Active Inference
-Increase learning resources for coding Active Inference agents/simulations
-Develop foundations for trust, ethics, and education in the context of rapid AI advancement
-Software Development and Practical Applications
-With 
- development, Improve 
- and 
-  visualization capabilities and overall usability
-Open Source
-RxInfer.jl
-PyMDP
-Develop real-world 
-  across 
-⁠
-Implementations of Active Inference
-Domains of Application
-Support multi-agent workflows (e.g. using 
-)
-Active Entity Ontology for Science (AEOS)
-Create reliable and accurate models for engineers
-Community Growth and Engagement
-Facilitate 
- connections with 
-, 
-, and 
- members
-Mentorship
-Internship
-Fellows
-Scientific Advisory Board
-Foster edge interactions within the community and 
- 
-The Active Inference Ecosystem
-Implement automated feedback mechanisms
-Moderate community discourse to ensure compliance with culture and values
-Improve onboarding experience for new users
-Increase awareness and involvement from organizations outside the Institute
-Public Engagement and Knowledge Dissemination
-Translate Active Inference concepts for broader public understanding
-Develop 
- strategies to disseminate knowledge to general public, and professional across areas
-Communications
-Explore the intersection of 
- with current global issues (social, economic, geopolitical, technological, 
-environmental)
-Active Inference
-Continue to develop 
- publishing and licensing support systems for contributors
-Open Source
- e.
- 2.
- a.
- b.
- c.
- d.
- e.
- 3.
- a.
- b.
- c.
- d.
- 4.
- a.
- b.
- c.
- d.
- e.
- f.
- 5.
- a.
- b.
- c.
- d.
+legal agreements in smart contracts, such as the triggering of payments in the case of
+predetermined on-chain activity. Not all blockchain protocols support the complex smart
+contracts that enable the features listed in the previous paragraph.
+Token (Fungible and Non-fungible)
+One kind of smart contract is called a token. A token is a digital asset. It can be
+bought, sold, or transferred on the blockchain. The implementation of a token in code is
+little more than a record of which addresses (i.e., users, loosely speaking) own how many
+units of the token. When units of a token are exchanged, the record is updated, not unlike
+what happens in a bank's database when two of its customers use the bank to transfer
+money to each other. Tokens come in various forms, broadly separable into fungible and
+non-fungible (though see [55] for a more complete discussion). A token of the latter form is
+often referred to as an NFT (Non-Fungible Token), and may be transferable or
+non-transferable. The salient difference between these types of token is in the name; there
+are many interchangeable units of any given fungible token, and there is only one unit of
+any given non-fungible token. Because it is easy to use tokens to record ownership, they
+have been used by DAOs to designate voting rights (similar to shares of stock in a
+corporation) or provide proof of participation [56,57]. Tokens have many other use cases
+(many of which haven't been invented yet) and have even enabled the emergence of a
+discipline known as token engineering [36], which studies the use of tokens to incentivize
+certain behaviors within a market.
+Decentralized Science (DeSci)
+The blockchain technology affords certain advantages over alternative systems in
+terms of transparency, decentralization, and tamperless regulation. However, its
+development was quite explicitly motivated by the implementation of market mechanisms
+at the exclusion of other forms of social organization, and therefore focused heavily on the
+implementation of monetary transactions. Multiplicative investments in a monetary
+economy supports the emergence of an extremely polarized power law distribution in
+wealth, and can (even in the absence of strategic interaction or information asymmetry)
+lead to the control of a large proportion of the economy by a few individuals [26]. In reality,
+strategic interaction and information asymmetry are ubiquitous, and the power entailed by
+the wealth of a few aristocrats gives them the capability to build a population of
+dependents and influence the rules of the game to their advantage. A complete
+disinvestment of public powers or otherwise democratic institutions from economic
+redistribution and regulation would therefore expectedly lead to the development of a
+15
 
 ## Page 16
 
-Institute Organization
-The 
- host 
- and 
- 
-Organizational Units
-Institute Programs
-Institute Projects
-The below shows the overall 
-al morphology, in terms of internal structure and engagement interface 
-with 
-.
-Institute Organization
-The Active Inference Ecosystem
-⁠
- 
-Here is the working gSlide for this Figure
-
-![page16_img1.png](images/page16_img1.png)
+feudal-like economy, where a few wealthy individuals use their economic leverage to yield
+near absolute political power over their fiefdom.
+The fundamental vulnerability of marketization-oriented Web3 technologies is
+deeply aggravated by preexisting asymmetries in wealth and power. Any token that can be
+traded freely (while not pegged to a stable asset) is vulnerable to price instability entailed
+by speculative investment, which would make it essentially worthless as a currency (i.e., a
+means of holding and exchanging value). On the other hand, any token that is not coupled
+in some way to the mainstream economy cannot be used to pay for basic goods such as
+food or shelter, and therefore lacks any economic value. Historical currencies were
+instituted by States through 3 main leverages: by creating demand through taxation, by
+backing their value to some external value holder (generally rare resources such as
+precious metals or recognition of debt by institutional actors), and by forcefully crushing
+the non-monetary economy and the communal institutions regulating it [51]. None of these
+leverages are accessible to decentralizing collectives, at least not without significant State
+/ capital backing and an open betrayal of their explicit mandate (see [58] for a general
+discussion of value generation and regulation in cryptocurrencies). Although the problem
+of monetary value is specific to currencies, marketization entails the ability to create
+economic value, or to find a buyer for what you’re trying to sell. For example, if no one is
+willing to pay you (in fiat currency, crypto, or some other value) the equivalent of a living
+wage for cleaning data, you are not going to make a living cleaning data.
+Despite the aforementioned shortcomings, marketization can still play a substantial
+role in scientific decentralization. Markets offer an opportunity for large scale economic
+integration between peers, and therefore for the basis for an "exodus" from the grasp of
+centralizing institutions [59]. For example, tokens could provide an explicit and unfalsifiable
+account of traditionally less-visible or rewarded work. However, blockchain-powered
+marketization alone cannot provide a sufficient solution for a successful decentralization of
+scientific activity. The blockchain only ensures decentralization in the limited sense that it
+makes breaking the rules that were written onto the blockchain extremely difficult, without
+consideration of the human layer outside of the blockchain. Building DeSci entails a
+broader shift toward positive liberty to do science in a decentralized way, i.e. the
+empowerment of individuals and collectives to organize scientific activity around
+decentralizing values and institutions. This process entails that we pay attention to the
+actual dynamics of decentralizing systems, and ensure that individuals and collectives can
+effectively enact their formal freedom of collaborative sensemaking.
+DAOs, whether enforced by blockchain technology, or more classical means, are
+organizations defined by an explicit mandate and specific rules for participation and
+decision, and are usually open to anyone willing to accept these constraints. In the extent
+16
 
 ## Page 17
 
-Scientific Advisory Board
-The 
- (SAB) comprises external experts in Active Inference and related research areas who provide 
-guidance, review grant proposals, and offer advice on scientific integrity. The first Scientific Advisory Board was active during 
-2022, and currently we are engaged with the third cohort in 2024. 
-Scientific Advisory Board
-SAB participants offer expertise, advice, guidance, and recommendations to the Institute. They draw on their experience as 
-executives from academia, private business, the public sector, not-for-profit organizations, and beyond. The Scientific Advisory 
-Board acts in an 'advisory capacity' and is not a managing board.  
- to be considered to join a future SAB cohort (selected annually at end of the year).
-Complete this form
-2024 Scientific Advisory Board
-⁠
-Mahault Albarracin
-⁠
-Bradly Alicea
-⁠
-Sebastian Alvarado
-⁠
-John Boik
-⁠
-Matt Brown
-⁠
-John Cook
-⁠
-Scott David
-⁠
-Renée Davis
-⁠
-Shanna Dobson
-⁠
-Shady El Damaty
-⁠
-Jeff Emmett
-⁠
-Chris Fields
-⁠
-Karl Friston
-⁠
-Holly Grimm
-⁠
-Avel GUÉNIN—CARLUT
-⁠
-Sarah Hamburg
-⁠
-Susan Hasty
-⁠
-Conor Heins
-⁠
-Susan Keen
-⁠
-Thomas Kehler
-⁠
-Héctor Manrique
-⁠
-Alexandra Mikhailova
-⁠
-Haris Neophytou
-⁠
-Alexander Ororbia
-⁠
-Sandeep Ramesh
-⁠
-Maxwell J. D. Ramstead
-⁠
-Adeel Razi
-⁠
-Manuel Razo-Mejia
-⁠
-Jakub Smekal
-⁠
-Ian Tennant
-⁠
-Mick Thacker
-⁠
-Shingai Thornton
-⁠
-Mark Wilcox
-⁠
-Michael Zargham
-2023 Scientific Advisory Board
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-⁠
-Bradly Alicea John Boik Matt Brown Scott David Shady El Damaty Jeff Emmett Chris Fields Karl Friston Holly Grimm
-Sarah Hamburg Victor Kariuki Anatoly Levenchuk Maxwell J. D. Ramstead Adeel Razi Michael Zargham
-2022 Scientific Advisory Board
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-, 
-⁠
-Bradly Alicea John Boik Matt Brown John Clippinger Scott David Jeff Emmett Chris Fields Karl Friston Rafael Kaufmann
-Anatoly Levenchuk Rosalyn Moran Elba Serrano Charel van Hoof Tim Verbelen Swan Webb Michael Zargham
- 
-​
-•
- 
-​
-•
- 
-​
-•
- 
-​
-•
- 
-​
-•
- 
-​
-•
- 
-​
-•
- 
-​
-•
- 
-​
-•
- 
-​
-•
- 
-​
-•
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
- 
- 
-​
-•
+that these rules are reasonably fair, and that individual participants get a say in the
+decision system and overall organization, DAOs constitute a natural fit for the
+management of commons.
+Of course, none of this excludes the value problem discussed above: science
+mandates that scientists be paid a living wage while they focus on their work, or otherwise
+to have enough time and resources to be able to conduct scientific work. In consequence,
+a radical shift to DeSci would likely necessitate broader social reform, such as the
+institution of a right to work in the research domain of one's choice, or perhaps a solution
+such as Universal Basic Income. Some cryptocurrencies, like the Ğ1 currency [60], try to
+build such change from the ground up by distributing a predefined rate of monetary
+creation equally between members, and explicitly grounding the networks to social webs
+of trust and exchange. But implementing such changes, especially at a global scale and
+within a reasonable time frame, would be entirely beyond the ability of contemporary
+DeSci communities. In the remainder of the document, we will therefore focus on steps
+that DeSci can practically take right now, many of which are related to tokenization and
+marketization mechanisms.
+DeSci Vision and Open Questions
+In our society today, a relatively small number of individuals have full-time careers
+in scientific research. Those with family commitments, a significant role in industry, or an
+aversion to academic social systems are largely absent from the process of creating and
+curating widely-distributed knowledge artifacts using the scientific method.
+Can we support and develop communities that train researchers from many diverse
+backgrounds and provide opportunities for scientific collaboration, funding, and publication
+outside of the narrow constraints of CeSci career trajectories? How can we motivate and
+reward productive scientific engagement in this system, where there are less rigid barriers
+for who is allowed to conduct research? Can we benefit from neurodiversity and
+large-scale harmonization of different perspectives to reach epistemic consensus states
+beyond the reach of the narrow confines of what constitutes a "traditional scientific mind,"
+or collection of such minds, in our society today? Decentralized communities of practice
+focused on research are already self-organizing, and will begin to answer these questions
+over the coming decade.
+17
 
 ## Page 18
 
-Board of Directors
-Board of Directors
-The inaugural cohort of the 
- has been in operation since the end of 2022. The Board of Directors is 
-composed of individuals with expertise in Active Inference, governance, fundraising, and various other domains. They meet 
-quarterly and are responsible for setting the organization's strategic goals, providing oversight, and ensuring compliance. 
-Board of Directors
-The second cohort of the Active Inference Institute Board of Directors was elected in December 2023. 
-The Board of Directors currently consists of: 
- — “I want to bring Active Inference into a broad range of applications, specifically into a new model of the 
-firm, markets and finance.”
-John Clippinger
- — “I expect and prefer to integrate the Institute’s daily operations with our broader vision.”
-Daniel Friedman
- — “I build adaptive sociotechnical systems that help human collectives, from teams to civilizations.”
-Rafael Kaufmann 
- — “I ensure that our actions align with our values and strategic objectives, thus generating the sensations we 
-prefer.”
-Bleu Knight
- — “I contribute to strategies for service and education, and facilitate epistemic foraging with active inference in 
-commercial applications.”
-Mike Smith
- — “I see my role as a supplier of blind spot remover and a suggester of “Escape Room” strategies as we open 
-up active inferring.”
-Dean Tickles
-.
-Apply for the Board of Directors by completing this form
- •
- •
- •
- •
- •
- •
+DeSci Token Engineering
+Blockchains and tokens can be used to create incentive mechanisms to promote
+desired behavior and punish undesired behavior, and these incentive mechanisms can be
+used in DeSci to encourage valuable scientific activity and the creation and maintenance
+of epistemic commons. Blockchain and other cryptographic technologies offer tools to
+observe, design, and control complex system behavior through the means of token
+engineering [61]. The practice of developing systems and mechanisms that utilize tokens
+is referred to as "token engineering" [20]. There are many ways to use tokens to facilitate
+and incentivize behavior. In Filecoin, for example, a storage node is rewarded tokens for
+storing data only if it submits successful cryptographic proofs demonstrating it has stored a
+unique copy of the data over a predetermined period of time; the node's collateral is
+reduced if it fails such proofs. Token-engineered DeSci systems can be created for
+research-specific use cases, for example [62]. Token engineering can also be used
+specifically to reward researchers, attribute impact fairly, and establish a value flow for a
+scientific ecosystem, a topic which we turn to now.
+Were we to model entire communities as a collection of interacting agents which
+transact, perform work, and make economic decisions (e.g., investment, staking), this
+simulation could provide insight into the effectiveness of the overarching incentive
+structure, the resilience of the system to various risks, and the capacity of the organization
+for interoperability. We leave this as an opportunity for future study.
+Token system engineering might ask questions like:
+●
+How are stakeholders rewarded for meaningful participation?
+●
+What is the value flow? Where does value start/enter? Where does value go/exit?
+●
+What is the value distribution, internal and external to the system of interest?
+●
+How does the system shape patterns of attention?
+●
+What perverse incentives exist by tokenizing (i.e. tying price of token to speculative
+trading)?
+●
+How do constraints on action influence system behavior, such as: not allowing the
+selling of tokens, not allowing the transfer of tokens, making different token classes
+transfer together, etc?
+One example of token engineering used for research value allocation is based on
+the Ocean Data Marketplace [63], in which a community-funded treasury disburses funds
+in the form of fungible tokens to research teams based on criteria defined by the
+community. At this point, the research team has full autonomy and is responsible for
+efficiently distributing the funds across different researchers. Researchers can spend
+tokens in a decentralized knowledge market to gain access to datasets, papers, or any
+other scientific work published by other researchers. Tokens spent in this marketplace
+18
 
 ## Page 19
 
-Officers
-Officers
-The first set of Officers was installed at the end of 2022 with the following positions:
-Daniel Friedman (President and Treasurer)
-As President, responsible for overall leadership, direction, and activities of the organization. As Treasurer, responsible 
-for managing the financial activities of The Institute.
-Alexander Vyatkin (Vice President) 
-Supports the objective of the President and assumes these responsibilities when necessary. Focused on defining and 
-implementing effective ways of working for The Institute/Units/Project scales, integrating state of the art methods, 
-practices, and technologies into operations. In charge of organizational design, ensuring continuous evolvement of 
-services and organizational functions.
-Bleu Knight (Secretary)
-Supervises organizational processes such as official meetings and votes. Oversees efforts geared toward financial and 
-HR compliance.
-.
-Apply to be an Officer by completing this form
- •
- ◦
- •
- ◦
- •
- ◦
+would provide compensation to those who have contributed to the DeSci ecosystem.
+Every transaction made in this decentralized knowledge market is facilitated through smart
+contracts, which collect transaction fees that are fed back to the community treasury.
+At this point, to better grasp the opportunities that Web3 protocols have for
+publishing and reviewing in science, we might benefit from a brief look at the protocols
+themselves. Affordances for increasing transparency and accessibility are primarily in
+decentralized storage networks, such as IPFS and Arweave [64]. IPFS, the InterPlanetary
+File System, indexes files with content addressing based on cryptographic hashes. In
+practice, this allows two things. First, a file can be stored on any IPFS node in the world
+and can still be accessed by anyone who has the file's address. Second, an address can
+never correspond to more than one file. These properties mean that any file uploaded to
+IPFS is available to anyone with an internet connection (this increases transparency and
+accessibility), and that a file cannot be changed without its address also changing (this
+increases transparency). Arweave increases transparency and accessibility by providing
+permanent and open storage. It does this with a blockchain-inspired data structure called a
+blockweave and a proof for the network's consensus mechanism called Proof of Access in
+which, to receive a reward, a miner must prove it is storing some randomly determined
+previous block of data. There are other storage protocols used to store papers and related
+data, but these examples sufficiently illustrate the common benefits of these systems.
+The discussion on science token engineering leads to a natural question: what are
+the limits of decentralized science? Alternative value flows designed by the practice of
+token engineering assume new laws are enforced by digital contracts deployed on a
+transparent blockchain. As such, their ability to enforce particular actions outside the
+digital world become very limited. In its current form, DeSci is constrained by the
+affordances available to digital entities; hence the scope of scientific outputs is also
+constrained to research that has digital elements.
+DeSci Research
+Currently, most active DeSci projects primarily focus on building the infrastructure
+necessary to allow the dynamics described above, while only a fraction use their
+resources on research (as of 2022 a non-exhaustive list of the DAOs and groups
+mentioned is available here, building on [65]). Examples of research-focused DAOs
+include VitaDAO and Molecule which, at the time of writing, have funded active projects in
+longevity research. Other active groups include the Governance Research Institute,
+Governauts, and Metagov DAO, researching governance, smart contracts, and other
+aspects of coordination in the Web3 space, all of which are closely related to the
+development of the DeSci infrastructure. As such, there is no clear distinction between
+19
 
 ## Page 20
 
-Members
-The legal members of The Institute are Alexander Vyatkin, Virginia Bleu Knight, Ivan Metelkin, Daniel Friedman, and Karl Friston.
+infrastructure research and development at this time. Furthermore, many DeSci DAOs
+have a clear vision of the type of research they want to conduct, but are currently in the
+process of getting funding or curating an initial community of active contributors. In DAOs
+as in other communities of practice, groups organize around specific problems or
+questions. Groups define rules for their participation, and coordinate with each other to
+define and solve meta-problems - such as the development of standard tools or a common
+language or unifying framework which facilitates progress within each community.
+There are many open questions relating to creating and sustaining impactful
+communities of practice in a Web3 DeSci setting. Technological changes to the process of
+science in DeSci may be exciting and impactful, but cannot circumvent the fundamental
+challenge of carrying out high-quality research. Even with hypothetically-successful
+systems in place for proposing projects, knowledge management, financial support, and
+decentralized publishing, individual researchers must still be motivated, committed, and
+engaged to produce useful work. Creating and sustaining impactful DeSci communities is
+challenged by the scale of information available for review or meta-analysis projects, the
+size of the design space of possible experiments, the multiple individual ways of working,
+and the difficulty in producing quality research. Without long-term mentorship, training, and
+support for scientists at all career stages, it is difficult to imagine that merely increasing the
+extent or type of system decentralization would result in a successful scientific ecosystem.
+DeSci Publishing and Review
+DeSci seeks to use Web3 tools to improve the transparency and incentives within
+academic publishing and to improve the accessibility of published products. Efforts in
+DeSci around publishing are, in most cases, responding to the occasionally-misaligned
+incentives within current academic publishing, such as the lack of incentive for reviewers
+to provide unbiased and quality reviews, the incentive for journals to publish
+revenue-generating papers (even at the expense of rejecting epistemically-profitable, but
+less monetarily-profitable, research), the disincentive to share negative results, etc. [66].
+With respect to transparency and incentives, Web3 DeSci projects are experimenting with
+using tokens (i.e. cryptocurrencies), markets, reputation metrics, and forum-like platforms.
+Increasing accessibility involves using decentralized storage networks to store published
+products (e.g. papers, reviews, datasets, code). This section hints at the direction of a
+DeSci approach to publishing and peer review with a discussion of current DeSci projects
+dealing with academic publishing and how blockchain-based technologies could potentially
+fit into the picture.
+20
 
 ## Page 21
 
-Organizational Units
-The 
- of the Institute describe the main concentrations or nestings of 
-Organizational Units
- for organizational and operational work 
-Administrative
- for inquiry and learning
-EduActive (Education)
- for research and development
-ReInference (Research)
+Since 2017, a number of authors have proposed blockchain-based systems for
+peer review [39,67–72]. Various works such as [39,71], [72] and [70] propose the use of
+blockchains to make the peer review process transparent and incentivize good behavior
+through reputation points recorded on the blockchain, though they differ in details, with
+[39,71] and [70] focusing on the entire pipeline even including publication. Below, we
+discuss several of these systems.
+Avital [68] focuses on the motivation for a blockchain-based peer review market,
+where authors passively or actively seek reviewers, and all participants interact through
+smart contracts on blockchains. Ants-Review builds on this idea of a blockchain-based
+peer review market [67] and outlines an implementation that uses Ethereum [73] and the
+InterPlanetary File System (IPFS) [37,38]. In Ants-Review [67], an issuer (i.e. author)
+creates an AntReview for a paper. The AntReview specifies the paper's issuers, file
+address (on IPFS), requirements, deadline, and approver. The approver is responsible for
+approving and paying reviewers (using the funds of the AntReview) for their reviews. A
+reviewer submits a review by uploading it to IPFS and sending the review's IPFS address
+to the AntReview for the approver's assessment. Anyone can add funds to an AntReview.
+These funds can be distributed only by the approver and can be sent only to reviewers. If
+the funds aren’t spent before the review's deadline, those who contributed funds are
+refunded. Note that, in AntsReview, all parties are pseudonymous, associated only with
+their Ethereum addresses, and that the use of IPFS and Ethereum means everything is
+open access.
+With Reddit-like features for curating, discussing, and incentivizing research,
+ResearchHub [70] is an even further departure from the current peer review and
+publishing system. Its users can upload, comment on, summarize, upvote, and downvote
+papers and posts. Users are rewarded RSC, an Ethereum-based token, for these
+activities. Papers and posts are aggregated within "Hubs" which function like journals or
+subreddits. Allowing ideas to circulate in the open, ResearchHub shuns the traditional peer
+review model of waiting until a paper is mostly or entirely finished before having a small
+number of reviewers comment on it. ResearchHub relies on the community and the
+incentives created by the RSC token to create a system in which the better a post or paper
+is, the more it is seen and its author(s) rewarded. ResearchHub also plans to create a
+feature allowing researchers to raise funds from others in RSC. The platform differs from
+other projects in the DeSci space in that it does not currently rely much on peer-to-peer,
+Web3 protocols, such as Ethereum and IPFS.
+21
 
 ## Page 22
 
-Administrative
-The Institute 
- Unit performs various support tasks within 
- and the wider 
-, such as project coordination, record keeping, graphic design, 
-, project facilitation, 
-preparation, 
-  and compliance, and other activities. 
-Administrative
-The Active Inference Institute
-The Active Inference Ecosystem
-Grants
-Communications
-Administrative activities contribute to the development of core infrastructure to provide such support and automate or 
-systematize and standardize tasks, and become the organizational umbrella for financial, human resources, 
-, 
-, security, community moderation and management, and related activities and organizational components. These 
-tasks are currently assumed by The Institute’s 
-, who will continue to provide oversight as the unit develops to include 
-more contributors.
-Internship
-Volunteer
-Officers
-
-![page22_img1.png](images/page22_img1.png)
+DeSci Funding and Finances
+A more traditional method of funding a DeSci research project is through grant
+applications. In this case, the process starts with a research investigator submitting a
+proposal for a particular research endeavor, which is reviewed by the individuals or
+funding agencies who allocate the awards based on their own criteria determining merit. In
+the case of DeSci and DAO-based organizations, funding can be provided to the DAO
+within their internally-defined structures and further distributed within the DAO in order to
+fulfill the initiative of the grant. Alternatively, stakeholders or investors may provide funding
+due to their initially genuine research interest or other incentives, and ultimately become
+detached from the original research motive, thus allowing the DAO to distribute resources
+to fulfill emergent agendas.
+One alternative approach for funding DeSci is the creation and maintenance of
+markets for projects (bounties) or the outcomes of projects such as data or intellectual
+property. When an organization/individual is interested in conducting research based on
+interests, a systematically-managed decentralized exchange for task performance can
+play a pivotal role. The marketplace could have research proposals by organizations,
+individuals, and researchers as well. A base level requirement for any market-supported
+project would be to produce some monetary or other form of value investors agree on. Key
+to supporting a synergetic researcher-investor dynamic would be finding an alignment
+across multiple aspects of the project such as focus, constraints, cost, and timelines. The
+machine learning platform Kaggle implements methods similar to this, where only
+researchers that perform best according to the project-defined metrics are rewarded.
+Once a project has begun, it can benefit from mutual researcher-investor direction
+and redirection. Regulation of such direction is imperative; DeSci could build on top of
+existing blockchain infrastructure with a few modifications. For instance, a structure known
+as a DAICO (DAO+ICO [74]) proposes to lock all the proceeds of an ICO (Initial Coin
+Offering) into a decentralized autonomous organization (DAO) smart contract and put the
+governance over that DAO in the hands of the investors. This locking needs to be
+consensual from both ends and needs to be recalibrated as projects change. A roadmap
+with the specific, measurable, achievable, relevant and time-bound targets can be agreed
+upon; the investor gets the required output and the researchers get a well-defined source
+of funding. Other than direct funding, people interested in the project can involve
+themselves actively with participation, or more passively by forming a support network  or
+keeping a watchful eye on the project. An example of this passive or implicit contribution
+type could be building a community with social outlets such as newsletters and citation
+value networks, or using online measures of stigmergic attention [75]. These communities
+can contribute collectively in terms of contributions to reduce the reliance on initial major
+investors and even foster the project in the case that investors pull out, hence
+22
 
 ## Page 23
 
-EduActive (Education)
-The Institute’s Education Unit is named “EduActive”  to highlight the active element of education. 
-Projects of 
- include: 
-EduActive (Education)
-⁠
-Active Inference Journal
- 
-Active Inference Ontology
- 
-Active Entity Ontology for Science (AEOS)
- 
-Applied Active Inference Symposium
- 
-Educational Standards & Qualifications
- 
-Fundamentals of Active Inference
- 
-Physics course
- 
-Social Science course
- 
-Textbook Group
-  
-Videos & Podcasts
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
+decentralizing the investor influence. One particular project in this regard, Science Fund
+[76] (Figure 1), allows donors to contribute to science funding pools opened for a specific
+topic with an amount of their choosing. In return, donors receive a NFT receipt (a "Science
+Funding Token", or SFT).
+Figure 1. Dynamic research funding model of Science Fund [76].
+These mechanics allow for the following affordances:
+●
+Curated Funding Pools: Each donation is added to a chosen funding pool.
+Researchers can apply through an open protocol with their track record from
+already-published groundwork. As new results emerge from the funded work, the
+NFT’s metadata is updated.
+●
+Impact Tracing: Donors have a much more significant participation and visibility
+into the projects they helped fund. Their SFTs are a personal key to unlock a
+continuously-evolving experience data trail about their donation’s impact.
+●
+Future Participation: The NFT receipts become the key to future interactions with
+the scientists they supported, with evolving forms of participatory governance in the
+field(s) they contributed to.
+●
+Funding allocation: When researchers apply to one of the topic-specific funding
+pools, they are not coerced to reveal all their invaluable insight upfront. They simply
+need to share their most influential scientific work (any already-published scientific
+artifact they created, such as a publication, preprint, or dataset) to a given pool.
+Selected scientists' works then form the basis of a growing evidence trail that is
+matched to the donor's minted NFT. The NFT receipts become the key to future
+interactions among scientists and donors, and open a universe of endless new
+possibilities of mutual exchange and collaboration.
+23
+
+![page23_img1.png](images/page23_img1.png)
 
 ## Page 24
 
-ReInference (Research)
-The Research unit at the Institute is named “ReInference” to highlight the perspective on scientific research and inquiry more 
-broadly in terms of 
- (
-, 
-).
-Active Inference Pietarinen & Beni 2021 Balzan et al. 2023
-The Institute’s ReInference unit focuses on Research activities such as: (i) the forming of fit-for-function interdisciplinary 
-research teams, (ii) the development and execution of research proposals and projects aligned with the mission of The Institute 
-and challenges faced by The Institute and Ecosystem at large. 
-The ReInference unit is committed to hosting and sharing all relevant data, findings, publications, tools, and derivative artifacts 
-under 
- or similarly accessible licensing agreements wherever practicable and appropriate.
-Open Source
-Projects of 
- include: 
-ReInference (Research)
- 
-RxInfer.jl Learning Group
- 
-Active Blockference
- 
-Active InferAnts
- 
-Tech Tree
- 
-Knowledge Engineering
- 
-Generalized Notation Notation
- 
-FarmWorks
- •
- •
- •
- •
- •
- •
- •
+DeSci Data and Knowledge Markets
+Web3 tools enable markets for data storage and compute services that could be
+used by DeSci advocates to develop a "knowledge market” or decentralized data
+commons [77]. Agents in this potential market exchange data and other services such as
+data analysis and model training. Note that, because of their digital nature, such markets
+welcome opportunities to integrate human and machine agents, allowing for a significant
+increase in automation. While the base layer here is a data marketplace, it is plausible that
+future developments could emerge layered on top of this, due to the incentives and
+informational integrity provided by the market. This section covers the base layer of a data
+marketplace and how it encourages certain beneficial developments. In particular, data
+marketplaces have the potential to facilitate data archival, interoperable data standards,
+data discoverability, and increased automation, and they provide an easier way for industry
+to build on and fund work in academia.
+The base layer of a DeSci knowledge market is first a data market. Multiple
+blockchain-based data marketplaces have emerged [78–80] since the Ethereum mainnet
+launch in 2015 [73]. Blockchains provide a number of benefits over traditional data
+markets, principally the ability to create datatokens, a construct pioneered by Ocean [78].
+A data token is, just like any other blockchain token, a digital asset. However, unlike
+regular tokens, datatokens can be used to access data services. Consuming a data
+service involves either being sent the associated dataset or having the data provider run a
+compute job on the dataset. This datatoken construct is significant because it allows data
+services to be purchased on decentralized (blockchain-based) markets. Anyone can
+publish a dataset as a type of token, and anyone with sufficient funds can purchase one
+such token to consume the data service. The datatoken construct is even more valuable
+within the context of another mechanism developed by Ocean, namely, one that
+incentivizes the curation of quality data: Users can lock-up funds to signal support for a
+particular token (called staking) and earn a portion of the transaction fees associated with
+purchases of the token. Rational actors will seek out and stake on high quality datasets to
+receive a higher portion of the total fees, thereby curating quality data.
+While this base layer is only a curated data market, it indirectly incentivizes the
+development of additional components relevant to a DeSci knowledge market, such as an
+increase in archival of scientific data. With a marketplace, data collectors have the
+opportunity to be financially rewarded and otherwise recognized for simply storing and
+selling their data. With the transparency of blockchain-based markets, it would be easy to
+keep track of how many times a researcher's or lab's datasets have been requested,
+allowing for the emergence of reputational metrics associated with data. It has been
+24
 
 ## Page 25
 
-Institute Programs
-The 
- are the specific modes of active participation and engagement (beyond e.g. just watching 
-). 
-Institute Programs
-Videos & Podcasts
-For individuals:
- positions contribute to the Institute’s work in specific ways.
-Volunteer
- and 
- provide structure for those looking to advance their learning and work. 
-Internship
-Mentorship
- provides the opportunity for committed individuals to be recognized as a leader in  
- research 
-and education. 
-Fellows
-Active Inference
-For organizations: 
-The 
-,  
-, and 
- programs all provide channels of support and bi-directional learning 
-with the Institute.  
-Partnership
-Philanthropy
-Grants
- •
- •
- •
- •
+observed that currently, "there is little incentive to invest time in archiving or repackaging
+data sets" because "investing time in a project beyond its usefulness for publication is
+counterproductive, given the high expectations for producing research publications" [81].
+Filling this incentive gap, a data marketplace could provide another avenue of being
+rewarded and recognized for the valuable contribution of collecting quality data, and could
+therefore lead to increased data archival and availability.
+Interoperable data standards are incentivized by a data market. The benefits of
+interoperable data standards can be seen in, for example, the neuroscience community,
+with its adoption of BIDS, "a standard for organizing and describing MRI datasets" [82].
+This standard allows neuroscientists to more effectively collaborate within and across labs.
+It has reduced the amount of time they spend reorganizing datasets, leaving them more
+time for downstream scientific work such as data analysis. In a data marketplace, where
+data suppliers are in competition and where the data users prefer certain formats over
+others, the data suppliers can be relied upon to provide data in those preferred formats,
+given sufficient competition. Even if a dataset is originally published in an esoteric data
+structure, someone can profit by purchasing it, organizing it into a known format, and
+reselling it. In a market where data purchasers may buy data from varied sources to
+improve their models, they are likely to seek out datasets that are compatible with each
+other. That is, they will seek out data structured in interoperable formats. The result is a
+data marketplace in which suppliers are actively organizing data to suit the needs of
+purchasers, converging on interoperable data formats.
+Another potential emergent benefit of the data marketplace is increased data
+discoverability. Currently, finding scientific data is cumbersome [83]. Researchers often
+rely on social connections and fragmented data repositories. A data marketplace helps to
+address this issue through the competition between data suppliers who can gain from
+increasing the discoverability of their data. The more discoverable a dataset is, the more
+likely it is to be purchased. Data suppliers can increase discoverability by, for example,
+adding relevant tags and other metadata. Tags can help data search engines sort
+datasets. Metadata might even include a cryptographic signature from the researcher(s)
+who collected the data, attesting to the source and quality of the data. Additional
+organization and discoverability of datasets might come in the form of a knowledge graph,
+in which datasets can be related to each other, to researchers, to papers, to code that has
+been used to analyze it, etc. Note again that the data marketplace can be read and
+operated on by both humans and machines; much of the sorting of datasets in the
+marketplace might be done by automatons created by data suppliers. In the end, the
+suppliers within a data marketplace have a strong incentive to make their datasets easy to
+find, so they will likely adopt whatever methods best accomplish this.
+25
 
 ## Page 26
 
-Volunteer
-Operationally, all participants of the Institute are volunteers. Volunteers join the Institute by emailing project facilitators, or 
-communications from  
-. Communications such as the website 
- and 
- also contain solicitations for signing up for general 
- lists, and specific 
-.
-Discord
-https://www.activeinference.institute/
-Newsletter
-Volunteer
-Institute Projects
-As a community-driven open science organization, there are multiple opportunities for contribution. All backgrounds, time 
-zones, time availability, and levels of familiarity with Active Inference are welcome and encouraged. Volunteers are active 
-learners who want to contribute to ongoing projects at The Institute. Volunteers have the opportunity to engage in and lead a 
-wide array of projects without any constraints on their type or quantity. These projects encompass a range of activities such as 
-study groups, livestreams, marketing initiatives, publications, symposiums, and applied research.
-We look to develop and clarify how the 
- position will work in 2025. Current thinking is exploring ideas around:
-Volunteer
-Official Recognition (via specific affordances and statuses such as: affiliation status for papers and communications, access 
-to code repositories and digital resources, @activeinference.institute email address, letters of recognition, inclusion on 
-, payment via 
-, etc).
-Grants
-Philanthropy
-Role of 
-  in 
- efforts and 
- more broadly.
-Mentorship
-Volunteer
-Education
-Position and 
--specific Documentation, regular participation in prepare/measure cycles.
-Institute Projects
-Stewardship of specific 
- paper sections
-Domains of Application
-Sampling among expertise areas to build Prediction Matter Expertise (PME), not just Subject Matter Expertise (SME). 
-Facilitating discussions and answering basic questions.
-Contributing to 
- projects.
-Open Source
-The volunteer program aims to balance structure with flexibility, providing clear value while maintaining active inference 
-principles in learning and contribution. This framework allows volunteers to grow within the Institute while contributing 
-meaningfully to its mission.
- •
- •
- •
- •
- •
- •
+Moreover, a data marketplace where data are curated, highly available, structured
+in known and interoperable formats, meaningfully-tagged, and discoverable, provides
+good conditions for an increase in automated scientific discovery and, more specifically,
+better conditions for meeting the Nobel Turing Challenge introduced by Hiroaki Kitano [84]
+and further refined by The Alan Turing Institute [85]. This challenge involves creating "AI
+systems capable of making Nobel-quality scientific discoveries highly autonomously at a
+level comparable, and possibly superior, to the best human scientists by 2050" [85].
+Smaller challenges within this grand challenge include ensuring data are shared, linked,
+and machine-readable. The data marketplace described above could help address these
+and possibly other challenges, such as simply financially-incentivizing researchers to
+make their valuable datasets available to all scientists.
+Finally, a data marketplace affords profitable interactions between academic labs
+and organizations in industry. Labs can sell data to companies that have AI expertise but
+may  not have the expertise or equipment needed to collect training data. This not only
+allows companies to more easily find and use scientific data, but by buying such data,
+companies would also be funding the scientists who collected it. This opens up a market in
+which data with both epistemic and pragmatic value can be easily priced and discovered.
+It also makes it easier for companies and the economy at large to communicate their
+practical data needs to researchers; this could enhance the current system in which a
+study's perceived pragmatic value is only a function of how well its value is communicated
+through a grant proposal. A data marketplace could lead to a greater flow of information
+among academic and non-academic (e.g. citizen, government, non-profit, profit-oriented)
+organizations, with respect to the value of various kinds of data, allowing easier and
+potentially better funding of data with pragmatic value (though these benefits of funding
+may not extend to data which has only epistemic value). A well-designed data marketplace
+enables fair price discovery of digital knowledge assets and encourages productive
+applications of meticulously-collected, high-quality scientific datasets outside of basic
+research, boosting research applicability and downstream innovation.
+Teamwork Modeling with Systems Engineering
+To decrease the complexity and uncertainty that individuals face collaborating within
+large-scale DeSci projects, it is useful to introduce the systems engineering approach
+[23,86]. For better communication and team attention management, it is important to have
+consensus on the team objectives, project lifecycle management, practices in use, and
+metrics for tracking the performance and relevant behavior of all team members. Targets
+and goals of the projects are set by the needs of external stakeholders and individuals
+fulfilling specific project roles. Governance for decisions, assignments, and resources are
+based on unequivocal agreement according to the team members’ affiliation and authority
+26
 
 ## Page 27
 
-Internship
-The 
- program is customized to situation and timing of each person, and ranges in duration from several months-
-years. The internship activities are streamlined with the individuals other activities and aligned with their preferences. Interns 
-are assigned an organizational point of contact, optional additional mentorship, and have periodic synchronous and 
-asynchronous check-ins.
-Internship
-There are two primary components to the Internship:
-Learning and Updating: self-guided as well as participation in 
- projects (e.g. 
-)
-EduActive (Education)
-Textbook Group
-Research and Development: private projects and/or 
- activities. 
-ReInference (Research)
-The 
- program benefits the intern by increasing their familiarity and expertise with Active Inference and associated 
-areas, as well as offering practical experience with teamwork and project-specific skills. Upon completion, interns will receive 
-acknowledgement and a certification of completion with the duration and focus specified. Letters of recommendation will be 
-granted on a case-by-case basis. 
-Internship
-Interns are responsible for active and documented participation in the Internships. It is critical that interns are open to adapting 
-the internship plan and actively reduce uncertainties as needed. 
-⁠
-https://intern.activeinference.institute/
- 1.
- 2.
+to manage each other's labor. We consider such a group of individuals as an organization
+or organizational unit in the case of specific tasks to resolve.
+Akin to the use of systems engineering in the building of complex infrastructure
+(e.g. bridges, planes), we propose that people involved in DeSci projects document the
+roles involved in these team dynamics, as well as their concerns and preferences. This
+allows DeSci activity to be structured according to an established lifecycle with needed
+practices [87,88]. Here, we are not concerned with the domain-specific practices of a
+project lifecycle, but with general practices that are relevant for DeSci development, such
+as social modeling, economics, governance, and development in a broad sense. During
+any DeSci project, we can associate a human or other entities as actors who are fulfilling
+the roles that need to be performed. These entities fulfilling project roles engage in
+practices that entail completing tasks or cases. All the relevant objects and open cases
+must be resolved during the project for it to be a success (for instance, knowledge artifact
+production or fundraising). These cases need to be documented with reference to the
+roles, processes, practices, and actions required for successfully achieving the target goal.
+This case/issue tracker functionality is an attention management tool for the people
+involved in the project. This process allows for productive, auditable, and coherent work on
+projects.
+Like CeSci, DeSci faces challenges and failure modes across multiple domains,
+some of which were briefly described above. At this incipient and formative stage, what
+may provide utility for DeSci would be a useful unifying framework to allow for system
+conceptualization, design, and implementation. In the following sections, we describe a
+possible starting point for the integration of DeSci and CeSci systems, through the
+combined application of Active Inference and systems engineering [23].
+27
 
 ## Page 28
 
-Mentorship
-The Mentorship program connects  
- with additional one-on-one support from a Mentor (a member of 
- who assumes the role of sponsor for authentic learning exposures both in and beyond the Active 
-Inference Institute). 
-Interns
-Scientific Advisory Board
-Serving as a Mentor is a way to provide a unique contribution for our community, through engaging with the 
-al 
-space parameterized by Subject Matter Expertise and Prediction Matter Expertise (see the Education page for further details). 
-This learning condition presents as a co-learning opportunity where the updating of ALL participant generative models, is 
-expected and preferred.  Here “what got you to a new Know” matters as much as “what you know already.”
-Education
-Using the 
- form, individuals in the 
- and 
- program submit a personal statement and request 
-for kind of advising that would best serve their learning trajectory. The Institute works to match up individuals on a rolling basis.
-Mentorship
-Volunteer
-Internship
+Active Inference, Systems Engineering, and Science
+In this section we justify the use of Active Inference in systems modeling, introduce
+an entity description for science modeling consistent with Active Inference and Systems
+Engineering models, and revisit patterns in CeSci and DeSci.
+What is Active Inference?
+Active Inference is a framework for the integrated modeling of entity perception,
+cognition, action, and impact in the environment. Active Inference draws upon the
+formalism of the free energy principle, which provides a single statistical imperative
+underpinning the assembly of organic and inorganic matter: the minimization of
+informational free energy [89–91]. This principle applies to systems at every scale. The
+process of free energy minimization has been positioned as the driver of autopoietic
+processes in living systems ranging from cells to cities [92,93]. Its core meaning is that it
+allows a goal-oriented, agentic account of self-organization across scales [90]. The
+minimisation of free energy at the system's scale entails the minimisation of variational
+free energy for each of its constituting particles, which can be interpreted as the
+optimisation of a Bayesian model describing the particle's structure (more specifically, the
+difference between model Complexity and Accuracy) [94]. Because of this
+correspondence, we can claim that entities aggregate in virtue of reducing their uncertainty
+about future sensory and active states [95,96].
+The related framework of Active Inference leverages this formalism to model one or
+multiple interacting entities as involved in continual perception and action angled towards
+reducing the expected uncertainty about their perceptual flow and action selection [97,98].
+They can do so either by altering internal states so as to infer the causes of sensory
+states, or by altering external states so as to cause expected states. Both processes
+participate in a common control architecture based on predictive processing, which can be
+interpreted as a hierarchy of "algorithms" matching input to output over nested time scales
+[99]. In this hierarchical model, previously-acquired beliefs about controlling behavior in
+different contexts are internally encoded, and result in adaptive arbitration between
+epistemic and pragmatic value choices (i.e. exploration vs exploitation, [100]). Thus, the
+framework of Active Inference allows us to model the observations, beliefs, and
+predictions (i.e. expected states) of agents as statistical dependencies, or Bayesian
+probability distributions.
+28
 
 ## Page 29
 
-Fellows
-Since 2024, the Active Inference Institute has hosted a 
- program, designed to support and advance research in 
-Active Inference. This program provides a unique opportunity for exceptional indiviuduals of different career stages to join the 
-Institute's vibrant community and contribute to the development of Active Inference and its applications across domains.
-Fellows
-Eventually we expect to have multiple kinds of 
-, including Research, Education, and more. Initially we have begun 
-with Research Fellows, conduct self-directed, innovative research projects that align with the Institute's research and education 
-missions. Research Fellows have access to the Institute's facilities, computational resources, a network of leading experts in the 
-field, and the ability to engage with 
- and 
- 
-. Fellows also benefit from professional 
-development opportunities, including 
-, training workshops, and support for 
- practices.
-Fellows
-Philanthropy
-Grants
-Institute Programs
-Mentorship
-Open Source
-The Research Fellow position is an unpaid non-employee position. The default term for a Research Fellow is 2 years, with the 
-potential to renew. Applications are considered on a rolling basis. Eventually, we look forward to developing our collaborations, 
-philanthropy, and partnerships at the Institute, in order to enable fellowships to be paid financially in some way. 
-Anna Pereira
-0009-0008-
-9049-0707
-⁠
-, 
-⁠
-GuestStream #076.1
-#076.2
-Cultivating a grass roots impact project (initially through 
-nonfiction literature) to explore rapid dissemination of 
-Active Inference Principles. Active Inference is the key 
-lens that then expands to include human physiology and 
-"wellness" concepts in the hopes of enabling humans to 
-live more fulfilling lives, respond to increased 
-uncertainty, and foster mutualism. The project actively 
-provides mutualistic opportunities for collaboration and 
-seeks to build community.  
-Say hello, collaborate, or discuss at via 
-⁠
-anna@activeinferencecycle.com
-​
-Jean-Francois 
-Cloutier
-0009-0001-
-1841-2279
-⁠
-, 
- Active 
-Inference 
-Symposium
-2nd 3rd
-I seek to find out what it takes, at a minimum, for a robot 
-to learn, on its own, how to survive in a world it knows 
-initially almost nothing about. My research is the 
-continuation of a project of many years in which I 
-program simple autonomous robots to develop and 
-ground my understanding of cognition.
-Looking for answers has already taken me on an 
-unanticipated journey, both within and beyond Active 
-Inference. I have been drawn into Active Inference of 
-course but also Kantian epistemology, the issue of map 
-vs territory, biosemiotics, mortal computing, collective 
-intelligence, autopoiesis and constraint closure.
-⁠
-⁠
-Symbolic Cognitive 
-Robotics
-Name
-ORCID
-Livestreams
-Overview
-Project page
-Current Research Fellows 2
+Much of the focus in the Active Inference literature has been on organisms,
+especially in the context of human behavioral neuroscience [101]. However, Active
+Inference has also been applied to various other informational and cyberphysical settings
+such as human communication [102], remote teams [23], human conflict [103], trust
+interactions with robotics [104], and social media discourse [26]. Here we apply Active
+Inference and Systems Engineering to the case of modeling centralized and decentralized
+science.
+Active Inference and Science
+Evidence of collective intelligence, understood as the capability of human societies
+to solve problems, surrounds us. In most cases, it is instantiated in cultural artifacts or
+cognitive gadgets [105] that follow from a process of cumulative cultural evolution dating
+from the branching of the Homo genus [106,107]. We are surrounded by living fossils of
+this cumulative process, from smartphones to hospitals, from net fishing to general
+agreements about the recognition of private property. Our capability to understand and
+navigate the world does not simply follow from information in our minds, but it is (to some
+extent) entailed by the very structure of the ecological niche and the social constraints that
+shape our behavior. This means that entities are, to some extent, autonomous or
+displaying agency regarding their own cognition [32]. Entities engaged in Science as a
+cognitive endeavor are no exception.
+Like other instances of collective intelligence involving stigmergy (collective
+behavior mediated through modification of a shared niche) [108,109], Science is a
+cumulative endeavor that relies on previously-acquired beliefs and established
+communities of practice. Scientists and other cognitive entities perceive stigmergic cues
+from the niche (including epistemic resources, as well as other social entities), update their
+cognitive models (learning), and act to modify the niche in the form of research outputs
+(Figure 2). As scientists follow new leads or choose to ignore them, communities coalesce
+and disperse, and scientific theories are created, developed, and maintained or forgotten.
+Frequently, scientific endeavors are undertaken with multiple, potentially competing, goals
+in mind. For example, scientists may work with an aim to achieve some or all of the
+following outcomes: earn a paycheck, improve their reputation, improve the reputation of
+their company or institution, conduct empirical research without bias, solve a particular
+problem, or discover something novel, simple, or beautiful.
+29
 
 ## Page 30
 
-⁠
-https://fellows.activeinference.institute/
-John Boik
-0000-0003-
-1289-7997
-Livestream #021 
-series: .
-, .
-, .
-, 
-.
-, . , . ⁠
-01 02 03
-04 1 2
-As an Active Inference Institute Research Fellow, the 
-research program I will pursue is a continuation of the 
-work I describe in a book and in two series of concept 
-papers. That program explores the science-driven, de 
-novo development of new cognitive architectures that 
-are, by design, fit for purpose. 
-The first series describes how the approach can be 
-applied to the creation of new societal systems (e.g., 
-new economic and governance systems), which are 
-viewed as components of a society’s cognitive 
-architecture. 
-The second series describes how the approach can be 
-applied to creation of an online ecosystem that 
-facilitates cognition in the large-group setting.
-⁠
-⁠
-Cognitive Narrative 
-Ecosystem
-David Bloomin
-⁠
-⁠
-GuestStream 085.1
-I am investigating how the principles of Active Inference, 
-combined with social dynamics akin to kinship and mate 
-selection, can foster cooperation and alignment in multi-
-agent environments. My main focus is Metta AI, which 
-uses a novel reward-sharing mechanism in gridworld 
-simulations. The project aims to study the emergence of 
-complex social behaviors among AI agents that 
-minimize free energy. Through an open-source model 
-organism, Metta AI, we seek to demonstrate how shared 
-incentives can lead to aligned cooperative intelligence, 
-informing the path towards safe and beneficial AGI.
-You can follow my progress at 
-⁠
-http://daveey.github.io
-⁠
-⁠
-Metta AI
-Robert Worden
-0000-0001-
-7304-2752
-GuestStream #082 
-series: . , . , . , . ⁠
-1 2 3 4
-I have two main research interests: 3-D spatial 
-cognition, and language.
-All animals need to understand the local 3-D space 
-around them, building a Bayesian model of space. I 
-propose that they do this not by neural computing 
-alone, but using a wave in the brain (in the mammalian 
-thalamus, or the insect central body). This leads to a 
-novel theory of consciousness – that it arises not from 
-neural firing, but from the wave. I would like to model 
-this collaboratively, using active inference. See Frontiers 
-article on the 
-, and Gueststreams 082.2,3,4. 
-thalamus
-I also work on language – how it evolved, how we learn 
-it, how it works in the brain. See Frontiers article on 
-, and a 
- of language 
-learning.
-language evolution
-demonstration
- 
-⁠
-⁠
-Wave Hypothesis
+Figure 2. Two active entities interacting via their shared epistemic niche. For more
+detail on the entity perception-cognition-action loop in Active Inference, and the Markov
+Blanket formalism comprising the partition shown here, see [90].
+Active Inference is relevant for model-based understanding of scientific systems
+because it offers a composable multiscale ontology and an integrative framework for entity
+and system behavior [93,110]. Thus the usage of Active Inference can help us understand
+the entanglement of multiple processes occurring at nested scales of behavior during
+scientific research. In Active Inference, actions across scales are modeled as a systematic
+attempt by cognitive entities (i.e. scientists and institutions) to reduce uncertainty about
+aligning their future perceptions with their preferences, so as to ensure their persistence of
+their defining organization. For example, the development of administrative systems and
+agriculture was described within Active Inference formalism as a product of City-States’
+attempt to understand and control their reality [32], analogously to the process of
+morphogenesis as a process of cells manifesting a body plan which reduces their
+uncertainty about their cellular niche [95].
+Importantly, the Active Inference account is not limited to conservative
+(homeostatic) behavior, but also to more complex phenomena such as memory,
+anticipation, abductive logic, and autopoiesis. For example, Active Inference has been
+used to model the systematic alteration of one’s niche [99,111,112], as well as the creation
+of new tools and their incorporation into one’s cognitive identity [95]. Therefore, it very
+much provides grip on innovation, by contextualizing subjective systems of meaning in
+30
+
+![page30_img1.png](images/page30_img1.png)
 
 ## Page 31
 
-Philanthropy
-The Institute is a 501(c)(3) educational non-profit, registered in Delaware, USA. 
-Small private donations, though PayPal, 
- subscriptions on 
-, and 
- support, to date in November 
-2024, have totaled less than $5,000 (all work is done by 
-s).
-Newsletter
-Substack
-YouTube
-Volunteer
-Over the coming years we hope to develop a meaningful, relational, synergistic, compliant, modern, visionary, responsive 
- program.
-Philanthropy
-⁠
-https://donate.activeinference.institute/
+relationship to the concrete (biological and sociocultural) organizations which underlie
+cognition [113].
+In the context of action selection related to research (e.g. experimental design,
+decisions about scientific communication, acquiring funding), Active Inference provides a
+division between two kinds of motivation in research: epistemic value (informational gain
+related to e.g. new research findings or knowledge) and pragmatic value (reward
+associated with increases in wealth, longevity, or status). Any innovation in institutional or
+cognitive processes will affect the broader system both epistemically, by defining the social
+norms which entail scientific activity, its cognitive underpinnings, and the kind of cues and
+actions scientific activity involves; as well as pragmatically, by reinforcing the specific
+behaviors which help the relevant (institutional or human) agent to reduce (subjective)
+uncertainty about future sensorimotor states. When viewed through this lens, the scientific
+process balances action selection based upon the both epistemic and pragmatic value,
+and this process plays out across multiple scales of nested organization. For example, at
+different stages of their day/career, the individual human researcher prioritizes more
+exploratory/learning activities, while at other times prioritizes more exploitative/productive
+activities. At the scale of an individual, institution, or even scientific field, the epistemic
+activities are reflected by basic research, while the pragmatic activities can be considered
+as translational or application-oriented research, or engineering.
+As metascience and sociology of science typically focus on the motivations and
+systems of incentive on the scale of individuals and institutions, we consider the multiscale
+nature of Active Inference to provide a relevant angle for future research. This work
+reflects early steps towards leveraging this framework into a more detailed understanding
+of how scientific entities interact, and how contemporary changes associated with the
+challenges and opportunities of DeSci could improve on the status quo.
+Active Entity Ontology for Science (AEOS)
+Here we describe the attributes and structural basis of a descriptive entity-oriented
+ontology for Science, consistent with the principles of Active Inference and Systems
+Engineering previously described. This project has the working title and acronym Active
+Entity Ontology for Science (AEOS). Previously, among many other use cases, ontologies
+have been used for schematic mapping of cryptographic systems and knowledge
+ecosystems [114]. Additionally, approaches for complex systems modeling based upon
+entities and their affordances have precedence in economics [115] and other areas. We
+build on this work to create a useful and versionable resource which stands to be
+developed and extended by researchers and practitioners in the coming years. This work
+is meant to be a starting point for the construction of active entity-oriented ontologies of
+31
 
 ## Page 32
 
-Grants
-The Institute is currently all volunteer organization, and is increasingly looking for support through 
- and 
-. 
-Grants
-Philanthropy
-As part of the commitment to 
-, submitted grants are made public whenever possible, by uploading to a preprint 
-server (such as Zenodo) as a publication. We leave a stigmergic trace on the ecosystem reflecting our plans and assembled 
-teams to tackle new areas of research.
-Open Source
-  applied for:
-Grants
-In 2023, we applied for (and did not receive) an NSF Pathways to Enable Open-Source Ecosystems (
-) grant. Along the 
-way, we collaboratively wrote the 
- “The Active Inference Institute and Active Inference Ecosystem” — the 
-structure and text of which, was the initial conditions (prior) for this November 2024 second versioning.   
-POSE
-2023 paper
-In September 2024, the 
- applied for an 
- grant “FarmWorks: Decentralized AI Agents for 
-Personalized Solutions” (
-). 
-RxInfer.jl Learning Group
-FLI
-Zenodo link
-In September 2024, the 
- applied for a 
- grant “VILLAGE (Validating Inference for 
-Large-scale Agent Governance Ecosystems)” (
-). 
-RxInfer.jl Learning Group
-Foresight Institute
-document link
-We have also written several letters of support, collaboration, and 
- for others in their applications and 
-. 
-Partnership
-Grants
- •
- •
- •
+science. See coda.io/@active-inference-institute/active-entity-ontology-for-science-aeos
+for an interactive site that provides an updated version of AEOS.
+Table 1 below provides example entity interaction motifs for CeSci and DeSci
+ecosystem models. These motifs are presented as initial drafts on the specification and
+visualization of subsystems/modules that are important for larger networks of interacting
+entities.
+Area of Concern
+Example CeSci Motif
+Example DeSci Motif
+Funding
+Team Publishes Knowledge Artifact (Grant),
+then Requests Funding From Funding
+Agency, which Scientifically Assess the
+Grant.
+Funding Agency Provides Opportunity for
+Researcher, Provides Constraints for
+Researcher, and Sends Fungible Asset to
+the Team
+Team Publishes Knowledge Artifact
+(Grant), then Requests Funding From a
+DAO which Scientifically Assesses the
+Grant
+The DAO Engages in governance
+regarding the Grant and Sends Fungible
+Asset to the Team
+Communication
+Academic University Communicates
+Asynchronously To Lab via Computer
+System
+Human Communicates Asynchronously
+or Synchronously To Human via the
+Computer System
+Cryptographic
+Relationship
+Research investigator uses Cryptographic
+Identity on Computer System to Provides
+Funding To Team and Provides Updates to
+Funder like Research Agency (Government)
+Research investigator Team transfers
+Intellectual Property as Non-Fungible
+Asset to a DAO Cryptographic Identity
+that is a Smart Contract .
+Scientific
+Review
+A Research investigator Sends Fungible
+Asset to Journal/Publisher to Publish
+Knowledge Artifact like a Paper. The
+Journal/Publisher Requests Scientific
+Review from other Research investigators
+After Publishing a preprint Paper, the
+Research investigator receives a
+Fungible Asset as a function of the use of
+the Knowledge Artifact
+Research &
+Analysis
+Research investigators in Lab Team
+Creates, Scientifically Assesses, then
+Publishes Knowledge Artifact
+Research investigators in DAO
+Community of Practice Creates,
+Scientifically Assesses, then Publishes
+Knowledge Artifact
+Publishing
+After Scientific Review, a Research
+investigator Publishes Knowledge Artifact at
+Journal/Publisher.
+A Research investigator Publishes
+Knowledge Artifact like a Paper on a
+DAO-produced knowledge market.
+32
 
 ## Page 33
 
-Partnership
-The 
- program fosters collaboration with organizations aligned with our mission of learning, researching, and 
-applying Active Inference. Through this program, we aim to create mutually beneficial relationships that advance the 
-understanding and impact of Active Inference across diverse domains.
-Partnership
-Partnering organizations have the opportunity to participate in coordinated activities around Active Inference and preferred 
-domains, disciplines, regions or languages of interest. The institute works with partners to assess the optimal level of 
-engagement, from informal 1:1 connections to funding accelerated training or policy programs. Partners are expected to 
-provide input and feedback to help shape the Institute's priorities and programs. These insights will inform our planning and 
-focus from the start of the relationship.
-Benefit of 
- :
-Partnership
-Partners will be publicly recognized on our website and materials as agreed upon.
-Point of contact and regular meetings with Institute personnel.   
-Having access the Institute's network of researchers, contributors and interns to build reputation and positive context. 
-Potentially collaborate on augmenting or spinning up programs in areas of shared interest, such as disciplinary courses, 
-region-specific work, internships, fellowships, and symposium themes. The scope will depend on the level of partner 
-commitment and alignment with the Institute's capacities.
-In turn, partnering organizations commit to:
-Completing an application demonstrating alignment with the Institute's goals, such as applying Active Inference and 
-broadening scientific participation.
-Dedicating time and attention at an agreed upon level, from casual participation in projects to more formal involvement like 
-facilitating projects.
-Making a financial or in-kind contribution to support the Institute's work. The exact arrangement will be negotiated to 
-create a meaningful, mutually agreeable outcome.
-Designating a reliable point of contact for communications with the Institute.
-How the Partnership Program Works
-Interested organizations complete an application expressing their desired level of involvement and alignment with the 
-Institute's mission.
-The Institute reviews applications and selects partners based on potential for impact and fit with current priorities. Diversity 
-across geographies, languages and domains is a key consideration.
-The Institute and partner sign an agreement formalizing the relationship, including the agreed upon commitments, 
-contributions, designated points of contacts, and Terms on both sides.
-The partnership kicks off with a planning session to map out shared goals and an action plan for the first 6-12 months. 
-Regular check-ins monitor progress and make adjustments as needed.
-Partners receive curated updates and opportunities to provide input. Collaborative activities proceed as planned, with 
-flexibility to evolve the relationship over time.
-Name
-Description
-Image
-Link
-Partnership description
-Current Institute Partners 2
- •
- •
- •
- •
- •
- •
- •
- •
- 1.
- 2.
- 3.
- 4.
- 5.
+Table 1. Some example motifs of Research and Funding in CeSci (Centralized Science)
+and DeSci (Decentralized Science). See the AEOS site for an interactive version of this
+Table, where all entities and affordances can be unpacked and explored. Capitalized
+words are AEOS terms.
+AEOS Entity partitioning
+In accordance with the theory of Active Inference, any AEOS entity consists of 3
+kinds of states that are partitioned off from the entity’s environment: Internal states (states
+inside the entity that are hidden from the outside, for example those involved in cognition),
+Sense states (incoming statistical dependencies), and Active states (outgoing statistical
+dependencies). Together these three states (Internal, Active, and Sense) constitute the
+"particular" or autonomous states of the entity [94]. One of the advantages of Active
+Inference as an integrative framework is this: used instrumentally, it can model various
+phenomena and ensembles across scales from the quantum [116] to the social and
+planetary [117,118], including heterogeneous types of entities which enact the scientific
+ecosystems of today and tomorrow.
+Using the Markov blanket partitioning of variables on a Bayesian graph: Entities
+consist of specified Internal states, reflecting the (observer's model of) the Entity's
+generative model of perception, cognition, and action. External states are those that are
+inferred or acted on by Entities. Internal states are partitioned from external states via a
+Markov blanket, which is further divided into nodes with incoming statistical dependencies
+(Sense states) and outgoing statistical dependencies (Action states) [90,93,94]. Active
+states are reached via an internal process of policy selection, which incorporates
+information about what affordances (capacities for action) exist and the preferences that
+the entities would like to reduce uncertainty about the realization of (for example a
+homeostatic preference for comfortable temperatures).
+Entity models of this type have advantages in that they can be compared across
+entity types and environmental surroundings [111], and enable variational Bayesian
+inference and message passing algorithms [119]. In this case of online DeSci, a type of
+digital message passage algorithm is occurring on a bipartite graph composed of active
+and informational entities in the AEOS. This may be represented as a factor graph (a
+mathematical formalism that enables computation on large Bayesian models), which
+presents developers with an interesting avenue for future research and application
+[119–121].
+33
 
 ## Page 34
 
-⁠
-https://partnerships.activeinference.institute/
-First Principles First
-Towards a Science 
-of Mindful Agents, 
-Societies and 
-Observer 
-Languages
-
-The Active Inference Institute has a rich ecosystem of 
-research scientists, developers, and thought leaders that 
-FP1 can draw upon. In turn, FP1 is committed to spawning 
-and undertaking projects to expand the awareness and 
-application of active inference.
-Numen Games
-We are building a 
-Gamify Structural 
-Framework for 
-Organization an 
-Open Metaverse 
-RPG, Numinia is 
-game to work 
-better.
-
-Through our partnership with the Active Inference Institute, 
-Numinia seeks to combine its expertise in gamified, 
-immersive 3D environments with the Institute’s scientific 
-approach to Active Inference. Together, we will enhance 
-learning experiences by embedding these scientific 
-principles into our open metaverse RPG, providing a 
-research-driven framework for organizations to innovate 
-and thrive.
-Our 3D educational gamified experiences will foster 
-interactive learning in real-world organizational settings, 
-while the Institute will guide us with scientific 
-methodologies that deepen our understanding of cognitive 
-and organizational dynamics​.
+AEOS Entity Classes and Types
+The fundamental object or kind of thing in the AEOS is the Active Entity, which in
+online settings is almost always interacting with Informational Entities [23]. Drawing upon
+the Active Inference framing of a system, this entity is a system of interest that is
+partitioned from its niche surroundings based upon its capacity for persistence, thus
+making it a "thing" [122,123].
+In AEOS, there are two Classes of Entity (Figure 3): Active epistemic entities (which
+select action policies and enact affordances), and Informational entities (which contain
+information and are acted upon). There are multiple Entity Types within each Class. In the
+digital/online setting, Active Entities are always intermediated by Informational entities
+(e.g. People can talk online through modification of a shared epistemic niche reflected by a
+computer system). Informational entities are always intermediated by Active entities (e.g.
+two databases can only communicate with each other through a computer system). The
+distinction between "Adaptive" and "Mere" Active Inference entities (e.g. those that engage
+sentiently and adaptively in the world) in introduced in [124].
+Figure 3. Entity Classes in Active Entity Ontology for Science (AEOS). Active
+Entities (blue boxes) are any kind of organization with agency at any scale, for example
+humans, teams, organizations, institutions, and DAOs. Informational Entities (orange
+circle) is any type of computational data or epistemic resource, for example a dataset,
+grant, article, or fungible/non-fungible asset.
+34
+
+![page34_img1.png](images/page34_img1.png)
 
 ## Page 35
 
-Open Source
-The default 
- licence information for all Institute materials is described below. 
-Check with specific products and collaborators for more information 
-Open Source
-CC BY-NC-SA 4.0
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
-This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the 
-material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license 
-the modified material under identical terms.
-BY: Credit must be given to the creator(s) of the work, the specific people where know & 
- 
-as hosting or publishing entity.
-The Active Inference Institute
-NC: Only noncommercial use of your work is permitted. Noncommercial means not primarily intended for or directed 
-towards commercial advantage or monetary compensation.
-SA: Adaptations must be shared under the same terms (unless otherwise specified and agreed upon by creators). 
-Some of our main 
- are listed in the table below, nested within the 
-. 
-Open Source Repositories
-
-Institute Github
-Biofirm
-
-Active Inference 
- agents for 
- 
-PyMDP
-Bioregional Modeling
-PyDMB
-
-Dysfunctional Markov Blanket package to accompany research paper
-GEN24
-
-Generative AI experiments and deployments as part of 
- (
-)
-Active Blockference here
-ActiveInferAnts
-
-Active Inference Ant simulations, and much much more
-Journal-Utilties
-
-Utilities for 
- 
-Active Inference Journal
-ActiveInferenceJournal
-
-Primary repository for the 
-, with transcripts from 
- 
-Active Inference Journal
-Videos & Podcasts
-ActiveInferenceCategoryThe
-ory
-
-⁠
- curriculum and materials
-Category Theory
-ActiveBlockference
-
-⁠
- repository for integrating 
- with 
- and more
-Active Blockference
-Active Inference
-cadCAD
-Active_Inference_Ontology
-
-Snapshots of 
- 
-Active Inference Ontology
-GeneralizedNotationNotation 
-Information on 
- 
-Generalized Notation Notation
-Textbook
-
-Repository for 
- 
-Textbook Group
-AEOS
-
-Snapshots of 
- 
-Active Entity Ontology for Science (AEOS)
-Symposium
-
-Synthetic intelligence methods for 
- 
-Applied Active Inference Symposium
-Name
-URL
-Description
-Open Source Repositories
- •
- •
- •
-
-![page35_img1.png](images/page35_img1.png)
+Both classes of entities (Active and Informational) inherit the same type of Active
+Inference partitioning scheme described above. See the AEOS site for an updated list of
+the diverse types of entities currently modeled. Some examples of Active entities in AEOS
+include Human, Computer System, Organization, Team, DAO, Academic University, and
+Community. Of special note are the Organizational entities, composed of groups of
+humans, computer systems, or other organizations (e.g. a university made up of
+departments, made up of labs, made up of people), along with their informational
+resources. As with any other Active Entity, Organizational entities engage in outgoing
+actions from a set of discrete or continuous options (affordances), and also can be the
+recipient/target of action from other entities.
+Entities of the Informational class are those which are being modeled for their
+informational content, and are solely acted upon. Some types of Informational entities may
+also display agentic qualities when used by Organizational and Computer System entities,
+for example a software program. The Informational entities are used as epistemic
+resources in the niche of other Agent-class entities. Some examples of Informational
+entities in AEOS include Knowledge Artifact, Fungible Asset, Non-Fungible Asset,
+Dataset, Metadata, Paper, Intellectual Property, Code, Grant, and Blockchain.
+AEOS Policy Selection, Areas of Concern, and Roles
+Active entities engage in policy selection based upon their internal generative
+model (Figure 4). The behavioral policies that active entities enact are selected from a set
+of agent-specific possible action sequences for that entity: their affordances. In AEOS, the
+affordances are determined by the type of entity, its roles, and its context – for example a
+human entity with administrator role may have the affordance to modify a digital file in a
+certain situation. The specific affordances that an entity engages in, in a specific setting,
+reflect the role (formal/assigned or informal) that the entity has (Figure 5). This role-based
+approach towards organization draws on Systems Engineering [23], and allows the
+flexibility to both describe current systems as well as design new systems. For example if
+a human is providing grant funding to a team, that human entity has the role "Funding
+provider". With respect to the affordance of providing funding to a research team, this role
+could also have been fulfilled by a funding agency or a DAO.
+35
 
 ## Page 36
 
-Ecosystem Support
-Activities at the Institute offer resources and participation opportunities for individuals and organizations. These epistemic and 
-pragmatic services include: 
-Informational Commons
- & 
-⁠
-Videos & Podcasts
-Active Inference Journal
-Largest corpus of 
- Active Inference education materials available to date.  
-Open Source
-Common Forum. Providing 
-, hosting online forums, 
-, discussion 
-groups, and 
- channels where learners, researchers, and practitioners can connect, ask questions, and 
-share insights. Fostering a community that helps individuals overcome challenges, exchange ideas, connect on 
-collaborations, and receive support from peers and experts.
-Institute Projects
-Applied Active Inference Symposium
-Communications
-Opportunities to Share and Present Work. Provide myriad opportunities to share and present relevant work on Active 
-Inference, offering opportunities for unique collaborations and new knowledge discovery catalyzed by Active Inference and 
-the consequent amplified leveraging of expertise and practices across disciplines, domains, and paradigms.
-Infrastructural and Administration directions
-Infrastructure. Maintaining and developing information systems to support The Institute’s activities, iteratively improving 
-usability and efficacy. Pending funding, working with requirements engineering and user experience professionals to 
-overhaul existing systems.
-Improve provisioning and access to e.g. 
-, 
-, 
- materials, 
-, etc.
-Implementations of Active Inference
-Active Inference Ontology
-Textbook Group
-Videos & Podcasts
-  
-Partnership
-Managing and growing relationships with 
-, research, application, and service partners.
-Education
-⁠
-Philanthropy
-Development relationships with potential donors and sponsors, and, pending funding, developing the necessary 
-infrastructure (e.g., accounting, legal, digital affordances, materials) to request and receive donor and sponsor support, 
-and to offer and dispense micro-grants and financial support to researchers.
-Funding Discovery & 
- Support. Providing a variety of support mechanisms for participants to search for and 
-submit to grant and funding opportunities, as well as assist them in forming partnerships (e.g., with other researchers, 
-companies, and universities).
-Grants
-Professionalization. Developing a curriculum of training programs for Officers and Directors of commercial entities and 
-officials of governmental and civil society organizations to enhance their understanding of sentient behavior (as described 
-by Active Inference) and its implications for organizational interactions in the areas of Business, Operations, Legal, 
-Technical, and Social.
- •
- ◦
- •
- •
- •
- ◦
- •
- ◦
- •
- ◦
- •
- •
+Figure 4. Active entity action selection. Using the Active Inference partitioning
+[101,123], the Active Entity at top left can be modeled as having incoming Sense States
+and outgoing Action States which interact in an affordance-based fashion with the niche.
+The internal generative model of the entity, here modeled as a partially observable Markov
+Decision Process, describes the process of action selection given an incoming stream of
+observations.
+Figure 5. Entity Roles and Role Based Access Control (RBAC). Each Entity has
+Affordances (capacities for action) and can have Roles in the organizational context
+(assigned performances to be done) In the online context, all Active entities are
+36
+
+![page36_img1.png](images/page36_img1.png)
+
+![page36_img2.png](images/page36_img2.png)
 
 ## Page 37
 
-Communications
-Internal Communications Plan
-Institute participants, 
-, 
-s, and other roles communicate with one another and with members of the 
-community as follows:
-Officers
-Volunteer
-Email serves as the primary means of communication for internal announcements, updates, sharing important documents, 
-and any other professional communications where record keeping is of interest.
-Regular Synchronous Officer Meetings are held to keep communication lines open, address questions, and discuss 
-progress on projects. The 
- meets regularly in an open discussion format. The 
- meets quarterly to respond to the quarterly roundtable update and address any other issues or 
-concerns.
-Scientific Advisory Board
-Board of Directors
-Shared Calendars are used to schedule meetings, appointments, and events, ensuring everyone is aware of each other's 
-availability.
-The Institute-operated 
- Server is the primary location for asynchronous discussion and synchronous project 
-meetings. Currently there are over 1000 people in the server, and we strive to keep it an accessible entry point for learning 
-and applying Active Inference.
-Discord
-Organizational Communication
-The Institute communicates with potential partners, sponsors, and relevant constituencies through channels including:
-Livestreams and 
- provide exciting avenues for live community engagement.
-Videos & Podcasts
-Content Announcements via X 
-, 
-, 
-, 
-, 
-, Bluesky 
-⁠
-@inferenceactive
-Discord Facebook
-Newsletter LinkedIn
-@actinfinstitute
- come from 
- and reflect: completed projects, recent publications, 
-collaboration and other project opportunities, new releases of educational materials and tools, etc
-Measurements
-The Active Inference Ecosystem
-Target Audiences
-Curious and exploratory learners from all backgrounds and levels of familiar with different subjects/skills. 
-Professionals and Academics: Individuals with an interest in cognitive science, machine learning, philosophy, physics, 
-linguistics, computer science, and related areas.
-Potential Partners: Government agencies, funding organizations, academic institutions, and other research-focused 
-organizations.
-Active Inference Community: Researchers, academics and professionals who use and reference Active Inference and 
-related approaches in their daily work.
-Broader Scientific Community: Researchers, academics, and professionals in compatible fields.
-Social Change Organisations: International Organisations, NGOs, civil society
-General Public: Individuals who may have a personal interest in cognitive science, machine learning, philosophy, physics, 
-linguistics, computer science, and related areas.
-Research and Educational: Universities and academic institutions.
-Trade Associations and Think Tanks. Organizations which perform research about future industry trends, in addition to 
-other communities of practice.
-Corporate: Companies with employees who would benefit from knowing Active Inference related approaches to business 
-organization and operations.
-Government: Government agencies and funding vehicles.
- •
- •
- •
- •
- •
- •
- ◦
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
+intermediated by computer systems, and implicitly informational entities (shared epistemic
+niche).
+Below in Figure 6-8 are several initial graphical examples of applications of the
+AEOS. The natural language sentences at the bottom of each image reflect CeSci and
+DeSci motifs to be found within each Area of Concern (Communication, Scientific Review,
+Funding). Words in blue reflect AEOS entities and active relationships (affordances) that
+link the entities. These examples show the capacity of AEOS to model various key motifs
+and patterns found in both CeSci and DeSci systems. One possible advantage of a
+system such as AEOS is that scientific motifs can be described in natural language, have
+an interactive visual representation, and also provide an avenue for formal modeling.
+​
+Figure 6. Example motifs of Funding in CeSci (left) and DeSci (right). Blue boxes
+are Active Entities in AEOS, orange circles are Informational Entities. In this example, the
+initial timestep t=1 is noted on the top of each side, and the following timestep t=2 is
+below.
+37
+
+![page37_img1.png](images/page37_img1.png)
 
 ## Page 38
 
-Private Donors: Individuals who understand the value and potential impact of this community of practice and its subject 
-matter, and would be willing to help support it.
-Social Change Organisations: Taking basic underlying concepts and translating them into non-technical language and 
-frameworks for organisations involved in change around large scale social issues (e.g., climate change, peace building)
-Approach
-The goal of our organizational communications plan is to provide the foundation for sustainable and accessible funding, and to 
-work toward making Active Inference a household term, used as widely as “Machine Learning”, reflecting its demonstrable 
-utility and impact in implementation. An ideal next step toward this goal is the professionalization of Active Inference core 
-competencies and techniques and related competency and qualification standards.
- •
- •
+Figure 7. Example motifs of Communication in CeSci (left) and DeSci (right).
+Figure 8. Example motifs of Scientific Review in CeSci (left) and DeSci (right).
+38
+
+![page38_img1.png](images/page38_img1.png)
+
+![page38_img2.png](images/page38_img2.png)
 
 ## Page 39
 
-Quality, Performance, and Growth Evaluation
-The Institute intends to evaluate quality, performance, and growth within community development at three scales, listed below, 
-based on best practices within the 
- community and adapted for our use-cases which include 
- and 
-other products. 
-Open Source
-Software
-Participant scale
-Evaluation at the level of individuals, with consideration for a plurality of individual priors (i.e., diversity in perspective, 
-experience, culture, language, preferences, discipline, and level of expertise) and a focus on accessibility and onboarding. 
-Objectives include quality of participant and user experience, plurality of educational mediums and formats (i.e., accessibility), 
-networking and collaboration opportunities, and professional development. Pending grant or donor funding, The Institute will 
-work with user experience, communications, and requirements engineering professionals to improve current and establish new 
-feedback mechanisms and implement best practices for aforementioned evaluations. The following tools serve as a basis for 
-evaluation:
-Individual feedback forms and surveys
-Participation (e.g., number of projects completed and contributed to)
-Continuing Professional Development (e.g., courses completed, certifications)
-Institute scale
-Evaluation at the level of The Institute will consider various areas such as sustainability of personal and collective efforts, 
-support reliability, and user experience quality, and Institute quality control and improvement. Objectives include increasing 
-collaboration opportunities, ensuring consistency and rapid handling of inconsistency in documentation, and supporting and 
-facilitating projects. Specific metrics of quality, performance, and growth at The Institute scale may include:
-Number of participants and commits in open source projects
-Number of responses to our 
- and Internship forms
-Volunteer
-Number of 
- signups
-Newsletter
-Statistics on projects facilitated by The Institute (e.g., total completed, ongoing, and dissolved)
-Offered and completed Internships
-Frequency of discovery and resolution of inconsistencies in research, documentation, tools.
-Frequency of discovery and resolution of gaps in implementation (i.e., frequently questioned answers and frequently asked 
-questions)
-Number of facilitators, stewards, and volunteers and related turnover and activity
-Aggregation of individual feedback forms and surveys
-Ecosystem scale
-Evaluation at the level of the Ecosystem and community scale with consideration for impact and relationship management, and 
-a focus on impact. Objectives include minimizing turnover rate in educational courses, increasing the number of participants, 
-and maintaining and adding partnerships. Metrics of quality, performance, and growth at the community scale may include:
-Quality and quantity of 
-, connected with 
- or not. 
-Ecosystem Projects
-The Active Inference Institute
-Frequency and number of edits and engagements with Coda pages
-Number of participants in 
- General Channel
-Discord
-Number of participants contributing to facilitated projects
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
-
-![page39_img1.png](images/page39_img1.png)
+BOLTS of the CeSci to DeSci Integration
+The difficulties of successful implementation of novel systems, even where they are
+simple or viable to be implemented in parallel rather than as replacements to extant
+systems, lend themselves to underestimation. Successful, ubiquitous systems often feel
+obvious in terms of their value proposition and their reasons for adoption. For example, the
+product "bar code" would appear to be ubiquitous and obvious in terms of its benefits, but
+despite its conception in the mid-20th Century, by 2004 only around 80 to 90% of the
+United States’ top 500 companies had adopted them [125]. In terms of its roughly 50-year
+climb to this broad adoption, it took a quarter of a Century just to find adoption within a
+single market segment after a small collection of large institutions began courting potential
+standards [125,126]. The difficulties of implementation, adoption, and integration of novel
+systems relevant to our purposes can be summarized through a qualitative use of the
+Active Inference Conflict Model, which helps to frame conflict across business, operations,
+legal, technical, and social (BOLTS) surfaces, especially where it relates to information
+differentials [103]. Below, the bar code is used as an example that characterizes how the
+BOLTS surfaces below apply to complex patterns of adoption and operation:
+●
+Business. Integration with and replacement of extant receipt and payment
+systems, few of which would have been compatible with any bar code standard,
+represented a significant difficulty. Additionally there are the financial and
+non-financial costs of barcode adoption that an organization would have to
+consider.
+●
+Operations. Integration with and replacement of extant inventory systems, few of
+which would have been compatible with any bar code standard, represented a
+significant difficulty.
+●
+Legal. For some products, technical standards and instantiations of product IDs
+would have to map to regulatory compliance systems, contracts, and be available
+for use in advanced records systems.
+●
+Technical. While the idea of the bar code was conceived in the mid-20th Century, it
+took decades to confirm widely adopted standards. Adoption at any given point in
+the climb to broad adoption meant the risk of implementing a pattern that might
+become obsolete.
+●
+Social. People didn’t necessarily trust machines, and were concerned with the
+potential for pricing errors at the time-of-scan. Companies were also concerned with
+how bar-codes would affect the shelf-appeal and artistic design of products.
+This “bar code” example helps to illustrate how the implementation, adoption, and
+integration of new systems is roughly proportionate with the abstract and real integration
+conflicts with extant systems. While modern, shared technological infrastructure has
+39
 
 ## Page 40
 
-Turnover rate in engagement and participation (e.g., direct participant engagement with Institute releases and material, and 
-annual involvement in collaborative activities)
-Number of individuals enrolled in educational courses
-Turnover and completion rate in educational courses
-Turnover rate in partnerships (e.g., research and education partnership decisions to renew, maintain, or dissolve)
-Social media analytics (e.g., views, watch time, audience diversity)
- •
- •
- •
- •
- •
+allowed for more expedient implementation of new systems, conflicts across BOLTS
+surfaces still exist and may be greatly exacerbated when systems are intended to be used
+by institutions and organizations, which have their own formally-defined BOLTS protocols,
+in addition to individuals where BOLTS protocols are likely to be encoded in norms, habits,
+and narratives [103].
+While DeSci may be implemented in parallel to CeSci, the overwhelming majority of
+research funding is channeled through large organizations, foundations, and especially
+government agencies. Each of these and their respective channels are beholden to a
+complex, complicated, and interconnected web of BOLTS standards, norms, and controls,
+which are a struggle to navigate. While it is tempting to make do with what funds might be
+available, a bridge between CeSci and DeSci is not just about access to funds at scale but
+also about access to tangible resources, influence on institutional funding and agendas,
+and ease of collaboration within and among organizations and individuals. In addition,
+solving conflicts relevant to a DeSci-CeSci bridge may lead to greater accountability,
+reliability, and impact of DeSci information products, and therefore improve the ability for
+potential investors to trust in the new marketplace of ideas, in terms of epistemic
+commons. Areas of tension and interoperation between DeSci and CeSci are summarized
+through the lens of BOLTS surfaces below:
+Business
+While government research agencies and non-government research organizations
+are not operating under the return on investment model found in for-profit businesses, they
+still consider the dollar cost of impact, opportunity costs, and likelihood of impact.
+Agencies have to consider how to structure "portfolios" of funded projects and initiatives
+based on their current mission, the missions of their stakeholders, their sources of funding,
+and the track-records of the organizations and people they fund. In order to make DeSci
+compatible with or even superior to CeSci projects and organizations in this context, DeSci
+systems would have to enable a high level of situational awareness for funders in terms of
+both progress and potential for impact, while offering advantages in terms of cost and
+comparability. This may not be immediately achieved – like most new services and
+systems, DeSci may start off with inefficient processes, and will become cheaper and
+more efficient in producing informational products of higher quality over time.
+Operations
+Accountability and use of funds is taken very seriously in many of the CeSci funding
+channels, especially where funding flows through multiple hierarchies. Even where funding
+flows through less steps, such as in NGOs, demonstrating success in order to raise funds
+constitutes its own stream of work requiring a substantial allocation of attention and
+funding. Documentation and records management in operations serves to fulfill the
+40
 
 ## Page 41
 
-Information Management
-The Institute hosts and disseminates information using 
-, 
-, 
-, 
-, 
-  and other 
-platforms as needed. This stack of platforms streamlines specific levels of access to shared resources, and enhances overall 
-productivity within the organization. We aim to ensure that participants are aware of the platforms being used and understand 
-their purposes and functionalities. We regularly evaluate, communicate, and reinforce best practices for information storage, 
-access, and organization. We implement security measures, such as strong passwords, 2-factor authentication, and 
-appropriate access permission in order to protect sensitive information. We back up important data regularly to prevent loss 
-due to technical issues or accidental deletion. We conduct periodic reviews and audits of the information storage systems to 
-identify areas for improvement and optimization. The specific use of each platform is described below.
-Coda YouTube
-Discord Github
-Newsletter
- (Live Streaming and Video Hosting)
-YouTube
-YouTube is the primary platform for storing audiovisual content created for and by The Institute. Our designated YouTube 
-Channel holds distinct playlists for courses, live streams, symposia, and other content that we host. We share and embed links 
-within internal and external communication channels to provide easy access to relevant content. The content on YouTube is 
-also backed up in a personal cloud storage service as well as in offline hard drives.
-  (Forum and Instant Messaging)
-Discord
-Discord is our primary platform for engaging with the Active Inference Ecosystem and broader community. We use Discord for 
-real-time communication, informal discussions, and team collaboration. Dedicated channels are used within Discord to 
-categorize discussions based on topics or projects. Participants are encouraged to share relevant files, documents, or links 
-within Discord channels, fostering easy access to shared resources. We regularly monitor and moderate Discord channels to 
-maintain professionalism, and eagerly look to improve our protocols and guidelines here and elsewhere.
+"evidential function", pro forma evidence of action and use [127]. These records should be
+systematic and need to meet relevant standards for reliability, integrity, compliance, and
+comprehensiveness [128]. It is here that DeSci offers challenges and opportunities relative
+to traditional systems [20]. Where CeSci organizations rely heavily on manual processes
+in order to meet documentation requirements, DeSci is predisposed toward generating
+records by merit of reliance on formalized, computational protocols. However, these
+advantages will only be realized if there is a directed effort to ensure
+automatically-generated records are adapted to map to the myriad CeSci requirements.
+Legal
+Many of the business-, technical-, and operations-related documentation
+requirements extend to legal use. It is in this domain that records serve their "warranty
+function", clarifying intents, deliverables, requirements, and other agreements [127].
+Project documentation and both personal and organizational identity become key
+obstacles to DeSci's compatibility with CeSci, especially where teams are emergent or
+may change in structure over time. Extensive work is required in this domain in order to
+overcome legal compatibility challenges, given that no amount of advantages of efficiency,
+cost, quality, or impact can allow DeSci to circumvent problems related to CeSci funders
+being able to exercise their options related to legal recourse.
+Technical
+Technical aspects of CeSci funding blend with operations and legal aspects, as
+would be the case with most bureaucratic systems. The synthesis between these two
+sections (operations and legal) is where the potential bridge between DeSci and CeSci is
+currently most precarious, given that an inability to meet legal requirements will eliminate
+this bridge entirely. However, it is also where the bridge has the potential to outperform
+traditionally-funded organizations, as meeting operating and legal requirements
+computationally would, as previously suggested, offer a number of advantages.
+Social
+The proverbial "pipeline" of government and institutional funding to research and
+development can be monolithic, baroque, and at times quite obscure [129]. Those involved
+in the channeling of funds have standard operating procedures encoded both in terms of
+business, operations, legal, and technical surfaces, as well as in social norms and in
+narratives. The preference for DeSci to offer more accountability or other efficiencies for
+research is compatible with the preferences and requirements of those who currently
+occupy positions which channel funds in CeSci. Case studies, post-mortems, and high
+levels of visibility in both successes and failures, as well as test-runs in incubators or
+regulatory sandboxes, could assist in communicating the benefits of DeSci to potential
+stakeholders. Further, finding ways to allow DeSci systems to be flexible enough to map
+41
 
 ## Page 42
 
-Discord
-Join the 
-: 
-⁠
-Discord https://discord.activeinference.institute/
-The Active Inference Institute (AII) maintains a 
- server as its primary communication hub where all meetings, 
-discussions, and collaborative activities take place. This digital workspace serves as the central nexus for the institute's diverse 
-community of researchers, practitioners, and enthusiasts interested in active inference.
-Discord
-Server Structure
-Main Categories
-Research and education activities
-Project coordination
-Community discussions
-Voice chat rooms for meetings and livestreams
-Key Features
-The Discord server facilitates:
-Live voice meetings and discussions
-Project collaboration and coordination
-Access to educational resources
-Community engagement and networking
-Participation
-As with the Institute overall, the Discord server welcomes participants from:
-All backgrounds and experience levels
-Different time zones
-Various levels of familiarity with 
- 
-Active Inference
-The server can be accessed through the link 
- . It serves as the primary venue for all 
-institute meetings and collaborative activities, making it an essential platform for anyone interested in engaging with the Active 
-Inference community.
-https://discord.activeinference.institute/
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
+directly to CeSci standards for accountability could also facilitate DeSci integration. For
+example, even though DeSci allows for and can encourage purely horizontal teams, one
+can start with teams which can: assign a higher authority and offer them power of direct
+oversight, allow them to measure and assess compliance and performance, and be
+responsible for reporting and conveying that information to funders (even where this could
+be automated) [130] to help to introduce CeSci standards to DeSci without requiring
+excessive accommodation.
+BOLTS and Reliability for Science Systems
+It is important to provide reliability in all of these BOLTS dimensions, as new
+technologies and systems can easily fail if there are repeated bad experiences or
+unexpected incompatibilities. Even if the technical and legal aspects of DeSci funding
+out-perform CeSci funding, failure of DeSci to provide a smooth integration from the social
+and business perspectives could delay or prevent wide adoption. For example, traditional
+funding agencies often come in at middle-to-late stages of research projects, which is why
+so much preliminary work is required for a NSF/NIH grant. It is often said grants are not
+“for ideas”, but rather they are for seriously-developed avenues of specific tractable
+research. In DeSci, some more speculative vehicles might exist (e.g. a “Learner’s Fund”),
+but we cannot expect these new vehicles to back-propagate the risk-tolerance of DeSci
+into legally- and organizationally-bound CeSci funding agencies.
+A priority of both CeSci and DeSci is to ensure reliability of outcomes and high
+levels of accountability, in complex scientific commons. If a team has been funded,
+disintegration or failure to produce work doesn’t just mean a negative outcome for the
+team, it means a negative outcome for the funder, which has the potential for network
+impacts on trust within the entire market. This means that teams within the DeSci space
+would not only need to vastly outperform CeSci in terms of cost, time-to-impact, and
+efficiency, but would also need to effectively be perceived as high-reliability organizations
+in order for the market to survive. Given that DeSci teams are likely to be emergent, they
+may not be able to rely on intimate trust between one another, and instead will have to rely
+heavily on shared Ontology, Narrative, Formal documents, and Tools [23]. The team
+working environment should be designed to create the best possible conditions for the
+cognitive security of the individuals on teams, such that they stay on task, maintain
+consistency in terms of goals and intents, and understand their impact on the team and
+the future of the market as a whole. This type of system design also means high cognitive
+security on the part of the funder, which means high visibility and high quality narrative
+information management tools at their disposal [41], the ability to do retroactive analysis of
+track-records of individuals and collections of individuals, the ability to rapidly compare
+projects, and the ability to negotiate cost as a basis to reduce risk based on current
+42
 
 ## Page 43
 
-Coda
-Essentially all 
- use 
- system. 
-Institute Projects
-Coda as a document
-Clicking through links and documentation of 
- you will find many examples of links within and across 
-documents — this 
- was written collaboratively in Coda, 
-and then exported for snapshot (whereas in 2023 version 1 we used a Google Document linear manuscript co-editing style).
-Institute Projects
-Active Inference Institute & Active Inference Ecosystem (2024, v2)
-Coda is the primary platform for knowledge and project management at The Institute, Ecosystem, community, and individual 
-scale. It organizes all information and content related to each project (or sub-project). Coda is version-controlled and access-
-restricted, ensuring that all of our data is protected against accidental deletion and inappropriate user access. We use Coda for 
-storing and organizing important documents, such as policies, procedures, project plans, and meeting notes. 
-We follow best practices for Coda, including: (1) creating dedicated Coda “documents”, or work areas, for different departments 
-or projects to ensure easy access and organization of relevant information, (2) implementing a clear folder and file structure 
-within Coda to maintain document organization and version control, (3) archiving unnecessary and irrelevant pages, files, and 
-folders, and (4) granting appropriate access permissions to users, allowing them to view, edit, or comment on documents as 
-required. 
-With adequate future support, Coda will be upgraded to an Enterprise License and consultants will assist in development of 
-templates and low-code applications for streamlining support, records and knowledge management, and project management 
-functions. Further, an Enterprise License will allow for a variety of new mechanisms for user-access control and permissioning, 
-and for tracking of work activity and community engagement with hosted content.
+information. Additionally, transparency ensures that when things do go wrong, it reduces
+the negative sentiment of the funder on the network, and might be mitigated by insurance
+options (e.g. community stake in research) or in-house recourse options (e.g. sanctions
+and penalties on negligent and bad-faith actors)
+While we detailed the BOLTS conflicts related to funding processes as DeSci
+practices are integrated into existing CeSci practices, this framework can be applied to
+several other aspects of this integration such as the publication of knowledge artifacts,
+scientific review of knowledge artifacts, communicating research results at conferences,
+analyzing data, training and mentoring new researchers, and developing scientific
+software. CeSci and other fields already have successful aspects which should be
+preserved as DeSci is integrated, such as specific mentorship, individual, and peer
+development programs. As a framework that furthers the holistic design of
+transdisciplinary systems for science, we we suggest that Active Inference provides
+additional insights and directions related to DeSci, which have been outlined in the this
+work.
+43
 
 ## Page 44
 
-Newsletter
-Since the initial activities of the Institute (
-), we have written a monthly 
-. 
-History of The Institute
-Newsletter
-See the archives 
- 
-https://activeinferenceinstitute.substack.com/
-⁠
-https://newsletter.activeinference.institute/
+Discussion
+This paper evaluated the opportunity to implement decentralized science in Web3
+technologies from the perspective of Active Inference.
+We first highlighted the distinction between two approaches to scientific research,
+respectively Centralized Science (CeSci), where research is driven from the top-down
+perspective of centralizing institutions, and Decentralized Science (DeSci), where it is
+driven from the bottom up through situated sensemaking by communities of practices.
+Both approaches may work together, without either approach dominating the other. We
+argued that the DeSci stance can facilitate the governance of scientific knowledge
+(understood as an epistemic common good) by providing both the incentive and the
+opportunity to build a detailed understanding of various systems and problems in an
+integrated language.
+We consequently reviewed potential avenues to implement DeSci in the era of
+Web3. We underlied a major limitation to marketization and tokenization, one of the main
+mechanisms of Web3 technologies, namely that creating real world value for the token
+renders it vulnerable to speculative investment and hoarding (and other corruptive
+influence). We discussed the potential roles and benefits of modern affordances, including
+online teams, blockchain, tokenization, and smart contracts. Finally, we discussed several
+practical aspects of integrating DeSci concepts and practices into CeSci, such as
+business, operations, legal, technical, and social (BOLTS) aspects of this transition.
+Finally, we discussed the role of the Active Inference framework in describing
+scientific ecosystems. As a formalism relating the basic activity of dynamical systems to
+epistemic inference, we argued it is a natural fit to describe science as a socio-institutional
+system. We outlined an Active Entity Ontology for Science (AEOS), intended to define key
+Entity Classes, Entity Types, Areas of Concern, Roles, Affordances, and Action-Perception
+States involved in conducting scientific work, whether CeSci or DeSci, with examples
+illustrating particular embodiments of this ontology. We hope that further development of
+research within the scope of AEOS would yield fruitful progress in our ability to design and
+evaluate possible forms of scientific organization.
+Some specific next steps include:
+●
+In the open source Active Blockference package [131], we are developing Active
+Inference models that are implemented in the complex system modeling framework
+cadCAD [132], with a goal of enabling description, analysis, and simulations of
+complex cognitive ecosystems of “shared intelligence” [28].
+44
 
 ## Page 45
 
-Institute Projects
-⁠
-https://projects.activeinference.institute/
- are the primary means of official participation with 
-.
-Institute Projects
-The Active Inference Institute
-To date, The Institute has hosted or facilitated the development of hundreds of open-source licensed products which serve 
-various functions in the Ecosystem including Awareness, Education, Commons, Support, and Governance.
-
-EduActive
-4
-
-ReInference
-4
-Project Rhythm Through 
- and 
-⁠
-Prepare
-Measure
-The Institute implements a unique "Prepare and Measure" system that structures project work through alternating phases of 
-preparation and measurement. 
-To complete a 
-, participants propose a phase of activity — their “packed backpack” and intention for developing 
-artifacts, research, or create educational materials while receiving ongoing feedback. 
-preparation
-This is followed by making a 
-, where the participant documents their reports and reflections. Following the 
-measurement, next steps are explored. This rhythmic approach creates natural checkpoints for reflection while maintaining 
-measurement
-Active Inference Ontology
-
-Maintain, improve, elaborate, extend, translate, educate, 
-document, and apply the Active Inference Ontology as 
-core infrastructure for the Active Inference Institute & 
-Ecosystem. 
-Pu
-On
-Audio-Visual Production
-
-Produce accessible, rigorous, informative (epistemic 
-value) and useful (pragmatic value) audio-visual content, 
-for example through Livestreams, Podcasts, and other 
-formats.
-Ta
-an
-On
-Textbook Group (Parr, Pezzulo, 
-Friston 2022)
-
-Improve the accessibility, rigor, applicability, and impact 
-of the 
- by Parr, Pezzulo, and 
-Friston. 
-2022 Active textbook
-5.
-sin
-Active Inference Journal
-
-To develop evolving hybrid (AI+people) project 
-architecture and enabling volunteers team
-Se
-RxInfer.jl learning and 
-development group
-
-Learn and apply RxInfer.jl in 2024 — building out 
-multiscale selves and capacities for generative modeling. 
-Se
-Knowledge Engineering
-
-This project seeks to alleviate the information burden in 
-the Active Inference Institute & Ecosystem through 
-information curation, organization, and condensation- i.e. 
-providing summaries of institute productions (courses, 
-livestreams, etc), enhancing the CRM, etc
-fro
-Pu
-Lit
-Active Blockference
-
-We are applying Active Inference by building capacities & 
-creating examples of generative models. 
-Gi
-ov
-Active InferAnts
-
-Develop integrative and applicable methods for Ants and 
-Beyond. 
-de
-m
-Gi
-Ac
-Project
-Documentation
-Mission & Objectives
-Ex
-Organizational Unit
-Institute projects ~ 2024
-
-![page45_img1.png](images/page45_img1.png)
+●
+Exploration of Active Inference ontologies and relationships with category theory
+[116] and other formalisms.
+●
+Creation of Graphical User Interface for DeSci (DeSciCAD), to enable the real-time
+use of AEOS in science ecosystem design and operation. For example, a user
+could select entity types, assign them roles, connect the entities with
+affordance-based edges, and engage in simulation and parameter optimization. The
+front end of such a design interface would ideally be accessible (via visual, textual
+and other modalities) and enable productive creation of composable Active
+Inference simulations.
+●
+Exploring system designs in AEOS that scaffold and incentivize different kinds of
+research such as basic/theoretical, translational/applied, and quantitative/qualitative
+work. One specific application would be to use AEOS in behavioral modeling of
+incentive gaps, such as getting people to publish data even if they don't publish the
+paper, or finding ways to accept modular contributions, so that in the case of
+retraction or deciding not to publish, pieces can still be made available and citable.
+We hope that this work has provided a useful understanding of DeSci with respect
+to the current CeSci system in terms of what is possible now and in the future, and an
+interactive modeling framework in AEOS which we will continue to develop and apply.
+45
 
 ## Page 46
 
-momentum
-Benefits and Implementation
-The prepare-measure cycle embodies active inference principles by balancing exploration with evaluation. Rather than 
-following rigid schedules or purely passive learning, participants actively sample their environment through concrete project 
-work, while regular measurements provide the feedback needed for learning and course correction. This system helps cultivate 
-a culture of active sensemaking, where putting work out for feedback is encouraged over passive consumption. The flexibility 
-of this approach allows it to scale from individual contributors to large collaborative projects, while maintaining rigor through 
-consistent documentation and assessment.
-Towards a 
- Project Framework
-Systems Approach
-In the final months of 2024, we will look to review the 
- Prepare/Measure results of 2024, and think about 
-how we will update the project approach in 2024. Current thinking on this is considering updates in the area of:
-Institute Projects
-Project Structure
-Stronger connection with 
- or 
- 
-.
-EduActive (Education)
-ReInference (Research)
-Organizational Units
-Each project will have a clearer standardized public profile featuring:
-Clear mission statement and objectives
-Timeline with key milestones and deadlines
-Contribution pathways and skill requirements
-Active measurement cycles and preparation phases
-Project Management Approach
-Time Management
-Dedicated work blocks outside of meetings
-Regular preparation and measurement cycles
-Minimal reliance on email/Discord for core work
-Task Organization
-Public task tracker with clear ownership
-Regular progress updates and milestone reviews
-Documentation of both successes and learning opportunities
-Integration with prepare/measure cycles
-The Institute aims to implement these projects using active inference principles, ensuring each initiative contributes to our 
-mission of making active inference more accessible, rigorous, and applicable while serving our growing global community.
- •
- •
- ◦
- ◦
- ◦
- ◦
- •
- •
- •
- •
- •
- •
- •
+Author contributions using CRediT – Contributor Roles Taxonomy [133]:
+●
+Conceptualization (AGC, JAB, AKS, SED, VBK, AC, DAF)
+●
+Funding acquisition – No funding was acquired specifically for this project.
+●
+Investigation (AGC, JS, SED, DAF)
+●
+Project administration (DAF)
+●
+Visualization (VBK, DAF)
+●
+Writing – original draft (AGC, AKS, AC JS, SS, SED, VBK, RJC)
+●
+Writing – review & editing (DAF, SAS, RJC, AC, SED, AGC, VBK, IM, SS, AKS, JS
+CT, ASV)
+Works cited
+1.
+Weaver W. Science and complexity. Am Sci. 1948;36: 536–544. Available:
+https://www.ncbi.nlm.nih.gov/pubmed/18882675
+2.
+Gershenson C. The Implications of Interactions for Science and Philosophy. arXiv [nlin.AO]. 2013. pp.
+781–790. doi:10.1007/s10699-012-9305-8
+3.
+Wright C, Bechtel W. - Mechanisms and psychological explanation. In: Thagard P, editor. Philosophy of
+Psychology and Cognitive Science. Amsterdam: North-Holland; 2007. pp. 31–79.
+doi:10.1016/B978-044451540-7/50019-0
+4.
+Chan ME, Arvey RD. Meta-Analysis and the Development of Knowledge. Perspect Psychol Sci.
+2012;7: 79–92. doi:10.1177/1745691611429355
+5.
+Lawrence MG, Williams S, Nanz P, Renn O. Characteristics, potentials, and challenges of
+transdisciplinary research. One Earth. 2022;5: 44–61. doi:10.1016/j.oneear.2021.12.010
+6.
+Head ML, Holman L, Lanfear R, Kahn AT, Jennions MD. The extent and consequences of p-hacking in
+science. PLoS Biol. 2015;13: e1002106. doi:10.1371/journal.pbio.1002106
+7.
+Rivera H. Fake Peer Review and Inappropriate Authorship Are Real Evils. J Korean Med Sci. 2019;34:
+e6. doi:10.3346/jkms.2019.34.e6
+8.
+Scott JC. The Trouble with the View from Above. 2010 [cited 30 Jan 2022]. Available:
+https://www.cato-unbound.org/2010/09/08/james-c-scott/trouble-view-above/
+9.
+Fanelli D. “Positive” results increase down the Hierarchy of the Sciences. PLoS One. 2010;5: e10068.
+doi:10.1371/journal.pone.0010068
+10.
+Vazire S. Implications of the Credibility Revolution for Productivity, Creativity, and Progress. Perspect
+Psychol Sci. 2018;13: 411–417. doi:10.1177/1745691617751884
+11.
+Munafò MR, Nosek BA, Bishop DVM, Button KS, Chambers CD, Percie du Sert N, et al. A manifesto
+for reproducible science. Nature Human Behaviour. 2017;1: 1–9. doi:10.1038/s41562-016-0021
+12.
+Reproducibility and reliability of biomedical research. [cited 26 Feb 2022]. Available:
+https://acmedsci.ac.uk/policy/policy-projects/reproducibility-and-reliability-of-biomedical-research
+13.
+Hills TT. The Dark Side of Information Proliferation. Perspect Psychol Sci. 2018; 1745691618803647.
+46
 
 ## Page 47
 
-Active Inference Journal
-The 
- is an 
- project launched in 2021 to create a comprehensive, accessible 
-repository of Active Inference knowledge through automated transcription and processing of educational content. The project 
-combines sophisticated language processing pipelines, collaborative editing workflows, and decentralized storage solutions to 
-transform video lectures, discussions, and presentations into richly indexed, searchable, and citable content.
-Active Inference Journal
-Open Source
-The Journal serves as a crucial bridge between traditional academic publishing and emerging Decentralized Science (
-) 
-approaches, enabling broad participation in Active Inference scholarship through several key innovations: automated speech-
-to-text transcription reducing manual effort, standardized editorial practices for community contribution, version control 
-through GitHub, and integration with knowledge engineering projects. This infrastructure allows researchers, practitioners, and 
-learners worldwide to not only access but actively contribute to the development and documentation of Active Inference 
-theory and applications through open-source collaboration, while maintaining academic rigor through systematic processing 
-pipelines and metadata management.
-DeSci
-Core 
- Journal Repositories
-Open Source
-ActiveInferenceJournal: Main content repository containing transcripts, translations, and published materials: 
-⁠
-https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal
-Journal-Utilities: Technical infrastructure for automated processing, including speech-to-text, translation, and knowledge 
-extraction tools
-⁠
-https://github.com/ActiveInferenceInstitute/Journal-Utilities
- •
- •
+doi:10.1177/1745691618803647
+14.
+Barker Bausell R. The Problem with Science: The Reproducibility Crisis and What to do About It.
+Oxford University Press; 2021. Available:
+https://play.google.com/store/books/details?id=oHEWEAAAQBAJ
+15.
+Bar-Yam Y. Multiscale variety in complex systems. Complexity. 2004;9: 37–45. doi:10.1002/cplx.20014
+16.
+Bruni LE, Giorgi F. Towards a heterarchical approach to biology and cognition. Prog Biophys Mol Biol.
+2015;119: 481–492. doi:10.1016/j.pbiomolbio.2015.07.005
+17.
+Feinerman O, Korman A. Individual versus collective cognition in social insects. J Exp Biol. 2017;220:
+73–82. doi:10.1242/jeb.143891
+18.
+Rossi F, Bandyopadhyay S, Wolf M, Pavone M. Review of Multi-Agent Algorithms for Collective
+Behavior: a Structural Taxonomy. IFAC-PapersOnLine. 2018;51: 112–117.
+doi:10.1016/j.ifacol.2018.07.097
+19.
+Mohanty D. Ethereum Architecture. In: Mohanty D, editor. Ethereum for Architects and Developers:
+With Case Studies and Code Samples in Solidity. Berkeley, CA: Apress; 2018. pp. 37–54.
+doi:10.1007/978-1-4842-4075-5_2
+20.
+Nabben K. Decentralised Autonomous Organisations (DAOs) as Data Trusts: A General-purpose Data
+Governance Framework for Decentralised Data Ownership, Storage, and Utilisation. 2021.
+doi:10.2139/ssrn.4009205
+21.
+Schneider N, De Filippi P, Frey S, Tan JZ, Zhang AX. Modular Politics: Toward a Governance Layer for
+Online Communities. Proc ACM Hum-Comput Interact. 2021;5: 1–26. doi:10.1145/3449090
+22.
+Gencer AE, Basu S, Eyal I, van Renesse R, Sirer EG. Decentralization in Bitcoin and Ethereum
+Networks. arXiv [cs.CR]. 2018. Available: http://arxiv.org/abs/1801.03998
+23.
+Vyatkin A, Metelkin I, Mikhailova A, Cordes RJ, Friedman DA. Active Inference & Behavior Engineering
+for Teams. 2020. doi:10.5281/zenodo.4021163
+24.
+Fields C, Levin M. How Do Living Systems Create Meaning? Philosophies. 2020;5: 36.
+doi:10.3390/philosophies5040036
+25.
+Veissière SPL, Constant A, Ramstead MJD, Friston KJ, Kirmayer LJ. Thinking through other minds: A
+variational approach to cognition and culture. Behav Brain Sci. 2019;43: 1–97.
+doi:10.1017/S0140525X19001213
+26.
+Albarracin M, Demekas D, Ramstead MJD, Heins C. Epistemic Communities under Active Inference.
+Entropy . 2022;24. doi:10.3390/e24040476
+27.
+Kiefer AB. Psychophysical identity and free energy. J R Soc Interface. 2020;17: 20200370.
+doi:10.1098/rsif.2020.0370
+28.
+Friston KJ, Ramstead MJD, Kiefer AB, Tschantz A, Buckley CL, Albarracin M, et al. Designing
+Ecosystems of Intelligence from First Principles. arXiv [cs.AI]. 2022. Available:
+http://arxiv.org/abs/2212.01354
+29.
+Bruineberg J, Kiverstein J, Rietveld E. The anticipating brain is not a scientist: the free-energy principle
+from an ecological-enactive perspective. Synthese. 2018;195: 2417–2444.
+doi:10.1007/s11229-016-1239-1
+47
 
 ## Page 48
 
-Active Inference Ontology
-The 
- has been a core Institute project since 2021. 
-Active Inference Ontology
-⁠
-Home page of the Ontology documentation
- of Ontology snapshots
-Github repository
-The 
- with current version of ontology, here groups into the list of 65 Core terms (central 
-terms for learning and applying 
-), 301 Supplemental terms (possibly useful terms to know for some 
-situations or models), and 74 entailed terms (common words that may have specific relevance for the topics discussed in other 
-terms lists). 
-screenshot below represents the table
-Active Inference
-During 2024 we have continued to have 
-, add examples/counterexamples, add connections, add 
-, and more
-amazing discussions
-translations
-The Active Inference Ontology project is a core initiative of the Active Inference Institute that aims to develop and maintain a 
-structured framework for understanding key concepts, terminology, and relationships within Active Inference theory. Started in 
-2021, this open-source ontology serves multiple purposes - from supporting education and research to enabling computational 
-applications and cross-domain translation of Active Inference concepts.
-The ontology is publicly hosted and continuously updated through a living document system (
-, 
-) with stable 
-versions released periodically. It contains curated definitions, examples, translations across languages, and steps towards 
-formal logical relationships among terms.
-public Coda Github
-Core Functions
- •
- •
-
-![page48_img1.png](images/page48_img1.png)
+30.
+Constant A, Clark A, Friston KJ. Representation Wars: Enacting an Armistice Through Active Inference.
+Front Psychol. 2020;11: 598733. doi:10.3389/fpsyg.2020.598733
+31.
+Hipólito I. Cognition Without Neural Representation: Dynamics of a Complex System. Front Psychol.
+2021;12: 643276. doi:10.3389/fpsyg.2021.643276
+32.
+Guénin--Carlut A. Thinking like a State - Embodied intelligence in the deep history of our collective
+minds. 2021 [cited 25 Jan 2022]. doi:10.31219/osf.io/dxnzt
+33.
+Buterin V. The meaning of decentralization. Medium com. 2017;6.
+34.
+Nabben K. Is a DAO a Panopticon? Algorithmic Governance as Creating and Mitigating Vulnerabilities
+in “Decentralised Autonomous Organisations.” 2021. doi:10.2139/ssrn.3907693
+35.
+Kiayias A, Lazos P. SoK: Blockchain Governance. arXiv [cs.CR]. 2022. Available:
+http://arxiv.org/abs/2201.07188
+36.
+Graber J. Web3 is Self-Certifying. In: Medium [Internet]. 23 Dec 2021 [cited 26 Feb 2022]. Available:
+https://jaygraber.medium.com/web3-is-self-certifying-9dad77fd8d81
+37.
+Benet J. IPFS - Content Addressed, Versioned, P2P File System. arXiv [cs.NI]. 2014. Available:
+http://arxiv.org/abs/1407.3561
+38.
+IPFS powers the distributed web. [cited 15 Feb 2022]. Available: https://ipfs.io/
+39.
+Tenorio-Fornés Á, Tirador EP, Sánchez-Ruiz AA, Hassan S. Decentralizing science: Towards an
+interoperable open peer review ecosystem using blockchain. Inf Process Manag. 2021;58: 102724.
+doi:10.1016/j.ipm.2021.102724
+40.
+Hamburg S. A Guide to DeSci, the Latest Web3 Movement. In: Future [Internet]. 9 Feb 2022 [cited 25
+Feb 2022]. Available: https://future.a16z.com/what-is-decentralized-science-aka-desci/
+41.
+Cordes RJ, Applegate-Swanson S, Friedman DA, Knight VB, Mikhailova A. Narrative Information
+Management. Zenodo. COGSEC; 2021. doi:10.5281/zenodo.5573287
+42.
+Szablowski D. “Legal enclosure” and resource extraction: Territorial transformation through the
+enclosure of local and indigenous law. The Extractive Industries and Society. 2019;6: 722–732.
+doi:10.1016/j.exis.2018.12.005
+43.
+From Theory to Practice. The MIT Press; 2007. Available: http://www.jstor.org/stable/j.ctt5hhdf6
+44.
+Wilson DS, Ostrom E, Cox ME. Generalizing the core design principles for the efficacy of groups. J
+Econ Behav Organ. 2013;90: S21–S32. doi:10.1016/j.jebo.2012.12.010
+45.
+Paul W.B. Atkins, David Sloan Wilson, Steven C. Hayes. Prosocial. 2019. Available:
+https://www.newharbinger.com/9781684030248/prosocial/
+46.
+Wilson DS, Philip MM, MacDonald IF, Atkins PWB, Kniffin KM. Core design principles for nurturing
+organization-level selection. Sci Rep. 2020;10: 13989. doi:10.1038/s41598-020-70632-8
+47.
+Beck J. What is Web3? Here Are Some Ways To Explain It To A Friend. In: ConsenSys [Internet]. 12
+Jan 2022 [cited 22 Feb 2022]. Available:
+https://consensys.net/blog/blockchain-explained/what-is-web3-here-are-some-ways-to-explain-it-to-a-fri
+end/
+48
 
 ## Page 49
 
-Reduces uncertainty around fundamental Active Inference concepts and terminology
-Facilitates coherent, rigorous, inclusive research and applications across domains
-Enables effective onboarding of new learners
-Supports automated inference and computation
-Provides translation capabilities across languages and fields
-Development Areas
-The project focuses on several key development tracks:
-Definition refinement and example curation
-Applied usage in building 
- for Active Inference 
-computational generative models
-Multi-language translations
-Formal logical expressions (
- and other systems)
-SUMO
-Literature analysis and knowledge engineering
-Application testing across different use cases
-Contribution Methods
-The ontology welcomes contributions through multiple pathways:
-Adding/reviewing definitions and examples
-Contributing translations
-Developing formal logical expressions
-Testing applications in research and education
-Participating in discussion and refinement
-Rather than being a static reference, the Active Inference Ontology functions as a living knowledge system that evolves with 
-the field while maintaining rigor and accessibility. It serves as both a practical tool for working with Active Inference concepts 
-and a scaffold for developing deeper understanding across the Active Inference ecosystem.
-The project exemplifies Active Inference principles in its own design - it actively reduces uncertainty about core concepts while 
-enabling generative exploration and application across domains. This makes it a crucial resource for researchers, educators, 
-practitioners and learners engaging with Active Inference theory and applications.
-The 
- describes some of the work we have done across a continuum of levels/types of formalization. As with all 
-products, this is a work in progress where 
- contributions will be welcome. 
-below image
-Open Source
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
+48.
+Edelman G. The Father of Web3 Wants You to Trust Less. Wired. 29 Nov 2021. Available:
+https://www.wired.com/story/web3-gavin-wood-interview/. Accessed 26 Feb 2022.
+49.
+ĐApps: What Web 3.0 Looks Like. [cited 22 Feb 2022]. Available:
+https://gavwood.com/dappsweb3.html
+50.
+Kim HM, Laskowski M, Nan N. A First Step in the Co-Evolution of Blockchain and Ontologies: Towards
+Engineering an Ontology of Governance at the Blockchain Protocol Level. arXiv [cs.CY]. 2018.
+Available: http://arxiv.org/abs/1801.02027
+51.
+Graeber D. Debt : The First 5000 Years. In: Melville House Books [Internet]. 2011 [cited 18 Feb 2022].
+Available: https://www.mhpbooks.com/books/debt/
+52.
+clepp. Molecule’s biopharma IP-NFTs — A technical description. In: Molecule Blog [Internet]. 6 Aug
+2021 [cited 15 Feb 2022]. Available:
+https://medium.com/molecule-blog/molecules-biopharma-ipnfts-a-technical-description-4dcfc6bf77f8
+53.
+Bartoletti M, Pompianu L. An empirical analysis of smart contracts: platforms, applications, and design
+patterns. arXiv [cs.CR]. 2017. Available: http://arxiv.org/abs/1703.06322
+54.
+Khan SN, Loukil F, Ghedira-Guegan C, Benkhelifa E, Bani-Hani A. Blockchain smart contracts:
+Applications, challenges, and future trends. Peer Peer Netw Appl. 2021; 1–25.
+doi:10.1007/s12083-021-01127-0
+55.
+Shorish J, Stephenson M, Zargham M. A Practical Theory Of Fungibility. WU Vienna University of
+Economics and Business; 2021 May. Report No.: 8137. Available:
+https://ideas.repec.org/p/wiw/wus051/8137.html
+56.
+Nandwani A, Gupta M, Thakur N. Proof-of-Participation: Implementation of Proof-of-Stake Through
+Proof-of-Work. International Conference on Innovative Computing and Communications. Springer
+Singapore; 2019. pp. 17–24. doi:10.1007/978-981-13-2324-9_3
+57.
+poapxyz. POAP. [cited 1 Mar 2022]. Available: https://www.poap.xyz/
+58.
+Peters G, Panayi E, Chapelle A. Trends in Cryptocurrencies and Blockchain Technologies: A Monetary
+Theory and Regulation Perspective. 2015. Available: https://papers.ssrn.com/abstract=3084011
+59.
+Carson KA. Exodus. 2021. Available:
+https://theanarchistlibrary.org/library/kevin-a-carson-exodus?v=1624008858
+60.
+Duniter. In: Duniter [Internet]. [cited 1 Mar 2022]. Available: https://duniter.org/
+61.
+McConaghy T. Towards a Practice of Token Engineering. In: Ocean Protocol [Internet]. 1 Mar 2018
+[cited 19 Jan 2022]. Available:
+https://blog.oceanprotocol.com/towards-a-practice-of-token-engineering-b02feeeff7ca
+62.
+Analysis D. Table of contents. Int J Radiat Oncol Biol Phys. 2003;57: 1519–1532.
+doi:10.1016/j.ijrobp.2003.10.003
+63.
+Tools for the Web3 Data Economy. In: Ocean Protocol [Internet]. [cited 22 Jan 2022]. Available:
+https://oceanprotocol.com/
+64.
+Williams S, Berman L, Raybould I, Uemlianin I. Arweave: A protocol for economically sustainable
+information permanence. [cited 15 Feb 2022]. Available: https://www.arweave.org/yellow-paper.pdf
+49
 
 ## Page 50
 
-*[Page 50 appears to be blank or image-only]*
-
-![page50_img1.png](images/page50_img1.png)
+65.
+Smart contract research forum. In: Smart Contract Research Forum [Internet]. [cited 15 Feb 2022].
+Available: https://www.smartcontractresearch.org/
+66.
+DeSci Foundation. Why we need to fundamentally rethink scientific publishing. In: Medium [Internet]. 1
+Dec 2021 [cited 15 Feb 2022]. Available:
+https://desci.medium.com/why-we-need-to-fundamentally-rethink-scientific-publishing-43f2ae39af76
+67.
+Trovò B, Massari N. Ants-Review: A Privacy-Oriented Protocol for Incentivized Open Peer Reviews on
+Ethereum. Euro-Par 2020: Parallel Processing Workshops. Springer International Publishing; 2021. pp.
+18–29. doi:10.1007/978-3-030-71593-9_2
+68.
+Avital M. Peer Review: Toward a Blockchain-enabled Market-based Ecosystem. Communications of the
+Association for Information Systems. 2018;42: 28. doi:10.17705/1CAIS.04228
+69.
+van Rossum J. The blockchain and its potential for science and academic publishing. Inf Serv Use.
+2018;38: 95–98. doi:10.3233/isu-180003
+70.
+The ResearchCoin Whitepaper. In: ResearchHub [Internet]. [cited 15 Feb 2022]. Available:
+https://www.researchhub.com/paper/819400/the-researchcoin-whitepaper
+71.
+Tenorio-Fornés A, Jacynycz V, Llop-Vila D, Sánchez-Ruiz A, Hassan S. Towards a Decentralized
+Process for Scientific Publication and Peer Review using Blockchain and IPFS. 2019.
+doi:10.24251/HICSS.2019.560
+72.
+Jan Z, Third A, Ibanez L-D, Bachler M, Simperl E, Domingue J. ScienceMiles: Digital Currency for
+Researchers. Companion Proceedings of the The Web Conference 2018. Republic and Canton of
+Geneva, CHE: International World Wide Web Conferences Steering Committee; 2018. pp. 1183–1186.
+doi:10.1145/3184558.3191556
+73.
+Ethereum. Ethereum Whitepaper. In: ethereum.org [Internet]. [cited 14 Feb 2022]. Available:
+https://ethereum.org/en/whitepaper/
+74.
+Explanation of DAICOs. In: Ethereum Research [Internet]. 6 Jan 2018 [cited 30 Jan 2022]. Available:
+https://ethresear.ch/t/explanation-of-daicos/465
+75.
+Tamari R, Friedman D, Fischer W, Hebert L, Shahaf D. From Users to (Sense)Makers: On the Pivotal
+Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking. Proceedings of the 33rd
+ACM Conference on Hypertext and Social Media. New York, NY, USA: Association for Computing
+Machinery; 2022. pp. 236–239. doi:10.1145/3511095.3536361
+76.
+Science Fund. [cited 28 Feb 2022]. Available: https://www.sciencefund.io/
+77.
+El Damaty S. Rich in Data, Poor in Wisdom: Science Needs a Decentralized Data Commons. In: OpSci
+[Internet]. 4 Dec 2021 [cited 27 Feb 2022]. Available:
+https://pulse.opsci.io/rich-in-data-poor-in-wisdom-science-needs-a-decentralized-data-commons-98c7ff
+db56a1
+78.
+Ocean Protocol Foundation with BigchainDB GmbH. Ocean Protocol: Tools for the Web Data Economy.
+Available: https://oceanprotocol.com/tech-whitepaper.pdf
+79.
+Datum. Datum-WhitePaper.pdf. Available: https://datum.org/assets/Datum-WhitePaper.pdf
+80.
+Dataspace. datapace_whitepaper.pdf. Available: https://www.datapace.io/datapace_whitepaper.pdf
+81.
+The Problem of Data: Data Management and Curation Practices Among University Researchers. In:
+50
 
 ## Page 51
 
-Active Entity Ontology for Science (AEOS)
- represents a key framework developed by a 2022 
-, created to 
-bridge centralized and decentralized approaches to scientific organization. 
-Active Entity Ontology for Science (AEOS)
-Institute Projects
-The work was published as “An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the 
-Epistemic Commons” (
-), and is also available on 
- and in an 
-. 
-link
-Github
-interactive Coda format
-Here are the key aspects of AEOS: 
-Core Components
-Framework Structure
-Uses Active Inference principles to model different forms of scientific activity as a collective cognitive process occurring in 
-a niche. 
-Provides a composable and versionable system for modeling various scientific systems
-Integrates BOLTS perspective (Business, Operations, Legal, Technical, Social) for comprehensive analysis
-Key Functions
-Maps relationships between different scientific entities and processes using Active Inference entity partitioning
-Enables modeling of both traditional institutional science (CeSci) and decentralized science (DeSci) approaches
-Facilitates bottom-up sensemaking while maintaining systematic organization
-Implementation Goals
-Scientific Organization
-Supports emergence of epistemic communities through organic collaboration
-Enables transparent resource allocation and knowledge sharing
-Provides tools and analytic methods for decentralized scientific governance
-Practical Applications
- •
- •
- •
- •
- •
- •
- •
- •
- •
-
-![page51_img1.png](images/page51_img1.png)
+CLIR [Internet]. 13 Dec 2016 [cited 18 Feb 2022]. Available:
+https://www.clir.org/pubs/reports/pub154/problem-of-data/
+82.
+Gorgolewski KJ, Auer T, Calhoun VD, Craddock RC, Das S, Duff EP, et al. The brain imaging data
+structure, a format for organizing and describing outputs of neuroimaging experiments. Sci Data.
+2016;3: 160044. doi:10.1038/sdata.2016.44
+83.
+Gregory K, Groth P, Scharnhorst A, Wyatt S. Lost or found? Discovering data needed for research.
+Harvard Data Science Review. 2020. doi:10.1162/99608f92.e38165eb
+84.
+Kitano H. Nobel Turing Challenge: creating the engine for scientific discovery. NPJ Syst Biol Appl.
+2021;7: 29. doi:10.1038/s41540-021-00189-3
+85.
+The Turing AI scientist grand challenge. In: The Alan Turing Institute [Internet]. [cited 16 Feb 2022].
+Available: https://www.turing.ac.uk/research/research-projects/turing-ai-scientist-grand-challenge
+86.
+SEBoK. [cited 24 Jan 2022]. Available:
+https://sebokwiki.org/wiki/Guide_to_the_Systems_Engineering_Body_of_Knowledge_(SEBoK)
+87.
+ISO/IEC/IEEE 15288:2015. In: ISO [Internet]. 2020 [cited 23 Feb 2022]. Available:
+https://www.iso.org/standard/63711.html
+88.
+Essence 1.2 - SEMAT. [cited 23 Feb 2022]. Available: http://semat.org/essence-1.2
+89.
+Tumiel J. Spinning up in active inference and the free energy principle. In: jared tumiel [Internet]. 14 Oct
+2020 [cited 21 Jan 2022]. Available: https://jaredtumiel.github.io/blog/2020/10/14/spinning-up-in-ai.html
+90.
+Friston K, Heins C, Ueltzhöffer K, Da Costa L, Parr T. Stochastic Chaos and Markov Blankets. Entropy.
+2021;23. doi:10.3390/e23091220
+91.
+Parr T, Pezzulo G, Friston KJ. Active Inference: The Free Energy Principle in Mind, Brain, and
+Behavior. MIT Press; 2022. Available:
+https://scholar.google.ca/scholar?cluster=1067966391259043561&hl=en&as_sdt=0,5&sciodt=0,5
+92.
+Sims M. How to count biological minds: symbiosis, the free energy principle, and reciprocal multiscale
+integration. Synthese. 2020. doi:10.1007/s11229-020-02876-w
+93.
+Ramstead MJD, Kirchhoff MD, Constant A, Friston KJ. Multiscale integration: beyond internalism and
+externalism. Synthese. 2021;198: 41–70. doi:10.1007/s11229-019-02115-x
+94.
+Friston K. A free energy principle for a particular physics. arXiv [q-bio.NC]. 2019. Available:
+http://arxiv.org/abs/1906.10184
+95.
+Kuchling F, Friston K, Georgiev G, Levin M. Morphogenesis as Bayesian inference: A variational
+approach to pattern formation and control in complex biological systems. Phys Life Rev. 2019.
+doi:10.1016/j.plrev.2019.06.001
+96.
+Fields C, Levin M. Scale-Free Biology: Integrating Evolutionary and Developmental Thinking.
+Bioessays. 2020;42: e1900228. doi:10.1002/bies.201900228
+97.
+Friston K. Active inference and agency. Cognitive neuroscience. 2014. pp. 119–121.
+doi:10.1080/17588928.2014.905517
+98.
+Pezzulo G, Rigoli F, Friston K. Active Inference, homeostatic regulation and adaptive behavioural
+control. Prog Neurobiol. 2015;134: 17–35. doi:10.1016/j.pneurobio.2015.09.001
+51
 
 ## Page 52
 
-Guides development of tools for scientific collaboration, Web3 or otherwise. 
-Helps structure new kinds of organizations for research purposes
-Supports integration of blockchain and other technologies into scientific workflows
-The AEOS serves as a bridge or blanket between: 
-In theory and in terms of generalities: 
-⁠
-Active Inference Ontology
-In practice: Existing and emerging decentralized approaches, providing a structured way to understand and implement new 
-forms of scientific organization while maintaining rigor and effectiveness in 
- and traditional scientific settings.
-DeSci
- •
- •
- •
- •
- •
+99.
+Hipólito I, Baltieri M, Friston K, Ramstead MJD. Embodied skillful performance: where the action is.
+Synthese. 2021;199: 4457–4481. doi:10.1007/s11229-020-02986-5
+100. Marković D, Goschke T, Kiebel SJ. Meta-control of the exploration-exploitation dilemma emerges from
+probabilistic inference over a hierarchy of time scales. Cogn Affect Behav Neurosci. 2021;21: 509–533.
+doi:10.3758/s13415-020-00837-x
+101. Da Costa L, Parr T, Sajid N, Veselic S, Neacsu V, Friston K. Active inference on discrete state-spaces:
+A synthesis. J Math Psychol. 2020;99: 102447. doi:10.1016/j.jmp.2020.102447
+102. Vasil J, Badcock PB, Constant A, Friston K, Ramstead MJD. A World Unto Itself: Human
+Communication as Active Inference. Front Psychol. 2020;11: 417. doi:10.3389/fpsyg.2020.00417
+103. David S, Cordes RJ, Friedman DA. Active Inference in Modeling Conflict. 2021.
+doi:10.5281/zenodo.5759807
+104. Schoeller F, Miller M, Salomon R, Friston K. Trust as Extended Control: Active Inference and User
+Feedback During Human-Robot Collaboration. ArXiv. 2021 [cited 21 Sep 2021]. Available:
+https://www.semanticscholar.org/paper/7c39921b6050d7be82e18df2a31973f2c3f864ea
+105. Heyes C. Précis of Cognitive Gadgets: The Cultural Evolution of Thinking. Behav Brain Sci. 2019;42.
+doi:10.1017/S0140525X18002145
+106. Muthukrishna M, Doebeli M, Chudek M, Henrich J. The Cultural Brain Hypothesis: How culture drives
+brain expansion, sociality, and life history. PLoS Comput Biol. 2018;14: e1006504.
+doi:10.1371/journal.pcbi.1006504
+107. Graeber D, Wengrow D. The dawn of everything -A new history of humanity. 2021 [cited 25 Feb 2022].
+Available: https://uujec.org/Portals/0/The%20Dawn%20of%20Everything.pdf
+108. Doyle MJ, Marsh L. Stigmergy 3.0: From ants to economies. Cogn Syst Res. 2013;21: 1–6.
+doi:10.1016/j.cogsys.2012.06.001
+109. Correia L, Sebastião AM, Santana P. On the role of stigmergy in cognition. Progress in Artificial
+Intelligence. 2017;6: 79–86. doi:10.1007/s13748-016-0107-z
+110. Ramstead MJD, Constant A, Badcock PB, Friston KJ. Variational ecology and the physics of sentient
+systems. Phys Life Rev. 2019. doi:10.1016/j.plrev.2018.12.002
+111. Constant A, Ramstead MJD, Veissière SPL, Campbell JO, Friston KJ. A variational approach to niche
+construction. J R Soc Interface. 2018;15: 20170685. doi:10.1098/rsif.2017.0685
+112. Friedman D, Tschantz A, Ramstead MJD, Friston K, Constant A. Active inferants: The basis for an
+active inference framework for ant colony behavior. Front Behav Neurosci. 2021;15: 126.
+doi:10.3389/fnbeh.2021.647732
+113. Guénin--Carlut A. Cognitive agency in sociocultural evolution. 2022. doi:10.31219/osf.io/x7yr4
+114. Coelho FC, Brandão A. Decentralising scientific publishing: can the blockchain improve science
+communication? Mem Inst Oswaldo Cruz. 2019;114: e190257. doi:10.1590/0074-02760190257
+115. Brian Arthur W. Economics in Nouns and Verbs. arXiv [econ.GN]. 2021. Available:
+http://arxiv.org/abs/2104.01868
+116. Fields C, Friston K, Glazebrook JF, Levin M. A free energy principle for generic quantum systems. arXiv
+52
 
 ## Page 53
 
-Applied Active Inference Symposium
-The annual Symposium hosted by the 
- aims to highlight the current applications of Active Inference 
-across disciplines and industries. It serves as a repeated response and re-exploration of the enduring fundamental question: 
-“what can active inference be used for?”
-@Active Inference Institute
-The years and topics of each 
-  are as follows: 
-Applied Active Inference Symposium
-1st in 2021 — Karl Friston (
-, video part , , )
-transcript
-1 2 3
-⁠
-2nd in 2022 — Robotics
-⁠
-3rd in 2023 — Enacting Ecosystems of Shared Intelligence
- — 25+ Presenters, Bioregional theme, 
-, 
-, published 
-.
-4th on November 13-15, 2024
-Github interactive program
-Abstract Book
-⁠
-https://symposium.activeinference.institute/
- •
- •
- •
- •
+[quant-ph]. 2021. Available: http://arxiv.org/abs/2112.15242
+117. Boik JC. Science-Driven Societal Transformation, Part I: Worldview. Sustain Sci Pract Policy. 2020;12:
+6881. doi:10.3390/su12176881
+118. Rubin S, Parr T, Da Costa L, Friston K. Future climates: Markov blankets and active inference in the
+biosphere. J R Soc Interface. 2020;17: 20200503. doi:10.1098/rsif.2020.0503
+119. Friston KJ, Parr T, de Vries B. The graphical brain: Belief propagation and active inference. Netw
+Neurosci. 2017;1: 381–414. doi:10.1162/NETN_a_00018
+120. van de Laar TW, de Vries B. Simulating Active Inference Processes by Message Passing. Frontiers in
+Robotics and AI. 2019;6: 20. doi:10.3389/frobt.2019.00020
+121. ForneyLab.jl: Julia package for automatically generating Bayesian inference algorithms through
+message passing on Forney-style factor graphs. Github; Available:
+https://github.com/biaslab/ForneyLab.jl
+122. Friston K, Douglass DS, Iennaco de Vasconcelos ML, Sillett S, Sganzerla L, Tickles D, et al. Transcript
+of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021. 2021.
+doi:10.5281/zenodo.5797041
+123. Friston K, Da Costa L, Sajid N, Heins C, Ueltzhöffer K, Pavliotis GA, et al. The free energy principle
+made simpler but not too simple. arXiv [cond-mat.stat-mech]. 2022. Available:
+http://arxiv.org/abs/2201.06387
+124. Kirchhoff M, Parr T, Palacios E, Friston K, Kiverstein J. The Markov blankets of life: autonomy, active
+inference and the free energy principle. J R Soc Interface. 2018;15: 20170792.
+doi:10.1098/rsif.2017.0792
+125. Weightman G. The History of the Bar Code. In: smithsonianmag.com [Internet]. 23 Sep 2015 [cited 28
+Jan 2022]. Available: https://www.smithsonianmag.com/innovation/history-bar-code-180956704/
+126. Silverman L. Barcodes: A Brief History. In: corp.trackabout.com [Internet]. 19 Nov 2015 [cited 28 Jan
+2022]. Available: https://corp.trackabout.com/blog/barcodes-brief-history
+127. Dikopoulou A, Mihiotis A. The contribution of records management to good governance. The TQM
+Journal. 2012;24: 123–141. doi:10.1108/17542731211215071
+128. ISO. ISO 15489 - Information and documentation - Records Management. 2001.
+129. Cordes RJ. The Pipeline. The Pipeline: EdTech, Knowledge Management, and NATSEC. COGSEC;
+2021.
+130. Cox RJ, Wallace DA, Wallace D. Archives and the Public Good: Accountability and Records in Modern
+Society. Greenwood Publishing Group; 2002. Available:
+https://play.google.com/store/books/details?id=sH5BaIWT7o0C
+131. Smékal J, docxology, Singh A, Active Inference Institute, Monticone P.
+ActiveInferenceInstitute/ActiveBlockference: v0.1. 2022. doi:10.5281/zenodo.7114729
+132. cadCAD – A Python package for designing, testing and validating complex systems through simulation.
+[cited 15 Feb 2022]. Available: https://cadcad.org/
+133. CRediT - Contributor Roles Taxonomy. In: CASRAI [Internet]. 14 Sep 2019 [cited 28 Feb 2022].
+53
 
 ## Page 54
 
-Cognitive Narrative (CogNarr) Ecosystem
-See live 
-.
-project page here
-As an Active Inference Institute Research Fellow, the research program that John Boik pursues is a continuation of the work 
-described in a book and in two series of concept papers. That program explores the science-driven, de novo development of 
-new cognitive architectures that are, by design, fit for purpose. 
-The first series describes how the approach can be applied to the creation of new societal systems (e.g., new economic and 
-governance systems), which are viewed as components of a society’s cognitive architecture. 
-The second series describes how the approach can be applied to creation of an online ecosystem that facilitates cognition in 
-the large-group setting.
-CogNarr ~ GuestStream #087 series (September 2024)
-ActInf GuestStream 087.1 ~ Jo
-ActInf GuestStream 087.1 ~ Jo…
-ActInf GuestStream 087.1 ~ Jo
-ActInf GuestStream 087.1 ~ Jo…
-⁠
-GuestStream #087.1
-⁠
-GuestStream #087.2
-Livestream #021 series (during 2021)
-⁠ ⁠
-01
- 
-⁠
-⁠
-02
-ActInf Li
-ActInf Li…
-ActInf Li
-ActInf Li…
-⁠
-⁠
-03
-⁠
-⁠
-04
-​
- 
-​
- 
-​
- 
-​
- 
-​
- 
-​
- 
-​
- 
-​
- 
-​
- 
-​
- 
-​
-
-## Page 55
-
-.  1
-. ⁠
-2
-​
- 
-​
- 
-​
-
-## Page 56
-
-Educational Standards & Qualifications
-Engagement Pathways at the Active Inference Institute
-Learning Paths, Modes, and Seasons
-Browser: Discovers active inference through key word searches, algorithmic recommendations, bibliographic tracing, or 
-word-of-mouth, engaging with occasional content such as 
- 
-Videos & Podcasts
-Regular Consumer: Follows dedicated channels and educational content about active inference and related topics
-Active Learner: Independently seeks out technical materials, research papers, and in-depth resources. Taking notes, 
-making personal synthesis artifacts, engaging in solo or group 
-.  
-Ecosystem Projects
-Institute 
-: Participates in 
- with a defined role (e.g. 
- facilitator, 
- .0 video preparation collaborator). 
-Volunteer
-Institute Projects
-Textbook Group
-Videos & Podcasts
-: Engages in focused project work while receiving mentored guidance and education.
-Internship
-: Dedicated, possibly funded, focus on larger scale initiatives. 
-Fellows
-, 
-, 
- 
-Scientific Advisory Board
-Board of Directors
-Officers
-The Active Inference Institute aims to make these learning pathways accessible to a global audience, meeting learners 
-wherever they are in their journey. Through a multi-tiered approach, we aim to create entry points and paths for everyone from 
-casual browsers to researchers and practitioners. 
-2025 Learning Initiatives
-The Institute is enthusiastically preparing for expanded 
- offerings in 2025. We recognize the growing interest in 
-active inference across disciplines and are look to develop new 
-s and 
- to support learning 
-needs and our 
-. 
-Education
-Partnership
-Institute Programs
-Mission, Vision, Values, and Principles
-We will focus on building collaborative learning environments that bridge theoretical foundations with practical applications, 
-while fostering a meaningful and productive community of practice that spans academic, industry, and independent 
-researchers.
- •
- •
- •
- •
- •
- •
- •
-
-## Page 57
-
-FarmWorks
-FarmWorks: Decentralized AI Agents for Personalized Solutions.
-https://zenodo.org/records/13754586
-FarmWorks is the name of a project to develop a platform for human-AI interaction in agriculture, enabling personalized, farm-
-scale solutions that resist power concentrations associated with centralized AI systems.
-A 
- submitted in September 2024. 
-Grants
-Work continues in the 
- page at 
-.
-RxInfer.jl Learning Group
-this link
-⁠
-
-![page57_img1.png](images/page57_img1.png)
-
-## Page 58
-
-Fundamentals of Active Inference
-We worked with 
- during 2023-2024 to support development of a textbook (expected public release in 2025). 
-We look to share more information about future 
- as we can. 
-Sanjeev Namjoshi
-Fundamentals of Active Inference
-For more on the book & Sanjeev’s project, see: 
-Sanjeev Namjoshi ~ Active Infe
-Sanjeev Namjoshi ~ Active Infe…
-Sanjeev Namjoshi ~ Active Infe
-Sanjeev Namjoshi ~ Active Infe…
-Sanjeev Namjoshi ~ 
- ~ 
-Education, Expectation-Maximisation, Evolution
-Active Inference Insights 018
-https://www.youtube.com/watch?v=sAwPXw-WNg4
-The Hidden Math Behind All Livi
-The Hidden Math Behind All Livi…
-The Hidden Math Behind All Livi
-The Hidden Math Behind All Livi…
-The Hidden Math Behind All Living Systems (on 
-)
-Machine Learning Street Talk
-⁠
-https://youtu.be/hf18w6CuY8o?
-​
- 
-​
- 
-​
- 
-​
-
-## Page 59
-
-Generalized Notation Notation
- (GNN) is a novel approach to cognitive model representation, which aims to facilitate 
-communication and understanding of Active Inference models across domains.
-Generalized Notation Notation
-Original publication: Smékal, J., & Friedman, D. A. (2023). Generalized Notation Notation for Active Inference Models. Active 
-Inference Journal. 
-⁠
-https://doi.org/10.5281/zenodo.7803328
-Github link: 
-⁠
-https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation
-More information about the project can be found at the 
-.
-public link
-⁠
-https://coda.io/@active-inference-institute/generalized-notation-notation
- has been explored recently in: 
- "GNN for AgentMaker for PyMDP 
-for Active Inference Biofirms for Bioregionalism... for Ants?!?!?". Code is available at a 
- fork: 
- .
-Generalized Notation Notation
-Active InferAnt Stream 007.1
-PyMDP
-https://github.com/ActiveInferenceInstitute/pymdp
-
-## Page 60
-
-Knowledge Engineering
-As of the end of 2022, 
-  is a ongoing project (
-) at the 
- 
-that analyzes the literature related to Active Inference and Free Energy Principle, published as: The Free Energy Principle & 
-Active Inference: a Systematic Literature Analysis 
-⁠
-Knowledge Engineering
-code repository
-The Active Inference Institute
-https://zenodo.org/record/7449368
-We performed a literature analysis of publications in scientific literature using the term “Free Energy Principle” or “Active 
-Inference”, with an emphasis on works written by Karl J Friston. For a subset of papers with accessible full texts, we performed 
-manual annotation (related to structural, visual, and mathematical features) and automated analyses (related to the terms in the 
-Active Inference Institute’s Active Inference Ontology). The initial analysis here, at the scale of thousands of citations and 
-hundreds of annotated papers, is presented as a first step towards the development of systems which could: 
-Encompass increased scope of relevant works, including non-textual
-Integrate multiple forms of annotation and participation 
-Facilitate integration of manual and artificial contributions
-Feature richer interfaces for use in learning & research
-Address field-specific local questions and provide transferable approaches
-Speak to broader questions in the history and philosophy of science 
-The paper is pre-printed at: 
-⁠
-https://zenodo.org/record/7449368
-This project has an 
- and a 
-.
-interactive Coda site
-Github repository
-The initial work was done in 2022 and we look forward to revisiting and improving this work in the years to come. 
- •
- •
- •
- •
- •
- •
-
-![page60_img1.png](images/page60_img1.png)
-
-## Page 61
-
-Physics course
-In 2023, the 
- hosted a course titled “Physics as Information Processing”, taught by Chris Fields. 
-The six-week course introduces participants to formal Quantum Information Theory as a concept and tool for understanding 
-physical interaction as communication. Recorded lectures and course materials are available at the 
-, and 
- of all videos. 
-The Active Inference Institute
-public link
-here is the YouTube playlist
-⁠
-https://coda.io/@active-inference-institute/fields-physics-2023
-
-![page61_img1.png](images/page61_img1.png)
-
-## Page 62
-
-RxInfer.jl Learning Group
-Documentation for the 
- can be found 
-. 
-RxInfer.jl Learning Group
-at this link
-The RxInfer project at the Active Inference Institute represents a vibrant 
- collaboration focused on learning and 
-applying 
-, a cutting-edge Julia package for automated Bayesian inference and active inference modeling
-Open Source
-RxInfer.jl
-Community Structure
-The project maintains regular synchronous meetings every Thursday at 13 UTC in the Institute 
-, bringing together a 
-diverse group of participants including developers, researchers, and educators. See 
-. Over 2024, the meetings 
-included over 20 active contributors with varying backgrounds and expertise levels in Julia programming and Bayesian 
-modeling. The community is working on 
-.
-Discord
-all meetings here
-many innovative applications
-Educational Resources
-The project emphasizes knowledge sharing through:
-Comprehensive documentation and examples
-Regular meetings featuring technical presentations
-Hands-on tutorials and code workshops (also see 
-)
-LearnableLoop
-Development Roadmap
-Key technical advances planned for 2024-2025 include:
-Improved scaffolding of educational examples for training and learning use
-Nested models with GraphPPL.jl
-Enhanced graph structure visualization
-Automated inference with ExponentialFamilyProjection.jl
-Implementation of stochastic processes
-Improvements in robustness and memory efficiency
-The 
- project exemplifies open-source scientific software development, combining rigorous technical 
-advancement with inclusive community participation in learning and 
-. Through its regular meetings, diverse project 
-portfolio, and commitment to education, it continues to push the boundaries of active inference implementation while 
-maintaining accessibility to newcomers in the field
-RxInfer.jl Learning Group
-Grants
- •
- •
- •
- •
- •
- •
- •
- •
- •
-
-## Page 63
-
-Social Science course
-In 2023, 
-  hosted a course titled “Constructing cultural landscapes: Active Inference for the 
-Social Sciences”, organized by Avel Guenin-Carlut, Ben White, Mahault Albarracin, Lorena Sganzerla and Daniel Friedman. The 
-twelve-week course introduced participants to conceptual tools to understand the relation between social and cognitive 
-sciences. Recordings of the talks, and more information are available at the 
-.
-The Active Inference Institute
-public link
-⁠
-https://coda.io/@active-inference-institute/active-inference-social-science-aii-2023
-
-![page63_img1.png](images/page63_img1.png)
-
-## Page 64
-
-Software
-
-## Page 65
-
-Active Blockference
-Much information is contained in the 
- 
-. 
-Active Blockference project documentation
-Active Blockference is an open-source project developed by the 
- that aims to create a 
-comprehensive cognitive modeling framework for complex systems. The project combines two powerful technologies: 
- 
-(Complex Adaptive Dynamics Computer-Aided Design) and 
-.
-The Active Inference Institute
-cadCAD
-Implementations of Active Inference
-Project Overview
-The primary goal of Active Blockference is to develop a simulation environment that can model the cognitive processes and 
-goal-directed behavior of agents within various complex systems across 
-. This framework is 
-designed to:
-Domains of Application
-Facilitate rigorous analysis of multi-agent systems and their emergent behaviors
-Serve as a sandbox for exploring cognitive, micro-economic, behavioral, and decision-making processes
-Enable cognitive audits of protocols and systems across multiple domains
-Key Components
-Open-source package: Integrates cadCAD and Active Inference implementations for theoretical and applied studies
-Multi-agent simulation: Expands from single-agent to multi-agent models to explore cognition and behavior in various 
-settings
-Educational resources: Develops materials to onboard new users to the Active Blockference community
-Rationale for Combining cadCAD and Active Inference
-The integration of cadCAD with an Active Inference kernel provides a powerful synergy for modeling complex systems:
-cadCAD: Offers a robust framework for simulating complex adaptive systems, allowing for the modeling of multi-agent 
-interactions and system-level dynamics.
-Active Inference: Provides a principled approach to modeling goal-directed behavior and decision-making processes of 
-individual agents.
-By combining these technologies, Active Blockference can model both the macro-level system dynamics and the micro-level 
-cognitive processes of agents within those systems.Project Status and Development
-As of October 2024, Active Blockference is in active development. The project welcomes participants from various 
-backgrounds to contribute to the growing codebase on 
-.
-GitHub
-Get Involved
-Interested individuals can participate in Active Blockference through:
-Joining ongoing discussions on the 
-⁠
-Active Inference Institute's Discord server
-Contributing to the 
- for asynchronous collaboration
-Coda document
-Exploring and contributing to the 
-⁠
-GitHub repository
-By developing this cognitive layer for complex systems modeling, Active Blockference aims to enhance our understanding of 
-multi-agent dynamics and decision-making processes across a wide range of applications.
- 1.
- 2.
- 3.
- •
- •
- •
- 1.
- 2.
- 1.
- 2.
- 3.
-
-![page65_img1.png](images/page65_img1.png)
-
-## Page 66
-
-Active InferAnts
-The 
- project works towards integrated modeling of Ants and Environments. 
-Active InferAnts
-Working 
-. 
-documentation page
-⁠
-https://github.com/ActiveInferenceInstitute/ActiveInferAnts
-Project abstract
-The Active InferAnts project is an ambitious computational modeling initiative that aims to implement 
- 
-principles and 
- for ant colony simulations. The project refactors existing ant simulation 
-code to use the Active Blockference package, enabling more flexible and scalable multi-agent modeling of ant behavior 
-through stigmergic interactions and simultaneous localization and mapping (SLAM). 
-Active Inference
-Implementations of Active Inference
-At its core, the project models individual ants (Nestmates) as active inference agents that interact with their environment 
-through pheromone trails and other nestmates, while incorporating both low-level movement decisions and higher-level task 
-selection behaviors like foraging, nursing, midden work, and nest architecture.
-The simulation captures the complex interplay between individual ant cognition and colony-level emergence through a 
-hierarchical generative model framework that includes pheromone-based communication, spatial navigation, and task 
-switching dynamics.
-As 
-, software development efforts have also woven together elements related to 
-, William 
-Blake, Large Language Models (LLM), and more. 
-the project Github attests to
-P3IF
-
-## Page 67
-
-Systems Approach
-A modern third-generation systems approach is essential for managing today’s complex adaptive systems. This approach 
-transcends traditional linear models, embracing continuous evolution, interactivity across scales, and the dynamic, 
-constructivist perspective where systems actively reshape themselves in response to changing conditions. Combining active 
-inference principles with a systems approach provides a pathway to designing resilient, self-organizing systems that are 
-responsive to diverse environments.
-Evolving systems approach
-Classical systems approach focused on structured relationships within defined boundaries, effective for static and predictable 
-systems. However, with the growing complexity of modern systems like cyber-physical networks and adaptive ecosystems — a 
-more dynamic approach is needed. Third-generation systems approach builds on these foundations to handle layered, open-
-ended development and real-time adaptability. A systems approach today emphasizes flexible frameworks that enable 
-continuous learning and adaptation across varied contexts, positioning systems to better navigate and anticipate change.
- provides a foundation for adaptive systems by defining systems as (nested, interacting) agents. This aligns 
-with a systems approach by enabling systems to organize themselves dynamically in response to environmental changes. Key 
-characteristics of this model include:
-Active Inference
-Continuous adaptation: Systems evolve iteratively, continuously integrating new information rather than following a rigid 
-lifecycle.
-Anticipatory action: Systems use predictive models to take preemptive actions, reducing disruptions before they occur.
-Interactions within and across scales: Systems function cohesively across micro and macro levels, preserving stability and 
-coherence regardless of scale.
-These qualities position active inference as a crucial tool for developing systems that are resilient, responsive, and able to self-
-correct in changing environments.
-Systems as Constructors
-A modern systems approach treats systems as constructors, entities that not only adapt but also actively build and modify their 
-environments. Systems continuously refine their models based on feedback, supporting informed decision-making and efficient 
-resource allocation. This constructivist perspective emphasizes:
-Dynamic modeling: Systems adjust internal models based on ongoing sensory input, which helps them make real-time, 
-informed decisions.
-Open-ended development: Systems remain open to generating novel solutions and can reorganize to meet emerging 
-challenges, enhancing robustness and resilience.
-This approach is especially applicable in fields requiring systems to maintain functionality amid complex, changing conditions, 
-like AI and distributed cybersecurity. Systems built on this constructivist foundation are inherently flexible, robust, and capable 
-of evolving independently.
-Collaborative ecosystems and community-driven development
-The active inference framework is built within a collaborative, 
- development model (
-) that aligns with third-generation systems approach. This community-driven ecosystem 
-encourages knowledge sharing and real-time updates, ensuring that systems evolve alongside technological and societal 
-needs. Collaborative development fosters rapid adaptation and inclusivity, allowing systems to better meet diverse user 
-requirements. An open-source model also supports common standards, providing a strong foundation for sustainable and 
-accessible system design across interconnected fields.
-Open Source
-The Active Inference Ecosystem
- •
- •
- •
- •
- •
-
-## Page 68
-
-Adaptive systems approach 
-Integrating active inference within a modern systems approach offers a robust, adaptive model for managing complexity. This 
-combination encourages resilient, coherent, and evolving systems that can operate autonomously and flexibly across scales. 
-By embracing dynamic modeling, constructivist principles, and active inference, this approach provides a foundation for 
-systems that not only withstand change but actively respond to it, supporting a broad range of applications in both technical 
-and social domains.
-Reference “
-” by Anatoly Levenchuk
-Toward an Ontology for Third Generation Systems Thinking
-
-## Page 69
-
-Textbook Group
-We organize and scaffold a Textbook Group to work through the 2022 textbook “Active 
-Inference: The Free Energy Principle in Mind, Brain, and Behavior” by Thomas Parr, Giovanni 
-Pezzulo and Karl J. Friston (
-).
-link
-The textbook came out in March 2022, and we have had 7 cohorts since then, constituting 
-hundreds of learners at different levels of synchronous and asynchronous engagement. 
-Cohorts of learners meet weekly to talk about Chapters of the Textbook with a Facilitator. 
-Learners also submit and answer 
- throughout the process, which helps clarify 
-fundamental concepts of Active Inference.
-questions
-⁠
-https://textbook-group.activeinference.institute/
-​
-
-![page69_img1.png](images/page69_img1.png)
-
-## Page 70
-
-Tech Tree
-A 
- for us is creating an Active Inference 
- (a “
-”) to guide 
- development. 
-current area of interest
-Tech Tree
-tool to map science and tech
-Open Source
-For now, work on this can be found within the 
- documentation document 
-, and in the Github 
-repository here 
- , where we are processing public 
-participant information for the 
- and applying LLM methods to this. 
-RxInfer.jl Learning Group
-here
-https://github.com/ActiveInferenceInstitute/Symposium/tree/main/output
-Applied Active Inference Symposium
-
-## Page 71
-
-Videos & Podcasts
-We produce educational content in the form of 
- on 
-, 
-, and replication across 
-other platforms. 
-Videos & Podcasts
-YouTube Podcasts on Podbean
-We have multiple kinds of formats for the content, and we add new ones as availability/capacity arises. 
-Some current formats and area of focus for 
- are:
-Videos & Podcasts
- (focused on specific papers, 58 papers discussed since 2020). 
-Livestream
-90+ 
-s, highlighting a wide range of work in 
- and related fields. 
-GuestStream
-Active Inference
- (), 
- (social and organizational topics), 
- (formalisms and math), 
- streams in 
-2024, 
- (art and aesthetics), 
- (coding, modeling, synthetic intelligence), 
- 
-(organizational updates), Courses (
-, 
-), 
-s, and more
-ModelStream
-OrgStream
-MathStream
-MathArt
-ArtStreams
-InferAnt Streams
-Roundtables
-Social Science course
-Physics course
-Textbook Group
-One of the highlights of 2024 was Active Inference Insights (
-, 
-), hosted by Darius Parvizi-Wayne.
-Podbean YouTube
-Active Inference Insights is a podcast which introduces listeners to the wondrous land of Active Inference. Guided by 
-our diverse array of guests, from physicists and mathematicians to cognitive scientists and philosophers, you will not 
-only learn about cutting-edge theory, but also come to see the world in a whole new way, in which all things can be tied 
-together by a single imperative: the minimisation of free energy.
-To date, we have released over 500 videos.
-⁠
-https://video.activeinference.institute/
- •
- •
- •
- •
- ◦
-
-## Page 72
-
-The Active Inference Ecosystem
-The 
- is a vibrant, global community of researchers, practitioners, and enthusiasts united by 
-their interest in 
- — a powerful framework for understanding cognition, behavior, and complex adaptive 
-systems. The ecosystem extends far beyond the formal boundaries of the 
-, encompassing a 
-wide array of individuals, organizations, and projects that contribute to the development and application of Active Inference 
-across 
-.
-The Active Inference Ecosystem
-Active Inference
-The Active Inference Institute
-Domains of Application
-At its core, the Active Inference Ecosystem is characterized by its open, collaborative nature. It brings together experts from 
-fields as varied as neuroscience, artificial intelligence, philosophy, physics, and social sciences, fostering cross-pollination of 
-ideas and innovative approaches to complex problems. The ecosystem thrives on the collective efforts of its participants, who 
-engage in research, education, software development, and practical applications of Active Inference principles.
-The ecosystem is not just an academic or theoretical construct; it is a living, evolving network of interactions and initiatives. It 
-includes 
- among organizations, educational programs, 
- product, events, and various community-
-driven efforts. The Active Inference Institute serves as a hub within this ecosystem, providing infrastructure, coordination, and 
-support to facilitate the growth and impact of Active Inference across disciplines and sectors.
-Partnership
-Open Source
-As the document transitions into detailing the Active Inference Ecosystem, readers can expect to explore the 
-, 
-, and 
- 
-across 
-.
-Ecosystem Priorities and Challenge Areas
-Ecosystem Development: Structure and Growth
-Ecosystem Projects
-Domains of Application
-
-![page72_img1.png](images/page72_img1.png)
-
-## Page 73
-
-Ecosystem Priorities and Challenge Areas
-We look to continued engagement with the Ecosystem, to better curate and refine the 
-. 
-Ecosystem Priorities and Challenge Areas
-Education: Scientific Literacy and Workforce Development
-Active Inference relies on mathematical formalisms and is loaded with abstract conceptual challenges that transcend 
-disciplinary boundaries. We hope to model educational processes such as pedagogy, competency evaluation, and 
-professionalization in Active Inference. Thus, the Institute catalyzes workforce development, seeks to stabilize the "research to 
-practice" gap, and contributes to the broader project of participation in scientific ecosystems.
-Research: Grounding the Cognitive Sciences in Physics
-Research across the natural sciences suffers from a lack of theoretical integration and practical collaborations. Active Inference 
-is gaining traction as a rigorous attempt at a unifying first-principles accounts of vital features of biological systems, 
-transcending disciplinary boundaries. At The Institute we promote this theoretical integration through various educational 
-programs, supporting learners of all backgrounds.
-Information Science and Diverse Intelligences
-The interaction frequencies of modern information environments are higher and more complex than ever. At The Institute we 
-apply Active Inference to understanding, monitoring, evaluating, refining, and developing artificial and synthetic (e.g., human-
-machine interface, organizational, crowd) intelligence systems. In this way, active inference helps to identify, analyze and 
-optimize various forms of "interoperability" across various forms of intelligent system, making possible a form of "mutual 
-socialization" among such systems. This work is enacted by projects currently related to information science, ontology, data 
-quality control, artificial intelligence explainability, and knowledge engineering.
-User Experience, Accessibility, and Sociotechnical Design
-It remains an open challenge how to most effectively, efficiently and fairly enable sustainable engagement in digital systems 
-consistent with all parties expectations and needs. At The Institute we map cognitive frameworks as a framing for design, user 
-experience, ergonomics, and requirements engineering, as well as implementation and operational guidance, to offer new 
-methods and tools to a wider community of professionals and scholars.
-Business Applications
-Business and commercial interactions are typically characterized by party attention to reduced set of abstracted variables as 
-compared with biological and social systems. Notwithstanding the "management" and regulation or variables, active inference 
-can still help to improve the competitive insights and risk mitigation strategies and other variables that are the focus of 
-business and commercial parties. Active inference research and analysis promises to substantially enhance and improve critical 
-business elements such as risk strategies, insurance markets, banking (lending criteria), identity authentication, and 
-authorization and a host of other business interaction decisions.
-  Welfare
-Social
-The scale independence of active inference analysis causes it to be well suited to framing issues in settings where different 
-parties experience different levels of information and resources. This includes various programs of local and global social 
-welfare that seeks to enhance the local and global fairness of resource allocations of various kinds and to offer a pathway to 
-easing the consequent burdens that unbalanced resource related interactions place on precarious populations.
-
-## Page 74
-
-Cyber and Cognitive Security
-Individuals and organizations today are confronted with a rapidly-evolving landscape of threats to digital and cognitive security. 
-At The Institute we work to unify cognitive frameworks with existing cyber security and emerging cognitive security concepts 
-and frameworks, to understand, measure, and address local and global information technology risks and impacts more 
-effectively at multiple scales.
-Scaling the Active Inference Ecosystem
-The nascency of the Active Inference Ecosystem enables us to take a proactive approach towards various areas of 
-consideration. At The Institute we create synergy among the efforts applied to the above challenge areas, and emerging needs 
-of the Active Inference Ecosystem. This approach creates an opportunity to learn by doing and to embrace convergence 
-research, where implementations are developed in parallel with theory, supported by regular information sharing and 
-collaboration among practitioners and researchers.
-Applying Active Inference
-The Institute brings insights from empirical and theoretical Active Inference research into practice by designing new projects or 
-communicating with existing projects that design and implement social system infrastructure, such as health infrastructure and 
-cultural technologies that support human well-being. We also support 
-  that design and implement 
-solutions to various collective problems, such as climate change, threats to democracy, armed conflict, or overall polycrisis.
-Ecosystem Projects
-Additional Focus Areas
- usability
-Software
-Information system optimization and efficiency (operating)
-Cultural heritage and progress
-Legal and regulatory consistency and compliance
- •
- •
- •
- •
-
-## Page 75
-
-Ecosystem Development: Structure and Growth
-Community Growth and Development
-Here, we present the community growth and development model for 
-, built on the following 
-5 core components:
-The Active Inference Ecosystem
-Awareness. Promoting and fostering awareness and use of Active Inference, and developing partnerships with well-aligned 
-organizations and communities.
-. Developing and disseminating educational materials, contributing to competency, capability, and common 
-language within the community.
-Education
-Common Forum. Offering and maintaining an inclusive and accessible common forum for discussing, sharing, and hosting 
-relevant work and opportunities, finding collaborators, and networking (i.e., an informational commons).
-Support. Providing support for emergent teams and projects which align with The Institute’s mission, in the interest of 
-innovation and impact
-Governance. Maintaining stable governance for cultivating and sustaining partnerships, technical infrastructure, and 
-sponsors.
-Ecosystem Structure
-The Institute cultivates an active and engaged ecosystem around the scientific modeling framework of Active Inference. This 
-vibrant Ecosystem and community drives innovation on the research front and makes significant strides in providing accessible 
-education. The Institute ensures that efforts are well-aligned, impact-focused, relevant, and meaningful in advancing research 
-and education for the betterment of society by forming partnerships and by engaging with and growing the Active Inference 
-community. Our community development model emphasizes facilitation over management, and distributed as opposed to 
-command-and-control strategies. More importantly, our model moves beyond the provision of networking and discussion 
-space to support emergent, collaborative work.
-In these regards, the Institute functions as a seed crystal that can help to foster phase changes across a variety of information 
-system domains and applications.  The Institute does not directly manage all of the systems upon which it has an influence, but 
-instead seeks to leverage its influence by providing coherent multiple tools and practices from which communities of shared 
-interest can optimize their local information system dependencies for active inference efficiencies.
-As opposed to a linear “funnel” growth model, The Institute will implement a cyclical model of organic growth pursued through 
-the incubation among participants of (i) self-efficacy, or a sense of personal capability, (ii) a sense of support and safety, and 
-(iii) a sense of investment and impact in participants, as a basis for forming a sense of community and providing the foundation 
-for development of relationships within the community through positive, repeated contact. The support of these senses leads 
-to productive, emergent collaboration, which in turn leads to emergent community narrative, norms, roles, and “scripts”. 
-Participants are reinforced in their feelings of capability as a part of a team, assured that they will be provided with support in a 
-reasonably safe environment, and that results will have a lasting, positive impact on their community. Resulting research and 
-educational artifacts and documentation constitute shareable content which can then be used to bring awareness about Active 
-Inference and The Institute to non-community members.
-Where a “funnel growth” model focuses on awareness alone as a basis for developing a user-base, our model’s focus on 
-education, knowledge sharing and presentation of work, and support for teams allows for non-community members of all 
-backgrounds and interests to engage with and contribute to the community, thus affirming membership through a sense of 
-shared investment, impact, and competency. Further, where online learning communities anticipate members terminating 
-participation following completion of coursework (or after achieving feelings of self-efficacy in the material), our model’s 
-provision of support and opportunities for sharing of work with professionals and academics provides incentives for continued 
-engagement and participation to those who feel they have already become reasonably familiar with all available educational 
-material.
- 1.
- 2.
- 3.
- 4.
- 5.
-
-## Page 76
-
-Below, background is provided on the (i) structure of the community (i.e., user segmentation), (ii) our information storage and 
-dissemination technology (“tech”) stack, (iii) our communications plan, (iv) the education, support, and infrastructure and 
-governance functions we provide and/or intend to provide as a part of this model, and (v) our intended approach toward 
-evaluating quality control and growth.
-Community Participants 
-The Institute is a formal organization that has been constituted to serve some of the organizational and operational needs of 
-the expanding active inference ecosystem.  The Institute and its staff recognize that the energy and knowledge value relating 
-to the further understanding and development of active inference resides in the broad active inference community, which is 
-supported, fostered, convened and cross fertilized through the activities of The Institute.  The reach and potential implications 
-of active inference across domains and sectors is sufficiently broad that parties can choose from among many different ways 
-to engage.  A partial list of categories of participation is presented below to provide a sense of the variety of participants. 
-Direct Institute Participants (Members and Learners)
-Many individual participants interact directly with The Institute and its resources and programs.  Participants include members 
-of the Active Inference Ecosystem, or those who engage directly with and contribute to 
-. These 
-participants include students, educators, researchers, and professionals from around the world who may benefit either from 
-awareness of Active Inference and its implications, developing related competencies and having opportunities to network and 
-collaborate with individuals who do, or from opportunities to collaborate and share work and insights which would be valuable 
-to the Active Inference Ecosystem.
-Institute Programs
-Participants also include learners at various levels of involvement and expertise that engage directly with The Institute as part 
-of their learning process. The Institute seeks to support all learners, from the academic expert to those individuals who are not, 
-and everyone in between. The Institute seeks to facilitate access by all learners to tools and materials and narratives that can 
-help people at all levels access information that can help them to enjoy the direct and indirect benefits of active inference 
-thinking and approaches.
-Users (Adopters and Beneficiaries)
-For individual and organizational users that explicitly adopt Active Inference-based [organization and operation] of their 
-information processing and synthetic intelligence practices, policies and tasks, the Institute’s productive outputs provide 
-support and opportunities for engagement with a broader community.  The Institute maintains an online resource center that 
-includes software, tools, and materials that convey methodologies and practical pathways for instantiating Active Inference-
-derived structures in a variety of community settings and institutional contexts, and includes [practical suggestions for] the 
-facilitation of Active Inference itself as an open source and open standards set of products and practices. As such, the 
-community using Active Inference and related 
- products requires documentation, clear messaging regarding 
-updates, and guidelines on fair and best practices. By considering such beneficiaries of Active Inference as “users,” The 
-Institute may leverage existing best practices from other domains, such as user experience, requirements engineering, and 
-software engineering. Potential users include professionals, researchers, educators, and engineers.
-Open Source
-Beyond direct “users” of active inference, there are many groups of parties that benefit from the use of active inference who 
-won’t interact directly with such systems, nor be aware of it.  Comparison is made to people who fly in airplanes, but haven’t 
-studied Bernoulli’s hydrodynamics principles.
-Research Partners (External Research Organizations and Working Groups)
-The Institute’s ReInference unit collaborates with external research partners, universities, institutions, and subject matter 
-experts. These partnerships involve joint research projects, data sharing, and knowledge exchange to enhance the depth and 
-breadth of research efforts. Collaborations with research partners create an opportunity to enrich The Institute's research 
-capabilities and resource access, thereby accelerating the generation of new knowledge and helping us to address complex 
-research questions, validate findings, and extend the reach of our research impact. Potential research partners include
-
-## Page 77
-
-organizations working on or faced with problems that may be solved by Active Inference, and organizations which are working 
-on or have solutions to problems which The Institute and the community are facing.
-Educational Partners (Universities and Educators)
-The Institute’s EduActive Unit collaborates with educational partners to influence, instantiate, share, and get access to 
-educational programs, teacher training, and learning resources. By partnering with educational institutions, The Institute 
-extends its educational reach and impact and fosters effective delivery and dissemination of its educational content. Potential 
-educational partners include universities, tutors, educational institutions, and educators.
-Funders (Donors, Supporters, 
-, and Funding Agencies)
-Grants
-The Institute requires 
- in order to keep pace with community needs, maintain information infrastructure, and 
-assist researchers in finding their own financial support for relevant research initiatives. Potential donors and funders include 
-generous community members and beneficiaries, government funding agencies, private philanthropic donors, and sponsors of 
-events, programs, and initiatives.
-Philanthropy
-
-## Page 78
-
-Ecosystem Projects
-There are many 
- — here we include the subset which have completed a form at 
- to increase their visibility and participation. 
-Ecosystem Projects
-https://projects.activeinference.institute/
-Symbolic cognitive robotics
-
-Explore the joint problem space of “symbolic active inference”, 
-“societies of mind” and “mortal computing”, with an emphasis on 
-unsupervised learning.
-Jean-François 
-Cloutier
-Active Inference Account of 
-Belief Updating in PTSD
-
-Write a theoretical paper in the style of Parr et al. chapter 6 
-Jeremy Cooper
-Humanity’s Story of an Uncertain 
-Self
-
-Producing an academic paper or blog that contains a set of 
-equations, computer simulations, and ultimately a framework that 
-explains the core components of humanity’s sociological-narrative 
-framework. Specifically, breaking down a few pieces of say, ancient 
-epics, along with an set of economic and civic institutions, would 
-allow us to model to simulate, predict, and give mastery over the 
-otherwise seemingly intractable world of humanity’s cultural niche.
-Shagor (Shaggy) 
-Rahman
-Action Research on Collective 
-Foraging (Negotiation 
-Affordances)
-
-The mission of the Collective Foraging Lab is to improve collective 
-sustainability and individual well-being through the praxis of team 
-formation and deployment for value co-creation and capture. Phase I 
-will focus on the effects of negotiation affordances on predictive 
-processing and value exchange.
-Susan Hasty
-Project Development for “Solving 
-the Tower of Babel Problem: 
-UniFysica Philo-sophia”
-
-To outline, draft, a collection of papers with the title “An Inclusive 
-System of Communication for Sapiens’ Shared Meanings and 
-Cognition: From Blombos to Friston and Fields”
-Ana Magdalena 
-Hurtado
-Numinia
-
-First mission would be to make sure we are implementing Active 
-Inference in the game properly and is well explained, another 
-mission would be to ensure that the design of the incentives 
-aligned with the values of Numinia and the AII.
-pablofm@numenga
-mes.com
-An Active Inference Agent for 
-Modeling Human Translation 
-Processes
-
-To model human translation processes through an Active Inference 
-Agent
-⁠
-Michael Carl
-MathArt Conversations
-
-Our mission is to illuminate mathart as a synesthesia and to highlight 
-the profound connections between mathematics, active inference 
-formalism, and the arts. Moreover, our objective is to amplify the 
-variations in mathematical and artistic thinking, by working major 
-concepts and theorems cross-disciplinarily. 
-⁠
-Shanna Dobson
-Neurodivergent Learning 
-Sessions
-
-Neurodivergent learning is focused on outreach and spreading 
-awareness geared towards those who struggle with standardized 
-curriculum environments when it comes to public and higher 
-education milestones... as a number of people with neurological 
-conditions not limited to autism spectrum disorder can struggle in 
-varying ways with learning and being in the right environment in 
-which information is presented to them in a manner which is 
-coherent.
-Jesse G, 
-c4tm4nd00
-Project
-Documentation
-Mission & Objectives
-Facilitator
-Projects in the Active Inference Ecosystem 2
-
-## Page 79
-
-Improving RxInfer.jl’s Model 
-Visualization Capabilities 
-
-Our mission is to equip RxInfer.jl - and its relevant component 
-libraries - with a host of model visualization modalities that prove 
-useful to those who wish to use, and/or to develop RxInfer.jl.  
-To that end, we anticipate measuring the initial quality of our 
-contribution/s by their reception from RxInfer.jl’s core developers: 
-TU/e’s BIASlab. All our objectives must therefore take the approval of 
-the BIASlab as their proverbial North Star. 
-⁠
-Fraser Paterson
-Draft Book Title: The Physics 
-of a Fulfilling Life: Principles for 
-Cultivating Your Potential
-
-Perform a meta analysis of the “wellness” space through the lens of 
-active inference highlighting the most impactful points for the larger 
-population in an easily digestible format.  Use this work to kick off a 
-longer term collaboration and contribution to the larger AII 
-community.  
-Anna Pereira
-CogNarr Ecosystem: Facilitating 
-Group Cognition at Scale
-
-The initial mission is to advance the CogNarr project from its current 
-incubation phase into a proof-of-concept demonstration, followed by 
-a minimal viable product.
-⁠
-john.boik@activeinf
-erence.institute
-The Universal Basic Income 
-Experiment 
-
-Mission: To solve the Economic long tail problem of Universal Basic 
-Income via bleeding edge technologies like AI and crypto, preferably 
-using the blockchain.  
-Objective: To attempt to solve the economic long tail problem with a 
-blend of tokenomics, math, jurisdictional and currency-based 
-variables. To attempt prototype models that can be replicated in 
-engineering, economics, crypto and legal alike. 
-Die Schwarze Katze
-Clinical Waveform Data based 
-Agent
-
-Mission is to establish proof-of-concept that an active inference 
-system at the bedside of a critically ill patient (pediatric ICU), using 
-waveforms in real time, could enhance better response from the 
-medical team.
-⁠
-Franklin Ducatez
-
-## Page 80
-
-Domains of Application
-The sub-sections of 
- reflect some early collaborative efforts towards curating 
- across different sectors and systems of interest. This section of the document is not 
-presented as a comprehensive or exhaustive survey in any way, rather more of an invitation to those who would like to steward 
-a section (keeping it updated and relevant) as we develop these synoptic capacities together. Later updates will more deeply 
-reference 
- and other resources where 
- has been demonstrated across systems. 
-Domains of Application
-Implementations of Active Inference
-Videos & Podcasts
-Active Inference
-Along with other modern technical fields, Active Inference faces and addresses challenges of broad relevance such as (i) 
-remote education, workforce development, and competency evaluation, (ii) user experience, ergonomics, and accessibility in a 
-modern global context, (iii) 
- availability , utility, reliability, and safety, (iv) participation in research and practice-
-oriented activities (v) cyber- and cognitive-security, (vi) theoretical and practical aspects of artificial intelligence explainability 
-and safety, (vii) social and economic policy integration and management.
-Open Source
-Integrations featuring Active Inference are increasingly being found across public and private sectors. These applications are 
-enabled through common education around Active Inference themes, concepts, skills, practices, and tools. As such, there is 
-potential for The Institute to facilitate both the study (theory and research) and professionalization (practice and 
-implementation) of Active Inference within and across myriad sectors and disciplines, and to grow the incipient Active Inference 
-Ecosystem and awareness of Active Inference by facing such challenges proactively and in a fashion aligned with our vision, 
-values, and principles. We hope to achieve this through developing coordinated resources that are accessible to users at all 
-backgrounds and levels of familiarity. Moreover, we aim to develop this nascent research arena by facilitating and/or mediating 
-access to resources for an array of independent projects.
-A core reason why 
- is being adopted so rapidly is that it provides a flexible, agent- and action-oriented 
-ontology which describes a great array of complex adaptive systems, up to and including human social cognition. The Active 
-Inference framework can be used to describe systems at different nested scales. The applicability of Active Inference to multi-
-scale complex adaptive systems is a source of great explanatory power, and it is also a challenge for the framework’s 
-coherence. Scholars from different disciplines or fields may read Active Inference concepts or constructs differently, and 
-unknowingly build an error into their research ecology which is then propagated forward, thereby hampering progress in the 
-field at large. To our knowledge, the Active Inference Institute is the first scaled attempt at directly tackling that risk by offering 
-Active Inference education to learners of all backgrounds, and by working to specify an ontology that is both particular to 
-Active Inference and broadly accessible. Furthermore, the institute offers accessible onboarding to current best practices in 
-Active Inference research as well as the ability to drill down into specific topics across the broad array of disciplines that are 
-implementing the framework.
-Active Inference
-
-## Page 81
-
-Biology
-Chris Fields and Michael Levin (
-) posit that Active Inference “provide(s) conceptual tools for reconceptualizing biology as 
-the study of a unified, multiscale dynamical system”.
-2020
-Ramstead et. al  (
-) have leveraged active inference and the underlying free energy principle to characterize variational 
-neuroethology, a theoretical ontology for living systems based on a recursively nested formulation of Markov blankets.
-2019
-Friston et. al (
-) introduce a variational formulation of natural selection to explain how slow phylogenetic processes 
-constrain—and are constrained by—fast, phenotypic processes. 
-2023
-
-## Page 82
-
-Neuroscience
-Active Inference emerged from the field of theoretical neurobiology (
-), where it was “first used to model the 
-function, structure, and dynamics of the human brain” (
-). It built upon foundational work in predictive coding (
-) and the Helmholtzian concept of perception as “unconscious inference” (Helmholtz, 1867).
-Friston, 2005
-Ramstead, 2024
-Rao and Ballard, 1999
-Active Inference’s central premise that “all neuronal processing (and action selection) can be explained by maximizing Bayesian 
-model evidence — or minimizing variational free energy” (
-) provides a unifying theory to explain and predict myriad 
-aspects of brain function and behavior (
-). As such, it has been applied to many areas of neuroscientific research. 
-Friston 2017
-Friston, 2010
-Active Inference models are used to provide parsimonious explanations for neural mechanisms and motifs, such as canonical 
-microcircuits and neural networks (
-, 
-).
-Bastos et al 2012 Isomura et al 2022
-Researchers have furnished Active Inference models for phenomena including motivated control (
-), sense of 
-agency (
-), modulation of uncertainty by the dopaminergic system (
-), and the computational 
-relationship between interoceptive and exteroceptive neural systems (
-).
-Pezzulo et al 2018
-Friston et al 2013
-Friston et al 2012
-Allen, 2022
-Active Inference frameworks have also been used to explain the dynamics of a variety of neurological and psychiatric 
-conditions, including depression (
-) and schizophrenia (
-). 
-Barrett et al 2016
-Limongi et al 2023
-Recent studies have shown that in-vitro neuronal networks self-organize in response to stimuli in ways that are consistent with, 
-and predicted by, the Free Energy Principle (
-). The FEP also provides theoretical commitments towards 
-testable theories of consciousness (
-).
-Isomura et al 2023
-Whyte et al, 2024
-As a multi-scale theory, Active Inference aims to ground neurobiology in 
-, and links it to 
-other domains of inquiry, including diverse intelligence (
-) and artificial intelligence (
-).
-physics-as-information-processing
-Levin 2023
-Friston et al 2024
-
-## Page 83
-
-Mental Health
-Being a theory of embodied and sentient behavior, Active Inference can contribute in knowledge sharing to better understand 
-the intrapersonal and interpersonal dynamics involved in or implicated in mental health (
-). Computational 
-psychiatry (
-) serves to utilize models of cognition and behavior to predict and account for the above-mentioned 
-dynamics. Being a model constrained by Bayesian principles and the free energy principle, Active Inference allows for one such 
-attempt at better predicting treatment outcomes, nosology, and fundamental principles of cognition. 
-Pezzulo et. al, 2024
-Friston 2022
-The Institute supports individual thoughts and projects designed to inquire on topics related to social sciences, psychology, 
-and mental health. Such projects have included attempts at classifying and clarifying Active Inference ontology to better fit the 
-lived experience of individuals with posttraumatic stress disorder.
-Active Inference is a systems approach to psychological constructivism that offers a trans-diagnostic perspective to readers. 
-One such benefit of a trans-diagnostic approach is that it identifies connections between different processes without the strict 
-adherence to philosophical requirements. Areas of the theory that can be beneficial to mental health research include:
-Experiential quality of prediction error for patients (i.e., as a mismatch of one’s generative model) (defining “surprise” in 
-therapy practice, 
-)
-Holmes & Nolte 2019
-Homeostasis and role of consciousness as allostatic control (
-); as well as the dynamic interplay between these 
-processes and mental health symptoms (cultural identity, 
-; social conformity, 
-)
-Krupnik 2024
-Ramstead et. al 2016
-Constant et. al 2019
-Mental health symptoms as under/over-reliances on a generative model (apathy, 
-)
-Hezemans et al. 2020
-Requirement of interoceptive processes (body-based) and the roles these have in the make up of a Bayesian brain (
-)
-Duquette 2016
-Role of affect and ascribing confidence to one’s generative model (
-)
-Hesp et al. 2021
-Equal treatment of action policies as being direct manipulations of one’s environment (decrease free energy now) versus 
-epistemic transformations (change your beliefs about the world to decrease free energy in the future) (PTSD & explore-
-exploit dynamics, 
-; social cognition, 
-)
-Linson et al 2020
-Gallagher & Allen 2018
-Hierarchical models of cognition that outline the dynamic interplay of predictions, actions, habituation, and environmental 
-feedback (theory of constructed emotion, Barrett 2017; cognitivism versus autopoiesis, Allen & Friston 2016)
-Conceptualizations are being offered that describe the experience of those with particular mental health symptoms (
-, p. 186). Active Inference has also been applied to the study of depression (
-), psychosis (
-), schizophrenia (
-), anorexia (
-), functional neurological disorder (
-), and interoceptive dimensions of psychopathology (
-; 
-). Conversely, Active 
-Inference also provides a framework for understanding constructs of mental wellness, including subjective well-being (
-).
-Parr et al. 2022
-Barrett et al 2016
-Knolle 2023
-Jeganathan 2021
-Barca et al 2020
-Jungilligens et al 2022
-Paulus et al 2019 Barrett 2016
-Smith et al 2022
-Chamberlin (
-) illustrates how Active Inference can be applied directly to one psychotherapy model, Coherence Therapy. 
-This type of dialogue allows readers to see the neurological mechanisms and meaningful narratives at play in a framework that 
-treats both equally. It is also good for readers to note that Active Inference offers a framework to reformulate agents as being 
-cognitive, emotional, and embedded without adding other philosophical requirements. It can be beneficial to engage existing 
-psychological theories [of cognition, emotion, personhood, agency, social relations] in order to emphasize constituent 
-processes that Active Inference gives language for. For instance, the focus on sense making in the life of an individual 
-highlights the existence of an agent’s generative model that has been determined within and a part from the generative 
-process. In parallel, sense making can speak to themes of agency and emotional expression. 
-2023
- •
- •
- •
- •
- •
- •
- •
-
-## Page 84
-
-Bioregional Modeling
-An ongoing project, 
- currently consists of two main components in support of 
-:
-Biofirm
-Bioregional Modeling
-Ecosystem Control System
-Active Inference-based multi-agent control framework
-Homeostatic regulation of ecological parameters
-Comparative analysis between random and controlled dynamics
-BioPerplexity Analysis
-California county-level bioregion research using Perplexity.ai API
-Business case generation and pitch development
-Cross-document visualization and analysis
- 1.
- ◦
- ◦
- ◦
- 2.
- ◦
- ◦
- ◦
-
-## Page 85
-
-Category Theory
-Active Inference, through the Free Energy Principle (FEP), provides a framework for understanding how systems make 
-predictions and update their models based on sensory evidence. Category Theory, meanwhile, offers a formal mathematical 
-language to describe the transformational processes that occur during these updates (see: 
-, "What is the 
-Identity operator?").
-Chris Fields 2024
-Mathematical Bridge
-Where Active Inference describes the necessity of prediction and error minimization, Category Theory provides the precise 
-mathematical tools to track how these predictions and updates flow through a system. The power of this combination lies in 
-Category Theory's ability to formalize the very transformations that Active Inference predicts must occur.
-Creative Processes
-This relationship becomes particularly relevant when examining creative processes. Active Inference explains why systems 
-must make predictions and learn from surprises, while Category Theory's operators can formally map out the transformational 
-paths taken - even in cases where the end state wasn't predictable from the initial conditions. The identity operator, in 
-particular, helps us understand how systems maintain coherence while undergoing these creative transformations.
-Practical Implementation
-This growing theoretical bridge between 
- and 
- has practical implications for:
-Category Theory
-Active Inference
-Modeling learning processes
-Understanding system adaptation
-Tracking creative development
-Formalizing prediction errors and updates
-Maintaining system identity through change
-The synthesis of these approaches provides a more complete picture of how systems learn, adapt, and create while 
-maintaining their essential identity through transformative processes.
- •
- •
- •
- •
- •
-
-## Page 86
-
-Computational
-
-## Page 87
-
-Implementations of Active Inference
-In the 
- project, we have curated dozens of 
- 
- at 
-. 
-Active Blockference
-Open Source
-Implementations of Active Inference
-this link
-The sub-pages here go into more detail on several different toolkits for applying 
-, including in Python (
-), Julia (
-), Matlab (
-), and Prolog (
-).
-Active Inference
-PyMDP
-RxInfer.jl
-SPM (Statistical Parametric Mapping)
-Symbolic Active Inference
-
-## Page 88
-
-RxInfer.jl
-RxInfer.jl (
-) is a programming package of functions developed at 
- in Eindhoven, Netherlands. It 
-attempts to commoditize 
-, making it suitable for engineering applications. Compared to existing 
- like 
-, RxInfer is unique in the sense that it draws upon reactive message 
-passing on Forney Factor Graphs (FFG). Whereas ‘traditional’ implementations rely on Bayes graphs in the form of Partially 
-Observable Markov Decision Processes (POMDP). FFG’s using reactive message passing only perform calculations when 
-necessary, hence there is no underlying clock which schedules calculations. The reactive paradigm thus may offer 
-computational benefits in certain situations, and enable favorable scaling properties for Active Inference models.
-https://rxinfer.ml/
-BIASlab
-Active Inference
-Implementations of Active Inference
-PyMDP
-The 
- at the Institute collaborates with with the developers of 
- in 
- 
-development, such as developing visualisation techniques of the FFGs within the code editor.
-RxInfer.jl Learning Group
-RxInfer.jl
-Open Source
-Core Capabilities
-RxInfer.jl provides powerful features for probabilistic modeling, including:
-Streaming dataset processing through reactive message passing
-Hybrid models combining discrete and continuous latent variables
-Scalable inference for large models with millions of parameters
-Automatic differentiation support for parameter tuning
- •
- •
- •
- •
-
-## Page 89
-
-PyMDP
-The 
- package 
- is an 
- 
-, 
-specifically “A Python package for simulating Active Inference agents in Markov Decision Process environments.”
-PyMDP
-https://github.com/infer-actively/pymdp
-Open Source
-Implementations of Active Inference
-Active Inference ModelStream 
-Active Inference ModelStream …
-Active Inference ModelStream 
-Active Inference ModelStream …
-Active Inference ModelStream 007.1 ~ Conor Heins & 
-Daphne Demekas ~ pymdp
-⁠
-https://www.youtube.com/watch?v=skf3sOM-7WI
-Active Inference ModelStream 
-Active Inference ModelStream …
-Active Inference ModelStream 
-Active Inference ModelStream …
-Active Inference 
- ~ pymdp
-ModelStream 007.2
-⁠
-https://www.youtube.com/watch?v=uX8iSoDR83g
-​
- 
-​
- 
-​
- 
-​
-
-## Page 90
-
-SPM (Statistical Parametric Mapping)
-Statistical Parametric Mapping (SPM, 
-) represents a pivotal development in the history of active inference and 
-computational neuroscience. Created by Karl Friston at the MRC Cyclotron Unit in the late 1980s, SPM began as a statistical 
-technique for analyzing brain imaging data, particularly fMRI, PET, and EEG data (
- and 
-).
-homepage
-Wikipedia
-History
-The development of SPM marked a crucial shift from simple region-of-interest analyses to whole-brain statistical approaches. 
-Originally written in MATLAB, SPM91 (also known as SPMclassic) became the community standard for analyzing neuroimaging 
-studies within a few years of its release. The software's success stemmed from its rigorous approach to making valid statistical 
-inferences about brain responses without prior knowledge of where those responses would occur.
-SPM's theoretical framework evolved to incorporate increasingly sophisticated statistical methods, including the general linear 
-model (GLM) and Gaussian field theory. This evolution paralleled and supported the development of active inference theory, as 
-many of the mathematical principles underlying SPM - particularly those involving free energy minimization and Bayesian 
-inference - became foundational to active inference. Today, while dedicated 
- toolboxes 
-exist in various programming languages (like 
- in Python, 
- in Julia), SPM remains significant as both a 
-historical cornerstone and practical tool in the field.
-Implementations of Active Inference
-PyMDP
-RxInfer.jl
-
-## Page 91
-
-Symbolic Active Inference
-Symbolic Active Inference, developed by Research 
- Jean-François Cloutier, represents an innovative approach to 
-combining symbolic reasoning with active inference principles. The framework aims to bridge the gap between traditional 
-symbolic AI and the free energy principle by implementing active inference using symbolic representations and logical 
-reasoning. This implementation allows for explicit modeling of beliefs, goals, and actions using symbolic structures while 
-maintaining the core mathematical principles of active inference - namely the minimization of variational free energy and 
-expected free energy. 
-Fellows
-The approach enables systems to perform goal-directed reasoning and planning through symbolic manipulation while 
-grounding these processes in the formal theory of active inference. Key aspects include the representation of generative 
-models using symbolic structures, belief updating through logical inference, and action selection based on expected free 
-energy minimization. This synthesis provides several advantages: it makes active inference more interpretable through explicit 
-symbolic representations, enables complex reasoning about abstract concepts and relations, and allows for more efficient 
-computation compared to purely numerical implementations. The framework has been demonstrated through implementations 
-in domains like robotic planning and symbolic problem-solving, showing how symbolic representations can be effectively 
-integrated with active inference's information-theoretic principles. This work represents an important step in developing hybrid 
-AI systems that combine the strengths of both symbolic and probabilistic approaches to intelligence.
-All 
- information on 
- can be found at 
- 
-Open Source
-Symbolic Active Inference
-https://github.com/jfcloutier/karma_system
-
-## Page 92
-
-Economics
-Economics is a very broad field. From macro policy to econometric micro optimization. Here the focus is on conceptualizing the 
-decision maker as it is relevant for deciding a relevant policy alternative from a potential set. Undoubtedly future work and 
-potential authors will expand this section greatly.
-The foundation of economics is to scale decision making to collective systems. Traditionally, decision makers are seen as utility 
-maximizers (or regret minimizers). With the underlying assumption of full information and (bounded) rationality. 
-However, active inference nuances this view by positing that rational choice is a limit case of decision making. Only occurring 
-during absolute certainty of observing one’s preferences 
-. Instead a pragmatic turn entails information 
-seeking as part of the decision process such that actions are both pragmatically and epistemically informed 
-.
-(Friston et al., 2013)
-(Schwartenbeck et al., 2015)
-Such a shift in perspective - all the way up to perspective swaps - may not be limited to traditional economics by expanding 
-existing frameworks with new methodologies. Instead, this shift from viewing choice as static towards a dynamic process, 
-means that multiple economic approaches to collective policy selection become feasible.
-One such alternative economic approach is broad prosperity. It involves taking inventory of a set of value-neutral indicators, of 
-which gross domestic product is just one. Unfortunately, it is very difficult to express the causal relationships between these 
-indicators as these span a variety of domains like social, environmental and economic concerns. Additionally, what occurs 
-locally has impacts globally and vice versa 
-. 
-(TNO, 2024)
-Active inference is poised to address these limitations. Given the nature of scale-free action perception loops; any self-
-organising system may be described as a sense-maker. In doing so solve the issue of not being able to sum free energy across 
-agents. For example when planning a new public transport line. One could calculate the total utility obtained via preference 
-elicitation (willingness to pay, stated and revealed choice experiments). Or one could instantiate a niche constructing digital 
-twin. The entire urban region which is assumed to itself be a scale-free niche constructor will then have to share its niche with 
-a synthetic artifact.
-Evaluating the potential of a policy alternative, like building a tram or bus line, becomes a practice of understanding the 
-generative model of the digital twin. Which is assumed to approximate a real niche constructor.
-
-## Page 93
-
-Education
-The transdisciplinary nature and flexibility of Active Inference makes the framework ideal for practical, theoretical, and 
-interoperable work across myriad use-cases. In the use case of learning in systematized settings (i.e. 
-) the 
-conventional planning frames take on wheels (π, as in policy selection) in order to function as a platform enabling translational 
-“spinning” (i.e. helicity) across contexts of greater scale (learning generalization as transfer). With the inertia from the spin as 
-your stability mechanism, the addition of policy selection by the learner as a self-organizing system (i.e. learning agent) within 
-larger variability retained settings, introduces uncertainties to test the which and the where of when trans-disciplinary 
-experience (i.e. real world experience, real dynamism, real problems) requires practical/pragmatic (i.e. action) solution(s). 
-Comparatively speaking, conventional frame containment as stabilizer, only provides a variability reduced-reductionism 
-environment ubiquitously held up as constructing learning where the product is a wide base as “foundational” retentions, and 
-relatively smaller “crowning” states, as in Maslow’s Hierarchy. 
-Education
-Before describing what the mechanics of this inclusion of policy selection is, and can look like for you, it is best to point out that 
-going forward, the acceptance that policy selection plays a role in how we learn, is not necessarily easy to incorporate as 
-strategy applied.  "I find this policy selection part hard to understand" is often heard when something new and/or unfamiliar is 
-introduced into a messaging exercise. This is understandable when a proposal uses terminology that isn’t part of the 
-newcomer’s current lexicon (and sometimes even when the term is already used).  To take up new labels (and the ideas behind 
-them) requires taking a step back from centuries of the accepted definition of what providing an education...is: define and 
-refine via a process of packaging and delivery of information (so deliver to me, the learner, what I can recognize).  Sustainers 
-and defenders of that (status quo) strategy will argue (correctly) there is much more going on than that minimum of two of 
-define and refine, and the Active Institute’s argument would be...maybe, possibly, but not certainly.  
-There too many examples, practiced both currently and historically in academia, to deny that at the core of educational 
-practice, there is a reinforcement and incentivisation firmly established around practices focused on defining (i.e. agreement 
-around an external ontology/standards) and refining (i.e. moving to smaller and smaller divergence(s) from what we see/do, and 
-what we think we're doing/seeing).  That being the case, new terminology like Prediction Matter Expert is the surprise given 
-that phrase’s like this that are introduced, lack consensus around meaning and precision.  Time is then spent working through 
-where the introduced term/label/idea can fit (appropriately) within contexts of particular study/focus/research. This is an 
-effortful exercise, that can often lead people new to Active Inference and the FEP, to wonder “where exactly is the Institute 
-going with this idea/terminology/set of formalisms?”   That’s a fair question, and in asking, we open a portal to the navigational 
-aspects of resolving the “where” of learning as orientation process. This is the “where am I?” action - not just wonder - as 
-Active Inference.
-Applying Active Inference and the FEP to educational programming - “you are now here, but you’re not staying here, you’re 
-going back out there” - has thus far struggled to gain much traction in many legacy (read hierarchical Pyramid Model) 
-educational systems. Given most education systems’ tendencies to want to place the certainty of keeping systems 
-accountable ahead of determining how agents learn when prediction-as-skill under uncertainty is given equal priority with 
-subject matter expertise (as skill), we continue to find that active inference as functional compliment needs time for mass 
-academic uptake (to scale). One of the core differences between subject matters and prediction matters exists at the waypoint 
-called Updating.  Currently, legacy education systems interpret “updating” as a cumulative-constructive-classical exercise, and 
-therefore it is surprising for those vested in that method, when someone with formal active inference priors, proclaims the 
-need to incorporate statistical and probability functions into the praxis and pedagogy design. This non-binary nature of 
-probability (i.e. could be zero, or one, or something between) aspect dependent on “what I as agent…thinks will happen,” does 
-exist as a teaching strategy, but is only applied within the variability reduced frame, pre-selected by the course/activity/lesson 
-plan designer who is the subject matter expert.
-And, active inference prediction modelling begins with the concept that the learning agent is first and foremost a self-organizer, 
-self-designer who wants (self-identifies) minimization of any divergence between their own model and what the niche 
-continually signals. Under this circumstance, updating as a process may take on constructive attributes, but it will also require 
-some exposure to de-constructing processes (i.e. the most basic being, when change in the situation is apparent, will the agent 
-1) accept that change and 2a) either modify their surroundings or 2b) modify their model?). This is a fundamentally different 
-type of branching - change the model, change the environment, change both - to pass/fail or even rubric induced accounts.
-
-## Page 94
-
-This then necessitates a different (second) definition of “updating” as a result of starting with a predictive probability of 
-achieving an ad hoc and post hoc processing threshold (could be described as ALL moves cardinal vs. NEXT moves 
-ordinal/sequential), before “right and wrong” or even “75% correct” as assessed (as the 25% “wrong” usually doesn’t carry 
-forward past the filters of constructive practices). 
-So why does this difference matter?  In arriving at a threshold minimum, the active inference learning agent needs to reconcile 
-while also keeping records.  That “25% wrong” for example, is actually valuable information (not to be discarded) if divergence 
-minimization is one of the stated goals. Now the question becomes “do I let go of what I predicted wrong because it didn’t 
-affect my pass/fail status, do I let what I got wrong change my aspirations because I haven’t achieved perfection, or, do I look 
-at Right-Wrong as a proportional measure from which to make future decisions?” (more on this shortly). Taking accounts and 
-making reconciliations, is the process of modifications by and to which the updating of the active inference generative model, 
-evolves. The conventional view of update as build-up, build-forth (Subject Matter Expertise, SME), is now complimented with a 
-Prediction Matter Expert (PME) view of “what can I as learning agent let go, in order to arrive at a new know?” as policy 
-selection to be determined. Borrowing from Chris Fields’ 
-, PME’s cope better with the 
-undecideability in the frame problem - what doesn’t change as a result of an action. Using Chris’ terminology, “circumscribing 
-what I don’t have to worry about”…means “I” can now take my “eye(s)” off of certain contents so as to increase availability for 
-new [to me as agent] contents.  Under this condition, the forensics come before, and not just after, a learning episode, making 
-policy selection (π) now one part agent domain, one part external plan designer/niche reducer domain - with All Moves now 
-meaning all of the puzzle pieces are present, and each is connected regardless of order application.
-Identity Operator presentation
-Of course, once the differences between legacy systems perspectives and active inference perspectives are held up as the 
-parameterized space, the ability for the learning agent to oscillate between perspectives (i.e. perspective swap as action) 
-becomes available. This oscillating process - first back, then forth...and never forth-only - is not uncommon. Agents swap 
-perspectives when pairing science with fiction, active with inference, math with art as comparative with collective proportional 
-measuring (as minimum) processing (unit of) analysis. 
-Which leaves the Institute with a challenge: how do we continue to attract Subject Matter Experts and point to the fact that 
-Subject Matter Expertise alone can only take one so far as a navigator in variability retained settings?  Another way of putting 
-this could be stated as, as an institute, can we afford to not talk about the gorilla in the room: how we learn (define and 
-refine...and retain) needs a co-pilot (what can I let go...to arrive at a new know?).  This being asked as AI and LLM's train on far 
-more information than humans can, to derive that synthesis (here's your answer!) that defining and refining puts out (outputs).  
-Let’s look at a real world example already introduced to the officers of the Institute where subject matter expertise attracted 
-agents to the institute, and, the institute had to find a way to help the “experts” let go of what they already know.  In this case 
-example, Active Inference has been linked to the process of early childhood education (Montessori programming).  Under 
-Montessori philosophy, teacher’s are described as “directors” with a focus on “independent learning.”  Comparisons can then be 
-made to other early childhood education approaches.  The 
- early learning method holds up their philosophy of 
-teachers roles as “partners” and “guides.” 
-Reggio Emilia
-The question then becomes one of: as the learning agent ages - enters different “grades”, stages and phases of Updating as a 
-result of predictive processing (probability now based on increased temporal depth) - does the teacher as multi-hat wearing 
-director/partner/guide/coach/facilitator still fit the needs of the self-organizing learner going forward?  Perhaps, if the learning 
-is organized as an adventure as a proxy for authentic - where once again authentic is trans-disciplinary real world experience, 
-real dynamism, real problems) requiring practical/pragmatic (i.e. action) solution(s), while an adventure is a simulation.  
-Or, as a PME enabler (Not trainer), does the teacher SWAP titles - by subjecting themselves to the Identity Operator process - 
-of Teacher with Way Finder (navigator), initiating their own perspective exchanging process of self-identifying (minimizer of 
-divergence between their own model, now as minimum(2) dual-state swap able [i.e. Gripper & Gripped - BY and TO - 
-simultaneously], with what the niche continually signals) resulting in an SME + PME hybrid triangulating with ANY niche (not 
-just their subject specialty)?  This would require teachers to both teach and co-learn interchangeably.
-As the reader can appreciate, this is a different condition than teachers staying close (closed) to what they know (SME 
-dilemma) and thus self-selecting away from “what can I let go, in order to arrive at a new know?”  This is where the Institute’s
-
-## Page 95
-
-role as director/partner/guide/coach/facilitator ends, and a co-piloting triangulation exercise (i.e. simulations to actualizations 
-and Back) begins. 
-Going forward, it is the Institute’s ambition to make clear that the channel (i.e. gap) between legacy systems developing subject 
-matter experts and what we view as new affordances that can be realized when uncertainty-as-learning-tool is perceived as a 
-feature - as prediction matter expertise - is a potential exponentiator of a learner’s predictive capacities within and beyond 
-systematized and variability reduced settings.  We choose to be partners in this enterprise, as we feel serving in that capacity 
-is closer to co-piloting than co-hosting in a flight simulator.  Every organization wonders where the “stay afloat” energy will 
-come from.  In our case, we policy select to work with people vested in research with a specialty focus who also want to be 
-able to generalize (play in “Scale Free”) with higher degrees of confidence when necessary (be a trans-disciplinarian when the 
-niche is open, and variability retained).
-
-## Page 96
-
-Philosophy
-Active inference provides a mathematical model of sense-making. Philosophy is the study the components and dynamics 
-captured by these mathematical models. It comprises of a broad literature in philosophy of mind spanning history. As such 
-active inference is not an island but densely connected to other descriptions and mathematical models of sense-making. Each 
-with their own components and dynamics. One such advancement is within the field of neurophenomenology that seeks to 
-build a dialogue between neuronal processes and philosophical constructs as experienced (
-). 
-Sandved-Smith et al. 2021
-Developing new implementations and applications of active inference benefits greatly from its philosophical context. 
-Theoretical advancement of how to interpret existing phenomena through the lens of active inference is not just to fill shelves 
-with studies. Advancement is essential to improve algorithms and inform applications across domains. After all, there are many 
-domains which have mathematical and conceptual models of sense-making. Each of which could potentially be evaluated 
-through an active inference lens.
-
-## Page 97
-
-Physics
-See 
- by Chris Fields, and more references to come.
-Physics course
-
-## Page 98
-
-Robotics
-See 
- JF Cloutier’s project, 
- (
-)
-Fellows
-Symbolic Active Inference project documentation
-Second 
- in 2022 had a focus on Robotics, 
-. 
-Applied Active Inference Symposium
-see program
- •
- •
-
-## Page 99
-
-Legal
-⁠
-Cases mentioning active inference
-⁠
-Patents mentioning active inference
-
-## Page 100
-
-Social
-Active inference research in the social domain tends to focus on modeling communication and the sharing of belief models 
-within groups. Such topics can be understood as pertaining to normative processes of group cognition. Over time, we can 
-expect research to extend further to pathological examples of group cognition, assessment of group cognition quality, steering 
-of group cognition to improve quality, evaluation of the cognitive architectures used during group cognition (e.g., rules, policies, 
-computational tools, communication tools, attention mechanisms), and evaluation of group cognition where the group is a 
-political body (such as a city or nation).    
-Group cognition rests on the communication of (potentially dynamic and evolving) belief models—-the internal generative 
-models that individuals use to predict and explain their world—and consensus building with respect to beliefs. As described by 
- for a generic group in the normative setting, “group members can be seen as actively and implicitly 
-aligning their beliefs and expectations through dialogue and interactions, thereby enhancing their ability to predict each other’s 
-actions and intentions, and thereby coming to perceive and act in the world in similar ways.” 
-Albarracin et al., 2024
-Most humans do not conceive of their own beliefs in terms of models, however. Rather, humans tend to experience their beliefs 
-and make sense of the world in part through narratives (
-; 
-; 
-; 
-). These can be internal narratives that a person constructs, adjusts, and recites to 
-himself or herself, or social narratives that are shared within a group. In the active inference context, 
- 
-consider social scripts, which are widely-supported prescriptions about how one is to behave in various social settings, or what 
-is important in those settings. 
- consider shared narratives conceived of more broadly. Social scripts 
-and shared narratives help humans to generate more accurate predictions about the world and to coordinate social behavior.
-Bietti, Tilston, and Bangerter 2019 Turner et al. 2023
-Fanti Rovetta 2023 Cordes et al. 2021
-Albarracin et al. (2021)
-Bouizegarene et al. (2020)
-The 
-, an Active Inference Institute project, has as a goal the facilitation of group cognition at scale, through 
-sharing of belief models (
-, 
-). This is an extension of previous work that viewed core societal systems 
-(e.g., economic, financial, and governance systems) as part of the cognitive architecture of political bodies (
-, 
-, 
-)
-CogNarr Ecosystem
-Boik, 2024a Boik, 2024b
-Boik, 2020a
-Boik, 2020b Boik, 2021
-A large body of active inference research, perhaps thousands of papers, at least mentions the social setting. In addition to 
-some articles already cited, articles in which the phrases “active inference” and “social” appear in the title include the following:
-. Active inference, enactivism and the hermeneutics of social cognition.
-Gallagher and Allen, 2018
-. Enactive-Dynamic Social Cognition and Active Inference.
-Hipólito and van Es, 2022
-. Regimes of Expectations: An Active Inference Model of Social Conformity and Human Decision 
-Making.
-Constant et al., 2019
-. Active Inference and Social Actors: Towards a Neuro-Bio-Social Theory of Brains and Bodies in Their 
-Worlds.
-Cheadle et al., 2024
-. Better Safe than Sorry?-An Active Inference Approach to Biased Social Inference in Depression.
-Kirchner et al., 2022
-. Learning Risk Preferences Through Social Interaction: An Active Inference Approach
-Tehrani-Safa et al., 2024
-. Active inference: Applicability to different types of social organization explained through reference to industrial 
-engineering and quality management.
-Fox, 2021
- Social Active Inference.
-Bezzazi, 2021.
-. Investigation of the Sense of Agency in Social Cognition, Based on Frameworks of Predictive Coding 
-and Active Inference: A Simulation Study on Multimodal Imitative Interaction.
-Ohata and Tani, 2020
-. Social Emotional Valence for Regulating Empathy in Active Inference.
-Matsumura et al, 2023
-. Creative Resilience. Flourishing and Valuation through Social Allostasis and Active Inference.
-Solymosi and Schulkin, 2024
-. Accounting Social Cognitive Mechanisms by the Framework of Predictive Coding and Active Inference: A 
-Synthetic Experimental Study using Robotics Interaction Platforms.
-Tani, 2019
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
- •
-
-## Page 101
-
-Logistics
-“Enhancing Population-based Search with Active Inference” (
-)
-Dehouche and Friedman, 2024
-
-## Page 102
-
-Scientific Method
-See 
- 
-Active Entity Ontology for Science (AEOS)
-Distributed Science - The Scientific Process as Multi-Scale Active Inference (
-)
-Balzan et al. 2023
-Generative Research Teams: Active Inference Compositions For Research and Meta-Science (
-)
-Friedman & Smekal 2023
-
-## Page 103
-
-DeSci
-Decentralized Science (
-) was explored in the 
- work. 
-DeSci
-Active Entity Ontology for Science (AEOS)
-
-## Page 104
-
-Discussion and Future Directions
-The Active Inference Institute attracts and amplifies the self-organizing abilities of people, thereby potentiating a unique 
-opportunity and a powerful and scalable platform from which to accomplish research and development goals. As members of 
-the Ecosystem, we continue to evolve an understanding and “voice” clarifying who we are, and who we might become, as a 
-collective. In the process of building both an organizational reputation and individual expectations, we are constantly reminded 
-of and inspired by the fact that the object of our research and development work, Active Inference, itself anticipates analysis 
-and integration well beyond systems that are “closed” in time or space (i.e. those constrained to evolve linearly with a 
-beginning, middle, and end as structure). We are interested in modeling, designing, and working with “open” systems, and have 
-sought to cultivate an Ecosystem and larger community that reflects the intrinsic openness and systemic “curiosity” of Active 
-Inference. With additional resources to support the work described in this application, the benefits of these open systems and 
-guidance on future interaction practices consistent with Active Inference can be readily made available across myriad domains.
-The Institute’s work and community building efforts have always exemplified the benefits of “open” systems, consistent with 
-the insights gleaned from Active Inference research itself. For example, when tracking open system behavior associated with 
-the development and evolution of Active Inference, The Institute might have chosen to place an emphasis on “closing” (i.e. 
-erecting constraints, applying limits, setting conditions, etc.) to simplify the challenge of modeling the space. However, rather 
-than take a closed system (laboratory-centric) approach alone, which might have relegated Active Inference to an isolated 
-academic disciplinary silo, we recognized the benefits that accrue from an “open” approach that invites self-organizers in the 
-broader Active Inference Ecosystem to migrate (the “active” in Active Inference) into programs and participation that best suits 
-their needs and prior experiences. Members of the Ecosystem will continue to encourage and support the opportunities to 
-embrace variation-retained field studies for Active Inference…everywhere.
-In the Ecosystem, we recognize that people and entities are explorers, capable of self-organization, motivated and eager to 
-discover, and change agents of Active Inference approaches in the truest sense. By applying and leveraging the collective 
-expertise of our community in preparation, scouting, and wayfinding practices, The Institute aims to continue helping 
-Ecosystem participants to move ideas off-the-bench and into complex real world situations where the interaction environment 
-acts as the ultimate scrutinizer. The resilience, sustainability and responsiveness of biological systems described through 
-Active Inference research suggests that the human and social systems benefits of applied Active Inference framings will 
-enhance the positive impact on the organization and operation of humans, including but not limited to The Institute itself.
-To the people already involved in the Active Inference community, the “Ecosystem” isn’t just a hypothetical and aspirational 
-future state. Instead, it is the actual current world of interactions among members of the Active Inference community that we 
-inhabit at all times. Active Inference, The Institute and members of the Ecosystem are all focused on dynamically adapting the 
-efficiencies of change management practices as we prepare, scout, and “way find” our way into the future with measurable 
-degrees of understanding around confidences, probabilities and the underlying mechanics involved, rather than depending on 
-static plans that are quickly rendered obsolete in times of rapid change. As The Institute and Ecosystem help build competence 
-and confidence in more agents in forms of organization and operation that reflect and apply Active Inference concepts, we will 
-grow the pool of potential first finds (discoveries and inventions) and high-reliability knowledge systems in our world. 
-Cultivating those skills as part of who we are as individuals and in organizations, and sharing those skills with others who are 
-eager to see the future, and to be the future, is more than just an attractor state to guide our actions. It is the core mission of 
-The Institute, Ecosystem, and its participants.
-Act. Infer. Serve.
-
-## Page 105
-
-⁠
-
-![page105_img1.png](images/page105_img1.png)
+Available: https://casrai.org/credit/
+54
 
 
 ---

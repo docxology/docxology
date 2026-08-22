@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-08-13T17:52:47+00:00",
-  "source_commit_at_generation": "66d611c6358ea24c4dd67465ba87f601258c241f",
+  "source_commit_at_generation": "24075cf5e2d32524755d5d801e20cd1a4f1910fb",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -20,21 +20,21 @@
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "247be35e5314a630562306e8d0d7be4a8fd151dcf72bd419ce2d899394f47d8b",
+    "pages/BIBLIOGRAPHY.md": "adcbe86e252fa2f182d853696ce08a460591d9430c79dcde925636d3f8231eb8",
     "pages/SOFTWARE.md": "93782033e18f7c19dd5ac466fe1bc96906a7a9c286d1e37f9f3b2c548c5d4291",
     "resume/source.json": "9e2dd487986d64d10ab3b96fa20d8d8fb86b9196b75cb92149672d25f058c0a2",
-    "data/current-counts.json": "3d1f684dadf4d72e2feb9ef861e5187886af1b103e7ba21c4bf6002ca6b7fa3b",
+    "data/current-counts.json": "ede4c2fcabe1bae8d86d1c8e40e98a1df001673926b909282f7d1ac4e5917a7a",
     "data/coverage-exceptions.json": "497c084a65e7b4dad409a72fc02fd0bb2586811bc2ed3d13c12eedb7ffa0ea9f",
     "data/repository-classification.json": "4e086ed3e3985693cd8b14588a4d3451a355869dd60f1a9b7aeeb38297d3f6ac",
-    "data/agent-index.json": "9761bcf7f15451ee2de95fbf5c0ab8f9720fc7609d22d5ba1b0ae07c44f451f1",
-    "data/generated-manifest.json": "edf351340154296e0a74da2ae535a99c14cb0c2a79c585416cb4e1d5d784dd25",
-    "data/pages-artifact-manifest.json": "ab7489c3740557a49353991fc8c6a27ed841f80e8d4959661e13ed17015c5fdf"
+    "data/agent-index.json": "98e6ab325aa68312c8bb2ec0b78b6801cd04ebbf3184402ad3fe23f6479d717d",
+    "data/generated-manifest.json": "fe273a92a8870204efed67ba4f5f2a037884739d5a89792bdf2693e5d9377cf5",
+    "data/pages-artifact-manifest.json": "67104cfed7df016ab8828a1f5dd87cc314f03fdef3e823b15e60af8b35a196e1"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "66d611c6358ea24c4dd67465ba87f601258c241f",
-    "artifact_file_count": 4523,
-    "artifact_bytes": 880936034,
+    "source_commit_at_generation": "24075cf5e2d32524755d5d801e20cd1a4f1910fb",
+    "artifact_file_count": 4524,
+    "artifact_bytes": 873661638,
     "omitted_paper_image_count": 8886
   },
   "deployment": {
@@ -69,7 +69,7 @@
       "Genetics & Biomedical": 15,
       "Presentations & Media": 15
     },
-    "extracted_images": 8886,
+    "extracted_images": 8944,
     "full_text_papers": 171,
     "generated_exports": {
       "data_publications_ld_main_entity": 209,

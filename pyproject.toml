@@ -8,3 +8,8 @@ dependencies = [
     "pytest>=8.0",
     "reportlab==4.5.1",
 ]
+
+[dependency-groups]
+resume = [
+    "reportlab>=4.5.1",
+]

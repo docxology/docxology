@@ -1,19 +1,21 @@
 {
-  "title": "NarrativeEcosystems",
+  "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
   "domain": "Cognitive Security",
   "type": "Book",
   "creators": [
     {
-      "name": "Daniel A. Friedman"
+      "name": "Cordes, Richard J.",
+      "affiliation": "COGSEC",
+      "role": "editor"
     },
     {
-      "name": "R.J. Cordes"
-    },
-    {
-      "name": "Virginia Bleu Knight"
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "COGSEC",
+      "orcid": "0000-0001-6232-9096",
+      "role": "editor"
     }
   ],
-  "description": "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-...",
+  "description": "Edited 2021 COGSEC volume collecting research outputs of the Narrative Information Management (NIM-21) initiative: Narrative Information Management; Digital Rhetorical Ecosystem Analysis; Knowledge Management Archipelago; and Active Inference in Modeling Conflict.",
   "abstract": "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-online Remote Teams, proposing the ONFT (Ontologies, Narratives, Formal documents, and Tools) framework for Remote Team formation and lifecycle management. We connect epistemic foraging and niche construction concepts to team development.",
   "keywords": [
     "narrative ecosystems",
@@ -44,5 +46,26 @@
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
   ],
-  "checked_at": "2026-07-01T20:50:01Z"
+  "checked_at": "2026-07-01T20:50:01Z",
+  "version": "1.0",
+  "doi": "",
+  "doi_url": "",
+  "zenodo_record": "",
+  "record_id": "",
+  "publication_date": "2021",
+  "resource_type": {
+    "title": "Book",
+    "type": "book"
+  },
+  "publisher": "COGSEC.org",
+  "source": "cogsec.org",
+  "external_pdf_url": "https://uploads-ssl.webflow.com/5fbe735a83a32b715dac6a28/61ba304e6e77f3eb38a816b4_NIE.pdf",
+  "files": [
+    {
+      "name": "2021_NarrativeEcosystems.pdf",
+      "size_bytes": 3554577,
+      "checksum": "md5:afc3d7837a9c00d0ec43b4366a0947a3",
+      "download_url": "https://uploads-ssl.webflow.com/5fbe735a83a32b715dac6a28/61ba304e6e77f3eb38a816b4_NIE.pdf"
+    }
+  ]
 }

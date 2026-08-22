@@ -1,6 +1,6 @@
 {
   "schema_version": "1.4",
-  "generated_at": "2026-08-17T21:29:19+00:00",
+  "generated_at": "2026-08-22T20:39:33+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -253,7 +253,7 @@
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-08-17.json",
+      "path": "/reports/asset_size_2026-08-22.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -805,7 +805,7 @@
     ],
     "VideoIndex": {
       "schema_version": "VideoIndex.v1",
-      "generated_at": "2026-08-10T17:11:59Z",
+      "generated_at": "2026-08-22T20:21:54Z",
       "source": "data/videos.json",
       "count": 1127,
       "counts": {
@@ -891,7 +891,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-08-17T21:29:19+00:00",
+        "checked_at": "2026-08-22T20:39:33+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -964,7 +964,7 @@
           "Genetics & Biomedical": 15,
           "Presentations & Media": 15
         },
-        "extracted_images": 8886,
+        "extracted_images": 8944,
         "full_text_papers": 171,
         "generated_exports": {
           "data_publications_ld_main_entity": 209,
@@ -1031,7 +1031,7 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-08-17T21:29:19+00:00",
+      "generated_at": "2026-08-22T20:39:33+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1054,11 +1054,11 @@
         "hard_limit_bytes": 1073741824,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 880140300,
+        "source_bytes": 872865790,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4523,
-        "artifact_bytes": 880936034
+        "artifact_file_count": 4524,
+        "artifact_bytes": 873661638
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1071,25 +1071,25 @@
     }
   },
   "dataset_hashes": {
-    "works": "ce879ab60c5ae795f9287bc998db1404368794ca00b50988c2a62dfd988a9f9d",
-    "software": "54336915990ed58f8f4a586e63f4ca445f1479755ebafe5f3c26afc0e8e7f83c",
+    "works": "161fcf51e243bd6e0c40ac94194f12646a75f5b407114411055eea8889b6df6e",
+    "software": "c8abb7e73c02d38f5dfa2a12475ec3a2cd7c88a30071b6add2c3bed995632e3f",
     "repositories": "b71d39d61261910ce426e24de80324d9302affa76c2819a0ff9325e6f728b14c",
     "artworks_index": "25adc127f1d2a46abd676ac37735a0bf6d2fbabea25992b609f203f24f78977c",
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
-    "videos": "8ccf116d82a7c46861fd52cd7d65a7351c72961bc4101bd72ada3423e64ae665",
-    "videos_index": "f9fec383f49d08b11a258d03e62c98995f857c0e68c3a95e79ddd9eb000d808f",
-    "search": "0fed49a85a6eed5fa206ce5b4da8917f8d7864c92860a2953522dfd45771c86a",
-    "claims": "7462c8bf9e43d85136cc194908a265776e9a032e1cb998fe32e77fb10015093a",
+    "videos": "b9123c28c93c9624e0d14536f77faa3d1839844abc13b9b6dadbd98d6afefb09",
+    "videos_index": "ec511d81a60d9854eea81bc5fb350e6365a7798e4444e138e1a77767ab20f2ac",
+    "search": "1f0f1ce86ef65f4ff8f2fa25c6b0c0c64e76476639dbd24008a37619659abeb8",
+    "claims": "fd6256727173b95ce1585e8caecfb82adfc14842c4c6712098ba6fcc2fd9fd94",
     "coverage_exceptions": "497c084a65e7b4dad409a72fc02fd0bb2586811bc2ed3d13c12eedb7ffa0ea9f",
     "repository_classification": "4e086ed3e3985693cd8b14588a4d3451a355869dd60f1a9b7aeeb38297d3f6ac",
-    "people": "5aa767130ecac73f34a727add70d26e9702822a2692d1ce9ee8ab96b637a69b3",
-    "organizations": "6dba7591ee92f9b31fb6326c96b4cb5f60363fa96af2c2eddd1026bb18f7d381",
-    "resume": "8d3b0485f780c701d191ee06277aa2b589aa875a23e0cc31abfc47fcdcfccd50",
-    "work_enrichment": "f3e1d9a24ac2392408d996cce6a9432e0df5344a396726c625a05f9df1275000",
-    "catalog": "2847309671b1ada09b3b9e817a4d6782aec0bf5624ec92b49265e7637a783f3f",
+    "people": "5ce61c17e33d18c52a5439c5131699e71942f7df8ca9ee0fea0f32480512697e",
+    "organizations": "99f717fd511c23c23c2cc15b32736f5f02477f204db2e8d51ce13eb15eb189b1",
+    "resume": "8545a63189218fc6612611bd186e754a69e3a1326c4d12f99276d92340ca599c",
+    "work_enrichment": "1b32cca09c5aa202b26532eefc72d2ba761d754f7ecaf419dec9320c541249b1",
+    "catalog": "6ad93471cd8d0294d9ba5a9c15c830350932d510a513c154e45c55c09f6b1abe",
     "reconciliation": "7742b26b46428f55ed8e81a67b3179e78f1a0b59254508a35730b5782b47068a",
-    "generated_manifest": "edf351340154296e0a74da2ae535a99c14cb0c2a79c585416cb4e1d5d784dd25",
-    "current_counts": "3d1f684dadf4d72e2feb9ef861e5187886af1b103e7ba21c4bf6002ca6b7fa3b"
+    "generated_manifest": "fe273a92a8870204efed67ba4f5f2a037884739d5a89792bdf2693e5d9377cf5",
+    "current_counts": "ede4c2fcabe1bae8d86d1c8e40e98a1df001673926b909282f7d1ac4e5917a7a"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -1127,7 +1127,7 @@
       "Genetics & Biomedical": 15,
       "Presentations & Media": 15
     },
-    "extracted_images": 8886,
+    "extracted_images": 8944,
     "full_text_papers": 171,
     "generated_exports": {
       "data_publications_ld_main_entity": 209,

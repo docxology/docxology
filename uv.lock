@@ -94,12 +94,20 @@ dependencies = [
     { name = "reportlab" },
 ]
 
+[package.dev-dependencies]
+resume = [
+    { name = "reportlab" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "pypdf", specifier = ">=5.0" },
     { name = "pytest", specifier = ">=8.0" },
     { name = "reportlab", specifier = "==4.5.1" },
 ]
+
+[package.metadata.requires-dev]
+resume = [{ name = "reportlab", specifier = ">=4.5.1" }]
 
 [[package]]
 name = "iniconfig"

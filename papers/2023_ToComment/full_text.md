@@ -16,12 +16,12 @@ Sensemaking of Digital Memetic Discourse
 October 16, 2021 
  
 Mridula Mascarenhas 1 
-Richard J. Cordes 2,3  
+Richard J. Cordes 2,3 
 Daniel A. Friedman 2,4 
-(1) California State University Monterey Bay , School of Humanities & Communication  
+(1) California State University Monterey Bay , School of Humanities & Communication 
 (2) COGSEC, 
 (3) Atlantic Council GeoTech Center , 
-(4) University of California, Davis, Dept. of Entomology & Nematology  
+(4) University of California, Davis, Dept. of Entomology & Nematology 
 A B S T R A C T
  
 This paper makes a case for integrating frameworks from two different knowledge 
@@ -136,7 +136,7 @@ Digital Rhetorical Ecosystem Analysis, 2021
  
 2 
 the digital public sphere and introducing rhetorical intervention as 
-needed, rather than focusing exclusively on source control.  
+needed, rather than focusing exclusively on source control. 
 Contemporary digital information ecosystems create particular burdens 
 on individual and collective capacities for reliable sensemaking and 
 robust public discourse. The increased volume and diversity of 
@@ -186,7 +186,7 @@ Digital Rhetorical Ecosystem Analysis, 2021
 attention to image memes that play a particular rhetorical role—i.e., 
 they participate in public argumentation by advancing claims [9]. In 
 sum, the rhetorical artifact at the center of our paper is the ubiquitous 
-rectangular box that is deployed to make a claim about a public issue.  
+rectangular box that is deployed to make a claim about a public issue. 
 The image meme has proved remarkably effective as a currency for 
 public discourse, especially on Facebook and Instagram [16]. In 
 particular, image memes have become integral to the destabilizing 
@@ -195,7 +195,7 @@ efforts to challenge and disrupt official and institutional discourses.
 The rhetorical dominance of image memes can be attributed to their 
 ability to function argumentatively and, thereby, persuasively in the 
 public sphere, constituting radical communities of discourse that are 
-engaged in decoding, sharing, and amplifying their contents [17].  
+engaged in decoding, sharing, and amplifying their contents [17]. 
 What does a rhetorical approach to the study of memes 
 entail? 
 Aristotle defined rhetoric as “the ability to see what is possibly 
@@ -211,13 +211,13 @@ persuasiveness of rhetorical form. Repetition of form contributes to
 the crystallization of a rhetorical genre [19]. The widespread and 
 increasing deployment of the image meme in digital public spaces has 
 elevated the image meme into a rhetorical genre, one tha t is capable of 
-charging a large scope of content with persuasive appeal.  
+charging a large scope of content with persuasive appeal. 
 Image memes have immense rhetorical power to shape online and 
 offline sensemaking and action. During the 2016 United States election, 
 Internet memes “enabled users to rapidly take a stand on and react to 
 developing political events in real time; they provided alternative 
 parallel discourses to mainstream media viewpoints; and they enabled 
-mobilizing voters outside of official political discourses” [20].  The 
+mobilizing voters outside of official political discourses” [20]. The 
 rhetorical power of multimedia memes has strengthened since 2016 
 [21,22]. Therefore, we argue for treating these artifacts as serious 
 agents that shape public narrative and action. 
@@ -235,7 +235,7 @@ by enriching analysis of image memes with rich semantic information
 embedded in the parsimonious combination of the meme components. 
 Symbolic cues in the memes not only advance logical claims but also 
 encode ambiguous yet intense emotional charge that could spur public 
-action. Interpreting cues within the meme against contextual knowledge  
+action. Interpreting cues within the meme against contextual knowledge 
 surrounding the meme is vital for the process of rhetorical analysis, 
 and, as we will discuss later, computational analysis of digital discourse 
 using a rhetorical approach. 
@@ -262,7 +262,7 @@ typically disclose their sources unlike other digital content. As such,
 image memes represent an epistemic break. They gain credibility not 
 because they arise from authoritative sources but precisely because they 
 claim no source. The rejection of source credibility makes image memes 
-a very powerful parallel discourse to more formal media channels and,  
+a very powerful parallel discourse to more formal media channels and, 
 in many cases, a direct challenge to information, claims, or narratives 
 that emerge from publicly-vetted sources. When interpellated audiences 
 decode and share image memes and engage in discourse about memes 
@@ -412,7 +412,7 @@ Digital Rhetorical Ecosystem Analysis, 2021
  
 8 
 box, seals a particular conclusion while deflecting attention from 
-warrants (assumptions) that could challenge the meme’s claims.  
+warrants (assumptions) that could challenge the meme’s claims. 
 A second image meme example below in Figure 2 illustrates the 
 profound intertextuality that undergirds memetic sensemaking. Image 
 memes are richly polysemic, despite their minimalistic rhetorical 
@@ -429,7 +429,7 @@ during 2020. The primary claim available for decoding by an
 interpellated audience is that right wing hysteria both deludes and fuels 
 itself by using Antifa as a bogeyman. The claim and inherent 
 interpellation of a left-wing audience are achieved through multiple 
-semiotic layers encoded in the meme’s rhetorical choices.  
+semiotic layers encoded in the meme’s rhetorical choices. 
 The image features a male hand writing in a notebook, in the 
 foreground, while the blurred figure of a reclining woman occupies the 
 background of the meme box. The image by itself is polysemic and does 
@@ -488,7 +488,7 @@ individual memes and consider how memes interact with and draw from
 each other to constitute, sustain, or destroy claims, and thereby 
 narrative patterns, in response to unfolding events over time. 
 Therefore, applying an ecosystem framework becomes essential to 
-understanding how memes produce public sensemaking. Our next  
+understanding how memes produce public sensemaking. Our next 
 section details the rich potential in leveraging the ecosystem as a 
 metaphor for studying the production and circulation of memes.
 
@@ -528,7 +528,7 @@ as an integrative framework in different systems such as large-scale data
 analytics [31], “app ecosystems” [32] corporate strategy [33], and 
 interactive role-playing games [34]. Across these diverse fields, 
 ecosystem metaphors can encourage holistic analysis and connect 
-abstract concepts to tangible systems and accessible experiences.  
+abstract concepts to tangible systems and accessible experiences. 
 The idea and terminology of a “digital ecosystem” has been used since 
 at least the 1980s, and has seen exponentially increasing use since the 
 early 2000s (Figure 3B). A search using Google Books Ngram viewer 
@@ -1969,7 +1969,7 @@ and
 personnel 
 requirements, scope, and expectations for the following steps 
 [130–132]. In the case of a meme analysis pipeline, we suggest 
-that the relevant products be broken into 5 broad categories:  
+that the relevant products be broken into 5 broad categories: 
 • Data Sets. While raw datasets do not constitute a 
 formal intelligence product, the data collected and 
 used for projections and other features are 
@@ -2559,7 +2559,7 @@ needed to generate forecasts, estimates, and current state features in
 real-time. In the case of the meme-analysis pipeline, supervisory and 
 data acquisition features would be most prominent, though control 
 features might be expressed in the form of prioritizations for users 
-performing classifications and collections (such as during political  
+performing classifications and collections (such as during political 
 happenings or swarm-behavior events), and in the form of explicit 
 direction of automated collections and classifications. Here we 
 present the rough blueprint of a meme analysis pipeline built in the 
@@ -2762,7 +2762,7 @@ ethic, the system is physically grounded in the software and hardware
 that are the enabling architecture of the online platform. Framing an 
 empirical (computational) basis as a starting point for studying 
 online discourse could allow a “rhetorical commons” ethic to emerge, 
-as driven and structured by psychological and ethical preferences.  
+as driven and structured by psychological and ethical preferences. 
 Approaches to collective governance of ecological and resource 
 commons have also integrated the economic insights of Elinor 
 Ostrom and others [185]. As with these ecological commons, digital 
@@ -2772,7 +2772,7 @@ functions, performance metrics, and a stated collective purpose
 been applied to online communities [187,188]. Connecting the notion 
 of “rhetorical commons” to the economic game theoretic setting of 
 the “tragedy of the commons” helps connect the behavior of users, 
-to outcomes at the level of the commons [189].  
+to outcomes at the level of the commons [189]. 
 Conclusions and Recommendations 
 Can an ecological framework layered on rhetorical analysis help 
 bridge the world of meaning and the capacities of computational 
@@ -2805,7 +2805,7 @@ applications and web extensions for providing
 lenses (e.g., enriched augmented views of an object) 
 on content displayed on various electronic devices. 
 • Curate a list of qualitative and quantitative patterns 
-in the rhetorical structure and use of image memes.  
+in the rhetorical structure and use of image memes. 
 • Consider users a part of an information commons 
 rather than simply affected by an information 
 system in future work on misinformation dynamics. 
@@ -2909,7 +2909,7 @@ of Creative Communications. 2015;10: 288–302.
 Guenther L, Ruhrmann G, Bischoff J, Penzel T, Weber A. 
 Strategic Framing and Social Media Engagement: Analyzing 
 Memes Posted by the German Identitarian Movement on 
-Facebook. Social Media + Society. 2020;6: 2056305119898777.  
+Facebook. Social Media + Society. 2020;6: 2056305119898777. 
 16. 
 Facebook: From Election to Insurrection. [cited 11 Aug 2021]. 
 Available: 
@@ -3033,7 +3033,7 @@ Rhetorical Situation to Rhetorical Ecologies. Rhetor Soc Q.
 40. 
 Equihua M, Espinosa Aldama M, Gershenson C, López-Corona 
 O, Munguía M, Pérez-Maqueo O, et al. Ecosystem antifragility: 
-beyond integrity and resilience. PeerJ. 2020;8: e8533.  
+beyond integrity and resilience. PeerJ. 2020;8: e8533. 
 41. 
 Marcellino W, Helmus TC, Kerrigan J. Detecting Conspiracy 
 Theories on Social Media: Improving Machine Learning to 
@@ -3145,21 +3145,21 @@ sightings
 64. 
 National Geographic Society. BioBlitz Program. [cited 7 Oct 
 2021]. Available: 
-https://www.nationalgeographic.org/projects/bioblitz/  
+https://www.nationalgeographic.org/projects/bioblitz/ 
 65. 
 Hood N, Littlejohn A. Hacking history: Redressing gender 
 inequities on Wikipedia through an editathon. Int Rev Res Open 
-Distrib Learn. 2018;19. doi:10.19173/irrodl.v19i5.3549  
+Distrib Learn. 2018;19. doi:10.19173/irrodl.v19i5.3549 
 66. 
 March L, Dasgupta S. Wikipedia Edit-a-thons as Sites of Public 
 Pedagogy. Proc ACM Hum-Comput Interact. 2020;4: 1–26. 
 67. 
 Zamora ME, Espinosa M, Gershenson C, López-Corona O, 
 Munguia M, Pérez-Maqueo O, et al. Ecosystem antifragility: 
-Beyond integrity and resilience. PeerJ PrePrints. 2019.  
+Beyond integrity and resilience. PeerJ PrePrints. 2019. 
 68. 
 Falk DA, Watts AC, Thode AE. Scaling Ecological Resilience. 
-Frontiers in Ecology and Evolution. 2019;7: 275.  
+Frontiers in Ecology and Evolution. 2019;7: 275. 
 69. 
 Asllani M, Lambiotte R, Carletti T. Structure and dynamical 
 behavior of non-normal networks. Sci Adv. 2018;4: eaau9403. 
@@ -3199,7 +3199,7 @@ Environ Manage. 2015;56: 1416–1427.
 77. 
 Tosa MI, Dziedzic EH, Appel CL, Urbina J, Massey A, Ruprecht 
 J, et al. The Rapid Rise of Next-Generation Natural History. 
-Frontiers in Ecology and Evolution. 2021;9: 480.  
+Frontiers in Ecology and Evolution. 2021;9: 480. 
 78. 
 Newell E, Jurgens D, Saleem HM, Vala H, Sassine J, Armstrong 
 C, et al. User Migration in Online Social Networks: A Case Study 
@@ -3352,7 +3352,7 @@ Forces. Center for Global Security Research; 2021.
 Rosen MA, Fiore SM, Salas E, Letsky M, Warner N. Tightly 
 coupling cognition: understanding how communication and 
 awareness drive coordination in teams. C2 Journal. 2008;2. 
-Available: https://apps.dtic.mil/sti/citations/ADA513557  
+Available: https://apps.dtic.mil/sti/citations/ADA513557 
 109. 
 Letsky M, Warner N, Fiore SM, Rosen M, Salas E, OFFICE OF 
 NAVAL RESEARCH ARLINGTON VA. Macrocognition in
@@ -3374,7 +3374,7 @@ Goertzel B. The Hidden Pattern: A Patternist Philosophy of
 Mind. Universal-Publishers; 2006. 
 112. 
 Bach J. Principles of Synthetic Intelligence PSI: An Architecture 
-of Motivated Cognition. Oxford University Press, USA; 2009.  
+of Motivated Cognition. Oxford University Press, USA; 2009. 
 113. 
 Bose R. Competitive intelligence process and tools for 
 intelligence analysis. Industrial Management & Data Systems. 
@@ -3393,7 +3393,7 @@ Kramer RM. A Failure to Communicate: 9/11 and the Tragedy of
 the Informational Commons. International Public Management 
 Journal. 2005;8: 397–416. 
 117. 
-Linn BM. The Echo of Battle. Harvard University Press; 2009.  
+Linn BM. The Echo of Battle. Harvard University Press; 2009. 
 118. 
 Austin NJE, Rankov NB. Exploratio: Military and Political 
 Intelligence in the Roman World from the Second Punic War to 
@@ -3434,7 +3434,7 @@ Hribar G, Podbregar I, Ivanuša T. OSINT: A “Grey Zone”? Int J
 Intell CounterIntelligence. 2014;27: 529–549. 
 126. 
 Bennett M, Waltz E. Counterdeception principles and 
-applications for national security. Artech House; 2007.  
+applications for national security. Artech House; 2007. 
 127. 
 Kambere G, Goh PH, Kumar P, Msafir F. The Financing of 
 Lashkar-e-Taiba. Combating Terrorism Exchange. 2011;1: 18. 
@@ -3451,8 +3451,8 @@ and-Control-Driven Approach to Classifying Terrorist
 Organizations and Its Application to Al Qaeda. Stud Conflict 
 Terrorism. 2006;29: 241–262. 
 130. 
-Phythian M. Beyond the Intelligence Cycle? In: Phythian  M, 
-editor. Understanding the Intelligence Cycle. Routledge; 2013.  
+Phythian M. Beyond the Intelligence Cycle? In: Phythian M, 
+editor. Understanding the Intelligence Cycle. Routledge; 2013. 
 131. 
 Gill P, Phythian M. From Intelligence Cycle to Web of 
 Intelligence: Complexity and the conceptualisation of 
@@ -3574,7 +3574,7 @@ Ekins E. Poll: 62% of Americans Say They Have Political Views
 They’re Afraid to Share. In: cato.org [Internet]. 22 Jul 2020 
 [cited 27 Jul 2021]. Available: https://www.cato.org/survey -
 reports/poll-62-americans-say-they-have-political-views-theyre-
-afraid-share?queryID=98d4c30397de4e786f8625a2b87a2380  
+afraid-share?queryID=98d4c30397de4e786f8625a2b87a2380 
 158. 
 Musto J. School principal sues over dismissal for sharing 
 conservative memes on Facebook. In: foxnews.com [Internet]. 9 
@@ -3596,7 +3596,7 @@ Digital Rhetorical Ecosystem Analysis, 2021
  
 71 
 2017 [cited 27 Jul 2021]. Available: 
-https://dspace.mit.edu/handle/1721.1/110987?show=full  
+https://dspace.mit.edu/handle/1721.1/110987?show=full 
 161. 
 Alexander S. NYT Is Threatening My Safety By Revealing My 
 Real Name, So I Am Deleting The Blog. In: slatestarcodex.com 
@@ -3606,7 +3606,7 @@ safety-by-revealing-my-real-name-so-i-am-deleting-the-blog/
 162. 
 Middlebrook C. The Grey Area: Instagram, Shadowbanning, and 
 the Erasure of Marginalized Communities. Shadowbanning, and 
-the Erasure of Marginalized. 2020. doi:10.2139/ssrn.3539721  
+the Erasure of Marginalized. 2020. doi:10.2139/ssrn.3539721 
 163. 
 Le Merrer E, Morgan B, Trédan G. Setting the Record Straighter 
 on Shadow Banning. arXiv [cs.SI]. 2020. Available: 
@@ -3676,10 +3676,10 @@ http://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=
 175. 
 Brownstein JS, Freifeld CC. HealthMap: the development of 
 automated real-time internet surveillance for epidemic 
-intelligence. Euro Surveill. 2007;12: E071129.5.  
+intelligence. Euro Surveill. 2007;12: E071129.5. 
 176. 
 Daneels A, Salter W. What is SCADA? 1999. Available: 
-https://accelconf.web.cern.ch/ica99/papers/mc1i01.pdf  
+https://accelconf.web.cern.ch/ica99/papers/mc1i01.pdf 
 177. 
 Yu X, Wu P, Han W, Zhang Z, Others. A remote SCADA system 
 for keeping fruits and vegetables fresh with ozone. Int J Food 
@@ -3691,7 +3691,7 @@ SCADA and GIS. Environ Sci Technol. 2013;36: 132–136.
 179. 
 Cannon P. Taking an “Ecological Turn” in the Evaluation of 
 Rhetorical Interventions. University of South Florida. 2019. 
-Available: https://scholarcommons.usf.edu/etd/8010  
+Available: https://scholarcommons.usf.edu/etd/8010 
 180. 
 Godwin M. Meme, Counter-meme. Wired. 1 Oct 1994. Available: 
 https://www.wired.com/1994/10/godwin-if-2/. Accessed 12 

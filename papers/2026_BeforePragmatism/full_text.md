@@ -15,7 +15,7 @@ Active Inference Institute
 daniel@activeinference.institute
 ORCID: 0000-0001-6232-9096
 DOI: 10.5281/zenodo.18807971
-March 5, 2026
+March 12, 2026
 
 ![page1_img1.jpeg](images/page1_img1.jpeg)
 
@@ -305,9 +305,12 @@ Peirce’s Cable Metaphor and Blake’s Living System
 Against the Cartesian Manufacture of Universal Doubt . . . . . . . . . . . . . . . . . .
 39
 5.1.6
-Inquiry as Organism-Environment Transaction and Adaptation . . . . . . . . . . . . .
+The Rejection of Authority and the Refusal of Passive Reception . . . . . . . . . . . .
 40
 5.1.7
+Inquiry as Organism-Environment Transaction and Adaptation . . . . . . . . . . . . .
+40
+5.1.8
 Fallibilism, Fourfold Vision, and the Refusal of Monopoly . . . . . . . . . . . . . . . .
 40
 5.2
@@ -317,26 +320,29 @@ Convergence 2: Truth as Living Process—Jamesian Verification and Blakean Conse
 The Scandal of Pragmatic Truth in Philosophy . . . . . . . . . . . . . . . . . . . . . .
 43
 5.2.2
-Blake’s Pragmatic Reversal: “What is now proved was once, only imagin’d” . . . . . .
+Truth “Happens” to an Idea: The Cash-Value of Generative Modeling . . . . . . . . .
 43
 5.2.3
+Blake’s Pragmatic Reversal: “What is now proved was once, only imagin’d” . . . . . .
+43
+5.2.4
 James’s Living Truth and Blake’s Dynamic Vision
 . . . . . . . . . . . . . . . . . . . .
 43
-5.2.4
+5.2.5
 The Will to Believe and the Will to Create
 . . . . . . . . . . . . . . . . . . . . . . . .
 44
-5.2.5
+5.2.6
 Dewey’s Warranted Assertibility and Blake’s Anti-Newtonian Critique . . . . . . . . .
 44
-5.2.6
+5.2.7
 The Entanglement of Fact, Value, and Thick Concepts . . . . . . . . . . . . . . . . . .
 44
-5.2.7
+5.2.8
 Imagination as the Agent’s Generative Model . . . . . . . . . . . . . . . . . . . . . . .
 45
-5.2.8
+5.2.9
 Regulative Hope and Blake’s Eschatological Vision . . . . . . . . . . . . . . . . . . . .
 45
 5.3
@@ -347,19 +353,22 @@ tion, and the Destruction of the Five Gates . . . . . . . . . . . . . . . . . . 
 The Rejection of the Inner Theater and the Rise of Transactional Ecology . . . . . . .
 46
 5.3.2
-Art as Experience in Dewey and Blake’s Workshop . . . . . . . . . . . . . . . . . . . .
+Experience as Aesthetic Production: Making the World Visible . . . . . . . . . . . . .
 47
-5.3.3
-The Pedagogy of Perception and Learning to See . . . . . . . . . . . . . . . . . . . . .
-49
-5.3.4
-The Phenomenological and Enactivist Connection
-. . . . . . . . . . . . . . . . . . . .
-50
 3
 
 ## Page 4
 
+5.3.3
+Art as Experience in Dewey and Blake’s Workshop . . . . . . . . . . . . . . . . . . . .
+49
+5.3.4
+The Pedagogy of Perception and Learning to See . . . . . . . . . . . . . . . . . . . . .
+49
+5.3.5
+The Phenomenological and Enactivist Connection
+. . . . . . . . . . . . . . . . . . . .
+50
 5.4
 Convergence 4: Social Selves and Collectives—Mead’s Generalized Other and Blake’s Albion,
 and the Thirteen Angels Who Descend . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -418,16 +427,17 @@ Fuller and the Pragmatic Tradition . . . . . . . . . . . . . . . . . . . . . . .
 Fuller’s Synergetics: A Geometry of Action and Experience . . . . . . . . . . . . . . .
 59
 5.6.3
-Operationalism: Bridgman’s Operations and Chang’s Iterationmatic Verification . . .
+Operationalism: Bridgman’s Operations and Chang’s Iterative Verification
+. . . . . .
 61
 5.6.4
 The Synergetics-Pragmatism-Blake Triad
 . . . . . . . . . . . . . . . . . . . . . . . . .
-61
+62
 5.6.5
 Applewhite and the Architecture of Collaboration
 . . . . . . . . . . . . . . . . . . . .
-62
+63
 5.6.6
 Kirby Urner and the Digital Continuation . . . . . . . . . . . . . . . . . . . . . . . . .
 63
@@ -436,7 +446,7 @@ America a Prophecy: Synergetics and Global Propagation . . . . . . . . . . . . .
 63
 5.6.8
 Toward a Pragmatic Geometry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-63
+64
 6
 Active Inference: The Mathematical Formalization of Pragmatic Visionary Epistemology 65
 6.0.1
@@ -490,8 +500,8 @@ Supplemental: America a Prophecy (Plaintext)
 Abstract
 When Boston’s Angel in William Blake’s America a Prophecy (1793) declares “No more I follow, no more
 obedience pay!” and the Thirteen Governors rend their robes to stand with Washington in the revolutionary
-flames, Blake enacts a drama of cognition that the American Pragmatists—writing a continent and a century
-later—would formalize as the structure of inquiry itself: the organism confronting an indeterminate situation,
+flames, Blake enacts a drama of cognition that the American Pragmatists—writing a continent away and a
+century later—would formalize as the structure of inquiry itself: the organism confronting a novel encounter,
 breaking inherited habit, and forging new modes of engagement with what Dewey called the “indeterminate
 situation.” This manuscript traces six structural convergences between Blake’s visionary epistemology and
 the pragmatist tradition from Peirce through Brandom. Orc’s revolutionary fire maps onto Peirce’s irrita-
@@ -1631,10 +1641,11 @@ a belief’s satisfactions are truth-relevant but a belief would only be “whol
 other vital benefits.”[James, 1907]
 4.4.3
 The Will to Believe
-In “The Will to Believe” (1896), James defended the right to adopt faith when facing a “genuine op-
-tion”—one that is “living” (personally meaningful), “forced” (mutually exclusive), and “momentous.” Two
-cognitive desiderata compete: obtain truth and avoid error.### From Cartesian Certainty to Evolutionary
-Fallibilismng error-avoidance makes sense only where avoiding error outweighs all else.[James, 1907]
+In “The Will to Believe” (1896), James defended the right to adopt faith when facing a “genuine option”—
+one that is “living” (personally meaningful), “forced” (mutually exclusive), and “momentous.” Two cognitive
+desiderata compete: obtain truth and avoid error.
+Privileging error-avoidance makes sense only where
+avoiding error outweighs all else.[James, 1907]
 4.4.4
 Jamesian Pragmatism: Truth as Verification and Radical Empiricism
 James’s radical empiricism holds that “the only things debatable among philosophers shall be things defin-
@@ -1841,13 +1852,13 @@ Pragmatism
 Haack, Misak, West, Sullivan
 Truth, race, feminism, ecology[Haack, 1993, West,
 1993]
-The intellectual pedigree diagram (Figure 6, below) maps the lineage of the American Pragmatist tradi-
-tion across six generations, from its 18th-century precursors to contemporary Active Inference. Solid grey
-edges indicate documented historical influence or direct pedagogical descent (e.g., Peirce to Dewey, Dewey
-to Rorty). Dashed red edges represent the primary thesis of this manuscript: the retroactive structural
-convergence between Blake’s### Evolutionary Epistemology: The Continuity of Mind and Nature the
-pragmatist/process-theory network. The diagram locates both Blake and Fuller’s Synergetics as essential,
-albeit non-traditional, components of the broader anti-representationalist, action-oriented paradigm.
+The intellectual pedigree diagram (Figure 6, below) maps the lineage of the American Pragmatist tradition
+across six generations, from its 18th-century precursors to contemporary Active Inference. Solid grey edges
+indicate documented historical influence or direct pedagogical descent (e.g., Peirce to Dewey, Dewey to Rorty).
+Dashed red edges represent the primary thesis of this manuscript: the retroactive structural convergence
+between Blake’s visionary epistemology and the pragmatist/process-theory network. The diagram locates
+both Blake and Fuller’s Synergetics as essential, albeit non-traditional, components of the broader anti-
+representationalist, action-oriented paradigm.
 Figure 6: Intellectual Pedigree: American Pragmatism, William Blake & Synergetics. Directed acyclic graph
 mapping six generations of intellectual lineage from 18th-century precursors to Active Inference.
 With this intellectual landscape in view—from Peirce’s fallibilist logic of inquiry through Dewey’s transac-
@@ -2000,21 +2011,21 @@ trade, and generosity a science That men get rich by; and the sandy desert is gi
 What God is he writes laws of peace, and clothes him in a tempest? What pitying Angel lusts for
 tears, and fans himself with sighs? What crawling villain preaches abstinence and wraps himself
 In fat of lambs?” — America a Prophecy, lines 40–51
-Boston’s Angel is asking Peirce’s question: by what authority are certain modes of inquiry suppressed?
-The demand to “keep the gen’rous from experience” is### The Rejection of Authority and the Refusal of
-Passive Reception Boston’s Angel is asking Peirce’s question: by what authority are certain modes of inquiry
-suppressed? The demand to “keep the gen’rous from experience” is an institutional suppression of inquiry
-that benefits “the ungenerous.” The Angel’s response—his decisive rejection of obedience (cf. the epigraph
-above)—is the break from Authority in favor of what Peirce would call the Method of Science: open, self-
-correcting engagement with reality. The answer to doubt is not certainty but activity: Peirce’s experimental
-method and Blake’s creative “labour” of Los, the Imagination working to re-forge broken perception.
+5.1.6
+The Rejection of Authority and the Refusal of Passive Reception
+Boston’s Angel is asking Peirce’s question: by what authority are certain modes of inquiry suppressed? The
+demand to “keep the gen’rous from experience” is an institutional suppression of inquiry that benefits “the
+ungenerous.” The Angel’s response—his decisive rejection of obedience (cf. the epigraph above)—is the break
+from Authority in favor of what Peirce would call the Method of Science: open, self-correcting engagement
+with reality. The answer to doubt is not certainty but activity: Peirce’s experimental method and Blake’s
+creative “labour” of Los, the Imagination working to re-forge broken perception.
 The speech deserves careful parsing. “pity is become a trade”—pity has been commodified, its authentic emo-
 tional force exploited for institutional profit. “generosity a science / That men get rich by”—generosity has
 been systematized into a technique of accumulation. “the sandy desert is giv’n to the strong”—the rhetoric
 of freedom masks a regime of dispossession. This is Blake anticipating not just Peirce but Marx, Dewey, and
 the entire critical tradition: the insight that epistemological structures (what counts as “knowledge,” who
 gets to “experience”) are inseparable from structures of power.
-5.1.6
+5.1.7
 Inquiry as Organism-Environment Transaction and Adaptation
 The convergence deepens when we consider the biological framing that both traditions share. Peirce’s ac-
 count of doubt as an “irritation” that provokes inquiry is essentially biological—the organism encounters a
@@ -2028,7 +2039,7 @@ and Blake recognize as genuine inquiry.
 The pragmatist claim that inquiry is a natural process—continuous with biological adaptation, not a super-
 natural faculty—is precisely Blake’s claim that Imagination is “Human Existence itself,” not a supernatural
 gift but the fundamental mode of human being.
-5.1.7
+5.1.8
 Fallibilism, Fourfold Vision, and the Refusal of Monopoly
 Peirce’s fallibilism—the thesis that any claim can be revised—provides an unexpected bridge to Blake’s
 epistemology. Blake’s Fourfold Vision is not a state of achieved certainty but a mode of engagement: the
@@ -2071,13 +2082,14 @@ for definite assignable reasons.” — William James, Pragmatism [1907: 42][Jam
 Hell, Plate 8 [Erdman 36][Blake, 1790, Erdman, 1988]
 5.2.1
 The Scandal of Pragmatic Truth in Philosophy
-James’s pragmatic theory of truth—that truth is not correspondence to a fixed reality but something###
-Truth “Happens” to an Idea:
-The Cash-Value of Generative Modeling* in the course of experience—
-scandalized his contemporaries. Russell accused James of making truth subjective; Moore charged him with
-confusing truth and verification. Yet a century later, the pragmatic theory of truth has proven remarkably
-durable, and its structural kinship with Blake’s epistemology illuminates both traditions.
 5.2.2
+Truth “Happens” to an Idea: The Cash-Value of Generative Modeling
+James’s pragmatic theory of truth—that truth is not correspondence to a fixed reality but something that
+happens to an idea in the course of experience—scandalized his contemporaries. Russell accused James of
+making truth subjective; Moore charged him with confusing truth and verification. Yet a century later, the
+pragmatic theory of truth has proven remarkably durable, and its structural kinship with Blake’s epistemol-
+ogy illuminates both traditions.
+5.2.3
 Blake’s Pragmatic Reversal: “What is now proved was once, only imagin’d”
 Blake’s Proverb of Hell—“What is now proved was once only imagined”—is, in compressed form, a pragmatic
 theory of truth. Unpack its logic:
@@ -2105,7 +2117,7 @@ built Heaven”—becomes proved through the collective action of the Americans.
 of authoritarian suppression) recoil because they encounter agents who actively engage with reality rather
 than passively submitting to it. This is James’s pragmatic truth made mythological: the idea that “works”
 is the idea that transforms the situation in which it operates.
-5.2.3
+5.2.4
 James’s Living Truth and Blake’s Dynamic Vision
 James described truth as “expedient in the way of our thinking… expedient in the long run and on the
 whole.”[James, 1907] To understand this properly, we must distinguish three claims:
@@ -2136,7 +2148,7 @@ that “works”—not in a vulgar sense of personal convenience, but in the sen
 between different parts of experience, linking them “satisfactorily, working securely, saving labor.”[James,
 1907] For Blake, imagination is not fantasy but the active mode by which the mind engages reality—and
 what it produces, when the engagement is genuine, is vision that transforms both the seer and the seen.
-5.2.4
+5.2.5
 The Will to Believe and the Will to Create
 James’s “The Will to Believe” (1896) defends the right to adopt beliefs that outstrip current evidence when
 facing a genuine option—living, forced, and momentous.[James, 1907] Blake’s prophetic project is, in
@@ -2150,7 +2162,7 @@ James argues that an exclusive emphasis on error-avoidance—“better go withou
 a lie”—cripples inquiry by ensuring we never test genuinely novel hypotheses.[James, 1907] Blake dramatizes
 the same insight: Urizen’s demand for absolute certainty produces “the Net of Religion” that traps humanity
 in mechanical repetition.
-5.2.5
+5.2.6
 Dewey’s Warranted Assertibility and Blake’s Anti-Newtonian Critique
 Dewey preferred “warranted assertibility” to “truth” because the latter term carries the metaphysical
 baggage of correspondence—the assumption that beliefs must “match” a mind-independent reality.[Dewey,
@@ -2161,7 +2173,7 @@ inquiry. The criteria are practical: Does the belief reorganize the elements of 
 whole”? Does it enable further productive action?[Dewey, 1920] For Blake, the equivalent criterion is vision:
 Does the mode of seeing illuminate or contract? Does it reveal “the World in a Grain of Sand” or reduce
 the grain to mere inert matter?
-5.2.6
+5.2.7
 The Entanglement of Fact, Value, and Thick Concepts
 Putnam’s argument for the collapse
 of
@@ -2181,7 +2193,7 @@ and Energy, Love and Hate, are necessary to Human existence.” The Marriage is,
 
 demonstration that the supposedly sharp boundary between fact (Heaven/Reason) and value (Hell/Energy)
 is an artifact of single-vision philosophy.
-5.2.7
+5.2.8
 Imagination as the Agent’s Generative Model
 The deepest link between pragmatic truth and Blakean imagination becomes visible when we understand
 imagination not as fantasy but as generative modeling: the construction of internal representations that
@@ -2193,7 +2205,7 @@ predictive and adaptive capacity. James’s “cash value” metaphor finds form
 of variational free energy—the degree to which the organism’s model matches the statistical structure of
 its environment. And Blake’s hierarchy of vision becomes a hierarchy of model complexity: single vision
 (impoverished model), fourfold vision (rich, integrated model).
-5.2.8
+5.2.9
 Regulative Hope and Blake’s Eschatological Vision
 Peirce’s concept of truth as the opinion “fated to be ultimately agreed to by all who investigate” is not a
 prediction but a regulative hope: the ideal horizon toward which inquiry asymptotically tends.[Peirce, 1877]
@@ -2283,11 +2295,13 @@ five gates of their law−built Heaven,” but “the five gates were consum’d
 to passive registration. Their consumption by Orc’s fires is Blake’s most powerful image of what Dewey would
 call the restoration of transactional experience: the barriers between organism and environment destroyed,
 perception restored to its full, active, participatory character.
-In the visualization of the five gates, Urizen’s “law-built Heaven” melts in fierce supernatural flames. This
-is Blake’s ultimate image of transactional### Experience as Aesthetic Production: Making the World
-Visible of the artificial boundary separating organism from environment. As the “doors of perception” are
-cleansed by the heat of pragmatic inquiry, human figures emerge from the collapsing architecture of spectator
-knowledge, realizing Dewey’s claim that experience is not what happens to us, but what we do with the world.
+5.3.2
+Experience as Aesthetic Production: Making the World Visible
+In the visualization of the five gates, Urizen’s “law-built Heaven” melts in fierce supernatural flames. This is
+Blake’s ultimate image of the transactional destruction of the artificial boundary separating organism from
+environment. As the “doors of perception” are cleansed by the heat of pragmatic inquiry, human figures
+emerge from the collapsing architecture of spectator knowledge, realizing Dewey’s claim that experience is
+not what happens to us, but what we do with the world.
 The poem also shows what the contraction of experience looks like. When Albion’s Angel deploys his plagues
 against America, the immediate effect is the shutting down of transactional engagement:
 “The citizens of New York close their books and lock their chests; The mariners of Boston drop
@@ -2312,10 +2326,6 @@ perception, the particular is the universal. The grain of sand is not an isolate
 infinite web of relations—geological, optical, tactile, metaphorical—all of which are directly experienced
 by the attentive perceiver. James’s radical empiricism and Blake’s visionary perception both insist that
 experience, properly attended to, is richer than any theory about it.
-5.3.2
-Art as Experience in Dewey and Blake’s Workshop
-Dewey’s Art as Experience (1934) provides the most direct philosophical counterpart to Blake’s artistic
-practice.[Dewey, 1934]
 47
 
 ## Page 48
@@ -2328,7 +2338,11 @@ Figure 8: The Five Gates Consumed. Urizen’s law-built Heaven melts in flames. 
 
 ## Page 49
 
-5.3.2.1
+5.3.3
+Art as Experience in Dewey and Blake’s Workshop
+Dewey’s Art as Experience (1934) provides the most direct philosophical counterpart to Blake’s artistic
+practice.[Dewey, 1934]
+5.3.3.1
 The Continuity of Art and Life
 Dewey argued that aesthetic experience is not a separate,
 elevated realm (“Art” with a capital A, housed in museums) but the consummation of ordinary experience—
@@ -2339,7 +2353,7 @@ Blake’s illuminated printing makes this continuity literal. In conventional pu
 is total: the author writes, the typesetter sets, the printer prints, the binder binds. Blake collapsed all these
 roles: he invented, engraved, printed, and hand-colored each plate himself. The result is an artifact in which
 artistic conception and physical execution are indistinguishable—text is image, meaning is material form.
-5.3.2.2
+5.3.3.2
 The Aesthetic as Epistemic
 For Dewey, aesthetic experience is not merely pleasurable but
 cognitive: it is the mode of experience in which perception achieves its highest integration. The artist does
@@ -2366,7 +2380,7 @@ No spectator; all participants
 “Continuous interchange”
 Text-image integration
 Form and content inseparable
-5.3.3
+5.3.4
 The Pedagogy of Perception and Learning to See
 Both traditions imply a pedagogy—a practice of learning to perceive more fully.
 Dewey’s educational philosophy, grounded in the pragmatist primacy of practice, insists that students learn
@@ -2385,17 +2399,17 @@ hiding from the fires of Orc…. For the Female Spirits of the dead, pining in b
 Run from their fetters; reddening, and in long-drawn arches sitting, They feel the nerves of
 youth renew, and desires of ancient times Over their pale limbs, as a vine when the tender grape
 appears.” — America a Prophecy, lines 120–127
-The “Female Spirits” who run from their fetters are Blake’s image of embodied experience reawakened. They
-“feel the nerves of youth renew”—perception is literally re-embodied, sensation restored. The simile—“as
-a vine when the tender grape appears”—is organic, developmental, Deweyan: growth is not the imposition
 49
 
 ## Page 50
 
+The “Female Spirits” who run from their fetters are Blake’s image of embodied experience reawakened. They
+“feel the nerves of youth renew”—perception is literally re-embodied, sensation restored. The simile—“as
+a vine when the tender grape appears”—is organic, developmental, Deweyan: growth is not the imposition
 of external form but the emergence of capacity from within the organism-environment transaction. This
 passage is the pedagogical counterpart to the five gates’ destruction: not merely the removal of barriers to
 perception but the positive restoration of the organism’s capacity for rich, transactional experience.
-5.3.4
+5.3.5
 The Phenomenological and Enactivist Connection
 The convergence of Dewey and Blake on experience connects both to the phenomenological tradition.
 Merleau-Ponty’s claim that the body is the “condition of objecthood, not an object itself” parallels both
@@ -2931,29 +2945,121 @@ Fuller’s most radical geometric claim is
 that the tetrahedron—not the cube—should serve as the unit of volumetric measure. Setting the regular
 tetrahedron’s volume to 1, Fuller demonstrated a concentric hierarchy of nested polyhedra whose volumes
 are all whole numbers or simple fractions—a result impossible in Cartesian cubic measure:[Fuller, 1975]
-Polyhedron
-Synergetics Volume Cartesian Equivalent
-Tetrahedron
+#
+Shape
+IVM Volume
+XYZ Volume
+Comments
+0
+A
+0.041667
+0.039284
+24 make a Tetra
 1
-~0.118 cubic units
-Dual Tetrahedron (Stella Octangula)
-1
-~0.118 cubic units
-Cube
+B
+0.041667
+0.039284
+AAB = BAA =
+Mite
+2
+T
+0.041667
+0.039284
+1/120 RT5
 3
-1 cubic unit
-Octahedron
+E
+0.041731
+0.039345
+1/120 RT5+
 4
-~0.471 cubic units
-Rhombic Dodecahedron
+S
+0.045085
+0.042507
+(𝜑**-5) / 2
+5
+Tetra
+1.000000
+0.942809
+edges D, from 4
+IVM balls
 6
-~1.414 cubic units
-Cuboctahedron (Vector Equilibrium)
-20
-~2.357 cubic units
+Cubocta
+2.500000
+2.357023
+some faces flush
+with Octa 4
+7
+Icosa
+2.917961
+2.751080
+some faces flush
+with Octa 4
+8
+Cube
+3.000000
+2.828427
+Duo-Tet, face
+diagonals = D
+9
+Octa
+4.000000
+3.771236
+Dual of Cube,
+edges D
+10
+RT5
+5.000000
+4.714045
+120 T mods
+11
+RT5+
+5.007758
+4.721360
+120 E mods
+12
+RD
+6.000000
+5.656854
+long diagonals = D,
+sphere domain
+13
+RT
+7.500000
+7.071068
+some vertexes
+shared with RD
+14
+Icosa
+18.512296
+17.453560
+edges = D
+15
+Cubocta
+20.000000
+18.856181
+edges = D, 1F,
+12-balls around
+nuclear ball
+16
+SuperRT
+21.213203
+20.000000
+icosa of edges D +
+dual
+17
+Cube
+24.000000
+22.627417
+face diagonals =
+2D, 2F
+Table source: Kirby Urner, Flickr [Urner, 2010]
 The whole-number ratios of the concentric hierarchy are not a coincidence but a consequence of the tetra-
 hedron being nature’s minimum structural system. Fuller regarded this as evidence that “nature is using a
 coordinate system” based on closest-packing and 60-degree coordination rather than the 90-degree Cartesian
+60
+
+## Page 61
+
 grid—a geometric operationalism that Peirce’s pragmatic maxim would endorse: the meaning of “volume” is
 determined by the operations used to measure it, and different operational frameworks yield different (and
 differently illuminating) truths.[Fuller, 1975]
@@ -2981,15 +3087,11 @@ of the VE. This transformation—which Fuller discovered in 1948 and demonstrate
 throughout his career—connects the most symmetrical polyhedron (the VE, with 12 vertices equidistant
 from the center) to the most compact (the octahedron, with 4 units of Synergetics volume), passing through
 the icosahedron (the basis of viral capsid geometry and Penrose tiling) along the way. The Jitterbug is
-60
-
-## Page 61
-
 Fuller’s geometric enactment of Blake’s doctrine: contraries do not cancel but transform—the VE and the
 octahedron are not different objects but different states of the same dynamic system, related by continuous
 motion rather than static comparison.
 5.6.3
-Operationalism: Bridgman’s Operations and Chang’s Iterationmatic Verification
+Operationalism: Bridgman’s Operations and Chang’s Iterative Verification
 Fuller’s epistemology is fundamentally operationalist: a concept means what it does, not what it repre-
 sents.[Bridgman, 1927] This connects him to Percy Bridgman’s operationalism (itself a descendant of Peirce’s
 pragmatic maxim) and, through Bridgman, back to the pragmatist mainstream. Critically, Bridgman in-
@@ -3011,6 +3113,10 @@ Fuller operationalized this maxim literally: to understand a structure is to bui
 a representation of Fuller’s philosophy but its verification—the proof that triangulated structures achieve
 maximum strength-to-weight ratios, that “doing more with less” (Fuller’s principle of ephemeralization)
 is a genuine possibility.
+61
+
+## Page 62
+
 5.6.3.2
 Blake, Fuller, and Anti-Newtonian Praxis
 Both Blake and Fuller mounted sustained attacks
@@ -3043,10 +3149,6 @@ but in practice: Blake’s illuminated printing, Fuller’s geodesic structures.
 5.6.4
 The Synergetics-Pragmatism-Blake Triad
 Synergetics occupies a unique position in the Blake-Pragmatism synthesis:
-61
-
-## Page 62
-
 Dimension
 Blake
 Pragmatism
@@ -3097,6 +3199,10 @@ communal inquiry.
 approximation
 Synergy is the mathematical name for what Blake called “Fourfold Vision” and what the pragmatists called
 “the whole of experience.”
+62
+
+## Page 63
+
 5.6.5
 Applewhite and the Architecture of Collaboration
 E.J. Applewhite’s role in producing Synergetics deserves specific attention as an embodiment of the pragma-
@@ -3117,10 +3223,6 @@ intuitions required Applewhite’s editorial discipline to become public knowled
 Blake presents an analogous scene: Washington, Franklin, Paine, Warren, Allen, Gates, and Lee stand
 together—no single revolutionary carries the fire alone, but the collective body, “in the flames,” views “the
 armies drawn out in the sky” (America, lines 81–83).
-62
-
-## Page 63
-
 5.6.6
 Kirby Urner and the Digital Continuation
 Kirby Urner (b. 1958) has systematically translated Fuller’s geometric philosophy into Python code and
@@ -3153,6 +3255,10 @@ America a Prophecy: Synergetics and Global Propagation
 Blake’s America anticipates Fuller’s “Spaceship Earth” vision in its closing movement. After the revolu-
 tionary fire consumes the five gates of law-built Heaven, the poem widens its lens to encompass the entire
 Atlantic world:
+63
+
+## Page 64
+
 “Stiff shudderings shook the heav’nly thrones! France Spain & Italy / In terror view’d the bands
 of Albion, and the ancient Guardians, / Fainting upon the elements, smitten with their own
 plagues!” — America a Prophecy, lines 144–146
@@ -3173,10 +3279,6 @@ laries (Rorty), or habits (Dewey), then changing the tools changes what we can t
 the tetrahedron for the cube is not merely a mathematical curiosity but a pragmatic experiment: does think-
 ing in 60-degree coordinates, in closest-packed relationships, in synergetic wholes produce different—and
 perhaps more adaptive—cognitive outcomes than thinking in 90-degree abstractions?
-63
-
-## Page 64
-
 Blake would have understood the stakes immediately. The question “Cube or tetrahedron?” is a version of
 his question “Single vision or fourfold?” Both are questions about the relationship between the frameworks
 we use and the realities we can perceive. And both imply that the frameworks are not given by nature but
@@ -3418,8 +3520,8 @@ mythological confrontation. America a Prophecy, lines 91–137; AI-generated ill
 Figure 11: The Triadic Synthesis: Blake × Pragmatism × Active Inference. Three-way conceptual mapping
 revealing structural isomorphism across Blake’s prophetic vocabulary, the pragmatist tradition of action-
 oriented epistemology, and the formal mathematics of Active Inference. Six convergence nodes mediate the
-triangle. Edge annotations detail specific correspondences: Doors ￿Transaction, Imagination ￿Tools, Inquiry
-￿Free Energy Minimization, Markov Blanket ￿Doors of Perception, among others.
+triangle. Edge annotations detail specific correspondences: Doors ↔Transaction, Imagination ↔Tools,
+Inquiry ↔Free Energy Minimization, Markov Blanket ↔Doors of Perception, among others.
 69
 
 ![page69_img1.jpeg](images/page69_img1.jpeg)
@@ -3953,7 +4055,8 @@ With fierce disease and lust, unable to stem the fires of Orc, But the five gate
 bolts and hinges melted; And the fierce flames burnt round the heavens, and round the abodes of men.
 References
 Jane Addams. Democracy and Social Ethics. Macmillan, 1902.
-E. J. Applewhite. Cosmic Fishing. Macmillan, 1977.
+E. J. Applewhite. Cosmic Fishing: An Account of Writing Synergetics with Buckminster Fuller. Macmillan,
+New York, 1977. ISBN 978-0025041005.
 E. J. Applewhite. Washington Itself: An Informal Guide to the Capital of the United States. Beaufort Books,
 New York, 1981. ISBN 978-0688006388.
 E. J. Applewhite. Paradise Mislaid: Birth, Death, and the Human Predicament of Being Biological. St.

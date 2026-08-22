@@ -11,7 +11,7 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-08-17",
+  "dateModified": "2026-08-22",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -409,7 +409,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#full-text-corpus",
       "name": "Full-Text Extraction Corpus",
-      "description": "171 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 139 images/ subdirectories with 8,886 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
+      "description": "171 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 139 images/ subdirectories with 8,944 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
       "url": "https://danielarifriedman.com/papers/",
       "encodingFormat": "application/json",
       "creator": {
@@ -594,7 +594,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-08-17.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-08-22.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -608,7 +608,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-08-17.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-08-22.json",
         "encodingFormat": "application/json"
       }
     },

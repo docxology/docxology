@@ -207,7 +207,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-08-17.json"
+        "reports/pages_artifact_growth_2026-08-22.json"
       ],
       "sources": [
         "tracked repository files",
@@ -516,7 +516,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-08-17.json"
+        "reports/asset_size_2026-08-22.json"
       ],
       "sources": [
         "root HTML pages",
