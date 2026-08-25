@@ -234,7 +234,7 @@ ARTIFACTS = [
     {
         "name": "GitHub Pages artifact",
         "outputs": ["bounded _site/ deployment projection", "data/pages-artifact-manifest.json", _latest_report("pages_artifact_growth_*.json", "reports/pages_artifact_growth_2026-07-17.json")],
-        "sources": ["tracked repository files", "code/orchestrators/build_pages_artifact.py", "docs/operations/github-pages-artifact.md"],
+        "sources": ["tracked repository files", "code/src/release_controls.py", "code/orchestrators/build_pages_artifact.py", "docs/operations/github-pages-artifact.md"],
         "command": "python3 code/orchestrators/build_pages_artifact.py --write-manifest --output /tmp/docxology-pages --check-size --check-manifest",
     },
     {

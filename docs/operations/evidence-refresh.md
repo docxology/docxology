@@ -18,6 +18,15 @@ it never edits bibliography rows, paper metadata, claims, Scholar metrics,
 repository classifications, or generated site data. Its `--check` mode
 re-renders both artifacts without writing and fails on any difference.
 
+For a pre-deploy committed review, the renderer records the latest non-control
+payload revision. This permits the dated review itself to be committed in the
+same narrow control tail as the Pages manifest without making its no-write
+check self-referential. It is not a deployment receipt. After Pages has
+deployed a clean candidate checkout, regenerate the review with
+`--exact-source-revision` before creating the deployment attestation; that
+mode binds its `source_commit` and `source_tree_sha` to the exact current
+candidate `HEAD` required by `validate_repo.py --release`.
+
 If the GitHub–Zenodo scan is rate-limited or otherwise refuses to write a
 fresh pairing report, do not let the prior dated report stand in for the failed
 refresh. Record the bounded failure in the review artifact instead:

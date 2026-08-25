@@ -47,6 +47,7 @@ GENERATOR_FILES = (
     "code/orchestrators/classify_repositories.py",
     "code/orchestrators/audit_assets.py",
     "code/src/public_integrity.py",
+    "code/src/release_controls.py",
 )
 
 

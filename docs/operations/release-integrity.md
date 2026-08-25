@@ -30,7 +30,9 @@ generated layer, artifact, deployment, and live verification records agree.
    JSON-level counts, Pages status `built`, and a successful deployment run.
 7. After Pages reports the candidate SHA as built, re-run the affected browser,
    visual, link, and live-site evidence against that exact SHA. In the clean
-   candidate checkout, create a receipt with `uv run python3
+   candidate checkout, re-render the public-source review with `uv run python3
+   code/orchestrators/build_public_source_review.py --exact-source-revision`,
+   then create a receipt with `uv run python3
    code/orchestrators/attest_release.py --apply --commit <deployment-sha>`, then
    run `uv run python3 code/orchestrators/validate_repo.py --release
    --release-commit <deployment-sha> --deployment-attestation
@@ -58,6 +60,14 @@ control-only tail. Its `source_commit_at_generation` remains the candidate
 payload SHA. The Pages check permits only that narrow tail and fails if any
 later commit changes published content while the manifest still names the old
 SHA.
+
+The dated pre-deploy public-source review follows the same control-tail policy:
+its default renderer records the last payload revision and tree so the report
+can be committed with other controls without becoming permanently stale. This
+is distinct from post-deploy evidence. Regenerate it with
+`build_public_source_review.py --exact-source-revision` in the clean deployed
+candidate checkout before attestation; only that mode can satisfy the release
+gate's exact deployed-SHA provenance requirement.
 
 `data/release-integrity.json` is a pre-deploy envelope: it records source and
 generator hashes, the Pages artifact summary, CV privacy status, and the

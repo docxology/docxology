@@ -54,6 +54,8 @@ def test_all_dated_artifact_control_reports_are_control_metadata():
     assert bpa.is_control_path(Path("reports/asset_size_2026-07-22.json"))
     assert bpa.is_control_path(Path("reports/pages_artifact_growth_2026-07-22.json"))
     assert bpa.is_control_path(Path("reports/pages_artifact_growth_2026-07-24.json"))
+    assert bpa.is_control_path(Path("reports/public_source_review_2026-08-25.json"))
+    assert bpa.is_control_path(Path("reports/public_source_review_2026-08-25.md"))
 
 
 def test_only_top_level_growth_reports_are_control_metadata():
@@ -62,6 +64,13 @@ def test_only_top_level_growth_reports_are_control_metadata():
     assert not bpa.is_control_path(
         Path("untrusted/reports/pages_artifact_growth_2026-08-25.json")
     )
+    assert not bpa.is_control_path(
+        Path("untrusted/reports/public_source_review_2026-08-25.json")
+    )
+    assert not bpa.is_control_path(Path("reports/public_source_review_evil.json"))
+    assert not bpa.is_control_path(Path("reports/public_source_review_2026-99-99.json"))
+    assert not bpa.is_control_path(Path("reports/public_source_review_2026-08-25.proposed.json"))
+    assert not bpa.is_control_path(Path(r"reports\\public_source_review_2026-08-25.json"))
 
 
 def test_pages_input_symlinks_fail_closed(tmp_path):
@@ -101,6 +110,8 @@ def test_source_revision_allows_a_trailing_control_only_commit() -> None:
             Path("data/release-integrity.json"),
             Path("reports/asset_size_2026-08-25.json"),
             Path("reports/pages_artifact_growth_2026-08-25.json"),
+            Path("reports/public_source_review_2026-08-25.json"),
+            Path("reports/public_source_review_2026-08-25.md"),
         ],
         "payload": [Path("pages/BIBLIOGRAPHY.md")],
     }

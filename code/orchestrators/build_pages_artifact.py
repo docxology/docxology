@@ -13,16 +13,24 @@ from the repository.
 from __future__ import annotations
 
 import argparse
-import fnmatch
 import hashlib
 import json
 import shutil
 import subprocess
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Callable
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+import release_controls  # noqa: E402
+
+# Re-export the shared policy for existing callers and focused contract tests.
+CONTROL_FILES = release_controls.CONTROL_FILES
+CONTROL_REPORT_PATTERNS = release_controls.CONTROL_REPORT_PATTERNS
+is_control_path = release_controls.is_control_path
+_latest_payload_commit = release_controls.latest_payload_commit
+
 DEFAULT_OUTPUT = REPO_ROOT / "_site"
 # 900 MiB is the repository's release hard ceiling; GitHub Pages itself has a
 # 1 GiB platform maximum.  Keep both values explicit so a warning is not
@@ -32,18 +40,6 @@ WARNING_ARTIFACT_BYTES = 850 * 1024 * 1024
 HARD_ARTIFACT_BYTES = 1024 * 1024 * 1024
 ARTIFACT_MANIFEST = REPO_ROOT / "data" / "pages-artifact-manifest.json"
 GROWTH_REPORT = REPO_ROOT / "reports" / f"pages_artifact_growth_{datetime.now(timezone.utc).date().isoformat()}.json"
-CONTROL_FILES = {
-    Path("GENERATED.md"),
-    Path("data/agent-index.json"),
-    Path("data/generated-manifest.json"),
-    Path("data/pages-artifact-manifest.json"),
-    Path("data/release-integrity.json"),
-    GROWTH_REPORT.relative_to(REPO_ROOT),
-}
-CONTROL_REPORT_PATTERNS = (
-    "asset_size_*.json",
-    "pages_artifact_growth_*.json",
-)
 
 EXCLUDED_ROOTS = {
     ".benchmarks",
@@ -147,19 +143,6 @@ def source_path(relative: Path, *, repo_root: Path = REPO_ROOT) -> Path:
     return source
 
 
-def is_control_path(path: Path) -> bool:
-    """Return whether a published path is control metadata, not payload data."""
-    # ``Path.match`` treats a pattern containing a directory as a suffix match,
-    # so ``untrusted/reports/asset_size_*.json`` would otherwise evade the
-    # payload manifest and budget. Control reports live exactly at the
-    # repository's top-level reports/ path.
-    is_control_report = (
-        path.parent == Path("reports")
-        and any(fnmatch.fnmatchcase(path.name, pattern) for pattern in CONTROL_REPORT_PATTERNS)
-    )
-    return path in CONTROL_FILES or is_control_report
-
-
 def _omitted_paths() -> list[Path]:
     return sorted(
         (
@@ -200,73 +183,7 @@ def _source_commit() -> str:
     change.  This makes a later README/source commit visible to ``--check``
     without creating a self-referential manifest requirement.
     """
-    result = subprocess.run(
-        ["git", "rev-parse", "HEAD"], cwd=REPO_ROOT, check=False, capture_output=True, text=True
-    )
-    head = result.stdout.strip() if result.returncode == 0 else "unknown"
-    if head == "unknown":
-        return head
-    return _latest_payload_commit(head, _first_parent, _changed_paths)
-
-
-def _first_parent(commit: str) -> str | None:
-    """Return ``commit``'s first parent, or ``None`` for a root/unresolved commit."""
-    result = subprocess.run(
-        ["git", "show", "-s", "--format=%P", commit],
-        cwd=REPO_ROOT,
-        check=False,
-        capture_output=True,
-        text=True,
-    )
-    if result.returncode != 0:
-        return None
-    parents = result.stdout.split()
-    return parents[0] if parents else None
-
-
-def _changed_paths(commit: str) -> list[Path]:
-    """Return paths changed from the first parent to ``commit``.
-
-    Using the first parent gives merges the same source-revision meaning as a
-    normal release branch: a merge is substantive whenever it introduces a
-    non-control path relative to the branch it extends.
-    """
-    parent = _first_parent(commit)
-    if not parent:
-        return []
-    result = subprocess.run(
-        ["git", "diff-tree", "--no-commit-id", "--name-only", "-r", "-z", parent, commit],
-        cwd=REPO_ROOT,
-        check=False,
-        capture_output=True,
-    )
-    if result.returncode != 0:
-        # An unresolved history must never be silently classified as a
-        # control-only suffix.  The commit itself remains the source anchor.
-        return [Path(".unresolved-source-revision")]
-    return [Path(raw) for raw in result.stdout.decode("utf-8", errors="surrogateescape").split("\0") if raw]
-
-
-def _latest_payload_commit(
-    head: str,
-    parent_for: Callable[[str], str | None],
-    changed_paths_for: Callable[[str], list[Path]],
-) -> str:
-    """Find the latest non-control commit in a first-parent history.
-
-    ``parent_for`` and ``changed_paths_for`` are explicit collaborators so the
-    release boundary can be tested with a small deterministic history rather
-    than by mutating the real Git repository.
-    """
-    candidate = head
-    while True:
-        parent = parent_for(candidate)
-        if not parent:
-            return candidate
-        changed = changed_paths_for(candidate)
-        if not all(is_control_path(path) for path in changed):
-            return candidate
-        candidate = parent
+    return release_controls.source_payload_commit(REPO_ROOT)
 
 
 def validate_source_commit_at_generation(

@@ -9,6 +9,7 @@ import subprocess
 from pathlib import Path
 from typing import Optional
 
+from release_controls import is_control_path, source_tree_sha
 from release_evidence import is_ephemeral_release_evidence_path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -86,14 +87,21 @@ def _porcelain_paths(repo_root: Path) -> list[str] | None:
     return paths
 
 
-def source_worktree_state(repo_root: Path = REPO_ROOT) -> dict[str, object]:
-    """Describe whether release *source* was clean when a report was made.
+def _source_worktree_state(
+    repo_root: Path,
+    *,
+    control_tail: bool,
+    tree_commit: str | None = None,
+) -> dict[str, object]:
+    """Describe source cleanliness under one explicit report provenance mode.
 
     Only narrowly declared post-commit evidence and the transient local Pages
-    projection do not alter release source. Every other tracked or untracked
-    path, including hand-authored or unrecognized report files, does. A source
-    tree hash accompanies the assertion so a release validator can bind a
-    clean capture to the candidate commit's exact Git tree.
+    projection do not alter release source. Payload-control reports additionally
+    exempt the narrow shared control set that is deliberately committed after a
+    source revision. Every other tracked or untracked path, including
+    hand-authored or unrecognized report files, does. A source tree hash
+    accompanies the assertion so a release validator can bind a clean capture
+    to the declared commit's exact Git tree.
     """
     paths = _porcelain_paths(repo_root)
     if paths is None:
@@ -113,19 +121,36 @@ def source_worktree_state(repo_root: Path = REPO_ROOT) -> dict[str, object]:
             continue
         if is_ephemeral_release_evidence_path(path):
             continue
+        if control_tail and is_control_path(Path(path)):
+            continue
         source_paths.append(path)
-    tree = subprocess.run(
-        ["git", "rev-parse", "HEAD^{tree}"],
-        cwd=repo_root,
-        capture_output=True,
-        text=True,
-        check=False,
-    )
     return {
         "source_worktree_clean": not source_paths,
         "source_worktree_dirty_paths": source_paths,
-        "source_tree_sha": tree.stdout.strip() if tree.returncode == 0 else "unknown",
+        "source_tree_sha": source_tree_sha(repo_root, tree_commit or source_commit(repo_root)),
     }
+
+
+def source_worktree_state(repo_root: Path = REPO_ROOT) -> dict[str, object]:
+    """Describe strict exact-HEAD source provenance for release evidence."""
+    return _source_worktree_state(repo_root, control_tail=False)
+
+
+def control_tail_worktree_state(
+    repo_root: Path,
+    payload_commit: str,
+) -> dict[str, object]:
+    """Describe pre-deploy source provenance across a narrow control tail.
+
+    This is deliberately not used by post-deploy evidence or release
+    attestation. It exists only for committed deterministic control reports
+    whose own write must not make a normal no-write check self-referential.
+    """
+    return _source_worktree_state(
+        repo_root,
+        control_tail=True,
+        tree_commit=payload_commit,
+    )
 
 
 def stable_generated_at(path: Path, payload: dict) -> str | None:

@@ -402,3 +402,44 @@ def test_cli_check_is_no_write_and_detects_stale_markdown(tmp_path: Path):
     stale = subprocess.run([*preserved_args, "--check"], cwd=REPO_ROOT, text=True, capture_output=True)
     assert stale.returncode != 0
     assert "stale public-source review artifacts" in stale.stderr
+
+
+def test_cli_exact_source_revision_mode_is_separately_checkable(tmp_path: Path):
+    paths = _inputs(tmp_path)
+    report = tmp_path / "reports" / "public_source_review_2026-08-25.json"
+    args = [
+        sys.executable,
+        str(ORCH),
+        "--date",
+        "2026-08-25",
+        "--report",
+        str(report),
+        "--snapshot",
+        str(paths["snapshot_path"]),
+        "--previous-snapshot",
+        str(paths["previous_snapshot_path"]),
+        "--inventory",
+        str(paths["inventory_path"]),
+        "--paired-publications",
+        str(paths["paired_publications_path"]),
+        "--pair-decisions",
+        str(paths["pair_decisions_path"]),
+        "--doi-review",
+        str(paths["doi_review_path"]),
+        "--repository-classification",
+        str(paths["repository_classification_path"]),
+        "--claims",
+        str(paths["claims_path"]),
+        "--scholar-snapshot",
+        str(paths["scholar_snapshot_path"]),
+        "--exact-source-revision",
+    ]
+    written = subprocess.run(args, cwd=REPO_ROOT, text=True, capture_output=True)
+    assert written.returncode == 0, written.stderr
+    payload = json.loads(report.read_text(encoding="utf-8"))
+    head = subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=REPO_ROOT, check=True, capture_output=True, text=True
+    ).stdout.strip()
+    assert payload["source_commit"] == head
+    checked = subprocess.run([*args, "--check"], cwd=REPO_ROOT, text=True, capture_output=True)
+    assert checked.returncode == 0, checked.stderr

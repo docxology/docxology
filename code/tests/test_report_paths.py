@@ -13,6 +13,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 import report_paths  # noqa: E402
+from release_controls import source_payload_commit, source_tree_sha  # noqa: E402
 from report_paths import (  # noqa: E402
     dated_report_dir,
     dated_report_path,
@@ -24,6 +25,7 @@ from report_paths import (  # noqa: E402
     report_date_string,
     repo_path,
     stable_generated_at,
+    control_tail_worktree_state,
     source_worktree_state,
 )
 
@@ -161,3 +163,73 @@ def test_source_worktree_state_only_exempts_declared_release_evidence(tmp_path: 
     state = source_worktree_state(tmp_path)
     assert state["source_worktree_clean"] is False
     assert state["source_worktree_dirty_paths"] == ["reports/hand-authored-note.md"]
+
+
+def test_payload_commit_and_tree_skip_only_a_committed_control_tail(tmp_path: Path):
+    """A dated review may be committed without becoming its own source revision."""
+    for args in (
+        ["git", "init", "-q"],
+        ["git", "config", "user.email", "test@example.invalid"],
+        ["git", "config", "user.name", "Test"],
+    ):
+        subprocess.run(args, cwd=tmp_path, check=True)
+    (tmp_path / "source.txt").write_text("payload\n", encoding="utf-8")
+    subprocess.run(["git", "add", "source.txt"], cwd=tmp_path, check=True)
+    subprocess.run(["git", "commit", "-qm", "payload"], cwd=tmp_path, check=True)
+    payload = subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=tmp_path, check=True, capture_output=True, text=True
+    ).stdout.strip()
+    reports = tmp_path / "reports"
+    reports.mkdir()
+    (reports / "public_source_review_2026-08-25.json").write_text("{}\n", encoding="utf-8")
+    (reports / "public_source_review_2026-08-25.md").write_text("# review\n", encoding="utf-8")
+    subprocess.run(["git", "add", "reports"], cwd=tmp_path, check=True)
+    subprocess.run(["git", "commit", "-qm", "review controls"], cwd=tmp_path, check=True)
+
+    expected_tree = subprocess.run(
+        ["git", "rev-parse", f"{payload}^{{tree}}"],
+        cwd=tmp_path,
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    assert source_payload_commit(tmp_path) == payload
+    assert source_tree_sha(tmp_path, payload) == expected_tree
+
+    (reports / "hand-authored-note.md").write_text("payload\n", encoding="utf-8")
+    subprocess.run(["git", "add", "reports/hand-authored-note.md"], cwd=tmp_path, check=True)
+    subprocess.run(["git", "commit", "-qm", "content report"], cwd=tmp_path, check=True)
+    assert source_payload_commit(tmp_path) != payload
+
+
+def test_control_tail_provenance_ignores_only_declared_generated_controls(tmp_path: Path):
+    for args in (
+        ["git", "init", "-q"],
+        ["git", "config", "user.email", "test@example.invalid"],
+        ["git", "config", "user.name", "Test"],
+    ):
+        subprocess.run(args, cwd=tmp_path, check=True)
+    (tmp_path / "source.txt").write_text("payload\n", encoding="utf-8")
+    subprocess.run(["git", "add", "source.txt"], cwd=tmp_path, check=True)
+    subprocess.run(["git", "commit", "-qm", "payload"], cwd=tmp_path, check=True)
+    payload = subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=tmp_path, check=True, capture_output=True, text=True
+    ).stdout.strip()
+    expected_tree = source_tree_sha(tmp_path, payload)
+
+    (tmp_path / "data").mkdir()
+    (tmp_path / "data" / "pages-artifact-manifest.json").write_text("{}\n", encoding="utf-8")
+    reports = tmp_path / "reports"
+    reports.mkdir()
+    (reports / "asset_size_2026-08-25.json").write_text("{}\n", encoding="utf-8")
+    state = control_tail_worktree_state(tmp_path, payload)
+    assert state == {
+        "source_worktree_clean": True,
+        "source_worktree_dirty_paths": [],
+        "source_tree_sha": expected_tree,
+    }
+
+    (tmp_path / "README.md").write_text("source change\n", encoding="utf-8")
+    state = control_tail_worktree_state(tmp_path, payload)
+    assert state["source_worktree_clean"] is False
+    assert state["source_worktree_dirty_paths"] == ["README.md"]

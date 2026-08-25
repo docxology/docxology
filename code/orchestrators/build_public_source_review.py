@@ -26,7 +26,8 @@ from public_source_review import (  # noqa: E402
     render_markdown,
     validate_review_report,
 )
-from report_paths import source_commit, source_worktree_state  # noqa: E402
+from release_controls import source_payload_commit, source_tree_sha  # noqa: E402
+from report_paths import control_tail_worktree_state, source_commit, source_worktree_state  # noqa: E402
 
 
 def _utc_date() -> str:
@@ -78,6 +79,13 @@ def _display_path(path: Path) -> str:
 
 
 def _atomic_write(path: Path, content: str) -> None:
+    """Write an explicitly requested review artifact through a sibling file.
+
+    Review reports support an isolated external report directory for tests and
+    manual review. Repository-local generated writers use the stricter shared
+    output mapping; this intentionally scoped helper preserves that external
+    review workflow while avoiding a partially written final file.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_name(path.name + ".tmp")
     temporary.write_text(content, encoding="utf-8")
@@ -172,6 +180,14 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--claims", help="Claims ledger JSON")
     parser.add_argument("--scholar-snapshot", help="Canonical Scholar snapshot JSON")
     parser.add_argument("--scholar-verification-receipt", help="Direct authenticated Scholar verification receipt JSON")
+    parser.add_argument(
+        "--exact-source-revision",
+        action="store_true",
+        help=(
+            "Bind this report to the exact current HEAD for post-deploy attestation. "
+            "The default uses the last payload revision so a committed review control tail remains checkable."
+        ),
+    )
     return parser
 
 
@@ -211,13 +227,24 @@ def main(argv: list[str] | None = None) -> int:
         except (OSError, ValueError, json.JSONDecodeError):
             pass
     pairing_refresh_status = pairing_refresh_status or "auto"
+    review_source_commit = source_commit(REPO_ROOT) if args.exact_source_revision else source_payload_commit(REPO_ROOT)
+    source_provenance = (
+        source_worktree_state(REPO_ROOT)
+        if args.exact_source_revision
+        else control_tail_worktree_state(REPO_ROOT, review_source_commit)
+    )
+    # The default review record deliberately describes the last payload tree,
+    # not the later control-only commit that contains the record itself.  The
+    # explicit post-deploy mode remains exact-HEAD so release attestation can
+    # require the deployed SHA and its exact tree.
+    source_provenance["source_tree_sha"] = source_tree_sha(REPO_ROOT, review_source_commit)
     try:
         inputs = _resolve_inputs(args, report_path=report_path)
         report = build_review_report(
             repo_root=REPO_ROOT,
             report_date=report_date,
-            source_commit=source_commit(REPO_ROOT),
-            source_provenance=source_worktree_state(REPO_ROOT),
+            source_commit=review_source_commit,
+            source_provenance=source_provenance,
             pairing_refresh_status=pairing_refresh_status,
             pairing_refresh_note=pairing_refresh_note,
             **inputs,

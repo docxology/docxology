@@ -29,6 +29,20 @@ def test_release_commit_must_match_candidate_head():
     ]
 
 
+def test_public_source_review_provenance_mode_matches_validation_tier():
+    assert vr.public_source_review_check_args(release=False) == [
+        "python3",
+        "code/orchestrators/build_public_source_review.py",
+        "--check",
+    ]
+    assert vr.public_source_review_check_args(release=True) == [
+        "python3",
+        "code/orchestrators/build_public_source_review.py",
+        "--check",
+        "--exact-source-revision",
+    ]
+
+
 def test_iter_local_links_ignores_fenced_markdown_examples():
     text = """See [real link](pages/README.md).
 

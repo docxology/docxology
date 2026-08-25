@@ -207,6 +207,21 @@ def test_collect_release_evidence_rejects_stale_wrong_revision_and_failed_report
     assert any("browser smoke failed semantic validation" in error for error in errors)
 
 
+def test_collect_release_evidence_rejects_a_control_tail_review_for_deployed_sha(tmp_path):
+    """The normal review anchor cannot stand in for post-deploy exact evidence."""
+    _write_complete_evidence(tmp_path)
+    review = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "public-source review"))
+    payload = json.loads(review.read_text(encoding="utf-8"))
+    payload["source_commit"] = "b" * 40
+    _write_json(review, payload)
+
+    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    assert any(
+        "public-source review source_commit " + "b" * 40 + " != release commit " + COMMIT in error
+        for error in errors
+    )
+
+
 def test_collect_release_evidence_rejects_external_screenshot_symlink_and_unreviewed_visuals(tmp_path):
     _write_complete_evidence(tmp_path)
     outside = tmp_path / "outside.png"

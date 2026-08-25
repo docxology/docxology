@@ -111,6 +111,14 @@ def run_local_generation_checks() -> None:
         run(["python3", f"code/orchestrators/{step.script}", *step.check_args])
 
 
+def public_source_review_check_args(*, release: bool) -> list[str]:
+    """Render the provenance mode required by the validation tier."""
+    command = ["python3", "code/orchestrators/build_public_source_review.py", "--check"]
+    if release:
+        command.append("--exact-source-revision")
+    return command
+
+
 def _load_json_payload(
     path: Path,
     errors: list[str],
@@ -436,7 +444,9 @@ def main() -> None:
     run(["python3", "code/orchestrators/browser_smoke.py", "--check"])
     run(["python3", "code/orchestrators/verify_live_site.py", "--check"])
     run(["python3", "code/orchestrators/refresh_public_source_inventory.py", "--check"])
-    run(["python3", "code/orchestrators/build_public_source_review.py", "--check"])
+    # A committed pre-deploy review uses the control-tail payload anchor.
+    # Post-deploy attestation instead requires an exact candidate-HEAD review.
+    run(public_source_review_check_args(release=args.release))
     run(["python3", "code/orchestrators/visual_qa.py", "--check"])
     validate_json_files(strict_reports)
     validate_citation_cff()
