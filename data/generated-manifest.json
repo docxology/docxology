@@ -88,6 +88,8 @@
       ],
       "sources": [
         "data/scholar-snapshot.json",
+        "data/scholar-verification-receipt.json",
+        "code/src/scholar_verification.py",
         "code/orchestrators/sync_scholar_metrics.py"
       ],
       "command": "python3 code/orchestrators/sync_scholar_metrics.py"
@@ -228,6 +230,7 @@
         "data/works.json",
         "data/software.json",
         "data/claims.json",
+        "data/scholar-verification-receipt.json",
         "reports/*latest dated reports",
         "code/orchestrators/build_agent_index.py"
       ],

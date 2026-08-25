@@ -1,11 +1,12 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "generated_at": "2026-08-25T18:37:58+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
     "software": "/pages/SOFTWARE.md",
     "claims": "/data/claims.json",
+    "scholar_verification_receipt": "/data/scholar-verification-receipt.json",
     "counts": "/data/current-counts.json",
     "verification": "/pages/VERIFICATION_LOG.md",
     "backlog": "/TODO.md",
@@ -159,6 +160,11 @@
       "count": null,
       "schema": "ClaimWithEvidence"
     },
+    "scholar_verification_receipt": {
+      "path": "/data/scholar-verification-receipt.json",
+      "count": null,
+      "schema": "ScholarVerificationReceipt"
+    },
     "coverage_exceptions": {
       "path": "/data/coverage-exceptions.json",
       "count": 37,
@@ -201,7 +207,7 @@
     },
     "catalog": {
       "path": "/data/catalog.json",
-      "count": 29,
+      "count": 30,
       "schema": "DataCatalog"
     },
     "reconciliation": {
@@ -426,6 +432,37 @@
         "verification_method": "string",
         "maintenance_owner": "role responsible for refresh",
         "caveat": "string; do not silently omit uncertainty"
+      }
+    },
+    "ScholarVerificationReceipt": {
+      "type": "object",
+      "description": "A direct-authenticated verification assertion bound by SHA-256 to the canonical dated Scholar snapshot.",
+      "required": [
+        "schema_version",
+        "receipt_type",
+        "profile_id",
+        "direct",
+        "authenticated",
+        "verified_at",
+        "snapshot_path",
+        "snapshot_sha256",
+        "snapshot_as_of",
+        "metrics",
+        "source",
+        "method"
+      ],
+      "fields": {
+        "receipt_type": "google_scholar_direct_authenticated",
+        "profile_id": "string; canonical Google Scholar profile identifier",
+        "direct": "boolean; must be true",
+        "authenticated": "boolean; must be true",
+        "verified_at": "timezone-qualified ISO-8601 timestamp of the recorded direct observation",
+        "snapshot_path": "data/scholar-snapshot.json",
+        "snapshot_sha256": "SHA-256 of the exact canonical snapshot bytes",
+        "snapshot_as_of": "dated snapshot value",
+        "metrics": "object with non-negative citations, h_index, and i10_index",
+        "source": "provenance note for the recorded observation",
+        "method": "direct-authenticated verification method; not an implied new fetch"
       }
     },
     "SearchResult": {
@@ -739,7 +776,7 @@
       }
     }
   },
-  "schema_registry_version": "1.2",
+  "schema_registry_version": "1.3",
   "schema_examples": {
     "Work": [
       {
@@ -907,6 +944,24 @@
         "caveat": "Curated count includes papers, books, presentations, courses, playbooks, and series."
       }
     ],
+    "ScholarVerificationReceipt": {
+      "schema_version": "1.0",
+      "receipt_type": "google_scholar_direct_authenticated",
+      "profile_id": "DXjPFtYAAAAJ",
+      "direct": true,
+      "authenticated": true,
+      "verified_at": "2026-06-09T15:22:47Z",
+      "snapshot_path": "data/scholar-snapshot.json",
+      "snapshot_sha256": "83f065bc6eac1aded5cae8de4249ab4fb76940612a59010526412c29025cdb90",
+      "snapshot_as_of": "2026-06-09",
+      "metrics": {
+        "citations": 777,
+        "h_index": 15,
+        "i10_index": 17
+      },
+      "source": "Existing data/scholar-snapshot.json method and current history entry, recorded by commit 56bdb3f740b98506997e6f669d3f450dce0e427f.",
+      "method": "Baseline binding recorded 2026-08-25 from the already documented 2026-06-09 direct logged-in browser-session fetch. The exact browser-fetch time was not retained separately; verified_at is the source-update commit timestamp and this receipt does not represent a new Scholar fetch."
+    },
     "SearchResult": [
       {
         "id": "page:home",
@@ -1064,11 +1119,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 842094842,
+        "source_bytes": 842133953,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4593,
-        "artifact_bytes": 842900734
+        "artifact_file_count": 4599,
+        "artifact_bytes": 842940861
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1090,15 +1145,16 @@
     "videos_index": "780a61904ec3c6ff20f7c8f6cfa09d2a7d2eeb6b1af2bf9c4f41c1b62cc0aa6e",
     "search": "69bcb2ca94dc8461eb94b61542487162be99cac2898ca9559b6bc8ae1ddfe120",
     "claims": "fa879eb007ef4b8d695257187b6f23674607b4ffde5c97af59b4804c77e44b22",
+    "scholar_verification_receipt": "cf2b24222b0c4932cf51681cdcc54dd11950371607407378333a5a9503ebaf7f",
     "coverage_exceptions": "d2f33b35f73488fe1e794dc684cb6a7574c5294d2a8fe750f3bd4b8fb6f18499",
     "repository_classification": "c93bd5e9e025ce71f9cf73c8e261f8eb5b2d7b9e7af5c3b76127a473aa47f2a3",
     "people": "a2d8d23a5e1c6243f39eebaebe329f08a4dfafb55c338b15519cc3373d3bb8e3",
     "organizations": "39b6cb2e0815686f68775db37f5f635a7f9ffe76bf01faef235d8f83370baa47",
     "resume": "cfc380513debcc8c3385fc880778d3f5fabeff5f1375b4607deaa5111c7d5670",
     "work_enrichment": "6a5912598474501d96672a9a28a1ef511feeb054c30e22868e77bdeedb3ef0b1",
-    "catalog": "cc21dec73f39fb10ea061497de12b3599f7cf3f3a7cdb86f2305e32588afab0c",
+    "catalog": "4f80e94f20356836346a09b8313f7eaf4dede8955bcb443fc2a36fb94d475336",
     "reconciliation": "c872e7faee82afceae706cb1e76894a7b4186863312431a187e857ff788f71b5",
-    "generated_manifest": "89e6e9b3064a7692796aaa07c6fc9bfa4df9cc3b3d7b2963235a7b0b290b538c",
+    "generated_manifest": "579eb80ee81112637f28964957b3e5108e2d4158101eb2ccf1b22fa88dcf48d5",
     "current_counts": "cbb15d0560fdfad56d2854b1c3482a355d95c9d9a101f685134ff6303cca5d7b"
   },
   "source_provenance": {
@@ -1106,7 +1162,9 @@
     "source_of_truth": [
       "pages/BIBLIOGRAPHY.md",
       "pages/SOFTWARE.md",
-      "data/current-counts.json"
+      "data/current-counts.json",
+      "data/scholar-snapshot.json",
+      "data/scholar-verification-receipt.json"
     ],
     "hash_policy": "SHA-256 values cover hosted JSON datasets and integrity manifests at generation time."
   },
@@ -1209,6 +1267,7 @@
     "volatile_sources": [
       "data/current-counts.json",
       "data/scholar-snapshot.json",
+      "data/scholar-verification-receipt.json",
       "data/verification-log.json"
     ],
     "verification": "/cite-verify.html"
@@ -1220,6 +1279,7 @@
     "raw_bibliography": "/pages/BIBLIOGRAPHY.md",
     "repository_by_full_name": "/repositories.html?repo={owner}/{name}",
     "claim_by_id": "/data/claims.json#id={claim_id}",
+    "scholar_verification_receipt": "/data/scholar-verification-receipt.json",
     "reports": "/data/agent-index.json#reports",
     "coverage_exceptions": "/data/coverage-exceptions.json",
     "repository_classification": "/data/repository-classification.json",
