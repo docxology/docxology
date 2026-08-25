@@ -3,7 +3,8 @@
   "policy": {
     "purpose": "Provenance-preserving retention plan for superseded dated report artifacts.",
     "before_removal": "Every removed path needs a reviewed entry with its original generation time, content hash, and durable replacement location.",
-    "default": "retain"
+    "default": "retain",
+    "pages_projection": "Current browser and visual QA manifests remain on Pages; visual-QA screenshot binaries remain committed in GitHub with manifest paths and SHA-256 digests, but are excluded from the bounded Pages artifact rather than pruned."
   },
   "entries": []
 }

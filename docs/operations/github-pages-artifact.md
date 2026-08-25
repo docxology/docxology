@@ -8,9 +8,10 @@ provenance and reproducibility.
 `.github/workflows/pages.yml` therefore assembles a bounded artifact with
 `code/orchestrators/build_pages_artifact.py` and deploys it with the official
 Pages artifact workflow. It retains the public HTML, data exports, generated
-work/paper pages, full-text files, CV outputs, PDFs, artwork assets, reports,
-and agent documentation. It omits only duplicate binary files under
-`papers/**/images/`; those source images remain versioned in GitHub.
+work/paper pages, full-text files, CV outputs, PDFs, artwork assets, report
+manifests, and agent documentation. It omits duplicate binary files under
+`papers/**/images/` and dated visual-QA screenshot binaries under
+`reports/visual-qa/*/`; every omitted file remains versioned in GitHub.
 
 Generated paper pages link extracted-image galleries to the canonical GitHub
 tree and use raw GitHub image URLs for previews. The image sitemap describes
@@ -41,3 +42,11 @@ content change.
 The repository remains the source of truth for all omitted files. The public
 site's `data/agent-index.json` and `GENERATED.md` describe the canonical
 repository datasets and the generated web projection separately.
+
+Browser and visual QA manifests remain in the Pages projection. Visual QA
+manifests retain repository-relative screenshot paths and SHA-256 digests,
+while their PNG or other screenshot binaries are retrieved from the Git commit
+that contains the evidence path. The Pages artifact manifest records the
+omitted visual-QA screenshot count, byte total, examples, and GitHub raw/tree
+URL templates; this is an artifact-boundary decision, not deletion or report
+pruning.

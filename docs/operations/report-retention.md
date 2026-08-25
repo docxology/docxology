@@ -1,14 +1,19 @@
 # Report retention
 
-Historical reports are evidence, not disposable build by-products. The current
-report set remains served by Pages; older material is retained in Git history or
-a release archive only after its provenance is recorded. This policy applies
-before any historical report or screenshot directory is removed.
+Historical reports are evidence, not disposable build by-products. Current
+report manifests remain served by Pages; dated visual-QA screenshot binaries
+remain committed in GitHub but are intentionally omitted from the bounded Pages
+artifact. Older material is retained in Git history or a release archive only
+after its provenance is recorded. This policy applies before any historical
+report or screenshot directory is removed.
 
 ## Retention classes
 
 - **Current:** the latest report required by validation stays in the repository
-  and the Pages projection.
+  and its manifest stays in the Pages projection. Visual-QA screenshot binaries
+  remain in the repository with their manifest SHA-256 values and are retrieved
+  through the manifest's repository-relative path plus a GitHub raw/tree
+  template for the commit that contains the evidence.
 - **Archive:** superseded evidence may move out of the Pages projection only
   when a durable Git commit, GitHub release asset, or externally stable archive
   location is recorded.

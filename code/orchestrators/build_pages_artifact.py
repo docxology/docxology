@@ -2,10 +2,12 @@
 """Assemble the bounded static artifact deployed to GitHub Pages.
 
 The repository is the canonical archive, while Pages is the navigable web
-projection. Paper-extracted image binaries remain in GitHub for provenance but
-are not duplicated into the Pages artifact; generated paper pages point to
-their GitHub source image URLs. This keeps the published site below GitHub's
-1 GiB Pages limit without removing source data from the repository.
+projection. Paper-extracted image binaries and visual-QA screenshot binaries
+remain in GitHub for provenance but are not duplicated into the Pages artifact;
+generated paper pages point to their GitHub source image URLs and visual-QA
+manifests retain repository-relative paths plus SHA-256 digests. This keeps the
+published site below GitHub's 1 GiB Pages limit without removing source data
+from the repository.
 """
 
 from __future__ import annotations
@@ -52,6 +54,7 @@ EXCLUDED_ROOTS = {
     "Plans",
 }
 PAPER_IMAGE_SUFFIXES = {".bmp", ".gif", ".jpeg", ".jpg", ".png", ".tiff", ".webp"}
+VISUAL_QA_SCREENSHOT_SUFFIXES = {".bmp", ".gif", ".jpeg", ".jpg", ".png", ".tiff", ".webp"}
 
 
 def tracked_paths() -> list[Path]:
@@ -73,14 +76,36 @@ def tracked_paths() -> list[Path]:
     return paths
 
 
+def is_paper_extracted_image(path: Path) -> bool:
+    """Return whether *path* is an extracted paper-image binary."""
+    return (
+        len(path.parts) >= 3
+        and path.parts[0] == "papers"
+        and "images" in path.parts
+        and path.suffix.lower() in PAPER_IMAGE_SUFFIXES
+    )
+
+
+def is_visual_qa_screenshot(path: Path) -> bool:
+    """Return whether *path* is a dated visual-QA screenshot binary.
+
+    Only the exact top-level QA report layout is excluded. A similarly named
+    nested path remains visible to the artifact policy rather than using a
+    suffix match to evade it.
+    """
+    return (
+        len(path.parts) >= 4
+        and path.parts[0] == "reports"
+        and path.parts[1] == "visual-qa"
+        and path.suffix.lower() in VISUAL_QA_SCREENSHOT_SUFFIXES
+    )
+
+
 def is_published_path(path: Path) -> bool:
     """Return whether a tracked path belongs in the public web projection."""
     if path.parts and path.parts[0] in EXCLUDED_ROOTS:
         return False
-    if len(path.parts) >= 3 and path.parts[0] == "papers" and "images" in path.parts:
-        if path.suffix.lower() in PAPER_IMAGE_SUFFIXES:
-            return False
-    return True
+    return not is_paper_extracted_image(path) and not is_visual_qa_screenshot(path)
 
 
 def _relative_paths() -> list[Path]:
@@ -137,13 +162,19 @@ def _omitted_paths() -> list[Path]:
             path
             for path in tracked_paths()
             if not is_published_path(path)
-            and len(path.parts) >= 3
-            and path.parts[0] == "papers"
-            and "images" in path.parts
-            and path.suffix.lower() in PAPER_IMAGE_SUFFIXES
+            and (is_paper_extracted_image(path) or is_visual_qa_screenshot(path))
         ),
         key=lambda path: path.as_posix(),
     )
+
+
+def _omitted_summary(paths: list[Path], sources: dict[Path, Path]) -> dict[str, object]:
+    """Return a provenance-friendly summary for one omitted binary class."""
+    return {
+        "count": len(paths),
+        "bytes": sum(sources[path].stat().st_size for path in paths),
+        "examples": [path.as_posix() for path in paths[:20]],
+    }
 
 
 def _sha256(path: Path) -> str:
@@ -270,6 +301,7 @@ MANIFEST_COMPARISON_FIELDS = (
     "included_files",
     "control_files",
     "omitted_paper_images",
+    "omitted_visual_qa_screenshots",
     "growth_report",
 )
 
@@ -300,7 +332,8 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
     omitted = _omitted_paths()
     source_bytes = sum(sources[path].stat().st_size for path in included)
     omitted_sources = {path: source_path(path) for path in omitted}
-    omitted_bytes = sum(source.stat().st_size for source in omitted_sources.values())
+    paper_images = [path for path in omitted if is_paper_extracted_image(path)]
+    visual_qa_screenshots = [path for path in omitted if is_visual_qa_screenshot(path)]
     files = [
         {"path": path.as_posix(), "bytes": sources[path].stat().st_size, "sha256": _sha256(sources[path])}
         for path in included
@@ -319,8 +352,9 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
         "policy": {
             "repository_role": "complete archival source",
             "pages_role": "bounded navigable web projection",
-            "omitted_assets": "duplicated extracted paper-image binaries only",
+            "omitted_assets": "duplicated extracted paper-image binaries and dated visual-QA screenshot binaries",
             "omitted_assets_fallback": "Use the GitHub tree/raw templates with the source commit and repository-relative path.",
+            "visual_qa_screenshot_policy": "Visual-QA manifests remain in Pages with repository-relative paths and SHA-256 digests; screenshot binaries remain in the committed repository rather than the deploy artifact.",
             "warning_policy": "At 850 MiB, review growth and report retention before deployment; 900 MiB is a release hard ceiling below the GitHub Pages 1 GiB platform limit.",
         },
         "budget": {
@@ -345,11 +379,8 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
             # permanently stale until a second pass.
             if (REPO_ROOT / path).is_file() or path == growth_rel
         ],
-        "omitted_paper_images": {
-            "count": len(omitted),
-            "bytes": omitted_bytes,
-            "examples": [path.as_posix() for path in omitted[:20]],
-        },
+        "omitted_paper_images": _omitted_summary(paper_images, omitted_sources),
+        "omitted_visual_qa_screenshots": _omitted_summary(visual_qa_screenshots, omitted_sources),
         "growth_report": str(GROWTH_REPORT.relative_to(REPO_ROOT)),
     }
     # The manifest is part of the artifact. Iterate to account for its own
@@ -393,6 +424,8 @@ def write_manifest() -> dict:
         "safety_ceiling_bytes": MAX_ARTIFACT_BYTES,
         "hard_limit_bytes": HARD_ARTIFACT_BYTES,
         "omitted_paper_image_count": payload["omitted_paper_images"]["count"],
+        "omitted_visual_qa_screenshot_count": payload["omitted_visual_qa_screenshots"]["count"],
+        "omitted_visual_qa_screenshot_bytes": payload["omitted_visual_qa_screenshots"]["bytes"],
     }
     previous = sorted((REPO_ROOT / "reports").glob("pages_artifact_growth_*.json"))
     if previous and previous[-1] != GROWTH_REPORT:
@@ -480,7 +513,13 @@ def main() -> None:
     output = args.output if args.output.is_absolute() else REPO_ROOT / args.output
     copied, size, omitted = assemble(output)
     print(f"assembled {copied} tracked files ({size / 1024 / 1024:.1f} MiB) at {output}")
-    print(f"omitted {len(omitted)} paper-extracted image binaries; source copies remain in GitHub")
+    paper_images = sum(1 for path in omitted if is_paper_extracted_image(Path(path)))
+    visual_qa_screenshots = sum(1 for path in omitted if is_visual_qa_screenshot(Path(path)))
+    print(
+        f"omitted {len(omitted)} source-only binary assets "
+        f"({paper_images} paper images, {visual_qa_screenshots} visual-QA screenshots); "
+        "source copies remain in GitHub"
+    )
     if args.check_size and size > MAX_ARTIFACT_BYTES:
             raise SystemExit(
             f"Pages artifact is {size / 1024 / 1024:.1f} MiB; safety ceiling is "

@@ -18,6 +18,19 @@ def test_paper_extracted_binary_images_are_omitted_from_pages():
     assert not bpa.is_published_path(Path("papers/2026_Example/images/page1_img1.jpeg"))
 
 
+def test_dated_visual_qa_screenshot_binaries_are_omitted_but_manifests_remain_public():
+    assert bpa.is_published_path(Path("reports/browser-smoke/2026-08-25/home.png"))
+    assert not bpa.is_published_path(Path("reports/visual-qa/2026-08-25/home-desktop.webp"))
+    assert bpa.is_published_path(Path("reports/browser-smoke/2026-08-25/manifest.json"))
+    assert bpa.is_published_path(Path("reports/visual-qa/2026-08-25/manifest.json"))
+
+
+def test_visual_qa_screenshot_exclusion_cannot_match_a_nested_untrusted_path():
+    nested = Path("untrusted/reports/visual-qa/2026-08-25/home-desktop.png")
+    assert not bpa.is_visual_qa_screenshot(nested)
+    assert bpa.is_published_path(nested)
+
+
 def test_artwork_and_public_site_images_are_retained():
     assert bpa.is_published_path(Path("art/42_drawing.jpg"))
     assert bpa.is_published_path(Path("og-image.jpg"))
@@ -106,6 +119,7 @@ def test_manifest_drift_includes_stale_source_commit() -> None:
         "included_files": [],
         "control_files": [],
         "omitted_paper_images": {},
+        "omitted_visual_qa_screenshots": {},
     }
     stale = {**expected, "source_commit_at_generation": "stale-source-commit"}
     assert bpa.manifest_drift_fields(stale, expected) == ["source_commit_at_generation"]

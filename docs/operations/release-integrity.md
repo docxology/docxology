@@ -93,10 +93,13 @@ fails the browser report.
 ## Retention tiers
 
 - Current accessibility, asset, live, source, and growth reports remain checked
-  in and available through Pages and the agent manifest.
-- Historical visual-QA screenshots, public-source snapshots, and pairing reports
-  remain in GitHub or a release archive when they are removed from the Pages
-  projection.
+  in and available through Pages and the agent manifest. Browser and visual QA
+  manifests also remain public, with exact screenshot paths and SHA-256 values.
+- Visual-QA screenshot binaries remain in GitHub as canonical evidence but are
+  omitted from the bounded Pages projection; use a GitHub raw/tree template
+  with the commit that contains the evidence path to retrieve them. Historical
+  visual-QA screenshots, public-source snapshots, and pairing reports remain in
+  GitHub or a release archive when they are removed from the Pages projection.
 - Any deletion or pruning requires a dated manifest entry that preserves the
   original report path, generation date, source hash, and replacement location.
 
