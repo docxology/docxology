@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-25T22:17:54Z",
-  "source_commit_at_generation": "176fc9dce6d6aa57f5e566cceb2f3aec20ad94b8",
+  "generated_at": "2026-08-25T22:27:41Z",
+  "source_commit_at_generation": "3fc4fdbd6f12906dbcd58462b4f43f01044133a0",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 842092733,
+    "source_bytes": 842094842,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4592,
-    "artifact_bytes": 842898452
+    "artifact_file_count": 4593,
+    "artifact_bytes": 842900734
   },
   "included_files": [
     {
@@ -5509,8 +5509,8 @@
     },
     {
       "path": "code/orchestrators/export_bibliography.py",
-      "bytes": 10540,
-      "sha256": "bb80b4b64fc1afb3fbf46bee6dabe42c34a1eb5d667cfff7d21e0ed9cb29e7a9"
+      "bytes": 11890,
+      "sha256": "0b7ffeeb4831eb9f7493222c4146eb8fc562dd3a3b7ad6a8fe89516576ca625d"
     },
     {
       "path": "code/orchestrators/extract_paper_texts.py",
@@ -5624,8 +5624,8 @@
     },
     {
       "path": "code/orchestrators/sync_publications_html.py",
-      "bytes": 19133,
-      "sha256": "678338e137da6ad248cf506ce31897410706bedeff0f660fb72b8581cb774ec2"
+      "bytes": 19232,
+      "sha256": "15a530b06c44fb05e02712ab21d20f53da5f302974fee3b5e9563cfa1e25d3aa"
     },
     {
       "path": "code/orchestrators/sync_scholar_metrics.py",
@@ -5871,6 +5871,11 @@
       "path": "code/tests/test_export_agent_data.py",
       "bytes": 1002,
       "sha256": "2b45ffa893100393b39a659b03e908c8791719b42666fdf8b22b577dfcf28e1c"
+    },
+    {
+      "path": "code/tests/test_export_bibliography.py",
+      "bytes": 2214,
+      "sha256": "8d22067ae1bcbfd568e4c9fd8ca7a8abe0553d192febfab7bc3a94c2c276db46"
     },
     {
       "path": "code/tests/test_extract_paper_texts.py",
@@ -6189,8 +6194,8 @@
     },
     {
       "path": "data/resume.json",
-      "bytes": 315905,
-      "sha256": "21eac753f1dd81b3becf9d9bb7fb69c65d298c04bbe95275ad8c06e866c512b4"
+      "bytes": 315930,
+      "sha256": "cfc380513debcc8c3385fc880778d3f5fabeff5f1375b4607deaa5111c7d5670"
     },
     {
       "path": "data/scholar-snapshot.json",
@@ -6264,8 +6269,8 @@
     },
     {
       "path": "data/works.json",
-      "bytes": 168622,
-      "sha256": "22099b4e57a5d92cc0259f61aa1eb53ff50cd71fe1df29696602890d5ad70f50"
+      "bytes": 168647,
+      "sha256": "dcc9b9a2cfe86f8cfa616f01e0124a289e811e6c85b690ade7b22d54f8d99df9"
     },
     {
       "path": "discovery.html",
@@ -6420,42 +6425,42 @@
     {
       "path": "domain-active-inference.html",
       "bytes": 37188,
-      "sha256": "b5eb5f3dd666c74ca0a26c940e6158cf2db1c6fa31df70bae83b019c5cd01fc4"
+      "sha256": "20d5701d2d0b798f8b7a1931c6d53269631387adc4040c3e2413307fdf0564dc"
     },
     {
       "path": "domain-aii-ecosystem.html",
       "bytes": 25148,
-      "sha256": "c9edd0e58cd4ec405c3ddca60811a82f62fe032a455fcd7e442b1a64d2b891a5"
+      "sha256": "0f9e3dcc5ac68e83d3cbabae826182d5959afc537aec486785efd1c0f58f6d72"
     },
     {
       "path": "domain-art-synergetics.html",
       "bytes": 32794,
-      "sha256": "6fd6b2e91ef911f49a20369f5541cabf388662e9705f098398e3e5c33190f3e3"
+      "sha256": "d49c57d47a088ad482844434332d7e85f5ed2b6af2209f8eb9ee63ad9ec39976"
     },
     {
       "path": "domain-biomedicine.html",
-      "bytes": 31456,
-      "sha256": "ab7b47675e564630e07857f3c2add8fea08e8e0398e6b64d9baa0904d218efd0"
+      "bytes": 31455,
+      "sha256": "565928503a17c7a4c5391b4015facb182a6317f83251d048d8a908e760715f3f"
     },
     {
       "path": "domain-cognitive-security.html",
       "bytes": 31708,
-      "sha256": "c15aa17b2c851a4052b6689f7b7b4a1b99ea94b9d19270ed1448555bfe99d63d"
+      "sha256": "162a498ec61a7633fd1e4d9204c04ab494f85d794f9a72069fa376dd3242cacc"
     },
     {
       "path": "domain-computational.html",
       "bytes": 35049,
-      "sha256": "6ba9b0b1da194d2631c8d96416e68b237d939327b1c1784c87c1ed4ad3da1f54"
+      "sha256": "24695fa8c34a131edf1e360475028c619420835fd286eb957965464e0fa24c04"
     },
     {
       "path": "domain-entomology.html",
       "bytes": 33821,
-      "sha256": "1dc92b3ad2678a8cd1e7263f94198026e0c2cef1a0fb6928542b5117db8e5977"
+      "sha256": "5937045bbd1ba2c7aa0dc33c436e2104f9467b723e1dfd4499af62e9b765f570"
     },
     {
       "path": "domain-presentations-media.html",
       "bytes": 29351,
-      "sha256": "de14690d4890aded0dca4ea13024d8e8be72652424a3eb6998b2709550b29c04"
+      "sha256": "a5b0a9ef3122c664f4072f40ce4253da7c9a1d213854df1075877e98ff733dbb"
     },
     {
       "path": "domains.html",
@@ -14559,8 +14564,8 @@
     },
     {
       "path": "publications.html",
-      "bytes": 562901,
-      "sha256": "9584306da99f033de08c363530650ef909ccd62163029cb24706256760c3bfaf"
+      "bytes": 561276,
+      "sha256": "bc0d11a53dfeac6fc461736c3b1dbf9d7b7b2b969309553e7f4a87810519ac4e"
     },
     {
       "path": "pyproject.toml",
@@ -15815,27 +15820,27 @@
     {
       "path": "resume/academic.txt",
       "bytes": 61322,
-      "sha256": "3b45889e3a7072a7e29ca1d515e0adcb3aa65fde58c8fdb9eff1d1f1cd328716"
+      "sha256": "d17c83e80d118c79646e197ce0ae7a650d65241497e22de56f17f9689b719345"
     },
     {
       "path": "resume/full.txt",
       "bytes": 90431,
-      "sha256": "96e2e84b08eb59f104ce80835de012979d4f8d70a0ea2c82244e3d88ca74bb1b"
+      "sha256": "bbb7c335b51179e75b8e424ab079eb78479898f95379699fa94f9a8c3d2cec53"
     },
     {
       "path": "resume/resume.html",
       "bytes": 154244,
-      "sha256": "7746624406de60f244c387e14bb5e26411ecb3995016d3b86eac47b7e66fa9e4"
+      "sha256": "613590ddc5e5977c5cc2aaadc3e8caa69efac3606ec8fd3d3a1a3e98962ab2e6"
     },
     {
       "path": "resume/resume.pdf",
-      "bytes": 353085,
-      "sha256": "b89282dba2589f53719c20cfce443bd76e54621f149fbf5d3cea4eef4353ad80"
+      "bytes": 353107,
+      "sha256": "827bcfdf070c803aeb016a287fe689bc1aef5bd24cb27849ee57b3a2f13ed378"
     },
     {
       "path": "resume/software-consulting.txt",
       "bytes": 67253,
-      "sha256": "2b821031eac1e3c04665b367c42080b7d3f6fdb776c230be03a95e8bc58b3484"
+      "sha256": "de34575f5e19aca151d186a493fe8cdfdc327ea46bfc3b5497646d7e6f8eecb1"
     },
     {
       "path": "resume/source.json",
@@ -15845,12 +15850,12 @@
     {
       "path": "resume/teaching-service.txt",
       "bytes": 25953,
-      "sha256": "ba1c1443d7d9cddc11a4a77ecaafd7e66148fa98056d805954312da91c281612"
+      "sha256": "53a58863074ee2f3943f9318bee1c682b3321649f860aee12d33d37ec2e784b7"
     },
     {
       "path": "resume/verify.html",
       "bytes": 11584,
-      "sha256": "83a68295cb39d1f49eaee15d47683f9371bf825504c746ca4ff2ae0a7f88247c"
+      "sha256": "ac652728293784d3deb8ffb8a8b788d714918bee9d807fe213b56e232ce5dc90"
     },
     {
       "path": "robots.txt",
