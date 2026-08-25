@@ -246,6 +246,29 @@
     },
     {
       "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#scholar-verification-receipt",
+      "name": "Scholar Verification Receipt",
+      "description": "Direct-authenticated Scholar verification assertion bound by SHA-256 to the dated canonical metric snapshot; it is provenance for the curated snapshot, not a new live fetch.",
+      "url": "https://danielarifriedman.com/data/scholar-verification-receipt.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/scholar-verification-receipt.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#resume",
       "name": "Structured Resume and CV",
       "description": "Merged resume/CV data with contact, education, experience, works, software, GitHub inventory metrics, service, media, and art-use records.",
