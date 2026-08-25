@@ -380,6 +380,18 @@ def test_attestation_requires_canonical_path_and_detects_report_mutation(tmp_pat
     assert any("changed after attestation" in error for error in errors)
 
 
+def test_attestation_rejects_a_timestamp_beyond_future_tolerance(tmp_path):
+    _write_complete_evidence(tmp_path)
+    receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    assert errors == []
+    attestation = deployment_attestation_path(tmp_path, COMMIT)
+    _write_json(attestation, render_attestation(COMMIT, receipts, attested_at="2026-08-25T12:05:01Z"))
+
+    errors = validate_attestation(tmp_path, attestation, COMMIT, max_age_days=30, now=NOW)
+
+    assert "deployment attestation is dated in the future" in errors
+
+
 def test_only_post_commit_release_receipts_are_worktree_exempt():
     assert is_ephemeral_release_evidence_path("reports/browser-smoke/2026-08-25/home.png")
     assert is_ephemeral_release_evidence_path("reports/public_source_review_2026-08-25.md")

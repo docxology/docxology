@@ -49,6 +49,7 @@ _BROWSER_REPORT_FILE = re.compile(
 )
 _ATTESTATION_FILE = re.compile(r"^reports/deployment-attestations/[0-9a-f]{40}\.json$")
 ORCHESTRATORS_DIR = Path(__file__).resolve().parents[1] / "orchestrators"
+FUTURE_TIMESTAMP_TOLERANCE_SECONDS = 300
 
 
 def _is_iso_date(value: str) -> bool:
@@ -492,7 +493,7 @@ def _validate_report(
         return None, [f"invalid {requirement.name} {path.relative_to(repo_root)}: {exc}"]
     errors: list[str] = []
     age_seconds = (reference - generated).total_seconds()
-    if age_seconds < -300:
+    if age_seconds < -FUTURE_TIMESTAMP_TOLERANCE_SECONDS:
         errors.append(f"{requirement.name} is dated in the future: {path.relative_to(repo_root)}")
     elif age_seconds > max_age_days * 86400:
         age_days = age_seconds / 86400
@@ -712,7 +713,10 @@ def validate_attestation(
     try:
         attested_at = _parse_timestamp(payload.get("attested_at"))
         reference = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
-        if (reference - attested_at).total_seconds() > max_age_days * 86400:
+        age_seconds = (reference - attested_at).total_seconds()
+        if age_seconds < -FUTURE_TIMESTAMP_TOLERANCE_SECONDS:
+            errors.append("deployment attestation is dated in the future")
+        elif age_seconds > max_age_days * 86400:
             errors.append(f"deployment attestation is older than {max_age_days} days")
     except ValueError as exc:
         errors.append(f"invalid deployment attestation timestamp: {exc}")
