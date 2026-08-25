@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T17:11:59Z",
+  "generated_at": "2026-08-25T18:38:04Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -17576,18 +17576,18 @@
           "url": "/works/Friedman2023ActiveInferenceInstituteActive061.html"
         },
         {
-          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
-          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
-          "year": 2026,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
-        },
-        {
           "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
           "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
           "year": 2026,
           "domain": "Active Inference",
           "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
+        },
+        {
+          "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+          "citation_key": "Friedman2026AlphaCOGANTRecursiveCorporateSelf178",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026AlphaCOGANTRecursiveCorporateSelf178.html"
         }
       ]
     },
@@ -21764,32 +21764,32 @@
       ],
       "related_works": [
         {
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
+        },
+        {
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
+        },
+        {
+          "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+          "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
+          "year": 2026,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2026DigiPPPiPDigitalPartnerPen209.html"
+        },
+        {
           "title": "When do bugs see (infra)red?",
           "citation_key": "Friedman2026WhenDoBugsSee126",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026WhenDoBugsSee126.html"
-        },
-        {
-          "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
-          "citation_key": "Friedman2021TranscriptKarlFriston1st146",
-          "year": 2021,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
-        },
-        {
-          "title": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
-          "citation_key": "Friedman2022TranscriptDiscussionsCommunicationAs144",
-          "year": 2022,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2022TranscriptDiscussionsCommunicationAs144.html"
-        },
-        {
-          "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
-          "citation_key": "Friedman2022TranscriptMarkSolmsConsciousness142",
-          "year": 2022,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         }
       ]
     },
@@ -36932,18 +36932,18 @@
           "url": "/works/Friedman2025TemporalDepthCoherentSelf023.html"
         },
         {
-          "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
-          "citation_key": "Friedman2026DataDescriptorTemplateSchema192",
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
           "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2026DataDescriptorTemplateSchema192.html"
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
         },
         {
-          "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
-          "citation_key": "Friedman2026PoolsRulesToolsTemplate190",
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
           "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2026PoolsRulesToolsTemplate190.html"
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
         }
       ]
     },
@@ -38045,18 +38045,18 @@
           "url": "/works/Friedman2025TemporalDepthCoherentSelf023.html"
         },
         {
-          "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
-          "citation_key": "Friedman2026DataDescriptorTemplateSchema192",
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
           "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2026DataDescriptorTemplateSchema192.html"
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
         },
         {
-          "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
-          "citation_key": "Friedman2026PoolsRulesToolsTemplate190",
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
           "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2026PoolsRulesToolsTemplate190.html"
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
         }
       ]
     },
@@ -38687,18 +38687,18 @@
           "url": "/works/Friedman2025TemporalDepthCoherentSelf023.html"
         },
         {
-          "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
-          "citation_key": "Friedman2026DataDescriptorTemplateSchema192",
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
           "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2026DataDescriptorTemplateSchema192.html"
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
         },
         {
-          "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
-          "citation_key": "Friedman2026PoolsRulesToolsTemplate190",
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
           "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2026PoolsRulesToolsTemplate190.html"
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
         }
       ]
     },
@@ -55645,25 +55645,25 @@
           "url": "/works/Friedman2023PostdocReview20202023060.html"
         },
         {
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
+        },
+        {
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
+        },
+        {
           "title": "Autopoietic Project Generation",
           "citation_key": "Friedman2026AutopoieticProjectGeneration185",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026AutopoieticProjectGeneration185.html"
-        },
-        {
-          "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
-          "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible120",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026BoundedAutoResearchTinyReproducible120.html"
-        },
-        {
-          "title": "DuckRabbit: Typed Multimodal Illusion Generator",
-          "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html"
         }
       ]
     },
@@ -76736,18 +76736,18 @@
           "url": "/works/Friedman2024ActiveInferenceInstituteActive041.html"
         },
         {
-          "title": "Autopoietic Project Generation",
-          "citation_key": "Friedman2026AutopoieticProjectGeneration185",
+          "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+          "citation_key": "Friedman2026ActiveInferencePowerSuite199",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026AutopoieticProjectGeneration185.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
         },
         {
-          "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
-          "citation_key": "Friedman2026BoundedAutoResearchTinyReproducible120",
+          "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+          "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026BoundedAutoResearchTinyReproducible120.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
         }
       ]
     },
@@ -81509,6 +81509,13 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
+          "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+          "citation_key": "Friedman2026RobustBeliefSharingFederated210",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026RobustBeliefSharingFederated210.html"
+        },
+        {
           "title": "Active Inference in Modeling Conflict",
           "citation_key": "Friedman2021ActiveInferenceModelingConflict076",
           "year": 2021,
@@ -81521,13 +81528,6 @@
           "year": 2021,
           "domain": "Active Inference",
           "url": "/works/Friedman2021TranscriptKarlFriston1st146.html"
-        },
-        {
-          "title": "A Worked Example of the Bayesian Mechanics of Classical Objects",
-          "citation_key": "Friedman2022WorkedExampleBayesianMechanics143",
-          "year": 2022,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2022WorkedExampleBayesianMechanics143.html"
         }
       ]
     },
@@ -83659,6 +83659,13 @@
           "url": "/works/Friedman2025QuadMathAnalyticalReview4D018.html"
         },
         {
+          "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
+          "citation_key": "Friedman2026THALIATypedHarnessAnalytical207",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026THALIATypedHarnessAnalytical207.html"
+        },
+        {
           "title": "Postdoc review (2020–2023)",
           "citation_key": "Friedman2023PostdocReview20202023060",
           "year": 2023,
@@ -83671,13 +83678,6 @@
           "year": 2025,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2025SymergeticsSymbolicSynergeticsRational020.html"
-        },
-        {
-          "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
-          "citation_key": "Friedman2026DeterministicTestbedSelfOrganizing151",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026DeterministicTestbedSelfOrganizing151.html"
         }
       ]
     },

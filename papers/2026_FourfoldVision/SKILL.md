@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing"
 description: "Published by Synergetics University on 14 July 2026, The Fuller Conjecture asks whether "there exists a line of reasoning that presents Fuller's synergetic vision as a philosophical system." This paper tests one qualified route through that problem. ..."
 tags: ["fourfoldvision"]
@@ -36,7 +37,7 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21388456
+- Canonical DOI: 10.5281/zenodo.21388456
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-17T18:52:46Z

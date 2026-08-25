@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "GeneralizedNotationNotation (GNN)"
 description: "Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models. It aims to enhance clarity, reproducibility, and interoperability in the field of Active ..."
 tags: ["active-inference", "generative-models", "cognitive-modeling", "notation-system", "reproducibility", "computational-neuroscience", "bayesian-inference", "standards", "gnn", "python"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.7803313
+- Canonical DOI: 10.5281/zenodo.7803313
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-14T22:26:11Z

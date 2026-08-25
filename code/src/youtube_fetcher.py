@@ -7,9 +7,11 @@ from __future__ import annotations
 import json
 import logging
 import subprocess
+import tempfile
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Callable
+from typing import Any, Callable
 
 logger = logging.getLogger(__name__)
 
@@ -28,7 +30,105 @@ FAST_TABS = [
 ]
 
 
-def run_yt_dlp(url: str, mode: str = "full", timeout: int = 600) -> list[str]:
+CommandExecutor = Callable[[list[str], int], subprocess.CompletedProcess]
+VideoRunner = Callable[[str, str], list[str]]
+
+
+@dataclass(frozen=True)
+class TabFetchFailure:
+    """A recoverable failure while retrieving one channel tab."""
+
+    tab: str
+    mode: str
+    error_type: str
+    message: str
+
+    def as_dict(self) -> dict[str, str]:
+        return {
+            "tab": self.tab,
+            "mode": self.mode,
+            "error_type": self.error_type,
+            "message": self.message,
+        }
+
+
+@dataclass(frozen=True)
+class TabFetchResult:
+    """Outcome for one requested YouTube channel tab."""
+
+    tab: str
+    mode: str
+    videos: tuple[dict[str, Any], ...]
+    failure: TabFetchFailure | None = None
+
+    @property
+    def complete(self) -> bool:
+        return self.failure is None
+
+    def as_dict(self) -> dict[str, Any]:
+        return {
+            "tab": self.tab,
+            "mode": self.mode,
+            "complete": self.complete,
+            "video_count": len(self.videos),
+            "failure": self.failure.as_dict() if self.failure else None,
+        }
+
+
+@dataclass(frozen=True)
+class ChannelFetchResult:
+    """Structured result for a whole-channel refresh.
+
+    A result is complete only when every requested tab succeeded.  Callers that
+    persist cached data must check :attr:`complete` before writing, so an
+    intermittent YouTube or yt-dlp failure cannot replace a complete cache with
+    a partial catalog.
+    """
+
+    channel_url: str
+    channel_id: str
+    videos: tuple[dict[str, Any], ...]
+    tabs: tuple[TabFetchResult, ...]
+
+    @property
+    def failures(self) -> tuple[TabFetchFailure, ...]:
+        return tuple(result.failure for result in self.tabs if result.failure is not None)
+
+    @property
+    def complete(self) -> bool:
+        return not self.failures
+
+    def as_dict(self) -> dict[str, Any]:
+        return {
+            "channel_id": self.channel_id,
+            "channel_url": self.channel_url,
+            "complete": self.complete,
+            "video_count": len(self.videos),
+            "tabs": [result.as_dict() for result in self.tabs],
+            "failures": [failure.as_dict() for failure in self.failures],
+        }
+
+
+class IncompleteChannelFetchError(RuntimeError):
+    """Raised when a legacy video-list caller requests an incomplete channel."""
+
+    def __init__(self, result: ChannelFetchResult):
+        self.result = result
+        failed_tabs = ", ".join(failure.tab for failure in result.failures) or "unknown"
+        super().__init__(f"Incomplete YouTube channel fetch; failed tabs: {failed_tabs}")
+
+
+def _run_subprocess(cmd: list[str], timeout: int) -> subprocess.CompletedProcess:
+    """Execute yt-dlp through the real subprocess boundary."""
+    return subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, check=False)
+
+
+def run_yt_dlp(
+    url: str,
+    mode: str = "full",
+    timeout: int = 600,
+    executor: CommandExecutor = _run_subprocess,
+) -> list[str]:
     """Run yt-dlp on a URL, return JSONL lines.
 
     mode='full'        → --dump-json --no-download (exact upload_date, slower)
@@ -52,23 +152,35 @@ def run_yt_dlp(url: str, mode: str = "full", timeout: int = 600) -> list[str]:
             url,
         ]
     logger.info("Running: %s", " ".join(cmd))
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
-    if result.returncode not in (0, 1):
+    result = executor(cmd, timeout)
+    # yt-dlp may emit useful JSONL before reporting an unavailable item with
+    # exit status 1.  That output is incomplete, so it must surface as a tab
+    # failure rather than silently becoming a partial cache refresh.
+    if result.returncode != 0:
         raise RuntimeError(f"yt-dlp exited {result.returncode}: {result.stderr[:500]}")
     return result.stdout.splitlines()
 
 
-def parse_jsonl(lines: list[str]) -> list[dict]:
-    """Parse JSONL lines, skipping malformed lines."""
-    records = []
-    for i, line in enumerate(lines):
+def parse_jsonl(lines: list[str]) -> list[dict[str, Any]]:
+    """Parse a complete yt-dlp JSONL response without silently discarding data.
+
+    ``yt-dlp --dump-json`` promises one object per line.  A malformed or
+    non-object line therefore makes the tab's coverage unknown.  Treat it as
+    a failure rather than skipping it: callers must preserve the previous
+    cache instead of publishing a smaller, apparently successful catalog.
+    """
+    records: list[dict[str, Any]] = []
+    for i, line in enumerate(lines, start=1):
         line = line.strip()
         if not line:
             continue
         try:
-            records.append(json.loads(line))
+            record = json.loads(line)
         except json.JSONDecodeError as e:
-            logger.warning("Skipping malformed JSONL line %d: %s", i, e)
+            raise ValueError(f"malformed yt-dlp JSONL line {i}: {e.msg}") from e
+        if not isinstance(record, dict):
+            raise ValueError(f"yt-dlp JSONL line {i} is not an object")
+        records.append(record)
     return records
 
 
@@ -115,7 +227,7 @@ def fetch_tab(
     tab: str,
     channel_id: str,
     mode: str,
-    runner: Callable[[str, str], list[str]] = run_yt_dlp,
+    runner: VideoRunner = run_yt_dlp,
 ) -> list[dict]:
     """Fetch one tab (/videos, /streams, or /shorts) for a channel.
 
@@ -125,47 +237,98 @@ def fetch_tab(
     url = f"{channel_url}/{tab}"
     lines = runner(url, mode)
     raw_records = parse_jsonl(lines)
-    videos, skipped = [], 0
-    for raw in raw_records:
+    videos: list[dict] = []
+    invalid_records: list[int] = []
+    for index, raw in enumerate(raw_records, start=1):
         rec = normalize_video(raw, channel_id)
         if rec is None:
-            skipped += 1
+            invalid_records.append(index)
         else:
             videos.append(rec)
-    if skipped:
-        logger.info("  %s: skipped %d records (no upload_date)", tab, skipped)
+    if invalid_records:
+        preview = ", ".join(str(index) for index in invalid_records[:5])
+        suffix = ", …" if len(invalid_records) > 5 else ""
+        raise ValueError(
+            f"{tab}: {len(invalid_records)} yt-dlp record(s) failed canonical video validation "
+            f"(records {preview}{suffix})"
+        )
     logger.info("  %s: %d videos", tab, len(videos))
     return videos
 
 
-def fetch_channel(
+def fetch_channel_result(
     channel_url: str,
     channel_id: str,
     tabs: list[tuple[str, str]] | None = None,
-    runner: Callable[[str, str], list[str]] = run_yt_dlp,
-) -> list[dict]:
-    """Fetch all tabs for a channel, deduplicate, return date-sorted VideoRecords."""
+    runner: VideoRunner = run_yt_dlp,
+) -> ChannelFetchResult:
+    """Fetch all tabs and return videos plus explicit completion state.
+
+    Tab failures are retained in the result for diagnostics.  The returned
+    videos are intentionally available for inspection, but :attr:`complete`
+    remains false until all requested tabs succeed.
+    """
     seen_ids: set[str] = set()
     all_videos: list[dict] = []
+    tab_results: list[TabFetchResult] = []
 
-    for tab, mode in tabs or TABS:
+    selected_tabs = TABS if tabs is None else tabs
+    for tab, mode in selected_tabs:
         try:
             videos = fetch_tab(channel_url, tab, channel_id, mode, runner=runner)
         except Exception as e:
             logger.warning("Failed to fetch %s/%s: %s", channel_url, tab, e)
+            tab_results.append(
+                TabFetchResult(
+                    tab=tab,
+                    mode=mode,
+                    videos=(),
+                    failure=TabFetchFailure(
+                        tab=tab,
+                        mode=mode,
+                        error_type=type(e).__name__,
+                        message=str(e),
+                    ),
+                )
+            )
             continue
+        tab_results.append(TabFetchResult(tab=tab, mode=mode, videos=tuple(videos)))
         for v in videos:
             if v["id"] not in seen_ids:
                 seen_ids.add(v["id"])
                 all_videos.append(v)
 
     all_videos.sort(key=lambda v: v["upload_date"])
-    logger.info("Total unique: %d", len(all_videos))
-    return all_videos
+    result = ChannelFetchResult(
+        channel_url=channel_url,
+        channel_id=channel_id,
+        videos=tuple(all_videos),
+        tabs=tuple(tab_results),
+    )
+    logger.info("Total unique: %d (complete=%s)", len(all_videos), result.complete)
+    return result
+
+
+def fetch_channel(
+    channel_url: str,
+    channel_id: str,
+    tabs: list[tuple[str, str]] | None = None,
+    runner: VideoRunner = run_yt_dlp,
+) -> list[dict]:
+    """Return channel videos for legacy callers when every tab succeeds.
+
+    Cache-writing callers must use :func:`fetch_channel_result` and reject
+    incomplete results.  This compatibility helper retains the historical
+    list-returning interface while failing closed for incomplete channels.
+    """
+    result = fetch_channel_result(channel_url, channel_id, tabs=tabs, runner=runner)
+    if not result.complete:
+        raise IncompleteChannelFetchError(result)
+    return list(result.videos)
 
 
 def save_json(videos: list[dict], channel_url: str, channel_id: str, output_path: Path) -> None:
-    """Write ChannelData envelope to disk as indented JSON."""
+    """Atomically write a complete ChannelData envelope to disk as indented JSON."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
     data = {
         "meta": {
@@ -177,7 +340,24 @@ def save_json(videos: list[dict], channel_url: str, channel_id: str, output_path
         },
         "videos": videos,
     }
-    output_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+    temporary_path: Path | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=output_path.parent,
+            prefix=f".{output_path.name}.",
+            suffix=".tmp",
+            delete=False,
+        ) as handle:
+            temporary_path = Path(handle.name)
+            handle.write(json.dumps(data, indent=2, ensure_ascii=False))
+            handle.write("\n")
+        temporary_path.replace(output_path)
+    except Exception:
+        if temporary_path is not None:
+            temporary_path.unlink(missing_ok=True)
+        raise
     logger.info("Saved %d videos to %s", len(videos), output_path)
 
 

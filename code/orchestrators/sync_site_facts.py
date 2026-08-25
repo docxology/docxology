@@ -11,8 +11,8 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_facts import counts, generated_date, generated_month_year
-from report_paths import latest_subdir_file
+from site_facts import SiteFactsError, counts, generated_date, generated_month_year  # noqa: E402
+from report_paths import latest_subdir_file  # noqa: E402
 TARGETS = [
     REPO_ROOT / "index.html",
     REPO_ROOT / "publications.html",
@@ -22,6 +22,22 @@ TARGETS = [
     REPO_ROOT / "art.html",
     REPO_ROOT / "videos.html",
 ]
+
+MONTH_NAMES = (
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+)
+MONTH_YEAR_PATTERN = rf"(?:{'|'.join(MONTH_NAMES)})\s+\d{{4}}"
 
 
 def latest_report(prefix: str, suffix: str) -> str | None:
@@ -53,11 +69,11 @@ def render(path: Path) -> str:
     github = c.get("github_inventory", {})
     public_facts = c.get("public_source_snapshot", {})
     replacements = {
-        r"Last updated: (?:May|June|July) 2026": f"Data refreshed {month}",
-        r"Data refreshed (?:May|June|July) 2026": f"Data refreshed {month}",
+        rf"Last updated:\s*{MONTH_YEAR_PATTERN}": f"Data refreshed {month}",
+        rf"Data refreshed\s+{MONTH_YEAR_PATTERN}": f"Data refreshed {month}",
     }
     for pattern, replacement in replacements.items():
-        text = re.sub(pattern, replacement, text)
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
 
     if path.name == "index.html":
         text = re.sub(r'<meta name="revised" content="[^"]+">', f'<meta name="revised" content="{date}">', text)
@@ -67,7 +83,7 @@ def render(path: Path) -> str:
         text = re.sub(r"Highlights from the catalog across \d+ research domains", "Highlights from the catalog across 8 research domains", text)
     elif path.name == "publications.html":
         text = re.sub(r"<p class=\"sub\">\d+ works spanning", f"<p class=\"sub\">{works} works spanning", text, count=1)
-        text = re.sub(r"as of (?:May|June|July) 2026", f"as of {month}", text, count=1)
+        text = re.sub(rf"as of {MONTH_YEAR_PATTERN}", f"as of {month}", text, count=1, flags=re.IGNORECASE)
         text = re.sub(r"<meta name=\"revised\" content=\"[^\"]+\">", f'<meta name="revised" content="{date}">', text)
     elif path.name == "discovery.html":
         text = re.sub(r'("dateModified":\s*")[^"]+(")', rf"\g<1>{date}\g<2>", text, count=1)
@@ -169,6 +185,16 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if public facts are stale")
     args = parser.parse_args()
+    # Do this before examining or writing targets.  A wall-clock fallback would
+    # make an invalid/missing revision source appear freshly synchronized;
+    # release-facing metadata must instead stop until the generated count
+    # snapshot is repaired.
+    try:
+        counts()
+        generated_date()
+        generated_month_year()
+    except (OSError, SiteFactsError) as exc:
+        raise SystemExit(f"site-facts source validation failed: {exc}") from exc
     stale = []
     for path in TARGETS:
         if not path.exists():

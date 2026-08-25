@@ -3,12 +3,16 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+import pytest
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
 sys.path.insert(0, str(ORCH_DIR))
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 import build_video_pages  # noqa: E402
 from fetch_video_transcripts import transcript_from_vtt  # noqa: E402
+from generated_outputs import UnsafeGeneratedOutputPathError  # noqa: E402
 
 
 def sample_video() -> dict:
@@ -90,6 +94,99 @@ def test_timeline_runtime_uses_compact_index_not_raw_channel_exports():
     assert "data/videos-index.json" in runtime
     assert "code/data/youtube_personal.json" not in runtime
     assert "code/data/youtube_institute.json" not in runtime
+
+
+def test_orphan_check_tracks_generator_owned_pages_but_leaves_manual_video_pages_unowned(tmp_path: Path):
+    video_dir = tmp_path / "videos"
+    data_dir = tmp_path / "data"
+    video_dir.mkdir()
+    data_dir.mkdir()
+    expected = {"videos/index.html", "videos/personal-abc123.html"}
+    manifest_path = data_dir / "video-pages-manifest.json"
+    # The manifest intentionally retains a page from a previous source
+    # snapshot. Its contents may have been manually altered, but its ownership
+    # remains generator-derived and therefore must be reported rather than
+    # deleted during a write run.
+    manifest_path.write_text(
+        build_video_pages.render_video_page_manifest(expected | {"videos/institute-retired.html"}),
+        encoding="utf-8",
+    )
+    for relative in expected:
+        (tmp_path / relative).write_text(build_video_pages.VIDEO_PAGE_MARKER, encoding="utf-8")
+    retired = video_dir / "institute-retired.html"
+    retired.write_text("review before removal", encoding="utf-8")
+    marker_orphan = video_dir / "personal-marked-orphan.html"
+    marker_orphan.write_text(build_video_pages.VIDEO_PAGE_MARKER, encoding="utf-8")
+    legacy_orphan = video_dir / "personal-legacy-orphan.html"
+    legacy_orphan.write_text(
+        "\n".join(build_video_pages._LEGACY_VIDEO_FINGERPRINTS), encoding="utf-8"
+    )
+    hand_authored = video_dir / "editorial-note.html"
+    original_hand_authored = "# Hand-authored video notes\n"
+    hand_authored.write_text(original_hand_authored, encoding="utf-8")
+
+    orphans, errors = build_video_pages.generated_video_page_orphans(
+        expected,
+        video_dir=video_dir,
+        manifest_path=manifest_path,
+        repo_root=tmp_path,
+    )
+
+    assert errors == ()
+    assert set(orphans) == {retired, marker_orphan, legacy_orphan}
+    assert hand_authored not in orphans
+    # Detection is strictly observational; cleanup requires an explicit review
+    # and a separate destructive operation.
+    assert retired.read_text(encoding="utf-8") == "review before removal"
+    assert hand_authored.read_text(encoding="utf-8") == original_hand_authored
+
+
+def test_check_mode_reports_an_orphan_without_rewriting_any_video_page(tmp_path: Path):
+    video_dir = tmp_path / "videos"
+    data_dir = tmp_path / "data"
+    video_dir.mkdir()
+    data_dir.mkdir()
+    expected_pages = {"videos/index.html", "videos/personal-abc123.html"}
+    manifest_path = data_dir / "video-pages-manifest.json"
+    rendered = {
+        tmp_path / "videos" / "index.html": build_video_pages.VIDEO_PAGE_MARKER,
+        tmp_path / "videos" / "personal-abc123.html": build_video_pages.VIDEO_PAGE_MARKER,
+        manifest_path: build_video_pages.render_video_page_manifest(expected_pages),
+    }
+    for path, content in rendered.items():
+        path.write_text(content, encoding="utf-8")
+    orphan = video_dir / "institute-retired.html"
+    original = build_video_pages.VIDEO_PAGE_MARKER + "\nretired output\n"
+    orphan.write_text(original, encoding="utf-8")
+
+    stale = build_video_pages.stale_video_outputs(
+        rendered,
+        repo_root=tmp_path,
+        video_dir=video_dir,
+        manifest_path=manifest_path,
+    )
+
+    assert stale == ("orphaned generated video page: videos/institute-retired.html",)
+    assert orphan.read_text(encoding="utf-8") == original
+
+
+def test_video_check_rejects_a_symlinked_generated_output(tmp_path: Path):
+    video_dir = tmp_path / "videos"
+    video_dir.mkdir()
+    outside = tmp_path / "outside.html"
+    outside.write_text("outside must survive\n", encoding="utf-8")
+    target = video_dir / "index.html"
+    target.symlink_to(outside)
+
+    with pytest.raises(UnsafeGeneratedOutputPathError):
+        build_video_pages.stale_video_outputs(
+            {target: build_video_pages.VIDEO_PAGE_MARKER},
+            repo_root=tmp_path,
+            video_dir=video_dir,
+            manifest_path=tmp_path / "data" / "video-pages-manifest.json",
+        )
+
+    assert outside.read_text(encoding="utf-8") == "outside must survive\n"
 
 
 def test_render_video_page_uses_local_page_and_youtube_embed(monkeypatch):

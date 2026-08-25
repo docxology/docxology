@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Con-cat-enate: emulation of Cat Hippocampus"
 description: "Updated &nbsp; added a number of pages at the start&nbsp; (from page 2) that describes the entire system and whats missing apologies for not giving this overview of&nbsp; what would happen given those missing parts and the purpose of demo0.01 which s..."
 tags: ["concatenate"]
 domain: "Genetics & Biomedical"
 citation: "Andrew Djuwidja, Daniel Friedman (2025). *Con-cat-enate: emulation of Cat Hippocampus*. Genetics & Biomedical."
-doi: "10.5281/zenodo.14738798"
+doi: "10.5281/zenodo.13626536"
+artifact_doi: "10.5281/zenodo.14738798"
 ---
 
 # Con-cat-enate: emulation of Cat Hippocampus
@@ -38,10 +40,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.14738798
+- Canonical DOI: 10.5281/zenodo.13626536
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-05-30T18:56:02Z
+- Artifact DOI: 10.5281/zenodo.14738798
 
 ## Prerequisites
 
@@ -53,6 +56,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.14738798`
+1. Reference the DOI for citation: `10.5281/zenodo.13626536`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

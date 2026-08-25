@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "AuBI"
 description: "AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework. The paper examines how AI systems ca..."
 tags: ["aubi", "augmented-intelligence", "biological-intelligence", "active-inference", "cognitive-augmentation", "human-ai-interaction"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.17228945
+- Canonical DOI: 10.5281/zenodo.17228945
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:44Z

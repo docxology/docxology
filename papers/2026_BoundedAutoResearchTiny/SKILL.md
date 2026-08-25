@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task"
 description: "This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that turns an AutoResearch loop into ordinary reproducible research infrastructure. The case study is intentionally small but con..."
 tags: ["autoresearch", "reproducible-research", "machine-learning-benchmark", "artifact-readiness", "human-review", "local-artifact-integrity"]
@@ -42,10 +43,10 @@ bounded small MNIST neural-network classification loop.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20417016
+- Canonical DOI: 10.5281/zenodo.20417016
 - PDF SHA-256: e07b62850a1995935283d37a45c21d71fa7c4e69cdcc451c5a1ea8aee6d0c94a
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-19T22:45:41Z
 
 ## Prerequisites
 

@@ -2,11 +2,14 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from pathlib import Path
 from urllib.parse import unquote
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from biblio_table import iter_bibliography_rows  # noqa: E402
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Za-z0-9]+")
 MARKDOWN_LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 
@@ -15,8 +18,22 @@ def paper_readmes() -> list[Path]:
     return sorted(PAPERS_DIR.glob("20*/README.md"))
 
 
-def doi_for_readme(path: Path, metadata: dict[str, dict]) -> str:
+def bibliography_dois() -> dict[str, str]:
+    """Read citation DOI roles from the canonical bibliography source."""
+    result: dict[str, str] = {}
+    for row in iter_bibliography_rows(REPO_ROOT / "pages" / "BIBLIOGRAPHY.md"):
+        if not row.folder:
+            continue
+        match = DOI_RE.search(row.link_cell)
+        if match:
+            result[row.folder] = match.group(0).rstrip(".,;:)]}`'\"")
+    return result
+
+
+def doi_for_readme(path: Path, metadata: dict[str, dict], canonical: dict[str, str]) -> str:
     folder = path.parent.name
+    if folder in canonical:
+        return canonical[folder]
     doi = str(metadata.get(folder, {}).get("doi") or "")
     if doi:
         match = DOI_RE.search(doi)
@@ -27,9 +44,10 @@ def doi_for_readme(path: Path, metadata: dict[str, dict]) -> str:
 
 def test_all_paper_readme_doi_citations_include_explicit_doi_and_url():
     metadata = json.loads((PAPERS_DIR / "paper_metadata.json").read_text())
+    canonical = bibliography_dois()
     failures = []
     for path in paper_readmes():
-        doi = doi_for_readme(path, metadata)
+        doi = doi_for_readme(path, metadata, canonical)
         if not doi:
             continue
         text = path.read_text()

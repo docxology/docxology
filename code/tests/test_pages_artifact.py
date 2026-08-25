@@ -5,6 +5,8 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+import pytest
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
@@ -40,32 +42,70 @@ def test_all_dated_growth_reports_are_control_metadata():
     assert bpa.is_control_path(Path("reports/pages_artifact_growth_2026-07-24.json"))
 
 
-def test_manifest_lists_todays_growth_report_before_it_exists(monkeypatch):
-    """write_manifest() creates the growth report *after* building the payload.
-
-    If the payload only listed control files already on disk, the manifest it
-    wrote would be one entry short of its own recomputation and `--check-manifest`
-    would report it stale on every first run of a new UTC day — which is exactly
-    what blocked the Pages deploy. Point GROWTH_REPORT at a date whose report has
-    never been written and confirm it is listed anyway.
-    """
-    unwritten = bpa.REPO_ROOT / "reports" / "pages_artifact_growth_1970-01-01.json"
-    assert not unwritten.exists()
-    monkeypatch.setattr(bpa, "GROWTH_REPORT", unwritten)
-
-    payload = bpa._manifest_payload(include_pending_growth=True)
-
-    listed = {entry["path"] for entry in payload["control_files"]}
-    assert "reports/pages_artifact_growth_1970-01-01.json" in listed
+def test_only_top_level_growth_reports_are_control_metadata():
+    """A payload cannot hide behind Path.match's suffix matching behavior."""
+    assert not bpa.is_control_path(
+        Path("untrusted/reports/pages_artifact_growth_2026-08-25.json")
+    )
 
 
-def test_check_manifest_payload_omits_unwritten_today_report(monkeypatch):
-    """`--check-manifest` on a later UTC day must not require today's missing report."""
-    unwritten = bpa.REPO_ROOT / "reports" / "pages_artifact_growth_1970-01-02.json"
-    assert not unwritten.exists()
-    monkeypatch.setattr(bpa, "GROWTH_REPORT", unwritten)
+def test_pages_input_symlinks_fail_closed(tmp_path):
+    outside = tmp_path.parent / "outside-pages-input.txt"
+    outside.write_text("private", encoding="utf-8")
+    link = tmp_path / "published.txt"
+    link.symlink_to(outside)
 
-    payload = bpa._manifest_payload(include_pending_growth=False)
+    with pytest.raises(SystemExit, match="symlinked Pages input"):
+        bpa.source_path(Path("published.txt"), repo_root=tmp_path)
 
-    listed = {entry["path"] for entry in payload["control_files"]}
-    assert "reports/pages_artifact_growth_1970-01-02.json" not in listed
+
+def test_pages_input_hard_links_fail_closed(tmp_path):
+    source = tmp_path / "source.txt"
+    source.write_text("shared", encoding="utf-8")
+    linked = tmp_path / "published.txt"
+    linked.hardlink_to(source)
+
+    with pytest.raises(SystemExit, match="hard-linked Pages input"):
+        bpa.source_path(Path("published.txt"), repo_root=tmp_path)
+
+
+def test_growth_report_contract_is_compared_by_manifest_validation():
+    expected = {field: {} for field in bpa.MANIFEST_COMPARISON_FIELDS}
+    expected["growth_report"] = "reports/pages_artifact_growth_2026-08-25.json"
+    stale = {**expected, "growth_report": "reports/pages_artifact_growth_2026-08-24.json"}
+
+    assert bpa.manifest_drift_fields(stale, expected) == ["growth_report"]
+
+
+def test_source_revision_allows_a_trailing_control_only_commit() -> None:
+    """The final manifest commit is intentionally not a self-referential source SHA."""
+    parents = {"controls": "payload", "payload": "base"}
+    changes = {
+        "controls": [
+            Path("data/pages-artifact-manifest.json"),
+            Path("data/release-integrity.json"),
+            Path("reports/pages_artifact_growth_2026-08-25.json"),
+        ],
+        "payload": [Path("pages/BIBLIOGRAPHY.md")],
+    }
+
+    assert bpa._latest_payload_commit(
+        "controls", parents.get, changes.__getitem__
+    ) == "payload"
+
+
+def test_manifest_drift_includes_stale_source_commit() -> None:
+    """A hand-edited/old source SHA must no longer produce a false-green check."""
+    expected = {
+        "schema_version": "1.0",
+        "source_commit_at_generation": "current-source-commit",
+        "canonical_origin": "https://danielarifriedman.com/",
+        "github_fallback": {},
+        "policy": {},
+        "budget": {},
+        "included_files": [],
+        "control_files": [],
+        "omitted_paper_images": {},
+    }
+    stale = {**expected, "source_commit_at_generation": "stale-source-commit"}
+    assert bpa.manifest_drift_fields(stale, expected) == ["source_commit_at_generation"]

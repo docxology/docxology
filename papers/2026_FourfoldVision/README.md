@@ -1,4 +1,6 @@
-# 📄 Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎨 Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 

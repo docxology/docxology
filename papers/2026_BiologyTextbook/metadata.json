@@ -1,8 +1,8 @@
 {
   "title": "Introduction to Biology: A Generative Approach",
   "version": "1.0.0",
-  "doi": "10.5281/zenodo.20286478",
-  "doi_url": "https://doi.org/10.5281/zenodo.20286478",
+  "doi": "10.5281/zenodo.20286477",
+  "doi_url": "https://doi.org/10.5281/zenodo.20286477",
   "zenodo_record": "https://zenodo.org/records/20286478",
   "record_id": "20286478",
   "publication_date": "2026-05-26",
@@ -84,5 +84,7 @@
   ],
   "related_software": [
     "docxology/biology_textbook"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.20286478",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20286478"
 }

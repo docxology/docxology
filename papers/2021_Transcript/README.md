@@ -1,8 +1,10 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021
 
 **Karl Friston, David Standish Douglass, Maria Luiza Iennaco de Vasconcelos, Stephen Sillett, Lorena Sganzerla, Dean Tickles, and 3 others** (2021) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5797072-blue)](https://doi.org/10.5281/zenodo.5797072)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5797040-blue)](https://doi.org/10.5281/zenodo.5797040)
 
 ---
 
@@ -26,14 +28,15 @@
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.5797072](https://doi.org/10.5281/zenodo.5797072)
+- DOI: [10.5281/zenodo.5797040](https://doi.org/10.5281/zenodo.5797040)
+- Artifact DOI: [10.5281/zenodo.5797072](https://doi.org/10.5281/zenodo.5797072)
 - Zenodo record: [https://zenodo.org/records/5797072](https://zenodo.org/records/5797072)
 - PDF: [v2 - Karl Friston, Applied Active Inference Symposium, ActInfLab, June 21, 2021.pdf](v2%20-%20Karl%20Friston%2C%20Applied%20Active%20Inference%20Symposium%2C%20ActInfLab%2C%20June%2021%2C%202021.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/5797072)
 
 ## Citation
 
-> Karl Friston, David Standish Douglass, Maria Luiza Iennaco de Vasconcelos, Stephen Sillett, Lorena Sganzerla, Dean Tickles, and 3 others (2021). *Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021*. Zenodo. DOI: 10.5281/zenodo.5797072. URL: https://doi.org/10.5281/zenodo.5797072.
+> Karl Friston, David Standish Douglass, Maria Luiza Iennaco de Vasconcelos, Stephen Sillett, Lorena Sganzerla, Dean Tickles, and 3 others (2021). *Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021*. Zenodo. DOI: 10.5281/zenodo.5797040. URL: https://doi.org/10.5281/zenodo.5797040.
 
 ## Related
 

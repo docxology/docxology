@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 ArgentineAnt
 
 **Daniel A. Friedman, Deborah M. Gordon** (2018) · *PLoS One*

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "DigitalRhetorical"
 description: "This paper makes a case for integrating rhetorical studies with ecological studies to catalog, monitor, and study digital image meme data. We develop a Digital Rhetorical Ecosystem three-tiered model..."
 tags: ["digital-rhetoric", "image-memes", "dre3-model", "narrative-ecosystems", "rhetorical-ecology", "sensemaking", "computational-discourse-analysis"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.5573946
+- Canonical DOI: 10.5281/zenodo.5573946
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:47Z

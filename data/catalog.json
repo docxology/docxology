@@ -11,7 +11,7 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-08-20",
+  "dateModified": "2026-08-25",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -479,7 +479,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-inventory",
       "name": "Public Source Inventory",
       "description": "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.",
-      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-19.json",
+      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-25.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -493,7 +493,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-19.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-25.json",
         "encodingFormat": "application/json"
       }
     },
@@ -502,7 +502,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-snapshot",
       "name": "Public Source Snapshot",
       "description": "Current public API freshness snapshot with normalized drift-comparison facts.",
-      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-08-19.json",
+      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-08-25.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -516,7 +516,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-08-19.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-08-25.json",
         "encodingFormat": "application/json"
       }
     },
@@ -594,7 +594,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-08-20.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-08-25.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -608,7 +608,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-08-20.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-08-25.json",
         "encodingFormat": "application/json"
       }
     },
@@ -617,7 +617,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#browser-smoke",
       "name": "Browser Smoke Manifest",
       "description": "Selector-based Playwright smoke checks for core local pages.",
-      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-07-29/manifest.json",
+      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-08-25/manifest.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -631,7 +631,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-07-29/manifest.json",
+        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-08-25/manifest.json",
         "encodingFormat": "application/json"
       }
     },
@@ -640,7 +640,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#browser-qa",
       "name": "Progressive Browser QA",
       "description": "Playwright checks for no-JavaScript fallbacks, keyboard interactions, focus restoration, responsive behavior, forced colors, console errors, and YouTube iframe policy.",
-      "url": "https://danielarifriedman.com/reports/browser-qa/2026-07-29/manifest.json",
+      "url": "https://danielarifriedman.com/reports/browser-qa/2026-08-25/manifest.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -654,7 +654,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/browser-qa/2026-07-29/manifest.json",
+        "contentUrl": "https://danielarifriedman.com/reports/browser-qa/2026-08-25/manifest.json",
         "encodingFormat": "application/json"
       }
     },

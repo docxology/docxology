@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "AntStack"
 description: "AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patte..."
 tags: ["antstack", "multilevel-modeling", "ant-colonies", "social-insects", "multiscale-biology", "colony-organization"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.16782756
+- Canonical DOI: 10.5281/zenodo.16782756
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z

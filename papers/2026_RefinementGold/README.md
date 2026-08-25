@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

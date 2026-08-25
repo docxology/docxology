@@ -155,6 +155,64 @@ def social_meta_tags(
     return "\n".join(lines)
 
 
+def render_pillar_head(
+    *,
+    title: str,
+    description: str,
+    canonical_path: str,
+    og_image: str,
+    style: str,
+    jsonld: dict,
+) -> str:
+    """Render the shared security/SEO head for a root-level pillar page.
+
+    Pillar pages are long-form, server-rendered sources and cannot delegate
+    their essential metadata to client JavaScript.  This renderer keeps their
+    CSP, referrer policy, rel=me links, canonical, social metadata, and JSON-LD
+    in the same shared layer as other generated public pages.
+    """
+    canonical = f"{SITE_ORIGIN}{canonical_path.lstrip('/')}"
+    escaped_title = html.escape(title, quote=True)
+    escaped_description = html.escape(description, quote=True)
+    image_url = f"{SITE_ORIGIN}{og_image.lstrip('/')}"
+    jsonld_text = json.dumps(jsonld, indent=4, ensure_ascii=False)
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{escaped_title}</title>
+    <meta name="description" content="{escaped_description}">
+    <meta name="author" content="Daniel Ari Friedman">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{canonical}">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+{HEAD_EXTRAS}
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{escaped_title}">
+    <meta property="og:description" content="{escaped_description}">
+    <meta property="og:url" content="{canonical}">
+    <meta property="og:image" content="{image_url}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+{social_meta_tags(title, description, image_url, image_alt=title)}
+    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
+    <meta name="theme-color" content="#0c0c0e">
+    <style>
+{BREADCRUMB_CSS}
+{style.rstrip()}
+    </style>
+    <script type="application/ld+json">
+{jsonld_text}
+    </script>
+</head>
+"""
+
+
 _VISIBLE_AGENT_LINK = re.compile(
     r'<a\b[^>]*href=["\'][^"\']*data/agent-index\.json[^"\']*["\'][^>]*>',
     re.I,

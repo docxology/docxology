@@ -4,11 +4,13 @@ Run static checks after any HTML/CSS/JavaScript change and dynamic checks after
 interactive-layer changes:
 
 ```bash
-python3 code/orchestrators/accessibility_audit.py --check
-python3 code/orchestrators/browser_smoke.py
-/opt/homebrew/opt/python@3.13/bin/python3.13 code/orchestrators/browser_qa.py
-/opt/homebrew/opt/python@3.13/bin/python3.13 code/orchestrators/browser_qa.py --check
-python3 code/orchestrators/visual_qa.py
+uv run python3 code/orchestrators/accessibility_audit.py --check
+uv sync --extra browser-qa
+uv run --extra browser-qa playwright install chromium
+uv run --extra browser-qa python3 code/orchestrators/browser_smoke.py
+uv run --extra browser-qa python3 code/orchestrators/browser_qa.py
+uv run --extra browser-qa python3 code/orchestrators/browser_qa.py --check
+uv run --extra browser-qa python3 code/orchestrators/visual_qa.py
 ```
 
 The progressive suite covers no-JavaScript fallbacks, keyboard and Escape
@@ -21,4 +23,6 @@ console or page errors fail the report.
 Check screenshots at representative desktop, mobile, high-zoom, and print
 states. Preserve intrinsic image dimensions, meaningful alt text, lazy loading,
 transcript links, and non-JavaScript content when changing gallery or video
-components.
+components. A deployment attestation additionally requires an explicit visual
+review record, so after inspecting post-deploy screenshots run visual QA with
+`--reviewed-by "Reviewer name"`; do not use that option before review.

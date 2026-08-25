@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
@@ -39,8 +41,6 @@
 > Daniel Ari Friedman (2026). *Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts*. Zenodo. DOI: 10.5281/zenodo.20786638. URL: https://doi.org/10.5281/zenodo.20786638.
 
 ## Related
-
-- GitHub release: https://github.com/docxology/template_madlib/releases/tag/v0.1.0
 
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
 - [All Papers](../README.md)

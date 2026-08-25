@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "QuadMath"
 description: "QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller's Synergetics geometry in a computational framework. The paper introduces a 4D namespace fr..."
 tags: ["quadmath", "quadray-coordinates", "4d-geometry", "synergetics", "buckminster-fuller", "ivm-lattice", "rational-arithmetic", "computational-geometry"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.16887799
+- Canonical DOI: 10.5281/zenodo.16887799
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:55Z

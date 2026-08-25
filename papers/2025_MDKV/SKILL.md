@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "MDKV"
 description: "MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents. Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations be..."
 tags: ["mdkv", "markdown", "key-value-format", "structured-data", "document-specification", "yaml-free", "round-trip-transformation"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.16790554
+- Canonical DOI: 10.5281/zenodo.16790554
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:50Z

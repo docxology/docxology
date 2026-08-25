@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧬 PaleolithicRockstars
 
 **Daniel Ari Friedman** (2024) · *Physics of Life Reviews*

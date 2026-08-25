@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 A Deterministic Testbed for Self-Organizing Agent-Team Coordination
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

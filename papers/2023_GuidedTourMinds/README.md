@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 GuidedTourMinds
 
 **Ali Rahmjoo, Daniel Ari Friedman** (2023) · *Physics of Life Reviews*

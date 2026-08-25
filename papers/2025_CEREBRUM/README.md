@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling
 
 **Daniel Ari Friedman** (2025) · *Zenodo*

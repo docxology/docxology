@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "ArgentineAnt"
 description: "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the..."
 tags: ["argentine-ant", "linepithema-humile", "invasive-species", "supercolony", "nestmate-recognition", "collective-behavior", "chemical-ecology", "cuticular-hydrocarbons"]
 domain: "Entomology"
 citation: "Daniel A. Friedman, Deborah M. Gordon (2018). *ArgentineAnt*. Entomology."
+doi: "10.1371/journal.pone.0202117"
 ---
 
 # ArgentineAnt
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.1371/journal.pone.0202117
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.1371/journal.pone.0202117`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

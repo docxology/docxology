@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast"
 description: "<div> <div>This manuscript offers a synthetic scholarly history of Crescent City, California &mdash; seat of Del Norte County on the north- ernmost developed strip of the California coast &mdash; where published accounts remain fragmentary or era-bou..."
 tags: ["california", "cascadia", "crescent-city", "jefferson", "usa"]
 domain: "Cognitive Security"
 citation: "Daniel Ari Friedman (2026). *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast*. Cognitive Security."
-doi: "10.5281/zenodo.20286171"
+doi: "10.5281/zenodo.20286170"
+artifact_doi: "10.5281/zenodo.20286171"
 ---
 
 # Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast
@@ -40,10 +42,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20286171
+- Canonical DOI: 10.5281/zenodo.20286170
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
 - Last checked: 2026-06-04T20:45:04Z
+- Artifact DOI: 10.5281/zenodo.20286171
 
 ## Prerequisites
 
@@ -55,6 +58,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.20286171`
+1. Reference the DOI for citation: `10.5281/zenodo.20286170`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

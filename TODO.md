@@ -8,8 +8,8 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-08-13 (thermo-nuclear review of recent intake/security/CI
-  code; deferred 2026-08-01 robustness items shipped — see CHANGELOG)
+- Last reviewed: 2026-08-25 (public-main release-integrity review; deferred
+  package migration remains staged behind a deployment-SHA-attested release)
 
 ## Completed / Closed (2026-08-01)
 
@@ -73,7 +73,7 @@ Comprehensive follow-up pass:
 - Owner: MAINTAINER
 - Trigger: every release or Pages deployment
 - Deliverable: run `regenerate_all.py --validate`, then verify the Pages artifact and live deployment before each release
-- Acceptance: source hashes, generator metadata, Pages file/byte counts, omitted-image policy, deployment metadata, and live verification are present; a second offline regeneration pass produces no content changes
+- Acceptance: source hashes, generator metadata, Pages file/byte counts, omitted-image policy, deployment metadata, fresh revision-bound browser/link/source/live evidence, and a deployment-SHA attestation are present; a second offline regeneration pass produces no content changes
 - Dependencies: `regenerate_all.py`, Pages workflow, live verification
 
 ### DOC-003 — Public privacy and claim safety
@@ -183,6 +183,24 @@ Comprehensive follow-up pass:
 - Deliverable: maintain runbooks for intake, repository classification, CV release, Pages release, live verification, retention, claims, accessibility, and visual QA
 - Acceptance: `AGENT_START.md`, `AGENTS.md`, `CLAUDE.md`, `docs/README.md`, `GENERATED.md`, and the release checklist point to the same ordered commands
 - Dependencies: generated manifest and CI workflows
+
+### DOC-014 — Stage the Python package migration after a green release
+
+- Priority: P2
+- Owner: MAINTAINER
+- Trigger: a deployment-SHA-attested release has passed; do not combine with a release-integrity change
+- Deliverable: migrate ad-hoc `sys.path` imports into a `docxology_tools` package with thin, backwards-compatible CLI wrappers on a dedicated follow-up branch
+- Acceptance: every current CLI command remains callable, no runtime path mutation is required outside wrappers, full tests/validation/lint pass, and the migration has its own review and release evidence
+- Dependencies: DOC-002 release attestation, generator-plan coverage, Python packaging decision
+
+### SEC-002 — Re-run the managed-profile deep security scan
+
+- Priority: P1
+- Owner: MAINTAINER / SECURITY REVIEWER
+- Trigger: the required managed filesystem permission profile becomes available; also before a security-sensitive release
+- Deliverable: run `codex-security:deep-security-scan` against the clean candidate and record its scope, evidence, validated findings, and explicit limitations
+- Acceptance: the scan has actually run under its required profile and every validated finding is fixed, deferred with an owner, or otherwise resolved; lack of the profile remains an explicit blocked state, never a pass
+- Dependencies: managed filesystem permission profile, clean candidate checkout, `codex-security:deep-security-scan`
 
 ## Deferred leftovers
 

@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

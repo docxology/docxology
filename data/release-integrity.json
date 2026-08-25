@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-08-13T17:52:47+00:00",
-  "source_commit_at_generation": "bb68fda911b71b2c1d6abe11157eddae02020cda",
+  "source_commit_at_generation": "b08dc428aa578572feb0977c2c28e1f597b29378",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -9,13 +9,12 @@
     "python": ">=3.12 (pyproject.toml)",
     "project_version": "0.1.0",
     "orchestrator_sha256": {
-      "code/orchestrators/regenerate_all.py": "6a0beba175287c204f3881eb0b94e008df350791b431a2abcc15346a0451f937",
-      "code/orchestrators/build_pages_artifact.py": "72ad8f7dc172d398d3170ef1048b5612fdf456faf6426dc01096279c8b17fc01",
+      "code/orchestrators/regenerate_all.py": "67e78a22e548866d5589213fdff294ea2dc864583f75dc0f4ba4882083b3ac6b",
+      "code/orchestrators/build_pages_artifact.py": "93898db27161d51c560ae3eb8dc14556ea0c3265ae9e6ae58b581b692e49c8ef",
       "code/orchestrators/build_agent_index.py": "8221e90b87fc69f4898933b0667a6b8c1630151a79dd689f370d277b652f2cdc",
       "code/orchestrators/build_coverage_exceptions.py": "0e8a320869ad8cf57f84647ee9eb61cd30cdc26c4381cc1cc44c1d006b9f04b7",
       "code/orchestrators/classify_repositories.py": "16372829f868a684b5fe0d8de07aad4544ce27e194d52e1e559ed4f070636edc",
-      "code/orchestrators/verify_live_site.py": "1c358b211c23c3e4f222b3c75defc58cb5191db6d27af04dc788b09b155d1a52",
-      "code/orchestrators/audit_assets.py": "619a43df77c146a482cefad120ba673ba7ce387f11edb6b5d2bf5b8a9de9f5dc",
+      "code/orchestrators/audit_assets.py": "0559fef3b098e7fe1d58cfd5f48db508d02ffc911c4a060d209a4a086d27cfb9",
       "code/src/public_integrity.py": "784d7fb7007bf2f4a2f0c2d178a4d157d80c647926c04d88a1c83854bc161da0"
     }
   },
@@ -23,34 +22,25 @@
     "pages/BIBLIOGRAPHY.md": "8038bc6b679fc6259e293b78c2d59b5abebf7b8c01186615a5c39d09a5916ec1",
     "pages/SOFTWARE.md": "d520e523009d98dbdec011573770b0e6d03ff0c8fb9ee7f10190dca09a88f2af",
     "resume/source.json": "9e2dd487986d64d10ab3b96fa20d8d8fb86b9196b75cb92149672d25f058c0a2",
-    "data/current-counts.json": "1381c6b1b3728b0ac450227c0451540ee1a3b52eb497d1f92dffc9d7e0ec32db",
+    "data/current-counts.json": "cbb15d0560fdfad56d2854b1c3482a355d95c9d9a101f685134ff6303cca5d7b",
     "data/coverage-exceptions.json": "d2f33b35f73488fe1e794dc684cb6a7574c5294d2a8fe750f3bd4b8fb6f18499",
     "data/repository-classification.json": "c93bd5e9e025ce71f9cf73c8e261f8eb5b2d7b9e7af5c3b76127a473aa47f2a3",
-    "data/agent-index.json": "5de26e97eb8eec21f14e9d975ec70bb6ee0468ea68763d2bf6f222b1f2859bf0",
-    "data/generated-manifest.json": "8abec191708808c3a2040a7ed4a6134d011486310fbd14e2e7ec3a0e10832862",
-    "data/pages-artifact-manifest.json": "6a49c073f13c512a6fe2326359542e7fdee7bd14a6d658457d1b4fef89a9ce01"
+    "data/agent-index.json": "348d7a5a9404e1e9e963a27eba8e68a6cdb2a88a6778dd4d301d0671e9375a3e",
+    "data/generated-manifest.json": "bc59e229c50bbe59b5dff616bb5a8c0157f7b515134daafd774fc9f8f2d62665",
+    "data/pages-artifact-manifest.json": "680a80c28f0325f04019f645dcaf8d9bc10c639c59f6a05b1efaa22126cf0ad9"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "bb68fda911b71b2c1d6abe11157eddae02020cda",
-    "artifact_file_count": 4559,
-    "artifact_bytes": 890667481,
+    "source_commit_at_generation": "b08dc428aa578572feb0977c2c28e1f597b29378",
+    "artifact_file_count": 4560,
+    "artifact_bytes": 891566454,
     "omitted_paper_image_count": 8886
   },
   "deployment": {
-    "commit": "24075cf5e2d32524755d5d801e20cd1a4f1910fb",
-    "workflow_run_id": 32071968182,
-    "workflow_url": "https://github.com/docxology/docxology/actions/runs/32071968182",
-    "pages_status": "built",
-    "verification_report": "reports/live_site_verification_2026-08-19.json",
-    "verification_generated_at": "2026-08-19T23:02:14Z",
-    "verification_overall_ok": false,
-    "verified_routes": "15/17",
-    "deployment_pending": true,
-    "deployment_pending_reasons": [
-      "tracked release content differs from the deployed commit",
-      "live verification is not passing"
-    ]
+    "status": "pending_post_deploy_attestation",
+    "candidate_source_commit": "b08dc428aa578572feb0977c2c28e1f597b29378",
+    "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
+    "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
   "privacy": {
     "cv_public_integrity_errors": [],

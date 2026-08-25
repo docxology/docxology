@@ -1,4 +1,6 @@
-# 📄 BlakeFuller
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎨 BlakeFuller
 
 **Daniel A. Friedman** (2023) · *Zenodo*
 

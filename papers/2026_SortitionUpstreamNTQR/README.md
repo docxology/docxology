@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "ActiveDiffusion"
 description: "The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models. The project, f..."
 tags: ["active-diffusion", "diffusion-models", "active-inference", "generative-ai", "probabilistic-modeling", "free-energy-minimization"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.7443847
+- Canonical DOI: 10.5281/zenodo.7443847
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:52Z

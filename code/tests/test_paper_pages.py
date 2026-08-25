@@ -6,11 +6,14 @@ import json
 import sys
 from pathlib import Path
 
+import pytest
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
 sys.path.insert(0, str(ORCH_DIR))
 
-from build_paper_pages import render_outputs, validate_inputs  # noqa: E402
+from build_paper_pages import reconcile_outputs, render_outputs, validate_inputs  # noqa: E402
+from generated_outputs import UnsafeGeneratedOutputPathError  # noqa: E402
 
 
 def test_every_docs_path_has_required_folder_docs():
@@ -37,5 +40,23 @@ def test_docs_folder_page_links_local_docs_and_canonical():
     assert 'href="SKILL.md"' in content
     assert work["citation_key"] in content
     assert work["doi"] in content or "doi.org" in content
-    assert 'name="robots"' not in content
+    assert '<meta name="robots" content="noindex, follow">' in content
     assert "application/ld+json" not in content
+
+
+def test_paper_page_reconcile_rejects_symlinked_output_without_touching_target(tmp_path: Path):
+    """A paper-page check/write must never follow an output symlink."""
+    repo = tmp_path / "repo"
+    paper = repo / "papers" / "2026_Example"
+    paper.mkdir(parents=True)
+    external = tmp_path / "external-index.html"
+    external.write_text("sentinel", encoding="utf-8")
+    output = paper / "index.html"
+    output.symlink_to(external)
+
+    with pytest.raises(UnsafeGeneratedOutputPathError):
+        reconcile_outputs({output: "generated"}, repo_root=repo, check=True)
+    with pytest.raises(UnsafeGeneratedOutputPathError):
+        reconcile_outputs({output: "generated"}, repo_root=repo, check=False)
+
+    assert external.read_text(encoding="utf-8") == "sentinel"

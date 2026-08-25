@@ -1,7 +1,9 @@
+<!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
+
 # AGENTS.md — CogSecSkills: Multiharness Cognitive Security Skill Library
 
 **Paper**: CogSecSkills: Multiharness Cognitive Security Skill Library (2026)
-**Domain**: Computational
+**Domain**: Cognitive Security
 **Authors**: Daniel Ari Friedman
 
 ---
@@ -16,10 +18,10 @@
 ### 🔬 RESEARCHER
 - Extracts methods: Software pipeline design, Data-driven analysis
 - Identifies findings: CogSecSkills is a defensive, harness-neutral agent-interface library that turns the human doctrine of cognitive security and analytic tradecraft into dependable, inspectable, agent-usable skills, dist, The live generated catalogue reports one hundred implemented skills across seven taxonomy groups — Structured Analytic Techniques, Cognitive Security, Critical Review and Assurance, OSINT and Source I
-- Maps contributions to Computational literature
+- Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
-- Creates learning pathways for Computational concepts
+- Creates learning pathways for Cognitive Security concepts
 - Develops SKILL.md with executable instructions
 - Maintains prerequisite knowledge mapping
 
@@ -32,11 +34,11 @@
 
 ## Extraction Log
 
-| Date | Agent | Action | Status |
-|------|-------|--------|--------|
-| 2026-07-30 | ARCHIVIST | Cataloged metadata | ✅ |
-| 2026-07-30 | RESEARCHER | Extracted methods/findings | ✅ |
-| 2026-07-30 | EDUCATOR | Generated documentation | ✅ |
+| Source | Agent | Action | Status |
+|--------|-------|--------|--------|
+| Metadata | ARCHIVIST | Cataloged metadata | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References
 

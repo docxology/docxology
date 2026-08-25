@@ -1,8 +1,10 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ Reimagining Maps
 
 **Richard J. Cordes, Daniel Ari Friedman, Mikel Maron** (2020) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4170026-blue)](https://doi.org/10.5281/zenodo.4170026)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4170025-blue)](https://doi.org/10.5281/zenodo.4170025)
 
 ---
 
@@ -26,14 +28,15 @@
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.4170026](https://doi.org/10.5281/zenodo.4170026)
+- DOI: [10.5281/zenodo.4170025](https://doi.org/10.5281/zenodo.4170025)
+- Artifact DOI: [10.5281/zenodo.4170026](https://doi.org/10.5281/zenodo.4170026)
 - Zenodo record: [https://zenodo.org/records/4170026](https://zenodo.org/records/4170026)
 - PDF: [Reimagining Maps.pdf](Reimagining%20Maps.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/4170026)
 
 ## Citation
 
-> Richard J. Cordes, Daniel Ari Friedman, Mikel Maron (2020). *Reimagining Maps*. Zenodo. DOI: 10.5281/zenodo.4170026. URL: https://doi.org/10.5281/zenodo.4170026.
+> Richard J. Cordes, Daniel Ari Friedman, Mikel Maron (2020). *Reimagining Maps*. Zenodo. DOI: 10.5281/zenodo.4170025. URL: https://doi.org/10.5281/zenodo.4170025.
 
 ## Related
 

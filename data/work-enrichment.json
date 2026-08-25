@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T21:29:22Z",
+  "generated_at": "2026-08-25T18:38:00Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
   "count": 209,
   "works": {
@@ -3673,9 +3673,8 @@
         "See full paper for detailed findings and analysis"
       ],
       "methods": [
-        "Field observation",
-        "Population genetics analysis",
-        "Behavioral assays"
+        "Literature review",
+        "Theoretical analysis"
       ],
       "source": "papers/2026_EntomologicalLaw/README.md"
     },
@@ -3735,9 +3734,8 @@
         "See full paper for detailed findings and analysis"
       ],
       "methods": [
-        "Narrative analysis",
-        "Misinformation detection",
-        "Trust frameworks"
+        "Literature review",
+        "Theoretical analysis"
       ],
       "source": "papers/2026_TemplatePitchDeck/README.md"
     },
@@ -3828,9 +3826,8 @@
         "See full paper for detailed findings and analysis"
       ],
       "methods": [
-        "Free energy minimization",
-        "Generative modeling",
-        "Bayesian inference"
+        "Literature review",
+        "Theoretical analysis"
       ],
       "source": "papers/2026_IllegalStatesMostly/README.md"
     },
@@ -3964,15 +3961,14 @@
         "See full paper for detailed findings and analysis"
       ],
       "methods": [
-        "Free energy minimization",
-        "Generative modeling",
-        "Bayesian inference"
+        "Literature review",
+        "Theoretical analysis"
       ],
       "source": "papers/2026_ActiveInferencePower/README.md"
     },
     "Friedman2026WitnessRegisterCoRegistration200": {
       "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
-      "abstract": "A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores each report's envelope verbatim, records cross-instrument relations as separate describing records, keeps history append-only and sealed, and — only when asked, for one declared next use — emits a bounded posture that always points back at the state that earned it. It never parses, compares, ranks, averages, or merges any instrument's native status. Subtitle: A shared register for line report envelopes that never ranks, merges, or overrides the instruments it holds Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "abstract": "A shared register that co-registers independent instruments' report envelopes without aggregating them. It stores each report's envelope verbatim, records cross-instrument relations as separate describing records, keeps history append-only and sealed, and — only when asked, for one declared next use — emits a bounded posture that always points back at the state that earned it. It never parses...",
       "keywords": [
         "co-registration",
         "append-only log",
@@ -3983,18 +3979,17 @@
         "open science"
       ],
       "findings": [
-        "co-registration",
-        "append-only log",
-        "provenance",
-        "non-compensatory decision rules",
-        "boundary objects"
+        "See full paper for detailed findings and analysis"
       ],
-      "methods": [],
+      "methods": [
+        "Literature review",
+        "Theoretical analysis"
+      ],
       "source": "papers/2026_WitnessRegister/README.md"
     },
     "Friedman2026LineSetHoldingInstruments201": {
       "citation_key": "Friedman2026LineSetHoldingInstruments201",
-      "abstract": "A thin reader that declares what a set of small evaluative instruments is, reads whichever sibling packages are installed, and checks one narrow property: that no two of them have given the same spelling to different things. It adds no instrument of its own and computes no aggregate; a legible reading says only that the declared vocabularies did not overlap. Subtitle: A Declaration, a Reader, and a Non-Overlap Contract for a Growing Set of Small Instruments Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "abstract": "A thin reader that declares what a set of small evaluative instruments is, reads whichever sibling packages are installed, and checks one narrow property: that no two of them have given the same spelling to different things. It adds no instrument of its own and computes no aggregate; a legible reading says only that the declared vocabularies did not overlap. Subtitle: A Declaration, a Reader, and...",
       "keywords": [
         "modularity",
         "information hiding",
@@ -4006,18 +4001,17 @@
         "open science"
       ],
       "findings": [
-        "modularity",
-        "information hiding",
-        "separation of concerns",
-        "boundary objects",
-        "namespace collision"
+        "See full paper for detailed findings and analysis"
       ],
-      "methods": [],
+      "methods": [
+        "Literature review",
+        "Theoretical analysis"
+      ],
       "source": "papers/2026_LineSet/README.md"
     },
     "Friedman2026WhiteLineTypedLedger202": {
       "citation_key": "Friedman2026WhiteLineTypedLedger202",
-      "abstract": "A typed ledger for absence: epistemic gaps, ethical restraint, and contemplative negative space. It records what is missing, withheld, or unresolved under a total caution order, decays stale namings past their review horizons, and refuses to infer why anything is absent. Withholding is recorded as a boundary, never mined as missing evidence. Subtitle: Keeping missing evidence, ethical boundaries, and open questions from becoming unsupported claims Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "abstract": "A typed ledger for absence: epistemic gaps, ethical restraint, and contemplative negative space. It records what is missing, withheld, or unresolved under a total caution order, decays stale namings past their review horizons, and refuses to infer why anything is absent. Withholding is recorded as a boundary, never mined as missing evidence. Subtitle: Keeping missing evidence, ethical boundaries...",
       "keywords": [
         "absence",
         "epistemic gaps",
@@ -4029,18 +4023,17 @@
         "open science"
       ],
       "findings": [
-        "absence",
-        "epistemic gaps",
-        "missing evidence",
-        "withheld material",
-        "uncertainty"
+        "See full paper for detailed findings and analysis"
       ],
-      "methods": [],
+      "methods": [
+        "Literature review",
+        "Theoretical analysis"
+      ],
       "source": "papers/2026_WhiteLine/README.md"
     },
     "Friedman2026PersonalRedLinesDevelopment203": {
       "citation_key": "Friedman2026PersonalRedLinesDevelopment203",
-      "abstract": "A versioned, evidence-gated personal security boundary and explicit No document for dual-use development work. It requires a complete, reviewable action intake before returning compliance, distinguishes outside-scope work from compliance, and records uncertainty as a blocking result rather than a permission. It is a personal auditability aid, not enforcement, legal compliance, semantic safety classification, or external certification. Subtitle: An Evidence-Gated Personal Security Boundary and Explicit No Document for Dual-Use Development Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "abstract": "A versioned, evidence-gated personal security boundary and explicit No document for dual-use development work. It requires a complete, reviewable action intake before returning compliance, distinguishes outside-scope work from compliance, and records uncertainty as a blocking result rather than a permission. It is a personal auditability aid, not enforcement, legal compliance, semantic safety...",
       "keywords": [
         "red lines",
         "AI governance",
@@ -4055,18 +4048,17 @@
         "sociotechnical systems"
       ],
       "findings": [
-        "red lines",
-        "AI governance",
-        "dual-use",
-        "cognitive security",
-        "hash-based canary"
+        "See full paper for detailed findings and analysis"
       ],
-      "methods": [],
+      "methods": [
+        "Literature review",
+        "Theoretical analysis"
+      ],
       "source": "papers/2026_PersonalRedLines/README.md"
     },
     "Friedman2026GoldenLineTowardWhat204": {
       "citation_key": "Friedman2026GoldenLineTowardWhat204",
-      "abstract": "A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue score, and NOT OBSERVED means no valid entry was admitted rather than that nobody looked. Subtitle: An Aspirational Thread for Long-Horizon Work Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "abstract": "A directional instrument for recording long-horizon aspirations and observable movement toward them. It returns one of four directional readings per aspiration against a versioned registry and deliberately computes no aggregate: there is no virtue score, and NOT OBSERVED means no valid entry was admitted rather than that nobody looked. Subtitle: An Aspirational Thread for Long-Horizon Work Code...",
       "keywords": [
         "aspiration",
         "long-horizon work",
@@ -4077,18 +4069,17 @@
         "non-compensatory reading"
       ],
       "findings": [
-        "aspiration",
-        "long-horizon work",
-        "directional assessment",
-        "values in practice",
-        "research ethics"
+        "See full paper for detailed findings and analysis"
       ],
-      "methods": [],
+      "methods": [
+        "Literature review",
+        "Theoretical analysis"
+      ],
       "source": "papers/2026_GoldenLine/README.md"
     },
     "Friedman2026BlackLineStrongWork205": {
       "citation_key": "Friedman2026BlackLineStrongWork205",
-      "abstract": "A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. It measures whether the evidence a practice asks for was declared — never whether the work is true, good, or permitted; an ALIGNED reading authorizes nothing. Subtitle: A Positive Operating Discipline for Concise, Rigorous Research and Engineering Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.",
+      "abstract": "A positive practice instrument for concise, inspectable, revisable work. It reads self-declared tags and evidence labels against a versioned practice registry and returns one of four statuses over declaration coverage. It measures whether the evidence a practice asks for was declared — never whether the work is true, good, or permitted; an ALIGNED reading authorizes nothing. Subtitle: A Positive...",
       "keywords": [
         "research practice",
         "declaration coverage",
@@ -4099,18 +4090,17 @@
         "engineering practice"
       ],
       "findings": [
-        "research practice",
-        "declaration coverage",
-        "evidence discipline",
-        "scientific integrity",
-        "reproducibility"
+        "See full paper for detailed findings and analysis"
       ],
-      "methods": [],
+      "methods": [
+        "Literature review",
+        "Theoretical analysis"
+      ],
       "source": "papers/2026_BlackLine/README.md"
     },
     "Friedman2026CodomyrmexArtificialEcologyAgentic206": {
       "citation_key": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
-      "abstract": "Agentic software can preserve task state while still forgetting the consequences of prior actions. Codomyrmex studies a narrow control-plane question: after a caller reports a failed action at one software location, can the system deterministically increase friction for a materially similar proposal at that location without changing an unrelated target? Its Colony Control Plane records consequence reports and couples them to target-indexed signal pressure, agent trust, role labels, resource accounting, adversarial checks, and an explicit EXECUTE/HOLD/REFUSE gate. The implementation comprises 8 cooperating subsystems. The ordinary Model Context Protocol path remains caller-reported and unattested. Optional and required ColonyKernel attestation modes instead bind proposal, verdict, authorization, execution receipt, and outcome in a signed, hash-linked local ledger. That ledger protects lif",
+      "abstract": "Agentic software can preserve task state while still forgetting the consequences of prior actions. Codomyrmex studies a narrow control-plane question: after a caller reports a failed action at one software location, can the system deterministically increase friction for a materially similar proposal at that location without changing an unrelated target? Its Colony Control Plane records...",
       "keywords": [
         "ai-agents",
         "model-context-protocol",
@@ -4126,18 +4116,17 @@
         "trust-scoring"
       ],
       "findings": [
-        "ai-agents",
-        "model-context-protocol",
-        "mcp",
-        "multi-agent",
-        "orchestration"
+        "See full paper for detailed findings and analysis"
       ],
-      "methods": [],
+      "methods": [
+        "Literature review",
+        "Theoretical analysis"
+      ],
       "source": "papers/2026_Codomyrmex/README.md"
     },
     "Friedman2026THALIATypedHarnessAnalytical207": {
       "citation_key": "Friedman2026THALIATypedHarnessAnalytical207",
-      "abstract": "THALIA is an executable research harness for long-context memory systems. It combines typed stage contracts, inspectable context selection, evidence-preserving episodic state, lexical-first retrieval, and bounded compiler search with source-bound evaluation and reproducible artifact checks. The deterministic results are finite diagnostic evidence; model-quality, integrity-advantage, and production-readiness claims remain separately gated.",
+      "abstract": "THALIA is an executable research harness for long-context memory systems. It combines typed stage contracts, inspectable context selection, evidence-preserving episodic state, lexical-first retrieval, and bounded compiler search with source-bound evaluation and reproducible artifact checks. The deterministic results are finite diagnostic evidence; model-quality, integrity-advantage, and...",
       "keywords": [
         "agentic systems",
         "long-context memory",
@@ -4145,17 +4134,17 @@
         "reproducible research"
       ],
       "findings": [
-        "agentic systems",
-        "long-context memory",
-        "retrieval-augmented generation",
-        "reproducible research"
+        "See full paper for detailed findings and analysis"
       ],
-      "methods": [],
+      "methods": [
+        "Literature review",
+        "Theoretical analysis"
+      ],
       "source": "papers/2026_THALIA/README.md"
     },
     "Friedman2026PROJECTBONDSpecialAgent208": {
       "citation_key": "Friedman2026PROJECTBONDSpecialAgent208",
-      "abstract": "PROJECT BOND is a fleet of 33 independent software packages — 27 film packages, one per James Bond motion picture, plus 6 mission-infrastructure packages (a Q-branch utilities layer, a frozen mission protocol, mission control, an orchestrator, a front-door CLI, and fleet operations). Each film package implements, as real tested algorithms, the concepts of its film: radiation forensics for Dr. No, gold-market cornering for Goldfinger, orbital-EMP modeling for GoldenEye, DNA-targeted bioweapon countermeasure modeling for No Time to Die. The public source repository for the suite and this manuscript is https://github.com/docxology/bond. The repository will carry the source history, reproducibility instructions, generated release artifacts, and the cross-linked Zenodo record for this publication. This compendium is the wrapper manuscript for the whole suite. It does not re-derive the package",
+      "abstract": "PROJECT BOND is a fleet of 33 independent software packages — 27 film packages, one per James Bond motion picture, plus 6 mission-infrastructure packages (a Q-branch utilities layer, a frozen mission protocol, mission control, an orchestrator, a front-door CLI, and fleet operations). Each film package implements, as real tested algorithms, the concepts of its film: radiation forensics for Dr. No...",
       "keywords": [
         "software suite",
         "special agent operations",
@@ -4165,18 +4154,17 @@
         "compendium"
       ],
       "findings": [
-        "software suite",
-        "special agent operations",
-        "James Bond",
-        "reproducible research",
-        "mission protocol"
+        "See full paper for detailed findings and analysis"
       ],
-      "methods": [],
+      "methods": [
+        "Literature review",
+        "Theoretical analysis"
+      ],
       "source": "papers/2026_PROJECTBONDSpecial/README.md"
     },
     "Friedman2026DigiPPPiPDigitalPartnerPen209": {
       "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
-      "abstract": "DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous, accessible, and place-responsive dyadic drawing . The framework is positioned within collaborative-work studies of shared drawing surfaces , cyber-physical-social systems , mediated embodiment and presence , digital intimacy technologies , and cautious hyperscanning methodology . The manuscript translates the project brief into a modular research artifact: 9 temporal-spatial modalities, 13 evidence dimensions, 6 planned outcome measures, and 39 conceptual figures are generated or registered by the project code rather than hand-maintained prose. The computational layer is explicitly illustrative, not empirical: the active-inference, inter-brain-synchrony, Forman-Ricci, narrative-information, source-quality, accessib",
+      "abstract": "DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous, accessible, and place-responsive dyadic drawing . The framework is positioned within collaborative-work studies of shared drawing surfaces , cyber-physical-social systems , mediated embodiment and presence , digital...",
       "keywords": [
         "partner pen play in parallel",
         "active inference",
@@ -4189,18 +4177,17 @@
         "reproducible research"
       ],
       "findings": [
-        "partner pen play in parallel",
-        "active inference",
-        "inter-brain synchrony",
-        "geometric hyperscanning",
-        "narrative information theory"
+        "See full paper for detailed findings and analysis"
       ],
-      "methods": [],
+      "methods": [
+        "Literature review",
+        "Theoretical analysis"
+      ],
       "source": "papers/2026_DigiPPPiP/README.md"
     },
     "Friedman2026RobustBeliefSharingFederated210": {
       "citation_key": "Friedman2026RobustBeliefSharingFederated210",
-      "abstract": "Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those beliefs, and pool them into a colony-level consensus. The same mechanism is fragile when a member is miscalibrated, corrupted, or strategically wrong. Because the standard pool multiplies the reports together, a single confident-but-wrong broadcast that puts near-zero mass on the true state can pull the whole consensus off it, outweighing many honest members. The colony therefore needs a way to preserve the useful structure of belief sharing while limiting the influence of contaminated beliefs. This paper presents Active Fedference, a discrete-categorical framework that connects robust federated generalized variational inference with active inference belief sharing. The main bridge is structural: standard belief sharing appears as the non-robu",
+      "abstract": "Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those beliefs, and pool them into a colony-level consensus. The same mechanism is fragile when a member is miscalibrated, corrupted, or strategically wrong. Because the standard pool multiplies the reports together, a single confident-but-wrong broadcast...",
       "keywords": [
         "active inference",
         "federated learning",
@@ -4210,18 +4197,18 @@
         "FedGVI"
       ],
       "findings": [
-        "active inference",
-        "federated learning",
-        "generalised variational inference",
-        "belief sharing",
-        "robustness"
+        "See full paper for detailed findings and analysis"
       ],
-      "methods": [],
+      "methods": [
+        "Free energy minimization",
+        "Generative modeling",
+        "Bayesian inference"
+      ],
       "source": "papers/2026_RobustBeliefSharing/README.md"
     },
     "Friedman2026ActiveSkillferenceValidatedPrerequisite211": {
       "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
-      "abstract": "Active Inference and the Free Energy Principle (FEP) provide model-based accounts of belief updating, learning, and action under uncertainty. We present Active Skillference, a provenance-bound curriculum-generation and SkillTree-export system for teaching those formal ideas. The paper evaluates structural validity, quantitative provenance, citation-role coverage, and artifact reproducibility; it does not evaluate learner outcomes, establish a new theory of Active Inference, or present an intelligent tutoring system. The curriculum is expressed as code: a typed, validated directed acyclic graph of 630 skills across 111 subjects spanning all 8 strata (mathematics - probability - information theory - variational methods - the FEP - active inference - computation - applications), connected by 1199 prerequisite edges with a maximum dependency depth of 75 (of which the substantive concept chai",
+      "abstract": "Active Inference and the Free Energy Principle (FEP) provide model-based accounts of belief updating, learning, and action under uncertainty. We present Active Skillference, a provenance-bound curriculum-generation and SkillTree-export system for teaching those formal ideas. The paper evaluates structural validity, quantitative provenance, citation-role coverage, and artifact reproducibility; it...",
       "keywords": [
         "active inference",
         "free energy principle",
@@ -4236,13 +4223,12 @@
         "reproducible research"
       ],
       "findings": [
-        "active inference",
-        "free energy principle",
-        "variational inference",
-        "Bayesian inference",
-        "information theory"
+        "See full paper for detailed findings and analysis"
       ],
-      "methods": [],
+      "methods": [
+        "Literature review",
+        "Theoretical analysis"
+      ],
       "source": "papers/2026_ActiveSkillference/README.md"
     },
     "Friedman2026DocxplusIntelligentDocumentContainer212": {
@@ -4257,13 +4243,12 @@
         "reproducible research"
       ],
       "findings": [
-        "OOXML",
-        "DOCX",
-        "Open Packaging Conventions",
-        "steganography",
-        "document security"
+        "See full paper for detailed findings and analysis"
       ],
-      "methods": [],
+      "methods": [
+        "Literature review",
+        "Theoretical analysis"
+      ],
       "source": "papers/2026_DocxplusIntelligentDocument/README.md"
     }
   }

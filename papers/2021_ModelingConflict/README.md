@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 ModelingConflict
 
 **Scott David, R.J. Cordes, Daniel A. Friedman** (2021) · *Zenodo*

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Recovering LLM-Persona Accuracies from Unlabeled Votes"
 description: "<p>Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses &mdash; no answer key. We test this end to end on real large language models. Three trader "personas" (optimistic, neutral..."
 tags: ["algebraic-evaluation", "ntqr", "unsupervised-evaluation", "evaluation-on-unlabeled-data", "llm-as-judge", "error-independent-evaluation", "ensemble-evaluability", "constant-classifier", "ai-safety-warning-light", "reproducible-research"]
@@ -39,10 +40,10 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20498699
+- Canonical DOI: 10.5281/zenodo.20498699
 - PDF SHA-256: e1196698427f9fe04d1f3071705adb6e5459983649c78d7f5d074756e989148b
 - Pairing confidence: strong
-- Last checked: 2026-07-10T19:08:24Z
+- Last checked: 2026-08-19T22:45:41Z
 
 ## Prerequisites
 

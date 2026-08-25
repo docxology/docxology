@@ -13,6 +13,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
@@ -660,13 +661,13 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Fail if generated pages are stale")
     args = parser.parse_args()
     outputs = render_outputs()
-    stale: list[str] = []
-    for path, content in outputs.items():
-        if args.check:
-            if not path.exists() or path.read_text(encoding="utf-8") != content:
-                stale.append(str(path.relative_to(REPO_ROOT)))
-        else:
-            path.write_text(content, encoding="utf-8")
+    stale = (
+        [str(path.relative_to(REPO_ROOT)) for path in stale_output_paths(outputs, repo_root=REPO_ROOT)]
+        if args.check
+        else []
+    )
+    if not args.check:
+        write_output_texts(outputs, repo_root=REPO_ROOT)
     if stale:
         raise SystemExit("Stale generated domain pages: " + ", ".join(stale))
     action = "checked" if args.check else "wrote"

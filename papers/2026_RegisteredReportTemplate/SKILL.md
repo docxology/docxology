@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Registered Report Template: Preregistration, Deviations, and Claim Boundaries"
 description: "This document is a template, not an empirical study. It demonstrates the registered-report workflow end to end: locking a preregistration, validating its completeness, executing the registered analysis plan against deterministic demonstration data, a..."
 tags: ["registered-report", "preregistration", "replication", "deviation-ledger"]
@@ -36,7 +37,7 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21298892
+- Canonical DOI: 10.5281/zenodo.21298892
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-10T19:31:16Z

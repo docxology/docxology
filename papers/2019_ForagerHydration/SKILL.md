@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "ForagerHydration"
 description: "Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected. Here we present field experiments showing t..."
 tags: ["pogonomyrmex-barbatus", "desiccation-physiology", "foraging-behavior", "water-balance", "colony-variation", "collective-behavior", "behavioral-ecology", "reproductive-fitness"]
 domain: "Entomology"
 citation: "Daniel A. Friedman, Michael J. Greene, Deborah M. Gordon (2019). *ForagerHydration*. Entomology."
+doi: "10.1038/s41598-019-41586-3"
 ---
 
 # ForagerHydration
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.1038/s41598-019-41586-3
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.1038/s41598-019-41586-3`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

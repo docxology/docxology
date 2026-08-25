@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 SystematicLiteratureAnalysis
 
 **Virginia Bleu Knight, R.J. Cordes, Daniel A. Friedman** (2022) · *Zenodo*

@@ -14,6 +14,11 @@ JSON_OUT = REPO_ROOT / "data" / "catalog.json"
 HTML_OUT = REPO_ROOT / "catalog.html"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from generated_outputs import (  # noqa: E402
+    read_generated_output_text,
+    stale_output_paths,
+    write_output_texts,
+)
 from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Data Catalog", "catalog.html")]
@@ -125,7 +130,7 @@ def datasets() -> list[tuple[str, str, str, str]]:
     ("current-counts", "Current Counts Snapshot", "data/current-counts.json", "Generated volatile-count snapshot with source paths, generation metadata, and rebuild commands."),
     ("agent-index", "Agent Route Manifest", "data/agent-index.json", "Stable machine-readable route map, dataset schemas, freshness policy, counts, and query recipes."),
     ("work-enrichment", "Work Enrichment", "data/work-enrichment.json", "Extracted abstracts, keywords, methods, and findings from per-paper README and SKILL files."),
-    (f"full-text-corpus", "Full-Text Extraction Corpus", "papers/", f"{ft_count} extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus {pw_img_count} images/ subdirectories with {total_img:,} extracted figures and inline image references. Path pattern: papers/{{YYYY_Topic}}/full_text.md and papers/{{YYYY_Topic}}/images/."),
+    ("full-text-corpus", "Full-Text Extraction Corpus", "papers/", f"{ft_count} extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus {pw_img_count} images/ subdirectories with {total_img:,} extracted figures and inline image references. Path pattern: papers/{{YYYY_Topic}}/full_text.md and papers/{{YYYY_Topic}}/images/."),
     ("generated-manifest", "Generated Artifact Manifest", "data/generated-manifest.json", "Source-to-output map and rebuild commands for generated files."),
     ("search", "Search Index", "search-index.json", "Site-wide index covering pages, works, software, people, organizations, and claims."),
     ("public-source-inventory", "Public Source Inventory", _latest_rel("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json"), "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages."),
@@ -159,10 +164,11 @@ def encoding_format(rel: str) -> str:
 
 
 def existing_date_modified() -> str | None:
-    if not JSON_OUT.exists():
+    content = read_generated_output_text(REPO_ROOT, JSON_OUT)
+    if content is None:
         return None
     try:
-        return json.loads(JSON_OUT.read_text(encoding="utf-8")).get("dateModified")
+        return json.loads(content).get("dateModified")
     except json.JSONDecodeError:
         return None
 
@@ -275,15 +281,16 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if generated catalog files are stale")
     args = parser.parse_args()
-    stale = []
     date_modified = existing_date_modified() if args.check else None
-    for path, content in outputs(date_modified).items():
-        if args.check:
-            if not path.exists() or path.read_text(encoding="utf-8") != content:
-                stale.append(str(path.relative_to(REPO_ROOT)))
-        else:
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(content, encoding="utf-8")
+    rendered_outputs = outputs(date_modified)
+    stale = []
+    if args.check:
+        stale = [
+            str(path.relative_to(REPO_ROOT))
+            for path in stale_output_paths(rendered_outputs, repo_root=REPO_ROOT)
+        ]
+    else:
+        write_output_texts(rendered_outputs, repo_root=REPO_ROOT)
     if stale:
         raise SystemExit("Stale generated catalog files: " + ", ".join(stale))
     print(("checked" if args.check else "wrote") + " catalog files")

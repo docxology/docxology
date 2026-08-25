@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "DoorsOfPerception"
 description: "The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference. The paper develops a 'Thematic Atl..."
 tags: ["william-blake", "active-inference", "perception", "prediction", "thematic-atlas", "prophetic-vision", "generative-models", "markov-blankets"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.18600040
+- Canonical DOI: 10.5281/zenodo.18600040
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:26:09Z

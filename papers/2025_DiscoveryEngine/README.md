@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 DiscoveryEngine
 
 **Daniel A. Friedman** (2025) · *ArXiv*

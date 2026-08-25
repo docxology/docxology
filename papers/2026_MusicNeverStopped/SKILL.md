@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation"
 description: "<p>We present a modular, citation-bound data compendium for the Grateful Dead universe &mdash; shows, songs, performances, personnel timelines, venues, recordings, and reception &mdash; and a category-theoretic interpretation of the performance graph..."
 tags: ["grateful-dead", "setlist-data", "category-theory", "music-information-retrieval", "reproducible-data-compendium"]
@@ -39,10 +40,10 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20482025
+- Canonical DOI: 10.5281/zenodo.20482025
 - PDF SHA-256: 296b3b5c5e9f3d628e15ae5d467dd5cc418bd018f0166194c9494b33b3367dda
 - Pairing confidence: strong
-- Last checked: 2026-07-10T19:08:24Z
+- Last checked: 2026-08-19T22:45:41Z
 
 ## Prerequisites
 

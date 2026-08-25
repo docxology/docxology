@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 MutAnts
 
 **Daniel A. Friedman, Deborah M. Gordon, Liqun Luo** (2017) · *Cell*

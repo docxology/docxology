@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Compositional Approaches to Linguistic Case for Cognitive Modeling"
 description: "Linguistic case as categorical structure: alignment typology as functors, DisCoCat/DisCoCirc composition, bridges to Distributional Active Inference and protocol-level analysis of prompt injection."
 tags: ["active-inference", "category-theory", "linguistic-case", "compositional-semantics", "discocat", "discocirc", "distributional-semantics", "cognitive-modeling", "cognitive-security", "prompt-injection"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.19695259
+- Canonical DOI: 10.5281/zenodo.19695259
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:26:06Z

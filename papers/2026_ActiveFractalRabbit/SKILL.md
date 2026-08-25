@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations"
 description: "Sparse waypoint analysis is privacy-sensitive: it must separate movement from irregular reporting, missingness, spatial coarsening, and corruption while preserving uncertainty about hidden location. Active FractalRabbit provides a controlled, artifac..."
 tags: ["activefractalrabbit"]
@@ -36,10 +37,10 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21330636
+- Canonical DOI: 10.5281/zenodo.21330636
 - PDF SHA-256: d676159d149a12a1e990457329ad4cf52d2d8ab4ffcf09f55b42bad8e0c3c052
 - Pairing confidence: strong
-- Last checked: 2026-07-17T18:59:15Z
+- Last checked: 2026-08-19T22:45:41Z
 
 ## Prerequisites
 

@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Collaborative Writing for Catechism-Based Teams"
 description: "Asynchronous and remote collaborative written projects (research, field guides, code, etc.) in emergent, interdisciplinary teams can be an incredibly productive and enjoyable pursuit. The convergence of diverse perspectives, personalities, and expert..."
 tags: ["remote-teams", "collaborative-writing", "catechisms", "opords"]
 domain: "Cognitive Security"
 citation: "Richard J. Cordes, Daniel Ari Friedman (2021). *Collaborative Writing for Catechism-Based Teams*. Cognitive Security."
-doi: "10.5281/zenodo.4633921"
+doi: "10.5281/zenodo.4624298"
+artifact_doi: "10.5281/zenodo.4633921"
 ---
 
 # Collaborative Writing for Catechism-Based Teams
@@ -39,10 +41,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.4633921
+- Canonical DOI: 10.5281/zenodo.4624298
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-05-30T18:56:33Z
+- Artifact DOI: 10.5281/zenodo.4633921
 
 ## Prerequisites
 
@@ -54,6 +57,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.4633921`
+1. Reference the DOI for citation: `10.5281/zenodo.4624298`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

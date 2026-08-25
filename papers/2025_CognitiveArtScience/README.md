@@ -1,4 +1,6 @@
-# 📄 CognitiveArtScience
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎨 CognitiveArtScience
 
 **Daniel A. Friedman** (2025) · *Zenodo*
 

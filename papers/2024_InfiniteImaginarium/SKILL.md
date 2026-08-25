@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "InfiniteImaginarium"
 description: "Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration. The work..."
 tags: ["epistemic-tempos", "knowledge-production", "creative-exploration", "way-finding", "imagination", "operational-frameworks"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.10601081
+- Canonical DOI: 10.5281/zenodo.10601081
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:29Z

@@ -24,7 +24,7 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
 from biblio_table import BiblioRow, iter_bibliography_rows  # noqa: E402
-from sync_publications_html import canonical_link_url  # noqa: E402
+from bibliography_links import canonical_link_url  # noqa: E402
 
 try:
     from report_paths import generated_timestamp, stable_generated_at

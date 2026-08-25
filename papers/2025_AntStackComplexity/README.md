@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 AntStackComplexity
 
 **Daniel A. Friedman** (2025) · *Zenodo*

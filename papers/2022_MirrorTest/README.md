@@ -1,4 +1,6 @@
-# 📄 MirrorTest
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎨 MirrorTest
 
 **Sean O'Connor, Daniel Ari Friedman** (2022) · *Zenodo*
 

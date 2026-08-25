@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧬 EhrlichialInfection
 
 **Charles A. Kallick, Daniel A. Friedman & Mramba B.A. Nyindo** (2015) · *Medical Hypotheses*

@@ -1,3 +1,5 @@
+<!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
+
 # AGENTS.md — A Living Meta-Analysis of the Modafinil Literature
 
 **Paper**: A Living Meta-Analysis of the Modafinil Literature (2026)
@@ -35,11 +37,11 @@ complete quantitative portrait of its literature.
 
 ## Extraction Log
 
-| Date | Agent | Action | Status |
-|------|-------|--------|--------|
-| 2026-07-30 | ARCHIVIST | Cataloged metadata | ✅ |
-| 2026-07-30 | RESEARCHER | Extracted methods/findings | ✅ |
-| 2026-07-30 | EDUCATOR | Generated documentation | ✅ |
+| Source | Agent | Action | Status |
+|--------|-------|--------|--------|
+| Metadata | ARCHIVIST | Cataloged metadata | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References
 

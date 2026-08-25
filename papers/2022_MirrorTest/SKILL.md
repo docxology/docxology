@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "MirrorTest"
 description: "We apply a predictive processing interpretation to mirror test results, offering a novel perspective on mirror self-recognition. We hypothesize that a 'reflection prediction' may explain mirror self-r..."
 tags: ["mirror-test", "predictive-processing", "self-recognition", "reflection-prediction", "active-inference", "self-awareness", "prediction-error"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.7377255
+- Canonical DOI: 10.5281/zenodo.7377255
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:58Z

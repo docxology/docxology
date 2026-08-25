@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "AntStackComplexity"
 description: "Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization. We connect concepts from information theory, complex adaptive systems, and..."
 tags: ["antstack", "complexity-science", "information-theory", "complex-adaptive-systems", "ant-colonies", "non-equilibrium-thermodynamics"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.17238736
+- Canonical DOI: 10.5281/zenodo.17238736
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:43Z

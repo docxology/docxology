@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -23,6 +24,7 @@ from report_paths import (  # noqa: E402
     report_date_string,
     repo_path,
     stable_generated_at,
+    source_worktree_state,
 )
 
 
@@ -136,3 +138,26 @@ def test_default_latest_file_returns_first_existing(tmp_path: Path):
 
     assert default_latest_file(missing, present) == present
     assert default_latest_file(missing) is None
+
+
+def test_source_worktree_state_only_exempts_declared_release_evidence(tmp_path: Path):
+    """An arbitrary report cannot make an evidence capture claim a clean source tree."""
+    for args in (
+        ["git", "init", "-q"],
+        ["git", "config", "user.email", "test@example.invalid"],
+        ["git", "config", "user.name", "Test"],
+    ):
+        subprocess.run(args, cwd=tmp_path, check=True)
+    (tmp_path / "source.txt").write_text("tracked\n", encoding="utf-8")
+    subprocess.run(["git", "add", "source.txt"], cwd=tmp_path, check=True)
+    subprocess.run(["git", "commit", "-qm", "fixture"], cwd=tmp_path, check=True)
+    reports = tmp_path / "reports"
+    reports.mkdir()
+    (reports / "public_source_snapshot_2026-08-25.json").write_text("{}", encoding="utf-8")
+
+    assert source_worktree_state(tmp_path)["source_worktree_clean"] is True
+
+    (reports / "hand-authored-note.md").write_text("source change\n", encoding="utf-8")
+    state = source_worktree_state(tmp_path)
+    assert state["source_worktree_clean"] is False
+    assert state["source_worktree_dirty_paths"] == ["reports/hand-authored-note.md"]

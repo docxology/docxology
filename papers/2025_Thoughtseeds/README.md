@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 Thoughtseeds
 
 **Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow** (2025) · *Entropy*

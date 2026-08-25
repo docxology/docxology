@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Prior Cognitive Art"
 description: "A prior is not explained by stacking more priors; it is located by mechanism, function, history, and fixed-point organization. The paper's precise thesis is procedural: before asking why a prior exists, identify which explanatory kind is being reques..."
 tags: ["priors", "tinbergen's-four-questions", "hierarchical-bayes", "free-energy-principle", "markov-blankets", "cognitive-science", "conceptual-visualization"]
@@ -37,10 +38,10 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21316510
+- Canonical DOI: 10.5281/zenodo.21316510
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-19T22:45:41Z
 
 ## Prerequisites
 

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer"
 description: "A tested Python reference engine, native libobs plugin, and obspython bridge for a telemetry-driven broadcast console. Includes deterministic figures, a versioned live OBS evidence bundle, fail-closed telemetry contracts, and a research-grade technic..."
 tags: ["obs-studio", "libobs", "reproducible-research-software", "space-weather-telemetry", "real-time-digital-signal-processing", "software-provenance", "software-citation"]
@@ -36,7 +37,7 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21418782
+- Canonical DOI: 10.5281/zenodo.21418782
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-21T12:52:18Z

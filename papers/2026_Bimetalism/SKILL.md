@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value"
 description: "A manuscript overlaying British and American bimetallism with William Blake's mythopoetic architecture, reading economic history through the lens of active inference and prophetic economics."
 tags: ["william-blake", "bimetallism", "active-inference", "newton", "gresham's-law", "hamilton", "william-jennings-bryan", "value", "economic-history", "prophetic-economics"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.19335195
+- Canonical DOI: 10.5281/zenodo.19335195
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:26:04Z

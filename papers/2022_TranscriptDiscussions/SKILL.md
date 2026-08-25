@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior""
 description: "Discussion with an author of the 2021 paper &ldquo;Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior&rdquo; by Remi Tison &amp; Pierre Poirier.&nbsp; https://www.tandfonline.com/doi/abs/10.1080/1040..."
 tags: ["transcriptdiscussions"]
 domain: "Active Inference"
 citation: "Rémi Tison, Dean Tickles, Bleu Knight, Daniel Friedman (2022). *Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior"*. Active Inference."
-doi: "10.5281/zenodo.7401875"
+doi: "10.5281/zenodo.7401874"
+artifact_doi: "10.5281/zenodo.7401875"
 ---
 
 # Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior"
@@ -38,10 +40,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.7401875
+- Canonical DOI: 10.5281/zenodo.7401874
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-05-30T18:56:27Z
+- Artifact DOI: 10.5281/zenodo.7401875
 
 ## Prerequisites
 
@@ -53,6 +56,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.7401875`
+1. Reference the DOI for citation: `10.5281/zenodo.7401874`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "A Domain Language for Specifying Controlled Methods"
 description: "This paper describes a small, tested domain language for specifying controlled methods — the methods-paper exemplar of the Research Project Template (https://github.com/docxology/template). Unlike a results paper, this manuscript's subject is the met..."
 tags: ["methods-paper", "domain-specific-language", "controlled-methods", "deterministic-compilation", "staged-validation", "dimensional-analysis"]
@@ -44,10 +45,10 @@ validation gates, and a deterministic compiler,
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21086548
+- Canonical DOI: 10.5281/zenodo.21086548
 - PDF SHA-256: ecd8519fc2a9a674bd8a4cf89f96122af76529c913e32bf880a7c842da08771a
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-19T22:45:41Z
 
 ## Prerequisites
 

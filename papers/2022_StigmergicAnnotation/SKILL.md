@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "StigmergicAnnotation"
 description: "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr..."
 tags: ["stigmergic-annotation", "open-source-attention", "collective-sensemaking", "epistemic-pollution", "decentralized-platforms", "social-annotation", "digital-attention"]
 domain: "Cognitive Security"
 citation: "Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf (2022). *StigmergicAnnotation*. Cognitive Security."
+doi: "10.48550/arXiv.2205.06345"
 ---
 
 # StigmergicAnnotation
@@ -37,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.48550/arXiv.2205.06345
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -52,6 +54,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.48550/arXiv.2205.06345`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

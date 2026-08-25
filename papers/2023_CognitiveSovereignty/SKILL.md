@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "CognitiveSovereignty"
 description: "This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epist..."
 tags: ["cognitive-sovereignty", "agamben", "homo-sacer", "active-inference", "state-of-exception", "thomas-kuhn", "paradigm-shifts", "epistemic-agency", "biopolitics", "bare-life"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.10038231
+- Canonical DOI: 10.5281/zenodo.10038231
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:12Z

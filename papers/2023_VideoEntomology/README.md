@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 VideoEntomology
 
 **Daniel A. Friedman, Judith R. Wexler, Sebastian Alvarado** (2023) · *JoVE*

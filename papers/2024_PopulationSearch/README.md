@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 PopulationSearch
 
 **Nassim Dehouche, Daniel Friedman** (2024) · *ArXiv*

@@ -1,8 +1,8 @@
 {
   "title": "Transcript of: Mark Solms, \"Consciousness as Precision Optimization: Some Physiological and Philosophical Considerations\", ActInf GuestStream #016",
   "version": "1.1",
-  "doi": "10.5281/zenodo.7267947",
-  "doi_url": "https://doi.org/10.5281/zenodo.7267947",
+  "doi": "10.5281/zenodo.7259006",
+  "doi_url": "https://doi.org/10.5281/zenodo.7259006",
   "zenodo_record": "https://zenodo.org/records/7267947",
   "record_id": "7267947",
   "publication_date": "2022-10-27",
@@ -80,5 +80,7 @@
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.7267947",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7267947"
 }

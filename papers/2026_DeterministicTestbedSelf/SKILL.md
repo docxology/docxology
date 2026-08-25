@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "A Deterministic Testbed for Self-Organizing Agent-Team Coordination"
 description: "Recent work on AutoScientists coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired dead-end directions, effect-size ranking of candidate..."
 tags: ["agent-coordination", "scientific-discovery", "noise-band-confirmation", "ablation-study", "reproducible-research", "language-model-agents"]
@@ -39,10 +40,10 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20533669
+- Canonical DOI: 10.5281/zenodo.20533669
 - PDF SHA-256: 0af391375b14eb397812a8050657e2980fbc3a768e6fb108aa2f7eff46773e16
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-19T22:45:41Z
 
 ## Prerequisites
 

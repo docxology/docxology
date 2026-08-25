@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "When do bugs see (infra)red?"
 description: "<p>Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomology, spectroscopy, neural t..."
 tags: ["insect-olfaction", "infrared-detection", "vibrational-theory-of-olfaction", "semiochemicals", "sensilla-morphology", "electromagnetic-sensing", "active-inference", "reproducible-research"]
@@ -39,10 +40,10 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20450880
+- Canonical DOI: 10.5281/zenodo.20450880
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-10T19:08:24Z
+- Last checked: 2026-08-19T22:45:41Z
 
 ## Prerequisites
 

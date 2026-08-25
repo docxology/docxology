@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 AntConsciousness
 
 **Daniel A. Friedman, Eirik Søvik** (2019) · *Synthese*

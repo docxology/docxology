@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "BlakeFuller"
 description: "A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition. The study in comprehensivity explores structural parallels between Blake's..."
 tags: ["william-blake", "buckminster-fuller", "comprehensivity", "design-science", "prophetic-vision", "art-science-synthesis", "52-living-ideas", "juxtaposition"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.7514367
+- Canonical DOI: 10.5281/zenodo.7514367
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:11Z

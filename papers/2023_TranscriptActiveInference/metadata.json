@@ -1,8 +1,8 @@
 {
   "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
   "version": "v1.1",
-  "doi": "10.5281/zenodo.8229512",
-  "doi_url": "https://doi.org/10.5281/zenodo.8229512",
+  "doi": "10.5281/zenodo.8228934",
+  "doi_url": "https://doi.org/10.5281/zenodo.8228934",
   "zenodo_record": "https://zenodo.org/records/8229512",
   "record_id": "8229512",
   "publication_date": "2023-07-26",
@@ -99,5 +99,7 @@
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.8229512",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.8229512"
 }

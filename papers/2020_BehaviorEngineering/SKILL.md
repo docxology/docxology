@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "BehaviorEngineering"
 description: "Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales. This paper proposes frameworks for conn..."
 tags: ["behavior-engineering", "systems-engineering", "organizational-behavior", "complex-adaptive-systems", "team-formation", "behavioral-design"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.4021162
+- Canonical DOI: 10.5281/zenodo.4021162
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:41Z

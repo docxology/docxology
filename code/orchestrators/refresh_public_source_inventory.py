@@ -19,9 +19,9 @@ ORCID = "0000-0001-6232-9096"
 USER_AGENT = "docxology-public-source-inventory/1.0 (+https://danielarifriedman.com/)"
 
 try:
-    from report_paths import latest_report
+    from report_paths import latest_report, source_commit
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import latest_report
+    from .report_paths import latest_report, source_commit
 
 
 def latest_output_path(date: str | None = None) -> Path:
@@ -274,6 +274,7 @@ def build_report() -> dict[str, Any]:
     ]
     return {
         "generated_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "source_commit": source_commit(),
         "date": today,
         "note": "Paginated public-source inventory for review. Use as discovery evidence, not automatic claim replacement.",
         "sections": sections,

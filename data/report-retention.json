@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "policy": {
+    "purpose": "Provenance-preserving retention plan for superseded dated report artifacts.",
+    "before_removal": "Every removed path needs a reviewed entry with its original generation time, content hash, and durable replacement location.",
+    "default": "retain"
+  },
+  "entries": []
+}

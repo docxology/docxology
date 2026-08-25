@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 AccountActiveInference
 
 **Daniel Ari Friedman** (2023) · *Zenodo*

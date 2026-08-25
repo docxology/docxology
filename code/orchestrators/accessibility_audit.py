@@ -17,6 +17,8 @@ try:
 except ImportError:  # pragma: no cover - package import path
     from .report_paths import dated_report_path, generated_timestamp, latest_report
 
+from deploy_seo_security import EXCLUDED_HTML_PATH_PARTS
+
 OUT = dated_report_path("accessibility_static", "json")
 
 
@@ -154,6 +156,19 @@ def existing_generated_at(path: Path) -> str | None:
         return None
 
 
+def audited_html_paths(repo_root: Path = REPO_ROOT) -> list[Path]:
+    """Return only public HTML, using the shared writer/checker scope."""
+    pages: list[Path] = []
+    for path in sorted(repo_root.rglob("*.html")):
+        if EXCLUDED_HTML_PATH_PARTS.intersection(path.parts):
+            continue
+        text = path.read_text(encoding="utf-8", errors="ignore")
+        if 'http-equiv="refresh"' in text or path.name.startswith("google"):
+            continue
+        pages.append(path)
+    return pages
+
+
 def render_for_write(path: Path) -> str:
     """Keep a static-a11y snapshot stable when the audited pages are unchanged."""
     content = render()
@@ -172,18 +187,10 @@ def render_for_write(path: Path) -> str:
 
 
 def render(generated_at: str | None = None) -> str:
-    pages = []
-    # "_site" is the untracked local Pages-artifact assembly (build_pages_artifact.py);
-    # including it makes the committed report depend on local build state and go
-    # stale in CI, which checks out tracked files only.
-    excluded_parts = {".git", "node_modules", "docs", "code", "reports", "netlify-stripe-webhook", "_site"}
-    for path in sorted(REPO_ROOT.rglob("*.html")):
-        if excluded_parts.intersection(path.parts):
-            continue
-        text = path.read_text(encoding="utf-8", errors="ignore")
-        if 'http-equiv="refresh"' in text or path.name.startswith("google"):
-            continue
-        pages.append(path)
+    # "_site" is the untracked local Pages-artifact assembly; the shared
+    # scope also excludes local dependency trees such as .venv so neither
+    # writer nor audit report depend on diagnostic vendor HTML.
+    pages = audited_html_paths()
     results = [audit_page(path) for path in pages]
     payload = {
         "generated_at": generated_at or generated_timestamp(),

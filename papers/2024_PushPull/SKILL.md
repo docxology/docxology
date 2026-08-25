@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Push and Pull: A priming sequence"
 description: "The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer exercises for further exploration . The priming s..."
 tags: ["pushpull"]
 domain: "Active Inference"
 citation: "Daniel Ari Friedman (2024). *Push and Pull: A priming sequence*. Active Inference."
-doi: "10.5281/zenodo.10659375"
+doi: "10.5281/zenodo.10659374"
+artifact_doi: "10.5281/zenodo.10659375"
 ---
 
 # Push and Pull: A priming sequence
@@ -39,10 +41,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.10659375
+- Canonical DOI: 10.5281/zenodo.10659374
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-05-30T18:56:13Z
+- Artifact DOI: 10.5281/zenodo.10659375
 
 ## Prerequisites
 
@@ -54,6 +57,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.10659375`
+1. Reference the DOI for citation: `10.5281/zenodo.10659374`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

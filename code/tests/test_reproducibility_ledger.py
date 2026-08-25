@@ -115,3 +115,18 @@ def test_timestamp_alone_does_not_count_as_drift() -> None:
         ledger_mod.JSON_OUT, json.dumps(bumped, indent=2, ensure_ascii=False) + "\n"
     )
     assert on_disk == fresh
+
+
+def test_write_render_preserves_timestamp_when_ledger_body_is_unchanged(
+    monkeypatch: pytest.MonkeyPatch, tmp_path: Path
+) -> None:
+    """A repeat apply must not dirty Pages control manifests through a clock tick."""
+    json_out = tmp_path / "reproducibility.json"
+    existing = ledger_mod.build_ledger()
+    existing["generated_at"] = "2026-08-25T00:00:00Z"
+    json_out.write_text(json.dumps(existing, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    monkeypatch.setattr(ledger_mod, "JSON_OUT", json_out)
+
+    rendered = json.loads(ledger_mod.outputs()[json_out])
+
+    assert rendered["generated_at"] == "2026-08-25T00:00:00Z"

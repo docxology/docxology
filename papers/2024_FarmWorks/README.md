@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ FarmWorks
 
 **Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin** (2024) · *Zenodo*

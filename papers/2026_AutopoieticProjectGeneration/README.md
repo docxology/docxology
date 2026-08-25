@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Autopoietic Project Generation
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
@@ -37,8 +39,6 @@
 > Daniel Ari Friedman (2026). *Autopoietic Project Generation*. Zenodo. DOI: 10.5281/zenodo.21227869. URL: https://doi.org/10.5281/zenodo.21227869.
 
 ## Related
-
-- GitHub release: https://github.com/docxology/template/releases/tag/v1.0.1
 
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
 - [All Papers](../README.md)

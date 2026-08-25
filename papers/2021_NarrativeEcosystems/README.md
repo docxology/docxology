@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ NarrativeEcosystems
 
 **Daniel A. Friedman, R.J. Cordes, Virginia Bleu Knight** (2021) · *COGSEC.org*

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring"
 description: "Computational living meta-analysis of the Active Inference and Free Energy Principle literature: multi-source retrieval, nanopublication extraction, and hypothesis scoring architecture."
 tags: ["active-inference", "meta-analysis", "nanopublications", "assertion-extraction", "citation-weighted-scoring", "literature-review", "free-energy-principle", "computational-bibliography", "open-science"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.19461933
+- Canonical DOI: 10.5281/zenodo.19461933
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:26:01Z

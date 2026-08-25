@@ -1,8 +1,8 @@
 {
   "title": "Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast",
   "version": "1.0.0",
-  "doi": "10.5281/zenodo.20286171",
-  "doi_url": "https://doi.org/10.5281/zenodo.20286171",
+  "doi": "10.5281/zenodo.20286170",
+  "doi_url": "https://doi.org/10.5281/zenodo.20286170",
   "zenodo_record": "https://zenodo.org/records/20286171",
   "record_id": "20286171",
   "publication_date": "2026-05-19",
@@ -82,5 +82,7 @@
   ],
   "related_software": [
     "docxology/crescent_city"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.20286171",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20286171"
 }

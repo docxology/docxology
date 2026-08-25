@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ DigitalRhetorical
 
 **Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman** (2021) · *Zenodo*

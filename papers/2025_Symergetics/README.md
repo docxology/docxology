@@ -1,4 +1,6 @@
-# 📄 Symergetics
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎨 Symergetics
 
 **Daniel Ari Friedman** (2025) · *Zenodo*
 

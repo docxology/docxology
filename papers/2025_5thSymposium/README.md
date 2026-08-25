@@ -1,4 +1,6 @@
-# 📄 5thSymposium
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎥 5thSymposium
 
 **Active Inference Institute** (2025) · *Presentation*
 

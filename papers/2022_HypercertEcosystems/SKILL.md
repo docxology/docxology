@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "HypercertEcosystems"
 description: "We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze..."
 tags: ["hypercerts", "desci", "decentralized-science", "active-blockference", "aeos", "cognitive-audits", "public-goods-funding", "systems-modeling"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.7626768
+- Canonical DOI: 10.5281/zenodo.7626768
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:56Z

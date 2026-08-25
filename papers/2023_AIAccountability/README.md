@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ AIAccountability
 
 **Scott David, R.J. Cordes, Daniel A. Friedman (UW APL IRSIRI, AII, PFH, COGSEC)** (2023) · *NTIA*

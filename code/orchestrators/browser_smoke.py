@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import socket
 import subprocess
@@ -16,9 +17,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 try:
-    from report_paths import dated_report_dir, generated_timestamp, latest_subdir_file
+    from report_paths import dated_report_dir, generated_timestamp, latest_subdir_file, source_commit, source_worktree_state
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import dated_report_dir, generated_timestamp, latest_subdir_file
+    from .report_paths import dated_report_dir, generated_timestamp, latest_subdir_file, source_commit, source_worktree_state
 
 OUT_DIR = dated_report_dir("browser-smoke")
 MANIFEST = OUT_DIR / "manifest.json"
@@ -35,6 +36,15 @@ PAGES = [
     ("art", "art.html", ".art-card"),
     ("videos", "videos.html", ".video-topic-panel"),
 ]
+
+
+def sha256_file(path: Path) -> str:
+    """Return the digest of a captured screenshot for release attestation."""
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def free_port() -> int:
@@ -91,12 +101,15 @@ def run_smoke() -> dict:
                     "selector": selector,
                     "ok": proc.returncode == 0 and out.exists(),
                     "screenshot": str(out.relative_to(REPO_ROOT)) if out.exists() else "",
+                    "screenshot_sha256": sha256_file(out) if out.exists() else "",
                     "stdout": proc.stdout.strip()[-500:],
                     "stderr": proc.stderr.strip()[-500:],
                 }
             )
         manifest = {
             "generated_at": generated_timestamp(),
+            "source_commit": source_commit(),
+            **source_worktree_state(),
             "tool": "playwright screenshot",
             "note": "Selector-based smoke checks for core local site behavior.",
             "passing": sum(1 for item in checks if item["ok"]),

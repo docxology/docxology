@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "AntsAging"
 description: "A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social i..."
 tags: ["ants", "aging", "senescence", "lifespan", "caste", "queen-longevity", "social-insects", "evolutionary-biology"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.7855581
+- Canonical DOI: 10.5281/zenodo.7855581
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:09Z

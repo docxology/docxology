@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "CryptoJews"
 description: "Population genetics critique of uniparental marker methodology for inferring Jewish ancestry in Iberian crypto-Jewish communities"
 tags: ["population-genetics", "uniparental-markers", "crypto-jews", "haplotype-polyphyly", "admixture-modeling", "iberian-history"]
 domain: "Genetics & Biomedical"
 citation: "Alexander W. Marcus, Emily R. Ebel & Daniel Ari Friedman (2015). *CryptoJews*. Genetics & Biomedical."
+doi: "10.3389/fgene.2015.00261"
 ---
 
 # CryptoJews
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.3389/fgene.2015.00261
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.3389/fgene.2015.00261`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

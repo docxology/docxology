@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 ActiveInferants
 
 **Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant** (2021) · *Frontiers in Behavioral Neuroscience*

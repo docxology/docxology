@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Convergence Analysis of Gradient Descent Optimization
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "BlattodeaDiversity"
 description: "This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology. Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles. W..."
 tags: ["blattodea", "cockroach-diversity", "termites", "insect-ecology", "eusociality", "taxonomy", "evolutionary-biology"]
 domain: "Entomology"
 citation: "Daniel A. Friedman, et al. (2024). *BlattodeaDiversity*. Entomology."
+doi: "10.1002/ece3.70063"
 ---
 
 # BlattodeaDiversity
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.1002/ece3.70063
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.1002/ece3.70063`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -15,6 +15,11 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from generated_outputs import (  # noqa: E402
+    generated_output_files,
+    stale_output_paths,
+    write_output_texts,
+)
 from site_nav import HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, clip_description, domain_page_href, render_nav  # noqa: E402
 
 
@@ -151,6 +156,7 @@ def render_page(work: dict) -> str:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{h(work['title'])} Documentation — Daniel Ari Friedman</title>
     <meta name="description" content="{h(clip_description(summary))}">
+    <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="{h(canonical)}">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
@@ -243,6 +249,22 @@ def validate_inputs() -> list[str]:
     return errors
 
 
+def reconcile_outputs(
+    outputs: dict[Path, str], *, repo_root: Path = REPO_ROOT, check: bool
+) -> tuple[Path, ...]:
+    """Check or write the complete paper-page output set safely.
+
+    Paper-folder pages are generated release artifacts even though they share
+    directories with hand-authored paper material.  The shared writer rejects
+    symlinks and hard links before either an exact ``--check`` read or a write,
+    so a malformed folder cannot redirect the renderer outside the checkout.
+    """
+    stale = stale_output_paths(outputs, repo_root=repo_root)
+    if not check and stale:
+        write_output_texts(outputs, repo_root=repo_root)
+    return stale
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if generated paper-folder pages are stale")
@@ -251,20 +273,13 @@ def main() -> None:
     if errors:
         raise SystemExit("Invalid paper folders:\n" + "\n".join(errors[:120]))
     outputs = render_outputs()
-    stale: list[str] = []
-    for path, content in outputs.items():
-        if args.check:
-            if not path.exists() or path.read_text(encoding="utf-8") != content:
-                stale.append(str(path.relative_to(REPO_ROOT)))
-        else:
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(content, encoding="utf-8")
+    stale = [str(path.relative_to(REPO_ROOT)) for path in reconcile_outputs(outputs, check=args.check)]
     if args.check:
-        expected = {path.resolve() for path in outputs}
+        expected = set(outputs)
         extra = {
-            path.resolve()
-            for path in PAPERS_DIR.glob("*/index.html")
-            if re.match(r"\d{4}_", path.parent.name)
+            path
+            for path in generated_output_files(REPO_ROOT, PAPERS_DIR, "index.html")
+            if path.parent.parent == PAPERS_DIR and re.match(r"\d{4}_", path.parent.name)
         } - expected
         stale.extend(str(path.relative_to(REPO_ROOT)) for path in sorted(extra))
     if stale:

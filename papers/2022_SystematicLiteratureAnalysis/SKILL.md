@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "SystematicLiteratureAnalysis"
 description: "We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston. We trace the history, growth, and div..."
 tags: ["systematic-literature-analysis", "free-energy-principle", "active-inference", "karl-friston", "history-of-science", "bibliometrics", "ontology"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.7449367
+- Canonical DOI: 10.5281/zenodo.7449367
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:59Z

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "NarrativeInformationMgmt"
 description: "We propose Narrative Information Management (NIM) as a unifying framework for facilitating collective sensemaking. We address the need for synthesis among knowledge management, information management..."
 tags: ["narrative-information-management", "nim", "collective-sensemaking", "knowledge-management", "information-systems", "cognitive-load", "interdisciplinary-synthesis"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.5565577
+- Canonical DOI: 10.5281/zenodo.5565577
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:50Z

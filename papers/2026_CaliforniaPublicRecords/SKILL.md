@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era"
 description: "A technical and legal reference to California public-records ecosystem, anchored by the CPRA recodified by AB 473."
 tags: ["california-public-records-act", "open-data", "ckan", "socrata", "arcgis", "cognitive-security", "civic-technology"]
@@ -41,7 +42,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20789899
+- Canonical DOI: 10.5281/zenodo.20789899
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-21T00:00:00Z

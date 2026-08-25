@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Introduction to Biology: A Generative Approach"
 description: "<p><em>Introduction to Biology: A Generative Approach</em> is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, genetics, microbiology, physiology, evolution, and ecolo..."
 tags: ["biology"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *Introduction to Biology: A Generative Approach*. Computational."
-doi: "10.5281/zenodo.20286478"
+doi: "10.5281/zenodo.20286477"
+artifact_doi: "10.5281/zenodo.20286478"
 ---
 
 # Introduction to Biology: A Generative Approach
@@ -39,10 +41,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20286478
+- Canonical DOI: 10.5281/zenodo.20286477
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
 - Last checked: 2026-06-04T20:45:04Z
+- Artifact DOI: 10.5281/zenodo.20286478
 
 ## Prerequisites
 
@@ -54,6 +57,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.20286478`
+1. Reference the DOI for citation: `10.5281/zenodo.20286477`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

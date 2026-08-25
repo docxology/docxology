@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧬 CryptoJews
 
 **Alexander W. Marcus, Emily R. Ebel & Daniel Ari Friedman** (2015) · *Frontiers in Genetics*

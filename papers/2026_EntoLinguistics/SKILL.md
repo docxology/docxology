@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology"
 description: "Six-domain Ento-Linguistic framework, open-source corpus pipeline (term extraction, co-occurrence networks, semantic entropy), and CACE meta-standards for lexical engineering in entomology."
 tags: ["entomology", "scientific-communication", "terminology-networks", "corpus-linguistics", "active-inference", "cace", "semantic-entropy", "myrmecology"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.19574117
+- Canonical DOI: 10.5281/zenodo.19574117
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:26:10Z

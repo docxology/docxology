@@ -1,4 +1,6 @@
-# 📄 SystemsProcesses
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎥 SystemsProcesses
 
 **Daniel A. Friedman** (2025) · *Presentation*
 

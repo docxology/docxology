@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 ForagerHydration
 
 **Daniel A. Friedman, Michael J. Greene, Deborah M. Gordon** (2019) · *Scientific Reports*

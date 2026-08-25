@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "DistributedPhysiology"
 description: "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this..."
 tags: ["distributed-physiology", "superorganism", "collective-behavior", "ant-colonies", "decentralized-control", "interaction-networks", "colony-metabolism", "social-immunity"]
 domain: "Entomology"
 citation: "Daniel A. Friedman, Deborah M. Gordon (2020). *DistributedPhysiology*. Entomology."
+doi: "10.1016/j.yhbeh.2020.104757"
 ---
 
 # DistributedPhysiology
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.1016/j.yhbeh.2020.104757
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.1016/j.yhbeh.2020.104757`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

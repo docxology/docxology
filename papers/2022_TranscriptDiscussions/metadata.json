@@ -1,8 +1,8 @@
 {
   "title": "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"",
   "version": "v1",
-  "doi": "10.5281/zenodo.7401875",
-  "doi_url": "https://doi.org/10.5281/zenodo.7401875",
+  "doi": "10.5281/zenodo.7401874",
+  "doi_url": "https://doi.org/10.5281/zenodo.7401874",
   "zenodo_record": "https://zenodo.org/records/7401875",
   "record_id": "7401875",
   "publication_date": "2022-09-14",
@@ -63,5 +63,7 @@
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.7401875",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7401875"
 }

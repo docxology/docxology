@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Template Textbook"
 description: "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine. --- Associa..."
 tags: ["templatetextbook"]
@@ -43,10 +44,10 @@ Zenodo: https://zenodo.org/records/205
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20533125
+- Canonical DOI: 10.5281/zenodo.20533125
 - PDF SHA-256: 7b67cb2d9118f0a72001395f0a94c529313804d7e5cdf7f6ca2dc9f7ab57d168
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-19T22:45:41Z
 
 ## Prerequisites
 

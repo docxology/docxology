@@ -4,8 +4,12 @@
 from __future__ import annotations
 
 import json
+import os
+import subprocess
 from pathlib import Path
 from typing import Optional
+
+from release_evidence import is_ephemeral_release_evidence_path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 REPORT_DIR = REPO_ROOT / "reports"
@@ -27,6 +31,101 @@ def generated_timestamp() -> str:
     from datetime import datetime, timezone
 
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def source_commit(repo_root: Path = REPO_ROOT) -> str:
+    """Return the exact revision exercised by a dated report.
+
+    Release validation intentionally rejects ``unknown`` values.  Keeping the
+    fallback makes normal local diagnostics usable outside a Git checkout while
+    preserving a truthful provenance boundary for release claims.
+    """
+    result = subprocess.run(
+        ["git", "rev-parse", "HEAD"],
+        cwd=repo_root,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    return result.stdout.strip() if result.returncode == 0 else "unknown"
+
+
+def _porcelain_paths(repo_root: Path) -> list[str] | None:
+    """Return every changed path from NUL-delimited porcelain output.
+
+    Human-readable porcelain output quotes unusual filenames and changes the
+    shape of rename records.  Release evidence must not turn either behaviour
+    into an accidental allow-list bypass, so use the documented NUL form and
+    retain both sides of a rename/copy.
+    """
+    result = subprocess.run(
+        ["git", "status", "--porcelain=v1", "-z", "--untracked-files=all"],
+        cwd=repo_root,
+        capture_output=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        return None
+    records = result.stdout.split(b"\0")
+    paths: list[str] = []
+    index = 0
+    while index < len(records):
+        record = records[index]
+        index += 1
+        if not record:
+            continue
+        if len(record) < 4 or record[2:3] != b" ":
+            return None
+        status = record[:2].decode("ascii", errors="strict")
+        paths.append(os.fsdecode(record[3:]))
+        if "R" in status or "C" in status:
+            if index >= len(records) or not records[index]:
+                return None
+            paths.append(os.fsdecode(records[index]))
+            index += 1
+    return paths
+
+
+def source_worktree_state(repo_root: Path = REPO_ROOT) -> dict[str, object]:
+    """Describe whether release *source* was clean when a report was made.
+
+    Only narrowly declared post-commit evidence and the transient local Pages
+    projection do not alter release source. Every other tracked or untracked
+    path, including hand-authored or unrecognized report files, does. A source
+    tree hash accompanies the assertion so a release validator can bind a
+    clean capture to the candidate commit's exact Git tree.
+    """
+    paths = _porcelain_paths(repo_root)
+    if paths is None:
+        return {
+            "source_worktree_clean": False,
+            "source_worktree_dirty_paths": ["<git-status-unavailable>"],
+            "source_tree_sha": "unknown",
+        }
+    source_paths: list[str] = []
+    for path in paths:
+        # Backslashes are valid POSIX filename bytes but never valid release
+        # paths.  Do not silently normalize them into an evidence exemption.
+        if "\\" in path:
+            source_paths.append(path)
+            continue
+        if path == "_site" or path.startswith("_site/"):
+            continue
+        if is_ephemeral_release_evidence_path(path):
+            continue
+        source_paths.append(path)
+    tree = subprocess.run(
+        ["git", "rev-parse", "HEAD^{tree}"],
+        cwd=repo_root,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    return {
+        "source_worktree_clean": not source_paths,
+        "source_worktree_dirty_paths": source_paths,
+        "source_tree_sha": tree.stdout.strip() if tree.returncode == 0 else "unknown",
+    }
 
 
 def stable_generated_at(path: Path, payload: dict) -> str | None:

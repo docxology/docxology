@@ -4,6 +4,7 @@
     {
       "name": "Paper folder doc regeneration",
       "outputs": [
+        "papers/generated-documents.json",
         "papers/*/README.md",
         "papers/*/AGENTS.md",
         "papers/*/SKILL.md"
@@ -11,9 +12,10 @@
       "sources": [
         "papers/paper_metadata.json",
         "pages/BIBLIOGRAPHY.md",
-        "papers/*/metadata.json"
+        "papers/*/metadata.json",
+        "papers/generated-documents.json"
       ],
-      "command": "uv run python3 code/orchestrators/regenerate_docs.py --apply --force"
+      "command": "uv run python3 code/orchestrators/regenerate_docs.py --apply"
     },
     {
       "name": "Publications HTML sync",
@@ -23,7 +25,15 @@
       ],
       "sources": [
         "pages/BIBLIOGRAPHY.md",
-        "code/src/biblio_table.py"
+        "data/current-counts.json",
+        "papers/*/README.md",
+        "papers/*/AGENTS.md",
+        "papers/*/SKILL.md",
+        "papers/*/full_text.md",
+        "papers/*/images/",
+        "code/src/biblio_table.py",
+        "code/templates/publications.html.tmpl",
+        "code/orchestrators/sync_publications_html.py"
       ],
       "command": "python3 code/orchestrators/sync_publications_html.py --apply"
     },
@@ -58,6 +68,11 @@
       ],
       "sources": [
         "pages/BIBLIOGRAPHY.md",
+        "papers/*/README.md",
+        "papers/*/AGENTS.md",
+        "papers/*/SKILL.md",
+        "papers/*/full_text.md",
+        "papers/*/images/",
         "code/src/biblio_table.py"
       ],
       "command": "python3 code/orchestrators/export_bibliography.py"
@@ -86,6 +101,8 @@
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "papers/README.md",
+        "papers/*/full_text.md",
+        "papers/*/images/*",
         "pages/SOFTWARE.md",
         "data/works.json",
         "data/software.json",
@@ -99,8 +116,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-08-20.json",
-        "reports/source_coverage_2026-08-20.md"
+        "reports/source_coverage_2026-08-25.json",
+        "reports/source_coverage_2026-08-25.md"
       ],
       "sources": [
         "data/works.json",
@@ -163,6 +180,24 @@
       "command": "python3 code/orchestrators/generate_pillar_pages.py"
     },
     {
+      "name": "Redirect stubs",
+      "outputs": [
+        "about.html",
+        "agent-verify.html",
+        "blog/index.html",
+        "blog/winged-snowflake-2021/index.html",
+        "meditations.html",
+        "nft.html",
+        "reports.html",
+        "research.html"
+      ],
+      "sources": [
+        "code/src/redirect_stubs.py",
+        "code/orchestrators/generate_redirect_stubs.py"
+      ],
+      "command": "python3 code/orchestrators/generate_redirect_stubs.py --apply"
+    },
+    {
       "name": "Agent data exports",
       "outputs": [
         "data/software.json",
@@ -174,6 +209,9 @@
         "pages/SOFTWARE.md",
         "code/src/software_table.py",
         "data/scholar-snapshot.json",
+        "data/works.json",
+        "data/current-counts.json",
+        "papers/",
         "code/orchestrators/export_agent_data.py"
       ],
       "command": "python3 code/orchestrators/export_agent_data.py"
@@ -186,6 +224,10 @@
       "sources": [
         "data/current-counts.json",
         "data/pages-artifact-manifest.json",
+        "data/github-repositories.json",
+        "data/works.json",
+        "data/software.json",
+        "data/claims.json",
         "reports/*latest dated reports",
         "code/orchestrators/build_agent_index.py"
       ],
@@ -207,7 +249,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-08-20.json"
+        "reports/pages_artifact_growth_2026-08-25.json"
       ],
       "sources": [
         "tracked repository files",
@@ -225,10 +267,25 @@
         "data/current-counts.json",
         "data/agent-index.json",
         "data/pages-artifact-manifest.json",
-        "reports/live_site_verification_*.json",
         "code/orchestrators/build_release_integrity.py"
       ],
       "command": "python3 code/orchestrators/build_release_integrity.py"
+    },
+    {
+      "name": "Post-deploy release attestation",
+      "outputs": [
+        "reports/deployment-attestations/<deployment-sha>.json"
+      ],
+      "sources": [
+        "reports/public_source_snapshot_*.json",
+        "reports/external_links_[0-9]*.json",
+        "reports/browser-smoke/*/manifest.json",
+        "reports/browser-qa/*/manifest.json",
+        "reports/visual-qa/*/manifest.json",
+        "reports/live_site_verification_*.json",
+        "code/orchestrators/attest_release.py"
+      ],
+      "command": "python3 code/orchestrators/attest_release.py --apply --commit <deployment-sha>"
     },
     {
       "name": "Resume and CV exports",
@@ -262,7 +319,9 @@
       ],
       "sources": [
         "pages/SOFTWARE.md",
+        "data/github-repositories.json",
         "code/src/software_table.py",
+        "code/templates/software.html.tmpl",
         "code/orchestrators/sync_software_html.py"
       ],
       "command": "python3 code/orchestrators/sync_software_html.py --apply"
@@ -344,6 +403,7 @@
       ],
       "sources": [
         "data/works.json",
+        "data/work-enrichment.json",
         "papers/*/README.md",
         "papers/*/SKILL.md"
       ],
@@ -366,7 +426,8 @@
       "outputs": [
         "videos/*.html",
         "data/videos.json",
-        "data/videos-index.json"
+        "data/videos-index.json",
+        "data/video-pages-manifest.json"
       ],
       "sources": [
         "code/data/youtube_personal.json",
@@ -485,7 +546,7 @@
     {
       "name": "Public source snapshot",
       "outputs": [
-        "reports/public_source_snapshot_2026-08-19.json"
+        "reports/public_source_snapshot_2026-08-25.json"
       ],
       "sources": [
         "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
@@ -495,7 +556,7 @@
     {
       "name": "Public source inventory",
       "outputs": [
-        "reports/public_source_inventory_2026-08-19.json"
+        "reports/public_source_inventory_2026-08-25.json"
       ],
       "sources": [
         "ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"
@@ -516,7 +577,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-08-20.json"
+        "reports/asset_size_2026-08-25.json"
       ],
       "sources": [
         "root HTML pages",
@@ -530,7 +591,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-08-20.json"
+        "reports/accessibility_static_2026-08-25.json"
       ],
       "sources": [
         "root HTML pages",
@@ -542,8 +603,8 @@
     {
       "name": "Browser smoke checks",
       "outputs": [
-        "reports/browser-smoke/2026-07-29/*.png",
-        "reports/browser-smoke/2026-07-29/manifest.json"
+        "reports/browser-smoke/2026-08-25/*.png",
+        "reports/browser-smoke/2026-08-25/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -555,7 +616,7 @@
     {
       "name": "Progressive browser QA",
       "outputs": [
-        "reports/browser-qa/2026-07-29/manifest.json"
+        "reports/browser-qa/2026-08-25/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -563,7 +624,7 @@
         "style.css",
         "code/orchestrators/browser_qa.py"
       ],
-      "command": "/opt/homebrew/opt/python@3.13/bin/python3.13 code/orchestrators/browser_qa.py"
+      "command": "uv run --extra browser-qa python3 code/orchestrators/browser_qa.py"
     },
     {
       "name": "Live site verification",
@@ -625,8 +686,8 @@
     {
       "name": "Visual QA",
       "outputs": [
-        "reports/visual-qa/2026-07-18/*.png",
-        "reports/visual-qa/2026-07-18/manifest.json"
+        "reports/visual-qa/2026-08-25/*.png",
+        "reports/visual-qa/2026-08-25/manifest.json"
       ],
       "sources": [
         "root HTML pages",

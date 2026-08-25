@@ -14,6 +14,21 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 import validate_repo as vr  # noqa: E402
 
 
+def test_validation_scope_excludes_dependency_and_cache_trees_but_keeps_docs():
+    assert not vr.is_validation_source_path(
+        Path(".venv/lib/python3.12/site-packages/package/diagnostic.html")
+    )
+    assert not vr.is_validation_source_path(Path("node_modules/package/README.md"))
+    assert vr.is_validation_source_path(Path("docs/operations/release-integrity.md"))
+
+
+def test_release_commit_must_match_candidate_head():
+    assert vr.release_commit_errors("a" * 40, "a" * 40) == []
+    assert vr.release_commit_errors("a" * 40, "b" * 40) == [
+        "--release-commit must resolve to the current HEAD; validate another SHA from a checkout at that exact commit"
+    ]
+
+
 def test_iter_local_links_ignores_fenced_markdown_examples():
     text = """See [real link](pages/README.md).
 

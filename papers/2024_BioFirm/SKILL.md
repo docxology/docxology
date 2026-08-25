@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "BioFirm"
 description: "BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as biological-inspired adaptive systems, using active i..."
 tags: ["biofirm", "bioregional-stewardship", "active-inference", "organizational-modeling", "sustainability", "adaptive-management"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.14861595
+- Canonical DOI: 10.5281/zenodo.14861595
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:24Z

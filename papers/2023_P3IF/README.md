@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ P3IF
 
 **Thomas M. Wilkinson, R.J. Cordes, Scott David, Daniel Ari Friedman** (2023) · *Zenodo*

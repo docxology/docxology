@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 MarkdownDecisionProcess
 
 **Daniel Ari Friedman** (2025) · *Zenodo*

@@ -1,4 +1,6 @@
-# 📄 OntologySUMO
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🌍 OntologySUMO
 
 **David S. Douglass, Adam Pease, Daniel Friedman, et al.** (2024) · *Zenodo*
 

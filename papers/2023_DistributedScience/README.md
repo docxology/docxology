@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 DistributedScience
 
 **Francesco Balzan, John Campbell, Karl Friston, Maxwell J.D. Ramstead, Daniel Friedman, Axel Constant** (2023) · *OSF*

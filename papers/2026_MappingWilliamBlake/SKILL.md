@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls"
 description: "A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics fro..."
 tags: ["william-blake", "digital-humanities", "corpus-acquisition", "source-provenance", "rights-bounded-release"]
@@ -40,10 +41,10 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21047573
+- Canonical DOI: 10.5281/zenodo.21047573
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-19T22:45:41Z
 
 ## Prerequisites
 

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "ResNei"
 description: "ResNei (Research Neighbourhood) supports the lateral growth of ideas through distributed, asynchronous, and non-linear collaboration. Knowledge develops across disciplines and methods through shared..."
 tags: ["resnei", "research-neighbourhood", "collaborative-research", "distributed-collaboration", "interdisciplinary", "knowledge-sharing"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.15389682
+- Canonical DOI: 10.5281/zenodo.15389682
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:56Z

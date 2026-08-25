@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Registered Report Template: Preregistration, Deviations, and Claim Boundaries
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

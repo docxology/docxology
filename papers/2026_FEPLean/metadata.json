@@ -1,8 +1,8 @@
 {
   "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
   "version": null,
-  "doi": "10.5281/zenodo.19699234",
-  "doi_url": "https://doi.org/10.5281/zenodo.19699234",
+  "doi": "10.5281/zenodo.19699233",
+  "doi_url": "https://doi.org/10.5281/zenodo.19699233",
   "zenodo_record": "https://zenodo.org/records/19699234",
   "record_id": "19699234",
   "publication_date": "2026-04-24",
@@ -67,5 +67,7 @@
   ],
   "related_software": [
     "ActiveInferenceInstitute/fep_lean"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.19699234",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.19699234"
 }

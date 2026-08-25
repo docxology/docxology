@@ -26,7 +26,7 @@ The safest default is: **scan live sources, inspect the report, apply only stron
 - Strong `create_new` and `update_existing` actions may be applied automatically with `--apply`.
 - `needs_review` actions are review-only. Do not auto-apply them without manual curation.
 - Same-title / same-GitHub-release Zenodo versions update the existing row instead of creating duplicate bibliography entries.
-- **Canonical DOI = Zenodo *concept* DOI** (the `conceptdoi` field, which always resolves to the latest version), not a per-version DOI. Use the concept DOI in `pages/BIBLIOGRAPHY.md`, `pages/SOFTWARE.md` Zenodo links, and per-folder `metadata.json`/`CITATION.cff`/`README`. Exception: distinct works that deliberately share one concept DOI (e.g. yearly AII Ecosystem v1/v2/v3 snapshots) keep their per-version DOIs to stay unique.
+- **Canonical citation DOI = the DOI in `pages/BIBLIOGRAPHY.md`.** This is normally Zenodo's *concept* DOI (which resolves to the latest version), but a deliberately distinct work may use a version DOI to remain unique. Mirror that selected citation DOI in `metadata.json` as `doi`; retain a version/download record separately as optional `artifact_doi` and `artifact_doi_url`. Never replace the bibliography citation DOI merely because an artifact record has a different DOI.
 - Public APIs are freshness checks. Curated local rows remain the source of truth after review and application.
 
 ## Preconditions
@@ -57,6 +57,27 @@ GITHUB_TOKEN="$(gh auth token)" uv run python3 code/orchestrators/build_github_i
 ```
 
 The generated reports under [`reports/`](../../reports/) are evidence snapshots. They support review but do not replace the curated bibliography.
+
+Before enabling document drift as a release blocker, reconcile bibliography and
+folder DOI roles through an approval-bound receipt:
+
+```bash
+uv run python3 code/orchestrators/reconcile_paper_dois.py \
+  --report reports/doi_role_reconciliation_YYYY-MM-DD.proposed.json
+# Review the proposed actions. Record the independent, attributed approval in
+# a separate JSON record bound to its proposal/source/action hashes, then apply:
+uv run python3 code/orchestrators/reconcile_paper_dois.py --apply \
+  --approved-report reports/doi_role_reconciliation_YYYY-MM-DD.proposed.json \
+  --approval reports/doi_role_approval_YYYY-MM-DD.json \
+  --report reports/doi_role_reconciliation_YYYY-MM-DD.json
+uv run python3 code/orchestrators/regenerate_docs.py --doi-audit
+```
+
+The audit must report zero conflicts before paper-document regeneration is
+treated as a release gate. The generated proposal cannot approve itself: an
+approval must name the reviewer, record a timezone-qualified review time, and
+bind the exact proposal, source, and action hashes. Do not use it to infer a
+new citation DOI from a download URL or a version-specific Zenodo record.
 
 For a focused recent-release pass, use the pairing tool's date filter:
 
@@ -210,12 +231,14 @@ derived from git commit dates) — see [Acceptance Checks](#acceptance-checks).
 
 `visual_qa.py` and `browser_smoke.py` write a fresh dated screenshot set under
 `reports/<tool>/YYYY-MM-DD/` every run, and only the latest is read by validation. Left
-unpruned these dominate the tracked tree (~88 MB at one point). Periodically trim the
-superseded sets:
+unpruned these dominate the tracked tree (~88 MB at one point). Before any removal,
+record a reviewed provenance-preserving decision in
+[`report-retention.md`](report-retention.md) and `data/report-retention.json`; then
+trim only the explicitly approved sets:
 
 ```bash
 uv run python3 code/orchestrators/prune_old_reports.py          # dry-run
-uv run python3 code/orchestrators/prune_old_reports.py --apply  # keep latest, delete older
+uv run python3 code/orchestrators/prune_old_reports.py --apply  # requires reviewed retention records
 git add -A reports/ && uv run python3 code/orchestrators/validate_repo.py
 ```
 

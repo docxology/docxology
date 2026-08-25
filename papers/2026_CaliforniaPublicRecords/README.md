@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ California Public Records: A Technical and Legal Reference for the Post-AB 473 Era
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

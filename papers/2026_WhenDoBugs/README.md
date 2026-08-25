@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 When do bugs see (infra)red?
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 The Template Textbook
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
@@ -40,8 +42,6 @@
 > Daniel Ari Friedman (2026). *The Template Textbook*. Zenodo. DOI: 10.5281/zenodo.20533125. URL: https://doi.org/10.5281/zenodo.20533125.
 
 ## Related
-
-- GitHub release: https://github.com/docxology/template_textbook/releases/tag/v0.1.0
 
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
 - [All Papers](../README.md)

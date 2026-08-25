@@ -59,14 +59,35 @@ LATEST_EXTERNAL_LINK_REPORT = _latest_report("external_links_[0-9]*.json", "repo
 ARTIFACTS = [
     {
         "name": "Paper folder doc regeneration",
-        "outputs": ["papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md"],
-        "sources": ["papers/paper_metadata.json", "pages/BIBLIOGRAPHY.md", "papers/*/metadata.json"],
-        "command": "uv run python3 code/orchestrators/regenerate_docs.py --apply --force",
+        "outputs": [
+            "papers/generated-documents.json",
+            "papers/*/README.md",
+            "papers/*/AGENTS.md",
+            "papers/*/SKILL.md",
+        ],
+        "sources": [
+            "papers/paper_metadata.json",
+            "pages/BIBLIOGRAPHY.md",
+            "papers/*/metadata.json",
+            "papers/generated-documents.json",
+        ],
+        "command": "uv run python3 code/orchestrators/regenerate_docs.py --apply",
     },
     {
         "name": "Publications HTML sync",
         "outputs": ["publications.html", "data/publications-ld.json"],
-        "sources": ["pages/BIBLIOGRAPHY.md", "code/src/biblio_table.py"],
+        "sources": [
+            "pages/BIBLIOGRAPHY.md",
+            "data/current-counts.json",
+            "papers/*/README.md",
+            "papers/*/AGENTS.md",
+            "papers/*/SKILL.md",
+            "papers/*/full_text.md",
+            "papers/*/images/",
+            "code/src/biblio_table.py",
+            "code/templates/publications.html.tmpl",
+            "code/orchestrators/sync_publications_html.py",
+        ],
         "command": "python3 code/orchestrators/sync_publications_html.py --apply",
     },
     {
@@ -84,7 +105,15 @@ ARTIFACTS = [
     {
         "name": "Bibliography exports",
         "outputs": ["bibliography.bib", "bibliography.csl.json", "bibliography.ris", "data/works.json"],
-        "sources": ["pages/BIBLIOGRAPHY.md", "code/src/biblio_table.py"],
+        "sources": [
+            "pages/BIBLIOGRAPHY.md",
+            "papers/*/README.md",
+            "papers/*/AGENTS.md",
+            "papers/*/SKILL.md",
+            "papers/*/full_text.md",
+            "papers/*/images/",
+            "code/src/biblio_table.py",
+        ],
         "command": "python3 code/orchestrators/export_bibliography.py",
     },
     {
@@ -105,6 +134,8 @@ ARTIFACTS = [
         "sources": [
             "pages/BIBLIOGRAPHY.md",
             "papers/README.md",
+            "papers/*/full_text.md",
+            "papers/*/images/*",
             "pages/SOFTWARE.md",
             "data/works.json",
             "data/software.json",
@@ -151,9 +182,32 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/generate_pillar_pages.py",
     },
     {
+        "name": "Redirect stubs",
+        "outputs": [
+            "about.html",
+            "agent-verify.html",
+            "blog/index.html",
+            "blog/winged-snowflake-2021/index.html",
+            "meditations.html",
+            "nft.html",
+            "reports.html",
+            "research.html",
+        ],
+        "sources": ["code/src/redirect_stubs.py", "code/orchestrators/generate_redirect_stubs.py"],
+        "command": "python3 code/orchestrators/generate_redirect_stubs.py --apply",
+    },
+    {
         "name": "Agent data exports",
         "outputs": ["data/software.json", "data/people.json", "data/organizations.json", "data/claims.json"],
-        "sources": ["pages/SOFTWARE.md", "code/src/software_table.py", "data/scholar-snapshot.json", "code/orchestrators/export_agent_data.py"],
+        "sources": [
+            "pages/SOFTWARE.md",
+            "code/src/software_table.py",
+            "data/scholar-snapshot.json",
+            "data/works.json",
+            "data/current-counts.json",
+            "papers/",
+            "code/orchestrators/export_agent_data.py",
+        ],
         "command": "python3 code/orchestrators/export_agent_data.py",
     },
     {
@@ -162,6 +216,10 @@ ARTIFACTS = [
         "sources": [
             "data/current-counts.json",
             "data/pages-artifact-manifest.json",
+            "data/github-repositories.json",
+            "data/works.json",
+            "data/software.json",
+            "data/claims.json",
             "reports/*latest dated reports",
             "code/orchestrators/build_agent_index.py",
         ],
@@ -182,8 +240,22 @@ ARTIFACTS = [
     {
         "name": "Release integrity envelope",
         "outputs": ["data/release-integrity.json"],
-        "sources": ["data/current-counts.json", "data/agent-index.json", "data/pages-artifact-manifest.json", "reports/live_site_verification_*.json", "code/orchestrators/build_release_integrity.py"],
+        "sources": ["data/current-counts.json", "data/agent-index.json", "data/pages-artifact-manifest.json", "code/orchestrators/build_release_integrity.py"],
         "command": "python3 code/orchestrators/build_release_integrity.py",
+    },
+    {
+        "name": "Post-deploy release attestation",
+        "outputs": ["reports/deployment-attestations/<deployment-sha>.json"],
+        "sources": [
+            "reports/public_source_snapshot_*.json",
+            "reports/external_links_[0-9]*.json",
+            "reports/browser-smoke/*/manifest.json",
+            "reports/browser-qa/*/manifest.json",
+            "reports/visual-qa/*/manifest.json",
+            "reports/live_site_verification_*.json",
+            "code/orchestrators/attest_release.py",
+        ],
+        "command": "python3 code/orchestrators/attest_release.py --apply --commit <deployment-sha>",
     },
     {
         "name": "Resume and CV exports",
@@ -212,7 +284,13 @@ ARTIFACTS = [
     {
         "name": "Software catalog HTML sync",
         "outputs": ["software.html", "data/software-ld.json"],
-        "sources": ["pages/SOFTWARE.md", "code/src/software_table.py", "code/orchestrators/sync_software_html.py"],
+        "sources": [
+            "pages/SOFTWARE.md",
+            "data/github-repositories.json",
+            "code/src/software_table.py",
+            "code/templates/software.html.tmpl",
+            "code/orchestrators/sync_software_html.py",
+        ],
         "command": "python3 code/orchestrators/sync_software_html.py --apply",
     },
     {
@@ -266,7 +344,12 @@ ARTIFACTS = [
     {
         "name": "Work pages",
         "outputs": ["works/*.html", "data/work-enrichment.json"],
-        "sources": ["data/works.json", "papers/*/README.md", "papers/*/SKILL.md"],
+        "sources": [
+            "data/works.json",
+            "data/work-enrichment.json",
+            "papers/*/README.md",
+            "papers/*/SKILL.md",
+        ],
         "command": "python3 code/orchestrators/build_work_pages.py",
     },
     {
@@ -277,7 +360,12 @@ ARTIFACTS = [
     },
     {
         "name": "Video pages",
-        "outputs": ["videos/*.html", "data/videos.json", "data/videos-index.json"],
+        "outputs": [
+            "videos/*.html",
+            "data/videos.json",
+            "data/videos-index.json",
+            "data/video-pages-manifest.json",
+        ],
         "sources": [
             "code/data/youtube_personal.json",
             "code/data/youtube_institute.json",
@@ -387,7 +475,7 @@ ARTIFACTS = [
         "name": "Progressive browser QA",
         "outputs": [_latest_subdir_manifest("browser-qa", "reports/browser-qa/2026-07-18/manifest.json")],
         "sources": ["root HTML pages", "js/*.js", "style.css", "code/orchestrators/browser_qa.py"],
-        "command": "/opt/homebrew/opt/python@3.13/bin/python3.13 code/orchestrators/browser_qa.py",
+        "command": "uv run --extra browser-qa python3 code/orchestrators/browser_qa.py",
     },
     {
         "name": "Live site verification",
@@ -441,12 +529,17 @@ UTILITIES = [
     ("build_generated_manifest.py", "Writes GENERATED.md + data/generated-manifest.json from the ARTIFACTS/UTILITIES lists in this file", "meta"),
     ("audit_publication_skills.py", "Validates papers/*/SKILL.md against data/works.json docs_path references; runs in validate_repo.py", "audit"),
     ("build_reconciliation_report.py", "Builds the public-source reconciliation report from local indexes and the freshness snapshot", "audit"),
+    ("build_public_source_review.py", "Builds dated applied/deferred/rejected review evidence from refresh snapshots without changing curated claims, metrics, classifications, or bibliography data", "review"),
+    ("audit_private_reconciliation.py", "Classifies public-main versus private-only changes without merging history and records source ports, derived regeneration, and binary deferrals", "audit"),
     ("check_zenodo_uncatalogued.py", "Diffs live Zenodo records under the profile ORCID against the curated bibliography", "audit"),
     ("gsc_followup_preflight.py", "Prints the pre-GSC-followup checklist (sitemap, priority URLs, validation rows); see docs/seo/gsc-followup.md", "audit"),
     ("indexnow_urls.py", "Emits the IndexNow URL list from the sitemap index-priority policy", "seo"),
     ("submit_indexnow.py", "Submits index-priority URLs to IndexNow endpoints (Bing, Yandex, Naver)", "seo"),
     ("ensure_social_meta.py", "Idempotently adds Twitter Card + og:image:alt tags to the hand-maintained pages", "maintenance"),
-    ("prune_old_reports.py", "Prunes superseded dated QA screenshot sets under reports/ (keeps cited provenance)", "maintenance"),
+    ("prune_old_reports.py", "Prunes superseded dated QA screenshot sets only with a reviewed provenance-preserving retention manifest", "maintenance"),
+    ("reconcile_paper_dois.py", "Builds an approval-bound canonical DOI versus artifact DOI reconciliation receipt; bibliography DOI is canonical", "maintenance"),
+    ("attest_release.py", "Creates or checks a content-addressed post-deploy deployment-SHA attestation; never deploys", "release"),
+    ("generate_redirect_stubs.py", "Renders or checks all centrally declared redirect stubs without inline JavaScript", "maintenance"),
     ("extract_paper_texts.py", "Extracts full text and images from paper PDFs into the papers/ tree", "maintenance"),
     ("fetch_youtube_data.py", "Fetches YouTube channel metadata for both channels into code/data/youtube_*.json (network)", "fetch"),
     ("generate_citation_cff.py", "Generates per-paper CITATION.cff files from papers/*/metadata.json", "maintenance"),

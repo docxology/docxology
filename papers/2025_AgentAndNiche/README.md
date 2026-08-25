@@ -1,4 +1,6 @@
-# 📄 AgentAndNiche
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎨 AgentAndNiche
 
 **Daniel Ari Friedman** (2025) · *Zenodo*
 

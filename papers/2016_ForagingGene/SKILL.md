@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "ForagingGene"
 description: "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati..."
 tags: ["foraging-gene", "pogonomyrmex-barbatus", "harvester-ants", "gene-expression", "circadian-rhythms", "task-allocation", "division-of-labor", "field-study", "behavioral-ecology"]
 domain: "Entomology"
 citation: "Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon (2016). *ForagingGene*. Entomology."
+doi: "10.1098/rspb.2016.0841"
 ---
 
 # ForagingGene
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.1098/rspb.2016.0841
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.1098/rspb.2016.0841`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

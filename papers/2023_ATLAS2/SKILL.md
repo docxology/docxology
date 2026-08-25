@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management"
 description: "The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal ..."
 tags: ["atlas2"]
 domain: "Cognitive Security"
 citation: "R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, and 1 others (2023). *ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management*. Cognitive Security."
-doi: "10.5281/zenodo.10362561"
+doi: "10.5281/zenodo.10296601"
+artifact_doi: "10.5281/zenodo.10362561"
 ---
 
 # ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management
@@ -39,10 +41,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.10362561
+- Canonical DOI: 10.5281/zenodo.10296601
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-05-30T18:56:17Z
+- Artifact DOI: 10.5281/zenodo.10362561
 
 ## Prerequisites
 
@@ -54,6 +57,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.10362561`
+1. Reference the DOI for citation: `10.5281/zenodo.10296601`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

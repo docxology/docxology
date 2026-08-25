@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "CognitiveIntegrity"
 description: "The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems. Part 1 of 3 covers theore..."
 tags: ["cognitive-integrity", "multiagent-security", "cognitive-security", "active-inference", "category-theory", "formal-foundations", "threat-modeling"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.18364118
+- Canonical DOI: 10.5281/zenodo.18364118
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:26:08Z

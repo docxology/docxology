@@ -1,8 +1,8 @@
 {
   "title": "Slides for Iris",
   "version": "1",
-  "doi": "10.5281/zenodo.7838653",
-  "doi_url": "https://doi.org/10.5281/zenodo.7838653",
+  "doi": "10.5281/zenodo.7838652",
+  "doi_url": "https://doi.org/10.5281/zenodo.7838652",
   "zenodo_record": "https://zenodo.org/records/7838653",
   "record_id": "7838653",
   "publication_date": "2023-04-17",
@@ -52,5 +52,7 @@
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.7838653",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7838653"
 }

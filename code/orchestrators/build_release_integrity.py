@@ -23,6 +23,11 @@ DEPLOYMENT_COMPARE_EXCLUDES = (
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from public_integrity import scan_public_files  # noqa: E402
 
+# Keep the release envelope coupled to the same source-revision policy as the
+# Pages manifest.  A stale manifest must not be able to mint a fresh-looking
+# release-integrity envelope merely because its stored SHA is reused below.
+import build_pages_artifact  # noqa: E402
+
 SOURCE_FILES = (
     "pages/BIBLIOGRAPHY.md",
     "pages/SOFTWARE.md",
@@ -40,7 +45,6 @@ GENERATOR_FILES = (
     "code/orchestrators/build_agent_index.py",
     "code/orchestrators/build_coverage_exceptions.py",
     "code/orchestrators/classify_repositories.py",
-    "code/orchestrators/verify_live_site.py",
     "code/orchestrators/audit_assets.py",
     "code/src/public_integrity.py",
 )
@@ -130,32 +134,25 @@ def deployment_pending_reasons(
     return reasons
 
 
+def validated_pages_source_commit(pages: dict) -> str:
+    """Return the Pages source revision only after the manifest policy accepts it."""
+    return build_pages_artifact.validate_source_commit_at_generation(
+        pages.get("source_commit_at_generation")
+    )
+
+
 def build_payload() -> dict:
     current = json.loads((REPO_ROOT / "data/current-counts.json").read_text(encoding="utf-8"))
     pages = json.loads((REPO_ROOT / "data/pages-artifact-manifest.json").read_text(encoding="utf-8"))
-    live_path = latest_report("live_site_verification")
-    live = json.loads(live_path.read_text(encoding="utf-8")) if live_path else {}
     source_hashes = {path: sha256(REPO_ROOT / path) for path in SOURCE_FILES if (REPO_ROOT / path).is_file()}
     generator_hashes = {path: sha256(REPO_ROOT / path) for path in GENERATOR_FILES if (REPO_ROOT / path).is_file()}
-    deployment = live.get("deployment", {})
-    source_commit = pages.get("source_commit_at_generation") or git_value("rev-parse", "HEAD")
+    source_commit = validated_pages_source_commit(pages)
     deployment_payload = {
-        "commit": deployment.get("head_sha") or deployment.get("commit") or source_commit,
-        "workflow_run_id": deployment.get("workflow_run_id"),
-        "workflow_url": deployment.get("workflow_url"),
-        "pages_status": live.get("github_pages", {}).get("status"),
-        "verification_report": str(live_path.relative_to(REPO_ROOT)) if live_path else None,
-        "verification_generated_at": live.get("generated_at"),
-        "verification_overall_ok": live.get("overall_ok"),
-        "verified_routes": f"{live.get('passing', 0)}/{live.get('checked_urls', 0)}",
+        "status": "pending_post_deploy_attestation",
+        "candidate_source_commit": source_commit,
+        "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
+        "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA.",
     }
-    pending_reasons = deployment_pending_reasons(
-        source_commit,
-        deployment_payload,
-        deployed_content_differs=deployed_content_differs(deployment_payload["commit"]),
-    )
-    deployment_payload["deployment_pending"] = bool(pending_reasons)
-    deployment_payload["deployment_pending_reasons"] = pending_reasons
     return {
         "schema_version": "1.0",
         "generated_at": current.get("generated_at"),
@@ -199,7 +196,7 @@ def main() -> None:
     parser.add_argument(
         "--require-deployed",
         action="store_true",
-        help="Fail when the envelope explicitly reports deployment_pending",
+        help="Fail with the post-deploy attestation command; this pre-deploy envelope never asserts deployment success",
     )
     args = parser.parse_args()
     payload = build_payload()
@@ -210,12 +207,10 @@ def main() -> None:
             pass
     rendered = json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
     if args.require_deployed:
-        reasons = list(payload["deployment"].get("deployment_pending_reasons", []))
-        if current_worktree_has_release_changes():
-            reasons.append("working tree has uncommitted release changes")
-        if reasons:
-            detail = "; ".join(reasons)
-            raise SystemExit(f"release deployment pending: {detail}")
+        raise SystemExit(
+            "release deployment is verified only by a post-deploy attestation; run "
+            "code/orchestrators/attest_release.py --apply --commit <deployment-sha>"
+        )
     if args.check:
         if not OUT.exists() or OUT.read_text(encoding="utf-8") != rendered:
             raise SystemExit(f"stale release integrity manifest: {OUT.relative_to(REPO_ROOT)}")

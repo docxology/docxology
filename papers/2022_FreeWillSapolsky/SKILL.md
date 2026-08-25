@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "FreeWillSapolsky"
 description: "In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will. Topics covered include neuroscience, genetics, environmental..."
 tags: ["free-will", "determinism", "robert-sapolsky", "neuroscience", "behavioral-genetics", "philosophy", "consciousness", "moral-philosophy"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.7394900
+- Canonical DOI: 10.5281/zenodo.7394900
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:55Z

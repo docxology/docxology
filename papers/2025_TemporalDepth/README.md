@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 TemporalDepth
 
 **Daniel A. Friedman, et al.** (2025) · *Frontiers in Psychology*

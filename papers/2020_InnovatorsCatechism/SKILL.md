@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "InnovatorsCatechism"
 description: "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to..."
 tags: ["operations-orders", "innovation-teams", "innovator's-catechism", "team-alignment", "military-transfer", "organizational-design", "hackathons"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.4383229
+- Canonical DOI: 10.5281/zenodo.4383229
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:46Z

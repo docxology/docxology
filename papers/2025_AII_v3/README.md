@@ -1,4 +1,6 @@
-# 📄 AII_v3
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🌍 AII_v3
 
 **Active Inference Institute** (2025) · *Zenodo*
 

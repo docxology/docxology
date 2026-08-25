@@ -22,9 +22,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 try:
-    from report_paths import dated_report_path, generated_timestamp, latest_report
+    from report_paths import dated_report_path, generated_timestamp, latest_report, source_commit, source_worktree_state
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import dated_report_path, generated_timestamp, latest_report
+    from .report_paths import dated_report_path, generated_timestamp, latest_report, source_commit, source_worktree_state
 
 OUT = dated_report_path("external_links", "json")
 
@@ -188,6 +188,8 @@ def build_report(timeout: int, workers: int, limit: int | None) -> dict:
     results.sort(key=lambda row: row["url"])
     return {
         "generated_at": generated_timestamp(),
+        "source_commit": source_commit(),
+        **source_worktree_state(),
         "scope": SCAN_FILES,
         "note": "Network freshness report. HTTP 403/429 may indicate bot protection or rate limiting, not necessarily broken content.",
         "total_unique_urls": len(sources),

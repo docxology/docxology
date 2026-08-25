@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 A Domain Language for Specifying Controlled Methods
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

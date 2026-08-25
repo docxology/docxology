@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 GeneExpressionForagers
 
 **Daniel A. Friedman, Brian R. Johnson, Timothy A. Linksvayer** (2020) · *Communications Biology*

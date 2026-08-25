@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 ResNei
 
 **Janna Lumiruusu, Daniel Friedman, Vladimir Baulin, Andrew Pashea, Shagor Rahman** (2025) · *Zenodo*

@@ -1,4 +1,6 @@
-# 📄 AntsAging
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎥 AntsAging
 
 **Daniel A. Friedman** (2023) · *Presentation*
 

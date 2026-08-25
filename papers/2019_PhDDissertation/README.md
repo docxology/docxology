@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 PhDDissertation
 
 **Daniel Ari Friedman** (2019) · *Stanford University*

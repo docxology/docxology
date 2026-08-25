@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
@@ -16,9 +18,8 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
@@ -26,18 +27,18 @@
 
 ## Artifacts
 
+- GitHub repository: [ActiveInferenceInstitute/active_inference_power](https://github.com/ActiveInferenceInstitute/active_inference_power)
+- GitHub release: [v1.0.0](https://github.com/ActiveInferenceInstitute/active_inference_power/releases/tag/v1.0.0)
 - DOI: [10.5281/zenodo.21695160](https://doi.org/10.5281/zenodo.21695160)
 - Zenodo record: [https://zenodo.org/records/21695160](https://zenodo.org/records/21695160)
 - PDF: [active_inference_power_v1.0.0.pdf](active_inference_power_v1.0.0.pdf)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/21695160)
+- PDF SHA-256: 24fa25a4f29affcfd92c8c001ff6487a0c36960c6b4f38ed4419984fc8743cbf
 
 ## Citation
 
 > Daniel Ari Friedman (2026). *Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings*. Zenodo. DOI: 10.5281/zenodo.21695160. URL: https://doi.org/10.5281/zenodo.21695160.
 
 ## Related
-
-- GitHub release: https://github.com/ActiveInferenceInstitute/active_inference_power/releases/tag/v1.0.0
 
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
 - [All Papers](../README.md)

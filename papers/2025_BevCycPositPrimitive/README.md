@@ -1,8 +1,10 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧬 BevCyc - posit on primitive drivers of creatures
 
 **andrew djuwidja, Daniel Friedman** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14737076-blue)](https://doi.org/10.5281/zenodo.14737076)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14737075-blue)](https://doi.org/10.5281/zenodo.14737075)
 
 ---
 
@@ -25,14 +27,15 @@
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.14737076](https://doi.org/10.5281/zenodo.14737076)
+- DOI: [10.5281/zenodo.14737075](https://doi.org/10.5281/zenodo.14737075)
+- Artifact DOI: [10.5281/zenodo.14737076](https://doi.org/10.5281/zenodo.14737076)
 - Zenodo record: [https://zenodo.org/records/14737076](https://zenodo.org/records/14737076)
 - PDF: [bevcyc.pdf](bevcyc.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/14737076)
 
 ## Citation
 
-> andrew djuwidja, Daniel Friedman (2025). *BevCyc - posit on primitive drivers of creatures*. Zenodo. DOI: 10.5281/zenodo.14737076. URL: https://doi.org/10.5281/zenodo.14737076.
+> andrew djuwidja, Daniel Friedman (2025). *BevCyc - posit on primitive drivers of creatures*. Zenodo. DOI: 10.5281/zenodo.14737075. URL: https://doi.org/10.5281/zenodo.14737075.
 
 ## Related
 

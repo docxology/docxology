@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition"
 description: "This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline. The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) thr..."
 tags: ["gold-refining", "manuscript-composition", "mega-madlib", "token-injection", "scientific-purity", "assaying", "karat-grading"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20931955
+- Canonical DOI: 10.5281/zenodo.20931955
 - PDF SHA-256: 3643178951b267632e607606b6daaba21ea75d8f7590899948b5999d1854198b
 - Pairing confidence: strong
 - Last checked: 2026-06-26T15:16:06Z

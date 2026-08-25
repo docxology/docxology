@@ -1,31 +1,36 @@
-# White Line: A Typed Ledger for the Edge of the Claim
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 💻 White Line: A Typed Ledger for the Edge of the Claim
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21754241.svg)](https://doi.org/10.5281/zenodo.21754241)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21754241-blue)](https://doi.org/10.5281/zenodo.21754241)
 
 ---
 
 ## Abstract
 
-A typed ledger for absence: epistemic gaps, ethical restraint, and contemplative negative space. It records what is missing, withheld, or unresolved under a total caution order, decays stale namings past their review horizons, and refuses to infer why anything is absent. Withholding is recorded as a boundary, never mined as missing evidence. Subtitle: Keeping missing evidence, ethical boundaries, and open questions from becoming unsupported claims Code is MIT licensed; prose and figures are CC BY 4.0. See LICENSE in the repository.
+> A typed ledger for absence: epistemic gaps, ethical restraint, and contemplative negative space. It records what is missing, withheld, or unresolved under a total caution order, decays stale namings past their review horizons, and refuses to infer why anything is absent. Withholding is recorded as a boundary, never mined as missing evidence. Subtitle: Keeping missing evidence, ethical boundaries...
 
 ## Keywords
 
-absence · epistemic gaps · missing evidence · withheld material · uncertainty · negative results · research ethics · open science
+`absence` · `epistemic gaps` · `missing evidence` · `withheld material` · `uncertainty` · `negative results` · `research ethics` · `open science`
+
+## Methods
+
+- Literature review
+- Theoretical analysis
+
+## Key Findings
+
+- See full paper for detailed findings and analysis
 
 ## Artifacts
 
-| Field | Value |
-|------|-------|
-| **DOI** | [10.5281/zenodo.21754241](https://doi.org/10.5281/zenodo.21754241) |
-| **Published** | 2026-08-02 |
-| **Version** | 0.7.0 |
-| **Zenodo record** | https://zenodo.org/records/21754241 |
-
-## Files
-
-- `white_line_combined.pdf` - Zenodo PDF
+- DOI: [10.5281/zenodo.21754241](https://doi.org/10.5281/zenodo.21754241)
+- Zenodo record: [https://zenodo.org/records/21754241](https://zenodo.org/records/21754241)
+- PDF: [white_line_combined.pdf](white_line_combined.pdf)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/21754241)
 
 ## Citation
 
@@ -33,5 +38,5 @@ absence · epistemic gaps · missing evidence · withheld material · uncertaint
 
 ## Related
 
-- Zenodo record: https://zenodo.org/records/21754241
-- [Full Bibliography](../../pages/BIBLIOGRAPHY.md) · [All Papers](../README.md)
+- [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
+- [All Papers](../README.md)

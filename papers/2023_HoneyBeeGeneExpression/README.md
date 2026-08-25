@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 HoneyBeeGeneExpression
 
 **William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson** (2023) · *Zenodo*

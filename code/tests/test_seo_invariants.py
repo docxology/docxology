@@ -38,7 +38,7 @@ def test_sitemap_matches_policy():
 
 
 def test_redirect_stub_list_covers_known_stubs():
-    rels = {rel for rel, _ in REDIRECT_STUBS}
+    rels = {stub.path for stub in REDIRECT_STUBS}
     assert "about.html" in rels
     assert "nft.html" in rels
 
@@ -53,6 +53,20 @@ def test_work_descriptions_not_truncated_midword():
 
 def test_public_html_security_metadata():
     assert check_public_html_security(REPO_ROOT) == []
+
+
+def test_public_html_security_ignores_local_dependency_html(tmp_path):
+    """The same scope used by the SEO writer is used by the read-only gate."""
+    (tmp_path / "index.html").write_text(
+        '<meta http-equiv="Content-Security-Policy" content="frame-src https://www.youtube-nocookie.com">'
+        '<meta name="referrer" content="strict-origin-when-cross-origin">',
+        encoding="utf-8",
+    )
+    dependency_page = tmp_path / ".venv" / "lib" / "package" / "dashboard.html"
+    dependency_page.parent.mkdir(parents=True)
+    dependency_page.write_text("<html><head></head></html>", encoding="utf-8")
+
+    assert check_public_html_security(tmp_path) == []
 
 
 def test_meta_csp_carries_no_header_only_directives():
@@ -147,3 +161,19 @@ def test_paper_pages_flags_json_ld(tmp_path):
     )
     errors = check_paper_pages(tmp_path)
     assert any("JSON-LD" in e for e in errors)
+
+
+def test_paper_pages_require_noindex_follow(tmp_path):
+    (tmp_path / "data").mkdir()
+    (tmp_path / "data" / "works.json").write_text(
+        json.dumps({"works": [{"docs_path": "papers/2026_X", "citation_key": "Friedman2026X001"}]}),
+        encoding="utf-8",
+    )
+    page = tmp_path / "papers" / "2026_X" / "index.html"
+    page.parent.mkdir(parents=True)
+    page.write_text(
+        '<html><head><link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026X001.html"></head></html>',
+        encoding="utf-8",
+    )
+
+    assert any("expected robots noindex, follow" in error for error in check_paper_pages(tmp_path))

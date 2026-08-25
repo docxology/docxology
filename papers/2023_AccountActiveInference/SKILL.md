@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "AccountActiveInference"
 description: "In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more li..."
 tags: ["active-inference", "generative-modeling", "accounting-metaphor", "active-accountants", "cognitive-modeling", "epistemic-agency", "model-development"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.8415312
+- Canonical DOI: 10.5281/zenodo.8415312
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:08Z

@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 AccessibilityActiveInference
 
 **Daniel A. Friedman, Active Inference Institute** (2025) · *Zenodo*

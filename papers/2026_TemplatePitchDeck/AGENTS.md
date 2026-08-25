@@ -1,3 +1,5 @@
+<!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
+
 # AGENTS.md — template_pitch_deck: Reproducible, Validated Pitch-Deck Generation
 
 **Paper**: template_pitch_deck: Reproducible, Validated Pitch-Deck Generation (2026)
@@ -14,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Misinformation detection, Trust frameworks
+- Extracts methods: Literature review, Theoretical analysis
 - Identifies findings: See full paper for detailed findings and analysis
 - Maps contributions to Computational literature
 
@@ -32,8 +34,8 @@
 
 ## Extraction Log
 
-| Date | Agent | Action | Status |
-|------|-------|--------|--------|
-| 2026-07-30 | ARCHIVIST | Cataloged metadata | ✅ |
-| 2026-07-30 | RESEARCHER | Extracted methods/findings | ✅ |
-| 2026-07-30 | EDUCATOR | Generated documentation | ✅ |
+| Source | Agent | Action | Status |
+|--------|-------|--------|--------|
+| Metadata | ARCHIVIST | Cataloged metadata | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | EDUCATOR | Generated documentation | ✅ |

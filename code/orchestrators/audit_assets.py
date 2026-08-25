@@ -31,6 +31,19 @@ PATTERNS = [
     ("hero-art", "assets/hero-art/*.webp", 320_000),
 ]
 
+# `publications.html` intentionally ships a complete server-rendered table and
+# inline CollectionPage JSON-LD so crawlers and no-JavaScript visitors receive
+# the bibliography without a client fetch.  The normal root-HTML budget is
+# 500 KB; this narrowly scoped, reviewable 600 KB exception preserves that
+# crawlability contract instead of pushing the page toward client-only render.
+ASSET_BUDGET_EXCEPTIONS: dict[str, dict[str, object]] = {
+    "publications.html": {
+        "budget_bytes": 600_000,
+        "reason": "SSR bibliography table and inline CollectionPage JSON-LD required for crawlability.",
+        "approved_in": "docs/operations/github-pages-artifact.md",
+    },
+}
+
 # The generated manifest describes the audit itself and is rebuilt after all
 # reports. Counting it here would create a self-referential size-report cycle:
 # manifest size -> asset report -> latest-report pointer -> manifest size.
@@ -55,13 +68,17 @@ def iter_assets() -> list[dict]:
             if relative in EXCLUDED_ASSETS:
                 continue
             size = path.stat().st_size
+            exception = ASSET_BUDGET_EXCEPTIONS.get(relative)
+            effective_budget = int(exception["budget_bytes"]) if exception else budget
             assets.append(
                 {
                     "path": relative,
                     "kind": kind,
                     "bytes": size,
-                    "budget_bytes": budget,
-                    "ok": size <= budget,
+                    "baseline_budget_bytes": budget,
+                    "budget_bytes": effective_budget,
+                    "budget_exception": exception,
+                    "ok": size <= effective_budget,
                 }
             )
     return assets
@@ -100,6 +117,7 @@ def render(generated_at: str | None = None) -> str:
         "generated_at": generated_at or generated_timestamp(),
         "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
         "asset_count": len(assets),
+        "budget_exceptions": ASSET_BUDGET_EXCEPTIONS,
         "warnings": len(warnings),
         "total_bytes": sum(item["bytes"] for item in assets),
         "largest": sorted(assets, key=lambda item: item["bytes"], reverse=True)[:20],

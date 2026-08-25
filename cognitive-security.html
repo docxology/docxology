@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Is Cognitive Security? Theory, Threat Models, and Multi-Agent Defense</title>
     <meta name="description" content="Cognitive security protects human and artificial sensemaking against adversarial narrative manipulation, epistemic corruption, and coordination degradation.">
+    <meta name="author" content="Daniel Ari Friedman">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://danielarifriedman.com/cognitive-security.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
@@ -15,11 +22,7 @@
     <link rel="me" href="https://youtube.com/@danielarifriedman">
     <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
-    <link rel="canonical" href="https://danielarifriedman.com/cognitive-security.html">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="article">
     <meta property="og:title" content="What Is Cognitive Security? Theory, Threat Models, and Multi-Agent Defense">
     <meta property="og:description" content="Cognitive security protects human and artificial sensemaking against adversarial narrative manipulation, epistemic corruption, and coordination degradation.">
@@ -36,12 +39,8 @@
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <meta name="theme-color" content="#0c0c0e">
     <style>
-        .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}
-        .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}
-        .breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}
-        .breadcrumb a{color:var(--silver-bright);text-decoration:none}
-        .breadcrumb a:hover{text-decoration:underline}
-        .breadcrumb [aria-current=page]{color:var(--text-secondary)}
+.breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
+
         .pillar-content{max-width:880px;margin:0 auto;padding:7.5rem 1.5rem 4rem;line-height:1.8;color:var(--text-primary)}
         .pillar-header{margin-bottom:2.5rem;text-align:left;border-bottom:1px solid var(--border);padding-bottom:1.5rem}
         .pillar-header h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.2rem,4.5vw,3.4rem);line-height:1.15;margin-bottom:1rem;color:#fff}
@@ -176,16 +175,20 @@
         <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
         <div class="nav-links">
             <a href="index.html#about">About</a>
+            <a href="index.html#research">Research</a>
             <a href="publications.html">Publications</a>
-            <a href="domains.html">Domains</a>
+            <a href="works/">Works</a>
+            <a href="domains.html" class="active">Domains</a>
             <a href="software.html">Software</a>
             <a href="videos.html">Videos</a>
             <a href="art.html">Art</a>
             <a href="media.html">Media</a>
             <a href="collaborators.html">Collaborators</a>
+            <a href="resume/resume.html">CV</a>
             <a href="search.html">Search</a>
             <a href="catalog.html">Data Catalog</a>
             <a href="evidence.html">Evidence</a>
+            <a href="reproducibility.html">Reproducibility</a>
             <a href="cite-verify.html">Cite</a>
             <a href="discovery.html">Discovery</a>
             <a href="data/agent-index.json">Agent Map</a>
@@ -281,8 +284,9 @@
             <a href="cite-verify.html">Cite &amp; Verify</a>
         </div>
     </footer>
-    <script src="/js/tts-controls.js?v=20260712" defer></script>
-    <script src="/js/interactive.js?v=20260712" defer></script>
-    <script src="/js/menu-esc.js?v=20260712" defer></script>
+<script src="/js/search-utils.js?v=20260813"></script>
+<script src="/js/tts-controls.js?v=20260813" defer></script>
+<script src="/js/interactive.js?v=20260813" defer></script>
+    <script src="/js/menu-esc.js?v=20260813" defer></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 AntGenetics
 
 **Daniel A. Friedman, Deborah M. Gordon** (2016) · *Annual Review of Neuroscience*

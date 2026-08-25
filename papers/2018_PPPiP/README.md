@@ -1,4 +1,6 @@
-# 📄 PPPiP
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎨 PPPiP
 
 **Alexandra Mikhailova, Daniel A. Friedman** (2018) · *Arts*
 

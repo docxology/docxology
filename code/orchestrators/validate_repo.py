@@ -21,6 +21,9 @@ try:
 except ImportError:  # pragma: no cover - package import path
     from .report_paths import latest_report, latest_subdir_file
 
+from release_evidence import is_ephemeral_release_evidence_path, validate_attestation  # noqa: E402
+from generation_plan import LOCAL_GENERATION_STEPS, validate_generation_plan  # noqa: E402
+
 
 REQUIRED_JSON_FILES: list[str] = [
     "bibliography.csl.json",
@@ -34,6 +37,7 @@ REQUIRED_JSON_FILES: list[str] = [
     "data/artworks-index.json",
     "data/videos-index.json",
     "data/works.json",
+    "data/video-pages-manifest.json",
     "data/work-enrichment.json",
     "data/software-ld.json",
     "data/software.json",
@@ -63,6 +67,20 @@ OPTIONAL_REPORT_PATTERNS: list[tuple[str, str]] = [
     ("pages_artifact_growth_*.json", "Pages artifact growth"),
 ]
 
+# Repository validation deliberately scans hand-authored docs and code examples,
+# but never virtual environments, dependency installations, or local build
+# caches.  Those trees can contain third-party HTML/Markdown whose links and
+# JSON-LD are not site artifacts; allowing an optional QA extra to alter this
+# scope would make the release gate environment-dependent.
+IGNORED_VALIDATION_PATH_PARTS = frozenset(
+    {".git", "_site", ".venv", ".pytest_cache", "__pycache__", "node_modules"}
+)
+
+
+def is_validation_source_path(path: Path) -> bool:
+    """Whether a discovered text file belongs to the checkout's source scope."""
+    return not bool(IGNORED_VALIDATION_PATH_PARTS.intersection(path.parts))
+
 
 def run(cmd: list[str]) -> None:
     subprocess.run(cmd, cwd=REPO_ROOT, check=True)
@@ -81,6 +99,16 @@ def run_resume_check() -> None:
         cwd=REPO_ROOT,
         check=True,
     )
+
+
+def run_local_generation_checks() -> None:
+    """Run the mechanically paired no-write checks for every local writer."""
+    validate_generation_plan()
+    for step in LOCAL_GENERATION_STEPS:
+        if step.script == "build_resume.py":
+            run_resume_check()
+            continue
+        run(["python3", f"code/orchestrators/{step.script}", *step.check_args])
 
 
 def _load_json_payload(
@@ -175,7 +203,7 @@ def validate_json_ld() -> None:
     pattern = re.compile(r"<script\s+type=[\"']application/ld\+json[\"']>(.*?)</script>", re.S | re.I)
     count = 0
     for path in sorted(REPO_ROOT.rglob("*.html")):
-        if ".git" in path.parts or "_site" in path.parts:
+        if not is_validation_source_path(path):
             continue
         text = path.read_text(encoding="utf-8")
         for block in pattern.findall(text):
@@ -200,7 +228,7 @@ def validate_local_links() -> None:
     files = list(REPO_ROOT.rglob("*.md")) + list(REPO_ROOT.rglob("*.html")) + [REPO_ROOT / "llms.txt"]
     missing: list[str] = []
     for path in files:
-        if ".git" in path.parts or "_site" in path.parts:
+        if not is_validation_source_path(path):
             continue
         # full_text.md files are extracted paper texts with internal academic references
         # (to figures, source code, manuscript sections) that don't exist as local files.
@@ -268,6 +296,26 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Fail when optional report artifacts are missing or invalid.",
     )
+    parser.add_argument(
+        "--release",
+        action="store_true",
+        help="Require fresh, revision-bound evidence and a post-deploy attestation for a clean release commit.",
+    )
+    parser.add_argument(
+        "--release-commit",
+        help="Commit SHA to validate for --release (default: HEAD).",
+    )
+    parser.add_argument(
+        "--deployment-attestation",
+        type=Path,
+        help="Post-deploy receipt created by attest_release.py; required with --release.",
+    )
+    parser.add_argument(
+        "--max-report-age-days",
+        type=int,
+        default=30,
+        help="Maximum evidence/attestation age for --release (default: 30).",
+    )
     return parser.parse_args()
 
 
@@ -275,51 +323,120 @@ def _strict_reports_enabled(cli_value: bool) -> bool:
     return cli_value or os.environ.get("DOCXOLOGY_STRICT_REPORTS", "").lower() in {"1", "true", "yes", "on"}
 
 
+def _resolve_release_commit(value: str | None) -> str:
+    requested = value or "HEAD"
+    result = subprocess.run(
+        ["git", "rev-parse", "--verify", f"{requested}^{{commit}}"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        raise SystemExit(f"Unable to resolve release commit: {requested}")
+    return result.stdout.strip()
+
+
+def _head_commit() -> str:
+    return _resolve_release_commit("HEAD")
+
+
+def release_commit_errors(release_commit: str, head_commit: str) -> list[str]:
+    """Return the candidate-checkout invariant without querying Git twice."""
+    if release_commit == head_commit:
+        return []
+    return [
+        "--release-commit must resolve to the current HEAD; validate another SHA from a checkout at that exact commit"
+    ]
+
+
+def _release_worktree_errors() -> list[str]:
+    """Require clean release source while allowing local output and fresh receipts."""
+    result = subprocess.run(
+        ["git", "status", "--porcelain=v1", "-z", "--untracked-files=all"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        return ["unable to inspect release worktree"]
+    changed: list[str] = []
+    records = result.stdout.split(b"\0")
+    index = 0
+    while index < len(records):
+        record = records[index]
+        index += 1
+        if not record:
+            continue
+        if len(record) < 4 or record[2:3] != b" ":
+            return ["unable to parse NUL-delimited release worktree status"]
+        status = record[:2].decode("ascii", errors="replace")
+        raw_paths = [os.fsdecode(record[3:])]
+        if "R" in status or "C" in status:
+            if index >= len(records) or not records[index]:
+                return ["unable to parse renamed release worktree status"]
+            raw_paths.append(os.fsdecode(records[index]))
+            index += 1
+        for path in raw_paths:
+            if "\\" in path:
+                changed.append(path)
+                continue
+            # Do not whitelist an ambiguous current-directory spelling.
+            if path.startswith("./"):
+                changed.append(path)
+                continue
+            if path == "_site" or path.startswith("_site/"):
+                continue
+            if is_ephemeral_release_evidence_path(path):
+                continue
+            changed.append(path)
+    if not changed:
+        return []
+    shown = ", ".join(changed[:10])
+    suffix = " …" if len(changed) > 10 else ""
+    return [f"release source worktree is not clean: {shown}{suffix}"]
+
+
+def validate_release_evidence(args: argparse.Namespace) -> None:
+    """Fail closed unless a deployed SHA has a current content-addressed receipt."""
+    if args.max_report_age_days < 0:
+        raise SystemExit("--max-report-age-days must be non-negative")
+    errors = _release_worktree_errors()
+    if not args.deployment_attestation:
+        errors.append("--release requires --deployment-attestation from attest_release.py")
+    else:
+        attestation = args.deployment_attestation
+        if not attestation.is_absolute():
+            attestation = REPO_ROOT / attestation
+        commit = _resolve_release_commit(args.release_commit)
+        errors.extend(release_commit_errors(commit, _head_commit()))
+        errors.extend(
+            validate_attestation(
+                REPO_ROOT,
+                attestation,
+                commit,
+                max_age_days=args.max_report_age_days,
+            )
+        )
+    if errors:
+        raise SystemExit("Release evidence validation failed:\n" + "\n".join(f"  - {error}" for error in errors))
+    print("Release evidence validation completed (fresh reports and deployed-SHA attestation verified)")
+
+
 def main() -> None:
     args = parse_args()
-    strict_reports = _strict_reports_enabled(args.strict_reports)
+    strict_reports = _strict_reports_enabled(args.strict_reports) or args.release
 
-    run(["python3", "code/orchestrators/sync_publications_html.py"])
-    run(["python3", "code/orchestrators/sync_software_html.py"])
-    run(["python3", "code/orchestrators/export_bibliography.py", "--check"])
-    run(["python3", "code/orchestrators/export_agent_data.py", "--check"])
-    run(["python3", "code/orchestrators/build_agent_index.py", "--check"])
-    run(["python3", "code/orchestrators/build_coverage_exceptions.py", "--check"])
-    run(["python3", "code/orchestrators/classify_repositories.py", "--check"])
-    run_resume_check()
-    run(["python3", "code/orchestrators/build_domain_pages.py", "--check"])
-    run(["python3", "code/orchestrators/build_work_pages.py", "--check"])
-    run(["python3", "code/orchestrators/build_video_pages.py", "--check"])
-    run(["python3", "code/orchestrators/build_paper_pages.py", "--check"])
-    run(["python3", "code/orchestrators/build_catalog.py", "--check"])
-    run(["python3", "code/orchestrators/build_exports_page.py", "--check"])
-    run(["python3", "code/orchestrators/build_updates_page.py", "--check"])
-    run(["python3", "code/orchestrators/build_evidence_page.py", "--check"])
-    run(["python3", "code/orchestrators/build_reproducibility_ledger.py", "--check"])
-    run(["python3", "code/orchestrators/build_current_counts.py", "--check"])
-    run(["python3", "code/orchestrators/sync_site_facts.py", "--check"])
-    run(["python3", "code/orchestrators/generate_og_images.py", "--check"])
-    run(["python3", "code/orchestrators/build_reconciliation_report.py", "--check"])
-    run(["python3", "code/orchestrators/build_generated_manifest.py", "--check"])
+    run_local_generation_checks()
     run(["python3", "code/orchestrators/build_github_inventory.py", "--check"])
     run(["python3", "code/orchestrators/sync_paired_publications.py", "--check"])
     run(["python3", "code/orchestrators/audit_publication_skills.py", "--check"])
-    run(["python3", "code/orchestrators/sync_scholar_metrics.py", "--check"])
-    run(["python3", "code/orchestrators/build_search_index.py", "--check"])
-    run(["python3", "code/orchestrators/generate_feed.py", "--check"])
-    run(["python3", "code/orchestrators/audit_assets.py", "--check"])
-    run(["python3", "code/orchestrators/accessibility_audit.py", "--check"])
-    run(["python3", "code/orchestrators/build_sitemap.py", "--check"])
-    run(["python3", "code/orchestrators/build_image_sitemap.py", "--check"])
-    run(["python3", "code/orchestrators/build_artwork_index.py", "--check"])
-    run(["python3", "code/orchestrators/ensure_agent_navigation.py", "--check"])
-    run(["python3", "code/orchestrators/build_pages_artifact.py", "--check-size-only", "--check-manifest"])
-    run(["python3", "code/orchestrators/build_release_integrity.py", "--check"])
     run(["python3", "code/orchestrators/check_external_links.py", "--check"])
     run(["python3", "code/orchestrators/build_external_link_triage.py", "--check"])
     run(["python3", "code/orchestrators/browser_smoke.py", "--check"])
     run(["python3", "code/orchestrators/verify_live_site.py", "--check"])
     run(["python3", "code/orchestrators/refresh_public_source_inventory.py", "--check"])
+    run(["python3", "code/orchestrators/build_public_source_review.py", "--check"])
     run(["python3", "code/orchestrators/visual_qa.py", "--check"])
     validate_json_files(strict_reports)
     validate_citation_cff()
@@ -333,6 +450,8 @@ def main() -> None:
     from public_integrity import validate_public_files
 
     validate_public_files(REPO_ROOT)
+    if args.release:
+        validate_release_evidence(args)
     print("Repository validation completed")
 
 

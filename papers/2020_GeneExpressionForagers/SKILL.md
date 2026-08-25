@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "GeneExpressionForagers"
 description: "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compar..."
 tags: ["gene-expression", "foragers", "rna-seq", "division-of-labor", "transcriptomics", "harvester-ants", "behavioral-castes", "pogonomyrmex-barbatus"]
 domain: "Entomology"
 citation: "Daniel A. Friedman, Brian R. Johnson, Timothy A. Linksvayer (2020). *GeneExpressionForagers*. Entomology."
+doi: "10.1038/s42003-020-0813-8"
 ---
 
 # GeneExpressionForagers
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.1038/s42003-020-0813-8
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.1038/s42003-020-0813-8`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

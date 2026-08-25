@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "ActiveInferenceOntology"
 description: "We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provide..."
 tags: ["active-inference-ontology", "knowledge-graph", "free-energy-principle", "ontology-development", "sumo", "knowledge-representation", "open-science"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.6320574
+- Canonical DOI: 10.5281/zenodo.6320574
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:54Z

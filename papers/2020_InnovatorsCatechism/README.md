@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ InnovatorsCatechism
 
 **Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight** (2020) · *Zenodo*

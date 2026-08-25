@@ -20,9 +20,9 @@ CURRENT_COUNTS_JSON = REPO_ROOT / "data" / "current-counts.json"
 AGENT_INDEX_JSON = REPO_ROOT / "data" / "agent-index.json"
 
 try:
-    from report_paths import dated_report_path, generated_timestamp, latest_report
+    from report_paths import dated_report_path, generated_timestamp, latest_report, source_worktree_state
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import dated_report_path, generated_timestamp, latest_report
+    from .report_paths import dated_report_path, generated_timestamp, latest_report, source_worktree_state
 
 OUT = dated_report_path("live_site_verification", "json")
 BASE = "https://danielarifriedman.com/"
@@ -483,6 +483,7 @@ def build_report(timeout: int) -> dict:
         "deployment": pages.get("deployment_run", {}),
         "source_commit": source_commit,
         "source_dirty": source_dirty,
+        **source_worktree_state(),
         "deployment_sha_mismatch": deployment_sha_mismatch,
         "deployment_pending_reason": (
             "local source is dirty or latest successful Pages deployment is for a different source commit"

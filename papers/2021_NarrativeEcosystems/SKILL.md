@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "NarrativeEcosystems"
 description: "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-..."
 tags: ["narrative-ecosystems", "active-inference", "remote-teams", "onft-framework", "epistemic-foraging", "niche-construction", "collective-intelligence", "systems-engineering"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: Not assigned
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z

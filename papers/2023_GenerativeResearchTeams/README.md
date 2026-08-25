@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 GenerativeResearchTeams
 
 **Daniel Friedman, Jakub Smékal** (2023) · *Zenodo*

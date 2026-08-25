@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "DistributedScience"
 description: "The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics. We formalize the scientific process as multi-scale Active Inference, where individual rese..."
 tags: ["distributed-science", "multi-scale-active-inference", "scientific-process", "free-energy-principle", "meta-science", "collective-intelligence", "cultural-evolution", "distributed-cognition"]
 domain: "Active Inference"
 citation: "Francesco Balzan, John Campbell, Karl Friston, Maxwell J.D. Ramstead, Daniel Friedman, Axel Constant (2023). *DistributedScience*. Active Inference."
+doi: "10.31219/osf.io/dnw5k"
 ---
 
 # DistributedScience
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.31219/osf.io/dnw5k
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.31219/osf.io/dnw5k`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

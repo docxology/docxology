@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine"
 description: "We present template_newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content. The exemplar edition is The Triplicate, a homage to the historic newspaper of Crescent ..."
 tags: ["newspaper-layout", "typography", "reportlab", "reproducible-publishing", "document-engineering"]
@@ -42,10 +43,10 @@ newspaper of Crescent City, California (founded 1879).
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20533675
+- Canonical DOI: 10.5281/zenodo.20533675
 - PDF SHA-256: 6c693dbd80a4234d30d99f6a890191ff47faf197a0636753fa9785588c550a77
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-19T22:45:41Z
 
 ## Prerequisites
 

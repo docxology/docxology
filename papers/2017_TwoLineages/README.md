@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 TwoLineages
 
 **Daniel A. Friedman, Deborah M. Gordon** (2017) · *Molecular Ecology*

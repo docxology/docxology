@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision"
 description: "Essay mapping Jiang Xueqin's artificial-intelligence critique through William Blake's theory of single vision and Active Inference concepts including pathological prior dominance."
 tags: ["william-blake", "active-inference", "artificial-intelligence", "cognitive-science", "free-energy-principle", "ai-architecture", "consciousness-capture", "generative-models", "newtons-sleep", "single-vision"]
 domain: "Art & Synergetics"
 citation: "Daniel Ari Friedman (2026). *The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision*. Art & Synergetics."
-doi: "10.5281/zenodo.20144984"
+doi: "10.5281/zenodo.20144983"
+artifact_doi: "10.5281/zenodo.20144984"
 ---
 
 # The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision
@@ -38,10 +40,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20144984
+- Canonical DOI: 10.5281/zenodo.20144983
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
+- Artifact DOI: 10.5281/zenodo.20144984
 
 ## Prerequisites
 
@@ -53,6 +56,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.20144984`
+1. Reference the DOI for citation: `10.5281/zenodo.20144983`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -1,8 +1,8 @@
 {
   "title": "Collaborative Writing for Catechism-Based Teams",
   "version": "v1.2",
-  "doi": "10.5281/zenodo.4633921",
-  "doi_url": "https://doi.org/10.5281/zenodo.4633921",
+  "doi": "10.5281/zenodo.4624298",
+  "doi_url": "https://doi.org/10.5281/zenodo.4624298",
   "zenodo_record": "https://zenodo.org/records/4633921",
   "record_id": "4633921",
   "publication_date": "2021-03-19",
@@ -62,5 +62,7 @@
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.4633921",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.4633921"
 }

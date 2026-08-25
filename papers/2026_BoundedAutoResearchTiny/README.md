@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

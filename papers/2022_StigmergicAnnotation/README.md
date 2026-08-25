@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ StigmergicAnnotation
 
 **Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf** (2022) · *Hypertext '22*

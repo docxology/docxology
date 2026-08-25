@@ -13,18 +13,11 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 from build_sitemap import sitemap_locs  # noqa: E402
+from deploy_seo_security import EXCLUDED_HTML_PATH_PARTS  # noqa: E402
+from redirect_stubs import REDIRECT_STUBS, collect_redirect_errors  # noqa: E402
 from site_nav import canonical_work_key  # noqa: E402
 
 SITE_ORIGIN = "https://danielarifriedman.com/"
-
-REDIRECT_STUBS: list[tuple[str, str]] = [
-    ("about.html", SITE_ORIGIN),
-    ("blog/index.html", SITE_ORIGIN),
-    ("meditations.html", SITE_ORIGIN),
-    ("research.html", SITE_ORIGIN),
-    ("nft.html", "https://danielarifriedman.com/art.html"),
-    ("blog/winged-snowflake-2021/index.html", "https://danielarifriedman.com/art.html"),
-]
 
 _META_ROBOTS = re.compile(r'<meta\s+name="robots"\s+content="([^"]+)"', re.I)
 _LINK_CANONICAL = re.compile(r'<link\s+rel="canonical"\s+href="([^"]+)"', re.I)
@@ -81,8 +74,8 @@ def check_paper_pages(repo_root: Path) -> list[str]:
             continue
         html = _read(path)
         robots = _meta_robots(html)
-        if robots and "noindex" in robots:
-            errors.append(f"{rel}: paper pages must not carry noindex; canonical alone achieves consolidation")
+        if robots != "noindex, follow":
+            errors.append(f"{rel}: expected robots noindex, follow; got {robots!r}")
         expected = f"{SITE_ORIGIN}works/{work['citation_key']}.html"
         canonical = _canonical(html)
         if canonical != expected:
@@ -113,20 +106,7 @@ def check_work_pages(repo_root: Path) -> list[str]:
 
 
 def check_redirect_stubs(repo_root: Path) -> list[str]:
-    errors: list[str] = []
-    for rel, expected_canonical in REDIRECT_STUBS:
-        path = repo_root / rel
-        if not path.is_file():
-            errors.append(f"missing redirect stub: {rel}")
-            continue
-        html = _read(path)
-        robots = _meta_robots(html)
-        if robots != "noindex, follow":
-            errors.append(f"{rel}: expected robots noindex, follow; got {robots!r}")
-        canonical = _canonical(html)
-        if canonical != expected_canonical:
-            errors.append(f"{rel}: canonical {canonical!r} != {expected_canonical!r}")
-    return errors
+    return collect_redirect_errors(repo_root)
 
 
 def check_sitemap_policy(repo_root: Path) -> list[str]:
@@ -208,9 +188,11 @@ def check_work_descriptions(repo_root: Path) -> list[str]:
 def check_public_html_security(repo_root: Path) -> list[str]:
     """Check security metadata and crawler-visible JSON-LD across public HTML."""
     errors: list[str] = []
-    excluded = {".git", "node_modules", "docs", "code", "reports", "netlify-stripe-webhook", "_site"}
     for path in sorted(repo_root.rglob("*.html")):
-        if excluded.intersection(path.parts):
+        # The writer and the invariant checker must agree on what is public
+        # HTML. In particular, a local browser/PDF optional dependency must
+        # never turn bundled third-party diagnostic pages into site failures.
+        if EXCLUDED_HTML_PATH_PARTS.intersection(path.parts):
             continue
         text = _read(path)
         rel = str(path.relative_to(repo_root))

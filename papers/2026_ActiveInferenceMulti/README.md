@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Active Inference Multi-Track Exemplar
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

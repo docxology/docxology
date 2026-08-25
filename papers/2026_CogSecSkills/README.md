@@ -1,4 +1,6 @@
-# 💻 CogSecSkills: Multiharness Cognitive Security Skill Library
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🛡️ CogSecSkills: Multiharness Cognitive Security Skill Library
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 

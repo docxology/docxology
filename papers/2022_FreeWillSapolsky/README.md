@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧬 FreeWillSapolsky
 
 **Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman** (2022) · *ALIUS Bulletin*

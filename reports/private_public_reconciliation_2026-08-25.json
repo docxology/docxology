@@ -1,0 +1,4007 @@
+{
+  "schema_version": "1.0",
+  "report_date": "2026-08-25",
+  "baseline": {
+    "requested": "b08dc428",
+    "resolved": "b08dc428aa578572feb0977c2c28e1f597b29378"
+  },
+  "private_ref": {
+    "requested": "a73d89b",
+    "resolved": "a73d89bc5c759458a5672380d10a2cc2e0c8dadf"
+  },
+  "mode": "read_only_comparison",
+  "prohibited_operations": [
+    "merge",
+    "cherry-pick",
+    "checkout",
+    "reset",
+    "source-file write"
+  ],
+  "worktree_source_sha256": "f820c7c439c191ca8a29cccacc75ee67fd30d8301a47f1661972adfa566025a5",
+  "summary": {
+    "changed_paths": 467,
+    "classifications": {
+      "source_metadata": {
+        "count": 55,
+        "decision": "defer"
+      },
+      "derived_output": {
+        "count": 245,
+        "decision": "regenerate"
+      },
+      "binary_intake": {
+        "count": 156,
+        "decision": "defer"
+      },
+      "other_source": {
+        "count": 11,
+        "decision": "defer"
+      }
+    },
+    "metadata_files_reviewed": 50,
+    "deferred_metadata_fields": 106
+  },
+  "changes": [
+    {
+      "status": "M",
+      "path": "AGENTS.md",
+      "classification": "other_source",
+      "decision": "defer",
+      "rationale": "Unrelated private source change is not part of the public-main release reconciliation."
+    },
+    {
+      "status": "M",
+      "path": "GENERATED.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "README.md",
+      "classification": "other_source",
+      "decision": "defer",
+      "rationale": "Unrelated private source change is not part of the public-main release reconciliation."
+    },
+    {
+      "status": "M",
+      "path": "active-inference.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "bibliography.bib",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "bibliography.csl.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "bibliography.ris",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "catalog.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "code/AGENTS.md",
+      "classification": "other_source",
+      "decision": "defer",
+      "rationale": "Unrelated private source change is not part of the public-main release reconciliation."
+    },
+    {
+      "status": "M",
+      "path": "code/README.md",
+      "classification": "other_source",
+      "decision": "defer",
+      "rationale": "Unrelated private source change is not part of the public-main release reconciliation."
+    },
+    {
+      "status": "M",
+      "path": "code/orchestrators/build_coverage_exceptions.py",
+      "classification": "other_source",
+      "decision": "defer",
+      "rationale": "Unrelated private source change is not part of the public-main release reconciliation."
+    },
+    {
+      "status": "M",
+      "path": "code/orchestrators/extract_paper_texts.py",
+      "classification": "other_source",
+      "decision": "defer",
+      "rationale": "Unrelated private source change is not part of the public-main release reconciliation."
+    },
+    {
+      "status": "M",
+      "path": "code/orchestrators/generate_pillar_pages.py",
+      "classification": "other_source",
+      "decision": "defer",
+      "rationale": "Unrelated private source change is not part of the public-main release reconciliation."
+    },
+    {
+      "status": "D",
+      "path": "code/tests/test_extract_paper_texts.py",
+      "classification": "other_source",
+      "decision": "defer",
+      "rationale": "Unrelated private source change is not part of the public-main release reconciliation."
+    },
+    {
+      "status": "D",
+      "path": "code/tests/test_pillar_and_domain_pages.py",
+      "classification": "other_source",
+      "decision": "defer",
+      "rationale": "Unrelated private source change is not part of the public-main release reconciliation."
+    },
+    {
+      "status": "M",
+      "path": "cognitive-security.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "computational-entomology.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/agent-index.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/catalog.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/claims.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/coverage-exceptions.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/current-counts.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/generated-manifest.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/github-repositories.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/og-image-counts.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/organizations.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/pages-artifact-manifest.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/paired-publication-decisions.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "data/people.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/publications-ld.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/publishing-status.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/reconciliation.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/release-integrity.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/repository-classification.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/repository-exclusions.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "data/reproducibility.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/resume.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/software-ld.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/software.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/videos-index.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/videos.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/work-authors.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/work-enrichment.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "data/works.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "discovery.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "domain-active-inference.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "domain-aii-ecosystem.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "domain-art-synergetics.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "domain-biomedicine.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "domain-cognitive-security.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "domain-computational.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "domain-entomology.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "domain-presentations-media.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "domains.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "evidence.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "exports.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "insect-cognition.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "llms.txt",
+      "classification": "other_source",
+      "decision": "defer",
+      "rationale": "Unrelated private source change is not part of the public-main release reconciliation."
+    },
+    {
+      "status": "M",
+      "path": "neurosymbolic-ai.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-active-inference-tutorial.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-active-inference.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-art-synergetics.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-art.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-biomedicine.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-cite-verify.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-cognitive-security-pillar.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-cognitive-security.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-computational-entomology.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-computational.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-discovery.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-domains.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-entomology.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-image.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-insect-cognition.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-media.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-neurosymbolic-ai.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-publications.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "og-software.jpg",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "pages/BIBLIOGRAPHY.md",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "pages/DISCOVERY.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "pages/EVIDENCE.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "pages/LINKS.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "pages/REPRODUCIBILITY.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "pages/SOFTWARE.md",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2021_NarrativeEcosystems/2021_NarrativeEcosystems.pdf",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2021_NarrativeEcosystems/AGENTS.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2021_NarrativeEcosystems/CITATION.cff",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2021_NarrativeEcosystems/README.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2021_NarrativeEcosystems/SKILL.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2021_NarrativeEcosystems/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page102_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page106_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2021_NarrativeEcosystems/images/page10_img21.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2021_NarrativeEcosystems/images/page10_img22.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page110_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2021_NarrativeEcosystems/images/page11_img22.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2021_NarrativeEcosystems/images/page11_img23.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page122_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page125_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page137_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page146_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page147_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page154_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page162_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page168_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page169_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page171_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page172_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page173_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page174_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page175_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page176_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page177_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page178_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page179_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page187_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page188_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page189_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page18_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page190_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page1_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page210_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page217_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page218_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page227_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page229_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page230_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page235_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page237_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page238_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page239_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page262_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page2_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page362_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page3_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2021_NarrativeEcosystems/images/page7_img15.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page82_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2021_NarrativeEcosystems/images/page8_img16.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page92_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page94_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page97_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2021_NarrativeEcosystems/images/page99_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2021_NarrativeEcosystems/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2021_NarrativeEcosystems/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2022_ActiveInferenceOntology/2022_ActiveInferenceOntology.pdf",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2022_ActiveInferenceOntology/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page105_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page11_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page16_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page1_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page22_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2022_ActiveInferenceOntology/images/page23_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page2_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2022_ActiveInferenceOntology/images/page30_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2022_ActiveInferenceOntology/images/page34_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page35_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2022_ActiveInferenceOntology/images/page36_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2022_ActiveInferenceOntology/images/page36_img2.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2022_ActiveInferenceOntology/images/page37_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2022_ActiveInferenceOntology/images/page38_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2022_ActiveInferenceOntology/images/page38_img2.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page39_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page45_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page48_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page50_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page51_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page57_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page60_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page61_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page63_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page65_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page69_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page6_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page6_img2.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page6_img3.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page6_img4.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page72_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page7_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page7_img2.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page7_img3.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2022_ActiveInferenceOntology/images/page9_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2022_ActiveInferenceOntology/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2022_ActiveInferenceOntology/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_AII_v1/2023_AII_v1.pdf",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_AII_v1/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page10_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page11_img2.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page11_img3.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2023_AII_v1/images/page12_img2.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page14_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2023_AII_v1/images/page15_img2.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page17_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page18_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page1_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page24_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page25_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page26_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page27_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page28_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page29_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page30_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page31_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page31_img2.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page32_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page33_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page35_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page36_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page38_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page39_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page3_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page40_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page41_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page43_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2023_AII_v1/images/page44_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2023_AII_v1/images/page46_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page4_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page5_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page5_img2.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page6_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page6_img2.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_AII_v1/images/page7_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_AII_v1/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_AII_v1/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_HoneyBeeGeneExpression/2023_HoneyBeeGeneExpression.pdf",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_HoneyBeeGeneExpression/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_HoneyBeeGeneExpression/images/page3_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_HoneyBeeGeneExpression/images/page6_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_HoneyBeeGeneExpression/images/page7_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_HoneyBeeGeneExpression/images/page8_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2023_HoneyBeeGeneExpression/images/page9_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2023_HoneyBeeGeneExpression/images/page9_img1.png",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_HoneyBeeGeneExpression/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_HoneyBeeGeneExpression/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_ToComment/AGENTS.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_ToComment/CITATION.cff",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_ToComment/README.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_ToComment/SKILL.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_ToComment/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_ToComment/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2023_ToComment/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2024_OntologySUMO/2024_OntologySUMO.pdf",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2024_OntologySUMO/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2024_OntologySUMO/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2024_OntologySUMO/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2025_5thSymposium/2025_5thSymposium.pdf",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2025_5thSymposium/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "A",
+      "path": "papers/2025_5thSymposium/images/page54_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "R095",
+      "path": "papers/2025_5thSymposium/images/page54_img2.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release.",
+      "previous_path": "papers/2025_5thSymposium/images/page55_img2.jpeg"
+    },
+    {
+      "status": "A",
+      "path": "papers/2025_5thSymposium/images/page54_img3.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2025_5thSymposium/images/page54_img4.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2025_5thSymposium/images/page54_img5.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2025_5thSymposium/images/page55_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2025_5thSymposium/images/page55_img3.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2025_5thSymposium/images/page55_img4.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2025_5thSymposium/images/page55_img5.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2025_5thSymposium/images/page56_img1.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2025_5thSymposium/images/page56_img2.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2025_5thSymposium/images/page56_img3.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2025_5thSymposium/images/page56_img4.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2025_5thSymposium/images/page56_img5.jpeg",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2025_5thSymposium/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2025_5thSymposium/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2025_OnTime/2025_OnTime.pdf",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2025_OnTime/CITATION.cff",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2025_OnTime/README.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2025_OnTime/SKILL.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2025_OnTime/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2025_OnTime/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_AGEINT/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_ActiveFractalRabbit/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_ActiveFractalRabbit/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_ActiveFractalRabbit/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_ActiveInferenceMulti/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_ActiveInferencePower/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_ActiveInferencePower/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_ActiveInferencePower/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_ActiveSkillference/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_ActiveSkillference/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_AlphaCOGANT/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_AutopoieticProjectGeneration/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_BeeStack/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_BeforePragmatism/2026_BeforePragmatism.pdf",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_BeforePragmatism/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_BeforePragmatism/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_BeforePragmatism/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_BlackLine/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_BlackLine/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_BlakeJiang/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_BoundedAutoResearchTiny/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_COGANT/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_CaliforniaPublicRecords/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "A",
+      "path": "papers/2026_Codomyrmex/codomyrmex-1.3.0-content.pdf",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_Codomyrmex/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_Codomyrmex/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_Codomyrmex/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_ConvergenceAnalysisGradient/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_DemoCreate/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_DeterministicTestbedSelf/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_DigiPPPiP/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_DigiPPPiP/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_DigiPPPiP/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_DocxplusIntelligentDocument/CITATION.cff",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_DocxplusIntelligentDocument/README.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_DocxplusIntelligentDocument/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_DocxplusIntelligentDocument/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_DocxplusIntelligentDocument/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_DomainLanguageSpecifying/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_DuckRabbit/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_DuckRabbit/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_DuckRabbit/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_ENTO/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_EditorialQualityAt/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_EntomologicalLaw/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_ExploratoryDataAnalysis/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_FourfoldVision/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_FourfoldVision/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_GoldenLine/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_GoldenLine/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_LineSet/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_LineSet/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_LivingMetaAnalysis/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_MappingWilliamBlake/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_MusicNeverStopped/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_PROJECTBONDSpecial/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_PROJECTBONDSpecial/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_PROJECTBONDSpecial/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_PersonalRedLines/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_PersonalRedLines/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_PolicyDistillationAs/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_PolicyEntanglementActive/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_PriorCognitiveArt/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_RealizingEmptiness/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_RecoveringLLMPersona/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_RobustBeliefSharing/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_RobustBeliefSharing/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_SelfImprovementAgent/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "A",
+      "path": "papers/2026_ShapeBetween/Friedman_2026_Shape_7fb0ed77.pdf",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_ShapeBetween/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_ShapeBetween/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_SortitionUpstreamNTQR/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_SynthOBSFractiSynth/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_SynthOBSFractiSynth/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_THALIA/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_THALIA/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_TemplateApproachReproducible/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_TemplateMadlib/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "A",
+      "path": "papers/2026_TemplatePitchDeck/Friedman_2026_Templatepitchdeck_66941950.pdf",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_TemplatePitchDeck/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_TemplatePitchDeck/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "A",
+      "path": "papers/2026_TemplatePitchDeck/template_template_pitch_long.pdf",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "A",
+      "path": "papers/2026_TemplatePitchDeck/template_template_pitch_medium.pdf",
+      "classification": "binary_intake",
+      "decision": "defer",
+      "rationale": "Unverified PDF, extracted image, or other binary intake is out of scope for this release."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_TemplateTextbook/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_Triplicate/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_WhenDoBugs/metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_WhiteLine/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_WhiteLine/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "papers/2026_WitnessRegister/full_text.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/2026_WitnessRegister/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "papers/paper_metadata.json",
+      "classification": "source_metadata",
+      "decision": "defer",
+      "rationale": "Source metadata needs canonical-source corroboration before it can be ported."
+    },
+    {
+      "status": "M",
+      "path": "publications.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "pyproject.toml",
+      "classification": "other_source",
+      "decision": "defer",
+      "rationale": "Unrelated private source change is not part of the public-main release reconciliation."
+    },
+    {
+      "status": "D",
+      "path": "reports/accessibility_static_2026-08-19.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/accessibility_static_2026-08-20.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/asset_size_2026-08-20.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "R086",
+      "path": "reports/asset_size_2026-08-22.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources.",
+      "previous_path": "reports/asset_size_2026-08-19.json"
+    },
+    {
+      "status": "M",
+      "path": "reports/current_counts.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/live_site_verification_2026-08-19.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/pages_artifact_growth_2026-08-19.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/pages_artifact_growth_2026-08-20.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "A",
+      "path": "reports/pages_artifact_growth_2026-08-22.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/paired_publications_2026-08-19.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/public_source_inventory_2026-08-19.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/public_source_snapshot_2026-08-19.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/reconciliation_2026-08-19.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/source_coverage_2026-08-19.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/source_coverage_2026-08-19.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/source_coverage_2026-08-20.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/source_coverage_2026-08-20.md",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "D",
+      "path": "reports/zenodo_uncatalogued_2026-08-19.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "repositories-forks.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "repositories.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "reproducibility.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "resume/academic.txt",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "resume/full.txt",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "resume/resume.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "resume/resume.pdf",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "resume/software-consulting.txt",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "resume/teaching-service.txt",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "resume/verify.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "search-index.json",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "sitemap.xml",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "software.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "uv.lock",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute--qZYxSbJ38E.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-1yYFJnf_mHY.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-4Mu8lDqzBog.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-4XR8mIw9gcc.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-52eHP5ReG34.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-5H164LqEwiA.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-8X9K_gZWhqs.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-99xQbWozPjc.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-9MQQKaKEXs0.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-B6Uqf_T-nec.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-Cgo-0UU848M.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-GYJ0UC6ykxk.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-Ga8EZMGO460.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-H6rjjPZE5hs.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-I3rhsT-8isk.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-JtXvkawQ1rY.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-KqiLO9Dfj-4.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-Lo95GakwV5w.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-N3WUpVH8-D8.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-NkJKl_yF274.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-Qbmuu61dnWY.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-RB2axUYnE8I.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-S-tFHIqtbSI.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-S5-jXzhiG18.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-T5nG_5UZ_yk.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-UYD8CR_Xorg.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-Uheml5XRCWk.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-V0l9fOJgbtc.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-V7yNq_KpHo8.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-VXLNOfkH5Rg.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-VsOqIxNYpPQ.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-WEfc9X437yY.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-WKjqw3My_xM.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-YKn2njZ_ICg.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-aEYQCmFl1Bw.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-aRT9n16N4J8.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-gMPa_xoOctU.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-gQQyd8Hd3AA.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-gS_WocoCJvI.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-hIIyYu2C-SI.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-ijuxHfPDd3U.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-imPNfqsHbjI.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-mz7L4GD5g-E.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-nWFM5zrdmG8.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-pYJUgEqS42U.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-riJYh87FPx4.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-vkZ_vnN0--Y.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-xlrZ00NQNHo.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/institute-zqiZjjY9H7M.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/personal-Fb5aRehPwa8.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "videos/personal-Gs8mPnccAbM.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2021NarrativeInformationEcosystemsConflict079.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2023CommentOrNotComment063.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2025Time017.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026ActiveFractalRabbitSyntheticBenchmark195.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026ActiveInferencePowerSuite199.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026BlackLineStrongWork205.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026CodomyrmexArtificialEcologyAgentic206.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026DigiPPPiPDigitalPartnerPen209.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026DocxplusIntelligentDocumentContainer212.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026FourfoldVisionWilliamBlake196.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026GoldenLineTowardWhat204.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026LineSetHoldingInstruments201.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026PROJECTBONDSpecialAgent208.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026PersonalRedLinesDevelopment203.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026RobustBeliefSharingFederated210.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026THALIATypedHarnessAnalytical207.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026WhiteLineTypedLedger202.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/Friedman2026WitnessRegisterCoRegistration200.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    },
+    {
+      "status": "M",
+      "path": "works/index.html",
+      "classification": "derived_output",
+      "decision": "regenerate",
+      "rationale": "Do not port a private derived artifact; rebuild it from reconciled public sources."
+    }
+  ],
+  "private_identity_candidates": [
+    {
+      "folder": "2021_NarrativeEcosystems",
+      "field": "title",
+      "baseline_value": "NarrativeEcosystems",
+      "private_value": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
+      "canonical_value": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
+      "decision": "defer",
+      "implementation": "Private metadata and private bibliography agree, but this title remains candidate-only pending an independent public authority.",
+      "release_status": "deferred pending independent public authority"
+    },
+    {
+      "folder": "2025_OnTime",
+      "field": "doi",
+      "baseline_value": "10.5281/zenodo.15168381",
+      "private_value": "10.5281/zenodo.15168382",
+      "canonical_value": "10.5281/zenodo.15168382",
+      "decision": "defer",
+      "implementation": "Private metadata and private bibliography agree, but this is candidate-only until the public canonical source or an external DOI authority is reviewed.",
+      "release_status": "deferred pending independent public authority"
+    }
+  ],
+  "metadata_reviews": [
+    {
+      "path": "papers/2021_NarrativeEcosystems/metadata.json",
+      "changed_fields": [
+        "creators",
+        "description",
+        "doi",
+        "doi_url",
+        "external_pdf_url",
+        "files",
+        "key_findings",
+        "publication_date",
+        "publisher",
+        "record_id",
+        "resource_type",
+        "source",
+        "title",
+        "version",
+        "zenodo_record"
+      ],
+      "candidate_fields": [
+        "title"
+      ],
+      "deferred_fields": [
+        "creators",
+        "description",
+        "doi",
+        "doi_url",
+        "external_pdf_url",
+        "files",
+        "key_findings",
+        "publication_date",
+        "publisher",
+        "record_id",
+        "resource_type",
+        "source",
+        "title",
+        "version",
+        "zenodo_record"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2022_ActiveInferenceOntology/metadata.json",
+      "changed_fields": [
+        "checked_at",
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at",
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2023_AII_v1/metadata.json",
+      "changed_fields": [
+        "checked_at",
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at",
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2023_HoneyBeeGeneExpression/metadata.json",
+      "changed_fields": [
+        "checked_at",
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at",
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2023_ToComment/metadata.json",
+      "changed_fields": [
+        "checked_at",
+        "creators",
+        "description",
+        "doi",
+        "doi_url",
+        "files",
+        "key_findings",
+        "keywords",
+        "publication_date",
+        "record_id",
+        "resource_type",
+        "source",
+        "title",
+        "version",
+        "zenodo_record"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at",
+        "creators",
+        "description",
+        "doi",
+        "doi_url",
+        "files",
+        "key_findings",
+        "keywords",
+        "publication_date",
+        "record_id",
+        "resource_type",
+        "source",
+        "title",
+        "version",
+        "zenodo_record"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2024_OntologySUMO/metadata.json",
+      "changed_fields": [
+        "checked_at",
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at",
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2025_5thSymposium/metadata.json",
+      "changed_fields": [
+        "checked_at",
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at",
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2025_OnTime/metadata.json",
+      "changed_fields": [
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "candidate_fields": [
+        "doi"
+      ],
+      "deferred_fields": [
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_AGEINT/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_ActiveFractalRabbit/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_ActiveInferenceMulti/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_ActiveInferencePower/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_AlphaCOGANT/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_AutopoieticProjectGeneration/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_BeeStack/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_BeforePragmatism/metadata.json",
+      "changed_fields": [
+        "checked_at",
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at",
+        "doi",
+        "doi_url",
+        "zenodo_record"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_BlakeJiang/metadata.json",
+      "changed_fields": [
+        "files"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "files"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_BoundedAutoResearchTiny/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_COGANT/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_CaliforniaPublicRecords/metadata.json",
+      "changed_fields": [
+        "files"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "files"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_Codomyrmex/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_ConvergenceAnalysisGradient/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_DemoCreate/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_DeterministicTestbedSelf/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_DigiPPPiP/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_DocxplusIntelligentDocument/metadata.json",
+      "changed_fields": [
+        "checked_at",
+        "github_release_url",
+        "github_repo",
+        "pairing_confidence",
+        "pairing_evidence",
+        "pdf_sha256",
+        "related_resources",
+        "release_name",
+        "release_tag"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at",
+        "github_release_url",
+        "github_repo",
+        "pairing_confidence",
+        "pairing_evidence",
+        "pdf_sha256",
+        "related_resources",
+        "release_name",
+        "release_tag"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_DomainLanguageSpecifying/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_DuckRabbit/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_ENTO/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_EditorialQualityAt/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_EntomologicalLaw/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_ExploratoryDataAnalysis/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_LivingMetaAnalysis/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_MappingWilliamBlake/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_MusicNeverStopped/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_PROJECTBONDSpecial/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_PolicyDistillationAs/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_PolicyEntanglementActive/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_PriorCognitiveArt/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_RealizingEmptiness/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_RecoveringLLMPersona/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_SelfImprovementAgent/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_ShapeBetween/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_SortitionUpstreamNTQR/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_TemplateApproachReproducible/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_TemplateMadlib/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_TemplatePitchDeck/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_TemplateTextbook/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_Triplicate/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    },
+    {
+      "path": "papers/2026_WhenDoBugs/metadata.json",
+      "changed_fields": [
+        "checked_at"
+      ],
+      "candidate_fields": [],
+      "deferred_fields": [
+        "checked_at"
+      ],
+      "decision": "defer"
+    }
+  ]
+}

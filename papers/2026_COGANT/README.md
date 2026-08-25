@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 COGANT: Deterministic Codebase-to-GNN Translation
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

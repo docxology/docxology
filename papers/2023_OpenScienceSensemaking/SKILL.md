@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "OpenScienceSensemaking"
 description: "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensem..."
 tags: ["ossm", "open-science-sensemaking", "scientific-sensemaking", "annotation-networks", "open-access", "decentralized", "information-overload"]
 domain: "Cognitive Security"
 citation: "Ronen Tamari, Daniel A. Friedman (2023). *OpenScienceSensemaking*. Cognitive Security."
+doi: "10.31222/osf.io/9nb3u"
 ---
 
 # OpenScienceSensemaking
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.31222/osf.io/9nb3u
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.31222/osf.io/9nb3u`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

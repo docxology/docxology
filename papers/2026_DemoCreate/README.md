@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 DemoCreate: Declarative Audio-Visual Demo Generation for Software
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Editorial Quality at Scale: A Reproducible Prose-Review Pipeline
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

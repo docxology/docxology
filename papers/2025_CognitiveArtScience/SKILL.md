@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "CognitiveArtScience"
 description: "This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation. Through Active Inference..."
 tags: ["cognitive-art-science", "aesthetic-experience", "creative-cognition", "active-inference", "art-science-integration"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.16740438
+- Canonical DOI: 10.5281/zenodo.16740438
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:46Z

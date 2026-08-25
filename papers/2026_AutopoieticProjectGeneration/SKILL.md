@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Autopoietic Project Generation"
 description: "template_autopoiesis is a combinatoric grammar that deterministically generates whole runnable projects — not files or snippets, but complete, independently testable child repositories with their own kernel source, tests, analysis entry point, and ma..."
 tags: ["autopoiesis", "combinatoric-grammar", "deterministic-generation", "project-synthesis", "reproducible-research", "infrastructure-automation"]
@@ -36,10 +37,10 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21227869
+- Canonical DOI: 10.5281/zenodo.21227869
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-19T22:45:41Z
 
 ## Prerequisites
 

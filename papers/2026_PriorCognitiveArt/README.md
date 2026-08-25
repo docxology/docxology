@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 Prior Cognitive Art
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

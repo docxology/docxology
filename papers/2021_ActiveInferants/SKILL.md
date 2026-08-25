@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "ActiveInferants"
 description: "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavi..."
 tags: ["active-inference", "ant-foraging", "markov-decision-process", "stigmergy", "t-maze", "collective-behavior", "behavioral-modeling", "eco-evo-devo"]
 domain: "Entomology"
 citation: "Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant (2021). *ActiveInferants*. Entomology."
+doi: "10.3389/fnbeh.2021.647732"
 ---
 
 # ActiveInferants
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.3389/fnbeh.2021.647732
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.3389/fnbeh.2021.647732`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -1,8 +1,10 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧬 Con-cat-enate: emulation of Cat Hippocampus
 
 **Andrew Djuwidja, Daniel Friedman** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14738798-blue)](https://doi.org/10.5281/zenodo.14738798)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13626536-blue)](https://doi.org/10.5281/zenodo.13626536)
 
 ---
 
@@ -25,14 +27,15 @@
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.14738798](https://doi.org/10.5281/zenodo.14738798)
+- DOI: [10.5281/zenodo.13626536](https://doi.org/10.5281/zenodo.13626536)
+- Artifact DOI: [10.5281/zenodo.14738798](https://doi.org/10.5281/zenodo.14738798)
 - Zenodo record: [https://zenodo.org/records/14738798](https://zenodo.org/records/14738798)
 - PDF: [0125cat.pdf](0125cat.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/14738798)
 
 ## Citation
 
-> Andrew Djuwidja, Daniel Friedman (2025). *Con-cat-enate: emulation of Cat Hippocampus*. Zenodo. DOI: 10.5281/zenodo.14738798. URL: https://doi.org/10.5281/zenodo.14738798.
+> Andrew Djuwidja, Daniel Friedman (2025). *Con-cat-enate: emulation of Cat Hippocampus*. Zenodo. DOI: 10.5281/zenodo.13626536. URL: https://doi.org/10.5281/zenodo.13626536.
 
 ## Related
 

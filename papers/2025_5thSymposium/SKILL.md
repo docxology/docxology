@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "5thSymposium"
 description: "Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inferenc..."
 tags: ["active-inference-symposium", "conference-proceedings", "international-symposium", "research-presentations"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.17555266
+- Canonical DOI: 10.5281/zenodo.17555266
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:37Z

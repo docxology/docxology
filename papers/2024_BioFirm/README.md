@@ -1,4 +1,6 @@
-# 📄 BioFirm
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎥 BioFirm
 
 **Daniel A. Friedman** (2024) · *Presentation*
 
