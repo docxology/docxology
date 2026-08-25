@@ -40,6 +40,10 @@ CONTROL_FILES = {
     Path("data/release-integrity.json"),
     GROWTH_REPORT.relative_to(REPO_ROOT),
 }
+CONTROL_REPORT_PATTERNS = (
+    "asset_size_*.json",
+    "pages_artifact_growth_*.json",
+)
 
 EXCLUDED_ROOTS = {
     ".benchmarks",
@@ -146,14 +150,14 @@ def source_path(relative: Path, *, repo_root: Path = REPO_ROOT) -> Path:
 def is_control_path(path: Path) -> bool:
     """Return whether a published path is control metadata, not payload data."""
     # ``Path.match`` treats a pattern containing a directory as a suffix match,
-    # so ``untrusted/reports/pages_artifact_growth_*.json`` would otherwise
-    # evade the payload manifest and budget. Control reports live exactly at
-    # the repository's top-level reports/ path.
-    is_growth_report = (
+    # so ``untrusted/reports/asset_size_*.json`` would otherwise evade the
+    # payload manifest and budget. Control reports live exactly at the
+    # repository's top-level reports/ path.
+    is_control_report = (
         path.parent == Path("reports")
-        and fnmatch.fnmatchcase(path.name, "pages_artifact_growth_*.json")
+        and any(fnmatch.fnmatchcase(path.name, pattern) for pattern in CONTROL_REPORT_PATTERNS)
     )
-    return path in CONTROL_FILES or is_growth_report
+    return path in CONTROL_FILES or is_control_report
 
 
 def _omitted_paths() -> list[Path]:

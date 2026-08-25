@@ -50,13 +50,15 @@ def test_control_manifests_have_public_fallback_policy():
     assert Path("data/release-integrity.json") in bpa.CONTROL_FILES
 
 
-def test_all_dated_growth_reports_are_control_metadata():
+def test_all_dated_artifact_control_reports_are_control_metadata():
+    assert bpa.is_control_path(Path("reports/asset_size_2026-07-22.json"))
     assert bpa.is_control_path(Path("reports/pages_artifact_growth_2026-07-22.json"))
     assert bpa.is_control_path(Path("reports/pages_artifact_growth_2026-07-24.json"))
 
 
 def test_only_top_level_growth_reports_are_control_metadata():
     """A payload cannot hide behind Path.match's suffix matching behavior."""
+    assert not bpa.is_control_path(Path("untrusted/reports/asset_size_2026-08-25.json"))
     assert not bpa.is_control_path(
         Path("untrusted/reports/pages_artifact_growth_2026-08-25.json")
     )
@@ -97,6 +99,7 @@ def test_source_revision_allows_a_trailing_control_only_commit() -> None:
         "controls": [
             Path("data/pages-artifact-manifest.json"),
             Path("data/release-integrity.json"),
+            Path("reports/asset_size_2026-08-25.json"),
             Path("reports/pages_artifact_growth_2026-08-25.json"),
         ],
         "payload": [Path("pages/BIBLIOGRAPHY.md")],
