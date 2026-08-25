@@ -29,6 +29,12 @@ from software_table import (  # noqa: E402
     lang_css_class,
     zenodo_url,
 )
+from collection_jsonld import (  # noqa: E402
+    display_paths,
+    inline_collection_ld_marker_block,
+    remove_inline_collection_ld as remove_collection_jsonld,
+    replace_inline_collection_ld as replace_collection_jsonld,
+)
 from count_consistency import parse_software_catalog_counts  # noqa: E402
 from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 
@@ -210,56 +216,27 @@ def replace_between_markers(text: str, begin: str, end: str, replacement: str) -
 
 
 def inline_ld_marker_block(collection: dict) -> str:
-    payload = json.dumps(collection, ensure_ascii=False, separators=(",", ":"))
-    return f"    {LD_SYNC_BEGIN}\n    <script type=\"application/ld+json\">{payload}</script>\n    {LD_SYNC_END}"
+    return inline_collection_ld_marker_block(
+        collection,
+        begin_marker=LD_SYNC_BEGIN,
+        end_marker=LD_SYNC_END,
+        compact=True,
+    )
 
 
 def remove_inline_collection_ld(html_text: str) -> str:
-    start_tag = '<script type="application/ld+json">'
-    end_tag = "</script>"
-    while True:
-        i0 = html_text.find(start_tag)
-        if i0 < 0:
-            break
-        j0 = i0 + len(start_tag)
-        i1 = html_text.find(end_tag, j0)
-        if i1 < 0:
-            break
-        raw = html_text[j0:i1].strip()
-        try:
-            data = json.loads(raw)
-        except json.JSONDecodeError:
-            break
-        if data.get("@type") != "CollectionPage":
-            break
-        html_text = html_text[:i0] + html_text[i1 + len(end_tag) :]
-    return html_text
+    return remove_collection_jsonld(html_text)
 
 
 def replace_inline_collection_ld(html_text: str, collection: dict) -> str:
-    html_text = remove_inline_collection_ld(html_text)
-    marker = inline_ld_marker_block(collection)
-    begin_count = html_text.count(LD_SYNC_BEGIN)
-    end_count = html_text.count(LD_SYNC_END)
-    if begin_count != end_count or begin_count > 1:
-        raise ValueError("Expected zero or one complete software JSON-LD marker pair")
-    if begin_count == 1:
-        replaced, replacement_count = re.subn(
-            re.escape(LD_SYNC_BEGIN) + r"[\s\S]*?" + re.escape(LD_SYNC_END),
-            marker.strip(),
-            html_text,
-            count=1,
-        )
-        if replacement_count != 1:  # Defensive: marker-count checks above should guarantee this.
-            raise ValueError("Could not replace software JSON-LD marker block")
-        return replaced
-    stylesheet_match = re.search(r'<link rel="stylesheet" href="style\.css(?:\?[^\"]*)?">', html_text)
-    insert_at = stylesheet_match.start() if stylesheet_match else -1
-    if insert_at < 0:
-        insert_at = html_text.find("</head>")
-    if insert_at < 0:
-        raise ValueError("Could not locate insertion point for inline JSON-LD in software.html")
-    return html_text[:insert_at] + marker + "\n    " + html_text[insert_at:]
+    return replace_collection_jsonld(
+        html_text,
+        collection,
+        begin_marker=LD_SYNC_BEGIN,
+        end_marker=LD_SYNC_END,
+        page_label="software",
+        compact=True,
+    )
 
 
 def replace_head_meta(html_text: str, docx_count: int, aii_count: int, github_counts: dict[str, int]) -> str:
@@ -391,10 +368,6 @@ def render_outputs(rows: list[SoftwareRow] | None = None) -> dict[Path, str]:
     return render_outputs_from_template(rows, load_source_template())
 
 
-def _display_paths(paths: tuple[Path, ...]) -> str:
-    return ", ".join(str(path.relative_to(REPO_ROOT)) for path in paths)
-
-
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     mode = parser.add_mutually_exclusive_group()
@@ -418,7 +391,7 @@ def main() -> None:
         if stale:
             raise SystemExit(
                 "Stale source-rendered software outputs: "
-                f"{_display_paths(stale)} (run sync_software_html.py --apply)"
+                f"{display_paths(stale, REPO_ROOT)} (run sync_software_html.py --apply)"
             )
         print(f"Checked {len(outputs)} software outputs from {len(rows)} catalog rows")
         return

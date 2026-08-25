@@ -107,6 +107,31 @@ def test_hard_link_added_during_staged_write_fails_without_mutating_alias(tmp_pa
     assert alias.read_text(encoding="utf-8") == "old generated content\n"
 
 
+def test_atomic_replacement_preserves_alias_added_after_final_target_check(tmp_path: Path) -> None:
+    """A link added in the final TOCTOU window keeps the old inode and bytes."""
+    root = tmp_path / "repo"
+    root.mkdir()
+    target = root / "catalog.html"
+    target.write_text("old generated content\n", encoding="utf-8")
+    alias = tmp_path / "outside-alias.html"
+
+    def add_hard_link_before_atomic_replace() -> None:
+        os.link(target, alias)
+
+    write_generated_output_text(
+        root,
+        target,
+        "new generated content\n",
+        _before_atomic_replace=add_hard_link_before_atomic_replace,
+    )
+
+    assert target.read_text(encoding="utf-8") == "new generated content\n"
+    assert alias.read_text(encoding="utf-8") == "old generated content\n"
+    assert target.stat().st_ino != alias.stat().st_ino
+    assert target.stat().st_nlink == 1
+    assert alias.stat().st_nlink == 1
+
+
 def test_outside_root_target_is_rejected_before_check_or_write(tmp_path: Path) -> None:
     root = tmp_path / "repo"
     root.mkdir()

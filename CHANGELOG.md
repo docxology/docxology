@@ -2,6 +2,14 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-08-25
+
+- **Public-main release-integrity controls:** established a source-payload versus control-tail provenance model so deterministic manifests, artifact budgets, and review records can be checked without masking source drift. Publication, software, paper-document, pillar-page, redirect, and generation-plan checks now fail on stale source-rendered output.
+- **Release deployment gate:** GitHub Pages now runs the repository validator, full test suite, and pinned W605 Ruff gate before it assembles or deploys the bounded artifact. A release-ready claim remains blocked until the deployed SHA has fresh browser/link/live evidence and a post-deploy attestation.
+- **Source visibility and JSON-LD:** bibliography projections now use Git-tracked/non-ignored source visibility rather than machine-local derived files; publication and software CollectionPage JSON-LD replacement now shares one output-preserving renderer.
+- **Scholar provenance:** added `data/scholar-verification-receipt.json`, a SHA-256-bound baseline record for the existing 2026-06-09 direct logged-in snapshot. Any future snapshot edit invalidates the receipt and makes `sync_scholar_metrics.py --check` fail until a new direct-authenticated observation is reviewed and recorded; no Scholar metrics were changed in this release work.
+- **Artifact and generated-write reliability:** Pages retains provenance for omitted visual QA image binaries while enforcing its 900 MiB ceiling, and real-filesystem tests cover late hard-link aliases during atomic generated-output replacement.
+
 ## 2026-08-17
 
 - **Publication Intake — docxplus (#212):**

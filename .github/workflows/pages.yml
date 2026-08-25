@@ -7,28 +7,74 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: github-pages
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  validate:
+    # The public deployment baseline is origin/main. A manually dispatched
+    # workflow may select another ref, so do not validate/deploy it as Pages.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          # The validator derives sitemap dates from Git history and the
+          # artifact manifest may need to walk past a control-only commit.
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        run: python -m pip install uv==0.11.6
+
+      - name: Validate generated docs and structured data
+        run: uv run python3 code/orchestrators/validate_repo.py
+
+      - name: Run tests
+        run: uv run python3 -m pytest code/tests -q
+
+      - name: Lint invalid Python escape sequences
+        run: uv run --group lint ruff check --select W605 code
+
+  deploy:
+    needs: validate
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
+        with:
+          # The artifact manifest binds to the latest payload commit, which
+          # may precede a control-only commit in the first-parent history.
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        run: python -m pip install uv==0.11.6
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
 
       - name: Assemble bounded public artifact
-        run: python3 code/orchestrators/build_pages_artifact.py --output _site --check-size --check-manifest
+        run: uv run python3 code/orchestrators/build_pages_artifact.py --output _site --check-size --check-manifest
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5

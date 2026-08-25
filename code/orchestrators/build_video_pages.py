@@ -616,8 +616,16 @@ def transcript_html(transcript: str, video: dict) -> str:
     return "\n".join(f"<p>{h(chunk)}</p>" for chunk in chunks)
 
 
-def render_video_page(video: dict) -> str:
-    transcript, _path = read_transcript(video["id"])
+def render_video_page(video: dict, *, transcript: str | None = None) -> str:
+    """Render one video detail page from its record and optional cached text.
+
+    Supplying ``transcript`` keeps the renderer a deterministic content
+    projection for callers that have already loaded the cache.  The production
+    build keeps the existing convenience behavior and reads the cached text
+    when no explicit value is supplied.
+    """
+    if transcript is None:
+        transcript, _path = read_transcript(video["id"])
     title = title_for_page(video)
     description = description_for_video(video)
     topics = "\n".join(

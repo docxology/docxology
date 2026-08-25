@@ -331,27 +331,43 @@ def _replace_staged_output(
     staged_identity: tuple[int, int],
     target_name: str,
     target: Path,
+    *,
+    _before_atomic_replace: Callable[[], None] | None = None,
 ) -> None:
-    """Atomically install a verified staged file without mutating the old inode."""
-    try:
-        staged = os.stat(staged_name, dir_fd=parent_fd, follow_symlinks=False)
-    except OSError as exc:
-        raise UnsafeGeneratedOutputPathError(
-            f"unable to inspect staged generated output before replacement: {target}: {exc}"
-        ) from exc
-    if (
-        (staged.st_dev, staged.st_ino) != staged_identity
-        or stat.S_ISLNK(staged.st_mode)
-        or not stat.S_ISREG(staged.st_mode)
-        or staged.st_nlink > 1
-    ):
-        raise UnsafeGeneratedOutputPathError(
-            f"staged generated output changed before replacement: {target}"
-        )
+    """Atomically install a verified staged file without mutating the old inode.
+
+    ``_before_atomic_replace`` is an internal, deterministic interleaving seam
+    for the real-filesystem regression test.  It runs only after the live
+    target and staged inode have been checked, precisely where a concurrent
+    process could otherwise add a hard-link alias to the old target.  Atomic
+    replacement must leave that alias on the old inode rather than mutate it.
+    """
+    def verify_staged_output() -> None:
+        try:
+            staged = os.stat(staged_name, dir_fd=parent_fd, follow_symlinks=False)
+        except OSError as exc:
+            raise UnsafeGeneratedOutputPathError(
+                f"unable to inspect staged generated output before replacement: {target}: {exc}"
+            ) from exc
+        if (
+            (staged.st_dev, staged.st_ino) != staged_identity
+            or stat.S_ISLNK(staged.st_mode)
+            or not stat.S_ISREG(staged.st_mode)
+            or staged.st_nlink > 1
+        ):
+            raise UnsafeGeneratedOutputPathError(
+                f"staged generated output changed before replacement: {target}"
+            )
+
+    verify_staged_output()
     if os.rename not in os.supports_dir_fd:  # pragma: no cover - unsupported platforms
         raise UnsafeGeneratedOutputPathError(
             "platform lacks descriptor-relative atomic replacement; refusing generated-output write"
         )
+    if _before_atomic_replace is not None:
+        _before_atomic_replace()
+        # The deterministic test seam must not weaken the staging contract.
+        verify_staged_output()
     try:
         os.replace(
             staged_name,
@@ -410,14 +426,17 @@ def write_generated_output_text(
     *,
     encoding: str = "utf-8",
     _before_replace: Callable[[], None] | None = None,
+    _before_atomic_replace: Callable[[], None] | None = None,
 ) -> None:
     """Atomically replace one repository-local generated text file safely.
 
     The old output inode is never truncated or otherwise mutated.  Therefore
     even a hard link added after validation remains an unchanged alias to the
     old content; the final output name atomically moves to a new staged inode.
-    ``_before_replace`` is an internal deterministic interleaving seam used by
-    the real-filesystem hard-link regression test.
+    ``_before_replace`` and ``_before_atomic_replace`` are internal
+    deterministic interleaving seams used by the real-filesystem hard-link
+    regression tests.  The latter runs after the final target check, proving
+    that a late alias cannot cause an external file to be mutated.
     """
     candidate = safe_generated_output_path(repo_root, target)
     with _parent_directory_fd(repo_root, candidate, create=True) as (parent_fd, name):
@@ -445,6 +464,7 @@ def write_generated_output_text(
                 staged_identity,
                 name,
                 candidate,
+                _before_atomic_replace=_before_atomic_replace,
             )
             staged_name = None
         finally:

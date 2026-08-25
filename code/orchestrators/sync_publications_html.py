@@ -27,6 +27,7 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 from biblio_table import DEFAULT_BIB_PATH, BiblioRow, iter_bibliography_rows  # noqa: E402
 from bibliography_links import canonical_link_url  # noqa: E402
+from collection_jsonld import display_paths, replace_inline_collection_ld  # noqa: E402
 from export_bibliography import row_to_work, source_paths  # noqa: E402
 from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from site_facts import generated_date, generated_month_year  # noqa: E402
@@ -269,61 +270,6 @@ def replace_head_meta(html: str, count: int) -> str:
     return html
 
 
-def inline_ld_marker_block(collection: dict) -> str:
-    payload = json.dumps(collection, indent=4, ensure_ascii=False)
-    return f"    {LD_SYNC_BEGIN}\n    <script type=\"application/ld+json\">\n{payload}\n    </script>\n    {LD_SYNC_END}"
-
-
-def remove_inline_collection_ld(html: str) -> str:
-    """Drop any inline CollectionPage JSON-LD block (keep BreadcrumbList and other scripts)."""
-    start_tag = '<script type="application/ld+json">'
-    end_tag = "</script>"
-    while True:
-        i0 = html.find(start_tag)
-        if i0 < 0:
-            break
-        j0 = i0 + len(start_tag)
-        i1 = html.find(end_tag, j0)
-        if i1 < 0:
-            break
-        raw = html[j0:i1].strip()
-        try:
-            data = json.loads(raw)
-        except json.JSONDecodeError:
-            break
-        if data.get("@type") != "CollectionPage":
-            break
-        html = html[:i0] + html[i1 + len(end_tag) :]
-    return html
-
-
-def replace_inline_collection_ld(html: str, collection: dict) -> str:
-    """Ensure publications.html contains crawler-visible inline CollectionPage JSON-LD."""
-    html = remove_inline_collection_ld(html)
-    marker = inline_ld_marker_block(collection)
-    begin_count = html.count(LD_SYNC_BEGIN)
-    end_count = html.count(LD_SYNC_END)
-    if begin_count != end_count or begin_count > 1:
-        raise ValueError("Expected zero or one complete publications JSON-LD marker pair")
-    if begin_count == 1:
-        replaced, replacement_count = re.subn(
-            re.escape(LD_SYNC_BEGIN) + r"[\s\S]*?" + re.escape(LD_SYNC_END),
-            marker.strip(),
-            html,
-            count=1,
-        )
-        if replacement_count != 1:  # Defensive: marker-count checks above should guarantee this.
-            raise ValueError("Could not replace publications JSON-LD marker block")
-        return replaced
-    stylesheet_match = re.search(r'<link rel="stylesheet" href="style\.css(?:\?[^"]*)?">', html)
-    insert_at = stylesheet_match.start() if stylesheet_match else -1
-    if insert_at < 0:
-        insert_at = html.find("</head>")
-    if insert_at < 0:
-        raise ValueError("Could not locate insertion point for external JSON-LD in publications.html")
-    return html[:insert_at] + marker + "\n    " + html[insert_at:]
-
-
 def load_rows() -> list[BiblioRow]:
     return list(iter_bibliography_rows(DEFAULT_BIB_PATH))
 
@@ -445,7 +391,14 @@ def render_outputs_from_template(
 
     works_by_num = source_works_by_num(rows)
     collection = build_collection_page(rows, works_by_num)
-    html_out = replace_inline_collection_ld(html_template, collection)
+    html_out = replace_inline_collection_ld(
+        html_template,
+        collection,
+        begin_marker=LD_SYNC_BEGIN,
+        end_marker=LD_SYNC_END,
+        page_label="publications",
+        compact=False,
+    )
     html_out = replace_head_meta(html_out, len(rows))
     html_out = replace_tbody(html_out, [works_by_num[row.num] for row in rows])
 
@@ -467,10 +420,6 @@ def render_outputs(rows: list[BiblioRow] | None = None) -> dict[Path, str]:
     the rendered page, including hand-authored body framing.
     """
     return render_outputs_from_template(rows, load_source_template())
-
-
-def _display_paths(paths: tuple[Path, ...]) -> str:
-    return ", ".join(str(path.relative_to(REPO_ROOT)) for path in paths)
 
 
 def main() -> None:
@@ -496,7 +445,7 @@ def main() -> None:
         if stale:
             raise SystemExit(
                 "Stale source-rendered publication outputs: "
-                f"{_display_paths(stale)} (run sync_publications_html.py --apply)"
+                f"{display_paths(stale, REPO_ROOT)} (run sync_publications_html.py --apply)"
             )
         print(f"Checked {len(outputs)} publication outputs from {len(rows)} bibliography rows")
         return

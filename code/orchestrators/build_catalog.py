@@ -123,6 +123,7 @@ def datasets() -> list[tuple[str, str, str, str]]:
     ("people", "People Index", "data/people.json", "Compact collaborator and identity context for agentic discovery."),
     ("organizations", "Organizations Index", "data/organizations.json", "Organization context for AII, COGSEC, Stanford, and teaching affiliations."),
     ("claims", "Evidence Claims", "data/claims.json", "Claim-level evidence ledger with confidence, source links, and caveats."),
+    ("scholar-verification-receipt", "Scholar Verification Receipt", "data/scholar-verification-receipt.json", "Direct-authenticated Scholar verification assertion bound by SHA-256 to the dated canonical metric snapshot; it is provenance for the curated snapshot, not a new live fetch."),
     ("resume", "Structured Resume and CV", "data/resume.json", "Merged resume/CV data with contact, education, experience, works, software, GitHub inventory metrics, service, media, and art-use records."),
     ("resume-html", "Accessible HTML CV", "resume/resume.html", "No-JavaScript semantic CV view with keyboard-friendly headings, lists, links, current generated counts, and format alternatives."),
     ("resume-verify", "Resume Verification Page", "resume/verify.html", "HTML verification surface with source manifest, generated JSON hash, final PDF hash, file sizes, counts, and artifact links."),

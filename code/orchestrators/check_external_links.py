@@ -14,6 +14,7 @@ import re
 import subprocess
 import time
 import sys
+from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from urllib.parse import urlparse
@@ -172,14 +173,27 @@ def category(row: dict) -> str:
     return "review"
 
 
-def build_report(timeout: int, workers: int, limit: int | None) -> dict:
-    sources = collect_urls()
+def build_report(
+    timeout: int,
+    workers: int,
+    limit: int | None,
+    *,
+    url_sources: dict[str, list[str]] | None = None,
+    request: Callable[[str, int], dict] | None = None,
+) -> dict:
+    """Build a link report from the normal scan or explicit dependencies.
+
+    ``url_sources`` and ``request`` preserve the CLI defaults while allowing
+    isolated callers to use local fixture inputs without replacing globals.
+    """
+    sources = collect_urls() if url_sources is None else url_sources
+    request_url_fn = request_url if request is None else request
     urls = sorted(sources)
     if limit:
         urls = urls[:limit]
     results = []
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(request_url, url, timeout): url for url in urls}
+        futures = {pool.submit(request_url_fn, url, timeout): url for url in urls}
         for future in as_completed(futures):
             result = future.result()
             result["sources"] = sources[result["url"]]

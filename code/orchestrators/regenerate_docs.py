@@ -45,6 +45,25 @@ MANIFEST_FILENAME = "generated-documents.json"
 MANIFEST_VERSION = 1
 GENERATED_DOCUMENT_MARKER = "<!-- docxology:generated-document {filename}; ownership=explicit-manifest -->"
 
+
+@dataclass(frozen=True)
+class DocumentPaths:
+    """Filesystem inputs for one paper-document generation run.
+
+    The production CLI uses :data:`DEFAULT_DOCUMENT_PATHS`; callers that need
+    an isolated corpus can pass an explicit instance without mutating module
+    globals or changing the process environment.
+    """
+
+    papers_dir: Path
+    bibliography_path: Path
+
+
+DEFAULT_DOCUMENT_PATHS = DocumentPaths(
+    papers_dir=PAPERS_DIR,
+    bibliography_path=BIBLIOGRAPHY_PATH,
+)
+
 # ─── Helpers ──────────────────────────────────────────────────────────────────
 
 
@@ -69,6 +88,7 @@ def _safe_papers_path(
     path: Path,
     *,
     label: str,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
     require_directory: bool = False,
     require_regular_if_present: bool = False,
 ) -> Path:
@@ -82,7 +102,7 @@ def _safe_papers_path(
     with ``lstat`` before reading or writing it, then verify resolved
     containment for an existing papers root.
     """
-    papers_root = _lexical_absolute(PAPERS_DIR)
+    papers_root = _lexical_absolute(paths.papers_dir)
     candidate = _lexical_absolute(path)
     try:
         relative = candidate.relative_to(papers_root)
@@ -112,34 +132,50 @@ def _safe_papers_path(
     return candidate
 
 
-def _safe_paper_folder(folder: str) -> Path:
+def _safe_paper_folder(
+    folder: str,
+    *,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
+) -> Path:
     """Return one actual, non-symlink paper folder in the renderer boundary."""
     if not re.fullmatch(r"\d{4}_.+", folder) or Path(folder).name != folder:
         raise ValueError(f"invalid paper folder: {folder!r}")
     return _safe_papers_path(
-        PAPERS_DIR / folder,
+        paths.papers_dir / folder,
         label=f"paper folder {folder}",
+        paths=paths,
         require_directory=True,
     )
 
 
-def _safe_managed_document_path(folder: str, filename: str) -> Path:
+def _safe_managed_document_path(
+    folder: str,
+    filename: str,
+    *,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
+) -> Path:
     """Return a managed document target after symlink and containment checks."""
     if filename not in DOCUMENT_FILENAMES:
         raise ValueError(f"unsupported generated document: {filename}")
-    folder_path = _safe_paper_folder(folder)
+    folder_path = _safe_paper_folder(folder, paths=paths)
     return _safe_papers_path(
         folder_path / filename,
         label=f"managed document {folder}/{filename}",
+        paths=paths,
         require_regular_if_present=True,
     )
 
 
-def _safe_manifest_path(path: Path) -> Path:
+def _safe_manifest_path(
+    path: Path,
+    *,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
+) -> Path:
     """Return the manifest path only when it is a safe papers-local regular file."""
     return _safe_papers_path(
         path,
         label="generated-document manifest",
+        paths=paths,
         require_regular_if_present=True,
     )
 
@@ -156,11 +192,16 @@ def _require_secure_relative_open() -> None:
         raise ValueError("secure no-follow paper-document I/O is unavailable on this platform")
 
 
-def _open_papers_parent(path: Path, *, label: str) -> tuple[int, str]:
+def _open_papers_parent(
+    path: Path,
+    *,
+    label: str,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
+) -> tuple[int, str]:
     """Open ``path``'s parent through no-follow directory descriptors."""
     _require_secure_relative_open()
-    candidate = _safe_papers_path(path, label=label)
-    papers_root = _lexical_absolute(PAPERS_DIR)
+    candidate = _safe_papers_path(path, label=label, paths=paths)
+    papers_root = _lexical_absolute(paths.papers_dir)
     relative = candidate.relative_to(papers_root)
     if not relative.parts:
         raise ValueError(f"{label} must name a file beneath the papers root: {candidate}")
@@ -205,6 +246,7 @@ def _read_papers_text(
     path: Path,
     *,
     label: str,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
     require_unique_link: bool = False,
 ) -> str | None:
     """Read a papers-local text file without following link swaps.
@@ -213,7 +255,7 @@ def _read_papers_text(
     state is a blocking error rather than an implicit missing document.
     """
     try:
-        parent_fd, filename = _open_papers_parent(path, label=label)
+        parent_fd, filename = _open_papers_parent(path, label=label, paths=paths)
     except ValueError as exc:
         if isinstance(exc.__cause__, FileNotFoundError):
             return None
@@ -245,6 +287,7 @@ def _write_papers_text(
     content: str,
     *,
     label: str,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
     require_unique_link: bool,
 ) -> None:
     """Write a papers-local file through no-follow descriptors.
@@ -253,7 +296,7 @@ def _write_papers_text(
     any bytes of an external alias are modified.  Directory descriptors keep
     a post-check symlink swap from redirecting the write.
     """
-    parent_fd, filename = _open_papers_parent(path, label=label)
+    parent_fd, filename = _open_papers_parent(path, label=label, paths=paths)
     file_descriptor = -1
     try:
         try:
@@ -303,9 +346,11 @@ def configure_logging() -> None:
     log.propagate = False
 
 
-def generated_documents_manifest_path() -> Path:
+def generated_documents_manifest_path(
+    *, paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS
+) -> Path:
     """Return the explicit ownership manifest for generated paper documents."""
-    return PAPERS_DIR / MANIFEST_FILENAME
+    return paths.papers_dir / MANIFEST_FILENAME
 
 
 def generated_document_key(folder: str, filename: str) -> str:
@@ -374,17 +419,25 @@ def _validate_manifest_path(value: str) -> str:
     return value
 
 
-def load_generated_documents_manifest(path: Path | None = None) -> dict[str, ManifestEntry]:
+def load_generated_documents_manifest(
+    path: Path | None = None,
+    *,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
+) -> dict[str, ManifestEntry]:
     """Load the explicit generated-document ownership manifest.
 
     Existing documentation is deliberately *not* inferred from size, age, or
     resemblance to a renderer. A document becomes generator-owned only when it
     appears here (or is created by this command).
     """
-    manifest_path = _safe_manifest_path(path or generated_documents_manifest_path())
+    manifest_path = _safe_manifest_path(
+        path or generated_documents_manifest_path(paths=paths),
+        paths=paths,
+    )
     raw_text = _read_papers_text(
         manifest_path,
         label="generated-document manifest",
+        paths=paths,
         require_unique_link=True,
     )
     if raw_text is None:
@@ -437,22 +490,34 @@ def render_generated_documents_manifest(entries: Iterable[ManifestEntry]) -> str
     return json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
 
 
-def write_generated_documents_manifest(path: Path, entries: Iterable[ManifestEntry]) -> None:
+def write_generated_documents_manifest(
+    path: Path,
+    entries: Iterable[ManifestEntry],
+    *,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
+) -> None:
     """Write the ownership manifest only as part of an explicit ``--apply`` run."""
-    manifest_path = _safe_manifest_path(path)
+    manifest_path = _safe_manifest_path(path, paths=paths)
     _write_papers_text(
         manifest_path,
         render_generated_documents_manifest(entries),
         label="generated-document manifest",
+        paths=paths,
         require_unique_link=True,
     )
 
 
-def load_metadata() -> dict[str, dict[str, Any]]:
+def load_metadata(
+    *, paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS
+) -> dict[str, dict[str, Any]]:
     """Load consolidated metadata from paper_metadata.json."""
-    _reject_symlink(PAPERS_DIR, label="papers root")
-    metadata_path = PAPERS_DIR / "paper_metadata.json"
-    metadata_text = _read_papers_text(metadata_path, label="consolidated paper metadata")
+    _reject_symlink(paths.papers_dir, label="papers root")
+    metadata_path = paths.papers_dir / "paper_metadata.json"
+    metadata_text = _read_papers_text(
+        metadata_path,
+        label="consolidated paper metadata",
+        paths=paths,
+    )
     if metadata_text is not None:
         data = json.loads(metadata_text)
         if not isinstance(data, dict):
@@ -467,13 +532,15 @@ def load_metadata() -> dict[str, dict[str, Any]]:
     return {}
 
 
-def parse_bibliography() -> dict[str, dict[str, Any]]:
+def parse_bibliography(
+    *, paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS
+) -> dict[str, dict[str, Any]]:
     """Parse BIBLIOGRAPHY.md table into a dict keyed by folder name (rows with a Docs link)."""
     bib = {}
-    if not BIBLIOGRAPHY_PATH.exists():
+    if not paths.bibliography_path.exists():
         log.warning("BIBLIOGRAPHY.md not found")
         return bib
-    for row in iter_bibliography_rows(BIBLIOGRAPHY_PATH):
+    for row in iter_bibliography_rows(paths.bibliography_path):
         folder = row.folder
         if not folder:
             continue
@@ -642,12 +709,19 @@ FOLDER_METADATA_FIELDS = (
 )
 
 
-def paper_folders() -> list[str]:
+def paper_folders(
+    *, paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS
+) -> list[str]:
     """Return paper directories in a deterministic order."""
-    _reject_symlink(PAPERS_DIR, label="papers root")
-    if not PAPERS_DIR.exists():
+    _reject_symlink(paths.papers_dir, label="papers root")
+    if not paths.papers_dir.exists():
         return []
-    papers_root = _safe_papers_path(PAPERS_DIR, label="papers root", require_directory=True)
+    papers_root = _safe_papers_path(
+        paths.papers_dir,
+        label="papers root",
+        paths=paths,
+        require_directory=True,
+    )
     folders: list[str] = []
     for item in papers_root.iterdir():
         if not re.fullmatch(r"\d{4}_.+", item.name):
@@ -656,20 +730,26 @@ def paper_folders() -> list[str]:
         # link and would otherwise admit a folder outside the ownership root.
         _reject_symlink(item, label=f"paper folder {item.name}")
         if item.is_dir():
-            _safe_paper_folder(item.name)
+            _safe_paper_folder(item.name, paths=paths)
             folders.append(item.name)
     return sorted(folders)
 
 
-def resolved_metadata(folder: str, metadata: dict[str, dict[str, Any]]) -> dict[str, Any]:
+def resolved_metadata(
+    folder: str,
+    metadata: dict[str, dict[str, Any]],
+    *,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
+) -> dict[str, Any]:
     """Merge consolidated and folder metadata without mutating source objects."""
     year, topic = parse_folder_id(folder)
     merged: dict[str, Any] = {"year": year, "topic": topic, "name": topic}
     merged.update(metadata.get(folder, {}))
-    folder_metadata_path = _safe_paper_folder(folder) / "metadata.json"
+    folder_metadata_path = _safe_paper_folder(folder, paths=paths) / "metadata.json"
     folder_metadata_text = _read_papers_text(
         folder_metadata_path,
         label=f"folder metadata {folder}/metadata.json",
+        paths=paths,
     )
     if folder_metadata_text is None:
         return merged
@@ -768,7 +848,13 @@ def build_doi_audit(
 # ─── Generators ───────────────────────────────────────────────────────────────
 
 
-def generate_readme(folder: str, meta: dict, bib_entry: dict | None = None) -> str:
+def generate_readme(
+    folder: str,
+    meta: dict,
+    bib_entry: dict | None = None,
+    *,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
+) -> str:
     """Generate README.md content with enhanced structure."""
     year, topic = parse_folder_id(folder)
     title = clean_markdown_text(meta.get('name') or meta.get('title') or topic)
@@ -859,7 +945,7 @@ def generate_readme(folder: str, meta: dict, bib_entry: dict | None = None) -> s
     if zenodo_record:
         lines.append(f'- Zenodo record: {markdown_link(zenodo_record, zenodo_record)}')
 
-    local_pdfs = sorted((PAPERS_DIR / folder).glob('*.pdf'))
+    local_pdfs = sorted((paths.papers_dir / folder).glob('*.pdf'))
     for pdf in local_pdfs[:3]:
         lines.append(f'- PDF: {markdown_link(pdf.name, pdf.name)}')
 
@@ -1110,11 +1196,13 @@ def render_document(
     meta: dict[str, Any],
     all_folders: list[str],
     bib_entry: dict[str, Any] | None,
+    *,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
 ) -> str:
     """Render one managed document, including its stable ownership marker."""
-    _safe_paper_folder(folder)
+    _safe_paper_folder(folder, paths=paths)
     if filename == "README.md":
-        content = generate_readme(folder, meta, bib_entry)
+        content = generate_readme(folder, meta, bib_entry, paths=paths)
     elif filename == "AGENTS.md":
         content = generate_agents(folder, meta, bib_entry)
     elif filename == "SKILL.md":
@@ -1131,6 +1219,7 @@ def plan_document_changes(
     manifest_entries: dict[str, ManifestEntry],
     *,
     adopt_existing: bool,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
 ) -> tuple[list[DocumentChange], list[str], int]:
     """Plan changes without writing, respecting explicit ownership boundaries."""
     changes: list[DocumentChange] = []
@@ -1142,17 +1231,18 @@ def plan_document_changes(
         # Validate the folder before metadata-derived rendering reads local PDFs
         # and validate every supported target before inspecting its ownership.
         # This keeps both --check and --apply inside the explicit papers root.
-        _safe_paper_folder(folder)
+        _safe_paper_folder(folder, paths=paths)
         meta = metadata_by_folder[folder]
         bib_entry = bibliography.get(folder)
         for filename in DOCUMENT_FILENAMES:
             key = generated_document_key(folder, filename)
-            path = _safe_managed_document_path(folder, filename)
+            path = _safe_managed_document_path(folder, filename, paths=paths)
             entry = manifest_entries.get(key)
-            expected = render_document(folder, filename, meta, folders, bib_entry)
+            expected = render_document(folder, filename, meta, folders, bib_entry, paths=paths)
             current = _read_papers_text(
                 path,
                 label=f"managed document {key}",
+                paths=paths,
                 require_unique_link=True,
             )
 
@@ -1258,7 +1348,11 @@ def build_argument_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def main(argv: Sequence[str] | None = None) -> int:
+def main(
+    argv: Sequence[str] | None = None,
+    *,
+    paths: DocumentPaths = DEFAULT_DOCUMENT_PATHS,
+) -> int:
     """Run the generator and return a process-compatible status code."""
     parser = build_argument_parser()
     args = parser.parse_args(argv)
@@ -1270,10 +1364,13 @@ def main(argv: Sequence[str] | None = None) -> int:
         log.warning("--force is deprecated and does not override the generated-document ownership manifest")
 
     try:
-        metadata = load_metadata()
-        bibliography = parse_bibliography()
-        folders = paper_folders()
-        metadata_by_folder = {folder: resolved_metadata(folder, metadata) for folder in folders}
+        metadata = load_metadata(paths=paths)
+        bibliography = parse_bibliography(paths=paths)
+        folders = paper_folders(paths=paths)
+        metadata_by_folder = {
+            folder: resolved_metadata(folder, metadata, paths=paths)
+            for folder in folders
+        }
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         log.error("unable to load paper-document sources: %s", exc)
         return 2
@@ -1291,14 +1388,18 @@ def main(argv: Sequence[str] | None = None) -> int:
         return 1 if audit["conflicts"] else 0
 
     try:
-        manifest_path = _safe_manifest_path(args.manifest or generated_documents_manifest_path())
-        manifest_entries = load_generated_documents_manifest(manifest_path)
+        manifest_path = _safe_manifest_path(
+            args.manifest or generated_documents_manifest_path(paths=paths),
+            paths=paths,
+        )
+        manifest_entries = load_generated_documents_manifest(manifest_path, paths=paths)
         changes, document_errors, skipped = plan_document_changes(
             folders,
             metadata_by_folder,
             bibliography,
             manifest_entries,
             adopt_existing=args.adopt_existing,
+            paths=paths,
         )
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         log.error("unable to plan paper-document generation: %s", exc)
@@ -1317,8 +1418,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     rendered_manifest = render_generated_documents_manifest(final_entries.values())
     try:
         current_manifest = _read_papers_text(
-            _safe_manifest_path(manifest_path),
+            _safe_manifest_path(manifest_path, paths=paths),
             label="generated-document manifest",
+            paths=paths,
             require_unique_link=True,
         )
     except (OSError, ValueError) as exc:
@@ -1367,7 +1469,13 @@ def main(argv: Sequence[str] | None = None) -> int:
         # also prevents a link introduced after planning from redirecting a
         # managed write outside the papers root.
         validated_changes = [
-            (change, _safe_managed_document_path(*change.key.split("/", maxsplit=1)))
+            (
+                change,
+                _safe_managed_document_path(
+                    *change.key.split("/", maxsplit=1),
+                    paths=paths,
+                ),
+            )
             for change in changes
         ]
         for change, path in validated_changes:
@@ -1377,12 +1485,17 @@ def main(argv: Sequence[str] | None = None) -> int:
                 path,
                 change.content,
                 label=f"managed document {change.key}",
+                paths=paths,
                 require_unique_link=True,
             )
             log.info("%s: %s", change.action.upper(), change.key)
 
         if manifest_is_stale:
-            write_generated_documents_manifest(manifest_path, final_entries.values())
+            write_generated_documents_manifest(
+                manifest_path,
+                final_entries.values(),
+                paths=paths,
+            )
             log.info("UPDATED: %s", manifest_path)
     except (OSError, ValueError) as exc:
         log.error("refusing unsafe paper-document write: %s", exc)

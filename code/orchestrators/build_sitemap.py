@@ -27,10 +27,10 @@ def loc(rel: str) -> str:
     return SITE_ORIGIN + rel
 
 
-def existing_lastmod() -> str | None:
-    if not OUT.exists():
+def existing_lastmod(output: Path = OUT) -> str | None:
+    if not output.exists():
         return None
-    matches = re.findall(r"<lastmod>([^<]+)</lastmod>", OUT.read_text(encoding="utf-8"))
+    matches = re.findall(r"<lastmod>([^<]+)</lastmod>", output.read_text(encoding="utf-8"))
     return max(matches) if matches else None
 
 
@@ -42,7 +42,7 @@ def _fs_path(rel: str) -> str:
 
 
 @lru_cache(maxsize=None)
-def git_lastmod(rel: str) -> str | None:
+def git_lastmod(rel: str, repo_root: Path = REPO_ROOT) -> str | None:
     """Last commit date (YYYY-MM-DD) for a path, or None if git is unavailable.
 
     Gives each URL an accurate per-page <lastmod> instead of one shared date.
@@ -52,7 +52,7 @@ def git_lastmod(rel: str) -> str | None:
     try:
         result = subprocess.run(
             ["git", "log", "-1", "--format=%cs", "--", _fs_path(rel)],
-            cwd=REPO_ROOT,
+            cwd=repo_root,
             capture_output=True,
             text=True,
             timeout=10,
@@ -63,8 +63,15 @@ def git_lastmod(rel: str) -> str | None:
     return date or None
 
 
-def url_entry(rel_path: str, changefreq: str, priority: str, lastmod: str) -> str:
-    entry_lastmod = git_lastmod(rel_path) or lastmod
+def url_entry(
+    rel_path: str,
+    changefreq: str,
+    priority: str,
+    lastmod: str,
+    *,
+    repo_root: Path = REPO_ROOT,
+) -> str:
+    entry_lastmod = git_lastmod(rel_path, repo_root) or lastmod
     return f"  <url><loc>{html.escape(loc(rel_path))}</loc><lastmod>{entry_lastmod}</lastmod><changefreq>{changefreq}</changefreq><priority>{priority}</priority></url>"
 
 
@@ -72,18 +79,18 @@ def generated_url_entry(rel_path: str, changefreq: str, priority: str, lastmod: 
     return f"  <url><loc>{html.escape(loc(rel_path))}</loc><lastmod>{lastmod}</lastmod><changefreq>{changefreq}</changefreq><priority>{priority}</priority></url>"
 
 
-def sitemap_locs(lastmod: str | None = None) -> list[str]:
+def sitemap_locs(lastmod: str | None = None, *, repo_root: Path = REPO_ROOT) -> list[str]:
     """Absolute URLs included in sitemap.xml (for IndexNow and tests)."""
     date = lastmod or report_date_string()
     _ = date
     locs = [loc(rel_path) for rel_path, _, _ in INDEX_PRIORITY_STATIC]
-    works_dir = REPO_ROOT / "works"
+    works_dir = repo_root / "works"
     if works_dir.exists():
         for path in sorted(works_dir.glob("*.html")):
             if path.name == "index.html":
                 continue
             locs.append(loc(f"works/{path.name}"))
-    videos_dir = REPO_ROOT / "videos"
+    videos_dir = repo_root / "videos"
     if videos_dir.exists():
         for path in sorted(videos_dir.glob("*.html")):
             if path.name == "index.html":
@@ -92,18 +99,26 @@ def sitemap_locs(lastmod: str | None = None) -> list[str]:
     return locs
 
 
-def render(lastmod: str | None = None) -> str:
+def render(lastmod: str | None = None, *, repo_root: Path = REPO_ROOT) -> str:
     date = lastmod or report_date_string()
-    entries = [url_entry(*row, date) for row in INDEX_PRIORITY_STATIC]
-    works_dir = REPO_ROOT / "works"
+    entries = [url_entry(*row, date, repo_root=repo_root) for row in INDEX_PRIORITY_STATIC]
+    works_dir = repo_root / "works"
     if works_dir.exists():
         for path in sorted(works_dir.glob("*.html")):
             if path.name == "index.html":
                 continue
-            entries.append(url_entry(f"works/{path.name}", "yearly", "0.45", date))
+            entries.append(
+                url_entry(
+                    f"works/{path.name}",
+                    "yearly",
+                    "0.45",
+                    date,
+                    repo_root=repo_root,
+                )
+            )
     # Paper folder index.html pages are already covered by paper_pages builder;
     # full_text.md is NOT sitemapped (SEO invariant forbids /papers/ URLs in sitemap).
-    videos_dir = REPO_ROOT / "videos"
+    videos_dir = repo_root / "videos"
     if videos_dir.exists():
         for path in sorted(videos_dir.glob("*.html")):
             if path.name == "index.html":

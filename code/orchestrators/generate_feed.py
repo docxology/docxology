@@ -19,17 +19,17 @@ def h(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
-def load_works() -> list[dict]:
-    with open(REPO_ROOT / "data" / "works.json", encoding="utf-8") as f:
+def load_works(repo_root: Path = REPO_ROOT) -> list[dict]:
+    with open(repo_root / "data" / "works.json", encoding="utf-8") as f:
         return json.load(f)["works"]
 
 
-def load_site_updates() -> list[dict]:
+def load_site_updates(repo_root: Path = REPO_ROOT) -> list[dict]:
     """Load stable site-update items from data/site-updates.json.
 
     Missing or unreadable JSON is a no-op so the works feed still generates.
     """
-    path = REPO_ROOT / "data" / "site-updates.json"
+    path = repo_root / "data" / "site-updates.json"
     if not path.exists():
         return []
     try:
@@ -95,15 +95,15 @@ def _year_key(value: object) -> int:
         return 0
 
 
-def render(build_date: datetime | None = None) -> str:
+def render(build_date: datetime | None = None, *, repo_root: Path = REPO_ROOT) -> str:
     build_date = build_date or datetime.now(timezone.utc).replace(microsecond=0)
     works = sorted(
-        load_works(),
+        load_works(repo_root),
         key=lambda w: (_year_key(w.get("year")), int(w.get("num", 0) or 0)),
         reverse=True,
     )
     entries = []
-    for update in load_site_updates():
+    for update in load_site_updates(repo_root):
         title = update.get("title")
         link = update.get("link")
         guid = update.get("guid")

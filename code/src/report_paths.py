@@ -169,47 +169,65 @@ def stable_generated_at(path: Path, payload: dict) -> str | None:
     return str(timestamp) if current_body == existing_body and timestamp else None
 
 
-def latest_report(pattern: str, *, required: bool = True) -> Path | None:
+def latest_report(
+    pattern: str,
+    *,
+    required: bool = True,
+    report_dir: Path = REPORT_DIR,
+) -> Path | None:
     """Resolve latest matching report file by glob pattern.
 
     Args:
-        pattern: A glob pattern rooted in reports/, for example
+        pattern: A glob pattern rooted in ``report_dir``, for example
             ``"public_source_snapshot_*.json"``.
         required: If True, raise ``FileNotFoundError`` when no match exists.
+        report_dir: Directory containing date-stamped report files.
     """
-    matches = _sorted_path_list(list(REPORT_DIR.glob(pattern)))
+    matches = _sorted_path_list(list(report_dir.glob(pattern)))
     if matches:
         return matches[0]
     if not required:
         return None
-    raise FileNotFoundError(f"No reports match: {REPORT_DIR / pattern}")
+    raise FileNotFoundError(f"No reports match: {report_dir / pattern}")
 
 
-def dated_report_path(prefix: str, suffix: str) -> Path:
-    """Build a report output path for today's date."""
+def dated_report_path(
+    prefix: str,
+    suffix: str,
+    *,
+    report_dir: Path = REPORT_DIR,
+) -> Path:
+    """Build a report output path for today's date in ``report_dir``."""
     if not suffix.startswith("."):
         suffix = f".{suffix}"
-    return REPORT_DIR / f"{prefix}_{report_date_string()}{suffix}"
+    return report_dir / f"{prefix}_{report_date_string()}{suffix}"
 
 
-def dated_report_dir(prefix: str) -> Path:
-    """Build a date-stamped report directory path under reports/."""
-    return REPORT_DIR / prefix / report_date_string()
+def dated_report_dir(prefix: str, *, report_dir: Path = REPORT_DIR) -> Path:
+    """Build a date-stamped report directory path under ``report_dir``."""
+    return report_dir / prefix / report_date_string()
 
 
-def latest_subdir_file(prefix: str, filename: str, *, required: bool = True) -> Path | None:
+def latest_subdir_file(
+    prefix: str,
+    filename: str,
+    *,
+    required: bool = True,
+    report_dir: Path = REPORT_DIR,
+) -> Path | None:
     """Resolve the newest date-stamped report directory and return a child file.
 
     Args:
-        prefix: Directory prefix under reports (for example, ``browser-smoke``).
+        prefix: Directory prefix under ``report_dir`` (for example, ``browser-smoke``).
         filename: Child file name, such as ``manifest.json``.
+        report_dir: Directory containing date-stamped report folders.
     """
-    nested_root = REPORT_DIR / prefix
+    nested_root = report_dir / prefix
     if nested_root.is_dir():
         candidates = sorted([p for p in nested_root.iterdir() if p.is_dir()], key=lambda p: p.name, reverse=True)
     else:
         candidates = sorted(
-            [p for p in REPORT_DIR.glob(f"{prefix}_*/") if p.is_dir() and p.name.startswith(prefix)],
+            [p for p in report_dir.glob(f"{prefix}_*/") if p.is_dir() and p.name.startswith(prefix)],
             key=lambda p: p.name,
             reverse=True,
         )
@@ -217,7 +235,7 @@ def latest_subdir_file(prefix: str, filename: str, *, required: bool = True) -> 
     if not candidates:
         if not required:
             return None
-        raise FileNotFoundError(f"No report directories match: {REPORT_DIR / (prefix + '_*')}")
+        raise FileNotFoundError(f"No report directories match: {report_dir / (prefix + '_*')}")
     return candidates[0] / filename
 
 

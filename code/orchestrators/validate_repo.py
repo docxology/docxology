@@ -21,7 +21,11 @@ try:
 except ImportError:  # pragma: no cover - package import path
     from .report_paths import latest_report, latest_subdir_file
 
-from release_evidence import is_ephemeral_release_evidence_path, validate_attestation  # noqa: E402
+from release_evidence import (  # noqa: E402
+    is_ephemeral_release_evidence_path,
+    scholar_source_receipt_errors,
+    validate_attestation,
+)
 from generation_plan import LOCAL_GENERATION_STEPS, validate_generation_plan  # noqa: E402
 
 
@@ -142,20 +146,32 @@ def _load_json_payload(
             errors.append(f"Invalid JSON artifact {path}: {exc}")
 
 
-def validate_json_files(strict_reports: bool) -> None:
+def validate_json_files(
+    strict_reports: bool,
+    *,
+    repo_root: Path | None = None,
+    required_json_files: list[str] | None = None,
+    optional_report_patterns: list[tuple[str, str]] | None = None,
+) -> None:
     """Validate required JSON artifacts and report artifacts.
 
     Required artifacts are always strict. Optional report artifacts are warnings by
-    default, but strict when --strict-reports is enabled.
+    default, but strict when --strict-reports is enabled.  ``repo_root`` and the
+    two artifact collections make this check reusable against a concrete
+    temporary checkout without mutating module-level production configuration.
     """
+    root = repo_root or REPO_ROOT
+    report_dir = root / "reports"
+    required_paths = REQUIRED_JSON_FILES if required_json_files is None else required_json_files
+    report_patterns = OPTIONAL_REPORT_PATTERNS if optional_report_patterns is None else optional_report_patterns
     errors: list[str] = []
     warnings: list[str] = []
 
-    for rel_path in REQUIRED_JSON_FILES:
-        _load_json_payload(REPO_ROOT / rel_path, errors, warnings, optional=False)
+    for rel_path in required_paths:
+        _load_json_payload(root / rel_path, errors, warnings, optional=False)
 
-    for pattern, label in OPTIONAL_REPORT_PATTERNS:
-        report = latest_report(pattern, required=False)
+    for pattern, label in report_patterns:
+        report = latest_report(pattern, required=False, report_dir=report_dir)
         if not report:
             message = f"Optional {label} report missing: {pattern}"
             if strict_reports:
@@ -165,7 +181,9 @@ def validate_json_files(strict_reports: bool) -> None:
             continue
         _load_json_payload(report, errors, warnings, optional=not strict_reports)
 
-    browser_smoke = latest_subdir_file("browser-smoke", "manifest.json", required=False)
+    browser_smoke = latest_subdir_file(
+        "browser-smoke", "manifest.json", required=False, report_dir=report_dir
+    )
     if not browser_smoke:
         message = "Optional browser-smoke manifest missing: browser-smoke/manifest.json"
         if strict_reports:
@@ -175,7 +193,9 @@ def validate_json_files(strict_reports: bool) -> None:
     else:
         _load_json_payload(browser_smoke, errors, warnings, optional=not strict_reports)
 
-    browser_qa = latest_subdir_file("browser-qa", "manifest.json", required=False)
+    browser_qa = latest_subdir_file(
+        "browser-qa", "manifest.json", required=False, report_dir=report_dir
+    )
     if not browser_qa:
         message = "Optional progressive browser QA manifest missing: browser-qa/manifest.json"
         if strict_reports:
@@ -447,6 +467,13 @@ def main() -> None:
     # A committed pre-deploy review uses the control-tail payload anchor.
     # Post-deploy attestation instead requires an exact candidate-HEAD review.
     run(public_source_review_check_args(release=args.release))
+    if strict_reports:
+        scholar_errors = scholar_source_receipt_errors(REPO_ROOT)
+        if scholar_errors:
+            raise SystemExit(
+                "Scholar receipt validation failed:\n"
+                + "\n".join(f"  - {error}" for error in scholar_errors)
+            )
     run(["python3", "code/orchestrators/visual_qa.py", "--check"])
     validate_json_files(strict_reports)
     validate_citation_cff()

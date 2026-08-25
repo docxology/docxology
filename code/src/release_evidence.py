@@ -19,6 +19,8 @@ import re
 import sys
 from typing import Any
 
+from scholar_verification import validate_scholar_snapshot_receipt
+
 
 @dataclass(frozen=True)
 class EvidenceRequirement:
@@ -573,8 +575,23 @@ def collect_release_evidence(
         errors.extend(report_errors)
         if receipt is not None:
             receipts.append(receipt)
+    errors.extend(scholar_source_receipt_errors(repo_root))
     errors.extend(_review_snapshot_binding_errors(repo_root, receipts, expected_commit))
     return receipts, errors
+
+
+def scholar_source_receipt_errors(repo_root: Path) -> list[str]:
+    """Return release-facing errors for an unbound Scholar metric source.
+
+    This deliberately validates the source sidecar rather than the status of a
+    public-source review item.  A review can remain deferred when a fresh
+    external scan did not modify curated metrics; the stable receipt only
+    becomes invalid when ``data/scholar-snapshot.json`` itself changes.
+    """
+    return [
+        f"Scholar source receipt validation failed: {error}"
+        for error in validate_scholar_snapshot_receipt(repo_root)
+    ]
 
 
 def _review_snapshot_binding_errors(
@@ -768,6 +785,7 @@ def validate_attestation(
             errors.append(f"attested {requirement.name} source_commit does not match the report")
         attested_receipts.append(receipt)
     errors.extend(_review_snapshot_binding_errors(repo_root, attested_receipts, expected_commit))
+    errors.extend(scholar_source_receipt_errors(repo_root))
     live_receipt = next((item for item in attested_receipts if item.name == "live-site verification"), None)
     if live_receipt is not None:
         errors.extend(live_deployment_errors(repo_root, expected_commit, path=repo_root / live_receipt.path))

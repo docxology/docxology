@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "receipt_type": "google_scholar_direct_authenticated",
+  "profile_id": "DXjPFtYAAAAJ",
+  "direct": true,
+  "authenticated": true,
+  "verified_at": "2026-06-09T15:22:47Z",
+  "snapshot_path": "data/scholar-snapshot.json",
+  "snapshot_sha256": "83f065bc6eac1aded5cae8de4249ab4fb76940612a59010526412c29025cdb90",
+  "snapshot_as_of": "2026-06-09",
+  "metrics": {
+    "citations": 777,
+    "h_index": 15,
+    "i10_index": 17
+  },
+  "source": "Existing data/scholar-snapshot.json method and current history entry, recorded by commit 56bdb3f740b98506997e6f669d3f450dce0e427f.",
+  "method": "Baseline binding recorded 2026-08-25 from the already documented 2026-06-09 direct logged-in browser-session fetch. The exact browser-fetch time was not retained separately; verified_at is the source-update commit timestamp and this receipt does not represent a new Scholar fetch."
+}

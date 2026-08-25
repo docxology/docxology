@@ -28,6 +28,10 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+
+from scholar_verification import validate_scholar_snapshot_receipt  # noqa: E402
+
 SNAPSHOT = REPO_ROOT / "data" / "scholar-snapshot.json"
 
 
@@ -108,6 +112,13 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true", help="exit 1 on drift, no write")
     args = ap.parse_args()
+
+    receipt_errors = validate_scholar_snapshot_receipt(REPO_ROOT)
+    if receipt_errors:
+        print("Scholar verification receipt validation failed:")
+        for error in receipt_errors:
+            print(f"  - {error}")
+        return 1
 
     s = load_snapshot()
     drift = False

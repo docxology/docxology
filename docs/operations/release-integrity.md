@@ -11,7 +11,11 @@ generated layer, artifact, deployment, and live verification records agree.
    the dated review report. Queue new Zenodo candidates, ambiguous DOI changes,
    repository classifications, and Scholar or biographical changes for explicit
    review. Scholar metrics may change only after a direct authenticated profile
-   verification is recorded; a cached or anonymous result is not evidence.
+   verification is recorded; a cached or anonymous result is not evidence. Bind
+   each curated snapshot revision to
+   `data/scholar-verification-receipt.json`; its SHA-256 must match
+   `data/scholar-snapshot.json`, and `sync_scholar_metrics.py --check` rejects
+   a missing, stale, or non-direct/authenticated receipt.
 2. Apply only approved source changes, preserve permanent citation keys, and
    use `pages/BIBLIOGRAPHY.md` as the canonical citation DOI surface. Preserve a
    version/download DOI in `metadata.json` as `artifact_doi` rather than

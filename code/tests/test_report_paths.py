@@ -31,10 +31,9 @@ from report_paths import (  # noqa: E402
 
 
 @pytest.fixture
-def fake_reports(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
+def fake_reports(tmp_path: Path) -> Path:
     report_dir = tmp_path / "reports"
     report_dir.mkdir()
-    monkeypatch.setattr(report_paths, "REPORT_DIR", report_dir)
     return report_dir
 
 
@@ -53,31 +52,31 @@ def test_latest_report_picks_newest_by_name(fake_reports: Path):
     (fake_reports / "snapshot_2026-06-18.json").write_text("{}", encoding="utf-8")
     (fake_reports / "snapshot_2026-05-27.json").write_text("{}", encoding="utf-8")
 
-    latest = latest_report("snapshot_*.json")
+    latest = latest_report("snapshot_*.json", report_dir=fake_reports)
 
     assert latest.name == "snapshot_2026-06-18.json"
 
 
 def test_latest_report_raises_when_required_and_missing(fake_reports: Path):
     with pytest.raises(FileNotFoundError):
-        latest_report("nothing_*.json")
+        latest_report("nothing_*.json", report_dir=fake_reports)
 
 
 def test_latest_report_returns_none_when_not_required(fake_reports: Path):
-    assert latest_report("nothing_*.json", required=False) is None
+    assert latest_report("nothing_*.json", required=False, report_dir=fake_reports) is None
 
 
 def test_dated_report_path_normalizes_suffix(fake_reports: Path):
-    path = dated_report_path("asset_size", "json")
+    path = dated_report_path("asset_size", "json", report_dir=fake_reports)
     assert path.parent == fake_reports
     assert path.name == f"asset_size_{report_date_string()}.json"
 
-    path_with_dot = dated_report_path("asset_size", ".json")
+    path_with_dot = dated_report_path("asset_size", ".json", report_dir=fake_reports)
     assert path_with_dot == path
 
 
 def test_dated_report_dir_nests_under_prefix(fake_reports: Path):
-    d = dated_report_dir("visual-qa")
+    d = dated_report_dir("visual-qa", report_dir=fake_reports)
     assert d == fake_reports / "visual-qa" / report_date_string()
 
 
@@ -89,7 +88,7 @@ def test_latest_subdir_file_picks_newest_dated_directory(fake_reports: Path):
     (older / "manifest.json").write_text("{}", encoding="utf-8")
     (newer / "manifest.json").write_text("{}", encoding="utf-8")
 
-    found = latest_subdir_file("visual-qa", "manifest.json")
+    found = latest_subdir_file("visual-qa", "manifest.json", report_dir=fake_reports)
 
     assert found == newer / "manifest.json"
 
@@ -101,14 +100,14 @@ def test_latest_subdir_file_skips_directories_missing_the_file(fake_reports: Pat
     older_with_file.mkdir(parents=True)
     (older_with_file / "manifest.json").write_text("{}", encoding="utf-8")
 
-    found = latest_subdir_file("visual-qa", "manifest.json")
+    found = latest_subdir_file("visual-qa", "manifest.json", report_dir=fake_reports)
 
     assert found == older_with_file / "manifest.json"
 
 
 def test_latest_subdir_file_raises_when_required_and_missing(fake_reports: Path):
     with pytest.raises(FileNotFoundError):
-        latest_subdir_file("nonexistent-prefix", "manifest.json")
+        latest_subdir_file("nonexistent-prefix", "manifest.json", report_dir=fake_reports)
 
 
 def test_repo_path_resolves_relative_against_repo_root():

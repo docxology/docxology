@@ -66,6 +66,40 @@ def _sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def _write_scholar_source(root: Path, *, include_receipt: bool = True) -> None:
+    """Materialize a real source-and-sidecar pair for release fixtures."""
+    snapshot = root / "data/scholar-snapshot.json"
+    _write_json(
+        snapshot,
+        {
+            "profile_id": "canonical",
+            "citations": 10,
+            "h_index": 2,
+            "i10_index": 3,
+            "as_of": "2026-08-25",
+        },
+    )
+    if not include_receipt:
+        return
+    _write_json(
+        root / "data/scholar-verification-receipt.json",
+        {
+            "schema_version": "1.0",
+            "receipt_type": "google_scholar_direct_authenticated",
+            "profile_id": "canonical",
+            "direct": True,
+            "authenticated": True,
+            "verified_at": "2026-08-25T10:00:00Z",
+            "snapshot_path": "data/scholar-snapshot.json",
+            "snapshot_sha256": _sha256(snapshot),
+            "snapshot_as_of": "2026-08-25",
+            "metrics": {"citations": 10, "h_index": 2, "i10_index": 3},
+            "source": "local release-evidence fixture",
+            "method": "fixture direct authenticated verification",
+        },
+    )
+
+
 def _common(commit: str) -> dict:
     return {"generated_at": GENERATED, "source_commit": commit, **PROVENANCE}
 
@@ -126,7 +160,10 @@ def _screenshot(path: Path, label: str, root: Path) -> tuple[str, str]:
     return path.relative_to(root).as_posix(), _sha256(path)
 
 
-def _write_complete_evidence(root: Path, *, commit: str = COMMIT) -> None:
+def _write_complete_evidence(
+    root: Path, *, commit: str = COMMIT, include_scholar_receipt: bool = True
+) -> None:
+    _write_scholar_source(root, include_receipt=include_scholar_receipt)
     snapshot = _path_for(root, next(item for item in RELEASE_EVIDENCE if item.name == "public-source snapshot"))
     _write_json(
         snapshot,
@@ -188,6 +225,60 @@ def test_collect_release_evidence_accepts_complete_successful_exact_revision(tmp
     receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
     assert errors == []
     assert {receipt.name for receipt in receipts} == {requirement.name for requirement in RELEASE_EVIDENCE}
+    # A deferred public refresh is not a curated metric change.  The valid
+    # source-bound baseline receipt therefore permits release evidence.
+    review = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "public-source review"))
+    scholar_item = next(
+        item
+        for item in json.loads(review.read_text(encoding="utf-8"))["items"]
+        if item["category"] == "scholar_metric_change"
+    )
+    assert scholar_item["status"] == "deferred"
+
+
+def test_collect_release_evidence_rejects_missing_scholar_source_receipt(tmp_path):
+    _write_complete_evidence(tmp_path, include_scholar_receipt=False)
+
+    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+
+    assert any("missing direct authenticated Scholar verification receipt" in error for error in errors)
+
+
+def test_collect_release_evidence_rejects_tampered_scholar_snapshot(tmp_path):
+    _write_complete_evidence(tmp_path)
+    snapshot = tmp_path / "data/scholar-snapshot.json"
+    payload = json.loads(snapshot.read_text(encoding="utf-8"))
+    payload["citations"] = 11
+    _write_json(snapshot, payload)
+
+    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+
+    assert any("snapshot_sha256 does not match" in error for error in errors)
+    assert any("metrics do not match" in error for error in errors)
+
+
+def test_collect_release_evidence_rejects_tampered_scholar_receipt_binding(tmp_path):
+    _write_complete_evidence(tmp_path)
+    receipt = tmp_path / "data/scholar-verification-receipt.json"
+    payload = json.loads(receipt.read_text(encoding="utf-8"))
+    payload["snapshot_sha256"] = "0" * 64
+    _write_json(receipt, payload)
+
+    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+
+    assert any("snapshot_sha256 does not match" in error for error in errors)
+
+
+def test_collect_release_evidence_rejects_non_direct_scholar_source_receipt(tmp_path):
+    _write_complete_evidence(tmp_path)
+    receipt = tmp_path / "data/scholar-verification-receipt.json"
+    payload = json.loads(receipt.read_text(encoding="utf-8"))
+    payload["direct"] = False
+    _write_json(receipt, payload)
+
+    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+
+    assert any("direct=true and authenticated=true" in error for error in errors)
 
 
 def test_collect_release_evidence_rejects_stale_wrong_revision_and_failed_report(tmp_path):

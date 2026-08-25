@@ -57,43 +57,34 @@ def test_iter_local_links_ignores_fenced_markdown_examples():
     assert links == ["pages/README.md"]
 
 
-def test_validate_json_files_default_warns_on_missing_optional_artifacts(monkeypatch, tmp_path, capsys):
-    monkeypatch.setattr(vr, "REPO_ROOT", tmp_path)
-    monkeypatch.setattr(vr, "REQUIRED_JSON_FILES", [])
-    monkeypatch.setattr(vr, "OPTIONAL_REPORT_PATTERNS", [("accessibility_static_*.json", "accessibility static checks")])
-    monkeypatch.setattr(vr, "latest_report", lambda pattern, required=False: None)
-    monkeypatch.setattr(vr, "latest_subdir_file", lambda *args, **kwargs: None)
+def _validate_json_files_in_empty_repo(tmp_path: Path, *, strict_reports: bool) -> None:
+    vr.validate_json_files(
+        strict_reports,
+        repo_root=tmp_path,
+        required_json_files=[],
+        optional_report_patterns=[("accessibility_static_*.json", "accessibility static checks")],
+    )
 
-    vr.validate_json_files(False)
+
+def test_validate_json_files_default_warns_on_missing_optional_artifacts(tmp_path: Path, capsys):
+    _validate_json_files_in_empty_repo(tmp_path, strict_reports=False)
     output = capsys.readouterr().out
 
     assert "optional artifact warnings:" in output
     assert "Optional accessibility static checks report missing: accessibility_static_*.json" in output
 
 
-def test_validate_json_files_strict_enforces_optional_artifacts(monkeypatch, tmp_path):
-    monkeypatch.setattr(vr, "REPO_ROOT", tmp_path)
-    monkeypatch.setattr(vr, "REQUIRED_JSON_FILES", [])
-    monkeypatch.setattr(vr, "OPTIONAL_REPORT_PATTERNS", [("accessibility_static_*.json", "accessibility static checks")])
-    monkeypatch.setattr(vr, "latest_report", lambda pattern, required=False: None)
-    monkeypatch.setattr(vr, "latest_subdir_file", lambda *args, **kwargs: None)
-
+def test_validate_json_files_strict_enforces_optional_artifacts(tmp_path: Path):
     with pytest.raises(SystemExit):
-        vr.validate_json_files(True)
+        _validate_json_files_in_empty_repo(tmp_path, strict_reports=True)
 
 
-def test_validate_json_files_warns_on_optional_invalid_json(monkeypatch, tmp_path):
+def test_validate_json_files_warns_on_optional_invalid_json(tmp_path: Path):
     (tmp_path / "reports").mkdir()
     invalid = tmp_path / "reports" / "accessibility_static_2026-06-16.json"
     invalid.write_text("{not valid json", encoding="utf-8")
 
-    monkeypatch.setattr(vr, "REPO_ROOT", tmp_path)
-    monkeypatch.setattr(vr, "REQUIRED_JSON_FILES", [])
-    monkeypatch.setattr(vr, "OPTIONAL_REPORT_PATTERNS", [("accessibility_static_*.json", "accessibility static checks")])
-    monkeypatch.setattr(vr, "latest_report", lambda pattern, required=False: invalid)
-    monkeypatch.setattr(vr, "latest_subdir_file", lambda *args, **kwargs: None)
-
     with pytest.raises(SystemExit):
-        vr.validate_json_files(True)
+        _validate_json_files_in_empty_repo(tmp_path, strict_reports=True)
 
-    vr.validate_json_files(False)
+    _validate_json_files_in_empty_repo(tmp_path, strict_reports=False)

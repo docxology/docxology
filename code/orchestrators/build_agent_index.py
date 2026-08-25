@@ -22,6 +22,7 @@ DATASET_PATHS = {
     "videos_index": "data/videos-index.json",
     "search": "search-index.json",
     "claims": "data/claims.json",
+    "scholar_verification_receipt": "data/scholar-verification-receipt.json",
     "coverage_exceptions": "data/coverage-exceptions.json",
     "repository_classification": "data/repository-classification.json",
     "people": "data/people.json",
@@ -167,6 +168,24 @@ SCHEMAS = {
             "verification_method": "string",
             "maintenance_owner": "role responsible for refresh",
             "caveat": "string; do not silently omit uncertainty",
+        },
+    },
+    "ScholarVerificationReceipt": {
+        "type": "object",
+        "description": "A direct-authenticated verification assertion bound by SHA-256 to the canonical dated Scholar snapshot.",
+        "required": ["schema_version", "receipt_type", "profile_id", "direct", "authenticated", "verified_at", "snapshot_path", "snapshot_sha256", "snapshot_as_of", "metrics", "source", "method"],
+        "fields": {
+            "receipt_type": "google_scholar_direct_authenticated",
+            "profile_id": "string; canonical Google Scholar profile identifier",
+            "direct": "boolean; must be true",
+            "authenticated": "boolean; must be true",
+            "verified_at": "timezone-qualified ISO-8601 timestamp of the recorded direct observation",
+            "snapshot_path": "data/scholar-snapshot.json",
+            "snapshot_sha256": "SHA-256 of the exact canonical snapshot bytes",
+            "snapshot_as_of": "dated snapshot value",
+            "metrics": "object with non-negative citations, h_index, and i10_index",
+            "source": "provenance note for the recorded observation",
+            "method": "direct-authenticated verification method; not an implied new fetch",
         },
     },
     "SearchResult": {
@@ -406,6 +425,7 @@ def payload() -> dict:
     software = load_json("data/software.json")
     repositories = load_json("data/github-repositories.json")
     claims = load_json("data/claims.json")
+    scholar_receipt = load_json("data/scholar-verification-receipt.json")
     search = load_json("search-index.json")
     coverage = load_json("data/coverage-exceptions.json")
     classification = load_json("data/repository-classification.json")
@@ -421,13 +441,14 @@ def payload() -> dict:
     dataset_hashes = {key: sha256(REPO_ROOT / path) for key, path in DATASET_PATHS.items() if (REPO_ROOT / path).is_file()}
     dataset_hashes["current_counts"] = sha256(COUNTS)
     return {
-        "schema_version": "1.4",
+        "schema_version": "1.5",
         "generated_at": current.get("generated_at"),
         "canonical_origin": "https://danielarifriedman.com/",
         "canonical_sources": {
             "bibliography": "/pages/BIBLIOGRAPHY.md",
             "software": "/pages/SOFTWARE.md",
             "claims": "/data/claims.json",
+            "scholar_verification_receipt": "/data/scholar-verification-receipt.json",
             "counts": "/data/current-counts.json",
             "verification": "/pages/VERIFICATION_LOG.md",
             "backlog": "/TODO.md",
@@ -464,6 +485,7 @@ def payload() -> dict:
             "videos_index": {"path": "/data/videos-index.json", "count": videos_index.get("count", len(videos_index.get("videos", []))), "schema": "VideoIndex"},
             "search": {"path": "/search-index.json", "count": None, "schema": "SearchResult"},
             "claims": {"path": "/data/claims.json", "count": None, "schema": "ClaimWithEvidence"},
+            "scholar_verification_receipt": {"path": "/data/scholar-verification-receipt.json", "count": None, "schema": "ScholarVerificationReceipt"},
             "coverage_exceptions": {"path": "/data/coverage-exceptions.json", "count": len(coverage.get("exceptions", [])), "schema": "CoverageException"},
             "repository_classification": {"path": "/data/repository-classification.json", "count": len(classification.get("repositories", [])), "schema": "RepositoryClassification"},
             "pages_artifact": {"path": "/data/pages-artifact-manifest.json", "count": None, "schema": "PagesArtifactManifest"},
@@ -486,7 +508,7 @@ def payload() -> dict:
             {"id": "live-site", "path": latest_report("live_site_verification_*.json", "reports/live_site_verification_2026-05-15.json"), "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
         ],
         "schemas": SCHEMAS,
-        "schema_registry_version": "1.2",
+        "schema_registry_version": "1.3",
         "schema_examples": {
             "Work": works.get("works", [])[:1],
             "SoftwareRepository": software.get("repositories", [])[:1],
@@ -497,6 +519,7 @@ def payload() -> dict:
             },
             "Repository": repositories.get("repositories", [])[:1],
             "ClaimWithEvidence": claims.get("claims", [])[:1],
+            "ScholarVerificationReceipt": scholar_receipt,
             "SearchResult": search.get("items", [])[:1],
             "CoverageException": coverage.get("exceptions", [])[:1],
             "RepositoryClassification": classification.get("repositories", [])[:1],
@@ -507,7 +530,7 @@ def payload() -> dict:
         "dataset_hashes": dataset_hashes,
         "source_provenance": {
             "generated_by": "code/orchestrators/build_agent_index.py",
-            "source_of_truth": ["pages/BIBLIOGRAPHY.md", "pages/SOFTWARE.md", "data/current-counts.json"],
+            "source_of_truth": ["pages/BIBLIOGRAPHY.md", "pages/SOFTWARE.md", "data/current-counts.json", "data/scholar-snapshot.json", "data/scholar-verification-receipt.json"],
             "hash_policy": "SHA-256 values cover hosted JSON datasets and integrity manifests at generation time.",
         },
         "hosted_availability": {
@@ -527,7 +550,7 @@ def payload() -> dict:
         "counts": counts,
         "freshness": {
             "policy": "Use generated_at and checked_at fields; do not infer freshness from page copy.",
-            "volatile_sources": ["data/current-counts.json", "data/scholar-snapshot.json", "data/verification-log.json"],
+            "volatile_sources": ["data/current-counts.json", "data/scholar-snapshot.json", "data/scholar-verification-receipt.json", "data/verification-log.json"],
             "verification": "/cite-verify.html",
         },
         "query_recipes": {
@@ -537,6 +560,7 @@ def payload() -> dict:
             "raw_bibliography": "/pages/BIBLIOGRAPHY.md",
             "repository_by_full_name": "/repositories.html?repo={owner}/{name}",
             "claim_by_id": "/data/claims.json#id={claim_id}",
+            "scholar_verification_receipt": "/data/scholar-verification-receipt.json",
             "reports": "/data/agent-index.json#reports",
             "coverage_exceptions": "/data/coverage-exceptions.json",
             "repository_classification": "/data/repository-classification.json",

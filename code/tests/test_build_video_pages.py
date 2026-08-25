@@ -189,7 +189,7 @@ def test_video_check_rejects_a_symlinked_generated_output(tmp_path: Path):
     assert outside.read_text(encoding="utf-8") == "outside must survive\n"
 
 
-def test_render_video_page_uses_local_page_and_youtube_embed(monkeypatch):
+def test_render_video_page_uses_local_page_and_youtube_embed():
     video = sample_video()
     video["topics"] = build_video_pages.infer_topics(video)
     video["related_pages"] = build_video_pages.related_pages(video)
@@ -202,8 +202,7 @@ def test_render_video_page_uses_local_page_and_youtube_embed(monkeypatch):
             "url": "/works/Friedman2026GNN.html",
         }
     ]
-    monkeypatch.setattr(build_video_pages, "read_transcript", lambda _id: ("transcript body", "data/video-transcripts/abc123.txt"))
-    html = build_video_pages.render_video_page(video)
+    html = build_video_pages.render_video_page(video, transcript="transcript body")
     assert 'rel="canonical" href="https://danielarifriedman.com/videos/institute-abc123.html"' in html
     assert "https://www.youtube-nocookie.com/embed/abc123" in html
     assert "Generalized Notation Notation" in html

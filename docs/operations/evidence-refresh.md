@@ -59,6 +59,17 @@ difference is only a reviewed candidate: update
 `data/scholar-snapshot.json` deliberately, run
 `sync_scholar_metrics.py`, and regenerate dependent outputs afterward.
 
+The release source contract is stricter than the review queue: every curated
+snapshot is bound to
+[`data/scholar-verification-receipt.json`](../../data/scholar-verification-receipt.json).
+That sidecar records the direct/authenticated assertion, the canonical metrics
+and as-of date, a source/method note, and the SHA-256 of the exact snapshot
+bytes. Update the receipt in the same review as any snapshot edit, then run
+`uv run python3 code/orchestrators/sync_scholar_metrics.py --check`; a stale,
+missing, anonymous, or mismatched receipt fails before derived surfaces can be
+accepted. The sidecar can preserve an already-verified baseline across later
+releases; it is not evidence that a new external refresh found a change.
+
 Use an explicit review record before applying any queue item. For example, a
 DOI-role proposal must be reviewed and supplied back to
 `reconcile_paper_dois.py --apply`; a pairing decision belongs in

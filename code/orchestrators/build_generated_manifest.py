@@ -125,7 +125,12 @@ ARTIFACTS = [
             "pages/LINKS.md",
             "publications.html (header metrics pill)",
         ],
-        "sources": ["data/scholar-snapshot.json", "code/orchestrators/sync_scholar_metrics.py"],
+        "sources": [
+            "data/scholar-snapshot.json",
+            "data/scholar-verification-receipt.json",
+            "code/src/scholar_verification.py",
+            "code/orchestrators/sync_scholar_metrics.py",
+        ],
         "command": "python3 code/orchestrators/sync_scholar_metrics.py",
     },
     {
@@ -220,6 +225,7 @@ ARTIFACTS = [
             "data/works.json",
             "data/software.json",
             "data/claims.json",
+            "data/scholar-verification-receipt.json",
             "reports/*latest dated reports",
             "code/orchestrators/build_agent_index.py",
         ],
