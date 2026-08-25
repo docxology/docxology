@@ -27,7 +27,7 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 from biblio_table import DEFAULT_BIB_PATH, BiblioRow, iter_bibliography_rows  # noqa: E402
 from bibliography_links import canonical_link_url  # noqa: E402
-from export_bibliography import row_to_work  # noqa: E402
+from export_bibliography import row_to_work, source_paths  # noqa: E402
 from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from site_facts import generated_date, generated_month_year  # noqa: E402
 
@@ -104,7 +104,8 @@ def source_works_by_num(rows: list[BiblioRow]) -> dict[int, dict]:
     paper directories, while ``export_bibliography.py --check`` independently
     verifies the JSON export.
     """
-    works = [asdict(row_to_work(row)) for row in rows]
+    visible_source_paths = source_paths()
+    works = [asdict(row_to_work(row, visible_source_paths=visible_source_paths)) for row in rows]
     by_num = {work["num"]: work for work in works}
     if len(by_num) != len(rows):  # validate_rows prevents this; retain a hard guard for callers.
         raise ValueError("Duplicate bibliography row number in static table projection")
