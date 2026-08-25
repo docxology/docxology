@@ -253,6 +253,7 @@
       ],
       "sources": [
         "tracked repository files",
+        "code/src/release_controls.py",
         "code/orchestrators/build_pages_artifact.py",
         "docs/operations/github-pages-artifact.md"
       ],

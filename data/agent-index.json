@@ -1064,11 +1064,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 842350759,
+        "source_bytes": 842092733,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4591,
-        "artifact_bytes": 843156446
+        "artifact_file_count": 4592,
+        "artifact_bytes": 842898452
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1098,7 +1098,7 @@
     "work_enrichment": "6a5912598474501d96672a9a28a1ef511feeb054c30e22868e77bdeedb3ef0b1",
     "catalog": "cc21dec73f39fb10ea061497de12b3599f7cf3f3a7cdb86f2305e32588afab0c",
     "reconciliation": "c872e7faee82afceae706cb1e76894a7b4186863312431a187e857ff788f71b5",
-    "generated_manifest": "bc59e229c50bbe59b5dff616bb5a8c0157f7b515134daafd774fc9f8f2d62665",
+    "generated_manifest": "89e6e9b3064a7692796aaa07c6fc9bfa4df9cc3b3d7b2963235a7b0b290b538c",
     "current_counts": "cbb15d0560fdfad56d2854b1c3482a355d95c9d9a101f685134ff6303cca5d7b"
   },
   "source_provenance": {
