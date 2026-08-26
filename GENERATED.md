@@ -42,7 +42,7 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Exports hub | `exports.html` | `code/orchestrators/build_exports_page.py`<br>`data/catalog.json` | `python3 code/orchestrators/build_exports_page.py` |
 | Updates page | `updates.html` | `CHANGELOG.md`<br>`code/orchestrators/build_updates_page.py` | `python3 code/orchestrators/build_updates_page.py` |
 | External link report | `reports/external_links_2026-08-26.json` | `all root-level public HTML plus site-critical Markdown and JSON-LD surfaces` | `python3 code/orchestrators/check_external_links.py` |
-| Public source snapshot | `reports/public_source_snapshot_2026-08-26.json` | `GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs` | `python3 code/orchestrators/refresh_public_sources.py` |
+| Public source snapshot | `reports/public_source_snapshot_2026-08-25.json` | `GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs` | `python3 code/orchestrators/refresh_public_sources.py` |
 | Public source inventory | `reports/public_source_inventory_2026-08-25.json` | `ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages` | `python3 code/orchestrators/refresh_public_source_inventory.py` |
 | External link triage | `reports/external_links_triage_2026-08-26.json`<br>`reports/external_links_triage_2026-08-26.md` | `reports/external_links_2026-08-26.json` | `python3 code/orchestrators/build_external_link_triage.py` |
 | Asset size audit | `reports/asset_size_2026-08-26.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |

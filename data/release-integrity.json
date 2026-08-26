@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-08-13T17:52:47+00:00",
-  "source_commit_at_generation": "dd21694d72213d7a2f19f4735ee9e166f5aed70f",
+  "source_commit_at_generation": "9a87d6493df43fdd0362f3019522f0dde3361fb2",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -11,8 +11,8 @@
     "orchestrator_sha256": {
       "code/orchestrators/regenerate_all.py": "67e78a22e548866d5589213fdff294ea2dc864583f75dc0f4ba4882083b3ac6b",
       "code/orchestrators/build_pages_artifact.py": "864f1217f801b4043a44a7ad7df96f6f70b7bb91167d7901f022807e9ae1284e",
-      "code/orchestrators/build_agent_index.py": "5340ce0bcce6ba4acd5c296e8557e3995f8e2ad6e4c1f2343bc0d01931626ed8",
-      "code/orchestrators/build_coverage_exceptions.py": "0e8a320869ad8cf57f84647ee9eb61cd30cdc26c4381cc1cc44c1d006b9f04b7",
+      "code/orchestrators/build_agent_index.py": "0ecebdf6006de2d602f1b9b2fc86a3a9a3128b4370cf59ebe89218bafecf21aa",
+      "code/orchestrators/build_coverage_exceptions.py": "f915d3b576f9ff07bd7520aeba1baaaa1e27dc704eea5d8cc20fe0bac03f9c1f",
       "code/orchestrators/classify_repositories.py": "16372829f868a684b5fe0d8de07aad4544ce27e194d52e1e559ed4f070636edc",
       "code/orchestrators/audit_assets.py": "0559fef3b098e7fe1d58cfd5f48db508d02ffc911c4a060d209a4a086d27cfb9",
       "code/src/public_integrity.py": "784d7fb7007bf2f4a2f0c2d178a4d157d80c647926c04d88a1c83854bc161da0",
@@ -23,23 +23,23 @@
     "pages/BIBLIOGRAPHY.md": "5394eefed3264ed2cf187d03ae529699ce9bcf184b948f2ed46a67bee5327c44",
     "pages/SOFTWARE.md": "fc4ad53dd90b35cd009a1cd8e0334bf4a08b4ccb1719b3389a0fb2b8691310ea",
     "resume/source.json": "e98f03c2c58a6063b6790c6ccc3cbfc976897e3fbb8dfd175ec3f8d2730f1c4c",
-    "data/current-counts.json": "a210fa4615bf61b73fbb18d7e8f5b705faa6552e2504a7de5826ecbcdb7be70a",
+    "data/current-counts.json": "49f3c9448c56958f14972c2f958420cfb686f8d1501596d3f68ab7f4e1d1224f",
     "data/coverage-exceptions.json": "d2f33b35f73488fe1e794dc684cb6a7574c5294d2a8fe750f3bd4b8fb6f18499",
     "data/repository-classification.json": "c93bd5e9e025ce71f9cf73c8e261f8eb5b2d7b9e7af5c3b76127a473aa47f2a3",
-    "data/agent-index.json": "65e24bdb378815786db660bd7855e094309e48d53ebca7395b76c7c089504556",
-    "data/generated-manifest.json": "1b138e5dce1861ba23696045afa05386b2662e0788d01eea22000d53a9f74226",
-    "data/pages-artifact-manifest.json": "5ed8bd0a0b0d6b7eb5aadf0f94582a127c6b492f9bfd90fbf4e13fdd0462d637"
+    "data/agent-index.json": "1bf3e7bcfb8577f651b1c581e1589e38d4ff5f15dfeb7855fa497c9e5631ff9f",
+    "data/generated-manifest.json": "fb67cfa29a49778b3987a2fc2971a06e766675d7dc3a6f4880f8d68d5c95ca4b",
+    "data/pages-artifact-manifest.json": "5d0cb58174cb4423d113bf178176658f31fcfb6287c3ccb74b02c61e40a5ba1b"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "dd21694d72213d7a2f19f4735ee9e166f5aed70f",
+    "source_commit_at_generation": "9a87d6493df43fdd0362f3019522f0dde3361fb2",
     "artifact_file_count": 4611,
-    "artifact_bytes": 844534281,
+    "artifact_bytes": 844539461,
     "omitted_paper_image_count": 8886
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "dd21694d72213d7a2f19f4735ee9e166f5aed70f",
+    "candidate_source_commit": "9a87d6493df43fdd0362f3019522f0dde3361fb2",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
