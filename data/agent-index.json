@@ -1143,7 +1143,7 @@
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "ed79f52205714cd7dd1612e593aa7b21cb09a7cc53ed2bf305e4cef731efe0f9",
     "videos_index": "780a61904ec3c6ff20f7c8f6cfa09d2a7d2eeb6b1af2bf9c4f41c1b62cc0aa6e",
-    "search": "2141a8e6d96fd732478d46064caa4d906ae6f12b2b17689766b96c03f23a2e90",
+    "search": "1c31a3f54ff0e5249ac3225add88432ec9dcdab531044bf65aff55d1d89b0a11",
     "claims": "e0338070cfa8bc31a70d6469faceb7e77c2eb7cabb579529f0fe59d6ed9c9cd1",
     "scholar_verification_receipt": "cf2b24222b0c4932cf51681cdcc54dd11950371607407378333a5a9503ebaf7f",
     "coverage_exceptions": "d2f33b35f73488fe1e794dc684cb6a7574c5294d2a8fe750f3bd4b8fb6f18499",
@@ -1152,9 +1152,9 @@
     "organizations": "db61c3c277f2fadfffbbdb8abdfd44198abfffdb53f87196377d338722ad0fc4",
     "resume": "9d25665162f201b06abaa14c9f99d8e9f6db0bae508def7f2b3c6adaf0b34690",
     "work_enrichment": "6a5912598474501d96672a9a28a1ef511feeb054c30e22868e77bdeedb3ef0b1",
-    "catalog": "dd2b806b10a93b17f32cc42a2090eb50ed62292da84899bbacec1db05cc00269",
+    "catalog": "a45ee7bdddd3faf90f783262e0d3bc6fdc367d62f07710f249f0ce0f199c5be8",
     "reconciliation": "abb5bd6b0b6dadb826aed9c974051468c9affbe6a22a61ab6cc5ee2aa45edf26",
-    "generated_manifest": "5a048242e32132bc9333bfa33e07208c64bf8de0e0c3e01b8ce34a5d301df733",
+    "generated_manifest": "fb67cfa29a49778b3987a2fc2971a06e766675d7dc3a6f4880f8d68d5c95ca4b",
     "current_counts": "6c5a5f564c1952509cec76e4a39c8d2ee56b70c7df1963379357d2dc793cc14c"
   },
   "source_provenance": {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T01:31:58Z",
+  "generated_at": "2026-08-26T01:48:00Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -415,7 +415,7 @@
       "id": "page:external-links",
       "type": "report",
       "title": "External Link Report",
-      "url": "/reports/external_links_2026-05-15.json",
+      "url": "/reports/external_links_2026-08-26.json",
       "summary": "Cached network check over site-critical external links.",
       "tags": [
         "links",
@@ -427,7 +427,7 @@
       "id": "page:external-link-triage",
       "type": "report",
       "title": "External Link Triage",
-      "url": "/reports/external_links_triage_2026-05-15.md",
+      "url": "/reports/external_links_triage_2026-08-26.md",
       "summary": "Categorized warning report for scoped external links.",
       "tags": [
         "links",
