@@ -27,6 +27,7 @@ The safest default is: **scan live sources, inspect the report, apply only stron
 - `needs_review` actions are review-only. Do not auto-apply them without manual curation.
 - Same-title / same-GitHub-release Zenodo versions update the existing row instead of creating duplicate bibliography entries.
 - **Canonical citation DOI = the DOI in `pages/BIBLIOGRAPHY.md`.** This is normally Zenodo's *concept* DOI (which resolves to the latest version), but a deliberately distinct work may use a version DOI to remain unique. Mirror that selected citation DOI in `metadata.json` as `doi`; retain a version/download record separately as optional `artifact_doi` and `artifact_doi_url`. Never replace the bibliography citation DOI merely because an artifact record has a different DOI.
+- Run `check_zenodo_uncatalogued.py` after a Zenodo refresh. Its dated report records any approved version-DOI exception with the exact record id, title, concept DOI, and bibliography DOI; a missing or changed approved exception, or any new version-only DOI citation, fails `--check` for explicit review.
 - Public APIs are freshness checks. Curated local rows remain the source of truth after review and application.
 
 ## Preconditions

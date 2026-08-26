@@ -1,10 +1,22 @@
 {
-  "generated_at": "2026-08-26T20:08:55Z",
+  "generated_at": "2026-08-26T20:27:52Z",
   "zenodo_records_fetched": 148,
   "bibliography_dois": 195,
   "uncatalogued_count": 0,
   "non_canonical_doi_count": 0,
+  "approved_version_specific_doi_exception_count": 1,
+  "version_specific_doi_exception_drift_count": 0,
   "warnings": [],
   "uncatalogued": [],
-  "non_canonical_doi": []
+  "non_canonical_doi": [],
+  "approved_version_specific_doi_exceptions": [
+    {
+      "record_id": "17982447",
+      "title": "The Active Inference Institute & Active Inference Ecosystem",
+      "concept_doi": "10.5281/zenodo.14108991",
+      "version_doi_in_bibliography": "10.5281/zenodo.17982447",
+      "reason": "AII Ecosystem v3 is a separately curated 2025 bibliographic snapshot, distinct from the earlier v2 concept record."
+    }
+  ],
+  "version_specific_doi_exception_drift": []
 }
