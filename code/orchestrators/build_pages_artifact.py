@@ -15,10 +15,11 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import shutil
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -40,6 +41,7 @@ WARNING_ARTIFACT_BYTES = 850 * 1024 * 1024
 HARD_ARTIFACT_BYTES = 1024 * 1024 * 1024
 ARTIFACT_MANIFEST = REPO_ROOT / "data" / "pages-artifact-manifest.json"
 GROWTH_REPORT = REPO_ROOT / "reports" / f"pages_artifact_growth_{datetime.now(timezone.utc).date().isoformat()}.json"
+_GROWTH_REPORT_NAME = re.compile(r"^pages_artifact_growth_(\d{4}-\d{2}-\d{2})\.json$")
 
 EXCLUDED_ROOTS = {
     ".benchmarks",
@@ -232,6 +234,41 @@ def manifest_drift_fields(existing: dict, expected: dict) -> list[str]:
     return [field for field in MANIFEST_COMPARISON_FIELDS if existing.get(field) != expected.get(field)]
 
 
+def _recorded_growth_report(existing: dict | None) -> Path | None:
+    """Return a valid prior growth receipt path from an existing manifest.
+
+    A no-write check can run after UTC midnight without a newly generated
+    growth receipt.  In that case the manifest must continue to describe its
+    committed, date-stamped receipt instead of becoming stale solely because
+    the wall clock advanced.  Keep the accepted form narrow so a malformed
+    manifest value remains a detectable drift error rather than an arbitrary
+    artifact path.
+    """
+    raw = existing.get("growth_report") if isinstance(existing, dict) else None
+    if not isinstance(raw, str) or "\\" in raw:
+        return None
+    candidate = Path(raw)
+    if candidate.is_absolute() or ".." in candidate.parts or candidate.parent != Path("reports"):
+        return None
+    match = _GROWTH_REPORT_NAME.fullmatch(candidate.name)
+    if match is None:
+        return None
+    try:
+        date.fromisoformat(match.group(1))
+    except ValueError:
+        return None
+    return candidate
+
+
+def _growth_report_for_manifest(existing: dict | None, *, include_pending_growth: bool) -> Path:
+    """Select the receipt that a write or no-write manifest pass must describe."""
+    if not include_pending_growth:
+        recorded = _recorded_growth_report(existing)
+        if recorded is not None:
+            return recorded
+    return GROWTH_REPORT.relative_to(REPO_ROOT)
+
+
 def _manifest_payload(existing: dict | None = None, *, include_pending_growth: bool = True) -> dict:
     manifest_rel = ARTIFACT_MANIFEST.relative_to(REPO_ROOT)
     relative_paths = _relative_paths()
@@ -242,7 +279,9 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
     # Check path: only require that path when the file is actually on disk,
     # otherwise later-day CI `--check-manifest` would fail against a committed
     # manifest that still lists the previous day's report.
-    growth_rel = GROWTH_REPORT.relative_to(REPO_ROOT)
+    growth_rel = _growth_report_for_manifest(
+        existing, include_pending_growth=include_pending_growth
+    )
     expected_control_paths = set(relative_paths)
     if include_pending_growth:
         expected_control_paths.add(growth_rel)
@@ -302,7 +341,7 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
         ],
         "omitted_paper_images": _omitted_summary(paper_images, omitted_sources),
         "omitted_visual_qa_screenshots": _omitted_summary(visual_qa_screenshots, omitted_sources),
-        "growth_report": str(GROWTH_REPORT.relative_to(REPO_ROOT)),
+        "growth_report": str(growth_rel),
     }
     # The manifest is part of the artifact. Iterate to account for its own
     # serialized byte size without introducing a self-referential hash.
