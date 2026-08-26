@@ -81,14 +81,14 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-08-26T02:17:59+00:00",
+  "generated_at": "2026-08-26T02:30:55+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",
     "paired_publication_decisions": "data/paired-publication-decisions.json",
     "paired_publications": "reports/paired_publications_2026-08-19.json",
     "paper_folders": "papers/README.md",
-    "public_source_snapshot": "reports/public_source_snapshot_2026-08-25.json",
+    "public_source_snapshot": "reports/public_source_snapshot_2026-08-26.json",
     "software_catalog": "pages/SOFTWARE.md",
     "software_export": "data/software.json",
     "works_export": "data/works.json"
