@@ -25,6 +25,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 import release_controls  # noqa: E402
+from release_evidence import is_ephemeral_release_evidence_path  # noqa: E402
 
 # Re-export the shared policy for existing callers and focused contract tests.
 CONTROL_FILES = release_controls.CONTROL_FILES
@@ -76,6 +77,47 @@ def tracked_paths() -> list[Path]:
     if GROWTH_REPORT.exists() and growth_report not in paths:
         paths.append(growth_report)
     return paths
+
+
+def dirty_postdeploy_payload_paths(repo_root: Path = REPO_ROOT) -> list[Path]:
+    """Return dirty tracked evidence that would corrupt a source manifest.
+
+    A Pages manifest hashes source files from the working tree.  Fresh
+    post-deploy evidence can intentionally modify a tracked dated receipt in
+    place, but that byte content is not present in the candidate commit.  Do
+    not let a source-manifest write record those temporary bytes; generate the
+    control tail from a clean worktree instead.
+    """
+    result = subprocess.run(
+        ["git", "diff", "--name-only", "-z", "HEAD", "--"],
+        cwd=repo_root,
+        capture_output=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        raise SystemExit("unable to inspect dirty Pages inputs")
+    return sorted(
+        (
+            path
+            for path in (Path(raw) for raw in result.stdout.decode().split("\0") if raw)
+            if is_published_path(path)
+            and is_ephemeral_release_evidence_path(path.as_posix())
+            and not is_control_path(path)
+        ),
+        key=lambda path: path.as_posix(),
+    )
+
+
+def require_clean_postdeploy_payload_inputs(repo_root: Path = REPO_ROOT) -> None:
+    """Fail before source-manifest work can consume mutable evidence bytes."""
+    dirty = dirty_postdeploy_payload_paths(repo_root)
+    if dirty:
+        joined = ", ".join(path.as_posix() for path in dirty)
+        raise SystemExit(
+            "dirty post-deploy Pages inputs: "
+            + joined
+            + "; regenerate the Pages control tail in a clean worktree"
+        )
 
 
 def is_paper_extracted_image(path: Path) -> bool:
@@ -366,6 +408,7 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
 
 
 def write_manifest() -> dict:
+    require_clean_postdeploy_payload_inputs()
     existing = None
     manifest_rel = ARTIFACT_MANIFEST.relative_to(REPO_ROOT)
     if ARTIFACT_MANIFEST.exists():
@@ -407,6 +450,7 @@ def write_manifest() -> dict:
 
 
 def check_manifest() -> None:
+    require_clean_postdeploy_payload_inputs()
     if not ARTIFACT_MANIFEST.exists():
         raise SystemExit(f"Missing Pages artifact manifest: {ARTIFACT_MANIFEST.relative_to(REPO_ROOT)}")
     manifest_path = source_path(ARTIFACT_MANIFEST.relative_to(REPO_ROOT))
@@ -422,6 +466,7 @@ def check_manifest() -> None:
 
 
 def assemble(output: Path) -> tuple[int, int, list[str]]:
+    require_clean_postdeploy_payload_inputs()
     if output.exists():
         shutil.rmtree(output)
     output.mkdir(parents=True)
@@ -444,6 +489,7 @@ def assemble(output: Path) -> tuple[int, int, list[str]]:
 
 def projected_size() -> tuple[int, int]:
     """Return (included file count, included bytes) without copying files."""
+    require_clean_postdeploy_payload_inputs()
     paths = _relative_paths()
     return len(paths), sum(source_path(path).stat().st_size for path in paths)
 

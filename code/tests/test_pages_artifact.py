@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import sys
+import subprocess
 from pathlib import Path
 
 import pytest
@@ -11,6 +12,10 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
 import build_pages_artifact as bpa  # noqa: E402
+
+
+def _git(repo: Path, *args: str) -> None:
+    subprocess.run(["git", *args], cwd=repo, check=True, capture_output=True, text=True)
 
 
 def test_paper_extracted_binary_images_are_omitted_from_pages():
@@ -91,6 +96,27 @@ def test_pages_input_hard_links_fail_closed(tmp_path):
 
     with pytest.raises(SystemExit, match="hard-linked Pages input"):
         bpa.source_path(Path("published.txt"), repo_root=tmp_path)
+
+
+def test_pages_manifest_rejects_dirty_postdeploy_receipts(tmp_path):
+    _git(tmp_path, "init", "-q")
+    _git(tmp_path, "config", "user.email", "test@example.invalid")
+    _git(tmp_path, "config", "user.name", "Pages fixture")
+    report = tmp_path / "reports" / "external_links_2026-08-25.json"
+    control = tmp_path / "reports" / "public_source_review_2026-08-25.json"
+    report.parent.mkdir()
+    report.write_text("committed\n", encoding="utf-8")
+    control.write_text("committed\n", encoding="utf-8")
+    _git(tmp_path, "add", "reports")
+    _git(tmp_path, "commit", "-qm", "receipt baseline")
+    report.write_text("fresh evidence\n", encoding="utf-8")
+    control.write_text("control tail\n", encoding="utf-8")
+
+    assert bpa.dirty_postdeploy_payload_paths(tmp_path) == [
+        Path("reports/external_links_2026-08-25.json")
+    ]
+    with pytest.raises(SystemExit, match="regenerate the Pages control tail in a clean worktree"):
+        bpa.require_clean_postdeploy_payload_inputs(tmp_path)
 
 
 def test_growth_report_contract_is_compared_by_manifest_validation():
