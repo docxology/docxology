@@ -32,7 +32,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 | Platform | Link | Description |
 |----------|------|-------------|
-| Google Scholar | [scholar.google.com/citations?user=DXjPFtYAAAAJ](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) | 777 citations, h-index 15, i10-index 17 (as of 2026-06-09) |
+| Google Scholar | [scholar.google.com/citations?user=DXjPFtYAAAAJ](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en) | 815 citations, h-index 14, i10-index 16 (as of 2026-08-26) |
 | ORCID | [0000-0001-6232-9096](https://orcid.org/0000-0001-6232-9096) | Persistent researcher identifier; 20 public work groups (ORCID API, May 2026) |
 | ResearchGate | [researchgate.net/profile/Daniel-Friedman-2](https://www.researchgate.net/profile/Daniel-Friedman-2) | 54+ publications, metrics, full-text access |
 | DBLP | [dblp.org/pid/346/2173](https://dblp.org/pid/346/2173.html) | Computer science bibliography |
@@ -52,7 +52,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | ISSS Wiki | [wiki.isss.org](https://wiki.isss.org/index.php/Daniel_Friedman) | International Society for the Systems Sciences (member since 2022) |
 | ALIUS Research Group | [aliusresearch.org](https://www.aliusresearch.org/) | Alterations of Consciousness research group — published 4 interviews/papers in ALIUS Bulletin |
 | ALIUS Team Page | [aliusresearch.org/team (Friedman)](https://www.aliusresearch.org/team-222796.html) | Individual researcher profile and bio |
-| Stanford Dissertation | [purl.stanford.edu/pb813wm1484](http://purl.stanford.edu/pb813wm1484) | PhD thesis (2019) |
+| Stanford Dissertation | [purl.stanford.edu/pb813wm1484](https://purl.stanford.edu/pb813wm1484) | PhD thesis (2019) |
 
 ---
 
@@ -63,7 +63,7 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 | Active Inference Institute | President & Treasurer, Co-founder | [activeinference.org](https://activeinference.org/) |
 | Active Inference Institute Governance Site | Officers, board, history, programs | [activeinference.institute](https://www.activeinference.institute/) |
 | Active Inference Institute Officers | Officer page | [activeinference.institute/structure/officers](https://activeinference.institute/structure/officers/) |
-| Active Inference Institute Board | Board of Directors (10 current members listed May 2026) | [activeinference.institute/structure/board-of-directors](https://activeinference.institute/structure/board-of-directors/) |
+| Active Inference Institute Board | Board of Directors (11 current members listed August 2026) | [activeinference.institute/structure/board-of-directors](https://activeinference.institute/structure/board-of-directors/) |
 | AII Scientific Advisory Board | 2026 SAB cohort and prior advisory cohorts | [activeinference.institute/structure/scientific-advisory-board](https://activeinference.institute/structure/scientific-advisory-board/) |
 | AII Wikidata | Knowledge-graph entity anchor | [Q139600792](https://www.wikidata.org/wiki/Q139600792) |
 | AII History | Founding timeline (2019– ) | [activeinference.institute/history](https://www.activeinference.institute/history) |
@@ -156,12 +156,12 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 
 | Project | Link | Description |
 |---------|------|-------------|
-| Curio Cards | [curio.cards/artist/danielfriedman](https://curio.cards/artist/danielfriedman/) | Cards 24, 25, 26 — recognized in NFT archaeology as early Ethereum art NFTs (minted May 9, 2017; predates CryptoPunks by ~6 weeks) |
+| Curio Cards | [curio.cards/artist/danielfriedman](https://curio.cards/artist/danielfriedman/) | Cards 24, 25, 26 — part of the Curio Cards collection, which debuted on May 9, 2017; all original cards were minted during 2017 |
 | Curio Cards Docs | [docs.curio.cards](https://docs.curio.cards/the-artists/daniel-friedman) | Artist documentation |
 | Curio Cards Medium | [medium.com/@curiocards](https://medium.com/@curiocards/daniel-friedman-decentralized-beauty-nft-art-and-ants-7dc664b72534) | "Decentralized Beauty: NFT Art and Ants" |
 | NFT Archaeology | [nftarchaeology.io](https://nftarchaeology.io/nft-details/curiocards) | Curio Cards historical timeline entry |
 | Writing on Curio Cards (Taschen "On NFT" book) | [ISBN 978-3-8365-9970-2](../papers/2024_CurioCards/) | Published chapter in Taschen book |
-| Christie's Auction | [christies.com](https://www.christies.com/en/lot/lot-6337619) | Full Curio Cards set auctioned October 1, 2021 |
+| Christie's Auction | [christies.com](https://www.christies.com/en/lot/lot-6337619) | Full Curio Cards set sold in New York on September 30, 2021 (Christie's stated date) |
 
 ---
 

@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import json
 import os
 import re
@@ -29,6 +30,7 @@ from publication_pairing import (  # noqa: E402
     PublicationPair,
     SyncAction,
     ZenodoRecord,
+    canonical_pair_candidate_fingerprint,
     find_publication_pairs,
     generated_timestamp,
     infer_domain,
@@ -38,6 +40,7 @@ from publication_pairing import (  # noqa: E402
     render_citation,
     render_readme,
     render_skill,
+    reviewed_pair_decision_index,
     slug_topic,
 )
 
@@ -66,6 +69,9 @@ class AppliedPublication:
     folder: str
     created: bool
     updated_files: tuple[str, ...]
+    action: dict[str, Any] | None = None
+    metadata_path: str = ""
+    metadata_sha256: str = ""
 
 
 def report_path_for_today(repo_root: Path = REPO_ROOT) -> Path:
@@ -279,11 +285,16 @@ def existing_repo_title_map(repo_root: Path = REPO_ROOT) -> dict[tuple[str, str]
     return out
 
 
-def _reviewed_pair_key(doi: str, github_release_url: str) -> tuple[str, str]:
-    return doi.strip().lower(), github_release_url.strip()
+def reviewed_pair_decisions(
+    repo_root: Path = REPO_ROOT,
+) -> dict[tuple[str, str, str, str, str, str], dict[str, str]]:
+    """Load durable decisions keyed by their full reviewed candidate identity.
 
-
-def reviewed_pair_decisions(repo_root: Path = REPO_ROOT) -> dict[tuple[str, str], dict[str, str]]:
+    A DOI/release-only key lets a later Zenodo record, title, repository, or
+    tag inherit a decision that reviewed different public evidence.  Legacy
+    rows are retained only when their group context reconstructs every field
+    of the current canonical fingerprint.
+    """
     path = repo_root / PAIRED_PUBLICATION_DECISIONS
     if not path.exists():
         return {}
@@ -291,35 +302,7 @@ def reviewed_pair_decisions(repo_root: Path = REPO_ROOT) -> dict[tuple[str, str]
         payload = json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError:
         return {}
-    decisions: dict[tuple[str, str], dict[str, str]] = {}
-    for group in payload.get("groups", []):
-        if not isinstance(group, dict):
-            continue
-        group_decision = str(group.get("decision") or "").strip()
-        representation = str(group.get("representation") or "").strip()
-        folder = str(group.get("folder") or "").strip()
-        for candidate in group.get("raw_candidates", []):
-            # Accept a dict candidate or a bare release-URL string. Historically some
-            # decisions stored raw_candidates as plain URL strings; skipping them (as we
-            # once did) silently un-suppresses create_new actions for already-decided
-            # pairs, so both forms must be registered.
-            if isinstance(candidate, dict):
-                doi = str(candidate.get("doi") or group.get("doi") or "").strip()
-                release_url = str(candidate.get("github_release_url") or "").strip()
-            elif isinstance(candidate, str):
-                doi = str(group.get("doi") or "").strip()
-                release_url = candidate.strip()
-            else:
-                continue
-            if not doi or not release_url:
-                continue
-            decisions[_reviewed_pair_key(doi, release_url)] = {
-                "decision": group_decision,
-                "representation": representation,
-                "folder": folder,
-                "group_id": str(group.get("id") or "").strip(),
-            }
-    return decisions
+    return reviewed_pair_decision_index(payload)
 
 
 def folder_for_pair(pair: PublicationPair, repo_root: Path = REPO_ROOT) -> str:
@@ -360,7 +343,19 @@ def build_sync_actions(pairs: list[PublicationPair], *, repo_root: Path = REPO_R
         release_title_folder = release_title_to_folder.get(_pair_key(pair.record.title, pair.github_release_url))
         repo_title_folder = repo_title_to_folder.get(_repo_title_key(pair.record.title, pair.github_repo))
         folder = doi_to_folder.get(pair.doi) or release_title_folder or repo_title_folder or folder_for_pair(pair, repo_root)
-        reviewed = reviewed_decisions.get(_reviewed_pair_key(pair.doi, pair.github_release_url))
+        candidate_fingerprint = canonical_pair_candidate_fingerprint(
+            doi=pair.doi,
+            github_release_url=pair.github_release_url,
+            zenodo_record_url=pair.zenodo_record_url,
+            github_repo=pair.github_repo,
+            title=pair.record.title,
+            release_tag=pair.release.tag,
+        )
+        reviewed = (
+            reviewed_decisions.get(candidate_fingerprint)
+            if candidate_fingerprint is not None
+            else None
+        )
         if reviewed:
             action_type = "already_reviewed"
             representation = reviewed.get("representation") or "manual decision"
@@ -395,6 +390,7 @@ def build_sync_actions(pairs: list[PublicationPair], *, repo_root: Path = REPO_R
                 github_repo=pair.github_repo,
                 github_release_url=pair.github_release_url,
                 zenodo_record_url=pair.zenodo_record_url,
+                release_tag=pair.release.tag,
                 folder=folder,
             )
         )
@@ -439,6 +435,116 @@ def _write_if_changed(path: Path, content: str, updated: list[str], repo_root: P
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
     updated.append(str(path.relative_to(repo_root)))
+
+
+def _canonical_json(value: object) -> str:
+    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+
+
+def _action_sha256(action: dict[str, Any]) -> str:
+    """Hash the complete action so a report cannot prove only a matching DOI."""
+    return hashlib.sha256(_canonical_json(action).encode("utf-8")).hexdigest()
+
+
+def attest_applied_publication(
+    applied: AppliedPublication,
+    action: SyncAction,
+    *,
+    repo_root: Path = REPO_ROOT,
+) -> AppliedPublication:
+    """Bind an applied publication result to its exact action and metadata target."""
+    if Path(applied.folder).name != applied.folder:
+        raise ValueError(f"unsafe applied publication folder: {applied.folder!r}")
+    metadata_path = repo_root / "papers" / applied.folder / "metadata.json"
+    try:
+        resolved = metadata_path.resolve()
+        resolved.relative_to(repo_root.resolve())
+        metadata_bytes = metadata_path.read_bytes()
+        metadata = json.loads(metadata_bytes)
+    except (OSError, ValueError, json.JSONDecodeError) as exc:
+        raise RuntimeError(
+            f"cannot attest applied publication metadata for {applied.folder}: {exc}"
+        ) from exc
+    if not isinstance(metadata, dict) or str(metadata.get("doi") or "").casefold() != applied.doi.casefold():
+        raise RuntimeError(
+            f"cannot attest applied publication metadata for {applied.folder}: DOI does not match applied action"
+        )
+    action_payload = action.to_dict()
+    return AppliedPublication(
+        doi=applied.doi,
+        folder=applied.folder,
+        created=applied.created,
+        updated_files=applied.updated_files,
+        action=action_payload,
+        metadata_path=metadata_path.relative_to(repo_root).as_posix(),
+        metadata_sha256=hashlib.sha256(metadata_bytes).hexdigest(),
+    )
+
+
+def _verified_applied_update_receipt(
+    receipt: object,
+    action: SyncAction,
+    *,
+    repo_root: Path,
+    require_current_metadata: bool = True,
+) -> bool:
+    """Verify an applied-update receipt, optionally against current metadata.
+
+    One scan can apply several observed release versions to the same folder.
+    Earlier receipts remain structurally attestable, but their metadata hash is
+    intentionally superseded by the final writer.  Cache validation checks the
+    durable receipt shape while review rendering separately requires the exact
+    action to still match the on-disk metadata before calling it applied.
+    """
+    if not isinstance(receipt, dict):
+        return False
+    action_payload = action.to_dict()
+    if receipt.get("action") != action_payload:
+        return False
+    if receipt.get("doi") != action.doi or receipt.get("folder") != action.folder:
+        return False
+    if not isinstance(receipt.get("created"), bool) or not isinstance(
+        receipt.get("updated_files"), list
+    ) or not all(
+        isinstance(path, str) and path for path in receipt["updated_files"]
+    ):
+        return False
+    provenance = receipt.get("provenance")
+    action_sha256 = _action_sha256(action_payload)
+    if not isinstance(provenance, dict) or provenance.get(
+        "action_sha256"
+    ) != action_sha256:
+        return False
+    expected_metadata_path = f"papers/{action.folder}/metadata.json"
+    if provenance.get("metadata_path") != expected_metadata_path:
+        return False
+    metadata_sha256 = provenance.get("metadata_sha256")
+    if not isinstance(metadata_sha256, str) or len(metadata_sha256) != 64:
+        return False
+    approval = provenance.get("approval")
+    if (
+        not isinstance(approval, dict)
+        or approval.get("decision") != "approved"
+        or approval.get("action_sha256") != action_sha256
+        or not isinstance(approval.get("approved_by"), str)
+        or not approval["approved_by"].strip()
+        or not isinstance(approval.get("approved_at"), str)
+        or not approval["approved_at"].endswith("Z")
+    ):
+        return False
+    if not require_current_metadata:
+        return True
+    try:
+        metadata_path = repo_root / expected_metadata_path
+        metadata_bytes = metadata_path.read_bytes()
+        metadata = json.loads(metadata_bytes)
+    except (OSError, json.JSONDecodeError):
+        return False
+    return (
+        hashlib.sha256(metadata_bytes).hexdigest() == metadata_sha256
+        and isinstance(metadata, dict)
+        and str(metadata.get("doi") or "").casefold() == action.doi.casefold()
+    )
 
 
 def update_existing_readme(path: Path, pair: PublicationPair, updated: list[str], repo_root: Path) -> None:
@@ -762,8 +868,35 @@ def write_report(
     warnings: list[str],
     applied: list[AppliedPublication] | None = None,
 ) -> None:
+    generated_at = generated_timestamp()
+
+    def applied_payload(item: AppliedPublication) -> dict[str, Any]:
+        result: dict[str, Any] = {
+            "doi": item.doi,
+            "folder": item.folder,
+            "created": item.created,
+            "updated_files": list(item.updated_files),
+        }
+        if item.action is None:
+            return result
+        action_sha256 = _action_sha256(item.action)
+        result["action"] = item.action
+        result["provenance"] = {
+            "action_sha256": action_sha256,
+            "metadata_path": item.metadata_path,
+            "metadata_sha256": item.metadata_sha256,
+            "applied_at": generated_at,
+            "approval": {
+                "decision": "approved",
+                "approved_by": "sync_paired_publications --apply",
+                "approved_at": generated_at,
+                "action_sha256": action_sha256,
+            },
+        }
+        return result
+
     payload = {
-        "generated_at": generated_timestamp(),
+        "generated_at": generated_at,
         "source": "GitHub Releases API + Zenodo Records API",
         "owners": owners,
         "counts": {
@@ -779,10 +912,7 @@ def write_report(
         "warnings": warnings,
         "actions": [action.to_dict() for action in actions],
         "pairs": [pair.to_dict() for pair in pairs],
-        "applied": [
-            {"doi": item.doi, "folder": item.folder, "created": item.created, "updated_files": list(item.updated_files)}
-            for item in (applied or [])
-        ],
+        "applied": [applied_payload(item) for item in (applied or [])],
     }
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -861,6 +991,44 @@ def check_report(repo_root: Path = REPO_ROOT) -> None:
     if stale_create:
         joined = ", ".join(stale_create)
         raise SystemExit(f"Paired publication report has stale create_new actions for existing DOIs: {joined}")
+    applied = payload.get("applied", [])
+    if not isinstance(applied, list):
+        raise SystemExit("Paired publication report applied receipts must be a list")
+    for action in actions:
+        if (
+            not isinstance(action, dict)
+            or action.get("action_type") != "update_existing"
+            or str(action.get("confidence") or "").casefold() != "strong"
+        ):
+            continue
+        matching = [
+            receipt
+            for receipt in applied
+            if isinstance(receipt, dict) and receipt.get("action") == action
+        ]
+        if matching and (
+            len(matching) != 1
+            or not _verified_applied_update_receipt(
+                matching[0],
+                SyncAction(
+                    action_type=str(action.get("action_type") or ""),
+                    doi=str(action.get("doi") or ""),
+                    title=str(action.get("title") or ""),
+                    confidence=str(action.get("confidence") or ""),
+                    reason=str(action.get("reason") or ""),
+                    github_repo=str(action.get("github_repo") or ""),
+                    github_release_url=str(action.get("github_release_url") or ""),
+                    zenodo_record_url=str(action.get("zenodo_record_url") or ""),
+                    release_tag=str(action.get("release_tag") or ""),
+                    folder=str(action.get("folder") or ""),
+                ),
+                repo_root=repo_root,
+                require_current_metadata=False,
+            )
+        ):
+            raise SystemExit(
+                "Paired publication report has an unverifiable applied strong update receipt"
+            )
     print(f"checked paired publication report ({path.relative_to(repo_root)})")
 
 
@@ -918,6 +1086,7 @@ def main(argv: list[str] | None = None) -> int:
                 folder=action.folder,
                 refresh_docs=action.reason.startswith("same title and GitHub"),
             )
+            item = attest_applied_publication(item, action)
             applied.append(item)
             changed = changed or bool(item.updated_files)
         if changed:

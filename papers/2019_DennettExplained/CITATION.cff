@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "DennettExplained"
 date-released: 2019
+doi: 10.34700/7gkw-zh08
+url: "https://doi.org/10.34700/7gkw-zh08"
 authors:
   - family-names: Dennett
     given-names: Daniel
@@ -11,3 +13,10 @@ authors:
   - family-names: Friedman
     given-names: Daniel A.
     orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: "10.34700/7gkw-zh08"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.34700/7gkw-zh08"
+    description: "Canonical citation DOI resolver"

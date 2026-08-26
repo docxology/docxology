@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "NeurotransmitterVariation"
 date-released: 2020
+doi: 10.1007/s00216-019-02355-3
+url: "https://doi.org/10.1007/s00216-019-02355-3"
 authors:
   - family-names: Shin
     given-names: Mimi
@@ -13,3 +15,10 @@ authors:
     given-names: Deborah M.
   - family-names: Venton
     given-names: B. Jill
+identifiers:
+  - type: doi
+    value: "10.1007/s00216-019-02355-3"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1007/s00216-019-02355-3"
+    description: "Canonical citation DOI resolver"

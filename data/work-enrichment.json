@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T18:38:00Z",
+  "generated_at": "2026-08-26T18:08:35Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
   "count": 209,
   "works": {
@@ -2376,9 +2376,20 @@
     },
     "Friedman2026TowardsLean4Formalization113": {
       "citation_key": "Friedman2026TowardsLean4Formalization113",
-      "abstract": "The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked approach to assessing such and related formal claims has remained absent. Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may...",
+      "abstract": "FEP Lean v1.1.0 is a source-bound, machine-checked catalogue of 155 topics across 20 reviewed families and five areas: the Free Energy Principle, Active Inference, Bayesian Mechanics, Information Geometry, and non-equilibrium Thermodynamics. Every catalogue row carries a reviewed invariant, explicit assumptions and boundaries, a namespaced Lean 4 theorem body, and deterministic manuscript...",
       "keywords": [
-        "FEPLean"
+        "free energy principle",
+        "active inference",
+        "bayesian mechanics",
+        "information geometry",
+        "non-equilibrium thermodynamics",
+        "Lean 4",
+        "Mathlib",
+        "interactive theorem proving",
+        "formal verification",
+        "theorem proving",
+        "measure theory",
+        "reproducible research"
       ],
       "findings": [
         "The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked a",

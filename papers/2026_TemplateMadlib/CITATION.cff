@@ -13,11 +13,20 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.20786638
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.20786638"
+    description: "Canonical citation DOI"
   - type: url
-    value: "https://zenodo.org/records/20786638"
-    description: "Zenodo landing page"
+    value: "https://doi.org/10.5281/zenodo.20786638"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.20932025"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.20932025"
+    description: "Version/download DOI resolver (Zenodo artifact)"
+  - type: url
+    value: "https://zenodo.org/records/20932025"
+    description: "Version/download landing page (Zenodo artifact)"
   - type: url
     value: "https://github.com/docxology/template_madlib/releases/tag/v0.1.0"
     description: "GitHub release"

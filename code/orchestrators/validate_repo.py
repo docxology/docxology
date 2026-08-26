@@ -49,6 +49,8 @@ REQUIRED_JSON_FILES: list[str] = [
     "data/people.json",
     "data/organizations.json",
     "data/paired-publication-decisions.json",
+    "data/public-source-observation-decisions.json",
+    "data/biographical-claim-decisions.json",
     "data/claims.json",
     "data/resume.json",
     "data/reconciliation.json",
@@ -236,6 +238,26 @@ def validate_citation_cff() -> None:
     missing = [key for key in required if key not in text]
     if missing:
         raise SystemExit("CITATION.cff missing keys: " + ", ".join(missing))
+
+
+def validate_paper_citation_cff(repo_root: Path = REPO_ROOT) -> None:
+    """Reject paper CFF files whose DOI roles drift from reviewed metadata.
+
+    This repeats the exact no-write rendering used by the generation plan so a
+    direct repository-validation call remains a precise, independently
+    testable release invariant.  The renderer owns only DOI-role fields and
+    preserves other hand-curated CFF identifiers.
+    """
+    from generate_citation_cff import render_outputs
+    from generated_outputs import stale_output_paths
+
+    papers_dir = repo_root / "papers"
+    if not papers_dir.is_dir():
+        raise SystemExit(f"Paper CFF DOI-role validation requires {papers_dir}")
+    stale = stale_output_paths(render_outputs(papers_dir), repo_root=repo_root)
+    if stale:
+        shown = "\n".join(f"  - {path.relative_to(repo_root)}" for path in stale)
+        raise SystemExit(f"Paper CITATION.cff DOI-role drift:\n{shown}")
 
 
 def validate_xml_files() -> None:
@@ -491,6 +513,7 @@ def run_standard_validation(*, strict_reports: bool) -> None:
     run(["python3", "code/orchestrators/visual_qa.py", "--check"])
     validate_json_files(strict_reports)
     validate_citation_cff()
+    validate_paper_citation_cff()
     validate_xml_files()
     validate_json_ld()
     validate_local_links()

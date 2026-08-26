@@ -43,6 +43,7 @@ HARD_ARTIFACT_BYTES = 1024 * 1024 * 1024
 ARTIFACT_MANIFEST = REPO_ROOT / "data" / "pages-artifact-manifest.json"
 GROWTH_REPORT = REPO_ROOT / "reports" / f"pages_artifact_growth_{datetime.now(timezone.utc).date().isoformat()}.json"
 _GROWTH_REPORT_NAME = re.compile(r"^pages_artifact_growth_(\d{4}-\d{2}-\d{2})\.json$")
+_PREPAYLOAD_SOURCE_SNAPSHOT_NAME = re.compile(r"^public_source_snapshot_(\d{4}-\d{2}-\d{2})\.json$")
 
 EXCLUDED_ROOTS = {
     ".benchmarks",
@@ -79,7 +80,52 @@ def tracked_paths() -> list[Path]:
     return paths
 
 
-def dirty_postdeploy_payload_paths(repo_root: Path = REPO_ROOT) -> list[Path]:
+def _head_commit(repo_root: Path) -> str | None:
+    """Return the current commit without treating an unresolved checkout as safe."""
+    result = subprocess.run(
+        ["git", "rev-parse", "HEAD"],
+        cwd=repo_root,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    value = result.stdout.strip()
+    return value if result.returncode == 0 and re.fullmatch(r"[0-9a-f]{40}", value) else None
+
+
+def is_current_dirty_prepayload_source_snapshot(path: Path, repo_root: Path) -> bool:
+    """Recognize the one reviewed source receipt allowed during payload assembly.
+
+    ``refresh_public_sources.py`` runs before the source payload is committed,
+    so its truthful snapshot records ``source_worktree_clean: false``.  It is
+    source evidence to be committed with that payload, not post-deployment
+    evidence.  Keep this exception deliberately narrower than the release
+    evidence allowlist: only a validly dated top-level source snapshot, bound
+    to the current ``HEAD``, can use it.  A clean deployed-SHA snapshot (or an
+    unparseable/misbound file) remains a blocked post-deploy receipt.
+    """
+    if path.parent != Path("reports"):
+        return False
+    match = _PREPAYLOAD_SOURCE_SNAPSHOT_NAME.fullmatch(path.name)
+    if match is None:
+        return False
+    try:
+        date.fromisoformat(match.group(1))
+        payload = json.loads((repo_root / path).read_text(encoding="utf-8"))
+    except (OSError, ValueError, json.JSONDecodeError):
+        return False
+    return (
+        isinstance(payload, dict)
+        and payload.get("source_worktree_clean") is False
+        and payload.get("source_commit") == _head_commit(repo_root)
+    )
+
+
+def dirty_postdeploy_payload_paths(
+    repo_root: Path = REPO_ROOT,
+    *,
+    allow_dirty_prepayload_source_snapshot: bool = False,
+) -> list[Path]:
     """Return dirty tracked evidence that would corrupt a source manifest.
 
     A Pages manifest hashes source files from the working tree.  Fresh
@@ -103,14 +149,25 @@ def dirty_postdeploy_payload_paths(repo_root: Path = REPO_ROOT) -> list[Path]:
             if is_published_path(path)
             and is_ephemeral_release_evidence_path(path.as_posix())
             and not is_control_path(path)
+            and not (
+                allow_dirty_prepayload_source_snapshot
+                and is_current_dirty_prepayload_source_snapshot(path, repo_root)
+            )
         ),
         key=lambda path: path.as_posix(),
     )
 
 
-def require_clean_postdeploy_payload_inputs(repo_root: Path = REPO_ROOT) -> None:
+def require_clean_postdeploy_payload_inputs(
+    repo_root: Path = REPO_ROOT,
+    *,
+    allow_dirty_prepayload_source_snapshot: bool = False,
+) -> None:
     """Fail before source-manifest work can consume mutable evidence bytes."""
-    dirty = dirty_postdeploy_payload_paths(repo_root)
+    dirty = dirty_postdeploy_payload_paths(
+        repo_root,
+        allow_dirty_prepayload_source_snapshot=allow_dirty_prepayload_source_snapshot,
+    )
     if dirty:
         joined = ", ".join(path.as_posix() for path in dirty)
         raise SystemExit(
@@ -407,8 +464,10 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
     return payload
 
 
-def write_manifest() -> dict:
-    require_clean_postdeploy_payload_inputs()
+def write_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> dict:
+    require_clean_postdeploy_payload_inputs(
+        allow_dirty_prepayload_source_snapshot=allow_dirty_prepayload_source_snapshot
+    )
     existing = None
     manifest_rel = ARTIFACT_MANIFEST.relative_to(REPO_ROOT)
     if ARTIFACT_MANIFEST.exists():
@@ -487,9 +546,11 @@ def assemble(output: Path) -> tuple[int, int, list[str]]:
     return copied, bytes_copied, omitted
 
 
-def projected_size() -> tuple[int, int]:
+def projected_size(*, allow_dirty_prepayload_source_snapshot: bool = False) -> tuple[int, int]:
     """Return (included file count, included bytes) without copying files."""
-    require_clean_postdeploy_payload_inputs()
+    require_clean_postdeploy_payload_inputs(
+        allow_dirty_prepayload_source_snapshot=allow_dirty_prepayload_source_snapshot
+    )
     paths = _relative_paths()
     return len(paths), sum(source_path(path).stat().st_size for path in paths)
 
@@ -500,14 +561,28 @@ def main() -> None:
     parser.add_argument("--check-size", action="store_true", help="Fail if the assembled artifact exceeds the safety ceiling")
     parser.add_argument("--check-size-only", action="store_true", help="Check the projected size without copying an artifact")
     parser.add_argument("--write-manifest", action="store_true", help="Write the checked-in Pages artifact and growth manifests")
+    parser.add_argument(
+        "--allow-dirty-prepayload-evidence",
+        action="store_true",
+        help=(
+            "Allow only a current, dirty public-source snapshot whose own receipt records "
+            "source_worktree_clean=false; reserved for pre-commit payload regeneration"
+        ),
+    )
     parser.add_argument("--check-manifest", action="store_true", help="Fail if the checked-in Pages artifact manifest is stale")
     args = parser.parse_args()
+    if args.allow_dirty_prepayload_evidence and not args.write_manifest:
+        raise SystemExit("--allow-dirty-prepayload-evidence requires --write-manifest")
     if args.write_manifest:
-        write_manifest()
+        write_manifest(
+            allow_dirty_prepayload_source_snapshot=args.allow_dirty_prepayload_evidence
+        )
     if args.check_manifest:
         check_manifest()
     if args.check_size_only:
-        copied, size = projected_size()
+        copied, size = projected_size(
+            allow_dirty_prepayload_source_snapshot=args.allow_dirty_prepayload_evidence
+        )
         print(f"projected Pages artifact: {copied} tracked files ({size / 1024 / 1024:.1f} MiB)")
         if size > MAX_ARTIFACT_BYTES:
             raise SystemExit(

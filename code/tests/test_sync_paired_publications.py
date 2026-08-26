@@ -17,12 +17,15 @@ sys.path.insert(0, str(ORCH_DIR))
 
 from publication_pairing import GitHubRelease, PublicationPair, ZenodoRecord  # noqa: E402
 from sync_paired_publications import (  # noqa: E402
+    attest_applied_publication,
     apply_publication_pair,
     build_sync_actions,
     check_report,
     display_report_path,
     ordered_apply_pairs,
     refresh_bibliography_counts,
+    reviewed_pair_decisions,
+    write_report,
 )
 
 
@@ -182,6 +185,50 @@ def test_build_sync_actions_marks_new_and_existing_pairs(tmp_path: Path):
     assert actions[0].action_type == "update_existing"
 
 
+def test_applied_strong_update_report_binds_exact_action_and_metadata(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    apply_publication_pair(pair, repo_root=tmp_path, download_files=False)
+    action = build_sync_actions([pair], repo_root=tmp_path)[0]
+    applied = apply_publication_pair(
+        pair,
+        repo_root=tmp_path,
+        download_files=False,
+        folder=action.folder,
+    )
+    attested = attest_applied_publication(applied, action, repo_root=tmp_path)
+    report_path = tmp_path / "reports" / "paired_publications_2026-08-25.json"
+
+    write_report(
+        report_path,
+        owners=["docxology"],
+        releases=[pair.release],
+        records=[pair.record],
+        pairs=[pair],
+        actions=[action],
+        warnings=[],
+        applied=[attested],
+    )
+
+    receipt = json.loads(report_path.read_text(encoding="utf-8"))["applied"][0]
+    assert receipt["action"] == action.to_dict()
+    assert receipt["provenance"]["metadata_path"] == (
+        "papers/2026_NewComputationalProject/metadata.json"
+    )
+    assert receipt["provenance"]["approval"]["decision"] == "approved"
+    assert receipt["provenance"]["approval"]["action_sha256"] == receipt[
+        "provenance"
+    ]["action_sha256"]
+    check_report(repo_root=tmp_path)
+
+    receipt["provenance"]["approval"]["action_sha256"] = "0" * 64
+    payload = json.loads(report_path.read_text(encoding="utf-8"))
+    payload["applied"][0] = receipt
+    report_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    with pytest.raises(SystemExit, match="unverifiable applied strong update receipt"):
+        check_report(repo_root=tmp_path)
+
+
 def test_ordered_apply_pairs_leaves_latest_release_as_final_metadata_writer(tmp_path: Path):
     _write_minimal_repo(tmp_path)
     base = _pair()
@@ -269,6 +316,124 @@ def test_reviewed_decision_accepts_string_raw_candidates(tmp_path: Path):
 
     assert actions[0].action_type == "already_reviewed"
     assert "do not create a duplicate bibliography row" in actions[0].reason
+
+
+def test_reviewed_decision_does_not_survive_changed_zenodo_or_title(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    _write_review_decision(tmp_path, pair)
+    decisions_path = tmp_path / "data" / "paired-publication-decisions.json"
+    original = json.loads(decisions_path.read_text(encoding="utf-8"))
+
+    for field, changed_value in (
+        ("zenodo_record_url", "https://zenodo.org/records/20990002"),
+        ("record_title", "New Computational Project: changed evidence"),
+    ):
+        mutated = json.loads(json.dumps(original))
+        mutated["groups"][0]["raw_candidates"][0][field] = changed_value
+        decisions_path.write_text(
+            json.dumps(mutated, indent=2) + "\n", encoding="utf-8"
+        )
+
+        actions = build_sync_actions([pair], repo_root=tmp_path)
+
+        assert actions[0].action_type == "create_new"
+
+
+def test_malformed_and_conflicting_pair_decisions_cannot_clear_sync_candidates(
+    tmp_path: Path,
+):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    _write_review_decision(tmp_path, pair)
+    decisions_path = tmp_path / "data" / "paired-publication-decisions.json"
+    malformed = json.loads(decisions_path.read_text(encoding="utf-8"))
+    del malformed["groups"][0]["decided_by"]
+    decisions_path.write_text(
+        json.dumps(malformed, indent=2) + "\n", encoding="utf-8"
+    )
+
+    # Missing human provenance leaves the candidate live; it cannot silently
+    # become already reviewed merely because its raw candidate is present.
+    assert build_sync_actions([pair], repo_root=tmp_path)[0].action_type == "create_new"
+
+    valid = json.loads(json.dumps(malformed))
+    first = valid["groups"][0]
+    first["decided_by"] = "codex"
+    duplicate = json.loads(json.dumps(valid))
+    duplicate_group = json.loads(json.dumps(first))
+    duplicate_group.update(
+        {
+            "id": "R02",
+            "decided_by": "second reviewer",
+            "decided_at": "2026-06-18T00:30:00Z",
+        }
+    )
+    duplicate["groups"].append(duplicate_group)
+    decisions_path.write_text(
+        json.dumps(duplicate, indent=2) + "\n", encoding="utf-8"
+    )
+    with pytest.raises(ValueError, match="duplicate paired-publication decisions"):
+        build_sync_actions([pair], repo_root=tmp_path)
+
+    conflicting = json.loads(json.dumps(first))
+    conflicting.update(
+        {
+            "id": "R02",
+            "decision": "rejected",
+            "decided_by": "reviewer",
+            "decided_at": "2026-06-18T00:30:00Z",
+        }
+    )
+    valid["groups"].append(conflicting)
+    decisions_path.write_text(json.dumps(valid, indent=2) + "\n", encoding="utf-8")
+
+    with pytest.raises(ValueError, match="duplicate paired-publication decisions"):
+        build_sync_actions([pair], repo_root=tmp_path)
+
+
+def test_authenticated_pair_decision_supersession_is_exact_and_auditable(
+    tmp_path: Path,
+):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    _write_review_decision(tmp_path, pair)
+    decisions_path = tmp_path / "data" / "paired-publication-decisions.json"
+    payload = json.loads(decisions_path.read_text(encoding="utf-8"))
+    first = payload["groups"][0]
+    replacement = json.loads(json.dumps(first))
+    replacement.update(
+        {
+            "id": "R02",
+            "decision": "rejected",
+            "decided_by": "reviewer",
+            "decided_at": "2026-06-18T00:30:00Z",
+            "supersession": {
+                "supersedes_group_id": "R01",
+                "authenticated": True,
+                "approved_by": "reviewer",
+                "approved_at": "2026-06-18T00:30:00Z",
+                "rationale": "The newer signed review reverses the original outcome.",
+                "superseded_candidate": {
+                    "doi": pair.doi,
+                    "github_release_url": pair.github_release_url,
+                    "zenodo_record_url": pair.zenodo_record_url,
+                    "github_repo": pair.github_repo,
+                    "title": pair.record.title,
+                    "release_tag": pair.release.tag,
+                },
+            },
+        }
+    )
+    payload["groups"].append(replacement)
+    decisions_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+
+    decisions = reviewed_pair_decisions(tmp_path)
+    assert len(decisions) == 1
+    record = next(iter(decisions.values()))
+    assert record["decision"] == "rejected"
+    assert record["group_id"] == "R02"
+    assert build_sync_actions([pair], repo_root=tmp_path)[0].action_type == "already_reviewed"
 
 
 def test_display_report_path_handles_external_reports(tmp_path: Path):

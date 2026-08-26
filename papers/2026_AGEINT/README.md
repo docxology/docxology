@@ -31,6 +31,7 @@
 - GitHub repository: [docxology/AGEINT](https://github.com/docxology/AGEINT)
 - GitHub release: [v0.1.0](https://github.com/docxology/AGEINT/releases/tag/v0.1.0)
 - DOI: [10.5281/zenodo.20732274](https://doi.org/10.5281/zenodo.20732274)
+- Artifact DOI: [10.5281/zenodo.20732275](https://doi.org/10.5281/zenodo.20732275)
 - Zenodo record: [https://zenodo.org/records/20732274](https://zenodo.org/records/20732274)
 - PDF: [AGEINT-Agentic-Intelligence-Edition-0.1.pdf](AGEINT-Agentic-Intelligence-Edition-0.1.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20732274)

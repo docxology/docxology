@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "MutAnts"
 date-released: 2017
+doi: 10.1016/j.cell.2017.07.046
+url: "https://doi.org/10.1016/j.cell.2017.07.046"
 authors:
   - family-names: Friedman
     given-names: Daniel A.
@@ -11,3 +13,10 @@ authors:
     given-names: Deborah M.
   - family-names: Luo
     given-names: Liqun
+identifiers:
+  - type: doi
+    value: "10.1016/j.cell.2017.07.046"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1016/j.cell.2017.07.046"
+    description: "Canonical citation DOI resolver"

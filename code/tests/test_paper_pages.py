@@ -60,3 +60,17 @@ def test_paper_page_reconcile_rejects_symlinked_output_without_touching_target(t
         reconcile_outputs({output: "generated"}, repo_root=repo, check=False)
 
     assert external.read_text(encoding="utf-8") == "sentinel"
+
+
+def test_paper_page_write_mode_reconciles_stale_output(tmp_path: Path):
+    """Write mode must repair drift and reserve stale reporting for --check."""
+    repo = tmp_path / "repo"
+    output = repo / "papers" / "2026_Example" / "index.html"
+    output.parent.mkdir(parents=True)
+    output.write_text("stale", encoding="utf-8")
+    outputs = {output: "generated"}
+
+    assert reconcile_outputs(outputs, repo_root=repo, check=True) == (output,)
+    assert reconcile_outputs(outputs, repo_root=repo, check=False) == ()
+    assert output.read_text(encoding="utf-8") == "generated"
+    assert reconcile_outputs(outputs, repo_root=repo, check=True) == ()

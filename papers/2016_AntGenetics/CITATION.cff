@@ -3,9 +3,18 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "AntGenetics"
 date-released: 2016
+doi: 10.1146/annurev-neuro-070815-013927
+url: "https://doi.org/10.1146/annurev-neuro-070815-013927"
 authors:
   - family-names: Friedman
     given-names: Daniel A.
     orcid: "https://orcid.org/0000-0001-6232-9096"
   - family-names: Gordon
     given-names: Deborah M.
+identifiers:
+  - type: doi
+    value: "10.1146/annurev-neuro-070815-013927"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1146/annurev-neuro-070815-013927"
+    description: "Canonical citation DOI resolver"

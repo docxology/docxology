@@ -3,8 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance"
 date-released: 2023-12-12
-doi: 10.5281/zenodo.10360148
-url: "https://doi.org/10.5281/zenodo.10360148"
+doi: 10.5281/zenodo.10360056
+url: "https://doi.org/10.5281/zenodo.10360056"
 authors:
   - family-names: Clippinger
     given-names: John
@@ -57,8 +57,17 @@ authors:
     given-names: Yasuhide
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.10360148
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.10360056"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.10360056"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.10360148"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.10360148"
+    description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
     value: "https://zenodo.org/records/10360148"
-    description: "Zenodo landing page"
+    description: "Version/download landing page (Zenodo artifact)"

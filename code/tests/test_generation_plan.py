@@ -24,6 +24,8 @@ def test_every_local_writer_has_a_non_writing_check_and_drives_regenerate_all():
         (step.script, list(step.write_args)) for step in LOCAL_GENERATION_STEPS
     ]
     assert any(step.script == "regenerate_docs.py" for step in LOCAL_GENERATION_STEPS)
+    assert any(step.script == "generate_citation_cff.py" for step in LOCAL_GENERATION_STEPS)
+    assert any(step.script == "render_github_inventory.py" for step in LOCAL_GENERATION_STEPS)
     assert any(step.script == "generate_pillar_pages.py" for step in LOCAL_GENERATION_STEPS)
 
 

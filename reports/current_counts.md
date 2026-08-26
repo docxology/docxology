@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-08-26T02:30:55+00:00`
+Generated: `2026-08-26T18:08:31+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -59,29 +59,29 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Software
 
-- docxology_owned: `107`
-- active_inference_institute: `38`
-- curated_total: `145`
+- docxology_owned: `108`
+- active_inference_institute: `39`
+- curated_total: `147`
 
 ### Generated Exports
 
 - data_works_json: `209`
-- data_software_json: `145`
+- data_software_json: `147`
 - data_publications_ld_main_entity: `209`
-- data_software_ld_main_entity: `145`
+- data_software_ld_main_entity: `147`
 
 ### GitHub Inventory
 
 - total: `245`
 - docxology: `202`
 - ActiveInferenceInstitute: `43`
-- curated: `143`
-- uncataloged: `102`
+- curated: `147`
+- uncataloged: `98`
 - forks: `87`
-- archived: `0`
+- archived: `5`
 - public: `245`
 - private: `0`
-- recently_updated: `143`
+- recently_updated: `182`
 - primary_total: `158`
 - primary_docxology: `117`
 - primary_ActiveInferenceInstitute: `41`
@@ -113,9 +113,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 ### Paired Publication Decisions
 
 - decision: `accept`
-- groups: `70`
-- raw_candidates: `485`
-- note: `Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills (9 release pairs) and Codomyrmex (18 release pairs) supersession/version-history decisions under already-cited DOIs so versioned GitHub releases do not create duplicate bibliography rows.`
+- groups: `72`
+- raw_candidates: `487`
+- note: `Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row.`
 
 ## Validation
 

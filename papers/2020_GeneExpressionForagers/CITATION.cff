@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "GeneExpressionForagers"
 date-released: 2020
+doi: 10.1038/s42003-020-0813-8
+url: "https://doi.org/10.1038/s42003-020-0813-8"
 authors:
   - family-names: Friedman
     given-names: Daniel A.
@@ -11,3 +13,10 @@ authors:
     given-names: Brian R.
   - family-names: Linksvayer
     given-names: Timothy A.
+identifiers:
+  - type: doi
+    value: "10.1038/s42003-020-0813-8"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1038/s42003-020-0813-8"
+    description: "Canonical citation DOI resolver"

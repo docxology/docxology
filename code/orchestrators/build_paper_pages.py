@@ -260,9 +260,15 @@ def reconcile_outputs(
     so a malformed folder cannot redirect the renderer outside the checkout.
     """
     stale = stale_output_paths(outputs, repo_root=repo_root)
-    if not check and stale:
+    if check:
+        return stale
+    if stale:
         write_output_texts(outputs, repo_root=repo_root)
-    return stale
+    # Write mode has reconciled the exact managed set.  Returning the pre-write
+    # drift here would make a successful write look like a failed --check and
+    # breaks generator ordering whenever an upstream source update changes a
+    # paper page.
+    return ()
 
 
 def main() -> None:

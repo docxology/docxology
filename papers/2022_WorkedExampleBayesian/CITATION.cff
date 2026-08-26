@@ -4,8 +4,8 @@ type: article
 title: "A Worked Example of the Bayesian Mechanics of Classical Objects"
 version: "v1"
 date-released: 2022-10-12
-doi: 10.5281/zenodo.7400786
-url: "https://doi.org/10.5281/zenodo.7400786"
+doi: 10.5281/zenodo.7400785
+url: "https://doi.org/10.5281/zenodo.7400785"
 authors:
   - family-names: Sakthivadivel
     given-names: Dalton AR
@@ -18,8 +18,17 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.7400786
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.7400785"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.7400785"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.7400786"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.7400786"
+    description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
     value: "https://zenodo.org/records/7400786"
-    description: "Zenodo landing page"
+    description: "Version/download landing page (Zenodo artifact)"

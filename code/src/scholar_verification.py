@@ -20,6 +20,7 @@ from typing import Any
 
 
 SCHOLAR_METRIC_FIELDS = ("citations", "h_index", "i10_index")
+SCHOLAR_SINCE_2021_KEY = "since_2021"
 SCHOLAR_SNAPSHOT_RELATIVE_PATH = Path("data/scholar-snapshot.json")
 SCHOLAR_RECEIPT_RELATIVE_PATH = Path("data/scholar-verification-receipt.json")
 RECEIPT_SCHEMA_VERSION = "1.0"
@@ -63,6 +64,23 @@ def _receipt_metrics(payload: dict[str, Any]) -> tuple[dict[str, int] | None, li
     return _metrics(metrics, label="Scholar verification receipt metrics")
 
 
+def _optional_since_2021_metrics(
+    payload: dict[str, Any], *, label: str
+) -> tuple[dict[str, int] | None, list[str]]:
+    """Validate the optional authenticated since-2021 metric column.
+
+    Scholar presents all-time and since-2021 columns together.  The latter is
+    optional for historical receipts, but once curated it must be bound exactly
+    to the direct-authenticated receipt just like the all-time metrics.
+    """
+    value = payload.get(SCHOLAR_SINCE_2021_KEY)
+    if value is None:
+        return None, []
+    if not isinstance(value, dict):
+        return None, [f"{label} field {SCHOLAR_SINCE_2021_KEY!r} must be an object"]
+    return _metrics(value, label=f"{label} {SCHOLAR_SINCE_2021_KEY}")
+
+
 def _valid_timestamp(value: object) -> bool:
     if not isinstance(value, str) or not value.strip():
         return False
@@ -99,6 +117,10 @@ def validate_bound_scholar_receipt(
             errors.append("Scholar snapshot as_of must be an ISO-8601 calendar date")
     snapshot_metrics, snapshot_errors = _metrics(snapshot, label="Scholar snapshot")
     errors.extend(snapshot_errors)
+    snapshot_since_2021, snapshot_since_2021_errors = _optional_since_2021_metrics(
+        snapshot, label="Scholar snapshot"
+    )
+    errors.extend(snapshot_since_2021_errors)
     if receipt is None:
         return [*errors, "missing direct authenticated Scholar verification receipt"]
 
@@ -125,6 +147,24 @@ def validate_bound_scholar_receipt(
     errors.extend(receipt_errors)
     if snapshot_metrics is not None and receipt_metrics is not None and receipt_metrics != snapshot_metrics:
         errors.append("Scholar verification receipt metrics do not match the canonical snapshot")
+    receipt_metrics_payload = receipt.get("metrics")
+    receipt_since_2021, receipt_since_2021_errors = _optional_since_2021_metrics(
+        receipt_metrics_payload if isinstance(receipt_metrics_payload, dict) else {},
+        label="Scholar verification receipt metrics",
+    )
+    errors.extend(receipt_since_2021_errors)
+    if (snapshot_since_2021 is None) != (receipt_since_2021 is None):
+        errors.append(
+            "Scholar verification receipt since_2021 metrics do not match the canonical snapshot"
+        )
+    elif (
+        snapshot_since_2021 is not None
+        and receipt_since_2021 is not None
+        and snapshot_since_2021 != receipt_since_2021
+    ):
+        errors.append(
+            "Scholar verification receipt since_2021 metrics do not match the canonical snapshot"
+        )
     return errors
 
 

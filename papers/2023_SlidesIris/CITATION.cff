@@ -4,16 +4,25 @@ type: article
 title: "Slides for Iris"
 version: "1"
 date-released: 2023-04-17
-doi: 10.5281/zenodo.7838653
-url: "https://doi.org/10.5281/zenodo.7838653"
+doi: 10.5281/zenodo.7838652
+url: "https://doi.org/10.5281/zenodo.7838652"
 authors:
   - family-names: Friedman
     given-names: Daniel Ari
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.7838653
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.7838652"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.7838652"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.7838653"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.7838653"
+    description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
     value: "https://zenodo.org/records/7838653"
-    description: "Zenodo landing page"
+    description: "Version/download landing page (Zenodo artifact)"

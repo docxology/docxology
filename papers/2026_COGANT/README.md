@@ -31,6 +31,7 @@
 - GitHub repository: [ActiveInferenceInstitute/COGANT](https://github.com/ActiveInferenceInstitute/COGANT)
 - GitHub release: [v0.6.0](https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0)
 - DOI: [10.5281/zenodo.20705350](https://doi.org/10.5281/zenodo.20705350)
+- Artifact DOI: [10.5281/zenodo.20705351](https://doi.org/10.5281/zenodo.20705351)
 - Zenodo record: [https://zenodo.org/records/20705350](https://zenodo.org/records/20705350)
 - PDF: [COGANT-0.6.0.pdf](COGANT-0.6.0.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20705350)

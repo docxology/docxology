@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 import subprocess
 import sys
@@ -13,6 +14,7 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 import validate_repo as vr  # noqa: E402
+import generate_citation_cff as cff  # noqa: E402
 from report_paths import source_worktree_state  # noqa: E402
 
 
@@ -226,3 +228,35 @@ def test_validate_json_files_warns_on_optional_invalid_json(tmp_path: Path):
         _validate_json_files_in_empty_repo(tmp_path, strict_reports=True)
 
     _validate_json_files_in_empty_repo(tmp_path, strict_reports=False)
+
+
+def test_paper_cff_validation_rejects_stale_doi_roles_and_accepts_rendered_output(
+    tmp_path: Path,
+):
+    paper = tmp_path / "papers" / "2026_Example"
+    paper.mkdir(parents=True)
+    metadata = {
+        "title": "Example work",
+        "publication_date": "2026-08-26",
+        "doi": "10.5281/zenodo.100",
+        "artifact_doi": "10.5281/zenodo.101",
+        "creators": [{"name": "Friedman, Daniel Ari"}],
+    }
+    (paper / "metadata.json").write_text(json.dumps(metadata) + "\n", encoding="utf-8")
+    cff_path = paper / "CITATION.cff"
+    cff_path.write_text(
+        "cff-version: 1.2.0\n"
+        "title: \"Example work\"\n"
+        "date-released: 2026-08-26\n"
+        "doi: 10.5281/zenodo.101\n"
+        "url: \"https://doi.org/10.5281/zenodo.101\"\n",
+        encoding="utf-8",
+    )
+
+    with pytest.raises(SystemExit, match="Paper CITATION.cff DOI-role drift"):
+        vr.validate_paper_citation_cff(tmp_path)
+
+    cff_path.write_text(
+        cff.render_outputs(tmp_path / "papers")[cff_path], encoding="utf-8"
+    )
+    vr.validate_paper_citation_cff(tmp_path)

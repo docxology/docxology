@@ -6,6 +6,7 @@ tags: ["program-analysis", "generalized-notation-notation", "gnn", "intermediate
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *COGANT: Deterministic Codebase-to-GNN Translation*. Computational."
 doi: "10.5281/zenodo.20705350"
+artifact_doi: "10.5281/zenodo.20705351"
 ---
 
 # COGANT: Deterministic Codebase-to-GNN Translation
@@ -43,7 +44,8 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.20705350
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-08-19T22:45:41Z
+- Last checked: 2026-08-26T18:35:10Z
+- Artifact DOI: 10.5281/zenodo.20705351
 
 ## Prerequisites
 

@@ -3,9 +3,18 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "PPPiP"
 date-released: 2018
+doi: 10.3390/arts7030039
+url: "https://doi.org/10.3390/arts7030039"
 authors:
   - family-names: Mikhailova
     given-names: Alexandra
   - family-names: Friedman
     given-names: Daniel A.
     orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: "10.3390/arts7030039"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.3390/arts7030039"
+    description: "Canonical citation DOI resolver"

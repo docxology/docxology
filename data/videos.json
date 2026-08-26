@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T18:38:04Z",
+  "generated_at": "2026-08-26T18:08:39Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -4144,11 +4144,11 @@
           "url": "/works/Friedman2026MusicNeverStoppedGrateful150.html"
         },
         {
-          "title": "When do bugs see (infra)red?",
-          "citation_key": "Friedman2026WhenDoBugsSee126",
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "citation_key": "Friedman2026TowardsLean4Formalization113",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026WhenDoBugsSee126.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
         }
       ]
     },
@@ -5605,18 +5605,18 @@
           "url": "/works/Friedman2025TowardsScienceConsciousnessSocial028.html"
         },
         {
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2018PartnerPenPlayParallel099.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -5685,11 +5685,11 @@
           "url": "/works/Friedman2026MusicNeverStoppedGrateful150.html"
         },
         {
-          "title": "The Great Preset: Remote Teams and Operational Art",
-          "citation_key": "Friedman2020GreatPresetRemoteTeams089",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020GreatPresetRemoteTeams089.html"
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
         }
       ]
     },
@@ -5890,6 +5890,13 @@
           "url": "/works/Friedman2023SnapshotPipelineTissueSpecific047.html"
         },
         {
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+        },
+        {
           "title": "Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",
           "citation_key": "Friedman2015LargeScaleCodingSequence108",
           "year": 2015,
@@ -5902,13 +5909,6 @@
           "year": 2017,
           "domain": "Entomology",
           "url": "/works/Friedman2017TwoLineagesThatNeed102.html"
-        },
-        {
-          "title": "MVEE: A Framework for Evolutionary Studies",
-          "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
-          "year": 2018,
-          "domain": "Media & Teaching",
-          "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
         }
       ]
     },
@@ -13516,6 +13516,13 @@
       ],
       "related_works": [
         {
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+        },
+        {
           "title": "MVEE: A Framework for Evolutionary Studies",
           "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
           "year": 2018,
@@ -13535,13 +13542,6 @@
           "year": 2022,
           "domain": "Active Inference",
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
-        },
-        {
-          "title": "Computational Complexity and Energetics of the Ant Stack",
-          "citation_key": "Friedman2025ComputationalComplexityEnergeticsAnt011",
-          "year": 2025,
-          "domain": "Entomology",
-          "url": "/works/Friedman2025ComputationalComplexityEnergeticsAnt011.html"
         }
       ]
     },
@@ -18588,6 +18588,13 @@
           "url": "/works/Friedman2025TowardsScienceConsciousnessSocial028.html"
         },
         {
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
@@ -18600,13 +18607,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020EmergentTeamsComplexThreats085.html"
-        },
-        {
-          "title": "Reimagining Maps",
-          "citation_key": "Friedman2020ReimaginingMaps148",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020ReimaginingMaps148.html"
         }
       ]
     },
@@ -21681,6 +21681,13 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+        },
+        {
           "title": "MVEE: A Framework for Evolutionary Studies",
           "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
           "year": 2018,
@@ -21693,13 +21700,6 @@
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
         }
       ]
     },
@@ -23424,6 +23424,13 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+        },
+        {
           "title": "MVEE: A Framework for Evolutionary Studies",
           "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
           "year": 2018,
@@ -23436,13 +23443,6 @@
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
         }
       ]
     },
@@ -28012,6 +28012,13 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+        },
+        {
           "title": "MVEE: A Framework for Evolutionary Studies",
           "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
           "year": 2018,
@@ -28024,13 +28031,6 @@
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
-          "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-          "year": 2021,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2021NarrativeInformationEcosystemsConflict079.html"
         }
       ]
     },
@@ -41713,18 +41713,18 @@
           "url": "/works/Friedman2025ComputationalComplexityEnergeticsAnt011.html"
         },
         {
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+        },
+        {
           "title": "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)",
           "citation_key": "Friedman2018WoodliceMenBayesianAccount098",
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "The Great Preset: Remote Teams and Operational Art",
-          "citation_key": "Friedman2020GreatPresetRemoteTeams089",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020GreatPresetRemoteTeams089.html"
         }
       ]
     },
@@ -77785,18 +77785,18 @@
           "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
         },
         {
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+        },
+        {
           "title": "White Line: A Typed Ledger for the Edge of the Claim",
           "citation_key": "Friedman2026WhiteLineTypedLedger202",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026WhiteLineTypedLedger202.html"
-        },
-        {
-          "title": "MVEE: A Framework for Evolutionary Studies",
-          "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
-          "year": 2018,
-          "domain": "Media & Teaching",
-          "url": "/works/Friedman2018MVEEFrameworkEvolutionaryStudies097.html"
         }
       ]
     },
@@ -87128,6 +87128,13 @@
       ],
       "related_works": [
         {
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+        },
+        {
           "title": "An Active Inference Ontology for Decentralized Science",
           "citation_key": "Friedman2022ActiveInferenceOntologyDecentralized066",
           "year": 2022,
@@ -87147,13 +87154,6 @@
           "year": 2023,
           "domain": "Active Inference",
           "url": "/works/Friedman2023GenerativeResearchTeamsActive057.html"
-        },
-        {
-          "title": "Open Access science needs Open Science Sensemaking (OSSm)",
-          "citation_key": "Friedman2023OpenAccessScienceNeeds059",
-          "year": 2023,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2023OpenAccessScienceNeeds059.html"
         }
       ]
     },
@@ -89893,6 +89893,13 @@
       ],
       "related_works": [
         {
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+        },
+        {
           "title": "Generalized Notation Notation for Active Inference Models",
           "citation_key": "Friedman2023GeneralizedNotationNotationActive056",
           "year": 2023,
@@ -89912,13 +89919,6 @@
           "year": 2023,
           "domain": "Active Inference",
           "url": "/works/Friedman2023GenerativeResearchTeamsActive057.html"
-        },
-        {
-          "title": "Aligning Active Inference Ontology to SUMO",
-          "citation_key": "Friedman2024AligningActiveInferenceOntology029",
-          "year": 2024,
-          "domain": "AII Ecosystem",
-          "url": "/works/Friedman2024AligningActiveInferenceOntology029.html"
         }
       ]
     }

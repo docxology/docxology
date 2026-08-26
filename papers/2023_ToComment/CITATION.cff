@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "ToComment"
 date-released: 2023
+doi: 10.1016/j.plrev.2023.06.002
+url: "https://doi.org/10.1016/j.plrev.2023.06.002"
 authors:
   - family-names: Mascarenhas
     given-names: Mridula
@@ -11,3 +13,10 @@ authors:
   - family-names: Friedman
     given-names: Daniel A.
     orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: "10.1016/j.plrev.2023.06.002"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1016/j.plrev.2023.06.002"
+    description: "Canonical citation DOI resolver"

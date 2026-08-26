@@ -14,6 +14,7 @@ from datetime import datetime, timezone
 import json
 import os
 from pathlib import Path
+import re
 import sys
 from typing import Iterable
 
@@ -27,7 +28,16 @@ from public_source_review import (  # noqa: E402
     validate_review_report,
 )
 from release_controls import source_payload_commit, source_tree_sha  # noqa: E402
-from report_paths import control_tail_worktree_state, source_commit, source_worktree_state  # noqa: E402
+from report_paths import (  # noqa: E402
+    control_tail_worktree_state,
+    source_commit,
+    source_worktree_state,
+)
+
+
+_PUBLIC_SOURCE_REVIEW_NAME = re.compile(
+    r"^public_source_review_(\d{4}-\d{2}-\d{2})\.json$"
+)
 
 
 def _utc_date() -> str:
@@ -48,12 +58,45 @@ def _repo_path(value: str | Path) -> Path:
 
 def _latest(pattern: str, *, exclude: Iterable[Path] = ()) -> Path | None:
     excluded = {path.resolve() for path in exclude}
-    paths = sorted((REPO_ROOT / "reports").glob(pattern), key=lambda path: path.name, reverse=True)
+    paths = sorted(
+        (REPO_ROOT / "reports").glob(pattern), key=lambda path: path.name, reverse=True
+    )
     return next((path for path in paths if path.resolve() not in excluded), None)
 
 
+def _latest_public_source_review(
+    reports_dir: Path = REPO_ROOT / "reports",
+) -> Path | None:
+    """Return the newest validly dated public-source review receipt.
+
+    Release attestation recognizes only this exact date-bound filename shape.
+    The corresponding no-write renderer must use the same boundary, otherwise
+    a lexically newer lookalike file could be rendered while another report is
+    the one actually attested.
+    """
+    candidates = sorted(
+        reports_dir.glob("public_source_review_*.json"),
+        key=lambda path: path.name,
+        reverse=True,
+    )
+    for path in candidates:
+        matched = _PUBLIC_SOURCE_REVIEW_NAME.fullmatch(path.name)
+        if matched is None:
+            continue
+        try:
+            datetime.strptime(matched.group(1), "%Y-%m-%d")
+        except ValueError:
+            continue
+        return path
+    return None
+
+
 def _latest_doi_review() -> Path | None:
-    candidates = sorted((REPO_ROOT / "reports").glob("doi_role_reconciliation_*.json"), key=lambda path: path.name, reverse=True)
+    candidates = sorted(
+        (REPO_ROOT / "reports").glob("doi_role_reconciliation_*.json"),
+        key=lambda path: path.name,
+        reverse=True,
+    )
     if not candidates:
         return None
     # A dated apply receipt is more authoritative than a sidecar proposal from
@@ -106,7 +149,11 @@ def _prior_snapshot_from_existing_report(report_path: Path | None) -> Path | Non
     except (OSError, json.JSONDecodeError):
         return None
     inputs = payload.get("inputs") if isinstance(payload, dict) else None
-    provenance = inputs.get("previous_public_source_snapshot") if isinstance(inputs, dict) else None
+    provenance = (
+        inputs.get("previous_public_source_snapshot")
+        if isinstance(inputs, dict)
+        else None
+    )
     raw = provenance.get("path") if isinstance(provenance, dict) else None
     if not isinstance(raw, str) or not raw or "\\" in raw:
         return None
@@ -126,43 +173,98 @@ def _prior_snapshot_from_existing_report(report_path: Path | None) -> Path | Non
     return candidate if candidate.is_file() else None
 
 
-def _resolve_inputs(args: argparse.Namespace, *, report_path: Path | None = None) -> dict[str, Path | None]:
-    snapshot = _repo_path(args.snapshot) if args.snapshot else _latest("public_source_snapshot_*.json")
+def _resolve_inputs(
+    args: argparse.Namespace, *, report_path: Path | None = None
+) -> dict[str, Path | None]:
+    snapshot = (
+        _repo_path(args.snapshot)
+        if args.snapshot
+        else _latest("public_source_snapshot_*.json")
+    )
     if snapshot is None:
-        raise ValueError("missing public-source snapshot; run refresh_public_sources.py first")
-    previous = _repo_path(args.previous_snapshot) if args.previous_snapshot else _prior_snapshot_from_existing_report(report_path)
+        raise ValueError(
+            "missing public-source snapshot; run refresh_public_sources.py first"
+        )
+    previous = (
+        _repo_path(args.previous_snapshot)
+        if args.previous_snapshot
+        else _prior_snapshot_from_existing_report(report_path)
+    )
     if previous is None:
         previous = _latest("public_source_snapshot_*.json", exclude=[snapshot])
     return {
         "snapshot_path": snapshot,
-        "inventory_path": _repo_path(args.inventory) if args.inventory else _latest("public_source_inventory_*.json"),
-        "paired_publications_path": _repo_path(args.paired_publications) if args.paired_publications else _latest("paired_publications_*.json"),
-        "pair_decisions_path": _repo_path(args.pair_decisions) if args.pair_decisions else REPO_ROOT / "data/paired-publication-decisions.json",
-        "doi_review_path": _repo_path(args.doi_review) if args.doi_review else _latest_doi_review(),
+        "inventory_path": _repo_path(args.inventory)
+        if args.inventory
+        else _latest("public_source_inventory_*.json"),
+        "paired_publications_path": _repo_path(args.paired_publications)
+        if args.paired_publications
+        else _latest("paired_publications_*.json"),
+        "pair_decisions_path": _repo_path(args.pair_decisions)
+        if args.pair_decisions
+        else REPO_ROOT / "data/paired-publication-decisions.json",
+        "doi_review_path": _repo_path(args.doi_review)
+        if args.doi_review
+        else _latest_doi_review(),
         "repository_classification_path": _repo_path(args.repository_classification)
         if args.repository_classification
         else REPO_ROOT / "data/repository-classification.json",
-        "claims_path": _repo_path(args.claims) if args.claims else REPO_ROOT / "data/claims.json",
+        "claims_path": _repo_path(args.claims)
+        if args.claims
+        else REPO_ROOT / "data/claims.json",
+        "observation_decisions_path": _repo_path(args.observation_decisions)
+        if args.observation_decisions
+        else REPO_ROOT / "data/public-source-observation-decisions.json",
+        "biographical_claim_decisions_path": _repo_path(
+            args.biographical_claim_decisions
+        )
+        if args.biographical_claim_decisions
+        else REPO_ROOT / "data/biographical-claim-decisions.json",
         "scholar_snapshot_path": _repo_path(args.scholar_snapshot)
         if args.scholar_snapshot
         else REPO_ROOT / "data/scholar-snapshot.json",
         "scholar_receipt_path": _repo_path(args.scholar_verification_receipt)
         if args.scholar_verification_receipt
-        else None,
+        else REPO_ROOT / "data/scholar-verification-receipt.json",
         "previous_snapshot_path": previous,
     }
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--report", help="JSON output path (default: reports/public_source_review_DATE.json)")
-    parser.add_argument("--markdown-report", help="Markdown output path (default: JSON path with .md suffix)")
-    parser.add_argument("--date", type=_parse_date, help="Report date in YYYY-MM-DD (default: UTC today)")
-    parser.add_argument("--check", action="store_true", help="Re-render existing report inputs and fail on any JSON or Markdown difference")
-    parser.add_argument("--snapshot", help="Public-source snapshot JSON; default is newest dated snapshot")
-    parser.add_argument("--previous-snapshot", help="Optional prior snapshot for observation diffing")
-    parser.add_argument("--inventory", help="Public-source inventory JSON; default is newest dated inventory")
-    parser.add_argument("--paired-publications", help="GitHub–Zenodo pairing report; default is newest dated report")
+    parser.add_argument(
+        "--report",
+        help="JSON output path (default: reports/public_source_review_DATE.json)",
+    )
+    parser.add_argument(
+        "--markdown-report",
+        help="Markdown output path (default: JSON path with .md suffix)",
+    )
+    parser.add_argument(
+        "--date",
+        type=_parse_date,
+        help="Report date in YYYY-MM-DD (default: UTC today)",
+    )
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Re-render existing report inputs and fail on any JSON or Markdown difference",
+    )
+    parser.add_argument(
+        "--snapshot",
+        help="Public-source snapshot JSON; default is newest dated snapshot",
+    )
+    parser.add_argument(
+        "--previous-snapshot", help="Optional prior snapshot for observation diffing"
+    )
+    parser.add_argument(
+        "--inventory",
+        help="Public-source inventory JSON; default is newest dated inventory",
+    )
+    parser.add_argument(
+        "--paired-publications",
+        help="GitHub–Zenodo pairing report; default is newest dated report",
+    )
     parser.add_argument(
         "--pairing-refresh-status",
         choices=("auto", "failed"),
@@ -176,10 +278,23 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--pair-decisions", help="Durable pairing decisions JSON")
     parser.add_argument("--doi-review", help="DOI-role reconciliation/audit JSON")
-    parser.add_argument("--repository-classification", help="Repository classification queue JSON")
+    parser.add_argument(
+        "--repository-classification", help="Repository classification queue JSON"
+    )
     parser.add_argument("--claims", help="Claims ledger JSON")
+    parser.add_argument(
+        "--observation-decisions",
+        help="SHA-bound public-source observation decisions JSON",
+    )
+    parser.add_argument(
+        "--biographical-claim-decisions",
+        help="SHA-bound biographical claim decisions JSON",
+    )
     parser.add_argument("--scholar-snapshot", help="Canonical Scholar snapshot JSON")
-    parser.add_argument("--scholar-verification-receipt", help="Direct authenticated Scholar verification receipt JSON")
+    parser.add_argument(
+        "--scholar-verification-receipt",
+        help="Direct authenticated Scholar verification receipt JSON",
+    )
     parser.add_argument(
         "--exact-source-revision",
         action="store_true",
@@ -196,20 +311,30 @@ def main(argv: list[str] | None = None) -> int:
     if args.check and args.report:
         report_path = _repo_path(args.report)
     elif args.check:
-        report_path = _latest("public_source_review_*.json")
+        report_path = _latest_public_source_review()
         if report_path is None:
             raise SystemExit("missing public-source review report")
     else:
         report_date = args.date or _utc_date()
-        report_path = _repo_path(args.report) if args.report else REPO_ROOT / "reports" / f"public_source_review_{report_date}.json"
-    markdown_path = _repo_path(args.markdown_report) if args.markdown_report else _default_markdown_path(report_path)
+        report_path = (
+            _repo_path(args.report)
+            if args.report
+            else REPO_ROOT / "reports" / f"public_source_review_{report_date}.json"
+        )
+    markdown_path = (
+        _repo_path(args.markdown_report)
+        if args.markdown_report
+        else _default_markdown_path(report_path)
+    )
 
     report_date = args.date
     if args.check and report_date is None:
         try:
             import json
 
-            report_date = json.loads(report_path.read_text(encoding="utf-8")).get("date")
+            report_date = json.loads(report_path.read_text(encoding="utf-8")).get(
+                "date"
+            )
         except (OSError, ValueError):
             report_date = None
     report_date = report_date or _utc_date()
@@ -220,14 +345,22 @@ def main(argv: list[str] | None = None) -> int:
             import json
 
             existing = json.loads(report_path.read_text(encoding="utf-8"))
-            context = existing.get("refresh_context", {}) if isinstance(existing, dict) else {}
+            context = (
+                existing.get("refresh_context", {})
+                if isinstance(existing, dict)
+                else {}
+            )
             if isinstance(context, dict):
                 pairing_refresh_status = context.get("pairing_refresh_status")
                 pairing_refresh_note = str(context.get("pairing_refresh_note") or "")
         except (OSError, ValueError, json.JSONDecodeError):
             pass
     pairing_refresh_status = pairing_refresh_status or "auto"
-    review_source_commit = source_commit(REPO_ROOT) if args.exact_source_revision else source_payload_commit(REPO_ROOT)
+    review_source_commit = (
+        source_commit(REPO_ROOT)
+        if args.exact_source_revision
+        else source_payload_commit(REPO_ROOT)
+    )
     source_provenance = (
         source_worktree_state(REPO_ROOT)
         if args.exact_source_revision
@@ -237,7 +370,9 @@ def main(argv: list[str] | None = None) -> int:
     # not the later control-only commit that contains the record itself.  The
     # explicit post-deploy mode remains exact-HEAD so release attestation can
     # require the deployed SHA and its exact tree.
-    source_provenance["source_tree_sha"] = source_tree_sha(REPO_ROOT, review_source_commit)
+    source_provenance["source_tree_sha"] = source_tree_sha(
+        REPO_ROOT, review_source_commit
+    )
     try:
         inputs = _resolve_inputs(args, report_path=report_path)
         report = build_review_report(
@@ -258,13 +393,23 @@ def main(argv: list[str] | None = None) -> int:
     rendered_markdown = render_markdown(report)
     if args.check:
         stale: list[str] = []
-        if not report_path.exists() or report_path.read_text(encoding="utf-8") != rendered_json:
+        if (
+            not report_path.exists()
+            or report_path.read_text(encoding="utf-8") != rendered_json
+        ):
             stale.append(str(report_path))
-        if not markdown_path.exists() or markdown_path.read_text(encoding="utf-8") != rendered_markdown:
+        if (
+            not markdown_path.exists()
+            or markdown_path.read_text(encoding="utf-8") != rendered_markdown
+        ):
             stale.append(str(markdown_path))
         if stale:
-            raise SystemExit("stale public-source review artifacts: " + ", ".join(stale))
-        print(f"checked {_display_path(report_path)} and {_display_path(markdown_path)}")
+            raise SystemExit(
+                "stale public-source review artifacts: " + ", ".join(stale)
+            )
+        print(
+            f"checked {_display_path(report_path)} and {_display_path(markdown_path)}"
+        )
         return 0
     _atomic_write(report_path, rendered_json)
     _atomic_write(markdown_path, rendered_markdown)

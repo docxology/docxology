@@ -74,6 +74,18 @@ ARTIFACTS = [
         "command": "uv run python3 code/orchestrators/regenerate_docs.py --apply",
     },
     {
+        "name": "Paper CFF DOI-role synchronization",
+        "outputs": [
+            "papers/*/CITATION.cff (canonical top-level DOI/URL and explicit artifact identifiers)",
+        ],
+        "sources": [
+            "papers/*/metadata.json (doi and optional artifact_doi)",
+            "papers/*/CITATION.cff (non-DOI fields and identifiers)",
+            "code/orchestrators/generate_citation_cff.py",
+        ],
+        "command": "uv run python3 code/orchestrators/generate_citation_cff.py --apply",
+    },
+    {
         "name": "Publications HTML sync",
         "outputs": ["publications.html", "data/publications-ld.json"],
         "sources": [
@@ -159,7 +171,7 @@ ARTIFACTS = [
     {
         "name": "Repository classification queue",
         "outputs": ["data/repository-classification.json"],
-        "sources": ["data/github-repositories.json", "data/software.json", "code/orchestrators/classify_repositories.py"],
+        "sources": ["data/github-repositories.json", "data/software.json", "data/repository-exclusions.json", "code/orchestrators/classify_repositories.py"],
         "command": "python3 code/orchestrators/classify_repositories.py",
     },
     {
@@ -301,9 +313,19 @@ ARTIFACTS = [
     },
     {
         "name": "Full GitHub repository inventory",
-        "outputs": ["data/github-repositories.json", "repositories.html", "repositories-forks.html"],
+        "outputs": ["data/github-repositories.json"],
         "sources": ["GitHub REST API", "data/software.json", "code/orchestrators/build_github_inventory.py"],
         "command": "python3 code/orchestrators/build_github_inventory.py",
+    },
+    {
+        "name": "Cached GitHub repository inventory pages",
+        "outputs": ["repositories.html", "repositories-forks.html"],
+        "sources": [
+            "data/github-repositories.json",
+            "code/orchestrators/build_github_inventory.py",
+            "code/orchestrators/render_github_inventory.py",
+        ],
+        "command": "python3 code/orchestrators/render_github_inventory.py",
     },
     {
         "name": "Paired publication sync report",
@@ -448,6 +470,26 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/refresh_public_source_inventory.py",
     },
     {
+        "name": "Public-source review record",
+        "outputs": [
+            _latest_report("public_source_review_*.json", "reports/public_source_review_2026-05-15.json"),
+            _latest_report("public_source_review_*.md", "reports/public_source_review_2026-05-15.md"),
+        ],
+        "sources": [
+            "reports/public_source_snapshot_*.json",
+            "reports/public_source_inventory_*.json",
+            "reports/paired_publications_*.json",
+            "data/paired-publication-decisions.json",
+            "data/public-source-observation-decisions.json",
+            "data/biographical-claim-decisions.json",
+            "data/claims.json",
+            "data/scholar-snapshot.json",
+            "data/scholar-verification-receipt.json",
+            "code/orchestrators/build_public_source_review.py",
+        ],
+        "command": "python3 code/orchestrators/build_public_source_review.py",
+    },
+    {
         "name": "External link triage",
         "outputs": [
             _latest_report("external_links_triage_*.json", "reports/external_links_triage_2026-05-13.json"),
@@ -548,7 +590,8 @@ UTILITIES = [
     ("generate_redirect_stubs.py", "Renders or checks all centrally declared redirect stubs without inline JavaScript", "maintenance"),
     ("extract_paper_texts.py", "Extracts full text and images from paper PDFs into the papers/ tree", "maintenance"),
     ("fetch_youtube_data.py", "Fetches YouTube channel metadata for both channels into code/data/youtube_*.json (network)", "fetch"),
-    ("generate_citation_cff.py", "Generates per-paper CITATION.cff files from papers/*/metadata.json", "maintenance"),
+    ("generate_citation_cff.py", "Synchronizes canonical citation DOI and labelled artifact DOI roles in per-paper CFF files while preserving non-DOI identifiers", "maintenance"),
+    ("render_github_inventory.py", "Renders the primary and fork GitHub inventory pages deterministically from the reviewed cached JSON inventory", "generation"),
     ("deploy_seo_security.py", "Deploys/refreshes the CSP and rel=\"me\" head tags across indexable pages; idempotent and re-run on every rebuild (not a one-shot)", "maintenance"),
     ("migrate_inline_handlers.py", "One-shot migration: inline event handlers to data-* + addEventListener for CSP (completed; kept for provenance)", "one-shot"),
     ("optimize_font_loading.py", "One-shot migration: legacy Google Fonts links to self-hosted loading (completed; kept for provenance)", "one-shot"),

@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-08-26T02:30:57Z
+Generated: 2026-08-26T18:59:36Z
 
-Current public metrics: 209 curated works; 145 catalogued software repositories (107 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 202 docxology + 43 AII public repositories (158 primary, 87 forks).
+Current public metrics: 209 curated works; 147 catalogued software repositories (108 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 202 docxology + 43 AII public repositories (158 primary, 87 forks).
 
 SUMMARY
 -------
@@ -27,12 +27,12 @@ EDUCATION
 ---------
 2019-2023 | Postdoctoral Fellow | University of California, Davis | Davis, CA, USA
   - Co-mentors: Prof. Brian Johnson (UC Davis) and Prof. Tim Linksvayer (Arizona State University).
-  - NSF Postdoctoral Research Fellowship in Biology (PRFB), award DBI-2010290; NSF budget period
-  2020-2022 with affiliation extending to 2023.
+  - NSF Postdoctoral Fellowship in Biology, award DBI-2010290; official award dates 2020-10-01 to
+  2023-09-30.
   - Genomics, epigenomics, transcriptomics, and behavior in eusocial insects, mainly ants and bees.
   - Science research, mentoring, participation, service, and organizing events and communities
   online.
-  - Sources: NSF DBI-2010290: https://grantome.com/grant/NSF/DBI-2010290; UC Davis:
+  - Sources: NSF award DBI-2010290: https://api.nsf.gov/services/v1/awards/2010290.json; UC Davis:
   https://www.ucdavis.edu/
 2014-2019 | PhD | Stanford University | Stanford, CA, USA
   - Advisor: Professor Deborah M. Gordon, Biology.
@@ -124,8 +124,8 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 2020 | NSF Postdoctoral Research Fellowship in Biology
-  - Award DBI-2010290; NSF budget period 2020-2022.
-  - Sources: NSF DBI-2010290: https://grantome.com/grant/NSF/DBI-2010290
+  - Award DBI-2010290; official award dates 2020-10-01 to 2023-09-30.
+  - Sources: NSF award DBI-2010290: https://api.nsf.gov/services/v1/awards/2010290.json
 2014 | Stanford Graduate Fellow, Urbanek Family Fellowship
   - Stanford University, 2014-2017.
   - Sources: Stanford Graduate Fellowship: https://vpge.stanford.edu/fellowships-funding/sgf
@@ -374,7 +374,7 @@ WORKS AND PUBLICATIONS (209)
 [211] 2026 | Paper | Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract | Zenodo | 10.5281/zenodo.21865643
 [212] 2026 | Paper | docxplus — the Intelligent Document Container | Zenodo | 10.5281/zenodo.21983948
 
-SOFTWARE (145)
+SOFTWARE (147)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -396,16 +396,16 @@ docxology/curriculum | HTML | https://github.com/docxology/curriculum | Curricul
 docxology/lean_niche | Python | https://github.com/docxology/lean_niche | Lean/minimal niche-construction modeling — formal computational representations of ecological niche dynamics
 docxology/obsidian-construction-from-text | Python | https://github.com/docxology/obsidian-construction-from-text | Automated Obsidian vault construction from unstructured text — NLP pipelines to generate bidirectionally-linked knowledge graphs
 docxology/qr_live_protocol | Python | https://github.com/docxology/qr_live_protocol | QR code-based live protocol system for real-time data exchange and interactive session management
-docxology/AGEINT | HTML | https://github.com/docxology/AGEINT | Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · · Zenodo | paper: papers/2026_AGEINT/ | zenodo: https://doi.org/10.5281/zenodo.20732274
+docxology/AGEINT | HTML | https://github.com/docxology/AGEINT | Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · · Citation DOI | paper: papers/2026_AGEINT/ | zenodo: https://doi.org/10.5281/zenodo.20732274
 docxology/template_autoscientists | Python | https://github.com/docxology/template_autoscientists | AutoScientists deterministic multi-agent scientific-discovery coordination harness · · Zenodo | paper: papers/2026_DeterministicTestbedSelf/ | zenodo: https://doi.org/10.5281/zenodo.20533669
 docxology/ultralink-docx | HTML | https://github.com/docxology/ultralink-docx | UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents
 docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
 docxology/template_newspaper | Python | https://github.com/docxology/template_newspaper | The Triplicate data-driven large-format newspaper layout engine · · Zenodo | paper: papers/2026_Triplicate/ | zenodo: https://doi.org/10.5281/zenodo.20533675
 docxology/ntqr_llm | Python | https://github.com/docxology/ntqr_llm | Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · · Zenodo | paper: papers/2026_RecoveringLLMPersona/ | zenodo: https://doi.org/10.5281/zenodo.20498699
-docxology/itrace | Python | https://github.com/docxology/itrace | Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · · Zenodo | paper: papers/2026_ITrace/ | zenodo: https://doi.org/10.5281/zenodo.20614908
+docxology/itrace | Python | https://github.com/docxology/itrace | Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · · Citation DOI | paper: papers/2026_ITrace/ | zenodo: https://doi.org/10.5281/zenodo.20614908
 docxology/coasys | Python | https://github.com/docxology/coasys | Integration workspace aggregating and exercising the coasys (AD4M) agent-centric social-layer repositories
 docxology/CogSecSkills | Python | https://github.com/docxology/CogSecSkills | Multiharness cognitive-security and analytic-tradecraft skill library — 100 defensive SAT/cogsec skills runnable under Claude Code, Codex, and Hermes · · Zenodo | paper: papers/2026_CogSecSkills/ | zenodo: https://doi.org/10.5281/zenodo.20804585
-docxology/template_madlib | Python | https://github.com/docxology/template_madlib | Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing · · Zenodo | paper: papers/2026_TemplateMadlib/ | zenodo: https://doi.org/10.5281/zenodo.20786638
+docxology/template_madlib | Python | https://github.com/docxology/template_madlib | Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing · · Citation DOI | paper: papers/2026_TemplateMadlib/ | zenodo: https://doi.org/10.5281/zenodo.20786638
 docxology/active_torchference | Python | https://github.com/docxology/active_torchference | PyTorch-based Active Inference implementations — GPU-accelerated variational inference and free energy minimization
 docxology/ant-pheromone | Python | https://github.com/docxology/ant-pheromone | Computational simulation of ant pheromone trail dynamics and stigmergic communication
 docxology/ant_stack | Python | https://github.com/docxology/ant_stack | The Ant Stack — layered computational model of collective ant-colony intelligence | paper: papers/2025_AntStack/
@@ -415,7 +415,7 @@ docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive
 docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference | Julia | https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference | Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment
 docxology/biol-1 | HTML | https://github.com/docxology/biol-1 | BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 docxology/biol-8 | HTML | https://github.com/docxology/biol-8 | BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
-docxology/biology_textbook | Python | https://github.com/docxology/biology_textbook | Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo | paper: papers/2026_BiologyTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20286478
+docxology/biology_textbook | Python | https://github.com/docxology/biology_textbook | Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI | paper: papers/2026_BiologyTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20286477
 docxology/cascadia | Python | https://github.com/docxology/cascadia | Cascadia bioregion modeling and data analysis tools
 docxology/course | Python | https://github.com/docxology/course | Course materials framework for structured interdisciplinary learning modules
 docxology/enactive_inference_model | Python | https://github.com/docxology/enactive_inference_model | Three-level hierarchical enactive inference model of mental action — focused-attention meditation with expert/novice profiles; reproducible simulations and figures | paper: papers/2025_Thoughtseeds/
@@ -483,6 +483,7 @@ docxology/crescent-city-intel | TypeScript | https://github.com/docxology/cresce
 docxology/thalia | Python | https://github.com/docxology/thalia | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · · Zenodo | paper: papers/2026_THALIA/ | zenodo: https://doi.org/10.5281/zenodo.21763244
 docxology/math4wisdom-superhuman-docs-archive | TypeScript | https://github.com/docxology/math4wisdom-superhuman-docs-archive | Structured, read-only Math4Wisdom Superhuman Docs archive
 docxology/docxplus | Python | https://github.com/docxology/docxplus | docxplus — the Intelligent Document Container: format, tools, and formal specification · · Zenodo | paper: papers/2026_DocxplusIntelligentDocument/ | zenodo: https://doi.org/10.5281/zenodo.21983948
+docxology/multi-time | Python | https://github.com/docxology/multi-time | Multi-frequency time-series analysis toolkit built on sktime — validates irregular series, tests stationarity and Granger causality, and evaluates forecasting models
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
 ActiveInferenceInstitute/ActiveBlockference | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveBlockference | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework
 ActiveInferenceInstitute/ActiveInferAnts | Python | https://github.com/ActiveInferenceInstitute/ActiveInferAnts | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
@@ -503,7 +504,7 @@ ActiveInferenceInstitute/Biofirm | Python | https://github.com/ActiveInferenceIn
 ActiveInferenceInstitute/Start | Python | https://github.com/ActiveInferenceInstitute/Start | Institute onboarding hub — getting-started guides, contributor pathways, project index, and orientation materials for new participants
 ActiveInferenceInstitute/act_inf_metaanalysis | TeX | https://github.com/ActiveInferenceInstitute/act_inf_metaanalysis | A computational meta-analysis of the Active Inference literature. An automated LLM pipeline extracts assertions from 849 papers across theory, tools, and domains, structuring them as nanopublications. By mapping these into a citation-weighted knowledge graph, this project provides a reproducible, living review of hypothesis-level consensus.
 ActiveInferenceInstitute/Knowledge-Engineering | Jupyter | https://github.com/ActiveInferenceInstitute/Knowledge-Engineering | Knowledge engineering tools and workflows — ontology alignment, concept mapping, and structured knowledge-base construction for Active Inference
-ActiveInferenceInstitute/fep_lean | Python | https://github.com/ActiveInferenceInstitute/fep_lean | Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline · · Zenodo | paper: papers/2026_FEPLean/ | zenodo: https://doi.org/10.5281/zenodo.19699234
+ActiveInferenceInstitute/fep_lean | Python | https://github.com/ActiveInferenceInstitute/fep_lean | Lean 4 / Mathlib4 formalization of FEP-related mathematics — 155-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline · · Zenodo artifact v1.1.0 · Citation DOI | paper: papers/2026_FEPLean/ | zenodo: https://doi.org/10.5281/zenodo.19699233
 ActiveInferenceInstitute/ActInf_RxInfer | unspecified | https://github.com/ActiveInferenceInstitute/ActInf_RxInfer | Active Inference with RxInfer.jl — Julia-based reactive message passing for efficient Bayesian inference in Active Inference models
 ActiveInferenceInstitute/pymcp | Python | https://github.com/ActiveInferenceInstitute/pymcp | PyMCP — Model Context Protocol bridge for PyMDP, enabling Active Inference agents to interoperate with MCP-compatible AI tooling
 ActiveInferenceInstitute/policy_entanglement | Python | https://github.com/ActiveInferenceInstitute/policy_entanglement | Policy Entanglement in Active Inference v1.0.0 · Zenodo | paper: papers/2026_PolicyEntanglementActive/ | zenodo: https://doi.org/10.5281/zenodo.20418904
@@ -511,16 +512,17 @@ ActiveInferenceInstitute/GEN24 | Jupyter | https://github.com/ActiveInferenceIns
 ActiveInferenceInstitute/NoOrg | HTML | https://github.com/ActiveInferenceInstitute/NoOrg | NoOrg is a Real Org — experimental organizational infrastructure and governance frameworks for decentralized scientific institutions
 ActiveInferenceInstitute/ActiveInferenceImplementations | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations | Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles
 ActiveInferenceInstitute/ATLAS | Python | https://github.com/ActiveInferenceInstitute/ATLAS | Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces
-ActiveInferenceInstitute/COGANT | Python | https://github.com/ActiveInferenceInstitute/COGANT | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · · Zenodo · Zenodo | paper: papers/2026_COGANT/ | zenodo: https://doi.org/10.5281/zenodo.20705351
-ActiveInferenceInstitute/on_policy_distillation | Python | https://github.com/ActiveInferenceInstitute/on_policy_distillation | On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · · Zenodo · Zenodo | paper: papers/2026_PolicyDistillationAs/ | zenodo: https://doi.org/10.5281/zenodo.20749817
+ActiveInferenceInstitute/COGANT | Python | https://github.com/ActiveInferenceInstitute/COGANT | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · · Zenodo artifact v0.6.0 · Citation DOI | paper: papers/2026_COGANT/ | zenodo: https://doi.org/10.5281/zenodo.20705350
+ActiveInferenceInstitute/on_policy_distillation | Python | https://github.com/ActiveInferenceInstitute/on_policy_distillation | On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · · Zenodo artifact v1.0.2 · Citation DOI | paper: papers/2026_PolicyDistillationAs/ | zenodo: https://doi.org/10.5281/zenodo.20747834
 ActiveInferenceInstitute/Bots | unspecified | https://github.com/ActiveInferenceInstitute/Bots | Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms
 ActiveInferenceInstitute/Garden-of-Iris | Python | https://github.com/ActiveInferenceInstitute/Garden-of-Iris | Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics
 ActiveInferenceInstitute/gen25 | unspecified | https://github.com/ActiveInferenceInstitute/gen25 | GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort
 ActiveInferenceInstitute/ISSS | Python | https://github.com/ActiveInferenceInstitute/ISSS | International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science
 ActiveInferenceInstitute/active_fractal_rabbit | Python | https://github.com/ActiveInferenceInstitute/active_fractal_rabbit | Active Inference for FractalRabbit · Zenodo | paper: papers/2026_ActiveFractalRabbit/ | zenodo: https://doi.org/10.5281/zenodo.21330636
-ActiveInferenceInstitute/Active_Fedference | Python | https://github.com/ActiveInferenceInstitute/Active_Fedference | Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus · · Zenodo | paper: papers/2026_RobustBeliefSharing/ | zenodo: https://doi.org/10.5281/zenodo.21864003
+ActiveInferenceInstitute/Active_Fedference | Python | https://github.com/ActiveInferenceInstitute/Active_Fedference | Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus · · Citation DOI | paper: papers/2026_RobustBeliefSharing/ | zenodo: https://doi.org/10.5281/zenodo.21864003
 ActiveInferenceInstitute/Active_Skillference | Python | https://github.com/ActiveInferenceInstitute/Active_Skillference | Validated prerequisite graph, computational claim registry, and SkillTree delivery contract for Active Inference · · Zenodo | paper: papers/2026_ActiveSkillference/ | zenodo: https://doi.org/10.5281/zenodo.21865643
 ActiveInferenceInstitute/active_inference_power | Python | https://github.com/ActiveInferenceInstitute/active_inference_power | Conditional statistical power under controlled generative settings for Active Inference · · Zenodo | paper: papers/2026_ActiveInferencePower/ | zenodo: https://doi.org/10.5281/zenodo.21695160
+ActiveInferenceInstitute/Active_Inference_Un0 | unspecified | https://github.com/ActiveInferenceInstitute/Active_Inference_Un0 | Public repository with no description, language, or committed contents at the 2026-08-26 review
 
 CONFERENCES, POSTERS, SEMINARS, WORKSHOPS
 -----------------------------------------
@@ -607,7 +609,7 @@ PROFESSIONAL PARTICIPATION, ENGAGEMENT, AND SERVICE
 ART PORTFOLIO AND USES
 ----------------------
 All | Art portfolio | Posting drawings to an online portfolio since 2009. | Sources: Flickr: http://flickr.com/photos/daniel_friedman/
-2021 | Curio Cards | A full Curio Cards set sold at Christie's on October 1, 2021 for 393 ETH, approximately $1.2 million. | Sources: Christie's Curio Cards lot: https://www.christies.com/lot/lot-6337619
+2021 | Curio Cards | A full Curio Cards set sold at Christie's New York on September 30, 2021 for 393 ETH ($1,202,108). | Sources: Christie's Curio Cards lot: https://www.christies.com/lot/lot-6337619
 2021 | Curio Cards | Curio Cards collection stored in the Arctic World Archive with art and provenance data intended for long-duration preservation. | Sources: Top Dog Beach Club: https://topdogbeachclub.com/non-fungible-vault/
 2021 | Curio Cards | Public auction and market history for Curio Cards includes major 2021 sales; verify venue-specific claims before reusing exact auction-house wording. | Sources: Sotheby's Curio Cards: https://metaverse.sothebys.com/natively-digital/lots/curio-cards-complete-set-1-30-plus-17b
 2019 | Art used | Art used in the eBook Rebelling with Care: Exploring open technologies for commoning healthcare. | Sources: ResearchGate: https://www.researchgate.net/publication/335911369_Rebelling_with_Care_Exploring_open_technologies_for_commoning_healthcare
@@ -615,7 +617,7 @@ All | Art portfolio | Posting drawings to an online portfolio since 2009. | Sour
 2019 | Art used | Art used in degrowth blog. | Sources: Degrowth.info: https://www.degrowth.info/blog/on-strategies-for-socioecological-transformation
 2018 | Art used | Art used in Medium post by Lorena Cabeza, August 23, 2018. | Sources: Medium: https://medium.com/@lorenacabeza/manifiesto-la-escritura-y-la-vida-10d4c254c0bf
 2018 | Art used | Cover image of Probe magazine. | Sources: Probe Magazine: https://www.ssbprobe.com/decentraldogma-danielfriedman
-2017 | Curio Cards | Early Ethereum art NFT project; art for Curio Cards 24, 25, and 26. | Sources: Curio Cards artist: https://curio.cards/artist/danielfriedman/; Curio Cards docs: https://docs.curio.cards/the-artists/daniel-friedman
+2017 | Curio Cards | Early Ethereum art NFT collection that debuted May 9, 2017; Daniel Friedman created Curio Cards 24, 25, and 26. | Sources: Curio Cards artist: https://curio.cards/artist/danielfriedman/; Curio Cards docs: https://docs.curio.cards/the-artists/daniel-friedman
 2017 | Art used | Art used in Bas Haring blog. | Sources: Me Judice: https://www.mejudice.nl/artikelen/detail/mijn-economiemuseum-de-markt
 2017 | Art used | Art used in Vice Motherboard blog. | Sources: VICE Motherboard: https://www.vice.com/en/article/jpaqk8/a-dollar25-million-book-heist-proves-the-printed-page-is-still-sacred
 2016 | Art used | Featured in Genetics Society of America art blog. | Sources: Genes to Genomes: https://genestogenomes.org/gsa-art-daniel-friedman/

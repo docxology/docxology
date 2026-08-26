@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "policy": "Each decision binds the exact canonical JSON before/after observation. A changed digest must return to review.",
+  "decisions": [
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+      "label": "GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+      "previous_sha256": "1f1c44def7ee92dbd63bcddf6bd1aab73f02cba12c4d2ab6db36091e76217db7",
+      "current_sha256": "e1265bf0e0ea27eabd1fcc47d3cb07bd621a176440c00c8eee2c7af7e7e66f8a",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "Reviewed as an updated_at-only observation; no curated claim or catalog change is required.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/CEREBRUM",
+      "label": "GitHub repo ActiveInferenceInstitute/CEREBRUM",
+      "previous_sha256": "31651d0cf77d9667c03b85c1d2eaacaa688334489ea5e4bfa5a324e15059fb35",
+      "current_sha256": "38638413942915dfbd6ae6521d7db78269cc5ea984e97ec42e7409c78c5d4a13",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "Reviewed as an updated_at-only observation; no curated claim or catalog change is required.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "previous_sha256": "2997b844413c474bd3b1b45f7040dd3d8cce38739679f214314b8be0f145a977",
+      "current_sha256": "b40c8d7695cf6b9042b1a9696999457cac3ac24847433dfb7f6dbc4fc8bdedec",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "Reviewed as an updated_at-only observation; no curated claim or catalog change is required.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+      "label": "GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+      "previous_sha256": "87cce02c28f3378d6b2f17cd5af02083ad24bd5e1ac0df43edf2eef98b9fe121",
+      "current_sha256": "59ce10310939eb701652a52a9c20dd5d1b0011bc447b954b3294d4a27bb4c101",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "Reviewed as an updated_at-only observation; no curated claim or catalog change is required.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/cognitive",
+      "label": "GitHub repo ActiveInferenceInstitute/cognitive",
+      "previous_sha256": "c7dfe7ac31ed7319c968eee0e5d5c0a30be4ac984ac44e480b53bf2234fb12e0",
+      "current_sha256": "62084e2ff9d7f660c41ac7b4e8e1c4cb2ecd6746b1839828b15bb63af29ba6bd",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "Reviewed as an updated_at-only observation; no curated claim or catalog change is required.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean",
+      "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
+      "previous_sha256": "af3ab224d532dfb700026334fb9403cf9ce50eb9fc05a2a3f15a4136b5fd5a7b",
+      "current_sha256": "051916506b747063f78ec6725f880d638f62f0ccf10f9f6839e9911088b3d073",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "Reviewed the primary-language change from Python to Lean; refresh the inventory-derived repository surfaces.",
+      "curated_targets": [
+        "data/github-repositories.json",
+        "repositories.html"
+      ]
+    },
+    {
+      "id": "public-source-observation:GitHub user docxology",
+      "label": "GitHub user docxology",
+      "previous_sha256": "e89ecb63dd609483479463591065a6542813d50518367bd6acbe91e1f42cc2f7",
+      "current_sha256": "b2856f5bce0f6006404a09214323bc873b6872f9c7375a4430069c652eff0d24",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "Reviewed as an updated_at-only profile observation; no curated claim or catalog change is required.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:Zenodo ORCID-linked records",
+      "label": "Zenodo ORCID-linked records",
+      "previous_sha256": "4f88fcffdab7684602d29353c76c1b184a072550ba1cfecb7dfd591983014130",
+      "current_sha256": "82013dab9c47afc5dc96723fb217b34e63fbcda10aa5f61c90f34469f268b25a",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "Reviewed as a changed first result with an unchanged total; it is not a bibliography candidate by itself.",
+      "curated_targets": []
+    },
+    {
+      "id": "public-source-observation:Zenodo exact-name creator records",
+      "label": "Zenodo exact-name creator records",
+      "previous_sha256": "8ba29028c4af5ef0c9566674ca373d67943a37e614f178f9d7d8e7667157cb7a",
+      "current_sha256": "8914cd4c223b4bfb4ba67693c871e110a06f269801391b74090128ae3b0290f7",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "Reviewed as a changed first result with an unchanged total; it is not a bibliography candidate by itself.",
+      "curated_targets": []
+    }
+  ]
+}

@@ -6,6 +6,7 @@ tags: ["on-policy-distillation", "active-inference", "self-distillation", "privi
 domain: "Active Inference"
 citation: "Daniel Ari Friedman (2026). *On-Policy Distillation as Active Inference in Finite Variational Models*. Active Inference."
 doi: "10.5281/zenodo.20747834"
+artifact_doi: "10.5281/zenodo.20749817"
 ---
 
 # On-Policy Distillation as Active Inference in Finite Variational Models
@@ -43,7 +44,8 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.20747834
 - PDF SHA-256: c6b5ec494915e6e046f24cf723f8dbbf93a5b168544daed3cca14c089d4087aa
 - Pairing confidence: strong
-- Last checked: 2026-08-19T22:45:41Z
+- Last checked: 2026-08-26T18:35:10Z
+- Artifact DOI: 10.5281/zenodo.20749817
 
 ## Prerequisites
 

@@ -43,7 +43,7 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.20453879
 - PDF SHA-256: 6e6d19d04182628bb825471cf8094b5c32d2c491d2c646652ec7e2439ba80773
 - Pairing confidence: strong
-- Last checked: 2026-08-19T22:45:41Z
+- Last checked: 2026-08-26T18:35:10Z
 
 ## Prerequisites
 

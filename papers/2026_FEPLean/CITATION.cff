@@ -3,16 +3,28 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics"
 date-released: 2026-04-24
-doi: 10.5281/zenodo.19699234
-url: "https://doi.org/10.5281/zenodo.19699234"
+doi: 10.5281/zenodo.19699233
+url: "https://doi.org/10.5281/zenodo.19699233"
 authors:
   - family-names: Friedman
     given-names: Daniel Ari
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.19699234
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.19699233"
+    description: "Canonical citation DOI"
   - type: url
-    value: "https://zenodo.org/records/19699234"
-    description: "Zenodo landing page"
+    value: "https://doi.org/10.5281/zenodo.19699233"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.22072956"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.22072956"
+    description: "Version/download DOI resolver (Zenodo artifact)"
+  - type: url
+    value: "https://zenodo.org/records/22072956"
+    description: "Version/download landing page (Zenodo artifact)"
+  - type: url
+    value: "https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0"
+    description: "GitHub release"

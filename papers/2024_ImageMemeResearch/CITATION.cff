@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "ImageMemeResearch"
 date-released: 2024
+doi: 10.1002/asi.24900
+url: "https://doi.org/10.1002/asi.24900"
 authors:
   - family-names: Friedman
     given-names: Daniel A.
@@ -11,3 +13,10 @@ authors:
     given-names: R.J.
   - family-names: Mascarenhas
     given-names: Mridula
+identifiers:
+  - type: doi
+    value: "10.1002/asi.24900"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1002/asi.24900"
+    description: "Canonical citation DOI resolver"

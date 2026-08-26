@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "ForagerHydration"
 date-released: 2019
+doi: 10.1038/s41598-019-41586-3
+url: "https://doi.org/10.1038/s41598-019-41586-3"
 authors:
   - family-names: Friedman
     given-names: Daniel A.
@@ -11,3 +13,10 @@ authors:
     given-names: Michael J.
   - family-names: Gordon
     given-names: Deborah M.
+identifiers:
+  - type: doi
+    value: "10.1038/s41598-019-41586-3"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1038/s41598-019-41586-3"
+    description: "Canonical citation DOI resolver"

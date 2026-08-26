@@ -40,6 +40,35 @@ RELEASE_EVIDENCE: tuple[EvidenceRequirement, ...] = (
     EvidenceRequirement("live-site verification", "reports/live_site_verification_*.json"),
 )
 
+# A glob is useful for discovering dated receipts, but it is deliberately not
+# sufficient authorization to treat a file as release evidence.  Each required
+# report has a fixed public path shape and an ISO calendar date.  Keep this
+# contract adjacent to ``RELEASE_EVIDENCE`` so collection and attestation use
+# the same boundary rather than accepting any lexically matching filename.
+_REQUIREMENT_PATH_PATTERNS: dict[str, re.Pattern[str]] = {
+    "public-source snapshot": re.compile(
+        r"^reports/public_source_snapshot_(?P<date>\d{4}-\d{2}-\d{2})\.json$"
+    ),
+    "public-source review": re.compile(
+        r"^reports/public_source_review_(?P<date>\d{4}-\d{2}-\d{2})\.json$"
+    ),
+    "external-link report": re.compile(
+        r"^reports/external_links_(?P<date>\d{4}-\d{2}-\d{2})\.json$"
+    ),
+    "browser smoke": re.compile(
+        r"^reports/browser-smoke/(?P<date>\d{4}-\d{2}-\d{2})/manifest\.json$"
+    ),
+    "browser QA": re.compile(
+        r"^reports/browser-qa/(?P<date>\d{4}-\d{2}-\d{2})/manifest\.json$"
+    ),
+    "visual QA": re.compile(
+        r"^reports/visual-qa/(?P<date>\d{4}-\d{2}-\d{2})/manifest\.json$"
+    ),
+    "live-site verification": re.compile(
+        r"^reports/live_site_verification_(?P<date>\d{4}-\d{2}-\d{2})\.json$"
+    ),
+}
+
 _DATED_REPORT_NAME = re.compile(
     r"^reports/(?:public_source_snapshot|public_source_review|external_links|external_links_triage|live_site_verification)_(\d{4}-\d{2}-\d{2})\.json$"
 )
@@ -159,15 +188,35 @@ def matches_requirement_path(relative: str, requirement: EvidenceRequirement) ->
     """
     candidate = Path(relative)
     pattern = Path(requirement.pattern)
-    return (
+    path_pattern = _REQUIREMENT_PATH_PATTERNS.get(requirement.name)
+    if path_pattern is None:
+        return False
+    dated = path_pattern.fullmatch(relative)
+    return bool(
         not candidate.is_absolute()
         and len(candidate.parts) == len(pattern.parts)
         and fnmatch.fnmatchcase(relative, requirement.pattern)
+        and dated is not None
+        and _is_iso_date(dated.group("date"))
     )
 
 
-def _latest_path(repo_root: Path, pattern: str) -> Path | None:
-    matches = sorted(repo_root.glob(pattern), key=lambda path: path.as_posix(), reverse=True)
+def _latest_path(repo_root: Path, requirement: EvidenceRequirement) -> Path | None:
+    """Return the newest validly named receipt for one evidence requirement.
+
+    Invalid date-like filenames are not merely lower-priority candidates: they
+    are not evidence at all.  Filtering them before selecting the latest path
+    prevents a lexically newer malformed report from masking a valid receipt.
+    """
+    matches = sorted(
+        (
+            path
+            for path in repo_root.glob(requirement.pattern)
+            if matches_requirement_path(path.relative_to(repo_root).as_posix(), requirement)
+        ),
+        key=lambda path: path.as_posix(),
+        reverse=True,
+    )
     return matches[0] if matches else None
 
 
@@ -362,9 +411,15 @@ def _visual_review_errors(payload: dict[str, Any], repo_root: Path, manifest_pat
     if not isinstance(reviewer, str) or not reviewer.strip():
         return ["visual QA lacks reviewed_by"]
     try:
-        _parse_timestamp(review.get("reviewed_at"))
+        reviewed_at = _parse_timestamp(review.get("reviewed_at"))
     except ValueError as exc:
         return [f"visual QA has invalid reviewed_at: {exc}"]
+    try:
+        generated_at = _parse_timestamp(payload.get("generated_at"))
+    except ValueError as exc:
+        return [f"visual QA has invalid generated_at: {exc}"]
+    if reviewed_at < generated_at:
+        return ["visual QA review predates its captured manifest"]
     return []
 
 
@@ -573,7 +628,7 @@ def collect_release_evidence(
     receipts: list[EvidenceReceipt] = []
     errors: list[str] = []
     for requirement in RELEASE_EVIDENCE:
-        path = _latest_path(repo_root, requirement.pattern)
+        path = _latest_path(repo_root, requirement)
         if path is None:
             errors.append(f"missing {requirement.name} ({requirement.pattern})")
             continue
@@ -639,7 +694,7 @@ def live_deployment_errors(
 ) -> list[str]:
     """Check the live-site receipt specifically proves deployment of the SHA."""
     requirement = next(item for item in RELEASE_EVIDENCE if item.name == "live-site verification")
-    path = path or _latest_path(repo_root, requirement.pattern)
+    path = path or _latest_path(repo_root, requirement)
     if path is None:
         return ["missing live-site verification report"]
     try:
@@ -722,6 +777,7 @@ def validate_attestation(
         errors.append(
             f"deployment attestation SHA {payload.get('deployment_sha') or 'missing'} != release commit {expected_commit}"
         )
+    attested_at: datetime | None = None
     try:
         attested_at = _parse_timestamp(payload.get("attested_at"))
         reference = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
@@ -799,6 +855,18 @@ def validate_attestation(
             errors.append(f"attested {requirement.name} generated_at does not match the report")
         if entry.get("source_commit") != receipt.source_commit:
             errors.append(f"attested {requirement.name} source_commit does not match the report")
+        if attested_at is not None:
+            try:
+                generated_at = _parse_timestamp(receipt.generated_at)
+            except ValueError as exc:
+                errors.append(
+                    f"attested {requirement.name} has invalid generated_at: {exc}"
+                )
+            else:
+                if attested_at < generated_at:
+                    errors.append(
+                        f"deployment attestation predates {requirement.name} evidence"
+                    )
         attested_receipts.append(receipt)
     errors.extend(_review_snapshot_binding_errors(repo_root, attested_receipts, expected_commit))
     errors.extend(scholar_source_receipt_errors(repo_root))

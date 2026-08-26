@@ -3,8 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "Beacons - pre emulation of social cortex"
 date-released: 2025-01-25
-doi: 10.5281/zenodo.14737060
-url: "https://doi.org/10.5281/zenodo.14737060"
+doi: 10.5281/zenodo.14737059
+url: "https://doi.org/10.5281/zenodo.14737059"
 authors:
   - family-names: djuwidja
     given-names: andrew
@@ -13,8 +13,17 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.14737060
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.14737059"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.14737059"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.14737060"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.14737060"
+    description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
     value: "https://zenodo.org/records/14737060"
-    description: "Zenodo landing page"
+    description: "Version/download landing page (Zenodo artifact)"

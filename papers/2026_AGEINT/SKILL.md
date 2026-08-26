@@ -6,6 +6,7 @@ tags: ["agentic-intelligence", "ageint", "ai-agents", "intelligence-tradecraft",
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *AGEINT: Agentic Intelligence*. Computational."
 doi: "10.5281/zenodo.20732274"
+artifact_doi: "10.5281/zenodo.20732275"
 ---
 
 # AGEINT: Agentic Intelligence
@@ -43,7 +44,8 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.20732274
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-08-19T22:45:41Z
+- Last checked: 2026-08-26T18:35:10Z
+- Artifact DOI: 10.5281/zenodo.20732275
 
 ## Prerequisites
 

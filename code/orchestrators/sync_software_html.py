@@ -25,6 +25,7 @@ from software_table import (  # noqa: E402
     DEFAULT_SOFTWARE_PATH,
     description_html,
     description_plain,
+    doi_role_label_errors,
     iter_software_rows,
     lang_css_class,
     zenodo_url,
@@ -108,6 +109,9 @@ def split_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[Softwar
 def validate_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[SoftwareRow]]:
     if not rows:
         raise SystemExit("No software rows parsed")
+    role_errors = doi_role_label_errors(rows)
+    if role_errors:
+        raise SystemExit("Ambiguous software DOI-role labels:\n" + "\n".join(f"  - {error}" for error in role_errors))
     expected_docx, expected_aii = parse_software_catalog_counts()
     docx, aii = split_rows(rows)
     if len(docx) != expected_docx:

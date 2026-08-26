@@ -22,7 +22,7 @@ keywords: "Daniel Ari Friedman, active inference, PROFILE"
 
 Daniel Ari Friedman is a multidisciplinary researcher, educator, and artist working at the intersection of biology, cognitive science, philosophy, complex systems, and computational modeling. As President and co-founder of the Active Inference Institute — a 501(c)(3) non-profit educational organization — he leads an open science community dedicated to learning, teaching, and applying Active Inference, a Bayesian framework for understanding minds, brains, and behavior.
 
-His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and early Ethereum NFT art contributions. His work has garnered **777 citations** on Google Scholar (h-index: 15, i10-index: 17, as of 2026-06-09) across his Scholar-indexed publications; the [unified bibliography](BIBLIOGRAPHY.md) lists books, presentations, and recent deposits not yet reflected on Scholar ([current totals](../reports/current_counts.md)).
+His research spans from the molecular neuroscience of ant colonies to theoretical frameworks for consciousness, conflict resolution, and cognitive security, complemented by artistic contributions including pen-and-ink drawings, collaborative art paradigms, and early Ethereum NFT art contributions. His work has garnered **815 citations** on Google Scholar (h-index: 14, i10-index: 16, as of 2026-08-26) across his Scholar-indexed publications; the [unified bibliography](BIBLIOGRAPHY.md) lists books, presentations, and recent deposits not yet reflected on Scholar ([current totals](../reports/current_counts.md)).
 
 ---
 
@@ -32,10 +32,10 @@ His research spans from the molecular neuroscience of ant colonies to theoretica
 Stanford University, Stanford, CA
 Advisor: Professor Deborah M. Gordon
 Thesis: *Behavioral, Physiological, and Transcriptomic Variation Among Colonies of the Red Harvester Ant (Pogonomyrmex barbatus)*
-[Stanford Digital Repository](http://purl.stanford.edu/pb813wm1484)
+[Stanford Digital Repository](https://purl.stanford.edu/pb813wm1484)
 Field research conducted at [Jasper Ridge Biological Preserve](https://jrbp.stanford.edu/) and a long-term field site in New Mexico
 
-**NSF Postdoctoral Research Fellowship in Biology** — PRFB [award DBI-2010290](https://grantome.com/grant/NSF/DBI-2010290), UC Davis (NSF budget period 2020–2022; affiliation extended to 2023)
+**NSF Postdoctoral Fellowship in Biology** — [award DBI-2010290](https://api.nsf.gov/services/v1/awards/2010290.json), UC Davis (official award dates 2020-10-01 to 2023-09-30)
 UC Davis, Department of Entomology & Nematology
 Co-mentors: Professor Brian Johnson (UC Davis) and Professor Tim Linksvayer (Arizona State University)
 Focus: Behavior, distributed physiology, and evolutionary genomics in social insects
@@ -61,13 +61,13 @@ Through [COGSEC.org](https://cogsec.org) (the Cognitive Security and Education F
 
 ### Art, Philosophy & Synergetics
 
-Friedman's artistic practice includes abstract black-and-white pen drawings, collaborative art paradigms (Partner Pen Play in Parallel), and deep explorations of William Blake and Buckminster Fuller. His work on synergetics encompasses formal mathematical treatments of quadray/IVM coordinate systems, symbolic synergetics, and software implementations (QuadCraft, symergetics, ivm-xyz). On May 9, 2017, three of his pen drawings were included in the Curio Cards project, recognized in NFT archaeology as an early Ethereum art NFT collection predating CryptoPunks by approximately six weeks:
+Friedman's artistic practice includes abstract black-and-white pen drawings, collaborative art paradigms (Partner Pen Play in Parallel), and deep explorations of William Blake and Buckminster Fuller. His work on synergetics encompasses formal mathematical treatments of quadray/IVM coordinate systems, symbolic synergetics, and software implementations (QuadCraft, symergetics, ivm-xyz). Curio Cards debuted on Ethereum on May 9, 2017, and all original cards were minted in 2017. Friedman created three pen drawings for Cards 24, 25, and 26:
 
 - **Card 24** — "Complexity" (333 copies): fragmented geometric fields inspired by brains, ant colonies, and complex systems
 - **Card 25** — (222 copies): rhythmic patterns exploring complexity, passion, and education
 - **Card 26** — (106 copies, rarest in set): playful decreasing supply mechanic; last recorded sale at **17.9 ETH** (>$44,000)
 
-Founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, the 30-card collection from **seven artists** (Cryptograffiti, Cryptopop, Daniel Friedman, Marisol Vengas, Phneep, Robek World, Thoros of Myr) was sold directly on-chain for $0.50–$1.00 per card using individual ERC-20 contracts (predating ERC-721). A full set of Curio Cards plus the rare "17b" misprint sold at **Christie's** on October 1, 2021 for over **$1.2 million (393 ETH)** — the first ETH-denominated auction at Christie's.
+Founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, the 30-card collection from **seven artists** (Cryptograffiti, Cryptopop, Daniel Friedman, Marisol Vengas, Phneep, Robek World, Thoros of Myr) was sold directly on-chain for $0.50–$1.00 per card using individual ERC-20 contracts (predating ERC-721). A full set of Curio Cards plus the rare "17b" misprint sold at **Christie's New York** on September 30, 2021 for **$1,202,108 (393 ETH)**.
 
 ### Computational Frameworks
 
@@ -87,14 +87,14 @@ Friedman develops open-source tools spanning Python, Rust, Go, TypeScript, and J
 
 The Active Inference Institute emerged from foundational team meetings in 2019–2020 (initially as the Active Inference Lab). The organization transitioned to a non-profit in mid-2022, registered in **Delaware, USA**, and received official **501(c)(3) recognition in 2024** (supported pro bono by Fried Frank law firm). Co-founded by Friedman, Alexander Vyatkin, and Yvonne, the Institute is an educational and open science organization supporting diverse projects and infrastructure for learning, teaching, and applying Active Inference. Under Friedman's leadership, the Institute has produced 500+ educational videos, organized five annual Applied Active Inference Symposia (2021–2025), developed open-source tools (GNN, CEREBRUM, ActiveInferAnts), built a global community, and publishes a monthly newsletter via [Substack](https://activeinferenceinstitute.substack.com/).
 
-**Programs**: Textbook Group (10 cohorts through 2026; [Parr, Pezzulo & Friston, 2022](https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind) · [Namjoshi, 2026](https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/)), Internship Program (since 2022), Fellows Program (5 Research Fellows by Nov 2024), Mentorship Program (launched 2024).
+**Programs**: Textbook Group (nine completed 2022-textbook cohorts plus a live first 2026 Fundamentals cohort; [Parr, Pezzulo & Friston, 2022](https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind) · [Namjoshi, 2026](https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/)), Internship Program (since 2022), Fellows Program (5 Research Fellows by Nov 2024), Mentorship Program (launched 2024).
 
 **Current Officers (2025)**:
 
 - Daniel Friedman — President and Treasurer
-- Alexandra Mikhailova — Vice-President and Secretary (2025–ongoing)
+- Alexandra Mikhailova — Vice President and Secretary
 
-**Prior Officers**: Alexander Vyatkin (VP 2022–2024), V. Bleu Knight (Secretary 2022–2024)
+**Prior Officers**: consult dated historical records separately; the current official officers page does not establish historical office dates.
 
 **Board of Directors**: [activeinference.institute/structure/board-of-directors](https://activeinference.institute/structure/board-of-directors/)
 **History**: [activeinference.institute/history](https://www.activeinference.institute/history)
@@ -117,7 +117,7 @@ Weekend-long hackathons addressing pressing problems using complexity science, f
 
 ## Teaching
 
-Friedman teaches at College of the Redwoods as Associate Faculty in Biology: **BIOL-1: General Biology** (Pelican Bay) and **BIOL-8: Human Biology** (Spring 2026). He maintains [*Introduction to Biology: A Generative Approach*](../papers/2026_BiologyTextbook/) as an open textbook ([Zenodo 10.5281/zenodo.20286477](https://doi.org/10.5281/zenodo.20286477); source at [docxology/biology_textbook](https://github.com/docxology/biology_textbook)). He has developed online courses (Udemy: Communication for Remote Teams, Keybase for Remote Teams), and offers extensive private tutoring and mentorship in Active Inference, Bayesian methods, scientific writing, and computational tools. Through the Active Inference Institute, he has facilitated 500+ livestream sessions and study groups.
+Friedman teaches at College of the Redwoods as Associate Faculty in Biology: **BIOL-1: General Biology** (Pelican Bay; Spring and Fall 2026) and **BIOL-8: Human Biology** (Spring 2026). He maintains [*Introduction to Biology: A Generative Approach*](../papers/2026_BiologyTextbook/) as an open textbook ([Zenodo 10.5281/zenodo.20286477](https://doi.org/10.5281/zenodo.20286477); source at [docxology/biology_textbook](https://github.com/docxology/biology_textbook)). He has developed online courses (Udemy: Communication for Remote Teams, Keybase for Remote Teams), and offers extensive private tutoring and mentorship in Active Inference, Bayesian methods, scientific writing, and computational tools. Through the Active Inference Institute, he has facilitated 500+ livestream sessions and study groups.
 
 ---
 
@@ -132,7 +132,7 @@ Friedman teaches at College of the Redwoods as Associate Faculty in Biology: **B
 
 Friedman's visual art practice encompasses detailed black-and-white abstract pen drawings and rapid experimental works incorporating words, symbols, and colors. His artistic work explores the relationship between scientific thinking and creative expression — a theme formalized in his paper "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement" published in *Arts*.
 
-On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in the Curio Cards project, recognized in NFT archaeology as an early Ethereum art NFT collection predating CryptoPunks by approximately six weeks. The project, founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, comprised 30 unique card series from seven artists. Friedman's geometric works feature tetrahedral motifs and synergetics-inspired patterns. A full set of 30 Curio Cards plus the rare "17b" misprint was auctioned at Christie's on October 1, 2021, and Friedman contributed a chapter to Taschen's "On NFT" book (2024, ISBN 978-3-8365-9970-2).
+Curio Cards debuted on Ethereum on May 9, 2017, and all original cards were minted in 2017. Friedman created three pen drawings for Cards 24, 25, and 26 in the project, recognized in NFT archaeology as an early Ethereum art NFT collection. The project, founded by Thomas Hunt, Travis Uhrig, and Rhett Creighton, comprised 30 unique card series from seven artists. Friedman's geometric works feature tetrahedral motifs and synergetics-inspired patterns. A full set of 30 Curio Cards plus the rare "17b" misprint sold at Christie's New York in September 2021, and Friedman contributed a chapter to Taschen's "On NFT" book (2024, ISBN 978-3-8365-9970-2).
 
 **Art portfolio**: [Local Gallery](../art/README.md) · [danielarifriedman.com/art.html](https://danielarifriedman.com/art.html) · [Flickr](https://www.flickr.com/photos/daniel_friedman/) · [Curio Cards](https://curio.cards/artist/danielfriedman/)
 
@@ -164,10 +164,10 @@ On May 9, 2017, three of his pen drawings (Cards 24, 25, 26) were included in th
 |--------|-------|
 | Works (unified bibliography) | [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) · [current totals](../reports/current_counts.md) |
 | Google Scholar indexed publications | 107 |
-| Google Scholar Citations | 777 (as of 2026-06-09) |
-| h-index | 15 |
-| i10-index | 17 |
-| Citations since 2021 | 544 (as of 2026-06-09) |
+| Google Scholar Citations | 815 (as of 2026-08-26) |
+| h-index | 14 |
+| i10-index | 16 |
+| Citations since 2021 | 586 (as of 2026-08-26) |
 | Open-Source Repositories (owned, catalogued) | [SOFTWARE.md](SOFTWARE.md) · [current totals](../reports/current_counts.md) |
 | GitHub Public Repositories (total) | [Current generated count](../reports/current_counts.md) |
 | Active Inference Institute Repos (catalogued) | [SOFTWARE.md](SOFTWARE.md) · [current totals](../reports/current_counts.md) |

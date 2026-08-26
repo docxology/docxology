@@ -43,6 +43,10 @@ def rules(s: dict) -> dict[str, list[tuple[str, str]]]:
     """Per-file list of (pattern, replacement). Patterns match old AND new
     forms so re-running is a no-op."""
     cit, h, i10, as_of = s["citations"], s["h_index"], s["i10_index"], s["as_of"]
+    since_2021 = s.get("since_2021")
+    since_2021_citations = (
+        since_2021.get("citations") if isinstance(since_2021, dict) else None
+    )
     return {
         "README.md": [
             (r"Google_Scholar-\d+_citations", "Google_Scholar-current_snapshot"),
@@ -91,6 +95,24 @@ def rules(s: dict) -> dict[str, list[tuple[str, str]]]:
             (
                 r"(\| Google Scholar Citations \| )\d+(?: \(as of [\d-]+\))?( \|)",
                 rf"\g<1>{cit} (as of {as_of})\g<2>",
+            ),
+            (
+                r"(\| h-index \| )\d+( \|)",
+                rf"\g<1>{h}\g<2>",
+            ),
+            (
+                r"(\| i10-index \| )\d+( \|)",
+                rf"\g<1>{i10}\g<2>",
+            ),
+            *(
+                [
+                    (
+                        r"(\| Citations since 2021 \| )\d+(?: \(as of [\d-]+\))?( \|)",
+                        rf"\g<1>{since_2021_citations} (as of {as_of})\g<2>",
+                    )
+                ]
+                if isinstance(since_2021_citations, int) and since_2021_citations >= 0
+                else []
             ),
         ],
         "pages/LINKS.md": [

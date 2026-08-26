@@ -3,9 +3,18 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "OpenScienceSensemaking"
 date-released: 2023
+doi: 10.31222/osf.io/9nb3u
+url: "https://doi.org/10.31222/osf.io/9nb3u"
 authors:
   - family-names: Tamari
     given-names: Ronen
   - family-names: Friedman
     given-names: Daniel A.
     orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: "10.31222/osf.io/9nb3u"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.31222/osf.io/9nb3u"
+    description: "Canonical citation DOI resolver"

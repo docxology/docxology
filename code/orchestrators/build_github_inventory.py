@@ -21,7 +21,15 @@ PRIMARY_HTML_OUT = REPO_ROOT / "repositories.html"
 FORKS_HTML_OUT = REPO_ROOT / "repositories-forks.html"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import BREADCRUMB_CSS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+from site_nav import (  # noqa: E402
+    BREADCRUMB_CSS,
+    HEAD_EXTRAS,
+    INTERACTIVE_SCRIPTS,
+    MENU_ESC_SCRIPT,
+    breadcrumb_jsonld_script,
+    render_breadcrumb,
+    render_nav,
+)
 
 REPO_INVENTORY_SCRIPT = '<script src="/js/repo-inventory.js?v=20260813" defer></script>'
 
@@ -114,6 +122,14 @@ def normalize_repo(repo: dict[str, Any], curated: set[str], generated_at: str) -
     except ValueError:
         recently_updated = False
     return {
+        # ``full_name`` is mutable: a repository can be transferred, deleted,
+        # and recreated under the same owner/name.  Preserve both immutable
+        # GitHub identities so downstream review decisions cannot accidentally
+        # acknowledge a different repository with a recycled path.
+        "github_id": repo.get("id") if isinstance(repo.get("id"), int) else None,
+        "github_node_id": (
+            repo.get("node_id") if isinstance(repo.get("node_id"), str) else ""
+        ),
         "name": name,
         "full_name": repo.get("full_name", f"{owner}/{name}"),
         "owner": owner,
@@ -318,6 +334,7 @@ def render_html(payload: dict[str, Any], *, forks: bool = False) -> str:
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="application/json" href="/data/github-repositories.json" title="GitHub repositories JSON">
+{HEAD_EXTRAS}
     <meta property="og:type" content="website">
     <meta property="og:title" content="{h(page_title)}">
     <meta property="og:description" content="{h(page_description)}">
@@ -360,11 +377,7 @@ def render_html(payload: dict[str, Any], *, forks: bool = False) -> str:
 {_head_extra(breadcrumb, webpage_ld)}</head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation">
-        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <div class="nav-links"><a href="publications.html">Publications</a><a href="software.html">Software</a><a href="search.html">Search</a><a href="catalog.html">Catalog</a></div>
-    </nav>
+{render_nav()}
 {render_breadcrumb(breadcrumb)}
     <header class="page-hero">
         <h1>{h(h1)}</h1>
@@ -462,21 +475,85 @@ def render_html(payload: dict[str, Any], *, forks: bool = False) -> str:
 def write_outputs(payload: dict[str, Any]) -> None:
     JSON_OUT.parent.mkdir(parents=True, exist_ok=True)
     JSON_OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    PRIMARY_HTML_OUT.write_text(render_html(payload), encoding="utf-8")
-    FORKS_HTML_OUT.write_text(render_html(payload, forks=True), encoding="utf-8")
+    write_cached_html_outputs(payload)
 
 
-def check_outputs() -> None:
-    if not JSON_OUT.exists() or not PRIMARY_HTML_OUT.exists() or not FORKS_HTML_OUT.exists():
+def write_cached_html_outputs(
+    payload: dict[str, Any],
+    *,
+    primary_html_out: Path = PRIMARY_HTML_OUT,
+    forks_html_out: Path = FORKS_HTML_OUT,
+) -> None:
+    """Render deterministic inventory pages from an already-refreshed cache."""
+    primary_html_out.write_text(render_html(payload), encoding="utf-8")
+    forks_html_out.write_text(render_html(payload, forks=True), encoding="utf-8")
+
+
+def load_cached_payload(json_out: Path = JSON_OUT) -> dict[str, Any]:
+    """Load the immutable-in-process inventory input for local page rendering."""
+    if not json_out.is_file():
+        raise SystemExit("Missing GitHub inventory JSON cache")
+    try:
+        payload = json.loads(json_out.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise SystemExit(f"Invalid GitHub inventory JSON cache: {exc}") from exc
+    if not isinstance(payload, dict) or not isinstance(payload.get("repositories"), list):
+        raise SystemExit("GitHub inventory JSON cache must contain a repositories list")
+    return payload
+
+
+def has_immutable_repository_identity(repo: dict[str, Any]) -> bool:
+    """Return whether a normalized repository retains both GitHub identities."""
+    return (
+        isinstance(repo.get("github_id"), int)
+        and not isinstance(repo.get("github_id"), bool)
+        and repo["github_id"] > 0
+        and isinstance(repo.get("github_node_id"), str)
+        and bool(repo["github_node_id"].strip())
+    )
+
+
+def render_cached_inventory_outputs(
+    *,
+    json_out: Path = JSON_OUT,
+    primary_html_out: Path = PRIMARY_HTML_OUT,
+    forks_html_out: Path = FORKS_HTML_OUT,
+) -> None:
+    """Rebuild the two public inventory pages without contacting GitHub."""
+    write_cached_html_outputs(
+        load_cached_payload(json_out),
+        primary_html_out=primary_html_out,
+        forks_html_out=forks_html_out,
+    )
+
+
+def check_outputs(
+    *,
+    json_out: Path = JSON_OUT,
+    primary_html_out: Path = PRIMARY_HTML_OUT,
+    forks_html_out: Path = FORKS_HTML_OUT,
+    baseline_path: Path = BASELINE_PATH,
+) -> None:
+    if not json_out.exists() or not primary_html_out.exists() or not forks_html_out.exists():
         raise SystemExit("Missing GitHub inventory outputs")
-    payload = json.loads(JSON_OUT.read_text(encoding="utf-8"))
+    payload = load_cached_payload(json_out)
     if not payload.get("repositories"):
         raise SystemExit("GitHub inventory has no repositories")
+    missing_identity = [
+        str(repo.get("full_name") or "<unnamed>")
+        for repo in payload["repositories"]
+        if not isinstance(repo, dict) or not has_immutable_repository_identity(repo)
+    ]
+    if missing_identity:
+        raise SystemExit(
+            "GitHub inventory is missing immutable github_id/github_node_id for: "
+            + ", ".join(missing_identity)
+        )
     counts = payload.get("counts", {})
     if counts.get("docxology", 0) <= 0 or counts.get("ActiveInferenceInstitute", 0) <= 0:
         raise SystemExit("GitHub inventory is missing one of the required owners")
-    if BASELINE_PATH.exists():
-        baseline = json.loads(BASELINE_PATH.read_text(encoding="utf-8"))
+    if baseline_path.exists():
+        baseline = json.loads(baseline_path.read_text(encoding="utf-8"))
         base_counts = baseline.get("counts", {})
         for key in ["total", "docxology", "ActiveInferenceInstitute", "forks", "archived"]:
             delta = counts.get(key, 0) - base_counts.get(key, 0)
@@ -487,8 +564,20 @@ def check_outputs() -> None:
     fork_repos = [repo for repo in payload.get("repositories", []) if repo.get("fork")]
     primary_counts = count_repositories(primary_repos)
     fork_counts = count_repositories(fork_repos)
-    html_text = PRIMARY_HTML_OUT.read_text(encoding="utf-8")
-    forks_html = FORKS_HTML_OUT.read_text(encoding="utf-8")
+    html_text = primary_html_out.read_text(encoding="utf-8")
+    forks_html = forks_html_out.read_text(encoding="utf-8")
+    expected_html = render_html(payload)
+    expected_forks_html = render_html(payload, forks=True)
+    if html_text != expected_html:
+        raise SystemExit(
+            "repositories.html is stale relative to data/github-repositories.json; "
+            "run render_github_inventory.py to rebuild deterministic pages"
+        )
+    if forks_html != expected_forks_html:
+        raise SystemExit(
+            "repositories-forks.html is stale relative to data/github-repositories.json; "
+            "run render_github_inventory.py to rebuild deterministic pages"
+        )
     if "Primary GitHub Repository Inventory" not in html_text or "github-repositories.json" not in html_text:
         raise SystemExit("repositories.html missing expected inventory markers")
     if "Forked GitHub Repository Archive" not in forks_html or "github-repositories.json" not in forks_html:
@@ -515,10 +604,20 @@ def check_outputs() -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="Validate cached inventory outputs")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--check", action="store_true", help="Validate cached inventory outputs")
+    mode.add_argument(
+        "--render-cached",
+        action="store_true",
+        help="Render the deterministic HTML pages from data/github-repositories.json without a network request",
+    )
     args = parser.parse_args()
     if args.check:
         check_outputs()
+        return
+    if args.render_cached:
+        render_cached_inventory_outputs()
+        print("rendered GitHub repository inventory pages from cached data")
         return
     payload = build_payload()
     write_outputs(payload)

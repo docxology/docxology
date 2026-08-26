@@ -3,9 +3,18 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "NuclearStructure"
 date-released: 2016
+doi: 10.3109/09553002.2016.1144941
+url: "https://doi.org/10.3109/09553002.2016.1144941"
 authors:
   - family-names: Friedman
     given-names: Daniel A.
     orcid: "https://orcid.org/0000-0001-6232-9096"
   - family-names: Pilch
     given-names: Daniel F.
+identifiers:
+  - type: doi
+    value: "10.3109/09553002.2016.1144941"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.3109/09553002.2016.1144941"
+    description: "Canonical citation DOI resolver"

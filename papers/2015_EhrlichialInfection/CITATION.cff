@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "EhrlichialInfection"
 date-released: 2015
+doi: 10.1016/j.mehy.2015.09.015
+url: "https://doi.org/10.1016/j.mehy.2015.09.015"
 authors:
   - family-names: Kallick
     given-names: Charles A.
@@ -11,3 +13,10 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
   - family-names: Nyindo
     given-names: Mramba B.A.
+identifiers:
+  - type: doi
+    value: "10.1016/j.mehy.2015.09.015"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1016/j.mehy.2015.09.015"
+    description: "Canonical citation DOI resolver"

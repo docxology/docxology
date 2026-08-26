@@ -4,8 +4,8 @@ type: article
 title: "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
 version: "v2.0"
 date-released: 2021-12-21
-doi: 10.5281/zenodo.5797072
-url: "https://doi.org/10.5281/zenodo.5797072"
+doi: 10.5281/zenodo.5797040
+url: "https://doi.org/10.5281/zenodo.5797040"
 authors:
   - family-names: Friston
     given-names: Karl
@@ -28,8 +28,17 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.5797072
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.5797040"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.5797040"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.5797072"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.5797072"
+    description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
     value: "https://zenodo.org/records/5797072"
-    description: "Zenodo landing page"
+    description: "Version/download landing page (Zenodo artifact)"

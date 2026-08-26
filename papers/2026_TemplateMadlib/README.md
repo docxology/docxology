@@ -31,6 +31,7 @@
 - GitHub repository: [docxology/template_madlib](https://github.com/docxology/template_madlib)
 - GitHub release: [v0.1.1](https://github.com/docxology/template_madlib/releases/tag/v0.1.1)
 - DOI: [10.5281/zenodo.20786638](https://doi.org/10.5281/zenodo.20786638)
+- Artifact DOI: [10.5281/zenodo.20932025](https://doi.org/10.5281/zenodo.20932025)
 - Zenodo record: [https://zenodo.org/records/20786638](https://zenodo.org/records/20786638)
 - PDF: [Friedman_2026_Template_a593c1fe.pdf](Friedman_2026_Template_a593c1fe.pdf)
 - PDF: [Friedman_2026_Template_d9248f4f.pdf](Friedman_2026_Template_d9248f4f.pdf)

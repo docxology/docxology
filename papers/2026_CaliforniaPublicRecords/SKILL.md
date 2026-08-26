@@ -6,6 +6,7 @@ tags: ["california-public-records-act", "open-data", "ckan", "socrata", "arcgis"
 domain: "Cognitive Security"
 citation: "Daniel Ari Friedman (2026). *California Public Records: A Technical and Legal Reference for the Post-AB 473 Era*. Cognitive Security."
 doi: "10.5281/zenodo.20789899"
+artifact_doi: "10.5281/zenodo.20789916"
 ---
 
 # California Public Records: A Technical and Legal Reference for the Post-AB 473 Era
@@ -46,6 +47,7 @@ Verification points for this work:
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-21T00:00:00Z
+- Artifact DOI: 10.5281/zenodo.20789916
 
 ## Prerequisites
 

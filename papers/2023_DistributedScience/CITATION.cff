@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "DistributedScience"
 date-released: 2023
+doi: 10.31219/osf.io/dnw5k
+url: "https://doi.org/10.31219/osf.io/dnw5k"
 authors:
   - family-names: Balzan
     given-names: Francesco
@@ -17,3 +19,10 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
   - family-names: Constant
     given-names: Axel
+identifiers:
+  - type: doi
+    value: "10.31219/osf.io/dnw5k"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.31219/osf.io/dnw5k"
+    description: "Canonical citation DOI resolver"

@@ -111,6 +111,7 @@ def _review_payload(root: Path, commit: str, snapshot_path: Path) -> dict:
         "repository_classification",
         "scholar_metric_change",
         "biographical_claim_change",
+        "public_source_observation",
     )
     items = [
         {
@@ -146,7 +147,7 @@ def _review_payload(root: Path, commit: str, snapshot_path: Path) -> dict:
         "items": items,
         "summary": {
             "items": len(items),
-            "applied": 4,
+            "applied": 5,
             "deferred": 1,
             "rejected": 0,
             "review_required": True,
@@ -234,6 +235,35 @@ def test_collect_release_evidence_accepts_complete_successful_exact_revision(tmp
         if item["category"] == "scholar_metric_change"
     )
     assert scholar_item["status"] == "deferred"
+
+
+def test_collect_release_evidence_rejects_missing_required_review_category(tmp_path):
+    """A newly required review category cannot silently disappear from evidence."""
+    _write_complete_evidence(tmp_path)
+    review = _path_for(
+        tmp_path,
+        next(item for item in RELEASE_EVIDENCE if item.name == "public-source review"),
+    )
+    payload = json.loads(review.read_text(encoding="utf-8"))
+    payload["items"] = [
+        item
+        for item in payload["items"]
+        if item["category"] != "public_source_observation"
+    ]
+    payload["summary"]["items"] -= 1
+    payload["summary"]["applied"] -= 1
+    payload["summary"]["categories"].pop("public_source_observation")
+    _write_json(review, payload)
+
+    _receipts, errors = collect_release_evidence(
+        tmp_path, COMMIT, max_age_days=30, now=NOW
+    )
+
+    assert any(
+        "public-source review failed semantic validation: required category absent: public_source_observation"
+        in error
+        for error in errors
+    )
 
 
 def test_collect_release_evidence_rejects_missing_scholar_source_receipt(tmp_path):
@@ -352,6 +382,18 @@ def test_collect_release_evidence_rejects_external_screenshot_symlink_and_unrevi
     assert any("visual QA has not recorded an explicit review" in error for error in errors)
 
 
+def test_collect_release_evidence_rejects_visual_review_that_predates_capture(tmp_path):
+    _write_complete_evidence(tmp_path)
+    visual = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "visual QA"))
+    payload = json.loads(visual.read_text(encoding="utf-8"))
+    payload["review"]["reviewed_at"] = "2026-08-25T10:59:59Z"
+    _write_json(visual, payload)
+
+    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+
+    assert any("visual QA review predates its captured manifest" in error for error in errors)
+
+
 def test_collect_release_evidence_rejects_hard_linked_screenshot(tmp_path):
     _write_complete_evidence(tmp_path)
     outside = tmp_path / "outside.png"
@@ -410,6 +452,18 @@ def test_attestation_rejects_a_timestamp_beyond_future_tolerance(tmp_path):
     assert "deployment attestation is dated in the future" in errors
 
 
+def test_attestation_rejects_evidence_created_after_the_attestation(tmp_path):
+    _write_complete_evidence(tmp_path)
+    receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    assert errors == []
+    attestation = deployment_attestation_path(tmp_path, COMMIT)
+    _write_json(attestation, render_attestation(COMMIT, receipts, attested_at="2026-08-25T10:59:59Z"))
+
+    errors = validate_attestation(tmp_path, attestation, COMMIT, max_age_days=30, now=NOW)
+
+    assert "deployment attestation predates external-link report evidence" in errors
+
+
 def test_only_post_commit_release_receipts_are_worktree_exempt():
     assert is_ephemeral_release_evidence_path("reports/browser-smoke/2026-08-25/home.png")
     assert is_ephemeral_release_evidence_path("reports/public_source_review_2026-08-25.md")
@@ -430,3 +484,51 @@ def test_attested_requirement_paths_are_root_anchored():
     assert not matches_requirement_path(
         "untrusted/reports/external_links_2026-08-25.json", requirement
     )
+
+
+def test_release_evidence_paths_require_valid_dates_for_every_requirement(tmp_path):
+    """Malformed flat and nested paths must not be selected or attested."""
+    for ordinal, requirement in enumerate(RELEASE_EVIDENCE):
+        root = tmp_path / str(ordinal)
+        _write_complete_evidence(root)
+        valid = _path_for(root, requirement)
+        malformed_relative = valid.relative_to(root).as_posix().replace(
+            "2026-08-25", "not-a-date"
+        )
+        malformed = root / malformed_relative
+        malformed.parent.mkdir(parents=True, exist_ok=True)
+        valid.replace(malformed)
+
+        assert not matches_requirement_path(malformed_relative, requirement)
+        _receipts, errors = collect_release_evidence(
+            root, COMMIT, max_age_days=30, now=NOW
+        )
+        assert f"missing {requirement.name} ({requirement.pattern})" in errors
+
+
+def test_attestation_rejects_malformed_dated_paths_for_every_requirement(tmp_path):
+    """An attestation cannot replace one required dated path with lookalike JSON."""
+    for ordinal, requirement in enumerate(RELEASE_EVIDENCE):
+        root = tmp_path / str(ordinal)
+        _write_complete_evidence(root)
+        receipts, errors = collect_release_evidence(root, COMMIT, max_age_days=30, now=NOW)
+        assert errors == []
+        attestation = deployment_attestation_path(root, COMMIT)
+        payload = render_attestation(COMMIT, receipts, attested_at="2026-08-25T11:30:00Z")
+        valid = _path_for(root, requirement)
+        malformed_relative = valid.relative_to(root).as_posix().replace(
+            "2026-08-25", "not-a-date"
+        )
+        malformed = root / malformed_relative
+        malformed.parent.mkdir(parents=True, exist_ok=True)
+        malformed.write_bytes(valid.read_bytes())
+        entry = next(item for item in payload["evidence"] if item["name"] == requirement.name)
+        entry["path"] = malformed_relative
+        entry["sha256"] = _sha256(malformed)
+        _write_json(attestation, payload)
+
+        errors = validate_attestation(root, attestation, COMMIT, max_age_days=30, now=NOW)
+        assert (
+            f"deployment attestation path does not match {requirement.name}: {malformed_relative}"
+            in errors
+        )

@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "DopamineForaging"
 date-released: 2018
+doi: 10.1016/j.isci.2018.09.001
+url: "https://doi.org/10.1016/j.isci.2018.09.001"
 authors:
   - family-names: Friedman
     given-names: Daniel A.
@@ -11,3 +13,10 @@ authors:
     given-names: Annette
   - family-names: Gordon
     given-names: Deborah M.
+identifiers:
+  - type: doi
+    value: "10.1016/j.isci.2018.09.001"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1016/j.isci.2018.09.001"
+    description: "Canonical citation DOI resolver"

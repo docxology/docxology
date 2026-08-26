@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-19T22:43:14Z",
-  "source_report": "reports/paired_publications_2026-08-19.json",
+  "generated_at": "2026-08-26T18:01:35Z",
+  "source_report": "reports/paired_publications_2026-08-26.json",
   "source_review_queue": "reports/paired_publications_review_queue_2026-06-04.md",
   "decision_summary": {
     "decision": "accept",
-    "groups": 70,
-    "raw_candidates": 485,
-    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills (9 release pairs) and Codomyrmex (18 release pairs) supersession/version-history decisions under already-cited DOIs so versioned GitHub releases do not create duplicate bibliography rows."
+    "groups": 72,
+    "raw_candidates": 487,
+    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row."
   },
   "groups": [
     {
@@ -2243,7 +2243,7 @@
     {
       "id": "R25",
       "decision": "rejected",
-      "decided_at": "2026-08-07",
+      "decided_at": "2026-08-07T00:00:00Z",
       "decided_by": "maintainer",
       "doi": "10.5281/zenodo.20804585",
       "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
@@ -2265,7 +2265,7 @@
     {
       "id": "R26",
       "decision": "superseded",
-      "decided_at": "2026-08-07",
+      "decided_at": "2026-08-07T00:00:00Z",
       "decided_by": "maintainer",
       "doi": "10.5281/zenodo.21513316",
       "title": "CogSecSkills: Multiharness Agentic Skills for Cognitive Security",
@@ -2351,7 +2351,7 @@
     {
       "id": "R27",
       "decision": "superseded",
-      "decided_at": "2026-08-07",
+      "decided_at": "2026-08-07T00:00:00Z",
       "decided_by": "maintainer",
       "doi": "10.5281/zenodo.21750800",
       "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
@@ -10896,6 +10896,123 @@
           "reviewed_at": "2026-08-19T22:43:14Z",
           "review_source": "user: source repository release for docxplus",
           "source_report": "reports/paired_publications_2026-08-19.json"
+        }
+      ]
+    },
+    {
+      "id": "R71",
+      "decision": "superseded",
+      "decided_at": "2026-08-26T18:01:35Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.21750800",
+      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "candidate_github_repo": "docxology/codomyrmex",
+      "folder": "2026_Codomyrmex",
+      "representation": "bibliography-folder version-history-only",
+      "raw_candidate_count": 2,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "record_title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+          "zenodo_record_url": "https://zenodo.org/records/21750800",
+          "github_repo": "docxology/codomyrmex",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-c403e197e42abd3e0829",
+          "release_tag": "v1.3.0",
+          "release_name": "v1.3.0",
+          "resource_type": {
+            "title": "Report",
+            "type": "publication",
+            "subtype": "report"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "existing-concept-doi-and-bibliography-folder"
+          ],
+          "review_decision": "superseded",
+          "reviewed_at": "2026-08-26T18:01:35Z",
+          "review_source": "user: approved all remaining review items; existing v1.3.0-paper relation remains the represented source",
+          "source_report": "reports/paired_publications_2026-08-26.json"
+        },
+        {
+          "doi": "10.5281/zenodo.21750800",
+          "record_title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+          "zenodo_record_url": "https://zenodo.org/records/21750800",
+          "github_repo": "docxology/codomyrmex",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
+          "release_tag": "v1.2.3",
+          "release_name": "v1.2.3",
+          "resource_type": {
+            "title": "Report",
+            "type": "publication",
+            "subtype": "report"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "user-approved-version-history"
+          ],
+          "review_decision": "superseded",
+          "reviewed_at": "2026-08-26T18:01:35Z",
+          "review_source": "user: approved all remaining review items; retain the existing bibliography-folder concept DOI as the citation identity and record v1.2.3 as version history only",
+          "source_report": "reports/paired_publications_2026-08-26.json"
+        }
+      ]
+    },
+    {
+      "id": "R72",
+      "decision": "accept",
+      "decided_at": "2026-08-26T18:01:35Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.21864003",
+      "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+      "candidate_github_repo": "ActiveInferenceInstitute/Active_Fedference",
+      "folder": "2026_RobustBeliefSharing",
+      "representation": "bibliography-folder version-specific artifact metadata",
+      "raw_candidate_count": 2,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21864003",
+          "record_title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+          "zenodo_record_url": "https://zenodo.org/records/21972644",
+          "github_repo": "ActiveInferenceInstitute/Active_Fedference",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/tag/v1.0.4",
+          "release_tag": "v1.0.4",
+          "release_name": "Active Fedference v1.0.4",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "github_repo_self_linked",
+            "release-body-version-doi",
+            "matching-title-and-concept-doi"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-08-26T18:01:35Z",
+          "review_source": "user: approved all remaining review items; retain concept DOI for citation and record v1.0.4 as an artifact DOI",
+          "source_report": "reports/paired_publications_2026-08-26.json"
+        },
+        {
+          "doi": "10.5281/zenodo.21864003",
+          "record_title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+          "zenodo_record_url": "https://zenodo.org/records/21864003",
+          "github_repo": "ActiveInferenceInstitute/Active_Fedference",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/tag/v1.0.4",
+          "release_tag": "v1.0.4",
+          "release_name": "Active Fedference v1.0.4",
+          "resource_type": {
+            "title": "Software",
+            "type": "software"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "user-approved-version-artifact-metadata"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-08-26T18:01:35Z",
+          "review_source": "user: approved all remaining review items; retain the concept DOI for citation and preserve the v1.0.4 version DOI separately as artifact metadata",
+          "source_report": "reports/paired_publications_2026-08-26.json"
         }
       ]
     }

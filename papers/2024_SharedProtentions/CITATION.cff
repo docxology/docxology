@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "SharedProtentions"
 date-released: 2024
+doi: 10.3390/e26040303
+url: "https://doi.org/10.3390/e26040303"
 authors:
   - family-names: Albarracin
     given-names: Mahault
@@ -17,3 +19,10 @@ authors:
     given-names: Karl
   - family-names: Ramstead
     given-names: Maxwell J.D.
+identifiers:
+  - type: doi
+    value: "10.3390/e26040303"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.3390/e26040303"
+    description: "Canonical citation DOI resolver"

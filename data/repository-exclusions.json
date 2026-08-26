@@ -1,26 +1,898 @@
 {
-  "schema_version": "1.0",
-  "policy": "Deliberate, human-reviewed exclusions from the software-catalog review queue. Each primary repository below was reviewed and intentionally NOT catalogued in pages/SOFTWARE.md (profile/infrastructure repos, websites, test/smoke repos, rename duplicates of catalogued repos, or private mirrors). Recorded here so they stop resurfacing as 'primary_repo_requires_manual_review' on every GitHub inventory refresh. This file NEVER promotes a repository into the catalog; it only acknowledges a not-catalog decision. A repository is removed from this list if the exclusion no longer holds (e.g. a mirror becomes a primary project).",
+  "schema_version": "1.3",
+  "policy": "Deliberate, human-reviewed not-catalog decisions for the software-catalog review queue. Entries cover primary exclusions (profile/infrastructure repos, websites, test/smoke repos, rename duplicates of catalogued repos, or private mirrors) and explicitly reviewed public forks. Recorded here so those decisions do not resurface as unresolved review queue items on every GitHub inventory refresh. This file NEVER promotes a repository into the catalog; it only acknowledges a not-catalog decision. A repository is removed from this list if the exclusion no longer holds (for example, a mirror becomes a primary project).",
   "reasons": {
     "profile_repo": "The @owner profile/index repository itself; pages/SOFTWARE.md explicitly excludes it.",
     "profile_infrastructure": "Profile-page infrastructure (README, links, identity) rather than a software project.",
     "test_repo": "Test or integration-smoke repository, not a citable software product.",
     "website": "A website / GitHub Pages site, not a software library or tool.",
     "rename_duplicate": "A rename or variant of a repository already present in the curated catalog.",
-    "private_mirror": "A public mirror of a private working project; the primary project is tracked elsewhere."
+    "private_mirror": "A public mirror of a private working project; the primary project is tracked elsewhere.",
+    "empty_repo": "An intentionally empty or unused repository explicitly retained outside the curated software catalog.",
+    "fork_not_curated": "A public fork explicitly reviewed and kept out of the curated catalog; visibility alone does not establish an original software-catalog entry."
   },
   "exclusions": [
-    {"full_name": "docxology/docxology", "reason": "profile_repo", "note": "Public research and software index (this site's own source repo)."},
-    {"full_name": "docxology/README", "reason": "profile_infrastructure", "note": "GitHub profile README."},
-    {"full_name": "docxology/links", "reason": "profile_infrastructure", "note": "Link-hub page repository."},
-    {"full_name": "docxology/identity", "reason": "profile_infrastructure", "note": "Identity/profile metadata repository."},
-    {"full_name": "docxology/test_public", "reason": "test_repo", "note": "Public visibility test repository."},
-    {"full_name": "docxology/template-release-smoke", "reason": "test_repo", "note": "Integration smoke test for the template release orchestrator (marked do-not-cite)."},
-    {"full_name": "docxology/institute_website", "reason": "website", "note": "Active Inference Institute GitHub Pages website."},
-    {"full_name": "ActiveInferenceInstitute/institute_website", "reason": "website", "note": "Active Inference Institute information website."},
-    {"full_name": "ActiveInferenceInstitute/aii-org", "reason": "website", "note": "Active Inference Institute organizational website."},
-    {"full_name": "docxology/crescent_city", "reason": "rename_duplicate", "note": "Underscore variant of the catalogued docxology/crescent-city."},
-    {"full_name": "docxology/prior_cognitive_art", "reason": "private_mirror", "note": "Public mirror of working/prior_cognitive_art in docxology/projects."},
-    {"full_name": "docxology/GrowthModel", "reason": "empty_repo", "note": "Empty / unused repository removed per principal direction."}
+    {
+      "full_name": "docxology/docxology",
+      "reason": "profile_repo",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Public research and software index (this site's own source repo).",
+      "github_id": 952180437,
+      "github_node_id": "R_kgDOOMEe1Q"
+    },
+    {
+      "full_name": "docxology/README",
+      "reason": "profile_infrastructure",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "GitHub profile README.",
+      "github_id": 952180295,
+      "github_node_id": "R_kgDOOMEeRw"
+    },
+    {
+      "full_name": "docxology/links",
+      "reason": "profile_infrastructure",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Link-hub page repository.",
+      "github_id": 963451287,
+      "github_node_id": "R_kgDOOW0Zlw"
+    },
+    {
+      "full_name": "docxology/identity",
+      "reason": "profile_infrastructure",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Identity/profile metadata repository.",
+      "github_id": 170901817,
+      "github_node_id": "MDEwOlJlcG9zaXRvcnkxNzA5MDE4MTc="
+    },
+    {
+      "full_name": "docxology/test_public",
+      "reason": "test_repo",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Public visibility test repository.",
+      "github_id": 1047646927,
+      "github_node_id": "R_kgDOPnHSzw"
+    },
+    {
+      "full_name": "docxology/template-release-smoke",
+      "reason": "test_repo",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Integration smoke test for the template release orchestrator (marked do-not-cite).",
+      "github_id": 1251507566,
+      "github_node_id": "R_kgDOSph9bg"
+    },
+    {
+      "full_name": "docxology/institute_website",
+      "reason": "website",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Active Inference Institute GitHub Pages website.",
+      "github_id": 1263285459,
+      "github_node_id": "R_kgDOS0w00w"
+    },
+    {
+      "full_name": "ActiveInferenceInstitute/institute_website",
+      "reason": "website",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Active Inference Institute information website.",
+      "github_id": 1263332613,
+      "github_node_id": "R_kgDOS0ztBQ"
+    },
+    {
+      "full_name": "ActiveInferenceInstitute/aii-org",
+      "reason": "website",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Active Inference Institute organizational website.",
+      "github_id": 1184581029,
+      "github_node_id": "R_kgDORptFpQ"
+    },
+    {
+      "full_name": "docxology/crescent_city",
+      "reason": "rename_duplicate",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Underscore variant of the catalogued docxology/crescent-city.",
+      "github_id": 1243672301,
+      "github_node_id": "R_kgDOSiDu7Q"
+    },
+    {
+      "full_name": "docxology/prior_cognitive_art",
+      "reason": "private_mirror",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Public mirror of working/prior_cognitive_art in docxology/projects.",
+      "github_id": 1293812034,
+      "github_node_id": "R_kgDOTR4BQg"
+    },
+    {
+      "full_name": "docxology/GrowthModel",
+      "reason": "empty_repo",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Empty / unused repository removed per principal direction.",
+      "github_id": 248624253,
+      "github_node_id": "MDEwOlJlcG9zaXRvcnkyNDg2MjQyNTM="
+    },
+    {
+      "full_name": "ActiveInferenceInstitute/ants",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 401134882,
+      "github_node_id": "MDEwOlJlcG9zaXRvcnk0MDExMzQ4ODI="
+    },
+    {
+      "full_name": "ActiveInferenceInstitute/pymdp",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 401134746,
+      "github_node_id": "MDEwOlJlcG9zaXRvcnk0MDExMzQ3NDY="
+    },
+    {
+      "full_name": "docxology/active-inference-sim-lab",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1119804452,
+      "github_node_id": "R_kgDOQr7cJA"
+    },
+    {
+      "full_name": "docxology/Active_Inference_for_Fun",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1119804379,
+      "github_node_id": "R_kgDOQr7b2w"
+    },
+    {
+      "full_name": "docxology/ActiveInference.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1009683422,
+      "github_node_id": "R_kgDOPC6L3g"
+    },
+    {
+      "full_name": "docxology/ad4m",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1064273779,
+      "github_node_id": "R_kgDOP2-Hcw"
+    },
+    {
+      "full_name": "docxology/AgentLaboratory",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 954787139,
+      "github_node_id": "R_kgDOOOjlQw"
+    },
+    {
+      "full_name": "docxology/AI-ConductorBlindSpot",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1246693271,
+      "github_node_id": "R_kgDOSk8Hlw"
+    },
+    {
+      "full_name": "docxology/aif_iwai2025_thoughtseeds",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1051848576,
+      "github_node_id": "R_kgDOPrHvgA"
+    },
+    {
+      "full_name": "docxology/amalgkit",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 431504198,
+      "github_node_id": "R_kgDOGbg7Rg"
+    },
+    {
+      "full_name": "docxology/ant_social_complexity",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1243533553,
+      "github_node_id": "R_kgDOSh7Q8Q"
+    },
+    {
+      "full_name": "docxology/ants",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 435273675,
+      "github_node_id": "R_kgDOGfG_yw"
+    },
+    {
+      "full_name": "docxology/aqua-js-cli",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1001139491,
+      "github_node_id": "R_kgDOO6wtIw"
+    },
+    {
+      "full_name": "docxology/ATLAS",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 845735127,
+      "github_node_id": "R_kgDOMmjk1w"
+    },
+    {
+      "full_name": "docxology/axiom",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 994781614,
+      "github_node_id": "R_kgDOO0sprg"
+    },
+    {
+      "full_name": "docxology/BayesBase.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319832910,
+      "github_node_id": "R_kgDOTqsNTg"
+    },
+    {
+      "full_name": "docxology/CatColab",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1086784234,
+      "github_node_id": "R_kgDOQMcC6g"
+    },
+    {
+      "full_name": "docxology/cogames",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1102110248,
+      "github_node_id": "R_kgDOQbDeKA"
+    },
+    {
+      "full_name": "docxology/Cortex.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319832921,
+      "github_node_id": "R_kgDOTqsNWQ"
+    },
+    {
+      "full_name": "docxology/dickens-arxiv24",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1060436373,
+      "github_node_id": "R_kgDOPzT5lQ"
+    },
+    {
+      "full_name": "docxology/EFEasVFE",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1072922126,
+      "github_node_id": "R_kgDOP_N-Dg"
+    },
+    {
+      "full_name": "docxology/egs-trans-jspace-convergence",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1296765977,
+      "github_node_id": "R_kgDOTUsUGQ"
+    },
+    {
+      "full_name": "docxology/eliza",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 920257490,
+      "github_node_id": "R_kgDONtoD0g"
+    },
+    {
+      "full_name": "docxology/ExponentialFamily.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319832933,
+      "github_node_id": "R_kgDOTqsNZQ"
+    },
+    {
+      "full_name": "docxology/ExponentialFamilyProjection.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319832941,
+      "github_node_id": "R_kgDOTqsNbQ"
+    },
+    {
+      "full_name": "docxology/fact-graph",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1077846757,
+      "github_node_id": "R_kgDOQD6i5Q"
+    },
+    {
+      "full_name": "docxology/farmOS",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 871307161,
+      "github_node_id": "R_kgDOM-8XmQ"
+    },
+    {
+      "full_name": "docxology/FEP_RL_VAE",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1119804541,
+      "github_node_id": "R_kgDOQr7cfQ"
+    },
+    {
+      "full_name": "docxology/flash-clifford",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1084348261,
+      "github_node_id": "R_kgDOQKHXZQ"
+    },
+    {
+      "full_name": "docxology/flybody",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1156589292,
+      "github_node_id": "R_kgDORPAm7A"
+    },
+    {
+      "full_name": "docxology/foam",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 998593845,
+      "github_node_id": "R_kgDOO4VVNQ"
+    },
+    {
+      "full_name": "docxology/FPF",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1109609809,
+      "github_node_id": "R_kgDOQiNNUQ"
+    },
+    {
+      "full_name": "docxology/GEO-INFER-1",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1320952603,
+      "github_node_id": "R_kgDOTrwjGw"
+    },
+    {
+      "full_name": "docxology/gfacs",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1123930997,
+      "github_node_id": "R_kgDOQv3TdQ"
+    },
+    {
+      "full_name": "docxology/GitNexus",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1170709172,
+      "github_node_id": "R_kgDORceatA"
+    },
+    {
+      "full_name": "docxology/gno",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1061446010,
+      "github_node_id": "R_kgDOP0Rheg"
+    },
+    {
+      "full_name": "docxology/GraphPPL.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319832957,
+      "github_node_id": "R_kgDOTqsNfQ"
+    },
+    {
+      "full_name": "docxology/GuildNet",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1073836700,
+      "github_node_id": "R_kgDOQAFynA"
+    },
+    {
+      "full_name": "docxology/herdr",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1324202580,
+      "github_node_id": "R_kgDOTu26VA"
+    },
+    {
+      "full_name": "docxology/hermes-agent-self-evolution",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1181079990,
+      "github_node_id": "R_kgDORmXZtg"
+    },
+    {
+      "full_name": "docxology/hongos",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 951555810,
+      "github_node_id": "R_kgDOOLeW4g"
+    },
+    {
+      "full_name": "docxology/HSMM_covariates",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1062824648,
+      "github_node_id": "R_kgDOP1lqyA"
+    },
+    {
+      "full_name": "docxology/InsightSpike-AI",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1137884230,
+      "github_node_id": "R_kgDOQ9K8Rg"
+    },
+    {
+      "full_name": "docxology/IntroductionToAlgebraicEvaluation",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 974286434,
+      "github_node_id": "R_kgDOOhJuYg"
+    },
+    {
+      "full_name": "docxology/Journal-Utilities",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 945237535,
+      "github_node_id": "R_kgDOOFcuHw"
+    },
+    {
+      "full_name": "docxology/ki_us",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1162969985,
+      "github_node_id": "R_kgDORVGDgQ"
+    },
+    {
+      "full_name": "docxology/kmyth",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1322151179,
+      "github_node_id": "R_kgDOTs5tCw"
+    },
+    {
+      "full_name": "docxology/MatrixCorrectionTools.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319832968,
+      "github_node_id": "R_kgDOTqsNiA"
+    },
+    {
+      "full_name": "docxology/MemOS",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1055108392,
+      "github_node_id": "R_kgDOPuOtKA"
+    },
+    {
+      "full_name": "docxology/metta-1",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 966919758,
+      "github_node_id": "R_kgDOOaIGTg"
+    },
+    {
+      "full_name": "docxology/mission-control",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1181080007,
+      "github_node_id": "R_kgDORmXZxw"
+    },
+    {
+      "full_name": "docxology/ngc-learn",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1069456494,
+      "github_node_id": "R_kgDOP76cbg"
+    },
+    {
+      "full_name": "docxology/nockchain",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 977314161,
+      "github_node_id": "R_kgDOOkChcQ"
+    },
+    {
+      "full_name": "docxology/nvmath-python",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1062060582,
+      "github_node_id": "R_kgDOP03CJg"
+    },
+    {
+      "full_name": "docxology/ODEM",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1267819696,
+      "github_node_id": "R_kgDOS5FksA"
+    },
+    {
+      "full_name": "docxology/oh-my-hermes",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1314133712,
+      "github_node_id": "R_kgDOTlQW0A"
+    },
+    {
+      "full_name": "docxology/OpenGauss",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1187472284,
+      "github_node_id": "R_kgDORsdjnA"
+    },
+    {
+      "full_name": "docxology/osc-geo-h3grid-srv",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1018124573,
+      "github_node_id": "R_kgDOPK9ZHQ"
+    },
+    {
+      "full_name": "docxology/osc-geo-h3loader-cli",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1018124691,
+      "github_node_id": "R_kgDOPK9Zkw"
+    },
+    {
+      "full_name": "docxology/PackageTemplate",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319832980,
+      "github_node_id": "R_kgDOTqsNlA"
+    },
+    {
+      "full_name": "docxology/paws-on-mcp",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1000244565,
+      "github_node_id": "R_kgDOO56FVQ"
+    },
+    {
+      "full_name": "docxology/Personal_AI_Infrastructure",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1128649500,
+      "github_node_id": "R_kgDOQ0XTHA"
+    },
+    {
+      "full_name": "docxology/psw.vibelandia.sing13",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1310445206,
+      "github_node_id": "R_kgDOThvOlg"
+    },
+    {
+      "full_name": "docxology/pyDMBD",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 945133109,
+      "github_node_id": "R_kgDOOFWWNQ"
+    },
+    {
+      "full_name": "docxology/pydymax",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1082087629,
+      "github_node_id": "R_kgDOQH9YzQ"
+    },
+    {
+      "full_name": "docxology/pymdp",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 883407876,
+      "github_node_id": "R_kgDONKe8BA"
+    },
+    {
+      "full_name": "docxology/quantum-logical-framework",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1249407060,
+      "github_node_id": "R_kgDOSnhwVA"
+    },
+    {
+      "full_name": "docxology/ReactiveMP.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319832997,
+      "github_node_id": "R_kgDOTqsNpQ"
+    },
+    {
+      "full_name": "docxology/Rocket.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319833004,
+      "github_node_id": "R_kgDOTqsNrA"
+    },
+    {
+      "full_name": "docxology/RxEnvironments.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319833021,
+      "github_node_id": "R_kgDOTqsNvQ"
+    },
+    {
+      "full_name": "docxology/RxGP.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319833030,
+      "github_node_id": "R_kgDOTqsNxg"
+    },
+    {
+      "full_name": "docxology/rxinfer-fastmcp-example",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319833050,
+      "github_node_id": "R_kgDOTqsN2g"
+    },
+    {
+      "full_name": "docxology/rxinfer-website",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319833066,
+      "github_node_id": "R_kgDOTqsN6g"
+    },
+    {
+      "full_name": "docxology/RxInfer.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 785860777,
+      "github_node_id": "R_kgDOLtdIqQ"
+    },
+    {
+      "full_name": "docxology/RxInferBenchmarks.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1319833042,
+      "github_node_id": "R_kgDOTqsN0g"
+    },
+    {
+      "full_name": "docxology/RxInferExamples.jl",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 916825491,
+      "github_node_id": "R_kgDONqWlkw"
+    },
+    {
+      "full_name": "docxology/RxInferServer",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 959875770,
+      "github_node_id": "R_kgDOOTaKug"
+    },
+    {
+      "full_name": "docxology/School_of_Tomorrow",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 372610265,
+      "github_node_id": "MDEwOlJlcG9zaXRvcnkzNzI2MTAyNjU="
+    },
+    {
+      "full_name": "docxology/smartville",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1089709172,
+      "github_node_id": "R_kgDOQPOkdA"
+    },
+    {
+      "full_name": "docxology/spm",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1081318708,
+      "github_node_id": "R_kgDOQHOdNA"
+    },
+    {
+      "full_name": "docxology/synthobs-egs-planck-scale-harmonic",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1308039293,
+      "github_node_id": "R_kgDOTfcYfQ"
+    },
+    {
+      "full_name": "docxology/systematics-v0.5",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1148279414,
+      "github_node_id": "R_kgDORHFadg"
+    },
+    {
+      "full_name": "docxology/thrml",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1085906867,
+      "github_node_id": "R_kgDOQLmfsw"
+    },
+    {
+      "full_name": "docxology/triton",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1060413432,
+      "github_node_id": "R_kgDOPzSf-A"
+    },
+    {
+      "full_name": "docxology/vibeship-spawner-skills",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1181080022,
+      "github_node_id": "R_kgDORmXZ1g"
+    },
+    {
+      "full_name": "docxology/yt-transcriber",
+      "reason": "fork_not_curated",
+      "reviewed_by": "principal",
+      "reviewed_at": "2026-08-26",
+      "note": "Principal approved keeping this public fork out of the curated software catalog.",
+      "github_id": 1025749336,
+      "github_node_id": "R_kgDOPSOxWA"
+    }
   ]
 }

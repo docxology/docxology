@@ -41,6 +41,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("export-bibliography", "export_bibliography.py", (), ("--check",), "Bibliography exports and works projection"),
     GenerationStep("sync-publications", "sync_publications_html.py", ("--apply",), ("--check",), "Publication HTML and JSON-LD"),
     GenerationStep("sync-software", "sync_software_html.py", ("--apply",), ("--check",), "Software HTML and JSON-LD"),
+    GenerationStep("github-inventory-pages", "render_github_inventory.py", (), ("--check",), "Cached GitHub inventory HTML pages"),
     GenerationStep("current-counts", "build_current_counts.py", (), ("--check",), "Volatile count report"),
     GenerationStep("coverage-exceptions", "build_coverage_exceptions.py", (), ("--check",), "Source coverage queue"),
     GenerationStep("repository-classification", "classify_repositories.py", (), ("--check",), "Repository review queue"),
@@ -51,6 +52,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("domain-pages", "build_domain_pages.py", (), ("--check",), "Domain landing pages"),
     GenerationStep("pillar-pages", "generate_pillar_pages.py", (), ("--check",), "Shared-rendered pillar pages"),
     GenerationStep("paper-documents", "regenerate_docs.py", ("--apply",), ("--check",), "Manifest-owned paper documentation"),
+    GenerationStep("citation-cff", "generate_citation_cff.py", ("--apply",), ("--check",), "Canonical/artifact DOI roles in paper CFF files"),
     # Paper-document rendering can create the README/AGENTS/SKILL files that
     # bibliography exports classify. Re-export before public work pages so a
     # first clean run reaches a fixed point instead of requiring a second pass.
@@ -79,7 +81,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("sitemap", "build_sitemap.py", (), ("--check",), "Sitemap"),
     GenerationStep("artwork-index", "build_artwork_index.py", (), ("--check",), "Compact artwork index"),
     GenerationStep("image-sitemap", "build_image_sitemap.py", (), ("--check",), "Image sitemap"),
-    GenerationStep("pages-artifact", "build_pages_artifact.py", ("--write-manifest", "--check-size-only"), ("--check-size-only", "--check-manifest"), "Pages artifact manifest and budget"),
+    GenerationStep("pages-artifact", "build_pages_artifact.py", ("--write-manifest", "--allow-dirty-prepayload-evidence", "--check-size-only"), ("--check-size-only", "--check-manifest"), "Pages artifact manifest and budget"),
     GenerationStep("generated-manifest-first", "build_generated_manifest.py", (), ("--check",), "Generated artifact matrix before agent index"),
     GenerationStep("agent-index", "build_agent_index.py", (), ("--check",), "Agent route manifest"),
     GenerationStep("release-integrity", "build_release_integrity.py", (), ("--check",), "Pre-deploy integrity envelope"),
@@ -99,7 +101,6 @@ EXCLUDED_OPERATIONS: tuple[ExcludedOperation, ...] = (
     ExcludedOperation("fetch_video_transcripts.py", "network/cache-refresh", "Caption intake is a deliberate network cache refresh."),
     ExcludedOperation("fetch_work_authors.py", "network/manual-review", "DOI-agency author enrichment can alter curated bibliography source after review."),
     ExcludedOperation("fetch_youtube_data.py", "network/cache-refresh/manual-review", "YouTube cache refresh is intentionally outside local regeneration and fails closed on incomplete tabs."),
-    ExcludedOperation("generate_citation_cff.py", "source-authoring/manual-review", "Legacy CFF creation has no ownership manifest or exact no-write renderer."),
     ExcludedOperation("gsc_followup_preflight.py", "network/manual-review", "Search Console follow-up requires a signed-in human action."),
     ExcludedOperation("improve_metadata_quality.py", "source-authoring/manual-review", "Targeted metadata quality edits can introduce paper-specific research claims and require explicit review."),
     ExcludedOperation("migrate_inline_handlers.py", "source-migration/manual-review", "This migration edits hand-authored HTML and lacks an exact no-write renderer."),

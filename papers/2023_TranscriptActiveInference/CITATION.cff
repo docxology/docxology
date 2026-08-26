@@ -4,8 +4,8 @@ type: article
 title: "Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism""
 version: "v1.1"
 date-released: 2023-07-26
-doi: 10.5281/zenodo.8229512
-url: "https://doi.org/10.5281/zenodo.8229512"
+doi: 10.5281/zenodo.8228934
+url: "https://doi.org/10.5281/zenodo.8228934"
 authors:
   - family-names: Peters
     given-names: Megan A. K.
@@ -16,8 +16,17 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.8229512
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.8228934"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.8228934"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.8229512"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.8229512"
+    description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
     value: "https://zenodo.org/records/8229512"
-    description: "Zenodo landing page"
+    description: "Version/download landing page (Zenodo artifact)"

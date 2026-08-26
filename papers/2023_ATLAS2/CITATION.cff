@@ -3,8 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management"
 date-released: 2023-12-07
-doi: 10.5281/zenodo.10362561
-url: "https://doi.org/10.5281/zenodo.10362561"
+doi: 10.5281/zenodo.10296601
+url: "https://doi.org/10.5281/zenodo.10296601"
 authors:
   - family-names: Cordes
     given-names: R.J.
@@ -23,8 +23,17 @@ authors:
     given-names: Colten
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.10362561
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.10296601"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.10296601"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.10362561"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.10362561"
+    description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
     value: "https://zenodo.org/records/10362561"
-    description: "Zenodo landing page"
+    description: "Version/download landing page (Zenodo artifact)"

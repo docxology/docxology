@@ -3,9 +3,18 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "PopulationSearch"
 date-released: 2024
+doi: 10.48550/arXiv.2408.09548
+url: "https://doi.org/10.48550/arXiv.2408.09548"
 authors:
   - family-names: Dehouche
     given-names: Nassim
   - family-names: Friedman
     given-names: Daniel
     orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: "10.48550/arXiv.2408.09548"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.48550/arXiv.2408.09548"
+    description: "Canonical citation DOI resolver"

@@ -11,9 +11,10 @@ import json
 import re
 import sys
 from dataclasses import asdict, dataclass
+from datetime import datetime
 from html import unescape
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any, Iterable, Mapping
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from domain_inference import contains_term, infer_domain_emoji_for_pair as infer_domain  # noqa: E402, F401
@@ -222,6 +223,7 @@ class SyncAction:
     github_repo: str
     github_release_url: str
     zenodo_record_url: str
+    release_tag: str
     folder: str | None = None
 
     def to_dict(self) -> dict[str, Any]:
@@ -297,6 +299,278 @@ def zenodo_record_url_from_doi(doi: str) -> str:
     if match:
         return f"https://zenodo.org/records/{match.group(1)}"
     return f"https://doi.org/{doi}" if doi else ""
+
+
+# A durable pairing decision is valid only for the complete public candidate
+# that was reviewed.  DOI + GitHub release URL alone is too weak: a later
+# Zenodo record, changed title, repository correction, or retag can otherwise
+# inherit an unrelated decision.  Keep this representation in the shared
+# pairing module so the writer and the review renderer make the same decision.
+PairCandidateFingerprint = tuple[str, str, str, str, str, str]
+_PAIR_DECISION_VALUES = {
+    "accept",
+    "accepted",
+    "acknowledged",
+    "applied",
+    "reject",
+    "rejected",
+    "supersede",
+    "superseded",
+}
+
+
+def _candidate_text(value: object, *, casefold: bool = False) -> str:
+    """Return a stable scalar for a candidate identity field.
+
+    Whitespace and DOI/repository/title case are presentation details, while
+    URLs and tags retain their meaningful spelling.  Non-string values are not
+    silently coerced into an identity field.
+    """
+    if not isinstance(value, str):
+        return ""
+    normalized = re.sub(r"\s+", " ", value).strip()
+    return normalized.casefold() if casefold else normalized
+
+
+def _candidate_url(value: object) -> str:
+    """Normalize the harmless trailing slash variance in a candidate URL."""
+    return _candidate_text(value).rstrip("/")
+
+
+def _first_nonempty_string(*values: object) -> str:
+    for value in values:
+        if isinstance(value, str) and value.strip():
+            return value
+    return ""
+
+
+def canonical_pair_candidate_fingerprint(
+    *,
+    doi: object,
+    github_release_url: object,
+    zenodo_record_url: object,
+    github_repo: object,
+    title: object,
+    release_tag: object,
+) -> PairCandidateFingerprint | None:
+    """Return the full canonical identity of one reviewed pairing candidate.
+
+    Every component is required.  Callers must defer a candidate when a legacy
+    decision cannot supply the full identity from its own fields or its group
+    context, rather than falling back to a lossy DOI/release key.
+    """
+    fingerprint: PairCandidateFingerprint = (
+        _candidate_text(doi, casefold=True),
+        _candidate_url(github_release_url),
+        _candidate_url(zenodo_record_url),
+        _candidate_text(github_repo, casefold=True),
+        _candidate_text(title, casefold=True),
+        _candidate_text(release_tag),
+    )
+    return fingerprint if all(fingerprint) else None
+
+
+def release_identity_from_url(github_release_url: object) -> tuple[str, str]:
+    """Derive a repository and tag from a canonical GitHub release URL."""
+    release_url = _candidate_url(github_release_url)
+    match = GITHUB_RELEASE_RE.fullmatch(release_url)
+    if not match:
+        return "", ""
+    return f"{match.group(1)}/{match.group(2)}", match.group(3)
+
+
+def decision_pair_candidate_fingerprint(
+    raw_candidate: object, group: Mapping[str, Any]
+) -> PairCandidateFingerprint | None:
+    """Resolve a decision-log candidate to the full reviewed identity.
+
+    Older decision logs occasionally stored a bare release URL.  They remain
+    usable only when the DOI, title, repository, tag, and canonical Zenodo URL
+    can all be derived from the surrounding decision group; otherwise the
+    decision is intentionally inert and the live candidate is re-queued.
+    """
+    if isinstance(raw_candidate, str):
+        candidate: Mapping[str, Any] = {"github_release_url": raw_candidate}
+    elif isinstance(raw_candidate, Mapping):
+        candidate = raw_candidate
+    else:
+        return None
+
+    doi = _first_nonempty_string(candidate.get("doi"), group.get("doi"))
+    release_url = _first_nonempty_string(
+        candidate.get("github_release_url"), group.get("github_release_url")
+    )
+    derived_repo, derived_tag = release_identity_from_url(release_url)
+    zenodo_record_url = _first_nonempty_string(
+        candidate.get("zenodo_record_url"),
+        group.get("zenodo_record_url"),
+        zenodo_record_url_from_doi(doi),
+    )
+    github_repo = _first_nonempty_string(
+        candidate.get("github_repo"),
+        group.get("candidate_github_repo"),
+        group.get("github_repo"),
+        derived_repo,
+    )
+    title = _first_nonempty_string(
+        candidate.get("record_title"), candidate.get("title"), group.get("title")
+    )
+    release_tag = _first_nonempty_string(
+        candidate.get("release_tag"), group.get("release_tag"), derived_tag
+    )
+    return canonical_pair_candidate_fingerprint(
+        doi=doi,
+        github_release_url=release_url,
+        zenodo_record_url=zenodo_record_url,
+        github_repo=github_repo,
+        title=title,
+        release_tag=release_tag,
+    )
+
+
+def _zoned_timestamp(value: object) -> datetime | None:
+    """Parse a decision timestamp only when it carries an explicit timezone."""
+    if not isinstance(value, str) or not value.strip():
+        return None
+    try:
+        parsed = datetime.fromisoformat(value.strip().replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return parsed if parsed.tzinfo is not None else None
+
+
+def _decision_note(payload: Mapping[str, Any], group: Mapping[str, Any]) -> str:
+    """Return a group rationale or the audited global decision note."""
+    rationale = group.get("rationale")
+    if isinstance(rationale, str) and rationale.strip():
+        return rationale.strip()
+    summary = payload.get("decision_summary")
+    if isinstance(summary, Mapping):
+        note = summary.get("note")
+        if isinstance(note, str) and note.strip():
+            return note.strip()
+    return ""
+
+
+def _authenticated_supersession(
+    group: Mapping[str, Any],
+    *,
+    previous: Mapping[str, str],
+    fingerprint: PairCandidateFingerprint,
+) -> bool:
+    """Return whether a conflicting decision explicitly supersedes another.
+
+    A plain later row is not authority to overwrite a decision for the same
+    public candidate.  The successor must name the prior group and exact
+    candidate, retain an authenticated approval receipt, and be temporally
+    later than the decision it replaces.
+    """
+    supersession = group.get("supersession")
+    if not isinstance(supersession, Mapping):
+        return False
+    if supersession.get("supersedes_group_id") != previous.get("group_id"):
+        return False
+    if supersession.get("authenticated") is not True:
+        return False
+    if not isinstance(supersession.get("approved_by"), str) or not str(
+        supersession["approved_by"]
+    ).strip():
+        return False
+    approved_at = _zoned_timestamp(supersession.get("approved_at"))
+    if approved_at is None:
+        return False
+    rationale = supersession.get("rationale")
+    if not isinstance(rationale, str) or not rationale.strip():
+        return False
+    superseded_candidate = supersession.get("superseded_candidate")
+    if not isinstance(superseded_candidate, Mapping):
+        return False
+    superseded_fingerprint = decision_pair_candidate_fingerprint(
+        superseded_candidate, {}
+    )
+    if superseded_fingerprint != fingerprint:
+        return False
+    previous_decided_at = _zoned_timestamp(previous.get("decided_at"))
+    return previous_decided_at is not None and approved_at >= previous_decided_at
+
+
+def reviewed_pair_decision_index(
+    payload: object,
+) -> dict[PairCandidateFingerprint, dict[str, str]]:
+    """Return only complete, provenance-bearing durable pair decisions.
+
+    Malformed groups and raw candidates are deliberately inert: neither sync
+    nor review rendering may let them clear a live candidate.  In contrast,
+    any duplicate decision for the exact same full fingerprint is a
+    data-integrity error unless the later row carries an explicit,
+    authenticated, exact supersession receipt.
+    """
+    if not isinstance(payload, Mapping):
+        raise ValueError("paired-publication decisions must be a JSON object")
+    groups = payload.get("groups")
+    if not isinstance(groups, list):
+        raise ValueError("paired-publication decisions must contain a groups list")
+
+    indexed: dict[PairCandidateFingerprint, dict[str, str]] = {}
+    group_ids: set[str] = set()
+    for group in groups:
+        if not isinstance(group, Mapping):
+            continue
+        group_id = group.get("id")
+        decision = _candidate_text(group.get("decision"), casefold=True)
+        decided_by = group.get("decided_by")
+        decided_at = _zoned_timestamp(group.get("decided_at"))
+        raw_candidates = group.get("raw_candidates")
+        raw_candidate_count = group.get("raw_candidate_count")
+        if (
+            not isinstance(group_id, str)
+            or not group_id.strip()
+            or group_id in group_ids
+            or decision not in _PAIR_DECISION_VALUES
+            or not isinstance(decided_by, str)
+            or not decided_by.strip()
+            or decided_at is None
+            or not _decision_note(payload, group)
+            or not isinstance(raw_candidates, list)
+            or (
+                raw_candidate_count is not None
+                and (
+                    not isinstance(raw_candidate_count, int)
+                    or isinstance(raw_candidate_count, bool)
+                    or raw_candidate_count != len(raw_candidates)
+                )
+            )
+        ):
+            # A decision lacking identity, human provenance, or a usable
+            # rationale remains inert rather than clearing a future candidate.
+            continue
+        group_ids.add(group_id)
+        record = {
+            "decision": decision,
+            "group_id": group_id,
+            "folder": _candidate_text(group.get("folder")),
+            "representation": _candidate_text(group.get("representation")),
+            "decided_by": decided_by.strip(),
+            "decided_at": group["decided_at"].strip(),
+        }
+        for raw_candidate in raw_candidates:
+            fingerprint = decision_pair_candidate_fingerprint(raw_candidate, group)
+            if fingerprint is None:
+                continue
+            existing = indexed.get(fingerprint)
+            if existing is None:
+                indexed[fingerprint] = record
+                continue
+            if _authenticated_supersession(
+                group, previous=existing, fingerprint=fingerprint
+            ):
+                indexed[fingerprint] = record
+                continue
+            raise ValueError(
+                "duplicate paired-publication decisions for exact candidate "
+                f"{fingerprint!r}: {existing['group_id']} vs {group_id}"
+            )
+    return indexed
 
 
 def is_ignored_release(release: GitHubRelease) -> bool:

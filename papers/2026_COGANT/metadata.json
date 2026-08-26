@@ -48,7 +48,7 @@
   ],
   "github_repo": "ActiveInferenceInstitute/COGANT",
   "source": "zenodo-with-github",
-  "checked_at": "2026-08-19T22:45:41Z",
+  "checked_at": "2026-08-26T18:35:10Z",
   "github_release_url": "https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0",
   "release_tag": "v0.6.0",
   "release_name": "COGANT v0.6.0 — first public release",
@@ -82,5 +82,7 @@
   ],
   "related_software": [
     "ActiveInferenceInstitute/COGANT"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.20705351",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20705351"
 }

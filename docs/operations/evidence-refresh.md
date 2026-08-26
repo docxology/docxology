@@ -78,6 +78,16 @@ human-reviewed software/source records. Regenerate only deterministic
 derivatives after those source decisions are made, then rebuild this report for
 the candidate release revision.
 
+Public-source observations and time-sensitive biographical claims use separate
+durable review inputs: `data/public-source-observation-decisions.json` and
+`data/biographical-claim-decisions.json`. Each decision names the exact queue
+item, a timezone-qualified reviewer decision, rationale, and SHA-256 digests
+of the observed evidence. The review renderer accepts an acknowledgement or
+rejection only when those hashes still match; changed evidence returns the item
+to `deferred`. An acknowledgement may explicitly record that no curated claim
+change was required. Do not advance a snapshot baseline merely to make an
+unreviewed observation disappear.
+
 Apply only strong, reviewed GitHub–Zenodo pairs. Record ambiguous outcomes in
 `data/paired-publication-decisions.json`; do not auto-create bibliography rows
 from a plausible title match. Rebuild `data/coverage-exceptions.json` to keep

@@ -20,8 +20,14 @@ generated layer, artifact, deployment, and live verification records agree.
    use `pages/BIBLIOGRAPHY.md` as the canonical citation DOI surface. Preserve a
    version/download DOI in `metadata.json` as `artifact_doi` rather than
    replacing the citation DOI.
-3. Run `uv run python3 code/orchestrators/regenerate_all.py --validate`, then
-   run it a second time and require no tracked-file content changes.
+3. Run `uv run python3 code/orchestrators/regenerate_all.py`, then run it a
+   second time and require no tracked-file content changes.  During this
+   pre-payload phase, the writer may incorporate only a current
+   `public_source_snapshot` that explicitly records
+   `source_worktree_clean: false`; that snapshot is reviewed source evidence
+   to commit with the payload, not an attestation receipt.  Commit the payload,
+   regenerate the control tail in a clean worktree, and only then run strict
+   `validate_repo.py --strict-reports`.
 4. Run `uv run python3 code/orchestrators/build_pages_artifact.py --output /tmp/docxology-pages --check-size --check-manifest`.
 5. Run `uv run --extra browser-qa python3 code/orchestrators/browser_smoke.py`,
    the progressive `browser_qa.py` suite with the cached Playwright runtime,

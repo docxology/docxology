@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import sys
 import subprocess
 from pathlib import Path
@@ -117,6 +118,40 @@ def test_pages_manifest_rejects_dirty_postdeploy_receipts(tmp_path):
     ]
     with pytest.raises(SystemExit, match="regenerate the Pages control tail in a clean worktree"):
         bpa.require_clean_postdeploy_payload_inputs(tmp_path)
+
+
+def test_pages_manifest_allows_only_the_current_dirty_prepayload_source_snapshot(tmp_path):
+    _git(tmp_path, "init", "-q")
+    _git(tmp_path, "config", "user.email", "test@example.invalid")
+    _git(tmp_path, "config", "user.name", "Pages fixture")
+    report = tmp_path / "reports" / "public_source_snapshot_2026-08-25.json"
+    report.parent.mkdir()
+    report.write_text("{}\n", encoding="utf-8")
+    _git(tmp_path, "add", "reports")
+    _git(tmp_path, "commit", "-qm", "receipt baseline")
+    head = subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=tmp_path, check=True, capture_output=True, text=True
+    ).stdout.strip()
+    report.write_text(
+        json.dumps({"source_commit": head, "source_worktree_clean": False}) + "\n",
+        encoding="utf-8",
+    )
+
+    assert bpa.dirty_postdeploy_payload_paths(tmp_path) == [report.relative_to(tmp_path)]
+    assert bpa.dirty_postdeploy_payload_paths(
+        tmp_path, allow_dirty_prepayload_source_snapshot=True
+    ) == []
+    bpa.require_clean_postdeploy_payload_inputs(
+        tmp_path, allow_dirty_prepayload_source_snapshot=True
+    )
+
+    report.write_text(
+        json.dumps({"source_commit": head, "source_worktree_clean": True}) + "\n",
+        encoding="utf-8",
+    )
+    assert bpa.dirty_postdeploy_payload_paths(
+        tmp_path, allow_dirty_prepayload_source_snapshot=True
+    ) == [report.relative_to(tmp_path)]
 
 
 def test_growth_report_contract_is_compared_by_manifest_validation():

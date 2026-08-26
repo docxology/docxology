@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-26T02:30:56Z",
+  "generated_at": "2026-08-26T18:40:52Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 145,
+  "count": 147,
   "repositories": [
     {
       "name": "template",
@@ -249,7 +249,7 @@
       "url": "https://github.com/docxology/AGEINT",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft ·  · Zenodo",
+      "description": "Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft ·  · Citation DOI",
       "language": "HTML",
       "stars": 1,
       "updated_or_year": "2026-06",
@@ -321,7 +321,7 @@
       "url": "https://github.com/docxology/itrace",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports ·  · Zenodo",
+      "description": "Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports ·  · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-06",
@@ -357,7 +357,7 @@
       "url": "https://github.com/docxology/template_madlib",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing ·  · Zenodo",
+      "description": "Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing ·  · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-06",
@@ -477,12 +477,12 @@
       "url": "https://github.com/docxology/biology_textbook",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo",
+      "description": "Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-05",
       "paper_path": "papers/2026_BiologyTextbook/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20286478"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20286477"
     },
     {
       "name": "cascadia",
@@ -1289,6 +1289,18 @@
       "zenodo_url": "https://doi.org/10.5281/zenodo.21983948"
     },
     {
+      "name": "multi-time",
+      "url": "https://github.com/docxology/multi-time",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Multi-frequency time-series analysis toolkit built on sktime — validates irregular series, tests stationarity and Granger causality, and evaluates forecasting models",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
       "name": "ActiveInferenceJournal",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
       "owner": "ActiveInferenceInstitute",
@@ -1533,12 +1545,12 @@
       "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo",
+      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 155-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI",
       "language": "Python",
       "stars": 3,
       "updated_or_year": "2026",
       "paper_path": "papers/2026_FEPLean/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.19699234"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.19699233"
     },
     {
       "name": "ActInf_RxInfer",
@@ -1629,24 +1641,24 @@
       "url": "https://github.com/ActiveInferenceInstitute/COGANT",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo · Zenodo",
+      "description": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust ·  · Zenodo artifact v0.6.0 · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026",
       "paper_path": "papers/2026_COGANT/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20705351"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20705350"
     },
     {
       "name": "on_policy_distillation",
       "url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo · Zenodo",
+      "description": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release ·  · Zenodo artifact v1.0.2 · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026",
       "paper_path": "papers/2026_PolicyDistillationAs/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20749817"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20747834"
     },
     {
       "name": "Bots",
@@ -1713,7 +1725,7 @@
       "url": "https://github.com/ActiveInferenceInstitute/Active_Fedference",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus ·  · Zenodo",
+      "description": "Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus ·  · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026",
@@ -1743,6 +1755,18 @@
       "updated_or_year": "2026",
       "paper_path": "papers/2026_ActiveInferencePower/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21695160"
+    },
+    {
+      "name": "Active_Inference_Un0",
+      "url": "https://github.com/ActiveInferenceInstitute/Active_Inference_Un0",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Public repository with no description, language, or committed contents at the 2026-08-26 review",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2026",
+      "paper_path": "",
+      "zenodo_url": ""
     }
   ]
 }

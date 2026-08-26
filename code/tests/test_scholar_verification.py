@@ -116,3 +116,73 @@ def test_sync_scholar_metrics_check_rejects_a_malformed_snapshot_date(tmp_path: 
 
     assert result.returncode == 1
     assert "as_of must be an ISO-8601 calendar date" in result.stdout
+
+
+def test_sync_scholar_metrics_reconciles_profile_metric_table_and_since_2021(
+    tmp_path: Path,
+):
+    """All visible metric-table cells derive from the bound snapshot values."""
+    script, snapshot = _sync_fixture(tmp_path)
+    receipt = tmp_path / "data" / "scholar-verification-receipt.json"
+    payload = json.loads(snapshot.read_text(encoding="utf-8"))
+    payload.update({"citations": 15, "h_index": 4, "i10_index": 5})
+    payload["since_2021"] = {"citations": 12, "h_index": 3, "i10_index": 4}
+    _write_json(snapshot, payload)
+    receipt_payload = json.loads(receipt.read_text(encoding="utf-8"))
+    receipt_payload["snapshot_sha256"] = _sha256(snapshot)
+    receipt_payload["metrics"] = {
+        "citations": 15,
+        "h_index": 4,
+        "i10_index": 5,
+        "since_2021": {"citations": 12, "h_index": 3, "i10_index": 4},
+    }
+    _write_json(receipt, receipt_payload)
+    profile = tmp_path / "pages" / "PROFILE.md"
+    profile.parent.mkdir(parents=True)
+    profile.write_text(
+        "| Google Scholar Citations | 10 (as of 2026-08-25) |\n"
+        "| h-index | 2 |\n"
+        "| i10-index | 3 |\n"
+        "| Citations since 2021 | 8 (as of 2026-08-25) |\n",
+        encoding="utf-8",
+    )
+
+    applied = subprocess.run(
+        [sys.executable, str(script)], cwd=tmp_path, text=True, capture_output=True
+    )
+
+    assert applied.returncode == 0, applied.stderr
+    assert profile.read_text(encoding="utf-8") == (
+        "| Google Scholar Citations | 15 (as of 2026-08-25) |\n"
+        "| h-index | 4 |\n"
+        "| i10-index | 5 |\n"
+        "| Citations since 2021 | 12 (as of 2026-08-25) |\n"
+    )
+    checked = subprocess.run(
+        [sys.executable, str(script), "--check"],
+        cwd=tmp_path,
+        text=True,
+        capture_output=True,
+    )
+    assert checked.returncode == 0, checked.stderr
+
+
+def test_sync_scholar_metrics_check_rejects_unbound_since_2021_metrics(tmp_path: Path):
+    script, snapshot = _sync_fixture(tmp_path)
+    receipt = tmp_path / "data" / "scholar-verification-receipt.json"
+    snapshot_payload = json.loads(snapshot.read_text(encoding="utf-8"))
+    snapshot_payload["since_2021"] = {"citations": 9, "h_index": 2, "i10_index": 3}
+    _write_json(snapshot, snapshot_payload)
+    receipt_payload = json.loads(receipt.read_text(encoding="utf-8"))
+    receipt_payload["snapshot_sha256"] = _sha256(snapshot)
+    _write_json(receipt, receipt_payload)
+
+    result = subprocess.run(
+        [sys.executable, str(script), "--check"],
+        cwd=tmp_path,
+        text=True,
+        capture_output=True,
+    )
+
+    assert result.returncode == 1
+    assert "since_2021 metrics do not match" in result.stdout

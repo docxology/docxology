@@ -31,6 +31,7 @@
 - GitHub repository: [ActiveInferenceInstitute/on_policy_distillation](https://github.com/ActiveInferenceInstitute/on_policy_distillation)
 - GitHub release: [v1.0.2](https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2)
 - DOI: [10.5281/zenodo.20747834](https://doi.org/10.5281/zenodo.20747834)
+- Artifact DOI: [10.5281/zenodo.20749817](https://doi.org/10.5281/zenodo.20749817)
 - Zenodo record: [https://zenodo.org/records/20747834](https://zenodo.org/records/20747834)
 - PDF: [Friedman_2026_Onpolicy_c6b5ec49.pdf](Friedman_2026_Onpolicy_c6b5ec49.pdf)
 - PDF SHA-256: c6b5ec494915e6e046f24cf723f8dbbf93a5b168544daed3cca14c089d4087aa

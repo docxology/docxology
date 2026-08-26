@@ -6,6 +6,7 @@ tags: ["active-inference", "federated-learning", "generalised-variational-infere
 domain: "Active Inference"
 citation: "Daniel Ari Friedman (2026). *Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus*. Active Inference."
 doi: "10.5281/zenodo.21864003"
+artifact_doi: "10.5281/zenodo.21972644"
 ---
 
 # Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus
@@ -41,7 +42,8 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.21864003
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
-- Last checked: 2026-08-10T17:11:25Z
+- Last checked: 2026-08-26T18:01:35Z
+- Artifact DOI: 10.5281/zenodo.21972644
 
 ## Prerequisites
 
