@@ -133,7 +133,9 @@ def test_pages_built_is_not_deployment_pending():
         (["reports/external_links_2026-08-25.json"], False),
         (["reports/browser-smoke/2026-08-25/manifest.json"], False),
         (["README.md"], True),
-        (["reports/external_links_triage_2026-08-25.json"], True),
+        (["reports/external_links_triage_2026-08-25.json"], False),
+        (["reports/external_links_triage_2026-08-25.md"], False),
+        (["reports/external_links_triage_2026-08-25.txt"], True),
         (["_site/index.html", "README.md"], True),
     ],
 )
