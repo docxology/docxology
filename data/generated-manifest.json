@@ -118,8 +118,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-08-25.json",
-        "reports/source_coverage_2026-08-25.md"
+        "reports/source_coverage_2026-08-26.json",
+        "reports/source_coverage_2026-08-26.md"
       ],
       "sources": [
         "data/works.json",
@@ -252,7 +252,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-08-25.json"
+        "reports/pages_artifact_growth_2026-08-26.json"
       ],
       "sources": [
         "tracked repository files",
@@ -581,7 +581,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-08-25.json"
+        "reports/asset_size_2026-08-26.json"
       ],
       "sources": [
         "root HTML pages",
@@ -595,7 +595,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-08-25.json"
+        "reports/accessibility_static_2026-08-26.json"
       ],
       "sources": [
         "root HTML pages",
