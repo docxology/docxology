@@ -2,7 +2,7 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `9a87d6493df43fdd0362f3019522f0dde3361fb2`
+Source commit: `dfbbb9cefa32e2478b3495d5245f2f1a6651ea16`
 
 ## Disposition summary
 
@@ -29,7 +29,7 @@ Source commit: `9a87d6493df43fdd0362f3019522f0dde3361fb2`
 - `paired_publications`: `reports/paired_publications_2026-08-19.json` (`4fe535b33fb9434dd30947f4de3ef21b669261982271a94f7b51a5c97820cb1b`)
 - `previous_public_source_snapshot`: `reports/public_source_snapshot_2026-08-19.json` (`36e69a0b824a9eb545f6a2e7c79428612e51e9ec1ab03ac2ca6fc3f9cd9d19a0`)
 - `public_source_inventory`: `reports/public_source_inventory_2026-08-25.json` (`f0db4bfb566a1416d172aa974f11e51f8536c7f371a87e217ab996a6171fc7d2`)
-- `public_source_snapshot`: `reports/public_source_snapshot_2026-08-26.json` (`fd79c8a895e6f660fcff77667529bdaf0f0b43758819a06ecada1cd4b1dc08c9`)
+- `public_source_snapshot`: `reports/public_source_snapshot_2026-08-25.json` (`137b72b2069a6b2b4b055a719bbd5f90c3b63b510b014d5a27d88e3ef8185047`)
 - `repository_classification`: `data/repository-classification.json` (`c93bd5e9e025ce71f9cf73c8e261f8eb5b2d7b9e7af5c3b76127a473aa47f2a3`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`83f065bc6eac1aded5cae8de4249ab4fb76940612a59010526412c29025cdb90`)
 - `scholar_verification_receipt`: not supplied
