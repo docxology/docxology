@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-26T00:29:24Z",
-  "source_commit_at_generation": "9c073dbd9ae8e4864f4ba91b856d44b3f39eb49c",
+  "generated_at": "2026-08-26T00:51:23Z",
+  "source_commit_at_generation": "9b67556f11a83fbb541770a37675b5fdecfc379e",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 843210421,
+    "source_bytes": 843230259,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4606,
-    "artifact_bytes": 844018307
+    "artifact_file_count": 4607,
+    "artifact_bytes": 844038309
   },
   "included_files": [
     {
@@ -5644,18 +5644,18 @@
     },
     {
       "path": "code/orchestrators/validate_repo.py",
-      "bytes": 18632,
-      "sha256": "c80877753e0ab8889e4f9313bf8e8588fbbd91395b8a02d27930853b9d62f6c0"
+      "bytes": 21769,
+      "sha256": "ec774259930ca8eb4e1e8118f172c1189c181082c0d8d4c9ac6a73aef208a919"
     },
     {
       "path": "code/orchestrators/verify_live_site.py",
-      "bytes": 23816,
-      "sha256": "ee000ca4a2cf4793c058771d1a4103016f6f78f1e7c256aed590d744ad2275e1"
+      "bytes": 23248,
+      "sha256": "fb5b218277675f9194a7d0f86041d054f234db7ea332afde963f84e5dd3b7a71"
     },
     {
       "path": "code/orchestrators/visual_qa.py",
-      "bytes": 5947,
-      "sha256": "c203aa4f0edf8fb460cc2bf11657e319ef7737c3fd8f270b0570ac11534e8d45"
+      "bytes": 11735,
+      "sha256": "48ea3045288c9c031e1ede9d09fd9b6e87d5dbab09120b68990cba75ee84730b"
     },
     {
       "path": "code/src/biblio_table.py",
@@ -5729,8 +5729,8 @@
     },
     {
       "path": "code/src/release_evidence.py",
-      "bytes": 35317,
-      "sha256": "bb25d8142767ce2d31ccd80a3702a0da783c7d538fcf0bb3aa58cb20c1acbd18"
+      "bytes": 35665,
+      "sha256": "2f3f5e94112c2fe9da373fb4ee2e1b3882cb22e68d85507e4edcfd38ca945617"
     },
     {
       "path": "code/src/report_paths.py",
@@ -6009,8 +6009,8 @@
     },
     {
       "path": "code/tests/test_release_evidence.py",
-      "bytes": 17961,
-      "sha256": "2337103b6cd950a0428e6b324417e985302b4747c2d9b27a6dbea8ea1a4d970f"
+      "bytes": 18786,
+      "sha256": "4c66eb7db1593c5827f1d609d58c9624b3ed6587bf0c2ce1b9dbdca6d0a90f87"
     },
     {
       "path": "code/tests/test_release_integrity.py",
@@ -6084,13 +6084,18 @@
     },
     {
       "path": "code/tests/test_validate_repo.py",
-      "bytes": 3094,
-      "sha256": "79601f5ef4c442f15cb5a893e911e6750d6f1dd151f5d753f3311190556d727d"
+      "bytes": 8411,
+      "sha256": "ede6dd38a0a086190fb5cbaa7f7f41753e4680b980ee708fae034bebe7969f17"
     },
     {
       "path": "code/tests/test_verify_live_site.py",
-      "bytes": 8976,
-      "sha256": "646ffb98f1f9c9db6acb00abdcdf46909f6c261f884e184a77cc8c00f09ae5b5"
+      "bytes": 9179,
+      "sha256": "e5cf1cbd788bd3ddfbc1895b6814e2687c1344afa9655896918861264e533f25"
+    },
+    {
+      "path": "code/tests/test_visual_qa.py",
+      "bytes": 3509,
+      "sha256": "09a1fb6ceee290e6d2044ff90e2ab0b086dabe8bb7865286667d6984280478bd"
     },
     {
       "path": "code/tests/test_youtube_fetcher.py",
@@ -6384,8 +6389,8 @@
     },
     {
       "path": "docs/operations/accessibility-qa.md",
-      "bytes": 1459,
-      "sha256": "32a86836095b7dfb18eac883c8b9b628a918bbb916247342deb671ba2c8421e0"
+      "bytes": 1823,
+      "sha256": "a32e3be2a5b8ff71d43b3bd843f4ff5a15046257af80afb79219ebc02fae4bb9"
     },
     {
       "path": "docs/operations/cv-release.md",
@@ -6419,8 +6424,8 @@
     },
     {
       "path": "docs/operations/release-integrity.md",
-      "bytes": 7521,
-      "sha256": "be40eb5c7b331743a1b95227235177e4010b46a8d3c1506748f61fb3c207aa0f"
+      "bytes": 8436,
+      "sha256": "8b3a8b3e365a1439875c109d40cf54cd3c9f7d3e9206d0a4bbc81370510e6326"
     },
     {
       "path": "docs/operations/report-retention.md",
