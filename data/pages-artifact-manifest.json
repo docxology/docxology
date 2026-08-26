@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-26T19:58:42Z",
-  "source_commit_at_generation": "a5b9790a830f28eafe6903ddaaefedf604030456",
+  "generated_at": "2026-08-26T20:12:20Z",
+  "source_commit_at_generation": "14b003ed1526a1643fe658dc79557c02e2ba0bc5",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 847710121,
+    "source_bytes": 847697867,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4619,
-    "artifact_bytes": 848520344
+    "artifact_file_count": 4620,
+    "artifact_bytes": 848508267
   },
   "included_files": [
     {
@@ -5479,8 +5479,8 @@
     },
     {
       "path": "code/orchestrators/check_zenodo_uncatalogued.py",
-      "bytes": 8061,
-      "sha256": "4223cc5e56eced7cf4e2d955b1357e1c15a29a901cff3dbb77d62ea81469c5b5"
+      "bytes": 8593,
+      "sha256": "4de8778921c3efc3f54004072b73a44f2901e764b8ca9854e4c9f43cb923ecb3"
     },
     {
       "path": "code/orchestrators/classify_repositories.py",
@@ -5859,8 +5859,8 @@
     },
     {
       "path": "code/tests/test_check_zenodo_uncatalogued.py",
-      "bytes": 3213,
-      "sha256": "b119d7d57d9a0cf2044a87b7286776f33773b795b6c4035f05e4d05b3d717f79"
+      "bytes": 3481,
+      "sha256": "367cb3ba8301512ef8e4f70505824c6a8a47254cab9b7089bc770fe264634130"
     },
     {
       "path": "code/tests/test_classify_repositories.py",
@@ -15059,13 +15059,13 @@
     },
     {
       "path": "reports/external_links_triage_2026-08-26.json",
-      "bytes": 62642,
-      "sha256": "ade2e9167a18e2d5bfba6182e206ec040199d9349b01a1bea89b8990a8a393cd"
+      "bytes": 49314,
+      "sha256": "702db4e6ed8b6f32e36aa5ad35b97da339a58fb809232ff5457eb08957f1eb97"
     },
     {
       "path": "reports/external_links_triage_2026-08-26.md",
-      "bytes": 10652,
-      "sha256": "da65cf7e4498c7f20af67d2482d77ee50b18391d420482acb0a4748f36ca04aa"
+      "bytes": 10694,
+      "sha256": "a98bcf696033aea7499e94e3efa15135c61078c6765ba2368b266aff9a94d872"
     },
     {
       "path": "reports/gsc_preflight_2026-05-29.json",
@@ -15901,6 +15901,11 @@
       "path": "reports/zenodo_uncatalogued_2026-08-19.json",
       "bytes": 467,
       "sha256": "b4f2bf9841d7f5b86a6306d396764709cd77964a8f752eb8c63e74f4d6b74913"
+    },
+    {
+      "path": "reports/zenodo_uncatalogued_2026-08-26.json",
+      "bytes": 232,
+      "sha256": "fe7e0cba0386be5c8a5dbbd099dd731471a2b0f17563c80e64cc2ebbfee32265"
     },
     {
       "path": "repositories-forks.html",
