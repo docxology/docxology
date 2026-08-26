@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-26T02:31:11Z",
+  "generated_at": "2026-08-26T19:41:23Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
-  "asset_count": 105,
+  "asset_count": 107,
   "budget_exceptions": {
     "publications.html": {
       "budget_bytes": 600000,
@@ -10,12 +10,12 @@
     }
   },
   "warnings": 0,
-  "total_bytes": 15677542,
+  "total_bytes": 15958726,
   "largest": [
     {
       "path": "data/videos.json",
       "kind": "json-data",
-      "bytes": 3426991,
+      "bytes": 3428144,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -55,7 +55,7 @@
     {
       "path": "data/paired-publication-decisions.json",
       "kind": "json-data",
-      "bytes": 462305,
+      "bytes": 468080,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -73,7 +73,7 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 348643,
+      "bytes": 353119,
       "baseline_budget_bytes": 5000000,
       "budget_bytes": 5000000,
       "budget_exception": null,
@@ -82,7 +82,16 @@
     {
       "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 314538,
+      "bytes": 316709,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/github-repositories.json",
+      "kind": "json-data",
+      "bytes": 293406,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -109,25 +118,25 @@
     {
       "path": "data/work-enrichment.json",
       "kind": "json-data",
-      "bytes": 232485,
+      "bytes": 232820,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
       "ok": true
     },
     {
-      "path": "data/github-repositories.json",
-      "kind": "json-data",
-      "bytes": 216936,
-      "baseline_budget_bytes": 4000000,
-      "budget_bytes": 4000000,
+      "path": "repositories.html",
+      "kind": "html",
+      "bytes": 217836,
+      "baseline_budget_bytes": 500000,
+      "budget_bytes": 500000,
       "budget_exception": null,
       "ok": true
     },
     {
       "path": "software.html",
       "kind": "html",
-      "bytes": 185680,
+      "bytes": 203702,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -170,11 +179,11 @@
       "ok": true
     },
     {
-      "path": "repositories.html",
-      "kind": "html",
-      "bytes": 144285,
-      "baseline_budget_bytes": 500000,
-      "budget_bytes": 500000,
+      "path": "data/software-ld.json",
+      "kind": "json-data",
+      "bytes": 130964,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
       "budget_exception": null,
       "ok": true
     },
@@ -184,15 +193,6 @@
       "bytes": 130118,
       "baseline_budget_bytes": 320000,
       "budget_bytes": 320000,
-      "budget_exception": null,
-      "ok": true
-    },
-    {
-      "path": "data/reproducibility.json",
-      "kind": "json-data",
-      "bytes": 124391,
-      "baseline_budget_bytes": 4000000,
-      "budget_bytes": 4000000,
       "budget_exception": null,
       "ok": true
     }

@@ -18,6 +18,18 @@
       "command": "uv run python3 code/orchestrators/regenerate_docs.py --apply"
     },
     {
+      "name": "Paper CFF DOI-role synchronization",
+      "outputs": [
+        "papers/*/CITATION.cff (canonical top-level DOI/URL and explicit artifact identifiers)"
+      ],
+      "sources": [
+        "papers/*/metadata.json (doi and optional artifact_doi)",
+        "papers/*/CITATION.cff (non-DOI fields and identifiers)",
+        "code/orchestrators/generate_citation_cff.py"
+      ],
+      "command": "uv run python3 code/orchestrators/generate_citation_cff.py --apply"
+    },
+    {
       "name": "Publications HTML sync",
       "outputs": [
         "publications.html",
@@ -135,6 +147,7 @@
       "sources": [
         "data/github-repositories.json",
         "data/software.json",
+        "data/repository-exclusions.json",
         "code/orchestrators/classify_repositories.py"
       ],
       "command": "python3 code/orchestrators/classify_repositories.py"
@@ -333,9 +346,7 @@
     {
       "name": "Full GitHub repository inventory",
       "outputs": [
-        "data/github-repositories.json",
-        "repositories.html",
-        "repositories-forks.html"
+        "data/github-repositories.json"
       ],
       "sources": [
         "GitHub REST API",
@@ -345,9 +356,22 @@
       "command": "python3 code/orchestrators/build_github_inventory.py"
     },
     {
+      "name": "Cached GitHub repository inventory pages",
+      "outputs": [
+        "repositories.html",
+        "repositories-forks.html"
+      ],
+      "sources": [
+        "data/github-repositories.json",
+        "code/orchestrators/build_github_inventory.py",
+        "code/orchestrators/render_github_inventory.py"
+      ],
+      "command": "python3 code/orchestrators/render_github_inventory.py"
+    },
+    {
       "name": "Paired publication sync report",
       "outputs": [
-        "reports/paired_publications_2026-08-19.json"
+        "reports/paired_publications_2026-08-26.json"
       ],
       "sources": [
         "GitHub Releases API",
@@ -365,7 +389,7 @@
         "reports/paired_publications_review_queue_2026-06-04.md"
       ],
       "sources": [
-        "reports/paired_publications_2026-08-19.json",
+        "reports/paired_publications_2026-08-26.json",
         "manual review decision"
       ],
       "command": "manual review; update data/paired-publication-decisions.json"
@@ -560,12 +584,32 @@
     {
       "name": "Public source inventory",
       "outputs": [
-        "reports/public_source_inventory_2026-08-25.json"
+        "reports/public_source_inventory_2026-08-26.json"
       ],
       "sources": [
         "ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages"
       ],
       "command": "python3 code/orchestrators/refresh_public_source_inventory.py"
+    },
+    {
+      "name": "Public-source review record",
+      "outputs": [
+        "reports/public_source_review_2026-08-26.json",
+        "reports/public_source_review_2026-08-26.md"
+      ],
+      "sources": [
+        "reports/public_source_snapshot_*.json",
+        "reports/public_source_inventory_*.json",
+        "reports/paired_publications_*.json",
+        "data/paired-publication-decisions.json",
+        "data/public-source-observation-decisions.json",
+        "data/biographical-claim-decisions.json",
+        "data/claims.json",
+        "data/scholar-snapshot.json",
+        "data/scholar-verification-receipt.json",
+        "code/orchestrators/build_public_source_review.py"
+      ],
+      "command": "python3 code/orchestrators/build_public_source_review.py"
     },
     {
       "name": "External link triage",
