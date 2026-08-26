@@ -3,19 +3,19 @@
 Scoped network-link triage for public-facing repository hubs.
 
 - Source report: `reports/external_links_2026-08-26.json`
-- Checked URLs: 907
-- OK: 746
-- Warnings: 161
+- Checked URLs: 915
+- OK: 797
+- Warnings: 118
 
 ## Categories
 
 | Category | Count | Meaning |
 | --- | ---: | --- |
-| `bot-protected-or-rate-limited` | 156 | Likely blocks automated checks; verify manually before replacing. |
+| `bot-protected-or-rate-limited` | 112 | Likely blocks automated checks; verify manually before replacing. |
 | `connection-failure` | 1 | Could not connect during this run. |
-| `ok` | 746 | Returned a 2xx/3xx response. |
+| `ok` | 797 | Returned a 2xx/3xx response. |
 | `timeout` | 3 | Timed out under the bounded checker timeout. |
-| `upstream-transient` | 1 | Server-side outage or temporary upstream failure. |
+| `upstream-transient` | 2 | Server-side outage or temporary upstream failure. |
 
 ## bot-protected-or-rate-limited
 
@@ -35,9 +35,12 @@ Scoped network-link triage for public-facing repository hubs.
 | 403 | <https://doi.org/10.3390/e25070964> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
 | 403 | <https://doi.org/10.3390/e26040303> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 403 | <https://doi.org/10.3390/e27050459> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20705350> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
+| 429 | <https://doi.org/10.5281/zenodo.20705351> | pages/SOFTWARE.md, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.20732274> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.20732275> | README.md |
 | 429 | <https://doi.org/10.5281/zenodo.20747834> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.20749817> | pages/SOFTWARE.md, software.html, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.20749817> | pages/SOFTWARE.md, software.html |
 | 429 | <https://doi.org/10.5281/zenodo.20786638> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.20789899> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.20804585> | pages/SOFTWARE.md, software.html, software.html |
@@ -54,14 +57,12 @@ Scoped network-link triage for public-facing repository hubs.
 | 429 | <https://doi.org/10.5281/zenodo.21227869> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, pages/SOFTWARE.md |
 | 429 | <https://doi.org/10.5281/zenodo.21281509> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.21298883> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.21298885> | domain-entomology.html, domain-entomology.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.21298888> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.21298890> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.21298892> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.21298894> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.21316510> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.21330636> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.21388456> | domain-art-synergetics.html, domain-art-synergetics.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.21418782> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.21419693> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.21513316> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
@@ -79,6 +80,7 @@ Scoped network-link triage for public-facing repository hubs.
 | 429 | <https://doi.org/10.5281/zenodo.21864003> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.21865643> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.21983948> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.22072956> | pages/SOFTWARE.md, software.html |
 | 429 | <https://doi.org/10.5281/zenodo.3986084> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.4021162> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.4062540> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
@@ -99,8 +101,6 @@ Scoped network-link triage for public-facing repository hubs.
 | 429 | <https://doi.org/10.5281/zenodo.7394900> | README.md, domain-biomedicine.html, domain-biomedicine.html |
 | 429 | <https://doi.org/10.5281/zenodo.7394901> | index.html, media.html |
 | 429 | <https://doi.org/10.5281/zenodo.7400525> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.7400708> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.7400785> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 
 ## connection-failure
 
@@ -112,12 +112,13 @@ Scoped network-link triage for public-facing repository hubs.
 
 | Status | URL | Sources |
 | ---: | --- | --- |
-| 0 | <https://arxiv.org/search/?query=daniel+ari+friedman&searchtype=author> | pages/LINKS.md |
-| 0 | <https://grantome.com/grant/NSF/DBI-2010290> | README.md, evidence.html, evidence.html |
+| 0 | <https://grantome.com/grant/NSF/DBI-2010290> | pages/EVIDENCE.md, pages/EVIDENCE.md |
 | 0 | <https://www.christies.com/en/lot/lot-6337619> | README.md, art.html, media.html |
+| 0 | <https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd> | pages/EVIDENCE.md, pages/EVIDENCE.md |
 
 ## upstream-transient
 
 | Status | URL | Sources |
 | ---: | --- | --- |
+| 503 | <https://dblp.org/pid/346/2173.html> | discovery.html, pages/DISCOVERY.md, pages/LINKS.md |
 | 503 | <https://dfri.people.stanford.edu/> | pages/LINKS.md |

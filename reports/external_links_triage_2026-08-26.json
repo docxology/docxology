@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-26T01:46:30Z",
+  "generated_at": "2026-08-26T19:56:48Z",
   "source": "reports/external_links_2026-08-26.json",
-  "checked_urls": 907,
-  "ok": 746,
-  "warnings": 161,
+  "checked_urls": 915,
+  "ok": 797,
+  "warnings": 118,
   "categories": {
-    "bot-protected-or-rate-limited": 156,
+    "bot-protected-or-rate-limited": 112,
     "connection-failure": 1,
-    "ok": 746,
+    "ok": 797,
     "timeout": 3,
-    "upstream-transient": 1
+    "upstream-transient": 2
   },
   "note": "Warnings classify observed network behavior; bot-protected and rate-limited sources are not automatically stale.",
   "warnings_by_category": {
@@ -224,6 +224,52 @@
         "error": ""
       },
       {
+        "url": "https://doi.org/10.5281/zenodo.20705350",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20705351",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/SOFTWARE.md",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20732274",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
         "url": "https://doi.org/10.5281/zenodo.20732275",
         "status": 429,
         "ok": false,
@@ -248,6 +294,7 @@
           "publications.html",
           "publications.html",
           "publications.html",
+          "software.html",
           "software.html"
         ],
         "error": ""
@@ -259,7 +306,6 @@
         "category": "bot-protected-or-rate-limited",
         "sources": [
           "pages/SOFTWARE.md",
-          "software.html",
           "software.html"
         ],
         "error": ""
@@ -530,23 +576,6 @@
         "error": ""
       },
       {
-        "url": "https://doi.org/10.5281/zenodo.21298885",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "domain-entomology.html",
-          "domain-entomology.html",
-          "pages/BIBLIOGRAPHY.md",
-          "pages/DOMAINS.md",
-          "publications.html",
-          "publications.html",
-          "publications.html",
-          "publications.html"
-        ],
-        "error": ""
-      },
-      {
         "url": "https://doi.org/10.5281/zenodo.21298888",
         "status": 429,
         "ok": false,
@@ -637,23 +666,6 @@
           "publications.html",
           "software.html",
           "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://doi.org/10.5281/zenodo.21388456",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "domain-art-synergetics.html",
-          "domain-art-synergetics.html",
-          "pages/BIBLIOGRAPHY.md",
-          "pages/DOMAINS.md",
-          "publications.html",
-          "publications.html",
-          "publications.html",
-          "publications.html"
         ],
         "error": ""
       },
@@ -962,6 +974,17 @@
           "publications.html",
           "publications.html",
           "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.22072956",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/SOFTWARE.md",
           "software.html"
         ],
         "error": ""
@@ -1549,520 +1572,6 @@
         "error": ""
       },
       {
-        "url": "https://github.com/docxology/template_gold_refinement#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_literature_meta_analysis",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_literature_meta_analysis#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_madlib",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_madlib#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_methods_paper",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_methods_paper#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_newspaper",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "README.md",
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_newspaper#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_pools_rules_tools",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_pools_rules_tools#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_prose_project",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_prose_project#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_redacted_report",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_redacted_report#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_registered_report",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_registered_report#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_search_project",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_search_project#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_sia",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_sia#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_storybook",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_storybook#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_template",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_template#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_textbook",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/template_textbook#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/test_public",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "repositories.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/thalia",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "README.md",
-          "README.md",
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html",
-          "updates.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/thalia#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/thrml",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "repositories-forks.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/timeline_generator",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "domain-computational.html",
-          "domain-computational.html",
-          "pages/DOMAINS.md",
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/timeline_generator#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/transformer",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/transformer#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/triton",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "repositories-forks.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/ultralink-docx",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/ultralink-docx#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/vibeship-spawner-skills",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "repositories-forks.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/white_line",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/white_line#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/witness_register",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/SOFTWARE.md",
-          "repositories.html",
-          "software.html",
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/witness_register#software",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "software.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/yt-transcriber",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "repositories-forks.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology?tab=repositories",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/DISCOVERY.md"
-        ],
-        "error": ""
-      },
-      {
         "url": "https://medium.com/@curiocards/daniel-friedman-decentralized-beauty-nft-art-and-ants-7dc664b72534",
         "status": 403,
         "ok": false,
@@ -2193,19 +1702,6 @@
           "publications.html"
         ],
         "error": ""
-      },
-      {
-        "url": "https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "discovery.html",
-          "pages/DISCOVERY.md",
-          "pages/LINKS.md",
-          "pages/PROFILE.md"
-        ],
-        "error": ""
       }
     ],
     "connection-failure": [
@@ -2217,34 +1713,20 @@
         "sources": [
           "pages/LINKS.md"
         ],
-        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 79 ms: Couldn't connect to server"
+        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 74 ms: Couldn't connect to server"
       }
     ],
     "timeout": [
-      {
-        "url": "https://arxiv.org/search/?query=daniel+ari+friedman&searchtype=author",
-        "status": 0,
-        "ok": false,
-        "category": "timeout",
-        "sources": [
-          "pages/LINKS.md"
-        ],
-        "error": "curl: (28) Operation timed out after 10011 milliseconds with 0 bytes received"
-      },
       {
         "url": "https://grantome.com/grant/NSF/DBI-2010290",
         "status": 0,
         "ok": false,
         "category": "timeout",
         "sources": [
-          "README.md",
-          "evidence.html",
-          "evidence.html",
           "pages/EVIDENCE.md",
-          "pages/EVIDENCE.md",
-          "pages/PROFILE.md"
+          "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Connection timed out after 10001 milliseconds"
+        "error": "curl: (28) Connection timed out after 10005 milliseconds"
       },
       {
         "url": "https://www.christies.com/en/lot/lot-6337619",
@@ -2259,10 +1741,33 @@
           "pages/EVIDENCE.md",
           "pages/LINKS.md"
         ],
-        "error": "curl: (28) Operation timed out after 10011 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received"
+      },
+      {
+        "url": "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
+        "status": 0,
+        "ok": false,
+        "category": "timeout",
+        "sources": [
+          "pages/EVIDENCE.md",
+          "pages/EVIDENCE.md"
+        ],
+        "error": "curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received"
       }
     ],
     "upstream-transient": [
+      {
+        "url": "https://dblp.org/pid/346/2173.html",
+        "status": 503,
+        "ok": false,
+        "category": "upstream-transient",
+        "sources": [
+          "discovery.html",
+          "pages/DISCOVERY.md",
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
       {
         "url": "https://dfri.people.stanford.edu/",
         "status": 503,
