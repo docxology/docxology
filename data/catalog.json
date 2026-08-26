@@ -502,7 +502,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-inventory",
       "name": "Public Source Inventory",
       "description": "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.",
-      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-25.json",
+      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-26.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -516,7 +516,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-25.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-26.json",
         "encodingFormat": "application/json"
       }
     },

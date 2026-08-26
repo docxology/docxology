@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T19:01:24Z",
+  "generated_at": "2026-08-26T19:41:51Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -378,7 +378,7 @@
       "id": "page:public-source-inventory",
       "type": "report",
       "title": "Public Source Inventory",
-      "url": "/reports/public_source_inventory_2026-08-25.json",
+      "url": "/reports/public_source_inventory_2026-08-26.json",
       "summary": "Paginated public-source inventory for source discovery and claim auditing.",
       "tags": [
         "evidence",

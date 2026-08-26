@@ -19,7 +19,10 @@ generated layer, artifact, deployment, and live verification records agree.
 2. Apply only approved source changes, preserve permanent citation keys, and
    use `pages/BIBLIOGRAPHY.md` as the canonical citation DOI surface. Preserve a
    version/download DOI in `metadata.json` as `artifact_doi` rather than
-   replacing the citation DOI.
+   replacing the citation DOI. Stage each approved dated source report before
+   rendering: deterministic source renderers deliberately resolve only
+   Git-tracked reports, so an untracked intake report cannot silently alter a
+   committed public projection. Leave true post-deploy evidence untracked.
 3. Run `uv run python3 code/orchestrators/regenerate_all.py`, then run it a
    second time and require no tracked-file content changes.  During this
    pre-payload phase, the writer may incorporate only a current
