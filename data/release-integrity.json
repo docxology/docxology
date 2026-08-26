@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-08-13T17:52:47+00:00",
-  "source_commit_at_generation": "9b67556f11a83fbb541770a37675b5fdecfc379e",
+  "source_commit_at_generation": "c3232fed3800345e68ad83349caaabaef558e629",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -26,20 +26,20 @@
     "data/current-counts.json": "cbb15d0560fdfad56d2854b1c3482a355d95c9d9a101f685134ff6303cca5d7b",
     "data/coverage-exceptions.json": "d2f33b35f73488fe1e794dc684cb6a7574c5294d2a8fe750f3bd4b8fb6f18499",
     "data/repository-classification.json": "c93bd5e9e025ce71f9cf73c8e261f8eb5b2d7b9e7af5c3b76127a473aa47f2a3",
-    "data/agent-index.json": "29d04c079cf6dbc08ccb22fa18b003ae7228c095eef29421355e288eb9496206",
+    "data/agent-index.json": "f0e2eb7fd76a299957434e8b716eeceeb1d7678f6e0de29b6b80c50da23dd3b6",
     "data/generated-manifest.json": "c8d8de294e59311ef45a6c56fe2c1dfed07c88edda9c15940adcd9182d11ba4c",
-    "data/pages-artifact-manifest.json": "b6553422d17bff38739ab59091f69863d3161781ab95a064ba8630d310353d60"
+    "data/pages-artifact-manifest.json": "253e9b5877ed427b3e5713dbd85bea14467ce096d97239834f84349a6c144e48"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "9b67556f11a83fbb541770a37675b5fdecfc379e",
+    "source_commit_at_generation": "c3232fed3800345e68ad83349caaabaef558e629",
     "artifact_file_count": 4607,
-    "artifact_bytes": 844038309,
+    "artifact_bytes": 844038364,
     "omitted_paper_image_count": 8886
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "9b67556f11a83fbb541770a37675b5fdecfc379e",
+    "candidate_source_commit": "c3232fed3800345e68ad83349caaabaef558e629",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
