@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-26T01:48:05Z",
-  "source_commit_at_generation": "9ffa80de71624ecaa59ff5c48e97b6649837d9e4",
+  "generated_at": "2026-08-26T01:53:20Z",
+  "source_commit_at_generation": "9e95e1252d0f4d9b7f291c59a2ac406b50587f49",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 843225811,
+    "source_bytes": 843706325,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4607,
-    "artifact_bytes": 844033862
+    "artifact_file_count": 4610,
+    "artifact_bytes": 844514911
   },
   "included_files": [
     {
@@ -15008,6 +15008,11 @@
       "sha256": "13aa6dccbe1ebc76e30ea56b62a4a1a3069d097ca1eb1d328ca4d62552e19b44"
     },
     {
+      "path": "reports/external_links_2026-08-26.json",
+      "bytes": 407220,
+      "sha256": "51fb0207bab71deba5c7ff6d10d8e2baefea2e6dd4c1655e634986d1946fd268"
+    },
+    {
       "path": "reports/external_links_triage_2026-05-13.json",
       "bytes": 9162,
       "sha256": "f815218d7b440b9e63b9a7189326ce2f19becf46f12f00cf126faf3732302268"
@@ -15026,6 +15031,16 @@
       "path": "reports/external_links_triage_2026-05-15.md",
       "bytes": 4093,
       "sha256": "1f302e07d3ba67105eeae341fa983d5730c30e1bfc9d46f2b6a4db11037c765d"
+    },
+    {
+      "path": "reports/external_links_triage_2026-08-26.json",
+      "bytes": 62642,
+      "sha256": "ade2e9167a18e2d5bfba6182e206ec040199d9349b01a1bea89b8990a8a393cd"
+    },
+    {
+      "path": "reports/external_links_triage_2026-08-26.md",
+      "bytes": 10652,
+      "sha256": "da65cf7e4498c7f20af67d2482d77ee50b18391d420482acb0a4748f36ca04aa"
     },
     {
       "path": "reports/gsc_preflight_2026-05-29.json",
