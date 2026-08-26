@@ -22,6 +22,7 @@ from count_consistency import (  # noqa: E402
     parse_paper_folder_count,
     parse_software_catalog_counts,
 )
+from report_paths import latest_source_report  # noqa: E402
 
 
 def _json(path: str) -> dict:
@@ -29,8 +30,7 @@ def _json(path: str) -> dict:
 
 
 def _latest_report(pattern: str) -> Path | None:
-    matches = sorted((REPO_ROOT / "reports").glob(pattern))
-    return matches[-1] if matches else None
+    return latest_source_report(pattern, required=False)
 
 
 def _public_source_snapshot_counts(payload: dict) -> dict:

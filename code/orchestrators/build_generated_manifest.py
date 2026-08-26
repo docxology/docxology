@@ -12,9 +12,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 try:
-    from report_paths import generated_timestamp, latest_report, latest_subdir_file, rel
+    from report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, latest_report, latest_subdir_file, rel
+    from .report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel
 
 JSON_OUT = REPO_ROOT / "data" / "generated-manifest.json"
 MD_OUT = REPO_ROOT / "GENERATED.md"
@@ -22,7 +22,7 @@ MD_OUT = REPO_ROOT / "GENERATED.md"
 
 def _latest_report(pattern: str, _fallback: str) -> str:
     try:
-        return rel(latest_report(pattern))
+        return rel(latest_source_report(pattern))
     except FileNotFoundError:
         raise FileNotFoundError(
             f"build_generated_manifest: no report matches {pattern!r}; refusing a stale fallback link"
@@ -31,7 +31,7 @@ def _latest_report(pattern: str, _fallback: str) -> str:
 
 def _latest_subdir_manifest(prefix: str, fallback: str) -> str:
     try:
-        latest = latest_subdir_file(prefix, "manifest.json")
+        latest = latest_source_subdir_file(prefix, "manifest.json")
     except FileNotFoundError:
         return fallback
     return rel(latest)
@@ -39,7 +39,7 @@ def _latest_subdir_manifest(prefix: str, fallback: str) -> str:
 
 def _latest_subdir_pngs(prefix: str, fallback: str) -> str:
     try:
-        latest = latest_subdir_file(prefix, "manifest.json")
+        latest = latest_source_subdir_file(prefix, "manifest.json")
     except FileNotFoundError:
         return fallback
     return rel(latest.parent / "*.png")

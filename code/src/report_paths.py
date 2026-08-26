@@ -191,6 +191,53 @@ def latest_report(
     raise FileNotFoundError(f"No reports match: {report_dir / pattern}")
 
 
+def is_git_tracked(path: Path, *, repo_root: Path = REPO_ROOT) -> bool:
+    """Return whether a report path belongs to the committed source tree.
+
+    Fresh post-deploy evidence intentionally remains outside the source payload
+    until a later, reviewed source update accepts it.  Source renderers must
+    therefore not make a committed page or manifest depend on an untracked
+    receipt that disappears in a clean CI checkout.
+    """
+    try:
+        relative = path.relative_to(repo_root)
+    except ValueError:
+        return False
+    result = subprocess.run(
+        ["git", "ls-files", "--error-unmatch", "--", relative.as_posix()],
+        cwd=repo_root,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    return result.returncode == 0
+
+
+def latest_source_report(
+    pattern: str,
+    *,
+    required: bool = True,
+    report_dir: Path = REPORT_DIR,
+    repo_root: Path = REPO_ROOT,
+) -> Path | None:
+    """Return the newest matching report path tracked by the source commit.
+
+    This is deliberately distinct from :func:`latest_report`: post-deploy
+    verifiers must inspect the freshest on-disk receipt, while deterministic
+    source renderers must only reference reports available from a clean
+    checkout of the candidate revision.
+    """
+    matches = [
+        path for path in _sorted_path_list(list(report_dir.glob(pattern)))
+        if is_git_tracked(path, repo_root=repo_root)
+    ]
+    if matches:
+        return matches[0]
+    if not required:
+        return None
+    raise FileNotFoundError(f"No tracked reports match: {report_dir / pattern}")
+
+
 def dated_report_path(
     prefix: str,
     suffix: str,
@@ -237,6 +284,40 @@ def latest_subdir_file(
             return None
         raise FileNotFoundError(f"No report directories match: {report_dir / (prefix + '_*')}")
     return candidates[0] / filename
+
+
+def latest_source_subdir_file(
+    prefix: str,
+    filename: str,
+    *,
+    required: bool = True,
+    report_dir: Path = REPORT_DIR,
+    repo_root: Path = REPO_ROOT,
+) -> Path | None:
+    """Return the newest tracked dated report manifest or screenshot path."""
+    nested_root = report_dir / prefix
+    if nested_root.is_dir():
+        candidates = sorted(
+            [path for path in nested_root.iterdir() if path.is_dir()],
+            key=lambda path: path.name,
+            reverse=True,
+        )
+    else:
+        candidates = sorted(
+            [
+                path for path in report_dir.glob(f"{prefix}_*/")
+                if path.is_dir() and path.name.startswith(prefix)
+            ],
+            key=lambda path: path.name,
+            reverse=True,
+        )
+    for candidate in candidates:
+        report = candidate / filename
+        if report.is_file() and is_git_tracked(report, repo_root=repo_root):
+            return report
+    if not required:
+        return None
+    raise FileNotFoundError(f"No tracked report directories match: {report_dir / (prefix + '_*')}")
 
 
 def repo_path(path_like: str | Path) -> Path:

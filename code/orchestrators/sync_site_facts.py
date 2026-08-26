@@ -12,7 +12,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from site_facts import SiteFactsError, counts, generated_date, generated_month_year  # noqa: E402
-from report_paths import latest_subdir_file  # noqa: E402
+from report_paths import latest_source_report, latest_source_subdir_file  # noqa: E402
 TARGETS = [
     REPO_ROOT / "index.html",
     REPO_ROOT / "publications.html",
@@ -41,8 +41,8 @@ MONTH_YEAR_PATTERN = rf"(?:{'|'.join(MONTH_NAMES)})\s+\d{{4}}"
 
 
 def latest_report(prefix: str, suffix: str) -> str | None:
-    paths = sorted((REPO_ROOT / "reports").glob(f"{prefix}_*.{suffix}"))
-    return paths[-1].name if paths else None
+    path = latest_source_report(f"{prefix}_*.{suffix}", required=False)
+    return path.name if path else None
 
 
 def dataset_count(filename: str, key: str) -> int:
@@ -170,7 +170,7 @@ def render(path: Path) -> str:
         # latest set, so these hand-authored links must track that latest date
         # or they rot AND pin the superseded set against pruning.
         for prefix in ("visual-qa", "browser-smoke"):
-            latest = latest_subdir_file(prefix, "manifest.json")
+            latest = latest_source_subdir_file(prefix, "manifest.json", required=False)
             if latest is not None:
                 snap_date = latest.parent.name
                 text = re.sub(

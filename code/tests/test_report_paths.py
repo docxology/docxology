@@ -19,6 +19,8 @@ from report_paths import (  # noqa: E402
     dated_report_path,
     default_latest_file,
     generated_timestamp,
+    latest_source_report,
+    latest_source_subdir_file,
     latest_report,
     latest_subdir_file,
     rel,
@@ -64,6 +66,48 @@ def test_latest_report_raises_when_required_and_missing(fake_reports: Path):
 
 def test_latest_report_returns_none_when_not_required(fake_reports: Path):
     assert latest_report("nothing_*.json", required=False, report_dir=fake_reports) is None
+
+
+def _git(repo: Path, *args: str) -> None:
+    subprocess.run(["git", *args], cwd=repo, check=True, capture_output=True, text=True)
+
+
+def _init_repo(repo: Path) -> None:
+    _git(repo, "init", "-q")
+    _git(repo, "config", "user.email", "test@example.invalid")
+    _git(repo, "config", "user.name", "Report fixture")
+
+
+def test_latest_source_report_ignores_untracked_postdeploy_receipt(tmp_path: Path):
+    _init_repo(tmp_path)
+    reports = tmp_path / "reports"
+    reports.mkdir()
+    committed = reports / "snapshot_2026-08-25.json"
+    committed.write_text("{}", encoding="utf-8")
+    _git(tmp_path, "add", "reports")
+    _git(tmp_path, "commit", "-qm", "source receipt")
+    (reports / "snapshot_2026-08-26.json").write_text("{}", encoding="utf-8")
+
+    assert latest_source_report(
+        "snapshot_*.json", report_dir=reports, repo_root=tmp_path
+    ) == committed
+
+
+def test_latest_source_subdir_file_ignores_untracked_postdeploy_receipt(tmp_path: Path):
+    _init_repo(tmp_path)
+    reports = tmp_path / "reports"
+    committed = reports / "browser" / "2026-08-25" / "manifest.json"
+    committed.parent.mkdir(parents=True)
+    committed.write_text("{}", encoding="utf-8")
+    _git(tmp_path, "add", "reports")
+    _git(tmp_path, "commit", "-qm", "source receipt")
+    fresh = reports / "browser" / "2026-08-26" / "manifest.json"
+    fresh.parent.mkdir(parents=True)
+    fresh.write_text("{}", encoding="utf-8")
+
+    assert latest_source_subdir_file(
+        "browser", "manifest.json", report_dir=reports, repo_root=tmp_path
+    ) == committed
 
 
 def test_dated_report_path_normalizes_suffix(fake_reports: Path):

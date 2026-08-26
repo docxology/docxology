@@ -12,6 +12,9 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "data" / "agent-index.json"
 COUNTS = REPO_ROOT / "data" / "current-counts.json"
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from report_paths import latest_source_report  # noqa: E402
+
 DATASET_PATHS = {
     "works": "data/works.json",
     "software": "data/software.json",
@@ -56,12 +59,13 @@ def load_json(relative: str, default: dict | list | None = None):
 
 
 def latest_report(pattern: str, _fallback: str) -> str:
-    matches = sorted((REPO_ROOT / "reports").glob(pattern))
-    if not matches:
+    try:
+        path = latest_source_report(pattern)
+    except FileNotFoundError:
         raise FileNotFoundError(
-            f"build_agent_index: no report matches {pattern!r}; refusing a stale fallback link"
-        )
-    return "/" + str(matches[-1].relative_to(REPO_ROOT))
+            f"build_agent_index: no tracked report matches {pattern!r}; refusing a stale fallback link"
+        ) from None
+    return "/" + str(path.relative_to(REPO_ROOT))
 
 
 SCHEMAS = {

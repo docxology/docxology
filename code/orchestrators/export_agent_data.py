@@ -63,9 +63,9 @@ def _scholar_claim() -> dict:
     }
 
 try:
-    from report_paths import generated_timestamp, latest_report, rel
+    from report_paths import generated_timestamp, latest_source_report, rel
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, latest_report, rel
+    from .report_paths import generated_timestamp, latest_source_report, rel
 
 
 def parse_software() -> list[dict]:
@@ -90,7 +90,7 @@ def _current_paper_folder_count() -> int:
 
 def _latest_snapshot_payload() -> dict:
     try:
-        path = latest_report("public_source_snapshot_*.json")
+        path = latest_source_report("public_source_snapshot_*.json")
     except FileNotFoundError:
         return {}
     try:
@@ -265,7 +265,7 @@ def _claims() -> list[dict]:
     work_count = int(counts.get("bibliography_works", _current_work_count()))
     folder_count = int(counts.get("paper_folder_docs", _current_paper_folder_count()))
     try:
-        snapshot_source = rel(latest_report("public_source_snapshot_*.json"))
+        snapshot_source = rel(latest_source_report("public_source_snapshot_*.json"))
     except FileNotFoundError:
         snapshot_source = ""
     return [
@@ -466,7 +466,7 @@ def _claims() -> list[dict]:
 
 def _latest_source(pattern: str, _fallback: str) -> str:
     try:
-        latest = latest_report(pattern)
+        latest = latest_source_report(pattern)
     except FileNotFoundError:
         raise FileNotFoundError(
             f"export_agent_data: no report matches {pattern!r}; refusing a stale fallback link"

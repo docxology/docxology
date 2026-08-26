@@ -38,9 +38,9 @@ CREATOR = {
 LICENSE = "https://creativecommons.org/licenses/by/4.0/"
 
 try:
-    from report_paths import latest_report, latest_subdir_file, rel, report_date_string
+    from report_paths import latest_source_report, latest_source_subdir_file, rel, report_date_string
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import latest_report, latest_subdir_file, rel, report_date_string
+    from .report_paths import latest_source_report, latest_source_subdir_file, rel, report_date_string
 
 
 def _latest_rel(pattern: str, _fallback: str) -> str:
@@ -48,7 +48,7 @@ def _latest_rel(pattern: str, _fallback: str) -> str:
     hardcoded path. A silently-fabricated 2026-05 fallback masked real relief.
     """
     try:
-        return rel(latest_report(pattern))
+        return rel(latest_source_report(pattern))
     except FileNotFoundError:
         raise FileNotFoundError(
             f"build_catalog: no report matches {pattern!r}; refusing a stale fallback link"
@@ -57,7 +57,7 @@ def _latest_rel(pattern: str, _fallback: str) -> str:
 
 def _latest_subdir_rel(prefix: str, filename: str, fallback: str) -> str:
     try:
-        latest = latest_subdir_file(prefix, filename)
+        latest = latest_source_subdir_file(prefix, filename)
     except FileNotFoundError:
         return fallback
     return rel(latest)

@@ -13,14 +13,14 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 OUT = REPO_ROOT / "search-index.json"
 
 try:
-    from report_paths import generated_timestamp, latest_report, latest_subdir_file, rel, stable_generated_at
+    from report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, latest_report, latest_subdir_file, rel, stable_generated_at
+    from .report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at
 
 
 def _latest_url(pattern: str, _fallback: str) -> str:
     try:
-        return "/" + rel(latest_report(pattern))
+        return "/" + rel(latest_source_report(pattern))
     except FileNotFoundError:
         raise FileNotFoundError(
             f"build_search_index: no report matches {pattern!r}; refusing a stale fallback link"
@@ -29,7 +29,7 @@ def _latest_url(pattern: str, _fallback: str) -> str:
 
 def _latest_subdir_url(prefix: str, filename: str, _fallback: str) -> str:
     try:
-        latest = latest_subdir_file(prefix, filename)
+        latest = latest_source_subdir_file(prefix, filename)
     except FileNotFoundError:
         raise FileNotFoundError(
             f"build_search_index: no {prefix} report dir {filename!r}; refusing a stale fallback link"

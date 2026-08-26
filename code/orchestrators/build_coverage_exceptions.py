@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from report_paths import latest_report  # noqa: E402
+from report_paths import latest_source_report  # noqa: E402
 
 WORKS = REPO_ROOT / "data" / "works.json"
 OUT = REPO_ROOT / "data" / "coverage-exceptions.json"
@@ -124,8 +124,8 @@ def main() -> None:
         # requiring a brand-new file for the new calendar day.  This matters on
         # local west-coast checkouts and in CI jobs whose date boundary differs
         # from the author's working day.
-        report_json = latest_report("source_coverage_*.json", required=False)
-        report_md = latest_report("source_coverage_*.md", required=False)
+        report_json = latest_source_report("source_coverage_*.json", required=False)
+        report_md = latest_source_report("source_coverage_*.md", required=False)
         if not report_json or report_json.read_text(encoding="utf-8") != json_text:
             stale.append(str((report_json or REPORT_JSON).relative_to(REPO_ROOT)))
         if not report_md or report_md.read_text(encoding="utf-8") != markdown:
