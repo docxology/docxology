@@ -9,6 +9,7 @@ import os
 import re
 import subprocess
 import sys
+import tempfile
 import urllib.parse
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -378,11 +379,11 @@ def release_commit_errors(release_commit: str, head_commit: str) -> list[str]:
     ]
 
 
-def _release_worktree_errors() -> list[str]:
+def _release_worktree_errors(repo_root: Path = REPO_ROOT) -> list[str]:
     """Require clean release source while allowing local output and fresh receipts."""
     result = subprocess.run(
         ["git", "status", "--porcelain=v1", "-z", "--untracked-files=all"],
-        cwd=REPO_ROOT,
+        cwd=repo_root,
         capture_output=True,
         check=False,
     )
@@ -451,10 +452,8 @@ def validate_release_evidence(args: argparse.Namespace) -> None:
     print("Release evidence validation completed (fresh reports and deployed-SHA attestation verified)")
 
 
-def main() -> None:
-    args = parse_args()
-    strict_reports = _strict_reports_enabled(args.strict_reports) or args.release
-
+def run_standard_validation(*, strict_reports: bool) -> None:
+    """Validate the committed source layer and its deterministic cache inputs."""
     run_local_generation_checks()
     run(["python3", "code/orchestrators/build_github_inventory.py", "--check"])
     run(["python3", "code/orchestrators/sync_paired_publications.py", "--check"])
@@ -464,9 +463,9 @@ def main() -> None:
     run(["python3", "code/orchestrators/browser_smoke.py", "--check"])
     run(["python3", "code/orchestrators/verify_live_site.py", "--check"])
     run(["python3", "code/orchestrators/refresh_public_source_inventory.py", "--check"])
-    # A committed pre-deploy review uses the control-tail payload anchor.
-    # Post-deploy attestation instead requires an exact candidate-HEAD review.
-    run(public_source_review_check_args(release=args.release))
+    # The committed source layer uses the control-tail payload anchor.  Exact
+    # candidate-HEAD review provenance is checked separately after deployment.
+    run(public_source_review_check_args(release=False))
     if strict_reports:
         scholar_errors = scholar_source_receipt_errors(REPO_ROOT)
         if scholar_errors:
@@ -487,8 +486,74 @@ def main() -> None:
     from public_integrity import validate_public_files
 
     validate_public_files(REPO_ROOT)
+
+
+def run_isolated_candidate_validation(
+    candidate_commit: str,
+    *,
+    repo_root: Path = REPO_ROOT,
+    validator_command: tuple[str, ...] | None = None,
+) -> None:
+    """Run normal strict validation in a temporary clean worktree at ``HEAD``.
+
+    Post-deploy reports are intentionally created in the real checkout after a
+    candidate is committed.  Several normal generators correctly consume the
+    latest checked-in report cache, so re-running them beside fresh receipts
+    would falsely report source drift.  A detached worktree gives ordinary
+    validation the exact committed source view without weakening either the
+    normal validators or the outer release-evidence checks.
+
+    ``validator_command`` is an internal real-subprocess seam for local Git
+    fixture tests.  Production always invokes this validator without
+    ``--release`` to avoid recursion.
+    """
+    command = validator_command or (
+        sys.executable,
+        "code/orchestrators/validate_repo.py",
+        "--strict-reports",
+    )
+    with tempfile.TemporaryDirectory(prefix="docxology-release-") as temporary_root:
+        candidate_root = Path(temporary_root) / "candidate"
+        subprocess.run(
+            ["git", "worktree", "add", "--detach", str(candidate_root), candidate_commit],
+            cwd=repo_root,
+            check=True,
+        )
+        try:
+            print("Validating committed release source in an isolated worktree")
+            subprocess.run(list(command), cwd=candidate_root, check=True)
+        finally:
+            # This directory was created solely under TemporaryDirectory above;
+            # remove only that exact disposable detached worktree.
+            subprocess.run(
+                ["git", "worktree", "remove", "--force", str(candidate_root)],
+                cwd=repo_root,
+                check=True,
+            )
+
+
+def main() -> None:
+    args = parse_args()
+    strict_reports = _strict_reports_enabled(args.strict_reports)
     if args.release:
+        if args.max_report_age_days < 0:
+            raise SystemExit("--max-report-age-days must be non-negative")
+        release_commit = _resolve_release_commit(args.release_commit)
+        commit_errors = release_commit_errors(release_commit, _head_commit())
+        if commit_errors:
+            raise SystemExit("Release evidence validation failed:\n" + "\n".join(f"  - {error}" for error in commit_errors))
+        worktree_errors = _release_worktree_errors()
+        if worktree_errors:
+            raise SystemExit("Release evidence validation failed:\n" + "\n".join(f"  - {error}" for error in worktree_errors))
+        # This is the one post-deploy renderer whose exact candidate revision
+        # is itself attested.  Keep it in the real checkout so it verifies the
+        # fresh JSON *and* Markdown review pair; all normal source generators
+        # run below in the isolated committed worktree.
+        run(public_source_review_check_args(release=True))
+        run_isolated_candidate_validation(release_commit)
         validate_release_evidence(args)
+    else:
+        run_standard_validation(strict_reports=strict_reports)
     print("Repository validation completed")
 
 

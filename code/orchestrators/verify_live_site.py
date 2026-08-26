@@ -399,33 +399,12 @@ def local_source_commit(repo_root: Path = REPO_ROOT) -> str:
 def local_source_dirty(repo_root: Path = REPO_ROOT) -> bool:
     """Return whether uncommitted source changes can differ from Pages.
 
-    ``_site/`` is an intentionally preserved local Pages build output and is
-    excluded by the release-integrity gate as well.  Treating it as source
-    drift would make a successful deployment look pending whenever a local
-    artifact had been assembled for inspection.
+    Use the same narrow source-versus-evidence distinction as release
+    attestation.  Fresh post-commit browser, link, source, live-site, and
+    attestation receipts describe the deployed candidate; they do not make a
+    Pages deployment pending.  Unrecognized source changes still do.
     """
-    try:
-        proc = subprocess.run(
-            ["git", "status", "--porcelain", "--untracked-files=all"],
-            cwd=repo_root,
-            capture_output=True,
-            text=True,
-            timeout=10,
-            check=False,
-        )
-        if proc.returncode != 0:
-            return False
-        for line in proc.stdout.splitlines():
-            if not line.strip():
-                continue
-            path = line[3:].strip() if len(line) >= 3 else line.strip()
-            path = path.strip('"')
-            if path == "_site" or path.startswith("_site/"):
-                continue
-            return True
-        return False
-    except (OSError, subprocess.SubprocessError):
-        return False
+    return source_worktree_state(repo_root).get("source_worktree_clean") is not True
 
 
 def build_report(
@@ -475,7 +454,8 @@ def build_report(
     pages = pages_status(timeout)
     pages["deployment_run"] = latest_deployment_run(timeout)
     source_commit = local_source_commit(repo_root)
-    source_dirty = local_source_dirty(repo_root)
+    source_state = source_worktree_state(repo_root)
+    source_dirty = source_state.get("source_worktree_clean") is not True
     deployed_commit = pages.get("deployment_run", {}).get("head_sha", "")
     deployment_sha_mismatch = bool(source_commit and deployed_commit and source_commit != deployed_commit)
     deployment_pending = deployment_sha_mismatch or source_dirty
@@ -505,7 +485,7 @@ def build_report(
         "deployment": pages.get("deployment_run", {}),
         "source_commit": source_commit,
         "source_dirty": source_dirty,
-        **source_worktree_state(repo_root),
+        **source_state,
         "deployment_sha_mismatch": deployment_sha_mismatch,
         "deployment_pending_reason": (
             "local source is dirty or latest successful Pages deployment is for a different source commit"

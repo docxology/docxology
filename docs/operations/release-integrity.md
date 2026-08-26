@@ -26,15 +26,22 @@ generated layer, artifact, deployment, and live verification records agree.
 5. Run `uv run --extra browser-qa python3 code/orchestrators/browser_smoke.py`,
    the progressive `browser_qa.py` suite with the cached Playwright runtime,
    visual QA, and `uv run python3 code/orchestrators/gsc_followup_preflight.py`
-   after SEO or sitemap changes. For a release, invoke visual QA with `--reviewed-by <reviewer>`
-   only after inspecting its fresh screenshots; the report records PNG hashes and
-   the reviewer/time, and an unreviewed visual manifest cannot be attested.
+   after SEO or sitemap changes. Visual QA creates a pending capture; it cannot
+   be reviewer-stamped while capturing.
 6. Verify the deployed site with `verify_live_site.py` after the Pages deployment
    for the source commit being released; require all checked routes, current
    JSON-level counts, Pages status `built`, and a successful deployment run.
 7. After Pages reports the candidate SHA as built, re-run the affected browser,
-   visual, link, and live-site evidence against that exact SHA. In the clean
-   candidate checkout, re-render the public-source review with `uv run python3
+   visual, raw-link, and live-site evidence against that exact SHA. Inspect the
+   pending `reports/visual-qa/<date>/*.png` set, then approve that same set with
+   `uv run --extra browser-qa python3 code/orchestrators/visual_qa.py
+   --approve-existing --reviewed-by <reviewer>`; approval verifies the recorded
+   PNG hashes and coverage before it changes only the review record. A confirmed
+   external-link 404 blocks attestation; bot-protected, rate-limited, and
+   transient results remain explicit review warnings. Do not regenerate the
+   external-link triage derivative at this point: it is a pre-deploy cache/review
+   queue, while the exact fresh raw-link report is the attested evidence. In the
+   clean candidate checkout, re-render the public-source review with `uv run python3
    code/orchestrators/build_public_source_review.py --exact-source-revision`,
    then create a receipt with `uv run python3
    code/orchestrators/attest_release.py --apply --commit <deployment-sha>`, then
@@ -56,7 +63,12 @@ The final release gate permits only `_site/` and the narrowly defined fresh
 post-commit evidence/attestation paths to appear in the checkout. Those files
 are evidence generated for an already committed candidate, not source changes;
 every other tracked or untracked source path still fails the clean-worktree
-check.
+check. To preserve normal generator semantics, `validate_repo.py --release`
+runs its full strict source validation in a disposable detached worktree at the
+exact committed candidate, then validates fresh deployed-SHA receipts only in
+the real checkout. This is isolation, not a path-based bypass: the outer
+worktree still rejects every non-evidence change and the attestation still
+hashes and validates each fresh receipt.
 
 The Pages manifest is deliberately non-self-referential: after committing the
 payload/generator candidate, regenerate the control artifacts and commit that

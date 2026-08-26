@@ -298,6 +298,24 @@ def test_collect_release_evidence_rejects_stale_wrong_revision_and_failed_report
     assert any("browser smoke failed semantic validation" in error for error in errors)
 
 
+def test_collect_release_evidence_rejects_confirmed_link_404_but_not_bot_protection(tmp_path):
+    _write_complete_evidence(tmp_path)
+    links = _path_for(tmp_path, next(item for item in RELEASE_EVIDENCE if item.name == "external-link report"))
+    payload = json.loads(links.read_text(encoding="utf-8"))
+    payload["results"][0].update({"ok": False, "status": 403})
+    payload["ok"] -= 1
+    payload["warnings"] += 1
+    _write_json(links, payload)
+
+    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    assert errors == []
+
+    payload["results"][0]["status"] = 404
+    _write_json(links, payload)
+    _receipts, errors = collect_release_evidence(tmp_path, COMMIT, max_age_days=30, now=NOW)
+    assert any("confirmed 404s requiring replacement" in error for error in errors)
+
+
 def test_collect_release_evidence_rejects_a_control_tail_review_for_deployed_sha(tmp_path):
     """The normal review anchor cannot stand in for post-deploy exact evidence."""
     _write_complete_evidence(tmp_path)

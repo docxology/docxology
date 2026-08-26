@@ -432,6 +432,16 @@ def _report_result_errors(
         observed_warnings = len(results) - observed_ok
         if payload.get("ok") != observed_ok or payload.get("warnings") != observed_warnings:
             return ["external-link report summary does not match results"]
+        confirmed_404s = [
+            str(item.get("url"))
+            for item in results
+            if str(item.get("status") or "") == "404"
+        ]
+        if confirmed_404s:
+            return [
+                "external-link report has confirmed 404s requiring replacement: "
+                + ", ".join(confirmed_404s[:5])
+            ]
         return []
 
     if requirement.name == "browser smoke":

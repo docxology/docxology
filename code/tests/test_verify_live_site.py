@@ -130,11 +130,14 @@ def test_pages_built_is_not_deployment_pending():
         (["_site"], False),
         (["_site/index.html"], False),
         (["_site/art/name with spaces.json"], False),
+        (["reports/external_links_2026-08-25.json"], False),
+        (["reports/browser-smoke/2026-08-25/manifest.json"], False),
         (["README.md"], True),
+        (["reports/external_links_triage_2026-08-25.json"], True),
         (["_site/index.html", "README.md"], True),
     ],
 )
-def test_local_source_dirty_ignores_preserved_site_output(tmp_path, untracked_paths, expected):
+def test_local_source_dirty_uses_the_release_evidence_allowlist(tmp_path, untracked_paths, expected):
     initialized = subprocess.run(
         ["git", "init", "--quiet"],
         cwd=tmp_path,

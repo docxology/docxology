@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import subprocess
 import sys
 
 import pytest
@@ -12,6 +13,28 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 import validate_repo as vr  # noqa: E402
+from report_paths import source_worktree_state  # noqa: E402
+
+
+def _git(repo: Path, *args: str) -> str:
+    """Run one real Git fixture command and return its stdout."""
+    result = subprocess.run(
+        ["git", *args],
+        cwd=repo,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return result.stdout
+
+
+def _fixture_repo(tmp_path: Path) -> Path:
+    repo = tmp_path / "candidate-repo"
+    repo.mkdir()
+    _git(repo, "init", "-q")
+    _git(repo, "config", "user.email", "test@example.invalid")
+    _git(repo, "config", "user.name", "Release fixture")
+    return repo
 
 
 def test_validation_scope_excludes_dependency_and_cache_trees_but_keeps_docs():
@@ -41,6 +64,105 @@ def test_public_source_review_provenance_mode_matches_validation_tier():
         "--check",
         "--exact-source-revision",
     ]
+
+
+def test_release_worktree_rejects_unrecognized_changes_but_allows_declared_receipts(tmp_path: Path):
+    repo = _fixture_repo(tmp_path)
+    (repo / "source.txt").write_text("committed\n", encoding="utf-8")
+    _git(repo, "add", "source.txt")
+    _git(repo, "commit", "-qm", "fixture")
+
+    reports = repo / "reports"
+    reports.mkdir()
+    (reports / "external_links_2026-08-25.json").write_text("{}\n", encoding="utf-8")
+    assert vr._release_worktree_errors(repo) == []
+
+    (repo / "README.md").write_text("unrecognized source change\n", encoding="utf-8")
+    errors = vr._release_worktree_errors(repo)
+    assert errors == ["release source worktree is not clean: README.md"]
+
+
+def test_all_declared_postdeploy_receipts_are_clean_but_triage_is_source_drift(tmp_path: Path):
+    repo = _fixture_repo(tmp_path)
+    (repo / "source.txt").write_text("committed\n", encoding="utf-8")
+    _git(repo, "add", "source.txt")
+    _git(repo, "commit", "-qm", "fixture")
+
+    evidence_paths = [
+        "reports/public_source_snapshot_2026-08-26.json",
+        "reports/public_source_review_2026-08-26.json",
+        "reports/public_source_review_2026-08-26.md",
+        "reports/external_links_2026-08-26.json",
+        "reports/browser-smoke/2026-08-26/manifest.json",
+        "reports/browser-smoke/2026-08-26/home.png",
+        "reports/browser-qa/2026-08-26/manifest.json",
+        "reports/visual-qa/2026-08-26/manifest.json",
+        "reports/visual-qa/2026-08-26/home.png",
+        "reports/live_site_verification_2026-08-26.json",
+        "reports/deployment-attestations/" + "a" * 40 + ".json",
+    ]
+    for relative in evidence_paths:
+        path = repo / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("receipt\n", encoding="utf-8")
+
+    assert source_worktree_state(repo)["source_worktree_clean"] is True
+    assert vr._release_worktree_errors(repo) == []
+
+    triage = repo / "reports" / "external_links_triage_2026-08-26.json"
+    triage.write_text("source derivative\n", encoding="utf-8")
+    state = source_worktree_state(repo)
+    assert state["source_worktree_clean"] is False
+    assert state["source_worktree_dirty_paths"] == [
+        "reports/external_links_triage_2026-08-26.json"
+    ]
+    assert vr._release_worktree_errors(repo) == [
+        "release source worktree is not clean: reports/external_links_triage_2026-08-26.json"
+    ]
+
+
+def test_isolated_candidate_validation_reads_committed_source_not_fresh_receipts(tmp_path: Path):
+    """A real detached worktree must see HEAD, including same-path report bytes."""
+    repo = _fixture_repo(tmp_path)
+    report = repo / "reports" / "external_links_2026-08-25.json"
+    report.parent.mkdir()
+    (repo / "source.txt").write_text("committed source\n", encoding="utf-8")
+    report.write_text("committed receipt\n", encoding="utf-8")
+    (repo / "verify_candidate.py").write_text(
+        "from pathlib import Path\n"
+        "import subprocess\n"
+        "assert Path('source.txt').read_text(encoding='utf-8') == 'committed source\\n'\n"
+        "assert Path('reports/external_links_2026-08-25.json').read_text(encoding='utf-8') == 'committed receipt\\n'\n"
+        "assert sorted(Path('reports').glob('external_links_*.json'))[-1].name == 'external_links_2026-08-25.json'\n"
+        "assert not Path('reports/browser-smoke/2026-08-26/manifest.json').exists()\n"
+        "assert subprocess.run(['git', 'status', '--porcelain'], check=True, capture_output=True, text=True).stdout == ''\n",
+        encoding="utf-8",
+    )
+    _git(repo, "add", "source.txt", "reports", "verify_candidate.py")
+    _git(repo, "commit", "-qm", "candidate")
+    commit = _git(repo, "rev-parse", "HEAD").strip()
+
+    # The report has the same pathname as its committed baseline, while a
+    # newer raw report and browser receipt are fresh untracked post-deploy
+    # artifacts. A normal latest-report reader must still see the committed
+    # baseline in the detached candidate worktree.
+    report.write_text("fresh receipt\n", encoding="utf-8")
+    (repo / "reports" / "external_links_2026-08-26.json").write_text(
+        "newer fresh receipt\n", encoding="utf-8"
+    )
+    fresh_browser = repo / "reports" / "browser-smoke" / "2026-08-26" / "manifest.json"
+    fresh_browser.parent.mkdir(parents=True)
+    fresh_browser.write_text("{}\n", encoding="utf-8")
+
+    vr.run_isolated_candidate_validation(
+        commit,
+        repo_root=repo,
+        validator_command=(sys.executable, "verify_candidate.py"),
+    )
+
+    assert report.read_text(encoding="utf-8") == "fresh receipt\n"
+    assert fresh_browser.exists()
+    assert _git(repo, "worktree", "list", "--porcelain").count("worktree ") == 1
 
 
 def test_iter_local_links_ignores_fenced_markdown_examples():
