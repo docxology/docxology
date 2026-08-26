@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-26T00:27:15Z",
+  "generated_at": "2026-08-26T00:29:24Z",
   "source_commit_at_generation": "9c073dbd9ae8e4864f4ba91b856d44b3f39eb49c",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
@@ -23,8 +23,8 @@
     "source_bytes": 843210421,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4604,
-    "artifact_bytes": 844018079
+    "artifact_file_count": 4606,
+    "artifact_bytes": 844018307
   },
   "included_files": [
     {
@@ -22964,6 +22964,14 @@
     },
     {
       "path": "reports/public_source_review_2026-08-25.md",
+      "role": "public control metadata"
+    },
+    {
+      "path": "reports/public_source_review_2026-08-26.json",
+      "role": "public control metadata"
+    },
+    {
+      "path": "reports/public_source_review_2026-08-26.md",
       "role": "public control metadata"
     }
   ],
