@@ -260,13 +260,19 @@ def _recorded_growth_report(existing: dict | None) -> Path | None:
     return candidate
 
 
-def _growth_report_for_manifest(existing: dict | None, *, include_pending_growth: bool) -> Path:
+def _growth_report_for_manifest(
+    existing: dict | None,
+    *,
+    include_pending_growth: bool,
+    current_growth_report: Path | None = None,
+) -> Path:
     """Select the receipt that a write or no-write manifest pass must describe."""
     if not include_pending_growth:
         recorded = _recorded_growth_report(existing)
         if recorded is not None:
             return recorded
-    return GROWTH_REPORT.relative_to(REPO_ROOT)
+    growth_report = current_growth_report or GROWTH_REPORT
+    return growth_report.relative_to(REPO_ROOT)
 
 
 def _manifest_payload(existing: dict | None = None, *, include_pending_growth: bool = True) -> dict:

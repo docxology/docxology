@@ -101,43 +101,37 @@ def test_growth_report_contract_is_compared_by_manifest_validation():
     assert bpa.manifest_drift_fields(stale, expected) == ["growth_report"]
 
 
-def test_manifest_check_preserves_recorded_growth_receipt_after_utc_rollover(monkeypatch):
+def test_manifest_check_preserves_recorded_growth_receipt_after_utc_rollover():
     """A day change alone must not make unchanged Pages source look stale."""
-    monkeypatch.setattr(
-        bpa,
-        "GROWTH_REPORT",
-        bpa.REPO_ROOT / "reports" / "pages_artifact_growth_2026-08-26.json",
-    )
+    current_growth_report = bpa.REPO_ROOT / "reports" / "pages_artifact_growth_2026-08-26.json"
     existing = {"growth_report": "reports/pages_artifact_growth_2026-08-25.json"}
-
-    assert bpa._growth_report_for_manifest(existing, include_pending_growth=False) == Path(
-        "reports/pages_artifact_growth_2026-08-25.json"
-    )
-
-
-def test_manifest_check_requires_current_receipt_when_one_exists(monkeypatch):
-    """A same-day write remains detectable instead of being silently ignored."""
-    monkeypatch.setattr(
-        bpa,
-        "GROWTH_REPORT",
-        bpa.REPO_ROOT / "reports" / "pages_artifact_growth_2026-08-26.json",
-    )
-    existing = {"growth_report": "reports/pages_artifact_growth_2026-08-25.json"}
-
-    assert bpa._growth_report_for_manifest(existing, include_pending_growth=True) == Path(
-        "reports/pages_artifact_growth_2026-08-26.json"
-    )
-
-
-def test_manifest_check_rejects_malformed_recorded_growth_receipt(monkeypatch):
-    monkeypatch.setattr(
-        bpa,
-        "GROWTH_REPORT",
-        bpa.REPO_ROOT / "reports" / "pages_artifact_growth_2026-08-26.json",
-    )
 
     assert bpa._growth_report_for_manifest(
-        {"growth_report": "reports/../../outside.json"}, include_pending_growth=False
+        existing,
+        include_pending_growth=False,
+        current_growth_report=current_growth_report,
+    ) == Path("reports/pages_artifact_growth_2026-08-25.json")
+
+
+def test_manifest_check_requires_current_receipt_when_one_exists():
+    """A same-day write remains detectable instead of being silently ignored."""
+    current_growth_report = bpa.REPO_ROOT / "reports" / "pages_artifact_growth_2026-08-26.json"
+    existing = {"growth_report": "reports/pages_artifact_growth_2026-08-25.json"}
+
+    assert bpa._growth_report_for_manifest(
+        existing,
+        include_pending_growth=True,
+        current_growth_report=current_growth_report,
+    ) == Path("reports/pages_artifact_growth_2026-08-26.json")
+
+
+def test_manifest_check_rejects_malformed_recorded_growth_receipt():
+    current_growth_report = bpa.REPO_ROOT / "reports" / "pages_artifact_growth_2026-08-26.json"
+
+    assert bpa._growth_report_for_manifest(
+        {"growth_report": "reports/../../outside.json"},
+        include_pending_growth=False,
+        current_growth_report=current_growth_report,
     ) == Path("reports/pages_artifact_growth_2026-08-26.json")
 
 
