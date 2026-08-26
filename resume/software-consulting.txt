@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-08-25T22:26:33Z
+Generated: 2026-08-26T01:32:23Z
 
-Current public metrics: 209 curated works; 148 catalogued software repositories (107 owned + 41 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 202 docxology + 43 AII public repositories (158 primary, 87 forks).
+Current public metrics: 209 curated works; 145 catalogued software repositories (107 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 202 docxology + 43 AII public repositories (158 primary, 87 forks).
 
 SUMMARY
 -------
@@ -30,7 +30,7 @@ EXPERIENCE
 ----------
 2021-ongoing | Community Organization | Active Inference Institute | Co-founder, Participant, Officer, President, Treasurer
   - Co-founded the Active Inference Institute; current President and Treasurer.
-  - Sources: AII officers: https://www.activeinference.institute/officers; AII:
+  - Sources: AII officers: https://activeinference.institute/structure/officers/; AII:
   https://activeinference.org/
 2019-ongoing | Community Organization | COGSEC | Researcher
   - Research facilitation and participation on initiatives related to cognitive security.
@@ -203,8 +203,8 @@ WORKS AND PUBLICATIONS (202)
 [154] 2026 | Book | The Template Textbook | Zenodo | 10.5281/zenodo.20533125
 [155] 2016 | Paper | Lessons from the colony | Science | https://www.science.org/doi/10.1126/science.352.6288.886
 [156] 2016 | Paper | Full speed ahead to the City on the Hill | Science | 10.1126/science.aag1520
-[157] 2021 | Paper | Disinforge | Science | https://www.science.org/doi/10.1126/science.371.6524.22
-[158] 2021 | Paper | Defining events: 2020 in hindsight | Science | 10.1126/science.371.6524.22
+[157] 2021 | Paper | Disinforge | Science | https://www.science.org/doi/10.1126/science.abg0904
+[158] 2021 | Paper | Defining events: 2020 in hindsight | Science | 10.1126/science.abg0904
 [159] 2022 | Paper | Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling | International Workshop on Active Inference | 10.1007/978-3-031-28719-0_10
 [160] 2024 | Paper | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | arXiv | 10.48550/arXiv.2408.15982
 [161] 2021 | Paper | Knowledge Management Archipelago | Zenodo | 10.5281/zenodo.5034808
@@ -259,7 +259,7 @@ WORKS AND PUBLICATIONS (202)
 [211] 2026 | Paper | Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract | Zenodo | 10.5281/zenodo.21865643
 [212] 2026 | Paper | docxplus — the Intelligent Document Container | Zenodo | 10.5281/zenodo.21983948
 
-SOFTWARE (148)
+SOFTWARE (145)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -394,7 +394,6 @@ ActiveInferenceInstitute/pymcp | Python | https://github.com/ActiveInferenceInst
 ActiveInferenceInstitute/policy_entanglement | Python | https://github.com/ActiveInferenceInstitute/policy_entanglement | Policy Entanglement in Active Inference v1.0.0 · Zenodo | paper: papers/2026_PolicyEntanglementActive/ | zenodo: https://doi.org/10.5281/zenodo.20418904
 ActiveInferenceInstitute/GEN24 | Jupyter | https://github.com/ActiveInferenceInstitute/GEN24 | GEN-24 working project — collaborative generative systems research from the 2024 active inference cohort
 ActiveInferenceInstitute/NoOrg | HTML | https://github.com/ActiveInferenceInstitute/NoOrg | NoOrg is a Real Org — experimental organizational infrastructure and governance frameworks for decentralized scientific institutions
-ActiveInferenceInstitute/ultralink | unspecified | https://github.com/ActiveInferenceInstitute/ultralink | UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats
 ActiveInferenceInstitute/ActiveInferenceImplementations | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations | Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles
 ActiveInferenceInstitute/ATLAS | Python | https://github.com/ActiveInferenceInstitute/ATLAS | Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces
 ActiveInferenceInstitute/COGANT | Python | https://github.com/ActiveInferenceInstitute/COGANT | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · · Zenodo · Zenodo | paper: papers/2026_COGANT/ | zenodo: https://doi.org/10.5281/zenodo.20705351
@@ -402,9 +401,7 @@ ActiveInferenceInstitute/on_policy_distillation | Python | https://github.com/Ac
 ActiveInferenceInstitute/Bots | unspecified | https://github.com/ActiveInferenceInstitute/Bots | Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms
 ActiveInferenceInstitute/Garden-of-Iris | Python | https://github.com/ActiveInferenceInstitute/Garden-of-Iris | Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics
 ActiveInferenceInstitute/gen25 | unspecified | https://github.com/ActiveInferenceInstitute/gen25 | GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort
-ActiveInferenceInstitute/gnn | unspecified | https://github.com/ActiveInferenceInstitute/gnn | Generalized Notation Notation v2 — next-generation GNN specification with extended model classes and improved toolchain
 ActiveInferenceInstitute/ISSS | Python | https://github.com/ActiveInferenceInstitute/ISSS | International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science
-ActiveInferenceInstitute/topp | TeX | https://github.com/ActiveInferenceInstitute/topp | The Open Problems Project — curated registry of open scientific problems in Active Inference and the free energy principle
 ActiveInferenceInstitute/active_fractal_rabbit | Python | https://github.com/ActiveInferenceInstitute/active_fractal_rabbit | Active Inference for FractalRabbit · Zenodo | paper: papers/2026_ActiveFractalRabbit/ | zenodo: https://doi.org/10.5281/zenodo.21330636
 ActiveInferenceInstitute/Active_Fedference | Python | https://github.com/ActiveInferenceInstitute/Active_Fedference | Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus · · Zenodo | paper: papers/2026_RobustBeliefSharing/ | zenodo: https://doi.org/10.5281/zenodo.21864003
 ActiveInferenceInstitute/Active_Skillference | Python | https://github.com/ActiveInferenceInstitute/Active_Skillference | Validated prerequisite graph, computational claim registry, and SkillTree delivery contract for Active Inference · · Zenodo | paper: papers/2026_ActiveSkillference/ | zenodo: https://doi.org/10.5281/zenodo.21865643

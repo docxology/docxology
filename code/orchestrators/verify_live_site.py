@@ -512,6 +512,14 @@ def main(
     """Run the CLI with production defaults or explicit local test paths."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Validate the cached report exists and is parseable")
+    parser.add_argument(
+        "--allow-source-count-drift",
+        action="store_true",
+        help=(
+            "Permit a cached pre-deploy report to have different local count inputs; "
+            "use only for offline candidate validation."
+        ),
+    )
     parser.add_argument("--timeout", type=int, default=20)
     args = parser.parse_args(argv)
     resolved_report_dir = report_dir or repo_root / "reports"
@@ -523,7 +531,8 @@ def main(
         if out is None or not out.exists():
             raise SystemExit("Missing live-site verification report")
         payload = json.loads(out.read_text(encoding="utf-8"))
-        if not count_fingerprint_matches(payload.get("expected_counts", {}), current_fingerprint):
+        fingerprint_matches = count_fingerprint_matches(payload.get("expected_counts", {}), current_fingerprint)
+        if not fingerprint_matches and not args.allow_source_count_drift:
             raise SystemExit(
                 f"Live-site verification counts snapshot mismatch: expected={current_fingerprint} got={payload.get('expected_counts')}"
             )
@@ -544,6 +553,12 @@ def main(
                 f"({payload.get('passing')}/{payload.get('checked_urls')} passing; "
                 f"deployment pending for {len(payload.get('deployment_pending_paths', []))} route(s) or live markers; "
                 "live markers pending deploy)"
+            )
+            return
+        if not fingerprint_matches:
+            print(
+                "checked cached live-site verification report with pre-deploy count drift "
+                f"({payload['passing']}/{payload['checked_urls']} passing)"
             )
             return
         print(f"checked live-site verification report ({payload['passing']}/{payload['checked_urls']} passing)")

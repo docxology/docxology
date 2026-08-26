@@ -2,6 +2,12 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-08-26
+
+- **Release-blocking link repair:** corrected the canonical Science DOI for *Defining events: 2020 in hindsight*, removed three verified-dead AII software aliases rather than inventing replacement ownership, and migrated moved AII governance/program links to their live canonical routes.
+- **Bounded link-gate coverage:** external-link validation now scans every root-level public HTML route, while excluding only URLs used as CSP source expressions; real YouTube embed paths remain in scope. This exposed and corrected three additional generated domain/pillar links before publication.
+- **Review discipline:** current AII governance, advisory-board, and textbook-program wording remains explicitly queued for human review rather than silently changing time-sensitive profile claims.
+
 ## 2026-08-25
 
 - **Public-main release-integrity controls:** established a source-payload versus control-tail provenance model so deterministic manifests, artifact budgets, and review records can be checked without masking source drift. Publication, software, paper-document, pillar-page, redirect, and generation-plan checks now fail on stale source-rendered output.

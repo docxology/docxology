@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "107 original repositories and 41 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "107 original repositories and 38 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -2001,17 +2001,6 @@
         },
         {
             "@type": "SoftwareSourceCode",
-            "@id": "https://github.com/ActiveInferenceInstitute/ultralink#software",
-            "name": "ultralink",
-            "description": "UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats",
-            "codeRepository": "https://github.com/ActiveInferenceInstitute/ultralink",
-            "author": {
-                "@type": "Person",
-                "name": "Daniel Ari Friedman"
-            }
-        },
-        {
-            "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations#software",
             "name": "ActiveInferenceImplementations",
             "description": "Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles",
@@ -2114,17 +2103,6 @@
         },
         {
             "@type": "SoftwareSourceCode",
-            "@id": "https://github.com/ActiveInferenceInstitute/gnn#software",
-            "name": "gnn",
-            "description": "Generalized Notation Notation v2 — next-generation GNN specification with extended model classes and improved toolchain",
-            "codeRepository": "https://github.com/ActiveInferenceInstitute/gnn",
-            "author": {
-                "@type": "Person",
-                "name": "Daniel Ari Friedman"
-            }
-        },
-        {
-            "@type": "SoftwareSourceCode",
             "@id": "https://github.com/ActiveInferenceInstitute/ISSS#software",
             "name": "ISSS",
             "description": "International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science",
@@ -2137,18 +2115,6 @@
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2024-03-22T16:46:52Z",
             "dateModified": "2026-08-02T23:45:05Z"
-        },
-        {
-            "@type": "SoftwareSourceCode",
-            "@id": "https://github.com/ActiveInferenceInstitute/topp#software",
-            "name": "topp",
-            "description": "The Open Problems Project — curated registry of open scientific problems in Active Inference and the free energy principle",
-            "codeRepository": "https://github.com/ActiveInferenceInstitute/topp",
-            "author": {
-                "@type": "Person",
-                "name": "Daniel Ari Friedman"
-            },
-            "programmingLanguage": "TeX"
         },
         {
             "@type": "SoftwareSourceCode",

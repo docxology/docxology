@@ -6571,8 +6571,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2021Disinforge157.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2021Disinforge157.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2021Disinforge157.html",
-            "sameAs": "https://www.science.org/doi/10.1126/science.371.6524.22",
-            "citation": "Friedman, Daniel Ari. 2021. Disinforge. Science. URL: https://www.science.org/doi/10.1126/science.371.6524.22."
+            "sameAs": "https://www.science.org/doi/10.1126/science.abg0904",
+            "citation": "Friedman, Daniel Ari. 2021. Disinforge. Science. URL: https://www.science.org/doi/10.1126/science.abg0904."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6601,11 +6601,11 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.1126/science.371.6524.22",
-                "url": "https://doi.org/10.1126/science.371.6524.22"
+                "value": "10.1126/science.abg0904",
+                "url": "https://doi.org/10.1126/science.abg0904"
             },
-            "sameAs": "https://doi.org/10.1126/science.371.6524.22",
-            "citation": "Friedman, Daniel Ari. 2021. Defining events: 2020 in hindsight. Science. DOI: 10.1126/science.371.6524.22. URL: https://doi.org/10.1126/science.371.6524.22."
+            "sameAs": "https://doi.org/10.1126/science.abg0904",
+            "citation": "Friedman, Daniel Ari. 2021. Defining events: 2020 in hindsight. Science. DOI: 10.1126/science.abg0904. URL: https://doi.org/10.1126/science.abg0904."
         },
         {
             "@type": "ScholarlyArticle",

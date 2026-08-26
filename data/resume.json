@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T22:26:33Z",
+  "generated_at": "2026-08-26T01:32:23Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -35,9 +35,9 @@
   },
   "metrics": {
     "works": 209,
-    "software_catalogued": 148,
+    "software_catalogued": 145,
     "owned_software_catalogued": 107,
-    "aii_software_catalogued": 41,
+    "aii_software_catalogued": 38,
     "google_scholar": {
       "citations": 777,
       "h_index": 15,
@@ -71,7 +71,7 @@
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 41 AII repositories with docxology contributions."
+      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 38 AII repositories with docxology contributions."
     },
     "github_inventory": {
       "generated_at": "2026-08-19T21:58:17Z",
@@ -88,22 +88,22 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "c8ae4eb868767738b24fde20c0a40ad6b2b268a2391cb2d19c10d06381959a07",
+      "sha256": "ab692c0a71f7fe2534f490d8e8a6f5baed7299b370a6830631ba8d03bc58dbe1",
       "files": [
         {
           "path": "resume/source.json",
-          "bytes": 58750,
-          "sha256": "9e2dd487986d64d10ab3b96fa20d8d8fb86b9196b75cb92149672d25f058c0a2"
+          "bytes": 58757,
+          "sha256": "e98f03c2c58a6063b6790c6ccc3cbfc976897e3fbb8dfd175ec3f8d2730f1c4c"
         },
         {
           "path": "data/works.json",
-          "bytes": 168647,
-          "sha256": "dcc9b9a2cfe86f8cfa616f01e0124a289e811e6c85b690ade7b22d54f8d99df9"
+          "bytes": 168635,
+          "sha256": "b0b496c6399863ef33978356b6ec5ce80e820d4f13746ae7156a0614e9dc76ac"
         },
         {
           "path": "data/software.json",
-          "bytes": 73077,
-          "sha256": "d9b1dbdec14ef0e4379d5ac863c5c8231e18776aecd8f6603c43732bcb3cfde6"
+          "bytes": 71663,
+          "sha256": "75bfdf81cb40272f5106632f3240bac2bcac9dc05ae989d42da95f605df5bb68"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -112,8 +112,8 @@
         },
         {
           "path": "data/claims.json",
-          "bytes": 11914,
-          "sha256": "fa879eb007ef4b8d695257187b6f23674607b4ffde5c97af59b4804c77e44b22"
+          "bytes": 11941,
+          "sha256": "e0338070cfa8bc31a70d6469faceb7e77c2eb7cabb579529f0fe59d6ed9c9cd1"
         },
         {
           "path": "data/github-repositories.json",
@@ -279,7 +279,7 @@
       "links": [
         {
           "label": "AII officers",
-          "url": "https://www.activeinference.institute/officers"
+          "url": "https://activeinference.institute/structure/officers/"
         },
         {
           "label": "AII",
@@ -6242,7 +6242,7 @@
       "type": "Paper",
       "title": "Disinforge",
       "venue": "Science",
-      "url": "https://www.science.org/doi/10.1126/science.371.6524.22",
+      "url": "https://www.science.org/doi/10.1126/science.abg0904",
       "doi": "",
       "docs_path": "",
       "has_paper_folder": false,
@@ -6263,8 +6263,8 @@
       "type": "Paper",
       "title": "Defining events: 2020 in hindsight",
       "venue": "Science",
-      "url": "https://doi.org/10.1126/science.371.6524.22",
-      "doi": "10.1126/science.371.6524.22",
+      "url": "https://doi.org/10.1126/science.abg0904",
+      "doi": "10.1126/science.abg0904",
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
@@ -9095,18 +9095,6 @@
       "zenodo_url": ""
     },
     {
-      "name": "ultralink",
-      "url": "https://github.com/ActiveInferenceInstitute/ultralink",
-      "owner": "ActiveInferenceInstitute",
-      "catalog_section": "active-inference-institute",
-      "description": "UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats",
-      "language": "",
-      "stars": 1,
-      "updated_or_year": "2025",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
       "name": "ActiveInferenceImplementations",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations",
       "owner": "ActiveInferenceInstitute",
@@ -9191,36 +9179,12 @@
       "zenodo_url": ""
     },
     {
-      "name": "gnn",
-      "url": "https://github.com/ActiveInferenceInstitute/gnn",
-      "owner": "ActiveInferenceInstitute",
-      "catalog_section": "active-inference-institute",
-      "description": "Generalized Notation Notation v2 — next-generation GNN specification with extended model classes and improved toolchain",
-      "language": "",
-      "stars": 0,
-      "updated_or_year": "2024",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
       "name": "ISSS",
       "url": "https://github.com/ActiveInferenceInstitute/ISSS",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science",
       "language": "Python",
-      "stars": 0,
-      "updated_or_year": "2024",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
-      "name": "topp",
-      "url": "https://github.com/ActiveInferenceInstitute/topp",
-      "owner": "ActiveInferenceInstitute",
-      "catalog_section": "active-inference-institute",
-      "description": "The Open Problems Project — curated registry of open scientific problems in Active Inference and the free energy principle",
-      "language": "TeX",
       "stars": 0,
       "updated_or_year": "2024",
       "paper_path": "",
@@ -9285,7 +9249,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-25T18:37:58+00:00",
+      "checked_at": "2026-08-26T01:32:23+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9300,7 +9264,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-25T18:37:58+00:00",
+      "checked_at": "2026-08-26T01:32:23+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9332,7 +9296,7 @@
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 41 AII repositories with docxology contributions."
+      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 38 AII repositories with docxology contributions."
     },
     {
       "id": "orcid-canonical-identifier",
@@ -9415,7 +9379,7 @@
       "claim": "Active Inference Institute officers: Daniel Friedman is President and Treasurer; Alexandra Mikhailova is Vice-President and Secretary (2025-ongoing). V. Bleu Knight was Secretary 2022-2024 and is a current member of the Board of Directors. The Institute is a 501(c)(3) public charity, EIN 88-2985125, IRS ruling March 2024.",
       "status": "public-profile",
       "sources": [
-        "https://www.activeinference.institute/officers",
+        "https://activeinference.institute/structure/officers/",
         "https://projects.propublica.org/nonprofits/organizations/882985125",
         "pages/DISCOVERY.md",
         "pages/PROFILE.md"
@@ -9431,7 +9395,7 @@
       "claim": "The Active Inference Institute board page lists 10 current directors.",
       "status": "public-profile",
       "sources": [
-        "https://www.activeinference.institute/board-of-directors",
+        "https://activeinference.institute/structure/board-of-directors/",
         "pages/LINKS.md",
         "pages/WIKIPEDIA.md"
       ],
@@ -9446,7 +9410,7 @@
       "claim": "The Active Inference Institute site lists a 33-member Scientific Advisory Board cohort for 2026.",
       "status": "public-profile",
       "sources": [
-        "https://www.activeinference.institute/scientific-advisory-board",
+        "https://activeinference.institute/structure/scientific-advisory-board/",
         "pages/LINKS.md",
         "pages/DISCOVERY.md"
       ],
@@ -9461,7 +9425,7 @@
       "claim": "AII Textbook Group copy references 10 cohorts through 2026.",
       "status": "curated-program-copy",
       "sources": [
-        "https://www.activeinference.institute/textbook-group",
+        "https://activeinference.institute/projects/textbook-group/",
         "README.md",
         "pages/VIDEOS.md"
       ],

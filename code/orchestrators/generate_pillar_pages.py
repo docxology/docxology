@@ -384,9 +384,9 @@ def render_outputs(*, output_root: Path = REPO_ROOT) -> dict[Path, str]:
              "<div class='callout-card'><h3>Active Inference Software Ecosystem</h3><ul>\n"
              "<li><strong><a href='https://github.com/ActiveInferenceInstitute/fep_lean'>fep_lean</a>:</strong> Formalization of Free Energy Principle theorems, discrete-state space models, and Bayesian mechanics in the Lean 4 interactive theorem prover (<a href='works/Friedman2026TowardsLean4Formalization113.html'>Friedman, 2026</a>).</li>\n"
              "<li><strong><a href='https://github.com/ActiveInferenceInstitute/COGANT'>COGANT</a> &amp; GNN:</strong> Generalized Notation Notation and automated compiler tools for declarative Active Inference system specification (<a href='works/Friedman2023GeneralizedNotationNotationActive056.html'>GNN Paper, 2023</a>).</li>\n"
-             "<li><strong><a href='https://github.com/infer-stat/RxInfer.jl'>RxInfer.jl</a>:</strong> Reactive message-passing probabilistic programming engine in Julia for real-time variational inference.</li>\n"
+             "<li><strong><a href='https://github.com/ReactiveBayes/RxInfer.jl'>RxInfer.jl</a>:</strong> Reactive message-passing probabilistic programming engine in Julia for real-time variational inference.</li>\n"
              "<li><strong>PyMDP:</strong> Python library for discrete-state Markov Decision Process Active Inference models.</li>\n"
-             "<li><strong><a href='https://github.com/docxology/CEREBRUM'>CEREBRUM</a>:</strong> Case-Enabled Reasoning Engine with Bayesian Representations for structured multi-agent inference (<a href='works/Friedman2025CEREBRUMCaseEnabledReasoning010.html'>Friedman, 2025</a>).</li>\n"
+             "<li><strong><a href='https://github.com/ActiveInferenceInstitute/CEREBRUM'>CEREBRUM</a>:</strong> Case-Enabled Reasoning Engine with Bayesian Representations for structured multi-agent inference (<a href='works/Friedman2025CEREBRUMCaseEnabledReasoning010.html'>Friedman, 2025</a>).</li>\n"
              "</ul></div>"),
             ("How Can Beginners and Advanced Researchers Learn Active Inference?",
              "<p>The <a href='https://activeinference.institute'>Active Inference Institute (AII)</a>—founded in 2021—provides open scientific education, livestreams, study cohorts, and public research infrastructure:</p>\n"

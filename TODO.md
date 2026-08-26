@@ -8,7 +8,7 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-08-25 (public-main release-integrity review; deferred
+- Last reviewed: 2026-08-26 (public-main release-integrity review; deferred
   package migration remains staged behind a deployment-SHA-attested release)
 
 ## Completed / Closed (2026-08-01)
@@ -114,6 +114,15 @@ Comprehensive follow-up pass:
 - Deliverable: refresh ORCID, Crossref, Zenodo, PubMed, Europe PMC, GitHub, Scholar, organizational, teaching, art, and software evidence; review `data/coverage-exceptions.json`
 - Acceptance: only verified metadata is applied, access dates and caveats remain visible, and current coverage is linked from agent and human discovery surfaces
 - Dependencies: public-source APIs, primary profile pages, coverage report
+
+### DOC-015 — Review moved AII governance and program claim values
+
+- Priority: P1
+- Owner: INTEGRATOR / EDUCATOR
+- Trigger: official AII route migration or a public-source refresh that changes governance, advisory-board, or cohort wording
+- Deliverable: record an applied, deferred, or rejected decision for every affected AII officer, board, advisory-board, and textbook-cohort claim before updating curated profile surfaces
+- Acceptance: the dated evidence report and claim ledger identify the reviewed source, decision, owner, and rationale; approved edits regenerate dependent HTML, JSON, resume, and discovery outputs
+- Dependencies: official AII governance/program pages, `reports/public_source_review_*.json`, `pages/EVIDENCE.md`, `data/claims.json`
 
 ### DOC-007 — Keep agent schemas and manifests current
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T00:24:19Z",
+  "generated_at": "2026-08-26T01:32:32Z",
   "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
   "asset_count": 105,
   "budget_exceptions": {
@@ -10,7 +10,7 @@
     }
   },
   "warnings": 0,
-  "total_bytes": 15688495,
+  "total_bytes": 15676976,
   "largest": [
     {
       "path": "data/videos.json",
@@ -42,7 +42,7 @@
     {
       "path": "publications.html",
       "kind": "html",
-      "bytes": 561276,
+      "bytes": 561244,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 600000,
       "budget_exception": {
@@ -64,7 +64,7 @@
     {
       "path": "data/publications-ld.json",
       "kind": "json-data",
-      "bytes": 391431,
+      "bytes": 391403,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -73,7 +73,7 @@
     {
       "path": "resume/resume.pdf",
       "kind": "resume-export",
-      "bytes": 353107,
+      "bytes": 348630,
       "baseline_budget_bytes": 5000000,
       "budget_bytes": 5000000,
       "budget_exception": null,
@@ -82,7 +82,7 @@
     {
       "path": "data/resume.json",
       "kind": "json-data",
-      "bytes": 315930,
+      "bytes": 314538,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -127,7 +127,7 @@
     {
       "path": "software.html",
       "kind": "html",
-      "bytes": 188581,
+      "bytes": 185680,
       "baseline_budget_bytes": 500000,
       "budget_bytes": 500000,
       "budget_exception": null,
@@ -145,7 +145,7 @@
     {
       "path": "data/works.json",
       "kind": "json-data",
-      "bytes": 168647,
+      "bytes": 168635,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,
@@ -154,7 +154,7 @@
     {
       "path": "bibliography.csl.json",
       "kind": "citation-export",
-      "bytes": 164676,
+      "bytes": 164664,
       "baseline_budget_bytes": 4000000,
       "budget_bytes": 4000000,
       "budget_exception": null,

@@ -20,21 +20,21 @@
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "8038bc6b679fc6259e293b78c2d59b5abebf7b8c01186615a5c39d09a5916ec1",
-    "pages/SOFTWARE.md": "d520e523009d98dbdec011573770b0e6d03ff0c8fb9ee7f10190dca09a88f2af",
-    "resume/source.json": "9e2dd487986d64d10ab3b96fa20d8d8fb86b9196b75cb92149672d25f058c0a2",
-    "data/current-counts.json": "cbb15d0560fdfad56d2854b1c3482a355d95c9d9a101f685134ff6303cca5d7b",
+    "pages/BIBLIOGRAPHY.md": "5394eefed3264ed2cf187d03ae529699ce9bcf184b948f2ed46a67bee5327c44",
+    "pages/SOFTWARE.md": "fc4ad53dd90b35cd009a1cd8e0334bf4a08b4ccb1719b3389a0fb2b8691310ea",
+    "resume/source.json": "e98f03c2c58a6063b6790c6ccc3cbfc976897e3fbb8dfd175ec3f8d2730f1c4c",
+    "data/current-counts.json": "6c5a5f564c1952509cec76e4a39c8d2ee56b70c7df1963379357d2dc793cc14c",
     "data/coverage-exceptions.json": "d2f33b35f73488fe1e794dc684cb6a7574c5294d2a8fe750f3bd4b8fb6f18499",
     "data/repository-classification.json": "c93bd5e9e025ce71f9cf73c8e261f8eb5b2d7b9e7af5c3b76127a473aa47f2a3",
-    "data/agent-index.json": "f0e2eb7fd76a299957434e8b716eeceeb1d7678f6e0de29b6b80c50da23dd3b6",
-    "data/generated-manifest.json": "c8d8de294e59311ef45a6c56fe2c1dfed07c88edda9c15940adcd9182d11ba4c",
-    "data/pages-artifact-manifest.json": "253e9b5877ed427b3e5713dbd85bea14467ce096d97239834f84349a6c144e48"
+    "data/agent-index.json": "c213dea546ab6cbfc53ef4906e8743e42d9bacae607d2cdb8a5fa57212efa40c",
+    "data/generated-manifest.json": "5a048242e32132bc9333bfa33e07208c64bf8de0e0c3e01b8ce34a5d301df733",
+    "data/pages-artifact-manifest.json": "be2ebb763116619cdbd3da98e94b82adb5a3c628ce711190165e05b4ccdb0c1a"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
     "source_commit_at_generation": "c3232fed3800345e68ad83349caaabaef558e629",
     "artifact_file_count": 4607,
-    "artifact_bytes": 844038364,
+    "artifact_bytes": 844033838,
     "omitted_paper_image_count": 8886
   },
   "deployment": {
@@ -64,8 +64,8 @@
     "full_text_papers": 189,
     "generated_exports": {
       "data_publications_ld_main_entity": 209,
-      "data_software_json": 148,
-      "data_software_ld_main_entity": 148,
+      "data_software_json": 145,
+      "data_software_ld_main_entity": 145,
       "data_works_json": 209
     },
     "github_inventory": {
@@ -114,8 +114,8 @@
       "Zenodo exact-name creator records": 59
     },
     "software": {
-      "active_inference_institute": 41,
-      "curated_total": 148,
+      "active_inference_institute": 38,
+      "curated_total": 145,
       "docxology_owned": 107
     },
     "types": {

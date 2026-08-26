@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *107 original repositories · 41 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *107 original repositories · 38 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -182,7 +182,6 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [policy_entanglement](https://github.com/ActiveInferenceInstitute/policy_entanglement) | Policy Entanglement in Active Inference v1.0.0 · [Zenodo](https://doi.org/10.5281/zenodo.20418904) · [📄](../papers/2026_PolicyEntanglementActive/) | Python | 2 | 2026 |
 | [GEN24](https://github.com/ActiveInferenceInstitute/GEN24) | GEN-24 working project — collaborative generative systems research from the 2024 active inference cohort | Jupyter | 1 | 2024 |
 | [NoOrg](https://github.com/ActiveInferenceInstitute/NoOrg) | NoOrg is a Real Org — experimental organizational infrastructure and governance frameworks for decentralized scientific institutions | HTML | 1 | 2024 |
-| [ultralink](https://github.com/ActiveInferenceInstitute/ultralink) | UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats | — | 1 | 2025 |
 | [ActiveInferenceImplementations](https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations) | Learning and exploring probabilistic inference — beginner-accessible Jupyter notebooks for Active Inference from first principles | Jupyter | 0 | 2022 |
 | [ATLAS](https://github.com/ActiveInferenceInstitute/ATLAS) | Question-Oriented Pattern Languages for Knowledge Management — structured templates for navigating complex scientific knowledge spaces | Python | 0 | 2025 |
 | [COGANT](https://github.com/ActiveInferenceInstitute/COGANT) | Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · [📄](../papers/2026_COGANT/) · [Zenodo](https://doi.org/10.5281/zenodo.20705351) · [Zenodo](https://doi.org/10.5281/zenodo.20705350) | Python | 0 | 2026 |
@@ -190,9 +189,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [Bots](https://github.com/ActiveInferenceInstitute/Bots) | Institute bot infrastructure — automation, notification, and community management bots for the Active Inference Institute's platforms | — | 0 | 2022 |
 | [Garden-of-Iris](https://github.com/ActiveInferenceInstitute/Garden-of-Iris) | Interactive visualization garden — generative art and data-visualization experiments exploring Active Inference dynamics | Python | 0 | 2023 |
 | [gen25](https://github.com/ActiveInferenceInstitute/gen25) | GEN-25 working project — generative systems and collaborative research from the 2025 active inference cohort | — | 0 | 2025 |
-| [gnn](https://github.com/ActiveInferenceInstitute/gnn) | Generalized Notation Notation v2 — next-generation GNN specification with extended model classes and improved toolchain | — | 0 | 2024 |
 | [ISSS](https://github.com/ActiveInferenceInstitute/ISSS) | International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science | Python | 0 | 2024 |
-| [topp](https://github.com/ActiveInferenceInstitute/topp) | The Open Problems Project — curated registry of open scientific problems in Active Inference and the free energy principle | TeX | 0 | 2024 |
 | [active_fractal_rabbit](https://github.com/ActiveInferenceInstitute/active_fractal_rabbit) | Active Inference for FractalRabbit · [Zenodo](https://doi.org/10.5281/zenodo.21330636) · [📄](../papers/2026_ActiveFractalRabbit/) | Python | 0 | 2026 |
 | [Active_Fedference](https://github.com/ActiveInferenceInstitute/Active_Fedference) | Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus · [📄](../papers/2026_RobustBeliefSharing/) · [Zenodo](https://doi.org/10.5281/zenodo.21864003) | Python | 0 | 2026 |
 | [Active_Skillference](https://github.com/ActiveInferenceInstitute/Active_Skillference) | Validated prerequisite graph, computational claim registry, and SkillTree delivery contract for Active Inference · [📄](../papers/2026_ActiveSkillference/) · [Zenodo](https://doi.org/10.5281/zenodo.21865643) | Python | 0 | 2026 |
@@ -214,8 +211,8 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Other | 6 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP`, `math4wisdom-superhuman-docs-archive` |
 | Research Practice | 6 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register` |
 | **docxology subtotal** | **107** | |
-| AII Contributions (non-fork) | 41 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **148** | |
+| AII Contributions (non-fork) | 38 | Catalogued repositories with docxology contributions |
+| **Grand Total** | **145** | |
 
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; the AII GitHub account is a **User** account, not an Organization. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 

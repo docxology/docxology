@@ -124,6 +124,21 @@ def public_source_review_check_args(*, release: bool) -> list[str]:
     return command
 
 
+def live_site_check_args(*, release: bool) -> list[str]:
+    """Render the cached-live-site check appropriate to the validation tier.
+
+    A candidate can legitimately change source-derived counts before Pages has
+    deployed it. Normal offline validation still checks the last known live
+    route health, but must not require the old deployment to impersonate the
+    candidate. Release validation invokes the strict form only after fresh
+    deployed evidence is present.
+    """
+    command = ["python3", "code/orchestrators/verify_live_site.py", "--check"]
+    if not release:
+        command.append("--allow-source-count-drift")
+    return command
+
+
 def _load_json_payload(
     path: Path,
     errors: list[str],
@@ -461,7 +476,7 @@ def run_standard_validation(*, strict_reports: bool) -> None:
     run(["python3", "code/orchestrators/check_external_links.py", "--check"])
     run(["python3", "code/orchestrators/build_external_link_triage.py", "--check"])
     run(["python3", "code/orchestrators/browser_smoke.py", "--check"])
-    run(["python3", "code/orchestrators/verify_live_site.py", "--check"])
+    run(live_site_check_args(release=False))
     run(["python3", "code/orchestrators/refresh_public_source_inventory.py", "--check"])
     # The committed source layer uses the control-tail payload anchor.  Exact
     # candidate-HEAD review provenance is checked separately after deployment.
@@ -551,6 +566,10 @@ def main() -> None:
         # run below in the isolated committed worktree.
         run(public_source_review_check_args(release=True))
         run_isolated_candidate_validation(release_commit)
+        # The isolated source check intentionally permits a cached report to
+        # describe the prior deployment. The real checkout now has the
+        # post-deploy receipt, so require its count inputs to match exactly.
+        run(live_site_check_args(release=True))
         validate_release_evidence(args)
     else:
         run_standard_validation(strict_reports=strict_reports)

@@ -432,7 +432,7 @@ ARTIFACTS = [
     {
         "name": "External link report",
         "outputs": [_latest_report("external_links_[0-9]*.json", "reports/external_links_2026-05-13.json")],
-        "sources": ["site-critical HTML, Markdown, and JSON-LD files"],
+        "sources": ["all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"],
         "command": "python3 code/orchestrators/check_external_links.py",
     },
     {

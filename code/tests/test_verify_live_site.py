@@ -246,3 +246,20 @@ def test_verify_live_site_check_fails_when_fingerprint_drifted(tmp_path):
 
     with pytest.raises(SystemExit):
         vl.main(["--check"], current_counts_json=counts_path, report_dir=report_path.parent)
+
+
+def test_verify_live_site_check_allows_stale_fingerprint_for_offline_candidate(tmp_path, capsys):
+    counts_path = tmp_path / "data" / "current-counts.json"
+    _write_current_counts(counts_path)
+    report_path = tmp_path / "reports" / "live_site_verification_2026-06-16.json"
+    drifted = vl.load_current_counts_fingerprint(counts_path).copy()
+    drifted["software_total"] = 999
+    _write_report(report_path, {"expected_counts": drifted}, expected_counts=drifted)
+
+    vl.main(
+        ["--check", "--allow-source-count-drift"],
+        current_counts_json=counts_path,
+        report_dir=report_path.parent,
+    )
+
+    assert "pre-deploy count drift" in capsys.readouterr().out

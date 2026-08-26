@@ -383,7 +383,7 @@ def _claims() -> list[dict]:
             "claim": "Active Inference Institute officers: Daniel Friedman is President and Treasurer; Alexandra Mikhailova is Vice-President and Secretary (2025-ongoing). V. Bleu Knight was Secretary 2022-2024 and is a current member of the Board of Directors. The Institute is a 501(c)(3) public charity, EIN 88-2985125, IRS ruling March 2024.",
             "status": "public-profile",
             "sources": [
-                "https://www.activeinference.institute/officers",
+                "https://activeinference.institute/structure/officers/",
                 "https://projects.propublica.org/nonprofits/organizations/882985125",
                 "pages/DISCOVERY.md",
                 "pages/PROFILE.md"
@@ -399,7 +399,7 @@ def _claims() -> list[dict]:
             "claim": "The Active Inference Institute board page lists 10 current directors.",
             "status": "public-profile",
             "sources": [
-                "https://www.activeinference.institute/board-of-directors",
+                "https://activeinference.institute/structure/board-of-directors/",
                 "pages/LINKS.md",
                 "pages/WIKIPEDIA.md"
             ],
@@ -414,7 +414,7 @@ def _claims() -> list[dict]:
             "claim": "The Active Inference Institute site lists a 33-member Scientific Advisory Board cohort for 2026.",
             "status": "public-profile",
             "sources": [
-                "https://www.activeinference.institute/scientific-advisory-board",
+                "https://activeinference.institute/structure/scientific-advisory-board/",
                 "pages/LINKS.md",
                 "pages/DISCOVERY.md"
             ],
@@ -429,7 +429,7 @@ def _claims() -> list[dict]:
             "claim": "AII Textbook Group copy references 10 cohorts through 2026.",
             "status": "curated-program-copy",
             "sources": [
-                "https://www.activeinference.institute/textbook-group",
+                "https://activeinference.institute/projects/textbook-group/",
                 "README.md",
                 "pages/VIDEOS.md"
             ],

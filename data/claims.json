@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T18:37:59Z",
+  "generated_at": "2026-08-26T01:32:23Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
@@ -11,7 +11,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-25T18:37:58+00:00",
+      "checked_at": "2026-08-26T01:32:23+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -26,7 +26,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-25T18:37:58+00:00",
+      "checked_at": "2026-08-26T01:32:23+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -58,7 +58,7 @@
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 41 AII repositories with docxology contributions."
+      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 38 AII repositories with docxology contributions."
     },
     {
       "id": "orcid-canonical-identifier",
@@ -141,7 +141,7 @@
       "claim": "Active Inference Institute officers: Daniel Friedman is President and Treasurer; Alexandra Mikhailova is Vice-President and Secretary (2025-ongoing). V. Bleu Knight was Secretary 2022-2024 and is a current member of the Board of Directors. The Institute is a 501(c)(3) public charity, EIN 88-2985125, IRS ruling March 2024.",
       "status": "public-profile",
       "sources": [
-        "https://www.activeinference.institute/officers",
+        "https://activeinference.institute/structure/officers/",
         "https://projects.propublica.org/nonprofits/organizations/882985125",
         "pages/DISCOVERY.md",
         "pages/PROFILE.md"
@@ -157,7 +157,7 @@
       "claim": "The Active Inference Institute board page lists 10 current directors.",
       "status": "public-profile",
       "sources": [
-        "https://www.activeinference.institute/board-of-directors",
+        "https://activeinference.institute/structure/board-of-directors/",
         "pages/LINKS.md",
         "pages/WIKIPEDIA.md"
       ],
@@ -172,7 +172,7 @@
       "claim": "The Active Inference Institute site lists a 33-member Scientific Advisory Board cohort for 2026.",
       "status": "public-profile",
       "sources": [
-        "https://www.activeinference.institute/scientific-advisory-board",
+        "https://activeinference.institute/structure/scientific-advisory-board/",
         "pages/LINKS.md",
         "pages/DISCOVERY.md"
       ],
@@ -187,7 +187,7 @@
       "claim": "AII Textbook Group copy references 10 cohorts through 2026.",
       "status": "curated-program-copy",
       "sources": [
-        "https://www.activeinference.institute/textbook-group",
+        "https://activeinference.institute/projects/textbook-group/",
         "README.md",
         "pages/VIDEOS.md"
       ],

@@ -192,8 +192,8 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 154 | 2026 | 💻 | Book | The Template Textbook | *Zenodo* | [10.5281/zenodo.20533125](https://doi.org/10.5281/zenodo.20533125) | [📁](../papers/2026_TemplateTextbook/) | Daniel Ari Friedman |
 | 155 | 2016 | 🐜 | Paper | Lessons from the colony | *Science* | [science.org](https://www.science.org/doi/10.1126/science.352.6288.886) | — | — |
 | 156 | 2016 | 🌍 | Paper | Full speed ahead to the City on the Hill | *Science* | [10.1126/science.aag1520](https://doi.org/10.1126/science.aag1520) | — | — |
-| 157 | 2021 | 🛡️ | Paper | Disinforge | *Science* | [science.org](https://www.science.org/doi/10.1126/science.371.6524.22) | — | — |
-| 158 | 2021 | 🛡️ | Paper | Defining events: 2020 in hindsight | *Science* | [10.1126/science.371.6524.22](https://doi.org/10.1126/science.371.6524.22) | — | — |
+| 157 | 2021 | 🛡️ | Paper | Disinforge | *Science* | [science.org](https://www.science.org/doi/10.1126/science.abg0904) | — | — |
+| 158 | 2021 | 🛡️ | Paper | Defining events: 2020 in hindsight | *Science* | [10.1126/science.abg0904](https://doi.org/10.1126/science.abg0904) | — | — |
 | 159 | 2022 | 🧠 | Paper | Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling | *International Workshop on Active Inference* | [10.1007/978-3-031-28719-0_10](https://doi.org/10.1007/978-3-031-28719-0_10) | — | Smékal, Jakub; Choudhury, Arhan; Singh, Amit Kumar; Damaty, Shady El; Friedman, Daniel Ari |
 | 160 | 2024 | 🧠 | Paper | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | *arXiv* | [arXiv:2408.15982](https://doi.org/10.48550/arXiv.2408.15982) | — | Kavi, Prakash Chandra; Zamora-López, Gorka; Friedman, Daniel Ari |
 | 161 | 2021 | 🛡️ | Paper | Knowledge Management Archipelago | *Zenodo* | [10.5281/zenodo.5034808](https://doi.org/10.5281/zenodo.5034808) | — | Friedman, Daniel Ari; Cordes, Richard J. |

@@ -33,11 +33,11 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 
 | Index | Link | Notes |
 |-------|------|-------|
-| PubMed | [Daniel Ari Friedman author search](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | NCBI E-utilities returned 8 records for the exact author query on 2026-08-25 |
-| Europe PMC | [Daniel Ari Friedman author search](https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22) | Europe PMC returned 10 exact-author results, including preprints, on 2026-08-25 |
-| Crossref API | [ORCID DOI records](https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096) | Crossref returned 15 DOI records attached to the ORCID on 2026-08-25 |
-| Zenodo | [Exact-name creator search](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | Zenodo returned 59 exact-name records on 2026-08-25 |
-| Zenodo API | [ORCID-linked records](https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22) | ORCID-linked query returned 145 records on 2026-08-25, including versioned deposits and software archives |
+| PubMed | [Daniel Ari Friedman author search](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | NCBI E-utilities returned 8 records for the exact author query on 2026-08-26 |
+| Europe PMC | [Daniel Ari Friedman author search](https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22) | Europe PMC returned 10 exact-author results, including preprints, on 2026-08-26 |
+| Crossref API | [ORCID DOI records](https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096) | Crossref returned 15 DOI records attached to the ORCID on 2026-08-26 |
+| Zenodo | [Exact-name creator search](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | Zenodo returned 59 exact-name records on 2026-08-26 |
+| Zenodo API | [ORCID-linked records](https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22) | ORCID-linked query returned 145 records on 2026-08-26, including versioned deposits and software archives |
 | Semantic Scholar | [Exact-name search](https://www.semanticscholar.org/search?q=%22Daniel%20Ari%20Friedman%22&sort=relevance) | AI-curated citation graph; verify candidate author merges before using as profile evidence |
 | DBLP | [Author page](https://dblp.org/pid/346/2173.html) | Computer-science bibliography mirror |
 | PubMed Central / NCBI | [PubMed query](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | Use for biomedical indexing and PMID lookup |
@@ -104,11 +104,11 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | Page | Link | Verification Use |
 |------|------|------------------|
 | AII public landing page | [activeinference.org](https://activeinference.org/) | Current public landing page |
-| AII Officers | [activeinference.institute/officers](https://www.activeinference.institute/officers) | Confirms Daniel Friedman as President and Treasurer |
-| AII Board | [activeinference.institute/board-of-directors](https://www.activeinference.institute/board-of-directors) | Current board roster and governance notes |
-| AII Scientific Advisory Board | [activeinference.institute/scientific-advisory-board](https://www.activeinference.institute/scientific-advisory-board) | 2026 SAB cohort and prior advisory-board context |
-| AII Textbook Group | [activeinference.institute/textbook-group](https://www.activeinference.institute/textbook-group) | Program context for textbook cohorts |
-| AII Livestreams | [activeinference.institute/livestreams](https://www.activeinference.institute/livestreams) | Institute video and educational session context |
+| AII Officers | [activeinference.institute/structure/officers](https://activeinference.institute/structure/officers/) | Confirms Daniel Friedman as President and Treasurer |
+| AII Board | [activeinference.institute/structure/board-of-directors](https://activeinference.institute/structure/board-of-directors/) | Current board roster and governance notes |
+| AII Scientific Advisory Board | [activeinference.institute/structure/scientific-advisory-board](https://activeinference.institute/structure/scientific-advisory-board/) | 2026 SAB cohort and prior advisory-board context |
+| AII Textbook Group | [activeinference.institute/projects/textbook-group](https://activeinference.institute/projects/textbook-group/) | Program context for textbook cohorts |
+| AII Livestreams | [activeinference.institute/video](https://activeinference.institute/video/) | Institute video and educational session context |
 
 ## Query Recipes
 

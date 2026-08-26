@@ -40,7 +40,7 @@
     },
     {
       "name": "Catalogued AII contributions vs AII GitHub public repository count",
-      "local_value": 41,
+      "local_value": 38,
       "public_value": 43,
       "relationship": "curated subset",
       "interpretation": "SOFTWARE.md lists AII repositories with docxology contributions, not every public AII repository."

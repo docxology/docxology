@@ -62,15 +62,15 @@ keywords: "Daniel Ari Friedman, active inference, LINKS"
 |-------------|------|------|
 | Active Inference Institute | President & Treasurer, Co-founder | [activeinference.org](https://activeinference.org/) |
 | Active Inference Institute Governance Site | Officers, board, history, programs | [activeinference.institute](https://www.activeinference.institute/) |
-| Active Inference Institute Officers | Officer page | [activeinference.institute/officers](https://www.activeinference.institute/officers) |
-| Active Inference Institute Board | Board of Directors (10 current members listed May 2026) | [activeinference.institute/board-of-directors](https://www.activeinference.institute/board-of-directors) |
-| AII Scientific Advisory Board | 2026 SAB cohort and prior advisory cohorts | [activeinference.institute/scientific-advisory-board](https://www.activeinference.institute/scientific-advisory-board) |
+| Active Inference Institute Officers | Officer page | [activeinference.institute/structure/officers](https://activeinference.institute/structure/officers/) |
+| Active Inference Institute Board | Board of Directors (10 current members listed May 2026) | [activeinference.institute/structure/board-of-directors](https://activeinference.institute/structure/board-of-directors/) |
+| AII Scientific Advisory Board | 2026 SAB cohort and prior advisory cohorts | [activeinference.institute/structure/scientific-advisory-board](https://activeinference.institute/structure/scientific-advisory-board/) |
 | AII Wikidata | Knowledge-graph entity anchor | [Q139600792](https://www.wikidata.org/wiki/Q139600792) |
 | AII History | Founding timeline (2019– ) | [activeinference.institute/history](https://www.activeinference.institute/history) |
 | AII Strategy | Mission, programs, operational plan | [activeinference.institute/strategy](https://www.activeinference.institute/strategy) |
-| AII Partnership | Academia/industry collaboration program | [activeinference.institute/partnership](https://www.activeinference.institute/partnership) |
+| AII Partnership | Academia/industry collaboration program | [activeinference.institute/programs/partnership](https://activeinference.institute/programs/partnership/) |
 | AII Substack Newsletter | Monthly newsletter | [activeinferenceinstitute.substack.com](https://activeinferenceinstitute.substack.com/) |
-| Active Inference Research | Research overview | [activeinference.institute/research-overview](https://www.activeinference.institute/research-overview) |
+| Active Inference Research | Research overview | [activeinference.institute/reinference](https://activeinference.institute/reinference/) |
 | COGSEC.org | Honorary Co-founder (with RJ Cordes, 2018) | [cogsec.org](https://cogsec.org) |
 | COGSEC About | Origin, mission, publications | [cogsec.org/about](https://www.cogsec.org/about-2) |
 | Complexity Weekend | Co-founder & Co-organizer | [complexityadventures.com](https://www.complexityadventures.com/) |

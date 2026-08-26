@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-25T18:37:59Z",
+  "generated_at": "2026-08-26T01:32:23Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 148,
+  "count": 145,
   "repositories": [
     {
       "name": "template",
@@ -1601,18 +1601,6 @@
       "zenodo_url": ""
     },
     {
-      "name": "ultralink",
-      "url": "https://github.com/ActiveInferenceInstitute/ultralink",
-      "owner": "ActiveInferenceInstitute",
-      "catalog_section": "active-inference-institute",
-      "description": "UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats",
-      "language": "",
-      "stars": 1,
-      "updated_or_year": "2025",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
       "name": "ActiveInferenceImplementations",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations",
       "owner": "ActiveInferenceInstitute",
@@ -1697,36 +1685,12 @@
       "zenodo_url": ""
     },
     {
-      "name": "gnn",
-      "url": "https://github.com/ActiveInferenceInstitute/gnn",
-      "owner": "ActiveInferenceInstitute",
-      "catalog_section": "active-inference-institute",
-      "description": "Generalized Notation Notation v2 — next-generation GNN specification with extended model classes and improved toolchain",
-      "language": "",
-      "stars": 0,
-      "updated_or_year": "2024",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
       "name": "ISSS",
       "url": "https://github.com/ActiveInferenceInstitute/ISSS",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science",
       "language": "Python",
-      "stars": 0,
-      "updated_or_year": "2024",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
-      "name": "topp",
-      "url": "https://github.com/ActiveInferenceInstitute/topp",
-      "owner": "ActiveInferenceInstitute",
-      "catalog_section": "active-inference-institute",
-      "description": "The Open Problems Project — curated registry of open scientific problems in Active Inference and the free energy principle",
-      "language": "TeX",
       "stars": 0,
       "updated_or_year": "2024",
       "paper_path": "",

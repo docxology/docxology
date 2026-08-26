@@ -96,7 +96,7 @@ The Active Inference Institute emerged from foundational team meetings in 2019�
 
 **Prior Officers**: Alexander Vyatkin (VP 2022–2024), V. Bleu Knight (Secretary 2022–2024)
 
-**Board of Directors**: [activeinference.institute/board-of-directors](https://www.activeinference.institute/board-of-directors)
+**Board of Directors**: [activeinference.institute/structure/board-of-directors](https://activeinference.institute/structure/board-of-directors/)
 **History**: [activeinference.institute/history](https://www.activeinference.institute/history)
 
 ### COGSEC.org (Cognitive Security and Education Forum)

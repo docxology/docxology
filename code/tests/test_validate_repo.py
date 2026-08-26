@@ -66,6 +66,20 @@ def test_public_source_review_provenance_mode_matches_validation_tier():
     ]
 
 
+def test_live_site_check_mode_matches_validation_tier():
+    assert vr.live_site_check_args(release=False) == [
+        "python3",
+        "code/orchestrators/verify_live_site.py",
+        "--check",
+        "--allow-source-count-drift",
+    ]
+    assert vr.live_site_check_args(release=True) == [
+        "python3",
+        "code/orchestrators/verify_live_site.py",
+        "--check",
+    ]
+
+
 def test_release_worktree_rejects_unrecognized_changes_but_allows_declared_receipts(tmp_path: Path):
     repo = _fixture_repo(tmp_path)
     (repo / "source.txt").write_text("committed\n", encoding="utf-8")

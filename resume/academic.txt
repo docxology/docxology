@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-08-25T22:26:33Z
+Generated: 2026-08-26T01:32:23Z
 
-Current public metrics: 209 curated works; 148 catalogued software repositories (107 owned + 41 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 202 docxology + 43 AII public repositories (158 primary, 87 forks).
+Current public metrics: 209 curated works; 145 catalogued software repositories (107 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 202 docxology + 43 AII public repositories (158 primary, 87 forks).
 
 SUMMARY
 -------
@@ -64,7 +64,7 @@ EXPERIENCE
 ----------
 2021-ongoing | Community Organization | Active Inference Institute | Co-founder, Participant, Officer, President, Treasurer
   - Co-founded the Active Inference Institute; current President and Treasurer.
-  - Sources: AII officers: https://www.activeinference.institute/officers; AII:
+  - Sources: AII officers: https://activeinference.institute/structure/officers/; AII:
   https://activeinference.org/
 2019-2024 | Community Organization | Complexity Adventures | Co-founder, Facilitator, Participant, Organizer
   - Organized activities and community around learning and applying complexity science.
@@ -290,8 +290,8 @@ WORKS AND PUBLICATIONS (209)
 [154] 2026 | Book | The Template Textbook | Zenodo | 10.5281/zenodo.20533125
 [155] 2016 | Paper | Lessons from the colony | Science | https://www.science.org/doi/10.1126/science.352.6288.886
 [156] 2016 | Paper | Full speed ahead to the City on the Hill | Science | 10.1126/science.aag1520
-[157] 2021 | Paper | Disinforge | Science | https://www.science.org/doi/10.1126/science.371.6524.22
-[158] 2021 | Paper | Defining events: 2020 in hindsight | Science | 10.1126/science.371.6524.22
+[157] 2021 | Paper | Disinforge | Science | https://www.science.org/doi/10.1126/science.abg0904
+[158] 2021 | Paper | Defining events: 2020 in hindsight | Science | 10.1126/science.abg0904
 [159] 2022 | Paper | Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling | International Workshop on Active Inference | 10.1007/978-3-031-28719-0_10
 [160] 2024 | Paper | From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace | arXiv | 10.48550/arXiv.2408.15982
 [161] 2021 | Paper | Knowledge Management Archipelago | Zenodo | 10.5281/zenodo.5034808

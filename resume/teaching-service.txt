@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-08-25T22:26:33Z
+Generated: 2026-08-26T01:32:23Z
 
-Current public metrics: 209 curated works; 148 catalogued software repositories (107 owned + 41 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 202 docxology + 43 AII public repositories (158 primary, 87 forks).
+Current public metrics: 209 curated works; 145 catalogued software repositories (107 owned + 38 AII); 777 Google Scholar citations, h-index 15, i10-index 17 as of 2026-06-09; GitHub inventory 202 docxology + 43 AII public repositories (158 primary, 87 forks).
 
 SUMMARY
 -------
@@ -67,7 +67,7 @@ EXPERIENCE
   - Sources: The Triplicate: https://www.triplicate.com/
 2021-ongoing | Community Organization | Active Inference Institute | Co-founder, Participant, Officer, President, Treasurer
   - Co-founded the Active Inference Institute; current President and Treasurer.
-  - Sources: AII officers: https://www.activeinference.institute/officers; AII:
+  - Sources: AII officers: https://activeinference.institute/structure/officers/; AII:
   https://activeinference.org/
 2019-2024 | Community Organization | Complexity Adventures | Co-founder, Facilitator, Participant, Organizer
   - Organized activities and community around learning and applying complexity science.

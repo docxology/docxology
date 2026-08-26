@@ -543,7 +543,7 @@
         "reports/external_links_2026-05-15.json"
       ],
       "sources": [
-        "site-critical HTML, Markdown, and JSON-LD files"
+        "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
       ],
       "command": "python3 code/orchestrators/check_external_links.py"
     },
