@@ -96,7 +96,7 @@ def test_release_worktree_rejects_unrecognized_changes_but_allows_declared_recei
     assert errors == ["release source worktree is not clean: README.md"]
 
 
-def test_all_declared_postdeploy_receipts_are_clean_but_triage_is_source_drift(tmp_path: Path):
+def test_all_declared_postdeploy_receipts_are_clean_but_unknown_report_is_source_drift(tmp_path: Path):
     repo = _fixture_repo(tmp_path)
     (repo / "source.txt").write_text("committed\n", encoding="utf-8")
     _git(repo, "add", "source.txt")
@@ -107,6 +107,8 @@ def test_all_declared_postdeploy_receipts_are_clean_but_triage_is_source_drift(t
         "reports/public_source_review_2026-08-26.json",
         "reports/public_source_review_2026-08-26.md",
         "reports/external_links_2026-08-26.json",
+        "reports/external_links_triage_2026-08-26.json",
+        "reports/external_links_triage_2026-08-26.md",
         "reports/browser-smoke/2026-08-26/manifest.json",
         "reports/browser-smoke/2026-08-26/home.png",
         "reports/browser-qa/2026-08-26/manifest.json",
@@ -123,15 +125,15 @@ def test_all_declared_postdeploy_receipts_are_clean_but_triage_is_source_drift(t
     assert source_worktree_state(repo)["source_worktree_clean"] is True
     assert vr._release_worktree_errors(repo) == []
 
-    triage = repo / "reports" / "external_links_triage_2026-08-26.json"
-    triage.write_text("source derivative\n", encoding="utf-8")
+    unknown = repo / "reports" / "external_links_triage_2026-08-26.txt"
+    unknown.write_text("unrecognized evidence\n", encoding="utf-8")
     state = source_worktree_state(repo)
     assert state["source_worktree_clean"] is False
     assert state["source_worktree_dirty_paths"] == [
-        "reports/external_links_triage_2026-08-26.json"
+        "reports/external_links_triage_2026-08-26.txt"
     ]
     assert vr._release_worktree_errors(repo) == [
-        "release source worktree is not clean: reports/external_links_triage_2026-08-26.json"
+        "release source worktree is not clean: reports/external_links_triage_2026-08-26.txt"
     ]
 
 

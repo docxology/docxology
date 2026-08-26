@@ -413,9 +413,13 @@ def test_attestation_rejects_a_timestamp_beyond_future_tolerance(tmp_path):
 def test_only_post_commit_release_receipts_are_worktree_exempt():
     assert is_ephemeral_release_evidence_path("reports/browser-smoke/2026-08-25/home.png")
     assert is_ephemeral_release_evidence_path("reports/public_source_review_2026-08-25.md")
+    assert is_ephemeral_release_evidence_path("reports/external_links_triage_2026-08-25.json")
+    assert is_ephemeral_release_evidence_path("reports/external_links_triage_2026-08-25.md")
     assert is_ephemeral_release_evidence_path("reports/deployment-attestations/" + "a" * 40 + ".json")
     assert not is_ephemeral_release_evidence_path("reports/browser-smoke/notdate/source.py")
     assert not is_ephemeral_release_evidence_path("reports/browser-qa/evil/source.py")
+    assert not is_ephemeral_release_evidence_path("reports/external_links_triage_not-a-date.json")
+    assert not is_ephemeral_release_evidence_path("reports/external_links_triage_2026-08-25.txt")
     assert not is_ephemeral_release_evidence_path("reports\\browser-smoke\\2026-08-25\\home.png")
     assert not is_ephemeral_release_evidence_path("data/claims.json")
 

@@ -41,9 +41,11 @@ RELEASE_EVIDENCE: tuple[EvidenceRequirement, ...] = (
 )
 
 _DATED_REPORT_NAME = re.compile(
-    r"^reports/(?:public_source_snapshot|public_source_review|external_links|live_site_verification)_(\d{4}-\d{2}-\d{2})\.json$"
+    r"^reports/(?:public_source_snapshot|public_source_review|external_links|external_links_triage|live_site_verification)_(\d{4}-\d{2}-\d{2})\.json$"
 )
-_PUBLIC_SOURCE_REVIEW_MARKDOWN = re.compile(r"^reports/public_source_review_(\d{4}-\d{2}-\d{2})\.md$")
+_POSTDEPLOY_MARKDOWN_REPORT_NAME = re.compile(
+    r"^reports/(?:public_source_review|external_links_triage)_(\d{4}-\d{2}-\d{2})\.md$"
+)
 _BROWSER_REPORT_FILE = re.compile(
     r"^reports/(?:browser-smoke|browser-qa|visual-qa)/(\d{4}-\d{2}-\d{2})/(?:manifest\.json|[a-z0-9][a-z0-9-]*\.png)$"
 )
@@ -78,7 +80,7 @@ def is_ephemeral_release_evidence_path(path: str) -> bool:
     dated = _DATED_REPORT_NAME.fullmatch(path)
     if dated:
         return _is_iso_date(dated.group(1))
-    markdown = _PUBLIC_SOURCE_REVIEW_MARKDOWN.fullmatch(path)
+    markdown = _POSTDEPLOY_MARKDOWN_REPORT_NAME.fullmatch(path)
     if markdown:
         return _is_iso_date(markdown.group(1))
     browser = _BROWSER_REPORT_FILE.fullmatch(path)
