@@ -80,6 +80,13 @@ def test_non_canonical_doi_records_empty_when_concept_doi_is_canonical():
     assert non_canonical_doi_records(records, catalogued) == []
 
 
+def test_non_canonical_doi_records_omits_distinct_aii_yearly_snapshot():
+    records = [_record("17982447", "10.5281/zenodo.14108991", "AII Ecosystem v3")]
+    catalogued = {"10.5281/zenodo.17982447"}
+
+    assert non_canonical_doi_records(records, catalogued) == []
+
+
 def test_non_canonical_doi_records_empty_when_totally_uncatalogued():
     records = [_record("999", "10.5281/zenodo.999", "Brand New Paper")]
     catalogued: set[str] = set()

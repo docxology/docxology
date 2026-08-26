@@ -56,6 +56,15 @@ KNOWN_STALE_RECORD_IDS = {
     "19139090",  # Template/Reproducible duplicate of kept row #1
 }
 
+# These records are intentionally cited by their version DOI because each is
+# a separately curated bibliographic snapshot, not merely a software release
+# superseded by its Zenodo concept record.  Keep the exception adjacent to the
+# discovery policy so a live audit cannot mislabel an intentional paper
+# identity as DOI-role drift.
+VERSION_SPECIFIC_CITATION_RECORD_IDS = {
+    "17982447",  # AII Ecosystem v3 (2025), distinct from the v2 concept record
+}
+
 
 def version_doi(record: ZenodoRecord) -> str:
     """The record's own per-version DOI, independent of ZenodoRecord.doi's concept-DOI preference."""
@@ -83,7 +92,8 @@ def non_canonical_doi_records(records: list[ZenodoRecord], catalogued_dois: set[
     return [
         record
         for record in records
-        if record.doi
+        if record.record_id not in VERSION_SPECIFIC_CITATION_RECORD_IDS
+        and record.doi
         and version_doi(record)
         and record.doi != version_doi(record)
         and record.doi not in catalogued_dois
