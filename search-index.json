@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T01:48:00Z",
+  "generated_at": "2026-08-26T02:07:03Z",
   "source_files": [
     "data/works.json",
     "data/work-enrichment.json",
@@ -366,7 +366,7 @@
       "id": "page:reconciliation",
       "type": "report",
       "title": "Public-Source Reconciliation Report",
-      "url": "/reports/reconciliation_2026-08-25.md",
+      "url": "/reports/reconciliation_2026-08-26.md",
       "summary": "Curated local counts compared with public source indexes.",
       "tags": [
         "evidence",
