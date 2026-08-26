@@ -41,7 +41,8 @@ generated layer, artifact, deployment, and live verification records agree.
    transient results remain explicit review warnings. Do not regenerate the
    external-link triage derivative at this point: it is a pre-deploy cache/review
    queue, while the exact fresh raw-link report is the attested evidence. In the
-   clean candidate checkout, re-render the public-source review with `uv run python3
+   source-clean primary candidate checkout (apart from declared fresh receipts),
+   re-render the public-source review with `uv run python3
    code/orchestrators/build_public_source_review.py --exact-source-revision`,
    then create a receipt with `uv run python3
    code/orchestrators/attest_release.py --apply --commit <deployment-sha>`, then
