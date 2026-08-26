@@ -3,9 +3,9 @@
   "generated_at": "2026-08-26T00:00:00Z",
   "inputs": {
     "claims_ledger": {
-      "generated_at": "2026-08-26T01:32:23Z",
+      "generated_at": "2026-08-26T02:06:48Z",
       "path": "data/claims.json",
-      "sha256": "e0338070cfa8bc31a70d6469faceb7e77c2eb7cabb579529f0fe59d6ed9c9cd1",
+      "sha256": "bfa09f4934d1620180eeafb5417af81492f63f63d401a7c4d2e8b76bb75d02c0",
       "source_commit": null
     },
     "doi_role_review": {
@@ -39,10 +39,10 @@
       "source_commit": "b08dc428aa578572feb0977c2c28e1f597b29378"
     },
     "public_source_snapshot": {
-      "generated_at": "2026-08-25T18:30:47.703338+00:00",
-      "path": "reports/public_source_snapshot_2026-08-25.json",
-      "sha256": "137b72b2069a6b2b4b055a719bbd5f90c3b63b510b014d5a27d88e3ef8185047",
-      "source_commit": "b08dc428aa578572feb0977c2c28e1f597b29378"
+      "generated_at": "2026-08-26T02:01:58.525852+00:00",
+      "path": "reports/public_source_snapshot_2026-08-26.json",
+      "sha256": "fd79c8a895e6f660fcff77667529bdaf0f0b43758819a06ecada1cd4b1dc08c9",
+      "source_commit": "5c3cee203911449d3755b8840ee1d7c6ae5248b2"
     },
     "repository_classification": {
       "generated_at": "2026-08-19T23:00:01Z",
@@ -1097,7 +1097,7 @@
       "sources": [
         "data/claims.json",
         "reports/public_source_inventory_2026-08-25.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1115,7 +1115,7 @@
       "sources": [
         "data/claims.json",
         "reports/public_source_inventory_2026-08-25.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1133,7 +1133,7 @@
       "sources": [
         "data/claims.json",
         "reports/public_source_inventory_2026-08-25.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1151,7 +1151,7 @@
       "sources": [
         "data/claims.json",
         "reports/public_source_inventory_2026-08-25.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1169,7 +1169,7 @@
       "sources": [
         "data/claims.json",
         "reports/public_source_inventory_2026-08-25.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1187,7 +1187,7 @@
       "sources": [
         "data/claims.json",
         "reports/public_source_inventory_2026-08-25.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1205,7 +1205,7 @@
       "sources": [
         "data/claims.json",
         "reports/public_source_inventory_2026-08-25.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1223,7 +1223,7 @@
       "sources": [
         "data/claims.json",
         "reports/public_source_inventory_2026-08-25.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1244,7 +1244,7 @@
         "data/claims.json",
         "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works",
         "reports/public_source_inventory_2026-08-25.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1262,7 +1262,7 @@
       "sources": [
         "data/claims.json",
         "reports/public_source_inventory_2026-08-25.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1289,7 +1289,7 @@
       "reason": "A public-source observation changed since the prior snapshot. Review its meaning before changing any curated claim or derivative.",
       "sources": [
         "reports/public_source_snapshot_2026-08-19.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1316,7 +1316,7 @@
       "reason": "A public-source observation changed since the prior snapshot. Review its meaning before changing any curated claim or derivative.",
       "sources": [
         "reports/public_source_snapshot_2026-08-19.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1343,7 +1343,7 @@
       "reason": "A public-source observation changed since the prior snapshot. Review its meaning before changing any curated claim or derivative.",
       "sources": [
         "reports/public_source_snapshot_2026-08-19.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1370,7 +1370,7 @@
       "reason": "A public-source observation changed since the prior snapshot. Review its meaning before changing any curated claim or derivative.",
       "sources": [
         "reports/public_source_snapshot_2026-08-19.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1397,7 +1397,7 @@
       "reason": "A public-source observation changed since the prior snapshot. Review its meaning before changing any curated claim or derivative.",
       "sources": [
         "reports/public_source_snapshot_2026-08-19.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1424,7 +1424,7 @@
       "reason": "A public-source observation changed since the prior snapshot. Review its meaning before changing any curated claim or derivative.",
       "sources": [
         "reports/public_source_snapshot_2026-08-19.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1449,7 +1449,7 @@
       "reason": "A public-source observation changed since the prior snapshot. Review its meaning before changing any curated claim or derivative.",
       "sources": [
         "reports/public_source_snapshot_2026-08-19.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1472,7 +1472,7 @@
       "reason": "A public-source observation changed since the prior snapshot. Review its meaning before changing any curated claim or derivative.",
       "sources": [
         "reports/public_source_snapshot_2026-08-19.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -1495,7 +1495,7 @@
       "reason": "A public-source observation changed since the prior snapshot. Review its meaning before changing any curated claim or derivative.",
       "sources": [
         "reports/public_source_snapshot_2026-08-19.json",
-        "reports/public_source_snapshot_2026-08-25.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
       "status": "deferred"
     },
@@ -3461,7 +3461,7 @@
       "candidate": {
         "pairing_report_date": "2026-08-19",
         "pairing_report_generated_at": "2026-08-19T22:45:44Z",
-        "public_source_snapshot_generated_at": "2026-08-25T18:30:47.703338Z",
+        "public_source_snapshot_generated_at": "2026-08-26T02:01:58.525852Z",
         "refresh_note": "",
         "refresh_state": "stale",
         "warnings": []
@@ -3481,8 +3481,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "9e95e1252d0f4d9b7f291c59a2ac406b50587f49",
-  "source_tree_sha": "2f1e564f5078bf0fd14347c9d8a2826627ef9978",
+  "source_commit": "c5960267c9a89c2a79b33fe89f162948e05dfd6d",
+  "source_tree_sha": "5e9f9819400652433879eb556733f09974c5d382",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
