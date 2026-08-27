@@ -489,7 +489,7 @@ def related_pages(video: dict) -> list[dict]:
     return pages[:6]
 
 
-def title_for_page(video: dict, max_len: int = 70) -> str:
+def title_for_page(video: dict, max_len: int = 65) -> str:
     title = " ".join(video["title"].split())
     if len(title) <= max_len:
         if title == "We Three Pogo":
@@ -731,19 +731,46 @@ def render_video_page(video: dict, *, transcript: str | None = None) -> str:
 """
 
 
+# Crawler-visible static floor for videos/index.html: only the newest N video
+# rows are server-rendered into <ol class="video-list">.  The complete list
+# remains crawlable through the inline ItemList JSON-LD (one itemListElement per
+# video) and the bounded remainder ships in a compact inline JSON payload that
+# js/videos-page.js renders on demand ("Show more").  URLs never change.
+VIDEO_SSR_FLOOR_ROWS = 50
+
+
+def video_list_item_fields(video: dict) -> tuple[str, str, str]:
+    """(url, title, muted-meta) exactly as the static <li> renders them."""
+    url = page_filename(video)
+    title = video["title"]
+    meta = " - ".join(
+        [
+            video["date"],
+            video["channel_label"],
+            ", ".join(topic["label"] for topic in video["topics"][:3]),
+        ]
+    )
+    return url, title, meta
+
+
 def render_index(payload: dict) -> str:
     videos = sorted(payload["videos"], key=lambda item: item["upload_date"], reverse=True)
     counts = payload["counts"]
     topic_links = "\n".join(
         f'<a class="pill" href="../{h(rule.url)}">{h(rule.label)}</a>' for rule in TOPIC_RULES[:8]
     )
+    # Server-render only the floor; the rest rides in a compact inline payload.
     rows = "\n".join(
         f"""<li>
-            <a href="{h(page_filename(video))}">{h(video['title'])}</a>
-            <span class="muted"> - {h(video['date'])} - {h(video['channel_label'])} - {h(', '.join(topic['label'] for topic in video['topics'][:3]))}</span>
+            <a href="{h(video_list_item_fields(video)[0])}">{h(video['title'])}</a>
+            <span class="muted"> - {h(video_list_item_fields(video)[2])}</span>
         </li>"""
-        for video in videos
+        for video in videos[:VIDEO_SSR_FLOOR_ROWS]
     )
+    tail_payload = [
+        {"u": url, "t": title, "m": meta}
+        for url, title, meta in (video_list_item_fields(video) for video in videos[VIDEO_SSR_FLOOR_ROWS:])
+    ]
     item_list = {
         "@context": "https://schema.org",
         "@type": "ItemList",
@@ -795,10 +822,11 @@ def render_index(payload: dict) -> str:
         .pill{{border:1px solid var(--border);border-radius:999px;padding:.38rem .65rem;background:var(--bg-card);font-size:.82rem}}
         .video-list{{columns:2;column-gap:2rem;line-height:1.65}}
         .video-list li{{break-inside:avoid;margin-bottom:.45rem}}
+        #video-show-more{{margin:.75rem 0 0}}
         @media (max-width: 760px){{.video-list{{columns:1}}}}
     </style>
     <script type="application/ld+json">
-{json.dumps(item_list, indent=4, ensure_ascii=False)}
+{json.dumps(item_list, separators=(",", ":"), ensure_ascii=False)}
     </script>
 {breadcrumb_jsonld_script(breadcrumb)}
 </head>
@@ -820,10 +848,14 @@ def render_index(payload: dict) -> str:
         <section class="section">
             <div class="section-header"><h2>All Video Pages</h2><p>Newest first; titles link to local indexable landing pages, not directly out to YouTube.</p><div class="section-divider"></div></div>
             <ol class="video-list">{rows}</ol>
+            <noscript><p class="muted">The complete list of {counts['total']} video pages, including the {len(tail_payload)} newest entries not shown above, is available in the <a href="../data/videos.json">video metadata JSON</a> and via the page's ItemList structured data.</p></noscript>
         </section>
     </main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos.html">timeline</a> - <a href="../data/videos.json">video metadata JSON</a></p></footer>
-""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
+""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + f"""
+<script type="application/json" id="video-tail-payload">{json.dumps(tail_payload, separators=(",", ":"), ensure_ascii=False)}</script>
+<script src="/js/videos-index.js?v=20260827" defer></script>
+</body>
 </html>
 """
 
@@ -974,6 +1006,35 @@ def generated_video_page_orphans(
     return orphans, tuple(sorted(errors))
 
 
+def check_interactive_page_integrity(
+    html_by_path: dict[Path, str],
+    *,
+    repo_root: Path = REPO_ROOT,
+) -> tuple[str, ...]:
+    """Every emitted page that loads interactive/tts scripts must link style.css.
+
+    js/tts-controls.js, js/interactive.js, and js/menu-esc.js render UI whose
+    CSS lives entirely in style.css. A page that loads any of those scripts
+    without the shared stylesheet ships permanently expanded, unstyled
+    controls (the P0-2 defect). Enforced at build time rather than as a
+    post-hoc lint so every generator output is covered.
+    """
+    errors: list[str] = []
+    interactive_markers = ("/js/interactive.js", "/js/tts-controls.js", "/js/menu-esc.js")
+    for path, content in sorted(html_by_path.items(), key=lambda item: item[0].as_posix()):
+        if not path.suffix == ".html":
+            continue
+        loads = any(marker in content for marker in interactive_markers)
+        links_stylesheet = 'rel="stylesheet"' in content and "style.css" in content
+        if loads and not links_stylesheet:
+            relative = path.relative_to(repo_root).as_posix() if path.is_relative_to(repo_root) else path.as_posix()
+            errors.append(
+                f"{relative}: loads interactive JS without linking style.css "
+                "(TTS panel / shortcuts overlay would render unstyled)"
+            )
+    return tuple(errors)
+
+
 def outputs(generated_at: str | None = None) -> dict[Path, str]:
     payload = build_records(generated_at)
     index = compact_index(payload)
@@ -1017,6 +1078,18 @@ def stale_video_outputs(
         for path in orphans
     )
     stale.extend(ownership_errors)
+    stale.extend(check_interactive_page_integrity(rendered_outputs, repo_root=repo_root))
+    # Hand-authored root pages (art.html, videos.html, ...) are not generator
+    # outputs, but they load the same interactive scripts. They are scanned
+    # read-only so the same P0-2 invariant holds site-wide.
+    public_root_pages: dict[Path, str] = {}
+    for candidate in sorted(repo_root.glob("*.html")):
+        try:
+            text = candidate.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        public_root_pages[candidate] = text
+    stale.extend(check_interactive_page_integrity(public_root_pages, repo_root=repo_root))
     return tuple(stale)
 
 

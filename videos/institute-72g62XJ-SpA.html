@@ -107,28 +107,36 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation">
+    <nav aria-label="Main navigation">
         <a href="../index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <div class="nav-links">
-            <a href="../index.html#about">About</a>
-            <a href="../publications.html">Publications</a>
-            <a href="../works/">Works</a>
-            <a href="../domains.html">Domains</a>
-            <a href="../software.html">Software</a>
-            <a href="../videos.html" class="active">Videos</a>
-            <a href="../art.html">Art</a>
-            <a href="../media.html">Media</a>
-            <a href="../collaborators.html">Collaborators</a>
-            <a href="../resume/resume.html">CV</a>
-            <a href="../search.html">Search</a>
-            <a href="../catalog.html">Data Catalog</a>
-            <a href="../evidence.html">Evidence</a>
-            <a href="../reproducibility.html">Reproducibility</a>
-            <a href="../cite-verify.html">Cite</a>
-            <a href="../discovery.html">Discovery</a>
-            <a href="../data/agent-index.json">Agent Map</a>
-        </div>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="../publications.html">Publications</a></li>
+            <li><a href="../works/">Works</a></li>
+            <li><a href="../domains.html">Domains</a></li>
+            <li><a href="../software.html">Software</a></li>
+            <li><a href="../videos.html" class="active" aria-current="page">Videos</a></li>
+            <li><a href="../art.html" class="nav-art-link">Art</a></li>
+            <li>
+                <details class="nav-more">
+                    <summary>More</summary>
+                    <ul class="nav-more-panel">
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#research">Research</a></li>
+                    <li><a href="../media.html">Media</a></li>
+                    <li><a href="../collaborators.html">Collaborators</a></li>
+                    <li><a href="../resume/resume.html">CV</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                    <li><a href="../catalog.html">Data Catalog</a></li>
+                    <li><a href="../evidence.html">Evidence</a></li>
+                    <li><a href="../reproducibility.html">Reproducibility</a></li>
+                    <li><a href="../cite-verify.html">Cite</a></li>
+                    <li><a href="../discovery.html">Discovery</a></li>
+                    <li><a href="../data/agent-index.json">Agent Map</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
     </nav>
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol><li><a href="../index.html">Home</a></li><li><a href="../videos/">Videos</a></li><li aria-current="page">ActInf Livestream #007.1: &quot;Variational ecology and the physics of sentient systems&quot; (2019)</li></ol>

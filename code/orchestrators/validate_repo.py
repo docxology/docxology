@@ -348,9 +348,10 @@ def validate_sitemap_targets() -> None:
 
 def validate_seo_invariants() -> None:
     sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-    from seo_invariants import collect_seo_errors
+    from seo_invariants import check_canonical_integrity, collect_seo_errors
 
     errors = collect_seo_errors(REPO_ROOT)
+    errors.extend(check_canonical_integrity(REPO_ROOT))
     if errors:
         raise SystemExit("SEO invariant violations:\n" + "\n".join(f"  - {e}" for e in errors[:40]))
 

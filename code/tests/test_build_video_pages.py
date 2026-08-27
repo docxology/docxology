@@ -210,6 +210,75 @@ def test_render_video_page_uses_local_page_and_youtube_embed():
     assert "transcript body" in html
 
 
+def test_interactive_page_integrity_flags_missing_stylesheet(tmp_path: Path):
+    """Negative fixture (P0-2): a page loading interactive JS without style.css
+    must be rejected; linking the stylesheet must pass."""
+    bad = tmp_path / "bad.html"
+    bad.write_text(
+        '<html><head><script src="/js/interactive.js?v=1" defer></script>'
+        '<script src="/js/tts-controls.js?v=1" defer></script></head>'
+        "<body></body></html>",
+        encoding="utf-8",
+    )
+    errors = build_video_pages.check_interactive_page_integrity({bad: bad.read_text(encoding="utf-8")}, repo_root=tmp_path)
+    assert errors == ("bad.html: loads interactive JS without linking style.css "
+                      "(TTS panel / shortcuts overlay would render unstyled)",)
+
+    good = tmp_path / "good.html"
+    good.write_text(
+        '<html><head><link rel="stylesheet" href="/style.css?v=1">'
+        '<script src="/js/interactive.js?v=1" defer></script></head>'
+        "<body></body></html>",
+        encoding="utf-8",
+    )
+    assert build_video_pages.check_interactive_page_integrity(
+        {good: good.read_text(encoding="utf-8")}, repo_root=tmp_path
+    ) == ()
+
+    # Pages without interactive JS are out of scope entirely.
+    plain = tmp_path / "plain.html"
+    plain.write_text("<html><head></head><body>static</body></html>", encoding="utf-8")
+    assert build_video_pages.check_interactive_page_integrity(
+        {plain: plain.read_text(encoding="utf-8")}, repo_root=tmp_path
+    ) == ()
+
+
+def test_check_mode_rejects_root_page_missing_stylesheet(tmp_path: Path):
+    """stale_video_outputs must surface the P0-2 violation for a hand-authored
+    root page (art.html/videos.html pattern), not just generator outputs."""
+    video_dir = tmp_path / "videos"
+    video_dir.mkdir()
+    manifest_path = tmp_path / "data" / "video-pages-manifest.json"
+    rendered = {
+        tmp_path / "videos" / "index.html": build_video_pages.VIDEO_PAGE_MARKER,
+        manifest_path: build_video_pages.render_video_page_manifest({"videos/index.html"}),
+    }
+    for path, content in rendered.items():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(content, encoding="utf-8")
+    (tmp_path / "art.html").write_text(
+        '<html><head><script src="/js/tts-controls.js?v=1" defer></script></head></html>',
+        encoding="utf-8",
+    )
+    stale = build_video_pages.stale_video_outputs(
+        rendered,
+        repo_root=tmp_path,
+        video_dir=video_dir,
+        manifest_path=manifest_path,
+    )
+    assert any("art.html" in entry and "style.css" in entry for entry in stale), stale
+
+
+def test_render_index_links_shared_stylesheet():
+    payload = {
+        "videos": [],
+        "counts": {"total": 0, "personal": 0, "institute": 0, "with_transcripts": 0},
+        "channels": {},
+    }
+    html = build_video_pages.render_index(payload)
+    assert 'rel="stylesheet"' in html and "style.css" in html
+
+
 def test_transcript_from_vtt_cleans_timestamps_and_duplicate_partials():
     vtt = (
         "WEBVTT\n"

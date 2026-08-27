@@ -50,8 +50,19 @@ def test_indexnow_subset_of_sitemap():
     assert indexnow
     assert "https://danielarifriedman.com/" in indexnow
     assert all(url in locs for url in indexnow)
-    assert "https://danielarifriedman.com/bibliography.bib" in indexnow
     assert all("/reports/" not in url for url in indexnow)
+
+
+def test_sitemap_excludes_non_html_metadata_exports():
+    """Sitemap hygiene (2026-08-27): metadata exports leave the sitemap; the
+    resume PDF legitimately stays."""
+    locs = sitemap_locs()
+    for suffix in (
+        "llms.txt", "humans.txt", "CITATION.cff", "bibliography.bib",
+        "bibliography.csl.json", "bibliography.ris", "codemeta.json",
+    ):
+        assert f"https://danielarifriedman.com/{suffix}" not in locs
+    assert "https://danielarifriedman.com/resume/resume.pdf" in locs
 
 
 def test_static_policy_lists_exports_hub():

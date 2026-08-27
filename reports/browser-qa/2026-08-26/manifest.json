@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-08-26T20:42:32Z",
+  "source_commit": "5c25de204170cdf03c2f341f0fdc10f399aebaa4",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
+  "source_tree_sha": "d8fc719ee594870774010b1f067be644e49f1b6e",
+  "tool": "Playwright Python sync API",
+  "scope": "progressive enhancement, interaction, responsive, CSP-adjacent runtime checks",
+  "passing": 7,
+  "count": 7,
+  "checks": [
+    {
+      "name": "core routes render without console errors",
+      "ok": true,
+      "details": {
+        "routes": 6,
+        "console_errors": 0,
+        "page_errors": 0,
+        "known_meta_csp_warnings": 0
+      },
+      "duration_ms": 3109
+    },
+    {
+      "name": "mobile menu opens, closes, and restores focus",
+      "ok": true,
+      "details": {
+        "opened_and_closed": true,
+        "focus_restored": true
+      },
+      "duration_ms": 129
+    },
+    {
+      "name": "no-JavaScript fallbacks remain usable",
+      "ok": true,
+      "details": {
+        "routes": 3,
+        "fallbacks": "visible"
+      },
+      "duration_ms": 189
+    },
+    {
+      "name": "publication filters, announcements, and sorting update state",
+      "ok": true,
+      "details": {
+        "all_rows": 209,
+        "paper_rows": 188,
+        "sort_state": "descending"
+      },
+      "duration_ms": 434
+    },
+    {
+      "name": "gallery lightbox traps and restores focus",
+      "ok": true,
+      "details": {
+        "trigger": "Open artwork: All-domain Anomaly Resolution Office (AARO)",
+        "focus_restored": true
+      },
+      "duration_ms": 217
+    },
+    {
+      "name": "320px layout honors reduced motion without page overflow",
+      "ok": true,
+      "details": {
+        "routes": 4,
+        "viewport": "320x760",
+        "reduced_motion": true,
+        "max_overflow_px": 2
+      },
+      "duration_ms": 1189
+    },
+    {
+      "name": "forced colors and YouTube iframe policy remain covered",
+      "ok": true,
+      "details": {
+        "forced_colors": true,
+        "iframe_origin": "www.youtube-nocookie.com",
+        "iframe_title": true
+      },
+      "duration_ms": 117
+    }
+  ]
+}

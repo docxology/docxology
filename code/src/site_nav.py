@@ -331,93 +331,85 @@ def render_breadcrumb(trail: list[tuple[str, str]], *, depth: int = 0) -> str:
     )
 
 
-def render_nav(*, active: str = "", depth: int = 0) -> str:
-    """Return nav block. depth=0 for root pages, depth=1+ for nested pages."""
+# ── Single navigation manifest ──────────────────────────────────────────────
+# One source of truth for EVERY page shell (root pages, works/papers/videos/
+# domains/pillars, publications template). Six primary links render directly in
+# the header so it never overflows at intermediate viewport widths; all other
+# destinations stay reachable through the visible "More" disclosure. Replaces
+# the divergent per-page navs that preceded this manifest.
+
+def nav_manifest(depth: int = 0) -> tuple[list[tuple[str, str, str, str]], list[tuple[str, str, str, str]]]:
+    """Return (primary, secondary) nav link tuples (key, href, label, extra_class)."""
     prefix = "../" * depth
     home = f"{prefix}index.html"
-    links = [
-        ("about", f"{prefix}index.html#about", "About"),
-        ("publications", f"{prefix}publications.html", "Publications"),
-        ("works", f"{prefix}works/", "Works"),
-        ("domains", f"{prefix}domains.html", "Domains"),
-        ("software", f"{prefix}software.html", "Software"),
-        ("videos", f"{prefix}videos.html", "Videos"),
-        ("art", f"{prefix}art.html", "Art"),
-        ("media", f"{prefix}media.html", "Media"),
-        ("collaborators", f"{prefix}collaborators.html", "Collaborators"),
-        ("resume", f"{prefix}resume/resume.html", "CV"),
-        ("search", f"{prefix}search.html", "Search"),
-        ("catalog", f"{prefix}catalog.html", "Data Catalog"),
-        ("evidence", f"{prefix}evidence.html", "Evidence"),
-        ("reproducibility", f"{prefix}reproducibility.html", "Reproducibility"),
-        ("cite", f"{prefix}cite-verify.html", "Cite"),
-        ("discovery", f"{prefix}discovery.html", "Discovery"),
-        ("agent-map", f"{prefix}data/agent-index.json", "Agent Map"),
+    primary = [
+        ("publications", f"{prefix}publications.html", "Publications", ""),
+        ("works", f"{prefix}works/", "Works", ""),
+        ("domains", f"{prefix}domains.html", "Domains", ""),
+        ("software", f"{prefix}software.html", "Software", ""),
+        ("videos", f"{prefix}videos.html", "Videos", ""),
+        ("art", f"{prefix}art.html", "Art", "nav-art-link"),
     ]
-    parts = [
-        f'    <nav role="navigation" aria-label="Main navigation">',
-        f'        <a href="{home}" class="nav-logo">Daniel Ari Friedman</a>',
-        '        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>',
-        '        <div class="nav-links">',
+    secondary = [
+        ("about", f"{home}#about", "About", ""),
+        ("research", f"{home}#research", "Research", ""),
+        ("media", f"{prefix}media.html", "Media", ""),
+        ("collaborators", f"{prefix}collaborators.html", "Collaborators", ""),
+        ("resume", f"{prefix}resume/resume.html", "CV", ""),
+        ("search", f"{prefix}search.html", "Search", ""),
+        ("catalog", f"{prefix}catalog.html", "Data Catalog", ""),
+        ("evidence", f"{prefix}evidence.html", "Evidence", ""),
+        ("reproducibility", f"{prefix}reproducibility.html", "Reproducibility", ""),
+        ("cite", f"{prefix}cite-verify.html", "Cite", ""),
+        ("discovery", f"{prefix}discovery.html", "Discovery", ""),
+        ("agent-map", f"{prefix}data/agent-index.json", "Agent Map", ""),
     ]
-    for key, href, label in links:
-        cls = ' class="active"' if key == active else ""
-        parts.append(f'            <a href="{html.escape(href, quote=True)}"{cls}>{html.escape(label)}</a>')
-    parts.extend(["        </div>", "    </nav>"])
-    return "\n".join(parts)
+    return primary, secondary
+
+
+def _nav_anchor(key: str, href: str, label: str, extra: str, *, active: str = "") -> str:
+    classes = [c for c in (extra, "active" if key == active else "") if c]
+    attrs = f' class="{" ".join(classes)}"' if classes else ""
+    current = ' aria-current="page"' if key == active else ""
+    return f'<a href="{html.escape(href, quote=True)}"{attrs}{current}>{html.escape(label)}</a>'
+
+
+def _render_nav_shell(*, active: str = "", depth: int = 0) -> str:
+    """Render the shared header nav: plain <nav><ul><li><a> (no menubar roles)."""
+    prefix = "../" * depth
+    home = f"{prefix}index.html"
+    primary, secondary = nav_manifest(depth)
+    items = "\n".join(f"            <li>{_nav_anchor(*l, active=active)}</li>" for l in primary)
+    more_items = "\n".join(f"                    <li>{_nav_anchor(*l, active=active)}</li>" for l in secondary)
+    return (
+        f'    <nav aria-label="Main navigation">\n'
+        f'        <a href="{home}" class="nav-logo">Daniel Ari Friedman</a>\n'
+        f'        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">\u2630</button>\n'
+        f'        <ul class="nav-links" id="nav-menu">\n'
+        f"{items}\n"
+        f'            <li>\n'
+        f'                <details class="nav-more">\n'
+        f'                    <summary>More</summary>\n'
+        f'                    <ul class="nav-more-panel">\n'
+        f"{more_items}\n"
+        f"                    </ul>\n"
+        f"                </details>\n"
+        f"            </li>\n"
+        f"        </ul>\n"
+        f"    </nav>"
+    )
+
+
+def render_nav(*, active: str = "", depth: int = 0) -> str:
+    """Shared header nav from the single manifest. depth=0 root, 1+ nested."""
+    return _render_nav_shell(active=active, depth=depth)
 
 
 def render_nav_domain(*, active: str = "domains", depth: int = 0) -> str:
-    """Nav for domain-*.html and domains.html (matches software/search/discovery cluster)."""
-    prefix = "../" * depth
-    home = f"{prefix}index.html"
-    links = [
-        ("about", f"{home}#about", "About"),
-        ("research", f"{home}#research", "Research"),
-        ("publications", f"{prefix}publications.html", "Publications"),
-        ("works", f"{prefix}works/", "Works"),
-        ("domains", f"{prefix}domains.html", "Domains"),
-        ("software", f"{prefix}software.html", "Software"),
-        ("videos", f"{prefix}videos.html", "Videos"),
-        ("art", f"{prefix}art.html", "Art"),
-        ("media", f"{prefix}media.html", "Media"),
-        ("collaborators", f"{prefix}collaborators.html", "Collaborators"),
-        ("resume", f"{prefix}resume/resume.html", "CV"),
-        ("search", f"{prefix}search.html", "Search"),
-        ("catalog", f"{prefix}catalog.html", "Data Catalog"),
-        ("evidence", f"{prefix}evidence.html", "Evidence"),
-        ("reproducibility", f"{prefix}reproducibility.html", "Reproducibility"),
-        ("cite", f"{prefix}cite-verify.html", "Cite"),
-        ("discovery", f"{prefix}discovery.html", "Discovery"),
-        ("agent-map", f"{prefix}data/agent-index.json", "Agent Map"),
-    ]
-    parts = [
-        '    <nav role="navigation" aria-label="Main navigation">',
-        f'        <a href="{home}" class="nav-logo">Daniel Ari Friedman</a>',
-        '        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>',
-        '        <div class="nav-links">',
-    ]
-    for key, href, label in links:
-        cls = ' class="active"' if key == active else ""
-        parts.append(f'            <a href="{html.escape(href, quote=True)}"{cls}>{html.escape(label)}</a>')
-    parts.extend(["        </div>", "    </nav>"])
-    return "\n".join(parts)
+    """Nav for domain pages — same shell, domains highlighted by default."""
+    return _render_nav_shell(active=active, depth=depth)
 
 
 def render_nav_compact(*, depth: int = 1) -> str:
-    """Compact nav for work detail pages (legacy subset + discovery)."""
-    prefix = "../" * depth
-    return (
-        f'<nav role="navigation" aria-label="Main navigation">'
-        f'<a href="{prefix}index.html" class="nav-logo">Daniel Ari Friedman</a>'
-        f'<div class="nav-links">'
-        f'<a href="{prefix}publications.html">Publications</a>'
-        f'<a href="{prefix}domains.html">Domains</a>'
-        f'<a href="{prefix}resume/resume.html">CV</a>'
-        f'<a href="{prefix}search.html">Search</a>'
-        f'<a href="{prefix}catalog.html">Data Catalog</a>'
-        f'<a href="{prefix}cite-verify.html">Cite</a>'
-        f'<a href="{prefix}discovery.html">Discovery</a>'
-        f'<a href="{prefix}data/agent-index.json">Agent Map</a>'
-        f"</div></nav>"
-    )
+    """Compact nav for work detail pages — same manifest shell, no default active."""
+    return _render_nav_shell(active="", depth=depth)

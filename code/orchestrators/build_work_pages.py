@@ -477,7 +477,7 @@ def json_ld(work: dict) -> str:
     return json.dumps(data, indent=4, ensure_ascii=False)
 
 
-def work_page_title(work: dict, max_len: int = 70) -> str:
+def work_page_title(work: dict, max_len: int = 65) -> str:
     title = " ".join(work["title"].split())
     suffix = " — Daniel Ari Friedman"
     if len(h(title)) + len(h(suffix)) <= max_len:

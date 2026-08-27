@@ -56,13 +56,36 @@ const state = { items: [], type: 'all', q: '' };
             filters.querySelectorAll('button').forEach(btn => btn.setAttribute('aria-pressed', String(btn.dataset.type === state.type)));
         }
 
+        function renderStatus(total, filtered, truncated){
+            // Result count line: "N results for “query”" when searching, an
+            // explicit empty state when a query matches nothing. Plain text
+            // interpolated through esc() like every other dynamic string.
+            const status = document.getElementById('result-status');
+            if (!status) return;
+            if (!state.q.trim()){
+                status.textContent = '';
+                status.hidden = true;
+                return;
+            }
+            if (total === 0){
+                status.innerHTML = `<p class="no-results">No results for &ldquo;${esc(state.q)}&rdquo;. Try fewer or different words, or browse the <a href="works/">works index</a>.</p>`;
+                status.hidden = false;
+                return;
+            }
+            const suffix = truncated ? ' (showing first 80)' : '';
+            status.innerHTML = `<p class="result-count" role="status">${total} result${total === 1 ? '' : 's'} for &ldquo;${esc(state.q)}&rdquo;${suffix}</p>`;
+            status.hidden = false;
+        }
+
         function render(){
             const terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
             let matches = state.items;
             if (state.type !== 'all') matches = matches.filter(item => item.type === state.type);
             if (terms.length) { const res = matchers(terms); matches = matches.map(item => ({item, rank: score(item, res)})).filter(x => x.rank > 0).sort((a,b) => b.rank - a.rank).map(x => x.item); }
             else matches = matches.slice(0, 40);
+            const totalMatches = matches.length;
             matches = matches.slice(0, 80);
+            renderStatus(totalMatches, state.items.length, totalMatches > 80);
             results.innerHTML = matches.map(item => {
                 const tags = (item.tags || []).filter(Boolean).slice(0, 5).map(tag => `<span>${esc(tag)}</span>`).join('');
                 const badges = [];

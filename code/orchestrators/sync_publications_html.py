@@ -36,6 +36,15 @@ PUBLICATIONS_HTML = REPO_ROOT / "publications.html"
 PUBLICATIONS_LD_JSON = REPO_ROOT / "data" / "publications-ld.json"
 PUBLICATIONS_TEMPLATE = REPO_ROOT / "code" / "templates" / "publications.html.tmpl"
 
+# Crawler-visible static floor: only the first N bibliography rows are
+# server-rendered into <tbody id="pub-tbody">.  Non-rendering AI crawlers see
+# the complete work set through the inline CollectionPage JSON-LD (one mainEntity
+# per row, emitted below) and data/publications-ld.json; browsers get the full
+# table from data/works.json via js/publications.js, which paginates client-side
+# starting from these SSR rows.  The floor keeps raw-HTML weight bounded as the
+# bibliography grows without ever replacing server rendering.
+SSR_FLOOR_ROWS = 50
+
 LD_SYNC_BEGIN = "<!-- <PUBLICATIONS_LD_SYNC_BEGIN> -->"
 LD_SYNC_END = "<!-- <PUBLICATIONS_LD_SYNC_END> -->"
 PUBLICATIONS_TEMPLATE_TOKENS = (
@@ -397,10 +406,12 @@ def render_outputs_from_template(
         begin_marker=LD_SYNC_BEGIN,
         end_marker=LD_SYNC_END,
         page_label="publications",
-        compact=False,
+        # Compact one-line JSON-LD: identical graph (all rows as mainEntity),
+        # roughly a third of the raw-HTML bytes of the indented form.
+        compact=True,
     )
     html_out = replace_head_meta(html_out, len(rows))
-    html_out = replace_tbody(html_out, [works_by_num[row.num] for row in rows])
+    html_out = replace_tbody(html_out, [works_by_num[row.num] for row in rows[:SSR_FLOOR_ROWS]])
 
     if len(collection["mainEntity"]) != len(rows):
         raise SystemExit("mainEntity length mismatch after build")

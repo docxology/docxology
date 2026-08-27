@@ -79,6 +79,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("search-index", "build_search_index.py", (), ("--check",), "Site search index"),
     GenerationStep("feed", "generate_feed.py", (), ("--check",), "RSS feed"),
     GenerationStep("sitemap", "build_sitemap.py", (), ("--check",), "Sitemap"),
+    GenerationStep("404-page", "build_404_page.py", (), ("--check",), "GitHub Pages 404 page"),
     GenerationStep("artwork-index", "build_artwork_index.py", (), ("--check",), "Compact artwork index"),
     GenerationStep("image-sitemap", "build_image_sitemap.py", (), ("--check",), "Image sitemap"),
     GenerationStep("pages-artifact", "build_pages_artifact.py", ("--write-manifest", "--allow-dirty-prepayload-evidence", "--check-size-only"), ("--check-size-only", "--check-manifest"), "Pages artifact manifest and budget"),

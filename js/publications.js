@@ -39,6 +39,14 @@ let currentYearFilter = 'all';
 let currentVenueFilter = 'all';
 let currentSort = { col: 'num', dir: 1 };
 
+// Client-side pagination. The first SSR_FLOOR_ROWS rows are already
+// server-rendered into the page for crawlers; everything beyond that renders
+// on demand ("Load more"), so the table DOM (and per-filter layout work) stays
+// bounded while every row remains reachable client-side. Filtering, search,
+// and sorting always operate over the full catalog and reset to page 1.
+const PAGE_SIZE = 50;
+let currentLimit = PAGE_SIZE;
+
 function workToPub(work) {
     const url = work.url || '';
     const citationKey = work.citation_key || '';
@@ -189,6 +197,12 @@ function renderTable() {
     data = data.slice().sort((a, b) => cmpSort(a, b, currentSort.col, currentSort.dir));
     const tbody = document.getElementById('pub-tbody');
     const empty = document.getElementById('no-results');
+    const shown = data.slice(0, currentLimit);
+    const loadMore = ensureLoadMoreButton(tbody);
+    if (loadMore) {
+        loadMore.hidden = data.length <= currentLimit;
+        loadMore.textContent = `Load more (${data.length - shown.length} of ${data.length} remaining)`;
+    }
     if (data.length === 0) {
         tbody.innerHTML = '';
         empty.hidden = false;
@@ -196,7 +210,7 @@ function renderTable() {
     } else {
         empty.hidden = true;
         empty.classList.add('d-none');
-        tbody.innerHTML = data
+        tbody.innerHTML = shown
             .map((p) => {
                 const title = esc(p.title);
                 const titleCell = p.workPage
@@ -227,7 +241,9 @@ function renderTable() {
             .join('');
     }
     const n = PUBS.length;
-    const msg = data.length === n ? `${n} of ${n} shown` : `${data.length} of ${n} shown`;
+    const msg = data.length === n
+        ? `${Math.min(shown.length, data.length)} of ${n} shown`
+        : `${shown.length} of ${data.length} shown (filtered from ${n})`;
     document.getElementById('result-count').textContent = msg;
     document.querySelectorAll('[data-type-filter], [data-domain-filter]').forEach((button) => {
         const active = button.classList.contains('active');
@@ -237,12 +253,36 @@ function renderTable() {
     updateSortUI();
 }
 
+function ensureLoadMoreButton(tbody) {
+    // Created lazily in DOM order right after the table: no template change
+    // needed, and it exists only when JS runs (crawlers/noscript never see it).
+    let btn = document.getElementById('pub-load-more');
+    if (btn) return btn;
+    const table = document.getElementById('pub-table');
+    if (!table || !table.parentNode) return null;
+    btn = document.createElement('button');
+    btn.type = 'button';
+    btn.id = 'pub-load-more';
+    btn.className = 'btn btn-outline';
+    btn.style.margin = '0.75rem 0 0';
+    btn.addEventListener('click', loadMorePubs);
+    table.parentNode.insertBefore(btn, table.nextSibling);
+    return btn;
+}
+
 function filterPubs() {
+    currentLimit = PAGE_SIZE;
+    renderTable();
+}
+
+function loadMorePubs() {
+    currentLimit += PAGE_SIZE;
     renderTable();
 }
 
 function setTypeFilter(t, btn) {
     currentTypeFilter = t;
+    currentLimit = PAGE_SIZE;
     document.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('active'));
     if (btn) btn.classList.add('active');
     renderTable();
@@ -250,6 +290,7 @@ function setTypeFilter(t, btn) {
 
 function setDomainFilter(d, pill) {
     currentDomainFilter = d;
+    currentLimit = PAGE_SIZE;
     document.querySelectorAll('.domain-pill').forEach((p) => p.classList.remove('active'));
     if (pill) pill.classList.add('active');
     renderTable();
@@ -257,15 +298,18 @@ function setDomainFilter(d, pill) {
 
 function setYearFilter(y) {
     currentYearFilter = y;
+    currentLimit = PAGE_SIZE;
     renderTable();
 }
 
 function setVenueFilter(v) {
     currentVenueFilter = v;
+    currentLimit = PAGE_SIZE;
     renderTable();
 }
 
 function resetFilters() {
+    currentLimit = PAGE_SIZE;
     document.getElementById('pub-search').value = '';
     currentTypeFilter = 'all';
     currentDomainFilter = 'all';
@@ -289,6 +333,7 @@ function defaultDirForCol(col) {
 }
 
 function sortBy(col) {
+    currentLimit = PUBS.length; // re-sorting implies "show everything"
     if (currentSort.col === col) {
         currentSort.dir = -currentSort.dir;
     } else {
@@ -377,4 +422,5 @@ window.setYearFilter = setYearFilter;
 window.setVenueFilter = setVenueFilter;
 window.resetFilters = resetFilters;
 window.sortBy = sortBy;
+window.loadMorePubs = loadMorePubs;
 window.esc = esc;

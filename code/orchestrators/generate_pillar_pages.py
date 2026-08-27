@@ -54,6 +54,12 @@ def render_page(
     domain_name: str,
     terms: list[str],
 ) -> str:
+    from title_policy import clip_title  # noqa: PLC0415
+
+    # SERP title budget: <title>, og:title, twitter:title, and the JSON-LD
+    # headline all render from this string, so it is clipped once here. The
+    # on-page <h1> stays full-length via h1_text.
+    title = clip_title(title)
     canonical_url = f"https://danielarifriedman.com/{filename}"
     faq_items = [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}

@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+import urllib.parse
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -185,6 +186,90 @@ def check_work_descriptions(repo_root: Path) -> list[str]:
     return errors
 
 
+def _dir_form(rel: str) -> str:
+    """Normalize "dir/index.html", "dir/", "index.html", and "" to one form."""
+    if rel in ("index.html", ""):
+        return ""
+    if rel.endswith("/index.html"):
+        return rel[: -len("index.html")]
+    return rel
+
+
+def check_canonical_integrity(repo_root: Path) -> list[str]:
+    """Zero internal links may target a page whose own canonical points elsewhere.
+
+    A link to a URL that self-canonicalizes to a different address dilutes
+    ranking signals and contradicts the site canonical policy (docs/seo/
+    canonical-policy.md): internal links must target the canonical form.
+    Redirect stubs (noindex + canonical away) are the known exception — a link
+    to them is a policy violation, not a page defect, and is reported as such.
+    """
+    errors: list[str] = []
+    href_re = re.compile(r'<a\b[^>]*?href=["\x27]([^"\x27]+)["\x27]', re.I)
+    canonical_by_rel: dict[str, str] = {}
+    pages: list[Path] = []
+    for path in sorted(repo_root.rglob("*.html")):
+        if EXCLUDED_HTML_PATH_PARTS.intersection(path.parts):
+            continue
+        if path.name == "googlef0f1a1a4a7ba4be8.html":
+            continue
+        pages.append(path)
+    # Pass 1: record each page's own canonical target (relative to repo root),
+    # keyed by the page's own root-relative path. stub.html -> good.html means
+    # canonical_by_rel["stub.html"] == "good.html" != "stub.html".
+    for path in pages:
+        canonical = _canonical(_read(path))
+        if not canonical:
+            continue
+        parsed = urllib.parse.urlsplit(canonical)
+        if parsed.netloc and parsed.netloc != "danielarifriedman.com":
+            continue
+        page_rel = urllib.parse.unquote(
+            urllib.parse.urlsplit(f"https://danielarifriedman.com/{path.relative_to(repo_root)}").path
+        ).lstrip("/")
+        canonical_target = urllib.parse.unquote(parsed.path).lstrip("/")
+        canonical_by_rel[page_rel] = canonical_target
+
+    def canonical_points_elsewhere(rel: str) -> bool:
+        if rel not in canonical_by_rel:
+            return False
+        return _dir_form(canonical_by_rel[rel]) != _dir_form(rel)
+
+    # Pass 2: every internal href must not land on an away-canonical page.
+    for path in pages:
+        html_text = _read(path)
+        rel_self = str(path.relative_to(repo_root))
+        for href in href_re.findall(html_text):
+            link = href.strip()
+            if link.startswith(("#", "http://", "https://", "mailto:", "tel:", "javascript:", "data:")):
+                if link.startswith("https://danielarifriedman.com/"):
+                    link = link.removeprefix("https://danielarifriedman.com/")
+                else:
+                    continue
+            if not link or link.startswith("//"):
+                continue
+            if "${" in link or "{" in link:
+                continue
+            link = urllib.parse.unquote(link.split("#", 1)[0].split("?", 1)[0])
+            if not link:
+                continue
+            # Resolve to a repo-root-relative path.
+            if link.startswith("/"):
+                rel_target = link.lstrip("/")
+            else:
+                resolved = (path.parent / link).resolve()
+                try:
+                    rel_target = str(resolved.relative_to(repo_root.resolve()))
+                except ValueError:
+                    continue
+            if canonical_points_elsewhere(rel_target):
+                errors.append(
+                    f"{rel_self}: internal link {href!r} targets {rel_target}, "
+                    "whose canonical points elsewhere"
+                )
+    return errors
+
+
 def check_public_html_security(repo_root: Path) -> list[str]:
     """Check security metadata and crawler-visible JSON-LD across public HTML."""
     errors: list[str] = []
@@ -237,4 +322,5 @@ def collect_seo_errors(repo_root: Path | None = None) -> list[str]:
     errors.extend(check_social_meta(root))
     errors.extend(check_work_descriptions(root))
     errors.extend(check_public_html_security(root))
+    errors.extend(check_canonical_integrity(root))
     return errors

@@ -40,13 +40,11 @@ INDEX_PRIORITY_STATIC: list[tuple[str, str, str]] = [
     ("evidence.html", "monthly", "0.6"),
     ("reproducibility.html", "monthly", "0.7"),
     ("feed.xml", "weekly", "0.5"),
-    ("llms.txt", "monthly", "0.5"),
-    ("humans.txt", "monthly", "0.3"),
-    ("CITATION.cff", "monthly", "0.5"),
-    ("bibliography.bib", "monthly", "0.5"),
-    ("bibliography.csl.json", "monthly", "0.5"),
-    ("bibliography.ris", "monthly", "0.5"),
-    ("codemeta.json", "monthly", "0.5"),
+    # Sitemap hygiene (2026-08-27): non-HTML metadata exports (llms.txt,
+    # humans.txt, CITATION.cff, bibliography.bib/.csl.json/.ris, codemeta.json)
+    # were removed from the sitemap — they remain crawlable, discoverable via
+    # llms.txt/discovery.html, and reachable through page links. The resume PDF
+    # is a legitimately indexable document and stays listed.
     ("resume/resume.pdf", "monthly", "0.4"),
     ("resume/resume.html", "monthly", "0.5"),
     ("resume/verify.html", "monthly", "0.4"),
@@ -72,15 +70,10 @@ GSC_PRIORITY_PATHS: tuple[str, ...] = (
 def gsc_priority_urls() -> list[str]:
     return [absolute_url(path) for path in GSC_PRIORITY_PATHS]
 
+# Exact non-HTML paths submitted to IndexNow. The metadata exports were removed
+# from the sitemap (2026-08-27 sitemap hygiene), so they no longer flow through
+# indexnow_urls_from_locs; the resume PDF stays both sitemapped and submitted.
 _INDEXNOW_EXACT = {
-    "CITATION.cff",
-    "bibliography.bib",
-    "bibliography.csl.json",
-    "bibliography.ris",
-    "codemeta.json",
-    "llms.txt",
-    "feed.xml",
-    "humans.txt",
     "resume/resume.pdf",
     "resume/resume.html",
 }

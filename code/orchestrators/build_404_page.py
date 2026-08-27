@@ -1,0 +1,146 @@
+#!/usr/bin/env python3
+"""Generate or verify the GitHub Pages 404 page.
+
+GitHub Pages serves /404.html for not-found routes. The page must carry the
+standard site shell (CSP, referrer policy, rel=me, shared navigation), a
+search box, and links to the top destinations so a lost visitor can recover
+instead of bouncing. It is rendered here — never hand-edited (GENERATED.md).
+
+The search box reuses js/search-page.js: with no query the page shows the
+recent/popular default listing, so the 404 doubles as a functional search
+surface. It is marked ``noindex, follow`` with a canonical self-reference
+following common 404 SEO practice.
+"""
+
+from __future__ import annotations
+
+import argparse
+import sys
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from site_nav import (  # noqa: E402
+    CSP_META_TAG,
+    HEAD_EXTRAS,
+    INTERACTIVE_SCRIPTS,
+    MENU_ESC_SCRIPT,
+    REFERRER_POLICY_META,
+    REL_ME_LINKS,
+    render_nav,
+)
+
+OUT = REPO_ROOT / "404.html"
+
+# Top destinations offered on the 404 page (label, path). Kept to ~8 so the
+# recovery block stays scannable.
+TOP_DESTINATIONS: tuple[tuple[str, str], ...] = (
+    ("Home", "index.html"),
+    ("Publications", "publications.html"),
+    ("Works Index", "works/"),
+    ("Domains", "domains.html"),
+    ("Software", "software.html"),
+    ("Videos", "videos.html"),
+    ("Search", "search.html"),
+    ("Data Catalog", "catalog.html"),
+)
+
+
+def render() -> str:
+    links = "".join(
+        f'<a href="/{path}">{label}</a>'
+        for label, path in TOP_DESTINATIONS
+    )
+    head_extras = HEAD_EXTRAS.replace(CSP_META_TAG, CSP_META_TAG).replace(
+        REL_ME_LINKS.strip(), REL_ME_LINKS.strip()
+    )
+    return f"""<!DOCTYPE html>
+<!-- docxology:generated-404; ownership=build_404_page.py -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found — Daniel Ari Friedman</title>
+    <meta name="description" content="Page not found. Search Daniel Ari Friedman's works, videos, software, research domains, and public metadata, or use the links to top destinations.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://danielarifriedman.com/404.html">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+{head_extras}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Page Not Found — Daniel Ari Friedman">
+    <meta property="og:description" content="Page not found. Search the site or use the top destinations to find works, software, videos, and research domains.">
+    <meta property="og:url" content="https://danielarifriedman.com/404.html">
+    <meta property="og:image" content="https://danielarifriedman.com/og-image.jpg">
+    <meta property="og:image:alt" content="Daniel Ari Friedman — page not found">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Page Not Found — Daniel Ari Friedman">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260530c">
+    <meta name="theme-color" content="#0c0c0e">
+    <style>
+        .notfound-shell{{max-width:880px;margin:0 auto;padding:7rem 2rem 4rem;text-align:center}}
+        .notfound-code{{font-family:Georgia,'Times New Roman',serif;font-size:clamp(3rem,8vw,5rem);line-height:1;color:#fff;margin-bottom:.5rem}}
+        .notfound-lede{{color:var(--text-secondary);font-size:1.02rem;max-width:36rem;margin:0 auto 2rem}}
+        .search-panel{{display:grid;gap:1rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem;max-width:36rem;margin:0 auto 2.5rem}}
+        .search-input{{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;color:var(--text-primary);font:inherit;font-size:1.05rem;padding:.8rem 1rem}}
+        .destinations{{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center}}
+        .destinations a{{border:1px solid var(--border);border-radius:999px;padding:.4rem .9rem;color:var(--silver-bright);text-decoration:none;font-size:.85rem}}
+        .destinations a:hover{{border-color:var(--gold,#d4a857);color:var(--gold,#d4a857)}}
+        .result-list{{display:grid;gap:.8rem;margin-top:1.5rem;text-align:left}}
+        @media print{{.search-panel,.destinations{{display:none}}}}
+        @media (prefers-reduced-motion: reduce){{*{{animation:none!important;transition:none!important}}}}
+    </style>
+    <script type="application/ld+json">
+{{"@context": "https://schema.org", "@type": "WebPage", "name": "Page Not Found", "url": "https://danielarifriedman.com/404.html"}}
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+{render_nav(active="")}
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol><li><a href="/index.html">Home</a></li><li aria-current="page">Page Not Found</li></ol>
+    </nav>
+    <main id="main" class="notfound-shell">
+        <p class="notfound-code">404</p>
+        <h1>Page Not Found</h1>
+        <p class="notfound-lede">The address may have changed or never existed.
+        Try a search, or jump to one of the top destinations below.</p>
+        <section class="search-panel" aria-label="Site search">
+            <input id="q" class="search-input" type="search" aria-label="Search publications and works" autocomplete="off" placeholder="Search Active Inference, ants, software, works...">
+        </section>
+        <nav class="destinations" aria-label="Top destinations">
+{links}
+        </nav>
+        <section class="result-list" id="results" aria-live="polite" aria-busy="true" aria-label="Search results"></section>
+        <section id="result-status" aria-live="polite"></section>
+    </main>
+    <footer role="contentinfo">
+        <div class="footer-rule" aria-hidden="true"></div>
+        <p>Daniel Ari Friedman, PhD · <a href="/search-index.json">search-index.json</a> · <a href="/opensearch.xml">OpenSearch</a></p>
+    </footer>
+{INTERACTIVE_SCRIPTS}
+{MENU_ESC_SCRIPT}
+    <script src="/js/search-page.js?v=20260827a" defer></script>
+</body>
+</html>
+"""
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true", help="Fail if 404.html is stale")
+    args = parser.parse_args()
+    content = render()
+    if args.check:
+        if not OUT.exists() or OUT.read_text(encoding="utf-8") != content:
+            raise SystemExit("Stale generated 404.html")
+        print("checked 404.html")
+    else:
+        OUT.write_text(content, encoding="utf-8")
+        print("wrote 404.html")
+
+
+if __name__ == "__main__":
+    main()

@@ -217,7 +217,7 @@
     },
     "generated_manifest": {
       "path": "/data/generated-manifest.json",
-      "count": 54,
+      "count": 55,
       "schema": "GeneratedManifest"
     }
   },
@@ -252,14 +252,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-08-26.json",
+      "path": "/reports/accessibility_static_2026-08-27.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-08-26.json",
+      "path": "/reports/asset_size_2026-08-27.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1139,11 +1139,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 847706626,
+        "source_bytes": 849080933,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4620,
-        "artifact_bytes": 848517027
+        "artifact_file_count": 4625,
+        "artifact_bytes": 849892100
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1157,24 +1157,24 @@
   },
   "dataset_hashes": {
     "works": "b0b496c6399863ef33978356b6ec5ce80e820d4f13746ae7156a0614e9dc76ac",
-    "software": "bfe8f443a66b6b99a992ac346b156a2a7e76025e68556a57541e43f02eea5677",
+    "software": "ea75c7159a2ab9412f8e601d16503e7234fb40ecd43f7cee7386eecc2c403d56",
     "repositories": "242305e4e959b97736219886352b9ee276dd1e787a4eb43d0be028ea617e8f25",
     "artworks_index": "25adc127f1d2a46abd676ac37735a0bf6d2fbabea25992b609f203f24f78977c",
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "f4debb6ffa2e6792e3d321f3527fd6da333b60e51416b7a36efba85129bfe9a3",
     "videos_index": "47698c912bb55ab98c33ac2763ce0c35557338f04169c1d8bdd0fd2e48e9c485",
-    "search": "e869a4db38606d34fa594a7a41dc0deee82ab229e4e0e064cb7f047f2d8ff7be",
-    "claims": "0fd3485d1acb110479b4c2c96da5a03b83b51eb7e5a605828697a3eb12b046ea",
+    "search": "db9ef5eba7dfcb334b38289f399b3cea7268e48cf761b49c2c614f7d986cfb89",
+    "claims": "ed33bd6242f35c179b6cdf93660c731c901ab32d22df4ce4a1bad76ee0a25de9",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "d2f33b35f73488fe1e794dc684cb6a7574c5294d2a8fe750f3bd4b8fb6f18499",
     "repository_classification": "5e92ef88b6809b29a42e97c065dc42a8b6f76a5f07dadae979b26f3c26e85860",
-    "people": "4104e6e75f390987348ac062512a5e2b43c2ecca810b28f9dcc74192a1e378df",
-    "organizations": "3c7130d3b6181da28375fe70fd25a083813d6f85b35bab83d0878fb205a936b6",
-    "resume": "29abbae76db728c96ae294c99370a337e8d1d0bf9f259775c1ce850ae174a7bf",
+    "people": "cb748ad0ad9ae2a993b247603cf9b28f7ca8628b3633559596f2c8e561395553",
+    "organizations": "842eee04f09d0bd12620838a7dc54c9c6854c825e281709f4e3c4e3f9d4b8ec0",
+    "resume": "d102d51673122b98e778c1f2d7d17e5ba296f73eaa5092456a5a162e12bc2ff2",
     "work_enrichment": "79741839b58bcc4b76198022906e8d1baa8df890c7fb5c2a639454fd9c2c17f9",
-    "catalog": "014fd7ed51e2d5ae9081a704d17180cb8ca51b3b9f27bb1f928f336226886c49",
-    "reconciliation": "7a25948dddff7aa8e936b5d5d519fdd932c00811bd245e736afaad725ddbaa1e",
-    "generated_manifest": "f592f1619635300eb91bd1b5b8f45c8104e5d06468aca1928090ac9bdc4a4e16",
+    "catalog": "3da0511a206ee7b4e18d4751011b260de61e1ad478fb0c18b423cbb876aff70b",
+    "reconciliation": "5d380335140899291f32e83f0de70853643f78a3ea9f50ac5fce052497b6770b",
+    "generated_manifest": "b8d79070ab19b74a99a4caf079c04c7d880dc0d2a7e407dc64707d8a5b0cbaaf",
     "current_counts": "e3f47a3839c6cc37a114aed4b66af298f35df3de1b568eecd59f9b9c39a52057"
   },
   "source_provenance": {

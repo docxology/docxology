@@ -544,6 +544,12 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/build_sitemap.py",
     },
     {
+        "name": "404 page",
+        "outputs": ["404.html"],
+        "sources": ["code/src/site_nav.py", "code/orchestrators/build_404_page.py"],
+        "command": "python3 code/orchestrators/build_404_page.py",
+    },
+    {
         "name": "Compact artwork gallery index",
         "outputs": ["data/artworks-index.json"],
         "sources": ["data/artworks.json", "code/orchestrators/build_artwork_index.py"],

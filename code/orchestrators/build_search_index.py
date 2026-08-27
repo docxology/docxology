@@ -12,6 +12,19 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 OUT = REPO_ROOT / "search-index.json"
 
+# Split-index companions (search-index.json remains the complete, valid,
+# backward-compatible surface for every existing consumer).  The core file is
+# the full item set minus the heavy ``content`` fields, so a lazy client can
+# paint from ~0.5 MB and fetch content segments only for the type being
+# searched.  Only the two heavy types (work, video) ship content segments;
+# every other type's content is small enough to stay negligible in the core.
+CORE_OUT = REPO_ROOT / "search-index-core.json"
+CONTENT_SEGMENT_TYPES = ("work", "video")
+
+
+def content_segment_path(item_type: str) -> Path:
+    return REPO_ROOT / f"search-index-content-{item_type}.json"
+
 try:
     from report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at
 except ImportError:  # pragma: no cover - package import path
@@ -305,6 +318,51 @@ def resume_item(resume: dict) -> dict:
     }
 
 
+def _compact(value: object) -> str:
+    return json.dumps(value, separators=(",", ":"), ensure_ascii=False) + "\n"
+
+
+def render_split(generated_at: str | None = None) -> dict[Path, str]:
+    """Render the core + per-type content-segment companions of the main index.
+
+    The main ``search-index.json`` keeps every field for existing consumers;
+    these files exist so a progressive client can defer the ~1 MB of video and
+    work ``content`` text until a query actually needs it.
+    """
+    content = json.loads(render(generated_at))
+    core_items = []
+    segments: dict[str, list[dict]] = {typ: [] for typ in CONTENT_SEGMENT_TYPES}
+    for item in content["items"]:
+        if item["type"] in segments:
+            segments[item["type"]].append(item)
+        core_items.append({key: value for key, value in item.items() if key != "content"})
+    outputs = {
+        CORE_OUT: _compact(
+            {
+                "generated_at": content["generated_at"],
+                "source_files": content["source_files"],
+                "count": content["count"],
+                "note": (
+                    "Companion of search-index.json without item content; "
+                    "fetch search-index-content-<type>.json segments for full-text fields."
+                ),
+                "content_segments": list(CONTENT_SEGMENT_TYPES),
+                "items": core_items,
+            }
+        )
+    }
+    for typ, items in segments.items():
+        outputs[content_segment_path(typ)] = _compact(
+            {
+                "generated_at": content["generated_at"],
+                "type": typ,
+                "count": len(items),
+                "items": items,
+            }
+        )
+    return outputs
+
+
 def render(generated_at: str | None = None) -> str:
     works = load_json("data/works.json")["works"]
     enrichments = load_json("data/work-enrichment.json").get("works", {})
@@ -343,7 +401,7 @@ def render(generated_at: str | None = None) -> str:
         "count": len(items),
         "items": items,
     }
-    return json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
+    return _compact(payload)
 
 
 def main() -> None:
@@ -355,12 +413,20 @@ def main() -> None:
         candidate = json.loads(render())
         generated_at = stable_generated_at(OUT, candidate)
     content = render(generated_at)
+    outputs = {OUT: content}
+    outputs.update(render_split(generated_at))
     if args.check:
-        if not OUT.exists() or OUT.read_text(encoding="utf-8") != content:
-            raise SystemExit("Stale generated search-index.json")
+        stale = [
+            path.relative_to(REPO_ROOT).as_posix()
+            for path, expected in outputs.items()
+            if not path.exists() or path.read_text(encoding="utf-8") != expected
+        ]
+        if stale:
+            raise SystemExit("Stale generated search index surfaces: " + ", ".join(stale))
     else:
-        OUT.write_text(content, encoding="utf-8")
-    print(("checked" if args.check else "wrote") + " search-index.json")
+        for path, text in outputs.items():
+            path.write_text(text, encoding="utf-8")
+    print(("checked" if args.check else "wrote") + f" search-index.json (+{len(outputs) - 1} split surfaces)")
 
 
 if __name__ == "__main__":
