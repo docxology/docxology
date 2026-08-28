@@ -614,8 +614,8 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-08-27.json",
-        "reports/external_links_triage_2026-08-27.md"
+        "reports/external_links_triage_2026-08-28.json",
+        "reports/external_links_triage_2026-08-28.md"
       ],
       "sources": [
         "reports/external_links_2026-08-28.json"
