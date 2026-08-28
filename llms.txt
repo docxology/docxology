@@ -7,7 +7,7 @@
 > Wikidata: https://www.wikidata.org/wiki/Q138781444
 > This repository is the public research and software index for Daniel Ari Friedman. It collects a curated bibliography, paper folders with README/AGENTS/SKILL documentation, software catalogs, collaborator maps, media references, public identifiers, and website metadata.
 
-Each paper folder under `papers/` may contain `full_text.md` (full page-level text extraction from the PDF or ODT/DOCX/PPTX source) and an `images/` subdirectory (extracted figures and images). Current totals are generated in `data/current-counts.json`; the latest snapshot records 192 paper folders, 189 full-text extractions, 139 image galleries, and 8,886 extracted images. Use `full_text.md` for full-text search, reading, and citation within agent workflows.
+Each paper folder under `papers/` may contain `full_text.md` (full page-level text extraction from the PDF or ODT/DOCX/PPTX source) and an `images/` subdirectory (extracted figures and images). Current totals are generated in `data/current-counts.json`; the latest snapshot records 194 paper folders, 189 full-text extractions, 139 image galleries, and 8,886 extracted images. Use `full_text.md` for full-text search, reading, and citation within agent workflows.
 
 ## Use These Pages First
 
@@ -86,8 +86,8 @@ Each paper folder under `papers/` may contain `full_text.md` (full page-level te
 - Reconciliation report: https://github.com/docxology/docxology/blob/main/reports/reconciliation_2026-08-26.md
 - External-link report: https://github.com/docxology/docxology/blob/main/reports/external_links_2026-05-15.json
 - External-link triage: https://github.com/docxology/docxology/blob/main/reports/external_links_triage_2026-05-15.md
-- Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-08-27.json
-- Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-08-27.json
+- Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-08-28.json
+- Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-08-28.json
 - Visual QA manifest: https://github.com/docxology/docxology/blob/main/reports/visual-qa/2026-08-26/manifest.json
 
 ## Public Crawl Policy

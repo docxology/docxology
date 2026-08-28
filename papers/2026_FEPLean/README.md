@@ -33,6 +33,7 @@
 - DOI: [10.5281/zenodo.19699233](https://doi.org/10.5281/zenodo.19699233)
 - Artifact DOI: [10.5281/zenodo.22072956](https://doi.org/10.5281/zenodo.22072956)
 - Zenodo record: [https://zenodo.org/records/19699233](https://zenodo.org/records/19699233)
+- PDF: [fep-lean-manuscript-1.1.0.pdf](fep-lean-manuscript-1.1.0.pdf)
 - PDF: [fep_lean_v1_04-24-2026.pdf](fep_lean_v1_04-24-2026.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/19699233)
 

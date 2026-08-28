@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-08-27T19:27:42Z
+Generated: 2026-08-28T17:25:33Z
 
-Current public metrics: 209 curated works; 147 catalogued software repositories (108 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 202 docxology + 43 AII public repositories (158 primary, 87 forks).
+Current public metrics: 211 curated works; 147 catalogued software repositories (108 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 202 docxology + 43 AII public repositories (158 primary, 87 forks).
 
 SUMMARY
 -------
@@ -134,7 +134,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (209)
+WORKS AND PUBLICATIONS (211)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -345,6 +345,8 @@ WORKS AND PUBLICATIONS (209)
 [210] 2026 | Paper | Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus | Zenodo | 10.5281/zenodo.21864003
 [211] 2026 | Paper | Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract | Zenodo | 10.5281/zenodo.21865643
 [212] 2026 | Paper | docxplus — the Intelligent Document Container | Zenodo | 10.5281/zenodo.21983948
+[213] 2026 | Paper | Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation) | Zenodo | 10.5281/zenodo.22134545
+[214] 2026 | Paper | Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications) | Zenodo | 10.5281/zenodo.22134547
 
 SOFTWARE (67)
 -------------

@@ -40,7 +40,7 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.21750800
 - PDF SHA-256: eda76ad12a50bce01b113894c785e0915b6ba367f5bf67d17c8f586416102b93
 - Pairing confidence: strong
-- Last checked: 2026-08-26T18:35:10Z
+- Last checked: 2026-08-28T17:12:27Z
 
 ## Prerequisites
 

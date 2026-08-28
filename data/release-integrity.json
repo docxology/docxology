@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-08-13T17:52:47+00:00",
-  "source_commit_at_generation": "733b6f76228d715b6fa059db818cc1e5c06df791",
+  "source_commit_at_generation": "6f2db86c00d58b0e354cd68d8be8719b9f8b82ce",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -20,26 +20,26 @@
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "1a63eed47da70a264357d2d2e9674383cba9f5f75ddedc8dce009218b33d7466",
+    "pages/BIBLIOGRAPHY.md": "07a3cb5987c3a6620f1e3505823033bd848f594a1f2f078cc50fda6748d2af43",
     "pages/SOFTWARE.md": "0160fc30bfa4aaad56103189a8964e7840b4a01716da576daaa0a992e491f307",
     "resume/source.json": "9bfe02faeb946d3a8cd6ab916a4686e0252ada8af2995257ee7c7ad59108904a",
-    "data/current-counts.json": "e3f47a3839c6cc37a114aed4b66af298f35df3de1b568eecd59f9b9c39a52057",
-    "data/coverage-exceptions.json": "d2f33b35f73488fe1e794dc684cb6a7574c5294d2a8fe750f3bd4b8fb6f18499",
+    "data/current-counts.json": "809fad09b0db7bcc970cb59ba7688dec61d6b66db2993303df97e25ca68d19cb",
+    "data/coverage-exceptions.json": "bf281171fee44d120ba34b667146ad3d8cb0306e9ac88c3bb2f4e090f39b44cb",
     "data/repository-classification.json": "5e92ef88b6809b29a42e97c065dc42a8b6f76a5f07dadae979b26f3c26e85860",
-    "data/agent-index.json": "111dda217e8f78cf2290cb2b3e13fac910f5aa9a9d30e95de8433e7c8c5a2542",
-    "data/generated-manifest.json": "4ba88374c7d44691001520760fa5187d585d8e23475e5453dd2d0c7def9cce2d",
-    "data/pages-artifact-manifest.json": "1bc90044ccfe713bceab033fcbb214b125d3484d52bc34a40a25372392d22ec7"
+    "data/agent-index.json": "64732ecf042e3f6eb7698cc3c6fdd1ac5cb822f11c13eb14a31d1f47de3ce49b",
+    "data/generated-manifest.json": "407eeb50d4731466ad1c0b525b9d02bdce9cae4cc272a3e90041d520c266d067",
+    "data/pages-artifact-manifest.json": "290c1d13bf6657772ad0659072fda06ef790c561d92adfb02cdf4567a09b75b6"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "733b6f76228d715b6fa059db818cc1e5c06df791",
-    "artifact_file_count": 4654,
-    "artifact_bytes": 854217151,
+    "source_commit_at_generation": "6f2db86c00d58b0e354cd68d8be8719b9f8b82ce",
+    "artifact_file_count": 4656,
+    "artifact_bytes": 854274512,
     "omitted_paper_image_count": 8886
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "733b6f76228d715b6fa059db818cc1e5c06df791",
+    "candidate_source_commit": "6f2db86c00d58b0e354cd68d8be8719b9f8b82ce",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
@@ -48,14 +48,14 @@
     "policy": "No local filesystem paths, secret-like tokens, or unsafe URL schemes in public CV/source manifests."
   },
   "counts": {
-    "bibliography_docs_links": 192,
-    "bibliography_works": 209,
+    "bibliography_docs_links": 194,
+    "bibliography_works": 211,
     "domains": {
       "AII Ecosystem": 6,
       "Active Inference": 45,
       "Art & Synergetics": 16,
       "Cognitive Security": 35,
-      "Computational": 54,
+      "Computational": 56,
       "Entomology": 23,
       "Genetics & Biomedical": 15,
       "Presentations & Media": 15
@@ -63,10 +63,10 @@
     "extracted_images": 8886,
     "full_text_papers": 189,
     "generated_exports": {
-      "data_publications_ld_main_entity": 209,
+      "data_publications_ld_main_entity": 211,
       "data_software_json": 147,
       "data_software_ld_main_entity": 147,
-      "data_works_json": 209
+      "data_works_json": 211
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 43,
@@ -101,7 +101,7 @@
       "update_existing": 47,
       "zenodo_records": 148
     },
-    "paper_folder_docs": 192,
+    "paper_folder_docs": 194,
     "papers_with_images": 139,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
@@ -121,7 +121,7 @@
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 188,
+      "Papers": 190,
       "Playbooks": 2,
       "Presentations": 9,
       "Series": 2

@@ -6,7 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 21:29:42 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 17:20:28 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
@@ -27,6 +27,20 @@
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
       <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)</title>
+      <link>https://danielarifriedman.com/works/Friedman2026CognitiveIntegrityFrameworkPractical214.html</link>
+      <guid isPermaLink="false">work-Friedman2026CognitiveIntegrityFrameworkPractical214</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
+    </item>
+    <item>
+      <title>Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)</title>
+      <link>https://danielarifriedman.com/works/Friedman2026CognitiveIntegrityFrameworkComputational213.html</link>
+      <guid isPermaLink="false">work-Friedman2026CognitiveIntegrityFrameworkComputational213</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>docxplus — the Intelligent Document Container</title>
@@ -186,20 +200,6 @@
       <title>Redacted Report Template: Disclosure Control and Release Audit</title>
       <link>https://danielarifriedman.com/works/Friedman2026RedactedReportTemplateDisclosure189.html</link>
       <guid isPermaLink="false">work-Friedman2026RedactedReportTemplateDisclosure189</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Registered Report Template: Preregistration, Deviations, and Claim Boundaries</title>
-      <link>https://danielarifriedman.com/works/Friedman2026RegisteredReportTemplatePreregistration188.html</link>
-      <guid isPermaLink="false">work-Friedman2026RegisteredReportTemplatePreregistration188</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference</title>
-      <link>https://danielarifriedman.com/works/Friedman2026ReproducibleLiteratureSynthesisInfrastructure187.html</link>
-      <guid isPermaLink="false">work-Friedman2026ReproducibleLiteratureSynthesisInfrastructure187</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Computational · 2026</description>
     </item>

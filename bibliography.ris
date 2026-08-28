@@ -2907,3 +2907,27 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 212; docs: papers/2026_DocxplusIntelligentDocument/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)
+T2  - Zenodo
+DO  - 10.5281/zenodo.22134545
+UR  - https://doi.org/10.5281/zenodo.22134545
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 213; docs: papers/2026_CognitiveIntegrityFramework/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)
+T2  - Zenodo
+DO  - 10.5281/zenodo.22134547
+UR  - https://doi.org/10.5281/zenodo.22134547
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 214; docs: papers/2026_CognitiveIntegrityFramework2/
+ER  -

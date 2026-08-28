@@ -36,7 +36,7 @@
   ],
   "github_repo": "ActiveInferenceInstitute/active_fractal_rabbit",
   "source": "zenodo-only",
-  "checked_at": "2026-08-26T18:35:10Z",
+  "checked_at": "2026-08-28T17:12:27Z",
   "github_release_url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/tag/v0.2.0",
   "release_tag": "v0.2.0",
   "release_name": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations (v0.2.0)",

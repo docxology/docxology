@@ -1,0 +1,42 @@
+{
+  "title": "Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)",
+  "version": "2.0",
+  "doi": "10.5281/zenodo.22134547",
+  "doi_url": "https://doi.org/10.5281/zenodo.22134547",
+  "zenodo_record": "https://zenodo.org/records/22134547",
+  "record_id": "22134548",
+  "publication_date": "2026-08-26",
+  "resource_type": {
+    "title": "Preprint",
+    "type": "publication",
+    "subtype": "preprint"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "This unified paper (originally Parts 3 and 4 of the Cognitive Security for Multiagent Operators series) combines the practitioner deployment guide with a rigorous cross-domain application of the Cognitive Integrity Framework (CIF). **Practitioner Guidance (§1–§8).** Translates the formal results of Parts 1 and 2 into accessible engineering guidance: operator posture assessment, human oversight checklists, agent security invariants, deployment configuration, risk assessment, attack scenarios, subagent hardening, incident-response playbooks, monitoring strategies, cost–benefit analysis, common pitfalls, case studies, and operator risk frameworks. **Cross-Domain Applications (§9–§10).** The CIF-AD-OODA integration model is applied to analyze Goal Hijacking across ten critical domains. Cross-domain synthesis reveals three universal attack patterns and four novel defense extensions. This is Part 3+4 of a three-part series: - Part 1 (DOI: 10.5281/zenodo.18364119): Formal foundations and theoretical analysis - Part 2 (DOI: 10.5281/zenodo.18364128): Computational validation and implementation - Part 3+4 (this paper): Practitioner guidance and cross-domain CIF-AD-OODA applications",
+  "keywords": [
+    "cognitive security",
+    "multiagent systems",
+    "AI safety",
+    "prompt injection",
+    "trust calculus",
+    "defense in depth"
+  ],
+  "files": [
+    {
+      "name": "cogsec_multiagent_3_practical_combined.pdf",
+      "size_bytes": 1389206,
+      "checksum": "md5:2ef5c11898ec5d82ab2d5ed59897eee3",
+      "download_url": "https://zenodo.org/api/records/22134548/files/cogsec_multiagent_3_practical_combined.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-08-28T17:19:17Z"
+}

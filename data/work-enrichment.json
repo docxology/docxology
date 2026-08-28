@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-26T18:08:35Z",
+  "generated_at": "2026-08-28T17:19:31Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 209,
+  "count": 211,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -4261,6 +4261,48 @@
         "Theoretical analysis"
       ],
       "source": "papers/2026_DocxplusIntelligentDocument/README.md"
+    },
+    "Friedman2026CognitiveIntegrityFrameworkComputational213": {
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkComputational213",
+      "abstract": "This paper presents the computational validation of the Cognitive Integrity Framework (CIF) whose formal foundations are established in Part 1 (DOI: 10.5281/zenodo.18364119). We implement the CIF defense suite --- cognitive firewalls, belief sandboxes, tripwires, drift and anomaly scoring, trust calculus with bounded delegation, provenance tracking, and Byzantine-tolerant consensus --- and evaluate it on an integrated 1,475-item attack corpus spanning fifteen categories, together with a 120-item benign corpus whose harder half carries attack-adjacent vocabulary. Multi-tier evaluation. Real pipeline evaluation across 30 seeds yields a mean detection rate of 86.3% (95% CI 85.5%-87.1%) at an 18.5% false-positive rate on the Claude Code architecture, measured on an injection-only 100-sample-per-seed arm. LLM-backed validation (N=10, Gemma 3 4B) reaches 80-100% across two topologies and is re",
+      "keywords": [
+        "cognitive security",
+        "multiagent systems",
+        "AI safety",
+        "prompt injection",
+        "trust calculus",
+        "defense in depth"
+      ],
+      "findings": [
+        "cognitive security",
+        "multiagent systems",
+        "AI safety",
+        "prompt injection",
+        "trust calculus"
+      ],
+      "methods": [],
+      "source": "papers/2026_CognitiveIntegrityFramework/README.md"
+    },
+    "Friedman2026CognitiveIntegrityFrameworkPractical214": {
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkPractical214",
+      "abstract": "This unified paper (originally Parts 3 and 4 of the Cognitive Security for Multiagent Operators series) combines the practitioner deployment guide with a rigorous cross-domain application of the Cognitive Integrity Framework (CIF). Practitioner Guidance (§1–§8). Translates the formal results of Parts 1 and 2 into accessible engineering guidance: operator posture assessment, human oversight checklists, agent security invariants, deployment configuration, risk assessment, attack scenarios, subagent hardening, incident-response playbooks, monitoring strategies, cost–benefit analysis, common pitfalls, case studies, and operator risk frameworks. Cross-Domain Applications (§9–§10). The CIF-AD-OODA integration model is applied to analyze Goal Hijacking across ten critical domains. Cross-domain synthesis reveals three universal attack patterns and four novel defense extensions. This is Part 3+4",
+      "keywords": [
+        "cognitive security",
+        "multiagent systems",
+        "AI safety",
+        "prompt injection",
+        "trust calculus",
+        "defense in depth"
+      ],
+      "findings": [
+        "cognitive security",
+        "multiagent systems",
+        "AI safety",
+        "prompt injection",
+        "trust calculus"
+      ],
+      "methods": [],
+      "source": "papers/2026_CognitiveIntegrityFramework2/README.md"
     }
   }
 }

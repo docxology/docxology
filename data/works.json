@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-26T01:31:42Z",
+  "generated_at": "2026-08-28T17:19:21Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
-  "count": 209,
+  "count": 211,
   "works": [
     {
       "num": 1,
@@ -5189,6 +5189,48 @@
       "authors": [
         "Friedman, Daniel Ari"
       ]
+    },
+    {
+      "num": 213,
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkComputational213",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.22134545",
+      "doi": "10.5281/zenodo.22134545",
+      "docs_path": "papers/2026_CognitiveIntegrityFramework/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": []
+    },
+    {
+      "num": 214,
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkPractical214",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.22134547",
+      "doi": "10.5281/zenodo.22134547",
+      "docs_path": "papers/2026_CognitiveIntegrityFramework2/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": []
     }
   ]
 }

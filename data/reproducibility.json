@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T18:40:21Z",
+  "generated_at": "2026-08-28T17:20:05Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,18 +61,18 @@
     }
   ],
   "max_score": 6,
-  "work_count": 209,
+  "work_count": 211,
   "signal_totals": {
-    "persistent_id": 194,
-    "public_archive": 152,
+    "persistent_id": 196,
+    "public_archive": 154,
     "open_full_text": 189,
-    "source_documents": 192,
+    "source_documents": 194,
     "executable_code": 63,
-    "agent_readable": 192
+    "agent_readable": 194
   },
   "band_counts": {
     "independently reproducible": 149,
-    "independently checkable": 43,
+    "independently checkable": 45,
     "citable only": 8,
     "unverified": 9
   },
@@ -81,11 +81,11 @@
     "1": 4,
     "2": 4,
     "3": 8,
-    "4": 35,
+    "4": 37,
     "5": 88,
     "6": 61
   },
-  "mean_score": 4.699,
+  "mean_score": 4.692,
   "works": [
     {
       "num": 10,
@@ -3698,6 +3698,44 @@
       "title": "GeneralizedNotationNotation (GNN)",
       "year": 2026,
       "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 213,
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkComputational213",
+      "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 4,
+      "band": "independently checkable",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
+      "num": 214,
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkPractical214",
+      "title": "Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)",
+      "year": 2026,
+      "domain_name": "Computational",
       "type": "Paper",
       "score": 4,
       "band": "independently checkable",
