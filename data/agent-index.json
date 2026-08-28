@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "generated_at": "2026-08-28T17:19:22+00:00",
+  "generated_at": "2026-08-28T17:24:56+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -245,28 +245,28 @@
     },
     {
       "id": "paired-publications",
-      "path": "/reports/paired_publications_2026-08-26.json",
+      "path": "/reports/paired_publications_2026-08-28.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-08-27.json",
+      "path": "/reports/accessibility_static_2026-08-28.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-08-27.json",
+      "path": "/reports/asset_size_2026-08-28.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "live-site",
-      "path": "/reports/live_site_verification_2026-08-26.json",
+      "path": "/reports/live_site_verification_2026-08-28.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -939,7 +939,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-08-28T17:19:22+00:00",
+        "checked_at": "2026-08-28T17:24:56+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1080,14 +1080,14 @@
           "raw_candidates": 487
         },
         "paired_publications": {
-          "already_reviewed": 397,
+          "already_reviewed": 399,
           "create_new": 0,
           "github_releases": 229,
-          "needs_review": 2,
-          "pairs": 446,
+          "needs_review": 3,
+          "pairs": 449,
           "strong_pairs": 48,
           "update_existing": 47,
-          "zenodo_records": 148
+          "zenodo_records": 150
         },
         "paper_folder_docs": 194,
         "papers_with_images": 139,
@@ -1115,12 +1115,12 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-08-28T17:19:22+00:00",
+      "generated_at": "2026-08-28T17:24:56+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
         "paired_publication_decisions": "data/paired-publication-decisions.json",
-        "paired_publications": "reports/paired_publications_2026-08-26.json",
+        "paired_publications": "reports/paired_publications_2026-08-28.json",
         "paper_folders": "papers/README.md",
         "public_source_snapshot": "reports/public_source_snapshot_2026-08-26.json",
         "software_catalog": "pages/SOFTWARE.md",
@@ -1139,11 +1139,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 853458197,
+        "source_bytes": 863238914,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4656,
-        "artifact_bytes": 854274512
+        "artifact_file_count": 4680,
+        "artifact_bytes": 864059662
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1157,25 +1157,25 @@
   },
   "dataset_hashes": {
     "works": "1692ac4553246ad469ddf491a246a1d16fb76ebaa7885e1e676e660c091005c7",
-    "software": "a6e5ae0049616df6e5329414ae5739b60587cb45c51cd13d25585a5953a96784",
+    "software": "1e9f7247c14c94c673dcd0c9065a86392742b601990476efc6d1f9851de3ec95",
     "repositories": "242305e4e959b97736219886352b9ee276dd1e787a4eb43d0be028ea617e8f25",
     "artworks_index": "25adc127f1d2a46abd676ac37735a0bf6d2fbabea25992b609f203f24f78977c",
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "f4debb6ffa2e6792e3d321f3527fd6da333b60e51416b7a36efba85129bfe9a3",
     "videos_index": "47698c912bb55ab98c33ac2763ce0c35557338f04169c1d8bdd0fd2e48e9c485",
-    "search": "15291804e800961dfffe2e82e18017c36f81bbf099fba2799c75c448196b9019",
-    "claims": "3941276248607a487a0a61fa1b153ec27d3d0108e41ff9c6d8988bba8a487921",
+    "search": "73b58659a3f0b8c5e724169b19875339b0ec63a8341e84e0d0759197bf5d13bc",
+    "claims": "cfcaa120d8ac8ef28a1363f0317a5aeff5afe3953064ce6f1406dcebefd97577",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "bf281171fee44d120ba34b667146ad3d8cb0306e9ac88c3bb2f4e090f39b44cb",
     "repository_classification": "5e92ef88b6809b29a42e97c065dc42a8b6f76a5f07dadae979b26f3c26e85860",
-    "people": "34c1e9c787213d595a9d738e1391b5572840fda3204c834c1b647272c3f77aa8",
-    "organizations": "89ef67d9709e4482224fce63ca07dbac3e185851ef621cea0bcb04ece259d2b1",
-    "resume": "a81fdef64c5874128cfe72fdef402bccedb201ed8bbc05a9ee1edb455e539f09",
+    "people": "82a98b310d78b89b4b55fda623cdfd58cf439bda9c58d506809420542360e519",
+    "organizations": "8dc6485186eab5e27ca83d950c38970a5c1d51098ae8503c677ed6fb0433e1a2",
+    "resume": "51eb3b98fb52c8dcd81941acfe856ad449c7c002fbda1797519c1b368e2dc865",
     "work_enrichment": "fa93e00b96c4efdfe120daada352fe1dc9d40db6b7fdd4aef3c27e68433ec0a5",
-    "catalog": "e964539731ef467f9e102aeca7ff19d6e1e02d14f4c98a612bdab4a2009df324",
+    "catalog": "302eae3849f7e9a1f2f5a30671f76303f8819c78a004d16d21a17927351f797f",
     "reconciliation": "df63bb94c1ac24e1f3560e67450a0bc659bb97f42309f65651638ad3ab708f0f",
-    "generated_manifest": "407eeb50d4731466ad1c0b525b9d02bdce9cae4cc272a3e90041d520c266d067",
-    "current_counts": "809fad09b0db7bcc970cb59ba7688dec61d6b66db2993303df97e25ca68d19cb"
+    "generated_manifest": "b39128124fd7bd800d1c2b9d8e91e2501359eed2b50d47d5cf0763b40b3bfe1d",
+    "current_counts": "cf6a4b3217c950f5de47383fa7c52df201c0aa5fd5b90d8c706ef4c7e6907921"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -1195,10 +1195,10 @@
     "paper_image_fallback": "Use the Pages artifact manifest GitHub tree/raw templates for omitted extracted paper images."
   },
   "verification_status": {
-    "live_report": "/reports/live_site_verification_2026-08-26.json",
-    "generated_at": "2026-08-26T20:48:17Z",
-    "overall_ok": true,
-    "passing": 17,
+    "live_report": "/reports/live_site_verification_2026-08-28.json",
+    "generated_at": "2026-08-28T18:57:14Z",
+    "overall_ok": false,
+    "passing": 14,
     "checked_urls": 17,
     "pages_status": "built"
   },
@@ -1247,14 +1247,14 @@
       "raw_candidates": 487
     },
     "paired_publications": {
-      "already_reviewed": 397,
+      "already_reviewed": 399,
       "create_new": 0,
       "github_releases": 229,
-      "needs_review": 2,
-      "pairs": 446,
+      "needs_review": 3,
+      "pairs": 449,
       "strong_pairs": 48,
       "update_existing": 47,
-      "zenodo_records": 148
+      "zenodo_records": 150
     },
     "paper_folder_docs": 194,
     "papers_with_images": 139,
