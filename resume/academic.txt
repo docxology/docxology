@@ -14,7 +14,7 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-08-28T17:25:33Z
+Generated: 2026-08-28T21:35:01Z
 
 Current public metrics: 211 curated works; 147 catalogued software repositories (108 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 202 docxology + 43 AII public repositories (158 primary, 87 forks).
 
@@ -152,7 +152,7 @@ WORKS AND PUBLICATIONS (211)
 [014] 2025 | Paper | MDKV: A Multitrack Markdown Container for Structured, Portable Documents | Zenodo | 10.5281/zenodo.16790554
 [015] 2025 | Paper | Markdown Decision Process: A Framework for Probabilistic Document Analysis | Zenodo | 10.5281/zenodo.17244386
 [016] 2025 | Paper | On Cognitive Art & Science: Toward Wholeness From Both Sides | Zenodo | 10.5281/zenodo.16740438
-[017] 2025 | Paper | On Time | Zenodo | 10.5281/zenodo.15168381
+[017] 2025 | Paper | On Time | Zenodo | 10.5281/zenodo.15168382
 [018] 2025 | Paper | QuadMath: An Analytical Review of 4D and Quadray Coordinates | Zenodo | 10.5281/zenodo.16887799
 [019] 2025 | Paper | ResNei: Solution Design Document | Zenodo | 10.5281/zenodo.15389682
 [020] 2025 | Paper | Symergetics: Symbolic Synergetics for Rational Arithmetic | Zenodo | 10.5281/zenodo.17114389

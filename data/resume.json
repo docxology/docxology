@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T17:25:33Z",
+  "generated_at": "2026-08-28T21:35:01Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "92a30efacd1f340c866e3aceb4748f7e82ccc84bcb399cc7ff00f727ab1a6117",
+      "sha256": "63de138cbdad924097e704b41851ea375e9d26c12308392dd5abf9858c6cbbab",
       "files": [
         {
           "path": "resume/source.json",
@@ -98,12 +98,12 @@
         {
           "path": "data/works.json",
           "bytes": 170214,
-          "sha256": "1692ac4553246ad469ddf491a246a1d16fb76ebaa7885e1e676e660c091005c7"
+          "sha256": "d82597ccb62778f1d244e693f94cd392c6533c5c19adcee329dd4a8da2ebdd38"
         },
         {
           "path": "data/software.json",
           "bytes": 72743,
-          "sha256": "1e9f7247c14c94c673dcd0c9065a86392742b601990476efc6d1f9851de3ec95"
+          "sha256": "c480a1ec634bc2b9636056e89265ea043fdaf70265deea8b8102d6d1f58c654e"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "cfcaa120d8ac8ef28a1363f0317a5aeff5afe3953064ce6f1406dcebefd97577"
+          "sha256": "996a8f80a84f71ac841f74f7b2ab8bad8988b9663682839d5c0687e7e67a811d"
         },
         {
           "path": "data/github-repositories.json",
@@ -2725,8 +2725,8 @@
       "type": "Paper",
       "title": "On Time",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.15168381",
-      "doi": "10.5281/zenodo.15168381",
+      "url": "https://doi.org/10.5281/zenodo.15168382",
+      "doi": "10.5281/zenodo.15168382",
       "docs_path": "papers/2025_OnTime/",
       "has_paper_folder": true,
       "has_full_text": true,
@@ -9315,7 +9315,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-28T17:24:56+00:00",
+      "checked_at": "2026-08-28T21:34:19+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9330,7 +9330,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-28T17:24:56+00:00",
+      "checked_at": "2026-08-28T21:34:19+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

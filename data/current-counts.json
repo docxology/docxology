@@ -14,7 +14,7 @@
       "Genetics & Biomedical": 15,
       "Presentations & Media": 15
     },
-    "extracted_images": 8886,
+    "extracted_images": 8944,
     "full_text_papers": 189,
     "generated_exports": {
       "data_publications_ld_main_entity": 211,
@@ -81,7 +81,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-08-28T17:24:56+00:00",
+  "generated_at": "2026-08-28T21:34:19+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

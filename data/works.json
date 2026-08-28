@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T17:19:21Z",
+  "generated_at": "2026-08-28T21:34:18Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
   "count": 211,
@@ -419,8 +419,8 @@
       "type": "Paper",
       "title": "On Time",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.15168381",
-      "doi": "10.5281/zenodo.15168381",
+      "url": "https://doi.org/10.5281/zenodo.15168382",
+      "doi": "10.5281/zenodo.15168382",
       "docs_path": "papers/2025_OnTime/",
       "has_paper_folder": true,
       "has_full_text": true,
