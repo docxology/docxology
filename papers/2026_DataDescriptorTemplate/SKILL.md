@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Data Descriptor Template: Schema, Provenance, and Release Readiness"
 description: "This exemplar demonstrates a data descriptor workflow in which the schema, file inventory, provenance chain, license boundary, and validation gate are treated as first-class research artifacts rather than afterthoughts. It ships a small, public, synt..."
 tags: ["data-descriptor", "fair-data", "provenance", "schema-validation"]
@@ -36,7 +37,7 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21298883
+- Canonical DOI: 10.5281/zenodo.21298883
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-10T19:31:29Z

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Convergence Analysis of Gradient Descent Optimization"
 description: "This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/template). The implementation lives in projects/template..."
 tags: ["optimization-algorithms", "gradient-descent", "convergence-analysis", "numerical-methods", "mathematical-programming", "reproducible-research", "infrastructure-automation"]
@@ -39,10 +40,10 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20417136
+- Canonical DOI: 10.5281/zenodo.20417136
 - PDF SHA-256: cd54b95893501467503fab2c4b432573306bc94f7040085550beb87d094b4e50
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-28T17:12:23Z
 
 ## Prerequisites
 

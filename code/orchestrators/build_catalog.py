@@ -14,6 +14,11 @@ JSON_OUT = REPO_ROOT / "data" / "catalog.json"
 HTML_OUT = REPO_ROOT / "catalog.html"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from generated_outputs import (  # noqa: E402
+    read_generated_output_text,
+    stale_output_paths,
+    write_output_texts,
+)
 from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Data Catalog", "catalog.html")]
@@ -33,9 +38,9 @@ CREATOR = {
 LICENSE = "https://creativecommons.org/licenses/by/4.0/"
 
 try:
-    from report_paths import latest_report, latest_subdir_file, rel, report_date_string
+    from report_paths import latest_source_report, latest_source_subdir_file, rel, report_date_string
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import latest_report, latest_subdir_file, rel, report_date_string
+    from .report_paths import latest_source_report, latest_source_subdir_file, rel, report_date_string
 
 
 def _latest_rel(pattern: str, _fallback: str) -> str:
@@ -43,7 +48,7 @@ def _latest_rel(pattern: str, _fallback: str) -> str:
     hardcoded path. A silently-fabricated 2026-05 fallback masked real relief.
     """
     try:
-        return rel(latest_report(pattern))
+        return rel(latest_source_report(pattern))
     except FileNotFoundError:
         raise FileNotFoundError(
             f"build_catalog: no report matches {pattern!r}; refusing a stale fallback link"
@@ -52,7 +57,7 @@ def _latest_rel(pattern: str, _fallback: str) -> str:
 
 def _latest_subdir_rel(prefix: str, filename: str, fallback: str) -> str:
     try:
-        latest = latest_subdir_file(prefix, filename)
+        latest = latest_source_subdir_file(prefix, filename)
     except FileNotFoundError:
         return fallback
     return rel(latest)
@@ -118,6 +123,7 @@ def datasets() -> list[tuple[str, str, str, str]]:
     ("people", "People Index", "data/people.json", "Compact collaborator and identity context for agentic discovery."),
     ("organizations", "Organizations Index", "data/organizations.json", "Organization context for AII, COGSEC, Stanford, and teaching affiliations."),
     ("claims", "Evidence Claims", "data/claims.json", "Claim-level evidence ledger with confidence, source links, and caveats."),
+    ("scholar-verification-receipt", "Scholar Verification Receipt", "data/scholar-verification-receipt.json", "Direct-authenticated Scholar verification assertion bound by SHA-256 to the dated canonical metric snapshot; it is provenance for the curated snapshot, not a new live fetch."),
     ("resume", "Structured Resume and CV", "data/resume.json", "Merged resume/CV data with contact, education, experience, works, software, GitHub inventory metrics, service, media, and art-use records."),
     ("resume-html", "Accessible HTML CV", "resume/resume.html", "No-JavaScript semantic CV view with keyboard-friendly headings, lists, links, current generated counts, and format alternatives."),
     ("resume-verify", "Resume Verification Page", "resume/verify.html", "HTML verification surface with source manifest, generated JSON hash, final PDF hash, file sizes, counts, and artifact links."),
@@ -125,12 +131,14 @@ def datasets() -> list[tuple[str, str, str, str]]:
     ("current-counts", "Current Counts Snapshot", "data/current-counts.json", "Generated volatile-count snapshot with source paths, generation metadata, and rebuild commands."),
     ("agent-index", "Agent Route Manifest", "data/agent-index.json", "Stable machine-readable route map, dataset schemas, freshness policy, counts, and query recipes."),
     ("work-enrichment", "Work Enrichment", "data/work-enrichment.json", "Extracted abstracts, keywords, methods, and findings from per-paper README and SKILL files."),
-    (f"full-text-corpus", "Full-Text Extraction Corpus", "papers/", f"{ft_count} extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus {pw_img_count} images/ subdirectories with {total_img:,} extracted figures and inline image references. Path pattern: papers/{{YYYY_Topic}}/full_text.md and papers/{{YYYY_Topic}}/images/."),
+    ("full-text-corpus", "Full-Text Extraction Corpus", "papers/", f"{ft_count} extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus {pw_img_count} images/ subdirectories with {total_img:,} extracted figures and inline image references. Path pattern: papers/{{YYYY_Topic}}/full_text.md and papers/{{YYYY_Topic}}/images/."),
     ("generated-manifest", "Generated Artifact Manifest", "data/generated-manifest.json", "Source-to-output map and rebuild commands for generated files."),
     ("search", "Search Index", "search-index.json", "Site-wide index covering pages, works, software, people, organizations, and claims."),
     ("public-source-inventory", "Public Source Inventory", _latest_rel("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json"), "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages."),
     ("public-source-snapshot", "Public Source Snapshot", _latest_rel("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json"), "Current public API freshness snapshot with normalized drift-comparison facts."),
     ("paired-publication-decisions", "Paired Publication Decisions", "data/paired-publication-decisions.json", "Manual review decisions for ambiguous GitHub release + Zenodo record pair candidates."),
+    ("public-source-observation-decisions", "Public-Source Observation Decisions", "data/public-source-observation-decisions.json", "SHA-256-bound review decisions for changed public-source observations; changed evidence returns to review."),
+    ("biographical-claim-decisions", "Biographical Claim Decisions", "data/biographical-claim-decisions.json", "SHA-256-bound review decisions for time-sensitive biographical claims and their cited evidence."),
     ("external-links", "External Link Report", _latest_rel("external_links_[0-9]*.json", "reports/external_links_2026-05-13.json"), "Scoped network freshness report for site-critical outbound links."),
     ("external-link-triage", "External Link Triage", _latest_rel("external_links_triage_*.json", "reports/external_links_triage_2026-05-13.json"), "Categorized link warnings: bot-protected, transient, timeout, stale, and review."),
     ("asset-size", "Asset Size Audit", _latest_rel("asset_size_*.json", "reports/asset_size_2026-05-13.json"), "Size report for public HTML, OG images, data exports, and runtime assets."),
@@ -159,10 +167,11 @@ def encoding_format(rel: str) -> str:
 
 
 def existing_date_modified() -> str | None:
-    if not JSON_OUT.exists():
+    content = read_generated_output_text(REPO_ROOT, JSON_OUT)
+    if content is None:
         return None
     try:
-        return json.loads(JSON_OUT.read_text(encoding="utf-8")).get("dateModified")
+        return json.loads(content).get("dateModified")
     except json.JSONDecodeError:
         return None
 
@@ -275,15 +284,16 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if generated catalog files are stale")
     args = parser.parse_args()
-    stale = []
     date_modified = existing_date_modified() if args.check else None
-    for path, content in outputs(date_modified).items():
-        if args.check:
-            if not path.exists() or path.read_text(encoding="utf-8") != content:
-                stale.append(str(path.relative_to(REPO_ROOT)))
-        else:
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(content, encoding="utf-8")
+    rendered_outputs = outputs(date_modified)
+    stale = []
+    if args.check:
+        stale = [
+            str(path.relative_to(REPO_ROOT))
+            for path in stale_output_paths(rendered_outputs, repo_root=REPO_ROOT)
+        ]
+    else:
+        write_output_texts(rendered_outputs, repo_root=REPO_ROOT)
     if stale:
         raise SystemExit("Stale generated catalog files: " + ", ".join(stale))
     print(("checked" if args.check else "wrote") + " catalog files")

@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ NarrativeInformationMgmt
 
 **Richard J. Cordes, Shaun Applegate-Swanson, Daniel A. Friedman, Virginia Bleu Knight, Alexandra Mikhailova** (2021) · *Zenodo*

@@ -9,9 +9,10 @@ For each paper folder under papers/ that contains at least one PDF:
   - OCR with tesseract for scanned/image-only PDFs
 
 Usage:
-    python3 extract_paper_texts.py [--force] [--ocr-only-image-pdfs]
+    uv run --extra pdf-extraction python3 extract_paper_texts.py [--force]
 """
 
+import argparse
 import sys
 import os
 import json
@@ -20,26 +21,62 @@ import subprocess
 import shutil
 from pathlib import Path
 
-try:
-    import fitz  # PyMuPDF
-except ImportError:
-    print("ERROR: PyMuPDF not installed. Run: pip3 install pymupdf")
-    sys.exit(1)
+fitz = None
+pypdf = None
+HAVE_PYMUPDF = False
+HAVE_PYPDF = False
+_BACKENDS_LOADED = False
+
+
+def load_pdf_backends() -> None:
+    """Load optional PDF modules only after the CLI has parsed its arguments."""
+    global HAVE_PYMUPDF, HAVE_PYPDF, _BACKENDS_LOADED, fitz, pypdf
+    if _BACKENDS_LOADED:
+        return
+    _BACKENDS_LOADED = True
+    try:
+        import fitz as pymupdf  # PyMuPDF
+    except ImportError:
+        pass
+    else:
+        fitz = pymupdf
+        HAVE_PYMUPDF = True
+    try:
+        import pypdf as pypdf_module
+    except ImportError:
+        pass
+    else:
+        pypdf = pypdf_module
+        HAVE_PYPDF = True
 
 REPO_ROOT = Path(__file__).resolve().parents[2]  # docxology/
 PAPERS_DIR = REPO_ROOT / "papers"
 TESSERACT = shutil.which("tesseract")
 PDFTOTEXT = shutil.which("pdftotext")
 
-def is_scanned_pdf(doc):
+def is_scanned_pdf(pdf_path):
     """Check if a PDF is likely scanned (image-only) by checking text coverage on first few pages."""
-    text_chars = 0
-    for i in range(min(5, len(doc))):
-        text_chars += len(doc[i].get_text().strip())
-    return text_chars < 100
+    load_pdf_backends()
+    if HAVE_PYMUPDF:
+        doc = fitz.open(str(pdf_path))
+        text_chars = 0
+        for i in range(min(5, len(doc))):
+            text_chars += len(doc[i].get_text().strip())
+        doc.close()
+        return text_chars < 100
+    if HAVE_PYPDF:
+        reader = pypdf.PdfReader(str(pdf_path))
+        text_chars = 0
+        for i in range(min(5, len(reader.pages))):
+            text_chars += len((reader.pages[i].extract_text() or "").strip())
+        return text_chars < 100
+    return False
 
 def extract_text_pymupdf(pdf_path):
     """Extract text using PyMuPDF."""
+    load_pdf_backends()
+    if not HAVE_PYMUPDF:
+        return []
     doc = fitz.open(str(pdf_path))
     pages = []
     for i, page in enumerate(doc):
@@ -48,8 +85,22 @@ def extract_text_pymupdf(pdf_path):
     doc.close()
     return pages
 
+def extract_text_pypdf(pdf_path):
+    """Extract text using pypdf."""
+    load_pdf_backends()
+    if not HAVE_PYPDF:
+        return []
+    reader = pypdf.PdfReader(str(pdf_path))
+    pages = []
+    for i, page in enumerate(reader.pages):
+        text = page.extract_text() or ""
+        pages.append((i + 1, text))
+    return pages
+
 def extract_text_pdftotext(pdf_path):
     """Extract text using pdftotext as fallback."""
+    if not PDFTOTEXT:
+        return []
     result = subprocess.run(
         [PDFTOTEXT, "-layout", str(pdf_path), "-"],
         capture_output=True, text=True, timeout=60
@@ -102,6 +153,9 @@ def extract_images(pdf_path, output_dir):
     Returns a list of (page_num, filename) tuples so the caller can
     embed image references in the markdown at the correct page position.
     """
+    load_pdf_backends()
+    if not HAVE_PYMUPDF:
+        return []
     doc = fitz.open(str(pdf_path))
     extracted = []
 
@@ -212,21 +266,26 @@ def process_paper(paper_dir, force=False):
     
     # Extract text
     pages = []
-    method = "pymupdf"
+    method = "pymupdf" if HAVE_PYMUPDF else "pypdf"
     try:
-        doc = fitz.open(str(main_pdf))
-        scanned = is_scanned_pdf(doc)
-        doc.close()
+        scanned = is_scanned_pdf(main_pdf)
         
         if scanned and TESSERACT:
             # OCR for scanned PDFs
             method = "ocr"
             pages = ocr_pdf(main_pdf)
             if not pages:
-                method = "pymupdf_fallback"
-                pages = extract_text_pymupdf(main_pdf)
+                if HAVE_PYMUPDF:
+                    method = "pymupdf_fallback"
+                    pages = extract_text_pymupdf(main_pdf)
+                else:
+                    method = "pypdf_fallback"
+                    pages = extract_text_pypdf(main_pdf)
         else:
-            pages = extract_text_pymupdf(main_pdf)
+            if HAVE_PYMUPDF:
+                pages = extract_text_pymupdf(main_pdf)
+            else:
+                pages = extract_text_pypdf(main_pdf)
             if not pages and PDFTOTEXT:
                 method = "pdftotext"
                 pages = extract_text_pdftotext(main_pdf)
@@ -250,8 +309,18 @@ def process_paper(paper_dir, force=False):
 
     return f"ok ({len(pages)} pages, {len(images)} images, {method})"
 
-def main():
-    force = "--force" in sys.argv
+def main(argv=None) -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--force", action="store_true", help="re-extract papers that already have full_text.md")
+    args = parser.parse_args(argv)
+    load_pdf_backends()
+    if not HAVE_PYMUPDF and not HAVE_PYPDF and not PDFTOTEXT:
+        print(
+            "ERROR: Neither PyMuPDF, pypdf, nor pdftotext is available. "
+            "Run `uv sync --extra pdf-extraction` or install a system pdftotext binary."
+        )
+        return 1
+    force = args.force
     
     papers = sorted(d for d in PAPERS_DIR.iterdir() if d.is_dir())
     stats = {"ok": 0, "skipped": 0, "no_pdf": 0, "error": 0}
@@ -284,6 +353,7 @@ def main():
     print(f"  No PDF: {stats['no_pdf']}")
     print(f"  Errors: {stats['error']}")
     print(f"  Total: {sum(stats.values())}")
+    return 1 if stats["error"] else 0
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

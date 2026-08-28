@@ -22,7 +22,7 @@ keywords: "Daniel Ari Friedman, active inference, COLLABORATORS"
 
 **Domains**: Active Inference, Free Energy Principle, Consciousness
 
-Karl Friston is the originator of the free energy principle and Active Inference framework. He serves on the [AII Scientific Advisory Board](https://www.activeinference.institute/scientific-advisory-board) (2025–). Friedman and Friston's collaboration began with "Of woodlice and men" (2018, *ALIUS Bulletin*, 88 citations) and has continued through co-authored papers on variational synthesis, evolutionary dynamics (2023), federated inference (2024, 45 citations), and multi-agent Active Inference.
+Karl Friston is the originator of the free energy principle and Active Inference framework. He serves on the [AII Scientific Advisory Board](https://activeinference.institute/structure/scientific-advisory-board/) (2025–). Friedman and Friston's collaboration began with "Of woodlice and men" (2018, *ALIUS Bulletin*, 88 citations) and has continued through co-authored papers on variational synthesis, evolutionary dynamics (2023), federated inference (2024, 45 citations), and multi-agent Active Inference.
 
 **Joint publications**: [WoodliceAndMen](../papers/2018_WoodliceAndMen/) · [VariationalSynthesis](../papers/2023_VariationalSynthesis/) · [FederatedInference](../papers/2024_FederatedInference/)
 
@@ -62,7 +62,7 @@ Tim Linksvayer co-mentored Friedman's postdoctoral work on evolutionary genomics
 
 **Domains**: Multi-Agent Active Inference, Shared Cognition
 
-Albarracin serves on the [AII Scientific Advisory Board](https://www.activeinference.institute/scientific-advisory-board) (2025–). She and Friedman have collaborated on multi-agent Active Inference models, particularly on shared protentions (anticipatory representations) in multi-agent systems.
+Albarracin serves on the [AII Scientific Advisory Board](https://activeinference.institute/structure/scientific-advisory-board/) (2025–). She and Friedman have collaborated on multi-agent Active Inference models, particularly on shared protentions (anticipatory representations) in multi-agent systems.
 
 **Joint publications**: [SharedProtentions](../papers/2024_SharedProtentions/)
 
@@ -72,7 +72,7 @@ Albarracin serves on the [AII Scientific Advisory Board](https://www.activeinfer
 
 **Domains**: Active Inference, Multi-Scale Modeling, Phenomenology
 
-Ramstead serves on the [AII Scientific Advisory Board](https://www.activeinference.institute/scientific-advisory-board) (2025–). He and Friedman have collaborated on formal Active Inference architectures and multi-agent systems, including work on shared protentions and federated inference.
+Ramstead serves on the [AII Scientific Advisory Board](https://activeinference.institute/structure/scientific-advisory-board/) (2025–). He and Friedman have collaborated on formal Active Inference architectures and multi-agent systems, including work on shared protentions and federated inference.
 
 **Joint publications**: [SharedProtentions](../papers/2024_SharedProtentions/) · [FederatedInference](../papers/2024_FederatedInference/)
 
@@ -92,7 +92,7 @@ Saund and Friedman developed a parsimonious single-pheromone model that accounts
 
 **Domains**: Physics, Information Processing, Boundaries
 
-Fields serves on the [AII Scientific Advisory Board](https://www.activeinference.institute/scientific-advisory-board) (2025–). He and Friedman have collaborated on foundational questions connecting physics, information processing, and Active Inference. Friedman produced the transcript and educational materials for Fields' "Physics as Information Processing" course at the Active Inference Institute.
+Fields serves on the [AII Scientific Advisory Board](https://activeinference.institute/structure/scientific-advisory-board/) (2025–). He and Friedman have collaborated on foundational questions connecting physics, information processing, and Active Inference. Friedman produced the transcript and educational materials for Fields' "Physics as Information Processing" course at the Active Inference Institute.
 
 ---
 
@@ -203,7 +203,7 @@ Friedman has conducted in-depth published interviews with leading researchers:
 | Santa Fe Institute | Participant in events and workshops |
 | Wonderfest | Speaker — Bay Area science education and public outreach |
 | KuppingerCole | Speaker at European Identity & Cloud Conference 2024 |
-| College of the Redwoods | Associate Faculty, Biology (2025–present; BIOL-1 / BIOL-8, Spring 2026) |
+| College of the Redwoods | Associate Faculty, Biology (2025–present; BIOL-1 Spring/Fall 2026, BIOL-8 Spring 2026) |
 | Jasper Ridge Biological Preserve | Ant survey participant (2014–2015) |
 | Complexity Weekend / Complexity Adventures | Co-founder and co-organizer (2019–present) |
 

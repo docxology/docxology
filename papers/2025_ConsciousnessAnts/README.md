@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 ConsciousnessAnts
 
 **Daniel A. Friedman** (2025) · *Book Chapter*

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Illegal States, Mostly Unrepresentable"
 description: "This paper presents a strongly-typed, decentralized multiagent simulation — an ant-robot colony — as the computational exemplar of the Research Project Template (https://github.com/docxology/template). Each colony member is an Agent that owns exactly..."
 tags: ["strongly-typed-programming", "session-types", "algebraic-data-types", "category-theory", "active-inference", "multiagent-systems", "affine-types", "illegal-state-unrepresentable"]
@@ -19,9 +20,8 @@ This work addresses topics in **Entomology**: strongly typed programming, sessio
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
@@ -37,7 +37,7 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21298885
+- Canonical DOI: 10.5281/zenodo.21298885
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-10T19:31:26Z

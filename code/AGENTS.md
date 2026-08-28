@@ -6,7 +6,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 
 | Path | Role |
 | --- | --- |
-| `src/youtube_fetcher.py` | `yt-dlp` wrapper: fetch tabs, normalize records, save JSON |
+| `src/youtube_fetcher.py` | `yt-dlp` wrapper: strict JSONL parsing, canonical record validation, explicit per-tab completion/failure results, atomic JSON writes |
 | `src/count_consistency.py` | Parse BIBLIOGRAPHY / papers index counts; detect drift in llms.txt, README, publications title, `data/works.json`, `data/publications-ld.json` |
 | `src/domain_inference.py` | Canonical whole-word domain inference (emoji ↔ name maps, `infer_domain_emoji` / `infer_domain_name`) |
 | `src/publication_pairing.py` | Normalize GitHub release and Zenodo record metadata; classify paired publication evidence, type, and domain; render README/AGENTS/SKILL/CITATION.cff templates |
@@ -15,7 +15,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `src/sitemap_policy.py` | Index-priority URL lists for `sitemap.xml` and IndexNow (open crawl; sitemap is not a crawl gate) |
 | `src/seo_invariants.py` | SEO invariant checks (paper/work canonicals, redirect stubs, sitemap policy alignment) for `validate_repo.py` |
 | `src/report_paths.py` | Shared helpers for date-stamped report artifacts (`latest_report`, `dated_report_path`, `generated_timestamp`, `rel`, ...) — imported by ~26 orchestrators, no CLI of its own |
-| `orchestrators/fetch_youtube_data.py` | CLI entry: personal + institute channels → `data/*.json` (`--fast` merges flat-playlist refreshes with cached exact dates) |
+| `orchestrators/fetch_youtube_data.py` | CLI entry: personal + institute channels → `data/*.json`; preserves the prior cache when any tab fails or an exact refresh unexpectedly returns no videos (`--fast` merges cached exact dates) |
 | `orchestrators/export_bibliography.py` | Generate BibTeX, CSL JSON, RIS, and `data/works.json` from `pages/BIBLIOGRAPHY.md` |
 | `orchestrators/export_agent_data.py` | Generate `data/software.json`, `data/people.json`, `data/organizations.json`, and `data/claims.json` |
 | `orchestrators/build_resume.py` | Generate `data/resume.json`, a no-JavaScript semantic HTML CV, plaintext variants, verified PDF, and `resume/verify.html` |
@@ -24,6 +24,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/add_zenodo_only.py` | Backfill real Zenodo publication records that have no paired GitHub release |
 | `orchestrators/audit_publication_skills.py` | Validate publication `SKILL.md` coverage, frontmatter, instructions, and canonical-link hygiene |
 | `orchestrators/build_domain_pages.py` | Generate `domains.html`, `domain-*.html`, and `pages/DOMAINS.md` |
+| `orchestrators/generate_pillar_pages.py` | Generate the 5 high-authority pillar content explainers with FAQ and defined-term schemas |
 | `orchestrators/build_work_pages.py` | Generate `works/index.html` and one HTML landing page per bibliography row |
 | `orchestrators/build_video_pages.py` | Generate `videos/index.html`, one HTML landing page per YouTube video, and `data/videos.json` |
 | `orchestrators/fetch_video_transcripts.py` | Optional caption-cache fetcher: YouTube captions → `data/video-transcripts/*.txt` |
@@ -39,7 +40,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/submit_indexnow.py` | Bulk IndexNow POST for index-priority URLs (`--list-urls`, `--dry-run`) |
 | `orchestrators/validate_repo.py` | Validate generated files, JSON-LD, metadata, sitemap targets, local links, and count consistency |
 | `orchestrators/sync_scholar_metrics.py` | Propagate `data/scholar-snapshot.json` to hand-maintained surfaces |
-| `orchestrators/extract_paper_texts.py` | Extract full text and images from paper PDFs/ODT/PPTX using PyMuPDF + python-pptx |
+| `orchestrators/extract_paper_texts.py` | Extract full text and embedded images from paper PDFs; optional PyMuPDF provides image extraction, while base `pypdf`/system `pdftotext` remain text fallbacks |
 | `orchestrators/generate_citation_cff.py` | Generate CITATION.cff (CFF 1.2.0) for papers from `metadata.json` |
 | `orchestrators/deploy_seo_security.py` | Idempotent deployment of CSP, rel-me, and hreflang tags to indexable HTML pages |
 | `orchestrators/migrate_inline_handlers.py` | Migrate inline `onclick`/`onchange`/`onsubmit` handlers to `data-*` attributes for CSP compliance |
@@ -54,10 +55,11 @@ Other orchestrators (external links, sitemap, visual QA, GitHub inventory, etc.)
 ## Public API (`youtube_fetcher`)
 
 - `run_yt_dlp(url: str, mode: str = "full", timeout: int = 600) -> list[str]` — JSONL lines from `yt-dlp`.
-- `parse_jsonl(lines: list[str]) -> list[dict]` — skip bad lines.
+- `parse_jsonl(lines: list[str]) -> list[dict]` — require every nonblank line to be a JSON object; malformed output fails the tab rather than being skipped.
 - `normalize_video(raw: dict, channel_id: str) -> dict | None` — canonical video dict or `None` if no `upload_date`.
-- `fetch_tab(channel_url: str, tab: str, channel_id: str, mode: str) -> list[dict]` — one tab (`videos` / `streams` / `shorts`).
-- `fetch_channel(channel_url: str, channel_id: str) -> list[dict]` — all tabs, deduped, sorted by `upload_date`.
+- `fetch_tab(channel_url: str, tab: str, channel_id: str, mode: str) -> list[dict]` — one tab (`videos` / `streams` / `shorts`); malformed or noncanonical records fail the tab.
+- `fetch_channel_result(channel_url: str, channel_id: str) -> ChannelFetchResult` — all tabs, deduped and sorted with explicit completion/failure detail; cache writers must require `complete`.
+- `fetch_channel(channel_url: str, channel_id: str) -> list[dict]` — legacy all-tabs helper that raises on any incomplete channel.
 - `save_json(videos: list[dict], channel_url: str, channel_id: str, output_path: Path) -> None` — write envelope with `meta` + `videos`.
 - `load_json(path: Path) -> dict | None` — read existing export.
 

@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology
 
 **Daniel Ari Friedman & Tucker Cahill Chambers** (2026) · *Zenodo*

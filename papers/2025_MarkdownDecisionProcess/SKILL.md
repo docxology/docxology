@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "MarkdownDecisionProcess"
 description: "The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling. Dr..."
 tags: ["markdown-decision-process", "document-analysis", "markov-chains", "reinforcement-learning", "pomdp", "probabilistic-modeling", "document-generation"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.17244386
+- Canonical DOI: 10.5281/zenodo.17244386
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:52Z

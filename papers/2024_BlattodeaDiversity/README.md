@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 BlattodeaDiversity
 
 **Daniel A. Friedman, et al.** (2024) · *Ecology & Evolution*

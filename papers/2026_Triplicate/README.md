@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

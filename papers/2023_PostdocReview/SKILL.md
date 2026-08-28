@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "PostdocReview"
 description: "A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Sci..."
 tags: ["postdoctoral-review", "research-portfolio", "active-inference", "entomology", "cognitive-security", "meta-science", "philosophy", "biology", "interdisciplinary-research"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.8377987
+- Canonical DOI: 10.5281/zenodo.8377987
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:22Z

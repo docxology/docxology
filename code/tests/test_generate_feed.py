@@ -11,7 +11,6 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
-import generate_feed as gf  # noqa: E402
 from generate_feed import _year_key, render  # noqa: E402
 
 STABLE_GUIDS = (
@@ -81,10 +80,9 @@ def _write_feed_inputs(tmp_path: Path, *, site_updates: list[dict] | None) -> No
         )
 
 
-def test_generate_feed_guids_and_year_key_sort(tmp_path: Path, monkeypatch):
+def test_generate_feed_guids_and_year_key_sort(tmp_path: Path):
     _write_feed_inputs(tmp_path, site_updates=SITE_UPDATES)
-    monkeypatch.setattr(gf, "REPO_ROOT", tmp_path)
-    xml = render(datetime(2026, 8, 13, tzinfo=timezone.utc))
+    xml = render(datetime(2026, 8, 13, tzinfo=timezone.utc), repo_root=tmp_path)
 
     for guid in STABLE_GUIDS:
         assert guid in xml
@@ -97,9 +95,8 @@ def test_generate_feed_guids_and_year_key_sort(tmp_path: Path, monkeypatch):
     assert xml.index("work-Alpha2026") < xml.index("work-Undated")
 
 
-def test_missing_site_updates_still_emits_works(tmp_path: Path, monkeypatch):
+def test_missing_site_updates_still_emits_works(tmp_path: Path):
     _write_feed_inputs(tmp_path, site_updates=None)
-    monkeypatch.setattr(gf, "REPO_ROOT", tmp_path)
-    xml = render(datetime(2026, 8, 13, tzinfo=timezone.utc))
+    xml = render(datetime(2026, 8, 13, tzinfo=timezone.utc), repo_root=tmp_path)
     assert "work-Alpha2026" in xml
     assert STABLE_GUIDS[0] not in xml

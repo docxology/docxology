@@ -13,6 +13,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "exports.html"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Exports", "exports.html")]
@@ -179,11 +180,12 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Fail if exports.html is stale")
     args = parser.parse_args()
     content = render()
+    rendered_outputs = {OUT: content}
     if args.check:
-        if not OUT.exists() or OUT.read_text(encoding="utf-8") != content:
+        if stale_output_paths(rendered_outputs, repo_root=REPO_ROOT):
             raise SystemExit("Stale generated exports.html")
     else:
-        OUT.write_text(content, encoding="utf-8")
+        write_output_texts(rendered_outputs, repo_root=REPO_ROOT)
     print(("checked" if args.check else "wrote") + " exports.html")
 
 

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "BeforePragmatism"
 description: "Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences between Blake's prophetic..."
 tags: ["william-blake", "pragmatism", "anticipatory-epistemology", "america-a-prophecy", "peirce", "dewey", "james", "prophetic-vision"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.18807970
+- Canonical DOI: 10.5281/zenodo.18807970
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:26:03Z

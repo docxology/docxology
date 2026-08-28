@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "VariationalSynthesis"
 date-released: 2023
+doi: 10.3390/e25070964
+url: "https://doi.org/10.3390/e25070964"
 authors:
   - family-names: Friston
     given-names: Karl
@@ -19,3 +21,10 @@ authors:
     given-names: Thomas
   - family-names: Campbell
     given-names: John O.
+identifiers:
+  - type: doi
+    value: "10.3390/e25070964"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.3390/e25070964"
+    description: "Canonical citation DOI resolver"

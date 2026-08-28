@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "VideoEntomology"
 date-released: 2023
+doi: 10.3791/65002
+url: "https://doi.org/10.3791/65002"
 authors:
   - family-names: Friedman
     given-names: Daniel A.
@@ -11,3 +13,10 @@ authors:
     given-names: Judith R.
   - family-names: Alvarado
     given-names: Sebastian
+identifiers:
+  - type: doi
+    value: "10.3791/65002"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.3791/65002"
+    description: "Canonical citation DOI resolver"

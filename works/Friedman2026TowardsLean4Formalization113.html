@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<!-- docxology:generated-work-page; ownership=renderer -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven…</title>
-    <meta name="description" content="The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an…">
+    <title>Towards Lean 4 Formalization of the Free Energy Principle…</title>
+    <meta name="description" content="FEP Lean v1.1.0 is a source-bound, machine-checked catalogue of 155 topics across 20 reviewed families and five areas: the Free Energy Principle, Active…">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/Friedman2026TowardsLean4Formalization113.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -26,7 +27,7 @@
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics">
-    <meta property="og:description" content="The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an…">
+    <meta property="og:description" content="FEP Lean v1.1.0 is a source-bound, machine-checked catalogue of 155 topics across 20 reviewed families and five areas: the Free Energy Principle, Active…">
     <meta property="og:url" content="https://danielarifriedman.com/works/Friedman2026TowardsLean4Formalization113.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta property="og:image:width" content="1200">
@@ -34,7 +35,7 @@
     <meta property="og:image:alt" content="Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics">
-    <meta name="twitter:description" content="The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an…">
+    <meta name="twitter:description" content="FEP Lean v1.1.0 is a source-bound, machine-checked catalogue of 155 topics across 20 reviewed families and five areas: the Free Energy Principle, Active…">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics — Daniel Ari Friedman">
     <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
@@ -55,12 +56,7 @@
         .platform-list a{color:var(--silver-bright);text-decoration:none}
         .platform-list a:hover{text-decoration:underline}
         .platform-list .muted{color:var(--text-muted)}
-        .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:960px;margin:0 auto}
-        .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}
-        .breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}
-        .breadcrumb a{color:var(--silver-bright);text-decoration:none}
-        .breadcrumb a:hover{text-decoration:underline}
-        .breadcrumb [aria-current=page]{color:var(--text-secondary)}
+        .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
         .related-list{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}
         .related-list li{padding:.6rem .9rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
         .related-list a{color:var(--silver-bright);text-decoration:none}
@@ -100,7 +96,35 @@
         },
         {
             "@type": "DefinedTerm",
-            "name": "FEPLean"
+            "name": "free energy principle"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "active inference"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "bayesian mechanics"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "information geometry"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "non-equilibrium thermodynamics"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Lean 4"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "Mathlib"
+        },
+        {
+            "@type": "DefinedTerm",
+            "name": "interactive theorem proving"
         }
     ],
     "genre": "Paper",
@@ -129,9 +153,20 @@
         "@type": "Organization",
         "name": "Active Inference Journal"
     },
-    "abstract": "The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked approach to assessing such and related formal claims has remained absent. Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may...",
+    "abstract": "FEP Lean v1.1.0 is a source-bound, machine-checked catalogue of 155 topics across 20 reviewed families and five areas: the Free Energy Principle, Active Inference, Bayesian Mechanics, Information Geometry, and non-equilibrium Thermodynamics. Every catalogue row carries a reviewed invariant, explicit assumptions and boundaries, a namespaced Lean 4 theorem body, and deterministic manuscript...",
     "keywords": [
-        "FEPLean"
+        "free energy principle",
+        "active inference",
+        "bayesian mechanics",
+        "information geometry",
+        "non-equilibrium thermodynamics",
+        "Lean 4",
+        "Mathlib",
+        "interactive theorem proving",
+        "formal verification",
+        "theorem proving",
+        "measure theory",
+        "reproducible research"
     ],
     "description": "The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked a Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may leave implicit. Lean 4 theorem proving for FEP formalization AI-assisted theorem sketching and verification",
     "citation": "Friedman, Daniel Ari. 2026. Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics. Active Inference Journal. DOI: 10.5281/zenodo.19699233. URL: https://doi.org/10.5281/zenodo.19699233.",
@@ -177,28 +212,36 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation">
+    <nav aria-label="Main navigation">
         <a href="../index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <div class="nav-links">
-            <a href="../index.html#about">About</a>
-            <a href="../publications.html">Publications</a>
-            <a href="../works/" class="active">Works</a>
-            <a href="../domains.html">Domains</a>
-            <a href="../software.html">Software</a>
-            <a href="../videos.html">Videos</a>
-            <a href="../art.html">Art</a>
-            <a href="../media.html">Media</a>
-            <a href="../collaborators.html">Collaborators</a>
-            <a href="../resume/resume.html">CV</a>
-            <a href="../search.html">Search</a>
-            <a href="../catalog.html">Data Catalog</a>
-            <a href="../evidence.html">Evidence</a>
-            <a href="../reproducibility.html">Reproducibility</a>
-            <a href="../cite-verify.html">Cite</a>
-            <a href="../discovery.html">Discovery</a>
-            <a href="../data/agent-index.json">Agent Map</a>
-        </div>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="../publications.html">Publications</a></li>
+            <li><a href="../works/" class="active" aria-current="page">Works</a></li>
+            <li><a href="../domains.html">Domains</a></li>
+            <li><a href="../software.html">Software</a></li>
+            <li><a href="../videos.html">Videos</a></li>
+            <li><a href="../art.html" class="nav-art-link">Art</a></li>
+            <li>
+                <details class="nav-more">
+                    <summary>More</summary>
+                    <ul class="nav-more-panel">
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#research">Research</a></li>
+                    <li><a href="../media.html">Media</a></li>
+                    <li><a href="../collaborators.html">Collaborators</a></li>
+                    <li><a href="../resume/resume.html">CV</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                    <li><a href="../catalog.html">Data Catalog</a></li>
+                    <li><a href="../evidence.html">Evidence</a></li>
+                    <li><a href="../reproducibility.html">Reproducibility</a></li>
+                    <li><a href="../cite-verify.html">Cite</a></li>
+                    <li><a href="../discovery.html">Discovery</a></li>
+                    <li><a href="../data/agent-index.json">Agent Map</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
     </nav>
 
     <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -224,8 +267,8 @@
         <section class="section">
             <div class="section-header"><h2>Overview</h2><p>Extracted from the local paper documentation when available.</p><div class="section-divider"></div></div>
             <div class="work-detail">
-                <p>The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for) a machine-checked approach to assessing such and related formal claims has remained absent. Dependent-type provers require explicit measure spaces, domination, and integrability that literature prose and equations may...</p>
-                <div class="keyword-row"><span>FEPLean</span></div>
+                <p>FEP Lean v1.1.0 is a source-bound, machine-checked catalogue of 155 topics across 20 reviewed families and five areas: the Free Energy Principle, Active Inference, Bayesian Mechanics, Information Geometry, and non-equilibrium Thermodynamics. Every catalogue row carries a reviewed invariant, explicit assumptions and boundaries, a namespaced Lean 4 theorem body, and deterministic manuscript...</p>
+                <div class="keyword-row"><span>free energy principle</span><span>active inference</span><span>bayesian mechanics</span><span>information geometry</span><span>non-equilibrium thermodynamics</span><span>Lean 4</span><span>Mathlib</span><span>interactive theorem proving</span><span>formal verification</span><span>theorem proving</span><span>measure theory</span><span>reproducible research</span></div>
             </div>
         </section>
         <section class="section section-alt">

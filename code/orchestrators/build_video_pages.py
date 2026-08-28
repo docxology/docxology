@@ -14,15 +14,26 @@ import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
+from pathlib import PurePosixPath
 from urllib.parse import quote_plus
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 VIDEO_DIR = REPO_ROOT / "videos"
 DATA_OUT = REPO_ROOT / "data" / "videos.json"
 INDEX_OUT = REPO_ROOT / "data" / "videos-index.json"
+PAGE_MANIFEST_OUT = REPO_ROOT / "data" / "video-pages-manifest.json"
 TRANSCRIPT_DIR = REPO_ROOT / "data" / "video-transcripts"
+VIDEO_PAGE_MARKER = "<!-- docxology:generated-video-page; ownership=video-pages-manifest -->"
+VIDEO_PAGE_MANIFEST_VERSION = "VideoPages.v1"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from generated_outputs import (  # noqa: E402
+    generated_output_files,
+    read_generated_output_text,
+    safe_generated_output_path,
+    stable_generated_output_timestamp,
+    write_output_texts,
+)
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
@@ -37,9 +48,9 @@ from site_nav import (  # noqa: E402
 )
 
 try:
-    from report_paths import generated_timestamp, stable_generated_at
+    from report_paths import generated_timestamp
 except ImportError:
-    from .report_paths import generated_timestamp, stable_generated_at
+    from .report_paths import generated_timestamp
 
 
 @dataclass(frozen=True)
@@ -478,7 +489,7 @@ def related_pages(video: dict) -> list[dict]:
     return pages[:6]
 
 
-def title_for_page(video: dict, max_len: int = 70) -> str:
+def title_for_page(video: dict, max_len: int = 65) -> str:
     title = " ".join(video["title"].split())
     if len(title) <= max_len:
         if title == "We Three Pogo":
@@ -605,8 +616,16 @@ def transcript_html(transcript: str, video: dict) -> str:
     return "\n".join(f"<p>{h(chunk)}</p>" for chunk in chunks)
 
 
-def render_video_page(video: dict) -> str:
-    transcript, _path = read_transcript(video["id"])
+def render_video_page(video: dict, *, transcript: str | None = None) -> str:
+    """Render one video detail page from its record and optional cached text.
+
+    Supplying ``transcript`` keeps the renderer a deterministic content
+    projection for callers that have already loaded the cache.  The production
+    build keeps the existing convenience behavior and reads the cached text
+    when no explicit value is supplied.
+    """
+    if transcript is None:
+        transcript, _path = read_transcript(video["id"])
     title = title_for_page(video)
     description = description_for_video(video)
     topics = "\n".join(
@@ -622,6 +641,7 @@ def render_video_page(video: dict) -> str:
     breadcrumb = breadcrumb_trail(video)
     json_ld = video_json_ld(video, transcript)
     return f"""<!DOCTYPE html>
+{VIDEO_PAGE_MARKER}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -711,19 +731,46 @@ def render_video_page(video: dict) -> str:
 """
 
 
+# Crawler-visible static floor for videos/index.html: only the newest N video
+# rows are server-rendered into <ol class="video-list">.  The complete list
+# remains crawlable through the inline ItemList JSON-LD (one itemListElement per
+# video) and the bounded remainder ships in a compact inline JSON payload that
+# js/videos-page.js renders on demand ("Show more").  URLs never change.
+VIDEO_SSR_FLOOR_ROWS = 50
+
+
+def video_list_item_fields(video: dict) -> tuple[str, str, str]:
+    """(url, title, muted-meta) exactly as the static <li> renders them."""
+    url = page_filename(video)
+    title = video["title"]
+    meta = " - ".join(
+        [
+            video["date"],
+            video["channel_label"],
+            ", ".join(topic["label"] for topic in video["topics"][:3]),
+        ]
+    )
+    return url, title, meta
+
+
 def render_index(payload: dict) -> str:
     videos = sorted(payload["videos"], key=lambda item: item["upload_date"], reverse=True)
     counts = payload["counts"]
     topic_links = "\n".join(
         f'<a class="pill" href="../{h(rule.url)}">{h(rule.label)}</a>' for rule in TOPIC_RULES[:8]
     )
+    # Server-render only the floor; the rest rides in a compact inline payload.
     rows = "\n".join(
         f"""<li>
-            <a href="{h(page_filename(video))}">{h(video['title'])}</a>
-            <span class="muted"> - {h(video['date'])} - {h(video['channel_label'])} - {h(', '.join(topic['label'] for topic in video['topics'][:3]))}</span>
+            <a href="{h(video_list_item_fields(video)[0])}">{h(video['title'])}</a>
+            <span class="muted"> - {h(video_list_item_fields(video)[2])}</span>
         </li>"""
-        for video in videos
+        for video in videos[:VIDEO_SSR_FLOOR_ROWS]
     )
+    tail_payload = [
+        {"u": url, "t": title, "m": meta}
+        for url, title, meta in (video_list_item_fields(video) for video in videos[VIDEO_SSR_FLOOR_ROWS:])
+    ]
     item_list = {
         "@context": "https://schema.org",
         "@type": "ItemList",
@@ -747,6 +794,7 @@ def render_index(payload: dict) -> str:
     )
     breadcrumb = [("Home", ""), ("Videos", "videos/")]
     return f"""<!DOCTYPE html>
+{VIDEO_PAGE_MARKER}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -774,10 +822,11 @@ def render_index(payload: dict) -> str:
         .pill{{border:1px solid var(--border);border-radius:999px;padding:.38rem .65rem;background:var(--bg-card);font-size:.82rem}}
         .video-list{{columns:2;column-gap:2rem;line-height:1.65}}
         .video-list li{{break-inside:avoid;margin-bottom:.45rem}}
+        #video-show-more{{margin:.75rem 0 0}}
         @media (max-width: 760px){{.video-list{{columns:1}}}}
     </style>
     <script type="application/ld+json">
-{json.dumps(item_list, indent=4, ensure_ascii=False)}
+{json.dumps(item_list, separators=(",", ":"), ensure_ascii=False)}
     </script>
 {breadcrumb_jsonld_script(breadcrumb)}
 </head>
@@ -799,21 +848,191 @@ def render_index(payload: dict) -> str:
         <section class="section">
             <div class="section-header"><h2>All Video Pages</h2><p>Newest first; titles link to local indexable landing pages, not directly out to YouTube.</p><div class="section-divider"></div></div>
             <ol class="video-list">{rows}</ol>
+            <noscript><p class="muted">The complete list of {counts['total']} video pages, including the {len(tail_payload)} newest entries not shown above, is available in the <a href="../data/videos.json">video metadata JSON</a> and via the page's ItemList structured data.</p></noscript>
         </section>
     </main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos.html">timeline</a> - <a href="../data/videos.json">video metadata JSON</a></p></footer>
-""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
+""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + f"""
+<script type="application/json" id="video-tail-payload">{json.dumps(tail_payload, separators=(",", ":"), ensure_ascii=False)}</script>
+<script src="/js/videos-index.js?v=20260827" defer></script>
+</body>
 </html>
 """
 
 
 def existing_generated_at() -> str | None:
-    if not DATA_OUT.exists():
+    content = read_generated_output_text(REPO_ROOT, DATA_OUT)
+    if content is None:
         return None
     try:
-        return json.loads(DATA_OUT.read_text(encoding="utf-8")).get("generated_at")
+        return json.loads(content).get("generated_at")
     except json.JSONDecodeError:
         return None
+
+
+def _validate_page_manifest_path(value: object) -> str:
+    """Return one safe, direct ``videos/*.html`` manifest path.
+
+    The manifest is an ownership record, so it must not be able to nominate an
+    arbitrary file elsewhere in the repository as generator-managed.
+    """
+    if not isinstance(value, str) or not value:
+        raise ValueError("video-page manifest paths must be non-empty strings")
+    if "\\" in value:
+        raise ValueError(f"video-page manifest path must use '/' separators: {value!r}")
+    path = PurePosixPath(value)
+    if path.is_absolute() or len(path.parts) != 2 or path.parts[0] != "videos":
+        raise ValueError(f"video-page manifest path must be a direct videos/*.html path: {value!r}")
+    if path.suffix != ".html" or path.name in {"", ".", ".."}:
+        raise ValueError(f"video-page manifest path must name an HTML page: {value!r}")
+    return path.as_posix()
+
+
+def expected_video_page_paths(rendered_outputs: dict[Path, str], *, repo_root: Path = REPO_ROOT) -> set[str]:
+    """Return all video HTML outputs from a rendered mapping as safe paths."""
+    paths: set[str] = set()
+    for path in rendered_outputs:
+        try:
+            relative = path.relative_to(repo_root).as_posix()
+        except ValueError as exc:
+            raise ValueError(f"video output escapes repository root: {path}") from exc
+        if relative.startswith("videos/") and path.suffix == ".html":
+            paths.add(_validate_page_manifest_path(relative))
+    return paths
+
+
+def render_video_page_manifest(paths: set[str]) -> str:
+    """Render the stable ownership manifest for generated video HTML pages."""
+    payload = {
+        "schema_version": VIDEO_PAGE_MANIFEST_VERSION,
+        "pages": sorted(_validate_page_manifest_path(path) for path in paths),
+    }
+    return json.dumps(payload, indent=2, ensure_ascii=False) + "\n"
+
+
+def load_video_page_manifest(path: Path, *, repo_root: Path = REPO_ROOT) -> tuple[set[Path], list[str]]:
+    """Load prior generator-owned pages without treating malformed data as safe.
+
+    The return is intentionally an error list rather than a silent empty set:
+    check mode must fail closed if its ownership ledger has been corrupted.
+    """
+    content = read_generated_output_text(repo_root, path)
+    if content is None:
+        return set(), []
+    try:
+        payload = json.loads(content)
+    except json.JSONDecodeError as exc:
+        return set(), [f"invalid video-page manifest {path}: {exc}"]
+    if not isinstance(payload, dict) or payload.get("schema_version") != VIDEO_PAGE_MANIFEST_VERSION:
+        return set(), [f"invalid video-page manifest schema: {path}"]
+    entries = payload.get("pages")
+    if not isinstance(entries, list):
+        return set(), [f"invalid video-page manifest pages list: {path}"]
+
+    owned: set[Path] = set()
+    errors: list[str] = []
+    for value in entries:
+        try:
+            relative = _validate_page_manifest_path(value)
+        except ValueError as exc:
+            errors.append(f"invalid video-page manifest entry: {exc}")
+            continue
+        candidate = safe_generated_output_path(repo_root, repo_root / relative)
+        if candidate in owned:
+            errors.append(f"duplicate video-page manifest entry: {relative}")
+        owned.add(candidate)
+    return owned, errors
+
+
+_LEGACY_VIDEO_FILENAME = re.compile(r"^(?:personal|institute)-[A-Za-z0-9_-]{3,}\.html$")
+_LEGACY_VIDEO_FINGERPRINTS = (
+    '<meta name="description" content="Video metadata, YouTube link, related papers, and topic routes for ',
+    'class="video-embed"',
+    '<strong>Video ID:</strong>',
+    'href="../data/videos.json"',
+)
+
+
+def is_legacy_generated_video_page(path: Path, content: str) -> bool:
+    """Recognize pre-manifest generator output without claiming arbitrary pages.
+
+    Existing committed video pages predate the explicit ownership marker.  The
+    narrow filename rule plus four renderer-specific fragments permits a safe
+    one-way migration: only a page that is clearly this generator's old output
+    becomes subject to orphan checking.  Hand-authored editorial pages are
+    neither named nor structured this way and are left untouched.
+    """
+    return bool(_LEGACY_VIDEO_FILENAME.fullmatch(path.name)) and all(
+        fragment in content for fragment in _LEGACY_VIDEO_FINGERPRINTS
+    )
+
+
+def generated_video_page_orphans(
+    expected_paths: set[str],
+    *,
+    video_dir: Path = VIDEO_DIR,
+    manifest_path: Path = PAGE_MANIFEST_OUT,
+    repo_root: Path = REPO_ROOT,
+) -> tuple[tuple[Path, ...], tuple[str, ...]]:
+    """Return managed video pages no longer produced, never deleting files.
+
+    Ownership comes from three auditable sources: the previous explicit
+    manifest, the current marker, and a conservative legacy fingerprint.  The
+    function only reports drift; write mode intentionally leaves both orphaned
+    generated output and unrelated manual pages on disk for reviewed cleanup.
+    """
+    owned, errors = load_video_page_manifest(manifest_path, repo_root=repo_root)
+    for candidate in generated_output_files(repo_root, video_dir, "*.html"):
+        content = read_generated_output_text(repo_root, candidate)
+        if content is None:  # A concurrent deletion is ordinary stale state.
+            continue
+        if VIDEO_PAGE_MARKER in content or is_legacy_generated_video_page(candidate, content):
+            owned.add(candidate)
+
+    expected = {
+        safe_generated_output_path(repo_root, repo_root / _validate_page_manifest_path(path))
+        for path in expected_paths
+    }
+    orphans = tuple(
+        sorted(
+            (
+                path
+                for path in owned - expected
+                if read_generated_output_text(repo_root, path) is not None
+            ),
+            key=lambda path: path.as_posix(),
+        )
+    )
+    return orphans, tuple(sorted(errors))
+
+
+def check_interactive_page_integrity(
+    html_by_path: dict[Path, str],
+    *,
+    repo_root: Path = REPO_ROOT,
+) -> tuple[str, ...]:
+    """Every emitted page that loads interactive/tts scripts must link style.css.
+
+    js/tts-controls.js, js/interactive.js, and js/menu-esc.js render UI whose
+    CSS lives entirely in style.css. A page that loads any of those scripts
+    without the shared stylesheet ships permanently expanded, unstyled
+    controls (the P0-2 defect). Enforced at build time rather than as a
+    post-hoc lint so every generator output is covered.
+    """
+    errors: list[str] = []
+    interactive_markers = ("/js/interactive.js", "/js/tts-controls.js", "/js/menu-esc.js")
+    for path, content in sorted(html_by_path.items(), key=lambda item: item[0].as_posix()):
+        if not path.suffix == ".html":
+            continue
+        loads = any(marker in content for marker in interactive_markers)
+        links_stylesheet = 'rel="stylesheet"' in content and "style.css" in content
+        if loads and not links_stylesheet:
+            relative = path.relative_to(repo_root).as_posix() if path.is_relative_to(repo_root) else path.as_posix()
+            errors.append(
+                f"{relative}: loads interactive JS without linking style.css "
+                "(TTS panel / shortcuts overlay would render unstyled)"
+            )
+    return tuple(errors)
 
 
 def outputs(generated_at: str | None = None) -> dict[Path, str]:
@@ -826,25 +1045,72 @@ def outputs(generated_at: str | None = None) -> dict[Path, str]:
     }
     for video in payload["videos"]:
         out[VIDEO_DIR / page_filename(video)] = render_video_page(video)
+    out[PAGE_MANIFEST_OUT] = render_video_page_manifest(expected_video_page_paths(out))
     return out
+
+
+def stale_video_outputs(
+    rendered_outputs: dict[Path, str],
+    *,
+    repo_root: Path = REPO_ROOT,
+    video_dir: Path = VIDEO_DIR,
+    manifest_path: Path = PAGE_MANIFEST_OUT,
+) -> tuple[str, ...]:
+    """Return every byte-level output or owned-page orphan that check must flag."""
+    stale: list[str] = []
+    for path, content in rendered_outputs.items():
+        try:
+            relative = path.relative_to(repo_root).as_posix()
+        except ValueError as exc:
+            raise ValueError(f"video output escapes repository root: {path}") from exc
+        actual = read_generated_output_text(repo_root, path)
+        if actual != content:
+            stale.append(relative)
+
+    orphans, ownership_errors = generated_video_page_orphans(
+        expected_video_page_paths(rendered_outputs, repo_root=repo_root),
+        video_dir=video_dir,
+        manifest_path=manifest_path,
+        repo_root=repo_root,
+    )
+    stale.extend(
+        f"orphaned generated video page: {path.relative_to(repo_root).as_posix()}"
+        for path in orphans
+    )
+    stale.extend(ownership_errors)
+    stale.extend(check_interactive_page_integrity(rendered_outputs, repo_root=repo_root))
+    # Hand-authored root pages (art.html, videos.html, ...) are not generator
+    # outputs, but they load the same interactive scripts. They are scanned
+    # read-only so the same P0-2 invariant holds site-wide.
+    public_root_pages: dict[Path, str] = {}
+    for candidate in sorted(repo_root.glob("*.html")):
+        try:
+            text = candidate.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        public_root_pages[candidate] = text
+    stale.extend(check_interactive_page_integrity(public_root_pages, repo_root=repo_root))
+    return tuple(stale)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if generated video pages are stale")
     args = parser.parse_args()
-    stale = []
     generated_at = existing_generated_at() if args.check else None
     if not args.check:
         candidate_outputs = outputs()
-        generated_at = stable_generated_at(DATA_OUT, json.loads(candidate_outputs[DATA_OUT]))
-    for path, content in outputs(generated_at).items():
-        if args.check:
-            if not path.exists() or path.read_text(encoding="utf-8") != content:
-                stale.append(str(path.relative_to(REPO_ROOT)))
-        else:
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(content, encoding="utf-8")
+        generated_at = stable_generated_output_timestamp(
+            REPO_ROOT,
+            DATA_OUT,
+            json.loads(candidate_outputs[DATA_OUT]),
+        )
+    rendered_outputs = outputs(generated_at)
+    if args.check:
+        stale = stale_video_outputs(rendered_outputs)
+    else:
+        stale = ()
+        write_output_texts(rendered_outputs, repo_root=REPO_ROOT)
     if stale:
         raise SystemExit("Stale generated video artifacts: " + ", ".join(stale[:10]))
     print(("checked" if args.check else "wrote") + " video pages")

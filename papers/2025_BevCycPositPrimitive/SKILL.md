@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "BevCyc - posit on primitive drivers of creatures"
 description: "Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down onto muscle % tension follows / posits to experiment ..."
 tags: ["bevcycpositprimitive"]
 domain: "Genetics & Biomedical"
 citation: "andrew djuwidja, Daniel Friedman (2025). *BevCyc - posit on primitive drivers of creatures*. Genetics & Biomedical."
-doi: "10.5281/zenodo.14737076"
+doi: "10.5281/zenodo.14737075"
+artifact_doi: "10.5281/zenodo.14737076"
 ---
 
 # BevCyc - posit on primitive drivers of creatures
@@ -38,10 +40,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.14737076
+- Canonical DOI: 10.5281/zenodo.14737075
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-05-30T18:56:06Z
+- Artifact DOI: 10.5281/zenodo.14737076
 
 ## Prerequisites
 
@@ -53,6 +56,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.14737076`
+1. Reference the DOI for citation: `10.5281/zenodo.14737075`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -20,9 +20,9 @@ CURRENT_COUNTS_JSON = REPO_ROOT / "data" / "current-counts.json"
 AGENT_INDEX_JSON = REPO_ROOT / "data" / "agent-index.json"
 
 try:
-    from report_paths import dated_report_path, generated_timestamp, latest_report
+    from report_paths import dated_report_path, generated_timestamp, latest_report, source_worktree_state
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import dated_report_path, generated_timestamp, latest_report
+    from .report_paths import dated_report_path, generated_timestamp, latest_report, source_worktree_state
 
 OUT = dated_report_path("live_site_verification", "json")
 BASE = "https://danielarifriedman.com/"
@@ -34,35 +34,36 @@ def is_pages_deployment_pending(status: object) -> bool:
     return str(status or "").lower() in PAGES_DEPLOYMENT_PENDING_STATUSES
 
 
-def _read_current_counts() -> dict:
-    if not CURRENT_COUNTS_JSON.exists():
+def _read_current_counts(current_counts_json: Path = CURRENT_COUNTS_JSON) -> dict:
+    """Read the canonical volatile-count payload from an explicit path."""
+    if not current_counts_json.exists():
         return {}
     try:
-        return json.loads(CURRENT_COUNTS_JSON.read_text(encoding="utf-8"))
+        return json.loads(current_counts_json.read_text(encoding="utf-8"))
     except json.JSONDecodeError:
         return {}
 
 
-def _read_agent_index_schema_version() -> str | None:
+def _read_agent_index_schema_version(agent_index_json: Path = AGENT_INDEX_JSON) -> str | None:
     """Read the current generated agent-index contract version.
 
     Keeping the expected version beside the generated artifact prevents the
     live verifier from becoming the hidden second source of truth when the
     agent manifest evolves.
     """
-    if not AGENT_INDEX_JSON.exists():
+    if not agent_index_json.exists():
         return None
     try:
-        payload = json.loads(AGENT_INDEX_JSON.read_text(encoding="utf-8"))
+        payload = json.loads(agent_index_json.read_text(encoding="utf-8"))
     except json.JSONDecodeError:
         return None
     version = payload.get("schema_version")
     return version if isinstance(version, str) else None
 
 
-def load_dynamic_checks() -> list[dict[str, list[str]]]:
+def load_dynamic_checks(current_counts_json: Path = CURRENT_COUNTS_JSON) -> list[dict[str, list[str]]]:
     """Build marker checks from canonical volatile-count sources."""
-    payload = _read_current_counts()
+    payload = _read_current_counts(current_counts_json)
     counts = payload.get("counts", {})
     software = counts.get("software", {})
     github_inventory = counts.get("github_inventory", {})
@@ -158,8 +159,11 @@ def load_dynamic_checks() -> list[dict[str, list[str]]]:
     return checks
 
 
-def load_current_counts_fingerprint() -> dict[str, int | str | None]:
-    payload = _read_current_counts()
+def load_current_counts_fingerprint(
+    current_counts_json: Path = CURRENT_COUNTS_JSON,
+) -> dict[str, int | str | None]:
+    """Return stable count fields from an explicit canonical-count source."""
+    payload = _read_current_counts(current_counts_json)
     counts = payload.get("counts", {})
     software = counts.get("software", {})
     github_inventory = counts.get("github_inventory", {})
@@ -184,7 +188,13 @@ def count_fingerprint_matches(observed: dict, current: dict) -> bool:
     return all(observed.get(key) == current.get(key) for key in keys)
 
 
-def parse_json_contract(path: str, text: str, fingerprint: dict) -> tuple[dict[str, bool], dict[str, int]]:
+def parse_json_contract(
+    path: str,
+    text: str,
+    fingerprint: dict,
+    *,
+    agent_index_json: Path = AGENT_INDEX_JSON,
+) -> tuple[dict[str, bool], dict[str, int]]:
     """Parse live JSON routes and compare their counts to local canonical data."""
     if not path.endswith(".json"):
         return {}, {}
@@ -203,7 +213,7 @@ def parse_json_contract(path: str, text: str, fingerprint: dict) -> tuple[dict[s
         observed["software_total"] = count
         checks["software_count_matches"] = count == fingerprint.get("software_total")
     elif path == "data/agent-index.json":
-        expected_schema_version = _read_agent_index_schema_version()
+        expected_schema_version = _read_agent_index_schema_version(agent_index_json)
         checks["versioned_schema"] = (
             expected_schema_version is not None and payload.get("schema_version") == expected_schema_version
         )
@@ -370,12 +380,12 @@ def latest_deployment_run(timeout: int) -> dict:
     return {}
 
 
-def local_source_commit() -> str:
+def local_source_commit(repo_root: Path = REPO_ROOT) -> str:
     """Return the checked-out commit used to generate the expected contract."""
     try:
         proc = subprocess.run(
             ["git", "rev-parse", "HEAD"],
-            cwd=REPO_ROOT,
+            cwd=repo_root,
             capture_output=True,
             text=True,
             timeout=10,
@@ -386,41 +396,27 @@ def local_source_commit() -> str:
         return ""
 
 
-def local_source_dirty() -> bool:
+def local_source_dirty(repo_root: Path = REPO_ROOT) -> bool:
     """Return whether uncommitted source changes can differ from Pages.
 
-    ``_site/`` is an intentionally preserved local Pages build output and is
-    excluded by the release-integrity gate as well.  Treating it as source
-    drift would make a successful deployment look pending whenever a local
-    artifact had been assembled for inspection.
+    Use the same narrow source-versus-evidence distinction as release
+    attestation.  Fresh post-commit browser, link, source, live-site, and
+    attestation receipts describe the deployed candidate; they do not make a
+    Pages deployment pending.  Unrecognized source changes still do.
     """
-    try:
-        proc = subprocess.run(
-            ["git", "status", "--porcelain", "--untracked-files=all"],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-            timeout=10,
-            check=False,
-        )
-        if proc.returncode != 0:
-            return False
-        for line in proc.stdout.splitlines():
-            if not line.strip():
-                continue
-            path = line[3:].strip() if len(line) >= 3 else line.strip()
-            path = path.strip('"')
-            if path == "_site" or path.startswith("_site/"):
-                continue
-            return True
-        return False
-    except (OSError, subprocess.SubprocessError):
-        return False
+    return source_worktree_state(repo_root).get("source_worktree_clean") is not True
 
 
-def build_report(timeout: int) -> dict:
-    checks = load_dynamic_checks()
-    fingerprint = load_current_counts_fingerprint()
+def build_report(
+    timeout: int,
+    *,
+    repo_root: Path = REPO_ROOT,
+    current_counts_json: Path = CURRENT_COUNTS_JSON,
+    agent_index_json: Path = AGENT_INDEX_JSON,
+) -> dict:
+    """Build a live-site report against explicit local source paths."""
+    checks = load_dynamic_checks(current_counts_json)
+    fingerprint = load_current_counts_fingerprint(current_counts_json)
     results = []
     observed_counts: dict[str, int] = {}
     for check in checks:
@@ -431,7 +427,12 @@ def build_report(timeout: int) -> dict:
             key: response["headers"].get(key, "")
             for key in ("last-modified", "etag", "cache-control", "age", "x-cache", "x-served-by")
         }
-        json_checks, observed = parse_json_contract(check["path"], response["text"], fingerprint)
+        json_checks, observed = parse_json_contract(
+            check["path"],
+            response["text"],
+            fingerprint,
+            agent_index_json=agent_index_json,
+        )
         observed_counts.update(observed)
         ok = response["ok"] and all(markers.values()) and all(json_checks.values())
         results.append(
@@ -452,8 +453,9 @@ def build_report(timeout: int) -> dict:
 
     pages = pages_status(timeout)
     pages["deployment_run"] = latest_deployment_run(timeout)
-    source_commit = local_source_commit()
-    source_dirty = local_source_dirty()
+    source_commit = local_source_commit(repo_root)
+    source_state = source_worktree_state(repo_root)
+    source_dirty = source_state.get("source_worktree_clean") is not True
     deployed_commit = pages.get("deployment_run", {}).get("head_sha", "")
     deployment_sha_mismatch = bool(source_commit and deployed_commit and source_commit != deployed_commit)
     deployment_pending = deployment_sha_mismatch or source_dirty
@@ -463,7 +465,7 @@ def build_report(timeout: int) -> dict:
     pending_paths = []
     if pages.get("ok"):
         for item in results:
-            local_path = REPO_ROOT / (item["path"] if item["path"] != "index.html" else "index.html")
+            local_path = repo_root / (item["path"] if item["path"] != "index.html" else "index.html")
             item["local_exists"] = local_path.is_file()
             item["deployment_pending"] = item["status"] == 404 and item["local_exists"]
             if deployment_pending and not item["ok"]:
@@ -483,6 +485,7 @@ def build_report(timeout: int) -> dict:
         "deployment": pages.get("deployment_run", {}),
         "source_commit": source_commit,
         "source_dirty": source_dirty,
+        **source_state,
         "deployment_sha_mismatch": deployment_sha_mismatch,
         "deployment_pending_reason": (
             "local source is dirty or latest successful Pages deployment is for a different source commit"
@@ -498,20 +501,38 @@ def build_report(timeout: int) -> dict:
     }
 
 
-def main() -> None:
+def main(
+    argv: list[str] | None = None,
+    *,
+    repo_root: Path = REPO_ROOT,
+    current_counts_json: Path = CURRENT_COUNTS_JSON,
+    agent_index_json: Path = AGENT_INDEX_JSON,
+    report_dir: Path | None = None,
+) -> None:
+    """Run the CLI with production defaults or explicit local test paths."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Validate the cached report exists and is parseable")
+    parser.add_argument(
+        "--allow-source-count-drift",
+        action="store_true",
+        help=(
+            "Permit a cached pre-deploy report to have different local count inputs; "
+            "use only for offline candidate validation."
+        ),
+    )
     parser.add_argument("--timeout", type=int, default=20)
-    args = parser.parse_args()
-    current_fingerprint = load_current_counts_fingerprint()
+    args = parser.parse_args(argv)
+    resolved_report_dir = report_dir or repo_root / "reports"
+    current_fingerprint = load_current_counts_fingerprint(current_counts_json)
     if args.check:
-        if not CURRENT_COUNTS_JSON.exists():
+        if not current_counts_json.exists():
             raise SystemExit("Current-counts source missing: data/current-counts.json")
-        out = latest_report("live_site_verification_*.json")
-        if not out.exists():
+        out = latest_report("live_site_verification_*.json", report_dir=resolved_report_dir)
+        if out is None or not out.exists():
             raise SystemExit("Missing live-site verification report")
         payload = json.loads(out.read_text(encoding="utf-8"))
-        if not count_fingerprint_matches(payload.get("expected_counts", {}), current_fingerprint):
+        fingerprint_matches = count_fingerprint_matches(payload.get("expected_counts", {}), current_fingerprint)
+        if not fingerprint_matches and not args.allow_source_count_drift:
             raise SystemExit(
                 f"Live-site verification counts snapshot mismatch: expected={current_fingerprint} got={payload.get('expected_counts')}"
             )
@@ -534,11 +555,23 @@ def main() -> None:
                 "live markers pending deploy)"
             )
             return
+        if not fingerprint_matches:
+            print(
+                "checked cached live-site verification report with pre-deploy count drift "
+                f"({payload['passing']}/{payload['checked_urls']} passing)"
+            )
+            return
         print(f"checked live-site verification report ({payload['passing']}/{payload['checked_urls']} passing)")
         return
-    payload = build_report(args.timeout)
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    payload = build_report(
+        args.timeout,
+        repo_root=repo_root,
+        current_counts_json=current_counts_json,
+        agent_index_json=agent_index_json,
+    )
+    out = dated_report_path("live_site_verification", "json", report_dir=resolved_report_dir)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"wrote live-site verification report: {payload['passing']}/{payload['checked_urls']} passing; pages={payload['github_pages'].get('status', 'unknown')}")
 
 

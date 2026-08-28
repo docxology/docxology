@@ -1,3 +1,5 @@
+<!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
+
 # AGENTS.md — Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary
 
 **Paper**: Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary (2026)
@@ -32,11 +34,11 @@
 
 ## Extraction Log
 
-| Date | Agent | Action | Status |
-|------|-------|--------|--------|
-| 2026-07-30 | ARCHIVIST | Cataloged metadata | ✅ |
-| 2026-07-30 | RESEARCHER | Extracted methods/findings | ✅ |
-| 2026-07-30 | EDUCATOR | Generated documentation | ✅ |
+| Source | Agent | Action | Status |
+|--------|-------|--------|--------|
+| Metadata | ARCHIVIST | Cataloged metadata | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References
 

@@ -4,8 +4,8 @@ type: article
 title: "Reimagining Maps"
 version: "v1"
 date-released: 2020-10-31
-doi: 10.5281/zenodo.4170026
-url: "https://doi.org/10.5281/zenodo.4170026"
+doi: 10.5281/zenodo.4170025
+url: "https://doi.org/10.5281/zenodo.4170025"
 authors:
   - family-names: Cordes
     given-names: Richard J.
@@ -16,8 +16,17 @@ authors:
     given-names: Mikel
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.4170026
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.4170025"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.4170025"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.4170026"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.4170026"
+    description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
     value: "https://zenodo.org/records/4170026"
-    description: "Zenodo landing page"
+    description: "Version/download landing page (Zenodo artifact)"

@@ -13,14 +13,35 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 WORKS_DIR = REPO_ROOT / "works"
 ENRICHMENT_OUT = REPO_ROOT / "data" / "work-enrichment.json"
+GENERATED_PAGE_MARKER = "<!-- docxology:generated-work-page; ownership=renderer -->"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, canonical_work_key, clip_description, domain_page_href, render_nav, social_meta_tags  # noqa: E402
+from generated_outputs import (  # noqa: E402
+    generated_output_files,
+    read_generated_output_text,
+    remove_generated_output,
+    safe_generated_output_path,
+    stale_output_paths,
+    stable_generated_output_timestamp,
+    write_output_texts,
+)
+from site_nav import (  # noqa: E402
+    BREADCRUMB_CSS,
+    HEAD_EXTRAS,
+    INTERACTIVE_SCRIPTS,
+    MENU_ESC_SCRIPT,
+    breadcrumb_jsonld_script,
+    canonical_work_key,
+    clip_description,
+    domain_page_href,
+    render_breadcrumb,
+    render_nav,
+)
 
 try:
-    from report_paths import generated_timestamp, stable_generated_at
+    from report_paths import generated_timestamp
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, stable_generated_at
+    from .report_paths import generated_timestamp
 
 
 def h(value: object) -> str:
@@ -353,40 +374,12 @@ def citation_text(work: dict) -> str:
 
 
 def breadcrumb_trail(work: dict) -> list[tuple[str, str]]:
-    """(label, absolute URL) pairs from site root to the current work."""
+    """Shared-renderer (label, root-relative path) pairs for one work page."""
     return [
-        ("Home", "https://danielarifriedman.com/"),
-        ("Works", "https://danielarifriedman.com/works/"),
-        (work["title"], f"https://danielarifriedman.com/works/{work['citation_key']}.html"),
+        ("Home", ""),
+        ("Works", "works/"),
+        (work["title"], f"works/{work['citation_key']}.html"),
     ]
-
-
-def breadcrumb_json_ld(work: dict) -> str:
-    items = [
-        {"@type": "ListItem", "position": i + 1, "name": name, "item": url}
-        for i, (name, url) in enumerate(breadcrumb_trail(work))
-    ]
-    return json.dumps(
-        {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items},
-        indent=4,
-        ensure_ascii=False,
-    )
-
-
-def breadcrumb_html(work: dict) -> str:
-    trail = breadcrumb_trail(work)
-    crumbs = []
-    for idx, (name, _url) in enumerate(trail):
-        if idx == len(trail) - 1:
-            crumbs.append(f'<li aria-current="page">{h(name)}</li>')
-        else:
-            href = "../index.html" if name == "Home" else "../works/"
-            crumbs.append(f'<li><a href="{href}">{h(name)}</a></li>')
-    return (
-        '    <nav class="breadcrumb" aria-label="Breadcrumb">\n'
-        f'        <ol>{"".join(crumbs)}</ol>\n'
-        '    </nav>'
-    )
 
 
 def related_works_html(work: dict) -> str:
@@ -484,15 +477,13 @@ def json_ld(work: dict) -> str:
     return json.dumps(data, indent=4, ensure_ascii=False)
 
 
-def work_page_title(work: dict, max_len: int = 70) -> str:
+def work_page_title(work: dict, max_len: int = 65) -> str:
     title = " ".join(work["title"].split())
     suffix = " — Daniel Ari Friedman"
     if len(h(title)) + len(h(suffix)) <= max_len:
         return f"{title}{suffix}"
     if len(h(title)) <= max_len:
         return title
-    # Account for html escaping length
-    budget = max_len - 1
     cut = title
     while len(h(cut + "…")) > max_len and len(cut) > 0:
         cut = cut.rsplit(" ", 1)[0].rstrip(" ,;:.–—-")
@@ -561,12 +552,7 @@ def page_head(work: dict) -> str:
         .platform-list a{{color:var(--silver-bright);text-decoration:none}}
         .platform-list a:hover{{text-decoration:underline}}
         .platform-list .muted{{color:var(--text-muted)}}
-        .breadcrumb{{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:960px;margin:0 auto}}
-        .breadcrumb ol{{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}}
-        .breadcrumb li+li::before{{content:'\\203A';margin-right:.4rem;color:var(--text-muted)}}
-        .breadcrumb a{{color:var(--silver-bright);text-decoration:none}}
-        .breadcrumb a:hover{{text-decoration:underline}}
-        .breadcrumb [aria-current=page]{{color:var(--text-secondary)}}
+        {BREADCRUMB_CSS}
         .related-list{{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}}
         .related-list li{{padding:.6rem .9rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}}
         .related-list a{{color:var(--silver-bright);text-decoration:none}}
@@ -575,9 +561,7 @@ def page_head(work: dict) -> str:
     <script type="application/ld+json">
 {json_ld(work)}
     </script>
-    <script type="application/ld+json">
-{breadcrumb_json_ld(work)}
-    </script>
+{breadcrumb_jsonld_script(breadcrumb_trail(work))}
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
@@ -654,7 +638,7 @@ def render_work_page(work: dict) -> str:
     return (
         page_head(work)
         + f"""
-{breadcrumb_html(work)}
+{render_breadcrumb(breadcrumb_trail(work), depth=1)}
     <header class="work-hero">
         <p class="eyebrow">{h(work['domain_name'])} · {h(work['type'])} · {h(work['year'])}</p>
         <h1>{h(work['title'])}</h1>
@@ -771,10 +755,11 @@ def render_index(works: list[dict]) -> str:
 
 
 def existing_generated_at(path: Path) -> str | None:
-    if not path.exists():
+    content = read_generated_output_text(REPO_ROOT, path)
+    if content is None:
         return None
     try:
-        return json.loads(path.read_text(encoding="utf-8")).get("generated_at")
+        return json.loads(content).get("generated_at")
     except json.JSONDecodeError:
         return None
 
@@ -790,7 +775,7 @@ def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
         siblings = [s for s in by_domain.get(w["domain"], []) if s["citation_key"] != w["citation_key"]]
         siblings.sort(key=lambda x: (int(x["year"]), int(x["num"])), reverse=True)
         w["related"] = siblings[:6]
-    outputs = {WORKS_DIR / "index.html": render_index(works)}
+    outputs = {WORKS_DIR / "index.html": mark_generated_page(render_index(works))}
     # citation_key is the permanent public URL primitive (works/{key}.html). It must be
     # unique: two works mapping to the same key would silently overwrite one page (and its
     # canonical/JSON-LD @id). Fail loud here rather than ship a clobbered/missing work.
@@ -803,7 +788,7 @@ def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
                 f"{seen_keys[key]['num']} and {work['num']} collide on works/{key}.html"
             )
         seen_keys[key] = work
-        outputs[WORKS_DIR / f"{key}.html"] = render_work_page(work)
+        outputs[WORKS_DIR / f"{key}.html"] = mark_generated_page(render_work_page(work))
     outputs[ENRICHMENT_OUT] = json.dumps(
         {
             "generated_at": generated_at or generated_timestamp(),
@@ -817,37 +802,76 @@ def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
     return outputs
 
 
+def mark_generated_page(content: str) -> str:
+    """Embed the ownership marker immediately after the HTML doctype."""
+    prefix = "<!DOCTYPE html>\n"
+    if not content.startswith(prefix):
+        raise ValueError("generated work page must start with an HTML doctype")
+    return prefix + GENERATED_PAGE_MARKER + "\n" + content.removeprefix(prefix)
+
+
+def is_owned_generated_page(path: Path, *, repo_root: Path = REPO_ROOT) -> bool:
+    """Return whether a work page explicitly authorizes renderer pruning."""
+    content = read_generated_output_text(repo_root, path, errors="replace")
+    return bool(content and content.startswith("<!DOCTYPE html>\n" + GENERATED_PAGE_MARKER + "\n"))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if generated files are stale")
+    parser.add_argument(
+        "--prune-owned",
+        action="store_true",
+        help="Remove only explicitly renderer-owned orphan work pages (destructive; requires an explicit manual invocation)",
+    )
     args = parser.parse_args()
+    if args.check and args.prune_owned:
+        parser.error("--prune-owned cannot be combined with --check")
     generated_at = existing_generated_at(ENRICHMENT_OUT) if args.check else None
     if not args.check:
         candidate_outputs = render_outputs()
-        generated_at = stable_generated_at(ENRICHMENT_OUT, json.loads(candidate_outputs[ENRICHMENT_OUT]))
+        generated_at = stable_generated_output_timestamp(
+            REPO_ROOT,
+            ENRICHMENT_OUT,
+            json.loads(candidate_outputs[ENRICHMENT_OUT]),
+        )
     outputs = render_outputs(generated_at)
-    stale: list[str] = []
+    stale = [str(path.relative_to(REPO_ROOT)) for path in stale_output_paths(outputs, repo_root=REPO_ROOT)] if args.check else []
     if not args.check:
-        if WORKS_DIR.exists():
-            for path in WORKS_DIR.glob("*.html"):
-                path.unlink()
-        else:
-            WORKS_DIR.mkdir(parents=True)
-    for path, content in outputs.items():
-        if args.check:
-            if not path.exists() or path.read_text(encoding="utf-8") != content:
-                stale.append(str(path.relative_to(REPO_ROOT)))
-        else:
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(content, encoding="utf-8")
+        write_output_texts(outputs, repo_root=REPO_ROOT)
     if args.check:
-        expected = {p.resolve() for p in outputs if p.parent == WORKS_DIR}
-        extra = {p.resolve() for p in WORKS_DIR.glob("*.html")} - expected if WORKS_DIR.exists() else set()
+        expected = {
+            safe_generated_output_path(REPO_ROOT, path)
+            for path in outputs
+            if path.parent == WORKS_DIR
+        }
+        extra = (
+            {
+                path
+                for path in generated_output_files(REPO_ROOT, WORKS_DIR, "*.html")
+                if is_owned_generated_page(path, repo_root=REPO_ROOT)
+            }
+            - expected
+        )
         stale.extend(str(p.relative_to(REPO_ROOT)) for p in sorted(extra))
+    elif args.prune_owned:
+        expected = {
+            safe_generated_output_path(REPO_ROOT, path)
+            for path in outputs
+            if path.parent == WORKS_DIR
+        }
+        owned_orphans = [
+            path
+            for path in generated_output_files(REPO_ROOT, WORKS_DIR, "*.html")
+            if path not in expected and is_owned_generated_page(path, repo_root=REPO_ROOT)
+        ]
+        for path in owned_orphans:
+            remove_generated_output(REPO_ROOT, path)
     if stale:
         raise SystemExit("Stale generated work pages: " + ", ".join(stale[:20]))
     action = "checked" if args.check else "wrote"
-    print(f"{action} {len(outputs)} work pages")
+    suffix = " (pruned explicitly owned orphans)" if args.prune_owned else ""
+    print(f"{action} {len(outputs)} work pages{suffix}")
 
 
 if __name__ == "__main__":

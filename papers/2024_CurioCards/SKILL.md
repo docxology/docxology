@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "CurioCards"
 description: "Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing struct..."
 tags: ["curio-cards", "research-ideation", "creativity-tools", "interdisciplinary-thinking", "prompt-based-exploration"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: Not assigned
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z

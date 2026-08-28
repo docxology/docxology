@@ -1,8 +1,8 @@
 {
   "title": "Infinite Games for Infinite Teams",
   "version": "1",
-  "doi": "10.5281/zenodo.12601675",
-  "doi_url": "https://doi.org/10.5281/zenodo.12601675",
+  "doi": "10.5281/zenodo.12601674",
+  "doi_url": "https://doi.org/10.5281/zenodo.12601674",
   "zenodo_record": "https://zenodo.org/records/12601675",
   "record_id": "12601675",
   "publication_date": "2020-07-08",
@@ -56,5 +56,7 @@
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.12601675",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.12601675"
 }

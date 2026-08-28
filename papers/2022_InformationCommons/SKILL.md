@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "InformationCommons"
 description: "An edited volume examining open standards and cognitive security for structuring the information commons. The book addresses how information ecosystems can be designed to promote trust, transparency..."
 tags: ["information-commons", "cognitive-security", "open-standards", "trust", "governance", "decentralized-systems", "information-integrity", "collective-sensemaking"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: Not assigned
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z

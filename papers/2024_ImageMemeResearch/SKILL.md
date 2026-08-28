@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "ImageMemeResearch"
 description: "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We prov..."
 tags: ["image-memes", "meme-research", "digital-communication", "narrative-analysis", "rhetorical-analysis", "sensemaking"]
 domain: "Cognitive Security"
 citation: "Daniel A. Friedman, R.J. Cordes, Mridula Mascarenhas (2024). *ImageMemeResearch*. Cognitive Security."
+doi: "10.1002/asi.24900"
 ---
 
 # ImageMemeResearch
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.1002/asi.24900
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.1002/asi.24900`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

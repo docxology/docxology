@@ -1,8 +1,10 @@
-# 📄 The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎨 The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20144984-blue)](https://doi.org/10.5281/zenodo.20144984)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20144983-blue)](https://doi.org/10.5281/zenodo.20144983)
 
 ---
 
@@ -25,14 +27,15 @@
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.20144984](https://doi.org/10.5281/zenodo.20144984)
+- DOI: [10.5281/zenodo.20144983](https://doi.org/10.5281/zenodo.20144983)
+- Artifact DOI: [10.5281/zenodo.20144984](https://doi.org/10.5281/zenodo.20144984)
 - Zenodo record: [https://zenodo.org/records/20144984](https://zenodo.org/records/20144984)
 - PDF: [blake_jiang_DAF_v1_05-12-2026.pdf](blake_jiang_DAF_v1_05-12-2026.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20144984)
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision*. Zenodo. DOI: 10.5281/zenodo.20144984. URL: https://doi.org/10.5281/zenodo.20144984.
+> Daniel Ari Friedman (2026). *The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision*. Zenodo. DOI: 10.5281/zenodo.20144983. URL: https://doi.org/10.5281/zenodo.20144983.
 
 ## Related
 

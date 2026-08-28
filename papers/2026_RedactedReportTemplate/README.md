@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Redacted Report Template: Disclosure Control and Release Audit
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

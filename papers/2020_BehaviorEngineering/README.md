@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 BehaviorEngineering
 
 **Daniel A. Friedman** (2020) · *Zenodo*

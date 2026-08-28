@@ -395,12 +395,41 @@ def render_md(ledger: dict) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
-def outputs() -> dict[Path, str]:
-    ledger = build_ledger()
+def _preserve_generated_at(ledger: dict, *, json_out: Path = JSON_OUT) -> dict:
+    """Retain a prior timestamp when the ledger's substantive body is unchanged.
+
+    The JSON timestamp is informational, not a new reproducibility result.  If
+    write mode refreshes it every pass, it changes the Pages manifest, which in
+    turn makes a supposedly idempotent release pipeline perpetually dirty.
+    """
+    if not json_out.exists():
+        return ledger
+    try:
+        existing = json.loads(json_out.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return ledger
+    current_body = dict(ledger)
+    existing_body = dict(existing) if isinstance(existing, dict) else {}
+    current_body.pop("generated_at", None)
+    existing_body.pop("generated_at", None)
+    prior_timestamp = existing.get("generated_at") if isinstance(existing, dict) else None
+    if current_body == existing_body and isinstance(prior_timestamp, str) and prior_timestamp:
+        ledger["generated_at"] = prior_timestamp
+    return ledger
+
+
+def outputs(
+    *,
+    json_out: Path = JSON_OUT,
+    html_out: Path = HTML_OUT,
+    md_out: Path = MD_OUT,
+) -> dict[Path, str]:
+    """Render the ledger for explicit output paths without writing them."""
+    ledger = _preserve_generated_at(build_ledger(), json_out=json_out)
     return {
-        JSON_OUT: json.dumps(ledger, indent=2, ensure_ascii=False) + "\n",
-        HTML_OUT: render_html(ledger),
-        MD_OUT: render_md(ledger),
+        json_out: json.dumps(ledger, indent=2, ensure_ascii=False) + "\n",
+        html_out: render_html(ledger),
+        md_out: render_md(ledger),
     }
 
 

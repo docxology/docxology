@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

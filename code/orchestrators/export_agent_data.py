@@ -63,9 +63,9 @@ def _scholar_claim() -> dict:
     }
 
 try:
-    from report_paths import generated_timestamp, latest_report, rel
+    from report_paths import generated_timestamp, latest_source_report, rel
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, latest_report, rel
+    from .report_paths import generated_timestamp, latest_source_report, rel
 
 
 def parse_software() -> list[dict]:
@@ -90,7 +90,7 @@ def _current_paper_folder_count() -> int:
 
 def _latest_snapshot_payload() -> dict:
     try:
-        path = latest_report("public_source_snapshot_*.json")
+        path = latest_source_report("public_source_snapshot_*.json")
     except FileNotFoundError:
         return {}
     try:
@@ -265,7 +265,7 @@ def _claims() -> list[dict]:
     work_count = int(counts.get("bibliography_works", _current_work_count()))
     folder_count = int(counts.get("paper_folder_docs", _current_paper_folder_count()))
     try:
-        snapshot_source = rel(latest_report("public_source_snapshot_*.json"))
+        snapshot_source = rel(latest_source_report("public_source_snapshot_*.json"))
     except FileNotFoundError:
         snapshot_source = ""
     return [
@@ -321,31 +321,38 @@ def _claims() -> list[dict]:
         },
         {
             "id": "orcid-canonical-identifier",
-            "claim": "ORCID 0000-0001-6232-9096 is the canonical researcher identifier. The canonical Google Scholar profile is DXjPFtYAAAAJ; a secondary Scholar profile (Y2bMf3MAAAAJ) is linked from ORCID and should be consolidated/disambiguated.",
+            "claim": "ORCID 0000-0001-6232-9096 identifies Daniel Ari Friedman. It publicly links the secondary Google Scholar profile Y2bMf3MAAAAJ; DXjPFtYAAAAJ is the canonical metrics profile under this repository's direct-authenticated Scholar policy.",
             "status": "public-identifier",
-            "sources": ["https://orcid.org/0000-0001-6232-9096", "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works"],
-            "checked_at": "2026-05-16",
+            "sources": [
+                "https://orcid.org/0000-0001-6232-9096",
+                "https://pub.orcid.org/v3.0/0000-0001-6232-9096/person",
+                "data/scholar-snapshot.json",
+                "data/scholar-verification-receipt.json",
+            ],
+            "checked_at": "2026-08-26",
             "confidence": "high",
-            "verification_method": "ORCID profile and public works endpoint. ORCID also exposes a secondary Google Scholar ID (Y2bMf3MAAAAJ) distinct from the canonical DXjPFtYAAAAJ used for all public metrics.",
+            "verification_method": "ORCID's public person record confirms the identifier and secondary Scholar link. The canonical metrics-profile decision is bounded by the direct authenticated Scholar receipt, not inferred from ORCID.",
             "maintenance_owner": "ARCHIVIST",
-            "caveat": "Use DXjPFtYAAAAJ as the single canonical Scholar profile for metrics. ORCID public work groups may lag new deposits and may group versions differently.",
+            "caveat": "ORCID does not itself designate a canonical Scholar profile. Keep all public metrics tied to DXjPFtYAAAAJ only when the direct authenticated receipt remains valid.",
         },
         {
             "id": "curio-cards-early-ethereum-art",
-            "claim": "Curio Cards 24, 25, and 26 are early Ethereum art NFTs minted on May 9, 2017; a complete Curio Cards set later sold at Christie's 'Post-War to Present' (New York, Oct 1, 2021) for 393 ETH (~$1.2M), seven artists.",
+            "claim": "Daniel Friedman created Curio Cards 24, 25, and 26, part of a collection that debuted on Ethereum on May 9, 2017; all original cards were minted in 2017. A full set of 30 cards plus 17b, representing seven artists, sold at Christie's New York in September 2021 for 393 ETH ($1,202,108).",
             "status": "public-profile",
             "sources": [
                 "https://curio.cards/artist/danielfriedman/",
                 "https://docs.curio.cards/the-artists/daniel-friedman",
-                "https://en.wikipedia.org/wiki/Curio_Cards",
+                "https://docs.curio.cards/",
+                "https://docs.curio.cards/faqs",
                 "https://www.christies.com/en/lot/lot-6337619",
+                "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
                 "papers/2024_CurioCards/README.md"
             ],
-            "checked_at": "2026-05-16",
+            "checked_at": "2026-08-26",
             "confidence": "high",
-            "verification_method": "Artist attribution and mint date confirmed via Curio Cards official docs and Wikipedia; the Christie's sale (date, 393 ETH/~$1.2M, seven artists) is independently corroborated. The specific Christie's lot URL (6337619) resolves and its first-party page matches the exact Curio set, but the lot number itself is not corroborated by any source independent of Christie's.",
+            "verification_method": "Curio's official artist and project documentation confirms the card attribution, collection debut, and 2017 minting window. Christie's first-party material confirms the New York sale amount, artist count, and September 2021 date; the lot page identifies the specific Curio set.",
             "maintenance_owner": "RESEARCHER",
-            "caveat": "Present the sale facts as independently verified; present the specific Christie's lot number as a first-party (Christie's) reference only, not independently corroborated. Avoid unqualified 'first/earliest NFT' superlatives.",
+            "caveat": "Do not claim that cards 24-26 were individually minted on May 9: the collection debuted then and its cards were released in groups during 2017. Avoid unqualified first/earliest-NFT superlatives and treat the exact Christie's lot number as first-party metadata.",
         },
         _scholar_claim(),
         {
@@ -353,111 +360,120 @@ def _claims() -> list[dict]:
             "claim": "Daniel Ari Friedman earned a PhD at Stanford University with dissertation record pb813wm1484.",
             "status": "public-institutional-record",
             "sources": [
-                "http://purl.stanford.edu/pb813wm1484",
+                "https://purl.stanford.edu/pb813wm1484",
+                "https://purl.stanford.edu/pb813wm1484.mods",
                 "papers/2019_PhDDissertation/README.md",
                 "pages/PROFILE.md"
             ],
-            "checked_at": "2026-05-15",
+            "checked_at": "2026-08-26",
             "confidence": "high",
-            "verification_method": "Stanford PURL dissertation record and local paper folder.",
+            "verification_method": "Stanford's MODS dissertation record names Daniel Ari Friedman, Stanford Biology, a 2019 PhD thesis, and Deborah M. Gordon as degree supervisor.",
             "maintenance_owner": "RESEARCHER",
             "caveat": "Use the Stanford PURL as the public institutional source.",
         },
         {
             "id": "nsf-postdoc-affiliation",
-            "claim": "Daniel Ari Friedman held an NSF Postdoctoral Research Fellowship in Biology (award DBI-2010290) co-trained at UC Davis; NSF budget period 2020-2022 with a no-cost extension to 2023.",
+            "claim": "Daniel Ari Friedman held NSF Postdoctoral Fellowship in Biology award DBI-2010290 from 2020-10-01 through 2023-09-30, conducted at UC Davis and co-trained by Brian Johnson and Tim Linksvayer.",
             "status": "public-grant-record",
             "sources": [
+                "https://api.nsf.gov/services/v1/awards/2010290.json",
                 "https://grantome.com/grant/NSF/DBI-2010290",
                 "pages/PROFILE.md",
                 "README.md",
             ],
-            "checked_at": "2026-05-16",
+            "checked_at": "2026-08-26",
             "confidence": "high",
-            "verification_method": "NSF award DBI-2010290 confirmed via Grantome (NSF PRFB, FY2020, $138,000, Davis CA). The 2020-2022 budget period is on the NSF record; the extension to 2023 aligns with the ORCID UC Davis employment span but is not itself on the funding record.",
+            "verification_method": "NSF's award API names PI Daniel A. Friedman, UC Davis performance location, the named co-training arrangement, and the 2020-10-01 to 2023-09-30 award dates.",
             "maintenance_owner": "RESEARCHER",
-            "caveat": "Cite the NSF award ID (DBI-2010290) as the authoritative public record. The funding record shows 2020-2022; present 2023 as a no-cost-extension affiliation, not a funded period.",
+            "caveat": "Cite the NSF award ID and its official start/expiration dates. Do not infer a separate 2020-2022 budget period or a no-cost extension from this record.",
         },
         {
             "id": "aii-officer-roles",
-            "claim": "Active Inference Institute officers: Daniel Friedman is President and Treasurer; Alexandra Mikhailova is Vice-President and Secretary (2025-ongoing). V. Bleu Knight was Secretary 2022-2024 and is a current member of the Board of Directors. The Institute is a 501(c)(3) public charity, EIN 88-2985125, IRS ruling March 2024.",
+            "claim": "Active Inference Institute officers: Daniel Friedman is President and Treasurer, and Alexandra Mikhailova is Vice President and Secretary. Virginia Bleu Knight is a current Board member. The Institute is a 501(c)(3) public charity, EIN 88-2985125, with an IRS ruling in March 2024.",
             "status": "public-profile",
             "sources": [
-                "https://www.activeinference.institute/officers",
+                "https://activeinference.institute/structure/officers/",
+                "https://activeinference.institute/structure/board-of-directors/",
                 "https://projects.propublica.org/nonprofits/organizations/882985125",
                 "pages/DISCOVERY.md",
                 "pages/PROFILE.md"
             ],
-            "checked_at": "2026-05-16",
+            "checked_at": "2026-08-26",
             "confidence": "high",
-            "verification_method": "AII officers page; 501(c)(3) status and EIN independently confirmed via ProPublica Nonprofit Explorer (IRS data, ruling March 2024).",
+            "verification_method": "Current AII officer and board pages establish the roles and board membership; ProPublica's IRS-derived record corroborates the 501(c)(3) status, EIN, and ruling month.",
             "maintenance_owner": "INTEGRATOR",
-            "caveat": "Officer roles are time-sensitive. Do not conflate Mikhailova (current VP+Secretary) with Knight (former Secretary 2022-2024, current Board member).",
+            "caveat": "Officer and board roles are time-sensitive. The refreshed sources do not re-establish historical office dates for Knight; keep any such history separately dated.",
         },
         {
             "id": "aii-board-count",
-            "claim": "The Active Inference Institute board page lists 10 current directors.",
+            "claim": "The Active Inference Institute board page lists 11 current members.",
             "status": "public-profile",
             "sources": [
-                "https://www.activeinference.institute/board-of-directors",
+                "https://activeinference.institute/structure/board-of-directors/",
                 "pages/LINKS.md",
                 "pages/WIKIPEDIA.md"
             ],
-            "checked_at": "2026-05-15",
+            "checked_at": "2026-08-26",
             "confidence": "high",
-            "verification_method": "AII board page and local governance notes.",
+            "verification_method": "Current AII board page.",
             "maintenance_owner": "INTEGRATOR",
             "caveat": "Board membership is time-sensitive; retain access dates in narrative pages.",
         },
         {
             "id": "aii-scientific-advisory-board-count",
-            "claim": "The Active Inference Institute site lists a 33-member Scientific Advisory Board cohort for 2026.",
+            "claim": "The Active Inference Institute site lists 32 current Scientific Advisory Board members.",
             "status": "public-profile",
             "sources": [
-                "https://www.activeinference.institute/scientific-advisory-board",
+                "https://activeinference.institute/structure/scientific-advisory-board/",
                 "pages/LINKS.md",
                 "pages/DISCOVERY.md"
             ],
-            "checked_at": "2026-05-16",
+            "checked_at": "2026-08-26",
             "confidence": "medium",
-            "verification_method": "AII SAB page lists the 2026 cohort (33 members). The member count is corroborated; no specific announcement date (e.g. a January 2026 announcement) is independently verified.",
+            "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 31 link to a public page.",
             "maintenance_owner": "INTEGRATOR",
-            "caveat": "State the cohort as 'listed for 2026' (33 members). Do not assert a specific announcement month unless the source page states one.",
+            "caveat": "State this as the current public membership count, not a cohort announcement or a claim about any specific announcement month.",
         },
         {
             "id": "aii-textbook-cohorts",
-            "claim": "AII Textbook Group copy references 10 cohorts through 2026.",
+            "claim": "AII's Textbook Group reports nine completed 2022-textbook cohorts and a first 2026 Fundamentals cohort currently live.",
             "status": "curated-program-copy",
             "sources": [
-                "https://www.activeinference.institute/textbook-group",
+                "https://activeinference.institute/projects/textbook-group/",
                 "README.md",
                 "pages/VIDEOS.md"
             ],
-            "checked_at": "2026-05-15",
+            "checked_at": "2026-08-26",
             "confidence": "medium",
-            "verification_method": "Curated site copy and AII program page.",
+            "verification_method": "Current AII Textbook Group page states nine cohorts on the 2022 textbook and a live first 2026 Fundamentals cohort.",
             "maintenance_owner": "EDUCATOR",
-            "caveat": "Program pages may use different public summary counts; keep local copy aligned with preferred site wording.",
+            "caveat": "The total is ten cohorts only when the current live 2026 cohort is included; do not describe all ten as completed.",
         },
         {
             "id": "college-of-the-redwoods-teaching",
-            "claim": "Homepage teaching copy lists BIOL-1 at Pelican Bay and BIOL-8 Human Biology for Spring 2026.",
-            "status": "curated-profile",
-            "sources": ["README.md", "index.html", "pages/PROFILE.md"],
-            "checked_at": "2026-05-15",
+            "claim": "Profile teaching copy lists BIOL-1 at Pelican Bay for Spring and Fall 2026 and BIOL-8 Human Biology for Spring 2026.",
+            "status": "principal-confirmed",
+            "sources": ["README.md", "index.html", "pages/PROFILE.md", "pages/VERIFICATION_LOG.md"],
+            "checked_at": "2026-08-26",
             "confidence": "medium",
-            "verification_method": "Curated homepage and profile synchronization.",
+            "verification_method": "Principal-confirmed instructor-of-record update supplied 2026-08-26 and synchronized across profile source surfaces.",
             "maintenance_owner": "EDUCATOR",
-            "caveat": "Term-specific teaching claims should be updated after each semester.",
+            "caveat": "Fall 2026 BIOL-1 is principal-confirmed, not represented as a public-schedule verification. The update makes no claim about BIOL-8 after Spring 2026.",
         },
         {
             "id": "cogsec-role",
             "claim": "COGSEC.org is the cognitive security publication and research context linked from the profile.",
             "status": "public-site",
-            "sources": ["https://cogsec.org", "README.md", "pages/PROFILE.md"],
-            "checked_at": "2026-05-15",
+            "sources": [
+                "https://www.cogsec.org/r-d-initiatives-3",
+                "https://www.cogsec.org/2021-research-initiative-brief-nim-8",
+                "https://pubmed.ncbi.nlm.nih.gov/38735269/",
+                "README.md",
+                "pages/PROFILE.md",
+            ],
+            "checked_at": "2026-08-26",
             "confidence": "medium",
-            "verification_method": "Public site link and curated profile copy.",
+            "verification_method": "COGSEC's public R&D initiative pages describe research-output activity; PubMed record PMID 38735269 identifies the Cognitive Security & Education Forum affiliation.",
             "maintenance_owner": "RESEARCHER",
             "caveat": "Prefer COGSEC pages for COGSEC-specific publication claims.",
         },
@@ -466,7 +482,7 @@ def _claims() -> list[dict]:
 
 def _latest_source(pattern: str, _fallback: str) -> str:
     try:
-        latest = latest_report(pattern)
+        latest = latest_source_report(pattern)
     except FileNotFoundError:
         raise FileNotFoundError(
             f"export_agent_data: no report matches {pattern!r}; refusing a stale fallback link"

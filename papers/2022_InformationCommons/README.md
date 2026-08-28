@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ InformationCommons
 
 **Scott David, R.J. Cordes, Daniel A. Friedman (editors)** (2022) · *COGSEC.org*

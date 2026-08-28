@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling"
 description: "<div>This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to des..."
 tags: ["cerebrum"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.15170907
+- Canonical DOI: 10.5281/zenodo.15170907
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
 - Last checked: 2026-06-30T22:27:22Z

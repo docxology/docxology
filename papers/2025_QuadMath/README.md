@@ -1,4 +1,6 @@
-# 📄 QuadMath
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎨 QuadMath
 
 **Daniel Ari Friedman** (2025) · *Zenodo*
 

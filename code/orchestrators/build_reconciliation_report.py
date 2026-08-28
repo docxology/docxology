@@ -13,9 +13,9 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 JSON_OUT = REPO_ROOT / "data" / "reconciliation.json"
 
 try:
-    from report_paths import latest_report, rel
+    from report_paths import latest_source_report, rel
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import latest_report, rel
+    from .report_paths import latest_source_report, rel
 
 
 def load_json(path: Path) -> dict:
@@ -32,7 +32,7 @@ def snapshot_value(snapshot: dict, label: str, key: str) -> int | str | None:
 
 
 def snapshot_path() -> Path:
-    return latest_report("public_source_snapshot_*.json")
+    return latest_source_report("public_source_snapshot_*.json")
 
 
 def snapshot_date(path: Path) -> str:

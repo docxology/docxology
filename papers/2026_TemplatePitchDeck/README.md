@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 template_pitch_deck: Reproducible, Validated Pitch-Deck Generation
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
@@ -16,9 +18,8 @@
 
 ## Methods
 
-- Narrative analysis
-- Misinformation detection
-- Trust frameworks
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
@@ -40,8 +41,6 @@
 > Daniel Ari Friedman (2026). *template_pitch_deck: Reproducible, Validated Pitch-Deck Generation*. Zenodo. DOI: 10.5281/zenodo.21281509. URL: https://doi.org/10.5281/zenodo.21281509.
 
 ## Related
-
-- GitHub release: https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0
 
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
 - [All Papers](../README.md)

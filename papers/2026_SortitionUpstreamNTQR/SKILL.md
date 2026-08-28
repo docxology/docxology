@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation"
 description: "How should you choose the judges, jurors, or reviewers who form a panel — and does that upstream choice change how well you can evaluate them without an answer key? A panel can be selected many ways — by competence, by a representative lottery (sorti..."
 tags: ["sortition", "ntqr", "unlabeled-evaluation", "expert-panels", "peer-review", "error-independence", "statistical-power", "panel-formation", "synthetic-evaluation", "llm-reviewers"]
@@ -42,10 +43,10 @@ judgments can be evaluated blind: given the a
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21083779
+- Canonical DOI: 10.5281/zenodo.21083779
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-28T17:12:26Z
 
 ## Prerequisites
 

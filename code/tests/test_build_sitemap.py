@@ -33,15 +33,15 @@ def test_sitemap_includes_work_pages():
     assert any(loc.endswith("works/Friedman2026PolicyEntanglementActiveInference119.html") for loc in locs)
 
 
-def test_sitemap_includes_video_pages_when_generated(tmp_path: Path, monkeypatch):
+def test_sitemap_includes_video_pages_when_generated(tmp_path: Path):
     videos_dir = tmp_path / "videos"
     videos_dir.mkdir()
     (videos_dir / "institute-abc123.html").write_text("<html></html>", encoding="utf-8")
-    monkeypatch.setattr(build_sitemap, "REPO_ROOT", tmp_path)
     build_sitemap.git_lastmod.cache_clear()
-    locs = re.findall(r"<loc>([^<]+)</loc>", render())
+    locs = sitemap_locs(repo_root=tmp_path)
     assert "https://danielarifriedman.com/videos/" in locs
     assert "https://danielarifriedman.com/videos/institute-abc123.html" in locs
+    assert re.findall(r"<loc>([^<]+)</loc>", render(repo_root=tmp_path)) == locs
 
 
 def test_indexnow_subset_of_sitemap():
@@ -50,8 +50,19 @@ def test_indexnow_subset_of_sitemap():
     assert indexnow
     assert "https://danielarifriedman.com/" in indexnow
     assert all(url in locs for url in indexnow)
-    assert "https://danielarifriedman.com/bibliography.bib" in indexnow
     assert all("/reports/" not in url for url in indexnow)
+
+
+def test_sitemap_excludes_non_html_metadata_exports():
+    """Sitemap hygiene (2026-08-27): metadata exports leave the sitemap; the
+    resume PDF legitimately stays."""
+    locs = sitemap_locs()
+    for suffix in (
+        "llms.txt", "humans.txt", "CITATION.cff", "bibliography.bib",
+        "bibliography.csl.json", "bibliography.ris", "codemeta.json",
+    ):
+        assert f"https://danielarifriedman.com/{suffix}" not in locs
+    assert "https://danielarifriedman.com/resume/resume.pdf" in locs
 
 
 def test_static_policy_lists_exports_hub():
@@ -61,7 +72,7 @@ def test_static_policy_lists_exports_hub():
     assert "videos/" in paths
 
 
-def test_existing_lastmod_uses_latest_entry(tmp_path: Path, monkeypatch):
+def test_existing_lastmod_uses_latest_entry(tmp_path: Path):
     sitemap = tmp_path / "sitemap.xml"
     sitemap.write_text(
         "\n".join(
@@ -74,6 +85,4 @@ def test_existing_lastmod_uses_latest_entry(tmp_path: Path, monkeypatch):
         ),
         encoding="utf-8",
     )
-    monkeypatch.setattr(build_sitemap, "OUT", sitemap)
-
-    assert build_sitemap.existing_lastmod() == "2026-06-18"
+    assert build_sitemap.existing_lastmod(sitemap) == "2026-06-18"

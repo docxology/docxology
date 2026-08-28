@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "Thoughtseeds"
 date-released: 2025
+doi: 10.3390/e27050459
+url: "https://doi.org/10.3390/e27050459"
 authors:
   - family-names: Kavi
     given-names: Prakash Chandra
@@ -13,3 +15,10 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
   - family-names: Patow
     given-names: Gustavo
+identifiers:
+  - type: doi
+    value: "10.3390/e27050459"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.3390/e27050459"
+    description: "Canonical citation DOI resolver"

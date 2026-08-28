@@ -60,11 +60,20 @@
   }
 
   // Lazy-load observer
+  // Grid thumbnails: request the 640px Flickr size instead of the 239px _m
+  // size that the CSS upscales to ~319px. Flickr only serves _z when the
+  // original is large enough, so fall back to the stored _m URL on error.
+  const largeThumb = (url) => (url || '').replace(/_m\.jpg(\?.*)?$/, '_z.jpg$1');
+
   const loadImage = (img) => {
     if (!img || !img.dataset.src || img.src) return;
-    img.src = img.dataset.src;
+    img.src = largeThumb(img.dataset.src);
     img.onload = () => img.classList.add('loaded');
     img.onerror = () => {
+      if (img.src !== img.dataset.src) {
+        img.src = img.dataset.src;
+        return;
+      }
       img.classList.add('loaded', 'load-error');
       img.alt = `${img.alt} (image unavailable)`;
     };
@@ -107,7 +116,7 @@
       card.setAttribute('aria-haspopup', 'dialog');
       card.setAttribute('aria-label', `Open artwork: ${art.title || 'Untitled artwork'}`);
       card.innerHTML =
-        `<img data-src="${esc(art.thumb)}" alt="${esc(artAlt(art))}" class="art-thumb" loading="lazy" decoding="async">` +
+        `<img data-src="${esc(art.thumb)}" alt="${esc(artAlt(art))}" class="art-thumb" width="640" height="640" loading="lazy" decoding="async">` +
         `<div class="art-info">` +
         `<div class="art-title" title="${esc(art.title)}">${esc(art.title)}</div>` +
         `<div class="art-meta">${art.date ? art.date.slice(0, 10) : ''}</div>` +

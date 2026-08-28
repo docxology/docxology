@@ -1,7 +1,30 @@
 {
   "schema": "docxology-verification-log/v1",
-  "description": "Dated independent multi-source verification of load-bearing profile claims. Human-readable companion: pages/VERIFICATION_LOG.md.",
+  "description": "Dated source-grounded verification of load-bearing profile claims. It distinguishes independent, first-party, direct-authenticated, and principal-confirmed evidence. Human-readable companion: pages/VERIFICATION_LOG.md.",
   "passes": [
+    {
+      "date": "2026-08-26",
+      "method": "Review-gated refresh against current primary records, a direct authenticated Scholar profile observation, and a principal-confirmed teaching update. First-party and principal-confirmed evidence is explicitly labeled rather than treated as independent corroboration.",
+      "results": [
+        {"claim": "google-scholar-metrics", "verdict": "verified-dated", "value": {"citations": 815, "h_index": 14, "i10_index": 16, "as_of": "2026-08-26"}, "independent_source": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en", "note": "direct authenticated canonical-profile observation; SHA-256-bound receipt in data/scholar-verification-receipt.json"},
+        {"claim": "stanford-phd", "verdict": "high", "independent_source": "https://purl.stanford.edu/pb813wm1484.mods", "note": "Stanford MODS record confirms Daniel Ari Friedman, Biology, PhD 2019, and Deborah M. Gordon as degree supervisor"},
+        {"claim": "nsf-postdoc", "verdict": "high", "independent_source": "https://api.nsf.gov/services/v1/awards/2010290.json", "note": "award DBI-2010290; UC Davis performance location; 2020-10-01 through 2023-09-30; named co-training arrangement"},
+        {"claim": "aii-officer-roles", "verdict": "first-party-plus-irs", "independent_source": "https://activeinference.institute/structure/officers/", "note": "current officers page lists Friedman as President & Treasurer and Mikhailova as Vice President & Secretary; ProPublica corroborates 501(c)(3), EIN 88-2985125, and March 2024 ruling; historic Knight office dates not reverified"},
+        {"claim": "aii-board-count", "verdict": "first-party-current", "independent_source": "https://activeinference.institute/structure/board-of-directors/", "note": "current board page lists 11 members"},
+        {"claim": "aii-sab-count", "verdict": "first-party-current", "independent_source": "https://activeinference.institute/structure/scientific-advisory-board/", "note": "current SAB page lists 32 members (31 linked to public pages)"},
+        {"claim": "aii-textbook-cohorts", "verdict": "first-party-current", "independent_source": "https://activeinference.institute/projects/textbook-group/", "note": "nine completed 2022-textbook cohorts plus a first 2026 Fundamentals cohort currently live"},
+        {"claim": "cogsec-role", "verdict": "public-source", "independent_source": "https://pubmed.ncbi.nlm.nih.gov/38735269/", "note": "PubMed affiliation names the Cognitive Security & Education Forum; COGSEC R&D pages document research-output activity"},
+        {"claim": "curio-cards-artist", "verdict": "first-party-current", "independent_source": "https://docs.curio.cards/the-artists/daniel-friedman", "note": "official Curio documentation identifies Friedman as artist of cards 24-26; project documentation distinguishes the May 9 collection debut from weekly releases during 2017"},
+        {"claim": "christies-curio-sale", "verdict": "first-party-only", "independent_source": "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd", "note": "Christie's guide states the 30-card plus 17b New York sale date, seven artists, 393 ETH, and $1,202,108; exact lot number remains first-party metadata"},
+        {"claim": "orcid-identifier", "verdict": "high", "independent_source": "https://pub.orcid.org/v3.0/0000-0001-6232-9096/person", "note": "ORCID identifies Daniel Ari Friedman and links secondary Scholar profile Y2bMf3MAAAAJ; canonical DXjPFtYAAAAJ policy is backed separately by the Scholar receipt"},
+        {"claim": "cr-fall-2026-teaching", "verdict": "principal-confirmed", "independent_source": null, "note": "BIOL-1 General Biology at Pelican Bay in Spring and Fall 2026; BIOL-8 Human Biology in Spring 2026. Supplied by the principal as instructor of record; no public schedule assertion."}
+      ],
+      "softened": [
+        {"item": "curio-card-mint-date", "action": "replaced a claim that cards 24-26 were individually minted on May 9 with the supported collection-debut and 2017 minting-window wording"},
+        {"item": "nsf-budget-extension", "action": "replaced unsupported 2020-2022 budget/no-cost-extension language with official award start and expiration dates"},
+        {"item": "historical-knight-office-date", "action": "removed from current-source claim because the 2026 refresh did not re-establish it"}
+      ]
+    },
     {
       "date": "2026-06-09",
       "method": "Public-source refresh for discovery and generated report surfaces using GitHub REST API, public-source snapshot, and paginated public-source inventory reports.",
@@ -67,7 +90,7 @@
         {"claim": "stanford-phd", "verdict": "high", "independent_source": "https://purl.stanford.edu/pb813wm1484", "note": "year/department/advisor (Deborah Gordon) corroborated"},
         {"claim": "nsf-postdoc", "verdict": "high", "independent_source": "https://grantome.com/grant/NSF/DBI-2010290", "note": "NSF PRFB FY2020 $138,000; budget period 2020-2022; 2023 = no-cost-extension affiliation"},
         {"claim": "aii-501c3", "verdict": "high", "independent_source": "https://projects.propublica.org/nonprofits/organizations/882985125", "note": "EIN 88-2985125; 501(c)(3); IRS ruling March 2024"},
-        {"claim": "aii-officer-roles", "verdict": "high", "independent_source": "https://www.activeinference.institute/officers", "note": "Friedman President+Treasurer; Mikhailova VP+Secretary 2025-; Knight prior Secretary 2022-2024 / current Board"},
+        {"claim": "aii-officer-roles", "verdict": "high", "independent_source": "https://activeinference.institute/structure/officers/", "note": "Friedman President+Treasurer; Mikhailova VP+Secretary 2025-; Knight prior Secretary 2022-2024 / current Board"},
         {"claim": "friston-coauthorship", "verdict": "high", "independent_source": "https://www.frontiersin.org/journals/behavioral-neuroscience/articles/10.3389/fnbeh.2021.647732/full", "note": "Active Inferants, peer-reviewed, Friston co-author; PMID 34248515"},
         {"claim": "publication-record-sample", "verdict": "high", "independent_source": "doi.org / Crossref / PubMed / Europe PMC", "note": "6/6 sampled DOIs resolve; first author on 4; Zenodo 36 exact-name / 82 ORCID match at the time; superseded for current count surfaces by 2026-06-04 targeted API refresh"},
         {"claim": "curio-cards-artist", "verdict": "high", "independent_source": "https://docs.curio.cards/the-artists/daniel-friedman", "note": "biographical-fingerprint confirmation; Christie's sale Oct 1 2021 393 ETH/~$1.2M/7 artists independently corroborated"},

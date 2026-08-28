@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "MathArtBlake"
 description: "This work explores the intersection of mathematics, art, and William Blake's prophetic vision. Through formal analysis of Blake's visual and poetic works, we identify mathematical structures and patte..."
 tags: ["william-blake", "mathematics", "art", "prophetic-vision", "geometric-structures", "active-inference"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.13711301
+- Canonical DOI: 10.5281/zenodo.13711301
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:30Z

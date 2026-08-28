@@ -155,6 +155,64 @@ def social_meta_tags(
     return "\n".join(lines)
 
 
+def render_pillar_head(
+    *,
+    title: str,
+    description: str,
+    canonical_path: str,
+    og_image: str,
+    style: str,
+    jsonld: dict,
+) -> str:
+    """Render the shared security/SEO head for a root-level pillar page.
+
+    Pillar pages are long-form, server-rendered sources and cannot delegate
+    their essential metadata to client JavaScript.  This renderer keeps their
+    CSP, referrer policy, rel=me links, canonical, social metadata, and JSON-LD
+    in the same shared layer as other generated public pages.
+    """
+    canonical = f"{SITE_ORIGIN}{canonical_path.lstrip('/')}"
+    escaped_title = html.escape(title, quote=True)
+    escaped_description = html.escape(description, quote=True)
+    image_url = f"{SITE_ORIGIN}{og_image.lstrip('/')}"
+    jsonld_text = json.dumps(jsonld, indent=4, ensure_ascii=False)
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{escaped_title}</title>
+    <meta name="description" content="{escaped_description}">
+    <meta name="author" content="Daniel Ari Friedman">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{canonical}">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+{HEAD_EXTRAS}
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{escaped_title}">
+    <meta property="og:description" content="{escaped_description}">
+    <meta property="og:url" content="{canonical}">
+    <meta property="og:image" content="{image_url}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+{social_meta_tags(title, description, image_url, image_alt=title)}
+    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
+    <meta name="theme-color" content="#0c0c0e">
+    <style>
+{BREADCRUMB_CSS}
+{style.rstrip()}
+    </style>
+    <script type="application/ld+json">
+{jsonld_text}
+    </script>
+</head>
+"""
+
+
 _VISIBLE_AGENT_LINK = re.compile(
     r'<a\b[^>]*href=["\'][^"\']*data/agent-index\.json[^"\']*["\'][^>]*>',
     re.I,
@@ -273,93 +331,85 @@ def render_breadcrumb(trail: list[tuple[str, str]], *, depth: int = 0) -> str:
     )
 
 
-def render_nav(*, active: str = "", depth: int = 0) -> str:
-    """Return nav block. depth=0 for root pages, depth=1+ for nested pages."""
+# ── Single navigation manifest ──────────────────────────────────────────────
+# One source of truth for EVERY page shell (root pages, works/papers/videos/
+# domains/pillars, publications template). Six primary links render directly in
+# the header so it never overflows at intermediate viewport widths; all other
+# destinations stay reachable through the visible "More" disclosure. Replaces
+# the divergent per-page navs that preceded this manifest.
+
+def nav_manifest(depth: int = 0) -> tuple[list[tuple[str, str, str, str]], list[tuple[str, str, str, str]]]:
+    """Return (primary, secondary) nav link tuples (key, href, label, extra_class)."""
     prefix = "../" * depth
     home = f"{prefix}index.html"
-    links = [
-        ("about", f"{prefix}index.html#about", "About"),
-        ("publications", f"{prefix}publications.html", "Publications"),
-        ("works", f"{prefix}works/", "Works"),
-        ("domains", f"{prefix}domains.html", "Domains"),
-        ("software", f"{prefix}software.html", "Software"),
-        ("videos", f"{prefix}videos.html", "Videos"),
-        ("art", f"{prefix}art.html", "Art"),
-        ("media", f"{prefix}media.html", "Media"),
-        ("collaborators", f"{prefix}collaborators.html", "Collaborators"),
-        ("resume", f"{prefix}resume/resume.html", "CV"),
-        ("search", f"{prefix}search.html", "Search"),
-        ("catalog", f"{prefix}catalog.html", "Data Catalog"),
-        ("evidence", f"{prefix}evidence.html", "Evidence"),
-        ("reproducibility", f"{prefix}reproducibility.html", "Reproducibility"),
-        ("cite", f"{prefix}cite-verify.html", "Cite"),
-        ("discovery", f"{prefix}discovery.html", "Discovery"),
-        ("agent-map", f"{prefix}data/agent-index.json", "Agent Map"),
+    primary = [
+        ("publications", f"{prefix}publications.html", "Publications", ""),
+        ("works", f"{prefix}works/", "Works", ""),
+        ("domains", f"{prefix}domains.html", "Domains", ""),
+        ("software", f"{prefix}software.html", "Software", ""),
+        ("videos", f"{prefix}videos.html", "Videos", ""),
+        ("art", f"{prefix}art.html", "Art", "nav-art-link"),
     ]
-    parts = [
-        f'    <nav role="navigation" aria-label="Main navigation">',
-        f'        <a href="{home}" class="nav-logo">Daniel Ari Friedman</a>',
-        '        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>',
-        '        <div class="nav-links">',
+    secondary = [
+        ("about", f"{home}#about", "About", ""),
+        ("research", f"{home}#research", "Research", ""),
+        ("media", f"{prefix}media.html", "Media", ""),
+        ("collaborators", f"{prefix}collaborators.html", "Collaborators", ""),
+        ("resume", f"{prefix}resume/resume.html", "CV", ""),
+        ("search", f"{prefix}search.html", "Search", ""),
+        ("catalog", f"{prefix}catalog.html", "Data Catalog", ""),
+        ("evidence", f"{prefix}evidence.html", "Evidence", ""),
+        ("reproducibility", f"{prefix}reproducibility.html", "Reproducibility", ""),
+        ("cite", f"{prefix}cite-verify.html", "Cite", ""),
+        ("discovery", f"{prefix}discovery.html", "Discovery", ""),
+        ("agent-map", f"{prefix}data/agent-index.json", "Agent Map", ""),
     ]
-    for key, href, label in links:
-        cls = ' class="active"' if key == active else ""
-        parts.append(f'            <a href="{html.escape(href, quote=True)}"{cls}>{html.escape(label)}</a>')
-    parts.extend(["        </div>", "    </nav>"])
-    return "\n".join(parts)
+    return primary, secondary
+
+
+def _nav_anchor(key: str, href: str, label: str, extra: str, *, active: str = "") -> str:
+    classes = [c for c in (extra, "active" if key == active else "") if c]
+    attrs = f' class="{" ".join(classes)}"' if classes else ""
+    current = ' aria-current="page"' if key == active else ""
+    return f'<a href="{html.escape(href, quote=True)}"{attrs}{current}>{html.escape(label)}</a>'
+
+
+def _render_nav_shell(*, active: str = "", depth: int = 0) -> str:
+    """Render the shared header nav: plain <nav><ul><li><a> (no menubar roles)."""
+    prefix = "../" * depth
+    home = f"{prefix}index.html"
+    primary, secondary = nav_manifest(depth)
+    items = "\n".join(f"            <li>{_nav_anchor(*l, active=active)}</li>" for l in primary)
+    more_items = "\n".join(f"                    <li>{_nav_anchor(*l, active=active)}</li>" for l in secondary)
+    return (
+        f'    <nav aria-label="Main navigation">\n'
+        f'        <a href="{home}" class="nav-logo">Daniel Ari Friedman</a>\n'
+        f'        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">\u2630</button>\n'
+        f'        <ul class="nav-links" id="nav-menu">\n'
+        f"{items}\n"
+        f'            <li>\n'
+        f'                <details class="nav-more">\n'
+        f'                    <summary>More</summary>\n'
+        f'                    <ul class="nav-more-panel">\n'
+        f"{more_items}\n"
+        f"                    </ul>\n"
+        f"                </details>\n"
+        f"            </li>\n"
+        f"        </ul>\n"
+        f"    </nav>"
+    )
+
+
+def render_nav(*, active: str = "", depth: int = 0) -> str:
+    """Shared header nav from the single manifest. depth=0 root, 1+ nested."""
+    return _render_nav_shell(active=active, depth=depth)
 
 
 def render_nav_domain(*, active: str = "domains", depth: int = 0) -> str:
-    """Nav for domain-*.html and domains.html (matches software/search/discovery cluster)."""
-    prefix = "../" * depth
-    home = f"{prefix}index.html"
-    links = [
-        ("about", f"{home}#about", "About"),
-        ("research", f"{home}#research", "Research"),
-        ("publications", f"{prefix}publications.html", "Publications"),
-        ("works", f"{prefix}works/", "Works"),
-        ("domains", f"{prefix}domains.html", "Domains"),
-        ("software", f"{prefix}software.html", "Software"),
-        ("videos", f"{prefix}videos.html", "Videos"),
-        ("art", f"{prefix}art.html", "Art"),
-        ("media", f"{prefix}media.html", "Media"),
-        ("collaborators", f"{prefix}collaborators.html", "Collaborators"),
-        ("resume", f"{prefix}resume/resume.html", "CV"),
-        ("search", f"{prefix}search.html", "Search"),
-        ("catalog", f"{prefix}catalog.html", "Data Catalog"),
-        ("evidence", f"{prefix}evidence.html", "Evidence"),
-        ("reproducibility", f"{prefix}reproducibility.html", "Reproducibility"),
-        ("cite", f"{prefix}cite-verify.html", "Cite"),
-        ("discovery", f"{prefix}discovery.html", "Discovery"),
-        ("agent-map", f"{prefix}data/agent-index.json", "Agent Map"),
-    ]
-    parts = [
-        '    <nav role="navigation" aria-label="Main navigation">',
-        f'        <a href="{home}" class="nav-logo">Daniel Ari Friedman</a>',
-        '        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>',
-        '        <div class="nav-links">',
-    ]
-    for key, href, label in links:
-        cls = ' class="active"' if key == active else ""
-        parts.append(f'            <a href="{html.escape(href, quote=True)}"{cls}>{html.escape(label)}</a>')
-    parts.extend(["        </div>", "    </nav>"])
-    return "\n".join(parts)
+    """Nav for domain pages — same shell, domains highlighted by default."""
+    return _render_nav_shell(active=active, depth=depth)
 
 
 def render_nav_compact(*, depth: int = 1) -> str:
-    """Compact nav for work detail pages (legacy subset + discovery)."""
-    prefix = "../" * depth
-    return (
-        f'<nav role="navigation" aria-label="Main navigation">'
-        f'<a href="{prefix}index.html" class="nav-logo">Daniel Ari Friedman</a>'
-        f'<div class="nav-links">'
-        f'<a href="{prefix}publications.html">Publications</a>'
-        f'<a href="{prefix}domains.html">Domains</a>'
-        f'<a href="{prefix}resume/resume.html">CV</a>'
-        f'<a href="{prefix}search.html">Search</a>'
-        f'<a href="{prefix}catalog.html">Data Catalog</a>'
-        f'<a href="{prefix}cite-verify.html">Cite</a>'
-        f'<a href="{prefix}discovery.html">Discovery</a>'
-        f'<a href="{prefix}data/agent-index.json">Agent Map</a>'
-        f"</div></nav>"
-    )
+    """Compact nav for work detail pages — same manifest shell, no default active."""
+    return _render_nav_shell(active="", depth=depth)

@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧬 NuclearStructure
 
 **Daniel A. Friedman, Daniel F. Pilch** (2016) · *Int. J. Radiation Biology*

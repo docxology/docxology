@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)"
+version: "2.0"
+date-released: 2026-08-26
+doi: 10.5281/zenodo.22134545
+url: "https://doi.org/10.5281/zenodo.22134545"
+authors:
+  - family-names: "Friedman"
+    given-names: "Daniel Ari"
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22134545
+    description: "Zenodo concept DOI"
+  - type: url
+    value: "https://zenodo.org/records/22134545"
+    description: "Zenodo landing page"

@@ -5461,7 +5461,7 @@
     "note": "Catalog row 157; docs: not available",
     "container-title": "Science",
     "publisher": "Science",
-    "URL": "https://www.science.org/doi/10.1126/science.371.6524.22"
+    "URL": "https://www.science.org/doi/10.1126/science.abg0904"
   },
   {
     "id": "Friedman2021DefiningEvents2020Hindsight158",
@@ -5485,8 +5485,8 @@
     "note": "Catalog row 158; docs: not available",
     "container-title": "Science",
     "publisher": "Science",
-    "DOI": "10.1126/science.371.6524.22",
-    "URL": "https://doi.org/10.1126/science.371.6524.22"
+    "DOI": "10.1126/science.abg0904",
+    "URL": "https://doi.org/10.1126/science.abg0904"
   },
   {
     "id": "Friedman2022ActiveBlockferenceCadCADActive159",
@@ -6829,5 +6829,55 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.21983948",
     "URL": "https://doi.org/10.5281/zenodo.21983948"
+  },
+  {
+    "id": "Friedman2026CognitiveIntegrityFrameworkComputational213",
+    "type": "article-journal",
+    "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 213; docs: papers/2026_CognitiveIntegrityFramework/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.22134545",
+    "URL": "https://doi.org/10.5281/zenodo.22134545"
+  },
+  {
+    "id": "Friedman2026CognitiveIntegrityFrameworkPractical214",
+    "type": "article-journal",
+    "title": "Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 214; docs: papers/2026_CognitiveIntegrityFramework2/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.22134547",
+    "URL": "https://doi.org/10.5281/zenodo.22134547"
   }
 ]

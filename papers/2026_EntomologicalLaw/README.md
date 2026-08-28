@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
@@ -16,9 +18,8 @@
 
 ## Methods
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 

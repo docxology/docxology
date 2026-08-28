@@ -4,8 +4,13 @@
 from __future__ import annotations
 
 import json
+import os
+import subprocess
 from pathlib import Path
 from typing import Optional
+
+from release_controls import is_control_path, source_tree_sha
+from release_evidence import is_ephemeral_release_evidence_path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 REPORT_DIR = REPO_ROOT / "reports"
@@ -29,6 +34,125 @@ def generated_timestamp() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
+def source_commit(repo_root: Path = REPO_ROOT) -> str:
+    """Return the exact revision exercised by a dated report.
+
+    Release validation intentionally rejects ``unknown`` values.  Keeping the
+    fallback makes normal local diagnostics usable outside a Git checkout while
+    preserving a truthful provenance boundary for release claims.
+    """
+    result = subprocess.run(
+        ["git", "rev-parse", "HEAD"],
+        cwd=repo_root,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    return result.stdout.strip() if result.returncode == 0 else "unknown"
+
+
+def _porcelain_paths(repo_root: Path) -> list[str] | None:
+    """Return every changed path from NUL-delimited porcelain output.
+
+    Human-readable porcelain output quotes unusual filenames and changes the
+    shape of rename records.  Release evidence must not turn either behaviour
+    into an accidental allow-list bypass, so use the documented NUL form and
+    retain both sides of a rename/copy.
+    """
+    result = subprocess.run(
+        ["git", "status", "--porcelain=v1", "-z", "--untracked-files=all"],
+        cwd=repo_root,
+        capture_output=True,
+        check=False,
+    )
+    if result.returncode != 0:
+        return None
+    records = result.stdout.split(b"\0")
+    paths: list[str] = []
+    index = 0
+    while index < len(records):
+        record = records[index]
+        index += 1
+        if not record:
+            continue
+        if len(record) < 4 or record[2:3] != b" ":
+            return None
+        status = record[:2].decode("ascii", errors="strict")
+        paths.append(os.fsdecode(record[3:]))
+        if "R" in status or "C" in status:
+            if index >= len(records) or not records[index]:
+                return None
+            paths.append(os.fsdecode(records[index]))
+            index += 1
+    return paths
+
+
+def _source_worktree_state(
+    repo_root: Path,
+    *,
+    control_tail: bool,
+    tree_commit: str | None = None,
+) -> dict[str, object]:
+    """Describe source cleanliness under one explicit report provenance mode.
+
+    Only narrowly declared post-commit evidence and the transient local Pages
+    projection do not alter release source. Payload-control reports additionally
+    exempt the narrow shared control set that is deliberately committed after a
+    source revision. Every other tracked or untracked path, including
+    hand-authored or unrecognized report files, does. A source tree hash
+    accompanies the assertion so a release validator can bind a clean capture
+    to the declared commit's exact Git tree.
+    """
+    paths = _porcelain_paths(repo_root)
+    if paths is None:
+        return {
+            "source_worktree_clean": False,
+            "source_worktree_dirty_paths": ["<git-status-unavailable>"],
+            "source_tree_sha": "unknown",
+        }
+    source_paths: list[str] = []
+    for path in paths:
+        # Backslashes are valid POSIX filename bytes but never valid release
+        # paths.  Do not silently normalize them into an evidence exemption.
+        if "\\" in path:
+            source_paths.append(path)
+            continue
+        if path == "_site" or path.startswith("_site/"):
+            continue
+        if is_ephemeral_release_evidence_path(path):
+            continue
+        if control_tail and is_control_path(Path(path)):
+            continue
+        source_paths.append(path)
+    return {
+        "source_worktree_clean": not source_paths,
+        "source_worktree_dirty_paths": source_paths,
+        "source_tree_sha": source_tree_sha(repo_root, tree_commit or source_commit(repo_root)),
+    }
+
+
+def source_worktree_state(repo_root: Path = REPO_ROOT) -> dict[str, object]:
+    """Describe strict exact-HEAD source provenance for release evidence."""
+    return _source_worktree_state(repo_root, control_tail=False)
+
+
+def control_tail_worktree_state(
+    repo_root: Path,
+    payload_commit: str,
+) -> dict[str, object]:
+    """Describe pre-deploy source provenance across a narrow control tail.
+
+    This is deliberately not used by post-deploy evidence or release
+    attestation. It exists only for committed deterministic control reports
+    whose own write must not make a normal no-write check self-referential.
+    """
+    return _source_worktree_state(
+        repo_root,
+        control_tail=True,
+        tree_commit=payload_commit,
+    )
+
+
 def stable_generated_at(path: Path, payload: dict) -> str | None:
     """Reuse a timestamp when a generated JSON payload body is unchanged."""
     if not path.exists():
@@ -45,47 +169,112 @@ def stable_generated_at(path: Path, payload: dict) -> str | None:
     return str(timestamp) if current_body == existing_body and timestamp else None
 
 
-def latest_report(pattern: str, *, required: bool = True) -> Path | None:
+def latest_report(
+    pattern: str,
+    *,
+    required: bool = True,
+    report_dir: Path = REPORT_DIR,
+) -> Path | None:
     """Resolve latest matching report file by glob pattern.
 
     Args:
-        pattern: A glob pattern rooted in reports/, for example
+        pattern: A glob pattern rooted in ``report_dir``, for example
             ``"public_source_snapshot_*.json"``.
         required: If True, raise ``FileNotFoundError`` when no match exists.
+        report_dir: Directory containing date-stamped report files.
     """
-    matches = _sorted_path_list(list(REPORT_DIR.glob(pattern)))
+    matches = _sorted_path_list(list(report_dir.glob(pattern)))
     if matches:
         return matches[0]
     if not required:
         return None
-    raise FileNotFoundError(f"No reports match: {REPORT_DIR / pattern}")
+    raise FileNotFoundError(f"No reports match: {report_dir / pattern}")
 
 
-def dated_report_path(prefix: str, suffix: str) -> Path:
-    """Build a report output path for today's date."""
+def is_git_tracked(path: Path, *, repo_root: Path = REPO_ROOT) -> bool:
+    """Return whether a report path belongs to the committed source tree.
+
+    Fresh post-deploy evidence intentionally remains outside the source payload
+    until a later, reviewed source update accepts it.  Source renderers must
+    therefore not make a committed page or manifest depend on an untracked
+    receipt that disappears in a clean CI checkout.
+    """
+    try:
+        relative = path.relative_to(repo_root)
+    except ValueError:
+        return False
+    result = subprocess.run(
+        ["git", "ls-files", "--error-unmatch", "--", relative.as_posix()],
+        cwd=repo_root,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    return result.returncode == 0
+
+
+def latest_source_report(
+    pattern: str,
+    *,
+    required: bool = True,
+    report_dir: Path = REPORT_DIR,
+    repo_root: Path = REPO_ROOT,
+) -> Path | None:
+    """Return the newest matching report path tracked by the source commit.
+
+    This is deliberately distinct from :func:`latest_report`: post-deploy
+    verifiers must inspect the freshest on-disk receipt, while deterministic
+    source renderers must only reference reports available from a clean
+    checkout of the candidate revision.
+    """
+    matches = [
+        path for path in _sorted_path_list(list(report_dir.glob(pattern)))
+        if is_git_tracked(path, repo_root=repo_root)
+    ]
+    if matches:
+        return matches[0]
+    if not required:
+        return None
+    raise FileNotFoundError(f"No tracked reports match: {report_dir / pattern}")
+
+
+def dated_report_path(
+    prefix: str,
+    suffix: str,
+    *,
+    report_dir: Path = REPORT_DIR,
+) -> Path:
+    """Build a report output path for today's date in ``report_dir``."""
     if not suffix.startswith("."):
         suffix = f".{suffix}"
-    return REPORT_DIR / f"{prefix}_{report_date_string()}{suffix}"
+    return report_dir / f"{prefix}_{report_date_string()}{suffix}"
 
 
-def dated_report_dir(prefix: str) -> Path:
-    """Build a date-stamped report directory path under reports/."""
-    return REPORT_DIR / prefix / report_date_string()
+def dated_report_dir(prefix: str, *, report_dir: Path = REPORT_DIR) -> Path:
+    """Build a date-stamped report directory path under ``report_dir``."""
+    return report_dir / prefix / report_date_string()
 
 
-def latest_subdir_file(prefix: str, filename: str, *, required: bool = True) -> Path | None:
+def latest_subdir_file(
+    prefix: str,
+    filename: str,
+    *,
+    required: bool = True,
+    report_dir: Path = REPORT_DIR,
+) -> Path | None:
     """Resolve the newest date-stamped report directory and return a child file.
 
     Args:
-        prefix: Directory prefix under reports (for example, ``browser-smoke``).
+        prefix: Directory prefix under ``report_dir`` (for example, ``browser-smoke``).
         filename: Child file name, such as ``manifest.json``.
+        report_dir: Directory containing date-stamped report folders.
     """
-    nested_root = REPORT_DIR / prefix
+    nested_root = report_dir / prefix
     if nested_root.is_dir():
         candidates = sorted([p for p in nested_root.iterdir() if p.is_dir()], key=lambda p: p.name, reverse=True)
     else:
         candidates = sorted(
-            [p for p in REPORT_DIR.glob(f"{prefix}_*/") if p.is_dir() and p.name.startswith(prefix)],
+            [p for p in report_dir.glob(f"{prefix}_*/") if p.is_dir() and p.name.startswith(prefix)],
             key=lambda p: p.name,
             reverse=True,
         )
@@ -93,8 +282,42 @@ def latest_subdir_file(prefix: str, filename: str, *, required: bool = True) -> 
     if not candidates:
         if not required:
             return None
-        raise FileNotFoundError(f"No report directories match: {REPORT_DIR / (prefix + '_*')}")
+        raise FileNotFoundError(f"No report directories match: {report_dir / (prefix + '_*')}")
     return candidates[0] / filename
+
+
+def latest_source_subdir_file(
+    prefix: str,
+    filename: str,
+    *,
+    required: bool = True,
+    report_dir: Path = REPORT_DIR,
+    repo_root: Path = REPO_ROOT,
+) -> Path | None:
+    """Return the newest tracked dated report manifest or screenshot path."""
+    nested_root = report_dir / prefix
+    if nested_root.is_dir():
+        candidates = sorted(
+            [path for path in nested_root.iterdir() if path.is_dir()],
+            key=lambda path: path.name,
+            reverse=True,
+        )
+    else:
+        candidates = sorted(
+            [
+                path for path in report_dir.glob(f"{prefix}_*/")
+                if path.is_dir() and path.name.startswith(prefix)
+            ],
+            key=lambda path: path.name,
+            reverse=True,
+        )
+    for candidate in candidates:
+        report = candidate / filename
+        if report.is_file() and is_git_tracked(report, repo_root=repo_root):
+            return report
+    if not required:
+        return None
+    raise FileNotFoundError(f"No tracked report directories match: {report_dir / (prefix + '_*')}")
 
 
 def repo_path(path_like: str | Path) -> Path:

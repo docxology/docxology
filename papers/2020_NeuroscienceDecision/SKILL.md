@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "NeuroscienceDecision"
 description: "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have hel..."
 tags: ["decision-making", "computational-neuroscience", "bayesian-brain", "free-will", "mental-health", "attention", "neural-circuits"]
 domain: "Genetics & Biomedical"
 citation: "Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman (2020). *NeuroscienceDecision*. Genetics & Biomedical."
+doi: "10.34700/8pg4-0h12"
 ---
 
 # NeuroscienceDecision
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.34700/8pg4-0h12
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.34700/8pg4-0h12`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

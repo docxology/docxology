@@ -20,8 +20,44 @@ from pathlib import Path
 from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+import sys
+
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+
+from report_paths import source_commit, source_worktree_state  # noqa: E402
+
 ORCID = "0000-0001-6232-9096"
 USER_AGENT = "docxology-public-source-refresh/1.0 (https://github.com/docxology/docxology)"
+SELECTED_AII_REPOS = (
+    "ActiveInferenceJournal",
+    "ActiveBlockference",
+    "ActiveInferAnts",
+    "GeneralizedNotationNotation",
+    "fep_lean",
+    "cognitive",
+    "CEREBRUM",
+    "Journal-Utilities",
+)
+
+
+def expected_check_labels() -> tuple[str, ...]:
+    """Return the versioned public-source coverage contract without fetching."""
+    return (
+        "GitHub user docxology",
+        "GitHub user ActiveInferenceInstitute",
+        "ORCID work groups",
+        "PubMed exact author records",
+        "Europe PMC exact author records",
+        "Crossref ORCID DOI records",
+        "Zenodo exact-name creator records",
+        "Zenodo ORCID-linked records",
+        "Zenodo record 18686966",
+        "Zenodo record 19600217",
+        "Zenodo record 19897664",
+        "Zenodo record 14108992",
+        "Zenodo record 17982447",
+        *(f"GitHub repo ActiveInferenceInstitute/{repo}" for repo in SELECTED_AII_REPOS),
+    )
 
 
 def fetch_json(url: str, *, accept: str = "application/json", timeout: int = 30, retries: int = 2) -> dict[str, Any]:
@@ -179,16 +215,6 @@ def zenodo_record(record_id: str) -> dict[str, Any]:
 
 def build_report() -> dict[str, Any]:
     today = dt.datetime.now(dt.timezone.utc).date().isoformat()
-    selected_aii_repos = [
-        "ActiveInferenceJournal",
-        "ActiveBlockference",
-        "ActiveInferAnts",
-        "GeneralizedNotationNotation",
-        "fep_lean",
-        "cognitive",
-        "CEREBRUM",
-        "Journal-Utilities",
-    ]
     checks = [
         github_user("docxology"),
         github_user("ActiveInferenceInstitute"),
@@ -207,7 +233,7 @@ def build_report() -> dict[str, Any]:
         zenodo_record("14108992"),
         zenodo_record("17982447"),
     ]
-    checks.extend(github_repo("ActiveInferenceInstitute", repo) for repo in selected_aii_repos)
+    checks.extend(github_repo("ActiveInferenceInstitute", repo) for repo in SELECTED_AII_REPOS)
     facts = {
         check["label"]: check.get("result")
         for check in checks
@@ -215,6 +241,8 @@ def build_report() -> dict[str, Any]:
     }
     return {
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "source_commit": source_commit(),
+        **source_worktree_state(),
         "date": today,
         "note": "Public API freshness report only. Review before updating curated site claims.",
         "facts": facts,

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline"
 description: "This paper documents template_prose_project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.co..."
 tags: ["prose-analysis", "readability", "editorial-review", "reproducible-research", "manuscript-quality"]
@@ -39,10 +40,10 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20417104
+- Canonical DOI: 10.5281/zenodo.20417104
 - PDF SHA-256: 290d21b10bd588b978d6a3200cdf0e3c2441ca86fcdc777ab41975fa910a260e
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-28T17:12:23Z
 
 ## Prerequisites
 

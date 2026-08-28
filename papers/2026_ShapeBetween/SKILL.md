@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Shape Between: A Full-Page Illustrated Storybook Template"
 description: "template_storybook demonstrates a public, standalone picture-book workflow in the research template repository. The bundled project renders a deterministic fourteen-page storybook subtitled A geometric fable of belonging, bracing, and reciprocal form..."
 tags: ["storybook", "illustration", "procedural-graphics", "reportlab", "reproducible-publishing"]
@@ -36,10 +37,10 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21176000
+- Canonical DOI: 10.5281/zenodo.21176000
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-28T17:12:26Z
 
 ## Prerequisites
 

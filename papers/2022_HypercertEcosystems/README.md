@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ HypercertEcosystems
 
 **Active Inference Institute** (2022) · *Zenodo*

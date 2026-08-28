@@ -3,45 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Active Inference & The Free Energy Principle: A Practical Tutorial</title>
+    <title>Active Inference &amp; The Free Energy Principle: A Practical…</title>
     <meta name="description" content="Comprehensive explanatory tutorial on Active Inference and the Free Energy Principle, covering generative models, Bayesian mechanics, and AI agent implementation.">
+    <meta name="author" content="Daniel Ari Friedman">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/active-inference.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">    <meta name="referrer" content="strict-origin-when-cross-origin">    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
     <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
     <link rel="me" href="https://github.com/docxology">
     <link rel="me" href="https://linkedin.com/in/danielarifriedman">
     <link rel="me" href="https://youtube.com/@danielarifriedman">
     <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
-
-
-
+    <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Active Inference & The Free Energy Principle: A Practical Tutorial">
+    <meta property="og:title" content="Active Inference &amp; The Free Energy Principle: A Practical…">
     <meta property="og:description" content="Comprehensive explanatory tutorial on Active Inference and the Free Energy Principle, covering generative models, Bayesian mechanics, and AI agent implementation.">
     <meta property="og:url" content="https://danielarifriedman.com/active-inference.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-active-inference-tutorial.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Active Inference & The Free Energy Principle: A Practical Tutorial">
+    <meta property="og:image:alt" content="Active Inference &amp; The Free Energy Principle: A Practical…">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Active Inference & The Free Energy Principle: A Practical Tutorial">
+    <meta name="twitter:title" content="Active Inference &amp; The Free Energy Principle: A Practical…">
     <meta name="twitter:description" content="Comprehensive explanatory tutorial on Active Inference and the Free Energy Principle, covering generative models, Bayesian mechanics, and AI agent implementation.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-active-inference-tutorial.jpg">
-    <meta name="twitter:image:alt" content="Active Inference & The Free Energy Principle: A Practical Tutorial">
+    <meta name="twitter:image:alt" content="Active Inference &amp; The Free Energy Principle: A Practical…">
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
     <meta name="theme-color" content="#0c0c0e">
     <style>
-        .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}
-        .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}
-        .breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}
-        .breadcrumb a{color:var(--silver-bright);text-decoration:none}
-        .breadcrumb a:hover{text-decoration:underline}
-        .breadcrumb [aria-current=page]{color:var(--text-secondary)}
+.breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
+
         .pillar-content{max-width:880px;margin:0 auto;padding:7.5rem 1.5rem 4rem;line-height:1.8;color:var(--text-primary)}
         .pillar-header{margin-bottom:2.5rem;text-align:left;border-bottom:1px solid var(--border);padding-bottom:1.5rem}
         .pillar-header h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.2rem,4.5vw,3.4rem);line-height:1.15;margin-bottom:1rem;color:#fff}
@@ -71,7 +70,7 @@
             "isPartOf": {
                 "@id": "https://danielarifriedman.com/#website"
             },
-            "headline": "Active Inference & The Free Energy Principle: A Practical Tutorial",
+            "headline": "Active Inference & The Free Energy Principle: A Practical…",
             "description": "Comprehensive explanatory tutorial on Active Inference and the Free Energy Principle, covering generative models, Bayesian mechanics, and AI agent implementation.",
             "url": "https://danielarifriedman.com/active-inference.html",
             "author": {
@@ -175,25 +174,36 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation">
+    <nav aria-label="Main navigation">
         <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <div class="nav-links">
-            <a href="index.html#about">About</a>
-            <a href="publications.html">Publications</a>
-            <a href="domains.html">Domains</a>
-            <a href="software.html">Software</a>
-            <a href="videos.html">Videos</a>
-            <a href="art.html">Art</a>
-            <a href="media.html">Media</a>
-            <a href="collaborators.html">Collaborators</a>
-            <a href="search.html">Search</a>
-            <a href="catalog.html">Data Catalog</a>
-            <a href="evidence.html">Evidence</a>
-            <a href="cite-verify.html">Cite</a>
-            <a href="discovery.html">Discovery</a>
-            <a href="data/agent-index.json">Agent Map</a>
-        </div>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="works/">Works</a></li>
+            <li><a href="domains.html" class="active" aria-current="page">Domains</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="art.html" class="nav-art-link">Art</a></li>
+            <li>
+                <details class="nav-more">
+                    <summary>More</summary>
+                    <ul class="nav-more-panel">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#research">Research</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="collaborators.html">Collaborators</a></li>
+                    <li><a href="resume/resume.html">CV</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="catalog.html">Data Catalog</a></li>
+                    <li><a href="evidence.html">Evidence</a></li>
+                    <li><a href="reproducibility.html">Reproducibility</a></li>
+                    <li><a href="cite-verify.html">Cite</a></li>
+                    <li><a href="discovery.html">Discovery</a></li>
+                    <li><a href="data/agent-index.json">Agent Map</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
     </nav>
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol><li><a href="index.html">Home</a></li><li><a href="domains.html">Domains</a></li><li aria-current="page">Active Inference</li></ol>
@@ -262,9 +272,9 @@
 <div class='callout-card'><h3>Active Inference Software Ecosystem</h3><ul>
 <li><strong><a href='https://github.com/ActiveInferenceInstitute/fep_lean'>fep_lean</a>:</strong> Formalization of Free Energy Principle theorems, discrete-state space models, and Bayesian mechanics in the Lean 4 interactive theorem prover (<a href='works/Friedman2026TowardsLean4Formalization113.html'>Friedman, 2026</a>).</li>
 <li><strong><a href='https://github.com/ActiveInferenceInstitute/COGANT'>COGANT</a> &amp; GNN:</strong> Generalized Notation Notation and automated compiler tools for declarative Active Inference system specification (<a href='works/Friedman2023GeneralizedNotationNotationActive056.html'>GNN Paper, 2023</a>).</li>
-<li><strong><a href='https://github.com/infer-stat/RxInfer.jl'>RxInfer.jl</a>:</strong> Reactive message-passing probabilistic programming engine in Julia for real-time variational inference.</li>
+<li><strong><a href='https://github.com/ReactiveBayes/RxInfer.jl'>RxInfer.jl</a>:</strong> Reactive message-passing probabilistic programming engine in Julia for real-time variational inference.</li>
 <li><strong>PyMDP:</strong> Python library for discrete-state Markov Decision Process Active Inference models.</li>
-<li><strong><a href='https://github.com/docxology/CEREBRUM'>CEREBRUM</a>:</strong> Case-Enabled Reasoning Engine with Bayesian Representations for structured multi-agent inference (<a href='works/Friedman2025CEREBRUMCaseEnabledReasoning010.html'>Friedman, 2025</a>).</li>
+<li><strong><a href='https://github.com/ActiveInferenceInstitute/CEREBRUM'>CEREBRUM</a>:</strong> Case-Enabled Reasoning Engine with Bayesian Representations for structured multi-agent inference (<a href='works/Friedman2025CEREBRUMCaseEnabledReasoning010.html'>Friedman, 2025</a>).</li>
 </ul></div>
 
         <h2>How Can Beginners and Advanced Researchers Learn Active Inference?</h2>
@@ -296,8 +306,9 @@
             <a href="cite-verify.html">Cite &amp; Verify</a>
         </div>
     </footer>
-    <script src="/js/tts-controls.js?v=20260712" defer></script>
-    <script src="/js/interactive.js?v=20260712" defer></script>
-    <script src="/js/menu-esc.js?v=20260712" defer></script>
+<script src="/js/search-utils.js?v=20260813"></script>
+<script src="/js/tts-controls.js?v=20260813" defer></script>
+<script src="/js/interactive.js?v=20260813" defer></script>
+    <script src="/js/menu-esc.js?v=20260813" defer></script>
 </body>
 </html>

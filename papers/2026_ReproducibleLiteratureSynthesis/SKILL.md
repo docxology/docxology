@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference"
 description: "This paper documents template_search_project, the literature-search exemplar shipped with the Research Project Template (https://github.com/docxology/template). The project demonstrates two configurable, reproducible pipelines sharing the same config..."
 tags: ["literature-search", "automated-reference-management", "bibtex", "reproducible-research", "local-llm-synthesis"]
@@ -36,7 +37,7 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21298894
+- Canonical DOI: 10.5281/zenodo.21298894
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-10T19:31:12Z

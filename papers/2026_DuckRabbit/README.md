@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 DuckRabbit: Typed Multimodal Illusion Generator
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

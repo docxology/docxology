@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "PhDDissertation"
 description: "This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus). It integrates field behavioral ecology, neuroche..."
 tags: ["phd-dissertation", "pogonomyrmex-barbatus", "collective-behavior", "transcriptomics", "behavioral-ecology", "foraging-gene", "dopamine", "colony-variation", "stanford-university"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: Not assigned
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z

@@ -28,6 +28,10 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+
+from scholar_verification import validate_scholar_snapshot_receipt  # noqa: E402
+
 SNAPSHOT = REPO_ROOT / "data" / "scholar-snapshot.json"
 
 
@@ -39,6 +43,10 @@ def rules(s: dict) -> dict[str, list[tuple[str, str]]]:
     """Per-file list of (pattern, replacement). Patterns match old AND new
     forms so re-running is a no-op."""
     cit, h, i10, as_of = s["citations"], s["h_index"], s["i10_index"], s["as_of"]
+    since_2021 = s.get("since_2021")
+    since_2021_citations = (
+        since_2021.get("citations") if isinstance(since_2021, dict) else None
+    )
     return {
         "README.md": [
             (r"Google_Scholar-\d+_citations", "Google_Scholar-current_snapshot"),
@@ -88,6 +96,24 @@ def rules(s: dict) -> dict[str, list[tuple[str, str]]]:
                 r"(\| Google Scholar Citations \| )\d+(?: \(as of [\d-]+\))?( \|)",
                 rf"\g<1>{cit} (as of {as_of})\g<2>",
             ),
+            (
+                r"(\| h-index \| )\d+( \|)",
+                rf"\g<1>{h}\g<2>",
+            ),
+            (
+                r"(\| i10-index \| )\d+( \|)",
+                rf"\g<1>{i10}\g<2>",
+            ),
+            *(
+                [
+                    (
+                        r"(\| Citations since 2021 \| )\d+(?: \(as of [\d-]+\))?( \|)",
+                        rf"\g<1>{since_2021_citations} (as of {as_of})\g<2>",
+                    )
+                ]
+                if isinstance(since_2021_citations, int) and since_2021_citations >= 0
+                else []
+            ),
         ],
         "pages/LINKS.md": [
             (
@@ -108,6 +134,13 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true", help="exit 1 on drift, no write")
     args = ap.parse_args()
+
+    receipt_errors = validate_scholar_snapshot_receipt(REPO_ROOT)
+    if receipt_errors:
+        print("Scholar verification receipt validation failed:")
+        for error in receipt_errors:
+            print(f"  - {error}")
+        return 1
 
     s = load_snapshot()
     drift = False

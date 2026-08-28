@@ -3,9 +3,18 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "SinglePheromone"
 date-released: 2023
+doi: 10.1016/j.cogsys.2023.02.005
+url: "https://doi.org/10.1016/j.cogsys.2023.02.005"
 authors:
   - family-names: Saund
     given-names: Eric
   - family-names: Friedman
     given-names: Daniel Ari
     orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: "10.1016/j.cogsys.2023.02.005"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1016/j.cogsys.2023.02.005"
+    description: "Canonical citation DOI resolver"

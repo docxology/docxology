@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 Pools, Rules, and Tools: A Template-Integrated Resource Architecture
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

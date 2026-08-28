@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "DuckRabbit: Typed Multimodal Illusion Generator"
 description: "DuckRabbit is typed, deterministic research software by Daniel Ari Friedman (Active Inference Institute) for constructing reproducible visual, auditory, temporal, and audiovisual stimulus families. The intended public release will be available at the..."
 tags: ["perceptual-illusions", "cognitive-taxonomy", "audio-visual-stimuli", "deterministic-generation", "typed-parameters", "research-software", "reproducible-research", "psychophysics"]
@@ -36,10 +37,10 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21419693
+- Canonical DOI: 10.5281/zenodo.21419693
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-28T17:12:27Z
 
 ## Prerequisites
 

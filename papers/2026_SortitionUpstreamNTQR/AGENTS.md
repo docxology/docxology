@@ -1,3 +1,5 @@
+<!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
+
 # AGENTS.md — Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation
 
 **Paper**: Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation (2026)
@@ -35,11 +37,11 @@ judgments can be evaluated blind: given the a
 
 ## Extraction Log
 
-| Date | Agent | Action | Status |
-|------|-------|--------|--------|
-| 2026-07-30 | ARCHIVIST | Cataloged metadata | ✅ |
-| 2026-07-30 | RESEARCHER | Extracted methods/findings | ✅ |
-| 2026-07-30 | EDUCATOR | Generated documentation | ✅ |
+| Source | Agent | Action | Status |
+|--------|-------|--------|--------|
+| Metadata | ARCHIVIST | Cataloged metadata | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References
 

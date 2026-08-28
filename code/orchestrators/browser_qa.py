@@ -7,11 +7,12 @@ likely to regress when the shared navigation, data-driven pages, CSP, or
 gallery controls change.  The script is intentionally not part of the offline
 regeneration chain because it launches a browser and writes a dated report.
 
-The Homebrew Playwright runtime used on the maintainer workstation is enough to
-run this without adding a browser dependency to the site's Python package:
+Install the optional browser QA dependency and browser binary before running:
 
-    /opt/homebrew/opt/python@3.13/bin/python3.13 code/orchestrators/browser_qa.py
-    python3 code/orchestrators/browser_qa.py --check
+    uv sync --extra browser-qa
+    uv run playwright install chromium
+    uv run --extra browser-qa python3 code/orchestrators/browser_qa.py
+    uv run --extra browser-qa python3 code/orchestrators/browser_qa.py --check
 """
 
 from __future__ import annotations
@@ -29,12 +30,21 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 try:
-    from report_paths import dated_report_dir, generated_timestamp, latest_subdir_file
+    from report_paths import dated_report_dir, generated_timestamp, latest_subdir_file, source_commit, source_worktree_state
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import dated_report_dir, generated_timestamp, latest_subdir_file
+    from .report_paths import dated_report_dir, generated_timestamp, latest_subdir_file, source_commit, source_worktree_state
 
 OUT_DIR = dated_report_dir("browser-qa")
 MANIFEST = OUT_DIR / "manifest.json"
+CHECK_NAMES = (
+    "core routes render without console errors",
+    "mobile menu opens, closes, and restores focus",
+    "no-JavaScript fallbacks remain usable",
+    "publication filters, announcements, and sorting update state",
+    "gallery lightbox traps and restores focus",
+    "320px layout honors reduced motion without page overflow",
+    "forced colors and YouTube iframe policy remain covered",
+)
 
 
 def free_port() -> int:
@@ -59,8 +69,8 @@ def require_playwright():
         from playwright.sync_api import sync_playwright
     except ImportError as exc:  # pragma: no cover - environment-specific
         raise SystemExit(
-            "browser_qa.py requires the cached Playwright Python runtime; "
-            "use /opt/homebrew/opt/python@3.13/bin/python3.13 or install playwright."
+            "browser_qa.py requires the optional browser QA dependency; run "
+            "`uv sync --extra browser-qa` and `uv run playwright install chromium`."
         ) from exc
     return sync_playwright
 
@@ -140,7 +150,7 @@ def run_report() -> dict:
                     "known_meta_csp_warnings": len(console_warnings),
                 }
 
-            record("core routes render without console errors", load_pages)
+            record(CHECK_NAMES[0], load_pages)
 
             def mobile_menu() -> dict:
                 with new_context(browser, viewport={"width": 320, "height": 760}) as context:
@@ -157,7 +167,7 @@ def run_report() -> dict:
                         raise AssertionError("Escape did not restore focus to the menu toggle")
                 return {"opened_and_closed": True, "focus_restored": True}
 
-            record("mobile menu opens, closes, and restores focus", mobile_menu)
+            record(CHECK_NAMES[1], mobile_menu)
 
             def no_javascript_fallback() -> dict:
                 routes = {
@@ -175,7 +185,7 @@ def run_report() -> dict:
                             raise AssertionError(f"{route} missing fallback marker: {marker}")
                 return {"routes": len(routes), "fallbacks": "visible"}
 
-            record("no-JavaScript fallbacks remain usable", no_javascript_fallback)
+            record(CHECK_NAMES[2], no_javascript_fallback)
 
             def publications_controls() -> dict:
                 with new_context(browser) as context:
@@ -196,7 +206,7 @@ def run_report() -> dict:
                         raise AssertionError(f"sort state missing: {sort_state}")
                 return {"all_rows": all_rows, "paper_rows": paper_rows, "sort_state": sort_state}
 
-            record("publication filters, announcements, and sorting update state", publications_controls)
+            record(CHECK_NAMES[3], publications_controls)
 
             def gallery_focus() -> dict:
                 with new_context(browser) as context:
@@ -216,7 +226,7 @@ def run_report() -> dict:
                         raise AssertionError("lightbox did not restore focus to the artwork card")
                 return {"trigger": title, "focus_restored": True}
 
-            record("gallery lightbox traps and restores focus", gallery_focus)
+            record(CHECK_NAMES[4], gallery_focus)
 
             def responsive_accessibility() -> dict:
                 routes = ["index.html", "publications.html", "art.html", "videos.html"]
@@ -234,7 +244,7 @@ def run_report() -> dict:
                             raise AssertionError(f"{route} overflows viewport by {overflow}px")
                 return {"routes": len(routes), "viewport": "320x760", "reduced_motion": True, "max_overflow_px": 2}
 
-            record("320px layout honors reduced motion without page overflow", responsive_accessibility)
+            record(CHECK_NAMES[5], responsive_accessibility)
 
             def forced_colors_and_iframes() -> dict:
                 with new_context(browser, forced_colors="active") as context:
@@ -254,11 +264,16 @@ def run_report() -> dict:
                         raise AssertionError("YouTube iframe referrer policy drifted")
                 return {"forced_colors": True, "iframe_origin": "www.youtube-nocookie.com", "iframe_title": True}
 
-            record("forced colors and YouTube iframe policy remain covered", forced_colors_and_iframes)
+            record(CHECK_NAMES[6], forced_colors_and_iframes)
             browser.close()
+
+        if tuple(check.get("name") for check in checks) != CHECK_NAMES:
+            raise RuntimeError("browser QA implementation no longer matches its declared coverage contract")
 
         report = {
             "generated_at": generated_timestamp(),
+            "source_commit": source_commit(),
+            **source_worktree_state(),
             "tool": "Playwright Python sync API",
             "scope": "progressive enhancement, interaction, responsive, CSP-adjacent runtime checks",
             "passing": sum(1 for check in checks if check["ok"]),

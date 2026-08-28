@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 NeurotransmitterVariation
 
 **Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton** (2020) · *Analytical & Bioanalytical Chemistry*

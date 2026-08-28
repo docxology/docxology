@@ -1,8 +1,8 @@
 {
   "title": "Modern Nostr Index Card-based Knowledge Engineering",
   "version": "v1",
-  "doi": "10.5281/zenodo.8118156",
-  "doi_url": "https://doi.org/10.5281/zenodo.8118156",
+  "doi": "10.5281/zenodo.8118155",
+  "doi_url": "https://doi.org/10.5281/zenodo.8118155",
   "zenodo_record": "https://zenodo.org/records/8118156",
   "record_id": "8118156",
   "publication_date": "2023-07-05",
@@ -60,5 +60,7 @@
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.8118156",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.8118156"
 }

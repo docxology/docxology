@@ -1,0 +1,1783 @@
+{
+  "generated_at": "2026-08-26T19:56:48Z",
+  "source": "reports/external_links_2026-08-26.json",
+  "checked_urls": 915,
+  "ok": 797,
+  "warnings": 118,
+  "categories": {
+    "bot-protected-or-rate-limited": 112,
+    "connection-failure": 1,
+    "ok": 797,
+    "timeout": 3,
+    "upstream-transient": 2
+  },
+  "note": "Warnings classify observed network behavior; bot-protected and rate-limited sources are not automatically stale.",
+  "warnings_by_category": {
+    "bot-protected-or-rate-limited": [
+      {
+        "url": "https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "index.html",
+          "pages/PROFILE.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1002/asi.24900",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "domain-cognitive-security.html",
+          "domain-cognitive-security.html",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1002/ece3.70063",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-entomology.html",
+          "domain-entomology.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/DOMAINS.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1093/molbev/msu292",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1098/rspb.2016.0841",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1111/mec.13964",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1126/science.aag1520",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-aii-ecosystem.html",
+          "domain-aii-ecosystem.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/DOMAINS.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1126/science.abg0904",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.1146/annurev-neuro-070815-013927",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.3109/09553002.2016.1144941",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-biomedicine.html",
+          "domain-biomedicine.html",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.3390/arts7030039",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.3390/e25070964",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.3390/e26040303",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.3390/e27050459",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20705350",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20705351",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/SOFTWARE.md",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20732274",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20732275",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20747834",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/DOMAINS.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20749817",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/SOFTWARE.md",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20786638",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20789899",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-cognitive-security.html",
+          "domain-cognitive-security.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/DOMAINS.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20804585",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/SOFTWARE.md",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20834846",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20931955",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20931964",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20976824",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21047573",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21083779",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21086292",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21086548",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21137276",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21176000",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21227869",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21281509",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21298883",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21298888",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21298890",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21298892",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21298894",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21316510",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21330636",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-cognitive-security.html",
+          "domain-cognitive-security.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/DOMAINS.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21418782",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21419693",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21513316",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-cognitive-security.html",
+          "domain-cognitive-security.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/DOMAINS.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21695160",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21750800",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "domain-computational.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21754235",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "domain-cognitive-security.html",
+          "domain-cognitive-security.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21754237",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21754239",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "domain-cognitive-security.html",
+          "domain-cognitive-security.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/DOMAINS.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21754241",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21754243",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21754245",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21763244",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21815704",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-cognitive-security.html",
+          "domain-cognitive-security.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21843592",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21864003",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21865643",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.21983948",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.22072956",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/SOFTWARE.md",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.3986084",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.4021162",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.4062540",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.4170025",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.4383229",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.4579413",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-presentations-media.html",
+          "domain-presentations-media.html",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.4624298",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.5034808",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.5565577",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.5573946",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.5750934",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.5797040",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.6320574",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.6904426",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7093836",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/PROFILE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7259006",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7377255",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7394900",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "domain-biomedicine.html",
+          "domain-biomedicine.html",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7394901",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "index.html",
+          "media.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7400525",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7400708",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7400785",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7401874",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7443847",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-aii-ecosystem.html",
+          "domain-aii-ecosystem.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/DOMAINS.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7449367",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7514367",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7626768",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7803313",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/DOMAINS.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7803327",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7838652",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7855581",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "domain-presentations-media.html",
+          "domain-presentations-media.html",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.7855582",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "media.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.8025956",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.8118155",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.8164666",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.8228934",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.8266280",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "domain-aii-ecosystem.html",
+          "domain-aii-ecosystem.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/DOMAINS.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.8377987",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-presentations-media.html",
+          "domain-presentations-media.html",
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.8377988",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "media.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.8415312",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://github-profile-trophy.vercel.app/?username=docxology&theme=dark&no-frame=true&no-bg=true&margin-w=4",
+        "status": 402,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://medium.com/@curiocards/daniel-friedman-decentralized-beauty-nft-art-and-ants-7dc664b72534",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "index.html",
+          "media.html",
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "index.html",
+          "pages/PROFILE.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://philpeople.org/profiles/daniel-ari-friedman",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://scholargps.com/scholars/96885945987887/daniel-ari-friedman",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://sciprofiles.com/profile/447575",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://www.linkedin.com/in/danielarifriedman",
+        "status": 999,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://www.researchgate.net/profile/Daniel-Friedman-2",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "README.md",
+          "index.html",
+          "index.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/LINKS.md",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://www.science.org/doi/10.1126/science.352.6288.886",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://www.science.org/doi/10.1126/science.abg0904",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://www.udemy.com/course/communication-for-remote-teams/",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "index.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/LINKS.md",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://www.udemy.com/course/keybase-for-remote-teams/",
+        "status": 403,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/LINKS.md",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      }
+    ],
+    "connection-failure": [
+      {
+        "url": "https://wiki.santafe.edu/index.php/Daniel_Ari_Friedman",
+        "status": 0,
+        "ok": false,
+        "category": "connection-failure",
+        "sources": [
+          "pages/LINKS.md"
+        ],
+        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 74 ms: Couldn't connect to server"
+      }
+    ],
+    "timeout": [
+      {
+        "url": "https://grantome.com/grant/NSF/DBI-2010290",
+        "status": 0,
+        "ok": false,
+        "category": "timeout",
+        "sources": [
+          "pages/EVIDENCE.md",
+          "pages/EVIDENCE.md"
+        ],
+        "error": "curl: (28) Connection timed out after 10005 milliseconds"
+      },
+      {
+        "url": "https://www.christies.com/en/lot/lot-6337619",
+        "status": 0,
+        "ok": false,
+        "category": "timeout",
+        "sources": [
+          "README.md",
+          "art.html",
+          "media.html",
+          "pages/EVIDENCE.md",
+          "pages/EVIDENCE.md",
+          "pages/LINKS.md"
+        ],
+        "error": "curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received"
+      },
+      {
+        "url": "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
+        "status": 0,
+        "ok": false,
+        "category": "timeout",
+        "sources": [
+          "pages/EVIDENCE.md",
+          "pages/EVIDENCE.md"
+        ],
+        "error": "curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received"
+      }
+    ],
+    "upstream-transient": [
+      {
+        "url": "https://dblp.org/pid/346/2173.html",
+        "status": 503,
+        "ok": false,
+        "category": "upstream-transient",
+        "sources": [
+          "discovery.html",
+          "pages/DISCOVERY.md",
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://dfri.people.stanford.edu/",
+        "status": 503,
+        "ok": false,
+        "category": "upstream-transient",
+        "sources": [
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      }
+    ]
+  }
+}

@@ -1,4 +1,6 @@
-# 📄 CurioCards
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎨 CurioCards
 
 **Daniel A. Friedman** (2024) · *Taschen*
 

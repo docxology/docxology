@@ -73,7 +73,7 @@
     "isPartOf": {
         "@id": "https://danielarifriedman.com/#website"
     },
-    "dateModified": "2026-08-22",
+    "dateModified": "2026-08-28",
     "about": {
         "@type": "DefinedTerm",
         "name": "Active Inference"
@@ -109,29 +109,36 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation">
+    <nav aria-label="Main navigation">
         <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <div class="nav-links">
-            <a href="index.html#about">About</a>
-            <a href="index.html#research">Research</a>
-            <a href="publications.html">Publications</a>
-            <a href="works/">Works</a>
-            <a href="domains.html" class="active">Domains</a>
-            <a href="software.html">Software</a>
-            <a href="videos.html">Videos</a>
-            <a href="art.html">Art</a>
-            <a href="media.html">Media</a>
-            <a href="collaborators.html">Collaborators</a>
-            <a href="resume/resume.html">CV</a>
-            <a href="search.html">Search</a>
-            <a href="catalog.html">Data Catalog</a>
-            <a href="evidence.html">Evidence</a>
-            <a href="reproducibility.html">Reproducibility</a>
-            <a href="cite-verify.html">Cite</a>
-            <a href="discovery.html">Discovery</a>
-            <a href="data/agent-index.json">Agent Map</a>
-        </div>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="works/">Works</a></li>
+            <li><a href="domains.html" class="active" aria-current="page">Domains</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="art.html" class="nav-art-link">Art</a></li>
+            <li>
+                <details class="nav-more">
+                    <summary>More</summary>
+                    <ul class="nav-more-panel">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#research">Research</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="collaborators.html">Collaborators</a></li>
+                    <li><a href="resume/resume.html">CV</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="catalog.html">Data Catalog</a></li>
+                    <li><a href="evidence.html">Evidence</a></li>
+                    <li><a href="reproducibility.html">Reproducibility</a></li>
+                    <li><a href="cite-verify.html">Cite</a></li>
+                    <li><a href="discovery.html">Discovery</a></li>
+                    <li><a href="data/agent-index.json">Agent Map</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
     </nav>
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol><li><a href="index.html">Home</a></li><li><a href="domains.html">Domains</a></li><li aria-current="page">Active Inference</li></ol>
@@ -146,7 +153,7 @@
             <div class="mini-grid">
                 <div class="mini-card"><h2>45 Works</h2><p>Curated works in this domain from the unified bibliography.</p></div>
                 <div class="mini-card"><h2>11 Related Repositories</h2><p>Selected software entries connected to this domain.</p></div>
-                <div class="mini-card"><h2>Full Text &amp; Images</h2><p>38 of 45 works have extracted full text, 34 have image galleries.</p></div>
+                <div class="mini-card"><h2>Full Text &amp; Images</h2><p>41 of 45 works have extracted full text, 30 have image galleries.</p></div>
                 <div class="mini-card"><h2>Collaborator Context</h2><p>Karl Friston, Thomas Parr, Maxwell J. D. Ramstead, Conor Heins, Tim Verbelen</p></div>
             </div>
         </section>
@@ -192,7 +199,7 @@
                     <div>
                         <a href="works/Friedman2026TowardsLean4Formalization113.html"><strong>Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics</strong></a>
                         <div class="venue">Active Inference Journal · Paper</div>
-                        <div class="work-desc">The Free Energy Principle (FEP) unifies a broad family of systems properties and configurations under a variational free energy functional, however (an open source resource for)…</div>
+                        <div class="work-desc">FEP Lean v1.1.0 is a source-bound, machine-checked catalogue of 155 topics across 20 reviewed families and five areas: the Free Energy Principle, Active Inference, Bayesian…</div>
                         <div class="work-meta-links"><a href="https://doi.org/10.5281/zenodo.19699233">DOI: 10.5281/zenodo.19699233</a> · <a href="papers/2026_FEPLean/">Paper Folder</a> · <a href="works/Friedman2026TowardsLean4Formalization113.html">Full Work Page &amp; Citation</a></div>
                     </div>
                     <a href="https://doi.org/10.5281/zenodo.19699233" aria-label="Primary link for Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics" class="btn btn-sm btn-outline">Primary Link</a>
@@ -331,9 +338,9 @@
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/ActiveInferenceInstitute/fep_lean">fep_lean</a></h3>
-                    <p>Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo</p>
+                    <p>Lean 4 / Mathlib4 formalization of FEP-related mathematics — 155-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI</p>
                     <p class="text-muted">Python · ⭐ 3 · Updated 2026</p>
-                    <div class="repo-meta-links"><a href="https://github.com/ActiveInferenceInstitute/fep_lean">GitHub Repo</a> · <a href="papers/2026_FEPLean/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.19699234">Zenodo Release</a></div>
+                    <div class="repo-meta-links"><a href="https://github.com/ActiveInferenceInstitute/fep_lean">GitHub Repo</a> · <a href="papers/2026_FEPLean/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.19699233">Zenodo Release</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/ActiveInferenceInstitute/CEREBRUM">CEREBRUM</a></h3>
@@ -367,7 +374,7 @@
 <li>Examine distributed belief updates in <a href='works/Friedman2024FederatedInferenceBeliefSharing036.html'>Federated Inference and Belief Sharing</a>.</li>
 <li>Study formal mathematical notation systems in <a href='works/Friedman2023GeneralizedNotationNotationActive056.html'>Generalized Notation Notation (GNN)</a>.</li>
 <li>Explore theorem proving in Lean 4 via <a href='works/Friedman2026TowardsLean4Formalization113.html'>Towards Lean 4 Formalization of Active Inference</a> and the <a href='https://github.com/ActiveInferenceInstitute/fep_lean'>fep_lean</a> repository.</li>
-<li>Engage with multi-agent orchestration and case-based reasoning in <a href='https://github.com/docxology/CEREBRUM'>CEREBRUM</a> and <a href='https://github.com/docxology/active_torchference'>active_torchference</a>.</li></ul></div>
+<li>Engage with multi-agent orchestration and case-based reasoning in <a href='https://github.com/ActiveInferenceInstitute/CEREBRUM'>CEREBRUM</a> and <a href='https://github.com/docxology/active_torchference'>active_torchference</a>.</li></ul></div>
         </section>
         <section class="section">
             <div class="section-header">

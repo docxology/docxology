@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

@@ -9,15 +9,18 @@
     <link rel="canonical" href="https://danielarifriedman.com/repositories-forks.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
-    <link rel="alternate" type="application/json" href="/data/github-repositories.json" title="GitHub repositories JSON">    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">    <meta name="referrer" content="strict-origin-when-cross-origin">    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
+    <link rel="alternate" type="application/json" href="/data/github-repositories.json" title="GitHub repositories JSON">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="me" href="https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en">
     <link rel="me" href="https://orcid.org/0000-0001-6232-9096">
     <link rel="me" href="https://github.com/docxology">
     <link rel="me" href="https://linkedin.com/in/danielarifriedman">
     <link rel="me" href="https://youtube.com/@danielarifriedman">
     <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
-
-<meta property="og:type" content="website">
+    <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
+    <meta property="og:type" content="website">
     <meta property="og:title" content="Forked GitHub Repositories — Daniel Ari Friedman &amp; AII">
     <meta property="og:description" content="Fork archive for 87 public GitHub forks from docxology and AII, separated from the primary repository inventory.">
     <meta property="og:url" content="https://danielarifriedman.com/repositories-forks.html">
@@ -99,10 +102,36 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation">
+    <nav aria-label="Main navigation">
         <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <div class="nav-links"><a href="publications.html">Publications</a><a href="software.html">Software</a><a href="search.html">Search</a><a href="catalog.html">Catalog</a> <a href="data/agent-index.json">Agent Map</a></div>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="works/">Works</a></li>
+            <li><a href="domains.html">Domains</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="art.html" class="nav-art-link">Art</a></li>
+            <li>
+                <details class="nav-more">
+                    <summary>More</summary>
+                    <ul class="nav-more-panel">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#research">Research</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="collaborators.html">Collaborators</a></li>
+                    <li><a href="resume/resume.html">CV</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="catalog.html">Data Catalog</a></li>
+                    <li><a href="evidence.html">Evidence</a></li>
+                    <li><a href="reproducibility.html">Reproducibility</a></li>
+                    <li><a href="cite-verify.html">Cite</a></li>
+                    <li><a href="discovery.html">Discovery</a></li>
+                    <li><a href="data/agent-index.json">Agent Map</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
     </nav>
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol><li><a href="index.html">Home</a></li><li><a href="repositories.html">Repositories</a></li><li aria-current="page">Forks</li></ol>
@@ -149,9 +178,9 @@
                 <div><strong>1</strong>Curated in software catalog</div>
                 <div><strong>87</strong>Public visibility</div>
                 <div><strong>0</strong>Private visibility</div>
-                <div><strong>157</strong><a href="repositories.html">Primary repos</a></div>
+                <div><strong>158</strong><a href="repositories.html">Primary repos</a></div>
                 <div><strong>0</strong>Archived</div>
-                <div><strong>29</strong>Updated in 90 days</div>
+                <div><strong>25</strong>Updated in 90 days</div>
             </div>
             
         </section>
@@ -195,20 +224,20 @@
                 <table class="inventory-table">
                     <thead><tr><th>Repository</th><th>Language</th><th>Stars</th><th>Forks</th><th>Updated</th><th>Flags</th></tr></thead>
                     <tbody id="inventoryRows">
-                    <tr data-owner="ActiveInferenceInstitute" data-curated="false" data-fork="true" data-archived="false" data-recent="true" data-visibility="public" data-language="python" data-search="ants activeinferenceinstitute/ants  python activeinferenceinstitute fork, recent ">
-                        <td><a href="https://github.com/ActiveInferenceInstitute/ants">ActiveInferenceInstitute/ants</a><span></span></td>
+                    <tr data-owner="ActiveInferenceInstitute" data-curated="false" data-fork="true" data-archived="false" data-recent="true" data-visibility="public" data-language="python" data-search="ants activeinferenceinstitute/ants mdp-based active-inference simulation of ant-colony foraging in a t-maze: code for the &quot;active inferants&quot; paper (friedman, tschantz, ramstead, friston &amp; constant, 2021, frontiers in behavioral neuroscience). python activeinferenceinstitute fork, recent active-inference agent-based-modeling ant-colony-optimization computational-neuroscience free-energy-principle markov-decision-process python">
+                        <td><a href="https://github.com/ActiveInferenceInstitute/ants">ActiveInferenceInstitute/ants</a><span>MDP-based active-inference simulation of ant-colony foraging in a T-maze: code for the &quot;Active Inferants&quot; paper (Friedman, Tschantz, Ramstead, Friston &amp; Constant, 2021, Frontiers in Behavioral Neuroscience).</span></td>
                         <td>Python</td>
                         <td>0</td>
                         <td>0</td>
-                        <td>2026-08-03</td>
+                        <td>2026-08-19</td>
                         <td>fork, recent</td>
                     </tr>
-                    <tr data-owner="ActiveInferenceInstitute" data-curated="false" data-fork="true" data-archived="false" data-recent="true" data-visibility="public" data-language="python" data-search="pymdp activeinferenceinstitute/pymdp a python implementation of active inference for markov decision processes python activeinferenceinstitute fork, recent ">
+                    <tr data-owner="ActiveInferenceInstitute" data-curated="false" data-fork="true" data-archived="false" data-recent="true" data-visibility="public" data-language="python" data-search="pymdp activeinferenceinstitute/pymdp a python implementation of active inference for markov decision processes python activeinferenceinstitute fork, recent active-inference free-energy-principle pomdp python">
                         <td><a href="https://github.com/ActiveInferenceInstitute/pymdp">ActiveInferenceInstitute/pymdp</a><span>A Python implementation of active inference for Markov Decision Processes</span></td>
                         <td>Python</td>
                         <td>2</td>
                         <td>0</td>
-                        <td>2026-07-28</td>
+                        <td>2026-08-19</td>
                         <td>fork, recent</td>
                     </tr>
                     <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="false" data-visibility="public" data-language="python" data-search="active-inference-sim-lab docxology/active-inference-sim-lab lightweight toolkit for building active inference agents based on the free energy principle. includes c++ core for performance, python bindings for ease of use, and integration with popular rl environments. achieves human-level atari performance with 10x less data than ppo. python docxology fork ">
@@ -251,13 +280,13 @@
                         <td>2025-04-11</td>
                         <td>fork</td>
                     </tr>
-                    <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="true" data-visibility="public" data-language="tex" data-search="ai-conductorblindspot docxology/ai-conductorblindspot computational artifacts for the conductor blind spot of the quadratic curvature class on ring-structured categorical heads, exact-arithmetic certificate verification tex docxology fork, recent ">
+                    <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="false" data-visibility="public" data-language="tex" data-search="ai-conductorblindspot docxology/ai-conductorblindspot computational artifacts for the conductor blind spot of the quadratic curvature class on ring-structured categorical heads, exact-arithmetic certificate verification tex docxology fork ">
                         <td><a href="https://github.com/docxology/AI-ConductorBlindSpot">docxology/AI-ConductorBlindSpot</a><span>Computational artifacts for The Conductor Blind Spot of the Quadratic Curvature Class on Ring-Structured Categorical Heads, exact-arithmetic certificate verification</span></td>
                         <td>TeX</td>
                         <td>0</td>
                         <td>0</td>
                         <td>2026-05-22</td>
-                        <td>fork, recent</td>
+                        <td>fork</td>
                     </tr>
                     <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="false" data-visibility="public" data-language="python" data-search="aif_iwai2025_thoughtseeds docxology/aif_iwai2025_thoughtseeds towards a fuller act inf implementation of thoughtseeds framework. initial ideas only! python docxology fork ">
                         <td><a href="https://github.com/docxology/aif_iwai2025_thoughtseeds">docxology/aif_iwai2025_thoughtseeds</a><span>Towards a fuller Act Inf implementation of Thoughtseeds Framework. Initial ideas only!</span></td>
@@ -275,13 +304,13 @@
                         <td>2025-05-30</td>
                         <td>fork</td>
                     </tr>
-                    <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="true" data-visibility="public" data-language="shell" data-search="ant_social_complexity docxology/ant_social_complexity  shell docxology fork, recent ">
+                    <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="false" data-visibility="public" data-language="shell" data-search="ant_social_complexity docxology/ant_social_complexity  shell docxology fork ">
                         <td><a href="https://github.com/docxology/ant_social_complexity">docxology/ant_social_complexity</a><span></span></td>
                         <td>Shell</td>
                         <td>0</td>
                         <td>0</td>
                         <td>2026-05-19</td>
-                        <td>fork, recent</td>
+                        <td>fork</td>
                     </tr>
                     <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="false" data-visibility="public" data-language="python" data-search="ants docxology/ants  python docxology fork ">
                         <td><a href="https://github.com/docxology/ants">docxology/ants</a><span></span></td>
@@ -451,13 +480,13 @@
                         <td>2025-06-09</td>
                         <td>fork</td>
                     </tr>
-                    <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="true" data-visibility="public" data-language="python" data-search="fpf docxology/fpf first principle framework python docxology fork, recent ">
+                    <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="false" data-visibility="public" data-language="python" data-search="fpf docxology/fpf first principle framework python docxology fork ">
                         <td><a href="https://github.com/docxology/FPF">docxology/FPF</a><span>First Principle Framework</span></td>
                         <td>Python</td>
                         <td>3</td>
                         <td>0</td>
                         <td>2026-05-23</td>
-                        <td>fork, recent</td>
+                        <td>fork</td>
                     </tr>
                     <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="true" data-visibility="public" data-language="" data-search="geo-infer-1 docxology/geo-infer-1   docxology fork, recent ">
                         <td><a href="https://github.com/docxology/GEO-INFER-1">docxology/GEO-INFER-1</a><span></span></td>
@@ -731,13 +760,13 @@
                         <td>2026-03-28</td>
                         <td>fork</td>
                     </tr>
-                    <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="true" data-visibility="public" data-language="python" data-search="quantum-logical-framework docxology/quantum-logical-framework quantum genesis constructive possibilist quantum logical synthesis python docxology fork, recent ">
+                    <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="false" data-visibility="public" data-language="python" data-search="quantum-logical-framework docxology/quantum-logical-framework quantum genesis constructive possibilist quantum logical synthesis python docxology fork ">
                         <td><a href="https://github.com/docxology/quantum-logical-framework">docxology/quantum-logical-framework</a><span>quantum genesis constructive possibilist quantum logical synthesis</span></td>
                         <td>Python</td>
                         <td>0</td>
                         <td>0</td>
                         <td>2026-05-25</td>
-                        <td>fork, recent</td>
+                        <td>fork</td>
                     </tr>
                     <tr data-owner="docxology" data-curated="false" data-fork="true" data-archived="false" data-recent="true" data-visibility="public" data-language="" data-search="reactivemp.jl docxology/reactivemp.jl high-performance reactive message-passing based bayesian inference engine  docxology fork, recent ">
                         <td><a href="https://github.com/docxology/ReactiveMP.jl">docxology/ReactiveMP.jl</a><span>High-performance reactive message-passing based Bayesian inference engine</span></td>
@@ -894,7 +923,7 @@
                     </tbody>
                 </table>
             </div>
-            <p class="note">Generated at 2026-08-10T17:24:40Z. Curated flags are derived from <a href="software.html">software.html</a> / <a href="pages/SOFTWARE.md">pages/SOFTWARE.md</a>.</p>
+            <p class="note">Generated at 2026-08-26T18:56:16Z. Curated flags are derived from <a href="software.html">software.html</a> / <a href="pages/SOFTWARE.md">pages/SOFTWARE.md</a>.</p>
         </section>
     </main>
     <footer role="contentinfo">

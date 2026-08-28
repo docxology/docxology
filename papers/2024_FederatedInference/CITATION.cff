@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "FederatedInference"
 date-released: 2024
+doi: 10.1016/j.neubiorev.2023.105500
+url: "https://doi.org/10.1016/j.neubiorev.2023.105500"
 authors:
   - family-names: Friston
     given-names: Karl J.
@@ -27,3 +29,10 @@ authors:
     given-names: John
   - family-names: Frith
     given-names: Christopher D.
+identifiers:
+  - type: doi
+    value: "10.1016/j.neubiorev.2023.105500"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1016/j.neubiorev.2023.105500"
+    description: "Canonical citation DOI resolver"

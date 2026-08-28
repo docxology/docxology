@@ -1,6 +1,7 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings"
-description: "Statistical power is an investigator-facing operating characteristic of an adaptive-study design. Before simulation, the investigator fixes an agent-side model, evaluator-side process, testing setting, policy, and replication plan. Each embedded agen..."
+description: "<p class="p1">Statistical power is an investigator-facing operating characteristic of an adaptive-study design. Before simulation, the investigator fixes an agent-side model, evaluator-side process, testing setting, policy, and replication plan. Each..."
 tags: ["multiple-testing", "false-discovery-rate", "benjamini-hochberg", "statistical-power", "active-inference", "pymdp", "sequential-hypothesis-testing", "reproducible-research"]
 domain: "Active Inference"
 citation: "Daniel Ari Friedman (2026). *Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings*. Active Inference."
@@ -19,9 +20,8 @@ This work addresses topics in **Active Inference**: multiple testing, false disc
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
@@ -37,16 +37,16 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21695160
-- PDF SHA-256: See zenodo_record
-- Pairing confidence: unknown
-- Last checked: 2026-07-30T17:45:27Z
+- Canonical DOI: 10.5281/zenodo.21695160
+- PDF SHA-256: 24fa25a4f29affcfd92c8c001ff6487a0c36960c6b4f38ed4419984fc8743cbf
+- Pairing confidence: strong
+- Last checked: 2026-08-28T17:12:27Z
 
 ## Prerequisites
 
 - Familiarity with multiple testing, false discovery rate, Benjamini-Hochberg
 - Background in Active Inference fundamentals
-- Access to source repository: N/A
+- Access to source repository: ActiveInferenceInstitute/active_inference_power
 
 ## Instructions
 

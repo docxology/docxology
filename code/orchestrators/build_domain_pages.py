@@ -13,6 +13,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
@@ -85,7 +86,7 @@ DOMAINS = [
             "Examine distributed belief updates in <a href='works/Friedman2024FederatedInferenceBeliefSharing036.html'>Federated Inference and Belief Sharing</a>.",
             "Study formal mathematical notation systems in <a href='works/Friedman2023GeneralizedNotationNotationActive056.html'>Generalized Notation Notation (GNN)</a>.",
             "Explore theorem proving in Lean 4 via <a href='works/Friedman2026TowardsLean4Formalization113.html'>Towards Lean 4 Formalization of Active Inference</a> and the <a href='https://github.com/ActiveInferenceInstitute/fep_lean'>fep_lean</a> repository.",
-            "Engage with multi-agent orchestration and case-based reasoning in <a href='https://github.com/docxology/CEREBRUM'>CEREBRUM</a> and <a href='https://github.com/docxology/active_torchference'>active_torchference</a>.",
+            "Engage with multi-agent orchestration and case-based reasoning in <a href='https://github.com/ActiveInferenceInstitute/CEREBRUM'>CEREBRUM</a> and <a href='https://github.com/docxology/active_torchference'>active_torchference</a>.",
         ),
         collaborators=("Karl Friston", "Thomas Parr", "Maxwell J. D. Ramstead", "Conor Heins", "Tim Verbelen"),
     ),
@@ -185,7 +186,7 @@ DOMAINS = [
             "Discover the organizational mission, governance, and programs on the <a href='https://activeinference.institute/'>Active Inference Institute Official Portal</a>.",
             "Survey ecosystem development and open research milestones in <a href='works/Friedman2025ActiveInferenceInstituteActive024.html'>The Active Inference Institute &amp; Active Inference Ecosystem (v3, 2025 snapshot)</a>.",
             "Explore ontology standardization efforts in <a href='works/Friedman2024AligningActiveInferenceOntology029.html'>Aligning Active Inference Ontology to SUMO</a>.",
-            "Participate in community education through the <a href='https://activeinference.institute/education'>Textbook Group Cohorts</a> and <a href='videos.html'>Institute Video Archives</a>.",
+            "Participate in community education through the <a href='https://activeinference.institute/projects/textbook-group/'>Textbook Group Cohorts</a> and <a href='videos.html'>Institute Video Archives</a>.",
             "Engage with formal mathematical specifications on the <a href='https://github.com/ActiveInferenceInstitute/fep_lean'>fep_lean repository</a>.",
             "Review verified non-profit records via the <a href='https://projects.propublica.org/nonprofits/organizations/882985125'>ProPublica Nonprofit Explorer (EIN 88-2985125)</a>.",
         ),
@@ -660,13 +661,13 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Fail if generated pages are stale")
     args = parser.parse_args()
     outputs = render_outputs()
-    stale: list[str] = []
-    for path, content in outputs.items():
-        if args.check:
-            if not path.exists() or path.read_text(encoding="utf-8") != content:
-                stale.append(str(path.relative_to(REPO_ROOT)))
-        else:
-            path.write_text(content, encoding="utf-8")
+    stale = (
+        [str(path.relative_to(REPO_ROOT)) for path in stale_output_paths(outputs, repo_root=REPO_ROOT)]
+        if args.check
+        else []
+    )
+    if not args.check:
+        write_output_texts(outputs, repo_root=REPO_ROOT)
     if stale:
         raise SystemExit("Stale generated domain pages: " + ", ".join(stale))
     action = "checked" if args.check else "wrote"

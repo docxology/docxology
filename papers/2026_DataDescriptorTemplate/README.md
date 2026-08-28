@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 Data Descriptor Template: Schema, Provenance, and Release Readiness
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

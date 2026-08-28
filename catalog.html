@@ -51,14 +51,14 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-08-22",
+  "dateModified": "2026-08-28",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#works",
       "name": "Curated Works Bibliography",
-      "description": "209 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
+      "description": "211 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
       "url": "https://danielarifriedman.com/data/works.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -127,7 +127,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
-      "description": "146 catalogued software repositories across docxology and AII contributions.",
+      "description": "147 catalogued software repositories across docxology and AII contributions.",
       "url": "https://danielarifriedman.com/data/software.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -281,6 +281,29 @@
       "distribution": {
         "@type": "DataDownload",
         "contentUrl": "https://danielarifriedman.com/data/claims.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#scholar-verification-receipt",
+      "name": "Scholar Verification Receipt",
+      "description": "Direct-authenticated Scholar verification assertion bound by SHA-256 to the dated canonical metric snapshot; it is provenance for the curated snapshot, not a new live fetch.",
+      "url": "https://danielarifriedman.com/data/scholar-verification-receipt.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/scholar-verification-receipt.json",
         "encodingFormat": "application/json"
       }
     },
@@ -449,7 +472,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#full-text-corpus",
       "name": "Full-Text Extraction Corpus",
-      "description": "171 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 139 images/ subdirectories with 8,944 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
+      "description": "189 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 139 images/ subdirectories with 8,886 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
       "url": "https://danielarifriedman.com/papers/",
       "encodingFormat": "application/json",
       "creator": {
@@ -519,7 +542,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-inventory",
       "name": "Public Source Inventory",
       "description": "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.",
-      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-10.json",
+      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-26.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -533,7 +556,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-10.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-26.json",
         "encodingFormat": "application/json"
       }
     },
@@ -542,7 +565,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-snapshot",
       "name": "Public Source Snapshot",
       "description": "Current public API freshness snapshot with normalized drift-comparison facts.",
-      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-07-21.json",
+      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-08-26.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -556,7 +579,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-07-21.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-08-26.json",
         "encodingFormat": "application/json"
       }
     },
@@ -585,10 +608,10 @@
     },
     {
       "@type": "Dataset",
-      "@id": "https://danielarifriedman.com/catalog.html#external-links",
-      "name": "External Link Report",
-      "description": "Scoped network freshness report for site-critical outbound links.",
-      "url": "https://danielarifriedman.com/reports/external_links_2026-05-15.json",
+      "@id": "https://danielarifriedman.com/catalog.html#public-source-observation-decisions",
+      "name": "Public-Source Observation Decisions",
+      "description": "SHA-256-bound review decisions for changed public-source observations; changed evidence returns to review.",
+      "url": "https://danielarifriedman.com/data/public-source-observation-decisions.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -602,7 +625,53 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-05-15.json",
+        "contentUrl": "https://danielarifriedman.com/data/public-source-observation-decisions.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#biographical-claim-decisions",
+      "name": "Biographical Claim Decisions",
+      "description": "SHA-256-bound review decisions for time-sensitive biographical claims and their cited evidence.",
+      "url": "https://danielarifriedman.com/data/biographical-claim-decisions.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/data/biographical-claim-decisions.json",
+        "encodingFormat": "application/json"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://danielarifriedman.com/catalog.html#external-links",
+      "name": "External Link Report",
+      "description": "Scoped network freshness report for site-critical outbound links.",
+      "url": "https://danielarifriedman.com/reports/external_links_2026-08-27.json",
+      "encodingFormat": "application/json",
+      "creator": {
+        "@type": "Person",
+        "@id": "https://danielarifriedman.com/#person",
+        "name": "Daniel Ari Friedman",
+        "url": "https://danielarifriedman.com/"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "includedInDataCatalog": {
+        "@id": "https://danielarifriedman.com/catalog.html#catalog"
+      },
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-08-27.json",
         "encodingFormat": "application/json"
       }
     },
@@ -611,7 +680,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-link-triage",
       "name": "External Link Triage",
       "description": "Categorized link warnings: bot-protected, transient, timeout, stale, and review.",
-      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-05-15.json",
+      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-08-27.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -625,7 +694,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-05-15.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-08-27.json",
         "encodingFormat": "application/json"
       }
     },
@@ -634,7 +703,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-08-22.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-08-28.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -648,7 +717,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-08-22.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-08-28.json",
         "encodingFormat": "application/json"
       }
     },
@@ -657,7 +726,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#browser-smoke",
       "name": "Browser Smoke Manifest",
       "description": "Selector-based Playwright smoke checks for core local pages.",
-      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-07-29/manifest.json",
+      "url": "https://danielarifriedman.com/reports/browser-smoke/2026-08-26/manifest.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -671,7 +740,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-07-29/manifest.json",
+        "contentUrl": "https://danielarifriedman.com/reports/browser-smoke/2026-08-26/manifest.json",
         "encodingFormat": "application/json"
       }
     },
@@ -680,7 +749,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#browser-qa",
       "name": "Progressive Browser QA",
       "description": "Playwright checks for no-JavaScript fallbacks, keyboard interactions, focus restoration, responsive behavior, forced colors, console errors, and YouTube iframe policy.",
-      "url": "https://danielarifriedman.com/reports/browser-qa/2026-07-29/manifest.json",
+      "url": "https://danielarifriedman.com/reports/browser-qa/2026-08-26/manifest.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -694,7 +763,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/browser-qa/2026-07-29/manifest.json",
+        "contentUrl": "https://danielarifriedman.com/reports/browser-qa/2026-08-26/manifest.json",
         "encodingFormat": "application/json"
       }
     },
@@ -703,7 +772,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#live-site",
       "name": "Live Site Verification",
       "description": "Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.",
-      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-08-17.json",
+      "url": "https://danielarifriedman.com/reports/live_site_verification_2026-08-28.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -717,7 +786,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-08-17.json",
+        "contentUrl": "https://danielarifriedman.com/reports/live_site_verification_2026-08-28.json",
         "encodingFormat": "application/json"
       }
     }
@@ -762,7 +831,7 @@
     <main id="main" class="main"><section class="section"><div class="catalog-grid">
                 <article class="catalog-card" id="works">
                     <h2><a href="data/works.json">Curated Works Bibliography</a></h2>
-                    <p>209 bibliography rows with citation keys, DOI links, domains, and documentation paths.</p>
+                    <p>211 bibliography rows with citation keys, DOI links, domains, and documentation paths.</p>
                     <span>data/works.json</span>
                 </article>
                 <article class="catalog-card" id="artworks-index">
@@ -777,7 +846,7 @@
                 </article>
                 <article class="catalog-card" id="software">
                     <h2><a href="data/software.json">Software Catalog</a></h2>
-                    <p>146 catalogued software repositories across docxology and AII contributions.</p>
+                    <p>147 catalogued software repositories across docxology and AII contributions.</p>
                     <span>data/software.json</span>
                 </article>
                 <article class="catalog-card" id="github-repositories">
@@ -809,6 +878,11 @@
                     <h2><a href="data/claims.json">Evidence Claims</a></h2>
                     <p>Claim-level evidence ledger with confidence, source links, and caveats.</p>
                     <span>data/claims.json</span>
+                </article>
+                <article class="catalog-card" id="scholar-verification-receipt">
+                    <h2><a href="data/scholar-verification-receipt.json">Scholar Verification Receipt</a></h2>
+                    <p>Direct-authenticated Scholar verification assertion bound by SHA-256 to the dated canonical metric snapshot; it is provenance for the curated snapshot, not a new live fetch.</p>
+                    <span>data/scholar-verification-receipt.json</span>
                 </article>
                 <article class="catalog-card" id="resume">
                     <h2><a href="data/resume.json">Structured Resume and CV</a></h2>
@@ -847,7 +921,7 @@
                 </article>
                 <article class="catalog-card" id="full-text-corpus">
                     <h2><a href="papers/">Full-Text Extraction Corpus</a></h2>
-                    <p>171 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 139 images/ subdirectories with 8,944 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.</p>
+                    <p>189 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 139 images/ subdirectories with 8,886 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.</p>
                     <span>papers/</span>
                 </article>
                 <article class="catalog-card" id="generated-manifest">
@@ -861,49 +935,59 @@
                     <span>search-index.json</span>
                 </article>
                 <article class="catalog-card" id="public-source-inventory">
-                    <h2><a href="reports/public_source_inventory_2026-08-10.json">Public Source Inventory</a></h2>
+                    <h2><a href="reports/public_source_inventory_2026-08-26.json">Public Source Inventory</a></h2>
                     <p>Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.</p>
-                    <span>reports/public_source_inventory_2026-08-10.json</span>
+                    <span>reports/public_source_inventory_2026-08-26.json</span>
                 </article>
                 <article class="catalog-card" id="public-source-snapshot">
-                    <h2><a href="reports/public_source_snapshot_2026-07-21.json">Public Source Snapshot</a></h2>
+                    <h2><a href="reports/public_source_snapshot_2026-08-26.json">Public Source Snapshot</a></h2>
                     <p>Current public API freshness snapshot with normalized drift-comparison facts.</p>
-                    <span>reports/public_source_snapshot_2026-07-21.json</span>
+                    <span>reports/public_source_snapshot_2026-08-26.json</span>
                 </article>
                 <article class="catalog-card" id="paired-publication-decisions">
                     <h2><a href="data/paired-publication-decisions.json">Paired Publication Decisions</a></h2>
                     <p>Manual review decisions for ambiguous GitHub release + Zenodo record pair candidates.</p>
                     <span>data/paired-publication-decisions.json</span>
                 </article>
+                <article class="catalog-card" id="public-source-observation-decisions">
+                    <h2><a href="data/public-source-observation-decisions.json">Public-Source Observation Decisions</a></h2>
+                    <p>SHA-256-bound review decisions for changed public-source observations; changed evidence returns to review.</p>
+                    <span>data/public-source-observation-decisions.json</span>
+                </article>
+                <article class="catalog-card" id="biographical-claim-decisions">
+                    <h2><a href="data/biographical-claim-decisions.json">Biographical Claim Decisions</a></h2>
+                    <p>SHA-256-bound review decisions for time-sensitive biographical claims and their cited evidence.</p>
+                    <span>data/biographical-claim-decisions.json</span>
+                </article>
                 <article class="catalog-card" id="external-links">
-                    <h2><a href="reports/external_links_2026-05-15.json">External Link Report</a></h2>
+                    <h2><a href="reports/external_links_2026-08-27.json">External Link Report</a></h2>
                     <p>Scoped network freshness report for site-critical outbound links.</p>
-                    <span>reports/external_links_2026-05-15.json</span>
+                    <span>reports/external_links_2026-08-27.json</span>
                 </article>
                 <article class="catalog-card" id="external-link-triage">
-                    <h2><a href="reports/external_links_triage_2026-05-15.json">External Link Triage</a></h2>
+                    <h2><a href="reports/external_links_triage_2026-08-27.json">External Link Triage</a></h2>
                     <p>Categorized link warnings: bot-protected, transient, timeout, stale, and review.</p>
-                    <span>reports/external_links_triage_2026-05-15.json</span>
+                    <span>reports/external_links_triage_2026-08-27.json</span>
                 </article>
                 <article class="catalog-card" id="asset-size">
-                    <h2><a href="reports/asset_size_2026-08-22.json">Asset Size Audit</a></h2>
+                    <h2><a href="reports/asset_size_2026-08-28.json">Asset Size Audit</a></h2>
                     <p>Size report for public HTML, OG images, data exports, and runtime assets.</p>
-                    <span>reports/asset_size_2026-08-22.json</span>
+                    <span>reports/asset_size_2026-08-28.json</span>
                 </article>
                 <article class="catalog-card" id="browser-smoke">
-                    <h2><a href="reports/browser-smoke/2026-07-29/manifest.json">Browser Smoke Manifest</a></h2>
+                    <h2><a href="reports/browser-smoke/2026-08-26/manifest.json">Browser Smoke Manifest</a></h2>
                     <p>Selector-based Playwright smoke checks for core local pages.</p>
-                    <span>reports/browser-smoke/2026-07-29/manifest.json</span>
+                    <span>reports/browser-smoke/2026-08-26/manifest.json</span>
                 </article>
                 <article class="catalog-card" id="browser-qa">
-                    <h2><a href="reports/browser-qa/2026-07-29/manifest.json">Progressive Browser QA</a></h2>
+                    <h2><a href="reports/browser-qa/2026-08-26/manifest.json">Progressive Browser QA</a></h2>
                     <p>Playwright checks for no-JavaScript fallbacks, keyboard interactions, focus restoration, responsive behavior, forced colors, console errors, and YouTube iframe policy.</p>
-                    <span>reports/browser-qa/2026-07-29/manifest.json</span>
+                    <span>reports/browser-qa/2026-08-26/manifest.json</span>
                 </article>
                 <article class="catalog-card" id="live-site">
-                    <h2><a href="reports/live_site_verification_2026-08-17.json">Live Site Verification</a></h2>
+                    <h2><a href="reports/live_site_verification_2026-08-28.json">Live Site Verification</a></h2>
                     <p>Deployed-site status, CDN headers, expected markers, and GitHub Pages build status.</p>
-                    <span>reports/live_site_verification_2026-08-17.json</span>
+                    <span>reports/live_site_verification_2026-08-28.json</span>
                 </article>
     </div></section></main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="data/catalog.json">catalog.json</a></p></footer>

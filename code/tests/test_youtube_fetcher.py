@@ -1,10 +1,10 @@
 """Unit tests for youtube_fetcher module."""
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
 from pathlib import Path
-from unittest.mock import MagicMock, patch
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 import youtube_fetcher as yf
@@ -35,15 +35,31 @@ SAMPLE_JSONL_LINES = [
 ]
 
 
+class _RecordingExecutor:
+    """Small local process seam for command construction and exit handling."""
+
+    def __init__(self, *, returncode: int = 0, stdout: str = "", stderr: str = ""):
+        self.returncode = returncode
+        self.stdout = stdout
+        self.stderr = stderr
+        self.commands: list[list[str]] = []
+        self.timeouts: list[int] = []
+
+    def __call__(self, cmd: list[str], timeout: int) -> subprocess.CompletedProcess:
+        self.commands.append(cmd)
+        self.timeouts.append(timeout)
+        return subprocess.CompletedProcess(cmd, self.returncode, self.stdout, self.stderr)
+
+
 class TestParseJsonl(unittest.TestCase):
     def test_valid_lines(self):
         records = yf.parse_jsonl(SAMPLE_JSONL_LINES[:1])
         self.assertEqual(len(records), 1)
         self.assertEqual(records[0]["id"], "abc123")
 
-    def test_skips_malformed(self):
-        records = yf.parse_jsonl(["not json", '{"id": "ok"}'])
-        self.assertEqual(len(records), 1)
+    def test_rejects_malformed(self):
+        with self.assertRaisesRegex(ValueError, "malformed yt-dlp JSONL line 1"):
+            yf.parse_jsonl(["not json", '{"id": "ok"}'])
 
     def test_empty_input(self):
         self.assertEqual(yf.parse_jsonl([]), [])
@@ -52,9 +68,9 @@ class TestParseJsonl(unittest.TestCase):
         records = yf.parse_jsonl(["", "  ", '{"id": "x"}'])
         self.assertEqual(len(records), 1)
 
-    def test_all_sample_lines(self):
-        records = yf.parse_jsonl(SAMPLE_JSONL_LINES)
-        self.assertEqual(len(records), 3)  # 1 malformed skipped
+    def test_rejects_any_malformed_sample_line(self):
+        with self.assertRaisesRegex(ValueError, "malformed yt-dlp JSONL line 3"):
+            yf.parse_jsonl(SAMPLE_JSONL_LINES)
 
 
 class TestNormalizeVideo(unittest.TestCase):
@@ -113,49 +129,44 @@ class TestNormalizeVideo(unittest.TestCase):
 
 
 class TestRunYtDlp(unittest.TestCase):
-    @patch("youtube_fetcher.subprocess.run")
-    def test_full_mode_command(self, mock_run):
-        mock_run.return_value = MagicMock(returncode=0, stdout='{"id":"a"}\n', stderr="")
-        yf.run_yt_dlp("https://example.com/channel", mode="full")
-        cmd = mock_run.call_args[0][0]
+    def test_full_mode_command(self):
+        executor = _RecordingExecutor(stdout='{"id":"a"}\n')
+        yf.run_yt_dlp("https://example.com/channel", mode="full", executor=executor)
+        cmd = executor.commands[0]
         self.assertIn("--dump-json", cmd)
         self.assertIn("--no-download", cmd)
         self.assertNotIn("--flat-playlist", cmd)
+        self.assertEqual(executor.timeouts, [600])
 
-    @patch("youtube_fetcher.subprocess.run")
-    def test_approximate_mode_command(self, mock_run):
-        mock_run.return_value = MagicMock(returncode=0, stdout='{"id":"a"}\n', stderr="")
-        yf.run_yt_dlp("https://example.com/channel", mode="approximate")
-        cmd = mock_run.call_args[0][0]
+    def test_approximate_mode_command(self):
+        executor = _RecordingExecutor(stdout='{"id":"a"}\n')
+        yf.run_yt_dlp("https://example.com/channel", mode="approximate", executor=executor)
+        cmd = executor.commands[0]
         self.assertIn("--flat-playlist", cmd)
         self.assertIn("--extractor-args", cmd)
         self.assertIn("youtubetab:approximate_date", cmd)
 
-    @patch("youtube_fetcher.subprocess.run")
-    def test_success_returns_lines(self, mock_run):
-        mock_run.return_value = MagicMock(returncode=0, stdout='{"id":"a"}\n{"id":"b"}\n', stderr="")
-        lines = yf.run_yt_dlp("https://example.com")
+    def test_success_returns_lines(self):
+        executor = _RecordingExecutor(stdout='{"id":"a"}\n{"id":"b"}\n')
+        lines = yf.run_yt_dlp("https://example.com", executor=executor)
         self.assertEqual(lines, ['{"id":"a"}', '{"id":"b"}'])
 
-    @patch("youtube_fetcher.subprocess.run")
-    def test_non_zero_exit_raises(self, mock_run):
-        mock_run.return_value = MagicMock(returncode=2, stdout="", stderr="error")
+    def test_non_zero_exit_raises(self):
+        executor = _RecordingExecutor(returncode=2, stderr="error")
         with self.assertRaises(RuntimeError):
-            yf.run_yt_dlp("https://example.com")
+            yf.run_yt_dlp("https://example.com", executor=executor)
 
-    @patch("youtube_fetcher.subprocess.run")
-    def test_exit_code_1_ok(self, mock_run):
-        mock_run.return_value = MagicMock(returncode=1, stdout='{"id":"x"}\n', stderr="")
-        lines = yf.run_yt_dlp("https://example.com")
-        self.assertEqual(len(lines), 1)
+    def test_exit_code_1_is_a_failure_even_when_output_exists(self):
+        executor = _RecordingExecutor(returncode=1, stdout='{"id":"x"}\n', stderr="unavailable item")
+        with self.assertRaisesRegex(RuntimeError, "yt-dlp exited 1"):
+            yf.run_yt_dlp("https://example.com", executor=executor)
 
 
 class _JsonlRunner:
     """Real (non-mock) runner: serves pre-built JSONL per call, may raise.
 
-    Replacement for ``@patch('youtube_fetcher.run_yt_dlp')`` so fetch_channel /
-    fetch_tab exercise real parsing, dedup, sorting, and tab-failure logic
-    through the injected ``runner`` dependency instead of substitution.
+    Fetch-channel tests exercise real parsing, deduplication, sorting, and
+    tab-failure handling through the injected ``runner`` dependency.
     """
 
     def __init__(self, *groups):
@@ -179,7 +190,9 @@ class TestFetchChannel(unittest.TestCase):
         vid_b = {"id": "bbb", "title": "B", "upload_date": "20230601", "duration": 60, "view_count": 1}
         # /videos returns A, /streams returns A+B (A is a duplicate), /shorts empty
         runner = _JsonlRunner([vid_a], [vid_a, vid_b], [])
-        videos = yf.fetch_channel("https://example.com/@ch", "personal", runner=runner)
+        result = yf.fetch_channel_result("https://example.com/@ch", "personal", runner=runner)
+        videos = result.videos
+        self.assertTrue(result.complete)
         self.assertEqual(len(videos), 2)
         ids = [v["id"] for v in videos]
         self.assertIn("aaa", ids)
@@ -189,30 +202,61 @@ class TestFetchChannel(unittest.TestCase):
         v1 = {"id": "a1", "title": "Old", "upload_date": "20200101", "duration": 60, "view_count": 0}
         v2 = {"id": "a2", "title": "New", "upload_date": "20240101", "duration": 60, "view_count": 0}
         runner = _JsonlRunner([v2], [v1], [])
-        videos = yf.fetch_channel("https://example.com/@ch", "personal", runner=runner)
+        videos = yf.fetch_channel_result("https://example.com/@ch", "personal", runner=runner).videos
         self.assertEqual(videos[0]["id"], "a1")
         self.assertEqual(videos[1]["id"], "a2")
 
-    def test_tab_failure_continues(self):
+    def test_tab_failure_is_structured_and_marks_channel_incomplete(self):
         v = {"id": "ok", "title": "OK", "upload_date": "20230101", "duration": 60, "view_count": 0}
         runner = _JsonlRunner([v], RuntimeError("streams failed"), [])
-        videos = yf.fetch_channel("https://example.com/@ch", "personal", runner=runner)
-        self.assertEqual(len(videos), 1)
+        result = yf.fetch_channel_result("https://example.com/@ch", "personal", runner=runner)
+        self.assertFalse(result.complete)
+        self.assertEqual([video["id"] for video in result.videos], ["ok"])
+        self.assertEqual(len(result.failures), 1)
+        self.assertEqual(result.failures[0].tab, "streams")
+        self.assertEqual(result.failures[0].error_type, "RuntimeError")
+        self.assertEqual(result.as_dict()["tabs"][1]["failure"]["message"], "streams failed")
+
+    def test_malformed_jsonl_is_a_structured_tab_failure(self):
+        class MalformedRunner:
+            def __call__(self, url: str, mode: str = "full") -> list[str]:
+                if url.endswith("/videos"):
+                    return ["not json"]
+                return []
+
+        result = yf.fetch_channel_result("https://example.com/@ch", "personal", runner=MalformedRunner())
+        self.assertFalse(result.complete)
+        self.assertEqual(result.failures[0].tab, "videos")
+        self.assertEqual(result.failures[0].error_type, "ValueError")
+        self.assertIn("malformed yt-dlp JSONL", result.failures[0].message)
 
     def test_channel_id_set_on_all_videos(self):
         v = {"id": "x", "title": "T", "upload_date": "20230101", "duration": 60, "view_count": 0}
         runner = _JsonlRunner([v], [], [])
-        videos = yf.fetch_channel("https://example.com/@ch", "institute", runner=runner)
+        videos = yf.fetch_channel_result("https://example.com/@ch", "institute", runner=runner).videos
         self.assertEqual(videos[0]["channel"], "institute")
 
     def test_all_tabs_called(self):
         runner = _JsonlRunner([], [], [])
-        yf.fetch_channel("https://www.youtube.com/@test", "personal", runner=runner)
+        result = yf.fetch_channel_result("https://www.youtube.com/@test", "personal", runner=runner)
+        self.assertTrue(result.complete)
         self.assertEqual(len(runner.calls), 3)
         urls_called = [url for url, _ in runner.calls]
         self.assertTrue(any("videos" in u for u in urls_called))
         self.assertTrue(any("streams" in u for u in urls_called))
         self.assertTrue(any("shorts" in u for u in urls_called))
+
+    def test_legacy_fetch_channel_returns_only_videos(self):
+        video = {"id": "x", "title": "T", "upload_date": "20230101", "duration": 60, "view_count": 0}
+        runner = _JsonlRunner([video], [], [])
+        videos = yf.fetch_channel("https://example.com/@ch", "personal", runner=runner)
+        self.assertEqual([item["id"] for item in videos], ["x"])
+
+    def test_legacy_fetch_channel_rejects_incomplete_results(self):
+        runner = _JsonlRunner([], RuntimeError("streams failed"), [])
+        with self.assertRaises(yf.IncompleteChannelFetchError) as caught:
+            yf.fetch_channel("https://example.com/@ch", "personal", runner=runner)
+        self.assertEqual(caught.exception.result.failures[0].tab, "streams")
 
 
 class TestSaveLoadJson(unittest.TestCase):

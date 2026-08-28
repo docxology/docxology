@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧬 NeuroscienceDecision
 
 **Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman** (2020) · *ALIUS Bulletin*

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "A Living Meta-Analysis of the Modafinil Literature"
 description: "Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc reviews bind no evidence to a reproducible pipeline. We present a configurable, reproducible meta-analysis framework that takes a single search term and produces a ..."
 tags: ["modafinil", "meta-analysis", "literature-retrieval", "bibliometrics", "record-de-duplication", "full-text-mining", "document-embeddings", "citation-network", "topic-modeling", "entity-extraction"]
@@ -42,10 +43,10 @@ complete quantitative portrait of its literature.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20931964
+- Canonical DOI: 10.5281/zenodo.20931964
 - PDF SHA-256: 412d4fcf4b0c2e14fb950f9080f107d81fd9a90dfdf216b9161a13833eff62ff
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-28T17:12:26Z
 
 ## Prerequisites
 

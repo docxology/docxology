@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "ModelingConflict"
 description: "We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management..."
 tags: ["active-inference", "conflict-modeling", "aic-model", "ooda-loops", "cognitive-security", "information-warfare", "bolts-framework", "trust-management"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.5750934
+- Canonical DOI: 10.5281/zenodo.5750934
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:49Z

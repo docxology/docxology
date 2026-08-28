@@ -1,0 +1,1733 @@
+{
+  "version": 1,
+  "documents": [
+    {
+      "path": "2015_CryptoJews/AGENTS.md"
+    },
+    {
+      "path": "2015_CryptoJews/README.md"
+    },
+    {
+      "path": "2015_CryptoJews/SKILL.md"
+    },
+    {
+      "path": "2015_EhrlichialInfection/AGENTS.md"
+    },
+    {
+      "path": "2015_EhrlichialInfection/README.md"
+    },
+    {
+      "path": "2015_EhrlichialInfection/SKILL.md"
+    },
+    {
+      "path": "2015_HoneyBeeEvolution/AGENTS.md"
+    },
+    {
+      "path": "2015_HoneyBeeEvolution/README.md"
+    },
+    {
+      "path": "2015_HoneyBeeEvolution/SKILL.md"
+    },
+    {
+      "path": "2016_AntGenetics/AGENTS.md"
+    },
+    {
+      "path": "2016_AntGenetics/README.md"
+    },
+    {
+      "path": "2016_AntGenetics/SKILL.md"
+    },
+    {
+      "path": "2016_ForagingGene/AGENTS.md"
+    },
+    {
+      "path": "2016_ForagingGene/README.md"
+    },
+    {
+      "path": "2016_ForagingGene/SKILL.md"
+    },
+    {
+      "path": "2016_NuclearStructure/AGENTS.md"
+    },
+    {
+      "path": "2016_NuclearStructure/README.md"
+    },
+    {
+      "path": "2016_NuclearStructure/SKILL.md"
+    },
+    {
+      "path": "2017_MutAnts/AGENTS.md"
+    },
+    {
+      "path": "2017_MutAnts/README.md"
+    },
+    {
+      "path": "2017_MutAnts/SKILL.md"
+    },
+    {
+      "path": "2017_TwoLineages/AGENTS.md"
+    },
+    {
+      "path": "2017_TwoLineages/README.md"
+    },
+    {
+      "path": "2017_TwoLineages/SKILL.md"
+    },
+    {
+      "path": "2018_ArgentineAnt/AGENTS.md"
+    },
+    {
+      "path": "2018_ArgentineAnt/README.md"
+    },
+    {
+      "path": "2018_ArgentineAnt/SKILL.md"
+    },
+    {
+      "path": "2018_DopamineForaging/AGENTS.md"
+    },
+    {
+      "path": "2018_DopamineForaging/README.md"
+    },
+    {
+      "path": "2018_DopamineForaging/SKILL.md"
+    },
+    {
+      "path": "2018_MVEE/AGENTS.md"
+    },
+    {
+      "path": "2018_MVEE/README.md"
+    },
+    {
+      "path": "2018_MVEE/SKILL.md"
+    },
+    {
+      "path": "2018_PPPiP/AGENTS.md"
+    },
+    {
+      "path": "2018_PPPiP/README.md"
+    },
+    {
+      "path": "2018_PPPiP/SKILL.md"
+    },
+    {
+      "path": "2018_WoodliceAndMen/AGENTS.md"
+    },
+    {
+      "path": "2018_WoodliceAndMen/README.md"
+    },
+    {
+      "path": "2018_WoodliceAndMen/SKILL.md"
+    },
+    {
+      "path": "2019_AntConsciousness/AGENTS.md"
+    },
+    {
+      "path": "2019_AntConsciousness/README.md"
+    },
+    {
+      "path": "2019_AntConsciousness/SKILL.md"
+    },
+    {
+      "path": "2019_DennettExplained/AGENTS.md"
+    },
+    {
+      "path": "2019_DennettExplained/README.md"
+    },
+    {
+      "path": "2019_DennettExplained/SKILL.md"
+    },
+    {
+      "path": "2019_ForagerHydration/AGENTS.md"
+    },
+    {
+      "path": "2019_ForagerHydration/README.md"
+    },
+    {
+      "path": "2019_ForagerHydration/SKILL.md"
+    },
+    {
+      "path": "2019_PhDDissertation/AGENTS.md"
+    },
+    {
+      "path": "2019_PhDDissertation/README.md"
+    },
+    {
+      "path": "2019_PhDDissertation/SKILL.md"
+    },
+    {
+      "path": "2020_BehaviorEngineering/AGENTS.md"
+    },
+    {
+      "path": "2020_BehaviorEngineering/README.md"
+    },
+    {
+      "path": "2020_BehaviorEngineering/SKILL.md"
+    },
+    {
+      "path": "2020_DistributedPhysiology/AGENTS.md"
+    },
+    {
+      "path": "2020_DistributedPhysiology/README.md"
+    },
+    {
+      "path": "2020_DistributedPhysiology/SKILL.md"
+    },
+    {
+      "path": "2020_EmergentTeams/AGENTS.md"
+    },
+    {
+      "path": "2020_EmergentTeams/README.md"
+    },
+    {
+      "path": "2020_EmergentTeams/SKILL.md"
+    },
+    {
+      "path": "2020_FacilitatorsCatechism/AGENTS.md"
+    },
+    {
+      "path": "2020_FacilitatorsCatechism/README.md"
+    },
+    {
+      "path": "2020_FacilitatorsCatechism/SKILL.md"
+    },
+    {
+      "path": "2020_GeneExpressionForagers/AGENTS.md"
+    },
+    {
+      "path": "2020_GeneExpressionForagers/README.md"
+    },
+    {
+      "path": "2020_GeneExpressionForagers/SKILL.md"
+    },
+    {
+      "path": "2020_GreatPreset/AGENTS.md"
+    },
+    {
+      "path": "2020_GreatPreset/README.md"
+    },
+    {
+      "path": "2020_GreatPreset/SKILL.md"
+    },
+    {
+      "path": "2020_InfiniteGamesInfinite/AGENTS.md"
+    },
+    {
+      "path": "2020_InfiniteGamesInfinite/README.md"
+    },
+    {
+      "path": "2020_InfiniteGamesInfinite/SKILL.md"
+    },
+    {
+      "path": "2020_InnovatorsCatechism/AGENTS.md"
+    },
+    {
+      "path": "2020_InnovatorsCatechism/README.md"
+    },
+    {
+      "path": "2020_InnovatorsCatechism/SKILL.md"
+    },
+    {
+      "path": "2020_NeuroscienceDecision/AGENTS.md"
+    },
+    {
+      "path": "2020_NeuroscienceDecision/README.md"
+    },
+    {
+      "path": "2020_NeuroscienceDecision/SKILL.md"
+    },
+    {
+      "path": "2020_NeurotransmitterVariation/AGENTS.md"
+    },
+    {
+      "path": "2020_NeurotransmitterVariation/README.md"
+    },
+    {
+      "path": "2020_NeurotransmitterVariation/SKILL.md"
+    },
+    {
+      "path": "2020_ReimaginingMaps/AGENTS.md"
+    },
+    {
+      "path": "2020_ReimaginingMaps/README.md"
+    },
+    {
+      "path": "2020_ReimaginingMaps/SKILL.md"
+    },
+    {
+      "path": "2021_ActiveInferants/AGENTS.md"
+    },
+    {
+      "path": "2021_ActiveInferants/README.md"
+    },
+    {
+      "path": "2021_ActiveInferants/SKILL.md"
+    },
+    {
+      "path": "2021_CollaborativeWritingCatechism/AGENTS.md"
+    },
+    {
+      "path": "2021_CollaborativeWritingCatechism/README.md"
+    },
+    {
+      "path": "2021_CollaborativeWritingCatechism/SKILL.md"
+    },
+    {
+      "path": "2021_DigitalRhetorical/AGENTS.md"
+    },
+    {
+      "path": "2021_DigitalRhetorical/README.md"
+    },
+    {
+      "path": "2021_DigitalRhetorical/SKILL.md"
+    },
+    {
+      "path": "2021_ModelingConflict/AGENTS.md"
+    },
+    {
+      "path": "2021_ModelingConflict/README.md"
+    },
+    {
+      "path": "2021_ModelingConflict/SKILL.md"
+    },
+    {
+      "path": "2021_NarrativeEcosystems/AGENTS.md"
+    },
+    {
+      "path": "2021_NarrativeEcosystems/README.md"
+    },
+    {
+      "path": "2021_NarrativeEcosystems/SKILL.md"
+    },
+    {
+      "path": "2021_NarrativeInformationMgmt/AGENTS.md"
+    },
+    {
+      "path": "2021_NarrativeInformationMgmt/README.md"
+    },
+    {
+      "path": "2021_NarrativeInformationMgmt/SKILL.md"
+    },
+    {
+      "path": "2021_Transcript/AGENTS.md"
+    },
+    {
+      "path": "2021_Transcript/README.md"
+    },
+    {
+      "path": "2021_Transcript/SKILL.md"
+    },
+    {
+      "path": "2022_ActiveDiffusion/AGENTS.md"
+    },
+    {
+      "path": "2022_ActiveDiffusion/README.md"
+    },
+    {
+      "path": "2022_ActiveDiffusion/SKILL.md"
+    },
+    {
+      "path": "2022_ActiveInferenceOntology/AGENTS.md"
+    },
+    {
+      "path": "2022_ActiveInferenceOntology/README.md"
+    },
+    {
+      "path": "2022_ActiveInferenceOntology/SKILL.md"
+    },
+    {
+      "path": "2022_CanonicalNeuralNetworks/AGENTS.md"
+    },
+    {
+      "path": "2022_CanonicalNeuralNetworks/README.md"
+    },
+    {
+      "path": "2022_CanonicalNeuralNetworks/SKILL.md"
+    },
+    {
+      "path": "2022_FreeWillSapolsky/AGENTS.md"
+    },
+    {
+      "path": "2022_FreeWillSapolsky/README.md"
+    },
+    {
+      "path": "2022_FreeWillSapolsky/SKILL.md"
+    },
+    {
+      "path": "2022_HypercertEcosystems/AGENTS.md"
+    },
+    {
+      "path": "2022_HypercertEcosystems/README.md"
+    },
+    {
+      "path": "2022_HypercertEcosystems/SKILL.md"
+    },
+    {
+      "path": "2022_InformationCommons/AGENTS.md"
+    },
+    {
+      "path": "2022_InformationCommons/README.md"
+    },
+    {
+      "path": "2022_InformationCommons/SKILL.md"
+    },
+    {
+      "path": "2022_InteroceptionAsModeling/AGENTS.md"
+    },
+    {
+      "path": "2022_InteroceptionAsModeling/README.md"
+    },
+    {
+      "path": "2022_InteroceptionAsModeling/SKILL.md"
+    },
+    {
+      "path": "2022_MirrorTest/AGENTS.md"
+    },
+    {
+      "path": "2022_MirrorTest/README.md"
+    },
+    {
+      "path": "2022_MirrorTest/SKILL.md"
+    },
+    {
+      "path": "2022_StigmergicAnnotation/AGENTS.md"
+    },
+    {
+      "path": "2022_StigmergicAnnotation/README.md"
+    },
+    {
+      "path": "2022_StigmergicAnnotation/SKILL.md"
+    },
+    {
+      "path": "2022_SystematicLiteratureAnalysis/AGENTS.md"
+    },
+    {
+      "path": "2022_SystematicLiteratureAnalysis/README.md"
+    },
+    {
+      "path": "2022_SystematicLiteratureAnalysis/SKILL.md"
+    },
+    {
+      "path": "2022_TrackingPublicSensemaking/AGENTS.md"
+    },
+    {
+      "path": "2022_TrackingPublicSensemaking/README.md"
+    },
+    {
+      "path": "2022_TrackingPublicSensemaking/SKILL.md"
+    },
+    {
+      "path": "2022_Transcript/AGENTS.md"
+    },
+    {
+      "path": "2022_Transcript/README.md"
+    },
+    {
+      "path": "2022_Transcript/SKILL.md"
+    },
+    {
+      "path": "2022_TranscriptDiscussions/AGENTS.md"
+    },
+    {
+      "path": "2022_TranscriptDiscussions/README.md"
+    },
+    {
+      "path": "2022_TranscriptDiscussions/SKILL.md"
+    },
+    {
+      "path": "2022_TrustFinder/AGENTS.md"
+    },
+    {
+      "path": "2022_TrustFinder/README.md"
+    },
+    {
+      "path": "2022_TrustFinder/SKILL.md"
+    },
+    {
+      "path": "2022_WorkedExampleBayesian/AGENTS.md"
+    },
+    {
+      "path": "2022_WorkedExampleBayesian/README.md"
+    },
+    {
+      "path": "2022_WorkedExampleBayesian/SKILL.md"
+    },
+    {
+      "path": "2023_AIAccountability/AGENTS.md"
+    },
+    {
+      "path": "2023_AIAccountability/README.md"
+    },
+    {
+      "path": "2023_AIAccountability/SKILL.md"
+    },
+    {
+      "path": "2023_AII_v1/AGENTS.md"
+    },
+    {
+      "path": "2023_AII_v1/README.md"
+    },
+    {
+      "path": "2023_AII_v1/SKILL.md"
+    },
+    {
+      "path": "2023_ATLAS2/AGENTS.md"
+    },
+    {
+      "path": "2023_ATLAS2/README.md"
+    },
+    {
+      "path": "2023_ATLAS2/SKILL.md"
+    },
+    {
+      "path": "2023_AccountActiveInference/AGENTS.md"
+    },
+    {
+      "path": "2023_AccountActiveInference/README.md"
+    },
+    {
+      "path": "2023_AccountActiveInference/SKILL.md"
+    },
+    {
+      "path": "2023_AntsAging/AGENTS.md"
+    },
+    {
+      "path": "2023_AntsAging/README.md"
+    },
+    {
+      "path": "2023_AntsAging/SKILL.md"
+    },
+    {
+      "path": "2023_BlakeFuller/AGENTS.md"
+    },
+    {
+      "path": "2023_BlakeFuller/README.md"
+    },
+    {
+      "path": "2023_BlakeFuller/SKILL.md"
+    },
+    {
+      "path": "2023_CognitiveSovereignty/AGENTS.md"
+    },
+    {
+      "path": "2023_CognitiveSovereignty/README.md"
+    },
+    {
+      "path": "2023_CognitiveSovereignty/SKILL.md"
+    },
+    {
+      "path": "2023_DistributedScience/AGENTS.md"
+    },
+    {
+      "path": "2023_DistributedScience/README.md"
+    },
+    {
+      "path": "2023_DistributedScience/SKILL.md"
+    },
+    {
+      "path": "2023_GNN/AGENTS.md"
+    },
+    {
+      "path": "2023_GNN/README.md"
+    },
+    {
+      "path": "2023_GNN/SKILL.md"
+    },
+    {
+      "path": "2023_GenerativeResearchTeams/AGENTS.md"
+    },
+    {
+      "path": "2023_GenerativeResearchTeams/README.md"
+    },
+    {
+      "path": "2023_GenerativeResearchTeams/SKILL.md"
+    },
+    {
+      "path": "2023_GuidedTourMinds/AGENTS.md"
+    },
+    {
+      "path": "2023_GuidedTourMinds/README.md"
+    },
+    {
+      "path": "2023_GuidedTourMinds/SKILL.md"
+    },
+    {
+      "path": "2023_HoneyBeeGeneExpression/AGENTS.md"
+    },
+    {
+      "path": "2023_HoneyBeeGeneExpression/README.md"
+    },
+    {
+      "path": "2023_HoneyBeeGeneExpression/SKILL.md"
+    },
+    {
+      "path": "2023_ModernNostrIndex/AGENTS.md"
+    },
+    {
+      "path": "2023_ModernNostrIndex/README.md"
+    },
+    {
+      "path": "2023_ModernNostrIndex/SKILL.md"
+    },
+    {
+      "path": "2023_NSFReporting/AGENTS.md"
+    },
+    {
+      "path": "2023_NSFReporting/README.md"
+    },
+    {
+      "path": "2023_NSFReporting/SKILL.md"
+    },
+    {
+      "path": "2023_NaturalAIBased/AGENTS.md"
+    },
+    {
+      "path": "2023_NaturalAIBased/README.md"
+    },
+    {
+      "path": "2023_NaturalAIBased/SKILL.md"
+    },
+    {
+      "path": "2023_OpenScienceSensemaking/AGENTS.md"
+    },
+    {
+      "path": "2023_OpenScienceSensemaking/README.md"
+    },
+    {
+      "path": "2023_OpenScienceSensemaking/SKILL.md"
+    },
+    {
+      "path": "2023_P3IF/AGENTS.md"
+    },
+    {
+      "path": "2023_P3IF/README.md"
+    },
+    {
+      "path": "2023_P3IF/SKILL.md"
+    },
+    {
+      "path": "2023_PostdocReview/AGENTS.md"
+    },
+    {
+      "path": "2023_PostdocReview/README.md"
+    },
+    {
+      "path": "2023_PostdocReview/SKILL.md"
+    },
+    {
+      "path": "2023_SinglePheromone/AGENTS.md"
+    },
+    {
+      "path": "2023_SinglePheromone/README.md"
+    },
+    {
+      "path": "2023_SinglePheromone/SKILL.md"
+    },
+    {
+      "path": "2023_SlidesIris/AGENTS.md"
+    },
+    {
+      "path": "2023_SlidesIris/README.md"
+    },
+    {
+      "path": "2023_SlidesIris/SKILL.md"
+    },
+    {
+      "path": "2023_ToComment/AGENTS.md"
+    },
+    {
+      "path": "2023_ToComment/README.md"
+    },
+    {
+      "path": "2023_ToComment/SKILL.md"
+    },
+    {
+      "path": "2023_TranscriptActiveInference/AGENTS.md"
+    },
+    {
+      "path": "2023_TranscriptActiveInference/README.md"
+    },
+    {
+      "path": "2023_TranscriptActiveInference/SKILL.md"
+    },
+    {
+      "path": "2023_VariationalSynthesis/AGENTS.md"
+    },
+    {
+      "path": "2023_VariationalSynthesis/README.md"
+    },
+    {
+      "path": "2023_VariationalSynthesis/SKILL.md"
+    },
+    {
+      "path": "2023_VideoEntomology/AGENTS.md"
+    },
+    {
+      "path": "2023_VideoEntomology/README.md"
+    },
+    {
+      "path": "2023_VideoEntomology/SKILL.md"
+    },
+    {
+      "path": "2024_AII_v2/AGENTS.md"
+    },
+    {
+      "path": "2024_AII_v2/README.md"
+    },
+    {
+      "path": "2024_AII_v2/SKILL.md"
+    },
+    {
+      "path": "2024_BioFirm/AGENTS.md"
+    },
+    {
+      "path": "2024_BioFirm/README.md"
+    },
+    {
+      "path": "2024_BioFirm/SKILL.md"
+    },
+    {
+      "path": "2024_BlattodeaDiversity/AGENTS.md"
+    },
+    {
+      "path": "2024_BlattodeaDiversity/README.md"
+    },
+    {
+      "path": "2024_BlattodeaDiversity/SKILL.md"
+    },
+    {
+      "path": "2024_CurioCards/AGENTS.md"
+    },
+    {
+      "path": "2024_CurioCards/README.md"
+    },
+    {
+      "path": "2024_CurioCards/SKILL.md"
+    },
+    {
+      "path": "2024_DigitalTwins/AGENTS.md"
+    },
+    {
+      "path": "2024_DigitalTwins/README.md"
+    },
+    {
+      "path": "2024_DigitalTwins/SKILL.md"
+    },
+    {
+      "path": "2024_FarmWorks/AGENTS.md"
+    },
+    {
+      "path": "2024_FarmWorks/README.md"
+    },
+    {
+      "path": "2024_FarmWorks/SKILL.md"
+    },
+    {
+      "path": "2024_FederatedInference/AGENTS.md"
+    },
+    {
+      "path": "2024_FederatedInference/README.md"
+    },
+    {
+      "path": "2024_FederatedInference/SKILL.md"
+    },
+    {
+      "path": "2024_ImageMemeResearch/AGENTS.md"
+    },
+    {
+      "path": "2024_ImageMemeResearch/README.md"
+    },
+    {
+      "path": "2024_ImageMemeResearch/SKILL.md"
+    },
+    {
+      "path": "2024_InfiniteImaginarium/AGENTS.md"
+    },
+    {
+      "path": "2024_InfiniteImaginarium/README.md"
+    },
+    {
+      "path": "2024_InfiniteImaginarium/SKILL.md"
+    },
+    {
+      "path": "2024_MathArtBlake/AGENTS.md"
+    },
+    {
+      "path": "2024_MathArtBlake/README.md"
+    },
+    {
+      "path": "2024_MathArtBlake/SKILL.md"
+    },
+    {
+      "path": "2024_OntologySUMO/AGENTS.md"
+    },
+    {
+      "path": "2024_OntologySUMO/README.md"
+    },
+    {
+      "path": "2024_OntologySUMO/SKILL.md"
+    },
+    {
+      "path": "2024_PaleolithicRockstars/AGENTS.md"
+    },
+    {
+      "path": "2024_PaleolithicRockstars/README.md"
+    },
+    {
+      "path": "2024_PaleolithicRockstars/SKILL.md"
+    },
+    {
+      "path": "2024_PopulationSearch/AGENTS.md"
+    },
+    {
+      "path": "2024_PopulationSearch/README.md"
+    },
+    {
+      "path": "2024_PopulationSearch/SKILL.md"
+    },
+    {
+      "path": "2024_PushPull/AGENTS.md"
+    },
+    {
+      "path": "2024_PushPull/README.md"
+    },
+    {
+      "path": "2024_PushPull/SKILL.md"
+    },
+    {
+      "path": "2024_QuantumDreams/AGENTS.md"
+    },
+    {
+      "path": "2024_QuantumDreams/README.md"
+    },
+    {
+      "path": "2024_QuantumDreams/SKILL.md"
+    },
+    {
+      "path": "2024_SensemakingFederation/AGENTS.md"
+    },
+    {
+      "path": "2024_SensemakingFederation/README.md"
+    },
+    {
+      "path": "2024_SensemakingFederation/SKILL.md"
+    },
+    {
+      "path": "2024_SharedProtentions/AGENTS.md"
+    },
+    {
+      "path": "2024_SharedProtentions/README.md"
+    },
+    {
+      "path": "2024_SharedProtentions/SKILL.md"
+    },
+    {
+      "path": "2025_5thSymposium/AGENTS.md"
+    },
+    {
+      "path": "2025_5thSymposium/README.md"
+    },
+    {
+      "path": "2025_5thSymposium/SKILL.md"
+    },
+    {
+      "path": "2025_AII_v3/AGENTS.md"
+    },
+    {
+      "path": "2025_AII_v3/README.md"
+    },
+    {
+      "path": "2025_AII_v3/SKILL.md"
+    },
+    {
+      "path": "2025_AccessibilityActiveInference/AGENTS.md"
+    },
+    {
+      "path": "2025_AccessibilityActiveInference/README.md"
+    },
+    {
+      "path": "2025_AccessibilityActiveInference/SKILL.md"
+    },
+    {
+      "path": "2025_AgentAndNiche/AGENTS.md"
+    },
+    {
+      "path": "2025_AgentAndNiche/README.md"
+    },
+    {
+      "path": "2025_AgentAndNiche/SKILL.md"
+    },
+    {
+      "path": "2025_AntStack/AGENTS.md"
+    },
+    {
+      "path": "2025_AntStack/README.md"
+    },
+    {
+      "path": "2025_AntStack/SKILL.md"
+    },
+    {
+      "path": "2025_AntStackComplexity/AGENTS.md"
+    },
+    {
+      "path": "2025_AntStackComplexity/README.md"
+    },
+    {
+      "path": "2025_AntStackComplexity/SKILL.md"
+    },
+    {
+      "path": "2025_AuBI/AGENTS.md"
+    },
+    {
+      "path": "2025_AuBI/README.md"
+    },
+    {
+      "path": "2025_AuBI/SKILL.md"
+    },
+    {
+      "path": "2025_BeaconsPreEmulation/AGENTS.md"
+    },
+    {
+      "path": "2025_BeaconsPreEmulation/README.md"
+    },
+    {
+      "path": "2025_BeaconsPreEmulation/SKILL.md"
+    },
+    {
+      "path": "2025_BevCycPositPrimitive/AGENTS.md"
+    },
+    {
+      "path": "2025_BevCycPositPrimitive/README.md"
+    },
+    {
+      "path": "2025_BevCycPositPrimitive/SKILL.md"
+    },
+    {
+      "path": "2025_BiofirmDevelopmentWith/AGENTS.md"
+    },
+    {
+      "path": "2025_BiofirmDevelopmentWith/README.md"
+    },
+    {
+      "path": "2025_BiofirmDevelopmentWith/SKILL.md"
+    },
+    {
+      "path": "2025_CEREBRUM/AGENTS.md"
+    },
+    {
+      "path": "2025_CEREBRUM/README.md"
+    },
+    {
+      "path": "2025_CEREBRUM/SKILL.md"
+    },
+    {
+      "path": "2025_CognitiveArtScience/AGENTS.md"
+    },
+    {
+      "path": "2025_CognitiveArtScience/README.md"
+    },
+    {
+      "path": "2025_CognitiveArtScience/SKILL.md"
+    },
+    {
+      "path": "2025_ConCatEnate/AGENTS.md"
+    },
+    {
+      "path": "2025_ConCatEnate/README.md"
+    },
+    {
+      "path": "2025_ConCatEnate/SKILL.md"
+    },
+    {
+      "path": "2025_ConCatEnate2/AGENTS.md"
+    },
+    {
+      "path": "2025_ConCatEnate2/README.md"
+    },
+    {
+      "path": "2025_ConCatEnate2/SKILL.md"
+    },
+    {
+      "path": "2025_ConsciousnessAnts/AGENTS.md"
+    },
+    {
+      "path": "2025_ConsciousnessAnts/README.md"
+    },
+    {
+      "path": "2025_ConsciousnessAnts/SKILL.md"
+    },
+    {
+      "path": "2025_DiscoveryEngine/AGENTS.md"
+    },
+    {
+      "path": "2025_DiscoveryEngine/README.md"
+    },
+    {
+      "path": "2025_DiscoveryEngine/SKILL.md"
+    },
+    {
+      "path": "2025_EvoJump/AGENTS.md"
+    },
+    {
+      "path": "2025_EvoJump/README.md"
+    },
+    {
+      "path": "2025_EvoJump/SKILL.md"
+    },
+    {
+      "path": "2025_Graphspeak/AGENTS.md"
+    },
+    {
+      "path": "2025_Graphspeak/README.md"
+    },
+    {
+      "path": "2025_Graphspeak/SKILL.md"
+    },
+    {
+      "path": "2025_MDKV/AGENTS.md"
+    },
+    {
+      "path": "2025_MDKV/README.md"
+    },
+    {
+      "path": "2025_MDKV/SKILL.md"
+    },
+    {
+      "path": "2025_MarkdownDecisionProcess/AGENTS.md"
+    },
+    {
+      "path": "2025_MarkdownDecisionProcess/README.md"
+    },
+    {
+      "path": "2025_MarkdownDecisionProcess/SKILL.md"
+    },
+    {
+      "path": "2025_OnTime/AGENTS.md"
+    },
+    {
+      "path": "2025_OnTime/README.md"
+    },
+    {
+      "path": "2025_OnTime/SKILL.md"
+    },
+    {
+      "path": "2025_QuadMath/AGENTS.md"
+    },
+    {
+      "path": "2025_QuadMath/README.md"
+    },
+    {
+      "path": "2025_QuadMath/SKILL.md"
+    },
+    {
+      "path": "2025_ResNei/AGENTS.md"
+    },
+    {
+      "path": "2025_ResNei/README.md"
+    },
+    {
+      "path": "2025_ResNei/SKILL.md"
+    },
+    {
+      "path": "2025_Symergetics/AGENTS.md"
+    },
+    {
+      "path": "2025_Symergetics/README.md"
+    },
+    {
+      "path": "2025_Symergetics/SKILL.md"
+    },
+    {
+      "path": "2025_SystemsProcesses/AGENTS.md"
+    },
+    {
+      "path": "2025_SystemsProcesses/README.md"
+    },
+    {
+      "path": "2025_SystemsProcesses/SKILL.md"
+    },
+    {
+      "path": "2025_TemporalDepth/AGENTS.md"
+    },
+    {
+      "path": "2025_TemporalDepth/README.md"
+    },
+    {
+      "path": "2025_TemporalDepth/SKILL.md"
+    },
+    {
+      "path": "2025_Thoughtseeds/AGENTS.md"
+    },
+    {
+      "path": "2025_Thoughtseeds/README.md"
+    },
+    {
+      "path": "2025_Thoughtseeds/SKILL.md"
+    },
+    {
+      "path": "2026_AGEINT/AGENTS.md"
+    },
+    {
+      "path": "2026_AGEINT/README.md"
+    },
+    {
+      "path": "2026_AGEINT/SKILL.md"
+    },
+    {
+      "path": "2026_ActInfMetaAnalysis/AGENTS.md"
+    },
+    {
+      "path": "2026_ActInfMetaAnalysis/README.md"
+    },
+    {
+      "path": "2026_ActInfMetaAnalysis/SKILL.md"
+    },
+    {
+      "path": "2026_ActiveFractalRabbit/AGENTS.md"
+    },
+    {
+      "path": "2026_ActiveFractalRabbit/README.md"
+    },
+    {
+      "path": "2026_ActiveFractalRabbit/SKILL.md"
+    },
+    {
+      "path": "2026_ActiveInferenceMulti/AGENTS.md"
+    },
+    {
+      "path": "2026_ActiveInferenceMulti/README.md"
+    },
+    {
+      "path": "2026_ActiveInferenceMulti/SKILL.md"
+    },
+    {
+      "path": "2026_ActiveInferencePower/AGENTS.md"
+    },
+    {
+      "path": "2026_ActiveInferencePower/README.md"
+    },
+    {
+      "path": "2026_ActiveInferencePower/SKILL.md"
+    },
+    {
+      "path": "2026_ActiveSkillference/AGENTS.md"
+    },
+    {
+      "path": "2026_ActiveSkillference/README.md"
+    },
+    {
+      "path": "2026_ActiveSkillference/SKILL.md"
+    },
+    {
+      "path": "2026_AlphaCOGANT/AGENTS.md"
+    },
+    {
+      "path": "2026_AlphaCOGANT/README.md"
+    },
+    {
+      "path": "2026_AlphaCOGANT/SKILL.md"
+    },
+    {
+      "path": "2026_AutopoieticProjectGeneration/AGENTS.md"
+    },
+    {
+      "path": "2026_AutopoieticProjectGeneration/README.md"
+    },
+    {
+      "path": "2026_AutopoieticProjectGeneration/SKILL.md"
+    },
+    {
+      "path": "2026_BeeStack/AGENTS.md"
+    },
+    {
+      "path": "2026_BeeStack/README.md"
+    },
+    {
+      "path": "2026_BeeStack/SKILL.md"
+    },
+    {
+      "path": "2026_BeforePragmatism/AGENTS.md"
+    },
+    {
+      "path": "2026_BeforePragmatism/README.md"
+    },
+    {
+      "path": "2026_BeforePragmatism/SKILL.md"
+    },
+    {
+      "path": "2026_Bimetalism/AGENTS.md"
+    },
+    {
+      "path": "2026_Bimetalism/README.md"
+    },
+    {
+      "path": "2026_Bimetalism/SKILL.md"
+    },
+    {
+      "path": "2026_BiologyTextbook/AGENTS.md"
+    },
+    {
+      "path": "2026_BiologyTextbook/README.md"
+    },
+    {
+      "path": "2026_BiologyTextbook/SKILL.md"
+    },
+    {
+      "path": "2026_BlackLine/AGENTS.md"
+    },
+    {
+      "path": "2026_BlackLine/README.md"
+    },
+    {
+      "path": "2026_BlackLine/SKILL.md"
+    },
+    {
+      "path": "2026_BlakeJiang/AGENTS.md"
+    },
+    {
+      "path": "2026_BlakeJiang/README.md"
+    },
+    {
+      "path": "2026_BlakeJiang/SKILL.md"
+    },
+    {
+      "path": "2026_BoundedAutoResearchTiny/AGENTS.md"
+    },
+    {
+      "path": "2026_BoundedAutoResearchTiny/README.md"
+    },
+    {
+      "path": "2026_BoundedAutoResearchTiny/SKILL.md"
+    },
+    {
+      "path": "2026_COGANT/AGENTS.md"
+    },
+    {
+      "path": "2026_COGANT/README.md"
+    },
+    {
+      "path": "2026_COGANT/SKILL.md"
+    },
+    {
+      "path": "2026_CaliforniaPublicRecords/AGENTS.md"
+    },
+    {
+      "path": "2026_CaliforniaPublicRecords/README.md"
+    },
+    {
+      "path": "2026_CaliforniaPublicRecords/SKILL.md"
+    },
+    {
+      "path": "2026_Codomyrmex/AGENTS.md"
+    },
+    {
+      "path": "2026_Codomyrmex/README.md"
+    },
+    {
+      "path": "2026_Codomyrmex/SKILL.md"
+    },
+    {
+      "path": "2026_CogSecSkills/AGENTS.md"
+    },
+    {
+      "path": "2026_CogSecSkills/README.md"
+    },
+    {
+      "path": "2026_CogSecSkills/SKILL.md"
+    },
+    {
+      "path": "2026_CognitiveCaseDiagrams/AGENTS.md"
+    },
+    {
+      "path": "2026_CognitiveCaseDiagrams/README.md"
+    },
+    {
+      "path": "2026_CognitiveCaseDiagrams/SKILL.md"
+    },
+    {
+      "path": "2026_CognitiveIntegrity/AGENTS.md"
+    },
+    {
+      "path": "2026_CognitiveIntegrity/README.md"
+    },
+    {
+      "path": "2026_CognitiveIntegrity/SKILL.md"
+    },
+    {
+      "path": "2026_ConvergenceAnalysisGradient/AGENTS.md"
+    },
+    {
+      "path": "2026_ConvergenceAnalysisGradient/README.md"
+    },
+    {
+      "path": "2026_ConvergenceAnalysisGradient/SKILL.md"
+    },
+    {
+      "path": "2026_CrescentCity/AGENTS.md"
+    },
+    {
+      "path": "2026_CrescentCity/README.md"
+    },
+    {
+      "path": "2026_CrescentCity/SKILL.md"
+    },
+    {
+      "path": "2026_DataDescriptorTemplate/AGENTS.md"
+    },
+    {
+      "path": "2026_DataDescriptorTemplate/README.md"
+    },
+    {
+      "path": "2026_DataDescriptorTemplate/SKILL.md"
+    },
+    {
+      "path": "2026_DemoCreate/AGENTS.md"
+    },
+    {
+      "path": "2026_DemoCreate/README.md"
+    },
+    {
+      "path": "2026_DemoCreate/SKILL.md"
+    },
+    {
+      "path": "2026_DeterministicTestbedSelf/AGENTS.md"
+    },
+    {
+      "path": "2026_DeterministicTestbedSelf/README.md"
+    },
+    {
+      "path": "2026_DeterministicTestbedSelf/SKILL.md"
+    },
+    {
+      "path": "2026_DigiPPPiP/AGENTS.md"
+    },
+    {
+      "path": "2026_DigiPPPiP/README.md"
+    },
+    {
+      "path": "2026_DigiPPPiP/SKILL.md"
+    },
+    {
+      "path": "2026_DocxplusIntelligentDocument/AGENTS.md"
+    },
+    {
+      "path": "2026_DocxplusIntelligentDocument/README.md"
+    },
+    {
+      "path": "2026_DocxplusIntelligentDocument/SKILL.md"
+    },
+    {
+      "path": "2026_DomainLanguageSpecifying/AGENTS.md"
+    },
+    {
+      "path": "2026_DomainLanguageSpecifying/README.md"
+    },
+    {
+      "path": "2026_DomainLanguageSpecifying/SKILL.md"
+    },
+    {
+      "path": "2026_DoorsOfPerception/AGENTS.md"
+    },
+    {
+      "path": "2026_DoorsOfPerception/README.md"
+    },
+    {
+      "path": "2026_DoorsOfPerception/SKILL.md"
+    },
+    {
+      "path": "2026_DuckRabbit/AGENTS.md"
+    },
+    {
+      "path": "2026_DuckRabbit/README.md"
+    },
+    {
+      "path": "2026_DuckRabbit/SKILL.md"
+    },
+    {
+      "path": "2026_ENTO/AGENTS.md"
+    },
+    {
+      "path": "2026_ENTO/README.md"
+    },
+    {
+      "path": "2026_ENTO/SKILL.md"
+    },
+    {
+      "path": "2026_EditorialQualityAt/AGENTS.md"
+    },
+    {
+      "path": "2026_EditorialQualityAt/README.md"
+    },
+    {
+      "path": "2026_EditorialQualityAt/SKILL.md"
+    },
+    {
+      "path": "2026_EntoLinguistics/AGENTS.md"
+    },
+    {
+      "path": "2026_EntoLinguistics/README.md"
+    },
+    {
+      "path": "2026_EntoLinguistics/SKILL.md"
+    },
+    {
+      "path": "2026_EntomologicalLaw/AGENTS.md"
+    },
+    {
+      "path": "2026_EntomologicalLaw/README.md"
+    },
+    {
+      "path": "2026_EntomologicalLaw/SKILL.md"
+    },
+    {
+      "path": "2026_ExploratoryDataAnalysis/AGENTS.md"
+    },
+    {
+      "path": "2026_ExploratoryDataAnalysis/README.md"
+    },
+    {
+      "path": "2026_ExploratoryDataAnalysis/SKILL.md"
+    },
+    {
+      "path": "2026_FEPLean/AGENTS.md"
+    },
+    {
+      "path": "2026_FEPLean/README.md"
+    },
+    {
+      "path": "2026_FEPLean/SKILL.md"
+    },
+    {
+      "path": "2026_FocusedAttentionMeditation/AGENTS.md"
+    },
+    {
+      "path": "2026_FocusedAttentionMeditation/README.md"
+    },
+    {
+      "path": "2026_FocusedAttentionMeditation/SKILL.md"
+    },
+    {
+      "path": "2026_FourfoldVision/AGENTS.md"
+    },
+    {
+      "path": "2026_FourfoldVision/README.md"
+    },
+    {
+      "path": "2026_FourfoldVision/SKILL.md"
+    },
+    {
+      "path": "2026_GeneralizedNotationNotationGNN/AGENTS.md"
+    },
+    {
+      "path": "2026_GeneralizedNotationNotationGNN/README.md"
+    },
+    {
+      "path": "2026_GeneralizedNotationNotationGNN/SKILL.md"
+    },
+    {
+      "path": "2026_GoldenLine/AGENTS.md"
+    },
+    {
+      "path": "2026_GoldenLine/README.md"
+    },
+    {
+      "path": "2026_GoldenLine/SKILL.md"
+    },
+    {
+      "path": "2026_ITrace/AGENTS.md"
+    },
+    {
+      "path": "2026_ITrace/README.md"
+    },
+    {
+      "path": "2026_ITrace/SKILL.md"
+    },
+    {
+      "path": "2026_IllegalStatesMostly/AGENTS.md"
+    },
+    {
+      "path": "2026_IllegalStatesMostly/README.md"
+    },
+    {
+      "path": "2026_IllegalStatesMostly/SKILL.md"
+    },
+    {
+      "path": "2026_LineSet/AGENTS.md"
+    },
+    {
+      "path": "2026_LineSet/README.md"
+    },
+    {
+      "path": "2026_LineSet/SKILL.md"
+    },
+    {
+      "path": "2026_LivingMetaAnalysis/AGENTS.md"
+    },
+    {
+      "path": "2026_LivingMetaAnalysis/README.md"
+    },
+    {
+      "path": "2026_LivingMetaAnalysis/SKILL.md"
+    },
+    {
+      "path": "2026_MappingWilliamBlake/AGENTS.md"
+    },
+    {
+      "path": "2026_MappingWilliamBlake/README.md"
+    },
+    {
+      "path": "2026_MappingWilliamBlake/SKILL.md"
+    },
+    {
+      "path": "2026_MusicNeverStopped/AGENTS.md"
+    },
+    {
+      "path": "2026_MusicNeverStopped/README.md"
+    },
+    {
+      "path": "2026_MusicNeverStopped/SKILL.md"
+    },
+    {
+      "path": "2026_PROJECTBONDSpecial/AGENTS.md"
+    },
+    {
+      "path": "2026_PROJECTBONDSpecial/README.md"
+    },
+    {
+      "path": "2026_PROJECTBONDSpecial/SKILL.md"
+    },
+    {
+      "path": "2026_PersonalRedLines/AGENTS.md"
+    },
+    {
+      "path": "2026_PersonalRedLines/README.md"
+    },
+    {
+      "path": "2026_PersonalRedLines/SKILL.md"
+    },
+    {
+      "path": "2026_PolicyDistillationAs/AGENTS.md"
+    },
+    {
+      "path": "2026_PolicyDistillationAs/README.md"
+    },
+    {
+      "path": "2026_PolicyDistillationAs/SKILL.md"
+    },
+    {
+      "path": "2026_PolicyEntanglementActive/AGENTS.md"
+    },
+    {
+      "path": "2026_PolicyEntanglementActive/README.md"
+    },
+    {
+      "path": "2026_PolicyEntanglementActive/SKILL.md"
+    },
+    {
+      "path": "2026_PoolsRulesTools/AGENTS.md"
+    },
+    {
+      "path": "2026_PoolsRulesTools/README.md"
+    },
+    {
+      "path": "2026_PoolsRulesTools/SKILL.md"
+    },
+    {
+      "path": "2026_PriorCognitiveArt/AGENTS.md"
+    },
+    {
+      "path": "2026_PriorCognitiveArt/README.md"
+    },
+    {
+      "path": "2026_PriorCognitiveArt/SKILL.md"
+    },
+    {
+      "path": "2026_RealizingEmptiness/AGENTS.md"
+    },
+    {
+      "path": "2026_RealizingEmptiness/README.md"
+    },
+    {
+      "path": "2026_RealizingEmptiness/SKILL.md"
+    },
+    {
+      "path": "2026_RecoveringLLMPersona/AGENTS.md"
+    },
+    {
+      "path": "2026_RecoveringLLMPersona/README.md"
+    },
+    {
+      "path": "2026_RecoveringLLMPersona/SKILL.md"
+    },
+    {
+      "path": "2026_RedactedReportTemplate/AGENTS.md"
+    },
+    {
+      "path": "2026_RedactedReportTemplate/README.md"
+    },
+    {
+      "path": "2026_RedactedReportTemplate/SKILL.md"
+    },
+    {
+      "path": "2026_RefinementGold/AGENTS.md"
+    },
+    {
+      "path": "2026_RefinementGold/README.md"
+    },
+    {
+      "path": "2026_RefinementGold/SKILL.md"
+    },
+    {
+      "path": "2026_RegisteredReportTemplate/AGENTS.md"
+    },
+    {
+      "path": "2026_RegisteredReportTemplate/README.md"
+    },
+    {
+      "path": "2026_RegisteredReportTemplate/SKILL.md"
+    },
+    {
+      "path": "2026_ReproducibleLiteratureSynthesis/AGENTS.md"
+    },
+    {
+      "path": "2026_ReproducibleLiteratureSynthesis/README.md"
+    },
+    {
+      "path": "2026_ReproducibleLiteratureSynthesis/SKILL.md"
+    },
+    {
+      "path": "2026_ReproducibleResearch/AGENTS.md"
+    },
+    {
+      "path": "2026_ReproducibleResearch/README.md"
+    },
+    {
+      "path": "2026_ReproducibleResearch/SKILL.md"
+    },
+    {
+      "path": "2026_RobustBeliefSharing/AGENTS.md"
+    },
+    {
+      "path": "2026_RobustBeliefSharing/README.md"
+    },
+    {
+      "path": "2026_RobustBeliefSharing/SKILL.md"
+    },
+    {
+      "path": "2026_SelfImprovementAgent/AGENTS.md"
+    },
+    {
+      "path": "2026_SelfImprovementAgent/README.md"
+    },
+    {
+      "path": "2026_SelfImprovementAgent/SKILL.md"
+    },
+    {
+      "path": "2026_ShapeBetween/AGENTS.md"
+    },
+    {
+      "path": "2026_ShapeBetween/README.md"
+    },
+    {
+      "path": "2026_ShapeBetween/SKILL.md"
+    },
+    {
+      "path": "2026_SortitionUpstreamNTQR/AGENTS.md"
+    },
+    {
+      "path": "2026_SortitionUpstreamNTQR/README.md"
+    },
+    {
+      "path": "2026_SortitionUpstreamNTQR/SKILL.md"
+    },
+    {
+      "path": "2026_SynthOBSFractiSynth/AGENTS.md"
+    },
+    {
+      "path": "2026_SynthOBSFractiSynth/README.md"
+    },
+    {
+      "path": "2026_SynthOBSFractiSynth/SKILL.md"
+    },
+    {
+      "path": "2026_THALIA/AGENTS.md"
+    },
+    {
+      "path": "2026_THALIA/README.md"
+    },
+    {
+      "path": "2026_THALIA/SKILL.md"
+    },
+    {
+      "path": "2026_TemplateApproachReproducible/AGENTS.md"
+    },
+    {
+      "path": "2026_TemplateApproachReproducible/README.md"
+    },
+    {
+      "path": "2026_TemplateApproachReproducible/SKILL.md"
+    },
+    {
+      "path": "2026_TemplateMadlib/AGENTS.md"
+    },
+    {
+      "path": "2026_TemplateMadlib/README.md"
+    },
+    {
+      "path": "2026_TemplateMadlib/SKILL.md"
+    },
+    {
+      "path": "2026_TemplatePitchDeck/AGENTS.md"
+    },
+    {
+      "path": "2026_TemplatePitchDeck/README.md"
+    },
+    {
+      "path": "2026_TemplatePitchDeck/SKILL.md"
+    },
+    {
+      "path": "2026_TemplateTextbook/AGENTS.md"
+    },
+    {
+      "path": "2026_TemplateTextbook/README.md"
+    },
+    {
+      "path": "2026_TemplateTextbook/SKILL.md"
+    },
+    {
+      "path": "2026_Triplicate/AGENTS.md"
+    },
+    {
+      "path": "2026_Triplicate/README.md"
+    },
+    {
+      "path": "2026_Triplicate/SKILL.md"
+    },
+    {
+      "path": "2026_WhenDoBugs/AGENTS.md"
+    },
+    {
+      "path": "2026_WhenDoBugs/README.md"
+    },
+    {
+      "path": "2026_WhenDoBugs/SKILL.md"
+    },
+    {
+      "path": "2026_WhiteLine/AGENTS.md"
+    },
+    {
+      "path": "2026_WhiteLine/README.md"
+    },
+    {
+      "path": "2026_WhiteLine/SKILL.md"
+    },
+    {
+      "path": "2026_WitnessRegister/AGENTS.md"
+    },
+    {
+      "path": "2026_WitnessRegister/README.md"
+    },
+    {
+      "path": "2026_WitnessRegister/SKILL.md"
+    }
+  ]
+}

@@ -5,7 +5,8 @@ Deploy SEO + security improvements across all indexable HTML pages:
 1. Content-Security-Policy meta tag (if missing)
 2. rel="me" social verification links (if missing)
 
-Skips redirect stubs (noindex pages) and the Google verification page.
+Skips redirect stubs (centrally rendered by generate_redirect_stubs.py) and the
+Google verification page.
 Idempotent — only adds tags that are missing.
 """
 
@@ -19,15 +20,31 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 from site_nav import CSP_META_TAG  # noqa: E402
+from redirect_stubs import discover_redirect_stubs  # noqa: E402
+from generated_outputs import (  # noqa: E402
+    UnsafeGeneratedOutputPathError,
+    read_generated_output_text,
+    safe_generated_output_path,
+    write_generated_output_text,
+)
 
-# Pages to skip (redirect stubs or non-HTML)
-SKIP_PAGES = {
-    "googlef0f1a1a4a7ba4be8.html",
-    "about.html",
-    "meditations.html",
-    "nft.html",
-    "research.html",
-}
+# Pages to skip (non-HTML verification surfaces). Redirect stubs are discovered
+# from their actual markup rather than maintained as another fixed allowlist.
+SKIP_PAGES = {"googlef0f1a1a4a7ba4be8.html"}
+EXCLUDED_HTML_PATH_PARTS = frozenset(
+    {
+        ".git",
+        ".venv",
+        ".pytest_cache",
+        "__pycache__",
+        "node_modules",
+        "docs",
+        "code",
+        "reports",
+        "netlify-stripe-webhook",
+        "_site",
+    }
+)
 
 # The CSP policy from docs/security/security-posture.md. Imported rather than
 # duplicated: the two copies previously carried a "keep this in sync" comment,
@@ -132,13 +149,16 @@ def strip_hreflang_tags(html: str) -> str:
     return HREFLANG_TAG_RE.sub("\n", html)
 
 
-def process_file(path: Path) -> dict:
-    """Process a single HTML file. Returns a dict with what was changed."""
-    html = path.read_text(encoding="utf-8")
+def transform_html(html: str, *, is_redirect: bool = False, is_skipped: bool = False) -> tuple[str, list[str], bool]:
+    """Return normalized HTML, changes, and whether the page is intentionally skipped.
+
+    Keeping this pure lets ``--check`` prove the same transformation would be
+    applied without writing an on-disk byte.
+    """
     changes = []
 
-    if is_redirect_stub(html) or path.name in SKIP_PAGES:
-        return {"file": path.name, "skipped": True}
+    if is_redirect or is_skipped:
+        return html, changes, True
 
     original = html
     html = remove_external_font_links(html)
@@ -166,30 +186,75 @@ def process_file(path: Path) -> dict:
         changes.append("hreflang-stripped")
         original = html
 
-    if changes:
-        path.write_text(html, encoding="utf-8")
+    return html, changes, False
 
-    return {"file": path.name, "changes": changes}
+
+def process_file(
+    path: Path,
+    *,
+    redirect_paths: set[str],
+    write: bool = True,
+    repo_root: Path = REPO_ROOT,
+) -> dict:
+    """Process or check one repository-local public HTML file safely.
+
+    This generator updates hand-authored pillar pages as well as generated
+    pages, so it deliberately does not assert an ownership marker.  It does
+    enforce the same filesystem boundary as generated outputs: an HTML path
+    cannot escape the checked-out repository through a symlink, hard link, or
+    swapped ancestor while ``--check`` reads it or write mode refreshes it.
+    """
+    target = safe_generated_output_path(repo_root, path)
+    original = read_generated_output_text(repo_root, target)
+    if original is None:
+        raise UnsafeGeneratedOutputPathError(
+            f"SEO/security normalization input is missing: {target}"
+        )
+    relative = target.relative_to(repo_root.absolute()).as_posix()
+    updated, changes, skipped = transform_html(
+        original,
+        is_redirect=relative in redirect_paths,
+        is_skipped=path.name in SKIP_PAGES,
+    )
+    if changes and write:
+        write_generated_output_text(repo_root, target, updated)
+    return {"file": relative, "changes": changes, "skipped": skipped}
+
+
+def is_indexable_html_path(path: Path) -> bool:
+    """Exclude tooling/dependency trees from site-wide source normalization."""
+    return not bool(EXCLUDED_HTML_PATH_PARTS.intersection(path.parts))
 
 
 def main() -> None:
+    import argparse
+
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true", help="Fail if an indexable page needs a SEO/security normalization")
+    args = parser.parse_args()
     html_files = sorted(
         path
         for path in REPO_ROOT.rglob("*.html")
-        if not ({".git", "node_modules", "docs", "code", "reports", "netlify-stripe-webhook", "_site"} & set(path.parts))
+        if is_indexable_html_path(path)
     )
+    redirect_paths = discover_redirect_stubs(REPO_ROOT)
     total_changes = 0
+    stale: list[str] = []
 
     for f in html_files:
-        result = process_file(f)
+        result = process_file(f, redirect_paths=redirect_paths, write=not args.check)
         if result.get("skipped"):
             print(f"  SKIP  {result['file']}")
         elif result.get("changes"):
-            print(f"  ADD   {result['file']}: {', '.join(result['changes'])}")
+            verb = "STALE" if args.check else "ADD"
+            print(f"  {verb}  {result['file']}: {', '.join(result['changes'])}")
             total_changes += len(result["changes"])
+            stale.append(result["file"])
         else:
             print(f"  OK    {result['file']}")
 
+    if args.check and stale:
+        raise SystemExit("SEO/security normalization is stale: " + ", ".join(stale))
     print(f"\n{total_changes} tag(s) added across {len(html_files)} files")
 
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T21:35:06Z",
+  "generated_at": "2026-08-28T17:20:05Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,18 +61,18 @@
     }
   ],
   "max_score": 6,
-  "work_count": 209,
+  "work_count": 211,
   "signal_totals": {
-    "persistent_id": 194,
-    "public_archive": 152,
-    "open_full_text": 171,
-    "source_documents": 192,
-    "executable_code": 62,
-    "agent_readable": 192
+    "persistent_id": 196,
+    "public_archive": 154,
+    "open_full_text": 189,
+    "source_documents": 194,
+    "executable_code": 63,
+    "agent_readable": 194
   },
   "band_counts": {
-    "independently reproducible": 146,
-    "independently checkable": 46,
+    "independently reproducible": 149,
+    "independently checkable": 45,
     "citable only": 8,
     "unverified": 9
   },
@@ -81,11 +81,11 @@
     "1": 4,
     "2": 4,
     "3": 8,
-    "4": 38,
-    "5": 101,
-    "6": 45
+    "4": 37,
+    "5": 88,
+    "6": 61
   },
-  "mean_score": 4.608,
+  "mean_score": 4.692,
   "works": [
     {
       "num": 10,
@@ -1031,6 +1031,342 @@
       },
       "repositories": [
         "template-pitch-deck"
+      ]
+    },
+    {
+      "num": 195,
+      "citation_key": "Friedman2026ActiveFractalRabbitSyntheticBenchmark195",
+      "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "active_fractal_rabbit"
+      ]
+    },
+    {
+      "num": 197,
+      "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
+      "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "DuckRabbit"
+      ]
+    },
+    {
+      "num": 199,
+      "citation_key": "Friedman2026ActiveInferencePowerSuite199",
+      "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "active_inference_power"
+      ]
+    },
+    {
+      "num": 200,
+      "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
+      "title": "The Witness Register: Co-Registration Without Aggregation",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "witness_register"
+      ]
+    },
+    {
+      "num": 201,
+      "citation_key": "Friedman2026LineSetHoldingInstruments201",
+      "title": "The Line Set: Holding Instruments Apart",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "line_set"
+      ]
+    },
+    {
+      "num": 202,
+      "citation_key": "Friedman2026WhiteLineTypedLedger202",
+      "title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "white_line"
+      ]
+    },
+    {
+      "num": 203,
+      "citation_key": "Friedman2026PersonalRedLinesDevelopment203",
+      "title": "Personal Red Lines for Development",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "red_line"
+      ]
+    },
+    {
+      "num": 204,
+      "citation_key": "Friedman2026GoldenLineTowardWhat204",
+      "title": "Golden Line: Toward What Matters",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "golden_line"
+      ]
+    },
+    {
+      "num": 205,
+      "citation_key": "Friedman2026BlackLineStrongWork205",
+      "title": "Black Line: Strong Work in Public",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "black_line"
+      ]
+    },
+    {
+      "num": 206,
+      "citation_key": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
+      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "codomyrmex"
+      ]
+    },
+    {
+      "num": 207,
+      "citation_key": "Friedman2026THALIATypedHarnessAnalytical207",
+      "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "thalia"
+      ]
+    },
+    {
+      "num": 208,
+      "citation_key": "Friedman2026PROJECTBONDSpecialAgent208",
+      "title": "PROJECT BOND — The Special-Agent Operations Compendium",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "bond"
+      ]
+    },
+    {
+      "num": 209,
+      "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
+      "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "Digi-PPPiP"
+      ]
+    },
+    {
+      "num": 210,
+      "citation_key": "Friedman2026RobustBeliefSharingFederated210",
+      "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "Active_Fedference"
+      ]
+    },
+    {
+      "num": 211,
+      "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
+      "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+      "year": 2026,
+      "domain_name": "Active Inference",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "Active_Skillference"
+      ]
+    },
+    {
+      "num": 212,
+      "citation_key": "Friedman2026DocxplusIntelligentDocumentContainer212",
+      "title": "docxplus — the Intelligent Document Container",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "docxplus"
       ]
     },
     {
@@ -2673,30 +3009,28 @@
       "repositories": []
     },
     {
-      "num": 195,
-      "citation_key": "Friedman2026ActiveFractalRabbitSyntheticBenchmark195",
-      "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+      "num": 196,
+      "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
+      "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
       "year": 2026,
-      "domain_name": "Cognitive Security",
+      "domain_name": "Art & Synergetics",
       "type": "Paper",
       "score": 5,
       "band": "independently reproducible",
       "signals": {
         "persistent_id": true,
         "public_archive": true,
-        "open_full_text": false,
+        "open_full_text": true,
         "source_documents": true,
-        "executable_code": true,
+        "executable_code": false,
         "agent_readable": true
       },
-      "repositories": [
-        "active_fractal_rabbit"
-      ]
+      "repositories": []
     },
     {
-      "num": 197,
-      "citation_key": "Friedman2026DuckRabbitTypedMultimodalIllusion197",
-      "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+      "num": 198,
+      "citation_key": "Friedman2026SynthOBSFractiSynthGoldenRatio198",
+      "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
       "year": 2026,
       "domain_name": "Computational",
       "type": "Paper",
@@ -2705,287 +3039,12 @@
       "signals": {
         "persistent_id": true,
         "public_archive": true,
-        "open_full_text": false,
+        "open_full_text": true,
         "source_documents": true,
-        "executable_code": true,
+        "executable_code": false,
         "agent_readable": true
       },
-      "repositories": [
-        "DuckRabbit"
-      ]
-    },
-    {
-      "num": 199,
-      "citation_key": "Friedman2026ActiveInferencePowerSuite199",
-      "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
-      "year": 2026,
-      "domain_name": "Active Inference",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "active_inference_power"
-      ]
-    },
-    {
-      "num": 200,
-      "citation_key": "Friedman2026WitnessRegisterCoRegistration200",
-      "title": "The Witness Register: Co-Registration Without Aggregation",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "witness_register"
-      ]
-    },
-    {
-      "num": 201,
-      "citation_key": "Friedman2026LineSetHoldingInstruments201",
-      "title": "The Line Set: Holding Instruments Apart",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "line_set"
-      ]
-    },
-    {
-      "num": 202,
-      "citation_key": "Friedman2026WhiteLineTypedLedger202",
-      "title": "White Line: A Typed Ledger for the Edge of the Claim",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "white_line"
-      ]
-    },
-    {
-      "num": 203,
-      "citation_key": "Friedman2026PersonalRedLinesDevelopment203",
-      "title": "Personal Red Lines for Development",
-      "year": 2026,
-      "domain_name": "Cognitive Security",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "red_line"
-      ]
-    },
-    {
-      "num": 204,
-      "citation_key": "Friedman2026GoldenLineTowardWhat204",
-      "title": "Golden Line: Toward What Matters",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "golden_line"
-      ]
-    },
-    {
-      "num": 205,
-      "citation_key": "Friedman2026BlackLineStrongWork205",
-      "title": "Black Line: Strong Work in Public",
-      "year": 2026,
-      "domain_name": "Cognitive Security",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "black_line"
-      ]
-    },
-    {
-      "num": 206,
-      "citation_key": "Friedman2026CodomyrmexArtificialEcologyAgentic206",
-      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "codomyrmex"
-      ]
-    },
-    {
-      "num": 207,
-      "citation_key": "Friedman2026THALIATypedHarnessAnalytical207",
-      "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "thalia"
-      ]
-    },
-    {
-      "num": 208,
-      "citation_key": "Friedman2026PROJECTBONDSpecialAgent208",
-      "title": "PROJECT BOND — The Special-Agent Operations Compendium",
-      "year": 2026,
-      "domain_name": "Computational",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "bond"
-      ]
-    },
-    {
-      "num": 209,
-      "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
-      "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
-      "year": 2026,
-      "domain_name": "Cognitive Security",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "Digi-PPPiP"
-      ]
-    },
-    {
-      "num": 210,
-      "citation_key": "Friedman2026RobustBeliefSharingFederated210",
-      "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
-      "year": 2026,
-      "domain_name": "Active Inference",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "Active_Fedference"
-      ]
-    },
-    {
-      "num": 211,
-      "citation_key": "Friedman2026ActiveSkillferenceValidatedPrerequisite211",
-      "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
-      "year": 2026,
-      "domain_name": "Active Inference",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": true,
-        "agent_readable": true
-      },
-      "repositories": [
-        "Active_Skillference"
-      ]
+      "repositories": []
     },
     {
       "num": 23,
@@ -3653,28 +3712,9 @@
       "repositories": []
     },
     {
-      "num": 196,
-      "citation_key": "Friedman2026FourfoldVisionWilliamBlake196",
-      "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
-      "year": 2026,
-      "domain_name": "Art & Synergetics",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 198,
-      "citation_key": "Friedman2026SynthOBSFractiSynthGoldenRatio198",
-      "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+      "num": 213,
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkComputational213",
+      "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
       "year": 2026,
       "domain_name": "Computational",
       "type": "Paper",
@@ -3691,9 +3731,9 @@
       "repositories": []
     },
     {
-      "num": 212,
-      "citation_key": "Friedman2026DocxplusIntelligentDocumentContainer212",
-      "title": "docxplus — the Intelligent Document Container",
+      "num": 214,
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkPractical214",
+      "title": "Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)",
       "year": 2026,
       "domain_name": "Computational",
       "type": "Paper",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T21:01:53Z",
+  "generated_at": "2026-08-28T17:25:33Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,26 +34,26 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 209,
-    "software_catalogued": 146,
-    "owned_software_catalogued": 105,
-    "aii_software_catalogued": 41,
+    "works": 211,
+    "software_catalogued": 147,
+    "owned_software_catalogued": 108,
+    "aii_software_catalogued": 39,
     "google_scholar": {
-      "citations": 777,
-      "h_index": 15,
-      "i10_index": 17,
-      "as_of": "2026-06-09",
+      "citations": 815,
+      "h_index": 14,
+      "i10_index": 16,
+      "as_of": "2026-08-26",
       "profile_url": "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en"
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 347 public repositories.",
+      "claim": "The docxology GitHub profile has 202 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-07-21.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
-      "checked_at": "2026-07-21T20:21:13.983218+00:00",
+      "checked_at": "2026-08-26T20:38:56.057530+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -61,26 +61,26 @@
     },
     "aii_public_repositories_claim": {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 43 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-07-21.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
-      "checked_at": "2026-07-21T20:21:13.983218+00:00",
+      "checked_at": "2026-08-26T20:38:56.057530+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 41 AII repositories with docxology contributions."
+      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 39 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-08-10T17:24:40Z",
+      "generated_at": "2026-08-26T18:56:16Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 244,
-      "public": 244,
-      "primary_total": 157,
+      "total": 245,
+      "public": 245,
+      "primary_total": 158,
       "forks": 87,
-      "docxology": 201,
+      "docxology": 202,
       "ActiveInferenceInstitute": 43
     }
   },
@@ -88,37 +88,37 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "0b78cdf17c84d0b947fc2a67201f454e61113955dbb484bfcf0db1bd30bf034d",
+      "sha256": "92a30efacd1f340c866e3aceb4748f7e82ccc84bcb399cc7ff00f727ab1a6117",
       "files": [
         {
           "path": "resume/source.json",
-          "bytes": 58750,
-          "sha256": "9e2dd487986d64d10ab3b96fa20d8d8fb86b9196b75cb92149672d25f058c0a2"
+          "bytes": 58813,
+          "sha256": "9bfe02faeb946d3a8cd6ab916a4686e0252ada8af2995257ee7c7ad59108904a"
         },
         {
           "path": "data/works.json",
-          "bytes": 167917,
-          "sha256": "161fcf51e243bd6e0c40ac94194f12646a75f5b407114411055eea8889b6df6e"
+          "bytes": 170214,
+          "sha256": "1692ac4553246ad469ddf491a246a1d16fb76ebaa7885e1e676e660c091005c7"
         },
         {
           "path": "data/software.json",
-          "bytes": 72155,
-          "sha256": "c8abb7e73c02d38f5dfa2a12475ec3a2cd7c88a30071b6add2c3bed995632e3f"
+          "bytes": 72743,
+          "sha256": "1e9f7247c14c94c673dcd0c9065a86392742b601990476efc6d1f9851de3ec95"
         },
         {
           "path": "data/scholar-snapshot.json",
-          "bytes": 1973,
-          "sha256": "83f065bc6eac1aded5cae8de4249ab4fb76940612a59010526412c29025cdb90"
+          "bytes": 2264,
+          "sha256": "d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2"
         },
         {
           "path": "data/claims.json",
-          "bytes": 11914,
-          "sha256": "fd6256727173b95ce1585e8caecfb82adfc14842c4c6712098ba6fcc2fd9fd94"
+          "bytes": 12976,
+          "sha256": "cfcaa120d8ac8ef28a1363f0317a5aeff5afe3953064ce6f1406dcebefd97577"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 211710,
-          "sha256": "b71d39d61261910ce426e24de80324d9302affa76c2819a0ff9325e6f728b14c"
+          "bytes": 293406,
+          "sha256": "242305e4e959b97736219886352b9ee276dd1e787a4eb43d0be028ea617e8f25"
         }
       ]
     },
@@ -134,14 +134,14 @@
       "end_year": 2023,
       "details": [
         "Co-mentors: Prof. Brian Johnson (UC Davis) and Prof. Tim Linksvayer (Arizona State University).",
-        "NSF Postdoctoral Research Fellowship in Biology (PRFB), award DBI-2010290; NSF budget period 2020-2022 with affiliation extending to 2023.",
+        "NSF Postdoctoral Fellowship in Biology, award DBI-2010290; official award dates 2020-10-01 to 2023-09-30.",
         "Genomics, epigenomics, transcriptomics, and behavior in eusocial insects, mainly ants and bees.",
         "Science research, mentoring, participation, service, and organizing events and communities online."
       ],
       "links": [
         {
-          "label": "NSF DBI-2010290",
-          "url": "https://grantome.com/grant/NSF/DBI-2010290"
+          "label": "NSF award DBI-2010290",
+          "url": "https://api.nsf.gov/services/v1/awards/2010290.json"
         },
         {
           "label": "UC Davis",
@@ -279,7 +279,7 @@
       "links": [
         {
           "label": "AII officers",
-          "url": "https://www.activeinference.institute/officers"
+          "url": "https://activeinference.institute/structure/officers/"
         },
         {
           "label": "AII",
@@ -622,11 +622,11 @@
       "id": "nsf-prfb",
       "year": 2020,
       "name": "NSF Postdoctoral Research Fellowship in Biology",
-      "details": "Award DBI-2010290; NSF budget period 2020-2022.",
+      "details": "Award DBI-2010290; official award dates 2020-10-01 to 2023-09-30.",
       "links": [
         {
-          "label": "NSF DBI-2010290",
-          "url": "https://grantome.com/grant/NSF/DBI-2010290"
+          "label": "NSF award DBI-2010290",
+          "url": "https://api.nsf.gov/services/v1/awards/2010290.json"
         }
       ],
       "variants": [
@@ -2113,7 +2113,7 @@
       "id": "christies-curio-cards-2021",
       "year": 2021,
       "name": "Curio Cards",
-      "description": "A full Curio Cards set sold at Christie's on October 1, 2021 for 393 ETH, approximately $1.2 million.",
+      "description": "A full Curio Cards set sold at Christie's New York on September 30, 2021 for 393 ETH ($1,202,108).",
       "links": [
         {
           "label": "Christie's Curio Cards lot",
@@ -2233,7 +2233,7 @@
       "id": "curio-cards-2017",
       "year": 2017,
       "name": "Curio Cards",
-      "description": "Early Ethereum art NFT project; art for Curio Cards 24, 25, and 26.",
+      "description": "Early Ethereum art NFT collection that debuted May 9, 2017; Daniel Friedman created Curio Cards 24, 25, and 26.",
       "links": [
         {
           "label": "Curio Cards artist",
@@ -2637,7 +2637,7 @@
       "docs_path": "papers/2025_AccessibilityActiveInference/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -2661,7 +2661,7 @@
       "docs_path": "papers/2025_MDKV/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -2684,7 +2684,7 @@
       "docs_path": "papers/2025_MarkdownDecisionProcess/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -2725,12 +2725,12 @@
       "type": "Paper",
       "title": "On Time",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.15168382",
-      "doi": "10.5281/zenodo.15168382",
+      "url": "https://doi.org/10.5281/zenodo.15168381",
+      "doi": "10.5281/zenodo.15168381",
       "docs_path": "papers/2025_OnTime/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -2826,7 +2826,7 @@
       "docs_path": "papers/2025_AgentAndNiche/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3053,7 +3053,7 @@
       "docs_path": "papers/2024_OntologySUMO/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3324,7 +3324,7 @@
       "docs_path": "papers/2024_SensemakingFederation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3428,7 +3428,7 @@
       "docs_path": "papers/2024_InfiniteImaginarium/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3601,7 +3601,7 @@
       "docs_path": "papers/2023_AccountActiveInference/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3624,7 +3624,7 @@
       "docs_path": "papers/2023_CognitiveSovereignty/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3701,7 +3701,7 @@
       "docs_path": "papers/2023_NSFReporting/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -3724,7 +3724,7 @@
       "docs_path": "papers/2023_VideoEntomology/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4057,7 +4057,7 @@
       "docs_path": "papers/2022_ActiveDiffusion/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4081,7 +4081,7 @@
       "docs_path": "papers/2022_StigmergicAnnotation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4108,7 +4108,7 @@
       "docs_path": "papers/2022_FreeWillSapolsky/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4133,7 +4133,7 @@
       "docs_path": "papers/2022_MirrorTest/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4178,7 +4178,7 @@
       "docs_path": "papers/2022_HypercertEcosystems/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4371,7 +4371,7 @@
       "docs_path": "papers/2021_NarrativeInformationMgmt/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4495,7 +4495,7 @@
       "docs_path": "papers/2020_EmergentTeams/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4663,7 +4663,7 @@
       "docs_path": "papers/2019_DennettExplained/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -4688,7 +4688,7 @@
       "docs_path": "papers/2019_PhDDissertation/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -5015,7 +5015,7 @@
       "docs_path": "papers/2015_CryptoJews/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -5682,7 +5682,7 @@
       "docs_path": "papers/2023_NaturalAIBased/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -5757,7 +5757,7 @@
       "docs_path": "papers/2023_TranscriptActiveInference/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -5782,7 +5782,7 @@
       "docs_path": "papers/2023_ModernNostrIndex/",
       "has_paper_folder": true,
       "has_full_text": true,
-      "has_images": true,
+      "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
@@ -6242,7 +6242,7 @@
       "type": "Paper",
       "title": "Disinforge",
       "venue": "Science",
-      "url": "https://www.science.org/doi/10.1126/science.371.6524.22",
+      "url": "https://www.science.org/doi/10.1126/science.abg0904",
       "doi": "",
       "docs_path": "",
       "has_paper_folder": false,
@@ -6263,8 +6263,8 @@
       "type": "Paper",
       "title": "Defining events: 2020 in hindsight",
       "venue": "Science",
-      "url": "https://doi.org/10.1126/science.371.6524.22",
-      "doi": "10.1126/science.371.6524.22",
+      "url": "https://doi.org/10.1126/science.abg0904",
+      "doi": "10.1126/science.abg0904",
       "docs_path": "",
       "has_paper_folder": false,
       "has_full_text": false,
@@ -7098,12 +7098,12 @@
       "doi": "10.5281/zenodo.21330636",
       "docs_path": "papers/2026_ActiveFractalRabbit/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_ActiveFractalRabbit/full_text.md",
       "authors": [
         "Daniel Ari Friedman"
       ]
@@ -7121,12 +7121,12 @@
       "doi": "10.5281/zenodo.21388456",
       "docs_path": "papers/2026_FourfoldVision/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_FourfoldVision/full_text.md",
       "authors": [
         "Daniel Ari Friedman"
       ]
@@ -7144,12 +7144,12 @@
       "doi": "10.5281/zenodo.21419693",
       "docs_path": "papers/2026_DuckRabbit/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_DuckRabbit/full_text.md",
       "authors": [
         "Daniel Ari Friedman"
       ]
@@ -7167,12 +7167,12 @@
       "doi": "10.5281/zenodo.21418782",
       "docs_path": "papers/2026_SynthOBSFractiSynth/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_SynthOBSFractiSynth/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7190,12 +7190,12 @@
       "doi": "10.5281/zenodo.21695160",
       "docs_path": "papers/2026_ActiveInferencePower/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_ActiveInferencePower/full_text.md",
       "authors": []
     },
     {
@@ -7211,12 +7211,12 @@
       "doi": "10.5281/zenodo.21754245",
       "docs_path": "papers/2026_WitnessRegister/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_WitnessRegister/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7234,12 +7234,12 @@
       "doi": "10.5281/zenodo.21754243",
       "docs_path": "papers/2026_LineSet/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_LineSet/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7257,12 +7257,12 @@
       "doi": "10.5281/zenodo.21754241",
       "docs_path": "papers/2026_WhiteLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_WhiteLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7280,12 +7280,12 @@
       "doi": "10.5281/zenodo.21754239",
       "docs_path": "papers/2026_PersonalRedLines/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_PersonalRedLines/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7303,12 +7303,12 @@
       "doi": "10.5281/zenodo.21754237",
       "docs_path": "papers/2026_GoldenLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_GoldenLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7326,12 +7326,12 @@
       "doi": "10.5281/zenodo.21754235",
       "docs_path": "papers/2026_BlackLine/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_BlackLine/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7349,12 +7349,12 @@
       "doi": "10.5281/zenodo.21750800",
       "docs_path": "papers/2026_Codomyrmex/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_Codomyrmex/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7372,12 +7372,12 @@
       "doi": "10.5281/zenodo.21763244",
       "docs_path": "papers/2026_THALIA/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_THALIA/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7395,12 +7395,12 @@
       "doi": "10.5281/zenodo.21843592",
       "docs_path": "papers/2026_PROJECTBONDSpecial/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_PROJECTBONDSpecial/full_text.md",
       "authors": [
         "Friedman, Daniel Ari"
       ]
@@ -7418,12 +7418,12 @@
       "doi": "10.5281/zenodo.21815704",
       "docs_path": "papers/2026_DigiPPPiP/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_DigiPPPiP/full_text.md",
       "authors": [
         "Shrivastava, Siddhant",
         "Goh, Evelyn C.",
@@ -7444,12 +7444,12 @@
       "doi": "10.5281/zenodo.21864003",
       "docs_path": "papers/2026_RobustBeliefSharing/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_RobustBeliefSharing/full_text.md",
       "authors": []
     },
     {
@@ -7465,12 +7465,12 @@
       "doi": "10.5281/zenodo.21865643",
       "docs_path": "papers/2026_ActiveSkillference/",
       "has_paper_folder": true,
-      "has_full_text": false,
+      "has_full_text": true,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
-      "full_text_url": "",
+      "full_text_url": "/papers/2026_ActiveSkillference/full_text.md",
       "authors": []
     },
     {
@@ -7486,15 +7486,57 @@
       "doi": "10.5281/zenodo.21983948",
       "docs_path": "papers/2026_DocxplusIntelligentDocument/",
       "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_DocxplusIntelligentDocument/full_text.md",
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 213,
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkComputational213",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.22134545",
+      "doi": "10.5281/zenodo.22134545",
+      "docs_path": "papers/2026_CognitiveIntegrityFramework/",
+      "has_paper_folder": true,
       "has_full_text": false,
       "has_images": false,
       "has_skill_md": true,
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "",
-      "authors": [
-        "Friedman, Daniel Ari"
-      ]
+      "authors": []
+    },
+    {
+      "num": 214,
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkPractical214",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.22134547",
+      "doi": "10.5281/zenodo.22134547",
+      "docs_path": "papers/2026_CognitiveIntegrityFramework2/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": []
     }
   ],
   "software": [
@@ -7743,7 +7785,7 @@
       "url": "https://github.com/docxology/AGEINT",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · · Zenodo",
+      "description": "Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · · Citation DOI",
       "language": "HTML",
       "stars": 1,
       "updated_or_year": "2026-06",
@@ -7815,7 +7857,7 @@
       "url": "https://github.com/docxology/itrace",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · · Zenodo",
+      "description": "Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-06",
@@ -7851,7 +7893,7 @@
       "url": "https://github.com/docxology/template_madlib",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing · · Zenodo",
+      "description": "Deterministic token-injection exemplar for conditional IMRAD manuscripts — reproducible madlib-style variable substitution for scientific writing · · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-06",
@@ -7971,12 +8013,12 @@
       "url": "https://github.com/docxology/biology_textbook",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo",
+      "description": "Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-05",
       "paper_path": "papers/2026_BiologyTextbook/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20286478"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20286477"
     },
     {
       "name": "cascadia",
@@ -8759,6 +8801,42 @@
       "zenodo_url": "https://doi.org/10.5281/zenodo.21763244"
     },
     {
+      "name": "math4wisdom-superhuman-docs-archive",
+      "url": "https://github.com/docxology/math4wisdom-superhuman-docs-archive",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Structured, read-only Math4Wisdom Superhuman Docs archive",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "docxplus",
+      "url": "https://github.com/docxology/docxplus",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "docxplus — the Intelligent Document Container: format, tools, and formal specification · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "papers/2026_DocxplusIntelligentDocument/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.21983948"
+    },
+    {
+      "name": "multi-time",
+      "url": "https://github.com/docxology/multi-time",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Multi-frequency time-series analysis toolkit built on sktime — validates irregular series, tests stationarity and Granger causality, and evaluates forecasting models",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
       "name": "ActiveInferenceJournal",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
       "owner": "ActiveInferenceInstitute",
@@ -9003,12 +9081,12 @@
       "url": "https://github.com/ActiveInferenceInstitute/fep_lean",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline · · Zenodo",
+      "description": "Lean 4 / Mathlib4 formalization of FEP-related mathematics — 155-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline · · Zenodo artifact v1.1.0 · Citation DOI",
       "language": "Python",
       "stars": 3,
       "updated_or_year": "2026",
       "paper_path": "papers/2026_FEPLean/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.19699234"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.19699233"
     },
     {
       "name": "ActInf_RxInfer",
@@ -9071,18 +9149,6 @@
       "zenodo_url": ""
     },
     {
-      "name": "ultralink",
-      "url": "https://github.com/ActiveInferenceInstitute/ultralink",
-      "owner": "ActiveInferenceInstitute",
-      "catalog_section": "active-inference-institute",
-      "description": "UltraLink — framework for linking, rendering, and transforming richly cross-referenced documents across multiple output formats",
-      "language": "",
-      "stars": 1,
-      "updated_or_year": "2025",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
       "name": "ActiveInferenceImplementations",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceImplementations",
       "owner": "ActiveInferenceInstitute",
@@ -9111,24 +9177,24 @@
       "url": "https://github.com/ActiveInferenceInstitute/COGANT",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · · Zenodo · Zenodo",
+      "description": "Deterministic Codebase-to-GNN Translation — evidence compiler converting repositories into Generalized Notation Notation Active Inference artifacts via a 22-rule fixpoint engine; dual Python/Rust · · Zenodo artifact v0.6.0 · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026",
       "paper_path": "papers/2026_COGANT/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20705351"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20705350"
     },
     {
       "name": "on_policy_distillation",
       "url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · · Zenodo · Zenodo",
+      "description": "On-Policy Distillation and Active Inference — finite variational-model correspondence with deterministic witnesses, reproducibility artifacts, and paired publication release · · Zenodo artifact v1.0.2 · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026",
       "paper_path": "papers/2026_PolicyDistillationAs/",
-      "zenodo_url": "https://doi.org/10.5281/zenodo.20749817"
+      "zenodo_url": "https://doi.org/10.5281/zenodo.20747834"
     },
     {
       "name": "Bots",
@@ -9167,36 +9233,12 @@
       "zenodo_url": ""
     },
     {
-      "name": "gnn",
-      "url": "https://github.com/ActiveInferenceInstitute/gnn",
-      "owner": "ActiveInferenceInstitute",
-      "catalog_section": "active-inference-institute",
-      "description": "Generalized Notation Notation v2 — next-generation GNN specification with extended model classes and improved toolchain",
-      "language": "",
-      "stars": 0,
-      "updated_or_year": "2024",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
       "name": "ISSS",
       "url": "https://github.com/ActiveInferenceInstitute/ISSS",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
       "description": "International Society for the Systems Sciences collaboration — joint research and educational materials bridging Active Inference and systems science",
       "language": "Python",
-      "stars": 0,
-      "updated_or_year": "2024",
-      "paper_path": "",
-      "zenodo_url": ""
-    },
-    {
-      "name": "topp",
-      "url": "https://github.com/ActiveInferenceInstitute/topp",
-      "owner": "ActiveInferenceInstitute",
-      "catalog_section": "active-inference-institute",
-      "description": "The Open Problems Project — curated registry of open scientific problems in Active Inference and the free energy principle",
-      "language": "TeX",
       "stars": 0,
       "updated_or_year": "2024",
       "paper_path": "",
@@ -9219,7 +9261,7 @@
       "url": "https://github.com/ActiveInferenceInstitute/Active_Fedference",
       "owner": "ActiveInferenceInstitute",
       "catalog_section": "active-inference-institute",
-      "description": "Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus · · Zenodo",
+      "description": "Robust belief sharing in federated Active Inference — recovery-tested generalized-variational consensus · · Citation DOI",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026",
@@ -9249,19 +9291,31 @@
       "updated_or_year": "2026",
       "paper_path": "papers/2026_ActiveInferencePower/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21695160"
+    },
+    {
+      "name": "Active_Inference_Un0",
+      "url": "https://github.com/ActiveInferenceInstitute/Active_Inference_Un0",
+      "owner": "ActiveInferenceInstitute",
+      "catalog_section": "active-inference-institute",
+      "description": "Public repository with no description, language, or committed contents at the 2026-08-26 review",
+      "language": "",
+      "stars": 0,
+      "updated_or_year": "2026",
+      "paper_path": "",
+      "zenodo_url": ""
     }
   ],
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 209 works.",
+      "claim": "The curated bibliography contains 211 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-22T20:39:33+00:00",
+      "checked_at": "2026-08-28T17:24:56+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9269,14 +9323,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 192 per-paper documentation folders.",
+      "claim": "The repository contains 194 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-22T20:39:33+00:00",
+      "checked_at": "2026-08-28T17:24:56+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9284,13 +9338,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 347 public repositories.",
+      "claim": "The docxology GitHub profile has 202 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-07-21.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
-      "checked_at": "2026-07-21T20:21:13.983218+00:00",
+      "checked_at": "2026-08-26T20:38:56.057530+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -9298,61 +9352,65 @@
     },
     {
       "id": "aii-github-public-repos",
-      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 40 public repositories.",
+      "claim": "The ActiveInferenceInstitute GitHub account (a User account, not an Organization) has 43 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-07-21.json"
+        "reports/public_source_snapshot_2026-08-26.json"
       ],
-      "checked_at": "2026-07-21T20:21:13.983218+00:00",
+      "checked_at": "2026-08-26T20:38:56.057530+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 41 AII repositories with docxology contributions."
+      "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 39 AII repositories with docxology contributions."
     },
     {
       "id": "orcid-canonical-identifier",
-      "claim": "ORCID 0000-0001-6232-9096 is the canonical researcher identifier. The canonical Google Scholar profile is DXjPFtYAAAAJ; a secondary Scholar profile (Y2bMf3MAAAAJ) is linked from ORCID and should be consolidated/disambiguated.",
+      "claim": "ORCID 0000-0001-6232-9096 identifies Daniel Ari Friedman. It publicly links the secondary Google Scholar profile Y2bMf3MAAAAJ; DXjPFtYAAAAJ is the canonical metrics profile under this repository's direct-authenticated Scholar policy.",
       "status": "public-identifier",
       "sources": [
         "https://orcid.org/0000-0001-6232-9096",
-        "https://pub.orcid.org/v3.0/0000-0001-6232-9096/works"
+        "https://pub.orcid.org/v3.0/0000-0001-6232-9096/person",
+        "data/scholar-snapshot.json",
+        "data/scholar-verification-receipt.json"
       ],
-      "checked_at": "2026-05-16",
+      "checked_at": "2026-08-26",
       "confidence": "high",
-      "verification_method": "ORCID profile and public works endpoint. ORCID also exposes a secondary Google Scholar ID (Y2bMf3MAAAAJ) distinct from the canonical DXjPFtYAAAAJ used for all public metrics.",
+      "verification_method": "ORCID's public person record confirms the identifier and secondary Scholar link. The canonical metrics-profile decision is bounded by the direct authenticated Scholar receipt, not inferred from ORCID.",
       "maintenance_owner": "ARCHIVIST",
-      "caveat": "Use DXjPFtYAAAAJ as the single canonical Scholar profile for metrics. ORCID public work groups may lag new deposits and may group versions differently."
+      "caveat": "ORCID does not itself designate a canonical Scholar profile. Keep all public metrics tied to DXjPFtYAAAAJ only when the direct authenticated receipt remains valid."
     },
     {
       "id": "curio-cards-early-ethereum-art",
-      "claim": "Curio Cards 24, 25, and 26 are early Ethereum art NFTs minted on May 9, 2017; a complete Curio Cards set later sold at Christie's 'Post-War to Present' (New York, Oct 1, 2021) for 393 ETH (~$1.2M), seven artists.",
+      "claim": "Daniel Friedman created Curio Cards 24, 25, and 26, part of a collection that debuted on Ethereum on May 9, 2017; all original cards were minted in 2017. A full set of 30 cards plus 17b, representing seven artists, sold at Christie's New York in September 2021 for 393 ETH ($1,202,108).",
       "status": "public-profile",
       "sources": [
         "https://curio.cards/artist/danielfriedman/",
         "https://docs.curio.cards/the-artists/daniel-friedman",
-        "https://en.wikipedia.org/wiki/Curio_Cards",
+        "https://docs.curio.cards/",
+        "https://docs.curio.cards/faqs",
         "https://www.christies.com/en/lot/lot-6337619",
+        "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
         "papers/2024_CurioCards/README.md"
       ],
-      "checked_at": "2026-05-16",
+      "checked_at": "2026-08-26",
       "confidence": "high",
-      "verification_method": "Artist attribution and mint date confirmed via Curio Cards official docs and Wikipedia; the Christie's sale (date, 393 ETH/~$1.2M, seven artists) is independently corroborated. The specific Christie's lot URL (6337619) resolves and its first-party page matches the exact Curio set, but the lot number itself is not corroborated by any source independent of Christie's.",
+      "verification_method": "Curio's official artist and project documentation confirms the card attribution, collection debut, and 2017 minting window. Christie's first-party material confirms the New York sale amount, artist count, and September 2021 date; the lot page identifies the specific Curio set.",
       "maintenance_owner": "RESEARCHER",
-      "caveat": "Present the sale facts as independently verified; present the specific Christie's lot number as a first-party (Christie's) reference only, not independently corroborated. Avoid unqualified 'first/earliest NFT' superlatives."
+      "caveat": "Do not claim that cards 24-26 were individually minted on May 9: the collection debuted then and its cards were released in groups during 2017. Avoid unqualified first/earliest-NFT superlatives and treat the exact Christie's lot number as first-party metadata."
     },
     {
       "id": "google-scholar-citations",
-      "claim": "Google Scholar metrics are recorded as a dated snapshot: 777 citations, h-index 15, i10-index 17 (as of 2026-06-09).",
+      "claim": "Google Scholar metrics are recorded as a dated snapshot: 815 citations, h-index 14, i10-index 16 (as of 2026-08-26).",
       "status": "dated-snapshot",
       "sources": [
         "https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en",
         "data/scholar-snapshot.json",
         "pages/VERIFICATION_LOG.md"
       ],
-      "checked_at": "2026-06-09",
+      "checked_at": "2026-08-26",
       "confidence": "high",
-      "verification_method": "Direct logged-in browser-session fetch of the canonical profile on 2026-06-09 (non-cached, non-anonymous): All-time 777 citations, h-index 15, i10-index 17 (Since-2021: 544 / 14 / 15).",
+      "verification_method": "Direct authenticated Chrome browser-session fetch of the canonical profile on 2026-08-26 (non-cached, non-anonymous; profile-owner controls visible): All-time 815 citations, h-index 14, i10-index 16 (Since-2021: 586 / 14 / 14).",
       "maintenance_owner": "ARCHIVIST",
       "caveat": "Single source of truth: data/scholar-snapshot.json. Update only from a direct (non-cached) Scholar fetch, recording the new value, as_of date, and method there; regenerate surfaces via code/orchestrators/sync_scholar_metrics.py. Never publish a citation number above the most recent direct-fetch value."
     },
@@ -9361,119 +9419,125 @@
       "claim": "Daniel Ari Friedman earned a PhD at Stanford University with dissertation record pb813wm1484.",
       "status": "public-institutional-record",
       "sources": [
-        "http://purl.stanford.edu/pb813wm1484",
+        "https://purl.stanford.edu/pb813wm1484",
+        "https://purl.stanford.edu/pb813wm1484.mods",
         "papers/2019_PhDDissertation/README.md",
         "pages/PROFILE.md"
       ],
-      "checked_at": "2026-05-15",
+      "checked_at": "2026-08-26",
       "confidence": "high",
-      "verification_method": "Stanford PURL dissertation record and local paper folder.",
+      "verification_method": "Stanford's MODS dissertation record names Daniel Ari Friedman, Stanford Biology, a 2019 PhD thesis, and Deborah M. Gordon as degree supervisor.",
       "maintenance_owner": "RESEARCHER",
       "caveat": "Use the Stanford PURL as the public institutional source."
     },
     {
       "id": "nsf-postdoc-affiliation",
-      "claim": "Daniel Ari Friedman held an NSF Postdoctoral Research Fellowship in Biology (award DBI-2010290) co-trained at UC Davis; NSF budget period 2020-2022 with a no-cost extension to 2023.",
+      "claim": "Daniel Ari Friedman held NSF Postdoctoral Fellowship in Biology award DBI-2010290 from 2020-10-01 through 2023-09-30, conducted at UC Davis and co-trained by Brian Johnson and Tim Linksvayer.",
       "status": "public-grant-record",
       "sources": [
+        "https://api.nsf.gov/services/v1/awards/2010290.json",
         "https://grantome.com/grant/NSF/DBI-2010290",
         "pages/PROFILE.md",
         "README.md"
       ],
-      "checked_at": "2026-05-16",
+      "checked_at": "2026-08-26",
       "confidence": "high",
-      "verification_method": "NSF award DBI-2010290 confirmed via Grantome (NSF PRFB, FY2020, $138,000, Davis CA). The 2020-2022 budget period is on the NSF record; the extension to 2023 aligns with the ORCID UC Davis employment span but is not itself on the funding record.",
+      "verification_method": "NSF's award API names PI Daniel A. Friedman, UC Davis performance location, the named co-training arrangement, and the 2020-10-01 to 2023-09-30 award dates.",
       "maintenance_owner": "RESEARCHER",
-      "caveat": "Cite the NSF award ID (DBI-2010290) as the authoritative public record. The funding record shows 2020-2022; present 2023 as a no-cost-extension affiliation, not a funded period."
+      "caveat": "Cite the NSF award ID and its official start/expiration dates. Do not infer a separate 2020-2022 budget period or a no-cost extension from this record."
     },
     {
       "id": "aii-officer-roles",
-      "claim": "Active Inference Institute officers: Daniel Friedman is President and Treasurer; Alexandra Mikhailova is Vice-President and Secretary (2025-ongoing). V. Bleu Knight was Secretary 2022-2024 and is a current member of the Board of Directors. The Institute is a 501(c)(3) public charity, EIN 88-2985125, IRS ruling March 2024.",
+      "claim": "Active Inference Institute officers: Daniel Friedman is President and Treasurer, and Alexandra Mikhailova is Vice President and Secretary. Virginia Bleu Knight is a current Board member. The Institute is a 501(c)(3) public charity, EIN 88-2985125, with an IRS ruling in March 2024.",
       "status": "public-profile",
       "sources": [
-        "https://www.activeinference.institute/officers",
+        "https://activeinference.institute/structure/officers/",
+        "https://activeinference.institute/structure/board-of-directors/",
         "https://projects.propublica.org/nonprofits/organizations/882985125",
         "pages/DISCOVERY.md",
         "pages/PROFILE.md"
       ],
-      "checked_at": "2026-05-16",
+      "checked_at": "2026-08-26",
       "confidence": "high",
-      "verification_method": "AII officers page; 501(c)(3) status and EIN independently confirmed via ProPublica Nonprofit Explorer (IRS data, ruling March 2024).",
+      "verification_method": "Current AII officer and board pages establish the roles and board membership; ProPublica's IRS-derived record corroborates the 501(c)(3) status, EIN, and ruling month.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "Officer roles are time-sensitive. Do not conflate Mikhailova (current VP+Secretary) with Knight (former Secretary 2022-2024, current Board member)."
+      "caveat": "Officer and board roles are time-sensitive. The refreshed sources do not re-establish historical office dates for Knight; keep any such history separately dated."
     },
     {
       "id": "aii-board-count",
-      "claim": "The Active Inference Institute board page lists 10 current directors.",
+      "claim": "The Active Inference Institute board page lists 11 current members.",
       "status": "public-profile",
       "sources": [
-        "https://www.activeinference.institute/board-of-directors",
+        "https://activeinference.institute/structure/board-of-directors/",
         "pages/LINKS.md",
         "pages/WIKIPEDIA.md"
       ],
-      "checked_at": "2026-05-15",
+      "checked_at": "2026-08-26",
       "confidence": "high",
-      "verification_method": "AII board page and local governance notes.",
+      "verification_method": "Current AII board page.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "Board membership is time-sensitive; retain access dates in narrative pages."
     },
     {
       "id": "aii-scientific-advisory-board-count",
-      "claim": "The Active Inference Institute site lists a 33-member Scientific Advisory Board cohort for 2026.",
+      "claim": "The Active Inference Institute site lists 32 current Scientific Advisory Board members.",
       "status": "public-profile",
       "sources": [
-        "https://www.activeinference.institute/scientific-advisory-board",
+        "https://activeinference.institute/structure/scientific-advisory-board/",
         "pages/LINKS.md",
         "pages/DISCOVERY.md"
       ],
-      "checked_at": "2026-05-16",
+      "checked_at": "2026-08-26",
       "confidence": "medium",
-      "verification_method": "AII SAB page lists the 2026 cohort (33 members). The member count is corroborated; no specific announcement date (e.g. a January 2026 announcement) is independently verified.",
+      "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 31 link to a public page.",
       "maintenance_owner": "INTEGRATOR",
-      "caveat": "State the cohort as 'listed for 2026' (33 members). Do not assert a specific announcement month unless the source page states one."
+      "caveat": "State this as the current public membership count, not a cohort announcement or a claim about any specific announcement month."
     },
     {
       "id": "aii-textbook-cohorts",
-      "claim": "AII Textbook Group copy references 10 cohorts through 2026.",
+      "claim": "AII's Textbook Group reports nine completed 2022-textbook cohorts and a first 2026 Fundamentals cohort currently live.",
       "status": "curated-program-copy",
       "sources": [
-        "https://www.activeinference.institute/textbook-group",
+        "https://activeinference.institute/projects/textbook-group/",
         "README.md",
         "pages/VIDEOS.md"
       ],
-      "checked_at": "2026-05-15",
+      "checked_at": "2026-08-26",
       "confidence": "medium",
-      "verification_method": "Curated site copy and AII program page.",
+      "verification_method": "Current AII Textbook Group page states nine cohorts on the 2022 textbook and a live first 2026 Fundamentals cohort.",
       "maintenance_owner": "EDUCATOR",
-      "caveat": "Program pages may use different public summary counts; keep local copy aligned with preferred site wording."
+      "caveat": "The total is ten cohorts only when the current live 2026 cohort is included; do not describe all ten as completed."
     },
     {
       "id": "college-of-the-redwoods-teaching",
-      "claim": "Homepage teaching copy lists BIOL-1 at Pelican Bay and BIOL-8 Human Biology for Spring 2026.",
-      "status": "curated-profile",
+      "claim": "Profile teaching copy lists BIOL-1 at Pelican Bay for Spring and Fall 2026 and BIOL-8 Human Biology for Spring 2026.",
+      "status": "principal-confirmed",
       "sources": [
         "README.md",
         "index.html",
-        "pages/PROFILE.md"
+        "pages/PROFILE.md",
+        "pages/VERIFICATION_LOG.md"
       ],
-      "checked_at": "2026-05-15",
+      "checked_at": "2026-08-26",
       "confidence": "medium",
-      "verification_method": "Curated homepage and profile synchronization.",
+      "verification_method": "Principal-confirmed instructor-of-record update supplied 2026-08-26 and synchronized across profile source surfaces.",
       "maintenance_owner": "EDUCATOR",
-      "caveat": "Term-specific teaching claims should be updated after each semester."
+      "caveat": "Fall 2026 BIOL-1 is principal-confirmed, not represented as a public-schedule verification. The update makes no claim about BIOL-8 after Spring 2026."
     },
     {
       "id": "cogsec-role",
       "claim": "COGSEC.org is the cognitive security publication and research context linked from the profile.",
       "status": "public-site",
       "sources": [
-        "https://cogsec.org",
+        "https://www.cogsec.org/r-d-initiatives-3",
+        "https://www.cogsec.org/2021-research-initiative-brief-nim-8",
+        "https://pubmed.ncbi.nlm.nih.gov/38735269/",
         "README.md",
         "pages/PROFILE.md"
       ],
-      "checked_at": "2026-05-15",
+      "checked_at": "2026-08-26",
       "confidence": "medium",
-      "verification_method": "Public site link and curated profile copy.",
+      "verification_method": "COGSEC's public R&D initiative pages describe research-output activity; PubMed record PMID 38735269 identifies the Cognitive Security & Education Forum affiliation.",
       "maintenance_owner": "RESEARCHER",
       "caveat": "Prefer COGSEC pages for COGSEC-specific publication claims."
     }

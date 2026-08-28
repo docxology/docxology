@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ DigitalTwins
 
 **Daniel A. Friedman** (2024) · *Zenodo*

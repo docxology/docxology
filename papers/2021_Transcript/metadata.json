@@ -1,8 +1,8 @@
 {
   "title": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
   "version": "v2.0",
-  "doi": "10.5281/zenodo.5797072",
-  "doi_url": "https://doi.org/10.5281/zenodo.5797072",
+  "doi": "10.5281/zenodo.5797040",
+  "doi_url": "https://doi.org/10.5281/zenodo.5797040",
   "zenodo_record": "https://zenodo.org/records/5797072",
   "record_id": "5797072",
   "publication_date": "2021-12-21",
@@ -102,5 +102,7 @@
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.5797072",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.5797072"
 }

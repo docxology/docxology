@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "HoneyBeeEvolution"
 description: "A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly..."
 tags: ["honey-bees", "apis-mellifera", "rna-seq", "taxonomically-restricted-genes", "novel-traits", "gene-expression", "evolutionary-biology", "royal-jelly", "beeswax", "venom"]
 domain: "Genetics & Biomedical"
 citation: "Daniel A. Friedman, Brian R. Johnson (2015). *HoneyBeeEvolution*. Genetics & Biomedical."
+doi: "10.1093/molbev/msu292"
 ---
 
 # HoneyBeeEvolution
@@ -39,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.1093/molbev/msu292
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -54,6 +56,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.1093/molbev/msu292`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

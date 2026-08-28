@@ -1,8 +1,10 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism"
 
 **Megan A. K. Peters, Nora Bradford, Daniel Friedman** (2023) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8229512-blue)](https://doi.org/10.5281/zenodo.8229512)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8228934-blue)](https://doi.org/10.5281/zenodo.8228934)
 
 ---
 
@@ -26,14 +28,15 @@
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.8229512](https://doi.org/10.5281/zenodo.8229512)
+- DOI: [10.5281/zenodo.8228934](https://doi.org/10.5281/zenodo.8228934)
+- Artifact DOI: [10.5281/zenodo.8229512](https://doi.org/10.5281/zenodo.8229512)
 - Zenodo record: [https://zenodo.org/records/8229512](https://zenodo.org/records/8229512)
 - PDF: [GuestStream_049-1_transcript.pdf](GuestStream_049-1_transcript.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/8229512)
 
 ## Citation
 
-> Megan A. K. Peters, Nora Bradford, Daniel Friedman (2023). *Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism"*. Zenodo. DOI: 10.5281/zenodo.8229512. URL: https://doi.org/10.5281/zenodo.8229512.
+> Megan A. K. Peters, Nora Bradford, Daniel Friedman (2023). *Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism"*. Zenodo. DOI: 10.5281/zenodo.8228934. URL: https://doi.org/10.5281/zenodo.8228934.
 
 ## Related
 

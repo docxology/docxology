@@ -3,9 +3,18 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "GuidedTourMinds"
 date-released: 2023
+doi: 10.1016/j.plrev.2023.11.001
+url: "https://doi.org/10.1016/j.plrev.2023.11.001"
 authors:
   - family-names: Rahmjoo
     given-names: Ali
   - family-names: Friedman
     given-names: Daniel Ari
     orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: "10.1016/j.plrev.2023.11.001"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1016/j.plrev.2023.11.001"
+    description: "Canonical citation DOI resolver"

@@ -1,0 +1,459 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-19T23:00:01Z",
+  "source": "data/works.json",
+  "summary": {
+    "no_paper_folder": 17,
+    "no_full_text": 20,
+    "no_doi": 15,
+    "no_canonical_url": 2,
+    "non_paper_record": 21
+  },
+  "exceptions": [
+    {
+      "num": 2,
+      "citation_key": "Friedman2026ActiveInferenceJournal500002",
+      "title": "Active Inference Journal — 500+ videos on Active Inference with transcripts",
+      "type": "Series",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text",
+        "no_doi",
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 6,
+      "citation_key": "Friedman2026PersonalYouTube200Livestreams006",
+      "title": "Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions",
+      "type": "Series",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text",
+        "no_doi",
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 8,
+      "citation_key": "Friedman20255thAppliedActiveInference008",
+      "title": "5th Applied Active Inference Symposium — Abstract Book",
+      "type": "Presentation",
+      "reasons": [
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 22,
+      "citation_key": "Friedman2025SystemsProcessesActiveInference022",
+      "title": "Systems Processes, Active Inference, and Beyond",
+      "type": "Presentation",
+      "reasons": [
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 28,
+      "citation_key": "Friedman2025TowardsScienceConsciousnessSocial028",
+      "title": "Towards a Science of Consciousness and Social Complexity... For Ants",
+      "type": "Paper",
+      "reasons": [
+        "no_doi"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 30,
+      "citation_key": "Friedman2024BioFirmDevelopmentAtApplied030",
+      "title": "BioFirm Development at Applied Active Inference Symposium 2024",
+      "type": "Presentation",
+      "reasons": [
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 38,
+      "citation_key": "Friedman2024MathArtStream8William038",
+      "title": "MathArt Stream #8: William Blake and Active Inference",
+      "type": "Presentation",
+      "reasons": [
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 39,
+      "citation_key": "Friedman2024SensemakingFederationExploringFrontiers039",
+      "title": "Sensemaking Federation: Exploring the Frontiers of Digital Innovation",
+      "type": "Presentation",
+      "reasons": [
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 43,
+      "citation_key": "Friedman2024WhyPaleolithicRockstarsWere043",
+      "title": "Why Paleolithic Rockstars were both enigmatic and sporadic",
+      "type": "Paper",
+      "reasons": [
+        "no_full_text"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 44,
+      "citation_key": "Friedman2024WritingCurioCardsNFT044",
+      "title": "Writing on Curio Cards for the \"On NFT\" book",
+      "type": "Paper",
+      "reasons": [
+        "no_doi"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 58,
+      "citation_key": "Friedman2023AntsAging058",
+      "title": "Of Ants & Aging",
+      "type": "Presentation",
+      "reasons": [
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 60,
+      "citation_key": "Friedman2023PostdocReview20202023060",
+      "title": "Postdoc review (2020–2023)",
+      "type": "Presentation",
+      "reasons": [
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 64,
+      "citation_key": "Friedman2023TranscriptChrisFieldsPhysics064",
+      "title": "Transcript of Chris Fields, \"Physics as Information Processing\" course",
+      "type": "Course",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text",
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 71,
+      "citation_key": "Friedman2022StructuringInformationCommonsOpen071",
+      "title": "Structuring the Information Commons: Open Standards and Cognitive Security",
+      "type": "Book",
+      "reasons": [
+        "no_doi",
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 78,
+      "citation_key": "Friedman2021InnovatorSDigitalPlaybook078",
+      "title": "Innovator's Digital Playbook",
+      "type": "Playbook",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text",
+        "no_doi",
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 79,
+      "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
+      "title": "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier",
+      "type": "Book",
+      "reasons": [
+        "no_doi",
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 81,
+      "citation_key": "Friedman2021FacilitatorSCatechismPlaybook081",
+      "title": "The Facilitator's Catechism Playbook",
+      "type": "Playbook",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text",
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 83,
+      "citation_key": "Friedman2020CommunicationRemoteTeams083",
+      "title": "Communication for Remote Teams",
+      "type": "Course",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text",
+        "no_doi",
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 87,
+      "citation_key": "Friedman2020HowUseKeybaseRemote087",
+      "title": "How to use Keybase for remote teams",
+      "type": "Course",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text",
+        "no_doi",
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 89,
+      "citation_key": "Friedman2020GreatPresetRemoteTeams089",
+      "title": "The Great Preset: Remote Teams and Operational Art",
+      "type": "Book",
+      "reasons": [
+        "no_doi",
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 93,
+      "citation_key": "Friedman2019PhDBehavioralPhysiologicalTranscriptomic093",
+      "title": "PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",
+      "type": "Paper",
+      "reasons": [
+        "no_doi"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 97,
+      "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
+      "title": "MVEE: A Framework for Evolutionary Studies",
+      "type": "Presentation",
+      "reasons": [
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 111,
+      "citation_key": "Friedman2026DynamicAttentionalAgentsFocused111",
+      "title": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
+      "type": "Paper",
+      "reasons": [
+        "no_full_text"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 117,
+      "citation_key": "Friedman2026IntroductionBiologyGenerativeApproach117",
+      "title": "Introduction to Biology: A Generative Approach",
+      "type": "Book",
+      "reasons": [
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 128,
+      "citation_key": "Friedman2025BiofirmDevelopmentFirstPrinciples128",
+      "title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
+      "type": "Presentation",
+      "reasons": [
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 154,
+      "citation_key": "Friedman2026TemplateTextbook154",
+      "title": "The Template Textbook",
+      "type": "Book",
+      "reasons": [
+        "non_paper_record"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 155,
+      "citation_key": "Friedman2016LessonsFromColony155",
+      "title": "Lessons from the colony",
+      "type": "Paper",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text",
+        "no_doi"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 156,
+      "citation_key": "Friedman2016FullSpeedAheadCity156",
+      "title": "Full speed ahead to the City on the Hill",
+      "type": "Paper",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 157,
+      "citation_key": "Friedman2021Disinforge157",
+      "title": "Disinforge",
+      "type": "Paper",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text",
+        "no_doi"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 158,
+      "citation_key": "Friedman2021DefiningEvents2020Hindsight158",
+      "title": "Defining events: 2020 in hindsight",
+      "type": "Paper",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text"
+      ],
+      "review_status": "legitimate_gap",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 159,
+      "citation_key": "Friedman2022ActiveBlockferenceCadCADActive159",
+      "title": "Active Blockference: cadCAD with Active Inference for Cognitive Systems Modeling",
+      "type": "Paper",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 160,
+      "citation_key": "Friedman2024FromNeuronalPacketsThoughtseeds160",
+      "title": "From Neuronal Packets to Thoughtseeds: A Hierarchical Model of Embodied Cognition in the Global Workspace",
+      "type": "Paper",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 161,
+      "citation_key": "Friedman2021KnowledgeManagementArchipelago161",
+      "title": "Knowledge Management Archipelago",
+      "type": "Paper",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 162,
+      "citation_key": "Friedman2024CommentsSubmittedByBlockScience162",
+      "title": "Comments Submitted by BlockScience, UW APL IRSIRI, and the Cognitive Security and Education Forum",
+      "type": "Paper",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 163,
+      "citation_key": "Friedman2017OsteopathyVariableVariabilityHealth163",
+      "title": "Osteopathy and the Variable Variability of Health",
+      "type": "Paper",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text",
+        "no_doi",
+        "no_canonical_url"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 164,
+      "citation_key": "Friedman2016CellsMechanobiologyOsteopathy164",
+      "title": "Cells, Mechanobiology, and Osteopathy",
+      "type": "Paper",
+      "reasons": [
+        "no_paper_folder",
+        "no_full_text",
+        "no_doi",
+        "no_canonical_url"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 168,
+      "citation_key": "Friedman2026GeneralizedNotationNotationGNN168",
+      "title": "GeneralizedNotationNotation (GNN)",
+      "type": "Paper",
+      "reasons": [
+        "no_full_text"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    }
+  ]
+}

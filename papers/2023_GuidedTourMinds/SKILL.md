@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "GuidedTourMinds"
 description: "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argue..."
 tags: ["path-integrals", "particular-kinds", "mindspace", "active-inference", "free-energy-principle", "consciousness", "sloman", "non-anthropocentric", "sentience-taxonomy"]
 domain: "Active Inference"
 citation: "Ali Rahmjoo, Daniel Ari Friedman (2023). *GuidedTourMinds*. Active Inference."
+doi: "10.1016/j.plrev.2023.11.001"
 ---
 
 # GuidedTourMinds
@@ -37,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.1016/j.plrev.2023.11.001
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -52,6 +54,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.1016/j.plrev.2023.11.001`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

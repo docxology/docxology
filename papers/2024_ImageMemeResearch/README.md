@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ ImageMemeResearch
 
 **Daniel A. Friedman, R.J. Cordes, Mridula Mascarenhas** (2024) · *JASIST*

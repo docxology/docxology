@@ -1,8 +1,10 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ Tracking Public Sensemaking through Rhetorical Annotation of Image Memes
 
 **Mridula Mascarenhas, RJ Cordes, Bleu Knight, Sarah Murphy, Daniel A. Friedman** (2022) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.6904427-blue)](https://doi.org/10.5281/zenodo.6904427)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.6904426-blue)](https://doi.org/10.5281/zenodo.6904426)
 
 ---
 
@@ -26,14 +28,15 @@
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.6904427](https://doi.org/10.5281/zenodo.6904427)
+- DOI: [10.5281/zenodo.6904426](https://doi.org/10.5281/zenodo.6904426)
+- Artifact DOI: [10.5281/zenodo.6904427](https://doi.org/10.5281/zenodo.6904427)
 - Zenodo record: [https://zenodo.org/records/6904427](https://zenodo.org/records/6904427)
 - PDF: [ECOMEME2-v1.0.pdf](ECOMEME2-v1.0.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/6904427)
 
 ## Citation
 
-> Mridula Mascarenhas, RJ Cordes, Bleu Knight, Sarah Murphy, Daniel A. Friedman (2022). *Tracking Public Sensemaking through Rhetorical Annotation of Image Memes*. Zenodo. DOI: 10.5281/zenodo.6904427. URL: https://doi.org/10.5281/zenodo.6904427.
+> Mridula Mascarenhas, RJ Cordes, Bleu Knight, Sarah Murphy, Daniel A. Friedman (2022). *Tracking Public Sensemaking through Rhetorical Annotation of Image Memes*. Zenodo. DOI: 10.5281/zenodo.6904426. URL: https://doi.org/10.5281/zenodo.6904426.
 
 ## Related
 

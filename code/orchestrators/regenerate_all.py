@@ -45,62 +45,15 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
-# Local, dependency-ordered write chain. Each tuple is (script, args).
-# The final build_generated_manifest is intentionally last (it hashes every other output).
+from generation_plan import LOCAL_GENERATION_STEPS, validate_generation_plan  # noqa: E402
+
+# Compatibility projection for scripts/tests that consume the historical
+# ``(script, args)`` shape. The authoritative write/check pairing is declared
+# once in ``code/src/generation_plan.py``.
 CHAIN: list[tuple[str, list[str]]] = [
-    ("export_bibliography.py", []),              # works.json + bib/csl/ris  <- pages/BIBLIOGRAPHY.md
-    ("sync_publications_html.py", ["--apply"]),  # publications.html + -ld   <- works.json
-    ("sync_software_html.py", ["--apply"]),      # software.html + -ld       <- pages/SOFTWARE.md
-    ("build_current_counts.py", []),             # current-counts.{json,md}  <- works + software
-    ("build_coverage_exceptions.py", []),        # explicit source coverage queue <- works.json
-    ("classify_repositories.py", []),            # repository review queue <- GitHub inventory
-    ("sync_scholar_metrics.py", []),             # dated Scholar snapshot -> hand-authored surfaces
-    ("generate_og_images.py", []),               # og-*.jpg + counts sidecar <- current-counts.json
-    ("export_agent_data.py", []),                # claims/people/orgs        <- counts
-    ("build_resume.py", ["--all"]),              # resume.{json,txt,pdf}     <- claims + counts
-    ("build_domain_pages.py", []),
-    ("generate_pillar_pages.py", []),
-    ("build_work_pages.py", []),
-    ("build_video_pages.py", []),
-    ("sync_site_facts.py", []),                  # finalize volatile facts after video/art data generation
-    ("prune_old_reports.py", ["--apply"]),       # drop superseded QA screenshot sets — MUST follow sync_site_facts
-                                                 # (which repoints discovery/llms refs to the latest set, so older
-                                                 # sets are now unreferenced) and precede build_pages_artifact so the
-                                                 # manifest reflects the trimmed tree
-    ("build_paper_pages.py", []),
-    ("deploy_seo_security.py", []),         # CSP/referrer/agent metadata on public HTML
-    ("build_exports_page.py", []),
-    ("build_updates_page.py", []),
-    ("build_evidence_page.py", []),              # evidence.html + EVIDENCE.md <- claims.json
-    ("build_reproducibility_ledger.py", []),    # reproducibility.{json,html} + REPRODUCIBILITY.md <- works.json + software.json
-    ("ensure_agent_navigation.py", []),    # visible manifest link on bespoke entry pages
-    ("build_reconciliation_report.py", []),      # writes reports/reconciliation_*.md
-    ("audit_assets.py", []),                     # writes reports/asset_size_*.json
-    ("accessibility_audit.py", []),              # writes reports/accessibility_static_*.json
-    # Indexes below link the *latest* dated reports, so they must run AFTER the report
-    # producers above. (validate_repo's --check order differs because --check never
-    # writes a new dated report; in write mode the order matters.)
-    ("build_catalog.py", []),                    # links latest asset_size/a11y/reconciliation reports
-    # The catalog is itself in the public HTML asset budget. Re-run the two
-    # report producers after it is rendered so adding a dataset cannot leave
-    # the checked-in reports one dependency step behind.
-    ("audit_assets.py", []),
-    ("accessibility_audit.py", []),
-    # Discovery/llms cite the latest asset_size and accessibility_static reports.
-    # Re-run after the second audit pass so validate_repo's sync_site_facts --check
-    # does not see a one-step-behind pointer when those reports are newly dated.
-    ("sync_site_facts.py", []),
-    ("build_search_index.py", []),               # links latest reports + indexes pages
-    ("generate_feed.py", []),
-    ("build_sitemap.py", []),                    # see caveat: regenerate again post-commit
-    ("build_artwork_index.py", []),              # compact gallery grid index <- data/artworks.json
-    ("build_image_sitemap.py", []),               # sitemap-images.xml       <- data/artworks.json
-    ("build_pages_artifact.py", ["--write-manifest", "--check-size-only"]),
-    ("build_generated_manifest.py", []),         # establish the final dated-report command matrix
-    ("build_agent_index.py", []),                # route/schema map <- reports + Pages + generated manifest
-    ("build_release_integrity.py", []),
-    ("build_generated_manifest.py", []),         # LAST — include the release envelope in the matrix
+    (step.script, list(step.write_args)) for step in LOCAL_GENERATION_STEPS
 ]
 
 
@@ -123,6 +76,7 @@ def main() -> int:
     parser.add_argument("--list", action="store_true", dest="list_only",
                         help="print the ordered plan and exit without running anything")
     args = parser.parse_args()
+    validate_generation_plan()
 
     if args.list_only:
         for i, (script, extra) in enumerate(CHAIN, 1):

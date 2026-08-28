@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "EhrlichialInfection"
 description: "Hypothesis linking Ehrlichia/Anaplasma intracellular parasitic bacteria to leukemia and immune disorders, with clinical evidence for Rifampin treatment"
 tags: ["ehrlichia", "anaplasma", "leukemia", "intracellular-parasites", "apoptosis-suppression", "rifampin", "hematological-malignancy"]
 domain: "Genetics & Biomedical"
 citation: "Charles A. Kallick, Daniel A. Friedman & Mramba B.A. Nyindo (2015). *EhrlichialInfection*. Genetics & Biomedical."
+doi: "10.1016/j.mehy.2015.09.015"
 ---
 
 # EhrlichialInfection
@@ -37,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.1016/j.mehy.2015.09.015
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -52,6 +54,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.1016/j.mehy.2015.09.015`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

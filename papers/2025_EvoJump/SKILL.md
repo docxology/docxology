@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "EvoJump"
 description: "EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity. The work..."
 tags: ["evolutionary-transitions", "evojump", "active-inference", "major-transitions", "phenotypic-complexity", "free-energy-principle"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.17229924
+- Canonical DOI: 10.5281/zenodo.17229924
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:48Z

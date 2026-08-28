@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "The Facilitator's Catechism"
 description: "Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and civilian teams."
 tags: ["opord", "operations-orders", "sensemaking", "high-reliability-organizations", "complexity", "active-inference"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.4062540
+- Canonical DOI: 10.5281/zenodo.4062540
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:44Z

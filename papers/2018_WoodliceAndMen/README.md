@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 WoodliceAndMen
 
 **Karl Friston, Martin Fortier, Daniel A. Friedman** (2018) · *ALIUS Bulletin*

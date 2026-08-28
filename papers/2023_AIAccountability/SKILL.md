@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "AIAccountability"
 description: "Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No. NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Int..."
 tags: ["ai-accountability", "ntia", "policy-comment", "cognitive-security", "p3if", "information-risk", "ai-governance", "synthetic-intelligence"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.8025956
+- Canonical DOI: 10.5281/zenodo.8025956
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:03Z

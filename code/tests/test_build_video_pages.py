@@ -3,12 +3,16 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+import pytest
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
 sys.path.insert(0, str(ORCH_DIR))
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 import build_video_pages  # noqa: E402
 from fetch_video_transcripts import transcript_from_vtt  # noqa: E402
+from generated_outputs import UnsafeGeneratedOutputPathError  # noqa: E402
 
 
 def sample_video() -> dict:
@@ -92,7 +96,100 @@ def test_timeline_runtime_uses_compact_index_not_raw_channel_exports():
     assert "code/data/youtube_institute.json" not in runtime
 
 
-def test_render_video_page_uses_local_page_and_youtube_embed(monkeypatch):
+def test_orphan_check_tracks_generator_owned_pages_but_leaves_manual_video_pages_unowned(tmp_path: Path):
+    video_dir = tmp_path / "videos"
+    data_dir = tmp_path / "data"
+    video_dir.mkdir()
+    data_dir.mkdir()
+    expected = {"videos/index.html", "videos/personal-abc123.html"}
+    manifest_path = data_dir / "video-pages-manifest.json"
+    # The manifest intentionally retains a page from a previous source
+    # snapshot. Its contents may have been manually altered, but its ownership
+    # remains generator-derived and therefore must be reported rather than
+    # deleted during a write run.
+    manifest_path.write_text(
+        build_video_pages.render_video_page_manifest(expected | {"videos/institute-retired.html"}),
+        encoding="utf-8",
+    )
+    for relative in expected:
+        (tmp_path / relative).write_text(build_video_pages.VIDEO_PAGE_MARKER, encoding="utf-8")
+    retired = video_dir / "institute-retired.html"
+    retired.write_text("review before removal", encoding="utf-8")
+    marker_orphan = video_dir / "personal-marked-orphan.html"
+    marker_orphan.write_text(build_video_pages.VIDEO_PAGE_MARKER, encoding="utf-8")
+    legacy_orphan = video_dir / "personal-legacy-orphan.html"
+    legacy_orphan.write_text(
+        "\n".join(build_video_pages._LEGACY_VIDEO_FINGERPRINTS), encoding="utf-8"
+    )
+    hand_authored = video_dir / "editorial-note.html"
+    original_hand_authored = "# Hand-authored video notes\n"
+    hand_authored.write_text(original_hand_authored, encoding="utf-8")
+
+    orphans, errors = build_video_pages.generated_video_page_orphans(
+        expected,
+        video_dir=video_dir,
+        manifest_path=manifest_path,
+        repo_root=tmp_path,
+    )
+
+    assert errors == ()
+    assert set(orphans) == {retired, marker_orphan, legacy_orphan}
+    assert hand_authored not in orphans
+    # Detection is strictly observational; cleanup requires an explicit review
+    # and a separate destructive operation.
+    assert retired.read_text(encoding="utf-8") == "review before removal"
+    assert hand_authored.read_text(encoding="utf-8") == original_hand_authored
+
+
+def test_check_mode_reports_an_orphan_without_rewriting_any_video_page(tmp_path: Path):
+    video_dir = tmp_path / "videos"
+    data_dir = tmp_path / "data"
+    video_dir.mkdir()
+    data_dir.mkdir()
+    expected_pages = {"videos/index.html", "videos/personal-abc123.html"}
+    manifest_path = data_dir / "video-pages-manifest.json"
+    rendered = {
+        tmp_path / "videos" / "index.html": build_video_pages.VIDEO_PAGE_MARKER,
+        tmp_path / "videos" / "personal-abc123.html": build_video_pages.VIDEO_PAGE_MARKER,
+        manifest_path: build_video_pages.render_video_page_manifest(expected_pages),
+    }
+    for path, content in rendered.items():
+        path.write_text(content, encoding="utf-8")
+    orphan = video_dir / "institute-retired.html"
+    original = build_video_pages.VIDEO_PAGE_MARKER + "\nretired output\n"
+    orphan.write_text(original, encoding="utf-8")
+
+    stale = build_video_pages.stale_video_outputs(
+        rendered,
+        repo_root=tmp_path,
+        video_dir=video_dir,
+        manifest_path=manifest_path,
+    )
+
+    assert stale == ("orphaned generated video page: videos/institute-retired.html",)
+    assert orphan.read_text(encoding="utf-8") == original
+
+
+def test_video_check_rejects_a_symlinked_generated_output(tmp_path: Path):
+    video_dir = tmp_path / "videos"
+    video_dir.mkdir()
+    outside = tmp_path / "outside.html"
+    outside.write_text("outside must survive\n", encoding="utf-8")
+    target = video_dir / "index.html"
+    target.symlink_to(outside)
+
+    with pytest.raises(UnsafeGeneratedOutputPathError):
+        build_video_pages.stale_video_outputs(
+            {target: build_video_pages.VIDEO_PAGE_MARKER},
+            repo_root=tmp_path,
+            video_dir=video_dir,
+            manifest_path=tmp_path / "data" / "video-pages-manifest.json",
+        )
+
+    assert outside.read_text(encoding="utf-8") == "outside must survive\n"
+
+
+def test_render_video_page_uses_local_page_and_youtube_embed():
     video = sample_video()
     video["topics"] = build_video_pages.infer_topics(video)
     video["related_pages"] = build_video_pages.related_pages(video)
@@ -105,13 +202,81 @@ def test_render_video_page_uses_local_page_and_youtube_embed(monkeypatch):
             "url": "/works/Friedman2026GNN.html",
         }
     ]
-    monkeypatch.setattr(build_video_pages, "read_transcript", lambda _id: ("transcript body", "data/video-transcripts/abc123.txt"))
-    html = build_video_pages.render_video_page(video)
+    html = build_video_pages.render_video_page(video, transcript="transcript body")
     assert 'rel="canonical" href="https://danielarifriedman.com/videos/institute-abc123.html"' in html
     assert "https://www.youtube-nocookie.com/embed/abc123" in html
     assert "Generalized Notation Notation" in html
     assert '"@type": "VideoObject"' in html
     assert "transcript body" in html
+
+
+def test_interactive_page_integrity_flags_missing_stylesheet(tmp_path: Path):
+    """Negative fixture (P0-2): a page loading interactive JS without style.css
+    must be rejected; linking the stylesheet must pass."""
+    bad = tmp_path / "bad.html"
+    bad.write_text(
+        '<html><head><script src="/js/interactive.js?v=1" defer></script>'
+        '<script src="/js/tts-controls.js?v=1" defer></script></head>'
+        "<body></body></html>",
+        encoding="utf-8",
+    )
+    errors = build_video_pages.check_interactive_page_integrity({bad: bad.read_text(encoding="utf-8")}, repo_root=tmp_path)
+    assert errors == ("bad.html: loads interactive JS without linking style.css "
+                      "(TTS panel / shortcuts overlay would render unstyled)",)
+
+    good = tmp_path / "good.html"
+    good.write_text(
+        '<html><head><link rel="stylesheet" href="/style.css?v=1">'
+        '<script src="/js/interactive.js?v=1" defer></script></head>'
+        "<body></body></html>",
+        encoding="utf-8",
+    )
+    assert build_video_pages.check_interactive_page_integrity(
+        {good: good.read_text(encoding="utf-8")}, repo_root=tmp_path
+    ) == ()
+
+    # Pages without interactive JS are out of scope entirely.
+    plain = tmp_path / "plain.html"
+    plain.write_text("<html><head></head><body>static</body></html>", encoding="utf-8")
+    assert build_video_pages.check_interactive_page_integrity(
+        {plain: plain.read_text(encoding="utf-8")}, repo_root=tmp_path
+    ) == ()
+
+
+def test_check_mode_rejects_root_page_missing_stylesheet(tmp_path: Path):
+    """stale_video_outputs must surface the P0-2 violation for a hand-authored
+    root page (art.html/videos.html pattern), not just generator outputs."""
+    video_dir = tmp_path / "videos"
+    video_dir.mkdir()
+    manifest_path = tmp_path / "data" / "video-pages-manifest.json"
+    rendered = {
+        tmp_path / "videos" / "index.html": build_video_pages.VIDEO_PAGE_MARKER,
+        manifest_path: build_video_pages.render_video_page_manifest({"videos/index.html"}),
+    }
+    for path, content in rendered.items():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(content, encoding="utf-8")
+    (tmp_path / "art.html").write_text(
+        '<html><head><script src="/js/tts-controls.js?v=1" defer></script></head></html>',
+        encoding="utf-8",
+    )
+    stale = build_video_pages.stale_video_outputs(
+        rendered,
+        repo_root=tmp_path,
+        video_dir=video_dir,
+        manifest_path=manifest_path,
+    )
+    assert any("art.html" in entry and "style.css" in entry for entry in stale), stale
+
+
+def test_render_index_links_shared_stylesheet():
+    payload = {
+        "videos": [],
+        "counts": {"total": 0, "personal": 0, "institute": 0, "with_transcripts": 0},
+        "channels": {},
+    }
+    html = build_video_pages.render_index(payload)
+    assert 'rel="stylesheet"' in html and "style.css" in html
 
 
 def test_transcript_from_vtt_cleans_timestamps_and_duplicate_partials():

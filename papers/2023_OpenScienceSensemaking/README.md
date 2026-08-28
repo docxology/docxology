@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ OpenScienceSensemaking
 
 **Ronen Tamari, Daniel A. Friedman** (2023) · *MetaArXiv*

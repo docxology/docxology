@@ -73,7 +73,7 @@
     "isPartOf": {
         "@id": "https://danielarifriedman.com/#website"
     },
-    "dateModified": "2026-08-22",
+    "dateModified": "2026-08-28",
     "about": {
         "@type": "DefinedTerm",
         "name": "AII Ecosystem"
@@ -109,29 +109,36 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation">
+    <nav aria-label="Main navigation">
         <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <div class="nav-links">
-            <a href="index.html#about">About</a>
-            <a href="index.html#research">Research</a>
-            <a href="publications.html">Publications</a>
-            <a href="works/">Works</a>
-            <a href="domains.html" class="active">Domains</a>
-            <a href="software.html">Software</a>
-            <a href="videos.html">Videos</a>
-            <a href="art.html">Art</a>
-            <a href="media.html">Media</a>
-            <a href="collaborators.html">Collaborators</a>
-            <a href="resume/resume.html">CV</a>
-            <a href="search.html">Search</a>
-            <a href="catalog.html">Data Catalog</a>
-            <a href="evidence.html">Evidence</a>
-            <a href="reproducibility.html">Reproducibility</a>
-            <a href="cite-verify.html">Cite</a>
-            <a href="discovery.html">Discovery</a>
-            <a href="data/agent-index.json">Agent Map</a>
-        </div>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="works/">Works</a></li>
+            <li><a href="domains.html" class="active" aria-current="page">Domains</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="art.html" class="nav-art-link">Art</a></li>
+            <li>
+                <details class="nav-more">
+                    <summary>More</summary>
+                    <ul class="nav-more-panel">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#research">Research</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="collaborators.html">Collaborators</a></li>
+                    <li><a href="resume/resume.html">CV</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="catalog.html">Data Catalog</a></li>
+                    <li><a href="evidence.html">Evidence</a></li>
+                    <li><a href="reproducibility.html">Reproducibility</a></li>
+                    <li><a href="cite-verify.html">Cite</a></li>
+                    <li><a href="discovery.html">Discovery</a></li>
+                    <li><a href="data/agent-index.json">Agent Map</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
     </nav>
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol><li><a href="index.html">Home</a></li><li><a href="domains.html">Domains</a></li><li aria-current="page">AII Ecosystem</li></ol>
@@ -146,7 +153,7 @@
             <div class="mini-grid">
                 <div class="mini-card"><h2>6 Works</h2><p>Curated works in this domain from the unified bibliography.</p></div>
                 <div class="mini-card"><h2>5 Related Repositories</h2><p>Selected software entries connected to this domain.</p></div>
-                <div class="mini-card"><h2>Full Text &amp; Images</h2><p>5 of 6 works have extracted full text, 5 have image galleries.</p></div>
+                <div class="mini-card"><h2>Full Text &amp; Images</h2><p>5 of 6 works have extracted full text, 3 have image galleries.</p></div>
                 <div class="mini-card"><h2>Collaborator Context</h2><p>Active Inference Institute educators and contributors, Institute program participants</p></div>
             </div>
         </section>
@@ -235,9 +242,9 @@
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/ActiveInferenceInstitute/fep_lean">fep_lean</a></h3>
-                    <p>Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo</p>
+                    <p>Lean 4 / Mathlib4 formalization of FEP-related mathematics — 155-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI</p>
                     <p class="text-muted">Python · ⭐ 3 · Updated 2026</p>
-                    <div class="repo-meta-links"><a href="https://github.com/ActiveInferenceInstitute/fep_lean">GitHub Repo</a> · <a href="papers/2026_FEPLean/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.19699234">Zenodo Release</a></div>
+                    <div class="repo-meta-links"><a href="https://github.com/ActiveInferenceInstitute/fep_lean">GitHub Repo</a> · <a href="papers/2026_FEPLean/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.19699233">Zenodo Release</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/ActiveInferenceInstitute/cognitive">cognitive</a></h3>
@@ -268,7 +275,7 @@
             <div class="mini-card"><ul><li>Discover the organizational mission, governance, and programs on the <a href='https://activeinference.institute/'>Active Inference Institute Official Portal</a>.</li>
 <li>Survey ecosystem development and open research milestones in <a href='works/Friedman2025ActiveInferenceInstituteActive024.html'>The Active Inference Institute &amp; Active Inference Ecosystem (v3, 2025 snapshot)</a>.</li>
 <li>Explore ontology standardization efforts in <a href='works/Friedman2024AligningActiveInferenceOntology029.html'>Aligning Active Inference Ontology to SUMO</a>.</li>
-<li>Participate in community education through the <a href='https://activeinference.institute/education'>Textbook Group Cohorts</a> and <a href='videos.html'>Institute Video Archives</a>.</li>
+<li>Participate in community education through the <a href='https://activeinference.institute/projects/textbook-group/'>Textbook Group Cohorts</a> and <a href='videos.html'>Institute Video Archives</a>.</li>
 <li>Engage with formal mathematical specifications on the <a href='https://github.com/ActiveInferenceInstitute/fep_lean'>fep_lean repository</a>.</li>
 <li>Review verified non-profit records via the <a href='https://projects.propublica.org/nonprofits/organizations/882985125'>ProPublica Nonprofit Explorer (EIN 88-2985125)</a>.</li></ul></div>
         </section>

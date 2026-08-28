@@ -1,4 +1,6 @@
-# 📄 QuantumDreams
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎨 QuantumDreams
 
 **Daniel Ari Friedman, Dean Tickles** (2024) · *Zenodo*
 

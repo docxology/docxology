@@ -6,7 +6,8 @@ screenshots every run (`reports/visual-qa/YYYY-MM-DD/`, `reports/browser-smoke/Y
 and `validate_repo.py` only ever reads the LATEST set via `latest_subdir_file(...)`. The
 older sets are pure history — at ~29 MB per visual-qa set they dominate the repo's tracked
 size (88 MB of 100 MB at last count). Git history still retains anything pruned here, so
-this only trims the checked-out tree and bounds future growth.
+this only trims the checked-out tree and bounds future growth. Before an apply run, every
+removal must also carry a reviewed provenance record in `data/report-retention.json`.
 
 Scope is deliberately narrow:
   * Only the dated SCREENSHOT subdirectories are pruned. Each old `manifest.json` only
@@ -20,13 +21,14 @@ still references it.
 
 Usage:
     uv run python3 code/orchestrators/prune_old_reports.py            # dry-run (default)
-    uv run python3 code/orchestrators/prune_old_reports.py --apply    # delete superseded sets
+    uv run python3 code/orchestrators/prune_old_reports.py --apply --retention-manifest data/report-retention.json
     uv run python3 code/orchestrators/prune_old_reports.py --apply --keep 2  # retain 2 latest
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import shutil
 import subprocess
@@ -34,6 +36,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 REPORTS_DIR = REPO_ROOT / "reports"
+DEFAULT_RETENTION_MANIFEST = REPO_ROOT / "data" / "report-retention.json"
 
 # Dated-screenshot parents whose subdirs are superseded snapshots (validation reads latest).
 SCREENSHOT_PARENTS = ["visual-qa", "browser-smoke"]
@@ -119,17 +122,60 @@ def _referenced_externally(rel_prefix: str) -> bool:
     return _working_tree_references(REPO_ROOT, rel_prefix)
 
 
+def _retention_entries(path: Path) -> dict[str, dict]:
+    """Load reviewed removal records keyed by their exact report path."""
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError as exc:
+        raise SystemExit(f"Missing report-retention manifest: {path}") from exc
+    except json.JSONDecodeError as exc:
+        raise SystemExit(f"Invalid report-retention manifest {path}: {exc}") from exc
+    if not isinstance(payload, dict) or payload.get("schema_version") != "1.0":
+        raise SystemExit(f"Unsupported report-retention manifest: {path}")
+    entries = payload.get("entries")
+    if not isinstance(entries, list):
+        raise SystemExit(f"Report-retention manifest has no entries list: {path}")
+    result: dict[str, dict] = {}
+    for entry in entries:
+        if not isinstance(entry, dict) or not isinstance(entry.get("path"), str):
+            raise SystemExit(f"Report-retention manifest has an invalid entry: {path}")
+        result[entry["path"]] = entry
+    return result
+
+
+def _retention_errors(candidates: list[str], entries: dict[str, dict]) -> list[str]:
+    """Return missing provenance fields before a destructive apply run."""
+    required = ("generated_at", "provenance_sha256", "replacement_location", "decision", "reviewed_by")
+    errors: list[str] = []
+    for candidate in candidates:
+        entry = entries.get(candidate)
+        if not entry:
+            errors.append(f"no retention record for {candidate}")
+            continue
+        missing = [field for field in required if not isinstance(entry.get(field), str) or not entry[field].strip()]
+        if missing:
+            errors.append(f"incomplete retention record for {candidate}: missing {', '.join(missing)}")
+        elif entry.get("decision") != "remove-from-checkout":
+            errors.append(f"retention decision for {candidate} is not remove-from-checkout")
+    return errors
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--apply", action="store_true", help="actually delete (default is dry-run)")
     parser.add_argument("--keep", type=int, default=1, help="number of most-recent sets to retain per parent (default 1)")
+    parser.add_argument(
+        "--retention-manifest",
+        type=Path,
+        default=DEFAULT_RETENTION_MANIFEST,
+        help="Reviewed provenance records required for --apply.",
+    )
     args = parser.parse_args()
 
     if args.keep < 1:
         parser.error("--keep must be >= 1")
 
-    freed = 0
-    removed = 0
+    candidates: list[tuple[Path, str, int]] = []
     for name in SCREENSHOT_PARENTS:
         parent = REPORTS_DIR / name
         subdirs = _dated_subdirs(parent)
@@ -140,16 +186,30 @@ def main() -> int:
                 print(f"keep (still referenced): {rel}")
                 continue
             size = _dir_size_bytes(sub)
-            freed += size
-            removed += 1
-            if args.apply:
-                shutil.rmtree(sub)
-                print(f"removed {rel} ({size / 1_000_000:.1f} MB)")
-            else:
-                print(f"would remove {rel} ({size / 1_000_000:.1f} MB)")
+            candidates.append((sub, rel, size))
         kept = subdirs[-args.keep:] if subdirs else []
         if kept:
             print(f"{name}: keeping {', '.join(p.name for p in kept)}")
+
+    if args.apply:
+        retention_path = args.retention_manifest
+        if not retention_path.is_absolute():
+            retention_path = REPO_ROOT / retention_path
+        errors = _retention_errors([rel for _sub, rel, _size in candidates], _retention_entries(retention_path))
+        if errors:
+            raise SystemExit(
+                "Refusing to prune reports without durable provenance:\n"
+                + "\n".join(f"  - {error}" for error in errors)
+            )
+
+    freed = sum(size for _sub, _rel, size in candidates)
+    removed = len(candidates)
+    for sub, rel, size in candidates:
+        if args.apply:
+            shutil.rmtree(sub)
+            print(f"removed {rel} ({size / 1_000_000:.1f} MB)")
+        else:
+            print(f"would remove {rel} ({size / 1_000_000:.1f} MB)")
 
     verb = "freed" if args.apply else "would free"
     print(f"\n{verb} {freed / 1_000_000:.1f} MB across {removed} superseded screenshot set(s).")

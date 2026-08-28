@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 Compositional Approaches to Linguistic Case for Cognitive Modeling
 
 **Daniel Ari Friedman** (2026) · *Active Inference Journal*

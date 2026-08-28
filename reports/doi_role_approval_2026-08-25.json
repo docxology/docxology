@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "decision": "approved",
+  "proposal_sha256": "795682fd99dffdc45dfca55a898dfe16eceab31e54e5d6f4dd07a76e53128089",
+  "source_sha256": "d9645f50fb7a997f55db13a56bc9bf29016d2a1551e169d36959504d09076058",
+  "actions_sha256": "f1b933c15a740ab9d44bf96b883f53aeaf2ae376efd9e14a89c7ebabf7ac5910",
+  "reviewed_by": "Codex release-integrity reviewer",
+  "reviewed_at": "2026-08-25T19:10:32Z",
+  "review_scope": "Checked all 64 deterministic actions against the canonical public citation DOI in pages/BIBLIOGRAPHY.md; prior per-folder DOI values, when present, remain version/download artifact identifiers."
+}

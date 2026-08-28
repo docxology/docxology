@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts"
 description: "This exemplar asks whether a reviewable pipeline can hydrate a complete IMRAD manuscript from configuration-owned lexical data while preserving an audit trail that remains readable before and after rendering. The project deliberately keeps playful Ma..."
 tags: ["madlib-generation", "token-injection", "conditional-manuscripts", "reproducible-research", "imrad"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts*. Computational."
 doi: "10.5281/zenodo.20786638"
+artifact_doi: "10.5281/zenodo.20932025"
 ---
 
 # Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts
@@ -39,10 +41,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20786638
+- Canonical DOI: 10.5281/zenodo.20786638
 - PDF SHA-256: d9248f4f372fc3baf21cbf5cc5cdb7daffe0e22e62ac6fa2e3a697a26f3308b6
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-28T17:12:25Z
+- Artifact DOI: 10.5281/zenodo.20932025
 
 ## Prerequisites
 

@@ -63,6 +63,9 @@
         .search-controls button{border:1px solid var(--border);background:var(--bg-glass);color:var(--text-secondary);border-radius:6px;padding:.4rem .75rem;font:inherit;font-size:.8rem;cursor:pointer}
         .search-controls button.active{border-color:var(--gold);color:var(--gold)}
         .result-list{display:grid;gap:.8rem;margin-top:1.5rem}
+        #result-status .result-count{font-size:.85rem;color:var(--text-secondary);margin:0}
+        #result-status .no-results{text-align:center;padding:3rem 1rem;color:var(--text-muted);font-size:.9rem}
+        #result-status .no-results a{color:var(--gold,#d4a857)}
         .result-card{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1rem}
         .result-card h2{font-size:1.02rem;line-height:1.4;margin-bottom:.35rem}
         .result-card p{color:var(--text-secondary);font-size:.86rem;line-height:1.6}
@@ -96,21 +99,37 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation">
-        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <div class="nav-links">
-            <a href="index.html#about">About</a>
-            <a href="publications.html">Publications</a>
-            <a href="works/">Works</a>
-            <a href="domains.html">Domains</a>
-            <a href="software.html">Software</a>
-            <a href="videos.html">Videos</a>
-            <a href="search.html" class="active">Search</a>
-            <a href="discovery.html">Discovery</a>
-            <a href="data/agent-index.json">Agent Map</a>
-        </div>
-    </nav>
+    <nav aria-label="Main navigation">
+            <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
+            <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="works/">Works</a></li>
+                <li><a href="domains.html">Domains</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="art.html" class="nav-art-link">Art</a></li>
+                <li>
+                    <details class="nav-more">
+                        <summary>More</summary>
+                        <ul class="nav-more-panel">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#research">Research</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="collaborators.html">Collaborators</a></li>
+                        <li><a href="resume/resume.html">CV</a></li>
+                        <li><a href="search.html" class="active" aria-current="page">Search</a></li>
+                        <li><a href="catalog.html">Data Catalog</a></li>
+                        <li><a href="evidence.html">Evidence</a></li>
+                        <li><a href="reproducibility.html">Reproducibility</a></li>
+                        <li><a href="cite-verify.html">Cite</a></li>
+                        <li><a href="discovery.html">Discovery</a></li>
+                        <li><a href="data/agent-index.json">Agent Map</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol><li><a href="index.html">Home</a></li><li aria-current="page">Search</li></ol>
     </nav>
@@ -124,6 +143,7 @@
             <input id="q" class="search-input" type="search" aria-label="Search publications and works" autocomplete="off" placeholder="Search Active Inference, ants, Curio Cards, CEREBRUM..." autofocus>
             <div id="filters" class="search-controls" aria-label="Result type filters"></div>
         </section>
+        <section id="result-status" aria-live="polite"></section>
         <section class="result-list" id="results" aria-live="polite" aria-busy="true" aria-label="Search results"></section>
         <noscript>
             <p class="no-results">JavaScript is disabled. Use the <a href="data/catalog.json">data catalog</a>,
@@ -135,7 +155,7 @@
         <p>Daniel Ari Friedman, PhD · <a href="search-index.json">search-index.json</a> · <a href="opensearch.xml">OpenSearch</a></p>
     </footer>
     <script src="js/search-utils.js"></script>
-    <script src="/js/search-page.js?v=20260721b" defer></script>
+    <script src="/js/search-page.js?v=20260827a" defer></script>
 <script src="/js/tts-controls.js?v=20260712" defer></script>
 <script src="/js/interactive.js?v=20260712" defer></script>
     <script src="/js/menu-esc.js?v=20260712" defer></script>

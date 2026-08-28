@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "DigitalTwins"
 description: "This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively min..."
 tags: ["digital-twins", "active-inference", "generative-models", "predictive-processing", "cyber-physical-systems", "simulation"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.13273681
+- Canonical DOI: 10.5281/zenodo.13273681
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:26Z

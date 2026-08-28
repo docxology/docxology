@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧬 DennettExplained
 
 **Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman** (2019) · *ALIUS Bulletin*

@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 The Shape Between: A Full-Page Illustrated Storybook Template
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

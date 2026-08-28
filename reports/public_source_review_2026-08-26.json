@@ -1,0 +1,3659 @@
+{
+  "date": "2026-08-26",
+  "generated_at": "2026-08-26T00:00:00Z",
+  "inputs": {
+    "biographical_claim_decisions": {
+      "generated_at": null,
+      "path": "data/biographical-claim-decisions.json",
+      "sha256": "1d01574cb4fb9c626202fd7572f637da37c4602ce38c2b79bd0c2390c057c60f",
+      "source_commit": null
+    },
+    "claims_ledger": {
+      "generated_at": "2026-08-26T19:41:02Z",
+      "path": "data/claims.json",
+      "sha256": "0fd3485d1acb110479b4c2c96da5a03b83b51eb7e5a605828697a3eb12b046ea",
+      "source_commit": null
+    },
+    "doi_role_review": {
+      "generated_at": "2026-08-25T19:11:00Z",
+      "path": "reports/doi_role_reconciliation_2026-08-25.json",
+      "sha256": "8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6",
+      "source_commit": null
+    },
+    "paired_publication_decisions": {
+      "generated_at": "2026-08-26T18:01:35Z",
+      "path": "data/paired-publication-decisions.json",
+      "sha256": "2013d899c8b9eafe460771149184dbbd79b070642d260a08cfbdcf99f2881cdc",
+      "source_commit": null
+    },
+    "paired_publications": {
+      "generated_at": "2026-08-26T18:35:59Z",
+      "path": "reports/paired_publications_2026-08-26.json",
+      "sha256": "5ad2d4ef5db5637460a01d198334e6d77f8482dadfc8ac5a530e13b67a58cf0f",
+      "source_commit": null
+    },
+    "previous_public_source_snapshot": {
+      "generated_at": "2026-08-19T21:57:41.878669+00:00",
+      "path": "reports/public_source_snapshot_2026-08-19.json",
+      "sha256": "36e69a0b824a9eb545f6a2e7c79428612e51e9ec1ab03ac2ca6fc3f9cd9d19a0",
+      "source_commit": null
+    },
+    "public_source_inventory": {
+      "generated_at": "2026-08-26T17:56:47Z",
+      "path": "reports/public_source_inventory_2026-08-26.json",
+      "sha256": "85329b40bfdbf5fe54831fb70bcb70aafd7f94b9bfee159268a9d823bd28d79a",
+      "source_commit": "435a529ad980cc541f929c5bed2b223af01ecab0"
+    },
+    "public_source_observation_decisions": {
+      "generated_at": null,
+      "path": "data/public-source-observation-decisions.json",
+      "sha256": "cff826363c7ca0e66bf583ee039a27cf0bfebc05ef57fb3222a8d91f50f73714",
+      "source_commit": null
+    },
+    "public_source_snapshot": {
+      "generated_at": "2026-08-26T20:38:56.057530+00:00",
+      "path": "reports/public_source_snapshot_2026-08-26.json",
+      "sha256": "4616f31a102e00f1e268e7942c38d5914080895fdbf76cf1414f47f3e7dfad91",
+      "source_commit": "5c25de204170cdf03c2f341f0fdc10f399aebaa4"
+    },
+    "repository_classification": {
+      "generated_at": "2026-08-26T18:58:44Z",
+      "path": "data/repository-classification.json",
+      "sha256": "5e92ef88b6809b29a42e97c065dc42a8b6f76a5f07dadae979b26f3c26e85860",
+      "source_commit": null
+    },
+    "scholar_snapshot": {
+      "generated_at": null,
+      "path": "data/scholar-snapshot.json",
+      "sha256": "d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2",
+      "source_commit": null
+    },
+    "scholar_verification_receipt": {
+      "generated_at": null,
+      "path": "data/scholar-verification-receipt.json",
+      "sha256": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
+      "source_commit": null
+    }
+  },
+  "items": [
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.3389/fgene.2015.00261",
+        "folder": "2015_CryptoJews",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2015_CryptoJews",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1016/j.mehy.2015.09.015",
+        "folder": "2015_EhrlichialInfection",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2015_EhrlichialInfection",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1093/molbev/msu292",
+        "folder": "2015_HoneyBeeEvolution",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2015_HoneyBeeEvolution",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1146/annurev-neuro-070815-013927",
+        "folder": "2016_AntGenetics",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2016_AntGenetics",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1098/rspb.2016.0841",
+        "folder": "2016_ForagingGene",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2016_ForagingGene",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.3109/09553002.2016.1144941",
+        "folder": "2016_NuclearStructure",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2016_NuclearStructure",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1016/j.cell.2017.07.046",
+        "folder": "2017_MutAnts",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2017_MutAnts",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1111/mec.13964",
+        "folder": "2017_TwoLineages",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2017_TwoLineages",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1371/journal.pone.0202117",
+        "folder": "2018_ArgentineAnt",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2018_ArgentineAnt",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1016/j.isci.2018.09.001",
+        "folder": "2018_DopamineForaging",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2018_DopamineForaging",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.3390/arts7030039",
+        "folder": "2018_PPPiP",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2018_PPPiP",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.34700/h460-nz89",
+        "folder": "2018_WoodliceAndMen",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2018_WoodliceAndMen",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1007/s11229-019-02130-y",
+        "folder": "2019_AntConsciousness",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2019_AntConsciousness",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.34700/7gkw-zh08",
+        "folder": "2019_DennettExplained",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2019_DennettExplained",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1038/s41598-019-41586-3",
+        "folder": "2019_ForagerHydration",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2019_ForagerHydration",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1016/j.yhbeh.2020.104757",
+        "folder": "2020_DistributedPhysiology",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2020_DistributedPhysiology",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1038/s42003-020-0813-8",
+        "folder": "2020_GeneExpressionForagers",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2020_GeneExpressionForagers",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.12601675",
+        "canonical_doi": "10.5281/zenodo.12601674",
+        "folder": "2020_InfiniteGamesInfinite",
+        "prior_canonical_doi": "10.5281/zenodo.12601675"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2020_InfiniteGamesInfinite",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.34700/8pg4-0h12",
+        "folder": "2020_NeuroscienceDecision",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2020_NeuroscienceDecision",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1007/s00216-019-02355-3",
+        "folder": "2020_NeurotransmitterVariation",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2020_NeurotransmitterVariation",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.4170026",
+        "canonical_doi": "10.5281/zenodo.4170025",
+        "folder": "2020_ReimaginingMaps",
+        "prior_canonical_doi": "10.5281/zenodo.4170026"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2020_ReimaginingMaps",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.3389/fnbeh.2021.647732",
+        "folder": "2021_ActiveInferants",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2021_ActiveInferants",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.4633921",
+        "canonical_doi": "10.5281/zenodo.4624298",
+        "folder": "2021_CollaborativeWritingCatechism",
+        "prior_canonical_doi": "10.5281/zenodo.4633921"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2021_CollaborativeWritingCatechism",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.5797072",
+        "canonical_doi": "10.5281/zenodo.5797040",
+        "folder": "2021_Transcript",
+        "prior_canonical_doi": "10.5281/zenodo.5797072"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2021_Transcript",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.7400536",
+        "canonical_doi": "10.5281/zenodo.7400525",
+        "folder": "2022_CanonicalNeuralNetworks",
+        "prior_canonical_doi": "10.5281/zenodo.7400536"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2022_CanonicalNeuralNetworks",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.7400709",
+        "canonical_doi": "10.5281/zenodo.7400708",
+        "folder": "2022_InteroceptionAsModeling",
+        "prior_canonical_doi": "10.5281/zenodo.7400709"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2022_InteroceptionAsModeling",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.48550/arXiv.2205.06345",
+        "folder": "2022_StigmergicAnnotation",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2022_StigmergicAnnotation",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.6904427",
+        "canonical_doi": "10.5281/zenodo.6904426",
+        "folder": "2022_TrackingPublicSensemaking",
+        "prior_canonical_doi": "10.5281/zenodo.6904427"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2022_TrackingPublicSensemaking",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.7267947",
+        "canonical_doi": "10.5281/zenodo.7259006",
+        "folder": "2022_Transcript",
+        "prior_canonical_doi": "10.5281/zenodo.7267947"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2022_Transcript",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.7401875",
+        "canonical_doi": "10.5281/zenodo.7401874",
+        "folder": "2022_TranscriptDiscussions",
+        "prior_canonical_doi": "10.5281/zenodo.7401875"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2022_TranscriptDiscussions",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.7400786",
+        "canonical_doi": "10.5281/zenodo.7400785",
+        "folder": "2022_WorkedExampleBayesian",
+        "prior_canonical_doi": "10.5281/zenodo.7400786"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2022_WorkedExampleBayesian",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.10362561",
+        "canonical_doi": "10.5281/zenodo.10296601",
+        "folder": "2023_ATLAS2",
+        "prior_canonical_doi": "10.5281/zenodo.10362561"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2023_ATLAS2",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.31219/osf.io/dnw5k",
+        "folder": "2023_DistributedScience",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2023_DistributedScience",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1016/j.plrev.2023.11.001",
+        "folder": "2023_GuidedTourMinds",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2023_GuidedTourMinds",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.8118156",
+        "canonical_doi": "10.5281/zenodo.8118155",
+        "folder": "2023_ModernNostrIndex",
+        "prior_canonical_doi": "10.5281/zenodo.8118156"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2023_ModernNostrIndex",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.10360148",
+        "canonical_doi": "10.5281/zenodo.10360056",
+        "folder": "2023_NaturalAIBased",
+        "prior_canonical_doi": "10.5281/zenodo.10360148"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2023_NaturalAIBased",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.31222/osf.io/9nb3u",
+        "folder": "2023_OpenScienceSensemaking",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2023_OpenScienceSensemaking",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1016/j.cogsys.2023.02.005",
+        "folder": "2023_SinglePheromone",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2023_SinglePheromone",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.7838653",
+        "canonical_doi": "10.5281/zenodo.7838652",
+        "folder": "2023_SlidesIris",
+        "prior_canonical_doi": "10.5281/zenodo.7838653"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2023_SlidesIris",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1016/j.plrev.2023.06.002",
+        "folder": "2023_ToComment",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2023_ToComment",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.8229512",
+        "canonical_doi": "10.5281/zenodo.8228934",
+        "folder": "2023_TranscriptActiveInference",
+        "prior_canonical_doi": "10.5281/zenodo.8229512"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2023_TranscriptActiveInference",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.3390/e25070964",
+        "folder": "2023_VariationalSynthesis",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2023_VariationalSynthesis",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.3791/65002",
+        "folder": "2023_VideoEntomology",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2023_VideoEntomology",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1002/ece3.70063",
+        "folder": "2024_BlattodeaDiversity",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2024_BlattodeaDiversity",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1016/j.neubiorev.2023.105500",
+        "folder": "2024_FederatedInference",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2024_FederatedInference",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1002/asi.24900",
+        "folder": "2024_ImageMemeResearch",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2024_ImageMemeResearch",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1016/j.plrev.2024.04.010",
+        "folder": "2024_PaleolithicRockstars",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2024_PaleolithicRockstars",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.48550/arXiv.2408.09548",
+        "folder": "2024_PopulationSearch",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2024_PopulationSearch",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.10659375",
+        "canonical_doi": "10.5281/zenodo.10659374",
+        "folder": "2024_PushPull",
+        "prior_canonical_doi": "10.5281/zenodo.10659375"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2024_PushPull",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.3390/e26040303",
+        "folder": "2024_SharedProtentions",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2024_SharedProtentions",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.14737060",
+        "canonical_doi": "10.5281/zenodo.14737059",
+        "folder": "2025_BeaconsPreEmulation",
+        "prior_canonical_doi": "10.5281/zenodo.14737060"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2025_BeaconsPreEmulation",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.14737076",
+        "canonical_doi": "10.5281/zenodo.14737075",
+        "folder": "2025_BevCycPositPrimitive",
+        "prior_canonical_doi": "10.5281/zenodo.14737076"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2025_BevCycPositPrimitive",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.14738798",
+        "canonical_doi": "10.5281/zenodo.13626536",
+        "folder": "2025_ConCatEnate",
+        "prior_canonical_doi": "10.5281/zenodo.14738798"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2025_ConCatEnate",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.14737043",
+        "canonical_doi": "10.5281/zenodo.14737042",
+        "folder": "2025_ConCatEnate2",
+        "prior_canonical_doi": "10.5281/zenodo.14737043"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2025_ConCatEnate2",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.48550/arXiv.2505.17500",
+        "folder": "2025_DiscoveryEngine",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2025_DiscoveryEngine",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.14737157",
+        "canonical_doi": "10.5281/zenodo.14737156",
+        "folder": "2025_Graphspeak",
+        "prior_canonical_doi": "10.5281/zenodo.14737157"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2025_Graphspeak",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.3389/fpsyg.2025.1585315",
+        "folder": "2025_TemporalDepth",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2025_TemporalDepth",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.3390/e27050459",
+        "folder": "2025_Thoughtseeds",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2025_Thoughtseeds",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.20286478",
+        "canonical_doi": "10.5281/zenodo.20286477",
+        "folder": "2026_BiologyTextbook",
+        "prior_canonical_doi": "10.5281/zenodo.20286478"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2026_BiologyTextbook",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.20144984",
+        "canonical_doi": "10.5281/zenodo.20144983",
+        "folder": "2026_BlakeJiang",
+        "prior_canonical_doi": "10.5281/zenodo.20144984"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2026_BlakeJiang",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.20286171",
+        "canonical_doi": "10.5281/zenodo.20286170",
+        "folder": "2026_CrescentCity",
+        "prior_canonical_doi": "10.5281/zenodo.20286171"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2026_CrescentCity",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.19699234",
+        "canonical_doi": "10.5281/zenodo.19699233",
+        "folder": "2026_FEPLean",
+        "prior_canonical_doi": "10.5281/zenodo.19699234"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2026_FEPLean",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_doi",
+        "artifact_doi": "",
+        "canonical_doi": "10.1007/978-3-032-16955-6_11",
+        "folder": "2026_FocusedAttentionMeditation",
+        "prior_canonical_doi": ""
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2026_FocusedAttentionMeditation",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action": "set_canonical_and_preserve_prior_as_artifact",
+        "artifact_doi": "10.5281/zenodo.20614909",
+        "canonical_doi": "10.5281/zenodo.20614908",
+        "folder": "2026_ITrace",
+        "prior_canonical_doi": "10.5281/zenodo.20614909"
+      },
+      "category": "ambiguous_doi_change",
+      "id": "doi-role:2026_ITrace",
+      "reason": "The exact DOI-role proposal was applied after a separately recorded review approval.",
+      "sources": [
+        "reports/doi_role_reconciliation_2026-08-25.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "checked_at": "2026-08-26",
+        "claim": "The Active Inference Institute board page lists 11 current members.",
+        "claim_id": "aii-board-count",
+        "claim_sha256": "8a12958e67a5c091494ee21e9982ac9a84241b524daba76fd920bbbd03c093d0",
+        "claim_status": "public-profile",
+        "curated_targets": [
+          "code/orchestrators/export_agent_data.py",
+          "pages/LINKS.md",
+          "pages/WIKIPEDIA.md",
+          "pages/VERIFICATION_LOG.md",
+          "data/verification-log.json"
+        ],
+        "evidence_sha256": "95d419bea8ad4cc94d551d4a42a8f8f0fea993bb5acb8cf261d3fe72cd0fde36",
+        "refreshed_sources": [
+          "https://activeinference.institute/structure/board-of-directors/"
+        ],
+        "review_decision": "acknowledged",
+        "review_rationale": "User-authorized review applied the current 11-member board count from the official board page."
+      },
+      "category": "biographical_claim_change",
+      "id": "biographical-claim:aii-board-count",
+      "reason": "A durable review decision matches the exact claim and cited-source evidence.",
+      "sources": [
+        "data/biographical-claim-decisions.json",
+        "data/claims.json",
+        "https://activeinference.institute/structure/board-of-directors/",
+        "reports/public_source_inventory_2026-08-26.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "checked_at": "2026-08-26",
+        "claim": "Active Inference Institute officers: Daniel Friedman is President and Treasurer, and Alexandra Mikhailova is Vice President and Secretary. Virginia Bleu Knight is a current Board member. The Institute is a 501(c)(3) public charity, EIN 88-2985125, with an IRS ruling in March 2024.",
+        "claim_id": "aii-officer-roles",
+        "claim_sha256": "651a81aa350833153341fb1267883d63096bb5c49fc174dc702ddded6a7e3327",
+        "claim_status": "public-profile",
+        "curated_targets": [
+          "code/orchestrators/export_agent_data.py",
+          "pages/PROFILE.md",
+          "pages/VERIFICATION_LOG.md",
+          "data/verification-log.json"
+        ],
+        "evidence_sha256": "92c05b35b254a7511bf0b20a9993bbf5f8f1f52dc16d64184307ad45050ba71e",
+        "refreshed_sources": [
+          "https://activeinference.institute/structure/board-of-directors/",
+          "https://activeinference.institute/structure/officers/"
+        ],
+        "review_decision": "acknowledged",
+        "review_rationale": "User-authorized review applied only the current official officer roles and stopped reasserting unrefreshed historical office dates."
+      },
+      "category": "biographical_claim_change",
+      "id": "biographical-claim:aii-officer-roles",
+      "reason": "A durable review decision matches the exact claim and cited-source evidence.",
+      "sources": [
+        "data/biographical-claim-decisions.json",
+        "data/claims.json",
+        "https://activeinference.institute/structure/board-of-directors/",
+        "https://activeinference.institute/structure/officers/",
+        "reports/public_source_inventory_2026-08-26.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "checked_at": "2026-08-26",
+        "claim": "The Active Inference Institute site lists 32 current Scientific Advisory Board members.",
+        "claim_id": "aii-scientific-advisory-board-count",
+        "claim_sha256": "baea4a0d07e11c374907fc656d126c929c1092dcbe9d7ff848fad8f727e1d9e7",
+        "claim_status": "public-profile",
+        "curated_targets": [
+          "code/orchestrators/export_agent_data.py",
+          "pages/WIKIPEDIA.md",
+          "pages/VERIFICATION_LOG.md",
+          "data/verification-log.json"
+        ],
+        "evidence_sha256": "696082534953d1f42556b5f9fb09a05bca0d4ab0e332cd731d25c00c2e86be17",
+        "refreshed_sources": [
+          "https://activeinference.institute/structure/scientific-advisory-board/"
+        ],
+        "review_decision": "acknowledged",
+        "review_rationale": "User-authorized review applied the official page's current 32-member Scientific Advisory Board count."
+      },
+      "category": "biographical_claim_change",
+      "id": "biographical-claim:aii-scientific-advisory-board-count",
+      "reason": "A durable review decision matches the exact claim and cited-source evidence.",
+      "sources": [
+        "data/biographical-claim-decisions.json",
+        "data/claims.json",
+        "https://activeinference.institute/structure/scientific-advisory-board/",
+        "reports/public_source_inventory_2026-08-26.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "checked_at": "2026-08-26",
+        "claim": "AII's Textbook Group reports nine completed 2022-textbook cohorts and a first 2026 Fundamentals cohort currently live.",
+        "claim_id": "aii-textbook-cohorts",
+        "claim_sha256": "812951d77b2b7c0415143cd9b998503dd67265ee79c770008bf25281b7fec346",
+        "claim_status": "curated-program-copy",
+        "curated_targets": [
+          "AGENTS.md",
+          "README.md",
+          "index.html",
+          "pages/PROFILE.md",
+          "pages/VIDEOS.md",
+          "code/orchestrators/export_agent_data.py"
+        ],
+        "evidence_sha256": "4382dc302fc3b9a7e58197ef20f1dffa39aabd68057a6d943c60497aa2b77f9f",
+        "refreshed_sources": [],
+        "review_decision": "acknowledged",
+        "review_rationale": "User-authorized review applied the official program wording: nine completed 2022-textbook cohorts plus a live first 2026 Fundamentals cohort."
+      },
+      "category": "biographical_claim_change",
+      "id": "biographical-claim:aii-textbook-cohorts",
+      "reason": "A durable review decision matches the exact claim and cited-source evidence.",
+      "sources": [
+        "data/biographical-claim-decisions.json",
+        "data/claims.json",
+        "reports/public_source_inventory_2026-08-26.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "checked_at": "2026-08-26",
+        "claim": "COGSEC.org is the cognitive security publication and research context linked from the profile.",
+        "claim_id": "cogsec-role",
+        "claim_sha256": "2664634d343e25ba56cc6b333823fd1a547570807f6bf377070afce53f6f7672",
+        "claim_status": "public-site",
+        "curated_targets": [
+          "code/orchestrators/export_agent_data.py",
+          "data/verification-log.json"
+        ],
+        "evidence_sha256": "922fb2ac49f37fcc94ca1b9efb33855ede46c834bf68e42e4460150a8595644b",
+        "refreshed_sources": [],
+        "review_decision": "acknowledged",
+        "review_rationale": "User-authorized review retained the cautious COGSEC research-context claim without inferring a stronger personal title."
+      },
+      "category": "biographical_claim_change",
+      "id": "biographical-claim:cogsec-role",
+      "reason": "A durable review decision matches the exact claim and cited-source evidence.",
+      "sources": [
+        "data/biographical-claim-decisions.json",
+        "data/claims.json",
+        "reports/public_source_inventory_2026-08-26.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "checked_at": "2026-08-26",
+        "claim": "Profile teaching copy lists BIOL-1 at Pelican Bay for Spring and Fall 2026 and BIOL-8 Human Biology for Spring 2026.",
+        "claim_id": "college-of-the-redwoods-teaching",
+        "claim_sha256": "00d80689b59378ebea09e0c4cd12a7830ef8274af810cda0069b37c8331e2291",
+        "claim_status": "principal-confirmed",
+        "curated_targets": [
+          "AGENTS.md",
+          "README.md",
+          "index.html",
+          "pages/COLLABORATORS.md",
+          "pages/PROFILE.md",
+          "pages/VERIFICATION_LOG.md",
+          "pages/WIKIPEDIA.md",
+          "data/verification-log.json",
+          "code/orchestrators/export_agent_data.py"
+        ],
+        "evidence_sha256": "8cefe0fd5e3396f1019d99f7087aa4f3d3d8e4792b92153c4a83635fd0411723",
+        "refreshed_sources": [],
+        "review_decision": "acknowledged",
+        "review_rationale": "User-authorized principal confirmation applied BIOL-1 at Pelican Bay for Spring and Fall 2026 and BIOL-8 for Spring 2026 without claiming a public-schedule verification."
+      },
+      "category": "biographical_claim_change",
+      "id": "biographical-claim:college-of-the-redwoods-teaching",
+      "reason": "A durable review decision matches the exact claim and cited-source evidence.",
+      "sources": [
+        "data/biographical-claim-decisions.json",
+        "data/claims.json",
+        "reports/public_source_inventory_2026-08-26.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "checked_at": "2026-08-26",
+        "claim": "Daniel Friedman created Curio Cards 24, 25, and 26, part of a collection that debuted on Ethereum on May 9, 2017; all original cards were minted in 2017. A full set of 30 cards plus 17b, representing seven artists, sold at Christie's New York in September 2021 for 393 ETH ($1,202,108).",
+        "claim_id": "curio-cards-early-ethereum-art",
+        "claim_sha256": "6d41527d8091fc8a14692c030b7fb19bb94dc1f04a383ebbd83e2e51bc1006c4",
+        "claim_status": "public-profile",
+        "curated_targets": [
+          "README.md",
+          "pages/LINKS.md",
+          "pages/PROFILE.md",
+          "pages/VERIFICATION_LOG.md",
+          "pages/WIKIPEDIA.md",
+          "resume/source.json",
+          "data/verification-log.json",
+          "code/orchestrators/export_agent_data.py"
+        ],
+        "evidence_sha256": "0d93662adc578166a3f1e81aad95acc747f9e03d7dc953cbfa85cc7685f24e79",
+        "refreshed_sources": [],
+        "review_decision": "acknowledged",
+        "review_rationale": "User-authorized review corrected the collection debut, 2017 minting window, and Christie's sale wording without assigning the May 9 date to individual cards."
+      },
+      "category": "biographical_claim_change",
+      "id": "biographical-claim:curio-cards-early-ethereum-art",
+      "reason": "A durable review decision matches the exact claim and cited-source evidence.",
+      "sources": [
+        "data/biographical-claim-decisions.json",
+        "data/claims.json",
+        "reports/public_source_inventory_2026-08-26.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "checked_at": "2026-08-26",
+        "claim": "Daniel Ari Friedman held NSF Postdoctoral Fellowship in Biology award DBI-2010290 from 2020-10-01 through 2023-09-30, conducted at UC Davis and co-trained by Brian Johnson and Tim Linksvayer.",
+        "claim_id": "nsf-postdoc-affiliation",
+        "claim_sha256": "c643f323bc980487ba78c87dfcf1d58649839cc28578caf9583ca5fade74cbf4",
+        "claim_status": "public-grant-record",
+        "curated_targets": [
+          "AGENTS.md",
+          "README.md",
+          "pages/PROFILE.md",
+          "pages/VERIFICATION_LOG.md",
+          "resume/source.json",
+          "data/verification-log.json",
+          "code/orchestrators/export_agent_data.py"
+        ],
+        "evidence_sha256": "f82540dbc202c1e2e17ef3f0054f3f78999a146654f34b0cabffac50db572b2c",
+        "refreshed_sources": [],
+        "review_decision": "acknowledged",
+        "review_rationale": "User-authorized review replaced the unsupported budget/no-cost-extension wording with official NSF award dates and the named co-training arrangement."
+      },
+      "category": "biographical_claim_change",
+      "id": "biographical-claim:nsf-postdoc-affiliation",
+      "reason": "A durable review decision matches the exact claim and cited-source evidence.",
+      "sources": [
+        "data/biographical-claim-decisions.json",
+        "data/claims.json",
+        "reports/public_source_inventory_2026-08-26.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "checked_at": "2026-08-26",
+        "claim": "ORCID 0000-0001-6232-9096 identifies Daniel Ari Friedman. It publicly links the secondary Google Scholar profile Y2bMf3MAAAAJ; DXjPFtYAAAAJ is the canonical metrics profile under this repository's direct-authenticated Scholar policy.",
+        "claim_id": "orcid-canonical-identifier",
+        "claim_sha256": "a54f4c21de7d19a16a1d7d6353257da618161f5fbbb903bbb0f7fe9d51e91806",
+        "claim_status": "public-identifier",
+        "curated_targets": [
+          "AGENTS.md",
+          "code/orchestrators/export_agent_data.py"
+        ],
+        "evidence_sha256": "185e5e714908b117c2f867f373ca8a20c12ebb963436bd37f20fb9376cb0a7ec",
+        "refreshed_sources": [],
+        "review_decision": "acknowledged",
+        "review_rationale": "User-authorized review separates ORCID's secondary Scholar link from this repository's direct-authenticated canonical-metrics policy."
+      },
+      "category": "biographical_claim_change",
+      "id": "biographical-claim:orcid-canonical-identifier",
+      "reason": "A durable review decision matches the exact claim and cited-source evidence.",
+      "sources": [
+        "data/biographical-claim-decisions.json",
+        "data/claims.json",
+        "reports/public_source_inventory_2026-08-26.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "checked_at": "2026-08-26",
+        "claim": "Daniel Ari Friedman earned a PhD at Stanford University with dissertation record pb813wm1484.",
+        "claim_id": "stanford-phd",
+        "claim_sha256": "346193b6337f45aeb650e7ff110c8084435f27c3468d72db2067f449ab7df132",
+        "claim_status": "public-institutional-record",
+        "curated_targets": [
+          "pages/LINKS.md",
+          "pages/PROFILE.md",
+          "data/verification-log.json",
+          "code/orchestrators/export_agent_data.py"
+        ],
+        "evidence_sha256": "25a797f52c51eb59a63acec5c012bb95c8c4de0630e63a02b50db85d44b93141",
+        "refreshed_sources": [],
+        "review_decision": "acknowledged",
+        "review_rationale": "User-authorized review refreshed the institutional Stanford record and canonical HTTPS/MODS sources."
+      },
+      "category": "biographical_claim_change",
+      "id": "biographical-claim:stanford-phd",
+      "reason": "A durable review decision matches the exact claim and cited-source evidence.",
+      "sources": [
+        "data/biographical-claim-decisions.json",
+        "data/claims.json",
+        "reports/public_source_inventory_2026-08-26.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "curated_targets": [],
+        "current": {
+          "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal",
+          "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
+          "language": "HTML",
+          "stargazers_count": 42,
+          "updated_at": "2026-08-21T19:39:37Z"
+        },
+        "current_sha256": "e1265bf0e0ea27eabd1fcc47d3cb07bd621a176440c00c8eee2c7af7e7e66f8a",
+        "label": "GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+        "previous": {
+          "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal",
+          "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
+          "language": "HTML",
+          "stargazers_count": 42,
+          "updated_at": "2026-08-19T21:47:19Z"
+        },
+        "previous_sha256": "1f1c44def7ee92dbd63bcddf6bd1aab73f02cba12c4d2ab6db36091e76217db7",
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed as an updated_at-only observation; no curated claim or catalog change is required."
+      },
+      "category": "public_source_observation",
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/ActiveInferenceJournal",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
+      "sources": [
+        "data/public-source-observation-decisions.json",
+        "reports/public_source_snapshot_2026-08-19.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "curated_targets": [],
+        "current": {
+          "full_name": "ActiveInferenceInstitute/CEREBRUM",
+          "html_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
+          "language": "Python",
+          "stargazers_count": 13,
+          "updated_at": "2026-08-19T22:10:46Z"
+        },
+        "current_sha256": "38638413942915dfbd6ae6521d7db78269cc5ea984e97ec42e7409c78c5d4a13",
+        "label": "GitHub repo ActiveInferenceInstitute/CEREBRUM",
+        "previous": {
+          "full_name": "ActiveInferenceInstitute/CEREBRUM",
+          "html_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM",
+          "language": "Python",
+          "stargazers_count": 13,
+          "updated_at": "2026-08-19T16:06:39Z"
+        },
+        "previous_sha256": "31651d0cf77d9667c03b85c1d2eaacaa688334489ea5e4bfa5a324e15059fb35",
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed as an updated_at-only observation; no curated claim or catalog change is required."
+      },
+      "category": "public_source_observation",
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/CEREBRUM",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
+      "sources": [
+        "data/public-source-observation-decisions.json",
+        "reports/public_source_snapshot_2026-08-19.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "curated_targets": [],
+        "current": {
+          "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+          "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
+          "language": "Python",
+          "stargazers_count": 30,
+          "updated_at": "2026-08-25T01:37:49Z"
+        },
+        "current_sha256": "b40c8d7695cf6b9042b1a9696999457cac3ac24847433dfb7f6dbc4fc8bdedec",
+        "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+        "previous": {
+          "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+          "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
+          "language": "Python",
+          "stargazers_count": 30,
+          "updated_at": "2026-08-19T21:40:47Z"
+        },
+        "previous_sha256": "2997b844413c474bd3b1b45f7040dd3d8cce38739679f214314b8be0f145a977",
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed as an updated_at-only observation; no curated claim or catalog change is required."
+      },
+      "category": "public_source_observation",
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
+      "sources": [
+        "data/public-source-observation-decisions.json",
+        "reports/public_source_snapshot_2026-08-19.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "curated_targets": [],
+        "current": {
+          "full_name": "ActiveInferenceInstitute/Journal-Utilities",
+          "html_url": "https://github.com/ActiveInferenceInstitute/Journal-Utilities",
+          "language": "HTML",
+          "stargazers_count": 10,
+          "updated_at": "2026-08-24T16:50:45Z"
+        },
+        "current_sha256": "59ce10310939eb701652a52a9c20dd5d1b0011bc447b954b3294d4a27bb4c101",
+        "label": "GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+        "previous": {
+          "full_name": "ActiveInferenceInstitute/Journal-Utilities",
+          "html_url": "https://github.com/ActiveInferenceInstitute/Journal-Utilities",
+          "language": "HTML",
+          "stargazers_count": 10,
+          "updated_at": "2026-08-03T00:18:52Z"
+        },
+        "previous_sha256": "87cce02c28f3378d6b2f17cd5af02083ad24bd5e1ac0df43edf2eef98b9fe121",
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed as an updated_at-only observation; no curated claim or catalog change is required."
+      },
+      "category": "public_source_observation",
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/Journal-Utilities",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
+      "sources": [
+        "data/public-source-observation-decisions.json",
+        "reports/public_source_snapshot_2026-08-19.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "curated_targets": [],
+        "current": {
+          "full_name": "ActiveInferenceInstitute/cognitive",
+          "html_url": "https://github.com/ActiveInferenceInstitute/cognitive",
+          "language": "Python",
+          "stargazers_count": 20,
+          "updated_at": "2026-08-19T22:12:48Z"
+        },
+        "current_sha256": "62084e2ff9d7f660c41ac7b4e8e1c4cb2ecd6746b1839828b15bb63af29ba6bd",
+        "label": "GitHub repo ActiveInferenceInstitute/cognitive",
+        "previous": {
+          "full_name": "ActiveInferenceInstitute/cognitive",
+          "html_url": "https://github.com/ActiveInferenceInstitute/cognitive",
+          "language": "Python",
+          "stargazers_count": 20,
+          "updated_at": "2026-08-19T16:42:47Z"
+        },
+        "previous_sha256": "c7dfe7ac31ed7319c968eee0e5d5c0a30be4ac984ac44e480b53bf2234fb12e0",
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed as an updated_at-only observation; no curated claim or catalog change is required."
+      },
+      "category": "public_source_observation",
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/cognitive",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
+      "sources": [
+        "data/public-source-observation-decisions.json",
+        "reports/public_source_snapshot_2026-08-19.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "curated_targets": [
+          "data/github-repositories.json",
+          "repositories.html"
+        ],
+        "current": {
+          "full_name": "ActiveInferenceInstitute/fep_lean",
+          "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean",
+          "language": "Lean",
+          "stargazers_count": 2,
+          "updated_at": "2026-08-24T18:07:49Z"
+        },
+        "current_sha256": "051916506b747063f78ec6725f880d638f62f0ccf10f9f6839e9911088b3d073",
+        "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
+        "previous": {
+          "full_name": "ActiveInferenceInstitute/fep_lean",
+          "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean",
+          "language": "Python",
+          "stargazers_count": 2,
+          "updated_at": "2026-08-19T03:07:49Z"
+        },
+        "previous_sha256": "af3ab224d532dfb700026334fb9403cf9ce50eb9fc05a2a3f15a4136b5fd5a7b",
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed the primary-language change from Python to Lean; refresh the inventory-derived repository surfaces."
+      },
+      "category": "public_source_observation",
+      "id": "public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
+      "sources": [
+        "data/public-source-observation-decisions.json",
+        "reports/public_source_snapshot_2026-08-19.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "curated_targets": [],
+        "current": {
+          "html_url": "https://github.com/docxology",
+          "login": "docxology",
+          "public_repos": 202,
+          "updated_at": "2026-08-23T20:39:54Z"
+        },
+        "current_sha256": "b2856f5bce0f6006404a09214323bc873b6872f9c7375a4430069c652eff0d24",
+        "label": "GitHub user docxology",
+        "previous": {
+          "html_url": "https://github.com/docxology",
+          "login": "docxology",
+          "public_repos": 202,
+          "updated_at": "2026-08-19T14:25:14Z"
+        },
+        "previous_sha256": "e89ecb63dd609483479463591065a6542813d50518367bd6acbe91e1f42cc2f7",
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed as an updated_at-only profile observation; no curated claim or catalog change is required."
+      },
+      "category": "public_source_observation",
+      "id": "public-source-observation:GitHub user docxology",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
+      "sources": [
+        "data/public-source-observation-decisions.json",
+        "reports/public_source_snapshot_2026-08-19.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "curated_targets": [],
+        "current": {
+          "first_doi": "10.5281/zenodo.20804586",
+          "first_title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+          "total": 145
+        },
+        "current_sha256": "82013dab9c47afc5dc96723fb217b34e63fbcda10aa5f61c90f34469f268b25a",
+        "label": "Zenodo ORCID-linked records",
+        "previous": {
+          "first_doi": "10.5281/zenodo.21754246",
+          "first_title": "The Witness Register: Co-Registration Without Aggregation",
+          "total": 145
+        },
+        "previous_sha256": "4f88fcffdab7684602d29353c76c1b184a072550ba1cfecb7dfd591983014130",
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed as a changed first result with an unchanged total; it is not a bibliography candidate by itself."
+      },
+      "category": "public_source_observation",
+      "id": "public-source-observation:Zenodo ORCID-linked records",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
+      "sources": [
+        "data/public-source-observation-decisions.json",
+        "reports/public_source_snapshot_2026-08-19.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "curated_targets": [],
+        "current": {
+          "first_doi": "10.5281/zenodo.7855582",
+          "first_title": "Of Ants & Aging",
+          "total": 59
+        },
+        "current_sha256": "8914cd4c223b4bfb4ba67693c871e110a06f269801391b74090128ae3b0290f7",
+        "label": "Zenodo exact-name creator records",
+        "previous": {
+          "first_doi": "10.5281/zenodo.10659375",
+          "first_title": "Push and Pull: A priming sequence",
+          "total": 59
+        },
+        "previous_sha256": "8ba29028c4af5ef0c9566674ca373d67943a37e614f178f9d7d8e7667157cb7a",
+        "review_decision": "acknowledged",
+        "review_rationale": "Reviewed as a changed first result with an unchanged total; it is not a bibliography candidate by itself."
+      },
+      "category": "public_source_observation",
+      "id": "public-source-observation:Zenodo exact-name creator records",
+      "reason": "A durable review decision matches the exact before/after public-source observation.",
+      "sources": [
+        "data/public-source-observation-decisions.json",
+        "reports/public_source_snapshot_2026-08-19.json",
+        "reports/public_source_snapshot_2026-08-26.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "website",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "acknowledged_not_catalogued",
+        "fork": false,
+        "full_name": "ActiveInferenceInstitute/aii-org",
+        "html_url": "https://github.com/ActiveInferenceInstitute/aii-org",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:ActiveInferenceInstitute/aii-org",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "ActiveInferenceInstitute/ants",
+        "html_url": "https://github.com/ActiveInferenceInstitute/ants",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:ActiveInferenceInstitute/ants",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "website",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "acknowledged_not_catalogued",
+        "fork": false,
+        "full_name": "ActiveInferenceInstitute/institute_website",
+        "html_url": "https://github.com/ActiveInferenceInstitute/institute_website",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:ActiveInferenceInstitute/institute_website",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "ActiveInferenceInstitute/pymdp",
+        "html_url": "https://github.com/ActiveInferenceInstitute/pymdp",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:ActiveInferenceInstitute/pymdp",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/AI-ConductorBlindSpot",
+        "html_url": "https://github.com/docxology/AI-ConductorBlindSpot",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/AI-ConductorBlindSpot",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/ATLAS",
+        "html_url": "https://github.com/docxology/ATLAS",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/ATLAS",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/ActiveInference.jl",
+        "html_url": "https://github.com/docxology/ActiveInference.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/ActiveInference.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/Active_Inference_for_Fun",
+        "html_url": "https://github.com/docxology/Active_Inference_for_Fun",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/Active_Inference_for_Fun",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/AgentLaboratory",
+        "html_url": "https://github.com/docxology/AgentLaboratory",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/AgentLaboratory",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/BayesBase.jl",
+        "html_url": "https://github.com/docxology/BayesBase.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/BayesBase.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/CatColab",
+        "html_url": "https://github.com/docxology/CatColab",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/CatColab",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/Cortex.jl",
+        "html_url": "https://github.com/docxology/Cortex.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/Cortex.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/EFEasVFE",
+        "html_url": "https://github.com/docxology/EFEasVFE",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/EFEasVFE",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/ExponentialFamily.jl",
+        "html_url": "https://github.com/docxology/ExponentialFamily.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/ExponentialFamily.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/ExponentialFamilyProjection.jl",
+        "html_url": "https://github.com/docxology/ExponentialFamilyProjection.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/ExponentialFamilyProjection.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/FEP_RL_VAE",
+        "html_url": "https://github.com/docxology/FEP_RL_VAE",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/FEP_RL_VAE",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/FPF",
+        "html_url": "https://github.com/docxology/FPF",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/FPF",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/GEO-INFER-1",
+        "html_url": "https://github.com/docxology/GEO-INFER-1",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/GEO-INFER-1",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/GitNexus",
+        "html_url": "https://github.com/docxology/GitNexus",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/GitNexus",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/GraphPPL.jl",
+        "html_url": "https://github.com/docxology/GraphPPL.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/GraphPPL.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "empty_repo",
+        "archived": true,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "acknowledged_not_catalogued",
+        "fork": false,
+        "full_name": "docxology/GrowthModel",
+        "html_url": "https://github.com/docxology/GrowthModel",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/GrowthModel",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/GuildNet",
+        "html_url": "https://github.com/docxology/GuildNet",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/GuildNet",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/HSMM_covariates",
+        "html_url": "https://github.com/docxology/HSMM_covariates",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/HSMM_covariates",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/InsightSpike-AI",
+        "html_url": "https://github.com/docxology/InsightSpike-AI",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/InsightSpike-AI",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/IntroductionToAlgebraicEvaluation",
+        "html_url": "https://github.com/docxology/IntroductionToAlgebraicEvaluation",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/IntroductionToAlgebraicEvaluation",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/Journal-Utilities",
+        "html_url": "https://github.com/docxology/Journal-Utilities",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/Journal-Utilities",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/MatrixCorrectionTools.jl",
+        "html_url": "https://github.com/docxology/MatrixCorrectionTools.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/MatrixCorrectionTools.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/MemOS",
+        "html_url": "https://github.com/docxology/MemOS",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/MemOS",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/ODEM",
+        "html_url": "https://github.com/docxology/ODEM",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/ODEM",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/OpenGauss",
+        "html_url": "https://github.com/docxology/OpenGauss",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/OpenGauss",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/PackageTemplate",
+        "html_url": "https://github.com/docxology/PackageTemplate",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/PackageTemplate",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/Personal_AI_Infrastructure",
+        "html_url": "https://github.com/docxology/Personal_AI_Infrastructure",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/Personal_AI_Infrastructure",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "profile_infrastructure",
+        "archived": true,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "acknowledged_not_catalogued",
+        "fork": false,
+        "full_name": "docxology/README",
+        "html_url": "https://github.com/docxology/README",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/README",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/ReactiveMP.jl",
+        "html_url": "https://github.com/docxology/ReactiveMP.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/ReactiveMP.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/Rocket.jl",
+        "html_url": "https://github.com/docxology/Rocket.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/Rocket.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/RxEnvironments.jl",
+        "html_url": "https://github.com/docxology/RxEnvironments.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/RxEnvironments.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/RxGP.jl",
+        "html_url": "https://github.com/docxology/RxGP.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/RxGP.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/RxInfer.jl",
+        "html_url": "https://github.com/docxology/RxInfer.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/RxInfer.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/RxInferBenchmarks.jl",
+        "html_url": "https://github.com/docxology/RxInferBenchmarks.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/RxInferBenchmarks.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/RxInferExamples.jl",
+        "html_url": "https://github.com/docxology/RxInferExamples.jl",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/RxInferExamples.jl",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/RxInferServer",
+        "html_url": "https://github.com/docxology/RxInferServer",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/RxInferServer",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/School_of_Tomorrow",
+        "html_url": "https://github.com/docxology/School_of_Tomorrow",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/School_of_Tomorrow",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/active-inference-sim-lab",
+        "html_url": "https://github.com/docxology/active-inference-sim-lab",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/active-inference-sim-lab",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/ad4m",
+        "html_url": "https://github.com/docxology/ad4m",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/ad4m",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/aif_iwai2025_thoughtseeds",
+        "html_url": "https://github.com/docxology/aif_iwai2025_thoughtseeds",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/aif_iwai2025_thoughtseeds",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/amalgkit",
+        "html_url": "https://github.com/docxology/amalgkit",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/amalgkit",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/ant_social_complexity",
+        "html_url": "https://github.com/docxology/ant_social_complexity",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/ant_social_complexity",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/ants",
+        "html_url": "https://github.com/docxology/ants",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/ants",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/aqua-js-cli",
+        "html_url": "https://github.com/docxology/aqua-js-cli",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/aqua-js-cli",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/axiom",
+        "html_url": "https://github.com/docxology/axiom",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/axiom",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/cogames",
+        "html_url": "https://github.com/docxology/cogames",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/cogames",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "rename_duplicate",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "acknowledged_not_catalogued",
+        "fork": false,
+        "full_name": "docxology/crescent_city",
+        "html_url": "https://github.com/docxology/crescent_city",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/crescent_city",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/dickens-arxiv24",
+        "html_url": "https://github.com/docxology/dickens-arxiv24",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/dickens-arxiv24",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "profile_repo",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "acknowledged_not_catalogued",
+        "fork": false,
+        "full_name": "docxology/docxology",
+        "html_url": "https://github.com/docxology/docxology",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/docxology",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/egs-trans-jspace-convergence",
+        "html_url": "https://github.com/docxology/egs-trans-jspace-convergence",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/egs-trans-jspace-convergence",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/eliza",
+        "html_url": "https://github.com/docxology/eliza",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/eliza",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/fact-graph",
+        "html_url": "https://github.com/docxology/fact-graph",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/fact-graph",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/farmOS",
+        "html_url": "https://github.com/docxology/farmOS",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/farmOS",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/flash-clifford",
+        "html_url": "https://github.com/docxology/flash-clifford",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/flash-clifford",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/flybody",
+        "html_url": "https://github.com/docxology/flybody",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/flybody",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/foam",
+        "html_url": "https://github.com/docxology/foam",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/foam",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/gfacs",
+        "html_url": "https://github.com/docxology/gfacs",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/gfacs",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/gno",
+        "html_url": "https://github.com/docxology/gno",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/gno",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/herdr",
+        "html_url": "https://github.com/docxology/herdr",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/herdr",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/hermes-agent-self-evolution",
+        "html_url": "https://github.com/docxology/hermes-agent-self-evolution",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/hermes-agent-self-evolution",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/hongos",
+        "html_url": "https://github.com/docxology/hongos",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/hongos",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "profile_infrastructure",
+        "archived": true,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "acknowledged_not_catalogued",
+        "fork": false,
+        "full_name": "docxology/identity",
+        "html_url": "https://github.com/docxology/identity",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/identity",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "website",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "acknowledged_not_catalogued",
+        "fork": false,
+        "full_name": "docxology/institute_website",
+        "html_url": "https://github.com/docxology/institute_website",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/institute_website",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/ki_us",
+        "html_url": "https://github.com/docxology/ki_us",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/ki_us",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/kmyth",
+        "html_url": "https://github.com/docxology/kmyth",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/kmyth",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "profile_infrastructure",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "acknowledged_not_catalogued",
+        "fork": false,
+        "full_name": "docxology/links",
+        "html_url": "https://github.com/docxology/links",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/links",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/metta-1",
+        "html_url": "https://github.com/docxology/metta-1",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/metta-1",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/mission-control",
+        "html_url": "https://github.com/docxology/mission-control",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/mission-control",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/ngc-learn",
+        "html_url": "https://github.com/docxology/ngc-learn",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/ngc-learn",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/nockchain",
+        "html_url": "https://github.com/docxology/nockchain",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/nockchain",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/nvmath-python",
+        "html_url": "https://github.com/docxology/nvmath-python",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/nvmath-python",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/oh-my-hermes",
+        "html_url": "https://github.com/docxology/oh-my-hermes",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/oh-my-hermes",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/osc-geo-h3grid-srv",
+        "html_url": "https://github.com/docxology/osc-geo-h3grid-srv",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/osc-geo-h3grid-srv",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/osc-geo-h3loader-cli",
+        "html_url": "https://github.com/docxology/osc-geo-h3loader-cli",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/osc-geo-h3loader-cli",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/paws-on-mcp",
+        "html_url": "https://github.com/docxology/paws-on-mcp",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/paws-on-mcp",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "private_mirror",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "acknowledged_not_catalogued",
+        "fork": false,
+        "full_name": "docxology/prior_cognitive_art",
+        "html_url": "https://github.com/docxology/prior_cognitive_art",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/prior_cognitive_art",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/psw.vibelandia.sing13",
+        "html_url": "https://github.com/docxology/psw.vibelandia.sing13",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/psw.vibelandia.sing13",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/pyDMBD",
+        "html_url": "https://github.com/docxology/pyDMBD",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/pyDMBD",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/pydymax",
+        "html_url": "https://github.com/docxology/pydymax",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/pydymax",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/pymdp",
+        "html_url": "https://github.com/docxology/pymdp",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/pymdp",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/quantum-logical-framework",
+        "html_url": "https://github.com/docxology/quantum-logical-framework",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/quantum-logical-framework",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/rxinfer-fastmcp-example",
+        "html_url": "https://github.com/docxology/rxinfer-fastmcp-example",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/rxinfer-fastmcp-example",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/rxinfer-website",
+        "html_url": "https://github.com/docxology/rxinfer-website",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/rxinfer-website",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/smartville",
+        "html_url": "https://github.com/docxology/smartville",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/smartville",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/spm",
+        "html_url": "https://github.com/docxology/spm",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/spm",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/synthobs-egs-planck-scale-harmonic",
+        "html_url": "https://github.com/docxology/synthobs-egs-planck-scale-harmonic",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/synthobs-egs-planck-scale-harmonic",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/systematics-v0.5",
+        "html_url": "https://github.com/docxology/systematics-v0.5",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/systematics-v0.5",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "test_repo",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "acknowledged_not_catalogued",
+        "fork": false,
+        "full_name": "docxology/template-release-smoke",
+        "html_url": "https://github.com/docxology/template-release-smoke",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/template-release-smoke",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "test_repo",
+        "archived": true,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "acknowledged_not_catalogued",
+        "fork": false,
+        "full_name": "docxology/test_public",
+        "html_url": "https://github.com/docxology/test_public",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/test_public",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/thrml",
+        "html_url": "https://github.com/docxology/thrml",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/thrml",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/triton",
+        "html_url": "https://github.com/docxology/triton",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/triton",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/vibeship-spawner-skills",
+        "html_url": "https://github.com/docxology/vibeship-spawner-skills",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/vibeship-spawner-skills",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/yt-transcriber",
+        "html_url": "https://github.com/docxology/yt-transcriber",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/yt-transcriber",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "current": {
+          "citations": 815,
+          "h_index": 14,
+          "i10_index": 16
+        },
+        "observed": {
+          "citations": 815,
+          "h_index": 14,
+          "i10_index": 16
+        },
+        "profile_id": "DXjPFtYAAAAJ",
+        "receipt_valid": true,
+        "receipt_verified_at": "2026-08-26T17:41:35Z"
+      },
+      "category": "scholar_metric_change",
+      "id": "scholar-metrics",
+      "reason": "The direct authenticated Scholar receipt matches the dated snapshot, so no metric change is required.",
+      "sources": [
+        "data/scholar-snapshot.json",
+        "data/scholar-verification-receipt.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "pairing_report_date": "2026-08-26",
+        "pairing_report_generated_at": "2026-08-26T18:35:59Z",
+        "public_source_snapshot_generated_at": "2026-08-26T20:38:56.057530Z",
+        "refresh_note": "",
+        "refresh_state": "stale",
+        "warnings": []
+      },
+      "category": "zenodo_candidate",
+      "id": "zenodo-refresh-incomplete",
+      "reason": "The latest successful GitHub–Zenodo pairing report predates the public-source snapshot and cannot be treated as current release evidence.",
+      "sources": [
+        "reports/paired_publications_2026-08-26.json"
+      ],
+      "status": "deferred"
+    }
+  ],
+  "policy": "Review-only evidence report. It never modifies curated bibliography rows, paper metadata, claims, Scholar metrics, repository classifications, or generated site data. Public observations become curated changes only through an explicit review.",
+  "refresh_context": {
+    "pairing_refresh_note": "",
+    "pairing_refresh_status": "auto"
+  },
+  "schema_version": "1.0",
+  "source_commit": "5c25de204170cdf03c2f341f0fdc10f399aebaa4",
+  "source_tree_sha": "d8fc719ee594870774010b1f067be644e49f1b6e",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
+  "summary": {
+    "applied": 182,
+    "categories": {
+      "ambiguous_doi_change": {
+        "applied": 64,
+        "deferred": 0,
+        "rejected": 0
+      },
+      "biographical_claim_change": {
+        "applied": 10,
+        "deferred": 0,
+        "rejected": 0
+      },
+      "public_source_observation": {
+        "applied": 9,
+        "deferred": 0,
+        "rejected": 0
+      },
+      "repository_classification": {
+        "applied": 98,
+        "deferred": 0,
+        "rejected": 0
+      },
+      "scholar_metric_change": {
+        "applied": 1,
+        "deferred": 0,
+        "rejected": 0
+      },
+      "zenodo_candidate": {
+        "applied": 0,
+        "deferred": 1,
+        "rejected": 0
+      }
+    },
+    "deferred": 1,
+    "items": 183,
+    "rejected": 0,
+    "review_required": true
+  }
+}

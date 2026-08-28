@@ -4,6 +4,7 @@ Rewrite software.html repo grids and data/software-ld.json from pages/SOFTWARE.m
 
 Usage:
     python3 sync_software_html.py           # dry-run: validate counts only
+    python3 sync_software_html.py --check   # fail if source-rendered targets drift
     python3 sync_software_html.py --apply   # write software.html + software-ld.json
 """
 
@@ -24,15 +25,24 @@ from software_table import (  # noqa: E402
     DEFAULT_SOFTWARE_PATH,
     description_html,
     description_plain,
+    doi_role_label_errors,
     iter_software_rows,
     lang_css_class,
     zenodo_url,
 )
+from collection_jsonld import (  # noqa: E402
+    display_paths,
+    inline_collection_ld_marker_block,
+    remove_inline_collection_ld as remove_collection_jsonld,
+    replace_inline_collection_ld as replace_collection_jsonld,
+)
 from count_consistency import parse_software_catalog_counts  # noqa: E402
+from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 
 SOFTWARE_HTML = REPO_ROOT / "software.html"
 SOFTWARE_LD_JSON = REPO_ROOT / "data" / "software-ld.json"
 GITHUB_REPOSITORIES_JSON = REPO_ROOT / "data" / "github-repositories.json"
+SOFTWARE_TEMPLATE = REPO_ROOT / "code" / "templates" / "software.html.tmpl"
 
 LD_SYNC_BEGIN = "<!-- <SOFTWARE_LD_SYNC_BEGIN> -->"
 LD_SYNC_END = "<!-- <SOFTWARE_LD_SYNC_END> -->"
@@ -42,10 +52,35 @@ AII_GRID_BEGIN = "<!-- <SOFTWARE_AII_GRID_BEGIN> -->"
 AII_GRID_END = "<!-- <SOFTWARE_AII_GRID_END> -->"
 DOCX_FOOTER_BEGIN = "<!-- <SOFTWARE_DOCX_FOOTER_BEGIN> -->"
 DOCX_FOOTER_END = "<!-- <SOFTWARE_DOCX_FOOTER_END> -->"
+SOFTWARE_TEMPLATE_TOKENS = (
+    "{{SOFTWARE_INLINE_LD}}",
+    "{{SOFTWARE_DOCX_GRID}}",
+    "{{SOFTWARE_AII_GRID}}",
+    "{{SOFTWARE_DOCX_FOOTER}}",
+)
 
 
 def load_rows() -> list[SoftwareRow]:
     return list(iter_software_rows(DEFAULT_SOFTWARE_PATH))
+
+
+def load_source_template() -> str:
+    """Load the versioned full page frame for the generated catalog output.
+
+    The deployed HTML is an output rather than a template input.  Keeping the
+    non-generated frame here makes a manual body edit observable to both
+    ``--check`` and ``--apply`` instead of silently preserving it.
+    """
+    if not SOFTWARE_TEMPLATE.is_file():
+        raise SystemExit(f"Missing source template {SOFTWARE_TEMPLATE}")
+    template = SOFTWARE_TEMPLATE.read_text(encoding="utf-8")
+    invalid = [token for token in SOFTWARE_TEMPLATE_TOKENS if template.count(token) != 1]
+    if invalid:
+        raise ValueError(
+            "Software template must contain exactly one of each placeholder: "
+            + ", ".join(invalid)
+        )
+    return template
 
 
 def load_github_counts() -> dict[str, int]:
@@ -74,6 +109,9 @@ def split_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[Softwar
 def validate_rows(rows: list[SoftwareRow]) -> tuple[list[SoftwareRow], list[SoftwareRow]]:
     if not rows:
         raise SystemExit("No software rows parsed")
+    role_errors = doi_role_label_errors(rows)
+    if role_errors:
+        raise SystemExit("Ambiguous software DOI-role labels:\n" + "\n".join(f"  - {error}" for error in role_errors))
     expected_docx, expected_aii = parse_software_catalog_counts()
     docx, aii = split_rows(rows)
     if len(docx) != expected_docx:
@@ -168,55 +206,41 @@ def render_docx_footer(docx_count: int) -> str:
 
 def replace_between_markers(text: str, begin: str, end: str, replacement: str) -> str:
     pattern = re.escape(begin) + r"[\s\S]*?" + re.escape(end)
-    if begin not in text or end not in text:
-        raise ValueError(f"Missing markers {begin} / {end} in software.html")
-    return re.sub(pattern, f"{begin}\n{replacement}\n        {end}", text, count=1)
+    if text.count(begin) != 1 or text.count(end) != 1:
+        raise ValueError(f"Expected exactly one marker pair {begin} / {end} in software.html")
+    replaced, replacement_count = re.subn(
+        pattern,
+        f"{begin}\n{replacement}\n        {end}",
+        text,
+        count=1,
+    )
+    if replacement_count != 1:  # Defensive: marker-count checks above should guarantee this.
+        raise ValueError(f"Could not replace markers {begin} / {end} in software.html")
+    return replaced
 
 
 def inline_ld_marker_block(collection: dict) -> str:
-    payload = json.dumps(collection, ensure_ascii=False, separators=(",", ":"))
-    return f"    {LD_SYNC_BEGIN}\n    <script type=\"application/ld+json\">{payload}</script>\n    {LD_SYNC_END}"
+    return inline_collection_ld_marker_block(
+        collection,
+        begin_marker=LD_SYNC_BEGIN,
+        end_marker=LD_SYNC_END,
+        compact=True,
+    )
 
 
 def remove_inline_collection_ld(html_text: str) -> str:
-    start_tag = '<script type="application/ld+json">'
-    end_tag = "</script>"
-    while True:
-        i0 = html_text.find(start_tag)
-        if i0 < 0:
-            break
-        j0 = i0 + len(start_tag)
-        i1 = html_text.find(end_tag, j0)
-        if i1 < 0:
-            break
-        raw = html_text[j0:i1].strip()
-        try:
-            data = json.loads(raw)
-        except json.JSONDecodeError:
-            break
-        if data.get("@type") != "CollectionPage":
-            break
-        html_text = html_text[:i0] + html_text[i1 + len(end_tag) :]
-    return html_text
+    return remove_collection_jsonld(html_text)
 
 
 def replace_inline_collection_ld(html_text: str, collection: dict) -> str:
-    html_text = remove_inline_collection_ld(html_text)
-    marker = inline_ld_marker_block(collection)
-    if LD_SYNC_BEGIN in html_text and LD_SYNC_END in html_text:
-        return re.sub(
-            re.escape(LD_SYNC_BEGIN) + r"[\s\S]*?" + re.escape(LD_SYNC_END),
-            marker.strip(),
-            html_text,
-            count=1,
-        )
-    stylesheet_match = re.search(r'<link rel="stylesheet" href="style\.css(?:\?[^\"]*)?">', html_text)
-    insert_at = stylesheet_match.start() if stylesheet_match else -1
-    if insert_at < 0:
-        insert_at = html_text.find("</head>")
-    if insert_at < 0:
-        raise ValueError("Could not locate insertion point for inline JSON-LD in software.html")
-    return html_text[:insert_at] + marker + "\n    " + html_text[insert_at:]
+    return replace_collection_jsonld(
+        html_text,
+        collection,
+        begin_marker=LD_SYNC_BEGIN,
+        end_marker=LD_SYNC_END,
+        page_label="software",
+        compact=True,
+    )
 
 
 def replace_head_meta(html_text: str, docx_count: int, aii_count: int, github_counts: dict[str, int]) -> str:
@@ -305,21 +329,22 @@ def _assert_collection_consistency(collection: dict, rows: list[SoftwareRow]) ->
         raise SystemExit("mainEntity length mismatch after build")
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--apply", action="store_true", help="Write software.html and software-ld.json")
-    args = parser.parse_args()
+def render_outputs_from_template(
+    rows: list[SoftwareRow] | None,
+    html_template: str,
+) -> dict[Path, str]:
+    """Render software outputs from an explicit template (test seam).
 
-    rows = load_rows()
+    The production renderer below always supplies the versioned source frame.
+    This separation prevents check mode from reusing a generated output as a
+    template simply because a caller has an HTML string available.
+    """
+    rows = rows if rows is not None else load_rows()
     docx, aii = validate_rows(rows)
     github_counts = load_github_counts()
 
-    if not SOFTWARE_HTML.is_file():
-        raise SystemExit(f"Missing {SOFTWARE_HTML}")
-
     collection = build_collection_page(rows)
-    html_out = SOFTWARE_HTML.read_text(encoding="utf-8")
-    html_out = replace_inline_collection_ld(html_out, collection)
+    html_out = replace_inline_collection_ld(html_template, collection)
     html_out = replace_head_meta(html_out, len(docx), len(aii), github_counts)
     html_out = replace_between_markers(html_out, DOCX_GRID_BEGIN, DOCX_GRID_END, render_docx_grid(docx))
     html_out = replace_between_markers(html_out, AII_GRID_BEGIN, AII_GRID_END, render_aii_grid(aii))
@@ -330,19 +355,52 @@ def main() -> None:
     _assert_collection_consistency(collection, rows)
     _assert_html_summary(html_out, len(docx), len(aii), len(rows))
 
-    if not args.apply:
+    return {
+        SOFTWARE_HTML: html_out,
+        SOFTWARE_LD_JSON: json.dumps(collection, indent=4, ensure_ascii=False) + "\n",
+    }
+
+
+def render_outputs(rows: list[SoftwareRow] | None = None) -> dict[Path, str]:
+    """Render every source-owned software target without writing it.
+
+    The output is assembled from the versioned full-page template, the source
+    catalog, and the repository inventory.  It never reads ``software.html``
+    as a template, so ``--check`` catches drift in the hand-authored body frame
+    as well as generated cards and JSON-LD.
+    """
+    return render_outputs_from_template(rows, load_source_template())
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--apply", action="store_true", help="Write software.html and software-ld.json")
+    mode.add_argument("--check", action="store_true", help="Fail if source-rendered software outputs are stale")
+    args = parser.parse_args()
+
+    rows = load_rows()
+    docx, aii = validate_rows(rows)
+    outputs = render_outputs(rows)
+
+    if not args.apply and not args.check:
         print(
             f"OK dry-run: {len(docx)} docxology + {len(aii)} AII rows, "
-            f"software-ld.json would have {len(collection['mainEntity'])} mainEntity items"
+            f"software-ld.json would have {len(rows)} mainEntity items"
         )
         return
 
-    SOFTWARE_LD_JSON.parent.mkdir(parents=True, exist_ok=True)
-    SOFTWARE_LD_JSON.write_text(
-        json.dumps(collection, indent=4, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
-    SOFTWARE_HTML.write_text(html_out, encoding="utf-8")
+    if args.check:
+        stale = stale_output_paths(outputs, repo_root=REPO_ROOT)
+        if stale:
+            raise SystemExit(
+                "Stale source-rendered software outputs: "
+                f"{display_paths(stale, REPO_ROOT)} (run sync_software_html.py --apply)"
+            )
+        print(f"Checked {len(outputs)} software outputs from {len(rows)} catalog rows")
+        return
+
+    write_output_texts(outputs, repo_root=REPO_ROOT)
     print(
         f"Wrote {SOFTWARE_LD_JSON} and {SOFTWARE_HTML} "
         f"({len(rows)} mainEntity + {len(docx)} docx cards + {len(aii)} AII cards)"

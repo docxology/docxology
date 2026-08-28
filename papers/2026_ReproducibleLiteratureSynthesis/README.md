@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

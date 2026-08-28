@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference"
 description: "The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio optimization problem: a corporation recursively improves when realized economic gains finance the next cycle of better prediction and deployment, and the firm's standin..."
 tags: ["active-inference", "expected-free-energy", "recursive-self-improvement", "generalized-notation-notation", "economic-world-model", "portfolio-optimization", "epistemic-value", "reproducible-research"]
@@ -43,10 +44,10 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20976824
+- Canonical DOI: 10.5281/zenodo.20976824
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-28T17:12:26Z
 
 ## Prerequisites
 

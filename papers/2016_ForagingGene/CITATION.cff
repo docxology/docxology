@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "ForagingGene"
 date-released: 2016
+doi: 10.1098/rspb.2016.0841
+url: "https://doi.org/10.1098/rspb.2016.0841"
 authors:
   - family-names: Friedman
     given-names: Daniel A.
@@ -17,3 +19,10 @@ authors:
     given-names: Noa
   - family-names: Gordon
     given-names: Deborah M.
+identifiers:
+  - type: doi
+    value: "10.1098/rspb.2016.0841"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1098/rspb.2016.0841"
+    description: "Canonical citation DOI resolver"

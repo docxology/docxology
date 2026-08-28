@@ -37,14 +37,14 @@
       "end_year": 2023,
       "details": [
         "Co-mentors: Prof. Brian Johnson (UC Davis) and Prof. Tim Linksvayer (Arizona State University).",
-        "NSF Postdoctoral Research Fellowship in Biology (PRFB), award DBI-2010290; NSF budget period 2020-2022 with affiliation extending to 2023.",
+        "NSF Postdoctoral Fellowship in Biology, award DBI-2010290; official award dates 2020-10-01 to 2023-09-30.",
         "Genomics, epigenomics, transcriptomics, and behavior in eusocial insects, mainly ants and bees.",
         "Science research, mentoring, participation, service, and organizing events and communities online."
       ],
       "links": [
         {
-          "label": "NSF DBI-2010290",
-          "url": "https://grantome.com/grant/NSF/DBI-2010290"
+          "label": "NSF award DBI-2010290",
+          "url": "https://api.nsf.gov/services/v1/awards/2010290.json"
         },
         {
           "label": "UC Davis",
@@ -182,7 +182,7 @@
       "links": [
         {
           "label": "AII officers",
-          "url": "https://www.activeinference.institute/officers"
+          "url": "https://activeinference.institute/structure/officers/"
         },
         {
           "label": "AII",
@@ -525,11 +525,11 @@
       "id": "nsf-prfb",
       "year": 2020,
       "name": "NSF Postdoctoral Research Fellowship in Biology",
-      "details": "Award DBI-2010290; NSF budget period 2020-2022.",
+      "details": "Award DBI-2010290; official award dates 2020-10-01 to 2023-09-30.",
       "links": [
         {
-          "label": "NSF DBI-2010290",
-          "url": "https://grantome.com/grant/NSF/DBI-2010290"
+          "label": "NSF award DBI-2010290",
+          "url": "https://api.nsf.gov/services/v1/awards/2010290.json"
         }
       ],
       "variants": [
@@ -2016,7 +2016,7 @@
       "id": "christies-curio-cards-2021",
       "year": 2021,
       "name": "Curio Cards",
-      "description": "A full Curio Cards set sold at Christie's on October 1, 2021 for 393 ETH, approximately $1.2 million.",
+      "description": "A full Curio Cards set sold at Christie's New York on September 30, 2021 for 393 ETH ($1,202,108).",
       "links": [
         {
           "label": "Christie's Curio Cards lot",
@@ -2136,7 +2136,7 @@
       "id": "curio-cards-2017",
       "year": 2017,
       "name": "Curio Cards",
-      "description": "Early Ethereum art NFT project; art for Curio Cards 24, 25, and 26.",
+      "description": "Early Ethereum art NFT collection that debuted May 9, 2017; Daniel Friedman created Curio Cards 24, 25, and 26.",
       "links": [
         {
           "label": "Curio Cards artist",

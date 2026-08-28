@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

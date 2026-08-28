@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "TemporalDepth"
 description: "This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization. Using Active Inference, we formalize how subjective temporal experience i..."
 tags: ["temporal-depth", "depersonalization", "self-coherence", "active-inference", "predictive-processing", "temporal-integration", "clinical-psychology"]
 domain: "Active Inference"
 citation: "Daniel A. Friedman, et al. (2025). *TemporalDepth*. Active Inference."
+doi: "10.3389/fpsyg.2025.1585315"
 ---
 
 # TemporalDepth
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.3389/fpsyg.2025.1585315
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.3389/fpsyg.2025.1585315`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

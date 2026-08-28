@@ -4,16 +4,25 @@ type: article
 title: "Push and Pull: A priming sequence"
 version: "1.0"
 date-released: 2024-02-14
-doi: 10.5281/zenodo.10659375
-url: "https://doi.org/10.5281/zenodo.10659375"
+doi: 10.5281/zenodo.10659374
+url: "https://doi.org/10.5281/zenodo.10659374"
 authors:
   - family-names: Friedman
     given-names: Daniel Ari
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.10659375
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.10659374"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.10659374"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.10659375"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.10659375"
+    description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
     value: "https://zenodo.org/records/10659375"
-    description: "Zenodo landing page"
+    description: "Version/download landing page (Zenodo artifact)"

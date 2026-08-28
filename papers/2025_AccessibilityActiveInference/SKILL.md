@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "AccessibilityActiveInference"
 description: "A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Devel..."
 tags: ["accessibility", "active-inference", "pedagogy", "summer-school-curriculum", "generative-playbooks", "open-source-education", "neurotechnology", "neurodiversity", "cognitive-security"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.15061666
+- Canonical DOI: 10.5281/zenodo.15061666
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:40Z

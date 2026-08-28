@@ -36,3 +36,6 @@ jobs:
 
       - name: Run tests
         run: uv run python3 -m pytest code/tests -q
+
+      - name: Lint invalid Python escape sequences
+        run: uv run --group lint ruff check --select W605 code

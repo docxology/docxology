@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 ForagingGene
 
 **Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon** (2016) · *Proceedings of the Royal Society B*

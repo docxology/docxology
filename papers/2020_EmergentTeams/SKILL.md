@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "EmergentTeams"
 description: "Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operation..."
 tags: ["emergent-teams", "operations-orders", "team-formation", "innovation", "facilitation", "collective-intelligence", "hackathons", "research-accelerators"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.3986084
+- Canonical DOI: 10.5281/zenodo.3986084
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:43Z

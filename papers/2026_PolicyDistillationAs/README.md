@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 On-Policy Distillation as Active Inference in Finite Variational Models
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
@@ -27,21 +29,18 @@
 ## Artifacts
 
 - GitHub repository: [ActiveInferenceInstitute/on_policy_distillation](https://github.com/ActiveInferenceInstitute/on_policy_distillation)
-- GitHub release: [v1.0.0](https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.0)
+- GitHub release: [v1.0.2](https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2)
 - DOI: [10.5281/zenodo.20747834](https://doi.org/10.5281/zenodo.20747834)
+- Artifact DOI: [10.5281/zenodo.20749817](https://doi.org/10.5281/zenodo.20749817)
 - Zenodo record: [https://zenodo.org/records/20747834](https://zenodo.org/records/20747834)
 - PDF: [Friedman_2026_Onpolicy_c6b5ec49.pdf](Friedman_2026_Onpolicy_c6b5ec49.pdf)
-- PDF SHA-256: db0f2e4f193efa4dd65058d8d8094659a7c9200454acb2da14e88c304f29819e
+- PDF SHA-256: c6b5ec494915e6e046f24cf723f8dbbf93a5b168544daed3cca14c089d4087aa
 
 ## Citation
 
 > Daniel Ari Friedman (2026). *On-Policy Distillation as Active Inference in Finite Variational Models*. Zenodo. DOI: 10.5281/zenodo.20747834. URL: https://doi.org/10.5281/zenodo.20747834.
 
 ## Related
-
-- GitHub release: https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2
-
-- GitHub release: https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.1
 
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
 - [All Papers](../README.md)

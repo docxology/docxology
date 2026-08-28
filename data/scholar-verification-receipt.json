@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "receipt_type": "google_scholar_direct_authenticated",
+  "profile_id": "DXjPFtYAAAAJ",
+  "direct": true,
+  "authenticated": true,
+  "verified_at": "2026-08-26T17:41:35Z",
+  "snapshot_path": "data/scholar-snapshot.json",
+  "snapshot_sha256": "d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2",
+  "snapshot_as_of": "2026-08-26",
+  "metrics": {
+    "citations": 815,
+    "h_index": 14,
+    "i10_index": 16,
+    "since_2021": {
+      "citations": 586,
+      "h_index": 14,
+      "i10_index": 14
+    }
+  },
+  "source": "Direct authenticated browser observation of https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en in the canonical profile-owner session.",
+  "method": "Direct non-cached authenticated Chrome browser-session fetch on 2026-08-26. Profile-owner controls were visible; observed all-time metrics were 815 citations, h-index 14, and i10-index 16 (Since-2021: 586 / 14 / 14)."
+}

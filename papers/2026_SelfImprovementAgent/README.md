@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Self-Improvement Agent Harness: A Deterministic SIA Exemplar
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

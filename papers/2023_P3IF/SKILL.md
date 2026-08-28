@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "P3IF"
 description: "The Properties, Processes, and Perspectives Inter-Framework (P3IF) multiplexes interdisciplinary requirements frameworks to manage information risk and foster cognitive security. P3IF provides structu..."
 tags: ["p3if", "information-risk", "cognitive-security", "interdisciplinary-frameworks", "requirements-management", "dhs", "health-security"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.10034511
+- Canonical DOI: 10.5281/zenodo.10034511
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:20Z

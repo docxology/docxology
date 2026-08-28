@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "COGANT: Deterministic Codebase-to-GNN Translation"
 description: "COGANT (Codebase-to-GNN Translation) deterministically converts software repositories into structured Active Inference artifacts expressed in the Active Inference Institute's Generalized Notation Notation (GNN). It is an evidence compiler: it propaga..."
 tags: ["program-analysis", "generalized-notation-notation", "gnn", "intermediate-representation", "code-property-graph", "active-inference", "reproducible-research", "codebase-to-model-translation", "cognitive-ecosystem-modeling"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *COGANT: Deterministic Codebase-to-GNN Translation*. Computational."
 doi: "10.5281/zenodo.20705350"
+artifact_doi: "10.5281/zenodo.20705351"
 ---
 
 # COGANT: Deterministic Codebase-to-GNN Translation
@@ -39,10 +41,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20705350
+- Canonical DOI: 10.5281/zenodo.20705350
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-10T19:08:24Z
+- Last checked: 2026-08-28T17:12:25Z
+- Artifact DOI: 10.5281/zenodo.20705351
 
 ## Prerequisites
 

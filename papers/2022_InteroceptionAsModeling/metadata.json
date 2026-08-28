@@ -1,8 +1,8 @@
 {
   "title": "Interoception as modeling, allostasis as control",
   "version": "v1",
-  "doi": "10.5281/zenodo.7400709",
-  "doi_url": "https://doi.org/10.5281/zenodo.7400709",
+  "doi": "10.5281/zenodo.7400708",
+  "doi_url": "https://doi.org/10.5281/zenodo.7400708",
   "zenodo_record": "https://zenodo.org/records/7400709",
   "record_id": "7400709",
   "publication_date": "2022-11-03",
@@ -73,5 +73,7 @@
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.7400709",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7400709"
 }

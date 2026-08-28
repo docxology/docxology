@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 GeneralizedNotationNotation (GNN)
 
 **Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors** (2026) · *Zenodo*

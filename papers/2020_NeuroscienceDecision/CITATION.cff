@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "NeuroscienceDecision"
 date-released: 2020
+doi: 10.34700/8pg4-0h12
+url: "https://doi.org/10.34700/8pg4-0h12"
 authors:
   - family-names: Hanks
     given-names: Timothy
@@ -11,3 +13,10 @@ authors:
   - family-names: Friedman
     given-names: Daniel A.
     orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: "10.34700/8pg4-0h12"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.34700/8pg4-0h12"
+    description: "Canonical citation DOI resolver"

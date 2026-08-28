@@ -4,8 +4,9 @@
   "doi": "10.5281/zenodo.20789899",
   "doi_url": "https://doi.org/10.5281/zenodo.20789899",
   "concept_doi": "10.5281/zenodo.20789899",
-  "version_doi": "10.5281/zenodo.20789916",
-  "zenodo_record": "https://zenodo.org/records/20789899",
+  "artifact_doi": "10.5281/zenodo.20789916",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20789916",
+  "zenodo_record": "https://zenodo.org/records/20789916",
   "record_id": "20789916",
   "publication_date": "2026-06-21",
   "resource_type": {

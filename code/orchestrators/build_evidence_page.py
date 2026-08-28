@@ -14,6 +14,7 @@ HTML_OUT = REPO_ROOT / "evidence.html"
 MD_OUT = REPO_ROOT / "pages" / "EVIDENCE.md"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Evidence", "evidence.html")]
@@ -47,9 +48,9 @@ def _head_extra() -> str:
     )
 
 try:
-    from report_paths import latest_report, rel, report_date_string
+    from report_paths import latest_source_report, rel, report_date_string
 except ImportError:  # pragma: no cover - package import path
-    from .report_paths import latest_report, rel, report_date_string
+    from .report_paths import latest_source_report, rel, report_date_string
 
 
 def h(value: object) -> str:
@@ -71,7 +72,7 @@ def latest_report_link(pattern: str, _fallback: str, prefix: str = "") -> str:
     """Resolve the newest matching report, or fail rather than emitting a stale
     hardcoded path that would mask a missing report."""
     try:
-        path = rel(latest_report(pattern))
+        path = rel(latest_source_report(pattern))
     except FileNotFoundError:
         raise FileNotFoundError(
             f"build_evidence_page: no report matches {pattern!r}; refusing a stale fallback link"
@@ -239,13 +240,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if evidence pages are stale")
     args = parser.parse_args()
-    stale = []
-    for path, content in outputs().items():
-        if args.check:
-            if not path.exists() or path.read_text(encoding="utf-8") != content:
-                stale.append(str(path.relative_to(REPO_ROOT)))
-        else:
-            path.write_text(content, encoding="utf-8")
+    rendered_outputs = outputs()
+    stale = (
+        [str(path.relative_to(REPO_ROOT)) for path in stale_output_paths(rendered_outputs, repo_root=REPO_ROOT)]
+        if args.check
+        else []
+    )
+    if not args.check:
+        write_output_texts(rendered_outputs, repo_root=REPO_ROOT)
     if stale:
         raise SystemExit("Stale generated evidence pages: " + ", ".join(stale))
     print(("checked" if args.check else "wrote") + " evidence pages")

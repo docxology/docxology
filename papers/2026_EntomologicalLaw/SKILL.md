@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon"
 description: "<p>There is no statute, treatise, or law-school casebook titled "Entomological Law." The phrase names a synthetic field &mdash; the convergence zone where the six-legged world repeatedly forces the legal system to answer questions it was not designed..."
 tags: ["entomological-law", "legal-entomology", "forensic-entomology", "endangered-species", "invasive-species", "insect-welfare", "gene-drive", "biological-weapons-convention", "reproducible-legal-scholarship"]
@@ -19,9 +20,8 @@ This work addresses topics in **Computational**: entomological law, legal entomo
 
 Primary methods and techniques applied in this work:
 
-- Field observation
-- Population genetics analysis
-- Behavioral assays
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 
@@ -37,10 +37,10 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.21137276
+- Canonical DOI: 10.5281/zenodo.21137276
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-28T17:12:26Z
 
 ## Prerequisites
 

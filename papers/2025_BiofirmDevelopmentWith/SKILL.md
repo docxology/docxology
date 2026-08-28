@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024"
 description: "Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024 &nbsp;"
 tags: ["biofirmdevelopmentwith"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.14861596
+- Canonical DOI: 10.5281/zenodo.14861596
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-05-30T18:56:01Z

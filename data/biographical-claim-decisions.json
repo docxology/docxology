@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "policy": "Each decision binds the exact canonical claim and its cited public-source evidence. A changed digest must return to review.",
+  "decisions": [
+    {
+      "id": "biographical-claim:aii-board-count",
+      "claim_id": "aii-board-count",
+      "claim_sha256": "8a12958e67a5c091494ee21e9982ac9a84241b524daba76fd920bbbd03c093d0",
+      "evidence_sha256": "95d419bea8ad4cc94d551d4a42a8f8f0fea993bb5acb8cf261d3fe72cd0fde36",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "User-authorized review applied the current 11-member board count from the official board page.",
+      "curated_targets": [
+        "code/orchestrators/export_agent_data.py",
+        "pages/LINKS.md",
+        "pages/WIKIPEDIA.md",
+        "pages/VERIFICATION_LOG.md",
+        "data/verification-log.json"
+      ]
+    },
+    {
+      "id": "biographical-claim:aii-officer-roles",
+      "claim_id": "aii-officer-roles",
+      "claim_sha256": "651a81aa350833153341fb1267883d63096bb5c49fc174dc702ddded6a7e3327",
+      "evidence_sha256": "92c05b35b254a7511bf0b20a9993bbf5f8f1f52dc16d64184307ad45050ba71e",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "User-authorized review applied only the current official officer roles and stopped reasserting unrefreshed historical office dates.",
+      "curated_targets": [
+        "code/orchestrators/export_agent_data.py",
+        "pages/PROFILE.md",
+        "pages/VERIFICATION_LOG.md",
+        "data/verification-log.json"
+      ]
+    },
+    {
+      "id": "biographical-claim:aii-scientific-advisory-board-count",
+      "claim_id": "aii-scientific-advisory-board-count",
+      "claim_sha256": "baea4a0d07e11c374907fc656d126c929c1092dcbe9d7ff848fad8f727e1d9e7",
+      "evidence_sha256": "696082534953d1f42556b5f9fb09a05bca0d4ab0e332cd731d25c00c2e86be17",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "User-authorized review applied the official page's current 32-member Scientific Advisory Board count.",
+      "curated_targets": [
+        "code/orchestrators/export_agent_data.py",
+        "pages/WIKIPEDIA.md",
+        "pages/VERIFICATION_LOG.md",
+        "data/verification-log.json"
+      ]
+    },
+    {
+      "id": "biographical-claim:aii-textbook-cohorts",
+      "claim_id": "aii-textbook-cohorts",
+      "claim_sha256": "812951d77b2b7c0415143cd9b998503dd67265ee79c770008bf25281b7fec346",
+      "evidence_sha256": "4382dc302fc3b9a7e58197ef20f1dffa39aabd68057a6d943c60497aa2b77f9f",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "User-authorized review applied the official program wording: nine completed 2022-textbook cohorts plus a live first 2026 Fundamentals cohort.",
+      "curated_targets": [
+        "AGENTS.md",
+        "README.md",
+        "index.html",
+        "pages/PROFILE.md",
+        "pages/VIDEOS.md",
+        "code/orchestrators/export_agent_data.py"
+      ]
+    },
+    {
+      "id": "biographical-claim:cogsec-role",
+      "claim_id": "cogsec-role",
+      "claim_sha256": "2664634d343e25ba56cc6b333823fd1a547570807f6bf377070afce53f6f7672",
+      "evidence_sha256": "922fb2ac49f37fcc94ca1b9efb33855ede46c834bf68e42e4460150a8595644b",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "User-authorized review retained the cautious COGSEC research-context claim without inferring a stronger personal title.",
+      "curated_targets": [
+        "code/orchestrators/export_agent_data.py",
+        "data/verification-log.json"
+      ]
+    },
+    {
+      "id": "biographical-claim:college-of-the-redwoods-teaching",
+      "claim_id": "college-of-the-redwoods-teaching",
+      "claim_sha256": "00d80689b59378ebea09e0c4cd12a7830ef8274af810cda0069b37c8331e2291",
+      "evidence_sha256": "8cefe0fd5e3396f1019d99f7087aa4f3d3d8e4792b92153c4a83635fd0411723",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "User-authorized principal confirmation applied BIOL-1 at Pelican Bay for Spring and Fall 2026 and BIOL-8 for Spring 2026 without claiming a public-schedule verification.",
+      "curated_targets": [
+        "AGENTS.md",
+        "README.md",
+        "index.html",
+        "pages/COLLABORATORS.md",
+        "pages/PROFILE.md",
+        "pages/VERIFICATION_LOG.md",
+        "pages/WIKIPEDIA.md",
+        "data/verification-log.json",
+        "code/orchestrators/export_agent_data.py"
+      ]
+    },
+    {
+      "id": "biographical-claim:curio-cards-early-ethereum-art",
+      "claim_id": "curio-cards-early-ethereum-art",
+      "claim_sha256": "6d41527d8091fc8a14692c030b7fb19bb94dc1f04a383ebbd83e2e51bc1006c4",
+      "evidence_sha256": "0d93662adc578166a3f1e81aad95acc747f9e03d7dc953cbfa85cc7685f24e79",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "User-authorized review corrected the collection debut, 2017 minting window, and Christie's sale wording without assigning the May 9 date to individual cards.",
+      "curated_targets": [
+        "README.md",
+        "pages/LINKS.md",
+        "pages/PROFILE.md",
+        "pages/VERIFICATION_LOG.md",
+        "pages/WIKIPEDIA.md",
+        "resume/source.json",
+        "data/verification-log.json",
+        "code/orchestrators/export_agent_data.py"
+      ]
+    },
+    {
+      "id": "biographical-claim:nsf-postdoc-affiliation",
+      "claim_id": "nsf-postdoc-affiliation",
+      "claim_sha256": "c643f323bc980487ba78c87dfcf1d58649839cc28578caf9583ca5fade74cbf4",
+      "evidence_sha256": "f82540dbc202c1e2e17ef3f0054f3f78999a146654f34b0cabffac50db572b2c",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "User-authorized review replaced the unsupported budget/no-cost-extension wording with official NSF award dates and the named co-training arrangement.",
+      "curated_targets": [
+        "AGENTS.md",
+        "README.md",
+        "pages/PROFILE.md",
+        "pages/VERIFICATION_LOG.md",
+        "resume/source.json",
+        "data/verification-log.json",
+        "code/orchestrators/export_agent_data.py"
+      ]
+    },
+    {
+      "id": "biographical-claim:orcid-canonical-identifier",
+      "claim_id": "orcid-canonical-identifier",
+      "claim_sha256": "a54f4c21de7d19a16a1d7d6353257da618161f5fbbb903bbb0f7fe9d51e91806",
+      "evidence_sha256": "185e5e714908b117c2f867f373ca8a20c12ebb963436bd37f20fb9376cb0a7ec",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "User-authorized review separates ORCID's secondary Scholar link from this repository's direct-authenticated canonical-metrics policy.",
+      "curated_targets": [
+        "AGENTS.md",
+        "code/orchestrators/export_agent_data.py"
+      ]
+    },
+    {
+      "id": "biographical-claim:stanford-phd",
+      "claim_id": "stanford-phd",
+      "claim_sha256": "346193b6337f45aeb650e7ff110c8084435f27c3468d72db2067f449ab7df132",
+      "evidence_sha256": "25a797f52c51eb59a63acec5c012bb95c8c4de0630e63a02b50db85d44b93141",
+      "decision": "acknowledged",
+      "decided_by": "user",
+      "decided_at": "2026-08-26T17:44:21Z",
+      "rationale": "User-authorized review refreshed the institutional Stanford record and canonical HTTPS/MODS sources.",
+      "curated_targets": [
+        "pages/LINKS.md",
+        "pages/PROFILE.md",
+        "data/verification-log.json",
+        "code/orchestrators/export_agent_data.py"
+      ]
+    }
+  ]
+}

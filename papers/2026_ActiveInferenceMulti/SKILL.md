@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Active Inference Multi-Track Exemplar"
 description: "We study a minimal Active Inference stack on toy models: a Bernoulli–Ising analytical oracle, a pymdp T-maze rollout, and a sheaf-indexed compose contract that binds 34 fragment tracks into 12 flat IMRAD sections. The methodological contribution is a..."
 tags: ["active-inference", "pymdp", "sophisticated-inference", "generalized-notation-notation", "lean"]
@@ -39,10 +40,10 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20417021
+- Canonical DOI: 10.5281/zenodo.20417021
 - PDF SHA-256: f191b48f94394cab17069fd04502c59fc1c287e7893eb078e05ba4be04d4a04c
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-28T17:12:23Z
 
 ## Prerequisites
 

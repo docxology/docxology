@@ -3,9 +3,18 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "AntConsciousness"
 date-released: 2019
+doi: 10.1007/s11229-019-02130-y
+url: "https://doi.org/10.1007/s11229-019-02130-y"
 authors:
   - family-names: Friedman
     given-names: Daniel A.
     orcid: "https://orcid.org/0000-0001-6232-9096"
   - family-names: Søvik
     given-names: Eirik
+identifiers:
+  - type: doi
+    value: "10.1007/s11229-019-02130-y"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1007/s11229-019-02130-y"
+    description: "Canonical citation DOI resolver"

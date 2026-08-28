@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
@@ -42,8 +44,6 @@
 > Daniel Ari Friedman (2026). *AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference*. Zenodo. DOI: 10.5281/zenodo.20976824. URL: https://doi.org/10.5281/zenodo.20976824.
 
 ## Related
-
-- GitHub release: https://github.com/docxology/alphacogant/releases/tag/v1.0.0
 
 - [Full Bibliography](../../pages/BIBLIOGRAPHY.md)
 - [All Papers](../README.md)

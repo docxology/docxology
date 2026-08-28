@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧬 HoneyBeeEvolution
 
 **Daniel A. Friedman, Brian R. Johnson** (2015) · *Molecular Biology & Evolution*

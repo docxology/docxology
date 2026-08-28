@@ -1,8 +1,10 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20286171-blue)](https://doi.org/10.5281/zenodo.20286171)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20286170-blue)](https://doi.org/10.5281/zenodo.20286170)
 
 ---
 
@@ -28,14 +30,15 @@
 
 - GitHub repository: [docxology/crescent_city](https://github.com/docxology/crescent_city)
 - GitHub release: [v1.0.0](https://github.com/docxology/crescent_city/releases/tag/v1.0.0)
-- DOI: [10.5281/zenodo.20286171](https://doi.org/10.5281/zenodo.20286171)
+- DOI: [10.5281/zenodo.20286170](https://doi.org/10.5281/zenodo.20286170)
+- Artifact DOI: [10.5281/zenodo.20286171](https://doi.org/10.5281/zenodo.20286171)
 - Zenodo record: [https://zenodo.org/records/20286171](https://zenodo.org/records/20286171)
 - PDF: [crescent_city_v1_DAF_05_19_2026.pdf](crescent_city_v1_DAF_05_19_2026.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20286171)
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast*. Zenodo. DOI: 10.5281/zenodo.20286171. URL: https://doi.org/10.5281/zenodo.20286171.
+> Daniel Ari Friedman (2026). *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast*. Zenodo. DOI: 10.5281/zenodo.20286170. URL: https://doi.org/10.5281/zenodo.20286170.
 
 ## Related
 

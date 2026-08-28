@@ -1,8 +1,8 @@
 {
   "title": "Beacons - pre emulation of social cortex",
   "version": null,
-  "doi": "10.5281/zenodo.14737060",
-  "doi_url": "https://doi.org/10.5281/zenodo.14737060",
+  "doi": "10.5281/zenodo.14737059",
+  "doi_url": "https://doi.org/10.5281/zenodo.14737059",
   "zenodo_record": "https://zenodo.org/records/14737060",
   "record_id": "14737060",
   "publication_date": "2025-01-25",
@@ -56,5 +56,7 @@
     "2015_CryptoJews",
     "2015_EhrlichialInfection",
     "2015_HoneyBeeEvolution"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.14737060",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.14737060"
 }

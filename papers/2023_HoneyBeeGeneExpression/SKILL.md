@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "HoneyBeeGeneExpression"
 description: "The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novel..."
 tags: ["honey-bees", "apis-mellifera", "gene-expression", "rna-seq", "novel-traits", "taxonomically-restricted-genes", "coding-sequence-evolution"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.10400744
+- Canonical DOI: 10.5281/zenodo.10400744
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:17Z

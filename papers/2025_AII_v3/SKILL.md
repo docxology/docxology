@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "AII_v3"
 description: "Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement. Covers the institu..."
 tags: ["active-inference-institute", "organizational-overview", "research-programs", "educational-initiatives", "community"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.17982447
+- Canonical DOI: 10.5281/zenodo.17982447
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:38Z

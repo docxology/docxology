@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 SinglePheromone
 
 **Eric Saund, Daniel Ari Friedman** (2023) · *Cognitive Systems Research*

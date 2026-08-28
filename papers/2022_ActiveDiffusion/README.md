@@ -1,4 +1,6 @@
-# 📄 ActiveDiffusion
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🌍 ActiveDiffusion
 
 **Jakub Smékal, Daniel Friedman** (2022) · *Zenodo*
 

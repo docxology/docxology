@@ -1,4 +1,6 @@
-# 📄 BeforePragmatism
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎨 BeforePragmatism
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 

@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ EmergentTeams
 
 **Daniel A. Friedman, R.J. Cordes, Scott David** (2020) · *Zenodo*

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "SystemsProcesses"
 description: "This presentation explores roads from Systems Processes to Active Inference, examining the warp and weave of metatheoretical frameworks. The work discusses how systems science concepts connect to and..."
 tags: ["systems-processes", "active-inference", "systems-science", "metatheory", "process-philosophy", "anticipatory-systems"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.17138223
+- Canonical DOI: 10.5281/zenodo.17138223
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:26:00Z

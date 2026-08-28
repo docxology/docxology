@@ -1,8 +1,10 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior"
 
 **Rémi Tison, Dean Tickles, Bleu Knight, Daniel Friedman** (2022) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7401875-blue)](https://doi.org/10.5281/zenodo.7401875)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7401874-blue)](https://doi.org/10.5281/zenodo.7401874)
 
 ---
 
@@ -25,13 +27,14 @@
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.7401875](https://doi.org/10.5281/zenodo.7401875)
+- DOI: [10.5281/zenodo.7401874](https://doi.org/10.5281/zenodo.7401874)
+- Artifact DOI: [10.5281/zenodo.7401875](https://doi.org/10.5281/zenodo.7401875)
 - Zenodo record: [https://zenodo.org/records/7401875](https://zenodo.org/records/7401875)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7401875)
 
 ## Citation
 
-> Rémi Tison, Dean Tickles, Bleu Knight, Daniel Friedman (2022). *Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior"*. Zenodo. DOI: 10.5281/zenodo.7401875. URL: https://doi.org/10.5281/zenodo.7401875.
+> Rémi Tison, Dean Tickles, Bleu Knight, Daniel Friedman (2022). *Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior"*. Zenodo. DOI: 10.5281/zenodo.7401874. URL: https://doi.org/10.5281/zenodo.7401874.
 
 ## Related
 

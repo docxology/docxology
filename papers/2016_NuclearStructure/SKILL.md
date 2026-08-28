@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "NuclearStructure"
 description: "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) tec..."
 tags: ["hi-c", "chromosome-conformation", "radiation-biology", "chromatin-architecture", "dna-damage", "topologically-associating-domains", "nuclear-organization", "3c-technologies"]
 domain: "Genetics & Biomedical"
 citation: "Daniel A. Friedman, Daniel F. Pilch (2016). *NuclearStructure*. Genetics & Biomedical."
+doi: "10.3109/09553002.2016.1144941"
 ---
 
 # NuclearStructure
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.3109/09553002.2016.1144941
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.3109/09553002.2016.1144941`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

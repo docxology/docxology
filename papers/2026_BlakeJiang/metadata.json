@@ -1,8 +1,8 @@
 {
   "title": "The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision",
   "version": "v1",
-  "doi": "10.5281/zenodo.20144984",
-  "doi_url": "https://doi.org/10.5281/zenodo.20144984",
+  "doi": "10.5281/zenodo.20144983",
+  "doi_url": "https://doi.org/10.5281/zenodo.20144983",
   "zenodo_record": "https://zenodo.org/records/20144984",
   "record_id": "20144984",
   "publication_date": "2026-05-12",
@@ -79,5 +79,7 @@
     "2022_MirrorTest",
     "2023_BlakeFuller"
   ],
-  "checked_at": "2026-07-01T20:50:01Z"
+  "checked_at": "2026-07-01T20:50:01Z",
+  "artifact_doi": "10.5281/zenodo.20144984",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20144984"
 }

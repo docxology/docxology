@@ -1,21 +1,41 @@
-# AGENTS.md - White Line: A Typed Ledger for the Edge of the Claim
+<!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
+
+# AGENTS.md — White Line: A Typed Ledger for the Edge of the Claim
 
 **Paper**: White Line: A Typed Ledger for the Edge of the Claim (2026)
-**DOI**: [10.5281/zenodo.21754241](https://doi.org/10.5281/zenodo.21754241)
-**Zenodo record**: https://zenodo.org/records/21754241
+**Domain**: Computational
+**Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo DOI as the canonical citation.
-- Preserve full authorship: Daniel Ari Friedman.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for WhiteLine
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, paper_metadata.json, and BIBLIOGRAPHY.md synchronized.
+### 🔬 RESEARCHER
+- Extracts methods: Literature review, Theoretical analysis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Computational literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Computational concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects White Line: A Typed Ledger for the Edge of the Claim to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/21754241
-- **Source**: Zenodo-only record (no paired GitHub release)
+| Source | Agent | Action | Status |
+|--------|-------|--------|--------|
+| Metadata | ARCHIVIST | Cataloged metadata | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | EDUCATOR | Generated documentation | ✅ |

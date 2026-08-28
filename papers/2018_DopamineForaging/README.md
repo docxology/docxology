@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 DopamineForaging
 
 **Daniel A. Friedman, Annette Pilko, Deborah M. Gordon** (2018) · *iScience*

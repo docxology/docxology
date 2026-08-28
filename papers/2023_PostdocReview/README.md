@@ -1,4 +1,6 @@
-# 📄 PostdocReview
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎥 PostdocReview
 
 **Daniel Ari Friedman** (2023) · *Presentation*
 

@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-08-26T20:42:20Z",
+  "source_commit": "5c25de204170cdf03c2f341f0fdc10f399aebaa4",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
+  "source_tree_sha": "d8fc719ee594870774010b1f067be644e49f1b6e",
+  "tool": "playwright screenshot",
+  "note": "Selector-based smoke checks for core local site behavior.",
+  "passing": 10,
+  "count": 10,
+  "checks": [
+    {
+      "name": "home",
+      "page": "index.html",
+      "selector": "h1",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-08-26/home.png",
+      "screenshot_sha256": "cd91a79e0d5b240cf1990aac8537729cbed59916d144c48d2f7cfeed33dcd79a",
+      "stdout": "Navigating to http://127.0.0.1:63274/index.html\nWaiting for selector h1...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-08-26/home.png",
+      "stderr": ""
+    },
+    {
+      "name": "publications",
+      "page": "publications.html",
+      "selector": "table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-08-26/publications.png",
+      "screenshot_sha256": "14ef92e922cb02d0d081fc7b1bc17bb62370c7ac0cabf754a961466a2efc8777",
+      "stdout": "Navigating to http://127.0.0.1:63274/publications.html\nWaiting for selector table...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-08-26/publications.png",
+      "stderr": ""
+    },
+    {
+      "name": "works",
+      "page": "works/index.html",
+      "selector": ".work-row",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-08-26/works.png",
+      "screenshot_sha256": "10b42163a2e195c384778c5042c54b0851abfadc9098deb35cdf7e8582eabf72",
+      "stdout": "Navigating to http://127.0.0.1:63274/works/index.html\nWaiting for selector .work-row...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-08-26/works.png",
+      "stderr": ""
+    },
+    {
+      "name": "search",
+      "page": "search.html?q=active%20inference",
+      "selector": ".result-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-08-26/search.png",
+      "screenshot_sha256": "fe1a7f88ced0b7ad5c76a0fd36188c5c4c15d97548d380638c4ac5246acab51e",
+      "stdout": "Navigating to http://127.0.0.1:63274/search.html?q=active%20inference\nWaiting for selector .result-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-08-26/search.png",
+      "stderr": ""
+    },
+    {
+      "name": "repositories",
+      "page": "repositories.html",
+      "selector": ".inventory-table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-08-26/repositories.png",
+      "screenshot_sha256": "bba4449bd07fcad1dfde114a830258ac522547fa358c4d0de22c611646988a05",
+      "stdout": "Navigating to http://127.0.0.1:63274/repositories.html\nWaiting for selector .inventory-table...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-08-26/repositories.png",
+      "stderr": ""
+    },
+    {
+      "name": "repository-forks",
+      "page": "repositories-forks.html",
+      "selector": ".inventory-table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-08-26/repository-forks.png",
+      "screenshot_sha256": "53278efafb1d3370f603816a38e02f864feafbaf429d3ea7df1d741d10a1e427",
+      "stdout": "Navigating to http://127.0.0.1:63274/repositories-forks.html\nWaiting for selector .inventory-table...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-08-26/repository-forks.png",
+      "stderr": ""
+    },
+    {
+      "name": "catalog",
+      "page": "catalog.html",
+      "selector": ".catalog-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-08-26/catalog.png",
+      "screenshot_sha256": "8616cbb935b3464460a534db9b81c6406fcad15b7901f520413dfe15ffe85b57",
+      "stdout": "Navigating to http://127.0.0.1:63274/catalog.html\nWaiting for selector .catalog-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-08-26/catalog.png",
+      "stderr": ""
+    },
+    {
+      "name": "updates",
+      "page": "updates.html",
+      "selector": ".update-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-08-26/updates.png",
+      "screenshot_sha256": "27c78f7115203d94ee619981bdbc5d6b82af9a84dc9c42514d357d7700684d1a",
+      "stdout": "Navigating to http://127.0.0.1:63274/updates.html\nWaiting for selector .update-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-08-26/updates.png",
+      "stderr": ""
+    },
+    {
+      "name": "art",
+      "page": "art.html",
+      "selector": ".art-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-08-26/art.png",
+      "screenshot_sha256": "d50e0d992beae0d9e20b14fe06ab21b0d13297dc22b6b5fd31a810f585c42b92",
+      "stdout": "Navigating to http://127.0.0.1:63274/art.html\nWaiting for selector .art-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-08-26/art.png",
+      "stderr": ""
+    },
+    {
+      "name": "videos",
+      "page": "videos.html",
+      "selector": ".video-topic-panel",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-08-26/videos.png",
+      "screenshot_sha256": "358ce34214bb9fdee49eb53e31021e22a483967c3e4b861557df8c8f0ea7a1a7",
+      "stdout": "Navigating to http://127.0.0.1:63274/videos.html\nWaiting for selector .video-topic-panel...\nWaiting for timeout 500...\nCapturing screenshot into /Users/4d/Documents/GitHub/projects/ongoing/DAF/docxology/reports/browser-smoke/2026-08-26/videos.png",
+      "stderr": ""
+    }
+  ]
+}

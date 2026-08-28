@@ -40,7 +40,7 @@ Grouped by role; per-script outputs, sources, and rebuild commands live in
 | **Driver / gate** | `regenerate_all.py` (ordered rebuild), `validate_repo.py` (runs every `--check` + invariants), `build_generated_manifest.py` (writes `GENERATED.md` itself) |
 | **Bibliography & works** | `export_bibliography.py`, `sync_publications_html.py`, `build_work_pages.py`, `build_paper_pages.py`, `batch_enrich_metadata.py`, `improve_metadata_quality.py`, `regenerate_docs.py`, `generate_citation_cff.py`, `extract_paper_texts.py` |
 | **Software & repos** | `sync_software_html.py`, `build_github_inventory.py`, `classify_repositories.py` |
-| **Site pages** | `build_domain_pages.py`, `build_video_pages.py`, `build_catalog.py`, `build_exports_page.py`, `build_updates_page.py`, `build_evidence_page.py`, `build_search_index.py`, `sync_site_facts.py`, `ensure_agent_navigation.py`, `ensure_social_meta.py` |
+| **Site pages** | `build_domain_pages.py`, `generate_pillar_pages.py`, `build_video_pages.py`, `build_catalog.py`, `build_exports_page.py`, `build_updates_page.py`, `build_evidence_page.py`, `build_search_index.py`, `sync_site_facts.py`, `ensure_agent_navigation.py`, `ensure_social_meta.py` |
 | **Media & art** | `fetch_youtube_data.py`, `fetch_video_transcripts.py`, `build_artwork_index.py`, `generate_og_images.py` |
 | **Resume** | `build_resume.py` |
 | **Counts & integrity** | `build_current_counts.py`, `build_coverage_exceptions.py`, `build_agent_index.py`, `build_pages_artifact.py`, `build_release_integrity.py`, `build_reconciliation_report.py`, `audit_publication_skills.py` |

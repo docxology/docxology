@@ -1,8 +1,8 @@
 {
   "title": "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes",
   "version": "1.0",
-  "doi": "10.5281/zenodo.6904427",
-  "doi_url": "https://doi.org/10.5281/zenodo.6904427",
+  "doi": "10.5281/zenodo.6904426",
+  "doi_url": "https://doi.org/10.5281/zenodo.6904426",
   "zenodo_record": "https://zenodo.org/records/6904427",
   "record_id": "6904427",
   "publication_date": "2022-07-25",
@@ -75,5 +75,7 @@
     "2020_EmergentTeams",
     "2020_FacilitatorsCatechism",
     "2020_GreatPreset"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.6904427",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.6904427"
 }

@@ -1,4 +1,6 @@
-# 📄 InfiniteImaginarium
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎨 InfiniteImaginarium
 
 **Daniel Ari Friedman** (2024) · *Zenodo*
 

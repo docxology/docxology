@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
-"""Generate the 5 high-authority pillar content explainers."""
+"""Generate or verify the five high-authority pillar content explainers."""
 
-import json
+import argparse
 from pathlib import Path
+import sys
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
+SRC_DIR = REPO_ROOT / "code" / "src"
+sys.path.insert(0, str(SRC_DIR))
+
+from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from site_nav import (  # noqa: E402
+    INTERACTIVE_SCRIPTS,
+    MENU_ESC_SCRIPT,
+    render_breadcrumb,
+    render_nav_domain,
+    render_pillar_head,
+)
 
 STYLE_BLOCK = """
-        .breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}
-        .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}
-        .breadcrumb li+li::before{content:'\\203A';margin-right:.4rem;color:var(--text-muted)}
-        .breadcrumb a{color:var(--silver-bright);text-decoration:none}
-        .breadcrumb a:hover{text-decoration:underline}
-        .breadcrumb [aria-current=page]{color:var(--text-secondary)}
         .pillar-content{max-width:880px;margin:0 auto;padding:7.5rem 1.5rem 4rem;line-height:1.8;color:var(--text-primary)}
         .pillar-header{margin-bottom:2.5rem;text-align:left;border-bottom:1px solid var(--border);padding-bottom:1.5rem}
         .pillar-header h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.2rem,4.5vw,3.4rem);line-height:1.15;margin-bottom:1rem;color:#fff}
@@ -48,6 +54,12 @@ def render_page(
     domain_name: str,
     terms: list[str],
 ) -> str:
+    from title_policy import clip_title  # noqa: PLC0415
+
+    # SERP title budget: <title>, og:title, twitter:title, and the JSON-LD
+    # headline all render from this string, so it is clipped once here. The
+    # on-page <h1> stays full-length via h1_text.
+    title = clip_title(title)
     canonical_url = f"https://danielarifriedman.com/{filename}"
     faq_items = [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}
@@ -98,66 +110,17 @@ def render_page(
         faq_html.append(f'            <div class="faq-item"><h3>{q}</h3><p>{a}</p></div>')
     faq_str = "\n".join(faq_html)
 
-    ld_str = json.dumps(jsonld, indent=4, ensure_ascii=False)
-
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title}</title>
-    <meta name="description" content="{description}">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="{canonical_url}">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
-    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{title}">
-    <meta property="og:description" content="{description}">
-    <meta property="og:url" content="{canonical_url}">
-    <meta property="og:image" content="https://danielarifriedman.com/{og_image}">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="{title}">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{title}">
-    <meta name="twitter:description" content="{description}">
-    <meta name="twitter:image" content="https://danielarifriedman.com/{og_image}">
-    <meta name="twitter:image:alt" content="{title}">
-    <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
-    <meta name="theme-color" content="#0c0c0e">
-    <style>{STYLE_BLOCK}    </style>
-    <script type="application/ld+json">
-{ld_str}
-    </script>
-</head>
-<body>
+    return render_pillar_head(
+        title=title,
+        description=description,
+        canonical_path=filename,
+        og_image=og_image,
+        style=STYLE_BLOCK,
+        jsonld=jsonld,
+    ) + f"""<body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation">
-        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <div class="nav-links">
-            <a href="index.html#about">About</a>
-            <a href="publications.html">Publications</a>
-            <a href="domains.html">Domains</a>
-            <a href="software.html">Software</a>
-            <a href="videos.html">Videos</a>
-            <a href="art.html">Art</a>
-            <a href="media.html">Media</a>
-            <a href="collaborators.html">Collaborators</a>
-            <a href="search.html">Search</a>
-            <a href="catalog.html">Data Catalog</a>
-            <a href="evidence.html">Evidence</a>
-            <a href="cite-verify.html">Cite</a>
-            <a href="discovery.html">Discovery</a>
-            <a href="data/agent-index.json">Agent Map</a>
-        </div>
-    </nav>
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-        <ol><li><a href="index.html">Home</a></li><li><a href="domains.html">Domains</a></li><li aria-current="page">{domain_name}</li></ol>
-    </nav>
+{render_nav_domain(active="domains")}
+{render_breadcrumb([("Home", ""), ("Domains", "domains.html"), (domain_name, filename)])}
     <main id="main" class="pillar-content">
         <header class="pillar-header">
             <p class="eyebrow" style="color:var(--gold);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;font-size:0.85rem;margin-bottom:0.5rem;">{eyebrow}</p>
@@ -194,15 +157,16 @@ def render_page(
             <a href="cite-verify.html">Cite &amp; Verify</a>
         </div>
     </footer>
-    <script src="/js/tts-controls.js?v=20260712" defer></script>
-    <script src="/js/interactive.js?v=20260712" defer></script>
-    <script src="/js/menu-esc.js?v=20260712" defer></script>
+{INTERACTIVE_SCRIPTS}
+    {MENU_ESC_SCRIPT}
 </body>
 </html>
 """
 
 
-def main():
+def render_outputs(*, output_root: Path = REPO_ROOT) -> dict[Path, str]:
+    """Render every source-owned pillar page without writing it."""
+    outputs: dict[Path, str] = {}
     # 1. Cognitive Security
     cogsec_html = render_page(
         filename="cognitive-security.html",
@@ -268,8 +232,7 @@ def main():
         domain_name="Cognitive Security",
         terms=["Cognitive Security", "Active Inference", "Epistemic Security", "Narrative Topography"],
     )
-    (REPO_ROOT / "cognitive-security.html").write_text(cogsec_html, encoding="utf-8")
-    print("Wrote cognitive-security.html")
+    outputs[output_root / "cognitive-security.html"] = cogsec_html
 
     # 2. Computational Entomology
     comp_ento_html = render_page(
@@ -320,8 +283,7 @@ def main():
         domain_name="Entomology",
         terms=["Computational Entomology", "Ant Colony Optimization", "Collective Behavior", "Stigmergy", "Bio-Inspired Computing"],
     )
-    (REPO_ROOT / "computational-entomology.html").write_text(comp_ento_html, encoding="utf-8")
-    print("Wrote computational-entomology.html")
+    outputs[output_root / "computational-entomology.html"] = comp_ento_html
 
     # 3. Insect Cognition
     insect_cog_html = render_page(
@@ -372,8 +334,7 @@ def main():
         domain_name="Entomology",
         terms=["Insect Cognition", "Collective Intelligence", "Active Inferants", "Superorganism", "Stigmergy"],
     )
-    (REPO_ROOT / "insect-cognition.html").write_text(insect_cog_html, encoding="utf-8")
-    print("Wrote insect-cognition.html")
+    outputs[output_root / "insect-cognition.html"] = insect_cog_html
 
     # 4. Active Inference Tutorial
     actinf_html = render_page(
@@ -389,21 +350,21 @@ def main():
              "<p>Originating in the physics of self-organizing non-equilibrium systems and pioneered by neuroscientist Karl Friston, the <strong>Free Energy Principle (FEP)</strong> states that any self-organizing system that resists dissipation and maintains its structural integrity over time must minimize an upper bound on sensory surprise (negative log evidence). <strong>Active Inference</strong> is the process theory that implements this principle for embodied, cognitive agents.</p>\n"
              "<p>Under Active Inference, an agent maintains a <em>generative model</em> of its environment consisting of:</p>\n"
              "<ul>\n"
-             "<li><strong>Hidden States ($s$):</strong> Unobserved latent causes in the world (e.g., whether a predator is present, or the underlying state of a financial market).</li>\n"
-             "<li><strong>Observations ($o$):</strong> Sensory inputs received by the agent (e.g., visual photons, auditory frequencies, telemetry readings).</li>\n"
-             "<li><strong>Actions / Policies ($\pi$):</strong> Sequences of control states that alter the transition probabilities of future hidden states.</li>\n"
-             "<li><strong>Generative Likelihood ($A$-matrix):</strong> The mapping from hidden states to sensory observations, $P(o | s)$.</li>\n"
-             "<li><strong>State Transition Dynamics ($B$-matrix):</strong> How hidden states evolve conditioned on selected actions, $P(s_{t+1} | s_t, a_t)$.</li>\n"
-             "<li><strong>Prior Preferences ($C$-vector):</strong> The agent's internal homeostatic baseline—the sensory states it expects to inhabit to remain viable.</li>\n"
-             "<li><strong>Initial State Priors ($D$-vector):</strong> Baseline prior beliefs over hidden states at initialization, $P(s_0)$.</li>\n"
+             r"<li><strong>Hidden States ($s$):</strong> Unobserved latent causes in the world (e.g., whether a predator is present, or the underlying state of a financial market).</li>" + "\n"
+             r"<li><strong>Observations ($o$):</strong> Sensory inputs received by the agent (e.g., visual photons, auditory frequencies, telemetry readings).</li>" + "\n"
+             r"<li><strong>Actions / Policies ($\pi$):</strong> Sequences of control states that alter the transition probabilities of future hidden states.</li>" + "\n"
+             r"<li><strong>Generative Likelihood ($A$-matrix):</strong> The mapping from hidden states to sensory observations, $P(o | s)$.</li>" + "\n"
+             r"<li><strong>State Transition Dynamics ($B$-matrix):</strong> How hidden states evolve conditioned on selected actions, $P(s_{t+1} | s_t, a_t)$.</li>" + "\n"
+             r"<li><strong>Prior Preferences ($C$-vector):</strong> The agent's internal homeostatic baseline—the sensory states it expects to inhabit to remain viable.</li>" + "\n"
+             r"<li><strong>Initial State Priors ($D$-vector):</strong> Baseline prior beliefs over hidden states at initialization, $P(s_0)$.</li>" + "\n"
              "</ul>"),
             ("What Is the Difference Between Variational Free Energy and Expected Free Energy?",
              "<p>A crucial mathematical distinction in Active Inference is the difference between <strong>Variational Free Energy ($F$)</strong> and <strong>Expected Free Energy ($G$)</strong>:</p>\n"
              "<div class='callout-card'><h3>Variational vs. Expected Free Energy</h3><ul>\n"
-             "<li><strong>Variational Free Energy ($F$) [The Present & Past]:</strong> Evaluated on <em>realized observations</em>. Minimizing $F$ optimizes the agent's current internal beliefs ($q(s)$) to match the true posterior distribution over hidden causes, balancing accuracy against complexity (KL divergence between beliefs and priors).</li>\n"
-             "<li><strong>Expected Free Energy ($G$) [The Future & Action Selection]:</strong> Evaluated over <em>counterfactual future observations</em> that have not yet occurred. An agent evaluates candidate policies $\pi$ by computing the expected free energy $G(\pi)$ for future time steps.</li>\n"
+             r"<li><strong>Variational Free Energy ($F$) [The Present & Past]:</strong> Evaluated on <em>realized observations</em>. Minimizing $F$ optimizes the agent's current internal beliefs ($q(s)$) to match the true posterior distribution over hidden causes, balancing accuracy against complexity (KL divergence between beliefs and priors).</li>" + "\n"
+             r"<li><strong>Expected Free Energy ($G$) [The Future & Action Selection]:</strong> Evaluated over <em>counterfactual future observations</em> that have not yet occurred. An agent evaluates candidate policies $\pi$ by computing the expected free energy $G(\pi)$ for future time steps.</li>" + "\n"
              "</ul></div>\n"
-             "<p>Mathematically, minimizing Expected Free Energy $G(\pi)$ naturally decomposes into two complementary imperatives:</p>\n"
+             r"<p>Mathematically, minimizing Expected Free Energy $G(\pi)$ naturally decomposes into two complementary imperatives:</p>" + "\n"
              "<ol>\n"
              "<li><strong>Pragmatic Value (Goal Seeking):</strong> Maximizing the expected utility or log likelihood of future observations under prior preferences.</li>\n"
              "<li><strong>Epistemic Value (Information Seeking / Curiosity):</strong> Maximizing information gain or mutual information between future observations and hidden states, actively resolving ambiguity in unobserved domains.</li>\n"
@@ -418,8 +379,8 @@ def main():
             ("What Is the Markov Blanket and Bayesian Mechanics?",
              "<p>In the formal physics of Active Inference—known as <strong>Bayesian Mechanics</strong> (<a href='works/Friedman2022WorkedExampleBayesianMechanics143.html'>Worked Example of Bayesian Mechanics</a>, 2022)—the concept of a <strong>Markov Blanket</strong> formalizes the boundary of any cognitive agent. The states of the universe partition into four sets:</p>\n"
              "<ul>\n"
-             "<li><strong>Internal States ($\mu$):</strong> The agent's internal cognitive and computational states.</li>\n"
-             "<li><strong>External States ($\eta$):</strong> The unobserved physical environment outside the agent.</li>\n"
+             r"<li><strong>Internal States ($\mu$):</strong> The agent's internal cognitive and computational states.</li>" + "\n"
+             r"<li><strong>External States ($\eta$):</strong> The unobserved physical environment outside the agent.</li>" + "\n"
              "<li><strong>Sensory States ($s$):</strong> States that mediate how external states affect internal states.</li>\n"
              "<li><strong>Active States ($a$):</strong> States that mediate how internal states affect external states.</li>\n"
              "</ul>\n"
@@ -429,9 +390,9 @@ def main():
              "<div class='callout-card'><h3>Active Inference Software Ecosystem</h3><ul>\n"
              "<li><strong><a href='https://github.com/ActiveInferenceInstitute/fep_lean'>fep_lean</a>:</strong> Formalization of Free Energy Principle theorems, discrete-state space models, and Bayesian mechanics in the Lean 4 interactive theorem prover (<a href='works/Friedman2026TowardsLean4Formalization113.html'>Friedman, 2026</a>).</li>\n"
              "<li><strong><a href='https://github.com/ActiveInferenceInstitute/COGANT'>COGANT</a> &amp; GNN:</strong> Generalized Notation Notation and automated compiler tools for declarative Active Inference system specification (<a href='works/Friedman2023GeneralizedNotationNotationActive056.html'>GNN Paper, 2023</a>).</li>\n"
-             "<li><strong><a href='https://github.com/infer-stat/RxInfer.jl'>RxInfer.jl</a>:</strong> Reactive message-passing probabilistic programming engine in Julia for real-time variational inference.</li>\n"
+             "<li><strong><a href='https://github.com/ReactiveBayes/RxInfer.jl'>RxInfer.jl</a>:</strong> Reactive message-passing probabilistic programming engine in Julia for real-time variational inference.</li>\n"
              "<li><strong>PyMDP:</strong> Python library for discrete-state Markov Decision Process Active Inference models.</li>\n"
-             "<li><strong><a href='https://github.com/docxology/CEREBRUM'>CEREBRUM</a>:</strong> Case-Enabled Reasoning Engine with Bayesian Representations for structured multi-agent inference (<a href='works/Friedman2025CEREBRUMCaseEnabledReasoning010.html'>Friedman, 2025</a>).</li>\n"
+             "<li><strong><a href='https://github.com/ActiveInferenceInstitute/CEREBRUM'>CEREBRUM</a>:</strong> Case-Enabled Reasoning Engine with Bayesian Representations for structured multi-agent inference (<a href='works/Friedman2025CEREBRUMCaseEnabledReasoning010.html'>Friedman, 2025</a>).</li>\n"
              "</ul></div>"),
             ("How Can Beginners and Advanced Researchers Learn Active Inference?",
              "<p>The <a href='https://activeinference.institute'>Active Inference Institute (AII)</a>—founded in 2021—provides open scientific education, livestreams, study cohorts, and public research infrastructure:</p>\n"
@@ -451,8 +412,7 @@ def main():
         domain_name="Active Inference",
         terms=["Active Inference", "Free Energy Principle", "Expected Free Energy", "Markov Blanket", "Bayesian Mechanics"],
     )
-    (REPO_ROOT / "active-inference.html").write_text(actinf_html, encoding="utf-8")
-    print("Wrote active-inference.html")
+    outputs[output_root / "active-inference.html"] = actinf_html
 
     # 5. Neurosymbolic AI
     neuro_html = render_page(
@@ -513,8 +473,26 @@ def main():
         domain_name="Computational",
         terms=["Neurosymbolic AI", "Active Inference", "Knowledge Graphs", "Symbolic Reasoning", "AGEINT"],
     )
-    (REPO_ROOT / "neurosymbolic-ai.html").write_text(neuro_html, encoding="utf-8")
-    print("Wrote neurosymbolic-ai.html")
+    outputs[output_root / "neurosymbolic-ai.html"] = neuro_html
+
+    return outputs
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true", help="Fail if any shared-rendered pillar page is stale")
+    args = parser.parse_args()
+    outputs = render_outputs()
+    stale = stale_output_paths(outputs, repo_root=REPO_ROOT)
+    if args.check:
+        if stale:
+            paths = ", ".join(path.relative_to(REPO_ROOT).as_posix() for path in stale)
+            raise SystemExit(f"Stale generated pillar pages: {paths}")
+        print(f"checked {len(outputs)} shared-rendered pillar pages")
+        return
+    write_output_texts(outputs, repo_root=REPO_ROOT)
+    for path in outputs:
+        print(f"Wrote {path.relative_to(REPO_ROOT)}")
 
     print("All 5 pillar pages authored and generated successfully!")
 

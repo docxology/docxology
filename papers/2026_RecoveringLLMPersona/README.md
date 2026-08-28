@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Recovering LLM-Persona Accuracies from Unlabeled Votes
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

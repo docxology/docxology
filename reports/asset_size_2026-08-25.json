@@ -1,0 +1,201 @@
+{
+  "generated_at": "2026-08-25T23:05:36Z",
+  "scope": "Public root HTML, Open Graph images, data exports, citation exports, and site runtime assets. Visual QA screenshots are excluded.",
+  "asset_count": 105,
+  "budget_exceptions": {
+    "publications.html": {
+      "budget_bytes": 600000,
+      "reason": "SSR bibliography table and inline CollectionPage JSON-LD required for crawlability.",
+      "approved_in": "docs/operations/github-pages-artifact.md"
+    }
+  },
+  "warnings": 0,
+  "total_bytes": 15688495,
+  "largest": [
+    {
+      "path": "data/videos.json",
+      "kind": "json-data",
+      "bytes": 3426991,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/artworks.json",
+      "kind": "json-data",
+      "bytes": 3254859,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/artworks-index.json",
+      "kind": "json-data",
+      "bytes": 729213,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "publications.html",
+      "kind": "html",
+      "bytes": 561276,
+      "baseline_budget_bytes": 500000,
+      "budget_bytes": 600000,
+      "budget_exception": {
+        "budget_bytes": 600000,
+        "reason": "SSR bibliography table and inline CollectionPage JSON-LD required for crawlability.",
+        "approved_in": "docs/operations/github-pages-artifact.md"
+      },
+      "ok": true
+    },
+    {
+      "path": "data/paired-publication-decisions.json",
+      "kind": "json-data",
+      "bytes": 462305,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/publications-ld.json",
+      "kind": "json-data",
+      "bytes": 391431,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "resume/resume.pdf",
+      "kind": "resume-export",
+      "bytes": 353107,
+      "baseline_budget_bytes": 5000000,
+      "budget_bytes": 5000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/resume.json",
+      "kind": "json-data",
+      "bytes": 315930,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/videos-index.json",
+      "kind": "json-data",
+      "bytes": 290229,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/publishing-status.json",
+      "kind": "json-data",
+      "bytes": 288040,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/work-enrichment.json",
+      "kind": "json-data",
+      "bytes": 232485,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/github-repositories.json",
+      "kind": "json-data",
+      "bytes": 216936,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "software.html",
+      "kind": "html",
+      "bytes": 188581,
+      "baseline_budget_bytes": 500000,
+      "budget_bytes": 500000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "assets/hero-art/army-ants.webp",
+      "kind": "hero-art",
+      "bytes": 168864,
+      "baseline_budget_bytes": 320000,
+      "budget_bytes": 320000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/works.json",
+      "kind": "json-data",
+      "bytes": 168647,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "bibliography.csl.json",
+      "kind": "citation-export",
+      "bytes": 164676,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/work-authors.json",
+      "kind": "json-data",
+      "bytes": 147071,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "repositories.html",
+      "kind": "html",
+      "bytes": 144285,
+      "baseline_budget_bytes": 500000,
+      "budget_bytes": 500000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "assets/hero-art/decentral-antelligence-agency.webp",
+      "kind": "hero-art",
+      "bytes": 130118,
+      "baseline_budget_bytes": 320000,
+      "budget_bytes": 320000,
+      "budget_exception": null,
+      "ok": true
+    },
+    {
+      "path": "data/reproducibility.json",
+      "kind": "json-data",
+      "bytes": 124391,
+      "baseline_budget_bytes": 4000000,
+      "budget_bytes": 4000000,
+      "budget_exception": null,
+      "ok": true
+    }
+  ],
+  "over_budget": []
+}

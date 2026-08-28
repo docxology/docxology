@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "PaleolithicRockstars"
 description: "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitiv..."
 tags: ["paleolithic-art", "cave-paintings", "cognitive-evolution", "consciousness", "aesthetic-experience", "rock-art"]
 domain: "Genetics & Biomedical"
 citation: "Daniel Ari Friedman (2024). *PaleolithicRockstars*. Genetics & Biomedical."
+doi: "10.1016/j.plrev.2024.04.010"
 ---
 
 # PaleolithicRockstars
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.1016/j.plrev.2024.04.010
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.1016/j.plrev.2024.04.010`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

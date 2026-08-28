@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "GNN"
 description: "Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems. GNN provides meta-notational tools for describing any symbolic..."
 tags: ["gnn", "generalized-notation-notation", "meta-notation", "symbolic-systems", "notation-translation", "formal-representation", "interoperability"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.7803327
+- Canonical DOI: 10.5281/zenodo.7803327
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:14Z

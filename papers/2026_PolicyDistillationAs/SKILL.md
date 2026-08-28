@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "On-Policy Distillation as Active Inference in Finite Variational Models"
 description: "<p>This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them. In the construction, the intractable teacher policy..."
 tags: ["on-policy-distillation", "active-inference", "self-distillation", "privileged-information", "free-energy-principle", "reverse-kl-divergence", "pymdp", "sophisticated-inference"]
 domain: "Active Inference"
 citation: "Daniel Ari Friedman (2026). *On-Policy Distillation as Active Inference in Finite Variational Models*. Active Inference."
 doi: "10.5281/zenodo.20747834"
+artifact_doi: "10.5281/zenodo.20749817"
 ---
 
 # On-Policy Distillation as Active Inference in Finite Variational Models
@@ -39,10 +41,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20747834
-- PDF SHA-256: db0f2e4f193efa4dd65058d8d8094659a7c9200454acb2da14e88c304f29819e
+- Canonical DOI: 10.5281/zenodo.20747834
+- PDF SHA-256: c6b5ec494915e6e046f24cf723f8dbbf93a5b168544daed3cca14c089d4087aa
 - Pairing confidence: strong
-- Last checked: 2026-07-10T19:08:24Z
+- Last checked: 2026-08-28T17:12:25Z
+- Artifact DOI: 10.5281/zenodo.20749817
 
 ## Prerequisites
 

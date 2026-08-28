@@ -1,21 +1,41 @@
-# AGENTS.md - PROJECT BOND — The Special-Agent Operations Compendium
+<!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
+
+# AGENTS.md — PROJECT BOND — The Special-Agent Operations Compendium
 
 **Paper**: PROJECT BOND — The Special-Agent Operations Compendium (2026)
-**DOI**: [10.5281/zenodo.21843592](https://doi.org/10.5281/zenodo.21843592)
-**Zenodo record**: https://zenodo.org/records/21843592
+**Domain**: Computational
+**Authors**: Daniel Ari Friedman
 
 ---
 
 ## Agent Roles
 
-### Citation Agent
-- Use the Zenodo DOI as the canonical citation.
-- Preserve full authorship: Daniel Ari Friedman.
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for PROJECTBONDSpecial
+- Updates related_papers links when new connections are identified
 
-### Integration Agent
-- Keep README, CITATION.cff, metadata.json, paper_metadata.json, and BIBLIOGRAPHY.md synchronized.
+### 🔬 RESEARCHER
+- Extracts methods: Literature review, Theoretical analysis
+- Identifies findings: See full paper for detailed findings and analysis
+- Maps contributions to Computational literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Computational concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects PROJECT BOND — The Special-Agent Operations Compendium to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
 
 ## Extraction Log
 
-- **Zenodo record**: https://zenodo.org/records/21843592
-- **Source**: Zenodo-only record (no paired GitHub release)
+| Source | Agent | Action | Status |
+|--------|-------|--------|--------|
+| Metadata | ARCHIVIST | Cataloged metadata | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | EDUCATOR | Generated documentation | ✅ |

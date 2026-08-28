@@ -1,4 +1,6 @@
-# 📄 SensemakingFederation
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎥 SensemakingFederation
 
 **Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman** (2024) · *Presentation*
 

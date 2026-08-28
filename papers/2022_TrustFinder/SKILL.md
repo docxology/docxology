@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "TrustFinder"
 description: "TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims. Built on feedback from dozens of experts across fields submitted to the University..."
 tags: ["trustfinder", "trust-systems", "information-evaluation", "cognitive-security", "verified-information", "collaborative-assessment", "sociotechnical-systems"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.7093836
+- Canonical DOI: 10.5281/zenodo.7093836
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:01Z

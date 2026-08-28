@@ -26,6 +26,8 @@ class PaperMetadata:
     version: str | None = None
     doi: str = ""
     doi_url: str | None = None
+    artifact_doi: str | None = None
+    artifact_doi_url: str | None = None
     zenodo_record: str | None = None
     record_id: str | None = None
     publication_date: str | None = None
@@ -86,7 +88,8 @@ class PaperMetadata:
     def from_dict(cls, data: dict[str, Any]) -> "PaperMetadata":
         """Create PaperMetadata from a dictionary, accepting any keys."""
         known_fields = {
-            "title", "version", "doi", "doi_url", "zenodo_record", "record_id",
+            "title", "version", "doi", "doi_url", "artifact_doi", "artifact_doi_url",
+            "zenodo_record", "record_id",
             "publication_date", "resource_type", "domain", "type", "creators",
             "description", "abstract", "keywords", "files", "related_resources",
             "venue", "github_repo", "github_release_url", "release_tag", "release_name",
@@ -117,6 +120,10 @@ class PaperMetadata:
             issues.append("Missing both DOI and venue")
         if self.doi and not self.doi.startswith("10."):
             issues.append(f"DOI does not look valid: {self.doi}")
+        if self.artifact_doi and not self.artifact_doi.startswith("10."):
+            issues.append(f"Artifact DOI does not look valid: {self.artifact_doi}")
+        if self.artifact_doi and not self.doi:
+            issues.append("Artifact DOI requires a canonical DOI")
         if self.pairing_confidence not in ("strong", "needs_review"):
             issues.append(f"Invalid pairing_confidence: {self.pairing_confidence}")
         return issues

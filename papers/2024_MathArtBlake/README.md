@@ -1,4 +1,6 @@
-# 📄 MathArtBlake
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
+# 🎥 MathArtBlake
 
 **Daniel Ari Friedman** (2024) · *Presentation*
 

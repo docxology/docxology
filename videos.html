@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="manifest" href="/manifest.json">
-  <link rel="canonical" href="https://danielarifriedman.com/videos/">
+  <link rel="canonical" href="https://danielarifriedman.com/videos.html">
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
   <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
@@ -32,6 +32,7 @@
   <meta name="twitter:image" content="https://danielarifriedman.com/og-media.jpg">
   <meta name="twitter:image:alt" content="Daniel Ari Friedman Videos | Active Inference Talks">
   <meta property="og:site_name" content="Daniel Ari Friedman">
+  <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260530c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -526,18 +527,37 @@
 <a href="#main" class="skip-link" style="position:absolute;top:-40px;left:0;z-index:9999;background:var(--gold);color:#000;padding:.5rem 1rem;border-radius:0 0 8px 0;transition:top .2s">Skip to main content</a>
 
 <!-- ── NAV ── -->
-<nav role="navigation" aria-label="Main navigation">
-  <a href="index.html" class="nav-logo" aria-label="Daniel Ari Friedman — Home">Daniel Ari Friedman</a>
-  <div class="nav-links" id="nav-menu" role="menubar">
-    <a href="index.html" role="menuitem">Home</a>
-    <a href="publications.html" role="menuitem">Publications</a>
-    <a href="discovery.html" role="menuitem">Discovery</a>
-    <a href="media.html" role="menuitem">Media</a>
-    <a href="videos.html" class="active" role="menuitem">Videos</a>
-    <a href="art.html" class="nav-art-link" role="menuitem">Gallery</a>
-    <a href="data/agent-index.json" role="menuitem">Agent Map</a>
-  </div>
-</nav>
+    <nav aria-label="Main navigation">
+            <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
+            <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="works/">Works</a></li>
+                <li><a href="domains.html">Domains</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="videos.html" class="active" aria-current="page">Videos</a></li>
+                <li><a href="art.html" class="nav-art-link">Art</a></li>
+                <li>
+                    <details class="nav-more">
+                        <summary>More</summary>
+                        <ul class="nav-more-panel">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#research">Research</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="collaborators.html">Collaborators</a></li>
+                        <li><a href="resume/resume.html">CV</a></li>
+                        <li><a href="search.html">Search</a></li>
+                        <li><a href="catalog.html">Data Catalog</a></li>
+                        <li><a href="evidence.html">Evidence</a></li>
+                        <li><a href="reproducibility.html">Reproducibility</a></li>
+                        <li><a href="cite-verify.html">Cite</a></li>
+                        <li><a href="discovery.html">Discovery</a></li>
+                        <li><a href="data/agent-index.json">Agent Map</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol><li><a href="index.html">Home</a></li><li aria-current="page">Videos</li></ol>
     </nav>

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Symergetics"
 description: "Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics. The package implemen..."
 tags: ["symergetics", "synergetics", "buckminster-fuller", "rational-arithmetic", "quadray-coordinates", "ivm-lattice", "symbolic-computation", "computational-geometry"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.17114389
+- Canonical DOI: 10.5281/zenodo.17114389
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:58Z

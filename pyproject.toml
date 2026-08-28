@@ -4,12 +4,23 @@ version = "0.1.0"
 description = "Public research, software, citation, evidence, and resume export index for Daniel Ari Friedman."
 requires-python = ">=3.12"
 dependencies = [
+    "pillow>=12.2.0",
+    # Kept in the base environment for resume-PDF verification and the
+    # no-extra text fallback in extract_paper_texts.py.
     "pypdf>=5.0",
     "pytest>=8.0",
     "reportlab==4.5.1",
 ]
 
+[project.optional-dependencies]
+pdf-extraction = [
+    "pymupdf>=1.24.0",
+]
+browser-qa = [
+    "playwright>=1.52.0",
+]
+
 [dependency-groups]
-resume = [
-    "reportlab>=4.5.1",
+lint = [
+    "ruff==0.13.0",
 ]

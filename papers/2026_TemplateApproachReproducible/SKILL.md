@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "A template/ approach to Reproducible Generative Research"
 description: "The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and man..."
 tags: ["reproducible-research", "infrastructure-as-code", "steganography", "cryptographic-provenance", "latex-rendering", "modular-infrastructure", "publication-integrity", "zero-mock-testing", "thin-orchestrator", "two-layer-architecture"]
@@ -39,10 +40,10 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20419007
+- Canonical DOI: 10.5281/zenodo.20419007
 - PDF SHA-256: 535bd80943d0ae9fd504a926efb41c6b39c3a812a94ea4d51bc974029bca563c
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-28T17:12:23Z
 
 ## Prerequisites
 

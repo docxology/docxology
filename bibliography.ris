@@ -2246,7 +2246,7 @@ AU  - Friedman, Daniel Ari
 PY  - 2021
 TI  - Disinforge
 T2  - Science
-UR  - https://www.science.org/doi/10.1126/science.371.6524.22
+UR  - https://www.science.org/doi/10.1126/science.abg0904
 KW  - Cognitive Security
 KW  - Paper
 N1  - Catalog row 157; docs: not available
@@ -2257,8 +2257,8 @@ AU  - Friedman, Daniel Ari
 PY  - 2021
 TI  - Defining events: 2020 in hindsight
 T2  - Science
-DO  - 10.1126/science.371.6524.22
-UR  - https://doi.org/10.1126/science.371.6524.22
+DO  - 10.1126/science.abg0904
+UR  - https://doi.org/10.1126/science.abg0904
 KW  - Cognitive Security
 KW  - Paper
 N1  - Catalog row 158; docs: not available
@@ -2906,4 +2906,28 @@ UR  - https://doi.org/10.5281/zenodo.21983948
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 212; docs: papers/2026_DocxplusIntelligentDocument/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)
+T2  - Zenodo
+DO  - 10.5281/zenodo.22134545
+UR  - https://doi.org/10.5281/zenodo.22134545
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 213; docs: papers/2026_CognitiveIntegrityFramework/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)
+T2  - Zenodo
+DO  - 10.5281/zenodo.22134547
+UR  - https://doi.org/10.5281/zenodo.22134547
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 214; docs: papers/2026_CognitiveIntegrityFramework2/
 ER  -

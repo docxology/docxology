@@ -1,8 +1,10 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 A Worked Example of the Bayesian Mechanics of Classical Objects
 
 **Dalton AR Sakthivadivel, Ali Rahmjoo, Jakub Smékal, Daniel Friedman** (2022) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7400786-blue)](https://doi.org/10.5281/zenodo.7400786)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7400785-blue)](https://doi.org/10.5281/zenodo.7400785)
 
 ---
 
@@ -25,13 +27,14 @@
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.7400786](https://doi.org/10.5281/zenodo.7400786)
+- DOI: [10.5281/zenodo.7400785](https://doi.org/10.5281/zenodo.7400785)
+- Artifact DOI: [10.5281/zenodo.7400786](https://doi.org/10.5281/zenodo.7400786)
 - Zenodo record: [https://zenodo.org/records/7400786](https://zenodo.org/records/7400786)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7400786)
 
 ## Citation
 
-> Dalton AR Sakthivadivel, Ali Rahmjoo, Jakub Smékal, Daniel Friedman (2022). *A Worked Example of the Bayesian Mechanics of Classical Objects*. Zenodo. DOI: 10.5281/zenodo.7400786. URL: https://doi.org/10.5281/zenodo.7400786.
+> Dalton AR Sakthivadivel, Ali Rahmjoo, Jakub Smékal, Daniel Friedman (2022). *A Worked Example of the Bayesian Mechanics of Classical Objects*. Zenodo. DOI: 10.5281/zenodo.7400785. URL: https://doi.org/10.5281/zenodo.7400785.
 
 ## Related
 

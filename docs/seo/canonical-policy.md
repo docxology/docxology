@@ -37,6 +37,19 @@ redirects, so a changed key = a 404 (or a forever-maintained meta-refresh stub).
 - Citation: `https://danielarifriedman.com/cite-verify.html`
 - Evidence: `https://danielarifriedman.com/evidence.html`
 
+## CSP Enforcement Limitation
+
+The site ships its Content-Security-Policy as a `<meta http-equiv="Content-Security-Policy">`
+tag because GitHub Pages cannot set custom HTTP response headers for this repository.
+Per the CSP specification, a `<meta>`-delivered policy **must ignore** the
+`frame-ancestors` directive (and `report-uri`/`sandbox`), so clickjacking protection via
+`frame-ancestors 'none'` is **not enforceable on this host** — the meta CSP covers
+resource-loading directives only. Shipping the directive in the meta tag would add a
+console error on every page without protecting anything, so it is deliberately omitted
+(see `code/src/site_nav.py` `META_INVALID_CSP_DIRECTIVES` and
+[security-posture.md](../security/security-posture.md) for the history and the
+header-capable-host remediation path).
+
 ## Maintenance Checklist
 
 - After adding a public page, update or regenerate `sitemap.xml`.

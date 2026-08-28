@@ -73,7 +73,7 @@
     "isPartOf": {
         "@id": "https://danielarifriedman.com/#website"
     },
-    "dateModified": "2026-08-22",
+    "dateModified": "2026-08-28",
     "about": {
         "@type": "DefinedTerm",
         "name": "Genetics & Biomedicine"
@@ -109,29 +109,36 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
-    <nav role="navigation" aria-label="Main navigation">
+    <nav aria-label="Main navigation">
         <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <div class="nav-links">
-            <a href="index.html#about">About</a>
-            <a href="index.html#research">Research</a>
-            <a href="publications.html">Publications</a>
-            <a href="works/">Works</a>
-            <a href="domains.html" class="active">Domains</a>
-            <a href="software.html">Software</a>
-            <a href="videos.html">Videos</a>
-            <a href="art.html">Art</a>
-            <a href="media.html">Media</a>
-            <a href="collaborators.html">Collaborators</a>
-            <a href="resume/resume.html">CV</a>
-            <a href="search.html">Search</a>
-            <a href="catalog.html">Data Catalog</a>
-            <a href="evidence.html">Evidence</a>
-            <a href="reproducibility.html">Reproducibility</a>
-            <a href="cite-verify.html">Cite</a>
-            <a href="discovery.html">Discovery</a>
-            <a href="data/agent-index.json">Agent Map</a>
-        </div>
+        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="works/">Works</a></li>
+            <li><a href="domains.html" class="active" aria-current="page">Domains</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="art.html" class="nav-art-link">Art</a></li>
+            <li>
+                <details class="nav-more">
+                    <summary>More</summary>
+                    <ul class="nav-more-panel">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#research">Research</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="collaborators.html">Collaborators</a></li>
+                    <li><a href="resume/resume.html">CV</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="catalog.html">Data Catalog</a></li>
+                    <li><a href="evidence.html">Evidence</a></li>
+                    <li><a href="reproducibility.html">Reproducibility</a></li>
+                    <li><a href="cite-verify.html">Cite</a></li>
+                    <li><a href="discovery.html">Discovery</a></li>
+                    <li><a href="data/agent-index.json">Agent Map</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
     </nav>
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol><li><a href="index.html">Home</a></li><li><a href="domains.html">Domains</a></li><li aria-current="page">Genetics &amp; Biomedicine</li></ol>
@@ -146,7 +153,7 @@
             <div class="mini-grid">
                 <div class="mini-card"><h2>15 Works</h2><p>Curated works in this domain from the unified bibliography.</p></div>
                 <div class="mini-card"><h2>5 Related Repositories</h2><p>Selected software entries connected to this domain.</p></div>
-                <div class="mini-card"><h2>Full Text &amp; Images</h2><p>12 of 15 works have extracted full text, 12 have image galleries.</p></div>
+                <div class="mini-card"><h2>Full Text &amp; Images</h2><p>12 of 15 works have extracted full text, 9 have image galleries.</p></div>
                 <div class="mini-card"><h2>Collaborator Context</h2><p>Deborah Gordon, UC Davis Genetics, Stanford Biology</p></div>
             </div>
         </section>
@@ -212,7 +219,7 @@
                     <div>
                         <a href="works/Friedman2023CommentOrNotComment063.html"><strong>To comment or not to comment</strong></a>
                         <div class="venue">Physics of Life Reviews · Paper</div>
-                        <div class="work-desc">This paper makes a case for integrating frameworks from two different knowledge domains, rhetorical studies and ecological studies, to catalog, monitor, and study digital image…</div>
+                        <div class="work-desc">This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the…</div>
                         <div class="work-meta-links"><a href="https://doi.org/10.1016/j.plrev.2023.06.002">DOI: 10.1016/j.plrev.2023.06.002</a> · <a href="papers/2023_ToComment/">Paper Folder</a> · <a href="works/Friedman2023CommentOrNotComment063.html">Full Work Page &amp; Citation</a></div>
                     </div>
                     <a href="https://doi.org/10.1016/j.plrev.2023.06.002" aria-label="Primary link for To comment or not to comment" class="btn btn-sm btn-outline">Primary Link</a>
@@ -301,9 +308,9 @@
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/biology_textbook">biology_textbook</a></h3>
-                    <p>Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo</p>
+                    <p>Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI</p>
                     <p class="text-muted">Python · ⭐ 0 · Updated 2026-05</p>
-                    <div class="repo-meta-links"><a href="https://github.com/docxology/biology_textbook">GitHub Repo</a> · <a href="papers/2026_BiologyTextbook/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.20286478">Zenodo Release</a></div>
+                    <div class="repo-meta-links"><a href="https://github.com/docxology/biology_textbook">GitHub Repo</a> · <a href="papers/2026_BiologyTextbook/">Companion Paper</a> · <a href="https://doi.org/10.5281/zenodo.20286477">Zenodo Release</a></div>
                 </article>
                 <article class="mini-card">
                     <h3><a href="https://github.com/docxology/biol-8">biol-8</a></h3>

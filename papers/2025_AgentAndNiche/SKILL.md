@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "AgentAndNiche"
 description: "Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Full..."
 tags: ["william-blake", "marriage-of-heaven-and-hell", "ecological-psychology", "active-inference", "synergetics", "contraries", "predictive-processing", "markov-blankets", "visionary-epistemology", "art-science-synthesis"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.17235137
+- Canonical DOI: 10.5281/zenodo.17235137
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:41Z

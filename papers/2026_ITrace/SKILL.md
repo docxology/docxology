@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "iTrace: verification-first webcam eye-movement analysis"
 description: "iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics. Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the ..."
 tags: ["eye-tracking", "webcam", "gaze", "saccades", "pupillometry", "open-source", "diagnostic-pilot"]
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *iTrace: verification-first webcam eye-movement analysis*. Computational."
-doi: "10.5281/zenodo.20614909"
+doi: "10.5281/zenodo.20614908"
+artifact_doi: "10.5281/zenodo.20614909"
 ---
 
 # iTrace: verification-first webcam eye-movement analysis
@@ -39,10 +41,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20614909
+- Canonical DOI: 10.5281/zenodo.20614908
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: needs_review
 - Last checked: 2026-06-09T18:22:02Z
+- Artifact DOI: 10.5281/zenodo.20614909
 
 ## Prerequisites
 
@@ -54,6 +57,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.20614909`
+1. Reference the DOI for citation: `10.5281/zenodo.20614908`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

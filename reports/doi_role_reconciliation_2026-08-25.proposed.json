@@ -1,0 +1,529 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-25T19:10:21Z",
+  "status": "proposed",
+  "canonical_source": "pages/BIBLIOGRAPHY.md",
+  "canonical_field": "doi",
+  "artifact_field": "artifact_doi",
+  "source_sha256": "d9645f50fb7a997f55db13a56bc9bf29016d2a1551e169d36959504d09076058",
+  "summary": {
+    "actions": 64,
+    "canonical_doi_corrections": 26,
+    "backfills": 38
+  },
+  "actions": [
+    {
+      "folder": "2015_CryptoJews",
+      "metadata_path": "papers/2015_CryptoJews/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.3389/fgene.2015.00261",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2015_EhrlichialInfection",
+      "metadata_path": "papers/2015_EhrlichialInfection/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1016/j.mehy.2015.09.015",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2015_HoneyBeeEvolution",
+      "metadata_path": "papers/2015_HoneyBeeEvolution/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1093/molbev/msu292",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2016_AntGenetics",
+      "metadata_path": "papers/2016_AntGenetics/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1146/annurev-neuro-070815-013927",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2016_ForagingGene",
+      "metadata_path": "papers/2016_ForagingGene/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1098/rspb.2016.0841",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2016_NuclearStructure",
+      "metadata_path": "papers/2016_NuclearStructure/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.3109/09553002.2016.1144941",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2017_MutAnts",
+      "metadata_path": "papers/2017_MutAnts/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1016/j.cell.2017.07.046",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2017_TwoLineages",
+      "metadata_path": "papers/2017_TwoLineages/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1111/mec.13964",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2018_ArgentineAnt",
+      "metadata_path": "papers/2018_ArgentineAnt/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1371/journal.pone.0202117",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2018_DopamineForaging",
+      "metadata_path": "papers/2018_DopamineForaging/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1016/j.isci.2018.09.001",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2018_PPPiP",
+      "metadata_path": "papers/2018_PPPiP/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.3390/arts7030039",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2018_WoodliceAndMen",
+      "metadata_path": "papers/2018_WoodliceAndMen/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.34700/h460-nz89",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2019_AntConsciousness",
+      "metadata_path": "papers/2019_AntConsciousness/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1007/s11229-019-02130-y",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2019_DennettExplained",
+      "metadata_path": "papers/2019_DennettExplained/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.34700/7gkw-zh08",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2019_ForagerHydration",
+      "metadata_path": "papers/2019_ForagerHydration/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1038/s41598-019-41586-3",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2020_DistributedPhysiology",
+      "metadata_path": "papers/2020_DistributedPhysiology/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1016/j.yhbeh.2020.104757",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2020_GeneExpressionForagers",
+      "metadata_path": "papers/2020_GeneExpressionForagers/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1038/s42003-020-0813-8",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2020_InfiniteGamesInfinite",
+      "metadata_path": "papers/2020_InfiniteGamesInfinite/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.12601675",
+      "canonical_doi": "10.5281/zenodo.12601674",
+      "artifact_doi": "10.5281/zenodo.12601675",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2020_NeuroscienceDecision",
+      "metadata_path": "papers/2020_NeuroscienceDecision/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.34700/8pg4-0h12",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2020_NeurotransmitterVariation",
+      "metadata_path": "papers/2020_NeurotransmitterVariation/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1007/s00216-019-02355-3",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2020_ReimaginingMaps",
+      "metadata_path": "papers/2020_ReimaginingMaps/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.4170026",
+      "canonical_doi": "10.5281/zenodo.4170025",
+      "artifact_doi": "10.5281/zenodo.4170026",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2021_ActiveInferants",
+      "metadata_path": "papers/2021_ActiveInferants/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.3389/fnbeh.2021.647732",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2021_CollaborativeWritingCatechism",
+      "metadata_path": "papers/2021_CollaborativeWritingCatechism/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.4633921",
+      "canonical_doi": "10.5281/zenodo.4624298",
+      "artifact_doi": "10.5281/zenodo.4633921",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2021_Transcript",
+      "metadata_path": "papers/2021_Transcript/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.5797072",
+      "canonical_doi": "10.5281/zenodo.5797040",
+      "artifact_doi": "10.5281/zenodo.5797072",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2022_CanonicalNeuralNetworks",
+      "metadata_path": "papers/2022_CanonicalNeuralNetworks/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.7400536",
+      "canonical_doi": "10.5281/zenodo.7400525",
+      "artifact_doi": "10.5281/zenodo.7400536",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2022_InteroceptionAsModeling",
+      "metadata_path": "papers/2022_InteroceptionAsModeling/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.7400709",
+      "canonical_doi": "10.5281/zenodo.7400708",
+      "artifact_doi": "10.5281/zenodo.7400709",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2022_StigmergicAnnotation",
+      "metadata_path": "papers/2022_StigmergicAnnotation/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.48550/arXiv.2205.06345",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2022_TrackingPublicSensemaking",
+      "metadata_path": "papers/2022_TrackingPublicSensemaking/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.6904427",
+      "canonical_doi": "10.5281/zenodo.6904426",
+      "artifact_doi": "10.5281/zenodo.6904427",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2022_Transcript",
+      "metadata_path": "papers/2022_Transcript/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.7267947",
+      "canonical_doi": "10.5281/zenodo.7259006",
+      "artifact_doi": "10.5281/zenodo.7267947",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2022_TranscriptDiscussions",
+      "metadata_path": "papers/2022_TranscriptDiscussions/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.7401875",
+      "canonical_doi": "10.5281/zenodo.7401874",
+      "artifact_doi": "10.5281/zenodo.7401875",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2022_WorkedExampleBayesian",
+      "metadata_path": "papers/2022_WorkedExampleBayesian/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.7400786",
+      "canonical_doi": "10.5281/zenodo.7400785",
+      "artifact_doi": "10.5281/zenodo.7400786",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2023_ATLAS2",
+      "metadata_path": "papers/2023_ATLAS2/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.10362561",
+      "canonical_doi": "10.5281/zenodo.10296601",
+      "artifact_doi": "10.5281/zenodo.10362561",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2023_DistributedScience",
+      "metadata_path": "papers/2023_DistributedScience/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.31219/osf.io/dnw5k",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2023_GuidedTourMinds",
+      "metadata_path": "papers/2023_GuidedTourMinds/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1016/j.plrev.2023.11.001",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2023_ModernNostrIndex",
+      "metadata_path": "papers/2023_ModernNostrIndex/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.8118156",
+      "canonical_doi": "10.5281/zenodo.8118155",
+      "artifact_doi": "10.5281/zenodo.8118156",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2023_NaturalAIBased",
+      "metadata_path": "papers/2023_NaturalAIBased/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.10360148",
+      "canonical_doi": "10.5281/zenodo.10360056",
+      "artifact_doi": "10.5281/zenodo.10360148",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2023_OpenScienceSensemaking",
+      "metadata_path": "papers/2023_OpenScienceSensemaking/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.31222/osf.io/9nb3u",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2023_SinglePheromone",
+      "metadata_path": "papers/2023_SinglePheromone/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1016/j.cogsys.2023.02.005",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2023_SlidesIris",
+      "metadata_path": "papers/2023_SlidesIris/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.7838653",
+      "canonical_doi": "10.5281/zenodo.7838652",
+      "artifact_doi": "10.5281/zenodo.7838653",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2023_ToComment",
+      "metadata_path": "papers/2023_ToComment/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1016/j.plrev.2023.06.002",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2023_TranscriptActiveInference",
+      "metadata_path": "papers/2023_TranscriptActiveInference/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.8229512",
+      "canonical_doi": "10.5281/zenodo.8228934",
+      "artifact_doi": "10.5281/zenodo.8229512",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2023_VariationalSynthesis",
+      "metadata_path": "papers/2023_VariationalSynthesis/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.3390/e25070964",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2023_VideoEntomology",
+      "metadata_path": "papers/2023_VideoEntomology/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.3791/65002",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2024_BlattodeaDiversity",
+      "metadata_path": "papers/2024_BlattodeaDiversity/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1002/ece3.70063",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2024_FederatedInference",
+      "metadata_path": "papers/2024_FederatedInference/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1016/j.neubiorev.2023.105500",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2024_ImageMemeResearch",
+      "metadata_path": "papers/2024_ImageMemeResearch/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1002/asi.24900",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2024_PaleolithicRockstars",
+      "metadata_path": "papers/2024_PaleolithicRockstars/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1016/j.plrev.2024.04.010",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2024_PopulationSearch",
+      "metadata_path": "papers/2024_PopulationSearch/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.48550/arXiv.2408.09548",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2024_PushPull",
+      "metadata_path": "papers/2024_PushPull/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.10659375",
+      "canonical_doi": "10.5281/zenodo.10659374",
+      "artifact_doi": "10.5281/zenodo.10659375",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2024_SharedProtentions",
+      "metadata_path": "papers/2024_SharedProtentions/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.3390/e26040303",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2025_BeaconsPreEmulation",
+      "metadata_path": "papers/2025_BeaconsPreEmulation/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.14737060",
+      "canonical_doi": "10.5281/zenodo.14737059",
+      "artifact_doi": "10.5281/zenodo.14737060",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2025_BevCycPositPrimitive",
+      "metadata_path": "papers/2025_BevCycPositPrimitive/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.14737076",
+      "canonical_doi": "10.5281/zenodo.14737075",
+      "artifact_doi": "10.5281/zenodo.14737076",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2025_ConCatEnate",
+      "metadata_path": "papers/2025_ConCatEnate/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.14738798",
+      "canonical_doi": "10.5281/zenodo.13626536",
+      "artifact_doi": "10.5281/zenodo.14738798",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2025_ConCatEnate2",
+      "metadata_path": "papers/2025_ConCatEnate2/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.14737043",
+      "canonical_doi": "10.5281/zenodo.14737042",
+      "artifact_doi": "10.5281/zenodo.14737043",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2025_DiscoveryEngine",
+      "metadata_path": "papers/2025_DiscoveryEngine/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.48550/arXiv.2505.17500",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2025_Graphspeak",
+      "metadata_path": "papers/2025_Graphspeak/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.14737157",
+      "canonical_doi": "10.5281/zenodo.14737156",
+      "artifact_doi": "10.5281/zenodo.14737157",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2025_TemporalDepth",
+      "metadata_path": "papers/2025_TemporalDepth/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.3389/fpsyg.2025.1585315",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2025_Thoughtseeds",
+      "metadata_path": "papers/2025_Thoughtseeds/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.3390/e27050459",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2026_BiologyTextbook",
+      "metadata_path": "papers/2026_BiologyTextbook/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.20286478",
+      "canonical_doi": "10.5281/zenodo.20286477",
+      "artifact_doi": "10.5281/zenodo.20286478",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2026_BlakeJiang",
+      "metadata_path": "papers/2026_BlakeJiang/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.20144984",
+      "canonical_doi": "10.5281/zenodo.20144983",
+      "artifact_doi": "10.5281/zenodo.20144984",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2026_CrescentCity",
+      "metadata_path": "papers/2026_CrescentCity/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.20286171",
+      "canonical_doi": "10.5281/zenodo.20286170",
+      "artifact_doi": "10.5281/zenodo.20286171",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2026_FEPLean",
+      "metadata_path": "papers/2026_FEPLean/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.19699234",
+      "canonical_doi": "10.5281/zenodo.19699233",
+      "artifact_doi": "10.5281/zenodo.19699234",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    },
+    {
+      "folder": "2026_FocusedAttentionMeditation",
+      "metadata_path": "papers/2026_FocusedAttentionMeditation/metadata.json",
+      "prior_canonical_doi": "",
+      "canonical_doi": "10.1007/978-3-032-16955-6_11",
+      "artifact_doi": "",
+      "action": "set_canonical_doi"
+    },
+    {
+      "folder": "2026_ITrace",
+      "metadata_path": "papers/2026_ITrace/metadata.json",
+      "prior_canonical_doi": "10.5281/zenodo.20614909",
+      "canonical_doi": "10.5281/zenodo.20614908",
+      "artifact_doi": "10.5281/zenodo.20614909",
+      "action": "set_canonical_and_preserve_prior_as_artifact"
+    }
+  ],
+  "review_note": "Review this proposed record before applying. The apply command rejects any source or action drift."
+}

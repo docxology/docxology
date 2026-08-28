@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "DiscoveryEngine"
 description: "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem..."
 tags: ["discovery-engine", "automated-discovery", "active-inference", "scientific-reasoning", "hypothesis-generation", "computational-science"]
 domain: "Computational"
 citation: "Daniel A. Friedman (2025). *DiscoveryEngine*. Computational."
+doi: "10.48550/arXiv.2505.17500"
 ---
 
 # DiscoveryEngine
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.48550/arXiv.2505.17500
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.48550/arXiv.2505.17500`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

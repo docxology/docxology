@@ -1,8 +1,8 @@
 {
   "title": "A Worked Example of the Bayesian Mechanics of Classical Objects",
   "version": "v1",
-  "doi": "10.5281/zenodo.7400786",
-  "doi_url": "https://doi.org/10.5281/zenodo.7400786",
+  "doi": "10.5281/zenodo.7400785",
+  "doi_url": "https://doi.org/10.5281/zenodo.7400785",
   "zenodo_record": "https://zenodo.org/records/7400786",
   "record_id": "7400786",
   "publication_date": "2022-10-12",
@@ -64,5 +64,7 @@
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.7400786",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7400786"
 }

@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

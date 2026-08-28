@@ -88,7 +88,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 - [ActiveInferAnts](https://github.com/ActiveInferenceInstitute/ActiveInferAnts) — Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
 - [ActiveInferAnts](https://github.com/docxology/ActiveInferAnts) — Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy
 - [GeneralizedNotationNotation](https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation) — GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software
-- [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) — Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo
+- [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) — Lean 4 / Mathlib4 formalization of FEP-related mathematics — 155-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI
 
 ## 🛡️ [Cognitive Security](../domain-cognitive-security.html)
 
@@ -164,7 +164,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 54
+- Works: 56
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 
@@ -194,7 +194,7 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 - [steganographer](https://github.com/docxology/steganographer) — High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
 - [timeline_generator](https://github.com/docxology/timeline_generator) — Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network
 - [codomyrmex](https://github.com/docxology/codomyrmex) — AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · Zenodo
-- [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo
+- [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI
 - [biol-1](https://github.com/docxology/biol-1) — BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 
 ## 🧬 [Genetics & Biomedicine](../domain-biomedicine.html)
@@ -227,7 +227,7 @@ Honey bee evolution, gene expression variation, nuclear structure, population ge
 
 - [MetaInformAnt](https://github.com/docxology/MetaInformAnt) — Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond
 - [EvoJump](https://github.com/docxology/EvoJump) — Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics
-- [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo
+- [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI
 - [biol-8](https://github.com/docxology/biol-8) — BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 - [biol-1](https://github.com/docxology/biol-1) — BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 
@@ -260,7 +260,7 @@ Active Inference Institute programs, infrastructure, textbook cohorts, and organ
 **Selected repositories**
 
 - [active_inference](https://github.com/docxology/active_inference) — Active Inference for, with, and by Generative AI — Python implementations of free-energy-minimizing agents integrated with modern AI tooling
-- [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) — Lean 4 / Mathlib4 formalization of FEP-related mathematics — 50-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo
+- [fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean) — Lean 4 / Mathlib4 formalization of FEP-related mathematics — 155-topic sorry-free catalog, Hermes/OpenGauss LLM drafting, zero-mock verification, manuscript pipeline ·  · Zenodo artifact v1.1.0 · Citation DOI
 - [cognitive](https://github.com/ActiveInferenceInstitute/cognitive) — Cognitive modeling and simulation tools — multi-agent Active Inference environments, benchmarks, and visualization
 - [cognitive](https://github.com/docxology/cognitive) — Cognitive Ecosystem Modeling Framework — Active Inference agents with Obsidian-compatible knowledge management, bidirectional graph validation, belief updating, and network visualization
 - [AgenticMesh](https://github.com/docxology/AgenticMesh) — Active Inference & Agentic Mesh — modular Python infrastructure for building agentic systems using free-energy-minimizing Active Inference principles
@@ -293,6 +293,6 @@ Talks, courses, presentations, and media artifacts connected to the research and
 
 **Selected repositories**
 
-- [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo
+- [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI
 - [biol-1](https://github.com/docxology/biol-1) — BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 - [biol-8](https://github.com/docxology/biol-8) — BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content

@@ -1,8 +1,8 @@
 {
   "title": "iTrace: verification-first webcam eye-movement analysis",
   "version": "0.4.1",
-  "doi": "10.5281/zenodo.20614909",
-  "doi_url": "https://doi.org/10.5281/zenodo.20614909",
+  "doi": "10.5281/zenodo.20614908",
+  "doi_url": "https://doi.org/10.5281/zenodo.20614908",
   "zenodo_record": "https://zenodo.org/records/20614909",
   "record_id": "20614909",
   "publication_date": "2026-06-09",
@@ -80,5 +80,7 @@
   ],
   "related_software": [
     "docxology/itrace"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.20614909",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.20614909"
 }

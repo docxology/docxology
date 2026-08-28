@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "StigmergicAnnotation"
 date-released: 2022
+doi: 10.48550/arXiv.2205.06345
+url: "https://doi.org/10.48550/arXiv.2205.06345"
 authors:
   - family-names: Tamari
     given-names: Ronen
@@ -15,3 +17,10 @@ authors:
     given-names: Lauren
   - family-names: Shahaf
     given-names: Dafna
+identifiers:
+  - type: doi
+    value: "10.48550/arXiv.2205.06345"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.48550/arXiv.2205.06345"
+    description: "Canonical citation DOI resolver"

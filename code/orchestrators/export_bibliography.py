@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import subprocess
 import sys
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
@@ -24,7 +25,7 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
 from biblio_table import BiblioRow, iter_bibliography_rows  # noqa: E402
-from sync_publications_html import canonical_link_url  # noqa: E402
+from bibliography_links import canonical_link_url  # noqa: E402
 
 try:
     from report_paths import generated_timestamp, stable_generated_at
@@ -129,11 +130,37 @@ def docs_path(row: BiblioRow) -> str:
     return f"papers/{row.folder}/" if row.folder else ""
 
 
-def row_to_work(row: BiblioRow) -> Work:
+def source_paths(repo_root: Path = REPO_ROOT) -> frozenset[str]:
+    """Return source files visible to a clean cross-platform checkout.
+
+    Generated public data must not depend on local ignored derivatives (such
+    as extracted paper images). Include tracked files and non-ignored new
+    source files so an author can still preview an unstaged intake, but exclude
+    ignored workspace artifacts that a Linux CI checkout cannot see.
+    """
+    result = subprocess.run(
+        ["git", "ls-files", "-co", "--exclude-standard", "-z"],
+        cwd=repo_root,
+        check=False,
+        capture_output=True,
+    )
+    if result.returncode != 0:
+        raise RuntimeError("unable to enumerate Git-visible bibliography source files")
+    return frozenset(
+        path
+        for path in result.stdout.decode("utf-8", errors="surrogateescape").split("\0")
+        if path
+    )
+
+
+def row_to_work(row: BiblioRow, *, visible_source_paths: frozenset[str]) -> Work:
     url = canonical_link_url(row.link_cell, row.venue)
     domain = row.domain.strip()
     docs = docs_path(row)
-    # Check for full_text.md, images/ directory, and per-paper agent docs.
+    # Check only Git-visible source for full_text.md, images, and per-paper
+    # agent docs. Ignored extraction output can exist on a maintainer's macOS
+    # checkout but is absent from the clean Linux CI checkout; consulting the
+    # raw filesystem here created a cross-platform false-green generator.
     has_ft = False
     has_img = False
     has_skill = False
@@ -141,14 +168,14 @@ def row_to_work(row: BiblioRow) -> Work:
     has_readme = False
     full_text_url = ""
     if docs:
-        paper_dir = REPO_ROOT / docs.rstrip("/")
-        if (paper_dir / "full_text.md").is_file():
+        paper_root = docs.rstrip("/")
+        if f"{paper_root}/full_text.md" in visible_source_paths:
             has_ft = True
             full_text_url = f"/{docs.rstrip('/')}/full_text.md"
-        has_img = (paper_dir / "images").is_dir()
-        has_skill = (paper_dir / "SKILL.md").is_file()
-        has_agents = (paper_dir / "AGENTS.md").is_file()
-        has_readme = (paper_dir / "README.md").is_file()
+        has_img = any(path.startswith(f"{paper_root}/images/") for path in visible_source_paths)
+        has_skill = f"{paper_root}/SKILL.md" in visible_source_paths
+        has_agents = f"{paper_root}/AGENTS.md" in visible_source_paths
+        has_readme = f"{paper_root}/README.md" in visible_source_paths
     return Work(
         num=row.num,
         citation_key=citation_key(row),
@@ -298,7 +325,8 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Fail if generated files are stale")
     args = parser.parse_args()
 
-    works = [row_to_work(r) for r in iter_bibliography_rows()]
+    visible_source_paths = source_paths()
+    works = [row_to_work(r, visible_source_paths=visible_source_paths) for r in iter_bibliography_rows()]
     works_path = REPO_ROOT / "data" / "works.json"
     generated_at = existing_generated_at(works_path) if args.check else None
     if not args.check:

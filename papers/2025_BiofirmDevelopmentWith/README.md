@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024
 
 **John Clippinger, Andrew Pashea, Daniel Friedman** (2025) · *Zenodo*

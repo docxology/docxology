@@ -4,8 +4,8 @@ type: article
 title: "Infinite Games for Infinite Teams"
 version: "1"
 date-released: 2020-07-08
-doi: 10.5281/zenodo.12601675
-url: "https://doi.org/10.5281/zenodo.12601675"
+doi: 10.5281/zenodo.12601674
+url: "https://doi.org/10.5281/zenodo.12601674"
 authors:
   - family-names: Friedman
     given-names: Daniel
@@ -14,8 +14,17 @@ authors:
     given-names: RJ
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.12601675
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.12601674"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.12601674"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.12601675"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.12601675"
+    description: "Version/download DOI resolver (Zenodo artifact)"
   - type: url
     value: "https://zenodo.org/records/12601675"
-    description: "Zenodo landing page"
+    description: "Version/download landing page (Zenodo artifact)"

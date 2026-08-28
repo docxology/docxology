@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ The Facilitator's Catechism
 
 **Richard J. Cordes, Daniel Ari Friedman** (2020) · *Zenodo*

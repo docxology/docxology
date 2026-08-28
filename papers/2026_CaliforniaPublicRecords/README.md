@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ California Public Records: A Technical and Legal Reference for the Post-AB 473 Era
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
@@ -29,9 +31,10 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.20789899](https://doi.org/10.5281/zenodo.20789899)
-- Zenodo record: [https://zenodo.org/records/20789899](https://zenodo.org/records/20789899)
+- Artifact DOI: [10.5281/zenodo.20789916](https://doi.org/10.5281/zenodo.20789916)
+- Zenodo record: [https://zenodo.org/records/20789916](https://zenodo.org/records/20789916)
 - PDF: [Friedman_2026_California_8f09eac2.pdf](Friedman_2026_California_8f09eac2.pdf)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20789899)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/20789916)
 
 ## Citation
 

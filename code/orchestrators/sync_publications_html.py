@@ -8,12 +8,14 @@ data/publications-ld.json for agents and downloads.
 
 Usage:
     python3 sync_publications_html.py           # dry-run: validate counts only
+    python3 sync_publications_html.py --check   # fail if source-rendered targets drift
     python3 sync_publications_html.py --apply   # write publications.html + publications-ld.json
 """
 
 from __future__ import annotations
 
 import argparse
+from dataclasses import asdict
 import json
 import html
 import re
@@ -24,47 +26,31 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 from biblio_table import DEFAULT_BIB_PATH, BiblioRow, iter_bibliography_rows  # noqa: E402
+from bibliography_links import canonical_link_url  # noqa: E402
+from collection_jsonld import display_paths, replace_inline_collection_ld  # noqa: E402
+from export_bibliography import row_to_work, source_paths  # noqa: E402
+from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from site_facts import generated_date, generated_month_year  # noqa: E402
 
 PUBLICATIONS_HTML = REPO_ROOT / "publications.html"
 PUBLICATIONS_LD_JSON = REPO_ROOT / "data" / "publications-ld.json"
+PUBLICATIONS_TEMPLATE = REPO_ROOT / "code" / "templates" / "publications.html.tmpl"
+
+# Crawler-visible static floor: only the first N bibliography rows are
+# server-rendered into <tbody id="pub-tbody">.  Non-rendering AI crawlers see
+# the complete work set through the inline CollectionPage JSON-LD (one mainEntity
+# per row, emitted below) and data/publications-ld.json; browsers get the full
+# table from data/works.json via js/publications.js, which paginates client-side
+# starting from these SSR rows.  The floor keeps raw-HTML weight bounded as the
+# bibliography grows without ever replacing server rendering.
+SSR_FLOOR_ROWS = 50
 
 LD_SYNC_BEGIN = "<!-- <PUBLICATIONS_LD_SYNC_BEGIN> -->"
 LD_SYNC_END = "<!-- <PUBLICATIONS_LD_SYNC_END> -->"
-
-
-def canonical_link_url(link_cell: str, venue: str) -> str:
-    """URL string for JSON-LD sameAs."""
-    cell = (link_cell or "").strip()
-    venue_u = venue.upper()
-
-    m = re.search(r"\[([^\]]*)\]\((https?://[^)\s]+)\)", cell)
-    if m:
-        return m.group(2).rstrip(").,")
-
-    m = re.search(r"(https?://[^\s\])>]+)", cell)
-    if m:
-        return m.group(1).rstrip(").,")
-
-    doi_m = re.search(r"(10\.\d{4,}[^\s\])]*)", cell)
-    if doi_m:
-        slug = doi_m.group(1).rstrip(").,")
-        return f"https://doi.org/{slug}"
-
-    if re.search(r"^978[-\dXx]+$", cell) or cell.startswith("978-"):
-        isbn = cell.split()[0]
-        if "COGSEC" in venue_u or "COGSEC.ORG" in venue_u:
-            return "https://cogsec.org"
-        return f"https://www.worldcat.org/isbn/{isbn}"
-
-    if cell in ("—", "-", ""):
-        return ""
-
-    if "UDEMY" in cell.upper() or "udemy.com" in cell.lower():
-        um = re.search(r"(https?://www\.udemy\.com/[^\s)]+)", cell)
-        if um:
-            return um.group(1).rstrip(").,")
-
-    return cell
+PUBLICATIONS_TEMPLATE_TOKENS = (
+    "{{PUBLICATIONS_INLINE_LD}}",
+    "{{PUBLICATIONS_STATIC_TBODY}}",
+)
 
 
 def schema_type_for_row(typ: str) -> str:
@@ -118,13 +104,22 @@ def _author_block(authors: list[str] | None = None) -> list[dict]:
     return [author_entity(name) for name in authors]
 
 
-def load_works_by_num() -> dict[int, dict]:
-    """Map each bibliography row num to its canonical works.json record."""
-    try:
-        payload = json.loads((REPO_ROOT / "data" / "works.json").read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return {}
-    return {w["num"]: w for w in payload.get("works", []) if "num" in w}
+def source_works_by_num(rows: list[BiblioRow]) -> dict[int, dict]:
+    """Project each static table row directly from bibliography source and papers.
+
+    ``data/works.json`` is itself a generated derivative.  Rendering this page
+    through that derivative made a stale image/full-text flag invisible to the
+    synchronizer's own ``--check``.  Reusing the exporter projection directly
+    keeps the crawler-visible static table anchored to the bibliography and the
+    paper directories, while ``export_bibliography.py --check`` independently
+    verifies the JSON export.
+    """
+    visible_source_paths = source_paths()
+    works = [asdict(row_to_work(row, visible_source_paths=visible_source_paths)) for row in rows]
+    by_num = {work["num"]: work for work in works}
+    if len(by_num) != len(rows):  # validate_rows prevents this; retain a hard guard for callers.
+        raise ValueError("Duplicate bibliography row number in static table projection")
+    return by_num
 
 
 def main_entity_object(row: BiblioRow, same_as: str, work: dict | None = None) -> dict:
@@ -169,9 +164,29 @@ def collection_page_description(count: int) -> str:
     )
 
 
-def build_collection_page(rows: list[BiblioRow]) -> dict:
+def load_source_template() -> str:
+    """Load the versioned page frame that defines the complete HTML output.
+
+    ``publications.html`` is a generated artifact, never an input.  The
+    template contains only hand-authored framing plus explicit placeholders for
+    the JSON-LD and static table regions rendered below.  This prevents a
+    mutated output body from becoming the next check-mode template.
+    """
+    if not PUBLICATIONS_TEMPLATE.is_file():
+        raise SystemExit(f"Missing source template {PUBLICATIONS_TEMPLATE}")
+    template = PUBLICATIONS_TEMPLATE.read_text(encoding="utf-8")
+    missing = [token for token in PUBLICATIONS_TEMPLATE_TOKENS if template.count(token) != 1]
+    if missing:
+        raise ValueError(
+            "Publication template must contain exactly one of each placeholder: "
+            + ", ".join(missing)
+        )
+    return template
+
+
+def build_collection_page(rows: list[BiblioRow], works_by_num: dict[int, dict] | None = None) -> dict:
     count = len(rows)
-    works_by_num = load_works_by_num()
+    works_by_num = works_by_num if works_by_num is not None else source_works_by_num(rows)
     me = [main_entity_object(r, canonical_link_url(r.link_cell, r.venue), works_by_num.get(r.num)) for r in rows]
     return {
         "@context": "https://schema.org",
@@ -237,66 +252,31 @@ def replace_head_meta(html: str, count: int) -> str:
         html,
         count=1,
     )
-    hero_sub = re.search(
-        r'(<p class="sub">)\d+ works spanning',
-        html,
+    month_year = generated_month_year()
+    hero = (
+        f'<p class="sub">{count} works spanning Active Inference, computational entomology, '
+        f'cognitive security, art &amp; synergetics, genetics, and open science — as of {month_year}</p>'
     )
-    if hero_sub:
-        html = re.sub(
-            r'(<p class="sub">)\d+ works spanning',
-            rf"\g<1>{count} works spanning",
-            html,
-            count=1,
-        )
+    html, hero_count = re.subn(r'<p class="sub">[^<]*</p>', hero, html, count=1)
+    if hero_count != 1:
+        raise ValueError("Publication source template is missing the hero subtitle")
+    html, revised_count = re.subn(
+        r'<meta name="revised" content="[^"]*">',
+        f'<meta name="revised" content="{generated_date()}">',
+        html,
+        count=1,
+    )
+    if revised_count != 1:
+        raise ValueError("Publication source template is missing meta[name=revised]")
+    html, footer_count = re.subn(
+        r'(Data refreshed )[A-Z][a-z]+ \d{4}',
+        rf"\g<1>{month_year}",
+        html,
+        count=1,
+    )
+    if footer_count != 1:
+        raise ValueError("Publication source template is missing its refresh footer")
     return html
-
-
-def inline_ld_marker_block(collection: dict) -> str:
-    payload = json.dumps(collection, indent=4, ensure_ascii=False)
-    return f"    {LD_SYNC_BEGIN}\n    <script type=\"application/ld+json\">\n{payload}\n    </script>\n    {LD_SYNC_END}"
-
-
-def remove_inline_collection_ld(html: str) -> str:
-    """Drop any inline CollectionPage JSON-LD block (keep BreadcrumbList and other scripts)."""
-    start_tag = '<script type="application/ld+json">'
-    end_tag = "</script>"
-    while True:
-        i0 = html.find(start_tag)
-        if i0 < 0:
-            break
-        j0 = i0 + len(start_tag)
-        i1 = html.find(end_tag, j0)
-        if i1 < 0:
-            break
-        raw = html[j0:i1].strip()
-        try:
-            data = json.loads(raw)
-        except json.JSONDecodeError:
-            break
-        if data.get("@type") != "CollectionPage":
-            break
-        html = html[:i0] + html[i1 + len(end_tag) :]
-    return html
-
-
-def replace_inline_collection_ld(html: str, collection: dict) -> str:
-    """Ensure publications.html contains crawler-visible inline CollectionPage JSON-LD."""
-    html = remove_inline_collection_ld(html)
-    marker = inline_ld_marker_block(collection)
-    if LD_SYNC_BEGIN in html and LD_SYNC_END in html:
-        return re.sub(
-            re.escape(LD_SYNC_BEGIN) + r"[\s\S]*?" + re.escape(LD_SYNC_END),
-            marker.strip(),
-            html,
-            count=1,
-        )
-    stylesheet_match = re.search(r'<link rel="stylesheet" href="style\.css(?:\?[^"]*)?">', html)
-    insert_at = stylesheet_match.start() if stylesheet_match else -1
-    if insert_at < 0:
-        insert_at = html.find("</head>")
-    if insert_at < 0:
-        raise ValueError("Could not locate insertion point for external JSON-LD in publications.html")
-    return html[:insert_at] + marker + "\n    " + html[insert_at:]
 
 
 def load_rows() -> list[BiblioRow]:
@@ -394,47 +374,94 @@ def render_static_tbody(works: list[dict]) -> str:
 
 def replace_tbody(html_content: str, works: list[dict]) -> str:
     tbody_inner = chr(10) + render_static_tbody(works) + chr(10) + "                "
-    return re.sub(
+    replaced, replacement_count = re.subn(
         r'<tbody id="pub-tbody">[\s\S]*?</tbody>',
         f'<tbody id="pub-tbody">{tbody_inner}</tbody>',
         html_content,
         count=1,
     )
+    if replacement_count != 1:
+        raise ValueError("Missing generated publication table body #pub-tbody")
+    return replaced
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--apply", action="store_true", help="Write publications.html and publications-ld.json")
-    args = parser.parse_args()
+def render_outputs_from_template(
+    rows: list[BiblioRow] | None,
+    html_template: str,
+) -> dict[Path, str]:
+    """Render publication outputs from an explicit template (test seam).
 
-    rows = load_rows()
+    Production callers use :func:`render_outputs`, which loads only the
+    versioned source template.  Keeping this lower-level helper separate makes
+    it impossible for the CLI check to accidentally accept the generated
+    output as its template again.
+    """
+    rows = rows if rows is not None else load_rows()
     validate_rows(rows)
 
-    if not PUBLICATIONS_HTML.is_file():
-        raise SystemExit(f"Missing {PUBLICATIONS_HTML}")
-
-    collection = build_collection_page(rows)
-    html = PUBLICATIONS_HTML.read_text(encoding="utf-8")
-    html_out = replace_inline_collection_ld(html, collection)
+    works_by_num = source_works_by_num(rows)
+    collection = build_collection_page(rows, works_by_num)
+    html_out = replace_inline_collection_ld(
+        html_template,
+        collection,
+        begin_marker=LD_SYNC_BEGIN,
+        end_marker=LD_SYNC_END,
+        page_label="publications",
+        # Compact one-line JSON-LD: identical graph (all rows as mainEntity),
+        # roughly a third of the raw-HTML bytes of the indented form.
+        compact=True,
+    )
     html_out = replace_head_meta(html_out, len(rows))
-    works_list = list(load_works_by_num().values())
-    html_out = replace_tbody(html_out, works_list)
+    html_out = replace_tbody(html_out, [works_by_num[row.num] for row in rows[:SSR_FLOOR_ROWS]])
 
     if len(collection["mainEntity"]) != len(rows):
         raise SystemExit("mainEntity length mismatch after build")
 
-    if not args.apply:
+    return {
+        PUBLICATIONS_HTML: html_out,
+        PUBLICATIONS_LD_JSON: json.dumps(collection, indent=4, ensure_ascii=False) + "\n",
+    }
+
+
+def render_outputs(rows: list[BiblioRow] | None = None) -> dict[Path, str]:
+    """Render every source-owned publication target without writing it.
+
+    The output is assembled from a versioned source template, bibliography
+    rows, paper metadata, and the current-count snapshot.  It never reads
+    ``publications.html`` as an input, so check mode detects drift anywhere in
+    the rendered page, including hand-authored body framing.
+    """
+    return render_outputs_from_template(rows, load_source_template())
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--apply", action="store_true", help="Write publications.html and publications-ld.json")
+    mode.add_argument("--check", action="store_true", help="Fail if source-rendered publication outputs are stale")
+    args = parser.parse_args()
+
+    rows = load_rows()
+    validate_rows(rows)
+    outputs = render_outputs(rows)
+
+    if not args.apply and not args.check:
         print(
             f"OK dry-run: {len(rows)} rows, "
-            f"publications-ld.json would have {len(collection['mainEntity'])} mainEntity items"
+            f"publications-ld.json would have {len(rows)} mainEntity items"
         )
         return
 
-    PUBLICATIONS_LD_JSON.parent.mkdir(parents=True, exist_ok=True)
-    PUBLICATIONS_LD_JSON.write_text(
-        json.dumps(collection, indent=4, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
-    PUBLICATIONS_HTML.write_text(html_out, encoding="utf-8")
+    if args.check:
+        stale = stale_output_paths(outputs, repo_root=REPO_ROOT)
+        if stale:
+            raise SystemExit(
+                "Stale source-rendered publication outputs: "
+                f"{display_paths(stale, REPO_ROOT)} (run sync_publications_html.py --apply)"
+            )
+        print(f"Checked {len(outputs)} publication outputs from {len(rows)} bibliography rows")
+        return
+
+    write_output_texts(outputs, repo_root=REPO_ROOT)
     print(
         f"Wrote {PUBLICATIONS_LD_JSON} and {PUBLICATIONS_HTML} "
         f"({len(rows)} mainEntity + head meta)"

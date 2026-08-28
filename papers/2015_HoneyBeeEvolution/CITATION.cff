@@ -3,9 +3,18 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "HoneyBeeEvolution"
 date-released: 2015
+doi: 10.1093/molbev/msu292
+url: "https://doi.org/10.1093/molbev/msu292"
 authors:
   - family-names: Friedman
     given-names: Daniel A.
     orcid: "https://orcid.org/0000-0001-6232-9096"
   - family-names: Johnson
     given-names: Brian R.
+identifiers:
+  - type: doi
+    value: "10.1093/molbev/msu292"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.1093/molbev/msu292"
+    description: "Canonical citation DOI resolver"

@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "VideoEntomology"
 description: "We examine the transformative impact of video technology on experimental entomology. Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies..."
 tags: ["video-entomology", "behavioral-tracking", "automated-phenotyping", "insect-behavior", "experimental-methods", "high-throughput-analysis"]
 domain: "Entomology"
 citation: "Daniel A. Friedman, Judith R. Wexler, Sebastian Alvarado (2023). *VideoEntomology*. Entomology."
+doi: "10.3791/65002"
 ---
 
 # VideoEntomology
@@ -38,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.3791/65002
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -53,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.3791/65002`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

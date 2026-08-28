@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🛡️ TrustFinder
 
 **R.J. Cordes, Scott David, Daniel A. Friedman** (2022) · *Zenodo*

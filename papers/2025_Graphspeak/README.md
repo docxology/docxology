@@ -1,8 +1,10 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 Graphspeak: of language and handshake
 
 **andrew djuwidja, Daniel Friedman** (2025) · *Zenodo*
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14737157-blue)](https://doi.org/10.5281/zenodo.14737157)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14737156-blue)](https://doi.org/10.5281/zenodo.14737156)
 
 ---
 
@@ -25,14 +27,15 @@
 
 ## Artifacts
 
-- DOI: [10.5281/zenodo.14737157](https://doi.org/10.5281/zenodo.14737157)
+- DOI: [10.5281/zenodo.14737156](https://doi.org/10.5281/zenodo.14737156)
+- Artifact DOI: [10.5281/zenodo.14737157](https://doi.org/10.5281/zenodo.14737157)
 - Zenodo record: [https://zenodo.org/records/14737157](https://zenodo.org/records/14737157)
 - PDF: [graph.pdf](graph.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/14737157)
 
 ## Citation
 
-> andrew djuwidja, Daniel Friedman (2025). *Graphspeak: of language and handshake*. Zenodo. DOI: 10.5281/zenodo.14737157. URL: https://doi.org/10.5281/zenodo.14737157.
+> andrew djuwidja, Daniel Friedman (2025). *Graphspeak: of language and handshake*. Zenodo. DOI: 10.5281/zenodo.14737156. URL: https://doi.org/10.5281/zenodo.14737156.
 
 ## Related
 

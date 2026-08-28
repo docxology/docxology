@@ -1,9 +1,11 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "VariationalSynthesis"
 description: "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc..."
 tags: ["variational-synthesis", "natural-selection", "free-energy-principle", "bayesian-mechanics", "path-integral", "evo-devo", "adaptive-fitness", "particular-partition"]
 domain: "Active Inference"
 citation: "Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell (2023). *VariationalSynthesis*. Active Inference."
+doi: "10.3390/e25070964"
 ---
 
 # VariationalSynthesis
@@ -37,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: 10.3390/e25070964
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z
@@ -52,6 +54,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.3390/e25070964`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "SensemakingFederation"
 description: "Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius. The panel discusses decentralized sensemaking infrastructure, knowl..."
 tags: ["sensemaking-federation", "digital-innovation", "knowledge-federation", "collaborative-sensemaking", "decentralized-infrastructure"]
@@ -40,7 +41,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.14574046
+- Canonical DOI: 10.5281/zenodo.14574046
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:35Z

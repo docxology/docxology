@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "MVEE"
 description: "How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? This presentation introduces the Multilevel Variational Ecology and Evolution (MVE..."
 tags: ["mvee", "evolutionary-theory", "multilevel-evolution", "phenotypic-plasticity", "eco-evo-devo", "variational-methods", "multilevel-selection", "open-ended-evolution"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.13999298
+- Canonical DOI: 10.5281/zenodo.13999298
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:24:39Z

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "ConsciousnessAnts"
 description: "Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research. We examine how colony-level informati..."
 tags: ["consciousness", "ant-colonies", "ant-colony-test", "information-integration", "collective-cognition", "meta-cognition"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: Not assigned
+- Canonical DOI: Not assigned
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-07-01T20:50:01Z

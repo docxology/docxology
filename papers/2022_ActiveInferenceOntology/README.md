@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🧠 ActiveInferenceOntology
 
 **Daniel A. Friedman, Virginia Bleu Knight** (2022) · *Zenodo*

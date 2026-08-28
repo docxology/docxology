@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "FarmWorks"
 description: "FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems..."
 tags: ["farmworks", "decentralized-ai", "precision-agriculture", "active-inference", "sensor-networks", "edge-computing", "farmer-autonomy", "sustainable-agriculture", "iot", "community-driven-innovation"]
@@ -38,7 +39,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.13754585
+- Canonical DOI: 10.5281/zenodo.13754585
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:27Z

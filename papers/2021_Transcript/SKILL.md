@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021"
 description: "On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston. The Symposium was structured in three sections, corresponding to the Organizational Units of the ..."
 tags: ["active-inference", "free-energy-principle", "symposium", "actinflab", "bayesian-inference", "education", "communication", "tools", "generative-model"]
 domain: "Active Inference"
 citation: "Karl Friston, David Standish Douglass, Maria Luiza Iennaco de Vasconcelos, Stephen Sillett, Lorena Sganzerla, Dean Tickles, and 3 others (2021). *Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021*. Active Inference."
-doi: "10.5281/zenodo.5797072"
+doi: "10.5281/zenodo.5797040"
+artifact_doi: "10.5281/zenodo.5797072"
 ---
 
 # Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021
@@ -39,10 +41,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.5797072
+- Canonical DOI: 10.5281/zenodo.5797040
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-05-30T18:56:30Z
+- Artifact DOI: 10.5281/zenodo.5797072
 
 ## Prerequisites
 
@@ -54,6 +57,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.5797072`
+1. Reference the DOI for citation: `10.5281/zenodo.5797040`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

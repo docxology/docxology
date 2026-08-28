@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 Illegal States, Mostly Unrepresentable
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
@@ -16,9 +18,8 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+- Literature review
+- Theoretical analysis
 
 ## Key Findings
 

@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 💻 Exploratory Data Analysis: A Reproducible Notebook Template
 
 **Daniel Ari Friedman** (2026) · *Zenodo*

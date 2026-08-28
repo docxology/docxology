@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Con-cat-enate: pilot overview"
 description: "Short overview of the concatenate amateur cat Combined with Beacons Bevcyc and demo 0.01 plan"
 tags: ["concatenate2"]
 domain: "Genetics & Biomedical"
 citation: "andrew djuwidja, Daniel Friedman (2025). *Con-cat-enate: pilot overview*. Genetics & Biomedical."
-doi: "10.5281/zenodo.14737043"
+doi: "10.5281/zenodo.14737042"
+artifact_doi: "10.5281/zenodo.14737043"
 ---
 
 # Con-cat-enate: pilot overview
@@ -39,10 +41,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.14737043
+- Canonical DOI: 10.5281/zenodo.14737042
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-05-30T18:56:11Z
+- Artifact DOI: 10.5281/zenodo.14737043
 
 ## Prerequisites
 
@@ -54,6 +57,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.14737043`
+1. Reference the DOI for citation: `10.5281/zenodo.14737042`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

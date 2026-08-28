@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary"
 description: "<p>Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning horizons. Standard discrete active-inference implement..."
 tags: ["active-inference", "free-energy-principle", "policy-inference", "mean-field", "total-correlation", "information-geometry", "schmidt-rank", "tensor-networks", "sophisticated-inference", "lean-theorem-proving"]
@@ -39,10 +40,10 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20418904
+- Canonical DOI: 10.5281/zenodo.20418904
 - PDF SHA-256: ae7cdd62929324101ead3eba8177199141b0089a9baf35558107149331666fde
 - Pairing confidence: strong
-- Last checked: 2026-07-10T19:08:24Z
+- Last checked: 2026-08-28T17:12:23Z
 
 ## Prerequisites
 

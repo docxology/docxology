@@ -1,3 +1,5 @@
+<!-- docxology:generated-document README.md; ownership=explicit-manifest -->
+
 # 🐜 DistributedPhysiology
 
 **Daniel A. Friedman, Deborah M. Gordon** (2020) · *Hormones & Behavior*

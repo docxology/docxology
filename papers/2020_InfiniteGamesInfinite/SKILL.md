@@ -1,10 +1,12 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Infinite Games for Infinite Teams"
 description: "Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: &ldquo;Inventing a Remote Culture to Deal with Pandemics&rdquo;, and was done so with the intent of discussing the questions outlined below...."
 tags: ["infinitegamesinfinite"]
 domain: "Cognitive Security"
 citation: "Daniel Friedman, RJ Cordes (2020). *Infinite Games for Infinite Teams*. Cognitive Security."
-doi: "10.5281/zenodo.12601675"
+doi: "10.5281/zenodo.12601674"
+artifact_doi: "10.5281/zenodo.12601675"
 ---
 
 # Infinite Games for Infinite Teams
@@ -39,10 +41,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.12601675
+- Canonical DOI: 10.5281/zenodo.12601674
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-05-30T18:56:37Z
+- Artifact DOI: 10.5281/zenodo.12601675
 
 ## Prerequisites
 
@@ -54,6 +57,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.12601675`
+1. Reference the DOI for citation: `10.5281/zenodo.12601674`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.

@@ -3,6 +3,8 @@ message: "If you use this work, please cite it as below."
 type: article
 title: "ActiveInferants"
 date-released: 2021
+doi: 10.3389/fnbeh.2021.647732
+url: "https://doi.org/10.3389/fnbeh.2021.647732"
 authors:
   - family-names: Friedman
     given-names: Daniel A.
@@ -15,3 +17,10 @@ authors:
     given-names: Karl
   - family-names: Constant
     given-names: Axel
+identifiers:
+  - type: doi
+    value: "10.3389/fnbeh.2021.647732"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.3389/fnbeh.2021.647732"
+    description: "Canonical citation DOI resolver"

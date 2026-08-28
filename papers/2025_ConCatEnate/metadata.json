@@ -1,8 +1,8 @@
 {
   "title": "Con-cat-enate: emulation of Cat Hippocampus",
   "version": null,
-  "doi": "10.5281/zenodo.14738798",
-  "doi_url": "https://doi.org/10.5281/zenodo.14738798",
+  "doi": "10.5281/zenodo.13626536",
+  "doi_url": "https://doi.org/10.5281/zenodo.13626536",
   "zenodo_record": "https://zenodo.org/records/14738798",
   "record_id": "14738798",
   "publication_date": "2025-01-25",
@@ -55,5 +55,7 @@
     "2015_CryptoJews",
     "2015_EhrlichialInfection",
     "2015_HoneyBeeEvolution"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.14738798",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.14738798"
 }

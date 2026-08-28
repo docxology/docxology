@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "AII_v1"
 description: "An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community. The institute serves as a hub for Active Inference research, education..."
 tags: ["active-inference-institute", "open-science", "research-organization", "free-energy-principle", "community-building"]
@@ -39,7 +40,7 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.8266280
+- Canonical DOI: 10.5281/zenodo.8266280
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-30T23:25:05Z

@@ -1,4 +1,5 @@
 ---
+# docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction"
 description: "<div>This project operationalizes the 2026 preprint "There is no self-evidence: A physics of emptiness realisation" as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for prediction while never obtaini..."
 tags: ["active-inference", "bayesian-model-reduction", "quantum-reference-frames", "emptiness", "formal-methods", "pymdp"]
@@ -39,10 +40,10 @@ Core contributions and results:
 
 Verification points for this work:
 
-- DOI: 10.5281/zenodo.20834846
+- Canonical DOI: 10.5281/zenodo.20834846
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-07-17T23:23:31Z
+- Last checked: 2026-08-28T17:12:25Z
 
 ## Prerequisites
 

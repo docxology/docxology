@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import sys
 from pathlib import Path
 
@@ -13,6 +14,8 @@ sys.path.insert(0, str(ORCH_DIR))
 
 from publication_pairing import ZenodoRecord  # noqa: E402
 from check_zenodo_uncatalogued import (  # noqa: E402
+    approved_version_specific_doi_exceptions,
+    check_report,
     non_canonical_doi_records,
     uncatalogued_records,
     version_doi,
@@ -78,6 +81,85 @@ def test_non_canonical_doi_records_empty_when_concept_doi_is_canonical():
     records = [_record("111", "10.5281/zenodo.111", "Catalogued Paper")]
     catalogued = {"10.5281/zenodo.111"}
     assert non_canonical_doi_records(records, catalogued) == []
+
+
+def test_non_canonical_doi_records_surfaces_distinct_aii_yearly_snapshot_for_review():
+    records = [_record("17982447", "10.5281/zenodo.14108991", "AII Ecosystem v3")]
+    catalogued = {"10.5281/zenodo.17982447"}
+
+    flagged = non_canonical_doi_records(records, catalogued)
+    assert [record.record_id for record in flagged] == ["17982447"]
+
+
+def test_approved_version_specific_doi_exception_is_emitted_with_asserted_identity():
+    records = [
+        _record(
+            "17982447",
+            "10.5281/zenodo.14108991",
+            "The Active Inference Institute & Active Inference Ecosystem",
+        )
+    ]
+    catalogued = {"10.5281/zenodo.17982447"}
+
+    approved, drift = approved_version_specific_doi_exceptions(records, catalogued)
+
+    assert drift == []
+    assert approved == [
+        {
+            "record_id": "17982447",
+            "title": "The Active Inference Institute & Active Inference Ecosystem",
+            "concept_doi": "10.5281/zenodo.14108991",
+            "version_doi_in_bibliography": "10.5281/zenodo.17982447",
+            "reason": (
+                "AII Ecosystem v3 is a separately curated 2025 bibliographic "
+                "snapshot, distinct from the earlier v2 concept record."
+            ),
+        }
+    ]
+
+
+def test_approved_version_specific_doi_exception_fails_closed_on_identity_drift():
+    records = [
+        _record(
+            "17982447",
+            "10.5281/zenodo.changed",
+            "The Active Inference Institute & Active Inference Ecosystem",
+        )
+    ]
+    catalogued = {"10.5281/zenodo.17982447"}
+
+    approved, drift = approved_version_specific_doi_exceptions(records, catalogued)
+
+    assert approved == []
+    assert drift[0]["record_id"] == "17982447"
+    assert drift[0]["mismatches"] == ["concept_doi"]
+
+
+def test_check_report_fails_closed_for_unreviewed_version_doi_and_exception_drift(
+    tmp_path: Path,
+):
+    report = tmp_path / "zenodo_uncatalogued_2026-08-26.json"
+    report.write_text(
+        json.dumps(
+            {
+                "warnings": [],
+                "uncatalogued_count": 0,
+                "uncatalogued": [],
+                "non_canonical_doi_count": 1,
+                "non_canonical_doi": [{"title": "Unexpected version DOI"}],
+                "version_specific_doi_exception_drift_count": 1,
+                "version_specific_doi_exception_drift": [{"record_id": "17982447"}],
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    problems = check_report(report)
+
+    assert problems == [
+        "1 Zenodo record(s) use a version DOI without an approved exception: Unexpected version DOI",
+        "1 approved version-DOI exception(s) drifted: 17982447",
+    ]
 
 
 def test_non_canonical_doi_records_empty_when_totally_uncatalogued():
