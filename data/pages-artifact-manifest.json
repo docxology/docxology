@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-28T23:31:51Z",
-  "source_commit_at_generation": "185e22e5e24726ccaacdcf010106bfd82d2e9cef",
+  "generated_at": "2026-08-28T23:35:34Z",
+  "source_commit_at_generation": "9d2f0e263915deb4eeccab174a858741cc905a6a",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5270,7 +5270,7 @@
     {
       "path": "catalog.html",
       "bytes": 50050,
-      "sha256": "639799f9d9b697023755a0b6a5e8250db868ed8669df6c21c9b7e17c3d330bf8"
+      "sha256": "d28e7d3d76bec52144cd503fee65275feef495402352aeace92111eb176fbb86"
     },
     {
       "path": "cite-verify.html",
@@ -6180,7 +6180,7 @@
     {
       "path": "data/catalog.json",
       "bytes": 31608,
-      "sha256": "d8f4aab451af6ff8fd5308b71b65991f9a7a89bcc90335fcc1b5c200f8c57d5f"
+      "sha256": "02fb4290f1f158542134f03cd43ec9f9bfa82e04f25a79daaaa54d0b401a4437"
     },
     {
       "path": "data/claims.json",
@@ -16255,22 +16255,22 @@
     {
       "path": "search-index-content-video.json",
       "bytes": 980694,
-      "sha256": "86745ffe38580e0fea6eb4b8df6ef04f0b40e741e72395cac4994ced5d911280"
+      "sha256": "7e15e5f3f7e437b6b4330fb096dc3929b8185b6cd55ec68e87091b82511867e6"
     },
     {
       "path": "search-index-content-work.json",
       "bytes": 368794,
-      "sha256": "8b96b7b46b056750f1f55fab6b2202a0b6e0e6905d20785b9a8430958fb4ac00"
+      "sha256": "c4494a0b23a5864b46e9b46d0afe40ce18f09fc302f04dd93aa97503f031ada0"
     },
     {
       "path": "search-index-core.json",
       "bytes": 805133,
-      "sha256": "b41ae5cb458fa909123732e7e29d67138bdd800b953a4a0fa9efd6240c8a3c6e"
+      "sha256": "80835082f2a7301e96596de14d067f9953ae967fed14b310ee4436c73e3bc5a2"
     },
     {
       "path": "search-index.json",
       "bytes": 1620145,
-      "sha256": "d17281ed1789eef7636ff55fb9f7703dc8aa65ec0fd9d687fc1f196b252f8ce5"
+      "sha256": "79ea5e644b4bdb94220c730c53dce5ee428ef6ab2af53f3f14a4753e034ece72"
     },
     {
       "path": "search.html",
