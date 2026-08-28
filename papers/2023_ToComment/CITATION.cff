@@ -4,8 +4,8 @@ type: article
 title: "Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse"
 version: "v1.1"
 date-released: "2022-06-16"
-doi: 10.5281/zenodo.5573946
-url: "https://doi.org/10.5281/zenodo.5573946"
+doi: 10.1016/j.plrev.2023.06.002
+url: "https://doi.org/10.1016/j.plrev.2023.06.002"
 authors:
   - family-names: Mascarenhas
     given-names: Mridula
@@ -16,8 +16,17 @@ authors:
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.5573946
-    description: "Zenodo DOI"
+    value: "10.1016/j.plrev.2023.06.002"
+    description: "Canonical citation DOI"
   - type: url
-    value: "https://zenodo.org/records/5573947"
-    description: "Zenodo landing page"
+    value: "https://doi.org/10.1016/j.plrev.2023.06.002"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.5573946"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.5573946"
+    description: "Version/download DOI resolver (Zenodo artifact)"
+  - type: url
+    value: "https://zenodo.org/records/5573946"
+    description: "Version/download landing page (Zenodo artifact)"

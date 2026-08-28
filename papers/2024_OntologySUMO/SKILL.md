@@ -6,6 +6,7 @@ tags: ["ontology-alignment", "sumo", "active-inference-ontology", "knowledge-rep
 domain: "AII Ecosystem"
 citation: "David S. Douglass, Adam Pease, Daniel Friedman, et al. (2024). *OntologySUMO*. AII Ecosystem."
 doi: "10.5281/zenodo.11459322"
+artifact_doi: "10.5281/zenodo.11463326"
 ---
 
 # OntologySUMO
@@ -43,7 +44,8 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.11459322
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
-- Last checked: 2026-06-30T23:25:32Z
+- Last checked: 2026-08-22T21:00:00Z
+- Artifact DOI: 10.5281/zenodo.11463326
 
 ## Prerequisites
 

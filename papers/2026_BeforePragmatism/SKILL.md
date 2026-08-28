@@ -6,6 +6,7 @@ tags: ["william-blake", "pragmatism", "anticipatory-epistemology", "america-a-pr
 domain: "Art & Synergetics"
 citation: "Daniel Ari Friedman (2026). *BeforePragmatism*. Art & Synergetics."
 doi: "10.5281/zenodo.18807970"
+artifact_doi: "10.5281/zenodo.18984939"
 ---
 
 # BeforePragmatism
@@ -44,7 +45,8 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.18807970
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
-- Last checked: 2026-06-30T23:26:03Z
+- Last checked: 2026-08-22T21:00:00Z
+- Artifact DOI: 10.5281/zenodo.18984939
 
 ## Prerequisites
 

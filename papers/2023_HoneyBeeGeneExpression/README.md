@@ -30,10 +30,11 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.10400744](https://doi.org/10.5281/zenodo.10400744)
-- Zenodo record: [https://zenodo.org/records/10400744](https://zenodo.org/records/10400744)
+- Artifact DOI: [10.5281/zenodo.10400745](https://doi.org/10.5281/zenodo.10400745)
+- Zenodo record: [https://zenodo.org/records/10400745](https://zenodo.org/records/10400745)
 - PDF: [2023_HoneyBeeGeneExpression.pdf](2023_HoneyBeeGeneExpression.pdf)
 - PDF download: [Apis-seq_v1_12_18_2023.pdf](https://zenodo.org/api/records/10400745/files/Apis-seq_v1_12_18_2023.pdf/content)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/10400744)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/10400745)
 
 ## Citation
 

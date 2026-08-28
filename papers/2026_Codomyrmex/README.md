@@ -31,6 +31,7 @@
 - GitHub release: [v1.3.0-paper](https://github.com/docxology/codomyrmex/releases/tag/v1.3.0-paper)
 - DOI: [10.5281/zenodo.21750800](https://doi.org/10.5281/zenodo.21750800)
 - Zenodo record: [https://zenodo.org/records/21750800](https://zenodo.org/records/21750800)
+- PDF: [codomyrmex-1.3.0-content.pdf](codomyrmex-1.3.0-content.pdf)
 - PDF: [codomyrmex-1.3.0.pdf](codomyrmex-1.3.0.pdf)
 - PDF SHA-256: eda76ad12a50bce01b113894c785e0915b6ba367f5bf67d17c8f586416102b93
 

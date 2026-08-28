@@ -29,10 +29,11 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.11459322](https://doi.org/10.5281/zenodo.11459322)
-- Zenodo record: [https://zenodo.org/records/11459322](https://zenodo.org/records/11459322)
+- Artifact DOI: [10.5281/zenodo.11463326](https://doi.org/10.5281/zenodo.11463326)
+- Zenodo record: [https://zenodo.org/records/11463326](https://zenodo.org/records/11463326)
 - PDF: [2024_OntologySUMO.pdf](2024_OntologySUMO.pdf)
 - PDF download: [Aligning Active Inference Ontology to SUMO.pdf](https://zenodo.org/api/records/11463326/files/Aligning%20Active%20Inference%20Ontology%20to%20SUMO.pdf/content)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/11459322)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/11463326)
 
 ## Citation
 

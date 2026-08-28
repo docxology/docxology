@@ -1,8 +1,8 @@
 {
   "title": "An Active Inference Ontology for Decentralized Science: from Situated Sensemaking to the Epistemic Commons",
   "version": "3",
-  "doi": "10.5281/zenodo.7484994",
-  "doi_url": "https://doi.org/10.5281/zenodo.7484994",
+  "doi": "10.5281/zenodo.6320574",
+  "doi_url": "https://doi.org/10.5281/zenodo.6320574",
   "zenodo_record": "https://zenodo.org/records/7484994",
   "record_id": "7484994",
   "publication_date": "2022-12-26",
@@ -131,5 +131,7 @@
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.7484994",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.7484994"
 }

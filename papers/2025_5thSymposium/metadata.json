@@ -1,8 +1,8 @@
 {
   "title": "Abstract book for: 5th Applied Active Inference Symposium",
   "version": "v2",
-  "doi": "10.5281/zenodo.17575211",
-  "doi_url": "https://doi.org/10.5281/zenodo.17575211",
+  "doi": "10.5281/zenodo.17555266",
+  "doi_url": "https://doi.org/10.5281/zenodo.17555266",
   "zenodo_record": "https://zenodo.org/records/17575211",
   "record_id": "17575211",
   "publication_date": "2025-11-10",
@@ -207,5 +207,7 @@
     "2018_MVEE",
     "2023_AntsAging",
     "2023_PostdocReview"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.17575211",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.17575211"
 }

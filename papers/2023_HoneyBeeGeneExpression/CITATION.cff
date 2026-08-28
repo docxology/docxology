@@ -22,8 +22,17 @@ authors:
     given-names: Brian
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.10400744
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.10400744"
+    description: "Canonical citation DOI"
   - type: url
-    value: "https://zenodo.org/records/10400744"
-    description: "Zenodo landing page"
+    value: "https://doi.org/10.5281/zenodo.10400744"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.10400745"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.10400745"
+    description: "Version/download DOI resolver (Zenodo artifact)"
+  - type: url
+    value: "https://zenodo.org/records/10400745"
+    description: "Version/download landing page (Zenodo artifact)"

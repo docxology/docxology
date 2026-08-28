@@ -30,10 +30,11 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.18807970](https://doi.org/10.5281/zenodo.18807970)
-- Zenodo record: [https://zenodo.org/records/18807970](https://zenodo.org/records/18807970)
+- Artifact DOI: [10.5281/zenodo.18984939](https://doi.org/10.5281/zenodo.18984939)
+- Zenodo record: [https://zenodo.org/records/18984939](https://zenodo.org/records/18984939)
 - PDF: [2026_BeforePragmatism.pdf](2026_BeforePragmatism.pdf)
 - PDF download: [BlakeAmericaPragmatism_DAF_v2_03122026.pdf](https://zenodo.org/api/records/18984939/files/BlakeAmericaPragmatism_DAF_v2_03122026.pdf/content)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/18807970)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/18984939)
 
 ## Citation
 

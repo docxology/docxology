@@ -1,8 +1,8 @@
 {
   "title": "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology",
   "version": null,
-  "doi": "10.5281/zenodo.18984939",
-  "doi_url": "https://doi.org/10.5281/zenodo.18984939",
+  "doi": "10.5281/zenodo.18807970",
+  "doi_url": "https://doi.org/10.5281/zenodo.18807970",
   "zenodo_record": "https://zenodo.org/records/18984939",
   "record_id": "18984939",
   "publication_date": "2026-03-12",
@@ -60,5 +60,7 @@
     "2018_PPPiP",
     "2022_MirrorTest",
     "2023_BlakeFuller"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.18984939",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.18984939"
 }

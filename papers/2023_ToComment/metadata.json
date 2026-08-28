@@ -50,8 +50,8 @@
   ],
   "checked_at": "2026-08-22T20:40:00Z",
   "version": "v1.1 (ECOMEME)",
-  "doi": "10.5281/zenodo.5573946",
-  "doi_url": "https://doi.org/10.5281/zenodo.5573946",
+  "doi": "10.1016/j.plrev.2023.06.002",
+  "doi_url": "https://doi.org/10.1016/j.plrev.2023.06.002",
   "zenodo_record": "https://zenodo.org/records/5573947",
   "record_id": "5573947",
   "publication_date": "2022-06-16",
@@ -67,5 +67,7 @@
       "download_url": "https://zenodo.org/api/records/5573947/files/ECOMEME%20v1.1.pdf/content"
     }
   ],
-  "source": "zenodo"
+  "source": "zenodo",
+  "artifact_doi": "10.5281/zenodo.5573946",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.5573946"
 }

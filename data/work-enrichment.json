@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T17:19:31Z",
+  "generated_at": "2026-08-28T21:42:39Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
   "count": 211,
   "works": {
@@ -1306,15 +1306,16 @@
         "digital discourse",
         "narrative ecosystems",
         "DRE3 model",
-        "public sphere"
+        "sensemaking"
       ],
       "findings": [
-        "develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives..",
-        "Building on the DRE3 model, we analyze h...."
+        "Parsimony and polysemy give image memes narrative power",
+        "Image memes engage audiences through identity construction",
+        "DRE3 model supports formal tracing of memes across platforms"
       ],
       "methods": [
-        "Genomic and bioinformatic analysis",
-        "Statistical genetics"
+        "Rhetorical ecosystem mapping",
+        "Cross-domain pattern mapping"
       ],
       "source": "papers/2023_ToComment/README.md"
     },
@@ -1630,16 +1631,16 @@
     },
     "Friedman2021NarrativeInformationEcosystemsConflict079": {
       "citation_key": "Friedman2021NarrativeInformationEcosystemsConflict079",
-      "abstract": "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems. We explore communication in located teams and all-online Remote Teams, proposing the ONFT (Ontologies, Narratives, Formal documents, and Tools) framework for Remote Team formation and lifecycle management. We connect epistemic foraging and niche...",
+      "abstract": "COGSEC's 2021 edited volume collects research outputs of the Narrative Information Management initiative, spanning information management across disciplines, digital rhetorical ecosystem analysis of image memes, knowledge management field synthesis, and an Active Inference Conflict model applied to conflict settings.",
       "keywords": [
-        "narrative ecosystems",
+        "narrative information ecosystems",
+        "cognitive security",
+        "sensemaking",
+        "Narrative Information Management",
+        "digital rhetoric",
+        "knowledge management",
         "Active Inference",
-        "Remote Teams",
-        "ONFT framework",
-        "epistemic foraging",
-        "niche construction",
-        "collective intelligence",
-        "systems engineering"
+        "conflict modeling"
       ],
       "findings": [
         "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems..",

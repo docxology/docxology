@@ -6,6 +6,7 @@ tags: ["honey-bees", "apis-mellifera", "gene-expression", "rna-seq", "novel-trai
 domain: "Entomology"
 citation: "William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson (2023). *HoneyBeeGeneExpression*. Entomology."
 doi: "10.5281/zenodo.10400744"
+artifact_doi: "10.5281/zenodo.10400745"
 ---
 
 # HoneyBeeGeneExpression
@@ -44,7 +45,8 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.10400744
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
-- Last checked: 2026-06-30T23:25:17Z
+- Last checked: 2026-08-22T20:30:00Z
+- Artifact DOI: 10.5281/zenodo.10400745
 
 ## Prerequisites
 

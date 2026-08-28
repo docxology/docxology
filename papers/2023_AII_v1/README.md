@@ -29,10 +29,11 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.8266280](https://doi.org/10.5281/zenodo.8266280)
-- Zenodo record: [https://zenodo.org/records/8266280](https://zenodo.org/records/8266280)
+- Artifact DOI: [10.5281/zenodo.8266281](https://doi.org/10.5281/zenodo.8266281)
+- Zenodo record: [https://zenodo.org/records/8266281](https://zenodo.org/records/8266281)
 - PDF: [2023_AII_v1.pdf](2023_AII_v1.pdf)
 - PDF download: [ActiveInference_Institute-Ecosystem_2023_v1-1.pdf](https://zenodo.org/api/records/8266281/files/ActiveInference_Institute-Ecosystem_2023_v1-1.pdf/content)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/8266280)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/8266281)
 
 ## Citation
 

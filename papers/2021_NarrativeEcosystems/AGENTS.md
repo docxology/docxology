@@ -1,9 +1,48 @@
-# AGENTS.md — 2021_NarrativeEcosystems
+<!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-Canonical work: **Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier** (2021), edited volume, COGSEC.
+# AGENTS.md — NarrativeEcosystems
 
-- Editors: Richard J. Cordes & Daniel A. Friedman
-- No Zenodo DOI. Official PDF: https://www.cogsec.org/nim-21-8
-- Local artifact: `2021_NarrativeEcosystems.pdf` (SHA-256 `608fb9c5bd15af219b6f181001b88ba802d89367909e47b1a8b5aee0151d31ff`)
-- Full text extraction: `full_text.md`; figures in `images/`
-- History note: this folder previously contained the Behavior Engineering poster PDF (duplicate of `2020_BehaviorEngineering`); corrected 2026-08-22 to the actual NIE volume.
+**Paper**: NarrativeEcosystems (2021)
+**Domain**: Cognitive Security
+**Authors**: Richard J. Cordes, Daniel A. Friedman (editors); Shaun Applegate-Swanson, V. Bleu Knight, Alexandra Mikhailova (chapter authors)
+
+---
+
+## Agent Roles
+
+### 📖 ARCHIVIST
+- Maintains bibliographic metadata and cross-references
+- Tracks citation links and DOI consistency for NarrativeEcosystems
+- Updates related_papers links when new connections are identified
+
+### 🔬 RESEARCHER
+- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Identifies findings: Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems.., We explore communication in located teams and all-....
+- Maps contributions to Cognitive Security literature
+
+### 🎓 EDUCATOR
+- Creates learning pathways for Cognitive Security concepts
+- Develops SKILL.md with executable instructions
+- Maintains prerequisite knowledge mapping
+
+### 🔗 INTEGRATOR
+- Connects NarrativeEcosystems to related works in the bibliography
+- Maps paper-to-software relationships
+- Updates cross-domain connections
+
+---
+
+## Extraction Log
+
+| Source | Agent | Action | Status |
+|--------|-------|--------|--------|
+| Metadata | ARCHIVIST | Cataloged metadata | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | EDUCATOR | Generated documentation | ✅ |
+
+## Cross-References
+
+### Related Papers
+- [2020_EmergentTeams](../2020_EmergentTeams/)
+- [2020_FacilitatorsCatechism](../2020_FacilitatorsCatechism/)
+- [2020_GreatPreset](../2020_GreatPreset/)

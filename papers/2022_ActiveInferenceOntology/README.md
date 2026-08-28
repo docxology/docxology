@@ -29,10 +29,11 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.6320574](https://doi.org/10.5281/zenodo.6320574)
-- Zenodo record: [https://zenodo.org/records/6320574](https://zenodo.org/records/6320574)
+- Artifact DOI: [10.5281/zenodo.7484994](https://doi.org/10.5281/zenodo.7484994)
+- Zenodo record: [https://zenodo.org/records/7484994](https://zenodo.org/records/7484994)
 - PDF: [2022_ActiveInferenceOntology.pdf](2022_ActiveInferenceOntology.pdf)
 - PDF download: [v3_ActInf-DeSci-AEOS-2022.pdf](https://zenodo.org/api/records/7484994/files/v3_ActInf-DeSci-AEOS-2022.pdf/content)
-- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/6320574)
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7484994)
 
 ## Citation
 

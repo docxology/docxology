@@ -6,6 +6,7 @@ tags: ["active-inference-symposium", "conference-proceedings", "international-sy
 domain: "Presentations & Media"
 citation: "Active Inference Institute (2025). *5thSymposium*. Presentations & Media."
 doi: "10.5281/zenodo.17555266"
+artifact_doi: "10.5281/zenodo.17575211"
 ---
 
 # 5thSymposium
@@ -42,7 +43,8 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.17555266
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
-- Last checked: 2026-06-30T23:25:37Z
+- Last checked: 2026-08-22T21:00:00Z
+- Artifact DOI: 10.5281/zenodo.17575211
 
 ## Prerequisites
 

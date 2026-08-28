@@ -6,6 +6,7 @@ tags: ["active-inference-institute", "open-science", "research-organization", "f
 domain: "AII Ecosystem"
 citation: "Active Inference Institute (2023). *AII_v1*. AII Ecosystem."
 doi: "10.5281/zenodo.8266280"
+artifact_doi: "10.5281/zenodo.8266281"
 ---
 
 # AII_v1
@@ -43,7 +44,8 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.8266280
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
-- Last checked: 2026-06-30T23:25:05Z
+- Last checked: 2026-08-22T20:30:00Z
+- Artifact DOI: 10.5281/zenodo.8266281
 
 ## Prerequisites
 

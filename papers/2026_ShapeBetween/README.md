@@ -31,8 +31,8 @@
 - GitHub release: [v0.1.0](https://github.com/docxology/template_storybook/releases/tag/v0.1.0)
 - DOI: [10.5281/zenodo.21176000](https://doi.org/10.5281/zenodo.21176000)
 - Zenodo record: [https://zenodo.org/records/21176000](https://zenodo.org/records/21176000)
+- PDF: [Friedman_2026_Shape_7fb0ed77.pdf](Friedman_2026_Shape_7fb0ed77.pdf)
 - PDF: [the-shape-between.pdf](the-shape-between.pdf)
-- PDF download: [Friedman_2026_Shape_7fb0ed77.pdf](https://zenodo.org/api/records/21176001/files/Friedman_2026_Shape_7fb0ed77.pdf/content)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/21176000)
 
 ## Citation

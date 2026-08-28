@@ -31,9 +31,9 @@
 - GitHub release: [v1.0.2](https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.2)
 - DOI: [10.5281/zenodo.21281509](https://doi.org/10.5281/zenodo.21281509)
 - Zenodo record: [https://zenodo.org/records/21281509](https://zenodo.org/records/21281509)
-- PDF: [template_template_pitch_short.pdf](template_template_pitch_short.pdf)
-- PDF download: [template_template_pitch_long.pdf](https://zenodo.org/api/records/21281510/files/template_template_pitch_long.pdf/content)
-- PDF download: [template_template_pitch_medium.pdf](https://zenodo.org/api/records/21281510/files/template_template_pitch_medium.pdf/content)
+- PDF: [Friedman_2026_Templatepitchdeck_66941950.pdf](Friedman_2026_Templatepitchdeck_66941950.pdf)
+- PDF: [template_template_pitch_long.pdf](template_template_pitch_long.pdf)
+- PDF: [template_template_pitch_medium.pdf](template_template_pitch_medium.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/21281509)
 
 ## Citation

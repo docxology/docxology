@@ -6,6 +6,7 @@ tags: ["active-inference-ontology", "knowledge-graph", "free-energy-principle", 
 domain: "Active Inference"
 citation: "Daniel A. Friedman, Virginia Bleu Knight (2022). *ActiveInferenceOntology*. Active Inference."
 doi: "10.5281/zenodo.6320574"
+artifact_doi: "10.5281/zenodo.7484994"
 ---
 
 # ActiveInferenceOntology
@@ -43,7 +44,8 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.6320574
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
-- Last checked: 2026-06-30T23:24:54Z
+- Last checked: 2026-08-22T21:00:00Z
+- Artifact DOI: 10.5281/zenodo.7484994
 
 ## Prerequisites
 

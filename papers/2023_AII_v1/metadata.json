@@ -1,8 +1,8 @@
 {
   "title": "The Active Inference Institute and Active Inference Ecosystem",
   "version": "001.1",
-  "doi": "10.5281/zenodo.8266281",
-  "doi_url": "https://doi.org/10.5281/zenodo.8266281",
+  "doi": "10.5281/zenodo.8266280",
+  "doi_url": "https://doi.org/10.5281/zenodo.8266280",
   "zenodo_record": "https://zenodo.org/records/8266281",
   "record_id": "8266281",
   "publication_date": "2023-08-19",
@@ -167,5 +167,7 @@
     "2022_ActiveDiffusion",
     "2024_AII_v2",
     "2024_OntologySUMO"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.8266281",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.8266281"
 }
