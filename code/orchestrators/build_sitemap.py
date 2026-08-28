@@ -55,7 +55,7 @@ def git_lastmod(rel: str, repo_root: Path = REPO_ROOT) -> str | None:
             cwd=repo_root,
             capture_output=True,
             text=True,
-            timeout=10,
+            timeout=60,
         )
     except (OSError, subprocess.SubprocessError):
         return None
@@ -123,7 +123,7 @@ def render(lastmod: str | None = None, *, repo_root: Path = REPO_ROOT) -> str:
         for path in sorted(videos_dir.glob("*.html")):
             if path.name == "index.html":
                 continue
-            entries.append(generated_url_entry(f"videos/{path.name}", "yearly", "0.35", date))
+            entries.append(url_entry(f"videos/{path.name}", "yearly", "0.35", date, repo_root=repo_root))
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -138,8 +138,17 @@ def main() -> None:
     args = parser.parse_args()
     content = render(existing_lastmod() if args.check else None)
     if args.check:
-        if not OUT.exists() or OUT.read_text(encoding="utf-8") != content:
-            raise SystemExit("Stale generated sitemap.xml")
+        if not OUT.exists():
+            raise SystemExit("Stale generated sitemap.xml: missing")
+        if OUT.read_text(encoding="utf-8") != content:
+            # One bounded retry: under heavy machine load an individual
+            # git_lastmod probe can hit its timeout and fall back to the build
+            # date, making a single render non-deterministic. Re-render once
+            # before declaring staleness so load-induced flakes don't fail the
+            # gate (a genuinely stale sitemap still fails both renders).
+            content = render(existing_lastmod())
+            if OUT.read_text(encoding="utf-8") != content:
+                raise SystemExit("Stale generated sitemap.xml")
     else:
         OUT.write_text(content, encoding="utf-8")
     print(("checked" if args.check else "wrote") + " sitemap.xml")

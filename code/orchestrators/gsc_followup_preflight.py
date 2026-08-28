@@ -167,7 +167,8 @@ def live_checks() -> list[dict]:
                 "url": url,
             }
         )
-    for rel, _canonical in REDIRECT_STUBS:
+    for stub in REDIRECT_STUBS:
+        rel = stub.path
         url = SITE_ORIGIN + rel
         hit = fetch_status(url)
         results.append(
