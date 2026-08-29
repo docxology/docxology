@@ -8,6 +8,7 @@ installs them (validate.yml browser-tests job).
 
 from __future__ import annotations
 
+import functools
 import http.server
 import shutil
 import threading
@@ -71,6 +72,7 @@ def serve_site(site_dir: Path) -> tuple[str, object]:
         (http.server.SimpleHTTPRequestHandler,),
         {"log_message": lambda self, *args: None},
     )
+    handler = functools.partial(handler, directory=str(site_dir))
 
     class _Server(http.server.ThreadingHTTPServer):
         def __init__(self, directory: Path) -> None:
