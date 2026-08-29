@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T08:26:20Z",
+  "generated_at": "2026-08-29T08:30:42Z",
   "source_commit_at_generation": "90466d5e69f3a6c4a671ae36571fe0b738cd993e",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
@@ -16300,17 +16300,17 @@
     {
       "path": "search-index-content-video.json",
       "bytes": 980694,
-      "sha256": "252a4c284d0aec6a8dc2dae7a3e5ffd5856bad466ae09741762249acff600a66"
+      "sha256": "e56609a63ab91e1efd8362347eb3e246ab2517b464fe45c65c681242bba5cf86"
     },
     {
       "path": "search-index-content-work.json",
       "bytes": 368794,
-      "sha256": "3705e7adf15faa9a3e60f47231d4076abfdf3c2370eb69030fcbe2770efb70ba"
+      "sha256": "2b67a5130c9972259130c1140392edecb2cc2ed651837c4fcb0ca065a49e0ac1"
     },
     {
       "path": "search-index-core.json",
       "bytes": 805133,
-      "sha256": "15dc536ed1be09ea82549d3c81e51d88aad708ddb9f339c665f5f807470bd383"
+      "sha256": "cdf889ec41cd57fbacb59025e48a6a27ce68f6a561fb576556fe2460ead650e6"
     },
     {
       "path": "search-index.json",
