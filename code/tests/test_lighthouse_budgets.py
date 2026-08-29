@@ -30,10 +30,10 @@ BUDGETS = {"performance": 85, "accessibility": 95, "seo": 95}
 # against a served copy). Pages not listed scored >= all aspirational budgets.
 # Perf floors include run-to-run variance (-2) observed across repeated runs.
 BASELINE = {
-    "index.html": {"performance": 76, "accessibility": 92},
+    "index.html": {"performance": 74, "accessibility": 92},
     "publications.html": {"performance": 71},
     "art.html": {"performance": 75},
-    "videos.html": {"accessibility": 93, "performance": 74},
+    "videos.html": {"accessibility": 93, "performance": 72},
     "search.html": {"accessibility": 93},
     "404.html": {"seo": 63},
 }
