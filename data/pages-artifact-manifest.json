@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T07:51:53Z",
+  "generated_at": "2026-08-29T07:58:25Z",
   "source_commit_at_generation": "9c2e7ce763d9fa16e2b2031ad90e37eb1f9e155a",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
@@ -16320,7 +16320,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 240875,
-      "sha256": "ff73faaad669431e054cc45a6beafcff88c7a07c93d875dbf5bf67b46e72e728"
+      "sha256": "33f6e2b43d7c05de31c0ffa163d42e78f7ef3f5e7f8ccd9d3acd7be25a6feb07"
     },
     {
       "path": "software.html",
