@@ -21,6 +21,7 @@ PRIMARY_HTML_OUT = REPO_ROOT / "repositories.html"
 FORKS_HTML_OUT = REPO_ROOT / "repositories-forks.html"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from build_stamp import footer_build_stamp_html  # noqa: E402
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
@@ -264,6 +265,7 @@ def render_rows(repositories: list[dict[str, Any]]) -> str:
 
 
 def render_html(payload: dict[str, Any], *, forks: bool = False) -> str:
+    footer_stamp = footer_build_stamp_html()
     all_counts = payload["counts"]
     repositories = [repo for repo in payload["repositories"] if repo["fork"] is forks]
     counts = count_repositories(repositories)
@@ -464,6 +466,7 @@ def render_html(payload: dict[str, Any], *, forks: bool = False) -> str:
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="data/github-repositories.json">github-repositories.json</a></p>
+        {footer_stamp}
     </footer>
 {REPO_INVENTORY_SCRIPT}
 {INTERACTIVE_SCRIPTS}

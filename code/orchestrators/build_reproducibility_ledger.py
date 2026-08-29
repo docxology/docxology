@@ -44,6 +44,7 @@ HTML_OUT = REPO_ROOT / "reproducibility.html"
 MD_OUT = REPO_ROOT / "pages" / "REPRODUCIBILITY.md"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from build_stamp import footer_build_stamp_html  # noqa: E402
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
@@ -171,6 +172,7 @@ def weakest(ledger: dict, limit: int = 12) -> list[dict]:
 
 
 def render_html(ledger: dict) -> str:
+    footer_stamp = footer_build_stamp_html()
     total = ledger["work_count"]
     signal_rows = "\n".join(
         f"""                        <tr><th scope="row">{h(label)}</th>"""
@@ -304,6 +306,7 @@ def render_html(ledger: dict) -> str:
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="https://danielarifriedman.com/">danielarifriedman.com</a></p>
         <div class="footer-links"><a href="evidence.html">Evidence</a><a href="cite-verify.html">Cite &amp; Verify</a><a href="pages/REPRODUCIBILITY.md">Markdown</a><a href="https://github.com/docxology/docxology">Source Repo</a></div>
+        {footer_stamp}
     </footer>
 {INTERACTIVE_SCRIPTS}
 {MENU_ESC_SCRIPT}</body>

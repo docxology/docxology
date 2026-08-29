@@ -16,6 +16,7 @@ OUT = REPO_ROOT / "updates.html"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from build_stamp import footer_build_stamp_html  # noqa: E402
 from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Updates", "updates.html")]
@@ -143,7 +144,7 @@ def render() -> str:
     <main id="main" class="main"><section class="section"><div class="updates-list">
 {body}
     </div></section></main>
-    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="CHANGELOG.md">CHANGELOG.md</a> · <a href="feed.xml">RSS feed</a></p></footer>
+    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="CHANGELOG.md">CHANGELOG.md</a> · <a href="feed.xml">RSS feed</a></p>{footer_stamp}</footer>
 {INTERACTIVE_SCRIPTS}
 {MENU_ESC_SCRIPT}</body>
 </html>

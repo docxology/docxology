@@ -19,6 +19,7 @@ from generated_outputs import (  # noqa: E402
     stale_output_paths,
     write_output_texts,
 )
+from build_stamp import footer_build_stamp_html  # noqa: E402
 from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Data Catalog", "catalog.html")]
@@ -269,7 +270,7 @@ def render_html(date_modified: str | None = None) -> str:
     <main id="main" class="main"><section class="section"><div class="catalog-grid">
 {rows}
     </div></section></main>
-    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="data/catalog.json">catalog.json</a></p></footer>
+    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="data/catalog.json">catalog.json</a></p>{footer_stamp}</footer>
 {INTERACTIVE_SCRIPTS}
 {MENU_ESC_SCRIPT}</body>
 </html>

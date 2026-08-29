@@ -34,6 +34,7 @@ from generated_outputs import (  # noqa: E402
     stable_generated_output_timestamp,
     write_output_texts,
 )
+from build_stamp import footer_build_stamp_html  # noqa: E402
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
@@ -617,6 +618,8 @@ def transcript_html(transcript: str, video: dict) -> str:
 
 
 def render_video_page(video: dict, *, transcript: str | None = None) -> str:
+    footer_stamp_detail = footer_build_stamp_html()
+    footer_stamp_index = footer_build_stamp_html()
     """Render one video detail page from its record and optional cached text.
 
     Supplying ``transcript`` keeps the renderer a deterministic content
@@ -725,7 +728,7 @@ def render_video_page(video: dict, *, transcript: str | None = None) -> str:
             <div class="transcript">{transcript_html(transcript, video)}</div>
         </section>
     </main>
-    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos/">Video index</a> - <a href="../data/videos.json">video metadata JSON</a></p></footer>
+    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos/">Video index</a> - <a href="../data/videos.json">video metadata JSON</a></p>{footer_stamp_detail}</footer>
 """ + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>
 """
@@ -851,7 +854,7 @@ def render_index(payload: dict) -> str:
             <noscript><p class="muted">The complete list of {counts['total']} video pages, including the {len(tail_payload)} newest entries not shown above, is available in the <a href="../data/videos.json">video metadata JSON</a> and via the page's ItemList structured data.</p></noscript>
         </section>
     </main>
-    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos.html">timeline</a> - <a href="../data/videos.json">video metadata JSON</a></p></footer>
+    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos.html">timeline</a> - <a href="../data/videos.json">video metadata JSON</a></p>{footer_stamp_index}</footer>
 """ + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + f"""
 <script type="application/json" id="video-tail-payload">{json.dumps(tail_payload, separators=(",", ":"), ensure_ascii=False)}</script>
 <script src="/js/videos-index.js?v=20260827" defer></script>

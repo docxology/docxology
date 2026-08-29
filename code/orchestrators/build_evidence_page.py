@@ -15,6 +15,7 @@ MD_OUT = REPO_ROOT / "pages" / "EVIDENCE.md"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from build_stamp import footer_build_stamp_html  # noqa: E402
 from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Evidence", "evidence.html")]
@@ -180,6 +181,7 @@ def render_html(claims: list[dict]) -> str:
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="https://danielarifriedman.com/">danielarifriedman.com</a></p>
         <div class="footer-links"><a href="cite-verify.html">Cite & Verify</a><a href="discovery.html">Discovery</a><a href="pages/EVIDENCE.md">Markdown</a><a href="https://github.com/docxology/docxology">Source Repo</a></div>
+        {footer_stamp}
     </footer>
 {INTERACTIVE_SCRIPTS}
 {MENU_ESC_SCRIPT}</body>

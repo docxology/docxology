@@ -10,6 +10,7 @@ SRC_DIR = REPO_ROOT / "code" / "src"
 sys.path.insert(0, str(SRC_DIR))
 
 from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from build_stamp import footer_build_stamp_html  # noqa: E402
 from site_nav import (  # noqa: E402
     INTERACTIVE_SCRIPTS,
     MENU_ESC_SCRIPT,
@@ -54,6 +55,7 @@ def render_page(
     domain_name: str,
     terms: list[str],
 ) -> str:
+    footer_stamp = footer_build_stamp_html()
     from title_policy import clip_title  # noqa: PLC0415
 
     # SERP title budget: <title>, og:title, twitter:title, and the JSON-LD
@@ -156,6 +158,7 @@ def render_page(
             <a href="discovery.html">Discovery</a>
             <a href="cite-verify.html">Cite &amp; Verify</a>
         </div>
+        {footer_stamp}
     </footer>
 {INTERACTIVE_SCRIPTS}
     {MENU_ESC_SCRIPT}

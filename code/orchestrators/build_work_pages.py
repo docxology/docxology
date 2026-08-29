@@ -25,8 +25,10 @@ from generated_outputs import (  # noqa: E402
     stable_generated_output_timestamp,
     write_output_texts,
 )
+from build_stamp import footer_build_stamp_html  # noqa: E402
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
+    CITE_EXPORT_SCRIPT_TAG,
     HEAD_EXTRAS,
     INTERACTIVE_SCRIPTS,
     MENU_ESC_SCRIPT,
@@ -366,6 +368,31 @@ def source_repository_url(docs_path: str) -> str:
     return ""
 
 
+def work_bibtex(citation_key: str) -> str:
+    """The work's BibTeX entry from bibliography.bib (same per-work citation keys).
+
+    Returns '' when the key is absent so pages for un-bibbed works simply omit
+    the Copy-BibTeX affordance instead of embedding a stale/wrong entry.
+    """
+    match = re.search(
+        rf"(?ms)^@\w+\{{{re.escape(citation_key)},.*?^\}}\s*$",
+        (REPO_ROOT / "bibliography.bib").read_text(encoding="utf-8"),
+    )
+    return match.group(0).strip() if match else ""
+
+
+def bibtex_button_html(work: dict) -> str:
+    """Copy-BibTeX button + embedded entry, wired by js/cite-export.js (CSP-safe)."""
+    bib = work_bibtex(work["citation_key"])
+    if not bib:
+        return ""
+    return (
+        '<button type="button" class="btn btn-outline" id="cite-bibtex-btn" '
+        'aria-label="Copy BibTeX entry to clipboard">Copy BibTeX</button>\n'
+        f'        <script type="application/x-bibtex" id="work-bibtex">{h(bib)}</script>'
+    )
+
+
 def citation_text(work: dict) -> str:
     venue = f" {work['venue']}." if work.get("venue") else ""
     url = work.get("url") or f"https://danielarifriedman.com/works/{work['citation_key']}.html"
@@ -570,6 +597,7 @@ def page_head(work: dict) -> str:
 
 
 def render_work_page(work: dict) -> str:
+    footer_stamp = footer_build_stamp_html()
     doi_link = f"https://doi.org/{work['doi']}" if work.get("doi") else ""
     docs = local_docs_link(work.get("docs_path", ""))
     primary = work.get("url") or "../publications.html"
@@ -590,6 +618,7 @@ def render_work_page(work: dict) -> str:
         optional_buttons.append(source_repo_btn)
     button_links = [
         f'<a class="btn btn-gold" href="{h(primary)}">Primary source</a>',
+        f'{bibtex_button_html(work)}',
         f'<a class="btn btn-outline" href="{h(docs)}">Documentation</a>',
         *optional_buttons,
         '<a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>',
@@ -658,14 +687,16 @@ def render_work_page(work: dict) -> str:
             <p class="text-center mt-2">
                 {button_links_html}
             </p>
+            {bibtex_button_html(work)}
         </section>
 {related_works_html(work)}
     </main>
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite & Verify</a></p>
+        {footer_stamp}
     </footer>
-""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
+""" + INTERACTIVE_SCRIPTS + "\n" + CITE_EXPORT_SCRIPT_TAG + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>
 """
     )

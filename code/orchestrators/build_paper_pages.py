@@ -20,6 +20,7 @@ from generated_outputs import (  # noqa: E402
     stale_output_paths,
     write_output_texts,
 )
+from build_stamp import footer_build_stamp_html  # noqa: E402
 from site_nav import HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, clip_description, domain_page_href, render_nav  # noqa: E402
 
 
@@ -217,6 +218,7 @@ def render_page(work: dict) -> str:
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
+        {footer_stamp}
     </footer>
 """ + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>

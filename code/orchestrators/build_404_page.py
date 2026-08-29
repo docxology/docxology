@@ -20,6 +20,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from build_stamp import footer_build_stamp_html  # noqa: E402
 from site_nav import (  # noqa: E402
     CSP_META_TAG,
     HEAD_EXTRAS,
@@ -119,6 +120,7 @@ def render() -> str:
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="/search-index.json">search-index.json</a> · <a href="/opensearch.xml">OpenSearch</a></p>
+        {footer_stamp}
     </footer>
 {INTERACTIVE_SCRIPTS}
 {MENU_ESC_SCRIPT}
