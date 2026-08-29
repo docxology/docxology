@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T10:22:29Z",
-  "source_commit_at_generation": "09456c608749d6082d63f275baca4de423ffd1dd",
+  "generated_at": "2026-08-29T11:09:03Z",
+  "source_commit_at_generation": "47338bef569ba1a572fc0d9836f2cc25c7085680",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 863568242,
+    "source_bytes": 863565294,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4703,
-    "artifact_bytes": 864392383
+    "artifact_bytes": 864389435
   },
   "included_files": [
     {
@@ -6019,8 +6019,8 @@
     },
     {
       "path": "code/tests/test_lighthouse_budgets.py",
-      "bytes": 3902,
-      "sha256": "c1e50f5e7feb60148d9d66daab0dfe02b2385759a237d582c17eb6b490d315d9"
+      "bytes": 3921,
+      "sha256": "7afa335c240f91d91ef9d84a824c8994332ae625122f3e9bc55a74690d9037b1"
     },
     {
       "path": "code/tests/test_nav_more_dropdown.py",
@@ -15289,8 +15289,8 @@
     },
     {
       "path": "reports/external_links_2026-08-29.json",
-      "bytes": 363516,
-      "sha256": "34047935ec5a072ea870f0eee7874ef2568f421978d4aadd69c4eabd7173fbe5"
+      "bytes": 363522,
+      "sha256": "ef05c60f6d3e23775dec0347a41667e8e85b8e3f3f0970685b7b244db0fc3f54"
     },
     {
       "path": "reports/external_links_triage_2026-05-13.json",
@@ -15344,13 +15344,13 @@
     },
     {
       "path": "reports/external_links_triage_2026-08-29.json",
-      "bytes": 53462,
-      "sha256": "4d7489a550146e910922242a3b56ebd48fc338ade08ab55d010bcb6ccd46be0d"
+      "bytes": 51326,
+      "sha256": "40273712695c11f7abade58f54cd8edf095d76ba3801e711d2af35d5f92aea92"
     },
     {
       "path": "reports/external_links_triage_2026-08-29.md",
-      "bytes": 11582,
-      "sha256": "e4c92474cc1762bdc28962903b0557c9f2a3690cf47bedfccd536e4f7808beae"
+      "bytes": 10745,
+      "sha256": "e680e8317706bf42ad9219d8fffb71c6c1bed33e15409732e4c6c3ea814148b2"
     },
     {
       "path": "reports/gsc_preflight_2026-05-29.json",
