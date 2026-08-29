@@ -260,6 +260,39 @@
     <link rel="preload" as="image" href="assets/hero-art/an-ant-is-a-colony.webp">
     <link rel="preload" as="image" href="assets/hero-art/army-ants.webp">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <style>
+    /* More disclosure dropdown (mirrors style.css nav-more rules so secondary
+       destinations stay collapsed behind "More" even when style.css is absent) */
+    .nav-more { position: relative; }
+    .nav-more summary {
+      list-style: none; cursor: pointer;
+      color: var(--text-secondary);
+      font-size: .85rem; font-weight: 500; letter-spacing: .03em;
+      white-space: nowrap;
+      transition: color .2s;
+    }
+    .nav-more summary::-webkit-details-marker { display: none; }
+    .nav-more summary:hover, .nav-more[open] summary { color: var(--text-primary); }
+    .nav-more-panel {
+      position: absolute; right: 0; top: calc(100% + .5rem);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      min-width: 12rem;
+      padding: .5rem 0; margin: 0; list-style: none;
+      z-index: 210;
+      box-shadow: 0 8px 24px rgba(0,0,0,.5);
+    }
+    .nav-more-panel li { display: block; }
+    .nav-more-panel a {
+      display: block;
+      padding: .55rem 1rem;
+      color: var(--text-secondary);
+      font-size: .8rem;
+      white-space: nowrap;
+    }
+    .nav-more-panel a:hover { color: var(--gold); background: var(--bg-card); }
+  </style>
 </head>
 <body class="home-page">
     <!-- Accessibility: Skip to main content -->

@@ -71,8 +71,32 @@
 }
     </script>
     <style>.breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}</style>
+  <style>
+    /* More disclosure dropdown (mirrors style.css nav-more rules so secondary
+       destinations stay collapsed behind "More" even when style.css is absent) */
+    .nav-more { position: relative; }
+    .nav-more summary {
+      list-style: none; cursor: pointer;
+      color: var(--text-secondary);
+      font-size: .85rem; font-weight: 500; letter-spacing: .03em;
+      white-space: nowrap;
+      transition: color .2s;
+    }
+    .nav-more-panel {
+      display: none;
+      position: absolute; right: 0; top: calc(100% + 6px);
+      min-width: 220px;
+      background: var(--bg-primary);
+      border: 1px solid var(--paper-line);
+      padding: .4rem 0;
+      z-index: 200;
+    }
+    details[open] .nav-more-panel { display: block; }
+    .nav-more-panel a { display: block; padding: .45rem 1rem; }
+    .nav-more-panel a:hover { background: var(--gold-08); }
+  </style>
 </head>
-<body>
+<body class="publications-page">
     <a href="#main" class="skip-link">Skip to main content</a>
 
         <nav aria-label="Main navigation">

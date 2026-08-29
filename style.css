@@ -1510,3 +1510,69 @@ section h2:hover .anchor-link,
         --art-e:         url("assets/hero-art/army-ants.webp");
     }
 }
+
+/* ── LIGHT THEME FIXUPS (appended; fixes hardcoded dark-theme colors that the
+   :root remap above cannot reach) ── */
+@media (prefers-color-scheme: light) {
+    /* Newspaper chrome keeps its dark press-plate background by design, but
+       its text must stay readable for light-mode users. */
+    nav { background: #f1ede4; border-top-color: rgba(26,23,19,0.26); border-bottom-color: rgba(26,23,19,0.3); }
+    .nav-logo { color: #1a1713; }
+    .nav-links a { color: #4a4338; }
+    .nav-links a:hover, .nav-links a.active { color: #1a1713; }
+    .nav-links .nav-art-link { color: #1a1713; border-color: rgba(26,23,19,0.28); }
+    .nav-more summary { color: #4a4338; }
+    .nav-more summary:hover, .nav-more[open] .nav-more summary, .nav-more[open] summary { color: #1a1713; }
+    .stats-bar { background: #f1ede4; }
+    footer { background: #f1ede4; border-top-color: rgba(26,23,19,0.2); }
+    /* Videos page defines its own always-dark palette inline; keep it dark. */
+    .videos-page footer { background: var(--bg-primary); border-top-color: var(--border); }
+    .videos-page footer, .videos-page footer a { color: var(--text-secondary); }
+    /* Hero: light paper background with dark ink. */
+    .hero h1 { color: #1a1713; }
+    .hero .subtitle { color: #4a4338; }
+    .hero .masthead-rule { color: #4a4338; border-top-color: rgba(26,23,19,0.3); border-bottom-color: rgba(26,23,19,0.3); }
+    .hero .hero-sections a { color: #1a1713; }
+    .hero .hero-sections a:not(:last-child) { border-right-color: rgba(26,23,19,0.28); }
+    .hero .hero-utility { color: #4a4338; }
+    .hero .hero-utility a { color: #4a4338; }
+    .hero .profile-links a { color: #4a4338; background: rgba(26,23,19,0.04); border-color: rgba(26,23,19,0.2); }
+    .hero .profile-links a:hover, .hero .profile-links a:focus-visible { color: #1a1713; }
+    .hero .btn { color: #1a1713; background: rgba(250,248,244,0.85); border-color: rgba(26,23,19,0.24); }
+    .hero .btn-outline { color: #1a1713; background: rgba(250,248,244,0.85); }
+    .page-hero h1, .domain-hero h1 { color: #1a1713; }
+    /* Interactive chrome that assumed the dark press plate. */
+    .search-wrap input, .filter-selects select, .search-input { background: #fff; color: #1a1713; border-color: rgba(26,23,19,0.2); }
+    .btn-primary, .hero .btn-primary { background: #b3392b; color: #fff; }
+    .btn-primary { color: #fff; }
+
+    /* Page-specific dark press-plate sections need matching ink. */
+    .home-page .nav-logo { color: #1a1713; }
+    .home-page .nav-links .nav-art-link { color: #1a1713; border-color: rgba(26,23,19,0.28); }
+    /* Publications table-header sort buttons: thead th keeps a dark translucent
+       wash (rgba(0,0,0,0.2)) even in light mode, so header ink stays light. */
+    thead th .th-sort-btn { color: #f4f1ea; }
+    thead th { color: #f4f1ea; }
+    /* Art page nav strip is dark; keep light ink there. */
+    .art-page nav, nav:has(.nav-art-link[style]) { background: #030303; }
+    .art-page .nav-logo, .art-page .nav-links a, .art-page .nav-links .nav-art-link { color: #f4f1ea; }
+    .art-page .nav-more summary { color: #f4f1ea; }
+    .art-page .breadcrumb { background: var(--bg-primary); }
+    .art-page .breadcrumb a, .art-page .breadcrumb li { color: var(--text-secondary); }
+    /* Videos page keeps its own dark inline palette (page-level :root), so its
+       dark chips and footer must keep light ink in light mode too. */
+    .videos-page .badge-institute, .videos-page .track-label-institute { color: #ff4133; }
+    .videos-page .breadcrumb { background: var(--bg-primary); }
+    .videos-page .breadcrumb a { color: #cfc9bd; }
+
+    /* Hidden-by-default overlays must not expose focusable content (axe aria-hidden-focus). */
+    .tts-panel, .shortcuts-overlay { visibility: hidden; transition: visibility 0s .25s, transform .25s ease, opacity .25s ease; }
+    .tts-panel.tts-open, .shortcuts-overlay.shortcuts-open { visibility: visible; transition: transform .25s ease, opacity .25s ease; }
+}
+
+/* ── A11Y FIXUPS (appended, all schemes) ──
+   Hidden-by-default overlays must not expose focusable content while
+   aria-hidden="true" (axe aria-hidden-focus). Visibility (unlike opacity)
+   removes them from the focus order and the accessibility tree. */
+.tts-panel, .shortcuts-overlay { visibility: hidden; transition: visibility 0s .25s, transform .25s ease, opacity .25s ease; }
+.tts-panel.tts-open, .shortcuts-overlay.shortcuts-open { visibility: visible; transition: transform .25s ease, opacity .25s ease; }
