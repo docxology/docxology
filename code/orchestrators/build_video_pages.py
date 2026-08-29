@@ -619,7 +619,6 @@ def transcript_html(transcript: str, video: dict) -> str:
 
 def render_video_page(video: dict, *, transcript: str | None = None) -> str:
     footer_stamp_detail = footer_build_stamp_html()
-    footer_stamp_index = footer_build_stamp_html()
     """Render one video detail page from its record and optional cached text.
 
     Supplying ``transcript`` keeps the renderer a deterministic content
@@ -757,6 +756,7 @@ def video_list_item_fields(video: dict) -> tuple[str, str, str]:
 
 
 def render_index(payload: dict) -> str:
+    footer_stamp_index = footer_build_stamp_html()
     videos = sorted(payload["videos"], key=lambda item: item["upload_date"], reverse=True)
     counts = payload["counts"]
     topic_links = "\n".join(

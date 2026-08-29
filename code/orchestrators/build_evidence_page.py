@@ -82,6 +82,7 @@ def latest_report_link(pattern: str, _fallback: str, prefix: str = "") -> str:
 
 
 def render_html(claims: list[dict]) -> str:
+    footer_stamp = footer_build_stamp_html()
     snapshot = latest_report_link("public_source_snapshot_*.json", "reports/public_source_snapshot_2026-05-15.json")
     inventory = latest_report_link("public_source_inventory_*.json", "reports/public_source_inventory_2026-05-15.json")
     cards = []

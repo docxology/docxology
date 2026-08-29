@@ -94,6 +94,7 @@ def h(value: object) -> str:
 
 
 def render() -> str:
+    footer_stamp = footer_build_stamp_html()
     cards = "\n".join(
         f"""                <article class="export-card">
                     <h2><a href="{h(rel)}">{h(title)}</a></h2>

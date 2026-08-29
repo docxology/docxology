@@ -141,6 +141,7 @@ def works_canonical(work: dict) -> str:
 
 
 def render_page(work: dict) -> str:
+    footer_stamp = footer_build_stamp_html()
     docs_path = str(work["docs_path"]).rstrip("/")
     folder = REPO_ROOT / docs_path
     summary = overview(folder) or "Local documentation and source artifacts for this bibliography entry."

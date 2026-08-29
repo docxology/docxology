@@ -215,6 +215,7 @@ def render_json(date_modified: str | None = None) -> str:
 
 
 def render_html(date_modified: str | None = None) -> str:
+    footer_stamp = footer_build_stamp_html()
     rows = "\n".join(
         f"""                <article class="catalog-card" id="{h(slug)}">
                     <h2><a href="{h(rel)}">{h(name)}</a></h2>

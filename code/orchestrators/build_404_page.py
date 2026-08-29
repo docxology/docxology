@@ -48,6 +48,7 @@ TOP_DESTINATIONS: tuple[tuple[str, str], ...] = (
 
 
 def render() -> str:
+    footer_stamp = footer_build_stamp_html()
     links = "".join(
         f'<a href="/{path}">{label}</a>'
         for label, path in TOP_DESTINATIONS

@@ -89,6 +89,7 @@ def json_ld(sections: list[dict]) -> str:
 
 
 def render() -> str:
+    footer_stamp = footer_build_stamp_html()
     sections = parse_changelog()
     body = "\n".join(
         f"""            <article class="update-card">
