@@ -69,16 +69,8 @@ def test_rendered_nav_no_horizontal_overflow(tmp_path: Path) -> None:
         stop_server(httpd)
 
 
-# Baseline (2026-08-29): known nav overflow on the current build, outside this
-# lane's file ownership (nav layout lives in style.css - lighttheme lane).
-# videos.html @ 900px: 'Collaborators' (right 906) and 'Reproducibility'
-# (right 917) exceed clientWidth 900 by 6-17px. Tracked for the integrator;
-# any NEW page/viewport/link overflow fails the test.
-NAV_BASELINE: dict[tuple[str, int], set[str]] = {
-    ("videos.html", 900): {"collaborators.html", "reproducibility.html"},
-    ("videos.html", 1024): {"collaborators.html", "reproducibility.html"},
-    ("videos.html", 1152): {"collaborators.html", "reproducibility.html"},
-    ("videos.html", 1280): {"collaborators.html", "reproducibility.html"},
-    ("videos.html", 1440): {"collaborators.html", "reproducibility.html"},
-    ("videos.html", 1920): {"collaborators.html", "reproducibility.html"},
-}
+# Baseline: empty since 2026-08-29 - videos.html shipped no inline .nav-more
+# dropdown rules, so when style.css was absent (fixture copy / subpath serving)
+# the More panel rendered inline and its links overflowed at every width.
+# Inline nav-more rules landed in videos.html; any NEW overflow fails the test.
+NAV_BASELINE: dict[tuple[str, int], set[str]] = {}
