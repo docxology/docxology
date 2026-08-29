@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-29T08:13:35Z",
+  "generated_at": "2026-08-29T08:41:56Z",
   "source": "reports/external_links_2026-08-29.json",
   "checked_urls": 809,
-  "ok": 677,
-  "warnings": 132,
+  "ok": 674,
+  "warnings": 135,
   "categories": {
-    "bot-protected-or-rate-limited": 120,
+    "bot-protected-or-rate-limited": 123,
     "connection-failure": 1,
     "needs-replacement": 6,
-    "ok": 677,
+    "ok": 674,
     "timeout": 4,
     "upstream-transient": 1
   },
@@ -213,6 +213,40 @@
           "publications.html",
           "publications.html",
           "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20533125",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20533669",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
         ],
         "error": ""
       },
@@ -1739,6 +1773,17 @@
           "publications.html"
         ],
         "error": ""
+      },
+      {
+        "url": "https://www.worldcat.org/isbn/978-3-8365-9970-2",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
       }
     ],
     "connection-failure": [
@@ -1750,20 +1795,10 @@
         "sources": [
           "pages/LINKS.md"
         ],
-        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 71 ms: Couldn't connect to server"
+        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 79 ms: Couldn't connect to server"
       }
     ],
     "needs-replacement": [
-      {
-        "url": "https://github.com/docxology/docxology/commit/4f8f5530",
-        "status": 404,
-        "ok": false,
-        "category": "needs-replacement",
-        "sources": [
-          "catalog.html"
-        ],
-        "error": ""
-      },
       {
         "url": "https://github.com/docxology/docxology/commit/65c240fd",
         "status": 404,
@@ -1829,6 +1864,16 @@
           "updates.html"
         ],
         "error": ""
+      },
+      {
+        "url": "https://github.com/docxology/docxology/commit/ec63c6d0",
+        "status": 404,
+        "ok": false,
+        "category": "needs-replacement",
+        "sources": [
+          "catalog.html"
+        ],
+        "error": ""
       }
     ],
     "timeout": [
@@ -1842,7 +1887,7 @@
           "pages/DISCOVERY.md",
           "pages/LINKS.md"
         ],
-        "error": "curl: (28) Operation timed out after 10010 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received"
       },
       {
         "url": "https://grantome.com/grant/NSF/DBI-2010290",
@@ -1853,7 +1898,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Connection timed out after 10008 milliseconds"
+        "error": "curl: (28) Connection timed out after 10007 milliseconds"
       },
       {
         "url": "https://www.christies.com/en/lot/lot-6337619",
@@ -1868,7 +1913,7 @@
           "pages/EVIDENCE.md",
           "pages/LINKS.md"
         ],
-        "error": "curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10004 milliseconds with 0 bytes received"
       },
       {
         "url": "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
@@ -1879,7 +1924,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Operation timed out after 10008 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received"
       }
     ],
     "upstream-transient": [

@@ -4,17 +4,17 @@ Scoped network-link triage for public-facing repository hubs.
 
 - Source report: `reports/external_links_2026-08-29.json`
 - Checked URLs: 809
-- OK: 677
-- Warnings: 132
+- OK: 674
+- Warnings: 135
 
 ## Categories
 
 | Category | Count | Meaning |
 | --- | ---: | --- |
-| `bot-protected-or-rate-limited` | 120 | Likely blocks automated checks; verify manually before replacing. |
+| `bot-protected-or-rate-limited` | 123 | Likely blocks automated checks; verify manually before replacing. |
 | `connection-failure` | 1 | Could not connect during this run. |
 | `needs-replacement` | 6 | Returned 404 and should be replaced or removed if no longer valid. |
-| `ok` | 677 | Returned a 2xx/3xx response. |
+| `ok` | 674 | Returned a 2xx/3xx response. |
 | `timeout` | 4 | Timed out under the bounded checker timeout. |
 | `upstream-transient` | 1 | Server-side outage or temporary upstream failure. |
 
@@ -36,6 +36,8 @@ Scoped network-link triage for public-facing repository hubs.
 | 403 | <https://doi.org/10.3390/e25070964> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
 | 403 | <https://doi.org/10.3390/e26040303> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 403 | <https://doi.org/10.3390/e27050459> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20533125> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
+| 429 | <https://doi.org/10.5281/zenodo.20533669> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
 | 429 | <https://doi.org/10.5281/zenodo.20533675> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
 | 429 | <https://doi.org/10.5281/zenodo.20584820> | domain-computational.html, pages/DISCOVERY.md, pages/SOFTWARE.md |
 | 429 | <https://doi.org/10.5281/zenodo.20614908> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
@@ -100,8 +102,6 @@ Scoped network-link triage for public-facing repository hubs.
 | 429 | <https://doi.org/10.5281/zenodo.5034808> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.5565577> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.5573946> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.5750934> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.5797040> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 
 ## connection-failure
 
@@ -113,12 +113,12 @@ Scoped network-link triage for public-facing repository hubs.
 
 | Status | URL | Sources |
 | ---: | --- | --- |
-| 404 | <https://github.com/docxology/docxology/commit/4f8f5530> | catalog.html |
 | 404 | <https://github.com/docxology/docxology/commit/65c240fd> | 404.html |
 | 404 | <https://github.com/docxology/docxology/commit/8221daef> | domain-active-inference.html, domain-aii-ecosystem.html, domain-art-synergetics.html |
 | 404 | <https://github.com/docxology/docxology/commit/99a025ed> | repositories-forks.html, repositories.html |
 | 404 | <https://github.com/docxology/docxology/commit/9d36525e> | reproducibility.html |
 | 404 | <https://github.com/docxology/docxology/commit/a026c95c> | active-inference.html, cognitive-security.html, computational-entomology.html |
+| 404 | <https://github.com/docxology/docxology/commit/ec63c6d0> | catalog.html |
 
 ## timeout
 
