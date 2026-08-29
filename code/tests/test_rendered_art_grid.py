@@ -34,11 +34,10 @@ CHECK_JS = """
 
 
 def test_rendered_art_grid_hydrated(tmp_path: Path) -> None:
-    from playwright.sync_api import sync_playwright
-
     from rendered_site_fixture import skip_without_playwright
 
     skip_without_playwright()
+    from playwright.sync_api import sync_playwright  # noqa: E402  (after skip guard)
     base_url, httpd = serve_copy(tmp_path)
     try:
         with sync_playwright() as p:

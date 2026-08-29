@@ -33,7 +33,7 @@ BASELINE = {
     "index.html": {"performance": 76, "accessibility": 92},
     "publications.html": {"performance": 71},
     "art.html": {"performance": 75},
-    "videos.html": {"accessibility": 93},
+    "videos.html": {"accessibility": 93, "performance": 74},
     "search.html": {"accessibility": 93},
     "404.html": {"seo": 63},
 }

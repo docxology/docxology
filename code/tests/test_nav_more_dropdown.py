@@ -11,11 +11,10 @@ from rendered_site_fixture import serve_copy, stop_server  # noqa: E402
 
 
 def test_nav_more_closes_on_outside_click_and_escape(tmp_path: Path) -> None:
-    from playwright.sync_api import sync_playwright
-
     from rendered_site_fixture import skip_without_playwright
 
     skip_without_playwright()
+    from playwright.sync_api import sync_playwright  # noqa: E402  (after skip guard)
     base_url, httpd = serve_copy(tmp_path)
     try:
         with sync_playwright() as p:

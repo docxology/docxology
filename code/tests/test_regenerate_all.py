@@ -17,7 +17,8 @@ def test_integrity_tail_resolves_generated_manifest_before_agent_index():
 
     assert names.count("build_agent_index.py") == 1
     assert len(generated_manifest_indices) == 2
-    assert names.index("build_artwork_index.py") < names.index("build_image_sitemap.py")
+    # build_image_sitemap.py removed (NEW-2, 2026-08-28): artwork index remains.
+    assert "build_image_sitemap.py" not in names
     docs_index = names.index("regenerate_docs.py")
     assert docs_index < names.index("export_bibliography.py", docs_index + 1) < names.index("sync_publications_html.py", docs_index + 1) < names.index("build_work_pages.py")
     assert names.index("generate_redirect_stubs.py") < names.index("deploy_seo_security.py")
