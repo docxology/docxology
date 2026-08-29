@@ -89,6 +89,23 @@ def reuse_on_disk_stamp(candidate: str, on_disk: str | None) -> str:
     return STAMP_HTML_RE.sub(disk_anchor.replace("\\", "\\\\"), candidate, count=1)
 
 
+_CACHED_STAMP_HTML: str | None = None
+
+
+def reuse_or_current(existing_html: str | None = None) -> str:
+    """Return the footer stamp, preferring an on-disk stamp when present.
+
+    A page whose content is byte-identical apart from the stamp is not stale:
+    reusing the on-disk stamp keeps --check green across non-rendering commits
+    instead of churning every page's stamp to each new HEAD.
+    """
+    global _CACHED_HTML_FOR_STAMP
+    stamp = footer_build_stamp_html()
+    if existing_html:
+        return reuse_on_disk_stamp(stamp, existing_html)
+    return stamp
+
+
 def build_stamp_text(repo_root: Path | str | None = None) -> str:
     """The stamp label: ``build <short-sha> <YYYY-MM-DD>``."""
     sha, stamp_date = build_stamp_info(repo_root)
