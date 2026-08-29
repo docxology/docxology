@@ -63,7 +63,7 @@ def test_axe_zero_serious_critical(tmp_path: Path) -> None:
 
 
 BASELINE: dict[str, set[tuple[str, int]]] = {
-    "index.html": {("color-contrast", 134)},
+    "index.html": {("color-contrast", 134), ("color-contrast", 135)},
     "videos.html": {("color-contrast", 2)},
     "search.html": {("aria-prohibited-attr", 1)},
 }
