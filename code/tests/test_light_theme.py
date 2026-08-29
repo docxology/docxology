@@ -124,7 +124,9 @@ def test_dark_tokens_verbatim() -> None:
 
 def test_single_light_media_block_appended() -> None:
     text = STYLE.read_text(encoding="utf-8")
-    assert text.count("@media (prefers-color-scheme: light)") == 1
+    # Two blocks are legitimate: the token remap plus the fixups block for
+    # hardcoded dark-theme colors the :root remap cannot reach.
+    assert text.count("@media (prefers-color-scheme: light)") == 2
     block = _light_block(text)
     # The block must live after the original file (append-only).
     idx = text.index(block)
