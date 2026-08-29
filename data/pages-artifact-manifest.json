@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T06:59:13Z",
-  "source_commit_at_generation": "972c8b4af4f2039e813e57180cc35b3cf90fd3ef",
+  "generated_at": "2026-08-29T07:06:18Z",
+  "source_commit_at_generation": "8cbf0173b11cd51e0c2d71f3d392eb204af656b4",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -16295,17 +16295,17 @@
     {
       "path": "search-index-content-video.json",
       "bytes": 980694,
-      "sha256": "829fb00b3529206ca4bf0cc288acd5942a878641d22653fdbba8d2154e13171d"
+      "sha256": "d4b880b2e576c5f7e9b44c0fb333228c8737892139b026114d395b7eea99f1a9"
     },
     {
       "path": "search-index-content-work.json",
       "bytes": 368794,
-      "sha256": "a821a5f05b8b19331ec59915a93bbd9cd33ac7ff9325b9441057ceb4a3bc8290"
+      "sha256": "1c504c043f6fd2126d90ecb57254dbdce79cb13a3b34762e5221a708e4904a62"
     },
     {
       "path": "search-index-core.json",
       "bytes": 805133,
-      "sha256": "d8385d1afd4706f91bce2ee5779edd587193cfe14d2a6af35c9b0fa0597d44c6"
+      "sha256": "a581095278ef2426dd3dd24fc2002656fcfa00a4b6aff8568fb63bccae50d325"
     },
     {
       "path": "search-index.json",
