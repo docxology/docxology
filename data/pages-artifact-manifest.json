@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T08:53:01Z",
-  "source_commit_at_generation": "b13a65bd31eeb8768b6126b5c2dcab74d1bde000",
+  "generated_at": "2026-08-29T10:22:29Z",
+  "source_commit_at_generation": "09456c608749d6082d63f275baca4de423ffd1dd",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 863567947,
+    "source_bytes": 863568242,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4703,
-    "artifact_bytes": 864392088
+    "artifact_bytes": 864392383
   },
   "included_files": [
     {
@@ -6014,8 +6014,8 @@
     },
     {
       "path": "code/tests/test_light_theme.py",
-      "bytes": 6828,
-      "sha256": "76059bea8491a6c5e0ab9d2410303690e351b743c68b518e850fe4e32a56f603"
+      "bytes": 6733,
+      "sha256": "a0004621834647e26b587f6579d8d8ab32e7ecc645741c1cce2132b2aa13df72"
     },
     {
       "path": "code/tests/test_lighthouse_budgets.py",
@@ -6024,8 +6024,8 @@
     },
     {
       "path": "code/tests/test_nav_more_dropdown.py",
-      "bytes": 1684,
-      "sha256": "e4326c4f074d9894d27a00e1c9de6f2395df469a22e350b576c27af53d77398d"
+      "bytes": 1717,
+      "sha256": "3a0f8eee6bc542f9764fe14cb4207a934efd0b000e6a4398ea919ab2e282b10d"
     },
     {
       "path": "code/tests/test_pages_artifact.py",
@@ -6099,8 +6099,8 @@
     },
     {
       "path": "code/tests/test_regenerate_all.py",
-      "bytes": 1722,
-      "sha256": "90d306f30e9a831ef2cf604fce4afe743bcf92926f1fbd12ff7909d1d0bc04df"
+      "bytes": 1763,
+      "sha256": "db232a3d574e415470624045911b81675c64e8441ba7cbf5bb5dad076c6758af"
     },
     {
       "path": "code/tests/test_regenerate_docs.py",
@@ -6119,8 +6119,8 @@
     },
     {
       "path": "code/tests/test_rendered_art_grid.py",
-      "bytes": 2336,
-      "sha256": "9287dd28fbd3501941d4c9c666a55d33082e48a5934dd4c47ed19e8dcfa0a893"
+      "bytes": 2369,
+      "sha256": "5ab2b00389f1640dac112d6c87246456a61b1234a84b8d681098a3730c9dadde"
     },
     {
       "path": "code/tests/test_rendered_nav.py",
@@ -6159,8 +6159,8 @@
     },
     {
       "path": "code/tests/test_seo_lane_2026_08_27.py",
-      "bytes": 5277,
-      "sha256": "927b088cd34414dab97839131de460e09f16b1a03c4eae1d8001a3a4cef748a5"
+      "bytes": 5560,
+      "sha256": "73ecf3c879bf71497f3388ff3046350167c59f3fb7966ec28e8ba27cdd1ba072"
     },
     {
       "path": "code/tests/test_site_facts.py",

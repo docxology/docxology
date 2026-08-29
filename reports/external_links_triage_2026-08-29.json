@@ -1,16 +1,15 @@
 {
-  "generated_at": "2026-08-29T08:41:56Z",
+  "generated_at": "2026-08-29T10:24:56Z",
   "source": "reports/external_links_2026-08-29.json",
   "checked_urls": 809,
-  "ok": 674,
-  "warnings": 135,
+  "ok": 680,
+  "warnings": 129,
   "categories": {
     "bot-protected-or-rate-limited": 123,
     "connection-failure": 1,
-    "needs-replacement": 6,
-    "ok": 674,
-    "timeout": 4,
-    "upstream-transient": 1
+    "ok": 680,
+    "timeout": 3,
+    "upstream-transient": 2
   },
   "note": "Warnings classify observed network behavior; bot-protected and rate-limited sources are not automatically stale.",
   "warnings_by_category": {
@@ -213,6 +212,23 @@
           "publications.html",
           "publications.html",
           "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20498699",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
         ],
         "error": ""
       },
@@ -671,19 +687,6 @@
         "sources": [
           "domain-active-inference.html",
           "domain-active-inference.html",
-          "pages/BIBLIOGRAPHY.md",
-          "publications.html",
-          "publications.html",
-          "publications.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://doi.org/10.5281/zenodo.21298890",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
           "pages/BIBLIOGRAPHY.md",
           "publications.html",
           "publications.html",
@@ -1795,100 +1798,10 @@
         "sources": [
           "pages/LINKS.md"
         ],
-        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 79 ms: Couldn't connect to server"
-      }
-    ],
-    "needs-replacement": [
-      {
-        "url": "https://github.com/docxology/docxology/commit/65c240fd",
-        "status": 404,
-        "ok": false,
-        "category": "needs-replacement",
-        "sources": [
-          "404.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/docxology/commit/8221daef",
-        "status": 404,
-        "ok": false,
-        "category": "needs-replacement",
-        "sources": [
-          "domain-active-inference.html",
-          "domain-aii-ecosystem.html",
-          "domain-art-synergetics.html",
-          "domain-biomedicine.html",
-          "domain-cognitive-security.html",
-          "domain-computational.html",
-          "domain-entomology.html",
-          "domain-presentations-media.html",
-          "domains.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/docxology/commit/99a025ed",
-        "status": 404,
-        "ok": false,
-        "category": "needs-replacement",
-        "sources": [
-          "repositories-forks.html",
-          "repositories.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/docxology/commit/9d36525e",
-        "status": 404,
-        "ok": false,
-        "category": "needs-replacement",
-        "sources": [
-          "reproducibility.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/docxology/commit/a026c95c",
-        "status": 404,
-        "ok": false,
-        "category": "needs-replacement",
-        "sources": [
-          "active-inference.html",
-          "cognitive-security.html",
-          "computational-entomology.html",
-          "evidence.html",
-          "exports.html",
-          "insect-cognition.html",
-          "neurosymbolic-ai.html",
-          "updates.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://github.com/docxology/docxology/commit/ec63c6d0",
-        "status": 404,
-        "ok": false,
-        "category": "needs-replacement",
-        "sources": [
-          "catalog.html"
-        ],
-        "error": ""
+        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 73 ms: Couldn't connect to server"
       }
     ],
     "timeout": [
-      {
-        "url": "https://dblp.org/pid/346/2173.html",
-        "status": 0,
-        "ok": false,
-        "category": "timeout",
-        "sources": [
-          "discovery.html",
-          "pages/DISCOVERY.md",
-          "pages/LINKS.md"
-        ],
-        "error": "curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received"
-      },
       {
         "url": "https://grantome.com/grant/NSF/DBI-2010290",
         "status": 0,
@@ -1898,7 +1811,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Connection timed out after 10007 milliseconds"
+        "error": "curl: (28) Connection timed out after 10009 milliseconds"
       },
       {
         "url": "https://www.christies.com/en/lot/lot-6337619",
@@ -1913,7 +1826,7 @@
           "pages/EVIDENCE.md",
           "pages/LINKS.md"
         ],
-        "error": "curl: (28) Operation timed out after 10004 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10010 milliseconds with 0 bytes received"
       },
       {
         "url": "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
@@ -1924,10 +1837,22 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10005 milliseconds with 0 bytes received"
       }
     ],
     "upstream-transient": [
+      {
+        "url": "https://dblp.org/pid/346/2173.html",
+        "status": 503,
+        "ok": false,
+        "category": "upstream-transient",
+        "sources": [
+          "discovery.html",
+          "pages/DISCOVERY.md",
+          "pages/LINKS.md"
+        ],
+        "error": ""
+      },
       {
         "url": "https://dfri.people.stanford.edu/",
         "status": 503,
