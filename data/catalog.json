@@ -640,7 +640,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-link-triage",
       "name": "External Link Triage",
       "description": "Categorized link warnings: bot-protected, transient, timeout, stale, and review.",
-      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-08-28.json",
+      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-08-29.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -654,7 +654,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-08-28.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-08-29.json",
         "encodingFormat": "application/json"
       }
     },
