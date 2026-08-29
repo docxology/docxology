@@ -57,7 +57,7 @@ def copy_site(tmp_path: Path) -> Path:
     for item in sorted(REPO_ROOT.iterdir()):
         if item.suffix == ".html":
             shutil.copy2(item, site / item.name)
-        elif item.is_dir() and item.name in {"css", "js", "data", "works", "videos", "papers", "assets"}:
+        elif item.is_dir() and item.name in {"css", "js", "data", "works", "videos", "assets"}:
             shutil.copytree(item, site / item.name)
     return site
 
