@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T07:58:25Z",
-  "source_commit_at_generation": "9c2e7ce763d9fa16e2b2031ad90e37eb1f9e155a",
+  "generated_at": "2026-08-29T07:58:44Z",
+  "source_commit_at_generation": "8427748e9630a0c45d368da32a21d954e315aea9",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
