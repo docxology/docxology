@@ -82,7 +82,6 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("sitemap", "build_sitemap.py", (), ("--check",), "Sitemap"),
     GenerationStep("404-page", "build_404_page.py", (), ("--check",), "GitHub Pages 404 page"),
     GenerationStep("artwork-index", "build_artwork_index.py", (), ("--check",), "Compact artwork index"),
-    GenerationStep("image-sitemap", "build_image_sitemap.py", (), ("--check",), "Image sitemap"),
     GenerationStep("pages-artifact", "build_pages_artifact.py", ("--write-manifest", "--allow-dirty-prepayload-evidence", "--check-size-only"), ("--check-size-only", "--check-manifest"), "Pages artifact manifest and budget"),
     GenerationStep("generated-manifest-first", "build_generated_manifest.py", (), ("--check",), "Generated artifact matrix before agent index"),
     GenerationStep("agent-index", "build_agent_index.py", (), ("--check",), "Agent route manifest"),
@@ -94,6 +93,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
 EXCLUDED_OPERATIONS: tuple[ExcludedOperation, ...] = (
     ExcludedOperation("add_zenodo_only.py", "network/source-authoring/binary-intake/manual-review", "Zenodo intake can create bibliography rows, paper folders, and downloaded binaries."),
     ExcludedOperation("audit_private_reconciliation.py", "manual-review", "Private/public comparison writes a dated decision receipt and must remain an explicit reconciliation action."),
+    ExcludedOperation("build_image_sitemap.py", "removed", "NEW-2 decision (2026-08-28): image sitemap removed - all image sources were cross-domain; see docs/operations/asset-strategy-adr.md."),
     ExcludedOperation("batch_enrich_metadata.py", "source-authoring/manual-review", "Bulk metadata enrichment can introduce inferred methods/findings and clock-derived fields; it requires per-paper review rather than local regeneration."),
     ExcludedOperation("build_external_link_triage.py", "network-derived/review", "Triage derives a review queue from an explicitly refreshed external-link report."),
     ExcludedOperation("build_public_source_review.py", "network-derived/manual-review", "Review records applied, deferred, and rejected findings without automatically changing curated source."),
