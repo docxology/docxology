@@ -39,3 +39,11 @@ jobs:
 
       - name: Lint invalid Python escape sequences
         run: uv run --group lint ruff check --select W605 code
+
+      - name: Artifact budget gate (850 MiB)
+        run: uv run python3 code/src/artifact_budget.py
+
+      - name: Generator drift review (video + work pages)
+        run: |
+          uv run python3 code/orchestrators/build_video_pages.py --check
+          uv run python3 code/orchestrators/build_work_pages.py --check
