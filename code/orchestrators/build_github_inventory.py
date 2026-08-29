@@ -21,7 +21,7 @@ PRIMARY_HTML_OUT = REPO_ROOT / "repositories.html"
 FORKS_HTML_OUT = REPO_ROOT / "repositories-forks.html"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from build_stamp import current_on_disk_stamp, footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
+from build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
