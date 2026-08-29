@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T20:33:47Z",
-  "source_commit_at_generation": "4ca836d5c5db11a2940b34436da4189d499893ee",
+  "generated_at": "2026-08-29T21:47:45Z",
+  "source_commit_at_generation": "210afc22a5232b64fd5a323937fc999c39716b1a",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 863581709,
+    "source_bytes": 863583137,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4706,
-    "artifact_bytes": 864406368
+    "artifact_bytes": 864407796
   },
   "included_files": [
     {
@@ -15304,8 +15304,8 @@
     },
     {
       "path": "reports/external_links_2026-08-29.json",
-      "bytes": 363414,
-      "sha256": "58bf2c82b929520a5c6b6c175c7d60a09d58ed6c8cda8a27947a406f0f280596"
+      "bytes": 363507,
+      "sha256": "75baeae262e23007b82716b378d15464245295761c66eb750365a57e48537c42"
     },
     {
       "path": "reports/external_links_triage_2026-05-13.json",
@@ -15359,13 +15359,13 @@
     },
     {
       "path": "reports/external_links_triage_2026-08-29.json",
-      "bytes": 47525,
-      "sha256": "2dfb16e8d99c32acfea2bcd0f4c9906af3f7ad97f4e130d29f3336b733095a11"
+      "bytes": 48851,
+      "sha256": "8ac4ecc489ffbda29649bb296f9106b16a60d90bdfcf89f613c5f58eb701f252"
     },
     {
       "path": "reports/external_links_triage_2026-08-29.md",
-      "bytes": 10651,
-      "sha256": "de056e9d441028eb430301b6ae07700b6c9bafdf788e5adb683570c1875ddaf0"
+      "bytes": 10660,
+      "sha256": "18cd4a4a4dc0894c39b56278e20263a67a68246377613a07ccef50c5c9164c34"
     },
     {
       "path": "reports/gsc_preflight_2026-05-29.json",
