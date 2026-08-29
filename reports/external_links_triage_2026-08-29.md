@@ -4,16 +4,16 @@ Scoped network-link triage for public-facing repository hubs.
 
 - Source report: `reports/external_links_2026-08-29.json`
 - Checked URLs: 810
-- OK: 690
-- Warnings: 120
+- OK: 688
+- Warnings: 122
 
 ## Categories
 
 | Category | Count | Meaning |
 | --- | ---: | --- |
-| `bot-protected-or-rate-limited` | 115 | Likely blocks automated checks; verify manually before replacing. |
+| `bot-protected-or-rate-limited` | 117 | Likely blocks automated checks; verify manually before replacing. |
 | `connection-failure` | 1 | Could not connect during this run. |
-| `ok` | 690 | Returned a 2xx/3xx response. |
+| `ok` | 688 | Returned a 2xx/3xx response. |
 | `timeout` | 3 | Timed out under the bounded checker timeout. |
 | `upstream-transient` | 1 | Server-side outage or temporary upstream failure. |
 
@@ -35,6 +35,7 @@ Scoped network-link triage for public-facing repository hubs.
 | 403 | <https://doi.org/10.3390/e25070964> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
 | 403 | <https://doi.org/10.3390/e26040303> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 403 | <https://doi.org/10.3390/e27050459> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20533669> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
 | 429 | <https://doi.org/10.5281/zenodo.20533675> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
 | 429 | <https://doi.org/10.5281/zenodo.20584820> | domain-computational.html, pages/DISCOVERY.md, pages/SOFTWARE.md |
 | 429 | <https://doi.org/10.5281/zenodo.20614908> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
@@ -43,6 +44,12 @@ Scoped network-link triage for public-facing repository hubs.
 | 429 | <https://doi.org/10.5281/zenodo.20705351> | pages/SOFTWARE.md, software.html |
 | 429 | <https://doi.org/10.5281/zenodo.20732274> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.20732275> | README.md |
+| 429 | <https://doi.org/10.5281/zenodo.20747834> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.20749817> | pages/SOFTWARE.md, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.20786638> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20789899> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.20804585> | pages/SOFTWARE.md, software.html, software.html |
+| 429 | <https://doi.org/10.5281/zenodo.20834846> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.20931955> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.20931964> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.20976824> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
@@ -94,13 +101,6 @@ Scoped network-link triage for public-facing repository hubs.
 | 429 | <https://doi.org/10.5281/zenodo.5565577> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.5573946> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.5750934> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.5797040> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.6320574> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.6904426> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.7093836> | pages/BIBLIOGRAPHY.md, pages/PROFILE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.7259006> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.7377255> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.7394900> | README.md, domain-biomedicine.html, domain-biomedicine.html |
 
 ## connection-failure
 

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-29T12:34:05Z",
+  "generated_at": "2026-08-29T21:13:34Z",
   "source": "reports/external_links_2026-08-29.json",
   "checked_urls": 810,
-  "ok": 690,
-  "warnings": 120,
+  "ok": 688,
+  "warnings": 122,
   "categories": {
-    "bot-protected-or-rate-limited": 115,
+    "bot-protected-or-rate-limited": 117,
     "connection-failure": 1,
-    "ok": 690,
+    "ok": 688,
     "timeout": 3,
     "upstream-transient": 1
   },
@@ -216,6 +216,23 @@
         "error": ""
       },
       {
+        "url": "https://doi.org/10.5281/zenodo.20533669",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "README.md",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
         "url": "https://doi.org/10.5281/zenodo.20533675",
         "status": 429,
         "ok": false,
@@ -329,6 +346,96 @@
         "category": "bot-protected-or-rate-limited",
         "sources": [
           "README.md"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20747834",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-active-inference.html",
+          "domain-active-inference.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/DOMAINS.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20749817",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/SOFTWARE.md",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20786638",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20789899",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "domain-cognitive-security.html",
+          "domain-cognitive-security.html",
+          "pages/BIBLIOGRAPHY.md",
+          "pages/DOMAINS.md",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20804585",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/SOFTWARE.md",
+          "software.html",
+          "software.html"
+        ],
+        "error": ""
+      },
+      {
+        "url": "https://doi.org/10.5281/zenodo.20834846",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "pages/SOFTWARE.md",
+          "publications.html",
+          "publications.html",
+          "publications.html",
+          "software.html",
+          "software.html"
         ],
         "error": ""
       },
@@ -1212,56 +1319,6 @@
         "error": ""
       },
       {
-        "url": "https://doi.org/10.5281/zenodo.7394901",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "index.html",
-          "media.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://doi.org/10.5281/zenodo.7400525",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/BIBLIOGRAPHY.md",
-          "publications.html",
-          "publications.html",
-          "publications.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://doi.org/10.5281/zenodo.7400708",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/BIBLIOGRAPHY.md",
-          "publications.html",
-          "publications.html",
-          "publications.html"
-        ],
-        "error": ""
-      },
-      {
-        "url": "https://doi.org/10.5281/zenodo.7400785",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "pages/BIBLIOGRAPHY.md",
-          "publications.html",
-          "publications.html",
-          "publications.html"
-        ],
-        "error": ""
-      },
-      {
         "url": "https://doi.org/10.5281/zenodo.7401874",
         "status": 429,
         "ok": false,
@@ -1648,17 +1705,6 @@
           "publications.html"
         ],
         "error": ""
-      },
-      {
-        "url": "https://www.worldcat.org/isbn/978-3-8365-9970-2",
-        "status": 429,
-        "ok": false,
-        "category": "bot-protected-or-rate-limited",
-        "sources": [
-          "publications.html",
-          "publications.html"
-        ],
-        "error": ""
       }
     ],
     "connection-failure": [
@@ -1670,7 +1716,7 @@
         "sources": [
           "pages/LINKS.md"
         ],
-        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 66 ms: Couldn't connect to server"
+        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 63 ms: Couldn't connect to server"
       }
     ],
     "timeout": [
@@ -1683,7 +1729,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Connection timed out after 10007 milliseconds"
+        "error": "curl: (28) Connection timed out after 10005 milliseconds"
       },
       {
         "url": "https://www.christies.com/en/lot/lot-6337619",
@@ -1698,7 +1744,7 @@
           "pages/EVIDENCE.md",
           "pages/LINKS.md"
         ],
-        "error": "curl: (28) Operation timed out after 10005 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received"
       },
       {
         "url": "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
@@ -1709,7 +1755,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Operation timed out after 10006 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10002 milliseconds with 0 bytes received"
       }
     ],
     "upstream-transient": [
