@@ -252,7 +252,7 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-08-28.json",
+      "path": "/reports/accessibility_static_2026-08-29.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1139,11 +1139,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 860752539,
+        "source_bytes": 862090696,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4670,
-        "artifact_bytes": 861571150
+        "artifact_file_count": 4701,
+        "artifact_bytes": 862914469
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1163,7 +1163,7 @@
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "5c68f56ffb9e985cab9f97803e9c93956e6e7cc91994f3cc1d068dfefad41a1d",
     "videos_index": "7f4e72d2ceeb5f67c999b7a679c96a1fbf5417b45051d92d02e88c817f94ee76",
-    "search": "362059848d0d94ad56b7d9ce877ce65c9bd0a2012032ceb2d2fa6883d75b1206",
+    "search": "da5ddc6bc101edc389f664754663cf72b7770a2d85094d63986bb699a38f54a1",
     "claims": "996a8f80a84f71ac841f74f7b2ab8bad8988b9663682839d5c0687e7e67a811d",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "bf281171fee44d120ba34b667146ad3d8cb0306e9ac88c3bb2f4e090f39b44cb",
