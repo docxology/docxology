@@ -37,7 +37,6 @@ BASELINE = {
     "index.html": {"accessibility": 92},
     "videos.html": {"accessibility": 93},
     "search.html": {"accessibility": 93},
-    "404.html": {"seo": 63},
 }
 
 

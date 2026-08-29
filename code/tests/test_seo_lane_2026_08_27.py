@@ -134,7 +134,7 @@ def test_build_404_page_shell_and_recovery_features():
     content = build_404_page.render()
     assert 'id="q"' in content  # search box
     assert "/js/search-page.js" in content  # wired to the search index
-    assert "noindex, follow" in content
+    assert "noindex" not in content  # HTTP 404 status already blocks indexing
     assert 'class="destinations"' in content
     # Exactly the top-8 destinations
     assert content.count("<a href=\"/") >= 8

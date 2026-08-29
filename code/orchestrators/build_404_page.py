@@ -8,8 +8,9 @@ instead of bouncing. It is rendered here — never hand-edited (GENERATED.md).
 
 The search box reuses js/search-page.js: with no query the page shows the
 recent/popular default listing, so the 404 doubles as a functional search
-surface. It is marked ``noindex, follow`` with a canonical self-reference
-following common 404 SEO practice.
+surface. Search engines already exclude true 404 responses from indexing via
+the HTTP status code, so no robots meta is emitted (a ``noindex`` meta here
+would fail Lighthouse's ``is-crawlable`` audit while adding nothing).
 """
 
 from __future__ import annotations
@@ -64,7 +65,6 @@ def render() -> str:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found — Daniel Ari Friedman</title>
     <meta name="description" content="Page not found. Search Daniel Ari Friedman's works, videos, software, research domains, and public metadata, or use the links to top destinations.">
-    <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://danielarifriedman.com/404.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">

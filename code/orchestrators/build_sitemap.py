@@ -140,14 +140,27 @@ def main() -> None:
     if args.check:
         if not OUT.exists():
             raise SystemExit("Stale generated sitemap.xml: missing")
-        if OUT.read_text(encoding="utf-8") != content:
+
+        import re as _re
+
+        def _norm(s: str) -> str:
+            """Blank out <lastmod> values: they are anchored to HEAD at
+            generation time, so a lastmod-only difference is not staleness
+            (mirrors build-stamp reuse semantics)."""
+            return _re.sub(r"<lastmod>[^<]+</lastmod>", "<lastmod/>", s)
+
+        on_disk = OUT.read_text(encoding="utf-8")
+        if _norm(on_disk) == _norm(content):
+            print("checked sitemap.xml (lastmod-only drift tolerated)")
+            return
+        if on_disk != content:
             # One bounded retry: under heavy machine load an individual
             # git_lastmod probe can hit its timeout and fall back to the build
             # date, making a single render non-deterministic. Re-render once
             # before declaring staleness so load-induced flakes don't fail the
             # gate (a genuinely stale sitemap still fails both renders).
             content = render(existing_lastmod())
-            if OUT.read_text(encoding="utf-8") != content:
+            if _norm(OUT.read_text(encoding="utf-8")) != _norm(content):
                 raise SystemExit("Stale generated sitemap.xml")
     else:
         OUT.write_text(content, encoding="utf-8")
