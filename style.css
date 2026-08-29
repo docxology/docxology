@@ -1551,7 +1551,8 @@ section h2:hover .anchor-link,
     .home-page .nav-links .nav-art-link { color: #1a1713; border-color: rgba(26,23,19,0.28); }
     /* Publications table-header sort buttons: thead th keeps a dark translucent
        wash (rgba(0,0,0,0.2)) even in light mode, so header ink stays light. */
-    .th-sort-btn { color: #f4f1ea; }
+    thead th .th-sort-btn { color: #f4f1ea; }
+    thead th { color: #f4f1ea; }
     /* Art page nav strip is dark; keep light ink there. */
     .art-page nav, nav:has(.nav-art-link[style]) { background: #030303; }
     .art-page .nav-logo, .art-page .nav-links a, .art-page .nav-links .nav-art-link { color: #f4f1ea; }
