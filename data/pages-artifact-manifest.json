@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T07:18:27Z",
-  "source_commit_at_generation": "1bb96f1fc85328665a96b7a97ad246763caae3bb",
+  "generated_at": "2026-08-29T07:33:20Z",
+  "source_commit_at_generation": "f567c872741eb8f7649839d78304d28c76b4da87",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 863146807,
+    "source_bytes": 863139387,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4702,
-    "artifact_bytes": 863970762
+    "artifact_file_count": 4700,
+    "artifact_bytes": 863962993
   },
   "included_files": [
     {
@@ -50,7 +50,7 @@
     {
       "path": "404.html",
       "bytes": 7921,
-      "sha256": "fff23bb1c0cd4529bf935fbe989fa6dcf3cfe6a322b158cd932e7232302154b2"
+      "sha256": "54915eb4e1306f3442898d4d6ba4ee7a209e64e1f0cefd69eada4ba3a8781802"
     },
     {
       "path": "AGENTS.md",
@@ -5359,8 +5359,8 @@
     },
     {
       "path": "code/orchestrators/build_404_page.py",
-      "bytes": 7090,
-      "sha256": "02e9d41c937fd8320aa2f65eca06523c91e288a3163b0b3d79a2fc1f688eb600"
+      "bytes": 7172,
+      "sha256": "b1eff9f2962b569f628abb956ac49902ade5fad67c5ee84fb4d6b0214b46608b"
     },
     {
       "path": "code/orchestrators/build_agent_index.py",
@@ -5421,11 +5421,6 @@
       "path": "code/orchestrators/build_github_inventory.py",
       "bytes": 32937,
       "sha256": "7daa1bc02c67b93416afab302370d44570d39148d2a8384aed473c7070b3e8f7"
-    },
-    {
-      "path": "code/orchestrators/build_image_sitemap.py",
-      "bytes": 5638,
-      "sha256": "d5f9df863b2b49870d0f9344239d35b460346952f17ab01ce883c31e6e41534e"
     },
     {
       "path": "code/orchestrators/build_pages_artifact.py",
@@ -5729,8 +5724,8 @@
     },
     {
       "path": "code/src/generation_plan.py",
-      "bytes": 15177,
-      "sha256": "b71b082a488a54c018050972f60cd03185619d3ce5833e2d0c8cab9a2c5a20a3"
+      "bytes": 15079,
+      "sha256": "6731011433cb5418fc48879d1d9ec187582b1ba3cc68eb313f462c11ad4e20a0"
     },
     {
       "path": "code/src/paper_metadata_schema.py",
@@ -5891,11 +5886,6 @@
       "path": "code/tests/test_build_github_inventory.py",
       "bytes": 5868,
       "sha256": "abd250c2eb52a4d95deb36b4f3d9e8050f791137a620e115424246572845a672"
-    },
-    {
-      "path": "code/tests/test_build_image_sitemap.py",
-      "bytes": 1766,
-      "sha256": "6e6f3e5937ba1d6f6729c2c2753dea00ee2588e07ee4ceee00fcba45b6395d63"
     },
     {
       "path": "code/tests/test_build_sitemap.py",
