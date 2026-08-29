@@ -267,7 +267,7 @@ def render_rows(repositories: list[dict[str, Any]]) -> str:
 def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: str | None = None) -> str:
     footer_stamp = footer_build_stamp_html()
     if existing_html:
-        footer_stamp = reuse_on_disk_stamp(footer_stamp, current_on_disk_stamp(existing_html))
+        footer_stamp = reuse_on_disk_stamp(footer_stamp, existing_html)
     all_counts = payload["counts"]
     repositories = [repo for repo in payload["repositories"] if repo["fork"] is forks]
     counts = count_repositories(repositories)
