@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T00:29:21Z",
-  "source_commit_at_generation": "cf73f6a3899a946b0e8cee09aeeca949b3e79907",
+  "generated_at": "2026-08-29T01:26:05Z",
+  "source_commit_at_generation": "64dd484a8dae46c4ef816ef4f0b9f6eaa500a96e",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 860921060,
+    "source_bytes": 860752559,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4670,
-    "artifact_bytes": 861739652
+    "artifact_bytes": 861571170
   },
   "included_files": [
     {
@@ -124,8 +124,8 @@
     },
     {
       "path": "art.html",
-      "bytes": 39513,
-      "sha256": "d96712bcf729049735556e70710b52212c0397191651c9ad68aab32a58aaff3e"
+      "bytes": 38763,
+      "sha256": "dfe95d09360146218ef40837ec2014819489d4b4f990e9995a992f6a8cef9523"
     },
     {
       "path": "art/10313080823_Epigenetics_metadata.json",
@@ -5779,8 +5779,8 @@
     },
     {
       "path": "code/src/sitemap_policy.py",
-      "bytes": 3644,
-      "sha256": "9cdde3d90cf5d7b7942dab3d2cd9b6d2d382ead2a6634be5ca6c4494a9e70895"
+      "bytes": 4017,
+      "sha256": "9de27d87653cdea7b9eb9d4fc24e46c510f5da5df1c1135a2292603c2c1064e0"
     },
     {
       "path": "code/src/software_table.py",
@@ -5833,6 +5833,11 @@
       "sha256": "62f6f6cb0758c6cd38646b35ec787f7965b86838d02ccd8d85f1375a4ff8d4d9"
     },
     {
+      "path": "code/tests/test_art_thumb_dimensions.py",
+      "bytes": 2916,
+      "sha256": "11096d503507438cb203411fc33045b25226b6bbe5429fe9c8c4fbda841a7f17"
+    },
+    {
       "path": "code/tests/test_artwork_index.py",
       "bytes": 896,
       "sha256": "1930cfa5de8f7bc2cbace4e624dc250aa5e4a02edfed23ff6530795f6fb1d9c4"
@@ -5849,13 +5854,13 @@
     },
     {
       "path": "code/tests/test_build_image_sitemap.py",
-      "bytes": 1676,
-      "sha256": "3534aea7ecd9f34ba471c79a7a3ed2ebbb323dbaa44d713349b044e11ab0f833"
+      "bytes": 1766,
+      "sha256": "6e6f3e5937ba1d6f6729c2c2753dea00ee2588e07ee4ceee00fcba45b6395d63"
     },
     {
       "path": "code/tests/test_build_sitemap.py",
-      "bytes": 3260,
-      "sha256": "355dcc4ae8c67d52968e05109cf56b317669c826fd3234ce600619ffa8b9c273"
+      "bytes": 3496,
+      "sha256": "53760c28d00ee0cc977d4ac491204d9fdf03aae90cae8e24ca7fbd7d3a7a3f5e"
     },
     {
       "path": "code/tests/test_build_video_pages.py",
@@ -6589,8 +6594,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 41135,
-      "sha256": "7b0b82493ec04b88bedcbf3c3799d7e79fe6b4a7a4f2b9c614dd0d50b85cf57d"
+      "bytes": 41155,
+      "sha256": "5e68783f7b43df26e35bd87cb4c77471bed8a6c34a4b93c7dc0701c05fc7abb0"
     },
     {
       "path": "insect-cognition.html",
@@ -16099,8 +16104,8 @@
     },
     {
       "path": "resume/resume.html",
-      "bytes": 154813,
-      "sha256": "a06cd5a1e886ecef427a8f7319db26222e9f89486000ecb42bf64649f5cf6ac8"
+      "bytes": 154833,
+      "sha256": "c84a7477c7f8090bf55ffa8018f0f05dcf2ca6b6eb960413a0553173e94e538b"
     },
     {
       "path": "resume/resume.pdf",
@@ -16129,8 +16134,8 @@
     },
     {
       "path": "robots.txt",
-      "bytes": 338,
-      "sha256": "8089eda7a330fef54179628e1a9b9bd67e6b51b2d65a505f38e316f1f0824fe3"
+      "bytes": 280,
+      "sha256": "6b53d4d572563720a48b84a5176e17919555ceb263ed7cf0c64da232faa0b141"
     },
     {
       "path": "search-index-content-video.json",
@@ -16163,14 +16168,9 @@
       "sha256": "b298dc1fca6cbeaf0aa4d7d09fcd2cf7d73d3a99ce10237fe78d7c5e5d98992c"
     },
     {
-      "path": "sitemap-images.xml",
-      "bytes": 171125,
-      "sha256": "9b5d99096a582c83726c7a2bb967334cf6f39804f12ef588c746accce2b36101"
-    },
-    {
       "path": "sitemap.xml",
-      "bytes": 241168,
-      "sha256": "01bb00f94a04ca1dc16124d817bf140fe667de8a2d5372ea0cfc97f5655edc06"
+      "bytes": 240875,
+      "sha256": "02c80c8f335bc4905f49069d21f70c231780368fbf4854eb868df779f897c9e2"
     },
     {
       "path": "software.html",
@@ -16179,8 +16179,8 @@
     },
     {
       "path": "style.css",
-      "bytes": 61965,
-      "sha256": "9016be7a7f3b5e73d7e033d50a253e9109448ddb1761d15c07cdfeda2f61dff8"
+      "bytes": 62033,
+      "sha256": "4f0c2e92af3e3ce8a3061423949c6a617f5a44f1f4c707e4643fd5547aa14f98"
     },
     {
       "path": "sw.js",
@@ -16204,8 +16204,8 @@
     },
     {
       "path": "videos/index.html",
-      "bytes": 422146,
-      "sha256": "f430bb921dc29069789e4af75f3f7358939ca5d5a5bed51e57f364ebe6eb24fb"
+      "bytes": 422148,
+      "sha256": "bfb1a66593ddfc00aa3a45a4e8087a2316eeb883da6d5d413a1b1ee1bad34684"
     },
     {
       "path": "videos/institute--39CESDAfLM.html",
