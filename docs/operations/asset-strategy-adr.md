@@ -99,3 +99,28 @@ origin this site owns, then (and only then) reintroduce an image sitemap whose
 every `<image:loc>` is same-origin — the pinned tests in
 `code/tests/test_build_image_sitemap.py` encode exactly this reversal
 condition and will fail until the precondition holds.
+
+
+## Correction (2026-08-29, handoff #3 section 3)
+
+The original ADR overstated what the prune achieved. Measured growth reports:
+
+| Report | Artifact | Files | Omitted QA screenshots |
+|---|---|---|---|
+| 2026-08-28 07:29 | 814.64 MiB | 4,654 | 78 / 169,341,772 B |
+| 2026-08-28 23:37 | 825.23 MiB | 4,690 | 78 / 169,341,772 B |
+| 2026-08-29 01:31 | 821.66 MiB | 4,670 | 78 / 169,341,772 B |
+
+The pruned QA screenshot sets were **already excluded** from the Pages artifact
+(the artifact builder omits visual-QA screenshots by policy). The prune bought
+**repository clone weight only (111.5 MB)**, not artifact budget. The artifact
+actually grew ~7 MiB across the round; headroom to the 850 MiB warning line is
+~28 MiB, and `omitted_paper_image_count` rose to 8,944 — the exclusion set is
+absorbing growth to hold the line.
+
+Consequences: Option A (separate assets origin) is **more urgent than originally
+assessed**. The triggers below are modified accordingly — treat trigger (a) as an
+active planning item now, not a distant condition. Any image-heavy addition
+(per-work OG cards, self-hosted art thumbnails) must wait for the assets-origin
+decision. CI should fail when artifact MiB crosses the warning line rather than
+discovering it at the ceiling (assigned to the ci-tests lane).
