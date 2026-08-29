@@ -1461,3 +1461,53 @@ section h2:hover .anchor-link,
     }
     .reading-progress { transition: none; }
 }
+
+/* ── LIGHT THEME (prefers-color-scheme: light) ──
+   Appended block: overrides every :root custom property for light-mode
+   users. Dark rules above are untouched; forced-colors and print blocks
+   remain separate media queries and are unaffected. */
+@media (prefers-color-scheme: light) {
+    :root {
+        color-scheme: light;
+        --bg-primary:    #faf8f4;
+        --bg-secondary:  #f1ede4;
+        --bg-card:       rgba(255,255,255,0.97);
+        --bg-glass:      rgba(20,18,16,0.03);
+        --text-primary:  #1a1713;
+        --text-secondary:#4a4338;
+        --text-muted:    #6b6459;
+        --red:           #c0392b;
+        --red-bright:    #a93226;
+        --red-pure:      #b3392b;
+        --red-glow:      rgba(192,57,43,0.12);
+        --gold:          #7a5c10;
+        --gold-bright:   #5f4700;
+        --gold-glow:     rgba(122,92,16,0.12);
+        --gold-03:       rgba(122,92,16,0.03);
+        --gold-04:       rgba(122,92,16,0.04);
+        --gold-05:       rgba(122,92,16,0.05);
+        --gold-07:       rgba(122,92,16,0.07);
+        --gold-08:       rgba(122,92,16,0.08);
+        --gold-10:       rgba(122,92,16,0.1);
+        --gold-12:       rgba(122,92,16,0.12);
+        --gold-15:       rgba(122,92,16,0.15);
+        --gold-18:       rgba(122,92,16,0.18);
+        --gold-20:       rgba(122,92,16,0.2);
+        --gold-30:       rgba(122,92,16,0.3);
+        --gold-35:       rgba(122,92,16,0.35);
+        --gold-40:       rgba(122,92,16,0.4);
+        --gold-60:       rgba(122,92,16,0.6);
+        --silver:        #5c574d;
+        --silver-bright: #1a1713;
+        --border:        rgba(26,23,19,0.2);
+        --border-hover:  rgba(192,57,43,0.6);
+        --radius:        3px;
+        --paper-line:    rgba(26,23,19,0.25);
+        --paper-soft:    rgba(26,23,19,0.05);
+        --art-a:         url("assets/hero-art/ant-head.webp");
+        --art-b:         url("assets/hero-art/decentral-antelligence-agency.webp");
+        --art-c:         url("assets/hero-art/mesh-network.webp");
+        --art-d:         url("assets/hero-art/an-ant-is-a-colony.webp");
+        --art-e:         url("assets/hero-art/army-ants.webp");
+    }
+}
