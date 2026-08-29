@@ -29,6 +29,28 @@ jobs:
       - name: Let CDN edges settle
         run: sleep 60
 
+      - name: Enforce deploy freshness (stamp == main HEAD)
+        run: |
+          python3 - <<'PY'
+          import subprocess
+          import sys
+          sys.path.insert(0, "code/src")
+          from deploy_freshness import DeployFreshnessError, run_freshness_check
+
+          # The deploy workflow builds from main, so its checkout IS main's
+          # HEAD. A mismatch after the grace window (3 attempts / ~5 min)
+          # means the live site did not pick up the deploy that just completed.
+          sha = subprocess.run(
+              ["git", "rev-parse", "--short", "HEAD"],
+              capture_output=True, text=True, check=True,
+          ).stdout.strip()
+          try:
+              stamp = run_freshness_check(expected_sha=sha)
+          except DeployFreshnessError as exc:
+              raise SystemExit(str(exc))
+          print(f"Deploy freshness OK: live stamp matches {stamp}")
+          PY
+
       - name: Verify live site
         env:
           GITHUB_TOKEN: ${{ github.token }}
