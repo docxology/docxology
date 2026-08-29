@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T18:05:56Z",
-  "source_commit_at_generation": "97e20ee60ddbc01ae1338edb7655c17e725dc21a",
+  "generated_at": "2026-08-29T18:30:56Z",
+  "source_commit_at_generation": "45e86d184d68e00f101ba8cd099bd64a5b61ad0f",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 863573641,
+    "source_bytes": 863574912,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4705,
-    "artifact_bytes": 864398129
+    "artifact_file_count": 4706,
+    "artifact_bytes": 864399571
   },
   "included_files": [
     {
@@ -5270,7 +5270,7 @@
     {
       "path": "catalog.html",
       "bytes": 50171,
-      "sha256": "0de8d8c6f50dbda33c8cb7ea9914f88fec48519edd573d3e3aff6633b24b2403"
+      "sha256": "c1acdf3f89a5c19fa3a2543abf5f0580332e692270be26e61bcc097c80cae337"
     },
     {
       "path": "cite-verify.html",
@@ -6536,6 +6536,11 @@
       "path": "docs/design/design-system.md",
       "bytes": 6271,
       "sha256": "b245f89aa24849660845a4642e83231cfa0549a34f58555f7beb6cebb775bffa"
+    },
+    {
+      "path": "docs/manuscript/MANUSCRIPT_STATUS.md",
+      "bytes": 1271,
+      "sha256": "246b0f9d7efc6613c86c52cdfdff7b6e7ccf9e27b61b3d68489381a15c811ddf"
     },
     {
       "path": "docs/operations/accessibility-qa.md",
@@ -16340,7 +16345,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 240875,
-      "sha256": "742e3ec90ee3e194615e773329108ad31303d242c3697e74aa913798bd5f4ada"
+      "sha256": "e076f2c139e4d60d5bece15383b61ff074083d94763a9c339cefe07da68e8bdd"
     },
     {
       "path": "software.html",
