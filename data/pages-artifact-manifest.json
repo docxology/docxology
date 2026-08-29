@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T07:41:16Z",
-  "source_commit_at_generation": "2d97c2efa23b460d374efe08de189d49234d9532",
+  "generated_at": "2026-08-29T07:46:06Z",
+  "source_commit_at_generation": "a4e01bd370b9588f9e2d1bf089da5240faf9f109",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5270,7 +5270,7 @@
     {
       "path": "catalog.html",
       "bytes": 50171,
-      "sha256": "b74eb581ed7c719a5b2a2456eee86872c1bb69767d6f75dad6f346a1dddbb485"
+      "sha256": "27edcc7497610042a593c926865af5ddd8d42112ec19d7247da16e700f0daddd"
     },
     {
       "path": "cite-verify.html",
@@ -6275,7 +6275,7 @@
     {
       "path": "data/catalog.json",
       "bytes": 31608,
-      "sha256": "ec4c85965ec45202526f625fa238173087d92a0fe6f93ec467b263cf983fb90a"
+      "sha256": "d98648d9c01441b12cb64d53176a3231825e7a70b0e3df0bf9e3ed6d57e4f4b0"
     },
     {
       "path": "data/claims.json",
@@ -16290,22 +16290,22 @@
     {
       "path": "search-index-content-video.json",
       "bytes": 980694,
-      "sha256": "d4b880b2e576c5f7e9b44c0fb333228c8737892139b026114d395b7eea99f1a9"
+      "sha256": "ca055e193c151a94de573d0a7537a645f428b3a82a21eb63d8d8469ad2558990"
     },
     {
       "path": "search-index-content-work.json",
       "bytes": 368794,
-      "sha256": "1c504c043f6fd2126d90ecb57254dbdce79cb13a3b34762e5221a708e4904a62"
+      "sha256": "f396e2b8a98fdaf753ceb6270c12cfa43eb5392c0dbd0396f35fbeb3a430e9a7"
     },
     {
       "path": "search-index-core.json",
       "bytes": 805133,
-      "sha256": "a581095278ef2426dd3dd24fc2002656fcfa00a4b6aff8568fb63bccae50d325"
+      "sha256": "07e57de7db266710f385201c9029acf8f0506cca57a1de2373fd30fabfe694ea"
     },
     {
       "path": "search-index.json",
       "bytes": 1620145,
-      "sha256": "da5ddc6bc101edc389f664754663cf72b7770a2d85094d63986bb699a38f54a1"
+      "sha256": "60b5ae42b705141583703b3f2ec4771a2fe877bfa8270c6862d6244431bc597a"
     },
     {
       "path": "search.html",
