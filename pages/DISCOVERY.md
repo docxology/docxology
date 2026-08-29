@@ -93,7 +93,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | External-link report | [reports/external_links_2026-05-15.json](../reports/external_links_2026-05-15.json) | Cached scoped network check for site-critical outbound links |
 | External-link triage | [reports/external_links_triage_2026-05-15.md](../reports/external_links_triage_2026-05-15.md) | Categorized link warnings: bot-protected, transient, timeout, stale, and review |
 | Live-site verification | [latest dated report](../reports/live_site_verification_2026-07-17.json) | Deployed-site checks for expected markers, JSON contracts/counts, cache headers, deployment metadata, and GitHub Pages status |
-| Asset-size audit | [reports/asset_size_2026-08-28.json](../reports/asset_size_2026-08-28.json) | Size budget report for public assets and generated exports |
+| Asset-size audit | [reports/asset_size_2026-08-29.json](../reports/asset_size_2026-08-29.json) | Size budget report for public assets and generated exports |
 | Static accessibility report | [reports/accessibility_static_2026-08-28.json](../reports/accessibility_static_2026-08-28.json) | Static accessibility checks for root HTML pages |
 | Browser smoke manifest | [reports/browser-smoke/2026-08-26/manifest.json](../reports/browser-smoke/2026-08-26/manifest.json) | Browser-rendered smoke screenshots for high-priority pages |
 | Visual QA manifest | [reports/visual-qa/2026-08-26/manifest.json](../reports/visual-qa/2026-08-26/manifest.json) | Playwright screenshot manifest for key pages and mobile/desktop viewports |
