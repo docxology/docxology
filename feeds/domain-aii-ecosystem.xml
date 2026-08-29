@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>AII Ecosystem — RSS</title>
+    <link>https://danielarifriedman.com/domain-aii-ecosystem.html</link>
+    <description>Active Inference Institute programs, infrastructure, textbook cohorts, and organizational ecosystem work.</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://danielarifriedman.com/feeds/domain-aii-ecosystem.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+    <item>
+      <title>The Active Inference Institute &amp; Active Inference Ecosystem (v3, 2025 snapshot)</title>
+      <link>https://doi.org/10.5281/zenodo.17982447</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.17982447</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Active Inference Institute, Vyatkin, Alex, Mikhailova, Alexandra, Hiott, Andrea, Pashea, Andrew, Elers, Ben, Berkers, Bert, Knight, Bleu, Fields, Chris, Whittet, Dan, Friedman, Daniel, Ticklẽs, Déan, Paterson, Fraser, Stubbs, Gareth, Grimm, Holly, Smekal, Jakub, Cooper, Jeremy, Boik, John, Burian, Libor, Albarracin, Mahault, Iennaco, Maria Luiza, Brown, Matthew, Thacker, Mick, Gilli, Peter, Kaufmann, Rafael, Cordes, RJ, Henry, Ryan, Ramesh, Sandeep, David, Scott, Alvarado, Sebastian, Baker, Zach</description>
+    </item>
+    <item>
+      <title>Aligning Active Inference Ontology to SUMO</title>
+      <link>https://doi.org/10.5281/zenodo.11459322</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.11459322</guid>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Douglass, David S., Pease, Adam, Friedman, Daniel Ari, Balbuena, Jessica Angeli, Chokhalingam, Rhea, Hurtado, Ana Magdalena, Iennaco, Maria Luiza, Knight, V. Bleu, Maybell, Scott Ryan, Rahmjoo, Ali, Sayeg, Paulo Duare Andrade, Smékal, Jakub, Tickles, Dean, Vyatkin, Alex</description>
+    </item>
+    <item>
+      <title>The Active Inference Institute &amp; Active Inference Ecosystem (v2, 2024 snapshot)</title>
+      <link>https://doi.org/10.5281/zenodo.14108992</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.14108992</guid>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Active Inference Institute, Vyatkin, Alex, Mikhailova, Alexandra, Hiott, Andrea, Pashea, Andrew, Elers, Ben, Berkers, Bert, Knight, Bleu, Fields, Chris, Whittet, Dan, Friedman, Daniel, Ticklẽs, Déan, Paterson, Fraser, Stubbs, Gareth, Grimm, Holly, Smekal, Jakub, Cooper, Jeremy, Boik, John, Burian, Libor, Albarracin, Mahault, Iennaco, Maria Luiza, Brown, Matthew, Thacker, Mick, Gilli, Peter, Kaufmann, Rafael, Cordes, RJ, Henry, Ryan, Ramesh, Sandeep, David, Scott, Alvarado, Sebastian, Baker, Zach</description>
+    </item>
+    <item>
+      <title>The Active Inference Institute and Active Inference Ecosystem (v1)</title>
+      <link>https://doi.org/10.5281/zenodo.8266280</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.8266280</guid>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Institute, Active Inference, Aguirre, Ander, Boik, John, Burian, Libor, Brown, Matthew, Cordes, RJ, David, Scott, Douglass, David S, Fernandez-Maquieira, Pablo, Friedman, Daniel A, Grimm, Holly, Guénin–Carlut, Avel, Iennaco, Maria Luiza, Knight, V Bleu, Mikhailova, Alexandra, Rahmjoo, Ali, Razi, Adeel, Smékal, Jakub, Tamari, Ronen, Tickles, Dean, Vyatkin, Alex</description>
+    </item>
+    <item>
+      <title>Catechism for Towards Active Diffusion</title>
+      <link>https://doi.org/10.5281/zenodo.7443847</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.7443847</guid>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Smékal, Jakub, Friedman, Daniel</description>
+    </item>
+    <item>
+      <title>Full speed ahead to the City on the Hill</title>
+      <link>https://doi.org/10.1126/science.aag1520</link>
+      <guid isPermaLink="true">https://doi.org/10.1126/science.aag1520</guid>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <description>Paper — Science</description>
+    </item>
+  </channel>
+</rss>
