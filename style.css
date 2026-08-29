@@ -738,7 +738,6 @@ nav{
 .media-card:nth-child(2n+1)::before,
 .mini-card:nth-child(3n+1)::before,
 .catalog-card:nth-child(5n+2)::before,
-.result-card:nth-child(4n+1)::before,
 .work-row:nth-child(9n+1)::before,
 .art-card:nth-child(2n+1)::before{
     content:'';
