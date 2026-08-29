@@ -60,13 +60,17 @@
   }
 
   // Lazy-load observer
-  // Grid thumbnails: request the 640px Flickr size instead of the 239px _m
-  // size that the CSS upscales to ~319px. Flickr only serves _z when the
-  // original is large enough, so fall back to the stored _m URL on error.
+  // Grid thumbnails: request the 640px Flickr _z size (NEW-5). SSR tiles keep
+  // their server-rendered _z src; injected tiles promote data-src _m -> _z.
+  // Flickr only serves _z when the original is large enough, so fall back to
+  // the stored URL on error (loadImage's onerror path).
   const largeThumb = (url) => (url || '').replace(/_m\.jpg(\?.*)?$/, '_z.jpg$1');
 
   const loadImage = (img) => {
-    if (!img || !img.dataset.src || img.src) return;
+    // Hydrate-first: SSR tiles already carry their _z src and must not be
+    // rebuilt or downgraded; only data-src placeholders get a (large) src.
+    if (!img || img.src) return;
+    if (!img.dataset.src) return;
     img.src = largeThumb(img.dataset.src);
     img.onload = () => img.classList.add('loaded');
     img.onerror = () => {
@@ -106,17 +110,30 @@
 
   // ── RENDER ──
   function renderGrid() {
+    // Hydrate, don't replace: reuse SSR tiles (art-thumb.ssr) whose title and
+    // ordering already match the filtered list. Rebuilding them would drop
+    // their server-rendered _z src and size attributes.
+    const existing = Array.from(grid.querySelectorAll('button.art-card'));
+    const ssrByTitle = new Map(existing
+      .filter(card => card.querySelector('img.art-thumb.ssr'))
+      .map(card => [card.querySelector('.art-title').textContent, card]));
     grid.innerHTML = '';
     document.getElementById('emptyState').style.display = filtered.length ? 'none' : 'block';
     document.getElementById('resultCount').textContent = filtered.length + ' artworks';
     filtered.forEach((art, i) => {
+      const reused = ssrByTitle.get(art.title || 'Untitled artwork');
+      if (reused) {
+        grid.appendChild(reused);
+        reused.addEventListener('click', () => openLightbox(i, reused));
+        return;
+      }
       const card = document.createElement('button');
       card.type = 'button';
       card.className = 'art-card';
       card.setAttribute('aria-haspopup', 'dialog');
       card.setAttribute('aria-label', `Open artwork: ${art.title || 'Untitled artwork'}`);
       card.innerHTML =
-        `<img data-src="${esc(art.thumb)}" alt="${esc(artAlt(art))}" class="art-thumb" width="640" height="640" loading="lazy" decoding="async">` +
+        `<img data-src="${esc(largeThumb(art.thumb))}" alt="${esc(artAlt(art))}" class="art-thumb" loading="lazy" decoding="async">` +
         `<div class="art-info">` +
         `<div class="art-title" title="${esc(art.title)}">${esc(art.title)}</div>` +
         `<div class="art-meta">${art.date ? art.date.slice(0, 10) : ''}</div>` +
