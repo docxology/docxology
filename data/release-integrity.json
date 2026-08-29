@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-08-13T17:52:47+00:00",
-  "source_commit_at_generation": "138c1d001fd5fa6090bb2fd1522e73103bbb3783",
+  "source_commit_at_generation": "cf73f6a3899a946b0e8cee09aeeca949b3e79907",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -26,20 +26,20 @@
     "data/current-counts.json": "0963978972ed08075cff746f085ad65706a33a0866e33756e26528126298997c",
     "data/coverage-exceptions.json": "bf281171fee44d120ba34b667146ad3d8cb0306e9ac88c3bb2f4e090f39b44cb",
     "data/repository-classification.json": "5e92ef88b6809b29a42e97c065dc42a8b6f76a5f07dadae979b26f3c26e85860",
-    "data/agent-index.json": "33372d209e88400db0ccd92f583cd932b7eb2e644f4e90e2a7e4839bdfcd566d",
+    "data/agent-index.json": "5f2760c747d27983abf95359cd520fcba0be7b38fd364775da8ed88cae6c1e66",
     "data/generated-manifest.json": "8696f51e1ae75ea463c21201a6d30de7db89a9a3044671e649749599d13baeb9",
-    "data/pages-artifact-manifest.json": "fa0fec52371515f585461bbf996763f4e1702ddb9e5009ed0d0978016b4bbf77"
+    "data/pages-artifact-manifest.json": "6e92eff652eace589876c510b036917798604654f6411732d07e3b35ea532d45"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "138c1d001fd5fa6090bb2fd1522e73103bbb3783",
+    "source_commit_at_generation": "cf73f6a3899a946b0e8cee09aeeca949b3e79907",
     "artifact_file_count": 4668,
     "artifact_bytes": 861739424,
     "omitted_paper_image_count": 8944
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "138c1d001fd5fa6090bb2fd1522e73103bbb3783",
+    "candidate_source_commit": "cf73f6a3899a946b0e8cee09aeeca949b3e79907",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
