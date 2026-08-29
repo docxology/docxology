@@ -93,7 +93,6 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
 EXCLUDED_OPERATIONS: tuple[ExcludedOperation, ...] = (
     ExcludedOperation("add_zenodo_only.py", "network/source-authoring/binary-intake/manual-review", "Zenodo intake can create bibliography rows, paper folders, and downloaded binaries."),
     ExcludedOperation("audit_private_reconciliation.py", "manual-review", "Private/public comparison writes a dated decision receipt and must remain an explicit reconciliation action."),
-    ExcludedOperation("build_image_sitemap.py", "removed", "NEW-2 decision (2026-08-28): image sitemap removed - all image sources were cross-domain; see docs/operations/asset-strategy-adr.md."),
     ExcludedOperation("batch_enrich_metadata.py", "source-authoring/manual-review", "Bulk metadata enrichment can introduce inferred methods/findings and clock-derived fields; it requires per-paper review rather than local regeneration."),
     ExcludedOperation("build_external_link_triage.py", "network-derived/review", "Triage derives a review queue from an explicitly refreshed external-link report."),
     ExcludedOperation("build_public_source_review.py", "network-derived/manual-review", "Review records applied, deferred, and rejected findings without automatically changing curated source."),
