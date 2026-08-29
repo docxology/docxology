@@ -1,16 +1,14 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T00:12:09Z",
-  "source_commit_at_generation": "3ef6de01ba1752c2cedd316805876483ebf2ce13",
-  "artifact_file_count": 4667,
-  "artifact_bytes": 861739319,
+  "generated_at": "2026-08-29T00:16:12Z",
+  "source_commit_at_generation": "138c1d001fd5fa6090bb2fd1522e73103bbb3783",
+  "artifact_file_count": 4668,
+  "artifact_bytes": 861739424,
   "artifact_mib": 821.82,
   "warning_bytes": 891289600,
   "safety_ceiling_bytes": 943718400,
   "hard_limit_bytes": 1073741824,
   "omitted_paper_image_count": 8944,
   "omitted_visual_qa_screenshot_count": 26,
-  "omitted_visual_qa_screenshot_bytes": 61425799,
-  "delta_bytes": -3573714,
-  "previous_report": "reports/pages_artifact_growth_2026-08-28.json"
+  "omitted_visual_qa_screenshot_bytes": 61425799
 }
