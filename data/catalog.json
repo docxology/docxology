@@ -617,7 +617,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-links",
       "name": "External Link Report",
       "description": "Scoped network freshness report for site-critical outbound links.",
-      "url": "https://danielarifriedman.com/reports/external_links_2026-08-28.json",
+      "url": "https://danielarifriedman.com/reports/external_links_2026-08-29.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -631,7 +631,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-08-28.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-08-29.json",
         "encodingFormat": "application/json"
       }
     },
