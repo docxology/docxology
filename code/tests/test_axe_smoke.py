@@ -62,8 +62,9 @@ def test_axe_zero_serious_critical(tmp_path: Path) -> None:
 
 
 
-BASELINE: dict[str, set[tuple[str, int]]] = {
-    "index.html": {("color-contrast", 134), ("color-contrast", 135)},
-    "videos.html": {("color-contrast", 2)},
-    "search.html": {("aria-prohibited-attr", 1)},
-}
+# 2026-08-29: all baseline entries removed - the 134/135-node index.html entries
+# were a fixture artifact (copy_site() did not copy root style.css, so axe saw
+# UA-default colors on white); videos.html badge contrast and the search.html
+# #filters aria-label are fixed; aria-hidden-focus fixed via visibility on hidden
+# overlays. Light+dark schemes verified clean on all 8 lane pages.
+BASELINE: dict[str, set[tuple[str, int]]] = {}
