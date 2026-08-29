@@ -26,7 +26,7 @@ STYLE = REPO / "style.css"
 
 # sha256 of style.css exactly as it was before the light block was
 # appended (1463 lines, base commit 94bd3699).
-DARK_PREFIX_SHA256 = "4f0c2e92af3e3ce8a3061423949c6a617f5a44f1f4c707e4643fd5547aa14f98"
+DARK_PREFIX_SHA256 = "db5d6ead9d3931a51208ae0d6bc0130a9778cb9a2aeb341a8b9d58ac66bc3519"  # re-pinned after d12bb007 (NEW-7 watermark removal, an approved cross-lane edit inside the prefix; guard still locks the prefix from here)
 DARK_PREFIX_LINES = 1463
 
 # Verbatim dark :root tokens that must be untouched.
