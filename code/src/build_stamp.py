@@ -20,6 +20,11 @@ from pathlib import Path
 COMMIT_URL_BASE = "https://github.com/docxology/docxology/commit"
 
 _SHA_RE = re.compile(r"^[0-9a-f]{7,40}$")
+# Matches the full footer stamp anchor so generators can swap the stamp
+# text without touching surrounding markup (drift forgiveness).
+STAMP_HTML_RE = re.compile(
+    r'(<p class="build-stamp"><a href="[^"]*">)(build [^<]+)(</a></p>)'
+)
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
@@ -59,6 +64,29 @@ def build_stamp_info(repo_root: Path | str | None = None) -> tuple[str, str]:
     if not _DATE_RE.match(git_date):
         raise BuildStampError(f"unexpected git commit date {git_date!r}")
     return git_sha, git_date
+
+
+def current_on_disk_stamp(html_text: str) -> str | None:
+    """The stamp label already embedded in a rendered page, if any."""
+    match = STAMP_HTML_RE.search(html_text)
+    return match.group(2) if match else None
+
+
+def reuse_on_disk_stamp(candidate: str, on_disk: str | None) -> str:
+    """Keep the on-disk stamp (label AND commit href) when that is the only difference.
+
+    Mirrors ``stable_generated_output_timestamp``: a page whose content is
+    byte-identical apart from the build stamp is not stale, so the stamp
+    recorded at the last content-touching regeneration is preserved (and
+    ``--check`` stays green across non-rendering commits).
+    """
+    if not on_disk:
+        return candidate
+    disk_match = STAMP_HTML_RE.search(on_disk)
+    if not disk_match:
+        return candidate
+    disk_anchor = disk_match.group(0)
+    return STAMP_HTML_RE.sub(disk_anchor.replace("\\", "\\\\"), candidate, count=1)
 
 
 def build_stamp_text(repo_root: Path | str | None = None) -> str:

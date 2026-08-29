@@ -25,7 +25,7 @@ from generated_outputs import (  # noqa: E402
     stable_generated_output_timestamp,
     write_output_texts,
 )
-from build_stamp import footer_build_stamp_html  # noqa: E402
+from build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     CITE_EXPORT_SCRIPT_TAG,
@@ -807,6 +807,7 @@ def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
         siblings.sort(key=lambda x: (int(x["year"]), int(x["num"])), reverse=True)
         w["related"] = siblings[:6]
     outputs = {WORKS_DIR / "index.html": mark_generated_page(render_index(works))}
+    html_outputs: list[Path] = [WORKS_DIR / "index.html"]
     # citation_key is the permanent public URL primitive (works/{key}.html). It must be
     # unique: two works mapping to the same key would silently overwrite one page (and its
     # canonical/JSON-LD @id). Fail loud here rather than ship a clobbered/missing work.
@@ -819,7 +820,16 @@ def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
                 f"{seen_keys[key]['num']} and {work['num']} collide on works/{key}.html"
             )
         seen_keys[key] = work
-        outputs[WORKS_DIR / f"{key}.html"] = mark_generated_page(render_work_page(work))
+        page_path = WORKS_DIR / f"{key}.html"
+        outputs[page_path] = mark_generated_page(render_work_page(work))
+        html_outputs.append(page_path)
+    # Stamp-reuse (generated_at pattern): when a rendered page differs from the
+    # on-disk page only by the footer build stamp, keep the on-disk stamp so
+    # non-rendering commits do not churn (or stale-flag) every work page.
+    for page_path in html_outputs:
+        disk = read_generated_output_text(REPO_ROOT, page_path)
+        if disk is not None:
+            outputs[page_path] = reuse_on_disk_stamp(outputs[page_path], disk)
     outputs[ENRICHMENT_OUT] = json.dumps(
         {
             "generated_at": generated_at or generated_timestamp(),
