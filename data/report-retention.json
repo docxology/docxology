@@ -6,5 +6,38 @@
     "default": "retain",
     "pages_projection": "Current browser and visual QA manifests remain on Pages; visual-QA screenshot binaries remain committed in GitHub with manifest paths and SHA-256 digests, but are excluded from the bounded Pages artifact rather than pruned."
   },
-  "entries": []
+  "entries": [
+    {
+      "path": "reports/visual-qa/2026-07-18",
+      "generated_at": "2026-07-18T00:00:00Z",
+      "provenance_sha256": "012f6aafa3bbc061bd429809efab66bb5180ce31136d1ae932cd8b7b2c1f59c2",
+      "replacement_location": "git:e7b6a45d68d5365d54b8f9d542ec589b1c351c1f",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Dr. PAI (hermes session 20260827, fleet closeout handoff \u00a7NEW-4 Option C)"
+    },
+    {
+      "path": "reports/visual-qa/2026-08-25",
+      "generated_at": "2026-08-25T00:00:00Z",
+      "provenance_sha256": "c4949fcd371999f74312657264e895633a32824b529e7d3101d0f0b4d919678f",
+      "replacement_location": "git:512cf51ba6287d535aab0a70774ea2faad702259",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Dr. PAI (hermes session 20260827, fleet closeout handoff \u00a7NEW-4 Option C)"
+    },
+    {
+      "path": "reports/browser-smoke/2026-07-29",
+      "generated_at": "2026-07-29T00:00:00Z",
+      "provenance_sha256": "67f5faaac990ba4c283319f8a11fab1f5108355adab206711e8a63094442da7e",
+      "replacement_location": "git:57b5f35b95389f9db42644fc6cf526f3aa2418dc",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Dr. PAI (hermes session 20260827, NEW-4 Option C prune)"
+    },
+    {
+      "path": "reports/browser-smoke/2026-08-25",
+      "generated_at": "2026-08-25T00:00:00Z",
+      "provenance_sha256": "577fb26404c2b33616c0c3c7ff092871a09f83fac65da2b09aa6f1e3ebf682f3",
+      "replacement_location": "git:512cf51ba6287d535aab0a70774ea2faad702259",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "Dr. PAI (hermes session 20260827, NEW-4 Option C prune)"
+    }
+  ]
 }

@@ -28,8 +28,8 @@ Before running `prune_old_reports.py --apply`, add one entry per candidate to
 
 ```json
 {
-  "path": "reports/visual-qa/2026-07-18",
-  "generated_at": "2026-07-18T01:55:49Z",
+  "path": "reports/visual-qa/<YYYY-MM-DD>",
+  "generated_at": "<ISO-8601 generation time of the set>",
   "provenance_sha256": "sha256 of the manifest or archive index before removal",
   "replacement_location": "git:<commit> or a durable release/archive URL",
   "decision": "remove-from-checkout",

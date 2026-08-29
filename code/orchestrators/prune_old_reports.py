@@ -55,10 +55,13 @@ def _dated_subdirs(parent: Path) -> list[Path]:
 
 
 _WORKING_TREE_SUFFIXES = {".html", ".json", ".md", ".xml"}
-_WORKING_TREE_SKIP_DIRS = {"reports", "code", ".git", "__pycache__"}
+_WORKING_TREE_SKIP_DIRS = {"reports", "code", ".git", "__pycache__", "_site"}
 _WORKING_TREE_SKIP_FILES = {
     "data/pages-artifact-manifest.json",
     "data/generated-manifest.json",
+    # The retention manifest cites removed paths to document the decision; it is
+    # provenance, not a live link. Same reasoning as the inventory manifests.
+    "data/report-retention.json",
 }
 
 
@@ -112,7 +115,8 @@ def _referenced_externally(rel_prefix: str) -> bool:
             ["git", "grep", "-l", rel_prefix, "--", ".",
              ":(exclude)reports/*", ":(exclude)code/*",
              ":(exclude)data/pages-artifact-manifest.json",
-             ":(exclude)data/generated-manifest.json"],
+             ":(exclude)data/generated-manifest.json",
+             ":(exclude)data/report-retention.json"],
             cwd=REPO_ROOT, capture_output=True, text=True,
         )
         if out.stdout.strip():
