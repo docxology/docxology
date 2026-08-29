@@ -20,6 +20,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
 from site_nav import (  # noqa: E402
     CSP_META_TAG,
     HEAD_EXTRAS,
@@ -47,6 +48,7 @@ TOP_DESTINATIONS: tuple[tuple[str, str], ...] = (
 
 
 def render() -> str:
+    footer_stamp = footer_build_stamp_html()
     links = "".join(
         f'<a href="/{path}">{label}</a>'
         for label, path in TOP_DESTINATIONS
@@ -119,6 +121,7 @@ def render() -> str:
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="/search-index.json">search-index.json</a> · <a href="/opensearch.xml">OpenSearch</a></p>
+        {footer_stamp}
     </footer>
 {INTERACTIVE_SCRIPTS}
 {MENU_ESC_SCRIPT}
@@ -132,9 +135,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if 404.html is stale")
     args = parser.parse_args()
-    content = render()
+    existing = OUT.read_text(encoding="utf-8") if OUT.exists() else None
+    content = reuse_on_disk_stamp(render(), existing)
     if args.check:
-        if not OUT.exists() or OUT.read_text(encoding="utf-8") != content:
+        if existing != content:
             raise SystemExit("Stale generated 404.html")
         print("checked 404.html")
     else:

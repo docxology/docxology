@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Computational Methods &amp; Open Science — RSS</title>
+    <link>https://danielarifriedman.com/domain-computational.html</link>
+    <description>Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://danielarifriedman.com/feeds/domain-computational.xml" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />
+    <item>
+      <title>DemoCreate: Declarative Audio-Visual Demo Generation for Software</title>
+      <link>https://danielarifriedman.com/videos/personal-GbsZXNjqHuM.html</link>
+      <guid isPermaLink="true">https://danielarifriedman.com/videos/personal-GbsZXNjqHuM.html</guid>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Video — Personal Channel</description>
+    </item>
+    <item>
+      <title>Fundamentals of Active Inference - Open Source code available up through Chapter 10</title>
+      <link>https://danielarifriedman.com/videos/institute-tmqPfDfQ5-s.html</link>
+      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-tmqPfDfQ5-s.html</guid>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Video — Active Inference Institute</description>
+    </item>
+    <item>
+      <title>CodeStream #005.1 ~ Inside the template/ studio</title>
+      <link>https://danielarifriedman.com/videos/personal-HCASYc6sUhk.html</link>
+      <guid isPermaLink="true">https://danielarifriedman.com/videos/personal-HCASYc6sUhk.html</guid>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      <description>Video — Personal Channel</description>
+    </item>
+    <item>
+      <title>Fundamentals of Active Inference - Open Source code available</title>
+      <link>https://danielarifriedman.com/videos/institute-qwjwbiJ1LLw.html</link>
+      <guid isPermaLink="true">https://danielarifriedman.com/videos/institute-qwjwbiJ1LLw.html</guid>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+      <description>Video — Active Inference Institute</description>
+    </item>
+    <item>
+      <title>I Vibe Coded an Entire City&#x27;s Municipal Code (AI Governance Experiment)</title>
+      <link>https://danielarifriedman.com/videos/personal-hQC9IcTExaI.html</link>
+      <guid isPermaLink="true">https://danielarifriedman.com/videos/personal-hQC9IcTExaI.html</guid>
+      <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+      <description>Video — Personal Channel</description>
+    </item>
+    <item>
+      <title>A Deterministic Testbed for Self-Organizing Agent-Team Coordination</title>
+      <link>https://doi.org/10.5281/zenodo.20533669</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20533669</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
+    </item>
+    <item>
+      <title>A Domain Language for Specifying Controlled Methods</title>
+      <link>https://doi.org/10.5281/zenodo.21086548</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21086548</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
+    </item>
+    <item>
+      <title>A Living Meta-Analysis of the Modafinil Literature</title>
+      <link>https://doi.org/10.5281/zenodo.20931964</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20931964</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
+    </item>
+    <item>
+      <title>A template/ approach to Reproducible Generative Research</title>
+      <link>https://doi.org/10.5281/zenodo.20419007</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20419007</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
+    </item>
+    <item>
+      <title>A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication</title>
+      <link>https://doi.org/10.5281/zenodo.16903351</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.16903351</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>AGEINT: Agentic Intelligence</title>
+      <link>https://doi.org/10.5281/zenodo.20732274</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20732274</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
+    </item>
+    <item>
+      <title>Active Inference Multi-Track Exemplar</title>
+      <link>https://doi.org/10.5281/zenodo.20417021</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20417021</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
+    </item>
+    <item>
+      <title>AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference</title>
+      <link>https://doi.org/10.5281/zenodo.20976824</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20976824</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman, Tucker Cahill Chambers</description>
+    </item>
+    <item>
+      <title>Autopoietic Project Generation</title>
+      <link>https://doi.org/10.5281/zenodo.21227869</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21227869</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
+    </item>
+    <item>
+      <title>BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation</title>
+      <link>https://doi.org/10.5281/zenodo.20420556</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20420556</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari, Chambers, Tucker Cahill</description>
+    </item>
+    <item>
+      <title>Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task</title>
+      <link>https://doi.org/10.5281/zenodo.20417016</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20417016</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
+    </item>
+    <item>
+      <title>COGANT: Deterministic Codebase-to-GNN Translation</title>
+      <link>https://doi.org/10.5281/zenodo.20705350</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20705350</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Codomyrmex: An Artificial Ecology for Agentic Software Development</title>
+      <link>https://doi.org/10.5281/zenodo.21750800</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21750800</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)</title>
+      <link>https://doi.org/10.5281/zenodo.22134545</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22134545</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo</description>
+    </item>
+    <item>
+      <title>Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)</title>
+      <link>https://doi.org/10.5281/zenodo.22134547</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22134547</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo</description>
+    </item>
+    <item>
+      <title>Convergence Analysis of Gradient Descent Optimization</title>
+      <link>https://doi.org/10.5281/zenodo.20417136</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20417136</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
+    </item>
+    <item>
+      <title>DemoCreate: Declarative Audio-Visual Demo Generation for Software</title>
+      <link>https://doi.org/10.5281/zenodo.20693216</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20693216</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>DuckRabbit: Typed Multimodal Illusion Generator</title>
+      <link>https://doi.org/10.5281/zenodo.21419693</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21419693</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
+    </item>
+    <item>
+      <title>ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data</title>
+      <link>https://doi.org/10.5281/zenodo.20396328</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20396328</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Editorial Quality at Scale: A Reproducible Prose-Review Pipeline</title>
+      <link>https://doi.org/10.5281/zenodo.20417104</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20417104</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
+    </item>
+    <item>
+      <title>Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon</title>
+      <link>https://doi.org/10.5281/zenodo.21137276</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21137276</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
+    </item>
+    <item>
+      <title>Exploratory Data Analysis: A Reproducible Notebook Template</title>
+      <link>https://doi.org/10.5281/zenodo.21086292</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21086292</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
+    </item>
+    <item>
+      <title>Golden Line: Toward What Matters</title>
+      <link>https://doi.org/10.5281/zenodo.21754237</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21754237</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Introduction to Biology: A Generative Approach</title>
+      <link>https://doi.org/10.5281/zenodo.20286477</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20286477</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Book — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Mapping William Blake&#x27;s Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls</title>
+      <link>https://doi.org/10.5281/zenodo.21047573</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21047573</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+  </channel>
+</rss>

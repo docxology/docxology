@@ -25,8 +25,10 @@ from generated_outputs import (  # noqa: E402
     stable_generated_output_timestamp,
     write_output_texts,
 )
+from build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
+    CITE_EXPORT_SCRIPT_TAG,
     HEAD_EXTRAS,
     INTERACTIVE_SCRIPTS,
     MENU_ESC_SCRIPT,
@@ -366,6 +368,31 @@ def source_repository_url(docs_path: str) -> str:
     return ""
 
 
+def work_bibtex(citation_key: str) -> str:
+    """The work's BibTeX entry from bibliography.bib (same per-work citation keys).
+
+    Returns '' when the key is absent so pages for un-bibbed works simply omit
+    the Copy-BibTeX affordance instead of embedding a stale/wrong entry.
+    """
+    match = re.search(
+        rf"(?ms)^@\w+\{{{re.escape(citation_key)},.*?^\}}\s*$",
+        (REPO_ROOT / "bibliography.bib").read_text(encoding="utf-8"),
+    )
+    return match.group(0).strip() if match else ""
+
+
+def bibtex_button_html(work: dict) -> str:
+    """Copy-BibTeX button + embedded entry, wired by js/cite-export.js (CSP-safe)."""
+    bib = work_bibtex(work["citation_key"])
+    if not bib:
+        return ""
+    return (
+        '<button type="button" class="btn btn-outline" id="cite-bibtex-btn" '
+        'aria-label="Copy BibTeX entry to clipboard">Copy BibTeX</button>\n'
+        f'        <script type="application/x-bibtex" id="work-bibtex">{h(bib)}</script>'
+    )
+
+
 def citation_text(work: dict) -> str:
     venue = f" {work['venue']}." if work.get("venue") else ""
     url = work.get("url") or f"https://danielarifriedman.com/works/{work['citation_key']}.html"
@@ -570,6 +597,7 @@ def page_head(work: dict) -> str:
 
 
 def render_work_page(work: dict) -> str:
+    footer_stamp = footer_build_stamp_html()
     doi_link = f"https://doi.org/{work['doi']}" if work.get("doi") else ""
     docs = local_docs_link(work.get("docs_path", ""))
     primary = work.get("url") or "../publications.html"
@@ -590,6 +618,7 @@ def render_work_page(work: dict) -> str:
         optional_buttons.append(source_repo_btn)
     button_links = [
         f'<a class="btn btn-gold" href="{h(primary)}">Primary source</a>',
+        f'{bibtex_button_html(work)}',
         f'<a class="btn btn-outline" href="{h(docs)}">Documentation</a>',
         *optional_buttons,
         '<a class="btn btn-outline" href="../bibliography.bib">BibTeX</a>',
@@ -658,14 +687,16 @@ def render_work_page(work: dict) -> str:
             <p class="text-center mt-2">
                 {button_links_html}
             </p>
+            {bibtex_button_html(work)}
         </section>
 {related_works_html(work)}
     </main>
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../publications.html">Unified bibliography</a> · <a href="../cite-verify.html">Cite & Verify</a></p>
+        {footer_stamp}
     </footer>
-""" + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
+""" + INTERACTIVE_SCRIPTS + "\n" + CITE_EXPORT_SCRIPT_TAG + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>
 """
     )
@@ -776,6 +807,7 @@ def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
         siblings.sort(key=lambda x: (int(x["year"]), int(x["num"])), reverse=True)
         w["related"] = siblings[:6]
     outputs = {WORKS_DIR / "index.html": mark_generated_page(render_index(works))}
+    html_outputs: list[Path] = [WORKS_DIR / "index.html"]
     # citation_key is the permanent public URL primitive (works/{key}.html). It must be
     # unique: two works mapping to the same key would silently overwrite one page (and its
     # canonical/JSON-LD @id). Fail loud here rather than ship a clobbered/missing work.
@@ -788,7 +820,16 @@ def render_outputs(generated_at: str | None = None) -> dict[Path, str]:
                 f"{seen_keys[key]['num']} and {work['num']} collide on works/{key}.html"
             )
         seen_keys[key] = work
-        outputs[WORKS_DIR / f"{key}.html"] = mark_generated_page(render_work_page(work))
+        page_path = WORKS_DIR / f"{key}.html"
+        outputs[page_path] = mark_generated_page(render_work_page(work))
+        html_outputs.append(page_path)
+    # Stamp-reuse (generated_at pattern): when a rendered page differs from the
+    # on-disk page only by the footer build stamp, keep the on-disk stamp so
+    # non-rendering commits do not churn (or stale-flag) every work page.
+    for page_path in html_outputs:
+        disk = read_generated_output_text(REPO_ROOT, page_path)
+        if disk is not None:
+            outputs[page_path] = reuse_on_disk_stamp(outputs[page_path], disk)
     outputs[ENRICHMENT_OUT] = json.dumps(
         {
             "generated_at": generated_at or generated_timestamp(),

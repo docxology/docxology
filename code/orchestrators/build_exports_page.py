@@ -14,6 +14,7 @@ OUT = REPO_ROOT / "exports.html"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from build_stamp import footer_build_stamp_html  # noqa: E402
 from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Exports", "exports.html")]
@@ -93,6 +94,7 @@ def h(value: object) -> str:
 
 
 def render() -> str:
+    footer_stamp = footer_build_stamp_html()
     cards = "\n".join(
         f"""                <article class="export-card">
                     <h2><a href="{h(rel)}">{h(title)}</a></h2>
@@ -168,6 +170,7 @@ def render() -> str:
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="https://danielarifriedman.com/">danielarifriedman.com</a></p>
+        {footer_stamp}
     </footer>
 {INTERACTIVE_SCRIPTS}
 {MENU_ESC_SCRIPT}</body>

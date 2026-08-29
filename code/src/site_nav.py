@@ -72,6 +72,10 @@ INTERACTIVE_SCRIPTS = (
     '<script src="/js/interactive.js?v=20260813" defer></script>'
 )
 
+# Copy-BibTeX wiring (js/cite-export.js). Loaded only on generated work pages
+# (build_work_pages.py); external file keeps the site CSP (script-src 'self').
+CITE_EXPORT_SCRIPT_TAG = '<script src="/js/cite-export.js?v=20260829" defer></script>'
+
 # Work pages that are duplicates of another catalogued work (same paper, different
 # Zenodo deposit/version) point their rel=canonical at the primary entry so search
 # engines consolidate ranking signals instead of splitting them across duplicates.
@@ -351,6 +355,7 @@ def nav_manifest(depth: int = 0) -> tuple[list[tuple[str, str, str, str]], list[
         ("art", f"{prefix}art.html", "Art", "nav-art-link"),
     ]
     secondary = [
+        ("start-here", f"{prefix}start-here.html", "Start Here", ""),
         ("about", f"{home}#about", "About", ""),
         ("research", f"{home}#research", "Research", ""),
         ("media", f"{prefix}media.html", "Media", ""),

@@ -20,6 +20,7 @@ from generated_outputs import (  # noqa: E402
     stale_output_paths,
     write_output_texts,
 )
+from build_stamp import footer_build_stamp_html  # noqa: E402
 from site_nav import HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, clip_description, domain_page_href, render_nav  # noqa: E402
 
 
@@ -140,6 +141,7 @@ def works_canonical(work: dict) -> str:
 
 
 def render_page(work: dict) -> str:
+    footer_stamp = footer_build_stamp_html()
     docs_path = str(work["docs_path"]).rstrip("/")
     folder = REPO_ROOT / docs_path
     summary = overview(folder) or "Local documentation and source artifacts for this bibliography entry."
@@ -217,6 +219,7 @@ def render_page(work: dict) -> str:
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="../../publications.html">Unified bibliography</a> · <a href="../../works/">Works index</a></p>
+        {footer_stamp}
     </footer>
 """ + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>

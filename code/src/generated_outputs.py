@@ -577,8 +577,28 @@ def read_output_texts(
 def stale_output_paths(
     expected: Mapping[Path, str], *, repo_root: Path
 ) -> tuple[Path, ...]:
-    """Return source-rendered targets that do not exactly match on disk."""
-    return output_drift(expected, read_output_texts(expected, repo_root=repo_root))
+    """Return source-rendered targets that do not match on disk.
+
+    Stamp-reuse: a target whose only difference from the rendered expectation
+    is the footer build stamp (commit SHA embedded at generation time) is NOT
+    stale - the on-disk stamp is authoritative for non-rendering commits, so a
+    commit that touches no page content does not churn every footer.
+    """
+    drift = output_drift(
+        {path: _with_reused_stamp(path, content, repo_root) for path, content in expected.items()},
+        read_output_texts(expected, repo_root=repo_root),
+    )
+    return drift
+
+
+def _with_reused_stamp(path: Path, content: str, repo_root: Path) -> str:
+    """Return content with the on-disk stamp substituted when content matches modulo stamp."""
+    from build_stamp import reuse_on_disk_stamp  # local: avoid import cycle
+    try:
+        disk = (repo_root / path if not path.is_absolute() else path).read_text(encoding="utf-8")
+    except OSError:
+        return content
+    return reuse_on_disk_stamp(content, disk)
 
 
 def write_output_texts(outputs: Mapping[Path, str], *, repo_root: Path) -> None:

@@ -34,6 +34,7 @@ from generated_outputs import (  # noqa: E402
     stable_generated_output_timestamp,
     write_output_texts,
 )
+from build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
@@ -617,6 +618,7 @@ def transcript_html(transcript: str, video: dict) -> str:
 
 
 def render_video_page(video: dict, *, transcript: str | None = None) -> str:
+    footer_stamp_detail = footer_build_stamp_html()
     """Render one video detail page from its record and optional cached text.
 
     Supplying ``transcript`` keeps the renderer a deterministic content
@@ -725,7 +727,7 @@ def render_video_page(video: dict, *, transcript: str | None = None) -> str:
             <div class="transcript">{transcript_html(transcript, video)}</div>
         </section>
     </main>
-    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos/">Video index</a> - <a href="../data/videos.json">video metadata JSON</a></p></footer>
+    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos/">Video index</a> - <a href="../data/videos.json">video metadata JSON</a></p>{footer_stamp_detail}</footer>
 """ + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>
 """
@@ -754,6 +756,7 @@ def video_list_item_fields(video: dict) -> tuple[str, str, str]:
 
 
 def render_index(payload: dict) -> str:
+    footer_stamp_index = footer_build_stamp_html()
     videos = sorted(payload["videos"], key=lambda item: item["upload_date"], reverse=True)
     counts = payload["counts"]
     topic_links = "\n".join(
@@ -801,7 +804,7 @@ def render_index(payload: dict) -> str:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{h(title)}</title>
     <meta name="description" content="{h(clip_description(description, 155))}">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="{SITE_ORIGIN}videos/">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
@@ -851,7 +854,7 @@ def render_index(payload: dict) -> str:
             <noscript><p class="muted">The complete list of {counts['total']} video pages, including the {len(tail_payload)} newest entries not shown above, is available in the <a href="../data/videos.json">video metadata JSON</a> and via the page's ItemList structured data.</p></noscript>
         </section>
     </main>
-    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos.html">timeline</a> - <a href="../data/videos.json">video metadata JSON</a></p></footer>
+    <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD - <a href="../videos.html">timeline</a> - <a href="../data/videos.json">video metadata JSON</a></p>{footer_stamp_index}</footer>
 """ + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + f"""
 <script type="application/json" id="video-tail-payload">{json.dumps(tail_payload, separators=(",", ":"), ensure_ascii=False)}</script>
 <script src="/js/videos-index.js?v=20260827" defer></script>
@@ -1043,8 +1046,17 @@ def outputs(generated_at: str | None = None) -> dict[Path, str]:
         INDEX_OUT: json.dumps(index, indent=2, ensure_ascii=False) + "\n",
         VIDEO_DIR / "index.html": render_index(payload),
     }
+    # Stamp-reuse (generated_at pattern): keep the on-disk footer stamp when it
+    # is the only difference, so non-rendering commits do not churn 1100+ pages.
+    index_path = VIDEO_DIR / "index.html"
+    out[index_path] = reuse_on_disk_stamp(
+        out[index_path], read_generated_output_text(REPO_ROOT, index_path)
+    )
     for video in payload["videos"]:
-        out[VIDEO_DIR / page_filename(video)] = render_video_page(video)
+        page_path = VIDEO_DIR / page_filename(video)
+        out[page_path] = reuse_on_disk_stamp(
+            render_video_page(video), read_generated_output_text(REPO_ROOT, page_path)
+        )
     out[PAGE_MANIFEST_OUT] = render_video_page_manifest(expected_video_page_paths(out))
     return out
 

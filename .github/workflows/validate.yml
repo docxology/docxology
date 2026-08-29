@@ -39,3 +39,44 @@ jobs:
 
       - name: Lint invalid Python escape sequences
         run: uv run --group lint ruff check --select W605 code
+
+      - name: Artifact budget gate (850 MiB)
+        run: uv run python3 code/src/artifact_budget.py
+
+      - name: Generator drift review (video + work pages)
+        run: |
+          uv run python3 code/orchestrators/build_video_pages.py --check
+          uv run python3 code/orchestrators/build_work_pages.py --check
+
+  browser-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        run: python -m pip install uv==0.11.6
+
+      - name: Install browser QA dependencies
+        run: uv sync --extra browser-qa
+
+      - name: Install chromium
+        run: uv run python -m playwright install --with-deps chromium
+
+      - name: Install lighthouse
+        run: npm install -g lighthouse@13.4.1
+
+      - name: Rendered browser QA (nav, art grid, dropdown, axe, lighthouse)
+        run: |
+          uv run python3 -m pytest \
+            code/tests/test_rendered_nav.py \
+            code/tests/test_rendered_art_grid.py \
+            code/tests/test_nav_more_dropdown.py \
+            code/tests/test_axe_smoke.py \
+            code/tests/test_lighthouse_budgets.py \
+            -q

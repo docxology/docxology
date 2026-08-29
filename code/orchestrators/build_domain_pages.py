@@ -14,6 +14,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from build_stamp import footer_build_stamp_html  # noqa: E402
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
@@ -315,6 +316,7 @@ def page_head(
 
 
 def page_footer() -> str:
+    footer_stamp = footer_build_stamp_html()
     return f"""    <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="https://activeinference.institute/">Active Inference Institute</a> · <a href="https://danielarifriedman.com/">danielarifriedman.com</a></p>
@@ -327,6 +329,7 @@ def page_footer() -> str:
             <a href="https://github.com/docxology/docxology">Source Repo</a>
         </div>
         <p class="text-center text-sm text-muted mt-1">© 2026 Daniel Ari Friedman. All rights reserved. · Data refreshed {generated_month_year()}</p>
+        {footer_stamp}
     </footer>
 """ + INTERACTIVE_SCRIPTS + "\n" + MENU_ESC_SCRIPT + """</body>
 </html>

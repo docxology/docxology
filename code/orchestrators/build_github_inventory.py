@@ -21,6 +21,7 @@ PRIMARY_HTML_OUT = REPO_ROOT / "repositories.html"
 FORKS_HTML_OUT = REPO_ROOT / "repositories-forks.html"
 
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+from build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
@@ -263,7 +264,10 @@ def render_rows(repositories: list[dict[str, Any]]) -> str:
     return "\n".join(rows)
 
 
-def render_html(payload: dict[str, Any], *, forks: bool = False) -> str:
+def render_html(payload: dict[str, Any], *, forks: bool = False, existing_html: str | None = None) -> str:
+    footer_stamp = footer_build_stamp_html()
+    if existing_html:
+        footer_stamp = reuse_on_disk_stamp(footer_stamp, existing_html)
     all_counts = payload["counts"]
     repositories = [repo for repo in payload["repositories"] if repo["fork"] is forks]
     counts = count_repositories(repositories)
@@ -464,6 +468,7 @@ def render_html(payload: dict[str, Any], *, forks: bool = False) -> str:
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="data/github-repositories.json">github-repositories.json</a></p>
+        {footer_stamp}
     </footer>
 {REPO_INVENTORY_SCRIPT}
 {INTERACTIVE_SCRIPTS}
@@ -485,8 +490,10 @@ def write_cached_html_outputs(
     forks_html_out: Path = FORKS_HTML_OUT,
 ) -> None:
     """Render deterministic inventory pages from an already-refreshed cache."""
-    primary_html_out.write_text(render_html(payload), encoding="utf-8")
-    forks_html_out.write_text(render_html(payload, forks=True), encoding="utf-8")
+    existing_primary = primary_html_out.read_text(encoding="utf-8") if primary_html_out.exists() else None
+    existing_forks = forks_html_out.read_text(encoding="utf-8") if forks_html_out.exists() else None
+    primary_html_out.write_text(render_html(payload, existing_html=existing_primary), encoding="utf-8")
+    forks_html_out.write_text(render_html(payload, forks=True, existing_html=existing_forks), encoding="utf-8")
 
 
 def load_cached_payload(json_out: Path = JSON_OUT) -> dict[str, Any]:
@@ -566,8 +573,8 @@ def check_outputs(
     fork_counts = count_repositories(fork_repos)
     html_text = primary_html_out.read_text(encoding="utf-8")
     forks_html = forks_html_out.read_text(encoding="utf-8")
-    expected_html = render_html(payload)
-    expected_forks_html = render_html(payload, forks=True)
+    expected_html = render_html(payload, existing_html=html_text)
+    expected_forks_html = render_html(payload, forks=True, existing_html=forks_html)
     if html_text != expected_html:
         raise SystemExit(
             "repositories.html is stale relative to data/github-repositories.json; "
