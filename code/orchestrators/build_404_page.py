@@ -115,7 +115,7 @@ def render() -> str:
         <nav class="destinations" aria-label="Top destinations">
 {links}
         </nav>
-        <section class="result-list" id="results" aria-live="polite" aria-busy="true" aria-label="Search results"></section>
+        <section class="result-list" id="results" aria-live="polite" aria-label="Search results"></section>
         <section id="result-status" aria-live="polite"></section>
     </main>
     <footer role="contentinfo">
