@@ -34,7 +34,7 @@ from generated_outputs import (  # noqa: E402
     stable_generated_output_timestamp,
     write_output_texts,
 )
-from build_stamp import footer_build_stamp_html  # noqa: E402
+from build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
 from site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
@@ -804,7 +804,7 @@ def render_index(payload: dict) -> str:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{h(title)}</title>
     <meta name="description" content="{h(clip_description(description, 155))}">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="{SITE_ORIGIN}videos/">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
@@ -1046,8 +1046,17 @@ def outputs(generated_at: str | None = None) -> dict[Path, str]:
         INDEX_OUT: json.dumps(index, indent=2, ensure_ascii=False) + "\n",
         VIDEO_DIR / "index.html": render_index(payload),
     }
+    # Stamp-reuse (generated_at pattern): keep the on-disk footer stamp when it
+    # is the only difference, so non-rendering commits do not churn 1100+ pages.
+    index_path = VIDEO_DIR / "index.html"
+    out[index_path] = reuse_on_disk_stamp(
+        out[index_path], read_generated_output_text(REPO_ROOT, index_path)
+    )
     for video in payload["videos"]:
-        out[VIDEO_DIR / page_filename(video)] = render_video_page(video)
+        page_path = VIDEO_DIR / page_filename(video)
+        out[page_path] = reuse_on_disk_stamp(
+            render_video_page(video), read_generated_output_text(REPO_ROOT, page_path)
+        )
     out[PAGE_MANIFEST_OUT] = render_video_page_manifest(expected_video_page_paths(out))
     return out
 
