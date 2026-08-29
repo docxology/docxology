@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T18:30:56Z",
-  "source_commit_at_generation": "45e86d184d68e00f101ba8cd099bd64a5b61ad0f",
+  "generated_at": "2026-08-29T19:01:08Z",
+  "source_commit_at_generation": "7f8b68be5c0635564778913d9748cf9ee521b5bb",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 863574912,
+    "source_bytes": 863575587,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4706,
-    "artifact_bytes": 864399571
+    "artifact_bytes": 864400246
   },
   "included_files": [
     {
@@ -5359,8 +5359,8 @@
     },
     {
       "path": "code/orchestrators/build_404_page.py",
-      "bytes": 7235,
-      "sha256": "1207b4c7d4f9892ef3e6b1b4d9d29b3dbad9014ef78d577cc351031fd699bd4b"
+      "bytes": 7218,
+      "sha256": "2912607b711e060f6149016928cb1ffb9cc25dbfad1e3a2cb1703a2e09aecdea"
     },
     {
       "path": "code/orchestrators/build_agent_index.py",
@@ -5819,8 +5819,8 @@
     },
     {
       "path": "code/templates/publications.html.tmpl",
-      "bytes": 18378,
-      "sha256": "c97757ad095b90f562451b470c2de721b2958658de3d396785d7ec0fb7cddca5"
+      "bytes": 19262,
+      "sha256": "26ebf05d7b82b731ddc8377a99ca36eed153fbe3226244c49a93fb08320b0aa2"
     },
     {
       "path": "code/templates/software.html.tmpl",
@@ -6239,8 +6239,8 @@
     },
     {
       "path": "code/tools/rendered_site_fixture.py",
-      "bytes": 3779,
-      "sha256": "48c0177348e1c0d753e80497aa2a0fbaca3821cbe5e9541af9886d11f7a8f781"
+      "bytes": 3932,
+      "sha256": "b738621adbd78bc74616bdf60a580f3246cf262083d2f04adde6686d7c58a675"
     },
     {
       "path": "code/tools/vendor/axe.min.js",
@@ -14909,8 +14909,8 @@
     },
     {
       "path": "publications.html",
-      "bytes": 312086,
-      "sha256": "998867bdb5396c75607304c8f658bdb1484d4b5a56bf52eb997fbdc982520693"
+      "bytes": 311745,
+      "sha256": "4060087ae664082832e7a0bd0fa49b251520dc46ee5776c31bf7e6324a4bf7a1"
     },
     {
       "path": "pyproject.toml",
@@ -16334,8 +16334,8 @@
     },
     {
       "path": "search.html",
-      "bytes": 10403,
-      "sha256": "71ae27933923640ab3a0a27e818d61501a33d92c568919a8eb2a7db0f10fc1c9"
+      "bytes": 10399,
+      "sha256": "0386198423ee1e451ba652a25c1e1886a8c1df55165d4277ec895e60a5bfade9"
     },
     {
       "path": "security.txt",
