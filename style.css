@@ -108,6 +108,7 @@
             color:var(--text-secondary);font-size:.82rem;font-weight:500;
             letter-spacing:.06em;text-transform:uppercase;
             transition:color .2s;padding:.6rem 0;
+            display:inline-flex;align-items:center;min-height:44px;
             border-bottom:2px solid transparent;
         }
         .nav-links a:hover,.nav-links a.active{color:var(--gold);border-bottom-color:var(--red)}

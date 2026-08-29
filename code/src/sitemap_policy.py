@@ -24,8 +24,11 @@ INDEX_PRIORITY_STATIC: list[tuple[str, str, str]] = [
     ("domain-computational.html", "monthly", "0.7"),
     ("domain-biomedicine.html", "monthly", "0.7"),
     ("art.html", "weekly", "0.9"),
+    # NEW-3 (2026-08-28): videos/ is the static machine-readable index; the
+    # interactive timeline (videos.html) is the single indexed surface. The
+    # index stays crawlable + linked for agents and no-JS visitors but is not
+    # a sitemap entry, avoiding a near-duplicate pair.
     ("videos.html", "weekly", "0.8"),
-    ("videos/", "weekly", "0.7"),
     ("collaborators.html", "monthly", "0.7"),
     ("media.html", "monthly", "0.7"),
     ("software.html", "monthly", "0.7"),
@@ -39,7 +42,8 @@ INDEX_PRIORITY_STATIC: list[tuple[str, str, str]] = [
     ("cite-verify.html", "monthly", "0.7"),
     ("evidence.html", "monthly", "0.6"),
     ("reproducibility.html", "monthly", "0.7"),
-    ("feed.xml", "weekly", "0.5"),
+    # Sitemap hygiene (2026-08-28): feed.xml is a non-HTML XML asset — it is
+    # discovered via <link rel="alternate"> and robots, not a crawlable page.
     # Sitemap hygiene (2026-08-27): non-HTML metadata exports (llms.txt,
     # humans.txt, CITATION.cff, bibliography.bib/.csl.json/.ris, codemeta.json)
     # were removed from the sitemap — they remain crawlable, discoverable via

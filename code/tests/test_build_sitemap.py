@@ -39,7 +39,9 @@ def test_sitemap_includes_video_pages_when_generated(tmp_path: Path):
     (videos_dir / "institute-abc123.html").write_text("<html></html>", encoding="utf-8")
     build_sitemap.git_lastmod.cache_clear()
     locs = sitemap_locs(repo_root=tmp_path)
-    assert "https://danielarifriedman.com/videos/" in locs
+    # NEW-3: the videos/ index is excluded from the sitemap...
+    assert "https://danielarifriedman.com/videos/" not in locs
+    # ...but per-video detail pages remain indexed.
     assert "https://danielarifriedman.com/videos/institute-abc123.html" in locs
     assert re.findall(r"<loc>([^<]+)</loc>", render(repo_root=tmp_path)) == locs
 
@@ -69,7 +71,9 @@ def test_static_policy_lists_exports_hub():
     paths = {row[0] for row in INDEX_PRIORITY_STATIC}
     assert "exports.html" in paths
     assert "cite-verify.html" in paths
-    assert "videos/" in paths
+    # NEW-3: videos.html (timeline) is indexed; videos/ (static index) is not.
+    assert "videos.html" in paths
+    assert "videos/" not in paths
 
 
 def test_existing_lastmod_uses_latest_entry(tmp_path: Path):
