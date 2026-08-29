@@ -61,6 +61,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("work-pages", "build_work_pages.py", (), ("--check",), "Per-work landing pages"),
     GenerationStep("video-pages", "build_video_pages.py", (), ("--check",), "Video landing pages and exports"),
     GenerationStep("site-facts-first", "sync_site_facts.py", (), ("--check",), "Volatile public facts after content projections"),
+    GenerationStep("start-here", "build_start_here.py", (), ("--check",), "Start Here curated reading paths page"),
     GenerationStep("paper-pages", "build_paper_pages.py", (), ("--check",), "Paper folder HTML pages"),
     GenerationStep("redirect-stubs", "generate_redirect_stubs.py", ("--apply",), ("--check",), "Centrally rendered legacy redirects"),
     GenerationStep("seo-security", "deploy_seo_security.py", (), ("--check",), "Shared public head/security normalization"),
