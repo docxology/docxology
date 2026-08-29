@@ -18,7 +18,10 @@ import hashlib
 import re
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[2]
+import os
+
+_REPO_DEFAULT = "/Volumes/external_drive/Git/projects/ongoing/DAF/docxology"
+REPO = Path(os.environ.get("DOCXOLOGY_ROOT", _REPO_DEFAULT))
 STYLE = REPO / "style.css"
 
 # sha256 of style.css exactly as it was before the light block was
