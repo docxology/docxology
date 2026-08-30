@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T21:47:45Z",
+  "generated_at": "2026-08-30T00:56:03Z",
   "source_commit_at_generation": "210afc22a5232b64fd5a323937fc999c39716b1a",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
@@ -23,8 +23,8 @@
     "source_bytes": 863583137,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4706,
-    "artifact_bytes": 864407796
+    "artifact_file_count": 4707,
+    "artifact_bytes": 864407912
   },
   "included_files": [
     {
@@ -23421,6 +23421,10 @@
       "role": "public control metadata"
     },
     {
+      "path": "reports/pages_artifact_growth_2026-08-30.json",
+      "role": "public control metadata"
+    },
+    {
       "path": "reports/public_source_review_2026-08-25.json",
       "role": "public control metadata"
     },
@@ -23513,5 +23517,5 @@
       "reports/visual-qa/2026-08-26/repository-forks-mobile.png"
     ]
   },
-  "growth_report": "reports/pages_artifact_growth_2026-08-29.json"
+  "growth_report": "reports/pages_artifact_growth_2026-08-30.json"
 }
