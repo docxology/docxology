@@ -14,6 +14,6 @@ Replace `<lifecycle>/<project>` with the qualified sidecar path for this project
 ## Reproducibility Contract
 
 - Do not cite results that cannot be regenerated or directly traced.
-- Keep generated outputs under `output/` and manuscript source under `manuscript/`.
+- Keep generated outputs under `output/` and manuscript source under `docs/manuscript/`.
 - Keep private data, credentials, and unpublished sensitive details out of the manuscript.
 - Record exact verification commands before marking this manuscript publication-ready.
