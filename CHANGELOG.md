@@ -2,6 +2,15 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-08-31
+
+- **Agent-navigation doc pass** (see `REVIEW_LOG_2026-08-31.md`): pointed the
+  AGENT_START.md external-link triage recipe at the GENERATED.md triage row and
+  the two-command refresh instead of the stale hard-coded 2026-05-15 report;
+  added `llms.txt` to the GENERATED.md Volatile-site-facts outputs row (it is
+  rewritten by `sync_site_facts.py`); refreshed the TODO.md last-reviewed stamp
+  and recorded the two minor doc findings as resolved.
+
 ## 2026-08-26
 
 - **Release-blocking link repair:** corrected the canonical Science DOI for *Defining events: 2020 in hindsight*, removed three verified-dead AII software aliases rather than inventing replacement ownership, and migrated moved AII governance/program links to their live canonical routes.
