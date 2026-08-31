@@ -104,7 +104,14 @@ Comprehensive follow-up pass:
 - Deliverable: update `data/repository-classification.json` and promote only manually reviewed repositories into `pages/SOFTWARE.md`
 - Acceptance: all uncatalogued repositories have ownership, fork/archive state, catalog role, exclusion reason, and review status
 - Dependencies: `data/github-repositories.json`
-- Remaining primary-review items (do not auto-promote): `ActiveInferenceInstitute/Active_Inference_Un0`, `docxology/GrowthModel`, `docxology/multi-time` (all `description_quality: missing`), and `docxology/math4wisdom-superhuman-docs-archive` (`substantive`, still needs a cited human decision). Forks stay `fork_not_curated`.
+- Remaining primary-review items — RESOLVED 2026-08-30 (verification report:
+  `daf-stack/report-docxology-doc005.md`). All four named repos were already
+  classified/promoted by the 2026-08-26 catalog cycle: Un0 (empty-repo note,
+  promoted), multi-time (description now substantive — the "missing" premise
+  is stale), math4wisdom-superhuman-docs-archive (promotion IS the cited human
+  decision, 2026-08-26), GrowthModel (principal's acknowledged_not_curated
+  exclusion, reviewed 2026-08-26). `classify_repositories.py --check` passes.
+  Forks stay `fork_not_curated`.
 
 ### DOC-006 — Refresh external evidence and coverage exceptions
 
