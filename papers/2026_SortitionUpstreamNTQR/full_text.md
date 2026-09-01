@@ -708,7 +708,7 @@ statements.
 3.1.7
 Sweep profiles: profiles, seeds, and aggregation units
 The synthetic track is a deterministic grid sweep over the four strategies, panel sizes, expert stringency, bias spread, and the
-population/corpus parameters in manuscript/config.yaml. That file now defines named profiles: the reported sweep uses m
+population/corpus parameters in docs/manuscript/config.yaml. That file now defines named profiles: the reported sweep uses m
 anuscript_contrast (config hash fda4da941cf0), while smoke, manuscript_main, tolerance, power, panel_ladder, and
 research_broad keep CI, legacy manuscript, assumption-tolerance, design-budget, finer panel-size, and broader sensitivity
 settings explicit. live_postdoc_panel separately stores the required-live Gemma model settings, reviewer/application
@@ -1631,7 +1631,7 @@ judgment. The authors declare no competing interests.
 
 6
 References
-The bibliography below is generated from manuscript/references.bib by the render pipeline. This section is intentionally
+The bibliography below is generated from docs/manuscript/references.bib by the render pipeline. This section is intentionally
 citation-driven rather than a manual numbered list so DOI/URL fields can render as links where the output format supports
 them.
 35

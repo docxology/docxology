@@ -448,7 +448,7 @@ Optimal convergence occurs when 𝛼=
 Experimental Setup
 3.4.1
 Step Size Analysis
-Step sizes are not chosen ad hoc in the manuscript: they are read from experiment.step_sizes in manuscript/config.yaml and passed
+Step sizes are not chosen ad hoc in the manuscript: they are read from experiment.step_sizes in docs/manuscript/config.yaml and passed
 through run_convergence_experiment() in src/analysis/ (entry: scripts/optimization_analysis.py). The active grid for this build
 is:
 • 𝛼= 0.01 (conservative)
@@ -753,8 +753,8 @@ tion experiments.
 • Reporting & Integrity: infrastructure.reporting.executive_reporter and infrastructure.validation.output.validator
 assuring CSV/JSON configurations conform.
 • Visual Cryptography: Publication-ready graphics compiled by infrastructure.rendering.pdf_renderer.py using metadata
-from projects/templates/template_code_project/manuscript/config.yaml, automatically linked via the LaTeX configuration in
-projects/templates/template_code_project/manuscript/preamble.md.
+from projects/templates/template_code_project/docs/manuscript/config.yaml, automatically linked via the LaTeX configuration in
+projects/templates/template_code_project/docs/manuscript/preamble.md.
 5.3
 Research Pipeline Validation
 The project validates the research template’s ability to handle operations seamlessly across disciplines:
@@ -924,7 +924,7 @@ entire parameter space.
 Madlib Injection Verification
 This manuscript demonstrates the template’s “madlib” capability: every quantitative claim is injected from computed data at render
 time. The substitution system processed the following variables:
-• Configuration variables: Drawn from manuscript/config.yaml (experiment: section)
+• Configuration variables: Drawn from docs/manuscript/config.yaml (experiment: section)
 • Result variables: Computed from output/data/optimization_results.csv
 • Stability variables: Extracted from output/reports/stability_analysis.json
 • Provenance variables: Generated at substitution time (timestamps, hashes, versions)
@@ -954,7 +954,7 @@ logic.
 8.3
 What this project proves about the template
 The scientific claims through sec. 2, sec. 3, and sec. 4 are standard textbook material. The non-standard contribution is procedural:
-configuration in manuscript/config.yaml drives run_convergence_experiment(), figures, CSV exports, and {{RESULT_*}} substitution
+configuration in docs/manuscript/config.yaml drives run_convergence_experiment(), figures, CSV exports, and {{RESULT_*}} substitution
 (scripts/z_generate_manuscript_variables.py) so that PDF, HTML, and validation logs refer to the same numbers. That pattern is
 what downstream projects should copy—whether the domain is optimization, differential equations, or Bayesian workflows.
 8.4
@@ -971,12 +971,12 @@ and PDF cross-references—remain visible rather than buried under algorithmic c
 
 9
 References
-Bibliography lives in manuscript/references.bib and is read by Pandoc during PDF render. The build pipeline invokes Pandoc with
+Bibliography lives in docs/manuscript/references.bib and is read by Pandoc during PDF render. The build pipeline invokes Pandoc with
 --natbib, so every [@key] citation in the manuscript is rewritten to the appropriate \cite{}/\citep{}/\citet{} LaTeX command and
 resolved against the bib file.
 To validate that references.bib is syntactically clean and contains the required fields per entry type:
 uv run python -m infrastructure.reference.citation.cli validate \
-projects/templates/template_code_project/manuscript/references.bib --strict
+projects/templates/template_code_project/docs/manuscript/references.bib --strict
 
 ## Page 24
 

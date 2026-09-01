@@ -247,7 +247,7 @@ https://github.com/docxology/template under the projects/templates/template_pool
 is fully reproducible from source using uv run python projects/templates/template_pools_rules_tools/scripts/02_run_integratio
 n.py from the repository root. Generated manuscript variables are stored in output/data/manuscript_variables.json and injected at
 render time. Every figure in this manuscript, including the cover illustration, is likewise reproducible from source via uv run python pr
-ojects/templates/template_pools_rules_tools/scripts/05_generate_figures.py, which writes directly to manuscript/figures/.
+ojects/templates/template_pools_rules_tools/scripts/05_generate_figures.py, which writes directly to docs/manuscript/figures/.
 1.4
 Competing Interests
 The author declares no competing interests.
@@ -590,7 +590,7 @@ Constraint
 strong/coverage-gate.yaml
 Minimum line coverage 90%, branch coverage 80% for src/
 strong/module-structure.yaml
-Required directory layout: src/, tests/, scripts/, manuscript/
+Required directory layout: src/, tests/, scripts/, docs/manuscript/
 Its soft rules provide guidance on code style, commit message conventions, and pull-request labelling.
 
 ## Page 11
@@ -667,7 +667,7 @@ ge
 module_structure
 _evaluate_module_structure
 Required project directory layout (src/,
-tests/, scripts/, manuscript/) actually
+tests/, scripts/, docs/manuscript/) actually
 exists
 section_schema
 _evaluate_section_schema
@@ -683,8 +683,8 @@ reshold reports separately whether a key was absent from context (a context-comp
 or numeric-but-below-minimum (a genuine rule violation). This is what lets the pipeline tell a maintainer why a rule failed, not merely
 that it failed — directly addressing the “actionable defect” distinction introduced in the previous section.
 Crucially, section_schema and reference_schema are not evaluated against synthetic fixtures — load_rule_context_from_project(
-) (in scripts/04_validate_strong_rules.py) builds their context by parsing this project’s own, current manuscript/references.bib
-into structured reference entries and extracting the real #-level headings from every file under manuscript/*.md. Running uv run python
+) (in scripts/04_validate_strong_rules.py) builds their context by parsing this project’s own, current docs/manuscript/references.bib
+into structured reference entries and extracting the real #-level headings from every file under docs/manuscript/*.md. Running uv run python
 projects/templates/template_pools_rules_tools/scripts/04_validate_strong_rules.py therefore semantically validates this exact
 manuscript’s own bibliography and section structure, live, on every invocation — re-run that command to see the current evaluation and
 violation counts rather than trusting a number printed here, since either count can legitimately change as the manuscript grows.
@@ -927,7 +927,7 @@ Console report, non-zero exit on violation
 scripts/05_generate_figures.py
 Render all 8 content figures plus the cover
 illustration
-9 PNG files under manuscript/figures/
+9 PNG files under docs/manuscript/figures/
 scripts/z_generate_manuscript_variabl
 es.py
 Hydrate {{TOKEN}} values and inject them

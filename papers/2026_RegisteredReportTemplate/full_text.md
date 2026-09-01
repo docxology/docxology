@@ -365,13 +365,13 @@ intent.
 
 8
 References
-The bibliography lives in manuscript/references.bib and is read by Pandoc during PDF rendering. Every [@key]
+The bibliography lives in docs/manuscript/references.bib and is read by Pandoc during PDF rendering. Every [@key]
 citation in the manuscript is resolved against that file, so the reference list below is generated from the cited entries
 rather than maintained by hand.
 To validate that references.bib is syntactically clean and has the required fields per entry type, run from the
 repository root:
 uv run python -m infrastructure.reference.citation.cli validate \
-projects/templates/template_registered_report/manuscript/references.bib --strict
+projects/templates/template_registered_report/docs/manuscript/references.bib --strict
 11
 
 ## Page 13

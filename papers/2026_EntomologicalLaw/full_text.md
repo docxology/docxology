@@ -369,7 +369,7 @@ date strips with pre-1700 and 1700-1999 layers separated from the 2000+ consolid
 Muscovite, and Russian-Imperial legal/scientific sources plus pre-1950 Russian and Soviet entomology/legal sources. Read
 as: EntoLaw’s evidence base is anchored by early legal, regulatory, and treatise sources but interpreted through modern
 scholarship, cases, statutes, and oﬀicial materials. Why it matters: the figure makes the historical depth of the citation
-stack visible instead of leaving it implicit in the reference list. Provenance: manuscript/references.bib parsed by src
+stack visible instead of leaving it implicit in the reference list. Provenance: docs/manuscript/references.bib parsed by src
 .viz_citation_dates. Caveat: the date is the bibliography year, so modern editions appear at edition date unless the
 bibliography declares a source-date anchor.
 2.5

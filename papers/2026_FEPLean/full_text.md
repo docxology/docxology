@@ -3816,13 +3816,13 @@ regeneration runs through scripts/_maint_build_topics_catalogue.py and scripts/c
 catalogue headers.
 2. Toolchain pin. Lean and Mathlib4 versions are fixed by lean/lean-toolchain and lean/lakefile.lean inside the Lake
 workspace used for lake env lean.
-3. Manuscript artifacts. The Manuscript Artifacts stage in src/pipeline/core.py writes manuscript/manuscript_vars.yaml
+3. Manuscript artifacts. The Manuscript Artifacts stage in src/pipeline/core.py writes docs/manuscript/manuscript_vars.yaml
 (carrying catalogue counts,
 per-area counts,
 per-topic fields,
 and the
 verify.* status block) and regenerates
-manuscript/09z_unified_formalism_catalogue.md:
+docs/manuscript/09z_unified_formalism_catalogue.md:
 for each
 fep-NNN, a Lean
 sketch subsection and a Typeset
@@ -3889,7 +3889,7 @@ validation_report.md, and topics/*.md.
 Bulk session JSONL, when exported, lives under $GAUSS_HOME/fep_artifacts/
 rather than in the run directory.
 • output/reports/gauss_doctor_last.json is optional and appears after a successful gauss doctor.
-• manuscript/manuscript_vars.yaml receives the injected catalogue statistics used during rendering.
+• docs/manuscript/manuscript_vars.yaml receives the injected catalogue statistics used during rendering.
 Full
 agentic
 mode
@@ -8412,7 +8412,7 @@ can answer.
 8
 Bibliography
 References are in
-manuscript/references.bib.
+docs/manuscript/references.bib.
 Inline
 [@key] resolved by Pandoc citeproc
 during

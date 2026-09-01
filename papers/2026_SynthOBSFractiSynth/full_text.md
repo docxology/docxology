@@ -812,7 +812,7 @@ plugin/synthobs/ obspython console script — Goldilocks layout + 3-mode console
 + command line + dashboard helper, driving the engine inside
 OBS.
 scripts/ Thin orchestrators (figure generation) importing the engine.
-manuscript/ This Technical Design Blueprint.
+docs/manuscript/ This Technical Design Blueprint.
 tests/ Real-input test suite, >= 90% coverage on src/.
 10.2 Calibration Laws Pinned Across Both Implementations
 Three formalisms cross the language boundary as declared contracts. Each is defined in the Python engine and implemented at the
@@ -902,7 +902,7 @@ channel standard deviation 19.49; it is also the manuscript cover asset.
 
 Figure 22: Telemetry HUD capture from the same run. Blue-channel LSB extraction and checksum verification recover F10.7 flux
 140.0 sfu, 6 active regions, solar-wind speed 367.9 km/s, lock strength 0.5125, phase bias 2.1089 rad, observation time, and visible
-signature 8b1f58c1; the exact float values, asset hash, and gate result are recorded in manuscript/assets/obs/obs_manifest.json. The
+signature 8b1f58c1; the exact float values, asset hash, and gate result are recorded in docs/manuscript/assets/obs/obs_manifest.json. The
 image demonstrates a recoverable record, not authenticated authorship.
 Figure 23: Controlled-tone OBS capture used by the audio-reactivity gate. The verifier compares this frame with the versioned
 silent baseline over the 1280 ×33 bottom ROI of the 1280 ×720 image; the recorded mean absolute RGB delta is 48.5574 against an

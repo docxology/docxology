@@ -646,7 +646,7 @@ consume.
 Project Layer (projects/): Self-contained research workspaces. Each project directory contains:
 Directory
 Purpose
-manuscript/
+docs/manuscript/
 Markdown chapters and config.yaml
 scripts/
 Thin orchestrator scripts (Stage 02)
@@ -669,7 +669,7 @@ Projects are designed to be completely self-contained. Adding a new project requ
 infrastructure layer, no modifications to pyproject.toml, and no updates to the pipeline orchestrator. A
 project is automatically discovered if and only if it satisfies two conditions:
 1. It exists as a subdirectory of projects/.
-2. It contains the file manuscript/config.yaml.
+2. It contains the file docs/manuscript/config.yaml.
 This paradigm enables horizontal scaling: N researchers can maintain N independent projects within a
 single repository, sharing infrastructure without coupling. Each project declares its own testing tolerances,
 manuscript metadata, LLM review preferences, and rendering configuration in its config.yaml. The system
@@ -738,7 +738,7 @@ pattern, importing logic from src/ modules. For example, the cognitive_case_diag
 3.4.4
 Stage 03: PDF Rendering (03_render_pdf.py)
 Compiles Markdown manuscript chapters into a unified PDF via a three-phase rendering process:
-1. Pandoc Markdown→LaTeX: Converts each manuscript/*.md file into LaTeX, injecting metadata
+1. Pandoc Markdown→LaTeX: Converts each docs/manuscript/*.md file into LaTeX, injecting metadata
 from config.yaml (title, authors, aﬀiliations, DOI).
 2. XeLaTeX Compilation:
 Runs xelatex with biber for bibliography processing.
@@ -1380,7 +1380,7 @@ transparency).
 5.2
 Scalability: From 1 to N Projects
 The Standalone Project Paradigm enables horizontal scaling: adding a new project requires creating a direc-
-tory with manuscript/config.yaml and nothing else. No infrastructure code changes, no pyproject.toml
+tory with docs/manuscript/config.yaml and nothing else. No infrastructure code changes, no pyproject.toml
 modifications, no CI configuration updates. The run.sh orchestrator automatically discovers new projects
 and presents them in its interactive menu.
 We have validated this scaling model with three heterogeneous projects:
@@ -1744,12 +1744,12 @@ Purpose
 discovery.py
 _discover_project — finds valid project
 directories by scanning for
-manuscript/config.yaml
+docs/manuscript/config.yaml
 workspace.py
 Workspace initialization and cleanup utilities
 Integration: Used by execute_pipeline.py and run.sh to identify which projects can be built. The
 discovery algorithm enforces the Standalone Project Paradigm: a directory is a valid project if and only if it
-contains manuscript/config.yaml.
+contains docs/manuscript/config.yaml.
 6.5
 infrastructure.publishing (9 modules)
 Purpose: Academic publishing metadata and citation generation.
@@ -1792,7 +1792,7 @@ html_report.py
 HTML executive report generation
 markdown_report.py
 Markdown-format report generation
-Integration: Core of Stage 03. Reads manuscript/*.md and config.yaml, produces output/<project>.pdf.
+Integration: Core of Stage 03. Reads docs/manuscript/*.md and config.yaml, produces output/<project>.pdf.
 The auxiliary file cleanup resolves a known rendering hazard where stale .aux files cause “Division by 0”
 LaTeX errors.
 6.7
@@ -2092,7 +2092,7 @@ files
 Hard fail
 03
 03_render_pdf.py
-manuscript/*.md,
+docs/manuscript/*.md,
 config.yaml
 PDF in output/
 Hard fail

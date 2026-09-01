@@ -332,7 +332,7 @@ Transformation
 Output
 Guard
 Schema intake
-manuscript/config.yaml
+docs/manuscript/config.yaml
 Load and validate gold_refinement block
 GoldRefinementConfig config schema
 tests
@@ -485,37 +485,37 @@ DISCUSSION_REFINEMENT_VERB
 refinement_verbs
 smelting
 discussion
-manuscript/config.yaml#g
+docs/manuscript/config.yaml#g
 METHOD_MANUSCRIPT_TERM_1
 manuscript_terms
 evidence
 methodology
-manuscript/config.yaml#g
+docs/manuscript/config.yaml#g
 METHOD_MANUSCRIPT_TERM_2
 manuscript_terms
 evidence
 methodology
-manuscript/config.yaml#g
+docs/manuscript/config.yaml#g
 METHOD_METAL_TERM_1metallurgical_terms
 hallmark
 methodology
-manuscript/config.yaml#g
+docs/manuscript/config.yaml#g
 METHOD_METAL_TERM_2metallurgical_terms
 cupellation
 methodology
-manuscript/config.yaml#g
+docs/manuscript/config.yaml#g
 METHOD_METAL_TERM_3metallurgical_terms
 assaying
 methodology
-manuscript/config.yaml#g
+docs/manuscript/config.yaml#g
 RESULTS_PURITY_ADJ_1purity_adjectives
 unrefined
 results
-manuscript/config.yaml#g
+docs/manuscript/config.yaml#g
 RESULTS_PURITY_ADJ_2purity_adjectives
 purified
 results
-manuscript/config.yaml#g
+docs/manuscript/config.yaml#g
 Selected purity adjectives for this section: unrefined, purified.
 4.5
 Provenance flow
@@ -592,7 +592,7 @@ missing.
 Config validation raises
 GoldRefinementConfigError.
 Add vocabulary to
-manuscript/config.yaml.
+docs/manuscript/config.yaml.
 Unresolved token
 A manuscript
 placeholder has no
@@ -646,7 +646,7 @@ Summary
 6.2
 Forking responsibilities
 1. Remap metallurgical stages to domain operations
-2. Update lexicon categories in manuscript/config.yaml
+2. Update lexicon categories in docs/manuscript/config.yaml
 3. Add domain-specific evidence and validators
 4. Regenerate all outputs through the pipeline
 5. Do not hand-edit generated manuscript, PDFs, or figures
@@ -657,7 +657,7 @@ Forking responsibilities
 Reproducibility: Seeded Regeneration
 7.1
 Deterministic regeneration
-The refinery pipeline is fully deterministic. Given the same manuscript/config.yaml and src/ code, every run produces identical
+The refinery pipeline is fully deterministic. Given the same docs/manuscript/config.yaml and src/ code, every run produces identical
 output.
 • Seed: 431
 • Config hash: d0eb11c78c63e50a
@@ -685,7 +685,7 @@ uv run python projects/templates/template_gold_refinement/scripts/z_generate_man
 ./run.sh --project templates/template_gold_refinement --pipeline --core-only
 7.4
 Config ownership
-All vocabulary, slots, and section conditions are declared in manuscript/config.yaml under gold_refinement:. The config is the
+All vocabulary, slots, and section conditions are declared in docs/manuscript/config.yaml under gold_refinement:. The config is the
 source of truth; generated prose is disposable.
 
 ## Page 16
@@ -787,7 +787,7 @@ Regenerate outputs through the pipeline, not by hand-editing.
 10.2
 Fork checklist
 1. Remap metallurgical stages to domain operations in src/refinery.py
-2. Update lexicon categories in manuscript/config.yaml under gold_refinement.lexicon
+2. Update lexicon categories in docs/manuscript/config.yaml under gold_refinement.lexicon
 3. Update contribution_claims with domain-specific evidence pointers
 4. Add domain validators beyond the exemplar’s generic gates
 5. Regenerate all outputs through the pipeline:

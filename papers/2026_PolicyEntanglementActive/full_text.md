@@ -739,7 +739,7 @@ surface as a typed API for the Python computational layer and the manuscript reg
 content table and docs/reference/veridical_status.md the running audit.
 Repository artifact. All four tracks (prose, equations, Python / pymdp, Lean 4) are maintained as a single working
 repository artifact [Friedman, 2026a]. The public Zenodo DOI (10.5281/zenodo.20418904) and source repository are
-recorded in manuscript/config.yaml and CITATION.cff. The entire build — rendered PDF, pymdp 1.0.1 numerical
+recorded in docs/manuscript/config.yaml and CITATION.cff. The entire build — rendered PDF, pymdp 1.0.1 numerical
 sidecars, dashboard invariants, and the MathlibProofs ℝ-level discharge — regenerates from a single command
 (./run.sh --pipeline or python scripts/run_all.py), and the repository’s machine-readable CITATION.cff provides
 the preferred citation form.
@@ -933,7 +933,7 @@ grid counts, seeds, or rollout horizons.
 • Prose (§3 onward). The natural-language presentation: definitions, theorem statements, proof sketches,
 worked examples, interpretive commentary. Every chapter in Part II opens with the objects under discussion
 and closes with a three-bullet Takeaways box that surfaces the load-bearing claims. Section numbering is
-owned by manuscript/refs/labels.yaml so that renumbering propagates everywhere automatically.
+owned by docs/manuscript/refs/labels.yaml so that renumbering propagates everywhere automatically.
 • Formalism in equations (§4, §5, §7, §8, §9). Every load-bearing identity is a registered equation in the
 same labels file, auto-numbered as S.K and resolved through registry tokens so the manuscript’s mathematical
 structure can be traversed without ever encountering a hand-written equation number. The four foundational
@@ -1544,7 +1544,7 @@ carries
 status:
 boundary
 in
-manuscript/refs/labels.yaml,
+docs/manuscript/refs/labels.yaml,
 not
 status:
 proved:
@@ -1707,9 +1707,9 @@ F[q_𝜆] = log Z_E(𝜆) - log Z(𝜆),
 where `log Z_E(𝜆)` is the entangled-prior log-partition and
 `log Z(𝜆)` is the entangled-posterior log-partition.
 See
-[`manuscript/04_entanglement_decomposition.md`](../../manuscript/04_entanglement_decomposition.md)
+[`docs/manuscript/04_entanglement_decomposition.md`](../../manuscript/04_entanglement_decomposition.md)
 ([Theorem 5.5](../../manuscript/refs/labels.yaml#thm_4_2)) and the proof appendix
-[`manuscript/S01_proof_of_decomposition_theorem.md`](../../manuscript/S01_proof_of_decomposition_theorem.md).
+[`docs/manuscript/S01_proof_of_decomposition_theorem.md`](../../manuscript/S01_proof_of_decomposition_theorem.md).
 The boundary fragment exposes the identity as a *witness-consuming*
 statement: the caller (the separate additive `MathlibProofs` layer or the
 numerical Python layer) supplies the algebraic equality
@@ -2946,7 +2946,7 @@ Current Lean artifact
 The boundary fragment is Mathlib-free by construction and has a zero hygiene budget: 0 strict sorry, 0 axiom,
 0 unsafe, 0 partial, 0 noncomputable, and 0 Mathlib imports. The current render reports 22/22 Lake jobs green
 over 17 boundary submodules, with 126 total Lean declarations (39 defs, 76 theorems / lemmas, 11 structures).
-Every numbered theorem row in manuscript/refs/labels.yaml has a live Lean companion. The companions partition
+Every numbered theorem row in docs/manuscript/refs/labels.yaml has a live Lean companion. The companions partition
 into four content classes by what each one proves about the named proposition in the boundary fragment:
 • algebraic rows prove the named proposition outright in the boundary fragment;
 • definitional rows prove a sub-statement of the named proposition (the boundary-content fragment the typed
@@ -3015,7 +3015,7 @@ content for the central row Theorem
 MathlibProofs/; the analytic content for
 the remaining typed-API rows is the
 discharge target of §20 Q14.
-The four classes are pinned per-row by the faithfulness: field in manuscript/refs/labels.yaml, audited at every
+The four classes are pinned per-row by the faithfulness: field in docs/manuscript/refs/labels.yaml, audited at every
 render by docs/reference/veridical_status.md, and locked against silent re-inflation by tests/test_h1_headline_-
 invariant.py. The normative ledger of which substrate proves what is docs/reference/methods_and_assumptions.md.
 The typed-API class is not a hidden proof of the analytic content. It is a machine-checked contract: the caller
@@ -3120,7 +3120,7 @@ witness-discharge direction, not as in-flight dependencies of the current build.
 Live-source injection
 The companion supplement §E is the executable audit trail. It does not contain hand-copied theorem blocks. Each
 [[LEAN:<label>]] token is resolved as follows:
-1. manuscript/refs/labels.yaml names the theorem’s lean_module and lean_name.
+1. docs/manuscript/refs/labels.yaml names the theorem’s lean_module and lean_name.
 2. src/manuscript/lean_extract.py
 indexes
 declarations
@@ -5732,7 +5732,7 @@ pymdp==1.0.1 (the package that provides the pymdp import/API) and Lean v4.29.0 a
 and release readiness depends on regenerating the sidecars, PNG metadata, rendered manuscript, PDF, and
 regression reports under those pins. The publication-metadata threat is metadata drift: the public Zenodo DOI
 and public source archive at https://github.com/ActiveInferenceInstitute/policy_entanglement must stay aligned
-across manuscript/config.yaml, CITATION.cff, the manuscript citation entry, and rendered PDF front matter. The
+across docs/manuscript/config.yaml, CITATION.cff, the manuscript citation entry, and rendered PDF front matter. The
 interpretive threat is overextension: biological, clinical, and alignment language is claim-strength hypothesis unless
 the text points to a formal row, generated artifact, primary citation, or explicit roadmap item.
 Verification ledger
@@ -5823,7 +5823,7 @@ Where it lives
 Every registry theorem row has a Lean
 companion and a four-track wiring check
 Per-row registry + four-track validator
-manuscript/refs/labels.yaml +
+docs/manuscript/refs/labels.yaml +
 cross-reference tests; Python witnesses are
 faithfulness-tiered, not uniformly
 substantive re-proofs
@@ -5865,7 +5865,7 @@ docs/reference/methods_and_assumptions.md.
 the registries used by sister projects would enable shared reproducibility audits across manuscripts; this is
 minor infrastructure, orthogonal to the framework’s claims.
 • Community contribution and archival metadata. The working citation entry [Friedman, 2026a] is the
-current citation target; the public Zenodo DOI and source repository are recorded in manuscript/config.yaml
+current citation target; the public Zenodo DOI and source repository are recorded in docs/manuscript/config.yaml
 and CITATION.cff. The open questions of §20 each admit independent contribution.
 Proof of the Entanglement Decomposition
 We prove the decomposition identity stated in §5.1 (Theorem 5.1, entanglement decomposition theorem), namely
@@ -6526,7 +6526,7 @@ lean_module
 lean_name
 columns
 of
-manuscript/refs/labels.yaml
+docs/manuscript/refs/labels.yaml
 are
 the
 wiring;
@@ -6621,9 +6621,9 @@ F[q_𝜆] = log Z_E(𝜆) - log Z(𝜆),
 where `log Z_E(𝜆)` is the entangled-prior log-partition and
 `log Z(𝜆)` is the entangled-posterior log-partition.
 See
-[`manuscript/04_entanglement_decomposition.md`](../../manuscript/04_entanglement_decomposition.md)
+[`docs/manuscript/04_entanglement_decomposition.md`](../../manuscript/04_entanglement_decomposition.md)
 ([Theorem 5.5](../../manuscript/refs/labels.yaml#thm_4_2)) and the proof appendix
-[`manuscript/S01_proof_of_decomposition_theorem.md`](../../manuscript/S01_proof_of_decomposition_theorem.md).
+[`docs/manuscript/S01_proof_of_decomposition_theorem.md`](../../manuscript/S01_proof_of_decomposition_theorem.md).
 The boundary fragment exposes the identity as a *witness-consuming*
 statement: the caller (the separate additive `MathlibProofs` layer or the
 numerical Python layer) supplies the algebraic equality
@@ -7019,7 +7019,7 @@ theorem markovBlanket_separation_identity_witness {K Pol}
 How drift is prevented
 The [[LEAN:...]] injection turns each Lean theorem in this appendix into a single source of truth shared with the
 boundary fragment itself:
-1. manuscript/refs/labels.yaml declares the theorem registry with lean_module / lean_name for each entry.
+1. docs/manuscript/refs/labels.yaml declares the theorem registry with lean_module / lean_name for each entry.
 2. At
 render
 time,
@@ -7041,7 +7041,7 @@ How a witness is consumed today
 The stock-Lean boundary is now zero-sorry and zero-deferred. For a status: witness theorem, the current source
 consumes a typed structure whose fields bind the analytic payload to boundary-fragment primitives. The validated
 contract is:
-1. The theorem row in manuscript/refs/labels.yaml names the live Lean declaration.
+1. The theorem row in docs/manuscript/refs/labels.yaml names the live Lean declaration.
 2. The Lean declaration type-checks without Mathlib and without hidden axioms.
 3. The corresponding Python witness or pymdp run computes the same payload numerically.
 4. The relevant test file and dashboard invariant fail if the numerical payload drifts.
@@ -8288,7 +8288,7 @@ TOLERANCE
 param_sweep_agreement_tolerance
 1𝑒−06
 LaTeX preamble macros
-Reserved LaTeX macros (currently unused in the body; available for future expansion): see manuscript/preamble.md
+Reserved LaTeX macros (currently unused in the body; available for future expansion): see docs/manuscript/preamble.md
 for the canonical definitions (\KL, \E, \Var, \policy, \policySpace, \Mfd, \MFsubmfd, \MI, \Hent, \efe, \fe, \coupJ,
 \coupK). Each glossary row above cross-references the spelled-out form which is the one actually used throughout the
 manuscript.
@@ -9776,7 +9776,7 @@ shipped internal-consistency round-trip, a Lean typed-contract emitter, and a GN
 with the genuine residuals (a first-class upstream coupling primitive; full-bundle pymdp regeneration; GNN-to-Lean
 proving) named honestly as forward work rather than concealed.
 Bibliography
-This bibliography is auto-generated from manuscript/refs/citations.yaml by scripts/inject_manuscript_vari-
+This bibliography is auto-generated from docs/manuscript/refs/citations.yaml by scripts/inject_manuscript_vari-
 ables.py — every Pandoc-style citation in the body (a citekey enclosed in square brackets prefixed with @) resolves
 to one entry below, and every entry below is grouped by topic in the order specified by the topic_order: list of the
 YAML source.

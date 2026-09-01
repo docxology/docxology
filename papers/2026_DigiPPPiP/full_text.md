@@ -1389,7 +1389,7 @@ The plot is conceptual, and validation would require event-aligned experience re
 ## Page 51
 
 20 References
-Bibliography lives in manuscript/references.bib and is resolved by Pandoc during rendering. All manuscript citations
+Bibliography lives in docs/manuscript/references.bib and is resolved by Pandoc during rendering. All manuscript citations
 use bracketed Pandoc syntax so the renderer, not the prose, controls bibliography formatting and numbering.
 Search tools and Perplexity are discovery aids only. A citekey should enter the manuscript only after the title, authors,
 year, venue, and DOI or stable URL have been checked against a DOI resolver, publisher page, PubMed, arXiv, Crossref,

@@ -3832,7 +3832,7 @@ passing == 0 on a multi-thousand-test suite as a parse failure and preserves the
 loud warning rather than overwriting METRICS.yaml with corrupted zeros, so a single bad regeneration cannot silently
 destroy the record.
 • Dirty-worktree provenance. A clean generator_git_sha comparison only shows that METRICS.yaml was generated
-from the committed HEAD; it does not show that the current manuscript/package tree has no uncommitted edits. The
+from the committed HEAD; it does not show that the current docs/manuscript/package tree has no uncommitted edits. The
 freshness gate now reports dirty paths by default and can fail via uv run python tools/check_metrics_fresh.py -
 -fail-on-dirty for release builds.
 These checks are why the round-trip and coverage numbers in this paper are reproducible by re-execution rather than by
@@ -7430,7 +7430,7 @@ Link verification
 ../cogant/docs/verify_manuscript
 _links.py
 Checks relative links in
-manuscript/*.md against the package
+docs/manuscript/*.md against the package
 tree
 Markdown validation
 uv run python tools/audit_manusc

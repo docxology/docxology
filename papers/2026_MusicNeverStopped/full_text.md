@@ -1150,7 +1150,7 @@ Figure 22: Review sentiment by source kind in the archival compendium. Data sour
 (n=1888 reviews across 5 source kinds). Statistic: mean sentiment by kind with support and dispersion in the raw
 CSV/JSON export. Exclusion rule: reviews without pointer/source metadata are not fabricated; sentiment is limited
 to curated and maximinus review rows. Claim class: descriptive reception summary.
-Figure 23: Citation kinds across the 139 references in manuscript/references.bib and data/archival/citatio
+Figure 23: Citation kinds across the 139 references in docs/manuscript/references.bib and data/archival/citatio
 ns.json. Data source: bibliography markdown, BibTeX, and archival citation rows. Statistic: counts and share-of-
 total across 6 citation kinds. Exclusion rule: citation rows are metadata pointers; no source text is bundled. Claim
 class: descriptive bibliography-provenance summary.
@@ -1502,7 +1502,7 @@ tion.json (36 non-blank). Figure correctness is bound
 by the archival ground-truth tests, not by pixel variance.
 Figure filenames, titles, alt text, captions, data source,
 statistic, exclusion rule, claim class
-src/viz/figures.py registry + manuscript/04_resul
+src/viz/figures.py registry + docs/manuscript/04_resul
 ts.md + output/data/figures/index.json
 Figure raw data
 scripts/18_export_figure_data.py →
@@ -1547,7 +1547,7 @@ scripts/22_archival_refresh_diff.py →
 output/refresh/archival_refresh_diff.{json,md};
 never overwrites data/archival/
 Contextual historical claims
-manuscript/references.bib + checked
+docs/manuscript/references.bib + checked
 oﬀicial/scholarly URLs; not ingested as Show or
 Performance rows
 Functor monotonicity
@@ -1559,7 +1559,7 @@ Wide-pullback setlist recovery
 tests/test_cattheory.py on concrete compendium
 shows
 Citations
-manuscript/references.bib + bibliography
+docs/manuscript/references.bib + bibliography
 markdown (139 merged citations in the active build)
 41
 
@@ -1693,7 +1693,7 @@ project itself has promised to do and not do, written in code so a future contri
 
 10
 References
-The full bibliographic database is at manuscript/references.bib.
+The full bibliographic database is at docs/manuscript/references.bib.
 45
 
 ## Page 46

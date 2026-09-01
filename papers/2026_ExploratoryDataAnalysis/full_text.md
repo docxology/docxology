@@ -485,7 +485,7 @@ Pipeline ordering
 The typical analysis order is:
 1. scripts/eda_analysis.py — loads and cleans the dataset, then writes ../figures/*.png and output/data/summary_statistics.c
 sv, printing each output path for manifest collection.
-2. PDF rendering reads manuscript/*.md and config.yaml so figure paths and prose match the analysis that just completed.
+2. PDF rendering reads docs/manuscript/*.md and config.yaml so figure paths and prose match the analysis that just completed.
 6.5
 Relation to figures
 Figure (sec. 4)
@@ -587,12 +587,12 @@ a structurally verified notebook — remain visible rather than buried under ana
 
 9
 References
-Bibliography lives in manuscript/references.bib and is read by Pandoc during PDF render. The build pipeline invokes Pandoc with
+Bibliography lives in docs/manuscript/references.bib and is read by Pandoc during PDF render. The build pipeline invokes Pandoc with
 --natbib, so every [@key] citation in the manuscript is rewritten to the appropriate \cite{}/\citep{}/\citet{} LaTeX command and
 resolved against the bib file.
 To validate that references.bib is syntactically clean and contains the required fields per entry type:
 uv run python -m infrastructure.reference.citation.cli validate \
-projects/templates/template_eda_notebook/manuscript/references.bib --strict
+projects/templates/template_eda_notebook/docs/manuscript/references.bib --strict
 
 ## Page 15
 

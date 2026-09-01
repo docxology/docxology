@@ -163,7 +163,7 @@ Figure 1: File inventory: declared row counts per file, from file_inventory_rows
 larger of the two files; the subject table is its dimension companion. Both are declared as text/csv. The bar values
 are the row counts recorded in the descriptor, not re-derived here — the quality gate (sec. 6) is where declared and
 actual counts are reconciled.
-Running the script regenerates the figures under manuscript/figures/; the prose below and in later sections
+Running the script regenerates the figures under docs/manuscript/figures/; the prose below and in later sections
 describes what those artifacts show. Because the figures are produced from the descriptor and the fixture bytes, they
 cannot drift from the data without the tests and the quality gate noticing.
 3.2
@@ -310,7 +310,7 @@ Regenerating the artifacts
 From the monorepo root, regenerate the figures and the release-review artifacts:
 uv run python projects/templates/template_data_descriptor/scripts/generate_figures.py
 uv run python projects/templates/template_data_descriptor/scripts/generate_release_artifacts.py
-The first writes the five figures under manuscript/figures/; the second writes the descriptor readiness report,
+The first writes the five figures under docs/manuscript/figures/; the second writes the descriptor readiness report,
 field-constraint summary, and metadata-only release manifest under output/reports/. Both are thin orchestrators:
 all computation lives in the tested src/data_descriptor/ package.
 7.2
@@ -343,11 +343,11 @@ This exemplar draws on established data-publishing practice: the FAIR guiding pr
 son et al., 2016], datasheets-style structured dataset documentation [Gebru et al., 2021], the W3C PROV data model
 for provenance [Moreau and Missier, 2013], and the Frictionless Data Package container format for machine-readable
 descriptors [Frictionless Data, 2023].
-The bibliography lives in manuscript/references.bib and is read by Pandoc during PDF render; every [@key]
+The bibliography lives in docs/manuscript/references.bib and is read by Pandoc during PDF render; every [@key]
 citation in the manuscript is resolved against that file. To validate that references.bib is syntactically clean and
 complete:
 uv run python -m infrastructure.reference.citation.cli validate \
-projects/templates/template_data_descriptor/manuscript/references.bib --strict
+projects/templates/template_data_descriptor/docs/manuscript/references.bib --strict
 11
 
 ## Page 13

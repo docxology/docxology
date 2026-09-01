@@ -2476,7 +2476,7 @@ Limitation: Catalog
 membership is not a
 completeness claim about all
 known illusions. Manuscript:
-manuscript/09 appendix
+docs/manuscript/09 appendix
 catalog.md
 evidence:source count The checked-in evidence
 matrix contains 36 source
@@ -2490,7 +2490,7 @@ every URL is currently
 reachable or that a source
 supports more than its exact
 record. Manuscript:
-manuscript/06 scope and
+docs/manuscript/06 scope and
 related work.md
 scope:no participant data No participant data are
 bundled with the package.
@@ -2503,7 +2503,7 @@ Future observer studies require
 preregistration, consent,
 calibrated presentation, and
 separate data governance.
-Manuscript: manuscript/07
+Manuscript: docs/manuscript/07
 publication audit.md
 synthetic:diagnostic boundary The synthetic observer is a
 deterministic model-output
@@ -2519,7 +2519,7 @@ The hand-specified model has
 no training data and has not
 been calibrated against
 observers. Manuscript:
-manuscript/02
+docs/manuscript/02
 methodology.md
 41
 
@@ -2536,7 +2536,7 @@ visualization.json Limitation:
 The editorial asset is not part
 of the deterministic scientific
 stimulus registry. Manuscript:
-manuscript/07 publication
+docs/manuscript/07 publication
 audit.md
 evidence:visual.duck rabbit The entry instantiates a
 controllable ambiguous-figure
@@ -2558,7 +2558,7 @@ contract=none Limitation:
 The generator verifies
 geometry and luminance, not
 bistable reports. Manuscript:
-manuscript/06 scope and
+docs/manuscript/06 scope and
 related work.md
 evidence:visual.simultaneous
 contrast
@@ -2578,7 +2578,7 @@ missing contract=none
 Limitation: Display
 calibration and observer
 adaptation are not modeled.
-Manuscript: manuscript/06
+Manuscript: docs/manuscript/06
 scope and related work.md
 evidence:visual.apparent
 motion
@@ -2601,7 +2601,7 @@ contract=none Limitation:
 The artifact establishes
 temporal succession, not
 perceived motion. Manuscript:
-manuscript/06 scope and
+docs/manuscript/06 scope and
 related work.md
 42
 
@@ -2625,7 +2625,7 @@ missing contract=none
 Limitation: Playback
 transducers and listener pitch
 judgments are external.
-Manuscript: manuscript/06
+Manuscript: docs/manuscript/06
 scope and related work.md
 evidence:audio.missing
 fundamental
@@ -2645,7 +2645,7 @@ inference.; missing
 contract=none Limitation:
 Pitch completion is an
 observer-level inference.
-Manuscript: manuscript/06
+Manuscript: docs/manuscript/06
 scope and related work.md
 evidence:audiovisual.sound
 induced flash
@@ -2665,7 +2665,7 @@ count.; missing contract=none
 Limitation: The stimulus does
 not establish a reported flash
 count. Manuscript:
-manuscript/06 scope and
+docs/manuscript/06 scope and
 related work.md
 evidence:audiovisual.ventriloquist The audio and visual channels
 carry a declared spatial
@@ -2686,7 +2686,7 @@ contract=none Limitation:
 Perceived localization depends
 on room, headphones, display,
 and observer. Manuscript:
-manuscript/06 scope and
+docs/manuscript/06 scope and
 related work.md
 43
 
@@ -2710,7 +2710,7 @@ missing contract=none
 Limitation: The chosen
 normalized geometry is one
 engineering variant.
-Manuscript: manuscript/06
+Manuscript: docs/manuscript/06
 scope and related work.md
 evidence:visual.poggendorff The occluder and diagonal
 continuation are generated
@@ -2730,7 +2730,7 @@ missing contract=none
 Limitation: Alignment
 judgments and orientation
 filters are not measured.
-Manuscript: manuscript/06
+Manuscript: docs/manuscript/06
 scope and related work.md
 evidence:visual.ponzo Target bars are physically
 equal and rails converge
@@ -2749,7 +2749,7 @@ contract=none Limitation:
 Perspective interpretation is
 observer- and
 display-dependent.
-Manuscript: manuscript/06
+Manuscript: docs/manuscript/06
 scope and related work.md
 evidence:visual.kanizsa
 triangle
@@ -2770,7 +2770,7 @@ measured.; missing
 contract=none Limitation:
 Illusory contour completion is
 not directly measured.
-Manuscript: manuscript/06
+Manuscript: docs/manuscript/06
 scope and related work.md
 44
 
@@ -2794,7 +2794,7 @@ context.; missing
 contract=none Limitation:
 Perceived size depends on
 viewing scale and context.
-Manuscript: manuscript/06
+Manuscript: docs/manuscript/06
 scope and related work.md
 evidence:visual.zollner The entry instantiates a
 controlled crossing-line
@@ -2818,7 +2818,7 @@ Limitation: The raster verifies
 line geometry, not orientation
 judgments or a pixel-identical
 historical reproduction.
-Manuscript: manuscript/06
+Manuscript: docs/manuscript/06
 scope and related work.md
 evidence:audio.tritone paradox The canonical pair has an
 explicit half-octave frequency
@@ -2839,7 +2839,7 @@ contract=none Limitation:
 Ascending/descending reports
 vary across listeners and
 contexts. Manuscript:
-manuscript/06 scope and
+docs/manuscript/06 scope and
 related work.md
 45
 
@@ -2863,7 +2863,7 @@ missing contract=none
 Limitation: The auditory
 percept depends on dichotic
 presentation and listener.
-Manuscript: manuscript/06
+Manuscript: docs/manuscript/06
 scope and related work.md
 evidence:audio.auditory
 continuity
@@ -2892,7 +2892,7 @@ interruption and masker, not a
 listener’s continuity judgment
 or sensory-versus-decisional
 effect. Manuscript:
-manuscript/06 scope and
+docs/manuscript/06 scope and
 related work.md
 evidence:audiovisual.temporal
 ventriloquism
@@ -2916,7 +2916,7 @@ contract=none Limitation:
 The generated single-event
 pair is a simplified engineering
 stimulus. Manuscript:
-manuscript/06 scope and
+docs/manuscript/06 scope and
 related work.md
 46
 
@@ -2947,7 +2947,7 @@ required. Limitation: No
 fixture, consent record, or
 perceptual validation contract
 is bundled. Manuscript:
-manuscript/06 scope and
+docs/manuscript/06 scope and
 related work.md
 publication:figure count The publication atlas contains
 15 registered scientific figures.
@@ -2956,7 +2956,7 @@ derived_from_code Lineage: publication caption
 specs() Limitation: The count
 is a package-state fact, not
 evidence of empirical validity.
-Manuscript: manuscript/07
+Manuscript: docs/manuscript/07
 publication audit.md
 publication:table count The publication appendix
 contains the generated table
@@ -2969,7 +2969,7 @@ Generated tables summarize
 package state and do not
 replace source or observer
 evidence. Manuscript:
-manuscript/07 publication
+docs/manuscript/07 publication
 audit.md
 The source-tiered evidence table tbl. 7, caption audit tbl. 6, formalism registry tbl. 8, and claim ledger tbl. 9 are generated sidecars.
 They provide a publication appendix without duplicating mutable counts or silently converting literature statements into package

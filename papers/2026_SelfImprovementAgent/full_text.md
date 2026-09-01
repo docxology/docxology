@@ -177,7 +177,7 @@ LLM calls remain opt-in; default CI never executes generated agent code or claim
 6
 References
 See references.bib for BibTeX entries cited in this manuscript, including [AI, 2026] and the template repository
-DOI from manuscript/config.yaml.
+DOI from docs/manuscript/config.yaml.
 7
 
 ## Page 9

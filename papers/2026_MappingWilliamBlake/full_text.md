@@ -1182,7 +1182,7 @@ with coverage-aware missing-evidence candidates when a manifest is available.
 The manuscript cover, cover provenance, and figures are regenerated from the JSON artifacts:
 uv run python scripts/generate_manuscript_figures.py
 The cover asset is written to output/cover/cover_blakean.png, and its prompt/provenance record is written to analysis_output/data/
-cover_image_provenance.json. The cover is configured through paper.cover.image in manuscript/config.yaml, so the sibling template
+cover_image_provenance.json. The cover is configured through paper.cover.image in docs/manuscript/config.yaml, so the sibling template
 renderer uses the same release-safe cover path as the PDF title page. A future release package could expose the same corpus, manuscript,
 preservation, and provenance relationships through a research-object packaging format rather than only through the project tree [Owens,
 2018, Soiland-Reyes et al., 2022].
@@ -3239,7 +3239,7 @@ local evidence cache as part of the open-source license [Candela et al., 2023, W
 
 15
 References and Cited Authorities
-The bibliography lives in manuscript/references.bib and is read by Pandoc during the PDF render. The build invokes Pandoc with
+The bibliography lives in docs/manuscript/references.bib and is read by Pandoc during the PDF render. The build invokes Pandoc with
 --natbib, so every bracketed citation marker in the manuscript body is rewritten to the appropriate \cite/\citep/\citet command and
 resolved against the bib file. The reference list is emitted automatically below this heading at render time.
 45
@@ -3402,7 +3402,7 @@ m+Blake, 2026. Visual and catalogue corroboration source.
 The Morgan Library & Museum. William blake’s pickering manuscript. https://www.themorgan.org/collection/william-blake/pickering-
 manuscript, 2021. Source-owned digital facsimile and context page consulted as a manual-review lead for the Pickering Manuscript.
 The Morgan Library & Museum. MA 2879, pp. 16–17, auguries of innocence. https://www.themorgan.org/collection/william-blake/picker
-ing-manuscript/13, 2026. Page-level Pickering Manuscript record consulted as a manual-review negative-control lead.
+ing-docs/manuscript/13, 2026. Page-level Pickering Manuscript record consulted as a manual-review negative-control lead.
 The William Blake Archive. William blake archive: Conditions of use. https://terpconnect.umd.edu/~mgk/blake/conditions.html, 2026a.
 Static conditions text consulted for Archive text and image reuse limitations.
 The William Blake Archive. Copyright and permissions. https://blakearchive.org/staticpage/permissionsNEW, 2026b. Archive permissions

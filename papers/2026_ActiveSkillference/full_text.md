@@ -391,7 +391,7 @@ delivery, critique, and scope claims.
 5.1 Source-role matrix for citation coverage and source health
 The manuscript uses a second, non-numeric integrity gate for citations. The static data/scholarship_sources.yaml file maps each cited
 BibTeX key to a scholarship lane, source kind, locator, and support role. src/scholarship/coverage.py parses the authored manuscript
-sections, validates those keys against manuscript/references.bib , and rejects any cited key that lacks a matrix entry or authoritative
+sections, validates those keys against docs/manuscript/references.bib , and rejects any cited key that lacks a matrix entry or authoritative
 locator. It also rejects stale source-matrix rows and uncited BibTeX entries, because those orphans would otherwise let the coverage
 artifact imply support that no manuscript sentence actually uses. The resulting JSON and figure are generated artifacts, not hand-
 maintained summaries. The source-health check adds a second layer over this matrix: DOI and URL locators must be syntactically
@@ -877,7 +877,7 @@ sample/commit switch.
 • Information examples : a fair coin, a fair six-sided die, a biased 0.9/0.1 coin, a one-in-a-hundred event, and a correlated joint
 distribution with entries [0.4, 0.1, 0.1, 0.4].
 13.2 Curriculum export and runtime ownership boundary
-The curriculum spans the eight strata declared in manuscript/config.yaml. The maximal-enumeration floor is 630 skills (achieved: 630),
+The curriculum spans the eight strata declared in docs/manuscript/config.yaml. The maximal-enumeration floor is 630 skills (achieved: 630),
 and the current catalog adds practice-and-translation material across all strata. That material specifies opportunities to rehearse model
 checking, debugging, policy design, implementation review, and application evaluation; it does not establish that learners will acquire those
 abilities. Skills default to 100 points, one occurrence to completion, and Quiz self-reporting so completion is assessment-gated. SkillTree
@@ -1730,12 +1730,12 @@ archived precisely because they do not.
 ## Page 56
 
 22 References: Bibliography and Source-Role Audit
-Bibliography lives in manuscript/references.bib and is read by Pandoc during PDF render. The build pipeline invokes Pandoc with
+Bibliography lives in docs/manuscript/references.bib and is read by Pandoc during PDF render. The build pipeline invokes Pandoc with
 --natbib, so every [@key] citation in the manuscript is rewritten to the appropriate \cite{}/\citep{}/\citet{} LaTeX command and
 resolved against the bib file.
 To validate that references.bib is syntactically clean and contains the required fields per entry type:
 uv run python -m infrastructure.reference.citation.cli validate \
-manuscript/references.bib --strict
+docs/manuscript/references.bib --strict
 ACM DIS 2023 Accessibility Chairs. Creating accessible figures and tables. https://dis.acm.org/2023/creating-accessible-figures-and-
 tables/, 2023. Accessed 2026-06-14.
 Active Inference Institute. Cognitive knowledge base. https://github.com/ActiveInferenceInstitute/cognitive, 2026a. Accessed 2026-06-19.

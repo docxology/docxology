@@ -249,7 +249,7 @@ Appendix
 
 1
 Sheaf Track Coverage
-This page summarizes which sheaf fragment tracks are bound for each IMRAD row in manuscript/sheaf/manifest.yaml. The
+This page summarizes which sheaf fragment tracks are bound for each IMRAD row in docs/manuscript/sheaf/manifest.yaml. The
 matrix is regenerated at compose time.
 Totals: 95 present / 95 bound / 0 missing (gray).
 Color
@@ -1973,7 +1973,7 @@ The preceding full-coverage
 supplement (sec. 13) checks that the maximal appendix row can bind all registered fragment families; this section instead explains the
 operational contract that makes those fragments reproducible: where data are generated, how variables are hydrated, which validators
 run, and how failed gates block the PDF.
-Each manifest row in manuscript/sheaf/manifest.yaml binds fragment tracks from manuscript/sheaf/tracks.yaml. A track
+Each manifest row in docs/manuscript/sheaf/manifest.yaml binds fragment tracks from docs/manuscript/sheaf/tracks.yaml. A track
 supplies a renderer, compose order, label, and optional flag; the composer flattens the binding set into one Markdown section for PDF
 and web output. The machinery is generic, but the manuscript it assembles here argues a specific thesis: that on-policy distillation
 admits a finite-model active-inference reading when the variational objects are declared, so the composer must keep the analytical toy
@@ -2053,7 +2053,7 @@ Introduction ≺Methods ≺Results ≺Discussion ≺Appendix,
 (5)
 with, in each block, a group node above its section nodes (written 𝐺⊒𝑠).
 𝑃is therefore a finite poset (equivalently a finite
-Alexandrov space). Let 𝒯be the registered fragment-track set from manuscript/sheaf/tracks.yaml; each track 𝑡∈𝒯carries a
+Alexandrov space). Let 𝒯be the registered fragment-track set from docs/manuscript/sheaf/tracks.yaml; each track 𝑡∈𝒯carries a
 renderer 𝑅(𝑡), label 𝐿(𝑡), optional flag 𝑂(𝑡), and a strict compose-order index 𝜋(𝑡).
 The presheaf ℱis a contravariant functor on 𝑃— ℱ∶𝑃→Set with restriction maps along ⊒— assigning to each composing
 section 𝑠its bound fragment set ℱ(𝑠) = { (𝑡, 𝐹𝑠(𝑡)) ∶𝑡bound in 𝑠}, where 𝐹𝑠∶𝒯⇀Path is the section’s partial binding map.
@@ -2224,7 +2224,7 @@ This is a publication-systems claim, not a domain result. A stale hydrated value
 missing resolved section becomes a validation failure before PDF or web outputs are accepted.
 14.5
 Sheaf fragment track registry
-Compose order and renderer bindings from manuscript/sheaf/tracks.yaml.
+Compose order and renderer bindings from docs/manuscript/sheaf/tracks.yaml.
 Order
 Track id
 Label
@@ -3164,7 +3164,7 @@ ok
 layers_renderer_boun
 d
 sheaf.layers_report
-manuscript/19_supple
+docs/manuscript/19_supple
 ment_reproducibility
 .md
 ok
@@ -3189,7 +3189,7 @@ ok
 manuscript_sections_
 composed
 sheaf.compose
-manuscript/*.md
+docs/manuscript/*.md
 ok
 16 composed markdown
 files
@@ -3201,17 +3201,17 @@ Artifact
 Producer
 Gates
 sheaf_registry
-manuscript/sheaf/tracks.ya
+docs/manuscript/sheaf/tracks.ya
 ml
 manual
 validate_outputs
 sheaf_manifest
-manuscript/sheaf/manifest.
+docs/manuscript/sheaf/manifest.
 yaml
 manual
 validate_outputs
 sheaf_coverage_config
-manuscript/sheaf/coverage.
+docs/manuscript/sheaf/coverage.
 yaml
 manual
 validate_outputs
@@ -4094,9 +4094,9 @@ pt
 missing_typed_claim
 formalism
 live
-manuscript/sheaf/
+docs/manuscript/sheaf/
 manifest.yaml
-manuscript/sheaf/
+docs/manuscript/sheaf/
 manifest.yaml
 validate_manuscri
 pt
@@ -4202,9 +4202,9 @@ pt
 proof_extraction_missing_s
 prose
 live
-manuscript/sheaf/
+docs/manuscript/sheaf/
 manifest.yaml
-manuscript/sheaf/
+docs/manuscript/sheaf/
 manifest.yaml
 validate_manuscri
 pt
@@ -4579,7 +4579,7 @@ validation, release bundle hash, license audit, semantic certificate, and blocke
 
 16
 References
-See manuscript/references.bib for bibliography entries cited in the composed sections.
+See docs/manuscript/references.bib for bibliography entries cited in the composed sections.
 65
 
 ## Page 68

@@ -966,7 +966,7 @@ common stressor against which the three axes are kept distinct.
 5.22 Experimental design: studies, estimands, determinism, and power
 The generative model of sec. 5.10, the learning operators of sec. 5.15, and the corruption process of sec. 5.19 are exercised by 9 studies, including the
 contaminated-sentinel robustness sweep (Study 4). The shared configuration (seed budget, colony size, contamination rates, divergences, trial counts,
-and the statistics settings) is read from experiment: in manuscript/config.yaml; the remaining per-study parameters are tested code defaults in sr
+and the statistics settings) is read from experiment: in docs/manuscript/config.yaml; the remaining per-study parameters are tested code defaults in sr
 c/fedference/experiments/. No value is hard-coded in the manuscript, and each token below resolves to the same configuration the code executed.
 5.23 Determinism through fixed seeds and generated variables
 All stochastic steps draw from explicitly seeded generators ( np.random.default_rng); the global np.random state is never touched. The single-run
@@ -3286,14 +3286,14 @@ has an unconditional truth-recovery guarantee against coordinated collusion; thi
 theorem. Deterministic seeded colonies (no resampling), so no error band is applicable. The optional third panel reports the fraction of declared grid
 rows with finite capture within the configured adversary budget; it is not a probability or a global breakdown bound.
 15 References
-The bibliography lives in manuscript/references.bib and is read by Pandoc during the PDF render. The build pipeline invokes Pandoc with
+The bibliography lives in docs/manuscript/references.bib and is read by Pandoc during the PDF render. The build pipeline invokes Pandoc with
 --natbib, so every Pandoc citation marker in the manuscript is rewritten to the appropriate LaTeX citation command and resolved against the bib
 file. Titles in the bib file are reproduced verbatim, including any British spellings, because they are quotations of the original sources.
 To validate that references.bib is syntactically clean and contains the required fields per entry type, this validator is only runnable when the project
 is checked out under the template monorepo’s projects/working/ (it is not on the standalone repo’s own dependency graph), invoked from the
 monorepo root with a monorepo-relative path:
 uv run python -m infrastructure.reference.citation.cli validate \
-projects/working/active_fedference/manuscript/references.bib --strict
+projects/working/active_fedference/docs/manuscript/references.bib --strict
 Ali E. Abbas. A kullback–leibler view of linear and log-linear pools. Decision Analysis , 6(1):25–37, 2009. doi: 10.1287/deca.1080.0133. URL
 https://doi.org/10.1287/deca.1080.0133.
 Mahault Albarracin, Daphne Demekas, Maxwell J. D. Ramstead, and Conor Heins. Epistemic communities under active inference. Entropy, 24(4):

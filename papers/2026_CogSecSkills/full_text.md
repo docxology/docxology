@@ -720,9 +720,9 @@ Generated Supplement and Figure Pipeline
 src/cogsecskills/artifacts/manuscript_assets/__init__.py is the producer for the generated manuscript layer. Its
 outputs are intentionally committed as manuscript source inputs because they support review and PDF rendering, but they
 remain generated. The command writes:
-• manuscript/S10_skill_catalogue.md, a grouped catalogue of all skills with functionality, “Use when” text, verbs,
+• docs/manuscript/S10_skill_catalogue.md, a grouped catalogue of all skills with functionality, “Use when” text, verbs,
 inputs, outputs, AGEINT topic, reference count, and source path;
-• manuscript/S11_skill_metadata_matrix.md, a compact matrix view of group counts, verb usage, AGEINT cross-
+• docs/manuscript/S11_skill_metadata_matrix.md, a compact matrix view of group counts, verb usage, AGEINT cross-
 walks, harness coverage, and figure inventory;
 • output/data/skill_catalogue.json and output/data/skill_catalogue.csv, machine-readable exports of the
 same rows;
@@ -1095,7 +1095,7 @@ benign informational lines such as pdfdraftmode not found.
 6.3
 Traceability and Render Contract
 • Do not cite results that cannot be regenerated or directly traced.
-• Keep generated outputs under output/ and manuscript source under manuscript/.
+• Keep generated outputs under output/ and manuscript source under docs/manuscript/.
 • Keep private data, credentials, and unpublished sensitive details out of the manuscript.
 • Treat scenarios/defensive_readiness.yaml as a curated local fixture set for route, quality-contract, and expected-
 answer readiness, not as empirical validation.
@@ -1107,7 +1107,7 @@ surfaces, not as field-effectiveness evidence.
 
 ## Page 22
 
-• Treat manuscript/S10_skill_catalogue.md, manuscript/S11_skill_metadata_matrix.md, output/data/skill
+• Treat docs/manuscript/S10_skill_catalogue.md, docs/manuscript/S11_skill_metadata_matrix.md, output/data/skill
 _catalogue.*, and the eight ../figures/*.png manuscript figures as generated from source-owned inputs.
 • Record exact verification command results before making release or publication claims.
 • Keep repository URL, version, license, source revision, environment versions, lockfile presence, figure inventory, and
@@ -1356,9 +1356,9 @@ Package metadata, dependency declaration, and
 test/coverage configuration.
 uv.lock
 Dependency lockfile for local reproducibility.
-manuscript/references.bib
+docs/manuscript/references.bib
 Verified manuscript-level bibliography.
-manuscript/S02_release_manifest.md
+docs/manuscript/S02_release_manifest.md
 Release provenance and gate-result surface.
 output/data/
 Generated machine-readable catalogue exports.
@@ -1374,7 +1374,7 @@ Expansion Checklist
 • Confirm which commands reproduce the current outputs.
 • Confirm whether a value belongs in prose, a generated supplement, or a data export.
 • Confirm which external references need verified BibTeX entries.
-• Confirm all manuscript citation keys resolve in manuscript/references.bib.
+• Confirm all manuscript citation keys resolve in docs/manuscript/references.bib.
 • Confirm reproducibility instructions use ${PROJECT_ROOT} and ${TEMPLATE_ROOT} rather than author-local absolute
 paths.
 • Confirm whether any private material must be summarized rather than quoted or copied.
@@ -8132,7 +8132,7 @@ evidence quality, citation authority, or operational validity.
 
 14
 References
-The bibliography is rendered from manuscript/references.bib. Citation keys in the manuscript are checked against that
+The bibliography is rendered from docs/manuscript/references.bib. Citation keys in the manuscript are checked against that
 file by the local test suite.
 69
 

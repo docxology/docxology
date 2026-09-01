@@ -807,7 +807,7 @@ or make blocked claims current.
 Commitment 2: make the stack executable end-to-end
 The implementation follows the research-template separation of concerns that the surrounding repository enforces: src/beestack/
 contains importable module logic with no filesystem or network side effects; scripts/ owns I/O, downloads, and orchestration; tests/
-uses real computations with no mocks; manuscript/ holds tokenized prose hydrated from real run-time values; and output/ contains
+uses real computations with no mocks; docs/manuscript/ holds tokenized prose hydrated from real run-time values; and output/ contains
 regeneratable artifacts. Every non-cache directory is signposted, with 71 directories covered by local README and AGENTS files so
 that downstream agents — human or LLM — can pick up the project without rediscovering its structure.
 Executability is enforced at three levels.
@@ -2480,7 +2480,7 @@ The coverage gate is configured at 92% in
 pyproject.toml ([tool.coverage.report] fail_under = 92).
 16.2
 Publication metadata
-manuscript/config.yaml leaves publication.doi empty while BeeStack remains a scaffold checkout. When a Zenodo or journal
+docs/manuscript/config.yaml leaves publication.doi empty while BeeStack remains a scaffold checkout. When a Zenodo or journal
 DOI is minted, populate that field and regenerate hydration so the abstract and reproducibility sections pick up the stable identifier
 automatically.
 16.3

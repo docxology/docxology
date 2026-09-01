@@ -2596,7 +2596,7 @@ Computational Workflow
 import csv
 import numpy as np
 from textbook import models
-rows = list(csv.DictReader(open("manuscript/assets/data/sample_dataset.csv")))
+rows = list(csv.DictReader(open("docs/manuscript/assets/data/sample_dataset.csv")))
 groups: dict[str, list[float]] = {}
 for r in rows:
 groups.setdefault(r["condition"], []).append(float(r["measurement"]))
@@ -2942,9 +2942,9 @@ Step 1 — Decide the Structure in config.yaml
 Open config.yaml. To add or rename a chapter, edit the parts: tree (each chapter has a stem and a
 title); to add a lab or question bank, add an entry under appendices.labs / appendices.questions for
 the matching part. The stem drives every downstream name:
-• chapter file →manuscript/<part>/<NN>_<stem>.md, label {#sec:<part>_<stem>}
-• lab file →manuscript/labs/<part>/lab_<stem>.md, label {#sec:lab_<part>_<stem>}
-• question bank →manuscript/questions/<part>/q_<stem>.md, label {#sec:q_<part>_<stem>}
+• chapter file →docs/manuscript/<part>/<NN>_<stem>.md, label {#sec:<part>_<stem>}
+• lab file →docs/manuscript/labs/<part>/lab_<stem>.md, label {#sec:lab_<part>_<stem>}
+• question bank →docs/manuscript/questions/<part>/q_<stem>.md, label {#sec:q_<part>_<stem>}
 Keep stems short, lowercase, and snake_case. Do not invent a numbering scheme; the table of contents and
 labels are derived in src/textbook/toc.py.
 43.3

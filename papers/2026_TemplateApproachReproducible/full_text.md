@@ -701,7 +701,7 @@ raphy) that any project may consume.
 Project Layer (projects/): Self-contained research workspaces. Each project directory contains:
 Directory
 Purpose
-manuscript/
+docs/manuscript/
 Markdown chapters and config.yaml
 scripts/
 Thin orchestrator scripts (Stage 02)
@@ -724,7 +724,7 @@ Projects are designed to be completely self-contained. Adding a new project requ
 infrastructure layer, no modifications to pyproject.toml, and no updates to the pipeline orchestrator. A
 project is automatically discovered if and only if it satisfies two conditions:
 1. It exists as a subdirectory of projects/.
-2. It contains the file manuscript/config.yaml.
+2. It contains the file docs/manuscript/config.yaml.
 This paradigm enables horizontal scaling: N researchers can maintain N independent projects within a
 single repository, sharing infrastructure without coupling. Each project declares its own testing tolerances,
 manuscript metadata, LLM review preferences, and rendering configuration in its config.yaml. The system
@@ -1573,7 +1573,7 @@ transparency).
 5.2
 Scalability: From 1 to N Projects
 The Standalone Project Paradigm enables horizontal scaling: adding a new project requires creating a direc-
-tory with manuscript/config.yaml and nothing else. No infrastructure code changes, no pyproject.toml
+tory with docs/manuscript/config.yaml and nothing else. No infrastructure code changes, no pyproject.toml
 modifications, no CI configuration updates. The run.sh orchestrator automatically discovers new projects
 and presents them in its interactive menu.
 We have validated scaling with 9 canonical exemplars under projects/templates/—always present for
@@ -2342,7 +2342,7 @@ Blocking
 PDF
 Rendering
 03_render_pdf.py
-manuscript/,
+docs/manuscript/,
 placeholders
 .pdf/.tex bundles
 Blocking
@@ -2490,7 +2490,7 @@ template/
 ￿
 ￿
 ￿￿￿template_template/
-# Present manuscript (`manuscript/` here)
+# Present manuscript (`docs/manuscript/` here)
 ￿
 ￿￿￿active/
 # Hot-seat rendered set (symlinked, private)

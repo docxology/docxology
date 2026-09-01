@@ -301,7 +301,7 @@ White Line: A Typed
 Ledger for the Edge of
 the Claim
 0.7.0 11 11047a641a8e... 52-64
-Versions are read from each work’s own manuscript/config.yaml, which the set contract treats as authoritative. Registry sizes
+Versions are read from each work’s own docs/manuscript/config.yaml, which the set contract treats as authoritative. Registry sizes
 and digests are read from the installed packages by this volume’s own reader; a work that could not be read reports no size and
 no digest rather than a placeholder. A volume section number counts the source sections in reading order, front matter and part
 headings excluded.

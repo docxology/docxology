@@ -478,7 +478,7 @@ Figure 4: Side-by-side comparison of the California CPRA and Federal FOIA reques
 state and local agency records and uses a 10-calendar-day determination window; Federal FOIA governs federal executive-
 branch agency records, excludes Congress and the federal courts, and uses a 20-working-day determination window with
 appeal, liaison, OGIS, and judicial review paths. Provenance: src/figure_bundle.py, src/figure_captions.py, and
-FOIA/CPRA sources in manuscript/references.bib. Caveat: the Federal FOIA lane is comparative context and does
+FOIA/CPRA sources in docs/manuscript/references.bib. Caveat: the Federal FOIA lane is comparative context and does
 not create California agency duties.
 Figure 5:
 Every registered statute citation classified by recodification provenance:
@@ -1323,7 +1323,7 @@ claims are therefore limited to the project’s checked statutory, portal, schem
 
 12
 References
-Bibliography lives in manuscript/references.bib and is resolved by Pandoc at PDF render time via --natbib /
+Bibliography lives in docs/manuscript/references.bib and is resolved by Pandoc at PDF render time via --natbib /
 --citeproc. Every [@bibtex-key] citation in the preceding prose binds to a @misc / @article entry in the bib file, and
 the closure test at tests/test_bibliography.py fails CI if the prose cites an undeclared key or if the bib declares a key
 that the prose never cites.

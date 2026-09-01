@@ -989,9 +989,9 @@ and oceanographic literature, environmental-history and human-geography scholars
 data (Drucker, 1937b; Gould, 1966; Tuan, 1977; Massey, 2005; Cronon, 1991; Cook, 1976b; U.S. Census Bureau, 2026b).
 The workflow follows Peng’s reproducibility framework (Peng, 2011): analytical choices, twenty-four registry-backed
 figures (data-backed, schematic, and manuscript-metric), and the complete reproduction narrative in sec. 6 are versioned
-alongside supporting inputs and plotters in data/, src/, and scripts/, with citations resolved against manuscript/refe
+alongside supporting inputs and plotters in data/, src/, and scripts/, with citations resolved against docs/manuscript/refe
 rences.bib. Manuscript text is licensed CC-BY-4.0 and repository source code under the Apache License 2.0 as declared
-in manuscript/config.yaml; the archived scholarly artifact is cited by DOI 10.5281/zenodo.20286171.
+in docs/manuscript/config.yaml; the archived scholarly artifact is cited by DOI 10.5281/zenodo.20286171.
 The history
 remains epistemic work in progress: automated checks verify manuscript structure, citation resolution, and reproducible
 figures, not independent reverification of every historical interpretation. Collaborators are invited to fork, correct, and
@@ -6179,7 +6179,7 @@ et al., 2016). The result is not only a more auditable PDF; it is a project that
 What the Repository Provides
 1. Source manuscript: numbered Markdown files for the abstract, introduction, four Part openers, forty-six topical
 chapters, timeline, methodology, reproducibility, references, and the Figure Catalog and Glossary appendices in
-manuscript/
+docs/manuscript/
 2. Raw data: CSV and JSON files in data/, kept in plain-text formats so they can be diffed, archived, and reused
 under FAIR data-management expectations (Wilkinson et al., 2016)
 3. Analysis code: Python package in src/, including the public figure API (figures.py), report and pipeline helpers,
@@ -6187,7 +6187,7 @@ variable injection, project checks, and the _figures/ submodules (manuscript met
 history, cartography, conservation, geophysics, political geography, climate, ecology, harbor history, conceptual
 systems mapping, community systems, and recent events)
 4. Pipeline orchestrators: thin scripts in scripts/ that call the public API and do no business logic
-5. Configuration: Typed settings in manuscript/config.yaml
+5. Configuration: Typed settings in docs/manuscript/config.yaml
 6. Dependencies: pyproject.toml specifies exact package versions
 7. Documentation: README.md, AGENTS.md, and docs/ describe the public quick start, agent-facing contracts, archi-
 tecture, current manuscript organization, and output expectations
@@ -6198,7 +6198,7 @@ merely naming the image (Tufte, 2001; Wong, 2011). SVG outputs are byte-identica
 hash salt pinned in matplotlib.rcParams); PNG outputs are visually identical but may differ in metadata bytes
 across matplotlib/libpng versions, which is why the test suite hashes SVG rather than PNG. The complete catalog
 with per-figure data sources and one-line reproduction commands is in sec. 6.
-9. Bibliography: manuscript/references.bib is the canonical bibliography file. The validation report records the
+9. Bibliography: docs/manuscript/references.bib is the canonical bibliography file. The validation report records the
 current cited-key count and unused-entry count for each build, while the file itself preserves peer-reviewed primary
 literature, federal-agency reports, archival material, court cases, and tribal primary documents.
 5.13.3
@@ -6277,7 +6277,7 @@ Those tests certify structural reproducibility, source linkage, citation resolut
 generation. They do not prove every historical interpretation or current-status claim true. High-risk claims therefore
 need a source-refresh pass through the living claim ledger in docs/claim_ledger.md before publication or after material
 public-record changes. The same ledger now records the reserve-source audit: uncited bibliography entries should either
-be intentionally reserved in manuscript/config.yaml or cited in the manuscript, so the project does not accumulate a
+be intentionally reserved in docs/manuscript/config.yaml or cited in the manuscript, so the project does not accumulate a
 quiet shadow bibliography.
 5.13.6
 Licenses for Text, Code, Data, and Artifacts
@@ -6984,7 +6984,7 @@ Crescent City, California
 142
 8
 References
-The complete bibliography for this manuscript is maintained in manuscript/references.bib and is read by Pandoc
+The complete bibliography for this manuscript is maintained in docs/manuscript/references.bib and is read by Pandoc
 during PDF render.
 The build pipeline invokes Pandoc with --natbib, so every Pandoc-style citation token in the
 manuscript is rewritten to the appropriate LaTeX citation command and resolved against the BibTeX database. The
@@ -7011,7 +7011,7 @@ Wallace 1983, Anderson 2005, Pritzker 2000, Cook 1976)
 tions)
 To validate that references.bib is syntactically clean and that every prose citation resolves:
 uv run python -m infrastructure.reference.citation.cli validate \
-projects/crescent_city/manuscript/references.bib --strict
+projects/crescent_city/docs/manuscript/references.bib --strict
 
 ## Page 143
 

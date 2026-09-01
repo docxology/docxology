@@ -742,7 +742,7 @@ and no binding between code, data, figures, and the final PDF.
 The system employs a Two-Layer Architecture: a globally shared infrastructure layer (12 subpackages, approximately
 150 Python modules) provides generic services—logging, rendering, validation, steganographic watermarking, report-
 ing, and LLM integration—while self-contained project workspaces (including the present meta-analysis) carry their
-own manuscript/, scripts/, src/, tests/, data/, and output/ directories, discovered purely by filesystem con-
+own docs/manuscript/, scripts/, src/, tests/, data/, and output/ directories, discovered purely by filesystem con-
 vention. An eight-stage build pipeline enforces an ordered sequence from environment setup through test execution
 (at least 90% coverage for project code, at least 60% for shared infrastructure), analysis execution, PDF rendering
 (Pandoc to LaTeX to XeLaTeX with biber), output validation, LLM review, and executive reporting. A Zero-Mock

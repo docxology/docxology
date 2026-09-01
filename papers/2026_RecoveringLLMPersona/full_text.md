@@ -2477,7 +2477,7 @@ figure, and validation_matrix.data.json.
 
 8
 References
-The bibliography is generated from manuscript/references.bib. The central package citation is the public NTQR 0.8
+The bibliography is generated from docs/manuscript/references.bib. The central package citation is the public NTQR 0.8
 documentation [Corrada-Emmanuel et al., 2026], which documents the ntqr.r2 evaluators and trio data sketches used
 here. This repository is cited as the reproducible experiment artifact [Friedman, 2026], and Ollama is cited for the local
 model runtime [Ollama, 2026a].

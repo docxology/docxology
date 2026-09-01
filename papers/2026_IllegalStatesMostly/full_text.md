@@ -1218,12 +1218,12 @@ and neither is gated by a cross-seed-base regression test the way the heterogene
 
 7
 References
-Bibliography lives in manuscript/references.bib and is read by Pandoc during PDF render. The build pipeline invokes Pandoc with
+Bibliography lives in docs/manuscript/references.bib and is read by Pandoc during PDF render. The build pipeline invokes Pandoc with
 --natbib, so every [@key] citation in the manuscript is rewritten to the appropriate \cite{}/\citep{}/\citet{} LaTeX command and
 resolved against the bib file.
 To validate that references.bib is syntactically clean and contains the required fields per entry type:
 uv run python -m infrastructure.reference.citation.cli validate \
-projects/templates/template_formal/manuscript/references.bib --strict
+projects/templates/template_formal/docs/manuscript/references.bib --strict
 
 ## Page 23
 

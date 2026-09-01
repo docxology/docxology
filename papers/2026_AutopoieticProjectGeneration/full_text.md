@@ -238,7 +238,7 @@ and audited against a shared contract. The moment a fork edits away from its tem
 the fork, and the fork can no longer prove it still satisfies the contract it was born from.
 template_autopoiesis takes a different approach: instead of a directory that is copied once, it defines a grammar — a finite set of
 orthogonal slots, each with a finite set of options — and a pure function that maps a single integer seed plus that grammar to one specific,
-fully-formed child project. The grammar lives in manuscript/config.yaml under the autopoiesis: key and is parsed and validated by
+fully-formed child project. The grammar lives in docs/manuscript/config.yaml under the autopoiesis: key and is parsed and validated by
 parse_grammar() in src/grammar.py. Two grammars that differ in even one option, one slot name, or one dependency string hash to
 different grammar_hash values, because Grammar.grammar_hash is the truncated SHA-256 of a sort_keys=True JSON canonicalization of
 the whole grammar (Grammar.canonical()). Nothing about child generation is copied by hand; everything is computed from the grammar
@@ -250,7 +250,7 @@ The name is borrowed from Maturana and Varela’s account of living systems as n
 components that constitute the network producing them [Maturana and Varela, 1980]. That is a strong claim about biology, and this
 project makes no claim to implement autopoiesis in the biological sense — there is no self-repair, no membrane, no metabolism here. What
 is borrowed, deliberately and narrowly, is the structural pattern: a bounded specification (the grammar) produces instances (children) that
-are themselves complete, self-contained, independently testable projects — each with its own src/, tests/, scripts/, and manuscript/ —
+are themselves complete, self-contained, independently testable projects — each with its own src/, tests/, scripts/, and docs/manuscript/ —
 capable of being verified without reference back to the parent that produced them. The parent grammar does not merely describe children;
 it is causally and exclusively responsible for which children can exist, in the same sense that a formal grammar is responsible for which
 strings belong to the language it generates. The name is a metaphor for that closure, not a claim of implementing living-systems theory.
@@ -328,7 +328,7 @@ the code was supposed to look like.
 0.2.6
 Scope
 This template extends template_madlib one level up the generation hierarchy: template_madlib generates a manuscript from a token
-grammar; template_autopoiesis generates a whole project — src/, tests/, scripts/, and manuscript/ together — from a combinatoric
+grammar; template_autopoiesis generates a whole project — src/, tests/, scripts/, and docs/manuscript/ together — from a combinatoric
 grammar, and that generated project is itself capable of running its own test gate. The demonstration primitive library intentionally spans
 a small, heterogeneous set of domains chosen for orthogonality of failure mode, not for domain significance — the honest scope notes in
 SPEC.md are explicit that no domain-specific research claim is being made here. This template covers the 5 primitive domains: - optimization
@@ -354,7 +354,7 @@ D --> E[Seal + QR]
 Figure 3: Mermaid diagram
 0.3.2
 Stage A — Grammar loading and validation
-load_grammar(project_root) reads manuscript/config.yaml, extracts the autopoiesis: block, and hands it to parse_grammar().
+load_grammar(project_root) reads docs/manuscript/config.yaml, extracts the autopoiesis: block, and hands it to parse_grammar().
 Parsing enforces four invariants before a Grammar object can exist at all:
 1. The seed must be an integer. parse_grammar reads block.get("seed", 42) and raises GrammarError if the value is not an int
 — a stray string or float seed in config.yaml fails loudly at load time rather than silently coercing.
@@ -368,7 +368,7 @@ self.options.count(o) > 1} and raises if that set is non-empty, so two identical
 optimization]) are rejected rather than silently collapsing the product space.
 parse_grammar additionally validates every entry in deps: against VENDORABLE_DEPS — the fixed tuple (logging, glossary_gen, fig
 ure_manager, manuscript_injection, steganography) — raising GrammarError on any unknown dependency name. This project’s own
-grammar (see manuscript/config.yaml) currently declares deps: [], so the deps-vendoring path exercised in materialize.py is present
+grammar (see docs/manuscript/config.yaml) currently declares deps: [], so the deps-vendoring path exercised in materialize.py is present
 in the code and covered by test_deps_vendoring.py, but not active for the manuscript’s own default render.
 A successfully constructed Grammar is a frozen dataclass carrying seed, the tuple of GrammarSlot objects, the tuple of deps, and an
 optional source_path (excluded from equality/hash comparison so two grammars loaded from different files but with identical content still
@@ -559,7 +559,7 @@ Figure 5: Total, effective, and reserved-only product size for the grammar at se
 
 ## Page 10
 
-Every row in the table above is a GrammarSlot parsed from manuscript/config.yaml by parse_grammar() (src/grammar.py). Each slot
+Every row in the table above is a GrammarSlot parsed from docs/manuscript/config.yaml by parse_grammar() (src/grammar.py). Each slot
 contributes a multiplicative factor to Grammar.product_size, which is the raw cross-product of all option counts — not an estimate, but
 the literal n *= len(s.options) accumulation over every slot. The Grammar.grammar_hash property serialises the seed, every slot name,
 and every option list into a canonical JSON string (canonical()) and takes the first sixteen hex characters of its SHA-256 digest — f84a8
@@ -793,7 +793,7 @@ ent_project runs build_manifest against an empty tmp_path and asserts missing_ca
 the checker itself: a project with no source files at all must fail every claim, or the checker has no teeth.
 0.5.6
 Prose scanning for unsupported claims
-verify_honesty(project_root, manuscript_dir=None) first calls build_manifest, then — if a manuscript/ directory exists — reads every
+verify_honesty(project_root, manuscript_dir=None) first calls build_manifest, then — if a docs/manuscript/ directory exists — reads every
 *.md file in it and scans for a fixed, case-insensitive regex over six absolute-certainty words and one hard percentage figure, defined verbatim
 in _UNSUPPORTED_CLAIM_PATTERN in src/honesty.py (deliberately not quoted here: a plain-text regex has no exemption for markdown code
 spans, and an earlier draft of this very paragraph reproduced the list inside backticks — which tripped the gate it was describing, during
@@ -864,7 +864,7 @@ fixed values (“Tests: 371 ⋅Coverage: 99.94%”) in prose instead of through 
 specific function call in src/ is, for the purposes of this project, not a number this manuscript is permitted to assert.
 0.6.1
 Determinism guarantee
-Given the same manuscript/config.yaml grammar definition (grammar hash f84a8f9dbcb18e37), the same seed (42), and the same temp
+Given the same docs/manuscript/config.yaml grammar definition (grammar hash f84a8f9dbcb18e37), the same seed (42), and the same temp
 late_autopoiesis source tree, scripts/autopoiesis.py expand produces byte-identical selections on every invocation, and materialize
 produces a byte-identical child project tree. The determinism chain has three concrete steps, each implemented as a pure function with no
 random or wall-clock input:
@@ -1010,7 +1010,7 @@ currently exist.
 0.7.4
 Grammar does not self-modify
 The autopoiesis metaphor is figurative. Maturana and Varela’s operational sense of autopoiesis is a system that continuously regenerates
-its own constitutive components through its own operation [Maturana and Varela, 1980]. Here the grammar (manuscript/config.yaml)
+its own constitutive components through its own operation [Maturana and Varela, 1980]. Here the grammar (docs/manuscript/config.yaml)
 is fixed input; parse_grammar and expand are pure functions of that input plus a seed; no code path feeds a materialized child back into
 the grammar or rewrites src/grammar.py. Children are causally downstream of the grammar — the reverse direction does not occur in the
 current codebase. The name is a provocation about what genuine self-production would require, not a claim this exemplar achieves it.
@@ -1062,7 +1062,7 @@ pixel grid encoding f84a8f9dbcb18e37 with the hash printed as a text label benea
 test called render_cover with an explicit grammar_hash=, leaving the QR-drawing branch (src/cover_art.py, the if grammar_hash is n
 ot None: block) exercised in production but untested; that gap is now closed by tests/test_cover_art.py::test_render_cover_with_g
 rammar_hash_*, added this session (see “Coverage is uneven across modules” below).
-Separately, for most of this project’s life manuscript/references.bib held a single self-referential friedman2026autopoiesis entry
+Separately, for most of this project’s life docs/manuscript/references.bib held a single self-referential friedman2026autopoiesis entry
 noting the DOI was forthcoming, while 99_references.md carried a hand-written, uncited list alongside it — a citation without a resolvable
 BibTeX entry is exactly the kind of unverifiable claim this project’s honesty contract exists to catch. That gap is now closed twice over:
 references.bib carries five real, live-verified external citations, and following this project’s own Zenodo deposit the self-citation’s DOI (1
@@ -1073,7 +1073,7 @@ references.md annotates each entry against the section that relies on it rather 
 
 0.8
 References
-The formal bibliography (author/year entries resolved from manuscript/references.bib via the [@citekey] citations used throughout this
+The formal bibliography (author/year entries resolved from docs/manuscript/references.bib via the [@citekey] citations used throughout this
 manuscript) is generated by pandoc-crossref/natbib and appears immediately below this note. Every entry was verified this session via
 a live fetch (Crossref API, DBLP, or the publisher’s own DOI resolver) — not taken from training-data memory — before being added to
 references.bib; the fetch evidence is recorded in ISA.md ## Verification.

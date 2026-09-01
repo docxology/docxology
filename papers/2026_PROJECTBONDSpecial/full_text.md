@@ -1511,7 +1511,7 @@ F); and a Crab Key-style island threat assessor that scores each detected facili
 local meteorology onto 5 threat bands (LOW, MODERATE, HIGH, SEVERE, CRITICAL), then recommends a containment action.
 On the declared scenario the island posture is HIGH. The mission is exposed through the BOND-API mission protocol (codename
 CRAB KEY, film Dr. No, version 0.3.0) and is fully deterministic: fixed scenario, no randomness, no wall-clock dependence in any
-persisted artifact. The whole scenario — detector, source mixture, meteorology, facilities — is declared once in manuscript/conf
+persisted artifact. The whole scenario — detector, source mixture, meteorology, facilities — is declared once in docs/manuscript/conf
 ig.yaml and read from there by the metrics, the figures, and every token in this report, so the manuscript cannot drift from the
 software, nor the software from its stated configuration.
 4.3 Introduction — CRAB KEY: mission framing, the operational problem, and how to read this
@@ -1536,7 +1536,7 @@ Four supporting modules complete the chain: spectrum_processing (least-squares e
 peak areas, and the Currie minimum-detectable-activity limit), decay_chain (the Bateman solution over 5 real parent–daughter
 chains), shielding (exponential attenuation over 4 mass-attenuation tables), and dose_assessment (external point-source, inhala-
 tion, combined, and integrated dose). Two more modules hold the spine together: scenario loads and validates the declared mission
-from manuscript/config.yaml, and canonical computes every reported metric over it exactly once — for both the mission provider’s
+from docs/manuscript/config.yaml, and canonical computes every reported metric over it exactly once — for both the mission provider’s
 results and this report’s tokens, so the two cannot disagree.
 All of it is pure arithmetic over real physics: no simulation randomness, no external calls, no wall-clock dependence.
 4.3.3 1.3 Reader’s guide
@@ -1596,7 +1596,7 @@ weighting its isotope mix against per-isotope inhalation dose coeﬀicients and 
 𝑓𝑘 DCF𝑘 ̇𝑉 .
 The dose rate is mapped onto a 5-band threat scale (LOW, MODERATE, HIGH, SEVERE, CRITICAL); a facility whose containment
 is breached is escalated one band. The band edges themselves are declared scenario, not Python literals: they live under the
-mission.threat block of manuscript/config.yaml as 1.00 × 10−11, 1.00 × 10−9, 1.00 × 10−7, 1.00 × 10−5 Sv/s and are threaded
+mission.threat block of docs/manuscript/config.yaml as 1.00 × 10−11, 1.00 × 10−9, 1.00 × 10−7, 1.00 × 10−5 Sv/s and are threaded
 into every facility’s rating by canonical_metrics, so a config edit genuinely moves the posture ( tests/test_canonical.py binds
 27
 
@@ -1642,7 +1642,7 @@ law with the specific gamma-ray constant ($￿= $ 0.354 mSv ⋅m2⋅h-1⋅GBq-1 
 mSv/h at 100 m.
 4.5 Results — CRAB KEY: measured outcomes, headline numbers, and what they establish
 Every number in this section arrives as a placeholder resolved from src/dr_no/manuscript_variables.py against the scenario
-declared in manuscript/config.yaml. Nothing here is typed by hand; tests/test_manuscript_variables.py fails the build on
+declared in docs/manuscript/config.yaml. Nothing here is typed by hand; tests/test_manuscript_variables.py fails the build on
 any bare numeral in this section’s prose.
 4.5.1 3.1 Isotope identification
 The deterministic CRAB KEY scenario synthesizes the gamma spectrum that the declared source mixture — Co-60 ( 8.00 × 105
@@ -1709,7 +1709,7 @@ not fit; radioactive-decay chains correct activities for mission elapsing time; 
 into an engineerable containment answer. Plume dispersion uses the standard Gaussian model across the 6 Pasquill–Gifford stability
 classes, and island assessment turns the resulting concentrations into an actionable threat band — HIGH on the declared scenario —
 and a per-facility containment posture.
-Two structural properties matter more than any single model. First, the scenario is declared once, in manuscript/config.yaml, and
+Two structural properties matter more than any single model. First, the scenario is declared once, in docs/manuscript/config.yaml, and
 read from there by the metrics, the figures, and the manuscript tokens alike; the loader raises on a missing or mistyped key rather
 than substituting a default, and a test edits the YAML and asserts the numbers move. A configuration this report describes but does
 not actually drive would be worse than no configuration at all. Second, every reported number flows through one canonical_metri
@@ -1720,7 +1720,7 @@ coverage on src/, zero mocks, deterministic execution, and no leftover template 
 number can be traced to the code that produced it, and whose code can be traced to the configuration that parameterised it.
 4.7 Experimental Setup — CRAB KEY: canonical scenarios, parameters, and configuration
 4.7.1 5.1 Scenario configuration
-All results derive from the deterministic CRAB KEY scenario declared in the mission: block of manuscript/config.yaml. That
+All results derive from the deterministic CRAB KEY scenario declared in the mission: block of docs/manuscript/config.yaml. That
 block is the sole source of truth: src/dr_no/scenario.py loads and validates it, and src/dr_no/canonical.py (metrics), src/dr_
 no/figures/plots.py (figures), and src/dr_no/manuscript_variables.py (the tokens below) all read it. No scenario constant is
 re-declared in Python, and the loader raises rather than defaulting on a missing or mistyped key, so config and computation cannot
@@ -1764,7 +1764,7 @@ numbers belong in docs/_generated/COUNTS.md, which is regenerated from an actual
 3. uv run ruff check src/ scripts/ tests/ and uv run ruff format --check — clean.
 4. uv run mypy src/ scripts/ — clean.
 5. No leftover template-scaffold lineage strings outside documentation that explains the exemplar lineage.
-6. Version identity: pyproject.toml, dr_no.__version__, and manuscript/config.yaml must declare the same version (0.3.0);
+6. Version identity: pyproject.toml, dr_no.__version__, and docs/manuscript/config.yaml must declare the same version (0.3.0);
 tests/test_version_identity.py enforces it.
 7. Token cross-reference: every placeholder appearing in a numbered manuscript section must be produced by generate_variab
 les, every generated token must be consumed by some section, and the results narrative may carry no bare metric numeral. t
@@ -1780,13 +1780,13 @@ None of these consult wall-clock state or draw a random number, so every persist
 sections, and the mission report — is byte-identical across repeated runs. There is no exception: no timestamp is written anywhere
 under output/.
 Provenance is carried instead by 61a76ae43badff1f, the truncated SHA-256 of the declared scenario. It answers what was run rather
-than when, so it is stable across reruns and changes the moment manuscript/config.yaml does. mission.py reports the same value
+than when, so it is stable across reruns and changes the moment docs/manuscript/config.yaml does. mission.py reports the same value
 as its provenance input_hash; both come from scenario_fingerprint in src/dr_no/canonical.py, so they cannot drift apart. An
 earlier revision did stamp a datetime.now value into this section and into output/data/manuscript_variables.json, which made
 the byte-identical claim above false on every rerun; tests/test_regeneration_determinism.py now regenerates the tree twice and
 compares bytes, so that regression cannot return silently.
 4.8.3 6.3 Artifacts
-• Scenario of record: manuscript/config.yaml (mission: block), loaded and validated by src/dr_no/scenario.py.
+• Scenario of record: docs/manuscript/config.yaml (mission: block), loaded and validated by src/dr_no/scenario.py.
 • Domain core: src/dr_no/isotope_profiles.py, src/dr_no/spectrum_processing.py , src/dr_no/decay_chain.py, src/
 dr_no/shielding.py , src/dr_no/dose_assessment.py , src/dr_no/plume_model.py , src/dr_no/island_assessment.py ,
 and the shared metric source src/dr_no/canonical.py.
@@ -1837,7 +1837,7 @@ past a kilometre is an extrapolation of a fit that was published for shorter ran
 table points and is not valid across photoelectric absorption edges (notably lead’s about 88 keV K-edge) — low-energy shielding
 estimates are correspondingly coarse. And the threat banding is a declared decision rule, not a regulatory standard: the band edges
 and evacuation threshold are chosen to be legible rather than derived from any published intervention level. They are now declared
-scenario ( mission.threat in manuscript/config.yaml), loaded and validated by src/dr_no/scenario.py and threaded through
+scenario ( mission.threat in docs/manuscript/config.yaml), loaded and validated by src/dr_no/scenario.py and threaded through
 canonical_metrics, so they carry the same provenance as every other scenario number and a config edit moves the posture — but
 being config-declared does not make them a protective-action guideline.
 The results are therefore directionally correct and fully traceable, and should be read as a screening pass rather than as a substitute
@@ -2102,7 +2102,7 @@ useful — and more defensible — than one that merely looks deterministic.
 5.7 Experimental Setup — LEKTOR: canonical scenarios, parameters, and configuration
 5.7.1 Where the parameters live
 Every executed constant is declared in src/from_russia_with_love/scenario.py , which is the single source of truth shared by
-the mission adapter, the manuscript token generator, and both figure generators. manuscript/config.yaml restates the headline
+the mission adapter, the manuscript token generator, and both figure generators. docs/manuscript/config.yaml restates the headline
 mission parameters for a human reader and supplies the paper metadata (title, authors, keywords); manuscript_variables.valid
 ate_mission_config compares the two on every manuscript build and raises if they disagree, so the restatement cannot drift away
 from the code silently.
@@ -2142,14 +2142,14 @@ Manuscript date ( config.yaml paper.date ) 2026-08-04
 Every engine is deterministic. The entrapment engine uses a closed-form logistic model and seeded lure generation; SIGINT derives
 a seeded keystream and seeded noise (seed 0 makes capture exactly noise-free); TDOA timing noise is seeded; the courier scheduler,
 the knapsack allocator and the handoff protocol use no randomness at all (SHA-256 only). The mission seed is scenario.SEED = 11,
-declared in src/from_russia_with_love/scenario.py and mirrored into manuscript/config.yaml under a build-time equality
+declared in src/from_russia_with_love/scenario.py and mirrored into docs/manuscript/config.yaml under a build-time equality
 check.
 40
 
 ## Page 42
 
 Nothing in the package reads the wall clock. There is no clock-derived token: the date row in §5 is 2026-08-04, taken verbatim from
-the committed paper.date field of manuscript/config.yaml . Every other value is a function of scenario.py, the engines, and
+the committed paper.date field of docs/manuscript/config.yaml . Every other value is a function of scenario.py, the engines, and
 the interpreter/library versions. Two regenerations on the same tree therefore produce byte-identical artifacts — the token map and
 both figures alike.
 That claim is bound by a test rather than asserted: test_regeneration_is_byte_identical in tests/test_regeneration_dete
@@ -2478,7 +2478,7 @@ mission lifecycle — the adapter’s public shape is stable across phases; only
 The deterministic reference parameters are declared in the module REFERENCE_* constants in src/goldfinger/. Those constants
 are what the domain core, the mission adapter, the figures, and the token map all read, and every value below is injected from them
 as a generated variable, so a change to the intel changes this section automatically.
-manuscript/config.yaml carries a human-readable grand_slam: mirror of the same numbers. Nothing loads that block at runtime
+docs/manuscript/config.yaml carries a human-readable grand_slam: mirror of the same numbers. Nothing loads that block at runtime
 — it is documentation, not input — so its only guarantee is that tests/test_reference_intel.py compares it key-for-key and
 value-for-value against the module constants and fails if either side is edited alone.
 Market corner (market_attack.REFERENCE_MODEL ) — reference price $1850.00/oz clearing a normalized floatable-supply index
@@ -2504,7 +2504,7 @@ within a 5.0 s threat window.
 6.7.2 Determinism policy
 The mission declares a fixed seed of 2026 and performs no random draws — the seed is recorded in provenance so a replay is auditable,
 not because any sampling occurs. Persisted artifacts carry no wall-clock dependence at all ( wall_time_s = 0.0 in provenance; no
-clock in the token map). The manuscript’s date is the committed paper.date from manuscript/config.yaml — MANUSCRIPT_DATE
+clock in the token map). The manuscript’s date is the committed paper.date from docs/manuscript/config.yaml — MANUSCRIPT_DATE
 = 2026-08-04 — so GOLDFINGER_VERSION_HASH, which hashes the full token map, identifies the content rather than the run and is
 stable across regenerations. Figure output is byte-deterministic for fixed inputs: tests/test_figures.py renders every exported
 renderer twice — into two separate directories and again over the same path — and compares the bytes, parametrised over figures
@@ -2534,7 +2534,7 @@ The package is fully deterministic. Re-running the mission or regenerating the m
 uv run python scripts/z_generate_manuscript_variables.py
 which rewrites output/data/manuscript_variables.json (73 tokens) and the 6 concept figures under ../figures/. Every persisted
 byte is a function of the committed tree alone, so running that command twice — on different days, on different machines — produces
-byte-identical files. Nothing in the token map reads a clock: the manuscript’s date is the committed paper.date in manuscript/
+byte-identical files. Nothing in the token map reads a clock: the manuscript’s date is the committed paper.date in docs/manuscript/
 config.yaml (MANUSCRIPT_DATE = 2026-08-04), and GOLDFINGER_VERSION_HASH hashes the whole map, which makes it a content
 identifier rather than a run identifier.
 That property is enforced, not asserted: tests/test_regeneration_determinism.py copies the tree to a scratch directory, runs
@@ -2698,7 +2698,7 @@ The package is a BOND-suite film: a thin src/thunderball/mission.py adapter expo
 bond_api MissionProvider protocol, so the orchestrator can discover and drive the mission deterministically. The domain modules
 themselves are standalone and never import infrastructure.
 Two further modules support the manuscript itself rather than the mission: src/thunderball/manuscript_variables.py computes
-every substituted token in this document from manuscript/config.yaml plus the same domain calls the mission makes, and src/t
+every substituted token in this document from docs/manuscript/config.yaml plus the same domain calls the mission makes, and src/t
 hunderball/figures.py renders the five concept figures. No numeric result in this prose is hand-authored.
 This manuscript documents the mathematical models (the methodology section), the computed results (the results section), the
 experimental parameters (the setup section), the reproducibility guarantees (the reproducibility section), and the scope boundary
@@ -2871,7 +2871,7 @@ inversion cannot recur unnoticed. Those limits come from the Navy’s own EL/VV 
 that this package’s ZH-L16A limits land inside bands bracketing them, which is an agreement check between two independent models,
 not a table lookup.
 7.7 Experimental Setup — THUNDERBALL: canonical scenarios, parameters, and configuration
-All parameters are declared in manuscript/config.yaml and loaded by src/thunderball/manuscript_variables.py; no numeric
+All parameters are declared in docs/manuscript/config.yaml and loaded by src/thunderball/manuscript_variables.py; no numeric
 result is hand-authored in prose.
 7.7.1 Dive parameters
 Parameter Value
@@ -2925,7 +2925,7 @@ tifacts
 DISCO VOLANTE is deterministic by construction:
 • Fixed seed — no random draws anywhere; results are pure functions of the config parameters.
 • No wall-clock dependence — GENERATION_TIMESTAMP is the only timestamp, and it is read from the committed paper.date
-in manuscript/config.yaml, never from the clock. Regenerating the artifacts on any later day rewrites the same bytes with
+in docs/manuscript/config.yaml, never from the clock. Regenerating the artifacts on any later day rewrites the same bytes with
 no flag; --now exists only to pin a different value deliberately. The one environment-derived token is PYTHON_VERSION, so the
 byte-identical claim holds for a fixed interpreter.
 • Computed tokens — every {RESULT_*} value in this manuscript is recomputed from src/ domain math, never hand-authored.
@@ -2997,7 +2997,7 @@ packages, and to the suite orchestrator, which drives any MissionProvider throug
 7.10 Discussion and Uncertainty — THUNDERBALL: interpretation, caveats, and what the num-
 bers do not claim
 Every number in the results section is the deterministic output of a closed-form or bounded-iteration model over explicit parameters
-in manuscript/config.yaml. That determinism gives the package its reproducibility, but it also means the precision of a token —
+in docs/manuscript/config.yaml. That determinism gives the package its reproducibility, but it also means the precision of a token —
 two or three decimal places — is not accuracy. Each of the six models rests on idealising assumptions, and where those assumptions
 break is where the uncertainty actually lives. This section states that honestly for each capability.
 7.10.1 The central finding is robust, not borderline
@@ -3346,7 +3346,7 @@ Figure 24: Pattern of life: weekly activity histogram (top) and mean daily profi
 The scenario is fixed in src/you_only_live_twice/scenario.py , which exports every input as a named constant and assembles
 them into one JSON descriptor. That descriptor is simultaneously (a) the object the provenance input_hash is taken over and (b) the
 source of the parameter tokens in the tables below, so a parameter reported here cannot drift from the parameter actually simulated.
-Paper identity is declared in manuscript/config.yaml; all derived values are computed by src/you_only_live_twice/manuscrip
+Paper identity is declared in docs/manuscript/config.yaml; all derived values are computed by src/you_only_live_twice/manuscrip
 t_variables.py.
 8.7.1 Mission identity
 Parameter Value
@@ -3987,7 +3987,7 @@ Orbital dataset. 3 ground targets surveyed from a geostationary post at 36000 km
 Beam scenario. A 40 m mirror at 500 nm over a 36,998 km slant range, with atmospheric attenuation giving a transmittance of
 45%; the strike requirement against which the minimum mirror is solved is 1 MW/m2.
 Software environment. Python 3.14.6, resolved at generation time — the one token whose value is read from the machine rather
-than from a committed input. The manuscript edition is stamped 2026-08-04, taken from paper.date in manuscript/config.yaml;
+than from a committed input. The manuscript edition is stamped 2026-08-04, taken from paper.date in docs/manuscript/config.yaml;
 no value in this manuscript comes from the wall clock, so re-running hydration on the same interpreter rewrites the same bytes.
 10.8 Reproducibility — DIAMOND NET: verification gates, deterministic regeneration, and ar-
 tifacts
@@ -4294,7 +4294,7 @@ path and fails if a figure is missing or renamed:
 tifacts
 Every number in this manuscript is computed, never typed: the thin orchestrator scripts/z_generate_manuscript_variables.py
 calls generate_variables in src/live_and_let_die/manuscript_variables.py, which computes each placeholder from the pure
-domain core. The manuscript cross-reference test scans every numbered section ( manuscript/[0-9]*.md) and fails if any placeholder
+domain core. The manuscript cross-reference test scans every numbered section ( docs/manuscript/[0-9]*.md) and fails if any placeholder
 used in prose is not produced by generate_variables, so the prose cannot cite a number the code does not compute. (The converse
 is not gated: a produced token that no section uses is permitted and is not a test failure.)
 Result provenance is recorded per-mission: the canonical input hash is 46044979efeafa09, the fixed seed is 8, and execution sets a
@@ -4303,7 +4303,7 @@ outcome — the digest identifies the inputs, it does not by itself reconstitute
 11.8.1 Byte-identical regeneration
 Running scripts/z_generate_manuscript_variables.py twice on an unchanged tree produces byte-identical artifacts. Scope of
 that claim: the hydrated table output/data/manuscript_variables.json and every resolved section under output/manuscript
-/. Every value in those files comes from a committed source — the pure domain core, or manuscript/config.yaml — and nothing
+/. Every value in those files comes from a committed source — the pure domain core, or docs/manuscript/config.yaml — and nothing
 under src/ reads the system clock, so there is no run-varying byte to differ. The publication date above is paper.date in manusc
 ript/config.yaml, bumped by hand when the manuscript is republished; it is deliberately not a generation timestamp, because a
 generation timestamp would make every regeneration differ.
@@ -4597,7 +4597,7 @@ re-rendered and byte-compared in the test suite. The package is a local-only wor
 means re-running the pipeline in place — see Reproducibility.
 12.7 Experimental Setup — SOLEX: canonical scenarios, parameters, and configuration
 This section fixes every input the results depend on. Nothing in the SOLEX package is sampled, fitted, or drawn from an external
-service: each model is evaluated on a canonical fixture defined in code, and the fixture is restated in manuscript/config.yaml where
+service: each model is evaluated on a canonical fixture defined in code, and the fixture is restated in docs/manuscript/config.yaml where
 it is verified against the code at token generation time (see Reproducibility).
 12.7.1 Software environment
 Item Value
@@ -4695,7 +4695,7 @@ byte-identical between runs; tests/test_figures.py asserts this by rendering eac
 comparing bytes.
 12.8.3 Metric injection
 No metric in this manuscript is typed by hand. Each is a double-brace placeholder resolved by src/the_man_with_the_golden_gun
-/manuscript_variables.py::generate_variables from manuscript/config.yaml plus a live call into the domain models. Four
+/manuscript_variables.py::generate_variables from docs/manuscript/config.yaml plus a live call into the domain models. Four
 gates hold that discipline in place:
 • tests/test_manuscript_variables.py::test_all_manuscript_tokens_are_generated scans every file the hydrator writes
 — the numbered sections and the Pandoc preamble, both drawn from manuscript_variables.manuscript_sources — and
@@ -5299,11 +5299,11 @@ and tested anywhere.
 
 ## Page 126
 
-• The manuscript’s numeric claims are injected from manuscript/config.yaml + moonraker/manuscript_variables.py, never
+• The manuscript’s numeric claims are injected from docs/manuscript/config.yaml + moonraker/manuscript_variables.py, never
 hardcoded in prose. Where a computed verdict contradicts the film — as the centrifuge certification does — the manuscript
 reports the computation.
 14.4 Methodology — MOONRAKER: the analytical models and algorithms that drive the mission
-All models are deterministic and closed-form; parameter values are read once from manuscript/config.yaml → mission: and
+All models are deterministic and closed-form; parameter values are read once from docs/manuscript/config.yaml → mission: and
 shared by moonraker/mission_results.py and moonraker/manuscript_variables.py.
 14.4.1 Shuttle hijack timeline ( shuttle_ops.py)
 The hijack is a set of TimelineActivity records — a name, a duration in minutes, and prerequisite phases. compute_timeline runs
@@ -5457,7 +5457,7 @@ hand-written — which is the reproducibility contract the BOND suite demands.
 Figure 53: Weekly centrifuge training load against the exposure caps.
 14.7 Experimental Setup — MOONRAKER: canonical scenarios, parameters, and configuration
 14.7.1 Mission parameters
-All parameters live in manuscript/config.yaml → mission: and are read by moonraker/mission_results.py:
+All parameters live in docs/manuscript/config.yaml → mission: and are read by moonraker/mission_results.py:
 Parameter Value Consumed by
 Hijack point of no return 60.0 min shuttle_ops
 Tightened crash deadline 50.0 min schedule_crashing
@@ -5511,11 +5511,11 @@ figure would make otherwise-identical runs differ.
 • moonraker/mission_results.py is the single canonical computation. Its factories ( compute_schedule , compute_orbit, c
 ompute_centrifuge , compute_transfer , compute_rendezvous , compute_training , compute_crash) are what the mission
 execute adapter, the manuscript token map and moonraker/figures.py all call, each on the same parameter dict read from
-manuscript/config.yaml . No figure declares a mission constant of its own — tests/test_figures.py parses the module
+docs/manuscript/config.yaml . No figure declares a mission constant of its own — tests/test_figures.py parses the module
 and fails if one reappears — so an outcome value, its injected token and the plotted figure cannot disagree.
 • Figures are rendered through the headless Agg backend with fixed inputs.
 • moonraker/manuscript_variables.py reads no wall clock. The manuscript’s date token, MANUSCRIPT_DATE, is the committed
-paper.date field of manuscript/config.yaml , not the moment the generator ran, and generate_variables takes no now
+paper.date field of docs/manuscript/config.yaml , not the moment the generator ran, and generate_variables takes no now
 argument that could reintroduce one.
 Running scripts/run_mission.py followed by scripts/z_generate_manuscript_variables.py restores a byte-identical output/
 tree — every file, on any later re-run, on the same interpreter and platform. The scope of that claim is exact: two token values,
@@ -5852,7 +5852,7 @@ environment seam. As before, each binds a claim to a derived value that a test m
 or a broken custody link now moves the reported numbers rather than silently restating an intention.
 15.7 Experimental Setup — ATAC: canonical scenarios, parameters, and configuration
 15.7.1 Configuration
-The mission is configured declaratively in manuscript/config.yaml and read by src/for_your_eyes_only/manuscript_variab
+The mission is configured declaratively in docs/manuscript/config.yaml and read by src/for_your_eyes_only/manuscript_variab
 les.py. The canonical escrow uses threshold 2 of 3 shares; the key is further erasure-coded as 4 data symbols into 6 fragments.
 The underwater profile targets a wreck depth of 42 m with a 600-s bottom exposure under a calm horizontal current, decompressed
 through 14 tissue-sized stops; routing spans the Ionian island graph to the wreck site (route corfu -> paxi -> lefkada -> ithaca ->
@@ -5910,10 +5910,10 @@ verdict through a tampered ledger, and the dive verdict through the deterministi
 Routing note: the suite pins the cost blend and, on a purpose-built two-option graph, the risk term’s ability to select a different path.
 On the shipped Ionian graph the route is risk-invariant across all 28 node pairs; that fact is itself pinned rather than left implied.
 Three suites exist specifically to stop documentation drifting from code:
-• tests/test_config_consistency.py pins every value declared in manuscript/config.yaml’s mission: block to the constant
+• tests/test_config_consistency.py pins every value declared in docs/manuscript/config.yaml’s mission: block to the constant
 the mission actually runs with, so the config cannot decay into decoration.
 • tests/test_manuscript_variables.py fails if any token used in prose is absent from generate_variables, or if a rendered
-section still contains an unsubstituted placeholder. (The token syntax itself is documented in manuscript/SYNTAX.md, which
+section still contains an unsubstituted placeholder. (The token syntax itself is documented in docs/manuscript/SYNTAX.md, which
 is excluded from that scan precisely because it must show the raw form.)
 • tests/test_manuscript_crossrefs.py fails if a references.bib entry is never cited, if a citation names no entry, if a figure
 cross-reference uses the wrong syntax, or if a labelled figure has no generator. Those references sat outside every gate until this
@@ -6233,7 +6233,7 @@ The approach generalizes. The same spectral-unmixing, network-flow, matching, an
 “hidden in plain sight” investigative problem — and so does the discipline that pairing a detector with a second observable is only
 worth something once the second observable’s uncertainty has been measured rather than assumed.
 16.7 Experimental Setup — F ABERGE: canonical scenarios, parameters, and configuration
-All experiments are configured through manuscript/config.yaml and the module constants in src/octopussy/. The pipeline is
+All experiments are configured through docs/manuscript/config.yaml and the module constants in src/octopussy/. The pipeline is
 deterministic: every random draw comes from numpy.random.default_rng(seed) with seed 7.
 16.7.1 Scenario constants
 Pipeline Configuration
@@ -6455,7 +6455,7 @@ The ZORIN attack. ZORIN owns zorin_fab and zorin_assembly; by acquiring the inde
 fab and eliminating the rest of the market, his fabrication share rises to 0.680and market-wide HHI jumps to 1528.9. Formally,
 monopoly_share computes ZORIN’s surviving capacity share per stage once every non-acquired independent is removed, and post
 _elimination_hhi merges ZORIN’s holdings into one entity before recomputing concentration. This acquisition set is a scenario
-input ( manuscript/config.yaml), not the optimizer’s output; The results section reports how far apart the two are.
+input ( docs/manuscript/config.yaml), not the optimizer’s output; The results section reports how far apart the two are.
 155
 
 ## Page 157
@@ -6593,7 +6593,7 @@ scoring HHI 1528.9 and a fabrication share of 0.680. On the same objective and t
 _fab, nec_fab at 1741.4 and a share of 0.820. The scenario is therefore strictly suboptimal by 212.5 HHI points.
 We report this rather than reconcile it away. The package makes no claim that ZORIN’s acquisition is optimal ; every scenario-
 conditioned number in this manuscript (the HHI, share, cascade, and valley results above) is conditioned on the acquisition set fixed
-in manuscript/config.yaml , not on the optimizer’s answer. The optimizer’s role is to bound what the same market would have
+in docs/manuscript/config.yaml , not on the optimizer’s answer. The optimizer’s role is to bound what the same market would have
 permitted — and the bound says the scheme leaves 212.5 points of concentration on the table.
 17.5.5 V alley impact
 Figure 66: Silicon-valley fabricating capacity lost to the flood
@@ -6657,7 +6657,7 @@ including the structural model constants — arrives as a token from the same pu
 guardrails: at least 90% line and branch coverage on src/, zero mocks, deterministic seeds, ruff and mypy clean, no leftover exemplar-
 lineage strings, and a clean git tree.
 17.7 Experimental Setup — MAIN STRIKE: canonical scenarios, parameters, and configuration
-All experiments are deterministic and fully prescribed by manuscript/config.yaml, whose experiment: block is loaded by src/a_v
+All experiments are deterministic and fully prescribed by docs/manuscript/config.yaml, whose experiment: block is loaded by src/a_v
 iew_to_a_kill/manuscript_variables.py, converted to a metrics.MissionScenario, and threaded into the models that produce
 every computed token below. Editing a knob here changes the results, not only the echo of the file — tests/test_metrics_scenar
 io.py fails if any knob is inert.
@@ -6679,7 +6679,7 @@ elevation (m above datum), and a hydraulic leakage coeﬀicient in [0, 1].
 market (race_market.py) is derived from the resulting win probabilities under the configured overround — again, no separate
 dataset.
 17.7.2 Simulation parameters
-Scenario knobs come from manuscript/config.yaml ; structural model constants (discharge coeﬀicient, Euler timestep, detection
+Scenario knobs come from docs/manuscript/config.yaml ; structural model constants (discharge coeﬀicient, Euler timestep, detection
 threshold, par pace, base weight, purse, penalty, seed) are defined in the pure modules. Both are surfaced here as computed tokens,
 so neither can drift from the code.
 • Flood ingress rate: 10.0 m 3/s, horizon 900.0 s, Euler timestep 1.0 s, discharge coeﬀicient 0.60.
@@ -6692,7 +6692,7 @@ so neither can drift from the code.
 17.7.3 Software environment
 • Python 3.14.6
 • numpy, matplotlib, PyYAML; BOND-API protocol via path dependency
-• Manuscript source date 2026-08-04, declared in manuscript/config.yaml. The generator reads no wall clock, so this line —
+• Manuscript source date 2026-08-04, declared in docs/manuscript/config.yaml. The generator reads no wall clock, so this line —
 like every other line — is the same on every rerun.
 17.8 Reproducibility — MAIN STRIKE: verification gates, deterministic regeneration, and arti-
 facts
@@ -6705,7 +6705,7 @@ test_full_mission_flow_is_deterministic).
 The same holds for the persisted artifacts, and this is the load-bearing claim of this section: running scripts/z_generate_manuscr
 ipt_variables.py twice on one pinned interpreter writes byte-identical output/data/manuscript_variables.json, output/manu
 script/*.md, and ../figures/*.png. Nothing in the pipeline reads a wall clock. The manuscript’s provenance date (2026-08-04) is
-paper.date from manuscript/config.yaml — a committed value that moves only when an author moves it — and the only other
+paper.date from docs/manuscript/config.yaml — a committed value that moves only when an author moves it — and the only other
 environment-derived token is the interpreter version (3.14.6), which is fixed for a given toolchain. tests/test_regeneration_dete
 rminism.py enforces this the only way that can fail honestly: it runs the real generator twice, in two separate processes, with more
 than a second of real time between them, and diffs the bytes. It does not inject a fixed clock — an injected now= would prove only
@@ -6720,7 +6720,7 @@ uv run python scripts/mission_execute.py # execute
 uv run python scripts/mission_debrief.py # debrief
 uv run python scripts/z_generate_manuscript_variables.py # tokens + figures
 z_generate_manuscript_variables.py writes output/data/manuscript_variables.json, the substituted manuscript to output/
-manuscript/, and the five figures ( choke_points, acquisition_curve, flood_curve, valley_impact, race_cover) to ../figures/.
+docs/manuscript/, and the five figures ( choke_points, acquisition_curve, flood_curve, valley_impact, race_cover) to ../figures/.
 output/ is git-ignored (regenerable). The live test count and achieved coverage are tracked in docs/_generated/COUNTS.md.
 162
 
@@ -6728,7 +6728,7 @@ output/ is git-ignored (regenerable). The live test count and achieved coverage 
 
 17.8.3 Where the numbers come from
 No metric in this manuscript is written by hand. Every numeral in the prose, tables, and captions is a double-brace variable token
-resolved by src/a_view_to_a_kill/manuscript_variables.py , which reads manuscript/config.yaml , turns its experiment:
+resolved by src/a_view_to_a_kill/manuscript_variables.py , which reads docs/manuscript/config.yaml , turns its experiment:
 block into a metrics.MissionScenario , and calls metrics.run_mission_metrics(scenario) for the computed results. It calls
 metrics, not mission: importing mission would pull in bond_api and break the very fallback this section asserts below. Five gates
 keep this honest:
@@ -6741,7 +6741,7 @@ i.e. if changing it in the config leaves every computed token unchanged. A knob 
 is a reported-but-unused parameter, and this gate is what makes “prescribed by config.yaml” a checkable statement rather
 than a claim.
 • tests/test_metrics_scenario.py::test_default_scenario_matches_the_config_file pins metrics.DEFAULT_SCENARI
-O to manuscript/config.yaml, so the code default and the config cannot drift into two answers.
+O to docs/manuscript/config.yaml, so the code default and the config cannot drift into two answers.
 • tests/test_claim_ledger.py proves data/claim_ledger.yaml records only token names and no frozen numerals, so the
 ledger cannot become a second, ungated source of truth for a metric.
 17.8.4 Guardrails check
@@ -6773,7 +6773,7 @@ engineering prediction.
 17.9.1.1 Uncertainty The package reports deterministic point estimates, not distributions: no quantity carries a confidence
 interval. That is a design property, not an oversight — the models are exactly reproducible given the fixed datasets and scenario
 (byte-identical reruns are themselves a checked gate), but reproducibility is a statement about the computation, not about the real-
-world phenomena the film’s scheme gestures at. Every result is conditional on the scenario knobs in manuscript/config.yaml
+world phenomena the film’s scheme gestures at. Every result is conditional on the scenario knobs in docs/manuscript/config.yaml
 and on the documented model datasets (capacities, gallery geometry, elevations, race times); change a knob or a datum and the
 numbers move, which is precisely why each one is surfaced as a token rather than a frozen numeral, and why sensitivity is exercised
 by re-running the prescribed experiment under an alternative experiment: block rather than by reading a delta off this page. In
@@ -6873,7 +6873,7 @@ reported against measured baselines, and a separately implemented cover audit th
 ## Page 167
 
 planner’s own.
-• settings.py — the single authoritative source of mission parameters, echoed for readers in manuscript/config.yaml.
+• settings.py — the single authoritative source of mission parameters, echoed for readers in docs/manuscript/config.yaml.
 • compute_mission.py — the one deterministic mission solution that composes all of the above.
 18.3.2 Protocol integration
 The package integrates with the frozen BOND-API mission protocol: mission.py implements the MissionProvider lifecycle (brief,
@@ -7209,7 +7209,7 @@ beyond the seeded terrain, and every reported metric is recomputed from typed, d
 orchestrators; business logic lives in src/.
 The test count and achieved coverage are not quoted here — they are recorded live in docs/_generated/COUNTS.md, and the gate
 itself ( --cov-fail-under=90 on src/, line and branch) is what this manuscript claims.
-Manuscript dated 2026-08-04 — the committed date from manuscript/config.yaml, not a hydration timestamp, so re-running the
+Manuscript dated 2026-08-04 — the committed date from docs/manuscript/config.yaml, not a hydration timestamp, so re-running the
 generator changes no byte of this page.
 18.8 Reproducibility — LIVING DAYLIGHTS: verification gates, deterministic regeneration, and
 artifacts
@@ -7217,7 +7217,7 @@ artifacts
 Every number in this manuscript is a pure function of fixed, documented inputs ( src/the_living_daylights/settings.py). The
 mission solution uses a fixed seed (7); the only randomness in the whole stack is the seeded terrain generator in terrain_ops.gener
 ate_terrain, which is itself deterministic for a fixed seed. No wall-clock value enters any persisted artifact — there is no exception.
-The manuscript carries a date (2026-08-04), but it is the committed paper.date from manuscript/config.yaml, read like any other
+The manuscript carries a date (2026-08-04), but it is the committed paper.date from docs/manuscript/config.yaml, read like any other
 parameter, not the moment of hydration. An earlier version of this package stamped datetime.now into this page and into output
 /data/manuscript_variables.json , which made the byte-identical claim below false on every rerun; the clock has been removed
 rather than the claim weakened.
@@ -7411,7 +7411,7 @@ problem size.
 Each domain also exposes a canonical_*_params function that is the sole declaration of its scenario. The mission adapter, the
 manuscript token generator, and the figure generators all read those functions rather than carrying their own copies, so a figure
 cannot depict a scenario the prose does not describe.
-This manuscript is produced from manuscript/config.yaml and src/licence_to_kill/manuscript_variables.py: every numeric
+This manuscript is produced from docs/manuscript/config.yaml and src/licence_to_kill/manuscript_variables.py: every numeric
 value in the prose is injected as a generated token and never hand-authored.
 19.4 Methodology — W A VEKREST: the analytical models and algorithms that drive the mission
 This section specifies the six deterministic algorithms that constitute the ROGUE analytical core. Deep familiarity with each module’s
@@ -7610,7 +7610,7 @@ the overt move for the step with no future left to protect (optimal value 1.665)
 • routing the campaign cheaply against risk matters — the layered leg cuts cumulative interdiction by 30.7% (0.208 vs 0.300);
 • an unsanctioned operator’s cover is finite — survival to completion is 0.263, and order is the operator’s only free variable.
 The six domains stay honest about each other because they share one declaration: the canonical_*_params functions are read by
-the mission adapter, the manuscript token generator, and the figure generators alike, and the mission: block of manuscript/confi
+the mission adapter, the manuscript token generator, and the figure generators alike, and the mission: block of docs/manuscript/confi
 g.yaml is asserted equal to them by the test suite. A parameter cannot change in one place and quietly survive in another.
 Because the entire pipeline runs on a fixed seed (0) with no random draws in the detectors and no wall-clock anywhere in the persisted
 outputs, every figure and every table in this manuscript is reproducible byte-for-byte on a fixed interpreter and NumPy build — the
@@ -7626,7 +7626,7 @@ All experiments are deterministic and reproducible under Python 3.14.6 with NumP
 
 19.7.1 Where the parameters actually live
 Each domain module declares its own scenario in a canonical_*_params function, and those functions are the executable source of
-truth. The domain core is deliberately dependency-free (standard library plus NumPy) and does not read YAML, so manuscript/c
+truth. The domain core is deliberately dependency-free (standard library plus NumPy) and does not read YAML, so docs/manuscript/c
 onfig.yaml’s mission: block is a declared mirror of those functions rather than their input.
 That mirror is enforced, not trusted: tests/test_canonical_params.py asserts every key of the mission: block equal to the value
 the code computes with, and fails the suite if the two drift. The same tests assert that the declared search bounds are genuinely
@@ -8052,7 +8052,7 @@ rigorous enough to stand beside the analytical tools it mimics, and honest about
 pe_and_related_work.md.
 20.7 Experimental Setup — ARKANGEL: canonical scenarios, parameters, and configuration
 20.7.1 Scenario parameters
-All parameters are declared in manuscript/config.yaml and loaded by src/goldeneye/scenario.py::load_scenario_config .
+All parameters are declared in docs/manuscript/config.yaml and loaded by src/goldeneye/scenario.py::load_scenario_config .
 The canonical ARKANGEL mission uses:
 Parameter Value
 Weapon yield 2000.0 kt
@@ -8068,7 +8068,7 @@ Facility downstream distance 8.0 km
 Access-control layers 4
 The orbital-platform geometry (burst nadir at 60.0° N, 108.0° E; target at 53.5° N; platform altitude 300 km; minimum usable
 elevation 10°), the coupling inputs ( 10 m conductor, 0.10 mm aluminum enclosure, 100 MHz reference frequency, 50 Ohm load),
-the canonical 5-node regional grid, and the 3 downstream stations are declared in manuscript/config.yaml (the orbit and coupling
+the canonical 5-node regional grid, and the 3 downstream stations are declared in docs/manuscript/config.yaml (the orbit and coupling
 blocks) and src/goldeneye/scenario.py (the grid and stations).
 The EMP envelope constants are fixed in src/goldeneye/emp_model.py : an amplitude anchor of 50000 V/m at the 1000 kt
 reference yield and an empirical yield exponent of 0.85. The same module also records a 0.3% prompt-gamma fraction, but no
@@ -8079,7 +8079,7 @@ a parameter of the calculation ( tests/test_emp_model.py::TestGammaFractionIsRep
 the protection margin is declared in src/goldeneye/scenario.py.
 20.7.2 Software environment
 The package is tested under Python 3.14.6 with NumPy 2.4.2 and matplotlib; bond-api and bond-utilities are installed as local path
-dependencies. This environment snapshot belongs to manuscript revision 2026-08-04, the date declared in manuscript/config.y
+dependencies. This environment snapshot belongs to manuscript revision 2026-08-04, the date declared in docs/manuscript/config.y
 aml. No token reads the wall clock at generation time, so regenerating the manuscript in this environment rewrites the same bytes
 (see §Reproducibility).
 20.7.3 V erification gates
@@ -8124,7 +8124,7 @@ NumPy build legitimately changes those two tokens and the sections that render t
 Regenerable artifacts under output/ (git-ignored):
 • data/arkangel_outcome.json, data/arkangel_mission.json, data/manuscript_variables.json
 • figures/emp_footprint.png, figures/flood_wave.png, figures/grid_resilience.png
-• manuscript/ (numbered sections with tokens resolved)
+• docs/manuscript/ (numbered sections with tokens resolved)
 Live test count and achieved coverage are tracked in docs/_generated/COUNTS.md, not hardcoded here.
 20.9 Scope and Related Work — ARKANGEL: boundaries, positioning, and relationship to the
 literature
@@ -8233,7 +8233,7 @@ lets any coordinator discover the package by slug and drive the full brief → r
 
 ## Page 199
 
-outcome carrying deterministic provenance. All numbers in this manuscript are injected from manuscript/config.yaml and the real
+outcome carrying deterministic provenance. All numbers in this manuscript are injected from docs/manuscript/config.yaml and the real
 domain modules — none are hand-authored in the prose.
 21.4 Methodology — CAR VER: the analytical models and algorithms that drive the mission
 Each concept is a self-contained deterministic model with clear physical or algorithmic grounding.
@@ -8411,7 +8411,7 @@ draws.
 uv run python scripts/z_generate_manuscript_variables.py
 ## Full mission lifecycle via the protocol:
 uv run python scripts/run_mission.py
-Manuscript date 2026-08-04 ( paper.date in manuscript/config.yaml). This is the committed date of the manuscript, not the time
+Manuscript date 2026-08-04 ( paper.date in docs/manuscript/config.yaml). This is the committed date of the manuscript, not the time
 of the last regeneration: re-running the command above on an unchanged tree rewrites the same bytes, which it could not do if this
 line moved with the clock.
 21.8 Reproducibility — CAR VER: verification gates, deterministic regeneration, and artifacts
@@ -8445,7 +8445,7 @@ figures/raim_detection.png.
 • Resolved manuscript: output/manuscript/*.md.
 All under output/ are regenerable and git-ignored.
 21.8.4 What is not reproducible from this manuscript alone
-The section files hold token placeholders, not numbers. Reading the raw manuscript/*.md gives the argument but no values; the
+The section files hold token placeholders, not numbers. Reading the raw docs/manuscript/*.md gives the argument but no values; the
 values only exist after z_generate_manuscript_variables.py has run the canonical scenario. That is deliberate — it makes a stale
 number impossible to ship, because there is no number in the source to go stale.
 21.9 Scope and Related Work — CAR VER: boundaries, positioning, and relationship to the
@@ -8782,7 +8782,7 @@ schedule, or kindness schedule is a configuration change, and the manuscript, fi
 same source of truth.
 22.7 Experimental Setup — ELEKTRA: canonical scenarios, parameters, and configuration
 Every {CONFIG_*} token below carries a Source column, because the two kinds are not interchangeable. config.yaml marks a
-value typed by the author in manuscript/config.yaml: editing it and re-running scripts/z_generate_manuscript_variables.py
+value typed by the author in docs/manuscript/config.yaml: editing it and re-running scripts/z_generate_manuscript_variables.py
 re-derives the affected results in §3. derived marks a value read off a fixed dataset or module constant (default_pipeline, defau
 lt_power_grid, CHOKE_UTILIZATION_THRESHOLD) — those cannot be changed from the config file at all, and changing them means
 editing the dataset in the domain module. The split is enforced in code ( manuscript_variables.DECLARED_CONFIG_TOKENS / DERI
@@ -8854,7 +8854,7 @@ _NOISE
 config.yaml 2.000
 22.7.2 T able 2 — Hostage-model rate constants
 The clinical and forensic literature on Stockholm syndrome is qualitative, so the nine ODE rate constants below are a declared
-modelling assumption , not a fitted result (§7). They are typed in manuscript/config.yaml under experiment.hostage.dyn
+modelling assumption , not a fitted result (§7). They are typed in docs/manuscript/config.yaml under experiment.hostage.dyn
 amics and consumed by hostage_psychology.integrate_dynamics ; an auditor can change any one of them and re-derive every
 syndrome and bargaining number in §3.
 Rate Token Source Value
@@ -9020,7 +9020,7 @@ prolonged contact — rather than a formal diagnosis. The model synthesises the 
 ## Page 218
 
 parameter choices are the modelling assumption: all nine ODE rate constants, the initial state, and the small-kindness schedule are
-typed in manuscript/config.yaml under experiment.hostage, reproduced in §5 (Table 2), and consumed by the model — tests
+typed in docs/manuscript/config.yaml under experiment.hostage, reproduced in §5 (Table 2), and consumed by the model — tests
 /test_manuscript_variables.py perturbs each one and asserts the reported syndrome index moves, so the exposure is auditable
 rather than decorative. The claim is also enforced: the config accessors fail closed, so deleting any one of the nine rates, the initial
 state, or the kindness schedule raises rather than silently reverting to a module default — a deleted knob cannot pass unnoticed. The
@@ -9152,7 +9152,7 @@ for atmospheric attenuation, figure error, and scattering — it is a configured
 reported flux. Flux at the target follows from the beam spread, whose half-angle is the configured 0.02 deg plus the mirror’s own
 apparent angular radius at range.
 23.4.8 Execution and control structure
-The six models are not invoked ad hoc. mission_results.run_all_concepts reads the concepts: block of manuscript/config.
+The six models are not invoked ad hoc. mission_results.run_all_concepts reads the concepts: block of docs/manuscript/config.
 yaml, runs every model once under seed 7, and returns a frozen ConceptResults record. Two consumers read that record and only
 that record: mission.py, which serialises it into the frozen BOND-API MissionOutcome, and manuscript_variables.py , which
 formats it into the measured manuscript tokens this paper cites. A number printed here is therefore the same value the mission
@@ -9249,12 +9249,12 @@ The package meets the BOND guardrails: pure domain cores importable without the 
 a zero-mock test suite held to a line-and-branch coverage floor by pytest --cov-fail-under , and a manuscript whose every metric
 — configured input and measured output alike — is injected from the code through the 6 concept modules.
 23.7 Experimental Setup — ICARUS: canonical scenarios, parameters, and configuration
-All mission parameters are declared once in manuscript/config.yaml under the concepts: block and consumed by the code via s
+All mission parameters are declared once in docs/manuscript/config.yaml under the concepts: block and consumed by the code via s
 rc/die_another_day/mission_results.py . They are reproduced here as mission tokens so the manuscript cannot drift from the
 configuration. Package identity: die_another_day (codename ICARUS), deterministic seed 7.
 The seed is the single module constant mission_results.MISSION_SEED , not a configuration key: config.yaml carries no seed of
 its own, so no consumer can be reading a different one from the run this paper reports.
-The list below is complete by construction rather than by inspection. Every concepts.<section>.<key> in manuscript/config.y
+The list below is complete by construction rather than by inspection. Every concepts.<section>.<key> in docs/manuscript/config.y
 aml is registered in manuscript_variables.CONFIG_INPUT_TOKENS, and test_every_configured_input_is_registered_and_cit
 ed fails if the registry and the file disagree, or if a registered token is not cited in this section.
 23.7.1 Identity detection
@@ -9310,12 +9310,12 @@ the window — a hand-tuned geometry, stated here rather than buried in a defaul
 23.7.7 Software environment
 • Python: 3.14.6
 • Concept modules (6): identity_detection, sequence_identity, ice_ops, hypothermia, ice_structure, orbital_mirror
-• Package version: 0.1.0 ( manuscript/config.yaml, paper.version)
+• Package version: 0.1.0 ( docs/manuscript/config.yaml, paper.version)
 There is deliberately no generation timestamp in this list. An earlier draft hydrated one from the wall clock, which made every
 regeneration of the manuscript differ in bytes while §00 and §06 claimed determinism; §06 states the property that replaced it, and
 a test enforces it.
 23.7.8 What is configured versus what is measured
-The lists above are inputs: every one is a literal in manuscript/config.yaml. Everything in §03 is an output: it comes from running
+The lists above are inputs: every one is a literal in docs/manuscript/config.yaml. Everything in §03 is an output: it comes from running
 the models on these inputs. The two families are formatted by different code paths ( generate_variables for inputs, measured_var
 iables for outputs) and a test asserts that each measured token equals the value the concept runner produced.
 224
@@ -9370,7 +9370,7 @@ in the suite.
 The measured figure is not quoted here; run the command to obtain the current number.
 • Type and style gates : uv run ruff check src/ scripts/ , uv run ruff format --check src/ scripts/ , and uv run
 mypy src/ are clean.
-• T oken hygiene: two live gates in tests/test_manuscript_variables.py — every mission token cited in manuscript/[0-9]*.md
+• T oken hygiene: two live gates in tests/test_manuscript_variables.py — every mission token cited in docs/manuscript/[0-9]*.md
 must be produced by generate_variables , and every token generate_variables produces must be cited by some section
 (no orphan tokens). Strict generation additionally fails on any unresolved token left in a rendered section.
 • Thin-orchestrator gate : tests/test_scripts_smoke.py parses every script in scripts/ and fails if one grows a second
@@ -9677,7 +9677,7 @@ branch coverage, zero mocks, a clean lineage check, and a clean working tree, th
 suite dependency lands.
 24.7 Experimental Setup — LE CHIFFRE: canonical scenarios, parameters, and configuration
 24.7.1 Configuration
-Mission identity and publication metadata live in manuscript/config.yaml (title, subtitle, film slug, codename, version, key-
+Mission identity and publication metadata live in docs/manuscript/config.yaml (title, subtitle, film slug, codename, version, key-
 words, authorship). The engine scenario parameters live in src/casino_royale_2006/scenarios.py as module constants
 (POKER_SCENARIO, LAUNDERING_PLAYERS , ROUTE_GRID, POISON_N_SAMPLES, CFR_STRENGTHS, ICM_STACKS, BAYES_HISTORY, and the
 shared SEED). Manuscript tokens are computed from these plus live engine output by src/casino_royale_2006/manuscript_vari
@@ -9718,7 +9718,7 @@ package_version, seed, and a deterministic input_hash derived from the canonical
 run_mission twice yields identical results.
 Scope of the byte-identical claim. Running scripts/z_generate_manuscript_variables.py twice, any interval apart, produces
 byte-identical output/data/manuscript_variables.json and output/manuscript/*.md. Nothing in that path reads a clock: the
-manuscript’s publication stamp is the MANUSCRIPT_DATE token, read from the committed publication.date field of manuscript/co
+manuscript’s publication stamp is the MANUSCRIPT_DATE token, read from the committed publication.date field of docs/manuscript/co
 nfig.yaml (currently 2026-08-05), so it moves only when a human edits and commits it. The claim covers the token mapping and the
 resolved prose; it does not extend to the rendered ../figures/*.png, whose bytes depend on the installed Matplotlib and freetype
 build. tests/test_scripts_smoke.py::test_regeneration_is_byte_identical_across_a_clock_tick pins exactly that scope
@@ -9745,7 +9745,7 @@ _generated/COUNTS.md).
 must exist in the mapping — the resolver reports leftovers and scripts/z_generate_manuscript_variables.py exits 1.
 Second, no section may use the single-brace form: it is never substituted, so it would print its own braces into the published
 PDF while passing the first check, which looks only for the double-brace form. manuscript_variables.find_malformed_tok
-ens is the detector; tests/test_manuscript_variables.py pins both. See manuscript/SYNTAX.md for the literal syntax.
+ens is the detector; tests/test_manuscript_variables.py pins both. See docs/manuscript/SYNTAX.md for the literal syntax.
 • Lineage: rg "template[_]code_project" returns nothing outside any doc that explicitly describes the check.
 • Type & format : uv run ruff check && uv run ruff format and uv run mypy src/ scripts/ both clean.
 24.8.4 V erification (preflight)
@@ -10089,7 +10089,7 @@ asserts the scanned section set is non-empty, so an empty scan fails instead of 
 for bare decimal numerals after the tokens are masked out, so a hand-authored metric that escapes the injection pipeline is caught
 at test time.
 25.8.4 Configuration hash
-The manuscript identity (title, subtitle, version, date) is authored once in manuscript/config.yaml (0.1.0, dated 2026-08-04) and
+The manuscript identity (title, subtitle, version, date) is authored once in docs/manuscript/config.yaml (0.1.0, dated 2026-08-04) and
 injected via quantum_of_solace/manuscript_variables.py , never duplicated in prose. Keywords: water-rights cartel, desert
 hydrology, commodity-cartel graph, herfindahl-hirschman concentration, maximum flow, reservoir leverage, water scarcity pricing,
 network interdiction, shapley value, deterministic mission software. Actors modelled: quantum, rival_syndicate, state_utility.
@@ -10346,7 +10346,7 @@ Figure 103: Skyfall estate choke-point defense plan
 • Codename: SIL V A
 • Package version: 0.1.0 ⋅ mission version 0.1.0
 • Deterministic seed : 11
-• Python: 3.14.6 ⋅ build date 2026-08-04 (declared in manuscript/config.yaml, not read from the clock)
+• Python: 3.14.6 ⋅ build date 2026-08-04 (declared in docs/manuscript/config.yaml, not read from the clock)
 26.7.2 Scenario configuration
 The scenario is fixed so results are reproducible. Every parameter below is a named constant in src/skyfall/, surfaced here as an
 injected token rather than transcribed by hand.
@@ -10387,7 +10387,7 @@ Every metric in this manuscript is deterministic by construction:
 runs.
 • No randomness : the mission draws no random numbers; 11 is recorded solely in provenance.
 • No wall clock anywhere in the artifacts : no generated value is read from the clock. The build stamp SILVA_BUILD_DA
-TE (2026-08-04) is the committed paper.date field of manuscript/config.yaml, so it changes only when someone edits and
+TE (2026-08-04) is the committed paper.date field of docs/manuscript/config.yaml, so it changes only when someone edits and
 commits that file.
 Because of the last point the guarantee is byte-level, not merely value-level: running scripts/z_generate_manuscript_variabl
 es.py twice writes byte-identical output/manuscript/*.md , output/data/manuscript_variables.json , and ../figures/*.pn
@@ -10774,7 +10774,7 @@ The claim is scoped precisely. Within one software environment , two full regene
 — mission record, figure PNG, manuscript_variables.json and every hydrated section — because hydration is a pure function of
 the committed tree: no wall clock, no untracked RNG, no run counter. The single environment-dependent value is the interpreter
 stamp printed at the end of this section ( Darwin arm64 , 3.14.6), which by construction is what changes when the environment
-changes; the manuscript’s date is paper.date from manuscript/config.yaml, a committed input, not the time of the run. tests
+changes; the manuscript’s date is paper.date from docs/manuscript/config.yaml, a committed input, not the time of the run. tests
 /test_regeneration_determinism.py enforces the claim by regenerating the whole artifact set twice in one test run, more than a
 wall-clock tick apart, and comparing SHA-256 digests file by file — a re-introduced datetime.now anywhere in the pipeline turns it
 red.
@@ -10798,7 +10798,7 @@ length — are measured from the code rather than typed.
 • zero mocks anywhere in tests/; the pure domain core has no bond_api import, proven by a subprocess import test
 The achieved coverage and test count from the last real run are recorded in docs/_generated/COUNTS.md; this manuscript deliberately
 does not restate them, because a number quoted in prose is a number that can go stale.
-Release 0.1.0, dated 2026-08-04 (from manuscript/config.yaml), hydrated on Darwin arm64 with Python 3.14.6.
+Release 0.1.0, dated 2026-08-04 (from docs/manuscript/config.yaml), hydrated on Darwin arm64 with Python 3.14.6.
 27.9 Scope and Related Work — NINE EYES: boundaries, positioning, and relationship to the
 literature
 27.9.1 What this package claims
@@ -11131,7 +11131,7 @@ config loading.
 • Repository tree: isolated local-only package rooted at projects/working/bond/no_time_to_die; a local path dependency on
 the frozen bond-api protocol.
 28.7.2 Deterministic demonstration parameters
-Canonical inputs live in src/no_time_to_die/demo.py and manuscript/config.yaml. Every value below is a resolved token read
+Canonical inputs live in src/no_time_to_die/demo.py and docs/manuscript/config.yaml. Every value below is a resolved token read
 from those constants at hydration time, so the table cannot drift from the code that runs:
 267
 
@@ -11203,7 +11203,7 @@ dependent value in the package; nothing else varies with the machine.
 Through 2026-08-04 this section claimed byte-reproducibility while the generator stamped datetime.now(timezone.utc) into both
 output/data/manuscript_variables.json and this rendered section, so consecutive runs demonstrably differed. The token was
 removed rather than reworded, and the value gate now fails on any rendered token shaped like a date or a clock time.
-All demonstration inputs are fixed constants in src/no_time_to_die/demo.py and manuscript/config.yaml ; seed 11 is stable,
+All demonstration inputs are fixed constants in src/no_time_to_die/demo.py and docs/manuscript/config.yaml ; seed 11 is stable,
 though no code path draws from an RNG, so it currently governs nothing and is recorded for provenance only. The mission outcome
 carries a Provenance record with the package version, the seed, and a sha256 input_hash over the canonical inputs (demo.input_hash,
 currently cb8fe93a43fc…). That digest covers every demonstration constant — an earlier version hashed only five of sixteen — and
@@ -11219,7 +11219,7 @@ ables.py, computed from the shared demo result; none are hand-authored. Three ga
 combined, which the section-keyed scan was structurally blind to until 2026-08-05 (deleting it passed the gate and then raised
 a bare KeyError). The suite’s positive control now deletes every key of a real demo result in turn and requires each deletion to
 surface as a named gate failure rather than as any other exception.
-2. The token cross-reference test scans manuscript/[0-9]*.md and fails if any {-delimited token is not produced by generate_v
+2. The token cross-reference test scans docs/manuscript/[0-9]*.md and fails if any {-delimited token is not produced by generate_v
 ariables.
 3. z_generate_manuscript_variables.py fails in strict mode on any token left unresolved after substitution.
 28.8.3 Evidence provenance
@@ -11372,7 +11372,7 @@ a disciplined doctrine through expected absorption times.
 The whole package is wired into the PROJECT BOND suite: a MissionProvider (src/casino_royale_1967/mission.py) imple-
 ments the frozen bond_api protocol, the five mission phases are exposed as thin CLIs under scripts/, and 6 manuscript figures are
 generated deterministically from the same analyses the mission executes. Metrics in this manuscript are never hand-authored — they
-are injected live from manuscript/config.yaml and src/casino_royale_1967/manuscript_variables.py.
+are injected live from docs/manuscript/config.yaml and src/casino_royale_1967/manuscript_variables.py.
 29.3.1 Reader’s guide
 • Methodology describes the six algorithms in module order: assignment analysis, tick-based dispatch, lexical doctrine scoring,
 the information-theoretic identity model, exact baccarat enumeration, and the absorbing-chain escalation ladder.
@@ -11617,7 +11617,7 @@ A farce, modelled seriously, yields the same reproducibility contract as any res
 Figure 116: Expected steps to catastrophe per state, by doctrine.
 29.7 Experimental Setup — FIVE BONDS: canonical scenarios, parameters, and configuration
 29.7.1 Configuration
-All identity and experiment parameters are declared in manuscript/config.yaml and injected as tokens by src/casino_royale_1
+All identity and experiment parameters are declared in docs/manuscript/config.yaml and injected as tokens by src/casino_royale_1
 967/manuscript_variables.py — never hard-coded in prose.
 Parameter Value
 Mission identity Casino Royale (1967)
@@ -11633,7 +11633,7 @@ Sane ops rules in the doctrine baseline 6
 Escalation-ladder states 5
 Casino table (Bonds seated) 5
 Figures rendered 6
-Values in this table are read from manuscript/config.yaml where the parameter is a free choice (loss weights, dispatch horizon)
+Values in this table are read from docs/manuscript/config.yaml where the parameter is a free choice (loss weights, dispatch horizon)
 and derived from the domain modules where the parameter is structural (rule counts, ladder size, figure count), so neither source can
 drift from the code.
 29.7.2 Software environment
@@ -11661,7 +11661,7 @@ function of the input order stream.
 • No wall clock in any persisted artifact. Coordination, dispatch, and doctrine reports carry no timestamps; Provenance
 .wall_time_s is 0.0; and the manuscript token map reads no clock at all — generate_variables takes no now= parameter,
 because an injectable clock with a wall-clock default is still a wall clock. This manuscript’s date, 2026-08-04, is the committed
-paper.date in manuscript/config.yaml; edit that file to change it, and it is otherwise fixed.
+paper.date in docs/manuscript/config.yaml; edit that file to change it, and it is otherwise fixed.
 • No interpreter state either. The declared Python range is >=3.10 — the committed paper.python_requires, held equal
 to requires-python in pyproject.toml by test. The token map introspects nothing about the machine that ran it.
 • Live computation. Manuscript metrics are recomputed from the domain core at hydration time, so prose can never drift from
@@ -12018,7 +12018,7 @@ respectively (intel acquisition, insertion, extraction).
 sampled at 401 evenly spaced points.
 All canonical numeric constants live in the domain modules ( mission_replay.py, legacy_assets.py, remount_risk.py, asset_a
 llocator.py, learning_curve.py, sensitivity.py), shared by the mission adapter, the manuscript tokens, and the figures — no
-duplicated numbers. manuscript/config.yaml mirrors the same values for human readers, and tests/test_manuscript_variabl
+duplicated numbers. docs/manuscript/config.yaml mirrors the same values for human readers, and tests/test_manuscript_variabl
 es.py asserts the mirror matches the code, so a constant changed in one place and not the other fails the suite.
 30.7.3 Fixtures and isolation
 Tests use real data and computation only (no mock framework), with fixed inputs so every outcome is deterministic. Figures render
@@ -12028,8 +12028,8 @@ with the Agg backend and are byte-identical across runs. Manuscript variables ar
 REMOUNT commits to byte-level reproducibility. The domain core performs no random draws and no wall-clock reads, so replaying
 THUNDERBALL-65 twice yields identical ReplayResult objects; rendering a figure twice yields identical PNG bytes.
 The claim covers the whole persisted artifact set — every file under output/: data/manuscript_variables.json , the resolved
-manuscript tree under manuscript/, and the five PNGs under figures/. No token reads the clock. The date on this document,
-MANUSCRIPT_DATE, is paper.date from the committed manuscript/config.yaml , so it changes only when a human changes it in
+manuscript tree under docs/manuscript/, and the five PNGs under figures/. No token reads the clock. The date on this document,
+MANUSCRIPT_DATE, is paper.date from the committed docs/manuscript/config.yaml , so it changes only when a human changes it in
 version control — never merely because the generator ran again. That is enforced, not asserted: tests/test_regeneration_deter
 minism.py runs the generator twice, more than a clock-second apart, into two separate output roots and compares the SHA-256 of
 every file.
@@ -12116,7 +12116,7 @@ token); the NATO scheme spells a short identifier as QUEBEC-BRAVO-7. Reproducibl
 seed. Mission schedules are half-open UTC windows with overlap, merge, and duration models, and persisted mission records carry a
 reproducible input hash, the schema version, and the producing seed, so any outcome can be re-derived from its stored inputs. Every
 quantity this manuscript claims about the package — counts, capacities, window durations, sample outputs, and gate thresholds
-— arrives as a generated token computed from manuscript/config.yaml and the live registries by src/bond_utilities/manusc
+— arrives as a generated token computed from docs/manuscript/config.yaml and the live registries by src/bond_utilities/manusc
 ript_variables.py . Three tests enforce that: a cross-reference test fails on any prose token the generator does not produce; a
 bare-numeral guard fails on any hand-authored number in the abstract, introduction, results, conclusion, and reproducibility sections;
 and a hand-copied-metric guard fails when any section anywhere in the manuscript writes a generated value as a literal instead of its
@@ -12320,7 +12320,7 @@ Window math is exact under the half-open [start, end) semantics; elapsed and rem
 Figure 123: Mission schedule window with the reference “now” marker.
 31.6 Conclusion — Q-BRANCH: findings, verdict, and what the mission establishes
 bond-utilities (codename Q-BRANCH) delivers a broadened, fully-tested, dependency-light foundation on which the rest of
-the BOND suite is built. Every quantity this manuscript claims about the package is generated from manuscript/config.yaml
+the BOND suite is built. Every quantity this manuscript claims about the package is generated from docs/manuscript/config.yaml
 and the live registries through src/bond_utilities/manuscript_variables.py , and three tests enforce it: token cross-reference,
 a bare-numeral guard over the quantitative sections, and a hand-copied-metric guard that fails if any section anywhere writes a
 generated value as a literal. The constants that define an algorithm — the modular base, the digraph square size, the reference
@@ -12340,7 +12340,7 @@ nce persistence surface, its seeded draw helpers, and its schedule models.
 
 31.7 Experimental Setup — Q-BRANCH: canonical scenarios, parameters, and configuration
 31.7.1 Mission parameters
-All values are read from manuscript/config.yaml by src/bond_utilities/manuscript_variables.py::generate_variables ;
+All values are read from docs/manuscript/config.yaml by src/bond_utilities/manuscript_variables.py::generate_variables ;
 scripts never hardcode them.
 Parameter Value
 Package version 0.3.0
@@ -12377,7 +12377,7 @@ _mission_schedule
 All artifacts are regenerated, never hand-edited. Regeneration is a single command:
 uv run python scripts/z_generate_manuscript_variables.py
 Running that command twice on the same commit rewrites every artifact above byte for byte . Nothing in the pipeline reads the wall
-clock: the token map is a pure function of manuscript/config.yaml and the library registries, and the schedule figure’s reference
+clock: the token map is a pure function of docs/manuscript/config.yaml and the library registries, and the schedule figure’s reference
 marker is pinned to paper.date through manuscript_variables.manuscript_instant rather than to datetime.now. The claim is
 bound by tests/test_regeneration_determinism.py, which runs the command above twice — separated by a real clock tick, so
 a reinstated timestamp cannot slip through — and compares a digest of the whole output/ tree. The scope is exactly that artifact
@@ -12575,7 +12575,7 @@ equality; tuples stay tuples, lists stay lists, nested protocol objects stay nes
 on the two paths that previously broke it: a payload dict carrying the reserved wire key is rejected at encode time instead of
 decoding back as a protocol object, and the protocol-type check is on class identity instead of class name, so a dataclass whose
 __name__ shadows a protocol type is rejected instead of being flattened onto that type’s fields. The wire tag ( __bond_type__)
-is published as bond_api.serialization.SERIALIZATION_TAG, and a test pins the value declared in manuscript/config.ya
+is published as bond_api.serialization.SERIALIZATION_TAG, and a test pins the value declared in docs/manuscript/config.ya
 ml to the live constant, so the format cannot drift from its documentation.
 • Registry semantics : gadget registration/merging/overwrite/drop and mission-provider register/lookup/drop are exercised
 with real providers.
@@ -12673,12 +12673,12 @@ films/sable/mission.py Reference film implementing the contract
 scripts/ Thin orchestrators (preflight, demo mission, token hydration)
 tests/ Zero-mock test suite
 32.7.2 Configuration
-Protocol parameters live in manuscript/config.yaml under protocol: (identity, codename, reference film slug, serialization tag).
+Protocol parameters live in docs/manuscript/config.yaml under protocol: (identity, codename, reference film slug, serialization tag).
 Token variables inject them into this manuscript — metrics are never hand-authored in prose. The current version is 0.1.0.
 32.7.3 Environment
 • Python: 3.14.6 (the interpreter that generated this text)
-• Manuscript date: 2026-08-04 — read from manuscript/config.yaml → paper.date, a committed value, not a clock read. The
-generator reads no wall clock at all, so regenerating output/ twice produces byte-identical files; see manuscript/06_reproduc
+• Manuscript date: 2026-08-04 — read from docs/manuscript/config.yaml → paper.date, a committed value, not a clock read. The
+generator reads no wall clock at all, so regenerating output/ twice produces byte-identical files; see docs/manuscript/06_reproduc
 ibility.md.
 • Only external runtime dependency: pyyaml (manuscript config parsing); the protocol core is stdlib-only.
 32.7.4 Running the suite
@@ -12714,7 +12714,7 @@ output/ is disposable: regenerate, never hand-edit.
 32.8.2.1 Regeneration is byte-identical Both artifacts above are byte-identical across repeated regeneration on one interpreter:
 running scripts/z_generate_manuscript_variables.py twice writes the same bytes, no matter how much time passes between
 the runs. This holds because generate_variables reads no wall clock . Every token resolves from a committed source — the live
-package surface, manuscript/config.yaml, or the fail_under gate in pyproject.toml. The manuscript date is paper.date from
+package surface, docs/manuscript/config.yaml, or the fail_under gate in pyproject.toml. The manuscript date is paper.date from
 the config, a value that changes in a diff rather than on every run.
 The scope of that claim, stated exactly:
 • In scope : repeated runs of the generator on the same interpreter produce identical bytes for output/data/manuscript_vari
@@ -12726,14 +12726,14 @@ across a whole-second boundary between them so any clock read would show, and co
 companion ast gate fails if a wall-clock call is reintroduced into the generator module, and that gate carries a positive control — it
 is fed a source that does read the clock and must flag it, so it cannot pass by scanning for something it would never find.
 32.8.3 T oken hydration
-Every token in manuscript/*.md resolves through src/bond_api/manuscript_variables.py::generate_variables, which reads
+Every token in docs/manuscript/*.md resolves through src/bond_api/manuscript_variables.py::generate_variables, which reads
 its sources of truth — live code, configuration, and gate declarations — and never a hand-typed value:
 Token group Source of truth
 Identity, surface inventory, capability list the live package ( protocol_surface, CAPABILITY_NAMES)
-Version, title, subtitle, reference film, film count manuscript/config.yaml
+Version, title, subtitle, reference film, film count docs/manuscript/config.yaml
 Wire-format tag bond_api.serialization.SERIALIZATION_TAG
 Coverage floor the fail_under gate in pyproject.toml
-Manuscript date manuscript/config.yaml → paper.date (committed, never a
+Manuscript date docs/manuscript/config.yaml → paper.date (committed, never a
 clock read)
 Python version the running interpreter
 Deriving the coverage floor from pyproject.toml rather than from prose or config means the manuscript quotes the gate that actually
@@ -12820,7 +12820,7 @@ bound, and the reference film stamps 0.0 by design so outcomes are reproducible 
 measured by a film package, the value must be finite (rejected by construction if not) and interpreted with any timing-measurement
 granularity caveats the measuring package documents ( docs/testing_philosophy.md: use bounds, not exact values, for timing).
 32.10.5 V ersioning uncertainty
-The package version 0.1.0 is declared in four places ( pyproject.toml, bond_api.__version__ , manuscript/config.yaml →
+The package version 0.1.0 is declared in four places ( pyproject.toml, bond_api.__version__ , docs/manuscript/config.yaml →
 paper.version, and the reference film’s provenance stamp). All four are gated to agree by tests/test_exports.py , so a bump
 edited in only one place fails the suite instead of silently shipping stale metadata. The gate makes drift detectable, but it does not
 make the version a single loaded value — that single-source refactor is tracked in TODO.md if a future round wants it.
@@ -13081,7 +13081,7 @@ the dashboard reflects the manifests supplied to it, and states their absence wh
 33.7 Experimental Setup — MISSION CONTROL: canonical scenarios, parameters, and config-
 uration
 33.7.1 Configuration surface
-The manuscript identity is loaded from manuscript/config.yaml by src/bond_coordinator/manuscript_variables.py::load_
+The manuscript identity is loaded from docs/manuscript/config.yaml by src/bond_coordinator/manuscript_variables.py::load_
 config and injected as tokens; the only hand-authored prose values are the tokens themselves, never hardcoded numbers. Identity
 fields (title BOND-COORDINATOR, subtitle The Registry and Situation Room for the BOND Suite , version 0.1.0, codename MISS
 ION CONTROL , keywords) live under paper: and mission:.
@@ -13489,9 +13489,9 @@ implementation of the same order. The plan is the artifact; the concurrency is a
 This manuscript was produced for BOND-ORCHESTRA TOR: A Deterministic Mission DAG Runner (Multi-package film
 missions over the MissionProvider protocol, with cycle-path detection, checkpoint/resume, bounded deterministic retry, parallel-stage
 planning, real-film binding, and provenance). The package identity is BOND-ORCHESTRA TOR, codename DAG 00 , version
-2.5.2, first author Daniel Ari Friedman. All identity, publication, and mission parameters are declared in manuscript/config.yam
+2.5.2, first author Daniel Ari Friedman. All identity, publication, and mission parameters are declared in docs/manuscript/config.yam
 l and injected into this document through the manuscript-variable pipeline ( scripts/generate_manuscript_variables.py → sr
-c/bond_orchestrator/manuscript_variables.py ; syntax reference in manuscript/SYNTAX.md) — no metric is hand-authored in
+c/bond_orchestrator/manuscript_variables.py ; syntax reference in docs/manuscript/SYNTAX.md) — no metric is hand-authored in
 prose.
 34.7.2 5.2 Mission parameters
 Parameter Value
@@ -13570,7 +13570,7 @@ default, so it was blind to .template-export.json — a stale export manifest wh
 and whose 1,075 file hashes had decayed to 12 matches and 1,014 deleted paths. That file has been removed. The command also
 matched its own text in this manuscript and in docs/AGENTS.md, so it could not have printed Clean even on a genuinely clean tree.
 What the replacement gate covers, stated so it is not read as more: it scans every .py file under src/, scripts/ and tests/ for the
-exemplar slug, and every scalar value of pyproject.toml, manuscript/config.yaml, CITATION.cff, codemeta.json, .zenodo.json,
+exemplar slug, and every scalar value of pyproject.toml, docs/manuscript/config.yaml, CITATION.cff, codemeta.json, .zenodo.json,
 domain_profile.yaml , experiment_plan.yaml and export.toml. It does not scan Markdown prose or configuration comments,
 because this package’s own remediation notes name the fork source deliberately. Un-forked narrative text is therefore not gated and
 remains a review responsibility.
@@ -13822,7 +13822,7 @@ tatus --json and roster-export are invoked twice in separate subprocesses and as
 time.time field — executed, fully covered, and invisible to coverage — turns the suite read as a determinism regression. The
 installed bond console script (declared in pyproject.toml) is exercised in a subprocess and its stdout/exit code asserted equal to
 the scripts/bond.py bootstrap, so a mistyped entry-point target in pyproject.toml fails the suite. And the three mechanically
-checkable cross_cutting rules in manuscript/layer_contract.yaml — no infrastructure.* imports, no wall-clock calls, no
+checkable cross_cutting rules in docs/manuscript/layer_contract.yaml — no infrastructure.* imports, no wall-clock calls, no
 terminal-width/environment reads — are asserted against the src/ and scripts/ trees, so adding import time to dispatch.py
 fails the suite instead of silently falsifying the manuscript.
 324
@@ -13896,7 +13896,7 @@ so no result depends on whether the workspace currently holds a manifest.
 • Output layer. src/bond_cli/table.py::format_table for color-safe aligned tables (no ANSI); JSON output follows RFC
 8259 [ Bray, 2017], is key-sorted, and never embeds wall-clock values.
 • T oken hydration. scripts/z_generate_manuscript_variables.py → src/bond_cli/manuscript_variables.py → outp
-ut/variables/manuscript_variables.json; identity from manuscript/config.yaml, counts from the live registries.
+ut/variables/manuscript_variables.json; identity from docs/manuscript/config.yaml, counts from the live registries.
 • T oolchain(dev extras): pytest, pytest-cov, ruff, mypy, types-PyYAML.
 • Gates. uv run pytest tests/ --cov=src --cov-fail-under=90 (line + branch), uv run ruff check src/ scripts/ te
 sts/, uv run ruff format --check src/ scripts/ tests/ , uv run mypy src/ scripts/ . Measured results are recorded
@@ -14278,7 +14278,7 @@ in keeping with its source material — a thorough exercise in serious special-a
 ## Page 338
 
 38 References
-Merged automatically from every package’s manuscript/references.bib into the unified references.bib. Keys are cited from the
+Merged automatically from every package’s docs/manuscript/references.bib into the unified references.bib. Keys are cited from the
 package chapters.
 38.1 octopussy
 • knoll2010radiation — Knoll, Glenn F.. Radiation Detection and Measurement .
@@ -15317,7 +15317,7 @@ Cynthia Phillips and Laura Painton Swiler. A graph-based system for network-vuln
 Workshop on New Security Paradigms (NSPW ’98) , pages 71–79. ACM, 1998.
 Michael L. Pinedo. Scheduling: Theory, Algorithms, and Systems . Springer, 5 edition, 2016.
 Tom Preston-Werner. Semantic versioning 2.0.0. URL https://semver.org/spec/v2.0.0.html . The versioning scheme used by this
-package’s pyproject.toml and manuscript/config.yaml.
+package’s pyproject.toml and docs/manuscript/config.yaml.
 John G. Proakis and Masoud Salehi. Digital Communications. McGraw-Hill, 5 edition, 2008. Additive white Gaussian noise channel;
 symbol decision.
 PROJECT BOND suite. BOND-API: the frozen MissionProvider protocol. bond-api package, local-only working tree, 2026. The

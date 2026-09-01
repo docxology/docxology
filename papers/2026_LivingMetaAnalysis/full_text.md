@@ -350,10 +350,10 @@ The system runs offline and deterministically by default: a committed synthetic 
 with fixed seeds (seed = 42 for NMF, SVD, and graph layouts), so re-running produces byte-identical outputs. A live
 run with engines enabled and credentials supplied replaces the seed corpus with real records — as in this instance,
 which retrieved 2302 live records. The template is domain-agnostic: the search term, query, keyword set, subfield
-taxonomy, and hypotheses all come from manuscript/config.yaml.
+taxonomy, and hypotheses all come from docs/manuscript/config.yaml.
 3.3
 Configuration Surface
-A single manuscript/config.yaml controls:
+A single docs/manuscript/config.yaml controls:
 • Search parameters: term, query string, per-engine queries, relevance keywords, start year, max results, re-
 sume/clear behaviour
 • Engine toggles: arXiv, OpenAlex, Semantic Scholar, Crossref, PubMed, SovietRxiv, ChinaRxiv (each inde-
@@ -597,7 +597,7 @@ placeholder is a hard error, not a silent gap — every number in the rendered d
 committed artifact. Re-running the pipeline after a configuration change re-computes the values and re-targets the
 prose automatically.
 The injection system computes variables from seven sources:
-1. manuscript/config.yaml — search term, engine roster, subfield taxonomy, hypotheses
+1. docs/manuscript/config.yaml — search term, engine roster, subfield taxonomy, hypotheses
 2. corpus.jsonl — corpus size
 3. temporal_analysis.json — year range, CAGR, peak year, doubling time
 4. citation_network.json — edges, nodes, density, communities, PageRank, hubs
@@ -1359,7 +1359,7 @@ uv run python scripts/05_inject_variables.py
 uv run python scripts/06_fulltext_assessment.py
 16.3
 Re-target to Another Topic
-Edit manuscript/config.yaml — project_config.search.term, query, relevance_keywords, subfield_keywor
+Edit docs/manuscript/config.yaml — project_config.search.term, query, relevance_keywords, subfield_keywor
 ds, and hypothesis_definitions — then regenerate the seed corpus and re-run. No code changes are required; the
 manuscript re-targets through token injection.
 16.4
@@ -1442,7 +1442,7 @@ where 𝑁start and 𝑁end are the publication counts in the first and last yea
 time is 𝑡𝑑= ln(2)/ ln(1 + CAGR). For this run: CAGR = 3.45%, doubling time = 11.3 years.
 17.5
 Configuration Surface
-A single manuscript/config.yaml controls the search term, per-engine query and keyword sets, engine enable toggles,
+A single docs/manuscript/config.yaml controls the search term, per-engine query and keyword sets, engine enable toggles,
 subfield taxonomy, hypotheses, full-text and embedding options, and paper metadata. This run drew on 7 engines, a
 6-bucket taxonomy, and 6 hypotheses.
 17.6
@@ -1510,7 +1510,7 @@ Provenance Chain
 Every reported number is injected from a committed artifact rather than typed by hand; an unresolved placeholder is
 a hard error, so the rendered manuscript can contain no orphaned or stale figures. The configuration hash and artifact
 inventory bind the prose to the exact pipeline run that produced it. The provenance chain is:
-1. manuscript/config.yaml defines the search term, engines, taxonomy, and hypotheses
+1. docs/manuscript/config.yaml defines the search term, engines, taxonomy, and hypotheses
 2. scripts/01_literature_search.py retrieves records →corpus.jsonl
 3. scripts/02_meta_analysis_pipeline.py analyses the corpus →*.json data files
 4. scripts/04_generate_figures.py renders figures →*.png + figure_registry.json
@@ -1527,7 +1527,7 @@ databases.
 files.
 • Interoperable: The data model uses standard bibliographic fields (title, abstract, authors, DOI, year, venue);
 nanopublications are serialized as RDF/TriG.
-• Reusable: The entire pipeline is regenerable from manuscript/config.yaml; re-running with the same config-
+• Reusable: The entire pipeline is regenerable from docs/manuscript/config.yaml; re-running with the same config-
 uration reproduces identical outputs.
 18.4
 Honesty

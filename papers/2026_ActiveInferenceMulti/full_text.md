@@ -233,7 +233,7 @@ Appendix
 
 1
 Sheaf Track Coverage
-This page summarizes which sheaf fragment tracks are bound for each IMRAD row in manuscript/sheaf/manifest.yaml. The
+This page summarizes which sheaf fragment tracks are bound for each IMRAD row in docs/manuscript/sheaf/manifest.yaml. The
 matrix is regenerated at compose time.
 Totals: 95 present / 95 bound / 0 missing (gray).
 Color
@@ -495,7 +495,7 @@ ex.json. The index currently contains 12 extracted theorem rows, with constructi
 Sheaf composition
 8.1
 Compose contract
-Each manifest row in manuscript/sheaf/manifest.yaml binds fragment tracks from manuscript/sheaf/tracks.yaml. A track supplies
+Each manifest row in docs/manuscript/sheaf/manifest.yaml binds fragment tracks from docs/manuscript/sheaf/tracks.yaml. A track supplies
 a renderer, compose order, label, optional flag, general paper role, and paper-specific use statement; the composer then flattens the
 binding set into one Markdown section for PDF and web output.
 The operational claim is auditable binding. Analytical, simulation, pymdp, visualization, Lean, GNN, ontology, scholarship, and
@@ -542,7 +542,7 @@ Introduction ≺Methods ≺Results ≺Discussion ≺Appendix,
 (2)
 with, in each block, a group node above its section nodes (written 𝐺⊒𝑠).
 𝑃is therefore a finite poset (equivalently a finite
-Alexandrov space). Let 𝒯be the registered fragment-track set from manuscript/sheaf/tracks.yaml; each track 𝑡∈𝒯carries a
+Alexandrov space). Let 𝒯be the registered fragment-track set from docs/manuscript/sheaf/tracks.yaml; each track 𝑡∈𝒯carries a
 renderer 𝑅(𝑡), label 𝐿(𝑡), optional flag 𝑂(𝑡), a general paper role 𝑈(𝑡), a section-use statement 𝑉(𝑡), and a strict compose-order index
 𝜋(𝑡).
 The presheaf ℱis a contravariant functor on 𝑃— ℱ∶𝑃→Set with restriction maps along ⊒— assigning to each composing
@@ -703,7 +703,7 @@ Figure 14: Security posture map: 9 controls, 7 enforced and 2 scoped as deferred
 
 8.5
 Sheaf fragment track registry
-Compose order and renderer bindings from manuscript/sheaf/tracks.yaml.
+Compose order and renderer bindings from docs/manuscript/sheaf/tracks.yaml.
 Order
 Track id
 Label
@@ -1935,7 +1935,7 @@ ok
 layers_renderer_boun
 d
 sheaf.layers_report
-manuscript/08_method
+docs/manuscript/08_method
 s_sheaf.md
 ok
 methods sheaf layer
@@ -1959,7 +1959,7 @@ ok
 manuscript_sections_
 composed
 sheaf.compose
-manuscript/*.md
+docs/manuscript/*.md
 ok
 16 composed markdown
 files
@@ -1971,17 +1971,17 @@ Artifact
 Producer
 Gates
 sheaf_registry
-manuscript/sheaf/tracks.ya
+docs/manuscript/sheaf/tracks.ya
 ml
 manual
 validate_outputs
 sheaf_manifest
-manuscript/sheaf/manifest.
+docs/manuscript/sheaf/manifest.
 yaml
 manual
 validate_outputs
 sheaf_coverage_config
-manuscript/sheaf/coverage.
+docs/manuscript/sheaf/coverage.
 yaml
 manual
 validate_outputs
@@ -3716,7 +3716,7 @@ formalism,
 layers
 compose_manu
 script.py
-manuscript/s
+docs/manuscript/s
 heaf/manifes
 t.yaml
 adversarial_
@@ -3930,9 +3930,9 @@ pt
 missing_typed_claim
 formalism
 live
-manuscript/sheaf/
+docs/manuscript/sheaf/
 manifest.yaml
-manuscript/sheaf/
+docs/manuscript/sheaf/
 manifest.yaml
 validate_manuscri
 pt
@@ -4435,7 +4435,7 @@ The exemplar therefore sits at a narrow intersection: finite discrete active inf
 
 16
 References
-See manuscript/references.bib for bibliography entries cited in the composed sections.
+See docs/manuscript/references.bib for bibliography entries cited in the composed sections.
 58
 
 ## Page 61

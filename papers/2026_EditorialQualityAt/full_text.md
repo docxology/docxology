@@ -116,9 +116,9 @@ It pairs the
 template’s two-layer architecture with the prose analysis infrastructure (readability metrics, structural outline, editorial quality flags)
 and the reference validation infrastructure (BibTeX validation), demonstrating that rigorous editorial review can be expressed
 as a configurable, deterministic pipeline with no novel domain algorithm of its own.
-A single manuscript/config.yaml defines target grade-level bands, citation-density floors, structural rules (every section has an
+A single docs/manuscript/config.yaml defines target grade-level bands, citation-density floors, structural rules (every section has an
 H1, no heading levels skipped), and bibliography-consistency policy. The pipeline reads the manuscript, runs the prose analysers,
-cross-checks every [@key] citation against manuscript/references.bib, evaluates the configured checks, and writes a deterministic
+cross-checks every [@key] citation against docs/manuscript/references.bib, evaluates the configured checks, and writes a deterministic
 markdown review report alongside three figures (per-file word counts, readability metrics, citation density) and a JSON manuscript
 _report.json suitable for CI artefacts.
 Run snapshot. The current configuration analyses 8 file(s) totalling 1731 words across 86 sentence(s) and 64 paragraph(s). Average
@@ -144,7 +144,7 @@ The traditional remedy — a senior co-author re-reading the manuscript with
 template_prose_project exists to demonstrate that the editorial-review pass can be expressed as a deterministic, configurable,
 infrastructure-backed pipeline. This project carries no novel research contribution of its own; its purpose is to show how to
 compose existing template infrastructure into a complete, reproducible editorial workflow.
-The architecture is simple. manuscript/config.yaml defines policy: target grade-level band, citation-density floor, heading-structure
+The architecture is simple. docs/manuscript/config.yaml defines policy: target grade-level band, citation-density floor, heading-structure
 rules, bibliography-consistency policy. src/pipeline/__init__.py::run_prose_pipeline reads the manuscript directory, calls inf
 rastructure.prose.analyze_manuscript to produce a ManuscriptReport, cross-checks the cited keys against infrastructure.re
 ference.citation.parse_bibfile for the references.bib, evaluates each configured check, and writes a markdown review report
@@ -220,14 +220,14 @@ n (one-line metadata).
 
 – config.yaml and writes output/data/manuscript_variables.json along with a resolved manuscript tree under outpu
 t/manuscript/.
-• manuscript/references.bib is not modified by this pipeline — the prose project does not generate citations, only validates
+• docs/manuscript/references.bib is not modified by this pipeline — the prose project does not generate citations, only validates
 them.
 
 ## Page 8
 
 4
 Results
-After running scripts/run_prose_pipeline.py with the bundled manuscript/config.yaml and the manuscript described in this
+After running scripts/run_prose_pipeline.py with the bundled docs/manuscript/config.yaml and the manuscript described in this
 paper, the project produces the following on-disk artefacts:
 • output/manuscript_report.json — the raw ManuscriptReport JSON.
 • output/checks.json — one CheckResult per configured check.
@@ -253,7 +253,7 @@ bundled config sets the floor to 0.0 (disabled) so the run is green out of the b
 publication target.
 • no_skipped_heading_levels — every file in this manuscript uses contiguous heading levels.
 • every_file_has_h1 — every prose file starts with an H1.
-• bibliography_consistency — every [@key] in the prose resolves against manuscript/references.bib.
+• bibliography_consistency — every [@key] in the prose resolves against docs/manuscript/references.bib.
 The figures in ../figures/ are colour-blind-safe (Wong 2011 palette) [Wong, 2011], 300 dpi, and PNG-only for archival stability.
 They are referenced in sec. 6 where we walk through the on-disk artefact set in full.
 The full pass/fail summary lands in output/review_report.md, which is itself a Markdown file rendered alongside the manuscript
@@ -268,10 +268,10 @@ plate’s two-layer architecture. By keeping prose analysis, structural validati
 infrastructure modules — infrastructure/prose/ and infrastructure/reference/ — the project demonstrates that editorial
 discipline is expressible as a configurable, deterministic pipeline.
 This exemplar follows a single house style:
-• manuscript/config.yaml is the only place run policy lives.
+• docs/manuscript/config.yaml is the only place run policy lives.
 • src/pipeline/ is the only place the project touches infrastructure/.
 • Scripts in scripts/ do only filesystem I/O and CLI argument handling.
-• Every artefact in output/ is regeneratable; manuscript/references.bib is curated and validated read-only by this project.
+• Every artefact in output/ is regeneratable; docs/manuscript/references.bib is curated and validated read-only by this project.
 The contribution of this exemplar is architectural: a generic, reusable prose-quality module that any project in the template can opt
 into, and a minimal, configurable exemplar wiring it to the bibliography and the manuscript pipeline.
 Three concrete extensions follow naturally:
@@ -299,7 +299,7 @@ Figure 4: Mermaid diagram
 
 7
 Reproducibility
-The bundled manuscript/config.yaml is configured for the strict reproducibility discipline advocated for computational science
+The bundled docs/manuscript/config.yaml is configured for the strict reproducibility discipline advocated for computational science
 by [Peng, 2011]:
 1. No network calls. All analysis is local: prose metrics, structure, quality flags, and bibliography validation are computed from
 in-repo files only.
@@ -309,9 +309,9 @@ The same manuscript text + the same config.yaml produces byte-identical JSON art
 metadata in any caches the project later adds).
 3. Threshold transparency. Every pass/fail decision is recorded in output/checks.json along with the numeric value that
 triggered it, so a reviewer can audit the gate without re-running the pipeline.
-4. No hidden state. The pipeline does not mutate manuscript/; it reads and reports. manuscript/references.bib is read-only
+4. No hidden state. The pipeline does not mutate docs/manuscript/; it reads and reports. docs/manuscript/references.bib is read-only
 here (in contrast with the optional search add-on, where it is auto-populated).
-5. Same code, different config. A reviewer who wants stricter standards edits manuscript/config.yaml (prose.target_gra
+5. Same code, different config. A reviewer who wants stricter standards edits docs/manuscript/config.yaml (prose.target_gra
 de_level_max: 14.0, say); no code changes are required.
 7.1
 Verifying reproducibility locally
@@ -353,14 +353,14 @@ report
 
 8
 References
-Bibliography lives in manuscript/references.bib and is read by Pandoc during PDF render. The build pipeline invokes Pandoc
+Bibliography lives in docs/manuscript/references.bib and is read by Pandoc during PDF render. The build pipeline invokes Pandoc
 with --natbib, so every [@key] citation in the manuscript is rewritten to the appropriate \cite{}/\citep{}/\citet{} LaTeX
 command and resolved against the bib file.
 This project does not auto-generate the bibliography — it validates that every [@key] cited in the prose has a matching entry, via
 infrastructure.reference.citation.parse_bibfile. The check policy is configured under bibliography: in config.yaml.
 To validate that references.bib is syntactically clean:
 uv run python -m infrastructure.reference.citation.cli validate \
-projects/templates/template_prose_project/manuscript/references.bib --strict
+projects/templates/template_prose_project/docs/manuscript/references.bib --strict
 
 ## Page 13
 

@@ -79,7 +79,7 @@ on file: Zenodo, GitHub, PyPI (sandbox), IPFS, Software Heritage, GitHub
 Pages, Netlify, Hugging Face, OSF.
 • Licensed Apache-2.0 — the introspection code, not only the prose, is available
 for a science-integrity team to audit directly.
-Source: projects/templates/template_template/manuscript/config.yaml
+Source: projects/templates/template_template/docs/manuscript/config.yaml
 
 ![page7_img1.png](images/page7_img1.png)
 
@@ -107,7 +107,7 @@ from the DOI of the project it pitches.
 • Every slide also carries a QR code to its own standalone, citable page — see
 the deep-linking mechanism described later in the medium and long versions of
 this deck.
-Source: projects/templates/template_pitch_deck/manuscript/config.yaml
+Source: projects/templates/template_pitch_deck/docs/manuscript/config.yaml
 
 ![page9_img1.png](images/page9_img1.png)
 

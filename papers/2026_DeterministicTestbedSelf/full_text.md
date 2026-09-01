@@ -449,7 +449,7 @@ itself noise-honest), all structural coordination off.
 • Ablations — the full configuration with exactly one mechanism switched off, generated via dataclasses.replace.
 Confirmation averages each candidate over seeds (101, 202, 303) and tests against a 𝜎= 2 noise band; the primary evaluation
 seed is 7; the stagnation window is 10 experiments; a direction is retired after 3 consecutive non-improving experiments.
-These values are the SearchConfig defaults and are echoed in manuscript/config.yaml.
+These values are the SearchConfig defaults and are echoed in docs/manuscript/config.yaml.
 5.3
 Proposer
 The rendered figures and the JSON summaries are produced with DeterministicProposer, a rule-based agent that reads
@@ -579,12 +579,12 @@ for distinguishing real gains from noise.
 
 9
 References
-Bibliography lives in manuscript/references.bib and is read by Pandoc during PDF render. The build pipeline invokes Pan-
+Bibliography lives in docs/manuscript/references.bib and is read by Pandoc during PDF render. The build pipeline invokes Pan-
 doc with --natbib, so every [@key] citation in the manuscript is rewritten to the appropriate \cite{}/\citep{}/\citet{}
 LaTeX command and resolved against the bib file.
 To validate that references.bib is syntactically clean and contains the required fields per entry type:
 uv run python -m infrastructure.reference.citation.cli validate \
-projects/templates/template_autoscientists/manuscript/references.bib --strict
+projects/templates/template_autoscientists/docs/manuscript/references.bib --strict
 13
 
 ## Page 15

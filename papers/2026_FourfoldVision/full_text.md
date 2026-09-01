@@ -1268,7 +1268,7 @@ tetrahedral geometry, while the planar model preserves 4-way indexing without th
 ## Page 43
 
 17 References: The Sources Behind the Golden Thread
-The bibliography is stored in manuscript/references.bib and rendered by Pandoc with the project citation ledger.
+The bibliography is stored in docs/manuscript/references.bib and rendered by Pandoc with the project citation ledger.
 Donald D. Ault. Visionary Physics: Blake’s Response to Newton . University of Chicago Press, 1974. URL https://catalog.library.
 tamu.edu/Record/in00000158527/TOC.
 William Blake. The Marriage of Heaven and Hell . The Author, 1793. URL https://www.loc.gov/item/50041675/.

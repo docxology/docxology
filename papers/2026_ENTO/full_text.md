@@ -951,7 +951,7 @@ Code-derived figures
 All plots are generated from output/data/ento_benchmark_results.csv — never hand-edited.
 The pipeline in
 src/analysis.py:
-1. Runs src/benchmarks.py::run_all_benchmarks using parameters from manuscript/config.yaml (experiment.be
+1. Runs src/benchmarks.py::run_all_benchmarks using parameters from docs/manuscript/config.yaml (experiment.be
 nchmark_repetitions, observability_levels, medium_track_bytes).
 2. Calls src/figure_registry.py::generate_all_figures,
 which dispatches each registered generator in
@@ -1351,7 +1351,7 @@ only.
 
 12
 Reproducibility
-Configuration hash: 68cac678fc92a913 (SHA-256 prefix of manuscript/config.yaml, version 0.4).
+Configuration hash: 68cac678fc92a913 (SHA-256 prefix of docs/manuscript/config.yaml, version 0.4).
 Author: Daniel Ari Friedman. Keywords: research data formats, authenticated encryption, AES-256-GCM, reproducible
 research, multimodal containers, metadata leakage, observability levels, FAIR data packaging.
 12.1
@@ -1766,12 +1766,12 @@ on-disk contract.
 
 15
 References
-Bibliography lives in manuscript/references.bib and is read by Pandoc during PDF render.
+Bibliography lives in docs/manuscript/references.bib and is read by Pandoc during PDF render.
 Inline citations use
 [@citekey] syntax throughout introduction, methodology, related work, and limitations sections.
 Validate bibliography syntax:
 uv run python -m infrastructure.reference.citation.cli validate \
-projects/working/entofile/manuscript/references.bib --strict
+projects/working/entofile/docs/manuscript/references.bib --strict
 Research notes backing related-work claims: ../docs/research/related_formats.md.
 38
 
