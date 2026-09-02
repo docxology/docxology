@@ -9,8 +9,6 @@
 
 **Computational Biologist · Active Inference · Cognitive Security · Artist**
 
-Active Inference · Bayesian Modeling · Computational Biology · Cognitive Security*
-
 [![Active Inference Institute](https://img.shields.io/badge/Active_Inference_Institute-President-6C3483?style=for-the-badge)](https://activeinference.org/)
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-current_snapshot-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
