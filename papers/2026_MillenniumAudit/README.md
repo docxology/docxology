@@ -4,6 +4,8 @@
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22243473-blue)](https://doi.org/10.5281/zenodo.22243473)
+
 ---
 
 ## Abstract
@@ -30,12 +32,14 @@
 
 ## Artifacts
 
+- DOI: [10.5281/zenodo.22243473](https://doi.org/10.5281/zenodo.22243473)
+- Zenodo record: [https://zenodo.org/records/22243473](https://zenodo.org/records/22243473)
 - PDF: [Friedman_2026_MillenniumAudit.pdf](Friedman_2026_MillenniumAudit.pdf)
-- PDF SHA-256: Not recorded
+- PDF SHA-256: [See Zenodo record](https://zenodo.org/records/22243473)
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *MillenniumAudit*. Zenodo.
+> Daniel Ari Friedman (2026). *MillenniumAudit*. Zenodo. DOI: 10.5281/zenodo.22243473. URL: https://doi.org/10.5281/zenodo.22243473.
 
 ## Related
 

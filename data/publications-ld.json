@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 211 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 212 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -8280,7 +8280,7 @@
                 "@type": "Organization",
                 "name": "Zenodo"
             },
-            "keywords": "💻",
+            "keywords": "🛡️",
             "@id": "https://danielarifriedman.com/works/Friedman2026CognitiveIntegrityFrameworkComputational213.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2026CognitiveIntegrityFrameworkComputational213.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026CognitiveIntegrityFrameworkComputational213.html",
@@ -8313,7 +8313,7 @@
                 "@type": "Organization",
                 "name": "Zenodo"
             },
-            "keywords": "💻",
+            "keywords": "🛡️",
             "@id": "https://danielarifriedman.com/works/Friedman2026CognitiveIntegrityFrameworkPractical214.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2026CognitiveIntegrityFrameworkPractical214.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026CognitiveIntegrityFrameworkPractical214.html",
@@ -8325,6 +8325,34 @@
             },
             "sameAs": "https://doi.org/10.5281/zenodo.22134547",
             "citation": "Friedman, Daniel Ari. 2026. Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications). Zenodo. DOI: 10.5281/zenodo.22134547. URL: https://doi.org/10.5281/zenodo.22134547."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
+            "headline": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Organization",
+                    "name": "Daniel Ari Friedman"
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🔍",
+            "@id": "https://danielarifriedman.com/works/Friedman2026ForensicAuditMillenniumLeanClay215.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026ForensicAuditMillenniumLeanClay215.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026ForensicAuditMillenniumLeanClay215.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.22243473",
+                "url": "https://doi.org/10.5281/zenodo.22243473"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.22243473",
+            "citation": "Friedman, Daniel Ari. 2026. Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global). Zenodo. DOI: 10.5281/zenodo.22243473. URL: https://doi.org/10.5281/zenodo.22243473."
         }
     ]
 }

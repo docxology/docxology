@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-28T21:42:39Z",
+  "generated_at": "2026-09-02T05:07:55Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 211,
+  "count": 212,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -4304,6 +4304,31 @@
       ],
       "methods": [],
       "source": "papers/2026_CognitiveIntegrityFramework2/README.md"
+    },
+    "Friedman2026ForensicAuditMillenniumLeanClay215": {
+      "citation_key": "Friedman2026ForensicAuditMillenniumLeanClay215",
+      "abstract": "Statement-level forensic audit of the MillenniumLean package (AIX Global, Zenodo 10.5281/zenodo.22226553), which claims kernel-checked Lean 4 proofs of the six remaining Clay Millennium Problems. The audit independently reproduces every kernel-hygiene claim (clean build, zero sorry, zero project axioms) under the pinned toolchain, then audits what the theorem types actually say. Verdict: none of...",
+      "keywords": [
+        "lean-4",
+        "formal-verification",
+        "millennium-prize-problems",
+        "claim-audit",
+        "adversarial-review",
+        "evidence-first"
+      ],
+      "findings": [
+        "Kernel claims are TRUE and reproduce byte-for-byte - and evidentially void",
+        "Final theorems are conditionals, defs, or tautologies; no Clay content in any type",
+        "The universalization tower proves only 0 n + 1 (Tower.lean:11)",
+        "259/259 quoted lines byte-verified; no kernel output disputed"
+      ],
+      "methods": [
+        "Independent kernel reproduction (pinned toolchain, mathlib manifest revision)",
+        "Statement-level binder parsing vs official Clay statements",
+        "Meta-audit of the package's own evidence artifacts",
+        "Three-lane hostile red-team pass on the audit before publication"
+      ],
+      "source": "papers/2026_MillenniumAudit/README.md"
     }
   }
 }

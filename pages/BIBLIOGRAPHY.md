@@ -249,6 +249,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 212 | 2026 | 💻 | Paper | docxplus — the Intelligent Document Container | *Zenodo* | [10.5281/zenodo.21983948](https://doi.org/10.5281/zenodo.21983948) | [📁](../papers/2026_DocxplusIntelligentDocument/) | Friedman, Daniel Ari |
 | 213 | 2026 | 🛡️ | Paper | Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation) | *Zenodo* | [10.5281/zenodo.22134545](https://doi.org/10.5281/zenodo.22134545) | [📁](../papers/2026_CognitiveIntegrityFramework/) | Friedman, Daniel Ari |
 | 214 | 2026 | 🛡️ | Paper | Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications) | *Zenodo* | [10.5281/zenodo.22134547](https://doi.org/10.5281/zenodo.22134547) | [📁](../papers/2026_CognitiveIntegrityFramework2/) | Friedman, Daniel Ari |
+| 215 | 2026 | 🔍 | Report | Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global) | *Zenodo* | [10.5281/zenodo.22243473](https://doi.org/10.5281/zenodo.22243473) | [📁](../papers/2026_MillenniumAudit/) | Daniel Ari Friedman |
 ---
 
 ## Domain Index

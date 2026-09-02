@@ -2915,7 +2915,7 @@ TI  - Cognitive Integrity Framework: Computational Validation and Empirical Anal
 T2  - Zenodo
 DO  - 10.5281/zenodo.22134545
 UR  - https://doi.org/10.5281/zenodo.22134545
-KW  - Computational
+KW  - Cognitive Security
 KW  - Paper
 N1  - Catalog row 213; docs: papers/2026_CognitiveIntegrityFramework/
 ER  -
@@ -2927,7 +2927,19 @@ TI  - Cognitive Integrity Framework: Practical Applications and Deployment Guide
 T2  - Zenodo
 DO  - 10.5281/zenodo.22134547
 UR  - https://doi.org/10.5281/zenodo.22134547
-KW  - Computational
+KW  - Cognitive Security
 KW  - Paper
 N1  - Catalog row 214; docs: papers/2026_CognitiveIntegrityFramework2/
+ER  -
+
+TY  - GEN
+AU  - Daniel Ari Friedman
+PY  - 2026
+TI  - Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)
+T2  - Zenodo
+DO  - 10.5281/zenodo.22243473
+UR  - https://doi.org/10.5281/zenodo.22243473
+KW  - Other
+KW  - Report
+N1  - Catalog row 215; docs: papers/2026_MillenniumAudit/
 ER  -

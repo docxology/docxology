@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)"
+version: "1.0.0"
+date-released: 2026-09-01
+doi: "10.5281/zenodo.22243473"
+url: "https://doi.org/10.5281/zenodo.22243473"
+authors:
+  - family-names: Friedman
+    given-names: Daniel Ari
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22243473"
+    description: "Canonical citation DOI"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.22243473"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.22243472"
+    description: "Concept DOI (resolves to latest version)"
+  - type: url
+    value: "https://zenodo.org/records/22243473"
+    description: "Zenodo record landing page"

@@ -28,6 +28,13 @@ only that 0 < n + 1 for all naturals. Verdict: none of the six problems is
 resolved. The audit disputes no kernel output of the package; it disputes
 what those outputs are claimed to demonstrate.
 
+**Publication.** This report is published as a Zenodo record
+(DOI 10.5281/zenodo.22243473) together with the complete evidence bundle -
+all fourteen findings, the audit doctrine, the kernel reproduction receipt,
+and the machine-readable audit report. The public paper copy with the
+rendered PDF and full text lives in the docxology repository
+(github.com/docxology/docxology, papers/2026_MillenniumAudit).
+
 
 # Introduction
 
@@ -260,6 +267,15 @@ Lean reproduction (receipt: data/BUILD_RECEIPT.md):
 
 Findings: one file each under docs/audit/F01-F14, indexed by docs/audit/
 00_INDEX.md, which also records the 259/259 quotation-verification receipt.
+
+## Published record
+
+DOI: 10.5281/zenodo.22243473 (concept DOI 10.5281/zenodo.22243472). The
+Zenodo deposit contains this manuscript's rendered PDF, all fourteen finding
+files, the audit doctrine, the build receipt, the statement-evidence
+analysis, and both machine-readable reports. The docxology paper folder
+(github.com/docxology/docxology, papers/2026_MillenniumAudit) mirrors the
+rendered PDF and full text publicly.
 
 
 # Scope, limitations, and related work

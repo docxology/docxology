@@ -5,6 +5,7 @@ description: "Statement-level forensic audit of the MillenniumLean package (AIX 
 tags: ["lean-4", "formal-verification", "millennium-prize-problems", "claim-audit", "adversarial-review", "evidence-first"]
 domain: "Research"
 citation: "Daniel Ari Friedman (2026). *MillenniumAudit*. Research."
+doi: "10.5281/zenodo.22243473"
 ---
 
 # MillenniumAudit
@@ -41,7 +42,7 @@ See [BIBLIOGRAPHY.md](../../pages/BIBLIOGRAPHY.md) for related publications.
 
 Verification points for this work:
 
-- Canonical DOI: Not assigned
+- Canonical DOI: 10.5281/zenodo.22243473
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: unknown
@@ -56,6 +57,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Use the canonical citation above.
+1. Reference the DOI for citation: `10.5281/zenodo.22243473`
 2. Apply methods listed in the Methods section for related analysis.
 3. Validate findings against the original PDF and metadata.
