@@ -3,7 +3,7 @@
 # AGENTS.md — MillenniumAudit
 
 **Paper**: MillenniumAudit (2026)
-**Domain**: Research
+**Domain**: 🔍
 **Authors**: Daniel Ari Friedman
 
 ---
@@ -18,10 +18,10 @@
 ### 🔬 RESEARCHER
 - Extracts methods: Independent kernel reproduction (pinned toolchain, mathlib manifest revision), Statement-level binder parsing vs official Clay statements, Meta-audit of the package's own evidence artifacts
 - Identifies findings: Kernel claims are TRUE and reproduce byte-for-byte - and evidentially void, Final theorems are conditionals, defs, or tautologies; no Clay content in any type, The universalization tower proves only 0 < n + 1 (Tower.lean:11)
-- Maps contributions to Research literature
+- Maps contributions to 🔍 literature
 
 ### 🎓 EDUCATOR
-- Creates learning pathways for Research concepts
+- Creates learning pathways for 🔍 concepts
 - Develops SKILL.md with executable instructions
 - Maintains prerequisite knowledge mapping
 

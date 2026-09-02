@@ -32,6 +32,7 @@
 
 ## Artifacts
 
+- GitHub repository: [docxology/millennium_audit](https://github.com/docxology/millennium_audit)
 - DOI: [10.5281/zenodo.22243473](https://doi.org/10.5281/zenodo.22243473)
 - Zenodo record: [https://zenodo.org/records/22243473](https://zenodo.org/records/22243473)
 - PDF: [Friedman_2026_MillenniumAudit.pdf](Friedman_2026_MillenniumAudit.pdf)

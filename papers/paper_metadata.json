@@ -3453,6 +3453,7 @@
       "The universalization tower proves only 0 < n + 1 (Tower.lean:11)",
       "259/259 quoted lines byte-verified; no kernel output disputed"
     ],
-    "pdf": "Friedman_2026_MillenniumAudit.pdf"
+    "pdf": "Friedman_2026_MillenniumAudit.pdf",
+    "github_repo": "docxology/millennium_audit"
   }
 }

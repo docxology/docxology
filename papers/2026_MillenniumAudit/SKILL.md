@@ -3,18 +3,18 @@
 name: "MillenniumAudit"
 description: "Statement-level forensic audit of the MillenniumLean package (AIX Global, Zenodo 10.5281/zenodo.22226553), which claims kernel-checked Lean 4 proofs of the six remaining Clay Millennium Problems. The audit independently reproduces every kernel-hygien..."
 tags: ["lean-4", "formal-verification", "millennium-prize-problems", "claim-audit", "adversarial-review", "evidence-first"]
-domain: "Research"
-citation: "Daniel Ari Friedman (2026). *MillenniumAudit*. Research."
+domain: "🔍"
+citation: "Daniel Ari Friedman (2026). *MillenniumAudit*. 🔍."
 doi: "10.5281/zenodo.22243473"
 ---
 
 # MillenniumAudit
 
-**Daniel Ari Friedman** (2026) · Research
+**Daniel Ari Friedman** (2026) · 🔍
 
 ## Context
 
-This work addresses topics in **Research**: lean-4, formal-verification, millennium-prize-problems, claim-audit.
+This work addresses topics in **🔍**: lean-4, formal-verification, millennium-prize-problems, claim-audit.
 
 ## Methods
 
@@ -50,8 +50,8 @@ Verification points for this work:
 ## Prerequisites
 
 - Familiarity with lean-4, formal-verification, millennium-prize-problems
-- Background in Research fundamentals
-- Access to source repository: N/A
+- Background in 🔍 fundamentals
+- Access to source repository: docxology/millennium_audit
 
 ## Instructions
 
