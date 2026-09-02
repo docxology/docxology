@@ -207,6 +207,7 @@ For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software 
 | 192 | [2026_DocxplusIntelligentDocument](2026_DocxplusIntelligentDocument/) | ✅ | 2026 | DocxplusIntelligentDocument |
 | 193 | [2026_CognitiveIntegrityFramework](2026_CognitiveIntegrityFramework/) | ✅ | 2026 | CognitiveIntegrityFramework |
 | 194 | [2026_CognitiveIntegrityFramework2](2026_CognitiveIntegrityFramework2/) | ✅ | 2026 | CognitiveIntegrityFramework2 |
+| 195 | [2026_MillenniumAudit](2026_MillenniumAudit/) | ✅ | 2026 | MillenniumAudit |
 ## Scripts
 
 All repository code lives under [`code/`](../code/); the per-folder docs in this directory are generated from `paper_metadata.json` by:

@@ -1,0 +1,33 @@
+{
+  "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
+  "version": "1.0.0",
+  "doi": "",
+  "doi_url": "",
+  "zenodo_record": "",
+  "record_id": "",
+  "publication_date": "2026-09-01",
+  "resource_type": {
+    "title": "Report",
+    "type": "publication",
+    "subtype": "report"
+  },
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "Statement-level forensic audit of the MillenniumLean package (AIX Global, Zenodo 10.5281/zenodo.22226553), which claims kernel-checked Lean 4 proofs of the six remaining Clay Millennium Problems. The audit independently reproduces every kernel-hygiene claim (clean build, zero sorry, zero project axioms, axiom footprints within the classical trio) under the pinned toolchain, then audits what the theorem types actually say. Verdict: none of the six problems is resolved. Fourteen findings, all quotations line-anchored and byte-verified; audit doctrine, evidence receipts, and a 15-test zero-mock suite included.",
+  "keywords": [
+    "lean-4",
+    "formal-verification",
+    "millennium-prize-problems",
+    "claim-audit",
+    "adversarial-review",
+    "evidence-first",
+    "hilbert-polya",
+    "proof-assistant-forensics"
+  ]
+}
