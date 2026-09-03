@@ -94,7 +94,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 
 Narrative ecosystems, information commons, digital rhetoric, and multiagent security.
 
-- Works: 35
+- Works: 38
 - Selected repositories: 4
 - Collaborator context: RJ Cordes, Carlos Gershenson, Micah Musser
 
@@ -164,7 +164,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 56
+- Works: 54
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 

@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-08-28T21:34:19+00:00`
+Generated: `2026-09-03T05:36:31+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -25,17 +25,17 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
 - public_source_snapshot: `reports/public_source_snapshot_2026-08-26.json`
-- paired_publications: `reports/paired_publications_2026-08-28.json`
+- paired_publications: `reports/paired_publications_2026-08-31.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
 
-- Bibliography works: `211`
-- Paper-folder docs: `194`
-- Full-text extractions: `189`
+- Bibliography works: `212`
+- Paper-folder docs: `195`
+- Full-text extractions: `190`
 - Papers with image galleries: `139`
 - Total extracted images: `8944`
-- Bibliography docs links: `194`
+- Bibliography docs links: `195`
 
 ### Types
 
@@ -44,15 +44,16 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - Papers: `190`
 - Playbooks: `2`
 - Presentations: `9`
+- Report: `1`
 - Series: `2`
 
 ### Domains
 
 - Entomology: `23`
 - Active Inference: `45`
-- Cognitive Security: `35`
+- Cognitive Security: `37`
 - Art & Synergetics: `16`
-- Computational: `56`
+- Computational: `54`
 - AII Ecosystem: `6`
 - Presentations & Media: `15`
 - Genetics & Biomedical: `15`
@@ -65,9 +66,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Generated Exports
 
-- data_works_json: `211`
+- data_works_json: `212`
 - data_software_json: `147`
-- data_publications_ld_main_entity: `211`
+- data_publications_ld_main_entity: `212`
 - data_software_ld_main_entity: `147`
 
 ### GitHub Inventory
@@ -105,8 +106,8 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - zenodo_records: `150`
 - pairs: `449`
 - strong_pairs: `48`
-- already_reviewed: `399`
-- needs_review: `3`
+- already_reviewed: `398`
+- needs_review: `4`
 - create_new: `0`
 - update_existing: `47`
 

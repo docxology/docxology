@@ -36,9 +36,23 @@
       <description>Paper — Zenodo — Daniel Ari Friedman</description>
     </item>
     <item>
+      <title>Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)</title>
+      <link>https://doi.org/10.5281/zenodo.22134545</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22134545</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
       <title>Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)</title>
       <link>https://doi.org/10.5281/zenodo.18364118</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.18364118</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)</title>
+      <link>https://doi.org/10.5281/zenodo.22134547</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22134547</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
@@ -55,6 +69,13 @@
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21815704</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Shrivastava, Siddhant, Goh, Evelyn C., Mikhailova, Alexandra, Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)</title>
+      <link>https://doi.org/10.5281/zenodo.22243473</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22243473</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Report — Zenodo — Daniel Ari Friedman</description>
     </item>
     <item>
       <title>Personal Red Lines for Development</title>
@@ -195,27 +216,6 @@
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.5034808</guid>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari, Cordes, Richard J.</description>
-    </item>
-    <item>
-      <title>Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier</title>
-      <link>https://cogsec.org</link>
-      <guid isPermaLink="true">https://cogsec.org</guid>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <description>Book — COGSEC.org</description>
-    </item>
-    <item>
-      <title>Narrative Information Management</title>
-      <link>https://doi.org/10.5281/zenodo.5565577</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.5565577</guid>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Cordes, Richard J., Applegate-Swanson, Shaun, Friedman, Daniel Ari, Knight, Virginia Bleu, Mikhailova, Alexandra</description>
-    </item>
-    <item>
-      <title>Emergent Teams for Complex Threats</title>
-      <link>https://doi.org/10.5281/zenodo.3986084</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.3986084</guid>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Cordes, Richard J., Friedman, Daniel Ari</description>
     </item>
   </channel>
 </rss>

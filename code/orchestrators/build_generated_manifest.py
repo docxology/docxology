@@ -176,7 +176,7 @@ ARTIFACTS = [
     },
     {
         "name": "Volatile site facts",
-        "outputs": ["index.html", "publications.html", "discovery.html", "pages/DISCOVERY.md"],
+        "outputs": ["index.html", "publications.html", "discovery.html", "pages/DISCOVERY.md", "llms.txt"],
         "sources": ["data/current-counts.json", "reports/public_source_snapshot_*.json", "code/orchestrators/sync_site_facts.py"],
         "command": "python3 code/orchestrators/sync_site_facts.py",
     },
@@ -368,6 +368,12 @@ ARTIFACTS = [
         "outputs": ["domains.html", "domain-*.html", "pages/DOMAINS.md"],
         "sources": ["data/works.json", "data/software.json", "code/orchestrators/build_domain_pages.py"],
         "command": "python3 code/orchestrators/build_domain_pages.py",
+    },
+    {
+        "name": "Domain feeds",
+        "outputs": ["feeds/domain-*.xml"],
+        "sources": ["data/works.json", "data/videos.json", "code/orchestrators/build_domain_pages.py", "code/orchestrators/build_domain_feeds.py"],
+        "command": "python3 code/orchestrators/build_domain_feeds.py",
     },
     {
         "name": "Work pages",

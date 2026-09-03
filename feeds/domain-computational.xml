@@ -134,20 +134,6 @@
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
     </item>
     <item>
-      <title>Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)</title>
-      <link>https://doi.org/10.5281/zenodo.22134545</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22134545</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo</description>
-    </item>
-    <item>
-      <title>Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)</title>
-      <link>https://doi.org/10.5281/zenodo.22134547</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22134547</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo</description>
-    </item>
-    <item>
       <title>Convergence Analysis of Gradient Descent Optimization</title>
       <link>https://doi.org/10.5281/zenodo.20417136</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20417136</guid>
@@ -216,6 +202,20 @@
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21047573</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>PROJECT BOND — The Special-Agent Operations Compendium</title>
+      <link>https://doi.org/10.5281/zenodo.21843592</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21843592</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+    </item>
+    <item>
+      <title>Policy Entanglement in Active Inference</title>
+      <link>https://doi.org/10.5281/zenodo.20418904</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20418904</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
     </item>
   </channel>
 </rss>

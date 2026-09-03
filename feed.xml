@@ -6,7 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Aug 2026 17:20:28 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 02:37:50 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
@@ -29,18 +29,25 @@
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
     </item>
     <item>
+      <title>Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)</title>
+      <link>https://danielarifriedman.com/works/Friedman2026ForensicAuditMillenniumLeanClay215.html</link>
+      <guid isPermaLink="false">work-Friedman2026ForensicAuditMillenniumLeanClay215</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Report · Zenodo · Other · 2026</description>
+    </item>
+    <item>
       <title>Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)</title>
       <link>https://danielarifriedman.com/works/Friedman2026CognitiveIntegrityFrameworkPractical214.html</link>
       <guid isPermaLink="false">work-Friedman2026CognitiveIntegrityFrameworkPractical214</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
+      <description>Paper · Zenodo · Cognitive Security · 2026</description>
     </item>
     <item>
       <title>Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)</title>
       <link>https://danielarifriedman.com/works/Friedman2026CognitiveIntegrityFrameworkComputational213.html</link>
       <guid isPermaLink="false">work-Friedman2026CognitiveIntegrityFrameworkComputational213</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
+      <description>Paper · Zenodo · Cognitive Security · 2026</description>
     </item>
     <item>
       <title>docxplus — the Intelligent Document Container</title>
@@ -195,13 +202,6 @@
       <guid isPermaLink="false">work-Friedman2026PoolsRulesToolsTemplate190</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Active Inference · 2026</description>
-    </item>
-    <item>
-      <title>Redacted Report Template: Disclosure Control and Release Audit</title>
-      <link>https://danielarifriedman.com/works/Friedman2026RedactedReportTemplateDisclosure189.html</link>
-      <guid isPermaLink="false">work-Friedman2026RedactedReportTemplateDisclosure189</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
   </channel>
 </rss>

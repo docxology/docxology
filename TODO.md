@@ -8,9 +8,10 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-08-31 (agent-ergonomics doc pass; see MAINT log entry in
-  CHANGELOG 2026-08-31 and `REVIEW_LOG_2026-08-31.md`; release-integrity and
-  package-migration gating unchanged from the 2026-08-26 review)
+- Last reviewed: 2026-09-02 (daf-stack docxsite pass: reconciled the
+  Deferred-leftovers tail with the 2026-08-30 DOC-005 resolution; see
+  CHANGELOG 2026-09-02; release-integrity and package-migration gating
+  unchanged from the 2026-08-26 review)
 
 ## Completed / Closed (2026-08-01)
 
@@ -125,7 +126,7 @@ Comprehensive follow-up pass:
 - Acceptance: all uncatalogued repositories have ownership, fork/archive state, catalog role, exclusion reason, and review status
 - Dependencies: `data/github-repositories.json`
 - Remaining primary-review items — RESOLVED 2026-08-30 (verification report:
-  `daf-stack/report-docxology-doc005.md`). All four named repos were already
+  `../daf-stack/report-docxology-doc005.md`). All four named repos were already
   classified/promoted by the 2026-08-26 catalog cycle: Un0 (empty-repo note,
   promoted), multi-time (description now substantive — the "missing" premise
   is stale), math4wisdom-superhuman-docs-archive (promotion IS the cited human
@@ -247,5 +248,6 @@ would reclassify 110 of 191 `metadata.json` files; bibliography remains the
 catalog authority.
 
 No further deferred code items from that review remain open. Intake still
-blocked on DOC-004 (paired-publication `needs_review`) and the four DOC-005
-primary deferrals above.
+blocked on DOC-004 (paired-publication `needs_review`); the four DOC-005
+primary deferrals are resolved — see the DOC-005 resolution block above
+(2026-08-30, verification report `../daf-stack/report-docxology-doc005.md`).

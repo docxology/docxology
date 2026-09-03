@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T17:20:05Z",
+  "generated_at": "2026-09-03T02:37:16Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,17 +61,17 @@
     }
   ],
   "max_score": 6,
-  "work_count": 211,
+  "work_count": 212,
   "signal_totals": {
-    "persistent_id": 196,
-    "public_archive": 154,
-    "open_full_text": 189,
-    "source_documents": 194,
+    "persistent_id": 197,
+    "public_archive": 155,
+    "open_full_text": 190,
+    "source_documents": 195,
     "executable_code": 63,
-    "agent_readable": 194
+    "agent_readable": 195
   },
   "band_counts": {
-    "independently reproducible": 149,
+    "independently reproducible": 150,
     "independently checkable": 45,
     "citable only": 8,
     "unverified": 9
@@ -82,10 +82,10 @@
     "2": 4,
     "3": 8,
     "4": 37,
-    "5": 88,
+    "5": 89,
     "6": 61
   },
-  "mean_score": 4.692,
+  "mean_score": 4.693,
   "works": [
     {
       "num": 10,
@@ -3047,6 +3047,25 @@
       "repositories": []
     },
     {
+      "num": 215,
+      "citation_key": "Friedman2026ForensicAuditMillenniumLeanClay215",
+      "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
+      "year": 2026,
+      "domain_name": "Other",
+      "type": "Report",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": false,
+        "agent_readable": true
+      },
+      "repositories": []
+    },
+    {
       "num": 23,
       "citation_key": "Friedman2025TemporalDepthCoherentSelf023",
       "title": "Temporal Depth in a Coherent Self and in Depersonalization",
@@ -3716,7 +3735,7 @@
       "citation_key": "Friedman2026CognitiveIntegrityFrameworkComputational213",
       "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
       "year": 2026,
-      "domain_name": "Computational",
+      "domain_name": "Cognitive Security",
       "type": "Paper",
       "score": 4,
       "band": "independently checkable",
@@ -3735,7 +3754,7 @@
       "citation_key": "Friedman2026CognitiveIntegrityFrameworkPractical214",
       "title": "Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)",
       "year": 2026,
-      "domain_name": "Computational",
+      "domain_name": "Cognitive Security",
       "type": "Paper",
       "score": 4,
       "band": "independently checkable",

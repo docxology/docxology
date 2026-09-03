@@ -9,7 +9,7 @@ Documentation index for all publications. Each folder contains:
 
 For new GitHub + Zenodo releases, Zenodo-only records, and GitHub-only software triage, use the canonical publication intake runbook: [docs/operations/publication-sync.md](../docs/operations/publication-sync.md).
 
-## Papers (194)
+## Papers (195)
 
 | # | Folder | PDF | Year | Topic |
 |---|--------|-----|------|-------|

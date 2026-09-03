@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T21:35:01Z",
+  "generated_at": "2026-09-03T05:40:12Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 211,
+    "works": 212,
     "software_catalogued": 147,
     "owned_software_catalogued": 108,
     "aii_software_catalogued": 39,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "63de138cbdad924097e704b41851ea375e9d26c12308392dd5abf9858c6cbbab",
+      "sha256": "d551be0b7043d1db6e6cd4354f208706517329ff24440011183727f3c3fcc141",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 170214,
-          "sha256": "d82597ccb62778f1d244e693f94cd392c6533c5c19adcee329dd4a8da2ebdd38"
+          "bytes": 171062,
+          "sha256": "c5d51bca154c1fae2f0c7fc31a2c6cf415cbc4e99c6afedfc82f0a0354a432d5"
         },
         {
           "path": "data/software.json",
           "bytes": 72743,
-          "sha256": "c480a1ec634bc2b9636056e89265ea043fdaf70265deea8b8102d6d1f58c654e"
+          "sha256": "8f204f30160168a0c66310e99a45cf167fcbfa290615bb3e178acaca399213ec"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "996a8f80a84f71ac841f74f7b2ab8bad8988b9663682839d5c0687e7e67a811d"
+          "sha256": "2c8697b6af04b03c1b2516139373fddd224c8892b4601dddc0b6122a700e11f2"
         },
         {
           "path": "data/github-repositories.json",
@@ -7500,8 +7500,8 @@
       "num": 213,
       "citation_key": "Friedman2026CognitiveIntegrityFrameworkComputational213",
       "year": 2026,
-      "domain": "💻",
-      "domain_name": "Computational",
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
       "type": "Paper",
       "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
       "venue": "Zenodo",
@@ -7515,14 +7515,16 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 214,
       "citation_key": "Friedman2026CognitiveIntegrityFrameworkPractical214",
       "year": 2026,
-      "domain": "💻",
-      "domain_name": "Computational",
+      "domain": "🛡️",
+      "domain_name": "Cognitive Security",
       "type": "Paper",
       "title": "Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)",
       "venue": "Zenodo",
@@ -7536,7 +7538,32 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
+    },
+    {
+      "num": 215,
+      "citation_key": "Friedman2026ForensicAuditMillenniumLeanClay215",
+      "year": 2026,
+      "domain": "🔍",
+      "domain_name": "Other",
+      "type": "Report",
+      "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.22243473",
+      "doi": "10.5281/zenodo.22243473",
+      "docs_path": "papers/2026_MillenniumAudit/",
+      "has_paper_folder": true,
+      "has_full_text": true,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "/papers/2026_MillenniumAudit/full_text.md",
+      "authors": [
+        "Daniel Ari Friedman"
+      ]
     }
   ],
   "software": [
@@ -9308,14 +9335,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 211 works.",
+      "claim": "The curated bibliography contains 212 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-08-28T21:34:19+00:00",
+      "checked_at": "2026-09-03T05:36:31+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9323,14 +9350,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 194 per-paper documentation folders.",
+      "claim": "The repository contains 195 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-08-28T21:34:19+00:00",
+      "checked_at": "2026-09-03T05:36:31+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

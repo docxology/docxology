@@ -11,14 +11,14 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-08-29",
+  "dateModified": "2026-09-03",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#works",
       "name": "Curated Works Bibliography",
-      "description": "211 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
+      "description": "212 bibliography rows with citation keys, DOI links, domains, and documentation paths.",
       "url": "https://danielarifriedman.com/data/works.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -432,7 +432,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#full-text-corpus",
       "name": "Full-Text Extraction Corpus",
-      "description": "189 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 139 images/ subdirectories with 8,944 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
+      "description": "190 extracted full_text.md files with page-level text from paper PDFs and ODT/DOCX/PPTX sources, plus 139 images/ subdirectories with 8,944 extracted figures and inline image references. Path pattern: papers/{YYYY_Topic}/full_text.md and papers/{YYYY_Topic}/images/.",
       "url": "https://danielarifriedman.com/papers/",
       "encodingFormat": "application/json",
       "creator": {

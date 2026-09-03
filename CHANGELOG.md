@@ -2,6 +2,21 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-09-02
+
+- **MillenniumAudit follow-through and counts refresh (daf-stack docxsite pass):**
+  - Linked the standalone implementation repository [`docxology/millennium_audit`](https://github.com/docxology/millennium_audit) from `papers/2026_MillenniumAudit/` (README pointer and `github_repo` metadata field; AGENTS/SKILL/`papers/paper_metadata.json` regenerated).
+  - Mirrored the full README into `.github/README.md` for GitHub profile rendering and dropped the duplicated tagline from the root README.
+  - Refreshed `reports/current_counts.md` and `data/current-counts.json` via the documented pipeline (`build_current_counts.py`, then `regenerate_all.py --validate`) so the volatile totals no longer predate bibliography row 215, and aligned the hand-authored count sources with the parsed totals: `pages/BIBLIOGRAPHY.md` hero lines now **212** works / **195** indexed folders (types row gains `**1** Report`), `papers/README.md` heading now `## Papers (195)` (`test_count_consistency` 4/4 passing).
+
+## 2026-09-01
+
+- **Publication Intake — MillenniumAudit (#215):**
+  - Cataloged Zenodo record `22243473` (concept DOI `10.5281/zenodo.22243472`, version DOI `10.5281/zenodo.22243473`): *Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)* — a statement-level audit that independently reproduces every kernel-hygiene claim of the AIX Global MillenniumLean package (clean build, zero `sorry`, zero project axioms) under the pinned toolchain, then audits what the theorem types actually say; verdict: none of the six Clay Millennium Problems is resolved (14 line-anchored, byte-verified findings).
+  - Added paper documentation folder `papers/2026_MillenniumAudit/` with README, AGENTS, SKILL, CITATION.cff, `metadata.json`, source PDF, and full-text extraction.
+  - Added bibliography row 215 and generated the work page, bibliography exports (`bibliography.bib`, `bibliography.csl.json`, `bibliography.ris`), `data/works.json`, `data/publications-ld.json`, work enrichment, and per-paper site cross-references.
+- **Doc-pass residue cleanup:** corrected `manuscript/` → `docs/manuscript/` paths across paper full-text extractions plus bibliography metadata corrections (2026-08-31 pass residue); removed the dated `REVIEW_LOG_2026-08-31.md` scratch report (point-in-time; content remains in git history).
+
 ## 2026-08-31
 
 - **Agent-navigation doc pass** (see `REVIEW_LOG_2026-08-31.md`): pointed the

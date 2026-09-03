@@ -15,7 +15,7 @@ keywords: "Daniel Ari Friedman, reproducibility, open science, verification, res
 
 ---
 
-What a third party can check about each of 211 catalogued works without asking the author for anything.
+What a third party can check about each of 212 catalogued works without asking the author for anything.
 
 This ledger scores **artifact availability, not correctness**. A work can hold a perfect
 score and still be wrong; an important result published before persistent identifiers
@@ -28,20 +28,20 @@ from that computation.
 
 | Signal | Works | Share | What it lets a reader do |
 | --- | --- | --- | --- |
-| Persistent identifier | 196 / 211 | 93% | Resolve a DOI instead of trusting a live URL. |
-| Public archive | 154 / 211 | 73% | Fetch a deposited copy from a third-party archive. |
-| Open full text | 189 / 211 | 90% | Read the full text without a paywall or request. |
-| Source documents | 194 / 211 | 92% | Inspect the working folder behind the entry. |
-| Executable code | 63 / 211 | 30% | Run the software that produced or accompanies it. |
-| Agent-readable guidance | 194 / 211 | 92% | Parse structured guidance without scraping prose. |
+| Persistent identifier | 197 / 212 | 93% | Resolve a DOI instead of trusting a live URL. |
+| Public archive | 155 / 212 | 73% | Fetch a deposited copy from a third-party archive. |
+| Open full text | 190 / 212 | 90% | Read the full text without a paywall or request. |
+| Source documents | 195 / 212 | 92% | Inspect the working folder behind the entry. |
+| Executable code | 63 / 212 | 30% | Run the software that produced or accompanies it. |
+| Agent-readable guidance | 195 / 212 | 92% | Parse structured guidance without scraping prose. |
 
-Mean score 4.692 of 6.
+Mean score 4.693 of 6.
 
 ## Bands
 
 | Band | Works | Share | Meaning |
 | --- | --- | --- | --- |
-| independently reproducible | 149 | 71% | Code, archive, and text are all reachable without contacting the author. |
+| independently reproducible | 150 | 71% | Code, archive, and text are all reachable without contacting the author. |
 | independently checkable | 45 | 21% | Enough is public to confirm the record and read the argument. |
 | citable only | 8 | 4% | The record resolves, but little beyond it is machine-checkable. |
 | unverified | 9 | 4% | Nothing here is independently checkable from this site alone. |
