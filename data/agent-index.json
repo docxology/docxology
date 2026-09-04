@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "generated_at": "2026-09-04T05:49:16+00:00",
+  "generated_at": "2026-09-04T06:11:51+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -1082,12 +1082,12 @@
         "paired_publications": {
           "already_reviewed": 398,
           "create_new": 0,
-          "github_releases": 229,
-          "needs_review": 4,
-          "pairs": 449,
+          "github_releases": 231,
+          "needs_review": 5,
+          "pairs": 450,
           "strong_pairs": 48,
           "update_existing": 47,
-          "zenodo_records": 150
+          "zenodo_records": 151
         },
         "paper_folder_docs": 195,
         "papers_with_images": 139,
@@ -1095,11 +1095,11 @@
           "Crossref ORCID DOI records": 15,
           "Europe PMC exact author records": 10,
           "GitHub user ActiveInferenceInstitute": 43,
-          "GitHub user docxology": 202,
+          "GitHub user docxology": 206,
           "ORCID work groups": 20,
           "PubMed exact author records": 8,
-          "Zenodo ORCID-linked records": 145,
-          "Zenodo exact-name creator records": 59
+          "Zenodo ORCID-linked records": 148,
+          "Zenodo exact-name creator records": 61
         },
         "software": {
           "active_inference_institute": 39,
@@ -1116,14 +1116,14 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-09-04T05:49:16+00:00",
+      "generated_at": "2026-09-04T06:11:51+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
         "paired_publication_decisions": "data/paired-publication-decisions.json",
-        "paired_publications": "reports/paired_publications_2026-08-31.json",
+        "paired_publications": "reports/paired_publications_2026-09-04.json",
         "paper_folders": "papers/README.md",
-        "public_source_snapshot": "reports/public_source_snapshot_2026-08-26.json",
+        "public_source_snapshot": "reports/public_source_snapshot_2026-09-04.json",
         "software_catalog": "pages/SOFTWARE.md",
         "software_export": "data/software.json",
         "works_export": "data/works.json"
@@ -1176,7 +1176,7 @@
     "catalog": "4bb61e32e94ac455c8bb2920298b0879c8f378f326d787199504bf0ed03d2a1a",
     "reconciliation": "17e1ae54b1d2806b0fc1e0b84ebcc67108470f1ffb1a2123768ad7127196e924",
     "generated_manifest": "405b62a9e7803daecf7e41d00e167c68f27bc049c46e927143b338c1747bae4a",
-    "current_counts": "e10409965a8eec0c04094e71613ff9605fcb9cf7991d2b9d37f135fa4fa96fd3"
+    "current_counts": "a4a512942a843ba5ce38273b0293340acba4f805061edb06c20822474d67f4de"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -1250,12 +1250,12 @@
     "paired_publications": {
       "already_reviewed": 398,
       "create_new": 0,
-      "github_releases": 229,
-      "needs_review": 4,
-      "pairs": 449,
+      "github_releases": 231,
+      "needs_review": 5,
+      "pairs": 450,
       "strong_pairs": 48,
       "update_existing": 47,
-      "zenodo_records": 150
+      "zenodo_records": 151
     },
     "paper_folder_docs": 195,
     "papers_with_images": 139,
@@ -1263,11 +1263,11 @@
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
       "GitHub user ActiveInferenceInstitute": 43,
-      "GitHub user docxology": 202,
+      "GitHub user docxology": 206,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
-      "Zenodo ORCID-linked records": 145,
-      "Zenodo exact-name creator records": 59
+      "Zenodo ORCID-linked records": 148,
+      "Zenodo exact-name creator records": 61
     },
     "software": {
       "active_inference_institute": 39,
