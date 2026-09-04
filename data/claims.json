@@ -153,9 +153,9 @@
         "pages/DISCOVERY.md",
         "pages/PROFILE.md"
       ],
-      "checked_at": "2026-08-26",
+      "checked_at": "2026-09-04",
       "confidence": "high",
-      "verification_method": "Current AII officer and board pages establish the roles and board membership; ProPublica's IRS-derived record corroborates the 501(c)(3) status, EIN, and ruling month.",
+      "verification_method": "Current AII officer and board pages establish the roles and board membership; ProPublica's IRS-derived record corroborates the 501(c)(3) status, EIN, and ruling month. | 2026-09-04 DOC-015 review (owner: Daniel Ari Friedman, daf-stack-pass session): applied — verified current against the live cited sources with no wording change. Officers page: Friedman President/Treasurer, Mikhailova VP/Secretary; board page: Virginia Bleu Knight Board Member; SAB page: '32 current members'; Textbook Group: '9 cohorts' on the 2022 textbook with the first 2026 Fundamentals cohort live. Claim text unchanged; checked_at advanced.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "Officer and board roles are time-sensitive. The refreshed sources do not re-establish historical office dates for Knight; keep any such history separately dated."
     },
@@ -183,9 +183,9 @@
         "pages/LINKS.md",
         "pages/DISCOVERY.md"
       ],
-      "checked_at": "2026-08-26",
+      "checked_at": "2026-09-04",
       "confidence": "medium",
-      "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 31 link to a public page.",
+      "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 31 link to a public page. | 2026-09-04 DOC-015 review (owner: Daniel Ari Friedman, daf-stack-pass session): applied — verified current against the live cited sources with no wording change. Officers page: Friedman President/Treasurer, Mikhailova VP/Secretary; board page: Virginia Bleu Knight Board Member; SAB page: '32 current members'; Textbook Group: '9 cohorts' on the 2022 textbook with the first 2026 Fundamentals cohort live. Claim text unchanged; checked_at advanced.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "State this as the current public membership count, not a cohort announcement or a claim about any specific announcement month."
     },
@@ -198,9 +198,9 @@
         "README.md",
         "pages/VIDEOS.md"
       ],
-      "checked_at": "2026-08-26",
+      "checked_at": "2026-09-04",
       "confidence": "medium",
-      "verification_method": "Current AII Textbook Group page states nine cohorts on the 2022 textbook and a live first 2026 Fundamentals cohort.",
+      "verification_method": "Current AII Textbook Group page states nine cohorts on the 2022 textbook and a live first 2026 Fundamentals cohort. | 2026-09-04 DOC-015 review (owner: Daniel Ari Friedman, daf-stack-pass session): applied — verified current against the live cited sources with no wording change. Officers page: Friedman President/Treasurer, Mikhailova VP/Secretary; board page: Virginia Bleu Knight Board Member; SAB page: '32 current members'; Textbook Group: '9 cohorts' on the 2022 textbook with the first 2026 Fundamentals cohort live. Claim text unchanged; checked_at advanced.",
       "maintenance_owner": "EDUCATOR",
       "caveat": "The total is ten cohorts only when the current live 2026 cohort is included; do not describe all ten as completed."
     },

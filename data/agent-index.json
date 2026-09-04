@@ -231,21 +231,21 @@
     },
     {
       "id": "public-source-snapshot",
-      "path": "/reports/public_source_snapshot_2026-08-26.json",
+      "path": "/reports/public_source_snapshot_2026-09-04.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "public-source-inventory",
-      "path": "/reports/public_source_inventory_2026-08-26.json",
+      "path": "/reports/public_source_inventory_2026-09-04.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "paired-publications",
-      "path": "/reports/paired_publications_2026-08-31.json",
+      "path": "/reports/paired_publications_2026-09-04.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1165,7 +1165,7 @@
     "videos": "5c68f56ffb9e985cab9f97803e9c93956e6e7cc91994f3cc1d068dfefad41a1d",
     "videos_index": "7f4e72d2ceeb5f67c999b7a679c96a1fbf5417b45051d92d02e88c817f94ee76",
     "search": "e4f4e836ce715cd930e63d9ac2b6e03f6974997f2205f85665e75af144735f9f",
-    "claims": "87d891e8a5f4d47d11f68a543170980dd6f4dc22d2ce6529e52062c38b325c69",
+    "claims": "17a1497321ad70b241ba1534f6b3e14ff835ade11b70b2099b2146b9762a3c04",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "a752fc6020b96a598afdec47182797059da3cc0fc94acc5d229b90cb978949e1",
     "repository_classification": "89691ff0a8001bf00c1fd6b2d84863d47afd45dea30b43b251c6238051b91eae",
