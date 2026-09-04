@@ -18,26 +18,26 @@
     "full_text_papers": 190,
     "generated_exports": {
       "data_publications_ld_main_entity": 212,
-      "data_software_json": 147,
-      "data_software_ld_main_entity": 147,
+      "data_software_json": 148,
+      "data_software_ld_main_entity": 148,
       "data_works_json": 212
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 43,
       "archived": 5,
       "curated": 147,
-      "docxology": 202,
+      "docxology": 206,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 85,
-      "forks": 87,
+      "fork_docxology": 86,
+      "forks": 88,
       "primary_ActiveInferenceInstitute": 41,
-      "primary_docxology": 117,
-      "primary_total": 158,
+      "primary_docxology": 120,
+      "primary_total": 161,
       "private": 0,
-      "public": 245,
-      "recently_updated": 182,
-      "total": 245,
-      "uncataloged": 98
+      "public": 249,
+      "recently_updated": 187,
+      "total": 249,
+      "uncataloged": 102
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -69,8 +69,8 @@
     },
     "software": {
       "active_inference_institute": 39,
-      "curated_total": 147,
-      "docxology_owned": 108
+      "curated_total": 148,
+      "docxology_owned": 109
     },
     "types": {
       "Books": 5,
@@ -82,7 +82,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-09-03T05:36:31+00:00",
+  "generated_at": "2026-09-04T05:49:16+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

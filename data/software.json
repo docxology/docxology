@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-03T05:40:06Z",
+  "generated_at": "2026-09-04T05:47:46Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 147,
+  "count": 148,
   "repositories": [
     {
       "name": "template",
@@ -1287,6 +1287,18 @@
       "updated_or_year": "2026-08",
       "paper_path": "papers/2026_DocxplusIntelligentDocument/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21983948"
+    },
+    {
+      "name": "millennium_audit",
+      "url": "https://github.com/docxology/millennium_audit",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "papers/2026_MillenniumAudit/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22243473"
     },
     {
       "name": "multi-time",

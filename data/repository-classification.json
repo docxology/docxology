@@ -1,20 +1,20 @@
 {
   "schema_version": "1.4",
-  "generated_at": "2026-08-26T18:58:44Z",
+  "generated_at": "2026-09-04T05:49:49Z",
   "source": "data/github-repositories.json",
   "acknowledged_exclusions_source": "data/repository-exclusions.json",
   "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate, human-reviewed not-catalog decisions (profile/website/test/mirror/duplicate or explicitly reviewed forks) and are marked acknowledged only when their full_name and immutable github_id/github_node_id match the reviewed repository.",
   "summary": {
-    "total_inventory": 245,
-    "uncatalogued": 98,
-    "forks": 86,
+    "total_inventory": 249,
+    "uncatalogued": 102,
+    "forks": 87,
     "acknowledged_forks": 86,
-    "primary_requires_review": 0,
+    "primary_requires_review": 3,
     "acknowledged_excluded": 12,
     "archived": 4,
-    "missing_description": 9,
+    "missing_description": 10,
     "short_description": 16,
-    "substantive_description": 73
+    "substantive_description": 76
   },
   "repositories": [
     {
@@ -515,6 +515,26 @@
       "reviewed_at": "2026-08-26"
     },
     {
+      "full_name": "docxology/cognitive_integrity",
+      "github_id": 1143728491,
+      "github_node_id": "R_kgDORCvpaw",
+      "name": "cognitive_integrity",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/cognitive_integrity",
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "description": "Cognitive Integrity Framework (CIF): Formal security architecture for multiagent systems",
+      "description_quality": "substantive",
+      "language": "Python",
+      "topics": [],
+      "recently_updated": true,
+      "relevance": "unknown",
+      "catalog_role": "not_curated",
+      "exclusion_reason": "primary_repo_requires_manual_review",
+      "review_status": "defer"
+    },
+    {
       "full_name": "docxology/Cortex.jl",
       "github_id": 1319832921,
       "github_node_id": "R_kgDOTqsNWQ",
@@ -592,6 +612,35 @@
       "acknowledged_reason": "fork_not_curated",
       "reviewed_by": "principal",
       "reviewed_at": "2026-08-26"
+    },
+    {
+      "full_name": "docxology/dicklesworthstone_meta_operator",
+      "github_id": 1356152932,
+      "github_node_id": "R_kgDOUNVAZA",
+      "name": "dicklesworthstone_meta_operator",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/dicklesworthstone_meta_operator",
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "description": "Meta-operator over the Dicklesworthstone GitHub corpus: clone, verify upstream sync, orchestrate, interpret, dashboard",
+      "description_quality": "substantive",
+      "language": "HTML",
+      "topics": [
+        "automation",
+        "dashboard",
+        "devops",
+        "git",
+        "github-api",
+        "orchestration",
+        "repository-management",
+        "upstream-sync"
+      ],
+      "recently_updated": true,
+      "relevance": "unknown",
+      "catalog_role": "not_curated",
+      "exclusion_reason": "primary_repo_requires_manual_review",
+      "review_status": "defer"
     },
     {
       "full_name": "docxology/docxology",
@@ -1479,6 +1528,26 @@
       "reviewed_at": "2026-08-26"
     },
     {
+      "full_name": "docxology/millennium_audit",
+      "github_id": 1355098724,
+      "github_node_id": "R_kgDOUMUqZA",
+      "name": "millennium_audit",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/millennium_audit",
+      "fork": false,
+      "archived": false,
+      "private": false,
+      "description": "Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types. Zenodo DOI 10.5281/zenodo.22243473",
+      "description_quality": "substantive",
+      "language": "Python",
+      "topics": [],
+      "recently_updated": true,
+      "relevance": "unknown",
+      "catalog_role": "not_curated",
+      "exclusion_reason": "primary_repo_requires_manual_review",
+      "review_status": "defer"
+    },
+    {
       "full_name": "docxology/mission-control",
       "github_id": 1181080007,
       "github_node_id": "R_kgDORmXZxw",
@@ -1901,7 +1970,7 @@
       "description_quality": "substantive",
       "language": "Python",
       "topics": [],
-      "recently_updated": false,
+      "recently_updated": true,
       "relevance": "unknown",
       "catalog_role": "acknowledged_not_curated",
       "exclusion_reason": "fork_not_curated",
@@ -1957,6 +2026,26 @@
       "acknowledged_reason": "profile_infrastructure",
       "reviewed_by": "principal",
       "reviewed_at": "2026-08-26"
+    },
+    {
+      "full_name": "docxology/RGMs",
+      "github_id": 1351075887,
+      "github_node_id": "R_kgDOUIfILw",
+      "name": "RGMs",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/RGMs",
+      "fork": true,
+      "archived": false,
+      "private": false,
+      "description": "",
+      "description_quality": "missing",
+      "language": "",
+      "topics": [],
+      "recently_updated": true,
+      "relevance": "unknown",
+      "catalog_role": "not_curated",
+      "exclusion_reason": "fork_not_curated",
+      "review_status": "defer"
     },
     {
       "full_name": "docxology/Rocket.jl",

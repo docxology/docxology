@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *108 original repositories · 39 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *109 original repositories · 39 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -145,6 +145,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [thalia](https://github.com/docxology/thalia) | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · [📄](../papers/2026_THALIA/) · [Zenodo](https://doi.org/10.5281/zenodo.21763244) | Python | 0 | 2026-08 |
 | [math4wisdom-superhuman-docs-archive](https://github.com/docxology/math4wisdom-superhuman-docs-archive) | Structured, read-only Math4Wisdom Superhuman Docs archive | TypeScript | 0 | 2026-08 |
 | [docxplus](https://github.com/docxology/docxplus) | docxplus — the Intelligent Document Container: format, tools, and formal specification · [📄](../papers/2026_DocxplusIntelligentDocument/) · [Zenodo](https://doi.org/10.5281/zenodo.21983948) | Python | 0 | 2026-08 |
+| [millennium_audit](https://github.com/docxology/millennium_audit) | Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · [Zenodo](https://doi.org/10.5281/zenodo.22243473) · [📄](../papers/2026_MillenniumAudit/) | Python | 0 | 2026-09 |
 | [multi-time](https://github.com/docxology/multi-time) | Multi-frequency time-series analysis toolkit built on sktime — validates irregular series, tests stationarity and Granger causality, and evaluates forecasting models | Python | 0 | 2026-08 |
 
 ---
@@ -212,9 +213,9 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Education | 6 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT` |
 | Other | 6 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP`, `math4wisdom-superhuman-docs-archive` |
 | Research Practice | 6 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register` |
-| **docxology subtotal** | **108** | |
+| **docxology subtotal** | **109** | |
 | AII Contributions (non-fork) | 39 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **147** | |
+| **Grand Total** | **148** | |
 
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; the AII GitHub account is a **User** account, not an Organization. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 
