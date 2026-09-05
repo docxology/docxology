@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-05T17:58:17Z",
-  "source_commit_at_generation": "3f7aa9386c7ddb45ad6476c53af6f285ab7e3c7b",
+  "generated_at": "2026-09-05T20:58:35Z",
+  "source_commit_at_generation": "118370e5ace0c5d1b0115eb1cef36336aba8ce8f",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 871721222,
+    "source_bytes": 873246802,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5098,
-    "artifact_bytes": 872613716
+    "artifact_file_count": 5113,
+    "artifact_bytes": 874141734
   },
   "included_files": [
     {
@@ -5513,6 +5513,11 @@
       "sha256": "7daa1bc02c67b93416afab302370d44570d39148d2a8384aed473c7070b3e8f7"
     },
     {
+      "path": "code/orchestrators/build_github_readme.py",
+      "bytes": 3084,
+      "sha256": "90bb8db03da008f98dbc5b5318e4172117a18e7b48eee6f5b5b7c0c9b77341fe"
+    },
+    {
       "path": "code/orchestrators/build_pages_artifact.py",
       "bytes": 27565,
       "sha256": "dd2364cb838dc79d62c2008b8f10ea1674eab4aefb1f224b8841337dacd12e79"
@@ -6063,6 +6068,11 @@
       "sha256": "5a51bbdab472871bedc5d85998773450f5aefabf8f9aa1a03c934d6d3e7b068b"
     },
     {
+      "path": "code/tests/test_code_agents_doc.py",
+      "bytes": 2054,
+      "sha256": "ec238b79357c96d22d648d631d327792b7ca0b18b2df354829628c09ceaca883"
+    },
+    {
       "path": "code/tests/test_collection_jsonld.py",
       "bytes": 3126,
       "sha256": "44803ce461d11c1e556ebafe32e7d47b1a1ab554382862d0d185f955356c6865"
@@ -6143,9 +6153,24 @@
       "sha256": "1f1fb98b4cdc1b911780525275803bf60d4aa3444c776f88ad783d64cf6514de"
     },
     {
+      "path": "code/tests/test_generation_plan_docs.py",
+      "bytes": 1933,
+      "sha256": "fb8ab517c174ba6971edca21d61372a6016c477a5365f90c5da0e08ef8c4046e"
+    },
+    {
+      "path": "code/tests/test_github_readme_mirror.py",
+      "bytes": 2450,
+      "sha256": "b38761b53a88adcd6edd7b076da2c59caa51e38b2f6c86ff5637882f12b8a6dd"
+    },
+    {
       "path": "code/tests/test_gsc_followup_preflight.py",
       "bytes": 1274,
       "sha256": "b95f734531b68f0975e4f50f7e6f5a8a670d48f7b2301c5fc1634487b6f9a86f"
+    },
+    {
+      "path": "code/tests/test_interpreter_consistency.py",
+      "bytes": 4484,
+      "sha256": "6c8d96b23a7d5dd6ea9dce72dbda67bec0f84ecb94e248e8cdbaaed93c2e8b79"
     },
     {
       "path": "code/tests/test_light_theme.py",
@@ -16943,6 +16968,11 @@
       "sha256": "bd5fa25fa84a3a852ade5f38b427ba608402c5b67c25f077648467b399b32dc5"
     },
     {
+      "path": "reports/accessibility_static_2026-09-05.json",
+      "bytes": 1057480,
+      "sha256": "1bd61e1575c2d1eb91f839907ce4abe27192c3f8fb99eb28e693e0326bc966b6"
+    },
+    {
       "path": "reports/ambiguous_pairs_triage_2026-06-26.md",
       "bytes": 2120,
       "sha256": "7a6e4fb01a8870e64ec2358bfc1fab4749adf2cf38c44262ed12c7a022a6a761"
@@ -17158,6 +17188,11 @@
       "sha256": "75baeae262e23007b82716b378d15464245295761c66eb750365a57e48537c42"
     },
     {
+      "path": "reports/external_links_2026-09-05.json",
+      "bytes": 367475,
+      "sha256": "511a2f3776da84e9deabb8767015b308801ae93eadf266f73a7374d51d814cde"
+    },
+    {
       "path": "reports/external_links_triage_2026-05-13.json",
       "bytes": 9162,
       "sha256": "f815218d7b440b9e63b9a7189326ce2f19becf46f12f00cf126faf3732302268"
@@ -17216,6 +17251,16 @@
       "path": "reports/external_links_triage_2026-08-29.md",
       "bytes": 10660,
       "sha256": "18cd4a4a4dc0894c39b56278e20263a67a68246377613a07ccef50c5c9164c34"
+    },
+    {
+      "path": "reports/external_links_triage_2026-09-05.json",
+      "bytes": 51739,
+      "sha256": "6a4f44dcfe6fecd8224db6b1433257a45caf19f5177ced48f330fafcde815869"
+    },
+    {
+      "path": "reports/external_links_triage_2026-09-05.md",
+      "bytes": 10725,
+      "sha256": "1200ea3c5a35c31ecfbe46d501d2b8c20c2ffe179c0cc03d8d3bda505524d9c4"
     },
     {
       "path": "reports/gsc_preflight_2026-05-29.json",
@@ -17828,6 +17873,11 @@
       "sha256": "b51ea3aeeaf9ab2f0ab098f7b19711a6387c978caa4cd2a05cb42bd07227d458"
     },
     {
+      "path": "reports/reconciliation_2026-09-04.md",
+      "bytes": 2032,
+      "sha256": "750ccd0c36806e6341f9453a55220c5d3d2f2cf475d2e08411dc197c600d2f93"
+    },
+    {
       "path": "reports/seo-discoverability-audit-2026-06-10.md",
       "bytes": 11430,
       "sha256": "50cc2ceafb7665a95737d04d941f8dbcf00ba049d28a780d858d6ba7a76b191b"
@@ -18049,6 +18099,16 @@
     },
     {
       "path": "reports/source_coverage_2026-09-03.md",
+      "bytes": 4602,
+      "sha256": "c68769cd7e4059880f6fc1352f2013b0a566950a613ee6b2cc4ebb06c335fc23"
+    },
+    {
+      "path": "reports/source_coverage_2026-09-05.json",
+      "bytes": 17522,
+      "sha256": "a752fc6020b96a598afdec47182797059da3cc0fc94acc5d229b90cb978949e1"
+    },
+    {
+      "path": "reports/source_coverage_2026-09-05.md",
       "bytes": 4602,
       "sha256": "c68769cd7e4059880f6fc1352f2013b0a566950a613ee6b2cc4ebb06c335fc23"
     },
@@ -25263,6 +25323,10 @@
       "role": "public control metadata"
     },
     {
+      "path": "reports/asset_size_2026-09-05.json",
+      "role": "public control metadata"
+    },
+    {
       "path": "reports/pages_artifact_growth_2026-07-17.json",
       "role": "public control metadata"
     },
@@ -25412,6 +25476,14 @@
     },
     {
       "path": "reports/public_source_review_2026-09-04.md",
+      "role": "public control metadata"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-05.json",
+      "role": "public control metadata"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-05.md",
       "role": "public control metadata"
     }
   ],

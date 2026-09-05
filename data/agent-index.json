@@ -252,14 +252,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-09-03.json",
+      "path": "/reports/accessibility_static_2026-09-05.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-09-03.json",
+      "path": "/reports/asset_size_2026-09-05.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1143,11 +1143,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 871721222,
+        "source_bytes": 873246802,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5098,
-        "artifact_bytes": 872613716
+        "artifact_file_count": 5113,
+        "artifact_bytes": 874141734
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1178,7 +1178,7 @@
     "work_enrichment": "22b7c727bedab72f02f9810c4852b644e4afe1049e1baf550fad94ca74827067",
     "catalog": "33a6dbea382bf04217c2d5641fb12a970edffadbdd11a46d220b195cdc320bac",
     "reconciliation": "f792c4d2c22795beabcd77b9f0bee180b451197c7ad2e09d4f0ee0df47eb5654",
-    "generated_manifest": "eae00f4ecb19d884b1e96df60d0a2dd6f15469f6131ff7587de0e3665c8dab28",
+    "generated_manifest": "b6b3a286dd6f05eba2843cf1aff0c60c86f6957517f079ab49f1b955f4fa0789",
     "current_counts": "a4a512942a843ba5ce38273b0293340acba4f805061edb06c20822474d67f4de"
   },
   "source_provenance": {

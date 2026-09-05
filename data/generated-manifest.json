@@ -130,8 +130,8 @@
       "name": "Source coverage exceptions",
       "outputs": [
         "data/coverage-exceptions.json",
-        "reports/source_coverage_2026-09-03.json",
-        "reports/source_coverage_2026-09-03.md"
+        "reports/source_coverage_2026-09-05.json",
+        "reports/source_coverage_2026-09-05.md"
       ],
       "sources": [
         "data/works.json",
@@ -266,7 +266,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-09-03.json"
+        "reports/pages_artifact_growth_2026-09-05.json"
       ],
       "sources": [
         "tracked repository files",
@@ -578,7 +578,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-08-29.json"
+        "reports/external_links_2026-09-05.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -608,8 +608,8 @@
     {
       "name": "Public-source review record",
       "outputs": [
-        "reports/public_source_review_2026-09-04.json",
-        "reports/public_source_review_2026-09-04.md"
+        "reports/public_source_review_2026-09-05.json",
+        "reports/public_source_review_2026-09-05.md"
       ],
       "sources": [
         "reports/public_source_snapshot_*.json",
@@ -628,18 +628,18 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-08-29.json",
-        "reports/external_links_triage_2026-08-29.md"
+        "reports/external_links_triage_2026-09-05.json",
+        "reports/external_links_triage_2026-09-05.md"
       ],
       "sources": [
-        "reports/external_links_2026-08-29.json"
+        "reports/external_links_2026-09-05.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-09-03.json"
+        "reports/asset_size_2026-09-05.json"
       ],
       "sources": [
         "root HTML pages",
@@ -653,7 +653,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-09-03.json"
+        "reports/accessibility_static_2026-09-05.json"
       ],
       "sources": [
         "root HTML pages",
