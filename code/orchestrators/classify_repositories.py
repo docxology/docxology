@@ -12,8 +12,12 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 IN = REPO_ROOT / "data" / "github-repositories.json"
 OUT = REPO_ROOT / "data" / "repository-classification.json"
 EXCLUSIONS = REPO_ROOT / "data" / "repository-exclusions.json"
-EXCLUSIONS_SCHEMA_VERSION = "1.3"
+EXCLUSIONS_SCHEMA_VERSION = "1.4"
 FORK_EXCLUSION_REASON = "fork_not_curated"
+# ``reviewed_by`` provenance. "principal" is an individual decision about that
+# repository; "standing_policy" applies an already-recorded principal decision to
+# a repository nobody looked at one by one, and must name it in ``policy_source``.
+STANDING_POLICY_REVIEWER = "standing_policy"
 
 
 def _is_iso_date(value: object) -> bool:
@@ -48,6 +52,12 @@ def validate_acknowledged_exclusions(payload: object) -> dict[str, dict]:
     repository from the review queue, so a provenance-free or path-only
     exclusion is just as capable of creating a false green as a malformed fork
     exclusion.
+
+    A ``standing_policy`` reviewer is held to a stricter shape than an
+    individual one: it must cite the principal decision it applies, and it may
+    only clear a fork.  Without that, "the policy covers it" would become a way
+    to retire a primary repository from the review queue without anyone ever
+    deciding anything about it.
     """
     if not isinstance(payload, dict):
         raise ValueError("repository exclusions must be a JSON object")
@@ -105,6 +115,18 @@ def validate_acknowledged_exclusions(payload: object) -> dict[str, dict]:
             raise ValueError(
                 f"repository exclusion {full_name} has an invalid reviewed_at date"
             )
+        if reviewed_by.strip() == STANDING_POLICY_REVIEWER:
+            policy_source = exclusion.get("policy_source")
+            if not isinstance(policy_source, str) or not policy_source.strip():
+                raise ValueError(
+                    f"repository exclusion {full_name} applies a standing policy "
+                    "without naming it in policy_source"
+                )
+            if reason != FORK_EXCLUSION_REASON:
+                raise ValueError(
+                    f"repository exclusion {full_name} may not retire a primary "
+                    "repository by standing policy; record an individual decision"
+                )
         if not _valid_github_id(exclusion.get("github_id")):
             raise ValueError(
                 f"repository exclusion {full_name} has an invalid github_id"
@@ -217,13 +239,15 @@ def build_payload() -> dict:
                 row["reviewed_by"] = ack["reviewed_by"]
             if ack.get("reviewed_at"):
                 row["reviewed_at"] = ack["reviewed_at"]
+            if ack.get("policy_source"):
+                row["policy_source"] = ack["policy_source"]
         rows.append(row)
     return {
         "schema_version": "1.4",
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "source": "data/github-repositories.json",
         "acknowledged_exclusions_source": "data/repository-exclusions.json",
-        "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate, human-reviewed not-catalog decisions (profile/website/test/mirror/duplicate or explicitly reviewed forks) and are marked acknowledged only when their full_name and immutable github_id/github_node_id match the reviewed repository.",
+        "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate not-catalog decisions (profile/website/test/mirror/duplicate or public forks) and are marked acknowledged only when their full_name and immutable github_id/github_node_id match the reviewed repository. Each row reports how its decision was reached in reviewed_by: principal means the principal reviewed that repository individually; standing_policy means an already-recorded principal decision was applied to a fork nobody reviewed one by one, and policy_source names that decision.",
         "summary": {
             "total_inventory": len(source.get("repositories", [])),
             "uncatalogued": len(rows),

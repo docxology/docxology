@@ -16,7 +16,6 @@ import argparse
 import sys
 import os
 import json
-import hashlib
 import subprocess
 import shutil
 from pathlib import Path
@@ -347,7 +346,7 @@ def main(argv=None) -> int:
         if result and result != "skipped":
             print(f"  {paper_dir.name}: {result}")
     
-    print(f"\n=== Summary ===")
+    print("\n=== Summary ===")
     print(f"  OK: {stats['ok']}")
     print(f"  Skipped: {stats['skipped']}")
     print(f"  No PDF: {stats['no_pdf']}")

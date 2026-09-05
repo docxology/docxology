@@ -18,7 +18,6 @@ import hashlib
 import re
 from pathlib import Path
 
-import os
 
 REPO = Path(__file__).resolve().parents[2]
 STYLE = REPO / "style.css"

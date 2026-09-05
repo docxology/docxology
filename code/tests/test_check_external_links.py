@@ -112,3 +112,21 @@ def test_cached_report_check_rejects_stale_redirect_scope_and_url_coverage():
 
     assert any("scope does not match" in error for error in errors)
     assert any("URL coverage does not match" in error for error in errors)
+
+
+def test_footer_build_stamp_permalinks_are_out_of_scope():
+    """A URL that changes on every regeneration cannot be a coverage contract.
+
+    The footer stamp links to the HEAD commit, so each regeneration introduced
+    one "missing" SHA and left the previous ones "unexpected" — the cached
+    report could never be current for more than one commit, and the gate that
+    depends on it was permanently red.
+    """
+    text = (
+        '<p class="build-stamp">'
+        '<a href="https://github.com/docxology/docxology/commit/3f7aa938">build 3f7aa938</a></p>'
+        '<a href="https://github.com/docxology/docxology/releases/tag/v1">release</a>'
+    )
+    assert collect_urls_from_text(text) == [
+        "https://github.com/docxology/docxology/releases/tag/v1",
+    ]

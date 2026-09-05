@@ -8,10 +8,11 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
-- Last reviewed: 2026-09-02 (daf-stack docxsite pass: reconciled the
-  Deferred-leftovers tail with the 2026-08-30 DOC-005 resolution; see
-  CHANGELOG 2026-09-02; release-integrity and package-migration gating
-  unchanged from the 2026-08-26 review)
+- Last reviewed: 2026-09-05 (interpreter, lint-gate, doc-drift and
+  exclusion-provenance pass; see CHANGELOG 2026-09-05. DOC-005 gained a
+  standing-policy mechanism for forks and now has exactly three open primary
+  decisions; release-integrity and package-migration gating unchanged from the
+  2026-08-26 review)
 
 ## Completed / Closed (2026-08-01)
 
@@ -125,7 +126,34 @@ Comprehensive follow-up pass:
 - Deliverable: update `data/repository-classification.json` and promote only manually reviewed repositories into `pages/SOFTWARE.md`
 - Acceptance: all uncatalogued repositories have ownership, fork/archive state, catalog role, exclusion reason, and review status
 - Dependencies: `data/github-repositories.json`
-- Remaining primary-review items — RESOLVED 2026-08-30 (verification report:
+- Fork handling — MECHANIZED 2026-09-05. `data/repository-exclusions.json`
+  (schema 1.4) separates `reviewed_by: principal` (an individual decision about
+  that repository) from `reviewed_by: standing_policy` (the principal's
+  2026-08-26 decision that forks stay `fork_not_curated`, applied to a fork
+  nobody reviewed one by one). A standing-policy entry must name the decision in
+  `policy_source` and may only cover a fork; a primary repository is always an
+  individual call, enforced in `classify_repositories.py`. The fork that
+  appeared in the 2026-08-30 refresh (`docxology/RGMs`) is recorded that way, so
+  the fork queue is empty without anyone backdating a review.
+- Open primary decisions (2, awaiting the principal): `docxology/cognitive_integrity`
+  and `docxology/dicklesworthstone_meta_operator`.
+- `docxology/millennium_audit` is a third queue row but NOT a third decision: it
+  is already curated in `pages/SOFTWARE.md` and `data/software.json`. It still
+  shows `primary_repo_requires_manual_review` because the `curated` flag is
+  frozen into `data/github-repositories.json` at inventory-build time, and that
+  snapshot (2026-09-04T05:33Z) predates the promotion — the runbook's documented
+  gotcha. Clearing it needs an authenticated inventory rebuild
+  (`GITHUB_TOKEN="$(gh auth token)" uv run python3
+  code/orchestrators/build_github_inventory.py`), not a review.
+- Worth fixing at the root: `curated` is derived from a *local* file
+  (`curated_keys()` reads `data/software.json`) yet is only recomputed on a
+  network fetch, so every promotion leaves a false review-queue row until
+  someone runs an authenticated refresh. Either give `build_github_inventory.py`
+  an offline `--refresh-curated` mode in the generation plan, or have
+  `classify_repositories.py` consult `data/software.json` directly instead of
+  trusting the frozen flag. Changing it moves queue counts, so it needs its own
+  regeneration and count-consistency pass.
+- Earlier primary-review items — RESOLVED 2026-08-30 (verification report:
   `../daf-stack/report-docxology-doc005.md`). All four named repos were already
   classified/promoted by the 2026-08-26 catalog cycle: Un0 (empty-repo note,
   promoted), multi-time (description now substantive — the "missing" premise

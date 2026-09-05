@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import subprocess
+import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -51,7 +52,7 @@ def test_agent_index_is_current_and_has_stable_routes():
 
 def test_agent_index_check_command_passes():
     result = subprocess.run(
-        ["python3", "code/orchestrators/build_agent_index.py", "--check"],
+        [sys.executable, "code/orchestrators/build_agent_index.py", "--check"],
         cwd=REPO_ROOT,
         capture_output=True,
         text=True,

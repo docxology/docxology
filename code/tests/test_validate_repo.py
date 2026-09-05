@@ -56,12 +56,12 @@ def test_release_commit_must_match_candidate_head():
 
 def test_public_source_review_provenance_mode_matches_validation_tier():
     assert vr.public_source_review_check_args(release=False) == [
-        "python3",
+        sys.executable,
         "code/orchestrators/build_public_source_review.py",
         "--check",
     ]
     assert vr.public_source_review_check_args(release=True) == [
-        "python3",
+        sys.executable,
         "code/orchestrators/build_public_source_review.py",
         "--check",
         "--exact-source-revision",
@@ -70,13 +70,13 @@ def test_public_source_review_provenance_mode_matches_validation_tier():
 
 def test_live_site_check_mode_matches_validation_tier():
     assert vr.live_site_check_args(release=False) == [
-        "python3",
+        sys.executable,
         "code/orchestrators/verify_live_site.py",
         "--check",
         "--allow-source-count-drift",
     ]
     assert vr.live_site_check_args(release=True) == [
-        "python3",
+        sys.executable,
         "code/orchestrators/verify_live_site.py",
         "--check",
     ]

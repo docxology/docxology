@@ -18,7 +18,6 @@ sys.path.insert(0, str(SRC_DIR))
 
 from site_nav import HEAD_EXTRAS  # noqa: E402
 from resume_data import (  # noqa: E402
-    SOURCE_FILES,
     VARIANTS,
     build_resume_payload,
     date_range,

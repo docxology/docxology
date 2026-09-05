@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import subprocess
+import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -8,7 +9,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 
 def test_public_entry_navigation_check_passes():
     result = subprocess.run(
-        ["python3", "code/orchestrators/ensure_agent_navigation.py", "--check"],
+        [sys.executable, "code/orchestrators/ensure_agent_navigation.py", "--check"],
         cwd=REPO_ROOT,
         capture_output=True,
         text=True,

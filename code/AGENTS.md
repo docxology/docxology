@@ -14,7 +14,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `src/site_nav.py` | `render_nav()` for work pages; `render_nav_domain()` for domain landing pages |
 | `src/sitemap_policy.py` | Index-priority URL lists for `sitemap.xml` and IndexNow (open crawl; sitemap is not a crawl gate) |
 | `src/seo_invariants.py` | SEO invariant checks (paper/work canonicals, redirect stubs, sitemap policy alignment) for `validate_repo.py` |
-| `src/report_paths.py` | Shared helpers for date-stamped report artifacts (`latest_report`, `dated_report_path`, `generated_timestamp`, `rel`, ...) — imported by ~26 orchestrators, no CLI of its own |
+| `src/report_paths.py` | Shared helpers for date-stamped report artifacts (`latest_report`, `dated_report_path`, `generated_timestamp`, `rel`, ...) — imported by 31 orchestrators, no CLI of its own |
 | `orchestrators/fetch_youtube_data.py` | CLI entry: personal + institute channels → `data/*.json`; preserves the prior cache when any tab fails or an exact refresh unexpectedly returns no videos (`--fast` merges cached exact dates) |
 | `orchestrators/export_bibliography.py` | Generate BibTeX, CSL JSON, RIS, and `data/works.json` from `pages/BIBLIOGRAPHY.md` |
 | `orchestrators/export_agent_data.py` | Generate `data/software.json`, `data/people.json`, `data/organizations.json`, and `data/claims.json` |
@@ -31,10 +31,10 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `orchestrators/build_evidence_page.py` | Generate `evidence.html` and `pages/EVIDENCE.md` from `data/claims.json` |
 | `orchestrators/build_catalog.py` | Generate `catalog.html` and `data/catalog.json` with Schema.org DataCatalog metadata |
 | `orchestrators/build_updates_page.py` | Generate `updates.html` from `CHANGELOG.md` |
+| `orchestrators/build_github_readme.py` | Render `.github/README.md` from `README.md` with `../`-relocated link targets — GitHub resolves a README's relative links against its own directory, and `.github/README.md` outranks the root one |
 | `orchestrators/build_search_index.py` | Generate `search-index.json` for site and agent discovery |
 | `orchestrators/build_exports_page.py` | Generate `exports.html` HTML hub for citation/JSON exports |
 | `orchestrators/build_sitemap.py` | Generate index-priority `sitemap.xml` (hubs + works + citation exports) |
-| `orchestrators/build_image_sitemap.py` | Generate `sitemap-images.xml` for the art gallery from `data/artworks.json` and local `art/` files |
 | `orchestrators/indexnow_urls.py` | Emit filtered IndexNow URL list from sitemap policy |
 | `orchestrators/gsc_followup_preflight.py` | Local + live preflight before manual GSC follow-up; writes `data/gsc-followup-checklist.json` |
 | `orchestrators/submit_indexnow.py` | Bulk IndexNow POST for index-priority URLs (`--list-urls`, `--dry-run`) |

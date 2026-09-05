@@ -32,7 +32,7 @@ from sync_software_html import (  # noqa: E402
 def test_dry_run_cli():
     expected_docx, expected_aii = parse_software_catalog_counts()
     result = subprocess.run(
-        ["python3", "code/orchestrators/sync_software_html.py"],
+        [sys.executable, "code/orchestrators/sync_software_html.py"],
         cwd=REPO_ROOT,
         capture_output=True,
         text=True,
@@ -52,7 +52,7 @@ def test_check_cli_reports_exact_source_rendered_status_without_writing():
     }
     expected_stale = stale_output_paths(render_outputs(), repo_root=REPO_ROOT)
     result = subprocess.run(
-        ["python3", "code/orchestrators/sync_software_html.py", "--check"],
+        [sys.executable, "code/orchestrators/sync_software_html.py", "--check"],
         cwd=REPO_ROOT,
         capture_output=True,
         text=True,

@@ -15,7 +15,6 @@ import json
 import re
 import sys
 from pathlib import Path
-from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
@@ -339,7 +338,7 @@ def main():
             with open(mp, "w") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
     
-    print(f"\nSummary:")
+    print("\nSummary:")
     print(f"  Placeholder findings fixed: {stats['placeholder_fixed']}")
     print(f"  Truncated findings fixed: {stats['truncated_fixed']}")
     print(f"  Methods improved: {stats['methods_improved']} ({len(folders) - stats['methods_improved']} papers already had specific methods)")

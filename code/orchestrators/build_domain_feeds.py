@@ -23,7 +23,7 @@ import json
 import sys
 from email.utils import format_datetime
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import datetime
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
@@ -140,7 +140,7 @@ def render_feed(slug: str, title: str, description: str, items: list[dict]) -> s
         f"    <title>{h(title)} \u2014 RSS</title>",
         f"    <link>{h(hub)}</link>",
         f"    <description>{h(description)}</description>",
-        f"    <language>en</language>",
+        "    <language>en</language>",
         f"    <lastBuildDate>{h(format_datetime(datetime.fromisoformat(last_build)))}</lastBuildDate>",
         f'    <atom:link href="{h(self_url)}" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />',
     ]

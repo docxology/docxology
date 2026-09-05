@@ -31,6 +31,27 @@ uv run python3 code/orchestrators/regenerate_all.py --validate
 Never invent a publication row from a repository description. Use the
 publication-sync runbook for GitHub release + Zenodo evidence.
 
+## Exclusion provenance
+
+`data/repository-exclusions.json` (schema 1.4) is how a repository leaves the
+review queue without entering the catalog. Every entry records *how* the
+decision was reached in `reviewed_by`, and the two values are never blurred:
+
+| `reviewed_by` | Meaning | Extra requirement |
+| --- | --- | --- |
+| `principal` | The principal reviewed this specific repository on `reviewed_at`. | — |
+| `standing_policy` | An already-recorded principal decision was applied to a repository nobody looked at individually. | `policy_source` must name that decision, and the entry must be a fork. |
+
+`classify_repositories.py` enforces both requirements. A `standing_policy`
+entry without a `policy_source`, or one covering a primary repository, is a
+validation error rather than a quietly acknowledged row — a primary repository
+is always an individual call.
+
+The standing policy in force is the principal's 2026-08-26 decision recorded in
+`TODO.md` DOC-005: public forks stay `fork_not_curated`. A new fork appearing in
+an inventory refresh may be recorded under it; anything else waits for a
+decision.
+
 ## Operational notes (learned 2026-08-07)
 
 - The `curated` flag lives in `data/github-repositories.json` and is computed at

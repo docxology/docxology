@@ -42,8 +42,11 @@ try:
 except ImportError:  # pragma: no cover - package import path
     from .report_paths import dated_report_path, generated_timestamp, latest_report  # type: ignore[import]
 
-from publication_pairing import ZenodoRecord
-from sync_paired_publications import fetch_zenodo_records, parse_bibliography_rows
+from publication_pairing import ZenodoRecord  # noqa: E402
+from sync_paired_publications import (  # noqa: E402
+    fetch_zenodo_records,
+    parse_bibliography_rows,
+)
 
 OUT = dated_report_path("zenodo_uncatalogued", "json")
 

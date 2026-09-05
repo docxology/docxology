@@ -11,10 +11,8 @@ Run: uv run python3 code/orchestrators/batch_enrich_metadata.py --apply
 from __future__ import annotations
 
 import json
-import os
 import re
 import sys
-from collections import Counter, defaultdict
 from pathlib import Path
 from datetime import datetime
 from typing import Any

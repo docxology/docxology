@@ -59,4 +59,10 @@ This repository is the public research, software, citation, evidence, and websit
 ```bash
 uv run python3 code/orchestrators/validate_repo.py
 PYTHONDONTWRITEBYTECODE=1 uv run python3 -m pytest code/tests -q
+uv run --group lint ruff check code
 ```
+
+These are the same three gates CI runs (`.github/workflows/validate.yml` and the
+`validate` job of `pages.yml`). The lint rule set is configured in
+`pyproject.toml` under `[tool.ruff.lint]`, not on the command line, so a local
+run and CI enforce exactly the same rules.

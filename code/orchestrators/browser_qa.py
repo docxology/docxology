@@ -80,7 +80,7 @@ def run_report() -> dict:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     port = free_port()
     server = subprocess.Popen(
-        ["python3", "-m", "http.server", str(port), "--bind", "127.0.0.1"],
+        [sys.executable, "-m", "http.server", str(port), "--bind", "127.0.0.1"],
         cwd=REPO_ROOT,
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,

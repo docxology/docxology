@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-09-03T05:40:12Z
+Generated: 2026-09-05T16:04:16Z
 
-Current public metrics: 212 curated works; 147 catalogued software repositories (108 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 202 docxology + 43 AII public repositories (158 primary, 87 forks).
+Current public metrics: 212 curated works; 148 catalogued software repositories (109 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 206 docxology + 43 AII public repositories (161 primary, 88 forks).
 
 SUMMARY
 -------
@@ -261,7 +261,7 @@ WORKS AND PUBLICATIONS (204)
 [213] 2026 | Paper | Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation) | Zenodo | 10.5281/zenodo.22134545
 [214] 2026 | Paper | Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications) | Zenodo | 10.5281/zenodo.22134547
 
-SOFTWARE (147)
+SOFTWARE (148)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -370,6 +370,7 @@ docxology/crescent-city-intel | TypeScript | https://github.com/docxology/cresce
 docxology/thalia | Python | https://github.com/docxology/thalia | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · · Zenodo | paper: papers/2026_THALIA/ | zenodo: https://doi.org/10.5281/zenodo.21763244
 docxology/math4wisdom-superhuman-docs-archive | TypeScript | https://github.com/docxology/math4wisdom-superhuman-docs-archive | Structured, read-only Math4Wisdom Superhuman Docs archive
 docxology/docxplus | Python | https://github.com/docxology/docxplus | docxplus — the Intelligent Document Container: format, tools, and formal specification · · Zenodo | paper: papers/2026_DocxplusIntelligentDocument/ | zenodo: https://doi.org/10.5281/zenodo.21983948
+docxology/millennium_audit | Python | https://github.com/docxology/millennium_audit | Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · Zenodo | paper: papers/2026_MillenniumAudit/ | zenodo: https://doi.org/10.5281/zenodo.22243473
 docxology/multi-time | Python | https://github.com/docxology/multi-time | Multi-frequency time-series analysis toolkit built on sktime — validates irregular series, tests stationarity and Granger causality, and evaluates forecasting models
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
 ActiveInferenceInstitute/ActiveBlockference | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveBlockference | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework

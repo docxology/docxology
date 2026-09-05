@@ -553,7 +553,10 @@
         "catalog_role": "not_curated, or acknowledged_not_curated for deliberate exclusions",
         "exclusion_reason": "fork_not_curated, primary_repo_requires_manual_review, or acknowledged_not_catalogued",
         "review_status": "defer, acknowledged, accept, reject, or supersede",
-        "acknowledged_reason": "present when review_status is acknowledged; one of profile_repo, profile_infrastructure, test_repo, website, rename_duplicate, private_mirror (see data/repository-exclusions.json)"
+        "acknowledged_reason": "present when review_status is acknowledged; one of profile_repo, profile_infrastructure, test_repo, website, rename_duplicate, private_mirror, empty_repo, fork_not_curated (see data/repository-exclusions.json)",
+        "reviewed_by": "present when review_status is acknowledged; principal for an individual decision about this repository, standing_policy for a fork retired by an already-recorded principal decision",
+        "reviewed_at": "present when review_status is acknowledged; ISO calendar date the decision was recorded",
+        "policy_source": "present only when reviewed_by is standing_policy; names the principal decision that was applied. Its absence on a standing_policy row is a validation error, never a defaulted 'reviewed'"
       }
     },
     "PagesArtifactManifest": {
@@ -776,7 +779,7 @@
       }
     }
   },
-  "schema_registry_version": "1.3",
+  "schema_registry_version": "1.4",
   "schema_examples": {
     "Work": [
       {
@@ -939,7 +942,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-09-03T05:36:31+00:00",
+        "checked_at": "2026-09-04T06:11:51+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1140,11 +1143,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 867174630,
+        "source_bytes": 871721222,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5088,
-        "artifact_bytes": 868065598
+        "artifact_file_count": 5098,
+        "artifact_bytes": 872613716
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1158,24 +1161,24 @@
   },
   "dataset_hashes": {
     "works": "c5d51bca154c1fae2f0c7fc31a2c6cf415cbc4e99c6afedfc82f0a0354a432d5",
-    "software": "f796e7933c1bd49ec26d3b07d92f663ec7a50b78453052a1dab926fe92cd2921",
+    "software": "052f7937ec640a6105b0f18d9acfafce569f87fcfb68f7b27d0459de7163bf24",
     "repositories": "d4b2368d3b24737d236197a064f5ef2e336d8877f68ee203148c27f86495e946",
     "artworks_index": "25adc127f1d2a46abd676ac37735a0bf6d2fbabea25992b609f203f24f78977c",
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "5c68f56ffb9e985cab9f97803e9c93956e6e7cc91994f3cc1d068dfefad41a1d",
     "videos_index": "7f4e72d2ceeb5f67c999b7a679c96a1fbf5417b45051d92d02e88c817f94ee76",
-    "search": "e4f4e836ce715cd930e63d9ac2b6e03f6974997f2205f85665e75af144735f9f",
-    "claims": "17a1497321ad70b241ba1534f6b3e14ff835ade11b70b2099b2146b9762a3c04",
+    "search": "95fa38e13625199df2e6730c833db210920233969cdfe4103fa8e44146551974",
+    "claims": "b1577426f003802718bfba3f17df9bbcd373d81892c7af670e1f8af6f81d3db9",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "a752fc6020b96a598afdec47182797059da3cc0fc94acc5d229b90cb978949e1",
-    "repository_classification": "89691ff0a8001bf00c1fd6b2d84863d47afd45dea30b43b251c6238051b91eae",
-    "people": "b123a4b0599065aad79d308d57beb37f60d83aa6a4e536045cf063a3c0ef70b7",
-    "organizations": "15f92530d6de577bb720c23e0cf2afdf976f45d50b1f4ced23f3f8186c9caa86",
-    "resume": "355751b218fe5581ad413a5d1c9bdc837dc27a8f12abb1a061877294e9f26fc9",
+    "repository_classification": "dc8d446e308062dbb6169fb2f856c05d7a8dad920e09a44c509038d1bd1077dc",
+    "people": "20695a8a842084eefd938ac4207b0a3e4b8784e3a3d1e914a6b43bf15ac6c054",
+    "organizations": "9b6545ff82f440a7f493f0ea1f98f10fd41e85aae394a87e3946278d9e0026f1",
+    "resume": "b8bc32c91205e9641f2cce6f52c6212ce7f5b0e56bf13b14b328f43d6dda6c02",
     "work_enrichment": "22b7c727bedab72f02f9810c4852b644e4afe1049e1baf550fad94ca74827067",
-    "catalog": "4bb61e32e94ac455c8bb2920298b0879c8f378f326d787199504bf0ed03d2a1a",
-    "reconciliation": "17e1ae54b1d2806b0fc1e0b84ebcc67108470f1ffb1a2123768ad7127196e924",
-    "generated_manifest": "405b62a9e7803daecf7e41d00e167c68f27bc049c46e927143b338c1747bae4a",
+    "catalog": "33a6dbea382bf04217c2d5641fb12a970edffadbdd11a46d220b195cdc320bac",
+    "reconciliation": "f792c4d2c22795beabcd77b9f0bee180b451197c7ad2e09d4f0ee0df47eb5654",
+    "generated_manifest": "eae00f4ecb19d884b1e96df60d0a2dd6f15469f6131ff7587de0e3665c8dab28",
     "current_counts": "a4a512942a843ba5ce38273b0293340acba4f805061edb06c20822474d67f4de"
   },
   "source_provenance": {

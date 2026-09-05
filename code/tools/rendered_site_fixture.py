@@ -2,8 +2,8 @@
 
 Serves a COPY of the built site (never the live checkout) over a local
 ephemeral port using http.server in a daemon thread. Browser tests pytest.skip
-cleanly when playwright or the chromium binary is unavailable locally; CI
-installs them (validate.yml browser-tests job).
+cleanly when playwright, the chromium binary, or permission to bind a loopback
+socket is unavailable locally; CI has all three (validate.yml browser-tests job).
 """
 
 from __future__ import annotations
@@ -12,7 +12,6 @@ import functools
 import http.server
 import shutil
 import threading
-import time
 from pathlib import Path
 
 import pytest
@@ -67,8 +66,6 @@ def copy_site(tmp_path: Path) -> Path:
 
 def serve_site(site_dir: Path) -> tuple[str, object]:
     """Serve ``site_dir`` on an ephemeral local port. Returns (base_url, httpd)."""
-    import http.server
-
     handler = type(
         "QuietHandler",
         (http.server.SimpleHTTPRequestHandler,),
@@ -81,7 +78,14 @@ def serve_site(site_dir: Path) -> tuple[str, object]:
             super().__init__(("127.0.0.1", 0), handler)
             self._directory = directory
 
-    httpd = _Server(site_dir)
+    try:
+        httpd = _Server(site_dir)
+    except PermissionError as exc:
+        # A sandbox that forbids binding a loopback socket is a missing local
+        # capability, exactly like a missing chromium binary — not a site
+        # defect. Only EACCES/EPERM is treated this way: an address already in
+        # use, a missing directory, or any other OSError still fails the test.
+        pytest.skip(f"local HTTP server not permitted in this environment: {exc}")
     thread = threading.Thread(target=httpd.serve_forever, daemon=True)
     thread.start()
     return f"http://127.0.0.1:{httpd.server_address[1]}", httpd

@@ -77,6 +77,9 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("asset-audit-final", "audit_assets.py", (), ("--check",), "Final asset-size report after catalog"),
     GenerationStep("accessibility-final", "accessibility_audit.py", (), ("--check",), "Final accessibility report after catalog"),
     GenerationStep("site-facts-final", "sync_site_facts.py", (), ("--check",), "Final fact links to latest reports"),
+    # After the last README rewrite, so the mirror GitHub renders on the repo
+    # page carries the final counts and links that resolve from .github/.
+    GenerationStep("github-readme", "build_github_readme.py", (), ("--check",), "GitHub-rendered README mirror"),
     GenerationStep("search-index", "build_search_index.py", (), ("--check",), "Site search index"),
     GenerationStep("feed", "generate_feed.py", (), ("--check",), "RSS feed"),
     GenerationStep("sitemap", "build_sitemap.py", (), ("--check",), "Sitemap"),

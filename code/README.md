@@ -45,7 +45,7 @@ Grouped by role; per-script outputs, sources, and rebuild commands live in
 | **Resume** | `build_resume.py` |
 | **Counts & integrity** | `build_current_counts.py`, `build_coverage_exceptions.py`, `build_agent_index.py`, `build_pages_artifact.py`, `build_release_integrity.py`, `build_reconciliation_report.py`, `audit_publication_skills.py` |
 | **Publication sync (network)** | `refresh_public_sources.py`, `refresh_public_source_inventory.py`, `sync_paired_publications.py`, `sync_scholar_metrics.py`, `add_zenodo_only.py`, `check_zenodo_uncatalogued.py` |
-| **SEO & indexing** | `build_sitemap.py`, `build_image_sitemap.py`, `generate_feed.py`, `indexnow_urls.py`, `submit_indexnow.py`, `gsc_followup_preflight.py` |
+| **SEO & indexing** | `build_sitemap.py`, `generate_feed.py`, `indexnow_urls.py`, `submit_indexnow.py`, `gsc_followup_preflight.py` |
 | **QA & audits** | `audit_assets.py`, `accessibility_audit.py`, `check_external_links.py`, `build_external_link_triage.py`, `browser_smoke.py`, `browser_qa.py`, `visual_qa.py`, `verify_live_site.py` |
 | **Maintenance / one-shot** | `prune_old_reports.py`, `deploy_seo_security.py`, `migrate_inline_handlers.py`, `optimize_font_loading.py` |
 

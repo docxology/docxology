@@ -251,7 +251,10 @@ SCHEMAS = {
             "catalog_role": "not_curated, or acknowledged_not_curated for deliberate exclusions",
             "exclusion_reason": "fork_not_curated, primary_repo_requires_manual_review, or acknowledged_not_catalogued",
             "review_status": "defer, acknowledged, accept, reject, or supersede",
-            "acknowledged_reason": "present when review_status is acknowledged; one of profile_repo, profile_infrastructure, test_repo, website, rename_duplicate, private_mirror (see data/repository-exclusions.json)",
+            "acknowledged_reason": "present when review_status is acknowledged; one of profile_repo, profile_infrastructure, test_repo, website, rename_duplicate, private_mirror, empty_repo, fork_not_curated (see data/repository-exclusions.json)",
+            "reviewed_by": "present when review_status is acknowledged; principal for an individual decision about this repository, standing_policy for a fork retired by an already-recorded principal decision",
+            "reviewed_at": "present when review_status is acknowledged; ISO calendar date the decision was recorded",
+            "policy_source": "present only when reviewed_by is standing_policy; names the principal decision that was applied. Its absence on a standing_policy row is a validation error, never a defaulted 'reviewed'",
         },
     },
     "PagesArtifactManifest": {
@@ -512,7 +515,7 @@ def payload() -> dict:
             {"id": "live-site", "path": latest_report("live_site_verification_*.json", "reports/live_site_verification_2026-05-15.json"), "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
         ],
         "schemas": SCHEMAS,
-        "schema_registry_version": "1.3",
+        "schema_registry_version": "1.4",
         "schema_examples": {
             "Work": works.get("works", [])[:1],
             "SoftwareRepository": software.get("repositories", [])[:1],

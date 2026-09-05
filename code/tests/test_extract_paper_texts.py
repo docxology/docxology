@@ -15,7 +15,7 @@ import extract_paper_texts  # noqa: E402
 def test_is_scanned_pdf_handles_synthetic_pdf(tmp_path):
     from pypdf import PdfWriter
     writer = PdfWriter()
-    page = writer.add_blank_page(width=100, height=100)
+    writer.add_blank_page(width=100, height=100)
     pdf_path = tmp_path / "blank.pdf"
     with open(pdf_path, "wb") as f:
         writer.write(f)
@@ -25,7 +25,7 @@ def test_is_scanned_pdf_handles_synthetic_pdf(tmp_path):
 def test_extract_text_pypdf_handles_empty(tmp_path):
     from pypdf import PdfWriter
     writer = PdfWriter()
-    page = writer.add_blank_page(width=100, height=100)
+    writer.add_blank_page(width=100, height=100)
     pdf_path = tmp_path / "blank.pdf"
     with open(pdf_path, "wb") as f:
         writer.write(f)

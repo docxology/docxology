@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import functools
+import html as _html_mod
 import json
 import re
 import sys
@@ -15,7 +17,9 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 from build_sitemap import sitemap_locs  # noqa: E402
 from deploy_seo_security import EXCLUDED_HTML_PATH_PARTS  # noqa: E402
-from redirect_stubs import REDIRECT_STUBS, collect_redirect_errors  # noqa: E402
+# REDIRECT_STUBS is re-exported for gsc_followup_preflight, which reads the
+# stub list and the SEO invariants through this one module.
+from redirect_stubs import REDIRECT_STUBS, collect_redirect_errors  # noqa: E402,F401
 from site_nav import canonical_work_key  # noqa: E402
 
 SITE_ORIGIN = "https://danielarifriedman.com/"
@@ -27,8 +31,31 @@ _META_PROPERTY = re.compile(r'<meta\s+property="([^"]+)"\s+content="([^"]*)"', r
 _META_NAME = re.compile(r'<meta\s+name="([^"]+)"\s+content="([^"]*)"', re.I)
 
 
+# One SEO pass runs eight checks over heavily overlapping page sets: a works
+# page is read by four of them, and the two whole-repo checks walk every HTML
+# file (``check_canonical_integrity`` twice on its own). Reading each revision
+# of a file once turns ~5 full passes over the site into one. The key carries
+# the inode, size, and nanosecond mtime, so any rewrite — in place or through
+# the atomic replace used by the generators — misses the cache and is re-read.
+_TEXT_CACHE: dict[tuple[str, int, int, int], str] = {}
+
+
+def clear_page_cache() -> None:
+    """Drop the process-local page-text cache (used by the read-count tests)."""
+    _TEXT_CACHE.clear()
+
+
 def _read(path: Path) -> str:
-    return path.read_text(encoding="utf-8", errors="replace")
+    try:
+        info = path.stat()
+    except OSError:
+        return path.read_text(encoding="utf-8", errors="replace")
+    key = (str(path), info.st_ino, info.st_size, info.st_mtime_ns)
+    text = _TEXT_CACHE.get(key)
+    if text is None:
+        text = path.read_text(encoding="utf-8", errors="replace")
+        _TEXT_CACHE[key] = text
+    return text
 
 
 def _meta_robots(html: str) -> str | None:
@@ -128,9 +155,6 @@ def check_sitemap_policy(repo_root: Path) -> list[str]:
     return errors
 
 
-import html as _html_mod
-
-
 def _meta_description(html: str) -> str | None:
     match = re.search(r'<meta\s+name="description"\s+content="([^"]*)"', html, re.I)
     return match.group(1) if match else None
@@ -195,6 +219,21 @@ def _dir_form(rel: str) -> str:
     return rel
 
 
+@functools.lru_cache(maxsize=None)
+def _repo_relative_target(parent: str, link: str, repo_root: Path) -> str | None:
+    """Resolve a relative href to a repo-root-relative path, or ``None``.
+
+    Shared nav, footer, and breadcrumb links repeat on every page, so the same
+    ``(page directory, href)`` pair is resolved thousands of times per pass;
+    ``Path.resolve()`` is a syscall walk, and memoizing it is the difference
+    between a minute and a second on the works/ and videos/ trees.
+    """
+    try:
+        return str((Path(parent) / link).resolve().relative_to(repo_root))
+    except ValueError:
+        return None
+
+
 def check_canonical_integrity(repo_root: Path) -> list[str]:
     """Zero internal links may target a page whose own canonical points elsewhere.
 
@@ -205,6 +244,7 @@ def check_canonical_integrity(repo_root: Path) -> list[str]:
     to them is a policy violation, not a page defect, and is reported as such.
     """
     errors: list[str] = []
+    resolved_root = repo_root.resolve()
     href_re = re.compile(r'<a\b[^>]*?href=["\x27]([^"\x27]+)["\x27]', re.I)
     canonical_by_rel: dict[str, str] = {}
     pages: list[Path] = []
@@ -257,10 +297,8 @@ def check_canonical_integrity(repo_root: Path) -> list[str]:
             if link.startswith("/"):
                 rel_target = link.lstrip("/")
             else:
-                resolved = (path.parent / link).resolve()
-                try:
-                    rel_target = str(resolved.relative_to(repo_root.resolve()))
-                except ValueError:
+                rel_target = _repo_relative_target(str(path.parent), link, resolved_root)
+                if rel_target is None:
                     continue
             if canonical_points_elsewhere(rel_target):
                 errors.append(

@@ -447,7 +447,6 @@ def _comparable(path: Path, content: str) -> tuple[str, str]:
     if path != JSON_OUT:
         # Stamp-reuse: a difference confined to the footer build stamp (commit
         # SHA at generation time) is not staleness - mirror generated_outputs.
-        import sys as _sys
         from build_stamp import reuse_on_disk_stamp  # noqa: E402
         return on_disk, reuse_on_disk_stamp(content, on_disk)
     existing = json.loads(on_disk)

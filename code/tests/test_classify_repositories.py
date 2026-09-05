@@ -19,13 +19,21 @@ def test_repository_classification_exposes_description_quality_and_review_contra
     }
     assert required <= set(rows[0])
     assert {row["review_status"] for row in rows} <= {"defer", "acknowledged", "accept", "reject", "supersede"}
-    # Deliberate human-reviewed exclusions carry an acknowledged status + reason
-    # and drop out of the primary review queue (see data/repository-exclusions.json).
+    # Deliberate exclusions carry an acknowledged status + reason and drop out
+    # of the primary review queue (see data/repository-exclusions.json). The
+    # review date is asserted as a well-formed date rather than a literal: the
+    # registry gains entries over time, and pinning one batch's date made every
+    # later decision a test failure.
     for row in rows:
         if row["review_status"] == "acknowledged":
             assert row.get("acknowledged_reason")
-            assert row.get("reviewed_by") == "principal"
-            assert row.get("reviewed_at") == "2026-08-26"
+            assert row.get("reviewed_by") in {"principal", "standing_policy"}
+            assert classify_repositories._is_iso_date(row.get("reviewed_at"))
+            if row["reviewed_by"] == "standing_policy":
+                # Only a fork may be retired without an individual decision,
+                # and it must say which decision retired it.
+                assert row["fork"], row["full_name"]
+                assert row.get("policy_source"), row["full_name"]
             assert isinstance(row["github_id"], int) and row["github_id"] > 0
             assert isinstance(row["github_node_id"], str) and row["github_node_id"]
             if row["fork"]:
@@ -51,7 +59,7 @@ def test_repository_classification_projection_is_current():
 
 def test_malformed_fork_exclusion_cannot_clear_the_review_queue():
     payload = {
-        "schema_version": "1.3",
+        "schema_version": "1.4",
         "reasons": {
             "fork_not_curated": "A reviewed public fork remains out of catalog."
         },
@@ -92,7 +100,7 @@ def test_malformed_fork_exclusion_cannot_clear_the_review_queue():
 
 def test_malformed_primary_exclusion_cannot_clear_the_review_queue():
     payload = {
-        "schema_version": "1.3",
+        "schema_version": "1.4",
         "reasons": {
             "profile_repo": "The profile repository is deliberately not catalogued."
         },
@@ -147,7 +155,7 @@ def test_recreated_repository_cannot_inherit_a_path_only_exclusion(
     exclusions.write_text(
         json.dumps(
             {
-                "schema_version": "1.3",
+                "schema_version": "1.4",
                 "reasons": {"profile_repo": "Reviewed profile infrastructure."},
                 "exclusions": [
                     {
@@ -171,3 +179,57 @@ def test_recreated_repository_cannot_inherit_a_path_only_exclusion(
     assert row["full_name"] == "example/recreated"
     assert row["review_status"] == "defer"
     assert row["exclusion_reason"] == "primary_repo_requires_manual_review"
+
+
+def test_standing_policy_may_not_retire_a_repository_without_naming_the_decision():
+    """"The policy covers it" is only an answer when the policy is on the record."""
+    payload = {
+        "schema_version": "1.4",
+        "reasons": {"fork_not_curated": "A public fork remains out of catalog."},
+        "exclusions": [
+            {
+                "full_name": "example/fork",
+                "reason": "fork_not_curated",
+                "reviewed_by": "standing_policy",
+                "reviewed_at": "2026-09-05",
+                "note": "Applied a standing decision that is not cited anywhere.",
+                "github_id": 1,
+                "github_node_id": "R_kgDOexample",
+            }
+        ],
+    }
+    try:
+        classify_repositories.validate_acknowledged_exclusions(payload)
+    except ValueError as exc:
+        assert "policy_source" in str(exc)
+    else:
+        raise AssertionError("an uncited standing-policy exclusion was accepted")
+
+    payload["exclusions"][0]["policy_source"] = "principal decision 2026-08-26"
+    assert "example/fork" in classify_repositories.validate_acknowledged_exclusions(payload)
+
+
+def test_standing_policy_cannot_clear_a_primary_repository():
+    """Forks are a policy class; a primary repository is always an individual call."""
+    payload = {
+        "schema_version": "1.4",
+        "reasons": {"profile_repo": "The profile repository is not catalogued."},
+        "exclusions": [
+            {
+                "full_name": "example/profile",
+                "reason": "profile_repo",
+                "reviewed_by": "standing_policy",
+                "reviewed_at": "2026-09-05",
+                "policy_source": "principal decision 2026-08-26",
+                "note": "A primary repository cannot ride on the fork policy.",
+                "github_id": 1,
+                "github_node_id": "R_kgDOexample",
+            }
+        ],
+    }
+    try:
+        classify_repositories.validate_acknowledged_exclusions(payload)
+    except ValueError as exc:
+        assert "individual decision" in str(exc)
+    else:
+        raise AssertionError("a primary repository was retired by standing policy")

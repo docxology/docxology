@@ -14,7 +14,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-from build_video_pages import REPO_ROOT, TRANSCRIPT_DIR, build_records
+from build_video_pages import TRANSCRIPT_DIR, build_records
 
 
 def clean_caption_line(line: str) -> str:

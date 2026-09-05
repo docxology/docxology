@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T02:37:16Z",
+  "generated_at": "2026-09-05T16:17:45Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -67,7 +67,7 @@
     "public_archive": 155,
     "open_full_text": 190,
     "source_documents": 195,
-    "executable_code": 63,
+    "executable_code": 64,
     "agent_readable": 195
   },
   "band_counts": {
@@ -82,10 +82,10 @@
     "2": 4,
     "3": 8,
     "4": 37,
-    "5": 89,
-    "6": 61
+    "5": 88,
+    "6": 62
   },
-  "mean_score": 4.693,
+  "mean_score": 4.698,
   "works": [
     {
       "num": 10,
@@ -1367,6 +1367,27 @@
       },
       "repositories": [
         "docxplus"
+      ]
+    },
+    {
+      "num": 215,
+      "citation_key": "Friedman2026ForensicAuditMillenniumLeanClay215",
+      "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
+      "year": 2026,
+      "domain_name": "Other",
+      "type": "Report",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "millennium_audit"
       ]
     },
     {
@@ -3034,25 +3055,6 @@
       "year": 2026,
       "domain_name": "Computational",
       "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 215,
-      "citation_key": "Friedman2026ForensicAuditMillenniumLeanClay215",
-      "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
-      "year": 2026,
-      "domain_name": "Other",
-      "type": "Report",
       "score": 5,
       "band": "independently reproducible",
       "signals": {

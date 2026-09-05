@@ -562,10 +562,10 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/build_artwork_index.py",
     },
     {
-        "name": "Image sitemap",
-        "outputs": ["sitemap-images.xml"],
-        "sources": ["data/artworks.json", "art/*", "code/orchestrators/build_image_sitemap.py"],
-        "command": "python3 code/orchestrators/build_image_sitemap.py",
+        "name": "GitHub-rendered README mirror",
+        "outputs": [".github/README.md"],
+        "sources": ["README.md", "code/orchestrators/build_github_readme.py"],
+        "command": "python3 code/orchestrators/build_github_readme.py",
     },
     {
         "name": "Visual QA",

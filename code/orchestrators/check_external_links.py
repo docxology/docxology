@@ -72,6 +72,14 @@ IGNORE_HOSTS = {
 }
 IGNORE_PREFIXES = (
     "https://github.com/docxology/docxology/blob/main/",
+    # Footer build-stamp permalinks. Every regeneration rewrites the stamp to
+    # the current HEAD, so keeping these in the cached coverage contract made
+    # the gate fail on the commit after each refresh — the report was always
+    # "missing" the new SHA and carrying three "unexpected" old ones. They are
+    # also unverifiable before the commit is pushed. Same forgiveness the page
+    # generators already apply to the stamp itself (build_stamp.reuse_on_disk_stamp)
+    # and build_sitemap applies to lastmod.
+    "https://github.com/docxology/docxology/commit/",
 )
 
 

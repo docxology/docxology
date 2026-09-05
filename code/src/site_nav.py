@@ -384,8 +384,8 @@ def _render_nav_shell(*, active: str = "", depth: int = 0) -> str:
     prefix = "../" * depth
     home = f"{prefix}index.html"
     primary, secondary = nav_manifest(depth)
-    items = "\n".join(f"            <li>{_nav_anchor(*l, active=active)}</li>" for l in primary)
-    more_items = "\n".join(f"                    <li>{_nav_anchor(*l, active=active)}</li>" for l in secondary)
+    items = "\n".join(f"            <li>{_nav_anchor(*item, active=active)}</li>" for item in primary)
+    more_items = "\n".join(f"                    <li>{_nav_anchor(*item, active=active)}</li>" for item in secondary)
     return (
         f'    <nav aria-label="Main navigation">\n'
         f'        <a href="{home}" class="nav-logo">Daniel Ari Friedman</a>\n'

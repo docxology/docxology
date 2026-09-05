@@ -45,3 +45,23 @@ def test_manifest_declares_count_paper_availability_and_repository_inventory_inp
 def test_browser_qa_manifest_uses_the_portable_uv_optional_group_command():
     browser_qa = _artifact("Progressive browser QA")
     assert browser_qa["command"] == "uv run --extra browser-qa python3 code/orchestrators/browser_qa.py"
+
+
+def test_every_declared_generator_script_still_exists():
+    """GENERATED.md is the rebuild matrix; a row for a deleted script is a trap.
+
+    `build_image_sitemap.py` was removed on 2026-08-28, but its manifest row
+    survived and kept publishing a rebuild command — and an output file — that
+    an agent following GENERATED.md would run and never produce.
+    """
+    referenced: set[str] = set()
+    for artifact in build_generated_manifest.ARTIFACTS:
+        for source in artifact["sources"]:
+            if source.startswith("code/") and source.endswith(".py"):
+                referenced.add(source)
+        for token in str(artifact["command"]).split():
+            if token.startswith("code/") and token.endswith(".py"):
+                referenced.add(token)
+    assert referenced, "no generator scripts are declared in the manifest"
+    missing = sorted(rel for rel in referenced if not (REPO_ROOT / rel).is_file())
+    assert missing == [], f"generated manifest names scripts that do not exist: {missing}"

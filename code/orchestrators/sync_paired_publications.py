@@ -920,19 +920,19 @@ def write_report(
 
 def run_regeneration(repo_root: Path = REPO_ROOT) -> None:
     commands = [
-        ["python3", "code/orchestrators/sync_publications_html.py", "--apply"],
-        ["python3", "code/orchestrators/export_bibliography.py"],
-        ["python3", "code/orchestrators/sync_software_html.py", "--apply"],
-        ["python3", "code/orchestrators/export_agent_data.py"],
-        ["python3", "code/orchestrators/build_domain_pages.py"],
-        ["python3", "code/orchestrators/build_work_pages.py"],
-        ["python3", "code/orchestrators/build_paper_pages.py"],
-        ["python3", "code/orchestrators/audit_assets.py"],
-        ["python3", "code/orchestrators/build_catalog.py"],
-        ["python3", "code/orchestrators/build_search_index.py"],
-        ["python3", "code/orchestrators/generate_feed.py"],
-        ["python3", "code/orchestrators/build_sitemap.py"],
-        ["python3", "code/orchestrators/build_generated_manifest.py"],
+        [sys.executable, "code/orchestrators/sync_publications_html.py", "--apply"],
+        [sys.executable, "code/orchestrators/export_bibliography.py"],
+        [sys.executable, "code/orchestrators/sync_software_html.py", "--apply"],
+        [sys.executable, "code/orchestrators/export_agent_data.py"],
+        [sys.executable, "code/orchestrators/build_domain_pages.py"],
+        [sys.executable, "code/orchestrators/build_work_pages.py"],
+        [sys.executable, "code/orchestrators/build_paper_pages.py"],
+        [sys.executable, "code/orchestrators/audit_assets.py"],
+        [sys.executable, "code/orchestrators/build_catalog.py"],
+        [sys.executable, "code/orchestrators/build_search_index.py"],
+        [sys.executable, "code/orchestrators/generate_feed.py"],
+        [sys.executable, "code/orchestrators/build_sitemap.py"],
+        [sys.executable, "code/orchestrators/build_generated_manifest.py"],
     ]
     for command in commands:
         subprocess.run(command, cwd=repo_root, check=True)

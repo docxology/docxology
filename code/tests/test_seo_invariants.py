@@ -11,6 +11,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
+import seo_invariants  # noqa: E402
 from seo_invariants import (  # noqa: E402
     REDIRECT_STUBS,
     check_paper_pages,
@@ -177,3 +178,47 @@ def test_paper_pages_require_noindex_follow(tmp_path):
     )
 
     assert any("expected robots noindex, follow" in error for error in check_paper_pages(tmp_path))
+
+
+def test_page_cache_serves_repeat_reads_but_not_a_rewritten_file(tmp_path):
+    """The cache is keyed by file revision, never by path alone."""
+    page = tmp_path / "page.html"
+    page.write_text("first", encoding="utf-8")
+    seo_invariants.clear_page_cache()
+    assert seo_invariants._read(page) == "first"
+    assert seo_invariants._read(page) == "first"
+
+    # A rewrite in place must be observed, not served from the cache.
+    page.write_text("second body", encoding="utf-8")
+    assert seo_invariants._read(page) == "second body"
+
+    # So must an atomic replace, which swaps in a different inode.
+    replacement = tmp_path / "page.html.new"
+    replacement.write_text("third body!", encoding="utf-8")
+    replacement.replace(page)
+    assert seo_invariants._read(page) == "third body!"
+
+
+def test_one_seo_pass_reads_each_page_once_across_the_eight_checks(monkeypatch):
+    """Eight checks over overlapping page sets must not re-decode the site.
+
+    ``check_canonical_integrity`` alone walked every HTML file twice, and works
+    pages were read by four separate checks; the shared page cache collapses
+    that into one read per file per pass.
+    """
+    reads: list[str] = []
+    real_read_text = Path.read_text
+
+    def counting_read_text(self, *args, **kwargs):
+        text = real_read_text(self, *args, **kwargs)
+        reads.append(str(self))
+        return text
+
+    monkeypatch.setattr(Path, "read_text", counting_read_text)
+    seo_invariants.clear_page_cache()
+    assert collect_seo_errors(REPO_ROOT) == []
+    assert reads, "the SEO pass must actually read the site"
+    assert len(reads) == len(set(reads)), (
+        "a page was decoded more than once in a single SEO pass: "
+        + ", ".join(sorted({p for p in reads if reads.count(p) > 1})[:5])
+    )

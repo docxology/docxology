@@ -37,8 +37,8 @@ jobs:
       - name: Run tests
         run: uv run python3 -m pytest code/tests -q
 
-      - name: Lint invalid Python escape sequences
-        run: uv run --group lint ruff check --select W605 code
+      - name: Lint Python sources (ruff default rules + W605)
+        run: uv run --group lint ruff check code
 
       - name: Artifact budget gate (850 MiB)
         run: uv run python3 code/src/artifact_budget.py

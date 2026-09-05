@@ -115,12 +115,12 @@ def run_local_generation_checks() -> None:
         if step.script == "build_resume.py":
             run_resume_check()
             continue
-        run(["python3", f"code/orchestrators/{step.script}", *step.check_args])
+        run([sys.executable, f"code/orchestrators/{step.script}", *step.check_args])
 
 
 def public_source_review_check_args(*, release: bool) -> list[str]:
     """Render the provenance mode required by the validation tier."""
-    command = ["python3", "code/orchestrators/build_public_source_review.py", "--check"]
+    command = [sys.executable, "code/orchestrators/build_public_source_review.py", "--check"]
     if release:
         command.append("--exact-source-revision")
     return command
@@ -135,7 +135,7 @@ def live_site_check_args(*, release: bool) -> list[str]:
     candidate. Release validation invokes the strict form only after fresh
     deployed evidence is present.
     """
-    command = ["python3", "code/orchestrators/verify_live_site.py", "--check"]
+    command = [sys.executable, "code/orchestrators/verify_live_site.py", "--check"]
     if not release:
         command.append("--allow-source-count-drift")
     return command
@@ -493,14 +493,14 @@ def validate_release_evidence(args: argparse.Namespace) -> None:
 def run_standard_validation(*, strict_reports: bool) -> None:
     """Validate the committed source layer and its deterministic cache inputs."""
     run_local_generation_checks()
-    run(["python3", "code/orchestrators/build_github_inventory.py", "--check"])
-    run(["python3", "code/orchestrators/sync_paired_publications.py", "--check"])
-    run(["python3", "code/orchestrators/audit_publication_skills.py", "--check"])
-    run(["python3", "code/orchestrators/check_external_links.py", "--check"])
-    run(["python3", "code/orchestrators/build_external_link_triage.py", "--check"])
-    run(["python3", "code/orchestrators/browser_smoke.py", "--check"])
+    run([sys.executable, "code/orchestrators/build_github_inventory.py", "--check"])
+    run([sys.executable, "code/orchestrators/sync_paired_publications.py", "--check"])
+    run([sys.executable, "code/orchestrators/audit_publication_skills.py", "--check"])
+    run([sys.executable, "code/orchestrators/check_external_links.py", "--check"])
+    run([sys.executable, "code/orchestrators/build_external_link_triage.py", "--check"])
+    run([sys.executable, "code/orchestrators/browser_smoke.py", "--check"])
     run(live_site_check_args(release=False))
-    run(["python3", "code/orchestrators/refresh_public_source_inventory.py", "--check"])
+    run([sys.executable, "code/orchestrators/refresh_public_source_inventory.py", "--check"])
     # The committed source layer uses the control-tail payload anchor.  Exact
     # candidate-HEAD review provenance is checked separately after deployment.
     run(public_source_review_check_args(release=False))
@@ -511,7 +511,7 @@ def run_standard_validation(*, strict_reports: bool) -> None:
                 "Scholar receipt validation failed:\n"
                 + "\n".join(f"  - {error}" for error in scholar_errors)
             )
-    run(["python3", "code/orchestrators/visual_qa.py", "--check"])
+    run([sys.executable, "code/orchestrators/visual_qa.py", "--check"])
     validate_json_files(strict_reports)
     validate_citation_cff()
     validate_paper_citation_cff()

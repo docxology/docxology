@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.3",
-  "policy": "Deliberate, human-reviewed not-catalog decisions for the software-catalog review queue. Entries cover primary exclusions (profile/infrastructure repos, websites, test/smoke repos, rename duplicates of catalogued repos, or private mirrors) and explicitly reviewed public forks. Recorded here so those decisions do not resurface as unresolved review queue items on every GitHub inventory refresh. This file NEVER promotes a repository into the catalog; it only acknowledges a not-catalog decision. A repository is removed from this list if the exclusion no longer holds (for example, a mirror becomes a primary project).",
+  "schema_version": "1.4",
+  "policy": "Deliberate not-catalog decisions for the software-catalog review queue. Entries cover primary exclusions (profile/infrastructure repos, websites, test/smoke repos, rename duplicates of catalogued repos, or private mirrors) and public forks. Recorded here so those decisions do not resurface as unresolved review queue items on every GitHub inventory refresh. This file NEVER promotes a repository into the catalog; it only acknowledges a not-catalog decision. A repository is removed from this list if the exclusion no longer holds (for example, a mirror becomes a primary project). reviewed_by records how the decision was reached and is never blurred: 'principal' means the principal reviewed that specific repository on reviewed_at; 'standing_policy' means an already-recorded principal decision was applied mechanically to a repository the principal has not looked at individually, and requires policy_source naming that decision. Only forks may be excluded by standing policy - every primary repository still needs an individual decision.",
   "reasons": {
     "profile_repo": "The @owner profile/index repository itself; pages/SOFTWARE.md explicitly excludes it.",
     "profile_infrastructure": "Profile-page infrastructure (README, links, identity) rather than a software project.",
@@ -9,7 +9,7 @@
     "rename_duplicate": "A rename or variant of a repository already present in the curated catalog.",
     "private_mirror": "A public mirror of a private working project; the primary project is tracked elsewhere.",
     "empty_repo": "An intentionally empty or unused repository explicitly retained outside the curated software catalog.",
-    "fork_not_curated": "A public fork explicitly reviewed and kept out of the curated catalog; visibility alone does not establish an original software-catalog entry."
+    "fork_not_curated": "A public fork kept out of the curated software catalog; visibility alone does not establish an original software-catalog entry. Forks are excluded by the principal's standing decision (2026-08-26, TODO.md DOC-005: forks stay fork_not_curated); an entry carrying reviewed_by 'standing_policy' applies that decision and was not reviewed on its own."
   },
   "exclusions": [
     {
@@ -731,6 +731,16 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1319832997,
       "github_node_id": "R_kgDOTqsNpQ"
+    },
+    {
+      "full_name": "docxology/RGMs",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-05",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-08-30 with no description; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1351075887,
+      "github_node_id": "R_kgDOUIfILw"
     },
     {
       "full_name": "docxology/Rocket.jl",

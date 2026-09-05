@@ -24,3 +24,15 @@ browser-qa = [
 lint = [
     "ruff==0.13.0",
 ]
+
+[tool.ruff]
+# Site data, the built Pages projection, and the virtualenv are not sources.
+extend-exclude = [".venv", "_site", "reports"]
+target-version = "py312"
+
+[tool.ruff.lint]
+# Ruff's default rules (E4 import, E7 statement, E9 syntax, F pyflakes) plus the
+# invalid-escape-sequence check the CI gate ran on its own before this config
+# existed. Broader families (B, UP, SIM, I) are deliberately not enabled yet:
+# they would rewrite most of `code/` in a single pass. Widen deliberately.
+extend-select = ["W605"]

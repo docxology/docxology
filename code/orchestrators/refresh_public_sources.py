@@ -12,6 +12,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import sys
 import time
 import urllib.error
 import urllib.parse
@@ -20,8 +21,6 @@ from pathlib import Path
 from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-import sys
-
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 from report_paths import source_commit, source_worktree_state  # noqa: E402

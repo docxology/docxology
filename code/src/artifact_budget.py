@@ -27,8 +27,6 @@ def latest_growth_report(repo_root: Path) -> Path:
 
 def artifact_mib_from_report(path: Path) -> float:
     """Extract artifact_mib from a growth report JSON."""
-    import json
-
     payload = json.loads(path.read_text(encoding="utf-8"))
     mib = payload.get("artifact_mib")
     if not isinstance(mib, (int, float)):

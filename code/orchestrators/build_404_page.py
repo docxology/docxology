@@ -27,7 +27,6 @@ from site_nav import (  # noqa: E402
     HEAD_EXTRAS,
     INTERACTIVE_SCRIPTS,
     MENU_ESC_SCRIPT,
-    REFERRER_POLICY_META,
     REL_ME_LINKS,
     render_nav,
 )

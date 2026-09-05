@@ -92,7 +92,7 @@ def main() -> int:
 
     if args.validate:
         print("\n=== validate_repo.py ".ljust(72, "="))
-        subprocess.run(["python3", "code/orchestrators/validate_repo.py"], cwd=REPO_ROOT, check=True)
+        subprocess.run([sys.executable, "code/orchestrators/validate_repo.py"], cwd=REPO_ROOT, check=True)
 
     return 0
 

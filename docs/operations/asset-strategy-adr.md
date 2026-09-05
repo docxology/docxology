@@ -36,7 +36,7 @@ model:
    availability and terms, and a cross-domain image sitemap built from those
    URLs is inert for indexing (Google does not index image-sitemap URLs on a
    domain the site does not own — see the removed `sitemap-images.xml`,
-   decision-pinned by `code/tests/test_build_image_sitemap.py`).
+   decision-pinned by `code/tests/test_regenerate_all.py`).
 
 ## Decision
 
@@ -56,7 +56,8 @@ acquired, normalized, and committed, which would consume artifact headroom and
 review capacity now, while the Flickr hotlinking dependency is currently
 stable. Self-hosting is the only path that would make an image sitemap
 meaningful, so the image sitemap stays removed (pinned by
-`code/tests/test_build_image_sitemap.py`) until Option A lands.
+`code/tests/test_regenerate_all.py`, which asserts the generator is absent from
+the generation plan) until Option A lands.
 
 The prune also fixed the reference scanner in
 `code/orchestrators/prune_old_reports.py` to skip `_site/` and

@@ -121,10 +121,9 @@ def test_canonical_integrity_ignores_external_links(tmp_path):
 def test_build_404_page_check_mode_passes_on_fresh_render():
     # The checked-in 404.html must match the renderer modulo the footer build
     # stamp (commit SHA at generation time) - mirrors generated_outputs semantics.
-    import re as _re
     import sys as _sys
     _sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-    from build_stamp import current_on_disk_stamp, reuse_on_disk_stamp
+    from build_stamp import reuse_on_disk_stamp
     content = build_404_page.render()
     on_disk = (REPO_ROOT / "404.html").read_text(encoding="utf-8")
     assert on_disk == reuse_on_disk_stamp(content, on_disk)

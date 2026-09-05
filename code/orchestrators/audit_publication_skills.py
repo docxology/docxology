@@ -113,7 +113,7 @@ def collect_skill_errors(repo_root: Path = REPO_ROOT) -> list[str]:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Validate publication SKILL.md files for agent-facing operability.")
     parser.add_argument("--check", action="store_true", help="Validate publication skills and exit")
-    args = parser.parse_args()
+    parser.parse_args()
     errors = collect_skill_errors()
     if errors:
         raise SystemExit("Publication skill audit failed:\n" + "\n".join(errors[:120]))

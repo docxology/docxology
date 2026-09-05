@@ -14,7 +14,6 @@ import xml.etree.ElementTree as ET  # nosec - parsing our own generated XML
 from pathlib import Path
 from xml.dom import minidom
 
-import pytest
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))

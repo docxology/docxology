@@ -364,15 +364,15 @@ def add_papers_readme_row(folder: str, year: str, has_pdf: bool) -> None:
     text = path.read_text(encoding="utf-8")
     if f"]({folder}/)" in text:
         return
-    rows = [l for l in text.splitlines() if re.match(r"\| \d+ \|", l)]
+    rows = [line for line in text.splitlines() if re.match(r"\| \d+ \|", line)]
     num = len(rows) + 1
     topic = folder.split("_", 1)[1]
     row = f"| {num} | [{folder}]({folder}/) | {'✅' if has_pdf else '—'} | {year} | {topic} |"
     lines = text.splitlines()
-    insert_at = next((i for i, l in enumerate(lines) if l.startswith("## Scripts")), len(lines))
+    insert_at = next((i for i, line in enumerate(lines) if line.startswith("## Scripts")), len(lines))
     lines.insert(insert_at, row)
     text = "\n".join(lines).rstrip() + "\n"
-    count = len([l for l in text.splitlines() if re.match(r"\| \d+ \|", l)])
+    count = len([line for line in text.splitlines() if re.match(r"\| \d+ \|", line)])
     text = re.sub(r"## Papers \(\d+\)", f"## Papers ({count})", text)
     path.write_text(text, encoding="utf-8")
 
@@ -470,7 +470,7 @@ def main(argv: list[str]) -> int:
     if added and regenerate:
         print("\nRegenerating local generated layer (regenerate_all.py)...")
         subprocess.run(
-            ["python3", "code/orchestrators/regenerate_all.py"],
+            [sys.executable, "code/orchestrators/regenerate_all.py"],
             cwd=REPO_ROOT, check=True,
         )
         print("Run `verify_live_site.py` (if counts changed) then `validate_repo.py` before committing.")

@@ -11,7 +11,7 @@
     "name": "Daniel Ari Friedman",
     "url": "https://danielarifriedman.com/"
   },
-  "dateModified": "2026-09-03",
+  "dateModified": "2026-09-05",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "dataset": [
     {
@@ -87,7 +87,7 @@
       "@type": "Dataset",
       "@id": "https://danielarifriedman.com/catalog.html#software",
       "name": "Software Catalog",
-      "description": "147 catalogued software repositories across docxology and AII contributions.",
+      "description": "148 catalogued software repositories across docxology and AII contributions.",
       "url": "https://danielarifriedman.com/data/software.json",
       "encodingFormat": "application/json",
       "creator": {
@@ -502,7 +502,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-inventory",
       "name": "Public Source Inventory",
       "description": "Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages.",
-      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-26.json",
+      "url": "https://danielarifriedman.com/reports/public_source_inventory_2026-09-04.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -516,7 +516,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-08-26.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_inventory_2026-09-04.json",
         "encodingFormat": "application/json"
       }
     },
@@ -525,7 +525,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#public-source-snapshot",
       "name": "Public Source Snapshot",
       "description": "Current public API freshness snapshot with normalized drift-comparison facts.",
-      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-08-26.json",
+      "url": "https://danielarifriedman.com/reports/public_source_snapshot_2026-09-04.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -539,7 +539,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-08-26.json",
+        "contentUrl": "https://danielarifriedman.com/reports/public_source_snapshot_2026-09-04.json",
         "encodingFormat": "application/json"
       }
     },
@@ -663,7 +663,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#asset-size",
       "name": "Asset Size Audit",
       "description": "Size report for public HTML, OG images, data exports, and runtime assets.",
-      "url": "https://danielarifriedman.com/reports/asset_size_2026-08-29.json",
+      "url": "https://danielarifriedman.com/reports/asset_size_2026-09-03.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -677,7 +677,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-08-29.json",
+        "contentUrl": "https://danielarifriedman.com/reports/asset_size_2026-09-03.json",
         "encodingFormat": "application/json"
       }
     },

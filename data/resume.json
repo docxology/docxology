@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T05:40:12Z",
+  "generated_at": "2026-09-05T16:04:16Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -35,8 +35,8 @@
   },
   "metrics": {
     "works": 212,
-    "software_catalogued": 147,
-    "owned_software_catalogued": 108,
+    "software_catalogued": 148,
+    "owned_software_catalogued": 109,
     "aii_software_catalogued": 39,
     "google_scholar": {
       "citations": 815,
@@ -47,13 +47,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 202 public repositories.",
+      "claim": "The docxology GitHub profile has 206 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-08-26.json"
+        "reports/public_source_snapshot_2026-09-04.json"
       ],
-      "checked_at": "2026-08-26T20:38:56.057530+00:00",
+      "checked_at": "2026-09-04T05:32:17.066180+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -65,22 +65,22 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-08-26.json"
+        "reports/public_source_snapshot_2026-09-04.json"
       ],
-      "checked_at": "2026-08-26T20:38:56.057530+00:00",
+      "checked_at": "2026-09-04T05:32:17.066180+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 39 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-08-26T18:56:16Z",
+      "generated_at": "2026-09-04T05:33:08Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 245,
-      "public": 245,
-      "primary_total": 158,
-      "forks": 87,
-      "docxology": 202,
+      "total": 249,
+      "public": 249,
+      "primary_total": 161,
+      "forks": 88,
+      "docxology": 206,
       "ActiveInferenceInstitute": 43
     }
   },
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "d551be0b7043d1db6e6cd4354f208706517329ff24440011183727f3c3fcc141",
+      "sha256": "8ea33d249aff1b6af7ec1c8a07c7d2f39b25e2e76935fea9538ecdc0c058696e",
       "files": [
         {
           "path": "resume/source.json",
@@ -102,8 +102,8 @@
         },
         {
           "path": "data/software.json",
-          "bytes": 72743,
-          "sha256": "8f204f30160168a0c66310e99a45cf167fcbfa290615bb3e178acaca399213ec"
+          "bytes": 73315,
+          "sha256": "052f7937ec640a6105b0f18d9acfafce569f87fcfb68f7b27d0459de7163bf24"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "2c8697b6af04b03c1b2516139373fddd224c8892b4601dddc0b6122a700e11f2"
+          "sha256": "b1577426f003802718bfba3f17df9bbcd373d81892c7af670e1f8af6f81d3db9"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 293406,
-          "sha256": "242305e4e959b97736219886352b9ee276dd1e787a4eb43d0be028ea617e8f25"
+          "bytes": 297403,
+          "sha256": "d4b2368d3b24737d236197a064f5ef2e336d8877f68ee203148c27f86495e946"
         }
       ]
     },
@@ -8852,6 +8852,18 @@
       "zenodo_url": "https://doi.org/10.5281/zenodo.21983948"
     },
     {
+      "name": "millennium_audit",
+      "url": "https://github.com/docxology/millennium_audit",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "papers/2026_MillenniumAudit/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22243473"
+    },
+    {
       "name": "multi-time",
       "url": "https://github.com/docxology/multi-time",
       "owner": "docxology",
@@ -9342,7 +9354,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-09-03T05:36:31+00:00",
+      "checked_at": "2026-09-04T06:11:51+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9357,7 +9369,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-09-03T05:36:31+00:00",
+      "checked_at": "2026-09-04T06:11:51+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9365,13 +9377,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 202 public repositories.",
+      "claim": "The docxology GitHub profile has 206 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-08-26.json"
+        "reports/public_source_snapshot_2026-09-04.json"
       ],
-      "checked_at": "2026-08-26T20:38:56.057530+00:00",
+      "checked_at": "2026-09-04T05:32:17.066180+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -9383,9 +9395,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-08-26.json"
+        "reports/public_source_snapshot_2026-09-04.json"
       ],
-      "checked_at": "2026-08-26T20:38:56.057530+00:00",
+      "checked_at": "2026-09-04T05:32:17.066180+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",

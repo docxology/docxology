@@ -17,7 +17,7 @@ try:
 except ImportError:  # pragma: no cover - package import path
     from .report_paths import dated_report_path, generated_timestamp, latest_report
 
-from deploy_seo_security import EXCLUDED_HTML_PATH_PARTS
+from deploy_seo_security import EXCLUDED_HTML_PATH_PARTS  # noqa: E402
 
 OUT = dated_report_path("accessibility_static", "json")
 
