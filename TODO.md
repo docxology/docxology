@@ -230,6 +230,31 @@ Comprehensive follow-up pass:
 - Acceptance: current reports remain hosted/indexed; historical reports remain in GitHub or release archives; no evidence is deleted silently
 - Dependencies: Pages growth report, release-integrity manifest
 
+### PERF-001 — Evaluate batching the sitemap's per-URL git queries
+
+- Priority: P2
+- Owner: MAINTAINER
+- Trigger: when a measurement can be taken on storage that is not I/O-starved
+- Deliverable: decide whether `build_sitemap.git_lastmod` should derive every
+  URL's `lastmod` from one `git log --name-only` walk instead of one
+  `git log -1 -- <path>` subprocess per URL (~1,372 processes per run)
+- Acceptance: the rendered `sitemap.xml` is byte-identical either way, and the
+  batch form is measurably faster on the target hardware; otherwise the
+  per-path form stays
+- Dependencies: none
+
+Attempted and reverted 2026-09-06. The batch walk is correct in principle — the
+first mention of a path in a newest-first `--name-only` walk is the same commit
+`git log -1 -- <path>` reports — but it could not be shown to be an improvement
+on the external volume this was developed on: the walk took ~304 s against a
+~238 s projection for the 1,372 individual queries, and both runs were I/O-bound
+at roughly 5% CPU, so process count is not the bottleneck there. The attempt
+also exposed a trap worth remembering: a `timeout=300` on the batch walk fired,
+was swallowed as "git unavailable", and silently fell back to the per-path path,
+so the optimization was a no-op that still paid its own cost — and
+`sitemap.xml --check` passed byte-identically the whole time, proving nothing.
+Re-measure before adopting; do not adopt on process count alone.
+
 ## P2 — Operating model
 
 ### DOC-013 — Keep runbooks and release checklist aligned
