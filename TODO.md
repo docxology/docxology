@@ -137,22 +137,14 @@ Comprehensive follow-up pass:
   the fork queue is empty without anyone backdating a review.
 - Open primary decisions (2, awaiting the principal): `docxology/cognitive_integrity`
   and `docxology/dicklesworthstone_meta_operator`.
-- `docxology/millennium_audit` is a third queue row but NOT a third decision: it
-  is already curated in `pages/SOFTWARE.md` and `data/software.json`. It still
-  shows `primary_repo_requires_manual_review` because the `curated` flag is
-  frozen into `data/github-repositories.json` at inventory-build time, and that
-  snapshot (2026-09-04T05:33Z) predates the promotion — the runbook's documented
-  gotcha. Clearing it needs an authenticated inventory rebuild
-  (`GITHUB_TOKEN="$(gh auth token)" uv run python3
-  code/orchestrators/build_github_inventory.py`), not a review.
-- Worth fixing at the root: `curated` is derived from a *local* file
-  (`curated_keys()` reads `data/software.json`) yet is only recomputed on a
-  network fetch, so every promotion leaves a false review-queue row until
-  someone runs an authenticated refresh. Either give `build_github_inventory.py`
-  an offline `--refresh-curated` mode in the generation plan, or have
-  `classify_repositories.py` consult `data/software.json` directly instead of
-  trusting the frozen flag. Changing it moves queue counts, so it needs its own
-  regeneration and count-consistency pass.
+- Stale-`curated` drift — FIXED 2026-09-05. `classify_repositories.py` reads
+  `data/software.json` directly instead of trusting the `curated` flag frozen
+  into the network-fetched inventory snapshot, so a catalog promotion clears its
+  queue row immediately rather than waiting for an authenticated refresh. The
+  catalog is a second reason to exclude and never a reason to include, so the
+  change can only remove a false row. `docxology/millennium_audit` left the
+  queue this way; the runbook's inventory-refresh gotcha no longer produces
+  phantom review work.
 - Earlier primary-review items — RESOLVED 2026-08-30 (verification report:
   `../daf-stack/report-docxology-doc005.md`). All four named repos were already
   classified/promoted by the 2026-08-26 catalog cycle: Un0 (empty-repo note,

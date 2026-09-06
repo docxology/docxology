@@ -57,9 +57,9 @@
       "source_commit": "f58f0be913c6d454586413a39b511bad44a03fe0"
     },
     "repository_classification": {
-      "generated_at": "2026-09-05T16:00:53Z",
+      "generated_at": "2026-09-05T21:50:02Z",
       "path": "data/repository-classification.json",
-      "sha256": "dc8d446e308062dbb6169fb2f856c05d7a8dad920e09a44c509038d1bd1077dc",
+      "sha256": "17513a8425e92a6254387f1943784a17637b11e4ae198e5cd20114ac50e46bc6",
       "source_commit": null
     },
     "scholar_snapshot": {
@@ -3676,25 +3676,6 @@
       },
       "category": "repository_classification",
       "id": "repository:docxology/dicklesworthstone_meta_operator",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "primary_repo_requires_manual_review",
-        "fork": false,
-        "full_name": "docxology/millennium_audit",
-        "html_url": "https://github.com/docxology/millennium_audit",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/millennium_audit",
       "reason": "The repository remains outside the curated catalog pending a human classification decision.",
       "sources": [
         "data/repository-classification.json"
@@ -15305,8 +15286,30 @@
   "schema_version": "1.0",
   "source_commit": "118370e5ace0c5d1b0115eb1cef36336aba8ce8f",
   "source_tree_sha": "47df71563e1ae0b60beb82e3b9a53524f4405822",
-  "source_worktree_clean": true,
-  "source_worktree_dirty_paths": [],
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "CHANGELOG.md",
+    "TODO.md",
+    "catalog.html",
+    "code/orchestrators/classify_repositories.py",
+    "code/src/redirect_stubs.py",
+    "code/tests/test_classify_repositories.py",
+    "code/tests/test_redirect_stubs.py",
+    "data/catalog.json",
+    "data/repository-classification.json",
+    "discovery.html",
+    "evidence.html",
+    "exports.html",
+    "llms.txt",
+    "pages/DISCOVERY.md",
+    "reproducibility.html",
+    "search-index-content-video.json",
+    "search-index-content-work.json",
+    "search-index-core.json",
+    "search-index.json",
+    "sitemap.xml",
+    "updates.html"
+  ],
   "summary": {
     "applied": 254,
     "categories": {
@@ -15327,7 +15330,7 @@
       },
       "repository_classification": {
         "applied": 99,
-        "deferred": 3,
+        "deferred": 2,
         "rejected": 0
       },
       "scholar_metric_change": {
@@ -15341,8 +15344,8 @@
         "rejected": 318
       }
     },
-    "deferred": 62,
-    "items": 634,
+    "deferred": 61,
+    "items": 633,
     "rejected": 318,
     "review_required": true
   }

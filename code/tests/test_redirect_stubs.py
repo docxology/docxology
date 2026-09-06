@@ -11,6 +11,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
+import redirect_stubs  # noqa: E402
 from generate_redirect_stubs import apply  # noqa: E402
 from generated_outputs import UnsafeGeneratedOutputPathError  # noqa: E402
 from redirect_stubs import (  # noqa: E402
@@ -84,3 +85,41 @@ def test_redirect_check_and_apply_reject_a_symlinked_declared_stub(tmp_path: Pat
         apply(repo_root=tmp_path)
 
     assert outside.read_text(encoding="utf-8") == "outside must survive\n"
+
+
+def test_discovery_cache_is_keyed_by_file_identity_not_path(tmp_path):
+    """A rewritten or replaced document must be re-read, never served from cache."""
+    redirect_stubs.clear_discovery_cache()
+    page = tmp_path / "page.html"
+    page.write_text("<html><head></head><body>plain</body></html>", encoding="utf-8")
+    assert redirect_stubs.discover_redirect_stubs(tmp_path) == set()
+
+    # Rewritten in place: the same path is now a redirect and must be found.
+    page.write_text(render_stub(REDIRECT_STUBS[0]), encoding="utf-8")
+    assert redirect_stubs.discover_redirect_stubs(tmp_path) == {"page.html"}
+
+    # Replaced through a new inode (how the generators write): still found.
+    replacement = tmp_path / "page.html.new"
+    replacement.write_text("<html><head></head><body>plain again</body></html>", encoding="utf-8")
+    replacement.replace(page)
+    assert redirect_stubs.discover_redirect_stubs(tmp_path) == set()
+
+
+def test_a_cached_path_that_becomes_a_symlink_still_fails_closed(tmp_path):
+    """The cache must not soften the reader's refusal to follow a link.
+
+    The key comes from ``lstat``, so the symlink presents its own inode rather
+    than the target's: the lookup misses and the hardened reader runs again.
+    """
+    redirect_stubs.clear_discovery_cache()
+    real = tmp_path / "real.html"
+    real.write_text("<html><head></head><body>plain</body></html>", encoding="utf-8")
+    assert redirect_stubs.discover_redirect_stubs(tmp_path) == set()
+
+    outside = tmp_path.parent / "outside.html"
+    outside.write_text(render_stub(REDIRECT_STUBS[0]), encoding="utf-8")
+    real.unlink()
+    real.symlink_to(outside)
+
+    with pytest.raises(UnsafeGeneratedOutputPathError):
+        redirect_stubs.discover_redirect_stubs(tmp_path)

@@ -13,7 +13,7 @@
       "code/orchestrators/build_pages_artifact.py": "dd2364cb838dc79d62c2008b8f10ea1674eab4aefb1f224b8841337dacd12e79",
       "code/orchestrators/build_agent_index.py": "7cf9844e00ced25378d893cf250b5ce196f357f4fa81eff9ef4b006f8c70ae31",
       "code/orchestrators/build_coverage_exceptions.py": "f915d3b576f9ff07bd7520aeba1baaaa1e27dc704eea5d8cc20fe0bac03f9c1f",
-      "code/orchestrators/classify_repositories.py": "efe3c08f36462a1c89118f28bd6208bf6ef62e7e5f64780371aab9e11ad09720",
+      "code/orchestrators/classify_repositories.py": "1923005202420c1d121d5b237a5af5e0831d2becc3caf36dd1b6f8f0b4fae2b6",
       "code/orchestrators/audit_assets.py": "0a9f8922f9ee8c51b79861bdabd1c0f4aa8e9501f24dc635c25581a54f66c13a",
       "code/src/public_integrity.py": "784d7fb7007bf2f4a2f0c2d178a4d157d80c647926c04d88a1c83854bc161da0",
       "code/src/release_controls.py": "9225c5b540cff163e05d4c894d291ad81d732d3902a44d0b83fd64464c184d5d"
@@ -25,16 +25,16 @@
     "resume/source.json": "9bfe02faeb946d3a8cd6ab916a4686e0252ada8af2995257ee7c7ad59108904a",
     "data/current-counts.json": "a4a512942a843ba5ce38273b0293340acba4f805061edb06c20822474d67f4de",
     "data/coverage-exceptions.json": "a752fc6020b96a598afdec47182797059da3cc0fc94acc5d229b90cb978949e1",
-    "data/repository-classification.json": "dc8d446e308062dbb6169fb2f856c05d7a8dad920e09a44c509038d1bd1077dc",
-    "data/agent-index.json": "f25e113ecd4f5742546cfc762c045715a1737fe0d6ef1283f0358dd152beb1a3",
+    "data/repository-classification.json": "17513a8425e92a6254387f1943784a17637b11e4ae198e5cd20114ac50e46bc6",
+    "data/agent-index.json": "3ca1528fab2cc15868b4e805630ae67c2c04679700f3e56acfc5004185468fd9",
     "data/generated-manifest.json": "b6b3a286dd6f05eba2843cf1aff0c60c86f6957517f079ab49f1b955f4fa0789",
-    "data/pages-artifact-manifest.json": "fd1bcfda636e2ea89dabf5920b0b3b31fc85c63704da9fb01cdc769d62c8967e"
+    "data/pages-artifact-manifest.json": "df01fad7aedbfa07c2f6385352afb02792e61452e9a319733bafd1ddf07baeb0"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
     "source_commit_at_generation": "118370e5ace0c5d1b0115eb1cef36336aba8ce8f",
     "artifact_file_count": 5113,
-    "artifact_bytes": 874141734,
+    "artifact_bytes": 874151377,
     "omitted_paper_image_count": 8944
   },
   "deployment": {

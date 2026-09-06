@@ -233,3 +233,81 @@ def test_standing_policy_cannot_clear_a_primary_repository():
         assert "individual decision" in str(exc)
     else:
         raise AssertionError("a primary repository was retired by standing policy")
+
+
+def test_a_catalogued_repository_never_asks_for_a_decision_again(tmp_path: Path, monkeypatch):
+    """A promotion must clear the queue row without waiting for a network refresh.
+
+    ``curated`` is derived from ``data/software.json`` but was frozen into the
+    GitHub inventory snapshot at fetch time, so every promotion left a row
+    asking for a decision that had already been made.
+    """
+    inventory = tmp_path / "github-repositories.json"
+    software = tmp_path / "software.json"
+    exclusions = tmp_path / "repository-exclusions.json"
+    inventory.write_text(
+        json.dumps(
+            {
+                "repositories": [
+                    {
+                        "full_name": "example/promoted",
+                        "github_id": 7,
+                        "github_node_id": "R_kgDOPromoted",
+                        "name": "promoted",
+                        "owner": "example",
+                        "html_url": "https://github.com/example/promoted",
+                        "fork": False,
+                        "archived": False,
+                        "private": False,
+                        "description": "Catalogued after the inventory snapshot was taken.",
+                        "topics": [],
+                        # Stale: the snapshot predates the catalog promotion.
+                        "curated": False,
+                    },
+                    {
+                        "full_name": "example/unreviewed",
+                        "github_id": 8,
+                        "github_node_id": "R_kgDOUnreviewed",
+                        "name": "unreviewed",
+                        "owner": "example",
+                        "html_url": "https://github.com/example/unreviewed",
+                        "fork": False,
+                        "archived": False,
+                        "private": False,
+                        "description": "Genuinely undecided.",
+                        "topics": [],
+                        "curated": False,
+                    },
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    software.write_text(
+        json.dumps({"repositories": [{"owner": "example", "name": "promoted"}]}),
+        encoding="utf-8",
+    )
+    exclusions.write_text(
+        json.dumps({"schema_version": "1.4", "reasons": {"website": "x"}, "exclusions": []}),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(classify_repositories, "IN", inventory)
+    monkeypatch.setattr(classify_repositories, "SOFTWARE", software)
+    monkeypatch.setattr(classify_repositories, "EXCLUSIONS", exclusions)
+
+    rows = classify_repositories.build_payload()["repositories"]
+    assert [row["full_name"] for row in rows] == ["example/unreviewed"]
+
+
+def test_the_catalog_can_only_remove_queue_rows_never_reopen_them(tmp_path: Path):
+    """Reading the catalog is a second reason to exclude, never a reason to include."""
+    software = tmp_path / "software.json"
+    software.write_text(json.dumps({"repositories": []}), encoding="utf-8")
+    assert classify_repositories.curated_catalog_keys(software) == set()
+    assert classify_repositories.curated_catalog_keys(tmp_path / "absent.json") == set()
+
+    software.write_text(
+        json.dumps({"repositories": [{"owner": "Example", "name": "MixedCase"}]}),
+        encoding="utf-8",
+    )
+    assert classify_repositories.curated_catalog_keys(software) == {"example/mixedcase"}

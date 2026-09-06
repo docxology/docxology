@@ -9,7 +9,7 @@ Source commit: `118370e5ace0c5d1b0115eb1cef36336aba8ce8f`
 | Status | Items |
 |---|---:|
 | Applied | 254 |
-| Deferred | 62 |
+| Deferred | 61 |
 | Rejected | 318 |
 
 | Category | Applied | Deferred | Rejected |
@@ -17,7 +17,7 @@ Source commit: `118370e5ace0c5d1b0115eb1cef36336aba8ce8f`
 | `ambiguous_doi_change` | 64 | 5 | 0 |
 | `biographical_claim_change` | 10 | 0 | 0 |
 | `public_source_observation` | 0 | 7 | 0 |
-| `repository_classification` | 99 | 3 | 0 |
+| `repository_classification` | 99 | 2 | 0 |
 | `scholar_metric_change` | 1 | 0 | 0 |
 | `zenodo_candidate` | 80 | 47 | 318 |
 
@@ -32,7 +32,7 @@ Source commit: `118370e5ace0c5d1b0115eb1cef36336aba8ce8f`
 - `public_source_inventory`: `reports/public_source_inventory_2026-09-04.json` (`2c541568c04f03fb5db6a11ce7400655cc44fdb97789d36b5246d4ea42e08c77`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`cff826363c7ca0e66bf583ee039a27cf0bfebc05ef57fb3222a8d91f50f73714`)
 - `public_source_snapshot`: `reports/public_source_snapshot_2026-09-04.json` (`f0f6f41807c0ae2efcc18cb1e040c5e555dadb7a20f04f0616ba42654d797974`)
-- `repository_classification`: `data/repository-classification.json` (`dc8d446e308062dbb6169fb2f856c05d7a8dad920e09a44c509038d1bd1077dc`)
+- `repository_classification`: `data/repository-classification.json` (`17513a8425e92a6254387f1943784a17637b11e4ae198e5cd20114ac50e46bc6`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2`)
 - `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5`)
 
@@ -52,7 +52,6 @@ Source commit: `118370e5ace0c5d1b0115eb1cef36336aba8ce8f`
 - **`public_source_observation` — public-source-observation:Zenodo exact-name creator records**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`repository_classification` — repository:docxology/cognitive_integrity**: The repository remains outside the curated catalog pending a human classification decision.
 - **`repository_classification` — repository:docxology/dicklesworthstone_meta_operator**: The repository remains outside the curated catalog pending a human classification decision.
-- **`repository_classification` — repository:docxology/millennium_audit**: The repository remains outside the curated catalog pending a human classification decision.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.19699233:https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0**: The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.20396328:https://github.com/docxology/entofile/releases/tag/v0.4**: The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.20417016:https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2**: The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.

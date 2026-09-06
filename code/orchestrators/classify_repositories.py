@@ -1,5 +1,19 @@
 #!/usr/bin/env python3
-"""Create a bounded review queue for repositories outside the curated catalog."""
+"""Create a bounded review queue for repositories outside the curated catalog.
+
+The queue's job is to list repositories that nobody has decided about yet, so a
+row for a repository that *is* in the curated catalog is worse than noise: it
+asks for a decision that has already been made. That happened because
+``curated`` is derived from a local file (``data/software.json``) but was only
+recomputed when ``build_github_inventory.py`` ran a network fetch and froze the
+flag into its snapshot. Every catalog promotion therefore left a false queue row
+until someone happened to run an authenticated refresh — ``docxology/millennium_audit``
+sat in the queue for days after it was catalogued.
+
+The catalog is read here directly instead. A repository is out of the queue if
+*either* source says it is curated, so this can only ever remove a false row,
+never re-open one the inventory already closed.
+"""
 
 from __future__ import annotations
 
@@ -12,6 +26,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 IN = REPO_ROOT / "data" / "github-repositories.json"
 OUT = REPO_ROOT / "data" / "repository-classification.json"
 EXCLUSIONS = REPO_ROOT / "data" / "repository-exclusions.json"
+SOFTWARE = REPO_ROOT / "data" / "software.json"
 EXCLUSIONS_SCHEMA_VERSION = "1.4"
 FORK_EXCLUSION_REASON = "fork_not_curated"
 # ``reviewed_by`` provenance. "principal" is an individual decision about that
@@ -180,12 +195,34 @@ def acknowledged_exclusion(
     return acknowledgement if reason != FORK_EXCLUSION_REASON else None
 
 
+def curated_catalog_keys(path: Path | None = None) -> set[str]:
+    """``owner/name`` keys for every repository in the curated software catalog.
+
+    Mirrors ``build_github_inventory.curated_keys`` so the queue and the
+    inventory agree on what "curated" means without the queue having to wait for
+    a network refresh to find out.
+    """
+    target = path or SOFTWARE
+    if not target.is_file():
+        return set()
+    payload = json.loads(target.read_text(encoding="utf-8"))
+    keys: set[str] = set()
+    for repo in payload.get("repositories", []):
+        owner = str(repo.get("owner") or "").strip()
+        name = str(repo.get("name") or "").strip()
+        if owner and name:
+            keys.add(f"{owner.lower()}/{name.lower()}")
+    return keys
+
+
 def build_payload() -> dict:
     source = json.loads(IN.read_text(encoding="utf-8"))
     acknowledged = load_acknowledged()
+    catalogued = curated_catalog_keys()
     rows = []
     for repo in source.get("repositories", []):
-        if repo.get("curated"):
+        full_name_key = str(repo.get("full_name") or "").lower()
+        if repo.get("curated") or full_name_key in catalogued:
             continue
         fork = bool(repo.get("fork"))
         archived = bool(repo.get("archived"))

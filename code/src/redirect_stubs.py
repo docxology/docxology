@@ -147,6 +147,34 @@ def declared_stubs() -> dict[str, RedirectStub]:
     return {stub.path: stub for stub in REDIRECT_STUBS}
 
 
+# Discovery reads every HTML document in the repository through the hardened
+# reader, and several callers run it more than once in a process
+# (``collect_seo_errors`` alone reaches it on every pass). That was the single
+# slowest thing in the test suite. The cache key is an ``lstat`` — it does NOT
+# follow symlinks — so a path that becomes a symlink presents the link's own
+# inode, misses the cache, and goes back through the reader that refuses it.
+# Any rewrite, in place or by atomic replace, misses for the same reason.
+_DISCOVERY_CACHE: dict[tuple[str, int, int, int], str | None] = {}
+
+
+def clear_discovery_cache() -> None:
+    """Drop the process-local discovery read cache."""
+    _DISCOVERY_CACHE.clear()
+
+
+def _discovery_text(repo_root: Path, path: Path) -> str | None:
+    try:
+        info = os.lstat(path)
+    except OSError:
+        return read_generated_output_text(repo_root, path, errors="replace")
+    key = (str(path), info.st_ino, info.st_size, info.st_mtime_ns)
+    if key in _DISCOVERY_CACHE:
+        return _DISCOVERY_CACHE[key]
+    text = read_generated_output_text(repo_root, path, errors="replace")
+    _DISCOVERY_CACHE[key] = text
+    return text
+
+
 def discover_redirect_stubs(repo_root: Path) -> set[str]:
     """Find every tracked-style HTML document that behaves as a redirect.
 
@@ -176,7 +204,7 @@ def discover_redirect_stubs(repo_root: Path) -> set[str]:
             if not name.endswith(".html"):
                 continue
             path = current / name
-            text = read_generated_output_text(repo_root, path, errors="replace")
+            text = _discovery_text(repo_root, path)
             if text is None:
                 continue
             if has_meta_refresh(text) or _INLINE_REDIRECT_RE.search(text):

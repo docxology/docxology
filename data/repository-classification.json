@@ -1,20 +1,20 @@
 {
   "schema_version": "1.4",
-  "generated_at": "2026-09-05T16:00:53Z",
+  "generated_at": "2026-09-05T21:50:02Z",
   "source": "data/github-repositories.json",
   "acknowledged_exclusions_source": "data/repository-exclusions.json",
   "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate not-catalog decisions (profile/website/test/mirror/duplicate or public forks) and are marked acknowledged only when their full_name and immutable github_id/github_node_id match the reviewed repository. Each row reports how its decision was reached in reviewed_by: principal means the principal reviewed that repository individually; standing_policy means an already-recorded principal decision was applied to a fork nobody reviewed one by one, and policy_source names that decision.",
   "summary": {
     "total_inventory": 249,
-    "uncatalogued": 102,
+    "uncatalogued": 101,
     "forks": 87,
     "acknowledged_forks": 87,
-    "primary_requires_review": 3,
+    "primary_requires_review": 2,
     "acknowledged_excluded": 12,
     "archived": 4,
     "missing_description": 10,
     "short_description": 16,
-    "substantive_description": 76
+    "substantive_description": 75
   },
   "repositories": [
     {
@@ -1526,26 +1526,6 @@
       "acknowledged_reason": "fork_not_curated",
       "reviewed_by": "principal",
       "reviewed_at": "2026-08-26"
-    },
-    {
-      "full_name": "docxology/millennium_audit",
-      "github_id": 1355098724,
-      "github_node_id": "R_kgDOUMUqZA",
-      "name": "millennium_audit",
-      "owner": "docxology",
-      "html_url": "https://github.com/docxology/millennium_audit",
-      "fork": false,
-      "archived": false,
-      "private": false,
-      "description": "Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types. Zenodo DOI 10.5281/zenodo.22243473",
-      "description_quality": "substantive",
-      "language": "Python",
-      "topics": [],
-      "recently_updated": true,
-      "relevance": "unknown",
-      "catalog_role": "not_curated",
-      "exclusion_reason": "primary_repo_requires_manual_review",
-      "review_status": "defer"
     },
     {
       "full_name": "docxology/mission-control",
