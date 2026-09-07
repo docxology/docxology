@@ -2,6 +2,38 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-09-07
+
+- **Search index split surfaces no longer skew their timestamps:** when a
+  regeneration changed the rendered body, `build_search_index.py` wrote
+  `search-index.json` and its three split companions
+  (`search-index-core.json`, `search-index-content-work.json`,
+  `search-index-content-video.json`) with *different* `generated_at` values —
+  `stable_generated_at` returned `None` for changed bodies, and the fallback
+  `None` made `render()` and `render_split()` call the clock independently.
+  The committed tree then failed `validate_repo.py --check`
+  ("Stale generated search index surfaces: …") until a second idempotent run
+  rewrote all four files with one reused timestamp; the 2 s skew in f58f0be9
+  and the 3 s skew in 71506b8b are both visible in git history. The builder now
+  resolves one timestamp (`stable_generated_at(...) or` the candidate's own
+  `generated_at`) before rendering any surface, and
+  `code/tests/test_build_search_index.py` pins the invariant with a countable
+  fake clock — under the old writer the changed-content test fails with
+  exactly the observed main-vs-splits skew, and the unchanged-content test
+  pins the existing stable-timestamp reuse. The three committed split
+  artifacts were regenerated with the fixed writer (single
+  `2026-09-05T22:50:01Z` timestamp across all four surfaces).
+- **TODO reconciliation (2026-09-07):** every open item verified against live
+  state — `classify_repositories.py --check` (2 primary decisions pending,
+  matching DOC-005), the 2026-09-04 paired-publications report (5 unreviewed
+  actions, queue sharpened in DOC-004 with the four DOIs and their
+  already-represented status), `sync_scholar_metrics.py --check` (815
+  citations snapshot current), the 2026-09-05 external-link triage (no hard
+  404s; 129 warnings are bot-protection/timeouts/transients), asset and
+  accessibility reports current. Resolved MIN-01/MIN-02 sections removed from
+  `TODO.md` per the completed-rows-deleted convention (evidence: 2026-08-31
+  entry above); no new MAJOR items found.
+
 ## 2026-09-05
 
 - **Child processes inherit the running interpreter:** every orchestrator that shelled out to another repository script spawned a bare `python3` resolved through `PATH`, so running `validate_repo.py` with the project's own `.venv/bin/python` silently validated under a *different* Python — reproducibly failing with `ModuleNotFoundError: No module named 'PIL'` while Pillow was installed in the launching environment. All 30 call sites in `validate_repo.py`, `regenerate_all.py`, `sync_paired_publications.py`, `add_zenodo_only.py`, `browser_qa.py`, `browser_smoke.py`, `visual_qa.py`, and the test suite now use `sys.executable`. The CV generator keeps its deliberate `uv run python3` for byte-identical ReportLab PDFs, and `code/tests/test_interpreter_consistency.py` holds that as the one documented exception.
