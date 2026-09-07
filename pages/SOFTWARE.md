@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *109 original repositories · 39 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *110 original repositories · 39 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -214,9 +214,9 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Education | 6 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT` |
 | Other | 6 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP`, `math4wisdom-superhuman-docs-archive` |
 | Research Practice | 6 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register` |
-| **docxology subtotal** | **109** | |
+| **docxology subtotal** | **110** | |
 | AII Contributions (non-fork) | 39 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **148** | |
+| **Grand Total** | **149** | |
 
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; the AII GitHub account is a **User** account, not an Organization. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 
