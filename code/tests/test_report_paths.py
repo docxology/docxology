@@ -290,8 +290,7 @@ def test_latest_payload_commit_descends_merge_tree_identical_parent():
     tip can only resolve if the walk descends the tree-identical parent.
     """
     base_tree = "1111111111111111111111111111111111111111"
-    branch_tree = base_tree  # tree-identical merge (fast-forward-shaped)
-    payload = "payloadsha"
+    branch_tree = "2222222222222222222222222222222222222222"  # tree-identical merge
     merge = "mergesha"
 
     parents = {merge: ["basesha", "branchtip"], "branchtip": ["basesha"], "basesha": []}
