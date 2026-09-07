@@ -286,6 +286,13 @@ Re-measure before adopting; do not adopt on process count alone.
 - Deliverable: maintain runbooks for intake, repository classification, CV release, Pages release, live verification, retention, claims, accessibility, and visual QA
 - Acceptance: `AGENT_START.md`, `AGENTS.md`, `CLAUDE.md`, `docs/README.md`, `GENERATED.md`, and the release checklist point to the same ordered commands
 - Dependencies: generated manifest and CI workflows
+- Session note (2026-09-07): any commit that creates new dated reports or
+  changes payload bytes shifts the `latest_source_report` tracked-file
+  resolution and the commit-bound manifests; follow the payload commit with
+  one post-commit `regenerate_all.py --validate` pass so every binder
+  (site facts, catalog, search index, pages-artifact manifest, agent index,
+  release-integrity envelope, dated review record) is refreshed and verified
+  in a single cycle instead of surfacing one stale binder per validate run.
 
 ### DOC-014 — Stage the Python package migration after a green release
 
