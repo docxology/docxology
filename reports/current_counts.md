@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-09-07T22:45:25+00:00`
+Generated: `2026-09-07T22:57:04+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -104,10 +104,10 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 - github_releases: `231`
 - zenodo_records: `151`
-- pairs: `450`
+- pairs: `447`
 - strong_pairs: `48`
-- already_reviewed: `399`
-- needs_review: `4`
+- already_reviewed: `400`
+- needs_review: `0`
 - create_new: `0`
 - update_existing: `47`
 

@@ -46,11 +46,11 @@
       "raw_candidates": 493
     },
     "paired_publications": {
-      "already_reviewed": 399,
+      "already_reviewed": 400,
       "create_new": 0,
       "github_releases": 231,
-      "needs_review": 4,
-      "pairs": 450,
+      "needs_review": 0,
+      "pairs": 447,
       "strong_pairs": 48,
       "update_existing": 47,
       "zenodo_records": 151
@@ -82,7 +82,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-09-07T22:45:25+00:00",
+  "generated_at": "2026-09-07T22:57:04+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",

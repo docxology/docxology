@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T21:27:00Z",
+  "generated_at": "2026-09-07T22:57:09Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -35,8 +35,8 @@
   },
   "metrics": {
     "works": 212,
-    "software_catalogued": 148,
-    "owned_software_catalogued": 109,
+    "software_catalogued": 149,
+    "owned_software_catalogued": 110,
     "aii_software_catalogued": 39,
     "google_scholar": {
       "citations": 815,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "5ca2fb55b2bc3480d9e91e46249848314c816edfff8837b2938714600d5cd80c",
+      "sha256": "3e39843b9cec63fb4e90f5f81090e65b96b993e1e8a94fd8d1dc98edeb99291b",
       "files": [
         {
           "path": "resume/source.json",
@@ -102,8 +102,8 @@
         },
         {
           "path": "data/software.json",
-          "bytes": 73315,
-          "sha256": "c002d01043f3d4b72324c607aadf0422e7af004c469663de48d957d473c6399a"
+          "bytes": 73775,
+          "sha256": "20be817bdc46e4f3a2be221d7830f3a0867356d5105858da771620aa0dbb7999"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "8389238d67297cc62d819c1a1d76443b849826dd583d91944f87ff1f48e4cf85"
+          "sha256": "c0292e158678eba208c147bb6094517c3747284be9e32df4cac65a629e0deb0e"
         },
         {
           "path": "data/github-repositories.json",
@@ -8876,6 +8876,18 @@
       "zenodo_url": ""
     },
     {
+      "name": "cognitive_integrity",
+      "url": "https://github.com/docxology/cognitive_integrity",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Cognitive Integrity Framework (CIF) — formal security architecture for multiagent systems ·",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "papers/2026_CognitiveIntegrity/",
+      "zenodo_url": ""
+    },
+    {
       "name": "ActiveInferenceJournal",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
       "owner": "ActiveInferenceInstitute",
@@ -9354,7 +9366,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-09-07T21:26:55+00:00",
+      "checked_at": "2026-09-07T22:57:04+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9369,7 +9381,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-09-07T21:26:55+00:00",
+      "checked_at": "2026-09-07T22:57:04+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
