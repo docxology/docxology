@@ -106,9 +106,10 @@ evidence and belong in `CHANGELOG.md` at merge time:
   `untagged-ce7d…` v1.3.0) and R74 (GNN v3.2.0) as `superseded` /
   `bibliography-folder version-history-only` in
   `data/paired-publication-decisions.json`, verified against the regenerated
-  `reports/paired_publications_2026-09-07.json` (5 → 2 unreviewed in the
-  comparable scope; the full-scope queue is 4 — see DOC-004). The Cognitive
-  Integrity cluster remains held for the principal via DOC-005.
+  `reports/paired_publications_2026-09-07.json` (full-scope queue 5 → 4
+  unreviewed actions; an intermediate docxology-only rescan showed 2 but used
+  a narrower owner scope than the 2026-09-04 baseline — see DOC-004). The
+  Cognitive Integrity cluster remains held for the principal via DOC-005.
 - **MINOR (observed, owner decision):** pairing candidates whose GitHub
   release is a *draft* carry rotating `untagged-*` URLs, so per-fingerprint
   decisions (R71/R73) cannot permanently clear them — each scan requeues the
