@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-07T21:26:58Z",
+  "generated_at": "2026-09-07T22:45:22Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 148,
+  "count": 149,
   "repositories": [
     {
       "name": "template",
@@ -1310,6 +1310,18 @@
       "stars": 0,
       "updated_or_year": "2026-08",
       "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "cognitive_integrity",
+      "url": "https://github.com/docxology/cognitive_integrity",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Cognitive Integrity Framework (CIF) — formal security architecture for multiagent systems ·",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-08",
+      "paper_path": "papers/2026_CognitiveIntegrity/",
       "zenodo_url": ""
     },
     {

@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-09-07T21:26:55+00:00`
+Generated: `2026-09-07T22:45:25+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -60,16 +60,16 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Software
 
-- docxology_owned: `109`
+- docxology_owned: `110`
 - active_inference_institute: `39`
-- curated_total: `148`
+- curated_total: `149`
 
 ### Generated Exports
 
 - data_works_json: `212`
-- data_software_json: `148`
+- data_software_json: `149`
 - data_publications_ld_main_entity: `212`
-- data_software_ld_main_entity: `148`
+- data_software_ld_main_entity: `149`
 
 ### GitHub Inventory
 
@@ -114,9 +114,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 ### Paired Publication Decisions
 
 - decision: `accept`
-- groups: `74`
-- raw_candidates: `489`
-- note: `Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work.`
+- groups: `78`
+- raw_candidates: `493`
+- note: `Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated.`
 
 ## Validation
 

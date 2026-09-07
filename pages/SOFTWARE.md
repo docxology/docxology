@@ -147,6 +147,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [docxplus](https://github.com/docxology/docxplus) | docxplus — the Intelligent Document Container: format, tools, and formal specification · [📄](../papers/2026_DocxplusIntelligentDocument/) · [Zenodo](https://doi.org/10.5281/zenodo.21983948) | Python | 0 | 2026-08 |
 | [millennium_audit](https://github.com/docxology/millennium_audit) | Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · [Zenodo](https://doi.org/10.5281/zenodo.22243473) · [📄](../papers/2026_MillenniumAudit/) | Python | 0 | 2026-09 |
 | [multi-time](https://github.com/docxology/multi-time) | Multi-frequency time-series analysis toolkit built on sktime — validates irregular series, tests stationarity and Granger causality, and evaluates forecasting models | Python | 0 | 2026-08 |
+| [cognitive_integrity](https://github.com/docxology/cognitive_integrity) | Cognitive Integrity Framework (CIF) — formal security architecture for multiagent systems · [📄](../papers/2026_CognitiveIntegrity/) · [📄](../papers/2026_CognitiveIntegrityFramework/) | Python | 0 | 2026-08 |
 
 ---
 
@@ -207,7 +208,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Active Inference & Modeling | 15 | `active_inference`, `active_torchference`, `goference`, `AgenticMesh`, `enactive_inference_model`, `Markov_Blanket_Detection`, `cognitive`, `cognitive-engine`, `ActiveInferAnts`, `EvoJump`, `markdown_decision_process`, `cognitive_case_diagrams`, `Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference`, `transformer`, `on_policy_distillation` |
 | Entomology & Biology | 9 | `ento_linguistics`, `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `cohereants`, `FORMINDEX`, `biol-1`, `biol-8`, `biology_textbook` |
 | Synergetics & Geometry | 6 | `QuadCraft`, `QuadMath`, `ivm-xyz`, `godel_ivm`, `symergetics`, `blake_jiang` |
-| Cognitive Security | 3 | `p3if`, `opentir`, `CogSecSkills` |
+| Cognitive Security | 4 | `p3if`, `opentir`, `CogSecSkills`, `cognitive_integrity` |
 | Developer Tools | 22 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `SynthOBS`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake`, `thalia`, `bond`, `template_advanced_literature_review`, `BeeStack`, `docxplus` |
 | Data & Policy | 5 | `hhs-opendata`, `crescent-city`, `grateful_data`, `crescent-city-intel`, `multi-time` |
 | Education | 6 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT` |

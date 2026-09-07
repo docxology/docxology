@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "109 original repositories and 39 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "110 original repositories and 39 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -1735,6 +1735,20 @@
             "dateCreated": "2026-03-25T17:38:44Z",
             "dateModified": "2026-08-29T19:29:11Z",
             "keywords": "arima, forecasting, granger-causality, machine-learning, python, sktime, stationarity, statistics, time-series"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/cognitive_integrity#software",
+            "name": "cognitive_integrity",
+            "description": "Cognitive Integrity Framework (CIF) — formal security architecture for multiagent systems ·",
+            "codeRepository": "https://github.com/docxology/cognitive_integrity",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "dateCreated": "2026-01-27T23:23:02Z",
+            "dateModified": "2026-08-31T05:17:43Z"
         },
         {
             "@type": "SoftwareSourceCode",
