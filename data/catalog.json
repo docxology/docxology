@@ -617,7 +617,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-links",
       "name": "External Link Report",
       "description": "Scoped network freshness report for site-critical outbound links.",
-      "url": "https://danielarifriedman.com/reports/external_links_2026-09-05.json",
+      "url": "https://danielarifriedman.com/reports/external_links_2026-09-07.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -631,7 +631,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-09-05.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_2026-09-07.json",
         "encodingFormat": "application/json"
       }
     },
@@ -640,7 +640,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#external-link-triage",
       "name": "External Link Triage",
       "description": "Categorized link warnings: bot-protected, transient, timeout, stale, and review.",
-      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-09-05.json",
+      "url": "https://danielarifriedman.com/reports/external_links_triage_2026-09-07.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -654,7 +654,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-09-05.json",
+        "contentUrl": "https://danielarifriedman.com/reports/external_links_triage_2026-09-07.json",
         "encodingFormat": "application/json"
       }
     },
@@ -709,7 +709,7 @@
       "@id": "https://danielarifriedman.com/catalog.html#browser-qa",
       "name": "Progressive Browser QA",
       "description": "Playwright checks for no-JavaScript fallbacks, keyboard interactions, focus restoration, responsive behavior, forced colors, console errors, and YouTube iframe policy.",
-      "url": "https://danielarifriedman.com/reports/browser-qa/2026-08-26/manifest.json",
+      "url": "https://danielarifriedman.com/reports/browser-qa/2026-09-07/manifest.json",
       "encodingFormat": "application/json",
       "creator": {
         "@type": "Person",
@@ -723,7 +723,7 @@
       },
       "distribution": {
         "@type": "DataDownload",
-        "contentUrl": "https://danielarifriedman.com/reports/browser-qa/2026-08-26/manifest.json",
+        "contentUrl": "https://danielarifriedman.com/reports/browser-qa/2026-09-07/manifest.json",
         "encodingFormat": "application/json"
       }
     },
