@@ -588,6 +588,17 @@ def is_ignored_release(release: GitHubRelease) -> bool:
     return any(marker in text for marker in ignore_markers)
 
 
+def is_draft_release(release: GitHubRelease) -> bool:
+    """Return True for unpublished draft releases with ephemeral identities.
+
+    GitHub assigns draft releases a rotating ``untagged-<hash>`` URL slug that
+    changes on every edit, so a pairing or decision bound to that URL can never
+    survive the next scan. Drafts are not citable release URLs; the permanent
+    tag URL appears when the release is published.
+    """
+    return "untagged-" in (release.html_url or "")
+
+
 def _identifier_text(record: ZenodoRecord) -> str:
     values: list[str] = []
     for item in record.related_identifiers:
@@ -610,7 +621,7 @@ def title_overlap(left: str, right: str) -> float:
 
 def confidence_for_pair(release: GitHubRelease, record: ZenodoRecord) -> PublicationPair | None:
     """Classify a GitHub release / Zenodo record pair."""
-    if is_ignored_release(release):
+    if is_ignored_release(release) or is_draft_release(release):
         return None
     evidence: list[str] = []
     release_text = release.text
