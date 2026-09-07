@@ -49,6 +49,29 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   `reports/paired_publications_2026-09-07.json` (450 pairs) drops the queue
   to 4 unreviewed actions — the rotating-draft Codomyrmex URLs and the
   Cognitive Integrity cluster held for the principal (DOC-005 overlap).
+- **DOC-004 closed — the pairing queue reached zero:** the principal
+  classified `docxology/cognitive_integrity` as curated (added to
+  `pages/SOFTWARE.md`, backed by `papers/2026_CognitiveIntegrity/` and
+  `papers/2026_CognitiveIntegrityFramework/`), confirmed superseded
+  dispositions for the rotating Codomyrmex draft URLs (R75/R76) and for the
+  ActiveInferAnts and CEREBRUM releases as version-specific artifacts under
+  the represented Cognitive Integrity Framework DOI (R77/R78), and directed
+  that draft releases be skipped from pairing. The refreshed full-scope
+  `reports/paired_publications_2026-09-07.json` has **zero unreviewed
+  candidates** (447 pairs; the three skipped draft pairs account for the 450
+  → 447 delta) and `classify_repositories.py` leaves one open primary
+  (`docxology/dicklesworthstone_meta_operator`).
+- **Draft releases no longer pair:** `is_draft_release` in
+  `code/src/publication_pairing.py` skips releases whose canonical URL is the
+  rotating `untagged-<hash>` draft slug, ending the requeue treadmill (R71 →
+  R73 → R75 documented three rotations of the same Codomyrmex draft).
+- **Provenance binding is merge-aware:** `latest_payload_commit` in
+  `code/src/release_controls.py` steps through a merge commit whose tree is
+  identical to one of its parents (a PR merge ref's first parent is the base
+  branch, so its first-parent diff is the whole branch and the tip-recorded
+  `source_commit_at_generation` could never resolve there). Covered by pure
+  -function fixtures and an end-to-end PR-merge-ref test that was
+  mutation-verified to fail under the old walk.
 
 ## 2026-09-05
 
