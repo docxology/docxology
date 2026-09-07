@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-09-05T16:04:13Z",
+      "generated_at": "2026-09-07T21:12:14Z",
       "path": "data/claims.json",
-      "sha256": "b1577426f003802718bfba3f17df9bbcd373d81892c7af670e1f8af6f81d3db9",
+      "sha256": "02e5a7a4c62508ef7145707fac51f3dd9d9c3e23392bc215ece0413fb0777519",
       "source_commit": null
     },
     "doi_role_review": {
@@ -21,15 +21,15 @@
       "source_commit": null
     },
     "paired_publication_decisions": {
-      "generated_at": "2026-08-26T18:01:35Z",
+      "generated_at": "2026-09-07T21:03:44Z",
       "path": "data/paired-publication-decisions.json",
-      "sha256": "2013d899c8b9eafe460771149184dbbd79b070642d260a08cfbdcf99f2881cdc",
+      "sha256": "a0b82b5196095e0b0c3a803c6de155f807d36da680a58e577ca3417fb82b4b95",
       "source_commit": null
     },
     "paired_publications": {
-      "generated_at": "2026-09-04T05:43:52Z",
-      "path": "reports/paired_publications_2026-09-04.json",
-      "sha256": "82f5a3ff7e14900a4582eeb33f6a55dc417e0055e922aecfd717e776570e0110",
+      "generated_at": "2026-09-07T21:10:34Z",
+      "path": "reports/paired_publications_2026-09-07.json",
+      "sha256": "211f372f8f0c648f199c7fd89ad9c54aac7cb46f1a5abd89d310e47e8a2adfc5",
       "source_commit": null
     },
     "previous_public_source_snapshot": {
@@ -1122,7 +1122,7 @@
       "reason": "The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -1148,7 +1148,7 @@
       "reason": "The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -1160,7 +1160,7 @@
         "confidence": "needs_review",
         "doi": "10.5281/zenodo.21750800",
         "folder": "2026_Codomyrmex",
-        "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-ce7d22a2764590b03a3d",
+        "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-5ffd202ff49ffc408d95",
         "github_repo": "docxology/codomyrmex",
         "historical_supersession": {},
         "historical_supersession_valid": false,
@@ -1170,11 +1170,11 @@
         "zenodo_record_url": "https://zenodo.org/records/21750800"
       },
       "category": "ambiguous_doi_change",
-      "id": "paired-publication:10.5281/zenodo.21750800:https://github.com/docxology/codomyrmex/releases/tag/untagged-ce7d22a2764590b03a3d",
+      "id": "paired-publication:10.5281/zenodo.21750800:https://github.com/docxology/codomyrmex/releases/tag/untagged-5ffd202ff49ffc408d95",
       "reason": "The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -1200,33 +1200,7 @@
       "reason": "The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "needs_review",
-        "applied_receipt_reason": "",
-        "applied_receipt_valid": false,
-        "confidence": "needs_review",
-        "doi": "10.5281/zenodo.7803313",
-        "folder": "2026_GeneralizedNotationNotationGNN",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v3.2.0",
-        "github_repo": "ActiveInferenceInstitute/GeneralizedNotationNotation",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
-        "release_tag": "v3.2.0",
-        "title": "GeneralizedNotationNotation (GNN)",
-        "zenodo_record_url": "https://zenodo.org/records/7803313"
-      },
-      "category": "ambiguous_doi_change",
-      "id": "paired-publication:10.5281/zenodo.7803313:https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v3.2.0",
-      "reason": "The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -3729,7 +3703,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -3755,7 +3729,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -3781,7 +3755,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -3807,7 +3781,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -3833,7 +3807,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -3859,7 +3833,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -3885,7 +3859,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -3911,7 +3885,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -3937,7 +3911,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -3963,7 +3937,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -3989,7 +3963,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4015,7 +3989,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4041,7 +4015,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4067,7 +4041,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4093,7 +4067,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4119,7 +4093,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4145,7 +4119,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4171,7 +4145,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4197,7 +4171,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4223,7 +4197,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4249,7 +4223,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4275,7 +4249,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4301,7 +4275,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4327,7 +4301,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4353,7 +4327,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4379,7 +4353,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4405,7 +4379,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4431,7 +4405,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4457,7 +4431,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4483,7 +4457,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4509,7 +4483,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4535,7 +4509,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4561,7 +4535,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4587,7 +4561,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4613,7 +4587,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4639,7 +4613,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4665,7 +4639,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4691,7 +4665,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4717,7 +4691,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4743,7 +4717,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4769,7 +4743,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4795,7 +4769,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4821,7 +4795,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4847,7 +4821,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4873,7 +4847,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4899,7 +4873,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4925,7 +4899,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4951,7 +4925,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -4977,7 +4951,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5003,7 +4977,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5029,7 +5003,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5055,7 +5029,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5081,7 +5055,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5107,7 +5081,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5133,7 +5107,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5159,7 +5133,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5185,7 +5159,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5211,7 +5185,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5237,7 +5211,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5263,7 +5237,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5289,7 +5263,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5315,7 +5289,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5341,7 +5315,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5367,7 +5341,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5393,7 +5367,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5419,7 +5393,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5445,7 +5419,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5471,7 +5445,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5497,7 +5471,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5523,7 +5497,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5549,7 +5523,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5575,7 +5549,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5601,7 +5575,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5627,7 +5601,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5653,7 +5627,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5679,7 +5653,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5705,7 +5679,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5731,7 +5705,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5757,7 +5731,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5783,7 +5757,33 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "already_reviewed",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": false,
+        "confidence": "needs_review",
+        "doi": "10.5281/zenodo.7803313",
+        "folder": "2026_GeneralizedNotationNotationGNN",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v3.2.0",
+        "github_repo": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "R74 records this pair as bibliography-folder version-history-only; do not create a duplicate bibliography row",
+        "release_tag": "v3.2.0",
+        "title": "GeneralizedNotationNotation (GNN)",
+        "zenodo_record_url": "https://zenodo.org/records/7803313"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.7803313:https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v3.2.0",
+      "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "applied"
     },
@@ -5809,7 +5809,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -5835,7 +5835,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -5861,7 +5861,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -5887,7 +5887,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -5913,7 +5913,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -5939,7 +5939,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -5965,7 +5965,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -5991,7 +5991,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6017,7 +6017,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6043,7 +6043,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6069,7 +6069,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6095,7 +6095,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6121,7 +6121,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6147,7 +6147,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6173,7 +6173,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6199,7 +6199,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6225,7 +6225,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6251,7 +6251,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6277,7 +6277,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6303,7 +6303,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6329,7 +6329,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6355,7 +6355,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6381,7 +6381,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6407,7 +6407,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6433,7 +6433,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6459,7 +6459,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6485,7 +6485,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6511,7 +6511,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6537,7 +6537,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6563,7 +6563,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6589,7 +6589,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6615,7 +6615,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6641,7 +6641,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6667,7 +6667,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6693,7 +6693,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6719,7 +6719,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6745,7 +6745,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6771,7 +6771,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6797,7 +6797,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6823,7 +6823,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6849,7 +6849,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6875,7 +6875,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6901,7 +6901,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6927,7 +6927,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6953,7 +6953,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -6979,7 +6979,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -7005,7 +7005,7 @@
       "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "deferred"
     },
@@ -7031,7 +7031,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7057,7 +7057,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7083,7 +7083,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7109,7 +7109,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7135,7 +7135,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7161,7 +7161,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7187,7 +7187,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7213,7 +7213,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7239,7 +7239,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7265,7 +7265,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7291,7 +7291,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7317,7 +7317,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7343,7 +7343,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7369,7 +7369,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7395,7 +7395,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7421,7 +7421,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7447,7 +7447,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7473,7 +7473,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7499,7 +7499,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7525,7 +7525,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7551,7 +7551,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7577,7 +7577,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7603,7 +7603,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7629,7 +7629,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7655,7 +7655,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7681,7 +7681,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7707,7 +7707,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7733,7 +7733,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7759,7 +7759,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7785,7 +7785,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7811,7 +7811,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7837,7 +7837,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7863,7 +7863,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7889,7 +7889,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7915,7 +7915,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7941,7 +7941,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7967,7 +7967,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -7993,7 +7993,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8019,7 +8019,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8045,7 +8045,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8071,7 +8071,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8097,7 +8097,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8123,7 +8123,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8149,7 +8149,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8175,7 +8175,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8201,7 +8201,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8227,7 +8227,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8253,7 +8253,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8279,7 +8279,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8305,7 +8305,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8331,7 +8331,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8357,7 +8357,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8383,7 +8383,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8409,7 +8409,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8435,7 +8435,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8461,7 +8461,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8487,7 +8487,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8513,7 +8513,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8539,7 +8539,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8565,7 +8565,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8591,7 +8591,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8617,7 +8617,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8643,7 +8643,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8669,7 +8669,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8695,7 +8695,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8721,7 +8721,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8747,7 +8747,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8773,7 +8773,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8799,7 +8799,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8825,7 +8825,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8851,7 +8851,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8877,7 +8877,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8903,7 +8903,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8929,7 +8929,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8955,7 +8955,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -8981,7 +8981,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9007,7 +9007,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9033,7 +9033,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9059,7 +9059,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9085,7 +9085,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9111,7 +9111,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9137,7 +9137,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9163,7 +9163,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9189,7 +9189,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9215,7 +9215,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9241,7 +9241,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9267,7 +9267,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9293,7 +9293,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9319,7 +9319,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9345,7 +9345,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9371,7 +9371,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9397,7 +9397,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9423,7 +9423,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9449,7 +9449,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9475,7 +9475,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9501,7 +9501,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9527,7 +9527,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9553,7 +9553,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9579,7 +9579,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9605,7 +9605,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9631,7 +9631,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9657,7 +9657,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9683,7 +9683,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9709,7 +9709,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9735,7 +9735,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9761,7 +9761,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9787,7 +9787,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9813,7 +9813,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9839,7 +9839,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9865,7 +9865,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9891,7 +9891,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9917,7 +9917,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9943,7 +9943,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9969,7 +9969,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -9995,7 +9995,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10021,7 +10021,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10047,7 +10047,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10073,7 +10073,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10099,7 +10099,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10125,7 +10125,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10151,7 +10151,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10177,7 +10177,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10203,7 +10203,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10229,7 +10229,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10255,7 +10255,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10281,7 +10281,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10307,7 +10307,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10333,7 +10333,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10359,7 +10359,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10385,7 +10385,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10411,7 +10411,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10437,7 +10437,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10463,7 +10463,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10489,7 +10489,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10515,7 +10515,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10541,7 +10541,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10567,7 +10567,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10593,7 +10593,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10619,7 +10619,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10645,7 +10645,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10671,7 +10671,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10697,7 +10697,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10723,7 +10723,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10749,7 +10749,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10775,7 +10775,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10801,7 +10801,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10827,7 +10827,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10853,7 +10853,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10879,7 +10879,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10905,7 +10905,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10931,7 +10931,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10957,7 +10957,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -10983,7 +10983,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11009,7 +11009,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11035,7 +11035,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11061,7 +11061,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11087,7 +11087,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11113,7 +11113,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11139,7 +11139,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11165,7 +11165,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11191,7 +11191,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11217,7 +11217,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11243,7 +11243,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11269,7 +11269,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11295,7 +11295,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11321,7 +11321,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11347,7 +11347,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11373,7 +11373,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11399,7 +11399,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11425,7 +11425,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11451,7 +11451,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11477,7 +11477,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11503,7 +11503,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11529,7 +11529,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11555,7 +11555,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11581,7 +11581,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11607,7 +11607,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11633,7 +11633,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11659,7 +11659,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11685,7 +11685,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11711,7 +11711,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11737,7 +11737,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11763,7 +11763,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11789,7 +11789,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11815,7 +11815,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11841,7 +11841,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11867,7 +11867,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11893,7 +11893,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11919,7 +11919,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11945,7 +11945,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11971,7 +11971,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -11997,7 +11997,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12023,7 +12023,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12049,7 +12049,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12075,7 +12075,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12101,7 +12101,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12127,7 +12127,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12153,7 +12153,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12179,7 +12179,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12205,7 +12205,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12231,7 +12231,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12257,7 +12257,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12283,7 +12283,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12309,7 +12309,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12335,7 +12335,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12361,7 +12361,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12387,7 +12387,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12413,7 +12413,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12439,7 +12439,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12465,7 +12465,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12491,7 +12491,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12517,7 +12517,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12543,7 +12543,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12569,7 +12569,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12595,7 +12595,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12621,7 +12621,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12647,7 +12647,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12673,7 +12673,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12699,7 +12699,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12725,7 +12725,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12751,7 +12751,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12777,7 +12777,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12803,7 +12803,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12829,7 +12829,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12855,7 +12855,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12881,7 +12881,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12907,7 +12907,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12933,7 +12933,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12959,7 +12959,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -12985,7 +12985,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13011,7 +13011,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13037,7 +13037,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13063,7 +13063,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13089,7 +13089,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13115,7 +13115,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13141,7 +13141,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13167,7 +13167,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13193,7 +13193,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13219,7 +13219,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13245,7 +13245,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13271,7 +13271,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13297,7 +13297,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13323,7 +13323,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13349,7 +13349,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13375,7 +13375,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13401,7 +13401,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13427,7 +13427,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13453,7 +13453,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13479,7 +13479,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13505,7 +13505,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13531,7 +13531,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13557,7 +13557,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13583,7 +13583,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13609,7 +13609,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13635,7 +13635,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13661,7 +13661,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13687,7 +13687,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13713,7 +13713,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13739,7 +13739,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13765,7 +13765,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13791,7 +13791,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13817,7 +13817,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13843,7 +13843,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13869,7 +13869,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13895,7 +13895,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13921,7 +13921,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13947,7 +13947,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13973,7 +13973,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -13999,7 +13999,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14025,7 +14025,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14051,7 +14051,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14077,7 +14077,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14103,7 +14103,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14129,7 +14129,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14155,7 +14155,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14181,7 +14181,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14207,7 +14207,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14233,7 +14233,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14259,7 +14259,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14285,7 +14285,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14311,7 +14311,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14337,7 +14337,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14363,7 +14363,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14389,7 +14389,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14415,7 +14415,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14441,7 +14441,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14467,7 +14467,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14493,7 +14493,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14519,7 +14519,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14545,7 +14545,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14571,7 +14571,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14597,7 +14597,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14623,7 +14623,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14649,7 +14649,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14675,7 +14675,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14701,7 +14701,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14727,7 +14727,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14753,7 +14753,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14779,7 +14779,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14805,7 +14805,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14831,7 +14831,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14857,7 +14857,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14883,7 +14883,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14909,7 +14909,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14935,7 +14935,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14961,7 +14961,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -14987,7 +14987,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -15013,7 +15013,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -15039,7 +15039,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -15065,7 +15065,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -15091,7 +15091,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -15117,7 +15117,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -15143,7 +15143,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -15169,7 +15169,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -15195,7 +15195,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -15221,7 +15221,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -15247,7 +15247,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     },
@@ -15273,7 +15273,7 @@
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-04.json"
+        "reports/paired_publications_2026-09-07.json"
       ],
       "status": "rejected"
     }
@@ -15284,16 +15284,16 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "4c7e262b08aa0df59e04249151b547d929f6db80",
-  "source_tree_sha": "2a92891efa17c2236bd514e18be381c660293b7a",
+  "source_commit": "59fbea79a2d686bef22987b427f890588322b097",
+  "source_tree_sha": "232758105304d4ee5d141c2069c95eaeaebeb8f5",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
-    "applied": 254,
+    "applied": 255,
     "categories": {
       "ambiguous_doi_change": {
         "applied": 64,
-        "deferred": 5,
+        "deferred": 4,
         "rejected": 0
       },
       "biographical_claim_change": {
@@ -15317,12 +15317,12 @@
         "rejected": 0
       },
       "zenodo_candidate": {
-        "applied": 80,
+        "applied": 81,
         "deferred": 47,
         "rejected": 318
       }
     },
-    "deferred": 61,
+    "deferred": 60,
     "items": 633,
     "rejected": 318,
     "review_required": true

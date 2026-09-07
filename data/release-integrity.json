@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-08-13T17:52:47+00:00",
-  "source_commit_at_generation": "4c7e262b08aa0df59e04249151b547d929f6db80",
+  "source_commit_at_generation": "59fbea79a2d686bef22987b427f890588322b097",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -23,23 +23,23 @@
     "pages/BIBLIOGRAPHY.md": "6ede272f86709a7b446dac81d1b168adf6b7abed1515cc76593b1085959a687b",
     "pages/SOFTWARE.md": "454e37b5df9400f1b74dcd770361b736efcac215a3b6ab929a9db7967c984a3a",
     "resume/source.json": "9bfe02faeb946d3a8cd6ab916a4686e0252ada8af2995257ee7c7ad59108904a",
-    "data/current-counts.json": "a4a512942a843ba5ce38273b0293340acba4f805061edb06c20822474d67f4de",
+    "data/current-counts.json": "77d8757aad5b3437c133f5a00b57ef186c879304df37710e1bdb7e34f83619f4",
     "data/coverage-exceptions.json": "a752fc6020b96a598afdec47182797059da3cc0fc94acc5d229b90cb978949e1",
     "data/repository-classification.json": "17513a8425e92a6254387f1943784a17637b11e4ae198e5cd20114ac50e46bc6",
-    "data/agent-index.json": "a0e05ff36947f1133b304d2ebcd85563c7e447e6f0f41beadc771baffa5c3d49",
+    "data/agent-index.json": "9f78ff133c910d500a48ef1339d65b8166f59c5e9a5fb52f67f8726cf2e2fff9",
     "data/generated-manifest.json": "8e8a3fb8a91f5167d4b7665565e474fe9ae8e08597acfd84a093bdb2750dcbeb",
-    "data/pages-artifact-manifest.json": "1f1186575bfc2f383afa18d05372dababc273c385cd81ee1d86175d12f31b1e5"
+    "data/pages-artifact-manifest.json": "c7bc952c67ea8b6718c95b6ce380a7fb763de4eba26b69b5b4d4b640ed804616"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "4c7e262b08aa0df59e04249151b547d929f6db80",
-    "artifact_file_count": 5124,
-    "artifact_bytes": 875242161,
+    "source_commit_at_generation": "59fbea79a2d686bef22987b427f890588322b097",
+    "artifact_file_count": 5125,
+    "artifact_bytes": 878561687,
     "omitted_paper_image_count": 8944
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "4c7e262b08aa0df59e04249151b547d929f6db80",
+    "candidate_source_commit": "59fbea79a2d686bef22987b427f890588322b097",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
@@ -87,9 +87,9 @@
     },
     "paired_publication_decisions": {
       "decision": "accept",
-      "groups": 72,
-      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row.",
-      "raw_candidates": 487
+      "groups": 74,
+      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work.",
+      "raw_candidates": 489
     },
     "paired_publications": {
       "already_reviewed": 398,

@@ -2,32 +2,32 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `4c7e262b08aa0df59e04249151b547d929f6db80`
+Source commit: `59fbea79a2d686bef22987b427f890588322b097`
 
 ## Disposition summary
 
 | Status | Items |
 |---|---:|
-| Applied | 254 |
-| Deferred | 61 |
+| Applied | 255 |
+| Deferred | 60 |
 | Rejected | 318 |
 
 | Category | Applied | Deferred | Rejected |
 |---|---:|---:|---:|
-| `ambiguous_doi_change` | 64 | 5 | 0 |
+| `ambiguous_doi_change` | 64 | 4 | 0 |
 | `biographical_claim_change` | 10 | 0 | 0 |
 | `public_source_observation` | 0 | 7 | 0 |
 | `repository_classification` | 99 | 2 | 0 |
 | `scholar_metric_change` | 1 | 0 | 0 |
-| `zenodo_candidate` | 80 | 47 | 318 |
+| `zenodo_candidate` | 81 | 47 | 318 |
 
 ## Evidence inputs
 
 - `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`1d01574cb4fb9c626202fd7572f637da37c4602ce38c2b79bd0c2390c057c60f`)
-- `claims_ledger`: `data/claims.json` (`b1577426f003802718bfba3f17df9bbcd373d81892c7af670e1f8af6f81d3db9`)
+- `claims_ledger`: `data/claims.json` (`02e5a7a4c62508ef7145707fac51f3dd9d9c3e23392bc215ece0413fb0777519`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
-- `paired_publication_decisions`: `data/paired-publication-decisions.json` (`2013d899c8b9eafe460771149184dbbd79b070642d260a08cfbdcf99f2881cdc`)
-- `paired_publications`: `reports/paired_publications_2026-09-04.json` (`82f5a3ff7e14900a4582eeb33f6a55dc417e0055e922aecfd717e776570e0110`)
+- `paired_publication_decisions`: `data/paired-publication-decisions.json` (`a0b82b5196095e0b0c3a803c6de155f807d36da680a58e577ca3417fb82b4b95`)
+- `paired_publications`: `reports/paired_publications_2026-09-07.json` (`211f372f8f0c648f199c7fd89ad9c54aac7cb46f1a5abd89d310e47e8a2adfc5`)
 - `previous_public_source_snapshot`: `reports/public_source_snapshot_2026-08-26.json` (`4616f31a102e00f1e268e7942c38d5914080895fdbf76cf1414f47f3e7dfad91`)
 - `public_source_inventory`: `reports/public_source_inventory_2026-09-04.json` (`2c541568c04f03fb5db6a11ce7400655cc44fdb97789d36b5246d4ea42e08c77`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`cff826363c7ca0e66bf583ee039a27cf0bfebc05ef57fb3222a8d91f50f73714`)
@@ -40,9 +40,8 @@ Source commit: `4c7e262b08aa0df59e04249151b547d929f6db80`
 
 - **`ambiguous_doi_change` — paired-publication:10.5281/zenodo.18364118:https://github.com/ActiveInferenceInstitute/ActiveInferAnts/releases/tag/1**: The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.
 - **`ambiguous_doi_change` — paired-publication:10.5281/zenodo.18364118:https://github.com/ActiveInferenceInstitute/CEREBRUM/releases/tag/1.3**: The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.
-- **`ambiguous_doi_change` — paired-publication:10.5281/zenodo.21750800:https://github.com/docxology/codomyrmex/releases/tag/untagged-ce7d22a2764590b03a3d**: The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.
+- **`ambiguous_doi_change` — paired-publication:10.5281/zenodo.21750800:https://github.com/docxology/codomyrmex/releases/tag/untagged-5ffd202ff49ffc408d95**: The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.
 - **`ambiguous_doi_change` — paired-publication:10.5281/zenodo.22134545:https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067**: The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.
-- **`ambiguous_doi_change` — paired-publication:10.5281/zenodo.7803313:https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v3.2.0**: The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.
 - **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/CEREBRUM**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/Journal-Utilities**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
@@ -356,6 +355,7 @@ Source commit: `4c7e262b08aa0df59e04249151b547d929f6db80`
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.7803313:https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v1.8.0**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.7803313:https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v2.0.0**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.7803313:https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v3.0.0**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
+- **`zenodo_candidate` — paired-publication:10.5281/zenodo.7803313:https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v3.2.0**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
 
 ## Rejected decisions
 
