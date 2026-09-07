@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-07T23:11:37Z",
-  "source_commit_at_generation": "cdeeb62cec43e746c53d0a87b177a3c3ec480716",
+  "generated_at": "2026-09-07T23:14:28Z",
+  "source_commit_at_generation": "ddb77c5e04b0d7b8fa31cd88f42babb7469795ee",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 878092786,
+    "source_bytes": 878095157,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5128,
-    "artifact_bytes": 878989929
+    "artifact_file_count": 5129,
+    "artifact_bytes": 878992478
   },
   "included_files": [
     {
@@ -5325,7 +5325,7 @@
     {
       "path": "catalog.html",
       "bytes": 50171,
-      "sha256": "167e9a2fcea4637c0be99548e4d7fed9ed6332ab4d338e36c513d9a3f894f491"
+      "sha256": "fb0a1df82db90d58fbc4c4f36ac83028cce92f418d32bf19ed28eb5c705ca938"
     },
     {
       "path": "cite-verify.html",
@@ -6475,7 +6475,7 @@
     {
       "path": "data/catalog.json",
       "bytes": 31608,
-      "sha256": "55963c967359ff10c0f4513145351ba4af5db4eb911df86d9b27c87fe8e5610d"
+      "sha256": "70e068f63508ed1b708520f6830f8161dd8ceb76614ce836056546345552da18"
     },
     {
       "path": "data/claims.json",
@@ -17046,6 +17046,11 @@
       "path": "reports/browser-qa/2026-08-26/manifest.json",
       "bytes": 2128,
       "sha256": "77c34d3cb644f7f6ad603968600674504b341527567e1ab2d752895782daabfe"
+    },
+    {
+      "path": "reports/browser-qa/2026-09-07/manifest.json",
+      "bytes": 2371,
+      "sha256": "48d8fa78f0a856037f7e707853fd7d81f313d79aded5105e93d6964ddd0b5d5c"
     },
     {
       "path": "reports/browser-qa/AGENTS.md",
