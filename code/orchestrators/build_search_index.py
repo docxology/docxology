@@ -411,7 +411,11 @@ def main() -> None:
     generated_at = existing_generated_at() if args.check else None
     if not args.check:
         candidate = json.loads(render())
-        generated_at = stable_generated_at(OUT, candidate)
+        # One timestamp for every surface: falling back to the candidate's own
+        # generated_at (instead of None) keeps render() and render_split() from
+        # stamping the main index and its companions with different fresh
+        # timestamps when the content body changed.
+        generated_at = stable_generated_at(OUT, candidate) or candidate["generated_at"]
     content = render(generated_at)
     outputs = {OUT: content}
     outputs.update(render_split(generated_at))
