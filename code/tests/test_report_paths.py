@@ -13,7 +13,11 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 import report_paths  # noqa: E402
-from release_controls import source_payload_commit, source_tree_sha  # noqa: E402
+from release_controls import (  # noqa: E402
+    latest_payload_commit,
+    source_payload_commit,
+    source_tree_sha,
+)
 from report_paths import (  # noqa: E402
     dated_report_dir,
     dated_report_path,
@@ -276,3 +280,87 @@ def test_control_tail_provenance_ignores_only_declared_generated_controls(tmp_pa
     state = control_tail_worktree_state(tmp_path, payload)
     assert state["source_worktree_clean"] is False
     assert state["source_worktree_dirty_paths"] == ["README.md"]
+
+
+def test_latest_payload_commit_descends_merge_tree_identical_parent():
+    """A merge commit whose tree matches a parent steps through to that parent.
+
+    GitHub's PR merge ref has the base branch as first parent, so its
+    first-parent diff is the whole branch; provenance recorded on the branch
+    tip can only resolve if the walk descends the tree-identical parent.
+    """
+    base_tree = "1111111111111111111111111111111111111111"
+    branch_tree = base_tree  # tree-identical merge (fast-forward-shaped)
+    payload = "payloadsha"
+    merge = "mergesha"
+
+    parents = {merge: ["basesha", "branchtip"], "branchtip": ["basesha"], "basesha": []}
+    trees = {merge: branch_tree, "branchtip": branch_tree, "basesha": base_tree}
+    changed = {
+        merge: ["CHANGELOG.md", "reports/public_source_review_2026-09-07.json"],
+        "branchtip": ["reports/public_source_review_2026-09-07.json"],
+        "basesha": ["README.md"],
+    }
+    resolved = latest_payload_commit(
+        merge,
+        lambda c: parents[c][0] if parents[c] else None,
+        lambda c: [Path(p) for p in changed[c]],
+        parents_for=lambda c: parents[c],
+        tree_for=lambda c: trees[c],
+    )
+    assert resolved == "basesha"
+    # the walk left the merge commit via the tree-identical parent
+    assert resolved != merge
+
+
+def test_latest_payload_commit_stops_on_true_content_merge():
+    parents = {"merge": ["base", "feature"]}
+    trees = {"merge": "mixedtree", "base": "basetree", "feature": "featuretree"}
+    changed = {"merge": ["CHANGELOG.md"], "base": ["README.md"], "feature": ["CHANGELOG.md"]}
+    resolved = latest_payload_commit(
+        "merge",
+        lambda c: parents[c][0] if parents[c] else None,
+        lambda c: [Path(p) for p in changed[c]],
+        parents_for=lambda c: parents[c],
+        tree_for=lambda c: trees[c],
+    )
+    assert resolved == "merge"
+
+
+def test_merge_ref_provenance_resolves_branch_payload_commit(tmp_path: Path):
+    """End-to-end: a PR-shaped merge ref resolves the branch's payload commit."""
+    for args in (
+        ["git", "init", "-q", "--initial-branch=main"],
+        ["git", "config", "user.email", "test@example.com"],
+        ["git", "config", "user.name", "Test"],
+    ):
+        subprocess.run(args, cwd=tmp_path, check=True)
+    reports = tmp_path / "reports"
+    reports.mkdir()
+    (reports / "public_source_review_2026-08-25.json").write_text("{}\n", encoding="utf-8")
+    subprocess.run(["git", "add", "reports"], cwd=tmp_path, check=True)
+    subprocess.run(["git", "commit", "-qm", "base controls"], cwd=tmp_path, check=True)
+    base = subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=tmp_path, check=True, capture_output=True, text=True
+    ).stdout.strip()
+
+    subprocess.run(["git", "checkout", "-qb", "feature"], cwd=tmp_path, check=True)
+    (tmp_path / "CHANGELOG.md").write_text("payload change\n", encoding="utf-8")
+    subprocess.run(["git", "add", "CHANGELOG.md"], cwd=tmp_path, check=True)
+    subprocess.run(["git", "commit", "-qm", "payload"], cwd=tmp_path, check=True)
+    branch_payload = subprocess.run(
+        ["git", "rev-parse", "HEAD"], cwd=tmp_path, check=True, capture_output=True, text=True
+    ).stdout.strip()
+    (reports / "public_source_review_2026-09-07.json").write_text("{}\n", encoding="utf-8")
+    subprocess.run(["git", "add", "reports"], cwd=tmp_path, check=True)
+    subprocess.run(["git", "commit", "-qm", "branch controls"], cwd=tmp_path, check=True)
+
+    subprocess.run(["git", "checkout", "-q", "main"], cwd=tmp_path, check=True)
+    subprocess.run(
+        ["git", "merge", "--no-ff", "-q", "-m", "merge feature", "feature"],
+        cwd=tmp_path,
+        check=True,
+    )
+
+    assert source_payload_commit(tmp_path) == branch_payload
+    assert base != branch_payload
