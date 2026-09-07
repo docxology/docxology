@@ -93,6 +93,28 @@ evidence and belong in `CHANGELOG.md` at merge time:
   failure) and `dfri.people.stanford.edu` (503) remain the only two
   manually-verifiable candidates and both are already visible in the dated
   triage.
+- **MEDIUM (fixed in the 2026-09-07 PR):** the `pull_request` event of
+  `.github/workflows/validate.yml` checked out the synthetic merge ref, whose
+  first parent is the base branch — so its first-parent diff is the entire PR
+  and `source_payload_commit` resolved to the merge commit, failing
+  `build_pages_artifact.py --check-manifest` ("stale Pages artifact manifest:
+  source_commit_at_generation") for every content PR since commit-bound
+  provenance landed. The last green PR validate runs predate the pattern
+  (2026-05-29). Fixed by pinning the checkout to
+  `github.event.pull_request.head.sha`.
+- **DOC-004 advance (2026-09-07):** recorded R73 (Codomyrmex
+  `untagged-ce7d…` v1.3.0) and R74 (GNN v3.2.0) as `superseded` /
+  `bibliography-folder version-history-only` in
+  `data/paired-publication-decisions.json`, verified against the regenerated
+  `reports/paired_publications_2026-09-07.json` (5 → 2 unreviewed in the
+  comparable scope; the full-scope queue is 4 — see DOC-004). The Cognitive
+  Integrity cluster remains held for the principal via DOC-005.
+- **MINOR (observed, owner decision):** pairing candidates whose GitHub
+  release is a *draft* carry rotating `untagged-*` URLs, so per-fingerprint
+  decisions (R71/R73) cannot permanently clear them — each scan requeues the
+  release under a new fingerprint. A durable fix belongs to the owner
+  (e.g. keying untagged releases by repo+tag+DOI or skipping drafts); not
+  implemented here.
 - **MAJOR: none found.** All 48-gate-equivalent checks visible from a clean
   checkout pass; the two environment-bound items (browser QA under
   `browser-qa` extra, signed-in Search Console follow-up) remain tracked by
@@ -128,16 +150,20 @@ evidence and belong in `CHANGELOG.md` at merge time:
 - Deliverable: record accept, reject, supersede, or defer decisions for every non-empty ambiguous queue in `data/paired-publication-decisions.json`
 - Acceptance: no ambiguous candidate is auto-promoted; the latest report has zero unreviewed candidates or every candidate has a cited decision with release, DOI, evidence, and permanent citation-key outcome
 - Dependencies: latest `reports/paired_publications_*.json`
-- Current queue (2026-09-04 report, 5 unreviewed actions / 4 DOIs — every DOI
-  is already represented in `pages/BIBLIOGRAPHY.md`, so each decision is an
-  "already represented / version-history" record, not a new row): Codomyrmex
-  v1.3.0 `10.5281/zenodo.21750800` (R71 already records this DOI as
-  version-history-only; the 2026-09-04 run re-queued it because the release
-  URL fingerprint differs), Cognitive Integrity Framework Part 1
-  `10.5281/zenodo.18364118` (releases 1 and 1.3) and Part 2 v1.2.3
-  `10.5281/zenodo.22134545` (held for the principal — overlaps the
-  `docxology/cognitive_integrity` classification in DOC-005), GNN v3.2.0
-  `10.5281/zenodo.7803313`.
+- Current queue (2026-09-07 report, 4 unreviewed actions / 3 DOIs): Codomyrmex
+  v1.3.0 `10.5281/zenodo.21750800` (draft-release `untagged-*` URLs rotate on
+  every edit, so each scan re-fingerprints the release — R71 and R73 already
+  record the 2026-08-26 and 2026-09-04 URLs as version-history-only) and
+  Codomyrmex v1.2.3 `10.5281/zenodo.22134545` (same rotating-draft pattern);
+  Cognitive Integrity Framework Part 1 `10.5281/zenodo.18364118` (releases 1
+  and 1.3) held for the principal — overlaps the
+  `docxology/cognitive_integrity` classification in DOC-005. Resolved this
+  pass: GNN v3.2.0 `10.5281/zenodo.7803313` (R74) and the 2026-09-04
+  Codomyrmex `untagged-ce7d` URL (R73), both recorded `superseded` /
+  `bibliography-folder version-history-only` with bibliography-folder
+  evidence. Open design question for the maintainer: draft-release URLs are
+  ephemeral identifiers, so per-fingerprint decisions cannot permanently
+  clear these candidates.
 
 ### DOC-005 — Classify uncatalogued repositories
 

@@ -22,6 +22,13 @@ jobs:
           # git commit dates reproducibly (shallow checkout yields the single
           # fetched commit's date for every file → "Stale generated sitemap.xml").
           fetch-depth: 0
+          # Commit-bound provenance manifests record the branch tip's payload
+          # commit. The pull_request merge ref's first parent is the base
+          # branch, so its first-parent diff is the entire PR and the tip
+          # binding can never resolve there (observed: "stale Pages artifact
+          # manifest (source_commit_at_generation)" for every content PR).
+          # Validate the PR head commit instead of the synthetic merge ref.
+          ref: ${{ github.event.pull_request.head.sha || github.ref }}
 
       - name: Set up Python
         uses: actions/setup-python@v7

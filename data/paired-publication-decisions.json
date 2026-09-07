@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-26T18:01:35Z",
-  "source_report": "reports/paired_publications_2026-08-26.json",
+  "generated_at": "2026-09-07T21:03:44Z",
+  "source_report": "reports/paired_publications_2026-09-04.json",
   "source_review_queue": "reports/paired_publications_review_queue_2026-06-04.md",
   "decision_summary": {
     "decision": "accept",
-    "groups": 72,
-    "raw_candidates": 487,
-    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row."
+    "groups": 74,
+    "raw_candidates": 489,
+    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work."
   },
   "groups": [
     {
@@ -11013,6 +11013,68 @@
           "reviewed_at": "2026-08-26T18:01:35Z",
           "review_source": "user: approved all remaining review items; retain the concept DOI for citation and preserve the v1.0.4 version DOI separately as artifact metadata",
           "source_report": "reports/paired_publications_2026-08-26.json"
+        }
+      ]
+    },
+    {
+      "id": "R73",
+      "decision": "superseded",
+      "decided_at": "2026-09-07T21:03:44Z",
+      "decided_by": "codex",
+      "doi": "10.5281/zenodo.21750800",
+      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "candidate_github_repo": "docxology/codomyrmex",
+      "folder": "2026_Codomyrmex",
+      "representation": "bibliography-folder version-history-only",
+      "rationale": "Supersede: the docxology/codomyrmex v1.3.0 release (untagged-ce7d22a2764590b03a3d) is a software version of the already-represented Codomyrmex work; DOI 10.5281/zenodo.21750800 is indexed in data/works.json with curated folder papers/2026_Codomyrmex. Same DOI and work as R71 (untagged-c403e197e42abd3e0829 release, recorded 2026-08-26); the 2026-09-04 sync re-queued this candidate only because the release URL fingerprint differs.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "action_type": "needs_review",
+          "doi": "10.5281/zenodo.21750800",
+          "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+          "confidence": "needs_review",
+          "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+          "github_repo": "docxology/codomyrmex",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-ce7d22a2764590b03a3d",
+          "zenodo_record_url": "https://zenodo.org/records/21750800",
+          "release_tag": "v1.3.0",
+          "folder": "2026_Codomyrmex",
+          "review_decision": "superseded",
+          "reviewed_at": "2026-09-07T21:03:44Z",
+          "review_source": "codex: session review; DOI indexed in data/works.json with curated bibliography folder",
+          "source_report": "reports/paired_publications_2026-09-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R74",
+      "decision": "superseded",
+      "decided_at": "2026-09-07T21:03:44Z",
+      "decided_by": "codex",
+      "doi": "10.5281/zenodo.7803313",
+      "title": "GeneralizedNotationNotation (GNN)",
+      "candidate_github_repo": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "folder": "2026_GeneralizedNotationNotationGNN",
+      "representation": "bibliography-folder version-history-only",
+      "rationale": "Supersede: the ActiveInferenceInstitute/GeneralizedNotationNotation v3.2.0 release is a software version of the already-represented GNN work; DOI 10.5281/zenodo.7803313 is bibliography row 168 with curated folder papers/2026_GeneralizedNotationNotationGNN.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "action_type": "needs_review",
+          "doi": "10.5281/zenodo.7803313",
+          "title": "GeneralizedNotationNotation (GNN)",
+          "confidence": "needs_review",
+          "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+          "github_repo": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v3.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "release_tag": "v3.2.0",
+          "folder": "2026_GeneralizedNotationNotationGNN",
+          "review_decision": "superseded",
+          "reviewed_at": "2026-09-07T21:03:44Z",
+          "review_source": "codex: session review; DOI indexed in data/works.json with curated bibliography folder",
+          "source_report": "reports/paired_publications_2026-09-04.json"
         }
       ]
     }

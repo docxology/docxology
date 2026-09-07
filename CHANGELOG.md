@@ -33,6 +33,22 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   accessibility reports current. Resolved MIN-01/MIN-02 sections removed from
   `TODO.md` per the completed-rows-deleted convention (evidence: 2026-08-31
   entry above); no new MAJOR items found.
+- **PR validate workflow now validates the PR head commit:** the
+  `pull_request` event checked out the synthetic merge ref, whose first
+  parent is the base branch, so its first-parent diff is the entire PR and
+  the commit-bound `source_commit_at_generation` binding could never resolve
+  there — every content PR since the provenance pattern landed failed
+  `build_pages_artifact.py --check-manifest` ("stale Pages artifact
+  manifest") while push runs stayed green. `.github/workflows/validate.yml`
+  now checks out `github.event.pull_request.head.sha`.
+- **Paired-publication decisions R73/R74 recorded:** the 2026-09-04 review
+  queue's Codomyrmex `untagged-ce7d…` v1.3.0 release and GNN v3.2.0 are now
+  recorded `superseded` / `bibliography-folder version-history-only` in
+  `data/paired-publication-decisions.json`, each citing its curated
+  bibliography folder; the refreshed full-scope
+  `reports/paired_publications_2026-09-07.json` (450 pairs) drops the queue
+  to 4 unreviewed actions — the rotating-draft Codomyrmex URLs and the
+  Cognitive Integrity cluster held for the principal (DOC-005 overlap).
 
 ## 2026-09-05
 
