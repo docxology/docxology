@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-09-07T23:11:34Z",
+  "source_commit": "cdeeb62cec43e746c53d0a87b177a3c3ec480716",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "data/agent-index.json",
+    "data/pages-artifact-manifest.json",
+    "data/release-integrity.json",
+    "reports/pages_artifact_growth_2026-09-07.json"
+  ],
+  "source_tree_sha": "ac04d17cab57506a7b710db18a7fad3dea8bb745",
+  "tool": "Playwright Python sync API",
+  "scope": "progressive enhancement, interaction, responsive, CSP-adjacent runtime checks",
+  "passing": 7,
+  "count": 7,
+  "checks": [
+    {
+      "name": "core routes render without console errors",
+      "ok": true,
+      "details": {
+        "routes": 6,
+        "console_errors": 0,
+        "page_errors": 0,
+        "known_meta_csp_warnings": 0
+      },
+      "duration_ms": 2796
+    },
+    {
+      "name": "mobile menu opens, closes, and restores focus",
+      "ok": true,
+      "details": {
+        "opened_and_closed": true,
+        "focus_restored": true
+      },
+      "duration_ms": 107
+    },
+    {
+      "name": "no-JavaScript fallbacks remain usable",
+      "ok": true,
+      "details": {
+        "routes": 3,
+        "fallbacks": "visible"
+      },
+      "duration_ms": 123
+    },
+    {
+      "name": "publication filters, announcements, and sorting update state",
+      "ok": true,
+      "details": {
+        "count_before": "50 of 212 shown",
+        "count_after": "50 of 190 shown (filtered from 212)",
+        "non_paper_rows": 0,
+        "sort_state": "descending"
+      },
+      "duration_ms": 297
+    },
+    {
+      "name": "gallery lightbox traps and restores focus",
+      "ok": true,
+      "details": {
+        "trigger": "Open artwork: All-domain Anomaly Resolution Office (AARO)",
+        "focus_restored": true
+      },
+      "duration_ms": 167
+    },
+    {
+      "name": "320px layout honors reduced motion without page overflow",
+      "ok": true,
+      "details": {
+        "routes": 4,
+        "viewport": "320x760",
+        "reduced_motion": true,
+        "max_overflow_px": 2
+      },
+      "duration_ms": 1123
+    },
+    {
+      "name": "forced colors and YouTube iframe policy remain covered",
+      "ok": true,
+      "details": {
+        "forced_colors": true,
+        "iframe_origin": "www.youtube-nocookie.com",
+        "iframe_title": true
+      },
+      "duration_ms": 105
+    }
+  ]
+}

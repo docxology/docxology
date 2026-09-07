@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-08-13T17:52:47+00:00",
-  "source_commit_at_generation": "362e5fff65ad42cef4481fb6ec37b2a62f196185",
+  "source_commit_at_generation": "cdeeb62cec43e746c53d0a87b177a3c3ec480716",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -16,30 +16,30 @@
       "code/orchestrators/classify_repositories.py": "1923005202420c1d121d5b237a5af5e0831d2becc3caf36dd1b6f8f0b4fae2b6",
       "code/orchestrators/audit_assets.py": "0a9f8922f9ee8c51b79861bdabd1c0f4aa8e9501f24dc635c25581a54f66c13a",
       "code/src/public_integrity.py": "784d7fb7007bf2f4a2f0c2d178a4d157d80c647926c04d88a1c83854bc161da0",
-      "code/src/release_controls.py": "9225c5b540cff163e05d4c894d291ad81d732d3902a44d0b83fd64464c184d5d"
+      "code/src/release_controls.py": "a87444571371a9ab2edcc0597ebe0732ce46f78e9b1fadcc840c1d832389ec5d"
     }
   },
   "source_sha256": {
     "pages/BIBLIOGRAPHY.md": "6ede272f86709a7b446dac81d1b168adf6b7abed1515cc76593b1085959a687b",
-    "pages/SOFTWARE.md": "454e37b5df9400f1b74dcd770361b736efcac215a3b6ab929a9db7967c984a3a",
+    "pages/SOFTWARE.md": "31a6b1ba1f46e55dea1c131b1f2e4f17cb5e6c278f0d448604245ca12255be9a",
     "resume/source.json": "9bfe02faeb946d3a8cd6ab916a4686e0252ada8af2995257ee7c7ad59108904a",
-    "data/current-counts.json": "718ad668da36fb45fe7d3cd2a203b9c61ce58892ff5f0009e8e5805e478db0c8",
+    "data/current-counts.json": "40298f329d95976e8c192379231d25aead90a7a6f537605ac06b91edd2c29357",
     "data/coverage-exceptions.json": "a752fc6020b96a598afdec47182797059da3cc0fc94acc5d229b90cb978949e1",
-    "data/repository-classification.json": "17513a8425e92a6254387f1943784a17637b11e4ae198e5cd20114ac50e46bc6",
-    "data/agent-index.json": "49a11673a4d367a26ce53a3288b302118c5cc8db3cdd697d610b0ca8a392e95f",
+    "data/repository-classification.json": "00593c5bfa2ff29623d2dac6596e8d88795ee53d3fd4f583d2c07834035fcd6a",
+    "data/agent-index.json": "716f28884ea394860301ca6d2c67b79798cb4557094eedf277fd4c0ef4bb485b",
     "data/generated-manifest.json": "20ed64ad417a9f40c7cc57399581f58560fc25bb3bcdddd9f6b2f7f7b41cbd61",
-    "data/pages-artifact-manifest.json": "15f8a465a682215ff4a15a3572b5c0b959a6102bdd3c4a514a69386f09c6cd51"
+    "data/pages-artifact-manifest.json": "479b8c5b1345e3f7b47eec140f341b0a4c9998337f6131aa310557324f942aa7"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "362e5fff65ad42cef4481fb6ec37b2a62f196185",
-    "artifact_file_count": 5125,
-    "artifact_bytes": 878561706,
+    "source_commit_at_generation": "cdeeb62cec43e746c53d0a87b177a3c3ec480716",
+    "artifact_file_count": 5128,
+    "artifact_bytes": 878989929,
     "omitted_paper_image_count": 8944
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "362e5fff65ad42cef4481fb6ec37b2a62f196185",
+    "candidate_source_commit": "cdeeb62cec43e746c53d0a87b177a3c3ec480716",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
@@ -64,8 +64,8 @@
     "full_text_papers": 190,
     "generated_exports": {
       "data_publications_ld_main_entity": 212,
-      "data_software_json": 148,
-      "data_software_ld_main_entity": 148,
+      "data_software_json": 149,
+      "data_software_ld_main_entity": 149,
       "data_works_json": 212
     },
     "github_inventory": {
@@ -87,16 +87,16 @@
     },
     "paired_publication_decisions": {
       "decision": "accept",
-      "groups": 74,
-      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work.",
-      "raw_candidates": 489
+      "groups": 78,
+      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated.",
+      "raw_candidates": 493
     },
     "paired_publications": {
-      "already_reviewed": 399,
+      "already_reviewed": 400,
       "create_new": 0,
       "github_releases": 231,
-      "needs_review": 4,
-      "pairs": 450,
+      "needs_review": 0,
+      "pairs": 447,
       "strong_pairs": 48,
       "update_existing": 47,
       "zenodo_records": 151
@@ -115,8 +115,8 @@
     },
     "software": {
       "active_inference_institute": 39,
-      "curated_total": 148,
-      "docxology_owned": 109
+      "curated_total": 149,
+      "docxology_owned": 110
     },
     "types": {
       "Books": 5,
