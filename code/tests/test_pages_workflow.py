@@ -17,7 +17,9 @@ def test_pages_deploy_waits_for_the_authoritative_validation_job():
     assert "if: github.ref == 'refs/heads/main'" in validate_job
     assert "fetch-depth: 0" in validate_job
     assert "uv run python3 code/orchestrators/validate_repo.py" in validate_job
-    assert "uv run python3 -m pytest code/tests -q" in validate_job
+    # -n auto parallelises across cores; --dist loadfile keeps every test in a
+    # file on one worker, so module-level caches and fixtures behave as written.
+    assert "uv run python3 -m pytest code/tests -q -n auto --dist loadfile" in validate_job
     # The lint gate is configured in pyproject.toml ([tool.ruff.lint]) rather
     # than pinned to one rule on the command line, so CI and a local
     # `ruff check code` enforce exactly the same set.

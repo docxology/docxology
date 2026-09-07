@@ -86,9 +86,17 @@ def test_no_orchestrator_spawns_a_path_resolved_python3():
 
 
 def test_the_locked_uv_environment_stays_the_only_documented_exception():
-    """The CV generator must keep running under ``uv run`` for pinned ReportLab."""
+    """The CV generator must keep running under ``uv run`` for pinned ReportLab.
+
+    Scoped to production sources. A test may legitimately quote both the
+    forbidden and the permitted form while asserting the contract, and counting
+    those as violations would make the guard fire on its own documentation.
+    """
+    production = (REPO_ROOT / "code" / "orchestrators", REPO_ROOT / "code" / "src")
     uv_invocations: list[str] = []
     for path in _python_sources():
+        if path.parent not in production:
+            continue
         tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
         for node in ast.walk(tree):
             if not isinstance(node, (ast.List, ast.Tuple)):

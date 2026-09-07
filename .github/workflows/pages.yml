@@ -38,7 +38,7 @@ jobs:
         run: uv run python3 code/orchestrators/validate_repo.py
 
       - name: Run tests
-        run: uv run python3 -m pytest code/tests -q
+        run: uv run python3 -m pytest code/tests -q -n auto --dist loadfile
 
       - name: Lint Python sources (ruff default rules + W605)
         run: uv run --group lint ruff check code

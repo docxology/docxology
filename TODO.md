@@ -230,6 +230,61 @@ Comprehensive follow-up pass:
 - Acceptance: current reports remain hosted/indexed; historical reports remain in GitHub or release archives; no evidence is deleted silently
 - Dependencies: Pages growth report, release-integrity manifest
 
+### PERF-002 — Schedule the pipeline from the dependency graph it already has
+
+- Priority: P2
+- Owner: MAINTAINER
+- Trigger: next pipeline-performance pass
+- Deliverable: skip any generation step whose declared `sources` are unchanged
+  (content hash, not mtime) since its declared `outputs` were written
+- Acceptance: a documentation-only edit rebuilds only the surfaces that
+  actually consume it; `regenerate_all.py --validate` still reaches the same
+  fixed point from a clean tree
+- Dependencies: `data/generated-manifest.json`, `code/src/generation_plan.py`
+
+`data/generated-manifest.json` declares `sources` and `outputs` for all 56
+artifacts — a complete dependency graph that the scheduler ignores. Every source
+edit rebuilds all 47 steps and verifies all 47. On 2026-09-06 three separate
+`CHANGELOG.md` edits each cost a full tail rebuild, when roughly ten surfaces
+depend on it. This is the largest available win and needs no new data.
+
+### PERF-003 — One shared site-corpus pass instead of seven independent walks
+
+- Priority: P2
+- Owner: MAINTAINER
+- Trigger: next pipeline-performance pass
+- Deliverable: a shared, revision-keyed HTML corpus reader used by the
+  accessibility audit, asset audit, SEO deployment, SEO invariants, redirect
+  discovery, external-link scan, and canonical-integrity check
+- Acceptance: one SEO/QA pass decodes each file at most once; every existing
+  gate returns byte-identical findings
+- Dependencies: `code/src/generated_outputs.py`, `code/src/seo_invariants.py`
+
+Seven generators each walk the same ~1,580 HTML files. The same fix has now been
+applied twice in isolation — `seo_invariants` (5,613 reads / 91.1 MB per pass
+down to 1,582 / 24.9 MB) and `redirect_stubs.discover_redirect_stubs`
+(`test_redirect_stubs.py` 439 s down to 92 s). Doing it once centrally replaces
+the remaining five.
+
+### PERF-004 — Measure gates with counters, never a stopwatch
+
+- Priority: P2
+- Owner: MAINTAINER
+- Trigger: any future performance claim about a gate or generator
+- Deliverable: every performance change is justified by a deterministic counter
+  (file reads, bytes decoded, subprocesses spawned, source loads) recorded in
+  the change itself
+- Acceptance: no performance claim in `CHANGELOG.md` rests on wall-clock alone
+- Dependencies: none
+
+Wall-clock on the development volume is not a measurement: identical unchanged
+code measured 4.9 s and 33.2 s in consecutive runs, and PERF-001's batch walk
+was a silent no-op (its `timeout` fired and it fell back) while
+`build_sitemap.py --check` passed byte-identically throughout, proving nothing.
+The same discipline applies to the machine: hours were spent attributing
+repeated OOM kills to the pipeline before measuring and finding an idle
+`llama-server` holding 6.1 GB.
+
 ### PERF-001 — Evaluate batching the sitemap's per-URL git queries
 
 - Priority: P2

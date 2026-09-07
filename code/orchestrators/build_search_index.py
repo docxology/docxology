@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from functools import lru_cache
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -363,7 +364,16 @@ def render_split(generated_at: str | None = None) -> dict[Path, str]:
     return outputs
 
 
+@lru_cache(maxsize=4)
 def render(generated_at: str | None = None) -> str:
+    """Render the full search index.
+
+    Memoised on ``generated_at`` because one invocation renders three times:
+    once for the staleness candidate, once for ``search-index.json``, and once
+    more inside ``render_split``. Each pass reads nine JSON sources and rebuilds
+    every item, so the repeats were pure waste. The cache is process-local and
+    the sources do not change under a running generator.
+    """
     works = load_json("data/works.json")["works"]
     enrichments = load_json("data/work-enrichment.json").get("works", {})
     software = load_json("data/software.json")["repositories"]
@@ -410,8 +420,16 @@ def main() -> None:
     args = parser.parse_args()
     generated_at = existing_generated_at() if args.check else None
     if not args.check:
+        # Every surface must carry ONE timestamp. `stable_generated_at` returns
+        # None whenever the body actually changed, and a None here used to reach
+        # both `render(None)` and, separately, `render_split(None)` -> `render(None)`,
+        # so each stamped its own clock reading. On a slow machine those readings
+        # landed seconds apart, the four files were written disagreeing, and
+        # `--check` (which pins every surface to search-index.json's timestamp)
+        # then reported the three split surfaces stale forever. That is what had
+        # kept the repository validation gate red on main.
         candidate = json.loads(render())
-        generated_at = stable_generated_at(OUT, candidate)
+        generated_at = stable_generated_at(OUT, candidate) or candidate["generated_at"]
     content = render(generated_at)
     outputs = {OUT: content}
     outputs.update(render_split(generated_at))

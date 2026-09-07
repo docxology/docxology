@@ -9,6 +9,8 @@ dependencies = [
     # no-extra text fallback in extract_paper_texts.py.
     "pypdf>=5.0",
     "pytest>=8.0",
+    # Parallel test execution; the suite is ~556 tests and was single-process.
+    "pytest-xdist>=3.6",
     "reportlab==4.5.1",
 ]
 

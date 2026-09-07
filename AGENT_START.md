@@ -58,7 +58,7 @@ This repository is the public research, software, citation, evidence, and websit
 
 ```bash
 uv run python3 code/orchestrators/validate_repo.py
-PYTHONDONTWRITEBYTECODE=1 uv run python3 -m pytest code/tests -q
+PYTHONDONTWRITEBYTECODE=1 uv run python3 -m pytest code/tests -q -n auto --dist loadfile
 uv run --group lint ruff check code
 ```
 

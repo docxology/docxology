@@ -12,6 +12,7 @@ import sys
 import tempfile
 import urllib.parse
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -108,14 +109,73 @@ def run_resume_check() -> None:
     )
 
 
+def generation_check_command(step) -> list[str]:
+    """The no-write command for one generation step."""
+    if step.script == "build_resume.py":
+        # ReportLab is pinned for byte-identical PDFs; see run_resume_check.
+        return ["uv", "run", "python3", "code/orchestrators/build_resume.py", "--check"]
+    return [sys.executable, f"code/orchestrators/{step.script}", *step.check_args]
+
+
+def check_worker_count() -> int:
+    """How many no-write checks may run at once.
+
+    Every generation check is read-only by contract — ``coverage_errors``
+    rejects a check command carrying a write flag — so the plan's ordering
+    constrains *writes*, not verification. Running them one at a time was
+    costing wall-clock for nothing. ``DOCXOLOGY_CHECK_WORKERS`` pins the pool
+    for a memory-constrained machine; 1 restores the old serial behaviour.
+    """
+    override = os.environ.get("DOCXOLOGY_CHECK_WORKERS", "").strip()
+    if override.isdigit() and int(override) >= 1:
+        return int(override)
+    return max(1, min(8, (os.cpu_count() or 2)))
+
+
+def first_check_failure(results: list[tuple[object, int, str]]) -> tuple[object, int, str] | None:
+    """The earliest failure in PLAN order, so the message never depends on timing.
+
+    Results arrive in completion order under a worker pool; reporting them that
+    way would make the same broken tree blame a different generator run to run.
+    """
+    for entry in results:
+        if entry[1] != 0:
+            return entry
+    return None
+
+
 def run_local_generation_checks() -> None:
     """Run the mechanically paired no-write checks for every local writer."""
     validate_generation_plan()
-    for step in LOCAL_GENERATION_STEPS:
-        if step.script == "build_resume.py":
-            run_resume_check()
-            continue
-        run([sys.executable, f"code/orchestrators/{step.script}", *step.check_args])
+    workers = check_worker_count()
+    steps = list(LOCAL_GENERATION_STEPS)
+    if workers == 1:
+        for step in steps:
+            run(generation_check_command(step))
+        return
+
+    def _run(step) -> tuple[object, int, str]:
+        completed = subprocess.run(
+            generation_check_command(step),
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+        )
+        return step, completed.returncode, (completed.stdout or "") + (completed.stderr or "")
+
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        results = list(pool.map(_run, steps))
+
+    for step, _code, output in results:
+        if output.strip():
+            print(output.rstrip())
+    failure = first_check_failure(results)
+    if failure is not None:
+        step, code, _output = failure
+        raise SystemExit(
+            f"generation check failed: {step.script} "
+            f"{' '.join(step.check_args)} (exit {code})".replace("  ", " ")
+        )
 
 
 def public_source_review_check_args(*, release: bool) -> list[str]:
