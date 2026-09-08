@@ -1146,8 +1146,8 @@
         "source_bytes": 878094977,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5130,
-        "artifact_bytes": 878992414
+        "artifact_file_count": 5132,
+        "artifact_bytes": 878992642
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
