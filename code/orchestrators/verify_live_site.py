@@ -83,7 +83,7 @@ def load_dynamic_checks(current_counts_json: Path = CURRENT_COUNTS_JSON) -> list
         },
         {
             "path": "publications.html",
-            "markers": ["Publications", '"@type": "CollectionPage"', "Research Works"],
+            "markers": ["Publications", '"@type":"CollectionPage"', "Research Works"],
         },
         {
             "path": "software.html",

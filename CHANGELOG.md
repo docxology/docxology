@@ -20,6 +20,13 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   the check's actual intent.
 - **CHANGELOG typography:** rejoined "pure-function", split across lines in
   the 2026-09-07 entry.
+- **Live-verification marker fixed for the compact JSON-LD emission:** with
+  the freshness alarm finally passing, its next step ran for the first time
+  and failed on a stale pin — `verify_live_site.py` expected
+  `"@type": "CollectionPage"` (with a space) on `publications.html`, while
+  the page's JSON-LD is emitted compact (`"@type":"CollectionPage"`). The
+  marker now matches the emitted format, consistent with the
+  `software.html` marker.
 
 ## 2026-09-07
 
