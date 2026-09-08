@@ -53,6 +53,11 @@ This repository is the public research, software, citation, evidence, and websit
 - Treat Wikidata as an entity anchor, not sole evidence for lightly referenced claims.
 - Google Scholar citation counts use [`data/scholar-snapshot.json`](data/scholar-snapshot.json) as the single source of truth; propagate with [`code/orchestrators/sync_scholar_metrics.py`](code/orchestrators/sync_scholar_metrics.py) (`--check` exits 1 on drift). Update only after a direct (non-cached) Scholar verify—anonymous or cached UI views can disagree with the snapshot. Every snapshot revision also needs a matching direct-authenticated [`data/scholar-verification-receipt.json`](data/scholar-verification-receipt.json), bound to the exact snapshot SHA-256.
 - Do not edit generated outputs directly unless the generator itself is also updated.
+- After `gh pr merge --delete-branch`, `gh` switches the checkout to the
+  default branch — commit on a work branch, never on local `main` (2026-09-08:
+  two commits landed on local main mid-session and had to be moved to a
+  branch before pushing). Create the next work branch *before* merging, or
+  `git checkout <work-branch>` immediately after the merge returns.
 
 ## Validation Command
 

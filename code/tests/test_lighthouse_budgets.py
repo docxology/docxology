@@ -30,8 +30,16 @@ BUDGETS = {"performance": 85, "accessibility": 95, "seo": 95}
 # against a served copy). Pages not listed scored >= all aspirational budgets.
 # Perf floors include run-to-run variance (-2) observed across repeated runs.
 # CI shared runners show performance variance of +-20 between runs (observed
-# 76/75/57 on identical content). Gate only hard floors here; aspirational
-# budgets and per-page floors are tracked in the log for the integrator.
+# 76/75/57 on identical content, and 52 on an unchanged homepage that passed
+# four PR runs and re-passed green on rerun). Gate only hard floors here;
+# aspirational budgets and per-page floors are tracked in the log for the
+# integrator.
+#
+# Variance policy: each page runs once; only when a category lands below its
+# floor does the page run twice more and the per-category MEDIAN of the three
+# runs is gated. A single noisy dip no longer fails the gate (2026-09-08:
+# index.html performance=52 < 55 on identical content), while a genuine
+# regression stays below the floor on the median.
 HARD_FLOOR = {"performance": 55, "accessibility": 85, "seo": 60}
 BASELINE = {
     "index.html": {"accessibility": 92},
@@ -55,6 +63,37 @@ def lighthouse_available() -> bool:
         return False
     return probe.returncode == 0 and probe.stdout.strip().count(".") == 2
 
+def run_lighthouse(base_url: str, path: str, tmp_path: Path) -> dict:
+    """Run one lighthouse invocation for a lane page; skip on tool failure."""
+    result = subprocess.run(
+        [
+            "npx", "--yes", "lighthouse", f"{base_url}/{path}",
+            "--output=json", "--quiet",
+            "--only-categories=performance,accessibility,seo",
+            "--chrome-flags=--headless=new --no-sandbox",
+        ],
+        capture_output=True,
+        text=True,
+        timeout=180,
+    )
+    if result.returncode != 0:
+        pytest.skip(f"lighthouse failed for {path}: {result.stderr[:200]}")
+    return json.loads(result.stdout)
+
+
+def category_scores(payload: dict) -> dict[str, int]:
+    """Per-category integer percentages (0-100); None scores are omitted."""
+    scores: dict[str, int] = {}
+    for category in BUDGETS:
+        score = payload["categories"].get(category, {}).get("score")
+        if score is not None:
+            scores[category] = round(score * 100)
+    return scores
+
+
+def median(values: list[int]) -> int:
+    return sorted(values)[len(values) // 2]
+
 
 def test_lighthouse_budgets(tmp_path: Path) -> None:
     if not lighthouse_available():
@@ -68,30 +107,32 @@ def test_lighthouse_budgets(tmp_path: Path) -> None:
     failures: list[str] = []
     try:
         for path in LANE_PAGES:
-            result = subprocess.run(
-                [
-                    "npx", "--yes", "lighthouse", f"{base_url}/{path}",
-                    "--output=json", "--quiet",
-                    "--only-categories=performance,accessibility,seo",
-                    "--chrome-flags=--headless=new --no-sandbox",
-                ],
-                capture_output=True,
-                text=True,
-                timeout=180,
+            floor_for = lambda category: min(  # noqa: E731 - per-page predicate
+                BUDGETS[category],
+                BASELINE.get(path, {}).get(category, HARD_FLOOR.get(category, BUDGETS[category])),
             )
-            if result.returncode != 0:
-                pytest.skip(f"lighthouse failed for {path}: {result.stderr[:200]}")
-            payload = json.loads(result.stdout)
-            for category, minimum in BUDGETS.items():
-                score = payload["categories"].get(category, {}).get("score")
-                if score is None:
-                    continue
-                score_pct = round(score * 100)
-                floor = min(minimum, BASELINE.get(path, {}).get(category, HARD_FLOOR.get(category, minimum)))
-                if score_pct < floor:
+            scores = category_scores(run_lighthouse(base_url, path, tmp_path))
+            if any(score < floor_for(category) for category, score in scores.items()):
+                # Below floor on the first run: re-run twice and gate the
+                # per-category median of the three runs (variance policy above).
+                runs = [scores] + [
+                    category_scores(run_lighthouse(base_url, path, tmp_path))
+                    for _ in range(2)
+                ]
+                scores = {
+                    category: median([run[category] for run in runs if category in run])
+                    for category in scores
+                    if any(category in run for run in runs)
+                }
+                gated = " (median of 3 runs)"
+            else:
+                gated = ""
+            for category, score in scores.items():
+                floor = floor_for(category)
+                if score < floor:
                     failures.append(
-                        f"{path}: {category}={score_pct} < baseline floor {floor} "
-                        f"(aspirational {minimum})"
+                        f"{path}: {category}={score} < baseline floor {floor} "
+                        f"(aspirational {BUDGETS[category]}){gated}"
                     )
         assert failures == [], (
             "Lighthouse regression below recorded baseline: "
