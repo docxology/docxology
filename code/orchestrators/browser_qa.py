@@ -192,11 +192,38 @@ def run_report() -> dict:
                     page = context.new_page()
                     page.goto(base + "/publications.html", wait_until="domcontentloaded")
                     page.wait_for_selector("#pub-tbody tr")
-                    all_rows = page.locator("#pub-tbody tr").count()
+                    # The catalog paginates (PAGE_SIZE rows per view, load-more),
+                    # so row counts do not narrow when a filter matches more
+                    # works than one page holds (introduced 57faf66f, 2026-08-27
+                    # — the check passed on 2026-08-26 only because the catalog
+                    # still fit one page). Assert the observables that actually
+                    # change: the result-count "filtered from" message and the
+                    # absence of non-paper rows on the filtered first page.
+                    count_before = page.locator("#result-count").text_content()
                     page.locator("#filter-paper").click()
-                    paper_rows = page.locator("#pub-tbody tr").count()
-                    if paper_rows >= all_rows:
-                        raise AssertionError(f"paper filter did not narrow rows ({all_rows} -> {paper_rows})")
+                    # The filter click triggers async hydration + re-render;
+                    # wait for the filtered message before reading anything or
+                    # a pre-hydration empty tbody would pass the badge check
+                    # vacuously.
+                    page.locator("#result-count").filter(has_text="filtered from").wait_for(
+                        timeout=15000
+                    )
+                    count_after = page.locator("#result-count").text_content()
+                    if "filtered from" not in count_after:
+                        raise AssertionError(
+                            f"paper filter did not switch result count to filtered message: {count_after!r}"
+                        )
+                    if count_after == count_before:
+                        raise AssertionError(
+                            f"paper filter did not change result count: {count_before!r}"
+                        )
+                    non_paper_rows = page.locator(
+                        "#pub-tbody tr .type-badge:not(.type-paper)"
+                    ).count()
+                    if non_paper_rows:
+                        raise AssertionError(
+                            f"paper filter left {non_paper_rows} non-paper rows visible"
+                        )
                     if page.locator("#filter-paper").get_attribute("aria-pressed") != "true":
                         raise AssertionError("paper filter did not expose pressed state")
                     first_sort = page.locator(".th-sort-btn").first
@@ -204,7 +231,12 @@ def run_report() -> dict:
                     sort_state = page.locator("th[data-sortable]").first.get_attribute("aria-sort")
                     if sort_state not in {"ascending", "descending"}:
                         raise AssertionError(f"sort state missing: {sort_state}")
-                return {"all_rows": all_rows, "paper_rows": paper_rows, "sort_state": sort_state}
+                return {
+                    "count_before": count_before,
+                    "count_after": count_after,
+                    "non_paper_rows": non_paper_rows,
+                    "sort_state": sort_state,
+                }
 
             record(CHECK_NAMES[3], publications_controls)
 

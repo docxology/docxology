@@ -578,7 +578,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-09-05.json"
+        "reports/external_links_2026-09-07.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -628,11 +628,11 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-09-05.json",
-        "reports/external_links_triage_2026-09-05.md"
+        "reports/external_links_triage_2026-09-07.json",
+        "reports/external_links_triage_2026-09-07.md"
       ],
       "sources": [
-        "reports/external_links_2026-09-05.json"
+        "reports/external_links_2026-09-07.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },
@@ -678,7 +678,7 @@
     {
       "name": "Progressive browser QA",
       "outputs": [
-        "reports/browser-qa/2026-08-26/manifest.json"
+        "reports/browser-qa/2026-09-07/manifest.json"
       ],
       "sources": [
         "root HTML pages",

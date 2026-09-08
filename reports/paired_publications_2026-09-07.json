@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T21:10:34Z",
+  "generated_at": "2026-09-07T22:47:35Z",
   "source": "GitHub Releases API + Zenodo Records API",
   "owners": [
     "docxology",
@@ -8,10 +8,10 @@
   "counts": {
     "github_releases": 231,
     "zenodo_records": 151,
-    "pairs": 450,
+    "pairs": 447,
     "strong_pairs": 48,
-    "already_reviewed": 399,
-    "needs_review": 4,
+    "already_reviewed": 400,
+    "needs_review": 0,
     "create_new": 0,
     "update_existing": 47
   },
@@ -4806,30 +4806,6 @@
       "folder": "2026_CogSecSkills"
     },
     {
-      "action_type": "needs_review",
-      "doi": "10.5281/zenodo.21750800",
-      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
-      "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
-      "github_repo": "docxology/codomyrmex",
-      "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-5ffd202ff49ffc408d95",
-      "zenodo_record_url": "https://zenodo.org/records/21750800",
-      "release_tag": "v1.3.0",
-      "folder": "2026_Codomyrmex"
-    },
-    {
-      "action_type": "already_reviewed",
-      "doi": "10.5281/zenodo.21750800",
-      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
-      "confidence": "needs_review",
-      "reason": "R71 records this pair as bibliography-folder version-history-only; do not create a duplicate bibliography row",
-      "github_repo": "docxology/codomyrmex",
-      "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
-      "zenodo_record_url": "https://zenodo.org/records/21750800",
-      "release_tag": "v1.2.3",
-      "folder": "2026_Codomyrmex"
-    },
-    {
       "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.21750800",
       "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
@@ -5286,11 +5262,11 @@
       "folder": "2026_FEPLean"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.18364118",
       "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R77 records this pair as bibliography-folder version-specific artifact metadata; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/ActiveInferAnts",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts/releases/tag/1",
       "zenodo_record_url": "https://zenodo.org/records/18364118",
@@ -5298,28 +5274,16 @@
       "folder": "2026_CognitiveIntegrity"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.18364118",
       "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R78 records this pair as bibliography-folder version-specific artifact metadata; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/CEREBRUM",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM/releases/tag/1.3",
       "zenodo_record_url": "https://zenodo.org/records/18364118",
       "release_tag": "1.3",
       "folder": "2026_CognitiveIntegrity"
-    },
-    {
-      "action_type": "needs_review",
-      "doi": "10.5281/zenodo.22134545",
-      "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
-      "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
-      "github_repo": "docxology/codomyrmex",
-      "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
-      "zenodo_record_url": "https://zenodo.org/records/22134545",
-      "release_tag": "v1.2.3",
-      "folder": "2026_CognitiveIntegrityFramework"
     },
     {
       "action_type": "already_reviewed",
@@ -37007,345 +36971,6 @@
       ],
       "doi": "10.5281/zenodo.21750800",
       "github_repo": "docxology/codomyrmex",
-      "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-5ffd202ff49ffc408d95",
-      "zenodo_record_url": "https://zenodo.org/records/21750800",
-      "release": {
-        "owner": "docxology",
-        "repo": "codomyrmex",
-        "tag": "v1.3.0",
-        "name": "v1.3.0",
-        "body": "## Change Log\n\n- feat: 🎨 Palette: [UX improvement] Add accessible labels to icon-only buttons @docxology (#418)\n- perf: ⚡ Bolt: [performance improvement] Hoist static type_map dictionaries to module level @docxology (#420)\n- fix: 🛡️ Sentinel: [CRITICAL] Fix command injection vulnerability in transcription tools @docxology (#423)\n",
-        "html_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-5ffd202ff49ffc408d95",
-        "published_at": "2026-07-31T18:41:54Z",
-        "assets": [
-          {
-            "name": "sbom.cdx.json",
-            "download_url": "https://github.com/docxology/codomyrmex/releases/download/untagged-5ffd202ff49ffc408d95/sbom.cdx.json",
-            "size": 208287
-          },
-          {
-            "name": "sbom.spdx.json",
-            "download_url": "https://github.com/docxology/codomyrmex/releases/download/untagged-5ffd202ff49ffc408d95/sbom.spdx.json",
-            "size": 11523080
-          }
-        ],
-        "full_name": "docxology/codomyrmex"
-      },
-      "record": {
-        "record_id": "21750801",
-        "doi": "10.5281/zenodo.21750800",
-        "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
-        "publication_date": "2026-08-01",
-        "version": "1.3.0",
-        "resource_type": {
-          "title": "Report",
-          "type": "publication",
-          "subtype": "report"
-        },
-        "creators": [
-          {
-            "name": "Daniel Ari Friedman",
-            "affiliation": "Active Inference Institute",
-            "orcid": "0000-0001-6232-9096"
-          }
-        ],
-        "description": "Agentic software can preserve task state while still forgetting the consequences of prior actions. Codomyrmex studies a narrow control-plane question: after a caller reports a failed action at one software location, can the system deterministically increase friction for a materially similar proposal at that location without changing an unrelated target? Its Colony Control Plane records consequence reports and couples them to target-indexed signal pressure, agent trust, role labels, resource accounting, adversarial checks, and an explicit EXECUTE/HOLD/REFUSE gate. The implementation comprises 8 cooperating subsystems. The ordinary Model Context Protocol path remains caller-reported and unattested. Optional and required `ColonyKernel` attestation modes instead bind proposal, verdict, authorization, execution receipt, and outcome in a signed, hash-linked local ledger. That ledger protects lifecycle linkage but does not independently observe external actuation or establish deployment safety. Consequence records can use file-backed SQLite; the default MCP kernel and signal field remain process-local. Evaluation is limited to implementation properties and controlled fixtures. At composition time, the scoped Colony Kernel surface contains 819 passing tests with 76.6% branch coverage, 0 Ruff errors, and 0 ty diagnostics. A paired deterministic replay moves the same-target proposal from 0.875/EXECUTE to 0.725/HOLD after a reported failure while leaving an unrelated target unchanged. Separate fixtures exercise trust promotion, bounded arithmetic, linear signal decay, local attestation integrity, and interface behavior. These results support reproducible software contracts, not ecological optimality, calibrated risk, production harm reduction, or generalization to external workloads. The report contributes the typed control plane, transparent gate, coupled local feedback, authenticated local lifecycle option, and source-bound publication workflow. Generated variables, figures, citations, claim boundaries, and release receipts tie the rendered report to the evaluated checkout. End-to-end external-actuation attestation, restart-persistent field storage, representative benchmarks, and independent deployment validation remain open.\n\n---\nAssociated artifacts\nGitHub release: v1.3.0-paper (https://github.com/docxology/codomyrmex/releases/tag/v1.3.0-paper)\nDOI: https://doi.org/10.5281/zenodo.21750801\nZenodo: https://zenodo.org/records/21750801\nPDF SHA-256: eda76ad12a50bce01b113894c785e0915b6ba367f5bf67d17c8f586416102b93\\nConcept DOI: https://doi.org/10.5281/zenodo.21750800\\nVersion DOI: https://doi.org/10.5281/zenodo.21750801",
-        "keywords": [
-          "ai-agents",
-          "model-context-protocol",
-          "mcp",
-          "multi-agent",
-          "orchestration",
-          "colony-control-plane",
-          "stigmergy",
-          "artificial-ecology",
-          "agentic-software-engineering",
-          "falsification-worker",
-          "actuation-gate",
-          "trust-scoring"
-        ],
-        "related_identifiers": [
-          {
-            "identifier": "https://github.com/docxology/codomyrmex/releases/tag/v1.3.0-paper",
-            "relation": "isSupplementTo",
-            "resource_type": "software",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/codomyrmex",
-            "relation": "references",
-            "resource_type": "software",
-            "scheme": "url"
-          }
-        ],
-        "files": [
-          {
-            "id": "4d287b45-cff2-4db1-beee-0da0f420ef36",
-            "key": "codomyrmex-1.3.0-release-bundle.zip",
-            "size": 20749927,
-            "checksum": "md5:53b3bb8ba4caa490b7fa79f4b8c39966",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/codomyrmex-1.3.0-release-bundle.zip/content"
-            }
-          },
-          {
-            "id": "4bdff475-dd1b-42f1-a296-7ec83f9bf50b",
-            "key": "CITATION.cff",
-            "size": 334,
-            "checksum": "md5:974f60388f420b30d879b742bc2e8b49",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/CITATION.cff/content"
-            }
-          },
-          {
-            "id": "db606ee4-5978-4f1c-9990-091f1947231d",
-            "key": "SHA256SUMS",
-            "size": 2594,
-            "checksum": "md5:28c76702ae2a7b293b3a5bc478ec6e52",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/SHA256SUMS/content"
-            }
-          },
-          {
-            "id": "435b3749-5bcf-4919-85da-4cabb782e7d7",
-            "key": "SHA512SUMS",
-            "size": 4322,
-            "checksum": "md5:3a26b6439fa8107d43d3d5d685037b38",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/SHA512SUMS/content"
-            }
-          },
-          {
-            "id": "cbacb189-e945-48f3-9cec-3b65d206ef73",
-            "key": "publication_metadata.json",
-            "size": 2977,
-            "checksum": "md5:f1e9de5d80cceeaf72acf50da4ffcefa",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/publication_metadata.json/content"
-            }
-          },
-          {
-            "id": "2cd93feb-e926-4788-b77d-24976d69a39d",
-            "key": "codomyrmex-1.3.0.pdf",
-            "size": 6883385,
-            "checksum": "md5:ab757cdec752bfc33f23c225af82d903",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/codomyrmex-1.3.0.pdf/content"
-            }
-          },
-          {
-            "id": "51e49f37-7858-49d4-8edc-76bbc3ab5494",
-            "key": "codomyrmex-1.3.0.html",
-            "size": 9755311,
-            "checksum": "md5:754e9727d1a38226fbfdf5a343490b2d",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/codomyrmex-1.3.0.html/content"
-            }
-          },
-          {
-            "id": "b1701e28-ecf3-40fa-ae4d-2f658868f55c",
-            "key": "codomyrmex-1.3.0-content.pdf",
-            "size": 6876519,
-            "checksum": "md5:0f8394ea6608318d5cb897a318bab4fe",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/codomyrmex-1.3.0-content.pdf/content"
-            }
-          },
-          {
-            "id": "1fcc1c00-3019-4a7d-b646-cc6be6ada4d6",
-            "key": ".zenodo.json",
-            "size": 3131,
-            "checksum": "md5:6bf2035e852dd041fa0f7210592dbdfe",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/.zenodo.json/content"
-            }
-          },
-          {
-            "id": "e097218a-9487-4a07-a6e0-c4933a0927e7",
-            "key": "publication_manifest.json",
-            "size": 16360,
-            "checksum": "md5:cc4a4bcf2dde09a0a60441469973782e",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/publication_manifest.json/content"
-            }
-          }
-        ],
-        "html_url": "https://zenodo.org/records/21750801",
-        "doi_url": "https://doi.org/10.5281/zenodo.21750800",
-        "record_url": "https://zenodo.org/records/21750800"
-      }
-    },
-    {
-      "confidence": "needs_review",
-      "evidence": [
-        "github_repo_self_linked"
-      ],
-      "doi": "10.5281/zenodo.21750800",
-      "github_repo": "docxology/codomyrmex",
-      "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
-      "zenodo_record_url": "https://zenodo.org/records/21750800",
-      "release": {
-        "owner": "docxology",
-        "repo": "codomyrmex",
-        "tag": "v1.2.3",
-        "name": "v1.2.3",
-        "body": "## Change Log\n\n- test: add unit tests for DependencyAnalyzer.has_docs method @docxology (#251)\n- 🧪 [testing improvement] Add unit tests for HardwareProfiler.get_gpu_info @docxology (#252)\n- perf: eliminate redundant AST parse for __init__ scanning @docxology (#254)\n- 🧪 [test] add unit tests for cloud mcp_tools @docxology (#299)\n- perf: ⚡ Bolt: optimize TypedSerializer deserialization @docxology (#317)\n- fix: 🔒 use safe schema for yaml loading @docxology (#308)\n- 🔒 fix: prevent arbitrary code execution by replacing eval with AST parser @docxology (#302)\n- fix: 🛡️ [CRITICAL] replace dangerous eval() with safe AST parsing in orchestrator and testing tools @docxology (#320)\n- 🧪 test: Add unit test for TaskQueue push in task_manager.py @docxology (#202)\n- 🧪 test: coverage for task_manager.py cancel method @docxology (#201)\n- 🔒 fix: resolve hardcoded secret vulnerability in security models @docxology (#200)\n- 🧪 test: add test coverage for TaskQueue remove and peek in task_manager @docxology (#198)\n- 🔒 [Security] Fix insecure deserialization in CacheManager @docxology (#196)\n- 🧪 test: test get_current_leader in RotatingLeadership @docxology (#195)\n- 🧪 test: add unit tests for get_ready_tasks @docxology (#193)\n- refactor: serve SPA from index.html instead of embedding string @docxology (#204)\n- 🧹 Remove unused 'os' import from codomyrmex/__init__.py @docxology (#199)\n- 🧹 refactor: replace custom yaml parser with js-yaml in GitHubSync @docxology (#192)\n- ⚡ perf: replace synchronous time.sleep with async delegation in trajectory compressor @docxology (#206)\n- 🔒 fix(orchestrator): mitigate RCE vulnerability in mcp_tools eval() @docxology (#197)\n- 🎨 Palette: add missing screen reader label to script arguments input @docxology (#153)\n- 🛡️ Sentinel: [MEDIUM] Fix sensitive information leakage in api/health.py @docxology (#158)\n- 🧹 Remove commented out unused import in system_discovery context @docxology (#11)\n- 🎨 Palette: Improve accessibility of Header controls @docxology (#29)\n- 🧪 test: improve robustness of get_env tests using monkeypatch @docxology (#38)\n- 🔒 fix(auth): Resolve hardcoded secret vulnerability in TokenManager @docxology (#49)\n- 🧪 Add TypeError coverage for safe_json_loads @docxology (#59)\n- Improve distillation module documentation, tools, and tests @docxology (#60)\n",
-        "html_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
-        "published_at": "2026-03-12T23:21:37Z",
-        "assets": [],
-        "full_name": "docxology/codomyrmex"
-      },
-      "record": {
-        "record_id": "21750801",
-        "doi": "10.5281/zenodo.21750800",
-        "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
-        "publication_date": "2026-08-01",
-        "version": "1.3.0",
-        "resource_type": {
-          "title": "Report",
-          "type": "publication",
-          "subtype": "report"
-        },
-        "creators": [
-          {
-            "name": "Daniel Ari Friedman",
-            "affiliation": "Active Inference Institute",
-            "orcid": "0000-0001-6232-9096"
-          }
-        ],
-        "description": "Agentic software can preserve task state while still forgetting the consequences of prior actions. Codomyrmex studies a narrow control-plane question: after a caller reports a failed action at one software location, can the system deterministically increase friction for a materially similar proposal at that location without changing an unrelated target? Its Colony Control Plane records consequence reports and couples them to target-indexed signal pressure, agent trust, role labels, resource accounting, adversarial checks, and an explicit EXECUTE/HOLD/REFUSE gate. The implementation comprises 8 cooperating subsystems. The ordinary Model Context Protocol path remains caller-reported and unattested. Optional and required `ColonyKernel` attestation modes instead bind proposal, verdict, authorization, execution receipt, and outcome in a signed, hash-linked local ledger. That ledger protects lifecycle linkage but does not independently observe external actuation or establish deployment safety. Consequence records can use file-backed SQLite; the default MCP kernel and signal field remain process-local. Evaluation is limited to implementation properties and controlled fixtures. At composition time, the scoped Colony Kernel surface contains 819 passing tests with 76.6% branch coverage, 0 Ruff errors, and 0 ty diagnostics. A paired deterministic replay moves the same-target proposal from 0.875/EXECUTE to 0.725/HOLD after a reported failure while leaving an unrelated target unchanged. Separate fixtures exercise trust promotion, bounded arithmetic, linear signal decay, local attestation integrity, and interface behavior. These results support reproducible software contracts, not ecological optimality, calibrated risk, production harm reduction, or generalization to external workloads. The report contributes the typed control plane, transparent gate, coupled local feedback, authenticated local lifecycle option, and source-bound publication workflow. Generated variables, figures, citations, claim boundaries, and release receipts tie the rendered report to the evaluated checkout. End-to-end external-actuation attestation, restart-persistent field storage, representative benchmarks, and independent deployment validation remain open.\n\n---\nAssociated artifacts\nGitHub release: v1.3.0-paper (https://github.com/docxology/codomyrmex/releases/tag/v1.3.0-paper)\nDOI: https://doi.org/10.5281/zenodo.21750801\nZenodo: https://zenodo.org/records/21750801\nPDF SHA-256: eda76ad12a50bce01b113894c785e0915b6ba367f5bf67d17c8f586416102b93\\nConcept DOI: https://doi.org/10.5281/zenodo.21750800\\nVersion DOI: https://doi.org/10.5281/zenodo.21750801",
-        "keywords": [
-          "ai-agents",
-          "model-context-protocol",
-          "mcp",
-          "multi-agent",
-          "orchestration",
-          "colony-control-plane",
-          "stigmergy",
-          "artificial-ecology",
-          "agentic-software-engineering",
-          "falsification-worker",
-          "actuation-gate",
-          "trust-scoring"
-        ],
-        "related_identifiers": [
-          {
-            "identifier": "https://github.com/docxology/codomyrmex/releases/tag/v1.3.0-paper",
-            "relation": "isSupplementTo",
-            "resource_type": "software",
-            "scheme": "url"
-          },
-          {
-            "identifier": "https://github.com/docxology/codomyrmex",
-            "relation": "references",
-            "resource_type": "software",
-            "scheme": "url"
-          }
-        ],
-        "files": [
-          {
-            "id": "4d287b45-cff2-4db1-beee-0da0f420ef36",
-            "key": "codomyrmex-1.3.0-release-bundle.zip",
-            "size": 20749927,
-            "checksum": "md5:53b3bb8ba4caa490b7fa79f4b8c39966",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/codomyrmex-1.3.0-release-bundle.zip/content"
-            }
-          },
-          {
-            "id": "4bdff475-dd1b-42f1-a296-7ec83f9bf50b",
-            "key": "CITATION.cff",
-            "size": 334,
-            "checksum": "md5:974f60388f420b30d879b742bc2e8b49",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/CITATION.cff/content"
-            }
-          },
-          {
-            "id": "db606ee4-5978-4f1c-9990-091f1947231d",
-            "key": "SHA256SUMS",
-            "size": 2594,
-            "checksum": "md5:28c76702ae2a7b293b3a5bc478ec6e52",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/SHA256SUMS/content"
-            }
-          },
-          {
-            "id": "435b3749-5bcf-4919-85da-4cabb782e7d7",
-            "key": "SHA512SUMS",
-            "size": 4322,
-            "checksum": "md5:3a26b6439fa8107d43d3d5d685037b38",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/SHA512SUMS/content"
-            }
-          },
-          {
-            "id": "cbacb189-e945-48f3-9cec-3b65d206ef73",
-            "key": "publication_metadata.json",
-            "size": 2977,
-            "checksum": "md5:f1e9de5d80cceeaf72acf50da4ffcefa",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/publication_metadata.json/content"
-            }
-          },
-          {
-            "id": "2cd93feb-e926-4788-b77d-24976d69a39d",
-            "key": "codomyrmex-1.3.0.pdf",
-            "size": 6883385,
-            "checksum": "md5:ab757cdec752bfc33f23c225af82d903",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/codomyrmex-1.3.0.pdf/content"
-            }
-          },
-          {
-            "id": "51e49f37-7858-49d4-8edc-76bbc3ab5494",
-            "key": "codomyrmex-1.3.0.html",
-            "size": 9755311,
-            "checksum": "md5:754e9727d1a38226fbfdf5a343490b2d",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/codomyrmex-1.3.0.html/content"
-            }
-          },
-          {
-            "id": "b1701e28-ecf3-40fa-ae4d-2f658868f55c",
-            "key": "codomyrmex-1.3.0-content.pdf",
-            "size": 6876519,
-            "checksum": "md5:0f8394ea6608318d5cb897a318bab4fe",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/codomyrmex-1.3.0-content.pdf/content"
-            }
-          },
-          {
-            "id": "1fcc1c00-3019-4a7d-b646-cc6be6ada4d6",
-            "key": ".zenodo.json",
-            "size": 3131,
-            "checksum": "md5:6bf2035e852dd041fa0f7210592dbdfe",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/.zenodo.json/content"
-            }
-          },
-          {
-            "id": "e097218a-9487-4a07-a6e0-c4933a0927e7",
-            "key": "publication_manifest.json",
-            "size": 16360,
-            "checksum": "md5:cc4a4bcf2dde09a0a60441469973782e",
-            "links": {
-              "self": "https://zenodo.org/api/records/21750801/files/publication_manifest.json/content"
-            }
-          }
-        ],
-        "html_url": "https://zenodo.org/records/21750801",
-        "doi_url": "https://doi.org/10.5281/zenodo.21750800",
-        "record_url": "https://zenodo.org/records/21750800"
-      }
-    },
-    {
-      "confidence": "needs_review",
-      "evidence": [
-        "github_repo_self_linked"
-      ],
-      "doi": "10.5281/zenodo.21750800",
-      "github_repo": "docxology/codomyrmex",
       "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.2.2",
       "zenodo_record_url": "https://zenodo.org/records/21750800",
       "release": {
@@ -41844,86 +41469,6 @@
         "html_url": "https://zenodo.org/records/22134544",
         "doi_url": "https://doi.org/10.5281/zenodo.18364118",
         "record_url": "https://zenodo.org/records/18364118"
-      }
-    },
-    {
-      "confidence": "needs_review",
-      "evidence": [
-        "title_overlap"
-      ],
-      "doi": "10.5281/zenodo.22134545",
-      "github_repo": "docxology/codomyrmex",
-      "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
-      "zenodo_record_url": "https://zenodo.org/records/22134545",
-      "release": {
-        "owner": "docxology",
-        "repo": "codomyrmex",
-        "tag": "v1.2.3",
-        "name": "v1.2.3",
-        "body": "## Change Log\n\n- test: add unit tests for DependencyAnalyzer.has_docs method @docxology (#251)\n- 🧪 [testing improvement] Add unit tests for HardwareProfiler.get_gpu_info @docxology (#252)\n- perf: eliminate redundant AST parse for __init__ scanning @docxology (#254)\n- 🧪 [test] add unit tests for cloud mcp_tools @docxology (#299)\n- perf: ⚡ Bolt: optimize TypedSerializer deserialization @docxology (#317)\n- fix: 🔒 use safe schema for yaml loading @docxology (#308)\n- 🔒 fix: prevent arbitrary code execution by replacing eval with AST parser @docxology (#302)\n- fix: 🛡️ [CRITICAL] replace dangerous eval() with safe AST parsing in orchestrator and testing tools @docxology (#320)\n- 🧪 test: Add unit test for TaskQueue push in task_manager.py @docxology (#202)\n- 🧪 test: coverage for task_manager.py cancel method @docxology (#201)\n- 🔒 fix: resolve hardcoded secret vulnerability in security models @docxology (#200)\n- 🧪 test: add test coverage for TaskQueue remove and peek in task_manager @docxology (#198)\n- 🔒 [Security] Fix insecure deserialization in CacheManager @docxology (#196)\n- 🧪 test: test get_current_leader in RotatingLeadership @docxology (#195)\n- 🧪 test: add unit tests for get_ready_tasks @docxology (#193)\n- refactor: serve SPA from index.html instead of embedding string @docxology (#204)\n- 🧹 Remove unused 'os' import from codomyrmex/__init__.py @docxology (#199)\n- 🧹 refactor: replace custom yaml parser with js-yaml in GitHubSync @docxology (#192)\n- ⚡ perf: replace synchronous time.sleep with async delegation in trajectory compressor @docxology (#206)\n- 🔒 fix(orchestrator): mitigate RCE vulnerability in mcp_tools eval() @docxology (#197)\n- 🎨 Palette: add missing screen reader label to script arguments input @docxology (#153)\n- 🛡️ Sentinel: [MEDIUM] Fix sensitive information leakage in api/health.py @docxology (#158)\n- 🧹 Remove commented out unused import in system_discovery context @docxology (#11)\n- 🎨 Palette: Improve accessibility of Header controls @docxology (#29)\n- 🧪 test: improve robustness of get_env tests using monkeypatch @docxology (#38)\n- 🔒 fix(auth): Resolve hardcoded secret vulnerability in TokenManager @docxology (#49)\n- 🧪 Add TypeError coverage for safe_json_loads @docxology (#59)\n- Improve distillation module documentation, tools, and tests @docxology (#60)\n",
-        "html_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
-        "published_at": "2026-03-12T23:21:37Z",
-        "assets": [],
-        "full_name": "docxology/codomyrmex"
-      },
-      "record": {
-        "record_id": "22134546",
-        "doi": "10.5281/zenodo.22134545",
-        "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
-        "publication_date": "2026-08-26",
-        "version": "2.0",
-        "resource_type": {
-          "title": "Preprint",
-          "type": "publication",
-          "subtype": "preprint"
-        },
-        "creators": [
-          {
-            "name": "Friedman, Daniel Ari",
-            "affiliation": "Active Inference Institute",
-            "orcid": "0000-0001-6232-9096"
-          }
-        ],
-        "description": "<p>This paper presents the computational validation of the Cognitive Integrity Framework (CIF) whose formal foundations are established in Part 1 (DOI: 10.5281/zenodo.18364119). We implement the CIF defense suite --- cognitive firewalls, belief sandboxes, tripwires, drift and anomaly scoring, trust calculus with bounded delegation, provenance tracking, and Byzantine-tolerant consensus --- and evaluate it on an integrated 1,475-item attack corpus spanning fifteen categories, together with a 120-item benign corpus whose harder half carries attack-adjacent vocabulary.</p><p>Multi-tier evaluation. Real pipeline evaluation across 30 seeds yields a mean detection rate of 86.3% (95% CI 85.5%-87.1%) at an 18.5% false-positive rate on the Claude Code architecture, measured on an injection-only 100-sample-per-seed arm. LLM-backed validation (N=10, Gemma 3 4B) reaches 80-100% across two topologies and is reported as preliminary and underpowered. Colony benchmarks at 20-100 agents reach 81-100% on structured adversarial scenarios, with emergent misalignment the hardest case at 74.3% detection and a 25.5% false-positive rate. Parametric simulation (N=3,800) characterises a 96-100% design-level ceiling across four production architectures, and is labelled a simulation rather than a measurement wherever it appears.</p><p>Ablation on a 100-attack corpus attributes almost all marginal detection to the Invariants module: the full pipeline reaches 89.0% true-positive rate, removing Invariants costs 65 percentage points, removing the Tripwire costs two, and removing any other module costs nothing the corpus can measure. The layered architecture is therefore only partly borne out, and the paper says so. An undefended control arm places the defense's cost at +0.610 ms at the median and +32 KiB peak. Measured as ranked scorers, the drift score and the firewall pattern matcher fall below chance (AUC 0.374 and 0.383, intervals excluding 0.5).</p><p>Every quantity the three papers share is derived from a single ledger and gated in continuous integration; no reported number is typed by hand. All experiments are deterministically reproducible at seed 42, and the code, corpora and artifacts are at https://github.com/docxology/cognitive_integrity.</p><p>This is Part 2 of the three-part Cognitive Security for Multiagent Operators series: - Part 1 (DOI: 10.5281/zenodo.18364119): formal foundations and theoretical analysis - Part 2 (this paper): computational validation and implementation - Part 3+4 merged (DOI: 10.5281/zenodo.18364130): unified practitioner guidance   and cross-domain applications</p>",
-        "keywords": [
-          "cognitive security",
-          "multiagent systems",
-          "AI safety",
-          "prompt injection",
-          "trust calculus",
-          "defense in depth"
-        ],
-        "related_identifiers": [
-          {
-            "identifier": "https://github.com/docxology/cognitive_integrity",
-            "relation": "isSupplementedBy",
-            "scheme": "url"
-          },
-          {
-            "identifier": "10.5281/zenodo.22134544",
-            "relation": "isPartOf",
-            "scheme": "doi"
-          },
-          {
-            "identifier": "10.5281/zenodo.22134548",
-            "relation": "isPartOf",
-            "scheme": "doi"
-          }
-        ],
-        "files": [
-          {
-            "id": "6bcf54ca-099a-4acc-b9e0-485cef3f4009",
-            "key": "cogsec_multiagent_2_computational_combined.pdf",
-            "size": 1843333,
-            "checksum": "md5:c790dc9f9d069d1b86696372bafd6416",
-            "links": {
-              "self": "https://zenodo.org/api/records/22134546/files/cogsec_multiagent_2_computational_combined.pdf/content"
-            }
-          }
-        ],
-        "html_url": "https://zenodo.org/records/22134546",
-        "doi_url": "https://doi.org/10.5281/zenodo.22134545",
-        "record_url": "https://zenodo.org/records/22134545"
       }
     },
     {

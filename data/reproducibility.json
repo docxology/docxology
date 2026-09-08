@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T16:17:45Z",
+  "generated_at": "2026-09-07T23:00:05Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -67,7 +67,7 @@
     "public_archive": 155,
     "open_full_text": 190,
     "source_documents": 195,
-    "executable_code": 64,
+    "executable_code": 65,
     "agent_readable": 195
   },
   "band_counts": {
@@ -82,11 +82,32 @@
     "2": 4,
     "3": 8,
     "4": 37,
-    "5": 88,
-    "6": 62
+    "5": 87,
+    "6": 63
   },
-  "mean_score": 4.698,
+  "mean_score": 4.703,
   "works": [
+    {
+      "num": 5,
+      "citation_key": "Friedman2026CognitiveIntegrityFrameworkFormal005",
+      "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
+      "year": 2026,
+      "domain_name": "Cognitive Security",
+      "type": "Paper",
+      "score": 6,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": true,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "cognitive_integrity"
+      ]
+    },
     {
       "num": 10,
       "citation_key": "Friedman2025CEREBRUMCaseEnabledReasoning010",
@@ -1434,25 +1455,6 @@
       "title": "The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value",
       "year": 2026,
       "domain_name": "Art & Synergetics",
-      "type": "Paper",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 5,
-      "citation_key": "Friedman2026CognitiveIntegrityFrameworkFormal005",
-      "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
-      "year": 2026,
-      "domain_name": "Cognitive Security",
       "type": "Paper",
       "score": 5,
       "band": "independently reproducible",

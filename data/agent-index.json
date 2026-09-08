@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "generated_at": "2026-09-07T21:26:55+00:00",
+  "generated_at": "2026-09-07T22:57:04+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -122,7 +122,7 @@
     },
     "software": {
       "path": "/data/software.json",
-      "count": 148,
+      "count": 149,
       "schema": "SoftwareRepository"
     },
     "repositories": {
@@ -172,7 +172,7 @@
     },
     "repository_classification": {
       "path": "/data/repository-classification.json",
-      "count": 101,
+      "count": 100,
       "schema": "RepositoryClassification"
     },
     "pages_artifact": {
@@ -942,7 +942,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-09-07T21:26:55+00:00",
+        "checked_at": "2026-09-07T22:57:04+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1055,8 +1055,8 @@
         "full_text_papers": 190,
         "generated_exports": {
           "data_publications_ld_main_entity": 212,
-          "data_software_json": 148,
-          "data_software_ld_main_entity": 148,
+          "data_software_json": 149,
+          "data_software_ld_main_entity": 149,
           "data_works_json": 212
         },
         "github_inventory": {
@@ -1078,16 +1078,16 @@
         },
         "paired_publication_decisions": {
           "decision": "accept",
-          "groups": 74,
-          "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work.",
-          "raw_candidates": 489
+          "groups": 78,
+          "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated.",
+          "raw_candidates": 493
         },
         "paired_publications": {
-          "already_reviewed": 399,
+          "already_reviewed": 400,
           "create_new": 0,
           "github_releases": 231,
-          "needs_review": 4,
-          "pairs": 450,
+          "needs_review": 0,
+          "pairs": 447,
           "strong_pairs": 48,
           "update_existing": 47,
           "zenodo_records": 151
@@ -1106,8 +1106,8 @@
         },
         "software": {
           "active_inference_institute": 39,
-          "curated_total": 148,
-          "docxology_owned": 109
+          "curated_total": 149,
+          "docxology_owned": 110
         },
         "types": {
           "Books": 5,
@@ -1119,7 +1119,7 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-09-07T21:26:55+00:00",
+      "generated_at": "2026-09-07T22:57:04+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1143,11 +1143,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 891289600,
-        "source_bytes": 877665098,
+        "source_bytes": 878094980,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5125,
-        "artifact_bytes": 878561706
+        "artifact_file_count": 5129,
+        "artifact_bytes": 878992301
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1161,25 +1161,25 @@
   },
   "dataset_hashes": {
     "works": "c5d51bca154c1fae2f0c7fc31a2c6cf415cbc4e99c6afedfc82f0a0354a432d5",
-    "software": "c002d01043f3d4b72324c607aadf0422e7af004c469663de48d957d473c6399a",
+    "software": "20be817bdc46e4f3a2be221d7830f3a0867356d5105858da771620aa0dbb7999",
     "repositories": "d4b2368d3b24737d236197a064f5ef2e336d8877f68ee203148c27f86495e946",
     "artworks_index": "25adc127f1d2a46abd676ac37735a0bf6d2fbabea25992b609f203f24f78977c",
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "5c68f56ffb9e985cab9f97803e9c93956e6e7cc91994f3cc1d068dfefad41a1d",
     "videos_index": "7f4e72d2ceeb5f67c999b7a679c96a1fbf5417b45051d92d02e88c817f94ee76",
-    "search": "412ed01f312a21eacbe0871f79a18f66199bbb12823fb76d075377730aa9fc49",
-    "claims": "8389238d67297cc62d819c1a1d76443b849826dd583d91944f87ff1f48e4cf85",
+    "search": "7db1acd24dd11f178c3382dafb23d082d43a9cc1b671b65d5fa236edc6de571a",
+    "claims": "c0292e158678eba208c147bb6094517c3747284be9e32df4cac65a629e0deb0e",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "a752fc6020b96a598afdec47182797059da3cc0fc94acc5d229b90cb978949e1",
-    "repository_classification": "17513a8425e92a6254387f1943784a17637b11e4ae198e5cd20114ac50e46bc6",
-    "people": "88ac48b39d6dcfa4bc5890a88177e7fc62c3691edce7bd7b492548c52024daef",
-    "organizations": "30d948b88badcb995b8ff6f30fdbcd28a73646dbef1aabb7b9104422dddd48db",
-    "resume": "034ef3963de449e56c375ec0458bff1148e8b913a11aaa899a6518370cf7f70f",
+    "repository_classification": "00593c5bfa2ff29623d2dac6596e8d88795ee53d3fd4f583d2c07834035fcd6a",
+    "people": "7e739be1de7eea5623b95577c99b383ca97346c66bac0951e5ec6c7e680a3b63",
+    "organizations": "f93ac94b23741ed216aff9cb1dc05a727df6105d794f72e177a93277378ca819",
+    "resume": "08bf7d288f98ed98cdad140414070ca877e1da9e959422af2361235461d79d68",
     "work_enrichment": "22b7c727bedab72f02f9810c4852b644e4afe1049e1baf550fad94ca74827067",
-    "catalog": "9a66c62533596869d3d9b4e641cef37e12108fe9ebdb5af531ab4cc75bd11a35",
-    "reconciliation": "f792c4d2c22795beabcd77b9f0bee180b451197c7ad2e09d4f0ee0df47eb5654",
-    "generated_manifest": "20ed64ad417a9f40c7cc57399581f58560fc25bb3bcdddd9f6b2f7f7b41cbd61",
-    "current_counts": "718ad668da36fb45fe7d3cd2a203b9c61ce58892ff5f0009e8e5805e478db0c8"
+    "catalog": "70e068f63508ed1b708520f6830f8161dd8ceb76614ce836056546345552da18",
+    "reconciliation": "8162fe6180b84ca78dee0fe5f5c418aab8bf5407e556a18749b9f69283487f5c",
+    "generated_manifest": "93ee74434b7aeeb2d89b60b2af5297fb826c33f7441f6c8cb6fb3c1ed9ea6da0",
+    "current_counts": "40298f329d95976e8c192379231d25aead90a7a6f537605ac06b91edd2c29357"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -1223,8 +1223,8 @@
     "full_text_papers": 190,
     "generated_exports": {
       "data_publications_ld_main_entity": 212,
-      "data_software_json": 148,
-      "data_software_ld_main_entity": 148,
+      "data_software_json": 149,
+      "data_software_ld_main_entity": 149,
       "data_works_json": 212
     },
     "github_inventory": {
@@ -1246,16 +1246,16 @@
     },
     "paired_publication_decisions": {
       "decision": "accept",
-      "groups": 74,
-      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work.",
-      "raw_candidates": 489
+      "groups": 78,
+      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated.",
+      "raw_candidates": 493
     },
     "paired_publications": {
-      "already_reviewed": 399,
+      "already_reviewed": 400,
       "create_new": 0,
       "github_releases": 231,
-      "needs_review": 4,
-      "pairs": 450,
+      "needs_review": 0,
+      "pairs": 447,
       "strong_pairs": 48,
       "update_existing": 47,
       "zenodo_records": 151
@@ -1274,8 +1274,8 @@
     },
     "software": {
       "active_inference_institute": 39,
-      "curated_total": 148,
-      "docxology_owned": 109
+      "curated_total": 149,
+      "docxology_owned": 110
     },
     "types": {
       "Books": 5,

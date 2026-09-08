@@ -18,6 +18,7 @@ from publication_pairing import (  # noqa: E402
     extract_dois,
     find_publication_pairs,
     infer_domain,
+    is_draft_release,
     is_ignored_release,
     render_readme,
     yaml_double_quoted,
@@ -121,6 +122,65 @@ def test_template_smoke_release_is_ignored():
         assets=[],
     )
     assert is_ignored_release(release)
+
+
+def test_draft_release_is_detected_by_ephemeral_url():
+    release = GitHubRelease(
+        owner="docxology",
+        repo="codomyrmex",
+        tag="v1.3.0",
+        name="v1.3.0",
+        body="Reserved DOI: 10.5281/zenodo.21750800",
+        html_url="https://github.com/docxology/codomyrmex/releases/tag/untagged-5ffd202ff49ffc408d95",
+        published_at="2026-09-07T00:00:00Z",
+        assets=[],
+    )
+    assert is_draft_release(release)
+
+
+def test_published_release_is_not_draft():
+    release = GitHubRelease(
+        owner="docxology",
+        repo="codomyrmex",
+        tag="v1.3.0",
+        name="v1.3.0",
+        body="Reserved DOI: 10.5281/zenodo.21750800",
+        html_url="https://github.com/docxology/codomyrmex/releases/tag/v1.3.0",
+        published_at="2026-09-07T00:00:00Z",
+        assets=[],
+    )
+    assert not is_draft_release(release)
+
+
+def test_draft_release_is_never_paired_even_with_doi_evidence():
+    release = GitHubRelease(
+        owner="docxology",
+        repo="codomyrmex",
+        tag="v1.3.0",
+        name="v1.3.0",
+        body=(
+            "DOI: [10.5281/zenodo.20286478](https://doi.org/10.5281/zenodo.20286478)"
+        ),
+        html_url="https://github.com/docxology/codomyrmex/releases/tag/untagged-5ffd202ff49ffc408d95",
+        published_at="2026-09-07T00:00:00Z",
+        assets=[],
+    )
+    record = ZenodoRecord(
+        record_id="20286478",
+        doi="10.5281/zenodo.20286478",
+        title="Any Represented Work",
+        publication_date="2026-09-07",
+        version="1.0.0",
+        resource_type={"type": "publication", "subtype": "article", "title": "Article"},
+        creators=[{"name": "Friedman, Daniel Ari"}],
+        description="A represented work.",
+        keywords=[],
+        related_identifiers=[],
+        files=[],
+        html_url="https://zenodo.org/records/20286478",
+    )
+
+    assert confidence_for_pair(release, record) is None
 
 
 def test_biology_textbook_is_strong_pair_from_shared_doi():

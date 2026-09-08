@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-07T21:03:44Z",
-  "source_report": "reports/paired_publications_2026-09-04.json",
+  "generated_at": "2026-09-07T22:45:02Z",
+  "source_report": "reports/paired_publications_2026-09-07.json",
   "source_review_queue": "reports/paired_publications_review_queue_2026-06-04.md",
   "decision_summary": {
     "decision": "accept",
-    "groups": 74,
-    "raw_candidates": 489,
-    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work."
+    "groups": 78,
+    "raw_candidates": 493,
+    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated."
   },
   "groups": [
     {
@@ -11075,6 +11075,130 @@
           "reviewed_at": "2026-09-07T21:03:44Z",
           "review_source": "codex: session review; DOI indexed in data/works.json with curated bibliography folder",
           "source_report": "reports/paired_publications_2026-09-04.json"
+        }
+      ]
+    },
+    {
+      "id": "R75",
+      "decision": "superseded",
+      "decided_at": "2026-09-07T22:45:02Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.21750800",
+      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "candidate_github_repo": "docxology/codomyrmex",
+      "folder": "2026_Codomyrmex",
+      "representation": "bibliography-folder version-history-only",
+      "rationale": "Supersede: the Codomyrmex v1.3.0 draft release is a software version of the already-represented Codomyrmex work; DOI 10.5281/zenodo.21750800 is indexed in data/works.json with curated folder papers/2026_Codomyrmex (R71/R73 precedent covers the 2026-08-26 and 2026-09-04 untagged URLs). The principal confirmed the superseded disposition for draft URLs in the 2026-09-07 session; pairing now skips draft releases entirely.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "action_type": "needs_review",
+          "doi": "10.5281/zenodo.21750800",
+          "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+          "confidence": "needs_review",
+          "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+          "github_repo": "docxology/codomyrmex",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-5ffd202ff49ffc408d95",
+          "zenodo_record_url": "https://zenodo.org/records/21750800",
+          "release_tag": "v1.3.0",
+          "folder": "2026_Codomyrmex",
+          "review_decision": "superseded",
+          "reviewed_at": "2026-09-07T22:45:02Z",
+          "review_source": "user: 2026-09-07 principal session decision (cognitive_integrity classified curated; draft/paired releases recorded)",
+          "source_report": "reports/paired_publications_2026-09-07.json"
+        }
+      ]
+    },
+    {
+      "id": "R76",
+      "decision": "superseded",
+      "decided_at": "2026-09-07T22:45:02Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.22134545",
+      "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
+      "candidate_github_repo": "docxology/codomyrmex",
+      "folder": "2026_CognitiveIntegrityFramework",
+      "representation": "bibliography-folder version-history-only",
+      "rationale": "Supersede: the Codomyrmex v1.2.3 draft release is version metadata under the represented Cognitive Integrity Framework Part 2 DOI 10.5281/zenodo.22134545, indexed in data/works.json with curated folder papers/2026_CognitiveIntegrityFramework. The principal confirmed the disposition in the 2026-09-07 session.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "action_type": "needs_review",
+          "doi": "10.5281/zenodo.22134545",
+          "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
+          "confidence": "needs_review",
+          "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+          "github_repo": "docxology/codomyrmex",
+          "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
+          "zenodo_record_url": "https://zenodo.org/records/22134545",
+          "release_tag": "v1.2.3",
+          "folder": "2026_CognitiveIntegrityFramework",
+          "review_decision": "superseded",
+          "reviewed_at": "2026-09-07T22:45:02Z",
+          "review_source": "user: 2026-09-07 principal session decision (cognitive_integrity classified curated; draft/paired releases recorded)",
+          "source_report": "reports/paired_publications_2026-09-07.json"
+        }
+      ]
+    },
+    {
+      "id": "R77",
+      "decision": "superseded",
+      "decided_at": "2026-09-07T22:45:02Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.18364118",
+      "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
+      "candidate_github_repo": "ActiveInferenceInstitute/ActiveInferAnts",
+      "folder": "2026_CognitiveIntegrity",
+      "representation": "bibliography-folder version-specific artifact metadata",
+      "rationale": "Supersede: the ActiveInferAnts release 1 is a version-specific artifact under the represented Cognitive Integrity Framework Part 1 DOI 10.5281/zenodo.18364118 without a duplicate bibliography row (R72-style). The principal classified docxology/cognitive_integrity as curated (paper-backed) in the 2026-09-07 session; both CIF DOIs are indexed in data/works.json with curated folders.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "action_type": "needs_review",
+          "doi": "10.5281/zenodo.18364118",
+          "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
+          "confidence": "needs_review",
+          "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+          "github_repo": "ActiveInferenceInstitute/ActiveInferAnts",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts/releases/tag/1",
+          "zenodo_record_url": "https://zenodo.org/records/18364118",
+          "release_tag": "1",
+          "folder": "2026_CognitiveIntegrity",
+          "review_decision": "superseded",
+          "reviewed_at": "2026-09-07T22:45:02Z",
+          "review_source": "user: 2026-09-07 principal session decision (cognitive_integrity classified curated; draft/paired releases recorded)",
+          "source_report": "reports/paired_publications_2026-09-07.json"
+        }
+      ]
+    },
+    {
+      "id": "R78",
+      "decision": "superseded",
+      "decided_at": "2026-09-07T22:45:02Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.18364118",
+      "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
+      "candidate_github_repo": "ActiveInferenceInstitute/CEREBRUM",
+      "folder": "2026_CognitiveIntegrity",
+      "representation": "bibliography-folder version-specific artifact metadata",
+      "rationale": "Supersede: the CEREBRUM release 1.3 is a version-specific artifact under the represented Cognitive Integrity Framework Part 1 DOI 10.5281/zenodo.18364118 without a duplicate bibliography row (R72-style). The principal classified docxology/cognitive_integrity as curated (paper-backed) in the 2026-09-07 session.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "action_type": "needs_review",
+          "doi": "10.5281/zenodo.18364118",
+          "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
+          "confidence": "needs_review",
+          "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+          "github_repo": "ActiveInferenceInstitute/CEREBRUM",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM/releases/tag/1.3",
+          "zenodo_record_url": "https://zenodo.org/records/18364118",
+          "release_tag": "1.3",
+          "folder": "2026_CognitiveIntegrity",
+          "review_decision": "superseded",
+          "reviewed_at": "2026-09-07T22:45:02Z",
+          "review_source": "user: 2026-09-07 principal session decision (cognitive_integrity classified curated; draft/paired releases recorded)",
+          "source_report": "reports/paired_publications_2026-09-07.json"
         }
       ]
     }

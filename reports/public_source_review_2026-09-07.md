@@ -2,46 +2,42 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `362e5fff65ad42cef4481fb6ec37b2a62f196185`
+Source commit: `4e1c978b76e5767378624abb862137372cabb73c`
 
 ## Disposition summary
 
 | Status | Items |
 |---|---:|
-| Applied | 255 |
-| Deferred | 60 |
+| Applied | 256 |
+| Deferred | 55 |
 | Rejected | 318 |
 
 | Category | Applied | Deferred | Rejected |
 |---|---:|---:|---:|
-| `ambiguous_doi_change` | 64 | 4 | 0 |
+| `ambiguous_doi_change` | 64 | 0 | 0 |
 | `biographical_claim_change` | 10 | 0 | 0 |
 | `public_source_observation` | 0 | 7 | 0 |
-| `repository_classification` | 99 | 2 | 0 |
+| `repository_classification` | 99 | 1 | 0 |
 | `scholar_metric_change` | 1 | 0 | 0 |
-| `zenodo_candidate` | 81 | 47 | 318 |
+| `zenodo_candidate` | 82 | 47 | 318 |
 
 ## Evidence inputs
 
 - `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`1d01574cb4fb9c626202fd7572f637da37c4602ce38c2b79bd0c2390c057c60f`)
-- `claims_ledger`: `data/claims.json` (`8389238d67297cc62d819c1a1d76443b849826dd583d91944f87ff1f48e4cf85`)
+- `claims_ledger`: `data/claims.json` (`c0292e158678eba208c147bb6094517c3747284be9e32df4cac65a629e0deb0e`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
-- `paired_publication_decisions`: `data/paired-publication-decisions.json` (`a0b82b5196095e0b0c3a803c6de155f807d36da680a58e577ca3417fb82b4b95`)
-- `paired_publications`: `reports/paired_publications_2026-09-07.json` (`211f372f8f0c648f199c7fd89ad9c54aac7cb46f1a5abd89d310e47e8a2adfc5`)
+- `paired_publication_decisions`: `data/paired-publication-decisions.json` (`54b12d59e819e21b8c494f3eeab5ba5b8903f88d4cae756eb5339e08b254618e`)
+- `paired_publications`: `reports/paired_publications_2026-09-07.json` (`05e175224e9a612d84b2d0417f2dd5a33271a323619b33edefbc628265d87cdd`)
 - `previous_public_source_snapshot`: `reports/public_source_snapshot_2026-08-26.json` (`4616f31a102e00f1e268e7942c38d5914080895fdbf76cf1414f47f3e7dfad91`)
 - `public_source_inventory`: `reports/public_source_inventory_2026-09-04.json` (`2c541568c04f03fb5db6a11ce7400655cc44fdb97789d36b5246d4ea42e08c77`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`cff826363c7ca0e66bf583ee039a27cf0bfebc05ef57fb3222a8d91f50f73714`)
 - `public_source_snapshot`: `reports/public_source_snapshot_2026-09-04.json` (`f0f6f41807c0ae2efcc18cb1e040c5e555dadb7a20f04f0616ba42654d797974`)
-- `repository_classification`: `data/repository-classification.json` (`17513a8425e92a6254387f1943784a17637b11e4ae198e5cd20114ac50e46bc6`)
+- `repository_classification`: `data/repository-classification.json` (`00593c5bfa2ff29623d2dac6596e8d88795ee53d3fd4f583d2c07834035fcd6a`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2`)
 - `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5`)
 
 ## Deferred review
 
-- **`ambiguous_doi_change` — paired-publication:10.5281/zenodo.18364118:https://github.com/ActiveInferenceInstitute/ActiveInferAnts/releases/tag/1**: The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.
-- **`ambiguous_doi_change` — paired-publication:10.5281/zenodo.18364118:https://github.com/ActiveInferenceInstitute/CEREBRUM/releases/tag/1.3**: The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.
-- **`ambiguous_doi_change` — paired-publication:10.5281/zenodo.21750800:https://github.com/docxology/codomyrmex/releases/tag/untagged-5ffd202ff49ffc408d95**: The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.
-- **`ambiguous_doi_change` — paired-publication:10.5281/zenodo.22134545:https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067**: The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.
 - **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/CEREBRUM**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/Journal-Utilities**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
@@ -49,7 +45,6 @@ Source commit: `362e5fff65ad42cef4481fb6ec37b2a62f196185`
 - **`public_source_observation` — public-source-observation:GitHub user docxology**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`public_source_observation` — public-source-observation:Zenodo ORCID-linked records**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`public_source_observation` — public-source-observation:Zenodo exact-name creator records**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
-- **`repository_classification` — repository:docxology/cognitive_integrity**: The repository remains outside the curated catalog pending a human classification decision.
 - **`repository_classification` — repository:docxology/dicklesworthstone_meta_operator**: The repository remains outside the curated catalog pending a human classification decision.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.19699233:https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0**: The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.20396328:https://github.com/docxology/entofile/releases/tag/v0.4**: The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.
@@ -276,6 +271,8 @@ Source commit: `362e5fff65ad42cef4481fb6ec37b2a62f196185`
 - **`repository_classification` — repository:docxology/yt-transcriber**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`scholar_metric_change` — scholar-metrics**: The direct authenticated Scholar receipt matches the dated snapshot, so no metric change is required.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.16782756:https://github.com/docxology/ant_stack/releases/tag/v2.0.0**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
+- **`zenodo_candidate` — paired-publication:10.5281/zenodo.18364118:https://github.com/ActiveInferenceInstitute/ActiveInferAnts/releases/tag/1**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
+- **`zenodo_candidate` — paired-publication:10.5281/zenodo.18364118:https://github.com/ActiveInferenceInstitute/CEREBRUM/releases/tag/1.3**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.19699233:https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.0.0**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.20417016:https://github.com/docxology/template_autoresearch_project/releases/tag/v0.2.0**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.20417016:https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.0**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
@@ -325,7 +322,6 @@ Source commit: `362e5fff65ad42cef4481fb6ec37b2a62f196185`
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.21513316:https://github.com/docxology/CogSecSkills/releases/tag/v1.5.0**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.21513316:https://github.com/docxology/CogSecSkills/releases/tag/v1.6.0**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.21513316:https://github.com/docxology/CogSecSkills/releases/tag/v1.7.0**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
-- **`zenodo_candidate` — paired-publication:10.5281/zenodo.21750800:https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.21750800:https://github.com/docxology/codomyrmex/releases/tag/v0.1.0**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.21750800:https://github.com/docxology/codomyrmex/releases/tag/v0.1.1**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.21750800:https://github.com/docxology/codomyrmex/releases/tag/v0.1.6**: A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.

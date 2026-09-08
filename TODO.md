@@ -109,13 +109,27 @@ evidence and belong in `CHANGELOG.md` at merge time:
   `reports/paired_publications_2026-09-07.json` (full-scope queue 5 → 4
   unreviewed actions; an intermediate docxology-only rescan showed 2 but used
   a narrower owner scope than the 2026-09-04 baseline — see DOC-004). The
-  Cognitive Integrity cluster remains held for the principal via DOC-005.
-- **MINOR (observed, owner decision):** pairing candidates whose GitHub
-  release is a *draft* carry rotating `untagged-*` URLs, so per-fingerprint
-  decisions (R71/R73) cannot permanently clear them — each scan requeues the
-  release under a new fingerprint. A durable fix belongs to the owner
-  (e.g. keying untagged releases by repo+tag+DOI or skipping drafts); not
-  implemented here.
+  cluster was fully resolved later the same day — see the DOC-004 closure.
+- **MINOR (observed, then fixed in the 2026-09-07 PR):** pairing candidates
+  whose GitHub release is a *draft* carry rotating `untagged-*` URLs, so
+  per-fingerprint decisions (R71/R73/R75) cannot permanently clear them — each
+  scan requeued the release under a new fingerprint. Fixed the same day: draft
+  releases are skipped from pairing entirely (see the DOC-004 closure below).
+- **DOC-004 CLOSED (2026-09-07 principal session):** the principal classified
+  `docxology/cognitive_integrity` as curated (added to `pages/SOFTWARE.md`),
+  confirmed superseded dispositions for the rotating Codomyrmex drafts
+  (R75/R76) and the ActiveInferAnts/CEREBRUM version-specific artifacts
+  (R77/R78), and directed that draft (`untagged-*`) releases be skipped from
+  pairing entirely. The refreshed full-scope report has **zero unreviewed
+  candidates** (447 pairs; 450 → 447 reflects the three skipped draft pairs),
+  meeting DOC-004's acceptance; the row is removed per the
+  completed-rows-deleted convention (evidence: this entry + CHANGELOG).
+- **MEDIUM (fixed in the 2026-09-07 PR):** draft releases are now skipped at
+  pairing time (`is_draft_release` in `code/src/publication_pairing.py`);
+  provenance binding is merge-aware (`latest_payload_commit` steps through a
+  merge commit whose tree matches a parent, resolving the branch payload on
+  PR-shaped merge refs) with regression tests; the merge-ref test was
+  mutation-verified to fail under the old walk.
 - **MAJOR: none found.** All 48-gate-equivalent checks visible from a clean
   checkout pass; the two environment-bound items (browser QA under
   `browser-qa` extra, signed-in Search Console follow-up) remain tracked by
@@ -143,29 +157,6 @@ evidence and belong in `CHANGELOG.md` at merge time:
 
 ## P1 — Evidence, intake, and agent navigation
 
-### DOC-004 — Review ambiguous publication pairs
-
-- Priority: P1
-- Owner: ARCHIVIST / RESEARCHER
-- Trigger: each public-source refresh; review in batches of 10–15
-- Deliverable: record accept, reject, supersede, or defer decisions for every non-empty ambiguous queue in `data/paired-publication-decisions.json`
-- Acceptance: no ambiguous candidate is auto-promoted; the latest report has zero unreviewed candidates or every candidate has a cited decision with release, DOI, evidence, and permanent citation-key outcome
-- Dependencies: latest `reports/paired_publications_*.json`
-- Current queue (2026-09-07 report, 4 unreviewed actions / 3 DOIs): Codomyrmex
-  v1.3.0 `10.5281/zenodo.21750800` (draft-release `untagged-*` URLs rotate on
-  every edit, so each scan re-fingerprints the release — R71 and R73 already
-  record the 2026-08-26 and 2026-09-04 URLs as version-history-only) and
-  Codomyrmex v1.2.3 `10.5281/zenodo.22134545` (same rotating-draft pattern);
-  Cognitive Integrity Framework Part 1 `10.5281/zenodo.18364118` (releases 1
-  and 1.3) held for the principal — overlaps the
-  `docxology/cognitive_integrity` classification in DOC-005. Resolved this
-  pass: GNN v3.2.0 `10.5281/zenodo.7803313` (R74) and the 2026-09-04
-  Codomyrmex `untagged-ce7d` URL (R73), both recorded `superseded` /
-  `bibliography-folder version-history-only` with bibliography-folder
-  evidence. Open design question for the maintainer: draft-release URLs are
-  ephemeral identifiers, so per-fingerprint decisions cannot permanently
-  clear these candidates.
-
 ### DOC-005 — Classify uncatalogued repositories
 
 - Priority: P1
@@ -183,8 +174,11 @@ evidence and belong in `CHANGELOG.md` at merge time:
   individual call, enforced in `classify_repositories.py`. The fork that
   appeared in the 2026-08-30 refresh (`docxology/RGMs`) is recorded that way, so
   the fork queue is empty without anyone backdating a review.
-- Open primary decisions (2, awaiting the principal): `docxology/cognitive_integrity`
-  and `docxology/dicklesworthstone_meta_operator`.
+- Open primary decision (1, awaiting the principal):
+  `docxology/dicklesworthstone_meta_operator`. Resolved 2026-09-07:
+  `docxology/cognitive_integrity` classified curated by the principal and
+  added to `pages/SOFTWARE.md` (backed by `papers/2026_CognitiveIntegrity/`
+  and `papers/2026_CognitiveIntegrityFramework/`).
 - Stale-`curated` drift — FIXED 2026-09-05. `classify_repositories.py` reads
   `data/software.json` directly instead of trusting the `curated` flag frozen
   into the network-fetched inventory snapshot, so a catalog promotion clears its

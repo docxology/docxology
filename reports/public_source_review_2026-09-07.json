@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-09-07T21:26:58Z",
+      "generated_at": "2026-09-07T22:57:08Z",
       "path": "data/claims.json",
-      "sha256": "8389238d67297cc62d819c1a1d76443b849826dd583d91944f87ff1f48e4cf85",
+      "sha256": "c0292e158678eba208c147bb6094517c3747284be9e32df4cac65a629e0deb0e",
       "source_commit": null
     },
     "doi_role_review": {
@@ -21,15 +21,15 @@
       "source_commit": null
     },
     "paired_publication_decisions": {
-      "generated_at": "2026-09-07T21:03:44Z",
+      "generated_at": "2026-09-07T22:45:02Z",
       "path": "data/paired-publication-decisions.json",
-      "sha256": "a0b82b5196095e0b0c3a803c6de155f807d36da680a58e577ca3417fb82b4b95",
+      "sha256": "54b12d59e819e21b8c494f3eeab5ba5b8903f88d4cae756eb5339e08b254618e",
       "source_commit": null
     },
     "paired_publications": {
-      "generated_at": "2026-09-07T21:10:34Z",
+      "generated_at": "2026-09-07T22:47:35Z",
       "path": "reports/paired_publications_2026-09-07.json",
-      "sha256": "211f372f8f0c648f199c7fd89ad9c54aac7cb46f1a5abd89d310e47e8a2adfc5",
+      "sha256": "05e175224e9a612d84b2d0417f2dd5a33271a323619b33edefbc628265d87cdd",
       "source_commit": null
     },
     "previous_public_source_snapshot": {
@@ -57,9 +57,9 @@
       "source_commit": "f58f0be913c6d454586413a39b511bad44a03fe0"
     },
     "repository_classification": {
-      "generated_at": "2026-09-05T21:50:02Z",
+      "generated_at": "2026-09-07T22:45:23Z",
       "path": "data/repository-classification.json",
-      "sha256": "17513a8425e92a6254387f1943784a17637b11e4ae198e5cd20114ac50e46bc6",
+      "sha256": "00593c5bfa2ff29623d2dac6596e8d88795ee53d3fd4f583d2c07834035fcd6a",
       "source_commit": null
     },
     "scholar_snapshot": {
@@ -1099,110 +1099,6 @@
         "reports/doi_role_reconciliation_2026-08-25.json"
       ],
       "status": "applied"
-    },
-    {
-      "candidate": {
-        "action_type": "needs_review",
-        "applied_receipt_reason": "",
-        "applied_receipt_valid": false,
-        "confidence": "needs_review",
-        "doi": "10.5281/zenodo.18364118",
-        "folder": "2026_CognitiveIntegrity",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts/releases/tag/1",
-        "github_repo": "ActiveInferenceInstitute/ActiveInferAnts",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
-        "release_tag": "1",
-        "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
-        "zenodo_record_url": "https://zenodo.org/records/18364118"
-      },
-      "category": "ambiguous_doi_change",
-      "id": "paired-publication:10.5281/zenodo.18364118:https://github.com/ActiveInferenceInstitute/ActiveInferAnts/releases/tag/1",
-      "reason": "The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-07.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "needs_review",
-        "applied_receipt_reason": "",
-        "applied_receipt_valid": false,
-        "confidence": "needs_review",
-        "doi": "10.5281/zenodo.18364118",
-        "folder": "2026_CognitiveIntegrity",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM/releases/tag/1.3",
-        "github_repo": "ActiveInferenceInstitute/CEREBRUM",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
-        "release_tag": "1.3",
-        "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
-        "zenodo_record_url": "https://zenodo.org/records/18364118"
-      },
-      "category": "ambiguous_doi_change",
-      "id": "paired-publication:10.5281/zenodo.18364118:https://github.com/ActiveInferenceInstitute/CEREBRUM/releases/tag/1.3",
-      "reason": "The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-07.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "needs_review",
-        "applied_receipt_reason": "",
-        "applied_receipt_valid": false,
-        "confidence": "needs_review",
-        "doi": "10.5281/zenodo.21750800",
-        "folder": "2026_Codomyrmex",
-        "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-5ffd202ff49ffc408d95",
-        "github_repo": "docxology/codomyrmex",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
-        "release_tag": "v1.3.0",
-        "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
-        "zenodo_record_url": "https://zenodo.org/records/21750800"
-      },
-      "category": "ambiguous_doi_change",
-      "id": "paired-publication:10.5281/zenodo.21750800:https://github.com/docxology/codomyrmex/releases/tag/untagged-5ffd202ff49ffc408d95",
-      "reason": "The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-07.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "needs_review",
-        "applied_receipt_reason": "",
-        "applied_receipt_valid": false,
-        "confidence": "needs_review",
-        "doi": "10.5281/zenodo.22134545",
-        "folder": "2026_CognitiveIntegrityFramework",
-        "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
-        "github_repo": "docxology/codomyrmex",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
-        "release_tag": "v1.2.3",
-        "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
-        "zenodo_record_url": "https://zenodo.org/records/22134545"
-      },
-      "category": "ambiguous_doi_change",
-      "id": "paired-publication:10.5281/zenodo.22134545:https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
-      "reason": "The GitHub–Zenodo relation lacks sufficient DOI/release evidence for an automatic curated change.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-07.json"
-      ],
-      "status": "deferred"
     },
     {
       "candidate": {
@@ -3625,25 +3521,6 @@
         "catalog_role": "not_curated",
         "exclusion_reason": "primary_repo_requires_manual_review",
         "fork": false,
-        "full_name": "docxology/cognitive_integrity",
-        "html_url": "https://github.com/docxology/cognitive_integrity",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/cognitive_integrity",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "primary_repo_requires_manual_review",
-        "fork": false,
         "full_name": "docxology/dicklesworthstone_meta_operator",
         "html_url": "https://github.com/docxology/dicklesworthstone_meta_operator",
         "review_status": "defer"
@@ -3700,6 +3577,58 @@
       },
       "category": "zenodo_candidate",
       "id": "paired-publication:10.5281/zenodo.16782756:https://github.com/docxology/ant_stack/releases/tag/v2.0.0",
+      "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-07.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "already_reviewed",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": false,
+        "confidence": "needs_review",
+        "doi": "10.5281/zenodo.18364118",
+        "folder": "2026_CognitiveIntegrity",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/ActiveInferAnts/releases/tag/1",
+        "github_repo": "ActiveInferenceInstitute/ActiveInferAnts",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "R77 records this pair as bibliography-folder version-specific artifact metadata; do not create a duplicate bibliography row",
+        "release_tag": "1",
+        "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
+        "zenodo_record_url": "https://zenodo.org/records/18364118"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.18364118:https://github.com/ActiveInferenceInstitute/ActiveInferAnts/releases/tag/1",
+      "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-07.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "already_reviewed",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": false,
+        "confidence": "needs_review",
+        "doi": "10.5281/zenodo.18364118",
+        "folder": "2026_CognitiveIntegrity",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/CEREBRUM/releases/tag/1.3",
+        "github_repo": "ActiveInferenceInstitute/CEREBRUM",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "R78 records this pair as bibliography-folder version-specific artifact metadata; do not create a duplicate bibliography row",
+        "release_tag": "1.3",
+        "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
+        "zenodo_record_url": "https://zenodo.org/records/18364118"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.18364118:https://github.com/ActiveInferenceInstitute/CEREBRUM/releases/tag/1.3",
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
@@ -4974,32 +4903,6 @@
       },
       "category": "zenodo_candidate",
       "id": "paired-publication:10.5281/zenodo.21513316:https://github.com/docxology/CogSecSkills/releases/tag/v1.7.0",
-      "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-07.json"
-      ],
-      "status": "applied"
-    },
-    {
-      "candidate": {
-        "action_type": "already_reviewed",
-        "applied_receipt_reason": "",
-        "applied_receipt_valid": false,
-        "confidence": "needs_review",
-        "doi": "10.5281/zenodo.21750800",
-        "folder": "2026_Codomyrmex",
-        "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
-        "github_repo": "docxology/codomyrmex",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "R71 records this pair as bibliography-folder version-history-only; do not create a duplicate bibliography row",
-        "release_tag": "v1.2.3",
-        "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
-        "zenodo_record_url": "https://zenodo.org/records/21750800"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21750800:https://github.com/docxology/codomyrmex/releases/tag/untagged-aa994843a9236049b067",
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
       "sources": [
         "data/paired-publication-decisions.json",
@@ -15284,16 +15187,16 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "362e5fff65ad42cef4481fb6ec37b2a62f196185",
-  "source_tree_sha": "f70e9edb1eaec70cf3feebc05bd4c8d4f9af6264",
+  "source_commit": "4e1c978b76e5767378624abb862137372cabb73c",
+  "source_tree_sha": "f2b2a3cf1dd1be84df37c4795af9494699aea0cb",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
-    "applied": 255,
+    "applied": 256,
     "categories": {
       "ambiguous_doi_change": {
         "applied": 64,
-        "deferred": 4,
+        "deferred": 0,
         "rejected": 0
       },
       "biographical_claim_change": {
@@ -15308,7 +15211,7 @@
       },
       "repository_classification": {
         "applied": 99,
-        "deferred": 2,
+        "deferred": 1,
         "rejected": 0
       },
       "scholar_metric_change": {
@@ -15317,13 +15220,13 @@
         "rejected": 0
       },
       "zenodo_candidate": {
-        "applied": 81,
+        "applied": 82,
         "deferred": 47,
         "rejected": 318
       }
     },
-    "deferred": 60,
-    "items": 633,
+    "deferred": 55,
+    "items": 629,
     "rejected": 318,
     "review_required": true
   }
