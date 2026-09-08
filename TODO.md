@@ -16,6 +16,9 @@ criteria, and dependencies. Re-review this file before each public release.
   MIN-01/MIN-02 sections removed per the completed-rows-deleted convention,
   evidence in CHANGELOG 2026-08-31; DOC-004 queue sharpened with the five
   candidates from the 2026-09-04 report)
+- Last reviewed: 2026-09-08 (CI-robustness pass: open-item ledger unchanged
+  — every item remains procedural or trigger-based; added the 2026-09-08
+  session findings below)
 
 ## Completed / Closed (2026-08-01)
 
@@ -70,6 +73,35 @@ Comprehensive follow-up pass:
   truncates; `build_domain_pages.py` guards non-numeric `year` in the sort key.
 - **Test brittleness:** `test_resume_data.py` asserts Scholar citations against
   `data/scholar-snapshot.json` instead of the hardcoded `777`.
+
+## Session findings (2026-09-08)
+
+Live-verification repair pass (PRs #16/#17) plus a CI-robustness PR:
+
+- **MINOR (fixed in the 2026-09-08 PRs #16/#17):** the `Verify live site`
+  workflow had failed on every run since it shipped (2026-09-05): (a) the
+  deploy-freshness step truncated main's HEAD to 7 chars while deployed
+  stamps are git's auto-lengthened short form (`8ecdaa07`, 8 chars), so
+  `8ecdaa07 != 8ecdaa0` retried through the whole grace window; (b) the
+  expectation target itself was unsatisfiable — page stamps are deliberately
+  reused across non-rendering commits (`build_stamp.reuse_or_current`), so
+  "stamp == main HEAD" can stay stale for weeks on a fresh deploy. Fixed with
+  prefix stamp semantics plus an artifact-stamp expectation (the committed
+  `index.html`), and — once the freshness step passed for the first time — a
+  stale raw-serialization marker pin in `verify_live_site.py` (spaced
+  `"@type": "CollectionPage"` vs the compact emission), now replaced by
+  structural JSON-LD parsing (`jsonld_types_in_html`) asserting `@type`
+  values, immune to generator re-serialization. The workflow has been green
+  end-to-end since.
+- **MINOR (observed, fixed in the 2026-09-08 robustness PR):** the
+  Lighthouse budget gate tripped on shared-runner variance — main's
+  browser-tests failed with `index.html performance=52 < baseline floor 55`
+  on a byte-identical homepage that had passed four PR runs and re-passed
+  green on rerun (the file's own baseline comment records ±20 swings, 76/75/57,
+  on identical content). Per-page scoring now takes the **median of 3 runs**
+  when the first run lands below a floor; a single noisy dip no longer fails
+  the gate while a genuine regression stays below the median. Floor values
+  are unchanged (integrator-owned).
 
 ## Session findings (2026-09-07)
 
