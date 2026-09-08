@@ -2,6 +2,25 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-09-08
+
+- **Deploy-freshness alarm now passes — stamp comparison fixed to prefix
+  semantics:** the `Verify live site` workflow (added 2026-09-05) compared the
+  live homepage's build stamp against main's HEAD truncated to 7 characters,
+  but git's `--short` auto-lengthens on ambiguity and the deployed stamp is 8
+  (`8ecdaa07`) — `8ecdaa07 != 8ecdaa0` retried through the whole grace window
+  and failed every run since the alarm shipped. Two corrections: the
+  comparison is now prefix-based (`run_freshness_check` in
+  `code/src/deploy_freshness.py`, with a regression test for the
+  auto-lengthened form), and the workflow derives its expectation from the
+  stamp embedded in the committed `index.html` rather than HEAD — page stamps
+  are deliberately reused across non-rendering commits
+  (`build_stamp.reuse_or_current`), so "stamp equals HEAD" was
+  unsatisfiable by design while "live site serves the deployed artifact" is
+  the check's actual intent.
+- **CHANGELOG typography:** rejoined "pure-function", split across lines in
+  the 2026-09-07 entry.
+
 ## 2026-09-07
 
 - **Search index split surfaces no longer skew their timestamps:** when a
