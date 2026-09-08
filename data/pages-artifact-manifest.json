@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-08T00:29:42Z",
-  "source_commit_at_generation": "c23646b7fa42e89dc679320e28dbda4433d08467",
+  "generated_at": "2026-09-08T01:15:23Z",
+  "source_commit_at_generation": "272a0cec251093afaf61596a5615c97346a9f527",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 878094977,
+    "source_bytes": 878096986,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 5132,
-    "artifact_bytes": 878992642
+    "artifact_bytes": 878994651
   },
   "included_files": [
     {
@@ -74,8 +74,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 74068,
-      "sha256": "2a176f3acc6a817ce63eb65d27feb0486d3be8d1d502d6ca3c19ad27d03915c7"
+      "bytes": 75144,
+      "sha256": "7a84bb06a830649bd9adc56f57d4cff1b0369f4a7f16d29827eca55167ba209e"
     },
     {
       "path": "CITATION.cff",
@@ -5814,8 +5814,8 @@
     },
     {
       "path": "code/src/deploy_freshness.py",
-      "bytes": 4248,
-      "sha256": "375d6c87b43ee4bc4ac5dcddd56d2022a7b016bbfce9eed0f71a2ca692889d43"
+      "bytes": 4546,
+      "sha256": "a8cc36cccb2100f5fcd148c41c9942677bb0e8d46d7fe528eabdebbc3a970622"
     },
     {
       "path": "code/src/domain_inference.py",
@@ -6089,8 +6089,8 @@
     },
     {
       "path": "code/tests/test_deploy_freshness.py",
-      "bytes": 3171,
-      "sha256": "e4633ba3ba99fb0c62a18575ce563386f8bb4ac5063619ea3f5a482dff5e880a"
+      "bytes": 3806,
+      "sha256": "90c797d1cfa3451f4aa6567364a22dc89b87cdf0acf071095b8ab45e0c29fdfa"
     },
     {
       "path": "code/tests/test_deploy_seo_security.py",
