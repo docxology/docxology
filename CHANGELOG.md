@@ -69,8 +69,7 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   `code/src/release_controls.py` steps through a merge commit whose tree is
   identical to one of its parents (a PR merge ref's first parent is the base
   branch, so its first-parent diff is the whole branch and the tip-recorded
-  `source_commit_at_generation` could never resolve there). Covered by pure
-  -function fixtures and an end-to-end PR-merge-ref test that was
+  `source_commit_at_generation` could never resolve there). Covered by pure-function fixtures and an end-to-end PR-merge-ref test that was
   mutation-verified to fail under the old walk.
 
 ## 2026-09-05
