@@ -47,6 +47,22 @@ def test_run_freshness_check_immediate_match(monkeypatch: pytest.MonkeyPatch) ->
     assert run_freshness_check(expected_sha="94bd36990a36") == "94bd369"
 
 
+def test_run_freshness_check_accepts_auto_lengthened_short_sha(monkeypatch: pytest.MonkeyPatch) -> None:
+    """git --short auto-lengthens on ambiguity; a longer stamp must still match.
+
+    The deployed homepage stamp (8ecdaa07, 8 chars) vs a 7-char truncation of
+    the expectation is exactly the comparison that left the freshness alarm
+    red on every deploy.
+    """
+    import deploy_freshness as module
+
+    monkeypatch.setattr(module, "fetch_live_stamp", lambda url: "8ecdaa07")
+    assert (
+        run_freshness_check(expected_sha="8ecdaa0765049a2b517d1a9e51b7b2d3f5c9f8e2", grace_attempts=1)
+        == "8ecdaa07"
+    )
+
+
 def test_run_freshness_check_fails_on_mismatch_without_retries(monkeypatch: pytest.MonkeyPatch) -> None:
     import deploy_freshness as module
 
