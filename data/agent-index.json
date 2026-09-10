@@ -259,7 +259,7 @@
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-09-07.json",
+      "path": "/reports/asset_size_2026-09-10.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1147,8 +1147,8 @@
         "source_bytes": 902182822,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5154,
-        "artifact_bytes": 903084339
+        "artifact_file_count": 5157,
+        "artifact_bytes": 903084672
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1168,7 +1168,7 @@
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "35a35087087cf800060fbcb1ca04770938902c597ada0a136573eb9819b36529",
     "videos_index": "826b3e30782a966ece645777317b4a02701d3af62f744faa371e543e1aa66107",
-    "search": "11e38a606a2a29aa71a227c39bddb8153e3aea0fd18ccdb7a916b071aaf9258d",
+    "search": "03e1ddbec0b0fd2719b207e2af7c068254245e68196d7628373a06130e2364d3",
     "claims": "799886c8b238185255ccfd2ff5d40523f775ef9309f2c2d7269a905aee2fbc37",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "bd590fd3c6c9ba11c0a1da551a2b05d830e1aa9619d488a53b648c669c95fdc0",
@@ -1177,9 +1177,9 @@
     "organizations": "b6a2303e7520a2619058fec6aefebebcc318773b4b646ca850e8d84fc583cef5",
     "resume": "1999ee29583eb96cb62b670dd49ff0ff023cddf1aeb7fb65aa9cd28e3041b743",
     "work_enrichment": "0356fc382da87392f3f0c9e9d9e3fcd7461ac92fdf3ff878f5b13be67bca6ff7",
-    "catalog": "445416a7bdf1685f8a0a78ef89a6438b4cc8aec1f616ca3a5bad4e753ac3f2f2",
+    "catalog": "9d2e8bd0adb7b986bd7a2320ea90464556194bef74c68d8ee11a4fb04eef8abb",
     "reconciliation": "aa89caae37eab91725296591dfa7627b044306a59824be4a97383c156e79a9e8",
-    "generated_manifest": "2fc0307939c7f3c3e7a28506a103e0d96e42ffb81730833c9894b442ec10c16c",
+    "generated_manifest": "b26714474899a616773d5878144f70e0898f1524b535b40cb0d96178ba527a3c",
     "current_counts": "0eedbd8c359d4ffa75e701b82928a48681fa81cd59115f7c662418ec0e72c79a"
   },
   "source_provenance": {
