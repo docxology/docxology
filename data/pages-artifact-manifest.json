@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-10T23:13:25Z",
-  "source_commit_at_generation": "a4c44941aab782dbc8f0826376d527cb93705ca7",
+  "generated_at": "2026-09-10T23:31:22Z",
+  "source_commit_at_generation": "03cbd5f04cde75f32b8c5f160aa0404cbcead45f",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 902182822,
+    "source_bytes": 902183423,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 5157,
-    "artifact_bytes": 903084672
+    "artifact_bytes": 903085273
   },
   "included_files": [
     {
@@ -5829,8 +5829,8 @@
     },
     {
       "path": "code/src/generation_plan.py",
-      "bytes": 15345,
-      "sha256": "d35c309baa78225356976db04bc64a9ae3d0258f96a85e36000cd71222edcf85"
+      "bytes": 15448,
+      "sha256": "3ab600f03f1d778a0ff1f234fccba55a870d7e061dd6bbc2e29ec8c505bc953d"
     },
     {
       "path": "code/src/paper_metadata_schema.py",
@@ -7054,13 +7054,13 @@
     },
     {
       "path": "feeds/domain-cognitive-security.xml",
-      "bytes": 12622,
-      "sha256": "39ceab4038e8dec152476d0419a11c33e4238c91243287f90c0d614798233793"
+      "bytes": 13122,
+      "sha256": "ba6b263557765cdd31cc686736ff62acedd7ddf23c19d4343bbf1780acd65af0"
     },
     {
       "path": "feeds/domain-computational.xml",
-      "bytes": 12142,
-      "sha256": "e620b1328f15b3d65e5f7c34a4125aaf0597595e22cfa77fe2441d531057413a"
+      "bytes": 12140,
+      "sha256": "131e786f285d0813fb123e899292bf81ceac63f85f2e8fdfda23a0f0687ac8cd"
     },
     {
       "path": "feeds/domain-entomology.xml",
