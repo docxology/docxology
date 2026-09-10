@@ -1,0 +1,73 @@
+{
+  "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+  "version": "0.2.0",
+  "doi": "10.5281/zenodo.22663906",
+  "doi_url": "https://doi.org/10.5281/zenodo.22663906",
+  "zenodo_record": "https://zenodo.org/records/22663906",
+  "record_id": "22663907",
+  "publication_date": "2026-09-08",
+  "resource_type": {
+    "title": "Software",
+    "type": "software"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "<p>Skillarum turns selected public website pages into portable <code>SKILL.md</code> documents for agent harnesses such as Codex, Claude Code, and Hermes. Work is separated into five inspectable stages: acquire, prepare, process, parse, and render.</p><p>The crawler restricts acquisition to configured HTTP(S) origins, honours robots.txt, validates redirects, and records provenance for every page. Source text is delimited as untrusted data for LLM generation; generated code is never executed.</p><p>The deterministic backend is offline and source-extractive; optional OpenAI and Ollama backends provide provider generation with typed fallback traces. Rendered skills carry provenance manifests, and an evidence-gated research package aggregates run observations into descriptive statistics, figures, and a scholarly manuscript.</p><p>This release pairs the software source snapshot with the companion manuscript PDF.</p>",
+  "keywords": [
+    "website extraction",
+    "agent skills",
+    "provenance",
+    "reproducibility",
+    "prompt injection",
+    "static compilation"
+  ],
+  "files": [
+    {
+      "name": "Skillarum_combined.pdf",
+      "size_bytes": 3629479,
+      "checksum": "md5:ee6a7ad8a2bd3381896ac99efd213d93",
+      "download_url": "https://zenodo.org/api/records/22663907/files/Skillarum_combined.pdf/content"
+    },
+    {
+      "name": "CHECKSUMS.sha256",
+      "size_bytes": 287,
+      "checksum": "md5:1009038039779a6f575dae270fe1b98c",
+      "download_url": "https://zenodo.org/api/records/22663907/files/CHECKSUMS.sha256/content"
+    },
+    {
+      "name": "skillarum-0.2.0-research-artifacts.zip",
+      "size_bytes": 3916565,
+      "checksum": "md5:f8834330fee198b7bc343557ce33b42c",
+      "download_url": "https://zenodo.org/api/records/22663907/files/skillarum-0.2.0-research-artifacts.zip/content"
+    },
+    {
+      "name": "skillarum-0.2.0-source.zip",
+      "size_bytes": 2728580,
+      "checksum": "md5:6ea7a14706ae3556cb78600469855c60",
+      "download_url": "https://zenodo.org/api/records/22663907/files/skillarum-0.2.0-source.zip/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/Skillarum"
+    }
+  ],
+  "github_repo": "docxology/Skillarum",
+  "github_release_url": "https://github.com/docxology/Skillarum/releases/tag/v0.2.0",
+  "release_tag": "v0.2.0",
+  "release_name": "Skillarum 0.2.0",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi",
+    "zenodo_related_identifier_mentions_release",
+    "github_repo_self_linked"
+  ],
+  "checked_at": "2026-09-10T17:37:35Z"
+}

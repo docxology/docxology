@@ -1565,6 +1565,44 @@ section h2:hover .anchor-link,
     .videos-page .breadcrumb { background: var(--bg-primary); }
     .videos-page .breadcrumb a { color: #cfc9bd; }
 
+    /* Card family: cards get --bg-card (near-white) in light mode, but the
+       newspaper layer hardcodes light ink on card surfaces. Headings and
+       names take dark ink; body copy takes the remapped secondary ink.
+       (.repo-title base stays red via the later :899 rule.) */
+    .card h3, .connect-card h3, .collab-name, .media-title,
+    .catalog-card h2, .result-card h2, .mini-card h2, .mini-card h3
+        { color: var(--text-primary); }
+    .card .icon, .connect-card .icon { color: var(--text-primary); }
+    .card p, .connect-card p, .repo-desc, .collab-desc, .media-desc,
+    .catalog-card p, .result-card p, .mini-card p, .mini-card li,
+    .about-text p { color: var(--text-secondary); }
+    /* Red link hovers flip to #fff for the dark plate; on light card and
+       table surfaces they must land on dark ink instead. */
+    .td-title a:hover, .repo-title:hover, .media-item a:hover,
+    .td-doi a:hover { color: var(--text-primary); }
+    /* Repositories count tiles use --bg-card; the page's own <style> block
+       hardcodes #fff numerals (equal specificity, later load — hence the
+       div bump to win the cascade). */
+    .inventory-counts div strong { color: var(--text-primary); }
+    /* Stats-bar tiles were remapped light above, but .stat .num still
+       hardcodes #fff for its numerals. */
+    .stat .num { color: var(--text-primary); }
+    /* Page-level newspaper headings still hardcode light ink on the now-light
+       page background. */
+    .section-header h2 { color: var(--text-primary); }
+    .section-header p, .page-hero .sub, .domain-hero p { color: var(--text-secondary); }
+    /* .section-alt keeps its hardcoded #090909 dark band in light mode, so
+       its headers keep light ink (inverse of the plain-section rule above). */
+    .section-alt .section-header h2 { color: #f4f1ea; }
+    .section-alt .section-header p { color: #cfc9bd; }
+    /* The art feature box and art cards keep their hardcoded #0a0a0a/#0b0b0b
+       press plates by design; keep light ink on them (same treatment as the
+       art-page nav strip above). */
+    .art-card .card-title, .art-card .card-num { color: #f4f1ea; }
+    .art-card .card-detail { color: #cfc9bd; }
+    .art-highlight .hl-label { color: #f4f1ea; }
+    .art-highlight .hl-sub { color: #cfc9bd; }
+
     /* Hidden-by-default overlays must not expose focusable content (axe aria-hidden-focus). */
     .tts-panel, .shortcuts-overlay { visibility: hidden; transition: visibility 0s .25s, transform .25s ease, opacity .25s ease; }
     .tts-panel.tts-open, .shortcuts-overlay.shortcuts-open { visibility: visible; transition: transform .25s ease, opacity .25s ease; }

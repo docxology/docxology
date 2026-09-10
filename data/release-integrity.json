@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-08-13T17:52:47+00:00",
-  "source_commit_at_generation": "57cd548d66f8df8edb499d65abfd7f7a7e949817",
+  "source_commit_at_generation": "506ed14df699d097eb6160aac8a48edc0f78b190",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -11,7 +11,7 @@
     "orchestrator_sha256": {
       "code/orchestrators/regenerate_all.py": "9d7060a5253013c46c3e6bf438036ca914471f3f1d5b48eec885cbb882062cf6",
       "code/orchestrators/build_pages_artifact.py": "dd2364cb838dc79d62c2008b8f10ea1674eab4aefb1f224b8841337dacd12e79",
-      "code/orchestrators/build_agent_index.py": "7cf9844e00ced25378d893cf250b5ce196f357f4fa81eff9ef4b006f8c70ae31",
+      "code/orchestrators/build_agent_index.py": "b6ed8474e777b38f871e2a40d454bce5655378995791869f89ab1ff8419103ea",
       "code/orchestrators/build_coverage_exceptions.py": "f915d3b576f9ff07bd7520aeba1baaaa1e27dc704eea5d8cc20fe0bac03f9c1f",
       "code/orchestrators/classify_repositories.py": "1923005202420c1d121d5b237a5af5e0831d2becc3caf36dd1b6f8f0b4fae2b6",
       "code/orchestrators/audit_assets.py": "0a9f8922f9ee8c51b79861bdabd1c0f4aa8e9501f24dc635c25581a54f66c13a",
@@ -20,26 +20,26 @@
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "6ede272f86709a7b446dac81d1b168adf6b7abed1515cc76593b1085959a687b",
-    "pages/SOFTWARE.md": "fe3213eb644e0c1e1c505a0928da9a231d9f635ad23a08a8866fd3d2ec4990c9",
+    "pages/BIBLIOGRAPHY.md": "18b21877b7ca0e1b5f62a783d2d17cb595e27f646094f41baf5c94d6beebe43c",
+    "pages/SOFTWARE.md": "c32f35fc85e2ab3c31824892610c6af371ce3483a4fe1ed72ecfbe8b8ba5a841",
     "resume/source.json": "9bfe02faeb946d3a8cd6ab916a4686e0252ada8af2995257ee7c7ad59108904a",
-    "data/current-counts.json": "40298f329d95976e8c192379231d25aead90a7a6f537605ac06b91edd2c29357",
-    "data/coverage-exceptions.json": "a752fc6020b96a598afdec47182797059da3cc0fc94acc5d229b90cb978949e1",
-    "data/repository-classification.json": "00593c5bfa2ff29623d2dac6596e8d88795ee53d3fd4f583d2c07834035fcd6a",
-    "data/agent-index.json": "68bde225d111c4caaf537daadac7cc8fb9c0d4565947f1ef57e84ebe6bb89d30",
-    "data/generated-manifest.json": "d712ba944b21d5f69724d73324c928e571ecbe40975330261a85a1b19a6a942b",
-    "data/pages-artifact-manifest.json": "ba85d20fc84c93578687d584a062422508ffdb77283f80a87b1df76e4953906f"
+    "data/current-counts.json": "0eedbd8c359d4ffa75e701b82928a48681fa81cd59115f7c662418ec0e72c79a",
+    "data/coverage-exceptions.json": "bd590fd3c6c9ba11c0a1da551a2b05d830e1aa9619d488a53b648c669c95fdc0",
+    "data/repository-classification.json": "8b8af21e5ea029ffd363566285dd7eaf3d0f35f18271ab0ed2f780dcfd61add2",
+    "data/agent-index.json": "e87981d2c8f8d929f136b2b5ceb8dc29849d22a0a323d3a79e2aabde067aee93",
+    "data/generated-manifest.json": "2fc0307939c7f3c3e7a28506a103e0d96e42ffb81730833c9894b442ec10c16c",
+    "data/pages-artifact-manifest.json": "0b6999f8165ba20c31a944f16b8ab4324c79663a57d9aa0198ab265bbd8b9b09"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "57cd548d66f8df8edb499d65abfd7f7a7e949817",
-    "artifact_file_count": 5132,
-    "artifact_bytes": 879002776,
+    "source_commit_at_generation": "506ed14df699d097eb6160aac8a48edc0f78b190",
+    "artifact_file_count": 5154,
+    "artifact_bytes": 903084339,
     "omitted_paper_image_count": 8944
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "57cd548d66f8df8edb499d65abfd7f7a7e949817",
+    "candidate_source_commit": "506ed14df699d097eb6160aac8a48edc0f78b190",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
@@ -48,14 +48,14 @@
     "policy": "No local filesystem paths, secret-like tokens, or unsafe URL schemes in public CV/source manifests."
   },
   "counts": {
-    "bibliography_docs_links": 195,
-    "bibliography_works": 212,
+    "bibliography_docs_links": 196,
+    "bibliography_works": 213,
     "domains": {
       "AII Ecosystem": 6,
       "Active Inference": 45,
       "Art & Synergetics": 16,
       "Cognitive Security": 37,
-      "Computational": 54,
+      "Computational": 55,
       "Entomology": 23,
       "Genetics & Biomedical": 15,
       "Presentations & Media": 15
@@ -63,55 +63,55 @@
     "extracted_images": 8944,
     "full_text_papers": 190,
     "generated_exports": {
-      "data_publications_ld_main_entity": 212,
+      "data_publications_ld_main_entity": 213,
       "data_software_json": 149,
       "data_software_ld_main_entity": 149,
-      "data_works_json": 212
+      "data_works_json": 213
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 43,
       "archived": 5,
-      "curated": 147,
-      "docxology": 206,
+      "curated": 149,
+      "docxology": 213,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 86,
-      "forks": 88,
+      "fork_docxology": 87,
+      "forks": 89,
       "primary_ActiveInferenceInstitute": 41,
-      "primary_docxology": 120,
-      "primary_total": 161,
+      "primary_docxology": 126,
+      "primary_total": 167,
       "private": 0,
-      "public": 249,
-      "recently_updated": 187,
-      "total": 249,
-      "uncataloged": 102
+      "public": 256,
+      "recently_updated": 194,
+      "total": 256,
+      "uncataloged": 107
     },
     "paired_publication_decisions": {
       "decision": "accept",
-      "groups": 78,
-      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated.",
-      "raw_candidates": 493
+      "groups": 79,
+      "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated. R79 records the Cognitive Diagrams v2.5.0 release (2026-09-10 scan) as version-history-only under the already-cited concept DOI 10.5281/zenodo.19695259.",
+      "raw_candidates": 496
     },
     "paired_publications": {
-      "already_reviewed": 400,
+      "already_reviewed": 401,
       "create_new": 0,
-      "github_releases": 231,
-      "needs_review": 0,
-      "pairs": 447,
-      "strong_pairs": 48,
-      "update_existing": 47,
-      "zenodo_records": 151
+      "github_releases": 239,
+      "needs_review": 12,
+      "pairs": 462,
+      "strong_pairs": 51,
+      "update_existing": 49,
+      "zenodo_records": 155
     },
-    "paper_folder_docs": 195,
+    "paper_folder_docs": 196,
     "papers_with_images": 139,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
       "GitHub user ActiveInferenceInstitute": 43,
-      "GitHub user docxology": 206,
+      "GitHub user docxology": 213,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
-      "Zenodo ORCID-linked records": 148,
-      "Zenodo exact-name creator records": 61
+      "Zenodo ORCID-linked records": 152,
+      "Zenodo exact-name creator records": 65
     },
     "software": {
       "active_inference_institute": 39,
@@ -121,7 +121,7 @@
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 190,
+      "Papers": 191,
       "Playbooks": 2,
       "Presentations": 9,
       "Report": 1,

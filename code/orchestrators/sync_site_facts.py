@@ -41,7 +41,10 @@ MONTH_YEAR_PATTERN = rf"(?:{'|'.join(MONTH_NAMES)})\s+\d{{4}}"
 
 
 def latest_report(prefix: str, suffix: str) -> str | None:
-    path = latest_source_report(f"{prefix}_*.{suffix}", required=False)
+    # The [0-9] anchor keeps longer families that share a glob prefix
+    # (external_links_triage_* under external_links_*) from shadowing the
+    # exact-prefix dated report.
+    path = latest_source_report(f"{prefix}_[0-9]*.{suffix}", required=False)
     return path.name if path else None
 
 
@@ -153,13 +156,22 @@ def render(path: Path) -> str:
             name = latest_report(prefix, suffix)
             if name:
                 text = re.sub(rf"{prefix}_\d{{4}}-\d{{2}}-\d{{2}}\.json", name, text)
-    # Discovery pages also link dated generated reports; keep those pointers
-    # aligned with the newest report artifacts in the same rebuild.
+    # Discovery pages and llms.txt also link dated generated reports; keep
+    # those pointers aligned with the newest report artifacts in the same
+    # rebuild. The public-source snapshot/inventory pair is included here
+    # because llms.txt has no per-name branch that refreshes it.
     if path.name in {"discovery.html", "DISCOVERY.md", "llms.txt"}:
         for prefix, suffix in (
+            ("public_source_snapshot", "json"),
+            ("public_source_inventory", "json"),
             ("reconciliation", "md"),
             ("asset_size", "json"),
             ("accessibility_static", "json"),
+            ("external_links", "json"),
+            ("external_links_triage", "md"),
+            ("live_site_verification", "json"),
+            ("source_coverage", "json"),
+            ("source_coverage", "md"),
         ):
             name = latest_report(prefix, suffix)
             if name:

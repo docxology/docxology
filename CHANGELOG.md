@@ -2,6 +2,64 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-09-10
+
+- **Publication intake — Skillarum #216 and 48 versioned updates (GitHub +
+  Zenodo pairing):** broad warning-free scan (`reports/paired_publications_
+  2026-09-10.json`: 462 pairs; 239 releases; 155 Zenodo records) against the
+  2026-09-07 baseline. Applied the single strong `create_new` and 48 strong
+  `update_existing` actions; works total 212 → 213. New work #216
+  *Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation*
+  (concept DOI `10.5281/zenodo.22663906`; v0.2.0, 2026-09-08) with a complete
+  paper folder and the versioned combined PDF. Row #112 (Cognitive Case
+  Diagrams) updated to Zenodo record `22653315` v2.4.0 (2026-09-07) with the
+  new 15.3 MB versioned PDF retained alongside the v1 PDF; the v2.5.0
+  re-release is ledgered as version-history-only (decision R79). The 47
+  baseline `update_existing` actions re-verified idempotently (folder
+  metadata and PDF refreshes). New fork `docxology/oh-my-pi` registered under
+  the standing fork policy (DOC-005 mechanized path, RGMs precedent).
+  Principal-review items left open with evidence in
+  [TODO.md](TODO.md) ("Session findings (2026-09-10)"): 12 EvoJump
+  `needs_review` pairs (duplicate Zenodo concepts `22664645`/`22664675`),
+  the CCD row #112 title divergence, the deliberate On Time version-DOI
+  citation (commit `d086e7a3`) missing its `VERSION_SPECIFIC_CITATION_
+  EXCEPTIONS` entry, and the software-only record `22666981`.
+- **Bibliography completeness backfills:** Author cells filled for rows 199,
+  210, 211, and 216 via the DataCite registry pass
+  (`fetch_work_authors.py`, title-similarity 1.0, no invented authors);
+  Domain Legend now declares `🔍 Other` (row 215); GNN and Codomyrmex paper
+  folders record their version records as `artifact_doi`/`artifact_doi_url`
+  (verified live: `10.5281/zenodo.20671741`, `10.5281/zenodo.21750801`) with
+  `CITATION.cff` DOI roles synced.
+- **Agent-surface pointer refresh (generator fix):** the dated-report rewrite
+  in `sync_site_facts.py` covered only three report families, so
+  `llms.txt`, `discovery.html`, and `pages/DISCOVERY.md` pointed agents at
+  3-4-month-old snapshots (external-links 2026-05-15, live-site 2026-07-17,
+  source-coverage 2026-07-17; `llms.txt` never refreshed its
+  snapshot/inventory pair). The rewrite list now covers
+  external-links/triage, live-site verification, source coverage, and the
+  snapshot/inventory pair for `llms.txt`, with the resolver glob
+  digit-anchored so `external_links_triage_*` can no longer shadow
+  `external_links_*`. Also: duplicated discovery-page ListItems and table
+  rows removed; `llms.txt` manifest/registry versions corrected to 1.5/1.4
+  with the `ScholarVerificationReceipt` schema added; agent-index Work
+  schema now documents the `Report` type and the `authors` field.
+- **Light-mode card ink:** under `prefers-color-scheme: light` the card
+  family (white cards via the remapped `--bg-card`) still inherited
+  hardcoded dark-theme ink (#fff headings, #cfcfcf body) and was unreadable
+  on every page that renders cards. The light fixups block now maps card
+  headings/body/stat numerals to the text tokens, with compensating
+  light-ink rules for the by-design dark plates (art cards on their
+  hardcoded #0b0b0b background, `.section-alt` dark bands) and a
+  specificity bump for repositories.html's later-loading inline style.
+  Verified with light/dark full-page captures before and after; dark mode
+  is pixel-identical.
+- **Docs and ledger hygiene:** TODO.md's stale "Intake still blocked on
+  DOC-004" sentence replaced with the 2026-09-07 closure pointer;
+  `docs/README.md` index gained the missing `asset-strategy-adr.md` row and
+  the `manuscript/` tree; the 2026-09-08 section backfilled the PR #18
+  median-of-3 Lighthouse change; `codemeta.json` `dateModified` refreshed.
+
 ## 2026-09-08
 
 - **Deploy-freshness alarm now passes — stamp comparison fixed to prefix
@@ -27,6 +85,20 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   the page's JSON-LD is emitted compact (`"@type":"CollectionPage"`). The
   marker now matches the emitted format, consistent with the
   `software.html` marker.
+
+- **CI robustness — median-of-3 Lighthouse scoring and structural JSON-LD
+  checks (PR #18, commit `57cd548d`):** the Lighthouse budget gate tripped on
+  shared-runner variance — `index.html performance=52 < baseline floor 55` on
+  a byte-identical homepage that had passed four PR runs and re-passed green
+  on rerun (the file's baseline comment records ±20 swings, 76/75/57, on
+  identical content). Per-page scoring now takes the **median of 3 runs**
+  when the first run lands below a floor, so a single noisy dip no longer
+  fails the gate while a genuine regression stays below the median; floor
+  values are unchanged (integrator-owned). In the same pass the
+  spaced-vs-compact marker pin in `verify_live_site.py` was replaced by
+  structural JSON-LD parsing (`jsonld_types_in_html`) asserting `@type`
+  values, immune to generator re-serialization. The workflow has been green
+  end-to-end since.
 
 ## 2026-09-07
 

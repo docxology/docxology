@@ -6,7 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Sep 2026 02:37:50 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 17:39:38 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
@@ -27,6 +27,13 @@
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
       <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation</title>
+      <link>https://danielarifriedman.com/works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html</link>
+      <guid isPermaLink="false">work-Friedman2026SkillarumConditionallyReproducibleWebsite216</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)</title>
@@ -195,13 +202,6 @@
       <guid isPermaLink="false">work-Friedman2026IllegalStatesMostlyUnrepresentable191</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Entomology · 2026</description>
-    </item>
-    <item>
-      <title>Pools, Rules, and Tools: A Template-Integrated Resource Architecture</title>
-      <link>https://danielarifriedman.com/works/Friedman2026PoolsRulesToolsTemplate190.html</link>
-      <guid isPermaLink="false">work-Friedman2026PoolsRulesToolsTemplate190</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Active Inference · 2026</description>
     </item>
   </channel>
 </rss>

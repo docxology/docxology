@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-02T04:29:10Z",
+  "generated_at": "2026-09-10T20:41:04Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
-  "count": 212,
+  "count": 213,
   "works": [
     {
       "num": 1,
@@ -113,9 +113,7 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2026_CognitiveIntegrity/full_text.md",
-      "authors": [
-        "Friedman, Daniel Ari"
-      ]
+      "authors": []
     },
     {
       "num": 6,
@@ -2865,9 +2863,7 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2026_CognitiveCaseDiagrams/full_text.md",
-      "authors": [
-        "Friedman, Daniel Ari"
-      ]
+      "authors": []
     },
     {
       "num": 113,
@@ -3967,7 +3963,35 @@
       "has_agents_md": false,
       "has_readme": false,
       "full_text_url": "",
-      "authors": []
+      "authors": [
+        "Protzko, John",
+        "Tanner, Isaac Z.",
+        "Dedyo, Morgan Daly",
+        "Fu, JiaJia",
+        "Perma, Bhavya",
+        "Friedman, Daniel Ari",
+        "Blidner, Ada Gabriela",
+        "Johnston, Juliet Tegan",
+        "Srivastava, Anant Kumar",
+        "Ruscher, Roland",
+        "Kupz, Andreas",
+        "Tarselli, Michael A.",
+        "Beardsley, Felicia",
+        "Jensen, Mark Martin",
+        "Konstantinides, Nikos",
+        "Agarwal, Divyansh",
+        "Yuen, Julia",
+        "Gopinath, Suchitra D.",
+        "Duong, Michael Tran",
+        "Strong, Michael",
+        "Soták, Matúš",
+        "Burnette, Katie",
+        "Kirshner, Samuel Nathan",
+        "Nikolaou, Athanasia",
+        "Ali, Basant A.",
+        "de Oliveira, Benedito Alves",
+        "Sojli, Elvira"
+      ]
     },
     {
       "num": 159,
@@ -4338,7 +4362,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_CogSecSkills/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -4890,7 +4914,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2026_ActiveInferencePower/full_text.md",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 200,
@@ -5050,7 +5076,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_Codomyrmex/full_text.md",
       "authors": [
-        "Friedman, Daniel Ari"
+        "Daniel Ari Friedman"
       ]
     },
     {
@@ -5096,7 +5122,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_PROJECTBONDSpecial/full_text.md",
       "authors": [
-        "Friedman, Daniel Ari"
+        "Daniel Ari Friedman"
       ]
     },
     {
@@ -5119,10 +5145,10 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_DigiPPPiP/full_text.md",
       "authors": [
-        "Shrivastava, Siddhant",
-        "Goh, Evelyn C.",
-        "Mikhailova, Alexandra",
-        "Friedman, Daniel Ari"
+        "Siddhant Shrivastava",
+        "Evelyn C. Goh",
+        "Alexandra Mikhailova",
+        "Daniel Ari Friedman"
       ]
     },
     {
@@ -5144,7 +5170,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2026_RobustBeliefSharing/full_text.md",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 211,
@@ -5165,7 +5193,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2026_ActiveSkillference/full_text.md",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 212,
@@ -5257,6 +5287,29 @@
       "full_text_url": "/papers/2026_MillenniumAudit/full_text.md",
       "authors": [
         "Daniel Ari Friedman"
+      ]
+    },
+    {
+      "num": 216,
+      "citation_key": "Friedman2026SkillarumConditionallyReproducibleWebsite216",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.22663906",
+      "doi": "10.5281/zenodo.22663906",
+      "docs_path": "papers/2026_Skillarum/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": [
+        "Friedman, Daniel Ari"
       ]
     }
   ]

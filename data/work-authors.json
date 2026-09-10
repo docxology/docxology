@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-29T18:23:29Z",
+  "generated_at": "2026-09-10T20:27:44Z",
   "generator": "code/orchestrators/fetch_work_authors.py",
   "policy": {
     "sources": [
@@ -70,16 +70,9 @@
       "doi": "10.5281/zenodo.18364118",
       "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
       "registration_agency": "DataCite",
-      "resolved_title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security",
-      "title_similarity": 1.0,
-      "status": "verified",
-      "authors": [
-        {
-          "family": "Friedman",
-          "given": "Daniel Ari",
-          "orcid": "0000-0001-6232-9096"
-        }
-      ]
+      "resolved_title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
+      "title_similarity": 0.7176,
+      "status": "title_mismatch"
     },
     "Friedman2026PersonalYouTube200Livestreams006": {
       "num": 6,
@@ -1547,48 +1540,6 @@
         {
           "family": "Campbell",
           "given": "John O."
-        }
-      ]
-    },
-    "Friedman2023ATLASQuestionOrientedApproach049": {
-      "num": 49,
-      "doi": "10.5281/zenodo.10296601",
-      "title": "ATLAS: A Question Oriented Approach to Pattern Languages in Knowledge Management",
-      "registration_agency": "DataCite",
-      "resolved_title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
-      "title_similarity": 1.0,
-      "status": "verified",
-      "authors": [
-        {
-          "family": "Cordes",
-          "given": "R.J.",
-          "orcid": "0000-0002-9913-7159"
-        },
-        {
-          "family": "David",
-          "given": "Scott"
-        },
-        {
-          "family": "Friedman",
-          "given": "Daniel",
-          "orcid": "0000-0001-6232-9096"
-        },
-        {
-          "family": "Mikhailova",
-          "given": "Alexandra",
-          "orcid": "0000-0002-8699-7125"
-        },
-        {
-          "family": "Penland",
-          "given": "Andrew"
-        },
-        {
-          "family": "Young",
-          "given": "Sam"
-        },
-        {
-          "family": "Zacharias",
-          "given": "Colten"
         }
       ]
     },
@@ -3195,16 +3146,9 @@
       "doi": "10.5281/zenodo.19695259",
       "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
       "registration_agency": "DataCite",
-      "resolved_title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
-      "title_similarity": 1.0,
-      "status": "verified",
-      "authors": [
-        {
-          "family": "Friedman",
-          "given": "Daniel Ari",
-          "orcid": "0000-0001-6232-9096"
-        }
-      ]
+      "resolved_title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+      "title_similarity": 0.5,
+      "status": "title_mismatch"
     },
     "Friedman2026TowardsLean4Formalization113": {
       "num": 113,
@@ -3699,7 +3643,7 @@
     },
     "Friedman2023ATLASQuestionOrientedApproach136": {
       "num": 136,
-      "doi": "10.5281/zenodo.10362561",
+      "doi": "10.5281/zenodo.10296601",
       "title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
       "registration_agency": "DataCite",
       "resolved_title": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
@@ -4206,10 +4150,122 @@
     },
     "Friedman2021DefiningEvents2020Hindsight158": {
       "num": 158,
-      "doi": "10.1126/science.371.6524.22",
+      "doi": "10.1126/science.abg0904",
       "title": "Defining events: 2020 in hindsight",
-      "registration_agency": null,
-      "status": "doi_unresolved"
+      "registration_agency": "Crossref",
+      "resolved_title": "Defining events: 2020 in hindsight",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Protzko",
+          "given": "John"
+        },
+        {
+          "family": "Tanner",
+          "given": "Isaac Z."
+        },
+        {
+          "family": "Dedyo",
+          "given": "Morgan Daly"
+        },
+        {
+          "family": "Fu",
+          "given": "JiaJia"
+        },
+        {
+          "family": "Perma",
+          "given": "Bhavya"
+        },
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari"
+        },
+        {
+          "family": "Blidner",
+          "given": "Ada Gabriela"
+        },
+        {
+          "family": "Johnston",
+          "given": "Juliet Tegan"
+        },
+        {
+          "family": "Srivastava",
+          "given": "Anant Kumar"
+        },
+        {
+          "family": "Ruscher",
+          "given": "Roland"
+        },
+        {
+          "family": "Kupz",
+          "given": "Andreas"
+        },
+        {
+          "family": "Tarselli",
+          "given": "Michael A."
+        },
+        {
+          "family": "Beardsley",
+          "given": "Felicia"
+        },
+        {
+          "family": "Jensen",
+          "given": "Mark Martin"
+        },
+        {
+          "family": "Konstantinides",
+          "given": "Nikos"
+        },
+        {
+          "family": "Agarwal",
+          "given": "Divyansh"
+        },
+        {
+          "family": "Yuen",
+          "given": "Julia"
+        },
+        {
+          "family": "Gopinath",
+          "given": "Suchitra D."
+        },
+        {
+          "family": "Duong",
+          "given": "Michael Tran"
+        },
+        {
+          "family": "Strong",
+          "given": "Michael"
+        },
+        {
+          "family": "Soták",
+          "given": "Matúš"
+        },
+        {
+          "family": "Burnette",
+          "given": "Katie"
+        },
+        {
+          "family": "Kirshner",
+          "given": "Samuel Nathan"
+        },
+        {
+          "family": "Nikolaou",
+          "given": "Athanasia"
+        },
+        {
+          "family": "Ali",
+          "given": "Basant A."
+        },
+        {
+          "family": "de Oliveira",
+          "given": "Benedito Alves"
+        },
+        {
+          "family": "Sojli",
+          "given": "Elvira"
+        }
+      ]
     },
     "Friedman2022ActiveBlockferenceCadCADActive159": {
       "num": 159,
@@ -4466,18 +4522,18 @@
         }
       ]
     },
-    "Friedman2026CogSecSkillsMultiharnessCognitiveSecurity174": {
+    "Friedman2026CogSecSkillsMultiharnessAgenticSkills174": {
       "num": 174,
-      "doi": "10.5281/zenodo.20804585",
-      "title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+      "doi": "10.5281/zenodo.21513316",
+      "title": "CogSecSkills: Multiharness Agentic Skills for Cognitive Security",
       "registration_agency": "DataCite",
-      "resolved_title": "CogSecSkills: Multiharness Cognitive Security Skill Library",
+      "resolved_title": "CogSecSkills: Multiharness Agentic Skills for Cognitive Security",
       "title_similarity": 1.0,
       "status": "verified",
       "authors": [
         {
-          "family": "Daniel Ari Friedman",
-          "given": "",
+          "family": "Friedman",
+          "given": "Daniel Ari",
           "orcid": "0000-0001-6232-9096"
         }
       ]
@@ -4774,22 +4830,6 @@
         }
       ]
     },
-    "Friedman2026TemplateApproachReproducibleGenerative193": {
-      "num": 193,
-      "doi": "10.5281/zenodo.19139089",
-      "title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-      "registration_agency": "DataCite",
-      "resolved_title": "A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication",
-      "title_similarity": 1.0,
-      "status": "verified",
-      "authors": [
-        {
-          "family": "Friedman",
-          "given": "Daniel Ari",
-          "orcid": "0000-0001-6232-9096"
-        }
-      ]
-    },
     "Friedman2026PriorCognitiveArt194": {
       "num": 194,
       "doi": "10.5281/zenodo.21316510",
@@ -4856,10 +4896,311 @@
     },
     "Friedman2026SynthOBSFractiSynthGoldenRatio198": {
       "num": 198,
-      "doi": "10.5281/zenodo.21418687",
+      "doi": "10.5281/zenodo.21418782",
       "title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
       "registration_agency": "DataCite",
       "resolved_title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026ActiveInferencePowerSuite199": {
+      "num": 199,
+      "doi": "10.5281/zenodo.21695160",
+      "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+      "registration_agency": "DataCite",
+      "resolved_title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026WitnessRegisterCoRegistration200": {
+      "num": 200,
+      "doi": "10.5281/zenodo.21754245",
+      "title": "The Witness Register: Co-Registration Without Aggregation",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Witness Register: Co-Registration Without Aggregation",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026LineSetHoldingInstruments201": {
+      "num": 201,
+      "doi": "10.5281/zenodo.21754243",
+      "title": "The Line Set: Holding Instruments Apart",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Line Set: Holding Instruments Apart",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026WhiteLineTypedLedger202": {
+      "num": 202,
+      "doi": "10.5281/zenodo.21754241",
+      "title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "registration_agency": "DataCite",
+      "resolved_title": "White Line: A Typed Ledger for the Edge of the Claim",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026PersonalRedLinesDevelopment203": {
+      "num": 203,
+      "doi": "10.5281/zenodo.21754239",
+      "title": "Personal Red Lines for Development",
+      "registration_agency": "DataCite",
+      "resolved_title": "Personal Red Lines for Development",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026GoldenLineTowardWhat204": {
+      "num": 204,
+      "doi": "10.5281/zenodo.21754237",
+      "title": "Golden Line: Toward What Matters",
+      "registration_agency": "DataCite",
+      "resolved_title": "Golden Line: Toward What Matters",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026BlackLineStrongWork205": {
+      "num": 205,
+      "doi": "10.5281/zenodo.21754235",
+      "title": "Black Line: Strong Work in Public",
+      "registration_agency": "DataCite",
+      "resolved_title": "Black Line: Strong Work in Public",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026CodomyrmexArtificialEcologyAgentic206": {
+      "num": 206,
+      "doi": "10.5281/zenodo.21750800",
+      "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "registration_agency": "DataCite",
+      "resolved_title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026THALIATypedHarnessAnalytical207": {
+      "num": 207,
+      "doi": "10.5281/zenodo.21763244",
+      "title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
+      "registration_agency": "DataCite",
+      "resolved_title": "THALIA: Typed Harness with Analytical Lexical-Integrated Architecture",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari"
+        }
+      ]
+    },
+    "Friedman2026PROJECTBONDSpecialAgent208": {
+      "num": 208,
+      "doi": "10.5281/zenodo.21843592",
+      "title": "PROJECT BOND — The Special-Agent Operations Compendium",
+      "registration_agency": "DataCite",
+      "resolved_title": "PROJECT BOND — The Special-Agent Operations Compendium",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026DigiPPPiPDigitalPartnerPen209": {
+      "num": 209,
+      "doi": "10.5281/zenodo.21815704",
+      "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+      "registration_agency": "DataCite",
+      "resolved_title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Siddhant Shrivastava",
+          "given": "",
+          "orcid": "0000-0002-9688-4730"
+        },
+        {
+          "family": "Evelyn C. Goh",
+          "given": "",
+          "orcid": "0000-0001-7182-3950"
+        },
+        {
+          "family": "Alexandra Mikhailova",
+          "given": ""
+        },
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026RobustBeliefSharingFederated210": {
+      "num": 210,
+      "doi": "10.5281/zenodo.21864003",
+      "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+      "registration_agency": "DataCite",
+      "resolved_title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026ActiveSkillferenceValidatedPrerequisite211": {
+      "num": 211,
+      "doi": "10.5281/zenodo.21865643",
+      "title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+      "registration_agency": "DataCite",
+      "resolved_title": "Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026DocxplusIntelligentDocumentContainer212": {
+      "num": 212,
+      "doi": "10.5281/zenodo.21983948",
+      "title": "docxplus — the Intelligent Document Container",
+      "registration_agency": "DataCite",
+      "resolved_title": "docxplus — the Intelligent Document Container",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026CognitiveIntegrityFrameworkComputational213": {
+      "num": 213,
+      "doi": "10.5281/zenodo.22134545",
+      "title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
+      "registration_agency": "DataCite",
+      "resolved_title": "Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation)",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026CognitiveIntegrityFrameworkPractical214": {
+      "num": 214,
+      "doi": "10.5281/zenodo.22134547",
+      "title": "Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)",
+      "registration_agency": "DataCite",
+      "resolved_title": "Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026ForensicAuditMillenniumLeanClay215": {
+      "num": 215,
+      "doi": "10.5281/zenodo.22243473",
+      "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
+      "registration_agency": "DataCite",
+      "resolved_title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026SkillarumConditionallyReproducibleWebsite216": {
+      "num": 216,
+      "doi": "10.5281/zenodo.22663906",
+      "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+      "registration_agency": "DataCite",
+      "resolved_title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
       "title_similarity": 1.0,
       "status": "verified",
       "authors": [

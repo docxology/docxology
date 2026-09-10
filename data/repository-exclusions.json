@@ -903,6 +903,16 @@
       "note": "Principal approved keeping this public fork out of the curated software catalog.",
       "github_id": 1025749336,
       "github_node_id": "R_kgDOPSOxWA"
+    },
+    {
+      "full_name": "docxology/oh-my-pi",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-10",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork (created 2026-09-09) of the omp coding-agent upstream; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1363234262,
+      "github_node_id": "R_kgDOUUFN1g"
     }
   ]
 }

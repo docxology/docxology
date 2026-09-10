@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Compositional Approaches to Linguistic Case for Cognitive Modeling
+# AGENTS.md — Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case
 
-**Paper**: Compositional Approaches to Linguistic Case for Cognitive Modeling (2026)
+**Paper**: Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case (2026)
 **Domain**: Active Inference
 **Authors**: Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Compositional Approaches to Linguistic Case for Cognitive Modeling to related works in the bibliography
+- Connects Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

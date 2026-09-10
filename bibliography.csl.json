@@ -5469,8 +5469,112 @@
     "title": "Defining events: 2020 in hindsight",
     "author": [
       {
+        "family": "Protzko",
+        "given": "John"
+      },
+      {
+        "family": "Tanner",
+        "given": "Isaac Z."
+      },
+      {
+        "family": "Dedyo",
+        "given": "Morgan Daly"
+      },
+      {
+        "family": "Fu",
+        "given": "JiaJia"
+      },
+      {
+        "family": "Perma",
+        "given": "Bhavya"
+      },
+      {
         "family": "Friedman",
         "given": "Daniel Ari"
+      },
+      {
+        "family": "Blidner",
+        "given": "Ada Gabriela"
+      },
+      {
+        "family": "Johnston",
+        "given": "Juliet Tegan"
+      },
+      {
+        "family": "Srivastava",
+        "given": "Anant Kumar"
+      },
+      {
+        "family": "Ruscher",
+        "given": "Roland"
+      },
+      {
+        "family": "Kupz",
+        "given": "Andreas"
+      },
+      {
+        "family": "Tarselli",
+        "given": "Michael A."
+      },
+      {
+        "family": "Beardsley",
+        "given": "Felicia"
+      },
+      {
+        "family": "Jensen",
+        "given": "Mark Martin"
+      },
+      {
+        "family": "Konstantinides",
+        "given": "Nikos"
+      },
+      {
+        "family": "Agarwal",
+        "given": "Divyansh"
+      },
+      {
+        "family": "Yuen",
+        "given": "Julia"
+      },
+      {
+        "family": "Gopinath",
+        "given": "Suchitra D."
+      },
+      {
+        "family": "Duong",
+        "given": "Michael Tran"
+      },
+      {
+        "family": "Strong",
+        "given": "Michael"
+      },
+      {
+        "family": "Soták",
+        "given": "Matúš"
+      },
+      {
+        "family": "Burnette",
+        "given": "Katie"
+      },
+      {
+        "family": "Kirshner",
+        "given": "Samuel Nathan"
+      },
+      {
+        "family": "Nikolaou",
+        "given": "Athanasia"
+      },
+      {
+        "family": "Ali",
+        "given": "Basant A."
+      },
+      {
+        "family": "de Oliveira",
+        "given": "Benedito Alves"
+      },
+      {
+        "family": "Sojli",
+        "given": "Elvira"
       }
     ],
     "issued": {
@@ -5892,7 +5996,8 @@
     "title": "CogSecSkills: Multiharness Agentic Skills for Cognitive Security",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6649,8 +6754,7 @@
     "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -6699,8 +6803,7 @@
     "title": "PROJECT BOND — The Special-Agent Operations Compendium",
     "author": [
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -6724,20 +6827,16 @@
     "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
     "author": [
       {
-        "family": "Shrivastava",
-        "given": "Siddhant"
+        "literal": "Siddhant Shrivastava"
       },
       {
-        "family": "Goh",
-        "given": "Evelyn C."
+        "literal": "Evelyn C. Goh"
       },
       {
-        "family": "Mikhailova",
-        "given": "Alexandra"
+        "literal": "Alexandra Mikhailova"
       },
       {
-        "family": "Friedman",
-        "given": "Daniel Ari"
+        "literal": "Daniel Ari Friedman"
       }
     ],
     "issued": {
@@ -6903,5 +7002,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.22243473",
     "URL": "https://doi.org/10.5281/zenodo.22243473"
+  },
+  {
+    "id": "Friedman2026SkillarumConditionallyReproducibleWebsite216",
+    "type": "article-journal",
+    "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 216; docs: papers/2026_Skillarum/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.22663906",
+    "URL": "https://doi.org/10.5281/zenodo.22663906"
   }
 ]
