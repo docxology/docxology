@@ -85,8 +85,9 @@ genuinely superseded sets (see the report-retention appendix).
 Revisit Option A when **any** of the following becomes true:
 
 1. **Artifact size trigger:** the Pages artifact is projected at more than
-   850 MiB in a release check (`build_pages_artifact.py --check-size`), i.e.
-   the review-warning band is reached again.
+   880 MiB in a release check (`build_pages_artifact.py --check-size`), i.e.
+   the review-warning band is reached again (the band moved 850 → 880 MiB in
+   the 2026-09-11 budget review below).
 2. **Flickr dependency trigger:** Flickr changes its hotlinking behavior or
    terms of service such that `live.staticflickr.com` thumbnails become
    unreliable, rate-limited, or disallowed for this use.
@@ -125,3 +126,24 @@ active planning item now, not a distant condition. Any image-heavy addition
 (per-work OG cards, self-hosted art thumbnails) must wait for the assets-origin
 decision. CI should fail when artifact MiB crosses the warning line rather than
 discovering it at the ceiling (assigned to the ci-tests lane).
+
+## Budget review (2026-09-11): review-warning band 850 → 880 MiB
+
+The 2026-09-10 publications intake (Skillarum #216 with its versioned PDF,
+plus the Cognitive Case Diagrams v2.4.0 versioned PDF — ~19 MiB of permanent
+paper-PDF growth) and the 2026-09-11 UTC-rollover double-generation of the
+dated evidence families pushed the projected artifact from 844.9 MiB (2026-09-07
+baseline) to 870.5 MiB, past the 850 MiB review-warning band. Composition at
+review: paper PDFs 681 MiB (78%), extracted paper images 950 MiB (omitted from
+the projection by policy), published dated reports ≈ 60 MiB, everything else
+small.
+
+Decision: the review-warning band moves to **880 MiB** — 20 MiB of review
+headroom below the unchanged 900 MiB release hard ceiling
+(`code/src/artifact_budget.py` `BUDGET_MIB`, `build_pages_artifact.py`
+`WARNING_ARTIFACT_BYTES` and the manifest `warning_policy` string, the
+validate.yml step name, and the size trigger above updated together). The
+durable lever — omitting superseded dated reports from the Pages projection
+while they remain in the repository (per the DOC-012 retention tiers, with
+GitHub tree/raw fallbacks) — is flagged for the principal in TODO.md; without
+it, the next intake's ~20 MiB of paper PDFs reaches the hard ceiling.

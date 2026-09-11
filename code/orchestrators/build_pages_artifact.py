@@ -592,7 +592,7 @@ def main() -> None:
         if size > WARNING_ARTIFACT_BYTES:
             print(
                 "warning: Pages artifact is "
-                f"{size / 1024 / 1024:.1f} MiB; it exceeds the 850 MiB review threshold "
+                f"{size / 1024 / 1024:.1f} MiB; it exceeds the {WARNING_ARTIFACT_BYTES / 1024 / 1024:.0f} MiB review threshold "
                 f"and remains below the {MAX_ARTIFACT_BYTES / 1024 / 1024:.1f} MiB release hard ceiling. "
                 "Review growth and report retention before deployment."
             )
