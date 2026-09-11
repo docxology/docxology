@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T01:16:40Z",
+  "generated_at": "2026-09-11T01:46:35Z",
   "source_commit_at_generation": "54de18164d4f285291b88bd1dab98b3f05b6c397",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
@@ -13,18 +13,18 @@
     "omitted_assets": "duplicated extracted paper-image binaries and dated visual-QA screenshot binaries",
     "omitted_assets_fallback": "Use the GitHub tree/raw templates with the source commit and repository-relative path.",
     "visual_qa_screenshot_policy": "Visual-QA manifests remain in Pages with repository-relative paths and SHA-256 digests; screenshot binaries remain in the committed repository rather than the deploy artifact.",
-    "warning_policy": "At 850 MiB, review growth and report retention before deployment; 900 MiB is a release hard ceiling below the GitHub Pages 1 GiB platform limit."
+    "warning_policy": "At 880 MiB, review growth and report retention before deployment; 900 MiB is a release hard ceiling below the GitHub Pages 1 GiB platform limit."
   },
   "budget": {
     "hard_limit_bytes": 1073741824,
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
-    "warning_bytes": 891289600,
-    "source_bytes": 903264956,
+    "warning_bytes": 922746880,
+    "source_bytes": 903266815,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 5164,
-    "artifact_bytes": 904167784
+    "artifact_bytes": 904169643
   },
   "included_files": [
     {
@@ -74,8 +74,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 80345,
-      "sha256": "e9220b73bf50447a28c88636dccdc380b12cd9361ec21e33b6a5d21d2721acfd"
+      "bytes": 81382,
+      "sha256": "242dda6ce448cd7b2d912888f43c8af8d1904a73d9bb2c48562160b1f6e063e0"
     },
     {
       "path": "CITATION.cff",
@@ -104,8 +104,8 @@
     },
     {
       "path": "TODO.md",
-      "bytes": 26182,
-      "sha256": "f3711447ccf96454eb765de4bd8ed797a59ea501d16cb9760261a519f29c0009"
+      "bytes": 27004,
+      "sha256": "5a355ed05db6f5ed1cde3a87b652c1df21880aab024b9127fdec727b216c68e5"
     },
     {
       "path": "a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt",
@@ -5520,7 +5520,7 @@
     {
       "path": "code/orchestrators/build_pages_artifact.py",
       "bytes": 27565,
-      "sha256": "dd2364cb838dc79d62c2008b8f10ea1674eab4aefb1f224b8841337dacd12e79"
+      "sha256": "053c30e9c9b42fb80c6f862b508410c03e769531358eb1847c1b9290e8f9e8b8"
     },
     {
       "path": "code/orchestrators/build_paper_pages.py",
@@ -5785,7 +5785,7 @@
     {
       "path": "code/src/artifact_budget.py",
       "bytes": 1997,
-      "sha256": "79431819b930880c9f1dcdabc16dd1e9673f97d027b8de779a8a399a36bcd2b3"
+      "sha256": "fd617d17126b9c061d3a3f00e6d5f7693f8c7f02aedcc6d29ca4d626836bd045"
     },
     {
       "path": "code/src/biblio_table.py",
@@ -6865,7 +6865,7 @@
     {
       "path": "docs/operations/github-pages-artifact.md",
       "bytes": 3127,
-      "sha256": "cb568f5db93d2a4a13bbf995428394990591717ddbc0ea85d5d39ab1fd876a85"
+      "sha256": "169b6a72039f761efccc60cf0841b3e829969dee93a77668fa10f04e942c633d"
     },
     {
       "path": "docs/operations/live-verification.md",
