@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T21:41:29Z",
+  "generated_at": "2026-09-11T03:04:41Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -47,13 +47,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 213 public repositories.",
+      "claim": "The docxology GitHub profile has 214 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-09-10.json"
+        "reports/public_source_snapshot_2026-09-11.json"
       ],
-      "checked_at": "2026-09-10T17:17:25.739948+00:00",
+      "checked_at": "2026-09-11T02:25:43.218472+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -65,9 +65,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-09-10.json"
+        "reports/public_source_snapshot_2026-09-11.json"
       ],
-      "checked_at": "2026-09-10T17:17:25.739948+00:00",
+      "checked_at": "2026-09-11T02:25:43.218472+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "0dc3e45725c92daf74a33495b7ef92e7556bae4119bf692e7113a3db47f5327d",
+      "sha256": "ea29fbd13826131e50199d09cf6d76152d9ffea6693ff6ed8809a1d8056ab23c",
       "files": [
         {
           "path": "resume/source.json",
@@ -103,7 +103,7 @@
         {
           "path": "data/software.json",
           "bytes": 73838,
-          "sha256": "cf3d2dab6f3bd12b8fa50e70e96bc05344325f8ef77c84f9adad84123ca3b2fb"
+          "sha256": "cb3ca1a378d0c797e1f6d432b511415d53dc48b831fba0f0466b345230da2769"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "799886c8b238185255ccfd2ff5d40523f775ef9309f2c2d7269a905aee2fbc37"
+          "sha256": "f13ad85f622e35bd7989af261513d68d5da9da860a7af3757862df233af582d5"
         },
         {
           "path": "data/github-repositories.json",
@@ -9419,7 +9419,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-09-10T21:41:25+00:00",
+      "checked_at": "2026-09-11T02:55:51+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9434,7 +9434,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-09-10T21:41:25+00:00",
+      "checked_at": "2026-09-11T02:55:51+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9442,13 +9442,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 213 public repositories.",
+      "claim": "The docxology GitHub profile has 214 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-09-10.json"
+        "reports/public_source_snapshot_2026-09-11.json"
       ],
-      "checked_at": "2026-09-10T17:17:25.739948+00:00",
+      "checked_at": "2026-09-11T02:25:43.218472+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -9460,9 +9460,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-09-10.json"
+        "reports/public_source_snapshot_2026-09-11.json"
       ],
-      "checked_at": "2026-09-10T17:17:25.739948+00:00",
+      "checked_at": "2026-09-11T02:25:43.218472+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
