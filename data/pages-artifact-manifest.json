@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T20:19:01Z",
-  "source_commit_at_generation": "bbe3baeee9a3c325a90b1db5fa206330422183bf",
+  "generated_at": "2026-09-11T20:24:01Z",
+  "source_commit_at_generation": "b15ee38f18137aedbcea111556c6eb18471a11e2",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -121,7 +121,7 @@
     {
       "path": "active-inference.html",
       "bytes": 25222,
-      "sha256": "d450d37fde5eb4c1b4138f08ee646ebd508ea71617d6b101c8060f84c388ee89"
+      "sha256": "fbb70f9fd8585a842fe3df2d2fecb962cd8d0a62513758f9220fadf8c0f7fc68"
     },
     {
       "path": "agent-verify.html",
@@ -5661,7 +5661,7 @@
     {
       "path": "code/orchestrators/generate_pillar_pages.py",
       "bytes": 62047,
-      "sha256": "a897e9f779154ad469cc382ccf88ed495b2f06c57cd4a89c1fab4ec80824f156"
+      "sha256": "f17d8eac4f251d8eb4a2db2d19ae80c7468e37b5e8e43e7fc6e76c6b561c6529"
     },
     {
       "path": "code/orchestrators/generate_redirect_stubs.py",
@@ -6441,7 +6441,7 @@
     {
       "path": "cognitive-security.html",
       "bytes": 27609,
-      "sha256": "d3df960674e7723243d1612a12d1f89aefcea7bfaee5813a1b8f81d8832838d0"
+      "sha256": "11fe916047918b837d2f8da0a5627312eb9242f619f0390202d94ac923c31319"
     },
     {
       "path": "collaborators.html",
@@ -6451,7 +6451,7 @@
     {
       "path": "computational-entomology.html",
       "bytes": 23654,
-      "sha256": "74c9a95c6981b6dea2baec20e3a05d2b8271e89b02ca2c4666f0ac47d2cd72a2"
+      "sha256": "a9ab77fc409ce9a64a78a2ff93ed701ba33b56af8eb61578317d0105842039b1"
     },
     {
       "path": "data/AGENTS.md",
@@ -7096,7 +7096,7 @@
     {
       "path": "insect-cognition.html",
       "bytes": 23515,
-      "sha256": "63038f1a0e522145efcb34ba27be2d8d1abaf474ebbc62718f78e15582fdff7b"
+      "sha256": "55318ed8dba1821673001ea0aaa7fbc3ca61b4931162dbfe65b215e18d7ed88a"
     },
     {
       "path": "js/AGENTS.md",
@@ -7196,7 +7196,7 @@
     {
       "path": "neurosymbolic-ai.html",
       "bytes": 23388,
-      "sha256": "eecc19878e2eea2191dfd95d8ef415e9a295e4102fe2485e161eb90824721d09"
+      "sha256": "2403ff6ec36b29250aac1be4ef2196d1376c5ad34700fd5ff0c2e1ca2b17e482"
     },
     {
       "path": "nft.html",
