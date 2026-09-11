@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T03:04:41Z",
+  "generated_at": "2026-09-11T17:50:59Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 213,
+    "works": 214,
     "software_catalogued": 149,
     "owned_software_catalogued": 110,
     "aii_software_catalogued": 39,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "ea29fbd13826131e50199d09cf6d76152d9ffea6693ff6ed8809a1d8056ab23c",
+      "sha256": "d67959842391d8d5ae73cdc9aa5b8dbc198318e8b1dd3a573b06b833e6d0e1df",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 172628,
-          "sha256": "d973aa8784475c5077adaa0498a03bbff6e1e80ff9e70442e04a1aa59c08f4bc"
+          "bytes": 173290,
+          "sha256": "3bfb854f610e650b92c57f7bccaad42967f4a7864173ff1a047b4379db355fd9"
         },
         {
           "path": "data/software.json",
           "bytes": 73838,
-          "sha256": "cb3ca1a378d0c797e1f6d432b511415d53dc48b831fba0f0466b345230da2769"
+          "sha256": "0094ec3c0c08cec1233e2f7a26a749525abaa8601523a31ada74731f1e99379d"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "f13ad85f622e35bd7989af261513d68d5da9da860a7af3757862df233af582d5"
+          "sha256": "e839f76bd31644cba96cf5b9633955f3de666b6d06fc7fc6a8457ba224dba8bd"
         },
         {
           "path": "data/github-repositories.json",
@@ -5152,12 +5152,12 @@
     },
     {
       "num": 112,
-      "citation_key": "Friedman2026CompositionalApproachesLinguisticCase112",
+      "citation_key": "Friedman2026CognitiveDiagramsReviewingCategorical112",
       "year": 2026,
       "domain": "🧠",
       "domain_name": "Active Inference",
       "type": "Paper",
-      "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+      "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
       "venue": "Active Inference Journal",
       "url": "https://doi.org/10.5281/zenodo.19695259",
       "doi": "10.5281/zenodo.19695259",
@@ -7617,6 +7617,27 @@
       "authors": [
         "Friedman, Daniel Ari"
       ]
+    },
+    {
+      "num": 217,
+      "citation_key": "Friedman2026FractiSkillsOnePortableAgent217",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "FractiSkills: One Portable Agent Skill per Page",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.22712650",
+      "doi": "10.5281/zenodo.22712650",
+      "docs_path": "papers/2026_FractiSkills/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": []
     }
   ],
   "software": [
@@ -9412,14 +9433,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 213 works.",
+      "claim": "The curated bibliography contains 214 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-09-11T02:55:51+00:00",
+      "checked_at": "2026-09-11T17:50:54+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9427,14 +9448,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 196 per-paper documentation folders.",
+      "claim": "The repository contains 197 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-09-11T02:55:51+00:00",
+      "checked_at": "2026-09-11T17:50:54+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
