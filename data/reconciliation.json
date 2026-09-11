@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T02:25:43.218472+00:00",
+  "generated_at": "2026-09-11T19:09:24.951632+00:00",
   "snapshot": "reports/public_source_snapshot_2026-09-11.json",
   "claims_count": 15,
   "comparisons": [
@@ -27,7 +27,7 @@
     {
       "name": "Curated bibliography vs Zenodo ORCID-linked records",
       "local_value": 214,
-      "public_value": 152,
+      "public_value": 153,
       "relationship": "overlapping sets",
       "interpretation": "Zenodo includes versioned records and software archives; the local bibliography normalizes selected works into one curated table."
     },

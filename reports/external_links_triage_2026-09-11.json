@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-11T02:35:03Z",
+  "generated_at": "2026-09-11T19:09:13Z",
   "source": "reports/external_links_2026-09-11.json",
-  "checked_urls": 818,
-  "ok": 677,
+  "checked_urls": 819,
+  "ok": 678,
   "warnings": 141,
   "categories": {
-    "bot-protected-or-rate-limited": 135,
+    "bot-protected-or-rate-limited": 136,
     "connection-failure": 1,
-    "ok": 677,
-    "timeout": 4,
+    "ok": 678,
+    "timeout": 3,
     "upstream-transient": 1
   },
   "note": "Warnings classify observed network behavior; bot-protected and rate-limited sources are not automatically stale.",
@@ -245,7 +245,7 @@
         "error": ""
       },
       {
-        "url": "https://doi.org/10.5281/zenodo.20418904",
+        "url": "https://doi.org/10.5281/zenodo.20419007",
         "status": 429,
         "ok": false,
         "category": "bot-protected-or-rate-limited",
@@ -253,7 +253,6 @@
           "domain-computational.html",
           "domain-computational.html",
           "pages/BIBLIOGRAPHY.md",
-          "pages/DOMAINS.md",
           "pages/SOFTWARE.md",
           "publications.html",
           "publications.html",
@@ -1301,6 +1300,19 @@
         "error": ""
       },
       {
+        "url": "https://doi.org/10.5281/zenodo.22712650",
+        "status": 429,
+        "ok": false,
+        "category": "bot-protected-or-rate-limited",
+        "sources": [
+          "pages/BIBLIOGRAPHY.md",
+          "publications.html",
+          "publications.html",
+          "publications.html"
+        ],
+        "error": ""
+      },
+      {
         "url": "https://doi.org/10.5281/zenodo.3986084",
         "status": 429,
         "ok": false,
@@ -1999,20 +2011,10 @@
         "sources": [
           "pages/LINKS.md"
         ],
-        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 74 ms: Couldn't connect to server"
+        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 78 ms: Couldn't connect to server"
       }
     ],
     "timeout": [
-      {
-        "url": "https://arxiv.org/search/?query=daniel+ari+friedman&searchtype=author",
-        "status": 0,
-        "ok": false,
-        "category": "timeout",
-        "sources": [
-          "pages/LINKS.md"
-        ],
-        "error": "curl: (28) Operation timed out after 10010 milliseconds with 0 bytes received"
-      },
       {
         "url": "https://grantome.com/grant/NSF/DBI-2010290",
         "status": 0,
@@ -2022,7 +2024,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Connection timed out after 10003 milliseconds"
+        "error": "curl: (28) Connection timed out after 10004 milliseconds"
       },
       {
         "url": "https://www.christies.com/en/lot/lot-6337619",
@@ -2037,7 +2039,7 @@
           "pages/EVIDENCE.md",
           "pages/LINKS.md"
         ],
-        "error": "curl: (28) Operation timed out after 10005 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10008 milliseconds with 0 bytes received"
       },
       {
         "url": "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
@@ -2048,7 +2050,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Operation timed out after 10010 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10001 milliseconds with 0 bytes received"
       }
     ],
     "upstream-transient": [

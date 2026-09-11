@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-09-11T17:50:54+00:00`
+Generated: `2026-09-11T19:11:19+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -98,7 +98,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - Europe PMC exact author records: `10`
 - Crossref ORCID DOI records: `15`
 - Zenodo exact-name creator records: `65`
-- Zenodo ORCID-linked records: `152`
+- Zenodo ORCID-linked records: `153`
 
 ### Paired Publications
 

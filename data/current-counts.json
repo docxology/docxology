@@ -64,7 +64,7 @@
       "GitHub user docxology": 214,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
-      "Zenodo ORCID-linked records": 152,
+      "Zenodo ORCID-linked records": 153,
       "Zenodo exact-name creator records": 65
     },
     "software": {
@@ -82,7 +82,7 @@
       "Series": 2
     }
   },
-  "generated_at": "2026-09-11T17:50:54+00:00",
+  "generated_at": "2026-09-11T19:11:19+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",
