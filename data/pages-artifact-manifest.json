@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T20:17:40Z",
-  "source_commit_at_generation": "1e6f692a60e99c11e45417be51926bd3ba8d7118",
+  "generated_at": "2026-09-11T20:19:01Z",
+  "source_commit_at_generation": "bbe3baeee9a3c325a90b1db5fa206330422183bf",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -121,7 +121,7 @@
     {
       "path": "active-inference.html",
       "bytes": 25222,
-      "sha256": "b5269d2d49d1a3d19bc8294874cef284ed78c17271c2849fa143bc07c89b1016"
+      "sha256": "d450d37fde5eb4c1b4138f08ee646ebd508ea71617d6b101c8060f84c388ee89"
     },
     {
       "path": "agent-verify.html",
@@ -6441,7 +6441,7 @@
     {
       "path": "cognitive-security.html",
       "bytes": 27609,
-      "sha256": "14c4cbd2c5576324f5cc30ad8a4134d19a7522e7a63e54b030045183edef088e"
+      "sha256": "d3df960674e7723243d1612a12d1f89aefcea7bfaee5813a1b8f81d8832838d0"
     },
     {
       "path": "collaborators.html",
@@ -6451,7 +6451,7 @@
     {
       "path": "computational-entomology.html",
       "bytes": 23654,
-      "sha256": "7137e18bb077aac7c57f71b3af33c7070858949e6eaf688d50579d34abaa599f"
+      "sha256": "74c9a95c6981b6dea2baec20e3a05d2b8271e89b02ca2c4666f0ac47d2cd72a2"
     },
     {
       "path": "data/AGENTS.md",
@@ -7096,7 +7096,7 @@
     {
       "path": "insect-cognition.html",
       "bytes": 23515,
-      "sha256": "7e890a5dbe3fc26d0d5dd973696c05e9946390d017d33b6f4fe2d6749f495449"
+      "sha256": "63038f1a0e522145efcb34ba27be2d8d1abaf474ebbc62718f78e15582fdff7b"
     },
     {
       "path": "js/AGENTS.md",
@@ -7196,7 +7196,7 @@
     {
       "path": "neurosymbolic-ai.html",
       "bytes": 23388,
-      "sha256": "d639eed48a56bfe202c88cd74dc6d04c5c9372091e3fdb8edb310b8579a16c46"
+      "sha256": "eecc19878e2eea2191dfd95d8ef415e9a295e4102fe2485e161eb90824721d09"
     },
     {
       "path": "nft.html",
