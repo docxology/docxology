@@ -44,22 +44,22 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Data catalog | `catalog.html`<br>`data/catalog.json` | `code/orchestrators/build_catalog.py`<br>`data/*.json` | `python3 code/orchestrators/build_catalog.py` |
 | Exports hub | `exports.html` | `code/orchestrators/build_exports_page.py`<br>`data/catalog.json` | `python3 code/orchestrators/build_exports_page.py` |
 | Updates page | `updates.html` | `CHANGELOG.md`<br>`code/orchestrators/build_updates_page.py` | `python3 code/orchestrators/build_updates_page.py` |
-| External link report | `reports/external_links_2026-09-10.json` | `all root-level public HTML plus site-critical Markdown and JSON-LD surfaces` | `python3 code/orchestrators/check_external_links.py` |
-| Public source snapshot | `reports/public_source_snapshot_2026-09-10.json` | `GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs` | `python3 code/orchestrators/refresh_public_sources.py` |
+| External link report | `reports/external_links_2026-09-11.json` | `all root-level public HTML plus site-critical Markdown and JSON-LD surfaces` | `python3 code/orchestrators/check_external_links.py` |
+| Public source snapshot | `reports/public_source_snapshot_2026-09-11.json` | `GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs` | `python3 code/orchestrators/refresh_public_sources.py` |
 | Public source inventory | `reports/public_source_inventory_2026-09-10.json` | `ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, AII pages` | `python3 code/orchestrators/refresh_public_source_inventory.py` |
 | Public-source review record | `reports/public_source_review_2026-09-11.json`<br>`reports/public_source_review_2026-09-11.md` | `reports/public_source_snapshot_*.json`<br>`reports/public_source_inventory_*.json`<br>`reports/paired_publications_*.json`<br>`data/paired-publication-decisions.json`<br>`data/public-source-observation-decisions.json`<br>`data/biographical-claim-decisions.json`<br>`data/claims.json`<br>`data/scholar-snapshot.json`<br>`data/scholar-verification-receipt.json`<br>`code/orchestrators/build_public_source_review.py` | `python3 code/orchestrators/build_public_source_review.py` |
-| External link triage | `reports/external_links_triage_2026-09-10.json`<br>`reports/external_links_triage_2026-09-10.md` | `reports/external_links_2026-09-10.json` | `python3 code/orchestrators/build_external_link_triage.py` |
+| External link triage | `reports/external_links_triage_2026-09-11.json`<br>`reports/external_links_triage_2026-09-11.md` | `reports/external_links_2026-09-11.json` | `python3 code/orchestrators/build_external_link_triage.py` |
 | Asset size audit | `reports/asset_size_2026-09-11.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |
 | Static accessibility report | `reports/accessibility_static_2026-09-11.json` | `root HTML pages`<br>`style.css`<br>`code/orchestrators/accessibility_audit.py` | `python3 code/orchestrators/accessibility_audit.py` |
-| Browser smoke checks | `reports/browser-smoke/2026-08-26/*.png`<br>`reports/browser-smoke/2026-08-26/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
-| Progressive browser QA | `reports/browser-qa/2026-09-07/manifest.json` | `root HTML pages`<br>`js/*.js`<br>`style.css`<br>`code/orchestrators/browser_qa.py` | `uv run --extra browser-qa python3 code/orchestrators/browser_qa.py` |
-| Live site verification | `reports/live_site_verification_2026-09-10.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
+| Browser smoke checks | `reports/browser-smoke/2026-09-11/*.png`<br>`reports/browser-smoke/2026-09-11/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
+| Progressive browser QA | `reports/browser-qa/2026-09-11/manifest.json` | `root HTML pages`<br>`js/*.js`<br>`style.css`<br>`code/orchestrators/browser_qa.py` | `uv run --extra browser-qa python3 code/orchestrators/browser_qa.py` |
+| Live site verification | `reports/live_site_verification_2026-09-11.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
 | Feed | `feed.xml` | `data/works.json`<br>`code/orchestrators/generate_feed.py` | `python3 code/orchestrators/generate_feed.py` |
 | Sitemap | `sitemap.xml` | `works/*.html`<br>`code/src/sitemap_policy.py`<br>`code/orchestrators/build_sitemap.py` | `python3 code/orchestrators/build_sitemap.py` |
 | 404 page | `404.html` | `code/src/site_nav.py`<br>`code/orchestrators/build_404_page.py` | `python3 code/orchestrators/build_404_page.py` |
 | Compact artwork gallery index | `data/artworks-index.json` | `data/artworks.json`<br>`code/orchestrators/build_artwork_index.py` | `python3 code/orchestrators/build_artwork_index.py` |
 | GitHub-rendered README mirror | `.github/README.md` | `README.md`<br>`code/orchestrators/build_github_readme.py` | `python3 code/orchestrators/build_github_readme.py` |
-| Visual QA | `reports/visual-qa/2026-08-26/*.png`<br>`reports/visual-qa/2026-08-26/manifest.json` | `root HTML pages`<br>`style.css` | `python3 code/orchestrators/visual_qa.py` |
+| Visual QA | `reports/visual-qa/2026-09-11/*.png`<br>`reports/visual-qa/2026-09-11/manifest.json` | `root HTML pages`<br>`style.css` | `python3 code/orchestrators/visual_qa.py` |
 
 ## Maintenance & Utility Orchestrators
 

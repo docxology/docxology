@@ -231,7 +231,7 @@
     },
     {
       "id": "public-source-snapshot",
-      "path": "/reports/public_source_snapshot_2026-09-10.json",
+      "path": "/reports/public_source_snapshot_2026-09-11.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -266,7 +266,7 @@
     },
     {
       "id": "live-site",
-      "path": "/reports/live_site_verification_2026-09-10.json",
+      "path": "/reports/live_site_verification_2026-09-11.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1144,11 +1144,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 922746880,
-        "source_bytes": 903266975,
+        "source_bytes": 905239177,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5164,
-        "artifact_bytes": 904169803
+        "artifact_file_count": 5183,
+        "artifact_bytes": 906145470
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1179,7 +1179,7 @@
     "work_enrichment": "0356fc382da87392f3f0c9e9d9e3fcd7461ac92fdf3ff878f5b13be67bca6ff7",
     "catalog": "53b289f01f8b9643bf2e271d8a56fcdb07529d7516546e6e3e0ed8f4ae8aad24",
     "reconciliation": "aa89caae37eab91725296591dfa7627b044306a59824be4a97383c156e79a9e8",
-    "generated_manifest": "9b516c31f428cbdb684fa38dbddd2915a6b0995c0fb74ffdef63272bee82e4e4",
+    "generated_manifest": "a3db3900b3d3fb12fbf7017f0c5d9346d05766f48a84e95c1b0f023abc413ea8",
     "current_counts": "0eedbd8c359d4ffa75e701b82928a48681fa81cd59115f7c662418ec0e72c79a"
   },
   "source_provenance": {
@@ -1200,10 +1200,10 @@
     "paper_image_fallback": "Use the Pages artifact manifest GitHub tree/raw templates for omitted extracted paper images."
   },
   "verification_status": {
-    "live_report": "/reports/live_site_verification_2026-09-10.json",
-    "generated_at": "2026-09-10T18:48:48Z",
-    "overall_ok": false,
-    "passing": 13,
+    "live_report": "/reports/live_site_verification_2026-09-11.json",
+    "generated_at": "2026-09-11T02:19:21Z",
+    "overall_ok": true,
+    "passing": 17,
     "checked_urls": 17,
     "pages_status": "built"
   },

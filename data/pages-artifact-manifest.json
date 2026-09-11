@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T01:57:00Z",
-  "source_commit_at_generation": "c1331c3ffbde5aadf35cf48ea35c4e26c026aade",
+  "generated_at": "2026-09-11T02:49:26Z",
+  "source_commit_at_generation": "26e049883d3313ba619d0acef6170133a498400e",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 903266975,
+    "source_bytes": 905239177,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5164,
-    "artifact_bytes": 904169803
+    "artifact_file_count": 5183,
+    "artifact_bytes": 906145470
   },
   "included_files": [
     {
@@ -5519,8 +5519,8 @@
     },
     {
       "path": "code/orchestrators/build_pages_artifact.py",
-      "bytes": 27565,
-      "sha256": "053c30e9c9b42fb80c6f862b508410c03e769531358eb1847c1b9290e8f9e8b8"
+      "bytes": 27604,
+      "sha256": "0ff9bf156ac2c034a53c6c51c5a7d91378a543d56dcdf4520c63ddeee03c2767"
     },
     {
       "path": "code/orchestrators/build_paper_pages.py",
@@ -5785,7 +5785,7 @@
     {
       "path": "code/src/artifact_budget.py",
       "bytes": 1997,
-      "sha256": "fd617d17126b9c061d3a3f00e6d5f7693f8c7f02aedcc6d29ca4d626836bd045"
+      "sha256": "8d71998b56d3a04bd58607c7755789294d736869154c7fc7561c43d4f7a66a2c"
     },
     {
       "path": "code/src/biblio_table.py",
@@ -6849,8 +6849,8 @@
     },
     {
       "path": "docs/operations/asset-strategy-adr.md",
-      "bytes": 6809,
-      "sha256": "5443964767b572cf8abb2ddd1c02bfeb067f1581cbfc898a051261fe3a46e727"
+      "bytes": 8158,
+      "sha256": "175fc7866d425d4fc4096a40fdcc5a408012b1b3ed1452b1f63313c51f8a9846"
     },
     {
       "path": "docs/operations/cv-release.md",
@@ -17103,6 +17103,11 @@
       "sha256": "46650370b71e146d2897bfae23153833f78d15c3b320a24ee8128eaab16ac230"
     },
     {
+      "path": "reports/browser-qa/2026-09-11/manifest.json",
+      "bytes": 2210,
+      "sha256": "72a0c5b3528a1217f65f7313a4ea4f610d18feef9a780e731f7af57a431d7246"
+    },
+    {
       "path": "reports/browser-qa/AGENTS.md",
       "bytes": 349,
       "sha256": "823d931993f056ae1cd31f36fea1237e94cb07942224b57cdee6abf2441512f9"
@@ -17178,6 +17183,61 @@
       "sha256": "10b42163a2e195c384778c5042c54b0851abfadc9098deb35cdf7e8582eabf72"
     },
     {
+      "path": "reports/browser-smoke/2026-09-11/art.png",
+      "bytes": 342636,
+      "sha256": "0a00aa0c7343af9a1a8685eafdb015d29bb8e333c4ead7c765936fd51f77170c"
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-11/catalog.png",
+      "bytes": 143929,
+      "sha256": "94d739d1170d6ab4e41d93ae4d70cddd9a356238fd6e4700f3f77f93105c3576"
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-11/home.png",
+      "bytes": 93223,
+      "sha256": "d3b81025815e306bd068946ee1708816f2087933a74ce628bae15701853792d2"
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-11/manifest.json",
+      "bytes": 6463,
+      "sha256": "fb03621df215d257f487c1a6cadf65044f4046a79db85cd0d472bd768d1bb9fe"
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-11/publications.png",
+      "bytes": 124663,
+      "sha256": "d50e6e1ed4359a030fcb0c6f3e5011b2ad673024088623f13b076169c9527b6f"
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-11/repositories.png",
+      "bytes": 142281,
+      "sha256": "17bfb256310c8a81fdef7ff11b8777a78e0eb98142e023fa793ef196f01f67ae"
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-11/repository-forks.png",
+      "bytes": 134335,
+      "sha256": "5119807b11895d53d561080493bc843664f138fc5206f66a97cf308c5c63a265"
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-11/search.png",
+      "bytes": 106586,
+      "sha256": "a1389c48e0a1c7014e2ad363693a24d810f73b4307593669717223ea7405e137"
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-11/updates.png",
+      "bytes": 113771,
+      "sha256": "9e8a81e792c7120613381b5c58fea8c80e1cf9ff29cf0995335551b9dd881ae7"
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-11/videos.png",
+      "bytes": 167480,
+      "sha256": "531dcc9151b78896db0443f5c5b6bd935f9733b78508be6910d68021434761a4"
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-11/works.png",
+      "bytes": 116054,
+      "sha256": "f713947d35f4daf6ad2bf9930346b3eba053f94956d26dae18d004f3c9f71633"
+    },
+    {
       "path": "reports/browser-smoke/AGENTS.md",
       "bytes": 329,
       "sha256": "3595e02c185382efc79398e5530c00f730323ab793b1c0b6e28c5fd260445369"
@@ -17196,6 +17256,11 @@
       "path": "reports/deployment-attestations/5c25de204170cdf03c2f341f0fdc10f399aebaa4.json",
       "bytes": 2467,
       "sha256": "032a69b5f9ec086ae0d3f9a32dbcbe38377960a71dccb8cd3df7a6177cb6929e"
+    },
+    {
+      "path": "reports/deployment-attestations/8d84781a15120ee6bc805cefc4d0beb8e03c5f71.json",
+      "bytes": 2467,
+      "sha256": "6b3167262724c71445729a6974caa743d1961c5fcaa0baed2300d495ac188e9a"
     },
     {
       "path": "reports/deployment-attestations/AGENTS.md",
@@ -17266,6 +17331,11 @@
       "path": "reports/external_links_2026-09-10.json",
       "bytes": 387625,
       "sha256": "e24217411823a06117fc0ee59f6f830f5ef60a070263abfb9cef462565e1090d"
+    },
+    {
+      "path": "reports/external_links_2026-09-11.json",
+      "bytes": 366682,
+      "sha256": "afcfe8ce061507069f05dacddeb0ee868fdbf293842384cf674500c855ffde1e"
     },
     {
       "path": "reports/external_links_triage_2026-05-13.json",
@@ -17356,6 +17426,16 @@
       "path": "reports/external_links_triage_2026-09-10.md",
       "bytes": 10733,
       "sha256": "c7050214874670c585d95625da458bf9374f3550e67683b706cb25d894812ea6"
+    },
+    {
+      "path": "reports/external_links_triage_2026-09-11.json",
+      "bytes": 57217,
+      "sha256": "2438c4dc411453262509aa0aa406d042a7ab75799d6d2a525d664f60106e21ee"
+    },
+    {
+      "path": "reports/external_links_triage_2026-09-11.md",
+      "bytes": 10840,
+      "sha256": "af746616d5f935d049044a591fcf25fad033f0bb893c7d4cb8171735854b2c39"
     },
     {
       "path": "reports/gsc_preflight_2026-05-29.json",
@@ -17536,6 +17616,11 @@
       "path": "reports/live_site_verification_2026-09-10.json",
       "bytes": 35018,
       "sha256": "97b7647e52667a042b03b4566b1b98794ff288557d83560a3a36ebe0fc358475"
+    },
+    {
+      "path": "reports/live_site_verification_2026-09-11.json",
+      "bytes": 14965,
+      "sha256": "d91c776ddc049df21163bcc0b4825c71df6097fc06f04fda44473af19199f1ba"
     },
     {
       "path": "reports/paired_publications_2026-05-27.json",
@@ -17901,6 +17986,11 @@
       "path": "reports/public_source_snapshot_2026-09-10.json",
       "bytes": 17885,
       "sha256": "2c31ccb79953eb0b2c0ec7cfb7b7cb7001560db341dc806cb436f40b41deda5e"
+    },
+    {
+      "path": "reports/public_source_snapshot_2026-09-11.json",
+      "bytes": 17889,
+      "sha256": "3e9d7217e6e3a6de84ee30578ca35b07f15653f5bdaae444759a8d4007334c4d"
     },
     {
       "path": "reports/publishing_status_megaindex.md",
@@ -18281,6 +18371,11 @@
       "path": "reports/visual-qa/2026-08-26/manifest.json",
       "bytes": 7050,
       "sha256": "307a410af0bd4e7f4035e5d5ea79ad3b179260bcaa0855adc79acacbf4cecdce"
+    },
+    {
+      "path": "reports/visual-qa/2026-09-11/manifest.json",
+      "bytes": 7123,
+      "sha256": "b03881a1a4c822248e49e1bf541ed11a115f3fc05bdaddbc2e62788b4d1631aa"
     },
     {
       "path": "reports/visual-qa/AGENTS.md",
@@ -25751,8 +25846,8 @@
     ]
   },
   "omitted_visual_qa_screenshots": {
-    "count": 26,
-    "bytes": 61425799,
+    "count": 52,
+    "bytes": 116355997,
     "examples": [
       "reports/visual-qa/2026-08-26/art-desktop.png",
       "reports/visual-qa/2026-08-26/art-mobile.png",
