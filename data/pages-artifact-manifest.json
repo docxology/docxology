@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T00:17:43Z",
-  "source_commit_at_generation": "f3fe3c432b1d340c14f894c95a79bff776af1b1b",
+  "generated_at": "2026-09-11T00:43:19Z",
+  "source_commit_at_generation": "6cd078e7aabc11adc7b906572f0285fd0e6db1ec",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -20,11 +20,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 891289600,
-    "source_bytes": 902183451,
+    "source_bytes": 903264956,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5158,
-    "artifact_bytes": 903085417
+    "artifact_file_count": 5164,
+    "artifact_bytes": 904167784
   },
   "included_files": [
     {
@@ -120,7 +120,7 @@
     {
       "path": "active-inference.html",
       "bytes": 25222,
-      "sha256": "55d893e0efa2f9eb17207e2d7fb5e035e263ca40f2754c285ec7d6a050e7f77f"
+      "sha256": "5987554adf8d7db7097bbfd3611c2e1f63d228ca3fda253237d051e8f405a6e4"
     },
     {
       "path": "agent-verify.html",
@@ -5325,7 +5325,7 @@
     {
       "path": "catalog.html",
       "bytes": 50171,
-      "sha256": "ac8c1e85e2590922c3840924dfbc5fe1281d5199ba9c517c2875ab357be09b7c"
+      "sha256": "64a7fc557810e9aeb3a7b5b326368d2c660e5d78d7c946c67beb25272faf39c7"
     },
     {
       "path": "cite-verify.html",
@@ -6435,7 +6435,7 @@
     {
       "path": "cognitive-security.html",
       "bytes": 27609,
-      "sha256": "4ddfc21c9e815e4cc1e965c4009fbc05a06261b282afc4fda5f3f1fbaaf46d82"
+      "sha256": "b6f8a4955f77fec7dbf022172ba9809fe779b778f837f11345c4ebbf48d29087"
     },
     {
       "path": "collaborators.html",
@@ -6445,7 +6445,7 @@
     {
       "path": "computational-entomology.html",
       "bytes": 23654,
-      "sha256": "b75dd4545c84900defcf8e347f8293eceee2c3b833f2c81bfd06bea149f16333"
+      "sha256": "fcab2b012431a965148dff3bad265d5832e5565f1dfa5af187ec0f1efaba055d"
     },
     {
       "path": "data/AGENTS.md",
@@ -6475,7 +6475,7 @@
     {
       "path": "data/catalog.json",
       "bytes": 31608,
-      "sha256": "9d2e8bd0adb7b986bd7a2320ea90464556194bef74c68d8ee11a4fb04eef8abb"
+      "sha256": "253b3f8aa18f08cbbf2e2c2feefe4171b93e2a58906aa4b5115911f142cae429"
     },
     {
       "path": "data/claims.json",
@@ -6950,57 +6950,57 @@
     {
       "path": "domain-active-inference.html",
       "bytes": 37974,
-      "sha256": "e36b238289fb679fe14b17a65f3233af542f8ab8096d888b58a2a11d7941ee06"
+      "sha256": "2dfae1aac6fae9df0f9b51c4678da444ae8f94650a33ae781227363e7026445a"
     },
     {
       "path": "domain-aii-ecosystem.html",
       "bytes": 25940,
-      "sha256": "16e1b3db1b9bfe2d33b4832ce41d30e599b9f8150006d4513e125a2aa20ce91c"
+      "sha256": "038f7aeb452e0f3488f6ffaa81c6c18c5c5418665f3227f86089b4f5c9c795a0"
     },
     {
       "path": "domain-art-synergetics.html",
       "bytes": 33538,
-      "sha256": "3097701db8fef97d2e51dc0ca1aa80d679ce12763a27af1e71498318ba325b71"
+      "sha256": "62baa95de291a36cc92245845ba618a2fd037e15ec4c9002edaf36cced26c752"
     },
     {
       "path": "domain-biomedicine.html",
       "bytes": 32224,
-      "sha256": "0e4d9b2b478066501760b6a5abb3c78b03e697e03030023eb66b7a1522afc70d"
+      "sha256": "96d747064ca3ee6e1a4cf3441b1ba739c26330a632b2ffa93cb67a442b9f9d04"
     },
     {
       "path": "domain-cognitive-security.html",
       "bytes": 33103,
-      "sha256": "935bcadb9fbea36aaa8325c266ca1a778c19c40d14a8ba34f94b97e7e47f812b"
+      "sha256": "3c9a5dc0464a582dce83db580a8bed804e94f1cc8b33fd861044837198cdba27"
     },
     {
       "path": "domain-computational.html",
       "bytes": 35828,
-      "sha256": "2314350842f01e9fa27c0f5cba2c262abfbd43c120419abbbe51dd7d7d8023ab"
+      "sha256": "3d461dacfe080af99027d59aafe802fdb402fb229a3931f3e074941fa37cc690"
     },
     {
       "path": "domain-entomology.html",
       "bytes": 34565,
-      "sha256": "3571d78ebabf7bfc16169bab3e34533e50ffcca6af434800c5567dc27d319935"
+      "sha256": "bc3536aad86bf7d374e765138278056c0c26b8035280203fbba38612aa6eac51"
     },
     {
       "path": "domain-presentations-media.html",
       "bytes": 30120,
-      "sha256": "b9cb6e66a00f3ae7e23c7cff5aec0f072ac6a33afeb44485a0d44a809cf8857e"
+      "sha256": "9e106518d52348e316d3bc1084f97a2b6ac54b0b2c76c1a288fa707725808807"
     },
     {
       "path": "domains.html",
       "bytes": 13710,
-      "sha256": "2ab589e3d626050c957915996be97abd656b76a8e866a7e1ca4a7f12d36c436a"
+      "sha256": "9ed6993cac026330fcd000d01fdf759b36383a581c99e4c50e77b7356d9f3a7d"
     },
     {
       "path": "evidence.html",
       "bytes": 21429,
-      "sha256": "f41653462fa84691df7c43bf3d00f2c3717cd92c0dd18f353e115641fbd67bb8"
+      "sha256": "7c063d7295a30a5385a9f85b842929be238c1d91897092b8d0245aa5f010fcc3"
     },
     {
       "path": "exports.html",
       "bytes": 14988,
-      "sha256": "17604d75d79cbca235480238cf00106a350552ddab01dc3cb737559ae40f79ad"
+      "sha256": "d7bd46f94394d73b83bb5ddd4fa4dfb36fc2ff120a74d41910201770a381ade6"
     },
     {
       "path": "favicon-16.png",
@@ -7090,7 +7090,7 @@
     {
       "path": "insect-cognition.html",
       "bytes": 23515,
-      "sha256": "a5fb70620713b6c4710c3c3c70f24a8f5bc6aae08a04cf65accda92731ee3460"
+      "sha256": "9d61b92ba3e00ff153871b5e106ea75c16e53fcb41827ea4393f8f9aaf108827"
     },
     {
       "path": "js/AGENTS.md",
@@ -7190,7 +7190,7 @@
     {
       "path": "neurosymbolic-ai.html",
       "bytes": 23388,
-      "sha256": "6711abcb498451c5affcac0f1f011bf678cd8461ff50aa5dc9124cd9eeaf0490"
+      "sha256": "d0c376c61474c0e2673736087cd4673242193091ccb7dcb6b63b95f9cd2956a1"
     },
     {
       "path": "nft.html",
@@ -17028,6 +17028,11 @@
       "sha256": "26274bad60a30d17062b62c69d0574ba1f1c1beb71c085a6d0b31ae0bd3fd830"
     },
     {
+      "path": "reports/accessibility_static_2026-09-11.json",
+      "bytes": 1058853,
+      "sha256": "93d158417cc8abe2a77bcfbae1890e787ba9445072bc79ea0f0a8b4fccd727bc"
+    },
+    {
       "path": "reports/ambiguous_pairs_triage_2026-06-26.md",
       "bytes": 2120,
       "sha256": "7a6e4fb01a8870e64ec2358bfc1fab4749adf2cf38c44262ed12c7a022a6a761"
@@ -18253,6 +18258,16 @@
       "sha256": "081e4a6206474741253923e61ef11e23312eea783ae54b7ff4f4adb259baa18f"
     },
     {
+      "path": "reports/source_coverage_2026-09-11.json",
+      "bytes": 17951,
+      "sha256": "bd590fd3c6c9ba11c0a1da551a2b05d830e1aa9619d488a53b648c669c95fdc0"
+    },
+    {
+      "path": "reports/source_coverage_2026-09-11.md",
+      "bytes": 4701,
+      "sha256": "081e4a6206474741253923e61ef11e23312eea783ae54b7ff4f4adb259baa18f"
+    },
+    {
       "path": "reports/visual-qa/2026-08-26/AGENTS.md",
       "bytes": 270,
       "sha256": "2e50611ad2017ba8bedbcdb46730960eb487e5a97259c0c3b9ee1359a31572c5"
@@ -18360,7 +18375,7 @@
     {
       "path": "reproducibility.html",
       "bytes": 17395,
-      "sha256": "a5e8dd86d9c43267b5fd5c808175bbdd09a886d23f4a4cafe420ed075f23a427"
+      "sha256": "1f33d2be42f876bfee4807552b826634e76ae31726a828b19cf51898b190385f"
     },
     {
       "path": "research.html",
@@ -18480,7 +18495,7 @@
     {
       "path": "updates.html",
       "bytes": 115398,
-      "sha256": "1d8f3135f079cb713f36735e450f5c4e494a8dd7ebe74ef7017f81636458a4e3"
+      "sha256": "6a2243d252cc79753624c9241a6f4589a79932415aa4feab40aae68f32136b27"
     },
     {
       "path": "uv.lock",
@@ -25485,6 +25500,10 @@
       "role": "public control metadata"
     },
     {
+      "path": "reports/asset_size_2026-09-11.json",
+      "role": "public control metadata"
+    },
+    {
       "path": "reports/pages_artifact_growth_2026-07-17.json",
       "role": "public control metadata"
     },
@@ -25694,6 +25713,14 @@
     },
     {
       "path": "reports/public_source_review_2026-09-10.md",
+      "role": "public control metadata"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-11.json",
+      "role": "public control metadata"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-11.md",
       "role": "public control metadata"
     }
   ],
