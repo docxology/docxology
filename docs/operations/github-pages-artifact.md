@@ -19,7 +19,7 @@ only images actually hosted by the site (the artwork gallery and its supported
 remote image sources), so no published sitemap entry points at an omitted
 Pages asset.
 
-The artifact builder emits a documented review warning at 850 MiB, fails at the
+The artifact builder emits a documented review warning at 880 MiB, fails at the
 900 MiB release hard ceiling, and records GitHub's 1 GiB platform limit as a
 separate physical constraint. The current full server-rendered
 `publications.html` is allowed a 600 KB page-budget exception because it

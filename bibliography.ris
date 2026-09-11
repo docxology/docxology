@@ -2253,7 +2253,33 @@ N1  - Catalog row 157; docs: not available
 ER  -
 
 TY  - JOUR
+AU  - Protzko, John
+AU  - Tanner, Isaac Z.
+AU  - Dedyo, Morgan Daly
+AU  - Fu, JiaJia
+AU  - Perma, Bhavya
 AU  - Friedman, Daniel Ari
+AU  - Blidner, Ada Gabriela
+AU  - Johnston, Juliet Tegan
+AU  - Srivastava, Anant Kumar
+AU  - Ruscher, Roland
+AU  - Kupz, Andreas
+AU  - Tarselli, Michael A.
+AU  - Beardsley, Felicia
+AU  - Jensen, Mark Martin
+AU  - Konstantinides, Nikos
+AU  - Agarwal, Divyansh
+AU  - Yuen, Julia
+AU  - Gopinath, Suchitra D.
+AU  - Duong, Michael Tran
+AU  - Strong, Michael
+AU  - Soták, Matúš
+AU  - Burnette, Katie
+AU  - Kirshner, Samuel Nathan
+AU  - Nikolaou, Athanasia
+AU  - Ali, Basant A.
+AU  - de Oliveira, Benedito Alves
+AU  - Sojli, Elvira
 PY  - 2021
 TI  - Defining events: 2020 in hindsight
 T2  - Science
@@ -2449,7 +2475,7 @@ N1  - Catalog row 173; docs: papers/2026_CaliforniaPublicRecords/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - CogSecSkills: Multiharness Agentic Skills for Cognitive Security
 T2  - Zenodo
@@ -2822,7 +2848,7 @@ N1  - Catalog row 205; docs: papers/2026_BlackLine/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Codomyrmex: An Artificial Ecology for Agentic Software Development
 T2  - Zenodo
@@ -2846,7 +2872,7 @@ N1  - Catalog row 207; docs: papers/2026_THALIA/
 ER  -
 
 TY  - JOUR
-AU  - Friedman, Daniel Ari
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - PROJECT BOND — The Special-Agent Operations Compendium
 T2  - Zenodo
@@ -2858,10 +2884,10 @@ N1  - Catalog row 208; docs: papers/2026_PROJECTBONDSpecial/
 ER  -
 
 TY  - JOUR
-AU  - Shrivastava, Siddhant
-AU  - Goh, Evelyn C.
-AU  - Mikhailova, Alexandra
-AU  - Friedman, Daniel Ari
+AU  - Siddhant Shrivastava
+AU  - Evelyn C. Goh
+AU  - Alexandra Mikhailova
+AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - DigiPPPiP: Digital Partner Pen Play in Parallel
 T2  - Zenodo
@@ -2942,4 +2968,16 @@ UR  - https://doi.org/10.5281/zenodo.22243473
 KW  - Other
 KW  - Report
 N1  - Catalog row 215; docs: papers/2026_MillenniumAudit/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation
+T2  - Zenodo
+DO  - 10.5281/zenodo.22663906
+UR  - https://doi.org/10.5281/zenodo.22663906
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 216; docs: papers/2026_Skillarum/
 ER  -

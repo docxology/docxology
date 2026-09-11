@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T21:43:16Z",
+  "generated_at": "2026-09-10T18:09:00Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -4130,6 +4130,13 @@
           "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
         },
         {
+          "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+          "citation_key": "Friedman2026CompositionalApproachesLinguisticCase112",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026CompositionalApproachesLinguisticCase112.html"
+        },
+        {
           "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
           "citation_key": "Friedman2026DigiPPPiPDigitalPartnerPen209",
           "year": 2026,
@@ -4142,13 +4149,6 @@
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026MusicNeverStoppedGrateful150.html"
-        },
-        {
-          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
-          "citation_key": "Friedman2026TowardsLean4Formalization113",
-          "year": 2026,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
         }
       ]
     },
@@ -81740,6 +81740,13 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
+          "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+          "citation_key": "Friedman2026CompositionalApproachesLinguisticCase112",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026CompositionalApproachesLinguisticCase112.html"
+        },
+        {
           "title": "MVEE: A Framework for Evolutionary Studies",
           "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
           "year": 2018,
@@ -81752,13 +81759,6 @@
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },

@@ -6,6 +6,7 @@ tags: ["ai-agents", "model-context-protocol", "mcp", "multi-agent", "orchestrati
 domain: "Computational"
 citation: "Daniel Ari Friedman (2026). *Codomyrmex: An Artificial Ecology for Agentic Software Development*. Computational."
 doi: "10.5281/zenodo.21750800"
+artifact_doi: "10.5281/zenodo.21750801"
 ---
 
 # Codomyrmex: An Artificial Ecology for Agentic Software Development
@@ -40,7 +41,8 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.21750800
 - PDF SHA-256: eda76ad12a50bce01b113894c785e0915b6ba367f5bf67d17c8f586416102b93
 - Pairing confidence: strong
-- Last checked: 2026-08-28T17:12:27Z
+- Last checked: 2026-09-10T17:37:35Z
+- Artifact DOI: 10.5281/zenodo.21750801
 
 ## Prerequisites
 

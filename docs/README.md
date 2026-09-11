@@ -15,6 +15,7 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
 | **Backlog** | [`../TODO.md`](../TODO.md) | Active unfinished release, evidence, accessibility, Pages, and operating-model work; no completed history |
 | **Operations** | [`operations/publication-sync.md`](operations/publication-sync.md) | GitHub + Zenodo publication intake, Zenodo-only backfill, and software-only GitHub record triage |
 | **Operations** | [`operations/github-pages-artifact.md`](operations/github-pages-artifact.md) | Bounded GitHub Pages deployment projection, 1 GiB limit, and repository-vs-site asset policy |
+| **Operations** | [`operations/asset-strategy-adr.md`](operations/asset-strategy-adr.md) | ADR: repository-vs-Pages artifact asset strategy, paper binaries, and art-gallery imagery ownership |
 | **Operations** | [`operations/release-integrity.md`](operations/release-integrity.md) | Source hashes, CV privacy, Pages artifact, deployment, live verification, and report retention gates |
 | **Operations** | [`operations/report-retention.md`](operations/report-retention.md) | Review-record format and provenance rules before superseded report artifacts leave the checkout |
 | **Operations** | [`operations/maintenance-log.md`](operations/maintenance-log.md) | On-demand history for completed maintenance and how to trace it to changelog/report evidence |
@@ -30,6 +31,7 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
 | **Design** | [`design/animations.md`](design/animations.md) | Animation system: scroll-reveal, reduced-motion policy, interaction transitions |
 | **Design** | [`design/components/tts.md`](design/components/tts.md) | TTS controls: Web Speech read-aloud panel, voice/speed, paragraph highlighting |
 | **Security** | [`security/security-posture.md`](security/security-posture.md) | Static-site security posture, XSS, CSP, responsible disclosure |
+| **Manuscript** | [`manuscript/`](manuscript/README.md) | Template-format manuscript scaffold (sections `00_abstract` … `99_references`, `SYNTAX.md`, `config.yaml`, `MANUSCRIPT_STATUS.md`) |
 | **Releases** | [`releases/2026-05-discovery-layer.md`](releases/2026-05-discovery-layer.md) | Archived 2026-05 discovery-layer snapshot |
 
 ## Conventions

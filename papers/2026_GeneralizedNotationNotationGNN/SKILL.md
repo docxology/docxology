@@ -6,6 +6,7 @@ tags: ["active-inference", "generative-models", "cognitive-modeling", "notation-
 domain: "Active Inference"
 citation: "Daniel Ari Friedman, The GeneralizedNotationNotation Community Contributors (2026). *GeneralizedNotationNotation (GNN)*. Active Inference."
 doi: "10.5281/zenodo.7803313"
+artifact_doi: "10.5281/zenodo.20671741"
 ---
 
 # GeneralizedNotationNotation (GNN)
@@ -44,6 +45,7 @@ Verification points for this work:
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-06-14T22:26:11Z
+- Artifact DOI: 10.5281/zenodo.20671741
 
 ## Prerequisites
 

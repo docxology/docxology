@@ -82,6 +82,7 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("github-readme", "build_github_readme.py", (), ("--check",), "GitHub-rendered README mirror"),
     GenerationStep("search-index", "build_search_index.py", (), ("--check",), "Site search index"),
     GenerationStep("feed", "generate_feed.py", (), ("--check",), "RSS feed"),
+    GenerationStep("domain-feeds", "build_domain_feeds.py", (), ("--check",), "Per-domain RSS feeds"),
     GenerationStep("sitemap", "build_sitemap.py", (), ("--check",), "Sitemap"),
     GenerationStep("404-page", "build_404_page.py", (), ("--check",), "GitHub Pages 404 page"),
     GenerationStep("artwork-index", "build_artwork_index.py", (), ("--check",), "Compact artwork index"),

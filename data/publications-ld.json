@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 212 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 213 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -6582,12 +6582,116 @@
             "author": [
                 {
                     "@type": "Person",
+                    "name": "John Protzko"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Isaac Z. Tanner"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Morgan Daly Dedyo"
+                },
+                {
+                    "@type": "Person",
+                    "name": "JiaJia Fu"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Bhavya Perma"
+                },
+                {
+                    "@type": "Person",
                     "@id": "https://danielarifriedman.com/#person",
                     "name": "Daniel Ari Friedman",
                     "sameAs": [
                         "https://orcid.org/0000-0001-6232-9096",
                         "https://www.wikidata.org/wiki/Q138781444"
                     ]
+                },
+                {
+                    "@type": "Person",
+                    "name": "Ada Gabriela Blidner"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Juliet Tegan Johnston"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Anant Kumar Srivastava"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Roland Ruscher"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Andreas Kupz"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Michael A. Tarselli"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Felicia Beardsley"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Mark Martin Jensen"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Nikos Konstantinides"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Divyansh Agarwal"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Julia Yuen"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Suchitra D. Gopinath"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Michael Tran Duong"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Michael Strong"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Matúš Soták"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Katie Burnette"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Samuel Nathan Kirshner"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Athanasia Nikolaou"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Basant A. Ali"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Benedito Alves de Oliveira"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Elvira Sojli"
                 }
             ],
             "publisher": {
@@ -7102,8 +7206,13 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
                 }
             ],
             "publisher": {
@@ -8024,13 +8133,8 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Person",
-                    "@id": "https://danielarifriedman.com/#person",
-                    "name": "Daniel Ari Friedman",
-                    "sameAs": [
-                        "https://orcid.org/0000-0001-6232-9096",
-                        "https://www.wikidata.org/wiki/Q138781444"
-                    ]
+                    "@type": "Organization",
+                    "name": "Daniel Ari Friedman"
                 }
             ],
             "publisher": {
@@ -8090,13 +8194,8 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Person",
-                    "@id": "https://danielarifriedman.com/#person",
-                    "name": "Daniel Ari Friedman",
-                    "sameAs": [
-                        "https://orcid.org/0000-0001-6232-9096",
-                        "https://www.wikidata.org/wiki/Q138781444"
-                    ]
+                    "@type": "Organization",
+                    "name": "Daniel Ari Friedman"
                 }
             ],
             "publisher": {
@@ -8123,25 +8222,20 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Person",
+                    "@type": "Organization",
                     "name": "Siddhant Shrivastava"
                 },
                 {
-                    "@type": "Person",
+                    "@type": "Organization",
                     "name": "Evelyn C. Goh"
                 },
                 {
-                    "@type": "Person",
+                    "@type": "Organization",
                     "name": "Alexandra Mikhailova"
                 },
                 {
-                    "@type": "Person",
-                    "@id": "https://danielarifriedman.com/#person",
-                    "name": "Daniel Ari Friedman",
-                    "sameAs": [
-                        "https://orcid.org/0000-0001-6232-9096",
-                        "https://www.wikidata.org/wiki/Q138781444"
-                    ]
+                    "@type": "Organization",
+                    "name": "Daniel Ari Friedman"
                 }
             ],
             "publisher": {
@@ -8353,6 +8447,39 @@
             },
             "sameAs": "https://doi.org/10.5281/zenodo.22243473",
             "citation": "Friedman, Daniel Ari. 2026. Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global). Zenodo. DOI: 10.5281/zenodo.22243473. URL: https://doi.org/10.5281/zenodo.22243473."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+            "headline": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.22663906",
+                "url": "https://doi.org/10.5281/zenodo.22663906"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.22663906",
+            "citation": "Friedman, Daniel Ari. 2026. Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation. Zenodo. DOI: 10.5281/zenodo.22663906. URL: https://doi.org/10.5281/zenodo.22663906."
         }
     ]
 }

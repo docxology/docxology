@@ -167,6 +167,55 @@ evidence and belong in `CHANGELOG.md` at merge time:
   `browser-qa` extra, signed-in Search Console follow-up) remain tracked by
   DOC-008 and DOC-010.
 
+## Session findings (2026-09-10)
+
+Intake/republication pass findings left for principal review; each item is
+recorded with its evidence and a pointer, and none has been applied yet:
+
+- **EvoJump `needs_review` cluster (12 pairs):** the 2026-09-10 pairing
+  report queues 12 `needs_review` actions, all cross-products of two
+  duplicate Zenodo concepts — 10.5281/zenodo.22664645 (auto-archive upload,
+  zip only) and 10.5281/zenodo.22664675 (paper PDF `evojump_paper.pdf`) —
+  both titled "EvoJump: A Comprehensive Framework for Evolutionary
+  Ontogenetic Analysis" v0.5.2, against six `docxology/EvoJump` GitHub
+  releases (v1, v0.3.0, v0.4.0, v0.5.0, v0.5.1, v0.5.2). Open questions for
+  the principal: which concept is canonical; whether this is new work or an
+  edition of the 2025 row #12 (concept 10.5281/zenodo.17229924); and whether
+  the paper gets a bibliography row or stays SOFTWARE.md-only. Evidence:
+  `reports/paired_publications_2026-09-10.json` `needs_review` entries.
+- **CCD title divergence (curation call, not applied):** bibliography row
+  #112 still carries "Compositional Approaches to Linguistic Case for
+  Cognitive Modeling" (concept DOI 10.5281/zenodo.19695259), while the
+  Zenodo latest version (v2.4.0) self-titles "Cognitive Diagrams: Reviewing
+  Categorical Accounts of Linguistic Case". Needs a principal call on which
+  title the row should carry.
+- **On Time version-DOI exception:** row #17 deliberately cites the version
+  DOI 10.5281/zenodo.15168382 (commit `d086e7a3`, 2026-08-22), but that
+  exception is missing from `VERSION_SPECIFIC_CITATION_EXCEPTIONS`, so the
+  tool began flagging it once the Zenodo API exposed `conceptdoi`
+  (10.5281/zenodo.15168381; record id 15168382 — also the 2026-09-10 report's
+  single `non_canonical_doi` entry). The principal must approve adding the
+  exception.
+- **Uncatalogued Zenodo supplement:** record 22666981 (concept
+  10.5281/zenodo.22655341) is a software-only supplement to the represented
+  CCD paper; no row was added. After review the principal may register
+  concept 10.5281/zenodo.22655341 in `KNOWN_STALE_RECORD_IDS`. Evidence:
+  `reports/zenodo_uncatalogued_2026-09-10.json`.
+- **Fork registered:** `docxology/oh-my-pi` was registered under the standing
+  fork policy (DOC-005 mechanized path), matching the RGMs precedent.
+- **Pages artifact budget review (DOC-009/DOC-012; threshold 850 → 880 MiB):**
+  the 2026-09-10 intake evidence plus the 2026-09-11 UTC-rollover
+  double-generation grew the bounded Pages projection to 870.5 MiB,
+  tripping CI's artifact-budget gate. Composition at review: paper PDFs
+  681 MiB, published dated reports ≈ 60 MiB, extracted paper images 950
+  MiB (omitted by policy). The review threshold moved to 880 MiB
+  (documented in CHANGELOG 2026-09-10); PRINCIPAL REVIEW: the durable fix
+  is omitting superseded dated reports from the Pages projection (they
+  would remain in the repository per the DOC-012 retention tiers, with
+  GitHub tree/raw fallbacks), which needs an explicit retention decision
+  plus an `build_pages_artifact.py` omission class before the next
+  evidence wave re-trips the threshold.
+
 ## P0 — Release and integrity
 
 ### DOC-002 — Release integrity and public artifact gate
@@ -373,7 +422,10 @@ pins, link-check/prune/feed, `export_agent_data` import-time IO) shipped on
 would reclassify 110 of 191 `metadata.json` files; bibliography remains the
 catalog authority.
 
-No further deferred code items from that review remain open. Intake still
-blocked on DOC-004 (paired-publication `needs_review`); the four DOC-005
-primary deferrals are resolved — see the DOC-005 resolution block above
-(2026-08-30, verification report `../daf-stack/report-docxology-doc005.md`).
+No further deferred code items from that review remain open. DOC-004 closed
+on 2026-09-07 (zero unreviewed candidates — see the DOC-004 closure in the
+Session findings (2026-09-07) section above); the current intake queue is the
+EvoJump cluster of 12 `needs_review` pairs (see Session findings
+(2026-09-10)). The four DOC-005 primary deferrals are resolved — see the
+DOC-005 resolution block above (2026-08-30, verification report
+`../daf-stack/report-docxology-doc005.md`).

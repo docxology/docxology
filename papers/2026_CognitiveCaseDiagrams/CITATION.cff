@@ -17,3 +17,6 @@ identifiers:
   - type: url
     value: "https://zenodo.org/records/19695259"
     description: "Zenodo landing page"
+  - type: url
+    value: "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0"
+    description: "GitHub release"

@@ -33,11 +33,11 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 
 | Index | Link | Notes |
 |-------|------|-------|
-| PubMed | [Daniel Ari Friedman author search](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | NCBI E-utilities returned 8 records for the exact author query on 2026-09-07 |
-| Europe PMC | [Daniel Ari Friedman author search](https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22) | Europe PMC returned 10 exact-author results, including preprints, on 2026-09-07 |
-| Crossref API | [ORCID DOI records](https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096) | Crossref returned 15 DOI records attached to the ORCID on 2026-09-07 |
-| Zenodo | [Exact-name creator search](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | Zenodo returned 61 exact-name records on 2026-09-07 |
-| Zenodo API | [ORCID-linked records](https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22) | ORCID-linked query returned 148 records on 2026-09-07, including versioned deposits and software archives |
+| PubMed | [Daniel Ari Friedman author search](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | NCBI E-utilities returned 8 records for the exact author query on 2026-09-10 |
+| Europe PMC | [Daniel Ari Friedman author search](https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22) | Europe PMC returned 10 exact-author results, including preprints, on 2026-09-10 |
+| Crossref API | [ORCID DOI records](https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096) | Crossref returned 15 DOI records attached to the ORCID on 2026-09-10 |
+| Zenodo | [Exact-name creator search](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | Zenodo returned 65 exact-name records on 2026-09-10 |
+| Zenodo API | [ORCID-linked records](https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22) | ORCID-linked query returned 152 records on 2026-09-10, including versioned deposits and software archives |
 | Semantic Scholar | [Exact-name search](https://www.semanticscholar.org/search?q=%22Daniel%20Ari%20Friedman%22&sort=relevance) | AI-curated citation graph; verify candidate author merges before using as profile evidence |
 | DBLP | [Author page](https://dblp.org/pid/346/2173.html) | Computer-science bibliography mirror |
 | PubMed Central / NCBI | [PubMed query](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | Use for biomedical indexing and PMID lookup |
@@ -68,7 +68,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | Citation metadata | [CITATION.cff](../CITATION.cff) | Machine-readable citation metadata for this public research index |
 | Data catalog | [catalog.html](../catalog.html) / [data/catalog.json](../data/catalog.json) | Schema.org DataCatalog for public JSON, citation, and report exports |
 | Agent route manifest | [data/agent-index.json](../data/agent-index.json) | Stable route families, field-level schemas for works/software/repositories/claims/search/reports, current counts, freshness policy, hashes, fallbacks, and query recipes |
-| Coverage exceptions | [data/coverage-exceptions.json](../data/coverage-exceptions.json) · [source coverage report](../reports/source_coverage_2026-07-17.md) | Explicit paper-folder, full-text, DOI, canonical-URL, and non-paper coverage gaps; review queue rather than automatic rejection |
+| Coverage exceptions | [data/coverage-exceptions.json](../data/coverage-exceptions.json) · [source coverage report](../reports/source_coverage_2026-09-11.md) | Explicit paper-folder, full-text, DOI, canonical-URL, and non-paper coverage gaps; review queue rather than automatic rejection |
 | Repository classification | [data/repository-classification.json](../data/repository-classification.json) | Review queue for uncatalogued public repositories, preserving fork/archive/privacy state, description-quality triage, and manual catalog decisions |
 | Video timeline index | [data/videos-index.json](../data/videos-index.json) | Compact initial-load projection for the interactive video timeline; complete metadata remains in [data/videos.json](../data/videos.json) |
 | Pages artifact | [data/pages-artifact-manifest.json](../data/pages-artifact-manifest.json) | Published file list, SHA-256 values, bounded byte budget, omitted-image policy, and GitHub fallback templates |
@@ -87,14 +87,14 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | Generated-file manifest | [GENERATED.md](../GENERATED.md) / [data/generated-manifest.json](../data/generated-manifest.json) | Rebuild commands and source-to-output mapping for generated artifacts |
 | Updates | [updates.html](../updates.html) / [CHANGELOG.md](../CHANGELOG.md) | Human-facing update history and source changelog |
 | Humans / security | [humans.txt](../humans.txt) / [security.txt](../.well-known/security.txt) | Contact, credits, and responsible disclosure metadata |
-| Public-source snapshot | [reports/public_source_snapshot_2026-09-04.json](../reports/public_source_snapshot_2026-09-04.json) | Latest public API freshness report |
-| Public-source inventory | [reports/public_source_inventory_2026-09-04.json](../reports/public_source_inventory_2026-09-04.json) | Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages |
-| Reconciliation report | [reports/reconciliation_2026-09-04.md](../reports/reconciliation_2026-09-04.md) | Human-readable comparison of curated counts and public-source counts |
-| External-link report | [reports/external_links_2026-05-15.json](../reports/external_links_2026-05-15.json) | Cached scoped network check for site-critical outbound links |
-| External-link triage | [reports/external_links_triage_2026-05-15.md](../reports/external_links_triage_2026-05-15.md) | Categorized link warnings: bot-protected, transient, timeout, stale, and review |
-| Live-site verification | [latest dated report](../reports/live_site_verification_2026-07-17.json) | Deployed-site checks for expected markers, JSON contracts/counts, cache headers, deployment metadata, and GitHub Pages status |
-| Asset-size audit | [reports/asset_size_2026-09-07.json](../reports/asset_size_2026-09-07.json) | Size budget report for public assets and generated exports |
-| Static accessibility report | [reports/accessibility_static_2026-09-07.json](../reports/accessibility_static_2026-09-07.json) | Static accessibility checks for root HTML pages |
+| Public-source snapshot | [reports/public_source_snapshot_2026-09-10.json](../reports/public_source_snapshot_2026-09-10.json) | Latest public API freshness report |
+| Public-source inventory | [reports/public_source_inventory_2026-09-10.json](../reports/public_source_inventory_2026-09-10.json) | Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages |
+| Reconciliation report | [reports/reconciliation_2026-09-10.md](../reports/reconciliation_2026-09-10.md) | Human-readable comparison of curated counts and public-source counts |
+| External-link report | [reports/external_links_2026-09-10.json](../reports/external_links_2026-09-10.json) | Cached scoped network check for site-critical outbound links |
+| External-link triage | [reports/external_links_triage_2026-09-10.md](../reports/external_links_triage_2026-09-10.md) | Categorized link warnings: bot-protected, transient, timeout, stale, and review |
+| Live-site verification | [latest dated report](../reports/live_site_verification_2026-09-10.json) | Deployed-site checks for expected markers, JSON contracts/counts, cache headers, deployment metadata, and GitHub Pages status |
+| Asset-size audit | [reports/asset_size_2026-09-11.json](../reports/asset_size_2026-09-11.json) | Size budget report for public assets and generated exports |
+| Static accessibility report | [reports/accessibility_static_2026-09-11.json](../reports/accessibility_static_2026-09-11.json) | Static accessibility checks for root HTML pages |
 | Browser smoke manifest | [reports/browser-smoke/2026-08-26/manifest.json](../reports/browser-smoke/2026-08-26/manifest.json) | Browser-rendered smoke screenshots for high-priority pages |
 | Visual QA manifest | [reports/visual-qa/2026-08-26/manifest.json](../reports/visual-qa/2026-08-26/manifest.json) | Playwright screenshot manifest for key pages and mobile/desktop viewports |
 | Citation exports | [BibTeX](../bibliography.bib) · [CSL JSON](../bibliography.csl.json) · [RIS](../bibliography.ris) | Citation-manager formats generated from `BIBLIOGRAPHY.md` |

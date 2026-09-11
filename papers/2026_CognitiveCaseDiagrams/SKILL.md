@@ -1,20 +1,20 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Compositional Approaches to Linguistic Case for Cognitive Modeling"
-description: "Linguistic case as categorical structure: alignment typology as functors, DisCoCat/DisCoCirc composition, bridges to Distributional Active Inference and protocol-level analysis of prompt injection."
-tags: ["active-inference", "category-theory", "linguistic-case", "compositional-semantics", "discocat", "discocirc", "distributional-semantics", "cognitive-modeling", "cognitive-security", "prompt-injection"]
+name: "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case"
+description: "Linguistic case offers a useful test of how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. The implementa..."
+tags: ["linguistic-case", "category-theory", "discocat", "pregroup-grammar", "enriched-categories", "bayesian-filtering", "distributional-representations", "povm", "reproducible-research"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman (2026). *Compositional Approaches to Linguistic Case for Cognitive Modeling*. Active Inference."
+citation: "Daniel Ari Friedman (2026). *Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case*. Active Inference."
 doi: "10.5281/zenodo.19695259"
 ---
 
-# Compositional Approaches to Linguistic Case for Cognitive Modeling
+# Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case
 
 **Daniel Ari Friedman** (2026) · Active Inference
 
 ## Context
 
-This work addresses topics in **Active Inference**: Active Inference, linguistic case, category theory, DisCoCat.
+This work addresses topics in **Active Inference**: linguistic case, category theory, DisCoCat, pregroup grammar.
 
 ## Methods
 
@@ -41,14 +41,14 @@ Verification points for this work:
 
 - Canonical DOI: 10.5281/zenodo.19695259
 - PDF SHA-256: See zenodo_record
-- Pairing confidence: unknown
-- Last checked: 2026-06-30T23:26:06Z
+- Pairing confidence: strong
+- Last checked: 2026-09-10T17:37:08Z
 
 ## Prerequisites
 
-- Familiarity with Active Inference, linguistic case, category theory
+- Familiarity with linguistic case, category theory, DisCoCat
 - Background in Active Inference fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/cognitive_case_diagrams
 
 ## Instructions
 

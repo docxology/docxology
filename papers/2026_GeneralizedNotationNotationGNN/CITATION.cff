@@ -14,8 +14,17 @@ authors:
     given-names: The GeneralizedNotationNotation Community
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.7803313
-    description: "Zenodo DOI"
+    value: "10.5281/zenodo.7803313"
+    description: "Canonical citation DOI"
   - type: url
-    value: "https://zenodo.org/records/7803313"
-    description: "Zenodo landing page"
+    value: "https://doi.org/10.5281/zenodo.7803313"
+    description: "Canonical citation DOI resolver"
+  - type: doi
+    value: "10.5281/zenodo.20671741"
+    description: "Version/download DOI (Zenodo artifact)"
+  - type: url
+    value: "https://doi.org/10.5281/zenodo.20671741"
+    description: "Version/download DOI resolver (Zenodo artifact)"
+  - type: url
+    value: "https://zenodo.org/records/20671741"
+    description: "Version/download landing page (Zenodo artifact)"

@@ -29,6 +29,7 @@
 ## Artifacts
 
 - DOI: [10.5281/zenodo.7803313](https://doi.org/10.5281/zenodo.7803313)
+- Artifact DOI: [10.5281/zenodo.20671741](https://doi.org/10.5281/zenodo.20671741)
 - Zenodo record: [https://zenodo.org/records/7803313](https://zenodo.org/records/7803313)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/7803313)
 

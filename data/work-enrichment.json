@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-02T05:07:55Z",
+  "generated_at": "2026-09-10T18:07:41Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 212,
+  "count": 213,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -2353,18 +2353,17 @@
     },
     "Friedman2026CompositionalApproachesLinguisticCase112": {
       "citation_key": "Friedman2026CompositionalApproachesLinguisticCase112",
-      "abstract": "Commutative diagrams encode relational structure, distributional semantics, and belief updating—with linguistic case as the hinge. Case systems as categories; alignment patterns as functors; DisCoCat/DisCoCirc string diagrams; enriched hooks to quantitative similarity; links to Distributional Active Inference and ERP-oriented hypotheses; POVM scaling for multi-agent discourse; prompt injection as...",
+      "abstract": "Linguistic case offers a useful test of how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. The implementation includes case-role graphs, pregroup derivations, tensor contractions, synthetic similarity matrices, Bayesian filtering, quantile utilities, and...",
       "keywords": [
-        "Active Inference",
         "linguistic case",
         "category theory",
         "DisCoCat",
-        "DisCoCirc",
-        "distributional semantics",
-        "cognitive modeling",
-        "cognitive security",
-        "prompt injection",
-        "linguistic typology"
+        "pregroup grammar",
+        "enriched categories",
+        "Bayesian filtering",
+        "distributional representations",
+        "POVM",
+        "reproducible research"
       ],
       "findings": [
         "Linguistic case as categorical structure: alignment typology as functors, DisCoCat/DisCoCirc composition, bridges to Distributional Active Inference and protocol-level analysis of prompt injection."
@@ -4329,6 +4328,27 @@
         "Three-lane hostile red-team pass on the audit before publication"
       ],
       "source": "papers/2026_MillenniumAudit/README.md"
+    },
+    "Friedman2026SkillarumConditionallyReproducibleWebsite216": {
+      "citation_key": "Friedman2026SkillarumConditionallyReproducibleWebsite216",
+      "abstract": "Skillarum turns selected public website pages into portable SKILL.md documents for agent harnesses such as Codex, Claude Code, and Hermes. Work is separated into five inspectable stages: acquire, prepare, process, parse, and render. The crawler restricts acquisition to configured HTTP(S) origins, honours robots.txt, validates redirects, and records provenance for every page. Source text is delimited as untrusted data for LLM generation; generated code is never executed. The deterministic backend is offline and source-extractive; optional OpenAI and Ollama backends provide provider generation with typed fallback traces. Rendered skills carry provenance manifests, and an evidence-gated research package aggregates run observations into descriptive statistics, figures, and a scholarly manuscript. This release pairs the software source snapshot with the companion manuscript PDF.",
+      "keywords": [
+        "website extraction",
+        "agent skills",
+        "provenance",
+        "reproducibility",
+        "prompt injection",
+        "static compilation"
+      ],
+      "findings": [
+        "website extraction",
+        "agent skills",
+        "provenance",
+        "reproducibility",
+        "prompt injection"
+      ],
+      "methods": [],
+      "source": "papers/2026_Skillarum/README.md"
     }
   }
 }
