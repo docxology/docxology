@@ -14,7 +14,8 @@ The canonical repository includes paper PDFs, extracted paper figures, and
 dated visual-QA screenshot binaries for provenance, while the published site is
 the bounded Pages artifact assembled by
 `code/orchestrators/build_pages_artifact.py` and deployed from
-`.github/workflows/pages.yml`. The artifact builder warns at 850 MiB and fails
+`.github/workflows/pages.yml`. The artifact builder warns at 880 MiB (raised
+from 850 MiB by the 2026-09-11 budget review below) and fails
 at the 900 MiB release hard ceiling; GitHub's platform limit is 1 GiB. After
 the earlier prune of duplicate paper binaries, the artifact stood at
 **826 MiB** — about 24 MiB below the 900 MiB ceiling and just inside the
