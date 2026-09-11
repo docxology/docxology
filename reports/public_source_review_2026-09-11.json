@@ -3649,12 +3649,10 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "9fe90b2a67fa4035c1a5622491f750cbabb9f947",
-  "source_tree_sha": "1000d91e41ceafc2c0d7146f8d429ef5a28af555",
-  "source_worktree_clean": false,
-  "source_worktree_dirty_paths": [
-    "reports/reconciliation_2026-09-11.md"
-  ],
+  "source_commit": "9ebb4d90fc3904e9beab901d2e0499e0ccbc9060",
+  "source_tree_sha": "cdab72c8343e3932ac6236ab34503c2672562485",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
   "summary": {
     "applied": 175,
     "categories": {
