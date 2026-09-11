@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T03:25:07Z",
-  "source_commit_at_generation": "9ebb4d90fc3904e9beab901d2e0499e0ccbc9060",
+  "generated_at": "2026-09-11T03:26:35Z",
+  "source_commit_at_generation": "cbef2c0b27c894333590de6f461714275fa2e3dc",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -6660,7 +6660,7 @@
     {
       "path": "discovery.html",
       "bytes": 33122,
-      "sha256": "3a0a12915e90b05741fdc39488bffe9d25607186d85502d2381f78f9199b74fd"
+      "sha256": "913ce6079e64510bb6232f579edb16cfb20724653ea10512e59b2fb6957dc338"
     },
     {
       "path": "docs/AGENTS.md",
@@ -7170,7 +7170,7 @@
     {
       "path": "llms.txt",
       "bytes": 10521,
-      "sha256": "9adf03a7a4ae2a19da926b57574ff7ebb840f5332bf03238cb089485b48db6cf"
+      "sha256": "b6fae33e3e93e131607a8b53578af208d92070beefb5412832f2af36b09dd809"
     },
     {
       "path": "manifest.json",
@@ -7320,7 +7320,7 @@
     {
       "path": "pages/DISCOVERY.md",
       "bytes": 15409,
-      "sha256": "e15fb925a5501c9abbb6cff569cf3f0f4d5334b732be68624acf3a81a4b78843"
+      "sha256": "33ded17ef7a2e49fc7deb333d6e4a8fda4637b2962066cf0a9638cb84599fd29"
     },
     {
       "path": "pages/DOMAINS.md",
