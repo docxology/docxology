@@ -578,7 +578,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-09-10.json"
+        "reports/external_links_2026-09-11.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -588,7 +588,7 @@
     {
       "name": "Public source snapshot",
       "outputs": [
-        "reports/public_source_snapshot_2026-09-10.json"
+        "reports/public_source_snapshot_2026-09-11.json"
       ],
       "sources": [
         "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
@@ -628,11 +628,11 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-09-10.json",
-        "reports/external_links_triage_2026-09-10.md"
+        "reports/external_links_triage_2026-09-11.json",
+        "reports/external_links_triage_2026-09-11.md"
       ],
       "sources": [
-        "reports/external_links_2026-09-10.json"
+        "reports/external_links_2026-09-11.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },
@@ -665,8 +665,8 @@
     {
       "name": "Browser smoke checks",
       "outputs": [
-        "reports/browser-smoke/2026-08-26/*.png",
-        "reports/browser-smoke/2026-08-26/manifest.json"
+        "reports/browser-smoke/2026-09-11/*.png",
+        "reports/browser-smoke/2026-09-11/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -678,7 +678,7 @@
     {
       "name": "Progressive browser QA",
       "outputs": [
-        "reports/browser-qa/2026-09-07/manifest.json"
+        "reports/browser-qa/2026-09-11/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -691,7 +691,7 @@
     {
       "name": "Live site verification",
       "outputs": [
-        "reports/live_site_verification_2026-09-10.json"
+        "reports/live_site_verification_2026-09-11.json"
       ],
       "sources": [
         "https://danielarifriedman.com/",
@@ -758,8 +758,8 @@
     {
       "name": "Visual QA",
       "outputs": [
-        "reports/visual-qa/2026-08-26/*.png",
-        "reports/visual-qa/2026-08-26/manifest.json"
+        "reports/visual-qa/2026-09-11/*.png",
+        "reports/visual-qa/2026-09-11/manifest.json"
       ],
       "sources": [
         "root HTML pages",
