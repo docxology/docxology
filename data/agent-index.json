@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "generated_at": "2026-09-10T21:41:25+00:00",
+  "generated_at": "2026-09-11T02:55:51+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -1099,7 +1099,7 @@
           "Crossref ORCID DOI records": 15,
           "Europe PMC exact author records": 10,
           "GitHub user ActiveInferenceInstitute": 43,
-          "GitHub user docxology": 213,
+          "GitHub user docxology": 214,
           "ORCID work groups": 20,
           "PubMed exact author records": 8,
           "Zenodo ORCID-linked records": 152,
@@ -1120,14 +1120,14 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-09-10T21:41:25+00:00",
+      "generated_at": "2026-09-11T02:55:51+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
         "paired_publication_decisions": "data/paired-publication-decisions.json",
         "paired_publications": "reports/paired_publications_2026-09-10.json",
         "paper_folders": "papers/README.md",
-        "public_source_snapshot": "reports/public_source_snapshot_2026-09-10.json",
+        "public_source_snapshot": "reports/public_source_snapshot_2026-09-11.json",
         "software_catalog": "pages/SOFTWARE.md",
         "software_export": "data/software.json",
         "works_export": "data/works.json"
@@ -1177,10 +1177,10 @@
     "organizations": "b6a2303e7520a2619058fec6aefebebcc318773b4b646ca850e8d84fc583cef5",
     "resume": "1999ee29583eb96cb62b670dd49ff0ff023cddf1aeb7fb65aa9cd28e3041b743",
     "work_enrichment": "0356fc382da87392f3f0c9e9d9e3fcd7461ac92fdf3ff878f5b13be67bca6ff7",
-    "catalog": "53b289f01f8b9643bf2e271d8a56fcdb07529d7516546e6e3e0ed8f4ae8aad24",
+    "catalog": "502e80562ba56b9ac2f28ce2b353714c374d0355408d49853692f80c00560328",
     "reconciliation": "aa89caae37eab91725296591dfa7627b044306a59824be4a97383c156e79a9e8",
     "generated_manifest": "a3db3900b3d3fb12fbf7017f0c5d9346d05766f48a84e95c1b0f023abc413ea8",
-    "current_counts": "0eedbd8c359d4ffa75e701b82928a48681fa81cd59115f7c662418ec0e72c79a"
+    "current_counts": "fcd371bf913d06abcf0657b7e6137d69f976244c19305797146fd1c37cbc81cb"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -1267,7 +1267,7 @@
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
       "GitHub user ActiveInferenceInstitute": 43,
-      "GitHub user docxology": 213,
+      "GitHub user docxology": 214,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
       "Zenodo ORCID-linked records": 152,

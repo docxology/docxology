@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T02:49:26Z",
-  "source_commit_at_generation": "26e049883d3313ba619d0acef6170133a498400e",
+  "generated_at": "2026-09-11T02:57:55Z",
+  "source_commit_at_generation": "82463b00b601cf66bf30e1994a8ce42d9702cc2f",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5325,7 +5325,7 @@
     {
       "path": "catalog.html",
       "bytes": 50171,
-      "sha256": "a8beca7985154133fabcd04000c1df784ab14dcddb0fc8169ed91f7b4a0e892b"
+      "sha256": "b8f6229c12d1da181d70b46e5d79cdd335ac35b2d3c862f8c642a47e8efb5f6a"
     },
     {
       "path": "cite-verify.html",
@@ -6475,7 +6475,7 @@
     {
       "path": "data/catalog.json",
       "bytes": 31608,
-      "sha256": "53b289f01f8b9643bf2e271d8a56fcdb07529d7516546e6e3e0ed8f4ae8aad24"
+      "sha256": "502e80562ba56b9ac2f28ce2b353714c374d0355408d49853692f80c00560328"
     },
     {
       "path": "data/claims.json",
@@ -6490,7 +6490,7 @@
     {
       "path": "data/current-counts.json",
       "bytes": 4359,
-      "sha256": "0eedbd8c359d4ffa75e701b82928a48681fa81cd59115f7c662418ec0e72c79a"
+      "sha256": "fcd371bf913d06abcf0657b7e6137d69f976244c19305797146fd1c37cbc81cb"
     },
     {
       "path": "data/github-repositories.json",
@@ -6660,7 +6660,7 @@
     {
       "path": "discovery.html",
       "bytes": 33122,
-      "sha256": "8a76b87fabe1825028b0da9ec426a260f6f2f9373b8cfc8beb22534ff4da8a8e"
+      "sha256": "3a0a12915e90b05741fdc39488bffe9d25607186d85502d2381f78f9199b74fd"
     },
     {
       "path": "docs/AGENTS.md",
@@ -7085,7 +7085,7 @@
     {
       "path": "index.html",
       "bytes": 42517,
-      "sha256": "29f67ba41b030a53352299960d8d61a1fcda518282546895d6ae491ca476ad03"
+      "sha256": "66207a2e035978f7f04223356ae938e010b63d43e8e3f62ed952f232f065c9a3"
     },
     {
       "path": "insect-cognition.html",
@@ -7170,7 +7170,7 @@
     {
       "path": "llms.txt",
       "bytes": 10521,
-      "sha256": "6277f21a933ad348181c38af8e3b53daeb3f910059a57a4725aaccf4e8b22ad7"
+      "sha256": "9adf03a7a4ae2a19da926b57574ff7ebb840f5332bf03238cb089485b48db6cf"
     },
     {
       "path": "manifest.json",
@@ -7320,7 +7320,7 @@
     {
       "path": "pages/DISCOVERY.md",
       "bytes": 15409,
-      "sha256": "5c956432148411bc7db0398fd9cf8dabf7e2000089f4eab1dcc295ccac58d448"
+      "sha256": "e15fb925a5501c9abbb6cff569cf3f0f4d5334b732be68624acf3a81a4b78843"
     },
     {
       "path": "pages/DOMAINS.md",
@@ -16735,7 +16735,7 @@
     {
       "path": "publications.html",
       "bytes": 314968,
-      "sha256": "47dc4a272f357e83843a4713a3f85eac0bae077fb6035d19a88716e9759d97fb"
+      "sha256": "674fd7338222cbb7b0b03276fe60cef4e45b04330347cc3768b3214d31fa2aa8"
     },
     {
       "path": "pyproject.toml",
@@ -17250,7 +17250,7 @@
     {
       "path": "reports/current_counts.md",
       "bytes": 4185,
-      "sha256": "e4570d66ea86f76c541d020cc1810461558e26de68c20eb039113bd5986e4884"
+      "sha256": "e84816e6f7475daf52e2fb6cebc83c92023f9823e370798ea3aa59d3fb680b52"
     },
     {
       "path": "reports/deployment-attestations/5c25de204170cdf03c2f341f0fdc10f399aebaa4.json",
