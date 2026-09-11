@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-11T02:25:43.218472+00:00",
-  "source_commit": "8d84781a15120ee6bc805cefc4d0beb8e03c5f71",
+  "generated_at": "2026-09-11T19:09:24.951632+00:00",
+  "source_commit": "f6aaf8d6fa6f0676483a4aa4ac2d3ee7c33832ed",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
-  "source_tree_sha": "5775b6ee6f43c0b68729db7bac60c812d06b2643",
+  "source_tree_sha": "4c2c4de264ae45f8abdfd252d72264363cdee451",
   "date": "2026-09-11",
   "note": "Public API freshness report only. Review before updating curated site claims.",
   "facts": {
@@ -47,7 +47,7 @@
       "first_doi": "10.5281/zenodo.21418953"
     },
     "Zenodo ORCID-linked records": {
-      "total": 152,
+      "total": 153,
       "first_title": "Personal Red Lines for Development",
       "first_doi": "10.5281/zenodo.21754240"
     },
@@ -187,14 +187,14 @@
       "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
       "stargazers_count": 31,
       "language": "Python",
-      "updated_at": "2026-09-10T22:32:30Z",
+      "updated_at": "2026-09-11T04:24:06Z",
       "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation"
     },
     "GitHub repo ActiveInferenceInstitute/fep_lean": {
       "full_name": "ActiveInferenceInstitute/fep_lean",
       "stargazers_count": 2,
       "language": "Python",
-      "updated_at": "2026-09-10T22:32:09Z",
+      "updated_at": "2026-09-11T03:59:15Z",
       "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean"
     },
     "GitHub repo ActiveInferenceInstitute/cognitive": {
@@ -299,7 +299,7 @@
       "url": "https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22&size=1",
       "ok": true,
       "result": {
-        "total": 152,
+        "total": 153,
         "first_title": "Personal Red Lines for Development",
         "first_doi": "10.5281/zenodo.21754240"
       }
@@ -484,7 +484,7 @@
         "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
         "stargazers_count": 31,
         "language": "Python",
-        "updated_at": "2026-09-10T22:32:30Z",
+        "updated_at": "2026-09-11T04:24:06Z",
         "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation"
       }
     },
@@ -496,7 +496,7 @@
         "full_name": "ActiveInferenceInstitute/fep_lean",
         "stargazers_count": 2,
         "language": "Python",
-        "updated_at": "2026-09-10T22:32:09Z",
+        "updated_at": "2026-09-11T03:59:15Z",
         "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean"
       }
     },

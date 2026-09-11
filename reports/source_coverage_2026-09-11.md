@@ -1,13 +1,13 @@
 # Current Source Coverage
 
-Generated: `2026-09-10T18:07:03Z`
+Generated: `2026-09-11T17:50:54Z`
 
 This report records legitimate bibliography coverage gaps explicitly. A gap is not evidence that a work is invalid; it identifies what is or is not available in the repository projection.
 
 ## Summary
 
 - no_paper_folder: `17`
-- no_full_text: `23`
+- no_full_text: `24`
 - no_doi: `15`
 - no_canonical_url: `2`
 - non_paper_record: `22`
@@ -57,3 +57,4 @@ This report records legitimate bibliography coverage gaps explicitly. A gap is n
 | Friedman2026CognitiveIntegrityFrameworkPractical214 | Paper | no_full_text | needs_review |
 | Friedman2026ForensicAuditMillenniumLeanClay215 | Report | non_paper_record | legitimate_gap |
 | Friedman2026SkillarumConditionallyReproducibleWebsite216 | Paper | no_full_text | needs_review |
+| Friedman2026FractiSkillsOnePortableAgent217 | Paper | no_full_text | needs_review |

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-10T20:27:44Z",
+  "generated_at": "2026-09-11T19:39:33Z",
   "generator": "code/orchestrators/fetch_work_authors.py",
   "policy": {
     "sources": [
@@ -3141,14 +3141,21 @@
         }
       ]
     },
-    "Friedman2026CompositionalApproachesLinguisticCase112": {
+    "Friedman2026CognitiveDiagramsReviewingCategorical112": {
       "num": 112,
       "doi": "10.5281/zenodo.19695259",
-      "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+      "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
       "registration_agency": "DataCite",
       "resolved_title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
-      "title_similarity": 0.5,
-      "status": "title_mismatch"
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
     },
     "Friedman2026TowardsLean4Formalization113": {
       "num": 113,
@@ -5207,6 +5214,22 @@
         {
           "family": "Friedman",
           "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026FractiSkillsOnePortableAgent217": {
+      "num": 217,
+      "doi": "10.5281/zenodo.22712650",
+      "title": "FractiSkills: One Portable Agent Skill per Page",
+      "registration_agency": "DataCite",
+      "resolved_title": "FractiSkills: One Portable Agent Skill per Page",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Daniel Ari Friedman",
+          "given": "",
           "orcid": "0000-0001-6232-9096"
         }
       ]

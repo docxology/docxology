@@ -5,20 +5,28 @@ The repository is the canonical archive, while Pages is the navigable web
 projection. Paper-extracted image binaries and visual-QA screenshot binaries
 remain in GitHub for provenance but are not duplicated into the Pages artifact;
 generated paper pages point to their GitHub source image URLs and visual-QA
-manifests retain repository-relative paths plus SHA-256 digests. This keeps the
-published site below GitHub's 1 GiB Pages limit without removing source data
-from the repository.
+manifests retain repository-relative paths plus SHA-256 digests. Superseded
+dated reports are a third projection-only omission class: a top-level
+``reports/<family>_<YYYY-MM-DD>`` receipt strictly older than the newest
+receipt of its family, and whole dated screenshot sets under
+``reports/visual-qa/``, ``reports/browser-smoke/``, and ``reports/browser-qa/``
+older than that parent's newest date, stay committed in Git but leave the
+Pages projection; a report cited from a published page or data file is never
+omitted. This keeps the published site below GitHub's 1 GiB Pages limit
+without removing source data from the repository.
 """
 
 from __future__ import annotations
 
 import argparse
 import hashlib
+import functools
 import json
 import re
 import shutil
 import subprocess
 import sys
+from collections.abc import Iterable
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -26,6 +34,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 import release_controls  # noqa: E402
 from release_evidence import is_ephemeral_release_evidence_path  # noqa: E402
+import report_references  # noqa: E402
 
 # Re-export the shared policy for existing callers and focused contract tests.
 CONTROL_FILES = release_controls.CONTROL_FILES
@@ -209,8 +218,113 @@ def is_published_path(path: Path) -> bool:
     return not is_paper_extracted_image(path) and not is_visual_qa_screenshot(path)
 
 
+# Dated screenshot parents whose dated subdirectories are superseded snapshots
+# (validation reads only the newest set). Kept in lockstep with the artifact
+# omission rule, which covers browser-qa in addition to prune_old_reports' two.
+SCREENSHOT_PARENTS = ("visual-qa", "browser-smoke", "browser-qa")
+_DATED_REPORT_NAME_RE = re.compile(r"_(\d{4}-\d{2}-\d{2})")
+_DATE_DIR_NAME_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
+
+
+def _dated_report_family_date(name: str) -> tuple[str, date] | None:
+    """Return (family, date) for a top-level dated report filename.
+
+    The FIRST ``_YYYY-MM-DD`` occurrence delimits the family, so qualifier
+    variants (``paired_publications_2026-06-09-itrace.json``) and sibling
+    extensions (``.proposed.json``) share their family's newest date.
+    """
+    match = _DATED_REPORT_NAME_RE.search(name)
+    if match is None or match.start() == 0 or not Path(name).suffix:
+        return None
+    try:
+        parsed = date.fromisoformat(match.group(1))
+    except ValueError:
+        return None
+    return name[: match.start()], parsed
+
+
+def _report_reference_hit(path: Path, references: Iterable[str]) -> bool:
+    """Return whether a cited-by reference protects *path* from omission.
+
+    Protection follows the pruner's dated-set granularity: a top-level dated
+    receipt is protected by a citation naming exactly that path, and a file
+    under a dated screenshot directory is protected by any citation naming its
+    dated set — any member file or the bare dated directory (the pruner checks
+    prefix containment of ``reports/<parent>/<YYYY-MM-DD>``). A family-level
+    token such as ``reports/browser-smoke`` names no dated set and protects
+    nothing, so mentioning a family never pins its older sets.
+    """
+    parts = path.parts
+    if len(parts) >= 3 and parts[0] == "reports" and parts[1] in SCREENSHOT_PARENTS:
+        prefix = "/".join(parts[:3])
+    else:
+        prefix = path.as_posix()
+    return any(reference.startswith(prefix) for reference in references)
+
+
+def superseded_dated_report_paths(
+    paths: Iterable[Path], referenced_paths: Iterable[str] = ()
+) -> set[Path]:
+    """Return dated report paths strictly older than the newest of their family.
+
+    Pure predicate over *paths* implementing the third omission class:
+    top-level ``reports/<family>_<YYYY-MM-DD>(<qualifier>)?.<ext>`` receipts and
+    every file under a dated ``reports/<parent>/<YYYY-MM-DD>/`` directory for
+    ``SCREENSHOT_PARENTS``. A path is superseded only when its extracted date is
+    strictly older than the newest date present in the same family/parent, so
+    same-date multi-file sets are kept together. Paths named by
+    *referenced_paths* (the shared citation scan; projected surfaces only) are
+    never omitted.
+    """
+    family_members: dict[str, list[tuple[Path, date]]] = {}
+    dir_members: dict[str, list[tuple[Path, date]]] = {}
+    for path in paths:
+        parts = path.parts
+        if not parts or parts[0] != "reports":
+            continue
+        if len(parts) == 2:
+            family_date = _dated_report_family_date(path.name)
+            if family_date is not None:
+                family, parsed = family_date
+                family_members.setdefault(family, []).append((path, parsed))
+        elif len(parts) >= 3 and parts[1] in SCREENSHOT_PARENTS:
+            if _DATE_DIR_NAME_RE.fullmatch(parts[2]):
+                dir_members.setdefault(parts[1], []).append((path, date.fromisoformat(parts[2])))
+    superseded: set[Path] = set()
+    for members in (family_members, dir_members):
+        for member_list in members.values():
+            newest = max(parsed for _, parsed in member_list)
+            superseded.update(path for path, parsed in member_list if parsed < newest)
+    references = frozenset(referenced_paths)
+    if references:
+        superseded = {path for path in superseded if not _report_reference_hit(path, references)}
+    return superseded
+
+
+@functools.lru_cache(maxsize=1)
+def _referenced_report_paths() -> frozenset[str]:
+    """Return the shared citation scan for this checkout (deterministic per run)."""
+    return frozenset(report_references.referenced_report_paths(REPO_ROOT))
+
+
+def _superseded_report_paths() -> set[Path]:
+    """Return tracked dated reports the superseded-family rule omits.
+
+    Cited-by protection uses the same reference scan as ``prune_old_reports``
+    (``papers/`` included; inventory manifests and repo-only trees excluded), so
+    a report referenced from any projected surface stays published.
+    """
+    return superseded_dated_report_paths(
+        tracked_paths(), referenced_paths=_referenced_report_paths()
+    )
+
+
 def _relative_paths() -> list[Path]:
-    return sorted((path for path in tracked_paths() if is_published_path(path)), key=lambda path: path.as_posix())
+    superseded = _superseded_report_paths()
+    return sorted(
+        (path for path in tracked_paths() if is_published_path(path) and path not in superseded),
+        key=lambda path: path.as_posix(),
+    )
 
 
 def source_path(relative: Path, *, repo_root: Path = REPO_ROOT) -> Path:
@@ -245,12 +359,17 @@ def source_path(relative: Path, *, repo_root: Path = REPO_ROOT) -> Path:
 
 
 def _omitted_paths() -> list[Path]:
+    """Return every tracked path omitted from the projection, all classes."""
+    superseded = _superseded_report_paths()
     return sorted(
         (
             path
             for path in tracked_paths()
-            if not is_published_path(path)
-            and (is_paper_extracted_image(path) or is_visual_qa_screenshot(path))
+            if path in superseded
+            or (
+                not is_published_path(path)
+                and (is_paper_extracted_image(path) or is_visual_qa_screenshot(path))
+            )
         ),
         key=lambda path: path.as_posix(),
     )
@@ -324,6 +443,7 @@ MANIFEST_COMPARISON_FIELDS = (
     "control_files",
     "omitted_paper_images",
     "omitted_visual_qa_screenshots",
+    "omitted_superseded_reports",
     "growth_report",
 )
 
@@ -399,6 +519,14 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
     omitted_sources = {path: source_path(path) for path in omitted}
     paper_images = [path for path in omitted if is_paper_extracted_image(path)]
     visual_qa_screenshots = [path for path in omitted if is_visual_qa_screenshot(path)]
+    superseded_set = _superseded_report_paths()
+    superseded_reports = [
+        path
+        for path in omitted
+        if path in superseded_set
+        and not is_paper_extracted_image(path)
+        and not is_visual_qa_screenshot(path)
+    ]
     files = [
         {"path": path.as_posix(), "bytes": sources[path].stat().st_size, "sha256": _sha256(sources[path])}
         for path in included
@@ -417,8 +545,9 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
         "policy": {
             "repository_role": "complete archival source",
             "pages_role": "bounded navigable web projection",
-            "omitted_assets": "duplicated extracted paper-image binaries and dated visual-QA screenshot binaries",
+            "omitted_assets": "duplicated extracted paper-image binaries, dated visual-QA screenshot binaries, and superseded dated reports (same-family files strictly older than the newest, except reports cited by published surfaces)",
             "omitted_assets_fallback": "Use the GitHub tree/raw templates with the source commit and repository-relative path.",
+            "superseded_report_policy": "Superseded dated reports (older-than-newest per report family) remain in the committed repository and are omitted from the Pages projection; any report referenced from a published page or data file is never omitted.",
             "visual_qa_screenshot_policy": "Visual-QA manifests remain in Pages with repository-relative paths and SHA-256 digests; screenshot binaries remain in the committed repository rather than the deploy artifact.",
             "warning_policy": "At 880 MiB, review growth and report retention before deployment; 900 MiB is a release hard ceiling below the GitHub Pages 1 GiB platform limit.",
         },
@@ -446,6 +575,7 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
         ],
         "omitted_paper_images": _omitted_summary(paper_images, omitted_sources),
         "omitted_visual_qa_screenshots": _omitted_summary(visual_qa_screenshots, omitted_sources),
+        "omitted_superseded_reports": _omitted_summary(superseded_reports, omitted_sources),
         "growth_report": str(growth_rel),
     }
     # The manifest is part of the artifact. Iterate to account for its own
@@ -462,6 +592,35 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
         if current_body == existing_body and existing.get("generated_at"):
             payload["generated_at"] = existing["generated_at"]
     return payload
+
+
+def _growth_report_payload(payload: dict) -> dict:
+    """Return the dated growth receipt describing this manifest payload."""
+    growth = {
+        "schema_version": "1.0",
+        "generated_at": payload["generated_at"],
+        "source_commit_at_generation": payload["source_commit_at_generation"],
+        "artifact_file_count": payload["budget"]["artifact_file_count"],
+        "artifact_bytes": payload["budget"]["artifact_bytes"],
+        "artifact_mib": round(payload["budget"]["artifact_bytes"] / 1024 / 1024, 2),
+        "warning_bytes": WARNING_ARTIFACT_BYTES,
+        "safety_ceiling_bytes": MAX_ARTIFACT_BYTES,
+        "hard_limit_bytes": HARD_ARTIFACT_BYTES,
+        "omitted_paper_image_count": payload["omitted_paper_images"]["count"],
+        "omitted_visual_qa_screenshot_count": payload["omitted_visual_qa_screenshots"]["count"],
+        "omitted_visual_qa_screenshot_bytes": payload["omitted_visual_qa_screenshots"]["bytes"],
+        "omitted_superseded_report_count": payload["omitted_superseded_reports"]["count"],
+        "omitted_superseded_report_bytes": payload["omitted_superseded_reports"]["bytes"],
+    }
+    previous = sorted((REPO_ROOT / "reports").glob("pages_artifact_growth_*.json"))
+    if previous and previous[-1] != GROWTH_REPORT:
+        try:
+            prior = json.loads(previous[-1].read_text(encoding="utf-8"))
+            growth["delta_bytes"] = growth["artifact_bytes"] - int(prior.get("artifact_bytes", growth["artifact_bytes"]))
+            growth["previous_report"] = str(previous[-1].relative_to(REPO_ROOT))
+        except (OSError, ValueError, json.JSONDecodeError):
+            pass
+    return growth
 
 
 def write_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> dict:
@@ -481,28 +640,7 @@ def write_manifest(*, allow_dirty_prepayload_source_snapshot: bool = False) -> d
     payload = _manifest_payload(existing)
     ARTIFACT_MANIFEST.parent.mkdir(parents=True, exist_ok=True)
     ARTIFACT_MANIFEST.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    growth = {
-        "schema_version": "1.0",
-        "generated_at": payload["generated_at"],
-        "source_commit_at_generation": payload["source_commit_at_generation"],
-        "artifact_file_count": payload["budget"]["artifact_file_count"],
-        "artifact_bytes": payload["budget"]["artifact_bytes"],
-        "artifact_mib": round(payload["budget"]["artifact_bytes"] / 1024 / 1024, 2),
-        "warning_bytes": WARNING_ARTIFACT_BYTES,
-        "safety_ceiling_bytes": MAX_ARTIFACT_BYTES,
-        "hard_limit_bytes": HARD_ARTIFACT_BYTES,
-        "omitted_paper_image_count": payload["omitted_paper_images"]["count"],
-        "omitted_visual_qa_screenshot_count": payload["omitted_visual_qa_screenshots"]["count"],
-        "omitted_visual_qa_screenshot_bytes": payload["omitted_visual_qa_screenshots"]["bytes"],
-    }
-    previous = sorted((REPO_ROOT / "reports").glob("pages_artifact_growth_*.json"))
-    if previous and previous[-1] != GROWTH_REPORT:
-        try:
-            prior = json.loads(previous[-1].read_text(encoding="utf-8"))
-            growth["delta_bytes"] = growth["artifact_bytes"] - int(prior.get("artifact_bytes", growth["artifact_bytes"]))
-            growth["previous_report"] = str(previous[-1].relative_to(REPO_ROOT))
-        except (OSError, ValueError, json.JSONDecodeError):
-            pass
+    growth = _growth_report_payload(payload)
     GROWTH_REPORT.parent.mkdir(parents=True, exist_ok=True)
     GROWTH_REPORT.write_text(json.dumps(growth, indent=2) + "\n", encoding="utf-8")
     return payload
@@ -532,10 +670,18 @@ def assemble(output: Path) -> tuple[int, int, list[str]]:
     copied = 0
     bytes_copied = 0
     omitted: list[str] = []
+    superseded = _superseded_report_paths()
     for relative in tracked_paths():
         if not is_published_path(relative):
-            if len(relative.parts) >= 3 and relative.parts[0] == "papers" and "images" in relative.parts:
+            if (
+                len(relative.parts) >= 3
+                and relative.parts[0] == "papers"
+                and "images" in relative.parts
+            ) or is_visual_qa_screenshot(relative):
                 omitted.append(str(relative))
+            continue
+        if relative in superseded:
+            omitted.append(str(relative))
             continue
         source = source_path(relative)
         destination = output / relative
@@ -553,6 +699,63 @@ def projected_size(*, allow_dirty_prepayload_source_snapshot: bool = False) -> t
     )
     paths = _relative_paths()
     return len(paths), sum(source_path(path).stat().st_size for path in paths)
+
+
+_GUARD_TEXT_SUFFIXES = {".html", ".json", ".md", ".txt", ".xml"}
+_GUARD_URL_RE = re.compile(r"(?:https?:)?//[^\s'\"<>)]+")
+_GUARD_SKIP_DIRS = {"reports", "code"}
+_GUARD_SKIP_FILES = {
+    "data/pages-artifact-manifest.json",
+    "data/generated-manifest.json",
+    "data/report-retention.json",
+}
+
+
+def dangling_report_references(output: Path) -> list[str]:
+    """Return repository-relative ``reports/`` references the projection would 404.
+
+    Scans the built artifact's text files for ``reports/`` path references and
+    reports targets that exist in the repository but were not copied into
+    *output* — i.e. a shipped 404 the omission policy must not create. Absolute
+    and protocol-relative URLs (GitHub tree/raw fallback links) are stripped
+    before scanning and do not count as local references, and references found
+    inside the same source scopes the shared citation scan excludes
+    (``reports/``, ``code/``, and the inventory manifests) are ignored, keeping
+    the guard consistent with the cited-by protection. References to paths that
+    no longer exist in the repository (historically pruned evidence named in
+    provenance docs) are pre-existing drift, not an omission, and are skipped.
+    """
+    dangling: set[str] = set()
+    for path in output.rglob("*"):
+        if not path.is_file() or path.suffix.lower() not in _GUARD_TEXT_SUFFIXES:
+            continue
+        try:
+            relative = path.relative_to(output)
+        except ValueError:
+            continue
+        if any(part in _GUARD_SKIP_DIRS for part in relative.parts):
+            continue
+        if relative.as_posix() in _GUARD_SKIP_FILES:
+            continue
+        try:
+            text = path.read_text(encoding="utf-8", errors="ignore")
+        except OSError:
+            continue
+        cleaned = _GUARD_URL_RE.sub(" ", text)
+        for match in report_references.REPORT_PATH_PATTERN.finditer(cleaned):
+            token = match.group(0).rstrip("./")
+            if ".." in Path(token).parts:
+                continue
+            target = output / token
+            if target.is_file() or target.is_dir():
+                continue
+            repo_target = REPO_ROOT / token
+            if not (repo_target.is_file() or repo_target.is_dir()):
+                continue
+            if is_visual_qa_screenshot(Path(token)):
+                continue
+            dangling.add(token)
+    return sorted(dangling)
 
 
 def main() -> None:
@@ -599,13 +802,19 @@ def main() -> None:
         return
     output = args.output if args.output.is_absolute() else REPO_ROOT / args.output
     copied, size, omitted = assemble(output)
+    dangling = dangling_report_references(output)
+    if dangling:
+        raise SystemExit(
+            "Pages projection would 404 on referenced reports: " + ", ".join(dangling)
+        )
     print(f"assembled {copied} tracked files ({size / 1024 / 1024:.1f} MiB) at {output}")
     paper_images = sum(1 for path in omitted if is_paper_extracted_image(Path(path)))
     visual_qa_screenshots = sum(1 for path in omitted if is_visual_qa_screenshot(Path(path)))
+    superseded_reports = len(omitted) - paper_images - visual_qa_screenshots
     print(
-        f"omitted {len(omitted)} source-only binary assets "
-        f"({paper_images} paper images, {visual_qa_screenshots} visual-QA screenshots); "
-        "source copies remain in GitHub"
+        f"omitted {len(omitted)} source-only assets "
+        f"({paper_images} paper images, {visual_qa_screenshots} visual-QA screenshots, "
+        f"{superseded_reports} superseded dated reports); source copies remain in GitHub"
     )
     if args.check_size and size > MAX_ARTIFACT_BYTES:
             raise SystemExit(

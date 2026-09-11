@@ -4065,9 +4065,9 @@
     "URL": "https://doi.org/10.1007/978-3-032-16955-6_11"
   },
   {
-    "id": "Friedman2026CompositionalApproachesLinguisticCase112",
+    "id": "Friedman2026CognitiveDiagramsReviewingCategorical112",
     "type": "article-journal",
-    "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+    "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
     "author": [
       {
         "family": "Friedman",
@@ -7027,5 +7027,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.22663906",
     "URL": "https://doi.org/10.5281/zenodo.22663906"
+  },
+  {
+    "id": "Friedman2026FractiSkillsOnePortableAgent217",
+    "type": "article-journal",
+    "title": "FractiSkills: One Portable Agent Skill per Page",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 217; docs: papers/2026_FractiSkills/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.22712650",
+    "URL": "https://doi.org/10.5281/zenodo.22712650"
   }
 ]

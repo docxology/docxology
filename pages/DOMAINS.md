@@ -74,7 +74,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 
 - 2026 — [A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring](https://doi.org/10.5281/zenodo.19461933)
 - 2026 — [Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences](https://doi.org/10.1007/978-3-032-16955-6_11)
-- 2026 — [Compositional Approaches to Linguistic Case for Cognitive Modeling](https://doi.org/10.5281/zenodo.19695259)
+- 2026 — [Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case](https://doi.org/10.5281/zenodo.19695259)
 - 2026 — [Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics](https://doi.org/10.5281/zenodo.19699233)
 - 2026 — [GeneralizedNotationNotation (GNN)](https://doi.org/10.5281/zenodo.7803313)
 - 2026 — [On-Policy Distillation as Active Inference in Finite Variational Models](https://doi.org/10.5281/zenodo.20747834)
@@ -164,7 +164,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 55
+- Works: 56
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 

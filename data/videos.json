@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T18:09:00Z",
+  "generated_at": "2026-09-11T17:52:22Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -4130,11 +4130,11 @@
           "url": "/works/Friedman2026ActiveSkillferenceValidatedPrerequisite211.html"
         },
         {
-          "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
-          "citation_key": "Friedman2026CompositionalApproachesLinguisticCase112",
+          "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+          "citation_key": "Friedman2026CognitiveDiagramsReviewingCategorical112",
           "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2026CompositionalApproachesLinguisticCase112.html"
+          "url": "/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html"
         },
         {
           "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
@@ -5445,6 +5445,13 @@
       ],
       "related_works": [
         {
+          "title": "FractiSkills: One Portable Agent Skill per Page",
+          "citation_key": "Friedman2026FractiSkillsOnePortableAgent217",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026FractiSkillsOnePortableAgent217.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
@@ -5464,13 +5471,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020ReimaginingMaps148.html"
-        },
-        {
-          "title": "The Innovator's Catechism",
-          "citation_key": "Friedman2020InnovatorSCatechism090",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020InnovatorSCatechism090.html"
         }
       ]
     },
@@ -5956,6 +5956,13 @@
       ],
       "related_works": [
         {
+          "title": "FractiSkills: One Portable Agent Skill per Page",
+          "citation_key": "Friedman2026FractiSkillsOnePortableAgent217",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026FractiSkillsOnePortableAgent217.html"
+        },
+        {
           "title": "Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations",
           "citation_key": "Friedman2018ForagingBehaviorLocomotionInvasive096",
           "year": 2018,
@@ -5975,13 +5982,6 @@
           "year": 2019,
           "domain": "Entomology",
           "url": "/works/Friedman2019PhysiologyForagerHydrationVariation095.html"
-        },
-        {
-          "title": "Emergent Teams for Complex Threats",
-          "citation_key": "Friedman2020EmergentTeamsComplexThreats085",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020EmergentTeamsComplexThreats085.html"
         }
       ]
     },
@@ -10506,6 +10506,13 @@
       ],
       "related_works": [
         {
+          "title": "FractiSkills: One Portable Agent Skill per Page",
+          "citation_key": "Friedman2026FractiSkillsOnePortableAgent217",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026FractiSkillsOnePortableAgent217.html"
+        },
+        {
           "title": "Golden Line: Toward What Matters",
           "citation_key": "Friedman2026GoldenLineTowardWhat204",
           "year": 2026,
@@ -10525,13 +10532,6 @@
           "year": 2018,
           "domain": "Art & Synergetics",
           "url": "/works/Friedman2018PartnerPenPlayParallel099.html"
-        },
-        {
-          "title": "Emergent Teams for Complex Threats",
-          "citation_key": "Friedman2020EmergentTeamsComplexThreats085",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020EmergentTeamsComplexThreats085.html"
         }
       ]
     },
@@ -22709,6 +22709,13 @@
           "url": "/works/Friedman2023SinglePheromoneModelAccounts046.html"
         },
         {
+          "title": "FractiSkills: One Portable Agent Skill per Page",
+          "citation_key": "Friedman2026FractiSkillsOnePortableAgent217",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026FractiSkillsOnePortableAgent217.html"
+        },
+        {
           "title": "The MutAnts are here",
           "citation_key": "Friedman2017MutAntsAreHere101",
           "year": 2017,
@@ -22721,13 +22728,6 @@
           "year": 2017,
           "domain": "Entomology",
           "url": "/works/Friedman2017TwoLineagesThatNeed102.html"
-        },
-        {
-          "title": "Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations",
-          "citation_key": "Friedman2018ForagingBehaviorLocomotionInvasive096",
-          "year": 2018,
-          "domain": "Entomology",
-          "url": "/works/Friedman2018ForagingBehaviorLocomotionInvasive096.html"
         }
       ]
     },
@@ -56841,11 +56841,11 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
-          "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
-          "citation_key": "Friedman2026CompositionalApproachesLinguisticCase112",
+          "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+          "citation_key": "Friedman2026CognitiveDiagramsReviewingCategorical112",
           "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2026CompositionalApproachesLinguisticCase112.html"
+          "url": "/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html"
         },
         {
           "title": "The Great Preset: Remote Teams and Operational Art",
@@ -58905,6 +58905,13 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
+          "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+          "citation_key": "Friedman2026CognitiveDiagramsReviewingCategorical112",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html"
+        },
+        {
           "title": "MVEE: A Framework for Evolutionary Studies",
           "citation_key": "Friedman2018MVEEFrameworkEvolutionaryStudies097",
           "year": 2018,
@@ -58917,13 +58924,6 @@
           "year": 2018,
           "domain": "Active Inference",
           "url": "/works/Friedman2018WoodliceMenBayesianAccount098.html"
-        },
-        {
-          "title": "Active Inference & Behavior Engineering for Teams",
-          "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
-          "year": 2020,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2020ActiveInferenceBehaviorEngineering082.html"
         }
       ]
     },
@@ -81740,11 +81740,11 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
-          "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
-          "citation_key": "Friedman2026CompositionalApproachesLinguisticCase112",
+          "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+          "citation_key": "Friedman2026CognitiveDiagramsReviewingCategorical112",
           "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2026CompositionalApproachesLinguisticCase112.html"
+          "url": "/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html"
         },
         {
           "title": "MVEE: A Framework for Evolutionary Studies",
@@ -87285,11 +87285,11 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
-          "title": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
-          "citation_key": "Friedman2026CompositionalApproachesLinguisticCase112",
+          "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+          "citation_key": "Friedman2026CognitiveDiagramsReviewingCategorical112",
           "year": 2026,
           "domain": "Active Inference",
-          "url": "/works/Friedman2026CompositionalApproachesLinguisticCase112.html"
+          "url": "/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html"
         },
         {
           "title": "MVEE: A Framework for Evolutionary Studies",

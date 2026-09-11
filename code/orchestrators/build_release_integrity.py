@@ -181,6 +181,7 @@ def build_payload() -> dict:
             "artifact_file_count": pages.get("budget", {}).get("artifact_file_count"),
             "artifact_bytes": pages.get("budget", {}).get("artifact_bytes"),
             "omitted_paper_image_count": pages.get("omitted_paper_images", {}).get("count"),
+            "omitted_superseded_report_count": pages.get("omitted_superseded_reports", {}).get("count"),
         },
         "deployment": deployment_payload,
         "privacy": {

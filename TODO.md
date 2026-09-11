@@ -169,38 +169,38 @@ evidence and belong in `CHANGELOG.md` at merge time:
 
 ## Session findings (2026-09-10)
 
-Intake/republication pass findings left for principal review; each item is
-recorded with its evidence and a pointer, and none has been applied yet:
+Intake/republication pass findings. All five decision items were resolved on
+2026-09-11 (dispositions recorded in-line and in the cited ledgers); the
+remaining entries are records of mechanized or resolved state:
 
-- **EvoJump `needs_review` cluster (12 pairs):** the 2026-09-10 pairing
-  report queues 12 `needs_review` actions, all cross-products of two
-  duplicate Zenodo concepts — 10.5281/zenodo.22664645 (auto-archive upload,
-  zip only) and 10.5281/zenodo.22664675 (paper PDF `evojump_paper.pdf`) —
-  both titled "EvoJump: A Comprehensive Framework for Evolutionary
-  Ontogenetic Analysis" v0.5.2, against six `docxology/EvoJump` GitHub
-  releases (v1, v0.3.0, v0.4.0, v0.5.0, v0.5.1, v0.5.2). Open questions for
-  the principal: which concept is canonical; whether this is new work or an
-  edition of the 2025 row #12 (concept 10.5281/zenodo.17229924); and whether
-  the paper gets a bibliography row or stays SOFTWARE.md-only. Evidence:
-  `reports/paired_publications_2026-09-10.json` `needs_review` entries.
-- **CCD title divergence (curation call, not applied):** bibliography row
-  #112 still carries "Compositional Approaches to Linguistic Case for
-  Cognitive Modeling" (concept DOI 10.5281/zenodo.19695259), while the
-  Zenodo latest version (v2.4.0) self-titles "Cognitive Diagrams: Reviewing
-  Categorical Accounts of Linguistic Case". Needs a principal call on which
-  title the row should carry.
-- **On Time version-DOI exception:** row #17 deliberately cites the version
-  DOI 10.5281/zenodo.15168382 (commit `d086e7a3`, 2026-08-22), but that
-  exception is missing from `VERSION_SPECIFIC_CITATION_EXCEPTIONS`, so the
-  tool began flagging it once the Zenodo API exposed `conceptdoi`
-  (10.5281/zenodo.15168381; record id 15168382 — also the 2026-09-10 report's
-  single `non_canonical_doi` entry). The principal must approve adding the
-  exception.
-- **Uncatalogued Zenodo supplement:** record 22666981 (concept
-  10.5281/zenodo.22655341) is a software-only supplement to the represented
-  CCD paper; no row was added. After review the principal may register
-  concept 10.5281/zenodo.22655341 in `KNOWN_STALE_RECORD_IDS`. Evidence:
-  `reports/zenodo_uncatalogued_2026-09-10.json`.
+- **EvoJump `needs_review` cluster (12 pairs): RESOLVED (2026-09-11).** The
+  12 `needs_review` actions in the 2026-09-10 pairing report were the
+  cross-product of two Zenodo concepts — 10.5281/zenodo.22664645 (auto-archive
+  upload, zip only) and 10.5281/zenodo.22664675 (source archive + paper PDF
+  `evojump_paper.pdf`) — against six `docxology/EvoJump` releases. Decisions
+  recorded in `data/paired-publication-decisions.json`: R80 accepts the six
+  22664675 pairs as software-catalog (canonical curated deposit — the README
+  citation links it and it carries the only github_release_mentions_doi
+  cross-link; the citable paper remains bibliography row #12, concept
+  10.5281/zenodo.17229924; no new bibliography row, R02 precedent), and R81
+  supersedes the six 22664645 pairs as the GitHub-Zenodo automated integration
+  archive. The next pairing report should show zero `needs_review`.
+- **CCD title divergence (curation call, not applied): RESOLVED (2026-09-11).**
+  Bibliography row #112 adopted the Zenodo v2.4.0 self-title "Cognitive
+  Diagrams: Reviewing Categorical Accounts of Linguistic Case" (concept DOI
+  10.5281/zenodo.19695259 unchanged); this also clears the
+  `fetch_work_authors.py` title_mismatch flag.
+- **On Time version-DOI exception: RESOLVED (2026-09-11).** Record 15168382
+  (row #17, commit `d086e7a3`) is registered in
+  `VERSION_SPECIFIC_CITATION_EXCEPTIONS` (`code/orchestrators/check_zenodo_uncatalogued.py`)
+  with full identity (title, concept 10.5281/zenodo.15168381, version DOI
+  10.5281/zenodo.15168382); the next report's `non_canonical_doi` count drops
+  to zero.
+- **Uncatalogued Zenodo supplement: RESOLVED (2026-09-11).** Record 22666981
+  (software-only supplement to the CCD paper; the paper row cites concept
+  10.5281/zenodo.19695259) is registered in `KNOWN_STALE_RECORD_IDS` by bare
+  record id — the matcher compares record ids, so the concept id in the
+  original note would never have matched.
 - **Fork registered:** `docxology/oh-my-pi` was registered under the standing
   fork policy (DOC-005 mechanized path), matching the RGMs precedent.
 - **Pages artifact budget review (DOC-009/DOC-012; threshold 850 → 880 MiB):**
@@ -209,12 +209,18 @@ recorded with its evidence and a pointer, and none has been applied yet:
   tripping CI's artifact-budget gate. Composition at review: paper PDFs
   681 MiB, published dated reports ≈ 60 MiB, extracted paper images 950
   MiB (omitted by policy). The review threshold moved to 880 MiB
-  (documented in CHANGELOG 2026-09-10); PRINCIPAL REVIEW: the durable fix
-  is omitting superseded dated reports from the Pages projection (they
-  would remain in the repository per the DOC-012 retention tiers, with
-  GitHub tree/raw fallbacks), which needs an explicit retention decision
-  plus an `build_pages_artifact.py` omission class before the next
-  evidence wave re-trips the threshold.
+  (documented in CHANGELOG 2026-09-10). RESOLVED (2026-09-11): the omission
+  class landed — `build_pages_artifact.py` now omits superseded dated reports
+  from the Pages projection (top-level receipts strictly older than their
+  family's newest, plus whole dated visual-qa/browser-smoke/browser-qa sets),
+  with cited-by protection so a report referenced from a published surface
+  stays published; reports remain in the repository per the DOC-012 retention
+  tiers (projection-only omission needs no retention entry), and the shared
+  `code/src/report_references.py` scan keeps the pruner's safety net in
+  lockstep. Measured: 390 files / 70.9 MiB newly out of the artifact,
+  projecting ≈793.3 MiB with ≈87 MiB of headroom under the unchanged
+  880 MiB band (see `docs/operations/asset-strategy-adr.md`, "Execution
+  (2026-09-11)").
 
 ## P0 — Release and integrity
 

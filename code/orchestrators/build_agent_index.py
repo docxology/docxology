@@ -260,14 +260,15 @@ SCHEMAS = {
     },
     "PagesArtifactManifest": {
         "type": "object",
-        "description": "Bounded GitHub Pages projection file list, byte budget, omitted-image policy, and GitHub fallback templates.",
-        "required": ["schema_version", "source_commit_at_generation", "github_fallback", "budget", "included_files", "omitted_paper_images"],
+        "description": "Bounded GitHub Pages projection file list, byte budget, omitted-image and superseded-report policy, and GitHub fallback templates.",
+        "required": ["schema_version", "source_commit_at_generation", "github_fallback", "budget", "included_files", "omitted_paper_images", "omitted_superseded_reports"],
         "fields": {
             "source_commit_at_generation": "Git commit used when the artifact was measured",
             "github_fallback": "tree/raw URL templates",
             "budget": "hard limit, safety ceiling, warning, file count, and byte totals",
             "included_files": "array of included path/size/hash records",
             "omitted_paper_images": "count and fallback-preserving policy summary",
+            "omitted_superseded_reports": "count and fallback-preserving policy summary for dated reports superseded by a newer receipt of their family; reports cited from published surfaces are never omitted",
         },
     },
     "ReleaseIntegrity": {

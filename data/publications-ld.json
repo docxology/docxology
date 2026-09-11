@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 213 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 214 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -4876,8 +4876,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
-            "headline": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+            "name": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+            "headline": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
             "datePublished": "2026",
             "author": [
                 {
@@ -4895,9 +4895,9 @@
                 "name": "Active Inference Journal"
             },
             "keywords": "🧠",
-            "@id": "https://danielarifriedman.com/works/Friedman2026CompositionalApproachesLinguisticCase112.html#work",
-            "url": "https://danielarifriedman.com/works/Friedman2026CompositionalApproachesLinguisticCase112.html",
-            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026CompositionalApproachesLinguisticCase112.html",
+            "@id": "https://danielarifriedman.com/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html",
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
@@ -4905,7 +4905,7 @@
                 "url": "https://doi.org/10.5281/zenodo.19695259"
             },
             "sameAs": "https://doi.org/10.5281/zenodo.19695259",
-            "citation": "Friedman, Daniel Ari. 2026. Compositional Approaches to Linguistic Case for Cognitive Modeling. Active Inference Journal. DOI: 10.5281/zenodo.19695259. URL: https://doi.org/10.5281/zenodo.19695259."
+            "citation": "Friedman, Daniel Ari. 2026. Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case. Active Inference Journal. DOI: 10.5281/zenodo.19695259. URL: https://doi.org/10.5281/zenodo.19695259."
         },
         {
             "@type": "ScholarlyArticle",
@@ -8480,6 +8480,39 @@
             },
             "sameAs": "https://doi.org/10.5281/zenodo.22663906",
             "citation": "Friedman, Daniel Ari. 2026. Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation. Zenodo. DOI: 10.5281/zenodo.22663906. URL: https://doi.org/10.5281/zenodo.22663906."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "FractiSkills: One Portable Agent Skill per Page",
+            "headline": "FractiSkills: One Portable Agent Skill per Page",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026FractiSkillsOnePortableAgent217.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026FractiSkillsOnePortableAgent217.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026FractiSkillsOnePortableAgent217.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.22712650",
+                "url": "https://doi.org/10.5281/zenodo.22712650"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.22712650",
+            "citation": "Friedman, Daniel Ari. 2026. FractiSkills: One Portable Agent Skill per Page. Zenodo. DOI: 10.5281/zenodo.22712650. URL: https://doi.org/10.5281/zenodo.22712650."
         }
     ]
 }

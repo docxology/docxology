@@ -97,9 +97,14 @@ def test_approved_version_specific_doi_exception_is_emitted_with_asserted_identi
             "17982447",
             "10.5281/zenodo.14108991",
             "The Active Inference Institute & Active Inference Ecosystem",
-        )
+        ),
+        _record(
+            "15168382",
+            "10.5281/zenodo.15168381",
+            "On Time",
+        ),
     ]
-    catalogued = {"10.5281/zenodo.17982447"}
+    catalogued = {"10.5281/zenodo.17982447", "10.5281/zenodo.15168382"}
 
     approved, drift = approved_version_specific_doi_exceptions(records, catalogued)
 
@@ -114,8 +119,20 @@ def test_approved_version_specific_doi_exception_is_emitted_with_asserted_identi
                 "AII Ecosystem v3 is a separately curated 2025 bibliographic "
                 "snapshot, distinct from the earlier v2 concept record."
             ),
-        }
+        },
+        {
+            "record_id": "15168382",
+            "title": "On Time",
+            "concept_doi": "10.5281/zenodo.15168381",
+            "version_doi_in_bibliography": "10.5281/zenodo.15168382",
+            "reason": (
+                "On Time is a separately curated 2025 paper snapshot; all "
+                "references were deliberately pointed at version record "
+                "15168382 in commit d086e7a3 (2026-08-22)."
+            ),
+        },
     ]
+
 
 
 def test_approved_version_specific_doi_exception_fails_closed_on_identity_drift():

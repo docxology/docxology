@@ -2,6 +2,48 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-09-11
+
+- **Backlog batch — all five 2026-09-10 principal-review items resolved:**
+  EvoJump: R80 accepts the six release pairs under the canonical curated
+  concept `10.5281/zenodo.22664675` as software-catalog and R81 supersedes the
+  six auto-archive pairs under `10.5281/zenodo.22664645`
+  (`data/paired-publication-decisions.json`, groups 79 → 81; the citable paper
+  remains row #12, concept `10.5281/zenodo.17229924`; no new bibliography row).
+  CCD row #112 adopted the Zenodo v2.4.0 self-title "Cognitive Diagrams:
+  Reviewing Categorical Accounts of Linguistic Case". The On Time version-DOI
+  citation (record `15168382`) gained its full-identity
+  `VERSION_SPECIFIC_CITATION_EXCEPTIONS` entry, and software-only record
+  `22666981` was registered in `KNOWN_STALE_RECORD_IDS` by record id
+  (`check_zenodo_uncatalogued.py`) — the next uncatalogued/DOI-role reports
+  should show zero flags for both.
+- **Superseded dated reports omitted from the Pages projection (DOC-009/DOC-012
+  durable fix):** `build_pages_artifact.py` gained a third omission class — any
+  tracked `reports/` path strictly older than the newest date of its family
+  (top-level `reports/<family>_<YYYY-MM-DD>` receipts, including qualifier
+  variants like `paired_publications_2026-06-09-itrace.json`, plus whole dated
+  `reports/visual-qa/`, `reports/browser-smoke/`, `reports/browser-qa/` sets)
+  is left out of the deploy artifact while every file stays committed in the
+  repository. Files sharing a family's newest date stay published together, and
+  the new shared citation scan (`code/src/report_references.py`, reused by
+  `prune_old_reports._referenced_externally` so both tools share one exclusion
+  semantics — `papers/` in scope, inventory manifests and repo-only trees out)
+  keeps any report cited from a published page or data file in the projection.
+  Measured against the 2026-09-11 growth receipt (864.17 MiB, 5,184 files):
+  **390 files / 70.9 MiB** newly leave the artifact, projecting **≈793.3 MiB**
+  with ≈87 MiB of headroom under the unchanged 880 MiB review band — the band
+  and the 900 MiB release ceiling are untouched, and each new evidence wave now
+  adds only the newest receipt per family. The manifest gains the
+  `omitted_superseded_reports` summary (count, bytes, examples) with the
+  `superseded_report_policy` key, `MANIFEST_COMPARISON_FIELDS` covers the new
+  field, the growth receipt adds `omitted_superseded_report_count`/`_bytes`,
+  and a durable 404 guard fails the build if any repository-relative `reports/`
+  reference in the assembled projection was not copied. Docs:
+  `github-pages-artifact.md`, `report-retention.md` (projection-only omission
+  is the default archive tier, no retention entry needed),
+  `asset-strategy-adr.md` execution subsection, and the agent-index
+  `PagesArtifactManifest` schema; the principal-review TODO item is resolved.
+
 ## 2026-09-10
 
 - **Publication intake — Skillarum #216 and 48 versioned updates (GitHub +

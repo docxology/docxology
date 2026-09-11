@@ -37,7 +37,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | Europe PMC | [Daniel Ari Friedman author search](https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22) | Europe PMC returned 10 exact-author results, including preprints, on 2026-09-11 |
 | Crossref API | [ORCID DOI records](https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096) | Crossref returned 15 DOI records attached to the ORCID on 2026-09-11 |
 | Zenodo | [Exact-name creator search](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | Zenodo returned 65 exact-name records on 2026-09-11 |
-| Zenodo API | [ORCID-linked records](https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22) | ORCID-linked query returned 152 records on 2026-09-11, including versioned deposits and software archives |
+| Zenodo API | [ORCID-linked records](https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22) | ORCID-linked query returned 153 records on 2026-09-11, including versioned deposits and software archives |
 | Semantic Scholar | [Exact-name search](https://www.semanticscholar.org/search?q=%22Daniel%20Ari%20Friedman%22&sort=relevance) | AI-curated citation graph; verify candidate author merges before using as profile evidence |
 | DBLP | [Author page](https://dblp.org/pid/346/2173.html) | Computer-science bibliography mirror |
 | PubMed Central / NCBI | [PubMed query](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | Use for biomedical indexing and PMID lookup |

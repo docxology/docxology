@@ -2,7 +2,7 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `486fde138e5050beb0845b11ce0e374099e55bee`
+Source commit: `3feacb6f4ca19382a23618b8573e1d38e09609b8`
 
 ## Disposition summary
 
@@ -24,14 +24,14 @@ Source commit: `486fde138e5050beb0845b11ce0e374099e55bee`
 ## Evidence inputs
 
 - `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`1d01574cb4fb9c626202fd7572f637da37c4602ce38c2b79bd0c2390c057c60f`)
-- `claims_ledger`: `data/claims.json` (`f13ad85f622e35bd7989af261513d68d5da9da860a7af3757862df233af582d5`)
+- `claims_ledger`: `data/claims.json` (`ffc1cabd8b46df74b3e7c2ebd0e36ccc7022f03803a48474d031fe3faeb690d4`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
-- `paired_publication_decisions`: `data/paired-publication-decisions.json` (`72a958b7137de8afd5fc3401bbd6970c9bde7a64f372e7a0e694d017e6bc36e7`)
-- `paired_publications`: `reports/paired_publications_2026-09-10.json` (`1d336bab37c6027f13f3cee1b68de4f607fc7cde59c5ab5406c6cd9467b283f2`)
+- `paired_publication_decisions`: `data/paired-publication-decisions.json` (`11a7f941bee41020a9db79bbc126ac0dc4bca2632fb08bba2dc644f94e11f262`)
+- `paired_publications`: `reports/paired_publications_2026-09-11.json` (`1bc9e0053700a8eb8949fc68cadc1f896a39fdaa721220c4bbb541a08e77010e`)
 - `previous_public_source_snapshot`: `reports/public_source_snapshot_2026-09-04.json` (`f0f6f41807c0ae2efcc18cb1e040c5e555dadb7a20f04f0616ba42654d797974`)
 - `public_source_inventory`: `reports/public_source_inventory_2026-09-10.json` (`db17b4028eebbad33aac4fbf2c0d2ba350de9f58a09c19c11d06f242c542c144`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`cff826363c7ca0e66bf583ee039a27cf0bfebc05ef57fb3222a8d91f50f73714`)
-- `public_source_snapshot`: `reports/public_source_snapshot_2026-09-11.json` (`3e9d7217e6e3a6de84ee30578ca35b07f15653f5bdaae444759a8d4007334c4d`)
+- `public_source_snapshot`: `reports/public_source_snapshot_2026-09-11.json` (`546bf6d652c039a44b5db0c46821d66ac7a7d9cd2e3cf8a8549de6f9839f71cc`)
 - `repository_classification`: `data/repository-classification.json` (`8b8af21e5ea029ffd363566285dd7eaf3d0f35f18271ab0ed2f780dcfd61add2`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2`)
 - `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5`)

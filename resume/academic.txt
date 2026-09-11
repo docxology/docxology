@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-09-11T03:04:41Z
+Generated: 2026-09-11T19:11:44Z
 
-Current public metrics: 213 curated works; 149 catalogued software repositories (110 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 213 docxology + 43 AII public repositories (167 primary, 89 forks).
+Current public metrics: 214 curated works; 149 catalogued software repositories (110 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 213 docxology + 43 AII public repositories (167 primary, 89 forks).
 
 SUMMARY
 -------
@@ -134,7 +134,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (213)
+WORKS AND PUBLICATIONS (214)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -246,7 +246,7 @@ WORKS AND PUBLICATIONS (213)
 [109] 2026 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | Zenodo | 10.5281/zenodo.19574117
 [110] 2026 | Paper | A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring | Active Inference Journal | 10.5281/zenodo.19461933
 [111] 2026 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | CSCIS vol 2857, Springer | 10.1007/978-3-032-16955-6_11
-[112] 2026 | Paper | Compositional Approaches to Linguistic Case for Cognitive Modeling | Active Inference Journal | 10.5281/zenodo.19695259
+[112] 2026 | Paper | Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case | Active Inference Journal | 10.5281/zenodo.19695259
 [113] 2026 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | Active Inference Journal | 10.5281/zenodo.19699233
 [114] 2020 | Paper | The Facilitator's Catechism | Zenodo | 10.5281/zenodo.4062540
 [115] 2026 | Paper | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | Zenodo | 10.5281/zenodo.20144983
@@ -349,6 +349,7 @@ WORKS AND PUBLICATIONS (213)
 [214] 2026 | Paper | Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications) | Zenodo | 10.5281/zenodo.22134547
 [215] 2026 | Report | Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global) | Zenodo | 10.5281/zenodo.22243473
 [216] 2026 | Paper | Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation | Zenodo | 10.5281/zenodo.22663906
+[217] 2026 | Paper | FractiSkills: One Portable Agent Skill per Page | Zenodo | 10.5281/zenodo.22712650
 
 SOFTWARE (69)
 -------------

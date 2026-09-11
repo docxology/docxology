@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**213 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**214 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-815_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical · 🔍 Other
 
-**191** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
+**192** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
 
-> **213** works in the table below **·** **196** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **214** works in the table below **·** **197** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -148,7 +148,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 109 | 2026 | 🐜 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | *Zenodo* | [10.5281/zenodo.19574117](https://doi.org/10.5281/zenodo.19574117) | [📁](../papers/2026_EntoLinguistics/) | Friedman, Daniel Ari; Chambers, Tucker Cahill |
 | 110 | 2026 | 🧠 | Paper | A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring | *Active Inference Journal* | [10.5281/zenodo.19461933](https://doi.org/10.5281/zenodo.19461933) | [📁](../papers/2026_ActInfMetaAnalysis/) | Friedman, Daniel Ari; Dietz, Joel |
 | 111 | 2026 | 🧠 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | *CSCIS vol 2857, Springer* | [10.1007/978-3-032-16955-6_11](https://doi.org/10.1007/978-3-032-16955-6_11) | [📁](../papers/2026_FocusedAttentionMeditation/) | Kavi, Prakash Chandra; Friedman, Daniel Ari; Patow, Gustavo |
-| 112 | 2026 | 🧠 | Paper | Compositional Approaches to Linguistic Case for Cognitive Modeling | *Active Inference Journal* | [10.5281/zenodo.19695259](https://doi.org/10.5281/zenodo.19695259) | [📁](../papers/2026_CognitiveCaseDiagrams/) | — |
+| 112 | 2026 | 🧠 | Paper | Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case | *Active Inference Journal* | [10.5281/zenodo.19695259](https://doi.org/10.5281/zenodo.19695259) | [📁](../papers/2026_CognitiveCaseDiagrams/) | — |
 | 113 | 2026 | 🧠 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | *Active Inference Journal* | [10.5281/zenodo.19699233](https://doi.org/10.5281/zenodo.19699233) | [📁](../papers/2026_FEPLean/) | Friedman, Daniel Ari |
 | 114 | 2020 | 🛡️ | Paper | The Facilitator's Catechism | *Zenodo* | [10.5281/zenodo.4062540](https://doi.org/10.5281/zenodo.4062540) | [📁](../papers/2020_FacilitatorsCatechism/) | Cordes, Richard J.; Friedman, Daniel Ari |
 | 115 | 2026 | 🎨 | Paper | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | *Zenodo* | [10.5281/zenodo.20144983](https://doi.org/10.5281/zenodo.20144983) | [📁](../papers/2026_BlakeJiang/) | Friedman, Daniel Ari |
@@ -251,6 +251,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 214 | 2026 | 🛡️ | Paper | Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications) | *Zenodo* | [10.5281/zenodo.22134547](https://doi.org/10.5281/zenodo.22134547) | [📁](../papers/2026_CognitiveIntegrityFramework2/) | Friedman, Daniel Ari |
 | 215 | 2026 | 🔍 | Report | Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global) | *Zenodo* | [10.5281/zenodo.22243473](https://doi.org/10.5281/zenodo.22243473) | [📁](../papers/2026_MillenniumAudit/) | Daniel Ari Friedman |
 | 216 | 2026 | 💻 | Paper | Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation | *Zenodo* | [10.5281/zenodo.22663906](https://doi.org/10.5281/zenodo.22663906) | [📁](../papers/2026_Skillarum/) | Friedman, Daniel Ari |
+| 217 | 2026 | 💻 | Paper | FractiSkills: One Portable Agent Skill per Page | *Zenodo* | [10.5281/zenodo.22712650](https://doi.org/10.5281/zenodo.22712650) | [📁](../papers/2026_FractiSkills/) |
 ---
 
 ## Domain Index

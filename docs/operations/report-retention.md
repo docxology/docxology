@@ -10,13 +10,21 @@ report or screenshot directory is removed.
 ## Retention classes
 
 - **Current:** the latest report required by validation stays in the repository
-  and its manifest stays in the Pages projection. Visual-QA screenshot binaries
-  remain in the repository with their manifest SHA-256 values and are retrieved
-  through the manifest's repository-relative path plus a GitHub raw/tree
-  template for the commit that contains the evidence.
+  and its manifest stays in the Pages projection; the newest dated receipt of
+  every report family (and every file sharing that newest date) likewise stays
+  published. Visual-QA screenshot binaries remain in the repository with their
+  manifest SHA-256 values and are retrieved through the manifest's
+  repository-relative path plus a GitHub raw/tree template for the commit that
+  contains the evidence.
 - **Archive:** superseded evidence may move out of the Pages projection only
   when a durable Git commit, GitHub release asset, or externally stable archive
-  location is recorded.
+  location is recorded. Since 2026-09-11 the default archive tier is
+  projection-only omission: superseded dated reports — top-level receipts
+  strictly older than their family's newest receipt, and whole dated screenshot
+  sets older than their parent's newest date — leave the Pages artifact
+  automatically while remaining in the Git checkout, so no retention entry is
+  needed for it; only removal from the checkout (below) does. A report cited
+  from a published page or data file is never omitted.
 - **Remove from checkout:** only an archived item with a reviewed entry in
   [`data/report-retention.json`](../../data/report-retention.json) may be
   pruned. This does not authorize rewriting Git history.

@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-09-11T03:04:40Z",
+      "generated_at": "2026-09-11T19:11:43Z",
       "path": "data/claims.json",
-      "sha256": "f13ad85f622e35bd7989af261513d68d5da9da860a7af3757862df233af582d5",
+      "sha256": "ffc1cabd8b46df74b3e7c2ebd0e36ccc7022f03803a48474d031fe3faeb690d4",
       "source_commit": null
     },
     "doi_role_review": {
@@ -23,13 +23,13 @@
     "paired_publication_decisions": {
       "generated_at": "2026-09-07T22:45:02Z",
       "path": "data/paired-publication-decisions.json",
-      "sha256": "72a958b7137de8afd5fc3401bbd6970c9bde7a64f372e7a0e694d017e6bc36e7",
+      "sha256": "11a7f941bee41020a9db79bbc126ac0dc4bca2632fb08bba2dc644f94e11f262",
       "source_commit": null
     },
     "paired_publications": {
-      "generated_at": "2026-09-10T17:48:36Z",
-      "path": "reports/paired_publications_2026-09-10.json",
-      "sha256": "1d336bab37c6027f13f3cee1b68de4f607fc7cde59c5ab5406c6cd9467b283f2",
+      "generated_at": "2026-09-11T17:49:33Z",
+      "path": "reports/paired_publications_2026-09-11.json",
+      "sha256": "1bc9e0053700a8eb8949fc68cadc1f896a39fdaa721220c4bbb541a08e77010e",
       "source_commit": null
     },
     "previous_public_source_snapshot": {
@@ -51,10 +51,10 @@
       "source_commit": null
     },
     "public_source_snapshot": {
-      "generated_at": "2026-09-11T02:25:43.218472+00:00",
+      "generated_at": "2026-09-11T19:09:24.951632+00:00",
       "path": "reports/public_source_snapshot_2026-09-11.json",
-      "sha256": "3e9d7217e6e3a6de84ee30578ca35b07f15653f5bdaae444759a8d4007334c4d",
-      "source_commit": "8d84781a15120ee6bc805cefc4d0beb8e03c5f71"
+      "sha256": "546bf6d652c039a44b5db0c46821d66ac7a7d9cd2e3cf8a8549de6f9839f71cc",
+      "source_commit": "f6aaf8d6fa6f0676483a4aa4ac2d3ee7c33832ed"
     },
     "repository_classification": {
       "generated_at": "2026-09-10T19:38:44Z",
@@ -1420,9 +1420,9 @@
           "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
           "language": "Python",
           "stargazers_count": 31,
-          "updated_at": "2026-09-10T22:32:30Z"
+          "updated_at": "2026-09-11T04:24:06Z"
         },
-        "current_sha256": "5a7727013872a1e27e6c21f57cccf8f69d7178d1732cb5728001954f4c353446",
+        "current_sha256": "5f3b8345d7e4087b70cdf3ce41b528a48a2b90f6b83724bcda49090e75b9fbcc",
         "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
         "previous": {
           "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
@@ -1453,9 +1453,9 @@
           "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean",
           "language": "Python",
           "stargazers_count": 2,
-          "updated_at": "2026-09-10T22:32:09Z"
+          "updated_at": "2026-09-11T03:59:15Z"
         },
-        "current_sha256": "b0da18fe52632f82abbca90f051f83ea90db35707a9f08b2e51042496b465628",
+        "current_sha256": "e62111b008f4b8c7f63490e1f65eff2990939d0b6d0ee09a908de2ac927a5b1a",
         "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
         "previous": {
           "full_name": "ActiveInferenceInstitute/fep_lean",
@@ -1515,9 +1515,9 @@
         "current": {
           "first_doi": "10.5281/zenodo.21754240",
           "first_title": "Personal Red Lines for Development",
-          "total": 152
+          "total": 153
         },
-        "current_sha256": "15f9c414968a01a0150dffeb6865d4e05d3459a890ed2dd9928215ba80ea07f4",
+        "current_sha256": "67b746048ec0be9051e5833903e4d105941fb7fd31f07cad0730b9022223ae1e",
         "label": "Zenodo ORCID-linked records",
         "previous": {
           "first_doi": "10.5281/zenodo.21047574",
@@ -3627,9 +3627,9 @@
     },
     {
       "candidate": {
-        "pairing_report_date": "2026-09-10",
-        "pairing_report_generated_at": "2026-09-10T17:48:36Z",
-        "public_source_snapshot_generated_at": "2026-09-11T02:25:43.218472Z",
+        "pairing_report_date": "2026-09-11",
+        "pairing_report_generated_at": "2026-09-11T17:49:33Z",
+        "public_source_snapshot_generated_at": "2026-09-11T19:09:24.951632Z",
         "refresh_note": "",
         "refresh_state": "stale",
         "warnings": []
@@ -3638,7 +3638,7 @@
       "id": "zenodo-refresh-incomplete",
       "reason": "The latest successful GitHub–Zenodo pairing report predates the public-source snapshot and cannot be treated as current release evidence.",
       "sources": [
-        "reports/paired_publications_2026-09-10.json"
+        "reports/paired_publications_2026-09-11.json"
       ],
       "status": "deferred"
     }
@@ -3649,8 +3649,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "486fde138e5050beb0845b11ce0e374099e55bee",
-  "source_tree_sha": "01358a586535ed108a3c48acfce2c5026366c032",
+  "source_commit": "3feacb6f4ca19382a23618b8573e1d38e09609b8",
+  "source_tree_sha": "8a40ab5fbab10b9c61d0d33c5c6c9b1f64f01902",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {

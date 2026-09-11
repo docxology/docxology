@@ -41,7 +41,7 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.21750800
 - PDF SHA-256: eda76ad12a50bce01b113894c785e0915b6ba367f5bf67d17c8f586416102b93
 - Pairing confidence: strong
-- Last checked: 2026-09-10T17:37:35Z
+- Last checked: 2026-09-11T17:48:00Z
 - Artifact DOI: 10.5281/zenodo.21750801
 
 ## Prerequisites
