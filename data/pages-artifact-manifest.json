@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T18:07:21Z",
-  "source_commit_at_generation": "c6b1ae8d60ced98fa4a0f0a49afb4a29ccf91384",
+  "generated_at": "2026-09-11T18:54:39Z",
+  "source_commit_at_generation": "e52c73cfdea0ca948db4671e21458a4efa019c4e",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 843958228,
+    "source_bytes": 843960587,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4804,
-    "artifact_bytes": 844806229
+    "artifact_bytes": 844808589
   },
   "included_files": [
     {
@@ -5970,8 +5970,8 @@
     },
     {
       "path": "code/tests/fixtures/frozen-work-keys.json",
-      "bytes": 9320,
-      "sha256": "46392c690c13178ea374d0868554b740a96c71a3053846b657335c28f94b7adc"
+      "bytes": 11975,
+      "sha256": "70db3c6a0fb56f0823268cc4bf31b4ce01701714b2e0265f1e8d20e36603988a"
     },
     {
       "path": "code/tests/test_accessibility_audit.py",
@@ -6065,8 +6065,8 @@
     },
     {
       "path": "code/tests/test_check_zenodo_uncatalogued.py",
-      "bytes": 5981,
-      "sha256": "a2ed7ff439619d900c04ddc4cf0d1dc05062495f23d29ba6fdacd4842788ab5e"
+      "bytes": 6588,
+      "sha256": "65b2e5a97289377bd7c718a1e7867be00b9e8526844c9b419c6c7d7c2100fea9"
     },
     {
       "path": "code/tests/test_cite_export.py",
@@ -16800,8 +16800,8 @@
     },
     {
       "path": "reports/accessibility_static_2026-09-11.json",
-      "bytes": 1060916,
-      "sha256": "2ed1763bd474846f354880ca2ceb9e1fb10a7bd6efc625714a9452254c7bc67b"
+      "bytes": 1060216,
+      "sha256": "2c259123718fa2108c6bb3af761551e9b6435b42335e8a125180d111cafa1b8c"
     },
     {
       "path": "reports/ambiguous_pairs_triage_2026-06-26.md",
@@ -17230,8 +17230,8 @@
     },
     {
       "path": "sitemap.xml",
-      "bytes": 241676,
-      "sha256": "b152a8f6acb54ac1f004bda27d91f2f5a1bd763e12d84c54427758a7117a60cc"
+      "bytes": 241473,
+      "sha256": "81671e3802050acfa0fee4e443665214738c1d6af738e73b93fb613245dc7ed5"
     },
     {
       "path": "software.html",
