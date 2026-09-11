@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "attested_at": "2026-09-11T02:35:05Z",
+  "deployment_sha": "8d84781a15120ee6bc805cefc4d0beb8e03c5f71",
+  "evidence": [
+    {
+      "name": "public-source snapshot",
+      "path": "reports/public_source_snapshot_2026-09-11.json",
+      "generated_at": "2026-09-11T02:25:43.218472+00:00",
+      "source_commit": "8d84781a15120ee6bc805cefc4d0beb8e03c5f71",
+      "sha256": "3e9d7217e6e3a6de84ee30578ca35b07f15653f5bdaae444759a8d4007334c4d"
+    },
+    {
+      "name": "public-source review",
+      "path": "reports/public_source_review_2026-09-11.json",
+      "generated_at": "2026-09-11T00:00:00Z",
+      "source_commit": "8d84781a15120ee6bc805cefc4d0beb8e03c5f71",
+      "sha256": "7729d279e3e11fa75b9382d3f5c7beda64a1b9f754d459a4d7ef41458fa701ad"
+    },
+    {
+      "name": "external-link report",
+      "path": "reports/external_links_2026-09-11.json",
+      "generated_at": "2026-09-11T02:35:03Z",
+      "source_commit": "8d84781a15120ee6bc805cefc4d0beb8e03c5f71",
+      "sha256": "afcfe8ce061507069f05dacddeb0ee868fdbf293842384cf674500c855ffde1e"
+    },
+    {
+      "name": "browser smoke",
+      "path": "reports/browser-smoke/2026-09-11/manifest.json",
+      "generated_at": "2026-09-11T02:20:40Z",
+      "source_commit": "8d84781a15120ee6bc805cefc4d0beb8e03c5f71",
+      "sha256": "fb03621df215d257f487c1a6cadf65044f4046a79db85cd0d472bd768d1bb9fe"
+    },
+    {
+      "name": "browser QA",
+      "path": "reports/browser-qa/2026-09-11/manifest.json",
+      "generated_at": "2026-09-11T02:20:54Z",
+      "source_commit": "8d84781a15120ee6bc805cefc4d0beb8e03c5f71",
+      "sha256": "72a0c5b3528a1217f65f7313a4ea4f610d18feef9a780e731f7af57a431d7246"
+    },
+    {
+      "name": "visual QA",
+      "path": "reports/visual-qa/2026-09-11/manifest.json",
+      "generated_at": "2026-09-11T02:22:01Z",
+      "source_commit": "8d84781a15120ee6bc805cefc4d0beb8e03c5f71",
+      "sha256": "b03881a1a4c822248e49e1bf541ed11a115f3fc05bdaddbc2e62788b4d1631aa"
+    },
+    {
+      "name": "live-site verification",
+      "path": "reports/live_site_verification_2026-09-11.json",
+      "generated_at": "2026-09-11T02:19:21Z",
+      "source_commit": "8d84781a15120ee6bc805cefc4d0beb8e03c5f71",
+      "sha256": "d91c776ddc049df21163bcc0b4825c71df6097fc06f04fda44473af19199f1ba"
+    }
+  ],
+  "result": "passed",
+  "note": "Post-deploy attestation. A release-ready claim requires this receipt to bind every required evidence report to the deployed SHA."
+}

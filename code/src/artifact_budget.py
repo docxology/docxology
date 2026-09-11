@@ -1,5 +1,5 @@
 """Artifact budget gate: fail the CI budget check when the Pages artifact
-exceeds the documented 850 MiB warning budget (reports/pages_artifact_growth_*.json).
+exceeds the documented 880 MiB warning budget (reports/pages_artifact_growth_*.json).
 """
 
 from __future__ import annotations

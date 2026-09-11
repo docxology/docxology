@@ -1,0 +1,198 @@
+{
+  "generated_at": "2026-09-11T02:22:01Z",
+  "source_commit": "8d84781a15120ee6bc805cefc4d0beb8e03c5f71",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
+  "source_tree_sha": "5775b6ee6f43c0b68729db7bac60c812d06b2643",
+  "tool": "playwright screenshot",
+  "note": "Human review still required; these snapshots guard against obvious layout regressions.",
+  "screenshots": [
+    {
+      "page": "index.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-11/home-desktop.png",
+      "sha256": "6b3ca5ea0b7ed677c75166c89faf3a55054056d5322ba8323ed6d502cfacbfa6"
+    },
+    {
+      "page": "index.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-11/home-mobile.png",
+      "sha256": "001567330e426832c890a6741f5ce808e1fa257c6b7368638c9c0b0dcb89cb58"
+    },
+    {
+      "page": "publications.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-11/publications-desktop.png",
+      "sha256": "146e107e6af63b34b4fb9596a467375edd4998a26679a4d7b9edc0691f35516e"
+    },
+    {
+      "page": "publications.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-11/publications-mobile.png",
+      "sha256": "b473754856008d03a70ee9d1a787c8458274091fc5f6c048bedfc4821c6529dc"
+    },
+    {
+      "page": "works/index.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-11/works-desktop.png",
+      "sha256": "63af9bbabea29b7da47853bc8a8eb8f09d0d99840c5ffac0ae61d4b89ba6851c"
+    },
+    {
+      "page": "works/index.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-11/works-mobile.png",
+      "sha256": "f5bd7ca8a190cc39427ccd3beb58639cbb2508b6098fc61a84f2b73b8b2c8b24"
+    },
+    {
+      "page": "domains.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-11/domains-desktop.png",
+      "sha256": "f681848d852d0004a7036a84d43f2b15f4dca7f0add3076dc9aeb42d6108d89a"
+    },
+    {
+      "page": "domains.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-11/domains-mobile.png",
+      "sha256": "b65f3a677c84ef510146f869a82308e479d6ae0585af54f6314b0d10e82da417"
+    },
+    {
+      "page": "search.html?q=active%20inference",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-11/search-desktop.png",
+      "sha256": "3764677a56fa968d821322e5e8fd1d4c2d6b68b9fe6d9d7b977738a6d7780ebb"
+    },
+    {
+      "page": "search.html?q=active%20inference",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-11/search-mobile.png",
+      "sha256": "944c2207915da4682255f057a8b3a72f33214cf9d4a1c2fbdee1a264540dcc8f"
+    },
+    {
+      "page": "repositories.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-11/repositories-desktop.png",
+      "sha256": "2eaceb964c5a31d9ee8a6289a0d3907bcfee7072f3fb414d890db0d342fcf3b5"
+    },
+    {
+      "page": "repositories.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-11/repositories-mobile.png",
+      "sha256": "b68c3aba398a6cbb4ca24b73355f55e2e303c987bb3f8af75812151f52ad3c90"
+    },
+    {
+      "page": "repositories-forks.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-11/repository-forks-desktop.png",
+      "sha256": "947dedc359ea40672f9150a8f6ef7e1d240933078193d016ee6271b4f466734e"
+    },
+    {
+      "page": "repositories-forks.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-11/repository-forks-mobile.png",
+      "sha256": "d6ac2e8042a373bcc31d93ec9f01803aa3452549c772f1dbf44829846816fb54"
+    },
+    {
+      "page": "catalog.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-11/catalog-desktop.png",
+      "sha256": "5821feaacb0e6b1e5423ee8339c56179b976782973d7b996a4aaf91f7eda9fcf"
+    },
+    {
+      "page": "catalog.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-11/catalog-mobile.png",
+      "sha256": "8aad2f07f6dfa1a2d24e7d57e8d7f14c82049fa6274e2e9998e6acbcca88e7de"
+    },
+    {
+      "page": "updates.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-11/updates-desktop.png",
+      "sha256": "8f4752369cf6ab55295819e46461a4bcccd8c28268b018a5d931449240ae05e8"
+    },
+    {
+      "page": "updates.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-11/updates-mobile.png",
+      "sha256": "4d7f24204042bd1aa5a8400ece25d5e6e15aa4d8d2c08077593fbe9b585cd1ed"
+    },
+    {
+      "page": "art.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-11/art-desktop.png",
+      "sha256": "0b62c03b6d8332e6c129bad9040cab2d0d3d47103cd8fafb8a5b1efaa8582423"
+    },
+    {
+      "page": "art.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-11/art-mobile.png",
+      "sha256": "c3790b758ba55d11fc3fc3f3c3f08dc5907a4dddba4ffc049645bfbc62e97cf5"
+    },
+    {
+      "page": "discovery.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-11/discovery-desktop.png",
+      "sha256": "7ce5f54a6c09aec6f7fc9eb4b6d978ab54fa9134ad6dea653b6ee28723ff0558"
+    },
+    {
+      "page": "discovery.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-11/discovery-mobile.png",
+      "sha256": "f16b3cd29de6d2cb95572829e6e49003bb0494e030b9e9c279494b84895ea7d6"
+    },
+    {
+      "page": "cite-verify.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-11/cite-verify-desktop.png",
+      "sha256": "75f9cfab81b67063b24df8134b9052e514b663d7e60a10e898cd71c4f5e5345a"
+    },
+    {
+      "page": "cite-verify.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-11/cite-verify-mobile.png",
+      "sha256": "6ffbab7d8f24a5f27502b57f65843322cda20309078476d953412b52e83c05c2"
+    },
+    {
+      "page": "evidence.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-11/evidence-desktop.png",
+      "sha256": "b320fecb30ccd79a4642085514c935c32e4c40f23e367265b9ea7ea5a4692bcc"
+    },
+    {
+      "page": "evidence.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-11/evidence-mobile.png",
+      "sha256": "ce4ab1ad5b822713120e4aea8ad76b3fcf31297cdeeb02a4a71449fac83fea52"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "reviewed_by": "omp Main agent (2026-09-11 capture spot-inspection: home/publications desktop + home mobile)",
+    "reviewed_at": "2026-09-11T02:24:27Z"
+  }
+}
