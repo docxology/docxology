@@ -58,6 +58,7 @@ KNOWN_STALE_RECORD_IDS = {
     "21418901",  # SynthOBS v1.618.0; current row cites concept 21418782
     "20804586",  # CogSecSkills v1; current row cites concept 21513316
     "19139090",  # Template/Reproducible duplicate of kept row #1
+    "22666981",  # Software-only supplement to the CCD paper; paper row cites concept 10.5281/zenodo.19695259
 }
 
 # These records are intentionally cited by their version DOI because each is
@@ -73,6 +74,16 @@ VERSION_SPECIFIC_CITATION_EXCEPTIONS = {
         "reason": (
             "AII Ecosystem v3 is a separately curated 2025 bibliographic "
             "snapshot, distinct from the earlier v2 concept record."
+        ),
+    },
+    "15168382": {
+        "title": "On Time",
+        "concept_doi": "10.5281/zenodo.15168381",
+        "version_doi": "10.5281/zenodo.15168382",
+        "reason": (
+            "On Time is a separately curated 2025 paper snapshot; all "
+            "references were deliberately pointed at version record "
+            "15168382 in commit d086e7a3 (2026-08-22)."
         ),
     }
 }

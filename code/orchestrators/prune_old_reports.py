@@ -31,7 +31,7 @@ import argparse
 import json
 import re
 import shutil
-import subprocess
+import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -41,6 +41,9 @@ DEFAULT_RETENTION_MANIFEST = REPO_ROOT / "data" / "report-retention.json"
 # Dated-screenshot parents whose subdirs are superseded snapshots (validation reads latest).
 SCREENSHOT_PARENTS = ["visual-qa", "browser-smoke"]
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+import report_references  # noqa: E402
 
 
 def _dir_size_bytes(path: Path) -> int:
@@ -54,45 +57,15 @@ def _dated_subdirs(parent: Path) -> list[Path]:
                   key=lambda p: p.name)
 
 
-_WORKING_TREE_SUFFIXES = {".html", ".json", ".md", ".xml"}
-_WORKING_TREE_SKIP_DIRS = {"reports", "code", ".git", "__pycache__", "_site"}
-_WORKING_TREE_SKIP_FILES = {
-    "data/pages-artifact-manifest.json",
-    "data/generated-manifest.json",
-    # The retention manifest cites removed paths to document the decision; it is
-    # provenance, not a live link. Same reasoning as the inventory manifests.
-    "data/report-retention.json",
-}
-
-
 def _working_tree_references(repo_root: Path, rel_prefix: str) -> bool:
     """True if a working-tree content file mentions ``rel_prefix``.
 
-    Catches untracked files that ``git grep`` would miss. Skips reports/, code/,
-    and the generated inventory manifests — those enumerate paths without
-    serving them as live links.
+    Delegates to the shared citation scan in ``code/src/report_references.py``;
+    the dated-subdir prefix framing stays here so callers keep their shape. The
+    scan skips reports/, code/, _site/, and the generated inventory manifests —
+    those enumerate paths without serving them as live links.
     """
-    root = repo_root.resolve()
-    for path in root.rglob("*"):
-        if not path.is_file():
-            continue
-        try:
-            rel = path.relative_to(root)
-        except ValueError:
-            continue
-        if any(part in _WORKING_TREE_SKIP_DIRS for part in rel.parts):
-            continue
-        if rel.as_posix() in _WORKING_TREE_SKIP_FILES:
-            continue
-        if path.suffix.lower() not in _WORKING_TREE_SUFFIXES:
-            continue
-        try:
-            text = path.read_text(encoding="utf-8", errors="ignore")
-        except OSError:
-            continue
-        if rel_prefix in text:
-            return True
-    return False
+    return report_references.prefix_is_referenced(repo_root, rel_prefix)
 
 
 def _referenced_externally(rel_prefix: str) -> bool:
@@ -107,23 +80,12 @@ def _referenced_externally(rel_prefix: str) -> bool:
     reference would pin every dated set forever and neuter this tool. We only care about
     orphaning genuine links in served content (HTML pages, llms.txt, feeds, sitemaps).
 
-    After git grep, also scan the working tree so untracked files that mention the
-    dated subdir still block prune.
+    The scan itself lives in ``code/src/report_references.py`` and is shared with
+    ``build_pages_artifact``'s superseded-report cited-by protection; the working-tree
+    fallback is included so untracked files that mention the dated subdir still block
+    prune.
     """
-    try:
-        out = subprocess.run(
-            ["git", "grep", "-l", rel_prefix, "--", ".",
-             ":(exclude)reports/*", ":(exclude)code/*",
-             ":(exclude)data/pages-artifact-manifest.json",
-             ":(exclude)data/generated-manifest.json",
-             ":(exclude)data/report-retention.json"],
-            cwd=REPO_ROOT, capture_output=True, text=True,
-        )
-        if out.stdout.strip():
-            return True
-    except FileNotFoundError:
-        pass  # git unavailable: still honor working-tree references
-    return _working_tree_references(REPO_ROOT, rel_prefix)
+    return report_references.prefix_is_referenced(REPO_ROOT, rel_prefix)
 
 
 def _retention_entries(path: Path) -> dict[str, dict]:

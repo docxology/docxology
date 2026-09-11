@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 import json
-import sys
 import subprocess
+import sys
+from datetime import date
 from pathlib import Path
 
 import pytest
@@ -13,6 +14,10 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
 import build_pages_artifact as bpa  # noqa: E402
+
+sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+
+import report_references  # noqa: E402
 
 
 def _git(repo: Path, *args: str) -> None:
@@ -232,3 +237,289 @@ def test_manifest_drift_includes_stale_source_commit() -> None:
     }
     stale = {**expected, "source_commit_at_generation": "stale-source-commit"}
     assert bpa.manifest_drift_fields(stale, expected) == ["source_commit_at_generation"]
+
+
+def _init_pages_fixture(repo: Path) -> None:
+    _git(repo, "init", "-q")
+    _git(repo, "config", "user.email", "test@example.invalid")
+    _git(repo, "config", "user.name", "Pages fixture")
+
+
+def test_dated_report_family_extraction_takes_the_first_date():
+    """The FIRST _YYYY-MM-DD occurrence delimits the family and its date."""
+    assert bpa._dated_report_family_date("paired_publications_2026-06-09-itrace.json") == (
+        "paired_publications",
+        date(2026, 6, 9),
+    )
+    assert bpa._dated_report_family_date("public_source_review_2026-08-25.proposed.json") == (
+        "public_source_review",
+        date(2026, 8, 25),
+    )
+    assert bpa._dated_report_family_date("asset_size_2026-07-22.json") == (
+        "asset_size",
+        date(2026, 7, 22),
+    )
+
+
+def test_dated_report_family_extraction_rejects_non_family_shapes():
+    assert bpa._dated_report_family_date("current_counts.md") is None
+    assert bpa._dated_report_family_date("_2026-08-25.json") is None
+    assert bpa._dated_report_family_date("asset_size_2026-99-99.json") is None
+    assert bpa._dated_report_family_date("seo-discoverability-audit-2026-06-10.md") is None
+    assert bpa._dated_report_family_date("paired_publications_review_queue") is None
+
+
+def test_superseded_rule_keeps_only_strictly_older_family_dates():
+    paths = [
+        Path("reports/asset_size_2026-09-10.json"),
+        Path("reports/asset_size_2026-09-11.json"),
+        Path("reports/private_public_reconciliation_2026-08-25.md"),
+        Path("reports/doi_role_reconciliation_2026-08-25.json"),
+        Path("reports/doi_role_reconciliation_2026-08-25.proposed.json"),
+        Path("reports/paired_publications_2026-06-09-itrace.json"),
+        Path("reports/paired_publications_2026-06-09.json"),
+        Path("reports/paired_publications_2026-09-10.json"),
+        Path("reports/README.md"),
+        Path("pages/index.html"),
+    ]
+    superseded = bpa.superseded_dated_report_paths(paths)
+    assert Path("reports/asset_size_2026-09-10.json") in superseded
+    assert Path("reports/asset_size_2026-09-11.json") not in superseded
+    # Same-date multi-file sets stay together.
+    assert Path("reports/doi_role_reconciliation_2026-08-25.proposed.json") not in superseded
+    assert Path("reports/doi_role_reconciliation_2026-08-25.json") not in superseded
+    assert Path("reports/private_public_reconciliation_2026-08-25.md") not in superseded
+    # The itrace qualifier shares the plain file's family date; both drop together.
+    assert Path("reports/paired_publications_2026-06-09.json") in superseded
+    assert Path("reports/paired_publications_2026-06-09-itrace.json") in superseded
+    # Undated reports and non-reports paths are never members of a family.
+    assert Path("reports/README.md") not in superseded
+    assert Path("pages/index.html") not in superseded
+
+
+def test_superseded_rule_omits_whole_older_dated_screenshot_dirs():
+    paths = [
+        Path("reports/browser-qa/2026-09-07/manifest.json"),
+        Path("reports/browser-qa/2026-09-11/manifest.json"),
+        Path("reports/browser-qa/2026-09-07/AGENTS.md"),
+        Path("reports/visual-qa/2026-08-26/home.png"),
+        Path("reports/visual-qa/2026-09-11/home.png"),
+        Path("reports/other/2026-09-07/manifest.json"),
+        Path("untrusted/reports/browser-qa/2026-09-07/manifest.json"),
+    ]
+    superseded = bpa.superseded_dated_report_paths(paths)
+    assert Path("reports/browser-qa/2026-09-07/manifest.json") in superseded
+    assert Path("reports/browser-qa/2026-09-07/AGENTS.md") in superseded
+    assert Path("reports/visual-qa/2026-08-26/home.png") in superseded
+    assert Path("reports/browser-qa/2026-09-11/manifest.json") not in superseded
+    assert Path("reports/visual-qa/2026-09-11/home.png") not in superseded
+    # Non-SCREENSHOT_PARENTS dated dirs and nested untrusted paths are untouched.
+    assert Path("reports/other/2026-09-07/manifest.json") not in superseded
+    assert Path("untrusted/reports/browser-qa/2026-09-07/manifest.json") not in superseded
+
+
+def test_cited_by_protection_uses_dated_set_granularity():
+    paths = [
+        Path("reports/asset_size_2026-09-10.json"),
+        Path("reports/asset_size_2026-09-11.json"),
+        Path("reports/browser-qa/2026-09-07/manifest.json"),
+        Path("reports/browser-qa/2026-09-07/AGENTS.md"),
+        Path("reports/browser-qa/2026-09-11/manifest.json"),
+    ]
+    assert bpa.superseded_dated_report_paths(paths) == {
+        Path("reports/asset_size_2026-09-10.json"),
+        Path("reports/browser-qa/2026-09-07/manifest.json"),
+        Path("reports/browser-qa/2026-09-07/AGENTS.md"),
+    }
+    # A citation naming the older receipt itself protects exactly that file.
+    cited = bpa.superseded_dated_report_paths(
+        paths, referenced_paths={"reports/asset_size_2026-09-10.json"}
+    )
+    assert Path("reports/asset_size_2026-09-10.json") not in cited
+    # Citing any member file or the bare dated dir protects the whole set.
+    cited_set = bpa.superseded_dated_report_paths(
+        paths, referenced_paths={"reports/browser-qa/2026-09-07/manifest.json"}
+    )
+    assert Path("reports/browser-qa/2026-09-07/AGENTS.md") not in cited_set
+    cited_bare_dir = bpa.superseded_dated_report_paths(
+        paths, referenced_paths={"reports/browser-qa/2026-09-07"}
+    )
+    assert Path("reports/browser-qa/2026-09-07/AGENTS.md") not in cited_bare_dir
+    # A family-level token names no dated set and protects nothing.
+    family_token = bpa.superseded_dated_report_paths(
+        paths, referenced_paths={"reports/browser-qa", "reports/asset_size"}
+    )
+    assert family_token == {
+        Path("reports/asset_size_2026-09-10.json"),
+        Path("reports/browser-qa/2026-09-07/manifest.json"),
+        Path("reports/browser-qa/2026-09-07/AGENTS.md"),
+    }
+
+
+def test_control_receipts_follow_the_same_superseded_rule():
+    paths = [
+        Path("reports/asset_size_2026-09-10.json"),
+        Path("reports/asset_size_2026-09-11.json"),
+        Path("reports/pages_artifact_growth_2026-09-10.json"),
+        Path("reports/pages_artifact_growth_2026-09-11.json"),
+        Path("reports/public_source_review_2026-09-10.json"),
+        Path("reports/public_source_review_2026-09-11.md"),
+    ]
+    superseded = bpa.superseded_dated_report_paths(paths)
+    assert Path("reports/asset_size_2026-09-10.json") in superseded
+    assert Path("reports/pages_artifact_growth_2026-09-10.json") in superseded
+    assert Path("reports/public_source_review_2026-09-10.json") in superseded
+    assert Path("reports/public_source_review_2026-09-11.md") not in superseded
+
+
+def test_referenced_report_scan_covers_projected_surfaces_only(tmp_path: Path):
+    _init_pages_fixture(tmp_path)
+    (tmp_path / "reports").mkdir()
+    (tmp_path / "code").mkdir()
+    (tmp_path / "data").mkdir()
+    (tmp_path / "pages").mkdir()
+    (tmp_path / "papers" / "2026_Example").mkdir(parents=True)
+    (tmp_path / "_site").mkdir()
+    target = "reports/asset_size_2026-09-10.json"
+    citing_reports = tmp_path / "reports" / "self.json"
+    citing_inventory = tmp_path / "data" / "pages-artifact-manifest.json"
+    citing_retention = tmp_path / "data" / "report-retention.json"
+    for source in (citing_reports, citing_inventory, citing_retention):
+        source.write_text(json.dumps({"cites": target}), encoding="utf-8")
+    (tmp_path / "_site" / "echo.html").write_text(f"<a>{target}</a>", encoding="utf-8")
+    _git(tmp_path, "add", "-A")
+    _git(tmp_path, "commit", "-qm", "fixture")
+
+    assert target not in report_references.referenced_report_paths(tmp_path)
+
+    (tmp_path / "pages" / "index.md").write_text(f"[a]({target})", encoding="utf-8")
+    assert target in report_references.referenced_report_paths(tmp_path)
+
+    (tmp_path / "pages" / "index.md").unlink()
+    (tmp_path / "data" / "agent-index.json").write_text(
+        json.dumps({"cites": target}), encoding="utf-8"
+    )
+    assert target in report_references.referenced_report_paths(tmp_path)
+
+    (tmp_path / "data" / "agent-index.json").unlink()
+    (tmp_path / "papers" / "2026_Example" / "metadata.json").write_text(
+        json.dumps({"evidence": target}), encoding="utf-8"
+    )
+    assert target in report_references.referenced_report_paths(tmp_path)
+
+    (tmp_path / "papers" / "2026_Example" / "metadata.json").unlink()
+    (tmp_path / "notes.md").write_text(f"see {target} for provenance", encoding="utf-8")
+    # Untracked working-tree files are caught by the fallback scan.
+    assert target in report_references.referenced_report_paths(tmp_path)
+
+    # Code fallback literals never protect (untracked on purpose here).
+    (tmp_path / "code" / "fallback.py").write_text(f'"{target}"', encoding="utf-8")
+    (tmp_path / "notes.md").unlink()
+    assert target not in report_references.referenced_report_paths(tmp_path)
+
+
+def test_superseded_rule_with_the_shared_citation_scan(tmp_path: Path):
+    _init_pages_fixture(tmp_path)
+    (tmp_path / "reports").mkdir()
+    (tmp_path / "pages").mkdir()
+    (tmp_path / "reports" / "asset_size_2026-09-10.json").write_text("{}", encoding="utf-8")
+    (tmp_path / "reports" / "asset_size_2026-09-11.json").write_text("{}", encoding="utf-8")
+    (tmp_path / "pages" / "index.md").write_text(
+        "[evidence](reports/asset_size_2026-09-10.json)", encoding="utf-8"
+    )
+    _git(tmp_path, "add", "-A")
+    _git(tmp_path, "commit", "-qm", "fixture")
+    tracked = [
+        Path(raw)
+        for raw in subprocess.run(
+            ["git", "ls-files", "-z"],
+            cwd=tmp_path,
+            check=True,
+            capture_output=True,
+        )
+        .stdout.decode()
+        .split("\0")
+        if raw
+    ]
+    assert bpa.superseded_dated_report_paths(tracked) == {
+        Path("reports/asset_size_2026-09-10.json")
+    }
+    protected = bpa.superseded_dated_report_paths(
+        tracked, referenced_paths=report_references.referenced_report_paths(tmp_path)
+    )
+    assert protected == set()
+
+
+def test_manifest_comparison_fields_cover_the_superseded_class():
+    assert "omitted_superseded_reports" in bpa.MANIFEST_COMPARISON_FIELDS
+    expected = {field: {} for field in bpa.MANIFEST_COMPARISON_FIELDS}
+    stale = {**expected, "omitted_superseded_reports": {"count": 0}}
+    assert bpa.manifest_drift_fields(stale, expected) == ["omitted_superseded_reports"]
+
+
+def test_growth_receipt_counts_the_superseded_class():
+    payload = {
+        "generated_at": "2026-09-11T00:00:00Z",
+        "source_commit_at_generation": "source-commit",
+        "budget": {"artifact_file_count": 10, "artifact_bytes": 2048},
+        "omitted_paper_images": {"count": 2},
+        "omitted_visual_qa_screenshots": {"count": 3, "bytes": 30},
+        "omitted_superseded_reports": {"count": 7, "bytes": 70},
+    }
+    growth = bpa._growth_report_payload(payload)
+    assert growth["omitted_superseded_report_count"] == 7
+    assert growth["omitted_superseded_report_bytes"] == 70
+
+
+def test_dangling_report_reference_guard(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+    output = tmp_path / "_site"
+    (output / "pages").mkdir(parents=True)
+    (output / "reports" / "visual-qa" / "2026-09-11").mkdir(parents=True)
+    # A referenced receipt that was copied resolves.
+    (output / "reports" / "asset_size_2026-09-11.json").write_text("{}", encoding="utf-8")
+    (output / "pages" / "index.html").write_text(
+        '<a href="reports/asset_size_2026-09-11.json">latest</a>', encoding="utf-8"
+    )
+    # GitHub raw/tree fallback URLs are not local references.
+    (output / "pages" / "fallback.html").write_text(
+        '<img src="https://raw.githubusercontent.com/docxology/docxology/abc/reports/asset_size_2026-09-10.json">'
+        ' and <a href="//raw.githubusercontent.com/docxology/docxology/abc/reports/x_2026-01-01.json">',
+        encoding="utf-8",
+    )
+    # A visual-QA screenshot binary is intentionally served from the Git commit.
+    (output / "pages" / "manifest.html").write_text(
+        '<img src="reports/visual-qa/2026-08-26/home.png">', encoding="utf-8"
+    )
+    # References from the scan's excluded source scopes are ignored.
+    (output / "reports" / "README.md").write_text("see reports/asset_size_2026-09-10.json", encoding="utf-8")
+    (output / "data").mkdir()
+    (output / "data" / "pages-artifact-manifest.json").write_text(
+        json.dumps({"path": "reports/asset_size_2026-09-10.json"}), encoding="utf-8"
+    )
+    # A reference to a path that no longer exists in the repository is
+    # pre-existing provenance drift, not an omission this policy created.
+    (output / "pages" / "history.html").write_text(
+        '<a href="reports/visual-qa/2026-07-18/manifest.json">pruned</a>', encoding="utf-8"
+    )
+    monkeypatch.setattr(bpa, "REPO_ROOT", tmp_path / "repo")
+    assert bpa.dangling_report_references(output) == []
+
+    # A repository path that exists but was not copied into the projection is a
+    # shipped 404 and must fail the build.
+    repo = tmp_path / "repo"
+    (repo / "reports").mkdir(parents=True)
+    (repo / "reports" / "asset_size_2026-09-10.json").write_text("{}", encoding="utf-8")
+    (output / "pages" / "dangling.html").write_text(
+        '<a href="reports/asset_size_2026-09-10.json">superseded</a>', encoding="utf-8"
+    )
+    assert bpa.dangling_report_references(output) == ["reports/asset_size_2026-09-10.json"]
+
+    # A bare dated-directory reference resolves when the kept dir was copied.
+    (output / "pages" / "dangling.html").unlink()
+    (output / "reports" / "browser-qa" / "2026-09-11").mkdir(parents=True)
+    (output / "pages" / "dir.html").write_text(
+        '<a href="reports/browser-qa/2026-09-11/">set</a>'
+        '<a href="reports/browser-qa">family</a>',
+        encoding="utf-8",
+    )
+    assert bpa.dangling_report_references(output) == []

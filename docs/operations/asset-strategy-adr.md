@@ -99,9 +99,10 @@ Revisit Option A when **any** of the following becomes true:
 
 When Option A is executed, self-host every `artworks.json` thumbnail on an
 origin this site owns, then (and only then) reintroduce an image sitemap whose
-every `<image:loc>` is same-origin — the pinned tests in
-`code/tests/test_build_image_sitemap.py` encode exactly this reversal
-condition and will fail until the precondition holds.
+every `<image:loc>` is same-origin — the live pin in
+`code/tests/test_regenerate_all.py:20-21` (`build_image_sitemap.py` removed
+from the generation chain) encodes exactly this reversal condition and will
+fail until the precondition holds.
 
 
 ## Correction (2026-08-29, handoff #3 section 3)
@@ -148,3 +149,29 @@ durable lever — omitting superseded dated reports from the Pages projection
 while they remain in the repository (per the DOC-012 retention tiers, with
 GitHub tree/raw fallbacks) — is flagged for the principal in TODO.md; without
 it, the next intake's ~20 MiB of paper PDFs reaches the hard ceiling.
+
+## Execution (2026-09-11): superseded-report omission class landed
+
+The durable lever from the budget review above landed as the third omission
+class in `build_pages_artifact.py` (shared cited-by semantics with
+`prune_old_reports` via the new `code/src/report_references.py` scan): any
+tracked `reports/` path strictly older than the newest date of its family —
+top-level `reports/<family>_<YYYY-MM-DD>` receipts and whole dated
+`reports/visual-qa/`, `reports/browser-smoke/`, `reports/browser-qa/` sets —
+is omitted from the Pages projection while remaining committed in the
+repository. Reports cited from a published page or data file are never
+omitted, and a post-assemble 404 guard fails the build if any referenced
+repository path was not copied.
+
+Measured against the 2026-09-11 growth receipt (864.17 MiB, 5,184 files): the
+omission class newly removes **390 files / 70.9 MiB** that were previously in
+the artifact (74.4 MB of non-binary superseded receipts and manifests; the
+visual-QA/browser-smoke binaries under the superseded dated sets were already
+omitted by the binary class and are not double-counted), projecting the
+artifact at **≈793.3 MiB** — about **87 MiB** of review headroom below the
+unchanged 880 MiB warning band. Trigger (a) above therefore returns to
+dormant: the next evidence wave adds only each family's newest receipt, and
+yesterday's drops out automatically, so ordinary dated-evidence growth no
+longer moves the artifact toward the ceiling. Option A (self-hosted art
+thumbnails) remains deferred under the same triggers; the band stays at
+880 MiB with the 900 MiB hard ceiling untouched.

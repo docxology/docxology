@@ -10,8 +10,14 @@ provenance and reproducibility.
 Pages artifact workflow. It retains the public HTML, data exports, generated
 work/paper pages, full-text files, CV outputs, PDFs, artwork assets, report
 manifests, and agent documentation. It omits duplicate binary files under
-`papers/**/images/` and dated visual-QA screenshot binaries under
-`reports/visual-qa/*/`; every omitted file remains versioned in GitHub.
+`papers/**/images/`, dated visual-QA screenshot binaries under
+`reports/visual-qa/*/`, and superseded dated reports: a top-level
+`reports/<family>_<YYYY-MM-DD>` receipt strictly older than the newest receipt
+of its family, and whole dated screenshot directories under
+`reports/visual-qa/`, `reports/browser-smoke/`, and `reports/browser-qa/`
+older than that parent's newest date, leave the projection. A report
+referenced from a published page or data file is never omitted. Every omitted
+file remains versioned in GitHub.
 
 Generated paper pages link extracted-image galleries to the canonical GitHub
 tree and use raw GitHub image URLs for previews. The image sitemap describes
@@ -51,5 +57,12 @@ manifests retain repository-relative screenshot paths and SHA-256 digests,
 while their PNG or other screenshot binaries are retrieved from the Git commit
 that contains the evidence path. The Pages artifact manifest records the
 omitted visual-QA screenshot count, byte total, examples, and GitHub raw/tree
-URL templates; this is an artifact-boundary decision, not deletion or report
-pruning.
+URL templates. The manifest also records the `omitted_superseded_reports`
+summary (count, bytes, examples) next to the paper-image and visual-QA
+summaries; the growth receipt mirrors its count and byte total. The GitHub
+tree/raw fallback templates apply unchanged because omitted reports remain at
+the source commit. As a durable 404 guard, the builder scans the assembled
+projection for repository-relative `reports/` references and fails the build
+if any referenced repository path was not copied (GitHub raw/tree fallback
+URLs do not count as local references); this is an artifact-boundary decision,
+not deletion or report pruning.
