@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T19:17:13Z",
+  "generated_at": "2026-09-11T19:40:21Z",
   "source_commit_at_generation": "c8b4aa6a53eba65c00447f6ca86f020a826424c4",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 843960903,
+    "source_bytes": 843961567,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4804,
-    "artifact_bytes": 844808905
+    "artifact_bytes": 844809569
   },
   "included_files": [
     {
@@ -6441,7 +6441,7 @@
     {
       "path": "cognitive-security.html",
       "bytes": 27609,
-      "sha256": "f7667e9d2390a862f404418bed923e5fbdc30fd3265287f0579961e2843272b9"
+      "sha256": "c816e848dc0432dfe9ff30cd38deb367a38a72a27706c10e89b158f81d416841"
     },
     {
       "path": "collaborators.html",
@@ -6650,8 +6650,8 @@
     },
     {
       "path": "data/work-authors.json",
-      "bytes": 157840,
-      "sha256": "87584a583cd482bf48e799345f8ce9a42eb06690ac9427e84ed06cbfbb68b0a6"
+      "bytes": 158504,
+      "sha256": "aa58e7c90a34fe45bb0e6c533c71d9cd014ca92a00fabbbe3f045e5b91dba0ca"
     },
     {
       "path": "data/work-enrichment.json",
@@ -7196,7 +7196,7 @@
     {
       "path": "neurosymbolic-ai.html",
       "bytes": 23388,
-      "sha256": "c691070715239382bbf118c6e9487c482c9ee7a55bfb3ddc09f726028a6d8b2b"
+      "sha256": "19891e9e2978846576a352375ab5fe5b0b8a49494b7de3c71017759f28457dfb"
     },
     {
       "path": "nft.html",
