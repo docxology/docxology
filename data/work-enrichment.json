@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-10T18:07:41Z",
+  "generated_at": "2026-09-11T17:48:27Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 213,
+  "count": 214,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -2351,8 +2351,8 @@
       ],
       "source": "papers/2026_FocusedAttentionMeditation/README.md"
     },
-    "Friedman2026CompositionalApproachesLinguisticCase112": {
-      "citation_key": "Friedman2026CompositionalApproachesLinguisticCase112",
+    "Friedman2026CognitiveDiagramsReviewingCategorical112": {
+      "citation_key": "Friedman2026CognitiveDiagramsReviewingCategorical112",
       "abstract": "Linguistic case offers a useful test of how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. The implementation includes case-role graphs, pregroup derivations, tensor contractions, synthetic similarity matrices, Bayesian filtering, quantile utilities, and...",
       "keywords": [
         "linguistic case",
@@ -4349,6 +4349,28 @@
       ],
       "methods": [],
       "source": "papers/2026_Skillarum/README.md"
+    },
+    "Friedman2026FractiSkillsOnePortableAgent217": {
+      "citation_key": "Friedman2026FractiSkillsOnePortableAgent217",
+      "abstract": "FractiSkills treats an entire website as a corpus of agent skills: every reachable page is normalized into a SKILL.md-style artifact so that a whole site — not a single document — becomes loadable context for an agent. The work is organized around a four-stage pipeline — discover, render, publish, research — with Skillarum serving as the engine that turns raw crawl output into citable, receipt-bearing skill documents. Discovery unions the declared sitemap with a bounded, robots-respecting breadth-first crawl (reaching a maximum depth of 5), resolves redirect and canonical aliases, and partitions every page into site-derived sections; the render stage emits one receipt-bearing skill per page; publish and research then validate, organize, and measure the corpus. The resulting corpus covers 405 pages from 53 sitemap URLs, organized into 12 sections and 405 skills totaling 497896 words (3887",
+      "keywords": [
+        "agent skills",
+        "SKILL.md",
+        "web scraping",
+        "Skillarum",
+        "reproducible research",
+        "digital art documentation",
+        "provenance"
+      ],
+      "findings": [
+        "agent skills",
+        "SKILL.md",
+        "web scraping",
+        "Skillarum",
+        "reproducible research"
+      ],
+      "methods": [],
+      "source": "papers/2026_FractiSkills/README.md"
     }
   }
 }

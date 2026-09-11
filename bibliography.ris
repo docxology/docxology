@@ -1644,7 +1644,7 @@ ER  -
 TY  - JOUR
 AU  - Friedman, Daniel Ari
 PY  - 2026
-TI  - Compositional Approaches to Linguistic Case for Cognitive Modeling
+TI  - Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case
 T2  - Active Inference Journal
 DO  - 10.5281/zenodo.19695259
 UR  - https://doi.org/10.5281/zenodo.19695259
@@ -2980,4 +2980,16 @@ UR  - https://doi.org/10.5281/zenodo.22663906
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 216; docs: papers/2026_Skillarum/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - FractiSkills: One Portable Agent Skill per Page
+T2  - Zenodo
+DO  - 10.5281/zenodo.22712650
+UR  - https://doi.org/10.5281/zenodo.22712650
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 217; docs: papers/2026_FractiSkills/
 ER  -
