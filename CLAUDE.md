@@ -108,7 +108,7 @@ compact `data/videos-index.json`) → `sync_site_facts.py` → `build_start_here
 `build_reproducibility_ledger.py` → `ensure_agent_navigation.py` →
 `build_reconciliation_report.py` → `audit_assets.py` → `accessibility_audit.py` →
 `build_catalog.py` → `audit_assets.py` → `accessibility_audit.py` → `sync_site_facts.py` →
-`build_github_readme.py` → `build_search_index.py` → `generate_feed.py` → `build_sitemap.py` → `build_404_page.py` →
+`build_github_readme.py` → `build_search_index.py` → `generate_feed.py` → `build_domain_feeds.py` → `build_sitemap.py` → `build_404_page.py` →
 `build_artwork_index.py` → `build_pages_artifact.py --write-manifest
 --allow-dirty-prepayload-evidence --check-size-only` → `build_generated_manifest.py` →
 `build_agent_index.py` → `build_release_integrity.py` → final `build_generated_manifest.py`.
