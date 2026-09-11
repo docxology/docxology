@@ -1144,11 +1144,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 922746880,
-        "source_bytes": 905241225,
+        "source_bytes": 905241264,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
         "artifact_file_count": 5184,
-        "artifact_bytes": 906147689
+        "artifact_bytes": 906147728
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1201,7 +1201,7 @@
   },
   "verification_status": {
     "live_report": "/reports/live_site_verification_2026-09-11.json",
-    "generated_at": "2026-09-11T02:19:21Z",
+    "generated_at": "2026-09-11T03:53:51Z",
     "overall_ok": true,
     "passing": 17,
     "checked_urls": 17,
