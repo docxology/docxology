@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T18:04:51Z",
+  "generated_at": "2026-09-11T18:07:21Z",
   "source_commit_at_generation": "c6b1ae8d60ced98fa4a0f0a49afb4a29ccf91384",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 843979972,
+    "source_bytes": 843958228,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4805,
-    "artifact_bytes": 844828172
+    "artifact_file_count": 4804,
+    "artifact_bytes": 844806229
   },
   "included_files": [
     {
@@ -23692,11 +23692,6 @@
       "path": "works/Friedman2026CognitiveIntegrityFrameworkPractical214.html",
       "bytes": 21865,
       "sha256": "4f822dfa72006e479a38783cd0439a4a858480e4e02e644b030d2b621996db69"
-    },
-    {
-      "path": "works/Friedman2026CompositionalApproachesLinguisticCase112.html",
-      "bytes": 21744,
-      "sha256": "d4dd2dcbda000922647c664ffa2a14345f18d8ca91bdbc19fae63514e6b7bdb5"
     },
     {
       "path": "works/Friedman2026ConvergenceAnalysisGradientDescent121.html",
