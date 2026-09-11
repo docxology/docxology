@@ -32,17 +32,7 @@ class BuildStampError(RuntimeError):
     """Raised when the build stamp cannot be derived from git or the environment."""
 
 
-def _git(repo_root: Path, *args: str) -> str:
-    try:
-        result = subprocess.run(
-            ["git", "-C", str(repo_root), *args],
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-    except (OSError, subprocess.CalledProcessError) as exc:
-        raise BuildStampError(f"git {' '.join(args)} failed: {exc}") from exc
-    return result.stdout.strip()
+_STAMP_CACHE: tuple[str, str] | None = None
 
 
 def build_stamp_info(repo_root: Path | str | None = None) -> tuple[str, str]:
@@ -50,8 +40,13 @@ def build_stamp_info(repo_root: Path | str | None = None) -> tuple[str, str]:
 
     ``BUILD_SHA`` / ``BUILD_DATE`` environment variables take precedence so a
     release or integration run can pin the stamp; otherwise both come from the
-    repository's HEAD commit.
+    repository's HEAD commit. The git probes run once per process and are
+    memoized: generators that stamp thousands of pages otherwise spawn two
+    git subprocesses per page.
     """
+    global _STAMP_CACHE
+    if repo_root is None and _STAMP_CACHE is not None:
+        return _STAMP_CACHE
     root = Path(repo_root) if repo_root else Path(__file__).resolve().parents[2]
     sha = os.environ.get("BUILD_SHA", "").strip()
     stamp_date = os.environ.get("BUILD_DATE", "").strip()
@@ -63,7 +58,23 @@ def build_stamp_info(repo_root: Path | str | None = None) -> tuple[str, str]:
         raise BuildStampError(f"unexpected git short SHA {git_sha!r}")
     if not _DATE_RE.match(git_date):
         raise BuildStampError(f"unexpected git commit date {git_date!r}")
+    if repo_root is None:
+        _STAMP_CACHE = (git_sha, git_date)
     return git_sha, git_date
+
+
+
+def _git(repo_root: Path, *args: str) -> str:
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(repo_root), *args],
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+    except (OSError, subprocess.CalledProcessError) as exc:
+        raise BuildStampError(f"git {' '.join(args)} failed: {exc}") from exc
+    return result.stdout.strip()
 
 
 def current_on_disk_stamp(html_text: str) -> str | None:
