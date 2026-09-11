@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-09-10T21:41:28Z",
+      "generated_at": "2026-09-11T03:04:40Z",
       "path": "data/claims.json",
-      "sha256": "799886c8b238185255ccfd2ff5d40523f775ef9309f2c2d7269a905aee2fbc37",
+      "sha256": "f13ad85f622e35bd7989af261513d68d5da9da860a7af3757862df233af582d5",
       "source_commit": null
     },
     "doi_role_review": {
@@ -3649,10 +3649,12 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "82463b00b601cf66bf30e1994a8ce42d9702cc2f",
-  "source_tree_sha": "6461d05a710ba4f174915c9a22dad0ec871e7521",
-  "source_worktree_clean": true,
-  "source_worktree_dirty_paths": [],
+  "source_commit": "9fe90b2a67fa4035c1a5622491f750cbabb9f947",
+  "source_tree_sha": "1000d91e41ceafc2c0d7146f8d429ef5a28af555",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "reports/reconciliation_2026-09-11.md"
+  ],
   "summary": {
     "applied": 175,
     "categories": {

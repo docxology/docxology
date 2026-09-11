@@ -2,7 +2,7 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `82463b00b601cf66bf30e1994a8ce42d9702cc2f`
+Source commit: `9fe90b2a67fa4035c1a5622491f750cbabb9f947`
 
 ## Disposition summary
 
@@ -24,7 +24,7 @@ Source commit: `82463b00b601cf66bf30e1994a8ce42d9702cc2f`
 ## Evidence inputs
 
 - `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`1d01574cb4fb9c626202fd7572f637da37c4602ce38c2b79bd0c2390c057c60f`)
-- `claims_ledger`: `data/claims.json` (`799886c8b238185255ccfd2ff5d40523f775ef9309f2c2d7269a905aee2fbc37`)
+- `claims_ledger`: `data/claims.json` (`f13ad85f622e35bd7989af261513d68d5da9da860a7af3757862df233af582d5`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
 - `paired_publication_decisions`: `data/paired-publication-decisions.json` (`72a958b7137de8afd5fc3401bbd6970c9bde7a64f372e7a0e694d017e6bc36e7`)
 - `paired_publications`: `reports/paired_publications_2026-09-10.json` (`1d336bab37c6027f13f3cee1b68de4f607fc7cde59c5ab5406c6cd9467b283f2`)
