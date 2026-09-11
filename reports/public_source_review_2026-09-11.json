@@ -15644,16 +15644,10 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "54de18164d4f285291b88bd1dab98b3f05b6c397",
-  "source_tree_sha": "c44c89b2a7088ca96c2e566b20135ac664f3a5eb",
-  "source_worktree_clean": false,
-  "source_worktree_dirty_paths": [
-    "CHANGELOG.md",
-    "TODO.md",
-    "code/orchestrators/build_pages_artifact.py",
-    "code/src/artifact_budget.py",
-    "docs/operations/github-pages-artifact.md"
-  ],
+  "source_commit": "c1331c3ffbde5aadf35cf48ea35c4e26c026aade",
+  "source_tree_sha": "5a8a6b78b1cff8ec927b4efe76dc591f56136ff4",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
   "summary": {
     "applied": 258,
     "categories": {
