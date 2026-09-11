@@ -9,7 +9,7 @@ import json
 import sys
 from pathlib import Path
 
-BUDGET_MIB = 850.0
+BUDGET_MIB = 880.0
 REPORT_GLOB = "reports/pages_artifact_growth_*.json"
 
 

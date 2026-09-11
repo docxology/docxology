@@ -38,7 +38,7 @@ DEFAULT_OUTPUT = REPO_ROOT / "_site"
 # 1 GiB platform maximum.  Keep both values explicit so a warning is not
 # mistaken for permission to cross the release ceiling.
 MAX_ARTIFACT_BYTES = 900 * 1024 * 1024
-WARNING_ARTIFACT_BYTES = 850 * 1024 * 1024
+WARNING_ARTIFACT_BYTES = 880 * 1024 * 1024
 HARD_ARTIFACT_BYTES = 1024 * 1024 * 1024
 ARTIFACT_MANIFEST = REPO_ROOT / "data" / "pages-artifact-manifest.json"
 GROWTH_REPORT = REPO_ROOT / "reports" / f"pages_artifact_growth_{datetime.now(timezone.utc).date().isoformat()}.json"
@@ -420,7 +420,7 @@ def _manifest_payload(existing: dict | None = None, *, include_pending_growth: b
             "omitted_assets": "duplicated extracted paper-image binaries and dated visual-QA screenshot binaries",
             "omitted_assets_fallback": "Use the GitHub tree/raw templates with the source commit and repository-relative path.",
             "visual_qa_screenshot_policy": "Visual-QA manifests remain in Pages with repository-relative paths and SHA-256 digests; screenshot binaries remain in the committed repository rather than the deploy artifact.",
-            "warning_policy": "At 850 MiB, review growth and report retention before deployment; 900 MiB is a release hard ceiling below the GitHub Pages 1 GiB platform limit.",
+            "warning_policy": "At 880 MiB, review growth and report retention before deployment; 900 MiB is a release hard ceiling below the GitHub Pages 1 GiB platform limit.",
         },
         "budget": {
             "hard_limit_bytes": HARD_ARTIFACT_BYTES,

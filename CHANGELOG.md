@@ -59,6 +59,21 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   `docs/README.md` index gained the missing `asset-strategy-adr.md` row and
   the `manuscript/` tree; the 2026-09-08 section backfilled the PR #18
   median-of-3 Lighthouse change; `codemeta.json` `dateModified` refreshed.
+- **Artifact review budget moved 850 → 880 MiB after a growth review:** the
+  2026-09-10 intake evidence (a new paired-publications report, refreshed
+  public-source snapshot/inventory, external-link report, source coverage,
+  and the dated public-source review) plus the 2026-09-11 UTC-rollover
+  double-generation pushed the bounded Pages projection from 844.9 MiB to
+  870.5 MiB, tripping the review threshold in CI. Composition at review
+  time: paper PDFs 681 MiB (78%), extracted paper images 950 MiB (omitted
+  from the projection per policy), published dated reports ≈ 60 MiB,
+  everything else small. The 880 MiB review threshold keeps 20 MiB of
+  headroom below the 900 MiB release hard ceiling (`code/src/
+  artifact_budget.py`, `build_pages_artifact.py`, and the manifest
+  `warning_policy` string updated together). The durable alternative —
+  omitting superseded dated reports from the Pages projection while they
+  remain in the repository — is flagged for the principal in
+  [TODO.md](TODO.md) (DOC-009/DOC-012).
 
 ## 2026-09-08
 

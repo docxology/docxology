@@ -203,6 +203,18 @@ recorded with its evidence and a pointer, and none has been applied yet:
   `reports/zenodo_uncatalogued_2026-09-10.json`.
 - **Fork registered:** `docxology/oh-my-pi` was registered under the standing
   fork policy (DOC-005 mechanized path), matching the RGMs precedent.
+- **Pages artifact budget review (DOC-009/DOC-012; threshold 850 → 880 MiB):**
+  the 2026-09-10 intake evidence plus the 2026-09-11 UTC-rollover
+  double-generation grew the bounded Pages projection to 870.5 MiB,
+  tripping CI's artifact-budget gate. Composition at review: paper PDFs
+  681 MiB, published dated reports ≈ 60 MiB, extracted paper images 950
+  MiB (omitted by policy). The review threshold moved to 880 MiB
+  (documented in CHANGELOG 2026-09-10); PRINCIPAL REVIEW: the durable fix
+  is omitting superseded dated reports from the Pages projection (they
+  would remain in the repository per the DOC-012 retention tiers, with
+  GitHub tree/raw fallbacks), which needs an explicit retention decision
+  plus an `build_pages_artifact.py` omission class before the next
+  evidence wave re-trips the threshold.
 
 ## P0 — Release and integrity
 
