@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-08-13T17:52:47+00:00",
-  "source_commit_at_generation": "e52c73cfdea0ca948db4671e21458a4efa019c4e",
+  "source_commit_at_generation": "c8b4aa6a53eba65c00447f6ca86f020a826424c4",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -23,24 +23,24 @@
     "pages/BIBLIOGRAPHY.md": "1aa738e0a5f8fa23e55062f9b5a14f64b5c3f2c00cda3621582b3f8cbcdcf6c0",
     "pages/SOFTWARE.md": "c32f35fc85e2ab3c31824892610c6af371ce3483a4fe1ed72ecfbe8b8ba5a841",
     "resume/source.json": "9bfe02faeb946d3a8cd6ab916a4686e0252ada8af2995257ee7c7ad59108904a",
-    "data/current-counts.json": "8c18c11575d403b79d194035c025ae25ee52a5058eab690416806e571603e2b4",
+    "data/current-counts.json": "20a869c2f96314cd870b2a29497cf55ac8297015fab2155afe311c90ed825884",
     "data/coverage-exceptions.json": "ea8c3a77e7072bd4f70376c61c2f2f021b1be7dd41b2b592aabf59f203eef3b4",
     "data/repository-classification.json": "8b8af21e5ea029ffd363566285dd7eaf3d0f35f18271ab0ed2f780dcfd61add2",
-    "data/agent-index.json": "d3d6647b74bc4c24e5f3cb5b119e1fbfb1bfcad11225cadb06be04d4a66f12ac",
+    "data/agent-index.json": "256de14524a7b56562fea822c61ea6561b578915116da173914d6d6289a00a53",
     "data/generated-manifest.json": "094a010ccb9ffd7511170f36d1dbb34b56a45cd7f9f52af5ee3a5419c060c834",
-    "data/pages-artifact-manifest.json": "136e32170bf272cd4ae537a971fc2154508f120f8eb4e8afcad2f98e016d1707"
+    "data/pages-artifact-manifest.json": "a0fd03a76ba1fd60da30369a489d04c218ad387fe7dd8e1397420a32c739e0ae"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "e52c73cfdea0ca948db4671e21458a4efa019c4e",
+    "source_commit_at_generation": "c8b4aa6a53eba65c00447f6ca86f020a826424c4",
     "artifact_file_count": 4804,
-    "artifact_bytes": 844808589,
+    "artifact_bytes": 844808905,
     "omitted_paper_image_count": 8944,
     "omitted_superseded_report_count": 390
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "e52c73cfdea0ca948db4671e21458a4efa019c4e",
+    "candidate_source_commit": "c8b4aa6a53eba65c00447f6ca86f020a826424c4",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
@@ -111,7 +111,7 @@
       "GitHub user docxology": 214,
       "ORCID work groups": 20,
       "PubMed exact author records": 8,
-      "Zenodo ORCID-linked records": 152,
+      "Zenodo ORCID-linked records": 153,
       "Zenodo exact-name creator records": 65
     },
     "software": {
