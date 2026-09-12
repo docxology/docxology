@@ -163,14 +163,21 @@ push/PR.
   only *after* the payload commit — the Pages manifest binds
   `source_commit_at_generation` to the commit that last changed Pages payload
   content, so a pre-commit render goes stale the moment the payload lands.
-  Render the manifest only after dated receipts are tracked: an untracked
-  newest receipt (public-source review, growth receipt) makes the render
-  record stale supersession state, and the first control-tail commit that
-  adds files shifts `budget`/`control_files`/`included_files` — expect one
-  re-render plus control-tail amend before the render is idempotent
-  (rebind-once, amend-twice). Chain order is dependency order:
-  `build_pages_artifact.py --write-manifest` (produces the growth receipt)
-  → `build_generated_manifest.py` → `build_agent_index.py` →
-  `build_release_integrity.py` → `build_public_source_review.py` last (it
-  embeds evidence digests from the earlier binders). Then confirm with
+  Render binders only after dated receipts are *tracked*:
+  `build_agent_index.py` resolves receipt paths among tracked files, so a
+  receipt that exists only untracked is invisible to the render. Chain order
+  is dependency order: `build_pages_artifact.py --write-manifest` first (it
+  binds the payload commit and produces the growth receipt; on a dirty tree
+  it *silently skips* unless `--allow-dirty-prepayload-evidence` is passed)
+  → `build_agent_index.py` → its payload consumers `sync_site_facts.py`
+  (discovery surfaces, llms.txt) and `build_catalog.py` →
+  `build_generated_manifest.py` → `build_release_integrity.py` →
+  `build_public_source_review.py` last (it embeds evidence digests from the
+  earlier binders). Commit any payload churn from the consumer renders, then
+  re-render the manifest once against that final payload commit — after the
+  receipt *paths* are stable only the manifest and growth receipt churn, and
+  the downstream binders are byte-stable. Then confirm with
   `settle.py --tier full --skip-commit` on the clean tree before pushing.
+  Post-deploy: commit the live-site receipt *together with* its binder
+  rebind — a receipt-only push re-stales the binders and turns main CI red
+  until the rebind lands.
