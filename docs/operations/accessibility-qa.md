@@ -36,3 +36,7 @@ uv run --extra browser-qa python3 code/orchestrators/visual_qa.py \
 
 Approval verifies the existing screenshot hashes and coverage before changing
 only the review record; `--reviewed-by` cannot stamp a new capture directly.
+
+Landing new dated QA receipts: commit the receipt together with the binder
+re-render (`data/agent-index.json` resolves tracked receipts — see
+[settle.md](settle.md) Notes, binder ordering).

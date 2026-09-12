@@ -32,10 +32,11 @@ The full tier is the CI-equivalent one: it runs the same four checks as the
 `code/src/artifact_budget.py` budget gate (settle orders the cheap floor
 first; CI lists `validate_repo` first, but the set is identical). The validate
 job's separate generator-drift review step (`build_video_pages.py --check`,
-~5.7s, plus `build_work_pages.py --check`) stays outside the settle battery —
-`--validate`) — and the rendered-browser `browser-tests` job is a separate CI
-job settle does not mirror. A green settle `full` therefore predicts a green
-`validate` job up to drift-sensitive changes.
+~5.7s, plus `build_work_pages.py --check`) is belt-and-suspenders:
+`validate_repo.py` already runs both checks internally via its generation-plan
+no-write battery, so settle's full tier covers them; the rendered-browser
+`browser-tests` CI job is a separate job settle does not mirror. A green settle
+`full` therefore predicts a green `validate` job up to drift-sensitive changes.
 
 ## Effective tier
 
@@ -156,9 +157,9 @@ push/PR.
   exists; `validate_repo.py --release` cannot pass without an attestation,
   which settle's CLI has no flag to supply.
 - `--commit-message` sets the payload message only; the control-tail commit is
-  always the same message plus ` (control tail)`.
-- Battery commands run with `uv run --no-sync` so settling never mutates the
-  lockfile environment mid-run.
+- Battery commands run with `uv run --no-sync` (the lint step uses
+  `uv run --group lint` instead) so settling rarely mutates the lockfile
+  environment mid-run.
 - **Binder ordering (land-then-confirm cycle):** regenerate the binder chain
   only *after* the payload commit — the Pages manifest binds
   `source_commit_at_generation` to the commit that last changed Pages payload
@@ -168,12 +169,18 @@ push/PR.
   receipt that exists only untracked is invisible to the render. Chain order
   is dependency order: `build_pages_artifact.py --write-manifest` first (it
   binds the payload commit and produces the growth receipt; on a dirty tree
-  it *silently skips* unless `--allow-dirty-prepayload-evidence` is passed)
-  → `build_agent_index.py` → its payload consumers `sync_site_facts.py`
-  (discovery surfaces, llms.txt) and `build_catalog.py` →
-  `build_generated_manifest.py` → `build_release_integrity.py` →
-  `build_public_source_review.py` last (it embeds evidence digests from the
-  earlier binders). Commit any payload churn from the consumer renders, then
+  it fails closed with "dirty post-deploy Pages inputs" unless the only dirty
+  input is a current pre-payload public-source snapshot receipt recording
+  `source_worktree_clean: false`, permitted via
+  `--allow-dirty-prepayload-evidence` — see `build_pages_artifact.py`
+  :105-114 and :172-186) → `build_generated_manifest.py` →
+  `build_agent_index.py` → `build_release_integrity.py` → a final
+  `build_generated_manifest.py` pass (the canonical chain in
+  `code/src/generation_plan.py` ends on it) — re-run `sync_site_facts.py`/
+  `build_catalog.py` first if the new receipts change their rendered links.
+  `build_public_source_review.py` stays a deliberate manual render (excluded
+  from the local chain) and embeds digests of the dated evidence receipts,
+  not the binder outputs. Commit any payload churn from the consumer renders, then
   re-render the manifest once against that final payload commit — after the
   receipt *paths* are stable only the manifest and growth receipt churn, and
   the downstream binders are byte-stable. Then confirm with

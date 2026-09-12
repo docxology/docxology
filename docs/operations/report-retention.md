@@ -92,9 +92,9 @@ pruning:
    it authorizes for removal; reading it as a reference made every candidate
    self-blocking.
 
-`code/orchestrators/prune_old_reports.py` now excludes both (`_site` in the
-working-tree skip set; `data/report-retention.json` in the
-pathspec exclusions of its tracked-reference scan). The pinned behavior is
+`code/orchestrators/prune_old_reports.py` now excludes both via the shared
+reference scan in `code/src/report_references.py` (used by the pruner and the
+Pages builder). The pinned behavior is
 covered by `code/tests/test_prune_old_reports.py`. Strategic rationale and
 revisit triggers for this prune: see
 [`asset-strategy-adr.md`](asset-strategy-adr.md).

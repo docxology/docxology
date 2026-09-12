@@ -3620,8 +3620,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "4794aa27a7ec9c8bbf2c5f82389e898c83b5a232",
-  "source_tree_sha": "80a1ec3aaa3ad2c994d71a23f03cb69a8295cf93",
+  "source_commit": "e5dcf28fc7a356aac4291b242e200092b03b4ebd",
+  "source_tree_sha": "5aa62f421d4dd894ede6fa0a4799c1462ac8a924",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {

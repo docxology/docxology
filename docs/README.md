@@ -13,6 +13,7 @@ generated-layer rebuild ordering, canonical/reports). This README is the human m
 |------|----------|---------------|
 | **Architecture** | [`AGENTS.md`](AGENTS.md) | Repo structure: bibliography vs paper folders, generated discovery-layer rebuild ordering, volatile-count policy |
 | **Backlog** | [`../TODO.md`](../TODO.md) | Active unfinished release, evidence, accessibility, Pages, and operating-model work; no completed history |
+| **Operations** | [`operations/settle.md`](operations/settle.md) | One-command settle driver: tiered gate battery, payload/control-tail commit split, push/PR |
 | **Operations** | [`operations/publication-sync.md`](operations/publication-sync.md) | GitHub + Zenodo publication intake, Zenodo-only backfill, and software-only GitHub record triage |
 | **Operations** | [`operations/github-pages-artifact.md`](operations/github-pages-artifact.md) | Bounded GitHub Pages deployment projection, 1 GiB limit, and repository-vs-site asset policy |
 | **Operations** | [`operations/asset-strategy-adr.md`](operations/asset-strategy-adr.md) | ADR: repository-vs-Pages artifact asset strategy, paper binaries, and art-gallery imagery ownership |

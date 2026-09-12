@@ -24,6 +24,7 @@ A master profile repository indexing bibliography, software, generated GitHub in
 - `AGENTS.md`
 - `README.md`
 - `SYNTAX.md`
+- `MANUSCRIPT_STATUS.md`
 
 ## Source Surfaces
 
