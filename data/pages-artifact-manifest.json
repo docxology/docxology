@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-12T03:16:22Z",
-  "source_commit_at_generation": "0df2a773967d85719651400da8f22fbb229cac9c",
+  "generated_at": "2026-09-12T03:43:07Z",
+  "source_commit_at_generation": "4794aa27a7ec9c8bbf2c5f82389e898c83b5a232",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 844000270,
+    "source_bytes": 844000737,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4808,
-    "artifact_bytes": 844848931
+    "artifact_bytes": 844849398
   },
   "included_files": [
     {
@@ -5326,7 +5326,7 @@
     {
       "path": "catalog.html",
       "bytes": 50171,
-      "sha256": "7e907933f24cd2bd7a6f9b31480a5bd6c63aa41b9c807a83004253857e3e114c"
+      "sha256": "d0d6526cdfa396b227b2e203e0afd1f443a5edda3642e95ea57d38329e90aa66"
     },
     {
       "path": "cite-verify.html",
@@ -6920,8 +6920,8 @@
     },
     {
       "path": "docs/operations/settle.md",
-      "bytes": 9006,
-      "sha256": "d642e53a8a8c2f39e1f1986d0be20375b4aa00e93781a98c104e2e8512c1d448"
+      "bytes": 9472,
+      "sha256": "14c90f57acc8d892c1cd9986d55834773e267e84d18ac1fef42b4b61dcef71be"
     },
     {
       "path": "docs/releases/2026-05-discovery-layer.md",
@@ -16975,8 +16975,8 @@
     },
     {
       "path": "reports/live_site_verification_2026-09-12.json",
-      "bytes": 14968,
-      "sha256": "0d51bd10b11a2a17f9968d12d92fa8c66a4cb2814779c4bd9c3e3204f384978e"
+      "bytes": 14969,
+      "sha256": "8a4c46d00d4d8f404710de29aa5acfd84ceac4b9da6b87825a1c1ffbaccd5fac"
     },
     {
       "path": "reports/paired_publications_2026-06-04.json",
