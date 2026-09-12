@@ -3620,18 +3620,10 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "2962bd4f5b56d57ce2ce2e1d4743dbb4265bac93",
-  "source_tree_sha": "5bd8c03416c611fa10a58630d375ba3514ebb636",
-  "source_worktree_clean": false,
-  "source_worktree_dirty_paths": [
-    "AGENT_START.md",
-    "CHANGELOG.md",
-    "updates.html",
-    "code/orchestrators/settle.py",
-    "code/src/change_classifier.py",
-    "code/tests/test_change_classifier.py",
-    "docs/operations/settle.md"
-  ],
+  "source_commit": "dacdb2f8bcbd159dbd81a7d3c77f8a2501ac5b4c",
+  "source_tree_sha": "3a6174474c71c83b2494180d90a9b83e29cc58a4",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
   "summary": {
     "applied": 175,
     "categories": {

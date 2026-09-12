@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-12T00:56:47Z",
-  "source_commit_at_generation": "2962bd4f5b56d57ce2ce2e1d4743dbb4265bac93",
+  "generated_at": "2026-09-12T01:22:10Z",
+  "source_commit_at_generation": "dacdb2f8bcbd159dbd81a7d3c77f8a2501ac5b4c",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 843965661,
+    "source_bytes": 843999140,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4805,
-    "artifact_bytes": 844813779
+    "artifact_file_count": 4808,
+    "artifact_bytes": 844847801
   },
   "included_files": [
     {
@@ -5729,6 +5729,11 @@
       "sha256": "c0fc872a241b0e2847b53a43fc60e1a72416fb088b7fc6c34c533253b032bb60"
     },
     {
+      "path": "code/orchestrators/settle.py",
+      "bytes": 12456,
+      "sha256": "d8490a0a7be3e5ec547423d0111ea5ada9a9b0bfa90d58e9fcfbce4fb02335cf"
+    },
+    {
       "path": "code/orchestrators/submit_indexnow.py",
       "bytes": 3331,
       "sha256": "f8e988591152e60e62662a5b45357ed2688c20f788437bcc02cee2a5de992a3c"
@@ -5802,6 +5807,11 @@
       "path": "code/src/build_stamp.py",
       "bytes": 5207,
       "sha256": "e9d7bed392cb2430b2a85e9a6aef7a7c18017ff98c49a0cad7a62900a4706ba9"
+    },
+    {
+      "path": "code/src/change_classifier.py",
+      "bytes": 4447,
+      "sha256": "dce25731690792add8112ab0ae765da45728156a35953d10f72a62ed334f921e"
     },
     {
       "path": "code/src/collection_jsonld.py",
@@ -6057,6 +6067,11 @@
       "path": "code/tests/test_canonical_invariant.py",
       "bytes": 5610,
       "sha256": "6c05fdc309d903e4275caf8660eea39232d80accbe9e1aca704db7c8c57f4fc8"
+    },
+    {
+      "path": "code/tests/test_change_classifier.py",
+      "bytes": 8655,
+      "sha256": "0e80c180c8c267087778269475c45d0302061fe5fbb329cc0214a7ded650bb41"
     },
     {
       "path": "code/tests/test_check_external_links.py",
@@ -6902,6 +6917,11 @@
       "path": "docs/operations/repository-classification.md",
       "bytes": 3667,
       "sha256": "4f450c5954885cebc6eb111575ea9af1b799556a34fc919d234f9986e2c70c29"
+    },
+    {
+      "path": "docs/operations/settle.md",
+      "bytes": 7921,
+      "sha256": "cdc55d136cc305d5b3dfc62b776dceb7ec2148ed065260a42af00a31f37265f2"
     },
     {
       "path": "docs/releases/2026-05-discovery-layer.md",
@@ -24026,19 +24046,15 @@
       "role": "public control metadata"
     },
     {
-      "path": "reports/pages_artifact_growth_2026-09-11.json",
-      "role": "public control metadata"
-    },
-    {
       "path": "reports/pages_artifact_growth_2026-09-12.json",
       "role": "public control metadata"
     },
     {
-      "path": "reports/public_source_review_2026-09-11.json",
+      "path": "reports/public_source_review_2026-09-12.json",
       "role": "public control metadata"
     },
     {
-      "path": "reports/public_source_review_2026-09-11.md",
+      "path": "reports/public_source_review_2026-09-12.md",
       "role": "public control metadata"
     }
   ],
@@ -24095,8 +24111,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 390,
-    "bytes": 74373426,
+    "count": 393,
+    "bytes": 74551262,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
