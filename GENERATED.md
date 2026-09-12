@@ -94,4 +94,3 @@ Scripts under `code/orchestrators/` that do not produce a matrix artifact row: r
 ## Validation
 
 Run `python3 code/orchestrators/validate_repo.py` before declaring the generated layer current.
-Landing/verification can also run as one command via `code/orchestrators/settle.py` (see [`docs/operations/settle.md`](docs/operations/settle.md)); its full tier wraps `validate_repo.py` + pytest + ruff + the artifact-budget gate.

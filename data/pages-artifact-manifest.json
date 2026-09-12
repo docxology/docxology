@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-12T03:43:07Z",
-  "source_commit_at_generation": "4794aa27a7ec9c8bbf2c5f82389e898c83b5a232",
+  "generated_at": "2026-09-12T04:52:55Z",
+  "source_commit_at_generation": "e5dcf28fc7a356aac4291b242e200092b03b4ebd",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 844000737,
+    "source_bytes": 844006051,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4808,
-    "artifact_bytes": 844849398
+    "artifact_bytes": 844854713
   },
   "included_files": [
     {
@@ -65,18 +65,18 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 18680,
-      "sha256": "beafeca7e9cacb8f889cc0a73c4479b2a9cf319b1510c30559ed25d4e97e8694"
+      "bytes": 18893,
+      "sha256": "a20a72056b7cb3f2fa48d575ed6370da353b54371afb2df0714c2f8fd7e6a1f6"
     },
     {
       "path": "AGENT_START.md",
-      "bytes": 9531,
-      "sha256": "482b3ec9cde50db85cd1cf7ffe017793a96caf31ce814f4da140f69a38686b88"
+      "bytes": 9616,
+      "sha256": "49766141991d0cdcb0d5c9234186c77a04f0304b5e02be6a92b0c49df125f3c4"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 85598,
-      "sha256": "ee3368cb02b161d8e1a89eaf4b04686ae08a89053154f83a350556296011bff1"
+      "bytes": 86944,
+      "sha256": "3d027f4234cf83dbdea4a62962307cbb899bb67104ae359b465c1f4855fa33f1"
     },
     {
       "path": "CITATION.cff",
@@ -85,8 +85,8 @@
     },
     {
       "path": "CLAUDE.md",
-      "bytes": 10636,
-      "sha256": "8a3395d5166cba0ede2a62b2f74cf3c14fc1159fe88d08401805ccdd00808a8f"
+      "bytes": 10975,
+      "sha256": "36f98cf3c7469ca3bbc22756df965c56de4fdb35512a889ee7d6ac9ccce2ac5b"
     },
     {
       "path": "CNAME",
@@ -105,8 +105,8 @@
     },
     {
       "path": "TODO.md",
-      "bytes": 27482,
-      "sha256": "65a081230f5728a56512792d3d2aa2613b4898939f9785306e4860ccad4b7c7b"
+      "bytes": 28686,
+      "sha256": "58c6a6dcbe8792e4f24f1181a397d11e6806d16c7330e27d9b1004bd3872f063"
     },
     {
       "path": "a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt",
@@ -6685,18 +6685,18 @@
     },
     {
       "path": "docs/AGENTS.md",
-      "bytes": 5111,
-      "sha256": "8e46c508e8835c8437558cf976fe4f32b44abf11ba9cfbbdfe41ddb7020b3463"
+      "bytes": 5308,
+      "sha256": "625a1175c515952ff27db0c3210a88b19bb185f0e5c6407d144a1f40077091e8"
     },
     {
       "path": "docs/README.md",
-      "bytes": 5037,
-      "sha256": "db94fa2a95128c66aae4faca647fa725cf853003b4c091c09e4ed17ede7411f3"
+      "bytes": 5198,
+      "sha256": "b50c79c3bd694f93314ebd6c75541fbfdd8eb24eb3a322b4b5ffc9e8124529b7"
     },
     {
       "path": "docs/design/AGENTS.md",
-      "bytes": 669,
-      "sha256": "c468304eb0dc7dde4f256f9ea9e248d3a12bc908be5c07ba068493f2206a95a0"
+      "bytes": 734,
+      "sha256": "aec8d7bc893f43ee3e9c8b9c25267efc59be01eedfcd0cf39e011d8c6349c414"
     },
     {
       "path": "docs/design/README.md",
@@ -6825,8 +6825,8 @@
     },
     {
       "path": "docs/manuscript/README.md",
-      "bytes": 1708,
-      "sha256": "1119c9c8e9d6a485062d72e0fdb71192df7549f31427efe943b94d13bd697dac"
+      "bytes": 1733,
+      "sha256": "e217ad5b0325e6a6ef255317cec7d69fedbae6f76f2453eb8e54e656165e0c7a"
     },
     {
       "path": "docs/manuscript/S01_source_surface.md",
@@ -6865,13 +6865,13 @@
     },
     {
       "path": "docs/operations/accessibility-qa.md",
-      "bytes": 1823,
-      "sha256": "a32e3be2a5b8ff71d43b3bd843f4ff5a15046257af80afb79219ebc02fae4bb9"
+      "bytes": 2016,
+      "sha256": "97f4015c1e6ad0880c6dc0db850d2457a644da41ebe43a73007d9d7cfc7508dd"
     },
     {
       "path": "docs/operations/asset-strategy-adr.md",
-      "bytes": 9909,
-      "sha256": "d03e75ed2e1ec1d5d74f2ee5efe1e9c17bd8e7af00e1e9bb7eb4dbc2b2eb6778"
+      "bytes": 10207,
+      "sha256": "ae8e22c21b5770cf6a468a377b472dcf6f02a98a467a7ef4c5dee4e002f201c2"
     },
     {
       "path": "docs/operations/cv-release.md",
@@ -6880,13 +6880,13 @@
     },
     {
       "path": "docs/operations/evidence-refresh.md",
-      "bytes": 5700,
-      "sha256": "02d25b0966f7dc6d22266645af7f7d0c8076f8c2d4e74184be6ab3b5b56f4319"
+      "bytes": 5741,
+      "sha256": "0dcb971644e1922a1e5c609a2a49d6e632f26fcdfc4d7664d0f78e32b7cfff4f"
     },
     {
       "path": "docs/operations/github-pages-artifact.md",
-      "bytes": 4062,
-      "sha256": "8579c7fd2aba85207149c3364c6f60d4830455aaa87423268ba2e3a72782d133"
+      "bytes": 4126,
+      "sha256": "507869981929bbbe2bc77987ca3ef8dff40210bea54bdba7d80f991889c9dd91"
     },
     {
       "path": "docs/operations/live-verification.md",
@@ -6900,18 +6900,18 @@
     },
     {
       "path": "docs/operations/publication-sync.md",
-      "bytes": 16902,
-      "sha256": "be3a085c5fa234a5408308c26ba9ee4e215372518025873cbb22f8719754e318"
+      "bytes": 17024,
+      "sha256": "7ca9c89722fc89448095da945e155b50abc8136a94278fd45929968b06a99915"
     },
     {
       "path": "docs/operations/release-integrity.md",
-      "bytes": 9154,
-      "sha256": "997c36c291927537928adc120de20a79db3755deb09119989ffa08d98f68c04d"
+      "bytes": 9415,
+      "sha256": "e12f4703f391eb8ad3c62a68cd164e8622325aedbed3f40b491ae5a23831687b"
     },
     {
       "path": "docs/operations/report-retention.md",
-      "bytes": 5016,
-      "sha256": "96656bd6e10695a7aafaef7ac765f0629ce7e217e6d2e2b7f41a61a7b7c4d7ce"
+      "bytes": 4998,
+      "sha256": "d3d4f13889398d3091c4422e30252470457b611e729c5ad30c1be5a3217c1410"
     },
     {
       "path": "docs/operations/repository-classification.md",
@@ -6920,8 +6920,8 @@
     },
     {
       "path": "docs/operations/settle.md",
-      "bytes": 9472,
-      "sha256": "14c90f57acc8d892c1cd9986d55834773e267e84d18ac1fef42b4b61dcef71be"
+      "bytes": 9993,
+      "sha256": "c736e7d017428d59c0c73e475e64b2cba4887bfc9fcc21d8ef321274fa2ed9f8"
     },
     {
       "path": "docs/releases/2026-05-discovery-layer.md",
@@ -6930,8 +6930,8 @@
     },
     {
       "path": "docs/releases/AGENTS.md",
-      "bytes": 667,
-      "sha256": "a445a5123a92d5c1cee41e1a8067ca0066a3fec1d005d7037ab5ffc34ba8e481"
+      "bytes": 732,
+      "sha256": "5069185e281208d1456f4bdb2a245d6a8c4f326318036138767bf022db4bc77a"
     },
     {
       "path": "docs/releases/README.md",
@@ -6950,8 +6950,8 @@
     },
     {
       "path": "docs/security/security-posture.md",
-      "bytes": 6636,
-      "sha256": "fa7b410b278e4f322509cbfe3cd10e82dc633f3e7b078a6e4895ad04b0b5ff73"
+      "bytes": 6612,
+      "sha256": "137da2db87d66311515c4b25c994d3f3e0d146c19d8ff330853de3f8caca5a42"
     },
     {
       "path": "docs/seo/AGENTS.md",
@@ -17275,8 +17275,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 116814,
-      "sha256": "815e736eec2c9d29fdbdc96834578188956b81a75c1a207a63add89ed572f3a4"
+      "bytes": 116970,
+      "sha256": "1c09950acb3944c937a345038ef2853a1e00a3f7ff5b48e88edf5acf07fe0599"
     },
     {
       "path": "uv.lock",
