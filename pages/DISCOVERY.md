@@ -68,7 +68,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | Citation metadata | [CITATION.cff](../CITATION.cff) | Machine-readable citation metadata for this public research index |
 | Data catalog | [catalog.html](../catalog.html) / [data/catalog.json](../data/catalog.json) | Schema.org DataCatalog for public JSON, citation, and report exports |
 | Agent route manifest | [data/agent-index.json](../data/agent-index.json) | Stable route families, field-level schemas for works/software/repositories/claims/search/reports, current counts, freshness policy, hashes, fallbacks, and query recipes |
-| Coverage exceptions | [data/coverage-exceptions.json](../data/coverage-exceptions.json) · [source coverage report](../reports/source_coverage_2026-09-11.md) | Explicit paper-folder, full-text, DOI, canonical-URL, and non-paper coverage gaps; review queue rather than automatic rejection |
+| Coverage exceptions | [data/coverage-exceptions.json](../data/coverage-exceptions.json) · [source coverage report](../reports/source_coverage_2026-09-12.md) | Explicit paper-folder, full-text, DOI, canonical-URL, and non-paper coverage gaps; review queue rather than automatic rejection |
 | Repository classification | [data/repository-classification.json](../data/repository-classification.json) | Review queue for uncatalogued public repositories, preserving fork/archive/privacy state, description-quality triage, and manual catalog decisions |
 | Video timeline index | [data/videos-index.json](../data/videos-index.json) | Compact initial-load projection for the interactive video timeline; complete metadata remains in [data/videos.json](../data/videos.json) |
 | Pages artifact | [data/pages-artifact-manifest.json](../data/pages-artifact-manifest.json) | Published file list, SHA-256 values, bounded byte budget, omitted-image policy, and GitHub fallback templates |
@@ -92,9 +92,9 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | Reconciliation report | [reports/reconciliation_2026-09-11.md](../reports/reconciliation_2026-09-11.md) | Human-readable comparison of curated counts and public-source counts |
 | External-link report | [reports/external_links_2026-09-11.json](../reports/external_links_2026-09-11.json) | Cached scoped network check for site-critical outbound links |
 | External-link triage | [reports/external_links_triage_2026-09-11.md](../reports/external_links_triage_2026-09-11.md) | Categorized link warnings: bot-protected, transient, timeout, stale, and review |
-| Live-site verification | [latest dated report](../reports/live_site_verification_2026-09-11.json) | Deployed-site checks for expected markers, JSON contracts/counts, cache headers, deployment metadata, and GitHub Pages status |
-| Asset-size audit | [reports/asset_size_2026-09-11.json](../reports/asset_size_2026-09-11.json) | Size budget report for public assets and generated exports |
-| Static accessibility report | [reports/accessibility_static_2026-09-11.json](../reports/accessibility_static_2026-09-11.json) | Static accessibility checks for root HTML pages |
+| Live-site verification | [latest dated report](../reports/live_site_verification_2026-09-12.json) | Deployed-site checks for expected markers, JSON contracts/counts, cache headers, deployment metadata, and GitHub Pages status |
+| Asset-size audit | [reports/asset_size_2026-09-12.json](../reports/asset_size_2026-09-12.json) | Size budget report for public assets and generated exports |
+| Static accessibility report | [reports/accessibility_static_2026-09-12.json](../reports/accessibility_static_2026-09-12.json) | Static accessibility checks for root HTML pages |
 | Browser smoke manifest | [reports/browser-smoke/2026-09-11/manifest.json](../reports/browser-smoke/2026-09-11/manifest.json) | Browser-rendered smoke screenshots for high-priority pages |
 | Visual QA manifest | [reports/visual-qa/2026-09-11/manifest.json](../reports/visual-qa/2026-09-11/manifest.json) | Playwright screenshot manifest for key pages and mobile/desktop viewports |
 | Citation exports | [BibTeX](../bibliography.bib) · [CSL JSON](../bibliography.csl.json) · [RIS](../bibliography.ris) | Citation-manager formats generated from `BIBLIOGRAPHY.md` |
