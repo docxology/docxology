@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-12T03:06:19Z",
-  "source_commit_at_generation": "37abdc77f89c6c9080e328ff7dc7eea51647e2cd",
+  "generated_at": "2026-09-12T03:16:22Z",
+  "source_commit_at_generation": "0df2a773967d85719651400da8f22fbb229cac9c",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -24,8 +24,8 @@
     "source_bytes": 844000270,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4809,
-    "artifact_bytes": 844849036
+    "artifact_file_count": 4808,
+    "artifact_bytes": 844848931
   },
   "included_files": [
     {
@@ -17221,22 +17221,22 @@
     {
       "path": "search-index-content-video.json",
       "bytes": 980670,
-      "sha256": "b2db53b93b70838f252fac8fe54f8d9e9dcc96ea456b9affbb124a89b5e0b975"
+      "sha256": "c80bdf1de4c11902199af024595459f7b288db10907fb55b39093cb4bac4341d"
     },
     {
       "path": "search-index-content-work.json",
       "bytes": 375770,
-      "sha256": "9406f96d34ef6d595e73ab472f646a7da7b3353684da3d1a6d0e7f2c829d19a0"
+      "sha256": "0b9013743c31f64ab67931a1a4190b18b34523edac06c2dfb46a070bd9253c4d"
     },
     {
       "path": "search-index-core.json",
       "bytes": 811530,
-      "sha256": "a0ad686941977fbfa8ab8574ba0c6951b52c4988516684f10674d13ba693f64a"
+      "sha256": "de2e8f95921c04ad7894611ced4d98b4eec220cfab6ffbaa5cc9016c818af888"
     },
     {
       "path": "search-index.json",
       "bytes": 1633405,
-      "sha256": "5d092cac3972d5df8af06454db975c475ceef76b62b64b179bcb1e6a2052e5f6"
+      "sha256": "f40887ff89c7e79c7f93e023b98ae3ac46fe73ab888cf25af626138fbbfecab1"
     },
     {
       "path": "search.html",
@@ -24042,10 +24042,6 @@
       "role": "public control metadata"
     },
     {
-      "path": "reports/asset_size_2026-09-11.json",
-      "role": "public control metadata"
-    },
-    {
       "path": "reports/asset_size_2026-09-12.json",
       "role": "public control metadata"
     },
@@ -24115,8 +24111,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 397,
-    "bytes": 75649549,
+    "count": 398,
+    "bytes": 75654780,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
