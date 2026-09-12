@@ -14,10 +14,10 @@ from change_classifier import Classification, classify_paths  # noqa: E402
 
 # Replaces the manual sequence: payload commit, control-tail commit, then the
 # gate cascade by hand (docs/operations/settle.md).  Commits are split per the
-# CONTROL_FILES semantics encoded in change_classifier.classify_paths.  The
-# full tier runs the same four checks as the validate job of
-# .github/workflows/validate.yml (validate_repo.py, pytest, ruff, artifact
-# budget), so a green settle predicts a green CI.
+# release_controls.is_control_path semantics encoded in
+# change_classifier.classify_paths.  The full tier runs the same four checks
+# as the validate job of .github/workflows/validate.yml (validate_repo.py,
+# pytest, ruff, artifact budget), so a green settle predicts a green CI.
 TIER_ORDER: dict[str, int] = {"fast": 0, "full": 1, "release": 2}
 DEFAULT_COMMIT_MESSAGE = "Settle pending payload changes"
 CONTROL_TAIL_SUFFIX = " (control tail)"

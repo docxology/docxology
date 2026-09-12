@@ -159,3 +159,18 @@ push/PR.
   always the same message plus ` (control tail)`.
 - Battery commands run with `uv run --no-sync` so settling never mutates the
   lockfile environment mid-run.
+- **Binder ordering (land-then-confirm cycle):** regenerate the binder chain
+  only *after* the payload commit — the Pages manifest binds
+  `source_commit_at_generation` to the commit that last changed Pages payload
+  content, so a pre-commit render goes stale the moment the payload lands.
+  Render the manifest only after dated receipts are tracked: an untracked
+  newest receipt (public-source review, growth receipt) makes the render
+  record stale supersession state, and the first control-tail commit that
+  adds files shifts `budget`/`control_files`/`included_files` — expect one
+  re-render plus control-tail amend before the render is idempotent
+  (rebind-once, amend-twice). Chain order is dependency order:
+  `build_pages_artifact.py --write-manifest` (produces the growth receipt)
+  → `build_generated_manifest.py` → `build_agent_index.py` →
+  `build_release_integrity.py` → `build_public_source_review.py` last (it
+  embeds evidence digests from the earlier binders). Then confirm with
+  `settle.py --tier full --skip-commit` on the clean tree before pushing.
