@@ -46,6 +46,11 @@ This repository is the public research, software, citation, evidence, and websit
 | Migrate inline handlers | [`*.html`](.), [`code/orchestrators/migrate_inline_handlers.py`](code/orchestrators/migrate_inline_handlers.py) | `uv run python3 code/orchestrators/migrate_inline_handlers.py` |
 | Optimize font loading | [`*.html`](.), [`code/orchestrators/optimize_font_loading.py`](code/orchestrators/optimize_font_loading.py) | `uv run python3 code/orchestrators/optimize_font_loading.py` |
 
+Settle a finished change in one command — see
+[`docs/operations/settle.md`](docs/operations/settle.md): it classifies dirty paths, runs the tiered
+check battery, then lands the payload and control-tail commits (`--push`/`--pr` optional). Preview
+the plan without executing anything with `python3 code/orchestrators/settle.py --tier fast --dry-run`.
+
 ## Source-Of-Truth Rules
 
 - Curated local counts intentionally differ from public index counts when public sources include forks, duplicates, software archives, preprints, or name variants.

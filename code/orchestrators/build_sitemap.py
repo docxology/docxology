@@ -41,14 +41,54 @@ def _fs_path(rel: str) -> str:
     return rel
 
 
+_BATCH_LATEST: dict[str, str] | None = None
+
+
+def _batch_latest_map(repo_root: Path) -> dict[str, str]:
+    """One newest-first ``git log --name-only`` walk; first mention of a path
+    is the same commit ``git log -1 -- <path>`` reports (PERF-001 verified the
+    principle; this machine walks the full history in under a second, versus
+    ~1,374 per-URL subprocesses). Falls back to per-path probing if the walk
+    fails so the caller keeps its fallback semantics."""
+    global _BATCH_LATEST
+    if _BATCH_LATEST is not None:
+        return _BATCH_LATEST
+    try:
+        result = subprocess.run(
+            ["git", "log", "--name-only", "--format=%cs"],
+            cwd=repo_root,
+            capture_output=True,
+            text=True,
+            timeout=300,
+        )
+    except (OSError, subprocess.SubprocessError):
+        _BATCH_LATEST = {}
+        return _BATCH_LATEST
+    latest: dict[str, str] = {}
+    current_date: str | None = None
+    for line in result.stdout.splitlines():
+        if not line.strip():
+            continue
+        if len(line) >= 10 and line[4] == "-" and line[:4].isdigit():
+            current_date = line
+        elif line not in latest:
+            latest[line] = current_date or ""
+    _BATCH_LATEST = latest
+    return _BATCH_LATEST
+
+
 @lru_cache(maxsize=None)
 def git_lastmod(rel: str, repo_root: Path = REPO_ROOT) -> str | None:
     """Last commit date (YYYY-MM-DD) for a path, or None if git is unavailable.
 
     Gives each URL an accurate per-page <lastmod> instead of one shared date.
-    Falls back to None on shallow checkouts / exported trees so the caller can
-    use the global build date — preserving prior behaviour in those cases.
+    Uses the batch walk when available (see :func:`_batch_latest_map`); falls
+    back to a per-path probe (and then to None) so shallow checkouts and
+    exported trees keep the global build date behaviour.
     """
+    batch = _batch_latest_map(repo_root)
+    if batch:
+        return batch.get(_fs_path(rel)) or None
     try:
         result = subprocess.run(
             ["git", "log", "-1", "--format=%cs", "--", _fs_path(rel)],

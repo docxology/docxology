@@ -2,6 +2,27 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-09-12
+
+- **Unified settle driver (`code/orchestrators/settle.py`) + change classifier
+  (`code/src/change_classifier.py`):** one command classifies dirty paths into
+  surfaces (reports/site/code/tests/ci/docs/other) and runs a tiered gate
+  battery — fast (sitemap `--check`, artifact budget, ruff), full (adds
+  pytest + standard `validate_repo.py`, CI-equivalent per
+  `.github/workflows/validate.yml`), release (adds
+  `validate_repo.py --release --strict-reports`, binding the conventional
+  `reports/deployment-attestations/<HEAD>.json` when present) — then lands
+  the payload + control-tail commit split (`release_controls.is_control_path`
+  is the single control predicate), optionally pushing and opening a PR.
+  Decision tree, tier table, and measured timings live in the new
+  `docs/operations/settle.md` runbook, signposted from `AGENT_START.md`.
+- **Gate-latency fixes:** `code/src/build_stamp.py` memoizes the build stamp
+  (one git probe per process; video-pages check measured 55s → 5.7s), and
+  `build_sitemap.py`'s `_batch_latest_map` now caches its full-history walk
+  result, including the failure path; previously every `git_lastmod` call
+  re-walked the whole history (sitemap `--check` measured 0.8s after the fix
+  versus 19s before, with an 11m47s worst case eliminated).
+
 ## 2026-09-11
 
 - **Backlog batch — all five 2026-09-10 principal-review items resolved:**

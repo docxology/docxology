@@ -266,7 +266,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-09-11.json"
+        "reports/pages_artifact_growth_2026-09-12.json"
       ],
       "sources": [
         "tracked repository files",
@@ -608,8 +608,8 @@
     {
       "name": "Public-source review record",
       "outputs": [
-        "reports/public_source_review_2026-09-11.json",
-        "reports/public_source_review_2026-09-11.md"
+        "reports/public_source_review_2026-09-12.json",
+        "reports/public_source_review_2026-09-12.md"
       ],
       "sources": [
         "reports/public_source_snapshot_*.json",
