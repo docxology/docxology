@@ -5,6 +5,10 @@ navigable projection. A public release is not complete until the source,
 generated layer, artifact, deployment, and live verification records agree.
 
 ## Ordered release gate
+Landing the candidate and its control tail is mechanical: `settle.py --tier
+full` (see [settle.md](settle.md)); `settle.py --tier release` is a
+confirmation pass that re-runs step 3's strict validation and expects this
+ordered gate's receipts to already exist.
 
 1. Refresh public sources deliberately (`refresh_public_sources.py`,
    `refresh_public_source_inventory.py`, and GitHub/Zenodo pairing), then write

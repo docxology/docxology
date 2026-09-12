@@ -22,6 +22,24 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   result, including the failure path; previously every `git_lastmod` call
   re-walked the whole history (sitemap `--check` measured 0.8s after the fix
   versus 19s before, with an 11m47s worst case eliminated).
+- **Docs-accuracy wave (DOC-013; PERF-001 closed):** a three-reviewer sweep
+  of `docs/operations/*`, the root agent docs, and the satellite docs checked
+  every cited command/flag against the code and receipts; all findings landed.
+  `docs/operations/settle.md` gained the code-verified corrections (drift
+  review is inside the full battery; the manifest write fails closed on dirty
+  post-deploy inputs with `--allow-dirty-prepayload-evidence` whitelisting
+  only the pre-payload snapshot; the lint step's `--no-sync` exception; the
+  binder chain restated in the canonical `generation_plan.py` order ending on
+  a second `build_generated_manifest.py` pass, with
+  `build_public_source_review.py` described as the excluded manual render).
+  `TODO.md` closes PERF-001 with the measured evidence (batch walk adopted,
+  byte-identical, 0.8s vs 19s) and records the 2026-09-12 session findings.
+  The root docs (AGENTS, CLAUDE, GENERATED, AGENT_START) and nine operations
+  runbooks now cross-reference the settle driver; stale references fixed
+  (CLAUDE maintenance-log path, docs/AGENTS cache-bust version, ADR growth
+  receipt re-anchored to the 2026-09-12 receipt, security-posture CSP example
+  aligned to the deployed `CSP_META_TAG`, releases/design AGENTS boilerplate
+  corrected to the single-origin flow, manuscript inventory completed).
 
 ## 2026-09-11
 

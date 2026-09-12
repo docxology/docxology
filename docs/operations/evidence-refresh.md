@@ -98,4 +98,4 @@ Google Scholar counts and current organizational roles require direct primary
 verification. If a signed-in or otherwise authoritative view is unavailable,
 keep the dated snapshot and caveat rather than guessing. Finish with
 `regenerate_all.py --validate`, then inspect the newest source, reconciliation,
-and pairing reports.
+and pairing reports — then land per [settle.md](settle.md).

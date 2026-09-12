@@ -19,6 +19,14 @@ criteria, and dependencies. Re-review this file before each public release.
 - Last reviewed: 2026-09-08 (CI-robustness pass: open-item ledger unchanged
   — every item remains procedural or trigger-based; added the 2026-09-08
   session findings below)
+- Last reviewed: 2026-09-12 (settle-driver + docs-accuracy pass: PERF-001
+  CLOSED with measured evidence — the batch walk is adopted, byte-identical,
+  and sitemap `--check` measures 0.8s vs 19s per-path on this machine; DOC-005
+  queue verified empty via `classify_repositories.py --check` exit 0; DOC-013
+  runbook alignment landed via `docs/operations/settle.md` plus the
+  docs-accuracy review wave; DOC-014 stays a dedicated follow-up wave per its
+  own trigger (not combined with release-integrity work); SEC-002 remains in
+  its explicit blocked state)
 
 ## Completed / Closed (2026-08-01)
 
@@ -222,6 +230,39 @@ remaining entries are records of mechanized or resolved state:
   880 MiB band (see `docs/operations/asset-strategy-adr.md`, "Execution
   (2026-09-11)").
 
+## Session findings (2026-09-12)
+
+Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
+
+- **Unified settle driver landed (PR #27):** `code/orchestrators/settle.py` +
+  `code/src/change_classifier.py` classify dirty paths into surfaces
+  (reports/site/code/tests/ci/docs/other) and run the tiered battery — fast
+  (sitemap `--check`, artifact budget, ruff), full (+ pytest + standard
+  `validate_repo.py`, CI-equivalent), release (+ `--release --strict-reports`
+  with the conventional deployment attestation) — then land the payload +
+  control-tail commit split (`release_controls.is_control_path` is the single
+  control predicate) with optional push/PR. Runbook:
+  `docs/operations/settle.md`, signposted from `AGENT_START.md`.
+- **Gate-latency fixes (PR #27; PERF-001 acceptance met):** build-stamp
+  memoization (video-pages check 55s → 5.7s) and the sitemap batch walk
+  cached end-to-end (sitemap `--check` 0.8s vs 19s per-path; the 2026-09-06
+  attempt's timeout-swallow trap is closed — the failure path now caches the
+  fallback explicitly).
+- **Binder-ordering recipe (PR #28):** `docs/operations/settle.md` Notes
+  carries the land-then-confirm cycle: render binders only after the payload
+  commit (the Pages manifest binds `source_commit_at_generation` to the last
+  payload-content commit) and only after dated receipts are tracked
+  (`build_agent_index.py` resolves receipt paths among tracked files);
+  dependency order is `build_pages_artifact --write-manifest
+  --allow-dirty-prepayload-evidence` (silent skip on a dirty tree otherwise)
+  → agent-index → `sync_site_facts` → `build_catalog` → generated manifest →
+  release integrity → public-source review last; commit payload churn from
+  consumer renders before the final manifest render; commit the live-site
+  receipt together with its binder rebind (a receipt-only push turned main
+  validate red once, fixed by rebind `c7de4a4a`).
+- **DOC-013:** the root docs alignment was reviewed in the 2026-09-12
+  docs-accuracy wave; findings landed with the settle-driver pointers.
+
 ## P0 — Release and integrity
 
 ### DOC-002 — Release integrity and public artifact gate
@@ -358,31 +399,6 @@ remaining entries are records of mechanized or resolved state:
 - Deliverable: apply current/archival/deletion retention tiers with provenance-preserving manifest entries
 - Acceptance: current reports remain hosted/indexed; historical reports remain in GitHub or release archives; no evidence is deleted silently
 - Dependencies: Pages growth report, release-integrity manifest
-
-### PERF-001 — Evaluate batching the sitemap's per-URL git queries
-
-- Priority: P2
-- Owner: MAINTAINER
-- Trigger: when a measurement can be taken on storage that is not I/O-starved
-- Deliverable: decide whether `build_sitemap.git_lastmod` should derive every
-  URL's `lastmod` from one `git log --name-only` walk instead of one
-  `git log -1 -- <path>` subprocess per URL (~1,372 processes per run)
-- Acceptance: the rendered `sitemap.xml` is byte-identical either way, and the
-  batch form is measurably faster on the target hardware; otherwise the
-  per-path form stays
-- Dependencies: none
-
-Attempted and reverted 2026-09-06. The batch walk is correct in principle — the
-first mention of a path in a newest-first `--name-only` walk is the same commit
-`git log -1 -- <path>` reports — but it could not be shown to be an improvement
-on the external volume this was developed on: the walk took ~304 s against a
-~238 s projection for the 1,372 individual queries, and both runs were I/O-bound
-at roughly 5% CPU, so process count is not the bottleneck there. The attempt
-also exposed a trap worth remembering: a `timeout=300` on the batch walk fired,
-was swallowed as "git unavailable", and silently fell back to the per-path path,
-so the optimization was a no-op that still paid its own cost — and
-`sitemap.xml --check` passed byte-identically the whole time, proving nothing.
-Re-measure before adopting; do not adopt on process count alone.
 
 ## P2 — Operating model
 

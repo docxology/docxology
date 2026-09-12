@@ -29,7 +29,7 @@ Search and publications UIs build HTML from `search-index.json` / `data/works.js
 A CSP meta tag is deployed on all indexable HTML pages:
 
 ```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self';">
 ```
 
 `script-src 'self'` blocks all inline event handlers (`onclick=`, `onchange=`, etc.) and executable inline scripts. JSON-LD remains inline because it is data, not executable JavaScript. All event wiring goes through `addEventListener` in the external JS files (`js/interactive.js`, `js/tts-controls.js`, `js/menu-esc.js`, `js/publications.js`, plus the per-page modules `js/art-gallery.js`, `js/videos-page.js`, `js/search-page.js`, `js/repo-inventory.js`, `js/index-page.js`). The `style-src 'unsafe-inline'` exception is needed for per-page `<style>` blocks and inline display rules. `frame-src` permits only privacy-preserving YouTube embeds.

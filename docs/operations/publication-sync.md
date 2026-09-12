@@ -221,6 +221,9 @@ uv run python3 code/orchestrators/validate_repo.py
 uv run python3 -m pytest code/tests -q
 ```
 
+Land the intake with the settle driver (see [settle.md](settle.md)) — a
+`data/` intake auto-raises to the `full` tier.
+
 The `**N** indexed paper folders` prose count in `pages/BIBLIOGRAPHY.md` is now refreshed
 automatically by apply (`refresh_bibliography_counts` updates it alongside the works
 total). If `validate_repo.py` still reports `Stale generated <file>`, run the matching

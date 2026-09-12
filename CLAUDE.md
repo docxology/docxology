@@ -45,8 +45,14 @@ uv venv --python 3.12 && uv pip install -e .
 uv run python3 -m pytest code/tests -q
 uv run python3 -m pytest code/tests/test_seo_invariants.py::test_collect_seo_errors_empty_on_repo -q   # single test
 
+# Lint (CI gate):
+uv run --group lint ruff check code
+
 # Validate the generated layer (CI gate — run before declaring work done):
 uv run python3 code/orchestrators/validate_repo.py
+
+# One-command landing flow (tiered battery + commit split; see docs/operations/settle.md):
+uv run --no-sync python3 code/orchestrators/settle.py --tier full --dry-run
 ```
 
 The release envelope is checked as part of validation: `data/release-integrity.json`
@@ -73,7 +79,7 @@ To verify:
 **CSS** for all new components appended to `style.css`. Respects `prefers-reduced-motion`. Hidden in print + mobile responsive.
 
 `.github/workflows/validate.yml` runs `validate_repo.py` + `pytest` on every push/PR.
-Other workflows: `indexnow-on-push.yml`, `freshness.yml`, `live-verify.yml`.
+Other workflows: `pages.yml` (Pages deploy on main), `indexnow-on-push.yml`, `freshness.yml`, `live-verify.yml`.
 
 ### Rebuild ordering
 
@@ -169,8 +175,9 @@ After major SEO/sitemap changes, run `gsc_followup_preflight.py` then follow
 
 ## Where to look
 
-- `AGENTS.md` — agent roles, the full maintenance log, and "Learned User Preferences /
-  Workspace Facts" (the operating bible; read it for any non-trivial content change).
+- `AGENTS.md` — agent roles and "Learned User Preferences / Workspace Facts" (the
+  operating bible; read it for any non-trivial content change). The full maintenance
+  log lives at `docs/operations/maintenance-log.md` (which `AGENTS.md` delegates to).
 - `GENERATED.md` — the exhaustive rebuild matrix. `AGENT_START.md` — task recipes.
 - `docs/README.md` — human docs index; `docs/seo/`, `docs/design/`, `docs/operations/`,
   `docs/security/` hold the topic runbooks.

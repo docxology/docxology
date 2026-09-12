@@ -44,7 +44,8 @@ review, and growth receipt without making that SHA self-referential. The
 shared `code/src/release_controls.py` policy recognizes only exact, valid
 date-stamped control-report names at the top-level `reports/` directory; a
 nested or ad hoc report remains payload. After committing any payload change,
-regenerate these control artifacts and commit them separately;
+regenerate these control artifacts and commit them separately (ordering
+rules: [settle.md](settle.md) Notes, binder ordering);
 `--check-manifest` rejects a manifest that still names an older payload commit
 after a later content change.
 

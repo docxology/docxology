@@ -163,7 +163,8 @@ repository. Reports cited from a published page or data file are never
 omitted, and a post-assemble 404 guard fails the build if any referenced
 repository path was not copied.
 
-Measured against the 2026-09-11 growth receipt (864.17 MiB, 5,184 files): the
+Measured at landing, against the 2026-09-11 growth receipt (864.17 MiB, 5,184
+files — a same-day-overwritten receipt no longer in the tree): the
 omission class newly removes **390 files / 70.9 MiB** that were previously in
 the artifact (74.4 MB of non-binary superseded receipts and manifests; the
 visual-QA/browser-smoke binaries under the superseded dated sets were already
@@ -175,3 +176,8 @@ yesterday's drops out automatically, so ordinary dated-evidence growth no
 longer moves the artifact toward the ceiling. Option A (self-hosted art
 thumbnails) remains deferred under the same triggers; the band stays at
 880 MiB with the 900 MiB hard ceiling untouched.
+
+Re-anchored to the current newest receipt
+(`reports/pages_artifact_growth_2026-09-12.json`: **805.71 MiB / 4,808
+files** — already net of the omission class), the artifact sits about
+**74 MiB** below the 880 MiB warning band.

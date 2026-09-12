@@ -72,7 +72,6 @@ PYTHONDONTWRITEBYTECODE=1 uv run python3 -m pytest code/tests -q
 uv run --group lint ruff check code
 ```
 
-These are the same three gates CI runs (`.github/workflows/validate.yml` and the
-`validate` job of `pages.yml`). The lint rule set is configured in
+These are the same checks CI runs — `validate_repo`, pytest, ruff, and the artifact-budget gate (`.github/workflows/validate.yml`, the `validate` job of `pages.yml`, and `settle.py`'s fast tier). The lint rule set is configured in
 `pyproject.toml` under `[tool.ruff.lint]`, not on the command line, so a local
 run and CI enforce exactly the same rules.
