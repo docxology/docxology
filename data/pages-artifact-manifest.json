@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-14T22:25:31Z",
-  "source_commit_at_generation": "853cb9ee8c2135b482d8ac80d7805501d7dd7037",
+  "generated_at": "2026-09-14T22:36:05Z",
+  "source_commit_at_generation": "13270b13866ed3fc0f693ef7424996224326682f",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 848650436,
+    "source_bytes": 848283324,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4818,
-    "artifact_bytes": 849500881
+    "artifact_file_count": 4817,
+    "artifact_bytes": 849133594
   },
   "included_files": [
     {
@@ -16984,11 +16984,6 @@
       "sha256": "795682fd99dffdc45dfca55a898dfe16eceab31e54e5d6f4dd07a76e53128089"
     },
     {
-      "path": "reports/external_links_2026-09-11.json",
-      "bytes": 367112,
-      "sha256": "af7ec8fd83ed75645cd56dcd3daac5421f083b4a19f7a6788e5bb6e3908d8f5e"
-    },
-    {
       "path": "reports/external_links_2026-09-14.json",
       "bytes": 369717,
       "sha256": "5cb208699fc5231d267cdfc280a8c96997f16b80891a0a95a921d7133f091178"
@@ -17261,22 +17256,22 @@
     {
       "path": "search-index-content-video.json",
       "bytes": 980670,
-      "sha256": "0b1444a89f444c1f0482bdbd5c7a48ca1e7e9aba73120401df2c3739c5de8cde"
+      "sha256": "148d01e5331ee589b3b96921df084c9914d71676a80ad4443927d471ab5855b9"
     },
     {
       "path": "search-index-content-work.json",
       "bytes": 377984,
-      "sha256": "22d441cbc778b28294544612ae8474f21d614c2ec84ddfca123348f5ace83bfc"
+      "sha256": "cf67b8acee33e26df25d5f659d0bf4006c9c8724f8b4a4b7cf70aa664b93a73b"
     },
     {
       "path": "search-index-core.json",
       "bytes": 813867,
-      "sha256": "22bb3201d1994a866384329ea250346b5276f1522fbdb7c488659a915caf7289"
+      "sha256": "15a0026fa1bae01ed18e6852f5dea3b7f6004e3cd6c4cff32e2f7cec89d1fc45"
     },
     {
       "path": "search-index.json",
       "bytes": 1638080,
-      "sha256": "1a07d470488f9bf16669de18e154ed201e83927b9710730846b1e5902333fa2b"
+      "sha256": "7c41c44f7c228b9ef4a5bd52e04629242d5f804e0b5fd981646bb554c393665d"
     },
     {
       "path": "search.html",
@@ -24160,8 +24155,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 409,
-    "bytes": 80487627,
+    "count": 410,
+    "bytes": 80854739,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
