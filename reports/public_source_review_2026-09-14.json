@@ -15820,14 +15820,13 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "59b0a525b856ddda4eb33c333a3db73a53bb5da3",
-  "source_tree_sha": "77b33298bd4a11bb4f34653e865cb44b679257e8",
+  "source_commit": "2117e0d8dca29b312243c2986bfa172a491ddb39",
+  "source_tree_sha": "0a05776108cf161eb7be3dd98b1601d6d1083238",
   "source_worktree_clean": false,
   "source_worktree_dirty_paths": [
     "catalog.html",
     "data/catalog.json",
     "discovery.html",
-    "llms.txt",
     "pages/DISCOVERY.md"
   ],
   "summary": {
