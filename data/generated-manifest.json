@@ -578,7 +578,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-09-11.json"
+        "reports/external_links_2026-09-14.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -632,7 +632,7 @@
         "reports/external_links_triage_2026-09-11.md"
       ],
       "sources": [
-        "reports/external_links_2026-09-11.json"
+        "reports/external_links_2026-09-14.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },
