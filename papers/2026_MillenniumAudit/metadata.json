@@ -1,8 +1,10 @@
 {
   "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
   "version": "1.0.0",
-  "doi": "10.5281/zenodo.22243473",
-  "doi_url": "https://doi.org/10.5281/zenodo.22243473",
+  "doi": "10.5281/zenodo.22243472",
+  "doi_url": "https://doi.org/10.5281/zenodo.22243472",
+  "artifact_doi": "10.5281/zenodo.22243473",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.22243473",
   "zenodo_record": "https://zenodo.org/records/22243473",
   "record_id": "22243473",
   "publication_date": "2026-09-01",

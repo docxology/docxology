@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *110 original repositories · 39 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *112 original repositories · 39 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -145,7 +145,9 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [thalia](https://github.com/docxology/thalia) | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · [📄](../papers/2026_THALIA/) · [Zenodo](https://doi.org/10.5281/zenodo.21763244) | Python | 0 | 2026-08 |
 | [math4wisdom-superhuman-docs-archive](https://github.com/docxology/math4wisdom-superhuman-docs-archive) | Structured, read-only Math4Wisdom Superhuman Docs archive | TypeScript | 0 | 2026-08 |
 | [docxplus](https://github.com/docxology/docxplus) | docxplus — the Intelligent Document Container: format, tools, and formal specification · [📄](../papers/2026_DocxplusIntelligentDocument/) · [Zenodo](https://doi.org/10.5281/zenodo.21983948) | Python | 0 | 2026-08 |
-| [millennium_audit](https://github.com/docxology/millennium_audit) | Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · [Zenodo](https://doi.org/10.5281/zenodo.22243473) · [📄](../papers/2026_MillenniumAudit/) | Python | 0 | 2026-09 |
+| [millennium_audit](https://github.com/docxology/millennium_audit) | Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · [Citation DOI](https://doi.org/10.5281/zenodo.22243472) · [📄](../papers/2026_MillenniumAudit/) | Python | 0 | 2026-09 |
+| [agentic_os_security](https://github.com/docxology/agentic_os_security) | Agentic Security and Operating Systems — deep review and prospectus of OpSec, Cognitive Security, and Agentic Cyber Security (paper source) · [📄](../papers/2026_AgenticSecurityOperating/) · [Zenodo](https://doi.org/10.5281/zenodo.22754351) | TeX | 0 | 2026-09 |
+| [FractiSkills](https://github.com/docxology/FractiSkills) | One portable agent SKILL per page of the SS Vibelandia Omniversal Canvas — Skillarum-rendered skill pages · [📄](../papers/2026_FractiSkills/) · [Zenodo](https://doi.org/10.5281/zenodo.22712650) | Python | 0 | 2026-09 |
 | [multi-time](https://github.com/docxology/multi-time) | Multi-frequency time-series analysis toolkit built on sktime — validates irregular series, tests stationarity and Granger causality, and evaluates forecasting models | Python | 0 | 2026-08 |
 | [cognitive_integrity](https://github.com/docxology/cognitive_integrity) | Cognitive Integrity Framework (CIF) — formal security architecture for multiagent systems · [📄](../papers/2026_CognitiveIntegrity/) · [📄](../papers/2026_CognitiveIntegrityFramework/) | Python | 0 | 2026-08 |
 

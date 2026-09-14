@@ -20,21 +20,21 @@
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "1aa738e0a5f8fa23e55062f9b5a14f64b5c3f2c00cda3621582b3f8cbcdcf6c0",
-    "pages/SOFTWARE.md": "c32f35fc85e2ab3c31824892610c6af371ce3483a4fe1ed72ecfbe8b8ba5a841",
+    "pages/BIBLIOGRAPHY.md": "d1683d7044c0d41c95732b67cde346927d2503c2205e48affadfdc37493d7a8d",
+    "pages/SOFTWARE.md": "0feea152ec22419e34593fdfa98448a9e99c50642ddb507069e4c4cecf5d2e3d",
     "resume/source.json": "9bfe02faeb946d3a8cd6ab916a4686e0252ada8af2995257ee7c7ad59108904a",
-    "data/current-counts.json": "20a869c2f96314cd870b2a29497cf55ac8297015fab2155afe311c90ed825884",
-    "data/coverage-exceptions.json": "ea8c3a77e7072bd4f70376c61c2f2f021b1be7dd41b2b592aabf59f203eef3b4",
-    "data/repository-classification.json": "8b8af21e5ea029ffd363566285dd7eaf3d0f35f18271ab0ed2f780dcfd61add2",
-    "data/agent-index.json": "7cc5af7c07d4bfa7718dc574b4f186bf6198476f011a930838ea68b361d6b4dd",
+    "data/current-counts.json": "5a4e6219330063a619bca24bbdb00ceffff3b744d942912f2ec128a499d39ec5",
+    "data/coverage-exceptions.json": "94c6a7453fcb46876e385b6c531fdd1be598e3356e889ac79a49a032f60c7be4",
+    "data/repository-classification.json": "1c1a3907ced8f398921589c9ad821dabb6c48415f1b41f26997c719d477d0b6a",
+    "data/agent-index.json": "fdac6ce1b94bed961b7f2b3f68bfef65bc69ae4b1e5b4cb3c83c3db2f4287fbc",
     "data/generated-manifest.json": "6c04aba96fbe99a321942e950a57cd937a04a9eeadef6ab83c5cc257cbea9dca",
-    "data/pages-artifact-manifest.json": "97f557245519993509c04b2a9924380527344ec5497960e6c70bd82175405c13"
+    "data/pages-artifact-manifest.json": "63e84ee6d90ef49c244ad493d1aa723f4f19973a8f00f05ddc8671ef192e243c"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
     "source_commit_at_generation": "9edcabff2fa20e9635d1af91a0d8cf910aae071e",
-    "artifact_file_count": 4808,
-    "artifact_bytes": 844854683,
+    "artifact_file_count": 4809,
+    "artifact_bytes": 844906180,
     "omitted_paper_image_count": 8944,
     "omitted_superseded_report_count": 398
   },
@@ -49,14 +49,14 @@
     "policy": "No local filesystem paths, secret-like tokens, or unsafe URL schemes in public CV/source manifests."
   },
   "counts": {
-    "bibliography_docs_links": 197,
-    "bibliography_works": 214,
+    "bibliography_docs_links": 198,
+    "bibliography_works": 215,
     "domains": {
       "AII Ecosystem": 6,
       "Active Inference": 45,
       "Art & Synergetics": 16,
       "Cognitive Security": 37,
-      "Computational": 56,
+      "Computational": 57,
       "Entomology": 23,
       "Genetics & Biomedical": 15,
       "Presentations & Media": 15
@@ -64,27 +64,27 @@
     "extracted_images": 8944,
     "full_text_papers": 190,
     "generated_exports": {
-      "data_publications_ld_main_entity": 214,
-      "data_software_json": 149,
-      "data_software_ld_main_entity": 149,
-      "data_works_json": 214
+      "data_publications_ld_main_entity": 215,
+      "data_software_json": 151,
+      "data_software_ld_main_entity": 151,
+      "data_works_json": 215
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 43,
       "archived": 5,
-      "curated": 149,
-      "docxology": 213,
+      "curated": 151,
+      "docxology": 216,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 87,
-      "forks": 89,
+      "fork_docxology": 88,
+      "forks": 90,
       "primary_ActiveInferenceInstitute": 41,
-      "primary_docxology": 126,
-      "primary_total": 167,
+      "primary_docxology": 128,
+      "primary_total": 169,
       "private": 0,
-      "public": 256,
-      "recently_updated": 194,
-      "total": 256,
-      "uncataloged": 107
+      "public": 259,
+      "recently_updated": 196,
+      "total": 259,
+      "uncataloged": 108
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -102,7 +102,7 @@
       "update_existing": 49,
       "zenodo_records": 156
     },
-    "paper_folder_docs": 197,
+    "paper_folder_docs": 198,
     "papers_with_images": 139,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
@@ -116,13 +116,13 @@
     },
     "software": {
       "active_inference_institute": 39,
-      "curated_total": 149,
-      "docxology_owned": 110
+      "curated_total": 151,
+      "docxology_owned": 112
     },
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 192,
+      "Papers": 193,
       "Playbooks": 2,
       "Presentations": 9,
       "Report": 1,

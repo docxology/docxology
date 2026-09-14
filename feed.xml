@@ -6,7 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Sep 2026 17:49:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 21:12:02 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
@@ -27,6 +27,13 @@
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
       <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security</title>
+      <link>https://danielarifriedman.com/works/Friedman2026AgenticSecurityOperatingSystems218.html</link>
+      <guid isPermaLink="false">work-Friedman2026AgenticSecurityOperatingSystems218</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>FractiSkills: One Portable Agent Skill per Page</title>
@@ -193,13 +200,6 @@
       <title>Prior Cognitive Art</title>
       <link>https://danielarifriedman.com/works/Friedman2026PriorCognitiveArt194.html</link>
       <guid isPermaLink="false">work-Friedman2026PriorCognitiveArt194</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Active Inference · 2026</description>
-    </item>
-    <item>
-      <title>Data Descriptor Template: Schema, Provenance, and Release Readiness</title>
-      <link>https://danielarifriedman.com/works/Friedman2026DataDescriptorTemplateSchema192.html</link>
-      <guid isPermaLink="false">work-Friedman2026DataDescriptorTemplateSchema192</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Active Inference · 2026</description>
     </item>
