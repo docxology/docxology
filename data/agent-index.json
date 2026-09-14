@@ -1146,11 +1146,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 922746880,
-        "source_bytes": 848299087,
+        "source_bytes": 848283912,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4818,
-        "artifact_bytes": 849149539
+        "artifact_file_count": 4817,
+        "artifact_bytes": 849134182
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1170,7 +1170,7 @@
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "d2155b79bc9f8288fd64a79b8c09c584b81e70a5bb0c431e93dee0133d263d22",
     "videos_index": "094f63112a5049a9a5ce41b6e5f5583e2946c002f1f3d07872d5957d6f43d80b",
-    "search": "88d5ed4b9c9978dd7229beefc748fe7735963cf08db04c7fbe47c1dcf6e6aa2d",
+    "search": "b6d8654e255d7404c9351490d8c742b8791d2f8823a3810d9be47fe0789fd7e4",
     "claims": "25c0f4915e2fcde8c360f3ccf976ec4024c692584b4f8dab2ba9ec01d0469399",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "94c6a7453fcb46876e385b6c531fdd1be598e3356e889ac79a49a032f60c7be4",
@@ -1179,7 +1179,7 @@
     "organizations": "116173c10c6e1e6d25496d62d79ec3e40570d17477ec6143b824cf63e148a307",
     "resume": "8a1468bab02b1dd6c2447571cdcc8786892db3a1be2780e34c5d6bd5a517ddbe",
     "work_enrichment": "27c1c0a0b63de4aed16f96a97424593ffdd629c6694697ba216b988919aec83e",
-    "catalog": "874d9e092fe1ef5a79f55d428fbc7e170112e5a7e64fd9d3bd4ba3fa46a94d3f",
+    "catalog": "d789d4af4c9ece527153a85c9cb407025c0951c43768ea0e5becc862f0553fd0",
     "reconciliation": "01437cddc9e13d2648cd8f7ca29d01f12ea349f7fb3d907de1f3f0d800f3e481",
     "generated_manifest": "8b20221c7a51747166b32d3bf3b29b621d3b7b90c7fbef2883ff5239ad2287c2",
     "current_counts": "9bb97712194654613e400e8b6d3f6927e694e392e98a729b942f1ee04a9241d1"
@@ -1203,7 +1203,7 @@
   },
   "verification_status": {
     "live_report": "/reports/live_site_verification_2026-09-14.json",
-    "generated_at": "2026-09-14T22:53:13Z",
+    "generated_at": "2026-09-14T23:03:03Z",
     "overall_ok": false,
     "passing": 12,
     "checked_urls": 17,
