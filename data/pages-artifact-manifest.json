@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-14T21:53:19Z",
-  "source_commit_at_generation": "f4919f042f179597b43f569b4c9159cac6c0e4e7",
+  "generated_at": "2026-09-14T22:02:17Z",
+  "source_commit_at_generation": "16ebe103ee8ce5b329f125d9db290f3a8d720f76",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 852929791,
+    "source_bytes": 848282751,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4827,
-    "artifact_bytes": 853781640
+    "artifact_file_count": 4818,
+    "artifact_bytes": 849133192
   },
   "included_files": [
     {
@@ -5326,7 +5326,7 @@
     {
       "path": "catalog.html",
       "bytes": 50171,
-      "sha256": "809f785418e0aecd32c82016721b2f6a4dbe6258e162c497ff696b964071506c"
+      "sha256": "681e4129d4798a8cc4ab553441e0cbc27930cb90806731ed1cb9d75e60f8e9d0"
     },
     {
       "path": "cite-verify.html",
@@ -6570,13 +6570,13 @@
     },
     {
       "path": "data/repository-classification.json",
-      "bytes": 95527,
-      "sha256": "1c1a3907ced8f398921589c9ad821dabb6c48415f1b41f26997c719d477d0b6a"
+      "bytes": 95781,
+      "sha256": "afc437eb955dae43093a1a93390cf1fe0fd4ecbefd2c293740584989ac401909"
     },
     {
       "path": "data/repository-exclusions.json",
-      "bytes": 35456,
-      "sha256": "55448edd27b0fa804d5f4163567c8bbdb12a530b2a4f0b4c3cea8d8bc2f9bc93"
+      "bytes": 35937,
+      "sha256": "6aab86a48ce33b060768815f94905b2b7798bd3cab95eba7eac0fc1c4ea038c2"
     },
     {
       "path": "data/reproducibility.json",
@@ -7390,8 +7390,8 @@
     },
     {
       "path": "pages/SOFTWARE.md",
-      "bytes": 45200,
-      "sha256": "0feea152ec22419e34593fdfa98448a9e99c50642ddb507069e4c4cecf5d2e3d"
+      "bytes": 45239,
+      "sha256": "3a47d65523d9bfae425030fdce44eabc66eaedfb7fb1985fda8ef1d9e59d1288"
     },
     {
       "path": "pages/VERIFICATION_LOG.md",
@@ -16854,11 +16854,6 @@
       "sha256": "cda58b4699cf2906682173c0eeed2cfd67a14acdcc9567487b059145aca5b395"
     },
     {
-      "path": "reports/accessibility_static_2026-09-12.json",
-      "bytes": 1060216,
-      "sha256": "d3230fd8fedd7feca1f2059075e56f455300d8a4a83a98e94afbd643f69193da"
-    },
-    {
       "path": "reports/accessibility_static_2026-09-14.json",
       "bytes": 1061594,
       "sha256": "fe461bb410074dc2f3bc559a0094790cdb20190a5140039b3d59804f4d25d97f"
@@ -17074,11 +17069,6 @@
       "sha256": "1d336bab37c6027f13f3cee1b68de4f607fc7cde59c5ab5406c6cd9467b283f2"
     },
     {
-      "path": "reports/paired_publications_2026-09-11.json",
-      "bytes": 3462686,
-      "sha256": "1bc9e0053700a8eb8949fc68cadc1f896a39fdaa721220c4bbb541a08e77010e"
-    },
-    {
       "path": "reports/paired_publications_2026-09-14.json",
       "bytes": 3462450,
       "sha256": "4cd81d592ea43761a72a6c0ecc7355fc056db0761c5ee9cb5279e3f2d28d8626"
@@ -17114,11 +17104,6 @@
       "sha256": "9941cda9c38f6cdc7d51d57a977d3bdbda634bef7a6dcfefd5e3fc8dbc4bf6ea"
     },
     {
-      "path": "reports/public_source_inventory_2026-09-10.json",
-      "bytes": 83894,
-      "sha256": "db17b4028eebbad33aac4fbf2c0d2ba350de9f58a09c19c11d06f242c542c144"
-    },
-    {
       "path": "reports/public_source_inventory_2026-09-14.json",
       "bytes": 84742,
       "sha256": "21758a321d20848aeaa6caf5d314232224c4edd5507a78647c6534f7e1f675d3"
@@ -17137,11 +17122,6 @@
       "path": "reports/public_source_snapshot_2026-06-09.json",
       "bytes": 17579,
       "sha256": "f923571ad1b365b841343e993f1e24722e4bdc1a4693bf292c03d4712e372181"
-    },
-    {
-      "path": "reports/public_source_snapshot_2026-09-11.json",
-      "bytes": 17889,
-      "sha256": "546bf6d652c039a44b5db0c46821d66ac7a7d9cd2e3cf8a8549de6f9839f71cc"
     },
     {
       "path": "reports/public_source_snapshot_2026-09-14.json",
@@ -17167,16 +17147,6 @@
       "path": "reports/seo-discoverability-audit-2026-06-10.md",
       "bytes": 11430,
       "sha256": "50cc2ceafb7665a95737d04d941f8dbcf00ba049d28a780d858d6ba7a76b191b"
-    },
-    {
-      "path": "reports/source_coverage_2026-09-12.json",
-      "bytes": 18342,
-      "sha256": "ea8c3a77e7072bd4f70376c61c2f2f021b1be7dd41b2b592aabf59f203eef3b4"
-    },
-    {
-      "path": "reports/source_coverage_2026-09-12.md",
-      "bytes": 4787,
-      "sha256": "8881a8e8fd645fad8d6bddb8eb8d700211c96b60d6f02f8c5d7bf99031cec664"
     },
     {
       "path": "reports/source_coverage_2026-09-14.json",
@@ -24117,10 +24087,6 @@
       "role": "public control metadata"
     },
     {
-      "path": "reports/asset_size_2026-09-12.json",
-      "role": "public control metadata"
-    },
-    {
       "path": "reports/asset_size_2026-09-14.json",
       "role": "public control metadata"
     },
@@ -24130,14 +24096,6 @@
     },
     {
       "path": "reports/pages_artifact_growth_2026-09-14.json",
-      "role": "public control metadata"
-    },
-    {
-      "path": "reports/public_source_review_2026-09-12.json",
-      "role": "public control metadata"
-    },
-    {
-      "path": "reports/public_source_review_2026-09-12.md",
       "role": "public control metadata"
     },
     {
@@ -24202,8 +24160,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 399,
-    "bytes": 75656859,
+    "count": 408,
+    "bytes": 80485595,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
