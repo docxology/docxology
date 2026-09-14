@@ -913,6 +913,16 @@
       "note": "Public fork (created 2026-09-09) of the omp coding-agent upstream; excluded by the standing fork policy, not by an individual review.",
       "github_id": 1363234262,
       "github_node_id": "R_kgDOUUFN1g"
+    },
+    {
+      "full_name": "docxology/LeanDB",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-14",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork (created 2026-09-13) with no description; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1370377115,
+      "github_node_id": "R_kgDOUa5Lmw"
     }
   ]
 }
