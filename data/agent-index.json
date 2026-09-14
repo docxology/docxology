@@ -1203,9 +1203,9 @@
   },
   "verification_status": {
     "live_report": "/reports/live_site_verification_2026-09-14.json",
-    "generated_at": "2026-09-14T23:03:03Z",
-    "overall_ok": false,
-    "passing": 12,
+    "generated_at": "2026-09-14T23:29:55Z",
+    "overall_ok": true,
+    "passing": 17,
     "checked_urls": 17,
     "pages_status": "built"
   },
