@@ -2,14 +2,14 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `9edcabff2fa20e9635d1af91a0d8cf910aae071e`
+Source commit: `59b0a525b856ddda4eb33c333a3db73a53bb5da3`
 
 ## Disposition summary
 
 | Status | Items |
 |---|---:|
-| Applied | 320 |
-| Deferred | 14 |
+| Applied | 321 |
+| Deferred | 13 |
 | Rejected | 318 |
 
 | Category | Applied | Deferred | Rejected |
@@ -17,7 +17,7 @@ Source commit: `9edcabff2fa20e9635d1af91a0d8cf910aae071e`
 | `ambiguous_doi_change` | 64 | 0 | 0 |
 | `biographical_claim_change` | 10 | 0 | 0 |
 | `public_source_observation` | 0 | 6 | 0 |
-| `repository_classification` | 100 | 8 | 0 |
+| `repository_classification` | 101 | 7 | 0 |
 | `scholar_metric_change` | 1 | 0 | 0 |
 | `zenodo_candidate` | 145 | 0 | 318 |
 
@@ -32,7 +32,7 @@ Source commit: `9edcabff2fa20e9635d1af91a0d8cf910aae071e`
 - `public_source_inventory`: `reports/public_source_inventory_2026-09-14.json` (`21758a321d20848aeaa6caf5d314232224c4edd5507a78647c6534f7e1f675d3`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`cff826363c7ca0e66bf583ee039a27cf0bfebc05ef57fb3222a8d91f50f73714`)
 - `public_source_snapshot`: `reports/public_source_snapshot_2026-09-14.json` (`a1e7ca9d51cdb62384e1ecb672b9276f18a9bc2ca8119fd8f5ae9b2864da3575`)
-- `repository_classification`: `data/repository-classification.json` (`1c1a3907ced8f398921589c9ad821dabb6c48415f1b41f26997c719d477d0b6a`)
+- `repository_classification`: `data/repository-classification.json` (`afc437eb955dae43093a1a93390cf1fe0fd4ecbefd2c293740584989ac401909`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2`)
 - `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5`)
 
@@ -44,7 +44,6 @@ Source commit: `9edcabff2fa20e9635d1af91a0d8cf910aae071e`
 - **`public_source_observation` — public-source-observation:GitHub user docxology**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`public_source_observation` — public-source-observation:Zenodo ORCID-linked records**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`public_source_observation` — public-source-observation:Zenodo exact-name creator records**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
-- **`repository_classification` — repository:docxology/LeanDB**: The repository remains outside the curated catalog pending a human classification decision.
 - **`repository_classification` — repository:docxology/OmniLatticeTextbook**: The repository remains outside the curated catalog pending a human classification decision.
 - **`repository_classification` — repository:docxology/Skillarum**: The repository remains outside the curated catalog pending a human classification decision.
 - **`repository_classification` — repository:docxology/blue_line**: The repository remains outside the curated catalog pending a human classification decision.
@@ -155,6 +154,7 @@ Source commit: `9edcabff2fa20e9635d1af91a0d8cf910aae071e`
 - **`repository_classification` — repository:docxology/InsightSpike-AI**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/IntroductionToAlgebraicEvaluation**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/Journal-Utilities**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
+- **`repository_classification` — repository:docxology/LeanDB**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/MatrixCorrectionTools.jl**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/MemOS**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/ODEM**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
