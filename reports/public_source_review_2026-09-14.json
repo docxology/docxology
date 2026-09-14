@@ -15820,15 +15820,10 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "2117e0d8dca29b312243c2986bfa172a491ddb39",
-  "source_tree_sha": "0a05776108cf161eb7be3dd98b1601d6d1083238",
-  "source_worktree_clean": false,
-  "source_worktree_dirty_paths": [
-    "catalog.html",
-    "data/catalog.json",
-    "discovery.html",
-    "pages/DISCOVERY.md"
-  ],
+  "source_commit": "563314dbc68824d439509ec1dc765711c45bb529",
+  "source_tree_sha": "7779716ad62b68cd1ec5514a4ec23d11c1c710a3",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
   "summary": {
     "applied": 321,
     "categories": {
