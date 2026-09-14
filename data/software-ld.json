@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "110 original repositories and 39 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "112 original repositories and 39 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -22,7 +22,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-18T16:48:46Z",
-            "dateModified": "2026-09-10T17:15:44Z",
+            "dateModified": "2026-09-14T15:25:54Z",
             "keywords": "agents-md, ai-agents, claude-code, computational-research, cursor, github-template, latex, multi-project, ollama, pandoc, pdf-generation, project-template, provenance, pytest, python, reproducible-research, research-template, steganography, uv, zenodo",
             "sameAs": "https://doi.org/10.5281/zenodo.20584820"
         },
@@ -55,7 +55,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2022-01-08T18:33:36Z",
-            "dateModified": "2026-09-09T02:05:12Z",
+            "dateModified": "2026-09-10T17:42:39Z",
             "keywords": "active-inference, ant-behavior, ants, bioinformatics, computational-biology, data-visualization, ecology, entomology, epigenomics, eqtl, genomics, gwas, hymenoptera, multi-agent-systems, multi-omics, proteomics, python, rna-seq, single-cell, transcriptomics"
         },
         {
@@ -71,7 +71,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-05-16T17:45:28Z",
-            "dateModified": "2026-09-10T12:50:23Z",
+            "dateModified": "2026-09-14T09:26:19Z",
             "keywords": "agents, ai-agents, automation, claude, code-analysis, coding-agent, developer-tools, llm, mcp, mcp-server, model-context-protocol, multi-agent, orchestration, personal-ai, python, rag, security, static-analysis, uv, zero-mock",
             "sameAs": "https://doi.org/10.5281/zenodo.21750800"
         },
@@ -211,7 +211,7 @@
             "programmingLanguage": "TeX",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-10T23:07:49Z",
-            "dateModified": "2026-09-10T16:19:58Z",
+            "dateModified": "2026-09-11T22:01:39Z",
             "keywords": "buckminster-fuller, geometry, lattice, mathematics, python, quadray, reproducible-research, synergetics, zenodo"
         },
         {
@@ -576,7 +576,7 @@
             "programmingLanguage": "TeX",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2026-03-15T15:58:51Z",
-            "dateModified": "2026-09-08T21:03:07Z",
+            "dateModified": "2026-09-14T19:15:38Z",
             "keywords": "active-inference, case-grammar, category-theory, computational-linguistics, discopy, linguistics, python, string-diagrams, topos-theory",
             "sameAs": "https://doi.org/10.5281/zenodo.19695259"
         },
@@ -1656,7 +1656,7 @@
             },
             "programmingLanguage": "TypeScript",
             "dateCreated": "2026-07-23T00:29:46Z",
-            "dateModified": "2026-09-08T20:17:01Z",
+            "dateModified": "2026-09-14T18:40:46Z",
             "keywords": "bun, california, chromadb, civic-tech, local-government, municipal-code, noaa, ollama, open-data, playwright, rag, tsunami"
         },
         {
@@ -1712,7 +1712,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/millennium_audit#software",
             "name": "millennium_audit",
-            "description": "Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · Zenodo",
+            "description": "Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · Citation DOI",
             "codeRepository": "https://github.com/docxology/millennium_audit",
             "author": {
                 "@type": "Person",
@@ -1721,7 +1721,40 @@
             "programmingLanguage": "Python",
             "dateCreated": "2026-09-02T18:26:47Z",
             "dateModified": "2026-09-06T19:36:22Z",
-            "sameAs": "https://doi.org/10.5281/zenodo.22243473"
+            "sameAs": "https://doi.org/10.5281/zenodo.22243472"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/agentic_os_security#software",
+            "name": "agentic_os_security",
+            "description": "Agentic Security and Operating Systems — deep review and prospectus of OpSec, Cognitive Security, and Agentic Cyber Security (paper source) ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/agentic_os_security",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "TeX",
+            "license": "https://spdx.org/licenses/MIT.html",
+            "dateCreated": "2026-09-11T01:04:26Z",
+            "dateModified": "2026-09-14T16:20:06Z",
+            "keywords": "agent, agent-skills, agentic-ai, agents, cognitive-modeling, cognitive-science, cognitive-systems, linux, operating-system, operations, operations-research, operator, security",
+            "sameAs": "https://doi.org/10.5281/zenodo.22754351"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/FractiSkills#software",
+            "name": "FractiSkills",
+            "description": "One portable agent SKILL per page of the SS Vibelandia Omniversal Canvas — Skillarum-rendered skill pages ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/FractiSkills",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
+            "dateCreated": "2026-09-10T21:10:46Z",
+            "dateModified": "2026-09-11T17:42:29Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.22712650"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1826,7 +1859,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2023-04-02T19:45:34Z",
-            "dateModified": "2026-09-10T17:12:58Z",
+            "dateModified": "2026-09-14T19:29:06Z",
             "keywords": "active, active-inference, active-inference-notation, inference",
             "sameAs": "https://doi.org/10.5281/zenodo.19600217"
         },
@@ -1936,7 +1969,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2025-05-13T14:17:56Z",
-            "dateModified": "2026-09-10T16:44:37Z",
+            "dateModified": "2026-09-14T20:58:50Z",
             "keywords": "active-inference, agent-workflows, bayesian-inference, domain-modeling, geospatial, h3, monorepo, python, reproducible-research, spatial-analysis, uv"
         },
         {
@@ -2072,7 +2105,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-04-14T13:33:35Z",
-            "dateModified": "2026-09-10T17:12:54Z",
+            "dateModified": "2026-09-14T20:33:27Z",
             "keywords": "active-inference, bayesian-mechanics, formal-verification, free-energy-principle, information-geometry, lean4, theorem-proving",
             "sameAs": "https://doi.org/10.5281/zenodo.19699233"
         },
@@ -2198,7 +2231,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-15T15:28:56Z",
-            "dateModified": "2026-09-10T16:19:44Z",
+            "dateModified": "2026-09-10T20:17:28Z",
             "keywords": "active-inference, code-analysis, free-energy-principle, generative-model, gnn, python, static-analysis",
             "sameAs": "https://doi.org/10.5281/zenodo.20705350"
         },
@@ -2308,7 +2341,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-09T19:00:08Z",
-            "dateModified": "2026-08-29T22:41:20Z",
+            "dateModified": "2026-09-13T16:01:39Z",
             "keywords": "active-inference, bayesian-inference, federated-learning, free-energy-principle, python, reproducible-research, variational-inference",
             "sameAs": "https://doi.org/10.5281/zenodo.21864003"
         },

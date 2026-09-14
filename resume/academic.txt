@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-09-11T19:11:44Z
+Generated: 2026-09-14T21:45:41Z
 
-Current public metrics: 214 curated works; 149 catalogued software repositories (110 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 213 docxology + 43 AII public repositories (167 primary, 89 forks).
+Current public metrics: 215 curated works; 151 catalogued software repositories (112 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 216 docxology + 43 AII public repositories (169 primary, 90 forks).
 
 SUMMARY
 -------
@@ -134,7 +134,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (214)
+WORKS AND PUBLICATIONS (215)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -347,11 +347,12 @@ WORKS AND PUBLICATIONS (214)
 [212] 2026 | Paper | docxplus — the Intelligent Document Container | Zenodo | 10.5281/zenodo.21983948
 [213] 2026 | Paper | Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation) | Zenodo | 10.5281/zenodo.22134545
 [214] 2026 | Paper | Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications) | Zenodo | 10.5281/zenodo.22134547
-[215] 2026 | Report | Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global) | Zenodo | 10.5281/zenodo.22243473
+[215] 2026 | Report | Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global) | Zenodo | 10.5281/zenodo.22243472
 [216] 2026 | Paper | Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation | Zenodo | 10.5281/zenodo.22663906
 [217] 2026 | Paper | FractiSkills: One Portable Agent Skill per Page | Zenodo | 10.5281/zenodo.22712650
+[218] 2026 | Paper | Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security | Zenodo | 10.5281/zenodo.22754351
 
-SOFTWARE (69)
+SOFTWARE (71)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/
@@ -409,7 +410,9 @@ docxology/Digi-PPPiP | TeX | https://github.com/docxology/Digi-PPPiP | DigiPPPiP
 docxology/BeeStack | Python | https://github.com/docxology/BeeStack | Evidence-typed scaffold for whole-colony honeybee simulation · · Zenodo | paper: papers/2026_BeeStack/ | zenodo: https://doi.org/10.5281/zenodo.20420556
 docxology/thalia | Python | https://github.com/docxology/thalia | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · · Zenodo | paper: papers/2026_THALIA/ | zenodo: https://doi.org/10.5281/zenodo.21763244
 docxology/docxplus | Python | https://github.com/docxology/docxplus | docxplus — the Intelligent Document Container: format, tools, and formal specification · · Zenodo | paper: papers/2026_DocxplusIntelligentDocument/ | zenodo: https://doi.org/10.5281/zenodo.21983948
-docxology/millennium_audit | Python | https://github.com/docxology/millennium_audit | Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · Zenodo | paper: papers/2026_MillenniumAudit/ | zenodo: https://doi.org/10.5281/zenodo.22243473
+docxology/millennium_audit | Python | https://github.com/docxology/millennium_audit | Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · Citation DOI | paper: papers/2026_MillenniumAudit/ | zenodo: https://doi.org/10.5281/zenodo.22243472
+docxology/agentic_os_security | TeX | https://github.com/docxology/agentic_os_security | Agentic Security and Operating Systems — deep review and prospectus of OpSec, Cognitive Security, and Agentic Cyber Security (paper source) · · Zenodo | paper: papers/2026_AgenticSecurityOperating/ | zenodo: https://doi.org/10.5281/zenodo.22754351
+docxology/FractiSkills | Python | https://github.com/docxology/FractiSkills | One portable agent SKILL per page of the SS Vibelandia Omniversal Canvas — Skillarum-rendered skill pages · · Zenodo | paper: papers/2026_FractiSkills/ | zenodo: https://doi.org/10.5281/zenodo.22712650
 docxology/cognitive_integrity | Python | https://github.com/docxology/cognitive_integrity | Cognitive Integrity Framework (CIF) — formal security architecture for multiagent systems · | paper: papers/2026_CognitiveIntegrity/
 ActiveInferenceInstitute/GeneralizedNotationNotation | Python | https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.19600217
 ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo | paper: papers/2025_CEREBRUM/ | zenodo: https://doi.org/10.5281/zenodo.15170907

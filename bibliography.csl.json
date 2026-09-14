@@ -7000,8 +7000,8 @@
     "note": "Catalog row 215; docs: papers/2026_MillenniumAudit/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.22243473",
-    "URL": "https://doi.org/10.5281/zenodo.22243473"
+    "DOI": "10.5281/zenodo.22243472",
+    "URL": "https://doi.org/10.5281/zenodo.22243472"
   },
   {
     "id": "Friedman2026SkillarumConditionallyReproducibleWebsite216",
@@ -7052,5 +7052,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.22712650",
     "URL": "https://doi.org/10.5281/zenodo.22712650"
+  },
+  {
+    "id": "Friedman2026AgenticSecurityOperatingSystems218",
+    "type": "article-journal",
+    "title": "Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 218; docs: papers/2026_AgenticSecurityOperating/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.22754351",
+    "URL": "https://doi.org/10.5281/zenodo.22754351"
   }
 ]

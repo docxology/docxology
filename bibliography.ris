@@ -2963,8 +2963,8 @@ AU  - Daniel Ari Friedman
 PY  - 2026
 TI  - Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)
 T2  - Zenodo
-DO  - 10.5281/zenodo.22243473
-UR  - https://doi.org/10.5281/zenodo.22243473
+DO  - 10.5281/zenodo.22243472
+UR  - https://doi.org/10.5281/zenodo.22243472
 KW  - Other
 KW  - Report
 N1  - Catalog row 215; docs: papers/2026_MillenniumAudit/
@@ -2992,4 +2992,16 @@ UR  - https://doi.org/10.5281/zenodo.22712650
 KW  - Computational
 KW  - Paper
 N1  - Catalog row 217; docs: papers/2026_FractiSkills/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security
+T2  - Zenodo
+DO  - 10.5281/zenodo.22754351
+UR  - https://doi.org/10.5281/zenodo.22754351
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 218; docs: papers/2026_AgenticSecurityOperating/
 ER  -

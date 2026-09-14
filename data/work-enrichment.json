@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-11T17:48:27Z",
+  "generated_at": "2026-09-14T21:09:41Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 214,
+  "count": 215,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -4371,6 +4371,31 @@
       ],
       "methods": [],
       "source": "papers/2026_FractiSkills/README.md"
+    },
+    "Friedman2026AgenticSecurityOperatingSystems218": {
+      "citation_key": "Friedman2026AgenticSecurityOperatingSystems218",
+      "abstract": "AI agents now hold genuine system authority: they execute code, touch credentials, open network egress, parse hostile documents, and in many deployments initiate or approve changes to the very infrastructure they run on. This review, dated 2026-09-10, examines what that shift does to operating-system security. The primary scenario is a technically capable operator whose workstation faces both exploitation — an attacker compromising a browser, parser, dependency, or agent tool and then crossing a boundary — and authorized misuse — an attacker persuading an agent to use its existing, legitimate access to exfiltrate secrets or authorize consequential actions. The second path requires no kernel exploit at all, which reframes the evaluation: the axis of analysis is the authority a component already holds, not merely the difficulty of exploiting it. This revision (0.7.0) refreshes the evidence",
+      "keywords": [
+        "agentic security",
+        "operating systems",
+        "compartmentalization",
+        "capability mediation",
+        "Qubes OS",
+        "NixOS",
+        "cognitive security",
+        "operational security",
+        "agent orchestration",
+        "offensive AI"
+      ],
+      "findings": [
+        "agentic security",
+        "operating systems",
+        "compartmentalization",
+        "capability mediation",
+        "Qubes OS"
+      ],
+      "methods": [],
+      "source": "papers/2026_AgenticSecurityOperating/README.md"
     }
   }
 }
