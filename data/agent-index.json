@@ -252,14 +252,14 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-09-14.json",
+      "path": "/reports/accessibility_static_2026-09-15.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-09-14.json",
+      "path": "/reports/asset_size_2026-09-15.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1146,11 +1146,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 922746880,
-        "source_bytes": 848283664,
+        "source_bytes": 849443170,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4817,
-        "artifact_bytes": 849133934
+        "artifact_file_count": 4824,
+        "artifact_bytes": 850294539
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1179,9 +1179,9 @@
     "organizations": "116173c10c6e1e6d25496d62d79ec3e40570d17477ec6143b824cf63e148a307",
     "resume": "8a1468bab02b1dd6c2447571cdcc8786892db3a1be2780e34c5d6bd5a517ddbe",
     "work_enrichment": "27c1c0a0b63de4aed16f96a97424593ffdd629c6694697ba216b988919aec83e",
-    "catalog": "d789d4af4c9ece527153a85c9cb407025c0951c43768ea0e5becc862f0553fd0",
+    "catalog": "920877762c81a685ece78e12a23a6377441315aae0241289ad45301268ce4131",
     "reconciliation": "01437cddc9e13d2648cd8f7ca29d01f12ea349f7fb3d907de1f3f0d800f3e481",
-    "generated_manifest": "8b20221c7a51747166b32d3bf3b29b621d3b7b90c7fbef2883ff5239ad2287c2",
+    "generated_manifest": "5995d710da0124df7bf2212a94b0f4c12a1140af3532bc40390a2206fbf58f14",
     "current_counts": "9bb97712194654613e400e8b6d3f6927e694e392e98a729b942f1ee04a9241d1"
   },
   "source_provenance": {
