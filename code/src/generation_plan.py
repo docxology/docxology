@@ -9,20 +9,31 @@ no-write verification command.
 
 from __future__ import annotations
 
+import hashlib
+import json
+import re
 from dataclasses import dataclass
 from pathlib import Path
-import re
 
 
 @dataclass(frozen=True)
 class GenerationStep:
-    """A deterministic local writer and the exact check for its outputs."""
+    """A deterministic local writer and the exact check for its outputs.
+
+    ``inputs`` optionally declares the step's source-of-truth glob patterns
+    (relative to the repository root).  Only curated/upstream files the step
+    *reads* may be declared — never the step's own outputs — so a write-mode
+    driver can safely skip the step when no declared input changed.  Steps
+    without ``inputs`` always run.
+    """
 
     identifier: str
     script: str
     write_args: tuple[str, ...]
     check_args: tuple[str, ...]
     description: str
+    inputs: tuple[str, ...] = ()
+    inputs_exclude: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -37,6 +48,36 @@ class ExcludedOperation:
 # Ordered writer chain. Repeated audit/fact steps are deliberately explicit:
 # later generators consume their dated reports, so the second pass verifies the
 # final dependency state rather than a one-step-behind report pointer.
+# Input globs for the audited public surfaces. These mirror the audit
+# generators' own scan scope (audit_assets.PATTERNS / accessibility_audit's
+# public-HTML sweep), so a write-mode driver may skip an audit when none of the
+# surfaces it audits changed. They are upstream chain outputs, not the audits'
+# own reports — declaring them is what keeps the audit pair skippable while the
+# dependency-ordered chain keeps the inputs fresh.
+ASSET_AUDIT_INPUTS: tuple[str, ...] = (
+    "*.html",
+    "og-*.jpg",
+    "data/*.json",
+    "resume/*.txt",
+    "resume/*.pdf",
+    "bibliography.*",
+    "sw.js",
+    "manifest.json",
+    "style.css",
+    "assets/hero-art/*.webp",
+)
+
+# The audit generator itself excludes these post-audit control files from its
+# budget (audit_assets.EXCLUDED_ASSETS) because the chain's integrity tail
+# writes them *after* the audits record their fingerprints — counting them as
+# inputs would make the audit steps never converge to a skip.
+ASSET_AUDIT_INPUTS_EXCLUDE: tuple[str, ...] = (
+    "data/agent-index.json",
+    "data/generated-manifest.json",
+    "data/pages-artifact-manifest.json",
+    "data/release-integrity.json",
+)
+
 LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("export-bibliography", "export_bibliography.py", (), ("--check",), "Bibliography exports and works projection"),
     GenerationStep("sync-publications", "sync_publications_html.py", ("--apply",), ("--check",), "Publication HTML and JSON-LD"),
@@ -51,15 +92,15 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("resume", "build_resume.py", ("--all",), ("--check",), "Resume/CV exports"),
     GenerationStep("domain-pages", "build_domain_pages.py", (), ("--check",), "Domain landing pages"),
     GenerationStep("pillar-pages", "generate_pillar_pages.py", (), ("--check",), "Shared-rendered pillar pages"),
-    GenerationStep("paper-documents", "regenerate_docs.py", ("--apply",), ("--check",), "Manifest-owned paper documentation"),
+    GenerationStep("paper-documents", "regenerate_docs.py", ("--apply",), ("--check",), "Manifest-owned paper documentation", ("pages/BIBLIOGRAPHY.md", "papers/paper_metadata.json", "papers/*/metadata.json", "papers/generated-documents.json")),
     GenerationStep("citation-cff", "generate_citation_cff.py", ("--apply",), ("--check",), "Canonical/artifact DOI roles in paper CFF files"),
     # Paper-document rendering can create the README/AGENTS/SKILL files that
     # bibliography exports classify. Re-export before public work pages so a
     # first clean run reaches a fixed point instead of requiring a second pass.
     GenerationStep("export-bibliography-final", "export_bibliography.py", (), ("--check",), "Bibliography exports after paper documents"),
     GenerationStep("sync-publications-final", "sync_publications_html.py", ("--apply",), ("--check",), "Publication HTML and JSON-LD after paper documents"),
-    GenerationStep("work-pages", "build_work_pages.py", (), ("--check",), "Per-work landing pages"),
-    GenerationStep("video-pages", "build_video_pages.py", (), ("--check",), "Video landing pages and exports"),
+    GenerationStep("work-pages", "build_work_pages.py", (), ("--check",), "Per-work landing pages", ("data/works.json", "data/work-enrichment.json", "papers/*/README.md", "papers/*/SKILL.md")),
+    GenerationStep("video-pages", "build_video_pages.py", (), ("--check",), "Video landing pages and exports", ("data/works.json", "data/work-enrichment.json", "data/video-transcripts/*.txt", "code/data/youtube_*.json")),
     GenerationStep("site-facts-first", "sync_site_facts.py", (), ("--check",), "Volatile public facts after content projections"),
     GenerationStep("start-here", "build_start_here.py", (), ("--check",), "Start Here curated reading paths page"),
     GenerationStep("paper-pages", "build_paper_pages.py", (), ("--check",), "Paper folder HTML pages"),
@@ -71,11 +112,11 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("reproducibility", "build_reproducibility_ledger.py", (), ("--check",), "Reproducibility ledger"),
     GenerationStep("agent-navigation", "ensure_agent_navigation.py", (), ("--check",), "Visible Agent Map navigation"),
     GenerationStep("reconciliation", "build_reconciliation_report.py", (), ("--check",), "Reconciliation report"),
-    GenerationStep("asset-audit-first", "audit_assets.py", (), ("--check",), "Asset-size report"),
-    GenerationStep("accessibility-first", "accessibility_audit.py", (), ("--check",), "Static accessibility report"),
+    GenerationStep("asset-audit-first", "audit_assets.py", (), ("--check",), "Asset-size report", ASSET_AUDIT_INPUTS, ASSET_AUDIT_INPUTS_EXCLUDE),
+    GenerationStep("accessibility-first", "accessibility_audit.py", (), ("--check",), "Static accessibility report", ("**/*.html",)),
     GenerationStep("catalog", "build_catalog.py", (), ("--check",), "Public data catalog"),
-    GenerationStep("asset-audit-final", "audit_assets.py", (), ("--check",), "Final asset-size report after catalog"),
-    GenerationStep("accessibility-final", "accessibility_audit.py", (), ("--check",), "Final accessibility report after catalog"),
+    GenerationStep("asset-audit-final", "audit_assets.py", (), ("--check",), "Final asset-size report after catalog", ASSET_AUDIT_INPUTS, ASSET_AUDIT_INPUTS_EXCLUDE),
+    GenerationStep("accessibility-final", "accessibility_audit.py", (), ("--check",), "Final accessibility report after catalog", ("**/*.html",)),
     GenerationStep("site-facts-final", "sync_site_facts.py", (), ("--check",), "Final fact links to latest reports"),
     # After the last README rewrite, so the mirror GitHub renders on the repo
     # page carries the final counts and links that resolve from .github/.
@@ -199,3 +240,125 @@ def validate_generation_plan() -> None:
     errors = coverage_errors()
     if errors:
         raise RuntimeError("Invalid generation plan: " + "; ".join(errors))
+
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+# Persisted skip-on-unchanged state for write-mode regeneration. This is local
+# build bookkeeping, not a site artifact: it lives outside the public data
+# layer and is gitignored, so it never enters the generated manifest, the Pages
+# artifact, or a release-source cleanliness gate.
+REGENERATION_STATE_RELATIVE_PATH = Path("reports") / "regeneration-state.json"
+REGENERATION_STATE_SCHEMA_VERSION = 1
+# Directory parts that are local build/dependency noise, never generation
+# inputs. Mirrors validate_repo.IGNORED_VALIDATION_PATH_PARTS; kept independent
+# so the plan module does not import an orchestrator.
+_FINGERPRINT_EXCLUDED_PARTS = frozenset(
+    {".git", "_site", ".venv", ".pytest_cache", "__pycache__", "node_modules"}
+)
+
+
+def regeneration_state_path(repo_root: Path = REPO_ROOT) -> Path:
+    """Location of the persisted input fingerprints for skipped steps."""
+    return repo_root / REGENERATION_STATE_RELATIVE_PATH
+
+
+def load_regeneration_state(repo_root: Path = REPO_ROOT) -> dict[str, str]:
+    """Load persisted ``identifier -> input fingerprint`` entries.
+
+    Any unreadable or unexpected payload yields an empty state, which makes the
+    next write-mode run execute every step (the conservative direction).
+    """
+    path = regeneration_state_path(repo_root)
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    if not isinstance(payload, dict) or not isinstance(payload.get("steps"), dict):
+        return {}
+    return {str(key): str(value) for key, value in payload["steps"].items()}
+
+
+def save_regeneration_state(state: dict[str, str], repo_root: Path = REPO_ROOT) -> None:
+    """Persist fingerprints deterministically (no timestamps, sorted keys)."""
+    payload = {
+        "schema_version": REGENERATION_STATE_SCHEMA_VERSION,
+        "steps": dict(sorted(state.items())),
+    }
+    path = regeneration_state_path(repo_root)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def input_fingerprint(
+    repo_root: Path,
+    patterns: tuple[str, ...],
+    exclude: tuple[str, ...] = (),
+) -> str | None:
+    """Content hash over every file matched by ``patterns`` minus ``exclude``.
+
+    Returns ``None`` — the caller must then run the step — when any pattern
+    matches no file, an input cannot be read, or ``patterns`` is empty, so a
+    typo or an empty tree can never produce a false skip. The digest covers
+    path, size, and bytes, so it ignores mtime-only touches and reacts to any
+    content change.
+    """
+    if not patterns:
+        return None
+    excluded = {
+        path.relative_to(repo_root).as_posix()
+        for pattern in exclude
+        for path in repo_root.glob(pattern)
+    }
+    digest = hashlib.sha256()
+    for pattern in patterns:
+        matches = [
+            path
+            for path in sorted(repo_root.glob(pattern))
+            if path.is_file()
+            and path.relative_to(repo_root).as_posix() not in excluded
+            and not _FINGERPRINT_EXCLUDED_PARTS.intersection(path.parts)
+        ]
+        if not matches:
+            return None
+        for path in matches:
+            rel = path.relative_to(repo_root).as_posix()
+            digest.update(f"{rel}\0{path.stat().st_size}\0".encode())
+            try:
+                with path.open("rb") as handle:
+                    for chunk in iter(lambda: handle.read(1 << 20), b""):
+                        digest.update(chunk)
+            except OSError:
+                return None
+            digest.update(b"\0")
+    return digest.hexdigest()
+
+
+def step_skip_reason(
+    step: GenerationStep,
+    state: dict[str, str],
+    repo_root: Path = REPO_ROOT,
+) -> str | None:
+    """Return a skip reason when the step's declared inputs are unchanged.
+
+    Steps without declared inputs never skip; a fingerprint of ``None`` always
+    runs the step.
+    """
+    if not step.inputs:
+        return None
+    fingerprint = input_fingerprint(repo_root, step.inputs, step.inputs_exclude)
+    if fingerprint is None or state.get(step.identifier) != fingerprint:
+        return None
+    return f"declared inputs unchanged since {REGENERATION_STATE_RELATIVE_PATH}"
+
+
+def record_step_state(
+    step: GenerationStep,
+    state: dict[str, str],
+    repo_root: Path = REPO_ROOT,
+) -> None:
+    """Store the current input fingerprint after a step ran successfully."""
+    if not step.inputs:
+        return
+    fingerprint = input_fingerprint(repo_root, step.inputs, step.inputs_exclude)
+    if fingerprint is not None:
+        state[step.identifier] = fingerprint

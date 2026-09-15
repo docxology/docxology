@@ -26,7 +26,17 @@ docs/operations/publication-sync.md → "Refresh Public Sources"):
 Usage:
     uv run python3 code/orchestrators/regenerate_all.py            # rebuild local layer
     uv run python3 code/orchestrators/regenerate_all.py --validate # then run validate_repo
+    uv run python3 code/orchestrators/regenerate_all.py --force    # run every step, no skipping
     uv run python3 code/orchestrators/regenerate_all.py --list     # print the plan, run nothing
+
+This is the single write-mode entry point for the intake path: one command runs
+the full local chain once. Steps that declare ``inputs`` in
+``code/src/generation_plan.py`` are skipped when those declared inputs hash to
+the same content as the previous successful run (persisted in
+``reports/regeneration-state.json``, gitignored); ``--force`` disables
+skipping. ``validate_repo.py`` never consults this state — its ``--check``
+battery stays the authority, so a write-mode skip can never mask a check
+failure.
 
 Caveats:
   * Run from the repo root (enforced via REPO_ROOT).
@@ -42,12 +52,21 @@ from __future__ import annotations
 import argparse
 import subprocess
 import sys
+from collections.abc import Callable
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
-from generation_plan import LOCAL_GENERATION_STEPS, validate_generation_plan  # noqa: E402
+from generation_plan import (  # noqa: E402
+    LOCAL_GENERATION_STEPS,
+    GenerationStep,
+    load_regeneration_state,
+    record_step_state,
+    save_regeneration_state,
+    step_skip_reason,
+    validate_generation_plan,
+)
 
 # Compatibility projection for scripts/tests that consume the historical
 # ``(script, args)`` shape. The authoritative write/check pairing is declared
@@ -67,28 +86,64 @@ def _run(script: str, args: list[str]) -> None:
     subprocess.run(cmd, cwd=REPO_ROOT, check=True)
 
 
+def run_regeneration(
+    *,
+    force: bool = False,
+    runner: Callable[[str, list[str]], None] = _run,
+    repo_root: Path = REPO_ROOT,
+    emit: Callable[[str], None] = print,
+    steps: tuple[GenerationStep, ...] = LOCAL_GENERATION_STEPS,
+) -> tuple[int, int]:
+    """Run the write chain, skipping input-gated steps whose inputs are fresh.
+
+    Steps without declared inputs always run. Fingerprint state is persisted
+    only after a step ran successfully, and only when something actually ran,
+    so a crash or a pure-skip run can never record a state the tree does not
+    reflect. Returns ``(ran, skipped)``.
+    """
+    state = load_regeneration_state(repo_root)
+    ran = skipped = 0
+    for step in steps:
+        reason = None if force else step_skip_reason(step, state, repo_root)
+        if reason is not None:
+            emit(f"skip {step.identifier}: {reason}")
+            skipped += 1
+            continue
+        runner(step.script, list(step.write_args))
+        record_step_state(step, state, repo_root)
+        ran += 1
+    if ran:
+        save_regeneration_state(state, repo_root)
+    return ran, skipped
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
     parser.add_argument("--validate", action="store_true",
                         help="run validate_repo.py after regeneration")
+    parser.add_argument("--force", action="store_true",
+                        help="run every step even when its declared inputs are unchanged")
     parser.add_argument("--list", action="store_true", dest="list_only",
                         help="print the ordered plan and exit without running anything")
     args = parser.parse_args()
     validate_generation_plan()
 
     if args.list_only:
-        for i, (script, extra) in enumerate(CHAIN, 1):
-            print(f"{i:2}. {script} {' '.join(extra)}".rstrip())
+        for i, step in enumerate(LOCAL_GENERATION_STEPS, 1):
+            line = f"{i:2}. {step.script} {' '.join(step.write_args)}".rstrip()
+            if step.inputs:
+                line += f"  # inputs: {', '.join(step.inputs)}"
+            print(line)
         return 0
 
-    for script, extra in CHAIN:
-        _run(script, extra)
+    ran, skipped = run_regeneration(force=args.force)
 
-    print(f"\nRegenerated {len(CHAIN)} local surfaces.")
+    print(f"\nRan {ran} local surfaces (skipped {skipped} with unchanged declared inputs).")
     print("Note: network freshness (GitHub inventory, live-site snapshot, public sources) "
-          "was NOT run — do that deliberately per docs/operations/publication-sync.md.")
+          "was NOT run — do that deliberately per docs/operations/publication-sync.md. "
+          "Use --force to ignore skip-on-unchanged state and rebuild every surface.")
 
     if args.validate:
         print("\n=== validate_repo.py ".ljust(72, "="))
