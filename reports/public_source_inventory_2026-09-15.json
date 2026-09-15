@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-15T17:15:44Z",
-  "source_commit": "5dfc25c01a65032c300293d1c49b2682734ea091",
+  "generated_at": "2026-09-15T21:41:45Z",
+  "source_commit": "55283af6e2a83f40272acd685f327171300b88a8",
   "date": "2026-09-15",
   "note": "Paginated public-source inventory for review. Use as discovery evidence, not automatic claim replacement.",
   "sections": [
@@ -484,10 +484,10 @@
       "items": [
         {
           "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
-          "doi": "10.5281/zenodo.22758214",
-          "publication_date": "2026-09-14",
+          "doi": "10.5281/zenodo.22774403",
+          "publication_date": "2026-09-15",
           "resource_type": "publication",
-          "version": "2.6.0"
+          "version": "2.7.0"
         },
         {
           "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
@@ -954,10 +954,10 @@
       "items": [
         {
           "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
-          "doi": "10.5281/zenodo.22758214",
-          "publication_date": "2026-09-14",
+          "doi": "10.5281/zenodo.22774403",
+          "publication_date": "2026-09-15",
           "resource_type": "publication",
-          "version": "2.6.0"
+          "version": "2.7.0"
         },
         {
           "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
@@ -2290,6 +2290,17 @@
           "title": "Scientific Advisory Board | Active Inference Institute"
         }
       ]
+    },
+    {
+      "label": "AII textbook-group page",
+      "url": "https://activeinference.institute/projects/textbook-group/",
+      "ok": true,
+      "items": [
+        {
+          "status": 200,
+          "title": "Textbook Group | Active Inference Institute"
+        }
+      ]
     }
   ],
   "counts": {
@@ -2311,6 +2322,7 @@
     "AII public landing page": 1,
     "AII officers page": 1,
     "AII board page": 1,
-    "AII SAB page": 1
+    "AII SAB page": 1,
+    "AII textbook-group page": 1
   }
 }

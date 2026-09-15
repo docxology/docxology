@@ -1,9 +1,11 @@
 {
-  "generated_at": "2026-09-15T17:15:15.838398+00:00",
-  "source_commit": "5dfc25c01a65032c300293d1c49b2682734ea091",
-  "source_worktree_clean": true,
-  "source_worktree_dirty_paths": [],
-  "source_tree_sha": "15836eb33de5966d2626ef2d4bbb34f1c8ac1d10",
+  "generated_at": "2026-09-15T21:41:13.329423+00:00",
+  "source_commit": "55283af6e2a83f40272acd685f327171300b88a8",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "code/orchestrators/refresh_public_source_inventory.py"
+  ],
+  "source_tree_sha": "f0c493da6604756f892f2dcd10d37de6de8dc680",
   "date": "2026-09-15",
   "note": "Public API freshness report only. Review before updating curated site claims.",
   "facts": {
@@ -43,8 +45,8 @@
     },
     "Zenodo exact-name creator records": {
       "total": 66,
-      "first_title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
-      "first_doi": "10.5281/zenodo.20693217"
+      "first_title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+      "first_doi": "10.5281/zenodo.21418953"
     },
     "Zenodo ORCID-linked records": {
       "total": 154,
@@ -187,14 +189,14 @@
       "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
       "stargazers_count": 31,
       "language": "Python",
-      "updated_at": "2026-09-15T08:30:57Z",
+      "updated_at": "2026-09-15T17:41:14Z",
       "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation"
     },
     "GitHub repo ActiveInferenceInstitute/fep_lean": {
       "full_name": "ActiveInferenceInstitute/fep_lean",
       "stargazers_count": 2,
       "language": "Python",
-      "updated_at": "2026-09-15T08:55:49Z",
+      "updated_at": "2026-09-15T18:23:08Z",
       "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean"
     },
     "GitHub repo ActiveInferenceInstitute/cognitive": {
@@ -290,8 +292,8 @@
       "ok": true,
       "result": {
         "total": 66,
-        "first_title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
-        "first_doi": "10.5281/zenodo.20693217"
+        "first_title": "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer",
+        "first_doi": "10.5281/zenodo.21418953"
       }
     },
     {
@@ -484,7 +486,7 @@
         "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
         "stargazers_count": 31,
         "language": "Python",
-        "updated_at": "2026-09-15T08:30:57Z",
+        "updated_at": "2026-09-15T17:41:14Z",
         "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation"
       }
     },
@@ -496,7 +498,7 @@
         "full_name": "ActiveInferenceInstitute/fep_lean",
         "stargazers_count": 2,
         "language": "Python",
-        "updated_at": "2026-09-15T08:55:49Z",
+        "updated_at": "2026-09-15T18:23:08Z",
         "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean"
       }
     },

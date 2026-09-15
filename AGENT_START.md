@@ -56,6 +56,13 @@ Settle a finished change in one command — see
 check battery, then lands the payload and control-tail commits (`--push`/`--pr` optional). Preview
 the plan without executing anything with `python3 code/orchestrators/settle.py --tier fast --dry-run`.
 
+Landing rule worth knowing before your first lap: a commit that creates new
+dated reports (snapshots, pairing receipts, reconciliation reports) flips the
+`latest_source_report()` tracked-file resolution, so `sync_site_facts.py` and
+`build_search_index.py` need one re-render pass after the payload commit —
+see the do-not-skip list in
+[`docs/operations/publication-sync.md`](docs/operations/publication-sync.md).
+
 ## Source-Of-Truth Rules
 
 - Curated local counts intentionally differ from public index counts when public sources include forks, duplicates, software archives, preprints, or name variants.

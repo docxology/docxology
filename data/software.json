@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-15T17:33:56Z",
+  "generated_at": "2026-09-15T22:56:52Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 151,
+  "count": 154,
   "repositories": [
     {
       "name": "template",
@@ -1346,6 +1346,42 @@
       "stars": 0,
       "updated_or_year": "2026-08",
       "paper_path": "papers/2026_CognitiveIntegrity/",
+      "zenodo_url": ""
+    },
+    {
+      "name": "dicklesworthstone_meta_operator",
+      "url": "https://github.com/docxology/dicklesworthstone_meta_operator",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Meta-operator over the Dicklesworthstone GitHub corpus: clone, verify upstream sync, orchestrate, interpret, and dashboard the ~207-repo corpus",
+      "language": "HTML",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "Skillarum",
+      "url": "https://github.com/docxology/Skillarum",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "papers/2026_Skillarum/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22663906"
+    },
+    {
+      "name": "nockchain-migration",
+      "url": "https://github.com/docxology/nockchain-migration",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Operator-gated wizard and tooling for migrating Nockchain wallets from legacy v0 notes to v1 P2PKH addresses (one-off functional tool, no paper)",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "",
       "zenodo_url": ""
     },
     {

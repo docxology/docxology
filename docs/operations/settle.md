@@ -183,7 +183,14 @@ push/PR.
   `build_agent_index.py` → `build_release_integrity.py` → a final
   `build_generated_manifest.py` pass (the canonical chain in
   `code/src/generation_plan.py` ends on it) — re-run `sync_site_facts.py`/
-  `build_catalog.py` first if the new receipts change their rendered links.
+  `build_catalog.py`/`build_search_index.py` first if the new receipts change
+  their rendered links. Root cause: `latest_source_report()` resolves only
+  git-**tracked** receipts (clean-checkout determinism), so the commit that
+  lands a new dated report deliberately flips every discovery pointer to it —
+  render the pointer surfaces after the payload commit and land them as a
+  second payload commit before the binder tail (receipts staged before the
+  render fold both into one commit; see the
+  [`publication-sync.md`](publication-sync.md) do-not-skip list).
   `build_public_source_review.py` stays a deliberate manual render (excluded
   from the local chain) and embeds digests of the dated evidence receipts,
   not the binder outputs. Commit any payload churn from the consumer renders, then
