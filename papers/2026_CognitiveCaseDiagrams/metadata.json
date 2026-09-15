@@ -1,11 +1,11 @@
 {
   "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
-  "version": "2.4.0",
+  "version": "2.6.0",
   "doi": "10.5281/zenodo.19695259",
   "doi_url": "https://doi.org/10.5281/zenodo.19695259",
   "zenodo_record": "https://zenodo.org/records/19695259",
-  "record_id": "22653315",
-  "publication_date": "2026-09-07",
+  "record_id": "22758214",
+  "publication_date": "2026-09-14",
   "resource_type": {
     "title": "Preprint",
     "type": "publication",
@@ -32,16 +32,16 @@
   ],
   "files": [
     {
-      "name": "cognitive_case_diagrams-2.4.0-synthetic-results.json",
-      "size_bytes": 131838,
-      "checksum": "md5:25701ddb51fb4de9f5828a6b083bf4e9",
-      "download_url": "https://zenodo.org/api/records/22653315/files/cognitive_case_diagrams-2.4.0-synthetic-results.json/content"
+      "name": "cognitive_case_diagrams-2.6.0-synthetic-results.json",
+      "size_bytes": 132639,
+      "checksum": "md5:13f559e99c3e4842659bf2dbb8e2db6c",
+      "download_url": "https://zenodo.org/api/records/22758214/files/cognitive_case_diagrams-2.6.0-synthetic-results.json/content"
     },
     {
-      "name": "cognitive_case_diagrams-2.4.0.pdf",
-      "size_bytes": 15267582,
-      "checksum": "md5:89c032e966912a63b51fb904eaf984e6",
-      "download_url": "https://zenodo.org/api/records/22653315/files/cognitive_case_diagrams-2.4.0.pdf/content"
+      "name": "cognitive_case_diagrams-2.6.0.pdf",
+      "size_bytes": 15237745,
+      "checksum": "md5:f3c5deaa7a18b0eade5a94fe6aea3269",
+      "download_url": "https://zenodo.org/api/records/22758214/files/cognitive_case_diagrams-2.6.0.pdf/content"
     }
   ],
   "related_resources": [
@@ -52,7 +52,7 @@
   ],
   "github_repo": "docxology/cognitive_case_diagrams",
   "source": "zenodo-only",
-  "checked_at": "2026-09-14T21:07:14Z",
+  "checked_at": "2026-09-15T16:21:49Z",
   "domain": "Active Inference",
   "type": "Paper",
   "methods": [
@@ -73,13 +73,12 @@
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
   ],
-  "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0",
-  "release_tag": "v2.4.0",
-  "release_name": "v2.4.0 — Synthetic studies and reproducible agent interfaces",
+  "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.6.0",
+  "release_tag": "v2.6.0",
+  "release_name": "v2.6.0",
   "pdf_sha256": "",
   "pairing_confidence": "strong",
   "pairing_evidence": [
-    "github_release_mentions_doi",
     "zenodo_related_identifier_mentions_release",
     "github_repo_self_linked"
   ]

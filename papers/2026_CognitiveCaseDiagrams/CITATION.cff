@@ -20,3 +20,6 @@ identifiers:
   - type: url
     value: "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0"
     description: "GitHub release"
+  - type: url
+    value: "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.6.0"
+    description: "GitHub release"
