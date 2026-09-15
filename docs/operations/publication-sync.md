@@ -230,6 +230,18 @@ validation:
   commit dates) — see [Acceptance Checks](#acceptance-checks).
 - Receipt + rebind co-commit — a dated receipt committed without its binder
   rebind re-stales the binders.
+- Discovery-pointer re-render **after the payload commit** when the intake
+  created new dated reports: `latest_source_report()` resolves only
+  **git-tracked** receipts (clean-checkout determinism — a committed page
+  must never reference a receipt a clean checkout lacks), so
+  `discovery.html`, `pages/DISCOVERY.md`, `llms.txt`, and the search index
+  bind to the *previous* report until the new one is committed. Re-run
+  `sync_site_facts.py` and `build_search_index.py` after the payload commit
+  and land the pointer updates as a second payload commit before the binder
+  tail. Receipts created *before* the driver runs can be `git add`-ed first
+  (staged counts as tracked) so receipt + pointers land in one commit —
+  note this collapses the intended two-step acceptance cadence (evidence
+  lands, then a reviewed source update consumes it), so weigh it per lap.
 
 And a `data/` intake still auto-raises the settle tier to `full`
 ([settle.md](settle.md)) — nothing here changes the landing battery.
