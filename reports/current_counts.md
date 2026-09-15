@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-09-14T21:44:25+00:00`
+Generated: `2026-09-15T14:15:02+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -25,7 +25,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
 - public_source_snapshot: `reports/public_source_snapshot_2026-09-14.json`
-- paired_publications: `reports/paired_publications_2026-09-14.json`
+- paired_publications: `reports/paired_publications_2026-09-15.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
@@ -102,14 +102,14 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Paired Publications
 
-- github_releases: `241`
+- github_releases: `242`
 - zenodo_records: `157`
-- pairs: `463`
-- strong_pairs: `52`
+- pairs: `464`
+- strong_pairs: `53`
 - already_reviewed: `413`
 - needs_review: `0`
 - create_new: `0`
-- update_existing: `50`
+- update_existing: `51`
 
 ### Paired Publication Decisions
 
