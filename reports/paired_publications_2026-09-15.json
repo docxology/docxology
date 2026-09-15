@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T14:00:35Z",
+  "generated_at": "2026-09-15T16:21:50Z",
   "source": "GitHub Releases API + Zenodo Records API",
   "owners": [
     "docxology",
@@ -57453,7 +57453,1664 @@
       "record_url": "https://zenodo.org/records/10360056"
     }
   ],
-  "applied": [],
+  "applied": [
+    {
+      "doi": "10.5281/zenodo.19695259",
+      "folder": "2026_CognitiveCaseDiagrams",
+      "created": false,
+      "updated_files": [
+        "papers/2026_CognitiveCaseDiagrams/metadata.json",
+        "papers/2026_CognitiveCaseDiagrams/cognitive_case_diagrams-2.6.0.pdf"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.19695259",
+        "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/cognitive_case_diagrams",
+        "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0",
+        "zenodo_record_url": "https://zenodo.org/records/19695259",
+        "release_tag": "v2.4.0",
+        "folder": "2026_CognitiveCaseDiagrams"
+      },
+      "provenance": {
+        "action_sha256": "99fbee1cda9bd41172e25afdd1eeabb06c3e7b279d513a5500389b970f82183b",
+        "metadata_path": "papers/2026_CognitiveCaseDiagrams/metadata.json",
+        "metadata_sha256": "2fe8a2e98b1c106727460fba2461ff17721ecdcf4c00fa653a61114a2dcebacc",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "99fbee1cda9bd41172e25afdd1eeabb06c3e7b279d513a5500389b970f82183b"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.19695259",
+      "folder": "2026_CognitiveCaseDiagrams",
+      "created": false,
+      "updated_files": [
+        "papers/2026_CognitiveCaseDiagrams/README.md",
+        "papers/2026_CognitiveCaseDiagrams/CITATION.cff",
+        "papers/2026_CognitiveCaseDiagrams/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.19695259",
+        "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/cognitive_case_diagrams",
+        "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.6.0",
+        "zenodo_record_url": "https://zenodo.org/records/19695259",
+        "release_tag": "v2.6.0",
+        "folder": "2026_CognitiveCaseDiagrams"
+      },
+      "provenance": {
+        "action_sha256": "7926aca5bb6b254896efc822b66260320610876fe503a8822b5ba60a292b0e83",
+        "metadata_path": "papers/2026_CognitiveCaseDiagrams/metadata.json",
+        "metadata_sha256": "471fb980b7d5df9064718aa08786358f10bf81f7289860b5a10419fa4ed7d2b0",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "7926aca5bb6b254896efc822b66260320610876fe503a8822b5ba60a292b0e83"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.19699233",
+      "folder": "2026_FEPLean",
+      "created": false,
+      "updated_files": [
+        "papers/2026_FEPLean/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.19699233",
+        "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "ActiveInferenceInstitute/fep_lean",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0",
+        "zenodo_record_url": "https://zenodo.org/records/19699233",
+        "release_tag": "v1.1.0",
+        "folder": "2026_FEPLean"
+      },
+      "provenance": {
+        "action_sha256": "7600e430067fac1b2cfe9101c46e429154b1859f64a6733942368dc7c92f0dac",
+        "metadata_path": "papers/2026_FEPLean/metadata.json",
+        "metadata_sha256": "23d473b313d3206e6322c982a893c2414f2c0c453f8d8404c6115604b012871c",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "7600e430067fac1b2cfe9101c46e429154b1859f64a6733942368dc7c92f0dac"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20396328",
+      "folder": "2026_ENTO",
+      "created": false,
+      "updated_files": [
+        "papers/2026_ENTO/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20396328",
+        "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/entofile",
+        "github_release_url": "https://github.com/docxology/entofile/releases/tag/v0.4",
+        "zenodo_record_url": "https://zenodo.org/records/20396328",
+        "release_tag": "v0.4",
+        "folder": "2026_ENTO"
+      },
+      "provenance": {
+        "action_sha256": "0b9fc9062dc0dd13e9dbac62616db6e2272a643538c7e4ea56f899c2ec48655b",
+        "metadata_path": "papers/2026_ENTO/metadata.json",
+        "metadata_sha256": "00fe6bf4ca20953f4eb720b0dea0092703470b46f999473ddcfddf66492ab305",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "0b9fc9062dc0dd13e9dbac62616db6e2272a643538c7e4ea56f899c2ec48655b"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20417016",
+      "folder": "2026_BoundedAutoResearchTiny",
+      "created": false,
+      "updated_files": [
+        "papers/2026_BoundedAutoResearchTiny/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20417016",
+        "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_autoresearch_project",
+        "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2",
+        "zenodo_record_url": "https://zenodo.org/records/20417016",
+        "release_tag": "v0.3.2",
+        "folder": "2026_BoundedAutoResearchTiny"
+      },
+      "provenance": {
+        "action_sha256": "2e4695a28800b22ab14b05279bfe93380ee4e413b7f0d33b369dd8fe698b3069",
+        "metadata_path": "papers/2026_BoundedAutoResearchTiny/metadata.json",
+        "metadata_sha256": "fc5b924d62731dc0b5074b6e4607312feaa1c91a1a7dda98d36dd5b0105fff9f",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "2e4695a28800b22ab14b05279bfe93380ee4e413b7f0d33b369dd8fe698b3069"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20417021",
+      "folder": "2026_ActiveInferenceMulti",
+      "created": false,
+      "updated_files": [
+        "papers/2026_ActiveInferenceMulti/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20417021",
+        "title": "Active Inference Multi-Track Exemplar",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_active_inference",
+        "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.3.2",
+        "zenodo_record_url": "https://zenodo.org/records/20417021",
+        "release_tag": "v0.3.2",
+        "folder": "2026_ActiveInferenceMulti"
+      },
+      "provenance": {
+        "action_sha256": "0928a5b87f42f0c6d6d1aea109d83ce3d4b707e6d07937cfe82ba8f237123eac",
+        "metadata_path": "papers/2026_ActiveInferenceMulti/metadata.json",
+        "metadata_sha256": "fc23fdc90734f40565bb0562808585c53e3bbea1888eabf503b2e798415595a6",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "0928a5b87f42f0c6d6d1aea109d83ce3d4b707e6d07937cfe82ba8f237123eac"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20417104",
+      "folder": "2026_EditorialQualityAt",
+      "created": false,
+      "updated_files": [
+        "papers/2026_EditorialQualityAt/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20417104",
+        "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_prose_project",
+        "github_release_url": "https://github.com/docxology/template_prose_project/releases/tag/v0.4.2",
+        "zenodo_record_url": "https://zenodo.org/records/20417104",
+        "release_tag": "v0.4.2",
+        "folder": "2026_EditorialQualityAt"
+      },
+      "provenance": {
+        "action_sha256": "f58df0b4436a282b8ba669ddcf1897f90fa07b93e4e27492e1b1dc6c75a84d59",
+        "metadata_path": "papers/2026_EditorialQualityAt/metadata.json",
+        "metadata_sha256": "f4a07446e3224a01b516124719fb3adc1bdfbae00b5f74f628023eecc9572758",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "f58df0b4436a282b8ba669ddcf1897f90fa07b93e4e27492e1b1dc6c75a84d59"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20417136",
+      "folder": "2026_ConvergenceAnalysisGradient",
+      "created": false,
+      "updated_files": [
+        "papers/2026_ConvergenceAnalysisGradient/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20417136",
+        "title": "Convergence Analysis of Gradient Descent Optimization",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_code_project",
+        "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.5.2",
+        "zenodo_record_url": "https://zenodo.org/records/20417136",
+        "release_tag": "v2.5.2",
+        "folder": "2026_ConvergenceAnalysisGradient"
+      },
+      "provenance": {
+        "action_sha256": "024a8bb146995354ddace1638b2248c60b817becf6216950ef081b211206741f",
+        "metadata_path": "papers/2026_ConvergenceAnalysisGradient/metadata.json",
+        "metadata_sha256": "fa5cace780416fe248001a052d81d73fe9f0cbdcf0e5ef315b9b39d68fb13d7b",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "024a8bb146995354ddace1638b2248c60b817becf6216950ef081b211206741f"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20418904",
+      "folder": "2026_PolicyEntanglementActive",
+      "created": false,
+      "updated_files": [
+        "papers/2026_PolicyEntanglementActive/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20418904",
+        "title": "Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "ActiveInferenceInstitute/policy_entanglement",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/20418904",
+        "release_tag": "v1.0.0",
+        "folder": "2026_PolicyEntanglementActive"
+      },
+      "provenance": {
+        "action_sha256": "a8eae47d0e04c36d34fcd029735cd2f37a660df85c1a02e19a9de3fc25cc6e44",
+        "metadata_path": "papers/2026_PolicyEntanglementActive/metadata.json",
+        "metadata_sha256": "74de93aab1d6c994beea373fe82ab2dc56afe07145a64ba6edf978835224efae",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "a8eae47d0e04c36d34fcd029735cd2f37a660df85c1a02e19a9de3fc25cc6e44"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20419007",
+      "folder": "2026_TemplateApproachReproducible",
+      "created": false,
+      "updated_files": [
+        "papers/2026_TemplateApproachReproducible/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20419007",
+        "title": "A template/ approach to Reproducible Generative Research",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_template",
+        "github_release_url": "https://github.com/docxology/template_template/releases/tag/v1.0.9",
+        "zenodo_record_url": "https://zenodo.org/records/20419007",
+        "release_tag": "v1.0.9",
+        "folder": "2026_TemplateApproachReproducible"
+      },
+      "provenance": {
+        "action_sha256": "ed5fdf7d4e3913983145cd9957e1155b9f8e4adc6e32be17596132425b0ecfe7",
+        "metadata_path": "papers/2026_TemplateApproachReproducible/metadata.json",
+        "metadata_sha256": "cea9bf2c005bff30b6e126c2168c320f1c92d66514231909f6c91ef19971c0c3",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "ed5fdf7d4e3913983145cd9957e1155b9f8e4adc6e32be17596132425b0ecfe7"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20420556",
+      "folder": "2026_BeeStack",
+      "created": false,
+      "updated_files": [
+        "papers/2026_BeeStack/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20420556",
+        "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/BeeStack",
+        "github_release_url": "https://github.com/docxology/BeeStack/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/20420556",
+        "release_tag": "v1.0.0",
+        "folder": "2026_BeeStack"
+      },
+      "provenance": {
+        "action_sha256": "11525e5368a0f19dd22888d7e0c09552d26f275a49db66bf5e1d435fc595c354",
+        "metadata_path": "papers/2026_BeeStack/metadata.json",
+        "metadata_sha256": "e683f9cd2e1d02c40cdb79f7971d78c6e323f020676afb4996b42a3b3141aa8c",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "11525e5368a0f19dd22888d7e0c09552d26f275a49db66bf5e1d435fc595c354"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20450880",
+      "folder": "2026_WhenDoBugs",
+      "created": false,
+      "updated_files": [
+        "papers/2026_WhenDoBugs/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20450880",
+        "title": "When do bugs see (infra)red?",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/cohereants",
+        "github_release_url": "https://github.com/docxology/cohereants/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/20450880",
+        "release_tag": "v1.0.0",
+        "folder": "2026_WhenDoBugs"
+      },
+      "provenance": {
+        "action_sha256": "dc771ddb6c7df75f0567a21b62ee5d701231fe9b38fd6f6216f918d20666eaad",
+        "metadata_path": "papers/2026_WhenDoBugs/metadata.json",
+        "metadata_sha256": "5935fad564030319593e2f88b44f69af987642606008186cc67d034d8c1d2636",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "dc771ddb6c7df75f0567a21b62ee5d701231fe9b38fd6f6216f918d20666eaad"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20453879",
+      "folder": "2026_SelfImprovementAgent",
+      "created": false,
+      "updated_files": [
+        "papers/2026_SelfImprovementAgent/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20453879",
+        "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_sia",
+        "github_release_url": "https://github.com/docxology/template_sia/releases/tag/v0.1.2",
+        "zenodo_record_url": "https://zenodo.org/records/20453879",
+        "release_tag": "v0.1.2",
+        "folder": "2026_SelfImprovementAgent"
+      },
+      "provenance": {
+        "action_sha256": "7865f18a7dd651f7bf2008340f707b7f532bba54efb63cd5bf747bc38a89595f",
+        "metadata_path": "papers/2026_SelfImprovementAgent/metadata.json",
+        "metadata_sha256": "1bab395456abd67e8e6968d8faa094d447d69ba5dc2f5af17462d8c831adf846",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "7865f18a7dd651f7bf2008340f707b7f532bba54efb63cd5bf747bc38a89595f"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20482025",
+      "folder": "2026_MusicNeverStopped",
+      "created": false,
+      "updated_files": [
+        "papers/2026_MusicNeverStopped/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20482025",
+        "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/grateful_data",
+        "github_release_url": "https://github.com/docxology/grateful_data/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/20482025",
+        "release_tag": "v1.0.0",
+        "folder": "2026_MusicNeverStopped"
+      },
+      "provenance": {
+        "action_sha256": "7bf7f724973f17a837d0b6e32a67b468437737b4a250488f2f1230f4ba7a4f42",
+        "metadata_path": "papers/2026_MusicNeverStopped/metadata.json",
+        "metadata_sha256": "f1b9747806d3fabeae212d4cd5ef861ac7409c7398fdb25990f67c4701d2b589",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "7bf7f724973f17a837d0b6e32a67b468437737b4a250488f2f1230f4ba7a4f42"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20498699",
+      "folder": "2026_RecoveringLLMPersona",
+      "created": false,
+      "updated_files": [
+        "papers/2026_RecoveringLLMPersona/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20498699",
+        "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/ntqr_llm",
+        "github_release_url": "https://github.com/docxology/ntqr_llm/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/20498699",
+        "release_tag": "v1.0.0",
+        "folder": "2026_RecoveringLLMPersona"
+      },
+      "provenance": {
+        "action_sha256": "ea3e814269955e80381499504158f3576229b2dd0777c30ec4e657d8a14ccc40",
+        "metadata_path": "papers/2026_RecoveringLLMPersona/metadata.json",
+        "metadata_sha256": "3f37656e056c2a8ffb232ee22d37563bdf572a2bfdf467f66f6f60e807a74a5c",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "ea3e814269955e80381499504158f3576229b2dd0777c30ec4e657d8a14ccc40"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20533125",
+      "folder": "2026_TemplateTextbook",
+      "created": false,
+      "updated_files": [
+        "papers/2026_TemplateTextbook/README.md",
+        "papers/2026_TemplateTextbook/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20533125",
+        "title": "The Template Textbook",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_textbook",
+        "github_release_url": "https://github.com/docxology/template_textbook/releases/tag/v0.1.0",
+        "zenodo_record_url": "https://zenodo.org/records/20533125",
+        "release_tag": "v0.1.0",
+        "folder": "2026_TemplateTextbook"
+      },
+      "provenance": {
+        "action_sha256": "fa6f3e8fa46ba8bd464cf1bde77e78685308826cd31109cfaa252364f66915f3",
+        "metadata_path": "papers/2026_TemplateTextbook/metadata.json",
+        "metadata_sha256": "2a66df5fcf0d30e3df8beb8d8edf9269a7d2e4578f077885210065eaa7886d73",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "fa6f3e8fa46ba8bd464cf1bde77e78685308826cd31109cfaa252364f66915f3"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20533125",
+      "folder": "2026_TemplateTextbook",
+      "created": false,
+      "updated_files": [
+        "papers/2026_TemplateTextbook/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20533125",
+        "title": "The Template Textbook",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_textbook",
+        "github_release_url": "https://github.com/docxology/template_textbook/releases/tag/v0.1.2",
+        "zenodo_record_url": "https://zenodo.org/records/20533125",
+        "release_tag": "v0.1.2",
+        "folder": "2026_TemplateTextbook"
+      },
+      "provenance": {
+        "action_sha256": "450b7dc83d05b4a08857f2b406243f703fbc861d68d240dcf2557c314b509464",
+        "metadata_path": "papers/2026_TemplateTextbook/metadata.json",
+        "metadata_sha256": "00640bd586cd574d76e79ae8432ee4d1978fe9f05a2b72095ac599d7b5412a71",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "450b7dc83d05b4a08857f2b406243f703fbc861d68d240dcf2557c314b509464"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20533669",
+      "folder": "2026_DeterministicTestbedSelf",
+      "created": false,
+      "updated_files": [
+        "papers/2026_DeterministicTestbedSelf/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20533669",
+        "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_autoscientists",
+        "github_release_url": "https://github.com/docxology/template_autoscientists/releases/tag/v1.0.2",
+        "zenodo_record_url": "https://zenodo.org/records/20533669",
+        "release_tag": "v1.0.2",
+        "folder": "2026_DeterministicTestbedSelf"
+      },
+      "provenance": {
+        "action_sha256": "c5aaec9eef9ddbb1c3a2dfe36c466e36ff345cfeea3b1185ad82e10830aa5692",
+        "metadata_path": "papers/2026_DeterministicTestbedSelf/metadata.json",
+        "metadata_sha256": "f16d195adf9c5cb9d7e6bb2a8083467db5a74aa37467a6c36bfdc843d5e81901",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "c5aaec9eef9ddbb1c3a2dfe36c466e36ff345cfeea3b1185ad82e10830aa5692"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20533675",
+      "folder": "2026_Triplicate",
+      "created": false,
+      "updated_files": [
+        "papers/2026_Triplicate/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20533675",
+        "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_newspaper",
+        "github_release_url": "https://github.com/docxology/template_newspaper/releases/tag/v1.0.2",
+        "zenodo_record_url": "https://zenodo.org/records/20533675",
+        "release_tag": "v1.0.2",
+        "folder": "2026_Triplicate"
+      },
+      "provenance": {
+        "action_sha256": "031a26912f1aa8c0890ddfe9754b1c295f24e4f7f56f569ff483bbe6c195c6b2",
+        "metadata_path": "papers/2026_Triplicate/metadata.json",
+        "metadata_sha256": "4404d3c886e289e620eee9b078f0e60f8a91c08bfcad2dc9103df897b5bbd5bd",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "031a26912f1aa8c0890ddfe9754b1c295f24e4f7f56f569ff483bbe6c195c6b2"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20693216",
+      "folder": "2026_DemoCreate",
+      "created": false,
+      "updated_files": [
+        "papers/2026_DemoCreate/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20693216",
+        "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/democreate",
+        "github_release_url": "https://github.com/docxology/democreate/releases/tag/v0.6.2",
+        "zenodo_record_url": "https://zenodo.org/records/20693216",
+        "release_tag": "v0.6.2",
+        "folder": "2026_DemoCreate"
+      },
+      "provenance": {
+        "action_sha256": "0ff83873b63d74a036ecd7d7a8e55939929fd5c7860f02d0767c621512cdd196",
+        "metadata_path": "papers/2026_DemoCreate/metadata.json",
+        "metadata_sha256": "2fe90b4677be2fd9dfae94b9e38a85282d420027830bcc6bc640b3b6dfb295d2",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "0ff83873b63d74a036ecd7d7a8e55939929fd5c7860f02d0767c621512cdd196"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20705350",
+      "folder": "2026_COGANT",
+      "created": false,
+      "updated_files": [
+        "papers/2026_COGANT/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20705350",
+        "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "ActiveInferenceInstitute/COGANT",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0",
+        "zenodo_record_url": "https://zenodo.org/records/20705350",
+        "release_tag": "v0.6.0",
+        "folder": "2026_COGANT"
+      },
+      "provenance": {
+        "action_sha256": "9e5b34bcac4954d0a35228048343d75934f8c79f6d409fd6cab32d833582bfb6",
+        "metadata_path": "papers/2026_COGANT/metadata.json",
+        "metadata_sha256": "b066d669f19a169611f0c9482a9058660b99a91acc468a2c603090743198b7a9",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "9e5b34bcac4954d0a35228048343d75934f8c79f6d409fd6cab32d833582bfb6"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20732274",
+      "folder": "2026_AGEINT",
+      "created": false,
+      "updated_files": [
+        "papers/2026_AGEINT/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20732274",
+        "title": "AGEINT: Agentic Intelligence",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/AGEINT",
+        "github_release_url": "https://github.com/docxology/AGEINT/releases/tag/v0.1.0",
+        "zenodo_record_url": "https://zenodo.org/records/20732274",
+        "release_tag": "v0.1.0",
+        "folder": "2026_AGEINT"
+      },
+      "provenance": {
+        "action_sha256": "8c5f1eaad1eda1b6e2c001c9cc11dbfc2854f5fab5fe69e4f5c7d3dc61244240",
+        "metadata_path": "papers/2026_AGEINT/metadata.json",
+        "metadata_sha256": "5ebd453455da0dbde52c93ce35665710dd09489994310bb2ad1d162f19157b55",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "8c5f1eaad1eda1b6e2c001c9cc11dbfc2854f5fab5fe69e4f5c7d3dc61244240"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20747834",
+      "folder": "2026_PolicyDistillationAs",
+      "created": false,
+      "updated_files": [
+        "papers/2026_PolicyDistillationAs/README.md",
+        "papers/2026_PolicyDistillationAs/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20747834",
+        "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/20747834",
+        "release_tag": "v1.0.0",
+        "folder": "2026_PolicyDistillationAs"
+      },
+      "provenance": {
+        "action_sha256": "b729d834adbefad21c27d6a37c855081394f82f900468bfacd79b00fc524b713",
+        "metadata_path": "papers/2026_PolicyDistillationAs/metadata.json",
+        "metadata_sha256": "3c51936d40bf7d7f5ba93c5033a6f21c677d7984684987b7aedbf017978f6ab2",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "b729d834adbefad21c27d6a37c855081394f82f900468bfacd79b00fc524b713"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20747834",
+      "folder": "2026_PolicyDistillationAs",
+      "created": false,
+      "updated_files": [
+        "papers/2026_PolicyDistillationAs/README.md",
+        "papers/2026_PolicyDistillationAs/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20747834",
+        "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.1",
+        "zenodo_record_url": "https://zenodo.org/records/20747834",
+        "release_tag": "v1.0.1",
+        "folder": "2026_PolicyDistillationAs"
+      },
+      "provenance": {
+        "action_sha256": "1262140c6fa51b28abed24d228d056029bb2568aec74c56c49502b82390e9a0f",
+        "metadata_path": "papers/2026_PolicyDistillationAs/metadata.json",
+        "metadata_sha256": "e127aee535451cdf093855bba8edd5cfee2923e1315b7e079cd6b228e32e7dfb",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "1262140c6fa51b28abed24d228d056029bb2568aec74c56c49502b82390e9a0f"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20747834",
+      "folder": "2026_PolicyDistillationAs",
+      "created": false,
+      "updated_files": [
+        "papers/2026_PolicyDistillationAs/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20747834",
+        "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2",
+        "zenodo_record_url": "https://zenodo.org/records/20747834",
+        "release_tag": "v1.0.2",
+        "folder": "2026_PolicyDistillationAs"
+      },
+      "provenance": {
+        "action_sha256": "50afb874f9618fc9cfa1882516ffd6dd840f285aa1ec96812d24d2204aff88a2",
+        "metadata_path": "papers/2026_PolicyDistillationAs/metadata.json",
+        "metadata_sha256": "fa83c6a32d4d6ae4462c749c3e41edd31ac6e527365c0f297e8a96e669a52ac8",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "50afb874f9618fc9cfa1882516ffd6dd840f285aa1ec96812d24d2204aff88a2"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20786638",
+      "folder": "2026_TemplateMadlib",
+      "created": false,
+      "updated_files": [
+        "papers/2026_TemplateMadlib/README.md",
+        "papers/2026_TemplateMadlib/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20786638",
+        "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_madlib",
+        "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.0",
+        "zenodo_record_url": "https://zenodo.org/records/20786638",
+        "release_tag": "v0.1.0",
+        "folder": "2026_TemplateMadlib"
+      },
+      "provenance": {
+        "action_sha256": "284d0f5628f7304a5f3b9f95638bfaba2ed1265c07447201bdd7def1c41220bf",
+        "metadata_path": "papers/2026_TemplateMadlib/metadata.json",
+        "metadata_sha256": "178eb2693ecaeb34769d7721b6facf01d9c750dc0f142b0abad28cfbdad2bc37",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "284d0f5628f7304a5f3b9f95638bfaba2ed1265c07447201bdd7def1c41220bf"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20786638",
+      "folder": "2026_TemplateMadlib",
+      "created": false,
+      "updated_files": [
+        "papers/2026_TemplateMadlib/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20786638",
+        "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_madlib",
+        "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.1",
+        "zenodo_record_url": "https://zenodo.org/records/20786638",
+        "release_tag": "v0.1.1",
+        "folder": "2026_TemplateMadlib"
+      },
+      "provenance": {
+        "action_sha256": "ea2fca763ec9c721ddb1529fc036315eca908b00d0bcbfd3c74b1e9d3d5594db",
+        "metadata_path": "papers/2026_TemplateMadlib/metadata.json",
+        "metadata_sha256": "517a3b9f5fd0f5ac65c4b17dacb550c80e4e94d7c1bd2535a9c4fc2e3029786a",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "ea2fca763ec9c721ddb1529fc036315eca908b00d0bcbfd3c74b1e9d3d5594db"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20834846",
+      "folder": "2026_RealizingEmptiness",
+      "created": false,
+      "updated_files": [
+        "papers/2026_RealizingEmptiness/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20834846",
+        "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/realizing_emptiness",
+        "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/20834846",
+        "release_tag": "v1.0.0",
+        "folder": "2026_RealizingEmptiness"
+      },
+      "provenance": {
+        "action_sha256": "5bf3eba61e640af681b02d4cf222d6133143b0d3db3417e21b67f07e957d2318",
+        "metadata_path": "papers/2026_RealizingEmptiness/metadata.json",
+        "metadata_sha256": "89ce20c313f86b57faf6b1a29bd3e6d7b24edd06605c2feb38c32dfdbd3e0a1f",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "5bf3eba61e640af681b02d4cf222d6133143b0d3db3417e21b67f07e957d2318"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20931964",
+      "folder": "2026_LivingMetaAnalysis",
+      "created": false,
+      "updated_files": [
+        "papers/2026_LivingMetaAnalysis/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20931964",
+        "title": "A Living Meta-Analysis of the Modafinil Literature",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_literature_meta_analysis",
+        "github_release_url": "https://github.com/docxology/template_literature_meta_analysis/releases/tag/v0.1.0",
+        "zenodo_record_url": "https://zenodo.org/records/20931964",
+        "release_tag": "v0.1.0",
+        "folder": "2026_LivingMetaAnalysis"
+      },
+      "provenance": {
+        "action_sha256": "ec56e06388752b818451dc3b4b09d8c18be2d31924cdd776d2174ffbd9dfda76",
+        "metadata_path": "papers/2026_LivingMetaAnalysis/metadata.json",
+        "metadata_sha256": "424bcb43992268397b86bdac9d46150cf36e9906b43e0fab98752e194f4d7c07",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "ec56e06388752b818451dc3b4b09d8c18be2d31924cdd776d2174ffbd9dfda76"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20976824",
+      "folder": "2026_AlphaCOGANT",
+      "created": false,
+      "updated_files": [
+        "papers/2026_AlphaCOGANT/README.md",
+        "papers/2026_AlphaCOGANT/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20976824",
+        "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/alphacogant",
+        "github_release_url": "https://github.com/docxology/alphacogant/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/20976824",
+        "release_tag": "v1.0.0",
+        "folder": "2026_AlphaCOGANT"
+      },
+      "provenance": {
+        "action_sha256": "4e8fb8bd6eda5e82d2aa12e741b3361b3ab2cf3eeca4bb57a99fd22ddc79bf2b",
+        "metadata_path": "papers/2026_AlphaCOGANT/metadata.json",
+        "metadata_sha256": "0fc983e3a1de25b1b0c7b5fe270b97e4a7ff72100e3d75cba63c1425a3c0f258",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "4e8fb8bd6eda5e82d2aa12e741b3361b3ab2cf3eeca4bb57a99fd22ddc79bf2b"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.20976824",
+      "folder": "2026_AlphaCOGANT",
+      "created": false,
+      "updated_files": [
+        "papers/2026_AlphaCOGANT/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.20976824",
+        "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/alphacogant",
+        "github_release_url": "https://github.com/docxology/alphacogant/releases/tag/v1.0.1",
+        "zenodo_record_url": "https://zenodo.org/records/20976824",
+        "release_tag": "v1.0.1",
+        "folder": "2026_AlphaCOGANT"
+      },
+      "provenance": {
+        "action_sha256": "c8c21da86279d091b4f0d3905d60b0b59c090381e07f4e25c03ccc2f68399926",
+        "metadata_path": "papers/2026_AlphaCOGANT/metadata.json",
+        "metadata_sha256": "c31efca6dc216c47e3ce3ea1e23ca6b95026b65ac604c7f57aec02c53d0f934e",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "c8c21da86279d091b4f0d3905d60b0b59c090381e07f4e25c03ccc2f68399926"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21047573",
+      "folder": "2026_MappingWilliamBlake",
+      "created": false,
+      "updated_files": [
+        "papers/2026_MappingWilliamBlake/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21047573",
+        "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/blake",
+        "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
+        "zenodo_record_url": "https://zenodo.org/records/21047573",
+        "release_tag": "v0.1.0",
+        "folder": "2026_MappingWilliamBlake"
+      },
+      "provenance": {
+        "action_sha256": "74920ea21c5be3cb3d2b3f8874e639ed79abd1e1701d21f1e19ba8e482612132",
+        "metadata_path": "papers/2026_MappingWilliamBlake/metadata.json",
+        "metadata_sha256": "3b6678edb2ccc60785426184d6ad5d6445fac2dda687a3169db4c2926bab5dba",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "74920ea21c5be3cb3d2b3f8874e639ed79abd1e1701d21f1e19ba8e482612132"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21083779",
+      "folder": "2026_SortitionUpstreamNTQR",
+      "created": false,
+      "updated_files": [
+        "papers/2026_SortitionUpstreamNTQR/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21083779",
+        "title": "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/ntqr_allotment",
+        "github_release_url": "https://github.com/docxology/ntqr_allotment/releases/tag/v0.1.0",
+        "zenodo_record_url": "https://zenodo.org/records/21083779",
+        "release_tag": "v0.1.0",
+        "folder": "2026_SortitionUpstreamNTQR"
+      },
+      "provenance": {
+        "action_sha256": "7ced5eeb88a043875a4360b4516973185b912272d06054b7060ffda08724eb92",
+        "metadata_path": "papers/2026_SortitionUpstreamNTQR/metadata.json",
+        "metadata_sha256": "c1847a58fb9e19b922707709ec22ca7b6d7c4694f875a6a05ac25cbecf2fbb75",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "7ced5eeb88a043875a4360b4516973185b912272d06054b7060ffda08724eb92"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21086292",
+      "folder": "2026_ExploratoryDataAnalysis",
+      "created": false,
+      "updated_files": [
+        "papers/2026_ExploratoryDataAnalysis/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21086292",
+        "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_eda_notebook",
+        "github_release_url": "https://github.com/docxology/template_eda_notebook/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/21086292",
+        "release_tag": "v1.0.0",
+        "folder": "2026_ExploratoryDataAnalysis"
+      },
+      "provenance": {
+        "action_sha256": "8416f3d37dbdbfca02d5a2984c0d4c9946cb12a7979ac6409eadd14c3e98a214",
+        "metadata_path": "papers/2026_ExploratoryDataAnalysis/metadata.json",
+        "metadata_sha256": "0994cae7b8f7546677f1693157b324d3d7e025539bfaacea566964aeb41d9ee7",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "8416f3d37dbdbfca02d5a2984c0d4c9946cb12a7979ac6409eadd14c3e98a214"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21086548",
+      "folder": "2026_DomainLanguageSpecifying",
+      "created": false,
+      "updated_files": [
+        "papers/2026_DomainLanguageSpecifying/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21086548",
+        "title": "A Domain Language for Specifying Controlled Methods",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_methods_paper",
+        "github_release_url": "https://github.com/docxology/template_methods_paper/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/21086548",
+        "release_tag": "v1.0.0",
+        "folder": "2026_DomainLanguageSpecifying"
+      },
+      "provenance": {
+        "action_sha256": "18636866d43e76d306c5747e8347ba5cde5af969821711879305e6aeffc087b0",
+        "metadata_path": "papers/2026_DomainLanguageSpecifying/metadata.json",
+        "metadata_sha256": "7f6ebebe67cdbd55fa2fb0c5174ca58ac40e7e1ef13fffc775e79803074b35b9",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "18636866d43e76d306c5747e8347ba5cde5af969821711879305e6aeffc087b0"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21137276",
+      "folder": "2026_EntomologicalLaw",
+      "created": false,
+      "updated_files": [
+        "papers/2026_EntomologicalLaw/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21137276",
+        "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/EntoLaw",
+        "github_release_url": "https://github.com/docxology/EntoLaw/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/21137276",
+        "release_tag": "v1.0.0",
+        "folder": "2026_EntomologicalLaw"
+      },
+      "provenance": {
+        "action_sha256": "7762ec17d4335b6c69f98ccd27da2fe87516a2454c85ac54ef6919e66e025667",
+        "metadata_path": "papers/2026_EntomologicalLaw/metadata.json",
+        "metadata_sha256": "0a9a814d11c5a00141b05065306272cd006161a9189a8b7736f65a5d895bb342",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "7762ec17d4335b6c69f98ccd27da2fe87516a2454c85ac54ef6919e66e025667"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21176000",
+      "folder": "2026_ShapeBetween",
+      "created": false,
+      "updated_files": [
+        "papers/2026_ShapeBetween/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21176000",
+        "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_storybook",
+        "github_release_url": "https://github.com/docxology/template_storybook/releases/tag/v0.1.0",
+        "zenodo_record_url": "https://zenodo.org/records/21176000",
+        "release_tag": "v0.1.0",
+        "folder": "2026_ShapeBetween"
+      },
+      "provenance": {
+        "action_sha256": "80733650689268a6cd97a0c77c1a2cb599e1b78089d707533f7c6b32cc729f08",
+        "metadata_path": "papers/2026_ShapeBetween/metadata.json",
+        "metadata_sha256": "1a7966ed0a06cbe73ef26922755669dd5d2a68b3f491ad03d177513d9a695bfb",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "80733650689268a6cd97a0c77c1a2cb599e1b78089d707533f7c6b32cc729f08"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21227869",
+      "folder": "2026_AutopoieticProjectGeneration",
+      "created": false,
+      "updated_files": [
+        "papers/2026_AutopoieticProjectGeneration/README.md",
+        "papers/2026_AutopoieticProjectGeneration/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21227869",
+        "title": "Autopoietic Project Generation",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template",
+        "github_release_url": "https://github.com/docxology/template/releases/tag/v1.0.1",
+        "zenodo_record_url": "https://zenodo.org/records/21227869",
+        "release_tag": "v1.0.1",
+        "folder": "2026_AutopoieticProjectGeneration"
+      },
+      "provenance": {
+        "action_sha256": "8807da4104cbbfd89eef2735a60ea8c3911874ba2a959bc40768c9d03483fca1",
+        "metadata_path": "papers/2026_AutopoieticProjectGeneration/metadata.json",
+        "metadata_sha256": "bc59cdf0cf110cd8d2e5bccd722fd6aa3f6fe5d7f908adf5599fdee41ff4bf3c",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "8807da4104cbbfd89eef2735a60ea8c3911874ba2a959bc40768c9d03483fca1"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21227869",
+      "folder": "2026_AutopoieticProjectGeneration",
+      "created": false,
+      "updated_files": [
+        "papers/2026_AutopoieticProjectGeneration/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21227869",
+        "title": "Autopoietic Project Generation",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template_autopoiesis",
+        "github_release_url": "https://github.com/docxology/template_autopoiesis/releases/tag/v1.0.1",
+        "zenodo_record_url": "https://zenodo.org/records/21227869",
+        "release_tag": "v1.0.1",
+        "folder": "2026_AutopoieticProjectGeneration"
+      },
+      "provenance": {
+        "action_sha256": "455f2afd9f8f0a0c9a5e7fb14eb918aa7a476974d8726faa82a8f20657dcff8a",
+        "metadata_path": "papers/2026_AutopoieticProjectGeneration/metadata.json",
+        "metadata_sha256": "4e2d9d552b8929ac8d42ebc14b630ce7319278716363d8f0f81b05aa56a2d61c",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "455f2afd9f8f0a0c9a5e7fb14eb918aa7a476974d8726faa82a8f20657dcff8a"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21281509",
+      "folder": "2026_TemplatePitchDeck",
+      "created": false,
+      "updated_files": [
+        "papers/2026_TemplatePitchDeck/README.md",
+        "papers/2026_TemplatePitchDeck/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21281509",
+        "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template-pitch-deck",
+        "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/21281509",
+        "release_tag": "v1.0.0",
+        "folder": "2026_TemplatePitchDeck"
+      },
+      "provenance": {
+        "action_sha256": "5412210e029bb466a2fc30bdd3b37324b680ae7f7a99e9f6e23e44f85966eae7",
+        "metadata_path": "papers/2026_TemplatePitchDeck/metadata.json",
+        "metadata_sha256": "03a2f47278d87f0f516e4d13d77509cb0b78434a3287d379d6799c8944b5c294",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "5412210e029bb466a2fc30bdd3b37324b680ae7f7a99e9f6e23e44f85966eae7"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21281509",
+      "folder": "2026_TemplatePitchDeck",
+      "created": false,
+      "updated_files": [
+        "papers/2026_TemplatePitchDeck/metadata.json",
+        "papers/paper_metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21281509",
+        "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/template-pitch-deck",
+        "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.2",
+        "zenodo_record_url": "https://zenodo.org/records/21281509",
+        "release_tag": "v1.0.2",
+        "folder": "2026_TemplatePitchDeck"
+      },
+      "provenance": {
+        "action_sha256": "e6b199d07474fe5bfe3b18d7719e8c49ad4ac9c34143223a74baa254ffc4f026",
+        "metadata_path": "papers/2026_TemplatePitchDeck/metadata.json",
+        "metadata_sha256": "858d4d5afca86a0da254a1418275439f72946f69cf856d0bb97565110d1bac87",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "e6b199d07474fe5bfe3b18d7719e8c49ad4ac9c34143223a74baa254ffc4f026"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21316510",
+      "folder": "2026_PriorCognitiveArt",
+      "created": false,
+      "updated_files": [
+        "papers/2026_PriorCognitiveArt/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21316510",
+        "title": "Prior Cognitive Art",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/prior_cognitive_art",
+        "github_release_url": "https://github.com/docxology/prior_cognitive_art/releases/tag/v0.1.0",
+        "zenodo_record_url": "https://zenodo.org/records/21316510",
+        "release_tag": "v0.1.0",
+        "folder": "2026_PriorCognitiveArt"
+      },
+      "provenance": {
+        "action_sha256": "ed9111b52c1c89beb68fec7d67f1d1ac8b89045cc5898357726ca2da4d5a672f",
+        "metadata_path": "papers/2026_PriorCognitiveArt/metadata.json",
+        "metadata_sha256": "dd7fd5c45d6abe3c245694c554d2f95ce63957f73f82954a9dd785878b0879af",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "ed9111b52c1c89beb68fec7d67f1d1ac8b89045cc5898357726ca2da4d5a672f"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21330636",
+      "folder": "2026_ActiveFractalRabbit",
+      "created": false,
+      "updated_files": [
+        "papers/2026_ActiveFractalRabbit/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21330636",
+        "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "ActiveInferenceInstitute/active_fractal_rabbit",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/tag/v0.2.0",
+        "zenodo_record_url": "https://zenodo.org/records/21330636",
+        "release_tag": "v0.2.0",
+        "folder": "2026_ActiveFractalRabbit"
+      },
+      "provenance": {
+        "action_sha256": "5eddb06c678222e3d8429cb91ef8d837208f3c50fef69bfde835ece12bff3854",
+        "metadata_path": "papers/2026_ActiveFractalRabbit/metadata.json",
+        "metadata_sha256": "c808ffa1896cebab71daca214b4629d450e371b6876ea70f63c847a58d339d77",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "5eddb06c678222e3d8429cb91ef8d837208f3c50fef69bfde835ece12bff3854"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21419693",
+      "folder": "2026_DuckRabbit",
+      "created": false,
+      "updated_files": [
+        "papers/2026_DuckRabbit/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21419693",
+        "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/DuckRabbit",
+        "github_release_url": "https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0",
+        "zenodo_record_url": "https://zenodo.org/records/21419693",
+        "release_tag": "v0.5.0",
+        "folder": "2026_DuckRabbit"
+      },
+      "provenance": {
+        "action_sha256": "aa1331bb79c859e4f12869d7b1b011ddb1697ef4f2fde73f33b3150e8762ed39",
+        "metadata_path": "papers/2026_DuckRabbit/metadata.json",
+        "metadata_sha256": "7b2bab8f9006be77a3047ff9ade225518e7b956573364de026e0a3738ca2ee8d",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "aa1331bb79c859e4f12869d7b1b011ddb1697ef4f2fde73f33b3150e8762ed39"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21695160",
+      "folder": "2026_ActiveInferencePower",
+      "created": false,
+      "updated_files": [
+        "papers/2026_ActiveInferencePower/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21695160",
+        "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "ActiveInferenceInstitute/active_inference_power",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/21695160",
+        "release_tag": "v1.0.0",
+        "folder": "2026_ActiveInferencePower"
+      },
+      "provenance": {
+        "action_sha256": "0df2100340cdf6ed69fc29f66debef9a71869513b0b0663360999dfced1e8eed",
+        "metadata_path": "papers/2026_ActiveInferencePower/metadata.json",
+        "metadata_sha256": "86ad586f6c62b7d3a16482e1d0ab971693209bc440a02044c1b9bca49e64964d",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "0df2100340cdf6ed69fc29f66debef9a71869513b0b0663360999dfced1e8eed"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21750800",
+      "folder": "2026_Codomyrmex",
+      "created": false,
+      "updated_files": [
+        "papers/2026_Codomyrmex/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21750800",
+        "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/codomyrmex",
+        "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.3.0-paper",
+        "zenodo_record_url": "https://zenodo.org/records/21750800",
+        "release_tag": "v1.3.0-paper",
+        "folder": "2026_Codomyrmex"
+      },
+      "provenance": {
+        "action_sha256": "b0c153f86def255423b088898e653583092a6b58e780936a99808a2ad1bc985a",
+        "metadata_path": "papers/2026_Codomyrmex/metadata.json",
+        "metadata_sha256": "7b4b07da6dbb51b98ddb987dfe8513e42452fd0254a10f02fe41d60f69dd2429",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "b0c153f86def255423b088898e653583092a6b58e780936a99808a2ad1bc985a"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21815704",
+      "folder": "2026_DigiPPPiP",
+      "created": false,
+      "updated_files": [
+        "papers/2026_DigiPPPiP/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21815704",
+        "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/Digi-PPPiP",
+        "github_release_url": "https://github.com/docxology/Digi-PPPiP/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/21815704",
+        "release_tag": "v1.0.0",
+        "folder": "2026_DigiPPPiP"
+      },
+      "provenance": {
+        "action_sha256": "5fa098b9bbe2269fcc1b73a009e9046a18324249b299853f2ccd2c47db346edc",
+        "metadata_path": "papers/2026_DigiPPPiP/metadata.json",
+        "metadata_sha256": "95547adc31c3575c236db66b07776ace5f0e4cacf873382943035c1ae643e8f3",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "5fa098b9bbe2269fcc1b73a009e9046a18324249b299853f2ccd2c47db346edc"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21843592",
+      "folder": "2026_PROJECTBONDSpecial",
+      "created": false,
+      "updated_files": [
+        "papers/2026_PROJECTBONDSpecial/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21843592",
+        "title": "PROJECT BOND — The Special-Agent Operations Compendium",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/bond",
+        "github_release_url": "https://github.com/docxology/bond/releases/tag/v1.0.0",
+        "zenodo_record_url": "https://zenodo.org/records/21843592",
+        "release_tag": "v1.0.0",
+        "folder": "2026_PROJECTBONDSpecial"
+      },
+      "provenance": {
+        "action_sha256": "016d45ab0cdc0fa960a67540a60607a6fa753e273f0e2fb5f2ff84bc9ca3faa3",
+        "metadata_path": "papers/2026_PROJECTBONDSpecial/metadata.json",
+        "metadata_sha256": "1081316d97f7f2921c5ca902b933233ea5986b3e085e2103e2e613afbc69189c",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "016d45ab0cdc0fa960a67540a60607a6fa753e273f0e2fb5f2ff84bc9ca3faa3"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.21983948",
+      "folder": "2026_DocxplusIntelligentDocument",
+      "created": false,
+      "updated_files": [
+        "papers/2026_DocxplusIntelligentDocument/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.21983948",
+        "title": "docxplus — the Intelligent Document Container",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/docxplus",
+        "github_release_url": "https://github.com/docxology/docxplus/releases/tag/v1.0.1",
+        "zenodo_record_url": "https://zenodo.org/records/21983948",
+        "release_tag": "v1.0.1",
+        "folder": "2026_DocxplusIntelligentDocument"
+      },
+      "provenance": {
+        "action_sha256": "b28947441922a9673a977fbea114fbf3096dcab20d59912a9e9fca93d7acc620",
+        "metadata_path": "papers/2026_DocxplusIntelligentDocument/metadata.json",
+        "metadata_sha256": "24d002cdb2355535183ba825ed35fd51e8933cd82dc8dfcf1df7978374fbb3a9",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "b28947441922a9673a977fbea114fbf3096dcab20d59912a9e9fca93d7acc620"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.22663906",
+      "folder": "2026_Skillarum",
+      "created": false,
+      "updated_files": [
+        "papers/2026_Skillarum/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.22663906",
+        "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/Skillarum",
+        "github_release_url": "https://github.com/docxology/Skillarum/releases/tag/v0.2.0",
+        "zenodo_record_url": "https://zenodo.org/records/22663906",
+        "release_tag": "v0.2.0",
+        "folder": "2026_Skillarum"
+      },
+      "provenance": {
+        "action_sha256": "644e44ba3f552f1bda7b855eeeea2dc78b096876f983ad8e97522101cbef46fa",
+        "metadata_path": "papers/2026_Skillarum/metadata.json",
+        "metadata_sha256": "25807a9bfc4e0d916976483cd9672ca3234f14e84ac569b00751e006efdff4b4",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "644e44ba3f552f1bda7b855eeeea2dc78b096876f983ad8e97522101cbef46fa"
+        }
+      }
+    },
+    {
+      "doi": "10.5281/zenodo.22712650",
+      "folder": "2026_FractiSkills",
+      "created": false,
+      "updated_files": [
+        "papers/2026_FractiSkills/metadata.json"
+      ],
+      "action": {
+        "action_type": "update_existing",
+        "doi": "10.5281/zenodo.22712650",
+        "title": "FractiSkills: One Portable Agent Skill per Page",
+        "confidence": "strong",
+        "reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "github_repo": "docxology/FractiSkills",
+        "github_release_url": "https://github.com/docxology/FractiSkills/releases/tag/v0.1.0",
+        "zenodo_record_url": "https://zenodo.org/records/22712650",
+        "release_tag": "v0.1.0",
+        "folder": "2026_FractiSkills"
+      },
+      "provenance": {
+        "action_sha256": "412b24cefca69a4164cb265223ed4722fcb2cd00203f6235d40125d3285a9e1f",
+        "metadata_path": "papers/2026_FractiSkills/metadata.json",
+        "metadata_sha256": "6797d1f0fd3985fcdca731418e5bcf081b15c7d6fb12629e733b2cc2c1773c31",
+        "applied_at": "2026-09-15T16:21:50Z",
+        "approval": {
+          "decision": "approved",
+          "approved_by": "sync_paired_publications --apply",
+          "approved_at": "2026-09-15T16:21:50Z",
+          "action_sha256": "412b24cefca69a4164cb265223ed4722fcb2cd00203f6235d40125d3285a9e1f"
+        }
+      }
+    }
+  ],
   "classification_cache": {
     "inputs": {
       "bibliography_sha256": "d1683d7044c0d41c95732b67cde346927d2503c2205e48affadfdc37493d7a8d",
