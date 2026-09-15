@@ -168,7 +168,7 @@ def test_cache_reuse_stale_falls_back_live(tmp_path, monkeypatch):
     marker: list = []
     _stub_live_fetchers(monkeypatch, marker)
     report = inv.build_report(cache_reports=True)
-    assert len(marker) == 19, "stale cache must trigger the full live fetch"
+    assert len(marker) == 20, "stale cache must trigger the full live fetch"
     assert "anchors" not in report
 
 
@@ -179,7 +179,7 @@ def test_cache_reuse_warning_fails_closed(tmp_path, monkeypatch):
     marker: list = []
     _stub_live_fetchers(monkeypatch, marker)
     report = inv.build_report(cache_reports=True)
-    assert len(marker) == 19, "warned cache must trigger the full live fetch"
+    assert len(marker) == 20, "warned cache must trigger the full live fetch"
     assert "anchors" not in report
 
 
@@ -199,7 +199,7 @@ def test_no_flag_never_reads_cache(tmp_path, monkeypatch):
     marker: list = []
     _stub_live_fetchers(monkeypatch, marker)
     report = inv.build_report()
-    assert len(marker) == 19, "default run live-fetches even with a clean same-day cache"
+    assert len(marker) == 20, "default run live-fetches even with a clean same-day cache"
     assert "anchors" not in report
 
 
