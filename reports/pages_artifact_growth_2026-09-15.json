@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-15T17:47:14Z",
-  "source_commit_at_generation": "10a84f5c16c826ea0215d804e234280dae0ad7fe",
+  "generated_at": "2026-09-15T18:02:10Z",
+  "source_commit_at_generation": "814699f7323b5861a863070b8dc97807abc9aa0f",
   "artifact_file_count": 4820,
-  "artifact_bytes": 865706367,
+  "artifact_bytes": 865706348,
   "artifact_mib": 825.6,
   "warning_bytes": 922746880,
   "safety_ceiling_bytes": 943718400,
