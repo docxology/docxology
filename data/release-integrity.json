@@ -26,17 +26,17 @@
     "data/current-counts.json": "9bb97712194654613e400e8b6d3f6927e694e392e98a729b942f1ee04a9241d1",
     "data/coverage-exceptions.json": "94c6a7453fcb46876e385b6c531fdd1be598e3356e889ac79a49a032f60c7be4",
     "data/repository-classification.json": "afc437eb955dae43093a1a93390cf1fe0fd4ecbefd2c293740584989ac401909",
-    "data/agent-index.json": "658ea7df9a33b8eecc1732350d54e23782050f03f608e552417e728cad293244",
+    "data/agent-index.json": "0dd74e45560b9b7d65088ae7172a2dc1eca33cb8d4ea4b59768103102262cba9",
     "data/generated-manifest.json": "42bdcfcfb45480847337aef6156ccce3fe13576949a88cc56a2ba3960ed078bb",
-    "data/pages-artifact-manifest.json": "f27b32efb88b80379fb5c6167b92a1d09f2a43fd46955e98efa1cdb747927a95"
+    "data/pages-artifact-manifest.json": "c45627c59ae5b663213a12dba2692619dcf43433b318bcd41e5c3210afff3fad"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
     "source_commit_at_generation": "3bcf7dc9745e1645cd856db805c2bf610347096b",
-    "artifact_file_count": 4821,
-    "artifact_bytes": 849208733,
+    "artifact_file_count": 4819,
+    "artifact_bytes": 849208505,
     "omitted_paper_image_count": 8944,
-    "omitted_superseded_report_count": 418
+    "omitted_superseded_report_count": 420
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
