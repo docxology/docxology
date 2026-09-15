@@ -15630,8 +15630,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "8bbb988c8c320ae0fca5e0b9e0eca85d3ca26205",
-  "source_tree_sha": "e6d1f8fe436c328de18cb21d1b2c8b1005e51549",
+  "source_commit": "78b0a3303ee70787e5fc61d6510daaa635385fe9",
+  "source_tree_sha": "5a875cbbca121fb70fd79d85a4c80de1cd0eb24f",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
