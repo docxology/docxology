@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "generated_at": "2026-09-14T21:44:25+00:00",
+  "generated_at": "2026-09-15T14:15:02+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -1088,11 +1088,11 @@
         "paired_publications": {
           "already_reviewed": 413,
           "create_new": 0,
-          "github_releases": 241,
+          "github_releases": 242,
           "needs_review": 0,
-          "pairs": 463,
-          "strong_pairs": 52,
-          "update_existing": 50,
+          "pairs": 464,
+          "strong_pairs": 53,
+          "update_existing": 51,
           "zenodo_records": 157
         },
         "paper_folder_docs": 198,
@@ -1122,12 +1122,12 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-09-14T21:44:25+00:00",
+      "generated_at": "2026-09-15T14:15:02+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
         "paired_publication_decisions": "data/paired-publication-decisions.json",
-        "paired_publications": "reports/paired_publications_2026-09-14.json",
+        "paired_publications": "reports/paired_publications_2026-09-15.json",
         "paper_folders": "papers/README.md",
         "public_source_snapshot": "reports/public_source_snapshot_2026-09-14.json",
         "software_catalog": "pages/SOFTWARE.md",
@@ -1182,7 +1182,7 @@
     "catalog": "b6a21334fc38b5fccf51f8fed65c7d7a60850bfecf1935c5fcdd8f423570e7cb",
     "reconciliation": "01437cddc9e13d2648cd8f7ca29d01f12ea349f7fb3d907de1f3f0d800f3e481",
     "generated_manifest": "6a7442705ea89ee85d1b93727120cdae8c729982b0765e156b0b632c6d113733",
-    "current_counts": "9bb97712194654613e400e8b6d3f6927e694e392e98a729b942f1ee04a9241d1"
+    "current_counts": "c64a7c2c9331254b22b1fce0e5d7bc9a350922a31e91468f4c23687171586db7"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -1256,11 +1256,11 @@
     "paired_publications": {
       "already_reviewed": 413,
       "create_new": 0,
-      "github_releases": 241,
+      "github_releases": 242,
       "needs_review": 0,
-      "pairs": 463,
-      "strong_pairs": 52,
-      "update_existing": 50,
+      "pairs": 464,
+      "strong_pairs": 53,
+      "update_existing": 51,
       "zenodo_records": 157
     },
     "paper_folder_docs": 198,
