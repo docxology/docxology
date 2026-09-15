@@ -1146,11 +1146,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 922746880,
-        "source_bytes": 848372854,
+        "source_bytes": 848357911,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4820,
-        "artifact_bytes": 849223655
+        "artifact_file_count": 4819,
+        "artifact_bytes": 849208530
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1170,7 +1170,7 @@
     "artworks": "074db5f8427fcd93afcd47f800b893063fb040b6ecc68f6ea320b4fccb4f6883",
     "videos": "d2155b79bc9f8288fd64a79b8c09c584b81e70a5bb0c431e93dee0133d263d22",
     "videos_index": "094f63112a5049a9a5ce41b6e5f5583e2946c002f1f3d07872d5957d6f43d80b",
-    "search": "c14255e2b8de1008d1598b1906eead26428633224924b959801e63f1ca3cacc7",
+    "search": "e1f8f51b9f06baca4d2eae36d72af6895a0dec6750036e09ba70e1062a516d66",
     "claims": "25c0f4915e2fcde8c360f3ccf976ec4024c692584b4f8dab2ba9ec01d0469399",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "94c6a7453fcb46876e385b6c531fdd1be598e3356e889ac79a49a032f60c7be4",
@@ -1179,7 +1179,7 @@
     "organizations": "116173c10c6e1e6d25496d62d79ec3e40570d17477ec6143b824cf63e148a307",
     "resume": "8a1468bab02b1dd6c2447571cdcc8786892db3a1be2780e34c5d6bd5a517ddbe",
     "work_enrichment": "27c1c0a0b63de4aed16f96a97424593ffdd629c6694697ba216b988919aec83e",
-    "catalog": "104bb9656be77edca031465201f1adbbd507b8098abc24cbfb5c79f08fc066bb",
+    "catalog": "b6a21334fc38b5fccf51f8fed65c7d7a60850bfecf1935c5fcdd8f423570e7cb",
     "reconciliation": "01437cddc9e13d2648cd8f7ca29d01f12ea349f7fb3d907de1f3f0d800f3e481",
     "generated_manifest": "99b5182a5b5119d53df222ced96a3c6b3284cb1cafdf6332f50867f6e0c6c778",
     "current_counts": "9bb97712194654613e400e8b6d3f6927e694e392e98a729b942f1ee04a9241d1"
