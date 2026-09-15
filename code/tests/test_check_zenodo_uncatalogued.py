@@ -6,6 +6,8 @@ import json
 import sys
 from pathlib import Path
 
+import pytest
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SRC_DIR = REPO_ROOT / "code" / "src"
 ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
@@ -13,9 +15,13 @@ sys.path.insert(0, str(SRC_DIR))
 sys.path.insert(0, str(ORCH_DIR))
 
 from publication_pairing import ZenodoRecord  # noqa: E402
+from report_paths import generated_timestamp  # noqa: E402
+from sync_paired_publications import zenodo_record_from_payload  # noqa: E402
 from check_zenodo_uncatalogued import (  # noqa: E402
     approved_version_specific_doi_exceptions,
+    build_report,
     check_report,
+    load_cached_records,
     non_canonical_doi_records,
     uncatalogued_records,
     version_doi,
@@ -183,3 +189,63 @@ def test_non_canonical_doi_records_empty_when_totally_uncatalogued():
     records = [_record("999", "10.5281/zenodo.999", "Brand New Paper")]
     catalogued: set[str] = set()
     assert non_canonical_doi_records(records, catalogued) == []
+
+
+def _pairing_report_payload(records: list[ZenodoRecord], *, generated_at: str | None = None, warnings: list[str] | None = None) -> dict:
+    return {
+        "source": "GitHub Releases API + Zenodo Records API",
+        "generated_at": generated_at or generated_timestamp(),
+        "warnings": warnings or [],
+        "zenodo_records": [record.to_dict() for record in records],
+    }
+
+
+def test_zenodo_record_payload_roundtrip_is_exact():
+    record = _record("21298895", "10.5281/zenodo.21298894", "Reproducible Literature Synthesis")
+    assert zenodo_record_from_payload(record.to_dict()) == record
+
+
+def test_load_cached_records_reuses_same_day_pairing_report(tmp_path: Path):
+    record = _record("999", "10.5281/zenodo.999", "Brand New Paper")
+    path = tmp_path / "paired_publications_2026-09-14.json"
+    path.write_text(json.dumps(_pairing_report_payload([record])), encoding="utf-8")
+    assert load_cached_records(path) == [record]
+
+
+def test_load_cached_records_refuses_non_same_day_report_unless_forced(tmp_path: Path):
+    record = _record("999", "10.5281/zenodo.999", "Brand New Paper")
+    path = tmp_path / "paired_publications_old.json"
+    payload = _pairing_report_payload([record], generated_at="2020-01-01T00:00:00Z")
+    path.write_text(json.dumps(payload), encoding="utf-8")
+    with pytest.raises(SystemExit, match="not same-day"):
+        load_cached_records(path)
+    assert load_cached_records(path, force=True) == [record]
+
+
+def test_load_cached_records_refuses_warned_scan_even_when_forced(tmp_path: Path):
+    record = _record("999", "10.5281/zenodo.999", "Brand New Paper")
+    path = tmp_path / "paired_publications_warned.json"
+    payload = _pairing_report_payload([record], warnings=["zenodo: query rate limited"])
+    path.write_text(json.dumps(payload), encoding="utf-8")
+    with pytest.raises(SystemExit, match="API warning"):
+        load_cached_records(path, force=True)
+
+
+def test_load_cached_records_refuses_non_pairing_report(tmp_path: Path):
+    path = tmp_path / "not_a_pairing_report.json"
+    path.write_text(json.dumps({"source": "something else"}), encoding="utf-8")
+    with pytest.raises(SystemExit, match="unexpected report source"):
+        load_cached_records(path)
+
+
+def test_build_report_uses_injected_records_without_network(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+    def _explode():
+        raise AssertionError("live fetch must not run when records are injected")
+
+    monkeypatch.setattr("check_zenodo_uncatalogued.fetch_zenodo_records", _explode)
+    record = _record("999", "10.5281/zenodo.999", "Brand New Paper")
+    report = build_report(tmp_path, records=[record], records_source="cached")
+    assert report["uncatalogued_count"] == 1
+    assert report["zenodo_records_fetched"] == 1
+    assert report["warnings"] == []
+    assert report["zenodo_records_source"] == {"mode": "cached", "source_report": None}

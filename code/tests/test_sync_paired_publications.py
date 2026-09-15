@@ -6,6 +6,7 @@ import json
 import sys
 from dataclasses import replace
 from pathlib import Path
+from unittest import mock
 
 import pytest
 
@@ -15,17 +16,31 @@ ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
 sys.path.insert(0, str(SRC_DIR))
 sys.path.insert(0, str(ORCH_DIR))
 
-from publication_pairing import GitHubRelease, PublicationPair, ZenodoRecord  # noqa: E402
+from generation_plan import LOCAL_GENERATION_STEPS  # noqa: E402
+from publication_pairing import (  # noqa: E402
+    GitHubRelease,
+    PublicationPair,
+    ZenodoRecord,
+    find_publication_pairs,
+    generated_timestamp,
+)
+import sync_paired_publications  # noqa: E402
 from sync_paired_publications import (  # noqa: E402
     attest_applied_publication,
     apply_publication_pair,
     build_sync_actions,
     check_report,
+    classification_cache_from_payload,
+    classification_cache_payload,
+    classification_inputs,
     display_report_path,
+    github_releases_from_payload,
+    load_cached_scan_payload,
     ordered_apply_pairs,
     refresh_bibliography_counts,
     reviewed_pair_decisions,
     write_report,
+    zenodo_records_from_payload,
 )
 
 
@@ -664,3 +679,246 @@ def test_refresh_bibliography_counts_updates_indexed_paper_folders():
     assert "**3 works**" in refreshed
     assert "**2** indexed paper folders" in refreshed
     assert "**1** indexed paper folders" not in refreshed
+
+
+def _variant_pair(pair: PublicationPair, *, doi: str, record_id: str, tag: str) -> PublicationPair:
+    release = replace(
+        pair.release,
+        tag=tag,
+        html_url=f"https://github.com/{pair.release.owner}/{pair.release.repo}/releases/tag/{tag}",
+    )
+    record = replace(pair.record, doi=doi, record_id=record_id)
+    return PublicationPair(
+        release=release,
+        record=record,
+        confidence="strong",
+        evidence=("github_release_mentions_doi",),
+    )
+
+
+def test_apply_mode_no_longer_runs_inline_regeneration():
+    """Apply writes curated source only; the former 13-generator chain is regenerate_all's job."""
+    assert not hasattr(sync_paired_publications, "run_regeneration")
+
+
+def test_former_apply_regeneration_chain_is_covered_by_the_generation_plan():
+    """Every generator apply used to run inline is a first-class LOCAL_GENERATION_STEPS entry."""
+    scripts = {step.script for step in LOCAL_GENERATION_STEPS}
+    former_inline_chain = (
+        "sync_publications_html.py",
+        "export_bibliography.py",
+        "sync_software_html.py",
+        "export_agent_data.py",
+        "build_domain_pages.py",
+        "build_work_pages.py",
+        "build_paper_pages.py",
+        "audit_assets.py",
+        "build_catalog.py",
+        "build_search_index.py",
+        "generate_feed.py",
+        "build_sitemap.py",
+        "build_generated_manifest.py",
+    )
+    missing = [script for script in former_inline_chain if script not in scripts]
+    assert missing == []
+
+
+def test_classification_cache_reproduces_full_scan_classification(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    reviewed = _pair()
+    _write_review_decision(tmp_path, reviewed)
+    fresh = _variant_pair(reviewed, doi="10.5281/zenodo.20990002", record_id="20990002", tag="v2.0.0")
+    pairs = [reviewed, fresh]
+    full = build_sync_actions(pairs, repo_root=tmp_path)
+    entries: list = []
+    build_sync_actions(pairs, repo_root=tmp_path, already_reviewed_entries=entries)
+    cache = classification_cache_from_payload(
+        {"classification_cache": classification_cache_payload(entries, repo_root=tmp_path)}
+    )
+    assert cache is not None
+    cached = build_sync_actions(pairs, repo_root=tmp_path, cache=cache)
+    assert [action.to_dict() for action in cached] == [action.to_dict() for action in full]
+    assert [action.action_type for action in cached] == ["already_reviewed", "create_new"]
+
+
+def test_classification_cache_hit_skips_decision_log_and_title_scans(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    _write_review_decision(tmp_path, pair)
+    entries: list = []
+    build_sync_actions([pair], repo_root=tmp_path, already_reviewed_entries=entries)
+    cache = classification_cache_from_payload(
+        {"classification_cache": classification_cache_payload(entries, repo_root=tmp_path)}
+    )
+
+    def _explode(root):  # pragma: no cover - must never run on a full cache hit
+        raise AssertionError("cached inputs must not be re-derived on a cache hit")
+
+    with (
+        mock.patch.object(sync_paired_publications, "reviewed_pair_decisions", _explode),
+        mock.patch.object(sync_paired_publications, "existing_release_title_map", _explode),
+        mock.patch.object(sync_paired_publications, "existing_repo_title_map", _explode),
+    ):
+        actions = build_sync_actions([pair], repo_root=tmp_path, cache=cache)
+    assert actions[0].action_type == "already_reviewed"
+    assert actions[0].folder == "2026_NewComputationalProject"
+
+
+def test_classification_cache_falls_back_to_full_scan_when_decisions_drift(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    _write_review_decision(tmp_path, pair)
+    entries: list = []
+    build_sync_actions([pair], repo_root=tmp_path, already_reviewed_entries=entries)
+    cache_block = classification_cache_payload(entries, repo_root=tmp_path)
+    # The durable decision is withdrawn after the report was written.
+    (tmp_path / "data" / "paired-publication-decisions.json").write_text('{"groups": []}\n', encoding="utf-8")
+    cache = classification_cache_from_payload({"classification_cache": cache_block})
+    actions = build_sync_actions([pair], repo_root=tmp_path, cache=cache)
+    assert [action.to_dict() for action in actions] == [
+        action.to_dict() for action in build_sync_actions([pair], repo_root=tmp_path)
+    ]
+    assert actions[0].action_type == "create_new"
+
+
+def test_classification_cache_falls_back_to_full_scan_when_bibliography_drifts(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    _write_review_decision(tmp_path, pair)
+    entries: list = []
+    build_sync_actions([pair], repo_root=tmp_path, already_reviewed_entries=entries)
+    cache_block = classification_cache_payload(entries, repo_root=tmp_path)
+    bibliography = tmp_path / "pages" / "BIBLIOGRAPHY.md"
+    bibliography.write_text(bibliography.read_text(encoding="utf-8") + "drift\n", encoding="utf-8")
+    cache = classification_cache_from_payload({"classification_cache": cache_block})
+    calls = {"count": 0}
+    real = sync_paired_publications.reviewed_pair_decisions
+
+    def counting(root):
+        calls["count"] += 1
+        return real(root)
+
+    with mock.patch.object(sync_paired_publications, "reviewed_pair_decisions", counting):
+        actions = build_sync_actions([pair], repo_root=tmp_path, cache=cache)
+    assert calls["count"] >= 1  # drift forced the full classification, not the cached one
+    assert [action.to_dict() for action in actions] == [
+        action.to_dict() for action in build_sync_actions([pair], repo_root=tmp_path)
+    ]
+
+
+def test_check_report_fails_on_malformed_classification_cache(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    payload = _minimal_report_payload()
+    payload["classification_cache"] = {"inputs": {"bibliography_sha256": "short"}, "already_reviewed": "nope"}
+    _write_report(tmp_path, payload)
+    with pytest.raises(SystemExit, match="malformed classification_cache"):
+        check_report(repo_root=tmp_path)
+
+
+def test_check_report_warns_on_classification_cache_input_drift(tmp_path: Path, capsys: pytest.CaptureFixture[str]):
+    _write_minimal_repo(tmp_path)
+    payload = _minimal_report_payload()
+    payload["classification_cache"] = classification_cache_payload([], repo_root=tmp_path)
+    bibliography = tmp_path / "pages" / "BIBLIOGRAPHY.md"
+    bibliography.write_text(bibliography.read_text(encoding="utf-8") + "drift\n", encoding="utf-8")
+    _write_report(tmp_path, payload)
+    check_report(repo_root=tmp_path)  # a dated report stays valid; drift is surfaced, not fatal
+    assert "classification_cache inputs have drifted" in capsys.readouterr().err
+
+
+def test_check_report_accepts_current_classification_cache(tmp_path: Path, capsys: pytest.CaptureFixture[str]):
+    _write_minimal_repo(tmp_path)
+    payload = _minimal_report_payload()
+    payload["classification_cache"] = classification_cache_payload([], repo_root=tmp_path)
+    _write_report(tmp_path, payload)
+    check_report(repo_root=tmp_path)
+    assert "drifted" not in capsys.readouterr().err
+
+
+def test_report_payload_roundtrips_releases_records_and_cache(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    entries: list = []
+    actions = build_sync_actions([pair], repo_root=tmp_path, already_reviewed_entries=entries)
+    report = tmp_path / "reports" / "paired_publications_2026-06-07.json"
+    write_report(
+        report,
+        owners=["docxology"],
+        releases=[pair.release],
+        records=[pair.record],
+        pairs=[pair],
+        actions=actions,
+        warnings=[],
+        classification_cache=classification_cache_payload(entries, repo_root=tmp_path),
+    )
+    payload = json.loads(report.read_text(encoding="utf-8"))
+    assert github_releases_from_payload(payload) == [pair.release]
+    assert zenodo_records_from_payload(payload) == [pair.record]
+    cache = classification_cache_from_payload(payload)
+    assert cache is not None
+    assert cache.inputs == classification_inputs(tmp_path)
+
+
+def test_load_cached_scan_payload_matches_fresh_classification(tmp_path: Path):
+    _write_minimal_repo(tmp_path)
+    pair = _pair()
+    report = tmp_path / "reports" / "paired_publications_2026-06-07.json"
+    write_report(
+        report,
+        owners=["docxology"],
+        releases=[pair.release],
+        records=[pair.record],
+        pairs=[pair],
+        actions=[],
+        warnings=[],
+    )
+    releases, records = load_cached_scan_payload(report)
+    assert (releases, records) == ([pair.release], [pair.record])
+    rebuilt = build_sync_actions(find_publication_pairs(releases, records), repo_root=tmp_path)
+    assert [action.to_dict() for action in rebuilt] == [
+        action.to_dict() for action in build_sync_actions([pair], repo_root=tmp_path)
+    ]
+
+
+def _pairing_payload(releases: list[GitHubRelease], records: list[ZenodoRecord], *, generated_at: str | None = None, warnings: list[str] | None = None) -> dict:
+    return {
+        "source": "GitHub Releases API + Zenodo Records API",
+        "generated_at": generated_at or generated_timestamp(),
+        "warnings": warnings or [],
+        "github_releases": [release.to_dict() for release in releases],
+        "zenodo_records": [record.to_dict() for record in records],
+    }
+
+
+def test_load_cached_scan_payload_refuses_stale_report_unless_forced(tmp_path: Path):
+    pair = _pair()
+    path = tmp_path / "paired_publications_stale.json"
+    path.write_text(
+        json.dumps(_pairing_payload([pair.release], [pair.record], generated_at="2020-01-01T00:00:00Z")),
+        encoding="utf-8",
+    )
+    with pytest.raises(SystemExit, match="not same-day"):
+        load_cached_scan_payload(path)
+    releases, records = load_cached_scan_payload(path, force=True)
+    assert (releases, records) == ([pair.release], [pair.record])
+
+
+def test_load_cached_scan_payload_refuses_warned_scan_even_when_forced(tmp_path: Path):
+    pair = _pair()
+    path = tmp_path / "paired_publications_warned.json"
+    path.write_text(
+        json.dumps(_pairing_payload([pair.release], [pair.record], warnings=["github: rate limited"])),
+        encoding="utf-8",
+    )
+    with pytest.raises(SystemExit, match="API warning"):
+        load_cached_scan_payload(path, force=True)
+
+
+def test_load_cached_scan_payload_refuses_payload_without_records(tmp_path: Path):
+    path = tmp_path / "paired_publications_legacy.json"
+    path.write_text(
+        json.dumps({"source": "GitHub Releases API + Zenodo Records API", "generated_at": generated_timestamp(), "warnings": []}),
+        encoding="utf-8",
+    )
+    with pytest.raises(SystemExit, match="github_releases"):
+        load_cached_scan_payload(path)

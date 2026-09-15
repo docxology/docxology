@@ -2,6 +2,43 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-09-15
+
+- **Fast intake path — parallel refresh, report reuse, fingerprint-gated
+  regeneration:** three composable speedups with no gate loosened. The
+  21-check snapshot in `refresh_public_sources.py` fans out through
+  `ThreadPoolExecutor(8)` with order-identical output (the serial fan-out is
+  now concurrent; 429 Retry-After and safe-fetch isolation unchanged;
+  equivalence test-pinned). `refresh_public_source_inventory.py --cache-reports`
+  reuses a same-day report's payloads (freshness keyed on `generated_at`, any
+  `!ok` section fails closed to a live fetch, `--force` lifts it with
+  warnings accepted, reuse adds an `anchors` provenance block).
+  `sync_paired_publications.py --cache-reports` reuses the same-day report's
+  GitHub releases and Zenodo records while `already_reviewed` classification
+  becomes fingerprint-incremental — short-circuited when the
+  (bibliography, decisions) hashes match the prior report's persisted
+  `classification_cache`, full scan re-run on drift with a stderr note (drift
+  surfaced, never absorbed); `create_new`/`update_existing`/`needs_review`
+  always re-derive and cached-but-warned scans fail validation.
+  `check_zenodo_uncatalogued.py --records-from <paired_report.json>` reuses
+  the pairing scan's Zenodo records — one fetch per intake — failing closed
+  on non-pairing sources, warned scans, or stale reports unless `--force`.
+  Apply mode no longer regenerates inline: the hardcoded 13-generator
+  `run_regeneration` chain is deleted and `regenerate_all.py` is the single
+  write-mode driver, now input-gated — steps with declared inputs
+  (paper-documents, work-pages, video-pages, asset-audit-first/final,
+  accessibility-first/final) skip when their input fingerprints are unchanged
+  (state in the gitignored `reports/regeneration-state.json`, fingerprint
+  recorded only after a successful run, unmatched patterns and empty inputs
+  never skip; `--force` restores always-run). Measured: cold chain 48 steps in
+  1m52s; warm no-op rerun skips 7/7 gated steps, runs 41 in 1m35s,
+  byte-identical tree; `validate_repo.py --check` remains the ungated
+  authority and the full settle battery (~6 min) and CI (~4 min) are
+  unchanged. `docs/operations/publication-sync.md` documents the fast intake
+  path (when it applies, the exact command sequence, what never gets skipped)
+  with a signpost from `AGENT_START.md` and a regeneration-skip note in
+  `docs/operations/settle.md`.
+
 ## 2026-09-12
 
 - **Unified settle driver (`code/orchestrators/settle.py`) + change classifier
