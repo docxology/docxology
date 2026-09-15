@@ -246,33 +246,95 @@ def public_page(url: str, label: str) -> dict[str, Any]:
         return {"label": label, "url": url, "ok": False, "error": f"{type(exc).__name__}: {exc}", "items": []}
 
 
-def build_report() -> dict[str, Any]:
+
+
+def load_cached_sections(today: str, *, force: bool = False) -> tuple[list[dict[str, Any]], dict[str, Any] | None]:
+    """Reuse a same-day inventory report's section payloads instead of re-fetching.
+
+    Reuse requires a same-day ``public_source_inventory_*.json`` (keyed on its
+    ``generated_at`` date) whose sections carry no warnings (every section ok).
+    When the optional same-day ``public_source_snapshot_*.json`` exists, its
+    ``generated_at`` must also be same-day. ANY violation falls back to a live
+    fetch; with ``force``, a stale or warned cache is reused as-is (an explicit
+    "accept the cache anyway" escape), and a missing/unreadable cache simply
+    falls back to a live fetch.
+    """
+    inventory_path = latest_report("public_source_inventory_*.json", required=False)
+    if inventory_path is None:
+        return [], None
+    try:
+        payload = json.loads(inventory_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return [], None
+    generated_at = payload.get("generated_at", "")
+    sections = payload.get("sections")
+    if not isinstance(sections, list) or not generated_at:
+        return [], None
+    same_day = generated_at[:10] == today
+    warnings = [section.get("label") for section in sections if isinstance(section, dict) and not section.get("ok")]
+    if not same_day or warnings:
+        if force:
+            return sections, {
+                "mode": "forced-reuse",
+                "source_report": str(inventory_path.relative_to(REPO_ROOT)),
+                "source_generated_at": generated_at,
+                "warnings_accepted": warnings,
+            }
+        return [], None
+    anchor = {
+        "mode": "cache-reuse",
+        "source_report": str(inventory_path.relative_to(REPO_ROOT)),
+        "source_generated_at": generated_at,
+        "cached_section_labels": [s["label"] for s in sections if isinstance(s, dict)],
+        "live_section_labels": [],
+    }
+    snapshot_path = latest_report("public_source_snapshot_*.json", required=False)
+    if snapshot_path is not None:
+        try:
+            snapshot = json.loads(snapshot_path.read_text(encoding="utf-8"))
+            snapshot_at = snapshot.get("generated_at", "")
+            if snapshot_at[:10] != today:
+                return [], None
+            anchor["source_snapshot"] = str(snapshot_path.relative_to(REPO_ROOT))
+            anchor["source_snapshot_generated_at"] = snapshot_at
+        except (OSError, json.JSONDecodeError):
+            return [], None
+    return sections, anchor
+
+
+def build_report(*, cache_reports: bool = False, force: bool = False) -> dict[str, Any]:
     today = dt.datetime.now(dt.timezone.utc).date().isoformat()
-    sections = [
-        orcid_works(),
-        crossref_orcid(),
-        pubmed_exact_author(),
-        europe_pmc_exact_author(),
-        zenodo_records("Zenodo exact-name creator records", 'metadata.creators.person_or_org.name:"Friedman, Daniel Ari"'),
-        zenodo_records(
-            "Zenodo ORCID-linked records",
-            f'metadata.creators.person_or_org.identifiers.identifier:"{ORCID}"',
-        ),
-        wikidata_person(),
-        dblp_author_profile(),
-        researchgate_profile(),
-        sciprofiles_profile(),
-        philpeople_profile(),
-        semantic_scholar_author_search(),
-        openalex_author_advisory(),
-        github_profile("docxology"),
-        github_profile("ActiveInferenceInstitute"),
-        public_page("https://activeinference.org/", "AII public landing page"),
-        public_page("https://activeinference.institute/structure/officers/", "AII officers page"),
-        public_page("https://activeinference.institute/structure/board-of-directors/", "AII board page"),
-        public_page("https://activeinference.institute/structure/scientific-advisory-board/", "AII SAB page"),
-    ]
-    return {
+    cached_sections, anchor = (
+        load_cached_sections(today, force=force) if cache_reports else ([], None)
+    )
+    if cached_sections:
+        sections = cached_sections
+    else:
+        sections = [
+            orcid_works(),
+            crossref_orcid(),
+            pubmed_exact_author(),
+            europe_pmc_exact_author(),
+            zenodo_records("Zenodo exact-name creator records", 'metadata.creators.person_or_org.name:"Friedman, Daniel Ari"'),
+            zenodo_records(
+                "Zenodo ORCID-linked records",
+                f'metadata.creators.person_or_org.identifiers.identifier:"{ORCID}"',
+            ),
+            wikidata_person(),
+            dblp_author_profile(),
+            researchgate_profile(),
+            sciprofiles_profile(),
+            philpeople_profile(),
+            semantic_scholar_author_search(),
+            openalex_author_advisory(),
+            github_profile("docxology"),
+            github_profile("ActiveInferenceInstitute"),
+            public_page("https://activeinference.org/", "AII public landing page"),
+            public_page("https://activeinference.institute/structure/officers/", "AII officers page"),
+            public_page("https://activeinference.institute/structure/board-of-directors/", "AII board page"),
+            public_page("https://activeinference.institute/structure/scientific-advisory-board/", "AII SAB page"),
+        ]
+    report = {
         "generated_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "source_commit": source_commit(),
         "date": today,
@@ -280,12 +342,16 @@ def build_report() -> dict[str, Any]:
         "sections": sections,
         "counts": {section["label"]: len(section.get("items", [])) for section in sections},
     }
-
+    if anchor:
+        report["anchors"] = anchor
+    return report
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", help="Optional output path. Defaults to reports/public_source_inventory_DATE.json")
     parser.add_argument("--check", action="store_true", help="Validate cached inventory report")
+    parser.add_argument("--cache-reports", action="store_true", help="Reuse a same-day cached inventory report instead of refetching")
+    parser.add_argument("--force", action="store_true", help="With --cache-reports: reuse the cached report even if stale or warned")
     args = parser.parse_args()
     if args.output:
         out = Path(args.output)
@@ -303,8 +369,7 @@ def main() -> None:
             raise SystemExit("Public-source inventory report has no sections")
         print(f"checked public-source inventory report ({len(payload['sections'])} sections)")
         return
-    payload = build_report()
-    out.parent.mkdir(parents=True, exist_ok=True)
+    payload = build_report(cache_reports=args.cache_reports, force=args.force)
     out.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     failures = [section["label"] for section in payload["sections"] if not section.get("ok")]
     print(f"wrote {out.relative_to(REPO_ROOT)} with {len(payload['sections'])} sections")
