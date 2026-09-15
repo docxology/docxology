@@ -37,7 +37,11 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   unchanged. `docs/operations/publication-sync.md` documents the fast intake
   path (when it applies, the exact command sequence, what never gets skipped)
   with a signpost from `AGENT_START.md` and a regeneration-skip note in
-  `docs/operations/settle.md`.
+  `docs/operations/settle.md`. Wall-clock measured same-day on this machine:
+  snapshot fan-out 11.4s serial → 1.8s parallel (6.4×, byte-identical
+  modulo `generated_at`); pairing scan 122.1s full → 0.60s with
+  `--cache-reports` (~200×; 464 pairs, actions and counts byte-equal, zero
+  warnings, fingerprint hashes stable across the two runs).
 
 ## 2026-09-12
 

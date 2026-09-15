@@ -175,6 +175,17 @@ uv run python3 code/orchestrators/check_zenodo_uncatalogued.py --records-from re
 uv run python3 code/orchestrators/regenerate_all.py --validate
 ```
 
+Measured same-day on this machine (2026-09-15, empty-cache runs on live
+network): the 21-check snapshot fan-out 11.4s serial-equivalent → 1.8s
+parallel (6.4×, byte-identical modulo `generated_at`); the pairing scan
+122.1s full → 0.60s with `--cache-reports` (~200×; 464 pairs — actions and
+counts byte-equal, zero warnings, fingerprint hashes stable across the two
+runs). Regeneration contributes the smallest share: cold chain 48 steps in
+~1m52s; warm no-op rerun skips 7/7 gated steps and runs 41 in ~1m35s
+(byte-identical tree) — the network-side caches are the headline, not the
+skip savings. The full settle battery (~6 min) and CI (~4 min) are unchanged
+and never skippable.
+
 What each cache buys:
 
 - `--cache-reports` on `refresh_public_source_inventory.py` reuses the
