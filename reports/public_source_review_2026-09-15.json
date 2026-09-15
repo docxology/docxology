@@ -27,9 +27,9 @@
       "source_commit": null
     },
     "paired_publications": {
-      "generated_at": "2026-09-15T14:00:35Z",
+      "generated_at": "2026-09-15T16:21:50Z",
       "path": "reports/paired_publications_2026-09-15.json",
-      "sha256": "d44ac411b220d69261f67da22fa89c2ff5ef882f3dedb08475b2fc90507db683",
+      "sha256": "3760124dbfa0882eda48d45eb0116d639e0c59f569d741afa6df97f7cafc3616",
       "source_commit": null
     },
     "previous_public_source_snapshot": {
@@ -3757,6 +3757,46 @@
     },
     {
       "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "The applied-action receipt metadata hash no longer matches the on-disk target.",
+        "applied_receipt_valid": false,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.19695259",
+        "folder": "2026_CognitiveCaseDiagrams",
+        "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0",
+        "github_repo": "docxology/cognitive_case_diagrams",
+        "historical_supersession": {
+          "original_action_sha256": "99fbee1cda9bd41172e25afdd1eeabb06c3e7b279d513a5500389b970f82183b",
+          "original_metadata_sha256": "2fe8a2e98b1c106727460fba2461ff17721ecdcf4c00fa653a61114a2dcebacc",
+          "state": "historical-superseded",
+          "superseded_by": {
+            "action_sha256": "7926aca5bb6b254896efc822b66260320610876fe503a8822b5ba60a292b0e83",
+            "doi": "10.5281/zenodo.19695259",
+            "folder": "2026_CognitiveCaseDiagrams",
+            "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.6.0",
+            "github_repo": "docxology/cognitive_case_diagrams",
+            "metadata_sha256": "471fb980b7d5df9064718aa08786358f10bf81f7289860b5a10419fa4ed7d2b0",
+            "release_tag": "v2.6.0",
+            "zenodo_record_url": "https://zenodo.org/records/19695259"
+          }
+        },
+        "historical_supersession_valid": true,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v2.4.0",
+        "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+        "zenodo_record_url": "https://zenodo.org/records/19695259"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.19695259:https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0",
+      "reason": "The strong existing-work pairing update has an exact approved historical receipt and was superseded by the current verified release https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.6.0; no further review is required.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
         "action_type": "already_reviewed",
         "applied_receipt_reason": "",
         "applied_receipt_valid": false,
@@ -3783,6 +3823,32 @@
     },
     {
       "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.19695259",
+        "folder": "2026_CognitiveCaseDiagrams",
+        "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.6.0",
+        "github_repo": "docxology/cognitive_case_diagrams",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v2.6.0",
+        "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+        "zenodo_record_url": "https://zenodo.org/records/19695259"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.19695259:https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.6.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
         "action_type": "already_reviewed",
         "applied_receipt_reason": "",
         "applied_receipt_valid": false,
@@ -3801,6 +3867,58 @@
       "category": "zenodo_candidate",
       "id": "paired-publication:10.5281/zenodo.19699233:https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.0.0",
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.19699233",
+        "folder": "2026_FEPLean",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0",
+        "github_repo": "ActiveInferenceInstitute/fep_lean",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.1.0",
+        "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+        "zenodo_record_url": "https://zenodo.org/records/19699233"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.19699233:https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20396328",
+        "folder": "2026_ENTO",
+        "github_release_url": "https://github.com/docxology/entofile/releases/tag/v0.4",
+        "github_repo": "docxology/entofile",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.4",
+        "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
+        "zenodo_record_url": "https://zenodo.org/records/20396328"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20396328:https://github.com/docxology/entofile/releases/tag/v0.4",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
       "sources": [
         "data/paired-publication-decisions.json",
         "reports/paired_publications_2026-09-15.json"
@@ -3887,6 +4005,32 @@
     },
     {
       "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20417016",
+        "folder": "2026_BoundedAutoResearchTiny",
+        "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2",
+        "github_repo": "docxology/template_autoresearch_project",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.3.2",
+        "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
+        "zenodo_record_url": "https://zenodo.org/records/20417016"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20417016:https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
         "action_type": "already_reviewed",
         "applied_receipt_reason": "",
         "applied_receipt_valid": false,
@@ -3957,6 +4101,32 @@
       "category": "zenodo_candidate",
       "id": "paired-publication:10.5281/zenodo.20417021:https://github.com/docxology/template_active_inference/releases/tag/v0.3.1",
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20417021",
+        "folder": "2026_ActiveInferenceMulti",
+        "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.3.2",
+        "github_repo": "docxology/template_active_inference",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.3.2",
+        "title": "Active Inference Multi-Track Exemplar",
+        "zenodo_record_url": "https://zenodo.org/records/20417021"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20417021:https://github.com/docxology/template_active_inference/releases/tag/v0.3.2",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
       "sources": [
         "data/paired-publication-decisions.json",
         "reports/paired_publications_2026-09-15.json"
@@ -4061,6 +4231,32 @@
       "category": "zenodo_candidate",
       "id": "paired-publication:10.5281/zenodo.20417104:https://github.com/docxology/template_prose_project/releases/tag/v0.4.1",
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20417104",
+        "folder": "2026_EditorialQualityAt",
+        "github_release_url": "https://github.com/docxology/template_prose_project/releases/tag/v0.4.2",
+        "github_repo": "docxology/template_prose_project",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.4.2",
+        "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
+        "zenodo_record_url": "https://zenodo.org/records/20417104"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20417104:https://github.com/docxology/template_prose_project/releases/tag/v0.4.2",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
       "sources": [
         "data/paired-publication-decisions.json",
         "reports/paired_publications_2026-09-15.json"
@@ -4251,6 +4447,58 @@
     },
     {
       "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20417136",
+        "folder": "2026_ConvergenceAnalysisGradient",
+        "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.5.2",
+        "github_repo": "docxology/template_code_project",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v2.5.2",
+        "title": "Convergence Analysis of Gradient Descent Optimization",
+        "zenodo_record_url": "https://zenodo.org/records/20417136"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20417136:https://github.com/docxology/template_code_project/releases/tag/v2.5.2",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20418904",
+        "folder": "2026_PolicyEntanglementActive",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0",
+        "github_repo": "ActiveInferenceInstitute/policy_entanglement",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary",
+        "zenodo_record_url": "https://zenodo.org/records/20418904"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20418904:https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
         "action_type": "already_reviewed",
         "applied_receipt_reason": "",
         "applied_receipt_valid": false,
@@ -4407,6 +4655,84 @@
     },
     {
       "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20419007",
+        "folder": "2026_TemplateApproachReproducible",
+        "github_release_url": "https://github.com/docxology/template_template/releases/tag/v1.0.9",
+        "github_repo": "docxology/template_template",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.9",
+        "title": "A template/ approach to Reproducible Generative Research",
+        "zenodo_record_url": "https://zenodo.org/records/20419007"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20419007:https://github.com/docxology/template_template/releases/tag/v1.0.9",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20420556",
+        "folder": "2026_BeeStack",
+        "github_release_url": "https://github.com/docxology/BeeStack/releases/tag/v1.0.0",
+        "github_repo": "docxology/BeeStack",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
+        "zenodo_record_url": "https://zenodo.org/records/20420556"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20420556:https://github.com/docxology/BeeStack/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20450880",
+        "folder": "2026_WhenDoBugs",
+        "github_release_url": "https://github.com/docxology/cohereants/releases/tag/v1.0.0",
+        "github_repo": "docxology/cohereants",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "When do bugs see (infra)red?",
+        "zenodo_record_url": "https://zenodo.org/records/20450880"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20450880:https://github.com/docxology/cohereants/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
         "action_type": "already_reviewed",
         "applied_receipt_reason": "",
         "applied_receipt_valid": false,
@@ -4433,6 +4759,124 @@
     },
     {
       "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20453879",
+        "folder": "2026_SelfImprovementAgent",
+        "github_release_url": "https://github.com/docxology/template_sia/releases/tag/v0.1.2",
+        "github_repo": "docxology/template_sia",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.1.2",
+        "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
+        "zenodo_record_url": "https://zenodo.org/records/20453879"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20453879:https://github.com/docxology/template_sia/releases/tag/v0.1.2",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20482025",
+        "folder": "2026_MusicNeverStopped",
+        "github_release_url": "https://github.com/docxology/grateful_data/releases/tag/v1.0.0",
+        "github_repo": "docxology/grateful_data",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
+        "zenodo_record_url": "https://zenodo.org/records/20482025"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20482025:https://github.com/docxology/grateful_data/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20498699",
+        "folder": "2026_RecoveringLLMPersona",
+        "github_release_url": "https://github.com/docxology/ntqr_llm/releases/tag/v1.0.0",
+        "github_repo": "docxology/ntqr_llm",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
+        "zenodo_record_url": "https://zenodo.org/records/20498699"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20498699:https://github.com/docxology/ntqr_llm/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "The applied-action receipt metadata hash no longer matches the on-disk target.",
+        "applied_receipt_valid": false,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20533125",
+        "folder": "2026_TemplateTextbook",
+        "github_release_url": "https://github.com/docxology/template_textbook/releases/tag/v0.1.0",
+        "github_repo": "docxology/template_textbook",
+        "historical_supersession": {
+          "original_action_sha256": "fa6f3e8fa46ba8bd464cf1bde77e78685308826cd31109cfaa252364f66915f3",
+          "original_metadata_sha256": "2a66df5fcf0d30e3df8beb8d8edf9269a7d2e4578f077885210065eaa7886d73",
+          "state": "historical-superseded",
+          "superseded_by": {
+            "action_sha256": "450b7dc83d05b4a08857f2b406243f703fbc861d68d240dcf2557c314b509464",
+            "doi": "10.5281/zenodo.20533125",
+            "folder": "2026_TemplateTextbook",
+            "github_release_url": "https://github.com/docxology/template_textbook/releases/tag/v0.1.2",
+            "github_repo": "docxology/template_textbook",
+            "metadata_sha256": "00640bd586cd574d76e79ae8432ee4d1978fe9f05a2b72095ac599d7b5412a71",
+            "release_tag": "v0.1.2",
+            "zenodo_record_url": "https://zenodo.org/records/20533125"
+          }
+        },
+        "historical_supersession_valid": true,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.1.0",
+        "title": "The Template Textbook",
+        "zenodo_record_url": "https://zenodo.org/records/20533125"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20533125:https://github.com/docxology/template_textbook/releases/tag/v0.1.0",
+      "reason": "The strong existing-work pairing update has an exact approved historical receipt and was superseded by the current verified release https://github.com/docxology/template_textbook/releases/tag/v0.1.2; no further review is required.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
         "action_type": "already_reviewed",
         "applied_receipt_reason": "",
         "applied_receipt_valid": false,
@@ -4451,6 +4895,32 @@
       "category": "zenodo_candidate",
       "id": "paired-publication:10.5281/zenodo.20533125:https://github.com/docxology/template_textbook/releases/tag/v0.1.1",
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20533125",
+        "folder": "2026_TemplateTextbook",
+        "github_release_url": "https://github.com/docxology/template_textbook/releases/tag/v0.1.2",
+        "github_repo": "docxology/template_textbook",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.1.2",
+        "title": "The Template Textbook",
+        "zenodo_record_url": "https://zenodo.org/records/20533125"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20533125:https://github.com/docxology/template_textbook/releases/tag/v0.1.2",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
       "sources": [
         "data/paired-publication-decisions.json",
         "reports/paired_publications_2026-09-15.json"
@@ -4511,6 +4981,32 @@
     },
     {
       "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20533669",
+        "folder": "2026_DeterministicTestbedSelf",
+        "github_release_url": "https://github.com/docxology/template_autoscientists/releases/tag/v1.0.2",
+        "github_repo": "docxology/template_autoscientists",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.2",
+        "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
+        "zenodo_record_url": "https://zenodo.org/records/20533669"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20533669:https://github.com/docxology/template_autoscientists/releases/tag/v1.0.2",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
         "action_type": "already_reviewed",
         "applied_receipt_reason": "",
         "applied_receipt_valid": false,
@@ -4563,6 +5059,32 @@
     },
     {
       "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20533675",
+        "folder": "2026_Triplicate",
+        "github_release_url": "https://github.com/docxology/template_newspaper/releases/tag/v1.0.2",
+        "github_repo": "docxology/template_newspaper",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.2",
+        "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
+        "zenodo_record_url": "https://zenodo.org/records/20533675"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20533675:https://github.com/docxology/template_newspaper/releases/tag/v1.0.2",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
         "action_type": "already_reviewed",
         "applied_receipt_reason": "",
         "applied_receipt_valid": false,
@@ -4581,6 +5103,256 @@
       "category": "zenodo_candidate",
       "id": "paired-publication:10.5281/zenodo.20614908:https://github.com/docxology/itrace/releases/tag/v0.4.1",
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20693216",
+        "folder": "2026_DemoCreate",
+        "github_release_url": "https://github.com/docxology/democreate/releases/tag/v0.6.2",
+        "github_repo": "docxology/democreate",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.6.2",
+        "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
+        "zenodo_record_url": "https://zenodo.org/records/20693216"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20693216:https://github.com/docxology/democreate/releases/tag/v0.6.2",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20705350",
+        "folder": "2026_COGANT",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0",
+        "github_repo": "ActiveInferenceInstitute/COGANT",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.6.0",
+        "title": "COGANT: Deterministic Codebase-to-GNN Translation",
+        "zenodo_record_url": "https://zenodo.org/records/20705350"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20705350:https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20732274",
+        "folder": "2026_AGEINT",
+        "github_release_url": "https://github.com/docxology/AGEINT/releases/tag/v0.1.0",
+        "github_repo": "docxology/AGEINT",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.1.0",
+        "title": "AGEINT: Agentic Intelligence",
+        "zenodo_record_url": "https://zenodo.org/records/20732274"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20732274:https://github.com/docxology/AGEINT/releases/tag/v0.1.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "The applied-action receipt metadata hash no longer matches the on-disk target.",
+        "applied_receipt_valid": false,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20747834",
+        "folder": "2026_PolicyDistillationAs",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.0",
+        "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+        "historical_supersession": {
+          "original_action_sha256": "b729d834adbefad21c27d6a37c855081394f82f900468bfacd79b00fc524b713",
+          "original_metadata_sha256": "3c51936d40bf7d7f5ba93c5033a6f21c677d7984684987b7aedbf017978f6ab2",
+          "state": "historical-superseded",
+          "superseded_by": {
+            "action_sha256": "50afb874f9618fc9cfa1882516ffd6dd840f285aa1ec96812d24d2204aff88a2",
+            "doi": "10.5281/zenodo.20747834",
+            "folder": "2026_PolicyDistillationAs",
+            "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2",
+            "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+            "metadata_sha256": "fa83c6a32d4d6ae4462c749c3e41edd31ac6e527365c0f297e8a96e669a52ac8",
+            "release_tag": "v1.0.2",
+            "zenodo_record_url": "https://zenodo.org/records/20747834"
+          }
+        },
+        "historical_supersession_valid": true,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+        "zenodo_record_url": "https://zenodo.org/records/20747834"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20747834:https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update has an exact approved historical receipt and was superseded by the current verified release https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2; no further review is required.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "The applied-action receipt metadata hash no longer matches the on-disk target.",
+        "applied_receipt_valid": false,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20747834",
+        "folder": "2026_PolicyDistillationAs",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.1",
+        "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+        "historical_supersession": {
+          "original_action_sha256": "1262140c6fa51b28abed24d228d056029bb2568aec74c56c49502b82390e9a0f",
+          "original_metadata_sha256": "e127aee535451cdf093855bba8edd5cfee2923e1315b7e079cd6b228e32e7dfb",
+          "state": "historical-superseded",
+          "superseded_by": {
+            "action_sha256": "50afb874f9618fc9cfa1882516ffd6dd840f285aa1ec96812d24d2204aff88a2",
+            "doi": "10.5281/zenodo.20747834",
+            "folder": "2026_PolicyDistillationAs",
+            "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2",
+            "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+            "metadata_sha256": "fa83c6a32d4d6ae4462c749c3e41edd31ac6e527365c0f297e8a96e669a52ac8",
+            "release_tag": "v1.0.2",
+            "zenodo_record_url": "https://zenodo.org/records/20747834"
+          }
+        },
+        "historical_supersession_valid": true,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.1",
+        "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+        "zenodo_record_url": "https://zenodo.org/records/20747834"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20747834:https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.1",
+      "reason": "The strong existing-work pairing update has an exact approved historical receipt and was superseded by the current verified release https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2; no further review is required.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20747834",
+        "folder": "2026_PolicyDistillationAs",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2",
+        "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.2",
+        "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
+        "zenodo_record_url": "https://zenodo.org/records/20747834"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20747834:https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "The applied-action receipt metadata hash no longer matches the on-disk target.",
+        "applied_receipt_valid": false,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20786638",
+        "folder": "2026_TemplateMadlib",
+        "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.0",
+        "github_repo": "docxology/template_madlib",
+        "historical_supersession": {
+          "original_action_sha256": "284d0f5628f7304a5f3b9f95638bfaba2ed1265c07447201bdd7def1c41220bf",
+          "original_metadata_sha256": "178eb2693ecaeb34769d7721b6facf01d9c750dc0f142b0abad28cfbdad2bc37",
+          "state": "historical-superseded",
+          "superseded_by": {
+            "action_sha256": "ea2fca763ec9c721ddb1529fc036315eca908b00d0bcbfd3c74b1e9d3d5594db",
+            "doi": "10.5281/zenodo.20786638",
+            "folder": "2026_TemplateMadlib",
+            "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.1",
+            "github_repo": "docxology/template_madlib",
+            "metadata_sha256": "517a3b9f5fd0f5ac65c4b17dacb550c80e4e94d7c1bd2535a9c4fc2e3029786a",
+            "release_tag": "v0.1.1",
+            "zenodo_record_url": "https://zenodo.org/records/20786638"
+          }
+        },
+        "historical_supersession_valid": true,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.1.0",
+        "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+        "zenodo_record_url": "https://zenodo.org/records/20786638"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20786638:https://github.com/docxology/template_madlib/releases/tag/v0.1.0",
+      "reason": "The strong existing-work pairing update has an exact approved historical receipt and was superseded by the current verified release https://github.com/docxology/template_madlib/releases/tag/v0.1.1; no further review is required.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20786638",
+        "folder": "2026_TemplateMadlib",
+        "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.1",
+        "github_repo": "docxology/template_madlib",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.1.1",
+        "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
+        "zenodo_record_url": "https://zenodo.org/records/20786638"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20786638:https://github.com/docxology/template_madlib/releases/tag/v0.1.1",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
       "sources": [
         "data/paired-publication-decisions.json",
         "reports/paired_publications_2026-09-15.json"
@@ -4797,6 +5569,32 @@
     },
     {
       "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20834846",
+        "folder": "2026_RealizingEmptiness",
+        "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v1.0.0",
+        "github_repo": "docxology/realizing_emptiness",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
+        "zenodo_record_url": "https://zenodo.org/records/20834846"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20834846:https://github.com/docxology/realizing_emptiness/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
         "action_type": "already_reviewed",
         "applied_receipt_reason": "",
         "applied_receipt_valid": false,
@@ -4815,6 +5613,464 @@
       "category": "zenodo_candidate",
       "id": "paired-publication:10.5281/zenodo.20931955:https://github.com/docxology/template_gold_refinement/releases/tag/v0.1.0",
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20931964",
+        "folder": "2026_LivingMetaAnalysis",
+        "github_release_url": "https://github.com/docxology/template_literature_meta_analysis/releases/tag/v0.1.0",
+        "github_repo": "docxology/template_literature_meta_analysis",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.1.0",
+        "title": "A Living Meta-Analysis of the Modafinil Literature",
+        "zenodo_record_url": "https://zenodo.org/records/20931964"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20931964:https://github.com/docxology/template_literature_meta_analysis/releases/tag/v0.1.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "The applied-action receipt metadata hash no longer matches the on-disk target.",
+        "applied_receipt_valid": false,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20976824",
+        "folder": "2026_AlphaCOGANT",
+        "github_release_url": "https://github.com/docxology/alphacogant/releases/tag/v1.0.0",
+        "github_repo": "docxology/alphacogant",
+        "historical_supersession": {
+          "original_action_sha256": "4e8fb8bd6eda5e82d2aa12e741b3361b3ab2cf3eeca4bb57a99fd22ddc79bf2b",
+          "original_metadata_sha256": "0fc983e3a1de25b1b0c7b5fe270b97e4a7ff72100e3d75cba63c1425a3c0f258",
+          "state": "historical-superseded",
+          "superseded_by": {
+            "action_sha256": "c8c21da86279d091b4f0d3905d60b0b59c090381e07f4e25c03ccc2f68399926",
+            "doi": "10.5281/zenodo.20976824",
+            "folder": "2026_AlphaCOGANT",
+            "github_release_url": "https://github.com/docxology/alphacogant/releases/tag/v1.0.1",
+            "github_repo": "docxology/alphacogant",
+            "metadata_sha256": "c31efca6dc216c47e3ce3ea1e23ca6b95026b65ac604c7f57aec02c53d0f934e",
+            "release_tag": "v1.0.1",
+            "zenodo_record_url": "https://zenodo.org/records/20976824"
+          }
+        },
+        "historical_supersession_valid": true,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+        "zenodo_record_url": "https://zenodo.org/records/20976824"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20976824:https://github.com/docxology/alphacogant/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update has an exact approved historical receipt and was superseded by the current verified release https://github.com/docxology/alphacogant/releases/tag/v1.0.1; no further review is required.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.20976824",
+        "folder": "2026_AlphaCOGANT",
+        "github_release_url": "https://github.com/docxology/alphacogant/releases/tag/v1.0.1",
+        "github_repo": "docxology/alphacogant",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.1",
+        "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
+        "zenodo_record_url": "https://zenodo.org/records/20976824"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.20976824:https://github.com/docxology/alphacogant/releases/tag/v1.0.1",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21047573",
+        "folder": "2026_MappingWilliamBlake",
+        "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
+        "github_repo": "docxology/blake",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.1.0",
+        "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
+        "zenodo_record_url": "https://zenodo.org/records/21047573"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21047573:https://github.com/docxology/blake/releases/tag/v0.1.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21083779",
+        "folder": "2026_SortitionUpstreamNTQR",
+        "github_release_url": "https://github.com/docxology/ntqr_allotment/releases/tag/v0.1.0",
+        "github_repo": "docxology/ntqr_allotment",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.1.0",
+        "title": "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation",
+        "zenodo_record_url": "https://zenodo.org/records/21083779"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21083779:https://github.com/docxology/ntqr_allotment/releases/tag/v0.1.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21086292",
+        "folder": "2026_ExploratoryDataAnalysis",
+        "github_release_url": "https://github.com/docxology/template_eda_notebook/releases/tag/v1.0.0",
+        "github_repo": "docxology/template_eda_notebook",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
+        "zenodo_record_url": "https://zenodo.org/records/21086292"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21086292:https://github.com/docxology/template_eda_notebook/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21086548",
+        "folder": "2026_DomainLanguageSpecifying",
+        "github_release_url": "https://github.com/docxology/template_methods_paper/releases/tag/v1.0.0",
+        "github_repo": "docxology/template_methods_paper",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "A Domain Language for Specifying Controlled Methods",
+        "zenodo_record_url": "https://zenodo.org/records/21086548"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21086548:https://github.com/docxology/template_methods_paper/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21137276",
+        "folder": "2026_EntomologicalLaw",
+        "github_release_url": "https://github.com/docxology/EntoLaw/releases/tag/v1.0.0",
+        "github_repo": "docxology/EntoLaw",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
+        "zenodo_record_url": "https://zenodo.org/records/21137276"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21137276:https://github.com/docxology/EntoLaw/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21176000",
+        "folder": "2026_ShapeBetween",
+        "github_release_url": "https://github.com/docxology/template_storybook/releases/tag/v0.1.0",
+        "github_repo": "docxology/template_storybook",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.1.0",
+        "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
+        "zenodo_record_url": "https://zenodo.org/records/21176000"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21176000:https://github.com/docxology/template_storybook/releases/tag/v0.1.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "The applied-action receipt metadata hash no longer matches the on-disk target.",
+        "applied_receipt_valid": false,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21227869",
+        "folder": "2026_AutopoieticProjectGeneration",
+        "github_release_url": "https://github.com/docxology/template/releases/tag/v1.0.1",
+        "github_repo": "docxology/template",
+        "historical_supersession": {
+          "original_action_sha256": "8807da4104cbbfd89eef2735a60ea8c3911874ba2a959bc40768c9d03483fca1",
+          "original_metadata_sha256": "bc59cdf0cf110cd8d2e5bccd722fd6aa3f6fe5d7f908adf5599fdee41ff4bf3c",
+          "state": "historical-superseded",
+          "superseded_by": {
+            "action_sha256": "455f2afd9f8f0a0c9a5e7fb14eb918aa7a476974d8726faa82a8f20657dcff8a",
+            "doi": "10.5281/zenodo.21227869",
+            "folder": "2026_AutopoieticProjectGeneration",
+            "github_release_url": "https://github.com/docxology/template_autopoiesis/releases/tag/v1.0.1",
+            "github_repo": "docxology/template_autopoiesis",
+            "metadata_sha256": "4e2d9d552b8929ac8d42ebc14b630ce7319278716363d8f0f81b05aa56a2d61c",
+            "release_tag": "v1.0.1",
+            "zenodo_record_url": "https://zenodo.org/records/21227869"
+          }
+        },
+        "historical_supersession_valid": true,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.1",
+        "title": "Autopoietic Project Generation",
+        "zenodo_record_url": "https://zenodo.org/records/21227869"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21227869:https://github.com/docxology/template/releases/tag/v1.0.1",
+      "reason": "The strong existing-work pairing update has an exact approved historical receipt and was superseded by the current verified release https://github.com/docxology/template_autopoiesis/releases/tag/v1.0.1; no further review is required.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21227869",
+        "folder": "2026_AutopoieticProjectGeneration",
+        "github_release_url": "https://github.com/docxology/template_autopoiesis/releases/tag/v1.0.1",
+        "github_repo": "docxology/template_autopoiesis",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.1",
+        "title": "Autopoietic Project Generation",
+        "zenodo_record_url": "https://zenodo.org/records/21227869"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21227869:https://github.com/docxology/template_autopoiesis/releases/tag/v1.0.1",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "The applied-action receipt metadata hash no longer matches the on-disk target.",
+        "applied_receipt_valid": false,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21281509",
+        "folder": "2026_TemplatePitchDeck",
+        "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0",
+        "github_repo": "docxology/template-pitch-deck",
+        "historical_supersession": {
+          "original_action_sha256": "5412210e029bb466a2fc30bdd3b37324b680ae7f7a99e9f6e23e44f85966eae7",
+          "original_metadata_sha256": "03a2f47278d87f0f516e4d13d77509cb0b78434a3287d379d6799c8944b5c294",
+          "state": "historical-superseded",
+          "superseded_by": {
+            "action_sha256": "e6b199d07474fe5bfe3b18d7719e8c49ad4ac9c34143223a74baa254ffc4f026",
+            "doi": "10.5281/zenodo.21281509",
+            "folder": "2026_TemplatePitchDeck",
+            "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.2",
+            "github_repo": "docxology/template-pitch-deck",
+            "metadata_sha256": "858d4d5afca86a0da254a1418275439f72946f69cf856d0bb97565110d1bac87",
+            "release_tag": "v1.0.2",
+            "zenodo_record_url": "https://zenodo.org/records/21281509"
+          }
+        },
+        "historical_supersession_valid": true,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+        "zenodo_record_url": "https://zenodo.org/records/21281509"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21281509:https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update has an exact approved historical receipt and was superseded by the current verified release https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.2; no further review is required.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21281509",
+        "folder": "2026_TemplatePitchDeck",
+        "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.2",
+        "github_repo": "docxology/template-pitch-deck",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.2",
+        "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
+        "zenodo_record_url": "https://zenodo.org/records/21281509"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21281509:https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.2",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21316510",
+        "folder": "2026_PriorCognitiveArt",
+        "github_release_url": "https://github.com/docxology/prior_cognitive_art/releases/tag/v0.1.0",
+        "github_repo": "docxology/prior_cognitive_art",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.1.0",
+        "title": "Prior Cognitive Art",
+        "zenodo_record_url": "https://zenodo.org/records/21316510"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21316510:https://github.com/docxology/prior_cognitive_art/releases/tag/v0.1.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21330636",
+        "folder": "2026_ActiveFractalRabbit",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/tag/v0.2.0",
+        "github_repo": "ActiveInferenceInstitute/active_fractal_rabbit",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.2.0",
+        "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
+        "zenodo_record_url": "https://zenodo.org/records/21330636"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21330636:https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/tag/v0.2.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21419693",
+        "folder": "2026_DuckRabbit",
+        "github_release_url": "https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0",
+        "github_repo": "docxology/DuckRabbit",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.5.0",
+        "title": "DuckRabbit: Typed Multimodal Illusion Generator",
+        "zenodo_record_url": "https://zenodo.org/records/21419693"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21419693:https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
       "sources": [
         "data/paired-publication-decisions.json",
         "reports/paired_publications_2026-09-15.json"
@@ -5049,6 +6305,32 @@
       "category": "zenodo_candidate",
       "id": "paired-publication:10.5281/zenodo.21513316:https://github.com/docxology/CogSecSkills/releases/tag/v1.7.0",
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21695160",
+        "folder": "2026_ActiveInferencePower",
+        "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/tag/v1.0.0",
+        "github_repo": "ActiveInferenceInstitute/active_inference_power",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
+        "zenodo_record_url": "https://zenodo.org/records/21695160"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21695160:https://github.com/ActiveInferenceInstitute/active_inference_power/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
       "sources": [
         "data/paired-publication-decisions.json",
         "reports/paired_publications_2026-09-15.json"
@@ -5473,6 +6755,32 @@
     },
     {
       "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21750800",
+        "folder": "2026_Codomyrmex",
+        "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.3.0-paper",
+        "github_repo": "docxology/codomyrmex",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.3.0-paper",
+        "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
+        "zenodo_record_url": "https://zenodo.org/records/21750800"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21750800:https://github.com/docxology/codomyrmex/releases/tag/v1.3.0-paper",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
         "action_type": "already_reviewed",
         "applied_receipt_reason": "",
         "applied_receipt_valid": false,
@@ -5491,6 +6799,58 @@
       "category": "zenodo_candidate",
       "id": "paired-publication:10.5281/zenodo.21763244:https://github.com/docxology/thalia/releases/tag/v0.1.0",
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21815704",
+        "folder": "2026_DigiPPPiP",
+        "github_release_url": "https://github.com/docxology/Digi-PPPiP/releases/tag/v1.0.0",
+        "github_repo": "docxology/Digi-PPPiP",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
+        "zenodo_record_url": "https://zenodo.org/records/21815704"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21815704:https://github.com/docxology/Digi-PPPiP/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21843592",
+        "folder": "2026_PROJECTBONDSpecial",
+        "github_release_url": "https://github.com/docxology/bond/releases/tag/v1.0.0",
+        "github_repo": "docxology/bond",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.0",
+        "title": "PROJECT BOND — The Special-Agent Operations Compendium",
+        "zenodo_record_url": "https://zenodo.org/records/21843592"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21843592:https://github.com/docxology/bond/releases/tag/v1.0.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
       "sources": [
         "data/paired-publication-decisions.json",
         "reports/paired_publications_2026-09-15.json"
@@ -5621,6 +6981,58 @@
       "category": "zenodo_candidate",
       "id": "paired-publication:10.5281/zenodo.21983948:https://github.com/docxology/docxplus/releases/tag/v1.0.0",
       "reason": "A durable pairing decision was found; retain its recorded outcome and do not create a duplicate curated row.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.21983948",
+        "folder": "2026_DocxplusIntelligentDocument",
+        "github_release_url": "https://github.com/docxology/docxplus/releases/tag/v1.0.1",
+        "github_repo": "docxology/docxplus",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v1.0.1",
+        "title": "docxplus — the Intelligent Document Container",
+        "zenodo_record_url": "https://zenodo.org/records/21983948"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.21983948:https://github.com/docxology/docxplus/releases/tag/v1.0.1",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.22663906",
+        "folder": "2026_Skillarum",
+        "github_release_url": "https://github.com/docxology/Skillarum/releases/tag/v0.2.0",
+        "github_repo": "docxology/Skillarum",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.2.0",
+        "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+        "zenodo_record_url": "https://zenodo.org/records/22663906"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.22663906:https://github.com/docxology/Skillarum/releases/tag/v0.2.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
       "sources": [
         "data/paired-publication-decisions.json",
         "reports/paired_publications_2026-09-15.json"
@@ -5941,6 +7353,32 @@
     },
     {
       "candidate": {
+        "action_type": "update_existing",
+        "applied_receipt_reason": "",
+        "applied_receipt_valid": true,
+        "confidence": "strong",
+        "doi": "10.5281/zenodo.22712650",
+        "folder": "2026_FractiSkills",
+        "github_release_url": "https://github.com/docxology/FractiSkills/releases/tag/v0.1.0",
+        "github_repo": "docxology/FractiSkills",
+        "historical_supersession": {},
+        "historical_supersession_valid": false,
+        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
+        "release_tag": "v0.1.0",
+        "title": "FractiSkills: One Portable Agent Skill per Page",
+        "zenodo_record_url": "https://zenodo.org/records/22712650"
+      },
+      "category": "zenodo_candidate",
+      "id": "paired-publication:10.5281/zenodo.22712650:https://github.com/docxology/FractiSkills/releases/tag/v0.1.0",
+      "reason": "The strong existing-work pairing update was applied with an exact action, apply approval, and current metadata provenance receipt.",
+      "sources": [
+        "data/paired-publication-decisions.json",
+        "reports/paired_publications_2026-09-15.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
         "action_type": "already_reviewed",
         "applied_receipt_reason": "",
         "applied_receipt_valid": false,
@@ -6146,1332 +7584,6 @@
         "reports/paired_publications_2026-09-15.json"
       ],
       "status": "applied"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.19695259",
-        "folder": "2026_CognitiveCaseDiagrams",
-        "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0",
-        "github_repo": "docxology/cognitive_case_diagrams",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v2.4.0",
-        "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
-        "zenodo_record_url": "https://zenodo.org/records/19695259"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.19695259:https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.19695259",
-        "folder": "2026_CognitiveCaseDiagrams",
-        "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.6.0",
-        "github_repo": "docxology/cognitive_case_diagrams",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v2.6.0",
-        "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
-        "zenodo_record_url": "https://zenodo.org/records/19695259"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.19695259:https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.6.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.19699233",
-        "folder": "2026_FEPLean",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0",
-        "github_repo": "ActiveInferenceInstitute/fep_lean",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.1.0",
-        "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
-        "zenodo_record_url": "https://zenodo.org/records/19699233"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.19699233:https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20396328",
-        "folder": "2026_ENTO",
-        "github_release_url": "https://github.com/docxology/entofile/releases/tag/v0.4",
-        "github_repo": "docxology/entofile",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.4",
-        "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
-        "zenodo_record_url": "https://zenodo.org/records/20396328"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20396328:https://github.com/docxology/entofile/releases/tag/v0.4",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20417016",
-        "folder": "2026_BoundedAutoResearchTiny",
-        "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2",
-        "github_repo": "docxology/template_autoresearch_project",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.3.2",
-        "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
-        "zenodo_record_url": "https://zenodo.org/records/20417016"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20417016:https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20417021",
-        "folder": "2026_ActiveInferenceMulti",
-        "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.3.2",
-        "github_repo": "docxology/template_active_inference",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.3.2",
-        "title": "Active Inference Multi-Track Exemplar",
-        "zenodo_record_url": "https://zenodo.org/records/20417021"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20417021:https://github.com/docxology/template_active_inference/releases/tag/v0.3.2",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20417104",
-        "folder": "2026_EditorialQualityAt",
-        "github_release_url": "https://github.com/docxology/template_prose_project/releases/tag/v0.4.2",
-        "github_repo": "docxology/template_prose_project",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.4.2",
-        "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
-        "zenodo_record_url": "https://zenodo.org/records/20417104"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20417104:https://github.com/docxology/template_prose_project/releases/tag/v0.4.2",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20417136",
-        "folder": "2026_ConvergenceAnalysisGradient",
-        "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.5.2",
-        "github_repo": "docxology/template_code_project",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v2.5.2",
-        "title": "Convergence Analysis of Gradient Descent Optimization",
-        "zenodo_record_url": "https://zenodo.org/records/20417136"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20417136:https://github.com/docxology/template_code_project/releases/tag/v2.5.2",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20418904",
-        "folder": "2026_PolicyEntanglementActive",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0",
-        "github_repo": "ActiveInferenceInstitute/policy_entanglement",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary",
-        "zenodo_record_url": "https://zenodo.org/records/20418904"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20418904:https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20419007",
-        "folder": "2026_TemplateApproachReproducible",
-        "github_release_url": "https://github.com/docxology/template_template/releases/tag/v1.0.9",
-        "github_repo": "docxology/template_template",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.9",
-        "title": "A template/ approach to Reproducible Generative Research",
-        "zenodo_record_url": "https://zenodo.org/records/20419007"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20419007:https://github.com/docxology/template_template/releases/tag/v1.0.9",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20420556",
-        "folder": "2026_BeeStack",
-        "github_release_url": "https://github.com/docxology/BeeStack/releases/tag/v1.0.0",
-        "github_repo": "docxology/BeeStack",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
-        "zenodo_record_url": "https://zenodo.org/records/20420556"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20420556:https://github.com/docxology/BeeStack/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20450880",
-        "folder": "2026_WhenDoBugs",
-        "github_release_url": "https://github.com/docxology/cohereants/releases/tag/v1.0.0",
-        "github_repo": "docxology/cohereants",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "When do bugs see (infra)red?",
-        "zenodo_record_url": "https://zenodo.org/records/20450880"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20450880:https://github.com/docxology/cohereants/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20453879",
-        "folder": "2026_SelfImprovementAgent",
-        "github_release_url": "https://github.com/docxology/template_sia/releases/tag/v0.1.2",
-        "github_repo": "docxology/template_sia",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.1.2",
-        "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
-        "zenodo_record_url": "https://zenodo.org/records/20453879"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20453879:https://github.com/docxology/template_sia/releases/tag/v0.1.2",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20482025",
-        "folder": "2026_MusicNeverStopped",
-        "github_release_url": "https://github.com/docxology/grateful_data/releases/tag/v1.0.0",
-        "github_repo": "docxology/grateful_data",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
-        "zenodo_record_url": "https://zenodo.org/records/20482025"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20482025:https://github.com/docxology/grateful_data/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20498699",
-        "folder": "2026_RecoveringLLMPersona",
-        "github_release_url": "https://github.com/docxology/ntqr_llm/releases/tag/v1.0.0",
-        "github_repo": "docxology/ntqr_llm",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
-        "zenodo_record_url": "https://zenodo.org/records/20498699"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20498699:https://github.com/docxology/ntqr_llm/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20533125",
-        "folder": "2026_TemplateTextbook",
-        "github_release_url": "https://github.com/docxology/template_textbook/releases/tag/v0.1.0",
-        "github_repo": "docxology/template_textbook",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.1.0",
-        "title": "The Template Textbook",
-        "zenodo_record_url": "https://zenodo.org/records/20533125"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20533125:https://github.com/docxology/template_textbook/releases/tag/v0.1.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20533125",
-        "folder": "2026_TemplateTextbook",
-        "github_release_url": "https://github.com/docxology/template_textbook/releases/tag/v0.1.2",
-        "github_repo": "docxology/template_textbook",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.1.2",
-        "title": "The Template Textbook",
-        "zenodo_record_url": "https://zenodo.org/records/20533125"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20533125:https://github.com/docxology/template_textbook/releases/tag/v0.1.2",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20533669",
-        "folder": "2026_DeterministicTestbedSelf",
-        "github_release_url": "https://github.com/docxology/template_autoscientists/releases/tag/v1.0.2",
-        "github_repo": "docxology/template_autoscientists",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.2",
-        "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
-        "zenodo_record_url": "https://zenodo.org/records/20533669"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20533669:https://github.com/docxology/template_autoscientists/releases/tag/v1.0.2",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20533675",
-        "folder": "2026_Triplicate",
-        "github_release_url": "https://github.com/docxology/template_newspaper/releases/tag/v1.0.2",
-        "github_repo": "docxology/template_newspaper",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.2",
-        "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
-        "zenodo_record_url": "https://zenodo.org/records/20533675"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20533675:https://github.com/docxology/template_newspaper/releases/tag/v1.0.2",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20693216",
-        "folder": "2026_DemoCreate",
-        "github_release_url": "https://github.com/docxology/democreate/releases/tag/v0.6.2",
-        "github_repo": "docxology/democreate",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.6.2",
-        "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
-        "zenodo_record_url": "https://zenodo.org/records/20693216"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20693216:https://github.com/docxology/democreate/releases/tag/v0.6.2",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20705350",
-        "folder": "2026_COGANT",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0",
-        "github_repo": "ActiveInferenceInstitute/COGANT",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.6.0",
-        "title": "COGANT: Deterministic Codebase-to-GNN Translation",
-        "zenodo_record_url": "https://zenodo.org/records/20705350"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20705350:https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20732274",
-        "folder": "2026_AGEINT",
-        "github_release_url": "https://github.com/docxology/AGEINT/releases/tag/v0.1.0",
-        "github_repo": "docxology/AGEINT",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.1.0",
-        "title": "AGEINT: Agentic Intelligence",
-        "zenodo_record_url": "https://zenodo.org/records/20732274"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20732274:https://github.com/docxology/AGEINT/releases/tag/v0.1.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20747834",
-        "folder": "2026_PolicyDistillationAs",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.0",
-        "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
-        "zenodo_record_url": "https://zenodo.org/records/20747834"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20747834:https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20747834",
-        "folder": "2026_PolicyDistillationAs",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.1",
-        "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.1",
-        "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
-        "zenodo_record_url": "https://zenodo.org/records/20747834"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20747834:https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.1",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20747834",
-        "folder": "2026_PolicyDistillationAs",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2",
-        "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.2",
-        "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
-        "zenodo_record_url": "https://zenodo.org/records/20747834"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20747834:https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20786638",
-        "folder": "2026_TemplateMadlib",
-        "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.0",
-        "github_repo": "docxology/template_madlib",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.1.0",
-        "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
-        "zenodo_record_url": "https://zenodo.org/records/20786638"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20786638:https://github.com/docxology/template_madlib/releases/tag/v0.1.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20786638",
-        "folder": "2026_TemplateMadlib",
-        "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.1",
-        "github_repo": "docxology/template_madlib",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.1.1",
-        "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
-        "zenodo_record_url": "https://zenodo.org/records/20786638"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20786638:https://github.com/docxology/template_madlib/releases/tag/v0.1.1",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20834846",
-        "folder": "2026_RealizingEmptiness",
-        "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v1.0.0",
-        "github_repo": "docxology/realizing_emptiness",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
-        "zenodo_record_url": "https://zenodo.org/records/20834846"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20834846:https://github.com/docxology/realizing_emptiness/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20931964",
-        "folder": "2026_LivingMetaAnalysis",
-        "github_release_url": "https://github.com/docxology/template_literature_meta_analysis/releases/tag/v0.1.0",
-        "github_repo": "docxology/template_literature_meta_analysis",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.1.0",
-        "title": "A Living Meta-Analysis of the Modafinil Literature",
-        "zenodo_record_url": "https://zenodo.org/records/20931964"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20931964:https://github.com/docxology/template_literature_meta_analysis/releases/tag/v0.1.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20976824",
-        "folder": "2026_AlphaCOGANT",
-        "github_release_url": "https://github.com/docxology/alphacogant/releases/tag/v1.0.0",
-        "github_repo": "docxology/alphacogant",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
-        "zenodo_record_url": "https://zenodo.org/records/20976824"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20976824:https://github.com/docxology/alphacogant/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.20976824",
-        "folder": "2026_AlphaCOGANT",
-        "github_release_url": "https://github.com/docxology/alphacogant/releases/tag/v1.0.1",
-        "github_repo": "docxology/alphacogant",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.1",
-        "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
-        "zenodo_record_url": "https://zenodo.org/records/20976824"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.20976824:https://github.com/docxology/alphacogant/releases/tag/v1.0.1",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21047573",
-        "folder": "2026_MappingWilliamBlake",
-        "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
-        "github_repo": "docxology/blake",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.1.0",
-        "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
-        "zenodo_record_url": "https://zenodo.org/records/21047573"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21047573:https://github.com/docxology/blake/releases/tag/v0.1.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21083779",
-        "folder": "2026_SortitionUpstreamNTQR",
-        "github_release_url": "https://github.com/docxology/ntqr_allotment/releases/tag/v0.1.0",
-        "github_repo": "docxology/ntqr_allotment",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.1.0",
-        "title": "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation",
-        "zenodo_record_url": "https://zenodo.org/records/21083779"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21083779:https://github.com/docxology/ntqr_allotment/releases/tag/v0.1.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21086292",
-        "folder": "2026_ExploratoryDataAnalysis",
-        "github_release_url": "https://github.com/docxology/template_eda_notebook/releases/tag/v1.0.0",
-        "github_repo": "docxology/template_eda_notebook",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
-        "zenodo_record_url": "https://zenodo.org/records/21086292"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21086292:https://github.com/docxology/template_eda_notebook/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21086548",
-        "folder": "2026_DomainLanguageSpecifying",
-        "github_release_url": "https://github.com/docxology/template_methods_paper/releases/tag/v1.0.0",
-        "github_repo": "docxology/template_methods_paper",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "A Domain Language for Specifying Controlled Methods",
-        "zenodo_record_url": "https://zenodo.org/records/21086548"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21086548:https://github.com/docxology/template_methods_paper/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21137276",
-        "folder": "2026_EntomologicalLaw",
-        "github_release_url": "https://github.com/docxology/EntoLaw/releases/tag/v1.0.0",
-        "github_repo": "docxology/EntoLaw",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
-        "zenodo_record_url": "https://zenodo.org/records/21137276"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21137276:https://github.com/docxology/EntoLaw/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21176000",
-        "folder": "2026_ShapeBetween",
-        "github_release_url": "https://github.com/docxology/template_storybook/releases/tag/v0.1.0",
-        "github_repo": "docxology/template_storybook",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.1.0",
-        "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
-        "zenodo_record_url": "https://zenodo.org/records/21176000"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21176000:https://github.com/docxology/template_storybook/releases/tag/v0.1.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21227869",
-        "folder": "2026_AutopoieticProjectGeneration",
-        "github_release_url": "https://github.com/docxology/template/releases/tag/v1.0.1",
-        "github_repo": "docxology/template",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.1",
-        "title": "Autopoietic Project Generation",
-        "zenodo_record_url": "https://zenodo.org/records/21227869"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21227869:https://github.com/docxology/template/releases/tag/v1.0.1",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21227869",
-        "folder": "2026_AutopoieticProjectGeneration",
-        "github_release_url": "https://github.com/docxology/template_autopoiesis/releases/tag/v1.0.1",
-        "github_repo": "docxology/template_autopoiesis",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.1",
-        "title": "Autopoietic Project Generation",
-        "zenodo_record_url": "https://zenodo.org/records/21227869"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21227869:https://github.com/docxology/template_autopoiesis/releases/tag/v1.0.1",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21281509",
-        "folder": "2026_TemplatePitchDeck",
-        "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0",
-        "github_repo": "docxology/template-pitch-deck",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
-        "zenodo_record_url": "https://zenodo.org/records/21281509"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21281509:https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21281509",
-        "folder": "2026_TemplatePitchDeck",
-        "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.2",
-        "github_repo": "docxology/template-pitch-deck",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.2",
-        "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
-        "zenodo_record_url": "https://zenodo.org/records/21281509"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21281509:https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.2",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21316510",
-        "folder": "2026_PriorCognitiveArt",
-        "github_release_url": "https://github.com/docxology/prior_cognitive_art/releases/tag/v0.1.0",
-        "github_repo": "docxology/prior_cognitive_art",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.1.0",
-        "title": "Prior Cognitive Art",
-        "zenodo_record_url": "https://zenodo.org/records/21316510"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21316510:https://github.com/docxology/prior_cognitive_art/releases/tag/v0.1.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21330636",
-        "folder": "2026_ActiveFractalRabbit",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/tag/v0.2.0",
-        "github_repo": "ActiveInferenceInstitute/active_fractal_rabbit",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.2.0",
-        "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
-        "zenodo_record_url": "https://zenodo.org/records/21330636"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21330636:https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/tag/v0.2.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21419693",
-        "folder": "2026_DuckRabbit",
-        "github_release_url": "https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0",
-        "github_repo": "docxology/DuckRabbit",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.5.0",
-        "title": "DuckRabbit: Typed Multimodal Illusion Generator",
-        "zenodo_record_url": "https://zenodo.org/records/21419693"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21419693:https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21695160",
-        "folder": "2026_ActiveInferencePower",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/tag/v1.0.0",
-        "github_repo": "ActiveInferenceInstitute/active_inference_power",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
-        "zenodo_record_url": "https://zenodo.org/records/21695160"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21695160:https://github.com/ActiveInferenceInstitute/active_inference_power/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21750800",
-        "folder": "2026_Codomyrmex",
-        "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.3.0-paper",
-        "github_repo": "docxology/codomyrmex",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.3.0-paper",
-        "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
-        "zenodo_record_url": "https://zenodo.org/records/21750800"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21750800:https://github.com/docxology/codomyrmex/releases/tag/v1.3.0-paper",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21815704",
-        "folder": "2026_DigiPPPiP",
-        "github_release_url": "https://github.com/docxology/Digi-PPPiP/releases/tag/v1.0.0",
-        "github_repo": "docxology/Digi-PPPiP",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
-        "zenodo_record_url": "https://zenodo.org/records/21815704"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21815704:https://github.com/docxology/Digi-PPPiP/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21843592",
-        "folder": "2026_PROJECTBONDSpecial",
-        "github_release_url": "https://github.com/docxology/bond/releases/tag/v1.0.0",
-        "github_repo": "docxology/bond",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.0",
-        "title": "PROJECT BOND — The Special-Agent Operations Compendium",
-        "zenodo_record_url": "https://zenodo.org/records/21843592"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21843592:https://github.com/docxology/bond/releases/tag/v1.0.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.21983948",
-        "folder": "2026_DocxplusIntelligentDocument",
-        "github_release_url": "https://github.com/docxology/docxplus/releases/tag/v1.0.1",
-        "github_repo": "docxology/docxplus",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v1.0.1",
-        "title": "docxplus — the Intelligent Document Container",
-        "zenodo_record_url": "https://zenodo.org/records/21983948"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.21983948:https://github.com/docxology/docxplus/releases/tag/v1.0.1",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.22663906",
-        "folder": "2026_Skillarum",
-        "github_release_url": "https://github.com/docxology/Skillarum/releases/tag/v0.2.0",
-        "github_repo": "docxology/Skillarum",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.2.0",
-        "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
-        "zenodo_record_url": "https://zenodo.org/records/22663906"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.22663906:https://github.com/docxology/Skillarum/releases/tag/v0.2.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "action_type": "update_existing",
-        "applied_receipt_reason": "No exact applied-action receipt matches this strong pairing update.",
-        "applied_receipt_valid": false,
-        "confidence": "strong",
-        "doi": "10.5281/zenodo.22712650",
-        "folder": "2026_FractiSkills",
-        "github_release_url": "https://github.com/docxology/FractiSkills/releases/tag/v0.1.0",
-        "github_repo": "docxology/FractiSkills",
-        "historical_supersession": {},
-        "historical_supersession_valid": false,
-        "pairing_reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "release_tag": "v0.1.0",
-        "title": "FractiSkills: One Portable Agent Skill per Page",
-        "zenodo_record_url": "https://zenodo.org/records/22712650"
-      },
-      "category": "zenodo_candidate",
-      "id": "paired-publication:10.5281/zenodo.22712650:https://github.com/docxology/FractiSkills/releases/tag/v0.1.0",
-      "reason": "The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.",
-      "sources": [
-        "data/paired-publication-decisions.json",
-        "reports/paired_publications_2026-09-15.json"
-      ],
-      "status": "deferred"
     },
     {
       "candidate": {
@@ -15748,12 +15860,12 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "8412219d3ba133c644ccae4031cf0d42efb18d9e",
-  "source_tree_sha": "fa9dd5853ba41b1df85e802941834fd5c96bb28a",
+  "source_commit": "6fe04384dbbec17cf565e87c9bb59b8c9e8318ac",
+  "source_tree_sha": "fafd72249f55a0b336cdd9d53bfc539cabd12e06",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
-    "applied": 271,
+    "applied": 322,
     "categories": {
       "ambiguous_doi_change": {
         "applied": 64,
@@ -15781,12 +15893,12 @@
         "rejected": 0
       },
       "zenodo_candidate": {
-        "applied": 95,
-        "deferred": 51,
+        "applied": 146,
+        "deferred": 0,
         "rejected": 318
       }
     },
-    "deferred": 64,
+    "deferred": 13,
     "items": 653,
     "rejected": 318,
     "review_required": true
