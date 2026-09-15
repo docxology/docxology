@@ -665,8 +665,8 @@
     {
       "name": "Browser smoke checks",
       "outputs": [
-        "reports/browser-smoke/2026-09-11/*.png",
-        "reports/browser-smoke/2026-09-11/manifest.json"
+        "reports/browser-smoke/2026-09-15/*.png",
+        "reports/browser-smoke/2026-09-15/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -678,7 +678,7 @@
     {
       "name": "Progressive browser QA",
       "outputs": [
-        "reports/browser-qa/2026-09-11/manifest.json"
+        "reports/browser-qa/2026-09-15/manifest.json"
       ],
       "sources": [
         "root HTML pages",
