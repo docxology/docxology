@@ -691,7 +691,7 @@
     {
       "name": "Live site verification",
       "outputs": [
-        "reports/live_site_verification_2026-09-14.json"
+        "reports/live_site_verification_2026-09-15.json"
       ],
       "sources": [
         "https://danielarifriedman.com/",

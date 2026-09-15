@@ -266,7 +266,7 @@
     },
     {
       "id": "live-site",
-      "path": "/reports/live_site_verification_2026-09-14.json",
+      "path": "/reports/live_site_verification_2026-09-15.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1146,11 +1146,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 922746880,
-        "source_bytes": 848357886,
+        "source_bytes": 848372854,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4819,
-        "artifact_bytes": 849208505
+        "artifact_file_count": 4820,
+        "artifact_bytes": 849223655
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1181,7 +1181,7 @@
     "work_enrichment": "27c1c0a0b63de4aed16f96a97424593ffdd629c6694697ba216b988919aec83e",
     "catalog": "104bb9656be77edca031465201f1adbbd507b8098abc24cbfb5c79f08fc066bb",
     "reconciliation": "01437cddc9e13d2648cd8f7ca29d01f12ea349f7fb3d907de1f3f0d800f3e481",
-    "generated_manifest": "42bdcfcfb45480847337aef6156ccce3fe13576949a88cc56a2ba3960ed078bb",
+    "generated_manifest": "99b5182a5b5119d53df222ced96a3c6b3284cb1cafdf6332f50867f6e0c6c778",
     "current_counts": "9bb97712194654613e400e8b6d3f6927e694e392e98a729b942f1ee04a9241d1"
   },
   "source_provenance": {
@@ -1202,8 +1202,8 @@
     "paper_image_fallback": "Use the Pages artifact manifest GitHub tree/raw templates for omitted extracted paper images."
   },
   "verification_status": {
-    "live_report": "/reports/live_site_verification_2026-09-14.json",
-    "generated_at": "2026-09-14T23:29:55Z",
+    "live_report": "/reports/live_site_verification_2026-09-15.json",
+    "generated_at": "2026-09-15T01:20:34Z",
     "overall_ok": true,
     "passing": 17,
     "checked_urls": 17,
