@@ -87,8 +87,8 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | Generated-file manifest | [GENERATED.md](../GENERATED.md) / [data/generated-manifest.json](../data/generated-manifest.json) | Rebuild commands and source-to-output mapping for generated artifacts |
 | Updates | [updates.html](../updates.html) / [CHANGELOG.md](../CHANGELOG.md) | Human-facing update history and source changelog |
 | Humans / security | [humans.txt](../humans.txt) / [security.txt](../.well-known/security.txt) | Contact, credits, and responsible disclosure metadata |
-| Public-source snapshot | [reports/public_source_snapshot_2026-09-14.json](../reports/public_source_snapshot_2026-09-14.json) | Latest public API freshness report |
-| Public-source inventory | [reports/public_source_inventory_2026-09-14.json](../reports/public_source_inventory_2026-09-14.json) | Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages |
+| Public-source snapshot | [reports/public_source_snapshot_2026-09-15.json](../reports/public_source_snapshot_2026-09-15.json) | Latest public API freshness report |
+| Public-source inventory | [reports/public_source_inventory_2026-09-15.json](../reports/public_source_inventory_2026-09-15.json) | Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages |
 | Reconciliation report | [reports/reconciliation_2026-09-14.md](../reports/reconciliation_2026-09-14.md) | Human-readable comparison of curated counts and public-source counts |
 | External-link report | [reports/external_links_2026-09-14.json](../reports/external_links_2026-09-14.json) | Cached scoped network check for site-critical outbound links |
 | External-link triage | [reports/external_links_triage_2026-09-14.md](../reports/external_links_triage_2026-09-14.md) | Categorized link warnings: bot-protected, transient, timeout, stale, and review |
