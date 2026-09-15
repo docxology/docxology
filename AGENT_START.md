@@ -12,6 +12,11 @@ This repository is the public research, software, citation, evidence, and websit
 5. Use [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) as the curated bibliography source of truth.
 6. Use [`pages/SOFTWARE.md`](pages/SOFTWARE.md) as the curated software source of truth.
 7. Use [`docs/operations/publication-sync.md`](docs/operations/publication-sync.md) for GitHub + Zenodo publication intake and DOI/version refreshes.
+   For 1-3 new pairs with data-only changes and a same-day warning-free scan,
+   use the **fast intake path** in that runbook
+   ([docs/operations/publication-sync.md](docs/operations/publication-sync.md)
+   → "Fast Intake Path (Small, Data-Only Changes)") — cached reports and
+   fingerprint-gated regeneration instead of full re-fetching.
 8. Use [`docs/operations/repository-classification.md`](docs/operations/repository-classification.md) for complete-inventory versus curated-software review.
 9. Use [`docs/operations/evidence-refresh.md`](docs/operations/evidence-refresh.md) for dated public-source and claim refreshes.
 10. Browse [`docs/README.md`](docs/README.md) for the full repository-documentation index (architecture, operations, SEO, design, security, releases); [`docs/AGENTS.md`](docs/AGENTS.md) holds agent operational guidance.

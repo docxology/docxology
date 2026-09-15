@@ -38,6 +38,12 @@ no-write battery, so settle's full tier covers them; the rendered-browser
 `browser-tests` CI job is a separate job settle does not mirror. A green settle
 `full` therefore predicts a green `validate` job up to drift-sensitive changes.
 
+Note on write-mode regeneration feeding the battery: `regenerate_all.py` now
+skips input-fingerprint-fresh gated steps (state in the gitignored
+`reports/regeneration-state.json`; `--force` restores always-run), while
+`validate_repo.py`'s `--check` battery remains the ungated authority — a
+skip never weakens the check that decides whether the tree is landable.
+
 ## Effective tier
 
 `--tier` is a floor, not a switch. Every run first classifies the dirty paths
