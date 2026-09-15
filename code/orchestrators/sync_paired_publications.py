@@ -2,7 +2,15 @@
 """Detect and optionally apply paired GitHub + Zenodo publications.
 
 Default mode writes a dry-run report only. Pass ``--apply`` to update curated
-source files and run the generated-surface refresh chain.
+source files (paper folders, bibliography rows, software links). Regeneration
+of the generated surfaces is left to ``regenerate_all.py``, which re-runs every
+step this tool's former inline chain covered.
+
+``--cache-reports`` reuses the latest same-day report's GitHub releases and
+Zenodo records instead of re-fetching them (``--force`` lifts the same-day
+requirement). The already_reviewed classification is persisted in the report
+and keyed by bibliography + decision-log content hashes; a hash mismatch falls
+back to the full classification scan -- drift is surfaced, never absorbed.
 """
 
 from __future__ import annotations
@@ -13,7 +21,6 @@ import hashlib
 import json
 import os
 import re
-import subprocess
 import sys
 import urllib.parse
 import urllib.request
@@ -26,7 +33,9 @@ SRC_DIR = REPO_ROOT / "code" / "src"
 sys.path.insert(0, str(SRC_DIR))
 
 from publication_pairing import (  # noqa: E402
+    GitHubAsset,
     GitHubRelease,
+    PairCandidateFingerprint,
     PublicationPair,
     SyncAction,
     ZenodoRecord,
@@ -191,6 +200,81 @@ def fetch_zenodo_records() -> tuple[list[ZenodoRecord], list[str]]:
     return records, warnings
 
 
+def github_release_from_payload(payload: dict[str, Any]) -> GitHubRelease:
+    """Rebuild a GitHubRelease from a report payload's serialized release."""
+    try:
+        return GitHubRelease(
+            owner=str(payload["owner"]),
+            repo=str(payload["repo"]),
+            tag=str(payload["tag"]),
+            name=str(payload["name"]),
+            body=str(payload["body"]),
+            html_url=str(payload["html_url"]),
+            published_at=str(payload["published_at"]),
+            assets=[
+                GitHubAsset.from_api(item)
+                for item in payload.get("assets", [])
+                if isinstance(item, dict)
+            ],
+        )
+    except KeyError as exc:
+        raise ValueError(f"cached GitHub release is missing field {exc}") from exc
+
+
+def github_releases_from_payload(payload: dict[str, Any]) -> list[GitHubRelease]:
+    raw = payload.get("github_releases")
+    if not isinstance(raw, list):
+        raise ValueError("report payload has no github_releases list")
+    releases: list[GitHubRelease] = []
+    for item in raw:
+        if not isinstance(item, dict):
+            raise ValueError("cached GitHub release entry is not an object")
+        releases.append(github_release_from_payload(item))
+    return releases
+
+
+def zenodo_record_from_payload(payload: dict[str, Any]) -> ZenodoRecord:
+    """Rebuild a ZenodoRecord from a report payload's to_dict() serialization."""
+    version = payload.get("version")
+    if version is not None and not isinstance(version, str):
+        version = str(version)
+    try:
+        return ZenodoRecord(
+            record_id=str(payload["record_id"]),
+            doi=str(payload["doi"]),
+            title=str(payload["title"]),
+            publication_date=str(payload["publication_date"]),
+            version=version,
+            resource_type=(
+                payload["resource_type"] if isinstance(payload.get("resource_type"), dict) else {}
+            ),
+            creators=payload["creators"] if isinstance(payload.get("creators"), list) else [],
+            description=str(payload["description"]),
+            keywords=[str(item) for item in (payload.get("keywords") or [])],
+            related_identifiers=(
+                payload["related_identifiers"]
+                if isinstance(payload.get("related_identifiers"), list)
+                else []
+            ),
+            files=payload["files"] if isinstance(payload.get("files"), list) else [],
+            html_url=str(payload["html_url"]),
+        )
+    except KeyError as exc:
+        raise ValueError(f"cached Zenodo record is missing field {exc}") from exc
+
+
+def zenodo_records_from_payload(payload: dict[str, Any]) -> list[ZenodoRecord]:
+    raw = payload.get("zenodo_records")
+    if not isinstance(raw, list) or not raw:
+        raise ValueError("report payload has no zenodo_records list")
+    records: list[ZenodoRecord] = []
+    for item in raw:
+        if not isinstance(item, dict):
+            raise ValueError("cached Zenodo record entry is not an object")
+        records.append(zenodo_record_from_payload(item))
+    return records
+
+
 def clean_markdown(value: str) -> str:
     value = re.sub(r"<[^>]+>", "", value)
     value = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", value)
@@ -333,16 +417,132 @@ def folder_for_pair(pair: PublicationPair, repo_root: Path = REPO_ROOT) -> str:
     return candidate
 
 
-def build_sync_actions(pairs: list[PublicationPair], *, repo_root: Path = REPO_ROOT) -> list[SyncAction]:
+PairFingerprintEntry = tuple[PairCandidateFingerprint, dict[str, str]]
+
+
+@dataclass(frozen=True)
+class ClassificationCache:
+    """Cached already_reviewed classification keyed by curated-input hashes."""
+
+    inputs: dict[str, str]
+    already_reviewed: dict[PairCandidateFingerprint, dict[str, str]]
+
+
+def _file_sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest() if path.exists() else ""
+
+
+def classification_inputs(repo_root: Path = REPO_ROOT) -> dict[str, str]:
+    """Hash the curated inputs the already_reviewed classification depends on.
+
+    The class is fully determined by the durable decision log (fingerprinted
+    per candidate), but the bibliography hash joins the key so any curated
+    source drift invalidates the cache in the safe (full-rescan) direction.
+    """
+    return {
+        "bibliography_sha256": _file_sha256(repo_root / BIBLIOGRAPHY),
+        "decisions_sha256": _file_sha256(repo_root / PAIRED_PUBLICATION_DECISIONS),
+    }
+
+
+def classification_cache_from_payload(payload: object) -> ClassificationCache | None:
+    """Parse a report's classification_cache block; ``None`` when unusable.
+
+    Any structural problem makes the cache inert: the caller falls back to the
+    full classification rather than absorbing an unreadable fingerprint.
+    """
+    if not isinstance(payload, dict):
+        return None
+    block = payload.get("classification_cache")
+    if not isinstance(block, dict):
+        return None
+    inputs = block.get("inputs")
+    entries = block.get("already_reviewed")
+    if not isinstance(inputs, dict) or not isinstance(entries, list):
+        return None
+    if not all(isinstance(value, str) for value in inputs.values()):
+        return None
+    already: dict[PairCandidateFingerprint, dict[str, str]] = {}
+    for entry in entries:
+        if (
+            not isinstance(entry, list)
+            or len(entry) != 2
+            or not isinstance(entry[0], list)
+            or len(entry[0]) != 6
+            or not all(isinstance(value, str) for value in entry[0])
+            or not isinstance(entry[1], dict)
+            or not all(isinstance(entry[1].get(key), str) for key in ("group_id", "representation", "folder"))
+        ):
+            return None
+        already[tuple(entry[0])] = dict(entry[1])
+    return ClassificationCache(
+        inputs={str(key): str(value) for key, value in inputs.items()},
+        already_reviewed=already,
+    )
+
+
+def classification_cache_payload(entries: list[PairFingerprintEntry], *, repo_root: Path = REPO_ROOT) -> dict[str, Any]:
+    """Serialize this run's already_reviewed classification into the report."""
+    return {
+        "inputs": classification_inputs(repo_root),
+        "already_reviewed": [[list(fingerprint), dict(info)] for fingerprint, info in entries],
+    }
+def build_sync_actions(
+    pairs: list[PublicationPair],
+    *,
+    repo_root: Path = REPO_ROOT,
+    cache: ClassificationCache | None = None,
+    already_reviewed_entries: list[PairFingerprintEntry] | None = None,
+) -> list[SyncAction]:
+    """Classify pairs into sync actions, optionally from a validated cache.
+
+    ``cache`` short-circuits the already_reviewed class only when its input
+    hashes still match the on-disk bibliography and decision log; any drift
+    falls back to the full classification. ``already_reviewed_entries``
+    collects the (fingerprint, decision) pairs that back the report's
+    persisted classification cache.
+    """
     doi_to_folder = existing_doi_map(repo_root)
-    release_title_to_folder = existing_release_title_map(repo_root)
-    repo_title_to_folder = existing_repo_title_map(repo_root)
-    reviewed_decisions = reviewed_pair_decisions(repo_root)
+    release_title_to_folder: dict[tuple[str, str], str] = {}
+    repo_title_to_folder: dict[tuple[str, str], str] = {}
+    title_maps_loaded = False
+
+    def title_maps() -> tuple[dict[tuple[str, str], str], dict[tuple[str, str], str]]:
+        nonlocal title_maps_loaded, release_title_to_folder, repo_title_to_folder
+        if not title_maps_loaded:
+            release_title_to_folder = existing_release_title_map(repo_root)
+            repo_title_to_folder = existing_repo_title_map(repo_root)
+            title_maps_loaded = True
+        return release_title_to_folder, repo_title_to_folder
+
+    reviewed_decisions: dict[PairCandidateFingerprint, dict[str, str]] | None = None
+
+    def decisions() -> dict[PairCandidateFingerprint, dict[str, str]]:
+        nonlocal reviewed_decisions
+        if reviewed_decisions is None:
+            reviewed_decisions = reviewed_pair_decisions(repo_root)
+        return reviewed_decisions
+
+    def resolved_folder(
+        pair: PublicationPair,
+    ) -> tuple[str, str | None, str | None]:
+        release_map, repo_map = title_maps()
+        release_title_folder = release_map.get(_pair_key(pair.record.title, pair.github_release_url))
+        repo_title_folder = repo_map.get(_repo_title_key(pair.record.title, pair.github_repo))
+        folder = (
+            doi_to_folder.get(pair.doi)
+            or release_title_folder
+            or repo_title_folder
+            or folder_for_pair(pair, repo_root)
+        )
+        return folder, release_title_folder, repo_title_folder
+
+    use_cache = cache is not None and cache.inputs == classification_inputs(repo_root)
+    if not use_cache:
+        decisions()
+        title_maps()
     actions: list[SyncAction] = []
     for pair in pairs:
-        release_title_folder = release_title_to_folder.get(_pair_key(pair.record.title, pair.github_release_url))
-        repo_title_folder = repo_title_to_folder.get(_repo_title_key(pair.record.title, pair.github_repo))
-        folder = doi_to_folder.get(pair.doi) or release_title_folder or repo_title_folder or folder_for_pair(pair, repo_root)
         candidate_fingerprint = canonical_pair_candidate_fingerprint(
             doi=pair.doi,
             github_release_url=pair.github_release_url,
@@ -351,17 +551,33 @@ def build_sync_actions(pairs: list[PublicationPair], *, repo_root: Path = REPO_R
             title=pair.record.title,
             release_tag=pair.release.tag,
         )
-        reviewed = (
-            reviewed_decisions.get(candidate_fingerprint)
-            if candidate_fingerprint is not None
-            else None
-        )
+        reviewed: dict[str, str] | None = None
+        release_title_folder: str | None = None
+        repo_title_folder: str | None = None
+        if use_cache and candidate_fingerprint is not None:
+            reviewed = cache.already_reviewed.get(candidate_fingerprint)
+        if reviewed is not None:
+            folder = reviewed.get("folder") or resolved_folder(pair)[0]
+        else:
+            folder, release_title_folder, repo_title_folder = resolved_folder(pair)
+            reviewed = (
+                decisions().get(candidate_fingerprint)
+                if candidate_fingerprint is not None
+                else None
+            )
         if reviewed:
             action_type = "already_reviewed"
             representation = reviewed.get("representation") or "manual decision"
             group_id = reviewed.get("group_id") or "decision log"
             reason = f"{group_id} records this pair as {representation}; do not create a duplicate bibliography row"
             folder = reviewed.get("folder") or folder
+            if already_reviewed_entries is not None and candidate_fingerprint is not None:
+                already_reviewed_entries.append(
+                    (
+                        candidate_fingerprint,
+                        {"group_id": group_id, "representation": representation, "folder": folder},
+                    )
+                )
         elif pair.confidence != "strong":
             action_type = "needs_review"
             reason = "pair lacks DOI/release cross-link evidence required for automatic apply"
@@ -867,6 +1083,7 @@ def write_report(
     actions: list[SyncAction],
     warnings: list[str],
     applied: list[AppliedPublication] | None = None,
+    classification_cache: dict[str, Any] | None = None,
 ) -> None:
     generated_at = generated_timestamp()
 
@@ -912,30 +1129,14 @@ def write_report(
         "warnings": warnings,
         "actions": [action.to_dict() for action in actions],
         "pairs": [pair.to_dict() for pair in pairs],
+        "github_releases": [release.to_dict() for release in releases],
+        "zenodo_records": [record.to_dict() for record in records],
         "applied": [applied_payload(item) for item in (applied or [])],
     }
+    if classification_cache is not None:
+        payload["classification_cache"] = classification_cache
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-
-
-def run_regeneration(repo_root: Path = REPO_ROOT) -> None:
-    commands = [
-        [sys.executable, "code/orchestrators/sync_publications_html.py", "--apply"],
-        [sys.executable, "code/orchestrators/export_bibliography.py"],
-        [sys.executable, "code/orchestrators/sync_software_html.py", "--apply"],
-        [sys.executable, "code/orchestrators/export_agent_data.py"],
-        [sys.executable, "code/orchestrators/build_domain_pages.py"],
-        [sys.executable, "code/orchestrators/build_work_pages.py"],
-        [sys.executable, "code/orchestrators/build_paper_pages.py"],
-        [sys.executable, "code/orchestrators/audit_assets.py"],
-        [sys.executable, "code/orchestrators/build_catalog.py"],
-        [sys.executable, "code/orchestrators/build_search_index.py"],
-        [sys.executable, "code/orchestrators/generate_feed.py"],
-        [sys.executable, "code/orchestrators/build_sitemap.py"],
-        [sys.executable, "code/orchestrators/build_generated_manifest.py"],
-    ]
-    for command in commands:
-        subprocess.run(command, cwd=repo_root, check=True)
 
 
 def latest_report(repo_root: Path = REPO_ROOT) -> Path | None:
@@ -974,6 +1175,18 @@ def check_report(repo_root: Path = REPO_ROOT) -> None:
         expected = counts.get(action_type, 0)
         if expected != actual:
             raise SystemExit(f"Paired publication report count mismatch for {action_type}: {expected} != {actual}")
+    cache_block = payload.get("classification_cache")
+    if cache_block is not None:
+        cache = classification_cache_from_payload(payload)
+        if cache is None:
+            raise SystemExit("Paired publication report has a malformed classification_cache block")
+        if cache.inputs != classification_inputs(repo_root):
+            print(
+                "note: paired publication report classification_cache inputs have drifted from the "
+                "current bibliography/decision-log hashes; the next scan re-derives already_reviewed "
+                "from full state",
+                file=sys.stderr,
+            )
     existing_dois = {row["doi"] for row in parse_bibliography_rows(repo_root) if row.get("doi")}
     applied_created_dois = {
         str(item.get("doi") or "")
@@ -1039,6 +1252,60 @@ def parse_owners(raw: str, include_aii: bool) -> list[str]:
     return owners or list(DEFAULT_OWNERS)
 
 
+def load_cached_scan_payload(
+    path: Path, *, force: bool = False
+) -> tuple[list[GitHubRelease], list[ZenodoRecord]]:
+    """Reuse a prior pairing scan's fetched releases and records.
+
+    Freshness keys on the source report's ``generated_at`` date, not file
+    presence: an older report is refused unless ``force``. A warned scan is
+    always refused -- cache validation must not bless a scan that saw API
+    errors.
+    """
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        raise SystemExit(f"Cannot reuse cached scan payload from {path}: {exc}") from exc
+    if payload.get("source") != "GitHub Releases API + Zenodo Records API":
+        raise SystemExit(f"Cannot reuse cached scan payload from {path}: unexpected report source")
+    warnings = payload.get("warnings")
+    if warnings:
+        raise SystemExit(
+            f"Refusing cached scan payload from {path}: {len(warnings)} API warning(s); rerun the live scan"
+        )
+    generated_at = str(payload.get("generated_at") or "")
+    today = dt.datetime.now(dt.timezone.utc).date().isoformat()
+    if generated_at[:10] != today and not force:
+        raise SystemExit(
+            f"Cached scan payload {path} is not same-day (generated_at {generated_at}); "
+            "pass --force to reuse it anyway"
+        )
+    try:
+        return github_releases_from_payload(payload), zenodo_records_from_payload(payload)
+    except ValueError as exc:
+        raise SystemExit(f"Cannot reuse cached scan payload from {path}: {exc}") from exc
+
+
+def classification_cache_from_report(repo_root: Path = REPO_ROOT) -> ClassificationCache | None:
+    """Load the latest report's classification cache when its inputs still match disk.
+
+    A missing, unreadable, or hash-drifted cache returns ``None`` so the caller
+    runs the full classification -- drift is surfaced by the fallback, never
+    absorbed.
+    """
+    path = latest_report(repo_root)
+    if path is None:
+        return None
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    cache = classification_cache_from_payload(payload)
+    if cache is None or cache.inputs != classification_inputs(repo_root):
+        return None
+    return cache
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description=__doc__,
@@ -1051,6 +1318,16 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--report", help="Report path (default: reports/paired_publications_DATE.json)")
     parser.add_argument("--no-download-files", action="store_true", help="Do not download Zenodo PDFs during apply")
     parser.add_argument("--check", action="store_true", help="Validate the latest cached report")
+    parser.add_argument(
+        "--cache-reports",
+        action="store_true",
+        help="Reuse the latest same-day report's GitHub releases and Zenodo records instead of re-fetching",
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="With --cache-reports: accept a source report that is not same-day",
+    )
     return parser
 
 
@@ -1065,10 +1342,26 @@ def main(argv: list[str] | None = None) -> int:
     if not report.is_absolute():
         report = REPO_ROOT / report
 
-    releases, github_warnings = fetch_github_releases(owners, since=args.since)
-    records, zenodo_warnings = fetch_zenodo_records()
+    if args.cache_reports:
+        source = Path(args.report) if args.report else latest_report(REPO_ROOT)
+        if source is None or not Path(source).exists():
+            raise SystemExit("--cache-reports found no paired publication report to reuse")
+        releases, records = load_cached_scan_payload(Path(source), force=args.force)
+        github_warnings: list[str] = []
+        zenodo_warnings: list[str] = []
+        print(f"reusing cached scan payload from {display_report_path(Path(source))}")
+    else:
+        releases, github_warnings = fetch_github_releases(owners, since=args.since)
+        records, zenodo_warnings = fetch_zenodo_records()
+    if args.cache_reports and args.since:
+        releases = [release for release in releases if _date_at_or_after(release.published_at, args.since)]
     pairs = find_publication_pairs(releases, records)
-    actions = build_sync_actions(pairs)
+    already_reviewed_entries: list[PairFingerprintEntry] = []
+    actions = build_sync_actions(
+        pairs,
+        cache=classification_cache_from_report(REPO_ROOT),
+        already_reviewed_entries=already_reviewed_entries,
+    )
     warnings = [*github_warnings, *zenodo_warnings]
     applied: list[AppliedPublication] = []
     changed = False
@@ -1099,8 +1392,8 @@ def main(argv: list[str] | None = None) -> int:
                 actions=actions,
                 warnings=warnings,
                 applied=applied,
+                classification_cache=classification_cache_payload(already_reviewed_entries),
             )
-            run_regeneration()
 
     write_report(
         report,
@@ -1111,6 +1404,7 @@ def main(argv: list[str] | None = None) -> int:
         actions=actions,
         warnings=warnings,
         applied=applied,
+        classification_cache=classification_cache_payload(already_reviewed_entries),
     )
     print(
         f"wrote {display_report_path(report)}: "
