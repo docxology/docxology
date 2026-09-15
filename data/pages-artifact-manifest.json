@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-15T01:30:24Z",
-  "source_commit_at_generation": "a3ce18141122720ef18e99eb96f64ba6e97dfd7b",
+  "generated_at": "2026-09-15T14:08:42Z",
+  "source_commit_at_generation": "e31909c3a69fdff178b1cc77a1aa1b9f07923f5b",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 848357911,
+    "source_bytes": 853005467,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4819,
-    "artifact_bytes": 849208530
+    "artifact_file_count": 4820,
+    "artifact_bytes": 853856267
   },
   "included_files": [
     {
@@ -75,8 +75,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 89404,
-      "sha256": "dc2b7a7db70ea14735c1592c70fa88134d52bb8d6dc169480caccfcdd2de7995"
+      "bytes": 89725,
+      "sha256": "8f0354c929b2a2753fb692d5b13ddb67b68b79b3a6659e151660a4e4ca923543"
     },
     {
       "path": "CITATION.cff",
@@ -6910,8 +6910,8 @@
     },
     {
       "path": "docs/operations/publication-sync.md",
-      "bytes": 21448,
-      "sha256": "08391986fd9e23f8048b49024c99d792be474510ca49824836f1e16be73b621e"
+      "bytes": 22140,
+      "sha256": "a3d01b28aed40292fb1d103f2dce47f5e19a04af589e6e76971947c565a3547a"
     },
     {
       "path": "docs/operations/release-integrity.md",
@@ -17084,6 +17084,11 @@
       "sha256": "4cd81d592ea43761a72a6c0ecc7355fc056db0761c5ee9cb5279e3f2d28d8626"
     },
     {
+      "path": "reports/paired_publications_2026-09-15.json",
+      "bytes": 4646543,
+      "sha256": "d44ac411b220d69261f67da22fa89c2ff5ef882f3dedb08475b2fc90507db683"
+    },
+    {
       "path": "reports/paired_publications_review_queue_2026-06-04.md",
       "bytes": 17176,
       "sha256": "843f67ca0a1a897ad0631fe26e0aaa2a620fbe254a68c0505e0214e6c5a7257e"
@@ -17321,7 +17326,7 @@
     {
       "path": "updates.html",
       "bytes": 117420,
-      "sha256": "66cb5facddc1f9ba07e63a51c2a4ac787b7dac7b1732893388d3d9e2ef2cdd43"
+      "sha256": "5b256452ab8398d9ef1e286c7aba2407dee250b2e01a3e439f3f3eab702da97b"
     },
     {
       "path": "uv.lock",
