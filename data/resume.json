@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T17:33:57Z",
+  "generated_at": "2026-09-15T22:56:53Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -35,8 +35,8 @@
   },
   "metrics": {
     "works": 215,
-    "software_catalogued": 151,
-    "owned_software_catalogued": 112,
+    "software_catalogued": 154,
+    "owned_software_catalogued": 115,
     "aii_software_catalogued": 39,
     "google_scholar": {
       "citations": 815,
@@ -53,7 +53,7 @@
         "https://api.github.com/users/docxology",
         "reports/public_source_snapshot_2026-09-15.json"
       ],
-      "checked_at": "2026-09-15T17:15:15.838398+00:00",
+      "checked_at": "2026-09-15T21:41:13.329423+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -67,14 +67,14 @@
         "https://api.github.com/users/ActiveInferenceInstitute",
         "reports/public_source_snapshot_2026-09-15.json"
       ],
-      "checked_at": "2026-09-15T17:15:15.838398+00:00",
+      "checked_at": "2026-09-15T21:41:13.329423+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 39 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-09-14T21:27:12Z",
+      "generated_at": "2026-09-15T21:41:45Z",
       "source": "GitHub REST API /users/{owner}/repos",
       "total": 259,
       "public": 259,
@@ -88,22 +88,22 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "4cd55d3ef8879b4c3b9d15fcfc3f1ab6ab7fc86e497191f9ee8bf2299b89b0d8",
+      "sha256": "ea322c6412761a935527c0bc94380bf2e84c7c2ffd287ea88543746aa365614d",
       "files": [
         {
           "path": "resume/source.json",
-          "bytes": 58813,
-          "sha256": "9bfe02faeb946d3a8cd6ab916a4686e0252ada8af2995257ee7c7ad59108904a"
+          "bytes": 58871,
+          "sha256": "209c5b0b1df978813d6ad7c08e2b7c0e2cbc1f7445a4cbdf2c422165983b2f6a"
         },
         {
           "path": "data/works.json",
-          "bytes": 174042,
-          "sha256": "d5beebc3b69b5004d77188ca2082ba2d9bde82d87143be090a4e47da8db89b72"
+          "bytes": 174043,
+          "sha256": "0e2ed9102fc747fefb7744922e08639482246602b0f5d5542236b4ddab44e0dc"
         },
         {
           "path": "data/software.json",
-          "bytes": 74913,
-          "sha256": "50ee76c079308e69de8021ad48aeb8afe67b029e16e18b271fd2a973920e18b5"
+          "bytes": 76507,
+          "sha256": "34848afb28da863ca026075d646f918d650b695772e906326590b0413367ab2b"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "5f03e2465bcc76dbd9fa2aec0d60795f54bd97b6ac1ecb8962ab973d75af36ff"
+          "sha256": "9dbd8a005f844ad24b9a5cf4491ff3b159d3d6895b340bd0fd6f0835f1229331"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 307017,
-          "sha256": "b9b20153ceccb33f1f61bc98b19dba70804a021d457719e6312a6f0333ac53a1"
+          "bytes": 307016,
+          "sha256": "1f6bbaa065fd066c628d2dcad2090e990ce4cc1e970196c87a39978032d69374"
         }
       ]
     },
@@ -176,7 +176,7 @@
       "links": [
         {
           "label": "Stanford dissertation",
-          "url": "http://purl.stanford.edu/pb813wm1484"
+          "url": "https://purl.stanford.edu/pb813wm1484"
         }
       ],
       "variants": [
@@ -374,6 +374,7 @@
       "workplace": "Stealth Startup",
       "start_year": 2025,
       "end_year": 2026,
+      "status": "stealth",
       "roles": [
         "Operator"
       ],
@@ -395,6 +396,7 @@
       "workplace": "Stealth Startup",
       "start_year": 2023,
       "end_year": 2024,
+      "status": "stealth",
       "roles": [
         "Co-founder",
         "Operator"
@@ -1644,7 +1646,7 @@
       "links": [
         {
           "label": "Cybernetics Society",
-          "url": "http://cybsoc.org/"
+          "url": "https://cybsoc.org/"
         }
       ],
       "variants": [
@@ -1922,7 +1924,7 @@
       "links": [
         {
           "label": "NIMBioS",
-          "url": "http://www.nimbios.org/tutorials/TT_eqg"
+          "url": "https://www.nimbios.org/tutorials/TT_eqg"
         }
       ],
       "variants": [
@@ -2102,7 +2104,7 @@
       "links": [
         {
           "label": "Flickr",
-          "url": "http://flickr.com/photos/daniel_friedman/"
+          "url": "https://flickr.com/photos/daniel_friedman/"
         }
       ],
       "variants": [
@@ -4681,7 +4683,7 @@
       "type": "Paper",
       "title": "PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",
       "venue": "Stanford University",
-      "url": "http://purl.stanford.edu/pb813wm1484",
+      "url": "https://purl.stanford.edu/pb813wm1484",
       "doi": "",
       "docs_path": "papers/2019_PhDDissertation/",
       "has_paper_folder": true,
@@ -9007,6 +9009,42 @@
       "zenodo_url": ""
     },
     {
+      "name": "dicklesworthstone_meta_operator",
+      "url": "https://github.com/docxology/dicklesworthstone_meta_operator",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Meta-operator over the Dicklesworthstone GitHub corpus: clone, verify upstream sync, orchestrate, interpret, and dashboard the ~207-repo corpus",
+      "language": "HTML",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
+      "name": "Skillarum",
+      "url": "https://github.com/docxology/Skillarum",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "papers/2026_Skillarum/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22663906"
+    },
+    {
+      "name": "nockchain-migration",
+      "url": "https://github.com/docxology/nockchain-migration",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Operator-gated wizard and tooling for migrating Nockchain wallets from legacy v0 notes to v1 P2PKH addresses (one-off functional tool, no paper)",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "",
+      "zenodo_url": ""
+    },
+    {
       "name": "ActiveInferenceJournal",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
       "owner": "ActiveInferenceInstitute",
@@ -9485,7 +9523,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-09-15T17:20:18+00:00",
+      "checked_at": "2026-09-15T22:56:49+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9500,7 +9538,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-09-15T17:20:18+00:00",
+      "checked_at": "2026-09-15T22:56:49+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9514,7 +9552,7 @@
         "https://api.github.com/users/docxology",
         "reports/public_source_snapshot_2026-09-15.json"
       ],
-      "checked_at": "2026-09-15T17:15:15.838398+00:00",
+      "checked_at": "2026-09-15T21:41:13.329423+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -9528,7 +9566,7 @@
         "https://api.github.com/users/ActiveInferenceInstitute",
         "reports/public_source_snapshot_2026-09-15.json"
       ],
-      "checked_at": "2026-09-15T17:15:15.838398+00:00",
+      "checked_at": "2026-09-15T21:41:13.329423+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
@@ -9659,7 +9697,7 @@
       ],
       "checked_at": "2026-08-26",
       "confidence": "medium",
-      "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 31 link to a public page.",
+      "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 30 link to a public page.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "State this as the current public membership count, not a cohort announcement or a claim about any specific announcement month."
     },

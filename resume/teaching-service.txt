@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-09-15T17:33:57Z
+Generated: 2026-09-15T22:56:53Z
 
-Current public metrics: 215 curated works; 151 catalogued software repositories (112 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 216 docxology + 43 AII public repositories (169 primary, 90 forks).
+Current public metrics: 215 curated works; 154 catalogued software repositories (115 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 216 docxology + 43 AII public repositories (169 primary, 90 forks).
 
 SUMMARY
 -------
@@ -45,7 +45,7 @@ EDUCATION
   - Theodore Roosevelt Memorial Award, American Museum of Natural History, 2016, $2,500.
   - Lewis and Clark Fund grant, American Philosophical Society, 2016, $4,000.
   - NSF GRFP Honorable Mention, 2015 and 2016.
-  - Sources: Stanford dissertation: http://purl.stanford.edu/pb813wm1484
+  - Sources: Stanford dissertation: https://purl.stanford.edu/pb813wm1484
 2010-2014 | BSc in Genetics | University of California, Davis | Davis, CA, USA
   - BSc in Genetics, University of California, Davis.
   - Genetics Department Citation, Highest Honors, 2014; 3.74 GPA overall.
@@ -145,7 +145,7 @@ WORKS AND PUBLICATIONS (83)
 [086] 2020 | Paper | Gene expression variation in the brains of harvester ant foragers is associated with collective behavior | Communications Biology | 10.1038/s42003-020-0813-8
 [087] 2020 | Course | How to use Keybase for remote teams | Udemy | https://www.udemy.com/course/keybase-for-remote-teams/
 [088] 2020 | Paper | Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains | Analytical & Bioanalytical Chemistry | 10.1007/s00216-019-02355-3
-[093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | http://purl.stanford.edu/pb813wm1484
+[093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | https://purl.stanford.edu/pb813wm1484
 [094] 2019 | Paper | The ant colony as a test for scientific theories of consciousness | Synthese | 10.1007/s11229-019-02130-y
 [095] 2019 | Paper | The physiology of forager hydration and variation among harvester ant colonies | Scientific Reports | 10.1038/s41598-019-41586-3
 [096] 2018 | Paper | Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations | PLoS One | 10.1371/journal.pone.0202117

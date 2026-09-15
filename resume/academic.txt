@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-09-15T17:33:57Z
+Generated: 2026-09-15T22:56:53Z
 
-Current public metrics: 215 curated works; 151 catalogued software repositories (112 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 216 docxology + 43 AII public repositories (169 primary, 90 forks).
+Current public metrics: 215 curated works; 154 catalogued software repositories (115 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 216 docxology + 43 AII public repositories (169 primary, 90 forks).
 
 SUMMARY
 -------
@@ -45,7 +45,7 @@ EDUCATION
   - Theodore Roosevelt Memorial Award, American Museum of Natural History, 2016, $2,500.
   - Lewis and Clark Fund grant, American Philosophical Society, 2016, $4,000.
   - NSF GRFP Honorable Mention, 2015 and 2016.
-  - Sources: Stanford dissertation: http://purl.stanford.edu/pb813wm1484
+  - Sources: Stanford dissertation: https://purl.stanford.edu/pb813wm1484
 2010-2014 | BSc in Genetics | University of California, Davis | Davis, CA, USA
   - BSc in Genetics, University of California, Davis.
   - Genetics Department Citation, Highest Honors, 2014; 3.74 GPA overall.
@@ -227,7 +227,7 @@ WORKS AND PUBLICATIONS (215)
 [090] 2020 | Paper | The Innovator's Catechism | Zenodo | 10.5281/zenodo.4383229
 [091] 2020 | Paper | The neuroscience of decision making (interview with Timothy Hanks) | ALIUS Bulletin | 10.34700/8pg4-0h12
 [092] 2019 | Paper | Dennett Explained (interview with Daniel Dennett) | ALIUS Bulletin | 10.34700/7gkw-zh08
-[093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | http://purl.stanford.edu/pb813wm1484
+[093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | https://purl.stanford.edu/pb813wm1484
 [094] 2019 | Paper | The ant colony as a test for scientific theories of consciousness | Synthese | 10.1007/s11229-019-02130-y
 [095] 2019 | Paper | The physiology of forager hydration and variation among harvester ant colonies | Scientific Reports | 10.1038/s41598-019-41586-3
 [096] 2018 | Paper | Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations | PLoS One | 10.1371/journal.pone.0202117
@@ -352,7 +352,7 @@ WORKS AND PUBLICATIONS (215)
 [217] 2026 | Paper | FractiSkills: One Portable Agent Skill per Page | Zenodo | 10.5281/zenodo.22712650
 [218] 2026 | Paper | Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security | Zenodo | 10.5281/zenodo.22754351
 
-SOFTWARE (71)
+SOFTWARE (72)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/
@@ -414,6 +414,7 @@ docxology/millennium_audit | Python | https://github.com/docxology/millennium_au
 docxology/agentic_os_security | TeX | https://github.com/docxology/agentic_os_security | Agentic Security and Operating Systems — deep review and prospectus of OpSec, Cognitive Security, and Agentic Cyber Security (paper source) · · Zenodo | paper: papers/2026_AgenticSecurityOperating/ | zenodo: https://doi.org/10.5281/zenodo.22754351
 docxology/FractiSkills | Python | https://github.com/docxology/FractiSkills | One portable agent SKILL per page of the SS Vibelandia Omniversal Canvas — Skillarum-rendered skill pages · · Zenodo | paper: papers/2026_FractiSkills/ | zenodo: https://doi.org/10.5281/zenodo.22712650
 docxology/cognitive_integrity | Python | https://github.com/docxology/cognitive_integrity | Cognitive Integrity Framework (CIF) — formal security architecture for multiagent systems · | paper: papers/2026_CognitiveIntegrity/
+docxology/Skillarum | Python | https://github.com/docxology/Skillarum | Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) · · Zenodo | paper: papers/2026_Skillarum/ | zenodo: https://doi.org/10.5281/zenodo.22663906
 ActiveInferenceInstitute/GeneralizedNotationNotation | Python | https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.19600217
 ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo | paper: papers/2025_CEREBRUM/ | zenodo: https://doi.org/10.5281/zenodo.15170907
 ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal-Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966
@@ -458,7 +459,7 @@ PROFESSIONAL PARTICIPATION, ENGAGEMENT, AND SERVICE
 ---------------------------------------------------
 2022-2024 | ISSS | Board of Directors | Vice-President for Communication and Systems Education on the International Society for the Systems Sciences Board. | Sources: ISSS: https://www.isss.org/home/
 2021-2023 | JoVE | Academia | Co-editor, Field and Laboratory Methods for Modern Entomology. | Sources: JoVE methods collection: https://www.jove.com/methods-collections/567/field-and-laboratory-methods-for-modern-entomology
-2021 | Cybernetics Society | Membership | Member (MCybS), Cybernetics Society. | Sources: Cybernetics Society: http://cybsoc.org/
+2021 | Cybernetics Society | Membership | Member (MCybS), Cybernetics Society. | Sources: Cybernetics Society: https://cybsoc.org/
 2020-ongoing | Active Inference Institute | Community | Active Inference Institute co-founder. | Sources: Active Inference Institute: https://www.activeinference.institute/
 2020-2023 | Davis Complexity Group | Community | Davis Complexity Group. | Sources: verification: https://danielarifriedman.com/resume/verify.html
 2018-2021 | ALIUS | Membership | ALIUS Research Group contributor, editor, and co-organizer. | Sources: ALIUS Research Group: https://www.aliusresearch.org/
@@ -468,7 +469,7 @@ PROFESSIONAL PARTICIPATION, ENGAGEMENT, AND SERVICE
 2015 | Santa Fe Institute | Workshop | Santa Fe Institute Complex Systems Summer School, one-month residential program. | Sources: Santa Fe Institute CSSS: https://www.santafe.edu/engage/learn/programs/sfi-complex-systems-summer-school
 2014-2018 | Gordon Lab | Field work | Five summers of ant fieldwork during PhD under Prof. Deborah Gordon at Southwestern Research Station, Arizona. | Sources: Southwestern Research Station: https://www.amnh.org/research/southwestern-research-station
 2014 | Stanford | Field work | Summer field ecology class with Stanford Prof. Rodolfo Dirzo at Las Tuxtlas tropical research station, Mexico. | Sources: Los Tuxtlas Biological Station: https://www.ibiologia.unam.mx/eblt/
-2014 | NIMBioS | Workshop | Summer workshop on Evolutionary and Quantitative Genetics at NIMBioS, University of Tennessee, Knoxville. | Sources: NIMBioS: http://www.nimbios.org/tutorials/TT_eqg
+2014 | NIMBioS | Workshop | Summer workshop on Evolutionary and Quantitative Genetics at NIMBioS, University of Tennessee, Knoxville. | Sources: NIMBioS: https://www.nimbios.org/tutorials/TT_eqg
 2014 | Science | Field work | Drosophila work with Dr. Michael Lang in Arizona. | Sources: Drosophila Evolution: https://droseu.net/drosophila-evolution/
 2014-ongoing | Science | Academia | Invited peer reviewer for 1-10 articles per year across different journals. | Sources: Science: https://www.science.org/
 2014-2023 | IUSSI | Membership | International Union for the Study of Social Insects. | Sources: IUSSI: https://iussi.org/

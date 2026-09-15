@@ -178,6 +178,8 @@ thumbnails) remains deferred under the same triggers; the band stays at
 880 MiB with the 900 MiB hard ceiling untouched.
 
 Re-anchored to the current newest receipt
-(`reports/pages_artifact_growth_2026-09-12.json`: **805.71 MiB / 4,808
-files** — already net of the omission class), the artifact sits about
-**74 MiB** below the 880 MiB warning band.
+(`reports/pages_artifact_growth_2026-09-15.json`: **825.6 MiB / 4,820
+files** — already net of the omission classes), the artifact sits about
+**54 MiB** below the 880 MiB warning band — headroom for roughly 2-3 more
+intakes at the observed ~15-20 MiB-per-intake PDF growth. Review cadence
+per DOC-009 stays monthly and after any anomalous growth jump.

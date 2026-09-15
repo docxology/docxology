@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T17:33:56Z",
+  "generated_at": "2026-09-15T22:56:52Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
@@ -11,7 +11,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-09-15T17:20:18+00:00",
+      "checked_at": "2026-09-15T22:56:49+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -26,7 +26,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-09-15T17:20:18+00:00",
+      "checked_at": "2026-09-15T22:56:49+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -40,7 +40,7 @@
         "https://api.github.com/users/docxology",
         "reports/public_source_snapshot_2026-09-15.json"
       ],
-      "checked_at": "2026-09-15T17:15:15.838398+00:00",
+      "checked_at": "2026-09-15T21:41:13.329423+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -54,7 +54,7 @@
         "https://api.github.com/users/ActiveInferenceInstitute",
         "reports/public_source_snapshot_2026-09-15.json"
       ],
-      "checked_at": "2026-09-15T17:15:15.838398+00:00",
+      "checked_at": "2026-09-15T21:41:13.329423+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
@@ -185,7 +185,7 @@
       ],
       "checked_at": "2026-08-26",
       "confidence": "medium",
-      "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 31 link to a public page.",
+      "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 30 link to a public page.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "State this as the current public membership count, not a cohort announcement or a claim about any specific announcement month."
     },

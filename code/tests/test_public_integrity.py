@@ -8,7 +8,11 @@ import sys
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
-from public_integrity import LOCAL_PATH_RE, scan_public_files  # noqa: E402
+from public_integrity import (  # noqa: E402
+    INSECURE_HTTP_URL_RE,
+    LOCAL_PATH_RE,
+    scan_public_files,
+)
 
 
 def test_current_public_cv_surfaces_have_no_privacy_violations():
@@ -31,3 +35,12 @@ def test_csp_data_source_is_not_treated_as_an_unsafe_link_scheme(tmp_path):
     fixture = tmp_path / "fixture.html"
     fixture.write_text('<meta content="img-src self data: https:">', encoding="utf-8")
     assert scan_public_files(tmp_path, ("fixture.html",)) == []
+
+
+def test_insecure_http_detector_flags_plain_http_but_accepts_https(tmp_path):
+    assert INSECURE_HTTP_URL_RE.search('"url": "http://example.org/page"')
+    assert not INSECURE_HTTP_URL_RE.search('"url": "https://example.org/page"')
+    fixture = tmp_path / "fixture.json"
+    fixture.write_text('{"url":"http://example.org/page"}', encoding="utf-8")
+    errors = scan_public_files(tmp_path, ("fixture.json",))
+    assert any("insecure http://" in error for error in errors)

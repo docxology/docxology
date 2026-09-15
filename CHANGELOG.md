@@ -4,6 +4,29 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 
 ## 2026-09-15
 
+- **Full-backlog orchestration wave (DOC-002/003/005/006/007/008/009/011/012/013/015):**
+  external evidence refreshed end-to-end (21-check snapshot, 20-section
+  inventory — the AII textbook-group source added to the surface list,
+  Scholar sync, GitHub inventory, fresh full pairing scan: 462 pairs, 0
+  needs_review, all 43 coverage exceptions re-validated). Catalog: three
+  principal curations promoted to SOFTWARE.md Developer Tools
+  (`dicklesworthstone_meta_operator`, `Skillarum`, `nockchain-migration`) —
+  115 originals / 154 grand total — classification queue at 4 honest defers
+  pending paper/deposit. Privacy: insecure http:// URLs upgraded to https
+  across the bibliography/works/resume/artwork chain, stealth records carry
+  explicit status, `public_integrity.py` now fails plain http:// links.
+  Agent layer: ReproducibilityLedger registered (schema registry 1.5)
+  fixing the dangling `schema_ref`, two inert query recipes removed,
+  release-integrity date preservation verified by-design with fresh SHAs.
+  QA: browser smoke 10/10 + QA 7/7 re-run green at current HEAD; GSC
+  preflight refreshed (signed-in Search Console steps remain externally
+  blocked). Budget: artifact 825.6 MiB / 4,820 files, 54.4 MiB headroom,
+  omission classes verified, ADR re-anchored. Runbooks: settle.md Notes and
+  AGENT_START carry the discovery-pointer rule; the TODO binder bullet
+  corrected to the fails-closed reality. SEC-002 unblock attempt: plugin
+  enabled, scan attempted against a clean candidate, failed closed on the
+  managed-profile runtime requirement — blocked state stands with updated
+  evidence.
 - **Fast intake path — parallel refresh, report reuse, fingerprint-gated
   regeneration:** three composable speedups with no gate loosened. The
   21-check snapshot in `refresh_public_sources.py` fans out through
