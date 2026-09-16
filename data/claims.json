@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T04:19:30Z",
+  "generated_at": "2026-09-16T05:11:22Z",
   "schema_ref": "/data/agent-index.json#schemas/ClaimWithEvidence",
   "claims": [
     {
@@ -40,7 +40,7 @@
         "https://api.github.com/users/docxology",
         "reports/public_source_snapshot_2026-09-16.json"
       ],
-      "checked_at": "2026-09-16T03:48:07.353263+00:00",
+      "checked_at": "2026-09-16T05:04:13.593540+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -54,7 +54,7 @@
         "https://api.github.com/users/ActiveInferenceInstitute",
         "reports/public_source_snapshot_2026-09-16.json"
       ],
-      "checked_at": "2026-09-16T03:48:07.353263+00:00",
+      "checked_at": "2026-09-16T05:04:13.593540+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
