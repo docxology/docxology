@@ -15537,10 +15537,12 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "5b6880fd84dd287c13a7ebc2127ea64a970f75dd",
-  "source_tree_sha": "01135bb1494ef024de2e0aa877007f498a15000b",
-  "source_worktree_clean": true,
-  "source_worktree_dirty_paths": [],
+  "source_commit": "4d7524ef6dc34df9adc3e609a246feed0307d7f7",
+  "source_tree_sha": "64acf6f6fbc00cfd7a14175d577de3913103233f",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "catalog.html"
+  ],
   "summary": {
     "applied": 268,
     "categories": {
