@@ -1,0 +1,200 @@
+{
+  "generated_at": "2026-09-16T02:03:24Z",
+  "source_commit": "1c97bb4a7478b60356ee4322905f72065d49e376",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "catalog.html"
+  ],
+  "source_tree_sha": "6a3bee9c40a3d165bb1af6b40b7218b72e5cf324",
+  "tool": "playwright screenshot",
+  "note": "Human review still required; these snapshots guard against obvious layout regressions.",
+  "screenshots": [
+    {
+      "page": "index.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-16/home-desktop.png",
+      "sha256": "e07010c6e5031489e82848c0b090be1ad510beeaa29d7a465314c62302053b81"
+    },
+    {
+      "page": "index.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-16/home-mobile.png",
+      "sha256": "d0e1290aa9d9ccba979cef5ab06d38c0246b0a78d685181f1389c2454f02389b"
+    },
+    {
+      "page": "publications.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-16/publications-desktop.png",
+      "sha256": "62706e8e7870d0612bf79fd09697c1caaa5a93d5b9ba5fd5cee3625e0e0809b2"
+    },
+    {
+      "page": "publications.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-16/publications-mobile.png",
+      "sha256": "58eb7839098679a4077ebef039fea37372f8631a237562c6c54b006018f5df53"
+    },
+    {
+      "page": "works/index.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-16/works-desktop.png",
+      "sha256": "ba14df6b7df229ab1fddc2ec23f77a36593369e6e3cbfb373b223ddfc87dfc27"
+    },
+    {
+      "page": "works/index.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-16/works-mobile.png",
+      "sha256": "4d224082d94138cba2721b911de29f6c039723cde0f0d44650ccbb3707fff564"
+    },
+    {
+      "page": "domains.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-16/domains-desktop.png",
+      "sha256": "7ff8d0dc9f99f70b7b3c96400221393a83b4d083695e4af5fc82caa8fa82db81"
+    },
+    {
+      "page": "domains.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-16/domains-mobile.png",
+      "sha256": "6b7f9797f1038336b193b2b01fbf7d90ac079785f99b9ef6f694284c911f3e87"
+    },
+    {
+      "page": "search.html?q=active%20inference",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-16/search-desktop.png",
+      "sha256": "4ce51d0f60255c76db9e134dd876ed8a2ca8d0fa10615b2342216ac70a883338"
+    },
+    {
+      "page": "search.html?q=active%20inference",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-16/search-mobile.png",
+      "sha256": "42fe4a3522f9e6a7b48ba6d6ed671a5dc7554c9f91f2bfdc15b0e9866713281f"
+    },
+    {
+      "page": "repositories.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-16/repositories-desktop.png",
+      "sha256": "2566af1b7a6f7f64779c890b45050797905c7813cd04f7e148e10956e2b75fed"
+    },
+    {
+      "page": "repositories.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-16/repositories-mobile.png",
+      "sha256": "80a1a91edcff6acfebc10675c96f1bb78c0a16792bff9e6c9bf975497ca86d85"
+    },
+    {
+      "page": "repositories-forks.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-16/repository-forks-desktop.png",
+      "sha256": "08b4e109293c6922aebc773a0c97b03279903d2e1d420a8c44df5d954022b6d4"
+    },
+    {
+      "page": "repositories-forks.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-16/repository-forks-mobile.png",
+      "sha256": "0e39ebf40d494c5452036caae7bca4ecaf4eae9f24dbc9a0e5c8fffbf2c45399"
+    },
+    {
+      "page": "catalog.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-16/catalog-desktop.png",
+      "sha256": "7e23b84608b6867695e223163534782c4750d337f353747df5fef9ef51d81e9a"
+    },
+    {
+      "page": "catalog.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-16/catalog-mobile.png",
+      "sha256": "dc0bdf4c13c5b50e50602d5508138a001fd749cc5bdc00748235c89afb647d82"
+    },
+    {
+      "page": "updates.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-16/updates-desktop.png",
+      "sha256": "d70edfbb774582cc8d9d124a9c1a0758ffe6ddd977fd364b4510775eef1efe11"
+    },
+    {
+      "page": "updates.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-16/updates-mobile.png",
+      "sha256": "19aa3bff2fba2533f8988fd3c9a07fd9b93287ebff796db6d6670b3ae9b0d965"
+    },
+    {
+      "page": "art.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-16/art-desktop.png",
+      "sha256": "0dadb704abb8012665d495a4b2bdd021c5c36c224e78022a41cb5a4c4aee436d"
+    },
+    {
+      "page": "art.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-16/art-mobile.png",
+      "sha256": "9fa319e9dd975cb9fd1a7d5f80f2a7dc8d9ed9bd6d86c4472ce0ffd31dd9b493"
+    },
+    {
+      "page": "discovery.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-16/discovery-desktop.png",
+      "sha256": "9b15cd3808ee9d3fec55d3aa56d4d7dba9aee17c1ce4966e1b1d6f485eba77bd"
+    },
+    {
+      "page": "discovery.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-16/discovery-mobile.png",
+      "sha256": "339374fd8de5af7d551f55f65e58913023a9531f18ff07ab9838c1baa1523f85"
+    },
+    {
+      "page": "cite-verify.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-16/cite-verify-desktop.png",
+      "sha256": "75f9cfab81b67063b24df8134b9052e514b663d7e60a10e898cd71c4f5e5345a"
+    },
+    {
+      "page": "cite-verify.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-16/cite-verify-mobile.png",
+      "sha256": "6ffbab7d8f24a5f27502b57f65843322cda20309078476d953412b52e83c05c2"
+    },
+    {
+      "page": "evidence.html",
+      "viewport": "desktop",
+      "size": "1440,1100",
+      "file": "reports/visual-qa/2026-09-16/evidence-desktop.png",
+      "sha256": "e4368f3569d44faac9657e129b253c4c8a2c2a566a0fa7bc594823706a064616"
+    },
+    {
+      "page": "evidence.html",
+      "viewport": "mobile",
+      "size": "390,900",
+      "file": "reports/visual-qa/2026-09-16/evidence-mobile.png",
+      "sha256": "643ee4d229d9ed73767254ab402581a5b417cb3ae375df02363a2afbb6339e9c"
+    }
+  ],
+  "review": {
+    "status": "pending",
+    "reviewed_by": null,
+    "reviewed_at": null
+  }
+}
