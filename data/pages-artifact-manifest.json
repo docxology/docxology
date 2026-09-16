@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-16T04:10:54Z",
-  "source_commit_at_generation": "d36b4e752996ba9a7d087124d86c1509ff11d8b9",
+  "generated_at": "2026-09-16T04:19:37Z",
+  "source_commit_at_generation": "5df5059e3805a4fe3b4be6267a584a81248dc72e",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 865316442,
+    "source_bytes": 865316437,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4824,
-    "artifact_bytes": 866167978
+    "artifact_bytes": 866167973
   },
   "included_files": [
     {
@@ -6516,7 +6516,7 @@
     {
       "path": "data/claims.json",
       "bytes": 12976,
-      "sha256": "3f10f2e6e84c0a3daa9c3964740e7e82241da264899208875b3a2932b65cde3c"
+      "sha256": "524fdc33b8f3718a3d4b7d10c203587337bf3310f37bbbfab5a60a8047888478"
     },
     {
       "path": "data/coverage-exceptions.json",
@@ -6546,7 +6546,7 @@
     {
       "path": "data/organizations.json",
       "bytes": 1446,
-      "sha256": "4fd6b15ce9e1cb64314f719b9776ae86e129ec1870f60fbd2d76b9fc71829d23"
+      "sha256": "f120239d5f5f2a3101a15adf4535a3a988ff245defe00b2b831a28ca339fd1f5"
     },
     {
       "path": "data/paired-publication-decisions.json",
@@ -6556,7 +6556,7 @@
     {
       "path": "data/people.json",
       "bytes": 1237,
-      "sha256": "3b9a8f8d366f7bb6de3aed6b12245910ca78ab2c68cf3b392ce5948c658ebca0"
+      "sha256": "768f32fd36f2215c36c4f7959f9e3fbe5cc35057a91f17501283b7eb30ddb888"
     },
     {
       "path": "data/public-source-observation-decisions.json",
@@ -6601,7 +6601,7 @@
     {
       "path": "data/resume.json",
       "bytes": 325934,
-      "sha256": "c07b9daf23e2d48e49bfff45cc35099e05292b3c11a78df075c4b72e642f114d"
+      "sha256": "887cdbe280b87ebc7d79cf9958a5c7129dc6d6d0194f72f5b60f30889b03dd83"
     },
     {
       "path": "data/scholar-snapshot.json",
@@ -6626,7 +6626,7 @@
     {
       "path": "data/software.json",
       "bytes": 76507,
-      "sha256": "5c3c7cc9998927f878016cb3dfeb55e53204244f4266bb3ac5cc80e37e848a4d"
+      "sha256": "79f28d7fed91a944f6e4cafa98d7b677497474fc99011d3e17b6e79d08346871"
     },
     {
       "path": "data/verification-log.json",
@@ -17246,27 +17246,27 @@
     {
       "path": "resume/academic.txt",
       "bytes": 64103,
-      "sha256": "9f232bd376994fe78d64174159e805939a798ced68cea7231e9bdc7f2ef16031"
+      "sha256": "d0390f334c0ce037aa5b6b353057fe61ba7d1cdaaf3067771e341c218279bffd"
     },
     {
       "path": "resume/full.txt",
       "bytes": 93548,
-      "sha256": "c1ceee31248758e60612d0ef20548b8763c5fb39e4eeefe7a8a974dc9a85c4d9"
+      "sha256": "1c32e5fad8c369120ff7b57a70e08566d411d6aef918bb7e72323eeba268808c"
     },
     {
       "path": "resume/resume.html",
       "bytes": 159032,
-      "sha256": "875ce5c8d59521941f2a0d0c21ec215cb916a3b80bfc6f3568a18a54880a3e5c"
+      "sha256": "cda9e31bcd33c859713b8710523717bb7f4f58f6f9365824dbfb89bab16a05bb"
     },
     {
       "path": "resume/resume.pdf",
-      "bytes": 360731,
-      "sha256": "d905b322359a6363b32c3f691f385e8dd69c53b272bd9429235f1c6a910f58c2"
+      "bytes": 360726,
+      "sha256": "ffa25c1aafe9c1cb16d8712a6eb9a9dd5ff870c1945f00dc76583c6589b93c3c"
     },
     {
       "path": "resume/software-consulting.txt",
       "bytes": 70184,
-      "sha256": "34182cbfea4b87d61634c1b4b4bf76ee925c99e7f159b70234221303de3e9fab"
+      "sha256": "a0282c083097a81113eaa4961323e8cf211af32cec33c083d93b23c7a3c11671"
     },
     {
       "path": "resume/source.json",
@@ -17276,12 +17276,12 @@
     {
       "path": "resume/teaching-service.txt",
       "bytes": 26041,
-      "sha256": "d2d4610df7c71917d0a8e52f4ee4fa2cd92bc8ac623a31e02356b7529cb546b6"
+      "sha256": "426d8cce6c2d377180f5e75175ff9e14fffae58dfd67314ee6b7520a72e6265c"
     },
     {
       "path": "resume/verify.html",
       "bytes": 11584,
-      "sha256": "b1c8915b6de34275a62d4e12ba81ab4ff2e662ce7a4b35e7ec650f719b567db5"
+      "sha256": "f9bd25c53cc096f1c4206f369ccd74ff8f6f7c4a868da1ebfcc717c33534a25e"
     },
     {
       "path": "robots.txt",
