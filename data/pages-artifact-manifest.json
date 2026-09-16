@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-16T16:03:56Z",
-  "source_commit_at_generation": "f61b5eadd6ba7c1bc84666c6538256a662f11554",
+  "generated_at": "2026-09-16T16:18:48Z",
+  "source_commit_at_generation": "a35ab23d272cf67c35dd6dc6d481ae0d97101089",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 927989760,
-    "source_bytes": 906726644,
+    "source_bytes": 906726879,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4857,
-    "artifact_bytes": 907583864
+    "artifact_bytes": 907584099
   },
   "included_files": [
     {
@@ -17065,8 +17065,8 @@
     },
     {
       "path": "reports/browser-qa/2026-09-16/manifest.json",
-      "bytes": 2266,
-      "sha256": "b986763fb48e27407bec2a5aa0a11b081839caf400b4129b31990b54960ba0a7"
+      "bytes": 2209,
+      "sha256": "043f10e20b1c049f401f4fdb6ba332aa087ccd0e1f0448bebba5c90db5ae6a11"
     },
     {
       "path": "reports/browser-qa/AGENTS.md",
@@ -17095,8 +17095,8 @@
     },
     {
       "path": "reports/browser-smoke/2026-09-16/manifest.json",
-      "bytes": 6619,
-      "sha256": "e5d8f3b5f140d0412cc9724bb368aa5691eec9adc2af6186ad96357b24f80f78"
+      "bytes": 6533,
+      "sha256": "662e6e03071a056aaf07520f2e627fa3d75b3e186b93cdcc0dac93c67ee8758d"
     },
     {
       "path": "reports/browser-smoke/2026-09-16/publications.png",
@@ -17125,8 +17125,8 @@
     },
     {
       "path": "reports/browser-smoke/2026-09-16/videos.png",
-      "bytes": 167551,
-      "sha256": "defec551ce1da5a7aef8a8abe4d8cc3df368e745eda22050cac41ba648584cb7"
+      "bytes": 167478,
+      "sha256": "264238a792c91025eaf5f86f501b5cb54139f82bfa148beb2f872d61be5daeae"
     },
     {
       "path": "reports/browser-smoke/2026-09-16/works.png",
@@ -17185,8 +17185,8 @@
     },
     {
       "path": "reports/external_links_2026-09-16.json",
-      "bytes": 370797,
-      "sha256": "eb2111f70e0093f93ec95eab868825fdd55095530e1ced8e7b58d141f0718286"
+      "bytes": 370866,
+      "sha256": "8d7a5595da45d7b7ca1b76055d3f018b4d955b73bb670ac250a8706651bbe7ce"
     },
     {
       "path": "reports/external_links_triage_2026-09-07.md",
@@ -17195,13 +17195,13 @@
     },
     {
       "path": "reports/external_links_triage_2026-09-16.json",
-      "bytes": 58749,
-      "sha256": "fb41f878d3e86642f55b02353545f7268b0077b059081e1475e886c7d2a24ffe"
+      "bytes": 59263,
+      "sha256": "7b964c343c8bd98e66cd2a9c8fe4c3d6430db09d7e41f189dd0280085076ce80"
     },
     {
       "path": "reports/external_links_triage_2026-09-16.md",
-      "bytes": 10714,
-      "sha256": "8280a68a0337cda8374e9ba3aff56d8e285ae12be0f704df876de649ef98e220"
+      "bytes": 10730,
+      "sha256": "bd2d5b2432bd192111958337d9dfb227aa2ad11c7e3588a9be0c1a9c95477396"
     },
     {
       "path": "reports/gsc_preflight_2026-09-15.json",
@@ -17210,8 +17210,8 @@
     },
     {
       "path": "reports/live_site_verification_2026-09-16.json",
-      "bytes": 15065,
-      "sha256": "078dd1be8e8c5bb2cd66c13ee71f14a6cb765cce7eb018c7192f90808fe6f9f9"
+      "bytes": 14970,
+      "sha256": "5342ed02e9bc7c19c142d174b77aea02d0c8690aa3377bbe3b938ab1fd3ff5b1"
     },
     {
       "path": "reports/paired_publications_2026-06-04.json",
@@ -17326,7 +17326,7 @@
     {
       "path": "reports/public_source_snapshot_2026-09-16.json",
       "bytes": 17951,
-      "sha256": "edf960caaf2e3830b8210e8d1965ab7a5d1be0e87626e2e47ebece560261a1d2"
+      "sha256": "cf65a6e61fe9ab9f938a39f9a2295776a77df53912545f762b154df4a5e3e866"
     },
     {
       "path": "reports/publishing_status_megaindex.md",
@@ -17355,8 +17355,8 @@
     },
     {
       "path": "reports/visual-qa/2026-09-16/manifest.json",
-      "bytes": 7138,
-      "sha256": "10a9804e80298c3aedcdf8850ee9a0aa6f7e0daac3ce9f7ef6b60a529484e9c5"
+      "bytes": 7085,
+      "sha256": "e41354fad2d5cda6639c6c56b24aa5dc5bab0ee0808ecdfb360b297415c2d13d"
     },
     {
       "path": "reports/visual-qa/AGENTS.md",
@@ -24330,7 +24330,7 @@
   },
   "omitted_visual_qa_screenshots": {
     "count": 26,
-    "bytes": 55282442,
+    "bytes": 55021898,
     "examples": [
       "reports/visual-qa/2026-09-16/art-desktop.png",
       "reports/visual-qa/2026-09-16/art-mobile.png",
