@@ -470,6 +470,20 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
 - Deliverable: migrate ad-hoc `sys.path` imports into a `docxology_tools` package with thin, backwards-compatible CLI wrappers on a dedicated follow-up branch
 - Acceptance: every current CLI command remains callable, no runtime path mutation is required outside wrappers, full tests/validation/lint pass, and the migration has its own review and release evidence
 - Dependencies: DOC-002 release attestation, generator-plan coverage, Python packaging decision
+- Session note (2026-09-16, DOC-002 attestation): the post-deploy
+  attestation cycle was exercised end-to-end and its binding model is now
+  enumerated: (a) `attest_release.py --apply` requires every evidence
+  receipt (live verify, snapshot, visual QA, browser QA/smoke, external
+  links, PSR) bound to the SAME release commit as the deployed SHA; (b)
+  evidence receipts are payload — landing them moves HEAD, so the capture
+  must happen at the final head and the receipts land as the "later,
+  reviewed source update"; (c) the PSR embeds HEAD at render and its
+  check tolerates only control-classified drift, so each payload landing
+  needs one PSR chase commit; (d) the deploy must observe the exact
+  release commit. The full cycle needs a stable deployed SHA with
+  evidence captured in a detached clean checkout — a release-cycle
+  procedure, not an intra-wave step; the 2026-09-16 evidence receipts
+  are committed and the next release cycle runs the documented flow.
 
 ### SEC-002 — Re-run the managed-profile deep security scan
 
