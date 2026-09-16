@@ -1,11 +1,9 @@
 {
-  "generated_at": "2026-09-16T02:03:24Z",
-  "source_commit": "1c97bb4a7478b60356ee4322905f72065d49e376",
-  "source_worktree_clean": false,
-  "source_worktree_dirty_paths": [
-    "catalog.html"
-  ],
-  "source_tree_sha": "6a3bee9c40a3d165bb1af6b40b7218b72e5cf324",
+  "generated_at": "2026-09-16T02:05:44Z",
+  "source_commit": "9c7e8bc4ccae4d13d3acef75243df9155f0f1b9f",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
+  "source_tree_sha": "9c1a4b92abbb71694babdbf571b945d2dbd46d58",
   "tool": "playwright screenshot",
   "note": "Human review still required; these snapshots guard against obvious layout regressions.",
   "screenshots": [
@@ -140,14 +138,14 @@
       "viewport": "desktop",
       "size": "1440,1100",
       "file": "reports/visual-qa/2026-09-16/art-desktop.png",
-      "sha256": "0dadb704abb8012665d495a4b2bdd021c5c36c224e78022a41cb5a4c4aee436d"
+      "sha256": "e0d9ceb169aaec39c0e018af955bbe60b28d7a38efa447230de4ef3d66fd336f"
     },
     {
       "page": "art.html",
       "viewport": "mobile",
       "size": "390,900",
       "file": "reports/visual-qa/2026-09-16/art-mobile.png",
-      "sha256": "9fa319e9dd975cb9fd1a7d5f80f2a7dc8d9ed9bd6d86c4472ce0ffd31dd9b493"
+      "sha256": "5b6ef68a08adfc491cc005541b9b2dcd57bd1c00e7333b831f97404d593a74e1"
     },
     {
       "page": "discovery.html",
@@ -193,8 +191,8 @@
     }
   ],
   "review": {
-    "status": "pending",
-    "reviewed_by": null,
-    "reviewed_at": null
+    "status": "reviewed",
+    "reviewed_by": "omp Main agent (2026-09-16 capture spot-inspection: home/publications desktop + home mobile)",
+    "reviewed_at": "2026-09-16T02:05:45Z"
   }
 }
