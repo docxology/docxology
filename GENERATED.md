@@ -53,7 +53,7 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Static accessibility report | `reports/accessibility_static_2026-09-15.json` | `root HTML pages`<br>`style.css`<br>`code/orchestrators/accessibility_audit.py` | `python3 code/orchestrators/accessibility_audit.py` |
 | Browser smoke checks | `reports/browser-smoke/2026-09-15/*.png`<br>`reports/browser-smoke/2026-09-15/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
 | Progressive browser QA | `reports/browser-qa/2026-09-15/manifest.json` | `root HTML pages`<br>`js/*.js`<br>`style.css`<br>`code/orchestrators/browser_qa.py` | `uv run --extra browser-qa python3 code/orchestrators/browser_qa.py` |
-| Live site verification | `reports/live_site_verification_2026-09-15.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
+| Live site verification | `reports/live_site_verification_2026-09-16.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
 | Feed | `feed.xml` | `data/works.json`<br>`code/orchestrators/generate_feed.py` | `python3 code/orchestrators/generate_feed.py` |
 | Sitemap | `sitemap.xml` | `works/*.html`<br>`code/src/sitemap_policy.py`<br>`code/orchestrators/build_sitemap.py` | `python3 code/orchestrators/build_sitemap.py` |
 | 404 page | `404.html` | `code/src/site_nav.py`<br>`code/orchestrators/build_404_page.py` | `python3 code/orchestrators/build_404_page.py` |
