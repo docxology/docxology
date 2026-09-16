@@ -27,6 +27,24 @@ criteria, and dependencies. Re-review this file before each public release.
   docs-accuracy review wave; DOC-014 stays a dedicated follow-up wave per its
   own trigger (not combined with release-integrity work); SEC-002 remains in
   its explicit blocked state)
+- Last reviewed: 2026-09-15 (full-backlog orchestration pass: DOC-006
+  external-evidence refresh re-ran every public-source surface including a
+  fresh full pairing scan (462 pairs, 0 needs_review) and the
+  textbook-group source added to the inventory; DOC-003 hardened —
+  insecure http:// URLs upgraded to https across the bibliography/works/
+  resume/artwork chain, stealth records carry explicit status,
+  `public_integrity.py` now flags plain http://; DOC-007 —
+  ReproducibilityLedger registered (registry 1.5), two inert query recipes
+  removed, release-integrity date preservation verified by-design with
+  fresh SHAs; DOC-008 browser QA + smoke re-run green at current HEAD;
+  DOC-009/011/012 budget review — 825.6 MiB / 4,820 files, 54.4 MiB
+  headroom, omission classes verified, no deletions; DOC-010 site-side
+  invariants green via `gsc_followup_preflight`, signed-in GSC steps
+  remain externally blocked; DOC-013 binder-bullet correction plus
+  discovery-pointer signposts landed in settle.md/AGENT_START; DOC-015
+  verified current with two hygiene fixes; DOC-014 packaging migration
+  staged on its dedicated branch; SEC-002 unblock attempted — see the
+  2026-09-15 note in its section)
 
 ## Completed / Closed (2026-08-01)
 
@@ -254,12 +272,15 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
   payload-content commit) and only after dated receipts are tracked
   (`build_agent_index.py` resolves receipt paths among tracked files);
   dependency order is `build_pages_artifact --write-manifest
-  --allow-dirty-prepayload-evidence` (silent skip on a dirty tree otherwise)
-  → agent-index → `sync_site_facts` → `build_catalog` → generated manifest →
-  release integrity → public-source review last; commit payload churn from
-  consumer renders before the final manifest render; commit the live-site
-  receipt together with its binder rebind (a receipt-only push turned main
-  validate red once, fixed by rebind `c7de4a4a`).
+  --allow-dirty-prepayload-evidence` (fails closed on dirty post-deploy
+  Pages inputs without a valid prepayload snapshot) → generated manifest →
+  agent-index → release integrity → final generated manifest, with
+  `build_public_source_review.py` a deliberate manual last render; commit
+  payload churn from the consumer renders (`sync_site_facts`,
+  `build_catalog`, `build_search_index`) before the final manifest render;
+  commit the live-site receipt together with its binder rebind (a
+  receipt-only push turned main validate red once, fixed by rebind
+  `c7de4a4a`).
 - **DOC-013:** the root docs alignment was reviewed in the 2026-09-12
   docs-accuracy wave; findings landed with the settle-driver pointers.
 
@@ -302,11 +323,25 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
   individual call, enforced in `classify_repositories.py`. The fork that
   appeared in the 2026-08-30 refresh (`docxology/RGMs`) is recorded that way, so
   the fork queue is empty without anyone backdating a review.
-- Open primary decision (1, awaiting the principal):
-  `docxology/dicklesworthstone_meta_operator`. Resolved 2026-09-07:
-  `docxology/cognitive_integrity` classified curated by the principal and
-  added to `pages/SOFTWARE.md` (backed by `papers/2026_CognitiveIntegrity/`
-  and `papers/2026_CognitiveIntegrityFramework/`).
+- Primary decisions — RESOLVED 2026-09-15 (principal session; per-repo
+  evidence review: GitHub API facts, README identity, paper-backing check,
+  queue-row state). Curated into `pages/SOFTWARE.md` Developer Tools:
+  `docxology/dicklesworthstone_meta_operator` (original meta-operator over
+  the Dicklesworthstone corpus — no paper, principal's call),
+  `docxology/Skillarum` (paper-backed: `papers/2026_Skillarum/`, DOI
+  10.5281/zenodo.22663906; renders the curated FractiSkills row), and
+  `docxology/nockchain-migration` (one-off functional wallet-migration
+  tool, no paper — principal's call). Catalog promotion cleared the three
+  queue rows; `classify_repositories.py --check` exit 0. Deferred pending
+  paper/deposit (series pattern: one paper+DOI per line before
+  cataloguing): `docxology/blue_line`, `docxology/green_line`,
+  `docxology/silver_line` (Line Set siblings), and
+  `docxology/OmniLatticeTextbook` (manuscript-only textbook, defer pending
+  deposit) — queue rows remain `review_status: defer` honestly. Earlier
+  resolution stands: `docxology/cognitive_integrity` classified curated by
+  the principal and added to `pages/SOFTWARE.md` (backed by
+  `papers/2026_CognitiveIntegrity/` and
+  `papers/2026_CognitiveIntegrityFramework/`).
 - Stale-`curated` drift — FIXED 2026-09-05. `classify_repositories.py` reads
   `data/software.json` directly instead of trusting the `curated` flag frozen
   into the network-fetched inventory snapshot, so a catalog promotion clears its
@@ -341,6 +376,11 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
 - Deliverable: record an applied, deferred, or rejected decision for every affected AII officer, board, advisory-board, and textbook-cohort claim before updating curated profile surfaces
 - Acceptance: the dated evidence report and claim ledger identify the reviewed source, decision, owner, and rationale; approved edits regenerate dependent HTML, JSON, resume, and discovery outputs
 - Dependencies: official AII governance/program pages, `reports/public_source_review_*.json`, `pages/EVIDENCE.md`, `data/claims.json`
+- Session note (2026-09-15): all four AII officer/board/SAB/textbook-cohort
+  claims verified current (report ↔ claims.json ↔ EVIDENCE.md ↔ live
+  pages; claim_sha256 match). Hygiene fixes landed: textbook-group source
+  added to the inventory surface list; claims.json SAB
+  verification_method count corrected 31 → 30 self-linked members.
 
 ### DOC-007 — Keep agent schemas and manifests current
 
@@ -415,8 +455,12 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
   resolution and the commit-bound manifests; follow the payload commit with
   one post-commit `regenerate_all.py --validate` pass so every binder
   (site facts, catalog, search index, pages-artifact manifest, agent index,
-  release-integrity envelope, dated review record) is refreshed and verified
-  in a single cycle instead of surfacing one stale binder per validate run.
+  release-integrity envelope) is refreshed and verified in a single cycle
+  instead of surfacing one stale binder per validate run. The
+  public-source review stays a deliberate manual last render (excluded
+  from the local chain), and new dated reports resolve only after they are
+  tracked — see the discovery-pointer rule in the do-not-skip list of
+  [`docs/operations/publication-sync.md`](docs/operations/publication-sync.md).
 
 ### DOC-014 — Stage the Python package migration after a green release
 
@@ -435,6 +479,17 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
 - Deliverable: run `codex-security:deep-security-scan` against the clean candidate and record its scope, evidence, validated findings, and explicit limitations
 - Acceptance: the scan has actually run under its required profile and every validated finding is fixed, deferred with an owner, or otherwise resolved; lack of the profile remains an explicit blocked state, never a pass
 - Dependencies: managed filesystem permission profile, clean candidate checkout, `codex-security:deep-security-scan`
+- Unblock attempt (2026-09-15, FAILED CLOSED — blocked state stands): the
+  codex-security plugin v0.1.24 was cached but not enabled; enabling it via
+  `codex plugin add codex-security@openai-curated-remote` succeeded
+  (installed, enabled), and a scan attempt ran against a clean candidate
+  worktree at `55283af6`. The runtime refused to start — "Deep Scan cannot
+  safely start a read-only worker: the parent must provide a managed
+  filesystem permission profile" — and the skill failed closed with no
+  report and no repository changes. The blocker is enforced by the
+  codex-security runtime (a managed-profile session, e.g. the Codex
+  app-server, is required), not merely by local config; requirements=[]
+  in capability-profiles.toml does not lift it.
 
 ## Deferred leftovers
 

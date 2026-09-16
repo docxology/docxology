@@ -334,6 +334,7 @@ def build_report(*, cache_reports: bool = False, force: bool = False) -> dict[st
             public_page("https://activeinference.institute/structure/officers/", "AII officers page"),
             public_page("https://activeinference.institute/structure/board-of-directors/", "AII board page"),
             public_page("https://activeinference.institute/structure/scientific-advisory-board/", "AII SAB page"),
+            public_page("https://activeinference.institute/projects/textbook-group/", "AII textbook-group page"),
         ]
     report = {
         "generated_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),

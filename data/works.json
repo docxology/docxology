@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T21:31:28Z",
+  "generated_at": "2026-09-15T22:16:38Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
   "count": 215,
@@ -2375,7 +2375,7 @@
       "type": "Paper",
       "title": "PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus",
       "venue": "Stanford University",
-      "url": "http://purl.stanford.edu/pb813wm1484",
+      "url": "https://purl.stanford.edu/pb813wm1484",
       "doi": "",
       "docs_path": "papers/2019_PhDDissertation/",
       "has_paper_folder": true,

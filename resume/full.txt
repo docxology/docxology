@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-09-15T17:33:57Z
+Generated: 2026-09-15T22:56:53Z
 
-Current public metrics: 215 curated works; 151 catalogued software repositories (112 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 216 docxology + 43 AII public repositories (169 primary, 90 forks).
+Current public metrics: 215 curated works; 154 catalogued software repositories (115 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 216 docxology + 43 AII public repositories (169 primary, 90 forks).
 
 SUMMARY
 -------
@@ -45,7 +45,7 @@ EDUCATION
   - Theodore Roosevelt Memorial Award, American Museum of Natural History, 2016, $2,500.
   - Lewis and Clark Fund grant, American Philosophical Society, 2016, $4,000.
   - NSF GRFP Honorable Mention, 2015 and 2016.
-  - Sources: Stanford dissertation: http://purl.stanford.edu/pb813wm1484
+  - Sources: Stanford dissertation: https://purl.stanford.edu/pb813wm1484
 2010-2014 | BSc in Genetics | University of California, Davis | Davis, CA, USA
   - BSc in Genetics, University of California, Davis.
   - Genetics Department Citation, Highest Honors, 2014; 3.74 GPA overall.
@@ -255,7 +255,7 @@ WORKS AND PUBLICATIONS (215)
 [090] 2020 | Paper | The Innovator's Catechism | Zenodo | 10.5281/zenodo.4383229
 [091] 2020 | Paper | The neuroscience of decision making (interview with Timothy Hanks) | ALIUS Bulletin | 10.34700/8pg4-0h12
 [092] 2019 | Paper | Dennett Explained (interview with Daniel Dennett) | ALIUS Bulletin | 10.34700/7gkw-zh08
-[093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | http://purl.stanford.edu/pb813wm1484
+[093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | https://purl.stanford.edu/pb813wm1484
 [094] 2019 | Paper | The ant colony as a test for scientific theories of consciousness | Synthese | 10.1007/s11229-019-02130-y
 [095] 2019 | Paper | The physiology of forager hydration and variation among harvester ant colonies | Scientific Reports | 10.1038/s41598-019-41586-3
 [096] 2018 | Paper | Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations | PLoS One | 10.1371/journal.pone.0202117
@@ -380,7 +380,7 @@ WORKS AND PUBLICATIONS (215)
 [217] 2026 | Paper | FractiSkills: One Portable Agent Skill per Page | Zenodo | 10.5281/zenodo.22712650
 [218] 2026 | Paper | Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security | Zenodo | 10.5281/zenodo.22754351
 
-SOFTWARE (151)
+SOFTWARE (154)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -494,6 +494,9 @@ docxology/agentic_os_security | TeX | https://github.com/docxology/agentic_os_se
 docxology/FractiSkills | Python | https://github.com/docxology/FractiSkills | One portable agent SKILL per page of the SS Vibelandia Omniversal Canvas — Skillarum-rendered skill pages · · Zenodo | paper: papers/2026_FractiSkills/ | zenodo: https://doi.org/10.5281/zenodo.22712650
 docxology/multi-time | Python | https://github.com/docxology/multi-time | Multi-frequency time-series analysis toolkit built on sktime — validates irregular series, tests stationarity and Granger causality, and evaluates forecasting models
 docxology/cognitive_integrity | Python | https://github.com/docxology/cognitive_integrity | Cognitive Integrity Framework (CIF) — formal security architecture for multiagent systems · | paper: papers/2026_CognitiveIntegrity/
+docxology/dicklesworthstone_meta_operator | HTML | https://github.com/docxology/dicklesworthstone_meta_operator | Meta-operator over the Dicklesworthstone GitHub corpus: clone, verify upstream sync, orchestrate, interpret, and dashboard the ~207-repo corpus
+docxology/Skillarum | Python | https://github.com/docxology/Skillarum | Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) · · Zenodo | paper: papers/2026_Skillarum/ | zenodo: https://doi.org/10.5281/zenodo.22663906
+docxology/nockchain-migration | Python | https://github.com/docxology/nockchain-migration | Operator-gated wizard and tooling for migrating Nockchain wallets from legacy v0 notes to v1 P2PKH addresses (one-off functional tool, no paper)
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
 ActiveInferenceInstitute/ActiveBlockference | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveBlockference | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework
 ActiveInferenceInstitute/ActiveInferAnts | Python | https://github.com/ActiveInferenceInstitute/ActiveInferAnts | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference
@@ -590,7 +593,7 @@ PROFESSIONAL PARTICIPATION, ENGAGEMENT, AND SERVICE
 ---------------------------------------------------
 2022-2024 | ISSS | Board of Directors | Vice-President for Communication and Systems Education on the International Society for the Systems Sciences Board. | Sources: ISSS: https://www.isss.org/home/
 2021-2023 | JoVE | Academia | Co-editor, Field and Laboratory Methods for Modern Entomology. | Sources: JoVE methods collection: https://www.jove.com/methods-collections/567/field-and-laboratory-methods-for-modern-entomology
-2021 | Cybernetics Society | Membership | Member (MCybS), Cybernetics Society. | Sources: Cybernetics Society: http://cybsoc.org/
+2021 | Cybernetics Society | Membership | Member (MCybS), Cybernetics Society. | Sources: Cybernetics Society: https://cybsoc.org/
 2020-ongoing | IPA | Membership | Information Professional Association. | Sources: IPA: https://information-professionals.org/
 2020-ongoing | Active Inference Institute | Community | Active Inference Institute co-founder. | Sources: Active Inference Institute: https://www.activeinference.institute/
 2020-2023 | Davis Complexity Group | Community | Davis Complexity Group. | Sources: verification: https://danielarifriedman.com/resume/verify.html
@@ -605,7 +608,7 @@ PROFESSIONAL PARTICIPATION, ENGAGEMENT, AND SERVICE
 2015 | Santa Fe Institute | Workshop | Santa Fe Institute Complex Systems Summer School, one-month residential program. | Sources: Santa Fe Institute CSSS: https://www.santafe.edu/engage/learn/programs/sfi-complex-systems-summer-school
 2014-2018 | Gordon Lab | Field work | Five summers of ant fieldwork during PhD under Prof. Deborah Gordon at Southwestern Research Station, Arizona. | Sources: Southwestern Research Station: https://www.amnh.org/research/southwestern-research-station
 2014 | Stanford | Field work | Summer field ecology class with Stanford Prof. Rodolfo Dirzo at Las Tuxtlas tropical research station, Mexico. | Sources: Los Tuxtlas Biological Station: https://www.ibiologia.unam.mx/eblt/
-2014 | NIMBioS | Workshop | Summer workshop on Evolutionary and Quantitative Genetics at NIMBioS, University of Tennessee, Knoxville. | Sources: NIMBioS: http://www.nimbios.org/tutorials/TT_eqg
+2014 | NIMBioS | Workshop | Summer workshop on Evolutionary and Quantitative Genetics at NIMBioS, University of Tennessee, Knoxville. | Sources: NIMBioS: https://www.nimbios.org/tutorials/TT_eqg
 2014 | Science | Field work | Drosophila work with Dr. Michael Lang in Arizona. | Sources: Drosophila Evolution: https://droseu.net/drosophila-evolution/
 2014-ongoing | Science | Academia | Invited peer reviewer for 1-10 articles per year across different journals. | Sources: Science: https://www.science.org/
 2014-2023 | IUSSI | Membership | International Union for the Study of Social Insects. | Sources: IUSSI: https://iussi.org/
@@ -618,7 +621,7 @@ PROFESSIONAL PARTICIPATION, ENGAGEMENT, AND SERVICE
 
 ART PORTFOLIO AND USES
 ----------------------
-All | Art portfolio | Posting drawings to an online portfolio since 2009. | Sources: Flickr: http://flickr.com/photos/daniel_friedman/
+All | Art portfolio | Posting drawings to an online portfolio since 2009. | Sources: Flickr: https://flickr.com/photos/daniel_friedman/
 2021 | Curio Cards | A full Curio Cards set sold at Christie's New York on September 30, 2021 for 393 ETH ($1,202,108). | Sources: Christie's Curio Cards lot: https://www.christies.com/lot/lot-6337619
 2021 | Curio Cards | Curio Cards collection stored in the Arctic World Archive with art and provenance data intended for long-duration preservation. | Sources: Top Dog Beach Club: https://topdogbeachclub.com/non-fungible-vault/
 2021 | Curio Cards | Public auction and market history for Curio Cards includes major 2021 sales; verify venue-specific claims before reusing exact auction-house wording. | Sources: Sotheby's Curio Cards: https://metaverse.sothebys.com/natively-digital/lots/curio-cards-complete-set-1-30-plus-17b

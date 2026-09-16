@@ -146,7 +146,7 @@ def test_pdf_contains_clickable_link_annotations():
     assert "mailto:daniel@activeinference.institute" in uris
     assert "https://github.com/docxology" in uris
     assert "https://doi.org/10.5281/zenodo.17555266" in uris
-    assert "http://purl.stanford.edu/pb813wm1484" in uris
+    assert "https://purl.stanford.edu/pb813wm1484" in uris
     assert "https://activeinference.institute/structure/officers/" in uris
     assert "https://api.nsf.gov/services/v1/awards/2010290.json" in uris
     assert "https://doi.org/10.5281/zenodo.17138223" in uris

@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-09-15T21:41:26Z",
+  "source_commit": "55283af6e2a83f40272acd685f327171300b88a8",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "code/orchestrators/refresh_public_source_inventory.py"
+  ],
+  "source_tree_sha": "f0c493da6604756f892f2dcd10d37de6de8dc680",
+  "tool": "playwright screenshot",
+  "note": "Selector-based smoke checks for core local site behavior.",
+  "passing": 10,
+  "count": 10,
+  "checks": [
+    {
+      "name": "home",
+      "page": "index.html",
+      "selector": "h1",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-15/home.png",
+      "screenshot_sha256": "d3b81025815e306bd068946ee1708816f2087933a74ce628bae15701853792d2",
+      "stdout": "Navigating to http://127.0.0.1:56857/index.html\nWaiting for selector h1...\nWaiting for timeout 500...\nCapturing screenshot into /Users/hum/Documents/GitHub/HumOS/projects/platform/hum-docxology/repos/public/docxology/reports/browser-smoke/2026-09-15/home.png",
+      "stderr": ""
+    },
+    {
+      "name": "publications",
+      "page": "publications.html",
+      "selector": "table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-15/publications.png",
+      "screenshot_sha256": "2e32e82890eadfd51a975c6797948f4deb9c3f6bef73d9d98d34c5bd2646c980",
+      "stdout": "Navigating to http://127.0.0.1:56857/publications.html\nWaiting for selector table...\nWaiting for timeout 500...\nCapturing screenshot into /Users/hum/Documents/GitHub/HumOS/projects/platform/hum-docxology/repos/public/docxology/reports/browser-smoke/2026-09-15/publications.png",
+      "stderr": ""
+    },
+    {
+      "name": "works",
+      "page": "works/index.html",
+      "selector": ".work-row",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-15/works.png",
+      "screenshot_sha256": "f78b3401630e7a9f4b7981d6086cacc2ccda8cbb4d7bdb499118367bc2c6bd9a",
+      "stdout": "Navigating to http://127.0.0.1:56857/works/index.html\nWaiting for selector .work-row...\nWaiting for timeout 500...\nCapturing screenshot into /Users/hum/Documents/GitHub/HumOS/projects/platform/hum-docxology/repos/public/docxology/reports/browser-smoke/2026-09-15/works.png",
+      "stderr": ""
+    },
+    {
+      "name": "search",
+      "page": "search.html?q=active%20inference",
+      "selector": ".result-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-15/search.png",
+      "screenshot_sha256": "d1ceac6767434613325c7bbb9340ed35db4162866347f8430198cc81c2333960",
+      "stdout": "Navigating to http://127.0.0.1:56857/search.html?q=active%20inference\nWaiting for selector .result-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/hum/Documents/GitHub/HumOS/projects/platform/hum-docxology/repos/public/docxology/reports/browser-smoke/2026-09-15/search.png",
+      "stderr": ""
+    },
+    {
+      "name": "repositories",
+      "page": "repositories.html",
+      "selector": ".inventory-table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-15/repositories.png",
+      "screenshot_sha256": "17bfb256310c8a81fdef7ff11b8777a78e0eb98142e023fa793ef196f01f67ae",
+      "stdout": "Navigating to http://127.0.0.1:56857/repositories.html\nWaiting for selector .inventory-table...\nWaiting for timeout 500...\nCapturing screenshot into /Users/hum/Documents/GitHub/HumOS/projects/platform/hum-docxology/repos/public/docxology/reports/browser-smoke/2026-09-15/repositories.png",
+      "stderr": ""
+    },
+    {
+      "name": "repository-forks",
+      "page": "repositories-forks.html",
+      "selector": ".inventory-table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-15/repository-forks.png",
+      "screenshot_sha256": "5119807b11895d53d561080493bc843664f138fc5206f66a97cf308c5c63a265",
+      "stdout": "Navigating to http://127.0.0.1:56857/repositories-forks.html\nWaiting for selector .inventory-table...\nWaiting for timeout 500...\nCapturing screenshot into /Users/hum/Documents/GitHub/HumOS/projects/platform/hum-docxology/repos/public/docxology/reports/browser-smoke/2026-09-15/repository-forks.png",
+      "stderr": ""
+    },
+    {
+      "name": "catalog",
+      "page": "catalog.html",
+      "selector": ".catalog-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-15/catalog.png",
+      "screenshot_sha256": "49351828ce222007f912f3441b1329c8a6d7c681f1fb1e40b6051340e17aa629",
+      "stdout": "Navigating to http://127.0.0.1:56857/catalog.html\nWaiting for selector .catalog-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/hum/Documents/GitHub/HumOS/projects/platform/hum-docxology/repos/public/docxology/reports/browser-smoke/2026-09-15/catalog.png",
+      "stderr": ""
+    },
+    {
+      "name": "updates",
+      "page": "updates.html",
+      "selector": ".update-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-15/updates.png",
+      "screenshot_sha256": "a47cc4aefd795a99005092e8d58dc6415e0dea41d397735a9107183a2523df41",
+      "stdout": "Navigating to http://127.0.0.1:56857/updates.html\nWaiting for selector .update-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/hum/Documents/GitHub/HumOS/projects/platform/hum-docxology/repos/public/docxology/reports/browser-smoke/2026-09-15/updates.png",
+      "stderr": ""
+    },
+    {
+      "name": "art",
+      "page": "art.html",
+      "selector": ".art-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-15/art.png",
+      "screenshot_sha256": "0a00aa0c7343af9a1a8685eafdb015d29bb8e333c4ead7c765936fd51f77170c",
+      "stdout": "Navigating to http://127.0.0.1:56857/art.html\nWaiting for selector .art-card...\nWaiting for timeout 500...\nCapturing screenshot into /Users/hum/Documents/GitHub/HumOS/projects/platform/hum-docxology/repos/public/docxology/reports/browser-smoke/2026-09-15/art.png",
+      "stderr": ""
+    },
+    {
+      "name": "videos",
+      "page": "videos.html",
+      "selector": ".video-topic-panel",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-15/videos.png",
+      "screenshot_sha256": "04dbaf7fed16ace252d30ee9201302045f4ba23deb9a0a99b099c17a1f25cc9c",
+      "stdout": "Navigating to http://127.0.0.1:56857/videos.html\nWaiting for selector .video-topic-panel...\nWaiting for timeout 500...\nCapturing screenshot into /Users/hum/Documents/GitHub/HumOS/projects/platform/hum-docxology/repos/public/docxology/reports/browser-smoke/2026-09-15/videos.png",
+      "stderr": ""
+    }
+  ]
+}

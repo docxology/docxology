@@ -90,12 +90,12 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | Public-source snapshot | [reports/public_source_snapshot_2026-09-15.json](../reports/public_source_snapshot_2026-09-15.json) | Latest public API freshness report |
 | Public-source inventory | [reports/public_source_inventory_2026-09-15.json](../reports/public_source_inventory_2026-09-15.json) | Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages |
 | Reconciliation report | [reports/reconciliation_2026-09-15.md](../reports/reconciliation_2026-09-15.md) | Human-readable comparison of curated counts and public-source counts |
-| External-link report | [reports/external_links_2026-09-14.json](../reports/external_links_2026-09-14.json) | Cached scoped network check for site-critical outbound links |
-| External-link triage | [reports/external_links_triage_2026-09-14.md](../reports/external_links_triage_2026-09-14.md) | Categorized link warnings: bot-protected, transient, timeout, stale, and review |
-| Live-site verification | [latest dated report](../reports/live_site_verification_2026-09-15.json) | Deployed-site checks for expected markers, JSON contracts/counts, cache headers, deployment metadata, and GitHub Pages status |
+| External-link report | [reports/external_links_2026-09-15.json](../reports/external_links_2026-09-15.json) | Cached scoped network check for site-critical outbound links |
+| External-link triage | [reports/external_links_triage_2026-09-15.md](../reports/external_links_triage_2026-09-15.md) | Categorized link warnings: bot-protected, transient, timeout, stale, and review |
+| Live-site verification | [latest dated report](../reports/live_site_verification_2026-09-16.json) | Deployed-site checks for expected markers, JSON contracts/counts, cache headers, deployment metadata, and GitHub Pages status |
 | Asset-size audit | [reports/asset_size_2026-09-15.json](../reports/asset_size_2026-09-15.json) | Size budget report for public assets and generated exports |
 | Static accessibility report | [reports/accessibility_static_2026-09-15.json](../reports/accessibility_static_2026-09-15.json) | Static accessibility checks for root HTML pages |
-| Browser smoke manifest | [reports/browser-smoke/2026-09-11/manifest.json](../reports/browser-smoke/2026-09-11/manifest.json) | Browser-rendered smoke screenshots for high-priority pages |
+| Browser smoke manifest | [reports/browser-smoke/2026-09-15/manifest.json](../reports/browser-smoke/2026-09-15/manifest.json) | Browser-rendered smoke screenshots for high-priority pages |
 | Visual QA manifest | [reports/visual-qa/2026-09-11/manifest.json](../reports/visual-qa/2026-09-11/manifest.json) | Playwright screenshot manifest for key pages and mobile/desktop viewports |
 | Citation exports | [BibTeX](../bibliography.bib) · [CSL JSON](../bibliography.csl.json) · [RIS](../bibliography.ris) | Citation-manager formats generated from `BIBLIOGRAPHY.md` |
 

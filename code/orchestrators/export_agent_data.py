@@ -431,7 +431,7 @@ def _claims() -> list[dict]:
             ],
             "checked_at": "2026-08-26",
             "confidence": "medium",
-            "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 31 link to a public page.",
+            "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 30 link to a public page.",
             "maintenance_owner": "INTEGRATOR",
             "caveat": "State this as the current public membership count, not a cohort announcement or a claim about any specific announcement month.",
         },

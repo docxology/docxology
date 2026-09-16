@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *112 original repositories · 39 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *115 original repositories · 39 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -150,6 +150,9 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [FractiSkills](https://github.com/docxology/FractiSkills) | One portable agent SKILL per page of the SS Vibelandia Omniversal Canvas — Skillarum-rendered skill pages · [📄](../papers/2026_FractiSkills/) · [Zenodo](https://doi.org/10.5281/zenodo.22712650) | Python | 0 | 2026-09 |
 | [multi-time](https://github.com/docxology/multi-time) | Multi-frequency time-series analysis toolkit built on sktime — validates irregular series, tests stationarity and Granger causality, and evaluates forecasting models | Python | 0 | 2026-08 |
 | [cognitive_integrity](https://github.com/docxology/cognitive_integrity) | Cognitive Integrity Framework (CIF) — formal security architecture for multiagent systems · [📄](../papers/2026_CognitiveIntegrity/) · [📄](../papers/2026_CognitiveIntegrityFramework/) | Python | 0 | 2026-08 |
+| [dicklesworthstone_meta_operator](https://github.com/docxology/dicklesworthstone_meta_operator) | Meta-operator over the Dicklesworthstone GitHub corpus: clone, verify upstream sync, orchestrate, interpret, and dashboard the ~207-repo corpus | HTML | 0 | 2026-09 |
+| [Skillarum](https://github.com/docxology/Skillarum) | Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) · [📄](../papers/2026_Skillarum/) · [Zenodo](https://doi.org/10.5281/zenodo.22663906) | Python | 0 | 2026-09 |
+| [nockchain-migration](https://github.com/docxology/nockchain-migration) | Operator-gated wizard and tooling for migrating Nockchain wallets from legacy v0 notes to v1 P2PKH addresses (one-off functional tool, no paper) | Python | 0 | 2026-09 |
 
 ---
 
@@ -211,14 +214,14 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Entomology & Biology | 9 | `ento_linguistics`, `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `cohereants`, `FORMINDEX`, `biol-1`, `biol-8`, `biology_textbook` |
 | Synergetics & Geometry | 6 | `QuadCraft`, `QuadMath`, `ivm-xyz`, `godel_ivm`, `symergetics`, `blake_jiang` |
 | Cognitive Security | 5 | `p3if`, `opentir`, `CogSecSkills`, `cognitive_integrity`, `agentic_os_security` |
-| Developer Tools | 23 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `SynthOBS`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake`, `thalia`, `bond`, `template_advanced_literature_review`, `BeeStack`, `docxplus`, `FractiSkills` |
+| Developer Tools | 26 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `SynthOBS`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake`, `thalia`, `bond`, `template_advanced_literature_review`, `BeeStack`, `docxplus`, `FractiSkills`, `dicklesworthstone_meta_operator`, `Skillarum`, `nockchain-migration` |
 | Data & Policy | 5 | `hhs-opendata`, `crescent-city`, `grateful_data`, `crescent-city-intel`, `multi-time` |
 | Education | 6 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT` |
 | Other | 6 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP`, `math4wisdom-superhuman-docs-archive` |
 | Research Practice | 6 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register` |
-| **docxology subtotal** | **112** | |
+| **docxology subtotal** | **115** | |
 | AII Contributions (non-fork) | 39 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **151** | |
+| **Grand Total** | **154** | |
 
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; the AII GitHub account is a **User** account, not an Organization. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 

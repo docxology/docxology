@@ -22,6 +22,7 @@ UNSAFE_URL_RE = re.compile(
     r")(?:javascript|vbscript|data):",
     re.IGNORECASE,
 )
+INSECURE_HTTP_URL_RE = re.compile(r"http(?!s):", re.IGNORECASE)
 
 CV_PUBLIC_FILES = (
     "resume/source.json",
@@ -52,6 +53,8 @@ def scan_public_files(repo_root: Path, paths: tuple[str, ...] = CV_PUBLIC_FILES)
                 errors.append(f"{relative}: secret-like token detected")
         if UNSAFE_URL_RE.search(text):
             errors.append(f"{relative}: unsafe URL scheme detected")
+        if INSECURE_HTTP_URL_RE.search(text):
+            errors.append(f"{relative}: insecure http:// URL detected (use https)")
     return errors
 
 

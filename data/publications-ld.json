@@ -4115,8 +4115,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2019PhDBehavioralPhysiologicalTranscriptomic093.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2019PhDBehavioralPhysiologicalTranscriptomic093.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2019PhDBehavioralPhysiologicalTranscriptomic093.html",
-            "sameAs": "http://purl.stanford.edu/pb813wm1484",
-            "citation": "Friedman, Daniel Ari. 2019. PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus. Stanford University. URL: http://purl.stanford.edu/pb813wm1484."
+            "sameAs": "https://purl.stanford.edu/pb813wm1484",
+            "citation": "Friedman, Daniel Ari. 2019. PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus. Stanford University. URL: https://purl.stanford.edu/pb813wm1484."
         },
         {
             "@type": "ScholarlyArticle",

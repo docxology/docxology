@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T21:33:08Z",
+  "generated_at": "2026-09-15T22:57:25Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -67,12 +67,12 @@
     "public_archive": 158,
     "open_full_text": 190,
     "source_documents": 198,
-    "executable_code": 67,
+    "executable_code": 68,
     "agent_readable": 198
   },
   "band_counts": {
-    "independently reproducible": 152,
-    "independently checkable": 46,
+    "independently reproducible": 153,
+    "independently checkable": 45,
     "citable only": 8,
     "unverified": 9
   },
@@ -81,11 +81,11 @@
     "1": 4,
     "2": 4,
     "3": 8,
-    "4": 38,
-    "5": 89,
+    "4": 37,
+    "5": 90,
     "6": 63
   },
-  "mean_score": 4.702,
+  "mean_score": 4.707,
   "works": [
     {
       "num": 5,
@@ -3070,6 +3070,27 @@
       "repositories": []
     },
     {
+      "num": 216,
+      "citation_key": "Friedman2026SkillarumConditionallyReproducibleWebsite216",
+      "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "Skillarum"
+      ]
+    },
+    {
       "num": 217,
       "citation_key": "Friedman2026FractiSkillsOnePortableAgent217",
       "title": "FractiSkills: One Portable Agent Skill per Page",
@@ -3801,25 +3822,6 @@
       "title": "Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications)",
       "year": 2026,
       "domain_name": "Cognitive Security",
-      "type": "Paper",
-      "score": 4,
-      "band": "independently checkable",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": false,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
-      "num": 216,
-      "citation_key": "Friedman2026SkillarumConditionallyReproducibleWebsite216",
-      "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
-      "year": 2026,
-      "domain_name": "Computational",
       "type": "Paper",
       "score": 4,
       "band": "independently checkable",
