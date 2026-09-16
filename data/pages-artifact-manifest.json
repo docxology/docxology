@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-16T15:50:24Z",
-  "source_commit_at_generation": "5cbe64ff08c5259d57987e2bc71e25ff2d40e506",
+  "generated_at": "2026-09-16T16:03:56Z",
+  "source_commit_at_generation": "f61b5eadd6ba7c1bc84666c6538256a662f11554",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 927989760,
-    "source_bytes": 906726706,
+    "source_bytes": 906726644,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4857,
-    "artifact_bytes": 907583926
+    "artifact_bytes": 907583864
   },
   "included_files": [
     {
@@ -13995,8 +13995,8 @@
     },
     {
       "path": "papers/2026_CognitiveCaseDiagrams/README.md",
-      "bytes": 2382,
-      "sha256": "daa0e51a0eb91229ba96b92b23aaa6dce474c1f6e71ff378eda70966677605a2"
+      "bytes": 2217,
+      "sha256": "ebb77dfa530d3f6dcc806edcb2cc9d1996146e515cfb48270ab3f90a8c68b86b"
     },
     {
       "path": "papers/2026_CognitiveCaseDiagrams/SKILL.md",
@@ -17210,8 +17210,8 @@
     },
     {
       "path": "reports/live_site_verification_2026-09-16.json",
-      "bytes": 14962,
-      "sha256": "d9826a30e2dc0b5e541f00dd53a7675c45fe5abfbcd02f86768ff7e62bb8f151"
+      "bytes": 15065,
+      "sha256": "078dd1be8e8c5bb2cd66c13ee71f14a6cb765cce7eb018c7192f90808fe6f9f9"
     },
     {
       "path": "reports/paired_publications_2026-06-04.json",
