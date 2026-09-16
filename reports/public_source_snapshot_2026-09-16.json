@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-16T02:52:56.160249+00:00",
-  "source_commit": "72fd5a952a65ea1e0d4e0e16f30192c9cf2b25bf",
+  "generated_at": "2026-09-16T03:48:07.353263+00:00",
+  "source_commit": "15df51a32f128a0b944d8ef19b47fa85b02f190f",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
-  "source_tree_sha": "0f080ef9c756c24829f4521bc41f4d55dfc5bf98",
+  "source_tree_sha": "7002fa71570a3a4ffa646667bddaa66e8ed04fb1",
   "date": "2026-09-16",
   "note": "Public API freshness report only. Review before updating curated site claims.",
   "facts": {
@@ -187,14 +187,14 @@
       "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
       "stargazers_count": 31,
       "language": "Python",
-      "updated_at": "2026-09-16T02:12:38Z",
+      "updated_at": "2026-09-16T03:17:34Z",
       "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation"
     },
     "GitHub repo ActiveInferenceInstitute/fep_lean": {
       "full_name": "ActiveInferenceInstitute/fep_lean",
       "stargazers_count": 2,
       "language": "Python",
-      "updated_at": "2026-09-16T02:45:10Z",
+      "updated_at": "2026-09-16T03:17:11Z",
       "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean"
     },
     "GitHub repo ActiveInferenceInstitute/cognitive": {
@@ -484,7 +484,7 @@
         "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
         "stargazers_count": 31,
         "language": "Python",
-        "updated_at": "2026-09-16T02:12:38Z",
+        "updated_at": "2026-09-16T03:17:34Z",
         "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation"
       }
     },
@@ -496,7 +496,7 @@
         "full_name": "ActiveInferenceInstitute/fep_lean",
         "stargazers_count": 2,
         "language": "Python",
-        "updated_at": "2026-09-16T02:45:10Z",
+        "updated_at": "2026-09-16T03:17:11Z",
         "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean"
       }
     },

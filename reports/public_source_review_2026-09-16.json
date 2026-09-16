@@ -51,10 +51,10 @@
       "source_commit": null
     },
     "public_source_snapshot": {
-      "generated_at": "2026-09-16T02:52:56.160249+00:00",
+      "generated_at": "2026-09-16T03:48:07.353263+00:00",
       "path": "reports/public_source_snapshot_2026-09-16.json",
-      "sha256": "b3749a225ce075a0a464c37308784fc091b8a25f945493a1e5bb4d17136ff14a",
-      "source_commit": "72fd5a952a65ea1e0d4e0e16f30192c9cf2b25bf"
+      "sha256": "74bab28cadee45cd805a504e83eedbdc8462356e7fc3cd7af13e72ccf387ef7f",
+      "source_commit": "15df51a32f128a0b944d8ef19b47fa85b02f190f"
     },
     "repository_classification": {
       "generated_at": "2026-09-15T22:03:30Z",
@@ -1411,9 +1411,9 @@
           "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
           "language": "Python",
           "stargazers_count": 31,
-          "updated_at": "2026-09-16T02:12:38Z"
+          "updated_at": "2026-09-16T03:17:34Z"
         },
-        "current_sha256": "422752508fae68c38f5dfd6e06ca7ebd32a5424a7d20fbf406b60326c9d016fa",
+        "current_sha256": "ba3ae1cfcf6adfbc493aaaafaa1beaf11b278aefe7a0c81e99e7310dba0684ab",
         "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
         "previous": {
           "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
@@ -1444,9 +1444,9 @@
           "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean",
           "language": "Python",
           "stargazers_count": 2,
-          "updated_at": "2026-09-16T02:45:10Z"
+          "updated_at": "2026-09-16T03:17:11Z"
         },
-        "current_sha256": "40cf07c5b11b08b0b9d7b6831b4e020789a3e3e95eabbbab570c24ac5edf9573",
+        "current_sha256": "c2567c97dec6fc35d66f21e86e3761a1c92d4fb5974310962483078f485a92bd",
         "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
         "previous": {
           "full_name": "ActiveInferenceInstitute/fep_lean",
@@ -3522,7 +3522,7 @@
       "candidate": {
         "pairing_report_date": "2026-09-15",
         "pairing_report_generated_at": "2026-09-15T21:43:46Z",
-        "public_source_snapshot_generated_at": "2026-09-16T02:52:56.160249Z",
+        "public_source_snapshot_generated_at": "2026-09-16T03:48:07.353263Z",
         "refresh_note": "",
         "refresh_state": "stale",
         "warnings": []
