@@ -31,7 +31,7 @@
 - GitHub release: [v2.6.0](https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.6.0)
 - DOI: [10.5281/zenodo.19695259](https://doi.org/10.5281/zenodo.19695259)
 - Zenodo record: [https://zenodo.org/records/19695259](https://zenodo.org/records/19695259)
-- PDF: [cognitive_case_diagrams-2.4.0.pdf](cognitive_case_diagrams-2.4.0.pdf)
+- PDF 2.4.0: [Zenodo versioned record](https://zenodo.org/records/22653315) (local copy removed from the checkout 2026-09-16; retained in git history and on Zenodo)
 - PDF: [cognitive_case_diagrams-2.6.0.pdf](cognitive_case_diagrams-2.6.0.pdf)
 - PDF: [cognitive_case_diagrams_v1_DAF_04-23-2026.pdf](cognitive_case_diagrams_v1_DAF_04-23-2026.pdf)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/19695259)

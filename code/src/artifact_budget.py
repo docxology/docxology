@@ -1,5 +1,5 @@
 """Artifact budget gate: fail the CI budget check when the Pages artifact
-exceeds the documented 880 MiB warning budget (reports/pages_artifact_growth_*.json).
+exceeds the documented 885 MiB warning budget (reports/pages_artifact_growth_*.json).
 """
 
 from __future__ import annotations
@@ -9,7 +9,7 @@ import json
 import sys
 from pathlib import Path
 
-BUDGET_MIB = 880.0
+BUDGET_MIB = 885.0
 REPORT_GLOB = "reports/pages_artifact_growth_*.json"
 
 

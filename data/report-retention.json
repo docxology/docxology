@@ -78,6 +78,14 @@
       "replacement_location": "git:8cde3797f97e454a115cb8fb6f996acf6f0cea85",
       "decision": "remove-from-checkout",
       "reviewed_by": "omp Main agent (2026-09-16 retention review: superseded by the approved 2026-09-16 captures; git history retains the sets)"
+    },
+    {
+      "path": "papers/2026_CognitiveCaseDiagrams/cognitive_case_diagrams-2.4.0.pdf",
+      "generated_at": "2026-09-16T00:00:00Z",
+      "provenance_sha256": "ad45bc5f55d82ae5d8308caaf4a9b57c776928d2",
+      "replacement_location": "git:2fea5484abb639f8a0b6d85c1973265271e0683d",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "omp Main agent + principal (2026-09-16 budget review: superseded by 2.6.0 canonical version; git history + Zenodo record 22653315 retain it)"
     }
   ]
 }
