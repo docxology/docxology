@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-16T20:08:41Z",
-  "source_commit_at_generation": "65ddeec713616cbb983fab4c3aced8e4d6043827",
+  "generated_at": "2026-09-16T20:15:10Z",
+  "source_commit_at_generation": "4077f7e20378c6ccd3bbfc36467908bf984682ea",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 927989760,
-    "source_bytes": 906754272,
+    "source_bytes": 906800253,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4857,
-    "artifact_bytes": 907611493
+    "artifact_file_count": 4863,
+    "artifact_bytes": 907658529
   },
   "included_files": [
     {
@@ -6189,6 +6189,16 @@
       "sha256": "4d9465ffd95a5966db50e657ff965d9aad58d6f44d37889d4cb7b8fc78834ae6"
     },
     {
+      "path": "code/tests/test_generation_plan_gating.py",
+      "bytes": 8250,
+      "sha256": "744c11e0ee92c81e98d7b71334ae6876b18eab3b72da297b7e68c9ea28627869"
+    },
+    {
+      "path": "code/tests/test_generation_plan_order.py",
+      "bytes": 9714,
+      "sha256": "86746d96d602e90eb25f996857a11648654ab2dad88cb239235dc47ce4c7e616"
+    },
+    {
       "path": "code/tests/test_github_readme_mirror.py",
       "bytes": 2732,
       "sha256": "a8bc253c92309046eee613f2c8493de386e40781ed55ee9b860c1936e38be173"
@@ -6259,6 +6269,11 @@
       "sha256": "3c48a58759b2c1116d1db5ba230ca8d22b42627dea845c425af5eada5730d7e6"
     },
     {
+      "path": "code/tests/test_psr_provenance_mode.py",
+      "bytes": 3480,
+      "sha256": "94b5d42cbc61a337e695c73f47e3f25397217b61ca08bb2a0681204e2369effb"
+    },
+    {
       "path": "code/tests/test_public_integrity.py",
       "bytes": 1908,
       "sha256": "3a9bacf8c91411a9320858b786b1b4169cd39a4d95c95a7194fc733d566455a0"
@@ -6314,6 +6329,11 @@
       "sha256": "f060bf98afb4e4676e944444eb9de9dec8d6401cfde37cccf4712fa6d5bf7d8c"
     },
     {
+      "path": "code/tests/test_release_evidence_content_bindings.py",
+      "bytes": 13450,
+      "sha256": "e7e9d8139350072854ee3f708de50908b38a3471e6e31ecd0c283c2ab86a48f1"
+    },
+    {
       "path": "code/tests/test_release_integrity.py",
       "bytes": 2374,
       "sha256": "e07cf8ac092bcaf2909d9189d4b76d5f90e95a5e3c8a86cc1ff88ecc46323fa5"
@@ -6364,6 +6384,11 @@
       "sha256": "1c10375422236edf0b25e52e77a82ab2f25892f1dbf45d4b7b349f35b009060f"
     },
     {
+      "path": "code/tests/test_settle_routine_tier.py",
+      "bytes": 6100,
+      "sha256": "ff8ea0c09082bd47d2668578db9b9682afcc8882e03ac35034c22cd93ab005f0"
+    },
+    {
       "path": "code/tests/test_site_facts.py",
       "bytes": 2239,
       "sha256": "13d2bdeb23651b2ba2c0f389c728603ca829621d64abc672510b8859e5111aaf"
@@ -6377,6 +6402,11 @@
       "path": "code/tests/test_software_table.py",
       "bytes": 4520,
       "sha256": "1412abb05f1ee370d130450e2556a7451c2e2d0fd6db65fb6481d68389d704e9"
+    },
+    {
+      "path": "code/tests/test_stamp_provenance.py",
+      "bytes": 4987,
+      "sha256": "df49e4b69451de5869c08b50ef138bc17174790a3b33cf8adebc1eed6b8344ec"
     },
     {
       "path": "code/tests/test_start_here.py",
