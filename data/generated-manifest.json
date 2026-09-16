@@ -588,7 +588,7 @@
     {
       "name": "Public source snapshot",
       "outputs": [
-        "reports/public_source_snapshot_2026-09-15.json"
+        "reports/public_source_snapshot_2026-09-16.json"
       ],
       "sources": [
         "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
@@ -665,8 +665,8 @@
     {
       "name": "Browser smoke checks",
       "outputs": [
-        "reports/browser-smoke/2026-09-15/*.png",
-        "reports/browser-smoke/2026-09-15/manifest.json"
+        "reports/browser-smoke/2026-09-16/*.png",
+        "reports/browser-smoke/2026-09-16/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -678,7 +678,7 @@
     {
       "name": "Progressive browser QA",
       "outputs": [
-        "reports/browser-qa/2026-09-15/manifest.json"
+        "reports/browser-qa/2026-09-16/manifest.json"
       ],
       "sources": [
         "root HTML pages",
@@ -758,8 +758,8 @@
     {
       "name": "Visual QA",
       "outputs": [
-        "reports/visual-qa/2026-09-11/*.png",
-        "reports/visual-qa/2026-09-11/manifest.json"
+        "reports/visual-qa/2026-09-16/*.png",
+        "reports/visual-qa/2026-09-16/manifest.json"
       ],
       "sources": [
         "root HTML pages",
