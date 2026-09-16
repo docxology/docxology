@@ -46,15 +46,46 @@ def test_tier_order_places_routine_between_fast_and_full() -> None:
 @pytest.mark.parametrize(
     ("derived", "label"),
     [
-        (frozenset({"fast", "full"}), "data intake derives full"),
-        (frozenset({"fast"}), "docs-only derives fast"),
-        (frozenset(), "clean tree derives nothing"),
+        (frozenset({"full"}), "data-derived full"),
+        (frozenset({"fast", "full"}), "mixed derived"),
     ],
-    ids=["data-intake", "docs-only", "clean-tree"],
 )
 def test_resolve_tier_routine_is_sticky(derived: frozenset[str], label: str) -> None:
-    """--tier routine is never raised by path-derived tiers, not even full."""
-    assert settle.resolve_tier("routine", derived) == "routine", label
+    """--tier routine ignores path-derived CONVENIENCE raises when payload-clean."""
+    assert settle.resolve_tier("routine", derived, payload_dirty=False) == "routine", label
+
+
+@pytest.mark.parametrize(
+    ("dirty", "label"),
+    [
+        (("data/artworks.json",), "data/"),
+        (("code/src/x.py",), "code/"),
+        (("docs/operations/settle.md",), "docs/"),
+        (("reports/live_site_verification_2026-09-16.json",), "receipt"),
+        (("data/agent-index.json", "docs/operations/settle.md"), "control+payload mix"),
+        (("some/unclassified/path.txt",), "leftover counts as payload"),
+    ],
+)
+def test_resolve_tier_routine_raises_to_full_on_payload_dirty(
+    dirty: tuple[str, ...], label: str
+) -> None:
+    """Every payload commit moves the anchor the Pages deploy re-validates."""
+    from pathlib import Path as _Path
+
+    payload_dirty = any(
+        not settle.is_control_path(_Path(path)) for path in dirty
+    )
+    assert payload_dirty, label
+    assert settle.resolve_tier("routine", frozenset(), payload_dirty) == "full", label
+
+
+def test_resolve_tier_routine_stays_routine_for_control_only_dirty() -> None:
+    from pathlib import Path as _Path
+
+    dirty = ("data/agent-index.json", "data/generated-manifest.json")
+    payload_dirty = any(not settle.is_control_path(_Path(path)) for path in dirty)
+    assert not payload_dirty
+    assert settle.resolve_tier("routine", frozenset({"full"}), payload_dirty) == "routine"
 
 
 def test_resolve_tier_non_routine_tiers_still_auto_raise() -> None:
@@ -67,24 +98,16 @@ def test_resolve_tier_non_routine_tiers_still_auto_raise() -> None:
 
 
 def test_routine_battery_is_fast_floor_plus_standard_validation() -> None:
-    names = _names("routine", ("docs/settle-notes.md",))
-    assert names == [
-        "sitemap --check",
-        "artifact budget",
-        "ruff lint",
-        _VALIDATE_NAME,
-    ]
-    validate_cmd = _commands("routine", ("docs/settle-notes.md",))[_VALIDATE_NAME]
-    assert "code/orchestrators/validate_repo.py" in validate_cmd
+    names = _names("routine", ())
+    assert names[:3] == [name for name in sorted(_STEP_NAMES, key=names.index)]
+    assert _VALIDATE_NAME in names
+    validate_cmd = _commands("routine", ())[_VALIDATE_NAME]
     assert "--release" not in validate_cmd
 
 
 def test_routine_battery_never_includes_the_release_step() -> None:
-    for dirty in (("docs/a.md",), ("data/artworks.json",), ("code/src/x.py",)):
-        assert not any(
-            name.startswith("validate_repo --release")
-            for name in _names("routine", dirty)
-        )
+    for dirty in ((), ("data/agent-index.json",)):
+        assert "validate_repo --release --strict-reports" not in _names("routine", dirty)
 
 
 def test_routine_battery_requires_the_dirty_path_set() -> None:
@@ -100,48 +123,72 @@ def test_full_battery_includes_pytest_and_validation_unconditionally() -> None:
     assert _PYTEST_NAME not in _names("fast")
 
 
-def test_routine_battery_extends_the_full_battery_below_it() -> None:
-    """full = routine (no code dirty) plus the pytest step; same set, richer."""
-    routine_names = _names("routine", ("reports/growth.json",))
-    full_names = _names("full")
-    assert set(routine_names) < set(full_names)
-    assert set(full_names) - set(routine_names) == {_PYTEST_NAME}
-    # with code dirty, routine composes to exactly full's battery
-    assert settle.battery_for_tier("routine", ("code/tests/test_x.py",)) == settle.battery_for_tier("full")
+def test_full_battery_extends_the_routine_battery_with_pytest() -> None:
+    """full interleaves pytest before validation; routine drops exactly that step."""
+    routine = settle.battery_for_tier("routine", ())
+    full = settle.battery_for_tier("full")
+    assert settle._FULL_STEPS == settle._FAST_STEPS + (
+        settle._PYTEST_STEP,
+        settle._VALIDATE_STANDARD_STEP,
+    )
+    assert routine == settle._FAST_STEPS + (settle._VALIDATE_STANDARD_STEP,)
+    assert [name for name, _ in full] == [
+        name for name, _ in settle._FAST_STEPS
+    ] + [_PYTEST_NAME, _VALIDATE_NAME]
+    assert _PYTEST_NAME not in _names("routine", ())
 
 
-# --- the code-changed-triggers-pytest rule ---------------------------------
+# --- the payload-dirty fail-closed rule ------------------------------------
 
 
 @pytest.mark.parametrize(
-    "dirty_path",
-    ["code/src/new_module.py", "code/orchestrators/settle.py", "code/tests/test_new.py"],
-    ids=["src", "orchestrator", "test"],
+    ("dirty", "label"),
+    [
+        (("data/artworks.json",), "data/"),
+        (("code/src/x.py",), "code/"),
+        (("code/tests/test_x.py",), "code/tests/"),
+        (("docs/operations/settle.md",), "docs/"),
+        (("reports/live_site_verification_2026-09-16.json",), "receipt"),
+        (("data/agent-index.json", "some/unclassified/path.txt"), "control+leftover mix"),
+    ],
 )
-def test_routine_battery_runs_pytest_when_code_paths_are_dirty(
-    dirty_path: str,
+def test_routine_battery_fails_closed_on_payload_dirty(
+    dirty: tuple[str, ...], label: str
 ) -> None:
-    assert _PYTEST_NAME in _names("routine", (dirty_path,))
+    """Payload changes must ride full tier; the routine battery refuses them."""
+    with pytest.raises(ValueError):
+        _names("routine", dirty)
 
 
-def test_routine_battery_runs_pytest_once_for_mixed_code_and_site_changes() -> None:
-    names = _names("routine", ("data/artworks.json", "code/tests/test_x.py"))
-    assert names.count(_PYTEST_NAME) == 1
-    assert names[-1] == _VALIDATE_NAME
+@pytest.mark.parametrize(
+    ("dirty", "label"),
+    [
+        ((), "clean tree"),
+        (("data/agent-index.json",), "control-only"),
+        (("data/generated-manifest.json", "data/release-integrity.json"), "control set"),
+    ],
+)
+def test_routine_battery_accepts_control_only_and_clean_trees(
+    dirty: tuple[str, ...], label: str
+) -> None:
+    assert _PYTEST_NAME not in _names("routine", dirty), label
+    assert _names("routine", dirty)[-1] == _VALIDATE_NAME, label
 
 
 @pytest.mark.parametrize(
     "dirty",
     [
-        ("data/artworks.json",),
-        ("papers/2026/example.md",),
+        ("data/agent-index.json",),
+        ("data/pages-artifact-manifest.json",),
         ("reports/pages_artifact_growth_2026-09-16.json",),
-        ("docs/operations/settle.md",),
+        ("reports/public_source_review_2026-09-16.json",),
     ],
-    ids=["data", "papers", "reports", "docs"],
+    ids=["agent-index", "artifact-manifest", "growth-receipt", "psr"],
 )
-def test_routine_battery_skips_pytest_without_code_changes(dirty: tuple[str, ...]) -> None:
-    """data/ and other site changes never raise routine to full (nor add pytest)."""
+def test_routine_battery_skips_pytest_for_control_only_changes(
+    dirty: tuple[str, ...],
+) -> None:
+    """Control-only landings stay light: no pytest, no raise."""
     assert _PYTEST_NAME not in _names("routine", dirty)
 
 

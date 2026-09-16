@@ -16,7 +16,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 REPO_ROOT = Path(__file__).resolve().parents[2]
 JSON_OUT = REPO_ROOT / "data" / "reconciliation.json"
 
-from docxology_tools.report_paths import latest_source_report, rel  # noqa: E402
+from docxology_tools.report_paths import latest_source_report, rel, stable_generated_at  # noqa: E402
 
 
 def load_json(path: Path) -> dict:
@@ -100,6 +100,22 @@ def build_payload() -> dict:
     }
 
 
+def stabilize_payload(payload: dict, *, json_out: Path = JSON_OUT) -> dict:
+    """Keep the report timestamp when the comparison body is unchanged.
+
+    The payload mirrors the freshness snapshot's ``generated_at``, so a
+    same-day snapshot re-stamp would otherwise rewrite this report (and the
+    markdown that embeds the timestamp) with no substantive change.
+    ``stable_generated_at`` reuses the on-disk timestamp only when the body
+    (everything except ``generated_at``) matches; a missing or unreadable
+    report yields None, which keeps the snapshot's fresh timestamp.
+    """
+    stable = stable_generated_at(json_out, payload)
+    if stable:
+        payload["generated_at"] = stable
+    return payload
+
+
 def render_md(payload: dict) -> str:
     lines = [
         "# Public-Source Reconciliation Report",
@@ -131,7 +147,7 @@ def render_md(payload: dict) -> str:
 
 
 def outputs() -> dict[Path, str]:
-    payload = build_payload()
+    payload = stabilize_payload(build_payload())
     md_out = REPO_ROOT / "reports" / f"reconciliation_{snapshot_date(REPO_ROOT / payload['snapshot'])}.md"
     return {
         JSON_OUT: json.dumps(payload, indent=2, ensure_ascii=False) + "\n",

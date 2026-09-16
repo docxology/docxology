@@ -17,7 +17,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 REPO_ROOT = Path(__file__).resolve().parents[2]
 from docxology_tools.change_classifier import Classification, classify_paths  # noqa: E402
 
-# Replaces the manual sequence: payload commit, control-tail commit, then the
+from release_controls import is_control_path  # noqa: E402  (stdlib-only module; flat import like build_stamp)
 # gate cascade by hand (docs/operations/settle.md).  Commits are split per the
 # release_controls.is_control_path semantics encoded in
 # change_classifier.classify_paths.  The full tier runs the same four checks
@@ -54,12 +54,13 @@ _VALIDATE_STANDARD_STEP = (
     ("uv", "run", "--no-sync", "python3", "code/orchestrators/validate_repo.py"),
 )
 _FULL_STEPS = _FAST_STEPS + (_PYTEST_STEP, _VALIDATE_STANDARD_STEP)
-# Routine is the lighter contract: the fast floor plus standard validation —
-# no pytest (unless code/test paths are dirty vs HEAD, in which case the
-# battery is exactly full's), no binder-chain work, no release step.  data/
-# and other site changes never raise routine to full (see battery_for_tier).
+# Routine is the lighter contract for control-only landings and clean-tree
+# checks: the fast floor plus standard validation — no pytest, no binder-chain
+# work, no release step.  Any payload-dirty path raises the TIER to full
+# (resolve_tier), because every payload commit moves the payload anchor the
+# Pages deploy re-validates via the binder manifest.  battery_for_tier
+# enforces that precondition fail-closed for direct API callers.
 _ROUTINE_STEPS = _FAST_STEPS + (_VALIDATE_STANDARD_STEP,)
-_CODE_DIRTY_PREFIXES = ("code/src/", "code/orchestrators/", "code/tests/")
 
 
 def _release_step() -> tuple[str, tuple[str, ...]]:
@@ -100,18 +101,24 @@ def battery_for_tier(
 ) -> tuple[tuple[str, tuple[str, ...]], ...]:
     """Return the ordered battery for *tier*; release extends full.
 
-    ``routine`` composes from the dirty-path set: the pytest step joins only
-    when a path under ``code/src``, ``code/orchestrators``, or ``code/tests``
-    is dirty vs HEAD (untracked files included), so a pure data/docs/report
-    settle skips the suite; data/ changes never raise routine to full.  The
-    code-dirty composition is full's battery (same ordering); passing
-    ``dirty=None`` for routine fails closed rather than guessing the set.
+    ``routine`` is the control-only/clean-tree contract: the fast floor plus
+    standard validation, never pytest (a payload-dirty tree never reaches this
+    branch — resolve_tier raises it to ``full``, which runs the suite), never
+    binder-chain work, never the release step.  Passing ``dirty=None`` for
+    routine fails closed rather than guessing the set, and any dirty path that
+    is not control-classified (per ``release_controls.is_control_path``) also
+    fails closed: the Pages deploy re-checks the binder manifest, which every
+    payload commit stales, so a payload change must ride the full tier.
     """
     if tier == "routine":
         if dirty is None:
             raise ValueError("battery_for_tier('routine') requires the dirty-path set")
-        if any(path.startswith(_CODE_DIRTY_PREFIXES) for path in dirty):
-            return _FULL_STEPS
+        if any(not is_control_path(Path(path)) for path in dirty):
+            raise ValueError(
+                "routine battery requires a payload-clean tree; resolve_tier raises "
+                "payload-dirty work to 'full' (the Pages deploy re-checks the binder "
+                "manifest, which any payload commit stales)"
+            )
         return _ROUTINE_STEPS
     if tier == "release":
         return _FULL_STEPS + (_release_step(),)
@@ -186,15 +193,21 @@ def parse_args() -> argparse.Namespace:
     return args
 
 
-def resolve_tier(requested: str, derived: frozenset[str]) -> str:
-    """Return the stronger of the requested tier and the path-derived tiers.
+def resolve_tier(
+    requested: str, derived: Iterable[str], payload_dirty: bool = False
+) -> str:
+    """Return the effective tier for the requested floor.
 
-    ``routine`` is sticky: it is an explicitly requested lighter contract, so
-    path-derived raises (``data/`` and other site surfaces normally adding
-    ``full``) are ignored — the routine battery never becomes the full one.
+    ``routine`` stays routine only for control-only landings and clean-tree
+    checks.  Any payload-dirty path raises it to ``full`` — a correctness
+    raise, not a convenience one: every payload commit moves the payload
+    anchor the Pages deploy re-validates (``build_pages_artifact.py
+    --check-manifest`` in the pages.yml deploy job), so a stale binder
+    manifest would turn the deploy red.  The path-derived *convenience*
+    raises in ``derived`` stay ignored for routine.
     """
     if requested == "routine":
-        return "routine"
+        return "full" if payload_dirty else "routine"
     known = [requested, *(tier for tier in derived if tier in TIER_ORDER)]
     return max(known, key=TIER_ORDER.__getitem__)
 
@@ -336,14 +349,20 @@ def main() -> None:
     leftovers = sorted(set(paths) - set(payload) - set(control))
     if leftovers:
         print("left uncommitted (classified into neither commit phase): " + ", ".join(leftovers))
-    tier = resolve_tier(args.tier, classification.tiers)
+    payload_dirty = any(not is_control_path(Path(path)) for path in paths)
+    tier = resolve_tier(args.tier, classification.tiers, payload_dirty)
     derived = sorted(t for t in classification.tiers if t in TIER_ORDER)
     decision = (
         f"tier decision: requested={args.tier} path-derived={'+'.join(derived) or 'none'}"
         f" -> effective={tier}"
     )
-    if args.tier == "routine" and derived:
-        decision += " (routine is sticky: path-derived raises are ignored)"
+    if args.tier == "routine":
+        decision += (
+            " (payload paths dirty: raised to full — the Pages deploy re-checks"
+            " the binder manifest, which any payload commit stales)"
+            if tier == "full"
+            else " (routine: control-only or clean tree)"
+        )
     print(decision)
     if args.dry_run:
         print_plan(args, classification, tier, paths)

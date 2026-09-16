@@ -410,6 +410,12 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
 - Deliverable: retain compact artwork and video indexes with lazy detail loading, document per-asset budgets, and review Pages growth trends
 - Acceptance: current HTML, JS, JSON, hero, thumbnail, CV, and generated-data budgets are measured and remain below documented thresholds; large interactive datasets do not load detail-only payloads before user need
 - Dependencies: Pages artifact manifest, asset audit, browser QA
+- 2026-09-16 governance trajectory: projected artifact 865.9 MiB of the
+  885 MiB review band (~19 MiB headroom) while every routine op accumulates
+  dated evidence receipts — the exact trajectory that forced the DOC-012
+  retention pass. Next review should weigh continuous retention (prune on a
+  cadence, not at the band) against excluding receipt binaries from the
+  projected artifact entirely; decide before the band is crossed again.
 
 ### DOC-010 — Security and SEO follow-up
 

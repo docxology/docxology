@@ -18,7 +18,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "exports.html"
 
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
-from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
+from docxology_tools.build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
 from docxology_tools.site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Exports", "exports.html")]
@@ -186,7 +186,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if exports.html is stale")
     args = parser.parse_args()
-    content = render()
+    # Stamp-reuse (HTML generated_at equivalent): keep the on-disk footer
+    # build stamp when it is the only difference, so non-rendering commits
+    # do not churn the page or the inputs it gates.
+    existing = OUT.read_text(encoding="utf-8") if OUT.exists() else None
+    content = reuse_on_disk_stamp(render(), existing)
     rendered_outputs = {OUT: content}
     if args.check:
         if stale_output_paths(rendered_outputs, repo_root=REPO_ROOT):
