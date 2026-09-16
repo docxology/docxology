@@ -14,7 +14,9 @@ sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 import refresh_public_source_inventory as inv  # noqa: E402
 import refresh_public_sources as rps  # noqa: E402
 
-TODAY = __import__("datetime").datetime.now(__import__("datetime").timezone.utc).date().isoformat()
+def _today() -> str:
+    """Runtime date — a module-level date goes stale across a midnight pytest run."""
+    return __import__("datetime").datetime.now(__import__("datetime").timezone.utc).date().isoformat()
 
 
 def _ok_section(label: str, url: str = "https://example.com") -> dict:
@@ -92,12 +94,12 @@ def _setup_cache(tmp_path, monkeypatch, *, inventory_at: str, snapshot_at: str |
     for i in range(warnings):
         sections.append({"label": f"warned-{i}", "url": "https://x", "ok": False,
                          "error": "HTTPError: 500", "items": []})
-    _write_json(reports / f"public_source_inventory_{TODAY}.json", {
+    _write_json(reports / f"public_source_inventory_{_today()}.json", {
         "generated_at": inventory_at, "sections": sections,
         "counts": {s["label"]: len(s["items"]) for s in sections},
     })
     if snapshot_at is not None:
-        _write_json(reports / f"public_source_snapshot_{TODAY}.json", {
+        _write_json(reports / f"public_source_snapshot_{_today()}.json", {
             "generated_at": snapshot_at, "checks": [],
         })
     monkeypatch.setattr(inv, "REPO_ROOT", tmp_path)
@@ -112,9 +114,9 @@ def _latest(pattern: str, reports: Path):
 
 def test_cache_reuse_same_day(tmp_path, monkeypatch):
     """Same-day clean cache is reused verbatim; anchors field records provenance; no fetch."""
-    inventory_at = f"{TODAY}T12:00:00Z"
+    inventory_at = f"{_today()}T12:00:00Z"
     reports, sections = _setup_cache(tmp_path, monkeypatch, inventory_at=inventory_at,
-                                     snapshot_at=f"{TODAY}T12:30:00Z")
+                                     snapshot_at=f"{_today()}T12:30:00Z")
 
     def boom(*a, **k):
         raise AssertionError("live fetch must not run on cache reuse")
@@ -130,15 +132,15 @@ def test_cache_reuse_same_day(tmp_path, monkeypatch):
     assert report["counts"] == {s["label"]: len(s["items"]) for s in sections}
     anchor = report["anchors"]
     assert anchor["mode"] == "cache-reuse"
-    assert anchor["source_report"] == f"reports/public_source_inventory_{TODAY}.json"
+    assert anchor["source_report"] == f"reports/public_source_inventory_{_today()}.json"
     assert anchor["source_generated_at"] == inventory_at
     assert anchor["cached_section_labels"] == [s["label"] for s in sections]
-    assert anchor["source_snapshot_generated_at"] == f"{TODAY}T12:30:00Z"
+    assert anchor["source_snapshot_generated_at"] == f"{_today()}T12:30:00Z"
 
 
 def test_cache_reuse_without_snapshot(tmp_path, monkeypatch):
     """Missing snapshot report is optional: reuse still fires."""
-    _setup_cache(tmp_path, monkeypatch, inventory_at=f"{TODAY}T09:00:00Z", snapshot_at=None)
+    _setup_cache(tmp_path, monkeypatch, inventory_at=f"{_today()}T09:00:00Z", snapshot_at=None)
     report = inv.build_report(cache_reports=True)
     assert report["anchors"]["mode"] == "cache-reuse"
 
@@ -174,7 +176,7 @@ def test_cache_reuse_stale_falls_back_live(tmp_path, monkeypatch):
 
 def test_cache_reuse_warning_fails_closed(tmp_path, monkeypatch):
     """ANY warning in the cached report forces a live fetch (fail closed)."""
-    _setup_cache(tmp_path, monkeypatch, inventory_at=f"{TODAY}T12:00:00Z",
+    _setup_cache(tmp_path, monkeypatch, inventory_at=f"{_today()}T12:00:00Z",
                  snapshot_at=None, warnings=1)
     marker: list = []
     _stub_live_fetchers(monkeypatch, marker)
@@ -185,7 +187,7 @@ def test_cache_reuse_warning_fails_closed(tmp_path, monkeypatch):
 
 def test_cache_force_accepts_warnings(tmp_path, monkeypatch):
     """--force reuses a warned cache and records forced-reuse provenance."""
-    _setup_cache(tmp_path, monkeypatch, inventory_at=f"{TODAY}T12:00:00Z",
+    _setup_cache(tmp_path, monkeypatch, inventory_at=f"{_today()}T12:00:00Z",
                  snapshot_at=None, warnings=1)
     report = inv.build_report(cache_reports=True, force=True)
     anchor = report["anchors"]
@@ -195,7 +197,7 @@ def test_cache_force_accepts_warnings(tmp_path, monkeypatch):
 
 def test_no_flag_never_reads_cache(tmp_path, monkeypatch):
     """Default (no --cache-reports) always live-fetches, even with a clean same-day cache."""
-    _setup_cache(tmp_path, monkeypatch, inventory_at=f"{TODAY}T12:00:00Z", snapshot_at=None)
+    _setup_cache(tmp_path, monkeypatch, inventory_at=f"{_today()}T12:00:00Z", snapshot_at=None)
     marker: list = []
     _stub_live_fetchers(monkeypatch, marker)
     report = inv.build_report()
@@ -206,8 +208,8 @@ def test_no_flag_never_reads_cache(tmp_path, monkeypatch):
 def test_main_check_offline(tmp_path, monkeypatch, capsys):
     """--check stays offline: validates the cached report without any fetch."""
     reports = tmp_path / "reports"
-    _write_json(reports / f"public_source_inventory_{TODAY}.json", {
-        "generated_at": f"{TODAY}T12:00:00Z", "sections": [_ok_section("L")],
+    _write_json(reports / f"public_source_inventory_{_today()}.json", {
+        "generated_at": f"{_today()}T12:00:00Z", "sections": [_ok_section("L")],
     })
     monkeypatch.setattr(inv, "REPO_ROOT", tmp_path)
     monkeypatch.setattr(sys, "argv", ["prog", "--check"])
