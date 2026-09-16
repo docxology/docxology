@@ -4,8 +4,8 @@ Scoped network-link triage for public-facing repository hubs.
 
 - Source report: `reports/external_links_2026-09-16.json`
 - Checked URLs: 827
-- OK: 683
-- Warnings: 144
+- OK: 684
+- Warnings: 143
 
 ## Categories
 
@@ -13,8 +13,8 @@ Scoped network-link triage for public-facing repository hubs.
 | --- | ---: | --- |
 | `bot-protected-or-rate-limited` | 138 | Likely blocks automated checks; verify manually before replacing. |
 | `connection-failure` | 1 | Could not connect during this run. |
-| `ok` | 683 | Returned a 2xx/3xx response. |
-| `timeout` | 4 | Timed out under the bounded checker timeout. |
+| `ok` | 684 | Returned a 2xx/3xx response. |
+| `timeout` | 3 | Timed out under the bounded checker timeout. |
 | `upstream-transient` | 1 | Server-side outage or temporary upstream failure. |
 
 ## bot-protected-or-rate-limited
@@ -35,7 +35,7 @@ Scoped network-link triage for public-facing repository hubs.
 | 403 | <https://doi.org/10.3390/e25070964> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
 | 403 | <https://doi.org/10.3390/e26040303> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 403 | <https://doi.org/10.3390/e27050459> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.20420556> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.20419007> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.20450880> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.20450970> | pages/SOFTWARE.md, software.html, software.html |
 | 429 | <https://doi.org/10.5281/zenodo.20453879> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
@@ -112,7 +112,6 @@ Scoped network-link triage for public-facing repository hubs.
 
 | Status | URL | Sources |
 | ---: | --- | --- |
-| 0 | <https://arxiv.org/search/?query=daniel+ari+friedman&searchtype=author> | pages/LINKS.md |
 | 0 | <https://grantome.com/grant/NSF/DBI-2010290> | pages/EVIDENCE.md, pages/EVIDENCE.md |
 | 0 | <https://www.christies.com/en/lot/lot-6337619> | README.md, art.html, media.html |
 | 0 | <https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd> | pages/EVIDENCE.md, pages/EVIDENCE.md |

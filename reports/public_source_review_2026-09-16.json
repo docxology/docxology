@@ -51,10 +51,10 @@
       "source_commit": null
     },
     "public_source_snapshot": {
-      "generated_at": "2026-09-16T05:04:13.593540+00:00",
+      "generated_at": "2026-09-16T06:15:16.895567+00:00",
       "path": "reports/public_source_snapshot_2026-09-16.json",
-      "sha256": "9189e90b4e92e925820792716aab7c67fb583f402ee9b34469483831a87603e6",
-      "source_commit": "ed8b3859943e2a09ab1a69e6950d24ea0436a596"
+      "sha256": "edf960caaf2e3830b8210e8d1965ab7a5d1be0e87626e2e47ebece560261a1d2",
+      "source_commit": "f922c483dbd37409833b8cde58b8a8056d6c4a73"
     },
     "repository_classification": {
       "generated_at": "2026-09-15T22:03:30Z",
@@ -3522,7 +3522,7 @@
       "candidate": {
         "pairing_report_date": "2026-09-15",
         "pairing_report_generated_at": "2026-09-15T21:43:46Z",
-        "public_source_snapshot_generated_at": "2026-09-16T05:04:13.593540Z",
+        "public_source_snapshot_generated_at": "2026-09-16T06:15:16.895567Z",
         "refresh_note": "",
         "refresh_state": "stale",
         "warnings": []
