@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-09-16T06:36:54Z",
+      "generated_at": "2026-09-16T16:25:19Z",
       "path": "data/claims.json",
-      "sha256": "fefc7effb8127a019cbe83cf052c7c986d26511bd21fab70c75dbfedbd6fdd43",
+      "sha256": "8ebbbf4a21ea9ce30f8c414a33e1c38996520044ac13d6235dadc5b0a0fab90a",
       "source_commit": null
     },
     "doi_role_review": {
@@ -3544,8 +3544,23 @@
   "schema_version": "1.0",
   "source_commit": "a35ab23d272cf67c35dd6dc6d481ae0d97101089",
   "source_tree_sha": "ac2c97f30a2dc223a77f810df31d04b608fce776",
-  "source_worktree_clean": true,
-  "source_worktree_dirty_paths": [],
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "data/claims.json",
+    "data/organizations.json",
+    "data/people.json",
+    "data/resume.json",
+    "data/software.json",
+    "evidence.html",
+    "pages/EVIDENCE.md",
+    "resume/academic.txt",
+    "resume/full.txt",
+    "resume/resume.html",
+    "resume/resume.pdf",
+    "resume/software-consulting.txt",
+    "resume/teaching-service.txt",
+    "resume/verify.html"
+  ],
   "summary": {
     "applied": 174,
     "categories": {
