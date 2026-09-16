@@ -18,6 +18,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 from docxology_tools.change_classifier import Classification, classify_paths  # noqa: E402
 
 from release_controls import is_control_path  # noqa: E402  (stdlib-only module; flat import like build_stamp)
+# Replaces the manual sequence: payload commit, control-tail commit, then the
 # gate cascade by hand (docs/operations/settle.md).  Commits are split per the
 # release_controls.is_control_path semantics encoded in
 # change_classifier.classify_paths.  The full tier runs the same four checks
