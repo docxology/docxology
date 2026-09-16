@@ -1,11 +1,9 @@
 {
-  "generated_at": "2026-09-16T04:55:13Z",
-  "source_commit": "157b420aa93b49b2ca4839b94e96051597f3a7d3",
-  "source_worktree_clean": false,
-  "source_worktree_dirty_paths": [
-    "reports/pages_artifact_growth_2026-09-16.json"
-  ],
-  "source_tree_sha": "de2eae67b198350468a73e9647c6bf2bb3ed637a",
+  "generated_at": "2026-09-16T16:14:14Z",
+  "source_commit": "9a98fcb747de626f5597e81b6af9380882581610",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
+  "source_tree_sha": "f4f6264c00263562ca6bbe9529d67eaf05f0bb1b",
   "tool": "Playwright Python sync API",
   "scope": "progressive enhancement, interaction, responsive, CSP-adjacent runtime checks",
   "passing": 7,
@@ -20,7 +18,7 @@
         "page_errors": 0,
         "known_meta_csp_warnings": 0
       },
-      "duration_ms": 2550
+      "duration_ms": 2523
     },
     {
       "name": "mobile menu opens, closes, and restores focus",
@@ -29,7 +27,7 @@
         "opened_and_closed": true,
         "focus_restored": true
       },
-      "duration_ms": 114
+      "duration_ms": 116
     },
     {
       "name": "no-JavaScript fallbacks remain usable",
@@ -49,7 +47,7 @@
         "non_paper_rows": 0,
         "sort_state": "descending"
       },
-      "duration_ms": 260
+      "duration_ms": 261
     },
     {
       "name": "gallery lightbox traps and restores focus",
@@ -58,7 +56,7 @@
         "trigger": "Open artwork: All-domain Anomaly Resolution Office (AARO)",
         "focus_restored": true
       },
-      "duration_ms": 157
+      "duration_ms": 209
     },
     {
       "name": "320px layout honors reduced motion without page overflow",
@@ -69,7 +67,7 @@
         "reduced_motion": true,
         "max_overflow_px": 2
       },
-      "duration_ms": 1142
+      "duration_ms": 1165
     },
     {
       "name": "forced colors and YouTube iframe policy remain covered",
@@ -79,7 +77,7 @@
         "iframe_origin": "www.youtube-nocookie.com",
         "iframe_title": true
       },
-      "duration_ms": 117
+      "duration_ms": 96
     }
   ]
 }

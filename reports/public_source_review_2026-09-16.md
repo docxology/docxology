@@ -24,14 +24,14 @@ Source commit: `f61b5eadd6ba7c1bc84666c6538256a662f11554`
 ## Evidence inputs
 
 - `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`1d01574cb4fb9c626202fd7572f637da37c4602ce38c2b79bd0c2390c057c60f`)
-- `claims_ledger`: `data/claims.json` (`fefc7effb8127a019cbe83cf052c7c986d26511bd21fab70c75dbfedbd6fdd43`)
+- `claims_ledger`: `data/claims.json` (`e6a2c0c9a880aa15c7a2cdd990b14923d2b0a0bf964a3f5822f061439fed78b1`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
 - `paired_publication_decisions`: `data/paired-publication-decisions.json` (`11a7f941bee41020a9db79bbc126ac0dc4bca2632fb08bba2dc644f94e11f262`)
 - `paired_publications`: `reports/paired_publications_2026-09-15.json` (`e47e8266b9c71654c22a7ad60758f747e17376f2420b82e34637fd161f9ef9f2`)
 - `previous_public_source_snapshot`: `reports/public_source_snapshot_2026-09-14.json` (`a1e7ca9d51cdb62384e1ecb672b9276f18a9bc2ca8119fd8f5ae9b2864da3575`)
 - `public_source_inventory`: `reports/public_source_inventory_2026-09-15.json` (`f0554560e76c13bd28e175851a304a28ef1b57893c4c9ce2bceff1c4ffdda49f`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`cff826363c7ca0e66bf583ee039a27cf0bfebc05ef57fb3222a8d91f50f73714`)
-- `public_source_snapshot`: `reports/public_source_snapshot_2026-09-16.json` (`edf960caaf2e3830b8210e8d1965ab7a5d1be0e87626e2e47ebece560261a1d2`)
+- `public_source_snapshot`: `reports/public_source_snapshot_2026-09-16.json` (`cf65a6e61fe9ab9f938a39f9a2295776a77df53912545f762b154df4a5e3e866`)
 - `repository_classification`: `data/repository-classification.json` (`ea9811aac2a233555340ab8dde7cb7ed8a5c6f20707cebed0bd21f2949d8d869`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2`)
 - `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5`)

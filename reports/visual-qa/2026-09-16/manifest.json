@@ -1,11 +1,9 @@
 {
-  "generated_at": "2026-09-16T04:55:08Z",
-  "source_commit": "157b420aa93b49b2ca4839b94e96051597f3a7d3",
-  "source_worktree_clean": false,
-  "source_worktree_dirty_paths": [
-    "reports/pages_artifact_growth_2026-09-16.json"
-  ],
-  "source_tree_sha": "de2eae67b198350468a73e9647c6bf2bb3ed637a",
+  "generated_at": "2026-09-16T16:14:09Z",
+  "source_commit": "9a98fcb747de626f5597e81b6af9380882581610",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
+  "source_tree_sha": "f4f6264c00263562ca6bbe9529d67eaf05f0bb1b",
   "tool": "playwright screenshot",
   "note": "Human review still required; these snapshots guard against obvious layout regressions.",
   "screenshots": [
@@ -56,14 +54,14 @@
       "viewport": "desktop",
       "size": "1440,1100",
       "file": "reports/visual-qa/2026-09-16/domains-desktop.png",
-      "sha256": "e34b825c5c8ac597b065ba7f372657f4da49e8e0a06bb333ed5a3e7596694a90"
+      "sha256": "9c0cb8d0c5302a113fe99247a97ae7d0fa752b9ebf1b331a029d7fac32afbedb"
     },
     {
       "page": "domains.html",
       "viewport": "mobile",
       "size": "390,900",
       "file": "reports/visual-qa/2026-09-16/domains-mobile.png",
-      "sha256": "31a65fb4d5149b28afb5337b8999e5a681d4a07b1df8745731b3b48f8027beec"
+      "sha256": "db2bb364e938b19801a94de04cd6e609345bf36fc0772f61fab108197c6f1448"
     },
     {
       "page": "search.html?q=active%20inference",
@@ -112,21 +110,21 @@
       "viewport": "desktop",
       "size": "1440,1100",
       "file": "reports/visual-qa/2026-09-16/catalog-desktop.png",
-      "sha256": "168904d84b241d7abbe44e2cf9aab95ffee6e06165b6d39d604809f364f69856"
+      "sha256": "c4e36bd773f8f28c4dcc5cb62a1b87d041468cdb171294c3223350edf479915d"
     },
     {
       "page": "catalog.html",
       "viewport": "mobile",
       "size": "390,900",
       "file": "reports/visual-qa/2026-09-16/catalog-mobile.png",
-      "sha256": "58783547e5427e7d36a94e93a982dcb5c20ec62dacd2b274138b49d3cbf73519"
+      "sha256": "97338195f29534a55f16a20ecbc976d9d470ae0aa5ab8bfbc6c2cf7fb3331d85"
     },
     {
       "page": "updates.html",
       "viewport": "desktop",
       "size": "1440,1100",
       "file": "reports/visual-qa/2026-09-16/updates-desktop.png",
-      "sha256": "fb33e3e8c0f90298f166c238f0714112ce097754298c4d9af075818334a653fe"
+      "sha256": "2a22f4e67863e1f8dacbddc71bee5d68cd67a22c28adee272663d615c66fdf25"
     },
     {
       "page": "updates.html",
@@ -140,14 +138,14 @@
       "viewport": "desktop",
       "size": "1440,1100",
       "file": "reports/visual-qa/2026-09-16/art-desktop.png",
-      "sha256": "222628e8f2f12bf8cb0ed4c0eb76e55edee99df1d6f7ba4ca95d769288c13719"
+      "sha256": "457f58fd5f58b16045146e65889527e94a751e7f0e135e952a7ab415a055eeb5"
     },
     {
       "page": "art.html",
       "viewport": "mobile",
       "size": "390,900",
       "file": "reports/visual-qa/2026-09-16/art-mobile.png",
-      "sha256": "c055d990223190de3d18e44cd8b5b801e43fd83c852f0bcee733395947726a89"
+      "sha256": "dcef059d47b0ef0cf05bcafd0eb47acef2e9b13a07030a7b65214d4afd2404bb"
     },
     {
       "page": "discovery.html",
@@ -182,19 +180,19 @@
       "viewport": "desktop",
       "size": "1440,1100",
       "file": "reports/visual-qa/2026-09-16/evidence-desktop.png",
-      "sha256": "3ebf66bea615fa029a5f1f1930b8af637a16cbfd503701f380c29f2d4b937a80"
+      "sha256": "dcc339b55267df49ffae454a965e04888bdcf6fc1164b346ed194d3dc55b84d0"
     },
     {
       "page": "evidence.html",
       "viewport": "mobile",
       "size": "390,900",
       "file": "reports/visual-qa/2026-09-16/evidence-mobile.png",
-      "sha256": "58fcfa0e6922681be159ad71d13eaacbecd997b0d1b0a73425aeaab78c3008ed"
+      "sha256": "ecc34b2204664b9ff2db3253e8d42d4efbb363f8f9076adbafa8f3fb7679dab3"
     }
   ],
   "review": {
     "status": "reviewed",
-    "reviewed_by": "omp Main agent (2026-09-16 clean-candidate capture)",
-    "reviewed_at": "2026-09-16T04:55:08Z"
+    "reviewed_by": "omp Main agent (2026-09-16 detached-candidate capture)",
+    "reviewed_at": "2026-09-16T16:14:09Z"
   }
 }

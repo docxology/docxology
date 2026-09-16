@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-16T06:15:16.895567+00:00",
-  "source_commit": "f922c483dbd37409833b8cde58b8a8056d6c4a73",
+  "generated_at": "2026-09-16T16:13:31.619079+00:00",
+  "source_commit": "9a98fcb747de626f5597e81b6af9380882581610",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
-  "source_tree_sha": "7c3a25f8ea3c9ded490d4a3df1aa1f03cd72197a",
+  "source_tree_sha": "f4f6264c00263562ca6bbe9529d67eaf05f0bb1b",
   "date": "2026-09-16",
   "note": "Public API freshness report only. Review before updating curated site claims.",
   "facts": {
@@ -192,9 +192,9 @@
     },
     "GitHub repo ActiveInferenceInstitute/fep_lean": {
       "full_name": "ActiveInferenceInstitute/fep_lean",
-      "stargazers_count": 2,
+      "stargazers_count": 3,
       "language": "Python",
-      "updated_at": "2026-09-16T03:17:11Z",
+      "updated_at": "2026-09-16T13:22:14Z",
       "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean"
     },
     "GitHub repo ActiveInferenceInstitute/cognitive": {
@@ -494,9 +494,9 @@
       "ok": true,
       "result": {
         "full_name": "ActiveInferenceInstitute/fep_lean",
-        "stargazers_count": 2,
+        "stargazers_count": 3,
         "language": "Python",
-        "updated_at": "2026-09-16T03:17:11Z",
+        "updated_at": "2026-09-16T13:22:14Z",
         "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean"
       }
     },

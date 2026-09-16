@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-09-16T06:36:54Z",
+      "generated_at": "2026-09-16T16:16:29Z",
       "path": "data/claims.json",
-      "sha256": "fefc7effb8127a019cbe83cf052c7c986d26511bd21fab70c75dbfedbd6fdd43",
+      "sha256": "e6a2c0c9a880aa15c7a2cdd990b14923d2b0a0bf964a3f5822f061439fed78b1",
       "source_commit": null
     },
     "doi_role_review": {
@@ -51,10 +51,10 @@
       "source_commit": null
     },
     "public_source_snapshot": {
-      "generated_at": "2026-09-16T06:15:16.895567+00:00",
+      "generated_at": "2026-09-16T16:13:31.619079+00:00",
       "path": "reports/public_source_snapshot_2026-09-16.json",
-      "sha256": "edf960caaf2e3830b8210e8d1965ab7a5d1be0e87626e2e47ebece560261a1d2",
-      "source_commit": "f922c483dbd37409833b8cde58b8a8056d6c4a73"
+      "sha256": "cf65a6e61fe9ab9f938a39f9a2295776a77df53912545f762b154df4a5e3e866",
+      "source_commit": "9a98fcb747de626f5597e81b6af9380882581610"
     },
     "repository_classification": {
       "generated_at": "2026-09-15T22:03:30Z",
@@ -1443,10 +1443,10 @@
           "full_name": "ActiveInferenceInstitute/fep_lean",
           "html_url": "https://github.com/ActiveInferenceInstitute/fep_lean",
           "language": "Python",
-          "stargazers_count": 2,
-          "updated_at": "2026-09-16T03:17:11Z"
+          "stargazers_count": 3,
+          "updated_at": "2026-09-16T13:22:14Z"
         },
-        "current_sha256": "c2567c97dec6fc35d66f21e86e3761a1c92d4fb5974310962483078f485a92bd",
+        "current_sha256": "52ec038c4f4a8887cde4ba2ead77c00bc605f4f0c3e479cc9d714a8a88f9de03",
         "label": "GitHub repo ActiveInferenceInstitute/fep_lean",
         "previous": {
           "full_name": "ActiveInferenceInstitute/fep_lean",
@@ -3522,7 +3522,7 @@
       "candidate": {
         "pairing_report_date": "2026-09-15",
         "pairing_report_generated_at": "2026-09-15T21:43:46Z",
-        "public_source_snapshot_generated_at": "2026-09-16T06:15:16.895567Z",
+        "public_source_snapshot_generated_at": "2026-09-16T16:13:31.619079Z",
         "refresh_note": "",
         "refresh_state": "stale",
         "warnings": []
@@ -3544,8 +3544,23 @@
   "schema_version": "1.0",
   "source_commit": "f61b5eadd6ba7c1bc84666c6538256a662f11554",
   "source_tree_sha": "be38db1c0e57c58ee37e7c0961c261283ac09fcd",
-  "source_worktree_clean": true,
-  "source_worktree_dirty_paths": [],
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "data/claims.json",
+    "data/organizations.json",
+    "data/people.json",
+    "data/resume.json",
+    "data/software.json",
+    "evidence.html",
+    "pages/EVIDENCE.md",
+    "resume/academic.txt",
+    "resume/full.txt",
+    "resume/resume.html",
+    "resume/resume.pdf",
+    "resume/software-consulting.txt",
+    "resume/teaching-service.txt",
+    "resume/verify.html"
+  ],
   "summary": {
     "applied": 174,
     "categories": {

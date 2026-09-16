@@ -4,16 +4,16 @@ Scoped network-link triage for public-facing repository hubs.
 
 - Source report: `reports/external_links_2026-09-16.json`
 - Checked URLs: 827
-- OK: 684
-- Warnings: 143
+- OK: 683
+- Warnings: 144
 
 ## Categories
 
 | Category | Count | Meaning |
 | --- | ---: | --- |
-| `bot-protected-or-rate-limited` | 138 | Likely blocks automated checks; verify manually before replacing. |
+| `bot-protected-or-rate-limited` | 139 | Likely blocks automated checks; verify manually before replacing. |
 | `connection-failure` | 1 | Could not connect during this run. |
-| `ok` | 684 | Returned a 2xx/3xx response. |
+| `ok` | 683 | Returned a 2xx/3xx response. |
 | `timeout` | 3 | Timed out under the bounded checker timeout. |
 | `upstream-transient` | 1 | Server-side outage or temporary upstream failure. |
 
@@ -36,6 +36,7 @@ Scoped network-link triage for public-facing repository hubs.
 | 403 | <https://doi.org/10.3390/e26040303> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 403 | <https://doi.org/10.3390/e27050459> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.20419007> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.20420556> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.20450880> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.20450970> | pages/SOFTWARE.md, software.html, software.html |
 | 429 | <https://doi.org/10.5281/zenodo.20453879> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
@@ -100,7 +101,6 @@ Scoped network-link triage for public-facing repository hubs.
 | 429 | <https://doi.org/10.5281/zenodo.22134545> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.22134547> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.22243472> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.22663906> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
 
 ## connection-failure
 
