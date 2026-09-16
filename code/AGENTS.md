@@ -15,7 +15,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `src/site_nav.py` | `render_nav()` for work pages; `render_nav_domain()` for domain landing pages |
 | `src/sitemap_policy.py` | Index-priority URL lists for `sitemap.xml` and IndexNow (open crawl; sitemap is not a crawl gate) |
 | `src/seo_invariants.py` | SEO invariant checks (paper/work canonicals, redirect stubs, sitemap policy alignment) for `validate_repo.py` |
-| `src/report_paths.py` | Shared helpers for date-stamped report artifacts (`latest_report`, `dated_report_path`, `generated_timestamp`, `rel`, ...) — imported by 31 orchestrators through `docxology_tools`, no CLI of its own |
+| `src/report_paths.py` | Shared helpers for date-stamped report artifacts (`latest_report`, `dated_report_path`, `generated_timestamp`, `rel`, ...) — imported by 32 orchestrators through `docxology_tools`, no CLI of its own |
 | `orchestrators/fetch_youtube_data.py` | CLI entry: personal + institute channels → `data/*.json`; preserves the prior cache when any tab fails or an exact refresh unexpectedly returns no videos (`--fast` merges cached exact dates) |
 | `orchestrators/export_bibliography.py` | Generate BibTeX, CSL JSON, RIS, and `data/works.json` from `pages/BIBLIOGRAPHY.md` |
 | `orchestrators/export_agent_data.py` | Generate `data/software.json`, `data/people.json`, `data/organizations.json`, and `data/claims.json` |
