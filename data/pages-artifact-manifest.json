@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-16T00:28:15Z",
-  "source_commit_at_generation": "cc9847512749c842cd97d00e562edc3d69acee8e",
+  "generated_at": "2026-09-16T00:35:04Z",
+  "source_commit_at_generation": "b4fe34345231b8d5fd8905f267fad70b3c18cc66",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 864850553,
+    "source_bytes": 864835571,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4821,
-    "artifact_bytes": 865701561
+    "artifact_file_count": 4822,
+    "artifact_bytes": 865686625
   },
   "included_files": [
     {
@@ -5326,7 +5326,7 @@
     {
       "path": "catalog.html",
       "bytes": 50173,
-      "sha256": "ca33fbeaf2cc942fa2a6a8b28bacfef328ef12a6a161c0b42a7e337e1d57c631"
+      "sha256": "cf80a2b3c50e0710e9ee3b1bbcbfdeef24d86c831b653084606900a5b44f67ed"
     },
     {
       "path": "cite-verify.html",
@@ -6506,7 +6506,7 @@
     {
       "path": "data/catalog.json",
       "bytes": 31608,
-      "sha256": "39f0c30d772dabe8604306486074fbb6ec073e9bf1665da3818f29d1a1efbbb0"
+      "sha256": "3319b5090db37cf6038d43dd6723d06d217b1ad7027b10dbfb81d1994913dd33"
     },
     {
       "path": "data/claims.json",
@@ -6691,7 +6691,7 @@
     {
       "path": "discovery.html",
       "bytes": 33122,
-      "sha256": "ef206b6e567cdee5614b073ac5a4613a5935279842124269d88254e2951042b9"
+      "sha256": "13be5d160fab2f412b0e3b5fb07ae6d59127cfa5f31623f77be35cbc4e0ec225"
     },
     {
       "path": "docs/AGENTS.md",
@@ -7356,7 +7356,7 @@
     {
       "path": "pages/DISCOVERY.md",
       "bytes": 15409,
-      "sha256": "0d9833dfae26992cd9f9dfa7086e6fc2822a45d1921c5076cbaa7b6d93aeb4e1"
+      "sha256": "0661c177077febfa8d938b5b1f08a67a54b5471daaf70724c010c6f7c30d1123"
     },
     {
       "path": "pages/DOMAINS.md",
@@ -17024,11 +17024,6 @@
       "sha256": "050db19cfa2b3ffc0a17e5b5e472b07ea6b2d7ff17838547ac4030412f6410f0"
     },
     {
-      "path": "reports/live_site_verification_2026-09-15.json",
-      "bytes": 14982,
-      "sha256": "404431b5e3ada29323c072f424a908804b4af36db3a26f46223c0859406631bb"
-    },
-    {
       "path": "reports/live_site_verification_2026-09-16.json",
       "bytes": 15080,
       "sha256": "45694bba928b9ca7fe83028404193cbe9d7e707862c93f9ebd78d4b7f4aaf867"
@@ -17276,22 +17271,22 @@
     {
       "path": "search-index-content-video.json",
       "bytes": 980670,
-      "sha256": "133e35ade23b36c9c7b45496e2f931ecb5fb9e310d192a44e1e1b46cd07ce2d9"
+      "sha256": "78b88743172bd940acd807b7516e7d4742cf3a9bf495d2c653b4ae0774590b54"
     },
     {
       "path": "search-index-content-work.json",
       "bytes": 377985,
-      "sha256": "e04c0fc1a50ed1ef9603c4344623755deb292aa1f959b3499fa81035894cee55"
+      "sha256": "38fa39450de45c8724557302a0e1292244db436e0d679871614c9c38189d57be"
     },
     {
       "path": "search-index-core.json",
       "bytes": 815082,
-      "sha256": "50534cd77e854a3c5964b4d90d6a0c9335a91f6fa97a698042f01b8a060e1ac1"
+      "sha256": "cb738ddc30660ef051ead4d20deb3ce4d43bb52c038d940b857977bbc6bd15e0"
     },
     {
       "path": "search-index.json",
       "bytes": 1639971,
-      "sha256": "913fc27c37342bbd76cd2231815175d19d8e2974955acce5ef10c63c8d269813"
+      "sha256": "fad1b1426197c7fbc3d91c0133eab30989227a34dd25c10bad8fe0493cdbd43b"
     },
     {
       "path": "search.html",
@@ -24120,6 +24115,14 @@
     {
       "path": "reports/public_source_review_2026-09-15.md",
       "role": "public control metadata"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-16.json",
+      "role": "public control metadata"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-16.md",
+      "role": "public control metadata"
     }
   ],
   "omitted_paper_images": {
@@ -24175,8 +24178,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 443,
-    "bytes": 88443292,
+    "count": 444,
+    "bytes": 88458274,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
