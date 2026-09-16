@@ -31,7 +31,7 @@ Source commit: `f645a4faa51d44f955337c84b9ab24dea499c1c9`
 - `previous_public_source_snapshot`: `reports/public_source_snapshot_2026-09-14.json` (`a1e7ca9d51cdb62384e1ecb672b9276f18a9bc2ca8119fd8f5ae9b2864da3575`)
 - `public_source_inventory`: `reports/public_source_inventory_2026-09-15.json` (`f0554560e76c13bd28e175851a304a28ef1b57893c4c9ce2bceff1c4ffdda49f`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`cff826363c7ca0e66bf583ee039a27cf0bfebc05ef57fb3222a8d91f50f73714`)
-- `public_source_snapshot`: `reports/public_source_snapshot_2026-09-16.json` (`d18fd4242b55a6ef40ad1b39de71e56bc74789382bdacf664dd027cbfea110d0`)
+- `public_source_snapshot`: `reports/public_source_snapshot_2026-09-16.json` (`eb8a1b6d647b2fb73404497c3c44c04f0c966c4f56df60b516dcb21d5f4e9e22`)
 - `repository_classification`: `data/repository-classification.json` (`ea9811aac2a233555340ab8dde7cb7ed8a5c6f20707cebed0bd21f2949d8d869`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2`)
 - `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5`)
