@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T22:56:53Z",
+  "generated_at": "2026-09-16T02:17:19Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -51,9 +51,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-09-15.json"
+        "reports/public_source_snapshot_2026-09-16.json"
       ],
-      "checked_at": "2026-09-15T21:41:13.329423+00:00",
+      "checked_at": "2026-09-16T02:00:52.117813+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -65,9 +65,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-09-15.json"
+        "reports/public_source_snapshot_2026-09-16.json"
       ],
-      "checked_at": "2026-09-15T21:41:13.329423+00:00",
+      "checked_at": "2026-09-16T02:00:52.117813+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "ea322c6412761a935527c0bc94380bf2e84c7c2ffd287ea88543746aa365614d",
+      "sha256": "64d3e9a00214024a2f509a8248fc2af7595b0b9ddae76b21a22d1ae20d190542",
       "files": [
         {
           "path": "resume/source.json",
@@ -103,7 +103,7 @@
         {
           "path": "data/software.json",
           "bytes": 76507,
-          "sha256": "34848afb28da863ca026075d646f918d650b695772e906326590b0413367ab2b"
+          "sha256": "44c4e95918e8392ac0d2146159917c4470121b59cc68390b35355f5a8d4f4eb0"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "9dbd8a005f844ad24b9a5cf4491ff3b159d3d6895b340bd0fd6f0835f1229331"
+          "sha256": "453291cd750bd40e38ffcfdc0a2178c2450ef1570f04a30ab3b90e4ce11ecdcd"
         },
         {
           "path": "data/github-repositories.json",
@@ -9523,7 +9523,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-09-15T22:56:49+00:00",
+      "checked_at": "2026-09-16T02:17:16+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9538,7 +9538,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-09-15T22:56:49+00:00",
+      "checked_at": "2026-09-16T02:17:16+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9550,9 +9550,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-09-15.json"
+        "reports/public_source_snapshot_2026-09-16.json"
       ],
-      "checked_at": "2026-09-15T21:41:13.329423+00:00",
+      "checked_at": "2026-09-16T02:00:52.117813+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -9564,9 +9564,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-09-15.json"
+        "reports/public_source_snapshot_2026-09-16.json"
       ],
-      "checked_at": "2026-09-15T21:41:13.329423+00:00",
+      "checked_at": "2026-09-16T02:00:52.117813+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
