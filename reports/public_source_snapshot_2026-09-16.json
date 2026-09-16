@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-16T02:49:54.570212+00:00",
-  "source_commit": "652bf47a1d047e8560fb6cd71d177bdca4640fea",
+  "generated_at": "2026-09-16T02:52:56.160249+00:00",
+  "source_commit": "72fd5a952a65ea1e0d4e0e16f30192c9cf2b25bf",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
-  "source_tree_sha": "b8e4830ef008997dfc32d1f8858a4b8a0a1b1ad8",
+  "source_tree_sha": "0f080ef9c756c24829f4521bc41f4d55dfc5bf98",
   "date": "2026-09-16",
   "note": "Public API freshness report only. Review before updating curated site claims.",
   "facts": {

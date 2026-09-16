@@ -51,10 +51,10 @@
       "source_commit": null
     },
     "public_source_snapshot": {
-      "generated_at": "2026-09-16T02:49:54.570212+00:00",
+      "generated_at": "2026-09-16T02:52:56.160249+00:00",
       "path": "reports/public_source_snapshot_2026-09-16.json",
-      "sha256": "eb8a1b6d647b2fb73404497c3c44c04f0c966c4f56df60b516dcb21d5f4e9e22",
-      "source_commit": "652bf47a1d047e8560fb6cd71d177bdca4640fea"
+      "sha256": "b3749a225ce075a0a464c37308784fc091b8a25f945493a1e5bb4d17136ff14a",
+      "source_commit": "72fd5a952a65ea1e0d4e0e16f30192c9cf2b25bf"
     },
     "repository_classification": {
       "generated_at": "2026-09-15T22:03:30Z",
@@ -3522,7 +3522,7 @@
       "candidate": {
         "pairing_report_date": "2026-09-15",
         "pairing_report_generated_at": "2026-09-15T21:43:46Z",
-        "public_source_snapshot_generated_at": "2026-09-16T02:49:54.570212Z",
+        "public_source_snapshot_generated_at": "2026-09-16T02:52:56.160249Z",
         "refresh_note": "",
         "refresh_state": "stale",
         "warnings": []
@@ -3542,8 +3542,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "f645a4faa51d44f955337c84b9ab24dea499c1c9",
-  "source_tree_sha": "25b8087aeb5d5cc2800f85572d2b6005b5394596",
+  "source_commit": "72fd5a952a65ea1e0d4e0e16f30192c9cf2b25bf",
+  "source_tree_sha": "0f080ef9c756c24829f4521bc41f4d55dfc5bf98",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
