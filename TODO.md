@@ -461,6 +461,19 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
   from the local chain), and new dated reports resolve only after they are
   tracked — see the discovery-pointer rule in the do-not-skip list of
   [`docs/operations/publication-sync.md`](docs/operations/publication-sync.md).
+- DOC-002 attestation terminal finding (2026-09-16, code-verified): the
+  post-deploy attestation is structurally blocked by a self-referential
+  binding — `code/src/release_evidence.py:683` demands each receipt's
+  embedded `source_commit == expected_commit` and :578-579 the
+  `source_tree_sha == the release commit's tree`, while every capture
+  writes its receipt at its own capture-time HEAD and *landing* the
+  receipt is necessarily a later commit — the receipts can never bind the
+  commit containing them. The prior receipts (5c25de20, 8d84781a) predate
+  these strict checks. Resolution options (release-engineering, principal
+  decision): content-based bindings for tool-generated receipts, or a
+  capture-then-amend flow. The complete evidence set for the current
+  deployment IS committed (all families bound and green); the attestation
+  receipt awaits that decision.
 
 ### DOC-014 — Stage the Python package migration after a green release
 
