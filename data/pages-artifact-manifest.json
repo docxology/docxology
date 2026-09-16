@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-16T05:22:01Z",
-  "source_commit_at_generation": "1f63c90be4ee6f10c49f805b745b6796a3a03702",
+  "generated_at": "2026-09-16T06:00:30Z",
+  "source_commit_at_generation": "ab5d654e296374e9634d3941fa67f1324a10df0c",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 864876298,
+    "source_bytes": 864877281,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4821,
-    "artifact_bytes": 865727299
+    "artifact_bytes": 865728282
   },
   "included_files": [
     {
@@ -105,8 +105,8 @@
     },
     {
       "path": "TODO.md",
-      "bytes": 32382,
-      "sha256": "f7548a8222e02b0b6207548ca6a15893cc1c646d1c4606fa11ae7e99223800b0"
+      "bytes": 33365,
+      "sha256": "6fd0fb414808e04c696e9daf69b18669bd3974dd72a6d6f91b8819fdfbfb86a4"
     },
     {
       "path": "a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt",
