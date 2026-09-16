@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-16T06:46:12Z",
-  "source_commit_at_generation": "9a2bbd0eff45791e0966e2fc21c847e593a88577",
+  "generated_at": "2026-09-16T07:14:16Z",
+  "source_commit_at_generation": "952d1d8c77ed5eb2f808ce8dd4bbfac935e68a52",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 921991614,
+    "source_bytes": 921993837,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4858,
-    "artifact_bytes": 922849041
+    "artifact_bytes": 922851263
   },
   "included_files": [
     {
@@ -6580,8 +6580,8 @@
     },
     {
       "path": "data/report-retention.json",
-      "bytes": 2236,
-      "sha256": "75b7c7b3146cc04816b2c550ff0d7b2a60f5e88155108affebe225a45feb2de0"
+      "bytes": 4459,
+      "sha256": "304ee996da1d0f95d025332c8cff43dcff39a30593d245c73c71ee744b75f330"
     },
     {
       "path": "data/repository-classification.json",
@@ -24334,34 +24334,34 @@
     ]
   },
   "omitted_visual_qa_screenshots": {
-    "count": 78,
-    "bytes": 171638439,
+    "count": 26,
+    "bytes": 55282442,
     "examples": [
-      "reports/visual-qa/2026-08-26/art-desktop.png",
-      "reports/visual-qa/2026-08-26/art-mobile.png",
-      "reports/visual-qa/2026-08-26/catalog-desktop.png",
-      "reports/visual-qa/2026-08-26/catalog-mobile.png",
-      "reports/visual-qa/2026-08-26/cite-verify-desktop.png",
-      "reports/visual-qa/2026-08-26/cite-verify-mobile.png",
-      "reports/visual-qa/2026-08-26/discovery-desktop.png",
-      "reports/visual-qa/2026-08-26/discovery-mobile.png",
-      "reports/visual-qa/2026-08-26/domains-desktop.png",
-      "reports/visual-qa/2026-08-26/domains-mobile.png",
-      "reports/visual-qa/2026-08-26/evidence-desktop.png",
-      "reports/visual-qa/2026-08-26/evidence-mobile.png",
-      "reports/visual-qa/2026-08-26/home-desktop.png",
-      "reports/visual-qa/2026-08-26/home-mobile.png",
-      "reports/visual-qa/2026-08-26/publications-desktop.png",
-      "reports/visual-qa/2026-08-26/publications-mobile.png",
-      "reports/visual-qa/2026-08-26/repositories-desktop.png",
-      "reports/visual-qa/2026-08-26/repositories-mobile.png",
-      "reports/visual-qa/2026-08-26/repository-forks-desktop.png",
-      "reports/visual-qa/2026-08-26/repository-forks-mobile.png"
+      "reports/visual-qa/2026-09-16/art-desktop.png",
+      "reports/visual-qa/2026-09-16/art-mobile.png",
+      "reports/visual-qa/2026-09-16/catalog-desktop.png",
+      "reports/visual-qa/2026-09-16/catalog-mobile.png",
+      "reports/visual-qa/2026-09-16/cite-verify-desktop.png",
+      "reports/visual-qa/2026-09-16/cite-verify-mobile.png",
+      "reports/visual-qa/2026-09-16/discovery-desktop.png",
+      "reports/visual-qa/2026-09-16/discovery-mobile.png",
+      "reports/visual-qa/2026-09-16/domains-desktop.png",
+      "reports/visual-qa/2026-09-16/domains-mobile.png",
+      "reports/visual-qa/2026-09-16/evidence-desktop.png",
+      "reports/visual-qa/2026-09-16/evidence-mobile.png",
+      "reports/visual-qa/2026-09-16/home-desktop.png",
+      "reports/visual-qa/2026-09-16/home-mobile.png",
+      "reports/visual-qa/2026-09-16/publications-desktop.png",
+      "reports/visual-qa/2026-09-16/publications-mobile.png",
+      "reports/visual-qa/2026-09-16/repositories-desktop.png",
+      "reports/visual-qa/2026-09-16/repositories-mobile.png",
+      "reports/visual-qa/2026-09-16/repository-forks-desktop.png",
+      "reports/visual-qa/2026-09-16/repository-forks-mobile.png"
     ]
   },
   "omitted_superseded_reports": {
-    "count": 468,
-    "bytes": 92386467,
+    "count": 429,
+    "bytes": 87699998,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
