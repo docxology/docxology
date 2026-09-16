@@ -20,17 +20,17 @@ import sys
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
-from biblio_table import BiblioRow, iter_bibliography_rows  # noqa: E402
-from bibliography_links import canonical_link_url  # noqa: E402
+from docxology_tools.biblio_table import BiblioRow, iter_bibliography_rows  # noqa: E402
+from docxology_tools.bibliography_links import canonical_link_url  # noqa: E402
 
-try:
-    from report_paths import generated_timestamp, stable_generated_at
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, stable_generated_at
+from docxology_tools.report_paths import generated_timestamp, stable_generated_at  # noqa: E402
 
 
 DOMAIN_NAMES = {

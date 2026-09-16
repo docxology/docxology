@@ -25,13 +25,15 @@ import urllib.request
 from html import unescape
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-SRC = REPO_ROOT / "code" / "src"
-sys.path.insert(0, str(SRC))
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from domain_inference import infer_domain_emoji_zenodo as infer_domain  # noqa: E402
-from publication_pairing import slug_topic, yaml_double_quoted, zenodo_record_url_from_doi  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.domain_inference import infer_domain_emoji_zenodo as infer_domain  # noqa: E402
+from docxology_tools.publication_pairing import slug_topic, yaml_double_quoted, zenodo_record_url_from_doi  # noqa: E402
 from sync_paired_publications import refresh_bibliography_counts  # noqa: E402
 
 ORCID = "0000-0001-6232-9096"

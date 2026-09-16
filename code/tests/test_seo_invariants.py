@@ -8,11 +8,15 @@ import subprocess
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-import seo_invariants  # noqa: E402
-from seo_invariants import (  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools import seo_invariants  # noqa: E402
+from docxology_tools.seo_invariants import (  # noqa: E402
     REDIRECT_STUBS,
     check_paper_pages,
     check_sitemap_policy,
@@ -20,9 +24,9 @@ from seo_invariants import (  # noqa: E402
     check_work_descriptions,
     check_public_html_security,
     collect_seo_errors,
-    sitemap_locs,
 )
-from site_nav import CSP_META_TAG, META_INVALID_CSP_DIRECTIVES  # noqa: E402
+from build_sitemap import sitemap_locs  # noqa: E402
+from docxology_tools.site_nav import CSP_META_TAG, META_INVALID_CSP_DIRECTIVES  # noqa: E402
 
 
 def test_collect_seo_errors_empty_on_repo():

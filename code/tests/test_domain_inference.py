@@ -5,17 +5,19 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-SRC_DIR = REPO_ROOT / "code" / "src"
-sys.path.insert(0, str(SRC_DIR))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from domain_inference import (  # noqa: E402
+
+from docxology_tools.domain_inference import (  # noqa: E402
     contains_term,
     infer_domain_emoji,
     infer_domain_emoji_zenodo,
     infer_domain_name,
 )
-from publication_pairing import (  # noqa: E402
+from docxology_tools.publication_pairing import (  # noqa: E402
     GitHubRelease,
     PublicationPair,
     ZenodoRecord,

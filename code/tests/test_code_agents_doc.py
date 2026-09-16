@@ -42,7 +42,8 @@ def test_report_paths_importer_count_is_current():
     importers = [
         path
         for path in sorted((REPO_ROOT / "code" / "orchestrators").glob("*.py"))
-        if re.search(r"^\s*(from report_paths import|import report_paths)",
+        if re.search(r"^\s*(from docxology_tools\.report_paths import"
+                     r"|import docxology_tools\.report_paths)",
                      path.read_text(encoding="utf-8"), re.MULTILINE)
     ]
     assert int(claim.group(1)) == len(importers), (

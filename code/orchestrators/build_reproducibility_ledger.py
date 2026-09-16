@@ -38,14 +38,18 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 JSON_OUT = REPO_ROOT / "data" / "reproducibility.json"
 HTML_OUT = REPO_ROOT / "reproducibility.html"
 MD_OUT = REPO_ROOT / "pages" / "REPRODUCIBILITY.md"
 
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from build_stamp import footer_build_stamp_html  # noqa: E402
-from site_nav import (  # noqa: E402
+from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
+from docxology_tools.site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
     INTERACTIVE_SCRIPTS,
@@ -447,7 +451,7 @@ def _comparable(path: Path, content: str) -> tuple[str, str]:
     if path != JSON_OUT:
         # Stamp-reuse: a difference confined to the footer build stamp (commit
         # SHA at generation time) is not staleness - mirror generated_outputs.
-        from build_stamp import reuse_on_disk_stamp  # noqa: E402
+        from docxology_tools.build_stamp import reuse_on_disk_stamp  # noqa: E402
         return on_disk, reuse_on_disk_stamp(content, on_disk)
     existing = json.loads(on_disk)
     fresh = json.loads(content)

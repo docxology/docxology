@@ -9,16 +9,20 @@ from pathlib import Path
 
 import pytest
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-import report_paths  # noqa: E402
-from release_controls import (  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools import report_paths  # noqa: E402
+from docxology_tools.release_controls import (  # noqa: E402
     latest_payload_commit,
     source_payload_commit,
     source_tree_sha,
 )
-from report_paths import (  # noqa: E402
+from docxology_tools.report_paths import (  # noqa: E402
     dated_report_dir,
     dated_report_path,
     default_latest_file,

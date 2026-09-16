@@ -7,10 +7,13 @@ import sys
 
 import pytest
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from collection_jsonld import display_paths, replace_inline_collection_ld  # noqa: E402
+
+from docxology_tools.collection_jsonld import display_paths, replace_inline_collection_ld  # noqa: E402
 
 
 BEGIN = "<!-- <CATALOG_LD_BEGIN> -->"

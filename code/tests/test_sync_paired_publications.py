@@ -10,14 +10,14 @@ from unittest import mock
 
 import pytest
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-SRC_DIR = REPO_ROOT / "code" / "src"
-ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
-sys.path.insert(0, str(SRC_DIR))
-sys.path.insert(0, str(ORCH_DIR))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from generation_plan import LOCAL_GENERATION_STEPS  # noqa: E402
-from publication_pairing import (  # noqa: E402
+
+from docxology_tools.generation_plan import LOCAL_GENERATION_STEPS  # noqa: E402
+from docxology_tools.publication_pairing import (  # noqa: E402
     GitHubRelease,
     PublicationPair,
     ZenodoRecord,

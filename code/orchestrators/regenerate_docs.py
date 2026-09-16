@@ -29,12 +29,16 @@ from pathlib import Path
 from typing import Any, Iterable, Sequence
 from urllib.parse import quote, urlsplit, urlunsplit
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
-from biblio_table import iter_bibliography_rows  # noqa: E402
-from domain_inference import DOMAIN_TO_EMOJI, infer_domain_name  # noqa: E402
+from docxology_tools.biblio_table import iter_bibliography_rows  # noqa: E402
+from docxology_tools.domain_inference import DOMAIN_TO_EMOJI, infer_domain_name  # noqa: E402
 
 log = logging.getLogger(__name__)
 BIBLIOGRAPHY_PATH = Path(os.environ.get("BIB_PATH", PAPERS_DIR.parent / "pages" / "BIBLIOGRAPHY.md"))

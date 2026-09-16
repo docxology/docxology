@@ -16,8 +16,12 @@ from pathlib import Path
 
 import pytest
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 _SPEC = importlib.util.spec_from_file_location(
     "build_reproducibility_ledger",
@@ -71,7 +75,7 @@ def test_weakest_section_is_published_worst_first(ledger: dict) -> None:
 
 
 def test_page_is_promoted_for_indexing() -> None:
-    from sitemap_policy import INDEX_PRIORITY_STATIC  # noqa: PLC0415
+    from docxology_tools.sitemap_policy import INDEX_PRIORITY_STATIC  # noqa: PLC0415
 
     assert any(path == "reproducibility.html" for path, _, _ in INDEX_PRIORITY_STATIC)
 

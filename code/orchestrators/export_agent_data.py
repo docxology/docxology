@@ -17,12 +17,16 @@ import sys
 from functools import cache
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from count_consistency import parse_software_catalog_counts  # noqa: E402
-from software_table import iter_software_rows, software_rows_to_dict  # noqa: E402
-from report_paths import stable_generated_at  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.count_consistency import parse_software_catalog_counts  # noqa: E402
+from docxology_tools.software_table import iter_software_rows, software_rows_to_dict  # noqa: E402
+from docxology_tools.report_paths import stable_generated_at  # noqa: E402
 
 SOFTWARE_MD = REPO_ROOT / "pages" / "SOFTWARE.md"
 SCHOLAR_SNAPSHOT = REPO_ROOT / "data" / "scholar-snapshot.json"
@@ -62,10 +66,7 @@ def _scholar_claim() -> dict:
         ),
     }
 
-try:
-    from report_paths import generated_timestamp, latest_source_report, rel
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, latest_source_report, rel
+from docxology_tools.report_paths import generated_timestamp, latest_source_report, rel  # noqa: E402
 
 
 def parse_software() -> list[dict]:

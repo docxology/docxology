@@ -30,11 +30,15 @@ from collections.abc import Iterable
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-import release_controls  # noqa: E402
-from release_evidence import is_ephemeral_release_evidence_path  # noqa: E402
-import report_references  # noqa: E402
+from docxology_tools import release_controls  # noqa: E402
+from docxology_tools.release_evidence import is_ephemeral_release_evidence_path  # noqa: E402
+from docxology_tools import report_references  # noqa: E402
 
 # Re-export the shared policy for existing callers and focused contract tests.
 CONTROL_FILES = release_controls.CONTROL_FILES

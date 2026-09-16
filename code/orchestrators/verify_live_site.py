@@ -15,15 +15,16 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 CURRENT_COUNTS_JSON = REPO_ROOT / "data" / "current-counts.json"
 AGENT_INDEX_JSON = REPO_ROOT / "data" / "agent-index.json"
 
-try:
-    from report_paths import dated_report_path, generated_timestamp, latest_report, source_worktree_state
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import dated_report_path, generated_timestamp, latest_report, source_worktree_state
+from docxology_tools.report_paths import dated_report_path, generated_timestamp, latest_report, source_worktree_state  # noqa: E402
 
 OUT = dated_report_path("live_site_verification", "json")
 BASE = "https://danielarifriedman.com/"

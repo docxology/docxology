@@ -10,9 +10,13 @@ from pathlib import Path
 
 from datetime import datetime, timezone
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from report_paths import latest_source_report  # noqa: E402
+from docxology_tools.report_paths import latest_source_report  # noqa: E402
 
 WORKS = REPO_ROOT / "data" / "works.json"
 OUT = REPO_ROOT / "data" / "coverage-exceptions.json"

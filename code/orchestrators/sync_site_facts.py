@@ -9,10 +9,14 @@ import re
 import sys
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_facts import SiteFactsError, counts, generated_date, generated_month_year  # noqa: E402
-from report_paths import latest_source_report, latest_source_subdir_file  # noqa: E402
+from docxology_tools.site_facts import SiteFactsError, counts, generated_date, generated_month_year  # noqa: E402
+from docxology_tools.report_paths import latest_source_report, latest_source_subdir_file  # noqa: E402
 TARGETS = [
     REPO_ROOT / "index.html",
     REPO_ROOT / "publications.html",

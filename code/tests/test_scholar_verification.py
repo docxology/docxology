@@ -13,6 +13,7 @@ import sys
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SYNC_SOURCE = REPO_ROOT / "code" / "orchestrators" / "sync_scholar_metrics.py"
 VALIDATOR_SOURCE = REPO_ROOT / "code" / "src" / "scholar_verification.py"
+PACKAGE_SOURCE = REPO_ROOT / "code" / "src" / "docxology_tools" / "__init__.py"
 
 
 def _write_json(path: Path, payload: dict) -> None:
@@ -28,10 +29,15 @@ def _sync_fixture(root: Path) -> tuple[Path, Path]:
     """Create a minimal runnable checkout without patching imported modules."""
     script = root / "code" / "orchestrators" / "sync_scholar_metrics.py"
     validator = root / "code" / "src" / "scholar_verification.py"
+    package = root / "code" / "src" / "docxology_tools" / "__init__.py"
     script.parent.mkdir(parents=True, exist_ok=True)
     validator.parent.mkdir(parents=True, exist_ok=True)
+    package.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(SYNC_SOURCE, script)
     shutil.copy2(VALIDATOR_SOURCE, validator)
+    # The package __init__ is the canonical bootstrap; its __path__ window
+    # keeps this copy resolving modules inside the fixture tree only.
+    shutil.copy2(PACKAGE_SOURCE, package)
 
     snapshot = root / "data" / "scholar-snapshot.json"
     _write_json(

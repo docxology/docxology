@@ -8,9 +8,13 @@ from pathlib import Path
 
 import pytest
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from artifact_budget import (  # noqa: E402
+
+from docxology_tools.artifact_budget import (  # noqa: E402
     ArtifactBudgetError,
     artifact_mib_from_report,
     enforce_budget,

@@ -16,13 +16,16 @@ from pathlib import Path
 
 import pytest
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
 import regenerate_all  # noqa: E402
 import validate_repo  # noqa: E402
-from generation_plan import (  # noqa: E402
+from docxology_tools.generation_plan import (  # noqa: E402
     REGENERATION_STATE_RELATIVE_PATH,
     GenerationStep,
     input_fingerprint,
@@ -307,11 +310,16 @@ def test_input_gated_step_with_unchanged_inputs_skips_in_subprocess(
     """Full-driver subprocess proof in a disposable repo.
 
     Copies the real ``regenerate_all.py`` + ``generation_plan.py`` into the
-    fixture (so module-level REPO_ROOT resolves to the fixture root) and runs a
-    driver stub that exercises ``run_regeneration`` — the same code path
-    ``main()`` uses — twice: first full, then skipping the gated step.
+    fixture (so module-level REPO_ROOT resolves to the fixture root) plus the
+    package ``__init__.py`` as the canonical bootstrap, and runs a driver stub
+    that exercises ``run_regeneration`` — the same code path ``main()`` uses —
+    twice: first full, then skipping the gated step.
     """
-    for rel in ("code/orchestrators/regenerate_all.py", "code/src/generation_plan.py"):
+    for rel in (
+        "code/orchestrators/regenerate_all.py",
+        "code/src/generation_plan.py",
+        "code/src/docxology_tools/__init__.py",
+    ):
         dest = tmp_path / rel
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy(REPO_ROOT / rel, dest)

@@ -6,6 +6,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 
 | Path | Role |
 | --- | --- |
+| `src/docxology_tools/` | Canonical import bootstrap: owns the one `sys.path` setup for `code/src` + `code/orchestrators` and re-exports every `src/*.py` flat module as `docxology_tools.<module>` — orchestrators and tests import through it |
 | `src/youtube_fetcher.py` | `yt-dlp` wrapper: strict JSONL parsing, canonical record validation, explicit per-tab completion/failure results, atomic JSON writes |
 | `src/count_consistency.py` | Parse BIBLIOGRAPHY / papers index counts; detect drift in llms.txt, README, publications title, `data/works.json`, `data/publications-ld.json` |
 | `src/domain_inference.py` | Canonical whole-word domain inference (emoji ↔ name maps, `infer_domain_emoji` / `infer_domain_name`) |
@@ -14,7 +15,7 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `src/site_nav.py` | `render_nav()` for work pages; `render_nav_domain()` for domain landing pages |
 | `src/sitemap_policy.py` | Index-priority URL lists for `sitemap.xml` and IndexNow (open crawl; sitemap is not a crawl gate) |
 | `src/seo_invariants.py` | SEO invariant checks (paper/work canonicals, redirect stubs, sitemap policy alignment) for `validate_repo.py` |
-| `src/report_paths.py` | Shared helpers for date-stamped report artifacts (`latest_report`, `dated_report_path`, `generated_timestamp`, `rel`, ...) — imported by 31 orchestrators, no CLI of its own |
+| `src/report_paths.py` | Shared helpers for date-stamped report artifacts (`latest_report`, `dated_report_path`, `generated_timestamp`, `rel`, ...) — imported by 31 orchestrators through `docxology_tools`, no CLI of its own |
 | `orchestrators/fetch_youtube_data.py` | CLI entry: personal + institute channels → `data/*.json`; preserves the prior cache when any tab fails or an exact refresh unexpectedly returns no videos (`--fast` merges cached exact dates) |
 | `orchestrators/export_bibliography.py` | Generate BibTeX, CSL JSON, RIS, and `data/works.json` from `pages/BIBLIOGRAPHY.md` |
 | `orchestrators/export_agent_data.py` | Generate `data/software.json`, `data/people.json`, `data/organizations.json`, and `data/claims.json` |
@@ -51,6 +52,39 @@ Thin Python utilities and orchestrators for site-adjacent data, generated export
 | `tests/test_count_consistency.py` | Unit tests for volatile-count drift detection |
 
 Other orchestrators (external links, sitemap, visual QA, GitHub inventory, etc.) are listed in [GENERATED.md](../GENERATED.md) and [`data/generated-manifest.json`](../data/generated-manifest.json).
+
+## Imports and the package bootstrap
+
+All legacy flat modules in `src/` are imported through the `docxology_tools`
+package: `from docxology_tools.report_paths import latest_report`. The
+package's `__init__.py` is the single canonical bootstrap — it owns the one
+`sys.path` setup (putting `code/src` and `code/orchestrators` on the path) and
+registers every flat module as `docxology_tools.<module>`. No other module may
+mutate `sys.path`.
+
+Entry points carry only a three-line locate that makes the package itself
+importable (the package does everything else):
+
+```python
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+```
+
+Rules:
+
+- Import flat `src/` modules only as `docxology_tools.<module>` (or
+  `from docxology_tools import <module>`); never import them flat.
+- Name-level re-exports are deliberately not offered — the flat modules have
+  colliding public names (`load_json` in both `youtube_fetcher` and
+  `resume_data`, `REPO_ROOT` in six modules). Import the module, take names
+  from it.
+- Orchestrator scripts are not package members: they stay flat
+  (`from build_sitemap import sitemap_locs`), which works because the
+  bootstrap puts `code/orchestrators` on the path.
+- `src/seo_invariants.py` imports orchestrator modules lazily inside its
+  functions; keep it that way so package init never depends on entry-point
+  import order.
 
 ## Public API (`youtube_fetcher`)
 

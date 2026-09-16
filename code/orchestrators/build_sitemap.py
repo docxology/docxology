@@ -11,16 +11,17 @@ import sys
 from functools import lru_cache
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "sitemap.xml"
 
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from sitemap_policy import INDEX_PRIORITY_STATIC, SITE_ORIGIN  # noqa: E402
+from docxology_tools.sitemap_policy import INDEX_PRIORITY_STATIC, SITE_ORIGIN  # noqa: E402
 
-try:
-    from report_paths import report_date_string
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import report_date_string
+from docxology_tools.report_paths import report_date_string  # noqa: E402
 
 
 def loc(rel: str) -> str:

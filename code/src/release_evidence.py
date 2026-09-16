@@ -16,7 +16,6 @@ import importlib
 import json
 from pathlib import Path
 import re
-import sys
 from typing import Any
 
 from scholar_verification import validate_scholar_snapshot_receipt
@@ -127,11 +126,8 @@ def deployment_attestation_path(repo_root: Path, commit: str) -> Path:
 
 def _orchestrator_module(name: str):
     """Load a local declarative coverage contract without running its CLI."""
-    location = str(ORCHESTRATORS_DIR)
-    if location not in sys.path:
-        sys.path.insert(0, location)
+    # The docxology_tools bootstrap owns code/orchestrators on sys.path.
     return importlib.import_module(name)
-
 
 def expected_public_source_labels() -> set[str]:
     module = _orchestrator_module("refresh_public_sources")

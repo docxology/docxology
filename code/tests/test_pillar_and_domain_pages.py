@@ -6,12 +6,16 @@ import subprocess
 import sys
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 ORCHESTRATORS = REPO_ROOT / "code" / "orchestrators"
-sys.path.insert(0, str(ORCHESTRATORS))
 
 import generate_pillar_pages  # noqa: E402
-from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 
 PILLAR_FILES = [
     "cognitive-security.html",

@@ -5,17 +5,19 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-sys.path.insert(0, str(ORCH_DIR))
 
 from gsc_followup_preflight import (  # noqa: E402
     MANUAL_STEPS,
     build_report,
     local_checks,
 )
-from sitemap_policy import gsc_priority_urls  # noqa: E402
+from docxology_tools.sitemap_policy import gsc_priority_urls  # noqa: E402
 
 
 def test_manual_steps_cover_plan_todos():
