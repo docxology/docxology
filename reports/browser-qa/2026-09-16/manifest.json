@@ -1,9 +1,11 @@
 {
-  "generated_at": "2026-09-16T03:50:00Z",
-  "source_commit": "15df51a32f128a0b944d8ef19b47fa85b02f190f",
-  "source_worktree_clean": true,
-  "source_worktree_dirty_paths": [],
-  "source_tree_sha": "7002fa71570a3a4ffa646667bddaa66e8ed04fb1",
+  "generated_at": "2026-09-16T04:55:13Z",
+  "source_commit": "157b420aa93b49b2ca4839b94e96051597f3a7d3",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "reports/pages_artifact_growth_2026-09-16.json"
+  ],
+  "source_tree_sha": "de2eae67b198350468a73e9647c6bf2bb3ed637a",
   "tool": "Playwright Python sync API",
   "scope": "progressive enhancement, interaction, responsive, CSP-adjacent runtime checks",
   "passing": 7,
@@ -18,7 +20,7 @@
         "page_errors": 0,
         "known_meta_csp_warnings": 0
       },
-      "duration_ms": 2526
+      "duration_ms": 2550
     },
     {
       "name": "mobile menu opens, closes, and restores focus",
@@ -27,7 +29,7 @@
         "opened_and_closed": true,
         "focus_restored": true
       },
-      "duration_ms": 128
+      "duration_ms": 114
     },
     {
       "name": "no-JavaScript fallbacks remain usable",
@@ -36,7 +38,7 @@
         "routes": 3,
         "fallbacks": "visible"
       },
-      "duration_ms": 121
+      "duration_ms": 122
     },
     {
       "name": "publication filters, announcements, and sorting update state",
@@ -47,7 +49,7 @@
         "non_paper_rows": 0,
         "sort_state": "descending"
       },
-      "duration_ms": 278
+      "duration_ms": 260
     },
     {
       "name": "gallery lightbox traps and restores focus",
@@ -56,7 +58,7 @@
         "trigger": "Open artwork: All-domain Anomaly Resolution Office (AARO)",
         "focus_restored": true
       },
-      "duration_ms": 169
+      "duration_ms": 157
     },
     {
       "name": "320px layout honors reduced motion without page overflow",
@@ -67,7 +69,7 @@
         "reduced_motion": true,
         "max_overflow_px": 2
       },
-      "duration_ms": 1164
+      "duration_ms": 1142
     },
     {
       "name": "forced colors and YouTube iframe policy remain covered",
@@ -77,7 +79,7 @@
         "iframe_origin": "www.youtube-nocookie.com",
         "iframe_title": true
       },
-      "duration_ms": 96
+      "duration_ms": 117
     }
   ]
 }
