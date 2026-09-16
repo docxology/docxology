@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-16T07:14:16Z",
-  "source_commit_at_generation": "952d1d8c77ed5eb2f808ce8dd4bbfac935e68a52",
+  "generated_at": "2026-09-16T15:50:24Z",
+  "source_commit_at_generation": "5cbe64ff08c5259d57987e2bc71e25ff2d40e506",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -14,18 +14,18 @@
     "omitted_assets_fallback": "Use the GitHub tree/raw templates with the source commit and repository-relative path.",
     "superseded_report_policy": "Superseded dated reports (older-than-newest per report family) remain in the committed repository and are omitted from the Pages projection; any report referenced from a published page or data file is never omitted.",
     "visual_qa_screenshot_policy": "Visual-QA manifests remain in Pages with repository-relative paths and SHA-256 digests; screenshot binaries remain in the committed repository rather than the deploy artifact.",
-    "warning_policy": "At 880 MiB, review growth and report retention before deployment; 900 MiB is a release hard ceiling below the GitHub Pages 1 GiB platform limit."
+    "warning_policy": "At 885 MiB, review growth and report retention before deployment; 900 MiB is a release hard ceiling below the GitHub Pages 1 GiB platform limit."
   },
   "budget": {
     "hard_limit_bytes": 1073741824,
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
-    "warning_bytes": 922746880,
-    "source_bytes": 921993837,
+    "warning_bytes": 927989760,
+    "source_bytes": 906726706,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4858,
-    "artifact_bytes": 922851263
+    "artifact_file_count": 4857,
+    "artifact_bytes": 907583926
   },
   "included_files": [
     {
@@ -121,7 +121,7 @@
     {
       "path": "active-inference.html",
       "bytes": 25224,
-      "sha256": "8d1886378ba118c06b1111dd76b167e328f8c46148d42192d14193c29cc24223"
+      "sha256": "7bb08040fd70675db68e83fbd6aa352a9b53ad007c1f4308b917c11d65cd2dd6"
     },
     {
       "path": "agent-verify.html",
@@ -5326,7 +5326,7 @@
     {
       "path": "catalog.html",
       "bytes": 50173,
-      "sha256": "6a98e3ed07953bfa5fb930b2075f2a75ec8f35e3cb39bf85acf0d99488b81a43"
+      "sha256": "3390485e83f798959da2731977af65685de907e65fba648ec7e44db7203c7c1c"
     },
     {
       "path": "cite-verify.html",
@@ -5521,7 +5521,7 @@
     {
       "path": "code/orchestrators/build_pages_artifact.py",
       "bytes": 37437,
-      "sha256": "93cf869ce64f3a5915b99439487f940c1a5eb6ab07ace0a5c4677c45a3a8e7b1"
+      "sha256": "084549ea53b54d415f4c67bbf138d280b49969c2c7c8091f1949a78372ccb62c"
     },
     {
       "path": "code/orchestrators/build_paper_pages.py",
@@ -5791,7 +5791,7 @@
     {
       "path": "code/src/artifact_budget.py",
       "bytes": 1997,
-      "sha256": "8d71998b56d3a04bd58607c7755789294d736869154c7fc7561c43d4f7a66a2c"
+      "sha256": "00e4944fa3c1d837d455f74458f19ec4ade2b8915653488306ef1ef93a00afbe"
     },
     {
       "path": "code/src/biblio_table.py",
@@ -6471,7 +6471,7 @@
     {
       "path": "cognitive-security.html",
       "bytes": 27611,
-      "sha256": "0ceb06caf4b2b2c896db96331d0de0ad25cb6f95fb3f6f673adc833f76280bbc"
+      "sha256": "18ffff11c1d57b64e38603b1a9d2f56e55db5d47f11469246c9964cbfe83f302"
     },
     {
       "path": "collaborators.html",
@@ -6481,7 +6481,7 @@
     {
       "path": "computational-entomology.html",
       "bytes": 23656,
-      "sha256": "3e2f88ee91a7f2f694ff6816e6c471a45c299f211a07f680507450c265c68491"
+      "sha256": "685247d04b520b18712c285fb04ddc4c5e0677af8706eadfb95dcc7f9e4e5a94"
     },
     {
       "path": "data/AGENTS.md",
@@ -6580,8 +6580,8 @@
     },
     {
       "path": "data/report-retention.json",
-      "bytes": 4459,
-      "sha256": "304ee996da1d0f95d025332c8cff43dcff39a30593d245c73c71ee744b75f330"
+      "bytes": 4958,
+      "sha256": "62062140337b442f881b6a1921b7aa5183936c2ce4c0495cd83b998d32b48e19"
     },
     {
       "path": "data/repository-classification.json",
@@ -6901,7 +6901,7 @@
     {
       "path": "docs/operations/github-pages-artifact.md",
       "bytes": 4126,
-      "sha256": "507869981929bbbe2bc77987ca3ef8dff40210bea54bdba7d80f991889c9dd91"
+      "sha256": "ba56798cbcdbd7a91b18ffabda864521e8a89fc2ab6beeafc3c5b9b10a1960af"
     },
     {
       "path": "docs/operations/live-verification.md",
@@ -6991,57 +6991,57 @@
     {
       "path": "domain-active-inference.html",
       "bytes": 37982,
-      "sha256": "594cf73b89acd5903f9c53f60c0b35774ad87aa2c8cd10b4839f21ac43a7949d"
+      "sha256": "f04f147d2a1d2d3998bfb72e34a409ab02e93088ec2068f0ec5a113096eaf6e6"
     },
     {
       "path": "domain-aii-ecosystem.html",
       "bytes": 25942,
-      "sha256": "36df16f5b1d00abc9b75bce1c2085f3faf1550184e29c229e2713167c9c07ad3"
+      "sha256": "438d54d1dc7524344194637483b9d052cedba695735ae3455a5e2d9a2572ed12"
     },
     {
       "path": "domain-art-synergetics.html",
       "bytes": 33540,
-      "sha256": "840677301650598cc0a82c970b40c28a20848cddae5bd262e96c5904c7cca264"
+      "sha256": "94d9a806dcad5b821e8f5d8338d648e0db19e0be9a6ab70f4bd2345c2bc4e83e"
     },
     {
       "path": "domain-biomedicine.html",
       "bytes": 32226,
-      "sha256": "88a8aab6f8d4aa1746e666e21b5002bb6fea2e2c34b5af3dc0761e0f5447dceb"
+      "sha256": "465b44c0244aa852cb81508322fe4933f9df0b9c1f77162fc99574697e73aad8"
     },
     {
       "path": "domain-cognitive-security.html",
       "bytes": 33105,
-      "sha256": "803e498ea0d417bbf89ec6b6f2523094458f403bbc1b39f06f45b9a936f28897"
+      "sha256": "d63cabcdc8a55c32307fe5c0b334479d3e6df641808e477d33d727ccd040543f"
     },
     {
       "path": "domain-computational.html",
       "bytes": 35830,
-      "sha256": "000a8b8bcc13117c70c336d066896af4ddbe24d39f830ed495aba25b213c43af"
+      "sha256": "e5bdf22c481525574ae3d0c8531f7505f6b4a0a4f5f116c10533280ad0772087"
     },
     {
       "path": "domain-entomology.html",
       "bytes": 34567,
-      "sha256": "58ec0dea1d64015500e989bab69e3c495ef50f256ffd8b7b843a599cf508285d"
+      "sha256": "0ba1b058e1f2cb90277ee2f908c1612b90ce16d076869e56b3431c4499ead852"
     },
     {
       "path": "domain-presentations-media.html",
       "bytes": 30122,
-      "sha256": "7f0d869c2c89463929defd805b0b660fa076bfa8cd6d668a6910d3cd5ce49f28"
+      "sha256": "6e2ef45687ac20d3fae3145747680cb1cac8e181c0250d5ca3163367f0260887"
     },
     {
       "path": "domains.html",
       "bytes": 13712,
-      "sha256": "85ada3af9ee094264351c333155af7a208cfdb0f9a05d707d47f7edf8846e2f7"
+      "sha256": "32e6fc8da59a362d2dcb4f53db65ace1b858c49e76cf1a6d16a0994878e37224"
     },
     {
       "path": "evidence.html",
       "bytes": 21431,
-      "sha256": "1e8a40b09118ad9bdeeb3e7838bd87fec05beecbadfbd8d64d3025929d3b13d5"
+      "sha256": "9468b883bf174c1dfb959ebd91c9d9be5babf050d8e375a9a9d083b91dc2d870"
     },
     {
       "path": "exports.html",
       "bytes": 14990,
-      "sha256": "dccdfefcb4c32c7c67d275a93248cd3d5fe6b23c208cce38d43f61a31751bc3e"
+      "sha256": "e3e19fd936cf21b7d5ca2ae8cd7add106add7682673ac46ab8af5b54752fbf36"
     },
     {
       "path": "favicon-16.png",
@@ -7131,7 +7131,7 @@
     {
       "path": "insect-cognition.html",
       "bytes": 23517,
-      "sha256": "618209821c7a6ec0b1a2c85a0e8bce4d7e94b59050baf63ffe7c26580666d2b2"
+      "sha256": "1f68e7dfa7078368b2882a6213914584f1115ecb1717e0302e1223bd8dd30bdf"
     },
     {
       "path": "js/AGENTS.md",
@@ -7231,7 +7231,7 @@
     {
       "path": "neurosymbolic-ai.html",
       "bytes": 23390,
-      "sha256": "953022ea91707a39e126b8790a5ff3e96ffbaf4d0e3e367deb77f08dd0fcb93a"
+      "sha256": "7e15e88785b90192b5affcc094a56d69f479500ecf41ec28e5c7cfe6fef49444"
     },
     {
       "path": "nft.html",
@@ -7456,7 +7456,7 @@
     {
       "path": "papers/2015_CryptoJews/index.html",
       "bytes": 9416,
-      "sha256": "22c381bcfd0c3cc94c0abc5660dc497e5702763e6abba42a464009bb9656b957"
+      "sha256": "c120c1c9334404d5e88a7f111ec9f556fec9e2e3c4b4de493d7e97da9a09bead"
     },
     {
       "path": "papers/2015_CryptoJews/metadata.json",
@@ -7506,7 +7506,7 @@
     {
       "path": "papers/2015_EhrlichialInfection/index.html",
       "bytes": 10458,
-      "sha256": "eca798952d3c14da626fbf2e5eef539b2bbd1ca6dab8a1699c35670f574bb261"
+      "sha256": "dbbfd34c16cc4abd077c56cc377ba2fc041db7a5d8b98bb311ba6d5ef1a4d2b5"
     },
     {
       "path": "papers/2015_EhrlichialInfection/metadata.json",
@@ -7556,7 +7556,7 @@
     {
       "path": "papers/2015_HoneyBeeEvolution/index.html",
       "bytes": 9933,
-      "sha256": "fe8c85601fa7ad0fa60cb60057b6f342e0b07e61f01045c89cec1d327ef7e7ac"
+      "sha256": "66da7866ad14a60434735559f7cd501f2eac84c01fe0ec643de99d43f791f55d"
     },
     {
       "path": "papers/2015_HoneyBeeEvolution/metadata.json",
@@ -7606,7 +7606,7 @@
     {
       "path": "papers/2016_AntGenetics/index.html",
       "bytes": 11285,
-      "sha256": "35e74eed0a61264045a911b870c787f0f687db0aedea383e7c95aa79327bc89f"
+      "sha256": "e6bfd3bfbf7017670379ac0335af067334dae3b7576fa3db832f289eb40cd3aa"
     },
     {
       "path": "papers/2016_AntGenetics/metadata.json",
@@ -7656,7 +7656,7 @@
     {
       "path": "papers/2016_ForagingGene/index.html",
       "bytes": 11319,
-      "sha256": "1b8d82ceb8f887c0c84a7ee7bf3cbff497331a6ad206d5cbe8893b69383eeac6"
+      "sha256": "506e07a7a38a20bd1584ca2badfe0d82007495565ceed00a9af7ff3a96b22d7b"
     },
     {
       "path": "papers/2016_ForagingGene/metadata.json",
@@ -7706,7 +7706,7 @@
     {
       "path": "papers/2016_NuclearStructure/index.html",
       "bytes": 11443,
-      "sha256": "10a81a7a56f5a3d467d50ef78f45c344c502020cd0d3c89064dde463ad2e4c1b"
+      "sha256": "1af5671e0b03fcb304abb3c7d2c941ac66d4f7773b8c27358306648f8d77c0a0"
     },
     {
       "path": "papers/2016_NuclearStructure/metadata.json",
@@ -7756,7 +7756,7 @@
     {
       "path": "papers/2017_MutAnts/index.html",
       "bytes": 9688,
-      "sha256": "87cfe5d673e5ab7f52d9ac4e3af333662d719db0af09fc23b4b8b41c38543f09"
+      "sha256": "26ddb43f55523dcb5f95d8088f0a125fe9596fa7046b6f9d4da42bc575fb64e3"
     },
     {
       "path": "papers/2017_MutAnts/metadata.json",
@@ -7806,7 +7806,7 @@
     {
       "path": "papers/2017_TwoLineages/index.html",
       "bytes": 9502,
-      "sha256": "570ed32af02fa384a559e299440d6ca3b44adee75929a8f2ddb410425d2638d8"
+      "sha256": "2357cfb8787d7be38a9171bcca970cb0e3ca1ca0b8d649dacfd0305d1bcfa736"
     },
     {
       "path": "papers/2017_TwoLineages/metadata.json",
@@ -7856,7 +7856,7 @@
     {
       "path": "papers/2018_ArgentineAnt/index.html",
       "bytes": 11386,
-      "sha256": "9b49cd39f340a0a14f15877a878456f14104597d5a586621b2a42c14cd3bbb33"
+      "sha256": "d3a062dfe1543bf32d2ba5f465f38d24c804899186005b40bee6bec82b89e9e5"
     },
     {
       "path": "papers/2018_ArgentineAnt/metadata.json",
@@ -7906,7 +7906,7 @@
     {
       "path": "papers/2018_DopamineForaging/index.html",
       "bytes": 11382,
-      "sha256": "641596e81d657511a31551af895fa0c6ddb4dca3493dd07bf27ed64c7f786d8c"
+      "sha256": "65396edbf61dfe43369c663e76d9d07211c7c07bdb0fc69e9926ec8847c7453e"
     },
     {
       "path": "papers/2018_DopamineForaging/metadata.json",
@@ -7956,7 +7956,7 @@
     {
       "path": "papers/2018_MVEE/index.html",
       "bytes": 11001,
-      "sha256": "fd70dc29663199ae2864c14067cf50dfb11cd06654bcc0b072817b782605c7c3"
+      "sha256": "10e686dd5b8a9e1216fbd6b7a8be1b358cf9321414f93c3271dfb76efdf64e9a"
     },
     {
       "path": "papers/2018_MVEE/metadata.json",
@@ -8006,7 +8006,7 @@
     {
       "path": "papers/2018_PPPiP/index.html",
       "bytes": 11156,
-      "sha256": "f5027dfaa018561c8c15680e1164ddfcf0956d33ff9efcc05c8777d7ec55e88d"
+      "sha256": "918b0733d917da2ce7f3e85f866e7cd369d02c8810a340d579d2bbe5b97948cd"
     },
     {
       "path": "papers/2018_PPPiP/metadata.json",
@@ -8056,7 +8056,7 @@
     {
       "path": "papers/2018_WoodliceAndMen/index.html",
       "bytes": 11396,
-      "sha256": "f5aa89bd0b21750b819e52556ad41764c8840ece7b6ec3497087e618161d638a"
+      "sha256": "9da0f805eed7fb493c815a4eb7f07628853cdd9f53cc7441686271483db066bf"
     },
     {
       "path": "papers/2018_WoodliceAndMen/metadata.json",
@@ -8106,7 +8106,7 @@
     {
       "path": "papers/2019_AntConsciousness/index.html",
       "bytes": 9721,
-      "sha256": "c816d138b30f4360d2770cb39f40617b3e5849999a0ee3b26c7d42e780c956e0"
+      "sha256": "7877e809650c10d3a5b2cc733e2644d9edc85e1bf9412006bb2f19046e23f7f2"
     },
     {
       "path": "papers/2019_AntConsciousness/metadata.json",
@@ -8146,7 +8146,7 @@
     {
       "path": "papers/2019_DennettExplained/index.html",
       "bytes": 9279,
-      "sha256": "3af8d66cbd83b9c00bf7a83c9a1483fe2b8d18b94938476a6ea4800e9fadad87"
+      "sha256": "0ece892f81c9aa780bcf4d6651796b84e603752c5a041987e255e971c156c1e3"
     },
     {
       "path": "papers/2019_DennettExplained/metadata.json",
@@ -8196,7 +8196,7 @@
     {
       "path": "papers/2019_ForagerHydration/index.html",
       "bytes": 11070,
-      "sha256": "7a0dcebe7c9475f8227e35af8a94e1dfb397b9e850667079b62d0374b28a5a72"
+      "sha256": "0f87777e653e087ec8aa41fc29e06bd4678528f81721b60310c913c76bc710c9"
     },
     {
       "path": "papers/2019_ForagerHydration/metadata.json",
@@ -8236,7 +8236,7 @@
     {
       "path": "papers/2019_PhDDissertation/index.html",
       "bytes": 9550,
-      "sha256": "472d64d17ad05148a271cb53d4573510e6f4b1cb2d021f5acddb52526f0dc675"
+      "sha256": "9bab9503eb425dd0f7219595d2849a46eed230aeb1e79cd03367a5939f74a826"
     },
     {
       "path": "papers/2019_PhDDissertation/metadata.json",
@@ -8286,7 +8286,7 @@
     {
       "path": "papers/2020_BehaviorEngineering/index.html",
       "bytes": 11342,
-      "sha256": "f81a7b29f007c89524df6969dc13c9b86c969a1fda98dd13d47ee277f89aec8c"
+      "sha256": "9d9605df7fe954f3b04106812a0677e540783388479e091a1b97dd104bcb0277"
     },
     {
       "path": "papers/2020_BehaviorEngineering/metadata.json",
@@ -8336,7 +8336,7 @@
     {
       "path": "papers/2020_DistributedPhysiology/index.html",
       "bytes": 10541,
-      "sha256": "3e9aeaa47a97e1b0fd82a79a32dad9994f92c1ea5448d5a2bf9a41dd158bb234"
+      "sha256": "0fda2099233da6cdff86ba3b846cfacf87f703b2961f0f31a1e72a18b2fb235c"
     },
     {
       "path": "papers/2020_DistributedPhysiology/metadata.json",
@@ -8376,7 +8376,7 @@
     {
       "path": "papers/2020_EmergentTeams/index.html",
       "bytes": 9187,
-      "sha256": "bf141b86fc756120e8b62bd2055836e1a5f361c42c66c4b46079c24e6714868e"
+      "sha256": "74c0bebd09c8b0ff2f30cb5d83036af6209cd9656365417dac4ff1eff0249dec"
     },
     {
       "path": "papers/2020_EmergentTeams/metadata.json",
@@ -8426,7 +8426,7 @@
     {
       "path": "papers/2020_FacilitatorsCatechism/index.html",
       "bytes": 11259,
-      "sha256": "e00c27ee8821415ada271046b6dd7ae5a277c6b85992e6e9b6fc155c25603ca1"
+      "sha256": "1ec80580793116683157c4b3aa9402120d076a50a686ffc8d87521943a9edb88"
     },
     {
       "path": "papers/2020_FacilitatorsCatechism/metadata.json",
@@ -8476,7 +8476,7 @@
     {
       "path": "papers/2020_GeneExpressionForagers/index.html",
       "bytes": 10641,
-      "sha256": "2abbb3705ae92622e038e48dbb73344b3d39e350ff74a4335b2a01b5e1363f53"
+      "sha256": "0fad83f85cd378f597deaae460eac5025f9bfa047cffec371cf51bf5a8f83192"
     },
     {
       "path": "papers/2020_GeneExpressionForagers/metadata.json",
@@ -8526,7 +8526,7 @@
     {
       "path": "papers/2020_GreatPreset/index.html",
       "bytes": 11113,
-      "sha256": "37e1af190e68da891c4e1838d5af53f8ee1877e1be08419289e01bec753aac6b"
+      "sha256": "2780edeec5db80808c6ba45337863306b9d0fb58b83383ca66eca44f6e361a3a"
     },
     {
       "path": "papers/2020_GreatPreset/metadata.json",
@@ -8576,7 +8576,7 @@
     {
       "path": "papers/2020_InfiniteGamesInfinite/index.html",
       "bytes": 10016,
-      "sha256": "c9eb1acff7a8327f2a561f8e76074765385018630be549c325e93e0276759431"
+      "sha256": "f7a7e5286f183b0ba4448f7f78dee3d63c2a54790f05c29c4fa99a7f9d7d3077"
     },
     {
       "path": "papers/2020_InfiniteGamesInfinite/metadata.json",
@@ -8626,7 +8626,7 @@
     {
       "path": "papers/2020_InnovatorsCatechism/index.html",
       "bytes": 11206,
-      "sha256": "86ac25bd4e05eda56319e866b27a13a047c922764b3f1fb8e4a8a944c60f85d0"
+      "sha256": "86cc57931626bd5de32b17a5effa47eea68d26d144e3fa2bc7474c2131221f9f"
     },
     {
       "path": "papers/2020_InnovatorsCatechism/metadata.json",
@@ -8676,7 +8676,7 @@
     {
       "path": "papers/2020_NeuroscienceDecision/index.html",
       "bytes": 11110,
-      "sha256": "7198dd2627a439d0b43be51b39f37062232b2be5a2f6a660b271e3dc428114e0"
+      "sha256": "76dcb278d3b0b00ee39c38f1b376416eca9e7f739be0601082daed950d0aa438"
     },
     {
       "path": "papers/2020_NeuroscienceDecision/metadata.json",
@@ -8726,7 +8726,7 @@
     {
       "path": "papers/2020_NeurotransmitterVariation/index.html",
       "bytes": 11743,
-      "sha256": "68823e4de6ac14f71c6fa8286d870ae989ee0ecb38224780c87b5aa05de1f946"
+      "sha256": "6c89a61d3c02eb40f4b3eeddc7e51551965fe96ef892907a12168f1911a69c90"
     },
     {
       "path": "papers/2020_NeurotransmitterVariation/metadata.json",
@@ -8776,7 +8776,7 @@
     {
       "path": "papers/2020_ReimaginingMaps/index.html",
       "bytes": 10358,
-      "sha256": "9f5c108a457cc93baa2611f1a567ff7f2a2ec8795d981c0591a126a08911a5f3"
+      "sha256": "7b28045628b1c4acc1dc45fc0f9fe4b847bf66570b0f81112a1389ec31f5b95a"
     },
     {
       "path": "papers/2020_ReimaginingMaps/metadata.json",
@@ -8826,7 +8826,7 @@
     {
       "path": "papers/2021_ActiveInferants/index.html",
       "bytes": 10698,
-      "sha256": "f73367ac32aee2696364e24abb9fa95a727f0a73aa671182ee33efd2d4cc52e5"
+      "sha256": "4354c5d5bbf075518d172ff3ab56c45c67231c9f8bdb84695d5e42a2b1bd4d12"
     },
     {
       "path": "papers/2021_ActiveInferants/metadata.json",
@@ -8876,7 +8876,7 @@
     {
       "path": "papers/2021_CollaborativeWritingCatechism/index.html",
       "bytes": 11463,
-      "sha256": "2ce8cf14070b59584b200f792bf065f9a7bb75d8260518b2fbf8b1f9159a2c78"
+      "sha256": "c0873cc2688e7cc8e1a9e2fd9e9885400ec071e078c645bf8e0c4ae063903faf"
     },
     {
       "path": "papers/2021_CollaborativeWritingCatechism/metadata.json",
@@ -8926,7 +8926,7 @@
     {
       "path": "papers/2021_DigitalRhetorical/index.html",
       "bytes": 11473,
-      "sha256": "8119b404cce81647390b15433d19a9e4336156f21e36d30a14400cb3195615e4"
+      "sha256": "935427bf91c4c1cd14a65290e387be6a5ba2fbcf715c5047ba85255021d63fc7"
     },
     {
       "path": "papers/2021_DigitalRhetorical/metadata.json",
@@ -8976,7 +8976,7 @@
     {
       "path": "papers/2021_ModelingConflict/index.html",
       "bytes": 11212,
-      "sha256": "0a831f77999c140f4677b43f212e63c730ca4478a24bd8216b2f0cb6f0e3e2b1"
+      "sha256": "5115e3701f8e68344cd41624a758d280f9cd877837bd2bc347964d3f6c527237"
     },
     {
       "path": "papers/2021_ModelingConflict/metadata.json",
@@ -9026,7 +9026,7 @@
     {
       "path": "papers/2021_NarrativeEcosystems/index.html",
       "bytes": 11425,
-      "sha256": "4d6e6a3f1b7a7a3f73b1daf21cdd4ead2d136d6cf3ea96a55d30cf23f37e9023"
+      "sha256": "2dc6c5c367fc0aa82522d82acd28b72e6d8bc0a1fdb22c759e80a139b08b42eb"
     },
     {
       "path": "papers/2021_NarrativeEcosystems/metadata.json",
@@ -9066,7 +9066,7 @@
     {
       "path": "papers/2021_NarrativeInformationMgmt/index.html",
       "bytes": 9215,
-      "sha256": "2a55869446d5145266fc39f36b1a97372a934b66f4679b3c00fbe57e1c375734"
+      "sha256": "28494f551e9c3cc5df4bef270db4092854a5b0ab36f85c2a4c1d42203813866a"
     },
     {
       "path": "papers/2021_NarrativeInformationMgmt/metadata.json",
@@ -9111,7 +9111,7 @@
     {
       "path": "papers/2021_Transcript/index.html",
       "bytes": 11504,
-      "sha256": "feb9514c5e970dc71f242da056a4aafbb0406ba50e13e621a882f8c8690a3994"
+      "sha256": "78fad9cff99c4734c4103643fcf627671b1e2c9543ac2444d05a620c2c1c91e2"
     },
     {
       "path": "papers/2021_Transcript/metadata.json",
@@ -9156,7 +9156,7 @@
     {
       "path": "papers/2022_ActiveDiffusion/index.html",
       "bytes": 9270,
-      "sha256": "761cfe41f45d1f3f7340a8388317ee8ab25bd1c27d434358d99641935d5263a5"
+      "sha256": "aae3e3a9e74af2dbf884dd9d7a070b678ac246caf5119d93ac04589aa7421c07"
     },
     {
       "path": "papers/2022_ActiveDiffusion/metadata.json",
@@ -9206,7 +9206,7 @@
     {
       "path": "papers/2022_ActiveInferenceOntology/index.html",
       "bytes": 11481,
-      "sha256": "4da961d80805775a9a4c1b6b42289b255cd6aad8e9a21e83ac446e88a0fc9475"
+      "sha256": "17887d2031d25d3c5b6db024aa3f07295dde6a1c29a562427403caa14aea721a"
     },
     {
       "path": "papers/2022_ActiveInferenceOntology/metadata.json",
@@ -9246,7 +9246,7 @@
     {
       "path": "papers/2022_CanonicalNeuralNetworks/index.html",
       "bytes": 9263,
-      "sha256": "016d942368075524f216e390b7bd46c5d72bc9766b51d0fa7c573cd6a21ff7e4"
+      "sha256": "85da26185d8b32100b09c72ad48dcee52922c39d73852d2c1e51b0e261809b38"
     },
     {
       "path": "papers/2022_CanonicalNeuralNetworks/metadata.json",
@@ -9286,7 +9286,7 @@
     {
       "path": "papers/2022_FreeWillSapolsky/index.html",
       "bytes": 9230,
-      "sha256": "c7e31bba5febca5236e5389dc516a60682b417728bf0a99a749b1c9b1a085ab9"
+      "sha256": "e037d87773b8f592c5669a5bc08527bd65f2b4b619b93f2bafcda0c25390d215"
     },
     {
       "path": "papers/2022_FreeWillSapolsky/metadata.json",
@@ -9326,7 +9326,7 @@
     {
       "path": "papers/2022_HypercertEcosystems/index.html",
       "bytes": 9354,
-      "sha256": "7ecaa92c1f90c6fd92ebcbb6cc212c853646fa258ca14d14a10fee2ddf1f940c"
+      "sha256": "ba0d92c5a4a3925bc5b2988274e8a9cce2857e632c0c6d2203483a5e3527dc82"
     },
     {
       "path": "papers/2022_HypercertEcosystems/metadata.json",
@@ -9376,7 +9376,7 @@
     {
       "path": "papers/2022_InformationCommons/index.html",
       "bytes": 11362,
-      "sha256": "4248f8548ad894ad82cf25611421863d071507880773191ad54ca3c0fd015e4b"
+      "sha256": "0ef0fec363c8ee8de266c4984edb4549e26c60703c6bc33308f4108fcbc18e92"
     },
     {
       "path": "papers/2022_InformationCommons/metadata.json",
@@ -9416,7 +9416,7 @@
     {
       "path": "papers/2022_InteroceptionAsModeling/index.html",
       "bytes": 9221,
-      "sha256": "b38d3148e679b295d07b7d37aef07de6eb8a57948cca8887fbd6960160c7da4c"
+      "sha256": "85dde1c71af289344058247c1d38af32726eb419a1a729b1f2278fa94755aebf"
     },
     {
       "path": "papers/2022_InteroceptionAsModeling/metadata.json",
@@ -9456,7 +9456,7 @@
     {
       "path": "papers/2022_MirrorTest/index.html",
       "bytes": 9354,
-      "sha256": "bf2c69bf975a2280b6ad4a19491a087490917924666d399c781176c9e57b74be"
+      "sha256": "f05fbaa76b1ebea76612148114c0c28da1b4327ac2031af485979f8c7e764a63"
     },
     {
       "path": "papers/2022_MirrorTest/metadata.json",
@@ -9496,7 +9496,7 @@
     {
       "path": "papers/2022_StigmergicAnnotation/index.html",
       "bytes": 9295,
-      "sha256": "0433ca38578d92c2a6026381f1127488fdf3e01e0f8712f4e792d54a6d52b2b4"
+      "sha256": "1909fae6412bb1e3e131ee5b9f8d87369d3ad83e1374c1c090470e6906bad3bf"
     },
     {
       "path": "papers/2022_StigmergicAnnotation/metadata.json",
@@ -9546,7 +9546,7 @@
     {
       "path": "papers/2022_SystematicLiteratureAnalysis/index.html",
       "bytes": 11718,
-      "sha256": "1671057751ba5f04b5149169becb8fa121bb0a0a803bb5c6af67ab18a612f672"
+      "sha256": "6f767d8725c83b000669ca6068e20b0c62c8405015be9d9a226de81e69de87ef"
     },
     {
       "path": "papers/2022_SystematicLiteratureAnalysis/metadata.json",
@@ -9596,7 +9596,7 @@
     {
       "path": "papers/2022_TrackingPublicSensemaking/index.html",
       "bytes": 11562,
-      "sha256": "b0ad9ae4c1093797013a0921bdb6d3d04acc1bea2a17f146656b5097cd7a94fe"
+      "sha256": "f443fae177374344a0e319af73f7be756bc9b53dfd8ff3087b95ef588769b0b0"
     },
     {
       "path": "papers/2022_TrackingPublicSensemaking/metadata.json",
@@ -9651,7 +9651,7 @@
     {
       "path": "papers/2022_Transcript/index.html",
       "bytes": 11605,
-      "sha256": "b1fa2d84a46df7eddde4ee75080d64c0798fa2abe672c168a5b70572095b9c89"
+      "sha256": "c860af831c961e0bebbb8f780f4f79d8bb5555f09f014ee5c10352d611299d54"
     },
     {
       "path": "papers/2022_Transcript/metadata.json",
@@ -9691,7 +9691,7 @@
     {
       "path": "papers/2022_TranscriptDiscussions/index.html",
       "bytes": 9708,
-      "sha256": "64de9a1e5e504c43c44abac577c85433ce5cffd911165c6c2be61bb8ae3fbb86"
+      "sha256": "fa4f04572b80f6d9c5268f69f63beb37f1eca01a12eaf977cc3b488618a8ec1b"
     },
     {
       "path": "papers/2022_TranscriptDiscussions/metadata.json",
@@ -9741,7 +9741,7 @@
     {
       "path": "papers/2022_TrustFinder/index.html",
       "bytes": 11277,
-      "sha256": "9dbc36303f604f54e314017c036ee9098f073efbe7c8b711f9046fe1cf3cb47f"
+      "sha256": "5e24124e9b70a6773e8a3537cc40548df81598ae4fc5c17621a98f22fa23c410"
     },
     {
       "path": "papers/2022_TrustFinder/metadata.json",
@@ -9781,7 +9781,7 @@
     {
       "path": "papers/2022_WorkedExampleBayesian/index.html",
       "bytes": 9276,
-      "sha256": "126070d0850ec2c452884dcedf090525555f9a4956df97cbf7229ad03a8ad41b"
+      "sha256": "32da892f83d6a1e904c2bc6e5acc9282bda83e55113406bf5b67457a7f0e579e"
     },
     {
       "path": "papers/2022_WorkedExampleBayesian/metadata.json",
@@ -9831,7 +9831,7 @@
     {
       "path": "papers/2023_AIAccountability/index.html",
       "bytes": 10622,
-      "sha256": "febbb90a0c01b78b39221132b901eb442e9a144840a18bc2ca5999829a5ffd61"
+      "sha256": "310821bc9a5a6e7e44d0c17597df4428ea9988130a2fc0761ac7c8d9cd241d04"
     },
     {
       "path": "papers/2023_AIAccountability/metadata.json",
@@ -9881,7 +9881,7 @@
     {
       "path": "papers/2023_AII_v1/index.html",
       "bytes": 11082,
-      "sha256": "da02a8a7640ed5316941e8abef7c71de54877258e8ce20380e238e74b3cd9b71"
+      "sha256": "38259b9a73955cf88d2b30b7c96a5d47e118d8531d1f54f87c56e6a34b264cdd"
     },
     {
       "path": "papers/2023_AII_v1/metadata.json",
@@ -9931,7 +9931,7 @@
     {
       "path": "papers/2023_ATLAS2/index.html",
       "bytes": 11258,
-      "sha256": "62203a8f8191deb503c9038cb5774b7b0e2beba86d1359c154ba3307516b40fb"
+      "sha256": "7930c833cc7ac4438053cc0d42b175572902d8a113c2a8578aaae3da15fc890d"
     },
     {
       "path": "papers/2023_ATLAS2/metadata.json",
@@ -9971,7 +9971,7 @@
     {
       "path": "papers/2023_AccountActiveInference/index.html",
       "bytes": 9250,
-      "sha256": "5cadd1f4f5d080b0759d1702181ca4db5dd7c6f3f604de160a7794cff06a637d"
+      "sha256": "9b65faa25a93df83dfd5da90608a3bb2751bd3f4150f36d08d09fa4b373d7844"
     },
     {
       "path": "papers/2023_AccountActiveInference/metadata.json",
@@ -10021,7 +10021,7 @@
     {
       "path": "papers/2023_AntsAging/index.html",
       "bytes": 10941,
-      "sha256": "b744fc68954b7abd6167fbc2b34c8bfcc7767e61f0071221013ee734b0894fd6"
+      "sha256": "52e0a7a2d68aa426a266e4ddcea9cbd2d96f1be342c04bb946288c450246acda"
     },
     {
       "path": "papers/2023_AntsAging/metadata.json",
@@ -10071,7 +10071,7 @@
     {
       "path": "papers/2023_BlakeFuller/index.html",
       "bytes": 11288,
-      "sha256": "f2462ee69330168f684c5e4da166fdc24fc95d38c2c22b93ce5443d7b6045968"
+      "sha256": "f4b5c11d2653b961c92541509c4be8bd6c88156cf830316d56f06ba2ecc2fa5e"
     },
     {
       "path": "papers/2023_BlakeFuller/metadata.json",
@@ -10111,7 +10111,7 @@
     {
       "path": "papers/2023_CognitiveSovereignty/index.html",
       "bytes": 9453,
-      "sha256": "eb05f4be65322df0eac184b05fe9f5f26ffd6dab569120d3bea85b94ee4325cf"
+      "sha256": "447a3a11894226c5d3af90c6ae7127cd989dce6fc034fc480119e90fbf230323"
     },
     {
       "path": "papers/2023_CognitiveSovereignty/metadata.json",
@@ -10161,7 +10161,7 @@
     {
       "path": "papers/2023_DistributedScience/index.html",
       "bytes": 11483,
-      "sha256": "b539520cf8d9ba2acde2e992dd7d2f833d262b01bb9809dc0338d11d997883b2"
+      "sha256": "943f15efb2ae94f0ca3e4445497e85a87fe394ddc7c5db70a77dc06c2c7373ba"
     },
     {
       "path": "papers/2023_DistributedScience/metadata.json",
@@ -10211,7 +10211,7 @@
     {
       "path": "papers/2023_GNN/index.html",
       "bytes": 10199,
-      "sha256": "23f023a92282d0388c489edfeb255f0c58b705f098022d44f9ade5457026c3c2"
+      "sha256": "437c4240431e304eaa331e616c703fb9e9ad6c3caf5076b0340a62d5d13213d4"
     },
     {
       "path": "papers/2023_GNN/metadata.json",
@@ -10261,7 +10261,7 @@
     {
       "path": "papers/2023_GenerativeResearchTeams/index.html",
       "bytes": 9946,
-      "sha256": "284fbff860ad4305de1411599e521190a7db67e68993e77f8fb0b6738250b0ee"
+      "sha256": "17b9ed586df9012140e16faa4df17c90c25f739d4d39adb4b6dd2adf391a25df"
     },
     {
       "path": "papers/2023_GenerativeResearchTeams/metadata.json",
@@ -10311,7 +10311,7 @@
     {
       "path": "papers/2023_GuidedTourMinds/index.html",
       "bytes": 10154,
-      "sha256": "d162456b6c6a92a829f61b76ffb056712ad26809a6b037765613054b07bd4f23"
+      "sha256": "58acb9d1865e057b8bc25f384df0ed917353541dfaaac3c12e816c024c462af0"
     },
     {
       "path": "papers/2023_GuidedTourMinds/metadata.json",
@@ -10361,7 +10361,7 @@
     {
       "path": "papers/2023_HoneyBeeGeneExpression/index.html",
       "bytes": 11207,
-      "sha256": "d5cd46c8183521e1926ba249e041c405fca1d00c18a2aaa070f334b5b5d3e039"
+      "sha256": "1544164b27f3344331be6f21184627672b3d2fd7c6cf1d073c252978af91dff8"
     },
     {
       "path": "papers/2023_HoneyBeeGeneExpression/metadata.json",
@@ -10401,7 +10401,7 @@
     {
       "path": "papers/2023_ModernNostrIndex/index.html",
       "bytes": 8807,
-      "sha256": "76f63f483f5588f5fb5339b648afc3bf0b1e4fd6bd5db901a9537cf2e9933d17"
+      "sha256": "d49fc51b4f7572599f5af691e4accc5053fa63344c6fba528fc3fe51db01d092"
     },
     {
       "path": "papers/2023_ModernNostrIndex/metadata.json",
@@ -10441,7 +10441,7 @@
     {
       "path": "papers/2023_NSFReporting/index.html",
       "bytes": 9347,
-      "sha256": "dd12cacbbb06f7ba8a8c5abe5621b039535fe19cf960bf693745f5888579778d"
+      "sha256": "5d591c217d1b86389693576ac43494223a746a04eb13e1adebdc0865dfb0074c"
     },
     {
       "path": "papers/2023_NSFReporting/metadata.json",
@@ -10481,7 +10481,7 @@
     {
       "path": "papers/2023_NaturalAIBased/index.html",
       "bytes": 9393,
-      "sha256": "c9212ab0c301339b172037a67ce03e71b4bc0b2aac1cbbfebc7328e63a751d30"
+      "sha256": "6fee810448bdaa38a8346b0850967af0602197f20fe13c394614b4f2f3ef4a79"
     },
     {
       "path": "papers/2023_NaturalAIBased/metadata.json",
@@ -10531,7 +10531,7 @@
     {
       "path": "papers/2023_OpenScienceSensemaking/index.html",
       "bytes": 10403,
-      "sha256": "bf790a11e1924e47c5a82f8b55533cf85bcb1e946372767ab6049c9dcc23f2e9"
+      "sha256": "f2d4c65f8d43eed7a1e52cf2f33a855b2280c59db9eba4bbe90d89a1ece925d7"
     },
     {
       "path": "papers/2023_OpenScienceSensemaking/metadata.json",
@@ -10581,7 +10581,7 @@
     {
       "path": "papers/2023_P3IF/index.html",
       "bytes": 11102,
-      "sha256": "45b84f74a43087d1a444b4ec2a54c16c5a0365d82ad81404833358bfb4de03be"
+      "sha256": "b8869b8ce9d6626663003542c0d5f672f087e79ab8fc727be795700c229f8529"
     },
     {
       "path": "papers/2023_P3IF/metadata.json",
@@ -10631,7 +10631,7 @@
     {
       "path": "papers/2023_PostdocReview/index.html",
       "bytes": 11109,
-      "sha256": "1aa1f8690a83abab1ffae01e3a648eb4f3fea34fff4733070637a518ccf3ced8"
+      "sha256": "31791628375c703583818c8c7517e3ae5cc0e1fde457566b4745ae54bd6472fa"
     },
     {
       "path": "papers/2023_PostdocReview/metadata.json",
@@ -10681,7 +10681,7 @@
     {
       "path": "papers/2023_SinglePheromone/index.html",
       "bytes": 11367,
-      "sha256": "81a9daf56b8e59af75a7cf9a240f81508b854651839ae894ef78146754109432"
+      "sha256": "06d94a9a2e91ea64d7f49c25e23e9f6c565172cacd05062ff691c56019ed4fba"
     },
     {
       "path": "papers/2023_SinglePheromone/metadata.json",
@@ -10731,7 +10731,7 @@
     {
       "path": "papers/2023_SlidesIris/index.html",
       "bytes": 10285,
-      "sha256": "7daadf1dcbd339b4986618e3ed6ee0853f3053a9c5e4aafd46b1e67cebd06bf3"
+      "sha256": "31959642f30600989e8092a04a055cca6b7153759edaa308b3657617109483d8"
     },
     {
       "path": "papers/2023_SlidesIris/metadata.json",
@@ -10781,7 +10781,7 @@
     {
       "path": "papers/2023_ToComment/index.html",
       "bytes": 10914,
-      "sha256": "2e7ab67a73307b5003cc79de0cffaf71f59904e2f82cec47ce3e301ea50478a7"
+      "sha256": "5a07e856e05500808f89b81c099cdafd20243c9e3a35b0910cb5441cff93e484"
     },
     {
       "path": "papers/2023_ToComment/metadata.json",
@@ -10821,7 +10821,7 @@
     {
       "path": "papers/2023_TranscriptActiveInference/index.html",
       "bytes": 9672,
-      "sha256": "806c00b52c43d3ca11779ce5eb084129a5edda71281801ca5d4aa99bfc29790d"
+      "sha256": "ac3d2a53357b4307fffcd046a5120c9affbc9470317cc50b82b8db5173f2c4eb"
     },
     {
       "path": "papers/2023_TranscriptActiveInference/metadata.json",
@@ -10871,7 +10871,7 @@
     {
       "path": "papers/2023_VariationalSynthesis/index.html",
       "bytes": 11473,
-      "sha256": "e3a7bb9bf1f5440169835b6659ad5349d41dc3774c0c3c6316d2684fef01601d"
+      "sha256": "b7e914bd54894bf7c2cd7d57dfe3240aeea581a8245c2e66a61bf95aa1475a0c"
     },
     {
       "path": "papers/2023_VariationalSynthesis/metadata.json",
@@ -10911,7 +10911,7 @@
     {
       "path": "papers/2023_VideoEntomology/index.html",
       "bytes": 9176,
-      "sha256": "ad43d62afce0112b4219413e421bf5e204a8a7b7a815f1bf7a8f0f4e6676372e"
+      "sha256": "e9d918c3fc306ff8c582e3b15c1f1c48a9377d38d1310484636f4c9a4ee77516"
     },
     {
       "path": "papers/2023_VideoEntomology/metadata.json",
@@ -10961,7 +10961,7 @@
     {
       "path": "papers/2024_AII_v2/index.html",
       "bytes": 11109,
-      "sha256": "b8d5f33062aba9872df6f8bbf269003060b829d7bd2eebb7e0193cb1a1fa3fc9"
+      "sha256": "96f999452f70d1c8f4941627d91c01bdb7c4dd01d2aba081d4effe939563fad8"
     },
     {
       "path": "papers/2024_AII_v2/metadata.json",
@@ -11011,7 +11011,7 @@
     {
       "path": "papers/2024_BioFirm/index.html",
       "bytes": 10993,
-      "sha256": "d458964f1c0007f459f2a6d7a87dc016cb4bbb3ec0605ae996167a7782806dc8"
+      "sha256": "5b8a4cf4f2539998b645837a15030b388614fdce328bcda288547b6b808c42a6"
     },
     {
       "path": "papers/2024_BioFirm/metadata.json",
@@ -11061,7 +11061,7 @@
     {
       "path": "papers/2024_BlattodeaDiversity/index.html",
       "bytes": 11206,
-      "sha256": "00957ba210db4049a23b5237f39b7c025e616b37e1aa9fcd9230eed0f756dd20"
+      "sha256": "a2d758ba01847624e46af5a6be0fbcfff2012b4d3e46c149650cc8ce45f58edd"
     },
     {
       "path": "papers/2024_BlattodeaDiversity/metadata.json",
@@ -11111,7 +11111,7 @@
     {
       "path": "papers/2024_CurioCards/index.html",
       "bytes": 11009,
-      "sha256": "d4cbb8427184331850cd86f660390073740b5fe045a0e7b91d5b551796107908"
+      "sha256": "9af347d6b763434d4c4bd1a571e13c49848aab4f3ef13a77cc586130245c6d8b"
     },
     {
       "path": "papers/2024_CurioCards/metadata.json",
@@ -11161,7 +11161,7 @@
     {
       "path": "papers/2024_DigitalTwins/index.html",
       "bytes": 10511,
-      "sha256": "a5bad83504decee9b809f6c164b028cb6b55e3c1305e9f3f204971da3bf834d2"
+      "sha256": "2c65ad6170db0086b92b52f6256fcf90f3c26f18763316d4dce4cea41acc9a11"
     },
     {
       "path": "papers/2024_DigitalTwins/metadata.json",
@@ -11211,7 +11211,7 @@
     {
       "path": "papers/2024_FarmWorks/index.html",
       "bytes": 9716,
-      "sha256": "7c86264df95a00fce6da00b22124deded0c03a22e4374dd4a1779e7f3523dfa7"
+      "sha256": "f2ce6ae9094417d009efc3a06bdc5359399564d41fa25636e9f9c800fa0451e3"
     },
     {
       "path": "papers/2024_FarmWorks/metadata.json",
@@ -11261,7 +11261,7 @@
     {
       "path": "papers/2024_FederatedInference/index.html",
       "bytes": 11275,
-      "sha256": "f37c3882d73cb0911b0ed86784f677c2cf24b91ad824bf8c9e7c320698314dce"
+      "sha256": "cdec36f4d42f2b59f4467f2c7019667681dbae6f4c151c1ca8016039454e2d49"
     },
     {
       "path": "papers/2024_FederatedInference/metadata.json",
@@ -11311,7 +11311,7 @@
     {
       "path": "papers/2024_ImageMemeResearch/index.html",
       "bytes": 10874,
-      "sha256": "e523ec7c192e07316365d4a3f762279494dd3c9c611f1e25d9389e42682f9671"
+      "sha256": "4d4cea688a48b356cb97192f839a256ae4ac52728a039ccad47c888391079bd6"
     },
     {
       "path": "papers/2024_ImageMemeResearch/metadata.json",
@@ -11351,7 +11351,7 @@
     {
       "path": "papers/2024_InfiniteImaginarium/index.html",
       "bytes": 9181,
-      "sha256": "f140f6627b5f71a03bdf9441e971e37f19119d6880188c2e42a5bd20d503c0fc"
+      "sha256": "5ad2372539d84397a5590b9dc17fd48335d1bb1d75a4600d74682325cc33222f"
     },
     {
       "path": "papers/2024_InfiniteImaginarium/metadata.json",
@@ -11401,7 +11401,7 @@
     {
       "path": "papers/2024_MathArtBlake/index.html",
       "bytes": 11142,
-      "sha256": "170916e6087bad9ba6f745d7b134f2243348f52da5eadd0c95dc3e3b7cb09783"
+      "sha256": "a4a779e454ada3c9b4c12ca1f3cfdd6be35dafbbb26807598547882edd31070b"
     },
     {
       "path": "papers/2024_MathArtBlake/metadata.json",
@@ -11441,7 +11441,7 @@
     {
       "path": "papers/2024_OntologySUMO/index.html",
       "bytes": 9224,
-      "sha256": "b94ae7dd154557a325561f970aad1596e10548112705c70f9175ab9eb0a03e9f"
+      "sha256": "ebc72ca4ef4e345b72e217e4d84ff3c7c4253c3b5393a59c553915f835bd25d4"
     },
     {
       "path": "papers/2024_OntologySUMO/metadata.json",
@@ -11471,7 +11471,7 @@
     {
       "path": "papers/2024_PaleolithicRockstars/index.html",
       "bytes": 9111,
-      "sha256": "96d066c1c10b9d388a14a66bf9b38dcd3431e5b5d981609688a8d17e23e560e4"
+      "sha256": "f44b01c6e4b4dc30c74501fd6d30ecebc12ddd5183be43827305420f46d4f06d"
     },
     {
       "path": "papers/2024_PaleolithicRockstars/metadata.json",
@@ -11521,7 +11521,7 @@
     {
       "path": "papers/2024_PopulationSearch/index.html",
       "bytes": 9733,
-      "sha256": "1e6c5ca405b70b0f8d800d18c9fc7dde426da200d93043636287f330f2ad8f59"
+      "sha256": "6a619709b09279f6649278f31856372fbfbc1d988c00d4528599bc021302370a"
     },
     {
       "path": "papers/2024_PopulationSearch/metadata.json",
@@ -11571,7 +11571,7 @@
     {
       "path": "papers/2024_PushPull/index.html",
       "bytes": 9567,
-      "sha256": "951b9b8c459dc746cd035a20413bf9d77e95e2e01bae03cbda01d3562ef75a84"
+      "sha256": "53936831c274c64f9585e3ff95895fda89daf0405808dabb5267d851fce31080"
     },
     {
       "path": "papers/2024_PushPull/metadata.json",
@@ -11621,7 +11621,7 @@
     {
       "path": "papers/2024_QuantumDreams/index.html",
       "bytes": 10358,
-      "sha256": "cdacddf9f06bfbb696051c7be095f9346c75ec2a9e9fcc6b731ec315c73837d0"
+      "sha256": "d61ae5a835a9b58ac54a92479785125d83064ddeca57fcbf1da6b7df78c83b0e"
     },
     {
       "path": "papers/2024_QuantumDreams/metadata.json",
@@ -11661,7 +11661,7 @@
     {
       "path": "papers/2024_SensemakingFederation/index.html",
       "bytes": 9368,
-      "sha256": "11991be577360e33fc0ee51c03261e41c114163955ae17e3119f325a1fd5ac9d"
+      "sha256": "d5bf29af9747dc797968162a7a3e72894bc94d19ba7b632fc2696969859c027f"
     },
     {
       "path": "papers/2024_SensemakingFederation/metadata.json",
@@ -11711,7 +11711,7 @@
     {
       "path": "papers/2024_SharedProtentions/index.html",
       "bytes": 9655,
-      "sha256": "e6e56fc542ca52baced47b1fac6cf9ca90c0ac810681f894903882adb84592d5"
+      "sha256": "eb1fe92dac6776b0af7d1c3d2758f804fb9a79a122cbacc14b33032fe8725b75"
     },
     {
       "path": "papers/2024_SharedProtentions/metadata.json",
@@ -11761,7 +11761,7 @@
     {
       "path": "papers/2025_5thSymposium/index.html",
       "bytes": 11047,
-      "sha256": "a79af3ed94950bb2803a1d2d2dd1e9f4dff25831afae8ab715d40aec9e49ed8f"
+      "sha256": "d2fb4727ef6be60eca17e84e5df00bbc06c18735ecc809ae4153a2738a087630"
     },
     {
       "path": "papers/2025_5thSymposium/metadata.json",
@@ -11811,7 +11811,7 @@
     {
       "path": "papers/2025_AII_v3/index.html",
       "bytes": 11084,
-      "sha256": "1ac0ebfb473afee759b3d127c00117b1cb9f0230411c00699e1751a1813b461a"
+      "sha256": "5c1820df28984919d6454bac700ac77a866a1911a2efb262be477aa0d0742513"
     },
     {
       "path": "papers/2025_AII_v3/metadata.json",
@@ -11851,7 +11851,7 @@
     {
       "path": "papers/2025_AccessibilityActiveInference/index.html",
       "bytes": 9463,
-      "sha256": "ff6db20752986b4510ae9b9d00ecd14a70e0eff53d306d8041d067cb115b00f8"
+      "sha256": "f017911c0032ecb4c44b1ec2226d8f7656ec6e91c8787eee505dd586d74ea7b6"
     },
     {
       "path": "papers/2025_AccessibilityActiveInference/metadata.json",
@@ -11891,7 +11891,7 @@
     {
       "path": "papers/2025_AgentAndNiche/index.html",
       "bytes": 9133,
-      "sha256": "cfa86292b3fc33a00dfbff381f7eb1f85fb9315041b1bc275dda40f693917ec0"
+      "sha256": "9c6e952ac4a2441b861f15588902e415c9a7a52289f865b4c5d3ab6c9ff625c7"
     },
     {
       "path": "papers/2025_AgentAndNiche/metadata.json",
@@ -11941,7 +11941,7 @@
     {
       "path": "papers/2025_AntStack/index.html",
       "bytes": 10107,
-      "sha256": "c0d00caf9b6c31449421cac101a9df34fac8c394343f08e3033b9820dd868229"
+      "sha256": "5b2c2b0e5e69f98490f3b4c36abb32d4b46ebfb625a5d436a67b33275a200183"
     },
     {
       "path": "papers/2025_AntStack/metadata.json",
@@ -11991,7 +11991,7 @@
     {
       "path": "papers/2025_AntStackComplexity/index.html",
       "bytes": 11255,
-      "sha256": "41c949d041472450ad04bbfab596f39b32c947f8050aff182ffb72b59920b141"
+      "sha256": "5985044bd701153f15dd49b58a796af58ac2c7ab2bd2f8a4eefa91e7614923f0"
     },
     {
       "path": "papers/2025_AntStackComplexity/metadata.json",
@@ -12041,7 +12041,7 @@
     {
       "path": "papers/2025_AuBI/index.html",
       "bytes": 11113,
-      "sha256": "aab424610f389dcdf0a47c9a14be477615a6da7a55c45dc0ad8ce94726e4b173"
+      "sha256": "d26890e94bfe06aea29b7de145e2876539225d22faba15b6084faf67d2e28774"
     },
     {
       "path": "papers/2025_AuBI/metadata.json",
@@ -12091,7 +12091,7 @@
     {
       "path": "papers/2025_BeaconsPreEmulation/index.html",
       "bytes": 9639,
-      "sha256": "de75d37bcc58bec9b8d7f349dbb4a742326f883211914190273c43b546a844a1"
+      "sha256": "d30e1eab0df5cdf2061573d81d9bc0338fa348b2dce1f953d3acb30b9470b441"
     },
     {
       "path": "papers/2025_BeaconsPreEmulation/metadata.json",
@@ -12141,7 +12141,7 @@
     {
       "path": "papers/2025_BevCycPositPrimitive/index.html",
       "bytes": 9681,
-      "sha256": "188f46ee5c4a029f06af45fc4e9e6bf267a7f40437015a6120eaa61d1a4045c5"
+      "sha256": "f6a473de0d85d49752b14863202dcbf780ec405d849e28e85a1a931c52dd0e6d"
     },
     {
       "path": "papers/2025_BevCycPositPrimitive/metadata.json",
@@ -12191,7 +12191,7 @@
     {
       "path": "papers/2025_BiofirmDevelopmentWith/index.html",
       "bytes": 11541,
-      "sha256": "7ef45ecf4ff92bf809e39c3633460b4330013af06411a87446183f7a33b58b0a"
+      "sha256": "90033aecf39e885e35ff118a15306602bd9c996a3da5d7beb67e8f7fa9be4e82"
     },
     {
       "path": "papers/2025_BiofirmDevelopmentWith/metadata.json",
@@ -12246,7 +12246,7 @@
     {
       "path": "papers/2025_CEREBRUM/index.html",
       "bytes": 11423,
-      "sha256": "9df8657c890d0fc62f43836a49b67c692f38dd549f4720949e091c6e37fccabf"
+      "sha256": "c0d4510ba6c6a4636a33379b4a634b0be1d5b9f898f5c04d33c972b5cf42a568"
     },
     {
       "path": "papers/2025_CEREBRUM/metadata.json",
@@ -12296,7 +12296,7 @@
     {
       "path": "papers/2025_CognitiveArtScience/index.html",
       "bytes": 9691,
-      "sha256": "a2f2647b914ad8c0875f64786e89214cba8e47f7c101e1957713d79730bb19e7"
+      "sha256": "55cc25e28ec4462d5f05bc53515dd9ed0500a93e6d2ab39510942c98e27491cc"
     },
     {
       "path": "papers/2025_CognitiveArtScience/metadata.json",
@@ -12346,7 +12346,7 @@
     {
       "path": "papers/2025_ConCatEnate/index.html",
       "bytes": 11074,
-      "sha256": "e1456c3e40ad193b7b4037717881c39247b2e62a2dd9c97752f988d4a42d1277"
+      "sha256": "3faa03a4fde5a0c71e275bdb8361bf455d23260400ded5abb2a276a1ee330e73"
     },
     {
       "path": "papers/2025_ConCatEnate/metadata.json",
@@ -12396,7 +12396,7 @@
     {
       "path": "papers/2025_ConCatEnate2/index.html",
       "bytes": 10511,
-      "sha256": "1cba6a84832d995fc62b822865ae39f4ad05c8afdfddc96e5f52b8394057f5fa"
+      "sha256": "70183a3337885b3630ca4c08b85236a45a9b3ccd277eb0ef90815984dd247cb7"
     },
     {
       "path": "papers/2025_ConCatEnate2/metadata.json",
@@ -12446,7 +12446,7 @@
     {
       "path": "papers/2025_ConsciousnessAnts/index.html",
       "bytes": 11353,
-      "sha256": "39192f6253ebfd7df764ab3ca3b2ba88e88d19e5d679d15da433efaa3ab1b44a"
+      "sha256": "6d09464edeb2f6cfbe3143f4f9e7e3765df0622e8448a1675998146de401ff5a"
     },
     {
       "path": "papers/2025_ConsciousnessAnts/metadata.json",
@@ -12496,7 +12496,7 @@
     {
       "path": "papers/2025_DiscoveryEngine/index.html",
       "bytes": 11358,
-      "sha256": "5979f66fff0b845e631e6dbd91522241388d5817e9338733c7d757108da19f4f"
+      "sha256": "e3bff5e0fee23fe20de02afdb614610592368292a69e4b5da1a2636530db9e54"
     },
     {
       "path": "papers/2025_DiscoveryEngine/metadata.json",
@@ -12546,7 +12546,7 @@
     {
       "path": "papers/2025_EvoJump/index.html",
       "bytes": 11092,
-      "sha256": "78e43adb2a2cc7a85d80dec44ae4918b3faed71f048e2203f43116294cbd6ca5"
+      "sha256": "9c6c1e9f290f9424f665e5d7468927913919c0d4bd454cf962705066b6407c8e"
     },
     {
       "path": "papers/2025_EvoJump/metadata.json",
@@ -12596,7 +12596,7 @@
     {
       "path": "papers/2025_Graphspeak/index.html",
       "bytes": 10970,
-      "sha256": "4634235d3af3f98d5cf852d9a954d4d17249ee72c6d67be5bf867eed921d97ec"
+      "sha256": "8fcfbde4221c41af31fdcd3477f362e1b7f1bf3be67db938007039078854e563"
     },
     {
       "path": "papers/2025_Graphspeak/metadata.json",
@@ -12636,7 +12636,7 @@
     {
       "path": "papers/2025_MDKV/index.html",
       "bytes": 9358,
-      "sha256": "780beb4e9fdbf2c6944cc9e9d08e5df734964bfd5a8264fb86e329eac0bbcfe3"
+      "sha256": "834a9077fc0606588b8b942b5892cc66e37dbc3322eedc734cd278f51dfd29a6"
     },
     {
       "path": "papers/2025_MDKV/metadata.json",
@@ -12676,7 +12676,7 @@
     {
       "path": "papers/2025_MarkdownDecisionProcess/index.html",
       "bytes": 9440,
-      "sha256": "67a5f6ab1e051b326ab02876054ed2550f8fc2fd51b1c8217977e4da5f344215"
+      "sha256": "bd695a2273aa962f6254c3194d22d17581847dba2b5df95f8b08e1fd3ada7d1a"
     },
     {
       "path": "papers/2025_MarkdownDecisionProcess/metadata.json",
@@ -12716,7 +12716,7 @@
     {
       "path": "papers/2025_OnTime/index.html",
       "bytes": 8738,
-      "sha256": "7bdd6f3df23cd8e20f30534caa780bc72f7ab1d6da09e53db2d9126cb467cf25"
+      "sha256": "7401dbd63872526e652924fbb9391db37db256cd4c345bd647169f8586bad36a"
     },
     {
       "path": "papers/2025_OnTime/metadata.json",
@@ -12766,7 +12766,7 @@
     {
       "path": "papers/2025_QuadMath/index.html",
       "bytes": 11098,
-      "sha256": "95f486222a895b753453512f0a48912cc36ac81c47c6b029cd9b5237b4109ca3"
+      "sha256": "67e93df9d75b381514affae869c5d06d086041b098b071b6870a9cff220b4b04"
     },
     {
       "path": "papers/2025_QuadMath/metadata.json",
@@ -12816,7 +12816,7 @@
     {
       "path": "papers/2025_ResNei/index.html",
       "bytes": 10873,
-      "sha256": "1589b7faf8cfa1722a42551f7e29286890557c9fd1c882bc2f35bb128416f055"
+      "sha256": "fa92aeedb3540d14fc548d7d7b84ccad3d650cfba66de923ae951992f4865fd3"
     },
     {
       "path": "papers/2025_ResNei/metadata.json",
@@ -12866,7 +12866,7 @@
     {
       "path": "papers/2025_Symergetics/index.html",
       "bytes": 11221,
-      "sha256": "8aa41e9b91cceea3487bda8156f2ca2da7643905d798d49a2de0a84e2a165260"
+      "sha256": "b0e2ddf98800b9c6e216499938fa49da98ec627a546a9b33cd8a0df060571859"
     },
     {
       "path": "papers/2025_Symergetics/metadata.json",
@@ -12916,7 +12916,7 @@
     {
       "path": "papers/2025_SystemsProcesses/index.html",
       "bytes": 11209,
-      "sha256": "b034d258369716fb614e3bcf69eb7db8150c5794399d4447fbcb18a3ca751cbd"
+      "sha256": "3a1e7cebad1cea7d428dfc56535c2884598f20283084b15a662cbc01ca9f92b3"
     },
     {
       "path": "papers/2025_SystemsProcesses/metadata.json",
@@ -12966,7 +12966,7 @@
     {
       "path": "papers/2025_TemporalDepth/index.html",
       "bytes": 11180,
-      "sha256": "31ad281634b762ef05d78b201508322193458770a2749553205a756337364c2d"
+      "sha256": "f7e8adc7dcce33d0f36104c86d5a85778e10aa8b058bb9fb43c0cb3f33ffab29"
     },
     {
       "path": "papers/2025_TemporalDepth/metadata.json",
@@ -13016,7 +13016,7 @@
     {
       "path": "papers/2025_Thoughtseeds/index.html",
       "bytes": 11460,
-      "sha256": "e7f15c7de50aedee7d55568a45ee5ace53e8ff1086df7bea866f9de0fe1178c7"
+      "sha256": "ad38686c9fadd5269c0435e7d3a1331a46f47d7cd613e229764f2defd52a345e"
     },
     {
       "path": "papers/2025_Thoughtseeds/metadata.json",
@@ -13066,7 +13066,7 @@
     {
       "path": "papers/2026_AGEINT/index.html",
       "bytes": 11006,
-      "sha256": "e79f1bc484448d35590a550fb2142168e196be98de30508254315253aa373a50"
+      "sha256": "d6bf3e586346d3f1d3a4e8cc77ef69b9273d3ecfc3a8f573d987c8bcf3d4e11c"
     },
     {
       "path": "papers/2026_AGEINT/metadata.json",
@@ -13116,7 +13116,7 @@
     {
       "path": "papers/2026_ActInfMetaAnalysis/index.html",
       "bytes": 11690,
-      "sha256": "a00e4fb0bde3d7bdb15381db0ef3f4b49d893849372a8345453a2cf509da8a53"
+      "sha256": "5adea8f907c4d724d814b9b0d024533d8fcabd4d112b45fe171b523ee83aacfc"
     },
     {
       "path": "papers/2026_ActInfMetaAnalysis/metadata.json",
@@ -13156,7 +13156,7 @@
     {
       "path": "papers/2026_ActiveFractalRabbit/index.html",
       "bytes": 9600,
-      "sha256": "43bb15631b4da5c028744762b7b79a74e177a0c019e73c1a73a5924def3204a3"
+      "sha256": "992a4a0994ea8db82282fb88e50b268267ebca571a16966d534ee322954d3ea8"
     },
     {
       "path": "papers/2026_ActiveFractalRabbit/metadata.json",
@@ -13216,7 +13216,7 @@
     {
       "path": "papers/2026_ActiveInferenceMulti/index.html",
       "bytes": 11539,
-      "sha256": "324f1c3c38825a2564f00f21613c989d132ddfffee045b4d1754ef83390dfdcf"
+      "sha256": "a0157f445866a8541125e8251e9f3b5c72fb89a421365ad48a74b51fccb385ec"
     },
     {
       "path": "papers/2026_ActiveInferenceMulti/metadata.json",
@@ -13256,7 +13256,7 @@
     {
       "path": "papers/2026_ActiveInferencePower/index.html",
       "bytes": 9522,
-      "sha256": "9c14e154f8288e7192ee4e0aeeea066e02740195ab146de6f6938e90475e5d89"
+      "sha256": "4eaa3211391aa59f26f412b7391130fb5dbb94151312a6220ce02d9693490fdb"
     },
     {
       "path": "papers/2026_ActiveInferencePower/metadata.json",
@@ -13296,7 +13296,7 @@
     {
       "path": "papers/2026_ActiveSkillference/index.html",
       "bytes": 9728,
-      "sha256": "80c0f267f901b67cd3ab7f2638f63d11c2f1c3a659c8e33681c5f92bd837c98b"
+      "sha256": "e590a60ae1f570de1b2c86f1b0f093ba5f9c1f9fce6de6207f5b618ace38632b"
     },
     {
       "path": "papers/2026_ActiveSkillference/metadata.json",
@@ -13331,7 +13331,7 @@
     {
       "path": "papers/2026_AgenticSecurityOperating/index.html",
       "bytes": 10135,
-      "sha256": "e04e5e748186f9a0042c5b49930e1032dae283b965202b088c405ebbdd92d169"
+      "sha256": "d0cba5fcd2ca338d952ee9b9b5bb7ce5c51c8e326b1b548c011a0e724b74c449"
     },
     {
       "path": "papers/2026_AgenticSecurityOperating/metadata.json",
@@ -13381,7 +13381,7 @@
     {
       "path": "papers/2026_AlphaCOGANT/index.html",
       "bytes": 11318,
-      "sha256": "f3ba611adda5feda9bf75b1ce05b9574e2730afa980321a5efa9f68d4121bfdc"
+      "sha256": "210908ede04fdcc251aab004904cc1344fce985db8b658faea39a773f6760155"
     },
     {
       "path": "papers/2026_AlphaCOGANT/metadata.json",
@@ -13431,7 +13431,7 @@
     {
       "path": "papers/2026_AutopoieticProjectGeneration/index.html",
       "bytes": 11004,
-      "sha256": "d7d4e471b6db2204b477c6c4655768d6830dca4cd733c2b52286bd90dcd488f9"
+      "sha256": "8a76dceb7a61a9e91ac0a49e42254a9d3c0257f09cffbc5e659e66bb6b5a7da2"
     },
     {
       "path": "papers/2026_AutopoieticProjectGeneration/metadata.json",
@@ -13481,7 +13481,7 @@
     {
       "path": "papers/2026_BeeStack/index.html",
       "bytes": 11209,
-      "sha256": "872e477701ada32c2af02942e30aebb8694767926af122593bce227bf75a90d7"
+      "sha256": "d02f57a03299726a12a60e898c29daee249ee07a1a1b63d911bfcd587a5e7b09"
     },
     {
       "path": "papers/2026_BeeStack/metadata.json",
@@ -13531,7 +13531,7 @@
     {
       "path": "papers/2026_BeforePragmatism/index.html",
       "bytes": 11626,
-      "sha256": "912eb1af61c0f0dfd345ba9486d3287bef03869002a5995ec27635ebf3688718"
+      "sha256": "96fd0852f4c39cf04769bcae7e0e89f65b4a75d35f9f0e660ba575dab341068d"
     },
     {
       "path": "papers/2026_BeforePragmatism/metadata.json",
@@ -13581,7 +13581,7 @@
     {
       "path": "papers/2026_Bimetalism/index.html",
       "bytes": 9988,
-      "sha256": "739e1a06b1eb1b27c008085dcd4d01d3a2d24637ff1184017b82ebdf534d7971"
+      "sha256": "5ac41b424dc8d4abfb8dcd52b600e203a4727eebb991164e292cc059023b28c3"
     },
     {
       "path": "papers/2026_Bimetalism/metadata.json",
@@ -13631,7 +13631,7 @@
     {
       "path": "papers/2026_BiologyTextbook/index.html",
       "bytes": 11304,
-      "sha256": "b57d64447b12fa440794345818d968d8a1acf6a4ba49ea5b8b591243b31f2668"
+      "sha256": "eac458f88eb6163575e6da3c5a0fcdcd2f2a0f2ddd6aea8444f092c33cdbf8dd"
     },
     {
       "path": "papers/2026_BiologyTextbook/metadata.json",
@@ -13671,7 +13671,7 @@
     {
       "path": "papers/2026_BlackLine/index.html",
       "bytes": 9141,
-      "sha256": "aafc7718eb543a03dfe823decadbced32d97d863308e7b25c4d17740e90066a3"
+      "sha256": "5e8ae4b69a1ac4f732d1f1eea933359653097d41ed71d72798836186ce0cecfd"
     },
     {
       "path": "papers/2026_BlackLine/metadata.json",
@@ -13721,7 +13721,7 @@
     {
       "path": "papers/2026_BlakeJiang/index.html",
       "bytes": 11501,
-      "sha256": "6e104ff2bc320af11765d0ac8c2bf7afa67d0352e88424380f58bb9beb6ff816"
+      "sha256": "66cf2dedce0eb31a8157a8b3d10f5c1ce66257f7e5df006882a9325e32a451de"
     },
     {
       "path": "papers/2026_BlakeJiang/metadata.json",
@@ -13781,7 +13781,7 @@
     {
       "path": "papers/2026_BoundedAutoResearchTiny/index.html",
       "bytes": 11816,
-      "sha256": "3210634cc3e7b6e0b9f12df96d86d5133c335d7c27883fe20dfc97dc860c9d1b"
+      "sha256": "ef90fa24cd06e2d739207f30b98afb417e4adbd3ec35c19a021dc325f55fdf89"
     },
     {
       "path": "papers/2026_BoundedAutoResearchTiny/metadata.json",
@@ -13831,7 +13831,7 @@
     {
       "path": "papers/2026_COGANT/index.html",
       "bytes": 11059,
-      "sha256": "d8e59f1f7d7ea80c96cc3adb7add4c7ce48a92a3e46212604e99be3bef8a76a8"
+      "sha256": "b5b845a73a53599ee3be8462c588ad74709d69b23eec3801f43acfd263164775"
     },
     {
       "path": "papers/2026_COGANT/metadata.json",
@@ -13881,7 +13881,7 @@
     {
       "path": "papers/2026_CaliforniaPublicRecords/index.html",
       "bytes": 11213,
-      "sha256": "f534e3184b8c76cde2892d2d0572200918bf80b28462aa764c5cc6c35977ea32"
+      "sha256": "9f8937523c53c6fcc99c7a7190ccd6bfb31f8e5d43d51d3a37f0e466af1ea062"
     },
     {
       "path": "papers/2026_CaliforniaPublicRecords/metadata.json",
@@ -13926,7 +13926,7 @@
     {
       "path": "papers/2026_Codomyrmex/index.html",
       "bytes": 9478,
-      "sha256": "7c99679b7c0c983141675a3d667e1e777bc40b6096a5514dfd7748b0e5bb94c1"
+      "sha256": "1035962410e99cb556416ec21b74d61f8181be6b94426abe571ab453d10ce20b"
     },
     {
       "path": "papers/2026_Codomyrmex/metadata.json",
@@ -13976,7 +13976,7 @@
     {
       "path": "papers/2026_CogSecSkills/index.html",
       "bytes": 11332,
-      "sha256": "a26a0ac87daa9b7c9e7221888337d48db2aebf1c247cf674df68f48187987630"
+      "sha256": "a3ca15ce125603b8e24724264186520ec922fe2400e08e0aa3a91ed626be789f"
     },
     {
       "path": "papers/2026_CogSecSkills/metadata.json",
@@ -13995,18 +13995,13 @@
     },
     {
       "path": "papers/2026_CognitiveCaseDiagrams/README.md",
-      "bytes": 2295,
-      "sha256": "d8a3dd99930bf6129b89203ff37cd90813aa994cf40609967b275106719a3702"
+      "bytes": 2382,
+      "sha256": "daa0e51a0eb91229ba96b92b23aaa6dce474c1f6e71ff378eda70966677605a2"
     },
     {
       "path": "papers/2026_CognitiveCaseDiagrams/SKILL.md",
       "bytes": 2236,
       "sha256": "91cbdd525576d5a68ab2a9d699f150f8bbe25345c0640058390d14a755033bd8"
-    },
-    {
-      "path": "papers/2026_CognitiveCaseDiagrams/cognitive_case_diagrams-2.4.0.pdf",
-      "bytes": 15267582,
-      "sha256": "318e0dc50c92703ea39fd249d14ce115bc9c580bfea38f76c5d411aea52c8be2"
     },
     {
       "path": "papers/2026_CognitiveCaseDiagrams/cognitive_case_diagrams-2.6.0.pdf",
@@ -14035,8 +14030,8 @@
     },
     {
       "path": "papers/2026_CognitiveCaseDiagrams/index.html",
-      "bytes": 11798,
-      "sha256": "22a45da5442795a80c8bf8c5fd65379cd8a9a1e45894d43b1a9fe433f5b64deb"
+      "bytes": 11663,
+      "sha256": "c657c0f17e16686185d2e6076d427eabd4bb76ec790d5b70e795a0233f73104c"
     },
     {
       "path": "papers/2026_CognitiveCaseDiagrams/metadata.json",
@@ -14076,7 +14071,7 @@
     {
       "path": "papers/2026_CognitiveIntegrity/index.html",
       "bytes": 9474,
-      "sha256": "cc099570e10f9efe9f02c8cb225dcd0dee914fe9dd8e44638e61d7d98f7416eb"
+      "sha256": "61b19a3604318c124aa376f4f216cd0b8519f440fde016536df2bf641ee3fce0"
     },
     {
       "path": "papers/2026_CognitiveIntegrity/metadata.json",
@@ -14111,7 +14106,7 @@
     {
       "path": "papers/2026_CognitiveIntegrityFramework/index.html",
       "bytes": 10355,
-      "sha256": "712b3e029ba31817b4d9a01b11fe47b9197c26766569d84fd9c0bd0a1d6cf013"
+      "sha256": "91afafc890b4242f4814b815d37c06a80a92bd68342144087d1a19cfc00fd1c6"
     },
     {
       "path": "papers/2026_CognitiveIntegrityFramework/metadata.json",
@@ -14146,7 +14141,7 @@
     {
       "path": "papers/2026_CognitiveIntegrityFramework2/index.html",
       "bytes": 10315,
-      "sha256": "511fb6e8a6fa77ce0b9f8027736d6a489d143b71ac9ec9266b2cc0524283a305"
+      "sha256": "a3b45fe75d7f72212b0879f75318987a392eed75ba30ff4c0601430a4a8314ee"
     },
     {
       "path": "papers/2026_CognitiveIntegrityFramework2/metadata.json",
@@ -14206,7 +14201,7 @@
     {
       "path": "papers/2026_ConvergenceAnalysisGradient/index.html",
       "bytes": 11766,
-      "sha256": "bebf60f7d93e2787772add4749de9e055bb5920a5eb35114ac6a9e0cf887d70b"
+      "sha256": "51a58a66c485e2ef87043d1b0abe50a69c503b9c29d0c934d397519449ec1c26"
     },
     {
       "path": "papers/2026_ConvergenceAnalysisGradient/metadata.json",
@@ -14256,7 +14251,7 @@
     {
       "path": "papers/2026_CrescentCity/index.html",
       "bytes": 11437,
-      "sha256": "df65f087b02d616005d136e3f8549b4a7441ca6d78a282d2d31a23c0f946bafc"
+      "sha256": "037ab259c1086ee56da904093c06a9c2849f3dcce9c59d233efec4986058f317"
     },
     {
       "path": "papers/2026_CrescentCity/metadata.json",
@@ -14306,7 +14301,7 @@
     {
       "path": "papers/2026_DataDescriptorTemplate/index.html",
       "bytes": 11118,
-      "sha256": "f1bfd213fd65c054b495f83a07c41001cb0f42c11c15fa86fb31733c1ec1ac38"
+      "sha256": "59bcc23eeb62a3eb8385686c842cf81c250250f703759d155e2a1a5ab30a070a"
     },
     {
       "path": "papers/2026_DataDescriptorTemplate/metadata.json",
@@ -14356,7 +14351,7 @@
     {
       "path": "papers/2026_DemoCreate/index.html",
       "bytes": 11250,
-      "sha256": "e00bc1e878e377bac477eec8a273dacb9edb429e145922bbfce0c21e915ea924"
+      "sha256": "371416af1e1b81a80991f5693b59463796b6ccf91dcd67208dabd9a87eae424e"
     },
     {
       "path": "papers/2026_DemoCreate/metadata.json",
@@ -14416,7 +14411,7 @@
     {
       "path": "papers/2026_DeterministicTestbedSelf/index.html",
       "bytes": 10777,
-      "sha256": "9a332101cd185b10cb3746026f436956d5077639381e50ebd5ce17ac902ac3e4"
+      "sha256": "b9dfd27b24de873748fe88185c44f83f5ab2a5fac33cbde5744542bc7fbd34fa"
     },
     {
       "path": "papers/2026_DeterministicTestbedSelf/metadata.json",
@@ -14456,7 +14451,7 @@
     {
       "path": "papers/2026_DigiPPPiP/index.html",
       "bytes": 9252,
-      "sha256": "f4b80c861854b1fa058f4d9131fb0ebedb8b0dff940c8dac4fde640e0d6e8084"
+      "sha256": "a1f1130c33ec368637aff1f9f2330eca56d3a4481e0fb627b622037ed0e4d4c7"
     },
     {
       "path": "papers/2026_DigiPPPiP/metadata.json",
@@ -14491,7 +14486,7 @@
     {
       "path": "papers/2026_DocxplusIntelligentDocument/index.html",
       "bytes": 9160,
-      "sha256": "49ee49f443cdf7f76733b130694a24d1e1a693d31da0439103f784925222fa52"
+      "sha256": "38b898145a4b52b89a416836161db0c49c695ffc6349f64cb158e2dd27ca8ce2"
     },
     {
       "path": "papers/2026_DocxplusIntelligentDocument/manuscript.pdf",
@@ -14546,7 +14541,7 @@
     {
       "path": "papers/2026_DomainLanguageSpecifying/index.html",
       "bytes": 9792,
-      "sha256": "b12b68fcda24247d7a5b4b116cc5ad2b5f724c5294ca3f75878893b14e860af8"
+      "sha256": "a0005643215076ae0f6d969942a72f75937eb719f4d896c89bc75c3d85a0eb7e"
     },
     {
       "path": "papers/2026_DomainLanguageSpecifying/metadata.json",
@@ -14596,7 +14591,7 @@
     {
       "path": "papers/2026_DoorsOfPerception/index.html",
       "bytes": 11628,
-      "sha256": "8888c75b171d0f87c02ea9e090d8bac955899503f6206da1042c2b87e53907d5"
+      "sha256": "6f42c4c0b306ebed5604e40fc2f8b7a3de1227e56b6ca1bb31ce05a284e764f0"
     },
     {
       "path": "papers/2026_DoorsOfPerception/metadata.json",
@@ -14636,7 +14631,7 @@
     {
       "path": "papers/2026_DuckRabbit/index.html",
       "bytes": 9303,
-      "sha256": "091107fde4aca946a7e0065f243fb2755faf7dff7f9ad2006c9937535fe228ca"
+      "sha256": "2da45891ef831dae30dcf583e61fee150aa34ba32b48bff2f788d5efe74da032"
     },
     {
       "path": "papers/2026_DuckRabbit/metadata.json",
@@ -14686,7 +14681,7 @@
     {
       "path": "papers/2026_ENTO/index.html",
       "bytes": 11161,
-      "sha256": "3845969f3a79e858b5ac44306a3597e52c7df8d1773399e0b75204fe6bed125e"
+      "sha256": "945078b3ba8640bdde973d8ff200205f48122ee94231c8c2bb9bb6d9466f673f"
     },
     {
       "path": "papers/2026_ENTO/metadata.json",
@@ -14746,7 +14741,7 @@
     {
       "path": "papers/2026_EditorialQualityAt/index.html",
       "bytes": 11293,
-      "sha256": "0ff7f8009972ba9c2dd41dbb78acdd98870a9b52184de88844be1906a852b6a2"
+      "sha256": "2bc98c65ed845a38a51ae4faa6d41b5d666c92b9cfdd4317caa8c00943e30975"
     },
     {
       "path": "papers/2026_EditorialQualityAt/metadata.json",
@@ -14796,7 +14791,7 @@
     {
       "path": "papers/2026_EntoLinguistics/index.html",
       "bytes": 11454,
-      "sha256": "acbb5ecd5fbbc2e3f5dd7972ced791a5af9cb4dd2147ec267461380f4d883235"
+      "sha256": "1fa37481fb31b52f0e5923ec0f7c7217bde8219946882b20cc2669cba0e804c5"
     },
     {
       "path": "papers/2026_EntoLinguistics/metadata.json",
@@ -14846,7 +14841,7 @@
     {
       "path": "papers/2026_EntomologicalLaw/index.html",
       "bytes": 11570,
-      "sha256": "ea252906e8da9cc53d4383ec899b09f1af087aeffa004063da4122ad5eb24649"
+      "sha256": "4ced06d8cb03f90b8540601b88f923bc0bc844ce9075f4215f48373c7bfada6f"
     },
     {
       "path": "papers/2026_EntomologicalLaw/metadata.json",
@@ -14896,7 +14891,7 @@
     {
       "path": "papers/2026_ExploratoryDataAnalysis/index.html",
       "bytes": 10489,
-      "sha256": "99646cde95c738d0bc8ad1ee5aaedf6f6660769dea4d70f451750df670b9e270"
+      "sha256": "b01c208a8f525698e0b18c5c7e9fae78036c2fd3464dce8f461d403591e08bc0"
     },
     {
       "path": "papers/2026_ExploratoryDataAnalysis/metadata.json",
@@ -14951,7 +14946,7 @@
     {
       "path": "papers/2026_FEPLean/index.html",
       "bytes": 11686,
-      "sha256": "23a7f1c7a73d1d765b9ecd0bc6be280b66455fcb3370856893d0c315583f5c3b"
+      "sha256": "8152c383dfd19efdeab858057b8b9582954ff5f6f9e8434c1a7a07467e99d033"
     },
     {
       "path": "papers/2026_FEPLean/metadata.json",
@@ -14981,7 +14976,7 @@
     {
       "path": "papers/2026_FocusedAttentionMeditation/index.html",
       "bytes": 9572,
-      "sha256": "79c8c2a5319b4499626b309e926ed601a1fafcd5d3959a7ab6681094c4d0bab7"
+      "sha256": "3ef4505574d39f503ade66d4946225bd78ea20359a1ab87941975eb0ad67eaa8"
     },
     {
       "path": "papers/2026_FocusedAttentionMeditation/metadata.json",
@@ -15021,7 +15016,7 @@
     {
       "path": "papers/2026_FourfoldVision/index.html",
       "bytes": 9535,
-      "sha256": "af798dc5ef8914d6a654e8a680b3cea9d62adf7574ff8d67f8b2279617e0e215"
+      "sha256": "528f7e0a96b6d5a5e6d53e649b4f8cddd0e60e2e7eb8881c4bed05f0972cf870"
     },
     {
       "path": "papers/2026_FourfoldVision/metadata.json",
@@ -15056,7 +15051,7 @@
     {
       "path": "papers/2026_FractiSkills/index.html",
       "bytes": 9709,
-      "sha256": "63c79ad464158e14360e25088ca5765c8ebcb062dab5db71626f28607b1ff444"
+      "sha256": "11dce942cc12c4cb88235fb99913fd7f3d3c1a8f34839bfbd451b4e3f9765d88"
     },
     {
       "path": "papers/2026_FractiSkills/metadata.json",
@@ -15086,7 +15081,7 @@
     {
       "path": "papers/2026_GeneralizedNotationNotationGNN/index.html",
       "bytes": 9100,
-      "sha256": "7841aff39fd6bd3012151e383abab3e89ff7581948f89f25bf00d10735c1da48"
+      "sha256": "3af75c76172e77d935b7c3b902655891b3ca062cd8810b76ee796d924708ca99"
     },
     {
       "path": "papers/2026_GeneralizedNotationNotationGNN/metadata.json",
@@ -15126,7 +15121,7 @@
     {
       "path": "papers/2026_GoldenLine/index.html",
       "bytes": 9128,
-      "sha256": "4253a2f1050c2bd0c006fd9430c9f59f5618cb8afeda5efbdcaf5efd56d54362"
+      "sha256": "29771034d8e8d1f6e57fd3853ef046e53a0eb390ad9e1b8a06e9a8a20aedd101"
     },
     {
       "path": "papers/2026_GoldenLine/metadata.json",
@@ -15171,7 +15166,7 @@
     {
       "path": "papers/2026_ITrace/index.html",
       "bytes": 11100,
-      "sha256": "7d5a0a6d3a5db13fe698b1acd762df3e62fa46755a8f05edb780d0f29eecaefa"
+      "sha256": "81cea4e4e84fa4d7af06dd575f1d1b9e88432fac1023d0d9282534db1b6b3616"
     },
     {
       "path": "papers/2026_ITrace/itrace-0.4.1-manuscript.pdf",
@@ -15226,7 +15221,7 @@
     {
       "path": "papers/2026_IllegalStatesMostly/index.html",
       "bytes": 10971,
-      "sha256": "ca2a2ce35a74b2bb935503104722490d5eebc8646c0cbb5fe32a15d05c14b661"
+      "sha256": "685a66ac9553f91d79745b639c45b4655acbc95bb961a0bac777bdec0ffaa826"
     },
     {
       "path": "papers/2026_IllegalStatesMostly/metadata.json",
@@ -15261,7 +15256,7 @@
     {
       "path": "papers/2026_LineSet/index.html",
       "bytes": 9170,
-      "sha256": "c8ff465338b8946166f3b7115d70582610eb4427fba97cb49304cb389771948f"
+      "sha256": "d945d4076ac23320a185758c490f78c09062eb1a989262009973e30f6176daa3"
     },
     {
       "path": "papers/2026_LineSet/line_set_combined.pdf",
@@ -15316,7 +15311,7 @@
     {
       "path": "papers/2026_LivingMetaAnalysis/index.html",
       "bytes": 11312,
-      "sha256": "3c753a2178419c995b828c2030b5b841077ba48fc99dc83147827a078fa35671"
+      "sha256": "68d2b8d14e291c03cd36e438be2b19119365d7d938e10840240a5a4752dddd22"
     },
     {
       "path": "papers/2026_LivingMetaAnalysis/metadata.json",
@@ -15366,7 +15361,7 @@
     {
       "path": "papers/2026_MappingWilliamBlake/index.html",
       "bytes": 11667,
-      "sha256": "4fd3326d20c0437bd5d1aa14d504db43f412a7a25144c44ede32efe51a06b441"
+      "sha256": "d571c0f1787d32fcdfc029a8916fd956db9ae9495fb75c8b1ca779d015a41b1c"
     },
     {
       "path": "papers/2026_MappingWilliamBlake/metadata.json",
@@ -15406,7 +15401,7 @@
     {
       "path": "papers/2026_MillenniumAudit/index.html",
       "bytes": 9340,
-      "sha256": "cdece31071f5eae399281c813109e68be517d87a351c1c6149309a74799ef4d4"
+      "sha256": "c7388466b5af1564a9092c7f026a72efd89db1c0299b7e6cd67c63cdf7dc029d"
     },
     {
       "path": "papers/2026_MillenniumAudit/metadata.json",
@@ -15456,7 +15451,7 @@
     {
       "path": "papers/2026_MusicNeverStopped/index.html",
       "bytes": 11478,
-      "sha256": "f44526ad2369123c80747b5a7ad9b13b9ad1aa4b690637ca87fed73a3dd79400"
+      "sha256": "d1613fcedcc2119dce333dc570cdec65143a75b9162ef6ba4618e02a9540bfcb"
     },
     {
       "path": "papers/2026_MusicNeverStopped/metadata.json",
@@ -15496,7 +15491,7 @@
     {
       "path": "papers/2026_PROJECTBONDSpecial/index.html",
       "bytes": 9304,
-      "sha256": "62bb7f5401d3852f7dd29031db73e3e91a37bdf647e0d2436c32fa77d94e0524"
+      "sha256": "f72fbb7d2c50ffe1894dccdb5f5c988c891686218b3ad49a82751fa21e0ab66a"
     },
     {
       "path": "papers/2026_PROJECTBONDSpecial/metadata.json",
@@ -15531,7 +15526,7 @@
     {
       "path": "papers/2026_PersonalRedLines/index.html",
       "bytes": 9193,
-      "sha256": "7ada4ea6bc71621c8067dc8fea4b72deda83a9b9b04c976c34554ed739c1b49a"
+      "sha256": "031404f8501801f49f78618a37a5885d43ca6ce75c321959d85c757a29506b61"
     },
     {
       "path": "papers/2026_PersonalRedLines/metadata.json",
@@ -15586,7 +15581,7 @@
     {
       "path": "papers/2026_PolicyDistillationAs/index.html",
       "bytes": 11434,
-      "sha256": "edb3ffa25fd7d19383b2bc06a0a855f36759e2c89ec02dd4597af3cdbde44f11"
+      "sha256": "fc53c5698172378a63d14e0f105dd1f9a4b51e8cc2d907f70ff4710cf0edf9fe"
     },
     {
       "path": "papers/2026_PolicyDistillationAs/metadata.json",
@@ -15636,7 +15631,7 @@
     {
       "path": "papers/2026_PolicyEntanglementActive/index.html",
       "bytes": 11405,
-      "sha256": "44d6cde840724aedfdccc203ca5e0bd63170997b462d28abc87cf8d7a4efd579"
+      "sha256": "e017a7a2356fcbea1c728b48be3bef66c8f49a3c9b58ab8b7e95f3bbb5a0d3e1"
     },
     {
       "path": "papers/2026_PolicyEntanglementActive/metadata.json",
@@ -15686,7 +15681,7 @@
     {
       "path": "papers/2026_PoolsRulesTools/index.html",
       "bytes": 10743,
-      "sha256": "244af96dbc5d20658bde12370f3be6b8393b43f981f82b2e1bd9c0bb13e61dfc"
+      "sha256": "f524a8b7ed9a5a5f5a9894ca248d522b26b20bc509b47664ec89bd82f5484ab9"
     },
     {
       "path": "papers/2026_PoolsRulesTools/metadata.json",
@@ -15736,7 +15731,7 @@
     {
       "path": "papers/2026_PriorCognitiveArt/index.html",
       "bytes": 11126,
-      "sha256": "25c871dd81c96b490bb0570362893294f6cf21f44fad3f812624c60e90b4a0b1"
+      "sha256": "42138670f82e0e11e12101db7c63e6e87e6aadccb3b0f509971ea813dc3beb13"
     },
     {
       "path": "papers/2026_PriorCognitiveArt/metadata.json",
@@ -15781,7 +15776,7 @@
     {
       "path": "papers/2026_RealizingEmptiness/index.html",
       "bytes": 11722,
-      "sha256": "d124c301200dfc3844dd25934eb7eec0ae53fdd765c51fc0dda5f39a7c42dedd"
+      "sha256": "f0b64ec4de13bcafc148c2cc8f0e4bbfae1084508d45146f03ed38fe6a0cd792"
     },
     {
       "path": "papers/2026_RealizingEmptiness/metadata.json",
@@ -15836,7 +15831,7 @@
     {
       "path": "papers/2026_RecoveringLLMPersona/index.html",
       "bytes": 11414,
-      "sha256": "3498e41f4f75648e6e25495a5ba1fdbef0749b11d4818a30878475f0056286ba"
+      "sha256": "5e433640b9b805b01f8d2a46665057f189d3ad566130d1b61d742b1cf760f884"
     },
     {
       "path": "papers/2026_RecoveringLLMPersona/metadata.json",
@@ -15876,7 +15871,7 @@
     {
       "path": "papers/2026_RedactedReportTemplate/index.html",
       "bytes": 9366,
-      "sha256": "3d0c2d00d5e21a767870ff5dd7cb2e5818ccdcc3ad7750807d44480282826d16"
+      "sha256": "494db2dfbde273f87b7e39424eff56bc0d2b39d45c0f167bf5d9225ee7a7b971"
     },
     {
       "path": "papers/2026_RedactedReportTemplate/metadata.json",
@@ -15926,7 +15921,7 @@
     {
       "path": "papers/2026_RefinementGold/index.html",
       "bytes": 11373,
-      "sha256": "8e392cb92f2bcf27b3504d2abb890ad59039d07a6b0d2a5f104d3649fe0cf0d6"
+      "sha256": "25c4ee60e8d893ac03f992dbef1b296e5f6ad8792a09fbe5cb5fd47f5375bc11"
     },
     {
       "path": "papers/2026_RefinementGold/metadata.json",
@@ -15976,7 +15971,7 @@
     {
       "path": "papers/2026_RegisteredReportTemplate/index.html",
       "bytes": 10945,
-      "sha256": "6a8bfb841f3a0f74c66ec722ccd75042ed4b809d33a7a0814be86349ef9592e4"
+      "sha256": "df57e54e7b6154c41b631ab119a5c32b00861c4b8f0fc46ae70fb763d2a417c2"
     },
     {
       "path": "papers/2026_RegisteredReportTemplate/metadata.json",
@@ -16026,7 +16021,7 @@
     {
       "path": "papers/2026_ReproducibleLiteratureSynthesis/index.html",
       "bytes": 11771,
-      "sha256": "8076e2aa69641e5a453166883ebd9ba92ed891346117119644bf96a818d26a76"
+      "sha256": "9019af3d8eb7c1c6715c4d6db62264902570d0b5b05e7f9f378aeebefab35510"
     },
     {
       "path": "papers/2026_ReproducibleLiteratureSynthesis/metadata.json",
@@ -16071,7 +16066,7 @@
     {
       "path": "papers/2026_ReproducibleResearch/index.html",
       "bytes": 11045,
-      "sha256": "7fe4fef773d8820d9676154f782b4eca73610d5c9ff6c62a0c7498f47e57dbbb"
+      "sha256": "37723541b8d157f4d6bd9d84b8fbfebca5256b773444bcc5e25062441ff6db9c"
     },
     {
       "path": "papers/2026_ReproducibleResearch/metadata.json",
@@ -16116,7 +16111,7 @@
     {
       "path": "papers/2026_RobustBeliefSharing/index.html",
       "bytes": 9777,
-      "sha256": "d37952774b600d8fcc254b0ee19bfce2c662dd837dc2862e7a0c9fc0d5b981b5"
+      "sha256": "5d12c1cb22d38897c36a543d05247a6a1566d0573e0f26393e14cf9ead13d09c"
     },
     {
       "path": "papers/2026_RobustBeliefSharing/metadata.json",
@@ -16176,7 +16171,7 @@
     {
       "path": "papers/2026_SelfImprovementAgent/index.html",
       "bytes": 11005,
-      "sha256": "62aea44cd9261953aa256cfe7b1025eb809e0e8ffb2ad53e89ae5a107e2305f7"
+      "sha256": "e897b7a6c41cc2764343522c28cb9de270e48d147abe8da25a226f63038036d3"
     },
     {
       "path": "papers/2026_SelfImprovementAgent/metadata.json",
@@ -16226,7 +16221,7 @@
     {
       "path": "papers/2026_ShapeBetween/index.html",
       "bytes": 11286,
-      "sha256": "39ed4599eabc3ac4d82c289fabbf3caf90a06a37909d19c6d2be7d7f62a1d29a"
+      "sha256": "badf0cee6d5ceb1818b566a72e7ca7beb01e9a3b970bf12ffbe9168088f44216"
     },
     {
       "path": "papers/2026_ShapeBetween/metadata.json",
@@ -16266,7 +16261,7 @@
     {
       "path": "papers/2026_Skillarum/index.html",
       "bytes": 9847,
-      "sha256": "15433f5c4d4f406c9e530f1525619f3559d31f95a474036a39a2be0338a58e4a"
+      "sha256": "0c18bc1e1c31cf95065bba82a9f8638fcdc3b3b5fe2090c1c4a385726c15068a"
     },
     {
       "path": "papers/2026_Skillarum/metadata.json",
@@ -16316,7 +16311,7 @@
     {
       "path": "papers/2026_SortitionUpstreamNTQR/index.html",
       "bytes": 11245,
-      "sha256": "ab8fc83184793aab6472533fd90d050dba45fb01de905e17f615ba837c44bf12"
+      "sha256": "482bb00c154348c47589d981cb75534ef5225bafda729c8e8a42009150e168a8"
     },
     {
       "path": "papers/2026_SortitionUpstreamNTQR/metadata.json",
@@ -16356,7 +16351,7 @@
     {
       "path": "papers/2026_SynthOBSFractiSynth/index.html",
       "bytes": 9464,
-      "sha256": "3f2b7ddfbe17fbf67c77792a8e366a93111f046302c9adb0e480fe69f0d377ea"
+      "sha256": "ccf1c90dda384b16c728fbda6b7c236b01be97342aad34c918060c1bfd73f6db"
     },
     {
       "path": "papers/2026_SynthOBSFractiSynth/metadata.json",
@@ -16391,7 +16386,7 @@
     {
       "path": "papers/2026_THALIA/index.html",
       "bytes": 9295,
-      "sha256": "45165b7ff44fa52d1d3e95b2d73b866ed788e05eabc7e8b256069aacb658a54a"
+      "sha256": "3c2024ba8dc0089b16c2b9e23b14046ce903608209e0b5d4e8dd4c745e0acf28"
     },
     {
       "path": "papers/2026_THALIA/metadata.json",
@@ -16461,7 +16456,7 @@
     {
       "path": "papers/2026_TemplateApproachReproducible/index.html",
       "bytes": 12011,
-      "sha256": "f65cee35ea49db6645a886d791368c165952ab4dfa8646bdbe961b9ec2f9cbff"
+      "sha256": "c69f4010bf8e3e9523791e06f4d3d7f17b8c4fd73540de198675062ed7953821"
     },
     {
       "path": "papers/2026_TemplateApproachReproducible/metadata.json",
@@ -16516,7 +16511,7 @@
     {
       "path": "papers/2026_TemplateMadlib/index.html",
       "bytes": 11555,
-      "sha256": "d08f973486159be1ef0d7d3c52fe72935e889db0f7928736a31d0bd1ef592893"
+      "sha256": "12489b453855c3cbf0ee533d7e8d00fefcc65f040999f683f98cf6ac7c57f8a2"
     },
     {
       "path": "papers/2026_TemplateMadlib/metadata.json",
@@ -16566,7 +16561,7 @@
     {
       "path": "papers/2026_TemplatePitchDeck/index.html",
       "bytes": 11808,
-      "sha256": "40224d3c77122379b5530b913702c60035b2da1325c8001805a5cc70df14a00d"
+      "sha256": "966f507c18e39295cf5f6a2db46db5254b45295c822c49adc281059caeb2fbeb"
     },
     {
       "path": "papers/2026_TemplatePitchDeck/metadata.json",
@@ -16636,7 +16631,7 @@
     {
       "path": "papers/2026_TemplateTextbook/index.html",
       "bytes": 11180,
-      "sha256": "542296d7503cc4b93bc16be7522ba2e13dca5d3bf39d0ed9359a845732149339"
+      "sha256": "8bec87457dad66d8e409f6a5dfa4e74cf2737755439e3944e9c8e2556b263b7c"
     },
     {
       "path": "papers/2026_TemplateTextbook/metadata.json",
@@ -16691,7 +16686,7 @@
     {
       "path": "papers/2026_Triplicate/index.html",
       "bytes": 9641,
-      "sha256": "54a778d70b5663b1ae0d10387c4d08c0b08eb9f469a0a77740dd549cd7a62065"
+      "sha256": "d82c4ddd2456658dc8bbc196110311ff7391b93a26d56e35f036443ac67cbbf3"
     },
     {
       "path": "papers/2026_Triplicate/metadata.json",
@@ -16741,7 +16736,7 @@
     {
       "path": "papers/2026_WhenDoBugs/index.html",
       "bytes": 10947,
-      "sha256": "c73560ad02b8e31393f312bc26decb71cd47af51e3959e903f44af8bf6b194ae"
+      "sha256": "1994c2ea605bb6ffd431fd0ad91980a87759bcca66f1afec3883d9aeb276cbcc"
     },
     {
       "path": "papers/2026_WhenDoBugs/metadata.json",
@@ -16776,7 +16771,7 @@
     {
       "path": "papers/2026_WhiteLine/index.html",
       "bytes": 9226,
-      "sha256": "c9a008b5f60729eb5584aa2691a3cd06f2da1c84a1286becdfa8d2f270ed8412"
+      "sha256": "87d9c7bab5281705884e4ae76638947a4af25f409d0d3f9c0f78c4d52478743a"
     },
     {
       "path": "papers/2026_WhiteLine/metadata.json",
@@ -16816,7 +16811,7 @@
     {
       "path": "papers/2026_WitnessRegister/index.html",
       "bytes": 9344,
-      "sha256": "571abf5a2c5a092aa7fb37a7c6e71a04cae4839ddc756d728ab67b54fd3ad71e"
+      "sha256": "d0adf1ef67cb4c5361cfea8ac461e03d24c3eb9df1251dba4ba1e77f54c29547"
     },
     {
       "path": "papers/2026_WitnessRegister/metadata.json",
@@ -17396,7 +17391,7 @@
     {
       "path": "reproducibility.html",
       "bytes": 17399,
-      "sha256": "d9e1e0434818eecda4a8c062b3007a2c038dba3d132a425501f974cac233dcec"
+      "sha256": "efc0872d791165472f2ea68cefab95415f5ceb3a3bfa0f841715c9f224128fbb"
     },
     {
       "path": "research.html",
@@ -17516,7 +17511,7 @@
     {
       "path": "updates.html",
       "bytes": 117604,
-      "sha256": "d3ddcab6fc6f5a7e7618ac3345182ed7f2417e04082f44f6d3ddbeee3e90db61"
+      "sha256": "6c62270f0fda49f99da775e67c3e6eac1dba57f78f1def13d869057411a90084"
     },
     {
       "path": "uv.lock",
