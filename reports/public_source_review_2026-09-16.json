@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-09-16T03:07:31Z",
+      "generated_at": "2026-09-16T04:19:30Z",
       "path": "data/claims.json",
-      "sha256": "3f10f2e6e84c0a3daa9c3964740e7e82241da264899208875b3a2932b65cde3c",
+      "sha256": "524fdc33b8f3718a3d4b7d10c203587337bf3310f37bbbfab5a60a8047888478",
       "source_commit": null
     },
     "doi_role_review": {
@@ -3542,10 +3542,33 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "398c289cdd93d72ea284f772f6b3788049eaaf45",
-  "source_tree_sha": "ccfaeb9d8563d83bcdc1251f808c3e6b2181c0c4",
-  "source_worktree_clean": true,
-  "source_worktree_dirty_paths": [],
+  "source_commit": "797772cc5e62ffd3c93907b9fe5f09a48c274aac",
+  "source_tree_sha": "942817956e2f30ac5aa95c4270dc1eb3c7d59711",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "active-inference.html",
+    "catalog.html",
+    "cognitive-security.html",
+    "computational-entomology.html",
+    "data/reconciliation.json",
+    "domain-active-inference.html",
+    "domain-aii-ecosystem.html",
+    "domain-art-synergetics.html",
+    "domain-biomedicine.html",
+    "domain-cognitive-security.html",
+    "domain-computational.html",
+    "domain-entomology.html",
+    "domain-presentations-media.html",
+    "domains.html",
+    "evidence.html",
+    "exports.html",
+    "insect-cognition.html",
+    "neurosymbolic-ai.html",
+    "pages/EVIDENCE.md",
+    "reports/reconciliation_2026-09-16.md",
+    "reproducibility.html",
+    "updates.html"
+  ],
   "summary": {
     "applied": 174,
     "categories": {
