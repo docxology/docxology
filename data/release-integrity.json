@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-08-13T17:52:47+00:00",
-  "source_commit_at_generation": "de514a0dca569e35a614a74de27d03bd9b845e5b",
+  "source_commit_at_generation": "83a01ccd87b7e278ec5e0682bb4fb0b90d998d19",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -28,11 +28,11 @@
     "data/repository-classification.json": "ea9811aac2a233555340ab8dde7cb7ed8a5c6f20707cebed0bd21f2949d8d869",
     "data/agent-index.json": "0d14a95ee9378bd66780d9e930ed592dd61f2c30532e4f59edc90e1af2cada25",
     "data/generated-manifest.json": "8d44681e1dca777ab0a8af203381e94db4347d7e8f77f24dc1be5467f024b22e",
-    "data/pages-artifact-manifest.json": "8fd194ce4223b5910a5e74b37c8f1e4e3329556326262e01ed39c8e78ad0907c"
+    "data/pages-artifact-manifest.json": "3583ca42ab302f8d9a3be60b27cd1c29623074b1d2c4fa09473240b76b4f59a6"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "de514a0dca569e35a614a74de27d03bd9b845e5b",
+    "source_commit_at_generation": "83a01ccd87b7e278ec5e0682bb4fb0b90d998d19",
     "artifact_file_count": 4821,
     "artifact_bytes": 865726669,
     "omitted_paper_image_count": 8944,
@@ -40,7 +40,7 @@
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "de514a0dca569e35a614a74de27d03bd9b845e5b",
+    "candidate_source_commit": "83a01ccd87b7e278ec5e0682bb4fb0b90d998d19",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
