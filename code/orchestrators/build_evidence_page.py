@@ -19,7 +19,7 @@ HTML_OUT = REPO_ROOT / "evidence.html"
 MD_OUT = REPO_ROOT / "pages" / "EVIDENCE.md"
 
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
-from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
+from docxology_tools.build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
 from docxology_tools.site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Evidence", "evidence.html")]
@@ -237,7 +237,14 @@ def render_md(claims: list[dict]) -> str:
 
 def outputs() -> dict[Path, str]:
     claims = load_claims()
-    return {HTML_OUT: render_html(claims), MD_OUT: render_md(claims)}
+    # Stamp-reuse (HTML generated_at equivalent): keep the on-disk footer
+    # build stamp when it is the only difference, so non-rendering commits
+    # do not churn the page or the inputs it gates.
+    existing = HTML_OUT.read_text(encoding="utf-8") if HTML_OUT.exists() else None
+    return {
+        HTML_OUT: reuse_on_disk_stamp(render_html(claims), existing),
+        MD_OUT: render_md(claims),
+    }
 
 
 def main() -> None:

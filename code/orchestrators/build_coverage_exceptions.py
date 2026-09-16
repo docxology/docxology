@@ -16,7 +16,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
     sys.path.append(str(_DOCXOLOGY_SRC))
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-from docxology_tools.report_paths import latest_source_report  # noqa: E402
+from docxology_tools.report_paths import latest_source_report, stable_generated_at  # noqa: E402
 
 WORKS = REPO_ROOT / "data" / "works.json"
 OUT = REPO_ROOT / "data" / "coverage-exceptions.json"
@@ -97,17 +97,16 @@ def render_report(payload: dict) -> str:
 
 
 def preserve_timestamp_when_unchanged(payload: dict) -> dict:
-    """Avoid report churn when the coverage exception set is unchanged."""
-    if not OUT.exists():
-        return payload
-    try:
-        existing = json.loads(OUT.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return payload
-    current_body = {key: value for key, value in payload.items() if key != "generated_at"}
-    existing_body = {key: value for key, value in existing.items() if key != "generated_at"}
-    if current_body == existing_body and existing.get("generated_at"):
-        payload["generated_at"] = existing["generated_at"]
+    """Avoid report churn when the coverage exception set is unchanged.
+
+    ``stable_generated_at`` returns the on-disk timestamp only when the payload
+    body (everything except ``generated_at``) matches the existing file; a
+    missing or unreadable file yields None, which keeps the freshly stamped
+    payload so a corrupt record cannot suppress a regeneration.
+    """
+    stable = stable_generated_at(OUT, payload)
+    if stable:
+        payload["generated_at"] = stable
     return payload
 
 
