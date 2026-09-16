@@ -474,6 +474,22 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
   capture-then-amend flow. The complete evidence set for the current
   deployment IS committed (all families bound and green); the attestation
   receipt awaits that decision.
+- DOC-002 attestation resolution (2026-09-16, code-verified): resolved by
+  content-lineage bindings for tool-generated receipts, not the
+  capture-then-amend flow. `code/src/release_evidence.py:106`
+  (`is_ephemeral_release_evidence_path`) classifies dated tool receipts, and
+  the new `receipt_binds_expected_commit` (:686, via `_git_is_ancestor` at
+  :655 and `git merge-base --is-ancestor`) accepts the exact-commit binding
+  or, for those receipts only, byte-identical content + same-UTC-day capture
+  + a Git ancestor `source_commit`; `_validate_report` (:550, tree fallback at
+  :612-624) relaxes `source_tree_sha` to the receipt's own capture commit's
+  tree, and the review provenance check follows the accepted snapshot binding.
+  `code/orchestrators/attest_release.py --apply/--check` default to that mode
+  and offer `--strict-bindings` for exact-SHA everywhere;
+  `validate_repo.py --release` and `settle.py --tier release` keep strict
+  bindings, and hand-authored paths are never relaxed. The terminal finding
+  above stays as the rationale: a receipt can never bind the commit that
+  lands it, so the binding follows content instead.
 
 ### DOC-014 — Stage the Python package migration after a green release
 

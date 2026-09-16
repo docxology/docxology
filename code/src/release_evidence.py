@@ -4,6 +4,14 @@ Normal repository validation is deliberately offline and may inspect cached
 evidence.  A release is stricter: each required report must be recent, record
 the exact source revision it exercised, and be bound to a post-deploy
 attestation for that same revision.
+
+Report-to-release binding has two modes.  ``strict`` — the default for
+``validate_repo.py --release`` and ``settle.py --tier release`` — demands the
+exact release commit.  ``content-lineage`` — the ``attest_release.py``
+attestation layer — additionally accepts an ephemeral tool receipt captured at
+an ancestor commit when its bytes are unchanged, its capture is same-day, and
+its recorded commit is a Git ancestor of the release commit, because a
+receipt can never bind the later commit that lands it (DOC-002).
 """
 
 from __future__ import annotations
@@ -80,6 +88,11 @@ _BROWSER_REPORT_FILE = re.compile(
 _ATTESTATION_FILE = re.compile(r"^reports/deployment-attestations/[0-9a-f]{40}\.json$")
 ORCHESTRATORS_DIR = Path(__file__).resolve().parents[1] / "orchestrators"
 FUTURE_TIMESTAMP_TOLERANCE_SECONDS = 300
+
+# Report-to-release binding modes (see ``receipt_binds_expected_commit``).
+BINDING_MODE_STRICT = "strict"
+BINDING_MODE_CONTENT_LINEAGE = "content-lineage"
+_BINDING_MODES = frozenset({BINDING_MODE_STRICT, BINDING_MODE_CONTENT_LINEAGE})
 
 
 def _is_iso_date(value: str) -> bool:
@@ -542,6 +555,8 @@ def _validate_report(
     *,
     max_age_days: int,
     reference: datetime,
+    binding_mode: str = BINDING_MODE_STRICT,
+    context: datetime | None = None,
 ) -> tuple[EvidenceReceipt | None, list[str]]:
     """Validate one exact report path and return its immutable receipt."""
     safe_path, safe_error = _safe_repo_file(repo_root, path)
@@ -555,37 +570,69 @@ def _validate_report(
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         return None, [f"invalid {requirement.name} {path.relative_to(repo_root)}: {exc}"]
     errors: list[str] = []
+    relative = path.relative_to(repo_root).as_posix()
+    content_binding = (
+        binding_mode == BINDING_MODE_CONTENT_LINEAGE
+        and is_ephemeral_release_evidence_path(relative)
+    )
     age_seconds = (reference - generated).total_seconds()
     if age_seconds < -FUTURE_TIMESTAMP_TOLERANCE_SECONDS:
-        errors.append(f"{requirement.name} is dated in the future: {path.relative_to(repo_root)}")
+        errors.append(f"{requirement.name} is dated in the future: {relative}")
     elif age_seconds > max_age_days * 86400:
         age_days = age_seconds / 86400
         errors.append(
-            f"stale {requirement.name}: {path.relative_to(repo_root)} is {age_days:.1f} days old "
+            f"stale {requirement.name}: {relative} is {age_days:.1f} days old "
             f"(maximum {max_age_days})"
         )
     source_commit = str(payload.get("source_commit") or payload.get("source_commit_at_generation") or "").strip()
+    digest = sha256_file(path)
     if not source_commit:
-        errors.append(f"{requirement.name} lacks source_commit: {path.relative_to(repo_root)}")
-    elif source_commit != expected_commit:
+        errors.append(f"{requirement.name} lacks source_commit: {relative}")
+    elif not receipt_binds_expected_commit(
+        repo_root,
+        relative,
+        expected_commit=expected_commit,
+        source_commit=source_commit,
+        generated_at=str(payload.get("generated_at")),
+        context=context or reference,
+        binding_mode=binding_mode,
+        # The receipt is recorded from these exact bytes, so content identity
+        # holds by construction at capture time; the attestation layer re-checks
+        # it against the digest recorded in the attestation entry.
+        recorded_sha256=digest,
+        current_sha256=digest,
+    ):
         errors.append(
             f"{requirement.name} source_commit {source_commit} != release commit {expected_commit}: "
-            f"{path.relative_to(repo_root)}"
+            f"{relative}"
         )
     if payload.get("source_worktree_clean") is not True:
-        errors.append(f"{requirement.name} was not captured from a clean source worktree: {path.relative_to(repo_root)}")
+        errors.append(f"{requirement.name} was not captured from a clean source worktree: {relative}")
     tree = _git_tree_for_commit(repo_root, expected_commit)
+    if (
+        content_binding
+        and source_commit
+        and (tree is None or payload.get("source_tree_sha") != tree)
+    ):
+        # A receipt landed by a later commit records its own capture commit's
+        # tree; accept internal consistency with that capture commit instead of
+        # demanding the release commit's tree the receipt can never contain.
+        capture_tree = _git_tree_for_commit(repo_root, source_commit)
+        if capture_tree is not None and (
+            tree is None or payload.get("source_tree_sha") == capture_tree
+        ):
+            tree = capture_tree
     if tree is not None and payload.get("source_tree_sha") != tree:
-        errors.append(f"{requirement.name} source_tree_sha does not match the release commit: {path.relative_to(repo_root)}")
+        errors.append(f"{requirement.name} source_tree_sha does not match the release commit: {relative}")
     for error in _report_result_errors(requirement, payload, repo_root=repo_root, report_path=path):
         errors.append(f"{requirement.name} failed semantic validation: {error}")
     return (
         EvidenceReceipt(
             name=requirement.name,
-            path=path.relative_to(repo_root).as_posix(),
+            path=relative,
             generated_at=str(payload.get("generated_at")),
             source_commit=source_commit,
-            sha256=sha256_file(path),
+            sha256=digest,
         ),
         errors,
     )
@@ -605,21 +652,99 @@ def _git_tree_for_commit(repo_root: Path, commit: str) -> str | None:
     return result.stdout.strip() if result.returncode == 0 else None
 
 
+def _git_is_ancestor(repo_root: Path, candidate: str, descendant: str) -> bool | None:
+    """Return whether candidate is contained in descendant's Git history.
+
+    ``None`` means Git could not decide (for example an unknown commit); the
+    binding check treats that as no lineage proof rather than accepting.
+    """
+    import subprocess
+
+    result = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", candidate, descendant],
+        cwd=repo_root,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode == 0:
+        return True
+    if result.returncode == 1:
+        return False
+    return None
+
+
+def _same_calendar_day(generated_at: str, context: datetime) -> bool:
+    """Return whether the receipt's capture falls on the context's UTC day."""
+    try:
+        generated = _parse_timestamp(generated_at)
+    except ValueError:
+        return False
+    return generated.date() == context.astimezone(timezone.utc).date()
+
+
+def receipt_binds_expected_commit(
+    repo_root: Path,
+    path: str,
+    *,
+    expected_commit: str,
+    source_commit: str,
+    generated_at: str,
+    context: datetime,
+    binding_mode: str = BINDING_MODE_STRICT,
+    recorded_sha256: str | None = None,
+    current_sha256: str | None = None,
+) -> bool:
+    """Decide whether one receipt binds the expected release commit.
+
+    Exact equality always binds.  Under ``BINDING_MODE_CONTENT_LINEAGE`` a
+    receipt at an ephemeral release-evidence path additionally binds when all
+    three lineage conditions hold: the recorded digest is byte-identical to
+    the current file (``recorded_sha256 == current_sha256``), the capture is
+    on the same UTC calendar day as the attestation ``context``, and the
+    recorded ``source_commit`` is a Git ancestor of ``expected_commit``.
+    Hand-authored paths keep strict binding unconditionally: a receipt is
+    evidence for the commit it was captured at, and the commit landing it is
+    necessarily a descendant, so exact-SHA binding can never converge for
+    tool-generated receipts (DOC-002).
+    """
+    if binding_mode not in _BINDING_MODES:
+        raise ValueError(f"unknown report binding mode: {binding_mode}")
+    if not source_commit or not expected_commit:
+        return False
+    if source_commit == expected_commit:
+        return True
+    if binding_mode != BINDING_MODE_CONTENT_LINEAGE:
+        return False
+    if not is_ephemeral_release_evidence_path(path):
+        return False
+    if recorded_sha256 is None or current_sha256 is None or recorded_sha256 != current_sha256:
+        return False
+    if not _same_calendar_day(generated_at, context):
+        return False
+    return _git_is_ancestor(repo_root, source_commit, expected_commit) is True
+
+
 def collect_release_evidence(
     repo_root: Path,
     expected_commit: str,
     *,
     max_age_days: int,
     now: datetime | None = None,
+    binding_mode: str = BINDING_MODE_STRICT,
 ) -> tuple[list[EvidenceReceipt], list[str]]:
     """Collect recent reports and return validation errors without writing.
 
     Matching the source commit exactly is intentional.  A report made before a
     content edit is evidence for an earlier revision, not evidence for the
-    candidate being released.
+    candidate being released.  ``binding_mode`` relaxes that demand only as
+    ``receipt_binds_expected_commit`` allows it: repository validation keeps
+    the strict default while ``attest_release.py`` opts into content-lineage.
     """
     if max_age_days < 0:
         raise ValueError("max_age_days must be non-negative")
+    if binding_mode not in _BINDING_MODES:
+        raise ValueError(f"unknown report binding mode: {binding_mode}")
     reference = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
     receipts: list[EvidenceReceipt] = []
     errors: list[str] = []
@@ -635,12 +760,18 @@ def collect_release_evidence(
             expected_commit,
             max_age_days=max_age_days,
             reference=reference,
+            binding_mode=binding_mode,
+            context=reference,
         )
         errors.extend(report_errors)
         if receipt is not None:
             receipts.append(receipt)
     errors.extend(scholar_source_receipt_errors(repo_root))
-    errors.extend(_review_snapshot_binding_errors(repo_root, receipts, expected_commit))
+    errors.extend(
+        _review_snapshot_binding_errors(
+            repo_root, receipts, expected_commit, binding_mode=binding_mode
+        )
+    )
     return receipts, errors
 
 
@@ -659,7 +790,11 @@ def scholar_source_receipt_errors(repo_root: Path) -> list[str]:
 
 
 def _review_snapshot_binding_errors(
-    repo_root: Path, receipts: list[EvidenceReceipt], expected_commit: str
+    repo_root: Path,
+    receipts: list[EvidenceReceipt],
+    expected_commit: str,
+    *,
+    binding_mode: str = BINDING_MODE_STRICT,
 ) -> list[str]:
     """Ensure the review queue is about the exact refreshed snapshot attested."""
     by_name = {receipt.name: receipt for receipt in receipts}
@@ -680,7 +815,13 @@ def _review_snapshot_binding_errors(
         errors.append("public-source review does not reference the attested public-source snapshot")
     if provenance.get("sha256") != snapshot_receipt.sha256:
         errors.append("public-source review public-source snapshot hash does not match the attested snapshot")
-    if provenance.get("source_commit") != expected_commit:
+    if provenance.get("source_commit") != expected_commit and not (
+        binding_mode == BINDING_MODE_CONTENT_LINEAGE
+        and provenance.get("source_commit") == snapshot_receipt.source_commit
+    ):
+        # Under content-lineage the review must name exactly the snapshot
+        # receipt accepted for this release; the path and hash equality checks
+        # above already pin the review to those snapshot bytes.
         errors.append("public-source review public-source snapshot provenance is not bound to the release commit")
     return errors
 
@@ -743,8 +884,18 @@ def validate_attestation(
     *,
     max_age_days: int,
     now: datetime | None = None,
+    binding_mode: str = BINDING_MODE_STRICT,
 ) -> list[str]:
-    """Verify a stored attestation and all reports it content-addresses."""
+    """Verify a stored attestation and all reports it content-addresses.
+
+    ``binding_mode`` defaults to strict exact-commit binding for every
+    receipt.  ``attest_release.py`` passes ``BINDING_MODE_CONTENT_LINEAGE`` so
+    an ephemeral tool receipt may bind an ancestor commit when it is
+    byte-identical, same-day, and lineally related (see
+    ``receipt_binds_expected_commit``).
+    """
+    if binding_mode not in _BINDING_MODES:
+        raise ValueError(f"unknown report binding mode: {binding_mode}")
     errors: list[str] = []
     try:
         expected_path = deployment_attestation_path(repo_root, expected_commit)
@@ -805,6 +956,9 @@ def validate_attestation(
     if unknown:
         errors.append("deployment attestation has unknown evidence: " + ", ".join(unknown))
     reference = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
+    # Content-lineage freshness anchors to the attestation itself: a relaxed
+    # receipt must be captured on the same UTC calendar day it was attested.
+    binding_context = attested_at if attested_at is not None else reference
     attested_receipts: list[EvidenceReceipt] = []
     for requirement in RELEASE_EVIDENCE:
         entry = by_name.get(requirement.name)
@@ -832,9 +986,21 @@ def validate_attestation(
         if not matches_requirement_path(relative, requirement):
             errors.append(f"deployment attestation path does not match {requirement.name}: {relative}")
             continue
-        if entry.get("source_commit") != expected_commit:
+        file_sha = sha256_file(report_path)
+        recorded_sha = entry.get("sha256")
+        if entry.get("source_commit") != expected_commit and not receipt_binds_expected_commit(
+            repo_root,
+            relative,
+            expected_commit=expected_commit,
+            source_commit=str(entry.get("source_commit") or ""),
+            generated_at=str(entry.get("generated_at") or ""),
+            context=binding_context,
+            binding_mode=binding_mode,
+            recorded_sha256=recorded_sha if isinstance(recorded_sha, str) else None,
+            current_sha256=file_sha,
+        ):
             errors.append(f"attested {requirement.name} is not bound to release commit {expected_commit}")
-        if entry.get("sha256") != sha256_file(report_path):
+        if recorded_sha != file_sha:
             errors.append(f"attested {requirement.name} changed after attestation: {relative}")
         receipt, report_errors = _validate_report(
             requirement,
@@ -843,6 +1009,8 @@ def validate_attestation(
             expected_commit,
             max_age_days=max_age_days,
             reference=reference,
+            binding_mode=binding_mode,
+            context=binding_context,
         )
         errors.extend(report_errors)
         if receipt is None:
@@ -864,7 +1032,11 @@ def validate_attestation(
                         f"deployment attestation predates {requirement.name} evidence"
                     )
         attested_receipts.append(receipt)
-    errors.extend(_review_snapshot_binding_errors(repo_root, attested_receipts, expected_commit))
+    errors.extend(
+        _review_snapshot_binding_errors(
+            repo_root, attested_receipts, expected_commit, binding_mode=binding_mode
+        )
+    )
     errors.extend(scholar_source_receipt_errors(repo_root))
     live_receipt = next((item for item in attested_receipts if item.name == "live-site verification"), None)
     if live_receipt is not None:

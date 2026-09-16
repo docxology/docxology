@@ -4,6 +4,13 @@
 This tool never deploys.  Run it only after Pages and the live-site verifier
 have observed the candidate commit.  ``validate_repo.py --release`` consumes
 the receipt before any release-ready claim is made.
+
+Binding modes: by default the attestation layer binds hand-authored paths
+strictly while dated tool receipts may bind an ancestor commit when they are
+byte-identical, same-day, and lineally related
+(``receipt_binds_expected_commit``).  Pass ``--strict-bindings`` to demand the
+exact release commit everywhere; ``validate_repo.py --release`` keeps strict
+bindings regardless.
 """
 
 from __future__ import annotations
@@ -23,6 +30,8 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 from docxology_tools.release_evidence import (  # noqa: E402
+    BINDING_MODE_CONTENT_LINEAGE,
+    BINDING_MODE_STRICT,
     collect_release_evidence,
     deployment_attestation_path,
     live_deployment_errors,
@@ -65,7 +74,17 @@ def main() -> None:
     parser.add_argument("--commit", help="Deployment SHA to attest (default: HEAD)")
     parser.add_argument("--output", type=Path, help="Attestation path (default: reports/deployment-attestations/SHA.json)")
     parser.add_argument("--max-report-age-days", type=int, default=30)
+    parser.add_argument(
+        "--strict-bindings",
+        action="store_true",
+        help=(
+            "Require every evidence receipt to bind the attested commit exactly. "
+            "Default: dated tool receipts may bind an ancestor commit when "
+            "byte-identical, same-day, and an ancestor of the release commit."
+        ),
+    )
     args = parser.parse_args()
+    binding_mode = BINDING_MODE_STRICT if args.strict_bindings else BINDING_MODE_CONTENT_LINEAGE
 
     commit = resolve_commit(args.commit)
     if commit != head_commit():
@@ -81,7 +100,11 @@ def main() -> None:
     output = canonical_output
     if args.check:
         errors = validate_attestation(
-            REPO_ROOT, output, commit, max_age_days=args.max_report_age_days
+            REPO_ROOT,
+            output,
+            commit,
+            max_age_days=args.max_report_age_days,
+            binding_mode=binding_mode,
         )
         if errors:
             raise SystemExit("Release attestation validation failed:\n" + "\n".join(f"  - {error}" for error in errors))
@@ -89,7 +112,10 @@ def main() -> None:
         return
 
     receipts, errors = collect_release_evidence(
-        REPO_ROOT, commit, max_age_days=args.max_report_age_days
+        REPO_ROOT,
+        commit,
+        max_age_days=args.max_report_age_days,
+        binding_mode=binding_mode,
     )
     errors.extend(live_deployment_errors(REPO_ROOT, commit))
     if errors:

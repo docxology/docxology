@@ -181,10 +181,11 @@ parallel (6.4×, byte-identical modulo `generated_at`); the pairing scan
 122.1s full → 0.60s with `--cache-reports` (~200×; 464 pairs — actions and
 counts byte-equal, zero warnings, fingerprint hashes stable across the two
 runs). Regeneration contributes the smallest share: cold chain 48 steps in
-~1m52s; warm no-op rerun skips 7/7 gated steps and runs 41 in ~1m35s
-(byte-identical tree) — the network-side caches are the headline, not the
-skip savings. The full settle battery (~6 min) and CI (~4 min) are unchanged
-and never skippable.
+~1m52s; warm no-op rerun skipped 7/7 then-gated steps and ran the remaining
+41 in ~1m35s (byte-identical tree; measured while only 7 steps were gated —
+the gated set has since widened, so warm reruns now execute fewer steps) —
+the network-side caches are the headline, not the skip savings. The full
+settle battery (~6 min) and CI (~4 min) are unchanged and never skippable.
 
 What each cache buys:
 
@@ -208,14 +209,23 @@ What each cache buys:
   instead of two**. It fails closed on a non-pairing source report, a warned
   scan, or a stale report unless `--force`. With this flag the recipe no
   longer needs a separate uncatalogued-records network pass.
-- `regenerate_all.py` is input-gated: steps with declared inputs
-  (paper-documents, work-pages, video-pages, asset-audit-first/final,
-  accessibility-first/final) are **skipped when their input fingerprints are
-  unchanged** — state lives in the gitignored `reports/regeneration-state.json`,
-  a fingerprint is recorded only after a successful run, and unmatched
-  patterns / empty inputs never skip (failsafe). A warm no-op rerun skips all
-  7 gated steps (48 steps ran cold in ~1m52s; warm, 41 ran / 7 skipped in
-  ~1m35s with a byte-identical tree). `--force` restores always-run.
+- `regenerate_all.py` is input-gated: every plan step that declares source
+  inputs — 31 of the 48 steps (the 7 original audit/paper gates plus the 24
+  render steps gated in the 2026-09-16 pass; `regenerate_all.py --list`
+  prints each step's declared inputs) — is **skipped when its input
+  fingerprints are unchanged**. State lives in the gitignored
+  `reports/regeneration-state.json`, a fingerprint is recorded only after a
+  successful run, and unmatched patterns / empty inputs never skip
+  (failsafe). The 17 remaining steps are always-run by classification:
+  cross-pass cycle consumers (current-counts, repository-classification,
+  domain-pages read a projection rewritten later in the same pass), in-place
+  patchers whose read scope equals their write scope (scholar metrics,
+  citation CFF roles, site facts, SEO/security normalization, agent
+  navigation), git-state-driven outputs (sitemap lastmod, release-integrity
+  envelope), the whole-tree Pages projection, and renderers with no
+  repository-file inputs (pillar pages, redirect stubs, 404 page, generated
+  manifests). `--force` restores always-run, and `validate_repo.py` never
+  consults this state — the `--check` battery stays the authority.
 
 Do-not-skip list — the fast path shortens fetches and regeneration, never
 validation:
@@ -230,18 +240,24 @@ validation:
   commit dates) — see [Acceptance Checks](#acceptance-checks).
 - Receipt + rebind co-commit — a dated receipt committed without its binder
   rebind re-stales the binders.
-- Discovery-pointer re-render **after the payload commit** when the intake
-  created new dated reports: `latest_source_report()` resolves only
-  **git-tracked** receipts (clean-checkout determinism — a committed page
-  must never reference a receipt a clean checkout lacks), so
+- Discovery-pointer re-render when the intake created new dated reports:
+  `latest_source_report()` resolves only **git-tracked** receipts
+  (clean-checkout determinism — a committed page must never reference a
+  receipt a clean checkout lacks), and the write-mode skip fingerprints are
+  content-only, so they cannot see a receipt become tracked. The pointer
+  steps are in the plan (`sync_site_facts.py`, `build_search_index.py`,
+  `build_catalog.py`), but after the payload commit a plain plan run would
+  skip them (same input content, newly tracked receipt), leaving
   `discovery.html`, `pages/DISCOVERY.md`, `llms.txt`, and the search index
-  bind to the *previous* report until the new one is committed. Re-run
-  `sync_site_facts.py` and `build_search_index.py` after the payload commit
-  and land the pointer updates as a second payload commit before the binder
-  tail. Receipts created *before* the driver runs can be `git add`-ed first
-  (staged counts as tracked) so receipt + pointers land in one commit —
-  note this collapses the intended two-step acceptance cadence (evidence
-  lands, then a reviewed source update consumes it), so weigh it per lap.
+  bound to the *previous* report. Two flows: (a) `git add` the new receipts
+  *before* running the driver (staged counts as tracked) — the plan's
+  pointer steps then consume them in the same lap and receipt + pointers
+  land in one commit; this collapses the intended two-step acceptance
+  cadence (evidence lands, then a reviewed source update consumes it), so
+  weigh it per lap; or (b) after the payload commit, re-run
+  `sync_site_facts.py` and `build_search_index.py` directly (direct
+  invocation bypasses skip state) or `regenerate_all.py --force`, and land
+  the pointer updates as a second payload commit before the binder tail.
 
 And a `data/` intake still auto-raises the settle tier to `full`
 ([settle.md](settle.md)) — nothing here changes the landing battery.

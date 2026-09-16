@@ -8,7 +8,7 @@ gate cascade by hand* with a single driver whose exit code answers one
 question: is this work safe to push?
 
 ```bash
-python3 code/orchestrators/settle.py [--tier fast|full|release] [--dry-run] \
+python3 code/orchestrators/settle.py [--tier fast|routine|full|release] [--dry-run] \
   [--commit-message MSG] [--push] [--pr TITLE] [--skip-commit]
 ```
 
@@ -23,6 +23,7 @@ run stops at the first failure.
 | Tier | Battery (in order) | Measured cost |
 | --- | --- | --- |
 | `fast` | `build_sitemap.py --check`; `code/src/artifact_budget.py`; `ruff check code` | sitemap `--check` ~0.8s; budget gate is a single JSON read (near-instant); whole tier a few seconds |
+| `routine` | fast battery + `validate_repo.py` (standard); adds `pytest code/tests -q` only when a path under `code/src`, `code/orchestrators`, or `code/tests` is dirty vs HEAD | tens of seconds to minutes — `validate_repo.py` (standard) is the cost driver, exactly as in `full`; pytest joins only for dirty code/test paths |
 | `full` | fast battery + `pytest code/tests -q` + `validate_repo.py` (standard, no `--release`) | minutes — standard validation runs the full local generation-check battery |
 | `release` | full battery + `validate_repo.py --release --strict-reports` | minutes (adds release-evidence checks; see below) |
 
@@ -38,6 +39,26 @@ no-write battery, so settle's full tier covers them; the rendered-browser
 `browser-tests` CI job is a separate job settle does not mirror. A green settle
 `full` therefore predicts a green `validate` job up to drift-sensitive changes.
 
+`routine` is the deliberate lighter contract for day-to-day ops (paper
+updates, catalog fixes, release-pair intake): the fast floor plus standard
+validation. pytest joins only when a path under `code/src`,
+`code/orchestrators`, or `code/tests` is dirty vs HEAD — a data-only or
+docs-only settle never pays for the suite, and **a `data/` change does NOT
+auto-raise routine to `full`** (the auto-raise below applies to `fast`/`full`
+requests; routine is explicitly the lighter contract). What you give up vs
+`full`:
+
+1. **No binder rebind, no public-source-review re-render.** routine's
+   landing flow never invokes the binder chain (`build_pages_artifact.py
+   --write-manifest` → … → final `build_generated_manifest.py`) and never
+   demands the `build_public_source_review.py` exact re-render, so a landing
+   that adds dated receipts leaves the binder tail stale until the next full
+   pass rebinds it (see Notes). That is the point: routine landings are
+   chase-immune — settle never chases the binder cascade per push.
+2. **Weaker per-push guarantees.** without pytest (when code didn't change)
+   a red test can ride a routine push. The release gate is unaffected:
+   `--tier release` still extends the *full* battery, never routine's.
+
 Note on write-mode regeneration feeding the battery: `regenerate_all.py` now
 skips input-fingerprint-fresh gated steps (state in the gitignored
 `reports/regeneration-state.json`; `--force` restores always-run), while
@@ -49,10 +70,16 @@ skip never weakens the check that decides whether the tree is landable.
 `--tier` is a floor, not a switch. Every run first classifies the dirty paths
 (`git status --porcelain`, then `classify_paths` from
 `code/src/change_classifier.py`) and raises the tier when the paths demand it:
-`fast < full < release`. Nothing is ever refused — the driver prints a
-decision line such as
+`fast < routine < full < release`. Nothing is ever refused — the driver
+prints a decision line such as
 `tier decision: requested=fast path-derived=full -> effective=full` and runs
 the stronger battery.
+
+The one exception is `--tier routine`: it is **sticky**. Path-derived raises
+are ignored — *including* the `data/`-intake → `full` raise, which is why
+`data/` changes never drag a routine landing up to `full`. The decision line
+still reports what was ignored, so the lighter contract is visible, not
+silent: `tier decision: requested=routine path-derived=full -> effective=routine (routine is sticky: path-derived raises are ignored)`.
 
 Which tier to reach for:
 
@@ -61,14 +88,21 @@ Which tier to reach for:
    push/PR plan without executing anything.
 2. **Reports/docs-only edits** classify as `fast` — landing them with
    `--tier fast` runs the three cheap gates.
-3. **Data intake and generated surfaces** (`data/`, `works/`, `papers/`,
+3. **Routine ops** (paper updates, catalog fixes, release-pair intake) use
+   `--tier routine` — the lighter contract from the tier table: standard
+   validation without pytest (unless code/test paths are dirty) and without
+   the binder rebind or the public-source-review re-render. Choose it when
+   you accept the weaker per-push guarantees in exchange for a faster,
+   chase-immune landing; choose `full` when a change must be CI-equivalent.
+   `data/` intake under routine is **not** auto-raised to `full`.
+4. **Data intake and generated surfaces** (`data/`, `works/`, `papers/`,
    `pages/`, `feeds/`, sitemap) classify as `full` — any surface beyond
    reports/docs raises the tier, so an intake touching `data/` plus its dated
    reports lands at `full` even if you asked for `fast`.
-4. **Code changes under `code/`** classify as `full` — the classifier never
+5. **Code changes under `code/`** classify as `full` — the classifier never
    derives `release` from paths, so `release` is strictly opt-in via
    `--tier release`; treat `full` as the landing tier for ordinary code work.
-5. **Release confirmation** uses `--tier release`. The added
+6. **Release confirmation** uses `--tier release`. The added
    `validate_repo.py --release --strict-reports` refuses a dirty worktree
    (everything except `_site/` and ephemeral release evidence must be
    committed) and demands a deployment attestation for the candidate commit.
@@ -201,3 +235,13 @@ push/PR.
   Post-deploy: commit the live-site receipt *together with* its binder
   rebind — a receipt-only push re-stales the binders and turns main CI red
   until the rebind lands.
+- **Routine tier and the binder chain:** `--tier routine` deliberately skips
+  the land-then-confirm cycle above — no `build_pages_artifact.py
+  --write-manifest`, no binder re-render, and no
+  `build_public_source_review.py` exact re-render are part of its landing
+  flow. A routine landing that adds dated receipts therefore re-stales the
+  binders exactly like a receipt-only post-deploy push; rebind at the next
+  full pass (then confirm with `settle.py --tier full --skip-commit`) instead
+  of chasing the cascade per landing. The pytest gate is not part of that
+  trade: any dirty `code/src`/`code/orchestrators`/`code/tests` path adds the
+  suite to the routine battery automatically.

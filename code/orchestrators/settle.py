@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import subprocess
 import sys
+from collections.abc import Iterable
 from pathlib import Path
 
 # docxology_tools owns the canonical bootstrap; this locate makes the package importable.
@@ -22,7 +23,7 @@ from docxology_tools.change_classifier import Classification, classify_paths  # 
 # change_classifier.classify_paths.  The full tier runs the same four checks
 # as the validate job of .github/workflows/validate.yml (validate_repo.py,
 # pytest, ruff, artifact budget), so a green settle predicts a green CI.
-TIER_ORDER: dict[str, int] = {"fast": 0, "full": 1, "release": 2}
+TIER_ORDER: dict[str, int] = {"fast": 0, "routine": 1, "full": 2, "release": 3}
 DEFAULT_COMMIT_MESSAGE = "Settle pending payload changes"
 CONTROL_TAIL_SUFFIX = " (control tail)"
 
@@ -44,16 +45,21 @@ _FAST_STEPS: tuple[tuple[str, tuple[str, ...]], ...] = (
         ("uv", "run", "--group", "lint", "ruff", "check", "code"),
     ),
 )
-_FULL_STEPS = _FAST_STEPS + (
-    (
-        "pytest (code/tests)",
-        ("uv", "run", "--no-sync", "python3", "-m", "pytest", "code/tests", "-q"),
-    ),
-    (
-        "validate_repo (standard)",
-        ("uv", "run", "--no-sync", "python3", "code/orchestrators/validate_repo.py"),
-    ),
+_PYTEST_STEP = (
+    "pytest (code/tests)",
+    ("uv", "run", "--no-sync", "python3", "-m", "pytest", "code/tests", "-q"),
 )
+_VALIDATE_STANDARD_STEP = (
+    "validate_repo (standard)",
+    ("uv", "run", "--no-sync", "python3", "code/orchestrators/validate_repo.py"),
+)
+_FULL_STEPS = _FAST_STEPS + (_PYTEST_STEP, _VALIDATE_STANDARD_STEP)
+# Routine is the lighter contract: the fast floor plus standard validation —
+# no pytest (unless code/test paths are dirty vs HEAD, in which case the
+# battery is exactly full's), no binder-chain work, no release step.  data/
+# and other site changes never raise routine to full (see battery_for_tier).
+_ROUTINE_STEPS = _FAST_STEPS + (_VALIDATE_STANDARD_STEP,)
+_CODE_DIRTY_PREFIXES = ("code/src/", "code/orchestrators/", "code/tests/")
 
 
 def _release_step() -> tuple[str, tuple[str, ...]]:
@@ -89,8 +95,24 @@ def _release_step() -> tuple[str, tuple[str, ...]]:
     return ("validate_repo --release --strict-reports", tuple(command))
 
 
-def battery_for_tier(tier: str) -> tuple[tuple[str, tuple[str, ...]], ...]:
-    """Return the ordered battery for *tier*; release extends full."""
+def battery_for_tier(
+    tier: str, dirty: Iterable[str] | None = None
+) -> tuple[tuple[str, tuple[str, ...]], ...]:
+    """Return the ordered battery for *tier*; release extends full.
+
+    ``routine`` composes from the dirty-path set: the pytest step joins only
+    when a path under ``code/src``, ``code/orchestrators``, or ``code/tests``
+    is dirty vs HEAD (untracked files included), so a pure data/docs/report
+    settle skips the suite; data/ changes never raise routine to full.  The
+    code-dirty composition is full's battery (same ordering); passing
+    ``dirty=None`` for routine fails closed rather than guessing the set.
+    """
+    if tier == "routine":
+        if dirty is None:
+            raise ValueError("battery_for_tier('routine') requires the dirty-path set")
+        if any(path.startswith(_CODE_DIRTY_PREFIXES) for path in dirty):
+            return _FULL_STEPS
+        return _ROUTINE_STEPS
     if tier == "release":
         return _FULL_STEPS + (_release_step(),)
     return _FAST_STEPS if tier == "fast" else _FULL_STEPS
@@ -131,7 +153,8 @@ def parse_args() -> argparse.Namespace:
         "--tier",
         choices=sorted(TIER_ORDER),
         default="fast",
-        help="Minimum battery tier; dirty paths may raise it, never lower it (default: fast).",
+        help="Minimum battery tier; dirty paths may raise it, never lower it"
+        " (routine is sticky: never raised by dirty paths; default: fast).",
     )
     parser.add_argument(
         "--dry-run",
@@ -164,7 +187,14 @@ def parse_args() -> argparse.Namespace:
 
 
 def resolve_tier(requested: str, derived: frozenset[str]) -> str:
-    """Return the stronger of the requested tier and the path-derived tiers."""
+    """Return the stronger of the requested tier and the path-derived tiers.
+
+    ``routine`` is sticky: it is an explicitly requested lighter contract, so
+    path-derived raises (``data/`` and other site surfaces normally adding
+    ``full``) are ignored — the routine battery never becomes the full one.
+    """
+    if requested == "routine":
+        return "routine"
     known = [requested, *(tier for tier in derived if tier in TIER_ORDER)]
     return max(known, key=TIER_ORDER.__getitem__)
 
@@ -174,9 +204,9 @@ def _tail(text: str, limit: int = 20) -> str:
     return "\n".join(kept[-limit:]) or "(no output)"
 
 
-def run_battery(tier: str) -> bool:
+def run_battery(tier: str, dirty: Iterable[str]) -> bool:
     """Run the tier battery in order; stop at the first failure."""
-    steps = battery_for_tier(tier)
+    steps = battery_for_tier(tier, dirty)
     for index, (name, cmd) in enumerate(steps, start=1):
         print(f"[{index}/{len(steps)}] {name} ... ", end="", flush=True)
         result = subprocess.run(
@@ -263,9 +293,11 @@ def create_pr(title: str, tier: str, checks: int) -> bool:
     return True
 
 
-def print_plan(args: argparse.Namespace, classification: Classification, tier: str) -> None:
+def print_plan(
+    args: argparse.Namespace, classification: Classification, tier: str, dirty: Iterable[str]
+) -> None:
     """Print the settle plan without executing anything."""
-    steps = battery_for_tier(tier)
+    steps = battery_for_tier(tier, dirty)
     print(f"battery ({tier}, {len(steps)} checks, stop on first failure):")
     for index, (name, cmd) in enumerate(steps, start=1):
         print(f"  [{index}/{len(steps)}] {name}: {' '.join(cmd)}")
@@ -306,11 +338,17 @@ def main() -> None:
         print("left uncommitted (classified into neither commit phase): " + ", ".join(leftovers))
     tier = resolve_tier(args.tier, classification.tiers)
     derived = sorted(t for t in classification.tiers if t in TIER_ORDER)
-    print(f"tier decision: requested={args.tier} path-derived={'+'.join(derived) or 'none'} -> effective={tier}")
+    decision = (
+        f"tier decision: requested={args.tier} path-derived={'+'.join(derived) or 'none'}"
+        f" -> effective={tier}"
+    )
+    if args.tier == "routine" and derived:
+        decision += " (routine is sticky: path-derived raises are ignored)"
+    print(decision)
     if args.dry_run:
-        print_plan(args, classification, tier)
+        print_plan(args, classification, tier, paths)
         return
-    if not run_battery(tier):
+    if not run_battery(tier, paths):
         raise SystemExit(1)
     if args.skip_commit:
         print("commit chain skipped (--skip-commit)")
@@ -328,7 +366,7 @@ def main() -> None:
             print("control-tail commit skipped (no control paths)")
     if args.push and not push_head():
         raise SystemExit(1)
-    if args.pr and not create_pr(args.pr, tier, len(battery_for_tier(tier))):
+    if args.pr and not create_pr(args.pr, tier, len(battery_for_tier(tier, paths))):
         raise SystemExit(1)
 
 
