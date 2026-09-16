@@ -9,16 +9,13 @@ from __future__ import annotations
 
 import json
 import re
-import sys
 from dataclasses import asdict, dataclass
 from datetime import datetime
 from html import unescape
-from pathlib import Path
 from typing import Any, Iterable, Mapping
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from domain_inference import contains_term, infer_domain_emoji_for_pair as infer_domain  # noqa: E402, F401
-from report_paths import generated_timestamp  # noqa: E402
+from domain_inference import contains_term, infer_domain_emoji_for_pair as infer_domain  # noqa: F401
+from report_paths import generated_timestamp
 
 ORCID = "0000-0001-6232-9096"
 

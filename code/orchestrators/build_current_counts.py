@@ -10,19 +10,23 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 REPORT_PATH = REPO_ROOT / "reports" / "current_counts.md"
 JSON_PATH = REPO_ROOT / "data" / "current-counts.json"
 
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from count_consistency import (  # noqa: E402
+from docxology_tools.count_consistency import (  # noqa: E402
     DOMAIN_COUNTS,
     TYPE_LABELS,
     parse_bibliography_rows,
     parse_paper_folder_count,
     parse_software_catalog_counts,
 )
-from report_paths import latest_source_report  # noqa: E402
+from docxology_tools.report_paths import latest_source_report  # noqa: E402
 
 
 def _json(path: str) -> dict:

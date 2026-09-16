@@ -6,8 +6,12 @@ import tempfile
 import unittest
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
-import youtube_fetcher as yf
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
+from docxology_tools import youtube_fetcher as yf  # noqa: E402
 
 SAMPLE_JSONL_LINES = [
     json.dumps({

@@ -6,17 +6,11 @@ import functools
 import html as _html_mod
 import json
 import re
-import sys
 import urllib.parse
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-
-from build_sitemap import sitemap_locs  # noqa: E402
-from deploy_seo_security import EXCLUDED_HTML_PATH_PARTS  # noqa: E402
 # REDIRECT_STUBS is re-exported for gsc_followup_preflight, which reads the
 # stub list and the SEO invariants through this one module.
 from redirect_stubs import REDIRECT_STUBS, collect_redirect_errors  # noqa: E402,F401
@@ -141,6 +135,8 @@ def check_sitemap_policy(repo_root: Path) -> list[str]:
     errors: list[str] = []
     text = _read(repo_root / "sitemap.xml")
     actual = _SITEMAP_LOC.findall(text)
+    # Deferred import: breaks the seo_invariants -> orchestrators -> docxology_tools cycle.
+    from build_sitemap import sitemap_locs
     expected = sitemap_locs()
     if sorted(actual) != sorted(expected):
         missing = sorted(set(expected) - set(actual))
@@ -248,6 +244,8 @@ def check_canonical_integrity(repo_root: Path) -> list[str]:
     href_re = re.compile(r'<a\b[^>]*?href=["\x27]([^"\x27]+)["\x27]', re.I)
     canonical_by_rel: dict[str, str] = {}
     pages: list[Path] = []
+    # Deferred import: breaks the seo_invariants -> orchestrators -> docxology_tools cycle.
+    from deploy_seo_security import EXCLUDED_HTML_PATH_PARTS
     for path in sorted(repo_root.rglob("*.html")):
         if EXCLUDED_HTML_PATH_PARTS.intersection(path.parts):
             continue
@@ -311,6 +309,8 @@ def check_canonical_integrity(repo_root: Path) -> list[str]:
 def check_public_html_security(repo_root: Path) -> list[str]:
     """Check security metadata and crawler-visible JSON-LD across public HTML."""
     errors: list[str] = []
+    # Deferred import: breaks the seo_invariants -> orchestrators -> docxology_tools cycle.
+    from deploy_seo_security import EXCLUDED_HTML_PATH_PARTS
     for path in sorted(repo_root.rglob("*.html")):
         # The writer and the invariant checker must agree on what is public
         # HTML. In particular, a local browser/PDF optional dependency must

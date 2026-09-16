@@ -10,13 +10,14 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from urllib.parse import urlparse
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-try:
-    from report_paths import latest_report
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import latest_report
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.report_paths import latest_report  # noqa: E402
 
 
 def source_report() -> Path:

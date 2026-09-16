@@ -20,15 +20,16 @@ import json
 import sys
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SOURCE = REPO_ROOT / "data" / "artworks.json"
 OUTPUT = REPO_ROOT / "data" / "artworks-index.json"
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
-try:
-    from report_paths import generated_timestamp, stable_generated_at
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, stable_generated_at
+from docxology_tools.report_paths import generated_timestamp, stable_generated_at  # noqa: E402
 
 
 # Descriptions are intentionally omitted: the first keystroke in the search

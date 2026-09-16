@@ -5,13 +5,16 @@ import argparse
 from pathlib import Path
 import sys
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-SRC_DIR = REPO_ROOT / "code" / "src"
-sys.path.insert(0, str(SRC_DIR))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
-from build_stamp import footer_build_stamp_html  # noqa: E402
-from site_nav import (  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
+from docxology_tools.site_nav import (  # noqa: E402
     INTERACTIVE_SCRIPTS,
     MENU_ESC_SCRIPT,
     render_breadcrumb,
@@ -56,7 +59,7 @@ def render_page(
     terms: list[str],
 ) -> str:
     footer_stamp = footer_build_stamp_html()
-    from title_policy import clip_title  # noqa: PLC0415
+    from docxology_tools.title_policy import clip_title  # noqa: PLC0415
 
     # SERP title budget: <title>, og:title, twitter:title, and the JSON-LD
     # headline all render from this string, so it is clipped once here. The

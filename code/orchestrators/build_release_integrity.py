@@ -10,6 +10,11 @@ import subprocess
 import sys
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "data" / "release-integrity.json"
 DEPLOYMENT_COMPARE_EXCLUDES = (
@@ -20,8 +25,7 @@ DEPLOYMENT_COMPARE_EXCLUDES = (
     ":(exclude)data/release-integrity.json",
     ":(exclude)reports/**",
 )
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from public_integrity import scan_public_files  # noqa: E402
+from docxology_tools.public_integrity import scan_public_files  # noqa: E402
 
 # Keep the release envelope coupled to the same source-revision policy as the
 # Pages manifest.  A stale manifest must not be able to mint a fresh-looking

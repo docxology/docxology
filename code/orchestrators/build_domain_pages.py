@@ -11,11 +11,15 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
-from build_stamp import footer_build_stamp_html  # noqa: E402
-from site_nav import (  # noqa: E402
+from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
+from docxology_tools.site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
     INTERACTIVE_SCRIPTS,
@@ -26,7 +30,7 @@ from site_nav import (  # noqa: E402
     render_nav_domain,
     social_meta_tags,
 )
-from site_facts import generated_date, generated_month_year  # noqa: E402
+from docxology_tools.site_facts import generated_date, generated_month_year  # noqa: E402
 
 
 @dataclass(frozen=True)

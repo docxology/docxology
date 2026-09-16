@@ -9,14 +9,18 @@ import json
 import sys
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 HTML_OUT = REPO_ROOT / "evidence.html"
 MD_OUT = REPO_ROOT / "pages" / "EVIDENCE.md"
 
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
-from build_stamp import footer_build_stamp_html  # noqa: E402
-from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
+from docxology_tools.site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Evidence", "evidence.html")]
 
@@ -48,10 +52,7 @@ def _head_extra() -> str:
         f"{breadcrumb_jsonld_script(_BREADCRUMB)}\n"
     )
 
-try:
-    from report_paths import latest_source_report, rel, report_date_string
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import latest_source_report, rel, report_date_string
+from docxology_tools.report_paths import latest_source_report, rel, report_date_string  # noqa: E402
 
 
 def h(value: object) -> str:

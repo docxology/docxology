@@ -18,17 +18,21 @@ import re
 import sys
 from typing import Iterable
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from public_source_review import (  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.public_source_review import (  # noqa: E402
     build_review_report,
     render_json,
     render_markdown,
     validate_review_report,
 )
-from release_controls import source_payload_commit, source_tree_sha  # noqa: E402
-from report_paths import (  # noqa: E402
+from docxology_tools.release_controls import source_payload_commit, source_tree_sha  # noqa: E402
+from docxology_tools.report_paths import (  # noqa: E402
     control_tail_worktree_state,
     source_commit,
     source_worktree_state,

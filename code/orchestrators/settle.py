@@ -8,9 +8,13 @@ import subprocess
 import sys
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from change_classifier import Classification, classify_paths  # noqa: E402
+from docxology_tools.change_classifier import Classification, classify_paths  # noqa: E402
 
 # Replaces the manual sequence: payload commit, control-tail commit, then the
 # gate cascade by hand (docs/operations/settle.md).  Commits are split per the

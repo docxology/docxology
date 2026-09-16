@@ -22,15 +22,19 @@ import re
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from biblio_table import DEFAULT_BIB_PATH, BiblioRow, iter_bibliography_rows  # noqa: E402
-from bibliography_links import canonical_link_url  # noqa: E402
-from collection_jsonld import display_paths, replace_inline_collection_ld  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.biblio_table import DEFAULT_BIB_PATH, BiblioRow, iter_bibliography_rows  # noqa: E402
+from docxology_tools.bibliography_links import canonical_link_url  # noqa: E402
+from docxology_tools.collection_jsonld import display_paths, replace_inline_collection_ld  # noqa: E402
 from export_bibliography import row_to_work, source_paths  # noqa: E402
-from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
-from site_facts import generated_date, generated_month_year  # noqa: E402
+from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from docxology_tools.site_facts import generated_date, generated_month_year  # noqa: E402
 
 PUBLICATIONS_HTML = REPO_ROOT / "publications.html"
 PUBLICATIONS_LD_JSON = REPO_ROOT / "data" / "publications-ld.json"

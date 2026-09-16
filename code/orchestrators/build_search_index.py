@@ -8,8 +8,12 @@ import json
 import sys
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 OUT = REPO_ROOT / "search-index.json"
 
 # Split-index companions (search-index.json remains the complete, valid,
@@ -25,10 +29,7 @@ CONTENT_SEGMENT_TYPES = ("work", "video")
 def content_segment_path(item_type: str) -> Path:
     return REPO_ROOT / f"search-index-content-{item_type}.json"
 
-try:
-    from report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at
+from docxology_tools.report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at  # noqa: E402
 
 
 def _latest_url(pattern: str, _fallback: str) -> str:

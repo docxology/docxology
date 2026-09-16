@@ -36,26 +36,16 @@ import json
 import sys
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
-try:
-    from report_paths import (  # type: ignore[import]
-        dated_report_path,
-        generated_timestamp,
-        latest_report,
-        report_date_string,
-    )
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import (  # type: ignore[import]
-        dated_report_path,
-        generated_timestamp,
-        latest_report,
-        report_date_string,
-    )
+from docxology_tools.report_paths import dated_report_path, generated_timestamp, latest_report, report_date_string  # noqa: E402
 
-from publication_pairing import ZenodoRecord  # noqa: E402
+from docxology_tools.publication_pairing import ZenodoRecord  # noqa: E402
 from sync_paired_publications import (  # noqa: E402
     fetch_zenodo_records,
     parse_bibliography_rows,

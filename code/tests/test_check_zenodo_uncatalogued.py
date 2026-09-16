@@ -8,14 +8,14 @@ from pathlib import Path
 
 import pytest
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-SRC_DIR = REPO_ROOT / "code" / "src"
-ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
-sys.path.insert(0, str(SRC_DIR))
-sys.path.insert(0, str(ORCH_DIR))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from publication_pairing import ZenodoRecord  # noqa: E402
-from report_paths import generated_timestamp  # noqa: E402
+
+from docxology_tools.publication_pairing import ZenodoRecord  # noqa: E402
+from docxology_tools.report_paths import generated_timestamp  # noqa: E402
 from sync_paired_publications import zenodo_record_from_payload  # noqa: E402
 from check_zenodo_uncatalogued import (  # noqa: E402
     approved_version_specific_doi_exceptions,

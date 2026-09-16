@@ -9,20 +9,24 @@ import json
 import sys
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "exports.html"
 
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
-from build_stamp import footer_build_stamp_html  # noqa: E402
-from site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
+from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
+from docxology_tools.site_nav import BREADCRUMB_CSS, HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, breadcrumb_jsonld_script, render_breadcrumb  # noqa: E402
 
 _BREADCRUMB = [("Home", ""), ("Exports", "exports.html")]
 
 
 def _webpage_ld() -> dict:
     """WebPage JSON-LD with a data-derived (not hardcoded) dateModified."""
-    from report_paths import report_date_string  # noqa: PLC0415
+    from docxology_tools.report_paths import report_date_string  # noqa: PLC0415
 
     try:
         counts = json.loads((REPO_ROOT / "data" / "current-counts.json").read_text(encoding="utf-8"))

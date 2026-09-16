@@ -13,15 +13,16 @@ import urllib.request
 from pathlib import Path
 from typing import Any
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 ORCID = "0000-0001-6232-9096"
 USER_AGENT = "docxology-public-source-inventory/1.0 (+https://danielarifriedman.com/)"
 
-try:
-    from report_paths import latest_report, source_commit
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import latest_report, source_commit
+from docxology_tools.report_paths import latest_report, source_commit  # noqa: E402
 
 
 def latest_output_path(date: str | None = None) -> Path:
