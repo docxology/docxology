@@ -38,6 +38,46 @@
       "replacement_location": "git:512cf51ba6287d535aab0a70774ea2faad702259",
       "decision": "remove-from-checkout",
       "reviewed_by": "Dr. PAI (hermes session 20260827, NEW-4 Option C prune)"
+    },
+    {
+      "path": "reports/visual-qa/2026-08-26",
+      "generated_at": "2026-09-16T00:00:00Z",
+      "provenance_sha256": "d8a642c5b013a0b64bbec2898b093be3050f73c1",
+      "replacement_location": "git:8cde3797f97e454a115cb8fb6f996acf6f0cea85",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "omp Main agent (2026-09-16 retention review: superseded by the approved 2026-09-16 captures; git history retains the sets)"
+    },
+    {
+      "path": "reports/visual-qa/2026-09-11",
+      "generated_at": "2026-09-16T00:00:00Z",
+      "provenance_sha256": "1d4a361a9303cab363c2bb95c8bbe6ff3335370b",
+      "replacement_location": "git:8cde3797f97e454a115cb8fb6f996acf6f0cea85",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "omp Main agent (2026-09-16 retention review: superseded by the approved 2026-09-16 captures; git history retains the sets)"
+    },
+    {
+      "path": "reports/browser-smoke/2026-08-26",
+      "generated_at": "2026-09-16T00:00:00Z",
+      "provenance_sha256": "6923a51587bf34b1825e6972a53ac46ca3654909",
+      "replacement_location": "git:8cde3797f97e454a115cb8fb6f996acf6f0cea85",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "omp Main agent (2026-09-16 retention review: superseded by the approved 2026-09-16 captures; git history retains the sets)"
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-11",
+      "generated_at": "2026-09-16T00:00:00Z",
+      "provenance_sha256": "8b27c650b625dcb7e5446a76f3cdd7ec4c0028ce",
+      "replacement_location": "git:8cde3797f97e454a115cb8fb6f996acf6f0cea85",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "omp Main agent (2026-09-16 retention review: superseded by the approved 2026-09-16 captures; git history retains the sets)"
+    },
+    {
+      "path": "reports/browser-smoke/2026-09-15",
+      "generated_at": "2026-09-16T00:00:00Z",
+      "provenance_sha256": "f57ae3c8b661b2e426d5d07c4e47a4e554570666",
+      "replacement_location": "git:8cde3797f97e454a115cb8fb6f996acf6f0cea85",
+      "decision": "remove-from-checkout",
+      "reviewed_by": "omp Main agent (2026-09-16 retention review: superseded by the approved 2026-09-16 captures; git history retains the sets)"
     }
   ]
 }
