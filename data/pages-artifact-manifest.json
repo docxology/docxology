@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-16T03:34:52Z",
-  "source_commit_at_generation": "67922996664e49c05d2debbeadf521ac4e7a3006",
+  "generated_at": "2026-09-16T04:01:16Z",
+  "source_commit_at_generation": "398c289cdd93d72ea284f772f6b3788049eaaf45",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 922746880,
-    "source_bytes": 864875435,
+    "source_bytes": 865316346,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4821,
-    "artifact_bytes": 865726436
+    "artifact_file_count": 4824,
+    "artifact_bytes": 866167882
   },
   "included_files": [
     {
@@ -16885,8 +16885,8 @@
     },
     {
       "path": "reports/browser-qa/2026-09-16/manifest.json",
-      "bytes": 2210,
-      "sha256": "310b387d438964c711e9b596e89f444328133c002eb79fcfd9b73242ed4a53f9"
+      "bytes": 2209,
+      "sha256": "6faf0a61400e95551d9d814cff76614ca51778956c03225ecdbc6fcfcf1a7ad9"
     },
     {
       "path": "reports/browser-qa/AGENTS.md",
@@ -16915,8 +16915,8 @@
     },
     {
       "path": "reports/browser-smoke/2026-09-16/manifest.json",
-      "bytes": 6463,
-      "sha256": "b6119c6093f68f06b407700a44cee2274e1a34dc4a05f0606e3a56ab18a2828f"
+      "bytes": 6563,
+      "sha256": "55b86ae49b9268f5766f652a37e83442a829891a8e16df655de6972f7061485b"
     },
     {
       "path": "reports/browser-smoke/2026-09-16/publications.png",
@@ -16945,8 +16945,8 @@
     },
     {
       "path": "reports/browser-smoke/2026-09-16/videos.png",
-      "bytes": 167402,
-      "sha256": "1c962d733a4af637a56ea04afb9ff6be73f524a8129cc655254cd0e7676677e8"
+      "bytes": 167545,
+      "sha256": "f703b3d289355a48fdfab60215b2cbfb753e3d28e7a0576d80547ffa1cee8327"
     },
     {
       "path": "reports/browser-smoke/2026-09-16/works.png",
@@ -17009,6 +17009,11 @@
       "sha256": "fc4a73939611d0c3aa2f65ded22932fe8c708ad2d68595ad2306480336c78578"
     },
     {
+      "path": "reports/external_links_2026-09-16.json",
+      "bytes": 370872,
+      "sha256": "d045599c2fa716476de99aace9bf18d12140bd2a9611d081929f7dbfc6139fa5"
+    },
+    {
       "path": "reports/external_links_triage_2026-09-07.md",
       "bytes": 10743,
       "sha256": "da966b4e74ed6bb76e47593b0b959dbb88faf1a8447c7f8a4a9b789150fe7ee8"
@@ -17024,14 +17029,24 @@
       "sha256": "bf59ea833ea0ab83e9ce06c0ad39d0ba186adf135415b885a9137f62a3fce430"
     },
     {
+      "path": "reports/external_links_triage_2026-09-16.json",
+      "bytes": 59083,
+      "sha256": "8a6a9e41b861fda9ca4966a4af45d9edaf42951eb07af8f1f9d21bb7f3b29520"
+    },
+    {
+      "path": "reports/external_links_triage_2026-09-16.md",
+      "bytes": 10811,
+      "sha256": "2d8d51440201c4b7db7fe7cf4ba8369b91601d7e43cf520407b7cad8bfcf6a44"
+    },
+    {
       "path": "reports/gsc_preflight_2026-09-15.json",
       "bytes": 7299,
       "sha256": "050db19cfa2b3ffc0a17e5b5e472b07ea6b2d7ff17838547ac4030412f6410f0"
     },
     {
       "path": "reports/live_site_verification_2026-09-16.json",
-      "bytes": 15086,
-      "sha256": "fae5109c1546faa2d804356a963c81708812ee2bef58cca28ccec7b82f3decd6"
+      "bytes": 14981,
+      "sha256": "1b901da4abbc38a7c6d962a3b187b06289585371f957febe9eef6a967af19711"
     },
     {
       "path": "reports/paired_publications_2026-06-04.json",
@@ -17146,7 +17161,7 @@
     {
       "path": "reports/public_source_snapshot_2026-09-16.json",
       "bytes": 17951,
-      "sha256": "b3749a225ce075a0a464c37308784fc091b8a25f945493a1e5bb4d17136ff14a"
+      "sha256": "74bab28cadee45cd805a504e83eedbdc8462356e7fc3cd7af13e72ccf387ef7f"
     },
     {
       "path": "reports/publishing_status_megaindex.md",
@@ -17175,8 +17190,8 @@
     },
     {
       "path": "reports/visual-qa/2026-09-16/manifest.json",
-      "bytes": 7123,
-      "sha256": "abd6df30c7ad45cce3543ecfd8fbcfa1e3271efe36ba7114aec65af0159d8463"
+      "bytes": 7131,
+      "sha256": "0b03d75c85c49cfa2aa95368bec3126841cdcc9792d74f7054febf4a60434c4a"
     },
     {
       "path": "reports/visual-qa/AGENTS.md",
@@ -24150,7 +24165,7 @@
   },
   "omitted_visual_qa_screenshots": {
     "count": 78,
-    "bytes": 171193106,
+    "bytes": 172350686,
     "examples": [
       "reports/visual-qa/2026-08-26/art-desktop.png",
       "reports/visual-qa/2026-08-26/art-mobile.png",
