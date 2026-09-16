@@ -53,7 +53,7 @@ def test_env_overrides_reject_malformed_values(monkeypatch):
     monkeypatch.setenv("BUILD_SHA", "NOT A SHA; rm -rf /")
     monkeypatch.setenv("BUILD_DATE", "2026-01-02")
     sha, _ = build_stamp.build_stamp_info(REPO_ROOT)
-    assert sha != "NOT A SHA; rm -rf /"  # falls back to git HEAD
+    assert sha != "NOT A SHA; rm -rf /"  # falls back to the payload commit
 
 
 def test_generated_pages_carry_the_footer_stamp():

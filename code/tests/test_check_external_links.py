@@ -120,10 +120,10 @@ def test_cached_report_check_rejects_stale_redirect_scope_and_url_coverage():
 def test_footer_build_stamp_permalinks_are_out_of_scope():
     """A URL that changes on every regeneration cannot be a coverage contract.
 
-    The footer stamp links to the HEAD commit, so each regeneration introduced
-    one "missing" SHA and left the previous ones "unexpected" — the cached
-    report could never be current for more than one commit, and the gate that
-    depends on it was permanently red.
+    The footer stamp links to the payload-anchored commit, so each
+    regeneration introduced one "missing" SHA and left the previous ones
+    "unexpected" — the cached report could never be current for more than
+    one commit, and the gate that depends on it was permanently red.
     """
     text = (
         '<p class="build-stamp">'

@@ -91,13 +91,27 @@ payload SHA. The Pages check permits only that narrow tail and fails if any
 later commit changes published content while the manifest still names the old
 SHA.
 
-The dated pre-deploy public-source review follows the same control-tail policy:
-its default renderer records the last payload revision and tree so the report
-can be committed with other controls without becoming permanently stale. This
-is distinct from post-deploy evidence. Regenerate it with
-`build_public_source_review.py --exact-source-revision` in the clean deployed
-candidate checkout before attestation; only that mode can satisfy the release
-gate's exact deployed-SHA provenance requirement.
+The dated pre-deploy public-source review follows the same control-tail
+policy, with two explicit provenance modes: routine landings use the default
+payload-anchored mode (`release_controls.source_payload_commit`), whose report
+records the last payload revision and tree so it can be committed with other
+controls and re-checked without becoming permanently stale while control-only
+commits move `HEAD`; `--exact-source-revision` is the release-gate-only mode.
+Only the ordered release gate step 7 uses `--exact-source-revision`: run it
+with `build_public_source_review.py --exact-source-revision` in the clean
+deployed candidate checkout before attestation; only that mode can satisfy the
+release gate's exact deployed-SHA provenance requirement. The review-record
+chase that historically accompanied ordinary regeneration is therefore a
+release-gate-only phenomenon now: a routine re-render in payload-anchored
+mode never rewrites committed review history just because `HEAD` moved.
+
+The footer build stamp follows the same payload-anchored contract. Its short
+SHA comes from `release_controls.source_payload_commit` (not `HEAD`), so
+re-rendering pages in a clean worktree on top of a control-only tail produces
+byte-identical stamps naming the candidate SHA. `BUILD_SHA`/`BUILD_DATE` still
+override the stamp for release runs that must pin it explicitly, and
+`--exact-source-revision` does not change the stamp; it changes only the
+review record's own provenance fields.
 
 `data/release-integrity.json` is a pre-deploy envelope: it records source and
 generator hashes, the Pages artifact summary, CV privacy status, and the
