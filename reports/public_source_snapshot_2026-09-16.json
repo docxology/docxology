@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-16T03:48:07.353263+00:00",
-  "source_commit": "15df51a32f128a0b944d8ef19b47fa85b02f190f",
+  "generated_at": "2026-09-16T05:04:13.593540+00:00",
+  "source_commit": "ed8b3859943e2a09ab1a69e6950d24ea0436a596",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
-  "source_tree_sha": "7002fa71570a3a4ffa646667bddaa66e8ed04fb1",
+  "source_tree_sha": "20af9ad68b59c18567e7800a3acaf67d219b609f",
   "date": "2026-09-16",
   "note": "Public API freshness report only. Review before updating curated site claims.",
   "facts": {
@@ -187,7 +187,7 @@
       "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
       "stargazers_count": 31,
       "language": "Python",
-      "updated_at": "2026-09-16T03:17:34Z",
+      "updated_at": "2026-09-16T04:53:12Z",
       "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation"
     },
     "GitHub repo ActiveInferenceInstitute/fep_lean": {
@@ -484,7 +484,7 @@
         "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
         "stargazers_count": 31,
         "language": "Python",
-        "updated_at": "2026-09-16T03:17:34Z",
+        "updated_at": "2026-09-16T04:53:12Z",
         "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation"
       }
     },

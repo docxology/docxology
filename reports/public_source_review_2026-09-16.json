@@ -51,10 +51,10 @@
       "source_commit": null
     },
     "public_source_snapshot": {
-      "generated_at": "2026-09-16T03:48:07.353263+00:00",
+      "generated_at": "2026-09-16T05:04:13.593540+00:00",
       "path": "reports/public_source_snapshot_2026-09-16.json",
-      "sha256": "74bab28cadee45cd805a504e83eedbdc8462356e7fc3cd7af13e72ccf387ef7f",
-      "source_commit": "15df51a32f128a0b944d8ef19b47fa85b02f190f"
+      "sha256": "9189e90b4e92e925820792716aab7c67fb583f402ee9b34469483831a87603e6",
+      "source_commit": "ed8b3859943e2a09ab1a69e6950d24ea0436a596"
     },
     "repository_classification": {
       "generated_at": "2026-09-15T22:03:30Z",
@@ -1411,9 +1411,9 @@
           "html_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation",
           "language": "Python",
           "stargazers_count": 31,
-          "updated_at": "2026-09-16T03:17:34Z"
+          "updated_at": "2026-09-16T04:53:12Z"
         },
-        "current_sha256": "ba3ae1cfcf6adfbc493aaaafaa1beaf11b278aefe7a0c81e99e7310dba0684ab",
+        "current_sha256": "a8d4ef7e30ce36e823b6b9c4529f32c712f6310be883b73229404ca8e6dc4fe8",
         "label": "GitHub repo ActiveInferenceInstitute/GeneralizedNotationNotation",
         "previous": {
           "full_name": "ActiveInferenceInstitute/GeneralizedNotationNotation",
@@ -3522,7 +3522,7 @@
       "candidate": {
         "pairing_report_date": "2026-09-15",
         "pairing_report_generated_at": "2026-09-15T21:43:46Z",
-        "public_source_snapshot_generated_at": "2026-09-16T03:48:07.353263Z",
+        "public_source_snapshot_generated_at": "2026-09-16T05:04:13.593540Z",
         "refresh_note": "",
         "refresh_state": "stale",
         "warnings": []
