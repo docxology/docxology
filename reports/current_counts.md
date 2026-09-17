@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-09-17T23:23:56+00:00`
+Generated: `2026-09-17T23:49:56+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -24,8 +24,8 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - works_export: `data/works.json`
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
-- public_source_snapshot: `reports/public_source_snapshot_2026-09-16.json`
-- paired_publications: `reports/paired_publications_2026-09-15.json`
+- public_source_snapshot: `reports/public_source_snapshot_2026-09-17.json`
+- paired_publications: `reports/paired_publications_2026-09-17.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
@@ -91,22 +91,22 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Public Source Snapshot
 
-- GitHub user docxology: `216`
+- GitHub user docxology: `219`
 - GitHub user ActiveInferenceInstitute: `43`
 - ORCID work groups: `20`
 - PubMed exact author records: `8`
 - Europe PMC exact author records: `10`
 - Crossref ORCID DOI records: `15`
-- Zenodo exact-name creator records: `66`
-- Zenodo ORCID-linked records: `154`
+- Zenodo exact-name creator records: `67`
+- Zenodo ORCID-linked records: `155`
 
 ### Paired Publications
 
-- github_releases: `244`
-- zenodo_records: `157`
-- pairs: `462`
+- github_releases: `247`
+- zenodo_records: `158`
+- pairs: `464`
 - strong_pairs: `52`
-- already_reviewed: `412`
+- already_reviewed: `414`
 - needs_review: `0`
 - create_new: `0`
 - update_existing: `50`
