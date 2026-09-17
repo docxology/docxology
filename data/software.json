@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-16T16:25:19Z",
+  "generated_at": "2026-09-17T23:24:01Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 154,
+  "count": 155,
   "repositories": [
     {
       "name": "template",
@@ -285,7 +285,7 @@
       "url": "https://github.com/docxology/steganographer",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration",
+      "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 484 tests, GStreamer integration",
       "language": "Rust",
       "stars": 1,
       "updated_or_year": "2026-04",
@@ -1383,6 +1383,18 @@
       "updated_or_year": "2026-09",
       "paper_path": "",
       "zenodo_url": ""
+    },
+    {
+      "name": "daf-jev",
+      "url": "https://github.com/docxology/daf-jev",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Modular, composable Python client and decision toolkit for the TypeSafe Jev (System One) API — typed question primitives (noul/choice/score), concurrent batch evaluation, composition patterns, calibration statistics, CLI, and MCP server · Zenodo",
+      "language": "Python",
+      "stars": 2,
+      "updated_or_year": "2026-09",
+      "paper_path": "",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22816187"
     },
     {
       "name": "ActiveInferenceJournal",

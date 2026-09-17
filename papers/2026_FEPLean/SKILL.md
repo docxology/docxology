@@ -44,7 +44,7 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.19699233
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-09-15T16:21:49Z
+- Last checked: 2026-09-17T23:13:59Z
 - Artifact DOI: 10.5281/zenodo.22072956
 
 ## Prerequisites

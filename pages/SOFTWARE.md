@@ -14,7 +14,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 
 *Active Inference frameworks, cryptographic tools, computational biology, and AI infrastructure*
  
- *115 original repositories · 39 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
+ *116 original repositories · 39 catalogued Active Inference Institute contributions · [validated current totals](../reports/current_counts.md) · [Full generated repository inventory](../repositories.html)*
  
  *[All links](LINKS.md) · [Full profile](PROFILE.md)*
 
@@ -59,7 +59,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [AGEINT](https://github.com/docxology/AGEINT) | Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · [📄](../papers/2026_AGEINT/) · [Citation DOI](https://doi.org/10.5281/zenodo.20732274) | HTML | 1 | 2026-06 |
 | [template_autoscientists](https://github.com/docxology/template_autoscientists) | AutoScientists deterministic multi-agent scientific-discovery coordination harness · [📄](../papers/2026_DeterministicTestbedSelf/) · [Zenodo](https://doi.org/10.5281/zenodo.20533669) | Python | 1 | 2026-06 |
 | [ultralink-docx](https://github.com/docxology/ultralink-docx) | UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents | HTML | 1 | 2025-03 |
-| [steganographer](https://github.com/docxology/steganographer) | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration | Rust | 1 | 2026-04 |
+| [steganographer](https://github.com/docxology/steganographer) | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 484 tests, GStreamer integration | Rust | 1 | 2026-04 |
 | [template_newspaper](https://github.com/docxology/template_newspaper) | The Triplicate data-driven large-format newspaper layout engine · [📄](../papers/2026_Triplicate/) · [Zenodo](https://doi.org/10.5281/zenodo.20533675) | Python | 0 | 2026-06 |
 | [ntqr_llm](https://github.com/docxology/ntqr_llm) | Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · [📄](../papers/2026_RecoveringLLMPersona/) · [Zenodo](https://doi.org/10.5281/zenodo.20498699) | Python | 0 | 2026-06 |
 | [itrace](https://github.com/docxology/itrace) | Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · [📄](../papers/2026_ITrace/) · [Citation DOI](https://doi.org/10.5281/zenodo.20614908) | Python | 0 | 2026-06 |
@@ -153,6 +153,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [dicklesworthstone_meta_operator](https://github.com/docxology/dicklesworthstone_meta_operator) | Meta-operator over the Dicklesworthstone GitHub corpus: clone, verify upstream sync, orchestrate, interpret, and dashboard the ~207-repo corpus | HTML | 0 | 2026-09 |
 | [Skillarum](https://github.com/docxology/Skillarum) | Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) · [📄](../papers/2026_Skillarum/) · [Zenodo](https://doi.org/10.5281/zenodo.22663906) | Python | 0 | 2026-09 |
 | [nockchain-migration](https://github.com/docxology/nockchain-migration) | Operator-gated wizard and tooling for migrating Nockchain wallets from legacy v0 notes to v1 P2PKH addresses (one-off functional tool, no paper) | Python | 0 | 2026-09 |
+| [daf-jev](https://github.com/docxology/daf-jev) | Modular, composable Python client and decision toolkit for the TypeSafe Jev (System One) API — typed question primitives (noul/choice/score), concurrent batch evaluation, composition patterns, calibration statistics, CLI, and MCP server · [Zenodo](https://doi.org/10.5281/zenodo.22816187) | Python | 2 | 2026-09 |
 
 ---
 
@@ -214,14 +215,14 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Entomology & Biology | 9 | `ento_linguistics`, `MetaInformAnt`, `ant_stack`, `ant-pheromone`, `cohereants`, `FORMINDEX`, `biol-1`, `biol-8`, `biology_textbook` |
 | Synergetics & Geometry | 6 | `QuadCraft`, `QuadMath`, `ivm-xyz`, `godel_ivm`, `symergetics`, `blake_jiang` |
 | Cognitive Security | 5 | `p3if`, `opentir`, `CogSecSkills`, `cognitive_integrity`, `agentic_os_security` |
-| Developer Tools | 26 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `SynthOBS`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake`, `thalia`, `bond`, `template_advanced_literature_review`, `BeeStack`, `docxplus`, `FractiSkills`, `dicklesworthstone_meta_operator`, `Skillarum`, `nockchain-migration` |
+| Developer Tools | 27 | `codomyrmex`, `template`, `template_autoscientists`, `template_newspaper`, `template_madlib`, `ntqr_llm`, `itrace`, `coasys`, `steganographer`, `SynthOBS`, `timeline_generator`, `qr_live_protocol`, `obsidian-construction-from-text`, `mdkv`, `ultralink-docx`, `infra-calc`, `snake`, `thalia`, `bond`, `template_advanced_literature_review`, `BeeStack`, `docxplus`, `FractiSkills`, `dicklesworthstone_meta_operator`, `Skillarum`, `nockchain-migration`, `daf-jev` |
 | Data & Policy | 5 | `hhs-opendata`, `crescent-city`, `grateful_data`, `crescent-city-intel`, `multi-time` |
 | Education | 6 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT` |
 | Other | 6 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP`, `math4wisdom-superhuman-docs-archive` |
 | Research Practice | 6 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register` |
-| **docxology subtotal** | **115** | |
+| **docxology subtotal** | **116** | |
 | AII Contributions (non-fork) | 39 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **154** | |
+| **Grand Total** | **155** | |
 
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; the AII GitHub account is a **User** account, not an Organization. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 

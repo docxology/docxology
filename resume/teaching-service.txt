@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-09-16T16:25:21Z
+Generated: 2026-09-17T23:24:02Z
 
-Current public metrics: 215 curated works; 154 catalogued software repositories (115 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 216 docxology + 43 AII public repositories (169 primary, 90 forks).
+Current public metrics: 215 curated works; 155 catalogued software repositories (116 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 219 docxology + 43 AII public repositories (170 primary, 92 forks).
 
 SUMMARY
 -------
@@ -190,7 +190,7 @@ SOFTWARE (14)
 -------------
 docxology/curriculum | HTML | https://github.com/docxology/curriculum | Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science
 docxology/AGEINT | HTML | https://github.com/docxology/AGEINT | Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · · Citation DOI | paper: papers/2026_AGEINT/ | zenodo: https://doi.org/10.5281/zenodo.20732274
-docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
+docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 484 tests, GStreamer integration
 docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript · · Zenodo | paper: papers/2026_CognitiveCaseDiagrams/ | zenodo: https://doi.org/10.5281/zenodo.19695259
 docxology/biol-1 | HTML | https://github.com/docxology/biol-1 | BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 docxology/biol-8 | HTML | https://github.com/docxology/biol-8 | BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content

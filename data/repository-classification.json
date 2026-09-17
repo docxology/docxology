@@ -1,20 +1,20 @@
 {
   "schema_version": "1.4",
-  "generated_at": "2026-09-15T22:03:30Z",
+  "generated_at": "2026-09-17T23:22:29Z",
   "source": "data/github-repositories.json",
   "acknowledged_exclusions_source": "data/repository-exclusions.json",
   "policy": "Complete GitHub inventory remains distinct from the curated software catalog; unknown primary repositories stay reviewable and are never auto-promoted. Repositories listed in data/repository-exclusions.json are deliberate not-catalog decisions (profile/website/test/mirror/duplicate or public forks) and are marked acknowledged only when their full_name and immutable github_id/github_node_id match the reviewed repository. Each row reports how its decision was reached in reviewed_by: principal means the principal reviewed that repository individually; standing_policy means an already-recorded principal decision was applied to a fork nobody reviewed one by one, and policy_source names that decision.",
   "summary": {
-    "total_inventory": 259,
-    "uncatalogued": 105,
-    "forks": 89,
+    "total_inventory": 262,
+    "uncatalogued": 107,
+    "forks": 91,
     "acknowledged_forks": 89,
     "primary_requires_review": 4,
     "acknowledged_excluded": 12,
     "archived": 4,
     "missing_description": 11,
-    "short_description": 17,
-    "substantive_description": 77
+    "short_description": 18,
+    "substantive_description": 78
   },
   "repositories": [
     {
@@ -591,6 +591,26 @@
       "reviewed_at": "2026-08-26"
     },
     {
+      "full_name": "docxology/delphi-epidata",
+      "github_id": 1373659785,
+      "github_node_id": "R_kgDOUeBiiQ",
+      "name": "delphi-epidata",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/delphi-epidata",
+      "fork": true,
+      "archived": false,
+      "private": false,
+      "description": "An open API for epidemiological data.",
+      "description_quality": "short",
+      "language": "",
+      "topics": [],
+      "recently_updated": true,
+      "relevance": "unknown",
+      "catalog_role": "not_curated",
+      "exclusion_reason": "fork_not_curated",
+      "review_status": "defer"
+    },
+    {
       "full_name": "docxology/dickens-arxiv24",
       "github_id": 1060436373,
       "github_node_id": "R_kgDOPzT5lQ",
@@ -725,6 +745,26 @@
       "acknowledged_reason": "fork_not_curated",
       "reviewed_by": "principal",
       "reviewed_at": "2026-08-26"
+    },
+    {
+      "full_name": "docxology/exploration-tooling",
+      "github_id": 1373700592,
+      "github_node_id": "R_kgDOUeEB8A",
+      "name": "exploration-tooling",
+      "owner": "docxology",
+      "html_url": "https://github.com/docxology/exploration-tooling",
+      "fork": true,
+      "archived": false,
+      "private": false,
+      "description": "tools for evaluating and exploring forecasters",
+      "description_quality": "substantive",
+      "language": "",
+      "topics": [],
+      "recently_updated": true,
+      "relevance": "unknown",
+      "catalog_role": "not_curated",
+      "exclusion_reason": "fork_not_curated",
+      "review_status": "defer"
     },
     {
       "full_name": "docxology/ExponentialFamily.jl",
