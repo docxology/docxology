@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T03:32:22Z",
+  "generated_at": "2026-09-18T05:01:31Z",
   "base_url": "https://danielarifriedman.com/",
   "expected_counts": {
     "works": 215,
@@ -20,29 +20,29 @@
     },
     "html_url": "https://danielarifriedman.com/",
     "deployment_run": {
-      "workflow_run_id": 35301979867,
-      "workflow_url": "https://github.com/docxology/docxology/actions/runs/35301979867",
-      "head_sha": "0febd8e0871d8a88174a40aae867e5681cf670ba",
+      "workflow_run_id": 35308780323,
+      "workflow_url": "https://github.com/docxology/docxology/actions/runs/35308780323",
+      "head_sha": "3a3194a6b3ea07448623cb9f9d83dd5d440b4133",
       "status": "completed",
       "conclusion": "success",
-      "created_at": "2026-09-18T03:07:04Z",
-      "updated_at": "2026-09-18T03:12:17Z"
+      "created_at": "2026-09-18T04:54:57Z",
+      "updated_at": "2026-09-18T05:01:08Z"
     }
   },
   "deployment": {
-    "workflow_run_id": 35301979867,
-    "workflow_url": "https://github.com/docxology/docxology/actions/runs/35301979867",
-    "head_sha": "0febd8e0871d8a88174a40aae867e5681cf670ba",
+    "workflow_run_id": 35308780323,
+    "workflow_url": "https://github.com/docxology/docxology/actions/runs/35308780323",
+    "head_sha": "3a3194a6b3ea07448623cb9f9d83dd5d440b4133",
     "status": "completed",
     "conclusion": "success",
-    "created_at": "2026-09-18T03:07:04Z",
-    "updated_at": "2026-09-18T03:12:17Z"
+    "created_at": "2026-09-18T04:54:57Z",
+    "updated_at": "2026-09-18T05:01:08Z"
   },
-  "source_commit": "0febd8e0871d8a88174a40aae867e5681cf670ba",
+  "source_commit": "3a3194a6b3ea07448623cb9f9d83dd5d440b4133",
   "source_dirty": false,
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
-  "source_tree_sha": "0e36a9b76362f316825203b89888d3166720e89e",
+  "source_tree_sha": "6d3348b126db0a5cc0a95a09b409c0aed2b8936b",
   "deployment_sha_mismatch": false,
   "deployment_pending_reason": "",
   "observed_counts": {
@@ -62,7 +62,7 @@
       "ok": true,
       "status": 200,
       "bytes": 42517,
-      "elapsed_ms": 244,
+      "elapsed_ms": 360,
       "markers": {
         "danielarifriedman.com": true,
         "publications": true,
@@ -72,12 +72,12 @@
       "json_checks": {},
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:56 GMT",
-        "etag": "\"6aacabfc-a615\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:56 GMT",
+        "etag": "\"6aacc588-a615\"",
         "cache-control": "max-age=600",
         "age": "0",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc10025-SJC"
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000104-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -92,7 +92,7 @@
       "ok": true,
       "status": 200,
       "bytes": 317426,
-      "elapsed_ms": 364,
+      "elapsed_ms": 306,
       "markers": {
         "Publications": true,
         "Research Works": true,
@@ -101,12 +101,12 @@
       "json_checks": {},
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:56 GMT",
-        "etag": "\"6aacabfc-4d7f2\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-4d7f2\"",
         "cache-control": "max-age=600",
         "age": "0",
         "x-cache": "MISS",
-        "x-served-by": "cache-sjc1000096-SJC"
+        "x-served-by": "cache-sjc10066-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -121,7 +121,7 @@
       "ok": true,
       "status": 200,
       "bytes": 214866,
-      "elapsed_ms": 277,
+      "elapsed_ms": 283,
       "markers": {
         "Software": true,
         "application/ld+json": true,
@@ -133,12 +133,12 @@
       "json_checks": {},
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:55 GMT",
-        "etag": "\"6aacabfb-34752\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-34752\"",
         "cache-control": "max-age=600",
         "age": "0",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc1000116-SJC"
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10080-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -151,7 +151,7 @@
       "ok": true,
       "status": 200,
       "bytes": 138000,
-      "elapsed_ms": 277,
+      "elapsed_ms": 268,
       "markers": {
         "\"@type\"": true,
         "\"mainEntity\"": true,
@@ -165,12 +165,12 @@
         "software_total": 155
       },
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:55 GMT",
-        "etag": "\"6aacabfb-21b10\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-21b10\"",
         "cache-control": "max-age=600",
         "age": "0",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc10053-SJC"
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000134-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -183,7 +183,7 @@
       "ok": true,
       "status": 200,
       "bytes": 10894,
-      "elapsed_ms": 205,
+      "elapsed_ms": 199,
       "markers": {
         "Search": true,
         "search-index.json": true,
@@ -192,12 +192,12 @@
       "json_checks": {},
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:56 GMT",
-        "etag": "\"6aacabfc-2a8e\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-2a8e\"",
         "cache-control": "max-age=600",
         "age": "0",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc10028-SJC"
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000139-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -210,7 +210,7 @@
       "ok": true,
       "status": 200,
       "bytes": 50173,
-      "elapsed_ms": 255,
+      "elapsed_ms": 234,
       "markers": {
         "Data Catalog": true,
         "\"@context\"": true,
@@ -220,12 +220,12 @@
       "json_checks": {},
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:56 GMT",
-        "etag": "\"6aacabfc-c3fd\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-c3fd\"",
         "cache-control": "max-age=600",
         "age": "0",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc10078-SJC"
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000102-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -238,7 +238,7 @@
       "ok": true,
       "status": 200,
       "bytes": 118505,
-      "elapsed_ms": 290,
+      "elapsed_ms": 252,
       "markers": {
         "Updates": true,
         "update-card": true,
@@ -247,12 +247,12 @@
       "json_checks": {},
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:56 GMT",
-        "etag": "\"6aacabfc-1cee9\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-1cee9\"",
         "cache-control": "max-age=600",
         "age": "0",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc10059-SJC"
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10083-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -265,7 +265,7 @@
       "ok": true,
       "status": 200,
       "bytes": 634,
-      "elapsed_ms": 189,
+      "elapsed_ms": 195,
       "markers": {
         "OpenSearchDescription": true,
         "search.html?q={searchTerms}": true
@@ -273,12 +273,12 @@
       "json_checks": {},
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:56 GMT",
-        "etag": "\"6aacabfc-27a\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-27a\"",
         "cache-control": "max-age=600",
         "age": "0",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc10022-SJC"
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000145-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -291,7 +291,7 @@
       "ok": true,
       "status": 200,
       "bytes": 241670,
-      "elapsed_ms": 323,
+      "elapsed_ms": 287,
       "markers": {
         "sitemap": true,
         "publications.html": true,
@@ -300,12 +300,12 @@
       "json_checks": {},
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:55 GMT",
-        "etag": "\"6aacabfb-3b006\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-3b006\"",
         "cache-control": "max-age=600",
         "age": "0",
         "x-cache": "MISS",
-        "x-served-by": "cache-sjc1000108-SJC"
+        "x-served-by": "cache-sjc1000133-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -318,7 +318,7 @@
       "ok": true,
       "status": 200,
       "bytes": 10544,
-      "elapsed_ms": 269,
+      "elapsed_ms": 195,
       "markers": {
         "Human search page": true,
         "Data catalog": true,
@@ -327,12 +327,12 @@
       "json_checks": {},
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:56 GMT",
-        "etag": "\"6aacabfc-2930\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:56 GMT",
+        "etag": "\"6aacc588-2930\"",
         "cache-control": "max-age=600",
         "age": "0",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc1000105-SJC"
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10076-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -345,7 +345,7 @@
       "ok": true,
       "status": 200,
       "bytes": 1641242,
-      "elapsed_ms": 590,
+      "elapsed_ms": 430,
       "markers": {
         "\"count\"": true,
         "\"items\"": true,
@@ -358,12 +358,12 @@
       },
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:55 GMT",
-        "etag": "\"6aacabfb-190b1a\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:56 GMT",
+        "etag": "\"6aacc588-190b1a\"",
         "cache-control": "max-age=600",
         "age": "0",
         "x-cache": "MISS",
-        "x-served-by": "cache-sjc10020-SJC"
+        "x-served-by": "cache-sjc1000088-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -376,7 +376,7 @@
       "ok": true,
       "status": 200,
       "bytes": 174043,
-      "elapsed_ms": 273,
+      "elapsed_ms": 306,
       "markers": {
         "\"works\"": true,
         "\"count\"": true
@@ -389,12 +389,12 @@
         "works": 215
       },
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:55 GMT",
-        "etag": "\"6aacabfb-2a7db\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-2a7db\"",
         "cache-control": "max-age=600",
         "age": "0",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc10044-SJC"
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000143-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -407,7 +407,7 @@
       "ok": true,
       "status": 200,
       "bytes": 197067,
-      "elapsed_ms": 275,
+      "elapsed_ms": 272,
       "markers": {
         "\"schema_version\"": true,
         "\"routes\"": true,
@@ -425,12 +425,12 @@
         "agent_works": 215
       },
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:55 GMT",
-        "etag": "\"6aacabfb-301cb\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-301cb\"",
         "cache-control": "max-age=600",
         "age": "0",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc1000120-SJC"
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10045-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -443,7 +443,7 @@
       "ok": true,
       "status": 200,
       "bytes": 31608,
-      "elapsed_ms": 284,
+      "elapsed_ms": 200,
       "markers": {
         "DataCatalog": true,
         "External Link Triage": true,
@@ -455,12 +455,12 @@
       },
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:55 GMT",
-        "etag": "\"6aacabfb-7b78\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-7b78\"",
         "cache-control": "max-age=600",
         "age": "0",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc10047-SJC"
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000096-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -473,7 +473,7 @@
       "ok": true,
       "status": 200,
       "bytes": 19384,
-      "elapsed_ms": 210,
+      "elapsed_ms": 199,
       "markers": {
         "# Generated Files": true,
         "Rebuild command": true,
@@ -482,12 +482,12 @@
       "json_checks": {},
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:56 GMT",
-        "etag": "\"6aacabfc-4bb8\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-4bb8\"",
         "cache-control": "max-age=600",
         "age": "0",
         "x-cache": "MISS",
-        "x-served-by": "cache-sjc10066-SJC"
+        "x-served-by": "cache-sjc10077-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -500,7 +500,7 @@
       "ok": true,
       "status": 200,
       "bytes": 623,
-      "elapsed_ms": 192,
+      "elapsed_ms": 284,
       "markers": {
         "Daniel Ari Friedman": true,
         "docxology": true
@@ -508,12 +508,12 @@
       "json_checks": {},
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:55 GMT",
-        "etag": "\"6aacabfb-26f\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-26f\"",
         "cache-control": "max-age=600",
         "age": "0",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc10021-SJC"
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000139-SJC"
       },
       "error": "",
       "local_exists": true,
@@ -526,7 +526,7 @@
       "ok": true,
       "status": 200,
       "bytes": 396,
-      "elapsed_ms": 195,
+      "elapsed_ms": 192,
       "markers": {
         "Contact:": true,
         "Policy:": true
@@ -534,12 +534,12 @@
       "json_checks": {},
       "observed_counts": {},
       "cache": {
-        "last-modified": "Fri, 18 Sep 2026 03:11:56 GMT",
-        "etag": "\"6aacabfc-18c\"",
+        "last-modified": "Fri, 18 Sep 2026 05:00:55 GMT",
+        "etag": "\"6aacc587-18c\"",
         "cache-control": "max-age=600",
         "age": "0",
-        "x-cache": "HIT",
-        "x-served-by": "cache-sjc1000123-SJC"
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000128-SJC"
       },
       "error": "",
       "local_exists": true,
