@@ -91,6 +91,22 @@ def tracked_paths() -> list[Path]:
     return paths
 
 
+def _is_git_ignored(token: str) -> bool:
+    """Return True when *token* is gitignored at the current REPO_ROOT.
+
+    Gitignored paths are never copied into the Pages projection by policy, so a
+    reference to one cannot be an omission the projection created. Exit codes:
+    0 = ignored, 1 = not ignored, 128 (no git repo) = not ignored (fail closed
+    to flagging, preserving the guard's behavior outside a repository).
+    """
+    result = subprocess.run(
+        ["git", "check-ignore", "-q", token],
+        cwd=REPO_ROOT,
+        capture_output=True,
+    )
+    return result.returncode == 0
+
+
 def _head_commit(repo_root: Path) -> str | None:
     """Return the current commit without treating an unresolved checkout as safe."""
     result = subprocess.run(
@@ -753,6 +769,10 @@ def dangling_report_references(output: Path) -> list[str]:
                 continue
             repo_target = REPO_ROOT / token
             if not (repo_target.is_file() or repo_target.is_dir()):
+                continue
+            if _is_git_ignored(token):
+                # Gitignored ephemera (e.g. a local regeneration-state file) is
+                # never projected; referencing it is not a shipped 404.
                 continue
             if is_visual_qa_screenshot(Path(token)):
                 continue

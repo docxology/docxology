@@ -213,8 +213,9 @@ What each cache buys:
   inputs — 31 of the 48 steps (the 7 original audit/paper gates plus the 24
   render steps gated in the 2026-09-16 pass; `regenerate_all.py --list`
   prints each step's declared inputs) — is **skipped when its input
-  fingerprints are unchanged**. State lives in the gitignored
-  `reports/regeneration-state.json`, a fingerprint is recorded only after a
+  fingerprints are unchanged**. State lives in a gitignored local `reports/`
+  state file named `regeneration-state.json` (never shipped to Pages); a
+  fingerprint is recorded only after a
   successful run, and unmatched patterns / empty inputs never skip
   (failsafe). The 17 remaining steps are always-run by classification:
   cross-pass cycle consumers (current-counts, repository-classification,

@@ -526,3 +526,30 @@ def test_dangling_report_reference_guard(tmp_path: Path, monkeypatch: pytest.Mon
         encoding="utf-8",
     )
     assert bpa.dangling_report_references(output) == []
+
+
+def test_dangling_report_reference_guard_skips_gitignored(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+    """A reference to a gitignored report path is not a shipped 404.
+
+    Gitignored ephemera (e.g. the local regeneration-state file) are never
+    copied into the projection by policy, so citing one in prose cannot be an
+    omission the projection created. check-ignore returning 128 (no repo)
+    still flags: outside a repository the guard fails closed.
+    """
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    subprocess.run(["git", "init", "-q", str(repo)], check=True)
+    (repo / ".gitignore").write_text("reports/regeneration-state.json\n", encoding="utf-8")
+    # A tracked-class report sibling stays flaggable when not copied.
+    (repo / "reports").mkdir()
+    (repo / "reports" / "asset_size_2026-09-10.json").write_text("{}", encoding="utf-8")
+
+    output = tmp_path / "_site"
+    (output / "pages").mkdir(parents=True)
+    (output / "pages" / "docs.html").write_text(
+        '<p>state in the gitignored <code>reports/regeneration-state.json</code></p>'
+        '<a href="reports/asset_size_2026-09-10.json">superseded</a>',
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(bpa, "REPO_ROOT", repo)
+    assert bpa.dangling_report_references(output) == ["reports/asset_size_2026-09-10.json"]

@@ -8,6 +8,13 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
+- Last reviewed: 2026-09-17 (intake + web + tools wave: DOC-014 landed —
+  61 orchestrators on the uniform docxology_tools thin-wrapper bootstrap,
+  CLI smokes + full suite green, see CHANGELOG 2026-09-17; DOC-005 queue
+  clean after daf-jev curation; DOC-006 evidence refreshed end-to-end with
+  464-pair scan at zero warnings; open-item ledger otherwise unchanged —
+  DOC-002/008/009/010/011/012/015 procedural, SEC-002 still explicitly
+  blocked on the managed profile)
 - Last reviewed: 2026-09-07 (reconciliation pass: verified every open item
   against live gates — classification queue, paired-publication report,
   Scholar snapshot, external-link report, asset/accessibility reports all
@@ -497,14 +504,6 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
   above stays as the rationale: a receipt can never bind the commit that
   lands it, so the binding follows content instead.
 
-### DOC-014 — Stage the Python package migration after a green release
-
-- Priority: P2
-- Owner: MAINTAINER
-- Trigger: a deployment-SHA-attested release has passed; do not combine with a release-integrity change
-- Deliverable: migrate ad-hoc `sys.path` imports into a `docxology_tools` package with thin, backwards-compatible CLI wrappers on a dedicated follow-up branch
-- Acceptance: every current CLI command remains callable, no runtime path mutation is required outside wrappers, full tests/validation/lint pass, and the migration has its own review and release evidence
-- Dependencies: DOC-002 release attestation, generator-plan coverage, Python packaging decision
 - Session note (2026-09-16, DOC-002 attestation): the post-deploy
   attestation cycle was exercised end-to-end and its binding model is now
   enumerated: (a) `attest_release.py --apply` requires every evidence
