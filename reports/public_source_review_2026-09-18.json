@@ -57,9 +57,9 @@
       "source_commit": "489df5a9248df6a97d8a9e46564bf0ac0fb58ec5"
     },
     "repository_classification": {
-      "generated_at": "2026-09-17T23:22:29Z",
+      "generated_at": "2026-09-18T01:17:40Z",
       "path": "data/repository-classification.json",
-      "sha256": "cc25249443bcb5b1bef0ea4b53348a3585faec339b97e27736a7a09a9634d9a5",
+      "sha256": "8148ae293653188550d03d32e1fe4c0ee07ec4fb1305f873d47bc878c143c528",
       "source_commit": null
     },
     "scholar_snapshot": {
@@ -2591,6 +2591,25 @@
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
+        "full_name": "docxology/delphi-epidata",
+        "html_url": "https://github.com/docxology/delphi-epidata",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/delphi-epidata",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
         "full_name": "docxology/dickens-arxiv24",
         "html_url": "https://github.com/docxology/dickens-arxiv24",
         "review_status": "acknowledged"
@@ -2654,6 +2673,25 @@
       },
       "category": "repository_classification",
       "id": "repository:docxology/eliza",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/exploration-tooling",
+        "html_url": "https://github.com/docxology/exploration-tooling",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/exploration-tooling",
       "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
       "sources": [
         "data/repository-classification.json"
@@ -3509,44 +3547,6 @@
       },
       "category": "repository_classification",
       "id": "repository:docxology/blue_line",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "fork_not_curated",
-        "fork": true,
-        "full_name": "docxology/delphi-epidata",
-        "html_url": "https://github.com/docxology/delphi-epidata",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/delphi-epidata",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "fork_not_curated",
-        "fork": true,
-        "full_name": "docxology/exploration-tooling",
-        "html_url": "https://github.com/docxology/exploration-tooling",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/exploration-tooling",
       "reason": "The repository remains outside the curated catalog pending a human classification decision.",
       "sources": [
         "data/repository-classification.json"
@@ -15687,12 +15687,12 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "49d6cc5c89ae32997e8eb240ee8cd7cd8f2f96a2",
-  "source_tree_sha": "81ad1d71539664fff806e45032665932183b3bc6",
+  "source_commit": "f537f407ca45000ecbf7a6dcf732739b13030129",
+  "source_tree_sha": "226fa92f80f5f51cb8e20e42100e6c436727dcf2",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
-    "applied": 270,
+    "applied": 272,
     "categories": {
       "ambiguous_doi_change": {
         "applied": 64,
@@ -15710,8 +15710,8 @@
         "rejected": 0
       },
       "repository_classification": {
-        "applied": 101,
-        "deferred": 6,
+        "applied": 103,
+        "deferred": 4,
         "rejected": 0
       },
       "scholar_metric_change": {
@@ -15725,7 +15725,7 @@
         "rejected": 318
       }
     },
-    "deferred": 63,
+    "deferred": 61,
     "items": 651,
     "rejected": 318,
     "review_required": true

@@ -2,14 +2,14 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `49d6cc5c89ae32997e8eb240ee8cd7cd8f2f96a2`
+Source commit: `f537f407ca45000ecbf7a6dcf732739b13030129`
 
 ## Disposition summary
 
 | Status | Items |
 |---|---:|
-| Applied | 270 |
-| Deferred | 63 |
+| Applied | 272 |
+| Deferred | 61 |
 | Rejected | 318 |
 
 | Category | Applied | Deferred | Rejected |
@@ -17,7 +17,7 @@ Source commit: `49d6cc5c89ae32997e8eb240ee8cd7cd8f2f96a2`
 | `ambiguous_doi_change` | 64 | 0 | 0 |
 | `biographical_claim_change` | 8 | 2 | 0 |
 | `public_source_observation` | 0 | 5 | 0 |
-| `repository_classification` | 101 | 6 | 0 |
+| `repository_classification` | 103 | 4 | 0 |
 | `scholar_metric_change` | 1 | 0 | 0 |
 | `zenodo_candidate` | 96 | 50 | 318 |
 
@@ -32,7 +32,7 @@ Source commit: `49d6cc5c89ae32997e8eb240ee8cd7cd8f2f96a2`
 - `public_source_inventory`: `reports/public_source_inventory_2026-09-17.json` (`46bde1b9217e4a130913ddbc42c20aa638c474e748386dc69949db5806f73427`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`cff826363c7ca0e66bf583ee039a27cf0bfebc05ef57fb3222a8d91f50f73714`)
 - `public_source_snapshot`: `reports/public_source_snapshot_2026-09-17.json` (`176acfcba72dd6955d81bf4c3357d963ff7283973283d4a2da0fce988ea4c7b3`)
-- `repository_classification`: `data/repository-classification.json` (`cc25249443bcb5b1bef0ea4b53348a3585faec339b97e27736a7a09a9634d9a5`)
+- `repository_classification`: `data/repository-classification.json` (`8148ae293653188550d03d32e1fe4c0ee07ec4fb1305f873d47bc878c143c528`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2`)
 - `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5`)
 
@@ -47,8 +47,6 @@ Source commit: `49d6cc5c89ae32997e8eb240ee8cd7cd8f2f96a2`
 - **`public_source_observation` — public-source-observation:Zenodo exact-name creator records**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`repository_classification` — repository:docxology/OmniLatticeTextbook**: The repository remains outside the curated catalog pending a human classification decision.
 - **`repository_classification` — repository:docxology/blue_line**: The repository remains outside the curated catalog pending a human classification decision.
-- **`repository_classification` — repository:docxology/delphi-epidata**: The repository remains outside the curated catalog pending a human classification decision.
-- **`repository_classification` — repository:docxology/exploration-tooling**: The repository remains outside the curated catalog pending a human classification decision.
 - **`repository_classification` — repository:docxology/green_line**: The repository remains outside the curated catalog pending a human classification decision.
 - **`repository_classification` — repository:docxology/silver_line**: The repository remains outside the curated catalog pending a human classification decision.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.19695259:https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0**: The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.
@@ -230,10 +228,12 @@ Source commit: `49d6cc5c89ae32997e8eb240ee8cd7cd8f2f96a2`
 - **`repository_classification` — repository:docxology/axiom**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/cogames**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/crescent_city**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
+- **`repository_classification` — repository:docxology/delphi-epidata**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/dickens-arxiv24**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/docxology**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/egs-trans-jspace-convergence**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/eliza**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
+- **`repository_classification` — repository:docxology/exploration-tooling**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/fact-graph**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/farmOS**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
 - **`repository_classification` — repository:docxology/flash-clifford**: A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.
