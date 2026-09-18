@@ -15687,15 +15687,13 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "b015043adb75ad4ed36d559e2d95e02d6025805a",
-  "source_tree_sha": "1e006b5538c74de8a950e6397b4e700e2aeee996",
+  "source_commit": "d3e688030244fc4d797845abc8e379363aee3bbc",
+  "source_tree_sha": "15a68b0c25275b71a48f214208a35cd14bfaca03",
   "source_worktree_clean": false,
   "source_worktree_dirty_paths": [
-    "data/gsc-followup-checklist.json",
     ".docxology/gate/config.json",
     ".docxology/gate/gate_report.json",
-    ".docxology/gate/history/adhoc-2026-09-17-04-40-17Z-asof.json",
-    "reports/gsc_preflight_2026-09-18.json"
+    ".docxology/gate/history/adhoc-2026-09-17-04-40-17Z-asof.json"
   ],
   "summary": {
     "applied": 272,
