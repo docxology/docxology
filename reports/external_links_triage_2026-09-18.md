@@ -3,18 +3,18 @@
 Scoped network-link triage for public-facing repository hubs.
 
 - Source report: `reports/external_links_2026-09-18.json`
-- Checked URLs: 832
-- OK: 689
-- Warnings: 143
+- Checked URLs: 833
+- OK: 778
+- Warnings: 55
 
 ## Categories
 
 | Category | Count | Meaning |
 | --- | ---: | --- |
-| `bot-protected-or-rate-limited` | 139 | Likely blocks automated checks; verify manually before replacing. |
+| `bot-protected-or-rate-limited` | 50 | Likely blocks automated checks; verify manually before replacing. |
 | `connection-failure` | 1 | Could not connect during this run. |
-| `ok` | 689 | Returned a 2xx/3xx response. |
-| `timeout` | 2 | Timed out under the bounded checker timeout. |
+| `ok` | 778 | Returned a 2xx/3xx response. |
+| `timeout` | 3 | Timed out under the bounded checker timeout. |
 | `upstream-transient` | 1 | Server-side outage or temporary upstream failure. |
 
 ## bot-protected-or-rate-limited
@@ -32,75 +32,45 @@ Scoped network-link triage for public-facing repository hubs.
 | 403 | <https://doi.org/10.1126/science.abg0904> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 403 | <https://doi.org/10.1146/annurev-neuro-070815-013927> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
 | 403 | <https://doi.org/10.3109/09553002.2016.1144941> | domain-biomedicine.html, domain-biomedicine.html, pages/BIBLIOGRAPHY.md |
-| 403 | <https://doi.org/10.3390/arts7030039> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 403 | <https://doi.org/10.3390/e25070964> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
-| 403 | <https://doi.org/10.3390/e26040303> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 403 | <https://doi.org/10.3390/e27050459> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.20419007> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.20420556> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.20450880> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.20450970> | pages/SOFTWARE.md, software.html, software.html |
-| 429 | <https://doi.org/10.5281/zenodo.20453879> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.20469500> | discovery.html, updates.html |
 | 429 | <https://doi.org/10.5281/zenodo.20482025> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.20482026> | pages/SOFTWARE.md, software.html, software.html |
-| 429 | <https://doi.org/10.5281/zenodo.20498699> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
 | 429 | <https://doi.org/10.5281/zenodo.20533125> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
 | 429 | <https://doi.org/10.5281/zenodo.20533669> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
 | 429 | <https://doi.org/10.5281/zenodo.20533675> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
-| 429 | <https://doi.org/10.5281/zenodo.20584820> | domain-computational.html, pages/DISCOVERY.md, pages/SOFTWARE.md |
-| 429 | <https://doi.org/10.5281/zenodo.20614908> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.20693216> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.20705350> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
-| 429 | <https://doi.org/10.5281/zenodo.20705351> | pages/SOFTWARE.md, software.html |
-| 429 | <https://doi.org/10.5281/zenodo.20732274> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.20732275> | README.md |
-| 429 | <https://doi.org/10.5281/zenodo.20747834> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.20749817> | pages/SOFTWARE.md, software.html |
-| 429 | <https://doi.org/10.5281/zenodo.20786638> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.20789899> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.20804585> | pages/SOFTWARE.md, software.html, software.html |
-| 429 | <https://doi.org/10.5281/zenodo.20834846> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.20931955> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.20931964> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.20976824> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.21047573> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.21083779> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.21086292> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.21086548> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.21137276> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.21176000> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.21227869> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, pages/SOFTWARE.md |
-| 429 | <https://doi.org/10.5281/zenodo.21281509> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
 | 429 | <https://doi.org/10.5281/zenodo.21298883> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.21298885> | domain-entomology.html, domain-entomology.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.21298888> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.21298890> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.21298892> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.21298894> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.21316510> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.21330636> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.21388456> | domain-art-synergetics.html, domain-art-synergetics.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.21418782> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.21419693> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.21513316> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.21695160> | README.md, domain-active-inference.html, domain-active-inference.html |
-| 429 | <https://doi.org/10.5281/zenodo.21750800> | README.md, domain-computational.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.21754235> | README.md, domain-cognitive-security.html, domain-cognitive-security.html |
-| 429 | <https://doi.org/10.5281/zenodo.21754237> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
 | 429 | <https://doi.org/10.5281/zenodo.21754239> | README.md, domain-cognitive-security.html, domain-cognitive-security.html |
-| 429 | <https://doi.org/10.5281/zenodo.21754241> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
 | 429 | <https://doi.org/10.5281/zenodo.21754243> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
-| 429 | <https://doi.org/10.5281/zenodo.21754245> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
 | 429 | <https://doi.org/10.5281/zenodo.21763244> | README.md, pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md |
-| 429 | <https://doi.org/10.5281/zenodo.21815704> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.21843592> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.21864003> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.21865643> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.21983948> | pages/BIBLIOGRAPHY.md, pages/SOFTWARE.md, publications.html |
-| 429 | <https://doi.org/10.5281/zenodo.22072956> | pages/SOFTWARE.md, software.html |
-| 429 | <https://doi.org/10.5281/zenodo.22134545> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.22134547> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.7400525> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.7400708> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.7400785> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.7401874> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.7449367> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.7514367> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.7626768> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.7803313> | domain-active-inference.html, domain-active-inference.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.7855581> | README.md, domain-presentations-media.html, domain-presentations-media.html |
+| 429 | <https://doi.org/10.5281/zenodo.8025956> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.8118155> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.8164666> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.8228934> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.8266280> | README.md, domain-aii-ecosystem.html, domain-aii-ecosystem.html |
+| 429 | <https://doi.org/10.5281/zenodo.8377987> | domain-presentations-media.html, domain-presentations-media.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.8415312> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 403 | <https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22> | discovery.html, domain-biomedicine.html, pages/DISCOVERY.md |
+| 402 | <https://github-profile-trophy.vercel.app/?username=docxology&theme=dark&no-frame=true&no-bg=true&margin-w=4> | README.md |
+| 403 | <https://medium.com/@curiocards/daniel-friedman-decentralized-beauty-nft-art-and-ants-7dc664b72534> | index.html, media.html, pages/LINKS.md |
+| 403 | <https://mitpress.mit.edu/9780262050951/fundamentals-of-active-inference/> | README.md, index.html, pages/PROFILE.md |
+| 403 | <https://philpeople.org/profiles/daniel-ari-friedman> | pages/LINKS.md |
+| 403 | <https://scholargps.com/scholars/96885945987887/daniel-ari-friedman> | pages/LINKS.md |
+| 403 | <https://sciprofiles.com/profile/447575> | pages/LINKS.md |
+| 999 | <https://www.linkedin.com/in/danielarifriedman> | pages/LINKS.md |
+| 403 | <https://www.researchgate.net/profile/Daniel-Friedman-2> | README.md, README.md, index.html |
+| 403 | <https://www.science.org/doi/10.1126/science.352.6288.886> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 403 | <https://www.science.org/doi/10.1126/science.abg0904> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
+| 403 | <https://www.udemy.com/course/communication-for-remote-teams/> | README.md, index.html, pages/BIBLIOGRAPHY.md |
+| 403 | <https://www.udemy.com/course/keybase-for-remote-teams/> | pages/BIBLIOGRAPHY.md, pages/LINKS.md, publications.html |
+| 429 | <https://www.worldcat.org/isbn/978-3-8365-9970-2> | publications.html, publications.html |
 
 ## connection-failure
 
@@ -112,6 +82,7 @@ Scoped network-link triage for public-facing repository hubs.
 
 | Status | URL | Sources |
 | ---: | --- | --- |
+| 0 | <https://grantome.com/grant/NSF/DBI-2010290> | pages/EVIDENCE.md, pages/EVIDENCE.md |
 | 0 | <https://www.christies.com/en/lot/lot-6337619> | README.md, art.html, media.html |
 | 0 | <https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd> | pages/EVIDENCE.md, pages/EVIDENCE.md |
 
