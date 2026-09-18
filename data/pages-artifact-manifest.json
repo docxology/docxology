@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-18T00:47:04Z",
-  "source_commit_at_generation": "3b86ef7c8b67e62b091685847bcfd2497da53247",
+  "generated_at": "2026-09-18T01:21:50Z",
+  "source_commit_at_generation": "f537f407ca45000ecbf7a6dcf732739b13030129",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 927989760,
-    "source_bytes": 906850653,
+    "source_bytes": 906852390,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 4864,
-    "artifact_bytes": 907709112
+    "artifact_bytes": 907710849
   },
   "included_files": [
     {
@@ -6215,8 +6215,8 @@
     },
     {
       "path": "code/tests/test_light_theme.py",
-      "bytes": 6862,
-      "sha256": "76b1eb1510e4a6102f1485da21715568c5290d8fa4adb956dbf15055e6d0e6e9"
+      "bytes": 6994,
+      "sha256": "98e1092c3473356ef7cd4e3047e7647863711678c40b9fc8c63fd0f61fe1e614"
     },
     {
       "path": "code/tests/test_lighthouse_budgets.py",
@@ -6620,13 +6620,13 @@
     },
     {
       "path": "data/repository-classification.json",
-      "bytes": 94529,
-      "sha256": "cc25249443bcb5b1bef0ea4b53348a3585faec339b97e27736a7a09a9634d9a5"
+      "bytes": 95037,
+      "sha256": "8148ae293653188550d03d32e1fe4c0ee07ec4fb1305f873d47bc878c143c528"
     },
     {
       "path": "data/repository-exclusions.json",
-      "bytes": 35937,
-      "sha256": "6aab86a48ce33b060768815f94905b2b7798bd3cab95eba7eac0fc1c4ea038c2"
+      "bytes": 36918,
+      "sha256": "c0c57406542cd0ad487eedf04f1ab0ef80dc192cb79cc6a0a9fd84675515a6ec"
     },
     {
       "path": "data/reproducibility.json",
@@ -17555,8 +17555,8 @@
     },
     {
       "path": "videos.html",
-      "bytes": 28538,
-      "sha256": "2dcd6679df68b66ab7f3156c84457516fb4e59268fa485923e44f9e53b718215"
+      "bytes": 28654,
+      "sha256": "90193bd0210e9600201eb88c650fc8bba9b8ee6a646e8b88a999563c8046a0a6"
     },
     {
       "path": "videos/AGENTS.md",
