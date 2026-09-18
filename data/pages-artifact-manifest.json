@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-18T04:20:32Z",
-  "source_commit_at_generation": "7cc4edbeaedc98479c96bee95be9941466cef739",
+  "generated_at": "2026-09-18T04:24:16Z",
+  "source_commit_at_generation": "353d2fa5ef49ab52a3829b70d228653d358b519a",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 927989760,
-    "source_bytes": 906652611,
+    "source_bytes": 906678333,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4865,
-    "artifact_bytes": 907511283
+    "artifact_file_count": 4869,
+    "artifact_bytes": 907537628
   },
   "included_files": [
     {
@@ -17379,6 +17379,11 @@
       "sha256": "47bea71b0316fdad40afa0f5e4d6cb7d6e54e7211208a376a6976e5fbd16c996"
     },
     {
+      "path": "reports/reconciliation_2026-09-18.md",
+      "bytes": 2032,
+      "sha256": "0d53004078aae512b86bb4247a24c572002a389d1ca88efbd134c14e03724549"
+    },
+    {
       "path": "reports/seo-discoverability-audit-2026-06-10.md",
       "bytes": 11430,
       "sha256": "50cc2ceafb7665a95737d04d941f8dbcf00ba049d28a780d858d6ba7a76b191b"
@@ -17390,6 +17395,16 @@
     },
     {
       "path": "reports/source_coverage_2026-09-16.md",
+      "bytes": 4876,
+      "sha256": "f29f9aa4fc0038c25a513ba671ada3858dc90375f7534c74c46ecdccf7b24aaf"
+    },
+    {
+      "path": "reports/source_coverage_2026-09-18.json",
+      "bytes": 18814,
+      "sha256": "94c6a7453fcb46876e385b6c531fdd1be598e3356e889ac79a49a032f60c7be4"
+    },
+    {
+      "path": "reports/source_coverage_2026-09-18.md",
       "bytes": 4876,
       "sha256": "f29f9aa4fc0038c25a513ba671ada3858dc90375f7534c74c46ecdccf7b24aaf"
     },
@@ -24323,6 +24338,10 @@
     },
     {
       "path": "reports/asset_size_2026-09-17.json",
+      "role": "public control metadata"
+    },
+    {
+      "path": "reports/asset_size_2026-09-18.json",
       "role": "public control metadata"
     },
     {
