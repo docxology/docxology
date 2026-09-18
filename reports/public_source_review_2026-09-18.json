@@ -15687,8 +15687,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "d3e688030244fc4d797845abc8e379363aee3bbc",
-  "source_tree_sha": "15a68b0c25275b71a48f214208a35cd14bfaca03",
+  "source_commit": "9341c79f0eb0846c785d9ecccada14ccc9df6083",
+  "source_tree_sha": "690ca66190675f4b94b9a7200198e2e54096ce91",
   "source_worktree_clean": false,
   "source_worktree_dirty_paths": [
     ".docxology/gate/config.json",
