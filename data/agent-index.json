@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "generated_at": "2026-09-18T03:52:16+00:00",
+  "generated_at": "2026-09-18T15:57:06+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -250,7 +250,7 @@
     },
     {
       "id": "paired-publications",
-      "path": "/reports/paired_publications_2026-09-17.json",
+      "path": "/reports/paired_publications_2026-09-18.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -974,7 +974,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-09-18T03:52:16+00:00",
+        "checked_at": "2026-09-18T15:57:06+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1151,12 +1151,12 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-09-18T03:52:16+00:00",
+      "generated_at": "2026-09-18T15:57:06+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
         "paired_publication_decisions": "data/paired-publication-decisions.json",
-        "paired_publications": "reports/paired_publications_2026-09-17.json",
+        "paired_publications": "reports/paired_publications_2026-09-18.json",
         "paper_folders": "papers/README.md",
         "public_source_snapshot": "reports/public_source_snapshot_2026-09-18.json",
         "software_catalog": "pages/SOFTWARE.md",
@@ -1175,11 +1175,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 927989760,
-        "source_bytes": 906652634,
+        "source_bytes": 911329856,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4865,
-        "artifact_bytes": 907511306
+        "artifact_file_count": 4866,
+        "artifact_bytes": 912188708
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5507,26 +5507,26 @@
   },
   "dataset_hashes": {
     "works": "0e2ed9102fc747fefb7744922e08639482246602b0f5d5542236b4ddab44e0dc",
-    "software": "93f7678323b294dc3241928e253ac40a765fa58cd61f259b82d1be14c18d5f3e",
+    "software": "b26086b9b094bdda500f4e9b5e639f650149dc15cc0fb230b19bbd64f17fb9bc",
     "repositories": "22d6ef7c7b3d3bc18c46c4920068c574042ddb74a6bb8d438627d551141af141",
     "artworks_index": "25adc127f1d2a46abd676ac37735a0bf6d2fbabea25992b609f203f24f78977c",
     "artworks": "0d94ef8c0344736379ff4bf10fc22d4aad42356094c87bcc65fbc41fb17117d3",
     "videos": "8933c9bd99d0730afe46b1e95b1da88bc8c605306781d9bb29b8b58c283a2d2f",
     "videos_index": "569cac7b49a6804bfc8f772f99305649e5621fb79fb45fa28d71ffeeef4ab3f5",
-    "search": "62b49eca75331f9738c0093e621a4767d6d019f9d1c71cbaa403bb003e8b73fa",
-    "claims": "65cb49d21eb5dccbe2455eeb40b90c5aa0b5bd2239968b6bae4a3350824d76bd",
+    "search": "40944386e79cf0efe5a4307c1e01f05cf4304c45b4af74f35471b2e25e07ab44",
+    "claims": "2a8a9b80a50f5a0f05503b9f54f56d4b02a97b47601823193fb76512c254f130",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "94c6a7453fcb46876e385b6c531fdd1be598e3356e889ac79a49a032f60c7be4",
     "repository_classification": "8148ae293653188550d03d32e1fe4c0ee07ec4fb1305f873d47bc878c143c528",
-    "people": "de549b267a5dd08ba2f7f556716c5231f22ce8308c83acc35cdf518432d79d79",
-    "organizations": "66fa63891c61f638e5c1484134ad122a3c17a0d4520be9b495443f0d758ab53d",
-    "resume": "21e99400dfcac5a23924eff82a55d1b961d46e075bbd6758e78fdd77f633abc8",
+    "people": "72e016a88aa3485a7b0adb0ab5a589b43f3828aa1a925f43480364905c17d2b9",
+    "organizations": "7b6b7103af2aed909cffb0fd3d71fa63a84ea3a97b960b902db7c09a7e8e3f9f",
+    "resume": "759534f5e6042d6719356935665e56a3be82e9755bdf99d72ddfe6e88ed2bd49",
     "work_enrichment": "f6b2d2bcaa5d4548a86f19088a72ee210bc064a99d847989e1d9058a4969b8ab",
     "catalog": "b51f88924f4a0affa057a993ec9281ff5f5a63ccc6605b226c23924f0e947ca7",
     "reconciliation": "95d45072c0932fb7e849601d90d4b85ccdd1ff89415cfe641e8a38e27af7d820",
     "reproducibility": "1e1455ab0165b652967ca08decc7dea6c1b1716ab065b15ad2016d4e63e4544e",
-    "generated_manifest": "21f7065d67bb70dbaa8787ee78d6851e09c9fc420d3ef695d9aa95f303feb81e",
-    "current_counts": "6e47be7b924aff7b1854f4950e76759084c93bfc37cbcfeb4305ce7e02ed7e14"
+    "generated_manifest": "1fca897f410af338b310dd5d82ff73fa875510bb73ad029d984b4e2e68f47824",
+    "current_counts": "884dd19cee829a5543f0d43f8d05a0cb99629b1337c2f419c85a06c437f76aa6"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -5547,7 +5547,7 @@
   },
   "verification_status": {
     "live_report": "/reports/live_site_verification_2026-09-18.json",
-    "generated_at": "2026-09-18T05:23:16Z",
+    "generated_at": "2026-09-18T05:32:10Z",
     "overall_ok": true,
     "passing": 17,
     "checked_urls": 17,

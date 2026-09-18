@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T04:15:56Z",
+  "generated_at": "2026-09-18T15:57:10Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "f94e567d6671c6278c975a54e540db8f2959143e1c41d49eb74a5785f1525268",
+      "sha256": "17dafd8b5827fbf9d919662bf577e69a1b9546299b3d9ab09a0786614ab2631a",
       "files": [
         {
           "path": "resume/source.json",
@@ -102,8 +102,8 @@
         },
         {
           "path": "data/software.json",
-          "bytes": 77105,
-          "sha256": "93f7678323b294dc3241928e253ac40a765fa58cd61f259b82d1be14c18d5f3e"
+          "bytes": 77154,
+          "sha256": "b26086b9b094bdda500f4e9b5e639f650149dc15cc0fb230b19bbd64f17fb9bc"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "65cb49d21eb5dccbe2455eeb40b90c5aa0b5bd2239968b6bae4a3350824d76bd"
+          "sha256": "2a8a9b80a50f5a0f05503b9f54f56d4b02a97b47601823193fb76512c254f130"
         },
         {
           "path": "data/github-repositories.json",
@@ -8185,12 +8185,12 @@
       "url": "https://github.com/docxology/EvoJump",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics",
+      "description": "Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2025-10",
       "paper_path": "papers/2025_EvoJump/",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22664675"
     },
     {
       "name": "flick",
@@ -9535,7 +9535,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-09-18T03:52:16+00:00",
+      "checked_at": "2026-09-18T15:57:06+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9550,7 +9550,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-09-18T03:52:16+00:00",
+      "checked_at": "2026-09-18T15:57:06+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

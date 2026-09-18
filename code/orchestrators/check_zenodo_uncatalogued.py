@@ -54,13 +54,19 @@ OUT = dated_report_path("zenodo_uncatalogued", "json")
 
 # Superseded Zenodo versions retained by the source registry but deliberately
 # not catalogued as new works. The current bibliography cites the replacement
-# concept/version for each. Keep this explicit so the freshness gate measures
+# concept/version for each; software-only and software-supplement records are
+# instead curated on pages/SOFTWARE.md (catalog row citing the concept DOI)
+# with no bibliography row. Keep this explicit so the freshness gate measures
 # actionable drift rather than known release-history records.
 KNOWN_STALE_RECORD_IDS = {
     "21418901",  # SynthOBS v1.618.0; current row cites concept 21418782
     "20804586",  # CogSecSkills v1; current row cites concept 21513316
     "19139090",  # Template/Reproducible duplicate of kept row #1
     "22666981",  # Software-only supplement to the CCD paper; paper row cites concept 10.5281/zenodo.19695259
+    "22817425",  # daf-jev software release archive; catalogued in SOFTWARE.md citing concept 10.5281/zenodo.22816187; no bibliography row (software-only record)
+    "22667290",  # EvoJump v0.5.2 canonical curated deposit per R80 (software-catalog acceptance); work represented by the software row and paper row #12 (concept 10.5281/zenodo.17229924)
+    "22667291",  # EvoJump v0.5.2 GitHub-Zenodo automated integration archive per R81 (superseded); kept record is 22667290
+    "22760881",  # CCD software revision archive v2.6.0 (supplement to paper row #112, concept 10.5281/zenodo.19695259); code catalogued as cognitive_case_diagrams — same class as 22666981
 }
 
 # These records are intentionally cited by their version DOI because each is

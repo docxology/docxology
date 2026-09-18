@@ -690,7 +690,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/EvoJump#software",
             "name": "EvoJump",
-            "description": "Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics",
+            "description": "Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · Zenodo",
             "codeRepository": "https://github.com/docxology/EvoJump",
             "author": {
                 "@type": "Person",
@@ -700,7 +700,8 @@
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-09-29T15:00:20Z",
             "dateModified": "2026-09-08T21:31:16Z",
-            "keywords": "bayesian, developmental-biology, evolutionary-biology, jump-diffusion, levy-process, ontogeny, ornstein-uhlenbeck, python, simulation, visualization"
+            "keywords": "bayesian, developmental-biology, evolutionary-biology, jump-diffusion, levy-process, ontogeny, ornstein-uhlenbeck, python, simulation, visualization",
+            "sameAs": "https://doi.org/10.5281/zenodo.22664675"
         },
         {
             "@type": "SoftwareSourceCode",

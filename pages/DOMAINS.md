@@ -226,7 +226,7 @@ Honey bee evolution, gene expression variation, nuclear structure, population ge
 **Selected repositories**
 
 - [MetaInformAnt](https://github.com/docxology/MetaInformAnt) — Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond
-- [EvoJump](https://github.com/docxology/EvoJump) — Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics
+- [EvoJump](https://github.com/docxology/EvoJump) — Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · Zenodo
 - [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI
 - [biol-8](https://github.com/docxology/biol-8) — BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 - [biol-1](https://github.com/docxology/biol-1) — BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content

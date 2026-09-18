@@ -2,6 +2,29 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+
+## 2026-09-18
+
+- **Zenodo intake hygiene:** the four software-only Zenodo deposits that kept
+  re-flagging the uncatalogued check are now registered in
+  `KNOWN_STALE_RECORD_IDS` with their curation dispositions — daf-jev release
+  archive 22817425 (SOFTWARE.md row cites concept 10.5281/zenodo.22816187),
+  EvoJump canonical curated deposit 22667290 per R80, EvoJump GitHub-Zenodo
+  automated integration archive 22667291 per R81 (superseded; kept record
+  22667290), and the CCD software revision archive v2.6.0 22760881 (supplement
+  to paper row #112; same class as 22666981). The freshness gate now reads
+  zero uncatalogued records on a fresh 464-pair scan (464 pairs, 0 new,
+  0 needs_review, 50 update_existing = the already-applied 2026-09-17 set).
+  The EvoJump software row carries its canonical concept DOI
+  (10.5281/zenodo.22664675) in `pages/SOFTWARE.md` and `data/software.json`,
+  matching the daf-jev curation format; software surfaces regenerated.
+- **Live-doc legacy sweep:** all 217 distinct `.py` references, ~50 CLI flags,
+  numeric claims (16 accessibility checks, 32 report_paths importers, 61
+  orchestrators, 48-step generation chain), and every relative link target in
+  live docs verified against current code — zero stale mentions found; the
+  two `build_image_sitemap.py` mentions are deliberate removal records pinned
+  by `code/tests/test_regenerate_all.py:20-21`. No edits required.
+
 ## 2026-09-17
 
 - **September 17 publication and repository intake:** full pairing scan
