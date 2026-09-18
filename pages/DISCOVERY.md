@@ -33,11 +33,11 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 
 | Index | Link | Notes |
 |-------|------|-------|
-| PubMed | [Daniel Ari Friedman author search](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | NCBI E-utilities returned 8 records for the exact author query on 2026-09-17 |
-| Europe PMC | [Daniel Ari Friedman author search](https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22) | Europe PMC returned 10 exact-author results, including preprints, on 2026-09-17 |
-| Crossref API | [ORCID DOI records](https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096) | Crossref returned 15 DOI records attached to the ORCID on 2026-09-17 |
-| Zenodo | [Exact-name creator search](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | Zenodo returned 67 exact-name records on 2026-09-17 |
-| Zenodo API | [ORCID-linked records](https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22) | ORCID-linked query returned 155 records on 2026-09-17, including versioned deposits and software archives |
+| PubMed | [Daniel Ari Friedman author search](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | NCBI E-utilities returned 8 records for the exact author query on 2026-09-18 |
+| Europe PMC | [Daniel Ari Friedman author search](https://europepmc.org/search?query=AUTH:%22Daniel%20Ari%20Friedman%22) | Europe PMC returned 10 exact-author results, including preprints, on 2026-09-18 |
+| Crossref API | [ORCID DOI records](https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096) | Crossref returned 15 DOI records attached to the ORCID on 2026-09-18 |
+| Zenodo | [Exact-name creator search](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Friedman%2C%20Daniel%20Ari%22) | Zenodo returned 67 exact-name records on 2026-09-18 |
+| Zenodo API | [ORCID-linked records](https://zenodo.org/api/records?q=metadata.creators.person_or_org.identifiers.identifier%3A%220000-0001-6232-9096%22) | ORCID-linked query returned 155 records on 2026-09-18, including versioned deposits and software archives |
 | Semantic Scholar | [Exact-name search](https://www.semanticscholar.org/search?q=%22Daniel%20Ari%20Friedman%22&sort=relevance) | AI-curated citation graph; verify candidate author merges before using as profile evidence |
 | DBLP | [Author page](https://dblp.org/pid/346/2173.html) | Computer-science bibliography mirror |
 | PubMed Central / NCBI | [PubMed query](https://pubmed.ncbi.nlm.nih.gov/?term=Daniel+Ari+Friedman%5BAuthor%5D) | Use for biomedical indexing and PMID lookup |
@@ -87,7 +87,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | Generated-file manifest | [GENERATED.md](../GENERATED.md) / [data/generated-manifest.json](../data/generated-manifest.json) | Rebuild commands and source-to-output mapping for generated artifacts |
 | Updates | [updates.html](../updates.html) / [CHANGELOG.md](../CHANGELOG.md) | Human-facing update history and source changelog |
 | Humans / security | [humans.txt](../humans.txt) / [security.txt](../.well-known/security.txt) | Contact, credits, and responsible disclosure metadata |
-| Public-source snapshot | [reports/public_source_snapshot_2026-09-17.json](../reports/public_source_snapshot_2026-09-17.json) | Latest public API freshness report |
+| Public-source snapshot | [reports/public_source_snapshot_2026-09-18.json](../reports/public_source_snapshot_2026-09-18.json) | Latest public API freshness report |
 | Public-source inventory | [reports/public_source_inventory_2026-09-17.json](../reports/public_source_inventory_2026-09-17.json) | Paginated public-source inventory for ORCID, Crossref, PubMed, Europe PMC, Zenodo, Wikidata, Semantic Scholar, GitHub, and AII pages |
 | Reconciliation report | [reports/reconciliation_2026-09-17.md](../reports/reconciliation_2026-09-17.md) | Human-readable comparison of curated counts and public-source counts |
 | External-link report | [reports/external_links_2026-09-18.json](../reports/external_links_2026-09-18.json) | Cached scoped network check for site-critical outbound links |
