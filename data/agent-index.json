@@ -1175,11 +1175,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 927989760,
-        "source_bytes": 906659519,
+        "source_bytes": 906652611,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4868,
-        "artifact_bytes": 907518639
+        "artifact_file_count": 4865,
+        "artifact_bytes": 907511283
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5513,7 +5513,7 @@
     "artworks": "0d94ef8c0344736379ff4bf10fc22d4aad42356094c87bcc65fbc41fb17117d3",
     "videos": "8933c9bd99d0730afe46b1e95b1da88bc8c605306781d9bb29b8b58c283a2d2f",
     "videos_index": "569cac7b49a6804bfc8f772f99305649e5621fb79fb45fa28d71ffeeef4ab3f5",
-    "search": "5eff631fa3112a774e499660c4896ad4fa0b3785a8aa41c24850b36ea5abdc7b",
+    "search": "62b49eca75331f9738c0093e621a4767d6d019f9d1c71cbaa403bb003e8b73fa",
     "claims": "65cb49d21eb5dccbe2455eeb40b90c5aa0b5bd2239968b6bae4a3350824d76bd",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "94c6a7453fcb46876e385b6c531fdd1be598e3356e889ac79a49a032f60c7be4",
@@ -5522,7 +5522,7 @@
     "organizations": "66fa63891c61f638e5c1484134ad122a3c17a0d4520be9b495443f0d758ab53d",
     "resume": "21e99400dfcac5a23924eff82a55d1b961d46e075bbd6758e78fdd77f633abc8",
     "work_enrichment": "f6b2d2bcaa5d4548a86f19088a72ee210bc064a99d847989e1d9058a4969b8ab",
-    "catalog": "66ebb561158a3666e85eea192baceb8f61445734c531341e8e246a6c634362e1",
+    "catalog": "b51f88924f4a0affa057a993ec9281ff5f5a63ccc6605b226c23924f0e947ca7",
     "reconciliation": "95d45072c0932fb7e849601d90d4b85ccdd1ff89415cfe641e8a38e27af7d820",
     "reproducibility": "1e1455ab0165b652967ca08decc7dea6c1b1716ab065b15ad2016d4e63e4544e",
     "generated_manifest": "21f7065d67bb70dbaa8787ee78d6851e09c9fc420d3ef695d9aa95f303feb81e",
