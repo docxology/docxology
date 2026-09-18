@@ -6,8 +6,13 @@ top-level modules. Historically every orchestrator and test inserted
 and imported them flat. This package is the single canonical bootstrap for
 that layout:
 
-1. It owns the one ``sys.path`` bootstrap (``code/src`` and
-   ``code/orchestrators``) so no other module mutates the path. The flat
+1. It owns the one canonical ``sys.path`` bootstrap (``code/src`` and
+   ``code/orchestrators``). The only other ``sys.path`` writers are the
+   orchestrator wrappers themselves, each starting with the uniform
+   two-line locate (``sys.path.insert`` of ``code/src`` + the
+   ``import docxology_tools`` bootstrap call, DOC-014) so a wrapper run as
+   a script — or copied into a minimal fixture checkout next to a bare
+   ``__init__.py`` — bootstraps itself. The flat
    modules still import each other by flat names internally, so both
    directories must stay importable.
 2. It is a namespace window over ``code/src``: ``__path__`` points there, so

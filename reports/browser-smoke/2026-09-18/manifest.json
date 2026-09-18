@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-09-18T02:03:08Z",
+  "source_commit": "4268742da0d1e259a02666e54f72db4810ae7111",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
+  "source_tree_sha": "2e6683623a14e4c980415b5fbaafd9e2ad4f4191",
+  "tool": "playwright screenshot",
+  "note": "Selector-based smoke checks for core local site behavior.",
+  "passing": 10,
+  "count": 10,
+  "checks": [
+    {
+      "name": "home",
+      "page": "index.html",
+      "selector": "h1",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-18/home.png",
+      "screenshot_sha256": "d3b81025815e306bd068946ee1708816f2087933a74ce628bae15701853792d2",
+      "stdout": "Navigating to http://127.0.0.1:61777/index.html\nWaiting for selector h1...\nWaiting for timeout 500...\nCapturing screenshot into /private/tmp/docx-wave/integration/reports/browser-smoke/2026-09-18/home.png",
+      "stderr": ""
+    },
+    {
+      "name": "publications",
+      "page": "publications.html",
+      "selector": "table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-18/publications.png",
+      "screenshot_sha256": "2e32e82890eadfd51a975c6797948f4deb9c3f6bef73d9d98d34c5bd2646c980",
+      "stdout": "Navigating to http://127.0.0.1:61777/publications.html\nWaiting for selector table...\nWaiting for timeout 500...\nCapturing screenshot into /private/tmp/docx-wave/integration/reports/browser-smoke/2026-09-18/publications.png",
+      "stderr": ""
+    },
+    {
+      "name": "works",
+      "page": "works/index.html",
+      "selector": ".work-row",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-18/works.png",
+      "screenshot_sha256": "f78b3401630e7a9f4b7981d6086cacc2ccda8cbb4d7bdb499118367bc2c6bd9a",
+      "stdout": "Navigating to http://127.0.0.1:61777/works/index.html\nWaiting for selector .work-row...\nWaiting for timeout 500...\nCapturing screenshot into /private/tmp/docx-wave/integration/reports/browser-smoke/2026-09-18/works.png",
+      "stderr": ""
+    },
+    {
+      "name": "search",
+      "page": "search.html?q=active%20inference",
+      "selector": ".result-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-18/search.png",
+      "screenshot_sha256": "4475837918f719f9634e34eaf0695ea4a41f0a8ff04b649b415ac23ddcad1b90",
+      "stdout": "Navigating to http://127.0.0.1:61777/search.html?q=active%20inference\nWaiting for selector .result-card...\nWaiting for timeout 500...\nCapturing screenshot into /private/tmp/docx-wave/integration/reports/browser-smoke/2026-09-18/search.png",
+      "stderr": ""
+    },
+    {
+      "name": "repositories",
+      "page": "repositories.html",
+      "selector": ".inventory-table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-18/repositories.png",
+      "screenshot_sha256": "17bfb256310c8a81fdef7ff11b8777a78e0eb98142e023fa793ef196f01f67ae",
+      "stdout": "Navigating to http://127.0.0.1:61777/repositories.html\nWaiting for selector .inventory-table...\nWaiting for timeout 500...\nCapturing screenshot into /private/tmp/docx-wave/integration/reports/browser-smoke/2026-09-18/repositories.png",
+      "stderr": ""
+    },
+    {
+      "name": "repository-forks",
+      "page": "repositories-forks.html",
+      "selector": ".inventory-table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-18/repository-forks.png",
+      "screenshot_sha256": "5119807b11895d53d561080493bc843664f138fc5206f66a97cf308c5c63a265",
+      "stdout": "Navigating to http://127.0.0.1:61777/repositories-forks.html\nWaiting for selector .inventory-table...\nWaiting for timeout 500...\nCapturing screenshot into /private/tmp/docx-wave/integration/reports/browser-smoke/2026-09-18/repository-forks.png",
+      "stderr": ""
+    },
+    {
+      "name": "catalog",
+      "page": "catalog.html",
+      "selector": ".catalog-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-18/catalog.png",
+      "screenshot_sha256": "1a706843996c344198052bba8a8d85bdf050a44d75b2be6b98f93b98a4dbbe63",
+      "stdout": "Navigating to http://127.0.0.1:61777/catalog.html\nWaiting for selector .catalog-card...\nWaiting for timeout 500...\nCapturing screenshot into /private/tmp/docx-wave/integration/reports/browser-smoke/2026-09-18/catalog.png",
+      "stderr": ""
+    },
+    {
+      "name": "updates",
+      "page": "updates.html",
+      "selector": ".update-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-18/updates.png",
+      "screenshot_sha256": "663c83f3802cf5b4e7815e6398586331461c13b97226d3677872029ce594e2e0",
+      "stdout": "Navigating to http://127.0.0.1:61777/updates.html\nWaiting for selector .update-card...\nWaiting for timeout 500...\nCapturing screenshot into /private/tmp/docx-wave/integration/reports/browser-smoke/2026-09-18/updates.png",
+      "stderr": ""
+    },
+    {
+      "name": "art",
+      "page": "art.html",
+      "selector": ".art-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-18/art.png",
+      "screenshot_sha256": "c06cf12bc96cc095016a0b68da5d7f2c78ed4cc17e7b227ed92a54f79c43eb68",
+      "stdout": "Navigating to http://127.0.0.1:61777/art.html\nWaiting for selector .art-card...\nWaiting for timeout 500...\nCapturing screenshot into /private/tmp/docx-wave/integration/reports/browser-smoke/2026-09-18/art.png",
+      "stderr": ""
+    },
+    {
+      "name": "videos",
+      "page": "videos.html",
+      "selector": ".video-topic-panel",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-18/videos.png",
+      "screenshot_sha256": "01d548321f8e726d24545eab7c3424f01c313878d3c8537f169466c780815955",
+      "stdout": "Navigating to http://127.0.0.1:61777/videos.html\nWaiting for selector .video-topic-panel...\nWaiting for timeout 500...\nCapturing screenshot into /private/tmp/docx-wave/integration/reports/browser-smoke/2026-09-18/videos.png",
+      "stderr": ""
+    }
+  ]
+}

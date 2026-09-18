@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T16:25:21Z",
+  "generated_at": "2026-09-17T23:51:14Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -35,8 +35,8 @@
   },
   "metrics": {
     "works": 215,
-    "software_catalogued": 154,
-    "owned_software_catalogued": 115,
+    "software_catalogued": 155,
+    "owned_software_catalogued": 116,
     "aii_software_catalogued": 39,
     "google_scholar": {
       "citations": 815,
@@ -47,13 +47,13 @@
     },
     "docxology_public_repositories_claim": {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 216 public repositories.",
+      "claim": "The docxology GitHub profile has 219 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-09-16.json"
+        "reports/public_source_snapshot_2026-09-17.json"
       ],
-      "checked_at": "2026-09-16T16:13:31.619079+00:00",
+      "checked_at": "2026-09-17T23:06:07.262303+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -65,22 +65,22 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-09-16.json"
+        "reports/public_source_snapshot_2026-09-17.json"
       ],
-      "checked_at": "2026-09-16T16:13:31.619079+00:00",
+      "checked_at": "2026-09-17T23:06:07.262303+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 39 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-09-15T21:41:45Z",
+      "generated_at": "2026-09-17T23:22:25Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 259,
-      "public": 259,
-      "primary_total": 169,
-      "forks": 90,
-      "docxology": 216,
+      "total": 262,
+      "public": 262,
+      "primary_total": 170,
+      "forks": 92,
+      "docxology": 219,
       "ActiveInferenceInstitute": 43
     }
   },
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "0644a3e2a1a8fe2b53fc415e130821ba24877091b15e80bb0a210ec599356101",
+      "sha256": "7a20603a6dcb13f602d8ac4a438fe1b0eb2ff843f0a1762ebe696600de063570",
       "files": [
         {
           "path": "resume/source.json",
@@ -102,8 +102,8 @@
         },
         {
           "path": "data/software.json",
-          "bytes": 76507,
-          "sha256": "18ad12ad514b64f4f083cae58ff6952813037695e5f49b02b8a4f8c3ee059ee9"
+          "bytes": 77105,
+          "sha256": "e21b09cfddda260f7508a77558535e77b18e26c7d5deebf1eefc6e243bc78a9d"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "8ebbbf4a21ea9ce30f8c414a33e1c38996520044ac13d6235dadc5b0a0fab90a"
+          "sha256": "1ffabd108c4d4ba3566efe9d4f51c1038721b78867df753db18323aa28a96668"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 307016,
-          "sha256": "1f6bbaa065fd066c628d2dcad2090e990ce4cc1e970196c87a39978032d69374"
+          "bytes": 309777,
+          "sha256": "22d6ef7c7b3d3bc18c46c4920068c574042ddb74a6bb8d438627d551141af141"
         }
       ]
     },
@@ -7945,7 +7945,7 @@
       "url": "https://github.com/docxology/steganographer",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration",
+      "description": "High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 484 tests, GStreamer integration",
       "language": "Rust",
       "stars": 1,
       "updated_or_year": "2026-04",
@@ -9045,6 +9045,18 @@
       "zenodo_url": ""
     },
     {
+      "name": "daf-jev",
+      "url": "https://github.com/docxology/daf-jev",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "Modular, composable Python client and decision toolkit for the TypeSafe Jev (System One) API — typed question primitives (noul/choice/score), concurrent batch evaluation, composition patterns, calibration statistics, CLI, and MCP server · Zenodo",
+      "language": "Python",
+      "stars": 2,
+      "updated_or_year": "2026-09",
+      "paper_path": "",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22816187"
+    },
+    {
       "name": "ActiveInferenceJournal",
       "url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal",
       "owner": "ActiveInferenceInstitute",
@@ -9523,7 +9535,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-09-16T02:17:16+00:00",
+      "checked_at": "2026-09-17T23:49:56+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9538,7 +9550,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-09-16T02:17:16+00:00",
+      "checked_at": "2026-09-17T23:49:56+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9546,13 +9558,13 @@
     },
     {
       "id": "docxology-github-public-repos",
-      "claim": "The docxology GitHub profile has 216 public repositories.",
+      "claim": "The docxology GitHub profile has 219 public repositories.",
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/docxology",
-        "reports/public_source_snapshot_2026-09-16.json"
+        "reports/public_source_snapshot_2026-09-17.json"
       ],
-      "checked_at": "2026-09-16T16:13:31.619079+00:00",
+      "checked_at": "2026-09-17T23:06:07.262303+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -9564,9 +9576,9 @@
       "status": "public-api",
       "sources": [
         "https://api.github.com/users/ActiveInferenceInstitute",
-        "reports/public_source_snapshot_2026-09-16.json"
+        "reports/public_source_snapshot_2026-09-17.json"
       ],
-      "checked_at": "2026-09-16T16:13:31.619079+00:00",
+      "checked_at": "2026-09-17T23:06:07.262303+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",

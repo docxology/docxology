@@ -2,6 +2,40 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
+## 2026-09-17
+
+- **September 17 publication and repository intake:** full pairing scan
+  (464 pairs, 247 releases, 158 records, zero warnings) — 50 strong
+  update_existing actions applied (DOI-already-represented metadata and
+  software-link refreshes), two needs_review pairs dispositioned as
+  version-history-only (R82 fep_lean v1.2.0, R83 GNN v3.4.0; both works
+  already in the bibliography). `docxology/daf-jev` curated into
+  pages/SOFTWARE.md Developer Tools (TypeSafe Jev client toolkit, Zenodo
+  concept DOI 10.5281/zenodo.22816187) — originals 115 → 116, grand total
+  154 → 155; classification queue clean (`classify_repositories.py --check`
+  exit 0). Steganographer row fact-checked against its README (132 → 484
+  tests). Fresh snapshot/inventory/pairing/external-link/PSR receipts for
+  2026-09-17, discovery pointers re-rendered, binder chain rebound.
+- **Hand-page content development:** start-here (site map for humans and
+  agents, grounded in current counts), collaborators (six collaborator
+  cards, interview subjects, institutional rows), art (gallery explainer),
+  videos (provenance + usage guide), cite-verify (identifier table,
+  reuse-humility rules) — every claim restated from repo sources, zero new
+  external URLs.
+- **Website polish:** 33 lines of dead CSS removed (unused selector groups,
+  two unreferenced keyframes, one exact-duplicate rule — every removal
+  verified repo-wide); og:site_name/og:locale completed across the
+  hand-maintained pages; search.html rel="me" set completed to match the
+  homepage.
+- **DOC-014 landed:** all 61 orchestrators' ad-hoc sys.path bootstraps
+  collapsed to a uniform two-line thin wrapper (`docxology_tools` owns the
+  canonical bootstrap); CLI surface unchanged (smoke-verified), suite
+  green. The Pages-artifact dangling-reference guard now skips gitignored
+  paths (a locally-generated `regeneration-state.json` reference no longer
+  fails local assembly; CI behavior unchanged, fail-closed outside a repo),
+  with a regression test; the two prose references to that gitignored path
+  were reworded so the shipped artifact cannot 404 on it.
+
 ## 2026-09-15
 
 - **Full-backlog orchestration wave (DOC-002/003/005/006/007/008/009/011/012/013/015):**
@@ -51,7 +85,8 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   write-mode driver, now input-gated — steps with declared inputs
   (paper-documents, work-pages, video-pages, asset-audit-first/final,
   accessibility-first/final) skip when their input fingerprints are unchanged
-  (state in the gitignored `reports/regeneration-state.json`, fingerprint
+  (state in a gitignored local `reports/` state file named
+  `regeneration-state.json` — never shipped to Pages — fingerprint
   recorded only after a successful run, unmatched patterns and empty inputs
   never skip; `--force` restores always-run). Measured: cold chain 48 steps in
   1m52s; warm no-op rerun skips 7/7 gated steps, runs 41 in 1m35s,

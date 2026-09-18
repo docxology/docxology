@@ -1,11 +1,11 @@
 {
   "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "doi": "10.5281/zenodo.19695259",
   "doi_url": "https://doi.org/10.5281/zenodo.19695259",
   "zenodo_record": "https://zenodo.org/records/19695259",
-  "record_id": "22758214",
-  "publication_date": "2026-09-14",
+  "record_id": "22774403",
+  "publication_date": "2026-09-15",
   "resource_type": {
     "title": "Preprint",
     "type": "publication",
@@ -14,34 +14,36 @@
   "creators": [
     {
       "name": "Friedman, Daniel Ari",
-      "affiliation": "Active Inference Institute",
+      "affiliation": null,
       "orcid": "0000-0001-6232-9096"
     }
   ],
-  "description": "Linguistic case offers a useful test of how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. The implementation includes case-role graphs, pregroup derivations, tensor contractions, synthetic similarity matrices, Bayesian filtering, quantile utilities, and positive-operator-valued measurements. These components share notation, but their mathematical relationships require separate assumptions; a common diagrammatic vocabulary does not establish their equivalence.\n\nThe principal contribution is an inspectable comparison of these constructions and their limits. We distinguish generated derivations from illustrative drawings, finite score distributions from Bellman return distributions, presentation statistics from topos invariants, and model-unit prediction errors from physiological measurements. The accompanying suite collects 1627 tests across 81 files; that is a collection count, and a separate source-bound quality receipt records 1627 passing tests with 93.17% line-and-branch coverage (Appendix C). The figure pipeline produces 33 figures from source. All numerical illustrations use synthetic inputs; no corpus study, participant experiment, EEG fit, quantum-hardware run, or deployed-agent security evaluation is reported. Topos-theoretic transfer, cognitive advantages of case diagrams, and case-based authorization remain research proposals with explicit validation requirements. This is working revision 2.4.0; its local validation does not constitute publication or independent mathematical certification.",
-  "keywords": [
-    "linguistic case",
-    "category theory",
-    "DisCoCat",
-    "pregroup grammar",
-    "enriched categories",
-    "Bayesian filtering",
-    "distributional representations",
-    "POVM",
-    "reproducible research"
-  ],
+  "description": "Linguistic case offers a setting in which to examine how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. The implementation includes case-role graphs, pregroup derivations, tensor contractions, synthetic similarity matrices, Bayesian filtering, quantile utilities, and positive-operator-valued measurements. These components share notation, but their mathematical relationships require separate assumptions; a common diagrammatic vocabulary does not establish their equivalence.\n\nThe principal contribution is an inspectable comparison of these constructions and their limits. We distinguish generated derivations from illustrative drawings, finite score distributions from Bellman return distributions, presentation statistics from topos invariants, and model-unit prediction errors from physiological measurements. The accompanying suite collects 1883 tests across 94 files; that is a collection count, and a separate source-bound quality receipt records 1883 passing tests with 92.13% line-and-branch coverage (Appendix C). The figure pipeline produces 33 figures from source. All numerical illustrations use synthetic inputs; no corpus study, participant experiment, EEG fit, quantum-hardware run, or deployed-agent security evaluation is reported. Topos-theoretic transfer, cognitive advantages of case diagrams, and case-based authorization remain research proposals with explicit validation requirements. This is working revision 2.7.0; its local validation does not constitute publication or independent mathematical certification.",
+  "keywords": [],
   "files": [
     {
       "name": "cognitive_case_diagrams-2.6.0-synthetic-results.json",
       "size_bytes": 132639,
       "checksum": "md5:13f559e99c3e4842659bf2dbb8e2db6c",
-      "download_url": "https://zenodo.org/api/records/22758214/files/cognitive_case_diagrams-2.6.0-synthetic-results.json/content"
+      "download_url": "https://zenodo.org/api/records/22774403/files/cognitive_case_diagrams-2.6.0-synthetic-results.json/content"
     },
     {
       "name": "cognitive_case_diagrams-2.6.0.pdf",
       "size_bytes": 15237745,
       "checksum": "md5:f3c5deaa7a18b0eade5a94fe6aea3269",
-      "download_url": "https://zenodo.org/api/records/22758214/files/cognitive_case_diagrams-2.6.0.pdf/content"
+      "download_url": "https://zenodo.org/api/records/22774403/files/cognitive_case_diagrams-2.6.0.pdf/content"
+    },
+    {
+      "name": "cognitive_case_diagrams-2.7.0-synthetic-results.json",
+      "size_bytes": 145495,
+      "checksum": "md5:3068bc9e648a28dcacae2cf32064dfcc",
+      "download_url": "https://zenodo.org/api/records/22774403/files/cognitive_case_diagrams-2.7.0-synthetic-results.json/content"
+    },
+    {
+      "name": "cognitive_case_diagrams-2.7.0.pdf",
+      "size_bytes": 15244209,
+      "checksum": "md5:002eb0a91d4d60fc3ff411afba186b29",
+      "download_url": "https://zenodo.org/api/records/22774403/files/cognitive_case_diagrams-2.7.0.pdf/content"
     }
   ],
   "related_resources": [
@@ -52,7 +54,7 @@
   ],
   "github_repo": "docxology/cognitive_case_diagrams",
   "source": "zenodo-only",
-  "checked_at": "2026-09-15T16:21:49Z",
+  "checked_at": "2026-09-17T23:13:59Z",
   "domain": "Active Inference",
   "type": "Paper",
   "methods": [
@@ -73,13 +75,12 @@
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
   ],
-  "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.6.0",
-  "release_tag": "v2.6.0",
-  "release_name": "v2.6.0",
+  "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0",
+  "release_tag": "v2.4.0",
+  "release_name": "v2.4.0 — Synthetic studies and reproducible agent interfaces",
   "pdf_sha256": "",
   "pairing_confidence": "strong",
   "pairing_evidence": [
-    "zenodo_related_identifier_mentions_release",
-    "github_repo_self_linked"
+    "github_release_mentions_doi"
   ]
 }
