@@ -23,9 +23,10 @@ REPO = Path(__file__).resolve().parents[2]
 STYLE = REPO / "style.css"
 
 # sha256 of style.css exactly as it was before the light block was
-# appended (1463 lines, base commit 94bd3699).
-DARK_PREFIX_SHA256 = "db5d6ead9d3931a51208ae0d6bc0130a9778cb9a2aeb341a8b9d58ac66bc3519"  # re-pinned after d12bb007 (NEW-7 watermark removal, an approved cross-lane edit inside the prefix; guard still locks the prefix from here)
-DARK_PREFIX_LINES = 1463
+# appended (1436 lines, boundary = everything before the light-marker
+# comment; base commit 94bd3699).
+DARK_PREFIX_SHA256 = "b0b4bd6f69863c5c082aec48a08d6b426797ceba46b09ff2695145685ff196e6"  # re-pinned after a8cd2a44f (approved dead-CSS sweep: unused selector groups, unreferenced keyframes, one duplicate print rule; boundary re-anchored to the light-marker line, guard still locks the prefix from here)
+DARK_PREFIX_LINES = 1436
 
 # Verbatim dark :root tokens that must be untouched.
 DARK_TOKENS = [

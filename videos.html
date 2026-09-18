@@ -535,6 +535,8 @@
     }
     footer a { color: var(--text-secondary); }
     footer a:hover { color: var(--text-primary); }
+    .video-topic-panel p.panel-note { margin-top: .75rem; }
+    .video-topic-panel p.panel-note a { text-decoration: underline; }
   .skip-link:focus{top:0 !important}
   </style>
     <style>.breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'\203A';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}</style>
@@ -615,8 +617,8 @@
 <section class="video-topic-panel" aria-labelledby="video-topic-heading">
   <h2 id="video-topic-heading">Talks, Courses, Interviews, and Research Livestreams</h2>
   <p>Browse Daniel Ari Friedman's public video record across Active Inference Institute education, cognitive security, computational biology, art, complexity science, and open research practice.</p>
-  <p style="margin-top:.75rem">What is behind this page: the timeline renders the full public video record exported to <a href="data/videos.json">data/videos.json</a> — 1,127 videos at the 2026-09-11 index build, 405 on the personal channel and 722 on the Active Inference Institute channel. A compact timeline index ships separately as <a href="data/videos-index.json">videos-index.json</a>, every video also has a static page under <a href="videos/">videos/</a>, and selected episodes include extracted transcripts in the repository's <code>data/video-transcripts/</code> directory.</p>
-  <p style="margin-top:.75rem">How to use it: the search box filters by title; the channel buttons show both channels, only the personal one, or only the institute one; zoom steps from an overview down to months and weeks; the year menu jumps to a period; arrow keys navigate the timeline once it loads. Without JavaScript, the static <a href="videos/">video index</a> and the JSON exports above carry the same record.</p>
+  <p class="panel-note">What is behind this page: the timeline renders the full public video record exported to <a href="data/videos.json">data/videos.json</a> — 1,127 videos at the 2026-09-11 index build, 405 on the personal channel and 722 on the Active Inference Institute channel. A compact timeline index ships separately as <a href="data/videos-index.json">videos-index.json</a>, every video also has a static page under <a href="videos/">videos/</a>, and selected episodes include extracted transcripts in the repository's <code>data/video-transcripts/</code> directory.</p>
+  <p class="panel-note">How to use it: the search box filters by title; the channel buttons show both channels, only the personal one, or only the institute one; zoom steps from an overview down to months and weeks; the year menu jumps to a period; arrow keys navigate the timeline once it loads. Without JavaScript, the static <a href="videos/">video index</a> and the JSON exports above carry the same record.</p>
   <div class="video-topic-links" aria-label="Related video and research routes">
     <a href="domain-active-inference.html">Active Inference</a>
     <a href="publications.html">Research publications</a>
