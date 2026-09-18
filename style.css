@@ -189,14 +189,10 @@
         .hero .btn{position:relative;overflow:hidden;border-color:rgba(255,255,255,0.24);background:rgba(14,14,14,0.72);color:#f4f4f4;box-shadow:0 10px 30px rgba(0,0,0,0.36)}
         .hero .btn::after{content:'';position:absolute;left:12%;right:12%;bottom:8px;height:1px;background:var(--red-pure);opacity:0;transform:scaleX(.35);transition:opacity .2s,transform .2s}
         .hero .btn:hover::after,.hero .btn:focus-visible::after{opacity:.9;transform:scaleX(1)}
-        .hero .btn-primary{background:var(--red-pure);color:#fff;border-color:rgba(255,255,255,0.4)}
-        .hero .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,0,0,0.36);color:#fff}
         .hero .btn-gold{color:#fff;border-color:rgba(255,255,255,0.34)}
         .hero .btn-gold:hover{background:rgba(255,255,255,0.13);border-color:rgba(255,0,0,0.65);color:#fff;transform:translateY(-1px)}
         .hero .btn-outline{color:#d2d2d2;background:rgba(18,18,18,0.68)}
         .hero .btn-outline:hover{border-color:rgba(255,0,0,0.6);color:#fff}
-        .btn-primary{background:linear-gradient(135deg,var(--red),#8b1a12);color:#f0ede8;border:1px solid rgba(255,255,255,0.08)}
-        .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(192,57,43,0.4);color:#fff}
         .btn-gold{background:linear-gradient(135deg,var(--gold-15),var(--gold-08));color:var(--gold);border:1px solid var(--gold-40)}
         .btn-gold:hover{background:var(--gold-18);border-color:var(--gold-bright);color:var(--gold-bright);transform:translateY(-1px)}
         .btn-outline{border:1px solid var(--border);color:var(--text-secondary);background:var(--bg-glass)}
@@ -330,9 +326,8 @@
         
         /* ── PRINT STYLES ── */
         @media print{
-            nav,.hero::before,.hero::after,.hero-glitch-canvas,.cta-row,.profile-links,.menu-btn{display:none!important}
+            nav,.hero::before,.hero::after,.hero-glitch-canvas,.profile-links,.menu-btn{display:none!important}
             body{background:#fff;color:#111;font-size:11pt}
-            a{color:#111;text-decoration:underline}
             .section,.section-inner{padding:1rem 0}
             .card,.connect-card,.sidebar-card{border:1px solid #ccc;background:#fff}
             footer{border-top:1px solid #ccc}
@@ -450,14 +445,13 @@ thead th { -webkit-user-select: none; user-select: none; }
         .collab-affil{font-size:.8rem;color:var(--text-muted);margin-bottom:.75rem;text-transform:uppercase;letter-spacing:.05em}
         .collab-domains{font-size:.8rem;color:var(--silver-bright);margin-bottom:.75rem}
         .collab-desc{font-size:.85rem;color:var(--text-secondary);margin-bottom:1rem;flex:1}
-        .collab-links{font-size:.75rem;color:var(--gold);display:flex;gap:.5rem;flex-wrap:wrap}
 .media-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(500px, 1fr));gap:1.25rem}
         .media-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;display:flex;flex-direction:column;transition:all .2s;align-items:flex-start}
         .media-card:hover{border-color:var(--border-hover)}
         .media-title{font-size:1.2rem;font-weight:600;color:var(--gold);margin-bottom:.5rem}
         .media-desc{font-size:.85rem;color:var(--text-secondary);margin-bottom:1rem;flex:1}
         .media-stats{display:inline-flex;align-items:center;padding:.2rem .6rem;background:var(--gold-10);color:var(--gold-bright);border-radius:4px;font-size:.7rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:1rem}
-.collab-table, table { width:100%; border-collapse:collapse; margin-top:1rem; font-size:.85rem; }
+table { width:100%; border-collapse:collapse; margin-top:1rem; font-size:.85rem; }
 th, td { padding:.75rem; text-align:left; border-bottom:1px solid var(--border); }
 th { color:var(--text-muted); font-weight:600; text-transform:uppercase; font-size:.75rem; background:rgba(0,0,0,0.2); }
 
@@ -614,19 +608,6 @@ nav{
     border-color:rgba(255,255,255,0.26);
     color:#f4f4f4;
 }
-.hero .btn-primary,.btn-primary{
-    background:#050505;
-    color:#fff;
-    border-color:var(--red-pure);
-    box-shadow:none;
-}
-.hero .btn-primary{color:#fff}
-.btn-primary{color:var(--red-pure)}
-.hero .btn-primary:hover,.btn-primary:hover{
-    background:rgba(255,0,0,0.08);
-    border-color:var(--red-pure);
-    color:#fff;
-}
 .hero .btn:hover,.btn:hover{transform:none;box-shadow:none;border-color:var(--border-hover);color:#fff}
 
 .stats-bar{
@@ -666,7 +647,7 @@ nav{
         #090909;
     background-size:100% 5px;
 }
-.section-alt>.section-header,.section-alt>.cards,.section-alt>.work-list,.section-alt>.mini-grid,.section-alt>.media-panel,.section-alt>.connect-grid,.section-alt>.art-highlight,.section-alt>.art-cards,.section-alt>p{
+.section-alt>.section-header,.section-alt>.cards,.section-alt>.work-list,.section-alt>.mini-grid,.section-alt>.media-panel,.section-alt>.art-highlight,.section-alt>.art-cards,.section-alt>p{
     max-width:1180px;
     margin-left:auto;
     margin-right:auto;
@@ -896,7 +877,7 @@ thead th,th{
 }
 td{font-size:.96rem;line-height:1.58}
 tbody tr:hover,.pub-item:hover{background:rgba(255,0,0,0.06)}
-.td-title a,.repo-title,.media-item a,.td-doi a,.collab-links{color:var(--red-pure)}
+.td-title a,.repo-title,.media-item a,.td-doi a{color:var(--red-pure)}
 .td-title a:hover,.repo-title:hover,.media-item a:hover,.td-doi a:hover{color:#fff}
 
 footer{
@@ -1408,14 +1389,6 @@ section h2:hover .anchor-link,
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.6; }
-}
 
 /* Stat counter entrance */
 .stat.animate { animation: slideUp 0.5s ease both; }
@@ -1543,8 +1516,6 @@ section h2:hover .anchor-link,
     .page-hero h1, .domain-hero h1 { color: #1a1713; }
     /* Interactive chrome that assumed the dark press plate. */
     .search-wrap input, .filter-selects select, .search-input { background: #fff; color: #1a1713; border-color: rgba(26,23,19,0.2); }
-    .btn-primary, .hero .btn-primary { background: #b3392b; color: #fff; }
-    .btn-primary { color: #fff; }
 
     /* Page-specific dark press-plate sections need matching ink. */
     .home-page .nav-logo { color: #1a1713; }
