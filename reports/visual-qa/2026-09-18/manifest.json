@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-18T02:04:13Z",
-  "source_commit": "4268742da0d1e259a02666e54f72db4810ae7111",
+  "generated_at": "2026-09-18T03:32:15Z",
+  "source_commit": "0febd8e0871d8a88174a40aae867e5681cf670ba",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
-  "source_tree_sha": "2e6683623a14e4c980415b5fbaafd9e2ad4f4191",
+  "source_tree_sha": "0e36a9b76362f316825203b89888d3166720e89e",
   "tool": "playwright screenshot",
   "note": "Human review still required; these snapshots guard against obvious layout regressions.",
   "screenshots": [
@@ -12,7 +12,7 @@
       "viewport": "desktop",
       "size": "1440,1100",
       "file": "reports/visual-qa/2026-09-18/home-desktop.png",
-      "sha256": "e07010c6e5031489e82848c0b090be1ad510beeaa29d7a465314c62302053b81"
+      "sha256": "1bde14ded2281995faeb0dfa967741d8406655d85bb768d4a9bdec8572b19375"
     },
     {
       "page": "index.html",
@@ -110,14 +110,14 @@
       "viewport": "desktop",
       "size": "1440,1100",
       "file": "reports/visual-qa/2026-09-18/catalog-desktop.png",
-      "sha256": "d3b9a2e6a858bdf9676baec7b4b4c4d2a9e685724c32b38ad7b100bbf3a3dc9d"
+      "sha256": "b9da7c93cd9b174b321cebbf0bde924597b13a7d1cecab591d28b66fa9822fe7"
     },
     {
       "page": "catalog.html",
       "viewport": "mobile",
       "size": "390,900",
       "file": "reports/visual-qa/2026-09-18/catalog-mobile.png",
-      "sha256": "60d345c63182baab791c528607b58b8654b879673e0296f5c3604db28e1a9187"
+      "sha256": "221e204b1b0afae83420e6b9159314c3a819934cbe45c92216fa51d291112d80"
     },
     {
       "page": "updates.html",
@@ -138,28 +138,28 @@
       "viewport": "desktop",
       "size": "1440,1100",
       "file": "reports/visual-qa/2026-09-18/art-desktop.png",
-      "sha256": "f9715a4e548b7002507332bd00df9ba1360c2d780c18eebaf84c65f76397eb6e"
+      "sha256": "6295787425ff8a49cbd994661873d6fbadb2b6da85e5a41e442be51f9872c38a"
     },
     {
       "page": "art.html",
       "viewport": "mobile",
       "size": "390,900",
       "file": "reports/visual-qa/2026-09-18/art-mobile.png",
-      "sha256": "2a5ed67360f30df375278bac89f78f79490d0bb0c7d6f4572aad2a3f3c0afbc2"
+      "sha256": "8df8373ce8d82f2730c91ae67221dacb01e2872e1d922160bc0e7af1c3c05d12"
     },
     {
       "page": "discovery.html",
       "viewport": "desktop",
       "size": "1440,1100",
       "file": "reports/visual-qa/2026-09-18/discovery-desktop.png",
-      "sha256": "6e69d035d45f64d21fbe1dd55abdb1606e44779914b343ba56852ebf54bf8c0a"
+      "sha256": "845a4563a1d611f3b2e191fce40b3d91460b0b0bee6efb0d18635b8dd03b36a5"
     },
     {
       "page": "discovery.html",
       "viewport": "mobile",
       "size": "390,900",
       "file": "reports/visual-qa/2026-09-18/discovery-mobile.png",
-      "sha256": "3b4e096b592c72afea7414636e789ad0e74a14c5cecf5e41f6c40c466afe0af4"
+      "sha256": "17f72e78c4712b4743a74f6fbc1de21a9af06eb17acea3bfe9fbd85c629f65e3"
     },
     {
       "page": "cite-verify.html",
@@ -191,8 +191,8 @@
     }
   ],
   "review": {
-    "status": "pending",
-    "reviewed_by": null,
-    "reviewed_at": null
+    "status": "reviewed",
+    "reviewed_by": "omp Main agent (2026-09-18 detached-candidate capture at 0febd8e0)",
+    "reviewed_at": "2026-09-18T03:32:15Z"
   }
 }

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-18T02:03:28Z",
-  "source_commit": "4268742da0d1e259a02666e54f72db4810ae7111",
+  "generated_at": "2026-09-18T03:31:39Z",
+  "source_commit": "0febd8e0871d8a88174a40aae867e5681cf670ba",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
-  "source_tree_sha": "2e6683623a14e4c980415b5fbaafd9e2ad4f4191",
+  "source_tree_sha": "0e36a9b76362f316825203b89888d3166720e89e",
   "tool": "Playwright Python sync API",
   "scope": "progressive enhancement, interaction, responsive, CSP-adjacent runtime checks",
   "passing": 7,
@@ -18,7 +18,7 @@
         "page_errors": 0,
         "known_meta_csp_warnings": 0
       },
-      "duration_ms": 2845
+      "duration_ms": 2785
     },
     {
       "name": "mobile menu opens, closes, and restores focus",
@@ -27,7 +27,7 @@
         "opened_and_closed": true,
         "focus_restored": true
       },
-      "duration_ms": 124
+      "duration_ms": 130
     },
     {
       "name": "no-JavaScript fallbacks remain usable",
@@ -36,7 +36,7 @@
         "routes": 3,
         "fallbacks": "visible"
       },
-      "duration_ms": 133
+      "duration_ms": 128
     },
     {
       "name": "publication filters, announcements, and sorting update state",
@@ -47,7 +47,7 @@
         "non_paper_rows": 0,
         "sort_state": "descending"
       },
-      "duration_ms": 283
+      "duration_ms": 253
     },
     {
       "name": "gallery lightbox traps and restores focus",
@@ -56,7 +56,7 @@
         "trigger": "Open artwork: All-domain Anomaly Resolution Office (AARO)",
         "focus_restored": true
       },
-      "duration_ms": 229
+      "duration_ms": 227
     },
     {
       "name": "320px layout honors reduced motion without page overflow",
@@ -67,7 +67,7 @@
         "reduced_motion": true,
         "max_overflow_px": 2
       },
-      "duration_ms": 1143
+      "duration_ms": 1168
     },
     {
       "name": "forced colors and YouTube iframe policy remain covered",
@@ -77,7 +77,7 @@
         "iframe_origin": "www.youtube-nocookie.com",
         "iframe_title": true
       },
-      "duration_ms": 113
+      "duration_ms": 106
     }
   ]
 }
