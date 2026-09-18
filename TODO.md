@@ -8,6 +8,16 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
+- Last reviewed: 2026-09-18 (private catch-up pass: public `main` merged into
+  the sidecar `main` — 400 commits since `0d4e8da1`, 18 conflicts resolved in
+  favor of the canonical upstream payloads, private-only `.docxology/`
+  sidecar and parallel-test-gate work preserved; DOC-010 re-run at the
+  merged head per its trigger — `gsc_followup_preflight` PASS with dated
+  receipt `reports/gsc_preflight_2026-09-18.json` and refreshed checklist,
+  signed-in GSC steps remain externally blocked; binder chain rebound at the
+  merge receipt; `validate_repo.py` and the full suite green; open-item
+  ledger otherwise unchanged — DOC-002/008/009/010/011/012/015 procedural,
+  SEC-002 still explicitly blocked)
 - Last reviewed: 2026-09-18 (intake-hygiene pass: fresh 464-pair pairing scan
   at zero warnings — 0 new, 0 needs_review, the 50 update_existing set
   identical to the applied 2026-09-17 refresh; the four software-only Zenodo

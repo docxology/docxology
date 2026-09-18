@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-18T17:24:12Z",
-  "source_commit_at_generation": "604cd94bb6bcc407214e6369ffa2feac46f5487e",
+  "generated_at": "2026-09-18T21:38:29Z",
+  "source_commit_at_generation": "b015043adb75ad4ed36d559e2d95e02d6025805a",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,13 +21,43 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 927989760,
-    "source_bytes": 911329860,
+    "source_bytes": 911343403,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 4866,
-    "artifact_bytes": 912188712
+    "artifact_file_count": 4874,
+    "artifact_bytes": 912203562
   },
   "included_files": [
+    {
+      "path": ".docxology/.sidecar-lock.toml",
+      "bytes": 66,
+      "sha256": "e68d3605fa86bdb9a89caa072a348382e4b46fa108c6c34a93aac196b064a60b"
+    },
+    {
+      "path": ".docxology/AGENTS.md",
+      "bytes": 1444,
+      "sha256": "6d8321878b7730641ae3f6f459c45de9b615c56bb94b8a8d06b7884f3075a244"
+    },
+    {
+      "path": ".docxology/README.md",
+      "bytes": 589,
+      "sha256": "7318b68cbe1fbe2afcd8c8ea4ed9159b922e0c7261d7f23149b47d6e4c338fae"
+    },
+    {
+      "path": ".docxology/manifest.toml",
+      "bytes": 172,
+      "sha256": "28b089c72c393cc6379347138581a2c8c646067f93a07d13da2eada019f58dbf"
+    },
+    {
+      "path": ".docxology/public/citation.toml",
+      "bytes": 555,
+      "sha256": "a57f2d767086a72887814c631724f32c0d7fa17622a0db60204c4d35b86077ef"
+    },
+    {
+      "path": ".docxology/public/links.toml",
+      "bytes": 355,
+      "sha256": "8b4a35525312fe5cfa75d64283f50a3809ee765462cd7d8528e4215a28ac0b20"
+    },
     {
       "path": ".gitattributes",
       "bytes": 13,
@@ -70,8 +100,8 @@
     },
     {
       "path": "AGENT_START.md",
-      "bytes": 10377,
-      "sha256": "f4c8e31b7500ac343b6c5c33f5602c7987e50a57bcf559f3d31e3534fec96c25"
+      "bytes": 10401,
+      "sha256": "be91f0fc14040fc603163649e41e0e6bf7a7debd6e7a2de22c47e7971bba7aab"
     },
     {
       "path": "CHANGELOG.md",
@@ -5765,8 +5795,8 @@
     },
     {
       "path": "code/orchestrators/validate_repo.py",
-      "bytes": 23832,
-      "sha256": "ae5e83c236328f6655733d500f78933f20c652bb7f6e0da44abec94cd70b4b8e"
+      "bytes": 26160,
+      "sha256": "eb216a5a5ae4340a1421bd38e772c739a86251618aeb28d64e8b6204dc64386a"
     },
     {
       "path": "code/orchestrators/verify_live_site.py",
@@ -6210,8 +6240,8 @@
     },
     {
       "path": "code/tests/test_interpreter_consistency.py",
-      "bytes": 4484,
-      "sha256": "6c8d96b23a7d5dd6ea9dce72dbda67bec0f84ecb94e248e8cdbaaed93c2e8b79"
+      "bytes": 4866,
+      "sha256": "04acdc22756fc32d2ffc23bbef3f5242e9e511171a609a7c0f48ffbc6b73ed26"
     },
     {
       "path": "code/tests/test_light_theme.py",
@@ -6235,8 +6265,8 @@
     },
     {
       "path": "code/tests/test_pages_workflow.py",
-      "bytes": 1283,
-      "sha256": "03315b91de0a688f6492aef7ed7a7dd9fb180cc9e42d6c9f49dc5132021f74f8"
+      "bytes": 1467,
+      "sha256": "7a19845bbeca122c921fa24f49c2629f176439e051484d1b0f0b47c9513ef7ce"
     },
     {
       "path": "code/tests/test_paper_metadata_schema.py",
@@ -6369,6 +6399,11 @@
       "sha256": "040e85759de2b7589b6c7368d5c7c721b6e437480706ffb145ca63f12ddeb4fc"
     },
     {
+      "path": "code/tests/test_search_index_surfaces.py",
+      "bytes": 2672,
+      "sha256": "23b0564e383c88dc1baf2e5a05213f0cea7da65573c4cb2cb38df3dec3690ee0"
+    },
+    {
       "path": "code/tests/test_search_utils.py",
       "bytes": 1489,
       "sha256": "6263f5a6272fdc8462710ecb8f821ccc817a340231f23146c6359a07d55e59c2"
@@ -6447,6 +6482,11 @@
       "path": "code/tests/test_validate_repo.py",
       "bytes": 10184,
       "sha256": "02c9f78938d0cb364ba2591804dfb2b4ce9882512991d33cf14169dd8ae2a49d"
+    },
+    {
+      "path": "code/tests/test_validate_repo_parallel.py",
+      "bytes": 3120,
+      "sha256": "f991bd169d79f0148d175b9e1b3197285fdb74784fbe47746ad061b84f48fc12"
     },
     {
       "path": "code/tests/test_verify_live_site.py",
@@ -6571,7 +6611,7 @@
     {
       "path": "data/gsc-followup-checklist.json",
       "bytes": 3475,
-      "sha256": "7aacb69167b21eee7f6d84ef00c48a6969afdc805b749ed88bfd2c781ce7d87a"
+      "sha256": "7c96e779dfb882ee3939a8ec8a1edc1e40f6fdad9eb54f327ce9aa2e50ffe880"
     },
     {
       "path": "data/og-image-counts.json",
@@ -16885,8 +16925,8 @@
     },
     {
       "path": "pyproject.toml",
-      "bytes": 1104,
-      "sha256": "160b2a98c45dfa209bd77771f535f815d5fcea08ab836bb49c9911c18b8b4d08"
+      "bytes": 1208,
+      "sha256": "ca89bd2b2d79023f07fb49f10dbbebfd0eb05226a738a52a4adcc02b53161397"
     },
     {
       "path": "reports.html",
@@ -17560,8 +17600,8 @@
     },
     {
       "path": "uv.lock",
-      "bytes": 82243,
-      "sha256": "e669ce852990b0061df0a4b3a6027faed471a90c173f4ea8697dea1a13f884d6"
+      "bytes": 83791,
+      "sha256": "7a2d5564b2fa6a003e44adc328fe5fd2a9d6a4dd8a51c670c8d51e8891b3a662"
     },
     {
       "path": "videos.html",
@@ -24400,8 +24440,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 469,
-    "bytes": 98163820,
+    "count": 471,
+    "bytes": 99226531,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",

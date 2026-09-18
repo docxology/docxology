@@ -24,6 +24,15 @@ All notable public-index, website, bibliography, and discovery-layer changes are
   live docs verified against current code — zero stale mentions found; the
   two `build_image_sitemap.py` mentions are deliberate removal records pinned
   by `code/tests/test_regenerate_all.py:20-21`. No edits required.
+- **Private catch-up merge + DOC-010 re-run:** the sidecar checkout
+  merged public `main` into the sidecar `main` (400 commits since
+  `0d4e8da1`; 18 conflicts resolved in favor of the canonical upstream
+  payloads). DOC-010 re-run at the merged head: `gsc_followup_preflight`
+  PASS (sitemap 1375 URLs, seo_invariants ok, robots open-crawl, 29 live
+  HTTP 200s; dated receipt `reports/gsc_preflight_2026-09-18.json`),
+  checklist refreshed; signed-in Search Console steps remain externally
+  blocked. Binder chain rebound at the merge receipt; `validate_repo.py`
+  and the full suite green.
 
 ## 2026-09-17
 

@@ -15687,10 +15687,16 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "604cd94bb6bcc407214e6369ffa2feac46f5487e",
-  "source_tree_sha": "4beac4b79bebcceacbf525d483f06755f763b5e3",
-  "source_worktree_clean": true,
-  "source_worktree_dirty_paths": [],
+  "source_commit": "b015043adb75ad4ed36d559e2d95e02d6025805a",
+  "source_tree_sha": "1e006b5538c74de8a950e6397b4e700e2aeee996",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "data/gsc-followup-checklist.json",
+    ".docxology/gate/config.json",
+    ".docxology/gate/gate_report.json",
+    ".docxology/gate/history/adhoc-2026-09-17-04-40-17Z-asof.json",
+    "reports/gsc_preflight_2026-09-18.json"
+  ],
   "summary": {
     "applied": 272,
     "categories": {
