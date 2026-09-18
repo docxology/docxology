@@ -1175,11 +1175,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 927989760,
-        "source_bytes": 906852390,
+        "source_bytes": 907293922,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 4864,
-        "artifact_bytes": 907710849
+        "artifact_file_count": 4867,
+        "artifact_bytes": 908152916
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5513,7 +5513,7 @@
     "artworks": "0d94ef8c0344736379ff4bf10fc22d4aad42356094c87bcc65fbc41fb17117d3",
     "videos": "8933c9bd99d0730afe46b1e95b1da88bc8c605306781d9bb29b8b58c283a2d2f",
     "videos_index": "569cac7b49a6804bfc8f772f99305649e5621fb79fb45fa28d71ffeeef4ab3f5",
-    "search": "8610e4883dccb16ae18071d35a02fd0f500283ba499d2d5e1f594987fa095b54",
+    "search": "1d3b12c01fded344b46a120297b15dba6754c7fa081139e176c086b0148d164a",
     "claims": "1ffabd108c4d4ba3566efe9d4f51c1038721b78867df753db18323aa28a96668",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "94c6a7453fcb46876e385b6c531fdd1be598e3356e889ac79a49a032f60c7be4",
@@ -5522,10 +5522,10 @@
     "organizations": "64083a8b28342d72201b74386d08e83fe89c5883c7700d302b1c97f9e6fd6464",
     "resume": "ba07cd282f9aec727df4a97382ca55265b9d5c21fe9e6364485d9bb1720ca823",
     "work_enrichment": "f6b2d2bcaa5d4548a86f19088a72ee210bc064a99d847989e1d9058a4969b8ab",
-    "catalog": "8e201ccc53330286506d55304e0229c315a8fdc0568c5fa810f35983ed8be5f9",
+    "catalog": "5ee45134a56f4fd5bc68d8e087ddcbc74bbbe304c5e324b660c39739b0ea2abe",
     "reconciliation": "e5a61569f951b848987f92e784f96ad2bc77d17443095392ca0b21bb3e442ee3",
     "reproducibility": "1e1455ab0165b652967ca08decc7dea6c1b1716ab065b15ad2016d4e63e4544e",
-    "generated_manifest": "5b9b061f35526db44e35b8033574729b86cda5c4ab50ca90d63a9c03792c227b",
+    "generated_manifest": "215da6f275dac5042fa6e450efffd945798052f8dbb487247d3363d0cfbedf6a",
     "current_counts": "680717f61dbc2c64f97699d1b885f973cdce7c33f220b39412ef2ae26f4b99a5"
   },
   "source_provenance": {
