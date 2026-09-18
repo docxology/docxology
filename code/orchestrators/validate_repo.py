@@ -15,20 +15,19 @@ import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
-try:
-    from report_paths import latest_report, latest_subdir_file
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import latest_report, latest_subdir_file
+from docxology_tools.report_paths import latest_report, latest_subdir_file  # noqa: E402
 
-from release_evidence import (  # noqa: E402
+from docxology_tools.release_evidence import (  # noqa: E402
     is_ephemeral_release_evidence_path,
     scholar_source_receipt_errors,
     validate_attestation,
 )
-from generation_plan import LOCAL_GENERATION_STEPS, validate_generation_plan  # noqa: E402
+from docxology_tools.generation_plan import LOCAL_GENERATION_STEPS, validate_generation_plan  # noqa: E402
 
 
 REQUIRED_JSON_FILES: list[str] = [
@@ -309,7 +308,7 @@ def validate_paper_citation_cff(repo_root: Path = REPO_ROOT) -> None:
     preserves other hand-curated CFF identifiers.
     """
     from generate_citation_cff import render_outputs
-    from generated_outputs import stale_output_paths
+    from docxology_tools.generated_outputs import stale_output_paths
 
     papers_dir = repo_root / "papers"
     if not papers_dir.is_dir():
@@ -384,8 +383,7 @@ def validate_local_links() -> None:
 
 
 def validate_count_consistency() -> None:
-    sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-    from count_consistency import collect_count_drift
+    from docxology_tools.count_consistency import collect_count_drift
 
     errors = collect_count_drift()
     if errors:
@@ -407,8 +405,7 @@ def validate_sitemap_targets() -> None:
 
 
 def validate_seo_invariants() -> None:
-    sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-    from seo_invariants import check_canonical_integrity, collect_seo_errors
+    from docxology_tools.seo_invariants import check_canonical_integrity, collect_seo_errors
 
     errors = collect_seo_errors(REPO_ROOT)
     errors.extend(check_canonical_integrity(REPO_ROOT))
@@ -581,8 +578,7 @@ def run_standard_validation(*, strict_reports: bool) -> None:
     validate_count_consistency()
     validate_sitemap_targets()
     validate_seo_invariants()
-    sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-    from public_integrity import validate_public_files
+    from docxology_tools.public_integrity import validate_public_files
 
     validate_public_files(REPO_ROOT)
 

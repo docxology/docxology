@@ -27,10 +27,12 @@ import re
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-from scholar_verification import validate_scholar_snapshot_receipt  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.scholar_verification import validate_scholar_snapshot_receipt  # noqa: E402
 
 SNAPSHOT = REPO_ROOT / "data" / "scholar-snapshot.json"
 

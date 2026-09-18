@@ -22,15 +22,17 @@ import re
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-from biblio_table import DEFAULT_BIB_PATH, BiblioRow, iter_bibliography_rows  # noqa: E402
-from bibliography_links import canonical_link_url  # noqa: E402
-from collection_jsonld import display_paths, replace_inline_collection_ld  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.biblio_table import DEFAULT_BIB_PATH, BiblioRow, iter_bibliography_rows  # noqa: E402
+from docxology_tools.bibliography_links import canonical_link_url  # noqa: E402
+from docxology_tools.collection_jsonld import display_paths, replace_inline_collection_ld  # noqa: E402
 from export_bibliography import row_to_work, source_paths  # noqa: E402
-from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
-from site_facts import generated_date, generated_month_year  # noqa: E402
+from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from docxology_tools.site_facts import generated_date, generated_month_year  # noqa: E402
 
 PUBLICATIONS_HTML = REPO_ROOT / "publications.html"
 PUBLICATIONS_LD_JSON = REPO_ROOT / "data" / "publications-ld.json"

@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 212 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 215 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -4115,8 +4115,8 @@
             "@id": "https://danielarifriedman.com/works/Friedman2019PhDBehavioralPhysiologicalTranscriptomic093.html#work",
             "url": "https://danielarifriedman.com/works/Friedman2019PhDBehavioralPhysiologicalTranscriptomic093.html",
             "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2019PhDBehavioralPhysiologicalTranscriptomic093.html",
-            "sameAs": "http://purl.stanford.edu/pb813wm1484",
-            "citation": "Friedman, Daniel Ari. 2019. PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus. Stanford University. URL: http://purl.stanford.edu/pb813wm1484."
+            "sameAs": "https://purl.stanford.edu/pb813wm1484",
+            "citation": "Friedman, Daniel Ari. 2019. PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus. Stanford University. URL: https://purl.stanford.edu/pb813wm1484."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4876,8 +4876,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
-            "headline": "Compositional Approaches to Linguistic Case for Cognitive Modeling",
+            "name": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+            "headline": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
             "datePublished": "2026",
             "author": [
                 {
@@ -4895,9 +4895,9 @@
                 "name": "Active Inference Journal"
             },
             "keywords": "🧠",
-            "@id": "https://danielarifriedman.com/works/Friedman2026CompositionalApproachesLinguisticCase112.html#work",
-            "url": "https://danielarifriedman.com/works/Friedman2026CompositionalApproachesLinguisticCase112.html",
-            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026CompositionalApproachesLinguisticCase112.html",
+            "@id": "https://danielarifriedman.com/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026CognitiveDiagramsReviewingCategorical112.html",
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
@@ -4905,7 +4905,7 @@
                 "url": "https://doi.org/10.5281/zenodo.19695259"
             },
             "sameAs": "https://doi.org/10.5281/zenodo.19695259",
-            "citation": "Friedman, Daniel Ari. 2026. Compositional Approaches to Linguistic Case for Cognitive Modeling. Active Inference Journal. DOI: 10.5281/zenodo.19695259. URL: https://doi.org/10.5281/zenodo.19695259."
+            "citation": "Friedman, Daniel Ari. 2026. Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case. Active Inference Journal. DOI: 10.5281/zenodo.19695259. URL: https://doi.org/10.5281/zenodo.19695259."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6582,12 +6582,116 @@
             "author": [
                 {
                     "@type": "Person",
+                    "name": "John Protzko"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Isaac Z. Tanner"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Morgan Daly Dedyo"
+                },
+                {
+                    "@type": "Person",
+                    "name": "JiaJia Fu"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Bhavya Perma"
+                },
+                {
+                    "@type": "Person",
                     "@id": "https://danielarifriedman.com/#person",
                     "name": "Daniel Ari Friedman",
                     "sameAs": [
                         "https://orcid.org/0000-0001-6232-9096",
                         "https://www.wikidata.org/wiki/Q138781444"
                     ]
+                },
+                {
+                    "@type": "Person",
+                    "name": "Ada Gabriela Blidner"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Juliet Tegan Johnston"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Anant Kumar Srivastava"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Roland Ruscher"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Andreas Kupz"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Michael A. Tarselli"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Felicia Beardsley"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Mark Martin Jensen"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Nikos Konstantinides"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Divyansh Agarwal"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Julia Yuen"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Suchitra D. Gopinath"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Michael Tran Duong"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Michael Strong"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Matúš Soták"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Katie Burnette"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Samuel Nathan Kirshner"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Athanasia Nikolaou"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Basant A. Ali"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Benedito Alves de Oliveira"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Elvira Sojli"
                 }
             ],
             "publisher": {
@@ -7102,8 +7206,13 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
                 }
             ],
             "publisher": {
@@ -8024,13 +8133,8 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Person",
-                    "@id": "https://danielarifriedman.com/#person",
-                    "name": "Daniel Ari Friedman",
-                    "sameAs": [
-                        "https://orcid.org/0000-0001-6232-9096",
-                        "https://www.wikidata.org/wiki/Q138781444"
-                    ]
+                    "@type": "Organization",
+                    "name": "Daniel Ari Friedman"
                 }
             ],
             "publisher": {
@@ -8090,13 +8194,8 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Person",
-                    "@id": "https://danielarifriedman.com/#person",
-                    "name": "Daniel Ari Friedman",
-                    "sameAs": [
-                        "https://orcid.org/0000-0001-6232-9096",
-                        "https://www.wikidata.org/wiki/Q138781444"
-                    ]
+                    "@type": "Organization",
+                    "name": "Daniel Ari Friedman"
                 }
             ],
             "publisher": {
@@ -8123,25 +8222,20 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Person",
+                    "@type": "Organization",
                     "name": "Siddhant Shrivastava"
                 },
                 {
-                    "@type": "Person",
+                    "@type": "Organization",
                     "name": "Evelyn C. Goh"
                 },
                 {
-                    "@type": "Person",
+                    "@type": "Organization",
                     "name": "Alexandra Mikhailova"
                 },
                 {
-                    "@type": "Person",
-                    "@id": "https://danielarifriedman.com/#person",
-                    "name": "Daniel Ari Friedman",
-                    "sameAs": [
-                        "https://orcid.org/0000-0001-6232-9096",
-                        "https://www.wikidata.org/wiki/Q138781444"
-                    ]
+                    "@type": "Organization",
+                    "name": "Daniel Ari Friedman"
                 }
             ],
             "publisher": {
@@ -8348,11 +8442,110 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.22243473",
-                "url": "https://doi.org/10.5281/zenodo.22243473"
+                "value": "10.5281/zenodo.22243472",
+                "url": "https://doi.org/10.5281/zenodo.22243472"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.22243473",
-            "citation": "Friedman, Daniel Ari. 2026. Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global). Zenodo. DOI: 10.5281/zenodo.22243473. URL: https://doi.org/10.5281/zenodo.22243473."
+            "sameAs": "https://doi.org/10.5281/zenodo.22243472",
+            "citation": "Friedman, Daniel Ari. 2026. Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global). Zenodo. DOI: 10.5281/zenodo.22243472. URL: https://doi.org/10.5281/zenodo.22243472."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+            "headline": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.22663906",
+                "url": "https://doi.org/10.5281/zenodo.22663906"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.22663906",
+            "citation": "Friedman, Daniel Ari. 2026. Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation. Zenodo. DOI: 10.5281/zenodo.22663906. URL: https://doi.org/10.5281/zenodo.22663906."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "FractiSkills: One Portable Agent Skill per Page",
+            "headline": "FractiSkills: One Portable Agent Skill per Page",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026FractiSkillsOnePortableAgent217.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026FractiSkillsOnePortableAgent217.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026FractiSkillsOnePortableAgent217.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.22712650",
+                "url": "https://doi.org/10.5281/zenodo.22712650"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.22712650",
+            "citation": "Friedman, Daniel Ari. 2026. FractiSkills: One Portable Agent Skill per Page. Zenodo. DOI: 10.5281/zenodo.22712650. URL: https://doi.org/10.5281/zenodo.22712650."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security",
+            "headline": "Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026AgenticSecurityOperatingSystems218.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026AgenticSecurityOperatingSystems218.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026AgenticSecurityOperatingSystems218.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.22754351",
+                "url": "https://doi.org/10.5281/zenodo.22754351"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.22754351",
+            "citation": "Friedman, Daniel Ari. 2026. Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security. Zenodo. DOI: 10.5281/zenodo.22754351. URL: https://doi.org/10.5281/zenodo.22754351."
         }
     ]
 }

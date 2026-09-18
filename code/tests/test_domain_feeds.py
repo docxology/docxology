@@ -14,14 +14,17 @@ import xml.etree.ElementTree as ET  # nosec - parsing our own generated XML
 from pathlib import Path
 from xml.dom import minidom
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 import build_domain_feeds  # noqa: E402
 from build_domain_pages import DOMAINS  # noqa: E402
-from sitemap_policy import INDEX_PRIORITY_STATIC  # noqa: E402
+from docxology_tools.sitemap_policy import INDEX_PRIORITY_STATIC  # noqa: E402
 
 
 def _mini_repo(tmp_path: Path) -> Path:

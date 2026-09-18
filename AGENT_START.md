@@ -12,6 +12,11 @@ This repository is the public research, software, citation, evidence, and websit
 5. Use [`pages/BIBLIOGRAPHY.md`](pages/BIBLIOGRAPHY.md) as the curated bibliography source of truth.
 6. Use [`pages/SOFTWARE.md`](pages/SOFTWARE.md) as the curated software source of truth.
 7. Use [`docs/operations/publication-sync.md`](docs/operations/publication-sync.md) for GitHub + Zenodo publication intake and DOI/version refreshes.
+   For 1-3 new pairs with data-only changes and a same-day warning-free scan,
+   use the **fast intake path** in that runbook
+   ([docs/operations/publication-sync.md](docs/operations/publication-sync.md)
+   → "Fast Intake Path (Small, Data-Only Changes)") — cached reports and
+   fingerprint-gated regeneration instead of full re-fetching.
 8. Use [`docs/operations/repository-classification.md`](docs/operations/repository-classification.md) for complete-inventory versus curated-software review.
 9. Use [`docs/operations/evidence-refresh.md`](docs/operations/evidence-refresh.md) for dated public-source and claim refreshes.
 10. Browse [`docs/README.md`](docs/README.md) for the full repository-documentation index (architecture, operations, SEO, design, security, releases); [`docs/AGENTS.md`](docs/AGENTS.md) holds agent operational guidance.
@@ -39,12 +44,24 @@ This repository is the public research, software, citation, evidence, and websit
 | Run browser behavior QA | [`code/orchestrators/browser_qa.py`](code/orchestrators/browser_qa.py), latest `reports/browser-qa/` | `uv sync --extra browser-qa`, `uv run --extra browser-qa playwright install chromium`, then `uv run --extra browser-qa python3 code/orchestrators/browser_qa.py` and `--check` |
 | Check release integrity | [`data/release-integrity.json`](data/release-integrity.json), [`data/pages-artifact-manifest.json`](data/pages-artifact-manifest.json) | `uv run python3 code/orchestrators/build_release_integrity.py --check`; require a deployed release with `--require-deployed` |
 | Refresh public-source inventory | latest `reports/public_source_inventory_*.json` | `uv run python3 code/orchestrators/refresh_public_source_inventory.py` |
-| Triage external links | latest dated report under `reports/` via the [GENERATED.md](GENERATED.md) triage row (e.g. `reports/external_links_triage_2026-08-29.md`) | `uv run python3 code/orchestrators/check_external_links.py`, then `python3 code/orchestrators/build_external_link_triage.py` |
+| Triage external links | latest dated report under `reports/` via the [GENERATED.md](GENERATED.md) triage row (e.g. `reports/external_links_triage_2026-09-07.md`) | `uv run python3 code/orchestrators/check_external_links.py`, then `python3 code/orchestrators/build_external_link_triage.py` |
 | Extract paper full text + images | [`papers/`](papers/), [`code/orchestrators/extract_paper_texts.py`](code/orchestrators/extract_paper_texts.py) | `uv sync --extra pdf-extraction`, then `uv run --extra pdf-extraction python3 code/orchestrators/extract_paper_texts.py --force` (PyMuPDF is optional; base `pypdf` remains the text fallback) |
 | Generate CITATION.cff | [`papers/*/CITATION.cff`](papers/), [`code/orchestrators/generate_citation_cff.py`](code/orchestrators/generate_citation_cff.py) | `uv run python3 code/orchestrators/generate_citation_cff.py --force` |
 | Deploy SEO + security tags | [`*.html`](.), [`code/orchestrators/deploy_seo_security.py`](code/orchestrators/deploy_seo_security.py) | `uv run python3 code/orchestrators/deploy_seo_security.py` (idempotent — only adds missing CSP, rel-me, hreflang) |
 | Migrate inline handlers | [`*.html`](.), [`code/orchestrators/migrate_inline_handlers.py`](code/orchestrators/migrate_inline_handlers.py) | `uv run python3 code/orchestrators/migrate_inline_handlers.py` |
 | Optimize font loading | [`*.html`](.), [`code/orchestrators/optimize_font_loading.py`](code/orchestrators/optimize_font_loading.py) | `uv run python3 code/orchestrators/optimize_font_loading.py` |
+
+Settle a finished change in one command — see
+[`docs/operations/settle.md`](docs/operations/settle.md): it classifies dirty paths, runs the tiered
+check battery, then lands the payload and control-tail commits (`--push`/`--pr` optional). Preview
+the plan without executing anything with `python3 code/orchestrators/settle.py --tier fast --dry-run`.
+
+Landing rule worth knowing before your first lap: a commit that creates new
+dated reports (snapshots, pairing receipts, reconciliation reports) flips the
+`latest_source_report()` tracked-file resolution, so `sync_site_facts.py` and
+`build_search_index.py` need one re-render pass after the payload commit —
+see the do-not-skip list in
+[`docs/operations/publication-sync.md`](docs/operations/publication-sync.md).
 
 ## Source-Of-Truth Rules
 
@@ -53,6 +70,11 @@ This repository is the public research, software, citation, evidence, and websit
 - Treat Wikidata as an entity anchor, not sole evidence for lightly referenced claims.
 - Google Scholar citation counts use [`data/scholar-snapshot.json`](data/scholar-snapshot.json) as the single source of truth; propagate with [`code/orchestrators/sync_scholar_metrics.py`](code/orchestrators/sync_scholar_metrics.py) (`--check` exits 1 on drift). Update only after a direct (non-cached) Scholar verify—anonymous or cached UI views can disagree with the snapshot. Every snapshot revision also needs a matching direct-authenticated [`data/scholar-verification-receipt.json`](data/scholar-verification-receipt.json), bound to the exact snapshot SHA-256.
 - Do not edit generated outputs directly unless the generator itself is also updated.
+- After `gh pr merge --delete-branch`, `gh` switches the checkout to the
+  default branch — commit on a work branch, never on local `main` (2026-09-08:
+  two commits landed on local main mid-session and had to be moved to a
+  branch before pushing). Create the next work branch *before* merging, or
+  `git checkout <work-branch>` immediately after the merge returns.
 
 ## Validation Command
 
@@ -62,7 +84,6 @@ PYTHONDONTWRITEBYTECODE=1 uv run python3 -m pytest code/tests -q -n auto --dist 
 uv run --group lint ruff check code
 ```
 
-These are the same three gates CI runs (`.github/workflows/validate.yml` and the
-`validate` job of `pages.yml`). The lint rule set is configured in
+These are the same checks CI runs — `validate_repo`, pytest, ruff, and the artifact-budget gate (`.github/workflows/validate.yml`, the `validate` job of `pages.yml`, and `settle.py`'s fast tier). The lint rule set is configured in
 `pyproject.toml` under `[tool.ruff.lint]`, not on the command line, so a local
 run and CI enforce exactly the same rules.

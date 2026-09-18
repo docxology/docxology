@@ -9,21 +9,22 @@ from pathlib import Path
 
 from pypdf import PdfReader
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-SRC_DIR = REPO_ROOT / "code" / "src"
-ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
-sys.path.insert(0, str(SRC_DIR))
-sys.path.insert(0, str(ORCH_DIR))
 
 from build_resume import RESUME_HTML_URL, VERIFY_URL, _provenance_base, _sha256_bytes, render_pdf, render_resume_html, render_verify_html  # noqa: E402
-from resume_data import (  # noqa: E402
+from docxology_tools.resume_data import (  # noqa: E402
     CODA_GLYPH_RE,
     build_resume_payload,
     json_dumps,
     load_resume_inputs,
     render_text,
 )
-from count_consistency import (  # noqa: E402
+from docxology_tools.count_consistency import (  # noqa: E402
     canonical_bibliography_snapshot,
     canonical_software_snapshot,
 )
@@ -145,7 +146,7 @@ def test_pdf_contains_clickable_link_annotations():
     assert "mailto:daniel@activeinference.institute" in uris
     assert "https://github.com/docxology" in uris
     assert "https://doi.org/10.5281/zenodo.17555266" in uris
-    assert "http://purl.stanford.edu/pb813wm1484" in uris
+    assert "https://purl.stanford.edu/pb813wm1484" in uris
     assert "https://activeinference.institute/structure/officers/" in uris
     assert "https://api.nsf.gov/services/v1/awards/2010290.json" in uris
     assert "https://doi.org/10.5281/zenodo.17138223" in uris

@@ -17,12 +17,14 @@ import sys
 from functools import cache
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-from count_consistency import parse_software_catalog_counts  # noqa: E402
-from software_table import iter_software_rows, software_rows_to_dict  # noqa: E402
-from report_paths import stable_generated_at  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.count_consistency import parse_software_catalog_counts  # noqa: E402
+from docxology_tools.software_table import iter_software_rows, software_rows_to_dict  # noqa: E402
+from docxology_tools.report_paths import stable_generated_at  # noqa: E402
 
 SOFTWARE_MD = REPO_ROOT / "pages" / "SOFTWARE.md"
 SCHOLAR_SNAPSHOT = REPO_ROOT / "data" / "scholar-snapshot.json"
@@ -62,10 +64,7 @@ def _scholar_claim() -> dict:
         ),
     }
 
-try:
-    from report_paths import generated_timestamp, latest_source_report, rel
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, latest_source_report, rel
+from docxology_tools.report_paths import generated_timestamp, latest_source_report, rel  # noqa: E402
 
 
 def parse_software() -> list[dict]:
@@ -430,7 +429,7 @@ def _claims() -> list[dict]:
             ],
             "checked_at": "2026-08-26",
             "confidence": "medium",
-            "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 31 link to a public page.",
+            "verification_method": "Current AII Scientific Advisory Board page lists 32 current members, of whom 30 link to a public page.",
             "maintenance_owner": "INTEGRATOR",
             "caveat": "State this as the current public membership count, not a cohort announcement or a claim about any specific announcement month.",
         },

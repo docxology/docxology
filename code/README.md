@@ -11,6 +11,35 @@ helpers, and write the generated artifacts checked into the repo root.
 - Gate before declaring work done: `uv run python3 code/orchestrators/validate_repo.py`
 - Tests: `uv run python3 -m pytest code/tests -q`
 
+## Import contract (DOC-014)
+
+[`code/src/docxology_tools/`](src/docxology_tools/) is the canonical import
+surface: import shared modules as `docxology_tools.<module>` (a flat
+`import <module>` also works and resolves to the same module object). The
+package's `__init__` owns the one canonical `sys.path` bootstrap — `code/src`
+and `code/orchestrators` onto `sys.path`, idempotent.
+
+Orchestrator wrappers never depend on the working tree layout or the
+invocation cwd: every script that needs `code/src` starts with the same
+uniform two-line wrapper bootstrap —
+
+```python
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # canonical bootstrap
+```
+
+— so a wrapper runs identically as `python3 code/orchestrators/<name>.py`
+from any cwd, flat-imported by tests, or copied into a minimal checkout
+(test fixtures copy single orchestrators next to a bare package `__init__`
+and execute them standalone). Beyond those wrapper headers and the package
+itself, nothing in `code/` mutates `sys.path`. Sibling imports between
+orchestrators stay flat (e.g. `from build_video_pages import ...`) — the
+imported sibling runs the same bootstrap first.
+
+Name-level re-exports are deliberately not provided (public names collide
+across flat modules — `load_json` exists in both `youtube_fetcher` and
+`resume_data`): import a module, then take names from it.
+
 ## `code/src/` — shared modules
 
 | Module | Purpose |

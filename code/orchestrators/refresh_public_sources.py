@@ -6,8 +6,6 @@ reports/. It does not edit site claims, bibliography counts, or profile copy.
 Use the report as evidence before making deliberate site-wide claim updates.
 """
 
-from __future__ import annotations
-
 import argparse
 import datetime as dt
 import json
@@ -17,13 +15,16 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-from report_paths import source_commit, source_worktree_state  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.report_paths import source_commit, source_worktree_state  # noqa: E402
 
 ORCID = "0000-0001-6232-9096"
 USER_AGENT = "docxology-public-source-refresh/1.0 (https://github.com/docxology/docxology)"
@@ -211,28 +212,29 @@ def zenodo_record(record_id: str) -> dict[str, Any]:
         },
     )
 
-
 def build_report() -> dict[str, Any]:
     today = dt.datetime.now(dt.timezone.utc).date().isoformat()
-    checks = [
-        github_user("docxology"),
-        github_user("ActiveInferenceInstitute"),
-        orcid_works(),
-        pubmed_exact_author(),
-        europe_pmc_exact_author(),
-        crossref_orcid(),
-        zenodo_query("Zenodo exact-name creator records", 'metadata.creators.person_or_org.name:"Friedman, Daniel Ari"'),
-        zenodo_query(
+    tasks = [
+        lambda: github_user("docxology"),
+        lambda: github_user("ActiveInferenceInstitute"),
+        lambda: orcid_works(),
+        lambda: pubmed_exact_author(),
+        lambda: europe_pmc_exact_author(),
+        lambda: crossref_orcid(),
+        lambda: zenodo_query("Zenodo exact-name creator records", 'metadata.creators.person_or_org.name:"Friedman, Daniel Ari"'),
+        lambda: zenodo_query(
             "Zenodo ORCID-linked records",
             f'metadata.creators.person_or_org.identifiers.identifier:"{ORCID}"',
         ),
-        zenodo_record("18686966"),
-        zenodo_record("19600217"),
-        zenodo_record("19897664"),
-        zenodo_record("14108992"),
-        zenodo_record("17982447"),
+        lambda: zenodo_record("18686966"),
+        lambda: zenodo_record("19600217"),
+        lambda: zenodo_record("19897664"),
+        lambda: zenodo_record("14108992"),
+        lambda: zenodo_record("17982447"),
+        *(lambda repo=repo: github_repo("ActiveInferenceInstitute", repo) for repo in SELECTED_AII_REPOS),
     ]
-    checks.extend(github_repo("ActiveInferenceInstitute", repo) for repo in SELECTED_AII_REPOS)
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        checks = list(pool.map(lambda fn: fn(), tasks))
     facts = {
         check["label"]: check.get("result")
         for check in checks

@@ -10,19 +10,21 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 REPORT_PATH = REPO_ROOT / "reports" / "current_counts.md"
 JSON_PATH = REPO_ROOT / "data" / "current-counts.json"
 
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from count_consistency import (  # noqa: E402
+from docxology_tools.count_consistency import (  # noqa: E402
     DOMAIN_COUNTS,
     TYPE_LABELS,
     parse_bibliography_rows,
     parse_paper_folder_count,
     parse_software_catalog_counts,
 )
-from report_paths import latest_source_report  # noqa: E402
+from docxology_tools.report_paths import latest_source_report, stable_generated_at  # noqa: E402
 
 
 def _json(path: str) -> dict:
@@ -217,18 +219,14 @@ def preserve_timestamp_when_unchanged(payload: dict) -> dict:
 
     The count payload is a generated snapshot, not a heartbeat.  Rewriting its
     timestamp on every regeneration causes every downstream hash and page to
-    churn even when the source tables are identical.
+    churn even when the source tables are identical.  ``stable_generated_at``
+    returns the on-disk timestamp only when the payload body (everything except
+    ``generated_at``) matches; an unreadable or missing snapshot yields None,
+    which keeps the freshly stamped payload.
     """
-    if not JSON_PATH.exists():
-        return payload
-    try:
-        existing = json.loads(JSON_PATH.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return payload
-    current_body = {key: value for key, value in payload.items() if key != "generated_at"}
-    existing_body = {key: value for key, value in existing.items() if key != "generated_at"}
-    if current_body == existing_body and existing.get("generated_at"):
-        payload["generated_at"] = existing["generated_at"]
+    stable = stable_generated_at(JSON_PATH, payload)
+    if stable:
+        payload["generated_at"] = stable
     return payload
 
 

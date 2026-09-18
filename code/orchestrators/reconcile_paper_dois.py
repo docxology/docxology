@@ -19,11 +19,12 @@ from pathlib import Path
 import sys
 from typing import Any
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-from biblio_table import iter_bibliography_rows  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.biblio_table import iter_bibliography_rows  # noqa: E402
 from regenerate_docs import DOI_TRAILING, DOI_RE  # noqa: E402
 
 BIBLIOGRAPHY = REPO_ROOT / "pages" / "BIBLIOGRAPHY.md"

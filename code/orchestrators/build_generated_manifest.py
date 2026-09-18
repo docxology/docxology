@@ -8,13 +8,12 @@ import json
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-try:
-    from report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel  # noqa: E402
 
 JSON_OUT = REPO_ROOT / "data" / "generated-manifest.json"
 MD_OUT = REPO_ROOT / "GENERATED.md"

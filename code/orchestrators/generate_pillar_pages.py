@@ -5,13 +5,14 @@ import argparse
 from pathlib import Path
 import sys
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-SRC_DIR = REPO_ROOT / "code" / "src"
-sys.path.insert(0, str(SRC_DIR))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
-from build_stamp import footer_build_stamp_html  # noqa: E402
-from site_nav import (  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
+from docxology_tools.site_nav import (  # noqa: E402
     INTERACTIVE_SCRIPTS,
     MENU_ESC_SCRIPT,
     render_breadcrumb,
@@ -56,7 +57,7 @@ def render_page(
     terms: list[str],
 ) -> str:
     footer_stamp = footer_build_stamp_html()
-    from title_policy import clip_title  # noqa: PLC0415
+    from docxology_tools.title_policy import clip_title  # noqa: PLC0415
 
     # SERP title budget: <title>, og:title, twitter:title, and the JSON-LD
     # headline all render from this string, so it is clipped once here. The
@@ -214,7 +215,7 @@ def render_outputs(*, output_root: Path = REPO_ROOT) -> dict[Path, str]:
              "<ol>\n"
              "<li><strong>Provenance-Bound Claims:</strong> Every generative assertion must carry cryptographic or traceable pointers to source data, preventing hallucination cascading across collaborative agent chains.</li>\n"
              "<li><strong>Non-Monotonic Epistemic Auditing:</strong> Systems must maintain verifiable absence ledgers (such as the <a href='works/Friedman2026WhiteLineTypedLedger202.html'>White Line Ledger</a>) and explicit red lines (<a href='works/Friedman2026PersonalRedLinesDevelopment203.html'>Personal Red Lines</a>) to ensure agent self-improvement remains within bounded, verified parameter regimes.</li>\n"
-             "<li><strong>Typological and Categorical Invariants:</strong> Employing formal commutative diagrams as specified in <a href='works/Friedman2026CompositionalApproachesLinguisticCase112.html'>Cognitive Case Diagrams</a>, multi-agent messages must preserve algebraic consistency across relational transformations, immunizing agent swarms against prompt injection and semantic drift.</li>\n"
+             "<li><strong>Typological and Categorical Invariants:</strong> Employing formal commutative diagrams as specified in <a href='works/Friedman2026CognitiveDiagramsReviewingCategorical112.html'>Cognitive Case Diagrams</a>, multi-agent messages must preserve algebraic consistency across relational transformations, immunizing agent swarms against prompt injection and semantic drift.</li>\n"
              "</ol>"),
             ("How Does the AMITT Framework and Epistemic Architecture Function in Practice?",
              "<p>The <strong>Adversarial Misinformation and Influence Tactics and Techniques (AMITT)</strong> framework—modeled on the MITRE ATT&CK framework in classical InfoSec—provides an operational taxonomy for cognitive defenders. By mapping the full incident lifecycle from initial reconnaissance (target audience analysis, sentiment mapping) through weaponization (narrative drafting, meme synthesis), delivery (bot amplification, sockpuppet networks), to exploitation (polarization, institutional paralysis), AMITT enables structured response playbooks.</p>\n"
@@ -439,7 +440,7 @@ def render_outputs(*, output_root: Path = REPO_ROOT) -> dict[Path, str]:
              "<p>Active Inference provides a natural mathematical bridge between statistical learning and symbolic reasoning. Rather than maintaining an arbitrary hybrid pipeline, Active Inference formulates inference across discrete, structured categorical spaces:</p>\n"
              "<div class='callout-card'><h3>Active Inference as a Neurosymbolic Architecture</h3><ul>\n"
              "<li><strong>Statistical Likelihoods with Discrete State Spaces:</strong> The generative model uses continuous probability distributions ($A$-matrix likelihood mappings) to ground noisy neural perception while operating over discrete, structured state spaces ($B$-matrix transitions) that represent formal symbolic relations.</li>\n"
-             "<li><strong>Categorical and Case-Theoretic Diagrams:</strong> In <a href='works/Friedman2026CompositionalApproachesLinguisticCase112.html'>Cognitive Case Diagrams</a> (Friedman, 2026), commutative category-theoretic diagrams encode the relational invariants of linguistic cases and causal processes, ensuring that inference preserves algebraic consistency across state transformations.</li>\n"
+             "<li><strong>Categorical and Case-Theoretic Diagrams:</strong> In <a href='works/Friedman2026CognitiveDiagramsReviewingCategorical112.html'>Cognitive Case Diagrams</a> (Friedman, 2026), commutative category-theoretic diagrams encode the relational invariants of linguistic cases and causal processes, ensuring that inference preserves algebraic consistency across state transformations.</li>\n"
              "<li><strong>Formal Theorem Verification:</strong> The <a href='works/Friedman2026TowardsLean4Formalization113.html'>fep_lean project</a> (2026) verifies Free Energy Principle mathematics in Lean 4, providing formal symbolic proofs that constrain neurosymbolic agent behavior.</li>\n"
              "</ul></div>"),
             ("What Is the AGEINT Framework for Agentic Intelligence?",

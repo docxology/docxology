@@ -14,7 +14,8 @@ The canonical repository includes paper PDFs, extracted paper figures, and
 dated visual-QA screenshot binaries for provenance, while the published site is
 the bounded Pages artifact assembled by
 `code/orchestrators/build_pages_artifact.py` and deployed from
-`.github/workflows/pages.yml`. The artifact builder warns at 850 MiB and fails
+`.github/workflows/pages.yml`. The artifact builder warns at 880 MiB (raised
+from 850 MiB by the 2026-09-11 budget review below) and fails
 at the 900 MiB release hard ceiling; GitHub's platform limit is 1 GiB. After
 the earlier prune of duplicate paper binaries, the artifact stood at
 **826 MiB** — about 24 MiB below the 900 MiB ceiling and just inside the
@@ -85,8 +86,9 @@ genuinely superseded sets (see the report-retention appendix).
 Revisit Option A when **any** of the following becomes true:
 
 1. **Artifact size trigger:** the Pages artifact is projected at more than
-   850 MiB in a release check (`build_pages_artifact.py --check-size`), i.e.
-   the review-warning band is reached again.
+   880 MiB in a release check (`build_pages_artifact.py --check-size`), i.e.
+   the review-warning band is reached again (the band moved 850 → 880 MiB in
+   the 2026-09-11 budget review below).
 2. **Flickr dependency trigger:** Flickr changes its hotlinking behavior or
    terms of service such that `live.staticflickr.com` thumbnails become
    unreliable, rate-limited, or disallowed for this use.
@@ -97,9 +99,10 @@ Revisit Option A when **any** of the following becomes true:
 
 When Option A is executed, self-host every `artworks.json` thumbnail on an
 origin this site owns, then (and only then) reintroduce an image sitemap whose
-every `<image:loc>` is same-origin — the pinned tests in
-`code/tests/test_build_image_sitemap.py` encode exactly this reversal
-condition and will fail until the precondition holds.
+every `<image:loc>` is same-origin — the live pin in
+`code/tests/test_regenerate_all.py:20-21` (`build_image_sitemap.py` removed
+from the generation chain) encodes exactly this reversal condition and will
+fail until the precondition holds.
 
 
 ## Correction (2026-08-29, handoff #3 section 3)
@@ -125,3 +128,58 @@ active planning item now, not a distant condition. Any image-heavy addition
 (per-work OG cards, self-hosted art thumbnails) must wait for the assets-origin
 decision. CI should fail when artifact MiB crosses the warning line rather than
 discovering it at the ceiling (assigned to the ci-tests lane).
+
+## Budget review (2026-09-11): review-warning band 850 → 880 MiB
+
+The 2026-09-10 publications intake (Skillarum #216 with its versioned PDF,
+plus the Cognitive Case Diagrams v2.4.0 versioned PDF — ~19 MiB of permanent
+paper-PDF growth) and the 2026-09-11 UTC-rollover double-generation of the
+dated evidence families pushed the projected artifact from 844.9 MiB (2026-09-07
+baseline) to 870.5 MiB, past the 850 MiB review-warning band. Composition at
+review: paper PDFs 681 MiB (78%), extracted paper images 950 MiB (omitted from
+the projection by policy), published dated reports ≈ 60 MiB, everything else
+small.
+
+Decision: the review-warning band moves to **880 MiB** — 20 MiB of review
+headroom below the unchanged 900 MiB release hard ceiling
+(`code/src/artifact_budget.py` `BUDGET_MIB`, `build_pages_artifact.py`
+`WARNING_ARTIFACT_BYTES` and the manifest `warning_policy` string, the
+validate.yml step name, and the size trigger above updated together). The
+durable lever — omitting superseded dated reports from the Pages projection
+while they remain in the repository (per the DOC-012 retention tiers, with
+GitHub tree/raw fallbacks) — is flagged for the principal in TODO.md; without
+it, the next intake's ~20 MiB of paper PDFs reaches the hard ceiling.
+
+## Execution (2026-09-11): superseded-report omission class landed
+
+The durable lever from the budget review above landed as the third omission
+class in `build_pages_artifact.py` (shared cited-by semantics with
+`prune_old_reports` via the new `code/src/report_references.py` scan): any
+tracked `reports/` path strictly older than the newest date of its family —
+top-level `reports/<family>_<YYYY-MM-DD>` receipts and whole dated
+`reports/visual-qa/`, `reports/browser-smoke/`, `reports/browser-qa/` sets —
+is omitted from the Pages projection while remaining committed in the
+repository. Reports cited from a published page or data file are never
+omitted, and a post-assemble 404 guard fails the build if any referenced
+repository path was not copied.
+
+Measured at landing, against the 2026-09-11 growth receipt (864.17 MiB, 5,184
+files — a same-day-overwritten receipt no longer in the tree): the
+omission class newly removes **390 files / 70.9 MiB** that were previously in
+the artifact (74.4 MB of non-binary superseded receipts and manifests; the
+visual-QA/browser-smoke binaries under the superseded dated sets were already
+omitted by the binary class and are not double-counted), projecting the
+artifact at **≈793.3 MiB** — about **87 MiB** of review headroom below the
+unchanged 880 MiB warning band. Trigger (a) above therefore returns to
+dormant: the next evidence wave adds only each family's newest receipt, and
+yesterday's drops out automatically, so ordinary dated-evidence growth no
+longer moves the artifact toward the ceiling. Option A (self-hosted art
+thumbnails) remains deferred under the same triggers; the band stays at
+880 MiB with the 900 MiB hard ceiling untouched.
+
+Re-anchored to the current newest receipt
+(`reports/pages_artifact_growth_2026-09-15.json`: **825.6 MiB / 4,820
+files** — already net of the omission classes), the artifact sits about
+**54 MiB** below the 880 MiB warning band — headroom for roughly 2-3 more
+intakes at the observed ~15-20 MiB-per-intake PDF growth. Review cadence
+per DOC-009 stays monthly and after any anomalous growth jump.

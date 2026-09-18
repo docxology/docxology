@@ -19,10 +19,12 @@ import argparse
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
-from site_nav import (  # noqa: E402
+from docxology_tools.build_stamp import footer_build_stamp_html, reuse_on_disk_stamp  # noqa: E402
+from docxology_tools.site_nav import (  # noqa: E402
     CSP_META_TAG,
     HEAD_EXTRAS,
     INTERACTIVE_SCRIPTS,

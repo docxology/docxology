@@ -74,7 +74,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 
 - 2026 — [A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring](https://doi.org/10.5281/zenodo.19461933)
 - 2026 — [Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences](https://doi.org/10.1007/978-3-032-16955-6_11)
-- 2026 — [Compositional Approaches to Linguistic Case for Cognitive Modeling](https://doi.org/10.5281/zenodo.19695259)
+- 2026 — [Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case](https://doi.org/10.5281/zenodo.19695259)
 - 2026 — [Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics](https://doi.org/10.5281/zenodo.19699233)
 - 2026 — [GeneralizedNotationNotation (GNN)](https://doi.org/10.5281/zenodo.7803313)
 - 2026 — [On-Policy Distillation as Active Inference in Finite Variational Models](https://doi.org/10.5281/zenodo.20747834)
@@ -164,7 +164,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 54
+- Works: 57
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 
@@ -191,9 +191,9 @@ Research templates, markdown containers, discovery engines, reproducible workflo
 - [template](https://github.com/docxology/template) — Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo
 - [mdkv](https://github.com/docxology/mdkv) — MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents
 - [markdown_decision_process](https://github.com/docxology/markdown_decision_process) — Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning
-- [steganographer](https://github.com/docxology/steganographer) — High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
+- [steganographer](https://github.com/docxology/steganographer) — High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 484 tests, GStreamer integration
 - [timeline_generator](https://github.com/docxology/timeline_generator) — Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network
-- [codomyrmex](https://github.com/docxology/codomyrmex) — AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · Zenodo
+- [codomyrmex](https://github.com/docxology/codomyrmex) — AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration ·  · Citation DOI
 - [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI
 - [biol-1](https://github.com/docxology/biol-1) — BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 
@@ -226,7 +226,7 @@ Honey bee evolution, gene expression variation, nuclear structure, population ge
 **Selected repositories**
 
 - [MetaInformAnt](https://github.com/docxology/MetaInformAnt) — Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond
-- [EvoJump](https://github.com/docxology/EvoJump) — Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics
+- [EvoJump](https://github.com/docxology/EvoJump) — Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · Zenodo
 - [biology_textbook](https://github.com/docxology/biology_textbook) — Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI
 - [biol-8](https://github.com/docxology/biol-8) — BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 - [biol-1](https://github.com/docxology/biol-1) — BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content

@@ -2,14 +2,391 @@
 
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
-## 2026-09-06
 
-- **Gate wall-clock: three changes, all with a deterministic measure rather than a stopwatch.**
-  - `validate_repo.py` runs its 47 no-write checks through a worker pool instead of strictly one at a time. The plan's ordering exists to constrain *writes* — `coverage_errors` already rejects a check command carrying a write flag — so verification never had an ordering requirement. Failures are reported in plan order, not completion order, so the same broken tree always names the same generator; `DOCXOLOGY_CHECK_WORKERS=1` restores serial execution on a memory-constrained machine.
-  - `build_search_index.render()` is memoised on its only argument. One invocation rendered three times (staleness candidate, main index, and again inside `render_split`), each pass reading nine JSON sources and rebuilding every item: 27 source-file loads per write cycle, now 18. Output is byte-identical.
-  - The test suite runs under `pytest -n auto --dist loadfile` (556 tests, previously single-process). `loadfile` keeps every test in a file on one worker so module-level caches and fixtures behave exactly as written.
+## 2026-09-18
 
-- **The repository validation gate is green again — one clock reading was being taken twice.** `Validate repository` had failed on every push to `main` since at least 2026-09-01, always at `build_search_index.py --check` with the same three "stale" split surfaces. The cause: `stable_generated_at` returns `None` whenever the index body actually changed, and that `None` reached `render()` and `render_split()` as two separate calls, each of which then read the clock for itself. On slow storage the readings landed seconds apart (`search-index.json` at `22:50:01Z`, its three companions at `22:50:04Z`), so the four surfaces were written disagreeing. `--check` re-renders all four pinned to the timestamp it reads out of `search-index.json`, which meant the companions were stale from that moment on and every regeneration faithfully reproduced the split. The timestamp is now resolved once, before either render, and `code/tests/test_search_index_surfaces.py` pins the invariant with the changed-body branch that used to leak the `None`.
+- **Zenodo intake hygiene:** the four software-only Zenodo deposits that kept
+  re-flagging the uncatalogued check are now registered in
+  `KNOWN_STALE_RECORD_IDS` with their curation dispositions — daf-jev release
+  archive 22817425 (SOFTWARE.md row cites concept 10.5281/zenodo.22816187),
+  EvoJump canonical curated deposit 22667290 per R80, EvoJump GitHub-Zenodo
+  automated integration archive 22667291 per R81 (superseded; kept record
+  22667290), and the CCD software revision archive v2.6.0 22760881 (supplement
+  to paper row #112; same class as 22666981). The freshness gate now reads
+  zero uncatalogued records on a fresh 464-pair scan (464 pairs, 0 new,
+  0 needs_review, 50 update_existing = the already-applied 2026-09-17 set).
+  The EvoJump software row carries its canonical concept DOI
+  (10.5281/zenodo.22664675) in `pages/SOFTWARE.md` and `data/software.json`,
+  matching the daf-jev curation format; software surfaces regenerated.
+- **Live-doc legacy sweep:** all 217 distinct `.py` references, ~50 CLI flags,
+  numeric claims (16 accessibility checks, 32 report_paths importers, 61
+  orchestrators, 48-step generation chain), and every relative link target in
+  live docs verified against current code — zero stale mentions found; the
+  two `build_image_sitemap.py` mentions are deliberate removal records pinned
+  by `code/tests/test_regenerate_all.py:20-21`. No edits required.
+
+## 2026-09-17
+
+- **September 17 publication and repository intake:** full pairing scan
+  (464 pairs, 247 releases, 158 records, zero warnings) — 50 strong
+  update_existing actions applied (DOI-already-represented metadata and
+  software-link refreshes), two needs_review pairs dispositioned as
+  version-history-only (R82 fep_lean v1.2.0, R83 GNN v3.4.0; both works
+  already in the bibliography). `docxology/daf-jev` curated into
+  pages/SOFTWARE.md Developer Tools (TypeSafe Jev client toolkit, Zenodo
+  concept DOI 10.5281/zenodo.22816187) — originals 115 → 116, grand total
+  154 → 155; classification queue clean (`classify_repositories.py --check`
+  exit 0). Steganographer row fact-checked against its README (132 → 484
+  tests). Fresh snapshot/inventory/pairing/external-link/PSR receipts for
+  2026-09-17, discovery pointers re-rendered, binder chain rebound.
+- **Hand-page content development:** start-here (site map for humans and
+  agents, grounded in current counts), collaborators (six collaborator
+  cards, interview subjects, institutional rows), art (gallery explainer),
+  videos (provenance + usage guide), cite-verify (identifier table,
+  reuse-humility rules) — every claim restated from repo sources, zero new
+  external URLs.
+- **Website polish:** 33 lines of dead CSS removed (unused selector groups,
+  two unreferenced keyframes, one exact-duplicate rule — every removal
+  verified repo-wide); og:site_name/og:locale completed across the
+  hand-maintained pages; search.html rel="me" set completed to match the
+  homepage.
+- **DOC-014 landed:** all 61 orchestrators' ad-hoc sys.path bootstraps
+  collapsed to a uniform two-line thin wrapper (`docxology_tools` owns the
+  canonical bootstrap); CLI surface unchanged (smoke-verified), suite
+  green. The Pages-artifact dangling-reference guard now skips gitignored
+  paths (a locally-generated `regeneration-state.json` reference no longer
+  fails local assembly; CI behavior unchanged, fail-closed outside a repo),
+  with a regression test; the two prose references to that gitignored path
+  were reworded so the shipped artifact cannot 404 on it.
+
+## 2026-09-15
+
+- **Full-backlog orchestration wave (DOC-002/003/005/006/007/008/009/011/012/013/015):**
+  external evidence refreshed end-to-end (21-check snapshot, 20-section
+  inventory — the AII textbook-group source added to the surface list,
+  Scholar sync, GitHub inventory, fresh full pairing scan: 462 pairs, 0
+  needs_review, all 43 coverage exceptions re-validated). Catalog: three
+  principal curations promoted to SOFTWARE.md Developer Tools
+  (`dicklesworthstone_meta_operator`, `Skillarum`, `nockchain-migration`) —
+  115 originals / 154 grand total — classification queue at 4 honest defers
+  pending paper/deposit. Privacy: insecure http:// URLs upgraded to https
+  across the bibliography/works/resume/artwork chain, stealth records carry
+  explicit status, `public_integrity.py` now fails plain http:// links.
+  Agent layer: ReproducibilityLedger registered (schema registry 1.5)
+  fixing the dangling `schema_ref`, two inert query recipes removed,
+  release-integrity date preservation verified by-design with fresh SHAs.
+  QA: browser smoke 10/10 + QA 7/7 re-run green at current HEAD; GSC
+  preflight refreshed (signed-in Search Console steps remain externally
+  blocked). Budget: artifact 825.6 MiB / 4,820 files, 54.4 MiB headroom,
+  omission classes verified, ADR re-anchored. Runbooks: settle.md Notes and
+  AGENT_START carry the discovery-pointer rule; the TODO binder bullet
+  corrected to the fails-closed reality. SEC-002 unblock attempt: plugin
+  enabled, scan attempted against a clean candidate, failed closed on the
+  managed-profile runtime requirement — blocked state stands with updated
+  evidence.
+- **Fast intake path — parallel refresh, report reuse, fingerprint-gated
+  regeneration:** three composable speedups with no gate loosened. The
+  21-check snapshot in `refresh_public_sources.py` fans out through
+  `ThreadPoolExecutor(8)` with order-identical output (the serial fan-out is
+  now concurrent; 429 Retry-After and safe-fetch isolation unchanged;
+  equivalence test-pinned). `refresh_public_source_inventory.py --cache-reports`
+  reuses a same-day report's payloads (freshness keyed on `generated_at`, any
+  `!ok` section fails closed to a live fetch, `--force` lifts it with
+  warnings accepted, reuse adds an `anchors` provenance block).
+  `sync_paired_publications.py --cache-reports` reuses the same-day report's
+  GitHub releases and Zenodo records while `already_reviewed` classification
+  becomes fingerprint-incremental — short-circuited when the
+  (bibliography, decisions) hashes match the prior report's persisted
+  `classification_cache`, full scan re-run on drift with a stderr note (drift
+  surfaced, never absorbed); `create_new`/`update_existing`/`needs_review`
+  always re-derive and cached-but-warned scans fail validation.
+  `check_zenodo_uncatalogued.py --records-from <paired_report.json>` reuses
+  the pairing scan's Zenodo records — one fetch per intake — failing closed
+  on non-pairing sources, warned scans, or stale reports unless `--force`.
+  Apply mode no longer regenerates inline: the hardcoded 13-generator
+  `run_regeneration` chain is deleted and `regenerate_all.py` is the single
+  write-mode driver, now input-gated — steps with declared inputs
+  (paper-documents, work-pages, video-pages, asset-audit-first/final,
+  accessibility-first/final) skip when their input fingerprints are unchanged
+  (state in a gitignored local `reports/` state file named
+  `regeneration-state.json` — never shipped to Pages — fingerprint
+  recorded only after a successful run, unmatched patterns and empty inputs
+  never skip; `--force` restores always-run). Measured: cold chain 48 steps in
+  1m52s; warm no-op rerun skips 7/7 gated steps, runs 41 in 1m35s,
+  byte-identical tree; `validate_repo.py --check` remains the ungated
+  authority and the full settle battery (~6 min) and CI (~4 min) are
+  unchanged. `docs/operations/publication-sync.md` documents the fast intake
+  path (when it applies, the exact command sequence, what never gets skipped)
+  with a signpost from `AGENT_START.md` and a regeneration-skip note in
+  `docs/operations/settle.md`. Wall-clock measured same-day on this machine:
+  snapshot fan-out 11.4s serial → 1.8s parallel (6.4×, byte-identical
+  modulo `generated_at`); pairing scan 122.1s full → 0.60s with
+  `--cache-reports` (~200×; 464 pairs, actions and counts byte-equal, zero
+  warnings, fingerprint hashes stable across the two runs).
+
+## 2026-09-12
+
+- **Unified settle driver (`code/orchestrators/settle.py`) + change classifier
+  (`code/src/change_classifier.py`):** one command classifies dirty paths into
+  surfaces (reports/site/code/tests/ci/docs/other) and runs a tiered gate
+  battery — fast (sitemap `--check`, artifact budget, ruff), full (adds
+  pytest + standard `validate_repo.py`, CI-equivalent per
+  `.github/workflows/validate.yml`), release (adds
+  `validate_repo.py --release --strict-reports`, binding the conventional
+  `reports/deployment-attestations/<HEAD>.json` when present) — then lands
+  the payload + control-tail commit split (`release_controls.is_control_path`
+  is the single control predicate), optionally pushing and opening a PR.
+  Decision tree, tier table, and measured timings live in the new
+  `docs/operations/settle.md` runbook, signposted from `AGENT_START.md`.
+- **Gate-latency fixes:** `code/src/build_stamp.py` memoizes the build stamp
+  (one git probe per process; video-pages check measured 55s → 5.7s), and
+  `build_sitemap.py`'s `_batch_latest_map` now caches its full-history walk
+  result, including the failure path; previously every `git_lastmod` call
+  re-walked the whole history (sitemap `--check` measured 0.8s after the fix
+  versus 19s before, with an 11m47s worst case eliminated).
+- **Docs-accuracy wave (DOC-013; PERF-001 closed):** a three-reviewer sweep
+  of `docs/operations/*`, the root agent docs, and the satellite docs checked
+  every cited command/flag against the code and receipts; all findings landed.
+  `docs/operations/settle.md` gained the code-verified corrections (drift
+  review is inside the full battery; the manifest write fails closed on dirty
+  post-deploy inputs with `--allow-dirty-prepayload-evidence` whitelisting
+  only the pre-payload snapshot; the lint step's `--no-sync` exception; the
+  binder chain restated in the canonical `generation_plan.py` order ending on
+  a second `build_generated_manifest.py` pass, with
+  `build_public_source_review.py` described as the excluded manual render).
+  `TODO.md` closes PERF-001 with the measured evidence (batch walk adopted,
+  byte-identical, 0.8s vs 19s) and records the 2026-09-12 session findings.
+  The root docs (AGENTS, CLAUDE, GENERATED, AGENT_START) and nine operations
+  runbooks now cross-reference the settle driver; stale references fixed
+  (CLAUDE maintenance-log path, docs/AGENTS cache-bust version, ADR growth
+  receipt re-anchored to the 2026-09-12 receipt, security-posture CSP example
+  aligned to the deployed `CSP_META_TAG`, releases/design AGENTS boilerplate
+  corrected to the single-origin flow, manuscript inventory completed).
+
+## 2026-09-11
+
+- **Backlog batch — all five 2026-09-10 principal-review items resolved:**
+  EvoJump: R80 accepts the six release pairs under the canonical curated
+  concept `10.5281/zenodo.22664675` as software-catalog and R81 supersedes the
+  six auto-archive pairs under `10.5281/zenodo.22664645`
+  (`data/paired-publication-decisions.json`, groups 79 → 81; the citable paper
+  remains row #12, concept `10.5281/zenodo.17229924`; no new bibliography row).
+  CCD row #112 adopted the Zenodo v2.4.0 self-title "Cognitive Diagrams:
+  Reviewing Categorical Accounts of Linguistic Case". The On Time version-DOI
+  citation (record `15168382`) gained its full-identity
+  `VERSION_SPECIFIC_CITATION_EXCEPTIONS` entry, and software-only record
+  `22666981` was registered in `KNOWN_STALE_RECORD_IDS` by record id
+  (`check_zenodo_uncatalogued.py`) — the next uncatalogued/DOI-role reports
+  should show zero flags for both.
+- **Superseded dated reports omitted from the Pages projection (DOC-009/DOC-012
+  durable fix):** `build_pages_artifact.py` gained a third omission class — any
+  tracked `reports/` path strictly older than the newest date of its family
+  (top-level `reports/<family>_<YYYY-MM-DD>` receipts, including qualifier
+  variants like `paired_publications_2026-06-09-itrace.json`, plus whole dated
+  `reports/visual-qa/`, `reports/browser-smoke/`, `reports/browser-qa/` sets)
+  is left out of the deploy artifact while every file stays committed in the
+  repository. Files sharing a family's newest date stay published together, and
+  the new shared citation scan (`code/src/report_references.py`, reused by
+  `prune_old_reports._referenced_externally` so both tools share one exclusion
+  semantics — `papers/` in scope, inventory manifests and repo-only trees out)
+  keeps any report cited from a published page or data file in the projection.
+  Measured against the 2026-09-11 growth receipt (864.17 MiB, 5,184 files):
+  **390 files / 70.9 MiB** newly leave the artifact, projecting **≈793.3 MiB**
+  with ≈87 MiB of headroom under the unchanged 880 MiB review band — the band
+  and the 900 MiB release ceiling are untouched, and each new evidence wave now
+  adds only the newest receipt per family. The manifest gains the
+  `omitted_superseded_reports` summary (count, bytes, examples) with the
+  `superseded_report_policy` key, `MANIFEST_COMPARISON_FIELDS` covers the new
+  field, the growth receipt adds `omitted_superseded_report_count`/`_bytes`,
+  and a durable 404 guard fails the build if any repository-relative `reports/`
+  reference in the assembled projection was not copied. Docs:
+  `github-pages-artifact.md`, `report-retention.md` (projection-only omission
+  is the default archive tier, no retention entry needed),
+  `asset-strategy-adr.md` execution subsection, and the agent-index
+  `PagesArtifactManifest` schema; the principal-review TODO item is resolved.
+
+## 2026-09-10
+
+- **Publication intake — Skillarum #216 and 48 versioned updates (GitHub +
+  Zenodo pairing):** broad warning-free scan (`reports/paired_publications_
+  2026-09-10.json`: 462 pairs; 239 releases; 155 Zenodo records) against the
+  2026-09-07 baseline. Applied the single strong `create_new` and 48 strong
+  `update_existing` actions; works total 212 → 213. New work #216
+  *Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation*
+  (concept DOI `10.5281/zenodo.22663906`; v0.2.0, 2026-09-08) with a complete
+  paper folder and the versioned combined PDF. Row #112 (Cognitive Case
+  Diagrams) updated to Zenodo record `22653315` v2.4.0 (2026-09-07) with the
+  new 15.3 MB versioned PDF retained alongside the v1 PDF; the v2.5.0
+  re-release is ledgered as version-history-only (decision R79). The 47
+  baseline `update_existing` actions re-verified idempotently (folder
+  metadata and PDF refreshes). New fork `docxology/oh-my-pi` registered under
+  the standing fork policy (DOC-005 mechanized path, RGMs precedent).
+  Principal-review items left open with evidence in
+  [TODO.md](TODO.md) ("Session findings (2026-09-10)"): 12 EvoJump
+  `needs_review` pairs (duplicate Zenodo concepts `22664645`/`22664675`),
+  the CCD row #112 title divergence, the deliberate On Time version-DOI
+  citation (commit `d086e7a3`) missing its `VERSION_SPECIFIC_CITATION_
+  EXCEPTIONS` entry, and the software-only record `22666981`.
+- **Bibliography completeness backfills:** Author cells filled for rows 199,
+  210, 211, and 216 via the DataCite registry pass
+  (`fetch_work_authors.py`, title-similarity 1.0, no invented authors);
+  Domain Legend now declares `🔍 Other` (row 215); GNN and Codomyrmex paper
+  folders record their version records as `artifact_doi`/`artifact_doi_url`
+  (verified live: `10.5281/zenodo.20671741`, `10.5281/zenodo.21750801`) with
+  `CITATION.cff` DOI roles synced.
+- **Agent-surface pointer refresh (generator fix):** the dated-report rewrite
+  in `sync_site_facts.py` covered only three report families, so
+  `llms.txt`, `discovery.html`, and `pages/DISCOVERY.md` pointed agents at
+  3-4-month-old snapshots (external-links 2026-05-15, live-site 2026-07-17,
+  source-coverage 2026-07-17; `llms.txt` never refreshed its
+  snapshot/inventory pair). The rewrite list now covers
+  external-links/triage, live-site verification, source coverage, and the
+  snapshot/inventory pair for `llms.txt`, with the resolver glob
+  digit-anchored so `external_links_triage_*` can no longer shadow
+  `external_links_*`. Also: duplicated discovery-page ListItems and table
+  rows removed; `llms.txt` manifest/registry versions corrected to 1.5/1.4
+  with the `ScholarVerificationReceipt` schema added; agent-index Work
+  schema now documents the `Report` type and the `authors` field.
+- **Light-mode card ink:** under `prefers-color-scheme: light` the card
+  family (white cards via the remapped `--bg-card`) still inherited
+  hardcoded dark-theme ink (#fff headings, #cfcfcf body) and was unreadable
+  on every page that renders cards. The light fixups block now maps card
+  headings/body/stat numerals to the text tokens, with compensating
+  light-ink rules for the by-design dark plates (art cards on their
+  hardcoded #0b0b0b background, `.section-alt` dark bands) and a
+  specificity bump for repositories.html's later-loading inline style.
+  Verified with light/dark full-page captures before and after; dark mode
+  is pixel-identical.
+- **Docs and ledger hygiene:** TODO.md's stale "Intake still blocked on
+  DOC-004" sentence replaced with the 2026-09-07 closure pointer;
+  `docs/README.md` index gained the missing `asset-strategy-adr.md` row and
+  the `manuscript/` tree; the 2026-09-08 section backfilled the PR #18
+  median-of-3 Lighthouse change; `codemeta.json` `dateModified` refreshed.
+- **Artifact review budget moved 850 → 880 MiB after a growth review:** the
+  2026-09-10 intake evidence (a new paired-publications report, refreshed
+  public-source snapshot/inventory, external-link report, source coverage,
+  and the dated public-source review) plus the 2026-09-11 UTC-rollover
+  double-generation pushed the bounded Pages projection from 844.9 MiB to
+  870.5 MiB, tripping the review threshold in CI. Composition at review
+  time: paper PDFs 681 MiB (78%), extracted paper images 950 MiB (omitted
+  from the projection per policy), published dated reports ≈ 60 MiB,
+  everything else small. The 880 MiB review threshold keeps 20 MiB of
+  headroom below the 900 MiB release hard ceiling (`code/src/
+  artifact_budget.py`, `build_pages_artifact.py`, and the manifest
+  `warning_policy` string updated together). The durable alternative —
+  omitting superseded dated reports from the Pages projection while they
+  remain in the repository — is flagged for the principal in
+  [TODO.md](TODO.md) (DOC-009/DOC-012).
+
+## 2026-09-08
+
+- **Deploy-freshness alarm now passes — stamp comparison fixed to prefix
+  semantics:** the `Verify live site` workflow (added 2026-09-05) compared the
+  live homepage's build stamp against main's HEAD truncated to 7 characters,
+  but git's `--short` auto-lengthens on ambiguity and the deployed stamp is 8
+  (`8ecdaa07`) — `8ecdaa07 != 8ecdaa0` retried through the whole grace window
+  and failed every run since the alarm shipped. Two corrections: the
+  comparison is now prefix-based (`run_freshness_check` in
+  `code/src/deploy_freshness.py`, with a regression test for the
+  auto-lengthened form), and the workflow derives its expectation from the
+  stamp embedded in the committed `index.html` rather than HEAD — page stamps
+  are deliberately reused across non-rendering commits
+  (`build_stamp.reuse_or_current`), so "stamp equals HEAD" was
+  unsatisfiable by design while "live site serves the deployed artifact" is
+  the check's actual intent.
+- **CHANGELOG typography:** rejoined "pure-function", split across lines in
+  the 2026-09-07 entry.
+- **Live-verification marker fixed for the compact JSON-LD emission:** with
+  the freshness alarm finally passing, its next step ran for the first time
+  and failed on a stale pin — `verify_live_site.py` expected
+  `"@type": "CollectionPage"` (with a space) on `publications.html`, while
+  the page's JSON-LD is emitted compact (`"@type":"CollectionPage"`). The
+  marker now matches the emitted format, consistent with the
+  `software.html` marker.
+
+- **CI robustness — median-of-3 Lighthouse scoring and structural JSON-LD
+  checks (PR #18, commit `57cd548d`):** the Lighthouse budget gate tripped on
+  shared-runner variance — `index.html performance=52 < baseline floor 55` on
+  a byte-identical homepage that had passed four PR runs and re-passed green
+  on rerun (the file's baseline comment records ±20 swings, 76/75/57, on
+  identical content). Per-page scoring now takes the **median of 3 runs**
+  when the first run lands below a floor, so a single noisy dip no longer
+  fails the gate while a genuine regression stays below the median; floor
+  values are unchanged (integrator-owned). In the same pass the
+  spaced-vs-compact marker pin in `verify_live_site.py` was replaced by
+  structural JSON-LD parsing (`jsonld_types_in_html`) asserting `@type`
+  values, immune to generator re-serialization. The workflow has been green
+  end-to-end since.
+
+## 2026-09-07
+
+- **Search index split surfaces no longer skew their timestamps:** when a
+  regeneration changed the rendered body, `build_search_index.py` wrote
+  `search-index.json` and its three split companions
+  (`search-index-core.json`, `search-index-content-work.json`,
+  `search-index-content-video.json`) with *different* `generated_at` values —
+  `stable_generated_at` returned `None` for changed bodies, and the fallback
+  `None` made `render()` and `render_split()` call the clock independently.
+  The committed tree then failed `validate_repo.py --check`
+  ("Stale generated search index surfaces: …") until a second idempotent run
+  rewrote all four files with one reused timestamp; the 2 s skew in f58f0be9
+  and the 3 s skew in 71506b8b are both visible in git history. The builder now
+  resolves one timestamp (`stable_generated_at(...) or` the candidate's own
+  `generated_at`) before rendering any surface, and
+  `code/tests/test_build_search_index.py` pins the invariant with a countable
+  fake clock — under the old writer the changed-content test fails with
+  exactly the observed main-vs-splits skew, and the unchanged-content test
+  pins the existing stable-timestamp reuse. The three committed split
+  artifacts were regenerated with the fixed writer (single
+  `2026-09-05T22:50:01Z` timestamp across all four surfaces).
+- **TODO reconciliation (2026-09-07):** every open item verified against live
+  state — `classify_repositories.py --check` (2 primary decisions pending,
+  matching DOC-005), the 2026-09-04 paired-publications report (5 unreviewed
+  actions, queue sharpened in DOC-004 with the four DOIs and their
+  already-represented status), `sync_scholar_metrics.py --check` (815
+  citations snapshot current), the 2026-09-05 external-link triage (no hard
+  404s; 129 warnings are bot-protection/timeouts/transients), asset and
+  accessibility reports current. Resolved MIN-01/MIN-02 sections removed from
+  `TODO.md` per the completed-rows-deleted convention (evidence: 2026-08-31
+  entry above); no new MAJOR items found.
+- **PR validate workflow now validates the PR head commit:** the
+  `pull_request` event checked out the synthetic merge ref, whose first
+  parent is the base branch, so its first-parent diff is the entire PR and
+  the commit-bound `source_commit_at_generation` binding could never resolve
+  there — every content PR since the provenance pattern landed failed
+  `build_pages_artifact.py --check-manifest` ("stale Pages artifact
+  manifest") while push runs stayed green. `.github/workflows/validate.yml`
+  now checks out `github.event.pull_request.head.sha`.
+- **Paired-publication decisions R73/R74 recorded:** the 2026-09-04 review
+  queue's Codomyrmex `untagged-ce7d…` v1.3.0 release and GNN v3.2.0 are now
+  recorded `superseded` / `bibliography-folder version-history-only` in
+  `data/paired-publication-decisions.json`, each citing its curated
+  bibliography folder; the refreshed full-scope
+  `reports/paired_publications_2026-09-07.json` (450 pairs) drops the queue
+  to 4 unreviewed actions — the rotating-draft Codomyrmex URLs and the
+  Cognitive Integrity cluster held for the principal (DOC-005 overlap).
+- **DOC-004 closed — the pairing queue reached zero:** the principal
+  classified `docxology/cognitive_integrity` as curated (added to
+  `pages/SOFTWARE.md`, backed by `papers/2026_CognitiveIntegrity/` and
+  `papers/2026_CognitiveIntegrityFramework/`), confirmed superseded
+  dispositions for the rotating Codomyrmex draft URLs (R75/R76) and for the
+  ActiveInferAnts and CEREBRUM releases as version-specific artifacts under
+  the represented Cognitive Integrity Framework DOI (R77/R78), and directed
+  that draft releases be skipped from pairing. The refreshed full-scope
+  `reports/paired_publications_2026-09-07.json` has **zero unreviewed
+  candidates** (447 pairs; the three skipped draft pairs account for the 450
+  → 447 delta) and `classify_repositories.py` leaves one open primary
+  (`docxology/dicklesworthstone_meta_operator`).
+- **Draft releases no longer pair:** `is_draft_release` in
+  `code/src/publication_pairing.py` skips releases whose canonical URL is the
+  rotating `untagged-<hash>` draft slug, ending the requeue treadmill (R71 →
+  R73 → R75 documented three rotations of the same Codomyrmex draft).
+- **Provenance binding is merge-aware:** `latest_payload_commit` in
+  `code/src/release_controls.py` steps through a merge commit whose tree is
+  identical to one of its parents (a PR merge ref's first parent is the base
+  branch, so its first-parent diff is the whole branch and the tip-recorded
+  `source_commit_at_generation` could never resolve there). Covered by pure-function fixtures and an end-to-end PR-merge-ref test that was
+  mutation-verified to fail under the old walk.
 
 ## 2026-09-05
 

@@ -9,11 +9,13 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "data" / "agent-index.json"
 COUNTS = REPO_ROOT / "data" / "current-counts.json"
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from report_paths import latest_source_report  # noqa: E402
+from docxology_tools.report_paths import latest_source_report  # noqa: E402
 
 DATASET_PATHS = {
     "works": "data/works.json",
@@ -34,6 +36,7 @@ DATASET_PATHS = {
     "work_enrichment": "data/work-enrichment.json",
     "catalog": "data/catalog.json",
     "reconciliation": "data/reconciliation.json",
+    "reproducibility": "data/reproducibility.json",
     "generated_manifest": "data/generated-manifest.json",
 }
 
@@ -79,8 +82,9 @@ SCHEMAS = {
             "year": "integer",
             "domain": "string; domain emoji code",
             "domain_name": "string; human-readable domain",
-            "type": "string; Paper, Book, Course, Presentation, Playbook, or Series",
+            "type": "string; Paper, Book, Course, Presentation, Playbook, Series, or Report",
             "title": "string",
+            "authors": "array of strings; curated author names in \"Last, First\" order",
             "venue": "string",
             "url": "string; canonical external identifier or landing page",
             "doi": "string or empty",
@@ -259,14 +263,15 @@ SCHEMAS = {
     },
     "PagesArtifactManifest": {
         "type": "object",
-        "description": "Bounded GitHub Pages projection file list, byte budget, omitted-image policy, and GitHub fallback templates.",
-        "required": ["schema_version", "source_commit_at_generation", "github_fallback", "budget", "included_files", "omitted_paper_images"],
+        "description": "Bounded GitHub Pages projection file list, byte budget, omitted-image and superseded-report policy, and GitHub fallback templates.",
+        "required": ["schema_version", "source_commit_at_generation", "github_fallback", "budget", "included_files", "omitted_paper_images", "omitted_superseded_reports"],
         "fields": {
             "source_commit_at_generation": "Git commit used when the artifact was measured",
             "github_fallback": "tree/raw URL templates",
             "budget": "hard limit, safety ceiling, warning, file count, and byte totals",
             "included_files": "array of included path/size/hash records",
             "omitted_paper_images": "count and fallback-preserving policy summary",
+            "omitted_superseded_reports": "count and fallback-preserving policy summary for dated reports superseded by a newer receipt of their family; reports cited from published surfaces are never omitted",
         },
     },
     "ReleaseIntegrity": {
@@ -418,6 +423,26 @@ SCHEMAS = {
             "artifacts": "array; each has name, outputs, sources, and command",
         },
     },
+    "ReproducibilityLedger": {
+        "type": "object",
+        "description": "Reproducibility ledger: per-work re-execution signals, banding, and scoring derived from full_text and figure evidence.",
+        "required": ["generated_at", "schema_ref", "works"],
+        "fields": {
+            "generated_at": "ISO-8601 timestamp",
+            "schema_ref": "string; /data/agent-index.json#schemas/ReproducibilityLedger",
+            "sources": "object; input receipts the ledger derives from",
+            "measures": "array of strings; measured dimensions",
+            "signal_definitions": "object; signal name to definition",
+            "band_definitions": "object; band name to threshold range",
+            "max_score": "number; maximum achievable reproducibility score",
+            "work_count": "integer; number of assessed works",
+            "signal_totals": "object; aggregate counts per signal",
+            "band_counts": "object; aggregate counts per band",
+            "score_histogram": "object; score bucket to work count",
+            "mean_score": "number; mean reproducibility score",
+            "works": "array; per-work entries with signals, band, and score",
+        },
+    },
 }
 
 
@@ -441,6 +466,7 @@ def payload() -> dict:
     work_enrichment = load_json("data/work-enrichment.json")
     catalog = load_json("data/catalog.json")
     reconciliation = load_json("data/reconciliation.json")
+    reproducibility = load_json("data/reproducibility.json")
     generated_manifest = load_json("data/generated-manifest.json")
     pages_artifact = load_json("data/pages-artifact-manifest.json")
     live_report_path = latest_report("live_site_verification_*.json", "reports/live_site_verification_2026-05-15.json")
@@ -503,6 +529,7 @@ def payload() -> dict:
             "work_enrichment": {"path": "/data/work-enrichment.json", "count": work_enrichment.get("count"), "schema": "WorkEnrichment"},
             "catalog": {"path": "/data/catalog.json", "count": len(catalog.get("dataset", [])), "schema": "DataCatalog"},
             "reconciliation": {"path": "/data/reconciliation.json", "count": len(reconciliation.get("comparisons", [])), "schema": "ReconciliationReport"},
+            "reproducibility": {"path": "/data/reproducibility.json", "count": reproducibility.get("work_count"), "schema": "ReproducibilityLedger"},
             "generated_manifest": {"path": "/data/generated-manifest.json", "count": len(generated_manifest.get("artifacts", [])), "schema": "GeneratedManifest"},
         },
         "reports": [
@@ -515,7 +542,7 @@ def payload() -> dict:
             {"id": "live-site", "path": latest_report("live_site_verification_*.json", "reports/live_site_verification_2026-05-15.json"), "format": "application/json", "schema": "GeneratedReport", "freshness_field": "generated_at"},
         ],
         "schemas": SCHEMAS,
-        "schema_registry_version": "1.4",
+        "schema_registry_version": "1.5",
         "schema_examples": {
             "Work": works.get("works", [])[:1],
             "SoftwareRepository": software.get("repositories", [])[:1],
@@ -533,6 +560,7 @@ def payload() -> dict:
             "GeneratedReport": current,
             "PagesArtifactManifest": {"schema_version": pages_artifact.get("schema_version"), "budget": pages_artifact.get("budget"), "github_fallback": pages_artifact.get("github_fallback")},
             "ReleaseIntegrity": {"schema_version": "1.0", "note": "See /data/release-integrity.json for the current envelope."},
+            "ReproducibilityLedger": reproducibility,
         },
         "dataset_hashes": dataset_hashes,
         "source_provenance": {
@@ -562,10 +590,8 @@ def payload() -> dict:
         },
         "query_recipes": {
             "site_search": "/search.html?q={urlencoded_terms}",
-            "publication_filter": "/publications.html?domain={emoji}&type={type}&year={year}",
             "work_by_key": "/works/{citation_key}.html",
             "raw_bibliography": "/pages/BIBLIOGRAPHY.md",
-            "repository_by_full_name": "/repositories.html?repo={owner}/{name}",
             "claim_by_id": "/data/claims.json#id={claim_id}",
             "scholar_verification_receipt": "/data/scholar-verification-receipt.json",
             "reports": "/data/agent-index.json#reports",

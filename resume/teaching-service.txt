@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-09-05T16:04:16Z
+Generated: 2026-09-18T15:57:10Z
 
-Current public metrics: 212 curated works; 148 catalogued software repositories (109 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 206 docxology + 43 AII public repositories (161 primary, 88 forks).
+Current public metrics: 215 curated works; 155 catalogued software repositories (116 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 219 docxology + 43 AII public repositories (170 primary, 92 forks).
 
 SUMMARY
 -------
@@ -45,7 +45,7 @@ EDUCATION
   - Theodore Roosevelt Memorial Award, American Museum of Natural History, 2016, $2,500.
   - Lewis and Clark Fund grant, American Philosophical Society, 2016, $4,000.
   - NSF GRFP Honorable Mention, 2015 and 2016.
-  - Sources: Stanford dissertation: http://purl.stanford.edu/pb813wm1484
+  - Sources: Stanford dissertation: https://purl.stanford.edu/pb813wm1484
 2010-2014 | BSc in Genetics | University of California, Davis | Davis, CA, USA
   - BSc in Genetics, University of California, Davis.
   - Genetics Department Citation, Highest Honors, 2014; 3.74 GPA overall.
@@ -145,7 +145,7 @@ WORKS AND PUBLICATIONS (83)
 [086] 2020 | Paper | Gene expression variation in the brains of harvester ant foragers is associated with collective behavior | Communications Biology | 10.1038/s42003-020-0813-8
 [087] 2020 | Course | How to use Keybase for remote teams | Udemy | https://www.udemy.com/course/keybase-for-remote-teams/
 [088] 2020 | Paper | Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains | Analytical & Bioanalytical Chemistry | 10.1007/s00216-019-02355-3
-[093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | http://purl.stanford.edu/pb813wm1484
+[093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | https://purl.stanford.edu/pb813wm1484
 [094] 2019 | Paper | The ant colony as a test for scientific theories of consciousness | Synthese | 10.1007/s11229-019-02130-y
 [095] 2019 | Paper | The physiology of forager hydration and variation among harvester ant colonies | Scientific Reports | 10.1038/s41598-019-41586-3
 [096] 2018 | Paper | Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations | PLoS One | 10.1371/journal.pone.0202117
@@ -159,7 +159,7 @@ WORKS AND PUBLICATIONS (83)
 [109] 2026 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | Zenodo | 10.5281/zenodo.19574117
 [110] 2026 | Paper | A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring | Active Inference Journal | 10.5281/zenodo.19461933
 [111] 2026 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | CSCIS vol 2857, Springer | 10.1007/978-3-032-16955-6_11
-[112] 2026 | Paper | Compositional Approaches to Linguistic Case for Cognitive Modeling | Active Inference Journal | 10.5281/zenodo.19695259
+[112] 2026 | Paper | Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case | Active Inference Journal | 10.5281/zenodo.19695259
 [113] 2026 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | Active Inference Journal | 10.5281/zenodo.19699233
 [128] 2025 | Presentation | Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024 | Zenodo | 10.5281/zenodo.14861596
 [130] 2025 | Paper | Graphspeak: of language and handshake | Zenodo | 10.5281/zenodo.14737156
@@ -190,8 +190,8 @@ SOFTWARE (14)
 -------------
 docxology/curriculum | HTML | https://github.com/docxology/curriculum | Curriculum development framework for interdisciplinary education in Active Inference, biology, and computational science
 docxology/AGEINT | HTML | https://github.com/docxology/AGEINT | Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · · Citation DOI | paper: papers/2026_AGEINT/ | zenodo: https://doi.org/10.5281/zenodo.20732274
-docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
-docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript | paper: papers/2026_CognitiveCaseDiagrams/
+docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 484 tests, GStreamer integration
+docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript · · Zenodo | paper: papers/2026_CognitiveCaseDiagrams/ | zenodo: https://doi.org/10.5281/zenodo.19695259
 docxology/biol-1 | HTML | https://github.com/docxology/biol-1 | BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 docxology/biol-8 | HTML | https://github.com/docxology/biol-8 | BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 docxology/biology_textbook | Python | https://github.com/docxology/biology_textbook | Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI | paper: papers/2026_BiologyTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20286477

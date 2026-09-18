@@ -92,6 +92,13 @@
       <description>Paper — Zenodo — Daniel Ari Friedman</description>
     </item>
     <item>
+      <title>Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security</title>
+      <link>https://doi.org/10.5281/zenodo.22754351</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22754351</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo</description>
+    </item>
+    <item>
       <title>AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference</title>
       <link>https://doi.org/10.5281/zenodo.20976824</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20976824</guid>
@@ -131,7 +138,7 @@
       <link>https://doi.org/10.5281/zenodo.21750800</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21750800</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
+      <description>Paper — Zenodo — Daniel Ari Friedman</description>
     </item>
     <item>
       <title>Convergence Analysis of Gradient Descent Optimization</title>
@@ -183,6 +190,13 @@
       <description>Paper — Zenodo — Daniel Ari Friedman</description>
     </item>
     <item>
+      <title>FractiSkills: One Portable Agent Skill per Page</title>
+      <link>https://doi.org/10.5281/zenodo.22712650</link>
+      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.22712650</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper — Zenodo</description>
+    </item>
+    <item>
       <title>Golden Line: Toward What Matters</title>
       <link>https://doi.org/10.5281/zenodo.21754237</link>
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21754237</guid>
@@ -202,20 +216,6 @@
       <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21047573</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>PROJECT BOND — The Special-Agent Operations Compendium</title>
-      <link>https://doi.org/10.5281/zenodo.21843592</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.21843592</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Friedman, Daniel Ari</description>
-    </item>
-    <item>
-      <title>Policy Entanglement in Active Inference</title>
-      <link>https://doi.org/10.5281/zenodo.20418904</link>
-      <guid isPermaLink="true">https://doi.org/10.5281/zenodo.20418904</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper — Zenodo — Daniel Ari Friedman</description>
     </item>
   </channel>
 </rss>

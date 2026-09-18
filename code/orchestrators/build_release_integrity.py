@@ -10,6 +10,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "data" / "release-integrity.json"
 DEPLOYMENT_COMPARE_EXCLUDES = (
@@ -20,8 +23,7 @@ DEPLOYMENT_COMPARE_EXCLUDES = (
     ":(exclude)data/release-integrity.json",
     ":(exclude)reports/**",
 )
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from public_integrity import scan_public_files  # noqa: E402
+from docxology_tools.public_integrity import scan_public_files  # noqa: E402
 
 # Keep the release envelope coupled to the same source-revision policy as the
 # Pages manifest.  A stale manifest must not be able to mint a fresh-looking
@@ -181,6 +183,7 @@ def build_payload() -> dict:
             "artifact_file_count": pages.get("budget", {}).get("artifact_file_count"),
             "artifact_bytes": pages.get("budget", {}).get("artifact_bytes"),
             "omitted_paper_image_count": pages.get("omitted_paper_images", {}).get("count"),
+            "omitted_superseded_report_count": pages.get("omitted_superseded_reports", {}).get("count"),
         },
         "deployment": deployment_payload,
         "privacy": {

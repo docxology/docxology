@@ -20,23 +20,13 @@ import sys
 from pathlib import Path
 from urllib.request import urlopen
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-try:
-    from generated_outputs import (
-        read_generated_output_text,
-        safe_generated_output_path,
-        write_generated_output_text,
-    )
-    from report_paths import dated_report_dir, generated_timestamp, latest_subdir_file, source_commit, source_worktree_state
-except ImportError:  # pragma: no cover - package import path
-    from .generated_outputs import (
-        read_generated_output_text,
-        safe_generated_output_path,
-        write_generated_output_text,
-    )
-    from .report_paths import dated_report_dir, generated_timestamp, latest_subdir_file, source_commit, source_worktree_state
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.generated_outputs import read_generated_output_text, safe_generated_output_path, write_generated_output_text  # noqa: E402
+from docxology_tools.report_paths import dated_report_dir, generated_timestamp, latest_subdir_file, source_commit, source_worktree_state  # noqa: E402
 
 OUT_DIR = dated_report_dir("visual-qa")
 MANIFEST = OUT_DIR / "manifest.json"

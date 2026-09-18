@@ -25,13 +25,14 @@ from email.utils import format_datetime
 from pathlib import Path
 from datetime import datetime
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
 from build_domain_pages import DOMAINS  # noqa: E402
-from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
-from sitemap_policy import SITE_ORIGIN  # noqa: E402
+from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from docxology_tools.sitemap_policy import SITE_ORIGIN  # noqa: E402
 
 FEEDS_DIR = "feeds"
 MAX_ITEMS = 30

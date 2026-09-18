@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-09-10T17:50:06Z",
+  "zenodo_records_fetched": 65,
+  "bibliography_dois": 199,
+  "uncatalogued_count": 3,
+  "non_canonical_doi_count": 1,
+  "approved_version_specific_doi_exception_count": 0,
+  "version_specific_doi_exception_drift_count": 1,
+  "warnings": [
+    "zenodo:metadata.creators.person_or_org.identifiers.identifier:0000-0001-6232-9096: TimeoutError: The read operation timed out"
+  ],
+  "uncatalogued": [
+    {
+      "record_id": "22667290",
+      "doi": "10.5281/zenodo.22664675",
+      "title": "EvoJump: A Comprehensive Framework for Evolutionary Ontogenetic Analysis",
+      "publication_date": "2026-09-08",
+      "html_url": "https://zenodo.org/records/22667290"
+    },
+    {
+      "record_id": "22667291",
+      "doi": "10.5281/zenodo.22664645",
+      "title": "EvoJump: A Comprehensive Framework for Evolutionary Ontogenetic Analysis",
+      "publication_date": "2026-09-08",
+      "html_url": "https://zenodo.org/records/22667291"
+    },
+    {
+      "record_id": "22666981",
+      "doi": "10.5281/zenodo.22655341",
+      "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
+      "publication_date": "2026-09-08",
+      "html_url": "https://zenodo.org/records/22666981"
+    }
+  ],
+  "non_canonical_doi": [
+    {
+      "record_id": "15168382",
+      "concept_doi": "10.5281/zenodo.15168381",
+      "version_doi_in_bibliography": "10.5281/zenodo.15168382",
+      "title": "On Time"
+    }
+  ],
+  "approved_version_specific_doi_exceptions": [],
+  "version_specific_doi_exception_drift": [
+    {
+      "record_id": "17982447",
+      "expected": {
+        "record_id": "17982447",
+        "title": "The Active Inference Institute & Active Inference Ecosystem",
+        "concept_doi": "10.5281/zenodo.14108991",
+        "version_doi": "10.5281/zenodo.17982447",
+        "reason": "AII Ecosystem v3 is a separately curated 2025 bibliographic snapshot, distinct from the earlier v2 concept record."
+      },
+      "observed": null,
+      "mismatches": [
+        "record_not_returned_by_zenodo"
+      ]
+    }
+  ]
+}

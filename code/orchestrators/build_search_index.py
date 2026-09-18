@@ -6,11 +6,12 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from functools import lru_cache
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 OUT = REPO_ROOT / "search-index.json"
 
 # Split-index companions (search-index.json remains the complete, valid,
@@ -26,10 +27,7 @@ CONTENT_SEGMENT_TYPES = ("work", "video")
 def content_segment_path(item_type: str) -> Path:
     return REPO_ROOT / f"search-index-content-{item_type}.json"
 
-try:
-    from report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at
+from docxology_tools.report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at  # noqa: E402
 
 
 def _latest_url(pattern: str, _fallback: str) -> str:
@@ -364,16 +362,7 @@ def render_split(generated_at: str | None = None) -> dict[Path, str]:
     return outputs
 
 
-@lru_cache(maxsize=4)
 def render(generated_at: str | None = None) -> str:
-    """Render the full search index.
-
-    Memoised on ``generated_at`` because one invocation renders three times:
-    once for the staleness candidate, once for ``search-index.json``, and once
-    more inside ``render_split``. Each pass reads nine JSON sources and rebuilds
-    every item, so the repeats were pure waste. The cache is process-local and
-    the sources do not change under a running generator.
-    """
     works = load_json("data/works.json")["works"]
     enrichments = load_json("data/work-enrichment.json").get("works", {})
     software = load_json("data/software.json")["repositories"]
@@ -420,15 +409,11 @@ def main() -> None:
     args = parser.parse_args()
     generated_at = existing_generated_at() if args.check else None
     if not args.check:
-        # Every surface must carry ONE timestamp. `stable_generated_at` returns
-        # None whenever the body actually changed, and a None here used to reach
-        # both `render(None)` and, separately, `render_split(None)` -> `render(None)`,
-        # so each stamped its own clock reading. On a slow machine those readings
-        # landed seconds apart, the four files were written disagreeing, and
-        # `--check` (which pins every surface to search-index.json's timestamp)
-        # then reported the three split surfaces stale forever. That is what had
-        # kept the repository validation gate red on main.
         candidate = json.loads(render())
+        # One timestamp for every surface: falling back to the candidate's own
+        # generated_at (instead of None) keeps render() and render_split() from
+        # stamping the main index and its companions with different fresh
+        # timestamps when the content body changed.
         generated_at = stable_generated_at(OUT, candidate) or candidate["generated_at"]
     content = render(generated_at)
     outputs = {OUT: content}

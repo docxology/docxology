@@ -6,10 +6,14 @@ import sys
 from pathlib import Path
 from urllib.parse import unquote
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from biblio_table import iter_bibliography_rows  # noqa: E402
+from docxology_tools.biblio_table import iter_bibliography_rows  # noqa: E402
 DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Za-z0-9]+")
 MARKDOWN_LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^)]+)\)")
 

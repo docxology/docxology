@@ -8,12 +8,15 @@ from pathlib import Path
 
 import pytest
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
-sys.path.insert(0, str(ORCH_DIR))
 
 from build_paper_pages import reconcile_outputs, render_outputs, validate_inputs  # noqa: E402
-from generated_outputs import UnsafeGeneratedOutputPathError  # noqa: E402
+from docxology_tools.generated_outputs import UnsafeGeneratedOutputPathError  # noqa: E402
 
 
 def test_every_docs_path_has_required_folder_docs():

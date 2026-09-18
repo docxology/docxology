@@ -16,12 +16,14 @@ import re
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-from site_nav import CSP_META_TAG  # noqa: E402
-from redirect_stubs import discover_redirect_stubs  # noqa: E402
-from generated_outputs import (  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.site_nav import CSP_META_TAG  # noqa: E402
+from docxology_tools.redirect_stubs import discover_redirect_stubs  # noqa: E402
+from docxology_tools.generated_outputs import (  # noqa: E402
     UnsafeGeneratedOutputPathError,
     read_generated_output_text,
     safe_generated_output_path,

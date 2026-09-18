@@ -18,17 +18,19 @@ import re
 import sys
 from typing import Iterable
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-from public_source_review import (  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.public_source_review import (  # noqa: E402
     build_review_report,
     render_json,
     render_markdown,
     validate_review_report,
 )
-from release_controls import source_payload_commit, source_tree_sha  # noqa: E402
-from report_paths import (  # noqa: E402
+from docxology_tools.release_controls import source_payload_commit, source_tree_sha  # noqa: E402
+from docxology_tools.report_paths import (  # noqa: E402
     control_tail_worktree_state,
     source_commit,
     source_worktree_state,
@@ -230,6 +232,29 @@ def _resolve_inputs(
     }
 
 
+
+
+def _review_source_commit(
+    exact_source_revision: bool, repo_root: Path = REPO_ROOT
+) -> str:
+    """Return the provenance revision a public-source review binds to.
+
+    The routine default is payload-anchored
+    (``release_controls.source_payload_commit``): a committed review control
+    tail stays checkable while later control-only commits move ``HEAD``.
+    ``--exact-source-revision`` is the release-gate-only mode documented in
+    ``docs/operations/release-integrity.md``: it binds the exact current
+    ``HEAD`` and its tree so post-deploy attestation can require the deployed
+    SHA. The review-record chase that once accompanied ordinary regeneration
+    is therefore a release-gate-only phenomenon.
+    """
+    return (
+        source_commit(repo_root)
+        if exact_source_revision
+        else source_payload_commit(repo_root)
+    )
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -299,8 +324,12 @@ def build_parser() -> argparse.ArgumentParser:
         "--exact-source-revision",
         action="store_true",
         help=(
-            "Bind this report to the exact current HEAD for post-deploy attestation. "
-            "The default uses the last payload revision so a committed review control tail remains checkable."
+            "RELEASE-GATE MODE ONLY: bind this report to the exact current HEAD "
+            "and its tree for post-deploy attestation, as required by the ordered "
+            "release gate in docs/operations/release-integrity.md. Routine "
+            "landings must use the default payload-anchored mode, which binds "
+            "the last payload revision so a committed review control tail stays "
+            "checkable while later control-only commits move HEAD."
         ),
     )
     return parser
@@ -356,11 +385,7 @@ def main(argv: list[str] | None = None) -> int:
         except (OSError, ValueError, json.JSONDecodeError):
             pass
     pairing_refresh_status = pairing_refresh_status or "auto"
-    review_source_commit = (
-        source_commit(REPO_ROOT)
-        if args.exact_source_revision
-        else source_payload_commit(REPO_ROOT)
-    )
+    review_source_commit = _review_source_commit(args.exact_source_revision)
     source_provenance = (
         source_worktree_state(REPO_ROOT)
         if args.exact_source_revision

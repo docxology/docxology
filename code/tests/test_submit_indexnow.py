@@ -7,13 +7,14 @@ import sys
 import urllib.error
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-sys.path.insert(0, str(ORCH_DIR))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 
 from submit_indexnow import indexnow_urls, key_location, submit_bulk  # noqa: E402
-from sitemap_policy import SITE_ORIGIN, gsc_priority_urls  # noqa: E402
+from docxology_tools.sitemap_policy import SITE_ORIGIN, gsc_priority_urls  # noqa: E402
 
 
 class _Resp:

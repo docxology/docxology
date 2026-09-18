@@ -17,10 +17,12 @@ import re
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-from software_table import (  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.software_table import (  # noqa: E402
     SoftwareRow,
     DEFAULT_SOFTWARE_PATH,
     description_html,
@@ -30,14 +32,14 @@ from software_table import (  # noqa: E402
     lang_css_class,
     zenodo_url,
 )
-from collection_jsonld import (  # noqa: E402
+from docxology_tools.collection_jsonld import (  # noqa: E402
     display_paths,
     inline_collection_ld_marker_block,
     remove_inline_collection_ld as remove_collection_jsonld,
     replace_inline_collection_ld as replace_collection_jsonld,
 )
-from count_consistency import parse_software_catalog_counts  # noqa: E402
-from generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from docxology_tools.count_consistency import parse_software_catalog_counts  # noqa: E402
+from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
 
 SOFTWARE_HTML = REPO_ROOT / "software.html"
 SOFTWARE_LD_JSON = REPO_ROOT / "data" / "software-ld.json"

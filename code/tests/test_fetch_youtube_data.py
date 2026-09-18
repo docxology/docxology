@@ -4,11 +4,14 @@ import json
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 
 from fetch_youtube_data import merge_videos, refresh_channel  # noqa: E402
-import youtube_fetcher as yf  # noqa: E402
+from docxology_tools import youtube_fetcher as yf  # noqa: E402
 
 
 class _StaticFetcher:

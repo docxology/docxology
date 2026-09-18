@@ -5,9 +5,13 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from paper_metadata_schema import PaperMetadata  # noqa: E402
+
+from docxology_tools.paper_metadata_schema import PaperMetadata  # noqa: E402
 
 
 def test_schema_preserves_distinct_canonical_and_artifact_doi_fields():

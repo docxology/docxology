@@ -4,8 +4,11 @@
 sync_paired_publications.py only emits a report row for a Zenodo record that has
 some GitHub-release evidence -- a record with no matching release is silently
 absent from its pairs/actions/needs_review output, not flagged. This script
-closes that blind spot: it fetches the same live Zenodo query the pairing tool
-uses and diffs every record against pages/BIBLIOGRAPHY.md directly.
+closes that blind spot: it diffs every Zenodo record for the profile against
+pages/BIBLIOGRAPHY.md directly. By default it re-fetches the same live Zenodo
+query the pairing tool uses; pass
+``--records-from <paired_publications_report.json>`` to reuse the same-day
+pairing scan's records instead (``--force`` lifts the same-day requirement).
 
 Two independent findings, not one:
 
@@ -33,31 +36,37 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
-try:
-    from report_paths import dated_report_path, generated_timestamp, latest_report
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import dated_report_path, generated_timestamp, latest_report  # type: ignore[import]
+from docxology_tools.report_paths import dated_report_path, generated_timestamp, latest_report, report_date_string  # noqa: E402
 
-from publication_pairing import ZenodoRecord  # noqa: E402
+from docxology_tools.publication_pairing import ZenodoRecord  # noqa: E402
 from sync_paired_publications import (  # noqa: E402
     fetch_zenodo_records,
     parse_bibliography_rows,
+    zenodo_records_from_payload,
 )
 
 OUT = dated_report_path("zenodo_uncatalogued", "json")
 
 # Superseded Zenodo versions retained by the source registry but deliberately
 # not catalogued as new works. The current bibliography cites the replacement
-# concept/version for each. Keep this explicit so the freshness gate measures
+# concept/version for each; software-only and software-supplement records are
+# instead curated on pages/SOFTWARE.md (catalog row citing the concept DOI)
+# with no bibliography row. Keep this explicit so the freshness gate measures
 # actionable drift rather than known release-history records.
 KNOWN_STALE_RECORD_IDS = {
     "21418901",  # SynthOBS v1.618.0; current row cites concept 21418782
     "20804586",  # CogSecSkills v1; current row cites concept 21513316
     "19139090",  # Template/Reproducible duplicate of kept row #1
+    "22666981",  # Software-only supplement to the CCD paper; paper row cites concept 10.5281/zenodo.19695259
+    "22817425",  # daf-jev software release archive; catalogued in SOFTWARE.md citing concept 10.5281/zenodo.22816187; no bibliography row (software-only record)
+    "22667290",  # EvoJump v0.5.2 canonical curated deposit per R80 (software-catalog acceptance); work represented by the software row and paper row #12 (concept 10.5281/zenodo.17229924)
+    "22667291",  # EvoJump v0.5.2 GitHub-Zenodo automated integration archive per R81 (superseded); kept record is 22667290
+    "22760881",  # CCD software revision archive v2.6.0 (supplement to paper row #112, concept 10.5281/zenodo.19695259); code catalogued as cognitive_case_diagrams — same class as 22666981
 }
 
 # These records are intentionally cited by their version DOI because each is
@@ -73,6 +82,16 @@ VERSION_SPECIFIC_CITATION_EXCEPTIONS = {
         "reason": (
             "AII Ecosystem v3 is a separately curated 2025 bibliographic "
             "snapshot, distinct from the earlier v2 concept record."
+        ),
+    },
+    "15168382": {
+        "title": "On Time",
+        "concept_doi": "10.5281/zenodo.15168381",
+        "version_doi": "10.5281/zenodo.15168382",
+        "reason": (
+            "On Time is a separately curated 2025 paper snapshot; all "
+            "references were deliberately pointed at version record "
+            "15168382 in commit d086e7a3 (2026-08-22)."
         ),
     }
 }
@@ -186,8 +205,18 @@ def approved_version_specific_doi_exceptions(
     return approved, drift
 
 
-def build_report(repo_root: Path = REPO_ROOT) -> dict[str, object]:
-    records, warnings = fetch_zenodo_records()
+def build_report(
+    repo_root: Path = REPO_ROOT,
+    *,
+    records: list[ZenodoRecord] | None = None,
+    records_source: str = "live",
+    records_source_report: str | None = None,
+) -> dict[str, object]:
+    """Diff records against the bibliography; ``records`` injects cached records."""
+    if records is None:
+        records, warnings = fetch_zenodo_records()
+    else:
+        warnings = []
     catalogued = bibliography_doi_set(repo_root)
     missing = uncatalogued_records(records, catalogued)
     version_only = non_canonical_doi_records(records, catalogued)
@@ -201,6 +230,10 @@ def build_report(repo_root: Path = REPO_ROOT) -> dict[str, object]:
     return {
         "generated_at": generated_timestamp(),
         "zenodo_records_fetched": len(records),
+        "zenodo_records_source": {
+            "mode": records_source,
+            "source_report": records_source_report,
+        },
         "bibliography_dois": len(catalogued),
         "uncatalogued_count": len(missing),
         "non_canonical_doi_count": len(non_canonical),
@@ -231,8 +264,19 @@ def build_report(repo_root: Path = REPO_ROOT) -> dict[str, object]:
     }
 
 
-def write_report(repo_root: Path = REPO_ROOT) -> Path:
-    report = build_report(repo_root)
+def write_report(
+    repo_root: Path = REPO_ROOT,
+    *,
+    records: list[ZenodoRecord] | None = None,
+    records_source: str = "live",
+    records_source_report: str | None = None,
+) -> Path:
+    report = build_report(
+        repo_root,
+        records=records,
+        records_source=records_source,
+        records_source_report=records_source_report,
+    )
     out = repo_root / "reports" / OUT.name
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
@@ -274,6 +318,37 @@ def check_report(report_path: Path | None = None) -> list[str]:
     return problems
 
 
+def load_cached_records(path: Path, *, force: bool = False) -> list[ZenodoRecord]:
+    """Reuse the pairing scan's Zenodo records instead of re-fetching the query.
+
+    Fails closed: a non-pairing report, a warned scan, or a non-same-day
+    ``generated_at`` is refused (``--force`` lifts only the freshness
+    requirement). A cached-but-warned scan must never validate.
+    """
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        raise SystemExit(f"Cannot read cached Zenodo records from {path}: {exc}") from exc
+    if payload.get("source") != "GitHub Releases API + Zenodo Records API":
+        raise SystemExit(f"Cannot reuse cached records from {path}: unexpected report source")
+    warnings = payload.get("warnings")
+    if warnings:
+        raise SystemExit(
+            f"Refusing cached Zenodo records from {path}: {len(warnings)} API warning(s); "
+            "rerun the live scan"
+        )
+    generated_at = str(payload.get("generated_at") or "")
+    if generated_at[:10] != report_date_string() and not force:
+        raise SystemExit(
+            f"Cached Zenodo records from {path} are not same-day (generated_at {generated_at}); "
+            "rerun the pairing scan or pass --force"
+        )
+    try:
+        return zenodo_records_from_payload(payload)
+    except ValueError as exc:
+        raise SystemExit(f"Cannot reuse cached Zenodo records from {path}: {exc}") from exc
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Diff live Zenodo records for this profile against the curated bibliography."
@@ -286,6 +361,19 @@ def main() -> int:
             "uncatalogued records, unresolved DOI-role drift, or changed approved exceptions"
         ),
     )
+    parser.add_argument(
+        "--records-from",
+        metavar="PATH",
+        help=(
+            "Reuse the Zenodo records from a paired_publications report instead of "
+            "re-fetching the live query"
+        ),
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="With --records-from: accept a source report that is not same-day",
+    )
     args = parser.parse_args()
 
     if args.check:
@@ -297,7 +385,17 @@ def main() -> int:
         print("checked zenodo_uncatalogued report: 0 uncatalogued records")
         return 0
 
-    out = write_report()
+    if args.records_from:
+        cached_from = Path(args.records_from)
+        records = load_cached_records(cached_from, force=args.force)
+        print(f"reusing {len(records)} cached Zenodo records from {cached_from}")
+        out = write_report(
+            records=records,
+            records_source="cached",
+            records_source_report=str(cached_from),
+        )
+    else:
+        out = write_report()
     report = json.loads(out.read_text(encoding="utf-8"))
     count = report["uncatalogued_count"]
     non_canonical_count = report["non_canonical_doi_count"]

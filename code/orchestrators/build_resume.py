@@ -12,12 +12,13 @@ import sys
 from io import BytesIO
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-SRC_DIR = REPO_ROOT / "code" / "src"
-sys.path.insert(0, str(SRC_DIR))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-from site_nav import HEAD_EXTRAS  # noqa: E402
-from resume_data import (  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.site_nav import HEAD_EXTRAS  # noqa: E402
+from docxology_tools.resume_data import (  # noqa: E402
     VARIANTS,
     build_resume_payload,
     date_range,
@@ -29,10 +30,7 @@ from resume_data import (  # noqa: E402
     source_manifest as resume_source_manifest,
 )
 
-try:
-    from report_paths import generated_timestamp, stable_generated_at
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, stable_generated_at
+from docxology_tools.report_paths import generated_timestamp, stable_generated_at  # noqa: E402
 
 JSON_OUT = REPO_ROOT / "data" / "resume.json"
 RESUME_DIR = REPO_ROOT / "resume"

@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-09-14T20:57:20Z",
+  "zenodo_records_fetched": 157,
+  "bibliography_dois": 200,
+  "uncatalogued_count": 3,
+  "non_canonical_doi_count": 1,
+  "approved_version_specific_doi_exception_count": 2,
+  "version_specific_doi_exception_drift_count": 0,
+  "warnings": [],
+  "uncatalogued": [
+    {
+      "record_id": "22754352",
+      "doi": "10.5281/zenodo.22754351",
+      "title": "Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security",
+      "publication_date": "2026-09-14",
+      "html_url": "https://zenodo.org/records/22754352"
+    },
+    {
+      "record_id": "22667290",
+      "doi": "10.5281/zenodo.22664675",
+      "title": "EvoJump: A Comprehensive Framework for Evolutionary Ontogenetic Analysis",
+      "publication_date": "2026-09-08",
+      "html_url": "https://zenodo.org/records/22667290"
+    },
+    {
+      "record_id": "22667291",
+      "doi": "10.5281/zenodo.22664645",
+      "title": "EvoJump: A Comprehensive Framework for Evolutionary Ontogenetic Analysis",
+      "publication_date": "2026-09-08",
+      "html_url": "https://zenodo.org/records/22667291"
+    }
+  ],
+  "non_canonical_doi": [
+    {
+      "record_id": "22243473",
+      "concept_doi": "10.5281/zenodo.22243472",
+      "version_doi_in_bibliography": "10.5281/zenodo.22243473",
+      "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)"
+    }
+  ],
+  "approved_version_specific_doi_exceptions": [
+    {
+      "record_id": "17982447",
+      "title": "The Active Inference Institute & Active Inference Ecosystem",
+      "concept_doi": "10.5281/zenodo.14108991",
+      "version_doi_in_bibliography": "10.5281/zenodo.17982447",
+      "reason": "AII Ecosystem v3 is a separately curated 2025 bibliographic snapshot, distinct from the earlier v2 concept record."
+    },
+    {
+      "record_id": "15168382",
+      "title": "On Time",
+      "concept_doi": "10.5281/zenodo.15168381",
+      "version_doi_in_bibliography": "10.5281/zenodo.15168382",
+      "reason": "On Time is a separately curated 2025 paper snapshot; all references were deliberately pointed at version record 15168382 in commit d086e7a3 (2026-08-22)."
+    }
+  ],
+  "version_specific_doi_exception_drift": []
+}

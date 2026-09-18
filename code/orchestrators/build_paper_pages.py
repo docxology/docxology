@@ -11,17 +11,19 @@ import sys
 from pathlib import Path
 from urllib.parse import quote
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
 
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from generated_outputs import (  # noqa: E402
+from docxology_tools.generated_outputs import (  # noqa: E402
     generated_output_files,
     stale_output_paths,
     write_output_texts,
 )
-from build_stamp import footer_build_stamp_html  # noqa: E402
-from site_nav import HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, clip_description, domain_page_href, render_nav  # noqa: E402
+from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
+from docxology_tools.site_nav import HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, clip_description, domain_page_href, render_nav  # noqa: E402
 
 
 def h(value: object) -> str:

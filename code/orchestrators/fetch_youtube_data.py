@@ -15,9 +15,10 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable, Sequence
 
-# Allow importing from code/src
-sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
-import youtube_fetcher as yf
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
+from docxology_tools import youtube_fetcher as yf  # noqa: E402
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
 

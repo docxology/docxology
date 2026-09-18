@@ -1,9 +1,12 @@
 """Build stamp for generated page footers: "build <short-sha> <YYYY-MM-DD>".
 
-The short SHA comes from git at generation time (``git rev-parse --short HEAD``)
-and the date is that commit's committer date, so regeneration is deterministic
-per commit. ``BUILD_SHA``/``BUILD_DATE`` environment variables override both for
-release/integration runs that must pin a stamp explicitly.
+The short SHA comes from git at generation time, bound to the payload-anchored
+commit (``release_controls.source_payload_commit``) rather than ``HEAD``, and
+the date is that commit's committer date. Control-only tail commits therefore
+move ``HEAD`` without chasing the stamp: routine re-renders of an unchanged
+payload tree stay byte-stable. ``BUILD_SHA``/``BUILD_DATE`` environment
+variables override both for release/integration runs that must pin a stamp
+explicitly.
 
 Every generator that emits the site footer appends :func:`footer_build_stamp_html`
 inside its ``<footer>`` block, so all generated pages share one stamp format and
@@ -14,6 +17,7 @@ from __future__ import annotations
 
 import os
 import re
+from release_controls import source_payload_commit
 import subprocess
 from pathlib import Path
 
@@ -32,6 +36,44 @@ class BuildStampError(RuntimeError):
     """Raised when the build stamp cannot be derived from git or the environment."""
 
 
+_STAMP_CACHE: tuple[str, str] | None = None
+
+
+def build_stamp_info(repo_root: Path | str | None = None) -> tuple[str, str]:
+    """Return ``(short_sha, YYYY-MM-DD)`` for the current build.
+
+    ``BUILD_SHA`` / ``BUILD_DATE`` environment variables take precedence so a
+    release or integration run can pin the stamp; otherwise both come from the
+    payload-anchored commit (``release_controls.source_payload_commit``), not
+    ``HEAD``: control-only tail commits move ``HEAD`` without chasing the
+    stamp, so re-rendering an unchanged payload tree is byte-stable. The git
+    probes run once per process and are memoized: generators that stamp
+    thousands of pages otherwise spawn git subprocesses per page.
+    """
+    global _STAMP_CACHE
+    if repo_root is None and _STAMP_CACHE is not None:
+        return _STAMP_CACHE
+    root = Path(repo_root) if repo_root else Path(__file__).resolve().parents[2]
+    sha = os.environ.get("BUILD_SHA", "").strip()
+    stamp_date = os.environ.get("BUILD_DATE", "").strip()
+    if sha and _SHA_RE.match(sha) and stamp_date and _DATE_RE.match(stamp_date):
+        return sha, stamp_date
+    payload_commit = source_payload_commit(root)
+    if not _SHA_RE.match(payload_commit):
+        raise BuildStampError(
+            f"cannot derive payload-anchored source revision: {payload_commit!r}"
+        )
+    git_sha = _git(root, "rev-parse", "--short", payload_commit)
+    git_date = _git(root, "show", "-s", "--format=%cs", payload_commit)
+    if not _SHA_RE.match(git_sha):
+        raise BuildStampError(f"unexpected git short SHA {git_sha!r}")
+    if not _DATE_RE.match(git_date):
+        raise BuildStampError(f"unexpected git commit date {git_date!r}")
+    if repo_root is None:
+        _STAMP_CACHE = (git_sha, git_date)
+    return git_sha, git_date
+
+
 def _git(repo_root: Path, *args: str) -> str:
     try:
         result = subprocess.run(
@@ -43,27 +85,6 @@ def _git(repo_root: Path, *args: str) -> str:
     except (OSError, subprocess.CalledProcessError) as exc:
         raise BuildStampError(f"git {' '.join(args)} failed: {exc}") from exc
     return result.stdout.strip()
-
-
-def build_stamp_info(repo_root: Path | str | None = None) -> tuple[str, str]:
-    """Return ``(short_sha, YYYY-MM-DD)`` for the current build.
-
-    ``BUILD_SHA`` / ``BUILD_DATE`` environment variables take precedence so a
-    release or integration run can pin the stamp; otherwise both come from the
-    repository's HEAD commit.
-    """
-    root = Path(repo_root) if repo_root else Path(__file__).resolve().parents[2]
-    sha = os.environ.get("BUILD_SHA", "").strip()
-    stamp_date = os.environ.get("BUILD_DATE", "").strip()
-    if sha and _SHA_RE.match(sha) and stamp_date and _DATE_RE.match(stamp_date):
-        return sha, stamp_date
-    git_sha = _git(root, "rev-parse", "--short", "HEAD")
-    git_date = _git(root, "show", "-s", "--format=%cs", "HEAD")
-    if not _SHA_RE.match(git_sha):
-        raise BuildStampError(f"unexpected git short SHA {git_sha!r}")
-    if not _DATE_RE.match(git_date):
-        raise BuildStampError(f"unexpected git commit date {git_date!r}")
-    return git_sha, git_date
 
 
 def current_on_disk_stamp(html_text: str) -> str | None:

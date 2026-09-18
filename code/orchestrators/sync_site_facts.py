@@ -9,10 +9,12 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_facts import SiteFactsError, counts, generated_date, generated_month_year  # noqa: E402
-from report_paths import latest_source_report, latest_source_subdir_file  # noqa: E402
+from docxology_tools.site_facts import SiteFactsError, counts, generated_date, generated_month_year  # noqa: E402
+from docxology_tools.report_paths import latest_source_report, latest_source_subdir_file  # noqa: E402
 TARGETS = [
     REPO_ROOT / "index.html",
     REPO_ROOT / "publications.html",
@@ -41,7 +43,10 @@ MONTH_YEAR_PATTERN = rf"(?:{'|'.join(MONTH_NAMES)})\s+\d{{4}}"
 
 
 def latest_report(prefix: str, suffix: str) -> str | None:
-    path = latest_source_report(f"{prefix}_*.{suffix}", required=False)
+    # The [0-9] anchor keeps longer families that share a glob prefix
+    # (external_links_triage_* under external_links_*) from shadowing the
+    # exact-prefix dated report.
+    path = latest_source_report(f"{prefix}_[0-9]*.{suffix}", required=False)
     return path.name if path else None
 
 
@@ -153,13 +158,22 @@ def render(path: Path) -> str:
             name = latest_report(prefix, suffix)
             if name:
                 text = re.sub(rf"{prefix}_\d{{4}}-\d{{2}}-\d{{2}}\.json", name, text)
-    # Discovery pages also link dated generated reports; keep those pointers
-    # aligned with the newest report artifacts in the same rebuild.
+    # Discovery pages and llms.txt also link dated generated reports; keep
+    # those pointers aligned with the newest report artifacts in the same
+    # rebuild. The public-source snapshot/inventory pair is included here
+    # because llms.txt has no per-name branch that refreshes it.
     if path.name in {"discovery.html", "DISCOVERY.md", "llms.txt"}:
         for prefix, suffix in (
+            ("public_source_snapshot", "json"),
+            ("public_source_inventory", "json"),
             ("reconciliation", "md"),
             ("asset_size", "json"),
             ("accessibility_static", "json"),
+            ("external_links", "json"),
+            ("external_links_triage", "md"),
+            ("live_site_verification", "json"),
+            ("source_coverage", "json"),
+            ("source_coverage", "md"),
         ):
             name = latest_report(prefix, suffix)
             if name:

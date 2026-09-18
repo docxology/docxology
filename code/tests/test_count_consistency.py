@@ -5,9 +5,13 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from count_consistency import (
+
+from docxology_tools.count_consistency import (  # noqa: E402
     canonical_bibliography_snapshot,
     canonical_software_snapshot,
     collect_count_drift,

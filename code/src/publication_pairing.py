@@ -9,16 +9,13 @@ from __future__ import annotations
 
 import json
 import re
-import sys
 from dataclasses import asdict, dataclass
 from datetime import datetime
 from html import unescape
-from pathlib import Path
 from typing import Any, Iterable, Mapping
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from domain_inference import contains_term, infer_domain_emoji_for_pair as infer_domain  # noqa: E402, F401
-from report_paths import generated_timestamp  # noqa: E402
+from domain_inference import contains_term, infer_domain_emoji_for_pair as infer_domain  # noqa: F401
+from report_paths import generated_timestamp
 
 ORCID = "0000-0001-6232-9096"
 
@@ -588,6 +585,17 @@ def is_ignored_release(release: GitHubRelease) -> bool:
     return any(marker in text for marker in ignore_markers)
 
 
+def is_draft_release(release: GitHubRelease) -> bool:
+    """Return True for unpublished draft releases with ephemeral identities.
+
+    GitHub assigns draft releases a rotating ``untagged-<hash>`` URL slug that
+    changes on every edit, so a pairing or decision bound to that URL can never
+    survive the next scan. Drafts are not citable release URLs; the permanent
+    tag URL appears when the release is published.
+    """
+    return "untagged-" in (release.html_url or "")
+
+
 def _identifier_text(record: ZenodoRecord) -> str:
     values: list[str] = []
     for item in record.related_identifiers:
@@ -610,7 +618,7 @@ def title_overlap(left: str, right: str) -> float:
 
 def confidence_for_pair(release: GitHubRelease, record: ZenodoRecord) -> PublicationPair | None:
     """Classify a GitHub release / Zenodo record pair."""
-    if is_ignored_release(release):
+    if is_ignored_release(release) or is_draft_release(release):
         return None
     evidence: list[str] = []
     release_text = release.text

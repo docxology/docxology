@@ -8,9 +8,11 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from site_nav import ensure_agent_map_link  # noqa: E402
+from docxology_tools.site_nav import ensure_agent_map_link  # noqa: E402
 
 
 def is_non_indexable(markup: str) -> bool:

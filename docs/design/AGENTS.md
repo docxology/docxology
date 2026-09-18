@@ -12,10 +12,10 @@ Design documentation for the docxology site.
 
 ## Invariants & gotchas
 
-- Local-only under `projects/ongoing/` — never commit.
-- `docxology` is a live work tree with THREE git remotes (`origin`/`public` = the
-  public mirror, `docxology-private` upstream; local main ahead 114): read, don't
-  write, never run git operations here.
+- Single git remote: `origin` = `https://github.com/docxology/docxology.git`
+  (`main` tracks `origin/main`). This is a live work tree: push feature branches
+  and open PRs against `origin` rather than committing straight to `main`.
+- Release runbook: `docs/operations/release-integrity.md` (and `docs/operations/settle.md`).
 - Generated subfolders (`output/`, `.netlify/`) — regenerate, don't hand-edit.
 
 ## Verify

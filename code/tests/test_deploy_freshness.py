@@ -7,9 +7,13 @@ from pathlib import Path
 
 import pytest
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from deploy_freshness import (  # noqa: E402
+
+from docxology_tools.deploy_freshness import (  # noqa: E402
     DeployFreshnessError,
     extract_live_stamp,
     normalize_sha,
@@ -41,14 +45,30 @@ def test_run_freshness_check_requires_expected_sha() -> None:
 
 
 def test_run_freshness_check_immediate_match(monkeypatch: pytest.MonkeyPatch) -> None:
-    import deploy_freshness as module
+    from docxology_tools import deploy_freshness as module
 
     monkeypatch.setattr(module, "fetch_live_stamp", lambda url: "94bd369")
     assert run_freshness_check(expected_sha="94bd36990a36") == "94bd369"
 
 
+def test_run_freshness_check_accepts_auto_lengthened_short_sha(monkeypatch: pytest.MonkeyPatch) -> None:
+    """git --short auto-lengthens on ambiguity; a longer stamp must still match.
+
+    The deployed homepage stamp (8ecdaa07, 8 chars) vs a 7-char truncation of
+    the expectation is exactly the comparison that left the freshness alarm
+    red on every deploy.
+    """
+    from docxology_tools import deploy_freshness as module
+
+    monkeypatch.setattr(module, "fetch_live_stamp", lambda url: "8ecdaa07")
+    assert (
+        run_freshness_check(expected_sha="8ecdaa0765049a2b517d1a9e51b7b2d3f5c9f8e2", grace_attempts=1)
+        == "8ecdaa07"
+    )
+
+
 def test_run_freshness_check_fails_on_mismatch_without_retries(monkeypatch: pytest.MonkeyPatch) -> None:
-    import deploy_freshness as module
+    from docxology_tools import deploy_freshness as module
 
     monkeypatch.setattr(module, "fetch_live_stamp", lambda url: "94bd369")
     with pytest.raises(DeployFreshnessError, match="PRODUCTION STALE"):
@@ -56,7 +76,7 @@ def test_run_freshness_check_fails_on_mismatch_without_retries(monkeypatch: pyte
 
 
 def test_run_freshness_check_missing_stamp_fails(monkeypatch: pytest.MonkeyPatch) -> None:
-    import deploy_freshness as module
+    from docxology_tools import deploy_freshness as module
 
     monkeypatch.setattr(module, "fetch_live_stamp", lambda url: None)
     with pytest.raises(DeployFreshnessError, match="no build-stamp footer"):
@@ -64,7 +84,7 @@ def test_run_freshness_check_missing_stamp_fails(monkeypatch: pytest.MonkeyPatch
 
 
 def test_run_freshness_check_grace_window_then_success(monkeypatch: pytest.MonkeyPatch) -> None:
-    import deploy_freshness as module
+    from docxology_tools import deploy_freshness as module
 
     attempts = {"n": 0}
 
@@ -79,7 +99,7 @@ def test_run_freshness_check_grace_window_then_success(monkeypatch: pytest.Monke
 
 
 def test_fetch_live_stamp_handles_http_error(monkeypatch: pytest.MonkeyPatch) -> None:
-    import deploy_freshness as module
+    from docxology_tools import deploy_freshness as module
 
     def raise_http_error(url: str) -> str:
         raise OSError("network down")

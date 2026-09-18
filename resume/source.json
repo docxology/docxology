@@ -79,7 +79,7 @@
       "links": [
         {
           "label": "Stanford dissertation",
-          "url": "http://purl.stanford.edu/pb813wm1484"
+          "url": "https://purl.stanford.edu/pb813wm1484"
         }
       ],
       "variants": [
@@ -277,6 +277,7 @@
       "workplace": "Stealth Startup",
       "start_year": 2025,
       "end_year": 2026,
+      "status": "stealth",
       "roles": [
         "Operator"
       ],
@@ -298,6 +299,7 @@
       "workplace": "Stealth Startup",
       "start_year": 2023,
       "end_year": 2024,
+      "status": "stealth",
       "roles": [
         "Co-founder",
         "Operator"
@@ -1547,7 +1549,7 @@
       "links": [
         {
           "label": "Cybernetics Society",
-          "url": "http://cybsoc.org/"
+          "url": "https://cybsoc.org/"
         }
       ],
       "variants": [
@@ -1825,7 +1827,7 @@
       "links": [
         {
           "label": "NIMBioS",
-          "url": "http://www.nimbios.org/tutorials/TT_eqg"
+          "url": "https://www.nimbios.org/tutorials/TT_eqg"
         }
       ],
       "variants": [
@@ -2005,7 +2007,7 @@
       "links": [
         {
           "label": "Flickr",
-          "url": "http://flickr.com/photos/daniel_friedman/"
+          "url": "https://flickr.com/photos/daniel_friedman/"
         }
       ],
       "variants": [

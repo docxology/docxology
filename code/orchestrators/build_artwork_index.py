@@ -20,15 +20,14 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SOURCE = REPO_ROOT / "data" / "artworks.json"
 OUTPUT = REPO_ROOT / "data" / "artworks-index.json"
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
-try:
-    from report_paths import generated_timestamp, stable_generated_at
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, stable_generated_at
+from docxology_tools.report_paths import generated_timestamp, stable_generated_at  # noqa: E402
 
 
 # Descriptions are intentionally omitted: the first keystroke in the search

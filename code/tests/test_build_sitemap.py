@@ -6,14 +6,15 @@ import re
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-ORCH_DIR = REPO_ROOT / "code" / "orchestrators"
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-sys.path.insert(0, str(ORCH_DIR))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 
 import build_sitemap  # noqa: E402
 from build_sitemap import render, sitemap_locs  # noqa: E402
-from sitemap_policy import INDEX_PRIORITY_STATIC, indexnow_urls_from_locs  # noqa: E402
+from docxology_tools.sitemap_policy import INDEX_PRIORITY_STATIC, indexnow_urls_from_locs  # noqa: E402
 
 
 def test_sitemap_excludes_ops_and_paper_paths():

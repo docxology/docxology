@@ -23,6 +23,8 @@
     <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
     <link rel="alternate" type="application/json" href="/data/agent-index.json" title="Agent route manifest">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Daniel Ari Friedman">
+    <meta property="og:locale" content="en_US">
     <meta property="og:title" content="Start Here — Daniel Ari Friedman">
     <meta property="og:description" content="Four curated reading paths into the public research: Active Inference, ants, cognitive security, and collaboration.">
     <meta property="og:url" content="https://danielarifriedman.com/start-here.html">
@@ -110,7 +112,7 @@
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol><li><a href="index.html">Home</a></li><li aria-current="page">Start Here</li></ol>
     </nav>
-    <header class="page-hero"><h1>Start Here</h1><p class="sub">Four curated reading paths into the public research, software, and evidence index. Pick the one that matches why you came.</p></header>
+    <header class="page-hero"><h1>Start Here</h1><p class="sub">Four curated reading paths into the public research, software, and evidence index — plus the data layer underneath, for human readers and agents alike. Pick the one that matches why you came.</p></header>
     <main id="main" class="main"><section class="section"><div class="start-grid">
         <article class="start-card" id="new-to-active-inference">
             <h2>New to Active Inference</h2>
@@ -162,7 +164,50 @@
                 <li><a href="collaborators.html">Collaborators</a></li>
             </ol>
         </article>
-    </div></section></main>
+    </div></section>
+
+    <section class="section section-alt">
+        <div class="section-header"><h2>What this site is</h2><p>The public research and software index of Daniel Ari Friedman: hand-maintained curated sources backed by a generated data layer, all in one repository.</p><div class="section-divider"></div></div>
+        <div class="card">
+            <p>This site is the front end of <em>docxology</em>. Curated files (the bibliography, the software catalog, this page) are the sources of truth; everything generated — citation exports, per-work pages, search and agent indexes — is rebuilt from them. The full artifact map, including which files are generated and how to rebuild each one, is in <a href="GENERATED.md">GENERATED.md</a>. The main layers:</p>
+            <ul>
+                <li><strong>Publications</strong> — a unified bibliography of 215 works rendered at <a href="publications.html">publications.html</a>, with a page per work under <a href="works/">works/</a>.</li>
+                <li><strong>Software</strong> — 154 curated software projects at <a href="software.html">software.html</a>, backed by a full <a href="repositories.html">GitHub repository inventory</a>.</li>
+                <li><strong>Paper folders</strong> — 198 folders under <code>papers/</code>, 190 with full-text extraction and 8,944 extracted images (recorded in <a href="data/current-counts.json">data/current-counts.json</a>).</li>
+                <li><strong>Art</strong> — 942 catalogued pen-and-ink drawings at <a href="art.html">art.html</a>, exported as <a href="data/artworks-index.json">artworks-index.json</a>.</li>
+                <li><strong>Video</strong> — 1,127 videos across the personal and Active Inference Institute channels at <a href="videos.html">videos.html</a>, exported as <a href="data/videos.json">videos.json</a>.</li>
+                <li><strong>Evidence</strong> — a claim-level ledger at <a href="evidence.html">evidence.html</a> and an executable reproducibility ledger at <a href="reproducibility.html">reproducibility.html</a>.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header"><h2>If you are an agent</h2><p>Machine-readable entry points, in roughly the order the repository itself recommends them.</p><div class="section-divider"></div></div>
+        <div class="card">
+            <ul>
+                <li><a href="llms.txt">llms.txt</a> — the canonical machine-readable map: every page and dataset, the crawl policy, and the site's source-of-truth rules.</li>
+                <li><a href="data/agent-index.json">data/agent-index.json</a> — the stable agent route manifest: routes, dataset schemas (schema registry 1.5), counts, and freshness metadata.</li>
+                <li><a href="discovery.html">discovery.html</a> — canonical public identifiers, public API endpoints, and repeatable query recipes for cross-checking claims.</li>
+                <li><a href="data/works.json">data/works.json</a> — the machine-readable registry of every work (num, citation key, URL, DOI, paper folder).</li>
+                <li><a href="search-index.json">search-index.json</a> — the full site search index; <a href="search.html">search.html</a> is the human-facing version.</li>
+                <li><a href="cite-verify.html">cite-verify.html</a> — citation metadata and the verification rules: treat curated files as sources of truth and public API counts as freshness checks, not replacements.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="section-header"><h2>Recent work</h2><p>The most recent additions to the unified bibliography, and where site-level changes are recorded.</p><div class="section-divider"></div></div>
+        <div class="card">
+            <p>Recent additions to the bibliography include:</p>
+            <ul>
+                <li><a href="works/Friedman2026AgenticSecurityOperatingSystems218.html">Agentic Security and Operating Systems</a> — a deep review and prospectus.</li>
+                <li><a href="works/Friedman2026FractiSkillsOnePortableAgent217.html">FractiSkills: One Portable Agent Skill per Page</a></li>
+                <li><a href="works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html">Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation</a></li>
+                <li><a href="works/Friedman2026CognitiveIntegrityFrameworkPractical214.html">Cognitive Integrity Framework: Practical Applications and Deployment Guide</a> (Part 3; Parts 1–2 also in the bibliography)</li>
+            </ul>
+            <p>Site-level changes are summarized at <a href="updates.html">updates.html</a> (built from the repository changelog) and delivered via the <a href="feed.xml">RSS feed</a>.</p>
+        </div>
+    </section></main>
     <footer role="contentinfo">
         <div class="footer-rule" aria-hidden="true"></div>
         <p>Daniel Ari Friedman, PhD · <a href="search-index.json">search-index.json</a> · <a href="data/agent-index.json">agent-index.json</a> · <a href="cite-verify.html">Cite this site</a></p>

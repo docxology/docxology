@@ -20,17 +20,15 @@ import sys
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
 
-from biblio_table import BiblioRow, iter_bibliography_rows  # noqa: E402
-from bibliography_links import canonical_link_url  # noqa: E402
+from docxology_tools.biblio_table import BiblioRow, iter_bibliography_rows  # noqa: E402
+from docxology_tools.bibliography_links import canonical_link_url  # noqa: E402
 
-try:
-    from report_paths import generated_timestamp, stable_generated_at
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import generated_timestamp, stable_generated_at
+from docxology_tools.report_paths import generated_timestamp, stable_generated_at  # noqa: E402
 
 
 DOMAIN_NAMES = {

@@ -16,19 +16,17 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-from sitemap_policy import SITE_ORIGIN, gsc_priority_urls  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.sitemap_policy import SITE_ORIGIN, gsc_priority_urls  # noqa: E402
 from build_sitemap import sitemap_locs  # noqa: E402
 
-try:
-    from report_paths import dated_report_path, generated_timestamp
-except ImportError:  # pragma: no cover
-    from .report_paths import dated_report_path, generated_timestamp
+from docxology_tools.report_paths import dated_report_path, generated_timestamp  # noqa: E402
 
-from seo_invariants import REDIRECT_STUBS, collect_seo_errors  # noqa: E402
+from docxology_tools.seo_invariants import REDIRECT_STUBS, collect_seo_errors  # noqa: E402
 
 GSC_BASE = "https://search.google.com/search-console"
 PROPERTY = "https://danielarifriedman.com/"

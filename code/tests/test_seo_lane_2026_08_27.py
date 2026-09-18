@@ -9,11 +9,14 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
 
-from title_policy import (  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.title_policy import (  # noqa: E402
     HARD_LIMIT,
     SOFT_LIMIT,
     assert_title_within_limit,
@@ -21,7 +24,7 @@ from title_policy import (  # noqa: E402
 )
 
 import build_404_page  # noqa: E402
-from seo_invariants import check_canonical_integrity  # noqa: E402
+from docxology_tools.seo_invariants import check_canonical_integrity  # noqa: E402
 import pytest  # noqa: E402
 
 
@@ -123,7 +126,7 @@ def test_build_404_page_check_mode_passes_on_fresh_render():
     # stamp (commit SHA at generation time) - mirrors generated_outputs semantics.
     import sys as _sys
     _sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-    from build_stamp import reuse_on_disk_stamp
+    from docxology_tools.build_stamp import reuse_on_disk_stamp
     content = build_404_page.render()
     on_disk = (REPO_ROOT / "404.html").read_text(encoding="utf-8")
     assert on_disk == reuse_on_disk_stamp(content, on_disk)

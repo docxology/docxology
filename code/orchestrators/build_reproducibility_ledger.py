@@ -38,14 +38,17 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 JSON_OUT = REPO_ROOT / "data" / "reproducibility.json"
 HTML_OUT = REPO_ROOT / "reproducibility.html"
 MD_OUT = REPO_ROOT / "pages" / "REPRODUCIBILITY.md"
 
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
-from build_stamp import footer_build_stamp_html  # noqa: E402
-from site_nav import (  # noqa: E402
+from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
+from docxology_tools.report_paths import stable_generated_at  # noqa: E402
+from docxology_tools.site_nav import (  # noqa: E402
     BREADCRUMB_CSS,
     HEAD_EXTRAS,
     INTERACTIVE_SCRIPTS,
@@ -404,20 +407,13 @@ def _preserve_generated_at(ledger: dict, *, json_out: Path = JSON_OUT) -> dict:
     The JSON timestamp is informational, not a new reproducibility result.  If
     write mode refreshes it every pass, it changes the Pages manifest, which in
     turn makes a supposedly idempotent release pipeline perpetually dirty.
+    ``stable_generated_at`` returns the on-disk timestamp only when the body
+    (everything except ``generated_at``) matches; a missing or unreadable
+    ledger yields None, which keeps the freshly stamped ledger.
     """
-    if not json_out.exists():
-        return ledger
-    try:
-        existing = json.loads(json_out.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return ledger
-    current_body = dict(ledger)
-    existing_body = dict(existing) if isinstance(existing, dict) else {}
-    current_body.pop("generated_at", None)
-    existing_body.pop("generated_at", None)
-    prior_timestamp = existing.get("generated_at") if isinstance(existing, dict) else None
-    if current_body == existing_body and isinstance(prior_timestamp, str) and prior_timestamp:
-        ledger["generated_at"] = prior_timestamp
+    prior = stable_generated_at(json_out, ledger)
+    if prior:
+        ledger["generated_at"] = prior
     return ledger
 
 
@@ -447,7 +443,7 @@ def _comparable(path: Path, content: str) -> tuple[str, str]:
     if path != JSON_OUT:
         # Stamp-reuse: a difference confined to the footer build stamp (commit
         # SHA at generation time) is not staleness - mirror generated_outputs.
-        from build_stamp import reuse_on_disk_stamp  # noqa: E402
+        from docxology_tools.build_stamp import reuse_on_disk_stamp  # noqa: E402
         return on_disk, reuse_on_disk_stamp(content, on_disk)
     existing = json.loads(on_disk)
     fresh = json.loads(content)

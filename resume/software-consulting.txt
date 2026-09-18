@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-09-05T16:04:16Z
+Generated: 2026-09-18T15:57:10Z
 
-Current public metrics: 212 curated works; 148 catalogued software repositories (109 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 206 docxology + 43 AII public repositories (161 primary, 88 forks).
+Current public metrics: 215 curated works; 155 catalogued software repositories (116 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 219 docxology + 43 AII public repositories (170 primary, 92 forks).
 
 SUMMARY
 -------
@@ -54,7 +54,7 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (204)
+WORKS AND PUBLICATIONS (207)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
@@ -140,7 +140,7 @@ WORKS AND PUBLICATIONS (204)
 [090] 2020 | Paper | The Innovator's Catechism | Zenodo | 10.5281/zenodo.4383229
 [091] 2020 | Paper | The neuroscience of decision making (interview with Timothy Hanks) | ALIUS Bulletin | 10.34700/8pg4-0h12
 [092] 2019 | Paper | Dennett Explained (interview with Daniel Dennett) | ALIUS Bulletin | 10.34700/7gkw-zh08
-[093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | http://purl.stanford.edu/pb813wm1484
+[093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | https://purl.stanford.edu/pb813wm1484
 [094] 2019 | Paper | The ant colony as a test for scientific theories of consciousness | Synthese | 10.1007/s11229-019-02130-y
 [095] 2019 | Paper | The physiology of forager hydration and variation among harvester ant colonies | Scientific Reports | 10.1038/s41598-019-41586-3
 [096] 2018 | Paper | Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations | PLoS One | 10.1371/journal.pone.0202117
@@ -159,7 +159,7 @@ WORKS AND PUBLICATIONS (204)
 [109] 2026 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | Zenodo | 10.5281/zenodo.19574117
 [110] 2026 | Paper | A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring | Active Inference Journal | 10.5281/zenodo.19461933
 [111] 2026 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | CSCIS vol 2857, Springer | 10.1007/978-3-032-16955-6_11
-[112] 2026 | Paper | Compositional Approaches to Linguistic Case for Cognitive Modeling | Active Inference Journal | 10.5281/zenodo.19695259
+[112] 2026 | Paper | Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case | Active Inference Journal | 10.5281/zenodo.19695259
 [113] 2026 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | Active Inference Journal | 10.5281/zenodo.19699233
 [114] 2020 | Paper | The Facilitator's Catechism | Zenodo | 10.5281/zenodo.4062540
 [115] 2026 | Paper | The Architecture of False Gods: William Blake, Professor Jiang, and the Active Inference Corrective to Single Vision | Zenodo | 10.5281/zenodo.20144983
@@ -260,13 +260,16 @@ WORKS AND PUBLICATIONS (204)
 [212] 2026 | Paper | docxplus — the Intelligent Document Container | Zenodo | 10.5281/zenodo.21983948
 [213] 2026 | Paper | Cognitive Integrity Framework: Computational Validation and Empirical Analysis (Part 2 of 3: Implementation, Empirical Analysis, and Adversarial Evaluation) | Zenodo | 10.5281/zenodo.22134545
 [214] 2026 | Paper | Cognitive Integrity Framework: Practical Applications and Deployment Guide (Part 3: Practitioner Guidance and Cross-Domain CIF-AD-OODA Applications) | Zenodo | 10.5281/zenodo.22134547
+[216] 2026 | Paper | Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation | Zenodo | 10.5281/zenodo.22663906
+[217] 2026 | Paper | FractiSkills: One Portable Agent Skill per Page | Zenodo | 10.5281/zenodo.22712650
+[218] 2026 | Paper | Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security | Zenodo | 10.5281/zenodo.22754351
 
-SOFTWARE (148)
+SOFTWARE (155)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
 docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/
-docxology/codomyrmex | Python | https://github.com/docxology/codomyrmex | AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · Zenodo | paper: papers/2026_Codomyrmex/ | zenodo: https://doi.org/10.5281/zenodo.21750800
+docxology/codomyrmex | Python | https://github.com/docxology/codomyrmex | AI-native modular coding workspace — 100+ modules, 500+ MCP tools, 21K+ zero-mock tests, multi-agent orchestration (Claude/Gemini/GPT), PAI integration · · Citation DOI | paper: papers/2026_Codomyrmex/ | zenodo: https://doi.org/10.5281/zenodo.21750800
 docxology/timeline_generator | TypeScript | https://github.com/docxology/timeline_generator | Networked Life Encoding — interactive D3 knowledge graph of human intellectual history; 24 relationship types, Perplexity AI enrichment; seeded around R. Buckminster Fuller's network
 docxology/cognitive-engine | Python | https://github.com/docxology/cognitive-engine | Hybrid neuro-symbolic AI combining fractal symbolic representations with probabilistic neural models for enhanced reasoning; includes Unipixel fractal building blocks and PEFF ethical reasoning
 docxology/opentir | Python | https://github.com/docxology/opentir | Comprehensive toolkit analyzing 250+ Palantir open-source repositories (6.2M+ lines of code) — automated discovery, multi-language analysis, dependency mapping, statistical profiling, and professional visualizations
@@ -286,7 +289,7 @@ docxology/qr_live_protocol | Python | https://github.com/docxology/qr_live_proto
 docxology/AGEINT | HTML | https://github.com/docxology/AGEINT | Agentic Intelligence curriculum — modular educational scaffold for teaching bounded AI-agent support and synthetic analytic tradecraft · · Citation DOI | paper: papers/2026_AGEINT/ | zenodo: https://doi.org/10.5281/zenodo.20732274
 docxology/template_autoscientists | Python | https://github.com/docxology/template_autoscientists | AutoScientists deterministic multi-agent scientific-discovery coordination harness · · Zenodo | paper: papers/2026_DeterministicTestbedSelf/ | zenodo: https://doi.org/10.5281/zenodo.20533669
 docxology/ultralink-docx | HTML | https://github.com/docxology/ultralink-docx | UltraLink document format tooling — linking, rendering, and transformation utilities for rich hyperlinked documents
-docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 132 tests, GStreamer integration
+docxology/steganographer | Rust | https://github.com/docxology/steganographer | High-performance Rust tool for embedding BLAKE3+Ed25519 cryptographic signatures and visible watermarks into live video/audio via LSB steganography; four Rust crates, 484 tests, GStreamer integration
 docxology/template_newspaper | Python | https://github.com/docxology/template_newspaper | The Triplicate data-driven large-format newspaper layout engine · · Zenodo | paper: papers/2026_Triplicate/ | zenodo: https://doi.org/10.5281/zenodo.20533675
 docxology/ntqr_llm | Python | https://github.com/docxology/ntqr_llm | Algebraic NTQR evaluation study recovering LLM-persona accuracies from unlabeled votes · · Zenodo | paper: papers/2026_RecoveringLLMPersona/ | zenodo: https://doi.org/10.5281/zenodo.20498699
 docxology/itrace | Python | https://github.com/docxology/itrace | Verification-first webcam eye-movement analysis toolkit for gaze, saccades, pupillometry, and diagnostic-quality exports · · Citation DOI | paper: papers/2026_ITrace/ | zenodo: https://doi.org/10.5281/zenodo.20614908
@@ -298,7 +301,7 @@ docxology/ant-pheromone | Python | https://github.com/docxology/ant-pheromone | 
 docxology/ant_stack | Python | https://github.com/docxology/ant_stack | The Ant Stack — layered computational model of collective ant-colony intelligence | paper: papers/2025_AntStack/
 docxology/cohereants | Python | https://github.com/docxology/cohereants | Computational research on insect infrared sensing and olfaction modeling · · Zenodo · Zenodo | paper: papers/2026_WhenDoBugs/ | zenodo: https://doi.org/10.5281/zenodo.20450970
 docxology/ento_linguistics | Python | https://github.com/docxology/ento_linguistics | Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring | paper: papers/2026_EntoLinguistics/
-docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript | paper: papers/2026_CognitiveCaseDiagrams/
+docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript · · Zenodo | paper: papers/2026_CognitiveCaseDiagrams/ | zenodo: https://doi.org/10.5281/zenodo.19695259
 docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference | Julia | https://github.com/docxology/Autonomous-Drone-Navigation-in-AirSim-With-Active-Inference | Active Inference-driven autonomous drone navigation in Microsoft AirSim simulation environment
 docxology/biol-1 | HTML | https://github.com/docxology/biol-1 | BIOL-1: General Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
 docxology/biol-8 | HTML | https://github.com/docxology/biol-8 | BIOL-8: Human Biology course materials — College of the Redwoods; lectures, labs, and interactive HTML content
@@ -306,7 +309,7 @@ docxology/biology_textbook | Python | https://github.com/docxology/biology_textb
 docxology/cascadia | Python | https://github.com/docxology/cascadia | Cascadia bioregion modeling and data analysis tools
 docxology/course | Python | https://github.com/docxology/course | Course materials framework for structured interdisciplinary learning modules
 docxology/enactive_inference_model | Python | https://github.com/docxology/enactive_inference_model | Three-level hierarchical enactive inference model of mental action — focused-attention meditation with expert/novice profiles; reproducible simulations and figures | paper: papers/2025_Thoughtseeds/
-docxology/EvoJump | Python | https://github.com/docxology/EvoJump | Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics | paper: papers/2025_EvoJump/
+docxology/EvoJump | Python | https://github.com/docxology/EvoJump | Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · Zenodo | paper: papers/2025_EvoJump/ | zenodo: https://doi.org/10.5281/zenodo.22664675
 docxology/flick | Python | https://github.com/docxology/flick | Lightweight Python tooling for rapid data flicking and processing pipelines
 docxology/fuller-obsidian | unspecified | https://github.com/docxology/fuller-obsidian | Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science
 docxology/godel_ivm | Python | https://github.com/docxology/godel_ivm | Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products
@@ -370,8 +373,15 @@ docxology/crescent-city-intel | TypeScript | https://github.com/docxology/cresce
 docxology/thalia | Python | https://github.com/docxology/thalia | THALIA: Typed Harness with Analytical Lexical-Integrated Architecture — a typed agentic harness for reproducible long-context memory experiments · · Zenodo | paper: papers/2026_THALIA/ | zenodo: https://doi.org/10.5281/zenodo.21763244
 docxology/math4wisdom-superhuman-docs-archive | TypeScript | https://github.com/docxology/math4wisdom-superhuman-docs-archive | Structured, read-only Math4Wisdom Superhuman Docs archive
 docxology/docxplus | Python | https://github.com/docxology/docxplus | docxplus — the Intelligent Document Container: format, tools, and formal specification · · Zenodo | paper: papers/2026_DocxplusIntelligentDocument/ | zenodo: https://doi.org/10.5281/zenodo.21983948
-docxology/millennium_audit | Python | https://github.com/docxology/millennium_audit | Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · Zenodo | paper: papers/2026_MillenniumAudit/ | zenodo: https://doi.org/10.5281/zenodo.22243473
+docxology/millennium_audit | Python | https://github.com/docxology/millennium_audit | Forensic audit of the MillenniumLean Clay-proof package (AIX Global): kernel claims reproduced, none of the six Clay Millennium Problems resolved by the theorem types · Citation DOI | paper: papers/2026_MillenniumAudit/ | zenodo: https://doi.org/10.5281/zenodo.22243472
+docxology/agentic_os_security | TeX | https://github.com/docxology/agentic_os_security | Agentic Security and Operating Systems — deep review and prospectus of OpSec, Cognitive Security, and Agentic Cyber Security (paper source) · · Zenodo | paper: papers/2026_AgenticSecurityOperating/ | zenodo: https://doi.org/10.5281/zenodo.22754351
+docxology/FractiSkills | Python | https://github.com/docxology/FractiSkills | One portable agent SKILL per page of the SS Vibelandia Omniversal Canvas — Skillarum-rendered skill pages · · Zenodo | paper: papers/2026_FractiSkills/ | zenodo: https://doi.org/10.5281/zenodo.22712650
 docxology/multi-time | Python | https://github.com/docxology/multi-time | Multi-frequency time-series analysis toolkit built on sktime — validates irregular series, tests stationarity and Granger causality, and evaluates forecasting models
+docxology/cognitive_integrity | Python | https://github.com/docxology/cognitive_integrity | Cognitive Integrity Framework (CIF) — formal security architecture for multiagent systems · | paper: papers/2026_CognitiveIntegrity/
+docxology/dicklesworthstone_meta_operator | HTML | https://github.com/docxology/dicklesworthstone_meta_operator | Meta-operator over the Dicklesworthstone GitHub corpus: clone, verify upstream sync, orchestrate, interpret, and dashboard the ~207-repo corpus
+docxology/Skillarum | Python | https://github.com/docxology/Skillarum | Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) · · Zenodo | paper: papers/2026_Skillarum/ | zenodo: https://doi.org/10.5281/zenodo.22663906
+docxology/nockchain-migration | Python | https://github.com/docxology/nockchain-migration | Operator-gated wizard and tooling for migrating Nockchain wallets from legacy v0 notes to v1 P2PKH addresses (one-off functional tool, no paper)
+docxology/daf-jev | Python | https://github.com/docxology/daf-jev | Modular, composable Python client and decision toolkit for the TypeSafe Jev (System One) API — typed question primitives (noul/choice/score), concurrent batch evaluation, composition patterns, calibration statistics, CLI, and MCP server · Zenodo | zenodo: https://doi.org/10.5281/zenodo.22816187
 ActiveInferenceInstitute/ActiveInferenceJournal | HTML | https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal | Content hub for the Active Inference Journal — 500+ video transcripts, stream archives, and multimedia publishing infrastructure for the Institute's primary educational output
 ActiveInferenceInstitute/ActiveBlockference | Jupyter | https://github.com/ActiveInferenceInstitute/ActiveBlockference | Active Inference agents in cadCAD block-based simulation — formal agent-based modeling using complex-systems simulation framework
 ActiveInferenceInstitute/ActiveInferAnts | Python | https://github.com/ActiveInferenceInstitute/ActiveInferAnts | Active Inference models for/of ants across 32+ programming languages — multi-language reference implementation of stigmergic Active Inference

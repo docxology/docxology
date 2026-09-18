@@ -64,6 +64,7 @@
 - Maintains PWA readiness: service worker ([sw.js](sw.js)), manifest ([manifest.json](manifest.json)), cache strategy
 - Keeps the design system documentation ([docs/design/](docs/design/)) in sync with [style.css](style.css)
 - Runs [code/orchestrators/accessibility_audit.py](code/orchestrators/accessibility_audit.py) (16 checks including `no_inline_handlers`) and [code/orchestrators/validate_repo.py](code/orchestrators/validate_repo.py) to gate SEO + a11y + generated-layer correctness
+- The landing flow (classify changes, tiered battery, payload + control-tail commit split, push/PR) is automated by `code/orchestrators/settle.py` — see [`docs/operations/settle.md`](docs/operations/settle.md).
 
 ---
 

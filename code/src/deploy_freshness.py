@@ -72,19 +72,24 @@ def run_freshness_check(
     grace_attempts: int = DEFAULT_GRACE_ATTEMPTS,
     grace_sleep_seconds: int = DEFAULT_GRACE_SLEEP_SECONDS,
 ) -> str:
-    """Verify production's build stamp matches main's HEAD short SHA.
+    """Verify production's build stamp matches the expected artifact stamp.
 
     Retries up to ``grace_attempts`` times with ``grace_sleep_seconds`` sleeps
     between attempts, so a normal in-progress deploy does not false-alarm.
     Raises :class:`DeployFreshnessError` with a clear message when the stamp is
     missing or mismatched after the grace window. Returns the live stamp.
+
+    The live stamp must be a prefix of ``expected_sha``: build stamps use
+    git's auto-lengthened short form (7 chars or more as uniqueness
+    requires), so truncating the expectation to a fixed length rejects
+    perfectly fresh deploys whose stamps are one char longer.
     """
     if not expected_sha:
         raise DeployFreshnessError(
             "deploy freshness check requires an expected SHA (workflow must "
             "pass the ref that production was built from)"
         )
-    expected = normalize_sha(expected_sha)
+    expected = expected_sha.strip()
     last_error: DeployFreshnessError | None = None
     for attempt in range(1, grace_attempts + 1):
         stamp = None
@@ -95,11 +100,11 @@ def run_freshness_check(
                 f"attempt {attempt}/{grace_attempts}: could not fetch {url}: {exc}"
             )
         if stamp is not None:
-            if stamp == expected:
+            if expected.startswith(stamp):
                 return stamp
             last_error = DeployFreshnessError(
-                f"PRODUCTION STALE: live build stamp is {stamp!r} but main HEAD "
-                f"is {expected!r} (attempt {attempt}/{grace_attempts})."
+                f"PRODUCTION STALE: live build stamp is {stamp!r} but expected "
+                f"artifact stamp is {expected!r} (attempt {attempt}/{grace_attempts})."
             )
         else:
             last_error = last_error or DeployFreshnessError(

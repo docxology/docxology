@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import os
 import subprocess
 import time
@@ -14,15 +15,14 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 CURRENT_COUNTS_JSON = REPO_ROOT / "data" / "current-counts.json"
 AGENT_INDEX_JSON = REPO_ROOT / "data" / "agent-index.json"
 
-try:
-    from report_paths import dated_report_path, generated_timestamp, latest_report, source_worktree_state
-except ImportError:  # pragma: no cover - package import path
-    from .report_paths import dated_report_path, generated_timestamp, latest_report, source_worktree_state
+from docxology_tools.report_paths import dated_report_path, generated_timestamp, latest_report, source_worktree_state  # noqa: E402
 
 OUT = dated_report_path("live_site_verification", "json")
 BASE = "https://danielarifriedman.com/"
@@ -83,11 +83,13 @@ def load_dynamic_checks(current_counts_json: Path = CURRENT_COUNTS_JSON) -> list
         },
         {
             "path": "publications.html",
-            "markers": ["Publications", '"@type": "CollectionPage"', "Research Works"],
+            "markers": ["Publications", "Research Works"],
+            "jsonld_types": ["CollectionPage"],
         },
         {
             "path": "software.html",
-            "markers": ["Software", '"@type":"CollectionPage"', "application/ld+json", "Open-Source Repositories"],
+            "markers": ["Software", "application/ld+json", "Open-Source Repositories"],
+            "jsonld_types": ["CollectionPage"],
         },
         {
             "path": "data/software-ld.json",
@@ -186,6 +188,39 @@ def count_fingerprint_matches(observed: dict, current: dict) -> bool:
     """
     keys = {"works", "software_docx", "software_aii", "software_total", "public_repos"}
     return all(observed.get(key) == current.get(key) for key in keys)
+
+
+def jsonld_types_in_html(text: str) -> set[str]:
+    """Collect every ``@type`` value from the page's JSON-LD blocks.
+
+    Structural rather than textual: the generator may re-serialize the JSON
+    (spacing, key order) without changing meaning, and a raw-substring pin
+    false-fails exactly then (2026-09-08: publications.html's compact
+    ``"@type":"CollectionPage"`` vs a spaced expectation). Handles both
+    top-level dicts and ``@graph`` arrays; ``@type`` may be a string or list.
+    """
+    types: set[str] = set()
+    for match in re.finditer(
+        r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>',
+        text,
+        flags=re.DOTALL | re.IGNORECASE,
+    ):
+        try:
+            payload = json.loads(match.group(1))
+        except json.JSONDecodeError:
+            continue
+        nodes = payload.get("@graph", [payload]) if isinstance(payload, dict) else payload
+        if not isinstance(nodes, list):
+            nodes = [nodes]
+        for node in nodes:
+            if not isinstance(node, dict):
+                continue
+            value = node.get("@type")
+            if isinstance(value, str):
+                types.add(value)
+            elif isinstance(value, list):
+                types.update(v for v in value if isinstance(v, str))
+    return types
 
 
 def parse_json_contract(
@@ -423,6 +458,7 @@ def build_report(
         url = BASE + check["path"]
         response = fetch_with_retries(url, timeout)
         markers = {marker: marker in response["text"] for marker in check["markers"]}
+        live_types = jsonld_types_in_html(response["text"]) if check.get("jsonld_types") else set()
         cache = {
             key: response["headers"].get(key, "")
             for key in ("last-modified", "etag", "cache-control", "age", "x-cache", "x-served-by")
@@ -434,11 +470,14 @@ def build_report(
             agent_index_json=agent_index_json,
         )
         observed_counts.update(observed)
-        ok = response["ok"] and all(markers.values()) and all(json_checks.values())
+        ok = response["ok"] and all(markers.values()) and all(json_checks.values()) and all(
+            t in live_types for t in check.get("jsonld_types", ())
+        )
         results.append(
             {
                 "path": check["path"] or "index.html",
                 "url": url,
+                "jsonld_types": {t: t in live_types for t in check.get("jsonld_types", ())},
                 "ok": ok,
                 "status": response["status"],
                 "bytes": response["bytes"],

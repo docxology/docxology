@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security"
+date-released: 2026-09-14
+doi: 10.5281/zenodo.22754351
+url: "https://doi.org/10.5281/zenodo.22754351"
+authors:
+  - family-names: "Friedman"
+    given-names: "Daniel Ari"
+    orcid: "https://orcid.org/0000-0001-6232-9096"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22754351
+    description: "Zenodo concept DOI"
+  - type: url
+    value: "https://zenodo.org/records/22754351"
+    description: "Zenodo landing page"

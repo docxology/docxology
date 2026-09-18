@@ -7,15 +7,17 @@ import argparse
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 
-from generated_outputs import (  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parents[2]
+
+from docxology_tools.generated_outputs import (  # noqa: E402
     read_generated_output_text,
     safe_generated_output_path,
     write_generated_output_text,
 )
-from redirect_stubs import collect_redirect_errors, declared_stubs, render_stub  # noqa: E402
+from docxology_tools.redirect_stubs import collect_redirect_errors, declared_stubs, render_stub  # noqa: E402
 
 
 def apply(*, repo_root: Path = REPO_ROOT) -> None:

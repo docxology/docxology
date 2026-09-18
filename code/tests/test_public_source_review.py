@@ -8,14 +8,16 @@ import subprocess
 import sys
 from pathlib import Path
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-SRC_DIR = REPO_ROOT / "code" / "src"
 ORCH = REPO_ROOT / "code" / "orchestrators" / "build_public_source_review.py"
-sys.path.insert(0, str(SRC_DIR))
-sys.path.insert(0, str(ORCH.parent))
 
 import build_public_source_review  # noqa: E402
-from public_source_review import (  # noqa: E402
+from docxology_tools.public_source_review import (  # noqa: E402
     build_review_report,
     render_json,
     render_markdown,

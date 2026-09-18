@@ -9,9 +9,13 @@ import sys
 
 import pytest
 
+# docxology_tools owns the canonical bootstrap; this locate makes the package importable.
+_DOCXOLOGY_SRC = Path(__file__).resolve().parents[1] / "src"
+if str(_DOCXOLOGY_SRC) not in sys.path:
+    sys.path.append(str(_DOCXOLOGY_SRC))
+import docxology_tools  # noqa: E402, F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 import verify_live_site as vl  # noqa: E402
 
@@ -67,7 +71,9 @@ def test_load_dynamic_checks_uses_current_counts(tmp_path):
     assert any("58 owned" in marker for marker in software["markers"])
     assert any("33 catalogued" in marker for marker in software["markers"])
     assert any(f"{payload['counts']['github_inventory']['public']} public repositories" in marker for marker in software["markers"])
-    assert '"@type":"CollectionPage"' in software["markers"]
+    assert pubs["jsonld_types"] == ["CollectionPage"]
+    assert software["jsonld_types"] == ["CollectionPage"]
+    assert '"@type"' not in json.dumps(pubs["markers"])
     assert '"SoftwareSourceCode"' in software_export["markers"]
 
 
@@ -76,6 +82,32 @@ def test_cache_busted_url_preserves_path_and_adds_unique_query():
     assert url.startswith("https://example.test/data/works.json?")
     assert "v=1" in url
     assert "__verify=" in url
+
+
+def test_jsonld_types_in_html_parses_graph_and_list_types():
+    html = """
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@graph": [
+      {"@type": ["CollectionPage", "WebPage"], "name": "Publications"},
+      {"@type": "Person", "name": "D"}
+    ]}
+    </script>
+    <script type="application/ld+json">{"@type": "BreadcrumbList", "itemListElement": []}</script>
+    <script type="application/ld+json">this is not json</script>
+    <script>console.log("not ld+json")</script>
+    """
+    assert vl.jsonld_types_in_html(html) == {"CollectionPage", "WebPage", "Person", "BreadcrumbList"}
+
+
+def test_jsonld_types_in_html_empty_and_no_blocks():
+    assert vl.jsonld_types_in_html("") == set()
+    assert vl.jsonld_types_in_html("<html><body>no ld+json here</body></html>") == set()
+
+
+def test_jsonld_specs_match_committed_publications_page():
+    """The structural pin must hold against the real generated artifact."""
+    html = (vl.REPO_ROOT / "publications.html").read_text(encoding="utf-8")
+    assert "CollectionPage" in vl.jsonld_types_in_html(html)
 
 
 def test_catalog_json_contract_accepts_schema_org_dataset_property():

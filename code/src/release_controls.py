@@ -81,17 +81,39 @@ def latest_payload_commit(
     head: str,
     parent_for: Callable[[str], str | None],
     changed_paths_for: Callable[[str], list[Path]],
+    parents_for: Callable[[str], list[str]] | None = None,
+    tree_for: Callable[[str], str | None] | None = None,
 ) -> str:
-    """Return the latest non-control commit in a first-parent history.
+    """Return the latest non-control commit reachable for provenance binding.
 
     Explicit collaborators keep the decision testable with a small local
     fixture rather than coupling it to the caller's checkout.
+
+    When ``parents_for`` and ``tree_for`` are supplied, a merge commit whose
+    tree is identical to one of its parents is stepped through to that parent:
+    a synthetic PR merge ref's first parent is the base branch, so its
+    first-parent diff is the entire branch and the commit-bound provenance
+    recorded on the branch tip could never resolve there. A true content merge
+    (tree matching no parent) stops the walk conservatively.
     """
     candidate = head
     while True:
         parent = parent_for(candidate)
         if not parent:
             return candidate
+        if parents_for is not None and tree_for is not None:
+            parents = parents_for(candidate)
+            if len(parents) > 1:
+                candidate_tree = tree_for(candidate)
+                if candidate_tree:
+                    match = next(
+                        (p for p in parents if tree_for(p) == candidate_tree),
+                        None,
+                    )
+                    if match is None:
+                        return candidate
+                    candidate = match
+                    continue
         changed = changed_paths_for(candidate)
         if not all(is_control_path(path) for path in changed):
             return candidate
@@ -132,6 +154,28 @@ def _changed_paths(repo_root: Path, commit: str) -> list[Path]:
     ]
 
 
+def _parents(repo_root: Path, commit: str) -> list[str]:
+    result = subprocess.run(
+        ["git", "show", "-s", "--format=%P", commit],
+        cwd=repo_root,
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    return result.stdout.split() if result.returncode == 0 else []
+
+
+def _tree(repo_root: Path, commit: str) -> str | None:
+    result = subprocess.run(
+        ["git", "rev-parse", "--verify", f"{commit}^{{tree}}"],
+        cwd=repo_root,
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    return result.stdout.strip() if result.returncode == 0 else None
+
+
 def source_payload_commit(repo_root: Path) -> str:
     """Return the revision that last changed release payload content.
 
@@ -153,6 +197,8 @@ def source_payload_commit(repo_root: Path) -> str:
         head,
         lambda commit: _first_parent(repo_root, commit),
         lambda commit: _changed_paths(repo_root, commit),
+        parents_for=lambda commit: _parents(repo_root, commit),
+        tree_for=lambda commit: _tree(repo_root, commit),
     )
 
 

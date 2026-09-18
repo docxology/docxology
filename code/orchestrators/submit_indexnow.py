@@ -14,12 +14,13 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
-sys.path.insert(0, str(REPO_ROOT / "code" / "src"))
 
 from build_sitemap import sitemap_locs  # noqa: E402
-from sitemap_policy import SITE_ORIGIN, indexnow_urls_from_locs  # noqa: E402
+from docxology_tools.sitemap_policy import SITE_ORIGIN, indexnow_urls_from_locs  # noqa: E402
 
 DEFAULT_KEY_FILE = REPO_ROOT / "a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt"
 INDEXNOW_API = "https://api.indexnow.org/indexnow"
