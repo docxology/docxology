@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-09-16T16:25:21Z
+Generated: 2026-09-17T23:51:14Z
 
-Current public metrics: 215 curated works; 154 catalogued software repositories (115 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 216 docxology + 43 AII public repositories (169 primary, 90 forks).
+Current public metrics: 215 curated works; 155 catalogued software repositories (116 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 219 docxology + 43 AII public repositories (170 primary, 92 forks).
 
 SUMMARY
 -------
@@ -352,7 +352,7 @@ WORKS AND PUBLICATIONS (215)
 [217] 2026 | Paper | FractiSkills: One Portable Agent Skill per Page | Zenodo | 10.5281/zenodo.22712650
 [218] 2026 | Paper | Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security | Zenodo | 10.5281/zenodo.22754351
 
-SOFTWARE (72)
+SOFTWARE (73)
 -------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/MetaInformAnt | Python | https://github.com/docxology/MetaInformAnt | Meta-framework integrating computational entomology, Active Inference, and information theory for modeling ant colony cognition and beyond | paper: papers/2021_ActiveInferants/
@@ -415,6 +415,7 @@ docxology/agentic_os_security | TeX | https://github.com/docxology/agentic_os_se
 docxology/FractiSkills | Python | https://github.com/docxology/FractiSkills | One portable agent SKILL per page of the SS Vibelandia Omniversal Canvas — Skillarum-rendered skill pages · · Zenodo | paper: papers/2026_FractiSkills/ | zenodo: https://doi.org/10.5281/zenodo.22712650
 docxology/cognitive_integrity | Python | https://github.com/docxology/cognitive_integrity | Cognitive Integrity Framework (CIF) — formal security architecture for multiagent systems · | paper: papers/2026_CognitiveIntegrity/
 docxology/Skillarum | Python | https://github.com/docxology/Skillarum | Turns selected public website pages into portable SKILL.md documents for agent harnesses — five inspectable stages, provenance, safety-bounded crawling, evidence-gated research outputs (renders the FractiSkills skill pages) · · Zenodo | paper: papers/2026_Skillarum/ | zenodo: https://doi.org/10.5281/zenodo.22663906
+docxology/daf-jev | Python | https://github.com/docxology/daf-jev | Modular, composable Python client and decision toolkit for the TypeSafe Jev (System One) API — typed question primitives (noul/choice/score), concurrent batch evaluation, composition patterns, calibration statistics, CLI, and MCP server · Zenodo | zenodo: https://doi.org/10.5281/zenodo.22816187
 ActiveInferenceInstitute/GeneralizedNotationNotation | Python | https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation | GNN — formal notation standard for specifying Active Inference generative models; JSON/YAML schema, validators, and transpilers to Python, Julia, and MATLAB · Zenodo software | zenodo: https://doi.org/10.5281/zenodo.19600217
 ActiveInferenceInstitute/CEREBRUM | Python | https://github.com/ActiveInferenceInstitute/CEREBRUM | Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling — grammatical case framework for compositional cognitive models · Zenodo | paper: papers/2025_CEREBRUM/ | zenodo: https://doi.org/10.5281/zenodo.15170907
 ActiveInferenceInstitute/Journal-Utilities | HTML | https://github.com/ActiveInferenceInstitute/Journal-Utilities | Transcription, processing, and publishing pipelines for the Active Inference Journal — Whisper-based download, transcription, RAG/knowledge-graph, and export utilities · Zenodo release | zenodo: https://doi.org/10.5281/zenodo.18686966

@@ -81,13 +81,13 @@ Each paper folder under `papers/` may contain `full_text.md` (full page-level te
 - Security contact: https://danielarifriedman.com/.well-known/security.txt
 - Search index: https://danielarifriedman.com/search-index.json
 - RSS feed: https://danielarifriedman.com/feed.xml
-- Public-source snapshot: https://github.com/docxology/docxology/blob/main/reports/public_source_snapshot_2026-09-16.json
-- Public-source inventory: https://github.com/docxology/docxology/blob/main/reports/public_source_inventory_2026-09-15.json
-- Reconciliation report: https://github.com/docxology/docxology/blob/main/reports/reconciliation_2026-09-16.md
-- External-link report: https://github.com/docxology/docxology/blob/main/reports/external_links_2026-09-16.json
-- External-link triage: https://github.com/docxology/docxology/blob/main/reports/external_links_triage_2026-09-16.md
-- Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-09-16.json
-- Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-09-16.json
+- Public-source snapshot: https://github.com/docxology/docxology/blob/main/reports/public_source_snapshot_2026-09-17.json
+- Public-source inventory: https://github.com/docxology/docxology/blob/main/reports/public_source_inventory_2026-09-17.json
+- Reconciliation report: https://github.com/docxology/docxology/blob/main/reports/reconciliation_2026-09-17.md
+- External-link report: https://github.com/docxology/docxology/blob/main/reports/external_links_2026-09-17.json
+- External-link triage: https://github.com/docxology/docxology/blob/main/reports/external_links_triage_2026-09-17.md
+- Asset-size report: https://github.com/docxology/docxology/blob/main/reports/asset_size_2026-09-17.json
+- Static accessibility report: https://github.com/docxology/docxology/blob/main/reports/accessibility_static_2026-09-17.json
 - Visual QA manifest: https://github.com/docxology/docxology/blob/main/reports/visual-qa/2026-09-16/manifest.json
 
 ## Public Crawl Policy

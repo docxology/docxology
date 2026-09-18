@@ -1,8 +1,8 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case"
-description: "Linguistic case offers a useful test of how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. The implementa..."
-tags: ["linguistic-case", "category-theory", "discocat", "pregroup-grammar", "enriched-categories", "bayesian-filtering", "distributional-representations", "povm", "reproducible-research"]
+description: "Linguistic case offers a setting in which to examine how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. T..."
+tags: ["cognitivecasediagrams"]
 domain: "Active Inference"
 citation: "Daniel Ari Friedman (2026). *Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case*. Active Inference."
 doi: "10.5281/zenodo.19695259"
@@ -14,7 +14,7 @@ doi: "10.5281/zenodo.19695259"
 
 ## Context
 
-This work addresses topics in **Active Inference**: linguistic case, category theory, DisCoCat, pregroup grammar.
+This work addresses topics in **Active Inference**: CognitiveCaseDiagrams.
 
 ## Methods
 
@@ -42,11 +42,11 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.19695259
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-09-15T16:21:49Z
+- Last checked: 2026-09-17T23:13:59Z
 
 ## Prerequisites
 
-- Familiarity with linguistic case, category theory, DisCoCat
+- Familiarity with CognitiveCaseDiagrams
 - Background in Active Inference fundamentals
 - Access to source repository: docxology/cognitive_case_diagrams
 

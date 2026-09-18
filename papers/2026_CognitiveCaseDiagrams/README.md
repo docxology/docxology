@@ -10,11 +10,11 @@
 
 ## Abstract
 
-> Linguistic case offers a useful test of how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. The implementation includes case-role graphs, pregroup derivations, tensor contractions, synthetic similarity matrices, Bayesian filtering, quantile utilities, and...
+> Linguistic case offers a setting in which to examine how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. The implementation includes case-role graphs, pregroup derivations, tensor contractions, synthetic similarity matrices, Bayesian filtering, quantile...
 
 ## Keywords
 
-`linguistic case` · `category theory` · `DisCoCat` · `pregroup grammar` · `enriched categories` · `Bayesian filtering` · `distributional representations` · `POVM` · `reproducible research`
+`CognitiveCaseDiagrams`
 
 ## Methods
 
@@ -28,7 +28,7 @@
 ## Artifacts
 
 - GitHub repository: [docxology/cognitive_case_diagrams](https://github.com/docxology/cognitive_case_diagrams)
-- GitHub release: [v2.6.0](https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.6.0)
+- GitHub release: [v2.4.0](https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0)
 - DOI: [10.5281/zenodo.19695259](https://doi.org/10.5281/zenodo.19695259)
 - Zenodo record: [https://zenodo.org/records/19695259](https://zenodo.org/records/19695259)
 - PDF: [cognitive_case_diagrams-2.6.0.pdf](cognitive_case_diagrams-2.6.0.pdf)

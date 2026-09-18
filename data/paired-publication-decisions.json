@@ -4,9 +4,9 @@
   "source_review_queue": "reports/paired_publications_review_queue_2026-06-04.md",
   "decision_summary": {
     "decision": "accept",
-    "groups": 81,
-    "raw_candidates": 508,
-    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated. R79 records the Cognitive Diagrams v2.5.0 release (2026-09-10 scan) as version-history-only under the already-cited concept DOI 10.5281/zenodo.19695259. R80 records the six GitHub release pairs (v0.3.0-v1) under the canonical curated EvoJump concept 10.5281/zenodo.22664675 as software-catalog (SOFTWARE.md already lists EvoJump; the citable paper remains bibliography row #12, concept 10.5281/zenodo.17229924), and R81 records the GitHub-Zenodo automated integration archive concept 10.5281/zenodo.22664645 (docxology/EvoJump-v0.5.2.zip, zip-only) as a superseded duplicate deposit."
+    "groups": 83,
+    "raw_candidates": 510,
+    "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated. R79 records the Cognitive Diagrams v2.5.0 release (2026-09-10 scan) as version-history-only under the already-cited concept DOI 10.5281/zenodo.19695259. R80 records the six GitHub release pairs (v0.3.0-v1) under the canonical curated EvoJump concept 10.5281/zenodo.22664675 as software-catalog (SOFTWARE.md already lists EvoJump; the citable paper remains bibliography row #12, concept 10.5281/zenodo.17229924), and R81 records the GitHub-Zenodo automated integration archive concept 10.5281/zenodo.22664645 (docxology/EvoJump-v0.5.2.zip, zip-only) as a superseded duplicate deposit. R82-R83 (2026-09-17 scan) record the fep_lean v1.2.0 and GeneralizedNotationNotation v3.4.0 releases as version-history-only under their already-cited citation DOIs (10.5281/zenodo.19699233 row #113 and 10.5281/zenodo.7803313 row #168), both pairs lacking github_release_mentions_doi cross-link evidence, so neither creates a duplicate bibliography row."
   },
   "groups": [
     {
@@ -11457,6 +11457,68 @@
           "reviewed_at": "2026-09-11T16:37:44Z",
           "review_source": "user: 2026-09-11 EvoJump needs_review cluster review (principal-directed batch); GitHub-Zenodo automated integration archive (docxology/EvoJump-v0.5.2.zip) superseded by the canonical curated concept 10.5281/zenodo.22664675",
           "source_report": "reports/paired_publications_2026-09-10.json"
+        }
+      ]
+    },
+    {
+      "id": "R82",
+      "decision": "accept",
+      "decided_at": "2026-09-17T23:18:16Z",
+      "decided_by": "agent:orchestrator",
+      "doi": "10.5281/zenodo.19699233",
+      "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+      "candidate_github_repo": "ActiveInferenceInstitute/fep_lean",
+      "folder": "2026_FEPLean",
+      "representation": "version-history-only: GitHub release ActiveInferenceInstitute/fep_lean v1.2.0 pairs to the already-cited FEP-lean formalization record without github_release_mentions_doi cross-link evidence, so no automatic update applies; the work is already represented as bibliography row #113 (papers/2026_FEPLean, citation DOI 10.5281/zenodo.19699233) with the v1.1.0 artifact DOI 10.5281/zenodo.22072956 recorded in the pages/SOFTWARE.md AII row, and the v1.2.0 release is version history under the existing citation DOI — no duplicate bibliography row",
+      "rationale": "Accept as version-history-only: bibliography row #113 cites concept DOI 10.5281/zenodo.19699233 with folder 2026_FEPLean, and the 2026-09-17 scan pairs the newer fep_lean v1.2.0 release to that same record while the release-vs-record cross-link (github_release_mentions_doi) is absent, so the tool correctly defers it. No newer version DOI evidence is present in the scan, so no row, folder, or artifact-DOI change is warranted; recording the pair keeps future scans reporting already_reviewed.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "action_type": "needs_review",
+          "doi": "10.5281/zenodo.19699233",
+          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "confidence": "needs_review",
+          "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+          "github_repo": "ActiveInferenceInstitute/fep_lean",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.2.0",
+          "zenodo_record_url": "https://zenodo.org/records/19699233",
+          "release_tag": "v1.2.0",
+          "folder": "2026_FEPLean",
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-17T23:18:16Z",
+          "review_source": "agent:orchestrator: manual review of reports/paired_publications_2026-09-17.json — work already represented under the paired citation DOI (bibliography rows #113 / #168); release lacks cross-link evidence, recorded as version-history-only",
+          "source_report": "reports/paired_publications_2026-09-17.json"
+        }
+      ]
+    },
+    {
+      "id": "R83",
+      "decision": "accept",
+      "decided_at": "2026-09-17T23:18:16Z",
+      "decided_by": "agent:orchestrator",
+      "doi": "10.5281/zenodo.7803313",
+      "title": "GeneralizedNotationNotation (GNN)",
+      "candidate_github_repo": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+      "folder": "2026_GeneralizedNotationNotationGNN",
+      "representation": "version-history-only: GitHub release ActiveInferenceInstitute/GeneralizedNotationNotation v3.4.0 pairs to the already-cited GNN record without github_release_mentions_doi cross-link evidence, so no automatic update applies; the work is already represented as bibliography row #168 (papers/2026_GeneralizedNotationNotationGNN, DOI 10.5281/zenodo.7803313) and the separate software DOI 10.5281/zenodo.19600217 is already recorded in the pages/SOFTWARE.md AII row — the v3.4.0 release is version history under the existing citation DOI, no duplicate bibliography row",
+      "rationale": "Accept as version-history-only: bibliography row #168 cites 10.5281/zenodo.7803313 with folder 2026_GeneralizedNotationNotationGNN, and the 2026-09-17 scan pairs the newer GNN v3.4.0 release to that same record while the release-vs-record cross-link (github_release_mentions_doi) is absent, so the tool correctly defers it. No newer version DOI evidence is present in the scan, so no row, folder, or software-DOI change is warranted; recording the pair keeps future scans reporting already_reviewed.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "action_type": "needs_review",
+          "doi": "10.5281/zenodo.7803313",
+          "title": "GeneralizedNotationNotation (GNN)",
+          "confidence": "needs_review",
+          "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+          "github_repo": "ActiveInferenceInstitute/GeneralizedNotationNotation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/releases/tag/v3.4.0",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "release_tag": "v3.4.0",
+          "folder": "2026_GeneralizedNotationNotationGNN",
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-17T23:18:16Z",
+          "review_source": "agent:orchestrator: manual review of reports/paired_publications_2026-09-17.json — work already represented under the paired citation DOI (bibliography rows #113 / #168); release lacks cross-link evidence, recorded as version-history-only",
+          "source_report": "reports/paired_publications_2026-09-17.json"
         }
       ]
     }
