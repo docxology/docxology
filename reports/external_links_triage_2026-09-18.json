@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T01:36:50Z",
+  "generated_at": "2026-09-18T03:42:34Z",
   "source": "reports/external_links_2026-09-18.json",
   "checked_urls": 832,
   "ok": 689,
@@ -2059,7 +2059,7 @@
         "sources": [
           "pages/LINKS.md"
         ],
-        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 66 ms: Couldn't connect to server"
+        "error": "curl: (7) Failed to connect to wiki.santafe.edu port 443 after 64 ms: Couldn't connect to server"
       }
     ],
     "timeout": [
@@ -2076,7 +2076,7 @@
           "pages/EVIDENCE.md",
           "pages/LINKS.md"
         ],
-        "error": "curl: (28) Operation timed out after 10008 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10011 milliseconds with 0 bytes received"
       },
       {
         "url": "https://www.christies.com/en/stories/a-to-z-nft-collecting-guide-b9f875b864c7488eb094595ced7d60cd",
@@ -2087,7 +2087,7 @@
           "pages/EVIDENCE.md",
           "pages/EVIDENCE.md"
         ],
-        "error": "curl: (28) Operation timed out after 10009 milliseconds with 0 bytes received"
+        "error": "curl: (28) Operation timed out after 10011 milliseconds with 0 bytes received"
       }
     ],
     "upstream-transient": [
