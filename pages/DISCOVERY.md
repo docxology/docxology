@@ -94,9 +94,9 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | External-link triage | [reports/external_links_triage_2026-09-18.md](../reports/external_links_triage_2026-09-18.md) | Categorized link warnings: bot-protected, transient, timeout, stale, and review |
 | Live-site verification | [latest dated report](../reports/live_site_verification_2026-09-16.json) | Deployed-site checks for expected markers, JSON contracts/counts, cache headers, deployment metadata, and GitHub Pages status |
 | Asset-size audit | [reports/asset_size_2026-09-17.json](../reports/asset_size_2026-09-17.json) | Size budget report for public assets and generated exports |
-| Static accessibility report | [reports/accessibility_static_2026-09-17.json](../reports/accessibility_static_2026-09-17.json) | Static accessibility checks for root HTML pages |
-| Browser smoke manifest | [reports/browser-smoke/2026-09-16/manifest.json](../reports/browser-smoke/2026-09-16/manifest.json) | Browser-rendered smoke screenshots for high-priority pages |
-| Visual QA manifest | [reports/visual-qa/2026-09-16/manifest.json](../reports/visual-qa/2026-09-16/manifest.json) | Playwright screenshot manifest for key pages and mobile/desktop viewports |
+| Static accessibility report | [reports/accessibility_static_2026-09-18.json](../reports/accessibility_static_2026-09-18.json) | Static accessibility checks for root HTML pages |
+| Browser smoke manifest | [reports/browser-smoke/2026-09-18/manifest.json](../reports/browser-smoke/2026-09-18/manifest.json) | Browser-rendered smoke screenshots for high-priority pages |
+| Visual QA manifest | [reports/visual-qa/2026-09-18/manifest.json](../reports/visual-qa/2026-09-18/manifest.json) | Playwright screenshot manifest for key pages and mobile/desktop viewports |
 | Citation exports | [BibTeX](../bibliography.bib) · [CSL JSON](../bibliography.csl.json) · [RIS](../bibliography.ris) | Citation-manager formats generated from `BIBLIOGRAPHY.md` |
 
 ## Official Organization Pages
