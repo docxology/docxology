@@ -264,7 +264,7 @@
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-09-17.json",
+      "path": "/reports/asset_size_2026-09-18.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
