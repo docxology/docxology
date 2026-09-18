@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T04:15:54Z",
+  "generated_at": "2026-09-18T15:57:09Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
   "count": 155,
@@ -525,12 +525,12 @@
       "url": "https://github.com/docxology/EvoJump",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics",
+      "description": "Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2025-10",
       "paper_path": "papers/2025_EvoJump/",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22664675"
     },
     {
       "name": "flick",

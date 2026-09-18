@@ -8,6 +8,16 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
+- Last reviewed: 2026-09-18 (intake-hygiene pass: fresh 464-pair pairing scan
+  at zero warnings — 0 new, 0 needs_review, the 50 update_existing set
+  identical to the applied 2026-09-17 refresh; the four software-only Zenodo
+  deposits registered in KNOWN_STALE_RECORD_IDS with their curation
+  dispositions (daf-jev, EvoJump R80/R81 pair, CCD v2.6.0 supplement) so the
+  uncatalogued freshness gate reads zero; EvoJump software row carries its
+  canonical concept DOI per R80; live-doc legacy sweep (py references, CLI
+  flags, numeric claims, link targets) verified everything current — no
+  edits needed; open-item ledger otherwise unchanged — DOC-002/008/009/
+  010/011/012/015 procedural, SEC-002 still explicitly blocked)
 - Last reviewed: 2026-09-17 (intake + web + tools wave: DOC-014 landed —
   61 orchestrators on the uniform docxology_tools thin-wrapper bootstrap,
   CLI smokes + full suite green, see CHANGELOG 2026-09-17; DOC-005 queue

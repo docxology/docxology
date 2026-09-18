@@ -79,7 +79,7 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [cascadia](https://github.com/docxology/cascadia) | Cascadia bioregion modeling and data analysis tools | Python | 0 | 2025-08 |
 | [course](https://github.com/docxology/course) | Course materials framework for structured interdisciplinary learning modules | Python | 0 | 2025-12 |
 | [enactive_inference_model](https://github.com/docxology/enactive_inference_model) | Three-level hierarchical enactive inference model of mental action — focused-attention meditation with expert/novice profiles; reproducible simulations and figures · [📄](../papers/2025_Thoughtseeds/) | Python | 0 | 2026-02 |
-| [EvoJump](https://github.com/docxology/EvoJump) | Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · [📄](../papers/2025_EvoJump/) | Python | 0 | 2025-10 |
+| [EvoJump](https://github.com/docxology/EvoJump) | Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · [Zenodo](https://doi.org/10.5281/zenodo.22664675) · [📄](../papers/2025_EvoJump/) | Python | 0 | 2025-10 |
 | [flick](https://github.com/docxology/flick) | Lightweight Python tooling for rapid data flicking and processing pipelines | Python | 0 | 2025-03 |
 | [fuller-obsidian](https://github.com/docxology/fuller-obsidian) | Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science | — | 0 | 2025-02 |
 | [godel_ivm](https://github.com/docxology/godel_ivm) | Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products | Python | 0 | 2025-10 |

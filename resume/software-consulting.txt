@@ -14,7 +14,7 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-09-18T04:15:56Z
+Generated: 2026-09-18T15:57:10Z
 
 Current public metrics: 215 curated works; 155 catalogued software repositories (116 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 219 docxology + 43 AII public repositories (170 primary, 92 forks).
 
@@ -309,7 +309,7 @@ docxology/biology_textbook | Python | https://github.com/docxology/biology_textb
 docxology/cascadia | Python | https://github.com/docxology/cascadia | Cascadia bioregion modeling and data analysis tools
 docxology/course | Python | https://github.com/docxology/course | Course materials framework for structured interdisciplinary learning modules
 docxology/enactive_inference_model | Python | https://github.com/docxology/enactive_inference_model | Three-level hierarchical enactive inference model of mental action — focused-attention meditation with expert/novice profiles; reproducible simulations and figures | paper: papers/2025_Thoughtseeds/
-docxology/EvoJump | Python | https://github.com/docxology/EvoJump | Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics | paper: papers/2025_EvoJump/
+docxology/EvoJump | Python | https://github.com/docxology/EvoJump | Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · Zenodo | paper: papers/2025_EvoJump/ | zenodo: https://doi.org/10.5281/zenodo.22664675
 docxology/flick | Python | https://github.com/docxology/flick | Lightweight Python tooling for rapid data flicking and processing pipelines
 docxology/fuller-obsidian | unspecified | https://github.com/docxology/fuller-obsidian | Obsidian vault dedicated to R. Buckminster Fuller's ideas — synergetics, geodesics, and design science
 docxology/godel_ivm | Python | https://github.com/docxology/godel_ivm | Gödel numbering meets the IVM (Isotropic Vector Matrix) — formal encoding of geometric objects as prime products

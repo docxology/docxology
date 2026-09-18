@@ -14,7 +14,7 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: academic
-Generated: 2026-09-18T04:15:56Z
+Generated: 2026-09-18T15:57:10Z
 
 Current public metrics: 215 curated works; 155 catalogued software repositories (116 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 219 docxology + 43 AII public repositories (170 primary, 92 forks).
 
@@ -372,7 +372,7 @@ docxology/ento_linguistics | Python | https://github.com/docxology/ento_linguist
 docxology/cognitive_case_diagrams | TeX | https://github.com/docxology/cognitive_case_diagrams | Compositional linguistic case for cognitive modeling — categorical case systems, DisCoCat/DisCoCirc diagrams, tests and figures for the Active Inference Journal manuscript · · Zenodo | paper: papers/2026_CognitiveCaseDiagrams/ | zenodo: https://doi.org/10.5281/zenodo.19695259
 docxology/biology_textbook | Python | https://github.com/docxology/biology_textbook | Open generative biology textbook — Markdown source, tested Python modules, programmatic figures; archived at Zenodo artifact · Citation DOI | paper: papers/2026_BiologyTextbook/ | zenodo: https://doi.org/10.5281/zenodo.20286477
 docxology/enactive_inference_model | Python | https://github.com/docxology/enactive_inference_model | Three-level hierarchical enactive inference model of mental action — focused-attention meditation with expert/novice profiles; reproducible simulations and figures | paper: papers/2025_Thoughtseeds/
-docxology/EvoJump | Python | https://github.com/docxology/EvoJump | Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics | paper: papers/2025_EvoJump/
+docxology/EvoJump | Python | https://github.com/docxology/EvoJump | Comprehensive Framework for Evolutionary Ontogenetic Analysis — modeling developmental trajectories and evolutionary dynamics · Zenodo | paper: papers/2025_EvoJump/ | zenodo: https://doi.org/10.5281/zenodo.22664675
 docxology/grateful_data | Python | https://github.com/docxology/grateful_data | The Music Never Stopped citation-bound Grateful Dead data compendium · · Zenodo · Zenodo | paper: papers/2026_MusicNeverStopped/ | zenodo: https://doi.org/10.5281/zenodo.20482026
 docxology/markdown_decision_process | Python | https://github.com/docxology/markdown_decision_process | Framework for Probabilistic Document Analysis — Markov Decision Process over Markdown artifacts for structured document reasoning | paper: papers/2025_MarkdownDecisionProcess/
 docxology/mdkv | Python | https://github.com/docxology/mdkv | MKV-like key-value format and methods for Markdown — structured metadata embedding in plain-text documents | paper: papers/2025_MDKV/
