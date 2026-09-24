@@ -25,6 +25,12 @@ def test_artwork_index_is_compact_and_complete() -> None:
     assert "desc" not in payload["fields"]
     assert "sizes" not in payload["fields"]
     assert all(set(art) == set(build_artwork_index.INDEX_FIELDS) for art in payload["artworks"])
+    # Every compact row carries its generator-owned page path so gallery tiles
+    # link real artwork pages without JS-side slug duplication.
+    assert all(
+        str(art["page"]).startswith("artworks/") and str(art["page"]).endswith(".html")
+        for art in payload["artworks"]
+    )
 
 
 def test_artwork_index_matches_checked_in_projection() -> None:

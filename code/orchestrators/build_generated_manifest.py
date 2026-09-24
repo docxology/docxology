@@ -561,6 +561,22 @@ ARTIFACTS = [
         "command": "python3 code/orchestrators/build_artwork_index.py",
     },
     {
+        "name": "Artwork landing pages and curated collections",
+        "outputs": [
+            "artworks/*.html",
+            "art-collections/*.html",
+            "data/artwork-pages-manifest.json",
+        ],
+        "sources": [
+            "data/artworks.json",
+            "pages/ART_COLLECTIONS.md",
+            "code/src/artwork_pages.py",
+            "code/src/art_collections.py",
+            "code/orchestrators/build_artwork_pages.py",
+        ],
+        "command": "python3 code/orchestrators/build_artwork_pages.py",
+    },
+    {
         "name": "GitHub-rendered README mirror",
         "outputs": [".github/README.md"],
         "sources": ["README.md", "code/orchestrators/build_github_readme.py"],

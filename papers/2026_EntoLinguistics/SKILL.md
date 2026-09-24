@@ -1,20 +1,20 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology"
-description: "Six-domain Ento-Linguistic framework, open-source corpus pipeline (term extraction, co-occurrence networks, semantic entropy), and CACE meta-standards for lexical engineering in entomology."
-tags: ["entomology", "scientific-communication", "terminology-networks", "corpus-linguistics", "active-inference", "cace", "semantic-entropy", "myrmecology"]
+name: "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)"
+description: "<p>Release v1.1.1 of the Ento-Linguistics research project.</p><p>Corpus: 7,609 PubMed abstracts (full search surface drained), 7,073 PMC open-access full texts, 2,460 BHL historical documents (1850&ndash;1970), 61 arXiv preprints, 536/536 OpenAlex c..."
+tags: ["entolinguistics"]
 domain: "Entomology"
-citation: "Daniel Ari Friedman & Tucker Cahill Chambers (2026). *Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology*. Entomology."
+citation: "Daniel Ari Friedman (2026). *Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)*. Entomology."
 doi: "10.5281/zenodo.19574117"
 ---
 
-# Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology
+# Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)
 
-**Daniel Ari Friedman & Tucker Cahill Chambers** (2026) · Entomology
+**Daniel Ari Friedman** (2026) · Entomology
 
 ## Context
 
-This work addresses topics in **Entomology**: entomology, scientific communication, terminology networks, Active Inference.
+This work addresses topics in **Entomology**: EntoLinguistics.
 
 ## Methods
 
@@ -41,14 +41,14 @@ Verification points for this work:
 
 - Canonical DOI: 10.5281/zenodo.19574117
 - PDF SHA-256: See zenodo_record
-- Pairing confidence: unknown
-- Last checked: 2026-06-30T23:26:10Z
+- Pairing confidence: strong
+- Last checked: 2026-09-24T00:16:04Z
 
 ## Prerequisites
 
-- Familiarity with entomology, scientific communication, terminology networks
+- Familiarity with EntoLinguistics
 - Background in Entomology fundamentals
-- Access to source repository: N/A
+- Access to source repository: docxology/ento_linguistics
 
 ## Instructions
 

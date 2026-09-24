@@ -12,7 +12,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 **Peer-Reviewed Publications in Active Inference, Entomology, Cognitive Security, Bayesian Modeling & Computational Neuroscience**
 
-**215 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
+**216 works** spanning peer-reviewed papers, books, presentations, courses, and policy comments (2015–2026)
 
 [![Google Scholar](https://img.shields.io/badge/Google_Scholar-815_citations-4285F4?style=flat&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=DXjPFtYAAAAJ&hl=en)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6232--9096-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6232-9096)
@@ -30,9 +30,9 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 
 🐜 Entomology · 🧠 Active Inference · 🛡️ Cognitive Security · 🎨 Art & Synergetics · 💻 Computational · 🌍 AII Ecosystem · 🎥 Presentations & Media · 🧬 Genetics & Biomedical · 🔍 Other
 
-**193** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
+**194** Papers · **9** Presentations · **5** Books · **3** Courses · **2** Playbooks · **2** Series · **1** Report
 
-> **215** works in the table below **·** **198** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
+> **216** works in the table below **·** **199** indexed paper folders in [papers/](../papers/) **·** validated counts live in [current totals](../reports/current_counts.md) **·** the **Docs** column links to a folder where one exists; some rows (e.g. YouTube series) have no per-paper folder in this table.
 
 ---
 
@@ -253,6 +253,7 @@ keywords: "Daniel Ari Friedman, active inference, BIBLIOGRAPHY"
 | 216 | 2026 | 💻 | Paper | Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation | *Zenodo* | [10.5281/zenodo.22663906](https://doi.org/10.5281/zenodo.22663906) | [📁](../papers/2026_Skillarum/) | Friedman, Daniel Ari |
 | 217 | 2026 | 💻 | Paper | FractiSkills: One Portable Agent Skill per Page | *Zenodo* | [10.5281/zenodo.22712650](https://doi.org/10.5281/zenodo.22712650) | [📁](../papers/2026_FractiSkills/) |
 | 218 | 2026 | 💻 | Paper | Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security | *Zenodo* | [10.5281/zenodo.22754351](https://doi.org/10.5281/zenodo.22754351) | [📁](../papers/2026_AgenticSecurityOperating/) |
+| 219 | 2026 | 💻 | Paper | Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model | *Zenodo* | [10.5281/zenodo.22816187](https://doi.org/10.5281/zenodo.22816187) | [📁](../papers/2026_JevPractice/) |
 ---
 
 ## Domain Index

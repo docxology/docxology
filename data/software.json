@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T15:57:09Z",
+  "generated_at": "2026-09-24T02:11:00Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
   "count": 155,
@@ -417,12 +417,12 @@
       "url": "https://github.com/docxology/ento_linguistics",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring",
+      "description": "Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring ·  · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-04",
       "paper_path": "papers/2026_EntoLinguistics/",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.19574117"
     },
     {
       "name": "cognitive_case_diagrams",
@@ -1393,7 +1393,7 @@
       "language": "Python",
       "stars": 2,
       "updated_or_year": "2026-09",
-      "paper_path": "",
+      "paper_path": "papers/2026_JevPractice/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22816187"
     },
     {

@@ -3,6 +3,53 @@
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
 
+## 2026-09-24
+
+- **Art collection discoverability (the Flickr → site loop closed):**
+  `data/artworks.json` refreshed live from Flickr via the new
+  `code/orchestrators/sync_flickr_artworks.py` freshness step
+  (`flickr.people.getPublicPhotos` + per-photo `getSizes`, key from the
+  `FLICKR_API_KEY` env var/CI secret, deterministic upload-desc order,
+  one-time HTML entity unescape of descriptions). Export now carries 943
+  artworks including the previously missing *Solstice (Turning Point)*
+  (55349041831, 2026-06-21) plus additive `license`/`license_name`/
+  `license_url`/`date_upload` fields (942 records CC BY-NC 2.0; one CC BY-NC
+  4.0). Compact index rebuilt with a generator-owned `page` field.
+  - **New crawlable per-artwork pages:** `build_artwork_pages.py` (generation
+    step `artwork-pages`) emits `artworks/<id>-<slug>.html` for all 943
+    records — VisualArtwork + BreadcrumbList JSON-LD (creator `@id` reference,
+    license, Flickr `sameAs`), meta description with unique fallbacks,
+    canonical + OpenGraph/Twitter tags, meaningful alt text, tags, license
+    notice, prev/next + tag-overlap related works, and a Flickr backlink. The
+    `artworks/index.html` plain-HTML hub lists every page plus curated
+    collections; 0 pages are thin (noindex) today — the 14 untagged records
+    all carry real descriptions.
+  - **Curated themed hubs:** `pages/ART_COLLECTIONS.md` (source of truth) →
+    five `art-collections/<slug>.html` CollectionPage+ItemList pages
+    (Neuroscience & Molecular Biology, Collective Behavior & Ants, Sacred
+    Geometry & Kabbalistic Triangles, Active Inference, Americana & Seals).
+  - **art.html crawlability:** tiles are now `<a href="artworks/…">` links
+    (lightbox = progressive enhancement via `tileClick`), the SSR floor is
+    maintained by the new `sync_art_gallery.py` patcher step
+    (`art-gallery-sync`), and the noscript block points at the plain-HTML
+    artwork index. Gallery hydration (`js/art-gallery.js`) renders link tiles
+    and defers to the lightbox only on plain clicks.
+  - **Sitemap & search:** sitemap policy adds `artworks/` + the five
+    collection hubs; `build_sitemap.py` appends all non-thin artwork pages
+    with Flickr-upload `lastmod`. Search index gains compact `artwork` items
+    (thin pages excluded).
+  - **Identity graph:** Flickr profile added to the Person `sameAs` in
+    index.html, work pages, and publications JSON-LD; `rel="me"` Flickr link
+    site-wide (index.html + `deploy_seo_security.py` append behavior +
+    `site_nav.REL_ME_LINKS`); art entries in `llms.txt`, `humans.txt`, and
+    `start-here.html`; domain pages (art-synergetics, entomology,
+    active-inference) link their matching collections.
+  - **Publication intake (same day):** paired-publication scan (470 pairs,
+    zero warnings) applied 55 actions — the new *Jev in Practice* paper
+    (Zenodo 10.5281/zenodo.22816187, folder `2026_JevPractice`) plus 54
+    metadata updates; 14 `needs_review` pairs remain queue items for manual
+    curation.
+
 ## 2026-09-18
 
 - **Zenodo intake hygiene:** the four software-only Zenodo deposits that kept

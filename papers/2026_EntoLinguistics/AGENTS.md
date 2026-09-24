@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology
+# AGENTS.md — Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)
 
-**Paper**: Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology (2026)
+**Paper**: Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa) (2026)
 **Domain**: Entomology
-**Authors**: Daniel Ari Friedman & Tucker Cahill Chambers
+**Authors**: Daniel Ari Friedman
 
 ---
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology to related works in the bibliography
+- Connects Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

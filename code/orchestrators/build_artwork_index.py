@@ -28,11 +28,14 @@ SOURCE = REPO_ROOT / "data" / "artworks.json"
 OUTPUT = REPO_ROOT / "data" / "artworks-index.json"
 
 from docxology_tools.report_paths import generated_timestamp, stable_generated_at  # noqa: E402
+from docxology_tools.artwork_pages import page_rel_path  # noqa: E402
 
 
 # Descriptions are intentionally omitted: the first keystroke in the search
 # field loads the full export, while the initial grid stays small and fast.
-INDEX_FIELDS = ("id", "title", "tags", "date", "views", "thumb")
+# ``page`` carries the generator-owned artworks/<id>-<slug>.html path so the
+# grid tiles link real pages without duplicating the slug logic in JS.
+INDEX_FIELDS = ("id", "title", "tags", "date", "views", "thumb", "page")
 
 
 def load_source() -> dict:
@@ -44,7 +47,7 @@ def load_source() -> dict:
 
 def build_payload(source: dict) -> dict:
     artworks = [
-        {field: artwork.get(field) for field in INDEX_FIELDS}
+        {field: (page_rel_path(artwork) if field == "page" else artwork.get(field)) for field in INDEX_FIELDS}
         for artwork in source["artworks"]
     ]
     return {

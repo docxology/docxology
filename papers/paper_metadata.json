@@ -1752,30 +1752,13 @@
   "2026_EntoLinguistics": {
     "year": "2026",
     "topic": "EntoLinguistics",
-    "name": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
-    "description": "Six-domain Ento-Linguistic framework, open-source corpus pipeline (term extraction, co-occurrence networks, semantic entropy), and CACE meta-standards for lexical engineering in entomology.",
-    "authors": "Daniel Ari Friedman & Tucker Cahill Chambers",
-    "abstract": "Scientific language does not merely describe biological phenomena; it actively constitutes the generative models through which researchers parse complex systems. This paper makes three core contributions to understanding—and correcting—the epistemic consequences of this constitutive role. First, we introduce a six-domain Ento-Linguistic framework that decomposes the terminological landscape of insect research into analytically tractable themes, isolating domains where anthropomorphic language most severely distorts causal modeling. Second, we develop an open-source computational pipeline that integrates automated term extraction, co-occurrence network construction, and information-theoretic ambiguity scoring with principles from Active Inference and Complex Systems Theory. Third, we propose and validate four evidence-based meta-standards—Clarity, Appropriateness, Consistency, and Evolvability (CACE)—as a formalized protocol for lexical engineering. Analysis of a corpus encompassing 369 entomological publications (48787 tokens; 7105 unique token types; Type–Token Ratio 0.1456) extracts 888 candidate terms (with 261 assigned to specific semantic domains across 6 conceptual clusters linked by 9 weighted relationships). The resulting terminology networks display strong modularity alongside systematic cross-domain bridging—most prominently in the Power and Labor domain, where 43 bridging terms generate extensive semantic bleed-over into adjacent domains. Terms such as \"queen\" (241 occurrences), \"worker\" (269), and \"caste\" (121) implicitly impose hierarchical control topologies onto biological structures that are fundamentally stigmergic and decentralized. Across all 261 domain-assigned terms, 16.9% exhibit context-dependent semantic drift, demonstrating how conceptual constructs like \"individuality\" span multiple biological scales and consequently blur the formal systemic boundaries (Markov Blankets) required for mathematically rigorous modeling. The accompanying fully reproducible computational pipeline provides the quantitative analytical tools necessary for a more self-aware and epistemically rigorous scientific practice. All code and data are available at https://github.com/docxology/ento_linguistics.",
-    "tags": [
-      "entomology",
-      "scientific-communication",
-      "terminology-networks",
-      "corpus-linguistics",
-      "active-inference",
-      "cace",
-      "semantic-entropy",
-      "myrmecology"
-    ],
-    "keywords": [
-      "entomology",
-      "scientific communication",
-      "terminology networks",
-      "Active Inference",
-      "corpus linguistics",
-      "CACE",
-      "semantic entropy",
-      "myrmecology"
-    ]
+    "name": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)",
+    "description": "<p>Release v1.1.1 of the Ento-Linguistics research project.</p><p>Corpus: 7,609 PubMed abstracts (full search surface drained), 7,073 PMC open-access full texts, 2,460 BHL historical documents (1850&ndash;1970), 61 arXiv preprints, 536/536 OpenAlex citation enrichments. The manuscript is fully token-driven: all corpus statistics are injected at PDF build time from pipeline artifacts (strict mode; no hard-coded values).</p><p>v1.1.1 adds: pruned and parallelized language-analysis stages (the statistics/full-text stages drop from hours to ~25 min), corpus-fingerprint freshness guards for both statistical artifacts, a dry-run-only manuscript variable validator, and regenerated figures, statistics, and PDF.</p>",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "<p>Release v1.1.1 of the Ento-Linguistics research project.</p><p>Corpus: 7,609 PubMed abstracts (full search surface drained), 7,073 PMC open-access full texts, 2,460 BHL historical documents (1850&ndash;1970), 61 arXiv preprints, 536/536 OpenAlex citation enrichments. The manuscript is fully token-driven: all corpus statistics are injected at PDF build time from pipeline artifacts (strict mode; no hard-coded values).</p><p>v1.1.1 adds: pruned and parallelized language-analysis stages (the statistics/full-text stages drop from hours to ~25 min), corpus-fingerprint freshness guards for both statistical artifacts, a dry-run-only manuscript variable validator, and regenerated figures, statistics, and PDF.</p>",
+    "keywords": [],
+    "doi": "10.5281/zenodo.19574117",
+    "github_release_url": "https://github.com/docxology/ento_linguistics/releases/tag/v1.1.1"
   },
   "2026_ReproducibleResearch": {
     "year": "2026",
@@ -1893,7 +1876,7 @@
       "reproducible research"
     ],
     "doi": "10.5281/zenodo.19699233",
-    "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0"
+    "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.1.0"
   },
   "2026_BlakeJiang": {
     "year": "2026",
@@ -3491,5 +3474,16 @@
       "offensive AI"
     ],
     "doi": "10.5281/zenodo.22754351"
+  },
+  "2026_JevPractice": {
+    "year": "2026",
+    "topic": "JevPractice",
+    "name": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
+    "description": "<p>Jev is TypeSafe's flagship <em>System One</em> decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with calibrated probabilities that software can branch on directly. This work presents <code>daf-jev</code>, an open, modular, composable Python toolkit for the Jev API, together with a live-API characterization of the model. The package layers ergonomic question builders, a decision-composition library (confidence gates, tiered routing, composite scoring), a concurrent corpus evaluator, a calibration module, a CLI, an agent skill, and a Model Context Protocol (MCP) server over a thin typed client. Live benchmarks show that batching questions into one call is faster and cheaper than sequential calls (up to ~18x speedup and ~4x fewer tokens), that decision pipelines complete within the model's millisecond envelope, and that reported confidence is self-consistent across repeated evaluations. All numbers in the accompanying manuscript are generated from benchmark artifacts; the full provenance chain (hashed documentation snapshot, figure registry, validation receipts) is machine-checked.</p>",
+    "authors": "Daniel Ari Friedman",
+    "abstract": "<p>Jev is TypeSafe's flagship <em>System One</em> decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with calibrated probabilities that software can branch on directly. This work presents <code>daf-jev</code>, an open, modular, composable Python toolkit for the Jev API, together with a live-API characterization of the model. The package layers ergonomic question builders, a decision-composition library (confidence gates, tiered routing, composite scoring), a concurrent corpus evaluator, a calibration module, a CLI, an agent skill, and a Model Context Protocol (MCP) server over a thin typed client. Live benchmarks show that batching questions into one call is faster and cheaper than sequential calls (up to ~18x speedup and ~4x fewer tokens), that decision pipelines complete within the model's millisecond envelope, and that reported confidence is self-consistent across repeated evaluations. All numbers in the accompanying manuscript are generated from benchmark artifacts; the full provenance chain (hashed documentation snapshot, figure registry, validation receipts) is machine-checked.</p>",
+    "keywords": [],
+    "doi": "10.5281/zenodo.22816187",
+    "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.6.0"
   }
 }

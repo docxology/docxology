@@ -473,6 +473,20 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
 - Acceptance: current reports remain hosted/indexed; historical reports remain in GitHub or release archives; no evidence is deleted silently
 - Dependencies: Pages growth report, release-integrity manifest
 
+### ART-001 — Flickr-side metadata enrichment for artwork pages
+
+- Priority: P1
+- Owner: DAF (on Flickr) / WEB DEVELOPER (site-side re-sync)
+- Trigger: after tagging/describing works on Flickr; re-run
+  `sync_flickr_artworks.py` then the `artwork-pages` step
+- Deliverable: Flickr records enriched so no artwork page is thin and every
+  collection membership is tag-driven; site re-synced and rebuilt
+- Acceptance: 0 thin (noindex) artwork pages hold; the 14 untagged records
+  gain Flickr tags; *Solstice (Turning Point)* (55349041831) tagged (currently
+  the only untagged record with a description) and joins a themed collection
+- Dependencies: Flickr account edits (out of repo scope);
+  `code/orchestrators/sync_flickr_artworks.py`; `pages/ART_COLLECTIONS.md`
+
 ## P2 — Operating model
 
 ### DOC-013 — Keep runbooks and release checklist aligned

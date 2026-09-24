@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology
+# 🐜 Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)
 
-**Daniel Ari Friedman & Tucker Cahill Chambers** (2026) · *Zenodo*
+**Daniel Ari Friedman** (2026) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19574117-blue)](https://doi.org/10.5281/zenodo.19574117)
 
@@ -10,11 +10,11 @@
 
 ## Abstract
 
-> Scientific language does not merely describe biological phenomena; it actively constitutes the generative models through which researchers parse complex systems. This paper makes three core contributions to understanding—and correcting—the epistemic consequences of this constitutive role. First, we introduce a six-domain Ento-Linguistic framework that decomposes the terminological landscape of...
+> Release v1.1.1 of the Ento-Linguistics research project. Corpus: 7,609 PubMed abstracts (full search surface drained), 7,073 PMC open-access full texts, 2,460 BHL historical documents (1850–1970), 61 arXiv preprints, 536/536 OpenAlex citation enrichments. The manuscript is fully token-driven: all corpus statistics are injected at PDF build time from pipeline artifacts (strict mode; no hard-coded...
 
 ## Keywords
 
-`entomology` · `scientific communication` · `terminology networks` · `Active Inference` · `corpus linguistics` · `CACE` · `semantic entropy` · `myrmecology`
+`EntoLinguistics`
 
 ## Methods
 
@@ -27,14 +27,17 @@
 
 ## Artifacts
 
+- GitHub repository: [docxology/ento_linguistics](https://github.com/docxology/ento_linguistics)
+- GitHub release: [v1.1.1](https://github.com/docxology/ento_linguistics/releases/tag/v1.1.1)
 - DOI: [10.5281/zenodo.19574117](https://doi.org/10.5281/zenodo.19574117)
 - Zenodo record: [https://zenodo.org/records/19574117](https://zenodo.org/records/19574117)
 - PDF: [Ento_Linguistics_DAF_TCC_v1_04-15-2026.pdf](Ento_Linguistics_DAF_TCC_v1_04-15-2026.pdf)
+- PDF download: [Ento_Linguistics_v1.1.1_2026-09-22.pdf](https://zenodo.org/api/records/22902510/files/Ento_Linguistics_v1.1.1_2026-09-22.pdf/content)
 - PDF SHA-256: [See Zenodo record](https://zenodo.org/records/19574117)
 
 ## Citation
 
-> Daniel Ari Friedman & Tucker Cahill Chambers (2026). *Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology*. Zenodo. DOI: 10.5281/zenodo.19574117. URL: https://doi.org/10.5281/zenodo.19574117.
+> Daniel Ari Friedman (2026). *Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)*. Zenodo. DOI: 10.5281/zenodo.19574117. URL: https://doi.org/10.5281/zenodo.19574117.
 
 ## Related
 

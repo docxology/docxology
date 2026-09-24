@@ -1585,3 +1585,26 @@ section h2:hover .anchor-link,
    removes them from the focus order and the accessibility tree. */
 .tts-panel, .shortcuts-overlay { visibility: hidden; transition: visibility 0s .25s, transform .25s ease, opacity .25s ease; }
 .tts-panel.tts-open, .shortcuts-overlay.shortcuts-open { visibility: visible; transition: transform .25s ease, opacity .25s ease; }
+
+
+/* ── Generated artwork pages (build_artwork_pages.py) — shared once here so
+   944 per-artwork pages don't duplicate it inline (Pages artifact budget). ── */
+.breadcrumb{position:fixed;top:74px;left:0;right:0;z-index:150;background:var(--bg-primary);border-bottom:1px solid var(--paper-line);box-shadow:none;height:auto;min-height:0;padding:0 2rem;display:block;align-items:flex-start;justify-content:flex-start;max-width:1180px;margin:0 auto}.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;font-size:.8rem;color:var(--text-muted)}.breadcrumb li+li::before{content:'›';margin-right:.4rem;color:var(--text-muted)}.breadcrumb a{color:var(--silver-bright);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb [aria-current=page]{color:var(--text-secondary)}
+.artwork-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);gap:1.25rem;align-items:start}
+.artwork-figure{margin:0;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.artwork-figure img{width:100%;height:auto;display:block}
+.artwork-figure figcaption{padding:.6rem .9rem;font-size:.78rem;color:var(--text-muted)}
+.tag-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.75rem}
+.tag-row a{border:1px solid var(--border);border-radius:999px;padding:.38rem .65rem;background:var(--bg-card);font-size:.82rem;text-decoration:none}
+.meta-list{display:grid;gap:.55rem;margin:0;padding:0;list-style:none}
+.meta-list li{border-bottom:1px solid var(--border);padding-bottom:.45rem;color:var(--text-secondary)}
+.meta-list strong{color:var(--text-primary)}
+.artwork-desc{color:var(--text-secondary);line-height:1.7}
+.artwork-desc.muted{color:var(--text-muted)}
+.pager{display:flex;justify-content:space-between;gap:1rem;margin:1.25rem 0 0}
+.collection-chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.75rem}
+.collection-chips a{border:1px solid var(--border);border-radius:999px;padding:.38rem .65rem;background:var(--bg-card);font-size:.82rem;text-decoration:none}
+@media (max-width: 820px){.artwork-layout{grid-template-columns:1fr}}
+.artwork-list{list-style:none;padding:0;margin:0;display:grid;gap:.35rem;max-width:60rem}
+.artwork-list li{padding:.45rem .75rem;background:var(--bg-card);border:1px solid var(--border);border-radius:8px}
+.artwork-list a{color:var(--silver-bright);text-decoration:none}

@@ -85,21 +85,19 @@
   "related_resources": [
     {
       "type": "repository",
-      "url": "https://github.com/ActiveInferenceInstitute/fep_lean"
+      "url": "https://github.com/ActiveInferenceInstitute/fep_formal"
     }
   ],
-  "github_repo": "ActiveInferenceInstitute/fep_lean",
-  "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0",
+  "github_repo": "ActiveInferenceInstitute/fep_formal",
+  "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.1.0",
   "release_tag": "v1.1.0",
   "release_name": "FEP_Lean v1.1.0 — 155-topic Lean 4 formalization catalogue",
   "pdf_sha256": "",
   "pairing_confidence": "strong",
   "pairing_evidence": [
-    "github_release_mentions_doi",
-    "zenodo_related_identifier_mentions_release",
-    "github_repo_self_linked"
+    "github_release_mentions_doi"
   ],
-  "checked_at": "2026-09-17T23:13:59Z",
+  "checked_at": "2026-09-24T00:16:05Z",
   "domain": "Active Inference",
   "type": "Paper",
   "methods": [

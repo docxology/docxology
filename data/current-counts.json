@@ -2,14 +2,14 @@
   "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
   "command": "uv run python3 code/orchestrators/build_current_counts.py",
   "counts": {
-    "bibliography_docs_links": 198,
-    "bibliography_works": 215,
+    "bibliography_docs_links": 199,
+    "bibliography_works": 216,
     "domains": {
       "AII Ecosystem": 6,
       "Active Inference": 45,
       "Art & Synergetics": 16,
       "Cognitive Security": 37,
-      "Computational": 57,
+      "Computational": 58,
       "Entomology": 23,
       "Genetics & Biomedical": 15,
       "Presentations & Media": 15
@@ -17,10 +17,10 @@
     "extracted_images": 8944,
     "full_text_papers": 190,
     "generated_exports": {
-      "data_publications_ld_main_entity": 215,
+      "data_publications_ld_main_entity": 216,
       "data_software_json": 155,
       "data_software_ld_main_entity": 155,
-      "data_works_json": 215
+      "data_works_json": 216
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 43,
@@ -46,16 +46,16 @@
       "raw_candidates": 510
     },
     "paired_publications": {
-      "already_reviewed": 414,
-      "create_new": 0,
-      "github_releases": 247,
-      "needs_review": 0,
-      "pairs": 464,
-      "strong_pairs": 52,
-      "update_existing": 50,
-      "zenodo_records": 158
+      "already_reviewed": 401,
+      "create_new": 4,
+      "github_releases": 254,
+      "needs_review": 14,
+      "pairs": 470,
+      "strong_pairs": 57,
+      "update_existing": 51,
+      "zenodo_records": 162
     },
-    "paper_folder_docs": 198,
+    "paper_folder_docs": 199,
     "papers_with_images": 139,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
@@ -75,19 +75,19 @@
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 193,
+      "Papers": 194,
       "Playbooks": 2,
       "Presentations": 9,
       "Report": 1,
       "Series": 2
     }
   },
-  "generated_at": "2026-09-18T15:57:06+00:00",
+  "generated_at": "2026-09-24T02:10:55+00:00",
   "sources": {
     "bibliography": "pages/BIBLIOGRAPHY.md",
     "github_inventory": "data/github-repositories.json",
     "paired_publication_decisions": "data/paired-publication-decisions.json",
-    "paired_publications": "reports/paired_publications_2026-09-18.json",
+    "paired_publications": "reports/paired_publications_2026-09-24.json",
     "paper_folders": "papers/README.md",
     "public_source_snapshot": "reports/public_source_snapshot_2026-09-18.json",
     "software_catalog": "pages/SOFTWARE.md",

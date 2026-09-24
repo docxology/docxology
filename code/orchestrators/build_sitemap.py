@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import html
+import json
 import re
 import subprocess
 import sys
@@ -18,6 +19,9 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 OUT = REPO_ROOT / "sitemap.xml"
 
 from docxology_tools.sitemap_policy import INDEX_PRIORITY_STATIC, SITE_ORIGIN  # noqa: E402
+
+from docxology_tools.art_collections import load_collections  # noqa: E402
+from docxology_tools.artwork_pages import page_rel_path, sitemap_paths  # noqa: E402
 
 from docxology_tools.report_paths import report_date_string  # noqa: E402
 
@@ -135,7 +139,27 @@ def sitemap_locs(lastmod: str | None = None, *, repo_root: Path = REPO_ROOT) -> 
             if path.name == "index.html":
                 continue
             locs.append(loc(f"videos/{path.name}"))
+    payload = _artwork_payload(repo_root)
+    locs.extend(loc(rel_path) for rel_path in sitemap_paths(payload))
+    for collection in load_collections():
+        locs.append(loc(f"art-collections/{collection.slug}.html"))
     return locs
+
+
+def _artwork_payload(repo_root: Path) -> dict:
+    """Load the artwork export the same way for both loc listing and rendering."""
+    artwork_json = repo_root / "data" / "artworks.json"
+    if not artwork_json.exists():
+        return {"artworks": []}
+    return json.loads(artwork_json.read_text(encoding="utf-8"))
+
+
+def _artwork_lastmods(payload: dict, fallback: str) -> dict[str, str]:
+    """Artwork page rel path -> lastmod date from the Flickr upload stamp."""
+    return {
+        page_rel_path(record): (str(record.get("date_upload", ""))[:10] or fallback)
+        for record in payload.get("artworks", [])
+    }
 
 
 def render(lastmod: str | None = None, *, repo_root: Path = REPO_ROOT) -> str:
@@ -163,6 +187,15 @@ def render(lastmod: str | None = None, *, repo_root: Path = REPO_ROOT) -> str:
             if path.name == "index.html":
                 continue
             entries.append(url_entry(f"videos/{path.name}", "yearly", "0.35", date, repo_root=repo_root))
+    # Artwork pages: data-driven URL set (thin noindex pages excluded), with
+    # <lastmod> taken from the Flickr upload date. Curated collection hubs are
+    # git-dated like other static entries.
+    payload = _artwork_payload(repo_root)
+    lastmods = _artwork_lastmods(payload, date)
+    for rel_path in sitemap_paths(payload):
+        entries.append(generated_url_entry(rel_path, "monthly", "0.5", lastmods.get(rel_path, date)))
+    for collection in load_collections():
+        entries.append(url_entry(f"art-collections/{collection.slug}.html", "monthly", "0.6", date, repo_root=repo_root))
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

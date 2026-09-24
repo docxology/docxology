@@ -44,7 +44,7 @@ render:
     html: true
     slides: true
     docx: false
-    epub: false
+    epub: true
 
 bibliography:
   references_path: "docs/manuscript/references.bib"

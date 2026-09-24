@@ -7077,5 +7077,30 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.22754351",
     "URL": "https://doi.org/10.5281/zenodo.22754351"
+  },
+  {
+    "id": "Friedman2026JevPracticeComposablePython219",
+    "type": "article-journal",
+    "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 219; docs: papers/2026_JevPractice/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.22816187",
+    "URL": "https://doi.org/10.5281/zenodo.22816187"
   }
 ]

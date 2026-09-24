@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T15:57:10Z",
+  "generated_at": "2026-09-24T02:11:03Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 215,
+    "works": 216,
     "software_catalogued": 155,
     "owned_software_catalogued": 116,
     "aii_software_catalogued": 39,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "17dafd8b5827fbf9d919662bf577e69a1b9546299b3d9ab09a0786614ab2631a",
+      "sha256": "9545d42c6e76ee13b6835042b7914c053b85f26b9c9d3035de7523fb48c04896",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 174043,
-          "sha256": "0e2ed9102fc747fefb7744922e08639482246602b0f5d5542236b4ddab44e0dc"
+          "bytes": 174738,
+          "sha256": "ea2a559d5a7e1b91d2dd4ab06259f0cc8c3fd7673c7ac04e0e3911dcde26bfd6"
         },
         {
           "path": "data/software.json",
-          "bytes": 77154,
-          "sha256": "b26086b9b094bdda500f4e9b5e639f650149dc15cc0fb230b19bbd64f17fb9bc"
+          "bytes": 77231,
+          "sha256": "4f755186d6e528417b21e774e519f5b118c9048badf4fe029ab97b5c6e4212ae"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "2a8a9b80a50f5a0f05503b9f54f56d4b02a97b47601823193fb76512c254f130"
+          "sha256": "da5e30ed63793b7e1f1cb34b911d29a8753d5aedc10bf0f214744c02d7a6921a"
         },
         {
           "path": "data/github-repositories.json",
@@ -7661,6 +7661,27 @@
       "has_readme": true,
       "full_text_url": "",
       "authors": []
+    },
+    {
+      "num": 219,
+      "citation_key": "Friedman2026JevPracticeComposablePython219",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.22816187",
+      "doi": "10.5281/zenodo.22816187",
+      "docs_path": "papers/2026_JevPractice/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": []
     }
   ],
   "software": [
@@ -8077,12 +8098,12 @@
       "url": "https://github.com/docxology/ento_linguistics",
       "owner": "docxology",
       "catalog_section": "docxology",
-      "description": "Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring",
+      "description": "Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring · · Zenodo",
       "language": "Python",
       "stars": 0,
       "updated_or_year": "2026-04",
       "paper_path": "papers/2026_EntoLinguistics/",
-      "zenodo_url": ""
+      "zenodo_url": "https://doi.org/10.5281/zenodo.19574117"
     },
     {
       "name": "cognitive_case_diagrams",
@@ -9053,7 +9074,7 @@
       "language": "Python",
       "stars": 2,
       "updated_or_year": "2026-09",
-      "paper_path": "",
+      "paper_path": "papers/2026_JevPractice/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.22816187"
     },
     {
@@ -9528,14 +9549,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 215 works.",
+      "claim": "The curated bibliography contains 216 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-09-18T15:57:06+00:00",
+      "checked_at": "2026-09-24T02:10:55+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9543,14 +9564,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 198 per-paper documentation folders.",
+      "claim": "The repository contains 199 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-09-18T15:57:06+00:00",
+      "checked_at": "2026-09-24T02:10:55+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

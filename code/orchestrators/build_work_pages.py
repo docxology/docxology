@@ -92,6 +92,7 @@ PRINCIPAL_LD = {
     "sameAs": [
         "https://orcid.org/0000-0001-6232-9096",
         "https://www.wikidata.org/wiki/Q138781444",
+        "https://www.flickr.com/photos/daniel_friedman/",
     ],
 }
 

@@ -47,7 +47,8 @@ REL_ME_LINKS = (
     '    <link rel="me" href="https://linkedin.com/in/danielarifriedman">\n'
     '    <link rel="me" href="https://youtube.com/@danielarifriedman">\n'
     '    <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">\n'
-    '    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">'
+    '    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">\n'
+    '    <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">'
 )
 
 # Combined head extras block — CSP + rel-me + resource hints.

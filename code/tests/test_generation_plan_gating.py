@@ -45,6 +45,7 @@ DERIVED_STEPS = {
     "domain-pages",
     # In-place patchers: read scope equals write scope, several surfaces
     # hand-authored.
+    "art-gallery-sync",
     "scholar-metrics",
     "citation-cff",
     "site-facts-first",

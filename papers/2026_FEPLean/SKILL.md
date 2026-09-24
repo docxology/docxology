@@ -44,14 +44,14 @@ Verification points for this work:
 - Canonical DOI: 10.5281/zenodo.19699233
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: strong
-- Last checked: 2026-09-17T23:13:59Z
+- Last checked: 2026-09-24T00:16:05Z
 - Artifact DOI: 10.5281/zenodo.22072956
 
 ## Prerequisites
 
 - Familiarity with free energy principle, active inference, bayesian mechanics
 - Background in Active Inference fundamentals
-- Access to source repository: ActiveInferenceInstitute/fep_lean
+- Access to source repository: ActiveInferenceInstitute/fep_formal
 
 ## Instructions
 

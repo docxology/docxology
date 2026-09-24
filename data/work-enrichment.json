@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-17T23:24:14Z",
+  "generated_at": "2026-09-24T01:11:15Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 215,
+  "count": 216,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -2285,16 +2285,9 @@
     },
     "Friedman2026EntoLinguisticsLanguageAmbiguity109": {
       "citation_key": "Friedman2026EntoLinguisticsLanguageAmbiguity109",
-      "abstract": "Scientific language does not merely describe biological phenomena; it actively constitutes the generative models through which researchers parse complex systems. This paper makes three core contributions to understanding—and correcting—the epistemic consequences of this constitutive role. First, we introduce a six-domain Ento-Linguistic framework that decomposes the terminological landscape of...",
+      "abstract": "Release v1.1.1 of the Ento-Linguistics research project. Corpus: 7,609 PubMed abstracts (full search surface drained), 7,073 PMC open-access full texts, 2,460 BHL historical documents (1850–1970), 61 arXiv preprints, 536/536 OpenAlex citation enrichments. The manuscript is fully token-driven: all corpus statistics are injected at PDF build time from pipeline artifacts (strict mode; no hard-coded...",
       "keywords": [
-        "entomology",
-        "scientific communication",
-        "terminology networks",
-        "Active Inference",
-        "corpus linguistics",
-        "CACE",
-        "semantic entropy",
-        "myrmecology"
+        "EntoLinguistics"
       ],
       "findings": [
         "Six-domain Ento-Linguistic framework, open-source corpus pipeline (term extraction, co-occurrence networks, semantic entropy), and CACE meta-standards for lexical engineering in entomology."
@@ -4388,6 +4381,18 @@
       ],
       "methods": [],
       "source": "papers/2026_AgenticSecurityOperating/README.md"
+    },
+    "Friedman2026JevPracticeComposablePython219": {
+      "citation_key": "Friedman2026JevPracticeComposablePython219",
+      "abstract": "Jev is TypeSafe's flagship System One decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with calibrated probabilities that software can branch on directly. This work presents daf-jev , an open, modular, composable Python toolkit for the Jev API, together with a live-API characterization of the model. The package layers ergonomic question builders, a decision-composition library (confidence gates, tiered routing, composite scoring), a concurrent corpus evaluator, a calibration module, a CLI, an agent skill, and a Model Context Protocol (MCP) server over a thin typed client. Live benchmarks show that batching questions into one call is faster and cheaper than sequential calls (up to ~18x speedup and ~4x fewer tokens), that decision pipelines complete within the model's millisecond envelope, and that reported confidence is self-consis",
+      "keywords": [
+        "paired GitHub and Zenodo publication"
+      ],
+      "findings": [
+        "paired publication"
+      ],
+      "methods": [],
+      "source": "papers/2026_JevPractice/README.md"
     }
   }
 }

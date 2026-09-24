@@ -27,6 +27,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 
 - Read the foundational pillar guide on Computational Entomology for simulation models and neurogenomic algorithms.
 - Explore Insect Cognition &amp; Collective Intelligence for distributed cognition and stigmergic coordination.
+- See the ant drawings as art in the Collective Behavior &amp; Ants collection — one page per drawing.
 - Investigate behavioral neurochemistry in Measurement of Natural Variation in Neurotransmitter Content.
 - Study molecular and transcriptomic foundations in Gene Expression Variation in Harvester Ant Foragers.
 - Examine distributed active inference modeling in Active Inferants: An Active Inference Framework for Ant Colony Behavior.
@@ -49,7 +50,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 - [ActiveInferAnts](https://github.com/docxology/ActiveInferAnts) — Active Inference for ants — multi-language implementations (Python) for modeling ant-colony cognition as Bayesian agents minimizing free energy
 - [ant_stack](https://github.com/docxology/ant_stack) — The Ant Stack — layered computational model of collective ant-colony intelligence
 - [ant-pheromone](https://github.com/docxology/ant-pheromone) — Computational simulation of ant pheromone trail dynamics and stigmergic communication
-- [ento_linguistics](https://github.com/docxology/ento_linguistics) — Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring
+- [ento_linguistics](https://github.com/docxology/ento_linguistics) — Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring ·  · Zenodo
 - [FORMINDEX](https://github.com/docxology/FORMINDEX) — Analysis and tooling around FORMIS, the world's largest ant-literature database; bibliometric mining and structured index generation
 
 ## 🧠 [Active Inference & Free Energy Principle](../domain-active-inference.html)
@@ -64,6 +65,7 @@ Free Energy Principle, generative models, belief sharing, formalization, and edu
 
 - Read the comprehensive Active Inference &amp; Free Energy Principle Tutorial.
 - Explore neurosymbolic integrations in Neurosymbolic AI &amp; Active Inference.
+- See the theory rendered as drawing in the Active Inference art collection — one page per drawing.
 - Trace multi-agent coordination theory in Shared Protentions in Multi-Agent Active Inference.
 - Examine distributed belief updates in Federated Inference and Belief Sharing.
 - Study formal mathematical notation systems in Generalized Notation Notation (GNN).
@@ -135,6 +137,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 **Learning path**
 
 - Browse the curated visual archive on the Visual Art Gallery (940+ catalogued pen-and-ink drawings).
+- Browse the themed drawing collections: Sacred Geometry &amp; Kabbalistic Triangles and Americana &amp; Seals, each with one page per artwork.
 - Explore early blockchain history with Curio Cards (Cards 24, 25, 26 — Complexity, Passion, Education; 2017).
 - Study prophetic economics and metaphysics in The Golden Compass and the Lunar Flux: William Blake and the Architecture of Value.
 - Examine anticipatory epistemology in Before Pragmatism Had a Name: Blake's America A Prophecy.
@@ -164,7 +167,7 @@ William Blake, Buckminster Fuller, visual art, Curio Cards, quadray coordinates,
 
 Research templates, markdown containers, discovery engines, reproducible workflows, and software infrastructure.
 
-- Works: 57
+- Works: 58
 - Selected repositories: 9
 - Collaborator context: Active Inference Institute contributors, Open-source repository contributors
 

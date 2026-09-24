@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-15T22:16:38Z",
+  "generated_at": "2026-09-24T00:52:05Z",
   "source": "pages/BIBLIOGRAPHY.md",
   "schema_ref": "/data/agent-index.json#schemas/Work",
-  "count": 215,
+  "count": 216,
   "works": [
     {
       "num": 1,
@@ -5345,6 +5345,27 @@
       "url": "https://doi.org/10.5281/zenodo.22754351",
       "doi": "10.5281/zenodo.22754351",
       "docs_path": "papers/2026_AgenticSecurityOperating/",
+      "has_paper_folder": true,
+      "has_full_text": false,
+      "has_images": false,
+      "has_skill_md": true,
+      "has_agents_md": true,
+      "has_readme": true,
+      "full_text_url": "",
+      "authors": []
+    },
+    {
+      "num": 219,
+      "citation_key": "Friedman2026JevPracticeComposablePython219",
+      "year": 2026,
+      "domain": "💻",
+      "domain_name": "Computational",
+      "type": "Paper",
+      "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.22816187",
+      "doi": "10.5281/zenodo.22816187",
+      "docs_path": "papers/2026_JevPractice/",
       "has_paper_folder": true,
       "has_full_text": false,
       "has_images": false,

@@ -28,6 +28,7 @@ def content_segment_path(item_type: str) -> Path:
     return REPO_ROOT / f"search-index-content-{item_type}.json"
 
 from docxology_tools.report_paths import generated_timestamp, latest_source_report, latest_source_subdir_file, rel, stable_generated_at  # noqa: E402
+from docxology_tools.artwork_pages import created_date, is_thin, meta_description, page_rel_path, plain_text  # noqa: E402
 
 
 def _latest_url(pattern: str, _fallback: str) -> str:
@@ -251,6 +252,31 @@ def video_item(video: dict) -> dict:
     }
 
 
+
+def artwork_item(record: dict) -> dict:
+    """Compact artwork entry. Thin noindex records are skipped by the caller.
+
+    Content stays clipped (title + tags + meta description) so ~940 entries do
+    not inflate the core index — the full descriptions live on the artwork
+    pages and in data/artworks.json, per the DOC-009 compact-index budget.
+    """
+    title = plain_text(record.get("title", "")) or "Untitled artwork"
+    tags = [plain_text(tag) for tag in record.get("tags", [])]
+    summary = meta_description(record)
+    return {
+        "id": f"artwork:{record['id']}",
+        "type": "artwork",
+        "title": title,
+        "url": "/" + page_rel_path(record),
+        "external_url": str(record.get("flickr_url", "")),
+        "summary": summary,
+        "year": created_date(record)[:4],
+        "domain": "Art",
+        "tags": ["art", "drawing", *tags[:8]],
+        "content": " ".join([title, *tags, summary]).strip(),
+    }
+
+
 def person_item(person: dict) -> dict:
     return {
         "id": f"person:{person['name']}",
@@ -355,7 +381,6 @@ def render_split(generated_at: str | None = None) -> dict[Path, str]:
             {
                 "generated_at": content["generated_at"],
                 "type": typ,
-                "count": len(items),
                 "items": items,
             }
         )
@@ -368,6 +393,7 @@ def render(generated_at: str | None = None) -> str:
     software = load_json("data/software.json")["repositories"]
     github_repositories = load_json("data/github-repositories.json")["repositories"]
     videos = load_json("data/videos.json")["videos"]
+    artworks = load_json("data/artworks.json").get("artworks", [])
     people = load_json("data/people.json")["people"]
     orgs = load_json("data/organizations.json")["organizations"]
     claims = load_json("data/claims.json")["claims"]
@@ -380,6 +406,7 @@ def render(generated_at: str | None = None) -> str:
     items.extend(software_item(repo) for repo in software)
     items.extend(github_repo_item(repo) for repo in github_repositories if not repo.get("fork"))
     items.extend(video_item(video) for video in videos)
+    items.extend(artwork_item(record) for record in artworks if not is_thin(record))
     items.extend(person_item(person) for person in people)
     items.extend(org_item(org) for org in orgs)
     items.extend(claim_item(claim) for claim in claims)
@@ -396,6 +423,7 @@ def render(generated_at: str | None = None) -> str:
             "data/organizations.json",
             "data/claims.json",
             "data/resume.json",
+            "data/artworks.json",
         ],
         "count": len(items),
         "items": items,

@@ -28,8 +28,8 @@
 
 ## Artifacts
 
-- GitHub repository: [ActiveInferenceInstitute/fep_lean](https://github.com/ActiveInferenceInstitute/fep_lean)
-- GitHub release: [v1.1.0](https://github.com/ActiveInferenceInstitute/fep_lean/releases/tag/v1.1.0)
+- GitHub repository: [ActiveInferenceInstitute/fep_formal](https://github.com/ActiveInferenceInstitute/fep_formal)
+- GitHub release: [v1.1.0](https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.1.0)
 - DOI: [10.5281/zenodo.19699233](https://doi.org/10.5281/zenodo.19699233)
 - Artifact DOI: [10.5281/zenodo.22072956](https://doi.org/10.5281/zenodo.22072956)
 - Zenodo record: [https://zenodo.org/records/19699233](https://zenodo.org/records/19699233)

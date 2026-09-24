@@ -45,6 +45,7 @@ EXCLUDED_HTML_PATH_PARTS = frozenset(
         "reports",
         "netlify-stripe-webhook",
         "_site",
+        "output",
     }
 )
 
@@ -62,7 +63,13 @@ REL_ME_LINKS = """    <link rel="me" href="https://scholar.google.com/citations?
     <link rel="me" href="https://linkedin.com/in/danielarifriedman">
     <link rel="me" href="https://youtube.com/@danielarifriedman">
     <link rel="me" href="https://www.wikidata.org/wiki/Q138781444">
-    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">"""
+    <link rel="me" href="https://bsky.app/profile/danielarifriedman.com" title="Bluesky">
+    <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">"""
+
+# The art collection is a first-class surface of the site (artworks/ pages),
+# so the Flickr profile verification link is appended to every page that
+# already carries rel=me even if it predates this constant.
+FLICKR_REL_ME_MARKER = "flickr.com/photos/daniel_friedman"
 
 
 EXTERNAL_FONT_LINK = re.compile(
@@ -134,13 +141,26 @@ def add_referrer_policy_if_missing(html: str) -> str:
 
 
 def add_rel_me_if_missing(html: str) -> str:
-    """Add rel=me social verification links if not present."""
-    if 'rel="me"' in html:
+    """Add rel=me social verification links if not present, and keep the
+    Flickr profile verification link present on pages that already carry
+    rel=me (the art collection made Flickr a first-class identity link)."""
+    if 'rel="me"' not in html:
+        insert_pos = find_insertion_point(html)
+        if insert_pos is None:
+            return html
+        return html[:insert_pos] + REL_ME_LINKS + "\n" + html[insert_pos:]
+    if FLICKR_REL_ME_MARKER in html:
         return html
-    insert_pos = find_insertion_point(html)
-    if insert_pos is None:
+    last = None
+    for match in re.finditer(r"<link\s+rel=\"me\"[^>]*>", html, re.I):
+        last = match
+    if last is None:
         return html
-    return html[:insert_pos] + REL_ME_LINKS + "\n" + html[insert_pos:]
+    line_end = html.find("\n", last.end())
+    if line_end == -1:
+        line_end = len(html)
+    flickr_link = '    <link rel="me" href="https://www.flickr.com/photos/daniel_friedman/" title="Flickr">'
+    return html[:line_end] + "\n" + flickr_link + html[line_end:]
 
 
 HREFLANG_TAG_RE = re.compile(r"\s*<link\b[^>]*\bhreflang=[^>]*>\s*", re.I)

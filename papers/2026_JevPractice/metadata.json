@@ -1,0 +1,52 @@
+{
+  "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
+  "version": "0.6.0",
+  "doi": "10.5281/zenodo.22816187",
+  "doi_url": "https://doi.org/10.5281/zenodo.22816187",
+  "zenodo_record": "https://zenodo.org/records/22816187",
+  "record_id": "22921974",
+  "publication_date": "2026-09-23",
+  "resource_type": {
+    "title": "Software",
+    "type": "software"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "<p>Jev is TypeSafe's flagship <em>System One</em> decision model: instead of generating text, it answers typed questions (Choice, Score, Noul) about a state with calibrated probabilities that software can branch on directly. This work presents <code>daf-jev</code>, an open, modular, composable Python toolkit for the Jev API, together with a live-API characterization of the model. The package layers ergonomic question builders, a decision-composition library (confidence gates, tiered routing, composite scoring), a concurrent corpus evaluator, a calibration module, a CLI, an agent skill, and a Model Context Protocol (MCP) server over a thin typed client. Live benchmarks show that batching questions into one call is faster and cheaper than sequential calls (up to ~18x speedup and ~4x fewer tokens), that decision pipelines complete within the model's millisecond envelope, and that reported confidence is self-consistent across repeated evaluations. All numbers in the accompanying manuscript are generated from benchmark artifacts; the full provenance chain (hashed documentation snapshot, figure registry, validation receipts) is machine-checked.</p>",
+  "keywords": [],
+  "files": [
+    {
+      "name": "daf-jev-0.6.0-source.zip",
+      "size_bytes": 3112166,
+      "checksum": "md5:7545c1b3188d8b71ddc12a1524edaea7",
+      "download_url": "https://zenodo.org/api/records/22921974/files/daf-jev-0.6.0-source.zip/content"
+    },
+    {
+      "name": "daf-jev_combined.pdf",
+      "size_bytes": 742862,
+      "checksum": "md5:fac04ad1523513cf5a3ce032a1f1d427",
+      "download_url": "https://zenodo.org/api/records/22921974/files/daf-jev_combined.pdf/content"
+    }
+  ],
+  "related_resources": [
+    {
+      "type": "repository",
+      "url": "https://github.com/docxology/daf-jev"
+    }
+  ],
+  "github_repo": "docxology/daf-jev",
+  "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.6.0",
+  "release_tag": "v0.6.0",
+  "release_name": "v0.6.0 — Jev as a factor source for graphical models",
+  "pdf_sha256": "",
+  "pairing_confidence": "strong",
+  "pairing_evidence": [
+    "github_release_mentions_doi"
+  ],
+  "checked_at": "2026-09-24T00:16:24Z"
+}

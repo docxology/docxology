@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T22:57:25Z",
+  "generated_at": "2026-09-24T01:23:10Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,17 +61,17 @@
     }
   ],
   "max_score": 6,
-  "work_count": 215,
+  "work_count": 216,
   "signal_totals": {
-    "persistent_id": 200,
-    "public_archive": 158,
+    "persistent_id": 201,
+    "public_archive": 159,
     "open_full_text": 190,
-    "source_documents": 198,
-    "executable_code": 68,
-    "agent_readable": 198
+    "source_documents": 199,
+    "executable_code": 69,
+    "agent_readable": 199
   },
   "band_counts": {
-    "independently reproducible": 153,
+    "independently reproducible": 154,
     "independently checkable": 45,
     "citable only": 8,
     "unverified": 9
@@ -82,10 +82,10 @@
     "2": 4,
     "3": 8,
     "4": 37,
-    "5": 90,
+    "5": 91,
     "6": 63
   },
-  "mean_score": 4.707,
+  "mean_score": 4.708,
   "works": [
     {
       "num": 5,
@@ -3130,6 +3130,27 @@
       },
       "repositories": [
         "agentic_os_security"
+      ]
+    },
+    {
+      "num": 219,
+      "citation_key": "Friedman2026JevPracticeComposablePython219",
+      "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
+      "year": 2026,
+      "domain_name": "Computational",
+      "type": "Paper",
+      "score": 5,
+      "band": "independently reproducible",
+      "signals": {
+        "persistent_id": true,
+        "public_archive": true,
+        "open_full_text": false,
+        "source_documents": true,
+        "executable_code": true,
+        "agent_readable": true
+      },
+      "repositories": [
+        "daf-jev"
       ]
     },
     {

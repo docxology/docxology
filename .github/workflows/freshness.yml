@@ -27,6 +27,14 @@ jobs:
 
       - name: Refresh public-source snapshot
         run: python3 code/orchestrators/refresh_public_sources.py --output reports/public_source_snapshot_latest.json --facts-output reports/public_source_snapshot_latest.facts.json
+      - name: Check Flickr artwork export drift
+        # Skipped (not failed) until the FLICKR_API_KEY repository secret is
+        # set; the key itself is never printed or committed (see
+        # docs/operations/publication-sync.md "Flickr artwork sync").
+        if: ${{ secrets.FLICKR_API_KEY != '' }}
+        env:
+          FLICKR_API_KEY: ${{ secrets.FLICKR_API_KEY }}
+        run: python3 code/orchestrators/sync_flickr_artworks.py --check-drift
 
       - name: Compare with checked-in snapshot
         id: diff

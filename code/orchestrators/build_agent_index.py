@@ -126,6 +126,7 @@ SCHEMAS = {
             "date": "string or empty",
             "views": "string or numeric display count",
             "thumb": "HTTPS thumbnail URL",
+            "page": "string; generator-owned artworks/<id>-<slug>.html path for tile links",
         },
     },
     "VideoIndex": {
@@ -300,8 +301,11 @@ SCHEMAS = {
             "views": "string or numeric display count",
             "media": "string; medium/format label",
             "thumb": "HTTPS thumbnail URL",
-            "flickr_url": "HTTPS canonical Flickr page URL",
             "sizes": "object; resolution label to HTTPS image URL map",
+            "license": "string; Flickr license code ('0' = all rights reserved)",
+            "license_name": "string; human-readable license name",
+            "license_url": "string; canonical license URL when Creative Commons",
+            "date_upload": "string; UTC upload timestamp YYYY-MM-DD HH:MM:SS (sitemap lastmod source)",
         },
     },
     "VideoObject": {

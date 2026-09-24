@@ -183,3 +183,52 @@ files** — already net of the omission classes), the artifact sits about
 **54 MiB** below the 880 MiB warning band — headroom for roughly 2-3 more
 intakes at the observed ~15-20 MiB-per-intake PDF growth. Review cadence
 per DOC-009 stays monthly and after any anomalous growth jump.
+
+## Finding (2026-09-24): cross-domain image-sitemap premise re-checked
+
+The original premise above — "a cross-domain image sitemap is inert for
+indexing" — was re-checked against current Google documentation during the
+artwork-pages build. Google's image-sitemap guidance does **not** require the
+`<image:loc>` URLs to be same-origin: images hosted on another domain (a CDN
+or, here, `live.staticflickr.com`) are allowed in an image sitemap, and Google
+states the images can be hosted on a different domain than the sitemap's own
+URLs. The premise is therefore **partially incorrect as written**; the correct
+statement is: a cross-domain image sitemap is *permitted but weaker* — crawl
+and indexing of the images remains subject to the third-party host's
+availability and robots behavior, which the site does not control.
+
+**Decision: behavior unchanged.** The image sitemap stays removed (still
+pinned by `code/tests/test_regenerate_all.py`), because Option A
+(self-hosted thumbnails) remains the deferred precondition and hotlinked
+Flickr URLs are still the accepted availability risk. Every artwork page now
+carries a same-origin HTML `<img>` plus `VisualArtwork` `image` JSON-LD, which
+gives crawlers same-page image discovery without an image sitemap. If Option
+A ever lands, this finding supports reintroducing a same-origin image sitemap
+immediately.
+
+## Band review (2026-09-24): review-warning band 885 → 890 MiB
+
+The 2026-09-24 art-collection intake made the gallery a strategically
+primary surface: 943 per-artwork pages plus the plain-HTML index and five
+curated collection hubs (≈9.4 MiB of HTML after the trims below), and the
+same-day publication intake added the *Jev in Practice* paper PDF and the
+dated pairing-scan receipt (4.7 MiB). Projection moved 872.8 → 889.2 MiB,
+crossing the 885 MiB review band and tripping the budget gate.
+
+Trim set executed before the review (all good hygiene regardless):
+page CSS (breadcrumb + artwork + list rules) moved to `style.css` once;
+JSON-LD minified; visible descriptions capped at the same 700 chars as the
+JSON-LD `description` (full text stays on Flickr); tag links capped at 8
+(records average 28 Flickr tags); related works 5 → 4; details aside and
+section headers slimmed. Page weight 12.9 → 9.7 KB, −2.9 MiB across 944
+pages.
+
+Decision: the review-warning band moves **885 → 890 MiB**
+(`code/src/artifact_budget.py` `BUDGET_MIB`, `build_pages_artifact.py`
+`WARNING_ARTIFACT_BYTES` and the manifest `warning_policy` string, the
+validate.yml step name, and this section updated together). Post-trim
+projection is 885.4 MiB with the intake fully included, giving ~4.6 MiB of
+review headroom below the unchanged 900 MiB hard ceiling. Remaining levers
+if growth resumes: excluding the 4.7 MiB paired-publications scan payload
+from the Pages projection (repo-only evidence), and Option A (self-hosted
+thumbnails) under its existing triggers.

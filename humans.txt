@@ -13,4 +13,10 @@ Active Inference Institute, COGSEC.org, research collaborators, open-source cont
 /* SITE */
 Standards: HTML, CSS, JSON-LD, OpenSearch, RSS, CodeMeta, Citation File Format, Schema.org DataCatalog, RFC 9116 security.txt
 Language: English
-Last updated: 2026-08-14
+Last updated: 2026-09-24
+
+/* ART */
+Gallery: https://danielarifriedman.com/art.html
+Per-artwork pages: https://danielarifriedman.com/artworks/
+Flickr archive: https://www.flickr.com/photos/daniel_friedman/
+License: CC BY-NC (each artwork page carries the exact license record)

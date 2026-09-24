@@ -49,6 +49,38 @@ If other work is present, layer the publication-sync changes on top without reve
 
 ## Refresh Public Sources
 
+## Flickr Artwork Sync
+
+The gallery export [`data/artworks.json`](../../data/artworks.json) is refreshed from the
+Flickr REST API by [`code/orchestrators/sync_flickr_artworks.py`](../../code/orchestrators/sync_flickr_artworks.py)
+(`flickr.people.getPublicPhotos` for NSID `43693624@N07`, paginated at 500 per page, with
+per-photo `flickr.photos.getSizes` for the resolution map). Like every network fetch it is a
+deliberate freshness step outside `regenerate_all.py`.
+
+Setup: create a **non-commercial** Flickr API key at
+<https://www.flickr.com/services/apps/create/>, export it as `FLICKR_API_KEY` in the shell,
+and add it as the `FLICKR_API_KEY` repository secret for the scheduled drift check in
+`freshness.yml`. The key is never committed and never written to a repository file.
+
+```bash
+export FLICKR_API_KEY="<your non-commercial key>"
+uv run python3 code/orchestrators/sync_flickr_artworks.py --dry-run   # summary, no write
+uv run python3 code/orchestrators/sync_flickr_artworks.py             # applies data/artworks.json
+```
+
+Modes: default writes the export; `--dry-run` fetches and prints a summary without writing;
+`--check-drift` exits nonzero when the checked-in export differs from live (the CI gate).
+The export is deterministic — records sort by upload date descending, and `generated_at` is
+reused when the body is unchanged — so an unchanged photostream produces a no-op rebuild.
+Descriptions are HTML-unescaped once (the pre-sync snapshot carried double-encoded
+`&quot;` entities). After applying, rebuild dependents in one pass:
+
+```bash
+uv run python3 code/orchestrators/regenerate_all.py --validate
+```
+
+The runbook continues with the bibliographic intake flow below.
+
 Run these when you need the public-source snapshots and GitHub inventory current before a pairing decision or software-catalog review:
 
 ```bash

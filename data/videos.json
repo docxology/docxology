@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T23:24:19Z",
+  "generated_at": "2026-09-24T01:13:25Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -49774,11 +49774,11 @@
           "url": "/works/Friedman2025ComputationalComplexityEnergeticsAnt011.html"
         },
         {
-          "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
-          "citation_key": "Friedman2026EntoLinguisticsLanguageAmbiguity109",
+          "title": "Illegal States, Mostly Unrepresentable",
+          "citation_key": "Friedman2026IllegalStatesMostlyUnrepresentable191",
           "year": 2026,
           "domain": "Entomology",
-          "url": "/works/Friedman2026EntoLinguisticsLanguageAmbiguity109.html"
+          "url": "/works/Friedman2026IllegalStatesMostlyUnrepresentable191.html"
         }
       ]
     },
@@ -82542,13 +82542,6 @@
           "url": "/works/Friedman2022TranscriptMarkSolmsConsciousness142.html"
         },
         {
-          "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology",
-          "citation_key": "Friedman2026EntoLinguisticsLanguageAmbiguity109",
-          "year": 2026,
-          "domain": "Entomology",
-          "url": "/works/Friedman2026EntoLinguisticsLanguageAmbiguity109.html"
-        },
-        {
           "title": "Active Inference & Behavior Engineering for Teams",
           "citation_key": "Friedman2020ActiveInferenceBehaviorEngineering082",
           "year": 2020,
@@ -82561,6 +82554,13 @@
           "year": 2021,
           "domain": "Entomology",
           "url": "/works/Friedman2021ActiveInferantsActiveInference075.html"
+        },
+        {
+          "title": "Cognitive Sovereignty & Active Inference in the State of Exception",
+          "citation_key": "Friedman2023CognitiveSovereigntyActiveInference051",
+          "year": 2023,
+          "domain": "Cognitive Security",
+          "url": "/works/Friedman2023CognitiveSovereigntyActiveInference051.html"
         }
       ]
     },

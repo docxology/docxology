@@ -108,7 +108,11 @@ can never drift apart. Internally it runs, in order:
 `build_domain_pages.py` → `generate_pillar_pages.py` → `regenerate_docs.py --apply` →
 `generate_citation_cff.py --apply` → `export_bibliography.py` → `sync_publications_html.py
 --apply` → `build_work_pages.py` → `build_video_pages.py` (complete `data/videos.json` +
-compact `data/videos-index.json`) → `sync_site_facts.py` → `build_start_here.py` →
+compact `data/videos-index.json`) → `build_artwork_pages.py` (per-artwork
+`artworks/*.html`, the crawlable `artworks/index.html` hub, curated
+`art-collections/*.html`, and `data/artwork-pages-manifest.json`) →
+`sync_art_gallery.py` (art.html SSR gallery floor) → `sync_site_facts.py` →
+`build_start_here.py` →
 `build_paper_pages.py` → `generate_redirect_stubs.py --apply` → `deploy_seo_security.py` →
 `build_exports_page.py` → `build_updates_page.py` → `build_evidence_page.py` →
 `build_reproducibility_ledger.py` → `ensure_agent_navigation.py` →

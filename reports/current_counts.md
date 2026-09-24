@@ -1,6 +1,6 @@
 # Current Counts Report
 
-Generated: `2026-09-18T15:57:06+00:00`
+Generated: `2026-09-24T02:10:55+00:00`
 
 This generated report is the repo-local plaintext target for volatile totals. Hand-authored docs should link here, to the canonical source tables, or to generated JSON rather than repeating these values.
 
@@ -25,23 +25,23 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - software_export: `data/software.json`
 - github_inventory: `data/github-repositories.json`
 - public_source_snapshot: `reports/public_source_snapshot_2026-09-18.json`
-- paired_publications: `reports/paired_publications_2026-09-18.json`
+- paired_publications: `reports/paired_publications_2026-09-24.json`
 - paired_publication_decisions: `data/paired-publication-decisions.json`
 
 ## Counts
 
-- Bibliography works: `215`
-- Paper-folder docs: `198`
+- Bibliography works: `216`
+- Paper-folder docs: `199`
 - Full-text extractions: `190`
 - Papers with image galleries: `139`
 - Total extracted images: `8944`
-- Bibliography docs links: `198`
+- Bibliography docs links: `199`
 
 ### Types
 
 - Books: `5`
 - Courses: `3`
-- Papers: `193`
+- Papers: `194`
 - Playbooks: `2`
 - Presentations: `9`
 - Report: `1`
@@ -53,7 +53,7 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 - Active Inference: `45`
 - Cognitive Security: `37`
 - Art & Synergetics: `16`
-- Computational: `57`
+- Computational: `58`
 - AII Ecosystem: `6`
 - Presentations & Media: `15`
 - Genetics & Biomedical: `15`
@@ -66,9 +66,9 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Generated Exports
 
-- data_works_json: `215`
+- data_works_json: `216`
 - data_software_json: `155`
-- data_publications_ld_main_entity: `215`
+- data_publications_ld_main_entity: `216`
 - data_software_ld_main_entity: `155`
 
 ### GitHub Inventory
@@ -102,14 +102,14 @@ uv run python3 code/orchestrators/build_current_counts.py --check
 
 ### Paired Publications
 
-- github_releases: `247`
-- zenodo_records: `158`
-- pairs: `464`
-- strong_pairs: `52`
-- already_reviewed: `414`
-- needs_review: `0`
-- create_new: `0`
-- update_existing: `50`
+- github_releases: `254`
+- zenodo_records: `162`
+- pairs: `470`
+- strong_pairs: `57`
+- already_reviewed: `401`
+- needs_review: `14`
+- create_new: `4`
+- update_existing: `51`
 
 ### Paired Publication Decisions
 

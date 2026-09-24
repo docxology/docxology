@@ -131,6 +131,15 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("sync-publications-final", "sync_publications_html.py", ("--apply",), ("--check",), "Publication HTML and JSON-LD after paper documents", ("pages/BIBLIOGRAPHY.md", "code/templates/publications.html.tmpl", "data/current-counts.json", "papers/*/README.md", "papers/*/AGENTS.md", "papers/*/SKILL.md", "papers/*/full_text.md", "papers/*/images/*")),
     GenerationStep("work-pages", "build_work_pages.py", (), ("--check",), "Per-work landing pages", ("data/works.json", "data/work-enrichment.json", "papers/*/README.md", "papers/*/SKILL.md")),
     GenerationStep("video-pages", "build_video_pages.py", (), ("--check",), "Video landing pages and exports", ("data/works.json", "data/work-enrichment.json", "data/video-transcripts/*.txt", "code/data/youtube_*.json")),
+    # Artwork pages consume the (freshness-updated) Flickr export and the
+    # curated ART_COLLECTIONS.md table; they run before the SEO/security
+    # normalizer and the accessibility/asset audits so the emitted pages are
+    # normalized and audited in the same pass.
+    GenerationStep("artwork-pages", "build_artwork_pages.py", (), ("--check",), "Per-artwork landing pages and curated collections", ("data/artworks.json", "pages/ART_COLLECTIONS.md")),
+    # DERIVED (always-run): in-place patcher — rewrites the marker-delimited
+    # SSR tile block inside hand-authored art.html (its read scope is the
+    # artwork export, its write scope is exactly the marker block).
+    GenerationStep("art-gallery-sync", "sync_art_gallery.py", (), ("--check",), "art.html SSR gallery floor"),
     # DERIVED (always-run): in-place patcher — rewrites volatile counts,
     # dates, and latest-report pointers inside its own seven target surfaces
     # (index/publications/discovery/art/videos pages, DISCOVERY.md, llms.txt),
@@ -179,15 +188,13 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     GenerationStep("github-readme", "build_github_readme.py", (), ("--check",), "GitHub-rendered README mirror", ("README.md",)),
     # Renders the site index from the dataset exports, per-paper extraction
     # presence/counts, and latest-report URL resolution. Outputs
-    # search-index.json plus the core/content split companions are release
+    GenerationStep("search-index", "build_search_index.py", (), ("--check",), "Site search index", ("data/works.json", "data/work-enrichment.json", "data/artworks.json", "data/software.json", "data/github-repositories.json", "data/videos.json", "data/people.json", "data/organizations.json", "data/claims.json", "data/resume.json", "papers/*/full_text.md", "papers/*/images/*", "reports/reconciliation_*.md", "reports/public_source_inventory_*.json", "reports/accessibility_static_*.json", "reports/external_links_[0-9]*.json", "reports/external_links_triage_*.md", "reports/asset_size_*.json", "reports/live_site_verification_*.json", "reports/visual-qa/*/manifest.json", "reports/browser-smoke/*/manifest.json")),
     # PAYLOAD: release_controls.is_control_path is False for all of them.
     # Pointer families carry the same git-trackedness boundary noted on the
     # catalog step.
-    GenerationStep("search-index", "build_search_index.py", (), ("--check",), "Site search index", ("data/works.json", "data/work-enrichment.json", "data/software.json", "data/github-repositories.json", "data/videos.json", "data/people.json", "data/organizations.json", "data/claims.json", "data/resume.json", "papers/*/full_text.md", "papers/*/images/*", "reports/reconciliation_*.md", "reports/public_source_inventory_*.json", "reports/accessibility_static_*.json", "reports/external_links_[0-9]*.json", "reports/external_links_triage_*.md", "reports/asset_size_*.json", "reports/live_site_verification_*.json", "reports/visual-qa/*/manifest.json", "reports/browser-smoke/*/manifest.json")),
     GenerationStep("feed", "generate_feed.py", (), ("--check",), "RSS feed", ("data/works.json", "data/site-updates.json")),
     GenerationStep("domain-feeds", "build_domain_feeds.py", (), ("--check",), "Per-domain RSS feeds", ("data/works.json", "data/videos.json")),
     # DERIVED (always-run): <lastmod> derives from git commit dates, which no
-    # content fingerprint captures — and --check tolerates lastmod-only
     # drift, so a skip would silently strand the runbook's post-commit
     # sitemap re-render.
     GenerationStep("sitemap", "build_sitemap.py", (), ("--check",), "Sitemap"),
@@ -240,6 +247,7 @@ EXCLUDED_OPERATIONS: tuple[ExcludedOperation, ...] = (
     ExcludedOperation("attest_release.py", "post-deploy", "Release attestation is only valid after deployment and live verification."),
     ExcludedOperation("build_work_pages.py --prune-owned", "destructive/manual-review", "Only an explicit manual invocation may remove renderer-owned orphan work pages; hand-authored pages are preserved."),
     ExcludedOperation("prune_old_reports.py", "destructive/manual-review", "Deletion requires reviewed provenance records in data/report-retention.json."),
+    ExcludedOperation("sync_flickr_artworks.py", "network/freshness", "Flickr artwork export refresh is a deliberate network freshness step (docs/operations/publication-sync.md); rebuilds consume its output."),
 )
 
 

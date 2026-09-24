@@ -552,7 +552,7 @@
             "@type": "SoftwareSourceCode",
             "@id": "https://github.com/docxology/ento_linguistics#software",
             "name": "ento_linguistics",
-            "description": "Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring",
+            "description": "Ento-Linguistics corpus pipeline — term extraction, terminology networks, semantic entropy, CACE scoring ·  · Zenodo",
             "codeRepository": "https://github.com/docxology/ento_linguistics",
             "author": {
                 "@type": "Person",
@@ -561,7 +561,8 @@
             "programmingLanguage": "Python",
             "dateCreated": "2026-04-14T17:24:32Z",
             "dateModified": "2026-09-17T19:34:05Z",
-            "keywords": "ants, arxiv, discourse-analysis, entomology, linguistics, networkx, philosophy-of-science, pubmed, python, text-mining"
+            "keywords": "ants, arxiv, discourse-analysis, entomology, linguistics, networkx, philosophy-of-science, pubmed, python, text-mining",
+            "sameAs": "https://doi.org/10.5281/zenodo.19574117"
         },
         {
             "@type": "SoftwareSourceCode",

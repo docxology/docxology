@@ -24,6 +24,12 @@ INDEX_PRIORITY_STATIC: list[tuple[str, str, str]] = [
     ("domain-computational.html", "monthly", "0.7"),
     ("domain-biomedicine.html", "monthly", "0.7"),
     ("art.html", "weekly", "0.9"),
+    # NEW (2026-09-24): the artwork pages are the crawlable art surface; the
+    # individual artworks/*.html URLs are appended data-driven by
+    # build_sitemap.py (thin noindex pages excluded), as are the curated
+    # art-collections/*.html hubs. The hub entry lives here because it is one
+    # stable static URL.
+    ("artworks/", "weekly", "0.8"),
     # NEW-3 (2026-08-28): videos/ is the static machine-readable index; the
     # interactive timeline (videos.html) is the single indexed surface. The
     # index stays crawlable + linked for agents and no-JS visitors but is not

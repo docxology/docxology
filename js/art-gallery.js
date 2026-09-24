@@ -113,7 +113,7 @@
     // Hydrate, don't replace: reuse SSR tiles (art-thumb.ssr) whose title and
     // ordering already match the filtered list. Rebuilding them would drop
     // their server-rendered _z src and size attributes.
-    const existing = Array.from(grid.querySelectorAll('button.art-card'));
+    const existing = Array.from(grid.querySelectorAll('a.art-card, button.art-card'));
     const ssrByTitle = new Map(existing
       .filter(card => card.querySelector('img.art-thumb.ssr'))
       .map(card => [card.querySelector('.art-title').textContent, card]));
@@ -124,12 +124,12 @@
       const reused = ssrByTitle.get(art.title || 'Untitled artwork');
       if (reused) {
         grid.appendChild(reused);
-        reused.addEventListener('click', () => openLightbox(i, reused));
+        reused.addEventListener('click', (e) => tileClick(e, i, reused));
         return;
       }
-      const card = document.createElement('button');
-      card.type = 'button';
+      const card = document.createElement('a');
       card.className = 'art-card';
+      card.href = art.page || ('artworks/' + art.id + '.html');
       card.setAttribute('aria-haspopup', 'dialog');
       card.setAttribute('aria-label', `Open artwork: ${art.title || 'Untitled artwork'}`);
       card.innerHTML =
@@ -139,12 +139,21 @@
         `<div class="art-meta">${art.date ? art.date.slice(0, 10) : ''}</div>` +
         (art.views ? `<div class="art-views">${parseInt(art.views).toLocaleString()} views</div>` : '') +
         `</div>`;
-      card.addEventListener('click', () => openLightbox(i, card));
+      card.addEventListener('click', (e) => tileClick(e, i, card));
       grid.appendChild(card);
       const image = card.querySelector('.art-thumb');
       if (imgObs) imgObs.observe(image);
       else loadImage(image);
     });
+  }
+
+  // Progressive enhancement: plain middle/ctrl/cmd/shift clicks navigate to
+  // the artwork page; a plain click opens the lightbox instead.
+  function tileClick(event, index, trigger) {
+    if (event.defaultPrevented || event.button !== 0 ||
+      event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    openLightbox(index, trigger);
   }
 
   // ── FILTER + SORT ──

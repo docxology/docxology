@@ -10,8 +10,8 @@
     "project_version": "0.1.0",
     "orchestrator_sha256": {
       "code/orchestrators/regenerate_all.py": "9195c21640d9d51b133247d82d341dc06bce71ab68ae604475d20c9001837f48",
-      "code/orchestrators/build_pages_artifact.py": "bda3b5589e6d60ec362db07fc5e26d2302250d01587ab3f2a7d0ce5160eeba29",
-      "code/orchestrators/build_agent_index.py": "40e08a2a952a1f5d531c9b7f8c6d4a695d3e44d71dd174c8312c9001f8952df4",
+      "code/orchestrators/build_pages_artifact.py": "fe1f82107e23cd52b35c45cc4e2a47c1197c9d87ffb96c5917a84216841fad80",
+      "code/orchestrators/build_agent_index.py": "8596212a42d66895cc6cbfb73f595b5b81ca84839f4e63e4bff8c13415b4a678",
       "code/orchestrators/build_coverage_exceptions.py": "92a868e31c2ed82eb8d7fc9cbe648aecb81d989a055670bcb3741eaa3a4da888",
       "code/orchestrators/classify_repositories.py": "1923005202420c1d121d5b237a5af5e0831d2becc3caf36dd1b6f8f0b4fae2b6",
       "code/orchestrators/audit_assets.py": "781c40f18fb5a72bf9c908e83075c28d1fab5722211776f858be950f93e4ecb6",
@@ -20,23 +20,23 @@
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "eb0439429e3bc97cb6a404e1a422f42eef277f10f2d0d6be3fa02a71018747fc",
-    "pages/SOFTWARE.md": "65d5af7bc8bd4b35f1abf519899b3f6f39e4efe90aa4843202a3e41b7e2e8612",
+    "pages/BIBLIOGRAPHY.md": "b01331ea280ad632027657928c45299c66680e47cdc9e32736790cb954ba59b1",
+    "pages/SOFTWARE.md": "307ed1c164e66be88d01b044a0aefdabc91f4c73334fc8e00e4ca9cf2bd28255",
     "resume/source.json": "209c5b0b1df978813d6ad7c08e2b7c0e2cbc1f7445a4cbdf2c422165983b2f6a",
-    "data/current-counts.json": "884dd19cee829a5543f0d43f8d05a0cb99629b1337c2f419c85a06c437f76aa6",
-    "data/coverage-exceptions.json": "94c6a7453fcb46876e385b6c531fdd1be598e3356e889ac79a49a032f60c7be4",
+    "data/current-counts.json": "6a4610474f02d5deaca57c675304b638672212797fecbee988b02ed0836d9b26",
+    "data/coverage-exceptions.json": "cc391268043fb11e5a70869210f87719c8892ef3cd8ccbfc2dffc8831a455fcc",
     "data/repository-classification.json": "8148ae293653188550d03d32e1fe4c0ee07ec4fb1305f873d47bc878c143c528",
-    "data/agent-index.json": "e251897d5ea111b8177608092ca2ca9606b48bc216df53024a532ddb4b3c838f",
-    "data/generated-manifest.json": "1fca897f410af338b310dd5d82ff73fa875510bb73ad029d984b4e2e68f47824",
-    "data/pages-artifact-manifest.json": "f005393cf3f4b91fc3a02434795dbcce0a0487a34a9f778e3465d19bfacc5361"
+    "data/agent-index.json": "c1cae956371cf6ed8e4a50e905c4c81b3b183cbbdb743b1850af7caaa6a2f06d",
+    "data/generated-manifest.json": "096673e51088ca05d5813890d3a8496979149e8a49f29d9babeae9fd00d04cf2",
+    "data/pages-artifact-manifest.json": "22ca1ab2e67452bc9fb3ec1af9a92f4478012b63cedfe9f19de6626fe8034d08"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
     "source_commit_at_generation": "9341c79f0eb0846c785d9ecccada14ccc9df6083",
-    "artifact_file_count": 4874,
-    "artifact_bytes": 912205005,
+    "artifact_file_count": 5840,
+    "artifact_bytes": 927279676,
     "omitted_paper_image_count": 8944,
-    "omitted_superseded_report_count": 472
+    "omitted_superseded_report_count": 478
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
@@ -49,14 +49,14 @@
     "policy": "No local filesystem paths, secret-like tokens, or unsafe URL schemes in public CV/source manifests."
   },
   "counts": {
-    "bibliography_docs_links": 198,
-    "bibliography_works": 215,
+    "bibliography_docs_links": 199,
+    "bibliography_works": 216,
     "domains": {
       "AII Ecosystem": 6,
       "Active Inference": 45,
       "Art & Synergetics": 16,
       "Cognitive Security": 37,
-      "Computational": 57,
+      "Computational": 58,
       "Entomology": 23,
       "Genetics & Biomedical": 15,
       "Presentations & Media": 15
@@ -64,10 +64,10 @@
     "extracted_images": 8944,
     "full_text_papers": 190,
     "generated_exports": {
-      "data_publications_ld_main_entity": 215,
+      "data_publications_ld_main_entity": 216,
       "data_software_json": 155,
       "data_software_ld_main_entity": 155,
-      "data_works_json": 215
+      "data_works_json": 216
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 43,
@@ -93,16 +93,16 @@
       "raw_candidates": 510
     },
     "paired_publications": {
-      "already_reviewed": 414,
-      "create_new": 0,
-      "github_releases": 247,
-      "needs_review": 0,
-      "pairs": 464,
-      "strong_pairs": 52,
-      "update_existing": 50,
-      "zenodo_records": 158
+      "already_reviewed": 401,
+      "create_new": 4,
+      "github_releases": 254,
+      "needs_review": 14,
+      "pairs": 470,
+      "strong_pairs": 57,
+      "update_existing": 51,
+      "zenodo_records": 162
     },
-    "paper_folder_docs": 198,
+    "paper_folder_docs": 199,
     "papers_with_images": 139,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
@@ -122,7 +122,7 @@
     "types": {
       "Books": 5,
       "Courses": 3,
-      "Papers": 193,
+      "Papers": 194,
       "Playbooks": 2,
       "Presentations": 9,
       "Report": 1,
