@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-24T16:11:10Z",
-  "source_commit_at_generation": "9341c79f0eb0846c785d9ecccada14ccc9df6083",
+  "generated_at": "2026-09-24T16:20:41Z",
+  "source_commit_at_generation": "9daa2f06b99373cb3f3e9584f052b628beb8710a",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 926247653,
+    "source_bytes": 926828647,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5840,
-    "artifact_bytes": 927279676
+    "artifact_file_count": 5847,
+    "artifact_bytes": 927861871
   },
   "included_files": [
     {
@@ -42,6 +42,21 @@
       "path": ".docxology/README.md",
       "bytes": 589,
       "sha256": "7318b68cbe1fbe2afcd8c8ea4ed9159b922e0c7261d7f23149b47d6e4c338fae"
+    },
+    {
+      "path": ".docxology/gate/config.json",
+      "bytes": 1303,
+      "sha256": "770461ef3bc2cf3e2ce9ee17ef8f6099408922d4d1de613848dceedfdb6936c5"
+    },
+    {
+      "path": ".docxology/gate/gate_report.json",
+      "bytes": 2576,
+      "sha256": "82775cf01007b5f6fab2af09688575fa3dc58edd66c8914d7a341dd8ad2932a3"
+    },
+    {
+      "path": ".docxology/gate/history/adhoc-2026-09-17-04-40-17Z-asof.json",
+      "bytes": 2576,
+      "sha256": "82775cf01007b5f6fab2af09688575fa3dc58edd66c8914d7a341dd8ad2932a3"
     },
     {
       "path": ".docxology/manifest.toml",
@@ -122,6 +137,11 @@
       "path": "CNAME",
       "bytes": 21,
       "sha256": "14423d65dc0580ff2f79c3f636b53658a2af4478374a8f6dee128d5e7d3ecea6"
+    },
+    {
+      "path": "HERDR.md",
+      "bytes": 352,
+      "sha256": "68cb08cc5768e253ec5b604b2cbc8d278e0bde89fca9a25c4e7478e3fa139541"
     },
     {
       "path": "README.md",
@@ -10101,7 +10121,7 @@
     {
       "path": "catalog.html",
       "bytes": 50260,
-      "sha256": "f0c01b95d71f29b468db366f2fec6726a2c225339b0d6f3c1534b0a36f126b2e"
+      "sha256": "2da4ebc021af4be9cab5103ea282d79c32ae8cc353cec8a6af3132fced5186c0"
     },
     {
       "path": "cite-verify.html",
@@ -11371,7 +11391,7 @@
     {
       "path": "data/catalog.json",
       "bytes": 31608,
-      "sha256": "22886297508618fac9753206a6cd18a8f478e6de6a85882054629faf95933db5"
+      "sha256": "73dfe9d359737a5e9ba280ee1e41053792e49f146ab461978ebb324598e46a7e"
     },
     {
       "path": "data/claims.json",
@@ -11556,7 +11576,7 @@
     {
       "path": "discovery.html",
       "bytes": 33211,
-      "sha256": "58bb4a01da3a0423b5301dd442f6ef7b46c067ab66cee1c1d131ec50f212455a"
+      "sha256": "530b04022c62acad550d03a2b6c9efc6a8ee0cca0f5380149de2d32b4240df8d"
     },
     {
       "path": "docs/AGENTS.md",
@@ -12071,7 +12091,7 @@
     {
       "path": "llms.txt",
       "bytes": 11002,
-      "sha256": "58dddb767fca9e048845b578a3334a398d892ff39a704abbc954ea9bea1ae544"
+      "sha256": "8d7cf227498dc411f1d1a837107b7f71014ad42e6d27cd80aea24acb1a8871b6"
     },
     {
       "path": "manifest.json",
@@ -12226,7 +12246,7 @@
     {
       "path": "pages/DISCOVERY.md",
       "bytes": 15409,
-      "sha256": "cdd82fe49d5f206fe2f5f9ba713482b095ebe3717fa7b4bea3c842f0b395190d"
+      "sha256": "82aaebe0b1ea1b3bb6126dc30fd81de3188b95d132aedbf6f0da7b5a063a3809"
     },
     {
       "path": "pages/DOMAINS.md",
@@ -22094,6 +22114,11 @@
       "sha256": "c0850cbf8104beb3276eb67f82441816e848b5dc9f199481e00ea65b9ded3043"
     },
     {
+      "path": "reports/external_links_2026-09-24.json",
+      "bytes": 504445,
+      "sha256": "b2e00c92451fea5f1469f9a601087d150f97ec4102a349bd65e46dfbcd193b3f"
+    },
+    {
       "path": "reports/external_links_triage_2026-09-07.md",
       "bytes": 10743,
       "sha256": "da966b4e74ed6bb76e47593b0b959dbb88faf1a8447c7f8a4a9b789150fe7ee8"
@@ -22107,6 +22132,16 @@
       "path": "reports/external_links_triage_2026-09-18.md",
       "bytes": 7250,
       "sha256": "be5fdda2700721832b827045235129b55f4a3f2843fe766471cdc256986064e3"
+    },
+    {
+      "path": "reports/external_links_triage_2026-09-24.json",
+      "bytes": 58999,
+      "sha256": "9ddc18a98ae6f4e52185118b6d0fd2b950e5ee469bd09b959c55616ef3960fea"
+    },
+    {
+      "path": "reports/external_links_triage_2026-09-24.md",
+      "bytes": 10743,
+      "sha256": "5090748df90a5ee30a5adc843c5354c2a8422bd8cc23b54d76b93b0918930400"
     },
     {
       "path": "reports/gsc_preflight_2026-09-18.json",
@@ -22366,22 +22401,22 @@
     {
       "path": "search-index-content-video.json",
       "bytes": 980702,
-      "sha256": "bd45393034bc383fedf177e7debba8855fac4a466a96a5728ca877d534b0837d"
+      "sha256": "60bcfc1d540fe5e473b93b41dcbbd4272c06d503b3afea40c1d066ed62630f2b"
     },
     {
       "path": "search-index-content-work.json",
       "bytes": 379291,
-      "sha256": "cc495f287596ba5fa9027f48c949b714be69256c4e674f09bb07c65d364bc461"
+      "sha256": "a07a5c085bf73ef1212dc55b951d69437525dd4788ba3b6c27ed9e6e59afd65c"
     },
     {
       "path": "search-index-core.json",
       "bytes": 1275086,
-      "sha256": "c641c0b9e83deb19b07f0c4b584c5a1d500e6c5486ba0a2fbaecc4f0d260bd1f"
+      "sha256": "55933dc4a4898e6912b0e7e32a50c8f05f8de406cdf4060519c6a04dfc632c7a"
     },
     {
       "path": "search-index.json",
       "bytes": 2482211,
-      "sha256": "4fbf37993008bb541325f8bf04b1ac1fdc3916cf935fe60c7bbd4f3ba01b7435"
+      "sha256": "d65a390dbd87692ab1bed8cc6e77159d047732b7fa5433321b82d70eb0c3a87c"
     },
     {
       "path": "search.html",
