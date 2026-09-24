@@ -1,8 +1,0 @@
-# Cross-repo / Hum Lab project links for docxology.
-# Free-form and unparsed by the tool — a human-readable record of this
-# repo's relationships to other docxology or Hum Lab projects. (The
-# machine-readable Hum Lab link lives in manifest.toml's
-# `hum_lab_project` field.)
-#
-# Example shape (uncomment and edit):
-# related = ["docxology/other-repo"]

@@ -23,3 +23,7 @@ _site/
 
 # Skip-on-unchanged fingerprints for regenerate_all (local build bookkeeping, not a site artifact).
 /reports/regeneration-state.json
+
+# Session-local tooling state (never deploy, never commit)
+/.docxology/
+/HERDR.md
