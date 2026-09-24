@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Software",
-    "description": "116 original repositories and 39 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
+    "description": "119 original repositories and 39 catalogued Active Inference Institute contributions spanning Active Inference, cognitive security, computational biology, and research tools.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -22,7 +22,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2025-08-18T16:48:46Z",
-            "dateModified": "2026-09-17T02:53:04Z",
+            "dateModified": "2026-09-24T19:22:14Z",
             "keywords": "agents-md, ai-agents, claude-code, computational-research, cursor, github-template, latex, multi-project, ollama, pandoc, pdf-generation, project-template, provenance, pytest, python, reproducible-research, research-template, steganography, uv, zenodo",
             "sameAs": "https://doi.org/10.5281/zenodo.20584820"
         },
@@ -55,7 +55,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/Apache-2.0.html",
             "dateCreated": "2022-01-08T18:33:36Z",
-            "dateModified": "2026-09-17T20:51:26Z",
+            "dateModified": "2026-09-22T20:14:38Z",
             "keywords": "active-inference, ant-behavior, ants, bioinformatics, computational-biology, data-visualization, ecology, entomology, epigenomics, eqtl, genomics, gwas, hymenoptera, multi-agent-systems, multi-omics, proteomics, python, rna-seq, single-cell, transcriptomics"
         },
         {
@@ -71,7 +71,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2025-05-16T17:45:28Z",
-            "dateModified": "2026-09-17T04:12:09Z",
+            "dateModified": "2026-09-24T02:24:43Z",
             "keywords": "agents, ai-agents, automation, claude, code-analysis, coding-agent, developer-tools, llm, mcp, mcp-server, model-context-protocol, multi-agent, orchestration, personal-ai, python, rag, security, static-analysis, uv, zero-mock",
             "sameAs": "https://doi.org/10.5281/zenodo.21750800"
         },
@@ -335,7 +335,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2026-05-24T23:28:57Z",
-            "dateModified": "2026-09-07T23:57:45Z",
+            "dateModified": "2026-09-19T12:02:54Z",
             "keywords": "agentic-ai, ai-alignment, ai-governance, ai-safety, cognitive-security, curriculum, intelligence-analysis, mermaid, open-access, open-education, python, textbook",
             "sameAs": "https://doi.org/10.5281/zenodo.20732274"
         },
@@ -384,7 +384,7 @@
             "programmingLanguage": "Rust",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-03-06T17:51:21Z",
-            "dateModified": "2026-09-07T22:42:57Z",
+            "dateModified": "2026-09-22T10:13:08Z",
             "keywords": "audio, blake3, content-authenticity, cryptography, ed25519, gstreamer, media-verification, open-source, provenance, python, qr-code, rust, security, steganography, tamper-detection, video, watermarking"
         },
         {
@@ -560,7 +560,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-04-14T17:24:32Z",
-            "dateModified": "2026-09-17T19:34:05Z",
+            "dateModified": "2026-09-22T17:30:44Z",
             "keywords": "ants, arxiv, discourse-analysis, entomology, linguistics, networkx, philosophy-of-science, pubmed, python, text-mining",
             "sameAs": "https://doi.org/10.5281/zenodo.19574117"
         },
@@ -993,7 +993,7 @@
             },
             "programmingLanguage": "TeX",
             "dateCreated": "2026-07-02T16:48:35Z",
-            "dateModified": "2026-09-07T01:14:08Z",
+            "dateModified": "2026-09-24T19:38:25Z",
             "keywords": "entomology, forensic-entomology, insects, law, legal-tech, python, reference, regulation, yaml",
             "sameAs": "https://doi.org/10.5281/zenodo.21137276"
         },
@@ -1027,7 +1027,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-11T15:44:33Z",
-            "dateModified": "2026-09-07T05:11:38Z",
+            "dateModified": "2026-09-21T19:45:09Z",
             "keywords": "aes-gcm, archive, cryptography, data-standards, file-format, provenance, python, reproducible-research, research-data, zenodo",
             "sameAs": "https://doi.org/10.5281/zenodo.20396328"
         },
@@ -1059,7 +1059,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-06-30T22:05:14Z",
-            "dateModified": "2026-09-07T08:46:21Z",
+            "dateModified": "2026-09-22T01:54:36Z",
             "keywords": "algebraic-geometry, classifiers, evaluation, llm-evaluation, ollama, python, sortition, sympy, unsupervised-evaluation",
             "sameAs": "https://doi.org/10.5281/zenodo.21083779"
         },
@@ -1515,7 +1515,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-28T11:45:46Z",
-            "dateModified": "2026-09-06T23:18:47Z",
+            "dateModified": "2026-09-22T01:53:02Z",
             "keywords": "audit, cli, governance, python, registry, research-integrity, validation",
             "sameAs": "https://doi.org/10.5281/zenodo.21754243"
         },
@@ -1531,7 +1531,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-28T11:45:37Z",
-            "dateModified": "2026-09-06T23:17:54Z",
+            "dateModified": "2026-09-22T01:53:15Z",
             "keywords": "audit, best-practices, evaluation, governance, ledger, python, research-integrity",
             "sameAs": "https://doi.org/10.5281/zenodo.21754235"
         },
@@ -1563,7 +1563,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-28T11:45:40Z",
-            "dateModified": "2026-09-06T23:18:11Z",
+            "dateModified": "2026-09-22T01:52:18Z",
             "keywords": "aspirations, audit, governance, ledger, python, research-integrity, values",
             "sameAs": "https://doi.org/10.5281/zenodo.21754237"
         },
@@ -1579,7 +1579,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-07-28T11:45:34Z",
-            "dateModified": "2026-09-06T18:18:40Z",
+            "dateModified": "2026-09-22T15:52:23Z",
             "keywords": "ai-safety, dual-use, ethics, governance, python, research-integrity, responsible-ai, warrant-canary",
             "sameAs": "https://doi.org/10.5281/zenodo.21754239"
         },
@@ -1595,9 +1595,55 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2026-08-02T04:26:38Z",
-            "dateModified": "2026-09-06T23:19:26Z",
+            "dateModified": "2026-09-18T16:15:18Z",
             "keywords": "accountability, append-only, audit, cli, governance, provenance, python, research-integrity",
             "sameAs": "https://doi.org/10.5281/zenodo.21754245"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/blue_line#software",
+            "name": "blue_line",
+            "description": "A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/blue_line",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "dateCreated": "2026-09-05T19:06:02Z",
+            "dateModified": "2026-09-18T16:14:58Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.22833489"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/green_line#software",
+            "name": "green_line",
+            "description": "A capacity-under-development instrument: the green line of the docxology line set ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/green_line",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "dateCreated": "2026-09-05T19:07:53Z",
+            "dateModified": "2026-09-18T16:15:00Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.22833491"
+        },
+        {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://github.com/docxology/silver_line#software",
+            "name": "silver_line",
+            "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse ·  · Zenodo",
+            "codeRepository": "https://github.com/docxology/silver_line",
+            "author": {
+                "@type": "Person",
+                "name": "Daniel Ari Friedman"
+            },
+            "programmingLanguage": "Python",
+            "license": "https://spdx.org/licenses/MIT.html",
+            "dateCreated": "2026-09-05T19:02:53Z",
+            "dateModified": "2026-09-18T16:14:50Z",
+            "sameAs": "https://doi.org/10.5281/zenodo.22833485"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1847,7 +1893,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-09-17T17:13:42Z",
-            "dateModified": "2026-09-17T21:44:40Z",
+            "dateModified": "2026-09-23T16:50:59Z",
             "sameAs": "https://doi.org/10.5281/zenodo.22816187"
         },
         {
@@ -1862,7 +1908,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2022-11-07T14:26:39Z",
-            "dateModified": "2026-08-21T19:42:26Z",
+            "dateModified": "2026-09-24T17:03:54Z",
             "keywords": "active-inference, archive, dataset, open-data, speaker-diarization, video-transcripts, youtube"
         },
         {
@@ -1891,10 +1937,7 @@
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
             },
-            "programmingLanguage": "Python",
-            "dateCreated": "2024-04-04T19:21:29Z",
-            "dateModified": "2026-08-03T00:34:06Z",
-            "keywords": "active-inference, ant-colony-optimization, free-energy-principle, multi-agent-systems, python, swarm-intelligence, variational-inference"
+            "programmingLanguage": "Python"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -1923,9 +1966,6 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
-            "dateCreated": "2023-04-02T19:45:34Z",
-            "dateModified": "2026-09-17T22:10:35Z",
-            "keywords": "active, active-inference, active-inference-notation, inference",
             "sameAs": "https://doi.org/10.5281/zenodo.19600217"
         },
         {
@@ -1985,10 +2025,6 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "HTML",
-            "license": "https://spdx.org/licenses/CC0-1.0.html",
-            "dateCreated": "2022-11-07T14:21:08Z",
-            "dateModified": "2026-09-01T03:09:58Z",
-            "keywords": "python, rag, transcription, video-processing, whisper, youtube",
             "sameAs": "https://doi.org/10.5281/zenodo.18686966"
         },
         {
@@ -2032,10 +2068,7 @@
                 "@type": "Person",
                 "name": "Daniel Ari Friedman"
             },
-            "programmingLanguage": "HTML",
-            "dateCreated": "2025-05-13T14:17:56Z",
-            "dateModified": "2026-09-17T21:08:24Z",
-            "keywords": "active-inference, agent-workflows, bayesian-inference, domain-modeling, geospatial, h3, monorepo, python, reproducible-research, spatial-analysis, uv"
+            "programmingLanguage": "HTML"
         },
         {
             "@type": "SoftwareSourceCode",
@@ -2079,7 +2112,7 @@
             },
             "programmingLanguage": "HTML",
             "dateCreated": "2025-03-14T16:00:58Z",
-            "dateModified": "2026-08-03T00:23:05Z",
+            "dateModified": "2026-09-22T19:14:48Z",
             "keywords": "knowledge-graph, llms, react, research-tools, typescript"
         },
         {
@@ -2125,7 +2158,7 @@
             },
             "programmingLanguage": "Python",
             "dateCreated": "2024-12-15T22:23:59Z",
-            "dateModified": "2026-09-01T03:10:02Z",
+            "dateModified": "2026-09-22T19:14:51Z",
             "keywords": "active-inference, curriculum, education, free-energy-principle, python"
         },
         {
@@ -2169,9 +2202,6 @@
                 "name": "Daniel Ari Friedman"
             },
             "programmingLanguage": "Python",
-            "dateCreated": "2026-04-14T13:33:35Z",
-            "dateModified": "2026-09-17T21:55:00Z",
-            "keywords": "active-inference, bayesian-mechanics, formal-verification, free-energy-principle, information-geometry, lean4, theorem-proving",
             "sameAs": "https://doi.org/10.5281/zenodo.19699233"
         },
         {
@@ -2218,7 +2248,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-05-27T21:43:07Z",
-            "dateModified": "2026-09-07T13:00:44Z",
+            "dateModified": "2026-09-22T19:14:35Z",
             "keywords": "active-inference, formal-verification, free-energy-principle, lean4, pymdp, variational-inference",
             "sameAs": "https://doi.org/10.5281/zenodo.20418904"
         },
@@ -2296,7 +2326,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-06-15T15:28:56Z",
-            "dateModified": "2026-09-10T20:17:28Z",
+            "dateModified": "2026-09-22T19:15:24Z",
             "keywords": "active-inference, code-analysis, free-energy-principle, generative-model, gnn, python, static-analysis",
             "sameAs": "https://doi.org/10.5281/zenodo.20705350"
         },
@@ -2406,7 +2436,7 @@
             "programmingLanguage": "Python",
             "license": "https://spdx.org/licenses/MIT.html",
             "dateCreated": "2026-08-09T19:00:08Z",
-            "dateModified": "2026-09-13T16:01:39Z",
+            "dateModified": "2026-09-20T16:52:46Z",
             "keywords": "active-inference, bayesian-inference, federated-learning, free-energy-principle, python, reproducible-research, variational-inference",
             "sameAs": "https://doi.org/10.5281/zenodo.21864003"
         },

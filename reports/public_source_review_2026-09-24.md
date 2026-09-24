@@ -2,14 +2,14 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `7a4e3b0635d3e68ab0b52be2dfd325120ea9375f`
+Source commit: `fcf7a748a3498a37fb46430691c0cfe11cd8db22`
 
 ## Disposition summary
 
 | Status | Items |
 |---|---:|
 | Applied | 274 |
-| Deferred | 75 |
+| Deferred | 82 |
 | Rejected | 317 |
 
 | Category | Applied | Deferred | Rejected |
@@ -17,14 +17,14 @@ Source commit: `7a4e3b0635d3e68ab0b52be2dfd325120ea9375f`
 | `ambiguous_doi_change` | 64 | 0 | 0 |
 | `biographical_claim_change` | 8 | 2 | 0 |
 | `public_source_observation` | 0 | 14 | 0 |
-| `repository_classification` | 103 | 4 | 0 |
+| `repository_classification` | 103 | 11 | 0 |
 | `scholar_metric_change` | 1 | 0 | 0 |
 | `zenodo_candidate` | 98 | 55 | 317 |
 
 ## Evidence inputs
 
 - `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`1d01574cb4fb9c626202fd7572f637da37c4602ce38c2b79bd0c2390c057c60f`)
-- `claims_ledger`: `data/claims.json` (`6a99d6be2171f78cfe97a7331bfc3a580d46e498e04869c49b559a6816ab6cd0`)
+- `claims_ledger`: `data/claims.json` (`b7bef3d94eb20b69faadadfbd0c41f853b79c7a0d09d460b6aa3efbe5f624799`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
 - `paired_publication_decisions`: `data/paired-publication-decisions.json` (`0345d87f76d48555deb1be99f7c90f474ac136e14728101abfd3ad90b622a02e`)
 - `paired_publications`: `reports/paired_publications_2026-09-24.json` (`8182a47c491a9e2a850d6bae801d3f27ae52388a544f103a87c8e040f13c3fc0`)
@@ -32,7 +32,7 @@ Source commit: `7a4e3b0635d3e68ab0b52be2dfd325120ea9375f`
 - `public_source_inventory`: `reports/public_source_inventory_2026-09-24.json` (`ad47ece1be15f93d235e8f7d067eb9fb48f7a4b61433b46a91a1505fc13e5bff`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`cff826363c7ca0e66bf583ee039a27cf0bfebc05ef57fb3222a8d91f50f73714`)
 - `public_source_snapshot`: `reports/public_source_snapshot_2026-09-24.json` (`f6508bc834711c23aa4488c7362dc8e2e2dfe1b1156a41817674befcc92834cb`)
-- `repository_classification`: `data/repository-classification.json` (`8148ae293653188550d03d32e1fe4c0ee07ec4fb1305f873d47bc878c143c528`)
+- `repository_classification`: `data/repository-classification.json` (`93a0601ab45a3e5045709ae1aee449e369b42e0b6c11c22991648adf82b59aa5`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2`)
 - `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5`)
 
@@ -54,10 +54,17 @@ Source commit: `7a4e3b0635d3e68ab0b52be2dfd325120ea9375f`
 - **`public_source_observation` — public-source-observation:Zenodo exact-name creator records**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`public_source_observation` — public-source-observation:Zenodo record 18686966**: A public-source observation changed since the prior snapshot. Review its meaning before changing any curated claim or derivative.
 - **`public_source_observation` — public-source-observation:Zenodo record 19600217**: A public-source observation changed since the prior snapshot. Review its meaning before changing any curated claim or derivative.
+- **`repository_classification` — repository:ActiveInferenceInstitute/Active_InferAnts**: The repository remains outside the curated catalog pending a human classification decision.
+- **`repository_classification` — repository:ActiveInferenceInstitute/GEO_INFER**: The repository remains outside the curated catalog pending a human classification decision.
+- **`repository_classification` — repository:ActiveInferenceInstitute/Generalized_Notation_Notation**: The repository remains outside the curated catalog pending a human classification decision.
+- **`repository_classification` — repository:ActiveInferenceInstitute/Journal_Utilities**: The repository remains outside the curated catalog pending a human classification decision.
+- **`repository_classification` — repository:ActiveInferenceInstitute/fep_formal**: The repository remains outside the curated catalog pending a human classification decision.
+- **`repository_classification` — repository:docxology/Moonkale**: The repository remains outside the curated catalog pending a human classification decision.
 - **`repository_classification` — repository:docxology/OmniLatticeTextbook**: The repository remains outside the curated catalog pending a human classification decision.
-- **`repository_classification` — repository:docxology/blue_line**: The repository remains outside the curated catalog pending a human classification decision.
-- **`repository_classification` — repository:docxology/green_line**: The repository remains outside the curated catalog pending a human classification decision.
-- **`repository_classification` — repository:docxology/silver_line**: The repository remains outside the curated catalog pending a human classification decision.
+- **`repository_classification` — repository:docxology/bend**: The repository remains outside the curated catalog pending a human classification decision.
+- **`repository_classification` — repository:docxology/graphcoder**: The repository remains outside the curated catalog pending a human classification decision.
+- **`repository_classification` — repository:docxology/leanchess**: The repository remains outside the curated catalog pending a human classification decision.
+- **`repository_classification` — repository:docxology/observer-patch-holography**: The repository remains outside the curated catalog pending a human classification decision.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.19574117:https://github.com/docxology/ento_linguistics/releases/tag/v1.1.1**: The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.19695259:https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0**: The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.
 - **`zenodo_candidate` — paired-publication:10.5281/zenodo.19699233:https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.1.0**: The strong existing-work pairing update is not release-complete until its exact applied-action provenance and approval can be verified: No exact applied-action receipt matches this strong pairing update.

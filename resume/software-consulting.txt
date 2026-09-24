@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-09-24T19:36:28Z
+Generated: 2026-09-24T20:03:28Z
 
-Current public metrics: 220 curated works; 155 catalogued software repositories (116 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 219 docxology + 43 AII public repositories (170 primary, 92 forks).
+Current public metrics: 220 curated works; 158 catalogued software repositories (119 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 224 docxology + 43 AII public repositories (170 primary, 97 forks).
 
 SUMMARY
 -------
@@ -269,7 +269,7 @@ WORKS AND PUBLICATIONS (212)
 [222] 2026 | Paper | The Violet Line: A Consent Ledger of Affected Parties | Zenodo | 10.5281/zenodo.22833487
 [223] 2026 | Paper | The Silver Line: A Memory-and-Succession Instrument | Zenodo | 10.5281/zenodo.22833485
 
-SOFTWARE (155)
+SOFTWARE (158)
 --------------
 docxology/template | Python | https://github.com/docxology/template | Production-grade scaffold for reproducible computational research — 10-stage DAG pipelines, ≥90% test coverage, cryptographic provenance, multi-project workspace, and agent-ready documentation · Zenodo software v3.3.0 · Zenodo | paper: papers/2026_AutopoieticProjectGeneration/ | zenodo: https://doi.org/10.5281/zenodo.20584820
 docxology/QuadCraft | JavaScript | https://github.com/docxology/QuadCraft | Minecraft variant built on tetrahedral geometry — voxels replaced by Quadray-coordinate tetrahedra, exploring Buckminster Fuller's synergetics in an interactive 3D world
@@ -371,6 +371,9 @@ docxology/white_line | Python | https://github.com/docxology/white_line | A type
 docxology/golden_line | Python | https://github.com/docxology/golden_line | An aspirational thread and long-horizon direction for personal work · · Zenodo | paper: papers/2026_GoldenLine/ | zenodo: https://doi.org/10.5281/zenodo.21754237
 docxology/red_line | Python | https://github.com/docxology/red_line | A personal security boundary and explicit No document for dual-use development · · Zenodo | paper: papers/2026_PersonalRedLines/ | zenodo: https://doi.org/10.5281/zenodo.21754239
 docxology/witness_register | Python | https://github.com/docxology/witness_register | Co-registration without aggregation — the Witness Register holding instrument · · Zenodo | paper: papers/2026_WitnessRegister/ | zenodo: https://doi.org/10.5281/zenodo.21754245
+docxology/blue_line | Python | https://github.com/docxology/blue_line | A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work · · Zenodo | paper: papers/2026_BlueLine/ | zenodo: https://doi.org/10.5281/zenodo.22833489
+docxology/green_line | Python | https://github.com/docxology/green_line | A capacity-under-development instrument: the green line of the docxology line set · · Zenodo | paper: papers/2026_GreenLine/ | zenodo: https://doi.org/10.5281/zenodo.22833491
+docxology/silver_line | Python | https://github.com/docxology/silver_line | A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse · · Zenodo | paper: papers/2026_SilverLine/ | zenodo: https://doi.org/10.5281/zenodo.22833485
 docxology/Digi-PPPiP | TeX | https://github.com/docxology/Digi-PPPiP | DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion for remote, semisynchronous, and asynchronous dyadic drawing · · Zenodo | paper: papers/2026_DigiPPPiP/ | zenodo: https://doi.org/10.5281/zenodo.21815704
 docxology/BeeStack | Python | https://github.com/docxology/BeeStack | Evidence-typed scaffold for whole-colony honeybee simulation · · Zenodo | paper: papers/2026_BeeStack/ | zenodo: https://doi.org/10.5281/zenodo.20420556
 docxology/template_advanced_literature_review | Python | https://github.com/docxology/template_advanced_literature_review | Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, and deterministic synthesis

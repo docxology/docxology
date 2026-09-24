@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-24T19:36:26Z",
+  "generated_at": "2026-09-24T20:03:26Z",
   "source": "pages/SOFTWARE.md",
   "schema_ref": "/data/agent-index.json#schemas/SoftwareRepository",
-  "count": 155,
+  "count": 158,
   "repositories": [
     {
       "name": "template",
@@ -1203,6 +1203,42 @@
       "updated_or_year": "2026-08",
       "paper_path": "papers/2026_WitnessRegister/",
       "zenodo_url": "https://doi.org/10.5281/zenodo.21754245"
+    },
+    {
+      "name": "blue_line",
+      "url": "https://github.com/docxology/blue_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "papers/2026_BlueLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22833489"
+    },
+    {
+      "name": "green_line",
+      "url": "https://github.com/docxology/green_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A capacity-under-development instrument: the green line of the docxology line set ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "papers/2026_GreenLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22833491"
+    },
+    {
+      "name": "silver_line",
+      "url": "https://github.com/docxology/silver_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse ·  · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "papers/2026_SilverLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22833485"
     },
     {
       "name": "Digi-PPPiP",

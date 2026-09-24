@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T19:36:28Z",
+  "generated_at": "2026-09-24T20:03:28Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -35,8 +35,8 @@
   },
   "metrics": {
     "works": 220,
-    "software_catalogued": 155,
-    "owned_software_catalogued": 116,
+    "software_catalogued": 158,
+    "owned_software_catalogued": 119,
     "aii_software_catalogued": 39,
     "google_scholar": {
       "citations": 815,
@@ -53,7 +53,7 @@
         "https://api.github.com/users/docxology",
         "reports/public_source_snapshot_2026-09-24.json"
       ],
-      "checked_at": "2026-09-24T19:20:05.374078+00:00",
+      "checked_at": "2026-09-24T20:03:14.296551+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -67,20 +67,20 @@
         "https://api.github.com/users/ActiveInferenceInstitute",
         "reports/public_source_snapshot_2026-09-24.json"
       ],
-      "checked_at": "2026-09-24T19:20:05.374078+00:00",
+      "checked_at": "2026-09-24T20:03:14.296551+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",
       "caveat": "Use /users/ActiveInferenceInstitute, not /orgs/. Local software catalog tracks 39 AII repositories with docxology contributions."
     },
     "github_inventory": {
-      "generated_at": "2026-09-17T23:22:25Z",
+      "generated_at": "2026-09-24T19:55:43Z",
       "source": "GitHub REST API /users/{owner}/repos",
-      "total": 262,
-      "public": 262,
+      "total": 267,
+      "public": 267,
       "primary_total": 170,
-      "forks": 92,
-      "docxology": 219,
+      "forks": 97,
+      "docxology": 224,
       "ActiveInferenceInstitute": 43
     }
   },
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "187a383ef1d38a7e381e2306edaeb6abccef1e3b100c2cea1ae58bd84bec460c",
+      "sha256": "86d7516b0e87a487d5d71cba392b975c839656c8350779c362666598a9520050",
       "files": [
         {
           "path": "resume/source.json",
@@ -102,8 +102,8 @@
         },
         {
           "path": "data/software.json",
-          "bytes": 77231,
-          "sha256": "6ae1dd9c03c065fb30abf87222f1310fe4c212ad77a1026f3857aca2fc5715ec"
+          "bytes": 78699,
+          "sha256": "832b209b7890de478b4125f6dc9fc9081825b7a620aa1e91c43da5df034784ef"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,12 +113,12 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "6a99d6be2171f78cfe97a7331bfc3a580d46e498e04869c49b559a6816ab6cd0"
+          "sha256": "cc0378601b69c09833af27320a241803b207a5a4b5e0d6745dc4c1d49890f7be"
         },
         {
           "path": "data/github-repositories.json",
-          "bytes": 309777,
-          "sha256": "22d6ef7c7b3d3bc18c46c4920068c574042ddb74a6bb8d438627d551141af141"
+          "bytes": 314507,
+          "sha256": "7921e3722f3ec20c8d8a8fc5090396d3b66e4d557e732a6d1055a5d9d25cb772"
         }
       ]
     },
@@ -8970,6 +8970,42 @@
       "zenodo_url": "https://doi.org/10.5281/zenodo.21754245"
     },
     {
+      "name": "blue_line",
+      "url": "https://github.com/docxology/blue_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "papers/2026_BlueLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22833489"
+    },
+    {
+      "name": "green_line",
+      "url": "https://github.com/docxology/green_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A capacity-under-development instrument: the green line of the docxology line set · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "papers/2026_GreenLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22833491"
+    },
+    {
+      "name": "silver_line",
+      "url": "https://github.com/docxology/silver_line",
+      "owner": "docxology",
+      "catalog_section": "docxology",
+      "description": "A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse · · Zenodo",
+      "language": "Python",
+      "stars": 0,
+      "updated_or_year": "2026-09",
+      "paper_path": "papers/2026_SilverLine/",
+      "zenodo_url": "https://doi.org/10.5281/zenodo.22833485"
+    },
+    {
       "name": "Digi-PPPiP",
       "url": "https://github.com/docxology/Digi-PPPiP",
       "owner": "docxology",
@@ -9640,7 +9676,7 @@
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-09-24T19:36:22+00:00",
+      "checked_at": "2026-09-24T19:55:55+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9655,7 +9691,7 @@
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-09-24T19:36:22+00:00",
+      "checked_at": "2026-09-24T19:55:55+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",
@@ -9669,7 +9705,7 @@
         "https://api.github.com/users/docxology",
         "reports/public_source_snapshot_2026-09-24.json"
       ],
-      "checked_at": "2026-09-24T19:20:05.374078+00:00",
+      "checked_at": "2026-09-24T20:03:14.296551+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response.",
       "maintenance_owner": "INTEGRATOR",
@@ -9683,7 +9719,7 @@
         "https://api.github.com/users/ActiveInferenceInstitute",
         "reports/public_source_snapshot_2026-09-24.json"
       ],
-      "checked_at": "2026-09-24T19:20:05.374078+00:00",
+      "checked_at": "2026-09-24T20:03:14.296551+00:00",
       "confidence": "high",
       "verification_method": "GitHub REST API user profile response (type: User). The /orgs/ActiveInferenceInstitute endpoint returns 404 because the account is a User, not an Organization.",
       "maintenance_owner": "INTEGRATOR",

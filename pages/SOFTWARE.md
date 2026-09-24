@@ -138,6 +138,9 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | [golden_line](https://github.com/docxology/golden_line) | An aspirational thread and long-horizon direction for personal work · [📄](../papers/2026_GoldenLine/) · [Zenodo](https://doi.org/10.5281/zenodo.21754237) | Python | 0 | 2026-07 |
 | [red_line](https://github.com/docxology/red_line) | A personal security boundary and explicit No document for dual-use development · [📄](../papers/2026_PersonalRedLines/) · [Zenodo](https://doi.org/10.5281/zenodo.21754239) | Python | 0 | 2026-07 |
 | [witness_register](https://github.com/docxology/witness_register) | Co-registration without aggregation — the Witness Register holding instrument · [📄](../papers/2026_WitnessRegister/) · [Zenodo](https://doi.org/10.5281/zenodo.21754245) | Python | 0 | 2026-08 |
+| [blue_line](https://github.com/docxology/blue_line) | A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work · [📄](../papers/2026_BlueLine/) · [Zenodo](https://doi.org/10.5281/zenodo.22833489) | Python | 0 | 2026-09 |
+| [green_line](https://github.com/docxology/green_line) | A capacity-under-development instrument: the green line of the docxology line set · [📄](../papers/2026_GreenLine/) · [Zenodo](https://doi.org/10.5281/zenodo.22833491) | Python | 0 | 2026-09 |
+| [silver_line](https://github.com/docxology/silver_line) | A memory-and-succession instrument: what is preserved, what is entrusted to whom, what is allowed to lapse · [📄](../papers/2026_SilverLine/) · [Zenodo](https://doi.org/10.5281/zenodo.22833485) | Python | 0 | 2026-09 |
 | [Digi-PPPiP](https://github.com/docxology/Digi-PPPiP) | DigiPPPiP — Digital Partner Pen Play in Parallel: a composable, fully-tested computational companion for remote, semisynchronous, and asynchronous dyadic drawing · [📄](../papers/2026_DigiPPPiP/) · [Zenodo](https://doi.org/10.5281/zenodo.21815704) | TeX | 0 | 2026-08 |
 | [BeeStack](https://github.com/docxology/BeeStack) | Evidence-typed scaffold for whole-colony honeybee simulation · [📄](../papers/2026_BeeStack/) · [Zenodo](https://doi.org/10.5281/zenodo.20420556) | Python | 0 | 2026-05 |
 | [template_advanced_literature_review](https://github.com/docxology/template_advanced_literature_review) | Advanced multi-phase literature-review pipeline exemplar with iterative search refinement, multi-phrase querying, and deterministic synthesis | Python | 0 | 2026-07 |
@@ -219,11 +222,9 @@ keywords: "Daniel Ari Friedman, active inference, SOFTWARE"
 | Data & Policy | 5 | `hhs-opendata`, `crescent-city`, `grateful_data`, `crescent-city-intel`, `multi-time` |
 | Education | 6 | `literature`, `curriculum`, `course`, `lean_niche`, `template_textbook`, `AGEINT` |
 | Other | 6 | `cascadia`, `fuller-obsidian`, `service`, `flick`, `Digi-PPPiP`, `math4wisdom-superhuman-docs-archive` |
-| Research Practice | 6 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register` |
-| **docxology subtotal** | **116** | |
-| AII Contributions (non-fork) | 39 | Catalogued repositories with docxology contributions |
-| **Grand Total** | **155** | |
-
+| Research Practice | 9 | `line_set`, `black_line`, `white_line`, `golden_line`, `red_line`, `witness_register`, `blue_line`, `green_line`, `silver_line` |
+| **docxology subtotal** | **119** | |
+| **Grand Total** | **158** | |
 > *For current public repository totals including personal forks and AII account-level repositories, see the [generated full inventory](../repositories.html), [data/github-repositories.json](../data/github-repositories.json), or the [current counts report](../reports/current_counts.md). AII catalog count includes source repositories with docxology contributions; the AII GitHub account is a **User** account, not an Organization. See [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) for the full publication catalog and [DISCOVERY.md](DISCOVERY.md) for source-discovery queries.*
 
 ---
