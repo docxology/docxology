@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-24T20:24:11Z",
-  "source_commit_at_generation": "ceffaa0bdbfe582186df66913b7e6f72c40c37bd",
+  "generated_at": "2026-09-24T20:31:24Z",
+  "source_commit_at_generation": "3400b3176a1743d174717096062357b404a14f9d",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 926705682,
+    "source_bytes": 926710159,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 5866,
-    "artifact_bytes": 927742232
+    "artifact_bytes": 927746709
   },
   "included_files": [
     {
@@ -22200,8 +22200,8 @@
     },
     {
       "path": "reports/external_links_2026-09-24.json",
-      "bytes": 381576,
-      "sha256": "769ffa4ff7cf59c92cd774587a1cfa08de2d81d82ea8bd87e61cdab16ce6ad62"
+      "bytes": 387085,
+      "sha256": "7951652b1aeb4f5094f8d6b36a13429b5858e2e0bb7157f8e63eebe7227de5d6"
     },
     {
       "path": "reports/external_links_triage_2026-09-07.md",
@@ -22210,13 +22210,13 @@
     },
     {
       "path": "reports/external_links_triage_2026-09-24.json",
-      "bytes": 60403,
-      "sha256": "51405bfdd8838383b47dd3f67f7fe9af0ffe0465eeccac0a4b5f960103d62f69"
+      "bytes": 59384,
+      "sha256": "9438475b19cbd82e1b465ed215518af5e257beb7069692d9138e0c9430772c6f"
     },
     {
       "path": "reports/external_links_triage_2026-09-24.md",
-      "bytes": 10743,
-      "sha256": "7c771780acb804ffa3afe101321f512ce8dd7358c6a8a21691fa312dc3da833b"
+      "bytes": 10730,
+      "sha256": "de1e19b8dc93c68c7e67c80a4995a8f6e741a17b4121d231d04ef110e7ce0f19"
     },
     {
       "path": "reports/gsc_preflight_2026-09-18.json",
