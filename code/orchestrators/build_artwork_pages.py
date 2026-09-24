@@ -350,7 +350,7 @@ def list_item_html(record: dict) -> str:
     views = view_text(record)
     meta = " · ".join(part for part in (date, views) if part)
     suffix = f' <span class="muted">{h(meta)}</span>' if meta else ""
-    return f'      <li><a href="{h(page_filename(record))}">{h(title)}</a>{suffix}</li>'
+    return f'      <li><a href="../{h(page_rel_path(record))}">{h(title)}</a>{suffix}</li>'
 
 
 def clip_title(title: str, max_len: int = 65) -> str:
