@@ -1,0 +1,45 @@
+{
+  "repoName": "docxology",
+  "totalCapMs": 120000,
+  "timeoutMs": {
+    "doctor": 180000,
+    "br": 60000
+  },
+  "preset": "unproven",
+  "vacuous": {
+    "plan-refined": {
+      "policy": "pass",
+      "reason": "no PLAN.md under docs/plans — no plan refined yet for this repo"
+    },
+    "beads-polished": {
+      "policy": "pass",
+      "reason": "no .beads beads — the bead world is empty by repo nature"
+    },
+    "swarm-launched": {
+      "policy": "pass",
+      "reason": "no succeeded dispatches for this repo in the operator ledger — docs-only/no-dispatch cycle"
+    },
+    "reviews-clean": {
+      "policy": "pass",
+      "reason": "no reviews.jsonl in the plan directory — no review-log convention yet"
+    },
+    "sidecar-sealed": {
+      "policy": "pass",
+      "reason": "sidecar lock(s) parse with 0 sealed files — nothing sealed to verify"
+    },
+    "ledger-receipted": {
+      "policy": "pass",
+      "reason": "no cycle_close_receipt rows for this repo — no cycle closed yet"
+    },
+    "board-synced": {
+      "policy": "pass",
+      "reason": "no tasks.yaml board and no externally referenced beads — nothing to sync"
+    }
+  },
+  "beadHome": {
+    "repo": "self",
+    "path": ".beads"
+  },
+  "onboardedAt": "2026-09-17T04:40:16Z",
+  "onboardedBy": "gate:onboard"
+}

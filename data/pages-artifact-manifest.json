@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-24T16:29:31Z",
-  "source_commit_at_generation": "9daa2f06b99373cb3f3e9584f052b628beb8710a",
+  "generated_at": "2026-09-24T16:34:46Z",
+  "source_commit_at_generation": "0b9af4bd5c0c7ebe8fd9238add750e7f7fc65596",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,58 +21,13 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 926422567,
+    "source_bytes": 926412579,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5846,
-    "artifact_bytes": 927455485
+    "artifact_file_count": 5834,
+    "artifact_bytes": 927443647
   },
   "included_files": [
-    {
-      "path": ".docxology/.sidecar-lock.toml",
-      "bytes": 66,
-      "sha256": "e68d3605fa86bdb9a89caa072a348382e4b46fa108c6c34a93aac196b064a60b"
-    },
-    {
-      "path": ".docxology/AGENTS.md",
-      "bytes": 1444,
-      "sha256": "6d8321878b7730641ae3f6f459c45de9b615c56bb94b8a8d06b7884f3075a244"
-    },
-    {
-      "path": ".docxology/README.md",
-      "bytes": 589,
-      "sha256": "7318b68cbe1fbe2afcd8c8ea4ed9159b922e0c7261d7f23149b47d6e4c338fae"
-    },
-    {
-      "path": ".docxology/gate/config.json",
-      "bytes": 1303,
-      "sha256": "770461ef3bc2cf3e2ce9ee17ef8f6099408922d4d1de613848dceedfdb6936c5"
-    },
-    {
-      "path": ".docxology/gate/gate_report.json",
-      "bytes": 2576,
-      "sha256": "82775cf01007b5f6fab2af09688575fa3dc58edd66c8914d7a341dd8ad2932a3"
-    },
-    {
-      "path": ".docxology/gate/history/adhoc-2026-09-17-04-40-17Z-asof.json",
-      "bytes": 2576,
-      "sha256": "82775cf01007b5f6fab2af09688575fa3dc58edd66c8914d7a341dd8ad2932a3"
-    },
-    {
-      "path": ".docxology/manifest.toml",
-      "bytes": 172,
-      "sha256": "28b089c72c393cc6379347138581a2c8c646067f93a07d13da2eada019f58dbf"
-    },
-    {
-      "path": ".docxology/public/citation.toml",
-      "bytes": 555,
-      "sha256": "a57f2d767086a72887814c631724f32c0d7fa17622a0db60204c4d35b86077ef"
-    },
-    {
-      "path": ".docxology/public/links.toml",
-      "bytes": 355,
-      "sha256": "8b4a35525312fe5cfa75d64283f50a3809ee765462cd7d8528e4215a28ac0b20"
-    },
     {
       "path": ".gitattributes",
       "bytes": 13,
@@ -137,11 +92,6 @@
       "path": "CNAME",
       "bytes": 21,
       "sha256": "14423d65dc0580ff2f79c3f636b53658a2af4478374a8f6dee128d5e7d3ecea6"
-    },
-    {
-      "path": "HERDR.md",
-      "bytes": 352,
-      "sha256": "68cb08cc5768e253ec5b604b2cbc8d278e0bde89fca9a25c4e7478e3fa139541"
     },
     {
       "path": "README.md",
@@ -29229,14 +29179,6 @@
       "role": "public control metadata"
     },
     {
-      "path": "reports/public_source_review_2026-09-18.json",
-      "role": "public control metadata"
-    },
-    {
-      "path": "reports/public_source_review_2026-09-18.md",
-      "role": "public control metadata"
-    },
-    {
       "path": "reports/public_source_review_2026-09-24.json",
       "role": "public control metadata"
     },
@@ -29298,8 +29240,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 481,
-    "bytes": 105440131,
+    "count": 483,
+    "bytes": 106336684,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
