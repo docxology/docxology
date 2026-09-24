@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T19:35:58Z",
+  "generated_at": "2026-09-24T21:01:50Z",
   "source": "GitHub Releases API + Zenodo Records API",
   "owners": [
     "docxology",
@@ -5682,7 +5682,7 @@
         "assets": [
           {
             "name": "actinf_policy_entanglement_lean_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/download/v1.0.0/actinf_policy_entanglement_lean_combined.pdf",
             "size": 14419275
           }
         ],
@@ -5772,7 +5772,7 @@
         "assets": [
           {
             "name": "CogSecSkills_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/CogSecSkills/releases/download/v1.0.0/CogSecSkills_combined.pdf",
             "size": 3379139
           }
         ],
@@ -5850,7 +5850,7 @@
         "assets": [
           {
             "name": "Digi-PPPiP_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/Digi-PPPiP/releases/download/v1.0.0/Digi-PPPiP_combined.pdf",
             "size": 11418704
           }
         ],
@@ -5946,7 +5946,7 @@
         "assets": [
           {
             "name": "FractiSkills_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/FractiSkills/releases/download/v0.1.0/FractiSkills_combined.pdf",
             "size": 1862198
           }
         ],
@@ -6032,7 +6032,7 @@
         "assets": [
           {
             "name": "alphacogant_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/alphacogant/releases/download/v1.0.1/alphacogant_combined.pdf",
             "size": 2899053
           }
         ],
@@ -6116,7 +6116,7 @@
         "assets": [
           {
             "name": "alphacogant_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/alphacogant/releases/download/v1.0.0/alphacogant_combined.pdf",
             "size": 2889782
           }
         ],
@@ -6202,7 +6202,7 @@
         "assets": [
           {
             "name": "prior_cognitive_art_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/prior_cognitive_art/releases/download/v0.1.0/prior_cognitive_art_combined.pdf",
             "size": 4429775
           }
         ],
@@ -6288,7 +6288,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Bounded_e07b6285.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_autoresearch_project/releases/download/v0.3.2/Friedman_2026_Bounded_e07b6285.pdf",
             "size": 1344238
           }
         ],
@@ -6367,7 +6367,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Exploratory_0b10852b.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_eda_notebook/releases/download/v1.0.0/Friedman_2026_Exploratory_0b10852b.pdf",
             "size": 158570
           }
         ],
@@ -6446,7 +6446,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Living_412d4fcf.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_literature_meta_analysis/releases/download/v0.1.0/Friedman_2026_Living_412d4fcf.pdf",
             "size": 7314033
           }
         ],
@@ -6538,7 +6538,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Domain_ecd8519f.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_methods_paper/releases/download/v1.0.0/Friedman_2026_Domain_ecd8519f.pdf",
             "size": 144305
           }
         ],
@@ -6617,7 +6617,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Triplicate_6c693dbd.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_newspaper/releases/download/v1.0.2/Friedman_2026_Triplicate_6c693dbd.pdf",
             "size": 58491
           }
         ],
@@ -6695,7 +6695,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Editorial_290d21b1.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_prose_project/releases/download/v0.4.2/Friedman_2026_Editorial_290d21b1.pdf",
             "size": 132373
           }
         ],
@@ -6773,7 +6773,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Selfimprovement_6e6d19d0.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_sia/releases/download/v0.1.2/Friedman_2026_Selfimprovement_6e6d19d0.pdf",
             "size": 223019
           }
         ],
@@ -6850,32 +6850,32 @@
         "assets": [
           {
             "name": "CITATION.cff",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_storybook/releases/download/v0.1.0/CITATION.cff",
             "size": 576
           },
           {
             "name": "default.zenodo.json",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_storybook/releases/download/v0.1.0/default.zenodo.json",
             "size": 711
           },
           {
             "name": "storybook_manifest.json",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_storybook/releases/download/v0.1.0/storybook_manifest.json",
             "size": 5466
           },
           {
             "name": "template_storybook_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_storybook/releases/download/v0.1.0/template_storybook_combined.pdf",
             "size": 45341
           },
           {
             "name": "the-shape-between.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_storybook/releases/download/v0.1.0/the-shape-between.pdf",
             "size": 1492876
           },
           {
             "name": "validation_report.json",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_storybook/releases/download/v0.1.0/validation_report.json",
             "size": 4633
           }
         ],
@@ -7013,7 +7013,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Template_7b67cb2d.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_textbook/releases/download/v0.1.2/Friedman_2026_Template_7b67cb2d.pdf",
             "size": 939766
           }
         ],
@@ -7091,22 +7091,22 @@
         "assets": [
           {
             "name": "template_textbook.html",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_textbook/releases/download/v0.1.0/template_textbook.html",
             "size": 239013
           },
           {
             "name": "template_textbook_combined.docx",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_textbook/releases/download/v0.1.0/template_textbook_combined.docx",
             "size": 58186
           },
           {
             "name": "template_textbook_combined.epub",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_textbook/releases/download/v0.1.0/template_textbook_combined.epub",
             "size": 113949
           },
           {
             "name": "template_textbook_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_textbook/releases/download/v0.1.0/template_textbook_combined.pdf",
             "size": 1116735
           }
         ],
@@ -7184,7 +7184,7 @@
         "assets": [
           {
             "name": "BeeStack_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/BeeStack/releases/download/v1.0.0/BeeStack_combined.pdf",
             "size": 8059701
           }
         ],
@@ -7284,7 +7284,7 @@
         "assets": [
           {
             "name": "cohereants_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/cohereants/releases/download/v1.0.0/cohereants_combined.pdf",
             "size": 13895561
           }
         ],
@@ -7378,7 +7378,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Music_296b3b5c.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/grateful_data/releases/download/v1.0.0/Friedman_2026_Music_296b3b5c.pdf",
             "size": 4142817
           }
         ],
@@ -7456,7 +7456,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Recovering_e1196698.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/ntqr_llm/releases/download/v1.0.0/Friedman_2026_Recovering_e1196698.pdf",
             "size": 2270020
           }
         ],
@@ -7546,17 +7546,17 @@
         "assets": [
           {
             "name": "democreate-0.6.2-manuscript.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/democreate/releases/download/v0.6.2/democreate-0.6.2-manuscript.pdf",
             "size": 1246461
           },
           {
             "name": "democreate-0.6.2-py3-none-any.whl",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/democreate/releases/download/v0.6.2/democreate-0.6.2-py3-none-any.whl",
             "size": 172758
           },
           {
             "name": "democreate-0.6.2-source.zip",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/democreate/releases/download/v0.6.2/democreate-0.6.2-source.zip",
             "size": 35551741
           }
         ],
@@ -7658,7 +7658,7 @@
         "assets": [
           {
             "name": "entofile-0.4.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/entofile/releases/download/v0.4/entofile-0.4.pdf",
             "size": 3481755
           }
         ],
@@ -7743,12 +7743,12 @@
         "assets": [
           {
             "name": "COGANT-0.6.0-source.zip",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/COGANT/releases/download/v0.6.0/COGANT-0.6.0-source.zip",
             "size": 4562700
           },
           {
             "name": "COGANT-0.6.0.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/COGANT/releases/download/v0.6.0/COGANT-0.6.0.pdf",
             "size": 3654907
           }
         ],
@@ -7836,7 +7836,7 @@
         "assets": [
           {
             "name": "AGEINT-Agentic-Intelligence-Edition-0.1.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/AGEINT/releases/download/v0.1.0/AGEINT-Agentic-Intelligence-Edition-0.1.pdf",
             "size": 35805348
           }
         ],
@@ -7920,7 +7920,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Onpolicy_c6b5ec49.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/download/v1.0.2/Friedman_2026_Onpolicy_c6b5ec49.pdf",
             "size": 8102450
           }
         ],
@@ -8001,7 +8001,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Onpolicy_4f7040bc.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/download/v1.0.1/Friedman_2026_Onpolicy_4f7040bc.pdf",
             "size": 7804138
           }
         ],
@@ -8083,7 +8083,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Onpolicy_db0f2e4f.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/download/v1.0.0/Friedman_2026_Onpolicy_db0f2e4f.pdf",
             "size": 7806135
           }
         ],
@@ -8163,7 +8163,7 @@
         "assets": [
           {
             "name": "realizing_emptiness_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/realizing_emptiness/releases/download/v1.0.0/realizing_emptiness_combined.pdf",
             "size": 15705414
           }
         ],
@@ -8247,12 +8247,12 @@
         "assets": [
           {
             "name": "NTQR_allotment_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/ntqr_allotment/releases/download/v0.1.0/NTQR_allotment_combined.pdf",
             "size": 4380836
           },
           {
             "name": "NTQR_allotment_combined_stego.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/ntqr_allotment/releases/download/v0.1.0/NTQR_allotment_combined_stego.pdf",
             "size": 4382155
           }
         ],
@@ -8335,7 +8335,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Active_f191b48f.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_active_inference/releases/download/v0.3.2/Friedman_2026_Active_f191b48f.pdf",
             "size": 4101185
           }
         ],
@@ -8413,7 +8413,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Deterministic_0af39137.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_autoscientists/releases/download/v1.0.2/Friedman_2026_Deterministic_0af39137.pdf",
             "size": 272072
           }
         ],
@@ -8492,7 +8492,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Convergence_cd54b958.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.5.2/Friedman_2026_Convergence_cd54b958.pdf",
             "size": 1731747
           }
         ],
@@ -8572,7 +8572,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Template_d9248f4f.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_madlib/releases/download/v0.1.1/Friedman_2026_Template_d9248f4f.pdf",
             "size": 1001791
           }
         ],
@@ -8656,7 +8656,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Template_a593c1fe.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_madlib/releases/download/v0.1.0/Friedman_2026_Template_a593c1fe.pdf",
             "size": 1001108
           }
         ],
@@ -8742,7 +8742,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Template_535bd809.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.9/Friedman_2026_Template_535bd809.pdf",
             "size": 1389726
           }
         ],
@@ -8826,12 +8826,12 @@
         "assets": [
           {
             "name": "blake_working_paper.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/blake/releases/download/v0.1.0/blake_working_paper.pdf",
             "size": 11255591
           },
           {
             "name": "public_release_bundle.zip",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/blake/releases/download/v0.1.0/public_release_bundle.zip",
             "size": 11617229
           }
         ],
@@ -8913,7 +8913,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Entomological_5a189170.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/EntoLaw/releases/download/v1.0.0/Friedman_2026_Entomological_5a189170.pdf",
             "size": 1440326
           }
         ],
@@ -9000,7 +9000,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -9078,7 +9078,7 @@
         "assets": [
           {
             "name": "template_autopoiesis_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_autopoiesis/releases/download/v1.0.1/template_autopoiesis_combined.pdf",
             "size": 498796
           }
         ],
@@ -9156,37 +9156,37 @@
         "assets": [
           {
             "name": "template_pitch_deck_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_pitch_deck_combined.pdf",
             "size": 60923
           },
           {
             "name": "template_template_pitch_long.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_template_pitch_long.pdf",
             "size": 601692
           },
           {
             "name": "template_template_pitch_long.pptx",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_template_pitch_long.pptx",
             "size": 475075
           },
           {
             "name": "template_template_pitch_medium.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_template_pitch_medium.pdf",
             "size": 512959
           },
           {
             "name": "template_template_pitch_medium.pptx",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_template_pitch_medium.pptx",
             "size": 423887
           },
           {
             "name": "template_template_pitch_short.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_template_pitch_short.pdf",
             "size": 101687
           },
           {
             "name": "template_template_pitch_short.pptx",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_template_pitch_short.pptx",
             "size": 108883
           }
         ],
@@ -9295,37 +9295,37 @@
         "assets": [
           {
             "name": "template_pitch_deck_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_pitch_deck_combined.pdf",
             "size": 60111
           },
           {
             "name": "template_template_pitch_long.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_template_pitch_long.pdf",
             "size": 601723
           },
           {
             "name": "template_template_pitch_long.pptx",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_template_pitch_long.pptx",
             "size": 475087
           },
           {
             "name": "template_template_pitch_medium.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_template_pitch_medium.pdf",
             "size": 512982
           },
           {
             "name": "template_template_pitch_medium.pptx",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_template_pitch_medium.pptx",
             "size": 423903
           },
           {
             "name": "template_template_pitch_short.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_template_pitch_short.pdf",
             "size": 101720
           },
           {
             "name": "template_template_pitch_short.pptx",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_template_pitch_short.pptx",
             "size": 108898
           }
         ],
@@ -9435,7 +9435,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Active_d676159d.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/download/v0.2.0/Friedman_2026_Active_d676159d.pdf",
             "size": 14942798
           }
         ],
@@ -9513,7 +9513,7 @@
         "assets": [
           {
             "name": "DuckRabbit_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/DuckRabbit/releases/download/v0.5.0/DuckRabbit_combined.pdf",
             "size": 3938173
           }
         ],
@@ -9595,27 +9595,27 @@
         "assets": [
           {
             "name": "active_inference_power-v1.0.0-source.tar.gz",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/download/v1.0.0/active_inference_power-v1.0.0-source.tar.gz",
             "size": 3027441
           },
           {
             "name": "active_inference_power_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/download/v1.0.0/active_inference_power_combined.pdf",
             "size": 11205677
           },
           {
             "name": "manifest.json",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/download/v1.0.0/manifest.json",
             "size": 25429
           },
           {
             "name": "release_review_final.json",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/download/v1.0.0/release_review_final.json",
             "size": 4936
           },
           {
             "name": "renderer_provenance.json",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/download/v1.0.0/renderer_provenance.json",
             "size": 17160
           }
         ],
@@ -9738,62 +9738,62 @@
         "assets": [
           {
             "name": "CITATION.cff",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/CITATION.cff",
             "size": 334
           },
           {
             "name": "codomyrmex-1.3.0-content.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/codomyrmex-1.3.0-content.pdf",
             "size": 6876519
           },
           {
             "name": "codomyrmex-1.3.0-release-bundle.zip",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/codomyrmex-1.3.0-release-bundle.zip",
             "size": 20749927
           },
           {
             "name": "codomyrmex-1.3.0.html",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/codomyrmex-1.3.0.html",
             "size": 9755311
           },
           {
             "name": "codomyrmex-1.3.0.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/codomyrmex-1.3.0.pdf",
             "size": 6883385
           },
           {
             "name": "default.zenodo.json",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/default.zenodo.json",
             "size": 3131
           },
           {
             "name": "publication_manifest.json",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/publication_manifest.json",
             "size": 16360
           },
           {
             "name": "publication_metadata.json",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/publication_metadata.json",
             "size": 2977
           },
           {
             "name": "sbom.cdx.json",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/sbom.cdx.json",
             "size": 208546
           },
           {
             "name": "sbom.spdx.json",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/sbom.spdx.json",
             "size": 11524320
           },
           {
             "name": "SHA256SUMS",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/SHA256SUMS",
             "size": 2594
           },
           {
             "name": "SHA512SUMS",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/SHA512SUMS",
             "size": 4322
           }
         ],
@@ -9964,7 +9964,7 @@
         "assets": [
           {
             "name": "bond-manuscript_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/bond/releases/download/v1.0.0/bond-manuscript_combined.pdf",
             "size": 10252200
           }
         ],
@@ -10129,42 +10129,42 @@
         "assets": [
           {
             "name": "fep-lean-1.1.0-155-evidence-bundle.tar.gz",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep-lean-1.1.0-155-evidence-bundle.tar.gz",
             "size": 6095784
           },
           {
             "name": "fep-lean-1.1.0-155-evidence-bundle.tar.gz.sha256",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep-lean-1.1.0-155-evidence-bundle.tar.gz.sha256",
             "size": 108
           },
           {
             "name": "fep-lean-manuscript-1.1.0.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep-lean-manuscript-1.1.0.pdf",
             "size": 2005312
           },
           {
             "name": "fep-lean-manuscript-1.1.0.pdf.sha256",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep-lean-manuscript-1.1.0.pdf.sha256",
             "size": 96
           },
           {
             "name": "fep_lean-1.1.0-py3-none-any.whl",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep_lean-1.1.0-py3-none-any.whl",
             "size": 578523
           },
           {
             "name": "fep_lean-1.1.0-py3-none-any.whl.sha256",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep_lean-1.1.0-py3-none-any.whl.sha256",
             "size": 98
           },
           {
             "name": "fep_lean-1.1.0.tar.gz",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep_lean-1.1.0.tar.gz",
             "size": 692987
           },
           {
             "name": "fep_lean-1.1.0.tar.gz.sha256",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep_lean-1.1.0.tar.gz.sha256",
             "size": 88
           }
         ],
@@ -10395,22 +10395,22 @@
         "assets": [
           {
             "name": "CHECKSUMS.sha256",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/Skillarum/releases/download/v0.2.0/CHECKSUMS.sha256",
             "size": 287
           },
           {
             "name": "skillarum-0.2.0-research-artifacts.zip",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/Skillarum/releases/download/v0.2.0/skillarum-0.2.0-research-artifacts.zip",
             "size": 3916565
           },
           {
             "name": "skillarum-0.2.0-source.zip",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/Skillarum/releases/download/v0.2.0/skillarum-0.2.0-source.zip",
             "size": 2728580
           },
           {
             "name": "Skillarum_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/Skillarum/releases/download/v0.2.0/Skillarum_combined.pdf",
             "size": 3629479
           }
         ],
@@ -10522,52 +10522,52 @@
         "assets": [
           {
             "name": "cognitive_case_diagrams-2.4.0-py3-none-any.whl",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/cognitive_case_diagrams-2.4.0-py3-none-any.whl",
             "size": 270362
           },
           {
             "name": "cognitive_case_diagrams-2.4.0-reproducibility.manifest.json",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/cognitive_case_diagrams-2.4.0-reproducibility.manifest.json",
             "size": 62585
           },
           {
             "name": "cognitive_case_diagrams-2.4.0-reproducibility.zip",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/cognitive_case_diagrams-2.4.0-reproducibility.zip",
             "size": 28789203
           },
           {
             "name": "cognitive_case_diagrams-2.4.0-synthetic-results.json",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/cognitive_case_diagrams-2.4.0-synthetic-results.json",
             "size": 131838
           },
           {
             "name": "cognitive_case_diagrams-2.4.0.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/cognitive_case_diagrams-2.4.0.pdf",
             "size": 15267582
           },
           {
             "name": "cognitive_case_diagrams-2.4.0.tar.gz",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/cognitive_case_diagrams-2.4.0.tar.gz",
             "size": 613386
           },
           {
             "name": "quality_receipt.json",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/quality_receipt.json",
             "size": 34200
           },
           {
             "name": "release-validation.json",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/release-validation.json",
             "size": 1181
           },
           {
             "name": "SHA256SUMS",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/SHA256SUMS",
             "size": 944
           },
           {
             "name": "zenodo-publication.json",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/zenodo-publication.json",
             "size": 2551
           }
         ],
@@ -10657,12 +10657,12 @@
         "assets": [
           {
             "name": "Ento_Linguistics_v1.1.1_2026-09-22.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/ento_linguistics/releases/download/v1.1.1/Ento_Linguistics_v1.1.1_2026-09-22.pdf",
             "size": 7382684
           },
           {
             "name": "Ento_Linguistics_v1.1.1_source_2026-09-22.zip",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/ento_linguistics/releases/download/v1.1.1/Ento_Linguistics_v1.1.1_source_2026-09-22.zip",
             "size": 2062983
           }
         ],
@@ -11871,7 +11871,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -11948,7 +11948,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -12947,7 +12947,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -13023,7 +13023,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -14008,7 +14008,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -14083,7 +14083,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -15056,7 +15056,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -15132,7 +15132,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -16118,7 +16118,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -16194,7 +16194,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -17194,7 +17194,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -17284,7 +17284,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -18453,7 +18453,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -18530,7 +18530,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -19530,7 +19530,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -19607,7 +19607,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -20666,7 +20666,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -20802,7 +20802,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -22499,7 +22499,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Bounded_537dd8a6.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_autoresearch_project/releases/download/v0.3.1/Friedman_2026_Bounded_537dd8a6.pdf",
             "size": 1343238
           }
         ],
@@ -22577,7 +22577,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Bounded_f02abeea.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_autoresearch_project/releases/download/v0.3.0/Friedman_2026_Bounded_f02abeea.pdf",
             "size": 1339496
           }
         ],
@@ -22655,7 +22655,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Bounded_922d1242.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_autoresearch_project/releases/download/v0.2.0/Friedman_2026_Bounded_922d1242.pdf",
             "size": 1303159
           }
         ],
@@ -22733,7 +22733,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Triplicate_851f9973.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_newspaper/releases/download/v1.0.1/Friedman_2026_Triplicate_851f9973.pdf",
             "size": 58485
           }
         ],
@@ -22880,7 +22880,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Editorial_b59313ea.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_prose_project/releases/download/v0.4.1/Friedman_2026_Editorial_b59313ea.pdf",
             "size": 270739
           }
         ],
@@ -22957,7 +22957,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Editorial_cbe5adae.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_prose_project/releases/download/v0.4.0/Friedman_2026_Editorial_cbe5adae.pdf",
             "size": 270712
           }
         ],
@@ -23034,7 +23034,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Editorial_72e603df.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_prose_project/releases/download/v0.3.0/Friedman_2026_Editorial_72e603df.pdf",
             "size": 228540
           }
         ],
@@ -23111,7 +23111,7 @@
         "assets": [
           {
             "name": "Author_2026_Editorial_72e603df.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_prose_project/releases/download/v0.2.0/Author_2026_Editorial_72e603df.pdf",
             "size": 228540
           }
         ],
@@ -23188,7 +23188,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Selfimprovement_e350973a.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_sia/releases/download/v0.1.1/Friedman_2026_Selfimprovement_e350973a.pdf",
             "size": 82577
           }
         ],
@@ -23264,7 +23264,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Template_c6c97f24.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_textbook/releases/download/v0.1.1/Friedman_2026_Template_c6c97f24.pdf",
             "size": 1122785
           }
         ],
@@ -23498,7 +23498,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -23582,7 +23582,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -24603,7 +24603,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Refinement_36431789.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_gold_refinement/releases/download/v0.1.0/Friedman_2026_Refinement_36431789.pdf",
             "size": 1019881
           }
         ],
@@ -24757,7 +24757,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -24833,7 +24833,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -25821,7 +25821,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -25899,7 +25899,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -26912,7 +26912,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -26989,7 +26989,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -27994,7 +27994,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -28076,7 +28076,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -29071,7 +29071,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Active_158b2fe2.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_active_inference/releases/download/v0.3.1/Friedman_2026_Active_158b2fe2.pdf",
             "size": 4011794
           }
         ],
@@ -29148,7 +29148,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Active_713452dd.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_active_inference/releases/download/v0.3.0/Friedman_2026_Active_713452dd.pdf",
             "size": 617911
           }
         ],
@@ -29225,7 +29225,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Active_d7e8d4b8.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_active_inference/releases/download/v0.2.0/Friedman_2026_Active_d7e8d4b8.pdf",
             "size": 665892
           }
         ],
@@ -29302,7 +29302,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Deterministic_972bc4e0.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_autoscientists/releases/download/v1.0.1/Friedman_2026_Deterministic_972bc4e0.pdf",
             "size": 272080
           }
         ],
@@ -29451,7 +29451,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Convergence_33ceeb67.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.5.1/Friedman_2026_Convergence_33ceeb67.pdf",
             "size": 1725781
           }
         ],
@@ -29530,7 +29530,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Convergence_d63f738b.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.5.0/Friedman_2026_Convergence_d63f738b.pdf",
             "size": 1727340
           }
         ],
@@ -29609,7 +29609,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Convergence_b08688ce.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.4.0/Friedman_2026_Convergence_b08688ce.pdf",
             "size": 1730480
           }
         ],
@@ -29688,7 +29688,7 @@
         "assets": [
           {
             "name": "Author_2026_Convergence_b08688ce.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.3.0/Author_2026_Convergence_b08688ce.pdf",
             "size": 1730480
           }
         ],
@@ -29767,7 +29767,7 @@
         "assets": [
           {
             "name": "Author_2026_Convergence_b08688ce.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.2.0/Author_2026_Convergence_b08688ce.pdf",
             "size": 1730480
           }
         ],
@@ -29846,7 +29846,7 @@
         "assets": [
           {
             "name": "Author_2026_Convergence_b591a0ce.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.1.0/Author_2026_Convergence_b591a0ce.pdf",
             "size": 1728225
           }
         ],
@@ -29925,7 +29925,7 @@
         "assets": [
           {
             "name": "template_code_project_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.0.0/template_code_project_combined.pdf",
             "size": 1728225
           }
         ],
@@ -30080,7 +30080,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -30163,7 +30163,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -31171,7 +31171,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Template_b9bc5cf3.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.8/Friedman_2026_Template_b9bc5cf3.pdf",
             "size": 1390899
           }
         ],
@@ -31255,7 +31255,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Template_cc674248.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.7/Friedman_2026_Template_cc674248.pdf",
             "size": 1391795
           }
         ],
@@ -31339,7 +31339,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Template_57199c03.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.6/Friedman_2026_Template_57199c03.pdf",
             "size": 1351872
           }
         ],
@@ -31423,7 +31423,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Template_5f200f33.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.5/Friedman_2026_Template_5f200f33.pdf",
             "size": 1314536
           }
         ],
@@ -31507,7 +31507,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Texttttemplate_af9c78b8.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.4/Friedman_2026_Texttttemplate_af9c78b8.pdf",
             "size": 1315114
           }
         ],
@@ -31591,7 +31591,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Texttttemplate_d2f961ef.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.3/Friedman_2026_Texttttemplate_d2f961ef.pdf",
             "size": 1314394
           }
         ],
@@ -31745,7 +31745,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -32774,7 +32774,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -32880,7 +32880,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -34255,7 +34255,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -34330,7 +34330,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -35302,7 +35302,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -35377,7 +35377,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -36349,7 +36349,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -36424,7 +36424,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -37327,12 +37327,12 @@
         "assets": [
           {
             "name": "blake_working_paper.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/blake/releases/download/v0.1.0/blake_working_paper.pdf",
             "size": 11255591
           },
           {
             "name": "public_release_bundle.zip",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/blake/releases/download/v0.1.0/public_release_bundle.zip",
             "size": 11617229
           }
         ],
@@ -37899,7 +37899,7 @@
         "assets": [
           {
             "name": "CogSecSkills_combined.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/CogSecSkills/releases/download/v1.0.0/CogSecSkills_combined.pdf",
             "size": 3379139
           }
         ],
@@ -38867,7 +38867,7 @@
         "assets": [
           {
             "name": "release_1_1_5.png",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.1.5/release_1_1_5.png",
             "size": 832194
           }
         ],
@@ -39529,22 +39529,22 @@
         "assets": [
           {
             "name": "codomyrmex-1.1.1-py3-none-any.whl",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.1.1/codomyrmex-1.1.1-py3-none-any.whl",
             "size": 18952158
           },
           {
             "name": "codomyrmex-1.1.1.tar.gz",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.1.1/codomyrmex-1.1.1.tar.gz",
             "size": 13586594
           },
           {
             "name": "release-v1.1.1-before-after.png",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.1.1/release-v1.1.1-before-after.png",
             "size": 586075
           },
           {
             "name": "release-v1.1.1-hero.png",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.1.1/release-v1.1.1-hero.png",
             "size": 857014
           }
         ],
@@ -40698,17 +40698,17 @@
         "assets": [
           {
             "name": "thalia-0.1.0-artifacts.tar.gz",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/thalia/releases/download/v0.1.0/thalia-0.1.0-artifacts.tar.gz",
             "size": 16736189
           },
           {
             "name": "thalia-0.1.0-source.tar.gz",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/thalia/releases/download/v0.1.0/thalia-0.1.0-source.tar.gz",
             "size": 842137
           },
           {
             "name": "thalia-0.1.0.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/thalia/releases/download/v0.1.0/thalia-0.1.0.pdf",
             "size": 5005902
           }
         ],
@@ -40861,7 +40861,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_84145371.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
             "size": 497314
           }
         ],
@@ -40929,7 +40929,7 @@
         "assets": [
           {
             "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
             "size": 497246
           }
         ],
@@ -41828,17 +41828,17 @@
         "assets": [
           {
             "name": "CITATION.cff",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.0.0/CITATION.cff",
             "size": 2007
           },
           {
             "name": "fep_lean_v1_04-24-2026.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.0.0/fep_lean_v1_04-24-2026.pdf",
             "size": 1908263
           },
           {
             "name": "LICENSE",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.0.0/LICENSE",
             "size": 2223
           }
         ],
@@ -42998,27 +42998,27 @@
         "assets": [
           {
             "name": "active_fedference-1.1.0-py3-none-any.whl",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.1.0/active_fedference-1.1.0-py3-none-any.whl",
             "size": 664758
           },
           {
             "name": "active_fedference-1.1.0.tar.gz",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.1.0/active_fedference-1.1.0.tar.gz",
             "size": 2007619
           },
           {
             "name": "Active_Fedference_Research_Manuscript_v1.1.0_Zenodo_10.5281-zenodo.22149133.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.1.0/Active_Fedference_Research_Manuscript_v1.1.0_Zenodo_10.5281-zenodo.22149133.pdf",
             "size": 12604278
           },
           {
             "name": "manifest.json",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.1.0/manifest.json",
             "size": 587359
           },
           {
             "name": "SHA256SUMS.txt",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.1.0/SHA256SUMS.txt",
             "size": 430
           }
         ],
@@ -43103,17 +43103,17 @@
         "assets": [
           {
             "name": "Active_Fedference_Research_Manuscript_v1.0.4_Zenodo_10.5281-zenodo.21972644.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.4/Active_Fedference_Research_Manuscript_v1.0.4_Zenodo_10.5281-zenodo.21972644.pdf",
             "size": 9133435
           },
           {
             "name": "manifest.json",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.4/manifest.json",
             "size": 127082
           },
           {
             "name": "sha256sums.txt",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.4/sha256sums.txt",
             "size": 52632
           }
         ],
@@ -43198,17 +43198,17 @@
         "assets": [
           {
             "name": "Active_Fedference_Research_Manuscript_v1.0.3_Zenodo_10.5281-zenodo.21969756.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.3/Active_Fedference_Research_Manuscript_v1.0.3_Zenodo_10.5281-zenodo.21969756.pdf",
             "size": 11951824
           },
           {
             "name": "manifest.json",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.3/manifest.json",
             "size": 127083
           },
           {
             "name": "sha256sums.txt",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.3/sha256sums.txt",
             "size": 52632
           }
         ],
@@ -43293,17 +43293,17 @@
         "assets": [
           {
             "name": "Active_Fedference_Research_Manuscript_v1.0.2_Zenodo_10.5281-zenodo.21934992.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.2/Active_Fedference_Research_Manuscript_v1.0.2_Zenodo_10.5281-zenodo.21934992.pdf",
             "size": 9431915
           },
           {
             "name": "manifest.json",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.2/manifest.json",
             "size": 126535
           },
           {
             "name": "sha256sums.txt",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.2/sha256sums.txt",
             "size": 52632
           }
         ],
@@ -43388,7 +43388,7 @@
         "assets": [
           {
             "name": "Active_Fedference_Research_Manuscript_v1.0.1_Zenodo_10.5281-zenodo.21919307.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.1/Active_Fedference_Research_Manuscript_v1.0.1_Zenodo_10.5281-zenodo.21919307.pdf",
             "size": 9017235
           }
         ],
@@ -43547,7 +43547,7 @@
         "assets": [
           {
             "name": "GeneralizedNotationNotation-manuscript-2026-09-17.pdf",
-            "download_url": "",
+            "download_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/download/v3.4.0/GeneralizedNotationNotation-manuscript-2026-09-17.pdf",
             "size": 1406342
           }
         ],
@@ -44203,6 +44203,23 @@
   "github_releases": [
     {
       "owner": "docxology",
+      "repo": "EntoLaw",
+      "tag": "v1.0.0",
+      "name": "Entomological Law (v1.0.0)",
+      "body": "First public release of *Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon*.\n\n- **Concept DOI:** https://doi.org/10.5281/zenodo.21137276\n- **Version DOI:** https://doi.org/10.5281/zenodo.21137277\n- **Zenodo record:** https://zenodo.org/records/21137277\n- **License:** CC-BY-4.0\n\nRegistry-first, claim-ledgered legal reference covering 8 legal roles an insect can occupy, 18 landmark cases, 43 statutes/treaties, 24 taxa, 44 historical milestones, and 5 cross-domain interconnection themes.",
+      "html_url": "https://github.com/docxology/EntoLaw/releases/tag/v1.0.0",
+      "published_at": "2026-07-02T17:25:05Z",
+      "assets": [
+        {
+          "name": "Friedman_2026_Entomological_5a189170.pdf",
+          "download_url": "https://github.com/docxology/EntoLaw/releases/download/v1.0.0/Friedman_2026_Entomological_5a189170.pdf",
+          "size": 1440326
+        }
+      ],
+      "full_name": "docxology/EntoLaw"
+    },
+    {
+      "owner": "docxology",
       "repo": "template",
       "tag": "v3.7.0",
       "name": "v3.7.0 — parallel-agent review + per-exemplar improvements",
@@ -44223,17 +44240,17 @@
       "assets": [
         {
           "name": "default.gitignore",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template/releases/download/v3.6.0/default.gitignore",
           "size": 1
         },
         {
           "name": "research_project_template-3.6.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template/releases/download/v3.6.0/research_project_template-3.6.0-py3-none-any.whl",
           "size": 1999410
         },
         {
           "name": "research_project_template-3.6.0.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template/releases/download/v3.6.0/research_project_template-3.6.0.tar.gz",
           "size": 1485597
         }
       ],
@@ -44250,7 +44267,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Autopoietic_84145371.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template/releases/download/v1.0.1/Friedman_2026_Autopoietic_84145371.pdf",
           "size": 497314
         }
       ],
@@ -44267,7 +44284,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Autopoietic_fd5b5d26.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template/releases/download/v1.0.0/Friedman_2026_Autopoietic_fd5b5d26.pdf",
           "size": 497246
         }
       ],
@@ -44429,23 +44446,6 @@
     },
     {
       "owner": "docxology",
-      "repo": "EntoLaw",
-      "tag": "v1.0.0",
-      "name": "Entomological Law (v1.0.0)",
-      "body": "First public release of *Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon*.\n\n- **Concept DOI:** https://doi.org/10.5281/zenodo.21137276\n- **Version DOI:** https://doi.org/10.5281/zenodo.21137277\n- **Zenodo record:** https://zenodo.org/records/21137277\n- **License:** CC-BY-4.0\n\nRegistry-first, claim-ledgered legal reference covering 8 legal roles an insect can occupy, 18 landmark cases, 43 statutes/treaties, 24 taxa, 44 historical milestones, and 5 cross-domain interconnection themes.",
-      "html_url": "https://github.com/docxology/EntoLaw/releases/tag/v1.0.0",
-      "published_at": "2026-07-02T17:25:05Z",
-      "assets": [
-        {
-          "name": "Friedman_2026_Entomological_5a189170.pdf",
-          "download_url": "",
-          "size": 1440326
-        }
-      ],
-      "full_name": "docxology/EntoLaw"
-    },
-    {
-      "owner": "docxology",
       "repo": "daf-jev",
       "tag": "v0.6.0",
       "name": "v0.6.0 — Jev as a factor source for graphical models",
@@ -44499,12 +44499,12 @@
       "assets": [
         {
           "name": "Ento_Linguistics_v1.1.1_2026-09-22.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/ento_linguistics/releases/download/v1.1.1/Ento_Linguistics_v1.1.1_2026-09-22.pdf",
           "size": 7382684
         },
         {
           "name": "Ento_Linguistics_v1.1.1_source_2026-09-22.zip",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/ento_linguistics/releases/download/v1.1.1/Ento_Linguistics_v1.1.1_source_2026-09-22.zip",
           "size": 2062983
         }
       ],
@@ -44598,12 +44598,12 @@
       "assets": [
         {
           "name": "NTQR_allotment_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/ntqr_allotment/releases/download/v0.1.0/NTQR_allotment_combined.pdf",
           "size": 4380836
         },
         {
           "name": "NTQR_allotment_combined_stego.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/ntqr_allotment/releases/download/v0.1.0/NTQR_allotment_combined_stego.pdf",
           "size": 4382155
         }
       ],
@@ -44620,7 +44620,7 @@
       "assets": [
         {
           "name": "entofile-0.4.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/entofile/releases/download/v0.4/entofile-0.4.pdf",
           "size": 3481755
         }
       ],
@@ -44637,7 +44637,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Deterministic_0af39137.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_autoscientists/releases/download/v1.0.2/Friedman_2026_Deterministic_0af39137.pdf",
           "size": 272072
         }
       ],
@@ -44654,7 +44654,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Deterministic_972bc4e0.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_autoscientists/releases/download/v1.0.1/Friedman_2026_Deterministic_972bc4e0.pdf",
           "size": 272080
         }
       ],
@@ -44759,7 +44759,7 @@
       "assets": [
         {
           "name": "CogSecSkills_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/CogSecSkills/releases/download/v1.0.0/CogSecSkills_combined.pdf",
           "size": 3379139
         }
       ],
@@ -44798,22 +44798,22 @@
       "assets": [
         {
           "name": "cognitive_case_diagrams-2.7.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.7.0/cognitive_case_diagrams-2.7.0-py3-none-any.whl",
           "size": 309136
         },
         {
           "name": "cognitive_case_diagrams-2.7.0-reproducibility.zip",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.7.0/cognitive_case_diagrams-2.7.0-reproducibility.zip",
           "size": 29030911
         },
         {
           "name": "cognitive_case_diagrams-2.7.0.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.7.0/cognitive_case_diagrams-2.7.0.tar.gz",
           "size": 688942
         },
         {
           "name": "cognitive_case_diagrams_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.7.0/cognitive_case_diagrams_combined.pdf",
           "size": 15244209
         }
       ],
@@ -44830,22 +44830,22 @@
       "assets": [
         {
           "name": "cognitive_case_diagrams-2.6.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.6.0/cognitive_case_diagrams-2.6.0-py3-none-any.whl",
           "size": 296898
         },
         {
           "name": "cognitive_case_diagrams-2.6.0-reproducibility.zip",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.6.0/cognitive_case_diagrams-2.6.0-reproducibility.zip",
           "size": 28988361
         },
         {
           "name": "cognitive_case_diagrams-2.6.0.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.6.0/cognitive_case_diagrams-2.6.0.tar.gz",
           "size": 669945
         },
         {
           "name": "cognitive_case_diagrams_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.6.0/cognitive_case_diagrams_combined.pdf",
           "size": 15237745
         }
       ],
@@ -44862,22 +44862,22 @@
       "assets": [
         {
           "name": "cognitive_case_diagrams-2.5.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.5.0/cognitive_case_diagrams-2.5.0-py3-none-any.whl",
           "size": 292891
         },
         {
           "name": "cognitive_case_diagrams-2.5.0-reproducibility.zip",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.5.0/cognitive_case_diagrams-2.5.0-reproducibility.zip",
           "size": 28942239
         },
         {
           "name": "cognitive_case_diagrams-2.5.0.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.5.0/cognitive_case_diagrams-2.5.0.tar.gz",
           "size": 659152
         },
         {
           "name": "cognitive_case_diagrams_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.5.0/cognitive_case_diagrams_combined.pdf",
           "size": 15234203
         }
       ],
@@ -44894,52 +44894,52 @@
       "assets": [
         {
           "name": "cognitive_case_diagrams-2.4.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/cognitive_case_diagrams-2.4.0-py3-none-any.whl",
           "size": 270362
         },
         {
           "name": "cognitive_case_diagrams-2.4.0-reproducibility.manifest.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/cognitive_case_diagrams-2.4.0-reproducibility.manifest.json",
           "size": 62585
         },
         {
           "name": "cognitive_case_diagrams-2.4.0-reproducibility.zip",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/cognitive_case_diagrams-2.4.0-reproducibility.zip",
           "size": 28789203
         },
         {
           "name": "cognitive_case_diagrams-2.4.0-synthetic-results.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/cognitive_case_diagrams-2.4.0-synthetic-results.json",
           "size": 131838
         },
         {
           "name": "cognitive_case_diagrams-2.4.0.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/cognitive_case_diagrams-2.4.0.pdf",
           "size": 15267582
         },
         {
           "name": "cognitive_case_diagrams-2.4.0.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/cognitive_case_diagrams-2.4.0.tar.gz",
           "size": 613386
         },
         {
           "name": "quality_receipt.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/quality_receipt.json",
           "size": 34200
         },
         {
           "name": "release-validation.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/release-validation.json",
           "size": 1181
         },
         {
           "name": "SHA256SUMS",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/SHA256SUMS",
           "size": 944
         },
         {
           "name": "zenodo-publication.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cognitive_case_diagrams/releases/download/v2.4.0/zenodo-publication.json",
           "size": 2551
         }
       ],
@@ -45000,7 +45000,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Domain_ecd8519f.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_methods_paper/releases/download/v1.0.0/Friedman_2026_Domain_ecd8519f.pdf",
           "size": 144305
         }
       ],
@@ -45017,12 +45017,12 @@
       "assets": [
         {
           "name": "sbom.cdx.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/untagged-529fade7e07f0da8cd14/sbom.cdx.json",
           "size": 208287
         },
         {
           "name": "sbom.spdx.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/untagged-529fade7e07f0da8cd14/sbom.spdx.json",
           "size": 11523080
         }
       ],
@@ -45050,62 +45050,62 @@
       "assets": [
         {
           "name": "CITATION.cff",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/CITATION.cff",
           "size": 334
         },
         {
           "name": "codomyrmex-1.3.0-content.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/codomyrmex-1.3.0-content.pdf",
           "size": 6876519
         },
         {
           "name": "codomyrmex-1.3.0-release-bundle.zip",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/codomyrmex-1.3.0-release-bundle.zip",
           "size": 20749927
         },
         {
           "name": "codomyrmex-1.3.0.html",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/codomyrmex-1.3.0.html",
           "size": 9755311
         },
         {
           "name": "codomyrmex-1.3.0.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/codomyrmex-1.3.0.pdf",
           "size": 6883385
         },
         {
           "name": "default.zenodo.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/default.zenodo.json",
           "size": 3131
         },
         {
           "name": "publication_manifest.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/publication_manifest.json",
           "size": 16360
         },
         {
           "name": "publication_metadata.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/publication_metadata.json",
           "size": 2977
         },
         {
           "name": "sbom.cdx.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/sbom.cdx.json",
           "size": 208546
         },
         {
           "name": "sbom.spdx.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/sbom.spdx.json",
           "size": 11524320
         },
         {
           "name": "SHA256SUMS",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/SHA256SUMS",
           "size": 2594
         },
         {
           "name": "SHA512SUMS",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.3.0-paper/SHA512SUMS",
           "size": 4322
         }
       ],
@@ -45199,7 +45199,7 @@
       "assets": [
         {
           "name": "release_1_1_5.png",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.1.5/release_1_1_5.png",
           "size": 832194
         }
       ],
@@ -45249,22 +45249,22 @@
       "assets": [
         {
           "name": "codomyrmex-1.1.1-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.1.1/codomyrmex-1.1.1-py3-none-any.whl",
           "size": 18952158
         },
         {
           "name": "codomyrmex-1.1.1.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.1.1/codomyrmex-1.1.1.tar.gz",
           "size": 13586594
         },
         {
           "name": "release-v1.1.1-before-after.png",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.1.1/release-v1.1.1-before-after.png",
           "size": 586075
         },
         {
           "name": "release-v1.1.1-hero.png",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.1.1/release-v1.1.1-hero.png",
           "size": 857014
         }
       ],
@@ -45281,12 +45281,12 @@
       "assets": [
         {
           "name": "codomyrmex-1.1.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.1.0/codomyrmex-1.1.0-py3-none-any.whl",
           "size": 18132418
         },
         {
           "name": "codomyrmex-1.1.0.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/codomyrmex/releases/download/v1.1.0/codomyrmex-1.1.0.tar.gz",
           "size": 13836219
         }
       ],
@@ -45391,7 +45391,7 @@
       "assets": [
         {
           "name": "FractiSkills_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/FractiSkills/releases/download/v0.1.0/FractiSkills_combined.pdf",
           "size": 1862198
         }
       ],
@@ -45408,7 +45408,7 @@
       "assets": [
         {
           "name": "alphacogant_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/alphacogant/releases/download/v1.0.1/alphacogant_combined.pdf",
           "size": 2899053
         }
       ],
@@ -45425,7 +45425,7 @@
       "assets": [
         {
           "name": "alphacogant_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/alphacogant/releases/download/v1.0.0/alphacogant_combined.pdf",
           "size": 2889782
         }
       ],
@@ -45442,7 +45442,7 @@
       "assets": [
         {
           "name": "DuckRabbit_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/DuckRabbit/releases/download/v0.5.0/DuckRabbit_combined.pdf",
           "size": 3938173
         }
       ],
@@ -45459,22 +45459,22 @@
       "assets": [
         {
           "name": "CHECKSUMS.sha256",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/Skillarum/releases/download/v0.2.0/CHECKSUMS.sha256",
           "size": 287
         },
         {
           "name": "skillarum-0.2.0-research-artifacts.zip",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/Skillarum/releases/download/v0.2.0/skillarum-0.2.0-research-artifacts.zip",
           "size": 3916565
         },
         {
           "name": "skillarum-0.2.0-source.zip",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/Skillarum/releases/download/v0.2.0/skillarum-0.2.0-source.zip",
           "size": 2728580
         },
         {
           "name": "Skillarum_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/Skillarum/releases/download/v0.2.0/Skillarum_combined.pdf",
           "size": 3629479
         }
       ],
@@ -45557,7 +45557,7 @@
       "assets": [
         {
           "name": "AGEINT-Agentic-Intelligence-Edition-0.1.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/AGEINT/releases/download/v0.1.0/AGEINT-Agentic-Intelligence-Edition-0.1.pdf",
           "size": 35805348
         }
       ],
@@ -45574,7 +45574,7 @@
       "assets": [
         {
           "name": "BeeStack_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/BeeStack/releases/download/v1.0.0/BeeStack_combined.pdf",
           "size": 8059701
         }
       ],
@@ -45591,7 +45591,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Active_f191b48f.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_active_inference/releases/download/v0.3.2/Friedman_2026_Active_f191b48f.pdf",
           "size": 4101185
         }
       ],
@@ -45608,7 +45608,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Active_158b2fe2.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_active_inference/releases/download/v0.3.1/Friedman_2026_Active_158b2fe2.pdf",
           "size": 4011794
         }
       ],
@@ -45625,7 +45625,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Active_713452dd.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_active_inference/releases/download/v0.3.0/Friedman_2026_Active_713452dd.pdf",
           "size": 617911
         }
       ],
@@ -45642,7 +45642,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Active_d7e8d4b8.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_active_inference/releases/download/v0.2.0/Friedman_2026_Active_d7e8d4b8.pdf",
           "size": 665892
         }
       ],
@@ -45659,7 +45659,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Living_412d4fcf.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_literature_meta_analysis/releases/download/v0.1.0/Friedman_2026_Living_412d4fcf.pdf",
           "size": 7314033
         }
       ],
@@ -45676,7 +45676,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Refinement_36431789.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_gold_refinement/releases/download/v0.1.0/Friedman_2026_Refinement_36431789.pdf",
           "size": 1019881
         }
       ],
@@ -45693,7 +45693,7 @@
       "assets": [
         {
           "name": "prior_cognitive_art_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/prior_cognitive_art/releases/download/v0.1.0/prior_cognitive_art_combined.pdf",
           "size": 4429775
         }
       ],
@@ -45765,7 +45765,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Recovering_e1196698.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/ntqr_llm/releases/download/v1.0.0/Friedman_2026_Recovering_e1196698.pdf",
           "size": 2270020
         }
       ],
@@ -45782,12 +45782,12 @@
       "assets": [
         {
           "name": "blake_working_paper.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/blake/releases/download/v0.1.0/blake_working_paper.pdf",
           "size": 11255591
         },
         {
           "name": "public_release_bundle.zip",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/blake/releases/download/v0.1.0/public_release_bundle.zip",
           "size": 11617229
         }
       ],
@@ -45804,7 +45804,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Music_296b3b5c.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/grateful_data/releases/download/v1.0.0/Friedman_2026_Music_296b3b5c.pdf",
           "size": 4142817
         }
       ],
@@ -45854,17 +45854,17 @@
       "assets": [
         {
           "name": "democreate-0.6.2-manuscript.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/democreate/releases/download/v0.6.2/democreate-0.6.2-manuscript.pdf",
           "size": 1246461
         },
         {
           "name": "democreate-0.6.2-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/democreate/releases/download/v0.6.2/democreate-0.6.2-py3-none-any.whl",
           "size": 172758
         },
         {
           "name": "democreate-0.6.2-source.zip",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/democreate/releases/download/v0.6.2/democreate-0.6.2-source.zip",
           "size": 35551741
         }
       ],
@@ -45892,17 +45892,17 @@
       "assets": [
         {
           "name": "thalia-0.1.0-artifacts.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/thalia/releases/download/v0.1.0/thalia-0.1.0-artifacts.tar.gz",
           "size": 16736189
         },
         {
           "name": "thalia-0.1.0-source.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/thalia/releases/download/v0.1.0/thalia-0.1.0-source.tar.gz",
           "size": 842137
         },
         {
           "name": "thalia-0.1.0.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/thalia/releases/download/v0.1.0/thalia-0.1.0.pdf",
           "size": 5005902
         }
       ],
@@ -45919,7 +45919,7 @@
       "assets": [
         {
           "name": "realizing_emptiness_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/realizing_emptiness/releases/download/v1.0.0/realizing_emptiness_combined.pdf",
           "size": 15705414
         }
       ],
@@ -45980,12 +45980,12 @@
       "assets": [
         {
           "name": "biology_textbook_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/biology_textbook/releases/download/v1.0.0/biology_textbook_combined.pdf",
           "size": 22377476
         },
         {
           "name": "biology_textbook_v1.0.0_executable_bundle.zip",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/biology_textbook/releases/download/v1.0.0/biology_textbook_v1.0.0_executable_bundle.zip",
           "size": 27021061
         }
       ],
@@ -46002,7 +46002,7 @@
       "assets": [
         {
           "name": "bond-manuscript_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/bond/releases/download/v1.0.0/bond-manuscript_combined.pdf",
           "size": 10252200
         }
       ],
@@ -46019,7 +46019,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Selfimprovement_6e6d19d0.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_sia/releases/download/v0.1.2/Friedman_2026_Selfimprovement_6e6d19d0.pdf",
           "size": 223019
         }
       ],
@@ -46036,7 +46036,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Selfimprovement_e350973a.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_sia/releases/download/v0.1.1/Friedman_2026_Selfimprovement_e350973a.pdf",
           "size": 82577
         }
       ],
@@ -46053,7 +46053,7 @@
       "assets": [
         {
           "name": "template_autopoiesis_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_autopoiesis/releases/download/v1.0.1/template_autopoiesis_combined.pdf",
           "size": 498796
         }
       ],
@@ -46081,7 +46081,7 @@
       "assets": [
         {
           "name": "cohereants_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/cohereants/releases/download/v1.0.0/cohereants_combined.pdf",
           "size": 13895561
         }
       ],
@@ -46109,22 +46109,22 @@
       "assets": [
         {
           "name": "synthobs-1.618.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/SynthOBS/releases/download/v1.618.0/synthobs-1.618.0-py3-none-any.whl",
           "size": 47827
         },
         {
           "name": "synthobs-1.618.0.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/SynthOBS/releases/download/v1.618.0/synthobs-1.618.0.tar.gz",
           "size": 85421
         },
         {
           "name": "SynthOBS_v1.618.0.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/SynthOBS/releases/download/v1.618.0/SynthOBS_v1.618.0.pdf",
           "size": 2985390
         },
         {
           "name": "SynthOBS_v1.618.0_html.zip",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/SynthOBS/releases/download/v1.618.0/SynthOBS_v1.618.0_html.zip",
           "size": 142937
         }
       ],
@@ -46339,7 +46339,7 @@
       "assets": [
         {
           "name": "template_prose_project_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-release-smoke/releases/download/v0.4.0-release-smoke/template_prose_project_combined.pdf",
           "size": 228540
         }
       ],
@@ -46356,7 +46356,7 @@
       "assets": [
         {
           "name": "template_prose_project_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-release-smoke/releases/download/v0.3.0-release-smoke/template_prose_project_combined.pdf",
           "size": 228540
         }
       ],
@@ -46373,7 +46373,7 @@
       "assets": [
         {
           "name": "template_prose_project_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-release-smoke/releases/download/v0.2.0-release-smoke/template_prose_project_combined.pdf",
           "size": 228540
         }
       ],
@@ -46390,7 +46390,7 @@
       "assets": [
         {
           "name": "template_prose_project_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-release-smoke/releases/download/v0.1.0-release-smoke/template_prose_project_combined.pdf",
           "size": 228540
         }
       ],
@@ -46407,37 +46407,37 @@
       "assets": [
         {
           "name": "template_pitch_deck_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_pitch_deck_combined.pdf",
           "size": 60923
         },
         {
           "name": "template_template_pitch_long.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_template_pitch_long.pdf",
           "size": 601692
         },
         {
           "name": "template_template_pitch_long.pptx",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_template_pitch_long.pptx",
           "size": 475075
         },
         {
           "name": "template_template_pitch_medium.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_template_pitch_medium.pdf",
           "size": 512959
         },
         {
           "name": "template_template_pitch_medium.pptx",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_template_pitch_medium.pptx",
           "size": 423887
         },
         {
           "name": "template_template_pitch_short.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_template_pitch_short.pdf",
           "size": 101687
         },
         {
           "name": "template_template_pitch_short.pptx",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.2/template_template_pitch_short.pptx",
           "size": 108883
         }
       ],
@@ -46454,37 +46454,37 @@
       "assets": [
         {
           "name": "template_pitch_deck_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_pitch_deck_combined.pdf",
           "size": 60111
         },
         {
           "name": "template_template_pitch_long.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_template_pitch_long.pdf",
           "size": 601723
         },
         {
           "name": "template_template_pitch_long.pptx",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_template_pitch_long.pptx",
           "size": 475087
         },
         {
           "name": "template_template_pitch_medium.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_template_pitch_medium.pdf",
           "size": 512982
         },
         {
           "name": "template_template_pitch_medium.pptx",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_template_pitch_medium.pptx",
           "size": 423903
         },
         {
           "name": "template_template_pitch_short.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_template_pitch_short.pdf",
           "size": 101720
         },
         {
           "name": "template_template_pitch_short.pptx",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template-pitch-deck/releases/download/v1.0.0/template_template_pitch_short.pptx",
           "size": 108898
         }
       ],
@@ -46523,7 +46523,7 @@
       "assets": [
         {
           "name": "Digi-PPPiP_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/Digi-PPPiP/releases/download/v1.0.0/Digi-PPPiP_combined.pdf",
           "size": 11418704
         }
       ],
@@ -46551,7 +46551,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Bounded_e07b6285.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_autoresearch_project/releases/download/v0.3.2/Friedman_2026_Bounded_e07b6285.pdf",
           "size": 1344238
         }
       ],
@@ -46568,7 +46568,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Bounded_537dd8a6.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_autoresearch_project/releases/download/v0.3.1/Friedman_2026_Bounded_537dd8a6.pdf",
           "size": 1343238
         }
       ],
@@ -46585,7 +46585,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Bounded_f02abeea.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_autoresearch_project/releases/download/v0.3.0/Friedman_2026_Bounded_f02abeea.pdf",
           "size": 1339496
         }
       ],
@@ -46602,7 +46602,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Bounded_922d1242.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_autoresearch_project/releases/download/v0.2.0/Friedman_2026_Bounded_922d1242.pdf",
           "size": 1303159
         }
       ],
@@ -46619,7 +46619,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Convergence_cd54b958.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.5.2/Friedman_2026_Convergence_cd54b958.pdf",
           "size": 1731747
         }
       ],
@@ -46636,7 +46636,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Convergence_33ceeb67.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.5.1/Friedman_2026_Convergence_33ceeb67.pdf",
           "size": 1725781
         }
       ],
@@ -46653,7 +46653,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Convergence_d63f738b.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.5.0/Friedman_2026_Convergence_d63f738b.pdf",
           "size": 1727340
         }
       ],
@@ -46670,7 +46670,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Convergence_b08688ce.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.4.0/Friedman_2026_Convergence_b08688ce.pdf",
           "size": 1730480
         }
       ],
@@ -46687,7 +46687,7 @@
       "assets": [
         {
           "name": "Author_2026_Convergence_b08688ce.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.3.0/Author_2026_Convergence_b08688ce.pdf",
           "size": 1730480
         }
       ],
@@ -46704,7 +46704,7 @@
       "assets": [
         {
           "name": "Author_2026_Convergence_b08688ce.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.2.0/Author_2026_Convergence_b08688ce.pdf",
           "size": 1730480
         }
       ],
@@ -46721,7 +46721,7 @@
       "assets": [
         {
           "name": "Author_2026_Convergence_b591a0ce.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.1.0/Author_2026_Convergence_b591a0ce.pdf",
           "size": 1728225
         }
       ],
@@ -46738,7 +46738,7 @@
       "assets": [
         {
           "name": "template_code_project_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_code_project/releases/download/v2.0.0/template_code_project_combined.pdf",
           "size": 1728225
         }
       ],
@@ -46755,7 +46755,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Exploratory_0b10852b.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_eda_notebook/releases/download/v1.0.0/Friedman_2026_Exploratory_0b10852b.pdf",
           "size": 158570
         }
       ],
@@ -46772,7 +46772,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Template_d9248f4f.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_madlib/releases/download/v0.1.1/Friedman_2026_Template_d9248f4f.pdf",
           "size": 1001791
         }
       ],
@@ -46789,7 +46789,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Template_a593c1fe.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_madlib/releases/download/v0.1.0/Friedman_2026_Template_a593c1fe.pdf",
           "size": 1001108
         }
       ],
@@ -46806,7 +46806,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Triplicate_6c693dbd.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_newspaper/releases/download/v1.0.2/Friedman_2026_Triplicate_6c693dbd.pdf",
           "size": 58491
         }
       ],
@@ -46823,7 +46823,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Triplicate_851f9973.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_newspaper/releases/download/v1.0.1/Friedman_2026_Triplicate_851f9973.pdf",
           "size": 58485
         }
       ],
@@ -46851,7 +46851,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Editorial_290d21b1.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_prose_project/releases/download/v0.4.2/Friedman_2026_Editorial_290d21b1.pdf",
           "size": 132373
         }
       ],
@@ -46868,7 +46868,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Editorial_b59313ea.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_prose_project/releases/download/v0.4.1/Friedman_2026_Editorial_b59313ea.pdf",
           "size": 270739
         }
       ],
@@ -46885,7 +46885,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Editorial_cbe5adae.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_prose_project/releases/download/v0.4.0/Friedman_2026_Editorial_cbe5adae.pdf",
           "size": 270712
         }
       ],
@@ -46902,7 +46902,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Editorial_72e603df.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_prose_project/releases/download/v0.3.0/Friedman_2026_Editorial_72e603df.pdf",
           "size": 228540
         }
       ],
@@ -46919,7 +46919,7 @@
       "assets": [
         {
           "name": "Author_2026_Editorial_72e603df.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_prose_project/releases/download/v0.2.0/Author_2026_Editorial_72e603df.pdf",
           "size": 228540
         }
       ],
@@ -46936,32 +46936,32 @@
       "assets": [
         {
           "name": "CITATION.cff",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_storybook/releases/download/v0.1.0/CITATION.cff",
           "size": 576
         },
         {
           "name": "default.zenodo.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_storybook/releases/download/v0.1.0/default.zenodo.json",
           "size": 711
         },
         {
           "name": "storybook_manifest.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_storybook/releases/download/v0.1.0/storybook_manifest.json",
           "size": 5466
         },
         {
           "name": "template_storybook_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_storybook/releases/download/v0.1.0/template_storybook_combined.pdf",
           "size": 45341
         },
         {
           "name": "the-shape-between.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_storybook/releases/download/v0.1.0/the-shape-between.pdf",
           "size": 1492876
         },
         {
           "name": "validation_report.json",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_storybook/releases/download/v0.1.0/validation_report.json",
           "size": 4633
         }
       ],
@@ -46978,7 +46978,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Template_535bd809.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.9/Friedman_2026_Template_535bd809.pdf",
           "size": 1389726
         }
       ],
@@ -46995,7 +46995,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Template_b9bc5cf3.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.8/Friedman_2026_Template_b9bc5cf3.pdf",
           "size": 1390899
         }
       ],
@@ -47012,7 +47012,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Template_cc674248.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.7/Friedman_2026_Template_cc674248.pdf",
           "size": 1391795
         }
       ],
@@ -47029,7 +47029,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Template_57199c03.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.6/Friedman_2026_Template_57199c03.pdf",
           "size": 1351872
         }
       ],
@@ -47046,7 +47046,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Template_5f200f33.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.5/Friedman_2026_Template_5f200f33.pdf",
           "size": 1314536
         }
       ],
@@ -47063,7 +47063,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Texttttemplate_af9c78b8.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.4/Friedman_2026_Texttttemplate_af9c78b8.pdf",
           "size": 1315114
         }
       ],
@@ -47080,7 +47080,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Texttttemplate_d2f961ef.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_template/releases/download/v1.0.3/Friedman_2026_Texttttemplate_d2f961ef.pdf",
           "size": 1314394
         }
       ],
@@ -47097,7 +47097,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Template_7b67cb2d.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_textbook/releases/download/v0.1.2/Friedman_2026_Template_7b67cb2d.pdf",
           "size": 939766
         }
       ],
@@ -47114,7 +47114,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Template_c6c97f24.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_textbook/releases/download/v0.1.1/Friedman_2026_Template_c6c97f24.pdf",
           "size": 1122785
         }
       ],
@@ -47131,22 +47131,22 @@
       "assets": [
         {
           "name": "template_textbook.html",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_textbook/releases/download/v0.1.0/template_textbook.html",
           "size": 239013
         },
         {
           "name": "template_textbook_combined.docx",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_textbook/releases/download/v0.1.0/template_textbook_combined.docx",
           "size": 58186
         },
         {
           "name": "template_textbook_combined.epub",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_textbook/releases/download/v0.1.0/template_textbook_combined.epub",
           "size": 113949
         },
         {
           "name": "template_textbook_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/docxology/template_textbook/releases/download/v0.1.0/template_textbook_combined.pdf",
           "size": 1116735
         }
       ],
@@ -47196,7 +47196,7 @@
       "assets": [
         {
           "name": "GeneralizedNotationNotation-manuscript-2026-09-17.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/download/v3.4.0/GeneralizedNotationNotation-manuscript-2026-09-17.pdf",
           "size": 1406342
         }
       ],
@@ -47345,7 +47345,7 @@
       "assets": [
         {
           "name": "fep_lean-manuscript-2026-09-17.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.2.0/fep_lean-manuscript-2026-09-17.pdf",
           "size": 3161640
         }
       ],
@@ -47362,42 +47362,42 @@
       "assets": [
         {
           "name": "fep-lean-1.1.0-155-evidence-bundle.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep-lean-1.1.0-155-evidence-bundle.tar.gz",
           "size": 6095784
         },
         {
           "name": "fep-lean-1.1.0-155-evidence-bundle.tar.gz.sha256",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep-lean-1.1.0-155-evidence-bundle.tar.gz.sha256",
           "size": 108
         },
         {
           "name": "fep-lean-manuscript-1.1.0.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep-lean-manuscript-1.1.0.pdf",
           "size": 2005312
         },
         {
           "name": "fep-lean-manuscript-1.1.0.pdf.sha256",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep-lean-manuscript-1.1.0.pdf.sha256",
           "size": 96
         },
         {
           "name": "fep_lean-1.1.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep_lean-1.1.0-py3-none-any.whl",
           "size": 578523
         },
         {
           "name": "fep_lean-1.1.0-py3-none-any.whl.sha256",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep_lean-1.1.0-py3-none-any.whl.sha256",
           "size": 98
         },
         {
           "name": "fep_lean-1.1.0.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep_lean-1.1.0.tar.gz",
           "size": 692987
         },
         {
           "name": "fep_lean-1.1.0.tar.gz.sha256",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.1.0/fep_lean-1.1.0.tar.gz.sha256",
           "size": 88
         }
       ],
@@ -47414,17 +47414,17 @@
       "assets": [
         {
           "name": "CITATION.cff",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.0.0/CITATION.cff",
           "size": 2007
         },
         {
           "name": "fep_lean_v1_04-24-2026.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.0.0/fep_lean_v1_04-24-2026.pdf",
           "size": 1908263
         },
         {
           "name": "LICENSE",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/download/v1.0.0/LICENSE",
           "size": 2223
         }
       ],
@@ -47485,7 +47485,7 @@
       "assets": [
         {
           "name": "GEO-INFER-manuscript-2026-09-17.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.3.0/GEO-INFER-manuscript-2026-09-17.pdf",
           "size": 985136
         }
       ],
@@ -47502,227 +47502,227 @@
       "assets": [
         {
           "name": "geo_infer_act-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_act-0.2.0-py3-none-any.whl",
           "size": 245609
         },
         {
           "name": "geo_infer_ag-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_ag-0.2.0-py3-none-any.whl",
           "size": 59896
         },
         {
           "name": "geo_infer_agent-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_agent-0.2.0-py3-none-any.whl",
           "size": 107775
         },
         {
           "name": "geo_infer_ai-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_ai-0.2.0-py3-none-any.whl",
           "size": 56961
         },
         {
           "name": "geo_infer_ant-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_ant-0.2.0-py3-none-any.whl",
           "size": 143594
         },
         {
           "name": "geo_infer_api-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_api-0.2.0-py3-none-any.whl",
           "size": 29237
         },
         {
           "name": "geo_infer_app-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_app-0.2.0-py3-none-any.whl",
           "size": 35217
         },
         {
           "name": "geo_infer_art-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_art-0.2.0-py3-none-any.whl",
           "size": 97362
         },
         {
           "name": "geo_infer_bayes-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_bayes-0.2.0-py3-none-any.whl",
           "size": 134071
         },
         {
           "name": "geo_infer_bio-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_bio-0.2.0-py3-none-any.whl",
           "size": 33643
         },
         {
           "name": "geo_infer_civ-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_civ-0.2.0-py3-none-any.whl",
           "size": 19351
         },
         {
           "name": "geo_infer_climate-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_climate-0.2.0-py3-none-any.whl",
           "size": 30318
         },
         {
           "name": "geo_infer_cog-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_cog-0.2.0-py3-none-any.whl",
           "size": 108974
         },
         {
           "name": "geo_infer_comms-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_comms-0.2.0-py3-none-any.whl",
           "size": 96408
         },
         {
           "name": "geo_infer_data-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_data-0.2.0-py3-none-any.whl",
           "size": 123418
         },
         {
           "name": "geo_infer_econ-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_econ-0.2.0-py3-none-any.whl",
           "size": 157684
         },
         {
           "name": "geo_infer_edu-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_edu-0.2.0-py3-none-any.whl",
           "size": 32400
         },
         {
           "name": "geo_infer_emergency-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_emergency-0.2.0-py3-none-any.whl",
           "size": 32405
         },
         {
           "name": "geo_infer_energy-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_energy-0.2.0-py3-none-any.whl",
           "size": 25870
         },
         {
           "name": "geo_infer_examples-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_examples-0.2.0-py3-none-any.whl",
           "size": 24351
         },
         {
           "name": "geo_infer_forest-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_forest-0.2.0-py3-none-any.whl",
           "size": 23000
         },
         {
           "name": "geo_infer_git-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_git-0.2.0-py3-none-any.whl",
           "size": 116103
         },
         {
           "name": "geo_infer_health-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_health-0.2.0-py3-none-any.whl",
           "size": 56309
         },
         {
           "name": "geo_infer_insurance-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_insurance-0.2.0-py3-none-any.whl",
           "size": 92563
         },
         {
           "name": "geo_infer_intra-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_intra-0.2.0-py3-none-any.whl",
           "size": 31025
         },
         {
           "name": "geo_infer_iot-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_iot-0.2.0-py3-none-any.whl",
           "size": 92340
         },
         {
           "name": "geo_infer_log-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_log-0.2.0-py3-none-any.whl",
           "size": 70594
         },
         {
           "name": "geo_infer_marine-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_marine-0.2.0-py3-none-any.whl",
           "size": 26040
         },
         {
           "name": "geo_infer_math-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_math-0.2.0-py3-none-any.whl",
           "size": 202836
         },
         {
           "name": "geo_infer_metagov-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_metagov-0.2.0-py3-none-any.whl",
           "size": 76483
         },
         {
           "name": "geo_infer_norms-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_norms-0.2.0-py3-none-any.whl",
           "size": 85671
         },
         {
           "name": "geo_infer_ops-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_ops-0.2.0-py3-none-any.whl",
           "size": 49957
         },
         {
           "name": "geo_infer_org-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_org-0.2.0-py3-none-any.whl",
           "size": 18577
         },
         {
           "name": "geo_infer_pep-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_pep-0.2.0-py3-none-any.whl",
           "size": 77991
         },
         {
           "name": "geo_infer_place-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_place-0.2.0-py3-none-any.whl",
           "size": 360072
         },
         {
           "name": "geo_infer_req-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_req-0.2.0-py3-none-any.whl",
           "size": 17728
         },
         {
           "name": "geo_infer_risk-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_risk-0.2.0-py3-none-any.whl",
           "size": 118898
         },
         {
           "name": "geo_infer_sec-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_sec-0.2.0-py3-none-any.whl",
           "size": 92568
         },
         {
           "name": "geo_infer_sim-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_sim-0.2.0-py3-none-any.whl",
           "size": 42596
         },
         {
           "name": "geo_infer_space-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_space-0.2.0-py3-none-any.whl",
           "size": 358171
         },
         {
           "name": "geo_infer_spm-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_spm-0.2.0-py3-none-any.whl",
           "size": 107247
         },
         {
           "name": "geo_infer_test-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_test-0.2.0-py3-none-any.whl",
           "size": 42172
         },
         {
           "name": "geo_infer_time-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_time-0.2.0-py3-none-any.whl",
           "size": 66929
         },
         {
           "name": "geo_infer_transport-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_transport-0.2.0-py3-none-any.whl",
           "size": 27457
         },
         {
           "name": "geo_infer_water-0.2.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/GEO_INFER/releases/download/v0.2.0/geo_infer_water-0.2.0-py3-none-any.whl",
           "size": 29051
         }
       ],
@@ -47882,12 +47882,12 @@
       "assets": [
         {
           "name": "COGANT-0.6.0-source.zip",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/COGANT/releases/download/v0.6.0/COGANT-0.6.0-source.zip",
           "size": 4562700
         },
         {
           "name": "COGANT-0.6.0.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/COGANT/releases/download/v0.6.0/COGANT-0.6.0.pdf",
           "size": 3654907
         }
       ],
@@ -47904,7 +47904,7 @@
       "assets": [
         {
           "name": "actinf_policy_entanglement_lean_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/download/v1.0.0/actinf_policy_entanglement_lean_combined.pdf",
           "size": 14419275
         }
       ],
@@ -47932,7 +47932,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Onpolicy_c6b5ec49.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/download/v1.0.2/Friedman_2026_Onpolicy_c6b5ec49.pdf",
           "size": 8102450
         }
       ],
@@ -47949,7 +47949,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Onpolicy_4f7040bc.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/download/v1.0.1/Friedman_2026_Onpolicy_4f7040bc.pdf",
           "size": 7804138
         }
       ],
@@ -47966,7 +47966,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Onpolicy_db0f2e4f.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/download/v1.0.0/Friedman_2026_Onpolicy_db0f2e4f.pdf",
           "size": 7806135
         }
       ],
@@ -48082,22 +48082,22 @@
       "assets": [
         {
           "name": "Active_Skillference_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Skillference/releases/download/v1.0.1/Active_Skillference_combined.pdf",
           "size": 5731352
         },
         {
           "name": "Active_Skillference_v1.0.0_DOI-10.5281-zenodo.21865644.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Skillference/releases/download/v1.0.1/Active_Skillference_v1.0.0_DOI-10.5281-zenodo.21865644.pdf",
           "size": 5731097
         },
         {
           "name": "figure_registry.json",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Skillference/releases/download/v1.0.1/figure_registry.json",
           "size": 112558
         },
         {
           "name": "skilltree_project.json",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Skillference/releases/download/v1.0.1/skilltree_project.json",
           "size": 3702245
         }
       ],
@@ -48114,17 +48114,17 @@
       "assets": [
         {
           "name": "Active_Skillference_v1.0.0_DOI-10.5281-zenodo.21865644.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Skillference/releases/download/v1.0.0/Active_Skillference_v1.0.0_DOI-10.5281-zenodo.21865644.pdf",
           "size": 5731097
         },
         {
           "name": "figure_registry.json",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Skillference/releases/download/v1.0.0/figure_registry.json",
           "size": 112558
         },
         {
           "name": "skilltree_project.json",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Skillference/releases/download/v1.0.0/skilltree_project.json",
           "size": 3702245
         }
       ],
@@ -48141,27 +48141,27 @@
       "assets": [
         {
           "name": "active_inference_power-v1.0.0-source.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/download/v1.0.0/active_inference_power-v1.0.0-source.tar.gz",
           "size": 3027441
         },
         {
           "name": "active_inference_power_combined.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/download/v1.0.0/active_inference_power_combined.pdf",
           "size": 11205677
         },
         {
           "name": "manifest.json",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/download/v1.0.0/manifest.json",
           "size": 25429
         },
         {
           "name": "release_review_final.json",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/download/v1.0.0/release_review_final.json",
           "size": 4936
         },
         {
           "name": "renderer_provenance.json",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/download/v1.0.0/renderer_provenance.json",
           "size": 17160
         }
       ],
@@ -48200,7 +48200,7 @@
       "assets": [
         {
           "name": "Friedman_2026_Active_d676159d.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/download/v0.2.0/Friedman_2026_Active_d676159d.pdf",
           "size": 14942798
         }
       ],
@@ -48217,27 +48217,27 @@
       "assets": [
         {
           "name": "active_fedference-1.1.0-py3-none-any.whl",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.1.0/active_fedference-1.1.0-py3-none-any.whl",
           "size": 664758
         },
         {
           "name": "active_fedference-1.1.0.tar.gz",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.1.0/active_fedference-1.1.0.tar.gz",
           "size": 2007619
         },
         {
           "name": "Active_Fedference_Research_Manuscript_v1.1.0_Zenodo_10.5281-zenodo.22149133.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.1.0/Active_Fedference_Research_Manuscript_v1.1.0_Zenodo_10.5281-zenodo.22149133.pdf",
           "size": 12604278
         },
         {
           "name": "manifest.json",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.1.0/manifest.json",
           "size": 587359
         },
         {
           "name": "SHA256SUMS.txt",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.1.0/SHA256SUMS.txt",
           "size": 430
         }
       ],
@@ -48254,17 +48254,17 @@
       "assets": [
         {
           "name": "Active_Fedference_Research_Manuscript_v1.0.4_Zenodo_10.5281-zenodo.21972644.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.4/Active_Fedference_Research_Manuscript_v1.0.4_Zenodo_10.5281-zenodo.21972644.pdf",
           "size": 9133435
         },
         {
           "name": "manifest.json",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.4/manifest.json",
           "size": 127082
         },
         {
           "name": "sha256sums.txt",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.4/sha256sums.txt",
           "size": 52632
         }
       ],
@@ -48281,17 +48281,17 @@
       "assets": [
         {
           "name": "Active_Fedference_Research_Manuscript_v1.0.3_Zenodo_10.5281-zenodo.21969756.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.3/Active_Fedference_Research_Manuscript_v1.0.3_Zenodo_10.5281-zenodo.21969756.pdf",
           "size": 11951824
         },
         {
           "name": "manifest.json",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.3/manifest.json",
           "size": 127083
         },
         {
           "name": "sha256sums.txt",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.3/sha256sums.txt",
           "size": 52632
         }
       ],
@@ -48308,17 +48308,17 @@
       "assets": [
         {
           "name": "Active_Fedference_Research_Manuscript_v1.0.2_Zenodo_10.5281-zenodo.21934992.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.2/Active_Fedference_Research_Manuscript_v1.0.2_Zenodo_10.5281-zenodo.21934992.pdf",
           "size": 9431915
         },
         {
           "name": "manifest.json",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.2/manifest.json",
           "size": 126535
         },
         {
           "name": "sha256sums.txt",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.2/sha256sums.txt",
           "size": 52632
         }
       ],
@@ -48335,7 +48335,7 @@
       "assets": [
         {
           "name": "Active_Fedference_Research_Manuscript_v1.0.1_Zenodo_10.5281-zenodo.21919307.pdf",
-          "download_url": "",
+          "download_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/download/v1.0.1/Active_Fedference_Research_Manuscript_v1.0.1_Zenodo_10.5281-zenodo.21919307.pdf",
           "size": 9017235
         }
       ],
