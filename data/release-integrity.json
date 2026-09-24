@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "generated_at": "2026-08-13T17:52:47+00:00",
-  "source_commit_at_generation": "fcf7a748a3498a37fb46430691c0cfe11cd8db22",
+  "source_commit_at_generation": "ceffaa0bdbfe582186df66913b7e6f72c40c37bd",
   "repository": "docxology/docxology",
   "canonical_origin": "https://danielarifriedman.com/",
   "generator": {
@@ -21,26 +21,26 @@
   },
   "source_sha256": {
     "pages/BIBLIOGRAPHY.md": "20b79f60deecd28920e595b580139d97345866c6f19806ea30b8ccd7a0c9a34d",
-    "pages/SOFTWARE.md": "307ed1c164e66be88d01b044a0aefdabc91f4c73334fc8e00e4ca9cf2bd28255",
+    "pages/SOFTWARE.md": "43bdb8e218e868bd4b579ef1d497d355cfd3192bb8dc521bafa8ce8ed1d12b2d",
     "resume/source.json": "209c5b0b1df978813d6ad7c08e2b7c0e2cbc1f7445a4cbdf2c422165983b2f6a",
-    "data/current-counts.json": "a0e4e4dd0bfa201f3bcd8e449e93d7215a881a3d0f2f22997d1b9fe4ae3062b5",
+    "data/current-counts.json": "eba4d5a501f288231ed3235bb146b434ee9df0ae5c0fdadd6f2eb71e0acb4c48",
     "data/coverage-exceptions.json": "2aac9b09a4835a29b2139a2b5163cb624b48930619608126324a8f8eacc42d1b",
-    "data/repository-classification.json": "8148ae293653188550d03d32e1fe4c0ee07ec4fb1305f873d47bc878c143c528",
-    "data/agent-index.json": "f7f1bf9480058ae403dbc5a70d72db24cf432c645f7370d4d9b0add44ace90dd",
+    "data/repository-classification.json": "93a0601ab45a3e5045709ae1aee449e369b42e0b6c11c22991648adf82b59aa5",
+    "data/agent-index.json": "4273526557d87718fb31fe0ad9aa5306c6d0e22b2545ba2926ff7c8a90e6bc66",
     "data/generated-manifest.json": "d977e9199fb23804dc11d438e9ad6cda903d0fa34a5818a667bd1d6fea8fbf84",
-    "data/pages-artifact-manifest.json": "a5820b604f97d3a7e146efa7feaa8ccebfcecbf3e926184df9b9dd61bd22149e"
+    "data/pages-artifact-manifest.json": "a5d1466621b1028ebf3d4ca14172d24e630075b8145801c26c2e6c4f93aefa3d"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
-    "source_commit_at_generation": "fcf7a748a3498a37fb46430691c0cfe11cd8db22",
+    "source_commit_at_generation": "ceffaa0bdbfe582186df66913b7e6f72c40c37bd",
     "artifact_file_count": 5866,
-    "artifact_bytes": 927836994,
+    "artifact_bytes": 927742232,
     "omitted_paper_image_count": 8944,
     "omitted_superseded_report_count": 487
   },
   "deployment": {
     "status": "pending_post_deploy_attestation",
-    "candidate_source_commit": "fcf7a748a3498a37fb46430691c0cfe11cd8db22",
+    "candidate_source_commit": "ceffaa0bdbfe582186df66913b7e6f72c40c37bd",
     "attestation_path_template": "reports/deployment-attestations/{deployment_sha}.json",
     "policy": "This pre-deploy envelope deliberately excludes mutable live-site evidence. A release-ready claim requires attest_release.py to bind fresh post-deploy reports to the deployed SHA."
   },
@@ -65,26 +65,26 @@
     "full_text_papers": 190,
     "generated_exports": {
       "data_publications_ld_main_entity": 220,
-      "data_software_json": 155,
-      "data_software_ld_main_entity": 155,
+      "data_software_json": 158,
+      "data_software_ld_main_entity": 158,
       "data_works_json": 220
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 43,
       "archived": 5,
-      "curated": 155,
-      "docxology": 219,
+      "curated": 153,
+      "docxology": 224,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 90,
-      "forks": 92,
+      "fork_docxology": 95,
+      "forks": 97,
       "primary_ActiveInferenceInstitute": 41,
       "primary_docxology": 129,
       "primary_total": 170,
       "private": 0,
-      "public": 262,
-      "recently_updated": 199,
-      "total": 262,
-      "uncataloged": 107
+      "public": 267,
+      "recently_updated": 207,
+      "total": 267,
+      "uncataloged": 114
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -116,8 +116,8 @@
     },
     "software": {
       "active_inference_institute": 39,
-      "curated_total": 155,
-      "docxology_owned": 116
+      "curated_total": 158,
+      "docxology_owned": 119
     },
     "types": {
       "Books": 5,

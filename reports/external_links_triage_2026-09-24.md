@@ -3,17 +3,17 @@
 Scoped network-link triage for public-facing repository hubs.
 
 - Source report: `reports/external_links_2026-09-24.json`
-- Checked URLs: 837
-- OK: 688
-- Warnings: 149
+- Checked URLs: 851
+- OK: 704
+- Warnings: 147
 
 ## Categories
 
 | Category | Count | Meaning |
 | --- | ---: | --- |
-| `bot-protected-or-rate-limited` | 144 | Likely blocks automated checks; verify manually before replacing. |
+| `bot-protected-or-rate-limited` | 142 | Likely blocks automated checks; verify manually before replacing. |
 | `connection-failure` | 1 | Could not connect during this run. |
-| `ok` | 688 | Returned a 2xx/3xx response. |
+| `ok` | 704 | Returned a 2xx/3xx response. |
 | `timeout` | 3 | Timed out under the bounded checker timeout. |
 | `upstream-transient` | 1 | Server-side outage or temporary upstream failure. |
 
@@ -21,7 +21,6 @@ Scoped network-link triage for public-facing repository hubs.
 
 | Status | URL | Sources |
 | ---: | --- | --- |
-| 429 | <https://api.crossref.org/works?filter=orcid:0000-0001-6232-9096> | discovery.html, domain-active-inference.html, domain-active-inference.html |
 | 403 | <https://direct.mit.edu/books/oa-monograph/5299/Active-InferenceThe-Free-Energy-Principle-in-Mind> | README.md, index.html, pages/PROFILE.md |
 | 403 | <https://doi.org/10.1002/asi.24900> | README.md, domain-cognitive-security.html, domain-cognitive-security.html |
 | 403 | <https://doi.org/10.1002/ece3.70063> | domain-entomology.html, domain-entomology.html, pages/BIBLIOGRAPHY.md |
@@ -36,8 +35,8 @@ Scoped network-link triage for public-facing repository hubs.
 | 403 | <https://doi.org/10.3390/e25070964> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
 | 403 | <https://doi.org/10.3390/e26040303> | pages/BIBLIOGRAPHY.md, publications.html, publications.html |
 | 403 | <https://doi.org/10.3390/e27050459> | README.md, pages/BIBLIOGRAPHY.md, publications.html |
+| 429 | <https://doi.org/10.5281/zenodo.20418904> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.20419007> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
-| 429 | <https://doi.org/10.5281/zenodo.20420556> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.20450880> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.20450970> | pages/SOFTWARE.md, software.html, software.html |
 | 429 | <https://doi.org/10.5281/zenodo.20453879> | domain-computational.html, domain-computational.html, pages/BIBLIOGRAPHY.md |
@@ -101,6 +100,7 @@ Scoped network-link triage for public-facing repository hubs.
 | 429 | <https://doi.org/10.5281/zenodo.22072956> | pages/SOFTWARE.md, software.html |
 | 429 | <https://doi.org/10.5281/zenodo.22134545> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
 | 429 | <https://doi.org/10.5281/zenodo.22134547> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
+| 429 | <https://doi.org/10.5281/zenodo.22243472> | domain-cognitive-security.html, domain-cognitive-security.html, pages/BIBLIOGRAPHY.md |
 
 ## connection-failure
 

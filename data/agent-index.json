@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "generated_at": "2026-09-24T19:36:22+00:00",
+  "generated_at": "2026-09-24T19:55:55+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -122,12 +122,12 @@
     },
     "software": {
       "path": "/data/software.json",
-      "count": 155,
+      "count": 158,
       "schema": "SoftwareRepository"
     },
     "repositories": {
       "path": "/data/github-repositories.json",
-      "count": 262,
+      "count": 267,
       "schema": "Repository"
     },
     "artworks": {
@@ -172,7 +172,7 @@
     },
     "repository_classification": {
       "path": "/data/repository-classification.json",
-      "count": 107,
+      "count": 114,
       "schema": "RepositoryClassification"
     },
     "pages_artifact": {
@@ -950,7 +950,7 @@
         "license": "NOASSERTION",
         "default_branch": "main",
         "created_at": "2026-04-07T20:10:34Z",
-        "updated_at": "2026-08-19T21:59:39Z",
+        "updated_at": "2026-09-22T17:48:42Z",
         "pushed_at": "2026-08-03T00:33:48Z",
         "curated": true,
         "recently_updated": true
@@ -966,7 +966,7 @@
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-09-24T19:36:22+00:00",
+        "checked_at": "2026-09-24T19:55:55+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1028,35 +1028,32 @@
     ],
     "RepositoryClassification": [
       {
-        "full_name": "ActiveInferenceInstitute/aii-org",
-        "github_id": 1184581029,
-        "github_node_id": "R_kgDORptFpQ",
-        "name": "aii-org",
+        "full_name": "ActiveInferenceInstitute/Active_InferAnts",
+        "github_id": 782172228,
+        "github_node_id": "R_kgDOLp8ARA",
+        "name": "Active_InferAnts",
         "owner": "ActiveInferenceInstitute",
-        "html_url": "https://github.com/ActiveInferenceInstitute/aii-org",
+        "html_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts",
         "fork": false,
         "archived": false,
         "private": false,
-        "description": "Active Inference Institute organizational website.",
+        "description": "Multi-language Active Inference framework combining ant-colony-optimization-inspired multi-agent simulation with variational message passing, implemented across 50 programming languages for research and benchmarking.",
         "description_quality": "substantive",
-        "language": "HTML",
+        "language": "Python",
         "topics": [
           "active-inference",
-          "education",
+          "ant-colony-optimization",
           "free-energy-principle",
-          "github-pages",
-          "javascript",
-          "nonprofit",
-          "static-site"
+          "multi-agent-systems",
+          "python",
+          "swarm-intelligence",
+          "variational-inference"
         ],
         "recently_updated": true,
         "relevance": "unknown",
-        "catalog_role": "acknowledged_not_curated",
-        "exclusion_reason": "acknowledged_not_catalogued",
-        "review_status": "acknowledged",
-        "acknowledged_reason": "website",
-        "reviewed_by": "principal",
-        "reviewed_at": "2026-08-26"
+        "catalog_role": "not_curated",
+        "exclusion_reason": "primary_repo_requires_manual_review",
+        "review_status": "defer"
       }
     ],
     "GeneratedReport": {
@@ -1079,26 +1076,26 @@
         "full_text_papers": 190,
         "generated_exports": {
           "data_publications_ld_main_entity": 220,
-          "data_software_json": 155,
-          "data_software_ld_main_entity": 155,
+          "data_software_json": 158,
+          "data_software_ld_main_entity": 158,
           "data_works_json": 220
         },
         "github_inventory": {
           "ActiveInferenceInstitute": 43,
           "archived": 5,
-          "curated": 155,
-          "docxology": 219,
+          "curated": 153,
+          "docxology": 224,
           "fork_ActiveInferenceInstitute": 2,
-          "fork_docxology": 90,
-          "forks": 92,
+          "fork_docxology": 95,
+          "forks": 97,
           "primary_ActiveInferenceInstitute": 41,
           "primary_docxology": 129,
           "primary_total": 170,
           "private": 0,
-          "public": 262,
-          "recently_updated": 199,
-          "total": 262,
-          "uncataloged": 107
+          "public": 267,
+          "recently_updated": 207,
+          "total": 267,
+          "uncataloged": 114
         },
         "paired_publication_decisions": {
           "decision": "accept",
@@ -1130,8 +1127,8 @@
         },
         "software": {
           "active_inference_institute": 39,
-          "curated_total": 155,
-          "docxology_owned": 116
+          "curated_total": 158,
+          "docxology_owned": 119
         },
         "types": {
           "Books": 5,
@@ -1143,7 +1140,7 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-09-24T19:36:22+00:00",
+      "generated_at": "2026-09-24T19:55:55+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1167,11 +1164,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 926800445,
+        "source_bytes": 926705682,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
         "artifact_file_count": 5866,
-        "artifact_bytes": 927836994
+        "artifact_bytes": 927742232
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1183,7 +1180,7 @@
       "note": "See /data/release-integrity.json for the current envelope."
     },
     "ReproducibilityLedger": {
-      "generated_at": "2026-09-24T19:37:32Z",
+      "generated_at": "2026-09-24T19:57:16Z",
       "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
       "sources": [
         "data/works.json",
@@ -1251,12 +1248,12 @@
         "public_archive": 163,
         "open_full_text": 190,
         "source_documents": 203,
-        "executable_code": 69,
+        "executable_code": 72,
         "agent_readable": 203
       },
       "band_counts": {
-        "independently reproducible": 154,
-        "independently checkable": 49,
+        "independently reproducible": 157,
+        "independently checkable": 46,
         "citable only": 8,
         "unverified": 9
       },
@@ -1265,11 +1262,11 @@
         "1": 4,
         "2": 4,
         "3": 8,
-        "4": 41,
-        "5": 91,
+        "4": 38,
+        "5": 94,
         "6": 63
       },
-      "mean_score": 4.695,
+      "mean_score": 4.709,
       "works": [
         {
           "num": 5,
@@ -4338,6 +4335,69 @@
           ]
         },
         {
+          "num": 220,
+          "citation_key": "Friedman2026GreenLineCapacityUnder220",
+          "title": "Green Line: a capacity-under-development instrument",
+          "year": 2026,
+          "domain_name": "Computational",
+          "type": "Paper",
+          "score": 5,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": false,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "green_line"
+          ]
+        },
+        {
+          "num": 221,
+          "citation_key": "Friedman2026BlueLineStewardshipInstrument221",
+          "title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
+          "year": 2026,
+          "domain_name": "Active Inference",
+          "type": "Paper",
+          "score": 5,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": false,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "blue_line"
+          ]
+        },
+        {
+          "num": 223,
+          "citation_key": "Friedman2026SilverLineMemorySuccession223",
+          "title": "The Silver Line: A Memory-and-Succession Instrument",
+          "year": 2026,
+          "domain_name": "Computational",
+          "type": "Paper",
+          "score": 5,
+          "band": "independently reproducible",
+          "signals": {
+            "persistent_id": true,
+            "public_archive": true,
+            "open_full_text": false,
+            "source_documents": true,
+            "executable_code": true,
+            "agent_readable": true
+          },
+          "repositories": [
+            "silver_line"
+          ]
+        },
+        {
           "num": 23,
           "citation_key": "Friedman2025TemporalDepthCoherentSelf023",
           "title": "Temporal Depth in a Coherent Self and in Depersonalization",
@@ -5041,68 +5101,11 @@
           "repositories": []
         },
         {
-          "num": 220,
-          "citation_key": "Friedman2026GreenLineCapacityUnder220",
-          "title": "Green Line: a capacity-under-development instrument",
-          "year": 2026,
-          "domain_name": "Computational",
-          "type": "Paper",
-          "score": 4,
-          "band": "independently checkable",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": false,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
-          "num": 221,
-          "citation_key": "Friedman2026BlueLineStewardshipInstrument221",
-          "title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
-          "year": 2026,
-          "domain_name": "Active Inference",
-          "type": "Paper",
-          "score": 4,
-          "band": "independently checkable",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": false,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
           "num": 222,
           "citation_key": "Friedman2026VioletLineConsentLedger222",
           "title": "The Violet Line: A Consent Ledger of Affected Parties",
           "year": 2026,
           "domain_name": "Active Inference",
-          "type": "Paper",
-          "score": 4,
-          "band": "independently checkable",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": false,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
-          "num": 223,
-          "citation_key": "Friedman2026SilverLineMemorySuccession223",
-          "title": "The Silver Line: A Memory-and-Succession Instrument",
-          "year": 2026,
-          "domain_name": "Computational",
           "type": "Paper",
           "score": 4,
           "band": "independently checkable",
@@ -5596,26 +5599,26 @@
   },
   "dataset_hashes": {
     "works": "272a62574e29cbbb8097a27da7e78be15baf7c0c60bcd98c970a407cc307ea02",
-    "software": "6ae1dd9c03c065fb30abf87222f1310fe4c212ad77a1026f3857aca2fc5715ec",
-    "repositories": "22d6ef7c7b3d3bc18c46c4920068c574042ddb74a6bb8d438627d551141af141",
+    "software": "832b209b7890de478b4125f6dc9fc9081825b7a620aa1e91c43da5df034784ef",
+    "repositories": "7921e3722f3ec20c8d8a8fc5090396d3b66e4d557e732a6d1055a5d9d25cb772",
     "artworks_index": "053e66edbd2257c157f9baeb45d7ee6cf04395a59d7253ff31bd55b9d904a0d5",
     "artworks": "32bd21124bd391638295aac6bad7a0621746c296695e10b0586351ca4069f6c3",
     "videos": "57a2b9b18f2dc17fa73865d72c70babe149fda625d3823c2c63be0e92b63171e",
     "videos_index": "4f4d6f4b11da4698726e654d5e32308fb794cc5771943e1eb1e6cae0f2e7b5d7",
-    "search": "d334226f7a5483f3c5504e3589da475a87f0106d5339f478e56add858c075d2c",
-    "claims": "6a99d6be2171f78cfe97a7331bfc3a580d46e498e04869c49b559a6816ab6cd0",
+    "search": "02dc53874f9b21e1a91949f4e04f34ca00937e6f91e54c0f557e04680a9838d4",
+    "claims": "cc0378601b69c09833af27320a241803b207a5a4b5e0d6745dc4c1d49890f7be",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "2aac9b09a4835a29b2139a2b5163cb624b48930619608126324a8f8eacc42d1b",
-    "repository_classification": "8148ae293653188550d03d32e1fe4c0ee07ec4fb1305f873d47bc878c143c528",
-    "people": "24df253da788cea45a06e5ae789bc281baf73201d2da5aab5304232b7aa90d99",
-    "organizations": "64cacacef6cefd58b5b1c3c7da7a6a1997e70fbef27e58caf2e5e329ad1dfded",
-    "resume": "8e6f7083efb3f15626d4ea0d5cd3d6c8f8c7a4a8a6107f854f5662ad8533e381",
+    "repository_classification": "93a0601ab45a3e5045709ae1aee449e369b42e0b6c11c22991648adf82b59aa5",
+    "people": "09f9d1f0f7ddc2bbb8392e92f260f7224742b2002366e91fb768e02b009a4ff6",
+    "organizations": "dd1e621e72293aacf29590471fc693d7f318f7d3f1b062d4e3e90923bb390a5b",
+    "resume": "cf5e591ed944e899bf8ae1b1b766bac28bb4a137402ab6dcd135e8142aae9590",
     "work_enrichment": "8a71a4a82d7df44f05b551821738d8e1597b48fad231e71360e6f4c78129a26c",
-    "catalog": "b9d3ca29b1654cdbf26067408634972c2712136f0af5091c2c9b837603ffe825",
-    "reconciliation": "f84fa44a1ccc982f486c2c61b0dcfaaa1c9ca21ad159c8f4222c62458c95ef5b",
-    "reproducibility": "7607e817f92fec5d61afd54824d6c30ee8d84057dce34c1e8ad61399cb3a9b98",
+    "catalog": "4a18c3637932a20015173ee9f6a2564627b5d76fd36ee2b3945d254a1061f968",
+    "reconciliation": "e819f32f635abfbb4d66ed65901cbc7c8ff295b1a6e51e1735d757dae17a1a39",
+    "reproducibility": "89f9728748936924f010d283fca7ade580014bfce4e5ef5be4c1d69d45c8a319",
     "generated_manifest": "d977e9199fb23804dc11d438e9ad6cda903d0fa34a5818a667bd1d6fea8fbf84",
-    "current_counts": "a0e4e4dd0bfa201f3bcd8e449e93d7215a881a3d0f2f22997d1b9fe4ae3062b5"
+    "current_counts": "eba4d5a501f288231ed3235bb146b434ee9df0ae5c0fdadd6f2eb71e0acb4c48"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -5659,26 +5662,26 @@
     "full_text_papers": 190,
     "generated_exports": {
       "data_publications_ld_main_entity": 220,
-      "data_software_json": 155,
-      "data_software_ld_main_entity": 155,
+      "data_software_json": 158,
+      "data_software_ld_main_entity": 158,
       "data_works_json": 220
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 43,
       "archived": 5,
-      "curated": 155,
-      "docxology": 219,
+      "curated": 153,
+      "docxology": 224,
       "fork_ActiveInferenceInstitute": 2,
-      "fork_docxology": 90,
-      "forks": 92,
+      "fork_docxology": 95,
+      "forks": 97,
       "primary_ActiveInferenceInstitute": 41,
       "primary_docxology": 129,
       "primary_total": 170,
       "private": 0,
-      "public": 262,
-      "recently_updated": 199,
-      "total": 262,
-      "uncataloged": 107
+      "public": 267,
+      "recently_updated": 207,
+      "total": 267,
+      "uncataloged": 114
     },
     "paired_publication_decisions": {
       "decision": "accept",
@@ -5710,8 +5713,8 @@
     },
     "software": {
       "active_inference_institute": 39,
-      "curated_total": 155,
-      "docxology_owned": 116
+      "curated_total": 158,
+      "docxology_owned": 119
     },
     "types": {
       "Books": 5,
