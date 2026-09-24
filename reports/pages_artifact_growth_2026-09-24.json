@@ -1,16 +1,16 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-24T16:43:13Z",
-  "source_commit_at_generation": "717d3c9f175ab49768ceb6531cc6c7931471b61a",
+  "generated_at": "2026-09-24T19:39:20Z",
+  "source_commit_at_generation": "7a4e3b0635d3e68ab0b52be2dfd325120ea9375f",
   "artifact_file_count": 5834,
-  "artifact_bytes": 927443730,
-  "artifact_mib": 884.48,
+  "artifact_bytes": 927335289,
+  "artifact_mib": 884.38,
   "warning_bytes": 933232640,
   "safety_ceiling_bytes": 943718400,
   "hard_limit_bytes": 1073741824,
   "omitted_paper_image_count": 8944,
   "omitted_visual_qa_screenshot_count": 52,
   "omitted_visual_qa_screenshot_bytes": 111081789,
-  "omitted_superseded_report_count": 483,
-  "omitted_superseded_report_bytes": 106336684
+  "omitted_superseded_report_count": 487,
+  "omitted_superseded_report_bytes": 106443593
 }

@@ -1,0 +1,40 @@
+{
+  "title": "The Violet Line: A Consent Ledger of Affected Parties",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.22833487",
+  "doi_url": "https://doi.org/10.5281/zenodo.22833487",
+  "zenodo_record": "https://zenodo.org/records/22833487",
+  "record_id": "22833488",
+  "publication_date": "2026-09-18",
+  "resource_type": {
+    "title": "Working paper",
+    "type": "publication",
+    "subtype": "workingpaper"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A consent-ledger instrument for projects. It maintains a ledger of the parties a project affects and what they actually recorded at a review date; absence of consent is recorded — the UNRECORDED state — never inferred from silence, absence, or convenience. An executable review returns one of three verdicts (ACCOUNTED, UNACCOUNTED, OUT_OF_SCOPE); an ACCOUNTED reading never authorizes an action, a release, or a use outside the scope a party named. Subtitle: Absence of consent recorded, never inferred Apache-2.0 licensed; see LICENSE in the repository.",
+  "keywords": [
+    "consent",
+    "affected parties",
+    "research ethics",
+    "governance"
+  ],
+  "files": [
+    {
+      "name": "violet_line_combined.pdf",
+      "size_bytes": 93857,
+      "checksum": "md5:b78893b70a077a8c045f2842b291b4ca",
+      "download_url": "https://zenodo.org/api/records/22833488/files/violet_line_combined.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-09-24T19:35:41Z"
+}

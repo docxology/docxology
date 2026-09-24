@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T00:16:24Z",
+  "generated_at": "2026-09-24T19:35:58Z",
   "source": "GitHub Releases API + Zenodo Records API",
   "owners": [
     "docxology",
@@ -10,10 +10,10 @@
     "zenodo_records": 162,
     "pairs": 470,
     "strong_pairs": 57,
-    "already_reviewed": 401,
-    "needs_review": 14,
-    "create_new": 4,
-    "update_existing": 51
+    "already_reviewed": 415,
+    "needs_review": 0,
+    "create_new": 0,
+    "update_existing": 55
   },
   "warnings": [],
   "actions": [
@@ -654,11 +654,11 @@
       "folder": "2026_EntoLinguistics"
     },
     {
-      "action_type": "create_new",
+      "action_type": "update_existing",
       "doi": "10.5281/zenodo.22816187",
       "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
       "confidence": "strong",
-      "reason": "strong new DOI/release pair",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
       "github_repo": "docxology/daf-jev",
       "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.6.0",
       "zenodo_record_url": "https://zenodo.org/records/22816187",
@@ -666,11 +666,11 @@
       "folder": "2026_JevPractice"
     },
     {
-      "action_type": "create_new",
+      "action_type": "update_existing",
       "doi": "10.5281/zenodo.22816187",
       "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
       "confidence": "strong",
-      "reason": "strong new DOI/release pair",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
       "github_repo": "docxology/daf-jev",
       "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.5.0",
       "zenodo_record_url": "https://zenodo.org/records/22816187",
@@ -678,11 +678,11 @@
       "folder": "2026_JevPractice"
     },
     {
-      "action_type": "create_new",
+      "action_type": "update_existing",
       "doi": "10.5281/zenodo.22816187",
       "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
       "confidence": "strong",
-      "reason": "strong new DOI/release pair",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
       "github_repo": "docxology/daf-jev",
       "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.4.1",
       "zenodo_record_url": "https://zenodo.org/records/22816187",
@@ -690,11 +690,11 @@
       "folder": "2026_JevPractice"
     },
     {
-      "action_type": "create_new",
+      "action_type": "update_existing",
       "doi": "10.5281/zenodo.22816187",
       "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
       "confidence": "strong",
-      "reason": "strong new DOI/release pair",
+      "reason": "DOI already exists in bibliography; update folder metadata and software links",
       "github_repo": "docxology/daf-jev",
       "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.4.0",
       "zenodo_record_url": "https://zenodo.org/records/22816187",
@@ -702,11 +702,11 @@
       "folder": "2026_JevPractice"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.8228934",
       "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R84 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Active_InferAnts",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts/releases/tag/1",
       "zenodo_record_url": "https://zenodo.org/records/8228934",
@@ -5310,11 +5310,11 @@
       "folder": "2026_DocxplusIntelligentDocument"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.19699233",
       "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R85 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/fep_formal",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.0.0",
       "zenodo_record_url": "https://zenodo.org/records/19699233",
@@ -5322,11 +5322,11 @@
       "folder": "2026_FEPLean"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.18364118",
       "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R86 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Active_InferAnts",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts/releases/tag/1",
       "zenodo_record_url": "https://zenodo.org/records/18364118",
@@ -5478,11 +5478,11 @@
       "folder": "2026_EvoJump"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.21864003",
       "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R87 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Active_Fedference",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/tag/v1.1.0",
       "zenodo_record_url": "https://zenodo.org/records/21864003",
@@ -5538,11 +5538,11 @@
       "folder": "2026_RobustBeliefSharing"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R88 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.5.0",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -5550,11 +5550,11 @@
       "folder": "2026_GeneralizedNotationNotationGNN"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R88 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.4.0",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -5562,11 +5562,11 @@
       "folder": "2026_GeneralizedNotationNotationGNN"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R88 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.2.0",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -5574,11 +5574,11 @@
       "folder": "2026_GeneralizedNotationNotationGNN"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R88 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.0.0",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -5586,11 +5586,11 @@
       "folder": "2026_GeneralizedNotationNotationGNN"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R88 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v2.0.0",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -5598,11 +5598,11 @@
       "folder": "2026_GeneralizedNotationNotationGNN"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R88 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.8.0",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -5610,11 +5610,11 @@
       "folder": "2026_GeneralizedNotationNotationGNN"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R88 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.6.0",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -5622,11 +5622,11 @@
       "folder": "2026_GeneralizedNotationNotationGNN"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R88 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.3.0",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -5634,11 +5634,11 @@
       "folder": "2026_GeneralizedNotationNotationGNN"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R88 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.2.0",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -5646,11 +5646,11 @@
       "folder": "2026_GeneralizedNotationNotationGNN"
     },
     {
-      "action_type": "needs_review",
+      "action_type": "already_reviewed",
       "doi": "10.5281/zenodo.7803313",
       "title": "Generalized_Notation_Notation (GNN)",
       "confidence": "needs_review",
-      "reason": "pair lacks DOI/release cross-link evidence required for automatic apply",
+      "reason": "R88 records this pair as bibliography-folder; do not create a duplicate bibliography row",
       "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
       "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1",
       "zenodo_record_url": "https://zenodo.org/records/7803313",
@@ -47176,6 +47176,166 @@
     },
     {
       "owner": "ActiveInferenceInstitute",
+      "repo": "Generalized_Notation_Notation",
+      "tag": "v3.5.0",
+      "name": "GNN v3.5.0 — Surface Truth & Integration",
+      "body": "## GNN v3.5.0 — Surface Truth & Integration\n\nThis release makes the package's outward surfaces honest and connected. The\nwebsite dashboard reads step statuses from the recorded pipeline execution\nsummary instead of guessing from directories; MCP clients speak the standard\n2024-11-05 protocol in both transports, with three new tools (`extract_pomdp`,\n`generate_dependency_graph`, `template.pull`) and a `gnn_delete_run` parity\ntool. `DELETE /api/v1/runs/{run_hash}` now gives the API full run control —\nproper cancellation with process-group teardown, artifact removal, and honest\nstatus on timeout. The GUI estate got a truth pass: launches are verified over\nHTTP instead of assumed, status artifacts share one schema, gui_1/gui_2/gui_3\nand oxdraw gained dozens of UX and round-trip fidelity fixes, and a new\n`gnn gui` subcommand puts the interactive stack on the CLI. Under the hood,\none canonical framework tuple drives every framework list (fixing the\n`--frameworks stan` abort and silent `lean` filtering), step 24 gains\ncontent-addressed LLM response caching, LSP diagnostics track in-editor\nedits, and visualization imports got ~30% faster by making seaborn/scipy load\nlazily.\n\n\n**Release stabilization (2026-09-22):** after the initial tag, the CI matrix\nsurfaced a chain of green-gate fixes that are part of this release: the\nversion-literal reconciliation (`gnn.__version__`, `api.MODULE_VERSION`,\nversion-consistency tests), `cross_framework` runtime threading beside the new\n`timeout` parameter, a flax marker-gate (flax 0.12.9 for the jax-0.11.2\npy3.12 splits — 0.12.6 calls a jax API removed in 0.11.0), the mypy target\nmoved to 3.12 (numpy 2.4.x stubs), the executor lazy-loader reconciliation\ncarrying the ngclearn spec row, and a seaborn `center=` fix that routed the\ncorrelation heatmap through a warning-raised `Colormap.set_bad()`. The tag\nnow points at the fully green tip.\n",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.5.0",
+      "published_at": "2026-09-22T02:15:06Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "Generalized_Notation_Notation",
+      "tag": "v3.4.0",
+      "name": "GNN v3.4.0 — Model-Kind Truth",
+      "body": "## [3.4.0] — 2026-09-17\n\n> **Model-Kind Truth.** The documentation and manuscript surfaces now describe\n> discrete, continuous, and multi-agent models as first-class kinds across the\n> ~110-doc corpus, and the manuscript is rebuilt around them with auto-injected\n> version/count tokens so no hard-coded numbers can drift. Alongside it: the\n> `gnn doctor` capability probe, the bnlearn Step 12 executor, Step-6\n> B-orientation diagnostics, and the cover-page graphical abstract.\n\n### Added (2026-09-16/17 — docs model-kind wave + token auto-injection)\n\n- **Package-wide docs model-kind generalization.** A discrete/continuous/\n  multi-agent truth pass over the ~110-file documentation corpus replaced\n  PyMDP-only framing with model-kind-aware language; the manuscript was\n  rewritten around model kinds with auto-injected tokens\n  (`GNN_VERSION`, `GNN_MODULE_COUNT`, `GNN_TOOL_COUNT`, `GNN_TEST_COUNT`),\n  exemplar-kind split, and framework+kind capability tables — zero hard-coded\n  counts remain.\n\n## Manuscript\n\n- Review PDF: attached (GeneralizedNotationNotation-manuscript-2026-09-17.pdf) — cover artwork, model-kind-generalized, all counts auto-injected from the snapshot token census at this release's HEAD.\n",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.4.0",
+      "published_at": "2026-09-17T21:08:21Z",
+      "assets": [
+        {
+          "name": "GeneralizedNotationNotation-manuscript-2026-09-17.pdf",
+          "download_url": "",
+          "size": 1406342
+        }
+      ],
+      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "Generalized_Notation_Notation",
+      "tag": "v3.2.0",
+      "name": "v3.2.0 — Exemplar Gold Standard",
+      "body": "Compare: https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/compare/v3.1.0...v3.2.0\n\n> **Exemplar Gold Standard.** Every exemplar GNN file renders *and executes* on\n> every framework that can represent it and is explicitly flagged `unsupported`\n> (not faked, not failed) on the ones that cannot. Continuous-state exemplars\n> are genuinely continuous (linear-Gaussian) with native JAX / NumPyro /\n> PyTorch / Stan / RxInfer.jl backends; the Stan renderer is rewritten from a\n> non-compiling stub into runnable HMM and LGSSM programs with a cmdstanpy\n> executor; Step 12 summaries merge across input folders; the Julia pre-exec\n> gate no longer blocks scripts on a toolchain-less launcher.\n>\n> Verified end to end on macOS with Julia 1.12.7 (RxInfer 5.5.0,\n> ActiveInference.jl 0.1.2), CmdStan 2.39 and an ephemeral torch: 29 files,\n> 249 renders OK / 0 failed / 12 unsupported; 194 executions OK / 0 failed /\n> 55 dependency skips (torch, bnlearn); PyTorch 29/29 via\n> `uv run --with torch`; pytest 3120 passed.\n\n### Changed (2026-09-01 — exemplar gold standard: continuous models are continuous, Stan is real)\n\n- **Continuous exemplars are now genuinely continuous.** The three files under\n  `input/gnn_files/continuous/` declare only the linear-Gaussian state-space\n  model (`x`, `y`, optional `u`, `F/H/Q/R`, `prior_mean/prior_cov`, optional\n  `goal_mean/control_gain`) — the discretized POMDP stand-ins introduced on\n  2026-08-03 are gone. `continuous_navigation` is a closed-loop navigator\n  (`u_t = 0.3 · (goal − μ_t)`); the other two are passive. Extractor\n  (`gnn/pomdp_extractor.py`) reads dimensions from `F`/`H` and sets\n  `model_kind = \"continuous\"`; the render processor passes the block through\n  verbatim instead of building canonical A/B/C/D.\n- **`unsupported` is a first-class render status.** Frameworks that cannot\n  represent a model kind (PyMDP, ActiveInference.jl, DisCoPy, bnlearn on continuous\n  models) return `{\"unsupported\": true, \"status\": \"unsupported\"}` with the\n  reason \"continuous-state model: … supports discrete POMDPs only\". They are\n  excluded from the success denominator, listed under\n  `unsupported_framework_renderings`, and never handed to Step 12.\n  `framework_registry` entries carry `supports_continuous`.\n- **Native continuous backends.** JAX, NumPyro, PyTorch and Stan render and\n  execute the LGSSM (online Kalman filter, Joseph-form update, closed-loop\n  control) via the shared generator `render/continuous_script.py`; NumPyro\n  additionally fits the same model with NUTS (`mcmc_posterior_means`,\n  `mcmc_r_hat_max`). RxInfer.jl's existing continuous strategy is reached\n  without the A/B/C/D canonicalisation guard. Verified end to end on this\n  machine for all five.\n- **Stan renderer rewritten** (`render/stan/stan_renderer.py`). The previous\n  generator emitted `target ~ normal(source, 1.0)` per edge with undeclared\n  variables and could not compile. Discrete models now render an HMM whose\n  latent chain is marginalised with the forward algorithm and whose per-state\n  observation distributions carry Dirichlet priors centred on the declared\n  `A`; continuous models render the explicit Kalman marginal likelihood. Each\n  render emits `<stem>_stan.stan` plus a cmdstanpy driver `<stem>_stan.py`.\n  New `execute/stan/` runner, `stan` added to Step 12 discovery and to\n  `utils.framework_availability` (skips with `uv sync --extra stan`), new\n  optional extra `stan = [\"cmdstanpy>=1.2\"]`. `render_stan()` remains as a\n  declaration-only sketch.\n\n### Fixed (2026-09-01)\n\n- **Step 12 summary no longer overwritten per input folder.**\n  `execute/processor.py` merges the prior `execution_summary.json` (details\n  keyed by script path; counts, per-framework status and overall status\n  recomputed) so the durable summary covers every folder, mirroring Step 11.\n- **Julia pre-exec gate false positive.** A `julia` launcher without a\n  working toolchain made `Meta.parseall` return a non-zero exit with no\n  `GNN_PARSE_FAIL` marker; the gate treated that as malformed code and blocked\n  every Julia script. The probe now degrades to the advisory regex sweep\n  unless the parser itself reported a failure.\n- **`INDEX.md` excluded from model discovery** (`gnn/discovery.py`), fixing\n  four tests that counted 30 exemplars instead of 29.\n- **CI hygiene.** `ruff format` drift across 45 files cleared; Bandit B108\n  (hard-coded `/tmp` in the CLI models command) replaced with\n  `tempfile.gettempdir()`; the two Julia-live test modules now skip when the\n  committed Julia project environments are not instantiated (CI ships `julia`\n  without RxInfer/ActiveInference.jl); the framework-availability test honours\n  toolchain probes; repository-terminology audit clean.\n- **ActiveInference.jl precompile on Julia 1.12.** `Distributions` pinned to\n  `0.25.100 – 0.25.125` in `src/execute/activeinference_jl/Project.toml`\n  (DistributionsAD 0.6.58's ReverseDiff extension breaks against the\n  `@check_args` change in 0.25.126); Manifest re-resolved.\n",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.2.0",
+      "published_at": "2026-09-02T18:35:26Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "Generalized_Notation_Notation",
+      "tag": "v3.0.0",
+      "name": "GNN v3.0.0 — Long-Running Orchestration",
+      "body": "# GNN v3.0.0 — Long-Running Orchestration\n\nGeneralizedNotationNotation v3.0.0 adds **safe-by-design long-running orchestration** on top of the GNN text language and 25-step processing pipeline. Every new module **generates, validates, replays, or plans data only — no live infrastructure is ever mutated** (no container is executed, no cluster or device is touched).\n\n## Highlights — three orchestration contracts (`src/pipeline/`)\n\n- **Durable observation streams** (`durable_streams.py`) — content-checksummed file/array `StreamManifest`s and replayable `ExecutionTrace`s, so an extended run can be observed, paused, and re-derived deterministically before any live sensor or device-backed stream is introduced. Cross-architecture-deterministic checksums, injective stream ids, and trace meaning re-bound to ground truth on verify.\n- **Resumable run sessions** (`run_session.py`) — `RunSession` manifests with atomic checkpoint/resume, status inspection, and path-escape-safe, idempotent cancellation cleanup, so an extended model-family acceptance run can be interrupted and resumed without corrupting partial state.\n- **Auditable container plans** (`container_plan.py`) — hardened plan generation (non-root, read-only rootfs, cap-drop ALL, digest-pinned images, resource limits), a static `security_review` (privileged / root / unpinned-image / plaintext-secret / sensitive-host-mount / host-namespace / dangerous-capability findings), rollback descriptors, and deterministic plan hashes — without ever touching a real cluster.\n\n## Additive live wiring (no change to the 25-step critical path)\n\n- `session_acceptance.py` — resumable, checkpoint-after-each model-family acceptance.\n- `run_manifest.py` — emit durable `StreamManifest`s + a replayable `ExecutionTrace` from a completed run's `output/` (verified on a real run: 105 manifests + a 25-event trace).\n- `pipeline_container_plan.py` — a `security_review`-clean container plan generated from the real `input/config.yaml`.\n- A strict, fail-closed acceptance gate: `scripts/run_v3_orchestration_acceptance.py` (`--inject-defect` exits non-zero).\n- Three new Model Context Protocol tools (tool total 137 to 140).\n\n## Release evidence\n\nThe standing release gates were re-run **green for all 9 model families**: semantic fidelity (`run_semantic_fidelity_gate.py`), cross-framework reliability (`run_cross_framework_reliability.py`, GridWorld compared across PyMDP, RxInfer, and ActiveInference.jl), and model-family acceptance (`run_model_family_acceptance.py`). The orchestration foundation ships **without regressing the v2.0.0 reliability surface**. The CI matrix is green (ruff format/check, four documentation audits, and `mypy src`), and the long-standing tool-version drift in the matrix was cleaned up as part of this release.\n\n## Documentation, manuscript & visualizations\n\n- README, AGENTS, DOCS, ARCHITECTURE, and the `doc/` entry points brought current to v3.0.0; new reference page `doc/pipeline/v3_orchestration.md`.\n- The auto-injected manuscript gained a \"Long-Running Orchestration Contracts\" methods section and a new architecture figure; every quantitative value is a token resolved from the live repository.\n- Visualizations improved: a clean layered pipeline DAG and a new orchestration-architecture diagram.\n\n## Next\n\nv4.0.0 — bounded autonomy and reviewed self-editing workflows, gated behind this orchestration work.\n\nFull details: see `CHANGELOG.md` and `TO-DO.md`.\n",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.0.0",
+      "published_at": "2026-06-21T01:29:30Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "Generalized_Notation_Notation",
+      "tag": "v2.0.0",
+      "name": "v2.0.0",
+      "body": "\n### Added\n- **Semantic fidelity release gate**: `scripts/run_semantic_fidelity_gate.py` writes `gnn_semantic_fidelity_ledger_v1` artifacts for maintained model families.\n- **Strict semantic contracts**: representative fixtures now preserve model identity, variables, edges, dimensions, parameter shapes, equations, time, and ontology mappings across JSON parse/serialize/parse checks.\n- **Cross-framework reliability release gate**: `scripts/run_cross_framework_reliability.py` writes `gnn_cross_framework_reliability_ledger_v1` artifacts with compatible, required, and unsupported backend statuses.\n- **GridWorld three-backend comparison**: GridWorld is profiled for PyMDP, RxInfer, and ActiveInference.jl, including seed, trace length, matrix-shape, and matrix-provenance parity.\n\n### Changed\n- GridWorld model-family acceptance now requests PyMDP, RxInfer, and ActiveInference.jl for the v2 comparison fixture instead of a PyMDP-only profile.\n- Roadmap next target moves to v3.0.0 for durable streams, long-running sessions, and auditable container plans.\n\n### Fixed\n- JSON serialization now emits equation objects instead of lossy stringified dataclasses, preventing silent semantic round-trip drift.\n- Cross-framework reliability no longer certifies aggregate Step 12 success without successful non-skipped execution-detail rows and current simulation payloads for required backends.\n\n---",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v2.0.0",
+      "published_at": "2026-06-12T19:24:57Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "Generalized_Notation_Notation",
+      "tag": "v1.9.0",
+      "name": "v1.9.0",
+      "body": "## [1.9.0] — 2026-06-12\n\n### Added\n- **Model-family acceptance release gate**: manifest-driven all-family strict acceptance for basics, discrete, continuous, hierarchical, multi-agent, precision, structured, gridworld, and scaling-study fixtures.\n- **Cross-step evidence ledger**: release ledger now links Step 3/5/6/11/12/15/16/23 statuses, artifact links, telemetry presence, renderer/execution status, and concrete skip reasons per family.\n- **Interpretability summaries**: per-family summaries now include variable/edge inventories, matrix-shape tables, telemetry presence, optional trace previews, renderer/execution status, and artifact links.\n\n### Changed\n- Continuous and hierarchical Step 11/12 outcomes are explicit profiled unsupported skips with concrete reasons, not raw render/execute failures accepted by profile math.\n- v1.7.0 is retired as a foundation-only track; unfinished runtime-depth ambitions move forward into v2+ reliability and orchestration milestones.\n- Current test evidence updated to 2,399 collected tests; final full-suite release evidence is recorded in `TO-DO.md`, `README.md`, and test documentation after the v1.9 release gate rerun.\n\n### Fixed\n- Removed the model-family acceptance reason-pattern fallback that could reclassify failed renderer/executor steps as unsupported success.\n- Hardened strict acceptance so profiled unsupported steps must be skipped before execution and failed Step 11/12 summaries fail closed.\n- Prevented cross-framework analysis from reading stale repo-tracked `output/` artifacts during isolated `/tmp` acceptance runs.\n- Relaxed an environment performance smoke threshold to match other slow module smoke tests and avoid full-suite load false negatives.\n\n### Validation\n- PR #12 checks passed: Bandit, CodeQL, analyze (python), dependency-review, markdown-audit, security, test (3.11), test (3.12), test (3.13).\n- Local full suite: `2381 passed, 17 skipped, 1 xfailed` with Ollama integration tests ignored.\n- Local collect-only: 2,399 collected tests with Ollama integration tests ignored.\n- All-family strict acceptance: passed for 9 manifest families; continuous and hierarchical Step 11/12 are explicit profiled unsupported skips with concrete reasons and no raw failed Step 11/12 counts.\n",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.9.0",
+      "published_at": "2026-06-12T17:20:38Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "Generalized_Notation_Notation",
+      "tag": "v1.8.0",
+      "name": "v1.8.0: Developer Kit & Safe Local MCP Orchestration",
+      "body": "## v1.8.0 — Developer Kit & Safe Local MCP Orchestration\n\n### Added\n- Template developer kit: packaged template index, package-data template assets, `gnn templates list`, `gnn templates show NAME`, and `gnn pull NAME --output-dir ... --dry-run --overwrite`.\n- Template safety contracts: checksum verification, collision handling, symlink/path traversal rejection, unknown-template failures, and installed-wheel smoke coverage outside the repo checkout.\n- MCP local HTTP orchestration: bearer-token auth through `GNN_MCP_TOKEN`, localhost default binding, explicit insecure local opt-in with `GNN_MCP_ALLOW_INSECURE_LOCAL=1`, safe-tool filtering, optional rate limiting, and default-denied resource reads unless explicitly allowlisted.\n- Capability-contract verifier for template package data, MCP auth/resource safety, acceptance-command isolation, roadmap ordering, count drift, and autonomy non-mutation claims.\n\n### Changed\n- `TO-DO.md` now treats v1.8.0 as the developer-kit release and v1.9.0 as the next model-family reliability target.\n- Developer documentation advertises verified template and MCP commands only, with `/tmp` output directories in acceptance smokes to avoid tracked `output/` churn.\n- Current evidence: 2,397 collected tests; latest full local suite evidence with Ollama integration excludes is 2,379 passed, 17 skipped, 1 xfailed.\n\n### Fixed\n- Removed release-facing false-certification paths around optional framework fallback, stale counts, MCP unauthenticated HTTP, unsafe MCP resource exposure, and template assets that only work from a source checkout.\n- Fixed CI-sensitive optional Julia package gating so missing optional backend packages skip instead of failing while preserving failures for real Julia errors.\n\n### Validation\n- PR #11 checks: 9 passed, 0 failed.\n- Local gates: `git diff --check`, Ruff check/format, mypy, docs audit, GNN doc patterns, maintained-doc terms, repo terminology, capability contracts, and `just lint`.\n- Acceptance smokes: `gnn templates list`, `gnn templates show pomdp-gridworld-3x3`, `gnn pull pomdp-gridworld-3x3 --output-dir /tmp/gnn-pull --dry-run`, and token-enabled MCP HTTP tests.\n- Full local suite: `uv run --extra dev python -m pytest src/tests/ -q --tb=no --ignore=src/tests/llm/test_llm_ollama.py --ignore=src/tests/llm/test_llm_ollama_integration.py` -> 2,379 passed, 17 skipped, 1 xfailed.",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.8.0",
+      "published_at": "2026-06-12T14:21:20Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "Generalized_Notation_Notation",
+      "tag": "v1.6.0",
+      "name": "v1.6.0: Zero-Mock Testing Stabilization & Documentation Hardening",
+      "body": "### Fixed\n- **Testing Constraints**: Entirely removed dependency on internal `hypothesis.internal.conjecture.optimiser` arrays mitigating python 3.13 crashes, transitioning to native parameterized fuzzers.\n- **HTML Assertion Accuracy**: Relaxed legacy `test_report_functional` strings to mathematically accept dynamic semantic UI tags (`<html lang=\"en\">` instead of `<html>`).\n\n### Added\n- **Global Documentation Guardrails**: Enforced 100% adherence to zero-mock documentation mandates. Provisioned `AGENTS.md`, `README.md`, and `SPEC.md` components natively within transient boundaries (`output/`, `.benchmarks/`, `scripts/`) and defined the master environment `SPEC.md` at root.\n- **Type checker visual dashboards**: Baseball-card style model summary PNGs (dark neon theme), validity mosaics, issue distribution charts, and type category pie charts generated in `output/5_type_checker_output/visualizations/`\n- **Resource estimation integration**: `estimate_file_resources()` now delegates to `estimation_strategies.py` for real FLOPS, memory, and complexity scoring instead of naive heuristics\n- **Documentation hub sync**: Automated `doc/gnn/modules/[00-24].md` reconciliation from `src/*/AGENTS.md` source-of-truth\n\n### Changed\n- **Zero-Mock Policy Enforcement**: Systematically excised all mentions and framework hooks relating to `pytest-mock` allowing completely isolated functional testing constraints natively.\n- **Type checker consolidation**: Deleted redundant `src/type_checker/checker.py`; all logic unified in `processor.py` (`GNNTypeChecker`)\n- **Test suite alignment**: `test_type_checker_overall.py` rewired to target production `processor.py` orchestrator (zero-mock)\n- **Deprecated marker removed**: `safe_to_fail` marker replaced with standard `xfail` in `pyproject.toml` and `pytest.ini`\n- **Default local LLM**: Ollama default tag is `smollm2:135m-instruct-q4_K_S` (`llm.defaults.DEFAULT_OLLAMA_MODEL`); override with `OLLAMA_MODEL` or `input/config.yaml` `llm.model`.\n- **Core dependencies**: `openai`, `ollama`, `python-dotenv`, and `aiohttp` are installed with the base package (LLM step and OpenRouter/Perplexity providers work without `uv sync --extra llm`).",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.6.0",
+      "published_at": "2026-04-15T22:34:16Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "Generalized_Notation_Notation",
+      "tag": "v1.3.0",
+      "name": "v1.3.0 — The Pipeline Coherence & Agentic Integration Release",
+      "body": "# v1.3.0 — The Pipeline Coherence & Agentic Integration Release\n\nThis release establishes the Generalized Notation Notation (GNN) repository as a pristine, fully integrated, agent-ready ecosystem. With over 756 documentation files audited, deep MCP integration stabilized, and 100% test passing ratios across 1,522 unit tests and 25 pipeline steps, this update sets a new gold standard for repository coherence.\n\n## 🌟 Major Highlights\n\n### Agent-Ready `SKILL.md` Capability Framework\n\n* Deployed **28 Anthropic `skills` standard `SKILL.md` files** covering every `src/` module.\n* Mapped precise AI capability boundaries, workflow patterns, and key API commands.\n* Validated 100% of API references natively against runtime `__all__` list exports, securing accuracy for AI-driven multi-agent orchestration.\n\n### Pipeline Coherence & Zero Dependencies\n\n* The **25-step GNN Processing Pipeline** achieves perfect coherence, producing a **100.0 Health Score** via Intelligence Analysis.\n* Resolved all structural and integration warnings, specifically remediating asynchronous Model Context Protocol (MCP) registration bugs inside the `llm` and `api` modules (`initialize_llm_module` and `register_tools` properly initialized).\n* The pipeline now runs with **0 errors, 0 failures, and 0 warnings** under automated orchestration.\n\n### Massive Repo-Wide Documentation Audit\n\n* Audited **756 total `.md` documentation files**.\n* Validated **5,065 internal reference links**, cleanly resolving **124 dead links/legacy artifacts**.\n* Normalized stale test count claims across 44 files, explicitly confirming **1,522 passing tests**.\n* Enforced **100% Triad structural completeness** (`README`, `AGENTS`, `SPEC`, `SKILL`) across all 28 project modules.\n* Achieved **Zero YAML parsing errors, Zero missing required sections, and Zero `TODO`/`FIXME` gaps** in the core documentation hub.\n\n## 🛠️ Detailed Engineering Fixes\n\n* **`src.api.mcp`**: Bridged FastAPI backend jobs with MCP wrapper functions, surfacing 5 fully functional API coordination tools over the protocol.\n* **`src.llm.mcp`**: Handled coroutine lifecycle within the MCP synchronous initialization space, preventing an unawaited processor loop and achieving robust default context window loading.\n* **`render/` framework mappings**: Successfully verified the continuous parsing engine across targeted dynamic modules (`rxinfer`, `activeinference_jl`, `jax`, `pymdp`, `discopy`) matching precisely to their theoretical documentation profiles.\n\n## Summary Profile\n\n* **Tests Passed:** 1,522 / 1,522\n* **Script Pipeline State:** 25 Steps Clean (0 Warnings)\n* **MCP Tools Registered:** 100+ over 29 module servers\n* **Documentation Health:** Perfect (0 broken links, completely synced)\n\n*This represents the final polished milestone of Phase 7 normalization.*\n",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.3.0",
+      "published_at": "2026-02-25T22:45:49Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "Generalized_Notation_Notation",
+      "tag": "v1.2.0",
+      "name": "v1.2.0 — Data Accuracy & Documentation Sync",
+      "body": "## 🎯 Release Highlights\n\n**v1.2.0** is a data-integrity release that fixes 5 pipeline bugs and unifies all documentation metadata across 635 files. No new features — only correctness and consistency.\n\n---\n\n## 🐛 Pipeline Bug Fixes\n\n### Critical\n- **ActiveInference.jl renderer typo** — `POLICY_LENGTH` → `POLICY_LEN` caused `UndefVarError` in generated Julia scripts (`src/render/activeinference_jl/activeinference_renderer.py`)\n- **ActiveInference.jl validation ordering** — `validation_status` referenced before definition, causing runtime errors during code generation\n\n### Medium\n- **LLM connection extraction** — `extract_connections()` in `src/llm/analyzer.py` now correctly parses GNN-specific connection operators (`>`, `-`, `<`) from `## Connections` sections, increasing detected connections from 0 to 11\n\n### Low\n- **Website analysis scan** — `src/website/generator.py` now scans root-level JSON files in `16_analysis_output/`, not just the `analysis_results/` subdirectory (was reporting 0 analysis results)\n- **Pipeline summary status** — Preliminary summary in `src/main.py` changed from `IN_PROGRESS` to `SUCCESS` to accurately reflect completed steps\n\n---\n\n## 📖 Documentation Sync\n\nThis release eliminates all metadata inconsistencies across the entire repository:\n\n| Metric | Before (v1.1.4) | After (v1.2.0) |\n|--------|-----------------|----------------|\n| **Test count** | Mixed: 1,083 / 1,319 | **1,319** everywhere (35+ files) |\n| **Version string** | Mixed: v1.1.0 / v1.1.4 | **v1.2.0** everywhere (40+ files) |\n| **Dates** | Mixed: Feb 9 / Feb 20 / Feb 21 | **2026-02-23** everywhere (50+ files) |\n| **Execution time** | Mixed: 40s / 90s / 120s / 3min | **~5 min (with LLM step)** (6 files) |\n| **Module coverage %** | Divergent tables in root vs src | **Unified** (2 files) |\n| **Architecture version** | 2.2.1 | **2.3.0** |\n| **Total files changed** | — | **635** |\n\n---\n\n## 📋 New: Project Roadmap\n\nAdded [`TO-DO.md`](TO-DO.md) with planned milestones:\n\n| Release | Theme |\n|---------|-------|\n| v1.2.1 | LLM step performance (profile, batch, cache) |\n| v1.3.0 | Testing & CI improvements |\n| v1.4.0 | GNN language & parser enhancements |\n| v1.5.0 | Website & reporting upgrades |\n| v2.0.0 | Multi-model composition, LSP, cloud execution |\n\n---\n\n## ✅ Verification\n\n- **Full pipeline**: 25/25 steps SUCCESS (299s)\n- **Test suite**: 1,303 passed, 16 skipped, 0 failed (621s)\n- **Stale references**: 0 remaining\n- **Python version**: 3.11+\n- **Package manager**: UV recommended\n\n## 📦 Installation\n\n```bash\ngit clone https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation.git\ncd GeneralizedNotationNotation\npython3 src/1_setup.py --verbose\npython3 src/main.py --target-dir input/gnn_files --verbose\n```\n\n## 🔗 Key Documentation\n\n- [README.md](README.md) — Project overview\n- [ARCHITECTURE.md](ARCHITECTURE.md) — System architecture (v2.3.0)\n- [SETUP_GUIDE.md](SETUP_GUIDE.md) — Installation guide\n- [TO-DO.md](TO-DO.md) — Release roadmap\n- [doc/gnn/README.md](doc/gnn/README.md) — GNN documentation index\n- [CONTRIBUTING.md](CONTRIBUTING.md) — Contribution guidelines\n\n---\n\n**Full Changelog**: https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/compare/v1.1.4...v1.2.0",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.2.0",
+      "published_at": "2026-02-23T15:53:33Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "Generalized_Notation_Notation",
+      "tag": "v1",
+      "name": "GNN v1",
+      "body": "Version 1 of GNN. ",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1",
+      "published_at": "2023-04-05T18:40:45Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "Journal_Utilities",
+      "tag": "v1.1.0",
+      "name": "v1.1.0: journal refactor pipeline + complete channel coverage",
+      "body": "Tooling release that produces the ActiveInferenceJournal v2 schema and pulls the complete Institute channel.\n\n## Highlights\n- **`refactor_journal.py`** — builds the journal v2 schema (source-namespaced `data/video/activeinferenceinstitute/...`), idempotent, with out-of-place staging and verified **zero data loss** before any in-place apply.\n- **Full-channel enumeration** — `youtube/channel.py` now unions the videos + streams + shorts tabs (the uploads-playlist form truncated at ~100): full 729-video coverage.\n- **Complete + idempotent metadata** — every channel video becomes a part in exactly one item; multi-part items merge all parts.\n- **Local Whisper** (`mlx-whisper`) transcription for caption-less videos.\n- **Security** — downloads run cookie-free; credentials (cookies/tokens) are gitignored and never committed.\n- **Documentation** — `docs/` index + `JOURNAL_SCHEMA.md` + `REFACTOR_READINESS.md`, and `README.md` + `AGENTS.md` on every subpackage.\n\nSee `docs/README.md` and `docs/JOURNAL_SCHEMA.md`.\n",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities/releases/tag/v1.1.0",
+      "published_at": "2026-06-30T15:58:07Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/Journal_Utilities"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "Journal_Utilities",
+      "tag": "v0.1.0",
+      "name": "v0.1.0: Hardened, Documented, and Feature-Complete",
+      "body": "# Release v0.1.0: Hardened, Documented, and Feature-Complete 🚀\n\nWe are thrilled to announce **Journal-Utilities v0.1.0**, the first major release of the Active Inference Institute's video processing pipeline. This release brings a fully modular, config-driven system for downloading, transcribing, enriching, and exploring the Institute's massive video library.\n\n## ✨ Key Features\n\n### 📥 **[Universal Download Pipeline](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/youtube_download.md)**\n\n- **Cookie Authentication**: Bypasses YouTube rate limits and 403 errors using browser cookies.\n- **Resumable**: Smartly skips existing files to save bandwidth.\n- **Multi-Format**: Downloads Video (MP4), Audio (MP3/M4A), and Subtitles (VTT/TXT).\n\n### 🎙️ **[Dual-Engine Transcription](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/transcription.md)**\n\n- **Apple Silicon**: Native `mlx-whisper` support for blazing fast on-device transcription.\n- **GPU Cluster**: `WhisperX` integration with speaker diarization and word-level alignment.\n\n### 🧠 **[RAG & Knowledge Graph](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/rag.md)**\n\n- **Entity Extraction**: Uses Cohere AI to extract people, concepts, and relationships.\n- **Graph Database**: Stores connected knowledge in SurrealDB for complex querying.\n- **Chat Engine**: Ollama-powered RAG (default `gemma3:4b`) for chatting with the video library.\n\n### 📄 **[Rich Export](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/export.md)**\n\n- **5 Formats**: Markdown, JSON, HTML, PDF, Plaintext.\n- **Enriched Metadata**: All exports now include Title, Category, Series, Episode, Speakers, Duration, URL, and View Count in headers/frontmatter.\n\n### 🌐 **[Web Interface](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/web_interface.md)**\n\n- **Video Library**: Searchable, filterable, paginated view of all content.\n- **Video Detail**: Embedded player, full transcript viewer, and metadata side-panel.\n- **Interactive Chat**: Built-in RAG chat interface with streaming responses.\n\n---\n\n## 🏗️ Architecture\n\nThe system is built on a **config-driven** philosophy. A single `config.ini` controls the entire pipeline:\n\n```ini\n[general]\ndata_dir = data/output\n\n[download]\ntranscripts = true\naudio = true\ncookies_from_browser = chrome\n\n[transcribe]\nengine = mlx-whisper\nmodel = mlx-community/whisper-large-v3-turbo\n\n[export]\nmarkdown = true\npdf = true\njson = true\n```\n\n---\n\n## 🚀 Quick Start\n\n```bash\n# Clone and install\ngit clone https://github.com/ActiveInferenceInstitute/Journal-Utilities.git\ncd Journal-Utilities\nuv venv && source .venv/bin/activate\nuv pip install -e \".[dev,interface,export]\"\n\n# Run the full pipeline\npython run.py\n```\n\n---\n\n## 📚 Documentation\n\n- [**README**](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/README.md) - New visual entry point\n- [**Configuration Guide**](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/configuration.md)\n- [**Web Interface**](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/web_interface.md)\n- [**Export Guide**](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/export.md)\n- [**Transcription Guide**](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/transcription.md)\n\n---\n\n**Contributors:** @ActiveInferenceInstitute, @hollygrimm, @DaveDouglass\n**License:** MIT\n",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities/releases/tag/v0.1.0",
+      "published_at": "2026-02-18T22:51:46Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/Journal_Utilities"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "Journal_Utilities",
+      "tag": "v1",
+      "name": "Release 1 ",
+      "body": "First release of Journal Utilities ",
+      "html_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities/releases/tag/v1",
+      "published_at": "2023-03-20T13:18:18Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/Journal_Utilities"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
       "repo": "fep_formal",
       "tag": "v1.2.0",
       "name": "FEP_Lean v1.2.0 — connected Horizon research program",
@@ -47269,6 +47429,50 @@
         }
       ],
       "full_name": "ActiveInferenceInstitute/fep_formal"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "ActiveInferenceJournal",
+      "tag": "v2.0.0",
+      "name": "v2.0.0: restructured, complete, agent-navigable journal",
+      "body": "A major restructure of the Active Inference Journal into a uniform, machine- and agent-navigable corpus covering the entire Institute YouTube channel.\n\n## Highlights\n- **Complete channel coverage** — all 729 videos from the [@ActiveInference](https://www.youtube.com/@ActiveInference) channel are represented, each with metadata and a transcript (YouTube captions, or local Whisper for caption-less videos).\n- **New v2 per-item schema** — every item has `metadata.json` (video parts, titles, URLs, durations), `transcript.txt` + `transcript.json`, `captions/`, `translations/`, and `assets/`.\n- **Source-namespaced layout** — `data/video/activeinferenceinstitute/<Series>/<item>/`, ready for other channels (`data/video/<other>/`) and non-video sources (`data/<type>/<source>/`).\n- **Entry points** — `INDEX.json` (machine) and `INDEX.md` (human) at the repo root.\n- **Audio branch** — the `audio` branch mirrors `main` and adds 64 kbps audio per item; `main` stays lightweight (audio-free).\n- **Complete documentation** — `docs/` (SCHEMA, ORGANIZATION, PIPELINE) plus `README.md` + `AGENTS.md` at every folder level.\n\n## Provenance\nGenerated and maintained by [Journal-Utilities](https://github.com/ActiveInferenceInstitute/Journal-Utilities) with verified zero data loss. Schema: `docs/SCHEMA.md`.\n",
+      "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/releases/tag/v2.0.0",
+      "published_at": "2026-06-30T15:57:41Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "ActiveInferenceJournal",
+      "tag": "2023",
+      "name": "May 23, 2023 release",
+      "body": "Updating the release ",
+      "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/releases/tag/2023",
+      "published_at": "2023-05-23T21:27:50Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "ActiveInferenceJournal",
+      "tag": "2022",
+      "name": "Dec. 17, 2022 ~ Active Inference Journal snapshot",
+      "body": "2022 snapshot of the Active Inference Journal",
+      "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/releases/tag/2022",
+      "published_at": "2022-12-17T20:45:12Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal"
+    },
+    {
+      "owner": "ActiveInferenceInstitute",
+      "repo": "ActiveInferenceJournal",
+      "tag": "Journal",
+      "name": "0.01",
+      "body": "Initial Template release",
+      "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/releases/tag/Journal",
+      "published_at": "2022-11-07T14:46:34Z",
+      "assets": [],
+      "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal"
     },
     {
       "owner": "ActiveInferenceInstitute",
@@ -47526,133 +47730,6 @@
     },
     {
       "owner": "ActiveInferenceInstitute",
-      "repo": "Generalized_Notation_Notation",
-      "tag": "v3.5.0",
-      "name": "GNN v3.5.0 — Surface Truth & Integration",
-      "body": "## GNN v3.5.0 — Surface Truth & Integration\n\nThis release makes the package's outward surfaces honest and connected. The\nwebsite dashboard reads step statuses from the recorded pipeline execution\nsummary instead of guessing from directories; MCP clients speak the standard\n2024-11-05 protocol in both transports, with three new tools (`extract_pomdp`,\n`generate_dependency_graph`, `template.pull`) and a `gnn_delete_run` parity\ntool. `DELETE /api/v1/runs/{run_hash}` now gives the API full run control —\nproper cancellation with process-group teardown, artifact removal, and honest\nstatus on timeout. The GUI estate got a truth pass: launches are verified over\nHTTP instead of assumed, status artifacts share one schema, gui_1/gui_2/gui_3\nand oxdraw gained dozens of UX and round-trip fidelity fixes, and a new\n`gnn gui` subcommand puts the interactive stack on the CLI. Under the hood,\none canonical framework tuple drives every framework list (fixing the\n`--frameworks stan` abort and silent `lean` filtering), step 24 gains\ncontent-addressed LLM response caching, LSP diagnostics track in-editor\nedits, and visualization imports got ~30% faster by making seaborn/scipy load\nlazily.\n\n\n**Release stabilization (2026-09-22):** after the initial tag, the CI matrix\nsurfaced a chain of green-gate fixes that are part of this release: the\nversion-literal reconciliation (`gnn.__version__`, `api.MODULE_VERSION`,\nversion-consistency tests), `cross_framework` runtime threading beside the new\n`timeout` parameter, a flax marker-gate (flax 0.12.9 for the jax-0.11.2\npy3.12 splits — 0.12.6 calls a jax API removed in 0.11.0), the mypy target\nmoved to 3.12 (numpy 2.4.x stubs), the executor lazy-loader reconciliation\ncarrying the ngclearn spec row, and a seaborn `center=` fix that routed the\ncorrelation heatmap through a warning-raised `Colormap.set_bad()`. The tag\nnow points at the fully green tip.\n",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.5.0",
-      "published_at": "2026-09-22T02:15:06Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "Generalized_Notation_Notation",
-      "tag": "v3.4.0",
-      "name": "GNN v3.4.0 — Model-Kind Truth",
-      "body": "## [3.4.0] — 2026-09-17\n\n> **Model-Kind Truth.** The documentation and manuscript surfaces now describe\n> discrete, continuous, and multi-agent models as first-class kinds across the\n> ~110-doc corpus, and the manuscript is rebuilt around them with auto-injected\n> version/count tokens so no hard-coded numbers can drift. Alongside it: the\n> `gnn doctor` capability probe, the bnlearn Step 12 executor, Step-6\n> B-orientation diagnostics, and the cover-page graphical abstract.\n\n### Added (2026-09-16/17 — docs model-kind wave + token auto-injection)\n\n- **Package-wide docs model-kind generalization.** A discrete/continuous/\n  multi-agent truth pass over the ~110-file documentation corpus replaced\n  PyMDP-only framing with model-kind-aware language; the manuscript was\n  rewritten around model kinds with auto-injected tokens\n  (`GNN_VERSION`, `GNN_MODULE_COUNT`, `GNN_TOOL_COUNT`, `GNN_TEST_COUNT`),\n  exemplar-kind split, and framework+kind capability tables — zero hard-coded\n  counts remain.\n\n## Manuscript\n\n- Review PDF: attached (GeneralizedNotationNotation-manuscript-2026-09-17.pdf) — cover artwork, model-kind-generalized, all counts auto-injected from the snapshot token census at this release's HEAD.\n",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.4.0",
-      "published_at": "2026-09-17T21:08:21Z",
-      "assets": [
-        {
-          "name": "GeneralizedNotationNotation-manuscript-2026-09-17.pdf",
-          "download_url": "",
-          "size": 1406342
-        }
-      ],
-      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "Generalized_Notation_Notation",
-      "tag": "v3.2.0",
-      "name": "v3.2.0 — Exemplar Gold Standard",
-      "body": "Compare: https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/compare/v3.1.0...v3.2.0\n\n> **Exemplar Gold Standard.** Every exemplar GNN file renders *and executes* on\n> every framework that can represent it and is explicitly flagged `unsupported`\n> (not faked, not failed) on the ones that cannot. Continuous-state exemplars\n> are genuinely continuous (linear-Gaussian) with native JAX / NumPyro /\n> PyTorch / Stan / RxInfer.jl backends; the Stan renderer is rewritten from a\n> non-compiling stub into runnable HMM and LGSSM programs with a cmdstanpy\n> executor; Step 12 summaries merge across input folders; the Julia pre-exec\n> gate no longer blocks scripts on a toolchain-less launcher.\n>\n> Verified end to end on macOS with Julia 1.12.7 (RxInfer 5.5.0,\n> ActiveInference.jl 0.1.2), CmdStan 2.39 and an ephemeral torch: 29 files,\n> 249 renders OK / 0 failed / 12 unsupported; 194 executions OK / 0 failed /\n> 55 dependency skips (torch, bnlearn); PyTorch 29/29 via\n> `uv run --with torch`; pytest 3120 passed.\n\n### Changed (2026-09-01 — exemplar gold standard: continuous models are continuous, Stan is real)\n\n- **Continuous exemplars are now genuinely continuous.** The three files under\n  `input/gnn_files/continuous/` declare only the linear-Gaussian state-space\n  model (`x`, `y`, optional `u`, `F/H/Q/R`, `prior_mean/prior_cov`, optional\n  `goal_mean/control_gain`) — the discretized POMDP stand-ins introduced on\n  2026-08-03 are gone. `continuous_navigation` is a closed-loop navigator\n  (`u_t = 0.3 · (goal − μ_t)`); the other two are passive. Extractor\n  (`gnn/pomdp_extractor.py`) reads dimensions from `F`/`H` and sets\n  `model_kind = \"continuous\"`; the render processor passes the block through\n  verbatim instead of building canonical A/B/C/D.\n- **`unsupported` is a first-class render status.** Frameworks that cannot\n  represent a model kind (PyMDP, ActiveInference.jl, DisCoPy, bnlearn on continuous\n  models) return `{\"unsupported\": true, \"status\": \"unsupported\"}` with the\n  reason \"continuous-state model: … supports discrete POMDPs only\". They are\n  excluded from the success denominator, listed under\n  `unsupported_framework_renderings`, and never handed to Step 12.\n  `framework_registry` entries carry `supports_continuous`.\n- **Native continuous backends.** JAX, NumPyro, PyTorch and Stan render and\n  execute the LGSSM (online Kalman filter, Joseph-form update, closed-loop\n  control) via the shared generator `render/continuous_script.py`; NumPyro\n  additionally fits the same model with NUTS (`mcmc_posterior_means`,\n  `mcmc_r_hat_max`). RxInfer.jl's existing continuous strategy is reached\n  without the A/B/C/D canonicalisation guard. Verified end to end on this\n  machine for all five.\n- **Stan renderer rewritten** (`render/stan/stan_renderer.py`). The previous\n  generator emitted `target ~ normal(source, 1.0)` per edge with undeclared\n  variables and could not compile. Discrete models now render an HMM whose\n  latent chain is marginalised with the forward algorithm and whose per-state\n  observation distributions carry Dirichlet priors centred on the declared\n  `A`; continuous models render the explicit Kalman marginal likelihood. Each\n  render emits `<stem>_stan.stan` plus a cmdstanpy driver `<stem>_stan.py`.\n  New `execute/stan/` runner, `stan` added to Step 12 discovery and to\n  `utils.framework_availability` (skips with `uv sync --extra stan`), new\n  optional extra `stan = [\"cmdstanpy>=1.2\"]`. `render_stan()` remains as a\n  declaration-only sketch.\n\n### Fixed (2026-09-01)\n\n- **Step 12 summary no longer overwritten per input folder.**\n  `execute/processor.py` merges the prior `execution_summary.json` (details\n  keyed by script path; counts, per-framework status and overall status\n  recomputed) so the durable summary covers every folder, mirroring Step 11.\n- **Julia pre-exec gate false positive.** A `julia` launcher without a\n  working toolchain made `Meta.parseall` return a non-zero exit with no\n  `GNN_PARSE_FAIL` marker; the gate treated that as malformed code and blocked\n  every Julia script. The probe now degrades to the advisory regex sweep\n  unless the parser itself reported a failure.\n- **`INDEX.md` excluded from model discovery** (`gnn/discovery.py`), fixing\n  four tests that counted 30 exemplars instead of 29.\n- **CI hygiene.** `ruff format` drift across 45 files cleared; Bandit B108\n  (hard-coded `/tmp` in the CLI models command) replaced with\n  `tempfile.gettempdir()`; the two Julia-live test modules now skip when the\n  committed Julia project environments are not instantiated (CI ships `julia`\n  without RxInfer/ActiveInference.jl); the framework-availability test honours\n  toolchain probes; repository-terminology audit clean.\n- **ActiveInference.jl precompile on Julia 1.12.** `Distributions` pinned to\n  `0.25.100 – 0.25.125` in `src/execute/activeinference_jl/Project.toml`\n  (DistributionsAD 0.6.58's ReverseDiff extension breaks against the\n  `@check_args` change in 0.25.126); Manifest re-resolved.\n",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.2.0",
-      "published_at": "2026-09-02T18:35:26Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "Generalized_Notation_Notation",
-      "tag": "v3.0.0",
-      "name": "GNN v3.0.0 — Long-Running Orchestration",
-      "body": "# GNN v3.0.0 — Long-Running Orchestration\n\nGeneralizedNotationNotation v3.0.0 adds **safe-by-design long-running orchestration** on top of the GNN text language and 25-step processing pipeline. Every new module **generates, validates, replays, or plans data only — no live infrastructure is ever mutated** (no container is executed, no cluster or device is touched).\n\n## Highlights — three orchestration contracts (`src/pipeline/`)\n\n- **Durable observation streams** (`durable_streams.py`) — content-checksummed file/array `StreamManifest`s and replayable `ExecutionTrace`s, so an extended run can be observed, paused, and re-derived deterministically before any live sensor or device-backed stream is introduced. Cross-architecture-deterministic checksums, injective stream ids, and trace meaning re-bound to ground truth on verify.\n- **Resumable run sessions** (`run_session.py`) — `RunSession` manifests with atomic checkpoint/resume, status inspection, and path-escape-safe, idempotent cancellation cleanup, so an extended model-family acceptance run can be interrupted and resumed without corrupting partial state.\n- **Auditable container plans** (`container_plan.py`) — hardened plan generation (non-root, read-only rootfs, cap-drop ALL, digest-pinned images, resource limits), a static `security_review` (privileged / root / unpinned-image / plaintext-secret / sensitive-host-mount / host-namespace / dangerous-capability findings), rollback descriptors, and deterministic plan hashes — without ever touching a real cluster.\n\n## Additive live wiring (no change to the 25-step critical path)\n\n- `session_acceptance.py` — resumable, checkpoint-after-each model-family acceptance.\n- `run_manifest.py` — emit durable `StreamManifest`s + a replayable `ExecutionTrace` from a completed run's `output/` (verified on a real run: 105 manifests + a 25-event trace).\n- `pipeline_container_plan.py` — a `security_review`-clean container plan generated from the real `input/config.yaml`.\n- A strict, fail-closed acceptance gate: `scripts/run_v3_orchestration_acceptance.py` (`--inject-defect` exits non-zero).\n- Three new Model Context Protocol tools (tool total 137 to 140).\n\n## Release evidence\n\nThe standing release gates were re-run **green for all 9 model families**: semantic fidelity (`run_semantic_fidelity_gate.py`), cross-framework reliability (`run_cross_framework_reliability.py`, GridWorld compared across PyMDP, RxInfer, and ActiveInference.jl), and model-family acceptance (`run_model_family_acceptance.py`). The orchestration foundation ships **without regressing the v2.0.0 reliability surface**. The CI matrix is green (ruff format/check, four documentation audits, and `mypy src`), and the long-standing tool-version drift in the matrix was cleaned up as part of this release.\n\n## Documentation, manuscript & visualizations\n\n- README, AGENTS, DOCS, ARCHITECTURE, and the `doc/` entry points brought current to v3.0.0; new reference page `doc/pipeline/v3_orchestration.md`.\n- The auto-injected manuscript gained a \"Long-Running Orchestration Contracts\" methods section and a new architecture figure; every quantitative value is a token resolved from the live repository.\n- Visualizations improved: a clean layered pipeline DAG and a new orchestration-architecture diagram.\n\n## Next\n\nv4.0.0 — bounded autonomy and reviewed self-editing workflows, gated behind this orchestration work.\n\nFull details: see `CHANGELOG.md` and `TO-DO.md`.\n",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.0.0",
-      "published_at": "2026-06-21T01:29:30Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "Generalized_Notation_Notation",
-      "tag": "v2.0.0",
-      "name": "v2.0.0",
-      "body": "\n### Added\n- **Semantic fidelity release gate**: `scripts/run_semantic_fidelity_gate.py` writes `gnn_semantic_fidelity_ledger_v1` artifacts for maintained model families.\n- **Strict semantic contracts**: representative fixtures now preserve model identity, variables, edges, dimensions, parameter shapes, equations, time, and ontology mappings across JSON parse/serialize/parse checks.\n- **Cross-framework reliability release gate**: `scripts/run_cross_framework_reliability.py` writes `gnn_cross_framework_reliability_ledger_v1` artifacts with compatible, required, and unsupported backend statuses.\n- **GridWorld three-backend comparison**: GridWorld is profiled for PyMDP, RxInfer, and ActiveInference.jl, including seed, trace length, matrix-shape, and matrix-provenance parity.\n\n### Changed\n- GridWorld model-family acceptance now requests PyMDP, RxInfer, and ActiveInference.jl for the v2 comparison fixture instead of a PyMDP-only profile.\n- Roadmap next target moves to v3.0.0 for durable streams, long-running sessions, and auditable container plans.\n\n### Fixed\n- JSON serialization now emits equation objects instead of lossy stringified dataclasses, preventing silent semantic round-trip drift.\n- Cross-framework reliability no longer certifies aggregate Step 12 success without successful non-skipped execution-detail rows and current simulation payloads for required backends.\n\n---",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v2.0.0",
-      "published_at": "2026-06-12T19:24:57Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "Generalized_Notation_Notation",
-      "tag": "v1.9.0",
-      "name": "v1.9.0",
-      "body": "## [1.9.0] — 2026-06-12\n\n### Added\n- **Model-family acceptance release gate**: manifest-driven all-family strict acceptance for basics, discrete, continuous, hierarchical, multi-agent, precision, structured, gridworld, and scaling-study fixtures.\n- **Cross-step evidence ledger**: release ledger now links Step 3/5/6/11/12/15/16/23 statuses, artifact links, telemetry presence, renderer/execution status, and concrete skip reasons per family.\n- **Interpretability summaries**: per-family summaries now include variable/edge inventories, matrix-shape tables, telemetry presence, optional trace previews, renderer/execution status, and artifact links.\n\n### Changed\n- Continuous and hierarchical Step 11/12 outcomes are explicit profiled unsupported skips with concrete reasons, not raw render/execute failures accepted by profile math.\n- v1.7.0 is retired as a foundation-only track; unfinished runtime-depth ambitions move forward into v2+ reliability and orchestration milestones.\n- Current test evidence updated to 2,399 collected tests; final full-suite release evidence is recorded in `TO-DO.md`, `README.md`, and test documentation after the v1.9 release gate rerun.\n\n### Fixed\n- Removed the model-family acceptance reason-pattern fallback that could reclassify failed renderer/executor steps as unsupported success.\n- Hardened strict acceptance so profiled unsupported steps must be skipped before execution and failed Step 11/12 summaries fail closed.\n- Prevented cross-framework analysis from reading stale repo-tracked `output/` artifacts during isolated `/tmp` acceptance runs.\n- Relaxed an environment performance smoke threshold to match other slow module smoke tests and avoid full-suite load false negatives.\n\n### Validation\n- PR #12 checks passed: Bandit, CodeQL, analyze (python), dependency-review, markdown-audit, security, test (3.11), test (3.12), test (3.13).\n- Local full suite: `2381 passed, 17 skipped, 1 xfailed` with Ollama integration tests ignored.\n- Local collect-only: 2,399 collected tests with Ollama integration tests ignored.\n- All-family strict acceptance: passed for 9 manifest families; continuous and hierarchical Step 11/12 are explicit profiled unsupported skips with concrete reasons and no raw failed Step 11/12 counts.\n",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.9.0",
-      "published_at": "2026-06-12T17:20:38Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "Generalized_Notation_Notation",
-      "tag": "v1.8.0",
-      "name": "v1.8.0: Developer Kit & Safe Local MCP Orchestration",
-      "body": "## v1.8.0 — Developer Kit & Safe Local MCP Orchestration\n\n### Added\n- Template developer kit: packaged template index, package-data template assets, `gnn templates list`, `gnn templates show NAME`, and `gnn pull NAME --output-dir ... --dry-run --overwrite`.\n- Template safety contracts: checksum verification, collision handling, symlink/path traversal rejection, unknown-template failures, and installed-wheel smoke coverage outside the repo checkout.\n- MCP local HTTP orchestration: bearer-token auth through `GNN_MCP_TOKEN`, localhost default binding, explicit insecure local opt-in with `GNN_MCP_ALLOW_INSECURE_LOCAL=1`, safe-tool filtering, optional rate limiting, and default-denied resource reads unless explicitly allowlisted.\n- Capability-contract verifier for template package data, MCP auth/resource safety, acceptance-command isolation, roadmap ordering, count drift, and autonomy non-mutation claims.\n\n### Changed\n- `TO-DO.md` now treats v1.8.0 as the developer-kit release and v1.9.0 as the next model-family reliability target.\n- Developer documentation advertises verified template and MCP commands only, with `/tmp` output directories in acceptance smokes to avoid tracked `output/` churn.\n- Current evidence: 2,397 collected tests; latest full local suite evidence with Ollama integration excludes is 2,379 passed, 17 skipped, 1 xfailed.\n\n### Fixed\n- Removed release-facing false-certification paths around optional framework fallback, stale counts, MCP unauthenticated HTTP, unsafe MCP resource exposure, and template assets that only work from a source checkout.\n- Fixed CI-sensitive optional Julia package gating so missing optional backend packages skip instead of failing while preserving failures for real Julia errors.\n\n### Validation\n- PR #11 checks: 9 passed, 0 failed.\n- Local gates: `git diff --check`, Ruff check/format, mypy, docs audit, GNN doc patterns, maintained-doc terms, repo terminology, capability contracts, and `just lint`.\n- Acceptance smokes: `gnn templates list`, `gnn templates show pomdp-gridworld-3x3`, `gnn pull pomdp-gridworld-3x3 --output-dir /tmp/gnn-pull --dry-run`, and token-enabled MCP HTTP tests.\n- Full local suite: `uv run --extra dev python -m pytest src/tests/ -q --tb=no --ignore=src/tests/llm/test_llm_ollama.py --ignore=src/tests/llm/test_llm_ollama_integration.py` -> 2,379 passed, 17 skipped, 1 xfailed.",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.8.0",
-      "published_at": "2026-06-12T14:21:20Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "Generalized_Notation_Notation",
-      "tag": "v1.6.0",
-      "name": "v1.6.0: Zero-Mock Testing Stabilization & Documentation Hardening",
-      "body": "### Fixed\n- **Testing Constraints**: Entirely removed dependency on internal `hypothesis.internal.conjecture.optimiser` arrays mitigating python 3.13 crashes, transitioning to native parameterized fuzzers.\n- **HTML Assertion Accuracy**: Relaxed legacy `test_report_functional` strings to mathematically accept dynamic semantic UI tags (`<html lang=\"en\">` instead of `<html>`).\n\n### Added\n- **Global Documentation Guardrails**: Enforced 100% adherence to zero-mock documentation mandates. Provisioned `AGENTS.md`, `README.md`, and `SPEC.md` components natively within transient boundaries (`output/`, `.benchmarks/`, `scripts/`) and defined the master environment `SPEC.md` at root.\n- **Type checker visual dashboards**: Baseball-card style model summary PNGs (dark neon theme), validity mosaics, issue distribution charts, and type category pie charts generated in `output/5_type_checker_output/visualizations/`\n- **Resource estimation integration**: `estimate_file_resources()` now delegates to `estimation_strategies.py` for real FLOPS, memory, and complexity scoring instead of naive heuristics\n- **Documentation hub sync**: Automated `doc/gnn/modules/[00-24].md` reconciliation from `src/*/AGENTS.md` source-of-truth\n\n### Changed\n- **Zero-Mock Policy Enforcement**: Systematically excised all mentions and framework hooks relating to `pytest-mock` allowing completely isolated functional testing constraints natively.\n- **Type checker consolidation**: Deleted redundant `src/type_checker/checker.py`; all logic unified in `processor.py` (`GNNTypeChecker`)\n- **Test suite alignment**: `test_type_checker_overall.py` rewired to target production `processor.py` orchestrator (zero-mock)\n- **Deprecated marker removed**: `safe_to_fail` marker replaced with standard `xfail` in `pyproject.toml` and `pytest.ini`\n- **Default local LLM**: Ollama default tag is `smollm2:135m-instruct-q4_K_S` (`llm.defaults.DEFAULT_OLLAMA_MODEL`); override with `OLLAMA_MODEL` or `input/config.yaml` `llm.model`.\n- **Core dependencies**: `openai`, `ollama`, `python-dotenv`, and `aiohttp` are installed with the base package (LLM step and OpenRouter/Perplexity providers work without `uv sync --extra llm`).",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.6.0",
-      "published_at": "2026-04-15T22:34:16Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "Generalized_Notation_Notation",
-      "tag": "v1.3.0",
-      "name": "v1.3.0 — The Pipeline Coherence & Agentic Integration Release",
-      "body": "# v1.3.0 — The Pipeline Coherence & Agentic Integration Release\n\nThis release establishes the Generalized Notation Notation (GNN) repository as a pristine, fully integrated, agent-ready ecosystem. With over 756 documentation files audited, deep MCP integration stabilized, and 100% test passing ratios across 1,522 unit tests and 25 pipeline steps, this update sets a new gold standard for repository coherence.\n\n## 🌟 Major Highlights\n\n### Agent-Ready `SKILL.md` Capability Framework\n\n* Deployed **28 Anthropic `skills` standard `SKILL.md` files** covering every `src/` module.\n* Mapped precise AI capability boundaries, workflow patterns, and key API commands.\n* Validated 100% of API references natively against runtime `__all__` list exports, securing accuracy for AI-driven multi-agent orchestration.\n\n### Pipeline Coherence & Zero Dependencies\n\n* The **25-step GNN Processing Pipeline** achieves perfect coherence, producing a **100.0 Health Score** via Intelligence Analysis.\n* Resolved all structural and integration warnings, specifically remediating asynchronous Model Context Protocol (MCP) registration bugs inside the `llm` and `api` modules (`initialize_llm_module` and `register_tools` properly initialized).\n* The pipeline now runs with **0 errors, 0 failures, and 0 warnings** under automated orchestration.\n\n### Massive Repo-Wide Documentation Audit\n\n* Audited **756 total `.md` documentation files**.\n* Validated **5,065 internal reference links**, cleanly resolving **124 dead links/legacy artifacts**.\n* Normalized stale test count claims across 44 files, explicitly confirming **1,522 passing tests**.\n* Enforced **100% Triad structural completeness** (`README`, `AGENTS`, `SPEC`, `SKILL`) across all 28 project modules.\n* Achieved **Zero YAML parsing errors, Zero missing required sections, and Zero `TODO`/`FIXME` gaps** in the core documentation hub.\n\n## 🛠️ Detailed Engineering Fixes\n\n* **`src.api.mcp`**: Bridged FastAPI backend jobs with MCP wrapper functions, surfacing 5 fully functional API coordination tools over the protocol.\n* **`src.llm.mcp`**: Handled coroutine lifecycle within the MCP synchronous initialization space, preventing an unawaited processor loop and achieving robust default context window loading.\n* **`render/` framework mappings**: Successfully verified the continuous parsing engine across targeted dynamic modules (`rxinfer`, `activeinference_jl`, `jax`, `pymdp`, `discopy`) matching precisely to their theoretical documentation profiles.\n\n## Summary Profile\n\n* **Tests Passed:** 1,522 / 1,522\n* **Script Pipeline State:** 25 Steps Clean (0 Warnings)\n* **MCP Tools Registered:** 100+ over 29 module servers\n* **Documentation Health:** Perfect (0 broken links, completely synced)\n\n*This represents the final polished milestone of Phase 7 normalization.*\n",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.3.0",
-      "published_at": "2026-02-25T22:45:49Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "Generalized_Notation_Notation",
-      "tag": "v1.2.0",
-      "name": "v1.2.0 — Data Accuracy & Documentation Sync",
-      "body": "## 🎯 Release Highlights\n\n**v1.2.0** is a data-integrity release that fixes 5 pipeline bugs and unifies all documentation metadata across 635 files. No new features — only correctness and consistency.\n\n---\n\n## 🐛 Pipeline Bug Fixes\n\n### Critical\n- **ActiveInference.jl renderer typo** — `POLICY_LENGTH` → `POLICY_LEN` caused `UndefVarError` in generated Julia scripts (`src/render/activeinference_jl/activeinference_renderer.py`)\n- **ActiveInference.jl validation ordering** — `validation_status` referenced before definition, causing runtime errors during code generation\n\n### Medium\n- **LLM connection extraction** — `extract_connections()` in `src/llm/analyzer.py` now correctly parses GNN-specific connection operators (`>`, `-`, `<`) from `## Connections` sections, increasing detected connections from 0 to 11\n\n### Low\n- **Website analysis scan** — `src/website/generator.py` now scans root-level JSON files in `16_analysis_output/`, not just the `analysis_results/` subdirectory (was reporting 0 analysis results)\n- **Pipeline summary status** — Preliminary summary in `src/main.py` changed from `IN_PROGRESS` to `SUCCESS` to accurately reflect completed steps\n\n---\n\n## 📖 Documentation Sync\n\nThis release eliminates all metadata inconsistencies across the entire repository:\n\n| Metric | Before (v1.1.4) | After (v1.2.0) |\n|--------|-----------------|----------------|\n| **Test count** | Mixed: 1,083 / 1,319 | **1,319** everywhere (35+ files) |\n| **Version string** | Mixed: v1.1.0 / v1.1.4 | **v1.2.0** everywhere (40+ files) |\n| **Dates** | Mixed: Feb 9 / Feb 20 / Feb 21 | **2026-02-23** everywhere (50+ files) |\n| **Execution time** | Mixed: 40s / 90s / 120s / 3min | **~5 min (with LLM step)** (6 files) |\n| **Module coverage %** | Divergent tables in root vs src | **Unified** (2 files) |\n| **Architecture version** | 2.2.1 | **2.3.0** |\n| **Total files changed** | — | **635** |\n\n---\n\n## 📋 New: Project Roadmap\n\nAdded [`TO-DO.md`](TO-DO.md) with planned milestones:\n\n| Release | Theme |\n|---------|-------|\n| v1.2.1 | LLM step performance (profile, batch, cache) |\n| v1.3.0 | Testing & CI improvements |\n| v1.4.0 | GNN language & parser enhancements |\n| v1.5.0 | Website & reporting upgrades |\n| v2.0.0 | Multi-model composition, LSP, cloud execution |\n\n---\n\n## ✅ Verification\n\n- **Full pipeline**: 25/25 steps SUCCESS (299s)\n- **Test suite**: 1,303 passed, 16 skipped, 0 failed (621s)\n- **Stale references**: 0 remaining\n- **Python version**: 3.11+\n- **Package manager**: UV recommended\n\n## 📦 Installation\n\n```bash\ngit clone https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation.git\ncd GeneralizedNotationNotation\npython3 src/1_setup.py --verbose\npython3 src/main.py --target-dir input/gnn_files --verbose\n```\n\n## 🔗 Key Documentation\n\n- [README.md](README.md) — Project overview\n- [ARCHITECTURE.md](ARCHITECTURE.md) — System architecture (v2.3.0)\n- [SETUP_GUIDE.md](SETUP_GUIDE.md) — Installation guide\n- [TO-DO.md](TO-DO.md) — Release roadmap\n- [doc/gnn/README.md](doc/gnn/README.md) — GNN documentation index\n- [CONTRIBUTING.md](CONTRIBUTING.md) — Contribution guidelines\n\n---\n\n**Full Changelog**: https://github.com/ActiveInferenceInstitute/GeneralizedNotationNotation/compare/v1.1.4...v1.2.0",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.2.0",
-      "published_at": "2026-02-23T15:53:33Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "Generalized_Notation_Notation",
-      "tag": "v1",
-      "name": "GNN v1",
-      "body": "Version 1 of GNN. ",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1",
-      "published_at": "2023-04-05T18:40:45Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/Generalized_Notation_Notation"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
       "repo": "fundamentals",
       "tag": "v0.1.0",
       "name": "v0.1.0 - Drafts through Chapter 10",
@@ -47672,83 +47749,6 @@
       "published_at": "2025-09-03T14:05:20Z",
       "assets": [],
       "full_name": "ActiveInferenceInstitute/Start"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "Journal_Utilities",
-      "tag": "v1.1.0",
-      "name": "v1.1.0: journal refactor pipeline + complete channel coverage",
-      "body": "Tooling release that produces the ActiveInferenceJournal v2 schema and pulls the complete Institute channel.\n\n## Highlights\n- **`refactor_journal.py`** — builds the journal v2 schema (source-namespaced `data/video/activeinferenceinstitute/...`), idempotent, with out-of-place staging and verified **zero data loss** before any in-place apply.\n- **Full-channel enumeration** — `youtube/channel.py` now unions the videos + streams + shorts tabs (the uploads-playlist form truncated at ~100): full 729-video coverage.\n- **Complete + idempotent metadata** — every channel video becomes a part in exactly one item; multi-part items merge all parts.\n- **Local Whisper** (`mlx-whisper`) transcription for caption-less videos.\n- **Security** — downloads run cookie-free; credentials (cookies/tokens) are gitignored and never committed.\n- **Documentation** — `docs/` index + `JOURNAL_SCHEMA.md` + `REFACTOR_READINESS.md`, and `README.md` + `AGENTS.md` on every subpackage.\n\nSee `docs/README.md` and `docs/JOURNAL_SCHEMA.md`.\n",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities/releases/tag/v1.1.0",
-      "published_at": "2026-06-30T15:58:07Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/Journal_Utilities"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "Journal_Utilities",
-      "tag": "v0.1.0",
-      "name": "v0.1.0: Hardened, Documented, and Feature-Complete",
-      "body": "# Release v0.1.0: Hardened, Documented, and Feature-Complete 🚀\n\nWe are thrilled to announce **Journal-Utilities v0.1.0**, the first major release of the Active Inference Institute's video processing pipeline. This release brings a fully modular, config-driven system for downloading, transcribing, enriching, and exploring the Institute's massive video library.\n\n## ✨ Key Features\n\n### 📥 **[Universal Download Pipeline](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/youtube_download.md)**\n\n- **Cookie Authentication**: Bypasses YouTube rate limits and 403 errors using browser cookies.\n- **Resumable**: Smartly skips existing files to save bandwidth.\n- **Multi-Format**: Downloads Video (MP4), Audio (MP3/M4A), and Subtitles (VTT/TXT).\n\n### 🎙️ **[Dual-Engine Transcription](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/transcription.md)**\n\n- **Apple Silicon**: Native `mlx-whisper` support for blazing fast on-device transcription.\n- **GPU Cluster**: `WhisperX` integration with speaker diarization and word-level alignment.\n\n### 🧠 **[RAG & Knowledge Graph](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/rag.md)**\n\n- **Entity Extraction**: Uses Cohere AI to extract people, concepts, and relationships.\n- **Graph Database**: Stores connected knowledge in SurrealDB for complex querying.\n- **Chat Engine**: Ollama-powered RAG (default `gemma3:4b`) for chatting with the video library.\n\n### 📄 **[Rich Export](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/export.md)**\n\n- **5 Formats**: Markdown, JSON, HTML, PDF, Plaintext.\n- **Enriched Metadata**: All exports now include Title, Category, Series, Episode, Speakers, Duration, URL, and View Count in headers/frontmatter.\n\n### 🌐 **[Web Interface](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/web_interface.md)**\n\n- **Video Library**: Searchable, filterable, paginated view of all content.\n- **Video Detail**: Embedded player, full transcript viewer, and metadata side-panel.\n- **Interactive Chat**: Built-in RAG chat interface with streaming responses.\n\n---\n\n## 🏗️ Architecture\n\nThe system is built on a **config-driven** philosophy. A single `config.ini` controls the entire pipeline:\n\n```ini\n[general]\ndata_dir = data/output\n\n[download]\ntranscripts = true\naudio = true\ncookies_from_browser = chrome\n\n[transcribe]\nengine = mlx-whisper\nmodel = mlx-community/whisper-large-v3-turbo\n\n[export]\nmarkdown = true\npdf = true\njson = true\n```\n\n---\n\n## 🚀 Quick Start\n\n```bash\n# Clone and install\ngit clone https://github.com/ActiveInferenceInstitute/Journal-Utilities.git\ncd Journal-Utilities\nuv venv && source .venv/bin/activate\nuv pip install -e \".[dev,interface,export]\"\n\n# Run the full pipeline\npython run.py\n```\n\n---\n\n## 📚 Documentation\n\n- [**README**](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/README.md) - New visual entry point\n- [**Configuration Guide**](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/configuration.md)\n- [**Web Interface**](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/web_interface.md)\n- [**Export Guide**](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/export.md)\n- [**Transcription Guide**](https://github.com/ActiveInferenceInstitute/Journal-Utilities/blob/v0.1.0/docs/transcription.md)\n\n---\n\n**Contributors:** @ActiveInferenceInstitute, @hollygrimm, @DaveDouglass\n**License:** MIT\n",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities/releases/tag/v0.1.0",
-      "published_at": "2026-02-18T22:51:46Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/Journal_Utilities"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "Journal_Utilities",
-      "tag": "v1",
-      "name": "Release 1 ",
-      "body": "First release of Journal Utilities ",
-      "html_url": "https://github.com/ActiveInferenceInstitute/Journal_Utilities/releases/tag/v1",
-      "published_at": "2023-03-20T13:18:18Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/Journal_Utilities"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "ActiveInferenceJournal",
-      "tag": "v2.0.0",
-      "name": "v2.0.0: restructured, complete, agent-navigable journal",
-      "body": "A major restructure of the Active Inference Journal into a uniform, machine- and agent-navigable corpus covering the entire Institute YouTube channel.\n\n## Highlights\n- **Complete channel coverage** — all 729 videos from the [@ActiveInference](https://www.youtube.com/@ActiveInference) channel are represented, each with metadata and a transcript (YouTube captions, or local Whisper for caption-less videos).\n- **New v2 per-item schema** — every item has `metadata.json` (video parts, titles, URLs, durations), `transcript.txt` + `transcript.json`, `captions/`, `translations/`, and `assets/`.\n- **Source-namespaced layout** — `data/video/activeinferenceinstitute/<Series>/<item>/`, ready for other channels (`data/video/<other>/`) and non-video sources (`data/<type>/<source>/`).\n- **Entry points** — `INDEX.json` (machine) and `INDEX.md` (human) at the repo root.\n- **Audio branch** — the `audio` branch mirrors `main` and adds 64 kbps audio per item; `main` stays lightweight (audio-free).\n- **Complete documentation** — `docs/` (SCHEMA, ORGANIZATION, PIPELINE) plus `README.md` + `AGENTS.md` at every folder level.\n\n## Provenance\nGenerated and maintained by [Journal-Utilities](https://github.com/ActiveInferenceInstitute/Journal-Utilities) with verified zero data loss. Schema: `docs/SCHEMA.md`.\n",
-      "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/releases/tag/v2.0.0",
-      "published_at": "2026-06-30T15:57:41Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "ActiveInferenceJournal",
-      "tag": "2023",
-      "name": "May 23, 2023 release",
-      "body": "Updating the release ",
-      "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/releases/tag/2023",
-      "published_at": "2023-05-23T21:27:50Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "ActiveInferenceJournal",
-      "tag": "2022",
-      "name": "Dec. 17, 2022 ~ Active Inference Journal snapshot",
-      "body": "2022 snapshot of the Active Inference Journal",
-      "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/releases/tag/2022",
-      "published_at": "2022-12-17T20:45:12Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal"
-    },
-    {
-      "owner": "ActiveInferenceInstitute",
-      "repo": "ActiveInferenceJournal",
-      "tag": "Journal",
-      "name": "0.01",
-      "body": "Initial Template release",
-      "html_url": "https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/releases/tag/Journal",
-      "published_at": "2022-11-07T14:46:34Z",
-      "assets": [],
-      "full_name": "ActiveInferenceInstitute/ActiveInferenceJournal"
     },
     {
       "owner": "ActiveInferenceInstitute",
@@ -58113,1817 +58113,11 @@
       "record_url": "https://zenodo.org/records/10360056"
     }
   ],
-  "applied": [
-    {
-      "doi": "10.5281/zenodo.19574117",
-      "folder": "2026_EntoLinguistics",
-      "created": false,
-      "updated_files": [
-        "papers/2026_EntoLinguistics/README.md",
-        "papers/2026_EntoLinguistics/CITATION.cff",
-        "papers/2026_EntoLinguistics/metadata.json",
-        "papers/paper_metadata.json",
-        "pages/SOFTWARE.md"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.19574117",
-        "title": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/ento_linguistics",
-        "github_release_url": "https://github.com/docxology/ento_linguistics/releases/tag/v1.1.1",
-        "zenodo_record_url": "https://zenodo.org/records/19574117",
-        "release_tag": "v1.1.1",
-        "folder": "2026_EntoLinguistics"
-      },
-      "provenance": {
-        "action_sha256": "0b27e98c206d1aee8a7adc88acad4a587dfb254fad17b3dc5b2707e6028d06bb",
-        "metadata_path": "papers/2026_EntoLinguistics/metadata.json",
-        "metadata_sha256": "e86f24908e452e5d5eca28ab88313a467cc805fb38770bef6439f49b08f062a8",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "0b27e98c206d1aee8a7adc88acad4a587dfb254fad17b3dc5b2707e6028d06bb"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.19695259",
-      "folder": "2026_CognitiveCaseDiagrams",
-      "created": false,
-      "updated_files": [
-        "papers/2026_CognitiveCaseDiagrams/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.19695259",
-        "title": "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/cognitive_case_diagrams",
-        "github_release_url": "https://github.com/docxology/cognitive_case_diagrams/releases/tag/v2.4.0",
-        "zenodo_record_url": "https://zenodo.org/records/19695259",
-        "release_tag": "v2.4.0",
-        "folder": "2026_CognitiveCaseDiagrams"
-      },
-      "provenance": {
-        "action_sha256": "99fbee1cda9bd41172e25afdd1eeabb06c3e7b279d513a5500389b970f82183b",
-        "metadata_path": "papers/2026_CognitiveCaseDiagrams/metadata.json",
-        "metadata_sha256": "fcf17e79d785f91f8d703de98576afe5d4f373003039e5c39f3585040b633fa6",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "99fbee1cda9bd41172e25afdd1eeabb06c3e7b279d513a5500389b970f82183b"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.19699233",
-      "folder": "2026_FEPLean",
-      "created": false,
-      "updated_files": [
-        "papers/2026_FEPLean/README.md",
-        "papers/2026_FEPLean/CITATION.cff",
-        "papers/2026_FEPLean/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.19699233",
-        "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "ActiveInferenceInstitute/fep_formal",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.1.0",
-        "zenodo_record_url": "https://zenodo.org/records/19699233",
-        "release_tag": "v1.1.0",
-        "folder": "2026_FEPLean"
-      },
-      "provenance": {
-        "action_sha256": "222c84352a0614ee72981ee65771bc99f5319726a642ff4286f3e942c2bcd820",
-        "metadata_path": "papers/2026_FEPLean/metadata.json",
-        "metadata_sha256": "f42898d63320cd6b2002424a9257346a0e525941d04f791d0fe79cde04dc244d",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "222c84352a0614ee72981ee65771bc99f5319726a642ff4286f3e942c2bcd820"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20396328",
-      "folder": "2026_ENTO",
-      "created": false,
-      "updated_files": [
-        "papers/2026_ENTO/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20396328",
-        "title": "ENTO: an ENcrypted, Typed, Omnitrack container format for multimodal research data",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/entofile",
-        "github_release_url": "https://github.com/docxology/entofile/releases/tag/v0.4",
-        "zenodo_record_url": "https://zenodo.org/records/20396328",
-        "release_tag": "v0.4",
-        "folder": "2026_ENTO"
-      },
-      "provenance": {
-        "action_sha256": "0b9fc9062dc0dd13e9dbac62616db6e2272a643538c7e4ea56f899c2ec48655b",
-        "metadata_path": "papers/2026_ENTO/metadata.json",
-        "metadata_sha256": "fcabf5578ea371e81399f39fe749e130e19d6ff2b81312326ff83f8f71eaf79c",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "0b9fc9062dc0dd13e9dbac62616db6e2272a643538c7e4ea56f899c2ec48655b"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20417016",
-      "folder": "2026_BoundedAutoResearchTiny",
-      "created": false,
-      "updated_files": [
-        "papers/2026_BoundedAutoResearchTiny/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20417016",
-        "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_autoresearch_project",
-        "github_release_url": "https://github.com/docxology/template_autoresearch_project/releases/tag/v0.3.2",
-        "zenodo_record_url": "https://zenodo.org/records/20417016",
-        "release_tag": "v0.3.2",
-        "folder": "2026_BoundedAutoResearchTiny"
-      },
-      "provenance": {
-        "action_sha256": "2e4695a28800b22ab14b05279bfe93380ee4e413b7f0d33b369dd8fe698b3069",
-        "metadata_path": "papers/2026_BoundedAutoResearchTiny/metadata.json",
-        "metadata_sha256": "44f04f9cddf007f63a2e6a982172500faf58795a14f82f65964e0b57898e4ca0",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "2e4695a28800b22ab14b05279bfe93380ee4e413b7f0d33b369dd8fe698b3069"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20417021",
-      "folder": "2026_ActiveInferenceMulti",
-      "created": false,
-      "updated_files": [
-        "papers/2026_ActiveInferenceMulti/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20417021",
-        "title": "Active Inference Multi-Track Exemplar",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_active_inference",
-        "github_release_url": "https://github.com/docxology/template_active_inference/releases/tag/v0.3.2",
-        "zenodo_record_url": "https://zenodo.org/records/20417021",
-        "release_tag": "v0.3.2",
-        "folder": "2026_ActiveInferenceMulti"
-      },
-      "provenance": {
-        "action_sha256": "0928a5b87f42f0c6d6d1aea109d83ce3d4b707e6d07937cfe82ba8f237123eac",
-        "metadata_path": "papers/2026_ActiveInferenceMulti/metadata.json",
-        "metadata_sha256": "f141f09926b8a84d789badc8f881652e2d40b1a6722d51d6a0d3407ecce33ac4",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "0928a5b87f42f0c6d6d1aea109d83ce3d4b707e6d07937cfe82ba8f237123eac"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20417104",
-      "folder": "2026_EditorialQualityAt",
-      "created": false,
-      "updated_files": [
-        "papers/2026_EditorialQualityAt/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20417104",
-        "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_prose_project",
-        "github_release_url": "https://github.com/docxology/template_prose_project/releases/tag/v0.4.2",
-        "zenodo_record_url": "https://zenodo.org/records/20417104",
-        "release_tag": "v0.4.2",
-        "folder": "2026_EditorialQualityAt"
-      },
-      "provenance": {
-        "action_sha256": "f58df0b4436a282b8ba669ddcf1897f90fa07b93e4e27492e1b1dc6c75a84d59",
-        "metadata_path": "papers/2026_EditorialQualityAt/metadata.json",
-        "metadata_sha256": "5c08bfb755d14cff5eb50a270e2916ed5f2eecec3a795ece3db40667ca6fa137",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "f58df0b4436a282b8ba669ddcf1897f90fa07b93e4e27492e1b1dc6c75a84d59"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20417136",
-      "folder": "2026_ConvergenceAnalysisGradient",
-      "created": false,
-      "updated_files": [
-        "papers/2026_ConvergenceAnalysisGradient/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20417136",
-        "title": "Convergence Analysis of Gradient Descent Optimization",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_code_project",
-        "github_release_url": "https://github.com/docxology/template_code_project/releases/tag/v2.5.2",
-        "zenodo_record_url": "https://zenodo.org/records/20417136",
-        "release_tag": "v2.5.2",
-        "folder": "2026_ConvergenceAnalysisGradient"
-      },
-      "provenance": {
-        "action_sha256": "024a8bb146995354ddace1638b2248c60b817becf6216950ef081b211206741f",
-        "metadata_path": "papers/2026_ConvergenceAnalysisGradient/metadata.json",
-        "metadata_sha256": "42c469ad0919e6b64b096f2a3f55684755859f14d817caec22394a22bc9e8346",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "024a8bb146995354ddace1638b2248c60b817becf6216950ef081b211206741f"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20418904",
-      "folder": "2026_PolicyEntanglementActive",
-      "created": false,
-      "updated_files": [
-        "papers/2026_PolicyEntanglementActive/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20418904",
-        "title": "Policy Entanglement in Active Inference:  A Coupling-Parameter Deformation Framework for Multi-Stream Policy Posterior Distributions, Machine-Checked and Simulated with a Typed Float Boundary",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "ActiveInferenceInstitute/policy_entanglement",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/policy_entanglement/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/20418904",
-        "release_tag": "v1.0.0",
-        "folder": "2026_PolicyEntanglementActive"
-      },
-      "provenance": {
-        "action_sha256": "a8eae47d0e04c36d34fcd029735cd2f37a660df85c1a02e19a9de3fc25cc6e44",
-        "metadata_path": "papers/2026_PolicyEntanglementActive/metadata.json",
-        "metadata_sha256": "2cf694c26072fdd944083bf33b95b57626fad46639c23ca3767e4ccd78a184c5",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "a8eae47d0e04c36d34fcd029735cd2f37a660df85c1a02e19a9de3fc25cc6e44"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20419007",
-      "folder": "2026_TemplateApproachReproducible",
-      "created": false,
-      "updated_files": [
-        "papers/2026_TemplateApproachReproducible/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20419007",
-        "title": "A template/ approach to Reproducible Generative Research",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_template",
-        "github_release_url": "https://github.com/docxology/template_template/releases/tag/v1.0.9",
-        "zenodo_record_url": "https://zenodo.org/records/20419007",
-        "release_tag": "v1.0.9",
-        "folder": "2026_TemplateApproachReproducible"
-      },
-      "provenance": {
-        "action_sha256": "ed5fdf7d4e3913983145cd9957e1155b9f8e4adc6e32be17596132425b0ecfe7",
-        "metadata_path": "papers/2026_TemplateApproachReproducible/metadata.json",
-        "metadata_sha256": "acbf889d3d40137e532c3d43218ca1d4530762071bd991527ac453208c85dcfa",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "ed5fdf7d4e3913983145cd9957e1155b9f8e4adc6e32be17596132425b0ecfe7"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20420556",
-      "folder": "2026_BeeStack",
-      "created": false,
-      "updated_files": [
-        "papers/2026_BeeStack/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20420556",
-        "title": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/BeeStack",
-        "github_release_url": "https://github.com/docxology/BeeStack/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/20420556",
-        "release_tag": "v1.0.0",
-        "folder": "2026_BeeStack"
-      },
-      "provenance": {
-        "action_sha256": "11525e5368a0f19dd22888d7e0c09552d26f275a49db66bf5e1d435fc595c354",
-        "metadata_path": "papers/2026_BeeStack/metadata.json",
-        "metadata_sha256": "73ec8bd0e4b39512814f3a2159f7dd2734bbc336eb6d2f8c265b6e5d76d8f9a5",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "11525e5368a0f19dd22888d7e0c09552d26f275a49db66bf5e1d435fc595c354"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20450880",
-      "folder": "2026_WhenDoBugs",
-      "created": false,
-      "updated_files": [
-        "papers/2026_WhenDoBugs/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20450880",
-        "title": "When do bugs see (infra)red?",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/cohereants",
-        "github_release_url": "https://github.com/docxology/cohereants/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/20450880",
-        "release_tag": "v1.0.0",
-        "folder": "2026_WhenDoBugs"
-      },
-      "provenance": {
-        "action_sha256": "dc771ddb6c7df75f0567a21b62ee5d701231fe9b38fd6f6216f918d20666eaad",
-        "metadata_path": "papers/2026_WhenDoBugs/metadata.json",
-        "metadata_sha256": "3de93a1caf5e1d1b59ccf23e3601636af01d4bb1aca790a19808f76c955cec09",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "dc771ddb6c7df75f0567a21b62ee5d701231fe9b38fd6f6216f918d20666eaad"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20453879",
-      "folder": "2026_SelfImprovementAgent",
-      "created": false,
-      "updated_files": [
-        "papers/2026_SelfImprovementAgent/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20453879",
-        "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_sia",
-        "github_release_url": "https://github.com/docxology/template_sia/releases/tag/v0.1.2",
-        "zenodo_record_url": "https://zenodo.org/records/20453879",
-        "release_tag": "v0.1.2",
-        "folder": "2026_SelfImprovementAgent"
-      },
-      "provenance": {
-        "action_sha256": "7865f18a7dd651f7bf2008340f707b7f532bba54efb63cd5bf747bc38a89595f",
-        "metadata_path": "papers/2026_SelfImprovementAgent/metadata.json",
-        "metadata_sha256": "15e42377d1e7df9fe2ad7d1f9fb11797568b4470d4ff0ccaa90183fd11f3bf2e",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "7865f18a7dd651f7bf2008340f707b7f532bba54efb63cd5bf747bc38a89595f"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20482025",
-      "folder": "2026_MusicNeverStopped",
-      "created": false,
-      "updated_files": [
-        "papers/2026_MusicNeverStopped/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20482025",
-        "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/grateful_data",
-        "github_release_url": "https://github.com/docxology/grateful_data/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/20482025",
-        "release_tag": "v1.0.0",
-        "folder": "2026_MusicNeverStopped"
-      },
-      "provenance": {
-        "action_sha256": "7bf7f724973f17a837d0b6e32a67b468437737b4a250488f2f1230f4ba7a4f42",
-        "metadata_path": "papers/2026_MusicNeverStopped/metadata.json",
-        "metadata_sha256": "d9f4b93d4422295d02d762808088d96c7a747bc1eb79a263f9a05639d25dd6b9",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "7bf7f724973f17a837d0b6e32a67b468437737b4a250488f2f1230f4ba7a4f42"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20498699",
-      "folder": "2026_RecoveringLLMPersona",
-      "created": false,
-      "updated_files": [
-        "papers/2026_RecoveringLLMPersona/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20498699",
-        "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/ntqr_llm",
-        "github_release_url": "https://github.com/docxology/ntqr_llm/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/20498699",
-        "release_tag": "v1.0.0",
-        "folder": "2026_RecoveringLLMPersona"
-      },
-      "provenance": {
-        "action_sha256": "ea3e814269955e80381499504158f3576229b2dd0777c30ec4e657d8a14ccc40",
-        "metadata_path": "papers/2026_RecoveringLLMPersona/metadata.json",
-        "metadata_sha256": "7c804a23ba053529edd6cdef9f021e8e6104f73132a5eb1d08aec6e232016dcb",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "ea3e814269955e80381499504158f3576229b2dd0777c30ec4e657d8a14ccc40"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20533125",
-      "folder": "2026_TemplateTextbook",
-      "created": false,
-      "updated_files": [
-        "papers/2026_TemplateTextbook/README.md",
-        "papers/2026_TemplateTextbook/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20533125",
-        "title": "The Template Textbook",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_textbook",
-        "github_release_url": "https://github.com/docxology/template_textbook/releases/tag/v0.1.0",
-        "zenodo_record_url": "https://zenodo.org/records/20533125",
-        "release_tag": "v0.1.0",
-        "folder": "2026_TemplateTextbook"
-      },
-      "provenance": {
-        "action_sha256": "fa6f3e8fa46ba8bd464cf1bde77e78685308826cd31109cfaa252364f66915f3",
-        "metadata_path": "papers/2026_TemplateTextbook/metadata.json",
-        "metadata_sha256": "5bca3a0452fef9d7dea156ad553bea482329f06c6436f997e66b4a72c463bc4e",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "fa6f3e8fa46ba8bd464cf1bde77e78685308826cd31109cfaa252364f66915f3"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20533125",
-      "folder": "2026_TemplateTextbook",
-      "created": false,
-      "updated_files": [
-        "papers/2026_TemplateTextbook/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20533125",
-        "title": "The Template Textbook",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_textbook",
-        "github_release_url": "https://github.com/docxology/template_textbook/releases/tag/v0.1.2",
-        "zenodo_record_url": "https://zenodo.org/records/20533125",
-        "release_tag": "v0.1.2",
-        "folder": "2026_TemplateTextbook"
-      },
-      "provenance": {
-        "action_sha256": "450b7dc83d05b4a08857f2b406243f703fbc861d68d240dcf2557c314b509464",
-        "metadata_path": "papers/2026_TemplateTextbook/metadata.json",
-        "metadata_sha256": "798aa36fdd47ac5552d96299ed62d5d642e997d28a5b6480c025ebf1feded674",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "450b7dc83d05b4a08857f2b406243f703fbc861d68d240dcf2557c314b509464"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20533669",
-      "folder": "2026_DeterministicTestbedSelf",
-      "created": false,
-      "updated_files": [
-        "papers/2026_DeterministicTestbedSelf/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20533669",
-        "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_autoscientists",
-        "github_release_url": "https://github.com/docxology/template_autoscientists/releases/tag/v1.0.2",
-        "zenodo_record_url": "https://zenodo.org/records/20533669",
-        "release_tag": "v1.0.2",
-        "folder": "2026_DeterministicTestbedSelf"
-      },
-      "provenance": {
-        "action_sha256": "c5aaec9eef9ddbb1c3a2dfe36c466e36ff345cfeea3b1185ad82e10830aa5692",
-        "metadata_path": "papers/2026_DeterministicTestbedSelf/metadata.json",
-        "metadata_sha256": "ad6bf0e32458105c7e5bc273c43ffefeef4f281e0ce2782292d2e083b8e3c028",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "c5aaec9eef9ddbb1c3a2dfe36c466e36ff345cfeea3b1185ad82e10830aa5692"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20533675",
-      "folder": "2026_Triplicate",
-      "created": false,
-      "updated_files": [
-        "papers/2026_Triplicate/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20533675",
-        "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_newspaper",
-        "github_release_url": "https://github.com/docxology/template_newspaper/releases/tag/v1.0.2",
-        "zenodo_record_url": "https://zenodo.org/records/20533675",
-        "release_tag": "v1.0.2",
-        "folder": "2026_Triplicate"
-      },
-      "provenance": {
-        "action_sha256": "031a26912f1aa8c0890ddfe9754b1c295f24e4f7f56f569ff483bbe6c195c6b2",
-        "metadata_path": "papers/2026_Triplicate/metadata.json",
-        "metadata_sha256": "34294d7e28d1c444158727c41bc40dc12f3194ab86f9c46f827f21d51ec5ac04",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "031a26912f1aa8c0890ddfe9754b1c295f24e4f7f56f569ff483bbe6c195c6b2"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20693216",
-      "folder": "2026_DemoCreate",
-      "created": false,
-      "updated_files": [
-        "papers/2026_DemoCreate/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20693216",
-        "title": "DemoCreate: Declarative Audio-Visual Demo Generation for Software",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/democreate",
-        "github_release_url": "https://github.com/docxology/democreate/releases/tag/v0.6.2",
-        "zenodo_record_url": "https://zenodo.org/records/20693216",
-        "release_tag": "v0.6.2",
-        "folder": "2026_DemoCreate"
-      },
-      "provenance": {
-        "action_sha256": "0ff83873b63d74a036ecd7d7a8e55939929fd5c7860f02d0767c621512cdd196",
-        "metadata_path": "papers/2026_DemoCreate/metadata.json",
-        "metadata_sha256": "ad7282fb35da85b9fb968251f7efa7add1f1b44ecd66224eae250e2de5cd5f6e",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "0ff83873b63d74a036ecd7d7a8e55939929fd5c7860f02d0767c621512cdd196"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20705350",
-      "folder": "2026_COGANT",
-      "created": false,
-      "updated_files": [
-        "papers/2026_COGANT/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20705350",
-        "title": "COGANT: Deterministic Codebase-to-GNN Translation",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "ActiveInferenceInstitute/COGANT",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/COGANT/releases/tag/v0.6.0",
-        "zenodo_record_url": "https://zenodo.org/records/20705350",
-        "release_tag": "v0.6.0",
-        "folder": "2026_COGANT"
-      },
-      "provenance": {
-        "action_sha256": "9e5b34bcac4954d0a35228048343d75934f8c79f6d409fd6cab32d833582bfb6",
-        "metadata_path": "papers/2026_COGANT/metadata.json",
-        "metadata_sha256": "78d84cb51e876f6af888c513e242046f5b8b4b335dab35e4f703fd938fe66513",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "9e5b34bcac4954d0a35228048343d75934f8c79f6d409fd6cab32d833582bfb6"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20732274",
-      "folder": "2026_AGEINT",
-      "created": false,
-      "updated_files": [
-        "papers/2026_AGEINT/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20732274",
-        "title": "AGEINT: Agentic Intelligence",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/AGEINT",
-        "github_release_url": "https://github.com/docxology/AGEINT/releases/tag/v0.1.0",
-        "zenodo_record_url": "https://zenodo.org/records/20732274",
-        "release_tag": "v0.1.0",
-        "folder": "2026_AGEINT"
-      },
-      "provenance": {
-        "action_sha256": "8c5f1eaad1eda1b6e2c001c9cc11dbfc2854f5fab5fe69e4f5c7d3dc61244240",
-        "metadata_path": "papers/2026_AGEINT/metadata.json",
-        "metadata_sha256": "87e121a172c1a57ca0d090f04b6f02e23d3669cb9ccc0cc343816fc4e912ae74",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "8c5f1eaad1eda1b6e2c001c9cc11dbfc2854f5fab5fe69e4f5c7d3dc61244240"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20747834",
-      "folder": "2026_PolicyDistillationAs",
-      "created": false,
-      "updated_files": [
-        "papers/2026_PolicyDistillationAs/README.md",
-        "papers/2026_PolicyDistillationAs/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20747834",
-        "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/20747834",
-        "release_tag": "v1.0.0",
-        "folder": "2026_PolicyDistillationAs"
-      },
-      "provenance": {
-        "action_sha256": "b729d834adbefad21c27d6a37c855081394f82f900468bfacd79b00fc524b713",
-        "metadata_path": "papers/2026_PolicyDistillationAs/metadata.json",
-        "metadata_sha256": "3461fe96588c1d7cf2be703cb366004cf2dcf232b27640aa2afc288df0618f33",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "b729d834adbefad21c27d6a37c855081394f82f900468bfacd79b00fc524b713"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20747834",
-      "folder": "2026_PolicyDistillationAs",
-      "created": false,
-      "updated_files": [
-        "papers/2026_PolicyDistillationAs/README.md",
-        "papers/2026_PolicyDistillationAs/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20747834",
-        "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.1",
-        "zenodo_record_url": "https://zenodo.org/records/20747834",
-        "release_tag": "v1.0.1",
-        "folder": "2026_PolicyDistillationAs"
-      },
-      "provenance": {
-        "action_sha256": "1262140c6fa51b28abed24d228d056029bb2568aec74c56c49502b82390e9a0f",
-        "metadata_path": "papers/2026_PolicyDistillationAs/metadata.json",
-        "metadata_sha256": "ca41ad6dea127825b694936aa732f05f121d939f06e63aa5e87c84ab973c2e90",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "1262140c6fa51b28abed24d228d056029bb2568aec74c56c49502b82390e9a0f"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20747834",
-      "folder": "2026_PolicyDistillationAs",
-      "created": false,
-      "updated_files": [
-        "papers/2026_PolicyDistillationAs/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20747834",
-        "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "ActiveInferenceInstitute/on_policy_distillation",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/on_policy_distillation/releases/tag/v1.0.2",
-        "zenodo_record_url": "https://zenodo.org/records/20747834",
-        "release_tag": "v1.0.2",
-        "folder": "2026_PolicyDistillationAs"
-      },
-      "provenance": {
-        "action_sha256": "50afb874f9618fc9cfa1882516ffd6dd840f285aa1ec96812d24d2204aff88a2",
-        "metadata_path": "papers/2026_PolicyDistillationAs/metadata.json",
-        "metadata_sha256": "59c3d70666b2f85d27b7722c5814acf9b48badb87c0d7ce5b1b7f54e3b282f44",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "50afb874f9618fc9cfa1882516ffd6dd840f285aa1ec96812d24d2204aff88a2"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20786638",
-      "folder": "2026_TemplateMadlib",
-      "created": false,
-      "updated_files": [
-        "papers/2026_TemplateMadlib/README.md",
-        "papers/2026_TemplateMadlib/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20786638",
-        "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_madlib",
-        "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.0",
-        "zenodo_record_url": "https://zenodo.org/records/20786638",
-        "release_tag": "v0.1.0",
-        "folder": "2026_TemplateMadlib"
-      },
-      "provenance": {
-        "action_sha256": "284d0f5628f7304a5f3b9f95638bfaba2ed1265c07447201bdd7def1c41220bf",
-        "metadata_path": "papers/2026_TemplateMadlib/metadata.json",
-        "metadata_sha256": "1d32eed0a64fbc59edf6232acf5c6e37a587f90d7255c0ed83cc27cb656372fd",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "284d0f5628f7304a5f3b9f95638bfaba2ed1265c07447201bdd7def1c41220bf"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20786638",
-      "folder": "2026_TemplateMadlib",
-      "created": false,
-      "updated_files": [
-        "papers/2026_TemplateMadlib/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20786638",
-        "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_madlib",
-        "github_release_url": "https://github.com/docxology/template_madlib/releases/tag/v0.1.1",
-        "zenodo_record_url": "https://zenodo.org/records/20786638",
-        "release_tag": "v0.1.1",
-        "folder": "2026_TemplateMadlib"
-      },
-      "provenance": {
-        "action_sha256": "ea2fca763ec9c721ddb1529fc036315eca908b00d0bcbfd3c74b1e9d3d5594db",
-        "metadata_path": "papers/2026_TemplateMadlib/metadata.json",
-        "metadata_sha256": "e4fe12a9373f214f2f1b2930704d9445fde95e60aded686a0564152b664005ea",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "ea2fca763ec9c721ddb1529fc036315eca908b00d0bcbfd3c74b1e9d3d5594db"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20834846",
-      "folder": "2026_RealizingEmptiness",
-      "created": false,
-      "updated_files": [
-        "papers/2026_RealizingEmptiness/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20834846",
-        "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/realizing_emptiness",
-        "github_release_url": "https://github.com/docxology/realizing_emptiness/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/20834846",
-        "release_tag": "v1.0.0",
-        "folder": "2026_RealizingEmptiness"
-      },
-      "provenance": {
-        "action_sha256": "5bf3eba61e640af681b02d4cf222d6133143b0d3db3417e21b67f07e957d2318",
-        "metadata_path": "papers/2026_RealizingEmptiness/metadata.json",
-        "metadata_sha256": "682a7073e3e8a7aa9e8876c4d24bd422195f3fc6b2d49914a3b9a06f1619dee3",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "5bf3eba61e640af681b02d4cf222d6133143b0d3db3417e21b67f07e957d2318"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20931964",
-      "folder": "2026_LivingMetaAnalysis",
-      "created": false,
-      "updated_files": [
-        "papers/2026_LivingMetaAnalysis/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20931964",
-        "title": "A Living Meta-Analysis of the Modafinil Literature",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_literature_meta_analysis",
-        "github_release_url": "https://github.com/docxology/template_literature_meta_analysis/releases/tag/v0.1.0",
-        "zenodo_record_url": "https://zenodo.org/records/20931964",
-        "release_tag": "v0.1.0",
-        "folder": "2026_LivingMetaAnalysis"
-      },
-      "provenance": {
-        "action_sha256": "ec56e06388752b818451dc3b4b09d8c18be2d31924cdd776d2174ffbd9dfda76",
-        "metadata_path": "papers/2026_LivingMetaAnalysis/metadata.json",
-        "metadata_sha256": "036665dae5a44436a9d3fecdd69d8fbb33400d9c67c8441d72a0a6317b49e793",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "ec56e06388752b818451dc3b4b09d8c18be2d31924cdd776d2174ffbd9dfda76"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20976824",
-      "folder": "2026_AlphaCOGANT",
-      "created": false,
-      "updated_files": [
-        "papers/2026_AlphaCOGANT/README.md",
-        "papers/2026_AlphaCOGANT/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20976824",
-        "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/alphacogant",
-        "github_release_url": "https://github.com/docxology/alphacogant/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/20976824",
-        "release_tag": "v1.0.0",
-        "folder": "2026_AlphaCOGANT"
-      },
-      "provenance": {
-        "action_sha256": "4e8fb8bd6eda5e82d2aa12e741b3361b3ab2cf3eeca4bb57a99fd22ddc79bf2b",
-        "metadata_path": "papers/2026_AlphaCOGANT/metadata.json",
-        "metadata_sha256": "1a810c970f79b51a74006e3f1965993f526d7eb09079008006da13b4dff6573f",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "4e8fb8bd6eda5e82d2aa12e741b3361b3ab2cf3eeca4bb57a99fd22ddc79bf2b"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.20976824",
-      "folder": "2026_AlphaCOGANT",
-      "created": false,
-      "updated_files": [
-        "papers/2026_AlphaCOGANT/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.20976824",
-        "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/alphacogant",
-        "github_release_url": "https://github.com/docxology/alphacogant/releases/tag/v1.0.1",
-        "zenodo_record_url": "https://zenodo.org/records/20976824",
-        "release_tag": "v1.0.1",
-        "folder": "2026_AlphaCOGANT"
-      },
-      "provenance": {
-        "action_sha256": "c8c21da86279d091b4f0d3905d60b0b59c090381e07f4e25c03ccc2f68399926",
-        "metadata_path": "papers/2026_AlphaCOGANT/metadata.json",
-        "metadata_sha256": "32b3b3a849551d957e2855b7245fea3b4f9de8ecf28f0d043bc8fdd25b74ef22",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "c8c21da86279d091b4f0d3905d60b0b59c090381e07f4e25c03ccc2f68399926"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21047573",
-      "folder": "2026_MappingWilliamBlake",
-      "created": false,
-      "updated_files": [
-        "papers/2026_MappingWilliamBlake/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21047573",
-        "title": "Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/blake",
-        "github_release_url": "https://github.com/docxology/blake/releases/tag/v0.1.0",
-        "zenodo_record_url": "https://zenodo.org/records/21047573",
-        "release_tag": "v0.1.0",
-        "folder": "2026_MappingWilliamBlake"
-      },
-      "provenance": {
-        "action_sha256": "74920ea21c5be3cb3d2b3f8874e639ed79abd1e1701d21f1e19ba8e482612132",
-        "metadata_path": "papers/2026_MappingWilliamBlake/metadata.json",
-        "metadata_sha256": "993fdff7481d4173da6c242ff56dbf519308132ca2a2ba6eb5fb75defe5b7d58",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "74920ea21c5be3cb3d2b3f8874e639ed79abd1e1701d21f1e19ba8e482612132"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21083779",
-      "folder": "2026_SortitionUpstreamNTQR",
-      "created": false,
-      "updated_files": [
-        "papers/2026_SortitionUpstreamNTQR/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21083779",
-        "title": "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/ntqr_allotment",
-        "github_release_url": "https://github.com/docxology/ntqr_allotment/releases/tag/v0.1.0",
-        "zenodo_record_url": "https://zenodo.org/records/21083779",
-        "release_tag": "v0.1.0",
-        "folder": "2026_SortitionUpstreamNTQR"
-      },
-      "provenance": {
-        "action_sha256": "7ced5eeb88a043875a4360b4516973185b912272d06054b7060ffda08724eb92",
-        "metadata_path": "papers/2026_SortitionUpstreamNTQR/metadata.json",
-        "metadata_sha256": "6c6590009ec2a9a943f987189d50375b128cf4f60ee213349cdb75061b5efeac",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "7ced5eeb88a043875a4360b4516973185b912272d06054b7060ffda08724eb92"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21086292",
-      "folder": "2026_ExploratoryDataAnalysis",
-      "created": false,
-      "updated_files": [
-        "papers/2026_ExploratoryDataAnalysis/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21086292",
-        "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_eda_notebook",
-        "github_release_url": "https://github.com/docxology/template_eda_notebook/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/21086292",
-        "release_tag": "v1.0.0",
-        "folder": "2026_ExploratoryDataAnalysis"
-      },
-      "provenance": {
-        "action_sha256": "8416f3d37dbdbfca02d5a2984c0d4c9946cb12a7979ac6409eadd14c3e98a214",
-        "metadata_path": "papers/2026_ExploratoryDataAnalysis/metadata.json",
-        "metadata_sha256": "7719c6adfadcb0323b8be1850d4362c2b6e0938e6d6b742fc14cbe9573077376",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "8416f3d37dbdbfca02d5a2984c0d4c9946cb12a7979ac6409eadd14c3e98a214"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21086548",
-      "folder": "2026_DomainLanguageSpecifying",
-      "created": false,
-      "updated_files": [
-        "papers/2026_DomainLanguageSpecifying/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21086548",
-        "title": "A Domain Language for Specifying Controlled Methods",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_methods_paper",
-        "github_release_url": "https://github.com/docxology/template_methods_paper/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/21086548",
-        "release_tag": "v1.0.0",
-        "folder": "2026_DomainLanguageSpecifying"
-      },
-      "provenance": {
-        "action_sha256": "18636866d43e76d306c5747e8347ba5cde5af969821711879305e6aeffc087b0",
-        "metadata_path": "papers/2026_DomainLanguageSpecifying/metadata.json",
-        "metadata_sha256": "b3452b6bc1b4d806d5e93d8f5a8efa265cc25757c4d6ba1d715e8da860afe5c3",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "18636866d43e76d306c5747e8347ba5cde5af969821711879305e6aeffc087b0"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21137276",
-      "folder": "2026_EntomologicalLaw",
-      "created": false,
-      "updated_files": [
-        "papers/2026_EntomologicalLaw/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21137276",
-        "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/EntoLaw",
-        "github_release_url": "https://github.com/docxology/EntoLaw/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/21137276",
-        "release_tag": "v1.0.0",
-        "folder": "2026_EntomologicalLaw"
-      },
-      "provenance": {
-        "action_sha256": "7762ec17d4335b6c69f98ccd27da2fe87516a2454c85ac54ef6919e66e025667",
-        "metadata_path": "papers/2026_EntomologicalLaw/metadata.json",
-        "metadata_sha256": "3a0d301068071c70b788db9d5223e2207ad60bbbfad76f89c7c10ad8894d945f",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "7762ec17d4335b6c69f98ccd27da2fe87516a2454c85ac54ef6919e66e025667"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21176000",
-      "folder": "2026_ShapeBetween",
-      "created": false,
-      "updated_files": [
-        "papers/2026_ShapeBetween/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21176000",
-        "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_storybook",
-        "github_release_url": "https://github.com/docxology/template_storybook/releases/tag/v0.1.0",
-        "zenodo_record_url": "https://zenodo.org/records/21176000",
-        "release_tag": "v0.1.0",
-        "folder": "2026_ShapeBetween"
-      },
-      "provenance": {
-        "action_sha256": "80733650689268a6cd97a0c77c1a2cb599e1b78089d707533f7c6b32cc729f08",
-        "metadata_path": "papers/2026_ShapeBetween/metadata.json",
-        "metadata_sha256": "17330bd2d4e2480019dbb0c9ef683c73bebb57dad57adaba20c867d52e9029b5",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "80733650689268a6cd97a0c77c1a2cb599e1b78089d707533f7c6b32cc729f08"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21227869",
-      "folder": "2026_AutopoieticProjectGeneration",
-      "created": false,
-      "updated_files": [
-        "papers/2026_AutopoieticProjectGeneration/README.md",
-        "papers/2026_AutopoieticProjectGeneration/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21227869",
-        "title": "Autopoietic Project Generation",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template",
-        "github_release_url": "https://github.com/docxology/template/releases/tag/v1.0.1",
-        "zenodo_record_url": "https://zenodo.org/records/21227869",
-        "release_tag": "v1.0.1",
-        "folder": "2026_AutopoieticProjectGeneration"
-      },
-      "provenance": {
-        "action_sha256": "8807da4104cbbfd89eef2735a60ea8c3911874ba2a959bc40768c9d03483fca1",
-        "metadata_path": "papers/2026_AutopoieticProjectGeneration/metadata.json",
-        "metadata_sha256": "3b9dbabd338220319ac085ba842794db7dacbfbcfe8212f9ef207d7efd1e7fb6",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "8807da4104cbbfd89eef2735a60ea8c3911874ba2a959bc40768c9d03483fca1"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21227869",
-      "folder": "2026_AutopoieticProjectGeneration",
-      "created": false,
-      "updated_files": [
-        "papers/2026_AutopoieticProjectGeneration/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21227869",
-        "title": "Autopoietic Project Generation",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template_autopoiesis",
-        "github_release_url": "https://github.com/docxology/template_autopoiesis/releases/tag/v1.0.1",
-        "zenodo_record_url": "https://zenodo.org/records/21227869",
-        "release_tag": "v1.0.1",
-        "folder": "2026_AutopoieticProjectGeneration"
-      },
-      "provenance": {
-        "action_sha256": "455f2afd9f8f0a0c9a5e7fb14eb918aa7a476974d8726faa82a8f20657dcff8a",
-        "metadata_path": "papers/2026_AutopoieticProjectGeneration/metadata.json",
-        "metadata_sha256": "e829167e1c1f622f86c351d3681cd71ebaf2a5c2373bbec8a6c6e40da8fa36b9",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "455f2afd9f8f0a0c9a5e7fb14eb918aa7a476974d8726faa82a8f20657dcff8a"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21281509",
-      "folder": "2026_TemplatePitchDeck",
-      "created": false,
-      "updated_files": [
-        "papers/2026_TemplatePitchDeck/README.md",
-        "papers/2026_TemplatePitchDeck/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21281509",
-        "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template-pitch-deck",
-        "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/21281509",
-        "release_tag": "v1.0.0",
-        "folder": "2026_TemplatePitchDeck"
-      },
-      "provenance": {
-        "action_sha256": "5412210e029bb466a2fc30bdd3b37324b680ae7f7a99e9f6e23e44f85966eae7",
-        "metadata_path": "papers/2026_TemplatePitchDeck/metadata.json",
-        "metadata_sha256": "cc661e58412bbfbfaab86e8825ecfa002900152e8d13bae75ef21a02f5d65c08",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "5412210e029bb466a2fc30bdd3b37324b680ae7f7a99e9f6e23e44f85966eae7"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21281509",
-      "folder": "2026_TemplatePitchDeck",
-      "created": false,
-      "updated_files": [
-        "papers/2026_TemplatePitchDeck/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21281509",
-        "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/template-pitch-deck",
-        "github_release_url": "https://github.com/docxology/template-pitch-deck/releases/tag/v1.0.2",
-        "zenodo_record_url": "https://zenodo.org/records/21281509",
-        "release_tag": "v1.0.2",
-        "folder": "2026_TemplatePitchDeck"
-      },
-      "provenance": {
-        "action_sha256": "e6b199d07474fe5bfe3b18d7719e8c49ad4ac9c34143223a74baa254ffc4f026",
-        "metadata_path": "papers/2026_TemplatePitchDeck/metadata.json",
-        "metadata_sha256": "0fc29db5672f5599a5b3021a0b9cebd4bf6c3114ed049cc006e2158602c572c8",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "e6b199d07474fe5bfe3b18d7719e8c49ad4ac9c34143223a74baa254ffc4f026"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21316510",
-      "folder": "2026_PriorCognitiveArt",
-      "created": false,
-      "updated_files": [
-        "papers/2026_PriorCognitiveArt/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21316510",
-        "title": "Prior Cognitive Art",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/prior_cognitive_art",
-        "github_release_url": "https://github.com/docxology/prior_cognitive_art/releases/tag/v0.1.0",
-        "zenodo_record_url": "https://zenodo.org/records/21316510",
-        "release_tag": "v0.1.0",
-        "folder": "2026_PriorCognitiveArt"
-      },
-      "provenance": {
-        "action_sha256": "ed9111b52c1c89beb68fec7d67f1d1ac8b89045cc5898357726ca2da4d5a672f",
-        "metadata_path": "papers/2026_PriorCognitiveArt/metadata.json",
-        "metadata_sha256": "eb6a9c70c27609cc8d37cc756609c360ca0345f144bf608f6114df13600dc8cb",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "ed9111b52c1c89beb68fec7d67f1d1ac8b89045cc5898357726ca2da4d5a672f"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21330636",
-      "folder": "2026_ActiveFractalRabbit",
-      "created": false,
-      "updated_files": [
-        "papers/2026_ActiveFractalRabbit/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21330636",
-        "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "ActiveInferenceInstitute/active_fractal_rabbit",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/active_fractal_rabbit/releases/tag/v0.2.0",
-        "zenodo_record_url": "https://zenodo.org/records/21330636",
-        "release_tag": "v0.2.0",
-        "folder": "2026_ActiveFractalRabbit"
-      },
-      "provenance": {
-        "action_sha256": "5eddb06c678222e3d8429cb91ef8d837208f3c50fef69bfde835ece12bff3854",
-        "metadata_path": "papers/2026_ActiveFractalRabbit/metadata.json",
-        "metadata_sha256": "40dbda03b880c2bc80e3964b7b1c14466acdcd1227202d97c5824c6248ed5171",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "5eddb06c678222e3d8429cb91ef8d837208f3c50fef69bfde835ece12bff3854"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21419693",
-      "folder": "2026_DuckRabbit",
-      "created": false,
-      "updated_files": [
-        "papers/2026_DuckRabbit/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21419693",
-        "title": "DuckRabbit: Typed Multimodal Illusion Generator",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/DuckRabbit",
-        "github_release_url": "https://github.com/docxology/DuckRabbit/releases/tag/v0.5.0",
-        "zenodo_record_url": "https://zenodo.org/records/21419693",
-        "release_tag": "v0.5.0",
-        "folder": "2026_DuckRabbit"
-      },
-      "provenance": {
-        "action_sha256": "aa1331bb79c859e4f12869d7b1b011ddb1697ef4f2fde73f33b3150e8762ed39",
-        "metadata_path": "papers/2026_DuckRabbit/metadata.json",
-        "metadata_sha256": "67e30639c6a7f8c89d99fd5a07dfa2c3bd4570b24538af5b48ec287841cdb5af",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "aa1331bb79c859e4f12869d7b1b011ddb1697ef4f2fde73f33b3150e8762ed39"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21695160",
-      "folder": "2026_ActiveInferencePower",
-      "created": false,
-      "updated_files": [
-        "papers/2026_ActiveInferencePower/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21695160",
-        "title": "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "ActiveInferenceInstitute/active_inference_power",
-        "github_release_url": "https://github.com/ActiveInferenceInstitute/active_inference_power/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/21695160",
-        "release_tag": "v1.0.0",
-        "folder": "2026_ActiveInferencePower"
-      },
-      "provenance": {
-        "action_sha256": "0df2100340cdf6ed69fc29f66debef9a71869513b0b0663360999dfced1e8eed",
-        "metadata_path": "papers/2026_ActiveInferencePower/metadata.json",
-        "metadata_sha256": "ff60c1f48fd77395b83ca133cce214ed402dc051c259517c156778e986aa9450",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "0df2100340cdf6ed69fc29f66debef9a71869513b0b0663360999dfced1e8eed"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21750800",
-      "folder": "2026_Codomyrmex",
-      "created": false,
-      "updated_files": [
-        "papers/2026_Codomyrmex/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21750800",
-        "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/codomyrmex",
-        "github_release_url": "https://github.com/docxology/codomyrmex/releases/tag/v1.3.0-paper",
-        "zenodo_record_url": "https://zenodo.org/records/21750800",
-        "release_tag": "v1.3.0-paper",
-        "folder": "2026_Codomyrmex"
-      },
-      "provenance": {
-        "action_sha256": "b0c153f86def255423b088898e653583092a6b58e780936a99808a2ad1bc985a",
-        "metadata_path": "papers/2026_Codomyrmex/metadata.json",
-        "metadata_sha256": "d7ccb67ebcb89b3706adbb835f2456de7c3cd0276ea4f81612420793e10b6c3a",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "b0c153f86def255423b088898e653583092a6b58e780936a99808a2ad1bc985a"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21815704",
-      "folder": "2026_DigiPPPiP",
-      "created": false,
-      "updated_files": [
-        "papers/2026_DigiPPPiP/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21815704",
-        "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/Digi-PPPiP",
-        "github_release_url": "https://github.com/docxology/Digi-PPPiP/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/21815704",
-        "release_tag": "v1.0.0",
-        "folder": "2026_DigiPPPiP"
-      },
-      "provenance": {
-        "action_sha256": "5fa098b9bbe2269fcc1b73a009e9046a18324249b299853f2ccd2c47db346edc",
-        "metadata_path": "papers/2026_DigiPPPiP/metadata.json",
-        "metadata_sha256": "2bf912167a17a03064021bb1ccd842215ab59cca9dd0e531a760bc5ea6ed9944",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "5fa098b9bbe2269fcc1b73a009e9046a18324249b299853f2ccd2c47db346edc"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21843592",
-      "folder": "2026_PROJECTBONDSpecial",
-      "created": false,
-      "updated_files": [
-        "papers/2026_PROJECTBONDSpecial/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21843592",
-        "title": "PROJECT BOND — The Special-Agent Operations Compendium",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/bond",
-        "github_release_url": "https://github.com/docxology/bond/releases/tag/v1.0.0",
-        "zenodo_record_url": "https://zenodo.org/records/21843592",
-        "release_tag": "v1.0.0",
-        "folder": "2026_PROJECTBONDSpecial"
-      },
-      "provenance": {
-        "action_sha256": "016d45ab0cdc0fa960a67540a60607a6fa753e273f0e2fb5f2ff84bc9ca3faa3",
-        "metadata_path": "papers/2026_PROJECTBONDSpecial/metadata.json",
-        "metadata_sha256": "ec384596252aa8167b59b6edcbdbbe089c2b76bbce63db2def2dfe9f9fe1a56d",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "016d45ab0cdc0fa960a67540a60607a6fa753e273f0e2fb5f2ff84bc9ca3faa3"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.21983948",
-      "folder": "2026_DocxplusIntelligentDocument",
-      "created": false,
-      "updated_files": [
-        "papers/2026_DocxplusIntelligentDocument/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.21983948",
-        "title": "docxplus — the Intelligent Document Container",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/docxplus",
-        "github_release_url": "https://github.com/docxology/docxplus/releases/tag/v1.0.1",
-        "zenodo_record_url": "https://zenodo.org/records/21983948",
-        "release_tag": "v1.0.1",
-        "folder": "2026_DocxplusIntelligentDocument"
-      },
-      "provenance": {
-        "action_sha256": "b28947441922a9673a977fbea114fbf3096dcab20d59912a9e9fca93d7acc620",
-        "metadata_path": "papers/2026_DocxplusIntelligentDocument/metadata.json",
-        "metadata_sha256": "4a9961c83c158020e4479a7031b17bb59aa8105a4479c248de750b05f389fa07",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "b28947441922a9673a977fbea114fbf3096dcab20d59912a9e9fca93d7acc620"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.22663906",
-      "folder": "2026_Skillarum",
-      "created": false,
-      "updated_files": [
-        "papers/2026_Skillarum/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.22663906",
-        "title": "Skillarum: Conditionally Reproducible Website-to-Agent-Skill Compilation",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/Skillarum",
-        "github_release_url": "https://github.com/docxology/Skillarum/releases/tag/v0.2.0",
-        "zenodo_record_url": "https://zenodo.org/records/22663906",
-        "release_tag": "v0.2.0",
-        "folder": "2026_Skillarum"
-      },
-      "provenance": {
-        "action_sha256": "644e44ba3f552f1bda7b855eeeea2dc78b096876f983ad8e97522101cbef46fa",
-        "metadata_path": "papers/2026_Skillarum/metadata.json",
-        "metadata_sha256": "179863f0235e6debb0ccbd3c4ff6eeb05c6db0c522267039af8235051c80d724",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "644e44ba3f552f1bda7b855eeeea2dc78b096876f983ad8e97522101cbef46fa"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.22712650",
-      "folder": "2026_FractiSkills",
-      "created": false,
-      "updated_files": [
-        "papers/2026_FractiSkills/metadata.json"
-      ],
-      "action": {
-        "action_type": "update_existing",
-        "doi": "10.5281/zenodo.22712650",
-        "title": "FractiSkills: One Portable Agent Skill per Page",
-        "confidence": "strong",
-        "reason": "DOI already exists in bibliography; update folder metadata and software links",
-        "github_repo": "docxology/FractiSkills",
-        "github_release_url": "https://github.com/docxology/FractiSkills/releases/tag/v0.1.0",
-        "zenodo_record_url": "https://zenodo.org/records/22712650",
-        "release_tag": "v0.1.0",
-        "folder": "2026_FractiSkills"
-      },
-      "provenance": {
-        "action_sha256": "412b24cefca69a4164cb265223ed4722fcb2cd00203f6235d40125d3285a9e1f",
-        "metadata_path": "papers/2026_FractiSkills/metadata.json",
-        "metadata_sha256": "75295de06946799d93b2a8583ba227fafa70dce2f1bfb1f7e4bd1a038c18963b",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "412b24cefca69a4164cb265223ed4722fcb2cd00203f6235d40125d3285a9e1f"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.22816187",
-      "folder": "2026_JevPractice",
-      "created": true,
-      "updated_files": [
-        "papers/2026_JevPractice/README.md",
-        "papers/2026_JevPractice/AGENTS.md",
-        "papers/2026_JevPractice/SKILL.md",
-        "papers/2026_JevPractice/CITATION.cff",
-        "papers/2026_JevPractice/metadata.json",
-        "papers/2026_JevPractice/daf-jev_combined.pdf",
-        "pages/BIBLIOGRAPHY.md",
-        "papers/paper_metadata.json",
-        "papers/README.md",
-        "pages/SOFTWARE.md"
-      ],
-      "action": {
-        "action_type": "create_new",
-        "doi": "10.5281/zenodo.22816187",
-        "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
-        "confidence": "strong",
-        "reason": "strong new DOI/release pair",
-        "github_repo": "docxology/daf-jev",
-        "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.4.0",
-        "zenodo_record_url": "https://zenodo.org/records/22816187",
-        "release_tag": "v0.4.0",
-        "folder": "2026_JevPractice"
-      },
-      "provenance": {
-        "action_sha256": "2792b82ad8fbcc32725d854c46de9061339dd881e06a19afb06b0c245b099883",
-        "metadata_path": "papers/2026_JevPractice/metadata.json",
-        "metadata_sha256": "25399189351f2305ed1b4ba6c13ece9437c827b71a816e1b5b49f6725aa33d64",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "2792b82ad8fbcc32725d854c46de9061339dd881e06a19afb06b0c245b099883"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.22816187",
-      "folder": "2026_JevPractice",
-      "created": false,
-      "updated_files": [
-        "papers/2026_JevPractice/README.md",
-        "papers/2026_JevPractice/CITATION.cff",
-        "papers/2026_JevPractice/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "create_new",
-        "doi": "10.5281/zenodo.22816187",
-        "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
-        "confidence": "strong",
-        "reason": "strong new DOI/release pair",
-        "github_repo": "docxology/daf-jev",
-        "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.4.1",
-        "zenodo_record_url": "https://zenodo.org/records/22816187",
-        "release_tag": "v0.4.1",
-        "folder": "2026_JevPractice"
-      },
-      "provenance": {
-        "action_sha256": "191dd609fe820bbb0040b046a991ad3c1910c9276934de18336dd4f4d9614407",
-        "metadata_path": "papers/2026_JevPractice/metadata.json",
-        "metadata_sha256": "5b734bd0265bd529abd8114b27dafd802b48bbe671fff7b7a8043a061652ec96",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "191dd609fe820bbb0040b046a991ad3c1910c9276934de18336dd4f4d9614407"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.22816187",
-      "folder": "2026_JevPractice",
-      "created": false,
-      "updated_files": [
-        "papers/2026_JevPractice/README.md",
-        "papers/2026_JevPractice/CITATION.cff",
-        "papers/2026_JevPractice/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "create_new",
-        "doi": "10.5281/zenodo.22816187",
-        "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
-        "confidence": "strong",
-        "reason": "strong new DOI/release pair",
-        "github_repo": "docxology/daf-jev",
-        "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.5.0",
-        "zenodo_record_url": "https://zenodo.org/records/22816187",
-        "release_tag": "v0.5.0",
-        "folder": "2026_JevPractice"
-      },
-      "provenance": {
-        "action_sha256": "ec13d017834bd1713fe1b08809a15f2bcae7e4a786917d55628ded24d1b81cee",
-        "metadata_path": "papers/2026_JevPractice/metadata.json",
-        "metadata_sha256": "de985d4a6781f8388f7baf27669765e579146a287466c4358e51d372ab396f4a",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "ec13d017834bd1713fe1b08809a15f2bcae7e4a786917d55628ded24d1b81cee"
-        }
-      }
-    },
-    {
-      "doi": "10.5281/zenodo.22816187",
-      "folder": "2026_JevPractice",
-      "created": false,
-      "updated_files": [
-        "papers/2026_JevPractice/README.md",
-        "papers/2026_JevPractice/CITATION.cff",
-        "papers/2026_JevPractice/metadata.json",
-        "papers/paper_metadata.json"
-      ],
-      "action": {
-        "action_type": "create_new",
-        "doi": "10.5281/zenodo.22816187",
-        "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
-        "confidence": "strong",
-        "reason": "strong new DOI/release pair",
-        "github_repo": "docxology/daf-jev",
-        "github_release_url": "https://github.com/docxology/daf-jev/releases/tag/v0.6.0",
-        "zenodo_record_url": "https://zenodo.org/records/22816187",
-        "release_tag": "v0.6.0",
-        "folder": "2026_JevPractice"
-      },
-      "provenance": {
-        "action_sha256": "4594f914d62c53110381b28cd80124fa75fd5fcb5504572b33592a56e4dac616",
-        "metadata_path": "papers/2026_JevPractice/metadata.json",
-        "metadata_sha256": "022b9391a5103df474507dd075d1fd42ba3be4a359b16c3eb3aa3a240c7780ff",
-        "applied_at": "2026-09-24T00:16:24Z",
-        "approval": {
-          "decision": "approved",
-          "approved_by": "sync_paired_publications --apply",
-          "approved_at": "2026-09-24T00:16:24Z",
-          "action_sha256": "4594f914d62c53110381b28cd80124fa75fd5fcb5504572b33592a56e4dac616"
-        }
-      }
-    }
-  ],
+  "applied": [],
   "classification_cache": {
     "inputs": {
-      "bibliography_sha256": "b01331ea280ad632027657928c45299c66680e47cdc9e32736790cb954ba59b1",
-      "decisions_sha256": "141b858717a12291c237c4479c1e3ad5f051e96cc0bee9b695183732e2e8ca96"
+      "bibliography_sha256": "20b79f60deecd28920e595b580139d97345866c6f19806ea30b8ccd7a0c9a34d",
+      "decisions_sha256": "0345d87f76d48555deb1be99f7c90f474ac136e14728101abfd3ad90b622a02e"
     },
     "already_reviewed": [
       [
@@ -59954,6 +58148,21 @@
           "group_id": "R80",
           "representation": "software-catalog: 6 GitHub release pairs (v0.3.0-v1) under concept 10.5281/zenodo.22664675; the EvoJump software work is already represented in pages/SOFTWARE.md and the citable paper is bibliography row #12 (concept 10.5281/zenodo.17229924, papers/2025_EvoJump), so these software release deposits must not create a duplicate bibliography row",
           "folder": "2026_EvoJump"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.8228934",
+          "https://github.com/ActiveInferenceInstitute/Active_InferAnts/releases/tag/1",
+          "https://zenodo.org/records/8228934",
+          "activeinferenceinstitute/active_inferants",
+          "transcript of active inference gueststream 049.1: \"clickbait, consciousness science, and responsible journalism\"",
+          "1"
+        ],
+        {
+          "group_id": "R84",
+          "representation": "bibliography-folder",
+          "folder": "2023_TranscriptActiveInference"
         }
       ],
       [
@@ -65703,6 +63912,36 @@
       ],
       [
         [
+          "10.5281/zenodo.19699233",
+          "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.0.0",
+          "https://zenodo.org/records/19699233",
+          "activeinferenceinstitute/fep_formal",
+          "towards lean 4 formalization of the free energy principle: ai-driven theorem sketching and verification for active inference and bayesian mechanics",
+          "v1.0.0"
+        ],
+        {
+          "group_id": "R85",
+          "representation": "bibliography-folder",
+          "folder": "2026_FEPLean"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.18364118",
+          "https://github.com/ActiveInferenceInstitute/Active_InferAnts/releases/tag/1",
+          "https://zenodo.org/records/18364118",
+          "activeinferenceinstitute/active_inferants",
+          "cognitive integrity framework: formal foundations (part 1 of 3: theoretical foundations)",
+          "1"
+        ],
+        {
+          "group_id": "R86",
+          "representation": "bibliography-folder",
+          "folder": "2026_CognitiveIntegrity"
+        }
+      ],
+      [
+        [
           "10.5281/zenodo.18364118",
           "https://github.com/ActiveInferenceInstitute/CEREBRUM/releases/tag/1.3",
           "https://zenodo.org/records/18364118",
@@ -65884,6 +64123,21 @@
       [
         [
           "10.5281/zenodo.21864003",
+          "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/tag/v1.1.0",
+          "https://zenodo.org/records/21864003",
+          "activeinferenceinstitute/active_fedference",
+          "robust belief sharing in federated active inference: a recovery-tested generalized-variational framework for categorical contamination-aware consensus",
+          "v1.1.0"
+        ],
+        {
+          "group_id": "R87",
+          "representation": "bibliography-folder",
+          "folder": "2026_RobustBeliefSharing"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.21864003",
           "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/tag/v1.0.4",
           "https://zenodo.org/records/21864003",
           "activeinferenceinstitute/active_fedference",
@@ -65939,6 +64193,156 @@
           "group_id": "R69",
           "representation": "bibliography-folder",
           "folder": "2026_RobustBeliefSharing"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.5.0",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v3.5.0"
+        ],
+        {
+          "group_id": "R88",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.4.0",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v3.4.0"
+        ],
+        {
+          "group_id": "R88",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.2.0",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v3.2.0"
+        ],
+        {
+          "group_id": "R88",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.0.0",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v3.0.0"
+        ],
+        {
+          "group_id": "R88",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v2.0.0",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v2.0.0"
+        ],
+        {
+          "group_id": "R88",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.8.0",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v1.8.0"
+        ],
+        {
+          "group_id": "R88",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.6.0",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v1.6.0"
+        ],
+        {
+          "group_id": "R88",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.3.0",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v1.3.0"
+        ],
+        {
+          "group_id": "R88",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.2.0",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v1.2.0"
+        ],
+        {
+          "group_id": "R88",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
+        }
+      ],
+      [
+        [
+          "10.5281/zenodo.7803313",
+          "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1",
+          "https://zenodo.org/records/7803313",
+          "activeinferenceinstitute/generalized_notation_notation",
+          "generalized_notation_notation (gnn)",
+          "v1"
+        ],
+        {
+          "group_id": "R88",
+          "representation": "bibliography-folder",
+          "folder": "2026_GeneralizedNotationNotationGNN"
         }
       ]
     ]

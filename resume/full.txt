@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: full
-Generated: 2026-09-24T02:11:03Z
+Generated: 2026-09-24T19:36:28Z
 
-Current public metrics: 216 curated works; 155 catalogued software repositories (116 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 219 docxology + 43 AII public repositories (170 primary, 92 forks).
+Current public metrics: 220 curated works; 155 catalogued software repositories (116 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 219 docxology + 43 AII public repositories (170 primary, 92 forks).
 
 SUMMARY
 -------
@@ -162,7 +162,7 @@ AWARDS AND FELLOWSHIPS
   - Drosophila research, $2,500.
   - Sources: UC Davis Undergraduate Research Center: https://urc.ucdavis.edu/puf
 
-WORKS AND PUBLICATIONS (216)
+WORKS AND PUBLICATIONS (220)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
@@ -380,6 +380,10 @@ WORKS AND PUBLICATIONS (216)
 [217] 2026 | Paper | FractiSkills: One Portable Agent Skill per Page | Zenodo | 10.5281/zenodo.22712650
 [218] 2026 | Paper | Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security | Zenodo | 10.5281/zenodo.22754351
 [219] 2026 | Paper | Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model | Zenodo | 10.5281/zenodo.22816187
+[220] 2026 | Paper | Green Line: a capacity-under-development instrument | Zenodo | 10.5281/zenodo.22833491
+[221] 2026 | Paper | The Blue Line: A Stewardship Instrument for Maintained Commitments | Zenodo | 10.5281/zenodo.22833489
+[222] 2026 | Paper | The Violet Line: A Consent Ledger of Affected Parties | Zenodo | 10.5281/zenodo.22833487
+[223] 2026 | Paper | The Silver Line: A Memory-and-Succession Instrument | Zenodo | 10.5281/zenodo.22833485
 
 SOFTWARE (155)
 --------------

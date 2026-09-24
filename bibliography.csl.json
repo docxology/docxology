@@ -7102,5 +7102,105 @@
     "publisher": "Zenodo",
     "DOI": "10.5281/zenodo.22816187",
     "URL": "https://doi.org/10.5281/zenodo.22816187"
+  },
+  {
+    "id": "Friedman2026GreenLineCapacityUnder220",
+    "type": "article-journal",
+    "title": "Green Line: a capacity-under-development instrument",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 220; docs: papers/2026_GreenLine/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.22833491",
+    "URL": "https://doi.org/10.5281/zenodo.22833491"
+  },
+  {
+    "id": "Friedman2026BlueLineStewardshipInstrument221",
+    "type": "article-journal",
+    "title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 221; docs: papers/2026_BlueLine/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.22833489",
+    "URL": "https://doi.org/10.5281/zenodo.22833489"
+  },
+  {
+    "id": "Friedman2026VioletLineConsentLedger222",
+    "type": "article-journal",
+    "title": "The Violet Line: A Consent Ledger of Affected Parties",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Active Inference; Paper",
+    "note": "Catalog row 222; docs: papers/2026_VioletLine/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.22833487",
+    "URL": "https://doi.org/10.5281/zenodo.22833487"
+  },
+  {
+    "id": "Friedman2026SilverLineMemorySuccession223",
+    "type": "article-journal",
+    "title": "The Silver Line: A Memory-and-Succession Instrument",
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Daniel Ari"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "genre": "Paper",
+    "keyword": "Computational; Paper",
+    "note": "Catalog row 223; docs: papers/2026_SilverLine/",
+    "container-title": "Zenodo",
+    "publisher": "Zenodo",
+    "DOI": "10.5281/zenodo.22833485",
+    "URL": "https://doi.org/10.5281/zenodo.22833485"
   }
 ]

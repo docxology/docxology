@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-07T22:45:02Z",
-  "source_report": "reports/paired_publications_2026-09-07.json",
+  "generated_at": "2026-09-24T18:45:00Z",
+  "source_report": "reports/paired_publications_2026-09-24.json",
   "source_review_queue": "reports/paired_publications_review_queue_2026-06-04.md",
   "decision_summary": {
     "decision": "accept",
-    "groups": 83,
-    "raw_candidates": 510,
+    "groups": 88,
+    "raw_candidates": 524,
     "note": "Manual review decisions accept represented GitHub release + Zenodo record relations; software-only records remain software/version metadata unless a bibliography folder is explicitly curated. R20-R24 record CEREBRUM, SIA, and On-Policy Distillation supersession/version-history decisions so newer versions do not create duplicate bibliography rows. R26-R27 record CogSecSkills and Codomyrmex version-history decisions under already-cited DOIs. R71 records the untagged Codomyrmex v1.3.0 release as already represented, and R72 records Active Fedference v1.0.4 as a version-specific artifact under its existing concept DOI without a duplicate bibliography row. R73 records the re-fingerprinted untagged Codomyrmex v1.3.0 release from the 2026-09-04 report as superseded under R71 precedent, and R74 records GNN v3.2.0 as a version-specific release of its represented work. R75-R76 record the rotating Codomyrmex draft URLs as superseded under R71/R73 precedent, and R77-R78 record the ActiveInferAnts and CEREBRUM releases as version-specific artifacts under the represented Cognitive Integrity Framework DOI after the principal classified cognitive_integrity as curated. R79 records the Cognitive Diagrams v2.5.0 release (2026-09-10 scan) as version-history-only under the already-cited concept DOI 10.5281/zenodo.19695259. R80 records the six GitHub release pairs (v0.3.0-v1) under the canonical curated EvoJump concept 10.5281/zenodo.22664675 as software-catalog (SOFTWARE.md already lists EvoJump; the citable paper remains bibliography row #12, concept 10.5281/zenodo.17229924), and R81 records the GitHub-Zenodo automated integration archive concept 10.5281/zenodo.22664645 (docxology/EvoJump-v0.5.2.zip, zip-only) as a superseded duplicate deposit. R82-R83 (2026-09-17 scan) record the fep_lean v1.2.0 and GeneralizedNotationNotation v3.4.0 releases as version-history-only under their already-cited citation DOIs (10.5281/zenodo.19699233 row #113 and 10.5281/zenodo.7803313 row #168), both pairs lacking github_release_mentions_doi cross-link evidence, so neither creates a duplicate bibliography row."
   },
   "groups": [
@@ -11519,6 +11519,375 @@
           "reviewed_at": "2026-09-17T23:18:16Z",
           "review_source": "agent:orchestrator: manual review of reports/paired_publications_2026-09-17.json — work already represented under the paired citation DOI (bibliography rows #113 / #168); release lacks cross-link evidence, recorded as version-history-only",
           "source_report": "reports/paired_publications_2026-09-17.json"
+        }
+      ]
+    },
+    {
+      "id": "R84",
+      "decision": "accept",
+      "decided_at": "2026-09-24T18:45:00Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.8228934",
+      "title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+      "candidate_github_repo": "ActiveInferenceInstitute/Active_InferAnts",
+      "folder": "2023_TranscriptActiveInference",
+      "representation": "bibliography-folder",
+      "note": "Bibliography row 137 cites this exact DOI; paired release is the same represented work (cf. R01). No new row.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.8228934",
+          "record_title": "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"",
+          "zenodo_record_url": "https://zenodo.org/records/8228934",
+          "github_repo": "ActiveInferenceInstitute/Active_InferAnts",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts/releases/tag/1",
+          "release_tag": "1",
+          "release_name": "1",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
+        }
+      ]
+    },
+    {
+      "id": "R85",
+      "decision": "accept",
+      "decided_at": "2026-09-24T18:45:00Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.19699233",
+      "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+      "candidate_github_repo": "ActiveInferenceInstitute/fep_formal",
+      "folder": "2026_FEPLean",
+      "representation": "bibliography-folder",
+      "note": "Bibliography row 113 cites this exact DOI; paired release v1.0.0 is the represented work. No new row.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.19699233",
+          "record_title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
+          "zenodo_record_url": "https://zenodo.org/records/19699233",
+          "github_repo": "ActiveInferenceInstitute/fep_formal",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/fep_formal/releases/tag/v1.0.0",
+          "release_tag": "v1.0.0",
+          "release_name": "v1.0.0",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
+        }
+      ]
+    },
+    {
+      "id": "R86",
+      "decision": "accept",
+      "decided_at": "2026-09-24T18:45:00Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.18364118",
+      "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
+      "candidate_github_repo": "ActiveInferenceInstitute/Active_InferAnts",
+      "folder": "2026_CognitiveIntegrity",
+      "representation": "bibliography-folder",
+      "note": "Bibliography row 5 cites this exact DOI; paired release is the represented work. No new row.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.18364118",
+          "record_title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
+          "zenodo_record_url": "https://zenodo.org/records/18364118",
+          "github_repo": "ActiveInferenceInstitute/Active_InferAnts",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Active_InferAnts/releases/tag/1",
+          "release_tag": "1",
+          "release_name": "1",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
+        }
+      ]
+    },
+    {
+      "id": "R87",
+      "decision": "accept",
+      "decided_at": "2026-09-24T18:45:00Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.21864003",
+      "title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+      "candidate_github_repo": "ActiveInferenceInstitute/Active_Fedference",
+      "folder": "2026_RobustBeliefSharing",
+      "representation": "bibliography-folder",
+      "note": "Bibliography row 210 cites this exact DOI; paired release v1.1.0 is the represented work. No new row.",
+      "raw_candidate_count": 1,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.21864003",
+          "record_title": "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus",
+          "zenodo_record_url": "https://zenodo.org/records/21864003",
+          "github_repo": "ActiveInferenceInstitute/Active_Fedference",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Active_Fedference/releases/tag/v1.1.0",
+          "release_tag": "v1.1.0",
+          "release_name": "v1.1.0",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
+        }
+      ]
+    },
+    {
+      "id": "R88",
+      "decision": "accept",
+      "decided_at": "2026-09-24T18:45:00Z",
+      "decided_by": "user",
+      "doi": "10.5281/zenodo.7803313",
+      "title": "Generalized_Notation_Notation (GNN)",
+      "candidate_github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+      "folder": "2026_GeneralizedNotationNotationGNN",
+      "representation": "bibliography-folder",
+      "note": "Bibliography row 168 cites concept DOI 10.5281/zenodo.7803313, which resolves to the latest version; release tags v2.0.0-v3.5.0 are version history of the represented work. No new row.",
+      "raw_candidate_count": 10,
+      "raw_candidates": [
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.5.0",
+          "release_tag": "v3.5.0",
+          "release_name": "v3.5.0",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
+        },
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.4.0",
+          "release_tag": "v3.4.0",
+          "release_name": "v3.4.0",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
+        },
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.2.0",
+          "release_tag": "v3.2.0",
+          "release_name": "v3.2.0",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
+        },
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v3.0.0",
+          "release_tag": "v3.0.0",
+          "release_name": "v3.0.0",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
+        },
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v2.0.0",
+          "release_tag": "v2.0.0",
+          "release_name": "v2.0.0",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
+        },
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.8.0",
+          "release_tag": "v1.8.0",
+          "release_name": "v1.8.0",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
+        },
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.6.0",
+          "release_tag": "v1.6.0",
+          "release_name": "v1.6.0",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
+        },
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.3.0",
+          "release_tag": "v1.3.0",
+          "release_name": "v1.3.0",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
+        },
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1.2.0",
+          "release_tag": "v1.2.0",
+          "release_name": "v1.2.0",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
+        },
+        {
+          "doi": "10.5281/zenodo.7803313",
+          "record_title": "Generalized_Notation_Notation (GNN)",
+          "zenodo_record_url": "https://zenodo.org/records/7803313",
+          "github_repo": "ActiveInferenceInstitute/Generalized_Notation_Notation",
+          "github_release_url": "https://github.com/ActiveInferenceInstitute/Generalized_Notation_Notation/releases/tag/v1",
+          "release_tag": "v1",
+          "release_name": "v1",
+          "resource_type": {
+            "title": "Publication",
+            "type": "publication"
+          },
+          "raw_confidence": "needs_review",
+          "evidence": [
+            "title_overlap"
+          ],
+          "review_decision": "accept",
+          "reviewed_at": "2026-09-24T18:45:00Z",
+          "review_source": "orchestrator: work already represented in the curated bibliography at the cited DOI (see note); dispositions per docs/operations/publication-sync.md Manual Review Path",
+          "source_report": "reports/paired_publications_2026-09-24.json"
         }
       ]
     }

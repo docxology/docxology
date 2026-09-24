@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-24T01:11:15Z",
+  "generated_at": "2026-09-24T19:36:35Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 216,
+  "count": 220,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -4393,6 +4393,83 @@
       ],
       "methods": [],
       "source": "papers/2026_JevPractice/README.md"
+    },
+    "Friedman2026GreenLineCapacityUnder220": {
+      "citation_key": "Friedman2026GreenLineCapacityUnder220",
+      "abstract": "A capacity-under-development instrument: the green line of the docxology line-set. It records what is deliberately still being learned — apprenticeships, skills not yet mastered — with marker/counter-signal staging, and reads declared growth records against a versioned registry. Observations phrased as certification or credential language are staged aside with a note, never scored. It measures what is still growing — never competence, mastery, or virtue. Code and prose are Apache-2.0 licensed. See LICENSE in the repository.",
+      "keywords": [
+        "active inference",
+        "governance",
+        "apprenticeship",
+        "growth records",
+        "capacity under development",
+        "open science"
+      ],
+      "findings": [
+        "active inference",
+        "governance",
+        "apprenticeship",
+        "growth records",
+        "capacity under development"
+      ],
+      "methods": [],
+      "source": "papers/2026_GreenLine/README.md"
+    },
+    "Friedman2026BlueLineStewardshipInstrument221": {
+      "citation_key": "Friedman2026BlueLineStewardshipInstrument221",
+      "abstract": "A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work. It reads a declared file of commitments against a versioned registry and returns a fail-closed declaration-coverage verdict (MAINTAINED, NEEDS ATTENTION, STALE, OUTSIDE SCOPE) over the care signals each commitment requires. It measures whether the care a steward declared was fresh at the review date — never whether the care happened; a MAINTAINED verdict is not a warranty, SLA, availability guarantee, or proof of maintenance, and it never authorizes an action. License: Apache-2.0. See LICENSE in the repository.",
+      "keywords": [
+        "stewardship",
+        "maintenance",
+        "line set",
+        "accountability"
+      ],
+      "findings": [
+        "stewardship",
+        "maintenance",
+        "line set",
+        "accountability"
+      ],
+      "methods": [],
+      "source": "papers/2026_BlueLine/README.md"
+    },
+    "Friedman2026VioletLineConsentLedger222": {
+      "citation_key": "Friedman2026VioletLineConsentLedger222",
+      "abstract": "A consent-ledger instrument for projects. It maintains a ledger of the parties a project affects and what they actually recorded at a review date; absence of consent is recorded — the UNRECORDED state — never inferred from silence, absence, or convenience. An executable review returns one of three verdicts (ACCOUNTED, UNACCOUNTED, OUT OF SCOPE); an ACCOUNTED reading never authorizes an action, a release, or a use outside the scope a party named. Subtitle: Absence of consent recorded, never inferred Apache-2.0 licensed; see LICENSE in the repository.",
+      "keywords": [
+        "consent",
+        "affected parties",
+        "research ethics",
+        "governance"
+      ],
+      "findings": [
+        "consent",
+        "affected parties",
+        "research ethics",
+        "governance"
+      ],
+      "methods": [],
+      "source": "papers/2026_VioletLine/README.md"
+    },
+    "Friedman2026SilverLineMemorySuccession223": {
+      "citation_key": "Friedman2026SilverLineMemorySuccession223",
+      "abstract": "A memory-and-succession instrument in the docxology line set. It reads a declared succession picture — what is preserved, what is entrusted to whom, what is allowed to lapse — and returns a verdict about declared provision and review gaps, pinned to a registry digest. A KEPT verdict describes declared custody at a review date; it is never permission and never a promise that anything survives. Subtitle: What is preserved, what is entrusted to whom, what is allowed to lapse Code is MIT licensed; see LICENSE in the repository.",
+      "keywords": [
+        "memory",
+        "succession",
+        "active inference",
+        "declared custody",
+        "review gaps"
+      ],
+      "findings": [
+        "memory",
+        "succession",
+        "active inference",
+        "declared custody",
+        "review gaps"
+      ],
+      "methods": [],
+      "source": "papers/2026_SilverLine/README.md"
     }
   }
 }

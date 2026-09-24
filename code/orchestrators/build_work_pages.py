@@ -504,7 +504,10 @@ def json_ld(work: dict) -> str:
     return json.dumps(data, indent=4, ensure_ascii=False)
 
 
-def work_page_title(work: dict, max_len: int = 65) -> str:
+def work_page_title(work: dict, max_len: int = 100) -> str:
+    """Full title first; clip on a word boundary only when the ~100-char
+    SERP-safe budget forces it (Google wraps/clips visually, so the ellipsis
+    budget stays generous instead of hard-truncating at ~60 chars)."""
     title = " ".join(work["title"].split())
     suffix = " — Daniel Ari Friedman"
     if len(h(title)) + len(h(suffix)) <= max_len:
@@ -656,13 +659,20 @@ def render_work_page(work: dict) -> str:
     if findings or methods:
         findings_html = "".join(f"<li>{h(item)}</li>" for item in findings)
         methods_html = "".join(f"<li>{h(item)}</li>" for item in methods)
+        findings_card = (
+            f'<div class="work-detail"><strong>Findings / Concepts</strong><ul>{findings_html}</ul></div>'
+            if findings
+            else ""
+        )
+        methods_card = (
+            f'<div class="work-detail"><strong>Methods / Techniques</strong><ul>{methods_html}</ul></div>'
+            if methods
+            else ""
+        )
         detail_sections += f"""
         <section class="section section-alt">
             <div class="section-header"><h2>Use Notes</h2><p>Concise findings and methods pulled from README/SKILL documentation.</p><div class="section-divider"></div></div>
-            <div class="meta-grid">
-                <div class="work-detail"><strong>Findings / Concepts</strong><ul>{findings_html or '<li>Not yet summarized.</li>'}</ul></div>
-                <div class="work-detail"><strong>Methods / Techniques</strong><ul>{methods_html or '<li>Not yet summarized.</li>'}</ul></div>
-            </div>
+            <div class="meta-grid">{findings_card}{methods_card}</div>
         </section>"""
     return (
         page_head(work)
@@ -687,7 +697,6 @@ def render_work_page(work: dict) -> str:
             <p class="text-center mt-2">
                 {button_links_html}
             </p>
-            {bibtex_button_html(work)}
         </section>
 {related_works_html(work)}
     </main>
@@ -729,7 +738,7 @@ def render_index(works: list[dict]) -> str:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Works Index — Daniel Ari Friedman</title>
-    <meta name="description" content="Per-work landing pages for Daniel Ari Friedman's curated bibliography.">
+    <meta name="description" content="Browse {len(works)} per-work pages: papers, books, courses, and presentations across Active Inference, computational biology, cognitive security, entomology, and art — each with DOI, citation tools, and related works.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/">
     <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
@@ -739,7 +748,7 @@ def render_index(works: list[dict]) -> str:
 {HEAD_EXTRAS}
     <meta property="og:type" content="website">
     <meta property="og:title" content="Works Index — Daniel Ari Friedman">
-    <meta property="og:description" content="Per-work landing pages for Daniel Ari Friedman's curated bibliography.">
+    <meta property="og:description" content="Browse {len(works)} per-work pages: papers, books, courses, and presentations across Active Inference, computational biology, cognitive security, entomology, and art — each with DOI, citation tools, and related works.">
     <meta property="og:url" content="https://danielarifriedman.com/works/">
     <meta property="og:site_name" content="Daniel Ari Friedman">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
@@ -748,7 +757,7 @@ def render_index(works: list[dict]) -> str:
     <meta property="og:image:alt" content="Works Index — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Works Index — Daniel Ari Friedman">
-    <meta name="twitter:description" content="Per-work landing pages for Daniel Ari Friedman's curated bibliography.">
+    <meta name="twitter:description" content="Browse {len(works)} per-work pages: papers, books, courses, and presentations across Active Inference, computational biology, cognitive security, entomology, and art — each with DOI, citation tools, and related works.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Works Index — Daniel Ari Friedman">
     <script type="application/ld+json">

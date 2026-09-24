@@ -1,0 +1,41 @@
+{
+  "title": "The Silver Line: A Memory-and-Succession Instrument",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.22833485",
+  "doi_url": "https://doi.org/10.5281/zenodo.22833485",
+  "zenodo_record": "https://zenodo.org/records/22833485",
+  "record_id": "22833486",
+  "publication_date": "2026-09-18",
+  "resource_type": {
+    "title": "Working paper",
+    "type": "publication",
+    "subtype": "workingpaper"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A memory-and-succession instrument in the docxology line set. It reads a declared succession picture — what is preserved, what is entrusted to whom, what is allowed to lapse — and returns a verdict about declared provision and review gaps, pinned to a registry digest. A KEPT verdict describes declared custody at a review date; it is never permission and never a promise that anything survives. Subtitle: What is preserved, what is entrusted to whom, what is allowed to lapse Code is MIT licensed; see LICENSE in the repository.",
+  "keywords": [
+    "memory",
+    "succession",
+    "active inference",
+    "declared custody",
+    "review gaps"
+  ],
+  "files": [
+    {
+      "name": "silver_line_combined.pdf",
+      "size_bytes": 83420,
+      "checksum": "md5:3fc50cefc59cc9ebe9ece7ae64c06b9a",
+      "download_url": "https://zenodo.org/api/records/22833486/files/silver_line_combined.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-09-24T19:35:43Z"
+}

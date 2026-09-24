@@ -1,0 +1,40 @@
+{
+  "title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.22833489",
+  "doi_url": "https://doi.org/10.5281/zenodo.22833489",
+  "zenodo_record": "https://zenodo.org/records/22833489",
+  "record_id": "22833490",
+  "publication_date": "2026-09-18",
+  "resource_type": {
+    "title": "Working paper",
+    "type": "publication",
+    "subtype": "workingpaper"
+  },
+  "creators": [
+    {
+      "name": "Friedman, Daniel Ari",
+      "affiliation": "Active Inference Institute",
+      "orcid": "0000-0001-6232-9096"
+    }
+  ],
+  "description": "A stewardship instrument for maintained commitments: systems, obligations, and relationships to past work. It reads a declared file of commitments against a versioned registry and returns a fail-closed declaration-coverage verdict (MAINTAINED, NEEDS_ATTENTION, STALE, OUTSIDE_SCOPE) over the care signals each commitment requires. It measures whether the care a steward declared was fresh at the review date — never whether the care happened; a MAINTAINED verdict is not a warranty, SLA, availability guarantee, or proof of maintenance, and it never authorizes an action. License: Apache-2.0. See LICENSE in the repository.",
+  "keywords": [
+    "stewardship",
+    "maintenance",
+    "line set",
+    "accountability"
+  ],
+  "files": [
+    {
+      "name": "blue_line_combined.pdf",
+      "size_bytes": 82677,
+      "checksum": "md5:edfd446357955aa2f40ca93cd6f784eb",
+      "download_url": "https://zenodo.org/api/records/22833490/files/blue_line_combined.pdf/content"
+    }
+  ],
+  "related_resources": [],
+  "github_repo": "",
+  "source": "zenodo-only",
+  "checked_at": "2026-09-24T19:35:38Z"
+}

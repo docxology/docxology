@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 216 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 220 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -8746,6 +8746,142 @@
             },
             "sameAs": "https://doi.org/10.5281/zenodo.22816187",
             "citation": "Friedman, Daniel Ari. 2026. Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model. Zenodo. DOI: 10.5281/zenodo.22816187. URL: https://doi.org/10.5281/zenodo.22816187."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "Green Line: a capacity-under-development instrument",
+            "headline": "Green Line: a capacity-under-development instrument",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026GreenLineCapacityUnder220.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026GreenLineCapacityUnder220.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026GreenLineCapacityUnder220.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.22833491",
+                "url": "https://doi.org/10.5281/zenodo.22833491"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.22833491",
+            "citation": "Friedman, Daniel Ari. 2026. Green Line: a capacity-under-development instrument. Zenodo. DOI: 10.5281/zenodo.22833491. URL: https://doi.org/10.5281/zenodo.22833491."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
+            "headline": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🧠",
+            "@id": "https://danielarifriedman.com/works/Friedman2026BlueLineStewardshipInstrument221.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026BlueLineStewardshipInstrument221.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026BlueLineStewardshipInstrument221.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.22833489",
+                "url": "https://doi.org/10.5281/zenodo.22833489"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.22833489",
+            "citation": "Friedman, Daniel Ari. 2026. The Blue Line: A Stewardship Instrument for Maintained Commitments. Zenodo. DOI: 10.5281/zenodo.22833489. URL: https://doi.org/10.5281/zenodo.22833489."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "The Violet Line: A Consent Ledger of Affected Parties",
+            "headline": "The Violet Line: A Consent Ledger of Affected Parties",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "🧠",
+            "@id": "https://danielarifriedman.com/works/Friedman2026VioletLineConsentLedger222.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026VioletLineConsentLedger222.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026VioletLineConsentLedger222.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.22833487",
+                "url": "https://doi.org/10.5281/zenodo.22833487"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.22833487",
+            "citation": "Friedman, Daniel Ari. 2026. The Violet Line: A Consent Ledger of Affected Parties. Zenodo. DOI: 10.5281/zenodo.22833487. URL: https://doi.org/10.5281/zenodo.22833487."
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "name": "The Silver Line: A Memory-and-Succession Instrument",
+            "headline": "The Silver Line: A Memory-and-Succession Instrument",
+            "datePublished": "2026",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
+                }
+            ],
+            "publisher": {
+                "@type": "Organization",
+                "name": "Zenodo"
+            },
+            "keywords": "💻",
+            "@id": "https://danielarifriedman.com/works/Friedman2026SilverLineMemorySuccession223.html#work",
+            "url": "https://danielarifriedman.com/works/Friedman2026SilverLineMemorySuccession223.html",
+            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2026SilverLineMemorySuccession223.html",
+            "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "DOI",
+                "value": "10.5281/zenodo.22833485",
+                "url": "https://doi.org/10.5281/zenodo.22833485"
+            },
+            "sameAs": "https://doi.org/10.5281/zenodo.22833485",
+            "citation": "Friedman, Daniel Ari. 2026. The Silver Line: A Memory-and-Succession Instrument. Zenodo. DOI: 10.5281/zenodo.22833485. URL: https://doi.org/10.5281/zenodo.22833485."
         }
     ]
 }

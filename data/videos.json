@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T01:13:25Z",
+  "generated_at": "2026-09-24T19:36:41Z",
   "source_files": [
     "code/data/youtube_personal.json",
     "code/data/youtube_institute.json"
@@ -6686,6 +6686,13 @@
       ],
       "related_works": [
         {
+          "title": "The Violet Line: A Consent Ledger of Affected Parties",
+          "citation_key": "Friedman2026VioletLineConsentLedger222",
+          "year": 2026,
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026VioletLineConsentLedger222.html"
+        },
+        {
           "title": "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement",
           "citation_key": "Friedman2018PartnerPenPlayParallel099",
           "year": 2018,
@@ -6705,13 +6712,6 @@
           "year": 2020,
           "domain": "Cognitive Security",
           "url": "/works/Friedman2020ReimaginingMaps148.html"
-        },
-        {
-          "title": "The Innovator's Catechism",
-          "citation_key": "Friedman2020InnovatorSCatechism090",
-          "year": 2020,
-          "domain": "Cognitive Security",
-          "url": "/works/Friedman2020InnovatorSCatechism090.html"
         }
       ]
     },
@@ -21451,11 +21451,11 @@
           "url": "/works/Friedman2026GoldenLineTowardWhat204.html"
         },
         {
-          "title": "White Line: A Typed Ledger for the Edge of the Claim",
-          "citation_key": "Friedman2026WhiteLineTypedLedger202",
+          "title": "The Violet Line: A Consent Ledger of Affected Parties",
+          "citation_key": "Friedman2026VioletLineConsentLedger222",
           "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026WhiteLineTypedLedger202.html"
+          "domain": "Active Inference",
+          "url": "/works/Friedman2026VioletLineConsentLedger222.html"
         }
       ]
     },
@@ -70047,11 +70047,11 @@
           "url": "/works/Friedman2026ActiveInferencePowerSuite199.html"
         },
         {
-          "title": "Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics",
-          "citation_key": "Friedman2026TowardsLean4Formalization113",
+          "title": "Green Line: a capacity-under-development instrument",
+          "citation_key": "Friedman2026GreenLineCapacityUnder220",
           "year": 2026,
-          "domain": "Active Inference",
-          "url": "/works/Friedman2026TowardsLean4Formalization113.html"
+          "domain": "Computational",
+          "url": "/works/Friedman2026GreenLineCapacityUnder220.html"
         }
       ]
     },
@@ -71461,18 +71461,18 @@
           "url": "/works/Friedman2026AGEINTAgenticIntelligence170.html"
         },
         {
+          "title": "Green Line: a capacity-under-development instrument",
+          "citation_key": "Friedman2026GreenLineCapacityUnder220",
+          "year": 2026,
+          "domain": "Computational",
+          "url": "/works/Friedman2026GreenLineCapacityUnder220.html"
+        },
+        {
           "title": "Policy Entanglement in Active Inference",
           "citation_key": "Friedman2026PolicyEntanglementActiveInference119",
           "year": 2026,
           "domain": "Computational",
           "url": "/works/Friedman2026PolicyEntanglementActiveInference119.html"
-        },
-        {
-          "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
-          "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
-          "year": 2026,
-          "domain": "Computational",
-          "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
         }
       ]
     },
@@ -88729,11 +88729,11 @@
           "url": "/works/Friedman2026COGANTDeterministicCodebaseGNN169.html"
         },
         {
-          "title": "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction",
-          "citation_key": "Friedman2026RealizingEmptinessOperationalSurrogates175",
+          "title": "Green Line: a capacity-under-development instrument",
+          "citation_key": "Friedman2026GreenLineCapacityUnder220",
           "year": 2026,
           "domain": "Computational",
-          "url": "/works/Friedman2026RealizingEmptinessOperationalSurrogates175.html"
+          "url": "/works/Friedman2026GreenLineCapacityUnder220.html"
         }
       ]
     },

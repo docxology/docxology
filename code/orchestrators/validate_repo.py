@@ -76,11 +76,13 @@ OPTIONAL_REPORT_PATTERNS: list[tuple[str, str]] = [
 
 # Repository validation deliberately scans hand-authored docs and code examples,
 # but never virtual environments, dependency installations, or local build
-# caches.  Those trees can contain third-party HTML/Markdown whose links and
+# artifacts.  Those trees can contain third-party HTML/Markdown whose links and
 # JSON-LD are not site artifacts; allowing an optional QA extra to alter this
-# scope would make the release gate environment-dependent.
+# scope would make the release gate environment-dependent.  `output/` is an
+# untracked, gitignored local manuscript-build tree (not a Pages input), so its
+# internal references are out of scope everywhere, not only in CI.
 IGNORED_VALIDATION_PATH_PARTS = frozenset(
-    {".git", "_site", ".venv", ".pytest_cache", "__pycache__", "node_modules"}
+    {".git", "_site", ".venv", ".pytest_cache", "__pycache__", "node_modules", "output"}
 )
 
 

@@ -3017,3 +3017,51 @@ KW  - Computational
 KW  - Paper
 N1  - Catalog row 219; docs: papers/2026_JevPractice/
 ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - Green Line: a capacity-under-development instrument
+T2  - Zenodo
+DO  - 10.5281/zenodo.22833491
+UR  - https://doi.org/10.5281/zenodo.22833491
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 220; docs: papers/2026_GreenLine/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - The Blue Line: A Stewardship Instrument for Maintained Commitments
+T2  - Zenodo
+DO  - 10.5281/zenodo.22833489
+UR  - https://doi.org/10.5281/zenodo.22833489
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 221; docs: papers/2026_BlueLine/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - The Violet Line: A Consent Ledger of Affected Parties
+T2  - Zenodo
+DO  - 10.5281/zenodo.22833487
+UR  - https://doi.org/10.5281/zenodo.22833487
+KW  - Active Inference
+KW  - Paper
+N1  - Catalog row 222; docs: papers/2026_VioletLine/
+ER  -
+
+TY  - JOUR
+AU  - Friedman, Daniel Ari
+PY  - 2026
+TI  - The Silver Line: A Memory-and-Succession Instrument
+T2  - Zenodo
+DO  - 10.5281/zenodo.22833485
+UR  - https://doi.org/10.5281/zenodo.22833485
+KW  - Computational
+KW  - Paper
+N1  - Catalog row 223; docs: papers/2026_SilverLine/
+ER  -

@@ -28,8 +28,8 @@ All notable public-index, website, bibliography, and discovery-layer changes are
     five `art-collections/<slug>.html` CollectionPage+ItemList pages
     (Neuroscience & Molecular Biology, Collective Behavior & Ants, Sacred
     Geometry & Kabbalistic Triangles, Active Inference, Americana & Seals).
-  - **art.html crawlability:** tiles are now `<a href="artworks/…">` links
-    (lightbox = progressive enhancement via `tileClick`), the SSR floor is
+  - **art.html crawlability:** tiles are now `artworks/<id>-<slug>.html`
+    anchor links (lightbox = progressive enhancement via `tileClick`), the SSR floor is
     maintained by the new `sync_art_gallery.py` patcher step
     (`art-gallery-sync`), and the noscript block points at the plain-HTML
     artwork index. Gallery hydration (`js/art-gallery.js`) renders link tiles

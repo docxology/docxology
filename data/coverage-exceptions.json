@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-24T00:52:27Z",
+  "generated_at": "2026-09-24T19:36:22Z",
   "source": "data/works.json",
   "summary": {
     "no_paper_folder": 17,
-    "no_full_text": 26,
+    "no_full_text": 30,
     "no_doi": 15,
     "no_canonical_url": 2,
     "non_paper_record": 22
@@ -525,6 +525,50 @@
       "num": 219,
       "citation_key": "Friedman2026JevPracticeComposablePython219",
       "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
+      "type": "Paper",
+      "reasons": [
+        "no_full_text"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 220,
+      "citation_key": "Friedman2026GreenLineCapacityUnder220",
+      "title": "Green Line: a capacity-under-development instrument",
+      "type": "Paper",
+      "reasons": [
+        "no_full_text"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 221,
+      "citation_key": "Friedman2026BlueLineStewardshipInstrument221",
+      "title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
+      "type": "Paper",
+      "reasons": [
+        "no_full_text"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 222,
+      "citation_key": "Friedman2026VioletLineConsentLedger222",
+      "title": "The Violet Line: A Consent Ledger of Affected Parties",
+      "type": "Paper",
+      "reasons": [
+        "no_full_text"
+      ],
+      "review_status": "needs_review",
+      "notes": "Coverage exception is retained explicitly; do not infer that the source is missing or invalid."
+    },
+    {
+      "num": 223,
+      "citation_key": "Friedman2026SilverLineMemorySuccession223",
+      "title": "The Silver Line: A Memory-and-Succession Instrument",
       "type": "Paper",
       "reasons": [
         "no_full_text"

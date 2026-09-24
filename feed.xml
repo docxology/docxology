@@ -6,7 +6,7 @@
     <atom:link href="https://danielarifriedman.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>Bibliography, software, evidence, and site metadata updates.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Sep 2026 01:26:44 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 19:38:54 +0000</lastBuildDate>
     <item>
       <title>Repository inventory and evidence layer refreshed</title>
       <link>https://danielarifriedman.com/repositories.html</link>
@@ -27,6 +27,34 @@
       <guid isPermaLink="false">site-update-2026-05-13-works</guid>
       <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
       <description>Generated work pages, search-index.json, feed.xml, and verification reports for the profile repository.</description>
+    </item>
+    <item>
+      <title>The Silver Line: A Memory-and-Succession Instrument</title>
+      <link>https://danielarifriedman.com/works/Friedman2026SilverLineMemorySuccession223.html</link>
+      <guid isPermaLink="false">work-Friedman2026SilverLineMemorySuccession223</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
+    </item>
+    <item>
+      <title>The Violet Line: A Consent Ledger of Affected Parties</title>
+      <link>https://danielarifriedman.com/works/Friedman2026VioletLineConsentLedger222.html</link>
+      <guid isPermaLink="false">work-Friedman2026VioletLineConsentLedger222</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Active Inference · 2026</description>
+    </item>
+    <item>
+      <title>The Blue Line: A Stewardship Instrument for Maintained Commitments</title>
+      <link>https://danielarifriedman.com/works/Friedman2026BlueLineStewardshipInstrument221.html</link>
+      <guid isPermaLink="false">work-Friedman2026BlueLineStewardshipInstrument221</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Active Inference · 2026</description>
+    </item>
+    <item>
+      <title>Green Line: a capacity-under-development instrument</title>
+      <link>https://danielarifriedman.com/works/Friedman2026GreenLineCapacityUnder220.html</link>
+      <guid isPermaLink="false">work-Friedman2026GreenLineCapacityUnder220</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <description>Paper · Zenodo · Computational · 2026</description>
     </item>
     <item>
       <title>Jev in Practice: A Composable Python Toolkit for TypeSafe&#x27;s System One Decision Model</title>
@@ -174,34 +202,6 @@
       <guid isPermaLink="false">work-Friedman2026ActiveInferencePowerSuite199</guid>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <description>Paper · Zenodo · Active Inference · 2026</description>
-    </item>
-    <item>
-      <title>SynthOBS &amp; FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer</title>
-      <link>https://danielarifriedman.com/works/Friedman2026SynthOBSFractiSynthGoldenRatio198.html</link>
-      <guid isPermaLink="false">work-Friedman2026SynthOBSFractiSynthGoldenRatio198</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>DuckRabbit: Typed Multimodal Illusion Generator</title>
-      <link>https://danielarifriedman.com/works/Friedman2026DuckRabbitTypedMultimodalIllusion197.html</link>
-      <guid isPermaLink="false">work-Friedman2026DuckRabbitTypedMultimodalIllusion197</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Computational · 2026</description>
-    </item>
-    <item>
-      <title>Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing</title>
-      <link>https://danielarifriedman.com/works/Friedman2026FourfoldVisionWilliamBlake196.html</link>
-      <guid isPermaLink="false">work-Friedman2026FourfoldVisionWilliamBlake196</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Art &amp; Synergetics · 2026</description>
-    </item>
-    <item>
-      <title>Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations</title>
-      <link>https://danielarifriedman.com/works/Friedman2026ActiveFractalRabbitSyntheticBenchmark195.html</link>
-      <guid isPermaLink="false">work-Friedman2026ActiveFractalRabbitSyntheticBenchmark195</guid>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <description>Paper · Zenodo · Cognitive Security · 2026</description>
     </item>
   </channel>
 </rss>

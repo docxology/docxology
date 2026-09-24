@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-24T01:39:53Z",
+  "generated_at": "2026-09-24T19:37:35Z",
   "scope": "All public HTML page families; complements, but does not replace, browser-based accessibility testing.",
-  "page_count": 2528,
-  "passing": 2528,
+  "page_count": 2536,
+  "passing": 2536,
   "results": [
     {
       "path": "404.html",
@@ -27655,6 +27655,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "papers/2026_BlueLine/index.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "papers/2026_BoundedAutoResearchTiny/index.html",
       "ok": true,
       "checks": {
@@ -28405,6 +28430,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "papers/2026_GreenLine/index.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "papers/2026_ITrace/index.html",
       "ok": true,
       "checks": {
@@ -29005,6 +29055,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "papers/2026_SilverLine/index.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "papers/2026_Skillarum/index.html",
       "ok": true,
       "checks": {
@@ -29206,6 +29281,31 @@
     },
     {
       "path": "papers/2026_Triplicate/index.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "papers/2026_VioletLine/index.html",
       "ok": true,
       "checks": {
         "lang": true,
@@ -61430,6 +61530,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "works/Friedman2026BlueLineStewardshipInstrument221.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "works/Friedman2026BoundedAutoResearchTinyReproducible120.html",
       "ok": true,
       "checks": {
@@ -62205,6 +62330,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "works/Friedman2026GreenLineCapacityUnder220.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "works/Friedman2026ITraceVerificationFirstWebcam165.html",
       "ok": true,
       "checks": {
@@ -62830,6 +62980,31 @@
       "inline_handlers": 0
     },
     {
+      "path": "works/Friedman2026SilverLineMemorySuccession223.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
       "path": "works/Friedman2026SkillarumConditionallyReproducibleWebsite216.html",
       "ok": true,
       "checks": {
@@ -63081,6 +63256,31 @@
     },
     {
       "path": "works/Friedman2026TriplicateDataDrivenLarge153.html",
+      "ok": true,
+      "checks": {
+        "lang": true,
+        "title": true,
+        "viewport": true,
+        "canonical": true,
+        "skip_link": true,
+        "nav": true,
+        "main": true,
+        "og_image": true,
+        "no_img_alt_gaps": true,
+        "buttons_labelled": true,
+        "focus_visible_css": true,
+        "reduced_motion_css": true,
+        "single_h1": true,
+        "no_heading_skips": true,
+        "form_controls_labelled": true,
+        "no_inline_handlers": true
+      },
+      "images_without_alt": [],
+      "buttons_without_label": 0,
+      "inline_handlers": 0
+    },
+    {
+      "path": "works/Friedman2026VioletLineConsentLedger222.html",
       "ok": true,
       "checks": {
         "lang": true,
