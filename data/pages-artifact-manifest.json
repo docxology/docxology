@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-24T16:20:41Z",
+  "generated_at": "2026-09-24T16:24:34Z",
   "source_commit_at_generation": "9daa2f06b99373cb3f3e9584f052b628beb8710a",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 926828647,
+    "source_bytes": 926422567,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5847,
-    "artifact_bytes": 927861871
+    "artifact_file_count": 5844,
+    "artifact_bytes": 927455257
   },
   "included_files": [
     {
@@ -22109,11 +22109,6 @@
       "sha256": "795682fd99dffdc45dfca55a898dfe16eceab31e54e5d6f4dd07a76e53128089"
     },
     {
-      "path": "reports/external_links_2026-09-18.json",
-      "bytes": 376392,
-      "sha256": "c0850cbf8104beb3276eb67f82441816e848b5dc9f199481e00ea65b9ded3043"
-    },
-    {
       "path": "reports/external_links_2026-09-24.json",
       "bytes": 504445,
       "sha256": "b2e00c92451fea5f1469f9a601087d150f97ec4102a349bd65e46dfbcd193b3f"
@@ -22122,16 +22117,6 @@
       "path": "reports/external_links_triage_2026-09-07.md",
       "bytes": 10743,
       "sha256": "da966b4e74ed6bb76e47593b0b959dbb88faf1a8447c7f8a4a9b789150fe7ee8"
-    },
-    {
-      "path": "reports/external_links_triage_2026-09-18.json",
-      "bytes": 22438,
-      "sha256": "9d4b99eeac59943d254dc53cb0c6c59310f2942bfc3215ce6b53c71f5e7e874d"
-    },
-    {
-      "path": "reports/external_links_triage_2026-09-18.md",
-      "bytes": 7250,
-      "sha256": "be5fdda2700721832b827045235129b55f4a3f2843fe766471cdc256986064e3"
     },
     {
       "path": "reports/external_links_triage_2026-09-24.json",
@@ -29305,8 +29290,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 478,
-    "bytes": 105034051,
+    "count": 481,
+    "bytes": 105440131,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
