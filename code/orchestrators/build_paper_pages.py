@@ -28,7 +28,6 @@ from docxology_tools.site_nav import (  # noqa: E402
     HEAD_EXTRAS,
     INTERACTIVE_SCRIPTS,
     MENU_ESC_SCRIPT,
-    breadcrumb_jsonld_script,
     clip_description,
     domain_page_href,
     render_breadcrumb,
