@@ -22,6 +22,7 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
+import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
 import build_domain_feeds  # noqa: E402
 from build_domain_pages import DOMAINS  # noqa: E402
 from docxology_tools.sitemap_policy import INDEX_PRIORITY_STATIC  # noqa: E402
@@ -162,7 +163,12 @@ def test_instantiated_renderer_matches_committed_feeds():
     """The committed feeds/ directory reflects the current generator output."""
     works = build_domain_feeds.load_works(REPO_ROOT)
     videos = build_domain_feeds.load_videos(REPO_ROOT)
-    expected = build_domain_feeds.render_all(works, videos)
+    dated = {
+        path.stem.removeprefix("domain-"): date
+        for path in sorted(REPO_ROOT.glob("feeds/domain-*.xml"))
+        if (date := build_domain_feeds.existing_last_build(path)) is not None
+    }
+    expected = build_domain_feeds.render_all(works, videos, existing_dates=dated)
     for rel, content in expected.items():
         on_disk = REPO_ROOT / rel
         assert on_disk.is_file(), f"missing committed feed: {rel}"

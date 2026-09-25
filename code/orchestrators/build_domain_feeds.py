@@ -191,7 +191,14 @@ def render_all(
         if existing_dates and config.slug in existing_dates:
             last_build = existing_dates[config.slug]
         else:
-            last_build = datetime.now(timezone.utc).replace(microsecond=0)
+            # Determinism contract (module docstring): renders must be
+            # byte-identical across runs, so lastBuildDate is data-derived
+            # (newest item pubDate) rather than a generation-time stamp.
+            last_build = (
+                max(datetime.fromisoformat(item["pub_date"]) for item in items)
+                if items
+                else datetime(1970, 1, 1, tzinfo=timezone.utc)
+            )
         outputs[Path(FEEDS_DIR) / f"domain-{config.slug}.xml"] = render_feed(
             config.slug, config.title, config.description, items, last_build
         )

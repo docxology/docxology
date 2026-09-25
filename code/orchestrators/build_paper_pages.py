@@ -208,7 +208,6 @@ def render_page(work: dict) -> str:
         {BREADCRUMB_CSS}
         .overview-box{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem;line-height:1.75;color:var(--text-secondary)}}
     </style>
-{breadcrumb_jsonld_script(breadcrumb_trail(work))}
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
