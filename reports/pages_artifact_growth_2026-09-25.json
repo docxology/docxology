@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-24T21:50:02Z",
-  "source_commit_at_generation": "23c8acb963e8fa8f206c4e066141e1e49cfaf2b6",
-  "artifact_file_count": 5866,
-  "artifact_bytes": 927796121,
+  "generated_at": "2026-09-25T13:57:44Z",
+  "source_commit_at_generation": "77dab7141bdf3df45a9c4e4dbf9664eb0adacdce",
+  "artifact_file_count": 5869,
+  "artifact_bytes": 927796535,
   "artifact_mib": 884.82,
   "warning_bytes": 933232640,
   "safety_ceiling_bytes": 943718400,
@@ -12,5 +12,7 @@
   "omitted_visual_qa_screenshot_count": 52,
   "omitted_visual_qa_screenshot_bytes": 111081789,
   "omitted_superseded_report_count": 487,
-  "omitted_superseded_report_bytes": 106443593
+  "omitted_superseded_report_bytes": 106443593,
+  "delta_bytes": 414,
+  "previous_report": "reports/pages_artifact_growth_2026-09-24.json"
 }
