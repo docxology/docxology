@@ -3,11 +3,14 @@
 
 One feed per domain slug in ``build_domain_pages.DOMAINS``. Items combine
 bibliography works (data/works.json) and videos (data/videos.json) whose
-topic links target that domain's hub page. Output is fully deterministic:
-dates come from the data (works carry only a year, so their pubDate is the
-first instant of that year), sorting is total, and no wall-clock time is
-consulted. Feeds are written through the shared generated-output writer so
-the release-boundary path validation applies.
+topic links target that domain's hub page. Item dates are deterministic:
+works carry only a year, so their pubDate is the first instant of that
+year, and sorting is total. <lastBuildDate> is the feed generation
+timestamp (UTC, RFC 2822) — mirroring feed.xml — so a rebuild marks a new
+publication event; in --check mode the on-disk lastBuildDate is reused so
+staleness comparison stays deterministic. Feeds are written through the
+shared generated-output writer so the release-boundary path validation
+applies.
 
 Discovery: like feed.xml, feeds are non-HTML XML assets. They are NOT added
 to the sitemap (NEW-3 precedent, 2026-08-28); discovery is via
@@ -20,10 +23,11 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import re
 import sys
-from email.utils import format_datetime
+from email.utils import format_datetime, parsedate_to_datetime
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code/orchestrators onto sys.path)
@@ -130,10 +134,9 @@ def domain_items(slug: str, works: list[dict]) -> list[dict]:
     return items[:MAX_ITEMS]
 
 
-def render_feed(slug: str, title: str, description: str, items: list[dict]) -> str:
+def render_feed(slug: str, title: str, description: str, items: list[dict], last_build: datetime) -> str:
     hub = f"{SITE_ORIGIN}domain-{slug}.html"
     self_url = f"{SITE_ORIGIN}{FEEDS_DIR}/domain-{slug}.xml"
-    last_build = max((item["pub_date"] for item in items), default="1970-01-01T00:00:00+00:00")
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<rss version="2.0">',
@@ -141,8 +144,8 @@ def render_feed(slug: str, title: str, description: str, items: list[dict]) -> s
         f"    <title>{h(title)} \u2014 RSS</title>",
         f"    <link>{h(hub)}</link>",
         f"    <description>{h(description)}</description>",
+        f"    <lastBuildDate>{h(format_datetime(last_build))}</lastBuildDate>",
         "    <language>en</language>",
-        f"    <lastBuildDate>{h(format_datetime(datetime.fromisoformat(last_build)))}</lastBuildDate>",
         f'    <atom:link href="{h(self_url)}" rel="self" type="application/rss+xml" xmlns:atom="http://www.w3.org/2005/Atom" />',
     ]
     for item in items:
@@ -161,28 +164,63 @@ def render_feed(slug: str, title: str, description: str, items: list[dict]) -> s
     return "\n".join(lines)
 
 
-def render_all(works: list[dict], videos: list[dict]) -> dict[Path, str]:
+def existing_last_build(path: Path) -> datetime | None:
+    """Parse the on-disk lastBuildDate so --check compares item content only."""
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return None
+    match = re.search(r"<lastBuildDate>([^<]+)</lastBuildDate>", text)
+    if not match:
+        return None
+    try:
+        return parsedate_to_datetime(match.group(1))
+    except (TypeError, ValueError):
+        return None
+
+
+def render_all(
+    works: list[dict],
+    videos: list[dict],
+    existing_dates: dict[str, datetime] | None = None,
+) -> dict[Path, str]:
     init_taxonomy(works, videos)
     outputs: dict[Path, str] = {}
     for config in DOMAINS:
         items = domain_items(config.slug, works)
+        if existing_dates and config.slug in existing_dates:
+            last_build = existing_dates[config.slug]
+        else:
+            last_build = datetime.now(timezone.utc).replace(microsecond=0)
         outputs[Path(FEEDS_DIR) / f"domain-{config.slug}.xml"] = render_feed(
-            config.slug, config.title, config.description, items
+            config.slug, config.title, config.description, items, last_build
         )
     return outputs
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Generate per-domain RSS feeds (deterministic).")
+    parser = argparse.ArgumentParser(description="Generate per-domain RSS feeds.")
     parser.add_argument("--check", action="store_true", help="Fail if on-disk feeds are stale.")
     parser.add_argument("--repo-root", type=Path, default=REPO_ROOT)
     args = parser.parse_args(argv)
     repo_root = args.repo_root.resolve()
     works = load_works(repo_root)
     videos = load_videos(repo_root)
+    outputs = render_all(works, videos)
+    if args.check:
+        # Reuse each on-disk lastBuildDate so the wall-clock generation stamp
+        # does not make an otherwise-current feed report stale (mirrors
+        # generate_feed.py's handling of feed.xml).
+        dated = {
+            path.stem.removeprefix("domain-"): date
+            for path in outputs
+            if (date := existing_last_build(repo_root / path)) is not None
+        }
+        if dated:
+            outputs = render_all(works, videos, existing_dates=dated)
     # Absolutize targets against --repo-root (not CWD) so the shared
     # generated-output writer/checker validates the intended tree.
-    expected = {repo_root / rel: content for rel, content in render_all(works, videos).items()}
+    expected = {repo_root / rel: content for rel, content in outputs.items()}
     if args.check:
         stale = stale_output_paths(expected, repo_root=repo_root)
         if stale:

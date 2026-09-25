@@ -15,6 +15,7 @@ import docxology_tools  # noqa: E402,F401  (canonical bootstrap: code/src + code
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SOURCE = REPO_ROOT / "CHANGELOG.md"
+THINKING_LOG = REPO_ROOT / "pages" / "THINKING_LOG.md"
 OUT = REPO_ROOT / "updates.html"
 
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
@@ -41,7 +42,9 @@ def strip_visual_emoji(value: str) -> str:
 
 def inline_md(value: str) -> str:
     escaped = h(strip_visual_emoji(value))
-    return re.sub(r"`([^`]+)`", r"<code>\1</code>", escaped)
+    escaped = re.sub(r"`([^`]+)`", r"<code>\1</code>", escaped)
+    escaped = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", r'<a href="\2">\1</a>', escaped)
+    return re.sub(r"\*([^*]+)\*", r"<em>\1</em>", escaped)
 
 
 def parse_changelog() -> list[dict]:
@@ -62,6 +65,21 @@ def parse_changelog() -> list[dict]:
     return sections
 
 
+THINKING_ENTRY_RE = re.compile(r"^- (\d{4}-\d{2}-\d{2}): (.+)$", re.M)
+
+
+def parse_thinking_log() -> list[dict]:
+    try:
+        text = THINKING_LOG.read_text(encoding="utf-8")
+    except OSError:
+        return []
+    return [
+        {"date": match.group(1), "item": match.group(2).strip()}
+        for match in THINKING_ENTRY_RE.finditer(text)
+        if match.group(2).strip()
+    ]
+
+
 def json_ld(sections: list[dict]) -> str:
     date_modified = sections[0]["date"] if sections else ""
     data = {
@@ -70,7 +88,7 @@ def json_ld(sections: list[dict]) -> str:
         "@id": "https://danielarifriedman.com/updates.html#webpage",
         "url": "https://danielarifriedman.com/updates.html",
         "name": "Updates — Daniel Ari Friedman",
-        "description": "Human-readable changelog for the docxology public research and software index.",
+        "description": "On-my-mind thinking updates and human-readable changelog for the docxology public research and software index.",
         "dateModified": date_modified,
         "isPartOf": {"@id": "https://danielarifriedman.com/#website"},
         "about": {"@id": "https://danielarifriedman.com/#person"},
@@ -93,6 +111,23 @@ def json_ld(sections: list[dict]) -> str:
 def render() -> str:
     footer_stamp = footer_build_stamp_html()
     sections = parse_changelog()
+    thinking = parse_thinking_log()
+    mind_band = ""
+    if thinking:
+        cards = "\n".join(
+            f"""                <article class="update-card">
+                    <h2>{h(entry['date'])}</h2>
+                    <ul><li>{inline_md(entry['item'])}</li></ul>
+                </article>"""
+            for entry in thinking
+        )
+        mind_band = (
+            '<section class="section" aria-labelledby="on-my-mind-heading">'
+            '<h2 class="section-title" id="on-my-mind-heading">On my mind</h2>'
+            '<div class="updates-list">\n'
+            + cards
+            + "\n    </div></section>\n    "
+        )
     body = "\n".join(
         f"""            <article class="update-card">
                 <h2>{h(section['date'])}</h2>
@@ -106,7 +141,7 @@ def render() -> str:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Updates — Daniel Ari Friedman</title>
-    <meta name="description" content="Human-readable updates for the docxology public research, software, citation, evidence, and discovery index.">
+    <meta name="description" content="On-my-mind thinking updates alongside human-readable updates for the docxology public research, software, citation, evidence, and discovery index.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/updates.html">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -117,7 +152,7 @@ def render() -> str:
     {HEAD_EXTRAS}
     <meta property="og:type" content="website">
     <meta property="og:title" content="Updates — Daniel Ari Friedman">
-    <meta property="og:description" content="Recent changes to the public research and software index.">
+    <meta property="og:description" content="Recent thinking and recent changes to the public research and software index.">
     <meta property="og:url" content="https://danielarifriedman.com/updates.html">
     <meta property="og:image" content="https://danielarifriedman.com/og-discovery.jpg">
     <meta property="og:image:width" content="1200">
@@ -125,7 +160,7 @@ def render() -> str:
     <meta property="og:image:alt" content="Updates — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Updates — Daniel Ari Friedman">
-    <meta name="twitter:description" content="Recent changes to the public research and software index.">
+    <meta name="twitter:description" content="Recent thinking and recent changes to the public research and software index.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-discovery.jpg">
     <meta name="twitter:image:alt" content="Updates — Daniel Ari Friedman">
     <link rel="stylesheet" href="style.css?v=newspaper-glitch-20260530c">
@@ -144,7 +179,7 @@ def render() -> str:
     </nav>
 {render_breadcrumb(_BREADCRUMB)}
     <header class="page-hero"><h1>Updates</h1><p class="sub">Recent changes to the public research, software, citation, evidence, and discovery index.</p></header>
-    <main id="main" class="main"><section class="section"><div class="updates-list">
+    <main id="main" class="main">{mind_band}<section class="section"><div class="updates-list">
 {body}
     </div></section></main>
     <footer role="contentinfo"><div class="footer-rule" aria-hidden="true"></div><p>Daniel Ari Friedman, PhD · <a href="CHANGELOG.md">CHANGELOG.md</a> · <a href="feed.xml">RSS feed</a></p>{footer_stamp}</footer>

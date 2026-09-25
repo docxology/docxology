@@ -30,6 +30,7 @@ from docxology_tools.site_nav import (  # noqa: E402
     INTERACTIVE_SCRIPTS,
     MENU_ESC_SCRIPT,
     REL_ME_LINKS,
+    breadcrumb_jsonld_script,
     render_nav,
 )
 
@@ -80,7 +81,6 @@ def render() -> str:
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Page Not Found — Daniel Ari Friedman">
     <meta name="twitter:image:alt" content="Page Not Found — Daniel Ari Friedman">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="stylesheet" href="/style.css?v=newspaper-glitch-20260530c">
     <meta name="theme-color" content="#0c0c0e">
     <style>
@@ -99,6 +99,7 @@ def render() -> str:
     <script type="application/ld+json">
 {{"@context": "https://schema.org", "@type": "WebPage", "name": "Page Not Found", "url": "https://danielarifriedman.com/404.html"}}
     </script>
+{breadcrumb_jsonld_script([("Home", ""), ("Page Not Found", "404.html")])}
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>

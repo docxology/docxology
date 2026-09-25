@@ -23,7 +23,17 @@ from docxology_tools.generated_outputs import (  # noqa: E402
     write_output_texts,
 )
 from docxology_tools.build_stamp import footer_build_stamp_html  # noqa: E402
-from docxology_tools.site_nav import HEAD_EXTRAS, INTERACTIVE_SCRIPTS, MENU_ESC_SCRIPT, clip_description, domain_page_href, render_nav  # noqa: E402
+from docxology_tools.site_nav import (  # noqa: E402
+    BREADCRUMB_CSS,
+    HEAD_EXTRAS,
+    INTERACTIVE_SCRIPTS,
+    MENU_ESC_SCRIPT,
+    breadcrumb_jsonld_script,
+    clip_description,
+    domain_page_href,
+    render_breadcrumb,
+    render_nav,
+)
 
 
 def h(value: object) -> str:
@@ -142,6 +152,15 @@ def works_canonical(work: dict) -> str:
     return f"https://danielarifriedman.com/works/{work['citation_key']}.html"
 
 
+def breadcrumb_trail(work: dict) -> list[tuple[str, str]]:
+    """Root-relative (label, path) breadcrumb for one paper-folder landing page."""
+    return [
+        ("Home", ""),
+        ("Works", "works/"),
+        (work["title"], f"works/{work['citation_key']}.html"),
+    ]
+
+
 def render_page(work: dict) -> str:
     footer_stamp = footer_build_stamp_html()
     docs_path = str(work["docs_path"]).rstrip("/")
@@ -186,12 +205,15 @@ def render_page(work: dict) -> str:
         .artifact-card strong{{display:block;color:var(--gold);margin-bottom:.25rem}}
         .artifact-card ul{{margin-left:1.1rem}}
         .muted{{color:var(--text-muted);font-size:.86rem}}
+        {BREADCRUMB_CSS}
         .overview-box{{background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:1.15rem;line-height:1.75;color:var(--text-secondary)}}
     </style>
+{breadcrumb_jsonld_script(breadcrumb_trail(work))}
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
 {render_nav(active="works", depth=2)}
+{render_breadcrumb(breadcrumb_trail(work), depth=2)}
     <header class="paper-hero">
         <p class="eyebrow">{domain_label} · {h(work['type'])} · {h(work['year'])}</p>
         <h1>{h(work['title'])}</h1>

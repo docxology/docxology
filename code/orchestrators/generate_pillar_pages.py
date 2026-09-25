@@ -59,10 +59,10 @@ def render_page(
     footer_stamp = footer_build_stamp_html()
     from docxology_tools.title_policy import clip_title  # noqa: PLC0415
 
-    # SERP title budget: <title>, og:title, twitter:title, and the JSON-LD
-    # headline all render from this string, so it is clipped once here. The
-    # on-page <h1> stays full-length via h1_text.
-    title = clip_title(title)
+    # SERP title budget: only the <title> element carries the clipped form.
+    # og:title, twitter:title, and the JSON-LD headline carry the full title;
+    # the on-page <h1> stays full-length via h1_text.
+    serp_title = clip_title(title)
     canonical_url = f"https://danielarifriedman.com/{filename}"
     faq_items = [
         {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}
@@ -115,6 +115,7 @@ def render_page(
 
     return render_pillar_head(
         title=title,
+        serp_title=serp_title,
         description=description,
         canonical_path=filename,
         og_image=og_image,

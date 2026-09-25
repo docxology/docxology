@@ -250,9 +250,15 @@ def page_head(
     nav_active: str = "domains",
     breadcrumb: list[tuple[str, str]] | None = None,
     extra_jsonld: list[dict] | None = None,
+    domain_feed: str | None = None,
 ) -> str:
     nav = render_nav_domain(active=nav_active)
     blocks = list(extra_jsonld or [])
+    feed_link_html = (
+        f'    <link rel="alternate" type="application/rss+xml" href="https://danielarifriedman.com/feeds/domain-{domain_feed}.xml" title="{h(title)} — RSS">\n'
+        if domain_feed
+        else ""
+    )
     crumb_css = ""
     crumb_html = ""
     if breadcrumb:
@@ -277,6 +283,7 @@ def page_head(
     <link rel="manifest" href="/manifest.json">
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs.txt">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Daniel Ari Friedman updates">
+{feed_link_html}
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Daniel Ari Friedman">
     <link rel="alternate" type="application/json" href="/search-index.json" title="Site search index">
 {HEAD_EXTRAS}
@@ -466,6 +473,7 @@ def render_domain_page(
             f"og-{config.slug}.jpg",
             breadcrumb=breadcrumb,
             extra_jsonld=[collection_ld],
+            domain_feed=config.slug,
         )
         + f"""
     <header class="domain-hero">
@@ -589,6 +597,16 @@ def render_domains_index(works: list[dict], repos: list[dict]) -> str:
             <div class="mini-grid">
 {chr(10).join(cards)}
             </div>
+        </section>
+        <section class="section section-alt">
+            <div class="section-header">
+                <h2>Per-Domain RSS Feeds</h2>
+                <p>One RSS 2.0 feed per research domain, each carrying that domain's newest works and videos.</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="mini-card"><ul>
+{chr(10).join(f'                    <li><a href="feeds/domain-{config.slug}.xml">{h(config.title)} — RSS</a></li>' for config in DOMAINS)}
+            </ul></div>
         </section>
         <p class="text-center mt-2">
             <a href="publications.html" class="btn btn-gold">Bibliography</a>

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Rewrite software.html repo grids and data/software-ld.json from pages/SOFTWARE.md.
+Rewrite software.html shared nav, repo grids, and data/software-ld.json from pages/SOFTWARE.md.
 
 Usage:
     python3 sync_software_html.py           # dry-run: validate counts only
@@ -40,6 +40,7 @@ from docxology_tools.collection_jsonld import (  # noqa: E402
 )
 from docxology_tools.count_consistency import parse_software_catalog_counts  # noqa: E402
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+from docxology_tools.site_nav import render_nav  # noqa: E402
 
 SOFTWARE_HTML = REPO_ROOT / "software.html"
 SOFTWARE_LD_JSON = REPO_ROOT / "data" / "software-ld.json"
@@ -54,8 +55,11 @@ AII_GRID_BEGIN = "<!-- <SOFTWARE_AII_GRID_BEGIN> -->"
 AII_GRID_END = "<!-- <SOFTWARE_AII_GRID_END> -->"
 DOCX_FOOTER_BEGIN = "<!-- <SOFTWARE_DOCX_FOOTER_BEGIN> -->"
 DOCX_FOOTER_END = "<!-- <SOFTWARE_DOCX_FOOTER_END> -->"
+SHARED_NAV_BEGIN = "<!-- <SOFTWARE_SHARED_NAV_BEGIN> -->"
+SHARED_NAV_END = "<!-- <SOFTWARE_SHARED_NAV_END> -->"
 SOFTWARE_TEMPLATE_TOKENS = (
     "{{SOFTWARE_INLINE_LD}}",
+    "{{SOFTWARE_SHARED_NAV}}",
     "{{SOFTWARE_DOCX_GRID}}",
     "{{SOFTWARE_AII_GRID}}",
     "{{SOFTWARE_DOCX_FOOTER}}",
@@ -347,6 +351,9 @@ def render_outputs_from_template(
 
     collection = build_collection_page(rows)
     html_out = replace_inline_collection_ld(html_template, collection)
+    html_out = replace_between_markers(
+        html_out, SHARED_NAV_BEGIN, SHARED_NAV_END, render_nav(active="software")
+    )
     html_out = replace_head_meta(html_out, len(docx), len(aii), github_counts)
     html_out = replace_between_markers(html_out, DOCX_GRID_BEGIN, DOCX_GRID_END, render_docx_grid(docx))
     html_out = replace_between_markers(html_out, AII_GRID_BEGIN, AII_GRID_END, render_aii_grid(aii))

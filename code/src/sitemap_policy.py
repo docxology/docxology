@@ -23,6 +23,10 @@ INDEX_PRIORITY_STATIC: list[tuple[str, str, str]] = [
     ("domain-art-synergetics.html", "monthly", "0.7"),
     ("domain-computational.html", "monthly", "0.7"),
     ("domain-biomedicine.html", "monthly", "0.7"),
+    ("start-here.html", "monthly", "0.7"),
+    ("domain-aii-ecosystem.html", "monthly", "0.7"),
+    ("domain-presentations-media.html", "monthly", "0.7"),
+    ("projections.html", "monthly", "0.7"),
     ("art.html", "weekly", "0.9"),
     # NEW (2026-09-24): the artwork pages are the crawlable art surface; the
     # individual artworks/*.html URLs are appended data-driven by

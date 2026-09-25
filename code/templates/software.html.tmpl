@@ -79,23 +79,11 @@
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
 
-    <nav role="navigation" aria-label="Main navigation">
-        <a href="index.html" class="nav-logo">Daniel Ari Friedman</a>
-        <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">☰</button>
-        <div class="nav-links">
-            <a href="index.html#about">About</a>
-            <a href="index.html#research">Research</a>
-            <a href="publications.html">Publications</a>
-            <a href="domains.html">Domains</a>
-            <a href="discovery.html">Discovery</a>
-            <a href="repositories.html">Repository Inventory</a>
-            <a href="index.html#art">Art</a>
-            <a href="media.html">Media</a>
-            <a href="index.html#teaching">Teaching</a>
-            <a href="index.html#connect">Connect</a>
-            <a href="data/agent-index.json">Agent Map</a>
-        </div>
-    </nav>
+    <!-- Shared manifest nav via code/src/site_nav.py render_nav(active="software"),
+         substituted between these markers by code/orchestrators/sync_software_html.py -->
+    <!-- <SOFTWARE_SHARED_NAV_BEGIN> -->
+{{SOFTWARE_SHARED_NAV}}
+    <!-- <SOFTWARE_SHARED_NAV_END> -->
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ol><li><a href="index.html">Home</a></li><li aria-current="page">Software</li></ol>
     </nav>
@@ -134,9 +122,14 @@
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="publications.html">Publications</a>
+            <a href="works/">Works</a>
             <a href="domains.html">Domains</a>
             <a href="discovery.html">Discovery</a>
             <a href="repositories.html">Repository Inventory</a>
+            <a href="art.html">Art</a>
+            <a href="media.html">Media</a>
+            <a href="search.html">Search</a>
+            <a href="catalog.html">Data Catalog</a>
             <a href="collaborators.html">Collaborators</a>
             <a href="https://github.com/docxology/docxology/blob/main/pages/SOFTWARE.md">Raw Markdown</a>
         </div>

@@ -168,6 +168,7 @@ def render_pillar_head(
     og_image: str,
     style: str,
     jsonld: dict,
+    serp_title: str | None = None,
 ) -> str:
     """Render the shared security/SEO head for a root-level pillar page.
 
@@ -175,9 +176,14 @@ def render_pillar_head(
     their essential metadata to client JavaScript.  This renderer keeps their
     CSP, referrer policy, rel=me links, canonical, social metadata, and JSON-LD
     in the same shared layer as other generated public pages.
+
+    ``serp_title`` (when given) is used only for the <title> element so the
+    SERP budget clip can differ from the full-length title carried by
+    og:title, twitter:title, and the JSON-LD headline.
     """
     canonical = f"{SITE_ORIGIN}{canonical_path.lstrip('/')}"
     escaped_title = html.escape(title, quote=True)
+    escaped_serp_title = html.escape(serp_title or title, quote=True)
     escaped_description = html.escape(description, quote=True)
     image_url = f"{SITE_ORIGIN}{og_image.lstrip('/')}"
     jsonld_text = json.dumps(jsonld, indent=4, ensure_ascii=False)
@@ -186,7 +192,7 @@ def render_pillar_head(
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{escaped_title}</title>
+    <title>{escaped_serp_title}</title>
     <meta name="description" content="{escaped_description}">
     <meta name="author" content="Daniel Ari Friedman">
     <meta name="robots" content="index, follow">
@@ -360,6 +366,7 @@ def nav_manifest(depth: int = 0) -> tuple[list[tuple[str, str, str, str]], list[
         ("about", f"{home}#about", "About", ""),
         ("research", f"{home}#research", "Research", ""),
         ("media", f"{prefix}media.html", "Media", ""),
+        ("projections", f"{prefix}projections.html", "Projections", ""),
         ("collaborators", f"{prefix}collaborators.html", "Collaborators", ""),
         ("resume", f"{prefix}resume/resume.html", "CV", ""),
         ("search", f"{prefix}search.html", "Search", ""),

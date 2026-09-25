@@ -712,6 +712,8 @@ def render_work_page(work: dict) -> str:
 
 
 def render_index(works: list[dict]) -> str:
+    years = sorted({int(str(w.get("year", "")).strip()[:4]) for w in works if str(w.get("year", "")).strip()[:4].isdigit()})
+    min_year, max_year = (years[0], years[-1]) if years else ("", "")
     rows = "\n".join(
         f"""                <article class="work-row">
                     <div class="year">{h(w['year'])}</div>
@@ -738,7 +740,7 @@ def render_index(works: list[dict]) -> str:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Works Index — Daniel Ari Friedman</title>
-    <meta name="description" content="Browse {len(works)} per-work pages: papers, books, courses, and presentations across Active Inference, computational biology, cognitive security, entomology, and art — each with DOI, citation tools, and related works.">
+    <meta name="description" content="Browse {len(works)} per-work pages — the paper trail of a longitudinal thinking practice: papers, books, courses, and presentations across Active Inference, computational biology, cognitive security, entomology, and art, each with DOI, citation tools, and related works.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://danielarifriedman.com/works/">
     <link rel="stylesheet" href="../style.css?v=newspaper-glitch-20260530c">
@@ -748,7 +750,7 @@ def render_index(works: list[dict]) -> str:
 {HEAD_EXTRAS}
     <meta property="og:type" content="website">
     <meta property="og:title" content="Works Index — Daniel Ari Friedman">
-    <meta property="og:description" content="Browse {len(works)} per-work pages: papers, books, courses, and presentations across Active Inference, computational biology, cognitive security, entomology, and art — each with DOI, citation tools, and related works.">
+    <meta property="og:description" content="Browse {len(works)} per-work pages — the paper trail of a longitudinal thinking practice: papers, books, courses, and presentations across Active Inference, computational biology, cognitive security, entomology, and art, each with DOI, citation tools, and related works.">
     <meta property="og:url" content="https://danielarifriedman.com/works/">
     <meta property="og:site_name" content="Daniel Ari Friedman">
     <meta property="og:image" content="https://danielarifriedman.com/og-publications.jpg">
@@ -757,7 +759,7 @@ def render_index(works: list[dict]) -> str:
     <meta property="og:image:alt" content="Works Index — Daniel Ari Friedman">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Works Index — Daniel Ari Friedman">
-    <meta name="twitter:description" content="Browse {len(works)} per-work pages: papers, books, courses, and presentations across Active Inference, computational biology, cognitive security, entomology, and art — each with DOI, citation tools, and related works.">
+    <meta name="twitter:description" content="Browse {len(works)} per-work pages — the paper trail of a longitudinal thinking practice: papers, books, courses, and presentations across Active Inference, computational biology, cognitive security, entomology, and art, each with DOI, citation tools, and related works.">
     <meta name="twitter:image" content="https://danielarifriedman.com/og-publications.jpg">
     <meta name="twitter:image:alt" content="Works Index — Daniel Ari Friedman">
     <script type="application/ld+json">
@@ -785,7 +787,7 @@ def render_index(works: list[dict]) -> str:
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
 {render_nav(active="works", depth=1)}
-    <header class="page-hero"><h1>Works Index</h1><p class="sub">{len(works)} generated landing pages for the unified bibliography.</p></header>
+    <header class="page-hero"><h1>Works Index</h1><p class="sub">{len(works)} per-work pages — the paper trail of a thinking practice: versioned deposits from {min_year} to {max_year}, preserving beliefs held, positions updated, and wrong turns along the way.</p></header>
     <main id="main" class="main"><section class="section"><div class="work-list">
 {rows}
     </div></section></main>

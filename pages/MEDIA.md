@@ -10,7 +10,7 @@ keywords: "Daniel Ari Friedman, active inference, MEDIA"
 > **Navigation**: [🏠 Home](../README.md) | [📚 Bibliography](BIBLIOGRAPHY.md) | [💻 Software](SOFTWARE.md) | [🔗 Links](LINKS.md) | [🧭 Discovery](DISCOVERY.md) | [👤 Profile](PROFILE.md) | [🤝 Collaborators](COLLABORATORS.md) | [🎥 Media](MEDIA.md) | [📺 Videos](VIDEOS.md) | [📦 Resources](RESOURCES.md) | [📖 Wikipedia](WIKIPEDIA.md)
 
 
-**Podcasts, conference presentations, video series, and press for Daniel Ari Friedman, PhD**
+**The public stream — an ongoing record of thinking out loud: 500+ hosted and recorded sessions, plus invited talks, interviews, and press for Daniel Ari Friedman, PhD**
 
 </div>
 
