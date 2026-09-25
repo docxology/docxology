@@ -65,6 +65,168 @@
       "kind": "collection"
     },
     {
+      "id": "start-here",
+      "path": "/start-here.html",
+      "format": "text/html",
+      "kind": "profile"
+    },
+    {
+      "id": "media",
+      "path": "/media.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "collaborators",
+      "path": "/collaborators.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "repositories-forks",
+      "path": "/repositories-forks.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "cite-verify",
+      "path": "/cite-verify.html",
+      "format": "text/html",
+      "kind": "verification"
+    },
+    {
+      "id": "reproducibility",
+      "path": "/reproducibility.html",
+      "format": "text/html",
+      "kind": "reproducibility-ledger"
+    },
+    {
+      "id": "resume-verify",
+      "path": "/resume/verify.html",
+      "format": "text/html",
+      "kind": "verification"
+    },
+    {
+      "id": "pillar-active-inference",
+      "path": "/active-inference.html",
+      "format": "text/html",
+      "kind": "explainer"
+    },
+    {
+      "id": "pillar-cognitive-security",
+      "path": "/cognitive-security.html",
+      "format": "text/html",
+      "kind": "explainer"
+    },
+    {
+      "id": "pillar-computational-entomology",
+      "path": "/computational-entomology.html",
+      "format": "text/html",
+      "kind": "explainer"
+    },
+    {
+      "id": "pillar-insect-cognition",
+      "path": "/insect-cognition.html",
+      "format": "text/html",
+      "kind": "explainer"
+    },
+    {
+      "id": "pillar-neurosymbolic-ai",
+      "path": "/neurosymbolic-ai.html",
+      "format": "text/html",
+      "kind": "explainer"
+    },
+    {
+      "id": "domain-entomology",
+      "path": "/domain-entomology.html",
+      "format": "text/html",
+      "kind": "taxonomy"
+    },
+    {
+      "id": "domain-active-inference",
+      "path": "/domain-active-inference.html",
+      "format": "text/html",
+      "kind": "taxonomy"
+    },
+    {
+      "id": "domain-cognitive-security",
+      "path": "/domain-cognitive-security.html",
+      "format": "text/html",
+      "kind": "taxonomy"
+    },
+    {
+      "id": "domain-aii-ecosystem",
+      "path": "/domain-aii-ecosystem.html",
+      "format": "text/html",
+      "kind": "taxonomy"
+    },
+    {
+      "id": "domain-art-synergetics",
+      "path": "/domain-art-synergetics.html",
+      "format": "text/html",
+      "kind": "taxonomy"
+    },
+    {
+      "id": "domain-biomedicine",
+      "path": "/domain-biomedicine.html",
+      "format": "text/html",
+      "kind": "taxonomy"
+    },
+    {
+      "id": "domain-computational",
+      "path": "/domain-computational.html",
+      "format": "text/html",
+      "kind": "taxonomy"
+    },
+    {
+      "id": "domain-presentations-media",
+      "path": "/domain-presentations-media.html",
+      "format": "text/html",
+      "kind": "taxonomy"
+    },
+    {
+      "id": "artworks",
+      "path": "/artworks/",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "art-collection-neuroscience-molecular-biology",
+      "path": "/art-collections/neuroscience-molecular-biology.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "art-collection-sacred-geometry-kabbalistic-triangles",
+      "path": "/art-collections/sacred-geometry-kabbalistic-triangles.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "art-collection-active-inference",
+      "path": "/art-collections/active-inference.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "art-collection-americana-seals",
+      "path": "/art-collections/americana-seals.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "art-collection-collective-behavior-ants",
+      "path": "/art-collections/collective-behavior-ants.html",
+      "format": "text/html",
+      "kind": "collection"
+    },
+    {
+      "id": "projections",
+      "path": "/projections.html",
+      "format": "text/html",
+      "kind": "profile"
+    },
+    {
       "id": "search",
       "path": "/search.html",
       "format": "text/html",
@@ -257,7 +419,7 @@
     },
     {
       "id": "accessibility",
-      "path": "/reports/accessibility_static_2026-09-24.json",
+      "path": "/reports/accessibility_static_2026-09-25.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1164,11 +1326,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 926759641,
+        "source_bytes": 927105504,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5869,
-        "artifact_bytes": 927796535
+        "artifact_file_count": 5868,
+        "artifact_bytes": 928142432
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5605,7 +5767,7 @@
     "artworks": "32bd21124bd391638295aac6bad7a0621746c296695e10b0586351ca4069f6c3",
     "videos": "57a2b9b18f2dc17fa73865d72c70babe149fda625d3823c2c63be0e92b63171e",
     "videos_index": "4f4d6f4b11da4698726e654d5e32308fb794cc5771943e1eb1e6cae0f2e7b5d7",
-    "search": "02dc53874f9b21e1a91949f4e04f34ca00937e6f91e54c0f557e04680a9838d4",
+    "search": "2b4465cf8a4e8a2e1c62a4b423071d3675cfa312c16be226b314352045a5909e",
     "claims": "cc0378601b69c09833af27320a241803b207a5a4b5e0d6745dc4c1d49890f7be",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "2aac9b09a4835a29b2139a2b5163cb624b48930619608126324a8f8eacc42d1b",
@@ -5614,10 +5776,10 @@
     "organizations": "dd1e621e72293aacf29590471fc693d7f318f7d3f1b062d4e3e90923bb390a5b",
     "resume": "cf5e591ed944e899bf8ae1b1b766bac28bb4a137402ab6dcd135e8142aae9590",
     "work_enrichment": "8a71a4a82d7df44f05b551821738d8e1597b48fad231e71360e6f4c78129a26c",
-    "catalog": "4a18c3637932a20015173ee9f6a2564627b5d76fd36ee2b3945d254a1061f968",
+    "catalog": "9e8c63ea4c14abf06483db30e56dd74e2ac9f7e156fd03f666c491770ce5dc90",
     "reconciliation": "e819f32f635abfbb4d66ed65901cbc7c8ff295b1a6e51e1735d757dae17a1a39",
     "reproducibility": "89f9728748936924f010d283fca7ade580014bfce4e5ef5be4c1d69d45c8a319",
-    "generated_manifest": "89d0f6f9cd272428a23856733ced0f868eadb97f0c72b4736dc570b58fcb4234",
+    "generated_manifest": "8ca61a6a1970ab3d53aaadc60654e2e478985bad546587c1beec142fd8c826ad",
     "current_counts": "eba4d5a501f288231ed3235bb146b434ee9df0ae5c0fdadd6f2eb71e0acb4c48"
   },
   "source_provenance": {

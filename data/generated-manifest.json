@@ -266,7 +266,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-09-24.json"
+        "reports/pages_artifact_growth_2026-09-25.json"
       ],
       "sources": [
         "tracked repository files",
@@ -653,7 +653,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-09-24.json"
+        "reports/accessibility_static_2026-09-25.json"
       ],
       "sources": [
         "root HTML pages",
