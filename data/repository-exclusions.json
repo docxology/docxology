@@ -943,6 +943,56 @@
       "note": "Public fork created 2026-09-16 with no catalog role; excluded by the standing fork policy, not by an individual review.",
       "github_id": 1373700592,
       "github_node_id": "R_kgDOUeEB8A"
+    },
+    {
+      "full_name": "docxology/bend",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-25",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-18 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1375199521,
+      "github_node_id": "R_kgDOUffhIQ"
+    },
+    {
+      "full_name": "docxology/graphcoder",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-25",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-24 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1385745614,
+      "github_node_id": "R_kgDOUpjMzg"
+    },
+    {
+      "full_name": "docxology/leanchess",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-25",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-23 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1384013100,
+      "github_node_id": "R_kgDOUn5dLA"
+    },
+    {
+      "full_name": "docxology/Moonkale",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-25",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-23 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1384327758,
+      "github_node_id": "R_kgDOUoMqTg"
+    },
+    {
+      "full_name": "docxology/observer-patch-holography",
+      "reason": "fork_not_curated",
+      "reviewed_by": "standing_policy",
+      "reviewed_at": "2026-09-25",
+      "policy_source": "principal decision 2026-08-26 (TODO.md DOC-005): public forks stay fork_not_curated",
+      "note": "Public fork created 2026-09-22 with no catalog role; excluded by the standing fork policy, not by an individual review.",
+      "github_id": 1381827372,
+      "github_node_id": "R_kgDOUl0DLA"
     }
   ]
 }

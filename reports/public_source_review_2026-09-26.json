@@ -57,9 +57,9 @@
       "source_commit": "fcf7a748a3498a37fb46430691c0cfe11cd8db22"
     },
     "repository_classification": {
-      "generated_at": "2026-09-24T19:55:55Z",
+      "generated_at": "2026-09-26T01:17:51Z",
       "path": "data/repository-classification.json",
-      "sha256": "93a0601ab45a3e5045709ae1aee449e369b42e0b6c11c22991648adf82b59aa5",
+      "sha256": "782da5e4f884230dd1285dc143104427ab17a433c12909b8a5ae0cf1dc17a31a",
       "source_commit": null
     },
     "scholar_snapshot": {
@@ -2428,6 +2428,25 @@
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
+        "full_name": "docxology/Moonkale",
+        "html_url": "https://github.com/docxology/Moonkale",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/Moonkale",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
         "full_name": "docxology/ODEM",
         "html_url": "https://github.com/docxology/ODEM",
         "review_status": "acknowledged"
@@ -2865,6 +2884,25 @@
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
+        "full_name": "docxology/bend",
+        "html_url": "https://github.com/docxology/bend",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/bend",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
         "full_name": "docxology/cogames",
         "html_url": "https://github.com/docxology/cogames",
         "review_status": "acknowledged"
@@ -3150,6 +3188,25 @@
         "catalog_role": "acknowledged_not_curated",
         "exclusion_reason": "fork_not_curated",
         "fork": true,
+        "full_name": "docxology/graphcoder",
+        "html_url": "https://github.com/docxology/graphcoder",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/graphcoder",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
         "full_name": "docxology/herdr",
         "html_url": "https://github.com/docxology/herdr",
         "review_status": "acknowledged"
@@ -3278,6 +3335,25 @@
     },
     {
       "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/leanchess",
+        "html_url": "https://github.com/docxology/leanchess",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/leanchess",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
         "acknowledged_reason": "profile_infrastructure",
         "archived": false,
         "catalog_role": "acknowledged_not_curated",
@@ -3384,6 +3460,25 @@
       },
       "category": "repository_classification",
       "id": "repository:docxology/nvmath-python",
+      "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
+      "sources": [
+        "data/repository-classification.json"
+      ],
+      "status": "applied"
+    },
+    {
+      "candidate": {
+        "acknowledged_reason": "fork_not_curated",
+        "archived": false,
+        "catalog_role": "acknowledged_not_curated",
+        "exclusion_reason": "fork_not_curated",
+        "fork": true,
+        "full_name": "docxology/observer-patch-holography",
+        "html_url": "https://github.com/docxology/observer-patch-holography",
+        "review_status": "acknowledged"
+      },
+      "category": "repository_classification",
+      "id": "repository:docxology/observer-patch-holography",
       "reason": "A recorded classification or acknowledged exclusion is retained; this report does not alter catalog membership.",
       "sources": [
         "data/repository-classification.json"
@@ -3927,25 +4022,6 @@
         "acknowledged_reason": "",
         "archived": false,
         "catalog_role": "not_curated",
-        "exclusion_reason": "fork_not_curated",
-        "fork": true,
-        "full_name": "docxology/Moonkale",
-        "html_url": "https://github.com/docxology/Moonkale",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/Moonkale",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
         "exclusion_reason": "primary_repo_requires_manual_review",
         "fork": false,
         "full_name": "docxology/OmniLatticeTextbook",
@@ -3954,82 +4030,6 @@
       },
       "category": "repository_classification",
       "id": "repository:docxology/OmniLatticeTextbook",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "fork_not_curated",
-        "fork": true,
-        "full_name": "docxology/bend",
-        "html_url": "https://github.com/docxology/bend",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/bend",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "fork_not_curated",
-        "fork": true,
-        "full_name": "docxology/graphcoder",
-        "html_url": "https://github.com/docxology/graphcoder",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/graphcoder",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "fork_not_curated",
-        "fork": true,
-        "full_name": "docxology/leanchess",
-        "html_url": "https://github.com/docxology/leanchess",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/leanchess",
-      "reason": "The repository remains outside the curated catalog pending a human classification decision.",
-      "sources": [
-        "data/repository-classification.json"
-      ],
-      "status": "deferred"
-    },
-    {
-      "candidate": {
-        "acknowledged_reason": "",
-        "archived": false,
-        "catalog_role": "not_curated",
-        "exclusion_reason": "fork_not_curated",
-        "fork": true,
-        "full_name": "docxology/observer-patch-holography",
-        "html_url": "https://github.com/docxology/observer-patch-holography",
-        "review_status": "defer"
-      },
-      "category": "repository_classification",
-      "id": "repository:docxology/observer-patch-holography",
       "reason": "The repository remains outside the curated catalog pending a human classification decision.",
       "sources": [
         "data/repository-classification.json"
@@ -16288,41 +16288,26 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "f929b17dfb2b4e8eb709ed443ce68f91e76bfac5",
-  "source_tree_sha": "c2d46c779b681ff103615da99cc7886bb2197dd3",
+  "source_commit": "08d123d916f987c7f1099b1b4198a225cfc2ae9f",
+  "source_tree_sha": "5d0d7a6e62343e7051f4e3242036a48c016049e9",
   "source_worktree_clean": false,
   "source_worktree_dirty_paths": [
     "CHANGELOG.md",
-    "active-inference.html",
     "catalog.html",
-    "cognitive-security.html",
-    "computational-entomology.html",
     "data/catalog.json",
+    "data/repository-classification.json",
+    "data/repository-exclusions.json",
     "discovery.html",
-    "domain-active-inference.html",
-    "domain-aii-ecosystem.html",
-    "domain-art-synergetics.html",
-    "domain-biomedicine.html",
-    "domain-cognitive-security.html",
-    "domain-computational.html",
-    "domain-entomology.html",
-    "domain-presentations-media.html",
-    "domains.html",
-    "insect-cognition.html",
     "llms.txt",
-    "neurosymbolic-ai.html",
     "pages/DISCOVERY.md",
-    "pages/SOFTWARE.md",
-    "pages/THINKING_LOG.md",
     "search-index-content-video.json",
     "search-index-content-work.json",
     "search-index-core.json",
     "search-index.json",
-    "sitemap.xml",
     "updates.html"
   ],
   "summary": {
-    "applied": 274,
+    "applied": 279,
     "categories": {
       "ambiguous_doi_change": {
         "applied": 64,
@@ -16340,8 +16325,8 @@
         "rejected": 0
       },
       "repository_classification": {
-        "applied": 103,
-        "deferred": 11,
+        "applied": 108,
+        "deferred": 6,
         "rejected": 0
       },
       "scholar_metric_change": {
@@ -16355,7 +16340,7 @@
         "rejected": 317
       }
     },
-    "deferred": 82,
+    "deferred": 77,
     "items": 673,
     "rejected": 317,
     "review_required": true

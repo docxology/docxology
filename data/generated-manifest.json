@@ -266,7 +266,7 @@
       "outputs": [
         "bounded _site/ deployment projection",
         "data/pages-artifact-manifest.json",
-        "reports/pages_artifact_growth_2026-09-25.json"
+        "reports/pages_artifact_growth_2026-09-26.json"
       ],
       "sources": [
         "tracked repository files",
@@ -578,7 +578,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-09-24.json"
+        "reports/external_links_2026-09-25.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -608,8 +608,8 @@
     {
       "name": "Public-source review record",
       "outputs": [
-        "reports/public_source_review_2026-09-25.json",
-        "reports/public_source_review_2026-09-25.md"
+        "reports/public_source_review_2026-09-26.json",
+        "reports/public_source_review_2026-09-26.md"
       ],
       "sources": [
         "reports/public_source_snapshot_*.json",
@@ -628,11 +628,11 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-09-24.json",
-        "reports/external_links_triage_2026-09-24.md"
+        "reports/external_links_triage_2026-09-25.json",
+        "reports/external_links_triage_2026-09-25.md"
       ],
       "sources": [
-        "reports/external_links_2026-09-24.json"
+        "reports/external_links_2026-09-25.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },

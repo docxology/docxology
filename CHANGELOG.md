@@ -27,6 +27,12 @@ All notable public-index, website, bibliography, and discovery-layer changes are
 - **Software hero accuracy:** `pages/SOFTWARE.md` hero updated 116 → 119
   docxology repositories to match the curated table and
   `data/current-counts.json` (count-consistency gate green).
+- **Fork classification (DOC-005 standing policy):** the 2026-09-24 GitHub
+  inventory refresh added 5 public forks (bend, graphcoder, leanchess,
+  Moonkale, observer-patch-holography); classified under the principal's
+  2026-08-26 standing fork decision in `data/repository-exclusions.json` and
+  the projection `data/repository-classification.json` regenerated (forks
+  96/96 acknowledged).
 
 ## 2026-09-24
 
