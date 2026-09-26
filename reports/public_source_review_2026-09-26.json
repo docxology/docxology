@@ -16288,23 +16288,12 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "08d123d916f987c7f1099b1b4198a225cfc2ae9f",
-  "source_tree_sha": "5d0d7a6e62343e7051f4e3242036a48c016049e9",
+  "source_commit": "4feedf987e252eb33bd6a5d0d0a40f1ae96ffd84",
+  "source_tree_sha": "f6a8bab62699a58b091b282da2fec7bcc49d2bb6",
   "source_worktree_clean": false,
   "source_worktree_dirty_paths": [
-    "CHANGELOG.md",
-    "catalog.html",
-    "data/catalog.json",
-    "data/repository-classification.json",
-    "data/repository-exclusions.json",
-    "discovery.html",
-    "llms.txt",
-    "pages/DISCOVERY.md",
-    "search-index-content-video.json",
-    "search-index-content-work.json",
-    "search-index-core.json",
-    "search-index.json",
-    "updates.html"
+    "data/gsc-followup-checklist.json",
+    "reports/gsc_preflight_2026-09-26.json"
   ],
   "summary": {
     "applied": 279,
