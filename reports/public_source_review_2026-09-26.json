@@ -16288,13 +16288,10 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "4feedf987e252eb33bd6a5d0d0a40f1ae96ffd84",
-  "source_tree_sha": "f6a8bab62699a58b091b282da2fec7bcc49d2bb6",
-  "source_worktree_clean": false,
-  "source_worktree_dirty_paths": [
-    "data/gsc-followup-checklist.json",
-    "reports/gsc_preflight_2026-09-26.json"
-  ],
+  "source_commit": "038ce527c67ea6d90068b1a125a52ad6b47d3f36",
+  "source_tree_sha": "f435aada806cf5e0ba9663b1dfd33146122b9159",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
   "summary": {
     "applied": 279,
     "categories": {
