@@ -3,6 +3,31 @@
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
 
+## 2026-09-25
+
+- **Projections page (the "one surface, many projections" thesis, on site):**
+  new hand-authored `projections.html` documents the site as a single corpus
+  with many projections (works, videos, artworks, domains, feeds, agent
+  index), with SoftwarePage/WebPage JSON-LD, `#page` nav anchor, breadcrumb,
+  and its own `data/agent-index.json` route. Registered in the sitemap,
+  `llms.txt`, the nav manifest (top-level "Projections" entry), start-here,
+  discovery, 404, and the software/publications/video hub navs.
+- **Thinking log + On-my-mind band:** `pages/THINKING_LOG.md` (one line per
+  entry) feeds a new `build_updates_page.py` band on `updates.html`; the
+  first entry frames the decade-plus longitudinal-record thesis.
+- **Paper-page JSON-LD fix:** paper folder pages are `noindex, follow`
+  canonicals to `works/{citation_key}.html`; the stray BreadcrumbList
+  JSON-LD that violated the canonical policy (and
+  `test_seo_invariants`/`test_paper_pages`) is no longer emitted by
+  `build_paper_pages.py`.
+- **Domain-feed determinism fix:** `build_domain_feeds.py` derives
+  `lastBuildDate` from the newest item pubDate instead of wall-clock time,
+  restoring the byte-identical-across-runs contract
+  (`test_domain_feeds` 10/10); `--check` still reuses on-disk dates.
+- **Software hero accuracy:** `pages/SOFTWARE.md` hero updated 116 → 119
+  docxology repositories to match the curated table and
+  `data/current-counts.json` (count-consistency gate green).
+
 ## 2026-09-24
 
 - **Art collection discoverability (the Flickr → site loop closed):**

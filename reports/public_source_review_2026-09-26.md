@@ -1,4 +1,4 @@
-# Public-source review — 2026-09-25
+# Public-source review — 2026-09-26
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 

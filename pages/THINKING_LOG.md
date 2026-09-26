@@ -10,7 +10,6 @@ A hand-maintained, one-line-at-a-time record of what I am currently reading, thi
 
 ## Entries
 
-<!-- Add one line per entry in the form:
-- YYYY-MM-DD: What I am reading, thinking through, or changing my mind about. [Optional label](works/... or videos/...)
-The band on updates.html renders automatically when entries exist and stays hidden while this section is empty. -->
-- 2026-09-25: Making the site thesis explicit — one surface, many projections: a decade-plus of externalized thinking as a longitudinal record, not a snapshot; the trajectory compounds. [One Surface, Many Projections](projections.html)
+<!-- Add one line per entry: date, one sentence on what you are reading, thinking through, or changing your mind about, and an optional markdown link whose label names the target (a works page, a video page, or the projections page). Links are rendered into the On-my-mind band on updates.html; point them at site-root paths such as /projections.html.
+The band renders automatically when entries exist and stays hidden while this section is empty. -->
+- 2026-09-25: Making the site thesis explicit — one surface, many projections: a decade-plus of externalized thinking as a longitudinal record, not a snapshot; the trajectory compounds. [One Surface, Many Projections](/projections.html)

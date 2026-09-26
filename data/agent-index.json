@@ -426,7 +426,7 @@
     },
     {
       "id": "asset-size",
-      "path": "/reports/asset_size_2026-09-24.json",
+      "path": "/reports/asset_size_2026-09-25.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1326,11 +1326,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 927105504,
+        "source_bytes": 927179483,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5868,
-        "artifact_bytes": 928142432
+        "artifact_file_count": 5869,
+        "artifact_bytes": 928216533
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5767,7 +5767,7 @@
     "artworks": "32bd21124bd391638295aac6bad7a0621746c296695e10b0586351ca4069f6c3",
     "videos": "57a2b9b18f2dc17fa73865d72c70babe149fda625d3823c2c63be0e92b63171e",
     "videos_index": "4f4d6f4b11da4698726e654d5e32308fb794cc5771943e1eb1e6cae0f2e7b5d7",
-    "search": "2b4465cf8a4e8a2e1c62a4b423071d3675cfa312c16be226b314352045a5909e",
+    "search": "067ff3e6d7ba94e90f8ea689517458215b7a323908078c118e7735013864c496",
     "claims": "cc0378601b69c09833af27320a241803b207a5a4b5e0d6745dc4c1d49890f7be",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "2aac9b09a4835a29b2139a2b5163cb624b48930619608126324a8f8eacc42d1b",
@@ -5776,10 +5776,10 @@
     "organizations": "dd1e621e72293aacf29590471fc693d7f318f7d3f1b062d4e3e90923bb390a5b",
     "resume": "cf5e591ed944e899bf8ae1b1b766bac28bb4a137402ab6dcd135e8142aae9590",
     "work_enrichment": "8a71a4a82d7df44f05b551821738d8e1597b48fad231e71360e6f4c78129a26c",
-    "catalog": "9e8c63ea4c14abf06483db30e56dd74e2ac9f7e156fd03f666c491770ce5dc90",
+    "catalog": "fdad0d3fb434fa21083c1fb167767a1d51be2485aaac94f43654079f0d3a4f51",
     "reconciliation": "e819f32f635abfbb4d66ed65901cbc7c8ff295b1a6e51e1735d757dae17a1a39",
     "reproducibility": "89f9728748936924f010d283fca7ade580014bfce4e5ef5be4c1d69d45c8a319",
-    "generated_manifest": "8ca61a6a1970ab3d53aaadc60654e2e478985bad546587c1beec142fd8c826ad",
+    "generated_manifest": "7db986a68ca06357a75865a6937ee60c6d0f9bf6089bc490f3d3e0d198075918",
     "current_counts": "eba4d5a501f288231ed3235bb146b434ee9df0ae5c0fdadd6f2eb71e0acb4c48"
   },
   "source_provenance": {

@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-25",
-  "generated_at": "2026-09-25T00:00:00Z",
+  "date": "2026-09-26",
+  "generated_at": "2026-09-26T00:00:00Z",
   "inputs": {
     "biographical_claim_decisions": {
       "generated_at": null,
@@ -16292,6 +16292,7 @@
   "source_tree_sha": "c2d46c779b681ff103615da99cc7886bb2197dd3",
   "source_worktree_clean": false,
   "source_worktree_dirty_paths": [
+    "CHANGELOG.md",
     "active-inference.html",
     "catalog.html",
     "cognitive-security.html",
@@ -16311,6 +16312,7 @@
     "llms.txt",
     "neurosymbolic-ai.html",
     "pages/DISCOVERY.md",
+    "pages/SOFTWARE.md",
     "pages/THINKING_LOG.md",
     "search-index-content-video.json",
     "search-index-content-work.json",
