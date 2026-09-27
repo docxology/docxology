@@ -15,6 +15,8 @@ if str(_DOCXOLOGY_SRC) not in sys.path:
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
+sys.path.insert(0, str(REPO_ROOT / "code" / "orchestrators"))
+
 from build_paper_pages import reconcile_outputs, render_outputs, validate_inputs  # noqa: E402
 from docxology_tools.generated_outputs import UnsafeGeneratedOutputPathError  # noqa: E402
 
