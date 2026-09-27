@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-27T07:23:29Z",
-  "source_commit_at_generation": "d0553ee2a42d8e94699b9e15d7e4b560e26c872a",
+  "generated_at": "2026-09-27T08:13:51Z",
+  "source_commit_at_generation": "67063c164aaeaede4deb1ba5db01803809017961",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 927192963,
+    "source_bytes": 927196951,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
     "artifact_file_count": 5869,
-    "artifact_bytes": 928230069
+    "artifact_bytes": 928234057
   },
   "included_files": [
     {
@@ -75,8 +75,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 100487,
-      "sha256": "9ac1e2a696f97a098a956a41eb165fa7971d6f65947609e6faac4ab46577a257"
+      "bytes": 102416,
+      "sha256": "25d42080de45b4fedb3cd9c667454010e7bf9de5fcd317d900409627eb70c68d"
     },
     {
       "path": "CITATION.cff",
@@ -105,8 +105,8 @@
     },
     {
       "path": "TODO.md",
-      "bytes": 37864,
-      "sha256": "2aed47db152cc1fc02d546f7655970c4cf339f1bb5183eaaa3e176c30e8d7df1"
+      "bytes": 38979,
+      "sha256": "cb8afa2a89583938b77373edb52b536293ee9fa86bb122b26dd66cbc70a5f07b"
     },
     {
       "path": "a3f7c1b8d4e9426b8f2c5a7d9e3f1b6c.txt",
@@ -22240,8 +22240,8 @@
     },
     {
       "path": "reports/live_site_verification_2026-09-27.json",
-      "bytes": 15136,
-      "sha256": "037580ea7ad42ef3e62c52af3f33d1ca691ebf2f341866d740458f634160ecf7"
+      "bytes": 15301,
+      "sha256": "153fc8c6c7cdb2f38c6151ab2e6d41dfd74c320b6e911ca7c78681613c43fa60"
     },
     {
       "path": "reports/paired_publications_2026-06-04.json",
@@ -22545,8 +22545,8 @@
     },
     {
       "path": "updates.html",
-      "bytes": 125217,
-      "sha256": "1e5e8d45a24eaf722227536fc3cbda8cd18c1cc6252bacde0596f5fda771f0b5"
+      "bytes": 125996,
+      "sha256": "c2ca03370825f8d5375d8b98a244af585d49a8b93413553cf6a41510bfbeb4da"
     },
     {
       "path": "uv.lock",
