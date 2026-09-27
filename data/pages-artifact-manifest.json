@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-26T02:07:14Z",
-  "source_commit_at_generation": "038ce527c67ea6d90068b1a125a52ad6b47d3f36",
+  "generated_at": "2026-09-27T01:42:00Z",
+  "source_commit_at_generation": "c66c7eb0bf1529288b644c8f5f924654535a926c",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 927192691,
+    "source_bytes": 928906238,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5869,
-    "artifact_bytes": 928229797
+    "artifact_file_count": 5871,
+    "artifact_bytes": 929943642
   },
   "included_files": [
     {
@@ -11020,8 +11020,8 @@
     },
     {
       "path": "code/tests/test_paper_pages.py",
-      "bytes": 3207,
-      "sha256": "c430c3de86e559b2735350f642f9e8fc28fa26892c5277fb6cae3fb9760272a3"
+      "bytes": 3270,
+      "sha256": "837aa81cdd7c35ef065780247bdd94fd54ae382364c76819c2253a469a1ca554"
     },
     {
       "path": "code/tests/test_paper_readme_contracts.py",
@@ -11821,47 +11821,47 @@
     {
       "path": "domain-active-inference.html",
       "bytes": 38489,
-      "sha256": "7333276528cb2e63cb5952160749d1fb36ff6f058cddd55bdb1dd5eac655d3c6"
+      "sha256": "2d768b9afefb82e483ab757dedb1629d291c345c9cd1485b542f4415fadcd7b6"
     },
     {
       "path": "domain-aii-ecosystem.html",
       "bytes": 26254,
-      "sha256": "669977866ee91d88f7a5a9e3aa5b55a98c84741a93f45e916d8e86cf07550355"
+      "sha256": "3f9abbd51524cd316558c8fdb6f707bef6bf2f018455c7746057d373d13bc84f"
     },
     {
       "path": "domain-art-synergetics.html",
       "bytes": 34137,
-      "sha256": "0563ccb86361a4d12047ebe28cbc2ee7d74fcb02783814c9ca0409c44421c1f1"
+      "sha256": "9cdbdc9d3301015aea16583c39a29499bfcf3a762f6369ae7dbdf563b195b790"
     },
     {
       "path": "domain-biomedicine.html",
       "bytes": 32631,
-      "sha256": "08e53dc259330a8deb2bcfd2aa1f55d4041aa5f279231de252e78d49fab0891a"
+      "sha256": "dd736f88ed2434c7ee074a6fb1818fccf48aa253ac023b9074cd1b1f1ae12a43"
     },
     {
       "path": "domain-cognitive-security.html",
       "bytes": 33427,
-      "sha256": "30b6f150ffc066f19d0b334edf938e7ae5e91e93bf57906b19826454bc7ab54b"
+      "sha256": "1011d3ba07f9429309403599407675d1e9add991afe86e37cfb8fbbd2b7a8b84"
     },
     {
       "path": "domain-computational.html",
       "bytes": 36169,
-      "sha256": "d7435a6e95c730b747e51b9021f5f9c647c4e841dc0b2ff2cdc67d81bcf9c6c2"
+      "sha256": "f9bfb86bdb0cc9fe6a6b46650843ea1be0c7e6a61b054f5b304dea9af3e72ed8"
     },
     {
       "path": "domain-entomology.html",
       "bytes": 35152,
-      "sha256": "d1e28171f42872db5767c573f2c3f0f405f2d90fd8cfeaf7f9d994869114629a"
+      "sha256": "3c6b068dc87d62590283e71fd0480dd943b09b4a6990683bfc6ac0baab1ec243"
     },
     {
       "path": "domain-presentations-media.html",
       "bytes": 30452,
-      "sha256": "e21e8fbac0dbc38ac769a6e9c97af568ca121ddc92807a7ea0d60c5209235853"
+      "sha256": "2612ee1aaee7eafe02b6a7e1ceff3f4b6614fdb17b982c6eddd0e17741029048"
     },
     {
       "path": "domains.html",
       "bytes": 15171,
-      "sha256": "662af604c84582b17035df61b18aefb2e6c5e4b810cec6094ac11a4490b6aaea"
+      "sha256": "820a56c2363f51f2b828afce3e2c98499fb26e73e86001c348f00c79e05a77a5"
     },
     {
       "path": "evidence.html",
@@ -22079,6 +22079,11 @@
       "sha256": "5d4daa0fac90b3fe9ab3d4750fa51b591d4ac522a2d4bd15377cec37d8ae2244"
     },
     {
+      "path": "reports/accessibility_static_2026-09-27.json",
+      "bytes": 1713484,
+      "sha256": "7227542e8dcc00c3118e578fc44adedb4961abfd6980675848748aeb3d290d44"
+    },
+    {
       "path": "reports/ambiguous_pairs_triage_2026-06-26.md",
       "bytes": 2120,
       "sha256": "7a6e4fb01a8870e64ec2358bfc1fab4749adf2cf38c44262ed12c7a022a6a761"
@@ -29354,6 +29359,10 @@
       "role": "public control metadata"
     },
     {
+      "path": "reports/pages_artifact_growth_2026-09-27.json",
+      "role": "public control metadata"
+    },
+    {
       "path": "reports/public_source_review_2026-09-26.json",
       "role": "public control metadata"
     },
@@ -29440,5 +29449,5 @@
       "reports/accessibility_static_2026-06-30.json"
     ]
   },
-  "growth_report": "reports/pages_artifact_growth_2026-09-26.json"
+  "growth_report": "reports/pages_artifact_growth_2026-09-27.json"
 }
