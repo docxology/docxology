@@ -3,6 +3,36 @@
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
 
+## 2026-09-27
+
+- **SEO ergonomics wave (serp_title decoupling, breadcrumbs, works-index
+  copy):** root-level pillar pages now carry the full title in og:title,
+  twitter:title, and JSON-LD headline while only `<title>` is SERP-clipped
+  (`render_pillar_head(serp_title=...)`); 404 page gained BreadcrumbList
+  JSON-LD; the works index leads with the longitudinal-record framing and
+  a year-range hero; per-work pages dropped the duplicate Copy-BibTeX
+  control and now render Findings/Methods cards without "Not yet
+  summarized." placeholders. Per-domain RSS/Atom feeds (8 domains) ship
+  with a deterministic `--check` that reuses on-disk `lastBuildDate`;
+  `software.html` nav syncs from the shared manifest; start-here counts
+  stamp from `data/current-counts.json` with a matching freshness check.
+- **Regeneration recovery:** the interrupted 2026-09-25 generation chain
+  was completed on recovery — video institute/personal pages finished and
+  `--check` green, 949 artwork/collection pages brought current with the
+  nav changes, and a zero-byte truncated `domain-active-inference.html`
+  (drive failure during the concurrent session) rebuilt from
+  `build_domain_pages.py`. Static accessibility 2537/2537; repositories
+  refreshed from `data/github-repositories.json`.
+- **Post-push receipts:** `reports/public_source_review_2026-09-27.json/.md`
+  supersede the 09-26 pair (279 applied / 77 deferred / 317 rejected,
+  reflecting the DOC-005 fork classifications); live-site verification
+  receipt `reports/live_site_verification_2026-09-27.json` (12/17 passing
+  at push time, five checks pending deploy propagation of the agent-index,
+  works/software data, and hub pages); date-stamped generated surfaces
+  (site facts, catalog, search index) converged to the receipt-day stamp.
+  Binder chain bound with control-only tails; `validate_repo.py` green and
+  the full suite 759 passed / 5 skipped at the pushed tip.
+
 ## 2026-09-25
 
 - **Projections page (the "one surface, many projections" thesis, on site):**

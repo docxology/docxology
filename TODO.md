@@ -8,6 +8,22 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
+- Last reviewed: 2026-09-27 (SEO/recovery/push wave, concurrent-session
+  coordination: committed and pushed the recovered SEO ergonomics wave
+  (serp_title decoupling, breadcrumb JSON-LD, per-domain RSS feeds with
+  deterministic --check, projections page, thinking log, shared-nav sync),
+  completed the interrupted regeneration (video pages, 949 artwork pages),
+  repaired a zero-byte truncated domain page from the drive failure, and
+  ran the post-push receipt lap (PSR 2026-09-27 superseding 09-26 at
+  279/77/317; live-site verification receipt 12/17 pending deploy
+  propagation of the new agent-index/works/software data; date-stamp
+  convergence). validate_repo green and full suite 759 passed / 5 skipped
+  at the pushed tip; main pushed to docxology-private. Drive-health note:
+  two drop-class events this week (Errno 6 2026-09-25, Errno 5 2026-09-27)
+  on /Volumes/external_drive — a verified off-volume backup of the
+  checkout is advised before the next heavy regeneration. Open-item
+  ledger otherwise unchanged — DOC-002/008/009/010/011/012/015
+  procedural, SEC-002 still explicitly blocked)
 - Last reviewed: 2026-09-18 (private catch-up pass: public `main` merged into
   the sidecar `main` — 400 commits since `0d4e8da1`, 18 conflicts resolved in
   favor of the canonical upstream payloads, private-only `.docxology/`
