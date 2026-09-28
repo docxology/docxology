@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-27T08:13:51Z",
-  "source_commit_at_generation": "67063c164aaeaede4deb1ba5db01803809017961",
+  "generated_at": "2026-09-28T15:18:22Z",
+  "source_commit_at_generation": "6c91ff6f061d36e0f56246020b2fecf527cb7fea",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 927196951,
+    "source_bytes": 927198558,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5869,
-    "artifact_bytes": 928234057
+    "artifact_file_count": 5870,
+    "artifact_bytes": 928235780
   },
   "included_files": [
     {
@@ -10530,8 +10530,8 @@
     },
     {
       "path": "code/orchestrators/verify_live_site.py",
-      "bytes": 25472,
-      "sha256": "5bca372cd6721ce6ae1e5bd27fd0070abed0c1da88ef8f53bed5ab18428ad164"
+      "bytes": 25601,
+      "sha256": "06343b8bcb88c2de4b98e8b5650e707492f02586595fed3ddcc084f1183e64ec"
     },
     {
       "path": "code/orchestrators/visual_qa.py",
@@ -11240,8 +11240,8 @@
     },
     {
       "path": "code/tests/test_verify_live_site.py",
-      "bytes": 11425,
-      "sha256": "9d45182a138cc408d93cf92f3e68e331af58ddd6a801bddad0a978c8d24c7171"
+      "bytes": 12903,
+      "sha256": "101dbd34b16e2fc7ce49afe32a6e2eb907c425717ff67bc3efd9bd4d07a8e08d"
     },
     {
       "path": "code/tests/test_visual_qa.py",
@@ -29354,6 +29354,10 @@
       "role": "public control metadata"
     },
     {
+      "path": "reports/pages_artifact_growth_2026-09-28.json",
+      "role": "public control metadata"
+    },
+    {
       "path": "reports/public_source_review_2026-09-27.json",
       "role": "public control metadata"
     },
@@ -29440,5 +29444,5 @@
       "reports/accessibility_static_2026-06-30.json"
     ]
   },
-  "growth_report": "reports/pages_artifact_growth_2026-09-27.json"
+  "growth_report": "reports/pages_artifact_growth_2026-09-28.json"
 }
