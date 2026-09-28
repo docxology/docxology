@@ -1,0 +1,547 @@
+{
+  "generated_at": "2026-09-28T01:55:58Z",
+  "base_url": "https://danielarifriedman.com/",
+  "expected_counts": {
+    "works": 220,
+    "software_docx": 119,
+    "software_aii": 39,
+    "software_total": 158,
+    "public_repos": 267
+  },
+  "note": "Live verification can fail while GitHub Pages is still building or CDN caches are stale.",
+  "github_pages": {
+    "ok": true,
+    "status": "built",
+    "deployment_pending": false,
+    "cname": "danielarifriedman.com",
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "html_url": "https://danielarifriedman.com/",
+    "deployment_run": {
+      "workflow_run_id": 36363736180,
+      "workflow_url": "https://github.com/docxology/docxology/actions/runs/36363736180",
+      "head_sha": "7b090c9d28e62af5e55b4035904015ae3eb698a3",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-09-28T00:51:15Z",
+      "updated_at": "2026-09-28T00:57:05Z"
+    }
+  },
+  "deployment": {
+    "workflow_run_id": 36363736180,
+    "workflow_url": "https://github.com/docxology/docxology/actions/runs/36363736180",
+    "head_sha": "7b090c9d28e62af5e55b4035904015ae3eb698a3",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-09-28T00:51:15Z",
+    "updated_at": "2026-09-28T00:57:05Z"
+  },
+  "source_commit": "7b090c9d28e62af5e55b4035904015ae3eb698a3",
+  "source_dirty": false,
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
+  "source_tree_sha": "3a45f934cb0878d0dcab0c5080c1ed523a45a950",
+  "deployment_sha_mismatch": false,
+  "deployment_pending_reason": "",
+  "observed_counts": {
+    "software_total": 158,
+    "works": 220,
+    "agent_works": 220
+  },
+  "deployment_pending_paths": [],
+  "checked_urls": 17,
+  "passing": 16,
+  "overall_ok": false,
+  "results": [
+    {
+      "path": "index.html",
+      "url": "https://danielarifriedman.com/",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 44226,
+      "elapsed_ms": 366,
+      "markers": {
+        "danielarifriedman.com": true,
+        "publications": true,
+        "software.html": true,
+        "Search": true
+      },
+      "json_checks": {},
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:57 GMT",
+        "etag": "\"6ab9bb59-acc2\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10056-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "publications.html",
+      "url": "https://danielarifriedman.com/publications.html",
+      "jsonld_types": {
+        "CollectionPage": true
+      },
+      "ok": true,
+      "status": 200,
+      "bytes": 331697,
+      "elapsed_ms": 324,
+      "markers": {
+        "Publications": true,
+        "Research Works": true,
+        "220 Research Works": true
+      },
+      "json_checks": {},
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:57 GMT",
+        "etag": "\"6ab9bb59-50fb1\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10042-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "software.html",
+      "url": "https://danielarifriedman.com/software.html",
+      "jsonld_types": {
+        "CollectionPage": true
+      },
+      "ok": true,
+      "status": 200,
+      "bytes": 219351,
+      "elapsed_ms": 300,
+      "markers": {
+        "Software": true,
+        "application/ld+json": true,
+        "Open-Source Repositories": true,
+        "119 owned": true,
+        "39 catalogued": true,
+        "267 public repositories": true
+      },
+      "json_checks": {},
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:56 GMT",
+        "etag": "\"6ab9bb58-358d7\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000130-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "data/software-ld.json",
+      "url": "https://danielarifriedman.com/data/software-ld.json",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 139109,
+      "elapsed_ms": 281,
+      "markers": {
+        "\"@type\"": true,
+        "\"mainEntity\"": true,
+        "\"SoftwareSourceCode\"": true
+      },
+      "json_checks": {
+        "valid_json": true,
+        "software_count_matches": true
+      },
+      "observed_counts": {
+        "software_total": 158
+      },
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:56 GMT",
+        "etag": "\"6ab9bb58-21f65\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10022-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "search.html",
+      "url": "https://danielarifriedman.com/search.html",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 10995,
+      "elapsed_ms": 214,
+      "markers": {
+        "Search": true,
+        "search-index.json": true,
+        "OpenSearch": true
+      },
+      "json_checks": {},
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:57 GMT",
+        "etag": "\"6ab9bb59-2af3\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10037-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "catalog.html",
+      "url": "https://danielarifriedman.com/catalog.html",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 50260,
+      "elapsed_ms": 257,
+      "markers": {
+        "Data Catalog": true,
+        "\"@context\"": true,
+        "/data/catalog.json": true,
+        "application/ld+json": true
+      },
+      "json_checks": {},
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:56 GMT",
+        "etag": "\"6ab9bb58-c454\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10062-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "updates.html",
+      "url": "https://danielarifriedman.com/updates.html",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 125996,
+      "elapsed_ms": 287,
+      "markers": {
+        "Updates": true,
+        "update-card": true,
+        "changelog": true
+      },
+      "json_checks": {},
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:56 GMT",
+        "etag": "\"6ab9bb58-1ec2c\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10025-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "opensearch.xml",
+      "url": "https://danielarifriedman.com/opensearch.xml",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 529,
+      "elapsed_ms": 202,
+      "markers": {
+        "OpenSearchDescription": true,
+        "search.html?q={searchTerms}": true
+      },
+      "json_checks": {},
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:57 GMT",
+        "etag": "\"6ab9bb59-211\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000105-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "sitemap.xml",
+      "url": "https://danielarifriedman.com/sitemap.xml",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 416057,
+      "elapsed_ms": 332,
+      "markers": {
+        "sitemap": true,
+        "publications.html": true,
+        "software.html": true
+      },
+      "json_checks": {},
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:57 GMT",
+        "etag": "\"6ab9bb59-65939\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000116-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "llms.txt",
+      "url": "https://danielarifriedman.com/llms.txt",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 12092,
+      "elapsed_ms": 205,
+      "markers": {
+        "Human search page": true,
+        "Data catalog": true,
+        "Agent start guide": true
+      },
+      "json_checks": {},
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:56 GMT",
+        "etag": "\"6ab9bb58-2f3c\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10063-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "search-index.json",
+      "url": "https://danielarifriedman.com/search-index.json",
+      "jsonld_types": {},
+      "ok": false,
+      "status": 200,
+      "bytes": 2000000,
+      "elapsed_ms": 424,
+      "markers": {
+        "\"count\"": true,
+        "\"items\"": true,
+        "items": true
+      },
+      "json_checks": {
+        "valid_json": false
+      },
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:57 GMT",
+        "etag": "\"6ab9bb59-25fc9d\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000117-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "data/works.json",
+      "url": "https://danielarifriedman.com/data/works.json",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 177390,
+      "elapsed_ms": 306,
+      "markers": {
+        "\"works\"": true,
+        "\"count\"": true
+      },
+      "json_checks": {
+        "valid_json": true,
+        "works_count_matches": true
+      },
+      "observed_counts": {
+        "works": 220
+      },
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:56 GMT",
+        "etag": "\"6ab9bb58-2b4ee\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000126-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "data/agent-index.json",
+      "url": "https://danielarifriedman.com/data/agent-index.json",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 204785,
+      "elapsed_ms": 318,
+      "markers": {
+        "\"schema_version\"": true,
+        "\"routes\"": true,
+        "\"datasets\"": true
+      },
+      "json_checks": {
+        "valid_json": true,
+        "versioned_schema": true,
+        "routes_present": true,
+        "datasets_present": true,
+        "dataset_hashes_present": true,
+        "agent_works_match": true
+      },
+      "observed_counts": {
+        "agent_works": 220
+      },
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:57 GMT",
+        "etag": "\"6ab9bb59-31ff1\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10025-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "data/catalog.json",
+      "url": "https://danielarifriedman.com/data/catalog.json",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 31608,
+      "elapsed_ms": 228,
+      "markers": {
+        "DataCatalog": true,
+        "External Link Triage": true,
+        "Software": true
+      },
+      "json_checks": {
+        "valid_json": true,
+        "catalog_datasets_present": true
+      },
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:57 GMT",
+        "etag": "\"6ab9bb59-7b78\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10072-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "GENERATED.md",
+      "url": "https://danielarifriedman.com/GENERATED.md",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 19738,
+      "elapsed_ms": 252,
+      "markers": {
+        "# Generated Files": true,
+        "Rebuild command": true,
+        "Validation": true
+      },
+      "json_checks": {},
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:57 GMT",
+        "etag": "\"6ab9bb59-4d1a\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10054-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": "humans.txt",
+      "url": "https://danielarifriedman.com/humans.txt",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 875,
+      "elapsed_ms": 217,
+      "markers": {
+        "Daniel Ari Friedman": true,
+        "docxology": true
+      },
+      "json_checks": {},
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:57 GMT",
+        "etag": "\"6ab9bb59-36b\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc10040-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    },
+    {
+      "path": ".well-known/security.txt",
+      "url": "https://danielarifriedman.com/.well-known/security.txt",
+      "jsonld_types": {},
+      "ok": true,
+      "status": 200,
+      "bytes": 396,
+      "elapsed_ms": 214,
+      "markers": {
+        "Contact:": true,
+        "Policy:": true
+      },
+      "json_checks": {},
+      "observed_counts": {},
+      "cache": {
+        "last-modified": "Mon, 28 Sep 2026 00:56:57 GMT",
+        "etag": "\"6ab9bb59-18c\"",
+        "cache-control": "max-age=600",
+        "age": "0",
+        "x-cache": "MISS",
+        "x-served-by": "cache-sjc1000131-SJC"
+      },
+      "error": "",
+      "local_exists": true,
+      "deployment_pending": false
+    }
+  ]
+}
