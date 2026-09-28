@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-28T15:18:22Z",
-  "source_commit_at_generation": "6c91ff6f061d36e0f56246020b2fecf527cb7fea",
+  "generated_at": "2026-09-28T19:28:24Z",
+  "source_commit_at_generation": "2faaae0597a1fc2f940af89a749160b986901b9b",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 927198558,
+    "source_bytes": 927214008,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5870,
-    "artifact_bytes": 928235780
+    "artifact_file_count": 5871,
+    "artifact_bytes": 928251411
   },
   "included_files": [
     {
@@ -10071,7 +10071,7 @@
     {
       "path": "catalog.html",
       "bytes": 50260,
-      "sha256": "b352b47f7fa7073e49fa4e909fe50c70765b67027b925f7a4a12203caa9dd827"
+      "sha256": "5267156690bc031c3c2c1886713023fb1f7592a2ff24358a8a725598c258d19e"
     },
     {
       "path": "cite-verify.html",
@@ -11341,7 +11341,7 @@
     {
       "path": "data/catalog.json",
       "bytes": 31608,
-      "sha256": "38a3f99d2457e12a9ee2efb4726c3922873eae25cef44f8a5b858cda8f30de33"
+      "sha256": "1bcdc0c2a7824b198b6f61504ad6df8f126bb15db2e3a0ca71cf1dbee2571344"
     },
     {
       "path": "data/claims.json",
@@ -11526,7 +11526,7 @@
     {
       "path": "discovery.html",
       "bytes": 33468,
-      "sha256": "57b7b725ee79dcbe86f89e50d23cc14a1ff01c6a02bff72fbc4d3d423f3a2730"
+      "sha256": "dc168279a9f628ef0d65d52b1da3d4566602cbc1e42b778ac0c930bb21238c05"
     },
     {
       "path": "docs/AGENTS.md",
@@ -12196,7 +12196,7 @@
     {
       "path": "pages/DISCOVERY.md",
       "bytes": 15409,
-      "sha256": "67bdf916e1f86eabe4c9bb8ddd6d6dda2ac4f883c3520a24a62027cd2da02279"
+      "sha256": "58c28445b7da5be221b3dcdbdc33693040ace1a99a0973a5b8cb96039d56ac23"
     },
     {
       "path": "pages/DOMAINS.md",
@@ -22244,6 +22244,11 @@
       "sha256": "153fc8c6c7cdb2f38c6151ab2e6d41dfd74c320b6e911ca7c78681613c43fa60"
     },
     {
+      "path": "reports/live_site_verification_2026-09-28.json",
+      "bytes": 15450,
+      "sha256": "0456395cafd782d7e2cd8e3243ecdb334bd5ad269ad0a7716730ce4312e6c84c"
+    },
+    {
       "path": "reports/paired_publications_2026-06-04.json",
       "bytes": 604430,
       "sha256": "dda2b682b39f87cba9a6e33efbe426e0190418d59c66a217577ed31e3c19e7b9"
@@ -22491,22 +22496,22 @@
     {
       "path": "search-index-content-video.json",
       "bytes": 980511,
-      "sha256": "30e11d54a3f99b78e04c3f88da83cb7bd1bdcf74ac02ed9808c07e04b2cf32f2"
+      "sha256": "5db3aadf8a0d880e9f811b631c9bd8d0fdf029dee6b04d4354dcf74c037227eb"
     },
     {
       "path": "search-index-content-work.json",
       "bytes": 385390,
-      "sha256": "24f99104b629b2e790c8b3b0fce6aaab7fd0d44bac38043f2c596b6099f4ba6c"
+      "sha256": "7d2bd17c5c291b8d5deb94f2f3bb50ec3c5ebe968844d7339b41744ece6488c5"
     },
     {
       "path": "search-index-core.json",
       "bytes": 1278706,
-      "sha256": "9d565e670533d5cad4480de34856a6927e638c319b90e3e8d0802aa9c294d34c"
+      "sha256": "587dbefcbe24582d8ce438559aa02c242063d9be72f66f90bbc2f6e0c1ab22e1"
     },
     {
       "path": "search-index.json",
       "bytes": 2489501,
-      "sha256": "c704aeeaecb3169f0f0216333c19cb19df1d87b6044e551aa71a1e7d1e2e5dcb"
+      "sha256": "87bb0a0fc9a2e43771eae5cb6c8654ca671eb220bed8122b02be34a98690a778"
     },
     {
       "path": "search.html",
@@ -29350,10 +29355,6 @@
       "role": "public control metadata"
     },
     {
-      "path": "reports/pages_artifact_growth_2026-09-27.json",
-      "role": "public control metadata"
-    },
-    {
       "path": "reports/pages_artifact_growth_2026-09-28.json",
       "role": "public control metadata"
     },
@@ -29362,7 +29363,11 @@
       "role": "public control metadata"
     },
     {
-      "path": "reports/public_source_review_2026-09-27.md",
+      "path": "reports/public_source_review_2026-09-28.json",
+      "role": "public control metadata"
+    },
+    {
+      "path": "reports/public_source_review_2026-09-28.md",
       "role": "public control metadata"
     }
   ],
@@ -29419,8 +29424,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 503,
-    "bytes": 113134334,
+    "count": 505,
+    "bytes": 113292783,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",

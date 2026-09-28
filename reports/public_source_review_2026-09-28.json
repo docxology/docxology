@@ -16288,10 +16288,19 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "6c91ff6f061d36e0f56246020b2fecf527cb7fea",
-  "source_tree_sha": "0fa05bbe9ebbca022d7144b6a85de7e8ea3c13c6",
-  "source_worktree_clean": true,
-  "source_worktree_dirty_paths": [],
+  "source_commit": "2faaae0597a1fc2f940af89a749160b986901b9b",
+  "source_tree_sha": "182df6a90711f34e5127efc74b1479fe831f558f",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "catalog.html",
+    "data/catalog.json",
+    "discovery.html",
+    "pages/DISCOVERY.md",
+    "search-index-content-video.json",
+    "search-index-content-work.json",
+    "search-index-core.json",
+    "search-index.json"
+  ],
   "summary": {
     "applied": 279,
     "categories": {
