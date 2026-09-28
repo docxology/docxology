@@ -29,6 +29,9 @@ BASE = "https://danielarifriedman.com/"
 PAGES_DEPLOYMENT_PENDING_STATUSES = frozenset({"building", "queued"})
 
 
+MAX_RESPONSE_BYTES = 10_000_000  # search-index.json passed 2 MB in 2026-09; keep a ceiling above any generated route
+
+
 def is_pages_deployment_pending(status: object) -> bool:
     """Return whether Pages is propagating a build rather than failing."""
     return str(status or "").lower() in PAGES_DEPLOYMENT_PENDING_STATUSES
@@ -288,7 +291,7 @@ def fetch(url: str, timeout: int, extra_headers: dict[str, str] | None = None) -
     )
     try:
         with urllib.request.urlopen(req, timeout=timeout) as response:
-            raw = response.read(2_000_000)
+            raw = response.read(MAX_RESPONSE_BYTES)
             text = raw.decode("utf-8", errors="replace")
             return {
                 "status": response.status,

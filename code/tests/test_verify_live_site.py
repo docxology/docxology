@@ -82,6 +82,40 @@ def test_cache_busted_url_preserves_path_and_adds_unique_query():
     assert url.startswith("https://example.test/data/works.json?")
     assert "v=1" in url
     assert "__verify=" in url
+def test_json_contract_survives_large_index_fetch(monkeypatch):
+    """search-index.json outgrew the old 2 MB read cap in verify_live_site.fetch,
+    which truncated the fetch and failed valid_json on the live route. The cap
+    (MAX_RESPONSE_BYTES) must exceed the deployed index size and be used by fetch."""
+    old_cap = 2_000_000
+    assert vl.MAX_RESPONSE_BYTES > old_cap
+    # Pad the item list so the payload is larger than the old cap: a fetch still
+    # capped at 2 MB would truncate mid-JSON and fail to parse.
+    filler = "x" * 512
+    items = [{"title": filler} for _ in range((old_cap + 500_000) // 532)]
+    payload = json.dumps({"generated_at": "x", "count": len(items), "items": items}).encode()
+    assert len(payload) > old_cap
+
+    class FakeResponse:
+        status = 200
+        headers = {}
+
+        def read(self, amount=-1):
+            return payload if amount >= len(payload) else payload[:amount]
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            return False
+
+    def fake_urlopen(req, timeout):
+        return FakeResponse()
+
+    monkeypatch.setattr(vl.urllib.request, "urlopen", fake_urlopen)
+    result = vl.fetch("https://example.test/search-index.json", timeout=10)
+    assert result["bytes"] == len(payload)
+    checks, observed = vl.parse_json_contract("search-index.json", result["text"], {})
+    assert checks == {"valid_json": True, "items_present": True, "count_matches_items": True}
 
 
 def test_jsonld_types_in_html_parses_graph_and_list_types():
