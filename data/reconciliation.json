@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T19:20:05.374078+00:00",
-  "snapshot": "reports/public_source_snapshot_2026-09-24.json",
+  "generated_at": "2026-09-29T19:09:40.867706+00:00",
+  "snapshot": "reports/public_source_snapshot_2026-09-29.json",
   "claims_count": 15,
   "comparisons": [
     {
@@ -34,14 +34,14 @@
     {
       "name": "Catalogued docxology software vs GitHub public repository count",
       "local_value": 119,
-      "public_value": 224,
+      "public_value": 230,
       "relationship": "curated subset",
       "interpretation": "SOFTWARE.md intentionally catalogs selected owned repositories; GitHub counts all public repositories including forks and uncatalogued experiments."
     },
     {
       "name": "Catalogued AII contributions vs AII GitHub public repository count",
       "local_value": 39,
-      "public_value": 43,
+      "public_value": 44,
       "relationship": "curated subset",
       "interpretation": "SOFTWARE.md lists AII repositories with docxology contributions, not every public AII repository."
     }
