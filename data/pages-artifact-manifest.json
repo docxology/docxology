@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-29T13:21:48Z",
-  "source_commit_at_generation": "ca33cd05bec9823a4553b9c402f4f9eff24fb6cc",
+  "generated_at": "2026-09-29T14:59:56Z",
+  "source_commit_at_generation": "c50813ef2e49fcb1af36eaa4e8cdba2ce8e21392",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 927219139,
+    "source_bytes": 927226160,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5871,
-    "artifact_bytes": 928256541
+    "artifact_file_count": 5872,
+    "artifact_bytes": 928263739
   },
   "included_files": [
     {
@@ -22085,8 +22085,8 @@
     },
     {
       "path": "reports/browser-qa/2026-09-29/manifest.json",
-      "bytes": 2206,
-      "sha256": "49d17bf44fca7446b94ef19ba247c6fa2a8f8005f30263816389f27e08ba8534"
+      "bytes": 2192,
+      "sha256": "ecd2cd523c9a31948aece3a2a35409df184a7e287530a843b8edd038e6231ec3"
     },
     {
       "path": "reports/browser-qa/AGENTS.md",
@@ -22245,8 +22245,8 @@
     },
     {
       "path": "reports/live_site_verification_2026-09-29.json",
-      "bytes": 14925,
-      "sha256": "7a74dd5d57650e2b32cb0c56ff0b1b49a36c457234ddf270989c24449adfce32"
+      "bytes": 14917,
+      "sha256": "e5b443b25ce987780ac482ef34e1c0e6f0b4667ebae56d5d2c46616d43fcf262"
     },
     {
       "path": "reports/paired_publications_2026-06-04.json",
@@ -22397,6 +22397,11 @@
       "path": "reports/visual-qa/2026-09-18/manifest.json",
       "bytes": 7097,
       "sha256": "d2857876765fc528b81b0369fe726d38dbaa5102a48b748b8d5933ec664a3497"
+    },
+    {
+      "path": "reports/visual-qa/2026-09-29/manifest.json",
+      "bytes": 7043,
+      "sha256": "90a1fc102a4516d1990583816f0225206be2896d828fb01927d8fcd115b2e3c3"
     },
     {
       "path": "reports/visual-qa/AGENTS.md",
@@ -29398,8 +29403,8 @@
     ]
   },
   "omitted_visual_qa_screenshots": {
-    "count": 52,
-    "bytes": 111081789,
+    "count": 78,
+    "bytes": 169059316,
     "examples": [
       "reports/visual-qa/2026-09-16/art-desktop.png",
       "reports/visual-qa/2026-09-16/art-mobile.png",
