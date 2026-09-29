@@ -51,9 +51,9 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | External link triage | `reports/external_links_triage_2026-09-25.json`<br>`reports/external_links_triage_2026-09-25.md` | `reports/external_links_2026-09-25.json` | `python3 code/orchestrators/build_external_link_triage.py` |
 | Asset size audit | `reports/asset_size_2026-09-25.json` | `root HTML pages`<br>`og-*.jpg`<br>`data/*.json`<br>`style.css`<br>`sw.js` | `python3 code/orchestrators/audit_assets.py` |
 | Static accessibility report | `reports/accessibility_static_2026-09-27.json` | `root HTML pages`<br>`style.css`<br>`code/orchestrators/accessibility_audit.py` | `python3 code/orchestrators/accessibility_audit.py` |
-| Browser smoke checks | `reports/browser-smoke/2026-09-18/*.png`<br>`reports/browser-smoke/2026-09-18/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
-| Progressive browser QA | `reports/browser-qa/2026-09-18/manifest.json` | `root HTML pages`<br>`js/*.js`<br>`style.css`<br>`code/orchestrators/browser_qa.py` | `uv run --extra browser-qa python3 code/orchestrators/browser_qa.py` |
-| Live site verification | `reports/live_site_verification_2026-09-28.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
+| Browser smoke checks | `reports/browser-smoke/2026-09-29/*.png`<br>`reports/browser-smoke/2026-09-29/manifest.json` | `root HTML pages`<br>`works/index.html`<br>`search-index.json` | `python3 code/orchestrators/browser_smoke.py` |
+| Progressive browser QA | `reports/browser-qa/2026-09-29/manifest.json` | `root HTML pages`<br>`js/*.js`<br>`style.css`<br>`code/orchestrators/browser_qa.py` | `uv run --extra browser-qa python3 code/orchestrators/browser_qa.py` |
+| Live site verification | `reports/live_site_verification_2026-09-29.json` | `https://danielarifriedman.com/`<br>`GitHub Pages API` | `python3 code/orchestrators/verify_live_site.py` |
 | Feed | `feed.xml` | `data/works.json`<br>`code/orchestrators/generate_feed.py` | `python3 code/orchestrators/generate_feed.py` |
 | Sitemap | `sitemap.xml` | `works/*.html`<br>`code/src/sitemap_policy.py`<br>`code/orchestrators/build_sitemap.py` | `python3 code/orchestrators/build_sitemap.py` |
 | 404 page | `404.html` | `code/src/site_nav.py`<br>`code/orchestrators/build_404_page.py` | `python3 code/orchestrators/build_404_page.py` |

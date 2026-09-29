@@ -433,7 +433,7 @@
     },
     {
       "id": "live-site",
-      "path": "/reports/live_site_verification_2026-09-28.json",
+      "path": "/reports/live_site_verification_2026-09-29.json",
       "format": "application/json",
       "schema": "GeneratedReport",
       "freshness_field": "generated_at"
@@ -1326,11 +1326,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 927214008,
+        "source_bytes": 927219139,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5871,
-        "artifact_bytes": 928251411
+        "artifact_file_count": 5872,
+        "artifact_bytes": 928256657
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5767,7 +5767,7 @@
     "artworks": "32bd21124bd391638295aac6bad7a0621746c296695e10b0586351ca4069f6c3",
     "videos": "57a2b9b18f2dc17fa73865d72c70babe149fda625d3823c2c63be0e92b63171e",
     "videos_index": "4f4d6f4b11da4698726e654d5e32308fb794cc5771943e1eb1e6cae0f2e7b5d7",
-    "search": "87bb0a0fc9a2e43771eae5cb6c8654ca671eb220bed8122b02be34a98690a778",
+    "search": "245d952c69653d7c54ab28423cd93fadb8e7a74a612d8a6cca0664f0a8ee1cf7",
     "claims": "cc0378601b69c09833af27320a241803b207a5a4b5e0d6745dc4c1d49890f7be",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "2aac9b09a4835a29b2139a2b5163cb624b48930619608126324a8f8eacc42d1b",
@@ -5776,10 +5776,10 @@
     "organizations": "dd1e621e72293aacf29590471fc693d7f318f7d3f1b062d4e3e90923bb390a5b",
     "resume": "cf5e591ed944e899bf8ae1b1b766bac28bb4a137402ab6dcd135e8142aae9590",
     "work_enrichment": "8a71a4a82d7df44f05b551821738d8e1597b48fad231e71360e6f4c78129a26c",
-    "catalog": "1bcdc0c2a7824b198b6f61504ad6df8f126bb15db2e3a0ca71cf1dbee2571344",
+    "catalog": "490fd111536f078c52cd313deb4f1ee871d371cd9f1a3a58b684a3e82e64026d",
     "reconciliation": "e819f32f635abfbb4d66ed65901cbc7c8ff295b1a6e51e1735d757dae17a1a39",
     "reproducibility": "89f9728748936924f010d283fca7ade580014bfce4e5ef5be4c1d69d45c8a319",
-    "generated_manifest": "ba42a891dc7492d66477280955bb366e9d8d052a3d7c96b77459873d05bdf4b4",
+    "generated_manifest": "8a0c123fe044e5f10d09171303770422693cc995e9d707b55d7e7f24a2c2d0fd",
     "current_counts": "eba4d5a501f288231ed3235bb146b434ee9df0ae5c0fdadd6f2eb71e0acb4c48"
   },
   "source_provenance": {
@@ -5800,8 +5800,8 @@
     "paper_image_fallback": "Use the Pages artifact manifest GitHub tree/raw templates for omitted extracted paper images."
   },
   "verification_status": {
-    "live_report": "/reports/live_site_verification_2026-09-28.json",
-    "generated_at": "2026-09-28T19:18:14Z",
+    "live_report": "/reports/live_site_verification_2026-09-29.json",
+    "generated_at": "2026-09-29T03:56:03Z",
     "overall_ok": true,
     "passing": 17,
     "checked_urls": 17,
