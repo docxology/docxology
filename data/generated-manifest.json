@@ -578,7 +578,7 @@
     {
       "name": "External link report",
       "outputs": [
-        "reports/external_links_2026-09-25.json"
+        "reports/external_links_2026-09-29.json"
       ],
       "sources": [
         "all root-level public HTML plus site-critical Markdown and JSON-LD surfaces"
@@ -588,7 +588,7 @@
     {
       "name": "Public source snapshot",
       "outputs": [
-        "reports/public_source_snapshot_2026-09-24.json"
+        "reports/public_source_snapshot_2026-09-29.json"
       ],
       "sources": [
         "GitHub, ORCID, PubMed, Europe PMC, Crossref, Zenodo public APIs"
@@ -632,7 +632,7 @@
         "reports/external_links_triage_2026-09-25.md"
       ],
       "sources": [
-        "reports/external_links_2026-09-25.json"
+        "reports/external_links_2026-09-29.json"
       ],
       "command": "python3 code/orchestrators/build_external_link_triage.py"
     },
