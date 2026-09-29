@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-29T20:37:47Z",
-  "source_commit_at_generation": "eaa58ef59e38790b452e90aecfc8833886bd24dc",
+  "generated_at": "2026-09-29T21:10:45Z",
+  "source_commit_at_generation": "f83758bb917c123c0c447e07ae2cba209c7c59c4",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21866,7 +21866,7 @@
     {
       "path": "publications.html",
       "bytes": 331697,
-      "sha256": "88cc27002b9b289349f556d4bd21892e754b58177ff185a89f0540af0fc6e35b"
+      "sha256": "28c7e691ce6282818e906a520961544fd0fe358b123626f0c7e1c9d2c33ffef7"
     },
     {
       "path": "pyproject.toml",
