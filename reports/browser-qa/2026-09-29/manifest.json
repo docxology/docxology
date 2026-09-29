@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-09-29T04:25:42Z",
+  "source_commit": "63e29a179d8ac2aec67efffc16bda503639a76be",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
+  "source_tree_sha": "8a6038cce33895a625912aa69829977985b0b2da",
+  "tool": "Playwright Python sync API",
+  "scope": "progressive enhancement, interaction, responsive, CSP-adjacent runtime checks",
+  "passing": 6,
+  "count": 7,
+  "checks": [
+    {
+      "name": "core routes render without console errors",
+      "ok": true,
+      "details": {
+        "routes": 6,
+        "console_errors": 0,
+        "page_errors": 0,
+        "known_meta_csp_warnings": 0
+      },
+      "duration_ms": 13574
+    },
+    {
+      "name": "mobile menu opens, closes, and restores focus",
+      "ok": true,
+      "details": {
+        "opened_and_closed": true,
+        "focus_restored": true
+      },
+      "duration_ms": 112
+    },
+    {
+      "name": "no-JavaScript fallbacks remain usable",
+      "ok": false,
+      "error": "AssertionError: art.html missing fallback marker: full artwork data export",
+      "duration_ms": 116
+    },
+    {
+      "name": "publication filters, announcements, and sorting update state",
+      "ok": true,
+      "details": {
+        "count_before": "50 of 220 shown",
+        "count_after": "50 of 198 shown (filtered from 220)",
+        "non_paper_rows": 0,
+        "sort_state": "descending"
+      },
+      "duration_ms": 256
+    },
+    {
+      "name": "gallery lightbox traps and restores focus",
+      "ok": true,
+      "details": {
+        "trigger": "Open artwork: Solstice (Turning Point)",
+        "focus_restored": true
+      },
+      "duration_ms": 215
+    },
+    {
+      "name": "320px layout honors reduced motion without page overflow",
+      "ok": true,
+      "details": {
+        "routes": 4,
+        "viewport": "320x760",
+        "reduced_motion": true,
+        "max_overflow_px": 2
+      },
+      "duration_ms": 1140
+    },
+    {
+      "name": "forced colors and YouTube iframe policy remain covered",
+      "ok": true,
+      "details": {
+        "forced_colors": true,
+        "iframe_origin": "www.youtube-nocookie.com",
+        "iframe_title": true
+      },
+      "duration_ms": 168
+    }
+  ]
+}
