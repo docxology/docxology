@@ -628,8 +628,8 @@
     {
       "name": "External link triage",
       "outputs": [
-        "reports/external_links_triage_2026-09-25.json",
-        "reports/external_links_triage_2026-09-25.md"
+        "reports/external_links_triage_2026-09-29.json",
+        "reports/external_links_triage_2026-09-29.md"
       ],
       "sources": [
         "reports/external_links_2026-09-29.json"
@@ -639,7 +639,7 @@
     {
       "name": "Asset size audit",
       "outputs": [
-        "reports/asset_size_2026-09-25.json"
+        "reports/asset_size_2026-09-29.json"
       ],
       "sources": [
         "root HTML pages",
@@ -653,7 +653,7 @@
     {
       "name": "Static accessibility report",
       "outputs": [
-        "reports/accessibility_static_2026-09-27.json"
+        "reports/accessibility_static_2026-09-29.json"
       ],
       "sources": [
         "root HTML pages",

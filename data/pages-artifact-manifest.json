@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-29T21:39:27Z",
-  "source_commit_at_generation": "f83758bb917c123c0c447e07ae2cba209c7c59c4",
+  "generated_at": "2026-09-29T22:26:15Z",
+  "source_commit_at_generation": "6223bab22134cedb12c393b9f75dde18504dc744",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 927216562,
+    "source_bytes": 929002989,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5871,
-    "artifact_bytes": 928253964
+    "artifact_file_count": 5876,
+    "artifact_bytes": 930041209
   },
   "included_files": [
     {
@@ -121,7 +121,7 @@
     {
       "path": "active-inference.html",
       "bytes": 25413,
-      "sha256": "850e75e4b20e8fbb481a774b9e7499d95680230b77e84330815a02cb5228b6a3"
+      "sha256": "693e319247adcad2323b36de6db7d051c61cc73dd60a8f8521028add702c1dfe"
     },
     {
       "path": "agent-verify.html",
@@ -11296,7 +11296,7 @@
     {
       "path": "cognitive-security.html",
       "bytes": 27855,
-      "sha256": "b755a08c4adf2db92fe2a904009a0f717bf431f4b2408ac62c824e0a2dae335e"
+      "sha256": "798c34e2273633a1ea5c3c73fd935f7355ccab236e57ee2e528825f961eeaee1"
     },
     {
       "path": "collaborators.html",
@@ -11306,7 +11306,7 @@
     {
       "path": "computational-entomology.html",
       "bytes": 23880,
-      "sha256": "c546e4cfbf8ae5c85109222115fd0a23a937890cef58cd849307b8f850d13bc5"
+      "sha256": "003b869885c845583a8f2cc87b50016c18366d19872a0e9a8be12c7376ac8e16"
     },
     {
       "path": "data/AGENTS.md",
@@ -11526,7 +11526,7 @@
     {
       "path": "discovery.html",
       "bytes": 33468,
-      "sha256": "8c4f8a397f79b235cfb96b8b923d81b7fbce69a76487ba1909998058e01f97b7"
+      "sha256": "ca817a412ad142239a5b07c470866b86d0dd97bbecd01f0949478711c45a92fe"
     },
     {
       "path": "docs/AGENTS.md",
@@ -11821,47 +11821,47 @@
     {
       "path": "domain-active-inference.html",
       "bytes": 38489,
-      "sha256": "4c58b166db5ae7871cbe9b569db57afbdc38ecb4bb06623edeb9c7abaa5992e8"
+      "sha256": "b0e1781f86fc2fee0c3556a9866b0644ae959d5bedd832958688fbf7b6733dbb"
     },
     {
       "path": "domain-aii-ecosystem.html",
       "bytes": 26254,
-      "sha256": "4f6f83969f7d129417ca73de375b787583a797125ff81c7ed8a66a1c5406f5f3"
+      "sha256": "717186bf7b7bd0ef39eba2038793f65864739737027a5847d5e79381b090ff6a"
     },
     {
       "path": "domain-art-synergetics.html",
       "bytes": 34137,
-      "sha256": "cd415c75ddac016c8d9ed5bbecfa8218a8239e0e4f84928dab5f9fcfbb3c32e6"
+      "sha256": "aa677e00fc91ddbab1467ab713ee76c58b7b95a0cc072d8523f07ef0fded09f7"
     },
     {
       "path": "domain-biomedicine.html",
       "bytes": 32631,
-      "sha256": "e1774ba5c455020c7fb6ab086e84ce21bf6a05b798418530e581fc1d70fddb02"
+      "sha256": "82f85f77ed801162f3d59bee6cbad1c85ee75fdb9a3ad90e232325e7e289c8f6"
     },
     {
       "path": "domain-cognitive-security.html",
       "bytes": 33427,
-      "sha256": "429abe89b9a685bdc55f47c21e6f106ba4352f7a195c17ab0d5da94079ffee75"
+      "sha256": "479065bb9453decdda61737442ca712493a8c6db0169920e028f14f5b2561e40"
     },
     {
       "path": "domain-computational.html",
       "bytes": 36169,
-      "sha256": "3739dc5d69564e1692c5245562312a90ee6ebb7f8be6fd4d843641354b4b6289"
+      "sha256": "2b87af993d6bd0b515b605f2e91db18a56119c8250cf0423c6e83d9ec713f779"
     },
     {
       "path": "domain-entomology.html",
       "bytes": 35152,
-      "sha256": "e978feae138b32c5c5abbcee814ecd1d6716dbfb050f02348df7a92b03b12317"
+      "sha256": "bf285bb59a6a14ab6d7c0db5a961f27c1ad73084f5bde06a5d2ebc43f378a59b"
     },
     {
       "path": "domain-presentations-media.html",
       "bytes": 30452,
-      "sha256": "0e89e261eb463284599b410b7dd3c0f78ce8dd6749fdd00915086d77022f411e"
+      "sha256": "cd9a362d9d473c11e1b4b0c4723d5d644982611f993c91772242c417e2caf4b8"
     },
     {
       "path": "domains.html",
       "bytes": 15171,
-      "sha256": "ad5e15edfc47d297b81c4fca982ffa40fe776e3fe479c1cbe82a93af9241da55"
+      "sha256": "c878d0645fb85b696216e2d9cd01d49d3037adf5883a00bb85d16f79c46ad7a6"
     },
     {
       "path": "evidence.html",
@@ -11961,7 +11961,7 @@
     {
       "path": "insect-cognition.html",
       "bytes": 23771,
-      "sha256": "753e48d145acea34ee61cb555385c5f2d95109d1d66c10fd626b5e11498e2fbc"
+      "sha256": "3e7b0f24eb0cca1d75ac66e7a67d1115091ae76d8880c26e71a7fbbe3446a898"
     },
     {
       "path": "js/AGENTS.md",
@@ -12041,7 +12041,7 @@
     {
       "path": "llms.txt",
       "bytes": 12092,
-      "sha256": "5c9a72d00f8f7cf5e2c099a26d37a3db24a4ee917b0e4e15a47f05366ccb75af"
+      "sha256": "28f902c79ef280abc525dcc3fcc6c08bcc0a788544cc98cea757146f6fbb567d"
     },
     {
       "path": "manifest.json",
@@ -12061,7 +12061,7 @@
     {
       "path": "neurosymbolic-ai.html",
       "bytes": 23694,
-      "sha256": "51cd3b3a6a37ff0656fe134db407e8df4fc8338645e94cd83533c4f1dabc125d"
+      "sha256": "097b7630b1a373ef0798af00184fb7ff780bdbc12857cea3cb8420fbadec29fe"
     },
     {
       "path": "nft.html",
@@ -12196,7 +12196,7 @@
     {
       "path": "pages/DISCOVERY.md",
       "bytes": 15409,
-      "sha256": "baf15b45f6e16f2d5ba8f99d2346efbfe3b1e09ac4a905cf43792b48153c981d"
+      "sha256": "a5ae04c541c706a4e322b9264c4f41ccdfeafaa7eee60e4e7c97586d5a93300a"
     },
     {
       "path": "pages/DOMAINS.md",
@@ -22079,6 +22079,11 @@
       "sha256": "7227542e8dcc00c3118e578fc44adedb4961abfd6980675848748aeb3d290d44"
     },
     {
+      "path": "reports/accessibility_static_2026-09-29.json",
+      "bytes": 1713484,
+      "sha256": "9c24a182c77dd7cc80292452f2a2887e0052650d4bff5072ff032b6abca2080a"
+    },
+    {
       "path": "reports/ambiguous_pairs_triage_2026-06-26.md",
       "bytes": 2120,
       "sha256": "7a6e4fb01a8870e64ec2358bfc1fab4749adf2cf38c44262ed12c7a022a6a761"
@@ -22227,6 +22232,16 @@
       "path": "reports/external_links_triage_2026-09-25.md",
       "bytes": 10743,
       "sha256": "23bfb871dc11ea8dfe617d3cc59b01a3bb5ddbf91a11dc7d4368a4ab12e4503d"
+    },
+    {
+      "path": "reports/external_links_triage_2026-09-29.json",
+      "bytes": 60191,
+      "sha256": "6ffdd167656e846fdeb5ddf421f4a086bf272c79e0e79fed749a94c2d61a467c"
+    },
+    {
+      "path": "reports/external_links_triage_2026-09-29.md",
+      "bytes": 10720,
+      "sha256": "cf4f56574844a221af9e0f12484d19ae5b04c670a7547004000dc847dc9eb8a0"
     },
     {
       "path": "reports/gsc_preflight_2026-09-18.json",
@@ -22379,6 +22394,11 @@
       "sha256": "5f89dc1cb7692ea875ad06e602982c57788af42d38f986f4e5138c42f908efa2"
     },
     {
+      "path": "reports/reconciliation_2026-09-29.md",
+      "bytes": 2032,
+      "sha256": "3eb714f43d208f4e359c0ebbee1a5b29b8de9dd7c73bc3b13d4bfac0b0859784"
+    },
+    {
       "path": "reports/seo-discoverability-audit-2026-06-10.md",
       "bytes": 11430,
       "sha256": "50cc2ceafb7665a95737d04d941f8dbcf00ba049d28a780d858d6ba7a76b191b"
@@ -22526,7 +22546,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 416057,
-      "sha256": "9582c6ea3e53ab05ec1bdcc83b310122973923739935b5b7fe1e9eeab4ba32af"
+      "sha256": "dfc03ed8c129942133e7594df9391d9cddd9604664214aea27db9d207cacf311"
     },
     {
       "path": "software.html",
@@ -29348,6 +29368,10 @@
     },
     {
       "path": "reports/asset_size_2026-09-25.json",
+      "role": "public control metadata"
+    },
+    {
+      "path": "reports/asset_size_2026-09-29.json",
       "role": "public control metadata"
     },
     {
