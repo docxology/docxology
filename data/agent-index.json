@@ -1326,11 +1326,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 927219139,
+        "source_bytes": 927219063,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
         "artifact_file_count": 5871,
-        "artifact_bytes": 928256541
+        "artifact_bytes": 928256465
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -5767,7 +5767,7 @@
     "artworks": "32bd21124bd391638295aac6bad7a0621746c296695e10b0586351ca4069f6c3",
     "videos": "57a2b9b18f2dc17fa73865d72c70babe149fda625d3823c2c63be0e92b63171e",
     "videos_index": "4f4d6f4b11da4698726e654d5e32308fb794cc5771943e1eb1e6cae0f2e7b5d7",
-    "search": "245d952c69653d7c54ab28423cd93fadb8e7a74a612d8a6cca0664f0a8ee1cf7",
+    "search": "1046cef720b6c929f57188e0a768690aba81a365884c536cdd57b0e0c3e2d1da",
     "claims": "cc0378601b69c09833af27320a241803b207a5a4b5e0d6745dc4c1d49890f7be",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
     "coverage_exceptions": "2aac9b09a4835a29b2139a2b5163cb624b48930619608126324a8f8eacc42d1b",
@@ -5779,7 +5779,7 @@
     "catalog": "490fd111536f078c52cd313deb4f1ee871d371cd9f1a3a58b684a3e82e64026d",
     "reconciliation": "e819f32f635abfbb4d66ed65901cbc7c8ff295b1a6e51e1735d757dae17a1a39",
     "reproducibility": "89f9728748936924f010d283fca7ade580014bfce4e5ef5be4c1d69d45c8a319",
-    "generated_manifest": "c2ac741248f03d870416c66690a56e381b77dbdf3a757549e136fa5af4bce96e",
+    "generated_manifest": "ac7abab1626b280658eb165606f018fef913b10238253e0d557d050e5d6f5c85",
     "current_counts": "eba4d5a501f288231ed3235bb146b434ee9df0ae5c0fdadd6f2eb71e0acb4c48"
   },
   "source_provenance": {
@@ -5801,7 +5801,7 @@
   },
   "verification_status": {
     "live_report": "/reports/live_site_verification_2026-09-29.json",
-    "generated_at": "2026-09-29T03:56:03Z",
+    "generated_at": "2026-09-29T14:38:04Z",
     "overall_ok": true,
     "passing": 17,
     "checked_urls": 17,
