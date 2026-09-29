@@ -774,8 +774,8 @@
     {
       "name": "Visual QA",
       "outputs": [
-        "reports/visual-qa/2026-09-18/*.png",
-        "reports/visual-qa/2026-09-18/manifest.json"
+        "reports/visual-qa/2026-09-29/*.png",
+        "reports/visual-qa/2026-09-29/manifest.json"
       ],
       "sources": [
         "root HTML pages",

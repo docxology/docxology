@@ -60,7 +60,7 @@ This repository keeps public site pages, citation exports, data indexes, and QA 
 | Compact artwork gallery index | `data/artworks-index.json` | `data/artworks.json`<br>`code/orchestrators/build_artwork_index.py` | `python3 code/orchestrators/build_artwork_index.py` |
 | Artwork landing pages and curated collections | `artworks/*.html`<br>`art-collections/*.html`<br>`data/artwork-pages-manifest.json` | `data/artworks.json`<br>`pages/ART_COLLECTIONS.md`<br>`code/src/artwork_pages.py`<br>`code/src/art_collections.py`<br>`code/orchestrators/build_artwork_pages.py` | `python3 code/orchestrators/build_artwork_pages.py` |
 | GitHub-rendered README mirror | `.github/README.md` | `README.md`<br>`code/orchestrators/build_github_readme.py` | `python3 code/orchestrators/build_github_readme.py` |
-| Visual QA | `reports/visual-qa/2026-09-18/*.png`<br>`reports/visual-qa/2026-09-18/manifest.json` | `root HTML pages`<br>`style.css` | `python3 code/orchestrators/visual_qa.py` |
+| Visual QA | `reports/visual-qa/2026-09-29/*.png`<br>`reports/visual-qa/2026-09-29/manifest.json` | `root HTML pages`<br>`style.css` | `python3 code/orchestrators/visual_qa.py` |
 
 ## Maintenance & Utility Orchestrators
 
