@@ -96,7 +96,7 @@ keywords: "Daniel Ari Friedman, discovery, ORCID, PubMed, Zenodo, GitHub, resear
 | Asset-size audit | [reports/asset_size_2026-09-25.json](../reports/asset_size_2026-09-25.json) | Size budget report for public assets and generated exports |
 | Static accessibility report | [reports/accessibility_static_2026-09-27.json](../reports/accessibility_static_2026-09-27.json) | Static accessibility checks for root HTML pages |
 | Browser smoke manifest | [reports/browser-smoke/2026-09-29/manifest.json](../reports/browser-smoke/2026-09-29/manifest.json) | Browser-rendered smoke screenshots for high-priority pages |
-| Visual QA manifest | [reports/visual-qa/2026-09-18/manifest.json](../reports/visual-qa/2026-09-18/manifest.json) | Playwright screenshot manifest for key pages and mobile/desktop viewports |
+| Visual QA manifest | [reports/visual-qa/2026-09-29/manifest.json](../reports/visual-qa/2026-09-29/manifest.json) | Playwright screenshot manifest for key pages and mobile/desktop viewports |
 | Citation exports | [BibTeX](../bibliography.bib) · [CSL JSON](../bibliography.csl.json) · [RIS](../bibliography.ris) | Citation-manager formats generated from `BIBLIOGRAPHY.md` |
 
 ## Official Organization Pages
