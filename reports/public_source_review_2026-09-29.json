@@ -4085,10 +4085,15 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "a5b7246117f3dab421b2cdd419830ff4978c4d14",
-  "source_tree_sha": "c949222afe47a5f76a3078baa1f5445a6fcc21ab",
-  "source_worktree_clean": true,
-  "source_worktree_dirty_paths": [],
+  "source_commit": "342b572fdf8927477eb12e594b66cd36bc3b86ac",
+  "source_tree_sha": "aa017a24574e1465b66c493b05b5582bd9932235",
+  "source_worktree_clean": false,
+  "source_worktree_dirty_paths": [
+    "search-index-content-video.json",
+    "search-index-content-work.json",
+    "search-index-core.json",
+    "search-index.json"
+  ],
   "summary": {
     "applied": 181,
     "categories": {
