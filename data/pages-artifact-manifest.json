@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-30T05:51:04Z",
-  "source_commit_at_generation": "390d2c7f223de66b4f300960f868b421361fe4bc",
+  "generated_at": "2026-09-30T06:04:56Z",
+  "source_commit_at_generation": "8f9de0a5bc23d37bd1891b5e71380e21c5211e02",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -11346,7 +11346,7 @@
     {
       "path": "data/claims.json",
       "bytes": 12976,
-      "sha256": "92e21ed4c7f158084315579f2b760c49e1a5908cd1aeb9d2aec8dfc24f98526e"
+      "sha256": "400f27f1c875cc76eee87298f2d06ffc6555e39c0271c68e9bfdb324eb1ec3f7"
     },
     {
       "path": "data/coverage-exceptions.json",
@@ -11376,7 +11376,7 @@
     {
       "path": "data/organizations.json",
       "bytes": 1446,
-      "sha256": "c733242ea6707a11f29341163aa6e9242d954b6dfd18cfeac54fad62272259cb"
+      "sha256": "dd37c4c2402d293894b996635a6353214534a4aa2df8fae0edd3ee038bc9266a"
     },
     {
       "path": "data/paired-publication-decisions.json",
@@ -11386,7 +11386,7 @@
     {
       "path": "data/people.json",
       "bytes": 1237,
-      "sha256": "32dcfeffddfd76b40ee4456295dfa9e90b2bd05d694c71076f69584b3238f613"
+      "sha256": "3e33b3d080c50547986dd84296ed0fdb8e3ac383f957fa965ad50b4ebdc82650"
     },
     {
       "path": "data/public-source-observation-decisions.json",
@@ -11456,7 +11456,7 @@
     {
       "path": "data/software.json",
       "bytes": 78699,
-      "sha256": "c60392a7f8c2f3f9970b791773142b98a3e58933ec3bffaf11eafb2e0fae3134"
+      "sha256": "88be7e583cdbd6ebadebc27166abeae3a7d2c6376ea65200a9645444aa443862"
     },
     {
       "path": "data/verification-log.json",
@@ -11866,7 +11866,7 @@
     {
       "path": "evidence.html",
       "bytes": 21520,
-      "sha256": "51f6ab5882bf6dd184b59a395f76adacc15b95e4adaa24b6d51fc7bd10c7c7de"
+      "sha256": "e3a39eb1c78257abdada4173521cafd4c0c7dcc3ff166ed72ea379ec140189f1"
     },
     {
       "path": "exports.html",
@@ -12206,7 +12206,7 @@
     {
       "path": "pages/EVIDENCE.md",
       "bytes": 10488,
-      "sha256": "af294fcb1488e57aa84f2b62a8ec289f38e2b69bd5387620d87a7defcbe6aefb"
+      "sha256": "e8cf1257f6b120a577613d6f00211f233d8897a4e7b72c0621c52bfd5a7877c9"
     },
     {
       "path": "pages/LINKS.md",
@@ -21866,7 +21866,7 @@
     {
       "path": "publications.html",
       "bytes": 331697,
-      "sha256": "28c7e691ce6282818e906a520961544fd0fe358b123626f0c7e1c9d2c33ffef7"
+      "sha256": "2c86c3830add5e445fd803b3977bcbee61af7755d6ba7dd74f3392bace640c52"
     },
     {
       "path": "pyproject.toml",
