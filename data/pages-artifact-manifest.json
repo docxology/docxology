@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-30T00:07:04Z",
+  "generated_at": "2026-09-30T00:52:35Z",
   "source_commit_at_generation": "a552f2f437c29f9cf9dd52143ce44c44a0455492",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
@@ -24,8 +24,8 @@
     "source_bytes": 927216335,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5871,
-    "artifact_bytes": 928253737
+    "artifact_file_count": 5872,
+    "artifact_bytes": 928253853
   },
   "included_files": [
     {
@@ -29359,15 +29359,19 @@
       "role": "public control metadata"
     },
     {
+      "path": "reports/pages_artifact_growth_2026-09-30.json",
+      "role": "public control metadata"
+    },
+    {
       "path": "reports/public_source_review_2026-09-27.json",
       "role": "public control metadata"
     },
     {
-      "path": "reports/public_source_review_2026-09-29.json",
+      "path": "reports/public_source_review_2026-09-30.json",
       "role": "public control metadata"
     },
     {
-      "path": "reports/public_source_review_2026-09-29.md",
+      "path": "reports/public_source_review_2026-09-30.md",
       "role": "public control metadata"
     }
   ],
@@ -29424,8 +29428,8 @@
     ]
   },
   "omitted_superseded_reports": {
-    "count": 529,
-    "bytes": 117745677,
+    "count": 531,
+    "bytes": 117945204,
     "examples": [
       "reports/accessibility_static_2026-05-13.json",
       "reports/accessibility_static_2026-05-15.json",
@@ -29449,5 +29453,5 @@
       "reports/accessibility_static_2026-06-30.json"
     ]
   },
-  "growth_report": "reports/pages_artifact_growth_2026-09-29.json"
+  "growth_report": "reports/pages_artifact_growth_2026-09-30.json"
 }

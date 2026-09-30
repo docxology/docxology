@@ -3843,12 +3843,8 @@
   "schema_version": "1.0",
   "source_commit": "a552f2f437c29f9cf9dd52143ce44c44a0455492",
   "source_tree_sha": "15a5af7fb87722d776c976d85655813cb6be7c86",
-  "source_worktree_clean": false,
-  "source_worktree_dirty_paths": [
-    "data/pages-artifact-manifest.json",
-    "data/release-integrity.json",
-    "reports/pages_artifact_growth_2026-09-29.json"
-  ],
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
   "summary": {
     "applied": 181,
     "categories": {
