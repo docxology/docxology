@@ -9,9 +9,9 @@
       "source_commit": null
     },
     "claims_ledger": {
-      "generated_at": "2026-09-29T21:20:50Z",
+      "generated_at": "2026-09-30T06:01:34Z",
       "path": "data/claims.json",
-      "sha256": "92e21ed4c7f158084315579f2b760c49e1a5908cd1aeb9d2aec8dfc24f98526e",
+      "sha256": "400f27f1c875cc76eee87298f2d06ffc6555e39c0271c68e9bfdb324eb1ec3f7",
       "source_commit": null
     },
     "doi_role_review": {
@@ -51,10 +51,10 @@
       "source_commit": null
     },
     "public_source_snapshot": {
-      "generated_at": "2026-09-29T19:09:40.867706+00:00",
-      "path": "reports/public_source_snapshot_2026-09-29.json",
-      "sha256": "bba48b9aec99bd5e83332db4721dd57f8cdb9a10fad92c1737fa82a77c9780f7",
-      "source_commit": "c65424ceae1bddbfde0b8658a922a47bed274755"
+      "generated_at": "2026-09-30T04:40:05.337364+00:00",
+      "path": "reports/public_source_snapshot_2026-09-30.json",
+      "sha256": "f0dbd6d14f420cea7251cba0a14e81828781a3d22416502134a25890ec590504",
+      "source_commit": "ba2fd036ae42cd92927ef995a935a0d7c76fe87f"
     },
     "repository_classification": {
       "generated_at": "2026-09-26T01:17:51Z",
@@ -1129,7 +1129,7 @@
         "data/claims.json",
         "https://activeinference.institute/structure/board-of-directors/",
         "reports/public_source_inventory_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "applied"
     },
@@ -1163,7 +1163,7 @@
         "https://activeinference.institute/structure/board-of-directors/",
         "https://activeinference.institute/structure/officers/",
         "reports/public_source_inventory_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "applied"
     },
@@ -1190,7 +1190,7 @@
         "data/biographical-claim-decisions.json",
         "data/claims.json",
         "reports/public_source_inventory_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "applied"
     },
@@ -1224,7 +1224,7 @@
         "data/biographical-claim-decisions.json",
         "data/claims.json",
         "reports/public_source_inventory_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "applied"
     },
@@ -1257,7 +1257,7 @@
         "data/biographical-claim-decisions.json",
         "data/claims.json",
         "reports/public_source_inventory_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "applied"
     },
@@ -1289,7 +1289,7 @@
         "data/biographical-claim-decisions.json",
         "data/claims.json",
         "reports/public_source_inventory_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "applied"
     },
@@ -1316,7 +1316,7 @@
         "data/biographical-claim-decisions.json",
         "data/claims.json",
         "reports/public_source_inventory_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "applied"
     },
@@ -1345,7 +1345,7 @@
         "data/biographical-claim-decisions.json",
         "data/claims.json",
         "reports/public_source_inventory_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "applied"
     },
@@ -1372,7 +1372,7 @@
         "data/claims.json",
         "https://activeinference.institute/structure/scientific-advisory-board/",
         "reports/public_source_inventory_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "deferred"
     },
@@ -1399,7 +1399,7 @@
         "data/claims.json",
         "https://activeinference.institute/projects/textbook-group/",
         "reports/public_source_inventory_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "deferred"
     },
@@ -1432,7 +1432,7 @@
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "deferred"
     },
@@ -1465,7 +1465,7 @@
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "deferred"
     },
@@ -1498,7 +1498,7 @@
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "deferred"
     },
@@ -1531,7 +1531,7 @@
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "deferred"
     },
@@ -1562,7 +1562,7 @@
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "deferred"
     },
@@ -1593,7 +1593,36 @@
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
+      ],
+      "status": "deferred"
+    },
+    {
+      "candidate": {
+        "curated_targets": [],
+        "current": {
+          "first_doi": "10.5281/zenodo.8415313",
+          "first_title": "An Account of Active Inference Modeling",
+          "total": 159
+        },
+        "current_sha256": "1ab9bd7c1bcdca1557500f2a0106b8de53f3259631744a626cd7132abc0dec83",
+        "label": "Zenodo ORCID-linked records",
+        "previous": {
+          "first_doi": "10.5281/zenodo.22667291",
+          "first_title": "EvoJump: A Comprehensive Framework for Evolutionary Ontogenetic Analysis",
+          "total": 159
+        },
+        "previous_sha256": "a8b26861dfcd7aec03a624f943305c1073f5ea1430eba5020e619eac4042c3b8",
+        "review_decision": "",
+        "review_rationale": ""
+      },
+      "category": "public_source_observation",
+      "id": "public-source-observation:Zenodo ORCID-linked records",
+      "reason": "A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.",
+      "sources": [
+        "data/public-source-observation-decisions.json",
+        "reports/public_source_snapshot_2026-09-24.json",
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "deferred"
     },
@@ -1622,7 +1651,7 @@
       "sources": [
         "data/public-source-observation-decisions.json",
         "reports/public_source_snapshot_2026-09-24.json",
-        "reports/public_source_snapshot_2026-09-29.json"
+        "reports/public_source_snapshot_2026-09-30.json"
       ],
       "status": "deferred"
     },
@@ -3821,7 +3850,7 @@
       "candidate": {
         "pairing_report_date": "2026-09-24",
         "pairing_report_generated_at": "2026-09-24T21:01:50Z",
-        "public_source_snapshot_generated_at": "2026-09-29T19:09:40.867706Z",
+        "public_source_snapshot_generated_at": "2026-09-30T04:40:05.337364Z",
         "refresh_note": "",
         "refresh_state": "stale",
         "warnings": []
@@ -3841,8 +3870,8 @@
     "pairing_refresh_status": "auto"
   },
   "schema_version": "1.0",
-  "source_commit": "a552f2f437c29f9cf9dd52143ce44c44a0455492",
-  "source_tree_sha": "15a5af7fb87722d776c976d85655813cb6be7c86",
+  "source_commit": "c6fb405fad1c563a12e079e0196ba2b4203fa2e2",
+  "source_tree_sha": "5046e6110ccf4bb6598cff6c8f57c11fa447e6cd",
   "source_worktree_clean": true,
   "source_worktree_dirty_paths": [],
   "summary": {
@@ -3860,7 +3889,7 @@
       },
       "public_source_observation": {
         "applied": 0,
-        "deferred": 7,
+        "deferred": 8,
         "rejected": 0
       },
       "repository_classification": {
@@ -3879,8 +3908,8 @@
         "rejected": 0
       }
     },
-    "deferred": 16,
-    "items": 197,
+    "deferred": 17,
+    "items": 198,
     "rejected": 0,
     "review_required": true
   }

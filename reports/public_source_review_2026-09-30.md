@@ -2,21 +2,21 @@
 
 > Review-only evidence. This report does not change curated bibliography data, claims, Scholar metrics, or repository classifications.
 
-Source commit: `a552f2f437c29f9cf9dd52143ce44c44a0455492`
+Source commit: `c6fb405fad1c563a12e079e0196ba2b4203fa2e2`
 
 ## Disposition summary
 
 | Status | Items |
 |---|---:|
 | Applied | 181 |
-| Deferred | 16 |
+| Deferred | 17 |
 | Rejected | 0 |
 
 | Category | Applied | Deferred | Rejected |
 |---|---:|---:|---:|
 | `ambiguous_doi_change` | 64 | 0 | 0 |
 | `biographical_claim_change` | 8 | 2 | 0 |
-| `public_source_observation` | 0 | 7 | 0 |
+| `public_source_observation` | 0 | 8 | 0 |
 | `repository_classification` | 108 | 6 | 0 |
 | `scholar_metric_change` | 1 | 0 | 0 |
 | `zenodo_candidate` | 0 | 1 | 0 |
@@ -24,14 +24,14 @@ Source commit: `a552f2f437c29f9cf9dd52143ce44c44a0455492`
 ## Evidence inputs
 
 - `biographical_claim_decisions`: `data/biographical-claim-decisions.json` (`1d01574cb4fb9c626202fd7572f637da37c4602ce38c2b79bd0c2390c057c60f`)
-- `claims_ledger`: `data/claims.json` (`92e21ed4c7f158084315579f2b760c49e1a5908cd1aeb9d2aec8dfc24f98526e`)
+- `claims_ledger`: `data/claims.json` (`400f27f1c875cc76eee87298f2d06ffc6555e39c0271c68e9bfdb324eb1ec3f7`)
 - `doi_role_review`: `reports/doi_role_reconciliation_2026-08-25.json` (`8813014df946b8fd6b1777de95d16e57300fba56b32f3da59819bf8c5d8a01a6`)
 - `paired_publication_decisions`: `data/paired-publication-decisions.json` (`f1cac466f885ccc9ed92cac8039575fabfe1778a4563088af79c72cdbfaa498a`)
 - `paired_publications`: `reports/paired_publications_2026-09-24.json` (`2f95360123cdc2d7f16021312a4e753603cbc37fa8f3b257082dbba988072388`)
 - `previous_public_source_snapshot`: `reports/public_source_snapshot_2026-09-24.json` (`d0236514f9b64677a3d23e2745ae9f873773d43c20581bd87b7291031c0a59b9`)
 - `public_source_inventory`: `reports/public_source_inventory_2026-09-24.json` (`ad47ece1be15f93d235e8f7d067eb9fb48f7a4b61433b46a91a1505fc13e5bff`)
 - `public_source_observation_decisions`: `data/public-source-observation-decisions.json` (`cff826363c7ca0e66bf583ee039a27cf0bfebc05ef57fb3222a8d91f50f73714`)
-- `public_source_snapshot`: `reports/public_source_snapshot_2026-09-29.json` (`bba48b9aec99bd5e83332db4721dd57f8cdb9a10fad92c1737fa82a77c9780f7`)
+- `public_source_snapshot`: `reports/public_source_snapshot_2026-09-30.json` (`f0dbd6d14f420cea7251cba0a14e81828781a3d22416502134a25890ec590504`)
 - `repository_classification`: `data/repository-classification.json` (`782da5e4f884230dd1285dc143104427ab17a433c12909b8a5ae0cf1dc17a31a`)
 - `scholar_snapshot`: `data/scholar-snapshot.json` (`d64b9a09ec7c55c3d276bbdeb516cf910d6778c47c5b1493ee791c18dc4dbce2`)
 - `scholar_verification_receipt`: `data/scholar-verification-receipt.json` (`736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5`)
@@ -46,6 +46,7 @@ Source commit: `a552f2f437c29f9cf9dd52143ce44c44a0455492`
 - **`public_source_observation` — public-source-observation:GitHub repo ActiveInferenceInstitute/fep_lean**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`public_source_observation` — public-source-observation:GitHub user ActiveInferenceInstitute**: A public-source observation changed since the prior snapshot. Review its meaning before changing any curated claim or derivative.
 - **`public_source_observation` — public-source-observation:GitHub user docxology**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
+- **`public_source_observation` — public-source-observation:Zenodo ORCID-linked records**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`public_source_observation` — public-source-observation:Zenodo exact-name creator records**: A durable review decision exists, but its SHA-bound before/after evidence no longer matches; re-review is required.
 - **`repository_classification` — repository:ActiveInferenceInstitute/Active_InferAnts**: The repository remains outside the curated catalog pending a human classification decision.
 - **`repository_classification` — repository:ActiveInferenceInstitute/GEO_INFER**: The repository remains outside the curated catalog pending a human classification decision.
