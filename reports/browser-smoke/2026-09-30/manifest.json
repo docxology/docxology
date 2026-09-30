@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-09-30T04:44:43Z",
+  "source_commit": "ba2fd036ae42cd92927ef995a935a0d7c76fe87f",
+  "source_worktree_clean": true,
+  "source_worktree_dirty_paths": [],
+  "source_tree_sha": "5253ccb9c7ef37ddf5e92926581d3afaf45f6410",
+  "tool": "playwright screenshot",
+  "note": "Selector-based smoke checks for core local site behavior.",
+  "passing": 10,
+  "count": 10,
+  "checks": [
+    {
+      "name": "home",
+      "page": "index.html",
+      "selector": "h1",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-30/home.png",
+      "screenshot_sha256": "aa128b42710bee2f3d07e8259d284e62b6ad9b91f3d4d1dd458d40da3a008130",
+      "stdout": "Navigating to http://127.0.0.1:60472/index.html\nWaiting for selector h1...\nWaiting for timeout 500...\nCapturing screenshot into /Volumes/external_drive/Git/projects/ongoing/docxology/docxology/reports/browser-smoke/2026-09-30/home.png",
+      "stderr": ""
+    },
+    {
+      "name": "publications",
+      "page": "publications.html",
+      "selector": "table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-30/publications.png",
+      "screenshot_sha256": "7c65ab85cb3d029f0bd8b05be207d1b8a97ebd426e0dbc62391d2acc2d12c2e3",
+      "stdout": "Navigating to http://127.0.0.1:60472/publications.html\nWaiting for selector table...\nWaiting for timeout 500...\nCapturing screenshot into /Volumes/external_drive/Git/projects/ongoing/docxology/docxology/reports/browser-smoke/2026-09-30/publications.png",
+      "stderr": ""
+    },
+    {
+      "name": "works",
+      "page": "works/index.html",
+      "selector": ".work-row",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-30/works.png",
+      "screenshot_sha256": "2792746a276462568928b78adbc79eb2041549d729ef0c1141471efa4398852c",
+      "stdout": "Navigating to http://127.0.0.1:60472/works/index.html\nWaiting for selector .work-row...\nWaiting for timeout 500...\nCapturing screenshot into /Volumes/external_drive/Git/projects/ongoing/docxology/docxology/reports/browser-smoke/2026-09-30/works.png",
+      "stderr": ""
+    },
+    {
+      "name": "search",
+      "page": "search.html?q=active%20inference",
+      "selector": ".result-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-30/search.png",
+      "screenshot_sha256": "95f9b28e9587e731743439569680ab359810b4481e584453fddf4c9ccbd7a9d8",
+      "stdout": "Navigating to http://127.0.0.1:60472/search.html?q=active%20inference\nWaiting for selector .result-card...\nWaiting for timeout 500...\nCapturing screenshot into /Volumes/external_drive/Git/projects/ongoing/docxology/docxology/reports/browser-smoke/2026-09-30/search.png",
+      "stderr": ""
+    },
+    {
+      "name": "repositories",
+      "page": "repositories.html",
+      "selector": ".inventory-table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-30/repositories.png",
+      "screenshot_sha256": "17bfb256310c8a81fdef7ff11b8777a78e0eb98142e023fa793ef196f01f67ae",
+      "stdout": "Navigating to http://127.0.0.1:60472/repositories.html\nWaiting for selector .inventory-table...\nWaiting for timeout 500...\nCapturing screenshot into /Volumes/external_drive/Git/projects/ongoing/docxology/docxology/reports/browser-smoke/2026-09-30/repositories.png",
+      "stderr": ""
+    },
+    {
+      "name": "repository-forks",
+      "page": "repositories-forks.html",
+      "selector": ".inventory-table",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-30/repository-forks.png",
+      "screenshot_sha256": "5119807b11895d53d561080493bc843664f138fc5206f66a97cf308c5c63a265",
+      "stdout": "Navigating to http://127.0.0.1:60472/repositories-forks.html\nWaiting for selector .inventory-table...\nWaiting for timeout 500...\nCapturing screenshot into /Volumes/external_drive/Git/projects/ongoing/docxology/docxology/reports/browser-smoke/2026-09-30/repository-forks.png",
+      "stderr": ""
+    },
+    {
+      "name": "catalog",
+      "page": "catalog.html",
+      "selector": ".catalog-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-30/catalog.png",
+      "screenshot_sha256": "8265720e0e538256dc122a9cb80fd5560559d5b4d92b22b3c31488880d6336d2",
+      "stdout": "Navigating to http://127.0.0.1:60472/catalog.html\nWaiting for selector .catalog-card...\nWaiting for timeout 500...\nCapturing screenshot into /Volumes/external_drive/Git/projects/ongoing/docxology/docxology/reports/browser-smoke/2026-09-30/catalog.png",
+      "stderr": ""
+    },
+    {
+      "name": "updates",
+      "page": "updates.html",
+      "selector": ".update-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-30/updates.png",
+      "screenshot_sha256": "262acb2fa08862540a45b1a754b7a9f2998e912f280f2c35af79d3ec69997d7b",
+      "stdout": "Navigating to http://127.0.0.1:60472/updates.html\nWaiting for selector .update-card...\nWaiting for timeout 500...\nCapturing screenshot into /Volumes/external_drive/Git/projects/ongoing/docxology/docxology/reports/browser-smoke/2026-09-30/updates.png",
+      "stderr": ""
+    },
+    {
+      "name": "art",
+      "page": "art.html",
+      "selector": ".art-card",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-30/art.png",
+      "screenshot_sha256": "a48e15fd5279d8a787072c47df610c2b5b37010c4fbab400945d420ca1834d77",
+      "stdout": "Navigating to http://127.0.0.1:60472/art.html\nWaiting for selector .art-card...\nWaiting for timeout 500...\nCapturing screenshot into /Volumes/external_drive/Git/projects/ongoing/docxology/docxology/reports/browser-smoke/2026-09-30/art.png",
+      "stderr": ""
+    },
+    {
+      "name": "videos",
+      "page": "videos.html",
+      "selector": ".video-topic-panel",
+      "ok": true,
+      "screenshot": "reports/browser-smoke/2026-09-30/videos.png",
+      "screenshot_sha256": "01d548321f8e726d24545eab7c3424f01c313878d3c8537f169466c780815955",
+      "stdout": "Navigating to http://127.0.0.1:60472/videos.html\nWaiting for selector .video-topic-panel...\nWaiting for timeout 500...\nCapturing screenshot into /Volumes/external_drive/Git/projects/ongoing/docxology/docxology/reports/browser-smoke/2026-09-30/videos.png",
+      "stderr": ""
+    }
+  ]
+}
