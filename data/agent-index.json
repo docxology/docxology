@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "generated_at": "2026-09-29T20:18:37+00:00",
+  "generated_at": "2026-09-30T05:48:55+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -1302,14 +1302,14 @@
           "Series": 2
         }
       },
-      "generated_at": "2026-09-29T20:18:37+00:00",
+      "generated_at": "2026-09-30T05:48:55+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
         "paired_publication_decisions": "data/paired-publication-decisions.json",
         "paired_publications": "reports/paired_publications_2026-09-24.json",
         "paper_folders": "papers/README.md",
-        "public_source_snapshot": "reports/public_source_snapshot_2026-09-29.json",
+        "public_source_snapshot": "reports/public_source_snapshot_2026-09-30.json",
         "software_catalog": "pages/SOFTWARE.md",
         "software_export": "data/software.json",
         "works_export": "data/works.json"
@@ -5780,7 +5780,7 @@
     "reconciliation": "2c099842f24482ceb76d20e8c04b9d5b1d555df60a45dec973b8ee3966b77bc8",
     "reproducibility": "89f9728748936924f010d283fca7ade580014bfce4e5ef5be4c1d69d45c8a319",
     "generated_manifest": "4c106fac45f3cb7dff438b8ef2e38e5542d38ebb0f787b30aa9bc600d32a1983",
-    "current_counts": "d3c9ae06360b32b0d0de958e30f42fa75f71faa7b35587bd3088f48c8580f945"
+    "current_counts": "19fb90152554d2d95c333341a2cf53f10536f6aa34b023bf2a38882164ac5b23"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
