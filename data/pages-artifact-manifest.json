@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-30T06:37:15Z",
-  "source_commit_at_generation": "8f9de0a5bc23d37bd1891b5e71380e21c5211e02",
+  "generated_at": "2026-09-30T06:45:08Z",
+  "source_commit_at_generation": "f923b0d55e99272b508266959f7889070b5ae91e",
   "canonical_origin": "https://danielarifriedman.com/",
   "github_fallback": {
     "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -21,11 +21,11 @@
     "release_hard_ceiling_bytes": 943718400,
     "safety_ceiling_bytes": 943718400,
     "warning_bytes": 933232640,
-    "source_bytes": 927214498,
+    "source_bytes": 928930014,
     "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
     "manifest_bytes_excluded_from_source_bytes": true,
-    "artifact_file_count": 5871,
-    "artifact_bytes": 928251901
+    "artifact_file_count": 5874,
+    "artifact_bytes": 929967875
   },
   "included_files": [
     {
@@ -22079,6 +22079,11 @@
       "sha256": "9c24a182c77dd7cc80292452f2a2887e0052650d4bff5072ff032b6abca2080a"
     },
     {
+      "path": "reports/accessibility_static_2026-09-30.json",
+      "bytes": 1713484,
+      "sha256": "8a40a373286cc92fe372c2c7e4276bf1837b35bbb364818827eed9779e08f689"
+    },
+    {
       "path": "reports/ambiguous_pairs_triage_2026-06-26.md",
       "bytes": 2120,
       "sha256": "7a6e4fb01a8870e64ec2358bfc1fab4749adf2cf38c44262ed12c7a022a6a761"
@@ -22377,6 +22382,11 @@
       "path": "reports/reconciliation_2026-09-29.md",
       "bytes": 2032,
       "sha256": "3eb714f43d208f4e359c0ebbee1a5b29b8de9dd7c73bc3b13d4bfac0b0859784"
+    },
+    {
+      "path": "reports/reconciliation_2026-09-30.md",
+      "bytes": 2032,
+      "sha256": "c3702cf44014588d6ee3b7a7d0ba3f725650f7e5c0d37e09bb60c12d7614ee89"
     },
     {
       "path": "reports/seo-discoverability-audit-2026-06-10.md",
@@ -29348,6 +29358,10 @@
     },
     {
       "path": "reports/asset_size_2026-09-29.json",
+      "role": "public control metadata"
+    },
+    {
+      "path": "reports/asset_size_2026-09-30.json",
       "role": "public control metadata"
     },
     {
