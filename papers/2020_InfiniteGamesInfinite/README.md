@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: “Inventing a Remote Culture to Deal with Pandemics”, and was done so with the
-- How are global online narratives constructed and received in 2020?
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

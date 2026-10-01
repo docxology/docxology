@@ -1,13 +1,13 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "NarrativeEcosystems"
+name: "Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier"
 description: "Edited 2021 COGSEC volume from the Narrative Information Management (NIM-21) initiative: Narrative Information Management; Digital Rhetorical Ecosystem Analysis; Knowledge Management Archipelago; and Active Inference in Modeling Conflict. Edited by R..."
 tags: ["narrative-information-ecosystems", "cognitive-security", "sensemaking", "narrative-information-management", "digital-rhetoric", "knowledge-management", "active-inference", "conflict-modeling"]
 domain: "Cognitive Security"
-citation: "Richard J. Cordes, Daniel A. Friedman (editors); Shaun Applegate-Swanson, V. Bleu Knight, Alexandra Mikhailova (chapter authors) (2021). *NarrativeEcosystems*. Cognitive Security."
+citation: "Richard J. Cordes, Daniel A. Friedman (editors); Shaun Applegate-Swanson, V. Bleu Knight, Alexandra Mikhailova (chapter authors) (2021). *Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier*. COGSEC.org."
 ---
 
-# NarrativeEcosystems
+# Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier
 
 **Richard J. Cordes, Daniel A. Friedman (editors); Shaun Applegate-Swanson, V. Bleu Knight, Alexandra Mikhailova (chapter authors)** (2021) · Cognitive Security
 
@@ -19,8 +19,7 @@ This work addresses topics in **Cognitive Security**: narrative information ecos
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Use the canonical citation above.
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

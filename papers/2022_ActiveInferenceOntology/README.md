@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 ActiveInferenceOntology
+# 🧠 An Active Inference Ontology for Decentralized Science
 
-**Daniel A. Friedman, Virginia Bleu Knight** (2022) · *Zenodo*
+**Daniel Friedman, Shaun Applegate-Swanson, Jessica Angeli Balbuena, Arhan Choudhury, RJ Cordes, Shady El Damaty, Avel Guénin—Carlut, V. Bleu Knight, Ivan Metelkin, Siddhant Shrivastava, Amit Kumar Singh, Jakub Smékal, Tuttle. Caleb, Alexander Vyatkin** (2022) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.6320574-blue)](https://doi.org/10.5281/zenodo.6320574)
 
@@ -19,11 +19,9 @@
 ## Methods
 
 - Active Inference
-- Free energy minimization
 
 ## Key Findings
 
-- We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature.
 - Analysis of The ontology provide...
 
 ## Artifacts
@@ -37,7 +35,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Virginia Bleu Knight (2022). *ActiveInferenceOntology*. Zenodo. DOI: 10.5281/zenodo.6320574. URL: https://doi.org/10.5281/zenodo.6320574.
+> Daniel Friedman, Shaun Applegate-Swanson, Jessica Angeli Balbuena, Arhan Choudhury, RJ Cordes, Shady El Damaty, Avel Guénin—Carlut, V. Bleu Knight, Ivan Metelkin, Siddhant Shrivastava, Amit Kumar Singh, Jakub Smékal, Tuttle. Caleb, Alexander Vyatkin (2022). *An Active Inference Ontology for Decentralized Science*. Zenodo. DOI: 10.5281/zenodo.6320574. URL: https://doi.org/10.5281/zenodo.6320574.
 
 ## Related
 

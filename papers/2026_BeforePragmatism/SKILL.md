@@ -1,15 +1,15 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "BeforePragmatism"
+name: "Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology"
 description: "Before Pragmatism Had a Name examines how William Blake's America: A Prophecy anticipates American anticipatory epistemology. The paper identifies six structural convergences between Blake's prophetic..."
 tags: ["william-blake", "pragmatism", "anticipatory-epistemology", "america-a-prophecy", "peirce", "dewey", "james", "prophetic-vision"]
 domain: "Art & Synergetics"
-citation: "Daniel Ari Friedman (2026). *BeforePragmatism*. Art & Synergetics."
+citation: "Daniel Ari Friedman (2026). *Before Pragmatism Had a Name: Blake's \"America A Prophecy\" Anticipates American Anticipatory Epistemology*. Zenodo."
 doi: "10.5281/zenodo.18807970"
 artifact_doi: "10.5281/zenodo.18984939"
 ---
 
-# BeforePragmatism
+# Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology
 
 **Daniel Ari Friedman** (2026) · Art & Synergetics
 
@@ -21,8 +21,7 @@ This work addresses topics in **Art & Synergetics**: William Blake, pragmatism, 
 
 Primary methods and techniques applied in this work:
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -59,5 +58,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.18807970`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

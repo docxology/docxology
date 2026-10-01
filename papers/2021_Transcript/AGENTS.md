@@ -4,7 +4,7 @@
 
 **Paper**: Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021 (2021)
 **Domain**: Active Inference
-**Authors**: Karl Friston, David Standish Douglass, Maria Luiza Iennaco de Vasconcelos, Stephen Sillett, Lorena Sganzerla, Dean Tickles, and 3 others
+**Authors**: Karl Friston, David Standish Douglass, Maria Luiza Iennaco de Vasconcelos, Stephen Sillett, Lorena Sganzerla, Dean Tickles, Ivan Metelkin, Alex Vyatkin, Daniel Ari Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Bayesian modeling and inference
-- Identifies findings: On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston., The Symposium was structured in three sections, corresponding to the Organizational Units of the Active Inference Lab: Education, Communication, and Tools.
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

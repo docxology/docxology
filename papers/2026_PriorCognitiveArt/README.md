@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

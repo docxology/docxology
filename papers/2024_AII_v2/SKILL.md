@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "AII_v2"
+name: "The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)"
 description: "Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and ap..."
 tags: ["active-inference-institute", "organizational-update", "open-science", "community"]
 domain: "AII Ecosystem"
-citation: "Active Inference Institute (2024). *AII_v2*. AII Ecosystem."
+citation: "Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker (2024). *The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)*. Zenodo."
 doi: "10.5281/zenodo.14108992"
 ---
 
-# AII_v2
+# The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)
 
-**Active Inference Institute** (2024) · AII Ecosystem
+**Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker** (2024) · AII Ecosystem
 
 ## Context
 
@@ -20,14 +20,13 @@ This work addresses topics in **AII Ecosystem**: Active Inference Institute, org
 
 Primary methods and techniques applied in this work:
 
-- Program coordination
-- Community governance design
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and ap
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.14108992`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Transcript from livestream on July 25, 2023 at the Active Inference Institute.
-- YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/tree/main/Gu
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

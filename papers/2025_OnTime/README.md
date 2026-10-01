@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 OnTime
+# 🎨 On Time
 
-**Daniel A. Friedman** (2025) · *Zenodo*
+**Daniel Ari Friedman** (2025) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15168382-blue)](https://doi.org/10.5281/zenodo.15168382)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +33,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2025). *OnTime*. Zenodo. DOI: 10.5281/zenodo.15168382. URL: https://doi.org/10.5281/zenodo.15168382.
+> Daniel Ari Friedman (2025). *On Time*. Zenodo. DOI: 10.5281/zenodo.15168382. URL: https://doi.org/10.5281/zenodo.15168382.
 
 ## Related
 

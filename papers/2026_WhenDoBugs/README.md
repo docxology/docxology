@@ -2,7 +2,7 @@
 
 # 💻 When do bugs see (infra)red?
 
-**Daniel Ari Friedman** (2026) · *Zenodo*
+**Tucker Chambers, Daniel A. Friedman** (2026) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20450880-blue)](https://doi.org/10.5281/zenodo.20450880)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration
-- The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding .
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -37,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *When do bugs see (infra)red?*. Zenodo. DOI: 10.5281/zenodo.20450880. URL: https://doi.org/10.5281/zenodo.20450880.
+> Tucker Chambers, Daniel A. Friedman (2026). *When do bugs see (infra)red?*. Zenodo. DOI: 10.5281/zenodo.20450880. URL: https://doi.org/10.5281/zenodo.20450880.
 
 ## Related
 

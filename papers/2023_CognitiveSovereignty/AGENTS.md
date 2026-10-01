@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — CognitiveSovereignty
+# AGENTS.md — Cognitive Sovereignty & Active Inference in the State of Exception
 
-**Paper**: CognitiveSovereignty (2023)
+**Paper**: Cognitive Sovereignty & Active Inference in the State of Exception (2023)
 **Domain**: Cognitive Security
 **Authors**: Daniel Ari Friedman
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
-- Identifies findings: This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science., It argues that realized epist...
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects CognitiveSovereignty to related works in the bibliography
+- Connects Cognitive Sovereignty & Active Inference in the State of Exception to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

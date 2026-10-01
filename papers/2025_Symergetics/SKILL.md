@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Symergetics"
+name: "Symergetics: Symbolic Synergetics for Rational Arithmetic"
 description: "Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics. The package implemen..."
 tags: ["symergetics", "synergetics", "buckminster-fuller", "rational-arithmetic", "quadray-coordinates", "ivm-lattice", "symbolic-computation", "computational-geometry"]
 domain: "Art & Synergetics"
-citation: "Daniel Ari Friedman (2025). *Symergetics*. Art & Synergetics."
+citation: "Daniel Friedman (2025). *Symergetics: Symbolic Synergetics for Rational Arithmetic*. Zenodo."
 doi: "10.5281/zenodo.17114389"
 ---
 
-# Symergetics
+# Symergetics: Symbolic Synergetics for Rational Arithmetic
 
-**Daniel Ari Friedman** (2025) · Art & Synergetics
+**Daniel Friedman** (2025) · Art & Synergetics
 
 ## Context
 
@@ -20,14 +20,12 @@ This work addresses topics in **Art & Synergetics**: Symergetics, Synergetics, B
 
 Primary methods and techniques applied in this work:
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics.
 - Analysis of The package implemen...
 
 ## Related Works
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.17114389`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

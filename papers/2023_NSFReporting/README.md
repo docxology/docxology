@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 💻 NSFReporting
+# 💻 Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing
 
 **Daniel Ari Friedman** (2023) · *Zenodo*
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -37,7 +36,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2023). *NSFReporting*. Zenodo. DOI: 10.5281/zenodo.10160656. URL: https://doi.org/10.5281/zenodo.10160656.
+> Daniel Ari Friedman (2023). *Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing*. Zenodo. DOI: 10.5281/zenodo.10160656. URL: https://doi.org/10.5281/zenodo.10160656.
 
 ## Related
 

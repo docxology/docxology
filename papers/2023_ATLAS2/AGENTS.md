@@ -4,7 +4,7 @@
 
 **Paper**: ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management (2023)
 **Domain**: Cognitive Security
-**Authors**: R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, and 1 others
+**Authors**: R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, Colten Zacharias
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
-- Identifies findings: The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains., The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions.
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

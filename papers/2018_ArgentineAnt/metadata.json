@@ -1,10 +1,28 @@
 {
-  "title": "ArgentineAnt",
+  "title": "Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations",
   "domain": "Entomology",
   "type": "Paper",
   "creators": [
     {
+      "name": "Benjamin P. Burford"
+    },
+    {
+      "name": "Gail Lee"
+    },
+    {
       "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Esmé Brachmann"
+    },
+    {
+      "name": "Rebia Khan"
+    },
+    {
+      "name": "Dylan J. MacArthur-Waltz"
+    },
+    {
+      "name": "Aidan D. McCarty"
     },
     {
       "name": "Deborah M. Gordon"

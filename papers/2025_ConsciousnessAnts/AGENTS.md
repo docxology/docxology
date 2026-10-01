@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — ConsciousnessAnts
+# AGENTS.md — Towards a Science of Consciousness and Social Complexity... For Ants
 
-**Paper**: ConsciousnessAnts (2025)
+**Paper**: Towards a Science of Consciousness and Social Complexity... For Ants (2025)
 **Domain**: Entomology
 **Authors**: Daniel A. Friedman
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis
-- Identifies findings: Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research., We examine how colony-level informati...
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects ConsciousnessAnts to related works in the bibliography
+- Connects Towards a Science of Consciousness and Social Complexity... For Ants to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

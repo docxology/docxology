@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — QuadMath
+# AGENTS.md — QuadMath: An Analytical Review of 4D and Quadray Coordinates
 
-**Paper**: QuadMath (2025)
+**Paper**: QuadMath: An Analytical Review of 4D and Quadray Coordinates (2025)
 **Domain**: Art & Synergetics
-**Authors**: Daniel Ari Friedman
+**Authors**: Daniel Friedman
 
 ---
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects QuadMath to related works in the bibliography
+- Connects QuadMath: An Analytical Review of 4D and Quadray Coordinates to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

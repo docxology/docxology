@@ -1,17 +1,17 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "On free will or the lack thereof"
+title: "On free will or the lack thereof (interview with Robert Sapolsky)"
 date-released: 2022-12-03
 doi: 10.5281/zenodo.7394900
 url: "https://doi.org/10.5281/zenodo.7394900"
 authors:
-  - family-names: Sapolsky
-    given-names: Robert
-  - family-names: Mikhailova
-    given-names: Alexandra
-  - family-names: Friedman
-    given-names: Daniel
+  - family-names: "Sapolsky"
+    given-names: "Robert"
+  - family-names: "Mikhailova"
+    given-names: "Alexandra"
+  - family-names: "Friedman"
+    given-names: "Daniel"
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi

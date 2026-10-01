@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "AuBI"
+name: "Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference"
 description: "AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework. The paper examines how AI systems ca..."
 tags: ["aubi", "augmented-intelligence", "biological-intelligence", "active-inference", "cognitive-augmentation", "human-ai-interaction"]
 domain: "Computational"
-citation: "Daniel A. Friedman (2025). *AuBI*. Computational."
+citation: "Die Schwarze Katze, Andrew Djuwidja, Daniel Friedman (2025). *Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference*. Zenodo."
 doi: "10.5281/zenodo.17228945"
 ---
 
-# AuBI
+# Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference
 
-**Daniel A. Friedman** (2025) · Computational
+**Die Schwarze Katze, Andrew Djuwidja, Daniel Friedman** (2025) · Computational
 
 ## Context
 
@@ -20,15 +20,13 @@ This work addresses topics in **Computational**: AuBI, augmented intelligence, b
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework.
-- The paper examines how AI systems ca...
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.17228945`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

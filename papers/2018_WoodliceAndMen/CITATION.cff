@@ -1,17 +1,17 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "WoodliceAndMen"
+title: "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)"
 date-released: 2018
 doi: 10.34700/h460-nz89
 url: "https://doi.org/10.34700/h460-nz89"
 authors:
-  - family-names: Friston
-    given-names: Karl
-  - family-names: Fortier
-    given-names: Martin
-  - family-names: Friedman
-    given-names: Daniel A.
+  - family-names: "Friston"
+    given-names: "Karl"
+  - family-names: "Fortier"
+    given-names: "Martin"
+  - family-names: "Friedman"
+    given-names: "Daniel"
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi

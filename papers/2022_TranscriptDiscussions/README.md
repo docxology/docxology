@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Discussion with an author of the 2021 paper “Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior” by Remi Tison & Pierre Poirier.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

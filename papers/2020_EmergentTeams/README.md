@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ EmergentTeams
+# 🛡️ Emergent Teams for Complex Threats
 
-**Daniel A. Friedman, R.J. Cordes, Scott David** (2020) · *Zenodo*
+**Richard J. Cordes, Daniel Ari Friedman** (2020) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.3986084-blue)](https://doi.org/10.5281/zenodo.3986084)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -37,7 +36,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, R.J. Cordes, Scott David (2020). *EmergentTeams*. Zenodo. DOI: 10.5281/zenodo.3986084. URL: https://doi.org/10.5281/zenodo.3986084.
+> Richard J. Cordes, Daniel Ari Friedman (2020). *Emergent Teams for Complex Threats*. Zenodo. DOI: 10.5281/zenodo.3986084. URL: https://doi.org/10.5281/zenodo.3986084.
 
 ## Related
 

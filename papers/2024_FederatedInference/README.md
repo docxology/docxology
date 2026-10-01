@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 FederatedInference
+# 🧠 Federated inference and belief sharing
 
 **Karl J. Friston, Thomas Parr, Conor Heins, Axel Constant, Daniel Friedman, Takuya Isomura, Chris Fields, Tim Verbelen, Maxwell Ramstead, John Clippinger, Christopher D. Frith** (2024) · *Neuroscience & Biobehavioral Reviews*
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- formulates federated inference and belief sharing as a principled approach to distributed intelligence..
-- By extending Active Inference to multi-agent settings, agents maintain local generati....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Karl J. Friston, Thomas Parr, Conor Heins, Axel Constant, Daniel Friedman, Takuya Isomura, Chris Fields, Tim Verbelen, Maxwell Ramstead, John Clippinger, Christopher D. Frith (2024). *FederatedInference*. Neuroscience & Biobehavioral Reviews. DOI: 10.1016/j.neubiorev.2023.105500. URL: https://doi.org/10.1016/j.neubiorev.2023.105500.
+> Karl J. Friston, Thomas Parr, Conor Heins, Axel Constant, Daniel Friedman, Takuya Isomura, Chris Fields, Tim Verbelen, Maxwell Ramstead, John Clippinger, Christopher D. Frith (2024). *Federated inference and belief sharing*. Neuroscience & Biobehavioral Reviews. DOI: 10.1016/j.neubiorev.2023.105500. URL: https://doi.org/10.1016/j.neubiorev.2023.105500.
 
 ## Related
 

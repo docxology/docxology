@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🌍 OntologySUMO
+# 🌍 Aligning Active Inference Ontology to SUMO
 
-**David S. Douglass, Adam Pease, Daniel Friedman, et al.** (2024) · *Zenodo*
+**David S. Douglass, Adam Pease, Daniel Ari Friedman, Jessica Angeli Balbuena, Rhea Chokhalingam, Ana Magdalena Hurtado, Maria Luiza Iennaco, V. Bleu Knight, Scott Ryan Maybell, Ali Rahmjoo, Paulo Duare Andrade Sayeg, Jakub Smékal, Dean Tickles, Alex Vyatkin** (2024) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.11459322-blue)](https://doi.org/10.5281/zenodo.11459322)
 
@@ -37,7 +37,7 @@
 
 ## Citation
 
-> David S. Douglass, Adam Pease, Daniel Friedman, et al. (2024). *OntologySUMO*. Zenodo. DOI: 10.5281/zenodo.11459322. URL: https://doi.org/10.5281/zenodo.11459322.
+> David S. Douglass, Adam Pease, Daniel Ari Friedman, Jessica Angeli Balbuena, Rhea Chokhalingam, Ana Magdalena Hurtado, Maria Luiza Iennaco, V. Bleu Knight, Scott Ryan Maybell, Ali Rahmjoo, Paulo Duare Andrade Sayeg, Jakub Smékal, Dean Tickles, Alex Vyatkin (2024). *Aligning Active Inference Ontology to SUMO*. Zenodo. DOI: 10.5281/zenodo.11459322. URL: https://doi.org/10.5281/zenodo.11459322.
 
 ## Related
 

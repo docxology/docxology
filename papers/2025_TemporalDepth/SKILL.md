@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "TemporalDepth"
+name: "Temporal Depth in a Coherent Self and in Depersonalization"
 description: "This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization. Using Active Inference, we formalize how subjective temporal experience i..."
 tags: ["temporal-depth", "depersonalization", "self-coherence", "active-inference", "predictive-processing", "temporal-integration", "clinical-psychology"]
 domain: "Active Inference"
-citation: "Daniel A. Friedman, et al. (2025). *TemporalDepth*. Active Inference."
+citation: "Alexey Tolchinsky, Michael Levin, Chris Fields, Lancelot Da Costa, Rachael Murphy, Daniel Friedman, David Pincus (2025). *Temporal Depth in a Coherent Self and in Depersonalization*. Frontiers in Psychology."
 doi: "10.3389/fpsyg.2025.1585315"
 ---
 
-# TemporalDepth
+# Temporal Depth in a Coherent Self and in Depersonalization
 
-**Daniel A. Friedman, et al.** (2025) · Active Inference
+**Alexey Tolchinsky, Michael Levin, Chris Fields, Lancelot Da Costa, Rachael Murphy, Daniel Friedman, David Pincus** (2025) · Active Inference
 
 ## Context
 
@@ -20,15 +20,13 @@ This work addresses topics in **Active Inference**: temporal depth, depersonaliz
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization..
-- Using Active Inference, we formalize how subjective temporal experience i....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.3389/fpsyg.2025.1585315`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — BehaviorEngineering
+# AGENTS.md — Active Inference & Behavior Engineering for Teams
 
-**Paper**: BehaviorEngineering (2020)
+**Paper**: Active Inference & Behavior Engineering for Teams (2020)
 **Domain**: Active Inference
-**Authors**: Daniel A. Friedman
+**Authors**: Alexander Vyatkin, Ivan Metelkin, Alexandra Mikhailova, RJ Cordes, Daniel Ari Friedman
 
 ---
 
@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Agent-based modeling of collective behavior, Behavioral engineering and incentive design
-- Identifies findings: Comprehensive frameworks for Teams should include various functionalities and structures in order to capture the broad range of affordances available for modern Remote Teams, including, but not limited to, synchronous & asynchronous communications, memes, geospatial maps, hardware/software use, and , We suggest that Systems Engineering provides guidelines to define the functions of Ontologies, Narratives, Formal documents, and Tools (ONFT) within the context of the life cycle of any System of Interest.., Following this ONFT assessment it is possible to break out to sub-systems levels and mechanistic analysis..
+- Identifies findings: Comprehensive frameworks for Teams should include various functionalities and structures in order to capture the broad range of affordances available for modern Remote Teams, including, but not limited to, synchronous & asynchronous communications, memes, geospatial maps, hardware/software use, and, We suggest that Systems Engineering provides guidelines to define the functions of Ontologies, Narratives, Formal documents, and Tools (ONFT) within the context of the life cycle of any System of Interest.., Following this ONFT assessment it is possible to break out to sub-systems levels and mechanistic analysis..
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects BehaviorEngineering to related works in the bibliography
+- Connects Active Inference & Behavior Engineering for Teams to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

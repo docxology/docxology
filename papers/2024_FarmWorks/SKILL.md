@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "FarmWorks"
+name: "FarmWorks: Decentralized AI Agents for Personalized Solutions"
 description: "FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems..."
 tags: ["farmworks", "decentralized-ai", "precision-agriculture", "active-inference", "sensor-networks", "edge-computing", "farmer-autonomy", "sustainable-agriculture", "iot", "community-driven-innovation"]
 domain: "Cognitive Security"
-citation: "Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin (2024). *FarmWorks*. Cognitive Security."
+citation: "Vladimir Baulin, Alex Vyatkin, Avel GUÉNIN—CARLUT, Daniel Friedman, John Bolt, Stefan Falkenstein, Parishrut Jassal, Celio Trois, Jonathan Minchin (2024). *FarmWorks: Decentralized AI Agents for Personalized Solutions*. Zenodo."
 doi: "10.5281/zenodo.13754585"
 ---
 
-# FarmWorks
+# FarmWorks: Decentralized AI Agents for Personalized Solutions
 
-**Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin** (2024) · Cognitive Security
+**Vladimir Baulin, Alex Vyatkin, Avel GUÉNIN—CARLUT, Daniel Friedman, John Bolt, Stefan Falkenstein, Parishrut Jassal, Celio Trois, Jonathan Minchin** (2024) · Cognitive Security
 
 ## Context
 
@@ -20,14 +20,13 @@ This work addresses topics in **Cognitive Security**: FarmWorks, decentralized A
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems.
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.13754585`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

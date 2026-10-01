@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline.
-- The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) through smelting, assaying, and cupellation — to nine-nines certification (99.9999999%), the ultra-high-puri
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

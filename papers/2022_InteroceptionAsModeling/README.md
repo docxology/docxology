@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Transcript of discussions of the 2022 paper “Interoception as modeling, allostasis as control” by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett,
-- Quigley https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350 Session 050.0, October 17, 2022 https://www.youtube.com/watch?v=l7r0ISlr-Hc Session 050.1, October 20
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

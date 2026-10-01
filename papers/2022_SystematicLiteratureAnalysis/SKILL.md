@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "SystematicLiteratureAnalysis"
+name: "The Free Energy Principle & Active Inference: a Systematic Literature Analysis"
 description: "We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston. We trace the history, growth, and div..."
 tags: ["systematic-literature-analysis", "free-energy-principle", "active-inference", "karl-friston", "history-of-science", "bibliometrics", "ontology"]
 domain: "Active Inference"
-citation: "Virginia Bleu Knight, R.J. Cordes, Daniel A. Friedman (2022). *SystematicLiteratureAnalysis*. Active Inference."
+citation: "Virginia Bleu Knight, RJ Cordes, Daniel Friedman (2022). *The Free Energy Principle & Active Inference: a Systematic Literature Analysis*. Zenodo."
 doi: "10.5281/zenodo.7449367"
 ---
 
-# SystematicLiteratureAnalysis
+# The Free Energy Principle & Active Inference: a Systematic Literature Analysis
 
-**Virginia Bleu Knight, R.J. Cordes, Daniel A. Friedman** (2022) · Active Inference
+**Virginia Bleu Knight, RJ Cordes, Daniel Friedman** (2022) · Active Inference
 
 ## Context
 
@@ -20,15 +20,13 @@ This work addresses topics in **Active Inference**: systematic literature analys
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston.
-- We trace the history, growth, and div...
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7449367`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

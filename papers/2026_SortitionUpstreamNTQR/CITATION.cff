@@ -1,15 +1,15 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation"
+title: "Sortition Upstream of NTQR"
 version: "0.1.0"
 date-released: 2026-06-25
 doi: 10.5281/zenodo.21083779
 url: "https://doi.org/10.5281/zenodo.21083779"
 repository-code: "https://github.com/docxology/ntqr_allotment"
 authors:
-  - family-names: Friedman
-    given-names: Daniel Ari
+  - family-names: "Friedman"
+    given-names: "Daniel Ari"
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi

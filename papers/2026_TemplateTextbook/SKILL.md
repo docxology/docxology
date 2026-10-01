@@ -4,7 +4,7 @@ name: "The Template Textbook"
 description: "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and a content scaffold/validation engine. --- Associa..."
 tags: ["templatetextbook"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *The Template Textbook*. Computational."
+citation: "Daniel Ari Friedman (2026). *The Template Textbook*. Zenodo."
 doi: "10.5281/zenodo.20533125"
 ---
 
@@ -20,19 +20,13 @@ This work addresses topics in **Computational**: TemplateTextbook.
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and
-- ---
-Associated artifacts
-GitHub release: v0.1.2 (https://github.com/docxology/template_textbook/releases/tag/v0.1.2)
-DOI: https://doi.org/10.5281/zenodo.20533125
-Zenodo: https://zenodo.org/records/205
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -60,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20533125`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

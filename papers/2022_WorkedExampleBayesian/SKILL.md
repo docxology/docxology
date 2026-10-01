@@ -4,7 +4,7 @@ name: "A Worked Example of the Bayesian Mechanics of Classical Objects"
 description: "Transcripts of discussions of the 2022 preprint &quot;A Worked Example of the Bayesian Mechanics of Classical Objects&quot; by Dalton A R Sakthivadivel.&nbsp; https://arxiv.org/abs/2206.12996 Session 049.0, September 30, 2022&nbsp; https://www.youtub..."
 tags: ["workedexamplebayesian"]
 domain: "Active Inference"
-citation: "Dalton AR Sakthivadivel, Ali Rahmjoo, Jakub Smékal, Daniel Friedman (2022). *A Worked Example of the Bayesian Mechanics of Classical Objects*. Active Inference."
+citation: "Dalton AR Sakthivadivel, Ali Rahmjoo, Jakub Smékal, Daniel Friedman (2022). *A Worked Example of the Bayesian Mechanics of Classical Objects*. Zenodo."
 doi: "10.5281/zenodo.7400785"
 artifact_doi: "10.5281/zenodo.7400786"
 ---
@@ -21,14 +21,13 @@ This work addresses topics in **Active Inference**: WorkedExampleBayesian.
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Transcripts of discussions of the 2022 preprint &quot;A Worked Example of the Bayesian Mechanics of Classical Objects&quot; by Dalton A R Sakthivadivel.&nbsp; https://arxiv.org/abs/2206.12996 Session 
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -57,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7400785`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

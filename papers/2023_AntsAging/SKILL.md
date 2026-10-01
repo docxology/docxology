@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "AntsAging"
+name: "Of Ants & Aging"
 description: "A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social i..."
 tags: ["ants", "aging", "senescence", "lifespan", "caste", "queen-longevity", "social-insects", "evolutionary-biology"]
 domain: "Presentations & Media"
-citation: "Daniel A. Friedman (2023). *AntsAging*. Presentations & Media."
+citation: "Daniel Ari Friedman (2023). *Of Ants & Aging*. Presentation."
 doi: "10.5281/zenodo.7855581"
 ---
 
-# AntsAging
+# Of Ants & Aging
 
-**Daniel A. Friedman** (2023) · Presentations & Media
+**Daniel Ari Friedman** (2023) · Presentations & Media
 
 ## Context
 
@@ -20,20 +20,19 @@ This work addresses topics in **Presentations & Media**: ants, aging, senescence
 
 Primary methods and techniques applied in this work:
 
-- Content production
-- Pedagogical design
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social i
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
 - [2018_MVEE](../2018_MVEE/)
 - [2023_PostdocReview](../2023_PostdocReview/)
-- [2024_BioFirm](../2024_BioFirm/)
+- [2025_BiofirmDevelopmentWith](../2025_BiofirmDevelopmentWith/)
 
 ## Validation
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7855581`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

@@ -1,22 +1,22 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "ActiveInferants"
+title: "Active Inferants: An Active Inference Framework for Ant Colony Behavior"
 date-released: 2021
 doi: 10.3389/fnbeh.2021.647732
 url: "https://doi.org/10.3389/fnbeh.2021.647732"
 authors:
-  - family-names: Friedman
-    given-names: Daniel A.
+  - family-names: "Friedman"
+    given-names: "Daniel Ari"
     orcid: "https://orcid.org/0000-0001-6232-9096"
-  - family-names: Tschantz
-    given-names: Alexander
-  - family-names: Ramstead
-    given-names: Maxwell J.D.
-  - family-names: Friston
-    given-names: Karl
-  - family-names: Constant
-    given-names: Axel
+  - family-names: "Tschantz"
+    given-names: "Alec"
+  - family-names: "Ramstead"
+    given-names: "Maxwell J. D."
+  - family-names: "Friston"
+    given-names: "Karl"
+  - family-names: "Constant"
+    given-names: "Axel"
 identifiers:
   - type: doi
     value: "10.3389/fnbeh.2021.647732"

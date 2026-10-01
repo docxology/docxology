@@ -4,13 +4,13 @@ name: "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference"
 description: "The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio optimization problem: a corporation recursively improves when realized economic gains finance the next cycle of better prediction and deployment, and the firm's standin..."
 tags: ["active-inference", "expected-free-energy", "recursive-self-improvement", "generalized-notation-notation", "economic-world-model", "portfolio-optimization", "epistemic-value", "reproducible-research"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference*. Computational."
+citation: "Daniel Ari Friedman, Tucker Cahill Chambers (2026). *AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference*. Zenodo."
 doi: "10.5281/zenodo.20976824"
 ---
 
 # AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference
 
-**Daniel Ari Friedman** (2026) · Computational
+**Daniel Ari Friedman, Tucker Cahill Chambers** (2026) · Computational
 
 ## Context
 

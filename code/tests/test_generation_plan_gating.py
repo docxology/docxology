@@ -52,6 +52,9 @@ DERIVED_STEPS = {
     "site-facts-final",
     "seo-security",
     "agent-navigation",
+    # Stamps generated counts into hand-authored start-here.html (--sync-counts),
+    # so the page is both read and written by the step.
+    "start-here",
     # Git-derived state no content fingerprint captures.
     "sitemap",
     "release-integrity",

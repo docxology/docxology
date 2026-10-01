@@ -1,21 +1,21 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "Comments on AI Accountability Policy Submitted to NTIA Docket 2023-0005-0001 by IRSIRI, AII, PFH, and COGSEC"
+title: "Comments on AI Accountability Policy to NTIA"
 version: "1.0"
 date-released: 2023-06-11
 doi: 10.5281/zenodo.8025956
 url: "https://doi.org/10.5281/zenodo.8025956"
 authors:
-  - family-names: David
-    given-names: Scott
-  - family-names: Abu-Ghazaleh
-    given-names: Jumana
-  - family-names: Friedman
-    given-names: Daniel
+  - family-names: "David"
+    given-names: "Scott"
+  - family-names: "Abu-Ghazaleh"
+    given-names: "Jumana"
+  - family-names: "Friedman"
+    given-names: "Daniel"
     orcid: "https://orcid.org/0000-0001-6232-9096"
-  - family-names: Cordes
-    given-names: RJ
+  - family-names: "Cordes"
+    given-names: "RJ"
 identifiers:
   - type: doi
     value: 10.5281/zenodo.8025956

@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ HypercertEcosystems
+# 🛡️ Systems Modeling and Cognitive Audits for Hypercert Ecosystems
 
-**Active Inference Institute** (2022) · *Zenodo*
+**Jakub Smékal, Daniel Ari Friedman** (2022) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7626768-blue)](https://doi.org/10.5281/zenodo.7626768)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -37,7 +36,7 @@
 
 ## Citation
 
-> Active Inference Institute (2022). *HypercertEcosystems*. Zenodo. DOI: 10.5281/zenodo.7626768. URL: https://doi.org/10.5281/zenodo.7626768.
+> Jakub Smékal, Daniel Ari Friedman (2022). *Systems Modeling and Cognitive Audits for Hypercert Ecosystems*. Zenodo. DOI: 10.5281/zenodo.7626768. URL: https://doi.org/10.5281/zenodo.7626768.
 
 ## Related
 

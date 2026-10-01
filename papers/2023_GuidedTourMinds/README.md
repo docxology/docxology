@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 GuidedTourMinds
+# 🧠 A guided tour through the spaces of particular "minds"
 
 **Ali Rahmjoo, Daniel Ari Friedman** (2023) · *Physics of Life Reviews*
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argue
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -33,7 +32,7 @@
 
 ## Citation
 
-> Ali Rahmjoo, Daniel Ari Friedman (2023). *GuidedTourMinds*. Physics of Life Reviews. DOI: 10.1016/j.plrev.2023.11.001. URL: https://doi.org/10.1016/j.plrev.2023.11.001.
+> Ali Rahmjoo, Daniel Ari Friedman (2023). *A guided tour through the spaces of particular "minds"*. Physics of Life Reviews. DOI: 10.1016/j.plrev.2023.11.001. URL: https://doi.org/10.1016/j.plrev.2023.11.001.
 
 ## Related
 

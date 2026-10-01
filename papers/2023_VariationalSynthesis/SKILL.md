@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "VariationalSynthesis"
+name: "A variational synthesis of evolutionary and developmental dynamics"
 description: "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc..."
 tags: ["variational-synthesis", "natural-selection", "free-energy-principle", "bayesian-mechanics", "path-integral", "evo-devo", "adaptive-fitness", "particular-partition"]
 domain: "Active Inference"
-citation: "Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell (2023). *VariationalSynthesis*. Active Inference."
+citation: "Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell (2023). *A variational synthesis of evolutionary and developmental dynamics*. Entropy."
 doi: "10.3390/e25070964"
 ---
 
-# VariationalSynthesis
+# A variational synthesis of evolutionary and developmental dynamics
 
 **Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell** (2023) · Active Inference
 
@@ -20,14 +20,13 @@ This work addresses topics in **Active Inference**: variational synthesis, natur
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.3390/e25070964`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

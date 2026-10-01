@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 💻 MDKV
+# 💻 MDKV: A Multitrack Markdown Container for Structured, Portable Documents
 
-**Daniel Ari Friedman** (2025) · *Zenodo*
+**Daniel Friedman** (2025) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16790554-blue)](https://doi.org/10.5281/zenodo.16790554)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -36,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2025). *MDKV*. Zenodo. DOI: 10.5281/zenodo.16790554. URL: https://doi.org/10.5281/zenodo.16790554.
+> Daniel Friedman (2025). *MDKV: A Multitrack Markdown Container for Structured, Portable Documents*. Zenodo. DOI: 10.5281/zenodo.16790554. URL: https://doi.org/10.5281/zenodo.16790554.
 
 ## Related
 

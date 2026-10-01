@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Updated added a number of pages at the start (from page 2) that describes the entire system and whats missing apologies for not giving this overview of what would happen given those
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

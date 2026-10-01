@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — AccountActiveInference
+# AGENTS.md — An Account of Active Inference Modeling
 
-**Paper**: AccountActiveInference (2023)
+**Paper**: An Account of Active Inference Modeling (2023)
 **Domain**: Active Inference
 **Authors**: Daniel Ari Friedman
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Bayesian modeling and inference
+- Extracts methods: See paper
 - Identifies findings: This report provides a single-page account of Active Inference modeling.., This report was written entirely by hand without any synthetic computational-linguistic intelligences.., Thank you to the learners, interns, and participants of the Active Inference Institute to whom I&#39;ve mostly learned from..
 - Maps contributions to Active Inference literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects AccountActiveInference to related works in the bibliography
+- Connects An Account of Active Inference Modeling to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — ForagingGene
+# AGENTS.md — Context-dependent expression of the foraging gene in field colonies of ants
 
-**Paper**: ForagingGene (2016)
+**Paper**: Context-dependent expression of the foraging gene in field colonies of ants (2016)
 **Domain**: Entomology
-**Authors**: Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon
+**Authors**: Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis
-- Identifies findings: Previous work has found that workers of similar genotype adopt different behavioural phenotypes.., Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati....
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects ForagingGene to related works in the bibliography
+- Connects Context-dependent expression of the foraging gene in field colonies of ants to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

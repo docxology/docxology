@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 VariationalSynthesis
+# 🧠 A variational synthesis of evolutionary and developmental dynamics
 
 **Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell** (2023) · *Entropy*
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -33,7 +32,7 @@
 
 ## Citation
 
-> Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell (2023). *VariationalSynthesis*. Entropy. DOI: 10.3390/e25070964. URL: https://doi.org/10.3390/e25070964.
+> Karl Friston, Daniel A. Friedman, Axel Constant, V. Bleu Knight, Chris Fields, Thomas Parr, John O. Campbell (2023). *A variational synthesis of evolutionary and developmental dynamics*. Entropy. DOI: 10.3390/e25070964. URL: https://doi.org/10.3390/e25070964.
 
 ## Related
 

@@ -12,7 +12,7 @@
       "admixture-modeling",
       "iberian-history"
     ],
-    "authors": "Alexander W. Marcus, Emily R. Ebel & Daniel Ari Friedman",
+    "authors": "Alexander W. Marcus, Emily R. Ebel, Daniel A. Friedman",
     "abstract": "This commentary critiques Nogueiro et al. (2015), who used Y chromosome and mitochondrial DNA haplotype data from contemporary Iberian and non-Iberian populations to explore a diagnostic genetic signature of Portuguese \"crypto-Jews.\" The authors identify two main weaknesses: (1) the matrilineal and patrilineal markers reviewed are methodologically inadequate as \"reliable Jewish ancestry predictors\" due to haplotype polyphyly and molecular clock ambiguity — many ostensibly \"Jewish\" haplotypes are",
     "keywords": [
       "Jewish genetics",
@@ -40,7 +40,7 @@
       "rifampin",
       "hematological-malignancy"
     ],
-    "authors": "Charles A. Kallick, Daniel A. Friedman & Mramba B.A. Nyindo",
+    "authors": "Charles A. Kallick, Daniel A. Friedman, Mramba B.A. Nyindo",
     "abstract": "We hypothesize that a large group of medical conditions of unknown etiology including leukemia, multiple myeloma, myelodysplastic and autoimmune disorders, may be associated with or caused by an obscure group of intracellular obligate parasitic bacteria named Ehrlichia/Anaplasma (EA). Ensconced in the stem cells of the bone marrow, EA may disrupt the normal development and function of many of the cells of immunity, manifesting itself as different syndromes. Recent studies of the activity of EA s",
     "keywords": [
       "Ehrlichia",
@@ -59,7 +59,7 @@
     "topic": "HoneyBeeEvolution",
     "name": "HoneyBeeEvolution",
     "description": "A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly...",
-    "authors": "Daniel A. Friedman, Brian R. Johnson",
+    "authors": "William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson",
     "abstract": "A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly, beeswax, and venom. Here we use RNA-Seq to characterize transcriptomic profiles of these novel tissues and test the hypothesis that novel traits are enriched for taxonomically restricted genes (TRGs), genes without homologs in related lineages. We find that honey-bee-specific novel tissues show sign",
     "keywords": [
       "honey bees",
@@ -98,7 +98,7 @@
     "topic": "ForagingGene",
     "name": "ForagingGene",
     "description": "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati...",
-    "authors": "Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon",
+    "authors": "Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru",
     "abstract": "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulation of task allocation are rare. Here, we investigate the expression of the foraging gene in harvester ant workers from five age- and task-related groups in a natural population, and we experimentally test how exposure to light affects foraging expression in brood workers and foragers. Results from o",
     "keywords": [
       "foraging gene",
@@ -117,7 +117,7 @@
     "topic": "NuclearStructure",
     "name": "NuclearStructure",
     "description": "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) tec...",
-    "authors": "Daniel A. Friedman, Daniel F. Pilch",
+    "authors": "Daniel A. Friedman, Lauren Tait, Andrew T. M. Vaughan",
     "abstract": "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) technologies, particularly Hi-C, have revolutionized our understanding of three-dimensional genome organization. Here we review the intersection of radiation biology with chromatin conformation studies, examining how radiation impacts nuclear organization at multiple scales from nucleosomes to chromoso",
     "keywords": [
       "Hi-C",
@@ -154,7 +154,7 @@
     "topic": "TwoLineages",
     "name": "TwoLineages",
     "description": "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior. In dependent-lineage species, queens must mate with males...",
-    "authors": "Daniel A. Friedman, Deborah M. Gordon",
+    "authors": "D. M. Gordon, D. A. Friedman",
     "abstract": "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior. In dependent-lineage species, queens must mate with males from a different genetic lineage to produce workers, while same-lineage matings produce new queens. This unusual mating system creates colonies with complex genetic architectures that provide a natural experiment for studying the relationship between genotype and division of labor. We discuss how d",
     "keywords": [
       "dependent-lineage",
@@ -172,7 +172,7 @@
     "topic": "ArgentineAnt",
     "name": "ArgentineAnt",
     "description": "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the...",
-    "authors": "Daniel A. Friedman, Deborah M. Gordon",
+    "authors": "Benjamin P. Burford, Gail Lee, Daniel A. Friedman, Esmé Brachmann, Rebia Khan, Dylan J. MacArthur-Waltz, Aidan D. McCarty, Deborah M. Gordon",
     "abstract": "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the ecological success of Argentine ants and the behavioral, genetic, and chemical mechanisms underlying their colony organization. Unlike most ant species, Argentine ants show reduced intraspecific aggression, allowing colony fusion and supercolony formation. We review the sensory ecology of nestmate ",
     "keywords": [
       "Argentine ant",
@@ -190,7 +190,7 @@
     "topic": "DopamineForaging",
     "name": "DopamineForaging",
     "description": "Individual behavioral variation within colonies is shaped by neurochemical signaling. Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa. Here we investigate...",
-    "authors": "Daniel A. Friedman, Annette Pilko, Deborah M. Gordon",
+    "authors": "Daniel A. Friedman, Anna Pilko, Dorota Skowronska-Krawczyk, Karolina Krasinska, Jacqueline W. Parker, Jay Hirsh, Deborah M. Gordon",
     "abstract": "Individual behavioral variation within colonies is shaped by neurochemical signaling. Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa. Here we investigate the role of dopamine in regulating the transition between behavioral states in red harvester ant workers. We show that dopamine levels differ between ants performing different tasks, and that experimental manipulation of dopamine signaling alters the propensity of workers to leave the nest and forag",
     "keywords": [
       "dopamine",
@@ -335,7 +335,7 @@
     "topic": "BehaviorEngineering",
     "name": "BehaviorEngineering",
     "description": "Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales. This paper proposes frameworks for conn...",
-    "authors": "Daniel A. Friedman",
+    "authors": "Alexander Vyatkin, Ivan Metelkin, Alexandra Mikhailova, RJ Cordes, Daniel Ari Friedman",
     "abstract": "Behavior engineering applies structured approaches from systems engineering to the understanding and management of behavior at individual and collective scales. This paper proposes frameworks for connecting behavioral science insights with engineering principles, enabling the design of systems that account for the complexities of human and non-human behavior. The approach is applicable to organizational design, team formation, and complex adaptive systems management.",
     "keywords": [
       "behavior engineering",
@@ -351,7 +351,7 @@
     "topic": "DistributedPhysiology",
     "name": "DistributedPhysiology",
     "description": "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this...",
-    "authors": "Daniel A. Friedman, Deborah M. Gordon",
+    "authors": "D.A. Friedman, B.R. Johnson, T.A. Linksvayer",
     "abstract": "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this distributed physiology emerges from local interactions, neurochemistry, and gene expression patterns. The colony operates as a superorganism in which physiological regulation—metabolism, water balance, immunity—is accomplished collectively through decentralized interaction networks rather than centr",
     "keywords": [
       "distributed physiology",
@@ -369,7 +369,7 @@
     "topic": "EmergentTeams",
     "name": "EmergentTeams",
     "description": "Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operation...",
-    "authors": "Daniel A. Friedman, R.J. Cordes, Scott David",
+    "authors": "Richard J. Cordes, Daniel Ari Friedman",
     "abstract": "Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operations order for rapidly formed research teams. Drawing from military operations orders and business process frameworks, we develop structured protocols for emergent team formation that address the unique challenges of rapidly assembled collaborative teams.",
     "keywords": [
       "emergent teams",
@@ -413,7 +413,7 @@
     "topic": "GeneExpressionForagers",
     "name": "GeneExpressionForagers",
     "description": "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compar...",
-    "authors": "Daniel A. Friedman, Brian R. Johnson, Timothy A. Linksvayer",
+    "authors": "Daniel Ari Friedman, Ryan Alexander York, Austin Travis Hilliard, Deborah M. Gordon",
     "abstract": "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compared to nest workers in harvester ants, identifying genes differentially expressed between behavioral castes. We find distinct transcriptomic signatures associated with foraging behavior and identify pathways related to sensory processing, metabolism, and neurochemical signaling that distinguish forag",
     "keywords": [
       "gene expression",
@@ -448,7 +448,7 @@
     "topic": "InnovatorsCatechism",
     "name": "InnovatorsCatechism",
     "description": "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to...",
-    "authors": "Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight",
+    "authors": "Richard J. Cordes, Daniel A. Friedman, Steven E. Phelan",
     "abstract": "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to lack of alignment. This paper summarizes military operations orders, discusses their business counterparts, and presents The Innovator's Catechism—a catechism-styled operations order for early-stage innovation teams built from the Facilitator's Catechism.",
     "keywords": [
       "operations orders",
@@ -605,7 +605,7 @@
     "topic": "ActiveInferenceOntology",
     "name": "ActiveInferenceOntology",
     "description": "We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provide...",
-    "authors": "Daniel A. Friedman, Virginia Bleu Knight",
+    "authors": "Daniel Friedman, Shaun Applegate-Swanson, Jessica Angeli Balbuena, Arhan Choudhury, RJ Cordes, Shady El Damaty, Avel Guénin—Carlut, V. Bleu Knight, Ivan Metelkin, Siddhant Shrivastava, Amit Kumar Singh, Jakub Smékal, Tuttle. Caleb, Alexander Vyatkin",
     "abstract": "We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provides structured navigation of the field's key components and supports interoperability with existing knowledge bases. This represents a collaborative open-science effort through the Active Inference Institute.",
     "keywords": [
       "Active Inference Ontology",
@@ -640,7 +640,7 @@
     "topic": "HypercertEcosystems",
     "name": "HypercertEcosystems",
     "description": "We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze...",
-    "authors": "Active Inference Institute",
+    "authors": "Jakub Smékal, Daniel Ari Friedman",
     "abstract": "We apply systems modeling and cognitive audits to Hypercert ecosystems for decentralized science (DeSci). Using the Active Entity Ontology for Science (AEOS) and Active Blockference tools, we analyze how Hypercerts—a primitive for public goods funding—can be integrated with Active Inference frameworks to improve scientific funding, evaluation, and incentive alignment in decentralized systems.",
     "keywords": [
       "Hypercerts",
@@ -744,7 +744,7 @@
     "topic": "AIAccountability",
     "name": "AIAccountability",
     "description": "Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No. NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Int...",
-    "authors": "Scott David, R.J. Cordes, Daniel A. Friedman (UW APL IRSIRI, AII, PFH, COGSEC)",
+    "authors": "Scott David, Jumana Abu-Ghazaleh, Daniel Friedman, RJ Cordes",
     "abstract": "Comments submitted to the NTIA's Request for Comment on AI Accountability Policy (Docket No. NTIA-2023-0005-0001) by the University of Washington Applied Physics Lab Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC). The submission addresses AI accountability through cognitive security, information risk management, and the P3IF framework, recommending policy app",
     "keywords": [
       "AI accountability",
@@ -762,7 +762,7 @@
     "topic": "AII_v1",
     "name": "AII_v1",
     "description": "An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community. The institute serves as a hub for Active Inference research, education...",
-    "authors": "Active Inference Institute",
+    "authors": "Active Inference Institute, Ander Aguirre, John Boik, Libor Burian, Matthew Brown, RJ Cordes, Scott David, David S Douglass, Pablo Fernandez-Maquieira, Daniel A Friedman, Holly Grimm, Avel Guénin–Carlut, Maria Luiza Iennaco, V Bleu Knight, Alexandra Mikhailova, Ali Rahmjoo, Adeel Razi, Jakub Smékal, Ronen Tamari, Dean Tickles, Alex Vyatkin",
     "abstract": "An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community. The institute serves as a hub for Active Inference research, education, and application, leveraging open-science methodologies to advance understanding of the Free Energy Principle and its applications across domains.",
     "keywords": [
       "Active Inference Institute",
@@ -868,7 +868,7 @@
     "topic": "GNN",
     "name": "GNN",
     "description": "Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems. GNN provides meta-notational tools for describing any symbolic...",
-    "authors": "Daniel A. Friedman",
+    "authors": "Jakub Smékal, Daniel Ari Friedman",
     "abstract": "Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems. GNN provides meta-notational tools for describing any symbolic system, enabling formal comparison and interoperability across mathematical, scientific, and computational notations. The framework supports automated notation analysis and cross-system translation.",
     "keywords": [
       "GNN",
@@ -924,7 +924,7 @@
     "topic": "HoneyBeeGeneExpression",
     "name": "HoneyBeeGeneExpression",
     "description": "The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novel...",
-    "authors": "William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson",
+    "authors": "Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson",
     "abstract": "The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novelty in honey bees (Apis mellifera). Using RNA-Seq, we show that novel honey bee tissues are enriched for rapidly evolving genes and taxonomically restricted genes (TRGs), supporting the hypothesis that novel traits recruit novel genetic elements with accelerated sequence evolution.",
     "keywords": [
       "honey bees",
@@ -1027,7 +1027,7 @@
     "topic": "ToComment",
     "name": "DigitalRhetoricalEcosystemAnalysis",
     "description": "Integrates frameworks from rhetorical studies and ecological studies to catalog, monitor, and study digital image meme data; introduces the Digital Rhetorical Ecosystem three-tiered model (DRE3).",
-    "authors": "Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman",
+    "authors": "Dean Tickles, Daniel Friedman",
     "abstract": "This paper develops a case for integrating rhetorical and ecological frameworks to study digital image memes and their role in disseminating online narratives. Building on the DRE3 model, we analyze how memes function as rhetorical artifacts that shape public discourse through parsimony, polysemy, and identity construction in digital public spheres.",
     "keywords": [
       "rhetorical analysis",
@@ -1077,7 +1077,7 @@
     "topic": "AII_v2",
     "name": "AII_v2",
     "description": "Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and ap...",
-    "authors": "Active Inference Institute",
+    "authors": "Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker",
     "abstract": "Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and application.",
     "keywords": [
       "Active Inference Institute",
@@ -1086,28 +1086,12 @@
       "community"
     ]
   },
-  "2024_BioFirm": {
-    "year": "2024",
-    "topic": "BioFirm",
-    "name": "BioFirm",
-    "description": "BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as biological-inspired adaptive systems, using active i...",
-    "authors": "Daniel A. Friedman",
-    "abstract": "BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as biological-inspired adaptive systems, using active inference to optimize resource management and collective decision-making in bioregional governance contexts.",
-    "keywords": [
-      "BioFirm",
-      "bioregional stewardship",
-      "Active Inference",
-      "organizational modeling",
-      "sustainability",
-      "adaptive management"
-    ]
-  },
   "2024_BlattodeaDiversity": {
     "year": "2024",
     "topic": "BlattodeaDiversity",
     "name": "BlattodeaDiversity",
     "description": "This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology. Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles. W...",
-    "authors": "Daniel A. Friedman, et al.",
+    "authors": "Marek J. Golian, Daniel A. Friedman, Mark Harrison, Dino P. McMahon, Jan Buellesbach",
     "abstract": "This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology. Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles. We review current understanding of blattodean taxonomy, behavior, ecology, and the evolutionary transition from solitary cockroaches to eusocial termites.",
     "keywords": [
       "Blattodea",
@@ -1139,7 +1123,7 @@
     "topic": "DigitalTwins",
     "name": "DigitalTwins",
     "description": "This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively min...",
-    "authors": "Daniel A. Friedman",
+    "authors": "RJ Cordes",
     "abstract": "This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively minimize free energy. The work connects digital twin technology to predictive processing and organizational modeling.",
     "keywords": [
       "digital twins",
@@ -1155,7 +1139,7 @@
     "topic": "FarmWorks",
     "name": "FarmWorks",
     "description": "FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems...",
-    "authors": "Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin",
+    "authors": "Vladimir Baulin, Alex Vyatkin, Avel GUÉNIN—CARLUT, Daniel Friedman, John Bolt, Stefan Falkenstein, Parishrut Jassal, Celio Trois, Jonathan Minchin",
     "abstract": "FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems. The platform integrates real-time sensor data collection, edge computing, and Active Inference models to empower individual farmers with cutting-edge technology while preserving their autonomy. Key components include: (1) customizable on-site sensor networks for real-time environmental data gatheri",
     "keywords": [
       "FarmWorks",
@@ -1193,7 +1177,7 @@
     "topic": "ImageMemeResearch",
     "name": "ImageMemeResearch",
     "description": "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We prov...",
-    "authors": "Daniel A. Friedman, R.J. Cordes, Mridula Mascarenhas",
+    "authors": "Mridula Mascarenhas, Daniel Ari Friedman, Richard J Cordes",
     "abstract": "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We provide frameworks for classifying meme content, tracking diffusion patterns, and assessing sensemaking impacts.",
     "keywords": [
       "image memes",
@@ -1241,7 +1225,7 @@
     "topic": "OntologySUMO",
     "name": "OntologySUMO",
     "description": "We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities. For a subset of Active Inference terms, we identify published SUMO files likely to cont...",
-    "authors": "David S. Douglass, Adam Pease, Daniel Friedman, et al.",
+    "authors": "David S. Douglass, Adam Pease, Daniel Ari Friedman, Jessica Angeli Balbuena, Rhea Chokhalingam, Ana Magdalena Hurtado, Maria Luiza Iennaco, V. Bleu Knight, Scott Ryan Maybell, Ali Rahmjoo, Paulo Duare Andrade Sayeg, Jakub Smékal, Dean Tickles, Alex Vyatkin",
     "abstract": "We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities. For a subset of Active Inference terms, we identify published SUMO files likely to contain correct mappings, indicate SUMO supersets and subsets, and display relationships among identified SUMO topics. This scaffolding facilitates rigorous mapping of Active Inference to SUMO.",
     "keywords": [
       "ontology alignment",
@@ -1257,7 +1241,7 @@
     "topic": "PaleolithicRockstars",
     "name": "PaleolithicRockstars",
     "description": "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitiv...",
-    "authors": "Daniel Ari Friedman",
+    "authors": "Dean Tickles, Daniel Ari Friedman",
     "abstract": "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitive capabilities and their connection to modern theories of consciousness and aesthetic experience.",
     "keywords": [
       "Paleolithic art",
@@ -1307,7 +1291,7 @@
     "topic": "SensemakingFederation",
     "name": "SensemakingFederation",
     "description": "Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius. The panel discusses decentralized sensemaking infrastructure, knowl...",
-    "authors": "Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman",
+    "authors": "Sensemaking Scenius",
     "abstract": "Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius. The panel discusses decentralized sensemaking infrastructure, knowledge federation, and the future of collaborative digital innovation.",
     "keywords": [
       "sensemaking federation",
@@ -1322,7 +1306,7 @@
     "topic": "SharedProtentions",
     "name": "SharedProtentions",
     "description": "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formaliz...",
-    "authors": "Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J.D. Ramstead",
+    "authors": "Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J. D. Ramstead",
     "abstract": "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference. Protentions are future-directed expectations that shape perception and action; here we formalize how agents can develop shared protentions through coupled generative models, enabling coordinated anticipatory behavior in multi-agent systems.",
     "keywords": [
       "shared protentions",
@@ -1339,7 +1323,7 @@
     "topic": "5thSymposium",
     "name": "5thSymposium",
     "description": "Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inferenc...",
-    "authors": "Active Inference Institute",
+    "authors": "Active Inference Institute, Adam Safron, Alex Kiefer, Alexander Sabine, Andrea Hiott, Andrew Pashea, Bradly Alicea, Chris Fields, Denise Holt, Harshil Shah, Satyaki Maitra, Hongju Pae, Ian Tennant, Jean-François Cloutier, Jim Freda, Joel Dietz, John Boik, Karl Friston, Maria Luiza Iennaco, Matthew Brown, Michael Garfield, Nicolás Hinrichs, Octopus, PabloFM, Peter Thestrup Waade, Robert Worden, Sam A Senchal, Samuel Montañez, Sanjeev Namjoshi, Siddhant Shrivastava, Sonia de Jager, Steph Macurdy, Steven Weiniger, Susan Hasty, Viet Dung Nguyen, William Gebhardt, Michael Lennon, Dave Newell, Patrick Huembeli, Maxwell Ramstead",
     "abstract": "Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inference research, application, and education.",
     "keywords": [
       "Active Inference symposium",
@@ -1353,7 +1337,7 @@
     "topic": "AII_v3",
     "name": "AII_v3",
     "description": "Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement. Covers the institu...",
-    "authors": "Active Inference Institute",
+    "authors": "Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker",
     "abstract": "Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement. Covers the institute's evolving mission and impact across diverse application domains.",
     "keywords": [
       "Active Inference Institute",
@@ -1368,7 +1352,7 @@
     "topic": "AccessibilityActiveInference",
     "name": "AccessibilityActiveInference",
     "description": "A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Devel...",
-    "authors": "Daniel A. Friedman, Active Inference Institute",
+    "authors": "Alexandra Mikhailova, Daniel Friedman",
     "abstract": "A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Development. The proposal identifies technical, academic, linguistic, and cultural barriers to disseminating high-quality Active Inference materials and cognitive modeling practices, and proposes open-source educational resources to address these gaps at different education levels.",
     "keywords": [
       "accessibility",
@@ -1439,7 +1423,7 @@
     "topic": "AuBI",
     "name": "AuBI",
     "description": "AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework. The paper examines how AI systems ca...",
-    "authors": "Daniel A. Friedman",
+    "authors": "Die Schwarze Katze, Andrew Djuwidja, Daniel Friedman",
     "abstract": "AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework. The paper examines how AI systems can augment human cognitive capabilities while maintaining cognitive sovereignty and information integrity.",
     "keywords": [
       "AuBI",
@@ -1497,7 +1481,7 @@
     "topic": "DiscoveryEngine",
     "name": "DiscoveryEngine",
     "description": "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem...",
-    "authors": "Daniel A. Friedman",
+    "authors": "Vladimir Baulin, Austin Cook, Daniel Friedman, Janna Lumiruusu, Andrew Pashea, Shagor Rahman, Benedikt Waldeck",
     "abstract": "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem, where hypotheses are generated, tested, and refined through free energy minimization, enabling structured exploration of research questions.",
     "keywords": [
       "Discovery Engine",
@@ -1596,7 +1580,7 @@
     "topic": "ResNei",
     "name": "ResNei",
     "description": "ResNei (Research Neighbourhood) supports the lateral growth of ideas through distributed, asynchronous, and non-linear collaboration. Knowledge develops across disciplines and methods through shared...",
-    "authors": "Janna Lumiruusu, Daniel Friedman, Vladimir Baulin, Andrew Pashea, Shagor Rahman",
+    "authors": "Janna Lumiruusu, Daniel Friedman, Shagor Rahman, Vladimir Baulin, Andrew Pashea",
     "abstract": "ResNei (Research Neighbourhood) supports the lateral growth of ideas through distributed, asynchronous, and non-linear collaboration. Knowledge develops across disciplines and methods through shared, interconnected environments. The platform enables collaborative research that transcends traditional academic boundaries.",
     "keywords": [
       "ResNei",
@@ -1646,7 +1630,7 @@
     "topic": "TemporalDepth",
     "name": "TemporalDepth",
     "description": "This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization. Using Active Inference, we formalize how subjective temporal experience i...",
-    "authors": "Daniel A. Friedman, et al.",
+    "authors": "Alexey Tolchinsky, Michael Levin, Chris Fields, Lancelot Da Costa, Rachael Murphy, Daniel Friedman, David Pincus",
     "abstract": "This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization. Using Active Inference, we formalize how subjective temporal experience is constructed through hierarchical predictive processing, and how disruptions to temporal integration may underlie depersonalization phenomena.",
     "keywords": [
       "temporal depth",
@@ -1754,7 +1738,7 @@
     "topic": "EntoLinguistics",
     "name": "Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology: How Terminology Networks Shape Understanding of Insect Biology (And Vice-Versa)",
     "description": "<p>Release v1.1.1 of the Ento-Linguistics research project.</p><p>Corpus: 7,609 PubMed abstracts (full search surface drained), 7,073 PMC open-access full texts, 2,460 BHL historical documents (1850&ndash;1970), 61 arXiv preprints, 536/536 OpenAlex citation enrichments. The manuscript is fully token-driven: all corpus statistics are injected at PDF build time from pipeline artifacts (strict mode; no hard-coded values).</p><p>v1.1.1 adds: pruned and parallelized language-analysis stages (the statistics/full-text stages drop from hours to ~25 min), corpus-fingerprint freshness guards for both statistical artifacts, a dry-run-only manuscript variable validator, and regenerated figures, statistics, and PDF.</p>",
-    "authors": "Daniel Ari Friedman",
+    "authors": "Daniel Ari Friedman, Tucker Cahill Chambers",
     "abstract": "<p>Release v1.1.1 of the Ento-Linguistics research project.</p><p>Corpus: 7,609 PubMed abstracts (full search surface drained), 7,073 PMC open-access full texts, 2,460 BHL historical documents (1850&ndash;1970), 61 arXiv preprints, 536/536 OpenAlex citation enrichments. The manuscript is fully token-driven: all corpus statistics are injected at PDF build time from pipeline artifacts (strict mode; no hard-coded values).</p><p>v1.1.1 adds: pruned and parallelized language-analysis stages (the statistics/full-text stages drop from hours to ~25 min), corpus-fingerprint freshness guards for both statistical artifacts, a dry-run-only manuscript variable validator, and regenerated figures, statistics, and PDF.</p>",
     "keywords": [],
     "doi": "10.5281/zenodo.19574117",
@@ -1787,7 +1771,7 @@
     "topic": "ActInfMetaAnalysis",
     "name": "A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring",
     "description": "Computational living meta-analysis of the Active Inference and Free Energy Principle literature: multi-source retrieval, nanopublication extraction, and hypothesis scoring architecture.",
-    "authors": "Daniel Ari Friedman & J. Dietz",
+    "authors": "Daniel Ari Friedman, Joel Dietz",
     "abstract": "This paper presents a living meta-analysis framework for the Active Inference and Free Energy Principle literature. Literature is retrieved from arXiv, Semantic Scholar, and OpenAlex, deduplicated through a canonical identifier hierarchy, classified into a three-tier taxonomy, and evaluated with LLM-powered nanopublications over eight hypotheses. Citation-weighted evidence scoring supports relative comparison of consensus and debate while preserving automation caveats.",
     "tags": [
       "active-inference",
@@ -1816,7 +1800,7 @@
     "topic": "FocusedAttentionMeditation",
     "name": "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences",
     "description": "Three-level hierarchical Active Inference framework for focused attention meditation: thoughtseed agents (Markov blankets) couple to DMN/VAN/DAN/FPN; simulations reproduce 49% lower free energy and DMN suppression in expert meditators.",
-    "authors": "P. C. Kavi, Daniel Ari Friedman & G. Patow",
+    "authors": "Prakash Chandra Kavi, Daniel Ari Friedman, Gustavo Patow",
     "abstract": "We develop a three-level hierarchical framework to model the attentional dynamics of focused attention (FA) meditation, laying a foundation for advanced active inference (AIF) implementations. Grounded in the Free Energy Principle and Neuronal Packet Hypothesis, we conceptualize meditation as a predictive processing system where “thoughtseeds”—transient, agent-like entities forming Markov blankets—minimize variational free energy via bidirectional coupling with attentional networks (DMN, VAN, DAN, FPN). Simulations across biologically plausible parameters reproduce expert–novice differences: 49% lower free energy during breath focus, suppressed DMN activity (0.18 vs. 0.31), and faster distraction recovery.",
     "tags": [
       "active-inference",
@@ -2063,7 +2047,7 @@
     "topic": "BeeStack",
     "name": "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation",
     "description": "BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche). It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted number is traceable from configuration to artifact to manuscript, gaps are catalogued rather than hidden, and the validation rate is a config-band self-test measure, not a biological-realism score. This 1.0 release accompanies the manuscript 'BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation' and includes the combined PDF and the full source archive. Source: https://github.com/docxology/BeeStack",
-    "authors": "Daniel Ari Friedman",
+    "authors": "Daniel Ari Friedman, Tucker Cahill Chambers",
     "abstract": "BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche). It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted number is traceable from configuration to artifact to manuscript, gaps are catalogued rather than hidden, and the validation rate is a config-band self-test measure, not a biological-realism score. This 1.0 release accompanies the manuscript 'BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation' and includes the combined PDF and the full source archive. Source: https://github.com/docxology/BeeStack",
     "keywords": [
       "honeybee",
@@ -2089,7 +2073,7 @@
     "topic": "WhenDoBugs",
     "name": "When do bugs see (infra)red?",
     "description": "<p>Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomology, spectroscopy, neural timing analysis, and computational electromagnetism. The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding . Methods: We integrate: (i) literature-grounded morphometric ranges for antennal sensilla, (ii) ATR-FTIR evidence that insect body chemistry can support species discrimination, (iii) published olfactory receptor neuron timing constraints, and (iv) deterministic electromagnetic models that expose their assumptions and parameter sensitivity . Preregistered experimental protocols specify QCL/LED bands (2--25 &micro;m), thermal matched controls, power density 0.1--2 mW/cm&sup2;, and N&ge;50 per condition. All analyses use fixed random seeds (42) where stochastic routines are present. Results: The computational figures show where sensillum-scale dimensions, CHC-associated mid-IR bands, and atmospheric windows overlap, but they do not by themselves establish biological IR olfaction. The strongest empirical anchors are narrower: fast insect ORN first-spike timing, photomechanic IR organs in pyrophilous beetles, hematophagy IR cues in mosquitoes and kissing bugs, thermogenic pollination signals in cycads, thermosensitive coeloconic sensilla in ants, and passive cuticle IR optics . These sources motivate specific experiments while also constraining the manuscript's range and mechanism claims. Conclusions: The framework yields five preregistered falsifiers aligned with \\Cref{sec:discussion}: (1) spectral nulls under matched thermal load, (2) geometric mismatch between sensilla dimensions and predicted resonances, (3) environmental misalignment of CHC peaks with transmission windows, (4) temporal indistinguishability of IR versus thermal ORN latencies, and (5) behavioral independence of IR-only orientation from chemical gradients. Protocols specify QCL/LED bands (2--25 &micro;m), matched power deposition, and N&ge;50 per condition to separate electromagnetic detection from thermal artifacts. Implications: Applications of this work include biomimetic IR sensor design, better-controlled pest-monitoring experiments, and clearer tests of whether insect olfactory systems ever use wavelength-specific electromagnetic information. Keywords: insect olfaction, infrared detection, vibrational theory, electromagnetic sensing, sensilla morphology, cuticular hydrocarbons, atmospheric transmission, biomimetic sensors Reproducibility: Complete implementation with seven case studies in Appendices --- Associated artifacts GitHub release: v1.0.0 (https://github.com/docxology/cohereants/releases/tag/v1.0.0) PDF SHA-256: 36bd97a8ff522937390213a69abb40c8c87a06ab783457e62d7effef4762bac2</p>",
-    "authors": "Daniel Ari Friedman",
+    "authors": "Tucker Chambers, Daniel A. Friedman",
     "abstract": "<p>Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration of comparative entomology, spectroscopy, neural timing analysis, and computational electromagnetism. The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding . Methods: We integrate: (i) literature-grounded morphometric ranges for antennal sensilla, (ii) ATR-FTIR evidence that insect body chemistry can support species discrimination, (iii) published olfactory receptor neuron timing constraints, and (iv) deterministic electromagnetic models that expose their assumptions and parameter sensitivity . Preregistered experimental protocols specify QCL/LED bands (2--25 &micro;m), thermal matched controls, power density 0.1--2 mW/cm&sup2;, and N&ge;50 per condition. All analyses use fixed random seeds (42) where stochastic routines are present. Results: The computational figures show where sensillum-scale dimensions, CHC-associated mid-IR bands, and atmospheric windows overlap, but they do not by themselves establish biological IR olfaction. The strongest empirical anchors are narrower: fast insect ORN first-spike timing, photomechanic IR organs in pyrophilous beetles, hematophagy IR cues in mosquitoes and kissing bugs, thermogenic pollination signals in cycads, thermosensitive coeloconic sensilla in ants, and passive cuticle IR optics . These sources motivate specific experiments while also constraining the manuscript's range and mechanism claims. Conclusions: The framework yields five preregistered falsifiers aligned with \\Cref{sec:discussion}: (1) spectral nulls under matched thermal load, (2) geometric mismatch between sensilla dimensions and predicted resonances, (3) environmental misalignment of CHC peaks with transmission windows, (4) temporal indistinguishability of IR versus thermal ORN latencies, and (5) behavioral independence of IR-only orientation from chemical gradients. Protocols specify QCL/LED bands (2--25 &micro;m), matched power deposition, and N&ge;50 per condition to separate electromagnetic detection from thermal artifacts. Implications: Applications of this work include biomimetic IR sensor design, better-controlled pest-monitoring experiments, and clearer tests of whether insect olfactory systems ever use wavelength-specific electromagnetic information. Keywords: insect olfaction, infrared detection, vibrational theory, electromagnetic sensing, sensilla morphology, cuticular hydrocarbons, atmospheric transmission, biomimetic sensors Reproducibility: Complete implementation with seven case studies in Appendices --- Associated artifacts GitHub release: v1.0.0 (https://github.com/docxology/cohereants/releases/tag/v1.0.0) PDF SHA-256: 36bd97a8ff522937390213a69abb40c8c87a06ab783457e62d7effef4762bac2</p>",
     "keywords": [
       "insect olfaction",
@@ -2195,7 +2179,7 @@
     "topic": "NaturalAIBased",
     "name": "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance",
     "description": "Letter on: \"A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance\".&nbsp; v1 released on December 12, 2023.&nbsp;",
-    "authors": "John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, and 18 others",
+    "authors": "John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, David A. Silbersweig, Francesco Lapenta, Holly Grimm, Jeff Emmett, Joshua Shane, Karl Friston, Martin Nkafu Nkemnkia, Matthew Brown, Matthew Pirkowski, Michael Levin, Michael Zargham, Nguyen Anh Tuan, Krishnashree Achuthan, Thomas Patterson, Scott L. David, Thomas Kehler, Virginia Bleu Knight, Yasuhide Nakayama",
     "abstract": "Letter on: \"A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance\".&nbsp; v1 released on December 12, 2023.&nbsp;",
     "keywords": [
       "Active Inference",
@@ -2210,7 +2194,7 @@
     "topic": "ATLAS2",
     "name": "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management",
     "description": "The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions. Here we provide an initial specification for digital prototypes and paper-and-pencil implementations of a matured ATLAS architecture which integrates pattern language approaches with question-oriented procedures to manage and interpret meaning and context. The ATLAS system facilitates the management and communication of nuanced data sets and knowledge bases with an eye towards interoperability without the need for fully shared standards. The development of ATLAS, driven by the need for enhanced data interoperability and shared understanding in an increasingly complex and volatile digital landscape, reflects a profound, community response to the challenges of information environments and the fragility of extreme specialization. ATLAS's ongoing evolution showcases its adaptability and significance in the realms of data analysis, knowledge management, and cognitive security, and this first release of a technical specification establishes a foundation for a transition from prototype to scale-appropriate implementation.",
-    "authors": "R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, and 1 others",
+    "authors": "R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, Colten Zacharias",
     "abstract": "The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions. Here we provide an initial specification for digital prototypes and paper-and-pencil implementations of a matured ATLAS architecture which integrates pattern language approaches with question-oriented procedures to manage and interpret meaning and context. The ATLAS system facilitates the management and communication of nuanced data sets and knowledge bases with an eye towards interoperability without the need for fully shared standards. The development of ATLAS, driven by the need for enhanced data interoperability and shared understanding in an increasingly complex and volatile digital landscape, reflects a profound, community response to the challenges of information environments and the fragility of extreme specialization. ATLAS's ongoing evolution showcases its adaptability and significance in the realms of data analysis, knowledge management, and cognitive security, and this first release of a technical specification establishes a foundation for a transition from prototype to scale-appropriate implementation.",
     "keywords": [],
     "doi": "10.5281/zenodo.10362561"
@@ -2332,7 +2316,7 @@
     "topic": "Transcript",
     "name": "Transcript of: Karl Friston, 1st Applied Active Inference Symposium, Active Inference Lab, June 21, 2021",
     "description": "On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston. The Symposium was structured in three sections, corresponding to the Organizational Units of the Active Inference Lab: Education, Communication, and Tools. This publication reflects an edited and enriched transcript of the proceedings of the Symposium.",
-    "authors": "Karl Friston, David Standish Douglass, Maria Luiza Iennaco de Vasconcelos, Stephen Sillett, Lorena Sganzerla, Dean Tickles, and 3 others",
+    "authors": "Karl Friston, David Standish Douglass, Maria Luiza Iennaco de Vasconcelos, Stephen Sillett, Lorena Sganzerla, Dean Tickles, Ivan Metelkin, Alex Vyatkin, Daniel Ari Friedman",
     "abstract": "On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston. The Symposium was structured in three sections, corresponding to the Organizational Units of the Active Inference Lab: Education, Communication, and Tools. This publication reflects an edited and enriched transcript of the proceedings of the Symposium.",
     "keywords": [
       "Active Inference",
@@ -2729,7 +2713,7 @@
     "topic": "AlphaCOGANT",
     "name": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
     "description": "The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio\noptimization problem:  a corporation recursively improves when realized economic\ngains finance the next cycle of better prediction and deployment, and the firm's\nstanding is summarized by t-RSI, a standardized gap between alpha-creation and\nalpha-decay rates. AlphaCOGANT observes that this construction is, term for\nterm, an Active Inference agent  — and makes the correspondence executable.\n\nWe render AlphaFund's Economic World Model (EWM) as a generative model written\nin Generalized Notation Notation (GNN), produced by the COGANT\ncodebase-to-GNN translation pattern. The firm's five capital channels —\nInvestments, Sensors, Actuators, Parameters, and R&amp;D — become the hidden-state\nfactors of a partially-observed model; capital allocation becomes the control\nvector; and the portfolio optimizer's marginal-return objective becomes\nExpected Free Energy (EFE) minimization. The EFE decomposition supplies a\nprincipled reading of AlphaFund's own categories: its pragmatic value is\nexpected log-equity growth (the alpha-creation rate, read off the broker ledger),\nand its epistemic value is the information gain about the EWM that Sensors and\nR&amp;D purchase (the data-scaling and forecast-sharpening laws). t-RSI is recovered\nas the standardized distance between the create-rate and decay-rate posteriors —\nthe thresholded EFE-improvement certificate that admits a self-improvement commit\nonly when creation confidently exceeds decay.\n\nWe give the technical and computational realization: a GNN model file for the\nfive-channel firm, a tested NumPy Active Inference engine that performs state\ninference, computes the epistemic/pragmatic EFE split and the marginal-return\nvector, and evaluates the t-RSI certificate. We argue that GNN-via-COGANT brings\ntwo things AlphaFund's program needs and Active Inference already enforces:\nfiltration integrity (the model may condition only on information available\nat decision time — the same \"no-peeking\" discipline that separates an EWM from a\nlanguage model) and auditable capital allocation (every admissible funding\nmove has a negative-EFE score under a single, legible objective). This is not\nfinancial advice; it is a demonstration that this reduced\nrecursive-corporate-self-improvement model has a direct Active Inference\nrepresentation supported by source-owning methods and artifact checks .\n\n---\nAssociated artifacts\nGitHub release: v1.0.1 (https://github.com/docxology/alphacogant/releases/tag/v1.0.1)\nDOI: https://doi.org/10.5281/zenodo.20976824\nZenodo: https://zenodo.org/records/20976824\nPDF SHA-256: 41efa7a8a98e6a67cece68377b8f0c5f19304e85c664ec9516353ee24eb0421f",
-    "authors": "Daniel Ari Friedman",
+    "authors": "Daniel Ari Friedman, Tucker Cahill Chambers",
     "abstract": "The AlphaFund whitepaper reframes recursive self-improvement (RSI) as a portfolio\noptimization problem:  a corporation recursively improves when realized economic\ngains finance the next cycle of better prediction and deployment, and the firm's\nstanding is summarized by t-RSI, a standardized gap between alpha-creation and\nalpha-decay rates. AlphaCOGANT observes that this construction is, term for\nterm, an Active Inference agent  — and makes the correspondence executable.\n\nWe render AlphaFund's Economic World Model (EWM) as a generative model written\nin Generalized Notation Notation (GNN), produced by the COGANT\ncodebase-to-GNN translation pattern. The firm's five capital channels —\nInvestments, Sensors, Actuators, Parameters, and R&amp;D — become the hidden-state\nfactors of a partially-observed model; capital allocation becomes the control\nvector; and the portfolio optimizer's marginal-return objective becomes\nExpected Free Energy (EFE) minimization. The EFE decomposition supplies a\nprincipled reading of AlphaFund's own categories: its pragmatic value is\nexpected log-equity growth (the alpha-creation rate, read off the broker ledger),\nand its epistemic value is the information gain about the EWM that Sensors and\nR&amp;D purchase (the data-scaling and forecast-sharpening laws). t-RSI is recovered\nas the standardized distance between the create-rate and decay-rate posteriors —\nthe thresholded EFE-improvement certificate that admits a self-improvement commit\nonly when creation confidently exceeds decay.\n\nWe give the technical and computational realization: a GNN model file for the\nfive-channel firm, a tested NumPy Active Inference engine that performs state\ninference, computes the epistemic/pragmatic EFE split and the marginal-return\nvector, and evaluates the t-RSI certificate. We argue that GNN-via-COGANT brings\ntwo things AlphaFund's program needs and Active Inference already enforces:\nfiltration integrity (the model may condition only on information available\nat decision time — the same \"no-peeking\" discipline that separates an EWM from a\nlanguage model) and auditable capital allocation (every admissible funding\nmove has a negative-EFE score under a single, legible objective). This is not\nfinancial advice; it is a demonstration that this reduced\nrecursive-corporate-self-improvement model has a direct Active Inference\nrepresentation supported by source-owning methods and artifact checks .\n\n---\nAssociated artifacts\nGitHub release: v1.0.1 (https://github.com/docxology/alphacogant/releases/tag/v1.0.1)\nDOI: https://doi.org/10.5281/zenodo.20976824\nZenodo: https://zenodo.org/records/20976824\nPDF SHA-256: 41efa7a8a98e6a67cece68377b8f0c5f19304e85c664ec9516353ee24eb0421f",
     "keywords": [
       "active inference",
@@ -3279,7 +3263,7 @@
     "topic": "DigiPPPiP",
     "name": "DigiPPPiP: Digital Partner Pen Play in Parallel",
     "description": "DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous, accessible, and place-responsive dyadic drawing . The framework is positioned within collaborative-work studies of shared drawing surfaces , cyber-physical-social systems , mediated embodiment and presence , digital intimacy technologies , and cautious hyperscanning methodology .\n\nThe manuscript translates the project brief into a modular research artifact: 9 temporal-spatial modalities, 13 evidence dimensions, 6 planned outcome measures, and 39 conceptual figures are generated or registered by the project code rather than hand-maintained prose. The computational layer is explicitly illustrative, not empirical: the active-inference, inter-brain-synchrony, Forman-Ricci, narrative-information, source-quality, accessibility, and neuroergonomic outputs are deterministic conceptual models designed to make theoretical commitments inspectable. Formal equations are consolidated in  so the main line can state evidence boundaries before presenting mathematical detail.\n\nThe argument is that DigiPPPiP should be treated as human-human relational technology. Its irreducible design kernel is modest: two partners, a shared mark field, perceptible traces of agency, a temporal relation among contributions, and consentful control over persistence. Digital infrastructure expands the substrate of shared mark-making without replacing the second-person, embodied, narrative, and affective conditions that make the practice relationally meaningful . The manuscript explicitly avoids claims that DigiPPPiP is clinically therapeutic, universally accessible, or causally validated by neural synchrony; those remain empirical questions for controlled studies. Cross-references use Pandoc labels, so sections, equations, figures, and tables remain automatically numbered across PDF and web render targets.\n\n---\nAssociated artifacts\nGitHub release: v1.0.0 (https://github.com/docxology/Digi-PPPiP/releases/tag/v1.0.0)\nDOI: https://doi.org/10.5281/zenodo.21815704\nZenodo: https://zenodo.org/records/21815704\nPDF SHA-256: f5ca95ce77c7c5367c0a0e68d5b4a640f0865b4c2b0827fa78ff1babbcbd986d",
-    "authors": "Daniel Ari Friedman",
+    "authors": "Siddhant Shrivastava, Evelyn C. Goh, Alexandra Mikhailova, Daniel Ari Friedman",
     "abstract": "DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous, accessible, and place-responsive dyadic drawing . The framework is positioned within collaborative-work studies of shared drawing surfaces , cyber-physical-social systems , mediated embodiment and presence , digital intimacy technologies , and cautious hyperscanning methodology .\n\nThe manuscript translates the project brief into a modular research artifact: 9 temporal-spatial modalities, 13 evidence dimensions, 6 planned outcome measures, and 39 conceptual figures are generated or registered by the project code rather than hand-maintained prose. The computational layer is explicitly illustrative, not empirical: the active-inference, inter-brain-synchrony, Forman-Ricci, narrative-information, source-quality, accessibility, and neuroergonomic outputs are deterministic conceptual models designed to make theoretical commitments inspectable. Formal equations are consolidated in  so the main line can state evidence boundaries before presenting mathematical detail.\n\nThe argument is that DigiPPPiP should be treated as human-human relational technology. Its irreducible design kernel is modest: two partners, a shared mark field, perceptible traces of agency, a temporal relation among contributions, and consentful control over persistence. Digital infrastructure expands the substrate of shared mark-making without replacing the second-person, embodied, narrative, and affective conditions that make the practice relationally meaningful . The manuscript explicitly avoids claims that DigiPPPiP is clinically therapeutic, universally accessible, or causally validated by neural synchrony; those remain empirical questions for controlled studies. Cross-references use Pandoc labels, so sections, equations, figures, and tables remain automatically numbered across PDF and web render targets.\n\n---\nAssociated artifacts\nGitHub release: v1.0.0 (https://github.com/docxology/Digi-PPPiP/releases/tag/v1.0.0)\nDOI: https://doi.org/10.5281/zenodo.21815704\nZenodo: https://zenodo.org/records/21815704\nPDF SHA-256: f5ca95ce77c7c5367c0a0e68d5b4a640f0865b4c2b0827fa78ff1babbcbd986d",
     "keywords": [
       "partner pen play in parallel",

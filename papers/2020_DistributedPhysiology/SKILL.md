@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "DistributedPhysiology"
+name: "Distributed physiology and the molecular basis of social life in eusocial insects"
 description: "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals. We examine how this..."
 tags: ["distributed-physiology", "superorganism", "collective-behavior", "ant-colonies", "decentralized-control", "interaction-networks", "colony-metabolism", "social-immunity"]
 domain: "Entomology"
-citation: "Daniel A. Friedman, Deborah M. Gordon (2020). *DistributedPhysiology*. Entomology."
+citation: "D.A. Friedman, B.R. Johnson, T.A. Linksvayer (2020). *Distributed physiology and the molecular basis of social life in eusocial insects*. Hormones & Behavior."
 doi: "10.1016/j.yhbeh.2020.104757"
 ---
 
-# DistributedPhysiology
+# Distributed physiology and the molecular basis of social life in eusocial insects
 
-**Daniel A. Friedman, Deborah M. Gordon** (2020) · Entomology
+**D.A. Friedman, B.R. Johnson, T.A. Linksvayer** (2020) · Entomology
 
 ## Context
 
@@ -20,14 +20,12 @@ This work addresses topics in **Entomology**: distributed physiology, superorgan
 
 Primary methods and techniques applied in this work:
 
-- Field observation and behavioral assays
-- Population genetics analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals.
 - Analysis of We examine how this...
 
 ## Related Works
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1016/j.yhbeh.2020.104757`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

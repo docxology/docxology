@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — CognitiveIntegrity
+# AGENTS.md — Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)
 
-**Paper**: CognitiveIntegrity (2026)
+**Paper**: Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations) (2026)
 **Domain**: Cognitive Security
 **Authors**: Daniel Ari Friedman
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
-- Identifies findings: The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems., Analysis of Part 1 of 3 covers theore...
+- Extracts methods: See paper
+- Identifies findings: Analysis of Part 1 of 3 covers theore...
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects CognitiveIntegrity to related works in the bibliography
+- Connects Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

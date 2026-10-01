@@ -24,8 +24,7 @@
 
 ## Key Findings
 
-- A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source
-- This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

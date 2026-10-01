@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "EvoJump"
+name: "EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories"
 description: "EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity. The work..."
 tags: ["evolutionary-transitions", "evojump", "active-inference", "major-transitions", "phenotypic-complexity", "free-energy-principle"]
 domain: "Active Inference"
-citation: "Daniel A. Friedman (2025). *EvoJump*. Active Inference."
+citation: "Daniel Friedman (2025). *EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories*. Zenodo."
 doi: "10.5281/zenodo.17229924"
 ---
 
-# EvoJump
+# EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories
 
-**Daniel A. Friedman** (2025) · Active Inference
+**Daniel Friedman** (2025) · Active Inference
 
 ## Context
 
@@ -20,14 +20,12 @@ This work addresses topics in **Active Inference**: evolutionary transitions, Ev
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity.
 - Analysis of The work...
 
 ## Related Works
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.17229924`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

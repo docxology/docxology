@@ -4,7 +4,7 @@ name: "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sp
 description: "Sparse waypoint analysis is privacy-sensitive: it must separate movement from irregular reporting, missingness, spatial coarsening, and corruption while preserving uncertainty about hidden location. Active FractalRabbit provides a controlled, artifac..."
 tags: ["activefractalrabbit"]
 domain: "Cognitive Security"
-citation: "Daniel Ari Friedman (2026). *Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations*. Cognitive Security."
+citation: "Daniel Ari Friedman (2026). *Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations*. Zenodo."
 doi: "10.5281/zenodo.21330636"
 ---
 
@@ -20,14 +20,13 @@ This work addresses topics in **Cognitive Security**: ActiveFractalRabbit.
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21330636`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

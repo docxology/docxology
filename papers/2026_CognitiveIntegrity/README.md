@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ CognitiveIntegrity
+# 🛡️ Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
@@ -18,12 +18,10 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems.
 - Analysis of Part 1 of 3 covers theore...
 
 ## Artifacts
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *CognitiveIntegrity*. Zenodo. DOI: 10.5281/zenodo.18364118. URL: https://doi.org/10.5281/zenodo.18364118.
+> Daniel Ari Friedman (2026). *Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)*. Zenodo. DOI: 10.5281/zenodo.18364118. URL: https://doi.org/10.5281/zenodo.18364118.
 
 ## Related
 

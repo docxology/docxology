@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — MathArtBlake
+# AGENTS.md — MathArt Stream #8: William Blake and Active Inference
 
-**Paper**: MathArtBlake (2024)
+**Paper**: MathArt Stream #8: William Blake and Active Inference (2024)
 **Domain**: Presentations & Media
 **Authors**: Daniel Ari Friedman
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Content production, Pedagogical design
+- Extracts methods: See paper
 - Identifies findings: Slides for: MathArtStream 8 ~ 9/6/2024 at 17 UTC  Shanna Dobson, Daniel Friedman "William Blake, Kierkegaard, Gothic" https://www.youtube.com/live/yIS0OW2o18s.
 - Maps contributions to Presentations & Media literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects MathArtBlake to related works in the bibliography
+- Connects MathArt Stream #8: William Blake and Active Inference to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

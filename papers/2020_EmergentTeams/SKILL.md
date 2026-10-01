@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "EmergentTeams"
+name: "Emergent Teams for Complex Threats"
 description: "Innovation teams formed in incubators, research accelerators, and hackathons need to quickly align on narrative, workflow, and objectives. This paper presents the Facilitator's Catechism, an operation..."
 tags: ["emergent-teams", "operations-orders", "team-formation", "innovation", "facilitation", "collective-intelligence", "hackathons", "research-accelerators"]
 domain: "Cognitive Security"
-citation: "Daniel A. Friedman, R.J. Cordes, Scott David (2020). *EmergentTeams*. Cognitive Security."
+citation: "Richard J. Cordes, Daniel Ari Friedman (2020). *Emergent Teams for Complex Threats*. Zenodo."
 doi: "10.5281/zenodo.3986084"
 ---
 
-# EmergentTeams
+# Emergent Teams for Complex Threats
 
-**Daniel A. Friedman, R.J. Cordes, Scott David** (2020) · Cognitive Security
+**Richard J. Cordes, Daniel Ari Friedman** (2020) · Cognitive Security
 
 ## Context
 
@@ -20,8 +20,7 @@ This work addresses topics in **Cognitive Security**: emergent teams, operations
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -57,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.3986084`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

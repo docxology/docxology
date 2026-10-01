@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "TrustFinder"
+name: "TrustFinder: Recommendations for Community-Based Trust Systems"
 description: "TrustFinder provides recommendations for a community-based system for finding trusted sources and evaluating claims. Built on feedback from dozens of experts across fields submitted to the University..."
 tags: ["trustfinder", "trust-systems", "information-evaluation", "cognitive-security", "verified-information", "collaborative-assessment", "sociotechnical-systems"]
 domain: "Cognitive Security"
-citation: "R.J. Cordes, Scott David, Daniel A. Friedman (2022). *TrustFinder*. Cognitive Security."
+citation: "R.J. Cordes, Scott David, Daniel Friedman (2022). *TrustFinder: Recommendations for Community-Based Trust Systems*. Zenodo."
 doi: "10.5281/zenodo.7093836"
 ---
 
-# TrustFinder
+# TrustFinder: Recommendations for Community-Based Trust Systems
 
-**R.J. Cordes, Scott David, Daniel A. Friedman** (2022) · Cognitive Security
+**R.J. Cordes, Scott David, Daniel Friedman** (2022) · Cognitive Security
 
 ## Context
 
@@ -20,8 +20,7 @@ This work addresses topics in **Cognitive Security**: TrustFinder, trust systems
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -57,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7093836`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

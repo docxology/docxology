@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 💻 MarkdownDecisionProcess
+# 💻 Markdown Decision Process: A Framework for Probabilistic Document Analysis
 
-**Daniel Ari Friedman** (2025) · *Zenodo*
+**Daniel Friedman** (2025) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17244386-blue)](https://doi.org/10.5281/zenodo.17244386)
 
@@ -18,12 +18,10 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling.
 - Analysis of Dr...
 
 ## Artifacts
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2025). *MarkdownDecisionProcess*. Zenodo. DOI: 10.5281/zenodo.17244386. URL: https://doi.org/10.5281/zenodo.17244386.
+> Daniel Friedman (2025). *Markdown Decision Process: A Framework for Probabilistic Document Analysis*. Zenodo. DOI: 10.5281/zenodo.17244386. URL: https://doi.org/10.5281/zenodo.17244386.
 
 ## Related
 

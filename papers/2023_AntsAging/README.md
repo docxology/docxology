@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎥 AntsAging
+# 🎥 Of Ants & Aging
 
-**Daniel A. Friedman** (2023) · *Presentation*
+**Daniel Ari Friedman** (2023) · *Presentation*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7855581-blue)](https://doi.org/10.5281/zenodo.7855581)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Content production
-- Pedagogical design
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social i
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -35,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2023). *AntsAging*. Presentation. DOI: 10.5281/zenodo.7855581. URL: https://doi.org/10.5281/zenodo.7855581.
+> Daniel Ari Friedman (2023). *Of Ants & Aging*. Presentation. DOI: 10.5281/zenodo.7855581. URL: https://doi.org/10.5281/zenodo.7855581.
 
 ## Related
 

@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — AntsAging
+# AGENTS.md — Of Ants & Aging
 
-**Paper**: AntsAging (2023)
+**Paper**: Of Ants & Aging (2023)
 **Domain**: Presentations & Media
-**Authors**: Daniel A. Friedman
+**Authors**: Daniel Ari Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Content production, Pedagogical design
-- Identifies findings: A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social i
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects AntsAging to related works in the bibliography
+- Connects Of Ants & Aging to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References
@@ -45,4 +45,4 @@
 ### Related Papers
 - [2018_MVEE](../2018_MVEE/)
 - [2023_PostdocReview](../2023_PostdocReview/)
-- [2024_BioFirm](../2024_BioFirm/)
+- [2025_BiofirmDevelopmentWith](../2025_BiofirmDevelopmentWith/)

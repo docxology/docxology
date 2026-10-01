@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 DopamineForaging
+# 🐜 The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants
 
-**Daniel A. Friedman, Annette Pilko, Deborah M. Gordon** (2018) · *iScience*
+**Daniel A. Friedman, Anna Pilko, Dorota Skowronska-Krawczyk, Karolina Krasinska, Jacqueline W. Parker, Jay Hirsh, Deborah M. Gordon** (2018) · *iScience*
 
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.isci.2018.09.001-blue)](https://doi.org/10.1016/j.isci.2018.09.001)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Individual behavioral variation within colonies is shaped by neurochemical signaling.
-- Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Annette Pilko, Deborah M. Gordon (2018). *DopamineForaging*. iScience. DOI: 10.1016/j.isci.2018.09.001. URL: https://doi.org/10.1016/j.isci.2018.09.001.
+> Daniel A. Friedman, Anna Pilko, Dorota Skowronska-Krawczyk, Karolina Krasinska, Jacqueline W. Parker, Jay Hirsh, Deborah M. Gordon (2018). *The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants*. iScience. DOI: 10.1016/j.isci.2018.09.001. URL: https://doi.org/10.1016/j.isci.2018.09.001.
 
 ## Related
 

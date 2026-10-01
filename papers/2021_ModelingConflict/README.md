@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 ModelingConflict
+# 🧠 Active Inference in Modeling Conflict
 
-**Scott David, R.J. Cordes, Daniel A. Friedman** (2021) · *Zenodo*
+**Scott David, Richard J. Cordes, Daniel A. Friedman** (2021) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5750934-blue)](https://doi.org/10.5281/zenodo.5750934)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -35,7 +34,7 @@
 
 ## Citation
 
-> Scott David, R.J. Cordes, Daniel A. Friedman (2021). *ModelingConflict*. Zenodo. DOI: 10.5281/zenodo.5750934. URL: https://doi.org/10.5281/zenodo.5750934.
+> Scott David, Richard J. Cordes, Daniel A. Friedman (2021). *Active Inference in Modeling Conflict*. Zenodo. DOI: 10.5281/zenodo.5750934. URL: https://doi.org/10.5281/zenodo.5750934.
 
 ## Related
 

@@ -16,12 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Software pipeline design, Data-driven analysis
-- Identifies findings: A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and, ---
-Associated artifacts
-GitHub release: v0.1.2 (https://github.com/docxology/template_textbook/releases/tag/v0.1.2)
-DOI: https://doi.org/10.5281/zenodo.20533125
-Zenodo: https://zenodo.org/records/205
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -41,7 +37,7 @@ Zenodo: https://zenodo.org/records/205
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

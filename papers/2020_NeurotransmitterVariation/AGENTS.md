@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — NeurotransmitterVariation
+# AGENTS.md — Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains
 
-**Paper**: NeurotransmitterVariation (2020)
+**Paper**: Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains (2020)
 **Domain**: Entomology
 **Authors**: Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis
-- Identifies findings: Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions.., Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a....
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects NeurotransmitterVariation to related works in the bibliography
+- Connects Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

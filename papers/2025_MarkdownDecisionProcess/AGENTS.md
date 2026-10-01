@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — MarkdownDecisionProcess
+# AGENTS.md — Markdown Decision Process: A Framework for Probabilistic Document Analysis
 
-**Paper**: MarkdownDecisionProcess (2025)
+**Paper**: Markdown Decision Process: A Framework for Probabilistic Document Analysis (2025)
 **Domain**: Computational
-**Authors**: Daniel Ari Friedman
+**Authors**: Daniel Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Software pipeline design, Data-driven analysis
-- Identifies findings: The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling., Analysis of Dr...
+- Extracts methods: See paper
+- Identifies findings: Analysis of Dr...
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects MarkdownDecisionProcess to related works in the bibliography
+- Connects Markdown Decision Process: A Framework for Probabilistic Document Analysis to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

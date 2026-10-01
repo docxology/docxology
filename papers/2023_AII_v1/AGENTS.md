@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — AII_v1
+# AGENTS.md — The Active Inference Institute and Active Inference Ecosystem (v1)
 
-**Paper**: AII_v1 (2023)
+**Paper**: The Active Inference Institute and Active Inference Ecosystem (v1) (2023)
 **Domain**: AII Ecosystem
-**Authors**: Active Inference Institute
+**Authors**: Active Inference Institute, Ander Aguirre, John Boik, Libor Burian, Matthew Brown, RJ Cordes, Scott David, David S Douglass, Pablo Fernandez-Maquieira, Daniel A Friedman, Holly Grimm, Avel Guénin–Carlut, Maria Luiza Iennaco, V Bleu Knight, Alexandra Mikhailova, Ali Rahmjoo, Adeel Razi, Jakub Smékal, Ronen Tamari, Dean Tickles, Alex Vyatkin
 
 ---
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Program coordination, Community governance design
+- Extracts methods: See paper
 - Identifies findings: This document briefly surveys the current state of the Active Inference Institute and Active Inference Ecosystem, and outlines our future directions.., It will be versioned as a living representation (both cyclic and updating) of ecosystems both general and local, describing the past, present, and future actions of the Active Inference Institute..
 - Maps contributions to AII Ecosystem literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects AII_v1 to related works in the bibliography
+- Connects The Active Inference Institute and Active Inference Ecosystem (v1) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "ImageMemeResearch"
+name: "Bridging gaps in image meme research: A multidisciplinary paradigm"
 description: "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We prov..."
 tags: ["image-memes", "meme-research", "digital-communication", "narrative-analysis", "rhetorical-analysis", "sensemaking"]
 domain: "Cognitive Security"
-citation: "Daniel A. Friedman, R.J. Cordes, Mridula Mascarenhas (2024). *ImageMemeResearch*. Cognitive Security."
+citation: "Mridula Mascarenhas, Daniel Ari Friedman, Richard J Cordes (2024). *Bridging gaps in image meme research: A multidisciplinary paradigm*. JASIST."
 doi: "10.1002/asi.24900"
 ---
 
-# ImageMemeResearch
+# Bridging gaps in image meme research: A multidisciplinary paradigm
 
-**Daniel A. Friedman, R.J. Cordes, Mridula Mascarenhas** (2024) · Cognitive Security
+**Mridula Mascarenhas, Daniel Ari Friedman, Richard J Cordes** (2024) · Cognitive Security
 
 ## Context
 
@@ -20,14 +20,12 @@ This work addresses topics in **Cognitive Security**: image memes, meme research
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse.
 - Analysis of We prov...
 
 ## Related Works
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1002/asi.24900`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

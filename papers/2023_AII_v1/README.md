@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🌍 AII_v1
+# 🌍 The Active Inference Institute and Active Inference Ecosystem (v1)
 
-**Active Inference Institute** (2023) · *Zenodo*
+**Active Inference Institute, Ander Aguirre, John Boik, Libor Burian, Matthew Brown, RJ Cordes, Scott David, David S Douglass, Pablo Fernandez-Maquieira, Daniel A Friedman, Holly Grimm, Avel Guénin–Carlut, Maria Luiza Iennaco, V Bleu Knight, Alexandra Mikhailova, Ali Rahmjoo, Adeel Razi, Jakub Smékal, Ronen Tamari, Dean Tickles, Alex Vyatkin** (2023) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.8266280-blue)](https://doi.org/10.5281/zenodo.8266280)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Program coordination
-- Community governance design
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -37,7 +36,7 @@
 
 ## Citation
 
-> Active Inference Institute (2023). *AII_v1*. Zenodo. DOI: 10.5281/zenodo.8266280. URL: https://doi.org/10.5281/zenodo.8266280.
+> Active Inference Institute, Ander Aguirre, John Boik, Libor Burian, Matthew Brown, RJ Cordes, Scott David, David S Douglass, Pablo Fernandez-Maquieira, Daniel A Friedman, Holly Grimm, Avel Guénin–Carlut, Maria Luiza Iennaco, V Bleu Knight, Alexandra Mikhailova, Ali Rahmjoo, Adeel Razi, Jakub Smékal, Ronen Tamari, Dean Tickles, Alex Vyatkin (2023). *The Active Inference Institute and Active Inference Ecosystem (v1)*. Zenodo. DOI: 10.5281/zenodo.8266280. URL: https://doi.org/10.5281/zenodo.8266280.
 
 ## Related
 

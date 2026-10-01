@@ -4,7 +4,7 @@ name: "The Facilitator's Catechism"
 description: "Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and civilian teams."
 tags: ["opord", "operations-orders", "sensemaking", "high-reliability-organizations", "complexity", "active-inference"]
 domain: "Cognitive Security"
-citation: "Richard J. Cordes, Daniel Ari Friedman (2020). *The Facilitator's Catechism*. Cognitive Security."
+citation: "Richard J. Cordes, Daniel Ari Friedman (2020). *The Facilitator's Catechism*. Zenodo."
 doi: "10.5281/zenodo.4062540"
 ---
 
@@ -27,7 +27,7 @@ Primary methods and techniques applied in this work:
 
 Core contributions and results:
 
-- Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and 
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 

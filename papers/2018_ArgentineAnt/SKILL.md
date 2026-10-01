@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "ArgentineAnt"
+name: "Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations"
 description: "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers. Here we examine the relationship between the..."
 tags: ["argentine-ant", "linepithema-humile", "invasive-species", "supercolony", "nestmate-recognition", "collective-behavior", "chemical-ecology", "cuticular-hydrocarbons"]
 domain: "Entomology"
-citation: "Daniel A. Friedman, Deborah M. Gordon (2018). *ArgentineAnt*. Entomology."
+citation: "Benjamin P. Burford, Gail Lee, Daniel A. Friedman, Esmé Brachmann, Rebia Khan, Dylan J. MacArthur-Waltz, Aidan D. McCarty, Deborah M. Gordon (2018). *Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations*. PLoS One."
 doi: "10.1371/journal.pone.0202117"
 ---
 
-# ArgentineAnt
+# Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations
 
-**Daniel A. Friedman, Deborah M. Gordon** (2018) · Entomology
+**Benjamin P. Burford, Gail Lee, Daniel A. Friedman, Esmé Brachmann, Rebia Khan, Dylan J. MacArthur-Waltz, Aidan D. McCarty, Deborah M. Gordon** (2018) · Entomology
 
 ## Context
 
@@ -20,15 +20,13 @@ This work addresses topics in **Entomology**: Argentine ant, Linepithema humile,
 
 Primary methods and techniques applied in this work:
 
-- Field observation and behavioral assays
-- Population genetics analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers..
-- Here we examine the relationship between the....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1371/journal.pone.0202117`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

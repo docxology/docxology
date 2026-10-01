@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧬 NuclearStructure
+# 🧬 Influence of nuclear structure on the formation of radiation-induced lethal lesions
 
-**Daniel A. Friedman, Daniel F. Pilch** (2016) · *Int. J. Radiation Biology*
+**Daniel A. Friedman, Lauren Tait, Andrew T. M. Vaughan** (2016) · *Int. J. Radiation Biology*
 
 [![DOI](https://img.shields.io/badge/DOI-10.3109%2F09553002.2016.1144941-blue)](https://doi.org/10.3109/09553002.2016.1144941)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability..
-- Chromosome conformation capture (3C) tec....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Daniel F. Pilch (2016). *NuclearStructure*. Int. J. Radiation Biology. DOI: 10.3109/09553002.2016.1144941. URL: https://doi.org/10.3109/09553002.2016.1144941.
+> Daniel A. Friedman, Lauren Tait, Andrew T. M. Vaughan (2016). *Influence of nuclear structure on the formation of radiation-induced lethal lesions*. Int. J. Radiation Biology. DOI: 10.3109/09553002.2016.1144941. URL: https://doi.org/10.3109/09553002.2016.1144941.
 
 ## Related
 

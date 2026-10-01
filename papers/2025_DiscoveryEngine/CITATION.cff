@@ -1,14 +1,26 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "DiscoveryEngine"
+title: "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes"
 date-released: 2025
 doi: 10.48550/arXiv.2505.17500
 url: "https://doi.org/10.48550/arXiv.2505.17500"
 authors:
-  - family-names: Friedman
-    given-names: Daniel A.
+  - family-names: "Baulin"
+    given-names: "Vladimir"
+  - family-names: "Cook"
+    given-names: "Austin"
+  - family-names: "Friedman"
+    given-names: "Daniel"
     orcid: "https://orcid.org/0000-0001-6232-9096"
+  - family-names: "Lumiruusu"
+    given-names: "Janna"
+  - family-names: "Pashea"
+    given-names: "Andrew"
+  - family-names: "Rahman"
+    given-names: "Shagor"
+  - family-names: "Waldeck"
+    given-names: "Benedikt"
 identifiers:
   - type: doi
     value: "10.48550/arXiv.2505.17500"

@@ -1036,40 +1036,6 @@
     ]
   },
   {
-    "title": "BioFirm Development at Applied Active Inference Symposium 2024",
-    "kind": "work",
-    "year": "2024",
-    "identifiers": {
-      "zenodo_doi": "10.5281/zenodo.14861595",
-      "canonical": "papers/2024_BioFirm/"
-    },
-    "present_platforms": [
-      "Zenodo (DOI)",
-      "personal-site canonical page"
-    ],
-    "missing_platforms": [
-      "GitHub",
-      "arXiv",
-      "HuggingFace",
-      "OSF",
-      "IPFS/Software-Heritage",
-      "PyPI"
-    ],
-    "canonical_page": "papers/2024_BioFirm/",
-    "recommended_actions": [
-      {
-        "priority": "P4",
-        "platform": "arXiv",
-        "action": "Consider an arXiv preprint mirror (if eligible / endorsed for the category)"
-      },
-      {
-        "priority": "P5",
-        "platform": "OSF",
-        "action": "Optional: OSF project/preprint mirror for discoverability"
-      }
-    ]
-  },
-  {
     "title": "Bridging gaps in image meme research: A multidisciplinary paradigm",
     "kind": "work",
     "year": "2024",
@@ -4656,7 +4622,7 @@
     "kind": "work",
     "year": "2025",
     "identifiers": {
-      "zenodo_doi": "10.5281/zenodo.14861596",
+      "zenodo_doi": "10.5281/zenodo.14861595",
       "canonical": "papers/2025_BiofirmDevelopmentWith/"
     },
     "present_platforms": [

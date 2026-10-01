@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "AntConsciousness"
+name: "The ant colony as a test for scientific theories of consciousness"
 description: "Here we address the scientific study of consciousness by proposing the ant colony as a model system. We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s..."
 tags: ["consciousness", "ant-colony", "ant-colony-test", "philosophy-of-science", "social-insects", "collective-cognition", "scientific-theories-of-consciousness"]
 domain: "Entomology"
-citation: "Daniel A. Friedman, Eirik Søvik (2019). *AntConsciousness*. Entomology."
+citation: "Daniel A. Friedman, Eirik Søvik (2019). *The ant colony as a test for scientific theories of consciousness*. Synthese."
 doi: "10.1007/s11229-019-02130-y"
 ---
 
-# AntConsciousness
+# The ant colony as a test for scientific theories of consciousness
 
 **Daniel A. Friedman, Eirik Søvik** (2019) · Entomology
 
@@ -28,8 +28,7 @@ Primary methods and techniques applied in this work:
 
 Core contributions and results:
 
-- Here we address the scientific study of consciousness by proposing the ant colony as a model system..
-- We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 

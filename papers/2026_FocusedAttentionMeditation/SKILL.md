@@ -4,13 +4,13 @@ name: "Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical 
 description: "Three-level hierarchical Active Inference framework for focused attention meditation: thoughtseed agents (Markov blankets) couple to DMN/VAN/DAN/FPN; simulations reproduce 49% lower free energy and DMN suppression in expert meditators."
 tags: ["active-inference", "focused-attention-meditation", "thoughtseeds", "free-energy-principle", "hierarchical-modeling", "precision-weighting", "contemplative-neuroscience", "expert-novice", "predictive-processing", "computational-psychiatry"]
 domain: "Active Inference"
-citation: "P. C. Kavi, Daniel Ari Friedman & G. Patow (2026). *Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences*. Active Inference."
+citation: "Prakash Chandra Kavi, Daniel Ari Friedman, Gustavo Patow (2026). *Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences*. CSCIS vol 2857, Springer."
 doi: "10.1007/978-3-032-16955-6_11"
 ---
 
 # Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences
 
-**P. C. Kavi, Daniel Ari Friedman & G. Patow** (2026) · Active Inference
+**Prakash Chandra Kavi, Daniel Ari Friedman, Gustavo Patow** (2026) · Active Inference
 
 ## Context
 
@@ -20,14 +20,13 @@ This work addresses topics in **Active Inference**: Active Inference, focused at
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Three-level hierarchical Active Inference framework for focused attention meditation: thoughtseed agents (Markov blankets) couple to DMN/VAN/DAN/FPN; simulations reproduce 49% lower free energy and DM
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1007/978-3-032-16955-6_11`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

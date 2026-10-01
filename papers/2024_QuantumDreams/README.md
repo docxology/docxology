@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 QuantumDreams
+# 🎨 Four-fold Fields of Quantum Dreams
 
 **Daniel Ari Friedman, Dean Tickles** (2024) · *Zenodo*
 
@@ -18,12 +18,10 @@
 
 ## Methods
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured visual-phenomenological analysis.
 - Analysis of The work uses Morse...
 
 ## Artifacts
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman, Dean Tickles (2024). *QuantumDreams*. Zenodo. DOI: 10.5281/zenodo.10798144. URL: https://doi.org/10.5281/zenodo.10798144.
+> Daniel Ari Friedman, Dean Tickles (2024). *Four-fold Fields of Quantum Dreams*. Zenodo. DOI: 10.5281/zenodo.10798144. URL: https://doi.org/10.5281/zenodo.10798144.
 
 ## Related
 

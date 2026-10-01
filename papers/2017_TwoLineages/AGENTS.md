@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — TwoLineages
+# AGENTS.md — Two lineages that need each other
 
-**Paper**: TwoLineages (2017)
+**Paper**: Two lineages that need each other (2017)
 **Domain**: Entomology
-**Authors**: Daniel A. Friedman, Deborah M. Gordon
+**Authors**: D. M. Gordon, D. A. Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis
-- Identifies findings: Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior.., In dependent-lineage species, queens must mate with males....
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects TwoLineages to related works in the bibliography
+- Connects Two lineages that need each other to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

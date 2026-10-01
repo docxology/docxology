@@ -4,7 +4,7 @@ name: "California Public Records: A Technical and Legal Reference for the Post-A
 description: "A technical and legal reference to California public-records ecosystem, anchored by the CPRA recodified by AB 473."
 tags: ["california-public-records-act", "open-data", "ckan", "socrata", "arcgis", "cognitive-security", "civic-technology"]
 domain: "Cognitive Security"
-citation: "Daniel Ari Friedman (2026). *California Public Records: A Technical and Legal Reference for the Post-AB 473 Era*. Cognitive Security."
+citation: "Daniel Ari Friedman (2026). *California Public Records: A Technical and Legal Reference for the Post-AB 473 Era*. Zenodo."
 doi: "10.5281/zenodo.20789899"
 artifact_doi: "10.5281/zenodo.20789916"
 ---

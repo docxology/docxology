@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Digital humanities corpus construction, Evidence-ledger provenance tracking, Rights-bounded release workflow
-- Identifies findings: A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source, This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle.
+- Identifies findings: See paper
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR

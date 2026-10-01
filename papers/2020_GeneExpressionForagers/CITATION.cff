@@ -1,18 +1,20 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "GeneExpressionForagers"
+title: "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior"
 date-released: 2020
 doi: 10.1038/s42003-020-0813-8
 url: "https://doi.org/10.1038/s42003-020-0813-8"
 authors:
-  - family-names: Friedman
-    given-names: Daniel A.
+  - family-names: "Friedman"
+    given-names: "Daniel Ari"
     orcid: "https://orcid.org/0000-0001-6232-9096"
-  - family-names: Johnson
-    given-names: Brian R.
-  - family-names: Linksvayer
-    given-names: Timothy A.
+  - family-names: "York"
+    given-names: "Ryan Alexander"
+  - family-names: "Hilliard"
+    given-names: "Austin Travis"
+  - family-names: "Gordon"
+    given-names: "Deborah M."
 identifiers:
   - type: doi
     value: "10.1038/s42003-020-0813-8"

@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "FreeWillSapolsky"
+name: "On free will or the lack thereof (interview with Robert Sapolsky)"
 description: "In this interview, Robert Sapolsky outlines his view on Free Will, anticipating his book Determined: The Science of Life Without Free Will. Topics covered include neuroscience, genetics, environmental..."
 tags: ["free-will", "determinism", "robert-sapolsky", "neuroscience", "behavioral-genetics", "philosophy", "consciousness", "moral-philosophy"]
 domain: "Genetics & Biomedical"
-citation: "Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman (2022). *FreeWillSapolsky*. Genetics & Biomedical."
+citation: "Robert Sapolsky, Alexandra Mikhailova, Daniel Friedman (2022). *On free will or the lack thereof (interview with Robert Sapolsky)*. ALIUS Bulletin."
 doi: "10.5281/zenodo.7394900"
 ---
 
-# FreeWillSapolsky
+# On free will or the lack thereof (interview with Robert Sapolsky)
 
-**Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman** (2022) · Genetics & Biomedical
+**Robert Sapolsky, Alexandra Mikhailova, Daniel Friedman** (2022) · Genetics & Biomedical
 
 ## Context
 
@@ -20,8 +20,7 @@ This work addresses topics in **Genetics & Biomedical**: free will, determinism,
 
 Primary methods and techniques applied in this work:
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -57,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7394900`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

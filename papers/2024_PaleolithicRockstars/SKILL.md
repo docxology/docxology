@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "PaleolithicRockstars"
+name: "Why Paleolithic Rockstars were both enigmatic and sporadic"
 description: "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression. The work examines cave paintings and rock art as evidence of early human cognitiv..."
 tags: ["paleolithic-art", "cave-paintings", "cognitive-evolution", "consciousness", "aesthetic-experience", "rock-art"]
 domain: "Genetics & Biomedical"
-citation: "Daniel Ari Friedman (2024). *PaleolithicRockstars*. Genetics & Biomedical."
+citation: "Dean Tickles, Daniel Ari Friedman (2024). *Why Paleolithic Rockstars were both enigmatic and sporadic*. Physics of Life Reviews."
 doi: "10.1016/j.plrev.2024.04.010"
 ---
 
-# PaleolithicRockstars
+# Why Paleolithic Rockstars were both enigmatic and sporadic
 
-**Daniel Ari Friedman** (2024) · Genetics & Biomedical
+**Dean Tickles, Daniel Ari Friedman** (2024) · Genetics & Biomedical
 
 ## Context
 
@@ -20,15 +20,13 @@ This work addresses topics in **Genetics & Biomedical**: Paleolithic art, cave p
 
 Primary methods and techniques applied in this work:
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression..
-- The work examines cave paintings and rock art as evidence of early human cognitiv....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1016/j.plrev.2024.04.010`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

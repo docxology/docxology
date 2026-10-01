@@ -2,7 +2,7 @@
 
 # 🛡️ Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast
 
-**Daniel Ari Friedman** (2026) · *Zenodo*
+**Daniel Friedman** (2026) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20286170-blue)](https://doi.org/10.5281/zenodo.20286170)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the north- ernmost developed strip of the California coast — wher
-- The narrative reads the town as an emergent nested system: Tolowa Dee-ni’ villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s;
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -38,7 +36,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast*. Zenodo. DOI: 10.5281/zenodo.20286170. URL: https://doi.org/10.5281/zenodo.20286170.
+> Daniel Friedman (2026). *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast*. Zenodo. DOI: 10.5281/zenodo.20286170. URL: https://doi.org/10.5281/zenodo.20286170.
 
 ## Related
 

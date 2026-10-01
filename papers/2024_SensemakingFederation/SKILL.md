@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "SensemakingFederation"
+name: "Sensemaking Federation: Exploring the Frontiers of Digital Innovation"
 description: "Transcript from the event 'Sensemaking Federation: Exploring the Frontiers of Digital Innovation' hosted by the Sensemaking Scenius. The panel discusses decentralized sensemaking infrastructure, knowl..."
 tags: ["sensemaking-federation", "digital-innovation", "knowledge-federation", "collaborative-sensemaking", "decentralized-infrastructure"]
 domain: "Presentations & Media"
-citation: "Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman (2024). *SensemakingFederation*. Presentations & Media."
+citation: "Sensemaking Scenius (2024). *Sensemaking Federation: Exploring the Frontiers of Digital Innovation*. Presentation."
 doi: "10.5281/zenodo.14574046"
 ---
 
-# SensemakingFederation
+# Sensemaking Federation: Exploring the Frontiers of Digital Innovation
 
-**Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman** (2024) · Presentations & Media
+**Sensemaking Scenius** (2024) · Presentations & Media
 
 ## Context
 
@@ -20,8 +20,7 @@ This work addresses topics in **Presentations & Media**: sensemaking federation,
 
 Primary methods and techniques applied in this work:
 
-- Content production
-- Pedagogical design
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -57,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.14574046`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

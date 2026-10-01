@@ -4,7 +4,7 @@ name: "Active Skillference: A Validated Prerequisite Graph, Computational Claim 
 description: "Active Inference and the Free Energy Principle (FEP) provide model-based accounts of belief updating, learning, and action under uncertainty. We present Active Skillference, a provenance-bound curriculum-generation and SkillTree-export system for tea..."
 tags: ["active-inference", "free-energy-principle", "variational-inference", "bayesian-inference", "information-theory", "curriculum", "prerequisite-graph", "skilltree", "computational-provenance", "micro-learning"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman (2026). *Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract*. Active Inference."
+citation: "Daniel Ari Friedman (2026). *Active Skillference: A Validated Prerequisite Graph, Computational Claim Registry, and SkillTree Delivery Contract*. Zenodo."
 doi: "10.5281/zenodo.21865643"
 ---
 
@@ -20,14 +20,13 @@ This work addresses topics in **Active Inference**: active inference, free energ
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21865643`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

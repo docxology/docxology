@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 AntStackComplexity
+# 🐜 Computational Complexity and Energetics of the Ant Stack
 
-**Daniel A. Friedman** (2025) · *Zenodo*
+**Daniel Friedman** (2025) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17238736-blue)](https://doi.org/10.5281/zenodo.17238736)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -37,7 +36,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2025). *AntStackComplexity*. Zenodo. DOI: 10.5281/zenodo.17238736. URL: https://doi.org/10.5281/zenodo.17238736.
+> Daniel Friedman (2025). *Computational Complexity and Energetics of the Ant Stack*. Zenodo. DOI: 10.5281/zenodo.17238736. URL: https://doi.org/10.5281/zenodo.17238736.
 
 ## Related
 

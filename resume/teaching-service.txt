@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: teaching-service
-Generated: 2026-09-30T06:14:46Z
+Generated: 2026-10-01T16:43:54Z
 
-Current public metrics: 220 curated works; 158 catalogued software repositories (119 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 224 docxology + 43 AII public repositories (170 primary, 97 forks).
+Current public metrics: 219 curated works; 158 catalogued software repositories (119 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 224 docxology + 43 AII public repositories (170 primary, 97 forks).
 
 SUMMARY
 -------
@@ -100,7 +100,7 @@ AWARDS AND FELLOWSHIPS
   - Campus Community Service Silver Award and Stanley and Jacqueline Schilling Award for Service.
   - Sources: UC Davis: https://www.ucdavis.edu/
 
-WORKS AND PUBLICATIONS (85)
+WORKS AND PUBLICATIONS (84)
 ---------------------------
 [002] 2026 | Series | Active Inference Journal — 500+ videos on Active Inference with transcripts | YouTube | https://video.activeinference.institute/
 [006] 2026 | Series | Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions | YouTube | https://www.youtube.com/@danielarifriedman/playlists
@@ -114,8 +114,7 @@ WORKS AND PUBLICATIONS (85)
 [025] 2025 | Paper | The Ant Stack | Zenodo | 10.5281/zenodo.16782756
 [027] 2025 | Paper | Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States | Entropy | 10.3390/e27050459
 [028] 2025 | Paper | Towards a Science of Consciousness and Social Complexity... For Ants | Book Chapter | https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes
-[030] 2024 | Presentation | BioFirm Development at Applied Active Inference Symposium 2024 | Presentation | 10.5281/zenodo.14861595
-[032] 2024 | Paper | Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea | Ecology & Evolution | 10.1002/ece3.70063
+[032] 2024 | Paper | Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea | Ecology & Evolution | 10.1002/ece3.70063
 [034] 2024 | Paper | Enhancing Population-based Search with Active Inference | ArXiv | 10.48550/arXiv.2408.09548
 [036] 2024 | Paper | Federated inference and belief sharing | Neuroscience & Biobehavioral Reviews | 10.1016/j.neubiorev.2023.105500
 [038] 2024 | Presentation | MathArt Stream #8: William Blake and Active Inference | Presentation | 10.5281/zenodo.13711301
@@ -147,11 +146,11 @@ WORKS AND PUBLICATIONS (85)
 [088] 2020 | Paper | Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains | Analytical & Bioanalytical Chemistry | 10.1007/s00216-019-02355-3
 [093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | https://purl.stanford.edu/pb813wm1484
 [094] 2019 | Paper | The ant colony as a test for scientific theories of consciousness | Synthese | 10.1007/s11229-019-02130-y
-[095] 2019 | Paper | The physiology of forager hydration and variation among harvester ant colonies | Scientific Reports | 10.1038/s41598-019-41586-3
+[095] 2019 | Paper | The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior | Scientific Reports | 10.1038/s41598-019-41586-3
 [096] 2018 | Paper | Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations | PLoS One | 10.1371/journal.pone.0202117
 [097] 2018 | Presentation | MVEE: A Framework for Evolutionary Studies | Presentation | 10.5281/zenodo.13999298
 [098] 2018 | Paper | Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) | ALIUS Bulletin | 10.34700/h460-nz89
-[100] 2018 | Paper | The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants | iScience | 10.1016/j.isci.2018.09.001
+[100] 2018 | Paper | The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants | iScience | 10.1016/j.isci.2018.09.001
 [101] 2017 | Paper | The MutAnts are here | Cell | 10.1016/j.cell.2017.07.046
 [102] 2017 | Paper | Two lineages that need each other | Molecular Ecology | 10.1111/mec.13964
 [103] 2016 | Paper | Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior | Annual Review of Neuroscience | 10.1146/annurev-neuro-070815-013927
@@ -161,7 +160,7 @@ WORKS AND PUBLICATIONS (85)
 [111] 2026 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | CSCIS vol 2857, Springer | 10.1007/978-3-032-16955-6_11
 [112] 2026 | Paper | Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case | Active Inference Journal | 10.5281/zenodo.19695259
 [113] 2026 | Paper | Towards Lean 4 Formalization of the Free Energy Principle: AI-Driven Theorem Sketching and Verification for Active Inference and Bayesian Mechanics | Active Inference Journal | 10.5281/zenodo.19699233
-[128] 2025 | Presentation | Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024 | Zenodo | 10.5281/zenodo.14861596
+[128] 2025 | Presentation | Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024 | Zenodo | 10.5281/zenodo.14861595
 [130] 2025 | Paper | Graphspeak: of language and handshake | Zenodo | 10.5281/zenodo.14737156
 [134] 2024 | Paper | Push and Pull: A priming sequence | Zenodo | 10.5281/zenodo.10659374
 [137] 2023 | Paper | Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism" | Zenodo | 10.5281/zenodo.8228934

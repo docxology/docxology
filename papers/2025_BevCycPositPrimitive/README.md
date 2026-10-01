@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down ont
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 HoneyBeeGeneExpression
+# 🐜 A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees
 
-**William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson** (2023) · *Zenodo*
+**Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson** (2023) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10400744-blue)](https://doi.org/10.5281/zenodo.10400744)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -38,7 +37,7 @@
 
 ## Citation
 
-> William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson (2023). *HoneyBeeGeneExpression*. Zenodo. DOI: 10.5281/zenodo.10400744. URL: https://doi.org/10.5281/zenodo.10400744.
+> Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson (2023). *A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees*. Zenodo. DOI: 10.5281/zenodo.10400744. URL: https://doi.org/10.5281/zenodo.10400744.
 
 ## Related
 

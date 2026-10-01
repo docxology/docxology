@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "SinglePheromone"
+name: "A single-pheromone model accounts for empirical patterns of ant colony foraging"
 description: "We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones. Our model demonstrates that the dynamic..."
 tags: ["pheromone", "ant-foraging", "computational-model", "collective-behavior", "stigmergy", "trail-formation", "parsimony"]
 domain: "Entomology"
-citation: "Eric Saund, Daniel Ari Friedman (2023). *SinglePheromone*. Entomology."
+citation: "Eric Saund, Daniel Ari Friedman (2023). *A single-pheromone model accounts for empirical patterns of ant colony foraging*. Cognitive Systems Research."
 doi: "10.1016/j.cogsys.2023.02.005"
 ---
 
-# SinglePheromone
+# A single-pheromone model accounts for empirical patterns of ant colony foraging
 
 **Eric Saund, Daniel Ari Friedman** (2023) · Entomology
 
@@ -20,15 +20,13 @@ This work addresses topics in **Entomology**: pheromone, ant foraging, computati
 
 Primary methods and techniques applied in this work:
 
-- Field observation and behavioral assays
-- Population genetics analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones..
-- Our model demonstrates that the dynamic....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1016/j.cogsys.2023.02.005`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

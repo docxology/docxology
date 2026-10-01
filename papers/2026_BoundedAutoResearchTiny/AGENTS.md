@@ -16,11 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Software pipeline design, Data-driven analysis
-- Identifies findings: This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that
-turns an AutoResearch loop into ordinary reproducible research infrastruct, The case study is intentionally small but concrete: 2000 training
-and 500 test images from MNIST handwritten digit database are evaluated by the
-bounded small MNIST neural-network classification loop.
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -40,7 +37,7 @@ bounded small MNIST neural-network classification loop.
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

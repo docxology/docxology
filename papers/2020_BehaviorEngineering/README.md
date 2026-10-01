@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 BehaviorEngineering
+# 🧠 Active Inference & Behavior Engineering for Teams
 
-**Daniel A. Friedman** (2020) · *Zenodo*
+**Alexander Vyatkin, Ivan Metelkin, Alexandra Mikhailova, RJ Cordes, Daniel Ari Friedman** (2020) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4021162-blue)](https://doi.org/10.5281/zenodo.4021162)
 
@@ -37,7 +37,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2020). *BehaviorEngineering*. Zenodo. DOI: 10.5281/zenodo.4021162. URL: https://doi.org/10.5281/zenodo.4021162.
+> Alexander Vyatkin, Ivan Metelkin, Alexandra Mikhailova, RJ Cordes, Daniel Ari Friedman (2020). *Active Inference & Behavior Engineering for Teams*. Zenodo. DOI: 10.5281/zenodo.4021162. URL: https://doi.org/10.5281/zenodo.4021162.
 
 ## Related
 

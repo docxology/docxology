@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 GNN
+# 🧠 Generalized Notation Notation for Active Inference Models
 
-**Daniel A. Friedman** (2023) · *Zenodo*
+**Jakub Smékal, Daniel Ari Friedman** (2023) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7803327-blue)](https://doi.org/10.5281/zenodo.7803327)
 
@@ -37,7 +37,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2023). *GNN*. Zenodo. DOI: 10.5281/zenodo.7803327. URL: https://doi.org/10.5281/zenodo.7803327.
+> Jakub Smékal, Daniel Ari Friedman (2023). *Generalized Notation Notation for Active Inference Models*. Zenodo. DOI: 10.5281/zenodo.7803327. URL: https://doi.org/10.5281/zenodo.7803327.
 
 ## Related
 

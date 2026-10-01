@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "OpenScienceSensemaking"
+name: "Open Access science needs Open Science Sensemaking (OSSm)"
 description: "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute. We contend that open access to diverse sources of scientific sensem..."
 tags: ["ossm", "open-science-sensemaking", "scientific-sensemaking", "annotation-networks", "open-access", "decentralized", "information-overload"]
 domain: "Cognitive Security"
-citation: "Ronen Tamari, Daniel A. Friedman (2023). *OpenScienceSensemaking*. Cognitive Security."
+citation: "Ronen Tamari, Daniel Friedman (2023). *Open Access science needs Open Science Sensemaking (OSSm)*. MetaArXiv."
 doi: "10.31222/osf.io/9nb3u"
 ---
 
-# OpenScienceSensemaking
+# Open Access science needs Open Science Sensemaking (OSSm)
 
-**Ronen Tamari, Daniel A. Friedman** (2023) · Cognitive Security
+**Ronen Tamari, Daniel Friedman** (2023) · Cognitive Security
 
 ## Context
 
@@ -20,15 +20,13 @@ This work addresses topics in **Cognitive Security**: OSSm, Open Science Sensema
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute..
-- We contend that open access to diverse sources of scientific sensem....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.31222/osf.io/9nb3u`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

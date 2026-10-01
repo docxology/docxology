@@ -1,16 +1,19 @@
 {
-  "title": "GeneExpressionForagers",
+  "title": "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior",
   "domain": "Entomology",
   "type": "Paper",
   "creators": [
     {
-      "name": "Daniel A. Friedman"
+      "name": "Daniel Ari Friedman"
     },
     {
-      "name": "Brian R. Johnson"
+      "name": "Ryan Alexander York"
     },
     {
-      "name": "Timothy A. Linksvayer"
+      "name": "Austin Travis Hilliard"
+    },
+    {
+      "name": "Deborah M. Gordon"
     }
   ],
   "description": "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compar...",

@@ -1,17 +1,17 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "ActiveInferenceOntology"
+name: "An Active Inference Ontology for Decentralized Science"
 description: "We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature. The ontology provide..."
 tags: ["active-inference-ontology", "knowledge-graph", "free-energy-principle", "ontology-development", "sumo", "knowledge-representation", "open-science"]
 domain: "Active Inference"
-citation: "Daniel A. Friedman, Virginia Bleu Knight (2022). *ActiveInferenceOntology*. Active Inference."
+citation: "Daniel Friedman, Shaun Applegate-Swanson, Jessica Angeli Balbuena, Arhan Choudhury, RJ Cordes, Shady El Damaty, Avel Guénin—Carlut, V. Bleu Knight, Ivan Metelkin, Siddhant Shrivastava, Amit Kumar Singh, Jakub Smékal, Tuttle. Caleb, Alexander Vyatkin (2022). *An Active Inference Ontology for Decentralized Science*. Zenodo."
 doi: "10.5281/zenodo.6320574"
 artifact_doi: "10.5281/zenodo.7484994"
 ---
 
-# ActiveInferenceOntology
+# An Active Inference Ontology for Decentralized Science
 
-**Daniel A. Friedman, Virginia Bleu Knight** (2022) · Active Inference
+**Daniel Friedman, Shaun Applegate-Swanson, Jessica Angeli Balbuena, Arhan Choudhury, RJ Cordes, Shady El Damaty, Avel Guénin—Carlut, V. Bleu Knight, Ivan Metelkin, Siddhant Shrivastava, Amit Kumar Singh, Jakub Smékal, Tuttle. Caleb, Alexander Vyatkin** (2022) · Active Inference
 
 ## Context
 
@@ -22,13 +22,11 @@ This work addresses topics in **Active Inference**: Active Inference Ontology, k
 Primary methods and techniques applied in this work:
 
 - Active Inference
-- Free energy minimization
 
 ## Key Findings
 
 Core contributions and results:
 
-- We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature.
 - Analysis of The ontology provide...
 
 ## Related Works

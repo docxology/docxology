@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "AccountActiveInference"
+name: "An Account of Active Inference Modeling"
 description: "In Active Inference, we develop generative models of ecosystems of shared intelligence by accounting for cognitive systems and phenomena. This paper argues that developing generative models is more li..."
 tags: ["active-inference", "generative-modeling", "accounting-metaphor", "active-accountants", "cognitive-modeling", "epistemic-agency", "model-development"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman (2023). *AccountActiveInference*. Active Inference."
+citation: "Daniel Ari Friedman (2023). *An Account of Active Inference Modeling*. Zenodo."
 doi: "10.5281/zenodo.8415312"
 ---
 
-# AccountActiveInference
+# An Account of Active Inference Modeling
 
 **Daniel Ari Friedman** (2023) · Active Inference
 
@@ -20,8 +20,7 @@ This work addresses topics in **Active Inference**: Active Inference, generative
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -57,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.8415312`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

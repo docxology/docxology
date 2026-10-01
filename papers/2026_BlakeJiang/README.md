@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Essay mapping Jiang Xueqin's artificial-intelligence critique through William Blake's theory of single vision and Active Inference concepts including pathological prior dominance.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

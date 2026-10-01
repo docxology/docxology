@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎥 MathArtBlake
+# 🎥 MathArt Stream #8: William Blake and Active Inference
 
 **Daniel Ari Friedman** (2024) · *Presentation*
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Content production
-- Pedagogical design
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -34,7 +33,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2024). *MathArtBlake*. Presentation. DOI: 10.5281/zenodo.13711301. URL: https://doi.org/10.5281/zenodo.13711301.
+> Daniel Ari Friedman (2024). *MathArt Stream #8: William Blake and Active Inference*. Presentation. DOI: 10.5281/zenodo.13711301. URL: https://doi.org/10.5281/zenodo.13711301.
 
 ## Related
 

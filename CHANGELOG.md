@@ -3,6 +3,58 @@
 All notable public-index, website, bibliography, and discovery-layer changes are summarized here. The detailed operational record is on demand in [`docs/operations/maintenance-log.md`](docs/operations/maintenance-log.md); machine-readable evidence remains in dated `reports/` snapshots.
 
 
+## 2026-10-01
+
+- **Bibliography accuracy pass (live registry audit):** all 205 catalogued
+  DOIs were re-resolved against Crossref/DataCite. Every author list matched
+  except eight works with no Authors cell, now filled from verified records
+  (#5, #112, #217–#223). #5 retitled to its registered "Formal Foundations
+  (Part 1 of 3: Theoretical Foundations)", clearing the catalogue's only
+  `title_mismatch`; seven journal titles corrected to the publisher's exact
+  wording (#32, #68, #95, #100, #105, #107, #108). Every edit keeps its
+  frozen `works/` URL.
+- **Duplicate retired:** #30 and #128 were the same Zenodo deposit (concept
+  14861595 / version 14861596, published 2025-02-12; #30 also carried the
+  wrong year). Kept #128, now citing the concept DOI with the version as
+  `artifact_doi`; removed #30's row, work page, and the byte-identical
+  `papers/2024_BioFirm/` folder, per the #49/#118/#193 precedent. Works
+  220 → 219, paper folders 203 → 202, Presentations 9 → 8.
+- **Paper-folder citations follow the bibliography:** generated
+  README/AGENTS/SKILL files used to take title and authors from hand-seeded
+  folder metadata. That seed data had placeholder titles ("ForagingGene") and,
+  on several journal papers, co-author lists that are not on the paper
+  (#104 credited five non-authors). Now `regenerate_docs.py` reads both
+  from `pages/BIBLIOGRAPHY.md`, and `generate_citation_cff.py` reconciles
+  CFF `title`/`authors` from it too, rewriting only files whose parsed
+  identity differs: 73 CITATION.cff files corrected, one of which (#63)
+  had cited a different paper outright. 37 `metadata.json` files and 46
+  `paper_metadata.json` author strings were corrected at the source.
+- **No invented methods or findings:** domain-template "methods" (every
+  entomology paper had "Field observation and behavioral assays") and
+  findings that only echo the abstract are now suppressed on paper
+  READMEs/SKILLs and on the indexed work pages
+  (`code/src/metadata_templates.py`). Where nothing paper-specific is
+  recorded, the page says so instead. Seed-data cleanup is tracked as
+  DOC-016.
+- **Author-name normalisation:** Zenodo often deposits creators as
+  `familyName: "Daniel Ari Friedman"` with no given name. These rendered
+  uninverted and exported to CSL-JSON as organisation `literal`s. When the
+  creator carries an ORCID, `fetch_work_authors.format_author` now splits
+  the name (46 names fixed); without an ORCID, a collective or pseudonym is
+  left verbatim. One explicit owner correction maps Crossref's mis-split
+  "Ari Friedman, Daniel" (#46).
+- **Tooling fixes:** `regenerate_all.py` no longer halts when the number of
+  works changes, because the start-here step now runs
+  `build_start_here.py --sync-counts` (idempotent, no date stamp);
+  `test_reproducibility_ledger` now tampers with a `tmp_path` copy instead
+  of the tracked outputs, which had raced the parallel SEO single-read guard
+  and was the cause of the intermittent
+  `test_one_seo_pass_reads_each_page_once…` failure; SKILL.md frontmatter
+  scalars are JSON-quoted, so titles with quotes stay valid YAML, and the
+  SKILL citation names the venue instead of the domain. New
+  `code/tests/test_bibliography_authority.py` (17 tests) pins all of the
+  above.
+
 ## 2026-09-27
 
 - **SEO ergonomics wave (serp_title decoupling, breadcrumbs, works-index

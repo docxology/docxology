@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "NeuroscienceDecision"
+name: "The neuroscience of decision making (interview with Timothy Hanks)"
 description: "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career. Hanks explores how ideas from computational neuroscience have hel..."
 tags: ["decision-making", "computational-neuroscience", "bayesian-brain", "free-will", "mental-health", "attention", "neural-circuits"]
 domain: "Genetics & Biomedical"
-citation: "Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman (2020). *NeuroscienceDecision*. Genetics & Biomedical."
+citation: "Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman (2020). *The neuroscience of decision making (interview with Timothy Hanks)*. ALIUS Bulletin."
 doi: "10.34700/8pg4-0h12"
 ---
 
-# NeuroscienceDecision
+# The neuroscience of decision making (interview with Timothy Hanks)
 
 **Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman** (2020) · Genetics & Biomedical
 
@@ -20,15 +20,13 @@ This work addresses topics in **Genetics & Biomedical**: decision making, comput
 
 Primary methods and techniques applied in this work:
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career..
-- Hanks explores how ideas from computational neuroscience have hel....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.34700/8pg4-0h12`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

@@ -4,7 +4,7 @@
 
 **Paper**: DigiPPPiP: Digital Partner Pen Play in Parallel (2026)
 **Domain**: Cognitive Security
-**Authors**: Daniel Ari Friedman
+**Authors**: Siddhant Shrivastava, Evelyn C. Goh, Alexandra Mikhailova, Daniel Ari Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Literature review, Theoretical analysis
-- Identifies findings: See full paper for detailed findings and analysis
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -37,5 +37,5 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |

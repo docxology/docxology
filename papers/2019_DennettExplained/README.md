@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧬 DennettExplained
+# 🧬 Dennett Explained (interview with Daniel Dennett)
 
-**Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman** (2019) · *ALIUS Bulletin*
+**Daniel Dennett, Brendan Fleig-Goldstein, Daniel Friedman** (2019) · *ALIUS Bulletin*
 
 [![DOI](https://img.shields.io/badge/DOI-10.34700%2F7gkw-zh08-blue)](https://doi.org/10.34700/7gkw-zh08)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens..
-- Dennett argues that philos....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman (2019). *DennettExplained*. ALIUS Bulletin. DOI: 10.34700/7gkw-zh08. URL: https://doi.org/10.34700/7gkw-zh08.
+> Daniel Dennett, Brendan Fleig-Goldstein, Daniel Friedman (2019). *Dennett Explained (interview with Daniel Dennett)*. ALIUS Bulletin. DOI: 10.34700/7gkw-zh08. URL: https://doi.org/10.34700/7gkw-zh08.
 
 ## Related
 

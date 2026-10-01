@@ -1,13 +1,13 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "CurioCards"
+name: "Writing on Curio Cards for the \"On NFT\" book"
 description: "Curio Cards provides a framework for using card-based prompts for curiosity-driven exploration and research ideation. The system facilitates creative and interdisciplinary thinking by providing struct..."
 tags: ["curio-cards", "research-ideation", "creativity-tools", "interdisciplinary-thinking", "prompt-based-exploration"]
 domain: "Art & Synergetics"
-citation: "Daniel A. Friedman (2024). *CurioCards*. Art & Synergetics."
+citation: "Daniel A. Friedman (2024). *Writing on Curio Cards for the \"On NFT\" book*. Taschen."
 ---
 
-# CurioCards
+# Writing on Curio Cards for the "On NFT" book
 
 **Daniel A. Friedman** (2024) · Art & Synergetics
 
@@ -19,8 +19,7 @@ This work addresses topics in **Art & Synergetics**: Curio Cards, research ideat
 
 Primary methods and techniques applied in this work:
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Use the canonical citation above.
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

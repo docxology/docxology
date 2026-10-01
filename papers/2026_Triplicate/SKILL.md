@@ -4,7 +4,7 @@ name: "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine"
 description: "We present template_newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content. The exemplar edition is The Triplicate, a homage to the historic newspaper of Crescent ..."
 tags: ["newspaper-layout", "typography", "reportlab", "reproducible-publishing", "document-engineering"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine*. Computational."
+citation: "Daniel Ari Friedman (2026). *The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine*. Zenodo."
 doi: "10.5281/zenodo.20533675"
 ---
 
@@ -20,18 +20,13 @@ This work addresses topics in **Computational**: newspaper layout, typography, r
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- We present template_newspaper, a pure-Python engine that renders a complete
-twelve-page, large-format newspaper to a print-ready PDF from structured YAML
-content.
-- The exemplar edition is The Triplicate, a homage to the historic
-newspaper of Crescent City, California (founded 1879).
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -59,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20533675`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

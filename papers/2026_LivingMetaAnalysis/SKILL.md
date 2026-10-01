@@ -4,7 +4,7 @@ name: "A Living Meta-Analysis of the Modafinil Literature"
 description: "Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc reviews bind no evidence to a reproducible pipeline. We present a configurable, reproducible meta-analysis framework that takes a single search term and produces a ..."
 tags: ["modafinil", "meta-analysis", "literature-retrieval", "bibliometrics", "record-de-duplication", "full-text-mining", "document-embeddings", "citation-network", "topic-modeling", "entity-extraction"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *A Living Meta-Analysis of the Modafinil Literature*. Computational."
+citation: "Daniel Ari Friedman (2026). *A Living Meta-Analysis of the Modafinil Literature*. Zenodo."
 doi: "10.5281/zenodo.20931964"
 ---
 
@@ -20,18 +20,13 @@ This work addresses topics in **Computational**: modafinil, meta-analysis, liter
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc
-reviews bind no evidence to a reproducible pipeline.
-- We present a configurable,
-reproducible meta-analysis framework that takes a single search term and produces a
-complete quantitative portrait of its literature.
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -59,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20931964`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

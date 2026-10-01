@@ -23,8 +23,7 @@
 
 ## Key Findings
 
-- This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM).
-- CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

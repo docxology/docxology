@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🌍 AII_v2
+# 🌍 The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)
 
-**Active Inference Institute** (2024) · *Zenodo*
+**Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker** (2024) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14108992-blue)](https://doi.org/10.5281/zenodo.14108992)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Program coordination
-- Community governance design
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and ap
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +33,7 @@
 
 ## Citation
 
-> Active Inference Institute (2024). *AII_v2*. Zenodo. DOI: 10.5281/zenodo.14108992. URL: https://doi.org/10.5281/zenodo.14108992.
+> Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker (2024). *The Active Inference Institute & Active Inference Ecosystem (v2, 2024 snapshot)*. Zenodo. DOI: 10.5281/zenodo.14108992. URL: https://doi.org/10.5281/zenodo.14108992.
 
 ## Related
 

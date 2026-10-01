@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — InfiniteImaginarium
+# AGENTS.md — Way Finding in the Infinite Imaginarium
 
-**Paper**: InfiniteImaginarium (2024)
+**Paper**: Way Finding in the Infinite Imaginarium (2024)
 **Domain**: Art & Synergetics
 **Authors**: Daniel Ari Friedman
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
-- Identifies findings: Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration., Analysis of The work...
+- Extracts methods: See paper
+- Identifies findings: Analysis of The work...
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects InfiniteImaginarium to related works in the bibliography
+- Connects Way Finding in the Infinite Imaginarium to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

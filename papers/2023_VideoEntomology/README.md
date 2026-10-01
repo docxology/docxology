@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 VideoEntomology
+# 🐜 Experimental Entomology in the Age of Video
 
-**Daniel A. Friedman, Judith R. Wexler, Sebastian Alvarado** (2023) · *JoVE*
+**Daniel  A. Friedman, Judith R. Wexler, Sebastian Alvarado** (2023) · *JoVE*
 
 [![DOI](https://img.shields.io/badge/DOI-10.3791%2F65002-blue)](https://doi.org/10.3791/65002)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- We examine the transformative impact of video technology on experimental entomology..
-- Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Judith R. Wexler, Sebastian Alvarado (2023). *VideoEntomology*. JoVE. DOI: 10.3791/65002. URL: https://doi.org/10.3791/65002.
+> Daniel  A. Friedman, Judith R. Wexler, Sebastian Alvarado (2023). *Experimental Entomology in the Age of Video*. JoVE. DOI: 10.3791/65002. URL: https://doi.org/10.3791/65002.
 
 ## Related
 

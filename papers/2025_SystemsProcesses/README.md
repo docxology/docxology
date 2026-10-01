@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎥 SystemsProcesses
+# 🎥 Systems Processes, Active Inference, and Beyond
 
-**Daniel A. Friedman** (2025) · *Presentation*
+**Daniel Friedman** (2025) · *Presentation*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17138223-blue)](https://doi.org/10.5281/zenodo.17138223)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Content production
-- Pedagogical design
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -36,7 +35,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2025). *SystemsProcesses*. Presentation. DOI: 10.5281/zenodo.17138223. URL: https://doi.org/10.5281/zenodo.17138223.
+> Daniel Friedman (2025). *Systems Processes, Active Inference, and Beyond*. Presentation. DOI: 10.5281/zenodo.17138223. URL: https://doi.org/10.5281/zenodo.17138223.
 
 ## Related
 

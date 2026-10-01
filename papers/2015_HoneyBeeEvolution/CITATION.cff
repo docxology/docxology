@@ -1,16 +1,24 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "HoneyBeeEvolution"
+title: "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees"
 date-released: 2015
 doi: 10.1093/molbev/msu292
 url: "https://doi.org/10.1093/molbev/msu292"
 authors:
-  - family-names: Friedman
-    given-names: Daniel A.
+  - family-names: "Jasper"
+    given-names: "William Cameron"
+  - family-names: "Linksvayer"
+    given-names: "Timothy A."
+  - family-names: "Atallah"
+    given-names: "Joel"
+  - family-names: "Friedman"
+    given-names: "Daniel"
     orcid: "https://orcid.org/0000-0001-6232-9096"
-  - family-names: Johnson
-    given-names: Brian R.
+  - family-names: "Chiu"
+    given-names: "Joanna C."
+  - family-names: "Johnson"
+    given-names: "Brian R."
 identifiers:
   - type: doi
     value: "10.1093/molbev/msu292"

@@ -1,13 +1,13 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "ConsciousnessAnts"
+name: "Towards a Science of Consciousness and Social Complexity... For Ants"
 description: "Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research. We examine how colony-level informati..."
 tags: ["consciousness", "ant-colonies", "ant-colony-test", "information-integration", "collective-cognition", "meta-cognition"]
 domain: "Entomology"
-citation: "Daniel A. Friedman (2025). *ConsciousnessAnts*. Entomology."
+citation: "Daniel A. Friedman (2025). *Towards a Science of Consciousness and Social Complexity... For Ants*. Book Chapter."
 ---
 
-# ConsciousnessAnts
+# Towards a Science of Consciousness and Social Complexity... For Ants
 
 **Daniel A. Friedman** (2025) · Entomology
 
@@ -19,15 +19,13 @@ This work addresses topics in **Entomology**: consciousness, ant colonies, Ant C
 
 Primary methods and techniques applied in this work:
 
-- Field observation and behavioral assays
-- Population genetics analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research.
-- We examine how colony-level informati...
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +53,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Use the canonical citation above.
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

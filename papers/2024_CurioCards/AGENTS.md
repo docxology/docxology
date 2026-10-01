@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — CurioCards
+# AGENTS.md — Writing on Curio Cards for the "On NFT" book
 
-**Paper**: CurioCards (2024)
+**Paper**: Writing on Curio Cards for the "On NFT" book (2024)
 **Domain**: Art & Synergetics
 **Authors**: Daniel A. Friedman
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
+- Extracts methods: See paper
 - Identifies findings: Curio card format combines artistic design with structured knowledge representation, Physical-to-digital workflow enables novel forms of scholarly communication and curation
 - Maps contributions to Art & Synergetics literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects CurioCards to related works in the bibliography
+- Connects Writing on Curio Cards for the "On NFT" book to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

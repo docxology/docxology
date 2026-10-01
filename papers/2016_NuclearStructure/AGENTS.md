@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — NuclearStructure
+# AGENTS.md — Influence of nuclear structure on the formation of radiation-induced lethal lesions
 
-**Paper**: NuclearStructure (2016)
+**Paper**: Influence of nuclear structure on the formation of radiation-induced lethal lesions (2016)
 **Domain**: Genetics & Biomedical
-**Authors**: Daniel A. Friedman, Daniel F. Pilch
+**Authors**: Daniel A. Friedman, Lauren Tait, Andrew T. M. Vaughan
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
-- Identifies findings: Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability.., Chromosome conformation capture (3C) tec....
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects NuclearStructure to related works in the bibliography
+- Connects Influence of nuclear structure on the formation of radiation-induced lethal lesions to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

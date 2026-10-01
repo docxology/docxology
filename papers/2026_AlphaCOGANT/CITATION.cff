@@ -8,11 +8,10 @@ doi: 10.5281/zenodo.20976824
 url: "https://doi.org/10.5281/zenodo.20976824"
 repository-code: "https://github.com/docxology/alphacogant"
 authors:
-  - family-names: Friedman
-    given-names: Daniel Ari
+  - family-names: "Friedman"
+    given-names: "Daniel Ari"
     orcid: "https://orcid.org/0000-0001-6232-9096"
-  - family-names: Chambers
-    given-names: Tucker Cahill
+  - name: "Tucker Cahill Chambers"
 identifiers:
   - type: doi
     value: 10.5281/zenodo.20976824

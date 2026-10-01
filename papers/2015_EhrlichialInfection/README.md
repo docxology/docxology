@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧬 EhrlichialInfection
+# 🧬 Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?
 
-**Charles A. Kallick, Daniel A. Friedman & Mramba B.A. Nyindo** (2015) · *Medical Hypotheses*
+**Charles A. Kallick, Daniel A. Friedman, Mramba B.A. Nyindo** (2015) · *Medical Hypotheses*
 
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.mehy.2015.09.015-blue)](https://doi.org/10.1016/j.mehy.2015.09.015)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Hypothesis linking Ehrlichia/Anaplasma intracellular parasitic bacteria to leukemia and immune disorders, with clinical evidence for Rifampin treatment
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -33,7 +32,7 @@
 
 ## Citation
 
-> Charles A. Kallick, Daniel A. Friedman & Mramba B.A. Nyindo (2015). *EhrlichialInfection*. Medical Hypotheses. DOI: 10.1016/j.mehy.2015.09.015. URL: https://doi.org/10.1016/j.mehy.2015.09.015.
+> Charles A. Kallick, Daniel A. Friedman, Mramba B.A. Nyindo (2015). *Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?*. Medical Hypotheses. DOI: 10.1016/j.mehy.2015.09.015. URL: https://doi.org/10.1016/j.mehy.2015.09.015.
 
 ## Related
 

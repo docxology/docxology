@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "GNN"
+name: "Generalized Notation Notation for Active Inference Models"
 description: "Generalized Notation Notation (GNN) is a framework for representing, translating between, and reasoning about diverse notational systems. GNN provides meta-notational tools for describing any symbolic..."
 tags: ["gnn", "generalized-notation-notation", "meta-notation", "symbolic-systems", "notation-translation", "formal-representation", "interoperability"]
 domain: "Active Inference"
-citation: "Daniel A. Friedman (2023). *GNN*. Active Inference."
+citation: "Jakub Smékal, Daniel Ari Friedman (2023). *Generalized Notation Notation for Active Inference Models*. Zenodo."
 doi: "10.5281/zenodo.7803327"
 ---
 
-# GNN
+# Generalized Notation Notation for Active Inference Models
 
-**Daniel A. Friedman** (2023) · Active Inference
+**Jakub Smékal, Daniel Ari Friedman** (2023) · Active Inference
 
 ## Context
 

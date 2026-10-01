@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — PPPiP
+# AGENTS.md — Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement
 
-**Paper**: PPPiP (2018)
+**Paper**: Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement (2018)
 **Domain**: Art & Synergetics
 **Authors**: Alexandra Mikhailova, Daniel A. Friedman
 
@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Experimental paradigm design for relational improvement, Mixed-methods analysis of partnered interaction, Arts-based research methodology
-- Identifies findings: Healthy romantic relationships contribute to human physical health and emotional well-being.., Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on....
+- Identifies findings: See paper
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects PPPiP to related works in the bibliography
+- Connects Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "ActiveInferants"
+name: "Active Inferants: An Active Inference Framework for Ant Colony Behavior"
 description: "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments. Active inference is a multiscale approach to behavi..."
 tags: ["active-inference", "ant-foraging", "markov-decision-process", "stigmergy", "t-maze", "collective-behavior", "behavioral-modeling", "eco-evo-devo"]
 domain: "Entomology"
-citation: "Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant (2021). *ActiveInferants*. Entomology."
+citation: "Daniel Ari Friedman, Alec Tschantz, Maxwell J. D. Ramstead, Karl Friston, Axel Constant (2021). *Active Inferants: An Active Inference Framework for Ant Colony Behavior*. Frontiers in Behavioral Neuroscience."
 doi: "10.3389/fnbeh.2021.647732"
 ---
 
-# ActiveInferants
+# Active Inferants: An Active Inference Framework for Ant Colony Behavior
 
-**Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant** (2021) · Entomology
+**Daniel Ari Friedman, Alec Tschantz, Maxwell J. D. Ramstead, Karl Friston, Axel Constant** (2021) · Entomology
 
 ## Context
 
@@ -27,8 +27,7 @@ Primary methods and techniques applied in this work:
 
 Core contributions and results:
 
-- In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments..
-- Active inference is a multiscale approach to behavi....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 

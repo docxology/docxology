@@ -4,7 +4,7 @@ name: "Reimagining Maps"
 description: "Reimagining Maps was written after participation in&nbsp;a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus. The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experie..."
 tags: ["maps", "cartography", "remote-teams", "interdisciplinary-research", "process-mapping", "knowledge-management-systems", "instantaneous-remote-teams", "intelligence-production", "osint"]
 domain: "Cognitive Security"
-citation: "Richard J. Cordes, Daniel Ari Friedman, Mikel Maron (2020). *Reimagining Maps*. Cognitive Security."
+citation: "Richard J. Cordes, Daniel Ari Friedman, Mikel Maron (2020). *Reimagining Maps*. Zenodo."
 doi: "10.5281/zenodo.4170025"
 artifact_doi: "10.5281/zenodo.4170026"
 ---
@@ -21,15 +21,13 @@ This work addresses topics in **Cognitive Security**: Maps, Cartography, Remote 
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Reimagining Maps was written after participation in&nbsp;a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus.
-- The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design.
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -58,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.4170025`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

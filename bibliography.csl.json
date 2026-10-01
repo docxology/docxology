@@ -101,7 +101,7 @@
   {
     "id": "Friedman2026CognitiveIntegrityFrameworkFormal005",
     "type": "article-journal",
-    "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
+    "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
     "author": [
       {
         "family": "Friedman",
@@ -1133,37 +1133,6 @@
     "URL": "https://doi.org/10.5281/zenodo.11459322"
   },
   {
-    "id": "Friedman2024BioFirmDevelopmentAtApplied030",
-    "type": "speech",
-    "title": "BioFirm Development at Applied Active Inference Symposium 2024",
-    "author": [
-      {
-        "literal": "John Clippinger"
-      },
-      {
-        "literal": "Andrew Pashea"
-      },
-      {
-        "family": "Friedman",
-        "given": "Daniel"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          2024
-        ]
-      ]
-    },
-    "genre": "Presentation",
-    "keyword": "Media & Teaching; Presentation",
-    "note": "Catalog row 30; docs: papers/2024_BioFirm/",
-    "container-title": "Presentation",
-    "publisher": "Presentation",
-    "DOI": "10.5281/zenodo.14861595",
-    "URL": "https://doi.org/10.5281/zenodo.14861595"
-  },
-  {
     "id": "Friedman2024BridgingGapsImageMeme031",
     "type": "article-journal",
     "title": "Bridging gaps in image meme research: A multidisciplinary paradigm",
@@ -1199,7 +1168,7 @@
   {
     "id": "Friedman2024ChemicalTranscriptomicDiversityDo032",
     "type": "article-journal",
-    "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",
+    "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea",
     "author": [
       {
         "family": "Golian",
@@ -1797,8 +1766,8 @@
         "given": "Eric"
       },
       {
-        "family": "Ari Friedman",
-        "given": "Daniel"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -2626,7 +2595,7 @@
   {
     "id": "Friedman2022FromUsersSenseMakers068",
     "type": "article-journal",
-    "title": "From Users to (Sense)Makers: Stigmergic Social Annotation",
+    "title": "From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking",
     "author": [
       {
         "family": "Tamari",
@@ -3474,7 +3443,7 @@
   {
     "id": "Friedman2019PhysiologyForagerHydrationVariation095",
     "type": "article-journal",
-    "title": "The physiology of forager hydration and variation among harvester ant colonies",
+    "title": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
     "author": [
       {
         "family": "Friedman",
@@ -3647,7 +3616,7 @@
   {
     "id": "Friedman2018RoleDopamineCollectiveRegulation100",
     "type": "article-journal",
-    "title": "The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants",
+    "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
     "author": [
       {
         "family": "Friedman",
@@ -3832,7 +3801,7 @@
   {
     "id": "Friedman2016InfluenceNuclearStructureFormation105",
     "type": "article-journal",
-    "title": "Influence of Nuclear Structure on formation of radiation-induced lethal lesions",
+    "title": "Influence of nuclear structure on the formation of radiation-induced lethal lesions",
     "author": [
       {
         "family": "Friedman",
@@ -3898,7 +3867,7 @@
   {
     "id": "Friedman2015CouldEhrlichialInfectionCause107",
     "type": "article-journal",
-    "title": "Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",
+    "title": "Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?",
     "author": [
       {
         "family": "Kallick",
@@ -3931,7 +3900,7 @@
   {
     "id": "Friedman2015LargeScaleCodingSequence108",
     "type": "article-journal",
-    "title": "Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",
+    "title": "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees",
     "author": [
       {
         "family": "Jasper",
@@ -4224,7 +4193,8 @@
     "title": "Policy Entanglement in Active Inference",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -4248,7 +4218,8 @@
     "title": "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -4272,7 +4243,8 @@
     "title": "Convergence Analysis of Gradient Descent Optimization",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -4296,7 +4268,8 @@
     "title": "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -4320,7 +4293,8 @@
     "title": "A template/ approach to Reproducible Generative Research",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -4344,7 +4318,8 @@
     "title": "Active Inference Multi-Track Exemplar",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -4397,10 +4372,12 @@
     "title": "When do bugs see (infra)red?",
     "author": [
       {
-        "literal": "Tucker Chambers"
+        "family": "Chambers",
+        "given": "Tucker"
       },
       {
-        "literal": "Daniel A. Friedman"
+        "family": "Friedman",
+        "given": "Daniel A."
       }
     ],
     "issued": {
@@ -4424,7 +4401,8 @@
     "title": "Self-Improvement Agent Harness: A Deterministic SIA Exemplar",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -4451,7 +4429,8 @@
         "literal": "John Clippinger"
       },
       {
-        "literal": "Andrew Pashea"
+        "family": "Pashea",
+        "given": "Andrew"
       },
       {
         "family": "Friedman",
@@ -4470,8 +4449,8 @@
     "note": "Catalog row 128; docs: papers/2025_BiofirmDevelopmentWith/",
     "container-title": "Zenodo",
     "publisher": "Zenodo",
-    "DOI": "10.5281/zenodo.14861596",
-    "URL": "https://doi.org/10.5281/zenodo.14861596"
+    "DOI": "10.5281/zenodo.14861595",
+    "URL": "https://doi.org/10.5281/zenodo.14861595"
   },
   {
     "id": "Friedman2025ConCatEnateEmulation129",
@@ -5276,7 +5255,8 @@
     "title": "The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -5300,7 +5280,8 @@
     "title": "A Deterministic Testbed for Self-Organizing Agent-Team Coordination",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -5324,7 +5305,8 @@
     "title": "Recovering LLM-Persona Accuracies from Unlabeled Votes",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -5348,7 +5330,8 @@
     "title": "The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -5372,7 +5355,8 @@
     "title": "The Template Textbook",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -5900,7 +5884,8 @@
     "title": "AGEINT: Agentic Intelligence",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -5924,7 +5909,8 @@
     "title": "On-Policy Distillation as Active Inference in Finite Variational Models",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -5948,7 +5934,8 @@
     "title": "Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -5972,7 +5959,8 @@
     "title": "California Public Records: A Technical and Legal Reference for the Post-AB 473 Era",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6046,7 +6034,8 @@
     "title": "A Living Meta-Analysis of the Modafinil Literature",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6070,7 +6059,8 @@
     "title": "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6094,7 +6084,8 @@
     "title": "AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       },
       {
         "literal": "Tucker Cahill Chambers"
@@ -6146,7 +6137,8 @@
     "title": "Sortition Upstream of NTQR",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6170,7 +6162,8 @@
     "title": "Exploratory Data Analysis: A Reproducible Notebook Template",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6194,7 +6187,8 @@
     "title": "A Domain Language for Specifying Controlled Methods",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6218,7 +6212,8 @@
     "title": "Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6242,7 +6237,8 @@
     "title": "The Shape Between: A Full-Page Illustrated Storybook Template",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6266,7 +6262,8 @@
     "title": "Autopoietic Project Generation",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6290,7 +6287,8 @@
     "title": "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6314,7 +6312,8 @@
     "title": "Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6338,7 +6337,8 @@
     "title": "Registered Report Template: Preregistration, Deviations, and Claim Boundaries",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6362,7 +6362,8 @@
     "title": "Redacted Report Template: Disclosure Control and Release Audit",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6386,7 +6387,8 @@
     "title": "Pools, Rules, and Tools: A Template-Integrated Resource Architecture",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6410,7 +6412,8 @@
     "title": "Illegal States, Mostly Unrepresentable",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6434,7 +6437,8 @@
     "title": "Data Descriptor Template: Schema, Provenance, and Release Readiness",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6458,7 +6462,8 @@
     "title": "Prior Cognitive Art",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6482,7 +6487,8 @@
     "title": "Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6506,7 +6512,8 @@
     "title": "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6530,7 +6537,8 @@
     "title": "DuckRabbit: Typed Multimodal Illusion Generator",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6754,7 +6762,8 @@
     "title": "Codomyrmex: An Artificial Ecology for Agentic Software Development",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6803,7 +6812,8 @@
     "title": "PROJECT BOND — The Special-Agent Operations Compendium",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6827,16 +6837,19 @@
     "title": "DigiPPPiP: Digital Partner Pen Play in Parallel",
     "author": [
       {
-        "literal": "Siddhant Shrivastava"
+        "family": "Shrivastava",
+        "given": "Siddhant"
       },
       {
-        "literal": "Evelyn C. Goh"
+        "family": "Goh",
+        "given": "Evelyn C."
       },
       {
         "literal": "Alexandra Mikhailova"
       },
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {
@@ -6985,7 +6998,8 @@
     "title": "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)",
     "author": [
       {
-        "literal": "Daniel Ari Friedman"
+        "family": "Friedman",
+        "given": "Daniel Ari"
       }
     ],
     "issued": {

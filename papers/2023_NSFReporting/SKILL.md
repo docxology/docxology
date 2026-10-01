@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "NSFReporting"
+name: "Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing"
 description: "This paper proposes refining postdoctoral reporting at the NSF through generative intelligence systems, bolstering efficiency and broadening dissemination scope. The framework includes updatable profi..."
 tags: ["nsf-reporting", "postdoctoral-research", "synthetic-intelligence", "automated-reporting", "research-dissemination", "prompt-engineering"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2023). *NSFReporting*. Computational."
+citation: "Daniel Ari Friedman (2023). *Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing*. Zenodo."
 doi: "10.5281/zenodo.10160656"
 ---
 
-# NSFReporting
+# Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing
 
 **Daniel Ari Friedman** (2023) · Computational
 
@@ -20,8 +20,7 @@ This work addresses topics in **Computational**: NSF reporting, postdoctoral res
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -57,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.10160656`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

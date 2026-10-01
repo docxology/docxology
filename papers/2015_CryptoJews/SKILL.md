@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "CryptoJews"
+name: "Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history"
 description: "Population genetics critique of uniparental marker methodology for inferring Jewish ancestry in Iberian crypto-Jewish communities"
 tags: ["population-genetics", "uniparental-markers", "crypto-jews", "haplotype-polyphyly", "admixture-modeling", "iberian-history"]
 domain: "Genetics & Biomedical"
-citation: "Alexander W. Marcus, Emily R. Ebel & Daniel Ari Friedman (2015). *CryptoJews*. Genetics & Biomedical."
+citation: "Alexander W. Marcus, Emily R. Ebel, Daniel A. Friedman (2015). *Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history*. Frontiers in Genetics."
 doi: "10.3389/fgene.2015.00261"
 ---
 
-# CryptoJews
+# Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history
 
-**Alexander W. Marcus, Emily R. Ebel & Daniel Ari Friedman** (2015) · Genetics & Biomedical
+**Alexander W. Marcus, Emily R. Ebel, Daniel A. Friedman** (2015) · Genetics & Biomedical
 
 ## Context
 
@@ -28,7 +28,7 @@ Primary methods and techniques applied in this work:
 
 Core contributions and results:
 
-- Population genetics critique of uniparental marker methodology for inferring Jewish ancestry in Iberian crypto-Jewish communities
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 

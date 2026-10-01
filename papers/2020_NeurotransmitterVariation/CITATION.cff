@@ -1,20 +1,20 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "NeurotransmitterVariation"
+title: "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains"
 date-released: 2020
 doi: 10.1007/s00216-019-02355-3
 url: "https://doi.org/10.1007/s00216-019-02355-3"
 authors:
-  - family-names: Shin
-    given-names: Mimi
-  - family-names: Friedman
-    given-names: Daniel A.
+  - family-names: "Shin"
+    given-names: "Mimi"
+  - family-names: "Friedman"
+    given-names: "Daniel A."
     orcid: "https://orcid.org/0000-0001-6232-9096"
-  - family-names: Gordon
-    given-names: Deborah M.
-  - family-names: Venton
-    given-names: B. Jill
+  - family-names: "Gordon"
+    given-names: "Deborah M."
+  - family-names: "Venton"
+    given-names: "B. Jill"
 identifiers:
   - type: doi
     value: "10.1007/s00216-019-02355-3"

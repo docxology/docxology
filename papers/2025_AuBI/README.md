@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 💻 AuBI
+# 💻 Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference
 
-**Daniel A. Friedman** (2025) · *Zenodo*
+**Die Schwarze Katze, Andrew Djuwidja, Daniel Friedman** (2025) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17228945-blue)](https://doi.org/10.5281/zenodo.17228945)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework.
-- The paper examines how AI systems ca...
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2025). *AuBI*. Zenodo. DOI: 10.5281/zenodo.17228945. URL: https://doi.org/10.5281/zenodo.17228945.
+> Die Schwarze Katze, Andrew Djuwidja, Daniel Friedman (2025). *Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference*. Zenodo. DOI: 10.5281/zenodo.17228945. URL: https://doi.org/10.5281/zenodo.17228945.
 
 ## Related
 

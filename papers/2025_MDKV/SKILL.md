@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "MDKV"
+name: "MDKV: A Multitrack Markdown Container for Structured, Portable Documents"
 description: "MDKV (Markdown Key-Value) is a lightweight, YAML-free key-value format for Markdown documents. Every key-value pair maps to a Markdown heading and its body text, enabling round-trip transformations be..."
 tags: ["mdkv", "markdown", "key-value-format", "structured-data", "document-specification", "yaml-free", "round-trip-transformation"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2025). *MDKV*. Computational."
+citation: "Daniel Friedman (2025). *MDKV: A Multitrack Markdown Container for Structured, Portable Documents*. Zenodo."
 doi: "10.5281/zenodo.16790554"
 ---
 
-# MDKV
+# MDKV: A Multitrack Markdown Container for Structured, Portable Documents
 
-**Daniel Ari Friedman** (2025) · Computational
+**Daniel Friedman** (2025) · Computational
 
 ## Context
 
@@ -20,8 +20,7 @@ This work addresses topics in **Computational**: MDKV, Markdown, key-value forma
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -57,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.16790554`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

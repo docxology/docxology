@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 AntStack
+# 🐜 The Ant Stack
 
-**Daniel A. Friedman** (2025) · *Zenodo*
+**Daniel Ari Friedman** (2025) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16782756-blue)](https://doi.org/10.5281/zenodo.16782756)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patte
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -33,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2025). *AntStack*. Zenodo. DOI: 10.5281/zenodo.16782756. URL: https://doi.org/10.5281/zenodo.16782756.
+> Daniel Ari Friedman (2025). *The Ant Stack*. Zenodo. DOI: 10.5281/zenodo.16782756. URL: https://doi.org/10.5281/zenodo.16782756.
 
 ## Related
 

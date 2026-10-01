@@ -1,10 +1,10 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Recovering LLM-Persona Accuracies from Unlabeled Votes"
-description: "<p>Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses &mdash; no answer key. We test this end to end on real large language models. Three trader "personas" (optimistic, neutral..."
+description: "<p>Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses &mdash; no answer key. We test this end to end on real large language models. Three trader \"personas\" (optimistic, neutral..."
 tags: ["algebraic-evaluation", "ntqr", "unsupervised-evaluation", "evaluation-on-unlabeled-data", "llm-as-judge", "error-independent-evaluation", "ensemble-evaluability", "constant-classifier", "ai-safety-warning-light", "reproducible-research"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Recovering LLM-Persona Accuracies from Unlabeled Votes*. Computational."
+citation: "Daniel Ari Friedman (2026). *Recovering LLM-Persona Accuracies from Unlabeled Votes*. Zenodo."
 doi: "10.5281/zenodo.20498699"
 ---
 
@@ -20,15 +20,13 @@ This work addresses topics in **Computational**: algebraic evaluation, NTQR, uns
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- <p>Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses &mdash; no answer key.
-- We test this end to end on real large language models.
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20498699`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

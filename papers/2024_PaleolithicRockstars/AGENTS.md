@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — PaleolithicRockstars
+# AGENTS.md — Why Paleolithic Rockstars were both enigmatic and sporadic
 
-**Paper**: PaleolithicRockstars (2024)
+**Paper**: Why Paleolithic Rockstars were both enigmatic and sporadic (2024)
 **Domain**: Genetics & Biomedical
-**Authors**: Daniel Ari Friedman
+**Authors**: Dean Tickles, Daniel Ari Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
-- Identifies findings: An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression.., The work examines cave paintings and rock art as evidence of early human cognitiv....
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects PaleolithicRockstars to related works in the bibliography
+- Connects Why Paleolithic Rockstars were both enigmatic and sporadic to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

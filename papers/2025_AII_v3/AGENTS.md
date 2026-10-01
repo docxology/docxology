@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — AII_v3
+# AGENTS.md — The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)
 
-**Paper**: AII_v3 (2025)
+**Paper**: The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot) (2025)
 **Domain**: AII Ecosystem
-**Authors**: Active Inference Institute
+**Authors**: Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Program coordination, Community governance design
-- Identifies findings: Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement., Analysis of Covers the institu...
+- Extracts methods: See paper
+- Identifies findings: Analysis of Covers the institu...
 - Maps contributions to AII Ecosystem literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects AII_v3 to related works in the bibliography
+- Connects The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

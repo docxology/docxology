@@ -4,7 +4,7 @@ name: "Illegal States, Mostly Unrepresentable"
 description: "This paper presents a strongly-typed, decentralized multiagent simulation — an ant-robot colony — as the computational exemplar of the Research Project Template (https://github.com/docxology/template). Each colony member is an Agent that owns exactly..."
 tags: ["strongly-typed-programming", "session-types", "algebraic-data-types", "category-theory", "active-inference", "multiagent-systems", "affine-types", "illegal-state-unrepresentable"]
 domain: "Entomology"
-citation: "Daniel Ari Friedman (2026). *Illegal States, Mostly Unrepresentable*. Entomology."
+citation: "Daniel Ari Friedman (2026). *Illegal States, Mostly Unrepresentable*. Zenodo."
 doi: "10.5281/zenodo.21298885"
 ---
 
@@ -20,14 +20,13 @@ This work addresses topics in **Entomology**: strongly typed programming, sessio
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21298885`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

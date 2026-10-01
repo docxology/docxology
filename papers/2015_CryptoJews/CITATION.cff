@@ -1,17 +1,17 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "CryptoJews"
+title: "Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history"
 date-released: 2015
 doi: 10.3389/fgene.2015.00261
 url: "https://doi.org/10.3389/fgene.2015.00261"
 authors:
-  - family-names: Marcus
-    given-names: Alexander W.
-  - family-names: Ebel
-    given-names: Emily R.
-  - family-names: Friedman
-    given-names: Daniel Ari
+  - family-names: "Marcus"
+    given-names: "Alexander W."
+  - family-names: "Ebel"
+    given-names: "Emily R."
+  - family-names: "Friedman"
+    given-names: "Daniel A."
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi

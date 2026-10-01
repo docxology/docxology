@@ -1,13 +1,28 @@
 {
-  "title": "TemporalDepth",
+  "title": "Temporal Depth in a Coherent Self and in Depersonalization",
   "domain": "Active Inference",
   "type": "Paper",
   "creators": [
     {
-      "name": "Daniel A. Friedman"
+      "name": "Alexey Tolchinsky"
     },
     {
-      "name": "et al."
+      "name": "Michael Levin"
+    },
+    {
+      "name": "Chris Fields"
+    },
+    {
+      "name": "Lancelot Da Costa"
+    },
+    {
+      "name": "Rachael Murphy"
+    },
+    {
+      "name": "Daniel Friedman"
+    },
+    {
+      "name": "David Pincus"
     }
   ],
   "description": "This paper develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization. Using Active Inference, we formalize how subjective temporal experience i...",

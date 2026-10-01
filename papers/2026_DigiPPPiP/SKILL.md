@@ -4,13 +4,13 @@ name: "DigiPPPiP: Digital Partner Pen Play in Parallel"
 description: "DigiPPPiP extends Partner Pen Play in Parallel (PPPiP) from a co-present paper practice into a reproducible framework for cyberphysical, remote, semisynchronous, asynchronous, accessible, and place-responsive dyadic drawing . The framework is positio..."
 tags: ["partner-pen-play-in-parallel", "active-inference", "inter-brain-synchrony", "geometric-hyperscanning", "narrative-information-theory", "neuroergonomics", "digital-placemaking", "relational-technology", "reproducible-research"]
 domain: "Cognitive Security"
-citation: "Daniel Ari Friedman (2026). *DigiPPPiP: Digital Partner Pen Play in Parallel*. Cognitive Security."
+citation: "Siddhant Shrivastava, Evelyn C. Goh, Alexandra Mikhailova, Daniel Ari Friedman (2026). *DigiPPPiP: Digital Partner Pen Play in Parallel*. Zenodo."
 doi: "10.5281/zenodo.21815704"
 ---
 
 # DigiPPPiP: Digital Partner Pen Play in Parallel
 
-**Daniel Ari Friedman** (2026) · Cognitive Security
+**Siddhant Shrivastava, Evelyn C. Goh, Alexandra Mikhailova, Daniel Ari Friedman** (2026) · Cognitive Security
 
 ## Context
 
@@ -20,14 +20,13 @@ This work addresses topics in **Cognitive Security**: partner pen play in parall
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21815704`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

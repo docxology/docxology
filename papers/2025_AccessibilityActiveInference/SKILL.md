@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "AccessibilityActiveInference"
+name: "Increasing the Accessibility and Applicability of Active Inference"
 description: "A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Devel..."
 tags: ["accessibility", "active-inference", "pedagogy", "summer-school-curriculum", "generative-playbooks", "open-source-education", "neurotechnology", "neurodiversity", "cognitive-security"]
 domain: "Active Inference"
-citation: "Daniel A. Friedman, Active Inference Institute (2025). *AccessibilityActiveInference*. Active Inference."
+citation: "Alexandra Mikhailova, Daniel Friedman (2025). *Increasing the Accessibility and Applicability of Active Inference*. Zenodo."
 doi: "10.5281/zenodo.15061666"
 ---
 
-# AccessibilityActiveInference
+# Increasing the Accessibility and Applicability of Active Inference
 
-**Daniel A. Friedman, Active Inference Institute** (2025) · Active Inference
+**Alexandra Mikhailova, Daniel Friedman** (2025) · Active Inference
 
 ## Context
 
@@ -20,14 +20,13 @@ This work addresses topics in **Active Inference**: accessibility, Active Infere
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Devel
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.15061666`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

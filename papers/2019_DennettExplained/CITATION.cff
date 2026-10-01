@@ -1,17 +1,17 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "DennettExplained"
+title: "Dennett Explained (interview with Daniel Dennett)"
 date-released: 2019
 doi: 10.34700/7gkw-zh08
 url: "https://doi.org/10.34700/7gkw-zh08"
 authors:
-  - family-names: Dennett
-    given-names: Daniel
-  - family-names: Fleig-Goldstein
-    given-names: Brendan
-  - family-names: Friedman
-    given-names: Daniel A.
+  - family-names: "Dennett"
+    given-names: "Daniel"
+  - family-names: "Fleig-Goldstein"
+    given-names: "Brendan"
+  - family-names: "Friedman"
+    given-names: "Daniel"
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi

@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — ActiveInferenceOntology
+# AGENTS.md — An Active Inference Ontology for Decentralized Science
 
-**Paper**: ActiveInferenceOntology (2022)
+**Paper**: An Active Inference Ontology for Decentralized Science (2022)
 **Domain**: Active Inference
-**Authors**: Daniel A. Friedman, Virginia Bleu Knight
+**Authors**: Daniel Friedman, Shaun Applegate-Swanson, Jessica Angeli Balbuena, Arhan Choudhury, RJ Cordes, Shady El Damaty, Avel Guénin—Carlut, V. Bleu Knight, Ivan Metelkin, Siddhant Shrivastava, Amit Kumar Singh, Jakub Smékal, Tuttle. Caleb, Alexander Vyatkin
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Active Inference, Free energy minimization
-- Identifies findings: We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature., Analysis of The ontology provide...
+- Extracts methods: Active Inference
+- Identifies findings: Analysis of The ontology provide...
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects ActiveInferenceOntology to related works in the bibliography
+- Connects An Active Inference Ontology for Decentralized Science to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

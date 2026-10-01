@@ -4,7 +4,7 @@ name: "Active Inference Multi-Track Exemplar"
 description: "We study a minimal Active Inference stack on toy models: a Bernoulli–Ising analytical oracle, a pymdp T-maze rollout, and a sheaf-indexed compose contract that binds 34 fragment tracks into 12 flat IMRAD sections. The methodological contribution is a..."
 tags: ["active-inference", "pymdp", "sophisticated-inference", "generalized-notation-notation", "lean"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Active Inference Multi-Track Exemplar*. Computational."
+citation: "Daniel Ari Friedman (2026). *Active Inference Multi-Track Exemplar*. Zenodo."
 doi: "10.5281/zenodo.20417021"
 ---
 
@@ -20,15 +20,13 @@ This work addresses topics in **Computational**: active inference, pymdp, sophis
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- We study a minimal Active Inference stack on toy models: a Bernoulli–Ising analytical oracle, a pymdp T-maze rollout, and a sheaf-indexed compose contract that binds 34 fragment tracks into 12 flat IM
-- The methodological contribution is a discipline rather than a domain finding: every reported number is hydrated from a generated artifact and every cross-track claim is machine-checked before renderin
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20417021`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

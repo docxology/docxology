@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧬 NeuroscienceDecision
+# 🧬 The neuroscience of decision making (interview with Timothy Hanks)
 
 **Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman** (2020) · *ALIUS Bulletin*
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career..
-- Hanks explores how ideas from computational neuroscience have hel....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman (2020). *NeuroscienceDecision*. ALIUS Bulletin. DOI: 10.34700/8pg4-0h12. URL: https://doi.org/10.34700/8pg4-0h12.
+> Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman (2020). *The neuroscience of decision making (interview with Timothy Hanks)*. ALIUS Bulletin. DOI: 10.34700/8pg4-0h12. URL: https://doi.org/10.34700/8pg4-0h12.
 
 ## Related
 

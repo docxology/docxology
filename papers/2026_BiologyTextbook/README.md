@@ -23,8 +23,7 @@
 
 ## Key Findings
 
-- Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, geneti
-- Organized as Unit 0 plus Units I–X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together, so readers can move
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

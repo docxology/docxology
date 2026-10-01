@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "MVEE"
+name: "MVEE: A Framework for Evolutionary Studies"
 description: "How can we formalize the evolution of heredity, environment, and phenotype through time and across biological levels? This presentation introduces the Multilevel Variational Ecology and Evolution (MVE..."
 tags: ["mvee", "evolutionary-theory", "multilevel-evolution", "phenotypic-plasticity", "eco-evo-devo", "variational-methods", "multilevel-selection", "open-ended-evolution"]
 domain: "Presentations & Media"
-citation: "Daniel Ari Friedman (2018). *MVEE*. Presentations & Media."
+citation: "Daniel Friedman (2018). *MVEE: A Framework for Evolutionary Studies*. Presentation."
 doi: "10.5281/zenodo.13999298"
 ---
 
-# MVEE
+# MVEE: A Framework for Evolutionary Studies
 
-**Daniel Ari Friedman** (2018) · Presentations & Media
+**Daniel Friedman** (2018) · Presentations & Media
 
 ## Context
 
@@ -20,8 +20,7 @@ This work addresses topics in **Presentations & Media**: MVEE, evolutionary theo
 
 Primary methods and techniques applied in this work:
 
-- Content production
-- Pedagogical design
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -34,7 +33,7 @@ Core contributions and results:
 
 - [2023_AntsAging](../2023_AntsAging/)
 - [2023_PostdocReview](../2023_PostdocReview/)
-- [2024_BioFirm](../2024_BioFirm/)
+- [2025_BiofirmDevelopmentWith](../2025_BiofirmDevelopmentWith/)
 
 ## Validation
 
@@ -56,5 +55,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.13999298`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

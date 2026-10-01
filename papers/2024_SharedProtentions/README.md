@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 SharedProtentions
+# 🧠 Shared Protentions in Multi-Agent Active Inference
 
-**Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J.D. Ramstead** (2024) · *Entropy*
+**Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J. D. Ramstead** (2024) · *Entropy*
 
 [![DOI](https://img.shields.io/badge/DOI-10.3390%2Fe26040303-blue)](https://doi.org/10.3390/e26040303)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference..
-- Protentions are future-directed expectations that shape perception and action; here we formaliz....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J.D. Ramstead (2024). *SharedProtentions*. Entropy. DOI: 10.3390/e26040303. URL: https://doi.org/10.3390/e26040303.
+> Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J. D. Ramstead (2024). *Shared Protentions in Multi-Agent Active Inference*. Entropy. DOI: 10.3390/e26040303. URL: https://doi.org/10.3390/e26040303.
 
 ## Related
 

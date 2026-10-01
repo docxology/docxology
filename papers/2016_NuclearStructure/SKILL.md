@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "NuclearStructure"
+name: "Influence of nuclear structure on the formation of radiation-induced lethal lesions"
 description: "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) tec..."
 tags: ["hi-c", "chromosome-conformation", "radiation-biology", "chromatin-architecture", "dna-damage", "topologically-associating-domains", "nuclear-organization", "3c-technologies"]
 domain: "Genetics & Biomedical"
-citation: "Daniel A. Friedman, Daniel F. Pilch (2016). *NuclearStructure*. Genetics & Biomedical."
+citation: "Daniel A. Friedman, Lauren Tait, Andrew T. M. Vaughan (2016). *Influence of nuclear structure on the formation of radiation-induced lethal lesions*. Int. J. Radiation Biology."
 doi: "10.3109/09553002.2016.1144941"
 ---
 
-# NuclearStructure
+# Influence of nuclear structure on the formation of radiation-induced lethal lesions
 
-**Daniel A. Friedman, Daniel F. Pilch** (2016) · Genetics & Biomedical
+**Daniel A. Friedman, Lauren Tait, Andrew T. M. Vaughan** (2016) · Genetics & Biomedical
 
 ## Context
 
@@ -20,15 +20,13 @@ This work addresses topics in **Genetics & Biomedical**: Hi-C, chromosome confor
 
 Primary methods and techniques applied in this work:
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability..
-- Chromosome conformation capture (3C) tec....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.3109/09553002.2016.1144941`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

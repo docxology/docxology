@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — DigitalRhetorical
+# AGENTS.md — Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse
 
-**Paper**: DigitalRhetorical (2021)
+**Paper**: Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse (2021)
 **Domain**: Cognitive Security
 **Authors**: Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Extracts methods: See paper
 - Identifies findings: makes a case for integrating frameworks from two different knowledge domains, rhetorical studies and ecological studies, to catalog, monitor, and study digital image meme data, in order to support a more robust understanding of how memes produce and disseminate online narratives.., In the digital public sphere, the primacy of image-based communication motivates an over-reliance on the image meme for public argumentation.., Despite its ubiquity, the image meme format is currently understudied in large scale digital data analyses, relative to text -based formats such as natural language and hashtags..
 - Maps contributions to Cognitive Security literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects DigitalRhetorical to related works in the bibliography
+- Connects Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

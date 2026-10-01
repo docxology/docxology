@@ -4,7 +4,7 @@ name: "A template/ approach to Reproducible Generative Research"
 description: "The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with no enforced mechanism to keep code, data, and man..."
 tags: ["reproducible-research", "infrastructure-as-code", "steganography", "cryptographic-provenance", "latex-rendering", "modular-infrastructure", "publication-integrity", "zero-mock-testing", "thin-orchestrator", "two-layer-architecture"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *A template/ approach to Reproducible Generative Research*. Computational."
+citation: "Daniel Ari Friedman (2026). *A template/ approach to Reproducible Generative Research*. Zenodo."
 doi: "10.5281/zenodo.20419007"
 ---
 
@@ -20,15 +20,13 @@ This work addresses topics in **Computational**: reproducible research, infrastr
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with
-- Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only 24% of 1.4 million Jupyter notebooks can be successfully re-executed.
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20419007`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

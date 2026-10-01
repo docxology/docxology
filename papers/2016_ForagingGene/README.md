@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 ForagingGene
+# 🐜 Context-dependent expression of the foraging gene in field colonies of ants
 
-**Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon** (2016) · *Proceedings of the Royal Society B*
+**Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru** (2016) · *Proceedings of the Royal Society B*
 
 [![DOI](https://img.shields.io/badge/DOI-10.1098%2Frspb.2016.0841-blue)](https://doi.org/10.1098/rspb.2016.0841)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Previous work has found that workers of similar genotype adopt different behavioural phenotypes..
-- Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon (2016). *ForagingGene*. Proceedings of the Royal Society B. DOI: 10.1098/rspb.2016.0841. URL: https://doi.org/10.1098/rspb.2016.0841.
+> Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru (2016). *Context-dependent expression of the foraging gene in field colonies of ants*. Proceedings of the Royal Society B. DOI: 10.1098/rspb.2016.0841. URL: https://doi.org/10.1098/rspb.2016.0841.
 
 ## Related
 

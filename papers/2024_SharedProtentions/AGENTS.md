@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — SharedProtentions
+# AGENTS.md — Shared Protentions in Multi-Agent Active Inference
 
-**Paper**: SharedProtentions (2024)
+**Paper**: Shared Protentions in Multi-Agent Active Inference (2024)
 **Domain**: Active Inference
-**Authors**: Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J.D. Ramstead
+**Authors**: Mahault Albarracin, Riddhi J. Pitliya, Toby St. Clere Smithe, Daniel Ari Friedman, Karl Friston, Maxwell J. D. Ramstead
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Bayesian modeling and inference
-- Identifies findings: We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference.., Protentions are future-directed expectations that shape perception and action; here we formaliz....
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects SharedProtentions to related works in the bibliography
+- Connects Shared Protentions in Multi-Agent Active Inference to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

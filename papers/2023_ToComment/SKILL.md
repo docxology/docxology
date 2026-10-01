@@ -1,17 +1,17 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "DigitalRhetoricalEcosystemAnalysis"
+name: "To comment or not to comment"
 description: "Integrates frameworks from rhetorical studies and ecological studies to catalog, monitor, and study digital image meme data; introduces the Digital Rhetorical Ecosystem three-tiered model (DRE3)."
 tags: ["rhetorical-analysis", "image-memes", "digital-discourse", "narrative-ecosystems", "dre3-model", "sensemaking"]
 domain: "Genetics & Biomedical"
-citation: "Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman (2023). *DigitalRhetoricalEcosystemAnalysis*. Genetics & Biomedical."
+citation: "Dean Tickles, Daniel Friedman (2023). *To comment or not to comment*. Physics of Life Reviews."
 doi: "10.1016/j.plrev.2023.06.002"
 artifact_doi: "10.5281/zenodo.5573946"
 ---
 
-# DigitalRhetoricalEcosystemAnalysis
+# To comment or not to comment
 
-**Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman** (2023) · Genetics & Biomedical
+**Dean Tickles, Daniel Friedman** (2023) · Genetics & Biomedical
 
 ## Context
 
@@ -22,7 +22,6 @@ This work addresses topics in **Genetics & Biomedical**: rhetorical analysis, im
 Primary methods and techniques applied in this work:
 
 - Rhetorical ecosystem mapping
-- Cross-domain pattern mapping
 
 ## Key Findings
 

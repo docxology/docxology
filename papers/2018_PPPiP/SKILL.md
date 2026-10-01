@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "PPPiP"
+name: "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement"
 description: "Healthy romantic relationships contribute to human physical health and emotional well-being. Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on..."
 tags: ["pppip", "art-therapy", "improvisation", "intimate-relationships", "affective-neuroscience", "creativity", "dyadic-interaction", "sexology", "controlled-novelty"]
 domain: "Art & Synergetics"
-citation: "Alexandra Mikhailova, Daniel A. Friedman (2018). *PPPiP*. Art & Synergetics."
+citation: "Alexandra Mikhailova, Daniel A. Friedman (2018). *Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement*. Arts."
 doi: "10.3390/arts7030039"
 ---
 
-# PPPiP
+# Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement
 
 **Alexandra Mikhailova, Daniel A. Friedman** (2018) · Art & Synergetics
 
@@ -28,8 +28,7 @@ Primary methods and techniques applied in this work:
 
 Core contributions and results:
 
-- Healthy romantic relationships contribute to human physical health and emotional well-being..
-- Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 

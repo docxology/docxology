@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "PostdocReview"
+name: "Postdoc review (2020–2023)"
 description: "A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Sci..."
 tags: ["postdoctoral-review", "research-portfolio", "active-inference", "entomology", "cognitive-security", "meta-science", "philosophy", "biology", "interdisciplinary-research"]
 domain: "Presentations & Media"
-citation: "Daniel Ari Friedman (2023). *PostdocReview*. Presentations & Media."
+citation: "Daniel Ari Friedman (2023). *Postdoc review (2020–2023)*. Presentation."
 doi: "10.5281/zenodo.8377987"
 ---
 
-# PostdocReview
+# Postdoc review (2020–2023)
 
 **Daniel Ari Friedman** (2023) · Presentations & Media
 
@@ -20,20 +20,19 @@ This work addresses topics in **Presentations & Media**: postdoctoral review, re
 
 Primary methods and techniques applied in this work:
 
-- Content production
-- Pedagogical design
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Sci
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
 - [2018_MVEE](../2018_MVEE/)
 - [2023_AntsAging](../2023_AntsAging/)
-- [2024_BioFirm](../2024_BioFirm/)
+- [2025_BiofirmDevelopmentWith](../2025_BiofirmDevelopmentWith/)
 
 ## Validation
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.8377987`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

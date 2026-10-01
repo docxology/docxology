@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — CognitiveArtScience
+# AGENTS.md — On Cognitive Art & Science: Toward Wholeness From Both Sides
 
-**Paper**: CognitiveArtScience (2025)
+**Paper**: On Cognitive Art & Science: Toward Wholeness From Both Sides (2025)
 **Domain**: Art & Synergetics
-**Authors**: Daniel A. Friedman
+**Authors**: Daniel Ari Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
-- Identifies findings: This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation., Analysis of Through Active Inference...
+- Extracts methods: See paper
+- Identifies findings: Analysis of Through Active Inference...
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects CognitiveArtScience to related works in the bibliography
+- Connects On Cognitive Art & Science: Toward Wholeness From Both Sides to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

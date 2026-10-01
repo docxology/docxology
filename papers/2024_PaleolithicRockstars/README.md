@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧬 PaleolithicRockstars
+# 🧬 Why Paleolithic Rockstars were both enigmatic and sporadic
 
-**Daniel Ari Friedman** (2024) · *Physics of Life Reviews*
+**Dean Tickles, Daniel Ari Friedman** (2024) · *Physics of Life Reviews*
 
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.plrev.2024.04.010-blue)](https://doi.org/10.1016/j.plrev.2024.04.010)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression..
-- The work examines cave paintings and rock art as evidence of early human cognitiv....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -33,7 +31,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2024). *PaleolithicRockstars*. Physics of Life Reviews. DOI: 10.1016/j.plrev.2024.04.010. URL: https://doi.org/10.1016/j.plrev.2024.04.010.
+> Dean Tickles, Daniel Ari Friedman (2024). *Why Paleolithic Rockstars were both enigmatic and sporadic*. Physics of Life Reviews. DOI: 10.1016/j.plrev.2024.04.010. URL: https://doi.org/10.1016/j.plrev.2024.04.010.
 
 ## Related
 

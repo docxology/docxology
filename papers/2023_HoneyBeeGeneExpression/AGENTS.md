@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — HoneyBeeGeneExpression
+# AGENTS.md — A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees
 
-**Paper**: HoneyBeeGeneExpression (2023)
+**Paper**: A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees (2023)
 **Domain**: Entomology
-**Authors**: William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson
+**Authors**: Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson
 
 ---
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis
+- Extracts methods: See paper
 - Identifies findings: The honey bee ( Apis mellifera ) is a pivotal species in both ecological and research contexts, serving as a model organism for studying complex social behavior and physiological processes.., A critical aspect of understanding these complexities is the analysis of tissue-specific gene expression (TSGE), a challenging task due to the need to handle large bioinformatics data and manual tissue processing.., In this study, we present a meta-analytic approach to investigate TSGE in A. mellifera , harnessing various open-source bioinformatics packages..
 - Maps contributions to Entomology literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects HoneyBeeGeneExpression to related works in the bibliography
+- Connects A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

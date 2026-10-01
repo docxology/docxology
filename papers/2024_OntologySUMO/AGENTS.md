@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — OntologySUMO
+# AGENTS.md — Aligning Active Inference Ontology to SUMO
 
-**Paper**: OntologySUMO (2024)
+**Paper**: Aligning Active Inference Ontology to SUMO (2024)
 **Domain**: AII Ecosystem
-**Authors**: David S. Douglass, Adam Pease, Daniel Friedman, et al.
+**Authors**: David S. Douglass, Adam Pease, Daniel Ari Friedman, Jessica Angeli Balbuena, Rhea Chokhalingam, Ana Magdalena Hurtado, Maria Luiza Iennaco, V. Bleu Knight, Scott Ryan Maybell, Ali Rahmjoo, Paulo Duare Andrade Sayeg, Jakub Smékal, Dean Tickles, Alex Vyatkin
 
 ---
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects OntologySUMO to related works in the bibliography
+- Connects Aligning Active Inference Ontology to SUMO to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

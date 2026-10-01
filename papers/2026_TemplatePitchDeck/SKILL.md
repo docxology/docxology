@@ -4,7 +4,7 @@ name: "template_pitch_deck: Reproducible, Validated Pitch-Deck Generation"
 description: "Research groups routinely need to pitch their work — to funders, partners, or collaborators — yet pitch decks are almost never treated as reproducible research artifacts: they are hand-assembled in proprietary slide tools, contain unverifiable claims..."
 tags: ["pitch-deck", "slide-generation", "reproducible-research-communication", "meta-science-infrastructure", "science-integrity", "token-validation", "pptx", "pdf-rendering"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *template_pitch_deck: Reproducible, Validated Pitch-Deck Generation*. Computational."
+citation: "Daniel Ari Friedman (2026). *template_pitch_deck: Reproducible, Validated Pitch-Deck Generation*. Zenodo."
 doi: "10.5281/zenodo.21281509"
 ---
 
@@ -20,14 +20,13 @@ This work addresses topics in **Computational**: pitch deck, slide generation, r
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21281509`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

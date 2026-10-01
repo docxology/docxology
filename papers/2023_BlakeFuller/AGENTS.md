@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — BlakeFuller
+# AGENTS.md — William Blake & Buckminster Fuller: Lives in Juxtaposition
 
-**Paper**: BlakeFuller (2023)
+**Paper**: William Blake & Buckminster Fuller: Lives in Juxtaposition (2023)
 **Domain**: Art & Synergetics
-**Authors**: Daniel A. Friedman
+**Authors**: Daniel Ari Friedman
 
 ---
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
+- Extracts methods: See paper
 - Identifies findings: William Blake's prophetic works contain formal structures that prefigure modern systems thinking, Synergetic analysis reveals deep correspondences between poetic and mathematical modes of thought
 - Maps contributions to Art & Synergetics literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects BlakeFuller to related works in the bibliography
+- Connects William Blake & Buckminster Fuller: Lives in Juxtaposition to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

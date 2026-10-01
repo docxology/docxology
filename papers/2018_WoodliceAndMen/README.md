@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 WoodliceAndMen
+# 🧠 Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)
 
-**Karl Friston, Martin Fortier, Daniel A. Friedman** (2018) · *ALIUS Bulletin*
+**Karl Friston, Martin Fortier, Daniel Friedman** (2018) · *ALIUS Bulletin*
 
 [![DOI](https://img.shields.io/badge/DOI-10.34700%2Fh460-nz89-blue)](https://doi.org/10.34700/h460-nz89)
 
@@ -24,7 +24,7 @@
 
 ## Key Findings
 
-- In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +34,7 @@
 
 ## Citation
 
-> Karl Friston, Martin Fortier, Daniel A. Friedman (2018). *WoodliceAndMen*. ALIUS Bulletin. DOI: 10.34700/h460-nz89. URL: https://doi.org/10.34700/h460-nz89.
+> Karl Friston, Martin Fortier, Daniel Friedman (2018). *Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)*. ALIUS Bulletin. DOI: 10.34700/h460-nz89. URL: https://doi.org/10.34700/h460-nz89.
 
 ## Related
 

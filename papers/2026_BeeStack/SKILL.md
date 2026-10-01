@@ -4,13 +4,13 @@ name: "BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation
 description: "BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche). It pairs FlyBody/MuJoCo body and small-scene swarm renders ..."
 tags: ["honeybee", "apis-mellifera", "active-inference", "simulation-scaffold", "swarm-intelligence", "niche-construction", "flybody", "mujoco", "antennal-lobe", "mushroom-body"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation*. Computational."
+citation: "Daniel Ari Friedman, Tucker Cahill Chambers (2026). *BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation*. Zenodo."
 doi: "10.5281/zenodo.20420556"
 ---
 
 # BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation
 
-**Daniel Ari Friedman** (2026) · Computational
+**Daniel Ari Friedman, Tucker Cahill Chambers** (2026) · Computational
 
 ## Context
 
@@ -20,15 +20,13 @@ This work addresses topics in **Computational**: honeybee, Apis mellifera, activ
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche).
-- It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted num
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20420556`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

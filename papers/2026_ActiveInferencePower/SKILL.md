@@ -1,10 +1,10 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings"
-description: "<p class="p1">Statistical power is an investigator-facing operating characteristic of an adaptive-study design. Before simulation, the investigator fixes an agent-side model, evaluator-side process, testing setting, policy, and replication plan. Each..."
+description: "<p class=\"p1\">Statistical power is an investigator-facing operating characteristic of an adaptive-study design. Before simulation, the investigator fixes an agent-side model, evaluator-side process, testing setting, policy, and replication plan. Each..."
 tags: ["multiple-testing", "false-discovery-rate", "benjamini-hochberg", "statistical-power", "active-inference", "pymdp", "sequential-hypothesis-testing", "reproducible-research"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman (2026). *Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings*. Active Inference."
+citation: "Daniel Ari Friedman (2026). *Active Inference Power Suite: Conditional Statistical Power under Controlled Generative Settings*. Zenodo."
 doi: "10.5281/zenodo.21695160"
 ---
 
@@ -20,14 +20,13 @@ This work addresses topics in **Active Inference**: multiple testing, false disc
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21695160`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

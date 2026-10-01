@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — EmergentTeams
+# AGENTS.md — Emergent Teams for Complex Threats
 
-**Paper**: EmergentTeams (2020)
+**Paper**: Emergent Teams for Complex Threats (2020)
 **Domain**: Cognitive Security
-**Authors**: Daniel A. Friedman, R.J. Cordes, Scott David
+**Authors**: Richard J. Cordes, Daniel Ari Friedman
 
 ---
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Extracts methods: See paper
 - Identifies findings: While the underlying, fundamental principles of warfare have long remained unchanged, recent social and technological developments have necessitated new approaches to conflict management.., Specifically, the introduction of nuclear weapons and the maintenance of large military budgets during peacetime in the latter half of the 20th century have changed the risk calculus of conflict among state and non-state actors.., Consequently, the operating environment has changed..
 - Maps contributions to Cognitive Security literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects EmergentTeams to related works in the bibliography
+- Connects Emergent Teams for Complex Threats to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

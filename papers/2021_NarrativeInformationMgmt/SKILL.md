@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "NarrativeInformationMgmt"
+name: "Narrative Information Management"
 description: "We propose Narrative Information Management (NIM) as a unifying framework for facilitating collective sensemaking. We address the need for synthesis among knowledge management, information management..."
 tags: ["narrative-information-management", "nim", "collective-sensemaking", "knowledge-management", "information-systems", "cognitive-load", "interdisciplinary-synthesis"]
 domain: "Cognitive Security"
-citation: "Richard J. Cordes, Shaun Applegate-Swanson, Daniel A. Friedman, Virginia Bleu Knight, Alexandra Mikhailova (2021). *NarrativeInformationMgmt*. Cognitive Security."
+citation: "Richard J. Cordes, Shaun Applegate-Swanson, Daniel Ari Friedman, Virginia Bleu Knight, Alexandra Mikhailova (2021). *Narrative Information Management*. Zenodo."
 doi: "10.5281/zenodo.5565577"
 ---
 
-# NarrativeInformationMgmt
+# Narrative Information Management
 
-**Richard J. Cordes, Shaun Applegate-Swanson, Daniel A. Friedman, Virginia Bleu Knight, Alexandra Mikhailova** (2021) · Cognitive Security
+**Richard J. Cordes, Shaun Applegate-Swanson, Daniel Ari Friedman, Virginia Bleu Knight, Alexandra Mikhailova** (2021) · Cognitive Security
 
 ## Context
 
@@ -20,8 +20,7 @@ This work addresses topics in **Cognitive Security**: Narrative Information Mana
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -57,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.5565577`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

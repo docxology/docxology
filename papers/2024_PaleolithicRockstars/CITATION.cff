@@ -1,13 +1,15 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "PaleolithicRockstars"
+title: "Why Paleolithic Rockstars were both enigmatic and sporadic"
 date-released: 2024
 doi: 10.1016/j.plrev.2024.04.010
 url: "https://doi.org/10.1016/j.plrev.2024.04.010"
 authors:
-  - family-names: Friedman
-    given-names: Daniel Ari
+  - family-names: "Tickles"
+    given-names: "Dean"
+  - family-names: "Friedman"
+    given-names: "Daniel Ari"
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi

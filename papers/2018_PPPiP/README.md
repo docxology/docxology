@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 PPPiP
+# 🎨 Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement
 
 **Alexandra Mikhailova, Daniel A. Friedman** (2018) · *Arts*
 
@@ -24,8 +24,7 @@
 
 ## Key Findings
 
-- Healthy romantic relationships contribute to human physical health and emotional well-being..
-- Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -35,7 +34,7 @@
 
 ## Citation
 
-> Alexandra Mikhailova, Daniel A. Friedman (2018). *PPPiP*. Arts. DOI: 10.3390/arts7030039. URL: https://doi.org/10.3390/arts7030039.
+> Alexandra Mikhailova, Daniel A. Friedman (2018). *Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement*. Arts. DOI: 10.3390/arts7030039. URL: https://doi.org/10.3390/arts7030039.
 
 ## Related
 

@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — DopamineForaging
+# AGENTS.md — The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants
 
-**Paper**: DopamineForaging (2018)
+**Paper**: The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants (2018)
 **Domain**: Entomology
-**Authors**: Daniel A. Friedman, Annette Pilko, Deborah M. Gordon
+**Authors**: Daniel A. Friedman, Anna Pilko, Dorota Skowronska-Krawczyk, Karolina Krasinska, Jacqueline W. Parker, Jay Hirsh, Deborah M. Gordon
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis
-- Identifies findings: Individual behavioral variation within colonies is shaped by neurochemical signaling., Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa.
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects DopamineForaging to related works in the bibliography
+- Connects The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

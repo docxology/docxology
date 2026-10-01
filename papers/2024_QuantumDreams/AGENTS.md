@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — QuantumDreams
+# AGENTS.md — Four-fold Fields of Quantum Dreams
 
-**Paper**: QuantumDreams (2024)
+**Paper**: Four-fold Fields of Quantum Dreams (2024)
 **Domain**: Art & Synergetics
 **Authors**: Daniel Ari Friedman, Dean Tickles
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
-- Identifies findings: Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured visual-phenomenological analysis., Analysis of The work uses Morse...
+- Extracts methods: See paper
+- Identifies findings: Analysis of The work uses Morse...
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects QuantumDreams to related works in the bibliography
+- Connects Four-fold Fields of Quantum Dreams to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

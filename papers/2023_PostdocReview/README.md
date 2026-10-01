@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎥 PostdocReview
+# 🎥 Postdoc review (2020–2023)
 
 **Daniel Ari Friedman** (2023) · *Presentation*
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Content production
-- Pedagogical design
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Sci
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -35,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2023). *PostdocReview*. Presentation. DOI: 10.5281/zenodo.8377987. URL: https://doi.org/10.5281/zenodo.8377987.
+> Daniel Ari Friedman (2023). *Postdoc review (2020–2023)*. Presentation. DOI: 10.5281/zenodo.8377987. URL: https://doi.org/10.5281/zenodo.8377987.
 
 ## Related
 

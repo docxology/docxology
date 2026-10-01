@@ -8,6 +8,11 @@ Each item has a stable ID, priority, owner, trigger, deliverable, acceptance
 criteria, and dependencies. Re-review this file before each public release.
 
 - Status: active backlog
+- Last reviewed: 2026-10-01 (bibliography accuracy pass: live Crossref/
+  DataCite audit of all 205 DOIs, duplicate #30 retired, paper-folder
+  citations pinned to the bibliography, template methods suppressed; new
+  DOC-016 tracks seed-data summaries and the open registry judgment calls;
+  open-item ledger otherwise unchanged)
 - Last reviewed: 2026-09-27 (SEO/recovery/push wave, concurrent-session
   coordination: committed and pushed the recovered SEO ergonomics wave
   (serp_title decoupling, breadcrumb JSON-LD, per-domain RSS feeds with
@@ -424,6 +429,32 @@ Pipeline-streamlining and docs-accuracy pass (PRs #27/#28 and follow-ups):
   pages; claim_sha256 match). Hygiene fixes landed: textbook-group source
   added to the inventory surface list; claims.json SAB
   verification_method count corrected 31 → 30 self-linked members.
+
+### DOC-016 — Curate paper summaries and the remaining metadata judgment calls
+
+- Priority: P1
+- Owner: RESEARCHER / ARCHIVIST
+- Trigger: next bibliography pass, or any per-paper review
+- Deliverable: replace the remaining domain-template `methods` and
+  abstract-echo `key_findings` in `papers/*/metadata.json` (generated
+  surfaces now suppress them via `code/src/metadata_templates.py`, but the
+  seed data still carries them) with paper-specific summaries drawn from
+  each `full_text.md`; decide the open registry discrepancies from the
+  2026-10-01 live DOI audit
+- Open discrepancies (2026-10-01): **#168** GNN — the latest Zenodo version
+  (v3.6.0) lists only Friedman and titles the record
+  "Generalized_Notation_Notation (GNN)", while the verified cache still
+  credits "The GeneralizedNotationNotation Community Contributors"; **#159**
+  Active Blockference — Crossref issues the IWAI 2022 chapter in 2023, but a
+  year edit re-slugs the frozen work URL; **#12** EvoJump and **#26**
+  Discovery Engine carry deliberate short titles whose full registry titles
+  would change the first four slug words (frozen URL); **#108** keeps the
+  2015 print year (Crossref issued online 2014)
+- Acceptance: no generated README/SKILL/work page states a method or
+  finding that is not paper-specific; each discrepancy has a recorded
+  keep/change decision; `test_bibliography_authority.py` stays green
+- Dependencies: `papers/*/full_text.md`, `data/work-authors.json`,
+  `code/tests/fixtures/frozen-work-keys.json`
 
 ### DOC-007 — Keep agent schemas and manifests current
 

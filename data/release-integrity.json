@@ -20,22 +20,22 @@
     }
   },
   "source_sha256": {
-    "pages/BIBLIOGRAPHY.md": "20b79f60deecd28920e595b580139d97345866c6f19806ea30b8ccd7a0c9a34d",
+    "pages/BIBLIOGRAPHY.md": "e6f4fcfe77cb2f4fae46dffb54389d26b554a1ddaabffff8db04c23f31b5de2d",
     "pages/SOFTWARE.md": "e4635f0990319097a04dbdaffd35d287cc9bbb7475e444864dbbee189f202255",
     "resume/source.json": "209c5b0b1df978813d6ad7c08e2b7c0e2cbc1f7445a4cbdf2c422165983b2f6a",
-    "data/current-counts.json": "19fb90152554d2d95c333341a2cf53f10536f6aa34b023bf2a38882164ac5b23",
-    "data/coverage-exceptions.json": "2aac9b09a4835a29b2139a2b5163cb624b48930619608126324a8f8eacc42d1b",
+    "data/current-counts.json": "a2e12fbf6ce396acbb5991d1548ff02c968b6d5eaf207948774eb1f74be083e5",
+    "data/coverage-exceptions.json": "4355f7b2a7d6b796b9232a4892e46ea4499defbadd73d000262bdbe0e165fb3f",
     "data/repository-classification.json": "782da5e4f884230dd1285dc143104427ab17a433c12909b8a5ae0cf1dc17a31a",
-    "data/agent-index.json": "8b738eebaa25a06079b146499160d5c53e73c80618f57ae55b1af6b7131c9e3e",
+    "data/agent-index.json": "4b658220d78e037fb8af57a87456b126a78eed52f30c9b811b32e787adc47ea0",
     "data/generated-manifest.json": "b8d3df74899b3e3c202f68836cf5bb34ee560bd831b4ef8edb9d5d20dd9c0f9a",
-    "data/pages-artifact-manifest.json": "bd29dea115a3fb63a926e2c4d64447a79335e391ced5dfe24712bb9ff3680669"
+    "data/pages-artifact-manifest.json": "171fea2910f86e56658c310b35c2c2fd743198a34f7a9149e0581915e9a1a9cc"
   },
   "pages_artifact": {
     "manifest": "data/pages-artifact-manifest.json",
     "source_commit_at_generation": "c6fb405fad1c563a12e079e0196ba2b4203fa2e2",
-    "artifact_file_count": 5871,
-    "artifact_bytes": 928250837,
-    "omitted_paper_image_count": 8944,
+    "artifact_file_count": 5861,
+    "artifact_bytes": 923508191,
+    "omitted_paper_image_count": 8936,
     "omitted_superseded_report_count": 552
   },
   "deployment": {
@@ -49,8 +49,8 @@
     "policy": "No local filesystem paths, secret-like tokens, or unsafe URL schemes in public CV/source manifests."
   },
   "counts": {
-    "bibliography_docs_links": 203,
-    "bibliography_works": 220,
+    "bibliography_docs_links": 202,
+    "bibliography_works": 219,
     "domains": {
       "AII Ecosystem": 6,
       "Active Inference": 47,
@@ -59,15 +59,15 @@
       "Computational": 60,
       "Entomology": 23,
       "Genetics & Biomedical": 15,
-      "Presentations & Media": 15
+      "Presentations & Media": 14
     },
-    "extracted_images": 8944,
-    "full_text_papers": 190,
+    "extracted_images": 8936,
+    "full_text_papers": 189,
     "generated_exports": {
-      "data_publications_ld_main_entity": 220,
+      "data_publications_ld_main_entity": 219,
       "data_software_json": 158,
       "data_software_ld_main_entity": 158,
-      "data_works_json": 220
+      "data_works_json": 219
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 43,
@@ -102,8 +102,8 @@
       "update_existing": 55,
       "zenodo_records": 162
     },
-    "paper_folder_docs": 203,
-    "papers_with_images": 139,
+    "paper_folder_docs": 202,
+    "papers_with_images": 138,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
@@ -124,7 +124,7 @@
       "Courses": 3,
       "Papers": 198,
       "Playbooks": 2,
-      "Presentations": 9,
+      "Presentations": 8,
       "Report": 1,
       "Series": 2
     }

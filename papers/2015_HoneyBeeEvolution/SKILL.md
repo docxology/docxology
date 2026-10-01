@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "HoneyBeeEvolution"
+name: "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees"
 description: "A key question in evolutionary biology concerns how novel traits arise at the molecular level. Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly..."
 tags: ["honey-bees", "apis-mellifera", "rna-seq", "taxonomically-restricted-genes", "novel-traits", "gene-expression", "evolutionary-biology", "royal-jelly", "beeswax", "venom"]
 domain: "Genetics & Biomedical"
-citation: "Daniel A. Friedman, Brian R. Johnson (2015). *HoneyBeeEvolution*. Genetics & Biomedical."
+citation: "William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson (2015). *Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees*. Molecular Biology & Evolution."
 doi: "10.1093/molbev/msu292"
 ---
 
-# HoneyBeeEvolution
+# Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees
 
-**Daniel A. Friedman, Brian R. Johnson** (2015) · Genetics & Biomedical
+**William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson** (2015) · Genetics & Biomedical
 
 ## Context
 
@@ -28,8 +28,7 @@ Primary methods and techniques applied in this work:
 
 Core contributions and results:
 
-- A key question in evolutionary biology concerns how novel traits arise at the molecular level..
-- Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 

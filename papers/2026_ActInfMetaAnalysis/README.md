@@ -2,7 +2,7 @@
 
 # 🧠 A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring
 
-**Daniel Ari Friedman & J. Dietz** (2026) · *Active Inference Journal*
+**Daniel Ari Friedman, Joel Dietz** (2026) · *Active Inference Journal*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19461933-blue)](https://doi.org/10.5281/zenodo.19461933)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Computational living meta-analysis of the Active Inference and Free Energy Principle literature: multi-source retrieval, nanopublication extraction, and hypothesis scoring architecture.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +33,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman & J. Dietz (2026). *A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring*. Active Inference Journal. DOI: 10.5281/zenodo.19461933. URL: https://doi.org/10.5281/zenodo.19461933.
+> Daniel Ari Friedman, Joel Dietz (2026). *A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring*. Active Inference Journal. DOI: 10.5281/zenodo.19461933. URL: https://doi.org/10.5281/zenodo.19461933.
 
 ## Related
 

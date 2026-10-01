@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 SystematicLiteratureAnalysis
+# 🧠 The Free Energy Principle & Active Inference: a Systematic Literature Analysis
 
-**Virginia Bleu Knight, R.J. Cordes, Daniel A. Friedman** (2022) · *Zenodo*
+**Virginia Bleu Knight, RJ Cordes, Daniel Friedman** (2022) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7449367-blue)](https://doi.org/10.5281/zenodo.7449367)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston.
-- We trace the history, growth, and div...
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> Virginia Bleu Knight, R.J. Cordes, Daniel A. Friedman (2022). *SystematicLiteratureAnalysis*. Zenodo. DOI: 10.5281/zenodo.7449367. URL: https://doi.org/10.5281/zenodo.7449367.
+> Virginia Bleu Knight, RJ Cordes, Daniel Friedman (2022). *The Free Energy Principle & Active Inference: a Systematic Literature Analysis*. Zenodo. DOI: 10.5281/zenodo.7449367. URL: https://doi.org/10.5281/zenodo.7449367.
 
 ## Related
 

@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 BeforePragmatism
+# 🎨 Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -38,7 +37,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *BeforePragmatism*. Zenodo. DOI: 10.5281/zenodo.18807970. URL: https://doi.org/10.5281/zenodo.18807970.
+> Daniel Ari Friedman (2026). *Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology*. Zenodo. DOI: 10.5281/zenodo.18807970. URL: https://doi.org/10.5281/zenodo.18807970.
 
 ## Related
 

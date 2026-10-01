@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 ArgentineAnt
+# 🐜 Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations
 
-**Daniel A. Friedman, Deborah M. Gordon** (2018) · *PLoS One*
+**Benjamin P. Burford, Gail Lee, Daniel A. Friedman, Esmé Brachmann, Rebia Khan, Dylan J. MacArthur-Waltz, Aidan D. McCarty, Deborah M. Gordon** (2018) · *PLoS One*
 
 [![DOI](https://img.shields.io/badge/DOI-10.1371%2Fjournal.pone.0202117-blue)](https://doi.org/10.1371/journal.pone.0202117)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers..
-- Here we examine the relationship between the....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Deborah M. Gordon (2018). *ArgentineAnt*. PLoS One. DOI: 10.1371/journal.pone.0202117. URL: https://doi.org/10.1371/journal.pone.0202117.
+> Benjamin P. Burford, Gail Lee, Daniel A. Friedman, Esmé Brachmann, Rebia Khan, Dylan J. MacArthur-Waltz, Aidan D. McCarty, Deborah M. Gordon (2018). *Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations*. PLoS One. DOI: 10.1371/journal.pone.0202117. URL: https://doi.org/10.1371/journal.pone.0202117.
 
 ## Related
 

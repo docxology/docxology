@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "InnovatorsCatechism"
+name: "The Innovator's Catechism"
 description: "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives. Many of these teams fail due to..."
 tags: ["operations-orders", "innovation-teams", "innovator's-catechism", "team-alignment", "military-transfer", "organizational-design", "hackathons"]
 domain: "Cognitive Security"
-citation: "Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight (2020). *InnovatorsCatechism*. Cognitive Security."
+citation: "Richard J. Cordes, Daniel A. Friedman, Steven E. Phelan (2020). *The Innovator's Catechism*. Zenodo."
 doi: "10.5281/zenodo.4383229"
 ---
 
-# InnovatorsCatechism
+# The Innovator's Catechism
 
-**Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight** (2020) · Cognitive Security
+**Richard J. Cordes, Daniel A. Friedman, Steven E. Phelan** (2020) · Cognitive Security
 
 ## Context
 
@@ -20,15 +20,13 @@ This work addresses topics in **Cognitive Security**: operations orders, innovat
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives.
-- Many of these teams fail due to...
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.4383229`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

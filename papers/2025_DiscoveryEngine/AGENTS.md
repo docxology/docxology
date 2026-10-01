@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — DiscoveryEngine
+# AGENTS.md — The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
 
-**Paper**: DiscoveryEngine (2025)
+**Paper**: The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes (2025)
 **Domain**: Computational
-**Authors**: Daniel A. Friedman
+**Authors**: Vladimir Baulin, Austin Cook, Daniel Friedman, Janna Lumiruusu, Andrew Pashea, Shagor Rahman, Benedikt Waldeck
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Active Inference, Software pipeline design
-- Identifies findings: The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles.., The system models the scientific discovery process as an inference problem....
+- Extracts methods: Active Inference
+- Identifies findings: See paper
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects DiscoveryEngine to related works in the bibliography
+- Connects The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

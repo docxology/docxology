@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — ActiveDiffusion
+# AGENTS.md — Catechism for Towards Active Diffusion
 
-**Paper**: ActiveDiffusion (2022)
+**Paper**: Catechism for Towards Active Diffusion (2022)
 **Domain**: AII Ecosystem
 **Authors**: Jakub Smékal, Daniel Friedman
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Program coordination, Community governance design
-- Identifies findings: The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models., Analysis of The project, f...
+- Extracts methods: See paper
+- Identifies findings: Analysis of The project, f...
 - Maps contributions to AII Ecosystem literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects ActiveDiffusion to related works in the bibliography
+- Connects Catechism for Towards Active Diffusion to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

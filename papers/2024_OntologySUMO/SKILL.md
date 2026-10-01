@@ -1,17 +1,17 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "OntologySUMO"
+name: "Aligning Active Inference Ontology to SUMO"
 description: "We present a tentative alignment of Active Inference terms with SUMO (Suggested Upper Merged Ontology) entities. For a subset of Active Inference terms, we identify published SUMO files likely to cont..."
 tags: ["ontology-alignment", "sumo", "active-inference-ontology", "knowledge-representation", "formal-ontology", "semantic-mapping"]
 domain: "AII Ecosystem"
-citation: "David S. Douglass, Adam Pease, Daniel Friedman, et al. (2024). *OntologySUMO*. AII Ecosystem."
+citation: "David S. Douglass, Adam Pease, Daniel Ari Friedman, Jessica Angeli Balbuena, Rhea Chokhalingam, Ana Magdalena Hurtado, Maria Luiza Iennaco, V. Bleu Knight, Scott Ryan Maybell, Ali Rahmjoo, Paulo Duare Andrade Sayeg, Jakub Smékal, Dean Tickles, Alex Vyatkin (2024). *Aligning Active Inference Ontology to SUMO*. Zenodo."
 doi: "10.5281/zenodo.11459322"
 artifact_doi: "10.5281/zenodo.11463326"
 ---
 
-# OntologySUMO
+# Aligning Active Inference Ontology to SUMO
 
-**David S. Douglass, Adam Pease, Daniel Friedman, et al.** (2024) · AII Ecosystem
+**David S. Douglass, Adam Pease, Daniel Ari Friedman, Jessica Angeli Balbuena, Rhea Chokhalingam, Ana Magdalena Hurtado, Maria Luiza Iennaco, V. Bleu Knight, Scott Ryan Maybell, Ali Rahmjoo, Paulo Duare Andrade Sayeg, Jakub Smékal, Dean Tickles, Alex Vyatkin** (2024) · AII Ecosystem
 
 ## Context
 

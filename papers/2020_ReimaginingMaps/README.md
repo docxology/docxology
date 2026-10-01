@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Reimagining Maps was written after participation in a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus.
-- The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

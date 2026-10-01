@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — GNN
+# AGENTS.md — Generalized Notation Notation for Active Inference Models
 
-**Paper**: GNN (2023)
+**Paper**: Generalized Notation Notation for Active Inference Models (2023)
 **Domain**: Active Inference
-**Authors**: Daniel A. Friedman
+**Authors**: Jakub Smékal, Daniel Ari Friedman
 
 ---
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects GNN to related works in the bibliography
+- Connects Generalized Notation Notation for Active Inference Models to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

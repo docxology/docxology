@@ -88,26 +88,34 @@ def test_generated_outputs_on_disk_are_current() -> None:
 
 
 @pytest.mark.parametrize("target", ["HTML_OUT", "MD_OUT", "JSON_OUT"])
-def test_check_detects_drift_in_every_output(target: str, tmp_path: Path) -> None:
+def test_check_detects_drift_in_every_output(
+    target: str, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     """A hand-edit to any output must be visible to --check.
 
     Regression guard: comparing generated content against itself made this gate
     vacuously green, so a drifted page shipped without complaint.
+
+    The tampered copy lives under ``tmp_path``: rewriting the real tracked
+    output raced every parallel test that reads it (the SEO single-read guard
+    saw ``reproducibility.html`` change mid-pass) and could leave a corrupted
+    checkout behind if the run was interrupted before the ``finally`` restore.
     """
     path: Path = getattr(ledger_mod, target)
     content = ledger_mod.outputs()[path]
     original = path.read_text(encoding="utf-8")
-    try:
-        if target == "JSON_OUT":
-            tampered = json.loads(original)
-            tampered["work_count"] = tampered["work_count"] + 1
-            path.write_text(json.dumps(tampered, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-        else:
-            path.write_text(original + "\n<!-- drift -->\n", encoding="utf-8")
-        on_disk, fresh = ledger_mod._comparable(path, content)
-        assert on_disk != fresh, f"--check is blind to drift in {path.name}"
-    finally:
-        path.write_text(original, encoding="utf-8")
+    copy = tmp_path / path.name
+    if target == "JSON_OUT":
+        # ``_comparable`` selects the JSON normalization by path identity.
+        monkeypatch.setattr(ledger_mod, "JSON_OUT", copy)
+        tampered = json.loads(original)
+        tampered["work_count"] = tampered["work_count"] + 1
+        copy.write_text(json.dumps(tampered, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    else:
+        copy.write_text(original + "\n<!-- drift -->\n", encoding="utf-8")
+    on_disk, fresh = ledger_mod._comparable(copy, content)
+    assert on_disk != fresh, f"--check is blind to drift in {path.name}"
+    assert path.read_text(encoding="utf-8") == original, "the tracked output must stay untouched"
 
 
 def test_timestamp_alone_does_not_count_as_drift() -> None:

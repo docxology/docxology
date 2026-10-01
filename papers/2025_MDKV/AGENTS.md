@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — MDKV
+# AGENTS.md — MDKV: A Multitrack Markdown Container for Structured, Portable Documents
 
-**Paper**: MDKV (2025)
+**Paper**: MDKV: A Multitrack Markdown Container for Structured, Portable Documents (2025)
 **Domain**: Computational
-**Authors**: Daniel Ari Friedman
+**Authors**: Daniel Friedman
 
 ---
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Software pipeline design, Data-driven analysis
+- Extracts methods: See paper
 - Identifies findings: Digital knowledge work increasingly demands documents that are simultaneously multilingual, multi‑audience, and multi‑channel.., Traditional single‑file Markdown struggles when the same canonical content must coexist with translations, commentary, references, code exemplars, and revision notes &ndash; each with distinct lifecycles and audiences.., This paper introduces MDKV, a simple but rigorous multitrack Markdown container that packages a document&rsquo;s canonical content and auxiliary tracks into a single, portable `.mdkv` file..
 - Maps contributions to Computational literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects MDKV to related works in the bibliography
+- Connects MDKV: A Multitrack Markdown Container for Structured, Portable Documents to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

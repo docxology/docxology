@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — EvoJump
+# AGENTS.md — EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories
 
-**Paper**: EvoJump (2025)
+**Paper**: EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories (2025)
 **Domain**: Active Inference
-**Authors**: Daniel A. Friedman
+**Authors**: Daniel Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Bayesian modeling and inference
-- Identifies findings: EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity., Analysis of The work...
+- Extracts methods: See paper
+- Identifies findings: Analysis of The work...
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects EvoJump to related works in the bibliography
+- Connects EvoJump: Stochastic Modeling of Evolutionary Ontogenetic Trajectories to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

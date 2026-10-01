@@ -4,7 +4,7 @@ name: "Mapping William Blake's Works: Evidence ledgers, source provenance, text-
 description: "A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source code and project-authored aggregate analytics fro..."
 tags: ["william-blake", "digital-humanities", "corpus-acquisition", "source-provenance", "rights-bounded-release"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls*. Computational."
+citation: "Daniel Ari Friedman (2026). *Mapping William Blake's Works: Evidence ledgers, source provenance, text-image diagnostics, and rights-bounded release controls*. Zenodo."
 doi: "10.5281/zenodo.21047573"
 ---
 
@@ -28,8 +28,7 @@ Primary methods and techniques applied in this work:
 
 Core contributions and results:
 
-- A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source
-- This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle.
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 

@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "ForagingGene"
+name: "Context-dependent expression of the foraging gene in field colonies of ants"
 description: "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati..."
 tags: ["foraging-gene", "pogonomyrmex-barbatus", "harvester-ants", "gene-expression", "circadian-rhythms", "task-allocation", "division-of-labor", "field-study", "behavioral-ecology"]
 domain: "Entomology"
-citation: "Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon (2016). *ForagingGene*. Entomology."
+citation: "Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru (2016). *Context-dependent expression of the foraging gene in field colonies of ants*. Proceedings of the Royal Society B."
 doi: "10.1098/rspb.2016.0841"
 ---
 
-# ForagingGene
+# Context-dependent expression of the foraging gene in field colonies of ants
 
-**Daniel A. Friedman, Anna Pilko, Doriane Skowronski, Krista Kerber, Noa Pinter-Wollman, Deborah M. Gordon** (2016) · Entomology
+**Krista K. Ingram, Deborah M. Gordon, Daniel A. Friedman, Michael Greene, John Kahler, Swetha Peteru** (2016) · Entomology
 
 ## Context
 
@@ -20,15 +20,13 @@ This work addresses topics in **Entomology**: foraging gene, Pogonomyrmex barbat
 
 Primary methods and techniques applied in this work:
 
-- Field observation and behavioral assays
-- Population genetics analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Previous work has found that workers of similar genotype adopt different behavioural phenotypes..
-- Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1098/rspb.2016.0841`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

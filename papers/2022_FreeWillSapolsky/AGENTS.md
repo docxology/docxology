@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — FreeWillSapolsky
+# AGENTS.md — On free will or the lack thereof (interview with Robert Sapolsky)
 
-**Paper**: FreeWillSapolsky (2022)
+**Paper**: On free will or the lack thereof (interview with Robert Sapolsky) (2022)
 **Domain**: Genetics & Biomedical
-**Authors**: Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman
+**Authors**: Robert Sapolsky, Alexandra Mikhailova, Daniel Friedman
 
 ---
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
+- Extracts methods: See paper
 - Identifies findings: In this interview, Robert Sapolsky outlines his view on Free Will and related topics.., The discussion anticipates his upcoming book Determined: The Science of Life Without Free Will.., Various topics are covered at the intersection of neuroscience with philosophy, education, and the criminal justice system..
 - Maps contributions to Genetics & Biomedical literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects FreeWillSapolsky to related works in the bibliography
+- Connects On free will or the lack thereof (interview with Robert Sapolsky) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

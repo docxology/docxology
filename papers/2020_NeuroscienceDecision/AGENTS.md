@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — NeuroscienceDecision
+# AGENTS.md — The neuroscience of decision making (interview with Timothy Hanks)
 
-**Paper**: NeuroscienceDecision (2020)
+**Paper**: The neuroscience of decision making (interview with Timothy Hanks) (2020)
 **Domain**: Genetics & Biomedical
 **Authors**: Timothy Hanks, Alexandra Mikhailova, Daniel A. Friedman
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
-- Identifies findings: In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career.., Hanks explores how ideas from computational neuroscience have hel....
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects NeuroscienceDecision to related works in the bibliography
+- Connects The neuroscience of decision making (interview with Timothy Hanks) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

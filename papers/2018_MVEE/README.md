@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎥 MVEE
+# 🎥 MVEE: A Framework for Evolutionary Studies
 
-**Daniel Ari Friedman** (2018) · *Presentation*
+**Daniel Friedman** (2018) · *Presentation*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13999298-blue)](https://doi.org/10.5281/zenodo.13999298)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Content production
-- Pedagogical design
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -36,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2018). *MVEE*. Presentation. DOI: 10.5281/zenodo.13999298. URL: https://doi.org/10.5281/zenodo.13999298.
+> Daniel Friedman (2018). *MVEE: A Framework for Evolutionary Studies*. Presentation. DOI: 10.5281/zenodo.13999298. URL: https://doi.org/10.5281/zenodo.13999298.
 
 ## Related
 

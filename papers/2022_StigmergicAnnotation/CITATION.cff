@@ -1,22 +1,22 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "StigmergicAnnotation"
+title: "From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking"
 date-released: 2022
 doi: 10.48550/arXiv.2205.06345
 url: "https://doi.org/10.48550/arXiv.2205.06345"
 authors:
-  - family-names: Tamari
-    given-names: Ronen
-  - family-names: Friedman
-    given-names: Daniel A.
+  - family-names: "Tamari"
+    given-names: "Ronen"
+  - family-names: "Friedman"
+    given-names: "Daniel"
     orcid: "https://orcid.org/0000-0001-6232-9096"
-  - family-names: Fischer
-    given-names: William
-  - family-names: Hebert
-    given-names: Lauren
-  - family-names: Shahaf
-    given-names: Dafna
+  - family-names: "Fischer"
+    given-names: "William"
+  - family-names: "Hebert"
+    given-names: "Lauren"
+  - family-names: "Shahaf"
+    given-names: "Dafna"
 identifiers:
   - type: doi
     value: "10.48550/arXiv.2205.06345"

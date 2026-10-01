@@ -4,7 +4,7 @@
 
 **Paper**: A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance (2023)
 **Domain**: Computational
-**Authors**: John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, and 18 others
+**Authors**: John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, David A. Silbersweig, Francesco Lapenta, Holly Grimm, Jeff Emmett, Joshua Shane, Karl Friston, Martin Nkafu Nkemnkia, Matthew Brown, Matthew Pirkowski, Michael Levin, Michael Zargham, Nguyen Anh Tuan, Krishnashree Achuthan, Thomas Patterson, Scott L. David, Thomas Kehler, Virginia Bleu Knight, Yasuhide Nakayama
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Software pipeline design, Data-driven analysis
-- Identifies findings: Letter on: "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance".&nbsp; v1 released on December 12, 2023.&nbsp;
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

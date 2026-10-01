@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — GreatPreset
+# AGENTS.md — The Great Preset: Remote Teams and Operational Art
 
-**Paper**: GreatPreset (2020)
+**Paper**: The Great Preset: Remote Teams and Operational Art (2020)
 **Domain**: Cognitive Security
 **Authors**: Daniel A. Friedman
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
-- Identifies findings: This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior., Through the lens of Active Inferen...
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects GreatPreset to related works in the bibliography
+- Connects The Great Preset: Remote Teams and Operational Art to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

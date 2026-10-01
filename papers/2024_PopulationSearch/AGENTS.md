@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — PopulationSearch
+# AGENTS.md — Enhancing Population-based Search with Active Inference
 
-**Paper**: PopulationSearch (2024)
+**Paper**: Enhancing Population-based Search with Active Inference (2024)
 **Domain**: Active Inference
 **Authors**: Nassim Dehouche, Daniel Friedman
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Bayesian modeling and inference
-- Identifies findings: We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation.., Demonstrated with Ant Colony Optimization (ACO) on th....
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects PopulationSearch to related works in the bibliography
+- Connects Enhancing Population-based Search with Active Inference to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

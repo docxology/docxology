@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 AntGenetics
+# 🐜 Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior
 
-**Daniel A. Friedman, Deborah M. Gordon** (2016) · *Annual Review of Neuroscience*
+**D.A. Friedman, D.M. Gordon** (2016) · *Annual Review of Neuroscience*
 
 [![DOI](https://img.shields.io/badge/DOI-10.1146%2Fannurev-neuro-070815-013927-blue)](https://doi.org/10.1146/annurev-neuro-070815-013927)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states.
-- Genetic approaches are beginning...
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Deborah M. Gordon (2016). *AntGenetics*. Annual Review of Neuroscience. DOI: 10.1146/annurev-neuro-070815-013927. URL: https://doi.org/10.1146/annurev-neuro-070815-013927.
+> D.A. Friedman, D.M. Gordon (2016). *Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior*. Annual Review of Neuroscience. DOI: 10.1146/annurev-neuro-070815-013927. URL: https://doi.org/10.1146/annurev-neuro-070815-013927.
 
 ## Related
 

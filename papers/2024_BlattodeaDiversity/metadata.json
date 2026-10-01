@@ -1,13 +1,22 @@
 {
-  "title": "BlattodeaDiversity",
+  "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea",
   "domain": "Entomology",
   "type": "Paper",
   "creators": [
     {
+      "name": "Marek J. Golian"
+    },
+    {
       "name": "Daniel A. Friedman"
     },
     {
-      "name": "et al."
+      "name": "Mark Harrison"
+    },
+    {
+      "name": "Dino P. McMahon"
+    },
+    {
+      "name": "Jan Buellesbach"
     }
   ],
   "description": "This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology. Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles. W...",

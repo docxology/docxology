@@ -4,7 +4,7 @@ name: "Registered Report Template: Preregistration, Deviations, and Claim Bounda
 description: "This document is a template, not an empirical study. It demonstrates the registered-report workflow end to end: locking a preregistration, validating its completeness, executing the registered analysis plan against deterministic demonstration data, a..."
 tags: ["registered-report", "preregistration", "replication", "deviation-ledger"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Registered Report Template: Preregistration, Deviations, and Claim Boundaries*. Computational."
+citation: "Daniel Ari Friedman (2026). *Registered Report Template: Preregistration, Deviations, and Claim Boundaries*. Zenodo."
 doi: "10.5281/zenodo.21298892"
 ---
 
@@ -20,14 +20,13 @@ This work addresses topics in **Computational**: registered report, preregistrat
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21298892`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

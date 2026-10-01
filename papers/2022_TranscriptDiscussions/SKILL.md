@@ -1,10 +1,10 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior""
+name: "Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\""
 description: "Discussion with an author of the 2021 paper &ldquo;Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior&rdquo; by Remi Tison &amp; Pierre Poirier.&nbsp; https://www.tandfonline.com/doi/abs/10.1080/1040..."
 tags: ["transcriptdiscussions"]
 domain: "Active Inference"
-citation: "Rémi Tison, Dean Tickles, Bleu Knight, Daniel Friedman (2022). *Transcript of discussions on: "Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior"*. Active Inference."
+citation: "Rémi Tison, Dean Tickles, Bleu Knight, Daniel Friedman (2022). *Transcript of discussions on: \"Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior\"*. Zenodo."
 doi: "10.5281/zenodo.7401874"
 artifact_doi: "10.5281/zenodo.7401875"
 ---
@@ -21,14 +21,13 @@ This work addresses topics in **Active Inference**: TranscriptDiscussions.
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Discussion with an author of the 2021 paper &ldquo;Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior&rdquo; by Remi Tison &amp; Pierre Poirier.&nbsp
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -57,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7401874`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

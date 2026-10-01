@@ -1,16 +1,16 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "Catechism for: "Towards Active Diffusion: A Tale of Multiple (den)Cities""
+title: "Catechism for Towards Active Diffusion"
 version: "v1"
 date-released: 2022-12-15
 doi: 10.5281/zenodo.7443847
 url: "https://doi.org/10.5281/zenodo.7443847"
 authors:
-  - family-names: Smékal
-    given-names: Jakub
-  - family-names: Friedman
-    given-names: Daniel
+  - family-names: "Smékal"
+    given-names: "Jakub"
+  - family-names: "Friedman"
+    given-names: "Daniel"
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi

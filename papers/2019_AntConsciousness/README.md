@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 AntConsciousness
+# 🐜 The ant colony as a test for scientific theories of consciousness
 
 **Daniel A. Friedman, Eirik Søvik** (2019) · *Synthese*
 
@@ -24,8 +24,7 @@
 
 ## Key Findings
 
-- Here we address the scientific study of consciousness by proposing the ant colony as a model system..
-- We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -35,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Eirik Søvik (2019). *AntConsciousness*. Synthese. DOI: 10.1007/s11229-019-02130-y. URL: https://doi.org/10.1007/s11229-019-02130-y.
+> Daniel A. Friedman, Eirik Søvik (2019). *The ant colony as a test for scientific theories of consciousness*. Synthese. DOI: 10.1007/s11229-019-02130-y. URL: https://doi.org/10.1007/s11229-019-02130-y.
 
 ## Related
 

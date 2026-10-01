@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — ActiveInferants
+# AGENTS.md — Active Inferants: An Active Inference Framework for Ant Colony Behavior
 
-**Paper**: ActiveInferants (2021)
+**Paper**: Active Inferants: An Active Inference Framework for Ant Colony Behavior (2021)
 **Domain**: Entomology
-**Authors**: Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant
+**Authors**: Daniel Ari Friedman, Alec Tschantz, Maxwell J. D. Ramstead, Karl Friston, Axel Constant
 
 ---
 
@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Active inference agent-based simulation, Markov decision process modeling of foraging
-- Identifies findings: In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments.., Active inference is a multiscale approach to behavi....
+- Identifies findings: See paper
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects ActiveInferants to related works in the bibliography
+- Connects Active Inferants: An Active Inference Framework for Ant Colony Behavior to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — AIAccountability
+# AGENTS.md — Comments on AI Accountability Policy to NTIA
 
-**Paper**: AIAccountability (2023)
+**Paper**: Comments on AI Accountability Policy to NTIA (2023)
 **Domain**: Cognitive Security
-**Authors**: Scott David, R.J. Cordes, Daniel A. Friedman (UW APL IRSIRI, AII, PFH, COGSEC)
+**Authors**: Scott David, Jumana Abu-Ghazaleh, Daniel Friedman, RJ Cordes
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
-- Identifies findings: Comments Submitted by University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC)  to the National Telecommunications and Information Administrat, NTIA-2023-0005-0001..
+- Extracts methods: See paper
+- Identifies findings: Comments Submitted by University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC)  to the National Telecommunications and Information Administrat
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects AIAccountability to related works in the bibliography
+- Connects Comments on AI Accountability Policy to NTIA to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

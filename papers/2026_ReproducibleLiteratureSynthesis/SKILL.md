@@ -4,7 +4,7 @@ name: "Reproducible Literature Synthesis with infrastructure/search and infrastr
 description: "This paper documents template_search_project, the literature-search exemplar shipped with the Research Project Template (https://github.com/docxology/template). The project demonstrates two configurable, reproducible pipelines sharing the same config..."
 tags: ["literature-search", "automated-reference-management", "bibtex", "reproducible-research", "local-llm-synthesis"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference*. Computational."
+citation: "Daniel Ari Friedman (2026). *Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference*. Zenodo."
 doi: "10.5281/zenodo.21298894"
 ---
 
@@ -20,14 +20,13 @@ This work addresses topics in **Computational**: literature search, automated re
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21298894`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

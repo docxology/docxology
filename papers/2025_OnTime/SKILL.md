@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "OnTime"
+name: "On Time"
 description: "On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and..."
 tags: ["temporal-dynamics", "active-inference", "synchronization", "collective-behavior", "temporal-coordination"]
 domain: "Art & Synergetics"
-citation: "Daniel A. Friedman (2025). *OnTime*. Art & Synergetics."
+citation: "Daniel Ari Friedman (2025). *On Time*. Zenodo."
 doi: "10.5281/zenodo.15168382"
 ---
 
-# OnTime
+# On Time
 
-**Daniel A. Friedman** (2025) · Art & Synergetics
+**Daniel Ari Friedman** (2025) · Art & Synergetics
 
 ## Context
 
@@ -20,14 +20,13 @@ This work addresses topics in **Art & Synergetics**: temporal dynamics, Active I
 
 Primary methods and techniques applied in this work:
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.15168382`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

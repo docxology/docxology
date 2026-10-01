@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ NarrativeInformationMgmt
+# 🛡️ Narrative Information Management
 
-**Richard J. Cordes, Shaun Applegate-Swanson, Daniel A. Friedman, Virginia Bleu Knight, Alexandra Mikhailova** (2021) · *Zenodo*
+**Richard J. Cordes, Shaun Applegate-Swanson, Daniel Ari Friedman, Virginia Bleu Knight, Alexandra Mikhailova** (2021) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.5565577-blue)](https://doi.org/10.5281/zenodo.5565577)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -37,7 +36,7 @@
 
 ## Citation
 
-> Richard J. Cordes, Shaun Applegate-Swanson, Daniel A. Friedman, Virginia Bleu Knight, Alexandra Mikhailova (2021). *NarrativeInformationMgmt*. Zenodo. DOI: 10.5281/zenodo.5565577. URL: https://doi.org/10.5281/zenodo.5565577.
+> Richard J. Cordes, Shaun Applegate-Swanson, Daniel Ari Friedman, Virginia Bleu Knight, Alexandra Mikhailova (2021). *Narrative Information Management*. Zenodo. DOI: 10.5281/zenodo.5565577. URL: https://doi.org/10.5281/zenodo.5565577.
 
 ## Related
 

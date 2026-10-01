@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Transcripts of discussions of the 2022 preprint "A Worked Example of the Bayesian Mechanics of Classical Objects" by Dalton A R Sakthivadivel. https://arxiv.org/abs/2206.12996 Session
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

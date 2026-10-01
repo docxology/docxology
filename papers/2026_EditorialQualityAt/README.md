@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- This paper documents template_prose_project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template).
-- It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, e
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

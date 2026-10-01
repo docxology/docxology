@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "DistributedScience"
+name: "Distributed Science — The Scientific Process as Multi-Scale Active Inference"
 description: "The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics. We formalize the scientific process as multi-scale Active Inference, where individual rese..."
 tags: ["distributed-science", "multi-scale-active-inference", "scientific-process", "free-energy-principle", "meta-science", "collective-intelligence", "cultural-evolution", "distributed-cognition"]
 domain: "Active Inference"
-citation: "Francesco Balzan, John Campbell, Karl Friston, Maxwell J.D. Ramstead, Daniel Friedman, Axel Constant (2023). *DistributedScience*. Active Inference."
+citation: "Francesco Balzan, John Campbell, Karl Friston, Maxwell James Ramstead, Daniel Friedman, Axel Constant (2023). *Distributed Science — The Scientific Process as Multi-Scale Active Inference*. OSF."
 doi: "10.31219/osf.io/dnw5k"
 ---
 
-# DistributedScience
+# Distributed Science — The Scientific Process as Multi-Scale Active Inference
 
-**Francesco Balzan, John Campbell, Karl Friston, Maxwell J.D. Ramstead, Daniel Friedman, Axel Constant** (2023) · Active Inference
+**Francesco Balzan, John Campbell, Karl Friston, Maxwell James Ramstead, Daniel Friedman, Axel Constant** (2023) · Active Inference
 
 ## Context
 
@@ -20,15 +20,13 @@ This work addresses topics in **Active Inference**: distributed science, multi-s
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics..
-- We formalize the scientific process as multi-scale Active Inference, where individual rese....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.31219/osf.io/dnw5k`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

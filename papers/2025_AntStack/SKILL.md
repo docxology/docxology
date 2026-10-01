@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "AntStack"
+name: "The Ant Stack"
 description: "AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patte..."
 tags: ["antstack", "multilevel-modeling", "ant-colonies", "social-insects", "multiscale-biology", "colony-organization"]
 domain: "Entomology"
-citation: "Daniel A. Friedman (2025). *AntStack*. Entomology."
+citation: "Daniel Ari Friedman (2025). *The Ant Stack*. Zenodo."
 doi: "10.5281/zenodo.16782756"
 ---
 
-# AntStack
+# The Ant Stack
 
-**Daniel A. Friedman** (2025) · Entomology
+**Daniel Ari Friedman** (2025) · Entomology
 
 ## Context
 
@@ -20,14 +20,13 @@ This work addresses topics in **Entomology**: AntStack, multilevel modeling, ant
 
 Primary methods and techniques applied in this work:
 
-- Field observation and behavioral assays
-- Population genetics analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patte
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.16782756`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

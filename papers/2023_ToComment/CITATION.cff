@@ -1,18 +1,16 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse"
+title: "To comment or not to comment"
 version: "v1.1"
 date-released: "2022-06-16"
 doi: 10.1016/j.plrev.2023.06.002
 url: "https://doi.org/10.1016/j.plrev.2023.06.002"
 authors:
-  - family-names: Mascarenhas
-    given-names: Mridula
-  - family-names: Cordes
-    given-names: Richard J.
-  - family-names: Friedman
-    given-names: Daniel Ari
+  - family-names: "Tickles"
+    given-names: "Dean"
+  - family-names: "Friedman"
+    given-names: "Daniel"
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi

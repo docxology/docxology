@@ -1,15 +1,15 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "PPPiP"
+title: "Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement"
 date-released: 2018
 doi: 10.3390/arts7030039
 url: "https://doi.org/10.3390/arts7030039"
 authors:
-  - family-names: Mikhailova
-    given-names: Alexandra
-  - family-names: Friedman
-    given-names: Daniel A.
+  - family-names: "Mikhailova"
+    given-names: "Alexandra"
+  - family-names: "Friedman"
+    given-names: "Daniel A."
     orcid: "https://orcid.org/0000-0001-6232-9096"
 identifiers:
   - type: doi

@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — ArgentineAnt
+# AGENTS.md — Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations
 
-**Paper**: ArgentineAnt (2018)
+**Paper**: Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations (2018)
 **Domain**: Entomology
-**Authors**: Daniel A. Friedman, Deborah M. Gordon
+**Authors**: Benjamin P. Burford, Gail Lee, Daniel A. Friedman, Esmé Brachmann, Rebia Khan, Dylan J. MacArthur-Waltz, Aidan D. McCarty, Deborah M. Gordon
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis
-- Identifies findings: Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers.., Here we examine the relationship between the....
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects ArgentineAnt to related works in the bibliography
+- Connects Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 InfiniteImaginarium
+# 🎨 Way Finding in the Infinite Imaginarium
 
 **Daniel Ari Friedman** (2024) · *Zenodo*
 
@@ -18,12 +18,10 @@
 
 ## Methods
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration.
 - Analysis of The work...
 
 ## Artifacts
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2024). *InfiniteImaginarium*. Zenodo. DOI: 10.5281/zenodo.10601081. URL: https://doi.org/10.5281/zenodo.10601081.
+> Daniel Ari Friedman (2024). *Way Finding in the Infinite Imaginarium*. Zenodo. DOI: 10.5281/zenodo.10601081. URL: https://doi.org/10.5281/zenodo.10601081.
 
 ## Related
 

@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "DigitalTwins"
+name: "Comments on National Digital Twins R&D Strategic Plan"
 description: "This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively min..."
 tags: ["digital-twins", "active-inference", "generative-models", "predictive-processing", "cyber-physical-systems", "simulation"]
 domain: "Cognitive Security"
-citation: "Daniel A. Friedman (2024). *DigitalTwins*. Cognitive Security."
+citation: "RJ Cordes (2024). *Comments on National Digital Twins R&D Strategic Plan*. Zenodo."
 doi: "10.5281/zenodo.13273681"
 ---
 
-# DigitalTwins
+# Comments on National Digital Twins R&D Strategic Plan
 
-**Daniel A. Friedman** (2024) · Cognitive Security
+**RJ Cordes** (2024) · Cognitive Security
 
 ## Context
 
@@ -20,14 +20,13 @@ This work addresses topics in **Cognitive Security**: digital twins, Active Infe
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively min
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.13273681`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

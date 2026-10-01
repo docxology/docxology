@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ NarrativeEcosystems
+# 🛡️ Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier
 
 **Richard J. Cordes, Daniel A. Friedman (editors); Shaun Applegate-Swanson, V. Bleu Knight, Alexandra Mikhailova (chapter authors)** (2021) · *COGSEC.org*
 
@@ -16,8 +16,7 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -31,7 +30,7 @@
 
 ## Citation
 
-> Richard J. Cordes, Daniel A. Friedman (editors); Shaun Applegate-Swanson, V. Bleu Knight, Alexandra Mikhailova (chapter authors) (2021). *NarrativeEcosystems*. COGSEC.org.
+> Richard J. Cordes, Daniel A. Friedman (editors); Shaun Applegate-Swanson, V. Bleu Knight, Alexandra Mikhailova (chapter authors) (2021). *Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier*. COGSEC.org.
 
 ## Related
 

@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 💻 Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation
+# 💻 Sortition Upstream of NTQR
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- How should you choose the judges, jurors, or reviewers who form a panel — and does that upstream choice change how well you can evaluate them without an answer key?
-- A panel can be selected many ways — by competence, by a representative lottery (sortition), by ideological bloc, or at random — and, separately, its noisy judgments can be evaluated blind: given the a
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -37,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation*. Zenodo. DOI: 10.5281/zenodo.21083779. URL: https://doi.org/10.5281/zenodo.21083779.
+> Daniel Ari Friedman (2026). *Sortition Upstream of NTQR*. Zenodo. DOI: 10.5281/zenodo.21083779. URL: https://doi.org/10.5281/zenodo.21083779.
 
 ## Related
 

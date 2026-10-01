@@ -4,7 +4,7 @@ name: "PROJECT BOND — The Special-Agent Operations Compendium"
 description: "PROJECT BOND is a fleet of 33 independent software packages — 27 film packages, one per James Bond motion picture, plus 6 mission-infrastructure packages (a Q-branch utilities layer, a frozen mission protocol, mission control, an orchestrator, a fron..."
 tags: ["software-suite", "special-agent-operations", "james-bond", "reproducible-research", "mission-protocol", "compendium"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *PROJECT BOND — The Special-Agent Operations Compendium*. Computational."
+citation: "Daniel Ari Friedman (2026). *PROJECT BOND — The Special-Agent Operations Compendium*. Zenodo."
 doi: "10.5281/zenodo.21843592"
 ---
 
@@ -20,14 +20,13 @@ This work addresses topics in **Computational**: software suite, special agent o
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21843592`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

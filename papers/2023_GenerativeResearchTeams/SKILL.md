@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "GenerativeResearchTeams"
+name: "Generative Research Teams: Active Inference Compositions for Research and Meta-Science"
 description: "The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research top..."
 tags: ["generative-research-team", "active-inference", "generative-model", "cognitive-modeling", "llms", "autonomous-agents", "open-science", "decentralized-science", "active-blockference", "meta-prompting"]
 domain: "Active Inference"
-citation: "Daniel Friedman, Jakub Smékal (2023). *GenerativeResearchTeams*. Active Inference."
+citation: "Daniel Friedman, Jakub Smékal (2023). *Generative Research Teams: Active Inference Compositions for Research and Meta-Science*. Zenodo."
 doi: "10.5281/zenodo.8164666"
 ---
 
-# GenerativeResearchTeams
+# Generative Research Teams: Active Inference Compositions for Research and Meta-Science
 
 **Daniel Friedman, Jakub Smékal** (2023) · Active Inference
 
@@ -20,14 +20,13 @@ This work addresses topics in **Active Inference**: Generative Research Team, Ac
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research top
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.8164666`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

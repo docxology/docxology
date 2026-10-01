@@ -48,7 +48,7 @@ ER  -
 TY  - JOUR
 AU  - Friedman, Daniel Ari
 PY  - 2026
-TI  - Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)
+TI  - Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)
 T2  - Zenodo
 DO  - 10.5281/zenodo.18364118
 UR  - https://doi.org/10.5281/zenodo.18364118
@@ -447,20 +447,6 @@ KW  - Paper
 N1  - Catalog row 29; docs: papers/2024_OntologySUMO/
 ER  -
 
-TY  - CONF
-AU  - John Clippinger
-AU  - Andrew Pashea
-AU  - Friedman, Daniel
-PY  - 2024
-TI  - BioFirm Development at Applied Active Inference Symposium 2024
-T2  - Presentation
-DO  - 10.5281/zenodo.14861595
-UR  - https://doi.org/10.5281/zenodo.14861595
-KW  - Media & Teaching
-KW  - Presentation
-N1  - Catalog row 30; docs: papers/2024_BioFirm/
-ER  -
-
 TY  - JOUR
 AU  - Mascarenhas, Mridula
 AU  - Friedman, Daniel Ari
@@ -482,7 +468,7 @@ AU  - Harrison, Mark
 AU  - McMahon, Dino P.
 AU  - Buellesbach, Jan
 PY  - 2024
-TI  - Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea
+TI  - Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea
 T2  - Ecology & Evolution
 DO  - 10.1002/ece3.70063
 UR  - https://doi.org/10.1002/ece3.70063
@@ -705,7 +691,7 @@ ER  -
 
 TY  - JOUR
 AU  - Saund, Eric
-AU  - Ari Friedman, Daniel
+AU  - Friedman, Daniel Ari
 PY  - 2023
 TI  - A single-pheromone model accounts for empirical patterns of ant colony foraging
 T2  - Cognitive Systems Research
@@ -1040,7 +1026,7 @@ AU  - Fischer, William
 AU  - Hebert, Lauren
 AU  - Shahaf, Dafna
 PY  - 2022
-TI  - From Users to (Sense)Makers: Stigmergic Social Annotation
+TI  - From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking
 T2  - Hypertext '22
 DO  - 10.48550/arXiv.2205.06345
 UR  - https://doi.org/10.48550/arXiv.2205.06345
@@ -1400,7 +1386,7 @@ AU  - Friedman, Daniel A.
 AU  - Greene, Michael J.
 AU  - Gordon, Deborah M.
 PY  - 2019
-TI  - The physiology of forager hydration and variation among harvester ant colonies
+TI  - The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior
 T2  - Scientific Reports
 DO  - 10.1038/s41598-019-41586-3
 UR  - https://doi.org/10.1038/s41598-019-41586-3
@@ -1476,7 +1462,7 @@ AU  - Parker, Jacqueline W.
 AU  - Hirsh, Jay
 AU  - Gordon, Deborah M.
 PY  - 2018
-TI  - The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants
+TI  - The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants
 T2  - iScience
 DO  - 10.1016/j.isci.2018.09.001
 UR  - https://doi.org/10.1016/j.isci.2018.09.001
@@ -1547,7 +1533,7 @@ AU  - Friedman, Daniel A.
 AU  - Tait, Lauren
 AU  - Vaughan, Andrew T. M.
 PY  - 2016
-TI  - Influence of Nuclear Structure on formation of radiation-induced lethal lesions
+TI  - Influence of nuclear structure on the formation of radiation-induced lethal lesions
 T2  - Int. J. Radiation Biology
 DO  - 10.3109/09553002.2016.1144941
 UR  - https://doi.org/10.3109/09553002.2016.1144941
@@ -1575,7 +1561,7 @@ AU  - Kallick, Charles A.
 AU  - Friedman, Daniel A.
 AU  - Nyindo, Mramba B.A.
 PY  - 2015
-TI  - Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?
+TI  - Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?
 T2  - Medical Hypotheses
 DO  - 10.1016/j.mehy.2015.09.015
 UR  - https://doi.org/10.1016/j.mehy.2015.09.015
@@ -1592,7 +1578,7 @@ AU  - Friedman, Daniel
 AU  - Chiu, Joanna C.
 AU  - Johnson, Brian R.
 PY  - 2015
-TI  - Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees
+TI  - Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees
 T2  - Molecular Biology & Evolution
 DO  - 10.1093/molbev/msu292
 UR  - https://doi.org/10.1093/molbev/msu292
@@ -1715,7 +1701,7 @@ N1  - Catalog row 117; docs: papers/2026_BiologyTextbook/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Policy Entanglement in Active Inference
 T2  - Zenodo
@@ -1727,7 +1713,7 @@ N1  - Catalog row 119; docs: papers/2026_PolicyEntanglementActive/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task
 T2  - Zenodo
@@ -1739,7 +1725,7 @@ N1  - Catalog row 120; docs: papers/2026_BoundedAutoResearchTiny/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Convergence Analysis of Gradient Descent Optimization
 T2  - Zenodo
@@ -1751,7 +1737,7 @@ N1  - Catalog row 121; docs: papers/2026_ConvergenceAnalysisGradient/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Editorial Quality at Scale: A Reproducible Prose-Review Pipeline
 T2  - Zenodo
@@ -1763,7 +1749,7 @@ N1  - Catalog row 122; docs: papers/2026_EditorialQualityAt/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - A template/ approach to Reproducible Generative Research
 T2  - Zenodo
@@ -1775,7 +1761,7 @@ N1  - Catalog row 123; docs: papers/2026_TemplateApproachReproducible/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Active Inference Multi-Track Exemplar
 T2  - Zenodo
@@ -1800,8 +1786,8 @@ N1  - Catalog row 125; docs: papers/2026_BeeStack/
 ER  -
 
 TY  - JOUR
-AU  - Tucker Chambers
-AU  - Daniel A. Friedman
+AU  - Chambers, Tucker
+AU  - Friedman, Daniel A.
 PY  - 2026
 TI  - When do bugs see (infra)red?
 T2  - Zenodo
@@ -1813,7 +1799,7 @@ N1  - Catalog row 126; docs: papers/2026_WhenDoBugs/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Self-Improvement Agent Harness: A Deterministic SIA Exemplar
 T2  - Zenodo
@@ -1826,13 +1812,13 @@ ER  -
 
 TY  - CONF
 AU  - John Clippinger
-AU  - Andrew Pashea
+AU  - Pashea, Andrew
 AU  - Friedman, Daniel
 PY  - 2025
 TI  - Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024
 T2  - Zenodo
-DO  - 10.5281/zenodo.14861596
-UR  - https://doi.org/10.5281/zenodo.14861596
+DO  - 10.5281/zenodo.14861595
+UR  - https://doi.org/10.5281/zenodo.14861595
 KW  - Active Inference
 KW  - Presentation
 N1  - Catalog row 128; docs: papers/2025_BiofirmDevelopmentWith/
@@ -2159,7 +2145,7 @@ N1  - Catalog row 149; docs: papers/2020_InfiniteGamesInfinite/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - The Music Never Stopped: A Grateful Data Compendium with a Category-Theoretic Interpretation
 T2  - Zenodo
@@ -2171,7 +2157,7 @@ N1  - Catalog row 150; docs: papers/2026_MusicNeverStopped/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - A Deterministic Testbed for Self-Organizing Agent-Team Coordination
 T2  - Zenodo
@@ -2183,7 +2169,7 @@ N1  - Catalog row 151; docs: papers/2026_DeterministicTestbedSelf/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Recovering LLM-Persona Accuracies from Unlabeled Votes
 T2  - Zenodo
@@ -2195,7 +2181,7 @@ N1  - Catalog row 152; docs: papers/2026_RecoveringLLMPersona/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - The Triplicate: A Data-Driven Large-Format Newspaper Layout Engine
 T2  - Zenodo
@@ -2207,7 +2193,7 @@ N1  - Catalog row 153; docs: papers/2026_Triplicate/
 ER  -
 
 TY  - BOOK
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - The Template Textbook
 T2  - Zenodo
@@ -2427,7 +2413,7 @@ N1  - Catalog row 169; docs: papers/2026_COGANT/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - AGEINT: Agentic Intelligence
 T2  - Zenodo
@@ -2439,7 +2425,7 @@ N1  - Catalog row 170; docs: papers/2026_AGEINT/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - On-Policy Distillation as Active Inference in Finite Variational Models
 T2  - Zenodo
@@ -2451,7 +2437,7 @@ N1  - Catalog row 171; docs: papers/2026_PolicyDistillationAs/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Template Madlib: Deterministic Token Injection for Conditional IMRAD Manuscripts
 T2  - Zenodo
@@ -2463,7 +2449,7 @@ N1  - Catalog row 172; docs: papers/2026_TemplateMadlib/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - California Public Records: A Technical and Legal Reference for the Post-AB 473 Era
 T2  - Zenodo
@@ -2499,7 +2485,7 @@ N1  - Catalog row 175; docs: papers/2026_RealizingEmptiness/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - A Living Meta-Analysis of the Modafinil Literature
 T2  - Zenodo
@@ -2511,7 +2497,7 @@ N1  - Catalog row 176; docs: papers/2026_LivingMetaAnalysis/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition
 T2  - Zenodo
@@ -2523,7 +2509,7 @@ N1  - Catalog row 177; docs: papers/2026_RefinementGold/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 AU  - Tucker Cahill Chambers
 PY  - 2026
 TI  - AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference
@@ -2548,7 +2534,7 @@ N1  - Catalog row 179; docs: papers/2026_MappingWilliamBlake/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Sortition Upstream of NTQR
 T2  - Zenodo
@@ -2560,7 +2546,7 @@ N1  - Catalog row 180; docs: papers/2026_SortitionUpstreamNTQR/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Exploratory Data Analysis: A Reproducible Notebook Template
 T2  - Zenodo
@@ -2572,7 +2558,7 @@ N1  - Catalog row 181; docs: papers/2026_ExploratoryDataAnalysis/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - A Domain Language for Specifying Controlled Methods
 T2  - Zenodo
@@ -2584,7 +2570,7 @@ N1  - Catalog row 182; docs: papers/2026_DomainLanguageSpecifying/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Entomological Law: A Field Map of Insects as Evidence, Threat, Property, Product, Patient, and Weapon
 T2  - Zenodo
@@ -2596,7 +2582,7 @@ N1  - Catalog row 183; docs: papers/2026_EntomologicalLaw/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - The Shape Between: A Full-Page Illustrated Storybook Template
 T2  - Zenodo
@@ -2608,7 +2594,7 @@ N1  - Catalog row 184; docs: papers/2026_ShapeBetween/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Autopoietic Project Generation
 T2  - Zenodo
@@ -2620,7 +2606,7 @@ N1  - Catalog row 185; docs: papers/2026_AutopoieticProjectGeneration/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - template_pitch_deck: Reproducible, Validated Pitch-Deck Generation
 T2  - Zenodo
@@ -2632,7 +2618,7 @@ N1  - Catalog row 186; docs: papers/2026_TemplatePitchDeck/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Reproducible Literature Synthesis with infrastructure/search and infrastructure/reference
 T2  - Zenodo
@@ -2644,7 +2630,7 @@ N1  - Catalog row 187; docs: papers/2026_ReproducibleLiteratureSynthesis/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Registered Report Template: Preregistration, Deviations, and Claim Boundaries
 T2  - Zenodo
@@ -2656,7 +2642,7 @@ N1  - Catalog row 188; docs: papers/2026_RegisteredReportTemplate/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Redacted Report Template: Disclosure Control and Release Audit
 T2  - Zenodo
@@ -2668,7 +2654,7 @@ N1  - Catalog row 189; docs: papers/2026_RedactedReportTemplate/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Pools, Rules, and Tools: A Template-Integrated Resource Architecture
 T2  - Zenodo
@@ -2680,7 +2666,7 @@ N1  - Catalog row 190; docs: papers/2026_PoolsRulesTools/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Illegal States, Mostly Unrepresentable
 T2  - Zenodo
@@ -2692,7 +2678,7 @@ N1  - Catalog row 191; docs: papers/2026_IllegalStatesMostly/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Data Descriptor Template: Schema, Provenance, and Release Readiness
 T2  - Zenodo
@@ -2704,7 +2690,7 @@ N1  - Catalog row 192; docs: papers/2026_DataDescriptorTemplate/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Prior Cognitive Art
 T2  - Zenodo
@@ -2716,7 +2702,7 @@ N1  - Catalog row 194; docs: papers/2026_PriorCognitiveArt/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Active FractalRabbit: A Synthetic Benchmark for Belief Filtering Under Sparse Waypoint Observations
 T2  - Zenodo
@@ -2728,7 +2714,7 @@ N1  - Catalog row 195; docs: papers/2026_ActiveFractalRabbit/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing
 T2  - Zenodo
@@ -2740,7 +2726,7 @@ N1  - Catalog row 196; docs: papers/2026_FourfoldVision/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - DuckRabbit: Typed Multimodal Illusion Generator
 T2  - Zenodo
@@ -2848,7 +2834,7 @@ N1  - Catalog row 205; docs: papers/2026_BlackLine/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Codomyrmex: An Artificial Ecology for Agentic Software Development
 T2  - Zenodo
@@ -2872,7 +2858,7 @@ N1  - Catalog row 207; docs: papers/2026_THALIA/
 ER  -
 
 TY  - JOUR
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - PROJECT BOND — The Special-Agent Operations Compendium
 T2  - Zenodo
@@ -2884,10 +2870,10 @@ N1  - Catalog row 208; docs: papers/2026_PROJECTBONDSpecial/
 ER  -
 
 TY  - JOUR
-AU  - Siddhant Shrivastava
-AU  - Evelyn C. Goh
+AU  - Shrivastava, Siddhant
+AU  - Goh, Evelyn C.
 AU  - Alexandra Mikhailova
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - DigiPPPiP: Digital Partner Pen Play in Parallel
 T2  - Zenodo
@@ -2959,7 +2945,7 @@ N1  - Catalog row 214; docs: papers/2026_CognitiveIntegrityFramework2/
 ER  -
 
 TY  - GEN
-AU  - Daniel Ari Friedman
+AU  - Friedman, Daniel Ari
 PY  - 2026
 TI  - Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)
 T2  - Zenodo

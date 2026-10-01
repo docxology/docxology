@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ DigitalTwins
+# 🛡️ Comments on National Digital Twins R&D Strategic Plan
 
-**Daniel A. Friedman** (2024) · *Zenodo*
+**RJ Cordes** (2024) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13273681-blue)](https://doi.org/10.5281/zenodo.13273681)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively min
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -35,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2024). *DigitalTwins*. Zenodo. DOI: 10.5281/zenodo.13273681. URL: https://doi.org/10.5281/zenodo.13273681.
+> RJ Cordes (2024). *Comments on National Digital Twins R&D Strategic Plan*. Zenodo. DOI: 10.5281/zenodo.13273681. URL: https://doi.org/10.5281/zenodo.13273681.
 
 ## Related
 

@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 Symergetics
+# 🎨 Symergetics: Symbolic Synergetics for Rational Arithmetic
 
-**Daniel Ari Friedman** (2025) · *Zenodo*
+**Daniel Friedman** (2025) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17114389-blue)](https://doi.org/10.5281/zenodo.17114389)
 
@@ -18,12 +18,10 @@
 
 ## Methods
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics.
 - Analysis of The package implemen...
 
 ## Artifacts
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2025). *Symergetics*. Zenodo. DOI: 10.5281/zenodo.17114389. URL: https://doi.org/10.5281/zenodo.17114389.
+> Daniel Friedman (2025). *Symergetics: Symbolic Synergetics for Rational Arithmetic*. Zenodo. DOI: 10.5281/zenodo.17114389. URL: https://doi.org/10.5281/zenodo.17114389.
 
 ## Related
 

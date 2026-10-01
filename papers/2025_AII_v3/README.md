@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🌍 AII_v3
+# 🌍 The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)
 
-**Active Inference Institute** (2025) · *Zenodo*
+**Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker** (2025) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17982447-blue)](https://doi.org/10.5281/zenodo.17982447)
 
@@ -18,12 +18,10 @@
 
 ## Methods
 
-- Program coordination
-- Community governance design
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement.
 - Analysis of Covers the institu...
 
 ## Artifacts
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> Active Inference Institute (2025). *AII_v3*. Zenodo. DOI: 10.5281/zenodo.17982447. URL: https://doi.org/10.5281/zenodo.17982447.
+> Active Inference Institute, Alex Vyatkin, Alexandra Mikhailova, Andrea Hiott, Andrew Pashea, Ben Elers, Bert Berkers, Bleu Knight, Chris Fields, Dan Whittet, Daniel Friedman, Déan Ticklẽs, Fraser Paterson, Gareth Stubbs, Holly Grimm, Jakub Smekal, Jeremy Cooper, John Boik, Libor Burian, Mahault Albarracin, Maria Luiza Iennaco, Matthew Brown, Mick Thacker, Peter Gilli, Rafael Kaufmann, RJ Cordes, Ryan Henry, Sandeep Ramesh, Scott David, Sebastian Alvarado, Zach Baker (2025). *The Active Inference Institute & Active Inference Ecosystem (v3, 2025 snapshot)*. Zenodo. DOI: 10.5281/zenodo.17982447. URL: https://doi.org/10.5281/zenodo.17982447.
 
 ## Related
 

@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Transcript of a three-session series of discussions of the paper "Canonical neural networks perform active inference" by Takuya Isomura, Hideaki Shimazaki & Karl J.
-- Friston. https://www.nature.com/articles/s42003-021-02994-2 LS #051.0: Background and context.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

@@ -1,5 +1,5 @@
 {
-  "title": "NuclearStructure",
+  "title": "Influence of nuclear structure on the formation of radiation-induced lethal lesions",
   "domain": "Genetics & Biomedical",
   "type": "Paper",
   "creators": [
@@ -7,7 +7,10 @@
       "name": "Daniel A. Friedman"
     },
     {
-      "name": "Daniel F. Pilch"
+      "name": "Lauren Tait"
+    },
+    {
+      "name": "Andrew T. M. Vaughan"
     }
   ],
   "description": "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability. Chromosome conformation capture (3C) tec...",

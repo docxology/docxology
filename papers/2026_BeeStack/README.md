@@ -2,7 +2,7 @@
 
 # 💻 BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation
 
-**Daniel Ari Friedman** (2026) · *Zenodo*
+**Daniel Ari Friedman, Tucker Cahill Chambers** (2026) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20420556-blue)](https://doi.org/10.5281/zenodo.20420556)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche).
-- It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted num
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -37,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation*. Zenodo. DOI: 10.5281/zenodo.20420556. URL: https://doi.org/10.5281/zenodo.20420556.
+> Daniel Ari Friedman, Tucker Cahill Chambers (2026). *BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation*. Zenodo. DOI: 10.5281/zenodo.20420556. URL: https://doi.org/10.5281/zenodo.20420556.
 
 ## Related
 

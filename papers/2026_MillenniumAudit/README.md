@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 📄 MillenniumAudit
+# 📄 Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
@@ -41,7 +41,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *MillenniumAudit*. Zenodo. DOI: 10.5281/zenodo.22243472. URL: https://doi.org/10.5281/zenodo.22243472.
+> Daniel Ari Friedman (2026). *Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)*. Zenodo. DOI: 10.5281/zenodo.22243472. URL: https://doi.org/10.5281/zenodo.22243472.
 
 ## Related
 

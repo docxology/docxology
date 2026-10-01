@@ -4,13 +4,13 @@ name: "A Living Meta-Analysis Architecture for Active Inference: Assertion Extra
 description: "Computational living meta-analysis of the Active Inference and Free Energy Principle literature: multi-source retrieval, nanopublication extraction, and hypothesis scoring architecture."
 tags: ["active-inference", "meta-analysis", "nanopublications", "assertion-extraction", "citation-weighted-scoring", "literature-review", "free-energy-principle", "computational-bibliography", "open-science"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman & J. Dietz (2026). *A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring*. Active Inference."
+citation: "Daniel Ari Friedman, Joel Dietz (2026). *A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring*. Active Inference Journal."
 doi: "10.5281/zenodo.19461933"
 ---
 
 # A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring
 
-**Daniel Ari Friedman & J. Dietz** (2026) · Active Inference
+**Daniel Ari Friedman, Joel Dietz** (2026) · Active Inference
 
 ## Context
 
@@ -20,14 +20,13 @@ This work addresses topics in **Active Inference**: Active Inference, meta-analy
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Computational living meta-analysis of the Active Inference and Free Energy Principle literature: multi-source retrieval, nanopublication extraction, and hypothesis scoring architecture.
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.19461933`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

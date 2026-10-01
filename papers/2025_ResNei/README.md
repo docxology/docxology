@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 💻 ResNei
+# 💻 ResNei: Solution Design Document
 
-**Janna Lumiruusu, Daniel Friedman, Vladimir Baulin, Andrew Pashea, Shagor Rahman** (2025) · *Zenodo*
+**Janna Lumiruusu, Daniel Friedman, Shagor Rahman, Vladimir Baulin, Andrew Pashea** (2025) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15389682-blue)](https://doi.org/10.5281/zenodo.15389682)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -36,7 +35,7 @@
 
 ## Citation
 
-> Janna Lumiruusu, Daniel Friedman, Vladimir Baulin, Andrew Pashea, Shagor Rahman (2025). *ResNei*. Zenodo. DOI: 10.5281/zenodo.15389682. URL: https://doi.org/10.5281/zenodo.15389682.
+> Janna Lumiruusu, Daniel Friedman, Shagor Rahman, Vladimir Baulin, Andrew Pashea (2025). *ResNei: Solution Design Document*. Zenodo. DOI: 10.5281/zenodo.15389682. URL: https://doi.org/10.5281/zenodo.15389682.
 
 ## Related
 

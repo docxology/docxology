@@ -8,11 +8,14 @@ therefore expose the canonical DOI in its top-level ``doi`` and ``url``
 fields, while retaining a distinct artifact DOI only as explicitly labelled
 secondary identifier metadata.
 
-The synchronizer deliberately owns only these DOI-role fields. Existing
-non-DOI CFF content, including historical GitHub-release identifiers, remains
-untouched. That avoids replacing hand-curated provenance with an incomplete
-metadata projection while still making the citation identity deterministic and
-checkable.
+The synchronizer owns these DOI-role fields plus, for works whose bibliography
+row carries a registry-verified Authors cell, the top-level ``title`` and the
+``authors`` list: ``pages/BIBLIOGRAPHY.md`` is the citation source of truth,
+and legacy hand-seeded folder metadata once published invented co-author lists
+and placeholder titles here. Every other CFF field, including historical
+GitHub-release identifiers, remains untouched. That avoids replacing
+hand-curated provenance with an incomplete metadata projection while still
+making the citation identity deterministic and checkable.
 
 Usage:
     uv run python3 code/orchestrators/generate_citation_cff.py
@@ -39,7 +42,10 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 PAPERS_DIR = REPO_ROOT / "papers"
 ORCID = "https://orcid.org/0000-0001-6232-9096"
 
+from docxology_tools.biblio_table import iter_bibliography_rows  # noqa: E402
 from docxology_tools.generated_outputs import stale_output_paths, write_output_texts  # noqa: E402
+
+BIBLIOGRAPHY = REPO_ROOT / "pages" / "BIBLIOGRAPHY.md"
 
 
 DOI_RE = re.compile(r"^10\.\d{4,9}/[-._;()/:A-Z0-9]+$", re.IGNORECASE)
@@ -347,8 +353,117 @@ def reconcile_cff_doi_roles(text: str, meta: dict[str, Any], paper_dir: Path) ->
     )
 
 
-def render_outputs(papers_dir: Path = PAPERS_DIR) -> dict[Path, str]:
-    """Render every CFF DOI-role output from metadata and existing non-DOI content."""
+def bibliography_citations(bibliography_path: Path = BIBLIOGRAPHY) -> dict[str, dict[str, Any]]:
+    """Return ``{folder: {"title", "authors"}}`` for rows with verified authors."""
+    if not bibliography_path.is_file():
+        return {}
+    citations: dict[str, dict[str, Any]] = {}
+    for row in iter_bibliography_rows(bibliography_path):
+        if row.folder and row.authors:
+            citations[row.folder] = {"title": row.title.strip(), "authors": list(row.authors)}
+    return citations
+
+
+def _is_daniel_friedman(family: str, given: str) -> bool:
+    return family.casefold() == "friedman" and given.casefold().startswith("daniel")
+
+
+def render_cff_authors(names: list[str]) -> list[str]:
+    """Render bibliography "Family, Given" names (or literals) as CFF authors."""
+    lines = ["authors:\n"]
+    for name in names:
+        family, separator, given = name.partition(",")
+        if not separator:
+            # A name the registry recorded without structure (a pseudonym,
+            # collective, or unsplit personal name) is a CFF entity name.
+            lines.append(f'  - name: "{_yaml_quoted(name.strip())}"\n')
+            continue
+        family, given = family.strip(), given.strip()
+        lines.append(f'  - family-names: "{_yaml_quoted(family)}"\n')
+        if given:
+            lines.append(f'    given-names: "{_yaml_quoted(given)}"\n')
+        if _is_daniel_friedman(family, given):
+            lines.append(f'    orcid: "{ORCID}"\n')
+    return lines
+
+
+_AUTHOR_FIELD_RE = re.compile(r"^\s*-?\s*(family-names|given-names|name):\s*(.*?)\s*$")
+
+
+def _cff_citation_identity(text: str) -> tuple[str, list[tuple[str, str]]] | None:
+    """Parse the top-level title and ``[(family, given)]`` authors from a CFF."""
+    title = _top_level_value(text, "title")
+    authors: list[tuple[str, str]] = []
+    in_authors = False
+    for line in text.splitlines():
+        if line.rstrip() == "authors:":
+            in_authors = True
+            continue
+        if in_authors and line.strip() and not line.startswith((" ", "\t")):
+            break
+        if not in_authors:
+            continue
+        match = _AUTHOR_FIELD_RE.match(line)
+        if not match:
+            continue
+        key, value = match.group(1), _yaml_unquoted(match.group(2))
+        if line.lstrip().startswith("-"):
+            authors.append(("", ""))
+        family, given = authors[-1] if authors else ("", "")
+        if key == "given-names":
+            authors[-1] = (family, value)
+        else:
+            authors[-1] = (value, given)
+    return (title, authors) if title or authors else None
+
+
+def _bibliography_identity(citation: dict[str, Any]) -> tuple[str, list[tuple[str, str]]]:
+    authors = []
+    for name in citation["authors"]:
+        family, separator, given = name.partition(",")
+        authors.append((family.strip(), given.strip()) if separator else (name.strip(), ""))
+    return citation["title"], authors
+
+
+def reconcile_cff_bibliography(text: str, citation: dict[str, Any] | None) -> str:
+    """Replace the top-level title and authors block with the bibliography's.
+
+    A CFF whose parsed title and author names already match is returned
+    byte-identical, so formatting-only differences never churn a file.
+    """
+    if not citation:
+        return text
+    if _cff_citation_identity(text) == _bibliography_identity(citation):
+        return text
+    lines = text.splitlines(keepends=True)
+    title_line = f'title: "{_yaml_quoted(citation["title"])}"\n'
+    out: list[str] = []
+    index = 0
+    saw_title = saw_authors = False
+    while index < len(lines):
+        line = lines[index]
+        if line.startswith("title:"):
+            out.append(title_line)
+            saw_title = True
+            index += 1
+            continue
+        if line.rstrip("\n") == "authors:":
+            out.extend(render_cff_authors(citation["authors"]))
+            saw_authors = True
+            index += 1
+            while index < len(lines) and (not lines[index].strip() or lines[index].startswith((" ", "\t"))):
+                index += 1
+            continue
+        out.append(line)
+        index += 1
+    if not saw_title or not saw_authors:
+        raise ValueError("CITATION.cff lacks a top-level title or authors block to reconcile")
+    return "".join(out)
+
+
+def render_outputs(papers_dir: Path = PAPERS_DIR, bibliography_path: Path = BIBLIOGRAPHY) -> dict[Path, str]:
+    """Render every CFF output: DOI roles from metadata, title/authors from the bibliography."""
+    citations = bibliography_citations(bibliography_path)
     outputs: dict[Path, str] = {}
     for paper_dir in sorted(path for path in papers_dir.iterdir() if path.is_dir()):
         metadata_path = paper_dir / "metadata.json"
@@ -363,11 +478,15 @@ def render_outputs(papers_dir: Path = PAPERS_DIR) -> dict[Path, str]:
         cff_path = paper_dir / "CITATION.cff"
         if cff_path.is_file():
             existing = cff_path.read_text(encoding="utf-8")
-            outputs[cff_path] = reconcile_cff_doi_roles(existing, metadata, paper_dir)
+            rendered = reconcile_cff_doi_roles(existing, metadata, paper_dir)
         else:
-            generated = generate_cff(metadata, paper_dir)
-            if generated is not None:
-                outputs[cff_path] = generated
+            rendered = generate_cff(metadata, paper_dir)
+            if rendered is None:
+                continue
+        try:
+            outputs[cff_path] = reconcile_cff_bibliography(rendered, citations.get(paper_dir.name))
+        except ValueError as exc:
+            raise ValueError(f"{paper_dir.name}: {exc}") from exc
     return outputs
 
 

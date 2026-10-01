@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — DistributedPhysiology
+# AGENTS.md — Distributed physiology and the molecular basis of social life in eusocial insects
 
-**Paper**: DistributedPhysiology (2020)
+**Paper**: Distributed physiology and the molecular basis of social life in eusocial insects (2020)
 **Domain**: Entomology
-**Authors**: Daniel A. Friedman, Deborah M. Gordon
+**Authors**: D.A. Friedman, B.R. Johnson, T.A. Linksvayer
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis
-- Identifies findings: Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals., Analysis of We examine how this...
+- Extracts methods: See paper
+- Identifies findings: Analysis of We examine how this...
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects DistributedPhysiology to related works in the bibliography
+- Connects Distributed physiology and the molecular basis of social life in eusocial insects to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.5",
-  "generated_at": "2026-09-30T05:48:55+00:00",
+  "generated_at": "2026-10-01T16:43:52+00:00",
   "canonical_origin": "https://danielarifriedman.com/",
   "canonical_sources": {
     "bibliography": "/pages/BIBLIOGRAPHY.md",
@@ -279,7 +279,7 @@
   "datasets": {
     "works": {
       "path": "/data/works.json",
-      "count": 220,
+      "count": 219,
       "schema": "Work"
     },
     "software": {
@@ -329,7 +329,7 @@
     },
     "coverage_exceptions": {
       "path": "/data/coverage-exceptions.json",
-      "count": 48,
+      "count": 47,
       "schema": "CoverageException"
     },
     "repository_classification": {
@@ -364,7 +364,7 @@
     },
     "work_enrichment": {
       "path": "/data/work-enrichment.json",
-      "count": 220,
+      "count": 219,
       "schema": "WorkEnrichment"
     },
     "catalog": {
@@ -379,7 +379,7 @@
     },
     "reproducibility": {
       "path": "/data/reproducibility.json",
-      "count": 220,
+      "count": 219,
       "schema": "ReproducibilityLedger"
     },
     "generated_manifest": {
@@ -1031,7 +1031,7 @@
     ],
     "VideoIndex": {
       "schema_version": "VideoIndex.v1",
-      "generated_at": "2026-09-24T19:36:41Z",
+      "generated_at": "2026-10-01T16:36:38Z",
       "source": "data/videos.json",
       "count": 1127,
       "counts": {
@@ -1121,14 +1121,14 @@
     "ClaimWithEvidence": [
       {
         "id": "curated-work-count",
-        "claim": "The curated bibliography contains 220 works.",
+        "claim": "The curated bibliography contains 219 works.",
         "status": "curated-local",
         "sources": [
           "pages/BIBLIOGRAPHY.md",
           "publications.html",
           "data/works.json"
         ],
-        "checked_at": "2026-09-30T05:48:55+00:00",
+        "checked_at": "2026-10-01T16:43:52+00:00",
         "confidence": "high",
         "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
         "maintenance_owner": "ARCHIVIST",
@@ -1222,8 +1222,8 @@
       "check_command": "uv run python3 code/orchestrators/build_current_counts.py --check",
       "command": "uv run python3 code/orchestrators/build_current_counts.py",
       "counts": {
-        "bibliography_docs_links": 203,
-        "bibliography_works": 220,
+        "bibliography_docs_links": 202,
+        "bibliography_works": 219,
         "domains": {
           "AII Ecosystem": 6,
           "Active Inference": 47,
@@ -1232,15 +1232,15 @@
           "Computational": 60,
           "Entomology": 23,
           "Genetics & Biomedical": 15,
-          "Presentations & Media": 15
+          "Presentations & Media": 14
         },
-        "extracted_images": 8944,
-        "full_text_papers": 190,
+        "extracted_images": 8936,
+        "full_text_papers": 189,
         "generated_exports": {
-          "data_publications_ld_main_entity": 220,
+          "data_publications_ld_main_entity": 219,
           "data_software_json": 158,
           "data_software_ld_main_entity": 158,
-          "data_works_json": 220
+          "data_works_json": 219
         },
         "github_inventory": {
           "ActiveInferenceInstitute": 43,
@@ -1275,8 +1275,8 @@
           "update_existing": 55,
           "zenodo_records": 162
         },
-        "paper_folder_docs": 203,
-        "papers_with_images": 139,
+        "paper_folder_docs": 202,
+        "papers_with_images": 138,
         "public_source_snapshot": {
           "Crossref ORCID DOI records": 15,
           "Europe PMC exact author records": 10,
@@ -1297,12 +1297,12 @@
           "Courses": 3,
           "Papers": 198,
           "Playbooks": 2,
-          "Presentations": 9,
+          "Presentations": 8,
           "Report": 1,
           "Series": 2
         }
       },
-      "generated_at": "2026-09-30T05:48:55+00:00",
+      "generated_at": "2026-10-01T16:43:52+00:00",
       "sources": {
         "bibliography": "pages/BIBLIOGRAPHY.md",
         "github_inventory": "data/github-repositories.json",
@@ -1326,11 +1326,11 @@
         "release_hard_ceiling_bytes": 943718400,
         "safety_ceiling_bytes": 943718400,
         "warning_bytes": 933232640,
-        "source_bytes": 927213434,
+        "source_bytes": 922472549,
         "budget_scope": "published content files plus this manifest; control metadata files are listed but excluded to avoid self-referential hashes",
         "manifest_bytes_excluded_from_source_bytes": true,
-        "artifact_file_count": 5871,
-        "artifact_bytes": 928250837
+        "artifact_file_count": 5861,
+        "artifact_bytes": 923508191
       },
       "github_fallback": {
         "tree_template": "https://github.com/docxology/docxology/tree/{commit}/{path}",
@@ -1342,7 +1342,7 @@
       "note": "See /data/release-integrity.json for the current envelope."
     },
     "ReproducibilityLedger": {
-      "generated_at": "2026-09-24T19:57:16Z",
+      "generated_at": "2026-10-01T16:38:39Z",
       "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
       "sources": [
         "data/works.json",
@@ -1404,17 +1404,17 @@
         }
       ],
       "max_score": 6,
-      "work_count": 220,
+      "work_count": 219,
       "signal_totals": {
-        "persistent_id": 205,
-        "public_archive": 163,
-        "open_full_text": 190,
-        "source_documents": 203,
+        "persistent_id": 204,
+        "public_archive": 162,
+        "open_full_text": 189,
+        "source_documents": 202,
         "executable_code": 72,
-        "agent_readable": 203
+        "agent_readable": 202
       },
       "band_counts": {
-        "independently reproducible": 157,
+        "independently reproducible": 156,
         "independently checkable": 46,
         "citable only": 8,
         "unverified": 9
@@ -1425,15 +1425,15 @@
         "2": 4,
         "3": 8,
         "4": 38,
-        "5": 94,
+        "5": 93,
         "6": 63
       },
-      "mean_score": 4.709,
+      "mean_score": 4.708,
       "works": [
         {
           "num": 5,
           "citation_key": "Friedman2026CognitiveIntegrityFrameworkFormal005",
-          "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
+          "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
           "year": 2026,
           "domain_name": "Cognitive Security",
           "type": "Paper",
@@ -3099,25 +3099,6 @@
           "repositories": []
         },
         {
-          "num": 30,
-          "citation_key": "Friedman2024BioFirmDevelopmentAtApplied030",
-          "title": "BioFirm Development at Applied Active Inference Symposium 2024",
-          "year": 2024,
-          "domain_name": "Media & Teaching",
-          "type": "Presentation",
-          "score": 5,
-          "band": "independently reproducible",
-          "signals": {
-            "persistent_id": true,
-            "public_archive": true,
-            "open_full_text": true,
-            "source_documents": true,
-            "executable_code": false,
-            "agent_readable": true
-          },
-          "repositories": []
-        },
-        {
           "num": 33,
           "citation_key": "Friedman2024CommentsNationalDigitalTwins033",
           "title": "Comments on National Digital Twins R&D Strategic Plan",
@@ -4619,7 +4600,7 @@
         {
           "num": 32,
           "citation_key": "Friedman2024ChemicalTranscriptomicDiversityDo032",
-          "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",
+          "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea",
           "year": 2024,
           "domain_name": "Entomology",
           "type": "Paper",
@@ -4828,7 +4809,7 @@
         {
           "num": 68,
           "citation_key": "Friedman2022FromUsersSenseMakers068",
-          "title": "From Users to (Sense)Makers: Stigmergic Social Annotation",
+          "title": "From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking",
           "year": 2022,
           "domain_name": "Cognitive Security",
           "type": "Paper",
@@ -4961,7 +4942,7 @@
         {
           "num": 95,
           "citation_key": "Friedman2019PhysiologyForagerHydrationVariation095",
-          "title": "The physiology of forager hydration and variation among harvester ant colonies",
+          "title": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
           "year": 2019,
           "domain_name": "Entomology",
           "type": "Paper",
@@ -5037,7 +5018,7 @@
         {
           "num": 100,
           "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
-          "title": "The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants",
+          "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
           "year": 2018,
           "domain_name": "Entomology",
           "type": "Paper",
@@ -5132,7 +5113,7 @@
         {
           "num": 105,
           "citation_key": "Friedman2016InfluenceNuclearStructureFormation105",
-          "title": "Influence of Nuclear Structure on formation of radiation-induced lethal lesions",
+          "title": "Influence of nuclear structure on the formation of radiation-induced lethal lesions",
           "year": 2016,
           "domain_name": "Genetics & Biomedical",
           "type": "Paper",
@@ -5170,7 +5151,7 @@
         {
           "num": 107,
           "citation_key": "Friedman2015CouldEhrlichialInfectionCause107",
-          "title": "Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",
+          "title": "Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?",
           "year": 2015,
           "domain_name": "Genetics & Biomedical",
           "type": "Paper",
@@ -5189,7 +5170,7 @@
         {
           "num": 108,
           "citation_key": "Friedman2015LargeScaleCodingSequence108",
-          "title": "Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",
+          "title": "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees",
           "year": 2015,
           "domain_name": "Genetics & Biomedical",
           "type": "Paper",
@@ -5760,27 +5741,27 @@
     }
   },
   "dataset_hashes": {
-    "works": "272a62574e29cbbb8097a27da7e78be15baf7c0c60bcd98c970a407cc307ea02",
-    "software": "88be7e583cdbd6ebadebc27166abeae3a7d2c6376ea65200a9645444aa443862",
+    "works": "48b41035c709cce911292a4521c284601bb979a793bf75693e2065f1adc38058",
+    "software": "b1298f3b1a838c317b16c3888740d0dcbb87fc59e96d96e3bc950e071539d4f5",
     "repositories": "7921e3722f3ec20c8d8a8fc5090396d3b66e4d557e732a6d1055a5d9d25cb772",
     "artworks_index": "053e66edbd2257c157f9baeb45d7ee6cf04395a59d7253ff31bd55b9d904a0d5",
     "artworks": "32bd21124bd391638295aac6bad7a0621746c296695e10b0586351ca4069f6c3",
-    "videos": "57a2b9b18f2dc17fa73865d72c70babe149fda625d3823c2c63be0e92b63171e",
-    "videos_index": "4f4d6f4b11da4698726e654d5e32308fb794cc5771943e1eb1e6cae0f2e7b5d7",
-    "search": "636a4bb3b198235d95cc32495e8317111ecd376f9dacfbca463b0739f3c721dc",
-    "claims": "400f27f1c875cc76eee87298f2d06ffc6555e39c0271c68e9bfdb324eb1ec3f7",
+    "videos": "b7b49823010022aab46d077665dfae20ddc557c094f7aad371fbb3c9caf4f9b7",
+    "videos_index": "0321b84ca15b4c5150e013c39032a3691983080082edb82bf1acec257d3d82f4",
+    "search": "6a3955aa5051f1ca79f755de3a8ec81a85e3fd4eaf41d4ae8047587c51c6c2f7",
+    "claims": "e0de86e143d05cc620b96a4c8244ddc0bc65d522bf5eab689f40c8de17b19930",
     "scholar_verification_receipt": "736e2e58e12ecbea3ceb821e8c4b017878fc760ec557b6c16ed12dc131bd70e5",
-    "coverage_exceptions": "2aac9b09a4835a29b2139a2b5163cb624b48930619608126324a8f8eacc42d1b",
+    "coverage_exceptions": "4355f7b2a7d6b796b9232a4892e46ea4499defbadd73d000262bdbe0e165fb3f",
     "repository_classification": "782da5e4f884230dd1285dc143104427ab17a433c12909b8a5ae0cf1dc17a31a",
-    "people": "3e33b3d080c50547986dd84296ed0fdb8e3ac383f957fa965ad50b4ebdc82650",
-    "organizations": "dd37c4c2402d293894b996635a6353214534a4aa2df8fae0edd3ee038bc9266a",
-    "resume": "f5ee9415d451f581fbe0bc645ceb042da9aaaeda1ec7609c200820d78826250b",
-    "work_enrichment": "8a71a4a82d7df44f05b551821738d8e1597b48fad231e71360e6f4c78129a26c",
-    "catalog": "9c53d4f32edf908487750c51467d87661c64edc9b2184e4dc65806a0689f33ef",
-    "reconciliation": "9f96ee2c06b0f95f8b70db33e368312b877796bdbec010c9ab896b2ee60435d3",
-    "reproducibility": "89f9728748936924f010d283fca7ade580014bfce4e5ef5be4c1d69d45c8a319",
+    "people": "a6c42da77cdc4157013d74e2cd80847afededf83ab4f324cf99e66c65d57de01",
+    "organizations": "18086f6cb4a9b01478e7177d6fe4af4516c6800656558edde74eea623efa5034",
+    "resume": "0e674403eae049a2f81600909c6e48f05f14b11e99b1af1ffe9b90ae74723e2b",
+    "work_enrichment": "01c953ea4cb0b6d5c83e69635fa1ab9b9761f7e2296ca0e20a6de47783a64975",
+    "catalog": "f8877df857b79b94299e44a914ddaecc4c0950b5ddfc3c7671db3785c67c432e",
+    "reconciliation": "a6a852bd1784c0f12d050c74b1363ebb60001b14409497505a8504a35df0d164",
+    "reproducibility": "1094090622e779a45d0d8176a7bbce12c3d8bc86b7d982f657915e0d7dd81d24",
     "generated_manifest": "b8d3df74899b3e3c202f68836cf5bb34ee560bd831b4ef8edb9d5d20dd9c0f9a",
-    "current_counts": "19fb90152554d2d95c333341a2cf53f10536f6aa34b023bf2a38882164ac5b23"
+    "current_counts": "a2e12fbf6ce396acbb5991d1548ff02c968b6d5eaf207948774eb1f74be083e5"
   },
   "source_provenance": {
     "generated_by": "code/orchestrators/build_agent_index.py",
@@ -5808,8 +5789,8 @@
     "pages_status": "built"
   },
   "counts": {
-    "bibliography_docs_links": 203,
-    "bibliography_works": 220,
+    "bibliography_docs_links": 202,
+    "bibliography_works": 219,
     "domains": {
       "AII Ecosystem": 6,
       "Active Inference": 47,
@@ -5818,15 +5799,15 @@
       "Computational": 60,
       "Entomology": 23,
       "Genetics & Biomedical": 15,
-      "Presentations & Media": 15
+      "Presentations & Media": 14
     },
-    "extracted_images": 8944,
-    "full_text_papers": 190,
+    "extracted_images": 8936,
+    "full_text_papers": 189,
     "generated_exports": {
-      "data_publications_ld_main_entity": 220,
+      "data_publications_ld_main_entity": 219,
       "data_software_json": 158,
       "data_software_ld_main_entity": 158,
-      "data_works_json": 220
+      "data_works_json": 219
     },
     "github_inventory": {
       "ActiveInferenceInstitute": 43,
@@ -5861,8 +5842,8 @@
       "update_existing": 55,
       "zenodo_records": 162
     },
-    "paper_folder_docs": 203,
-    "papers_with_images": 139,
+    "paper_folder_docs": 202,
+    "papers_with_images": 138,
     "public_source_snapshot": {
       "Crossref ORCID DOI records": 15,
       "Europe PMC exact author records": 10,
@@ -5883,7 +5864,7 @@
       "Courses": 3,
       "Papers": 198,
       "Playbooks": 2,
-      "Presentations": 9,
+      "Presentations": 8,
       "Report": 1,
       "Series": 2
     }

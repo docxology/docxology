@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: OPORD analysis and catechism-style process design, Organizational sensemaking and high-reliability frameworks
-- Identifies findings: Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and 
+- Identifies findings: See paper
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR

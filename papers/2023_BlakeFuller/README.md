@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 BlakeFuller
+# 🎨 William Blake & Buckminster Fuller: Lives in Juxtaposition
 
-**Daniel A. Friedman** (2023) · *Zenodo*
+**Daniel Ari Friedman** (2023) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7514367-blue)](https://doi.org/10.5281/zenodo.7514367)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -36,7 +35,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2023). *BlakeFuller*. Zenodo. DOI: 10.5281/zenodo.7514367. URL: https://doi.org/10.5281/zenodo.7514367.
+> Daniel Ari Friedman (2023). *William Blake & Buckminster Fuller: Lives in Juxtaposition*. Zenodo. DOI: 10.5281/zenodo.7514367. URL: https://doi.org/10.5281/zenodo.7514367.
 
 ## Related
 

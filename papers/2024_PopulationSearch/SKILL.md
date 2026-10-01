@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "PopulationSearch"
+name: "Enhancing Population-based Search with Active Inference"
 description: "We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation. Demonstrated with Ant Colony Optimization (ACO) on th..."
 tags: ["population-search", "active-inference", "ant-colony-optimization", "tsp", "metaheuristics", "anticipatory-adaptation", "computational-optimization"]
 domain: "Active Inference"
-citation: "Nassim Dehouche, Daniel Friedman (2024). *PopulationSearch*. Active Inference."
+citation: "Nassim Dehouche, Daniel Friedman (2024). *Enhancing Population-based Search with Active Inference*. ArXiv."
 doi: "10.48550/arXiv.2408.09548"
 ---
 
-# PopulationSearch
+# Enhancing Population-based Search with Active Inference
 
 **Nassim Dehouche, Daniel Friedman** (2024) · Active Inference
 
@@ -20,15 +20,13 @@ This work addresses topics in **Active Inference**: population search, Active In
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation..
-- Demonstrated with Ant Colony Optimization (ACO) on th....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.48550/arXiv.2408.09548`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

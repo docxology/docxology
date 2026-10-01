@@ -1,18 +1,26 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "DopamineForaging"
+title: "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants"
 date-released: 2018
 doi: 10.1016/j.isci.2018.09.001
 url: "https://doi.org/10.1016/j.isci.2018.09.001"
 authors:
-  - family-names: Friedman
-    given-names: Daniel A.
+  - family-names: "Friedman"
+    given-names: "Daniel A."
     orcid: "https://orcid.org/0000-0001-6232-9096"
-  - family-names: Pilko
-    given-names: Annette
-  - family-names: Gordon
-    given-names: Deborah M.
+  - family-names: "Pilko"
+    given-names: "Anna"
+  - family-names: "Skowronska-Krawczyk"
+    given-names: "Dorota"
+  - family-names: "Krasinska"
+    given-names: "Karolina"
+  - family-names: "Parker"
+    given-names: "Jacqueline W."
+  - family-names: "Hirsh"
+    given-names: "Jay"
+  - family-names: "Gordon"
+    given-names: "Deborah M."
 identifiers:
   - type: doi
     value: "10.1016/j.isci.2018.09.001"

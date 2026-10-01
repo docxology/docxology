@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 AccessibilityActiveInference
+# 🧠 Increasing the Accessibility and Applicability of Active Inference
 
-**Daniel A. Friedman, Active Inference Institute** (2025) · *Zenodo*
+**Alexandra Mikhailova, Daniel Friedman** (2025) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.15061666-blue)](https://doi.org/10.5281/zenodo.15061666)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Devel
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -35,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Active Inference Institute (2025). *AccessibilityActiveInference*. Zenodo. DOI: 10.5281/zenodo.15061666. URL: https://doi.org/10.5281/zenodo.15061666.
+> Alexandra Mikhailova, Daniel Friedman (2025). *Increasing the Accessibility and Applicability of Active Inference*. Zenodo. DOI: 10.5281/zenodo.15061666. URL: https://doi.org/10.5281/zenodo.15061666.
 
 ## Related
 

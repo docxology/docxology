@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- This exemplar documents template_sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in .
-- The default pipeline replays fixture-backed generations for the mini_classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

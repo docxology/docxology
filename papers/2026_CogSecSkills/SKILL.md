@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "CogSecSkills: Multiharness Cognitive Security Skill Library"
+name: "CogSecSkills: Multiharness Agentic Skills for Cognitive Security"
 description: "CogSecSkills is a defensive, harness-neutral agent-interface library that turns the human doctrine of cognitive security and analytic tradecraft into dependable, inspectable, agent-usable skills, distributed as an open repository from github.com/docx..."
 tags: ["cognitive-security", "agent-skills", "analytic-tradecraft", "structured-analytic-techniques", "multiharness"]
 domain: "Cognitive Security"
-citation: "Daniel Ari Friedman (2026). *CogSecSkills: Multiharness Cognitive Security Skill Library*. Cognitive Security."
+citation: "Daniel Ari Friedman (2026). *CogSecSkills: Multiharness Agentic Skills for Cognitive Security*. Zenodo."
 doi: "10.5281/zenodo.21513316"
 ---
 
-# CogSecSkills: Multiharness Cognitive Security Skill Library
+# CogSecSkills: Multiharness Agentic Skills for Cognitive Security
 
 **Daniel Ari Friedman** (2026) · Cognitive Security
 
@@ -20,15 +20,13 @@ This work addresses topics in **Cognitive Security**: cognitive security, agent 
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- CogSecSkills is a defensive, harness-neutral agent-interface library that turns the human doctrine of cognitive security and analytic tradecraft into dependable, inspectable, agent-usable skills, dist
-- The live generated catalogue reports one hundred implemented skills across seven taxonomy groups — Structured Analytic Techniques, Cognitive Security, Critical Review and Assurance, OSINT and Source I
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21513316`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

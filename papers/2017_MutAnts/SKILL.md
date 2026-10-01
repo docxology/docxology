@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "MutAnts"
+name: "The MutAnts are here"
 description: "The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior. In this issue of..."
 tags: ["crispr/cas9", "orco-gene", "olfactory-receptor", "ant-genetics", "ooceraea-biroi", "harpegnathos-saltator", "social-behavior", "pheromone", "gene-knockout"]
 domain: "Entomology"
-citation: "Daniel A. Friedman, Deborah M. Gordon, Liqun Luo (2017). *MutAnts*. Entomology."
+citation: "Daniel A. Friedman, Deborah M. Gordon, Liqun Luo (2017). *The MutAnts are here*. Cell."
 doi: "10.1016/j.cell.2017.07.046"
 ---
 
-# MutAnts
+# The MutAnts are here
 
 **Daniel A. Friedman, Deborah M. Gordon, Liqun Luo** (2017) · Entomology
 
@@ -20,14 +20,12 @@ This work addresses topics in **Entomology**: CRISPR/Cas9, Orco gene, olfactory 
 
 Primary methods and techniques applied in this work:
 
-- Field observation and behavioral assays
-- Population genetics analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior.
 - Analysis of In this issue of...
 
 ## Related Works
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1016/j.cell.2017.07.046`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

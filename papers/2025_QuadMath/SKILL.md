@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "QuadMath"
+name: "QuadMath: An Analytical Review of 4D and Quadray Coordinates"
 description: "QuadMath provides an analytical review of 4D and Quadray coordinate systems, implementing Buckminster Fuller's Synergetics geometry in a computational framework. The paper introduces a 4D namespace fr..."
 tags: ["quadmath", "quadray-coordinates", "4d-geometry", "synergetics", "buckminster-fuller", "ivm-lattice", "rational-arithmetic", "computational-geometry"]
 domain: "Art & Synergetics"
-citation: "Daniel Ari Friedman (2025). *QuadMath*. Art & Synergetics."
+citation: "Daniel Friedman (2025). *QuadMath: An Analytical Review of 4D and Quadray Coordinates*. Zenodo."
 doi: "10.5281/zenodo.16887799"
 ---
 
-# QuadMath
+# QuadMath: An Analytical Review of 4D and Quadray Coordinates
 
-**Daniel Ari Friedman** (2025) · Art & Synergetics
+**Daniel Friedman** (2025) · Art & Synergetics
 
 ## Context
 

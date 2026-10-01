@@ -4,14 +4,14 @@ name: "ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Kn
 description: "The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains. The antecedent to ATLAS was the Atlas of Risk, an informal ..."
 tags: ["atlas2"]
 domain: "Cognitive Security"
-citation: "R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, and 1 others (2023). *ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management*. Cognitive Security."
+citation: "R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, Colten Zacharias (2023). *ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management*. Zenodo."
 doi: "10.5281/zenodo.10296601"
 artifact_doi: "10.5281/zenodo.10362561"
 ---
 
 # ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management
 
-**R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, and 1 others** (2023) · Cognitive Security
+**R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, Colten Zacharias** (2023) · Cognitive Security
 
 ## Context
 
@@ -21,15 +21,13 @@ This work addresses topics in **Cognitive Security**: ATLAS2.
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains.
-- The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions.
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -58,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.10296601`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

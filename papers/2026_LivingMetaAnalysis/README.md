@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc reviews bind no evidence to a reproducible pipeline.
-- We present a configurable, reproducible meta-analysis framework that takes a single search term and produces a complete quantitative portrait of its literature.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

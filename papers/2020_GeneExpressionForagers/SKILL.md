@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "GeneExpressionForagers"
+name: "Gene expression variation in the brains of harvester ant foragers is associated with collective behavior"
 description: "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects. Here we characterize transcriptomic profiles of foragers compar..."
 tags: ["gene-expression", "foragers", "rna-seq", "division-of-labor", "transcriptomics", "harvester-ants", "behavioral-castes", "pogonomyrmex-barbatus"]
 domain: "Entomology"
-citation: "Daniel A. Friedman, Brian R. Johnson, Timothy A. Linksvayer (2020). *GeneExpressionForagers*. Entomology."
+citation: "Daniel Ari Friedman, Ryan Alexander York, Austin Travis Hilliard, Deborah M. Gordon (2020). *Gene expression variation in the brains of harvester ant foragers is associated with collective behavior*. Communications Biology."
 doi: "10.1038/s42003-020-0813-8"
 ---
 
-# GeneExpressionForagers
+# Gene expression variation in the brains of harvester ant foragers is associated with collective behavior
 
-**Daniel A. Friedman, Brian R. Johnson, Timothy A. Linksvayer** (2020) · Entomology
+**Daniel Ari Friedman, Ryan Alexander York, Austin Travis Hilliard, Deborah M. Gordon** (2020) · Entomology
 
 ## Context
 
@@ -20,15 +20,13 @@ This work addresses topics in **Entomology**: gene expression, foragers, RNA-Seq
 
 Primary methods and techniques applied in this work:
 
-- Field observation and behavioral assays
-- Population genetics analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects..
-- Here we characterize transcriptomic profiles of foragers compar....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1038/s42003-020-0813-8`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

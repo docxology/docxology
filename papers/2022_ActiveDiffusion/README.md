@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🌍 ActiveDiffusion
+# 🌍 Catechism for Towards Active Diffusion
 
 **Jakub Smékal, Daniel Friedman** (2022) · *Zenodo*
 
@@ -18,12 +18,10 @@
 
 ## Methods
 
-- Program coordination
-- Community governance design
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models.
 - Analysis of The project, f...
 
 ## Artifacts
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> Jakub Smékal, Daniel Friedman (2022). *ActiveDiffusion*. Zenodo. DOI: 10.5281/zenodo.7443847. URL: https://doi.org/10.5281/zenodo.7443847.
+> Jakub Smékal, Daniel Friedman (2022). *Catechism for Towards Active Diffusion*. Zenodo. DOI: 10.5281/zenodo.7443847. URL: https://doi.org/10.5281/zenodo.7443847.
 
 ## Related
 

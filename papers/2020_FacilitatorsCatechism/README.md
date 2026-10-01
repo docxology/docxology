@@ -23,7 +23,7 @@
 
 ## Key Findings
 
-- Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

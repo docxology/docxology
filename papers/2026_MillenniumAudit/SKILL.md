@@ -1,15 +1,15 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "MillenniumAudit"
+name: "Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)"
 description: "Statement-level forensic audit of the MillenniumLean package (AIX Global, Zenodo 10.5281/zenodo.22226553), which claims kernel-checked Lean 4 proofs of the six remaining Clay Millennium Problems. The audit independently reproduces every kernel-hygien..."
 tags: ["lean-4", "formal-verification", "millennium-prize-problems", "claim-audit", "adversarial-review", "evidence-first"]
 domain: "🔍"
-citation: "Daniel Ari Friedman (2026). *MillenniumAudit*. 🔍."
+citation: "Daniel Ari Friedman (2026). *Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)*. Zenodo."
 doi: "10.5281/zenodo.22243472"
 artifact_doi: "10.5281/zenodo.22243473"
 ---
 
-# MillenniumAudit
+# Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)
 
 **Daniel Ari Friedman** (2026) · 🔍
 

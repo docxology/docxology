@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ TrustFinder
+# 🛡️ TrustFinder: Recommendations for Community-Based Trust Systems
 
-**R.J. Cordes, Scott David, Daniel A. Friedman** (2022) · *Zenodo*
+**R.J. Cordes, Scott David, Daniel Friedman** (2022) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7093836-blue)](https://doi.org/10.5281/zenodo.7093836)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -37,7 +36,7 @@
 
 ## Citation
 
-> R.J. Cordes, Scott David, Daniel A. Friedman (2022). *TrustFinder*. Zenodo. DOI: 10.5281/zenodo.7093836. URL: https://doi.org/10.5281/zenodo.7093836.
+> R.J. Cordes, Scott David, Daniel Friedman (2022). *TrustFinder: Recommendations for Community-Based Trust Systems*. Zenodo. DOI: 10.5281/zenodo.7093836. URL: https://doi.org/10.5281/zenodo.7093836.
 
 ## Related
 

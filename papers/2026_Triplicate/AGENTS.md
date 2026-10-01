@@ -16,11 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Software pipeline design, Data-driven analysis
-- Identifies findings: We present template_newspaper, a pure-Python engine that renders a complete
-twelve-page, large-format newspaper to a print-ready PDF from structured YAML
-content., The exemplar edition is The Triplicate, a homage to the historic
-newspaper of Crescent City, California (founded 1879).
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -40,7 +37,7 @@ newspaper of Crescent City, California (founded 1879).
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Political polarization and declining trust in institutions are driving societal destabilization and radicalization.
-- Recently there has been increased interest in online misinformation intervention and deterrence, for example through the use of machine learning on language use.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

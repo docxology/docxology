@@ -1,10 +1,10 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction"
-description: "<div>This project operationalizes the 2026 preprint "There is no self-evidence: A physics of emptiness realisation" as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for prediction while never obtaini..."
+description: "<div>This project operationalizes the 2026 preprint \"There is no self-evidence: A physics of emptiness realisation\" as a source-anchored software artifact. Its central claim is that a finite agent can use a boundary for prediction while never obtaini..."
 tags: ["active-inference", "bayesian-model-reduction", "quantum-reference-frames", "emptiness", "formal-methods", "pymdp"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction*. Computational."
+citation: "Daniel Ari Friedman (2026). *Realizing Emptiness: Operational Surrogates for No-Self-Evidence, QRF Opacification, and Bayesian Model Reduction*. Zenodo."
 doi: "10.5281/zenodo.20834846"
 ---
 
@@ -20,15 +20,13 @@ This work addresses topics in **Computational**: active inference, Bayesian mode
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- <div>This project operationalizes the 2026 preprint "There is no self-evidence: A physics of emptiness realisation" as a source-anchored software artifact.
-- Its central claim is that a finite agent can use a boundary for prediction while never obtaining evidence that the boundary is ontologically real, and the software separates three local artifact roles
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20834846`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

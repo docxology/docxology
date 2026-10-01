@@ -37,6 +37,7 @@ PAPERS_DIR = REPO_ROOT / "papers"
 
 from docxology_tools.biblio_table import iter_bibliography_rows  # noqa: E402
 from docxology_tools.domain_inference import DOMAIN_TO_EMOJI, infer_domain_name  # noqa: E402
+from docxology_tools.metadata_templates import specific_findings, specific_methods  # noqa: E402
 
 log = logging.getLogger(__name__)
 BIBLIOGRAPHY_PATH = Path(os.environ.get("BIB_PATH", PAPERS_DIR.parent / "pages" / "BIBLIOGRAPHY.md"))
@@ -557,6 +558,9 @@ def parse_bibliography(
             "canonical_doi": extract_doi(row.link_cell),
             "domain": row.domain,
             "type": row.typ,
+            # Registry-verified "Family, Given" names (fetch_work_authors.py).
+            # The bibliography owns authorship; folder metadata is a fallback.
+            "authors": list(row.authors),
         }
     log.info(f"Parsed {len(bib)} entries from BIBLIOGRAPHY.md")
     return bib
@@ -653,30 +657,55 @@ def infer_domain(folder: str, meta: dict) -> str:
 
 
 def extract_methods_from_metadata(meta: dict) -> list[str]:
-    """Extract methods from metadata, falling back to inferred list."""
-    methods = meta.get('methods', [])
-    if methods:
-        if isinstance(methods[0], dict):
-            return [m.get('name', '') for m in methods if m.get('name')]
-        return list(methods)
-    # Generate placeholder methods based on domain
-    domain = infer_domain('', meta)
-    base_methods = {
-        'Entomology': ['Field observation', 'Population genetics analysis', 'Behavioral assays'],
-        'Active Inference': ['Free energy minimization', 'Generative modeling', 'Bayesian inference'],
-        'Cognitive Security': ['Narrative analysis', 'Misinformation detection', 'Trust frameworks'],
-        'Art & Synergetics': ['Visual analysis', 'Historical interpretation', 'Conceptual synthesis'],
-        'Genetics & Biomedical': ['Genomic sequencing', 'Phylogenetic analysis', 'Statistical genetics'],
-    }
-    return base_methods.get(domain, ['Literature review', 'Theoretical analysis'])
+    """Return the paper-specific methods recorded for a work.
+
+    Domain-template filler (``metadata_templates.TEMPLATE_METHOD_NAMES``) is
+    never presented as a paper's method; an empty list renders as an explicit
+    "not yet summarized" note instead of invented content.
+    """
+    return specific_methods(meta.get('methods'))
 
 
 def extract_findings_from_metadata(meta: dict) -> list[str]:
-    """Extract key findings from metadata, falling back to placeholder."""
-    findings = meta.get('key_findings', [])
-    if findings:
-        return findings
-    return ['See full paper for detailed findings and analysis']
+    """Return recorded findings, excluding placeholders and abstract echoes."""
+    return specific_findings(meta.get('key_findings'), meta.get('abstract'), meta.get('description'))
+
+
+def display_author_name(name: str) -> str:
+    """Render a bibliography "Family, Given" name as "Given Family"."""
+    family, separator, given = str(name).partition(",")
+    if separator and given.strip():
+        return f"{given.strip()} {family.strip()}"
+    return str(name).strip()
+
+
+def work_title(folder: str, meta: dict, bib_entry: dict | None = None) -> str:
+    """Return the canonical work title: bibliography first, folder metadata as fallback."""
+    _, topic = parse_folder_id(folder)
+    if bib_entry and str(bib_entry.get('title') or '').strip():
+        return clean_markdown_text(bib_entry['title'])
+    return clean_markdown_text(meta.get('name') or meta.get('title') or topic)
+
+
+def work_authors(meta: dict, bib_entry: dict | None = None) -> str:
+    """Return the display author list: bibliography first, folder metadata as fallback."""
+    names = [display_author_name(name) for name in (bib_entry or {}).get('authors') or [] if str(name).strip()]
+    if names:
+        return ', '.join(names)
+    return clean_markdown_text(meta.get('authors', 'Daniel Ari Friedman'))
+
+
+def work_venue(bib_entry: dict | None = None) -> str:
+    return clean_markdown_text((bib_entry or {}).get('venue') or 'Zenodo')
+
+
+def yaml_string(value: Any) -> str:
+    """Quote a scalar for YAML frontmatter (JSON strings are valid YAML)."""
+    return json.dumps(str(value), ensure_ascii=False)
+
+
+NO_METHODS_NOTE = 'No paper-specific methods have been summarized yet; see the abstract and the full text.'
+NO_FINDINGS_NOTE = 'No paper-specific findings have been summarized yet; see the abstract and the full text.'
 
 
 def extract_related_papers(meta: dict, all_folders: list[str]) -> list[str]:
@@ -859,8 +888,8 @@ def generate_readme(
 ) -> str:
     """Generate README.md content with enhanced structure."""
     year, topic = parse_folder_id(folder)
-    title = clean_markdown_text(meta.get('name') or meta.get('title') or topic)
-    authors = clean_markdown_text(meta.get('authors', 'Daniel Ari Friedman'))
+    title = work_title(folder, meta, bib_entry)
+    authors = work_authors(meta, bib_entry)
 
     # Get abstract from description or metadata
     abstract = clean_abstract_text(meta.get('abstract', meta.get('description', f'Research paper on {topic}.')))
@@ -869,7 +898,7 @@ def generate_readme(
 
     keywords = meta.get('keywords', meta.get('tags', []))
     domain = resolve_domain(folder, meta, bib_entry)
-    venue = clean_markdown_text(bib_entry.get('venue', 'Zenodo') if bib_entry else 'Zenodo')
+    venue = work_venue(bib_entry)
 
     # Methods and findings
     methods = extract_methods_from_metadata(meta)
@@ -911,6 +940,8 @@ def generate_readme(
 
     for method in methods[:6]:
         lines.append(f'- {clean_markdown_text(method)}')
+    if not methods:
+        lines.append(f'_{NO_METHODS_NOTE}_')
     lines.append('')
 
     lines.extend([
@@ -920,6 +951,8 @@ def generate_readme(
 
     for finding in findings[:6]:
         lines.append(f'- {clean_markdown_text(finding)}')
+    if not findings:
+        lines.append(f'_{NO_FINDINGS_NOTE}_')
     lines.append('')
 
     # Artifacts section
@@ -977,11 +1010,12 @@ def generate_readme(
 def generate_agents(folder: str, meta: dict, bib_entry: dict | None = None) -> str:
     """Generate AGENTS.md content with enhanced structure."""
     year, topic = parse_folder_id(folder)
-    title = meta.get('name') or meta.get('title') or topic
-    authors = meta.get('authors', 'Daniel Ari Friedman')
+    title = work_title(folder, meta, bib_entry)
+    authors = work_authors(meta, bib_entry)
     domain = resolve_domain(folder, meta, bib_entry)
     methods = extract_methods_from_metadata(meta)
     findings = extract_findings_from_metadata(meta)
+    summarized = '✅' if (methods or findings) else '⏳ not yet summarized'
 
     lines = [
         f'# AGENTS.md — {title}',
@@ -1021,7 +1055,7 @@ def generate_agents(folder: str, meta: dict, bib_entry: dict | None = None) -> s
         '| Source | Agent | Action | Status |',
         '|--------|-------|--------|--------|',
         '| Metadata | ARCHIVIST | Cataloged metadata | ✅ |',
-        '| Metadata | RESEARCHER | Extracted methods/findings | ✅ |',
+        f'| Metadata | RESEARCHER | Extracted methods/findings | {summarized} |',
         '| Metadata | EDUCATOR | Generated documentation | ✅ |',
     ]
 
@@ -1052,8 +1086,9 @@ def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None
     Extended version with Methods, Key Findings, Related Works, Datasets, and Validation sections.
     """
     year, topic = parse_folder_id(folder)
-    title = meta.get('name') or meta.get('title') or topic
-    authors = meta.get('authors', 'Daniel Ari Friedman')
+    title = work_title(folder, meta, bib_entry)
+    authors = work_authors(meta, bib_entry)
+    venue = work_venue(bib_entry)
     description = meta.get('description', meta.get('abstract', f'Research on {topic}')).strip()
     domain = resolve_domain(folder, meta, bib_entry)
     tags = meta.get('tags', meta.get('keywords', [topic.lower()]))
@@ -1077,21 +1112,21 @@ def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None
     # explicitly labeled as an artifact and is never used for citation text.
     doi = canonical_doi(meta, bib_entry)
     version_doi = artifact_doi(meta)
-    citation = f'{authors} ({year}). *{title}*. {domain}.'
+    citation = f'{authors} ({year}). *{title}*. {venue}.'
 
     lines = [
         '---',
-        f'name: "{title}"',
-        f'description: "{desc_short}"',
+        f'name: {yaml_string(title)}',
+        f'description: {yaml_string(desc_short)}',
         f'tags: {tags_yaml}',
-        f'domain: "{domain}"',
-        f'citation: "{citation}"',
+        f'domain: {yaml_string(domain)}',
+        f'citation: {yaml_string(citation)}',
     ]
 
     if doi:
-        lines.append(f'doi: "{doi}"')
+        lines.append(f'doi: {yaml_string(doi)}')
     if version_doi and not doi_matches(version_doi, doi):
-        lines.append(f'artifact_doi: "{version_doi}"')
+        lines.append(f'artifact_doi: {yaml_string(version_doi)}')
 
     lines.extend([
         '---',
@@ -1115,6 +1150,8 @@ def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None
     ])
     for method in methods[:6]:
         lines.append(f'- {method}')
+    if not methods:
+        lines.append(NO_METHODS_NOTE)
     lines.append('')
 
     # Key Findings section
@@ -1126,6 +1163,8 @@ def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None
     ])
     for finding in findings[:6]:
         lines.append(f'- {finding}')
+    if not findings:
+        lines.append(NO_FINDINGS_NOTE)
     lines.append('')
 
     # Datasets section
@@ -1181,7 +1220,8 @@ def generate_skill(folder: str, meta: dict, all_folders: list[str] | None = None
         'When working with this paper:',
         '',
         f'1. Reference the DOI for citation: `{doi}`' if doi else '1. Use the canonical citation above.',
-        '2. Apply methods listed in the Methods section for related analysis.',
+        '2. Apply methods listed in the Methods section for related analysis.'
+        if methods else '2. Read the methods in the full text before reusing this work.',
         '3. Validate findings against the original PDF and metadata.',
         '',
     ])

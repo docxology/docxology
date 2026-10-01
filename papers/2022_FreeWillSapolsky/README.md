@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧬 FreeWillSapolsky
+# 🧬 On free will or the lack thereof (interview with Robert Sapolsky)
 
-**Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman** (2022) · *ALIUS Bulletin*
+**Robert Sapolsky, Alexandra Mikhailova, Daniel Friedman** (2022) · *ALIUS Bulletin*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.7394900-blue)](https://doi.org/10.5281/zenodo.7394900)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -37,7 +36,7 @@
 
 ## Citation
 
-> Robert Sapolsky, Alexandra Mikhailova, Daniel A. Friedman (2022). *FreeWillSapolsky*. ALIUS Bulletin. DOI: 10.5281/zenodo.7394900. URL: https://doi.org/10.5281/zenodo.7394900.
+> Robert Sapolsky, Alexandra Mikhailova, Daniel Friedman (2022). *On free will or the lack thereof (interview with Robert Sapolsky)*. ALIUS Bulletin. DOI: 10.5281/zenodo.7394900. URL: https://doi.org/10.5281/zenodo.7394900.
 
 ## Related
 

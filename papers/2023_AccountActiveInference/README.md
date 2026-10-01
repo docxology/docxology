@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 AccountActiveInference
+# 🧠 An Account of Active Inference Modeling
 
 **Daniel Ari Friedman** (2023) · *Zenodo*
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -37,7 +36,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2023). *AccountActiveInference*. Zenodo. DOI: 10.5281/zenodo.8415312. URL: https://doi.org/10.5281/zenodo.8415312.
+> Daniel Ari Friedman (2023). *An Account of Active Inference Modeling*. Zenodo. DOI: 10.5281/zenodo.8415312. URL: https://doi.org/10.5281/zenodo.8415312.
 
 ## Related
 

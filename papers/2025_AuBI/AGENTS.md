@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — AuBI
+# AGENTS.md — Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference
 
-**Paper**: AuBI (2025)
+**Paper**: Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference (2025)
 **Domain**: Computational
-**Authors**: Daniel A. Friedman
+**Authors**: Die Schwarze Katze, Andrew Djuwidja, Daniel Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Software pipeline design, Data-driven analysis
-- Identifies findings: AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework., The paper examines how AI systems ca...
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects AuBI to related works in the bibliography
+- Connects Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -1,8 +1,8 @@
 {
   "title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
   "version": null,
-  "doi": "10.5281/zenodo.14861596",
-  "doi_url": "https://doi.org/10.5281/zenodo.14861596",
+  "doi": "10.5281/zenodo.14861595",
+  "doi_url": "https://doi.org/10.5281/zenodo.14861595",
   "zenodo_record": "https://zenodo.org/records/14861596",
   "record_id": "14861596",
   "publication_date": "2025-02-12",
@@ -83,5 +83,7 @@
     "2018_WoodliceAndMen",
     "2020_BehaviorEngineering",
     "2021_ModelingConflict"
-  ]
+  ],
+  "artifact_doi": "10.5281/zenodo.14861596",
+  "artifact_doi_url": "https://doi.org/10.5281/zenodo.14861596"
 }

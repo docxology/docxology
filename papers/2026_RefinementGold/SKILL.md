@@ -4,7 +4,7 @@ name: "Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Com
 description: "This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline. The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) thr..."
 tags: ["gold-refining", "manuscript-composition", "mega-madlib", "token-injection", "scientific-purity", "assaying", "karat-grading"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition*. Computational."
+citation: "Daniel Ari Friedman (2026). *Refinement of Gold: A Metallurgical Analogy for Scientific Manuscript Composition*. Zenodo."
 doi: "10.5281/zenodo.20931955"
 ---
 
@@ -20,15 +20,13 @@ This work addresses topics in **Computational**: gold refining, manuscript compo
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline.
-- The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) through smelting, assaying, and cupellation — to nine-nines certification (99.9999999%), the ultra-high-puri
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20931955`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "DoorsOfPerception"
+name: "The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing"
 description: "The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference. The paper develops a 'Thematic Atl..."
 tags: ["william-blake", "active-inference", "perception", "prediction", "thematic-atlas", "prophetic-vision", "generative-models", "markov-blankets"]
 domain: "Art & Synergetics"
-citation: "Daniel Ari Friedman (2026). *DoorsOfPerception*. Art & Synergetics."
+citation: "Daniel Ari Friedman (2026). *The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing*. Zenodo."
 doi: "10.5281/zenodo.18600040"
 ---
 
-# DoorsOfPerception
+# The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing
 
 **Daniel Ari Friedman** (2026) · Art & Synergetics
 
@@ -20,15 +20,13 @@ This work addresses topics in **Art & Synergetics**: William Blake, Active Infer
 
 Primary methods and techniques applied in this work:
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference.
-- The paper develops a 'Thematic Atl...
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.18600040`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

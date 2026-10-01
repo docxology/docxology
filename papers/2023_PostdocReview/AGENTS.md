@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — PostdocReview
+# AGENTS.md — Postdoc review (2020–2023)
 
-**Paper**: PostdocReview (2023)
+**Paper**: Postdoc review (2020–2023) (2023)
 **Domain**: Presentations & Media
 **Authors**: Daniel Ari Friedman
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Content production, Pedagogical design
-- Identifies findings: A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Sci
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects PostdocReview to related works in the bibliography
+- Connects Postdoc review (2020–2023) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References
@@ -45,4 +45,4 @@
 ### Related Papers
 - [2018_MVEE](../2018_MVEE/)
 - [2023_AntsAging](../2023_AntsAging/)
-- [2024_BioFirm](../2024_BioFirm/)
+- [2025_BiofirmDevelopmentWith](../2025_BiofirmDevelopmentWith/)

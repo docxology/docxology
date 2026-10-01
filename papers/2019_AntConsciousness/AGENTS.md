@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — AntConsciousness
+# AGENTS.md — The ant colony as a test for scientific theories of consciousness
 
-**Paper**: AntConsciousness (2019)
+**Paper**: The ant colony as a test for scientific theories of consciousness (2019)
 **Domain**: Entomology
 **Authors**: Daniel A. Friedman, Eirik Søvik
 
@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Collective behavior and consciousness theory, Multi-agent modeling of ant colony cognition, Comparative neuroethological analysis
-- Identifies findings: Here we address the scientific study of consciousness by proposing the ant colony as a model system.., We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s....
+- Identifies findings: See paper
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects AntConsciousness to related works in the bibliography
+- Connects The ant colony as a test for scientific theories of consciousness to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

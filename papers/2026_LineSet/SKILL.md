@@ -4,7 +4,7 @@ name: "The Line Set: Holding Instruments Apart"
 description: "A thin reader that declares what a set of small evaluative instruments is, reads whichever sibling packages are installed, and checks one narrow property: that no two of them have given the same spelling to different things. It adds no instrument of ..."
 tags: ["modularity", "information-hiding", "separation-of-concerns", "boundary-objects", "namespace-collision", "declarative-registry", "reproducible-review", "open-science"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *The Line Set: Holding Instruments Apart*. Computational."
+citation: "Daniel Ari Friedman (2026). *The Line Set: Holding Instruments Apart*. Zenodo."
 doi: "10.5281/zenodo.21754243"
 ---
 
@@ -20,14 +20,13 @@ This work addresses topics in **Computational**: modularity, information hiding,
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21754243`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

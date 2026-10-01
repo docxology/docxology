@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation
+# AGENTS.md — Sortition Upstream of NTQR
 
-**Paper**: Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation (2026)
+**Paper**: Sortition Upstream of NTQR (2026)
 **Domain**: Computational
 **Authors**: Daniel Ari Friedman
 
@@ -16,11 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Software pipeline design, Data-driven analysis
-- Identifies findings: How should you choose the judges, jurors, or reviewers who form a panel — and does
-that upstream choice change how well you can evaluate them without an answer key?, A panel can be selected many ways — by competence, by a representative lottery
-(sortition), by ideological bloc, or at random — and, separately, its noisy
-judgments can be evaluated blind: given the a
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -29,7 +26,7 @@ judgments can be evaluated blind: given the a
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Sortition Upstream of NTQR: How Panel Formation and Size Shape Ground-Truth-Free Evaluation to related works in the bibliography
+- Connects Sortition Upstream of NTQR to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -40,7 +37,7 @@ judgments can be evaluated blind: given the a
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

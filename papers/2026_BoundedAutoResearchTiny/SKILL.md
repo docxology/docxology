@@ -4,7 +4,7 @@ name: "Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task"
 description: "This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that turns an AutoResearch loop into ordinary reproducible research infrastructure. The case study is intentionally small but con..."
 tags: ["autoresearch", "reproducible-research", "machine-learning-benchmark", "artifact-readiness", "human-review", "local-artifact-integrity"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task*. Computational."
+citation: "Daniel Ari Friedman (2026). *Bounded AutoResearch for a Tiny Reproducible Machine-Learning Task*. Zenodo."
 doi: "10.5281/zenodo.20417016"
 ---
 
@@ -20,18 +20,13 @@ This work addresses topics in **Computational**: autoresearch, reproducible rese
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that
-turns an AutoResearch loop into ordinary reproducible research infrastruct
-- The case study is intentionally small but concrete: 2000 training
-and 500 test images from MNIST handwritten digit database are evaluated by the
-bounded small MNIST neural-network classification loop.
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -59,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20417016`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

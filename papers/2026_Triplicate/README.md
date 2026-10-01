@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- We present template_newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content.
-- The exemplar edition is The Triplicate, a homage to the historic newspaper of Crescent City, California (founded 1879).
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

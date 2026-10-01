@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — MutAnts
+# AGENTS.md — The MutAnts are here
 
-**Paper**: MutAnts (2017)
+**Paper**: The MutAnts are here (2017)
 **Domain**: Entomology
 **Authors**: Daniel A. Friedman, Deborah M. Gordon, Liqun Luo
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis
-- Identifies findings: The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior., Analysis of In this issue of...
+- Extracts methods: See paper
+- Identifies findings: Analysis of In this issue of...
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects MutAnts to related works in the bibliography
+- Connects The MutAnts are here to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

@@ -4,7 +4,7 @@ name: "AGEINT: Agentic Intelligence"
 description: "<p>Synthetic Analytic Tradecraft (AGEINT, or Agentic Intelligence), is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machinery of Synthetic Analytic Tradecraft visible on the ..."
 tags: ["agentic-intelligence", "ageint", "ai-agents", "intelligence-tradecraft", "cognitive-security", "structured-analytic-techniques", "active-inference", "model-context-protocol", "multi-agent-systems", "operational-governance"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *AGEINT: Agentic Intelligence*. Computational."
+citation: "Daniel Ari Friedman (2026). *AGEINT: Agentic Intelligence*. Zenodo."
 doi: "10.5281/zenodo.20732274"
 artifact_doi: "10.5281/zenodo.20732275"
 ---
@@ -21,15 +21,13 @@ This work addresses topics in **Computational**: agentic intelligence, AGEINT, A
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- <p>Synthetic Analytic Tradecraft (AGEINT, or Agentic Intelligence), is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machiner
-- It converts SIST Guide TOC and Bibliography into 16 parts, 51 modules, 9 methods appendices, 20 named AGEINT patterns, and 312 parsed source-guide references without renumbering inherited source ident
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -58,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20732274`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

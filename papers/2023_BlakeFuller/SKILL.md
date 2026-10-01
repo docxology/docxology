@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "BlakeFuller"
+name: "William Blake & Buckminster Fuller: Lives in Juxtaposition"
 description: "A presentation for '52 Living Ideas' comparing the lives and works of William Blake and Buckminster Fuller in juxtaposition. The study in comprehensivity explores structural parallels between Blake's..."
 tags: ["william-blake", "buckminster-fuller", "comprehensivity", "design-science", "prophetic-vision", "art-science-synthesis", "52-living-ideas", "juxtaposition"]
 domain: "Art & Synergetics"
-citation: "Daniel A. Friedman (2023). *BlakeFuller*. Art & Synergetics."
+citation: "Daniel Ari Friedman (2023). *William Blake & Buckminster Fuller: Lives in Juxtaposition*. Zenodo."
 doi: "10.5281/zenodo.7514367"
 ---
 
-# BlakeFuller
+# William Blake & Buckminster Fuller: Lives in Juxtaposition
 
-**Daniel A. Friedman** (2023) · Art & Synergetics
+**Daniel Ari Friedman** (2023) · Art & Synergetics
 
 ## Context
 
@@ -20,8 +20,7 @@ This work addresses topics in **Art & Synergetics**: William Blake, Buckminster 
 
 Primary methods and techniques applied in this work:
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -56,5 +55,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7514367`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 CurioCards
+# 🎨 Writing on Curio Cards for the "On NFT" book
 
 **Daniel A. Friedman** (2024) · *Taschen*
 
@@ -16,8 +16,7 @@
 
 ## Methods
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -31,7 +30,7 @@
 
 ## Citation
 
-> Daniel A. Friedman (2024). *CurioCards*. Taschen.
+> Daniel A. Friedman (2024). *Writing on Curio Cards for the "On NFT" book*. Taschen.
 
 ## Related
 

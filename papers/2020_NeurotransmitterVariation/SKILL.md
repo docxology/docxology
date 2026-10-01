@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "NeurotransmitterVariation"
+name: "Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains"
 description: "Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions. Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a..."
 tags: ["neurotransmitters", "dopamine", "serotonin", "octopamine", "tyramine", "pogonomyrmex-barbatus", "ce-fscv", "biogenic-amines", "colony-variation"]
 domain: "Entomology"
-citation: "Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton (2020). *NeurotransmitterVariation*. Entomology."
+citation: "Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton (2020). *Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains*. Analytical & Bioanalytical Chemistry."
 doi: "10.1007/s00216-019-02355-3"
 ---
 
-# NeurotransmitterVariation
+# Measurement of natural variation of neurotransmitter tissue content in red harvester ant brains
 
 **Mimi Shin, Daniel A. Friedman, Deborah M. Gordon, B. Jill Venton** (2020) · Entomology
 
@@ -20,15 +20,13 @@ This work addresses topics in **Entomology**: neurotransmitters, dopamine, serot
 
 Primary methods and techniques applied in this work:
 
-- Field observation and behavioral assays
-- Population genetics analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions..
-- Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.1007/s00216-019-02355-3`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

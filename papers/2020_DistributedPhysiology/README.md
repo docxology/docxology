@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 DistributedPhysiology
+# 🐜 Distributed physiology and the molecular basis of social life in eusocial insects
 
-**Daniel A. Friedman, Deborah M. Gordon** (2020) · *Hormones & Behavior*
+**D.A. Friedman, B.R. Johnson, T.A. Linksvayer** (2020) · *Hormones & Behavior*
 
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.yhbeh.2020.104757-blue)](https://doi.org/10.1016/j.yhbeh.2020.104757)
 
@@ -18,12 +18,10 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals.
 - Analysis of We examine how this...
 
 ## Artifacts
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Deborah M. Gordon (2020). *DistributedPhysiology*. Hormones & Behavior. DOI: 10.1016/j.yhbeh.2020.104757. URL: https://doi.org/10.1016/j.yhbeh.2020.104757.
+> D.A. Friedman, B.R. Johnson, T.A. Linksvayer (2020). *Distributed physiology and the molecular basis of social life in eusocial insects*. Hormones & Behavior. DOI: 10.1016/j.yhbeh.2020.104757. URL: https://doi.org/10.1016/j.yhbeh.2020.104757.
 
 ## Related
 

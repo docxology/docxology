@@ -4,7 +4,7 @@ name: "Tracking Public Sensemaking through Rhetorical Annotation of Image Memes"
 description: "Political polarization and declining trust in institutions are driving societal destabilization and radicalization. Recently there has been increased interest in online misinformation intervention and deterrence, for example through the use of machin..."
 tags: ["sensemaking", "memes", "knowledge-management", "narrative", "rhetorical-analysis"]
 domain: "Cognitive Security"
-citation: "Mridula Mascarenhas, RJ Cordes, Bleu Knight, Sarah Murphy, Daniel A. Friedman (2022). *Tracking Public Sensemaking through Rhetorical Annotation of Image Memes*. Cognitive Security."
+citation: "Mridula Mascarenhas, RJ Cordes, Bleu Knight, Sarah Murphy, Daniel A. Friedman (2022). *Tracking Public Sensemaking through Rhetorical Annotation of Image Memes*. Zenodo."
 doi: "10.5281/zenodo.6904426"
 artifact_doi: "10.5281/zenodo.6904427"
 ---
@@ -21,15 +21,13 @@ This work addresses topics in **Cognitive Security**: Sensemaking, Memes, Knowle
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Political polarization and declining trust in institutions are driving societal destabilization and radicalization.
-- Recently there has been increased interest in online misinformation intervention and deterrence, for example through the use of machine learning on language use.
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -58,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.6904426`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

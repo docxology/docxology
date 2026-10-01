@@ -2,7 +2,7 @@
 
 # 🧠 Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences
 
-**P. C. Kavi, Daniel Ari Friedman & G. Patow** (2026) · *CSCIS vol 2857, Springer*
+**Prakash Chandra Kavi, Daniel Ari Friedman, Gustavo Patow** (2026) · *CSCIS vol 2857, Springer*
 
 [![DOI](https://img.shields.io/badge/DOI-10.1007%2F978-3-032-16955-6_11-blue)](https://doi.org/10.1007/978-3-032-16955-6_11)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Three-level hierarchical Active Inference framework for focused attention meditation: thoughtseed agents (Markov blankets) couple to DMN/VAN/DAN/FPN; simulations reproduce 49% lower free energy and DM
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -32,7 +31,7 @@
 
 ## Citation
 
-> P. C. Kavi, Daniel Ari Friedman & G. Patow (2026). *Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences*. CSCIS vol 2857, Springer. DOI: 10.1007/978-3-032-16955-6_11. URL: https://doi.org/10.1007/978-3-032-16955-6_11.
+> Prakash Chandra Kavi, Daniel Ari Friedman, Gustavo Patow (2026). *Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences*. CSCIS vol 2857, Springer. DOI: 10.1007/978-3-032-16955-6_11. URL: https://doi.org/10.1007/978-3-032-16955-6_11.
 
 ## Related
 

@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — InformationCommons
+# AGENTS.md — Structuring the Information Commons: Open Standards and Cognitive Security
 
-**Paper**: InformationCommons (2022)
+**Paper**: Structuring the Information Commons: Open Standards and Cognitive Security (2022)
 **Domain**: Cognitive Security
 **Authors**: Scott David, R.J. Cordes, Daniel A. Friedman (editors)
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
-- Identifies findings: An edited volume examining open standards and cognitive security for structuring the information commons.., The book addresses how information ecosystems can be designed to promote trust, transparency....
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects InformationCommons to related works in the bibliography
+- Connects Structuring the Information Commons: Open Standards and Cognitive Security to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — NSFReporting
+# AGENTS.md — Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing
 
-**Paper**: NSFReporting (2023)
+**Paper**: Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing (2023)
 **Domain**: Computational
 **Authors**: Daniel Ari Friedman
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Software pipeline design, Data-driven analysis
+- Extracts methods: See paper
 - Identifies findings: This report presents an approach for enhancing postdoctoral reporting at the National Science Foundation (NSF) using generative intelligence systems.., The proposed system integrates updatable profiles, intelligent processing prompts, and a dynamic reporting system to transform how postdocs report their research progress and collaborations.., The system's design focuses on operational efficiency, real-time evaluation, and a consistent reporting framework..
 - Maps contributions to Computational literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects NSFReporting to related works in the bibliography
+- Connects Enhanced NSF Postdoctoral Reporting via Synthetic Intelligence Language Processing to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

@@ -1,34 +1,34 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "FederatedInference"
+title: "Federated inference and belief sharing"
 date-released: 2024
 doi: 10.1016/j.neubiorev.2023.105500
 url: "https://doi.org/10.1016/j.neubiorev.2023.105500"
 authors:
-  - family-names: Friston
-    given-names: Karl J.
-  - family-names: Parr
-    given-names: Thomas
-  - family-names: Heins
-    given-names: Conor
-  - family-names: Constant
-    given-names: Axel
-  - family-names: Friedman
-    given-names: Daniel
+  - family-names: "Friston"
+    given-names: "Karl J."
+  - family-names: "Parr"
+    given-names: "Thomas"
+  - family-names: "Heins"
+    given-names: "Conor"
+  - family-names: "Constant"
+    given-names: "Axel"
+  - family-names: "Friedman"
+    given-names: "Daniel"
     orcid: "https://orcid.org/0000-0001-6232-9096"
-  - family-names: Isomura
-    given-names: Takuya
-  - family-names: Fields
-    given-names: Chris
-  - family-names: Verbelen
-    given-names: Tim
-  - family-names: Ramstead
-    given-names: Maxwell
-  - family-names: Clippinger
-    given-names: John
-  - family-names: Frith
-    given-names: Christopher D.
+  - family-names: "Isomura"
+    given-names: "Takuya"
+  - family-names: "Fields"
+    given-names: "Chris"
+  - family-names: "Verbelen"
+    given-names: "Tim"
+  - family-names: "Ramstead"
+    given-names: "Maxwell"
+  - family-names: "Clippinger"
+    given-names: "John"
+  - family-names: "Frith"
+    given-names: "Christopher D."
 identifiers:
   - type: doi
     value: "10.1016/j.neubiorev.2023.105500"

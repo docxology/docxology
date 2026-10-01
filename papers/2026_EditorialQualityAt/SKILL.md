@@ -4,7 +4,7 @@ name: "Editorial Quality at Scale: A Reproducible Prose-Review Pipeline"
 description: "This paper documents template_prose_project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template). It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.co..."
 tags: ["prose-analysis", "readability", "editorial-review", "reproducible-research", "manuscript-quality"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Editorial Quality at Scale: A Reproducible Prose-Review Pipeline*. Computational."
+citation: "Daniel Ari Friedman (2026). *Editorial Quality at Scale: A Reproducible Prose-Review Pipeline*. Zenodo."
 doi: "10.5281/zenodo.20417104"
 ---
 
@@ -20,15 +20,13 @@ This work addresses topics in **Computational**: prose analysis, readability, ed
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- This paper documents template_prose_project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template).
-- It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, e
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20417104`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

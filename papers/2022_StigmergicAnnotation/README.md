@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ StigmergicAnnotation
+# 🛡️ From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking
 
-**Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf** (2022) · *Hypertext '22*
+**Ronen Tamari, Daniel Friedman, William Fischer, Lauren Hebert, Dafna Shahaf** (2022) · *Hypertext '22*
 
 [![DOI](https://img.shields.io/badge/DOI-10.48550%2FarXiv.2205.06345-blue)](https://doi.org/10.48550/arXiv.2205.06345)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -33,7 +32,7 @@
 
 ## Citation
 
-> Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf (2022). *StigmergicAnnotation*. Hypertext '22. DOI: 10.48550/arXiv.2205.06345. URL: https://doi.org/10.48550/arXiv.2205.06345.
+> Ronen Tamari, Daniel Friedman, William Fischer, Lauren Hebert, Dafna Shahaf (2022). *From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking*. Hypertext '22. DOI: 10.48550/arXiv.2205.06345. URL: https://doi.org/10.48550/arXiv.2205.06345.
 
 ## Related
 

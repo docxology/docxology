@@ -1,16 +1,16 @@
 {
-  "title": "ImageMemeResearch",
+  "title": "Bridging gaps in image meme research: A multidisciplinary paradigm",
   "domain": "Cognitive Security",
   "type": "Paper",
   "creators": [
     {
-      "name": "Daniel A. Friedman"
-    },
-    {
-      "name": "R.J. Cordes"
-    },
-    {
       "name": "Mridula Mascarenhas"
+    },
+    {
+      "name": "Daniel Ari Friedman"
+    },
+    {
+      "name": "Richard J Cordes"
     }
   ],
   "description": "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We prov...",

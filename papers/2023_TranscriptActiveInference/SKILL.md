@@ -1,10 +1,10 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism""
+name: "Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\""
 description: "Transcript from livestream on July 25, 2023 at the Active Inference Institute. YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/ActiveInferenceInstitute/Active..."
 tags: ["consciousness", "science", "communication"]
 domain: "Active Inference"
-citation: "Megan A. K. Peters, Nora Bradford, Daniel Friedman (2023). *Transcript of Active Inference GuestStream 049.1: "Clickbait, consciousness science, and responsible journalism"*. Active Inference."
+citation: "Megan A. K. Peters, Nora Bradford, Daniel Friedman (2023). *Transcript of Active Inference GuestStream 049.1: \"Clickbait, consciousness science, and responsible journalism\"*. Zenodo."
 doi: "10.5281/zenodo.8228934"
 artifact_doi: "10.5281/zenodo.8229512"
 ---
@@ -21,15 +21,13 @@ This work addresses topics in **Active Inference**: Consciousness, Science, Comm
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Transcript from livestream on July 25, 2023 at the Active Inference Institute.
-- YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/tree/main/Gu
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -58,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.8228934`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

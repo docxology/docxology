@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — MillenniumAudit
+# AGENTS.md — Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global)
 
-**Paper**: MillenniumAudit (2026)
+**Paper**: Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global) (2026)
 **Domain**: 🔍
 **Authors**: Daniel Ari Friedman
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects MillenniumAudit to related works in the bibliography
+- Connects Forensic Audit of the MillenniumLean Clay-Proof Package (AIX Global) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

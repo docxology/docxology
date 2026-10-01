@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 GeneExpressionForagers
+# 🐜 Gene expression variation in the brains of harvester ant foragers is associated with collective behavior
 
-**Daniel A. Friedman, Brian R. Johnson, Timothy A. Linksvayer** (2020) · *Communications Biology*
+**Daniel Ari Friedman, Ryan Alexander York, Austin Travis Hilliard, Deborah M. Gordon** (2020) · *Communications Biology*
 
 [![DOI](https://img.shields.io/badge/DOI-10.1038%2Fs42003-020-0813-8-blue)](https://doi.org/10.1038/s42003-020-0813-8)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects..
-- Here we characterize transcriptomic profiles of foragers compar....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Brian R. Johnson, Timothy A. Linksvayer (2020). *GeneExpressionForagers*. Communications Biology. DOI: 10.1038/s42003-020-0813-8. URL: https://doi.org/10.1038/s42003-020-0813-8.
+> Daniel Ari Friedman, Ryan Alexander York, Austin Travis Hilliard, Deborah M. Gordon (2020). *Gene expression variation in the brains of harvester ant foragers is associated with collective behavior*. Communications Biology. DOI: 10.1038/s42003-020-0813-8. URL: https://doi.org/10.1038/s42003-020-0813-8.
 
 ## Related
 

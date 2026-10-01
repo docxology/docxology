@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Bayesian modeling and inference
+- Extracts methods: See paper
 - Identifies findings: Iris dataset analysis demonstrates reproducible visual analytics workflow for educational contexts, Slide-based presentation format effectively communicates active inference concepts to diverse audiences
 - Maps contributions to Active Inference literature
 

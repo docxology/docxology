@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Symergetics
+# AGENTS.md — Symergetics: Symbolic Synergetics for Rational Arithmetic
 
-**Paper**: Symergetics (2025)
+**Paper**: Symergetics: Symbolic Synergetics for Rational Arithmetic (2025)
 **Domain**: Art & Synergetics
-**Authors**: Daniel Ari Friedman
+**Authors**: Daniel Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
-- Identifies findings: Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics., Analysis of The package implemen...
+- Extracts methods: See paper
+- Identifies findings: Analysis of The package implemen...
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Symergetics to related works in the bibliography
+- Connects Symergetics: Symbolic Synergetics for Rational Arithmetic to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

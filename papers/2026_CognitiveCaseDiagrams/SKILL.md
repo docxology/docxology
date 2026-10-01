@@ -4,7 +4,7 @@ name: "Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case"
 description: "Linguistic case offers a setting in which to examine how diagrams connect relational structure, compositional syntax, and uncertainty. This article reviews categorical approaches and supplies an executable collection of deliberately small examples. T..."
 tags: ["cognitivecasediagrams"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman (2026). *Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case*. Active Inference."
+citation: "Daniel Ari Friedman (2026). *Cognitive Diagrams: Reviewing Categorical Accounts of Linguistic Case*. Active Inference Journal."
 doi: "10.5281/zenodo.19695259"
 ---
 
@@ -20,8 +20,7 @@ This work addresses topics in **Active Inference**: CognitiveCaseDiagrams.
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.19695259`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

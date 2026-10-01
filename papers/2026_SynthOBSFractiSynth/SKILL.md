@@ -4,7 +4,7 @@ name: "SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native T
 description: "A tested Python reference engine, native libobs plugin, and obspython bridge for a telemetry-driven broadcast console. Includes deterministic figures, a versioned live OBS evidence bundle, fail-closed telemetry contracts, and a research-grade technic..."
 tags: ["obs-studio", "libobs", "reproducible-research-software", "space-weather-telemetry", "real-time-digital-signal-processing", "software-provenance", "software-citation"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer*. Computational."
+citation: "Daniel Ari Friedman (2026). *SynthOBS & FractiSynth: A Golden-Ratio OBS Broadcast Console and Native Transducer*. Zenodo."
 doi: "10.5281/zenodo.21418782"
 ---
 
@@ -20,14 +20,13 @@ This work addresses topics in **Computational**: OBS Studio, libobs, reproducibl
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21418782`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

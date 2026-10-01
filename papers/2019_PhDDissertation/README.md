@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 PhDDissertation
+# 🐜 PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus
 
 **Daniel Ari Friedman** (2019) · *Stanford University*
 
@@ -22,8 +22,7 @@
 
 ## Key Findings
 
-- This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)..
-- It integrates field behavioral ecology, neuroche....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -32,7 +31,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2019). *PhDDissertation*. Stanford University.
+> Daniel Ari Friedman (2019). *PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus*. Stanford University.
 
 ## Related
 

@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 AgentAndNiche
+# 🎨 Synthesis of Agent and Niche
 
-**Daniel Ari Friedman** (2025) · *Zenodo*
+**Daniel Friedman** (2025) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17235137-blue)](https://doi.org/10.5281/zenodo.17235137)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Full
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -35,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2025). *AgentAndNiche*. Zenodo. DOI: 10.5281/zenodo.17235137. URL: https://doi.org/10.5281/zenodo.17235137.
+> Daniel Friedman (2025). *Synthesis of Agent and Niche*. Zenodo. DOI: 10.5281/zenodo.17235137. URL: https://doi.org/10.5281/zenodo.17235137.
 
 ## Related
 

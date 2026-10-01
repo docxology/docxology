@@ -1,24 +1,24 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "DistributedScience"
+title: "Distributed Science — The Scientific Process as Multi-Scale Active Inference"
 date-released: 2023
 doi: 10.31219/osf.io/dnw5k
 url: "https://doi.org/10.31219/osf.io/dnw5k"
 authors:
-  - family-names: Balzan
-    given-names: Francesco
-  - family-names: Campbell
-    given-names: John
-  - family-names: Friston
-    given-names: Karl
-  - family-names: Ramstead
-    given-names: Maxwell J.D.
-  - family-names: Friedman
-    given-names: Daniel
+  - family-names: "Balzan"
+    given-names: "Francesco"
+  - family-names: "Campbell"
+    given-names: "John"
+  - family-names: "Friston"
+    given-names: "Karl"
+  - family-names: "Ramstead"
+    given-names: "Maxwell James"
+  - family-names: "Friedman"
+    given-names: "Daniel"
     orcid: "https://orcid.org/0000-0001-6232-9096"
-  - family-names: Constant
-    given-names: Axel
+  - family-names: "Constant"
+    given-names: "Axel"
 identifiers:
   - type: doi
     value: "10.31219/osf.io/dnw5k"

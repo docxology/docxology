@@ -255,11 +255,38 @@ def load_works() -> list[dict]:
     return json.loads(WORKS.read_text(encoding="utf-8"))["works"]
 
 
+def normalise_person(author: dict) -> tuple[str, str]:
+    """Return (family, given) with registry display-name packing undone.
+
+    Zenodo frequently deposits a creator as ``familyName: "Daniel Ari Friedman"``
+    with no ``givenName``. Rendered verbatim that becomes an uninvertible
+    "Daniel Ari Friedman" cell, which every export then treats as an
+    organisation (CSL ``literal``). The split is applied only when the creator
+    carries an ORCID iD: an ORCID identifies one individual, so the display name
+    is a personal "Given Family" name. Without one the string may be a
+    pseudonym or collective ("Die Schwarze Katze", "Sensemaking Scenius"), and
+    it is left exactly as the registry recorded it.
+    """
+    family = (author.get("family") or "").strip()
+    given = (author.get("given") or "").strip()
+    if not given and author.get("orcid") and "," not in family and len(family.split()) >= 2:
+        family, given = _split_display_name(family)
+    return OWNER_NAME_CORRECTIONS.get((family, given), (family, given))
+
+
+# Registry records that mis-split the catalogue owner's own name, mapped to the
+# correct (family, given). Explicit pairs only: the owner's name structure is
+# known, so this is a correction rather than an inference about anyone else.
+# Crossref 10.1016/j.cogsys.2023.02.005 (#46) deposits family "Ari Friedman".
+OWNER_NAME_CORRECTIONS: dict[tuple[str, str], tuple[str, str]] = {
+    ("Ari Friedman", "Daniel"): ("Friedman", "Daniel Ari"),
+}
+
+
 def format_author(author: dict) -> str:
     if author.get("literal"):
         return author["literal"]
-    family = (author.get("family") or "").strip()
-    given = (author.get("given") or "").strip()
+    family, given = normalise_person(author)
     return f"{family}, {given}".strip(", ") if given else family
 
 

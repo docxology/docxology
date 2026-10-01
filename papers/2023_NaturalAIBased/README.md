@@ -2,7 +2,7 @@
 
 # 💻 A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance
 
-**John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, and 18 others** (2023) · *Zenodo*
+**John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, David A. Silbersweig, Francesco Lapenta, Holly Grimm, Jeff Emmett, Joshua Shane, Karl Friston, Martin Nkafu Nkemnkia, Matthew Brown, Matthew Pirkowski, Michael Levin, Michael Zargham, Nguyen Anh Tuan, Krishnashree Achuthan, Thomas Patterson, Scott L. David, Thomas Kehler, Virginia Bleu Knight, Yasuhide Nakayama** (2023) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10360056-blue)](https://doi.org/10.5281/zenodo.10360056)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Software pipeline design
-- Data-driven analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Letter on: "A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance". v1 released on December 12, 2023.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -35,7 +34,7 @@
 
 ## Citation
 
-> John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, and 18 others (2023). *A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance*. Zenodo. DOI: 10.5281/zenodo.10360056. URL: https://doi.org/10.5281/zenodo.10360056.
+> John Clippinger, Bert de Vries, Beth Noveck, Chris Fields, Cory Slater, Daniel Ari Friedman, David A. Silbersweig, Francesco Lapenta, Holly Grimm, Jeff Emmett, Joshua Shane, Karl Friston, Martin Nkafu Nkemnkia, Matthew Brown, Matthew Pirkowski, Michael Levin, Michael Zargham, Nguyen Anh Tuan, Krishnashree Achuthan, Thomas Patterson, Scott L. David, Thomas Kehler, Virginia Bleu Knight, Yasuhide Nakayama (2023). *A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance*. Zenodo. DOI: 10.5281/zenodo.10360056. URL: https://doi.org/10.5281/zenodo.10360056.
 
 ## Related
 

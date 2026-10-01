@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "CognitiveArtScience"
+name: "On Cognitive Art & Science: Toward Wholeness From Both Sides"
 description: "This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation. Through Active Inference..."
 tags: ["cognitive-art-science", "aesthetic-experience", "creative-cognition", "active-inference", "art-science-integration"]
 domain: "Art & Synergetics"
-citation: "Daniel A. Friedman (2025). *CognitiveArtScience*. Art & Synergetics."
+citation: "Daniel Ari Friedman (2025). *On Cognitive Art & Science: Toward Wholeness From Both Sides*. Zenodo."
 doi: "10.5281/zenodo.16740438"
 ---
 
-# CognitiveArtScience
+# On Cognitive Art & Science: Toward Wholeness From Both Sides
 
-**Daniel A. Friedman** (2025) · Art & Synergetics
+**Daniel Ari Friedman** (2025) · Art & Synergetics
 
 ## Context
 
@@ -20,14 +20,12 @@ This work addresses topics in **Art & Synergetics**: cognitive art-science, aest
 
 Primary methods and techniques applied in this work:
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation.
 - Analysis of Through Active Inference...
 
 ## Related Works
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.16740438`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

@@ -14,9 +14,9 @@ Art portfolio: https://www.flickr.com/photos/daniel_friedman/
 Voice/Text: Ask via email
 
 Variant: software-consulting
-Generated: 2026-09-30T06:14:46Z
+Generated: 2026-10-01T16:43:54Z
 
-Current public metrics: 220 curated works; 158 catalogued software repositories (119 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 224 docxology + 43 AII public repositories (170 primary, 97 forks).
+Current public metrics: 219 curated works; 158 catalogued software repositories (119 owned + 39 AII); 815 Google Scholar citations, h-index 14, i10-index 16 as of 2026-08-26; GitHub inventory 224 docxology + 43 AII public repositories (170 primary, 97 forks).
 
 SUMMARY
 -------
@@ -54,12 +54,12 @@ EXPERIENCE
 AWARDS AND FELLOWSHIPS
 ----------------------
 
-WORKS AND PUBLICATIONS (212)
+WORKS AND PUBLICATIONS (211)
 ----------------------------
 [001] 2026 | Paper | A template/ approach to Reproducible Generative Research: Architecture and Ergonomics from Configuration through Publication | Zenodo | 10.5281/zenodo.16903351
 [003] 2026 | Paper | Before Pragmatism Had a Name: Blake's "America A Prophecy" Anticipates American Anticipatory Epistemology | Zenodo | 10.5281/zenodo.18807970
 [004] 2026 | Paper | The Golden Compass and the Lunar Flux: William Blake, Bimetallic Meta-stability, and the Architecture of Value | Zenodo | 10.5281/zenodo.19335195
-[005] 2026 | Paper | Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory) | Zenodo | 10.5281/zenodo.18364118
+[005] 2026 | Paper | Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations) | Zenodo | 10.5281/zenodo.18364118
 [007] 2026 | Paper | The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing | Zenodo | 10.5281/zenodo.18600040
 [008] 2025 | Presentation | 5th Applied Active Inference Symposium — Abstract Book | Presentation | 10.5281/zenodo.17555266
 [009] 2025 | Paper | Adaptive Basic Income (AuBI): Integrating AI, Decentralized Infrastructure, and Active Inference | Zenodo | 10.5281/zenodo.17228945
@@ -83,9 +83,8 @@ WORKS AND PUBLICATIONS (212)
 [027] 2025 | Paper | Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States | Entropy | 10.3390/e27050459
 [028] 2025 | Paper | Towards a Science of Consciousness and Social Complexity... For Ants | Book Chapter | https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes
 [029] 2024 | Paper | Aligning Active Inference Ontology to SUMO | Zenodo | 10.5281/zenodo.11459322
-[030] 2024 | Presentation | BioFirm Development at Applied Active Inference Symposium 2024 | Presentation | 10.5281/zenodo.14861595
 [031] 2024 | Paper | Bridging gaps in image meme research: A multidisciplinary paradigm | JASIST | 10.1002/asi.24900
-[032] 2024 | Paper | Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea | Ecology & Evolution | 10.1002/ece3.70063
+[032] 2024 | Paper | Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea | Ecology & Evolution | 10.1002/ece3.70063
 [033] 2024 | Paper | Comments on National Digital Twins R&D Strategic Plan | Zenodo | 10.5281/zenodo.13273681
 [034] 2024 | Paper | Enhancing Population-based Search with Active Inference | ArXiv | 10.48550/arXiv.2408.09548
 [035] 2024 | Paper | FarmWorks: Decentralized AI Agents for Personalized Solutions | Zenodo | 10.5281/zenodo.13754585
@@ -119,7 +118,7 @@ WORKS AND PUBLICATIONS (212)
 [065] 2023 | Paper | William Blake & Buckminster Fuller: Lives in Juxtaposition | Zenodo | 10.5281/zenodo.7514367
 [066] 2022 | Paper | An Active Inference Ontology for Decentralized Science | Zenodo | 10.5281/zenodo.6320574
 [067] 2022 | Paper | Catechism for Towards Active Diffusion | Zenodo | 10.5281/zenodo.7443847
-[068] 2022 | Paper | From Users to (Sense)Makers: Stigmergic Social Annotation | Hypertext '22 | 10.48550/arXiv.2205.06345
+[068] 2022 | Paper | From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking | Hypertext '22 | 10.48550/arXiv.2205.06345
 [069] 2022 | Paper | On free will or the lack thereof (interview with Robert Sapolsky) | ALIUS Bulletin | 10.5281/zenodo.7394900
 [070] 2022 | Paper | Predictive Processing Interpretation of the Mirror Test | Zenodo | 10.5281/zenodo.7377255
 [071] 2022 | Book | Structuring the Information Commons: Open Standards and Cognitive Security | COGSEC.org | https://cogsec.org
@@ -142,20 +141,20 @@ WORKS AND PUBLICATIONS (212)
 [092] 2019 | Paper | Dennett Explained (interview with Daniel Dennett) | ALIUS Bulletin | 10.34700/7gkw-zh08
 [093] 2019 | Paper | PhD: Behavioral, Physiological, and Transcriptomic Variation Among Colonies of Pogonomyrmex barbatus | Stanford University | https://purl.stanford.edu/pb813wm1484
 [094] 2019 | Paper | The ant colony as a test for scientific theories of consciousness | Synthese | 10.1007/s11229-019-02130-y
-[095] 2019 | Paper | The physiology of forager hydration and variation among harvester ant colonies | Scientific Reports | 10.1038/s41598-019-41586-3
+[095] 2019 | Paper | The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior | Scientific Reports | 10.1038/s41598-019-41586-3
 [096] 2018 | Paper | Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations | PLoS One | 10.1371/journal.pone.0202117
 [097] 2018 | Presentation | MVEE: A Framework for Evolutionary Studies | Presentation | 10.5281/zenodo.13999298
 [098] 2018 | Paper | Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) | ALIUS Bulletin | 10.34700/h460-nz89
 [099] 2018 | Paper | Partner Pen Play in Parallel (PPPiP): A New Paradigm for Relationship Improvement | Arts | 10.3390/arts7030039
-[100] 2018 | Paper | The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants | iScience | 10.1016/j.isci.2018.09.001
+[100] 2018 | Paper | The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants | iScience | 10.1016/j.isci.2018.09.001
 [101] 2017 | Paper | The MutAnts are here | Cell | 10.1016/j.cell.2017.07.046
 [102] 2017 | Paper | Two lineages that need each other | Molecular Ecology | 10.1111/mec.13964
 [103] 2016 | Paper | Ant Genetics: Reproductive Physiology, Worker Morphology, and Behavior | Annual Review of Neuroscience | 10.1146/annurev-neuro-070815-013927
 [104] 2016 | Paper | Context-dependent expression of the foraging gene in field colonies of ants | Proceedings of the Royal Society B | 10.1098/rspb.2016.0841
-[105] 2016 | Paper | Influence of Nuclear Structure on formation of radiation-induced lethal lesions | Int. J. Radiation Biology | 10.3109/09553002.2016.1144941
+[105] 2016 | Paper | Influence of nuclear structure on the formation of radiation-induced lethal lesions | Int. J. Radiation Biology | 10.3109/09553002.2016.1144941
 [106] 2015 | Paper | Commentary: Portuguese crypto-Jews: the genetic heritage of a complex history | Frontiers in Genetics | 10.3389/fgene.2015.00261
-[107] 2015 | Paper | Could Ehrlichial Infection Cause Some Changes Associated with Leukemia? | Medical Hypotheses | 10.1016/j.mehy.2015.09.015
-[108] 2015 | Paper | Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees | Molecular Biology & Evolution | 10.1093/molbev/msu292
+[107] 2015 | Paper | Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options? | Medical Hypotheses | 10.1016/j.mehy.2015.09.015
+[108] 2015 | Paper | Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees | Molecular Biology & Evolution | 10.1093/molbev/msu292
 [109] 2026 | Paper | Ento-Linguistics: Language, Ambiguity, and Scientific Communication in Entomology | Zenodo | 10.5281/zenodo.19574117
 [110] 2026 | Paper | A Living Meta-Analysis Architecture for Active Inference: Assertion Extraction, Nanopublications, and Hypothesis Scoring | Active Inference Journal | 10.5281/zenodo.19461933
 [111] 2026 | Paper | Dynamic Attentional Agents in Focused Attention Meditation: Hierarchical Computational Modeling of Expert-Novice Differences | CSCIS vol 2857, Springer | 10.1007/978-3-032-16955-6_11
@@ -174,7 +173,7 @@ WORKS AND PUBLICATIONS (212)
 [125] 2026 | Paper | BeeStack: An Evidence-Typed Scaffold for Whole-Colony Honeybee Simulation | Zenodo | 10.5281/zenodo.20420556
 [126] 2026 | Paper | When do bugs see (infra)red? | Zenodo | 10.5281/zenodo.20450880
 [127] 2026 | Paper | Self-Improvement Agent Harness: A Deterministic SIA Exemplar | Zenodo | 10.5281/zenodo.20453879
-[128] 2025 | Presentation | Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024 | Zenodo | 10.5281/zenodo.14861596
+[128] 2025 | Presentation | Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024 | Zenodo | 10.5281/zenodo.14861595
 [129] 2025 | Paper | Con-cat-enate: emulation of Cat Hippocampus | Zenodo | 10.5281/zenodo.13626536
 [130] 2025 | Paper | Graphspeak: of language and handshake | Zenodo | 10.5281/zenodo.14737156
 [131] 2025 | Paper | BevCyc - posit on primitive drivers of creatures | Zenodo | 10.5281/zenodo.14737075

@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ InformationCommons
+# 🛡️ Structuring the Information Commons: Open Standards and Cognitive Security
 
 **Scott David, R.J. Cordes, Daniel A. Friedman (editors)** (2022) · *COGSEC.org*
 
@@ -16,13 +16,11 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- An edited volume examining open standards and cognitive security for structuring the information commons..
-- The book addresses how information ecosystems can be designed to promote trust, transparency....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -31,7 +29,7 @@
 
 ## Citation
 
-> Scott David, R.J. Cordes, Daniel A. Friedman (editors) (2022). *InformationCommons*. COGSEC.org.
+> Scott David, R.J. Cordes, Daniel A. Friedman (editors) (2022). *Structuring the Information Commons: Open Standards and Cognitive Security*. COGSEC.org.
 
 ## Related
 

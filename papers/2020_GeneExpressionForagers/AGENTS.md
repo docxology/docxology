@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — GeneExpressionForagers
+# AGENTS.md — Gene expression variation in the brains of harvester ant foragers is associated with collective behavior
 
-**Paper**: GeneExpressionForagers (2020)
+**Paper**: Gene expression variation in the brains of harvester ant foragers is associated with collective behavior (2020)
 **Domain**: Entomology
-**Authors**: Daniel A. Friedman, Brian R. Johnson, Timothy A. Linksvayer
+**Authors**: Daniel Ari Friedman, Ryan Alexander York, Austin Travis Hilliard, Deborah M. Gordon
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis
-- Identifies findings: Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects.., Here we characterize transcriptomic profiles of foragers compar....
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects GeneExpressionForagers to related works in the bibliography
+- Connects Gene expression variation in the brains of harvester ant foragers is associated with collective behavior to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

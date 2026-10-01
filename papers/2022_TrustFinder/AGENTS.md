@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — TrustFinder
+# AGENTS.md — TrustFinder: Recommendations for Community-Based Trust Systems
 
-**Paper**: TrustFinder (2022)
+**Paper**: TrustFinder: Recommendations for Community-Based Trust Systems (2022)
 **Domain**: Cognitive Security
-**Authors**: R.J. Cordes, Scott David, Daniel A. Friedman
+**Authors**: R.J. Cordes, Scott David, Daniel Friedman
 
 ---
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Extracts methods: See paper
 - Identifies findings: There is a broadly recognized need for better situational awareness within the information environment.., Each year, millions of articles, books, documents, and datasets are published.., Amidst this flood of information, even those with significant experience and expertise in the knowledge economy are struggling to evaluate and vet claims..
 - Maps contributions to Cognitive Security literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects TrustFinder to related works in the bibliography
+- Connects TrustFinder: Recommendations for Community-Based Trust Systems to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

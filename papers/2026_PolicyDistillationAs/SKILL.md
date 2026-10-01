@@ -4,7 +4,7 @@ name: "On-Policy Distillation as Active Inference in Finite Variational Models"
 description: "<p>This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them. In the construction, the intractable teacher policy..."
 tags: ["on-policy-distillation", "active-inference", "self-distillation", "privileged-information", "free-energy-principle", "reverse-kl-divergence", "pymdp", "sophisticated-inference"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman (2026). *On-Policy Distillation as Active Inference in Finite Variational Models*. Active Inference."
+citation: "Daniel Ari Friedman (2026). *On-Policy Distillation as Active Inference in Finite Variational Models*. Zenodo."
 doi: "10.5281/zenodo.20747834"
 artifact_doi: "10.5281/zenodo.20749817"
 ---
@@ -21,15 +21,13 @@ This work addresses topics in **Active Inference**: on-policy distillation, acti
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- <p>This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them.
-- In the construction, the intractable teacher policy plays the role of the generative model $p(o,s)$, the tractable student policy is the approximate posterior $q(s)$, and the per-token reverse-KL dist
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -58,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20747834`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

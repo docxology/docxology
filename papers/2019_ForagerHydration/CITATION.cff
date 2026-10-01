@@ -1,18 +1,18 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "ForagerHydration"
+title: "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior"
 date-released: 2019
 doi: 10.1038/s41598-019-41586-3
 url: "https://doi.org/10.1038/s41598-019-41586-3"
 authors:
-  - family-names: Friedman
-    given-names: Daniel A.
+  - family-names: "Friedman"
+    given-names: "Daniel A."
     orcid: "https://orcid.org/0000-0001-6232-9096"
-  - family-names: Greene
-    given-names: Michael J.
-  - family-names: Gordon
-    given-names: Deborah M.
+  - family-names: "Greene"
+    given-names: "Michael J."
+  - family-names: "Gordon"
+    given-names: "Deborah M."
 identifiers:
   - type: doi
     value: "10.1038/s41598-019-41586-3"

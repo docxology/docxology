@@ -4,7 +4,7 @@ name: "docxplus — the Intelligent Document Container"
 description: "A standards-first reference implementation of a byte-valid OOXML .docx that also carries a modular, Ed25519-signed, AES-256-GCM-encrypted intelligence layer through spec-sanctioned side-channels, with an optional bridge to the docxology/steganographe..."
 tags: ["ooxml", "docx", "open-packaging-conventions", "steganography", "document-security", "reproducible-research"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *docxplus — the Intelligent Document Container*. Computational."
+citation: "Daniel Ari Friedman (2026). *docxplus — the Intelligent Document Container*. Zenodo."
 doi: "10.5281/zenodo.21983948"
 ---
 
@@ -20,14 +20,13 @@ This work addresses topics in **Computational**: OOXML, DOCX, Open Packaging Con
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21983948`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

@@ -41,7 +41,7 @@ Ant colony behavior, physiology, transcriptomics, and computational models of co
 - 2025 — [Computational Complexity and Energetics of the Ant Stack](https://doi.org/10.5281/zenodo.17238736)
 - 2025 — [The Ant Stack](https://doi.org/10.5281/zenodo.16782756)
 - 2025 — [Towards a Science of Consciousness and Social Complexity... For Ants](https://www.editorafi.org/ebook/c128-colonias-formigas-conscientes)
-- 2024 — [Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea](https://doi.org/10.1002/ece3.70063)
+- 2024 — [Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea](https://doi.org/10.1002/ece3.70063)
 
 **Selected repositories**
 
@@ -112,7 +112,7 @@ Narrative ecosystems, information commons, digital rhetoric, and multiagent secu
 
 **Selected works**
 
-- 2026 — [Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)](https://doi.org/10.5281/zenodo.18364118)
+- 2026 — [Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)](https://doi.org/10.5281/zenodo.18364118)
 - 2026 — [Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast](https://doi.org/10.5281/zenodo.20286170)
 - 2026 — [California Public Records: A Technical and Legal Reference for the Post-AB 473 Era](https://doi.org/10.5281/zenodo.20789899)
 - 2026 — [CogSecSkills: Multiharness Agentic Skills for Cognitive Security](https://doi.org/10.5281/zenodo.21513316)
@@ -272,7 +272,7 @@ Active Inference Institute programs, infrastructure, textbook cohorts, and organ
 
 Talks, courses, presentations, and media artifacts connected to the research and teaching program.
 
-- Works: 15
+- Works: 14
 - Selected repositories: 3
 - Collaborator context: Active Inference Institute educators, Course and media collaborators
 
@@ -291,8 +291,8 @@ Talks, courses, presentations, and media artifacts connected to the research and
 - 2026 — [Personal YouTube — 200+ livestreams: drawings, Synergetics, paper discussions](https://www.youtube.com/@danielarifriedman/playlists)
 - 2025 — [5th Applied Active Inference Symposium — Abstract Book](https://doi.org/10.5281/zenodo.17555266)
 - 2025 — [Systems Processes, Active Inference, and Beyond](https://doi.org/10.5281/zenodo.17138223)
-- 2024 — [BioFirm Development at Applied Active Inference Symposium 2024](https://doi.org/10.5281/zenodo.14861595)
 - 2024 — [MathArt Stream #8: William Blake and Active Inference](https://doi.org/10.5281/zenodo.13711301)
+- 2024 — [Sensemaking Federation: Exploring the Frontiers of Digital Innovation](https://doi.org/10.5281/zenodo.14574046)
 
 **Selected repositories**
 

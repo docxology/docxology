@@ -4,7 +4,7 @@ name: "Slides for Iris"
 description: "Some initial slides from today. For context see:&nbsp;@speakerjohnash"
 tags: ["slidesiris"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman (2023). *Slides for Iris*. Active Inference."
+citation: "Daniel Ari Friedman (2023). *Slides for Iris*. Zenodo."
 doi: "10.5281/zenodo.7838652"
 artifact_doi: "10.5281/zenodo.7838653"
 ---
@@ -21,8 +21,7 @@ This work addresses topics in **Active Inference**: SlidesIris.
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -58,5 +57,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7838652`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

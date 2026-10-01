@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T06:14:46Z",
+  "generated_at": "2026-10-01T16:43:54Z",
   "source_files": [
     "resume/source.json",
     "data/works.json",
@@ -34,7 +34,7 @@
     "orcid": "0000-0001-6232-9096"
   },
   "metrics": {
-    "works": 220,
+    "works": 219,
     "software_catalogued": 158,
     "owned_software_catalogued": 119,
     "aii_software_catalogued": 39,
@@ -88,7 +88,7 @@
     "schema_version": 1,
     "source_manifest": {
       "bytes": 736,
-      "sha256": "aeb91d3221b69b80b8da28e37a52d651ac4bde7c26149f727073cb1f41ba3898",
+      "sha256": "df9eb9b4734e2dcf77b6fc4e79d866df12ac398b967d2ba0ec2017b7fd35f605",
       "files": [
         {
           "path": "resume/source.json",
@@ -97,13 +97,13 @@
         },
         {
           "path": "data/works.json",
-          "bytes": 177390,
-          "sha256": "272a62574e29cbbb8097a27da7e78be15baf7c0c60bcd98c970a407cc307ea02"
+          "bytes": 177216,
+          "sha256": "48b41035c709cce911292a4521c284601bb979a793bf75693e2065f1adc38058"
         },
         {
           "path": "data/software.json",
           "bytes": 78699,
-          "sha256": "88be7e583cdbd6ebadebc27166abeae3a7d2c6376ea65200a9645444aa443862"
+          "sha256": "b1298f3b1a838c317b16c3888740d0dcbb87fc59e96d96e3bc950e071539d4f5"
         },
         {
           "path": "data/scholar-snapshot.json",
@@ -113,7 +113,7 @@
         {
           "path": "data/claims.json",
           "bytes": 12976,
-          "sha256": "400f27f1c875cc76eee87298f2d06ffc6555e39c0271c68e9bfdb324eb1ec3f7"
+          "sha256": "e0de86e143d05cc620b96a4c8244ddc0bc65d522bf5eab689f40c8de17b19930"
         },
         {
           "path": "data/github-repositories.json",
@@ -2409,7 +2409,7 @@
       "domain": "🛡️",
       "domain_name": "Cognitive Security",
       "type": "Paper",
-      "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
+      "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
       "venue": "Zenodo",
       "url": "https://doi.org/10.5281/zenodo.18364118",
       "doi": "10.5281/zenodo.18364118",
@@ -2421,7 +2421,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2026_CognitiveIntegrity/full_text.md",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 6,
@@ -3076,31 +3078,6 @@
       ]
     },
     {
-      "num": 30,
-      "citation_key": "Friedman2024BioFirmDevelopmentAtApplied030",
-      "year": 2024,
-      "domain": "🎥",
-      "domain_name": "Media & Teaching",
-      "type": "Presentation",
-      "title": "BioFirm Development at Applied Active Inference Symposium 2024",
-      "venue": "Presentation",
-      "url": "https://doi.org/10.5281/zenodo.14861595",
-      "doi": "10.5281/zenodo.14861595",
-      "docs_path": "papers/2024_BioFirm/",
-      "has_paper_folder": true,
-      "has_full_text": true,
-      "has_images": true,
-      "has_skill_md": true,
-      "has_agents_md": true,
-      "has_readme": true,
-      "full_text_url": "/papers/2024_BioFirm/full_text.md",
-      "authors": [
-        "John Clippinger",
-        "Andrew Pashea",
-        "Friedman, Daniel"
-      ]
-    },
-    {
       "num": 31,
       "citation_key": "Friedman2024BridgingGapsImageMeme031",
       "year": 2024,
@@ -3132,7 +3109,7 @@
       "domain": "🐜",
       "domain_name": "Entomology",
       "type": "Paper",
-      "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",
+      "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea",
       "venue": "Ecology & Evolution",
       "url": "https://doi.org/10.1002/ece3.70063",
       "doi": "10.1002/ece3.70063",
@@ -3527,7 +3504,7 @@
       "full_text_url": "/papers/2023_SinglePheromone/full_text.md",
       "authors": [
         "Saund, Eric",
-        "Ari Friedman, Daniel"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -4074,7 +4051,7 @@
       "domain": "🛡️",
       "domain_name": "Cognitive Security",
       "type": "Paper",
-      "title": "From Users to (Sense)Makers: Stigmergic Social Annotation",
+      "title": "From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking",
       "venue": "Hypertext '22",
       "url": "https://doi.org/10.48550/arXiv.2205.06345",
       "doi": "10.48550/arXiv.2205.06345",
@@ -4726,7 +4703,7 @@
       "domain": "🐜",
       "domain_name": "Entomology",
       "type": "Paper",
-      "title": "The physiology of forager hydration and variation among harvester ant colonies",
+      "title": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
       "venue": "Scientific Reports",
       "url": "https://doi.org/10.1038/s41598-019-41586-3",
       "doi": "10.1038/s41598-019-41586-3",
@@ -4853,7 +4830,7 @@
       "domain": "🐜",
       "domain_name": "Entomology",
       "type": "Paper",
-      "title": "The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants",
+      "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
       "venue": "iScience",
       "url": "https://doi.org/10.1016/j.isci.2018.09.001",
       "doi": "10.1016/j.isci.2018.09.001",
@@ -4983,7 +4960,7 @@
       "domain": "🧬",
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
-      "title": "Influence of Nuclear Structure on formation of radiation-induced lethal lesions",
+      "title": "Influence of nuclear structure on the formation of radiation-induced lethal lesions",
       "venue": "Int. J. Radiation Biology",
       "url": "https://doi.org/10.3109/09553002.2016.1144941",
       "doi": "10.3109/09553002.2016.1144941",
@@ -5033,7 +5010,7 @@
       "domain": "🧬",
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
-      "title": "Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",
+      "title": "Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?",
       "venue": "Medical Hypotheses",
       "url": "https://doi.org/10.1016/j.mehy.2015.09.015",
       "doi": "10.1016/j.mehy.2015.09.015",
@@ -5058,7 +5035,7 @@
       "domain": "🧬",
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
-      "title": "Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",
+      "title": "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees",
       "venue": "Molecular Biology & Evolution",
       "url": "https://doi.org/10.1093/molbev/msu292",
       "doi": "10.1093/molbev/msu292",
@@ -5171,7 +5148,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "/papers/2026_CognitiveCaseDiagrams/full_text.md",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 113,
@@ -5309,7 +5288,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_PolicyEntanglementActive/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -5332,7 +5311,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_BoundedAutoResearchTiny/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -5355,7 +5334,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_ConvergenceAnalysisGradient/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -5378,7 +5357,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_EditorialQualityAt/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -5401,7 +5380,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_TemplateApproachReproducible/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -5424,7 +5403,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_ActiveInferenceMulti/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -5471,8 +5450,8 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_WhenDoBugs/full_text.md",
       "authors": [
-        "Tucker Chambers",
-        "Daniel A. Friedman"
+        "Chambers, Tucker",
+        "Friedman, Daniel A."
       ]
     },
     {
@@ -5495,7 +5474,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_SelfImprovementAgent/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -5507,8 +5486,8 @@
       "type": "Presentation",
       "title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
       "venue": "Zenodo",
-      "url": "https://doi.org/10.5281/zenodo.14861596",
-      "doi": "10.5281/zenodo.14861596",
+      "url": "https://doi.org/10.5281/zenodo.14861595",
+      "doi": "10.5281/zenodo.14861595",
       "docs_path": "papers/2025_BiofirmDevelopmentWith/",
       "has_paper_folder": true,
       "has_full_text": true,
@@ -5519,7 +5498,7 @@
       "full_text_url": "/papers/2025_BiofirmDevelopmentWith/full_text.md",
       "authors": [
         "John Clippinger",
-        "Andrew Pashea",
+        "Pashea, Andrew",
         "Friedman, Daniel"
       ]
     },
@@ -6094,7 +6073,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_MusicNeverStopped/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6117,7 +6096,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_DeterministicTestbedSelf/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6140,7 +6119,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_RecoveringLLMPersona/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6163,7 +6142,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_Triplicate/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6186,7 +6165,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_TemplateTextbook/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6578,7 +6557,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_AGEINT/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6601,7 +6580,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_PolicyDistillationAs/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6624,7 +6603,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_TemplateMadlib/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6647,7 +6626,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_CaliforniaPublicRecords/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6716,7 +6695,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_LivingMetaAnalysis/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6739,7 +6718,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_RefinementGold/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6762,7 +6741,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_AlphaCOGANT/full_text.md",
       "authors": [
-        "Daniel Ari Friedman",
+        "Friedman, Daniel Ari",
         "Tucker Cahill Chambers"
       ]
     },
@@ -6809,7 +6788,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_SortitionUpstreamNTQR/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6832,7 +6811,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_ExploratoryDataAnalysis/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6855,7 +6834,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_DomainLanguageSpecifying/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6878,7 +6857,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_EntomologicalLaw/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6901,7 +6880,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_ShapeBetween/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6924,7 +6903,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_AutopoieticProjectGeneration/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6947,7 +6926,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_TemplatePitchDeck/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6970,7 +6949,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_ReproducibleLiteratureSynthesis/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -6993,7 +6972,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_RegisteredReportTemplate/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7016,7 +6995,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_RedactedReportTemplate/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7039,7 +7018,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_PoolsRulesTools/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7062,7 +7041,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_IllegalStatesMostly/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7085,7 +7064,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_DataDescriptorTemplate/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7108,7 +7087,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_PriorCognitiveArt/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7131,7 +7110,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_ActiveFractalRabbit/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7154,7 +7133,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_FourfoldVision/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7177,7 +7156,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_DuckRabbit/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7384,7 +7363,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_Codomyrmex/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7430,7 +7409,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_PROJECTBONDSpecial/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7453,10 +7432,10 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_DigiPPPiP/full_text.md",
       "authors": [
-        "Siddhant Shrivastava",
-        "Evelyn C. Goh",
+        "Shrivastava, Siddhant",
+        "Goh, Evelyn C.",
         "Alexandra Mikhailova",
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7594,7 +7573,7 @@
       "has_readme": true,
       "full_text_url": "/papers/2026_MillenniumAudit/full_text.md",
       "authors": [
-        "Daniel Ari Friedman"
+        "Friedman, Daniel Ari"
       ]
     },
     {
@@ -7639,7 +7618,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 218,
@@ -7660,7 +7641,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 219,
@@ -7681,7 +7664,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 220,
@@ -7702,7 +7687,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 221,
@@ -7723,7 +7710,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 222,
@@ -7744,7 +7733,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     },
     {
       "num": 223,
@@ -7765,7 +7756,9 @@
       "has_agents_md": true,
       "has_readme": true,
       "full_text_url": "",
-      "authors": []
+      "authors": [
+        "Friedman, Daniel Ari"
+      ]
     }
   ],
   "software": [
@@ -9669,14 +9662,14 @@
   "claims": [
     {
       "id": "curated-work-count",
-      "claim": "The curated bibliography contains 220 works.",
+      "claim": "The curated bibliography contains 219 works.",
       "status": "curated-local",
       "sources": [
         "pages/BIBLIOGRAPHY.md",
         "publications.html",
         "data/works.json"
       ],
-      "checked_at": "2026-09-30T05:48:55+00:00",
+      "checked_at": "2026-10-01T16:43:52+00:00",
       "confidence": "high",
       "verification_method": "Generated from the 8-column bibliography table and cross-checked against publications.html.",
       "maintenance_owner": "ARCHIVIST",
@@ -9684,14 +9677,14 @@
     },
     {
       "id": "paper-folder-count",
-      "claim": "The repository contains 203 per-paper documentation folders.",
+      "claim": "The repository contains 202 per-paper documentation folders.",
       "status": "curated-local",
       "sources": [
         "papers/",
         "papers/README.md",
         "papers/paper_metadata.json"
       ],
-      "checked_at": "2026-09-30T05:48:55+00:00",
+      "checked_at": "2026-10-01T16:43:52+00:00",
       "confidence": "high",
       "verification_method": "Folder inventory and paper metadata count.",
       "maintenance_owner": "MAINTAINER",

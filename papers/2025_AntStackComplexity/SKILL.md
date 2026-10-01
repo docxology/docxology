@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "AntStackComplexity"
+name: "Computational Complexity and Energetics of the Ant Stack"
 description: "Extending the AntStack framework, this paper examines complexity science approaches to understanding ant colony organization. We connect concepts from information theory, complex adaptive systems, and..."
 tags: ["antstack", "complexity-science", "information-theory", "complex-adaptive-systems", "ant-colonies", "non-equilibrium-thermodynamics"]
 domain: "Entomology"
-citation: "Daniel A. Friedman (2025). *AntStackComplexity*. Entomology."
+citation: "Daniel Friedman (2025). *Computational Complexity and Energetics of the Ant Stack*. Zenodo."
 doi: "10.5281/zenodo.17238736"
 ---
 
-# AntStackComplexity
+# Computational Complexity and Energetics of the Ant Stack
 
-**Daniel A. Friedman** (2025) · Entomology
+**Daniel Friedman** (2025) · Entomology
 
 ## Context
 
@@ -20,8 +20,7 @@ This work addresses topics in **Entomology**: AntStack, complexity science, info
 
 Primary methods and techniques applied in this work:
 
-- Field observation and behavioral assays
-- Population genetics analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -57,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.17238736`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

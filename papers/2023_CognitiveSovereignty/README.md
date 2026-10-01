@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ CognitiveSovereignty
+# 🛡️ Cognitive Sovereignty & Active Inference in the State of Exception
 
 **Daniel Ari Friedman** (2023) · *Zenodo*
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science.
-- It argues that realized epist...
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2023). *CognitiveSovereignty*. Zenodo. DOI: 10.5281/zenodo.10038231. URL: https://doi.org/10.5281/zenodo.10038231.
+> Daniel Ari Friedman (2023). *Cognitive Sovereignty & Active Inference in the State of Exception*. Zenodo. DOI: 10.5281/zenodo.10038231. URL: https://doi.org/10.5281/zenodo.10038231.
 
 ## Related
 

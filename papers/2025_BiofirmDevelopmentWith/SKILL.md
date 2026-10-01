@@ -4,8 +4,9 @@ name: "Biofirm Development with First Principles First and the Active Inference 
 description: "Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024 &nbsp;"
 tags: ["biofirmdevelopmentwith"]
 domain: "Active Inference"
-citation: "John Clippinger, Andrew Pashea, Daniel Friedman (2025). *Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024*. Active Inference."
-doi: "10.5281/zenodo.14861596"
+citation: "John Clippinger, Andrew Pashea, Daniel Friedman (2025). *Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024*. Zenodo."
+doi: "10.5281/zenodo.14861595"
+artifact_doi: "10.5281/zenodo.14861596"
 ---
 
 # Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024
@@ -20,14 +21,13 @@ This work addresses topics in **Active Inference**: BiofirmDevelopmentWith.
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024 &nbsp;
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -39,10 +39,11 @@ Core contributions and results:
 
 Verification points for this work:
 
-- Canonical DOI: 10.5281/zenodo.14861596
+- Canonical DOI: 10.5281/zenodo.14861595
 - PDF SHA-256: See zenodo_record
 - Pairing confidence: unknown
 - Last checked: 2026-05-30T18:56:01Z
+- Artifact DOI: 10.5281/zenodo.14861596
 
 ## Prerequisites
 
@@ -54,6 +55,6 @@ Verification points for this work:
 
 When working with this paper:
 
-1. Reference the DOI for citation: `10.5281/zenodo.14861596`
-2. Apply methods listed in the Methods section for related analysis.
+1. Reference the DOI for citation: `10.5281/zenodo.14861595`
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

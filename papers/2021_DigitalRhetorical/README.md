@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ DigitalRhetorical
+# 🛡️ Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse
 
 **Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman** (2021) · *Zenodo*
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -37,7 +36,7 @@
 
 ## Citation
 
-> Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman (2021). *DigitalRhetorical*. Zenodo. DOI: 10.5281/zenodo.5573946. URL: https://doi.org/10.5281/zenodo.5573946.
+> Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman (2021). *Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse*. Zenodo. DOI: 10.5281/zenodo.5573946. URL: https://doi.org/10.5281/zenodo.5573946.
 
 ## Related
 

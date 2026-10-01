@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 TwoLineages
+# 🐜 Two lineages that need each other
 
-**Daniel A. Friedman, Deborah M. Gordon** (2017) · *Molecular Ecology*
+**D. M. Gordon, D. A. Friedman** (2017) · *Molecular Ecology*
 
 [![DOI](https://img.shields.io/badge/DOI-10.1111%2Fmec.13964-blue)](https://doi.org/10.1111/mec.13964)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior..
-- In dependent-lineage species, queens must mate with males....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Deborah M. Gordon (2017). *TwoLineages*. Molecular Ecology. DOI: 10.1111/mec.13964. URL: https://doi.org/10.1111/mec.13964.
+> D. M. Gordon, D. A. Friedman (2017). *Two lineages that need each other*. Molecular Ecology. DOI: 10.1111/mec.13964. URL: https://doi.org/10.1111/mec.13964.
 
 ## Related
 

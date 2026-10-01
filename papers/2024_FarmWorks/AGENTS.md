@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — FarmWorks
+# AGENTS.md — FarmWorks: Decentralized AI Agents for Personalized Solutions
 
-**Paper**: FarmWorks (2024)
+**Paper**: FarmWorks: Decentralized AI Agents for Personalized Solutions (2024)
 **Domain**: Cognitive Security
-**Authors**: Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin
+**Authors**: Vladimir Baulin, Alex Vyatkin, Avel GUÉNIN—CARLUT, Daniel Friedman, John Bolt, Stefan Falkenstein, Parishrut Jassal, Celio Trois, Jonathan Minchin
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
-- Identifies findings: FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems.
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects FarmWorks to related works in the bibliography
+- Connects FarmWorks: Decentralized AI Agents for Personalized Solutions to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

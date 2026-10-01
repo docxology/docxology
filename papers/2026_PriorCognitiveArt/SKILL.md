@@ -4,7 +4,7 @@ name: "Prior Cognitive Art"
 description: "A prior is not explained by stacking more priors; it is located by mechanism, function, history, and fixed-point organization. The paper's precise thesis is procedural: before asking why a prior exists, identify which explanatory kind is being reques..."
 tags: ["priors", "tinbergen's-four-questions", "hierarchical-bayes", "free-energy-principle", "markov-blankets", "cognitive-science", "conceptual-visualization"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman (2026). *Prior Cognitive Art*. Active Inference."
+citation: "Daniel Ari Friedman (2026). *Prior Cognitive Art*. Zenodo."
 doi: "10.5281/zenodo.21316510"
 ---
 
@@ -20,15 +20,13 @@ This work addresses topics in **Active Inference**: priors, Tinbergen's four que
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -54,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21316510`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

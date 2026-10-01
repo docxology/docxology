@@ -4,7 +4,7 @@ name: "Convergence Analysis of Gradient Descent Optimization"
 description: "This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/template). The implementation lives in projects/template..."
 tags: ["optimization-algorithms", "gradient-descent", "convergence-analysis", "numerical-methods", "mathematical-programming", "reproducible-research", "infrastructure-automation"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Convergence Analysis of Gradient Descent Optimization*. Computational."
+citation: "Daniel Ari Friedman (2026). *Convergence Analysis of Gradient Descent Optimization*. Zenodo."
 doi: "10.5281/zenodo.20417136"
 ---
 
@@ -20,15 +20,13 @@ This work addresses topics in **Computational**: optimization algorithms, gradie
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/templa
-- The implementation lives in projects/templates/template_code_project/src/optimizer.py; experiments and figures are orchestrated by projects/templates/template_code_project/scripts/optimization_analysi
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20417136`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

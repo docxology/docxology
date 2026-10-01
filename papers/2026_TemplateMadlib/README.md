@@ -23,8 +23,7 @@
 
 ## Key Findings
 
-- This exemplar asks whether a reviewable pipeline can hydrate a complete IMRAD manuscript from configuration-owned lexical data while preserving an audit trail that remains readable before and after re
-- The project deliberately keeps playful Mad Lib mechanics inside a serious reproducibility contract: the manuscript shell names large placeholders, the config declares allowable language, and the sourc
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

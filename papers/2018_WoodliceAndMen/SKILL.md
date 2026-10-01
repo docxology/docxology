@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "WoodliceAndMen"
+name: "Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)"
 description: "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit..."
 tags: ["free-energy-principle", "karl-friston", "bayesian-brain", "predictive-processing", "markov-blanket", "consciousness", "self-organization", "variational-inference", "philosophy-of-mind"]
 domain: "Active Inference"
-citation: "Karl Friston, Martin Fortier, Daniel A. Friedman (2018). *WoodliceAndMen*. Active Inference."
+citation: "Karl Friston, Martin Fortier, Daniel Friedman (2018). *Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)*. ALIUS Bulletin."
 doi: "10.34700/h460-nz89"
 ---
 
-# WoodliceAndMen
+# Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)
 
-**Karl Friston, Martin Fortier, Daniel A. Friedman** (2018) · Active Inference
+**Karl Friston, Martin Fortier, Daniel Friedman** (2018) · Active Inference
 
 ## Context
 
@@ -28,7 +28,7 @@ Primary methods and techniques applied in this work:
 
 Core contributions and results:
 
-- In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 

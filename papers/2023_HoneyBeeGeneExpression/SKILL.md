@@ -1,17 +1,17 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "HoneyBeeGeneExpression"
+name: "A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees"
 description: "The genetic basis of phenotypic novelty is a major unresolved question in evolutionary biology. We investigate how large-scale coding sequence change underlies the evolution of postdevelopmental novel..."
 tags: ["honey-bees", "apis-mellifera", "gene-expression", "rna-seq", "novel-traits", "taxonomically-restricted-genes", "coding-sequence-evolution"]
 domain: "Entomology"
-citation: "William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson (2023). *HoneyBeeGeneExpression*. Entomology."
+citation: "Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson (2023). *A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees*. Zenodo."
 doi: "10.5281/zenodo.10400744"
 artifact_doi: "10.5281/zenodo.10400745"
 ---
 
-# HoneyBeeGeneExpression
+# A snapshot and pipeline for tissue-specific gene expression meta-analysis in honey bees
 
-**William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson** (2023) · Entomology
+**Daniel Ari Friedman, Chao Tong, Timothy A. Linksvayer, Matthias Freund, Nicole Weronika Keough, Brian Johnson** (2023) · Entomology
 
 ## Context
 
@@ -21,8 +21,7 @@ This work addresses topics in **Entomology**: honey bees, Apis mellifera, gene e
 
 Primary methods and techniques applied in this work:
 
-- Field observation and behavioral assays
-- Population genetics analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -59,5 +58,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.10400744`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

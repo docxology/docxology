@@ -6,13 +6,13 @@ date-released: 2026
 doi: 10.1007/978-3-032-16955-6_11
 url: "https://doi.org/10.1007/978-3-032-16955-6_11"
 authors:
-  - family-names: Kavi
-    given-names: P. C.
-  - family-names: Friedman
-    given-names: Daniel Ari
+  - family-names: "Kavi"
+    given-names: "Prakash Chandra"
+  - family-names: "Friedman"
+    given-names: "Daniel Ari"
     orcid: "https://orcid.org/0000-0001-6232-9096"
-  - family-names: Patow
-    given-names: G.
+  - family-names: "Patow"
+    given-names: "Gustavo"
 identifiers:
   - type: doi
     value: "10.1007/978-3-032-16955-6_11"

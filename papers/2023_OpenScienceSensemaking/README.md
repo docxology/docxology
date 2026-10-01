@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ OpenScienceSensemaking
+# 🛡️ Open Access science needs Open Science Sensemaking (OSSm)
 
-**Ronen Tamari, Daniel A. Friedman** (2023) · *MetaArXiv*
+**Ronen Tamari, Daniel Friedman** (2023) · *MetaArXiv*
 
 [![DOI](https://img.shields.io/badge/DOI-10.31222%2Fosf.io%2F9nb3u-blue)](https://doi.org/10.31222/osf.io/9nb3u)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute..
-- We contend that open access to diverse sources of scientific sensem....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Ronen Tamari, Daniel A. Friedman (2023). *OpenScienceSensemaking*. MetaArXiv. DOI: 10.31222/osf.io/9nb3u. URL: https://doi.org/10.31222/osf.io/9nb3u.
+> Ronen Tamari, Daniel Friedman (2023). *Open Access science needs Open Science Sensemaking (OSSm)*. MetaArXiv. DOI: 10.31222/osf.io/9nb3u. URL: https://doi.org/10.31222/osf.io/9nb3u.
 
 ## Related
 

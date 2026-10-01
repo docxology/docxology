@@ -1,16 +1,28 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 type: article
-title: "ArgentineAnt"
+title: "Foraging behavior and locomotion of the invasive Argentine ant from winter aggregations"
 date-released: 2018
 doi: 10.1371/journal.pone.0202117
 url: "https://doi.org/10.1371/journal.pone.0202117"
 authors:
-  - family-names: Friedman
-    given-names: Daniel A.
+  - family-names: "Burford"
+    given-names: "Benjamin P."
+  - family-names: "Lee"
+    given-names: "Gail"
+  - family-names: "Friedman"
+    given-names: "Daniel A."
     orcid: "https://orcid.org/0000-0001-6232-9096"
-  - family-names: Gordon
-    given-names: Deborah M.
+  - family-names: "Brachmann"
+    given-names: "Esmé"
+  - family-names: "Khan"
+    given-names: "Rebia"
+  - family-names: "MacArthur-Waltz"
+    given-names: "Dylan J."
+  - family-names: "McCarty"
+    given-names: "Aidan D."
+  - family-names: "Gordon"
+    given-names: "Deborah M."
 identifiers:
   - type: doi
     value: "10.1371/journal.pone.0202117"

@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — MVEE
+# AGENTS.md — MVEE: A Framework for Evolutionary Studies
 
-**Paper**: MVEE (2018)
+**Paper**: MVEE: A Framework for Evolutionary Studies (2018)
 **Domain**: Presentations & Media
-**Authors**: Daniel Ari Friedman
+**Authors**: Daniel Friedman
 
 ---
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Content production, Pedagogical design
+- Extracts methods: See paper
 - Identifies findings: MVEE reflects where I was at in January 2018 ( solo presentation ) in thinking about Biology, Evolution, Active Inference, Free Energy Principle, and more.., Uploaded to Zenodo in 2024..
 - Maps contributions to Presentations & Media literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects MVEE to related works in the bibliography
+- Connects MVEE: A Framework for Evolutionary Studies to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -45,4 +45,4 @@
 ### Related Papers
 - [2023_AntsAging](../2023_AntsAging/)
 - [2023_PostdocReview](../2023_PostdocReview/)
-- [2024_BioFirm](../2024_BioFirm/)
+- [2025_BiofirmDevelopmentWith](../2025_BiofirmDevelopmentWith/)

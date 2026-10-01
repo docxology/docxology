@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 DoorsOfPerception
+# 🎨 The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing
 
 **Daniel Ari Friedman** (2026) · *Zenodo*
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference.
-- The paper develops a 'Thematic Atl...
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *DoorsOfPerception*. Zenodo. DOI: 10.5281/zenodo.18600040. URL: https://doi.org/10.5281/zenodo.18600040.
+> Daniel Ari Friedman (2026). *The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing*. Zenodo. DOI: 10.5281/zenodo.18600040. URL: https://doi.org/10.5281/zenodo.18600040.
 
 ## Related
 

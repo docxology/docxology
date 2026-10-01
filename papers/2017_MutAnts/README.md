@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 MutAnts
+# 🐜 The MutAnts are here
 
 **Daniel A. Friedman, Deborah M. Gordon, Liqun Luo** (2017) · *Cell*
 
@@ -18,12 +18,10 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior.
 - Analysis of In this issue of...
 
 ## Artifacts
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Deborah M. Gordon, Liqun Luo (2017). *MutAnts*. Cell. DOI: 10.1016/j.cell.2017.07.046. URL: https://doi.org/10.1016/j.cell.2017.07.046.
+> Daniel A. Friedman, Deborah M. Gordon, Liqun Luo (2017). *The MutAnts are here*. Cell. DOI: 10.1016/j.cell.2017.07.046. URL: https://doi.org/10.1016/j.cell.2017.07.046.
 
 ## Related
 

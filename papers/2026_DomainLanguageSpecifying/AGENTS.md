@@ -16,13 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Software pipeline design, Data-driven analysis
-- Identifies findings: This paper describes a small, tested domain language for specifying
-controlled methods — the methods-paper exemplar of the
-Research Project Template (https://github.com/docxology/template)., Unlike a
-results paper, this manuscript's subject is the methodology itself: a
-controlled vocabulary, a unit system with dimensional safety, four staged
-validation gates, and a deterministic compiler,
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -42,7 +37,7 @@ validation gates, and a deterministic compiler,
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

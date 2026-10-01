@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 ForagerHydration
+# 🐜 The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior
 
 **Daniel A. Friedman, Michael J. Greene, Deborah M. Gordon** (2019) · *Scientific Reports*
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Field observation and behavioral assays
-- Population genetics analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected..
-- Here we present field experiments showing t....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Michael J. Greene, Deborah M. Gordon (2019). *ForagerHydration*. Scientific Reports. DOI: 10.1038/s41598-019-41586-3. URL: https://doi.org/10.1038/s41598-019-41586-3.
+> Daniel A. Friedman, Michael J. Greene, Deborah M. Gordon (2019). *The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior*. Scientific Reports. DOI: 10.1038/s41598-019-41586-3. URL: https://doi.org/10.1038/s41598-019-41586-3.
 
 ## Related
 

@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "DennettExplained"
+name: "Dennett Explained (interview with Daniel Dennett)"
 description: "In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens. Dennett argues that philos..."
 tags: ["consciousness", "philosophy-of-mind", "daniel-dennett", "cognitive-science", "psychedelics", "predictive-processing", "altered-states"]
 domain: "Genetics & Biomedical"
-citation: "Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman (2019). *DennettExplained*. Genetics & Biomedical."
+citation: "Daniel Dennett, Brendan Fleig-Goldstein, Daniel Friedman (2019). *Dennett Explained (interview with Daniel Dennett)*. ALIUS Bulletin."
 doi: "10.34700/7gkw-zh08"
 ---
 
-# DennettExplained
+# Dennett Explained (interview with Daniel Dennett)
 
-**Daniel Dennett, Brendan Fleig-Goldstein, Daniel A. Friedman** (2019) · Genetics & Biomedical
+**Daniel Dennett, Brendan Fleig-Goldstein, Daniel Friedman** (2019) · Genetics & Biomedical
 
 ## Context
 
@@ -20,15 +20,13 @@ This work addresses topics in **Genetics & Biomedical**: consciousness, philosop
 
 Primary methods and techniques applied in this work:
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens..
-- Dennett argues that philos....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.34700/7gkw-zh08`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

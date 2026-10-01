@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-24T19:36:35Z",
+  "generated_at": "2026-10-01T16:36:31Z",
   "source": "papers/*/README.md and papers/*/SKILL.md",
-  "count": 220,
+  "count": 219,
   "works": {
     "Friedman2026TemplateApproachReproducibleGenerative001": {
       "citation_key": "Friedman2026TemplateApproachReproducibleGenerative001",
@@ -13,13 +13,8 @@
         "open science",
         "Model Context Protocol"
       ],
-      "findings": [
-        "Infrastructure-as-code research lifecycle: Two-Layer Architecture, eight-stage build pipeline, Zero-Mock testing, and Documentation Duality (README + AGENTS + SKILL)."
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_ReproducibleResearch/README.md"
     },
     "Friedman2026ActiveInferenceJournal500002": {
@@ -48,10 +43,7 @@
         "Orc's revolutionary fire maps onto Peirce's irritation of doubt that compels inquiry; the Thirteen Angels' collective transformation mirrors Mead's social self constituted through the generalized other; the consumption of the \"five gates of their law-built Heaven\" performs Dewey's collapse of the sp",
         "The convergences are not analogical but structural, and this manuscript formalizes them through the mathematics of Active Inference—the process theory of the Free Energy Principle—in which the Markov blanket becomes Blake's doors of perception, the generative model becomes imagination as"
       ],
-      "methods": [
-        "Visual and symbolic analysis",
-        "Cross-domain pattern mapping"
-      ],
+      "methods": [],
       "source": "papers/2026_BeforePragmatism/README.md"
     },
     "Friedman2026GoldenCompassLunarFlux004": {
@@ -69,13 +61,8 @@
         "Economic History",
         "Prophetic Economics"
       ],
-      "findings": [
-        "A manuscript overlaying British and American bimetallism with William Blake's mythopoetic architecture, reading economic history through the lens of active inference and prophetic economics."
-      ],
-      "methods": [
-        "Visual and symbolic analysis",
-        "Cross-domain pattern mapping"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_Bimetalism/README.md"
     },
     "Friedman2026CognitiveIntegrityFrameworkFormal005": {
@@ -91,13 +78,9 @@
         "threat modeling"
       ],
       "findings": [
-        "The Cognitive Integrity Framework provides formal foundations for multiagent security, developing theoretical tools for protecting cognitive processes in multi-agent systems.",
         "Analysis of Part 1 of 3 covers theore..."
       ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "methods": [],
       "source": "papers/2026_CognitiveIntegrity/README.md"
     },
     "Friedman2026PersonalYouTube200Livestreams006": {
@@ -121,14 +104,8 @@
         "generative models",
         "Markov blankets"
       ],
-      "findings": [
-        "The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference.",
-        "The paper develops a 'Thematic Atl..."
-      ],
-      "methods": [
-        "Visual and symbolic analysis",
-        "Cross-domain pattern mapping"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_DoorsOfPerception/README.md"
     },
     "Friedman20255thAppliedActiveInference008": {
@@ -140,13 +117,8 @@
         "international symposium",
         "research presentations"
       ],
-      "findings": [
-        "Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inferenc"
-      ],
-      "methods": [
-        "Content production",
-        "Pedagogical design"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_5thSymposium/README.md"
     },
     "Friedman2025AdaptiveBasicIncomeAuBI009": {
@@ -160,14 +132,8 @@
         "cognitive augmentation",
         "human-AI interaction"
       ],
-      "findings": [
-        "AuBI (Augmented Biological Intelligence) explores the interface between biological intelligence and artificial augmentation through the Active Inference framework.",
-        "The paper examines how AI systems ca..."
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_AuBI/README.md"
     },
     "Friedman2025CEREBRUMCaseEnabledReasoning010": {
@@ -176,10 +142,7 @@
       "keywords": [
         "CEREBRUM"
       ],
-      "findings": [
-        "This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM).",
-        "CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion."
-      ],
+      "findings": [],
       "methods": [
         "Case-enabled reasoning over Bayesian models",
         "Active inference with case-based priors"
@@ -202,10 +165,7 @@
         "Our investigation employs analytical models for contact dynamics physics, sparse spiking neural networks, and active inference to characterize complexity and energy consumption in real-time embodied systems operating at 100 Hz control frequencies..",
         "Energy efficiency has emerged as a critical constraint in embodied AI systems, yet traditional complexity analysis fails to capture the nuanced energy-performance trade-offs inherent in real-world implementations.."
       ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "methods": [],
       "source": "papers/2025_AntStackComplexity/README.md"
     },
     "Friedman2025EvoJumpStochasticModelingEvolutionary012": {
@@ -220,13 +180,9 @@
         "Free Energy Principle"
       ],
       "findings": [
-        "EvoJump examines evolutionary transitions and discontinuities through the Active Inference framework, exploring how systems undergo qualitative jumps in phenotypic and behavioral complexity.",
         "Analysis of The work..."
       ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "methods": [],
       "source": "papers/2025_EvoJump/README.md"
     },
     "Friedman2025IncreasingAccessibilityApplicabilityActive013": {
@@ -243,13 +199,8 @@
         "neurodiversity",
         "cognitive security"
       ],
-      "findings": [
-        "A Letter of Intent submitted to Dana Frontiers proposing to increase the accessibility and applicability of Active Inference through Generative Playbooks and Open-Source Summer School Curriculum Devel"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_AccessibilityActiveInference/README.md"
     },
     "Friedman2025MDKVMultitrackMarkdownContainer014": {
@@ -269,10 +220,7 @@
         "Traditional single‑file Markdown struggles when the same canonical content must coexist with translations, commentary, references, code exemplars, and revision notes – each with distinct lifecycles and audiences..",
         "This paper introduces MDKV, a simple but rigorous multitrack Markdown container that packages a document’s canonical content and auxiliary tracks into a single, portable .mdkv file.."
       ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "methods": [],
       "source": "papers/2025_MDKV/README.md"
     },
     "Friedman2025MarkdownDecisionProcessFramework015": {
@@ -288,13 +236,9 @@
         "document generation"
       ],
       "findings": [
-        "The Markdown Decision Process (MDP) framework treats Markdown documents as stochastic decision processes, enabling intelligent analysis, generation, and optimization through probabilistic modeling.",
         "Analysis of Dr..."
       ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "methods": [],
       "source": "papers/2025_MarkdownDecisionProcess/README.md"
     },
     "Friedman2025CognitiveArtScienceToward016": {
@@ -308,13 +252,9 @@
         "art-science integration"
       ],
       "findings": [
-        "This paper explores cognitive approaches to art-science integration, examining how cognitive science frameworks can inform both artistic practice and scientific investigation.",
         "Analysis of Through Active Inference..."
       ],
-      "methods": [
-        "Visual and symbolic analysis",
-        "Cross-domain pattern mapping"
-      ],
+      "methods": [],
       "source": "papers/2025_CognitiveArtScience/README.md"
     },
     "Friedman2025Time017": {
@@ -327,13 +267,8 @@
         "collective behavior",
         "temporal coordination"
       ],
-      "findings": [
-        "On Time examines temporal dynamics in collective systems through Active Inference, exploring how timing, synchronization, and temporal coordination shape emergent collective behavior in biological and"
-      ],
-      "methods": [
-        "Visual and symbolic analysis",
-        "Cross-domain pattern mapping"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_OnTime/README.md"
     },
     "Friedman2025QuadMathAnalyticalReview4D018": {
@@ -375,10 +310,7 @@
         "At its core is the Research Discovery Engine, which constructs a living, responsive knowledge graph through the distillation of verified concepts and the dynamic linking of an evolving corpus of scientific knowledge..",
         "This graph is structured as a set of Conceptual Nexus Models (CNMs)—modular representations of connected ideas, designed to surface signals to support impactful inquiry and collaboration.."
       ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "methods": [],
       "source": "papers/2025_ResNei/README.md"
     },
     "Friedman2025SymergeticsSymbolicSynergeticsRational020": {
@@ -395,13 +327,9 @@
         "computational geometry"
       ],
       "findings": [
-        "Symergetics (Symbolic Synergetics) provides a framework for rational arithmetic, geometric pattern discovery, and all-integer accounting based on Buckminster Fuller's Synergetics.",
         "Analysis of The package implemen..."
       ],
-      "methods": [
-        "Visual and symbolic analysis",
-        "Cross-domain pattern mapping"
-      ],
+      "methods": [],
       "source": "papers/2025_Symergetics/README.md"
     },
     "Friedman2025SynthesisAgentNiche021": {
@@ -419,13 +347,8 @@
         "visionary epistemology",
         "art-science synthesis"
       ],
-      "findings": [
-        "Synthesis of Agent and Niche is a visionary art-philosophy dialogue between William Blake's The Marriage of Heaven and Hell and ecological psychology, mediated by Active Inference and Buckminster Full"
-      ],
-      "methods": [
-        "Visual and symbolic analysis",
-        "Cross-domain pattern mapping"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_AgentAndNiche/README.md"
     },
     "Friedman2025SystemsProcessesActiveInference022": {
@@ -443,10 +366,7 @@
         "Slides for a session at \"Enduring Patterns, Emerging Futures: Celebrating Dr..",
         "Len Troncale\", an online event in September 2025 https://troncale.sched.com/ .."
       ],
-      "methods": [
-        "Content production",
-        "Pedagogical design"
-      ],
+      "methods": [],
       "source": "papers/2025_SystemsProcesses/README.md"
     },
     "Friedman2025TemporalDepthCoherentSelf023": {
@@ -461,14 +381,8 @@
         "temporal integration",
         "clinical psychology"
       ],
-      "findings": [
-        "develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization..",
-        "Using Active Inference, we formalize how subjective temporal experience i...."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_TemporalDepth/README.md"
     },
     "Friedman2025ActiveInferenceInstituteActive024": {
@@ -482,13 +396,9 @@
         "community"
       ],
       "findings": [
-        "Third version of the Active Inference Institute overview, documenting continued organizational growth, expanded research programs, educational initiatives, and community engagement.",
         "Analysis of Covers the institu..."
       ],
-      "methods": [
-        "Program coordination",
-        "Community governance design"
-      ],
+      "methods": [],
       "source": "papers/2025_AII_v3/README.md"
     },
     "Friedman2025AntStack025": {
@@ -502,13 +412,8 @@
         "multiscale biology",
         "colony organization"
       ],
-      "findings": [
-        "AntStack presents a multilevel framework for modeling ant colony organization, from molecular and neural processes at the individual scale through interaction networks to colony-level behavioral patte"
-      ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_AntStack/README.md"
     },
     "Friedman2025DiscoveryEngineAIDriven026": {
@@ -522,13 +427,9 @@
         "hypothesis generation",
         "computational science"
       ],
-      "findings": [
-        "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles..",
-        "The system models the scientific discovery process as an inference problem...."
-      ],
+      "findings": [],
       "methods": [
-        "Active Inference",
-        "Software pipeline design"
+        "Active Inference"
       ],
       "source": "papers/2025_DiscoveryEngine/README.md"
     },
@@ -545,14 +446,8 @@
         "attention",
         "mindfulness"
       ],
-      "findings": [
-        "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states..",
-        "The framework models thoughts as self-organizing agents (thoughtseeds) that compete...."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_Thoughtseeds/README.md"
     },
     "Friedman2025TowardsScienceConsciousnessSocial028": {
@@ -566,14 +461,8 @@
         "collective cognition",
         "meta-cognition"
       ],
-      "findings": [
-        "Building on the Ant Colony Test (ACT) introduced in 2019, this paper further develops the case for using ant colonies as model systems for consciousness research.",
-        "We examine how colony-level informati..."
-      ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_ConsciousnessAnts/README.md"
     },
     "Friedman2024AligningActiveInferenceOntology029": {
@@ -597,26 +486,6 @@
       ],
       "source": "papers/2024_OntologySUMO/README.md"
     },
-    "Friedman2024BioFirmDevelopmentAtApplied030": {
-      "citation_key": "Friedman2024BioFirmDevelopmentAtApplied030",
-      "abstract": "BioFirm applies Active Inference and the Free Energy Principle to organizational and bioregional stewardship. The framework models organizations as biological-inspired adaptive systems, using active inference to optimize resource management and collective decision-making in bioregional governance contexts.",
-      "keywords": [
-        "BioFirm",
-        "bioregional stewardship",
-        "Active Inference",
-        "organizational modeling",
-        "sustainability",
-        "adaptive management"
-      ],
-      "findings": [
-        "Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024."
-      ],
-      "methods": [
-        "Content production",
-        "Pedagogical design"
-      ],
-      "source": "papers/2024_BioFirm/README.md"
-    },
     "Friedman2024BridgingGapsImageMeme031": {
       "citation_key": "Friedman2024BridgingGapsImageMeme031",
       "abstract": "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse. We provide frameworks for classifying meme content, tracking diffusion patterns, and assessing sensemaking impacts.",
@@ -629,13 +498,9 @@
         "sensemaking"
       ],
       "findings": [
-        "This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse.",
         "Analysis of We prov..."
       ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "methods": [],
       "source": "papers/2024_ImageMemeResearch/README.md"
     },
     "Friedman2024ChemicalTranscriptomicDiversityDo032": {
@@ -650,14 +515,8 @@
         "taxonomy",
         "evolutionary biology"
       ],
-      "findings": [
-        "This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology.",
-        "Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles."
-      ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2024_BlattodeaDiversity/README.md"
     },
     "Friedman2024CommentsNationalDigitalTwins033": {
@@ -671,13 +530,8 @@
         "cyber-physical systems",
         "simulation"
       ],
-      "findings": [
-        "This paper explores the concept of digital twins through the Active Inference framework, examining how virtual representations of physical systems can be modeled as generative models that actively min"
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2024_DigitalTwins/README.md"
     },
     "Friedman2024EnhancingPopulationBasedSearch034": {
@@ -692,14 +546,8 @@
         "anticipatory adaptation",
         "computational optimization"
       ],
-      "findings": [
-        "We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation..",
-        "Demonstrated with Ant Colony Optimization (ACO) on th...."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2024_PopulationSearch/README.md"
     },
     "Friedman2024FarmWorksDecentralizedAIAgents035": {
@@ -717,13 +565,8 @@
         "IoT",
         "community-driven innovation"
       ],
-      "findings": [
-        "FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems."
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2024_FarmWorks/README.md"
     },
     "Friedman2024FederatedInferenceBeliefSharing036": {
@@ -739,14 +582,8 @@
         "collective cognition",
         "privacy-preserving inference"
       ],
-      "findings": [
-        "formulates federated inference and belief sharing as a principled approach to distributed intelligence..",
-        "By extending Active Inference to multi-agent settings, agents maintain local generati...."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2024_FederatedInference/README.md"
     },
     "Friedman2024FourFoldFieldsQuantum037": {
@@ -762,13 +599,9 @@
         "Morse code"
       ],
       "findings": [
-        "Four-fold Fields of Quantum Dreams explores the intersections of quantum mechanics, art, phenomenology, and Active Inference through a structured visual-phenomenological analysis.",
         "Analysis of The work uses Morse..."
       ],
-      "methods": [
-        "Visual and symbolic analysis",
-        "Cross-domain pattern mapping"
-      ],
+      "methods": [],
       "source": "papers/2024_QuantumDreams/README.md"
     },
     "Friedman2024MathArtStream8William038": {
@@ -785,10 +618,7 @@
       "findings": [
         "Slides for: MathArtStream 8 ~ 9/6/2024 at 17 UTC Shanna Dobson, Daniel Friedman \"William Blake, Kierkegaard, Gothic\" https://www.youtube.com/live/yIS0OW2o18s."
       ],
-      "methods": [
-        "Content production",
-        "Pedagogical design"
-      ],
+      "methods": [],
       "source": "papers/2024_MathArtBlake/README.md"
     },
     "Friedman2024SensemakingFederationExploringFrontiers039": {
@@ -806,10 +636,7 @@
         "The panel was facilitated by Kristen Pavle and featured Jack Park, Marc-Antoine Parent, Aaditya (Sonny) Bhatia, and Daniel Friedman, as well as other participants at the meeting..",
         "This version of the transcript has been lightly edited for readability.."
       ],
-      "methods": [
-        "Content production",
-        "Pedagogical design"
-      ],
+      "methods": [],
       "source": "papers/2024_SensemakingFederation/README.md"
     },
     "Friedman2024SharedProtentionsMultiAgent040": {
@@ -824,14 +651,8 @@
         "coordination",
         "predictive processing"
       ],
-      "findings": [
-        "We develop the concept of shared protentions—shared anticipatory states—in multi-agent Active Inference..",
-        "Protentions are future-directed expectations that shape perception and action; here we formaliz...."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2024_SharedProtentions/README.md"
     },
     "Friedman2024ActiveInferenceInstituteActive041": {
@@ -843,13 +664,8 @@
         "open science",
         "community"
       ],
-      "findings": [
-        "Updated overview of the Active Inference Institute (AII), documenting expanded organizational activities, new projects, and growing community engagement in Active Inference research, education, and ap"
-      ],
-      "methods": [
-        "Program coordination",
-        "Community governance design"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2024_AII_v2/README.md"
     },
     "Friedman2024WayFindingInfiniteImaginarium042": {
@@ -864,13 +680,9 @@
         "operational frameworks"
       ],
       "findings": [
-        "Way Finding in the Infinite Imaginarium explores epistemic tempos and modes of knowledge production, using structured operational frameworks to navigate creative and intellectual exploration.",
         "Analysis of The work..."
       ],
-      "methods": [
-        "Visual and symbolic analysis",
-        "Cross-domain pattern mapping"
-      ],
+      "methods": [],
       "source": "papers/2024_InfiniteImaginarium/README.md"
     },
     "Friedman2024WhyPaleolithicRockstarsWere043": {
@@ -884,14 +696,8 @@
         "aesthetic experience",
         "rock art"
       ],
-      "findings": [
-        "An exploration of Paleolithic art and its relationship to cognitive evolution, consciousness, and creative expression..",
-        "The work examines cave paintings and rock art as evidence of early human cognitiv...."
-      ],
-      "methods": [
-        "Genomic and bioinformatic analysis",
-        "Statistical genetics"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2024_PaleolithicRockstars/README.md"
     },
     "Friedman2024WritingCurioCardsNFT044": {
@@ -908,10 +714,7 @@
         "Curio card format combines artistic design with structured knowledge representation",
         "Physical-to-digital workflow enables novel forms of scholarly communication and curation"
       ],
-      "methods": [
-        "Visual and symbolic analysis",
-        "Cross-domain pattern mapping"
-      ],
+      "methods": [],
       "source": "papers/2024_CurioCards/README.md"
     },
     "Friedman2023GuidedTourThroughSpaces045": {
@@ -928,13 +731,8 @@
         "non-anthropocentric",
         "sentience taxonomy"
       ],
-      "findings": [
-        "This comment on Friston et al.'s 'Path integrals, particular kinds, and strange things' connects the typology of particular kinds to Aaron Sloman's 1984 project of mapping 'mindspace.' The paper argue"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_GuidedTourMinds/README.md"
     },
     "Friedman2023SinglePheromoneModelAccounts046": {
@@ -949,14 +747,8 @@
         "trail formation",
         "parsimony"
       ],
-      "findings": [
-        "We present a computational model showing that a single pheromone accounts for empirical patterns of ant colony foraging previously modeled using two pheromones..",
-        "Our model demonstrates that the dynamic...."
-      ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_SinglePheromone/README.md"
     },
     "Friedman2023SnapshotPipelineTissueSpecific047": {
@@ -976,10 +768,7 @@
         "A critical aspect of understanding these complexities is the analysis of tissue-specific gene expression (TSGE), a challenging task due to the need to handle large bioinformatics data and manual tissue processing..",
         "In this study, we present a meta-analytic approach to investigate TSGE in A. mellifera , harnessing various open-source bioinformatics packages.."
       ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "methods": [],
       "source": "papers/2023_HoneyBeeGeneExpression/README.md"
     },
     "Friedman2023VariationalSynthesisEvolutionaryDevelopmental048": {
@@ -995,13 +784,8 @@
         "adaptive fitness",
         "particular partition"
       ],
-      "findings": [
-        "This paper introduces a variational formulation of natural selection, using the Bayesian mechanics of particular partitions to understand how slow phylogenetic processes constrain fast phenotypic proc"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_VariationalSynthesis/README.md"
     },
     "Friedman2023AccountActiveInferenceModeling050": {
@@ -1021,10 +805,7 @@
         "This report was written entirely by hand without any synthetic computational-linguistic intelligences..",
         "Thank you to the learners, interns, and participants of the Active Inference Institute to whom I've mostly learned from.."
       ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "methods": [],
       "source": "papers/2023_AccountActiveInference/README.md"
     },
     "Friedman2023CognitiveSovereigntyActiveInference051": {
@@ -1042,14 +823,8 @@
         "biopolitics",
         "bare life"
       ],
-      "findings": [
-        "This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science.",
-        "It argues that realized epist..."
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_CognitiveSovereignty/README.md"
     },
     "Friedman2023CommentsAIAccountabilityPolicy052": {
@@ -1066,13 +841,9 @@
         "synthetic intelligence"
       ],
       "findings": [
-        "Comments Submitted by University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC) to the National Telecommunications and Information Administrat",
-        "NTIA-2023-0005-0001.."
+        "Comments Submitted by University of Washington APL Information Risk and Synthetic Intelligence Research Initiative (IRSIRI), Active Inference Institute (AII), Pivot for Humanity (PFH), and Cognitive Security and Education Forum (COGSEC) to the National Telecommunications and Information Administrat"
       ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "methods": [],
       "source": "papers/2023_AIAccountability/README.md"
     },
     "Friedman2023DistributedScienceScientificProcess053": {
@@ -1088,14 +859,8 @@
         "cultural evolution",
         "distributed cognition"
       ],
-      "findings": [
-        "The scientific process plays out in a multi-scale system comprising subsystems, each with their own dynamics..",
-        "We formalize the scientific process as multi-scale Active Inference, where individual rese...."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_DistributedScience/README.md"
     },
     "Friedman2023EnhancedNSFPostdoctoralReporting054": {
@@ -1114,10 +879,7 @@
         "The proposed system integrates updatable profiles, intelligent processing prompts, and a dynamic reporting system to transform how postdocs report their research progress and collaborations..",
         "The system's design focuses on operational efficiency, real-time evaluation, and a consistent reporting framework.."
       ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "methods": [],
       "source": "papers/2023_NSFReporting/README.md"
     },
     "Friedman2023ExperimentalEntomologyAgeVideo055": {
@@ -1131,14 +893,8 @@
         "experimental methods",
         "high-throughput analysis"
       ],
-      "findings": [
-        "We examine the transformative impact of video technology on experimental entomology..",
-        "Video-based approaches enable high-throughput behavioral phenotyping, automated tracking of individuals in colonies...."
-      ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_VideoEntomology/README.md"
     },
     "Friedman2023GeneralizedNotationNotationActive056": {
@@ -1179,13 +935,8 @@
         "Active Blockference",
         "meta-prompting"
       ],
-      "findings": [
-        "The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research top"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_GenerativeResearchTeams/README.md"
     },
     "Friedman2023AntsAging058": {
@@ -1201,13 +952,8 @@
         "social insects",
         "evolutionary biology"
       ],
-      "findings": [
-        "A presentation exploring the relationship between social organization and aging in ant colonies, titled 'Of Ants & Aging.' The work examines the paradox of lifespan variation across castes in social i"
-      ],
-      "methods": [
-        "Content production",
-        "Pedagogical design"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_AntsAging/README.md"
     },
     "Friedman2023OpenAccessScienceNeeds059": {
@@ -1222,14 +968,8 @@
         "decentralized",
         "information overload"
       ],
-      "findings": [
-        "While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute..",
-        "We contend that open access to diverse sources of scientific sensem...."
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_OpenScienceSensemaking/README.md"
     },
     "Friedman2023PostdocReview20202023060": {
@@ -1246,13 +986,8 @@
         "biology",
         "interdisciplinary research"
       ],
-      "findings": [
-        "A comprehensive review of Daniel Friedman's 2020-2023 postdoctoral research structured around six working areas: (a) Biology, (b) Entomology, (c) Active Inference, (d) Cognitive Security, (e) Meta-Sci"
-      ],
-      "methods": [
-        "Content production",
-        "Pedagogical design"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_PostdocReview/README.md"
     },
     "Friedman2023ActiveInferenceInstituteActive061": {
@@ -1269,10 +1004,7 @@
         "This document briefly surveys the current state of the Active Inference Institute and Active Inference Ecosystem, and outlines our future directions..",
         "It will be versioned as a living representation (both cyclic and updating) of ecosystems both general and local, describing the past, present, and future actions of the Active Inference Institute.."
       ],
-      "methods": [
-        "Program coordination",
-        "Community governance design"
-      ],
+      "methods": [],
       "source": "papers/2023_AII_v1/README.md"
     },
     "Friedman2023P3IFPropertiesProcessesPerspectives062": {
@@ -1288,13 +1020,9 @@
         "health security"
       ],
       "findings": [
-        "The Properties, Processes, and Perspectives Inter-Framework (P3IF) multiplexes interdisciplinary requirements frameworks to manage information risk and foster cognitive security.",
         "Analysis of P3IF provides structu..."
       ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "methods": [],
       "source": "papers/2023_P3IF/README.md"
     },
     "Friedman2023CommentOrNotComment063": {
@@ -1314,8 +1042,7 @@
         "DRE3 model supports formal tracing of memes across platforms"
       ],
       "methods": [
-        "Rhetorical ecosystem mapping",
-        "Cross-domain pattern mapping"
+        "Rhetorical ecosystem mapping"
       ],
       "source": "papers/2023_ToComment/README.md"
     },
@@ -1344,10 +1071,7 @@
         "William Blake's prophetic works contain formal structures that prefigure modern systems thinking",
         "Synergetic analysis reveals deep correspondences between poetic and mathematical modes of thought"
       ],
-      "methods": [
-        "Visual and symbolic analysis",
-        "Cross-domain pattern mapping"
-      ],
+      "methods": [],
       "source": "papers/2023_BlakeFuller/README.md"
     },
     "Friedman2022ActiveInferenceOntologyDecentralized066": {
@@ -1363,12 +1087,10 @@
         "open science"
       ],
       "findings": [
-        "We describe the Active Inference Ontology, a formal knowledge structure mapping the concepts, relations, and entities in the Active Inference and Free Energy Principle literature.",
         "Analysis of The ontology provide..."
       ],
       "methods": [
-        "Active Inference",
-        "Free energy minimization"
+        "Active Inference"
       ],
       "source": "papers/2022_ActiveInferenceOntology/README.md"
     },
@@ -1384,13 +1106,9 @@
         "free energy minimization"
       ],
       "findings": [
-        "The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models.",
         "Analysis of The project, f..."
       ],
-      "methods": [
-        "Program coordination",
-        "Community governance design"
-      ],
+      "methods": [],
       "source": "papers/2022_ActiveDiffusion/README.md"
     },
     "Friedman2022FromUsersSenseMakers068": {
@@ -1405,13 +1123,8 @@
         "social annotation",
         "digital attention"
       ],
-      "findings": [
-        "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr"
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2022_StigmergicAnnotation/README.md"
     },
     "Friedman2022FreeWillOrLack069": {
@@ -1432,10 +1145,7 @@
         "The discussion anticipates his upcoming book Determined: The Science of Life Without Free Will..",
         "Various topics are covered at the intersection of neuroscience with philosophy, education, and the criminal justice system.."
       ],
-      "methods": [
-        "Genomic and bioinformatic analysis",
-        "Statistical genetics"
-      ],
+      "methods": [],
       "source": "papers/2022_FreeWillSapolsky/README.md"
     },
     "Friedman2022PredictiveProcessingInterpretationMirror070": {
@@ -1455,10 +1165,7 @@
         "In this article we apply a predictive processing interpretation to the results of the mirror test in order to offer a novel perspective with which to understand mirror self-recognition and self-directed behavior..",
         "Furthermore, we hypothesize that a “reflection prediction”, upon which our predictive processing interpretation of the mirror test is built, may also offer a novel perspective to understand how humans locate themselves relative to a mirror, imitate others, and are self-aware from a socia"
       ],
-      "methods": [
-        "Visual and symbolic analysis",
-        "Cross-domain pattern mapping"
-      ],
+      "methods": [],
       "source": "papers/2022_MirrorTest/README.md"
     },
     "Friedman2022StructuringInformationCommonsOpen071": {
@@ -1474,14 +1181,8 @@
         "information integrity",
         "collective sensemaking"
       ],
-      "findings": [
-        "An edited volume examining open standards and cognitive security for structuring the information commons..",
-        "The book addresses how information ecosystems can be designed to promote trust, transparency...."
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2022_InformationCommons/README.md"
     },
     "Friedman2022SystemsModelingCognitiveAudits072": {
@@ -1502,10 +1203,7 @@
         "The grant was submitted in October 2022 and was not funded..",
         "Learn more, get in touch, get involved, or fund us: https://www.activeinference.org/."
       ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "methods": [],
       "source": "papers/2022_HypercertEcosystems/README.md"
     },
     "Friedman2022FreeEnergyPrincipleActive073": {
@@ -1520,14 +1218,8 @@
         "bibliometrics",
         "ontology"
       ],
-      "findings": [
-        "We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston.",
-        "We trace the history, growth, and div..."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2022_SystematicLiteratureAnalysis/README.md"
     },
     "Friedman2022TrustFinderRecommendationsCommunityBased074": {
@@ -1547,10 +1239,7 @@
         "Each year, millions of articles, books, documents, and datasets are published..",
         "Amidst this flood of information, even those with significant experience and expertise in the knowledge economy are struggling to evaluate and vet claims.."
       ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "methods": [],
       "source": "papers/2022_TrustFinder/README.md"
     },
     "Friedman2021ActiveInferantsActiveInference075": {
@@ -1566,10 +1255,7 @@
         "behavioral modeling",
         "eco-evo-devo"
       ],
-      "findings": [
-        "In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments..",
-        "Active inference is a multiscale approach to behavi...."
-      ],
+      "findings": [],
       "methods": [
         "Active inference agent-based simulation",
         "Markov decision process modeling of foraging"
@@ -1589,13 +1275,8 @@
         "BOLTS framework",
         "trust management"
       ],
-      "findings": [
-        "We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2021_ModelingConflict/README.md"
     },
     "Friedman2021DigitalRhetoricalEcosystemAnalysis077": {
@@ -1615,10 +1296,7 @@
         "In the digital public sphere, the primacy of image-based communication motivates an over-reliance on the image meme for public argumentation..",
         "Despite its ubiquity, the image meme format is currently understudied in large scale digital data analyses, relative to text -based formats such as natural language and hashtags.."
       ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "methods": [],
       "source": "papers/2021_DigitalRhetorical/README.md"
     },
     "Friedman2021InnovatorSDigitalPlaybook078": {
@@ -1646,10 +1324,7 @@
         "Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems..",
         "We explore communication in located teams and all-...."
       ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "methods": [],
       "source": "papers/2021_NarrativeEcosystems/README.md"
     },
     "Friedman2021NarrativeInformationManagement080": {
@@ -1669,10 +1344,7 @@
         "While all may be concerned with very similar challenges, lack of information exchange and common ontology between these areas may be causing silos, missed opportunities, and potentially even friction among areas..",
         "In this paper, we address the need for synthesis and exchange of knowledge, tools, and approaches among various fields by proposing Narrative Information Management (NIM) as a unifying term and framework for the fundamental features and challenges of facilitating collective sensemaking.."
       ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "methods": [],
       "source": "papers/2021_NarrativeInformationMgmt/README.md"
     },
     "Friedman2021FacilitatorSCatechismPlaybook081": {
@@ -1727,13 +1399,9 @@
         "social immunity"
       ],
       "findings": [
-        "Ant colonies regulate collective behavior through interactions among individual workers, creating colony-level physiological processes that are distributed across all individuals.",
         "Analysis of We examine how this..."
       ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "methods": [],
       "source": "papers/2020_DistributedPhysiology/README.md"
     },
     "Friedman2020EmergentTeamsComplexThreats085": {
@@ -1754,10 +1422,7 @@
         "Specifically, the introduction of nuclear weapons and the maintenance of large military budgets during peacetime in the latter half of the 20th century have changed the risk calculus of conflict among state and non-state actors..",
         "Consequently, the operating environment has changed.."
       ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "methods": [],
       "source": "papers/2020_EmergentTeams/README.md"
     },
     "Friedman2020GeneExpressionVariationBrains086": {
@@ -1773,14 +1438,8 @@
         "behavioral castes",
         "Pogonomyrmex barbatus"
       ],
-      "findings": [
-        "Gene expression differences among workers performing different tasks are a key mechanism underlying division of labor in social insects..",
-        "Here we characterize transcriptomic profiles of foragers compar...."
-      ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2020_GeneExpressionForagers/README.md"
     },
     "Friedman2020HowUseKeybaseRemote087": {
@@ -1805,14 +1464,8 @@
         "biogenic amines",
         "colony variation"
       ],
-      "findings": [
-        "Colonies of the red harvester ant regulate foraging activity based on food availability and local conditions..",
-        "Here we quantified tissue content of 4 biogenic amines (dopamine, serotonin, octopamine, a...."
-      ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2020_NeurotransmitterVariation/README.md"
     },
     "Friedman2020GreatPresetRemoteTeams089": {
@@ -1827,14 +1480,8 @@
         "information theory",
         "socioeconomic narratives"
       ],
-      "findings": [
-        "This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior.",
-        "Through the lens of Active Inferen..."
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2020_GreatPreset/README.md"
     },
     "Friedman2020InnovatorSCatechism090": {
@@ -1849,14 +1496,8 @@
         "organizational design",
         "hackathons"
       ],
-      "findings": [
-        "Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives.",
-        "Many of these teams fail due to..."
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2020_InnovatorsCatechism/README.md"
     },
     "Friedman2020NeuroscienceDecisionMakingInterview091": {
@@ -1871,14 +1512,8 @@
         "attention",
         "neural circuits"
       ],
-      "findings": [
-        "In this interview, Professor Tim Hanks discusses topics related to neuroscience, decision making, philosophy, and science as a career..",
-        "Hanks explores how ideas from computational neuroscience have hel...."
-      ],
-      "methods": [
-        "Genomic and bioinformatic analysis",
-        "Statistical genetics"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2020_NeuroscienceDecision/README.md"
     },
     "Friedman2019DennettExplainedInterviewDaniel092": {
@@ -1893,14 +1528,8 @@
         "predictive processing",
         "altered states"
       ],
-      "findings": [
-        "In this interview, Professor Daniel Dennett discusses his philosophical roots, his thoughts on Freud, predictive processing, psychedelics, consciousness, and ancient Athens..",
-        "Dennett argues that philos...."
-      ],
-      "methods": [
-        "Genomic and bioinformatic analysis",
-        "Statistical genetics"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2019_DennettExplained/README.md"
     },
     "Friedman2019PhDBehavioralPhysiologicalTranscriptomic093": {
@@ -1917,10 +1546,7 @@
         "colony variation",
         "Stanford University"
       ],
-      "findings": [
-        "This dissertation investigates behavioral, physiological, and transcriptomic variation among colonies of the red harvester ant (Pogonomyrmex barbatus)..",
-        "It integrates field behavioral ecology, neuroche...."
-      ],
+      "findings": [],
       "methods": [
         "Multi-year field observation of harvester ant colonies",
         "Transcriptomic profiling of behavioral variation",
@@ -1940,10 +1566,7 @@
         "collective cognition",
         "scientific theories of consciousness"
       ],
-      "findings": [
-        "Here we address the scientific study of consciousness by proposing the ant colony as a model system..",
-        "We introduce the Ant Colony Test (ACT) as a rigorous reverse test for consciousness, showing that s...."
-      ],
+      "findings": [],
       "methods": [
         "Collective behavior and consciousness theory",
         "Multi-agent modeling of ant colony cognition",
@@ -1964,14 +1587,8 @@
         "behavioral ecology",
         "reproductive fitness"
       ],
-      "findings": [
-        "Red harvester ant colonies must spend water to obtain water: colonies lose water as workers forage outside the nest, and gain water through seeds collected..",
-        "Here we present field experiments showing t...."
-      ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2019_ForagerHydration/README.md"
     },
     "Friedman2018ForagingBehaviorLocomotionInvasive096": {
@@ -1987,14 +1604,8 @@
         "chemical ecology",
         "cuticular hydrocarbons"
       ],
-      "findings": [
-        "Argentine ants (Linepithema humile) are one of the world's most widespread invasive species, forming massive supercolonies spanning hundreds of kilometers..",
-        "Here we examine the relationship between the...."
-      ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2018_ArgentineAnt/README.md"
     },
     "Friedman2018MVEEFrameworkEvolutionaryStudies097": {
@@ -2014,10 +1625,7 @@
         "MVEE reflects where I was at in January 2018 ( solo presentation ) in thinking about Biology, Evolution, Active Inference, Free Energy Principle, and more..",
         "Uploaded to Zenodo in 2024.."
       ],
-      "methods": [
-        "Content production",
-        "Pedagogical design"
-      ],
+      "methods": [],
       "source": "papers/2018_MVEE/README.md"
     },
     "Friedman2018WoodliceMenBayesianAccount098": {
@@ -2034,9 +1642,7 @@
         "variational inference",
         "philosophy of mind"
       ],
-      "findings": [
-        "In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit"
-      ],
+      "findings": [],
       "methods": [
         "Active inference modeling of consciousness",
         "Bayesian mechanics of self-organizing systems",
@@ -2058,10 +1664,7 @@
         "sexology",
         "controlled novelty"
       ],
-      "findings": [
-        "Healthy romantic relationships contribute to human physical health and emotional well-being..",
-        "Here we introduce Partner Pen Play in Parallel (PPPiP), the act of simultaneous improvisational drawing on...."
-      ],
+      "findings": [],
       "methods": [
         "Experimental paradigm design for relational improvement",
         "Mixed-methods analysis of partnered interaction",
@@ -2082,14 +1685,8 @@
         "biogenic amines",
         "harvester ants"
       ],
-      "findings": [
-        "Individual behavioral variation within colonies is shaped by neurochemical signaling.",
-        "Dopamine is a key neuromodulator associated with locomotion, arousal, and reward across taxa."
-      ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2018_DopamineForaging/README.md"
     },
     "Friedman2017MutAntsAreHere101": {
@@ -2107,13 +1704,9 @@
         "gene knockout"
       ],
       "findings": [
-        "The development of CRISPR/Cas9-mediated gene knockout in two ant species opens a new window into exploring how social insects use olfactory cues to organize their collective behavior.",
         "Analysis of In this issue of..."
       ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "methods": [],
       "source": "papers/2017_MutAnts/README.md"
     },
     "Friedman2017TwoLineagesThatNeed102": {
@@ -2129,14 +1722,8 @@
         "colony organization",
         "social evolution"
       ],
-      "findings": [
-        "Dependent-lineage ant species challenge conventional assumptions about colony genetic structure and its relationship to colony-level behavior..",
-        "In dependent-lineage species, queens must mate with males...."
-      ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2017_TwoLineages/README.md"
     },
     "Friedman2016AntGeneticsReproductivePhysiology103": {
@@ -2153,14 +1740,8 @@
         "social insects",
         "pheromone communication"
       ],
-      "findings": [
-        "The behavioral repertoire and ecology of ant colonies emerge from the interactions among individuals, each with distinct genetic, epigenetic, and physiological states.",
-        "Genetic approaches are beginning..."
-      ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2016_AntGenetics/README.md"
     },
     "Friedman2016ContextDependentExpressionForaging104": {
@@ -2177,14 +1758,8 @@
         "field study",
         "behavioral ecology"
       ],
-      "findings": [
-        "Previous work has found that workers of similar genotype adopt different behavioural phenotypes..",
-        "Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati...."
-      ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2016_ForagingGene/README.md"
     },
     "Friedman2016InfluenceNuclearStructureFormation105": {
@@ -2200,14 +1775,8 @@
         "nuclear organization",
         "3C technologies"
       ],
-      "findings": [
-        "Ionizing radiation causes DNA double-strand breaks and disrupts chromatin architecture, potentially leading to chromosomal aberrations and genomic instability..",
-        "Chromosome conformation capture (3C) tec...."
-      ],
-      "methods": [
-        "Genomic and bioinformatic analysis",
-        "Statistical genetics"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2016_NuclearStructure/README.md"
     },
     "Friedman2015CommentaryPortugueseCryptoJews106": {
@@ -2224,9 +1793,7 @@
         "mtDNA",
         "population genetics"
       ],
-      "findings": [
-        "Population genetics critique of uniparental marker methodology for inferring Jewish ancestry in Iberian crypto-Jewish communities"
-      ],
+      "findings": [],
       "methods": [
         "Uniparental marker haplotype analysis",
         "Population genetic admixture modeling",
@@ -2248,13 +1815,8 @@
         "bone marrow",
         "autoimmune disorders"
       ],
-      "findings": [
-        "Hypothesis linking Ehrlichia/Anaplasma intracellular parasitic bacteria to leukemia and immune disorders, with clinical evidence for Rifampin treatment"
-      ],
-      "methods": [
-        "Genomic and bioinformatic analysis",
-        "Statistical genetics"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2015_EhrlichialInfection/README.md"
     },
     "Friedman2015LargeScaleCodingSequence108": {
@@ -2272,10 +1834,7 @@
         "beeswax",
         "venom"
       ],
-      "findings": [
-        "A key question in evolutionary biology concerns how novel traits arise at the molecular level..",
-        "Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly...."
-      ],
+      "findings": [],
       "methods": [
         "Transcriptomic sequencing and assembly",
         "Coding sequence evolution analysis",
@@ -2292,10 +1851,7 @@
       "findings": [
         "Six-domain Ento-Linguistic framework, open-source corpus pipeline (term extraction, co-occurrence networks, semantic entropy), and CACE meta-standards for lexical engineering in entomology."
       ],
-      "methods": [
-        "Field observation and behavioral assays",
-        "Population genetics analysis"
-      ],
+      "methods": [],
       "source": "papers/2026_EntoLinguistics/README.md"
     },
     "Friedman2026LivingMetaAnalysisArchitecture110": {
@@ -2311,13 +1867,8 @@
         "Free Energy Principle",
         "computational bibliography"
       ],
-      "findings": [
-        "Computational living meta-analysis of the Active Inference and Free Energy Principle literature: multi-source retrieval, nanopublication extraction, and hypothesis scoring architecture."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_ActInfMetaAnalysis/README.md"
     },
     "Friedman2026DynamicAttentionalAgentsFocused111": {
@@ -2335,13 +1886,8 @@
         "Neuronal Packet Hypothesis",
         "contemplative neuroscience"
       ],
-      "findings": [
-        "Three-level hierarchical Active Inference framework for focused attention meditation: thoughtseed agents (Markov blankets) couple to DMN/VAN/DAN/FPN; simulations reproduce 49% lower free energy and DM"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_FocusedAttentionMeditation/README.md"
     },
     "Friedman2026CognitiveDiagramsReviewingCategorical112": {
@@ -2353,10 +1899,7 @@
       "findings": [
         "Linguistic case as categorical structure: alignment typology as functors, DisCoCat/DisCoCirc composition, bridges to Distributional Active Inference and protocol-level analysis of prompt injection."
       ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "methods": [],
       "source": "papers/2026_CognitiveCaseDiagrams/README.md"
     },
     "Friedman2026TowardsLean4Formalization113": {
@@ -2399,9 +1942,7 @@
         "Active Inference",
         "cognitive security"
       ],
-      "findings": [
-        "Historical and futures-oriented analysis of operations orders (OPORD) for organizational sensemaking, leading to a catechism-style OPORD format for process facilitators in military, intelligence, and"
-      ],
+      "findings": [],
       "methods": [
         "OPORD analysis and catechism-style process design",
         "Organizational sensemaking and high-reliability frameworks"
@@ -2423,13 +1964,8 @@
         "Newton's Sleep",
         "Single Vision"
       ],
-      "findings": [
-        "Essay mapping Jiang Xueqin's artificial-intelligence critique through William Blake's theory of single vision and Active Inference concepts including pathological prior dominance."
-      ],
-      "methods": [
-        "Visual and symbolic analysis",
-        "Cross-domain pattern mapping"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_BlakeJiang/README.md"
     },
     "Friedman2026CrescentCityLivingWaves116": {
@@ -2442,14 +1978,8 @@
         "Jefferson",
         "USA"
       ],
-      "findings": [
-        "This manuscript offers a synthetic scholarly history of Crescent City, California — seat of Del Norte County on the north- ernmost developed strip of the California coast — wher",
-        "The narrative reads the town as an emergent nested system: Tolowa Dee-ni’ villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s;"
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_CrescentCity/README.md"
     },
     "Friedman2026IntroductionBiologyGenerativeApproach117": {
@@ -2458,10 +1988,7 @@
       "keywords": [
         "Biology"
       ],
-      "findings": [
-        "Introduction to Biology: A Generative Approach is an open biology textbook with forty-four chapters, ranging from systems science and chemical foundations through cells, metabolism, geneti",
-        "Organized as Unit 0 plus Units I–X, the text presents biology as an evidence-grounded discipline in which mechanisms, measurements, and simple models are developed together, so readers can move"
-      ],
+      "findings": [],
       "methods": [
         "Generative textbook scaffold methodology",
         "Modular pedagogical content design"
@@ -2484,14 +2011,8 @@
         "Lean theorem proving",
         "machine-checked free-energy identity"
       ],
-      "findings": [
-        "Active inference models often need to choose among several policy streams at once, for example streams tied to different effectors, sensory channels, agents, agents within a group, or planning hori",
-        "Standard discrete active-inference implementations keep this manageable by treating those streams as independent, but that simplification removes the dependencies that make coordinated action possible"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_PolicyEntanglementActive/README.md"
     },
     "Friedman2026BoundedAutoResearchTinyReproducible120": {
@@ -2505,14 +2026,8 @@
         "human review",
         "local artifact integrity"
       ],
-      "findings": [
-        "This paper presents Deterministic bounded AutoResearch for a small MNIST neural-network task, a public template exemplar that turns an AutoResearch loop into ordinary reproducible research infrastruct",
-        "The case study is intentionally small but concrete: 2000 training and 500 test images from MNIST handwritten digit database are evaluated by the bounded small MNIST neural-network classification loop."
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_BoundedAutoResearchTiny/README.md"
     },
     "Friedman2026ConvergenceAnalysisGradientDescent121": {
@@ -2527,14 +2042,8 @@
         "reproducible research",
         "infrastructure automation"
       ],
-      "findings": [
-        "This paper presents a convergence study of fixed-step gradient descent on a convex quadratic, framed as the computational exemplar of the Research Project Template (https://github.com/docxology/templa",
-        "The implementation lives in projects/templates/template code project/src/optimizer.py; experiments and figures are orchestrated by projects/templates/template code project/scripts/optimization analysi"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_ConvergenceAnalysisGradient/README.md"
     },
     "Friedman2026EditorialQualityAtScale122": {
@@ -2547,14 +2056,8 @@
         "reproducible research",
         "manuscript quality"
       ],
-      "findings": [
-        "This paper documents template prose project, the prose-focused exemplar of the Research Project Template (https://github.com/docxology/template).",
-        "It pairs the template's two-layer architecture with the prose analysis infrastructure (https://github.com/docxology/template/tree/main/infrastructure/prose) (readability metrics, structural outline, e"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_EditorialQualityAt/README.md"
     },
     "Friedman2026TemplateApproachReproducibleGenerative123": {
@@ -2574,14 +2077,8 @@
         "FAIR4RS",
         "research software engineering"
       ],
-      "findings": [
-        "The reproducibility crisis in computational research is fundamentally structural: research artifacts are scattered across disconnected tools—LaTeX editors, Jupyter notebooks, ad-hoc shell scripts—with",
-        "Studies have shown that most published findings are false positives, replication rates in psychology hover around 36%, and only 24% of 1.4 million Jupyter notebooks can be successfully re-executed."
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_TemplateApproachReproducible/README.md"
     },
     "Friedman2026ActiveInferenceMultiTrack124": {
@@ -2594,14 +2091,8 @@
         "generalized notation notation",
         "lean"
       ],
-      "findings": [
-        "We study a minimal Active Inference stack on toy models: a Bernoulli–Ising analytical oracle, a pymdp T-maze rollout, and a sheaf-indexed compose contract that binds 34 fragment tracks into 12 flat IM",
-        "The methodological contribution is a discipline rather than a domain finding: every reported number is hydrated from a generated artifact and every cross-track claim is machine-checked before renderin"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_ActiveInferenceMulti/README.md"
     },
     "Friedman2026BeeStackEvidenceTypedScaffold125": {
@@ -2621,14 +2112,8 @@
         "central complex",
         "waggle dance"
       ],
-      "findings": [
-        "BeeStack is an executable, evidence-typed research scaffold for whole-colony simulation of the Western honey bee (Apis mellifera), organized as five layers (Body, Brain, Mind, Swarm, Niche).",
-        "It pairs FlyBody/MuJoCo body and small-scene swarm renders with curated empirical BeeBrain datasets and reduced deterministic kernels, keeping fidelity a declared per-module property: every quoted num"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_BeeStack/README.md"
     },
     "Friedman2026WhenDoBugsSee126": {
@@ -2644,14 +2129,8 @@
         "active inference",
         "reproducible research"
       ],
-      "findings": [
-        "Objective: To review the plausibility of insect detection of infrared (IR) cues that covary with semiochemical vibrational signatures, and to produce falsifiable predictions through the integration",
-        "The vibrational theory remains contested, so the framework treats IR/vibrational sensing as a testable complement to molecular recognition rather than a replacement for receptor binding ."
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_WhenDoBugs/README.md"
     },
     "Friedman2026SelfImprovementAgentHarness127": {
@@ -2663,14 +2142,8 @@
         "reproducible research",
         "agent evaluation"
       ],
-      "findings": [
-        "This exemplar documents template sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in .",
-        "The default pipeline replays fixture-backed generations for the mini classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps."
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_SelfImprovementAgent/README.md"
     },
     "Friedman2025BiofirmDevelopmentFirstPrinciples128": {
@@ -2679,13 +2152,8 @@
       "keywords": [
         "BiofirmDevelopmentWith"
       ],
-      "findings": [
-        "Multiple presentations given during the Active Inference Institute's 4th annual Applying Active Inference Symposium, 2024 over the course of November 13th-15th 2024"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_BiofirmDevelopmentWith/README.md"
     },
     "Friedman2025ConCatEnateEmulation129": {
@@ -2694,13 +2162,8 @@
       "keywords": [
         "ConCatEnate"
       ],
-      "findings": [
-        "Updated added a number of pages at the start (from page 2) that describes the entire system and whats missing apologies for not giving this overview of what would happen given those"
-      ],
-      "methods": [
-        "Genomic and bioinformatic analysis",
-        "Statistical genetics"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_ConCatEnate/README.md"
     },
     "Friedman2025GraphspeakLanguageHandshake130": {
@@ -2709,13 +2172,8 @@
       "keywords": [
         "Graphspeak"
       ],
-      "findings": [
-        "An experiment on decomposing language onto initially established graph-theory representation applied then onto some pre-selected transformations (commonly used context/tool related transmutes) ("
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_Graphspeak/README.md"
     },
     "Friedman2025BevCycPositPrimitiveDrivers131": {
@@ -2724,13 +2182,8 @@
       "keywords": [
         "BevCycPositPrimitive"
       ],
-      "findings": [
-        "Posits a bev-cyc as primitive driver of creatures / to use in agentic system represents a cycle of homeostasis to accomplish by divisible action sequences; that are actually states that break down ont"
-      ],
-      "methods": [
-        "Genomic and bioinformatic analysis",
-        "Statistical genetics"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_BevCycPositPrimitive/README.md"
     },
     "Friedman2025BeaconsPreEmulationSocial132": {
@@ -2739,13 +2192,8 @@
       "keywords": [
         "BeaconsPreEmulation"
       ],
-      "findings": [
-        "primitive emulation of social cortex currently only about tagging object types and labeled objects in simulations and having them refer to a table of category and response, which might include a"
-      ],
-      "methods": [
-        "Genomic and bioinformatic analysis",
-        "Statistical genetics"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2025_BeaconsPreEmulation/README.md"
     },
     "Friedman2025ConCatEnatePilot133": {
@@ -2758,10 +2206,7 @@
         "Pilot overview validates cat hippocampus emulation using generative AI as a viable research direction",
         "Demonstrates feasibility of in-silico emulation of mammalian neural circuits for computational neuroscience"
       ],
-      "methods": [
-        "Genomic and bioinformatic analysis",
-        "Statistical genetics"
-      ],
+      "methods": [],
       "source": "papers/2025_ConCatEnate2/README.md"
     },
     "Friedman2024PushPullPrimingSequence134": {
@@ -2770,14 +2215,8 @@
       "keywords": [
         "PushPull"
       ],
-      "findings": [
-        "The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer",
-        "The priming sequence of exercises is presented to inform an individual’s understanding of how their attention interacts with computer use movements, such as controlling the on-screen cursor with"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2024_PushPull/README.md"
     },
     "Friedman2023NaturalAIBasedScience135": {
@@ -2789,13 +2228,8 @@
         "Natural",
         "Policy"
       ],
-      "findings": [
-        "Letter on: \"A Natural AI Based on The Science of Computational Physics, Biology and Neuroscience: Policy and Societal Significance\". v1 released on December 12, 2023."
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_NaturalAIBased/README.md"
     },
     "Friedman2023ATLASQuestionOrientedApproach136": {
@@ -2804,14 +2238,8 @@
       "keywords": [
         "ATLAS2"
       ],
-      "findings": [
-        "The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains.",
-        "The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions."
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_ATLAS2/README.md"
     },
     "Friedman2023TranscriptActiveInferenceGuestStream137": {
@@ -2822,14 +2250,8 @@
         "Science",
         "Communication"
       ],
-      "findings": [
-        "Transcript from livestream on July 25, 2023 at the Active Inference Institute.",
-        "YouTube watch link: https://www.youtube.com/watch?v=dUXfgzKHV1c Repository with updated transcripts and accessory files: https://github.com/ActiveInferenceInstitute/ActiveInferenceJournal/tree/main/Gu"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_TranscriptActiveInference/README.md"
     },
     "Friedman2023ModernNostrIndexCard138": {
@@ -2841,13 +2263,8 @@
         "Large Language Model",
         "Knowledge Engineering"
       ],
-      "findings": [
-        "Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2023_ModernNostrIndex/README.md"
     },
     "Friedman2023SlidesIris139": {
@@ -2860,10 +2277,7 @@
         "Iris dataset analysis demonstrates reproducible visual analytics workflow for educational contexts",
         "Slide-based presentation format effectively communicates active inference concepts to diverse audiences"
       ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "methods": [],
       "source": "papers/2023_SlidesIris/README.md"
     },
     "Friedman2022CanonicalNeuralNetworksPerform140": {
@@ -2872,14 +2286,8 @@
       "keywords": [
         "CanonicalNeuralNetworks"
       ],
-      "findings": [
-        "Transcript of a three-session series of discussions of the paper \"Canonical neural networks perform active inference\" by Takuya Isomura, Hideaki Shimazaki & Karl J.",
-        "Friston. https://www.nature.com/articles/s42003-021-02994-2 LS 051.0: Background and context."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2022_CanonicalNeuralNetworks/README.md"
     },
     "Friedman2022InteroceptionAsModelingAllostasis141": {
@@ -2888,14 +2296,8 @@
       "keywords": [
         "InteroceptionAsModeling"
       ],
-      "findings": [
-        "Transcript of discussions of the 2022 paper “Interoception as modeling, allostasis as control” by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett,",
-        "Quigley https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350 Session 050.0, October 17, 2022 https://www.youtube.com/watch?v=l7r0ISlr-Hc Session 050.1, October 20"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2022_InteroceptionAsModeling/README.md"
     },
     "Friedman2022TranscriptMarkSolmsConsciousness142": {
@@ -2909,14 +2311,8 @@
         "Free Energy Principle",
         "Livestream"
       ],
-      "findings": [
-        "This document is an enhanced transcript of the live presentations and group discussions with Mark Solms in 2022 at the Active Inference Institute.",
-        "The focus is the 2018 paper \"How and Why Consciousness Arises: Some Considerations from Physics and Physiology\" by Mark Solms and Karl Friston."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2022_Transcript/README.md"
     },
     "Friedman2022WorkedExampleBayesianMechanics143": {
@@ -2925,13 +2321,8 @@
       "keywords": [
         "WorkedExampleBayesian"
       ],
-      "findings": [
-        "Transcripts of discussions of the 2022 preprint \"A Worked Example of the Bayesian Mechanics of Classical Objects\" by Dalton A R Sakthivadivel. https://arxiv.org/abs/2206.12996 Session"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2022_WorkedExampleBayesian/README.md"
     },
     "Friedman2022TranscriptDiscussionsCommunicationAs144": {
@@ -2940,13 +2331,8 @@
       "keywords": [
         "TranscriptDiscussions"
       ],
-      "findings": [
-        "Discussion with an author of the 2021 paper “Communication as Socially Extended Active Inference: An Ecological Approach to Communicative Behavior” by Remi Tison & Pierre Poirier."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2022_TranscriptDiscussions/README.md"
     },
     "Friedman2022TrackingPublicSensemakingThrough145": {
@@ -2959,14 +2345,8 @@
         "Narrative",
         "Rhetorical Analysis"
       ],
-      "findings": [
-        "Political polarization and declining trust in institutions are driving societal destabilization and radicalization.",
-        "Recently there has been increased interest in online misinformation intervention and deterrence, for example through the use of machine learning on language use."
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2022_TrackingPublicSensemaking/README.md"
     },
     "Friedman2021TranscriptKarlFriston1st146": {
@@ -2983,14 +2363,8 @@
         "Tools",
         "Generative Model"
       ],
-      "findings": [
-        "On June 21st, 2021, Active Inference Lab ( activeinference.org/ ) hosted its first Applied Active Inference Symposium, featuring Professor Karl Friston.",
-        "The Symposium was structured in three sections, corresponding to the Organizational Units of the Active Inference Lab: Education, Communication, and Tools."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2021_Transcript/README.md"
     },
     "Friedman2021CollaborativeWritingCatechismBased147": {
@@ -3002,14 +2376,8 @@
         "Catechisms",
         "OPORDs"
       ],
-      "findings": [
-        "Asynchronous and remote collaborative written projects (research, field guides, code, etc.) in emergent, interdisciplinary teams can be an incredibly productive and enjoyable pursuit.",
-        "The convergence of diverse perspectives, personalities, and expertise in the rapid production of written deliverables can provide immense value and insight, not just to the situation, problem, or oppo"
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2021_CollaborativeWritingCatechism/README.md"
     },
     "Friedman2020ReimaginingMaps148": {
@@ -3026,14 +2394,8 @@
         "Intelligence Production",
         "OSINT"
       ],
-      "findings": [
-        "Reimagining Maps was written after participation in a National Geospatial-Intelligence Agency Incubator hosted on Polyplexus.",
-        "The field of cartography sits at the intersection of applied mathematics, engineering, geology, geography, user experience, and graphic design."
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2020_ReimaginingMaps/README.md"
     },
     "Friedman2020InfiniteGamesInfiniteTeams149": {
@@ -3042,14 +2404,8 @@
       "keywords": [
         "InfiniteGamesInfinite"
       ],
-      "findings": [
-        "Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: “Inventing a Remote Culture to Deal with Pandemics”, and was done so with the",
-        "How are global online narratives constructed and received in 2020?"
-      ],
-      "methods": [
-        "Narrative analysis",
-        "Trust and integrity modeling"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2020_InfiniteGamesInfinite/README.md"
     },
     "Friedman2026MusicNeverStoppedGrateful150": {
@@ -3062,14 +2418,8 @@
         "music information retrieval",
         "reproducible data compendium"
       ],
-      "findings": [
-        "We present a modular, citation-bound data compendium for the Grateful Dead universe — shows, songs, performances, personnel timelines, venues, recordings, and reception — and a category",
-        "The work is grounded in the archival reality that Grateful Dead history is both institutional and participatory: UCSC's Grateful Dead Archive and the Internet Archive collection preserve formal and co"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_MusicNeverStopped/README.md"
     },
     "Friedman2026DeterministicTestbedSelfOrganizing151": {
@@ -3083,14 +2433,8 @@
         "reproducible research",
         "language-model agents"
       ],
-      "findings": [
-        "Recent work on AutoScientists coordinates self-organizing teams of language-model agents through a small set of shared mechanisms: a champion-and-experiment-log shared state, a registry of retired de",
-        "This exemplar provides a deterministic, standalone reference implementation of those mechanisms and studies them honestly as a testbed rather than as a performance claim."
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_DeterministicTestbedSelf/README.md"
     },
     "Friedman2026RecoveringLLMPersonaAccuracies152": {
@@ -3110,14 +2454,8 @@
         "answer-key-free recovery",
         "local large language models"
       ],
-      "findings": [
-        "Algebraic (NTQR) evaluation infers how accurate a group of noisy classifiers was on a finite test using only their responses — no answer key.",
-        "We test this end to end on real large language models."
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_RecoveringLLMPersona/README.md"
     },
     "Friedman2026TriplicateDataDrivenLarge153": {
@@ -3130,14 +2468,8 @@
         "reproducible publishing",
         "document engineering"
       ],
-      "findings": [
-        "We present template newspaper, a pure-Python engine that renders a complete twelve-page, large-format newspaper to a print-ready PDF from structured YAML content.",
-        "The exemplar edition is The Triplicate, a homage to the historic newspaper of Crescent City, California (founded 1879)."
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_Triplicate/README.md"
     },
     "Friedman2026TemplateTextbook154": {
@@ -3146,14 +2478,8 @@
       "keywords": [
         "TemplateTextbook"
       ],
-      "findings": [
-        "A modular, fillable scaffold for book-length technical works: a data-driven manuscript (parts/chapters/labs/questions), a tested computational backbone, deterministic figures and Mermaid diagrams, and",
-        "--- Associated artifacts GitHub release: v0.1.2 (https://github.com/docxology/template textbook/releases/tag/v0.1.2) DOI: https://doi.org/10.5281/zenodo.20533125 Zenodo: https://zenodo.org/records/205"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_TemplateTextbook/README.md"
     },
     "Friedman2016LessonsFromColony155": {
@@ -3248,14 +2574,8 @@
         "open-source",
         "diagnostic-pilot"
       ],
-      "findings": [
-        "iTrace is an MIT-licensed Python toolkit for webcam-derived gaze, saccade, pupil, and quality diagnostics.",
-        "Version 0.4.1 is a diagnostic v1 release: the pure NumPy/SciPy core is algorithmically verified against synthetic and closed-loop oracles, the optional webcam shell exports derived records, and the em"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_ITrace/README.md"
     },
     "Friedman2026DemoCreateDeclarativeAudioVisual166": {
@@ -3275,14 +2595,8 @@
         "deterministic",
         "tts-stt-synchronization"
       ],
-      "findings": [
-        "DemoCreate generates audio-visual demos of software — codebase tours, website walkthroughs, and terminal/CLI demos — from a single declarative, deterministic spine.",
-        "A Demo is an ordered action stream plus narration chunks, merging CodeVideo's event-sourced virtual-IDE model with VSpeak's chunk/trigger model."
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_DemoCreate/README.md"
     },
     "Friedman2026ENTOENcryptedTypedOmnitrack167": {
@@ -3295,14 +2609,8 @@
         "reproducible research",
         "multimodal containers"
       ],
-      "findings": [
-        "ENTO (ENcrypted, Typed, Omnitrack) is a flat ZIP container format and reference implementation for bundling heterogeneous research artifacts — time series, genomics slices, s",
-        "Each track is sealed under per-track AES-256-GCM authenticated encryption with format+track associated-data binding and PADMÉ length padding."
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_ENTO/README.md"
     },
     "Friedman2026GeneralizedNotationNotationGNN168": {
@@ -3320,14 +2628,8 @@
         "gnn",
         "python"
       ],
-      "findings": [
-        "Generalized Notation Notation (GNN) is a text-based language designed to standardize the representation and communication of Active Inference generative models.",
-        "It aims to enhance clarity, reproducibility, and interoperability in the field of Active Inference and cognitive modeling."
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_GeneralizedNotationNotationGNN/README.md"
     },
     "Friedman2026COGANTDeterministicCodebaseGNN169": {
@@ -3344,10 +2646,7 @@
         "codebase-to-model translation",
         "cognitive ecosystem modeling"
       ],
-      "findings": [
-        "COGANT (Codebase-to-GNN Translation) deterministically converts software repositories into structured Active Inference artifacts expressed in the Active Inference Institute's Generalized Notation Nota",
-        "It is an evidence compiler: it propagates reviewable program facts through a finite fixpoint rule pipeline and emits graph, matrix, provenance, visualization, and round-trip artifacts with confidence"
-      ],
+      "findings": [],
       "methods": [
         "Deterministic codebase-to-GNN translation",
         "Software architecture pattern extraction"
@@ -3369,14 +2668,8 @@
         "multi-agent systems",
         "operational governance"
       ],
-      "findings": [
-        "Synthetic Analytic Tradecraft (AGEINT, or Agentic Intelligence), is a local curriculum-and-assurance atlas for teaching bounded AI-agent support inside intelligence education by making the machiner",
-        "It converts SIST Guide TOC and Bibliography into 16 parts, 51 modules, 9 methods appendices, 20 named AGEINT patterns, and 312 parsed source-guide references without renumbering inherited source ident"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_AGEINT/README.md"
     },
     "Friedman2026PolicyDistillationAsActive171": {
@@ -3392,14 +2685,8 @@
         "pymdp",
         "sophisticated inference"
       ],
-      "findings": [
-        "This paper formulates on-policy distillation as active inference in finite variational models, with exact claims only for declared objects and interpretive claims explicitly bounded outside them.",
-        "In the construction, the intractable teacher policy plays the role of the generative model $p(o,s)$, the tractable student policy is the approximate posterior $q(s)$, and the per-token reverse-KL dist"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Bayesian modeling and inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_PolicyDistillationAs/README.md"
     },
     "Friedman2026TemplateMadlibDeterministicToken172": {
@@ -3412,10 +2699,7 @@
         "reproducible research",
         "IMRAD"
       ],
-      "findings": [
-        "This exemplar asks whether a reviewable pipeline can hydrate a complete IMRAD manuscript from configuration-owned lexical data while preserving an audit trail that remains readable before and after re",
-        "The project deliberately keeps playful Mad Lib mechanics inside a serious reproducibility contract: the manuscript shell names large placeholders, the config declares allowable language, and the sourc"
-      ],
+      "findings": [],
       "methods": [
         "Deterministic token injection for manuscript generation",
         "Conditional IMRAD manuscript hydration"
@@ -3456,14 +2740,8 @@
         "structured analytic techniques",
         "multiharness"
       ],
-      "findings": [
-        "CogSecSkills is a defensive, harness-neutral agent-interface library that turns the human doctrine of cognitive security and analytic tradecraft into dependable, inspectable, agent-usable skills, dist",
-        "The live generated catalogue reports one hundred implemented skills across seven taxonomy groups — Structured Analytic Techniques, Cognitive Security, Critical Review and Assurance, OSINT and Source I"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_CogSecSkills/README.md"
     },
     "Friedman2026RealizingEmptinessOperationalSurrogates175": {
@@ -3477,14 +2755,8 @@
         "formal methods",
         "pymdp"
       ],
-      "findings": [
-        "This project operationalizes the 2026 preprint \"There is no self-evidence: A physics of emptiness realisation\" as a source-anchored software artifact.",
-        "Its central claim is that a finite agent can use a boundary for prediction while never obtaining evidence that the boundary is ontologically real, and the software separates three local artifact roles"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_RealizingEmptiness/README.md"
     },
     "Friedman2026LivingMetaAnalysisModafinil176": {
@@ -3504,14 +2776,8 @@
         "wakefulness",
         "cognitive enhancement"
       ],
-      "findings": [
-        "Manual synthesis cannot keep pace with a fast-growing research literature, and ad-hoc reviews bind no evidence to a reproducible pipeline.",
-        "We present a configurable, reproducible meta-analysis framework that takes a single search term and produces a complete quantitative portrait of its literature."
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_LivingMetaAnalysis/README.md"
     },
     "Friedman2026RefinementGoldMetallurgicalAnalogy177": {
@@ -3526,14 +2792,8 @@
         "assaying",
         "karat grading"
       ],
-      "findings": [
-        "This paper presents a metallurgical analogy for scientific manuscript composition, mapping gold-refining stages onto the template infrastructure pipeline.",
-        "The refinery processes manuscript ore through 5 stages — from raw draft (9K, ~37.5% purity) through smelting, assaying, and cupellation — to nine-nines certification (99.9999999%), the ultra-high-puri"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_RefinementGold/README.md"
     },
     "Friedman2026AlphaCOGANTRecursiveCorporateSelf178": {
@@ -3573,10 +2833,7 @@
         "source provenance",
         "rights-bounded release"
       ],
-      "findings": [
-        "A reproducible, rights-bounded digital-humanities workflow that builds and audits a target-ledgered William Blake corpus (texts, images, metadata, analysis, visual summaries) and separates open-source",
-        "This record contains the working-paper PDF (rights-safe: Blake Archive image mosaics omitted) and the open-source software release bundle."
-      ],
+      "findings": [],
       "methods": [
         "Digital humanities corpus construction",
         "Evidence-ledger provenance tracking",
@@ -3599,14 +2856,8 @@
         "synthetic evaluation",
         "LLM reviewers"
       ],
-      "findings": [
-        "How should you choose the judges, jurors, or reviewers who form a panel — and does that upstream choice change how well you can evaluate them without an answer key?",
-        "A panel can be selected many ways — by competence, by a representative lottery (sortition), by ideological bloc, or at random — and, separately, its noisy judgments can be evaluated blind: given the a"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_SortitionUpstreamNTQR/README.md"
     },
     "Friedman2026ExploratoryDataAnalysisReproducible181": {
@@ -3620,14 +2871,8 @@
         "data cleaning",
         "correlation analysis"
       ],
-      "findings": [
-        "Exploratory data analysis (EDA) is the most common entry point in applied research, yet it is also where reproducibility most often breaks down: logic accumulates in notebook cells that are never test",
-        "This paper presents the computational-notebook exemplar of the Research Project Template (https://github.com/docxology/template): an interactive walkthrough notebook (projects/templates/template eda n"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_ExploratoryDataAnalysis/README.md"
     },
     "Friedman2026DomainLanguageSpecifyingControlled182": {
@@ -3641,14 +2886,8 @@
         "staged validation",
         "dimensional analysis"
       ],
-      "findings": [
-        "This paper describes a small, tested domain language for specifying controlled methods — the methods-paper exemplar of the Research Project Template (https://github.com/docxology/template).",
-        "Unlike a results paper, this manuscript's subject is the methodology itself: a controlled vocabulary, a unit system with dimensional safety, four staged validation gates, and a deterministic compiler,"
-      ],
-      "methods": [
-        "Software pipeline design",
-        "Data-driven analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_DomainLanguageSpecifying/README.md"
     },
     "Friedman2026EntomologicalLawFieldMap183": {
@@ -3665,13 +2904,8 @@
         "biological weapons convention",
         "reproducible legal scholarship"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_EntomologicalLaw/README.md"
     },
     "Friedman2026ShapeBetweenFullPage184": {
@@ -3684,13 +2918,8 @@
         "reportlab",
         "reproducible publishing"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_ShapeBetween/README.md"
     },
     "Friedman2026AutopoieticProjectGeneration185": {
@@ -3704,13 +2933,8 @@
         "reproducible research",
         "infrastructure automation"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_AutopoieticProjectGeneration/README.md"
     },
     "Friedman2026TemplatePitchDeckReproducible186": {
@@ -3726,13 +2950,8 @@
         "PPTX",
         "PDF rendering"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_TemplatePitchDeck/README.md"
     },
     "Friedman2026ReproducibleLiteratureSynthesisInfrastructure187": {
@@ -3745,13 +2964,8 @@
         "reproducible research",
         "local LLM synthesis"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_ReproducibleLiteratureSynthesis/README.md"
     },
     "Friedman2026RegisteredReportTemplatePreregistration188": {
@@ -3763,13 +2977,8 @@
         "replication",
         "deviation ledger"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_RegisteredReportTemplate/README.md"
     },
     "Friedman2026RedactedReportTemplateDisclosure189": {
@@ -3781,13 +2990,8 @@
         "release audit",
         "source protection"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_RedactedReportTemplate/README.md"
     },
     "Friedman2026PoolsRulesToolsTemplate190": {
@@ -3796,13 +3000,8 @@
       "keywords": [
         "PoolsRulesTools"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_PoolsRulesTools/README.md"
     },
     "Friedman2026IllegalStatesMostlyUnrepresentable191": {
@@ -3818,13 +3017,8 @@
         "affine types",
         "illegal state unrepresentable"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_IllegalStatesMostly/README.md"
     },
     "Friedman2026DataDescriptorTemplateSchema192": {
@@ -3836,13 +3030,8 @@
         "provenance",
         "schema validation"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_DataDescriptorTemplate/README.md"
     },
     "Friedman2026PriorCognitiveArt194": {
@@ -3857,14 +3046,8 @@
         "cognitive science",
         "conceptual visualization"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Generative modeling",
-        "Bayesian inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_PriorCognitiveArt/README.md"
     },
     "Friedman2026ActiveFractalRabbitSyntheticBenchmark195": {
@@ -3873,13 +3056,8 @@
       "keywords": [
         "ActiveFractalRabbit"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_ActiveFractalRabbit/README.md"
     },
     "Friedman2026FourfoldVisionWilliamBlake196": {
@@ -3888,13 +3066,8 @@
       "keywords": [
         "FourfoldVision"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_FourfoldVision/README.md"
     },
     "Friedman2026DuckRabbitTypedMultimodalIllusion197": {
@@ -3910,13 +3083,8 @@
         "reproducible research",
         "psychophysics"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_DuckRabbit/README.md"
     },
     "Friedman2026SynthOBSFractiSynthGoldenRatio198": {
@@ -3931,13 +3099,8 @@
         "software provenance",
         "software citation"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_SynthOBSFractiSynth/README.md"
     },
     "Friedman2026ActiveInferencePowerSuite199": {
@@ -3953,13 +3116,8 @@
         "sequential hypothesis testing",
         "reproducible research"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_ActiveInferencePower/README.md"
     },
     "Friedman2026WitnessRegisterCoRegistration200": {
@@ -3974,13 +3132,8 @@
         "research infrastructure",
         "open science"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_WitnessRegister/README.md"
     },
     "Friedman2026LineSetHoldingInstruments201": {
@@ -3996,13 +3149,8 @@
         "reproducible review",
         "open science"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_LineSet/README.md"
     },
     "Friedman2026WhiteLineTypedLedger202": {
@@ -4018,13 +3166,8 @@
         "research ethics",
         "open science"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_WhiteLine/README.md"
     },
     "Friedman2026PersonalRedLinesDevelopment203": {
@@ -4043,13 +3186,8 @@
         "research ethics",
         "sociotechnical systems"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_PersonalRedLines/README.md"
     },
     "Friedman2026GoldenLineTowardWhat204": {
@@ -4064,13 +3202,8 @@
         "open science",
         "non-compensatory reading"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_GoldenLine/README.md"
     },
     "Friedman2026BlackLineStrongWork205": {
@@ -4085,13 +3218,8 @@
         "open science",
         "engineering practice"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_BlackLine/README.md"
     },
     "Friedman2026CodomyrmexArtificialEcologyAgentic206": {
@@ -4111,13 +3239,8 @@
         "actuation-gate",
         "trust-scoring"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_Codomyrmex/README.md"
     },
     "Friedman2026THALIATypedHarnessAnalytical207": {
@@ -4129,13 +3252,8 @@
         "retrieval-augmented generation",
         "reproducible research"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_THALIA/README.md"
     },
     "Friedman2026PROJECTBONDSpecialAgent208": {
@@ -4149,13 +3267,8 @@
         "mission protocol",
         "compendium"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_PROJECTBONDSpecial/README.md"
     },
     "Friedman2026DigiPPPiPDigitalPartnerPen209": {
@@ -4172,13 +3285,8 @@
         "relational technology",
         "reproducible research"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_DigiPPPiP/README.md"
     },
     "Friedman2026RobustBeliefSharingFederated210": {
@@ -4192,14 +3300,8 @@
         "robustness",
         "FedGVI"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Free energy minimization",
-        "Generative modeling",
-        "Bayesian inference"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_RobustBeliefSharing/README.md"
     },
     "Friedman2026ActiveSkillferenceValidatedPrerequisite211": {
@@ -4218,13 +3320,8 @@
         "micro-learning",
         "reproducible research"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_ActiveSkillference/README.md"
     },
     "Friedman2026DocxplusIntelligentDocumentContainer212": {
@@ -4238,13 +3335,8 @@
         "document security",
         "reproducible research"
       ],
-      "findings": [
-        "See full paper for detailed findings and analysis"
-      ],
-      "methods": [
-        "Literature review",
-        "Theoretical analysis"
-      ],
+      "findings": [],
+      "methods": [],
       "source": "papers/2026_DocxplusIntelligentDocument/README.md"
     },
     "Friedman2026CognitiveIntegrityFrameworkComputational213": {

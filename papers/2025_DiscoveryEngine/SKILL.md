@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "DiscoveryEngine"
+name: "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes"
 description: "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem..."
 tags: ["discovery-engine", "automated-discovery", "active-inference", "scientific-reasoning", "hypothesis-generation", "computational-science"]
 domain: "Computational"
-citation: "Daniel A. Friedman (2025). *DiscoveryEngine*. Computational."
+citation: "Vladimir Baulin, Austin Cook, Daniel Friedman, Janna Lumiruusu, Andrew Pashea, Shagor Rahman, Benedikt Waldeck (2025). *The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes*. ArXiv."
 doi: "10.48550/arXiv.2505.17500"
 ---
 
-# DiscoveryEngine
+# The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes
 
-**Daniel A. Friedman** (2025) · Computational
+**Vladimir Baulin, Austin Cook, Daniel Friedman, Janna Lumiruusu, Andrew Pashea, Shagor Rahman, Benedikt Waldeck** (2025) · Computational
 
 ## Context
 
@@ -21,14 +21,12 @@ This work addresses topics in **Computational**: Discovery Engine, automated dis
 Primary methods and techniques applied in this work:
 
 - Active Inference
-- Software pipeline design
 
 ## Key Findings
 
 Core contributions and results:
 
-- The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles..
-- The system models the scientific discovery process as an inference problem....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 

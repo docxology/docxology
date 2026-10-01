@@ -16,13 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Software pipeline design, Data-driven analysis
-- Identifies findings: Exploratory data analysis (EDA) is the most common entry point in applied
-research, yet it is also where reproducibility most often breaks down: logic
-accumulates in notebook cells that are never test, This paper presents the computational-notebook
-exemplar of the Research Project Template (https://github.com/docxology/template):
-an interactive walkthrough notebook
-(projects/templates/template_eda_n
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Computational literature
 
 ### 🎓 EDUCATOR
@@ -42,7 +37,7 @@ an interactive walkthrough notebook
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

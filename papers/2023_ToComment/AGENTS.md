@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — DigitalRhetoricalEcosystemAnalysis
+# AGENTS.md — To comment or not to comment
 
-**Paper**: DigitalRhetoricalEcosystemAnalysis (2023)
+**Paper**: To comment or not to comment (2023)
 **Domain**: Genetics & Biomedical
-**Authors**: Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman
+**Authors**: Dean Tickles, Daniel Friedman
 
 ---
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Rhetorical ecosystem mapping, Cross-domain pattern mapping
+- Extracts methods: Rhetorical ecosystem mapping
 - Identifies findings: Parsimony and polysemy give image memes narrative power, Image memes engage audiences through identity construction, DRE3 model supports formal tracing of memes across platforms
 - Maps contributions to Genetics & Biomedical literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects DigitalRhetoricalEcosystemAnalysis to related works in the bibliography
+- Connects To comment or not to comment to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

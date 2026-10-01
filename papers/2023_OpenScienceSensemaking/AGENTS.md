@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — OpenScienceSensemaking
+# AGENTS.md — Open Access science needs Open Science Sensemaking (OSSm)
 
-**Paper**: OpenScienceSensemaking (2023)
+**Paper**: Open Access science needs Open Science Sensemaking (OSSm) (2023)
 **Domain**: Cognitive Security
-**Authors**: Ronen Tamari, Daniel A. Friedman
+**Authors**: Ronen Tamari, Daniel Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
-- Identifies findings: While open access publishing broadens access to research products, making sense of volumes of new information is increasingly acute.., We contend that open access to diverse sources of scientific sensem....
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Cognitive Security literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects OpenScienceSensemaking to related works in the bibliography
+- Connects Open Access science needs Open Science Sensemaking (OSSm) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

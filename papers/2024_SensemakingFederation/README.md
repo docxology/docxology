@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎥 SensemakingFederation
+# 🎥 Sensemaking Federation: Exploring the Frontiers of Digital Innovation
 
-**Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman** (2024) · *Presentation*
+**Sensemaking Scenius** (2024) · *Presentation*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.14574046-blue)](https://doi.org/10.5281/zenodo.14574046)
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Content production
-- Pedagogical design
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -37,7 +36,7 @@
 
 ## Citation
 
-> Jack Park, Marc-Antoine Parent, Aaditya Bhatia, Daniel Friedman (2024). *SensemakingFederation*. Presentation. DOI: 10.5281/zenodo.14574046. URL: https://doi.org/10.5281/zenodo.14574046.
+> Sensemaking Scenius (2024). *Sensemaking Federation: Exploring the Frontiers of Digital Innovation*. Presentation. DOI: 10.5281/zenodo.14574046. URL: https://doi.org/10.5281/zenodo.14574046.
 
 ## Related
 

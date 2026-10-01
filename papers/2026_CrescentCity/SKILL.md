@@ -4,14 +4,14 @@ name: "Crescent City in Living Waves: Space, Time, People, and Minds on the Sout
 description: "<div> <div>This manuscript offers a synthetic scholarly history of Crescent City, California &mdash; seat of Del Norte County on the north- ernmost developed strip of the California coast &mdash; where published accounts remain fragmentary or era-bou..."
 tags: ["california", "cascadia", "crescent-city", "jefferson", "usa"]
 domain: "Cognitive Security"
-citation: "Daniel Ari Friedman (2026). *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast*. Cognitive Security."
+citation: "Daniel Friedman (2026). *Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast*. Zenodo."
 doi: "10.5281/zenodo.20286170"
 artifact_doi: "10.5281/zenodo.20286171"
 ---
 
 # Crescent City in Living Waves: Space, Time, People, and Minds on the Southern Cascadian Coast
 
-**Daniel Ari Friedman** (2026) · Cognitive Security
+**Daniel Friedman** (2026) · Cognitive Security
 
 ## Context
 
@@ -21,16 +21,13 @@ This work addresses topics in **Cognitive Security**: California, Cascadia, Cres
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- <div>
-<div>This manuscript offers a synthetic scholarly history of Crescent City, California &mdash; seat of Del Norte County on the north- ernmost developed strip of the California coast &mdash; wher
-- The narrative reads the town as an emergent nested system: Tolowa Dee-ni&rsquo; villages on the Smith River estuary; European contact and American settlement; genocide and dispossession in the 1850s; 
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -59,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20286170`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

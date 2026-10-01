@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 QuadMath
+# 🎨 QuadMath: An Analytical Review of 4D and Quadray Coordinates
 
-**Daniel Ari Friedman** (2025) · *Zenodo*
+**Daniel Friedman** (2025) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16887799-blue)](https://doi.org/10.5281/zenodo.16887799)
 
@@ -36,7 +36,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2025). *QuadMath*. Zenodo. DOI: 10.5281/zenodo.16887799. URL: https://doi.org/10.5281/zenodo.16887799.
+> Daniel Friedman (2025). *QuadMath: An Analytical Review of 4D and Quadray Coordinates*. Zenodo. DOI: 10.5281/zenodo.16887799. URL: https://doi.org/10.5281/zenodo.16887799.
 
 ## Related
 

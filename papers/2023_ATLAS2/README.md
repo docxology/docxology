@@ -2,7 +2,7 @@
 
 # 🛡️ ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management
 
-**R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, and 1 others** (2023) · *Zenodo*
+**R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, Colten Zacharias** (2023) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10296601-blue)](https://doi.org/10.5281/zenodo.10296601)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- The ATLAS system, evolving since the late 1990s, stands as a dynamic and comprehensive knowledge management tool that intends to address the complexities of modern information supply chains.
-- The antecedent to ATLAS was the Atlas of Risk, an informal assemblage of various risks associated with digital interactions.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, and 1 others (2023). *ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management*. Zenodo. DOI: 10.5281/zenodo.10296601. URL: https://doi.org/10.5281/zenodo.10296601.
+> R.J. Cordes, Scott David, Daniel Friedman, Alexandra Mikhailova, Andrew Penland, Sam Young, Colten Zacharias (2023). *ATLAS: A Question Oriented Approach to the Use of Pattern Languages in Knowledge Management*. Zenodo. DOI: 10.5281/zenodo.10296601. URL: https://doi.org/10.5281/zenodo.10296601.
 
 ## Related
 

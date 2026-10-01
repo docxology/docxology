@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T19:57:16Z",
+  "generated_at": "2026-10-01T16:38:39Z",
   "schema_ref": "/data/agent-index.json#schemas/ReproducibilityLedger",
   "sources": [
     "data/works.json",
@@ -61,17 +61,17 @@
     }
   ],
   "max_score": 6,
-  "work_count": 220,
+  "work_count": 219,
   "signal_totals": {
-    "persistent_id": 205,
-    "public_archive": 163,
-    "open_full_text": 190,
-    "source_documents": 203,
+    "persistent_id": 204,
+    "public_archive": 162,
+    "open_full_text": 189,
+    "source_documents": 202,
     "executable_code": 72,
-    "agent_readable": 203
+    "agent_readable": 202
   },
   "band_counts": {
-    "independently reproducible": 157,
+    "independently reproducible": 156,
     "independently checkable": 46,
     "citable only": 8,
     "unverified": 9
@@ -82,15 +82,15 @@
     "2": 4,
     "3": 8,
     "4": 38,
-    "5": 94,
+    "5": 93,
     "6": 63
   },
-  "mean_score": 4.709,
+  "mean_score": 4.708,
   "works": [
     {
       "num": 5,
       "citation_key": "Friedman2026CognitiveIntegrityFrameworkFormal005",
-      "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
+      "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
       "year": 2026,
       "domain_name": "Cognitive Security",
       "type": "Paper",
@@ -1756,25 +1756,6 @@
       "repositories": []
     },
     {
-      "num": 30,
-      "citation_key": "Friedman2024BioFirmDevelopmentAtApplied030",
-      "title": "BioFirm Development at Applied Active Inference Symposium 2024",
-      "year": 2024,
-      "domain_name": "Media & Teaching",
-      "type": "Presentation",
-      "score": 5,
-      "band": "independently reproducible",
-      "signals": {
-        "persistent_id": true,
-        "public_archive": true,
-        "open_full_text": true,
-        "source_documents": true,
-        "executable_code": false,
-        "agent_readable": true
-      },
-      "repositories": []
-    },
-    {
       "num": 33,
       "citation_key": "Friedman2024CommentsNationalDigitalTwins033",
       "title": "Comments on National Digital Twins R&D Strategic Plan",
@@ -3276,7 +3257,7 @@
     {
       "num": 32,
       "citation_key": "Friedman2024ChemicalTranscriptomicDiversityDo032",
-      "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",
+      "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea",
       "year": 2024,
       "domain_name": "Entomology",
       "type": "Paper",
@@ -3485,7 +3466,7 @@
     {
       "num": 68,
       "citation_key": "Friedman2022FromUsersSenseMakers068",
-      "title": "From Users to (Sense)Makers: Stigmergic Social Annotation",
+      "title": "From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking",
       "year": 2022,
       "domain_name": "Cognitive Security",
       "type": "Paper",
@@ -3618,7 +3599,7 @@
     {
       "num": 95,
       "citation_key": "Friedman2019PhysiologyForagerHydrationVariation095",
-      "title": "The physiology of forager hydration and variation among harvester ant colonies",
+      "title": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
       "year": 2019,
       "domain_name": "Entomology",
       "type": "Paper",
@@ -3694,7 +3675,7 @@
     {
       "num": 100,
       "citation_key": "Friedman2018RoleDopamineCollectiveRegulation100",
-      "title": "The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants",
+      "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
       "year": 2018,
       "domain_name": "Entomology",
       "type": "Paper",
@@ -3789,7 +3770,7 @@
     {
       "num": 105,
       "citation_key": "Friedman2016InfluenceNuclearStructureFormation105",
-      "title": "Influence of Nuclear Structure on formation of radiation-induced lethal lesions",
+      "title": "Influence of nuclear structure on the formation of radiation-induced lethal lesions",
       "year": 2016,
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
@@ -3827,7 +3808,7 @@
     {
       "num": 107,
       "citation_key": "Friedman2015CouldEhrlichialInfectionCause107",
-      "title": "Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",
+      "title": "Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?",
       "year": 2015,
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",
@@ -3846,7 +3827,7 @@
     {
       "num": 108,
       "citation_key": "Friedman2015LargeScaleCodingSequence108",
-      "title": "Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",
+      "title": "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees",
       "year": 2015,
       "domain_name": "Genetics & Biomedical",
       "type": "Paper",

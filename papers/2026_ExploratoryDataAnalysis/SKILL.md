@@ -4,7 +4,7 @@ name: "Exploratory Data Analysis: A Reproducible Notebook Template"
 description: "Exploratory data analysis (EDA) is the most common entry point in applied research, yet it is also where reproducibility most often breaks down: logic accumulates in notebook cells that are never tested and quietly drift from the prose describing the..."
 tags: ["exploratory-data-analysis", "computational-notebook", "reproducible-research", "pandas", "data-cleaning", "correlation-analysis"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Exploratory Data Analysis: A Reproducible Notebook Template*. Computational."
+citation: "Daniel Ari Friedman (2026). *Exploratory Data Analysis: A Reproducible Notebook Template*. Zenodo."
 doi: "10.5281/zenodo.21086292"
 ---
 
@@ -20,20 +20,13 @@ This work addresses topics in **Computational**: exploratory data analysis, comp
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Exploratory data analysis (EDA) is the most common entry point in applied
-research, yet it is also where reproducibility most often breaks down: logic
-accumulates in notebook cells that are never test
-- This paper presents the computational-notebook
-exemplar of the Research Project Template (https://github.com/docxology/template):
-an interactive walkthrough notebook
-(projects/templates/template_eda_n
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -61,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21086292`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

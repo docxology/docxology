@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧬 DigitalRhetoricalEcosystemAnalysis
+# 🧬 To comment or not to comment
 
-**Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman** (2023) · *Physics of Life Reviews*
+**Dean Tickles, Daniel Friedman** (2023) · *Physics of Life Reviews*
 
 [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.plrev.2023.06.002-blue)](https://doi.org/10.1016/j.plrev.2023.06.002)
 
@@ -19,7 +19,6 @@
 ## Methods
 
 - Rhetorical ecosystem mapping
-- Cross-domain pattern mapping
 
 ## Key Findings
 
@@ -37,7 +36,7 @@
 
 ## Citation
 
-> Mridula Mascarenhas, Richard J. Cordes, Daniel A. Friedman (2023). *DigitalRhetoricalEcosystemAnalysis*. Physics of Life Reviews. DOI: 10.1016/j.plrev.2023.06.002. URL: https://doi.org/10.1016/j.plrev.2023.06.002.
+> Dean Tickles, Daniel Friedman (2023). *To comment or not to comment*. Physics of Life Reviews. DOI: 10.1016/j.plrev.2023.06.002. URL: https://doi.org/10.1016/j.plrev.2023.06.002.
 
 ## Related
 

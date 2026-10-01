@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — SystemsProcesses
+# AGENTS.md — Systems Processes, Active Inference, and Beyond
 
-**Paper**: SystemsProcesses (2025)
+**Paper**: Systems Processes, Active Inference, and Beyond (2025)
 **Domain**: Presentations & Media
-**Authors**: Daniel A. Friedman
+**Authors**: Daniel Friedman
 
 ---
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Content production, Pedagogical design
+- Extracts methods: See paper
 - Identifies findings: Slides for a session at "Enduring Patterns, Emerging Futures: Celebrating Dr.., Len Troncale", an online event in September 2025 https://troncale.sched.com/ ..
 - Maps contributions to Presentations & Media literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects SystemsProcesses to related works in the bibliography
+- Connects Systems Processes, Active Inference, and Beyond to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

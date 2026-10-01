@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — HypercertEcosystems
+# AGENTS.md — Systems Modeling and Cognitive Audits for Hypercert Ecosystems
 
-**Paper**: HypercertEcosystems (2022)
+**Paper**: Systems Modeling and Cognitive Audits for Hypercert Ecosystems (2022)
 **Domain**: Cognitive Security
-**Authors**: Active Inference Institute
+**Authors**: Jakub Smékal, Daniel Ari Friedman
 
 ---
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Extracts methods: See paper
 - Identifies findings: This document is a grant application to Protocol Labs, from Active Inference Institute (Active Blockference project).., The grant was submitted in October 2022 and was not funded.., Learn more, get in touch, get involved, or fund us:  https://www.activeinference.org/.
 - Maps contributions to Cognitive Security literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects HypercertEcosystems to related works in the bibliography
+- Connects Systems Modeling and Cognitive Audits for Hypercert Ecosystems to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

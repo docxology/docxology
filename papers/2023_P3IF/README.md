@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ P3IF
+# 🛡️ The P3IF: Properties, Processes, and Perspectives Inter-Framework
 
-**Thomas M. Wilkinson, R.J. Cordes, Scott David, Daniel Ari Friedman** (2023) · *Zenodo*
+**Thomas M. Wilkinson, RJ Cordes, Scott David, Daniel Ari Friedman** (2023) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.10034511-blue)](https://doi.org/10.5281/zenodo.10034511)
 
@@ -18,12 +18,10 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- The Properties, Processes, and Perspectives Inter-Framework (P3IF) multiplexes interdisciplinary requirements frameworks to manage information risk and foster cognitive security.
 - Analysis of P3IF provides structu...
 
 ## Artifacts
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> Thomas M. Wilkinson, R.J. Cordes, Scott David, Daniel Ari Friedman (2023). *P3IF*. Zenodo. DOI: 10.5281/zenodo.10034511. URL: https://doi.org/10.5281/zenodo.10034511.
+> Thomas M. Wilkinson, RJ Cordes, Scott David, Daniel Ari Friedman (2023). *The P3IF: Properties, Processes, and Perspectives Inter-Framework*. Zenodo. DOI: 10.5281/zenodo.10034511. URL: https://doi.org/10.5281/zenodo.10034511.
 
 ## Related
 

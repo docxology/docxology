@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ ImageMemeResearch
+# 🛡️ Bridging gaps in image meme research: A multidisciplinary paradigm
 
-**Daniel A. Friedman, R.J. Cordes, Mridula Mascarenhas** (2024) · *JASIST*
+**Mridula Mascarenhas, Daniel Ari Friedman, Richard J Cordes** (2024) · *JASIST*
 
 [![DOI](https://img.shields.io/badge/DOI-10.1002%2Fasi.24900-blue)](https://doi.org/10.1002/asi.24900)
 
@@ -18,12 +18,10 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- This work advances the systematic study of image memes as communicative artifacts, developing research methodologies for analyzing their creation, distribution, and impact on public discourse.
 - Analysis of We prov...
 
 ## Artifacts
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, R.J. Cordes, Mridula Mascarenhas (2024). *ImageMemeResearch*. JASIST. DOI: 10.1002/asi.24900. URL: https://doi.org/10.1002/asi.24900.
+> Mridula Mascarenhas, Daniel Ari Friedman, Richard J Cordes (2024). *Bridging gaps in image meme research: A multidisciplinary paradigm*. JASIST. DOI: 10.1002/asi.24900. URL: https://doi.org/10.1002/asi.24900.
 
 ## Related
 

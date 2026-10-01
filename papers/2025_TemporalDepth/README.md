@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 TemporalDepth
+# 🧠 Temporal Depth in a Coherent Self and in Depersonalization
 
-**Daniel A. Friedman, et al.** (2025) · *Frontiers in Psychology*
+**Alexey Tolchinsky, Michael Levin, Chris Fields, Lancelot Da Costa, Rachael Murphy, Daniel Friedman, David Pincus** (2025) · *Frontiers in Psychology*
 
 [![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffpsyg.2025.1585315-blue)](https://doi.org/10.3389/fpsyg.2025.1585315)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- develops a theoretical model of temporal depth in coherent self-experience and its disruption in depersonalization..
-- Using Active Inference, we formalize how subjective temporal experience i....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, et al. (2025). *TemporalDepth*. Frontiers in Psychology. DOI: 10.3389/fpsyg.2025.1585315. URL: https://doi.org/10.3389/fpsyg.2025.1585315.
+> Alexey Tolchinsky, Michael Levin, Chris Fields, Lancelot Da Costa, Rachael Murphy, Daniel Friedman, David Pincus (2025). *Temporal Depth in a Coherent Self and in Depersonalization*. Frontiers in Psychology. DOI: 10.3389/fpsyg.2025.1585315. URL: https://doi.org/10.3389/fpsyg.2025.1585315.
 
 ## Related
 

@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "ModelingConflict"
+name: "Active Inference in Modeling Conflict"
 description: "We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management..."
 tags: ["active-inference", "conflict-modeling", "aic-model", "ooda-loops", "cognitive-security", "information-warfare", "bolts-framework", "trust-management"]
 domain: "Active Inference"
-citation: "Scott David, R.J. Cordes, Daniel A. Friedman (2021). *ModelingConflict*. Active Inference."
+citation: "Scott David, Richard J. Cordes, Daniel A. Friedman (2021). *Active Inference in Modeling Conflict*. Zenodo."
 doi: "10.5281/zenodo.5750934"
 ---
 
-# ModelingConflict
+# Active Inference in Modeling Conflict
 
-**Scott David, R.J. Cordes, Daniel A. Friedman** (2021) · Active Inference
+**Scott David, Richard J. Cordes, Daniel A. Friedman** (2021) · Active Inference
 
 ## Context
 
@@ -20,14 +20,13 @@ This work addresses topics in **Active Inference**: Active Inference, conflict m
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- We integrate conflict studies with Active Inference to create the Active Inference Conflict (AIC) model, situating conflict as a multiscale process of communication, trust, and relationship management
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.5750934`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

@@ -4,7 +4,7 @@ name: "Con-cat-enate: emulation of Cat Hippocampus"
 description: "Updated &nbsp; added a number of pages at the start&nbsp; (from page 2) that describes the entire system and whats missing apologies for not giving this overview of&nbsp; what would happen given those missing parts and the purpose of demo0.01 which s..."
 tags: ["concatenate"]
 domain: "Genetics & Biomedical"
-citation: "Andrew Djuwidja, Daniel Friedman (2025). *Con-cat-enate: emulation of Cat Hippocampus*. Genetics & Biomedical."
+citation: "Andrew Djuwidja, Daniel Friedman (2025). *Con-cat-enate: emulation of Cat Hippocampus*. Zenodo."
 doi: "10.5281/zenodo.13626536"
 artifact_doi: "10.5281/zenodo.14738798"
 ---
@@ -21,14 +21,13 @@ This work addresses topics in **Genetics & Biomedical**: ConCatEnate.
 
 Primary methods and techniques applied in this work:
 
-- Genomic and bioinformatic analysis
-- Statistical genetics
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Updated &nbsp; added a number of pages at the start&nbsp; (from page 2) that describes the entire system and whats missing apologies for not giving this overview of&nbsp; what would happen given those
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -57,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.13626536`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

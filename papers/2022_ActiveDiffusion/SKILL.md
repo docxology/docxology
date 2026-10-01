@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "ActiveDiffusion"
+name: "Catechism for Towards Active Diffusion"
 description: "The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models. The project, f..."
 tags: ["active-diffusion", "diffusion-models", "active-inference", "generative-ai", "probabilistic-modeling", "free-energy-minimization"]
 domain: "AII Ecosystem"
-citation: "Jakub Smékal, Daniel Friedman (2022). *ActiveDiffusion*. AII Ecosystem."
+citation: "Jakub Smékal, Daniel Friedman (2022). *Catechism for Towards Active Diffusion*. Zenodo."
 doi: "10.5281/zenodo.7443847"
 ---
 
-# ActiveDiffusion
+# Catechism for Towards Active Diffusion
 
 **Jakub Smékal, Daniel Friedman** (2022) · AII Ecosystem
 
@@ -20,14 +20,12 @@ This work addresses topics in **AII Ecosystem**: Active Diffusion, diffusion mod
 
 Primary methods and techniques applied in this work:
 
-- Program coordination
-- Community governance design
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- The Active Diffusion Catechism (2023-AD) provides an initiative overview for the 'Towards Active Diffusion' project, exploring the intersection of Active Inference and diffusion models.
 - Analysis of The project, f...
 
 ## Related Works
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7443847`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

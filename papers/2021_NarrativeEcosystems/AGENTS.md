@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — NarrativeEcosystems
+# AGENTS.md — Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier
 
-**Paper**: NarrativeEcosystems (2021)
+**Paper**: Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier (2021)
 **Domain**: Cognitive Security
 **Authors**: Richard J. Cordes, Daniel A. Friedman (editors); Shaun Applegate-Swanson, V. Bleu Knight, Alexandra Mikhailova (chapter authors)
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Extracts methods: See paper
 - Identifies findings: Under the Free Energy Principle, we synthesize Active Inference with Narratives, Ontologies, and extended cognition in multiscale biological systems.., We explore communication in located teams and all-....
 - Maps contributions to Cognitive Security literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects NarrativeEcosystems to related works in the bibliography
+- Connects Narrative Information Ecosystems: Conflict and Trust on the Endless Frontier to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

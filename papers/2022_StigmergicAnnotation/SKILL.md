@@ -1,16 +1,16 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "StigmergicAnnotation"
+name: "From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking"
 description: "We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr..."
 tags: ["stigmergic-annotation", "open-source-attention", "collective-sensemaking", "epistemic-pollution", "decentralized-platforms", "social-annotation", "digital-attention"]
 domain: "Cognitive Security"
-citation: "Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf (2022). *StigmergicAnnotation*. Cognitive Security."
+citation: "Ronen Tamari, Daniel Friedman, William Fischer, Lauren Hebert, Dafna Shahaf (2022). *From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking*. Hypertext '22."
 doi: "10.48550/arXiv.2205.06345"
 ---
 
-# StigmergicAnnotation
+# From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking
 
-**Ronen Tamari, Daniel A. Friedman, William Fischer, Lauren Hebert, Dafna Shahaf** (2022) · Cognitive Security
+**Ronen Tamari, Daniel Friedman, William Fischer, Lauren Hebert, Dafna Shahaf** (2022) · Cognitive Security
 
 ## Context
 
@@ -20,14 +20,13 @@ This work addresses topics in **Cognitive Security**: stigmergic annotation, ope
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- We argue that centralized platforms are a main source of epistemic pollution online, and propose Open Source Attention—a socio-technical framework for freeing human attention from platform control thr
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.48550/arXiv.2205.06345`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

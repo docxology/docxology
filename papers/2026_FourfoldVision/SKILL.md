@@ -1,10 +1,10 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
 name: "Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing"
-description: "Published by Synergetics University on 14 July 2026, The Fuller Conjecture asks whether "there exists a line of reasoning that presents Fuller's synergetic vision as a philosophical system." This paper tests one qualified route through that problem. ..."
+description: "Published by Synergetics University on 14 July 2026, The Fuller Conjecture asks whether \"there exists a line of reasoning that presents Fuller's synergetic vision as a philosophical system.\" This paper tests one qualified route through that problem. ..."
 tags: ["fourfoldvision"]
 domain: "Art & Synergetics"
-citation: "Daniel Ari Friedman (2026). *Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing*. Art & Synergetics."
+citation: "Daniel Ari Friedman (2026). *Fourfold Vision: William Blake, Buckminster Fuller, and the Geometry of Omnirational Seeing*. Zenodo."
 doi: "10.5281/zenodo.21388456"
 ---
 
@@ -20,14 +20,13 @@ This work addresses topics in **Art & Synergetics**: FourfoldVision.
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21388456`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

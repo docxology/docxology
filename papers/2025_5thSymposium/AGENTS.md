@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — 5thSymposium
+# AGENTS.md — 5th Applied Active Inference Symposium — Abstract Book
 
-**Paper**: 5thSymposium (2025)
+**Paper**: 5th Applied Active Inference Symposium — Abstract Book (2025)
 **Domain**: Presentations & Media
-**Authors**: Active Inference Institute
+**Authors**: Active Inference Institute, Adam Safron, Alex Kiefer, Alexander Sabine, Andrea Hiott, Andrew Pashea, Bradly Alicea, Chris Fields, Denise Holt, Harshil Shah, Satyaki Maitra, Hongju Pae, Ian Tennant, Jean-François Cloutier, Jim Freda, Joel Dietz, John Boik, Karl Friston, Maria Luiza Iennaco, Matthew Brown, Michael Garfield, Nicolás Hinrichs, Octopus, PabloFM, Peter Thestrup Waade, Robert Worden, Sam A Senchal, Samuel Montañez, Sanjeev Namjoshi, Siddhant Shrivastava, Sonia de Jager, Steph Macurdy, Steven Weiniger, Susan Hasty, Viet Dung Nguyen, William Gebhardt, Michael Lennon, Dave Newell, Patrick Huembeli, Maxwell Ramstead
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Content production, Pedagogical design
-- Identifies findings: Proceedings and materials from the 5th International Symposium on Active Inference, featuring presentations, discussions, and collaborative sessions advancing the state of the field in Active Inferenc
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Presentations & Media literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects 5thSymposium to related works in the bibliography
+- Connects 5th Applied Active Inference Symposium — Abstract Book to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

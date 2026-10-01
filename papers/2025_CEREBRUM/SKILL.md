@@ -4,7 +4,7 @@ name: "CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for
 description: "<div>This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM). CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to des..."
 tags: ["cerebrum"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman (2025). *CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling*. Active Inference."
+citation: "Daniel Ari Friedman (2025). *CEREBRUM: Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling*. Zenodo."
 doi: "10.5281/zenodo.15170907"
 ---
 
@@ -27,8 +27,7 @@ Primary methods and techniques applied in this work:
 
 Core contributions and results:
 
-- <div>This paper introduces Case-Enabled Reasoning Engine with Bayesian Representations for Unified Modeling (CEREBRUM).
-- CEREBRUM is a synthetic intelligence framework that integrates linguistic case systems with cognitive scientific principles to describe, design, and deploy generative models in an expressive fashion.
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T19:39:33Z",
+  "generated_at": "2026-10-01T16:30:22Z",
   "generator": "code/orchestrators/fetch_work_authors.py",
   "policy": {
     "sources": [
@@ -68,11 +68,18 @@
     "Friedman2026CognitiveIntegrityFrameworkFormal005": {
       "num": 5,
       "doi": "10.5281/zenodo.18364118",
-      "title": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
+      "title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
       "registration_agency": "DataCite",
       "resolved_title": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
-      "title_similarity": 0.7176,
-      "status": "title_mismatch"
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
     },
     "Friedman2026PersonalYouTube200Livestreams006": {
       "num": 6,
@@ -897,31 +904,6 @@
         }
       ]
     },
-    "Friedman2024BioFirmDevelopmentAtApplied030": {
-      "num": 30,
-      "doi": "10.5281/zenodo.14861595",
-      "title": "BioFirm Development at Applied Active Inference Symposium 2024",
-      "registration_agency": "DataCite",
-      "resolved_title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
-      "title_similarity": 1.0,
-      "status": "verified",
-      "authors": [
-        {
-          "family": "John Clippinger",
-          "given": ""
-        },
-        {
-          "family": "Andrew Pashea",
-          "given": "",
-          "orcid": "0009-0004-4061-6296"
-        },
-        {
-          "family": "Friedman",
-          "given": "Daniel",
-          "orcid": "0000-0001-6232-9096"
-        }
-      ]
-    },
     "Friedman2024BridgingGapsImageMeme031": {
       "num": 31,
       "doi": "10.1002/asi.24900",
@@ -949,7 +931,7 @@
     "Friedman2024ChemicalTranscriptomicDiversityDo032": {
       "num": 32,
       "doi": "10.1002/ece3.70063",
-      "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",
+      "title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea",
       "registration_agency": "Crossref",
       "resolved_title": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea",
       "title_similarity": 1.0,
@@ -2146,7 +2128,7 @@
     "Friedman2022FromUsersSenseMakers068": {
       "num": 68,
       "doi": "10.48550/arXiv.2205.06345",
-      "title": "From Users to (Sense)Makers: Stigmergic Social Annotation",
+      "title": "From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking",
       "registration_agency": "DataCite",
       "resolved_title": "From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking",
       "title_similarity": 1.0,
@@ -2705,7 +2687,7 @@
     "Friedman2019PhysiologyForagerHydrationVariation095": {
       "num": 95,
       "doi": "10.1038/s41598-019-41586-3",
-      "title": "The physiology of forager hydration and variation among harvester ant colonies",
+      "title": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
       "registration_agency": "Crossref",
       "resolved_title": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
       "title_similarity": 1.0,
@@ -2836,7 +2818,7 @@
     "Friedman2018RoleDopamineCollectiveRegulation100": {
       "num": 100,
       "doi": "10.1016/j.isci.2018.09.001",
-      "title": "The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants",
+      "title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
       "registration_agency": "Crossref",
       "resolved_title": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
       "title_similarity": 1.0,
@@ -2976,7 +2958,7 @@
     "Friedman2016InfluenceNuclearStructureFormation105": {
       "num": 105,
       "doi": "10.3109/09553002.2016.1144941",
-      "title": "Influence of Nuclear Structure on formation of radiation-induced lethal lesions",
+      "title": "Influence of nuclear structure on the formation of radiation-induced lethal lesions",
       "registration_agency": "Crossref",
       "resolved_title": "Influence of nuclear structure on the formation of radiation-induced lethal lesions",
       "title_similarity": 1.0,
@@ -3022,7 +3004,7 @@
     "Friedman2015CouldEhrlichialInfectionCause107": {
       "num": 107,
       "doi": "10.1016/j.mehy.2015.09.015",
-      "title": "Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",
+      "title": "Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?",
       "registration_agency": "Crossref",
       "resolved_title": "Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?",
       "title_similarity": 1.0,
@@ -3045,7 +3027,7 @@
     "Friedman2015LargeScaleCodingSequence108": {
       "num": 108,
       "doi": "10.1093/molbev/msu292",
-      "title": "Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",
+      "title": "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees",
       "registration_agency": "Crossref",
       "resolved_title": "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees",
       "title_similarity": 0.9951,
@@ -3398,7 +3380,7 @@
     },
     "Friedman2025BiofirmDevelopmentFirstPrinciples128": {
       "num": 128,
-      "doi": "10.5281/zenodo.14861596",
+      "doi": "10.5281/zenodo.14861595",
       "title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
       "registration_agency": "DataCite",
       "resolved_title": "Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024",
@@ -5230,6 +5212,102 @@
         {
           "family": "Daniel Ari Friedman",
           "given": "",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026AgenticSecurityOperatingSystems218": {
+      "num": 218,
+      "doi": "10.5281/zenodo.22754351",
+      "title": "Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security",
+      "registration_agency": "DataCite",
+      "resolved_title": "Agentic Security and Operating Systems: A Deep Review and Prospectus of OpSec, Cognitive Security, and Agentic Cyber Security",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026JevPracticeComposablePython219": {
+      "num": 219,
+      "doi": "10.5281/zenodo.22816187",
+      "title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
+      "registration_agency": "DataCite",
+      "resolved_title": "Jev in Practice: A Composable Python Toolkit for TypeSafe's System One Decision Model",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026GreenLineCapacityUnder220": {
+      "num": 220,
+      "doi": "10.5281/zenodo.22833491",
+      "title": "Green Line: a capacity-under-development instrument",
+      "registration_agency": "DataCite",
+      "resolved_title": "Green Line: a capacity-under-development instrument",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026BlueLineStewardshipInstrument221": {
+      "num": 221,
+      "doi": "10.5281/zenodo.22833489",
+      "title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Blue Line: A Stewardship Instrument for Maintained Commitments",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026VioletLineConsentLedger222": {
+      "num": 222,
+      "doi": "10.5281/zenodo.22833487",
+      "title": "The Violet Line: A Consent Ledger of Affected Parties",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Violet Line: A Consent Ledger of Affected Parties",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
+          "orcid": "0000-0001-6232-9096"
+        }
+      ]
+    },
+    "Friedman2026SilverLineMemorySuccession223": {
+      "num": 223,
+      "doi": "10.5281/zenodo.22833485",
+      "title": "The Silver Line: A Memory-and-Succession Instrument",
+      "registration_agency": "DataCite",
+      "resolved_title": "The Silver Line: A Memory-and-Succession Instrument",
+      "title_similarity": 1.0,
+      "status": "verified",
+      "authors": [
+        {
+          "family": "Friedman",
+          "given": "Daniel Ari",
           "orcid": "0000-0001-6232-9096"
         }
       ]

@@ -4,7 +4,7 @@ name: "Self-Improvement Agent Harness: A Deterministic SIA Exemplar"
 description: "This exemplar documents template_sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in the Self-Improvement Agents specification (Hexo AI, 2026, arXiv:2605.27276). The default pipeline replays fixture-b..."
 tags: ["self-improvement-agents", "benchmark-harness", "reproducible-research", "agent-evaluation"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Self-Improvement Agent Harness: A Deterministic SIA Exemplar*. Computational."
+citation: "Daniel Ari Friedman (2026). *Self-Improvement Agent Harness: A Deterministic SIA Exemplar*. Zenodo."
 doi: "10.5281/zenodo.20453879"
 ---
 
@@ -20,15 +20,13 @@ This work addresses topics in **Computational**: self-improvement agents, benchm
 
 Primary methods and techniques applied in this work:
 
-- Software pipeline design
-- Data-driven analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- This exemplar documents template_sia, a deterministic implementation of the Self-Improvement Agent (SIA) harness contract described in .
-- The default pipeline replays fixture-backed generations for the mini_classify task; opt-in live mode runs bounded target subprocesses and optional Ollama-backed meta/feedback steps.
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.20453879`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

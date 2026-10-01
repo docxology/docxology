@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — BlattodeaDiversity
+# AGENTS.md — Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea
 
-**Paper**: BlattodeaDiversity (2024)
+**Paper**: Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea (2024)
 **Domain**: Entomology
-**Authors**: Daniel A. Friedman, et al.
+**Authors**: Marek J. Golian, Daniel A. Friedman, Mark Harrison, Dino P. McMahon, Jan Buellesbach
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Field observation and behavioral assays, Population genetics analysis
-- Identifies findings: This paper examines cockroach (Blattodea) diversity, ecology, and evolutionary biology., Blattodea encompass cockroaches and termites, representing a major insect order with diverse ecological roles.
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Entomology literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects BlattodeaDiversity to related works in the bibliography
+- Connects Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 GenerativeResearchTeams
+# 🧠 Generative Research Teams: Active Inference Compositions for Research and Meta-Science
 
 **Daniel Friedman, Jakub Smékal** (2023) · *Zenodo*
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- The Generative Research Team (GRT) is a synthesis of human, computational, and informational entities that employs Active Inference, systems engineering, and cognitive security to explore research top
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -35,7 +34,7 @@
 
 ## Citation
 
-> Daniel Friedman, Jakub Smékal (2023). *GenerativeResearchTeams*. Zenodo. DOI: 10.5281/zenodo.8164666. URL: https://doi.org/10.5281/zenodo.8164666.
+> Daniel Friedman, Jakub Smékal (2023). *Generative Research Teams: Active Inference Compositions for Research and Meta-Science*. Zenodo. DOI: 10.5281/zenodo.8164666. URL: https://doi.org/10.5281/zenodo.8164666.
 
 ## Related
 

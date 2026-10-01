@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — Thoughtseeds
+# AGENTS.md — Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States
 
-**Paper**: Thoughtseeds (2025)
+**Paper**: Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States (2025)
 **Domain**: Active Inference
 **Authors**: Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Bayesian modeling and inference
-- Identifies findings: Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states.., The framework models thoughts as self-organizing agents (thoughtseeds) that compete....
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects Thoughtseeds to related works in the bibliography
+- Connects Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

@@ -1,20 +1,13 @@
 {
-  "title": "Digital Rhetorical Ecosystem Analysis: Sensemaking of Digital Memetic Discourse",
+  "title": "To comment or not to comment",
   "domain": "Genetics & Biomedical",
   "type": "Paper",
   "creators": [
     {
-      "name": "Mascarenhas, Mridula",
-      "affiliation": "California State University Monterey Bay"
+      "name": "Dean Tickles"
     },
     {
-      "name": "Cordes, Richard J.",
-      "affiliation": "COGSEC; Atlantic Council GeoTech Center"
-    },
-    {
-      "name": "Friedman, Daniel Ari",
-      "affiliation": "COGSEC; University of California, Davis",
-      "orcid": "0000-0001-6232-9096"
+      "name": "Daniel Friedman"
     }
   ],
   "description": "Integrates frameworks from rhetorical studies and ecological studies to catalog, monitor, and study digital image meme data, introducing the Digital Rhetorical Ecosystem three-tiered model (DRE3) for tracing multimedia rhetorical artifacts across platforms, media types, and languages.",

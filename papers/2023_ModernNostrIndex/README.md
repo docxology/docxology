@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Some concepts explored related to Knowledge Engineering, Nostr, Large Language Models, Complexity, and more.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 

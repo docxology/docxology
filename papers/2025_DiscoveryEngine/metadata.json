@@ -1,10 +1,28 @@
 {
-  "title": "DiscoveryEngine",
+  "title": "The Discovery Engine: AI-Driven Synthesis and Navigation of Scientific Knowledge Landscapes",
   "domain": "Computational",
   "type": "Paper",
   "creators": [
     {
-      "name": "Daniel A. Friedman"
+      "name": "Vladimir Baulin"
+    },
+    {
+      "name": "Austin Cook"
+    },
+    {
+      "name": "Daniel Friedman"
+    },
+    {
+      "name": "Janna Lumiruusu"
+    },
+    {
+      "name": "Andrew Pashea"
+    },
+    {
+      "name": "Shagor Rahman"
+    },
+    {
+      "name": "Benedikt Waldeck"
     }
   ],
   "description": "The Discovery Engine presents a computational framework for automated scientific discovery using Active Inference principles. The system models the scientific discovery process as an inference problem...",

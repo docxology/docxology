@@ -4,7 +4,7 @@ name: "Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Ge
 description: "Multi-agent active inference gives a natural account of belief sharing: agents hold local posteriors over a shared latent state, communicate those beliefs, and pool them into a colony-level consensus. The same mechanism is fragile when a member is mi..."
 tags: ["active-inference", "federated-learning", "generalised-variational-inference", "belief-sharing", "robustness", "fedgvi"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman (2026). *Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus*. Active Inference."
+citation: "Daniel Ari Friedman (2026). *Robust Belief Sharing in Federated Active Inference: A Recovery-Tested Generalized-Variational Framework for Categorical Contamination-Aware Consensus*. Zenodo."
 doi: "10.5281/zenodo.21864003"
 artifact_doi: "10.5281/zenodo.21972644"
 ---
@@ -21,15 +21,13 @@ This work addresses topics in **Active Inference**: active inference, federated 
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Generative modeling
-- Bayesian inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21864003`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

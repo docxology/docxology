@@ -4,7 +4,7 @@ name: "Interoception as modeling, allostasis as control"
 description: "Transcript of discussions of the 2022 paper &ldquo;Interoception as modeling, allostasis as control&rdquo; by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett, &amp; Karen S. Quigley&nbsp; https://www.sciencedi..."
 tags: ["interoceptionasmodeling"]
 domain: "Active Inference"
-citation: "Eli Sennesh, Jordan Theriault, Dave Douglass, Ian Tennant, Dean Tickles, Daniel Friedman (2022). *Interoception as modeling, allostasis as control*. Active Inference."
+citation: "Eli Sennesh, Jordan Theriault, Dave Douglass, Ian Tennant, Dean Tickles, Daniel Friedman (2022). *Interoception as modeling, allostasis as control*. Zenodo."
 doi: "10.5281/zenodo.7400708"
 artifact_doi: "10.5281/zenodo.7400709"
 ---
@@ -21,15 +21,13 @@ This work addresses topics in **Active Inference**: InteroceptionAsModeling.
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Transcript of discussions of the 2022 paper &ldquo;Interoception as modeling, allostasis as control&rdquo; by Eli Sennesh, Jordan Theriault, Dana Brooks, Jan-Willemvan de Meent, Lisa Feldman Barrett, 
-- Quigley&nbsp; https://www.sciencedirect.com/science/article/abs/pii/S0301051121002350 Session 050.0, October 17, 2022&nbsp; https://www.youtube.com/watch?v=l7r0ISlr-Hc &nbsp; Session 050.1, October 20
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -58,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.7400708`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

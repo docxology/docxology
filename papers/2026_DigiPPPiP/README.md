@@ -2,7 +2,7 @@
 
 # 🛡️ DigiPPPiP: Digital Partner Pen Play in Parallel
 
-**Daniel Ari Friedman** (2026) · *Zenodo*
+**Siddhant Shrivastava, Evelyn C. Goh, Alexandra Mikhailova, Daniel Ari Friedman** (2026) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21815704-blue)](https://doi.org/10.5281/zenodo.21815704)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Literature review
-- Theoretical analysis
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- See full paper for detailed findings and analysis
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -36,7 +35,7 @@
 
 ## Citation
 
-> Daniel Ari Friedman (2026). *DigiPPPiP: Digital Partner Pen Play in Parallel*. Zenodo. DOI: 10.5281/zenodo.21815704. URL: https://doi.org/10.5281/zenodo.21815704.
+> Siddhant Shrivastava, Evelyn C. Goh, Alexandra Mikhailova, Daniel Ari Friedman (2026). *DigiPPPiP: Digital Partner Pen Play in Parallel*. Zenodo. DOI: 10.5281/zenodo.21815704. URL: https://doi.org/10.5281/zenodo.21815704.
 
 ## Related
 

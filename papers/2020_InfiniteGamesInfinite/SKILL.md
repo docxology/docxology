@@ -4,7 +4,7 @@ name: "Infinite Games for Infinite Teams"
 description: "Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: &ldquo;Inventing a Remote Culture to Deal with Pandemics&rdquo;, and was done so with the intent of discussing the questions outlined below...."
 tags: ["infinitegamesinfinite"]
 domain: "Cognitive Security"
-citation: "Daniel Friedman, RJ Cordes (2020). *Infinite Games for Infinite Teams*. Cognitive Security."
+citation: "Daniel Friedman, RJ Cordes (2020). *Infinite Games for Infinite Teams*. Zenodo."
 doi: "10.5281/zenodo.12601674"
 artifact_doi: "10.5281/zenodo.12601675"
 ---
@@ -21,15 +21,13 @@ This work addresses topics in **Cognitive Security**: InfiniteGamesInfinite.
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Infinite Games for Infinite Teams was published by and in response to the DARPA Polyplexus Citizen Incubator: &ldquo;Inventing a Remote Culture to Deal with Pandemics&rdquo;, and was done so with the 
-- How are global online narratives constructed and received in 2020?
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -58,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.12601674`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

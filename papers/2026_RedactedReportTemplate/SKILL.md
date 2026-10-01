@@ -4,7 +4,7 @@ name: "Redacted Report Template: Disclosure Control and Release Audit"
 description: "This exemplar demonstrates a complete disclosure-control pipeline for sanitized public release reports. The methodology combines classification-ceiling enforcement, source-protection validation, mosaic-risk scoring, and TPM-backed sealed sidecars acr..."
 tags: ["redaction", "disclosure-control", "release-audit", "source-protection"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Redacted Report Template: Disclosure Control and Release Audit*. Computational."
+citation: "Daniel Ari Friedman (2026). *Redacted Report Template: Disclosure Control and Release Audit*. Zenodo."
 doi: "10.5281/zenodo.21298890"
 ---
 
@@ -20,14 +20,13 @@ This work addresses topics in **Computational**: redaction, disclosure control, 
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -53,5 +52,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21298890`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

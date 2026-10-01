@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 Thoughtseeds
+# 🧠 Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States
 
 **Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow** (2025) · *Entropy*
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states..
-- The framework models thoughts as self-organizing agents (thoughtseeds) that compete....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow (2025). *Thoughtseeds*. Entropy. DOI: 10.3390/e27050459. URL: https://doi.org/10.3390/e27050459.
+> Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow (2025). *Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States*. Entropy. DOI: 10.3390/e27050459. URL: https://doi.org/10.3390/e27050459.
 
 ## Related
 

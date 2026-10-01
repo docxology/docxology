@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🐜 ActiveInferants
+# 🐜 Active Inferants: An Active Inference Framework for Ant Colony Behavior
 
-**Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant** (2021) · *Frontiers in Behavioral Neuroscience*
+**Daniel Ari Friedman, Alec Tschantz, Maxwell J. D. Ramstead, Karl Friston, Axel Constant** (2021) · *Frontiers in Behavioral Neuroscience*
 
 [![DOI](https://img.shields.io/badge/DOI-10.3389%2Ffnbeh.2021.647732-blue)](https://doi.org/10.3389/fnbeh.2021.647732)
 
@@ -23,8 +23,7 @@
 
 ## Key Findings
 
-- In this paper, we introduce an active inference model of ant colony foraging behavior, and implement the model in a series of in silico experiments..
-- Active inference is a multiscale approach to behavi....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +33,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Alexander Tschantz, Maxwell J.D. Ramstead, Karl Friston, Axel Constant (2021). *ActiveInferants*. Frontiers in Behavioral Neuroscience. DOI: 10.3389/fnbeh.2021.647732. URL: https://doi.org/10.3389/fnbeh.2021.647732.
+> Daniel Ari Friedman, Alec Tschantz, Maxwell J. D. Ramstead, Karl Friston, Axel Constant (2021). *Active Inferants: An Active Inference Framework for Ant Colony Behavior*. Frontiers in Behavioral Neuroscience. DOI: 10.3389/fnbeh.2021.647732. URL: https://doi.org/10.3389/fnbeh.2021.647732.
 
 ## Related
 

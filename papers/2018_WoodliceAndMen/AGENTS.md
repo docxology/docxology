@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — WoodliceAndMen
+# AGENTS.md — Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston)
 
-**Paper**: WoodliceAndMen (2018)
+**Paper**: Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) (2018)
 **Domain**: Active Inference
-**Authors**: Karl Friston, Martin Fortier, Daniel A. Friedman
+**Authors**: Karl Friston, Martin Fortier, Daniel Friedman
 
 ---
 
@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Active inference modeling of consciousness, Bayesian mechanics of self-organizing systems, Philosophical analysis of Markov blanket formalism
-- Identifies findings: In this interview, Karl Friston discusses the origins and implications of the Free Energy Principle (FEP), from childhood observations of woodlice to a comprehensive framework for understanding cognit
+- Identifies findings: See paper
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects WoodliceAndMen to related works in the bibliography
+- Connects Of woodlice and men: A Bayesian account of cognition, life and consciousness (with Karl Friston) to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

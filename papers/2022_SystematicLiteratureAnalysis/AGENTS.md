@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — SystematicLiteratureAnalysis
+# AGENTS.md — The Free Energy Principle & Active Inference: a Systematic Literature Analysis
 
-**Paper**: SystematicLiteratureAnalysis (2022)
+**Paper**: The Free Energy Principle & Active Inference: a Systematic Literature Analysis (2022)
 **Domain**: Active Inference
-**Authors**: Virginia Bleu Knight, R.J. Cordes, Daniel A. Friedman
+**Authors**: Virginia Bleu Knight, RJ Cordes, Daniel Friedman
 
 ---
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Free energy minimization, Bayesian modeling and inference
-- Identifies findings: We perform a systematic literature analysis of publications using the terms 'Free Energy Principle' or 'Active Inference', with emphasis on works by Karl Friston., We trace the history, growth, and div...
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Active Inference literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects SystematicLiteratureAnalysis to related works in the bibliography
+- Connects The Free Energy Principle & Active Inference: a Systematic Literature Analysis to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

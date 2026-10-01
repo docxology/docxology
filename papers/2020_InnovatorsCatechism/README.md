@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ InnovatorsCatechism
+# 🛡️ The Innovator's Catechism
 
-**Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight** (2020) · *Zenodo*
+**Richard J. Cordes, Daniel A. Friedman, Steven E. Phelan** (2020) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.4383229-blue)](https://doi.org/10.5281/zenodo.4383229)
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- Innovation teams formed in incubators, research accelerators, hackathon weekends, and within organizations need to quickly align on narrative, workflow, and objectives.
-- Many of these teams fail due to...
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -36,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Scott David, R.J. Cordes, Andrew Stewart, Virginia Bleu Knight (2020). *InnovatorsCatechism*. Zenodo. DOI: 10.5281/zenodo.4383229. URL: https://doi.org/10.5281/zenodo.4383229.
+> Richard J. Cordes, Daniel A. Friedman, Steven E. Phelan (2020). *The Innovator's Catechism*. Zenodo. DOI: 10.5281/zenodo.4383229. URL: https://doi.org/10.5281/zenodo.4383229.
 
 ## Related
 

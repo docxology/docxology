@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Genomic and bioinformatic analysis, Statistical genetics
+- Extracts methods: See paper
 - Identifies findings: Pilot overview validates cat hippocampus emulation using generative AI as a viable research direction, Demonstrates feasibility of in-silico emulation of mammalian neural circuits for computational neuroscience
 - Maps contributions to Genetics & Biomedical literature
 

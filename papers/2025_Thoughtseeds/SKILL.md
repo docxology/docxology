@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "Thoughtseeds"
+name: "Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States"
 description: "Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states. The framework models thoughts as self-organizing agents (thoughtseeds) that compete..."
 tags: ["thoughtseeds", "meditation", "thought-dynamics", "hierarchical-modeling", "agentic-framework", "active-inference", "attention", "mindfulness"]
 domain: "Active Inference"
-citation: "Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow (2025). *Thoughtseeds*. Active Inference."
+citation: "Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow (2025). *Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States*. Entropy."
 doi: "10.3390/e27050459"
 ---
 
-# Thoughtseeds
+# Thoughtseeds: A Hierarchical and Agentic Framework for Investigating Thought Dynamics in Meditative States
 
 **Prakash Chandra Kavi, Gorka Zamora-López, Daniel Ari Friedman, Gustavo Patow** (2025) · Active Inference
 
@@ -20,15 +20,13 @@ This work addresses topics in **Active Inference**: Thoughtseeds, meditation, th
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- Thoughtseeds presents a hierarchical and agentic framework for investigating thought dynamics in meditative states..
-- The framework models thoughts as self-organizing agents (thoughtseeds) that compete....
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.3390/e27050459`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

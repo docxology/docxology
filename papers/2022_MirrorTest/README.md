@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🎨 MirrorTest
+# 🎨 Predictive Processing Interpretation of the Mirror Test
 
 **Sean O'Connor, Daniel Ari Friedman** (2022) · *Zenodo*
 
@@ -18,8 +18,7 @@
 
 ## Methods
 
-- Visual and symbolic analysis
-- Cross-domain pattern mapping
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
@@ -37,7 +36,7 @@
 
 ## Citation
 
-> Sean O'Connor, Daniel Ari Friedman (2022). *MirrorTest*. Zenodo. DOI: 10.5281/zenodo.7377255. URL: https://doi.org/10.5281/zenodo.7377255.
+> Sean O'Connor, Daniel Ari Friedman (2022). *Predictive Processing Interpretation of the Mirror Test*. Zenodo. DOI: 10.5281/zenodo.7377255. URL: https://doi.org/10.5281/zenodo.7377255.
 
 ## Related
 

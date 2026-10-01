@@ -1,25 +1,25 @@
 {
-  "title": "ForagingGene",
+  "title": "Context-dependent expression of the foraging gene in field colonies of ants",
   "domain": "Entomology",
   "type": "Paper",
   "creators": [
     {
-      "name": "Daniel A. Friedman"
-    },
-    {
-      "name": "Anna Pilko"
-    },
-    {
-      "name": "Doriane Skowronski"
-    },
-    {
-      "name": "Krista Kerber"
-    },
-    {
-      "name": "Noa Pinter-Wollman"
+      "name": "Krista K. Ingram"
     },
     {
       "name": "Deborah M. Gordon"
+    },
+    {
+      "name": "Daniel A. Friedman"
+    },
+    {
+      "name": "Michael Greene"
+    },
+    {
+      "name": "John Kahler"
+    },
+    {
+      "name": "Swetha Peteru"
     }
   ],
   "description": "Previous work has found that workers of similar genotype adopt different behavioural phenotypes. Elegant laboratory studies have pioneered this effort, but field studies involving the genetic regulati...",

@@ -1,8 +1,8 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — DoorsOfPerception
+# AGENTS.md — The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing
 
-**Paper**: DoorsOfPerception (2026)
+**Paper**: The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing (2026)
 **Domain**: Art & Synergetics
 **Authors**: Daniel Ari Friedman
 
@@ -16,8 +16,8 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Visual and symbolic analysis, Cross-domain pattern mapping
-- Identifies findings: The Doors of Perception are the Threshold of Prediction explores eight concordances between William Blake's prophetic vision and the mathematics of Active Inference., The paper develops a 'Thematic Atl...
+- Extracts methods: See paper
+- Identifies findings: See paper
 - Maps contributions to Art & Synergetics literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects DoorsOfPerception to related works in the bibliography
+- Connects The Doors of Perception are the Threshold of Prediction: Active Inference and William Blake's Theory of Seeing to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 
@@ -37,7 +37,7 @@
 | Source | Agent | Action | Status |
 |--------|-------|--------|--------|
 | Metadata | ARCHIVIST | Cataloged metadata | ✅ |
-| Metadata | RESEARCHER | Extracted methods/findings | ✅ |
+| Metadata | RESEARCHER | Extracted methods/findings | ⏳ not yet summarized |
 | Metadata | EDUCATOR | Generated documentation | ✅ |
 
 ## Cross-References

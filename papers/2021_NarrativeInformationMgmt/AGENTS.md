@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — NarrativeInformationMgmt
+# AGENTS.md — Narrative Information Management
 
-**Paper**: NarrativeInformationMgmt (2021)
+**Paper**: Narrative Information Management (2021)
 **Domain**: Cognitive Security
-**Authors**: Richard J. Cordes, Shaun Applegate-Swanson, Daniel A. Friedman, Virginia Bleu Knight, Alexandra Mikhailova
+**Authors**: Richard J. Cordes, Shaun Applegate-Swanson, Daniel Ari Friedman, Virginia Bleu Knight, Alexandra Mikhailova
 
 ---
 
@@ -16,7 +16,7 @@
 - Updates related_papers links when new connections are identified
 
 ### 🔬 RESEARCHER
-- Extracts methods: Narrative analysis, Trust and integrity modeling
+- Extracts methods: See paper
 - Identifies findings: There are many areas of research defined by their interest in information dynamics related to facilitating organizational sensemaking, such as knowledge management, information management, and library science, and many more areas of research, disciplines, and even hobbies which are facing informatio, While all may be concerned with very similar challenges, lack of information exchange and common ontology between these areas may be causing silos, missed opportunities, and potentially even friction among areas.., In this paper, we address the need for synthesis and exchange of knowledge, tools, and approaches among various fields by proposing Narrative Information Management (NIM) as a unifying term and framework for the fundamental features and challenges of facilitating collective sensemaking..
 - Maps contributions to Cognitive Security literature
 
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects NarrativeInformationMgmt to related works in the bibliography
+- Connects Narrative Information Management to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

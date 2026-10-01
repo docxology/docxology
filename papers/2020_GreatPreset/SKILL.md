@@ -1,13 +1,13 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "GreatPreset"
+name: "The Great Preset: Remote Teams and Operational Art"
 description: "This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior. Through the lens of Active Inferen..."
 tags: ["cognitive-security", "narrative-ecosystems", "great-reset", "sensemaking", "active-inference", "information-theory", "socioeconomic-narratives"]
 domain: "Cognitive Security"
-citation: "Daniel A. Friedman (2020). *GreatPreset*. Cognitive Security."
+citation: "Daniel A. Friedman (2020). *The Great Preset: Remote Teams and Operational Art*. COGSEC.org."
 ---
 
-# GreatPreset
+# The Great Preset: Remote Teams and Operational Art
 
 **Daniel A. Friedman** (2020) · Cognitive Security
 
@@ -19,15 +19,13 @@ This work addresses topics in **Cognitive Security**: cognitive security, narrat
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- This essay examines what the Great Reset means from a cognitive security perspective, analyzing how global socioeconomic narratives shape public belief and behavior.
-- Through the lens of Active Inferen...
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +53,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Use the canonical citation above.
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

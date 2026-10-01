@@ -2,7 +2,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Daniel Ari Friedman Publications",
-    "description": "Complete bibliography of 220 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
+    "description": "Complete bibliography of 219 works by Daniel Ari Friedman across Active Inference, entomology, cognitive security, art, computational biology, and genetics.",
     "author": {
         "@type": "Person",
         "name": "Daniel Ari Friedman",
@@ -141,8 +141,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
-            "headline": "Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory)",
+            "name": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
+            "headline": "Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations)",
             "datePublished": "2026",
             "author": [
                 {
@@ -171,7 +171,7 @@
                 "url": "https://doi.org/10.5281/zenodo.18364118"
             },
             "sameAs": "https://doi.org/10.5281/zenodo.18364118",
-            "citation": "Friedman, Daniel Ari. 2026. Cognitive Integrity Framework: Formal Foundations for Multiagent Security (Part 1: Theory). Zenodo. DOI: 10.5281/zenodo.18364118. URL: https://doi.org/10.5281/zenodo.18364118."
+            "citation": "Friedman, Daniel Ari. 2026. Cognitive Integrity Framework: Formal Foundations (Part 1 of 3: Theoretical Foundations). Zenodo. DOI: 10.5281/zenodo.18364118. URL: https://doi.org/10.5281/zenodo.18364118."
         },
         {
             "@type": "CreativeWorkSeries",
@@ -1388,48 +1388,6 @@
             "citation": "Friedman, Daniel Ari. 2024. Aligning Active Inference Ontology to SUMO. Zenodo. DOI: 10.5281/zenodo.11459322. URL: https://doi.org/10.5281/zenodo.11459322."
         },
         {
-            "@type": "PresentationDigitalDocument",
-            "name": "BioFirm Development at Applied Active Inference Symposium 2024",
-            "headline": "BioFirm Development at Applied Active Inference Symposium 2024",
-            "datePublished": "2024",
-            "author": [
-                {
-                    "@type": "Organization",
-                    "name": "John Clippinger"
-                },
-                {
-                    "@type": "Organization",
-                    "name": "Andrew Pashea"
-                },
-                {
-                    "@type": "Person",
-                    "@id": "https://danielarifriedman.com/#person",
-                    "name": "Daniel Ari Friedman",
-                    "sameAs": [
-                        "https://orcid.org/0000-0001-6232-9096",
-                        "https://www.wikidata.org/wiki/Q138781444",
-                        "https://www.flickr.com/photos/daniel_friedman/"
-                    ]
-                }
-            ],
-            "publisher": {
-                "@type": "Organization",
-                "name": "Presentation"
-            },
-            "keywords": "🎥",
-            "@id": "https://danielarifriedman.com/works/Friedman2024BioFirmDevelopmentAtApplied030.html#work",
-            "url": "https://danielarifriedman.com/works/Friedman2024BioFirmDevelopmentAtApplied030.html",
-            "mainEntityOfPage": "https://danielarifriedman.com/works/Friedman2024BioFirmDevelopmentAtApplied030.html",
-            "identifier": {
-                "@type": "PropertyValue",
-                "propertyID": "DOI",
-                "value": "10.5281/zenodo.14861595",
-                "url": "https://doi.org/10.5281/zenodo.14861595"
-            },
-            "sameAs": "https://doi.org/10.5281/zenodo.14861595",
-            "citation": "Friedman, Daniel Ari. 2024. BioFirm Development at Applied Active Inference Symposium 2024. Presentation. DOI: 10.5281/zenodo.14861595. URL: https://doi.org/10.5281/zenodo.14861595."
-        },
-        {
             "@type": "ScholarlyArticle",
             "name": "Bridging gaps in image meme research: A multidisciplinary paradigm",
             "headline": "Bridging gaps in image meme research: A multidisciplinary paradigm",
@@ -1473,8 +1431,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",
-            "headline": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea",
+            "name": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea",
+            "headline": "Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea",
             "datePublished": "2024",
             "author": [
                 {
@@ -1519,7 +1477,7 @@
                 "url": "https://doi.org/10.1002/ece3.70063"
             },
             "sameAs": "https://doi.org/10.1002/ece3.70063",
-            "citation": "Friedman, Daniel Ari. 2024. Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in Blattodea. Ecology & Evolution. DOI: 10.1002/ece3.70063. URL: https://doi.org/10.1002/ece3.70063."
+            "citation": "Friedman, Daniel Ari. 2024. Chemical and transcriptomic diversity do not correlate with ascending levels of social complexity in the insect order Blattodea. Ecology & Evolution. DOI: 10.1002/ece3.70063. URL: https://doi.org/10.1002/ece3.70063."
         },
         {
             "@type": "ScholarlyArticle",
@@ -2185,7 +2143,13 @@
                 },
                 {
                     "@type": "Person",
-                    "name": "Daniel Ari Friedman"
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -3195,8 +3159,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "From Users to (Sense)Makers: Stigmergic Social Annotation",
-            "headline": "From Users to (Sense)Makers: Stigmergic Social Annotation",
+            "name": "From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking",
+            "headline": "From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking",
             "datePublished": "2022",
             "author": [
                 {
@@ -3241,7 +3205,7 @@
                 "url": "https://doi.org/10.48550/arXiv.2205.06345"
             },
             "sameAs": "https://doi.org/10.48550/arXiv.2205.06345",
-            "citation": "Friedman, Daniel Ari. 2022. From Users to (Sense)Makers: Stigmergic Social Annotation. Hypertext '22. DOI: 10.48550/arXiv.2205.06345. URL: https://doi.org/10.48550/arXiv.2205.06345."
+            "citation": "Friedman, Daniel Ari. 2022. From Users to (Sense)Makers: On the Pivotal Role of Stigmergic Social Annotation in the Quest for Collective Sensemaking. Hypertext '22. DOI: 10.48550/arXiv.2205.06345. URL: https://doi.org/10.48550/arXiv.2205.06345."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4245,8 +4209,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "The physiology of forager hydration and variation among harvester ant colonies",
-            "headline": "The physiology of forager hydration and variation among harvester ant colonies",
+            "name": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
+            "headline": "The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior",
             "datePublished": "2019",
             "author": [
                 {
@@ -4283,7 +4247,7 @@
                 "url": "https://doi.org/10.1038/s41598-019-41586-3"
             },
             "sameAs": "https://doi.org/10.1038/s41598-019-41586-3",
-            "citation": "Friedman, Daniel Ari. 2019. The physiology of forager hydration and variation among harvester ant colonies. Scientific Reports. DOI: 10.1038/s41598-019-41586-3. URL: https://doi.org/10.1038/s41598-019-41586-3."
+            "citation": "Friedman, Daniel Ari. 2019. The physiology of forager hydration and variation among harvester ant (Pogonomyrmex barbatus) colonies in collective foraging behavior. Scientific Reports. DOI: 10.1038/s41598-019-41586-3. URL: https://doi.org/10.1038/s41598-019-41586-3."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4463,8 +4427,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants",
-            "headline": "The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants",
+            "name": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
+            "headline": "The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants",
             "datePublished": "2018",
             "author": [
                 {
@@ -4517,7 +4481,7 @@
                 "url": "https://doi.org/10.1016/j.isci.2018.09.001"
             },
             "sameAs": "https://doi.org/10.1016/j.isci.2018.09.001",
-            "citation": "Friedman, Daniel Ari. 2018. The Role of Dopamine in Collective Regulation of Foraging in Harvester Ants. iScience. DOI: 10.1016/j.isci.2018.09.001. URL: https://doi.org/10.1016/j.isci.2018.09.001."
+            "citation": "Friedman, Daniel Ari. 2018. The Role of Dopamine in the Collective Regulation of Foraging in Harvester Ants. iScience. DOI: 10.1016/j.isci.2018.09.001. URL: https://doi.org/10.1016/j.isci.2018.09.001."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4681,8 +4645,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "Influence of Nuclear Structure on formation of radiation-induced lethal lesions",
-            "headline": "Influence of Nuclear Structure on formation of radiation-induced lethal lesions",
+            "name": "Influence of nuclear structure on the formation of radiation-induced lethal lesions",
+            "headline": "Influence of nuclear structure on the formation of radiation-induced lethal lesions",
             "datePublished": "2016",
             "author": [
                 {
@@ -4719,7 +4683,7 @@
                 "url": "https://doi.org/10.3109/09553002.2016.1144941"
             },
             "sameAs": "https://doi.org/10.3109/09553002.2016.1144941",
-            "citation": "Friedman, Daniel Ari. 2016. Influence of Nuclear Structure on formation of radiation-induced lethal lesions. Int. J. Radiation Biology. DOI: 10.3109/09553002.2016.1144941. URL: https://doi.org/10.3109/09553002.2016.1144941."
+            "citation": "Friedman, Daniel Ari. 2016. Influence of nuclear structure on the formation of radiation-induced lethal lesions. Int. J. Radiation Biology. DOI: 10.3109/09553002.2016.1144941. URL: https://doi.org/10.3109/09553002.2016.1144941."
         },
         {
             "@type": "ScholarlyArticle",
@@ -4765,8 +4729,8 @@
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",
-            "headline": "Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?",
+            "name": "Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?",
+            "headline": "Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?",
             "datePublished": "2015",
             "author": [
                 {
@@ -4803,12 +4767,12 @@
                 "url": "https://doi.org/10.1016/j.mehy.2015.09.015"
             },
             "sameAs": "https://doi.org/10.1016/j.mehy.2015.09.015",
-            "citation": "Friedman, Daniel Ari. 2015. Could Ehrlichial Infection Cause Some Changes Associated with Leukemia?. Medical Hypotheses. DOI: 10.1016/j.mehy.2015.09.015. URL: https://doi.org/10.1016/j.mehy.2015.09.015."
+            "citation": "Friedman, Daniel Ari. 2015. Could ehrlichial infection cause some of the changes associated with leukemia, myelodysplastic diseases and autoimmune disorders, and offer antibiotic treatment options?. Medical Hypotheses. DOI: 10.1016/j.mehy.2015.09.015. URL: https://doi.org/10.1016/j.mehy.2015.09.015."
         },
         {
             "@type": "ScholarlyArticle",
-            "name": "Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",
-            "headline": "Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees",
+            "name": "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees",
+            "headline": "Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees",
             "datePublished": "2015",
             "author": [
                 {
@@ -4857,7 +4821,7 @@
                 "url": "https://doi.org/10.1093/molbev/msu292"
             },
             "sameAs": "https://doi.org/10.1093/molbev/msu292",
-            "citation": "Friedman, Daniel Ari. 2015. Large Scale Coding Sequence Change Underlies the Evolution of Post-developmental Novelty in Honey Bees. Molecular Biology & Evolution. DOI: 10.1093/molbev/msu292. URL: https://doi.org/10.1093/molbev/msu292."
+            "citation": "Friedman, Daniel Ari. 2015. Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees. Molecular Biology & Evolution. DOI: 10.1093/molbev/msu292. URL: https://doi.org/10.1093/molbev/msu292."
         },
         {
             "@type": "ScholarlyArticle",
@@ -5192,8 +5156,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -5220,8 +5190,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -5248,8 +5224,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -5276,8 +5258,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -5304,8 +5292,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -5332,8 +5326,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -5398,12 +5398,18 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
+                    "@type": "Person",
                     "name": "Tucker Chambers"
                 },
                 {
-                    "@type": "Organization",
-                    "name": "Daniel A. Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -5430,8 +5436,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -5462,7 +5474,7 @@
                     "name": "John Clippinger"
                 },
                 {
-                    "@type": "Organization",
+                    "@type": "Person",
                     "name": "Andrew Pashea"
                 },
                 {
@@ -5487,11 +5499,11 @@
             "identifier": {
                 "@type": "PropertyValue",
                 "propertyID": "DOI",
-                "value": "10.5281/zenodo.14861596",
-                "url": "https://doi.org/10.5281/zenodo.14861596"
+                "value": "10.5281/zenodo.14861595",
+                "url": "https://doi.org/10.5281/zenodo.14861595"
             },
-            "sameAs": "https://doi.org/10.5281/zenodo.14861596",
-            "citation": "Friedman, Daniel Ari. 2025. Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024. Zenodo. DOI: 10.5281/zenodo.14861596. URL: https://doi.org/10.5281/zenodo.14861596."
+            "sameAs": "https://doi.org/10.5281/zenodo.14861595",
+            "citation": "Friedman, Daniel Ari. 2025. Biofirm Development with First Principles First and the Active Inference Institute at the Applied Active Inference Symposium 2024. Zenodo. DOI: 10.5281/zenodo.14861595. URL: https://doi.org/10.5281/zenodo.14861595."
         },
         {
             "@type": "ScholarlyArticle",
@@ -6486,8 +6498,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -6514,8 +6532,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -6542,8 +6566,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -6570,8 +6600,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -6598,8 +6634,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7240,8 +7282,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7268,8 +7316,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7296,8 +7350,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7324,8 +7384,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7420,8 +7486,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7448,8 +7520,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7476,8 +7554,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 },
                 {
                     "@type": "Organization",
@@ -7542,8 +7626,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7570,8 +7660,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7598,8 +7694,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7626,8 +7728,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7654,8 +7762,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7682,8 +7796,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7710,8 +7830,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7738,8 +7864,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7766,8 +7898,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7794,8 +7932,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7822,8 +7966,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7850,8 +8000,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7878,8 +8034,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7906,8 +8068,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7934,8 +8102,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7962,8 +8136,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -7990,8 +8170,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -8290,8 +8476,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -8352,8 +8544,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -8380,11 +8578,11 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
+                    "@type": "Person",
                     "name": "Siddhant Shrivastava"
                 },
                 {
-                    "@type": "Organization",
+                    "@type": "Person",
                     "name": "Evelyn C. Goh"
                 },
                 {
@@ -8392,8 +8590,14 @@
                     "name": "Alexandra Mikhailova"
                 },
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {
@@ -8590,8 +8794,14 @@
             "datePublished": "2026",
             "author": [
                 {
-                    "@type": "Organization",
-                    "name": "Daniel Ari Friedman"
+                    "@type": "Person",
+                    "@id": "https://danielarifriedman.com/#person",
+                    "name": "Daniel Ari Friedman",
+                    "sameAs": [
+                        "https://orcid.org/0000-0001-6232-9096",
+                        "https://www.wikidata.org/wiki/Q138781444",
+                        "https://www.flickr.com/photos/daniel_friedman/"
+                    ]
                 }
             ],
             "publisher": {

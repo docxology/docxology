@@ -1,14 +1,14 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "CognitiveSovereignty"
+name: "Cognitive Sovereignty & Active Inference in the State of Exception"
 description: "This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science. It argues that realized epist..."
 tags: ["cognitive-sovereignty", "agamben", "homo-sacer", "active-inference", "state-of-exception", "thomas-kuhn", "paradigm-shifts", "epistemic-agency", "biopolitics", "bare-life"]
 domain: "Cognitive Security"
-citation: "Daniel Ari Friedman (2023). *CognitiveSovereignty*. Cognitive Security."
+citation: "Daniel Ari Friedman (2023). *Cognitive Sovereignty & Active Inference in the State of Exception*. Zenodo."
 doi: "10.5281/zenodo.10038231"
 ---
 
-# CognitiveSovereignty
+# Cognitive Sovereignty & Active Inference in the State of Exception
 
 **Daniel Ari Friedman** (2023) · Cognitive Security
 
@@ -20,15 +20,13 @@ This work addresses topics in **Cognitive Security**: cognitive sovereignty, Aga
 
 Primary methods and techniques applied in this work:
 
-- Narrative analysis
-- Trust and integrity modeling
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- This paper analyzes Giorgio Agamben's Homo Sacer through Active Inference, connecting the political state of exception with Thomas Kuhn's theory of revolutionary science.
-- It argues that realized epist...
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -56,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.10038231`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

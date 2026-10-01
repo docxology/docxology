@@ -4,7 +4,7 @@
 
 **Paper**: AlphaCOGANT: Recursive Corporate Self-Improvement as Active Inference (2026)
 **Domain**: Computational
-**Authors**: Daniel Ari Friedman
+**Authors**: Daniel Ari Friedman, Tucker Cahill Chambers
 
 ---
 

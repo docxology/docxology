@@ -1,6 +1,6 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🧠 PopulationSearch
+# 🧠 Enhancing Population-based Search with Active Inference
 
 **Nassim Dehouche, Daniel Friedman** (2024) · *ArXiv*
 
@@ -18,13 +18,11 @@
 
 ## Methods
 
-- Free energy minimization
-- Bayesian modeling and inference
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- We propose integrating Active Inference into population-based metaheuristics to enhance performance through anticipatory environmental adaptation..
-- Demonstrated with Ant Colony Optimization (ACO) on th....
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -34,7 +32,7 @@
 
 ## Citation
 
-> Nassim Dehouche, Daniel Friedman (2024). *PopulationSearch*. ArXiv. DOI: 10.48550/arXiv.2408.09548. URL: https://doi.org/10.48550/arXiv.2408.09548.
+> Nassim Dehouche, Daniel Friedman (2024). *Enhancing Population-based Search with Active Inference*. ArXiv. DOI: 10.48550/arXiv.2408.09548. URL: https://doi.org/10.48550/arXiv.2408.09548.
 
 ## Related
 

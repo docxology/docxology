@@ -145,9 +145,11 @@ LOCAL_GENERATION_STEPS: tuple[GenerationStep, ...] = (
     # (index/publications/discovery/art/videos pages, DISCOVERY.md, llms.txt),
     # several of which are hand-authored shells.
     GenerationStep("site-facts-first", "sync_site_facts.py", (), ("--check",), "Volatile public facts after content projections"),
-    # start-here.html is hand-authored and the step is check-only in the
-    # chain, so the page is a genuine upstream input, not an output.
-    GenerationStep("start-here", "build_start_here.py", (), ("--check",), "Start Here curated reading paths page", ("start-here.html",)),
+    # DERIVED (always-run): start-here.html is hand-authored; the chain only
+    # re-stamps its two generated counts (``--sync-counts``, idempotent and
+    # date-free) so a bibliography add or retirement no longer halts the
+    # rebuild. The page is now written by the step, so it is not an input.
+    GenerationStep("start-here", "build_start_here.py", ("--sync-counts",), ("--check",), "Start Here curated reading paths page"),
     GenerationStep("paper-pages", "build_paper_pages.py", (), ("--check",), "Paper folder HTML pages", ("data/works.json", "papers/*/README.md", "papers/*/*.pdf", "papers/*/images/*")),
     # DERIVED (always-run): renders from the centrally declared stub table in
     # code/src/redirect_stubs.py; consumes no repository files.

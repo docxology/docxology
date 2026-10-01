@@ -1,8 +1,8 @@
 <!-- docxology:generated-document README.md; ownership=explicit-manifest -->
 
-# 🛡️ FarmWorks
+# 🛡️ FarmWorks: Decentralized AI Agents for Personalized Solutions
 
-**Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin** (2024) · *Zenodo*
+**Vladimir Baulin, Alex Vyatkin, Avel GUÉNIN—CARLUT, Daniel Friedman, John Bolt, Stefan Falkenstein, Parishrut Jassal, Celio Trois, Jonathan Minchin** (2024) · *Zenodo*
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.13754585-blue)](https://doi.org/10.5281/zenodo.13754585)
 
@@ -18,12 +18,11 @@
 
 ## Methods
 
-- Narrative analysis
-- Trust and integrity modeling
+_No paper-specific methods have been summarized yet; see the abstract and the full text._
 
 ## Key Findings
 
-- FarmWorks is a proposal for a decentralized AI-powered agricultural platform that enables personalized, farm-scale solutions while resisting power concentration associated with centralized AI systems.
+_No paper-specific findings have been summarized yet; see the abstract and the full text._
 
 ## Artifacts
 
@@ -35,7 +34,7 @@
 
 ## Citation
 
-> Daniel A. Friedman, Vladimir Baulin, Jonathan Minchin (2024). *FarmWorks*. Zenodo. DOI: 10.5281/zenodo.13754585. URL: https://doi.org/10.5281/zenodo.13754585.
+> Vladimir Baulin, Alex Vyatkin, Avel GUÉNIN—CARLUT, Daniel Friedman, John Bolt, Stefan Falkenstein, Parishrut Jassal, Celio Trois, Jonathan Minchin (2024). *FarmWorks: Decentralized AI Agents for Personalized Solutions*. Zenodo. DOI: 10.5281/zenodo.13754585. URL: https://doi.org/10.5281/zenodo.13754585.
 
 ## Related
 

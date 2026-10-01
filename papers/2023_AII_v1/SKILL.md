@@ -1,17 +1,17 @@
 ---
 # docxology:generated-document SKILL.md; ownership=explicit-manifest
-name: "AII_v1"
+name: "The Active Inference Institute and Active Inference Ecosystem (v1)"
 description: "An overview of the Active Inference Institute (AII), describing its mission, organizational structure, projects, and community. The institute serves as a hub for Active Inference research, education..."
 tags: ["active-inference-institute", "open-science", "research-organization", "free-energy-principle", "community-building"]
 domain: "AII Ecosystem"
-citation: "Active Inference Institute (2023). *AII_v1*. AII Ecosystem."
+citation: "Active Inference Institute, Ander Aguirre, John Boik, Libor Burian, Matthew Brown, RJ Cordes, Scott David, David S Douglass, Pablo Fernandez-Maquieira, Daniel A Friedman, Holly Grimm, Avel Guénin–Carlut, Maria Luiza Iennaco, V Bleu Knight, Alexandra Mikhailova, Ali Rahmjoo, Adeel Razi, Jakub Smékal, Ronen Tamari, Dean Tickles, Alex Vyatkin (2023). *The Active Inference Institute and Active Inference Ecosystem (v1)*. Zenodo."
 doi: "10.5281/zenodo.8266280"
 artifact_doi: "10.5281/zenodo.8266281"
 ---
 
-# AII_v1
+# The Active Inference Institute and Active Inference Ecosystem (v1)
 
-**Active Inference Institute** (2023) · AII Ecosystem
+**Active Inference Institute, Ander Aguirre, John Boik, Libor Burian, Matthew Brown, RJ Cordes, Scott David, David S Douglass, Pablo Fernandez-Maquieira, Daniel A Friedman, Holly Grimm, Avel Guénin–Carlut, Maria Luiza Iennaco, V Bleu Knight, Alexandra Mikhailova, Ali Rahmjoo, Adeel Razi, Jakub Smékal, Ronen Tamari, Dean Tickles, Alex Vyatkin** (2023) · AII Ecosystem
 
 ## Context
 
@@ -21,8 +21,7 @@ This work addresses topics in **AII Ecosystem**: Active Inference Institute, ope
 
 Primary methods and techniques applied in this work:
 
-- Program coordination
-- Community governance design
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
@@ -58,5 +57,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.8266280`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

@@ -1,10 +1,10 @@
 <!-- docxology:generated-document AGENTS.md; ownership=explicit-manifest -->
 
-# AGENTS.md — HoneyBeeEvolution
+# AGENTS.md — Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees
 
-**Paper**: HoneyBeeEvolution (2015)
+**Paper**: Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees (2015)
 **Domain**: Genetics & Biomedical
-**Authors**: Daniel A. Friedman, Brian R. Johnson
+**Authors**: William Cameron Jasper, Timothy A. Linksvayer, Joel Atallah, Daniel Friedman, Joanna C. Chiu, Brian R. Johnson
 
 ---
 
@@ -17,7 +17,7 @@
 
 ### 🔬 RESEARCHER
 - Extracts methods: Transcriptomic sequencing and assembly, Coding sequence evolution analysis, Comparative genomics of social insects
-- Identifies findings: A key question in evolutionary biology concerns how novel traits arise at the molecular level.., Honey bees (Apis mellifera) have evolved numerous postdevelopmental novel traits, including royal jelly....
+- Identifies findings: See paper
 - Maps contributions to Genetics & Biomedical literature
 
 ### 🎓 EDUCATOR
@@ -26,7 +26,7 @@
 - Maintains prerequisite knowledge mapping
 
 ### 🔗 INTEGRATOR
-- Connects HoneyBeeEvolution to related works in the bibliography
+- Connects Large-Scale Coding Sequence Change Underlies the Evolution of Postdevelopmental Novelty in Honey Bees to related works in the bibliography
 - Maps paper-to-software relationships
 - Updates cross-domain connections
 

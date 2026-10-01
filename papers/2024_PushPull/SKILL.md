@@ -4,7 +4,7 @@ name: "Push and Pull: A priming sequence"
 description: "The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer exercises for further exploration . The priming s..."
 tags: ["pushpull"]
 domain: "Active Inference"
-citation: "Daniel Ari Friedman (2024). *Push and Pull: A priming sequence*. Active Inference."
+citation: "Daniel Ari Friedman (2024). *Push and Pull: A priming sequence*. Zenodo."
 doi: "10.5281/zenodo.10659374"
 artifact_doi: "10.5281/zenodo.10659375"
 ---
@@ -21,15 +21,13 @@ This work addresses topics in **Active Inference**: PushPull.
 
 Primary methods and techniques applied in this work:
 
-- Free energy minimization
-- Bayesian modeling and inference
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- The primary objectives of this Push and Pull document are to explore the decoupling of cognitive ( covert , attentional) and bodily ( overt ) behaviors , and to provide a sequence of hands-on computer
-- The priming sequence of exercises is presented to inform an individual&rsquo;s understanding of how their attention interacts with computer use movements, such as controlling the on-screen cursor with
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -58,5 +56,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.10659374`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

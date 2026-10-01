@@ -4,7 +4,7 @@ name: "Codomyrmex: An Artificial Ecology for Agentic Software Development"
 description: "Agentic software can preserve task state while still forgetting the consequences of prior actions. Codomyrmex studies a narrow control-plane question: after a caller reports a failed action at one software location, can the system deterministically i..."
 tags: ["ai-agents", "model-context-protocol", "mcp", "multi-agent", "orchestration", "colony-control-plane", "stigmergy", "artificial-ecology", "agentic-software-engineering", "falsification-worker"]
 domain: "Computational"
-citation: "Daniel Ari Friedman (2026). *Codomyrmex: An Artificial Ecology for Agentic Software Development*. Computational."
+citation: "Daniel Ari Friedman (2026). *Codomyrmex: An Artificial Ecology for Agentic Software Development*. Zenodo."
 doi: "10.5281/zenodo.21750800"
 artifact_doi: "10.5281/zenodo.21750801"
 ---
@@ -21,14 +21,13 @@ This work addresses topics in **Computational**: ai-agents, model-context-protoc
 
 Primary methods and techniques applied in this work:
 
-- Literature review
-- Theoretical analysis
+No paper-specific methods have been summarized yet; see the abstract and the full text.
 
 ## Key Findings
 
 Core contributions and results:
 
-- See full paper for detailed findings and analysis
+No paper-specific findings have been summarized yet; see the abstract and the full text.
 
 ## Related Works
 
@@ -55,5 +54,5 @@ Verification points for this work:
 When working with this paper:
 
 1. Reference the DOI for citation: `10.5281/zenodo.21750800`
-2. Apply methods listed in the Methods section for related analysis.
+2. Read the methods in the full text before reusing this work.
 3. Validate findings against the original PDF and metadata.

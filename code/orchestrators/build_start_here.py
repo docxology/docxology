@@ -165,11 +165,42 @@ def enrich() -> None:
     print(f"enriched {PAGE.name}: nav re-rendered from manifest, dateModified={today}")
 
 
+def sync_counts() -> bool:
+    """Stamp only the two generated counts; idempotent and date-free.
+
+    This is the regeneration-chain mode: a bibliography add or retirement
+    changes ``data/current-counts.json``, and the hand-authored prose must
+    follow without the clock-dependent ``dateModified`` stamp that ``--enrich``
+    applies (that would break the chain's byte-stable rerun guarantee).
+    Returns whether the page changed.
+    """
+    markup = PAGE.read_text(encoding="utf-8")
+    stamped = stamp_counts(markup)
+    if stamped == markup:
+        return False
+    PAGE.write_text(stamped, encoding="utf-8")
+    return True
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="validate the page (default)")
     parser.add_argument("--enrich", action="store_true", help="re-render nav + stamp counts + stamp dateModified")
+    parser.add_argument(
+        "--sync-counts",
+        action="store_true",
+        help="stamp only the generated work/paper-folder counts (idempotent; used by regenerate_all.py)",
+    )
     args = parser.parse_args()
+
+    if args.sync_counts:
+        changed = sync_counts()
+        print(f"{PAGE.name}: counts {'stamped from' if changed else 'already match'} {CURRENT_COUNTS.name}")
+        errors = check()
+        if errors:
+            print("\n".join(errors), file=sys.stderr)
+            raise SystemExit(1)
+        return
 
     if args.enrich:
         enrich()
